@@ -1,0 +1,1067 @@
+﻿{
+    "knowledge_points": [
+        {"title": "无人机的应用场景", "en": "Application scenarios of drones"},
+        {"title": "无人机网络的特点", "en": "Characteristics of drone networks"},
+        {"title": "无人机网络的组网技术", "en": "Networking technology of drone networks"},
+        {"title": "无人机网络的MAC协议", "en": "MAC protocol of drone networks"},
+        {"title": "无人机的防撞技术", "en": "Collision avoidance technology of drones"},
+        {"title": "雷达通信一体化技术", "en": "Radar-communication integration technology"}
+    ],
+    "relations": [
+        {"source": "无人机的应用场景", "target": "无人机网络的特点", "type": "包含"},
+        {"source": "无人机的应用场景", "target": "无人机网络的组网技术", "type": "包含"},
+        {"source": "无人机网络的特点", "target": "无人机网络的组网技术", "type": "关联"},
+        {"source": "无人机网络的组网技术", "target": "无人机网络的MAC协议", "type": "包含"},
+        {"source": "无人机网络的MAC协议", "target": "无人机网络的特点", "type": "关联"},
+        {"source": "无人机网络的MAC协议", "target": "无人机的防撞技术", "type": "关联"},
+        {"source": "无人机的防撞技术", "target": "无人机网络的特点", "type": "关联"},
+        {"source": "雷达通信一体化技术", "target": "无人机网络的MAC协议", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LODMAC", "en": "LODMAC"},
+        {"title": "竞争类多址接入协议", "en": "Competitive Multiple Access Protocol"},
+        {"title": "固定分配的多址接入协议", "en": "Fixed Allocation Multiple Access Protocol"},
+        {"title": "时分多址(Time Division Multiple Access, TDMA)", "en": "Time Division Multiple Access (TDMA)"},
+        {"title": "码分多址(Code Division Multiple Access, CDMA)", "en": "Code Division Multiple Access (CDMA)"},
+        {"title": "混合类的多址接入协议", "en": "Hybrid Multiple Access Protocol"},
+        {"title": "基于时分多址的时延容忍多址接入协议(UD-MAC)", "en": "Time-Division Multiple Access-Based Delay-Tolerant Multiple Access Protocol (UD-MAC)"},
+        {"title": "优先帧选择MAC协议(PFSC-MAC)", "en": "Priority Frame Selection MAC Protocol (PFSC-MAC)"},
+        {"title": "无人机实时多址接入协议(UR-MAC)", "en": "Unmanned Aerial Vehicle Real-Time Multiple Access Protocol (UR-MAC)"},
+        {"title": "基于碰撞协调的MAC协议(CC-MAC)", "en": "Collision Coordination-Based MAC Protocol (CC-MAC)"},
+        {"title": "动态分配的调度型MAC协议(SDC-MAC)", "en": "Dynamic Allocation Scheduling MAC Protocol (SDC-MAC)"},
+        {"title": "多信道MAC协议", "en": "Multi-Channel MAC Protocol"},
+        {"title": "公共控制时期技术", "en": "Common Control Period Technology"},
+        {"title": "公共跳频序列技术", "en": "Common Hopping Sequence Technology"},
+        {"title": "自适应信道划分MAC协议(ACD-MAC)", "en": "Adaptive Channel Division MAC Protocol (ACD-MAC)"},
+        {"title": "单跳预约多址协议(HRMA)", "en": "Single-Hop Reservation Multiple Access Protocol (HRMA)"},
+        {"title": "认知无线电设计T多信道机会预留的MAC协议(CogMOR-MAC)", "en": "Cognitive Radio-Based T-Multiple Channel Opportunity Reservation MAC Protocol (CogMOR-MAC)"}
+    ],
+    "relations": [
+        {"source": "LODMAC", "target": "竞争类多址接入协议", "type": "包含"},
+        {"source": "竞争类多址接入协议", "target": "无人机网络", "type": "适用于"},
+        {"source": "竞争类多址接入协议", "target": "反复握手开销问题", "type": "需要解决"},
+        {"source": "竞争类多址接入协议", "target": "暴露终端问题", "type": "需要解决"},
+        {"source": "竞争类多址接入协议", "target": "密集网络", "type": "需要高效的冲突处理机制"},
+        {"source": "固定分配的多址接入协议", "target": "无人机网络", "type": "适用于"},
+        {"source": "时分多址(Time Division Multiple Access, TDMA)", "target": "无人机自组网", "type": "适用于"},
+        {"source": "时分多址(Time Division Multiple Access, TDMA)", "target": "UD-MAC", "type": "基于"},
+        {"source": "码分多址(Code Division Multiple Access, CDMA)", "target": "无人机自组网", "type": "适用于"},
+        {"source": "码分多址(Code Division Multiple Access, CDMA)", "target": "PFSC-MAC", "type": "基于"},
+        {"source": "混合类的多址接入协议", "target": "竞争类多址接入协议", "type": "包含"},
+        {"source": "混合类的多址接入协议", "target": "固定分配的多址接入协议", "type": "包含"},
+        {"source": "FS-MAC", "target": "TDMA", "type": "基于"},
+        {"source": "FS-MAC", "target": "CSMA/CA", "type": "基于"},
+        {"source": "FS-MAC", "target": "无人机自组网", "type": "适用于"},
+        {"source": "UR-MAC", "target": "TDMA", "type": "使用"},
+        {"source": "UR-MAC", "target": "CSMA", "type": "使用"},
+        {"source": "UR-MAC", "target": "无人机自组网", "type": "适用于"},
+        {"source": "CC-MAC", "target": "TDMA", "type": "混合使用"},
+        {"source": "CC-MAC", "target": "CSMA", "type": "混合使用"},
+        {"source": "CC-MAC", "target": "无人机网络", "type": "适用于"},
+        {"source": "SDC-MAC", "target": "频分多址(Frequency Division Multiplexing Access, FDMA)", "type": "采用"},
+        {"source": "SDC-MAC", "target": "TDMA", "type": "使用"},
+        {"source": "SDC-MAC", "target": "有中心或者局部有中心的网络结构", "type": "适用于"},
+        {"source": "多信道MAC协议", "target": "无人机网络", "type": "适用于"},
+        {"source": "多信道MAC协议", "target": "QoS", "type": "支持"},
+        {"source": "公共控制时期技术", "target": "MMAC", "type": "典型协议有"},
+        {"source": "公共控制时期技术", "target": "MAP", "type": "典型协议有"},
+        {"source": "ACD-MAC", "target": "无人机网络", "type": "适用于"},
+        {"source": "HRMA", "target": "跳频技术", "type": "采用"},
+        {"source": "HRMA", "target": "无人机网络", "type": "适用于"},
+        {"source": "CogMOR-MAC", "target": "认知无线电", "type": "基于"},
+        {"source": "CogMOR-MAC", "target": "无人机网络", "type": "适用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "无人机节点的定向收发的多信道MAC协议(MMAC-DA)", "en": "MMAC-DA: Multi-Channel MAC Protocol for Directional Communication in UAV Networks"},
+        {"title": "无人机集群多址接入协议设计", "en": "Design of UAV Cluster Multiple Access Protocol"},
+        {"title": "雷达通信一体化", "en": "Radar-Communication Integration"},
+        {"title": "无人机防碰撞系统的研究现状", "en": "Research Status of UAV Collision Avoidance System"}
+    ],
+    "relations": [
+        {"source": "无人机节点的定向收发的多信道MAC协议(MMAC-DA)", "target": "无人机集群多址接入协议设计", "type": "related"},
+        {"source": "无人机节点的定向收发的多信道MAC协议(MMAC-DA)", "target": "雷达通信一体化", "type": "related"},
+        {"source": "无人机集群多址接入协议设计", "target": "雷达通信一体化", "type": "related"},
+        {"source": "雷达通信一体化", "target": "无人机防碰撞系统的研究现状", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "无人机系统远程识别规则草案",
+            "en": "Draft of Remote Identification Rules for Unmanned Aircraft Systems by the US Federal Aviation Administration"
+        },
+        {
+            "title": "有人驾驶的飞行器和无人机的防碰撞技术",
+            "en": "Collision avoidance technology for manned aircraft and unmanned aerial vehicles"
+        },
+        {
+            "title": "无人机自主防碰撞系统",
+            "en": "Autonomous collision avoidance system for unmanned aerial vehicles"
+        },
+        {
+            "title": "无人机障碍物感知方法",
+            "en": "Obstacle perception methods for unmanned aerial vehicles"
+        },
+        {
+            "title": "合作式和非合作式障碍物感知系统",
+            "en": "Cooperative and non-cooperative obstacle perception systems"
+        },
+        {
+            "title": "视觉检测和非视觉检测技术",
+            "en": "Visual and non-visual detection technologies"
+        },
+        {
+            "title": "雷达在无人机障碍物检测中的应用",
+            "en": "Application of radar in obstacle detection for unmanned aerial vehicles"
+        },
+        {
+            "title": "无人机碰撞预测方法",
+            "en": "Collision prediction methods for unmanned aerial vehicles"
+        },
+        {
+            "title": "最坏情况近似方法和检测滤波法",
+            "en": "Worst-case approximation and detection filtering methods"
+        }
+    ],
+    "relations": [
+        {
+            "source": "无人机系统远程识别规则草案",
+            "target": "有人驾驶的飞行器和无人机的防碰撞技术",
+            "type": "包含"
+        },
+        {
+            "source": "有人驾驶的飞行器和无人机的防碰撞技术",
+            "target": "无人机自主防碰撞系统",
+            "type": "包含"
+        },
+        {
+            "source": "无人机自主防碰撞系统",
+            "target": "无人机障碍物感知方法",
+            "type": "包含"
+        },
+        {
+            "source": "无人机障碍物感知方法",
+            "target": "合作式和非合作式障碍物感知系统",
+            "type": "包含"
+        },
+        {
+            "source": "合作式和非合作式障碍物感知系统",
+            "target": "视觉检测和非视觉检测技术",
+            "type": "包含"
+        },
+        {
+            "source": "视觉检测和非视觉检测技术",
+            "target": "雷达在无人机障碍物检测中的应用",
+            "type": "包含"
+        },
+        {
+            "source": "雷达在无人机障碍物检测中的应用",
+            "target": "无人机碰撞预测方法",
+            "type": "包含"
+        },
+        {
+            "source": "无人机碰撞预测方法",
+            "target": "最坏情况近似方法和检测滤波法",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "EKF算法", "en": "EKF algorithm"},
+        {"title": "滤波器算法", "en": "Filter algorithm"},
+        {"title": "碰撞预测", "en": "Collision prediction"},
+        {"title": "路径规划", "en": "Path planning"},
+        {"title": "几何方法", "en": "Geometric method"},
+        {"title": "碰撞锥算法", "en": "Collision cone algorithm"},
+        {"title": "Dubins曲线", "en": "Dubins curve"},
+        {"title": "图论方法", "en": "Graph theory method"},
+        {"title": "Voronoi图算法", "en": "Voronoi diagram algorithm"},
+        {"title": "Laguerre图算法", "en": "Laguerre diagram algorithm"},
+        {"title": "人工势场算法", "en": "Artificial potential field algorithm"},
+        {"title": "快速搜索树算法", "en": "Rapid-exploration Random Tree algorithm"},
+        {"title": "启发式算法", "en": "Heuristic algorithm"},
+        {"title": "神经网络算法", "en": "Neural network algorithm"}
+    ],
+    "relations": [
+        {"source": "EKF算法", "target": "移动障碍物轨迹预测", "type": "应用"},
+        {"source": "EKF算法", "target": "预测误差减小", "type": "应用"},
+        {"source": "滤波器算法", "target": "短期碰撞预测", "type": "常用程序"},
+        {"source": "路径规划", "target": "无人机碰撞避免", "type": "关联"},
+        {"source": "几何方法", "target": "无人机碰撞避免", "type": "常用方法"},
+        {"source": "碰撞锥算法", "target": "无人机碰撞避免", "type": "典型算法"},
+        {"source": "Dubins曲线", "target": "无人机碰撞避免", "type": "常用方法"},
+        {"source": "Dubins曲线", "target": "二维路径规划", "type": "应用"},
+        {"source": "图论方法", "target": "无人机碰撞避免", "type": "常用方法"},
+        {"source": "Voronoi图算法", "target": "无人机路径规划", "type": "应用"},
+        {"source": "Laguerre图算法", "target": "无人机路径规划", "type": "应用"},
+        {"source": "人工势场算法", "target": "无人机碰撞避免", "type": "常用算法"},
+        {"source": "快速搜索树算法", "target": "无人机路径规划", "type": "常用算法"},
+        {"source": "RRT算法", "target": "无人机路径规划", "type": "常用算法"},
+        {"source": "RRT算法", "target": "威胁区域路径搜索", "type": "应用"},
+        {"source": "RRT算法", "target": "动态约束路径搜索", "type": "应用"},
+        {"source": "神经网络算法", "target": "路径规划", "type": "启发式算法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "路径规划算法", "en": "Path Planning Algorithm"},
+        {"title": "神经网络算法", "en": "Neural Network Algorithm"},
+        {"title": "遗传算法", "en": "Genetic Algorithm"},
+        {"title": "蚁群算法", "en": "Ant Colony Algorithm"},
+        {"title": "感知通信一体化", "en": "Perception-Communication Integration"},
+        {"title": "多址接入协议", "en": "Multiple Access Protocol"},
+        {"title": "无人机集群防碰撞技术", "en": "UAV Cluster Collision Avoidance Technology"}
+    ],
+    "relations": [
+        {"source": "路径规划算法", "target": "神经网络算法", "type": "related"},
+        {"source": "路径规划算法", "target": "遗传算法", "type": "related"},
+        {"source": "路径规划算法", "target": "蚁群算法", "type": "related"},
+        {"source": "感知通信一体化", "target": "多址接入协议", "type": "related"},
+        {"source": "多址接入协议", "target": "无人机集群防碰撞技术", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多信道机制", "en": "Multi-channel mechanism"},
+        {"title": "无人机多址接入协议", "en": "UAV multiple access protocol"},
+        {"title": "多信道MAC协议", "en": "Multi-channel MAC protocol"},
+        {"title": "公共控制信道类协议", "en": "Public control channel protocol"},
+        {"title": "DCA协议", "en": "DCA protocol"},
+        {"title": "无人机防碰撞技术", "en": "UAV collision avoidance technology"},
+        {"title": "探测与规避系统", "en": "Detection and avoidance system"}
+    ],
+    "relations": [
+        {"source": "多信道机制", "target": "802.1la协议", "type": "应用"},
+        {"source": "多信道机制", "target": "802.11b协议", "type": "应用"},
+        {"source": "多信道机制", "target": "802.11n协议", "type": "应用"},
+        {"source": "多信道机制", "target": "雷达通信一体化MAC协议", "type": "设计"},
+        {"source": "无人机多址接入协议", "target": "自组网", "type": "应用"},
+        {"source": "无人机多址接入协议", "target": "标准协议", "type": "适用性"},
+        {"source": "多信道MAC协议", "target": "公共控制时期类", "type": "分类"},
+        {"source": "多信道MAC协议", "target": "公共跳频序列类", "type": "分类"},
+        {"source": "多信道MAC协议", "target": "公共控制信道类", "type": "分类"},
+        {"source": "公共控制信道类协议", "target": "控制信道", "type": "信道"},
+        {"source": "公共控制信道类协议", "target": "数据信道", "type": "信道"},
+        {"source": "DCA协议", "target": "802.11DCF机制", "type": "协商"},
+        {"source": "DCA协议", "target": "多信道多址接入协议", "type": "类型"},
+        {"source": "无人机防碰撞技术", "target": "感知避障系统", "type": "系统"},
+        {"source": "探测与规避系统", "target": "飞行安全", "type": "保障"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "无人机自主避障系统",
+            "en": "Autonomous Obstacle Avoidance System for UAVs"
+        },
+        {
+            "title": "感知模块",
+            "en": "Perception Module"
+        },
+        {
+            "title": "预测模块",
+            "en": "Prediction Module"
+        },
+        {
+            "title": "决策模块",
+            "en": "Decision Module"
+        },
+        {
+            "title": "无人机飞行控制系统",
+            "en": "UAV Flight Control System"
+        },
+        {
+            "title": "防碰撞决策模块",
+            "en": "Collision Avoidance Decision Module"
+        },
+        {
+            "title": "卡尔曼滤波器",
+            "en": "Kalman Filter"
+        },
+        {
+            "title": "扩展卡尔曼滤波器",
+            "en": "Extended Kalman Filter"
+        },
+        {
+            "title": "状态向量",
+            "en": "State Vector"
+        },
+        {
+            "title": "测量向量",
+            "en": "Measurement Vector"
+        },
+        {
+            "title": "RRT算法",
+            "en": "Rapidly-exploring Random Tree Algorithm"
+        },
+        {
+            "title": "RRT*算法",
+            "en": "Rapidly-exploring Random Tree Star Algorithm"
+        }
+    ],
+    "relations": [
+        {
+            "source": "无人机自主避障系统",
+            "target": "感知模块",
+            "type": "包含"
+        },
+        {
+            "source": "无人机自主避障系统",
+            "target": "预测模块",
+            "type": "包含"
+        },
+        {
+            "source": "无人机自主避障系统",
+            "target": "决策模块",
+            "type": "包含"
+        },
+        {
+            "source": "无人机自主避障系统",
+            "target": "无人机飞行控制系统",
+            "type": "包含"
+        },
+        {
+            "source": "预测模块",
+            "target": "卡尔曼滤波器",
+            "type": "使用"
+        },
+        {
+            "source": "预测模块",
+            "target": "扩展卡尔曼滤波器",
+            "type": "使用"
+        },
+        {
+            "source": "卡尔曼滤波器",
+            "target": "扩展卡尔曼滤波器",
+            "type": "进一步发展"
+        },
+        {
+            "source": "扩展卡尔曼滤波器",
+            "target": "状态向量",
+            "type": "包含"
+        },
+        {
+            "source": "扩展卡尔曼滤波器",
+            "target": "测量向量",
+            "type": "包含"
+        },
+        {
+            "source": "无人机自主避障系统",
+            "target": "防碰撞决策模块",
+            "type": "包含"
+        },
+        {
+            "source": "防碰撞决策模块",
+            "target": "卡尔曼滤波器",
+            "type": "使用"
+        },
+        {
+            "source": "防碰撞决策模块",
+            "target": "扩展卡尔曼滤波器",
+            "type": "使用"
+        },
+        {
+            "source": "无人机自主避障系统",
+            "target": "RRT算法",
+            "type": "包含"
+        },
+        {
+            "source": "无人机自主避障系统",
+            "target": "RRT*算法",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "RRT*算法", "en": "RRT* algorithm"},
+        {"title": "雷达通信一体化", "en": "Radar-communication integration"},
+        {"title": "MAC协议", "en": "MAC protocol"},
+        {"title": "复用模式", "en": "Multiplexing mode"},
+        {"title": "A2A链路", "en": "A2A link"},
+        {"title": "A2G链路", "en": "A2G link"}
+    ],
+    "relations": [
+        {"source": "RRT*算法", "target": "雷达通信一体化", "type": "基础理论"},
+        {"source": "雷达通信一体化", "target": "MAC协议", "type": "应用"},
+        {"source": "MAC协议", "target": "复用模式", "type": "关联"},
+        {"source": "雷达通信一体化", "target": "A2A链路", "type": "应用"},
+        {"source": "雷达通信一体化", "target": "A2G链路", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "高可靠性通信",
+            "en": "High-reliability communication"
+        },
+        {
+            "title": "低延迟通信",
+            "en": "Low-latency communication"
+        },
+        {
+            "title": "安全通信",
+            "en": "Secure communication"
+        },
+        {
+            "title": "CNPC",
+            "en": "Command and Control of Unmanned Aerial Vehicles"
+        },
+        {
+            "title": "A2G链路",
+            "en": "Air-to-Ground link"
+        },
+        {
+            "title": "A2A链路",
+            "en": "Air-to-Air link"
+        },
+        {
+            "title": "时分复用",
+            "en": "Time Division Multiplexing"
+        },
+        {
+            "title": "频分复用",
+            "en": "Frequency Division Multiplexing"
+        },
+        {
+            "title": "控制信道",
+            "en": "Control channel"
+        },
+        {
+            "title": "数据信道",
+            "en": "Data channel"
+        },
+        {
+            "title": "预留机制",
+            "en": "Reservation mechanism"
+        },
+        {
+            "title": "波束复用",
+            "en": "Beamforming"
+        },
+        {
+            "title": "紧急信息包",
+            "en": "Emergency message packet"
+        },
+        {
+            "title": "业务数据包",
+            "en": "Business data packet"
+        },
+        {
+            "title": "碰撞状态信息",
+            "en": "Collision status information"
+        }
+    ],
+    "relations": [
+        {
+            "source": "高可靠性通信",
+            "target": "CNPC",
+            "type": "属于"
+        },
+        {
+            "source": "低延迟通信",
+            "target": "CNPC",
+            "type": "属于"
+        },
+        {
+            "source": "安全通信",
+            "target": "CNPC",
+            "type": "属于"
+        },
+        {
+            "source": "CNPC",
+            "target": "A2G链路",
+            "type": "包含"
+        },
+        {
+            "source": "CNPC",
+            "target": "A2A链路",
+            "type": "包含"
+        },
+        {
+            "source": "A2G链路",
+            "target": "时分复用",
+            "type": "使用"
+        },
+        {
+            "source": "A2G链路",
+            "target": "频分复用",
+            "type": "使用"
+        },
+        {
+            "source": "A2A链路",
+            "target": "控制信道",
+            "type": "包含"
+        },
+        {
+            "source": "A2A链路",
+            "target": "数据信道",
+            "type": "包含"
+        },
+        {
+            "source": "控制信道",
+            "target": "预留机制",
+            "type": "使用"
+        },
+        {
+            "source": "控制信道",
+            "target": "波束复用",
+            "type": "使用"
+        },
+        {
+            "source": "数据信道",
+            "target": "紧急信息包",
+            "type": "包含"
+        },
+        {
+            "source": "数据信道",
+            "target": "业务数据包",
+            "type": "包含"
+        },
+        {
+            "source": "紧急信息包",
+            "target": "碰撞状态信息",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "业务数据包结构", "en": "Business data packet structure"},
+        {"title": "紧急数据包结构", "en": "Emergency data packet structure"},
+        {"title": "A2A链路中基于预留机制的MAC协议", "en": "MAC protocol based on reservation mechanism in A2A link"},
+        {"title": "网络中的跳数", "en": "Number of hops in the network"},
+        {"title": "探测阶段", "en": "Detection phase"},
+        {"title": "邻居发现", "en": "Neighbor discovery"},
+        {"title": "预约和数据传输阶段", "en": "Reservation and data transmission phase"},
+        {"title": "信道资源分配", "en": "Channel resource allocation"},
+        {"title": "数据包切割", "en": "Packet segmentation"},
+        {"title": "雷达回波间隔", "en": "Radar echo interval"},
+        {"title": "确认信号", "en": "Acknowledgement signal"},
+        {"title": "带宽", "en": "Bandwidth"}
+    ],
+    "relations": [
+        {"source": "业务数据包结构", "target": "紧急数据包结构", "type": "包结构关系"},
+        {"source": "A2A链路中基于预留机制的MAC协议", "target": "探测阶段", "type": "协议阶段关系"},
+        {"source": "探测阶段", "target": "邻居发现", "type": "阶段关系"},
+        {"source": "邻居发现", "target": "预约和数据传输阶段", "type": "阶段关系"},
+        {"source": "预约和数据传输阶段", "target": "信道资源分配", "type": "阶段关系"},
+        {"source": "信道资源分配", "target": "数据包切割", "type": "数据传输关系"},
+        {"source": "数据包切割", "target": "雷达回波间隔", "type": "数据传输关系"},
+        {"source": "雷达回波间隔", "target": "确认信号", "type": "数据传输关系"},
+        {"source": "带宽", "target": "雷达回波间隔", "type": "参数关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "节点接入过程", "en": "Node Access Process"},
+        {"title": "预留机制的多信道MAC协议", "en": "Reservation-based Multi-channel MAC Protocol"},
+        {"title": "公共控制信道类的多信道MAC协议", "en": "Multi-channel MAC Protocol with Public Control Channel"},
+        {"title": "系统吞吐量", "en": "System Throughput"},
+        {"title": "业务数据包时延", "en": "Business Data Packet Delay"}
+    ],
+    "relations": [
+        {"source": "节点接入过程", "target": "预留机制的多信道MAC协议", "type": "属于"},
+        {"source": "预留机制的多信道MAC协议", "target": "节点接入过程", "type": "包含"},
+        {"source": "公共控制信道类的多信道MAC协议", "target": "系统吞吐量", "type": "影响"},
+        {"source": "系统吞吐量", "target": "公共控制信道类的多信道MAC协议", "type": "受影响于"},
+        {"source": "预留机制的多信道MAC协议", "target": "系统吞吐量", "type": "影响"},
+        {"source": "系统吞吐量", "target": "预留机制的多信道MAC协议", "type": "受影响于"},
+        {"source": "预留机制的多信道MAC协议", "target": "业务数据包时延", "type": "影响"},
+        {"source": "业务数据包时延", "target": "预留机制的多信道MAC协议", "type": "受影响于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "物理层包头LpHY", "en": "Physical layer header LpHY"},
+        {"title": "ACK数据包大小", "en": "ACK packet size"},
+        {"title": "MAC层包头L册c", "en": "MAC layer header Lc"},
+        {"title": "短帧间间隔SIFS", "en": "Short Inter-Frame Space SIFS"},
+        {"title": "RTS数据包大小", "en": "RTS packet size"},
+        {"title": "分布式协调帧间间隔DIFS", "en": "Distributed Inter-Frame Space DIFS"},
+        {"title": "CTS数据包大小", "en": "CTS packet size"},
+        {"title": "时隙长度SlotTime", "en": "Slot Time length"},
+        {"title": "BCTS数据包大小", "en": "BCTS packet size"},
+        {"title": "平均数据包大小EP", "en": "Average packet size EP"},
+        {"title": "系统吞吐量", "en": "System throughput"},
+        {"title": "接入节点数目", "en": "Number of access nodes"},
+        {"title": "预留时隙数目", "en": "Number of reserved slots"},
+        {"title": "信道数目", "en": "Number of channels"},
+        {"title": "平均吞吐量", "en": "Average throughput"},
+        {"title": "系统时延", "en": "System delay"},
+        {"title": "紧急信息包时延", "en": "Emergency message delay"},
+        {"title": "基于预留机制的MAC协议", "en": "MAC protocol based on reservation mechanism"},
+        {"title": "DCA协议", "en": "DCA protocol"}
+    ],
+    "relations": [
+        {"source": "物理层包头LpHY", "target": "ACK数据包大小", "type": "parameter"},
+        {"source": "物理层包头LpHY", "target": "MAC层包头L册c", "type": "parameter"},
+        {"source": "MAC层包头L册c", "target": "短帧间间隔SIFS", "type": "parameter"},
+        {"source": "MAC层包头L册c", "target": "RTS数据包大小", "type": "parameter"},
+        {"source": "MAC层包头L册c", "target": "分布式协调帧间间隔DIFS", "type": "parameter"},
+        {"source": "MAC层包头L册c", "target": "CTS数据包大小", "type": "parameter"},
+        {"source": "MAC层包头L册c", "target": "BCTS数据包大小", "type": "parameter"},
+        {"source": "时隙长度SlotTime", "target": "分布式协调帧间间隔DIFS", "type": "parameter"},
+        {"source": "平均数据包大小EP", "target": "系统吞吐量", "type": "factor"},
+        {"source": "接入节点数目", "target": "系统吞吐量", "type": "factor"},
+        {"source": "预留时隙数目", "target": "系统吞吐量", "type": "factor"},
+        {"source": "系统吞吐量", "target": "接入节点数目", "type": "relationship"},
+        {"source": "系统吞吐量", "target": "预留时隙数目", "type": "relationship"},
+        {"source": "信道数目", "target": "系统吞吐量", "type": "factor"},
+        {"source": "系统吞吐量", "target": "信道数目", "type": "relationship"},
+        {"source": "信道数目", "target": "平均吞吐量", "type": "factor"},
+        {"source": "平均吞吐量", "target": "信道数目", "type": "relationship"},
+        {"source": "节点数目", "target": "系统时延", "type": "factor"},
+        {"source": "信道数目", "target": "系统时延", "type": "factor"},
+        {"source": "系统时延", "target": "节点数目", "type": "relationship"},
+        {"source": "系统时延", "target": "信道数目", "type": "relationship"},
+        {"source": "安全信息包", "target": "紧急信息包时延", "type": "relationship"},
+        {"source": "基于预留机制的MAC协议", "target": "DCA协议", "type": "comparison"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "雷达通信一体化", "en": "Radar-communication integration"},
+        {"title": "基于预留机制的多信道多址接入协议", "en": "Reservation-based multi-channel MAC protocol"},
+        {"title": "无人机集群防碰撞技术", "en": "Collision avoidance technology for UAV clusters"},
+        {"title": "感知、预测、防碰撞三大模块", "en": "Three modules: perception, prediction, and collision avoidance"},
+        {"title": "一体化信号探测", "en": "Integrated signal detection"}
+    ],
+    "relations": [
+        {"source": "雷达通信一体化", "target": "基于预留机制的多信道多址接入协议", "type": "related"},
+        {"source": "基于预留机制的多信道多址接入协议", "target": "无人机集群防碰撞技术", "type": "related"},
+        {"source": "无人机集群防碰撞技术", "target": "感知、预测、防碰撞三大模块", "type": "related"},
+        {"source": "一体化信号探测", "target": "雷达通信一体化", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "探测障碍物和无人机", "en": "Detecting obstacles and drones"},
+        {"title": "减少信号碰撞", "en": "Reducing signal collision"},
+        {"title": "邻居发现", "en": "Neighbor discovery"},
+        {"title": "碰撞预测", "en": "Collision prediction"},
+        {"title": "信息融合", "en": "Information fusion"},
+        {"title": "碰撞避免策略", "en": "Collision avoidance strategies"},
+        {"title": "无人机碰撞模型", "en": "Drone collision model"}
+    ],
+    "relations": [
+        {"source": "探测障碍物和无人机", "target": "减少信号碰撞", "type": "包含关系"},
+        {"source": "探测障碍物和无人机", "target": "邻居发现", "type": "包含关系"},
+        {"source": "邻居发现", "target": "碰撞预测", "type": "包含关系"},
+        {"source": "碰撞预测", "target": "信息融合", "type": "包含关系"},
+        {"source": "信息融合", "target": "碰撞避免策略", "type": "包含关系"},
+        {"source": "碰撞避免策略", "target": "无人机碰撞模型", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "无人机碰撞避免", "en": "Collision avoidance of drones"},
+        {"title": "无人机间距离计算", "en": "Distance calculation between drones"},
+        {"title": "动态障碍物避免", "en": "Avoidance of dynamic obstacles"},
+        {"title": "扩展卡尔曼滤波器", "en": "Extended Kalman filter"}
+    ],
+    "relations": [
+        {"source": "无人机碰撞避免", "target": "无人机间距离计算", "type": "包含"},
+        {"source": "无人机碰撞避免", "target": "动态障碍物避免", "type": "类似"},
+        {"source": "无人机间距离计算", "target": "动态障碍物避免", "type": "类似"},
+        {"source": "扩展卡尔曼滤波器", "target": "无人机碰撞避免", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "雷达误差和扩展卡尔曼滤波器的预测误差",
+            "en": "Radar error and prediction error of extended Kalman filter"
+        },
+        {
+            "title": "多无人机信息融合下的卡尔曼滤波器预测误差",
+            "en": "Prediction error of Kalman filter under multi-UAV information fusion"
+        },
+        {
+            "title": "路径规划算法",
+            "en": "Path planning algorithm"
+        },
+        {
+            "title": "防碰撞算法",
+            "en": "Collision avoidance algorithm"
+        },
+        {
+            "title": "RRT算法",
+            "en": "RRT algorithm"
+        },
+        {
+            "title": "RRT*算法",
+            "en": "RRT* algorithm"
+        },
+        {
+            "title": "无人机集群路径重新规划算法",
+            "en": "UAV cluster path replanning algorithm"
+        }
+    ],
+    "relations": [
+        {
+            "source": "雷达误差和扩展卡尔曼滤波器的预测误差",
+            "target": "多无人机信息融合下的卡尔曼滤波器预测误差",
+            "type": "关联"
+        },
+        {
+            "source": "雷达误差和扩展卡尔曼滤波器的预测误差",
+            "target": "防碰撞算法",
+            "type": "关联"
+        },
+        {
+            "source": "多无人机信息融合下的卡尔曼滤波器预测误差",
+            "target": "防碰撞算法",
+            "type": "关联"
+        },
+        {
+            "source": "路径规划算法",
+            "target": "防碰撞算法",
+            "type": "关联"
+        },
+        {
+            "source": "路径规划算法",
+            "target": "RRT算法",
+            "type": "关联"
+        },
+        {
+            "source": "路径规划算法",
+            "target": "RRT*算法",
+            "type": "关联"
+        },
+        {
+            "source": "RRT算法",
+            "target": "RRT*算法",
+            "type": "关联"
+        },
+        {
+            "source": "RRT*算法",
+            "target": "无人机集群路径重新规划算法",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "扩展卡尔曼滤波器", "en": "Extended Kalman Filter"},
+        {"title": "动态障碍物", "en": "Dynamic Obstacle"},
+        {"title": "最小安全距离", "en": "Minimum Safe Distance"},
+        {"title": "路径冲突", "en": "Path Conflict"},
+        {"title": "路径规划", "en": "Path Planning"},
+        {"title": "RRT*算法", "en": "RRT* Algorithm"},
+        {"title": "无人机集群", "en": "UAV Swarm"},
+        {"title": "碰撞避免", "en": "Collision Avoidance"},
+        {"title": "信息共享", "en": "Information Sharing"},
+        {"title": "仿真实验", "en": "Simulation Experiment"}
+    ],
+    "relations": [
+        {"source": "扩展卡尔曼滤波器", "target": "动态障碍物", "type": "预测"},
+        {"source": "动态障碍物", "target": "路径规划", "type": "更新"},
+        {"source": "无人机飞行轨迹点", "target": "动态障碍物", "type": "距离判断"},
+        {"source": "最小安全距离", "target": "无人机飞行轨迹点", "type": "距离判断"},
+        {"source": "动态障碍物", "target": "路径冲突", "type": "发生"},
+        {"source": "路径冲突", "target": "路径规划", "type": "修剪"},
+        {"source": "碰撞避免", "target": "路径规划", "type": "重新规划"},
+        {"source": "RRT*算法", "target": "路径规划", "type": "辅助生成"},
+        {"source": "无人机集群", "target": "信息共享", "type": "路径信息"},
+        {"source": "无人机集群", "target": "碰撞避免", "type": "特殊处理"},
+        {"source": "仿真实验", "target": "MATLAB", "type": "使用"},
+        {"source": "仿真实验", "target": "RRT*算法", "type": "验证有效性"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "一体化信号",
+            "en": "Integrated signal"
+        },
+        {
+            "title": "扩展卡尔曼滤波器",
+            "en": "Extended Kalman filter"
+        },
+        {
+            "title": "路径规划算法",
+            "en": "Path planning algorithm"
+        },
+        {
+            "title": "多无人机防碰撞",
+            "en": "Multi-UAV collision avoidance"
+        },
+        {
+            "title": "多信道MAC协议",
+            "en": "Multi-channel MAC protocol"
+        }
+    ],
+    "relations": [
+        {
+            "source": "一体化信号",
+            "target": "无人机MAC协议",
+            "type": "应用"
+        },
+        {
+            "source": "无人机MAC协议",
+            "target": "雷达通信波形一体化",
+            "type": "实现"
+        },
+        {
+            "source": "无人机MAC协议",
+            "target": "多信道MAC协议",
+            "type": "改进"
+        },
+        {
+            "source": "多信道MAC协议",
+            "target": "无人机节点接入",
+            "type": "优化"
+        },
+        {
+            "source": "扩展卡尔曼滤波器",
+            "target": "轨迹预测",
+            "type": "应用"
+        },
+        {
+            "source": "轨迹预测",
+            "target": "无人机防碰撞",
+            "type": "关联"
+        },
+        {
+            "source": "无人机防碰撞",
+            "target": "路径规划算法",
+            "type": "应用"
+        },
+        {
+            "source": "路径规划算法",
+            "target": "多无人机防碰撞",
+            "type": "实现"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "多通道负载感知的飞行自组网MAC协议",
+            "en": "Multi-channel load awareness-based MAC protocol for flying ad hoc networks"
+        },
+        {
+            "title": "基于位置辅助的延迟容忍路由协议",
+            "en": "Location-Aided Delay Tolerant Routing Protocol in UAV Networks for Post-Disaster Operation"
+        },
+        {
+            "title": "基于无人机的智能农业作物和杂草分类",
+            "en": "UAV-based crop and weed classification for smart farming"
+        },
+        {
+            "title": "利用四旋翼飞行器进行自主药品运输的原型系统",
+            "en": "New Frontiers of Delivery Services Using Drones: A Prototype System Exploiting a Quadcopter for Autonomous Drug Shipments"
+        },
+        {
+            "title": "基于卡尔曼滤波的大规模野火监测系统",
+            "en": "Kalman Filter-Based Large-Scale Wildfire Monitoring With a System of UAVs"
+        },
+        {
+            "title": "国外无人机装备发展现状及典型作战模式综述",
+            "en": "Overview of the Development Status and Typical Combat Modes of Foreign UAV Equipment"
+        },
+        {
+            "title": "飞行自组网的媒体访问控制协议综述",
+            "en": "Medium Access Control Protocols for Flying Ad Hoc Networks: A Review"
+        },
+        {
+            "title": "飞行自组网（FANETs）综述",
+            "en": "Flying ad-hoc networks (FANETs): a survey"
+        },
+        {
+            "title": "民用无人机网络的调查：通信视角",
+            "en": "Survey on Unmanned Aerial Vehicle Networks for Civil Applications: A Communications Viewpoint"
+        },
+        {
+            "title": "一种基于碰撞概率的自适应争用窗口调整方法",
+            "en": "A Novel Collision Probability-based Adaptive Contention Windows Adjustment for QoS Fairness on Ad Hoc Wireless Networks"
+        },
+        {
+            "title": "无人机通信的机遇和挑战",
+            "en": "Wireless Communications with Unmanned Aerial Vehicles: Opportunities and Challenges"
+        },
+        {
+            "title": "FAA的无人机数据",
+            "en": "UAS by the Numbers from FAA"
+        },
+        {
+            "title": "2020年中国民航工作会议",
+            "en": "China Civil Aviation Working Conference held in 2020"
+        },
+        {
+            "title": "融合无线通信和雷达感知的波形设计和信号处理方面",
+            "en": "Waveform Design and Signal Processing Aspects for Fusion of Wireless Communications and Radar Sensing"
+        }
+    ],
+    "relations": [
+        {
+            "source": "多通道负载感知的飞行自组网MAC协议",
+            "target": "基于位置辅助的延迟容忍路由协议",
+            "type": "相关"
+        },
+        {
+            "source": "基于位置辅助的延迟容忍路由协议",
+            "target": "基于无人机的智能农业作物和杂草分类",
+            "type": "相关"
+        },
+        {
+            "source": "基于无人机的智能农业作物和杂草分类",
+            "target": "利用四旋翼飞行器进行自主药品运输的原型系统",
+            "type": "相关"
+        },
+        {
+            "source": "利用四旋翼飞行器进行自主药品运输的原型系统",
+            "target": "基于卡尔曼滤波的大规模野火监测系统",
+            "type": "相关"
+        },
+        {
+            "source": "国外无人机装备发展现状及典型作战模式综述",
+            "target": "飞行自组网的媒体访问控制协议综述",
+            "type": "相关"
+        },
+        {
+            "source": "飞行自组网的媒体访问控制协议综述",
+            "target": "飞行自组网（FANETs）综述",
+            "type": "相关"
+        },
+        {
+            "source": "飞行自组网（FANETs）综述",
+            "target": "民用无人机网络的调查：通信视角",
+            "type": "相关"
+        },
+        {
+            "source": "民用无人机网络的调查：通信视角",
+            "target": "一种基于碰撞概率的自适应争用窗口调整方法",
+            "type": "相关"
+        },
+        {
+            "source": "一种基于碰撞概率的自适应争用窗口调整方法",
+            "target": "无人机通信的机遇和挑战",
+            "type": "相关"
+        },
+        {
+            "source": "FAA的无人机数据",
+            "target": "2020年中国民航工作会议",
+            "type": "相关"
+        },
+        {
+            "source": "融合无线通信和雷达感知的波形设计和信号处理方面",
+            "target": "无人机通信的机遇和挑战",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "自适应通信协议", "en": "Adaptive communication protocols"},
+        {"title": "飞行自组网", "en": "Flying Ad Hoc Network"},
+        {"title": "动态TDMAMAC协议", "en": "Dynamic TDMAMAC protocol"},
+        {"title": "基于位置定向MAC协议", "en": "LODMAC: Location-oriented directional MAC protocol"},
+        {"title": "无人机网络的延迟容忍多路访问控制协议", "en": "UD-MAC: Delay-tolerant multiple access control protocol for unmanned aerial vehicle networks"},
+        {"title": "无人机网络的新型多路访问方案", "en": "Novel multiple access scheme for wireless sensor network employing unmanned aerial vehicle"},
+        {"title": "适应性MAC协议", "en": "FS-MAC: An adaptive MAC protocol with fault-tolerant synchronous switching for FANETs"},
+        {"title": "无人机避撞系统的动态MAC协议", "en": "Dynamic MAC protocol designed for UAV collision avoidance system"},
+        {"title": "超密集空中传感器网络的混合冲突协调多路访问方案", "en": "A hybrid collision coordination-based multiple access scheme for superdense aerial sensor networks"},
+        {"title": "分簇无线传感器网络动态时隙分配MAC协议", "en": "Dynamic time slot allocation MAC protocol for clustered wireless sensor networks"},
+        {"title": "无线自适应接入机制", "en": "Wireless adaptive access mechanism"},
+        {"title": "车辆自组网的媒体访问控制协议性能比较", "en": "Performance comparison of media access control protocols for vehicular ad hoc networks"},
+        {"title": "多信道MAC协议", "en": "Multi-channel MAC protocol"},
+        {"title": "IEEE802.11自组织无线局域网的多信道访问协议", "en": "A new multichannel access protocol for IEEE 802.11 ad hoc wireless LANs"}
+    ],
+    "relations": [
+        {"source": "自适应通信协议", "target": "飞行自组网", "type": "适用于"},
+        {"source": "动态TDMAMAC协议", "target": "飞行自组网", "type": "适用于"},
+        {"source": "动态TDMAMAC协议", "target": "基于位置定向MAC协议", "type": "相辅相成"},
+        {"source": "无人机网络的延迟容忍多路访问控制协议", "target": "飞行自组网", "type": "适用于"},
+        {"source": "无人机网络的新型多路访问方案", "target": "无人机网络的延迟容忍多路访问控制协议", "type": "相辅相成"},
+        {"source": "无人机网络的新型多路访问方案", "target": "适应性MAC协议", "type": "相辅相成"},
+        {"source": "适应性MAC协议", "target": "飞行自组网", "type": "适用于"},
+        {"source": "无人机避撞系统的动态MAC协议", "target": "飞行自组网", "type": "适用于"},
+        {"source": "超密集空中传感器网络的混合冲突协调多路访问方案", "target": "飞行自组网", "type": "适用于"},
+        {"source": "分簇无线传感器网络动态时隙分配MAC协议", "target": "无线自适应接入机制", "type": "相辅相成"},
+        {"source": "车辆自组网的媒体访问控制协议性能比较", "target": "多信道MAC协议", "type": "比较"},
+        {"source": "IEEE802.11自组织无线局域网的多信道访问协议", "target": "多信道MAC协议", "type": "适用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "An adaptive channel division MAC protocol for high dynamic UAV networks", "en": ""},
+        {"title": "Hop reservation multiple access (HRMA) for multichannel packet radio networks", "en": ""},
+        {"title": "CogMOR-MAC: A cognitive multi-channel opportunistic reservation MAC for multi-UAVs ad hoc networks", "en": ""},
+        {"title": "A new multi-channel MAC protocol with on-demand channel assignment for multi-hop mobile ad hoc networks", "en": ""},
+        {"title": "A multichannel CSMA MAC protocol with receiver-based channel selection for multi-hop wireless networks", "en": ""},
+        {"title": "Multi-channel MAC protocol with Directional Antennas in wireless ad hoc networks", "en": ""},
+        {"title": "Research on key technologies of detection-communication integration based on shared waveform", "en": ""},
+        {"title": "Multiple-Channel Multiple-User Receiver for Joint Radar and Communications Systems", "en": ""},
+        {"title": "Joint Sensing and Communications Multiple-Access System Design and Experimental Characterization", "en": ""},
+        {"title": "MAC protocol for intelligent vehicle fleet radar communication integration system", "en": ""},
+        {"title": "Key technology research on protocol for wireless sensor network in high dynamic environment of UAV", "en": ""},
+        {"title": "Three-dimensional multiple access method for joint radar and communication enabled V2X network", "en": ""},
+        {"title": "CAAC Measures for air traffic management of civil unmanned aerial vehicle system", "en": ""}
+    ],
+    "relations": [
+        {"source": "An adaptive channel division MAC protocol for high dynamic UAV networks", "target": "Communication Theory", "type": "属于"},
+        {"source": "Hop reservation multiple access (HRMA) for multichannel packet radio networks", "target": "Communication Theory", "type": "属于"},
+        {"source": "CogMOR-MAC: A cognitive multi-channel opportunistic reservation MAC for multi-UAVs ad hoc networks", "target": "Communication Theory", "type": "属于"},
+        {"source": "A new multi-channel MAC protocol with on-demand channel assignment for multi-hop mobile ad hoc networks", "target": "Communication Theory", "type": "属于"},
+        {"source": "A multichannel CSMA MAC protocol with receiver-based channel selection for multi-hop wireless networks", "target": "Communication Theory", "type": "属于"},
+        {"source": "Multi-channel MAC protocol with Directional Antennas in wireless ad hoc networks", "target": "Communication Theory", "type": "属于"},
+        {"source": "Research on key technologies of detection-communication integration based on shared waveform", "target": "Communication Theory", "type": "属于"},
+        {"source": "Multiple-Channel Multiple-User Receiver for Joint Radar and Communications Systems", "target": "Communication Theory", "type": "属于"},
+        {"source": "Joint Sensing and Communications Multiple-Access System Design and Experimental Characterization", "target": "Communication Theory", "type": "属于"},
+        {"source": "MAC protocol for intelligent vehicle fleet radar communication integration system", "target": "Communication Theory", "type": "属于"},
+        {"source": "Key technology research on protocol for wireless sensor network in high dynamic environment of UAV", "target": "Communication Theory", "type": "属于"},
+        {"source": "Three-dimensional multiple access method for joint radar and communication enabled V2X network", "target": "Communication Theory", "type": "属于"},
+        {"source": "CAAC Measures for air traffic management of civil unmanned aerial vehicle system", "target": "Communication Theory", "type": "属于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Light and Small Civil UAV Flight Dynamic Data Management Regulation", "en": ""},
+        {"title": "Suggested Rules for UAV Remote Identification", "en": ""},
+        {"title": "Sense and Avoid Technologies with Applications to Unmanned Aircraft Systems", "en": ""},
+        {"title": "Traffic Alert and Collision Avoidance System (TCAS)", "en": ""},
+        {"title": "Enhanced ADS-B Research", "en": ""},
+        {"title": "Sense and Avoid Implementation in a Small Unmanned Aerial Vehicle", "en": ""},
+        {"title": "AMIMO Radar for Sense and Avoid Function", "en": ""},
+        {"title": "Collision Avoidance Radar for UAV", "en": ""},
+        {"title": "Agriculture Solution Package 2.0", "en": ""},
+        {"title": "UAV Path Planning for Passive Emitter Localization", "en": ""},
+        {"title": "Collision Avoidance between Multi-UAV Systems Considering Formation Control Using MPC", "en": ""},
+        {"title": "UAV Position Estimation and Collision Avoidance Using the Extended Kalman Filter", "en": ""},
+        {"title": "UAVs' Autonomous Collision Avoidance in Urban Space", "en": ""}
+    ],
+    "relations": [
+        {"source": "Light and Small Civil UAV Flight Dynamic Data Management Regulation", "target": "Suggested Rules for UAV Remote Identification", "type": "related"},
+        {"source": "Sense and Avoid Technologies with Applications to Unmanned Aircraft Systems", "target": "Traffic Alert and Collision Avoidance System (TCAS)", "type": "related"},
+        {"source": "Sense and Avoid Technologies with Applications to Unmanned Aircraft Systems", "target": "Enhanced ADS-B Research", "type": "related"},
+        {"source": "Sense and Avoid Technologies with Applications to Unmanned Aircraft Systems", "target": "Sense and Avoid Implementation in a Small Unmanned Aerial Vehicle", "type": "related"},
+        {"source": "Sense and Avoid Technologies with Applications to Unmanned Aircraft Systems", "target": "AMIMO Radar for Sense and Avoid Function", "type": "related"},
+        {"source": "Sense and Avoid Technologies with Applications to Unmanned Aircraft Systems", "target": "Collision Avoidance Radar for UAV", "type": "related"},
+        {"source": "Agriculture Solution Package 2.0", "target": "UAV Path Planning for Passive Emitter Localization", "type": "related"},
+        {"source": "Collision Avoidance between Multi-UAV Systems Considering Formation Control Using MPC", "target": "UAV Position Estimation and Collision Avoidance Using the Extended Kalman Filter", "type": "related"},
+        {"source": "UAVs' Autonomous Collision Avoidance in Urban Space", "target": "Collision Avoidance between Multi-UAV Systems Considering Formation Control Using MPC", "type": "related"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "多无人机路径规划", "en": "Multi-UAV path planning"},
+        {"title": "无人机地理围栏和最小安全间隔约束下的路径规划", "en": "Path planning for UAVs under geofencing and minimum safe separation constraints"},
+        {"title": "复杂山区中基于改进蚁群算法的无人机路径规划方法", "en": "UAV path planning method in complex mountainous area based on a new improved ant colony algorithm"},
+        {"title": "基于蚁群算法的无人机轨迹轨迹算法改进", "en": "Improvement of UAV track trajectory algorithm based on ant colony algorithm"},
+        {"title": "通信网络基础", "en": "Fundamentals of communication networks"},
+        {"title": "无线自组织网络多信道动态接入技术", "en": "Dynamic access technology for multi-channel wireless ad hoc networks"},
+        {"title": "IEEE 802.11n标准", "en": "IEEE 802.11n standard"},
+        {"title": "基于OFDM技术的雷达通信共享信号设计研究", "en": "Research on shared signal design for radar communication based on OFDM technology"},
+        {"title": "无人机空地信道特性", "en": "Air-ground channel characteristics of UAV systems"},
+        {"title": "雷达辅助的无线自组织网络快速邻居发现", "en": "Radar-assisted fast neighbor discovery for wireless ad hoc networks"},
+        {"title": "DCA协议的饱和吞吐量分析与最优带宽分配", "en": "Throughput analysis and optimal bandwidth allocation for DCA protocol"},
+        {"title": "多传感器信息融合估计理论及其在智能制造中的应用", "en": "Theory of multi-sensor information fusion estimation and its application in intelligent manufacturing"},
+        {"title": "Inspire 2的技术参数", "en": "Technical parameters of Inspire 2"},
+        {"title": "三维环境中高效的无人机路径规划算法", "en": "Efficient path planning algorithm in three dimensions for UAVs"},
+        {"title": "模糊运动规划算法", "en": "Fuzzy kinodynamic planning algorithm"},
+        {"title": "基于改进障碍物避免的无人机路径规划算法", "en": "Rectified RRT* with efficient obstacle avoidance method for UAVs in 3D environment"}
+    ],
+    "relations": [
+        {"source": "多无人机路径规划", "target": "无人机地理围栏和最小安全间隔约束下的路径规划", "type": "相关"},
+        {"source": "无人机地理围栏和最小安全间隔约束下的路径规划", "target": "复杂山区中基于改进蚁群算法的无人机路径规划方法", "type": "相关"},
+        {"source": "复杂山区中基于改进蚁群算法的无人机路径规划方法", "target": "基于蚁群算法的无人机轨迹轨迹算法改进", "type": "相关"},
+        {"source": "通信网络基础", "target": "无线自组织网络多信道动态接入技术", "type": "相关"},
+        {"source": "无线自组织网络多信道动态接入技术", "target": "IEEE 802.11n标准", "type": "相关"},
+        {"source": "基于OFDM技术的雷达通信共享信号设计研究", "target": "无人机空地信道特性", "type": "相关"},
+        {"source": "无人机空地信道特性", "target": "雷达辅助的无线自组织网络快速邻居发现", "type": "相关"},
+        {"source": "DCA协议的饱和吞吐量分析与最优带宽分配", "target": "通信网络基础", "type": "相关"},
+        {"source": "多传感器信息融合估计理论及其在智能制造中的应用", "target": "Inspire 2的技术参数", "type": "相关"},
+        {"source": "三维环境中高效的无人机路径规划算法", "target": "模糊运动规划算法", "type": "相关"},
+        {"source": "基于改进障碍物避免的无人机路径规划算法", "target": "三维环境中高效的无人机路径规划算法", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}

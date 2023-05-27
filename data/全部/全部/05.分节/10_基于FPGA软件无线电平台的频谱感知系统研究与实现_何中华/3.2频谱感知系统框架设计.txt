@@ -1,0 +1,25 @@
+3.2频谱感知系统框架设计
+频谱感知系统的软件无线电平台主要涉及ADI公司的射频子板 AD-FMCOMMS1、Xilinx公司的FPGA开发板ML605和基于Linux系统的服务器， 设计为软件无线电平台主要考虑到使系统的各个配置可以轻松通过软件来调节， 而无需再更改底层的硬件架构。射频前端的配置更改与信号捕捉之间的延时控制, 射频接收的增益控制，何时进行单次扫频感知，扫频的频率范围，都可以根据软 件来更改，这样的设计可以使得系统更加灵活、适用于更多的场景SI。
+频谱感知系统的总体设计，包括基于AD-FMCOMMS1的射频驱动子系统设 计，RTL级基带信号处理子系统的设计，基于Microblaze SOC的软硬件控制系统 的设计，基于Linux C++的软件控制系统的设计和基于MATLAB的宽带能量检测算 法与实时演示子系统的设计。其中频谱感知基带信号处理子系统和射频驱动子系 统的设计与实现是本文的核心内容，涉及从射频前端的控制，到基带各个处理单 元的设计。系统总体框架图如图3-1所示。
+PC Host Server
+Sweep Frequency
+Control
+FPGA Soc System
+AD-FMC0MMS1-
+EBZ射频板
+数据流
+►控制流
+空中信号
+AXI
+IIC
+■thernet
+Data Receive
+& Process
+;Config Info 亥 Process
+1.
+MATLAB I f
+[Energy DEtection
+Data mining'
+pTmurarnniTi-.
+i IP Core
+图3-1频谱感知系统总体框架图

@@ -1,0 +1,9 @@
+3.2.1转移特性
+图3-8三种晶体管的(a)转移特性曲线；(b)亚阈值斜率图。
+图3-8(a)展示了错层厚度为6九肌的GAS GAA TFET和普通的Si GAA TFET、 Ge-source GAA TFET在Vds = 0.75V条件下的转移特性曲线图。本节中对GAS GAATFET和Ge-source GAATFET进行仿真时，使用的功函数是4.53eU,而对 Si GAATFET仿真时使用的功函数为4.1eV,这是因为功函数对转移特性曲线的 影响主要为可以使曲线整体向左或者向右移动，降低栅极功函数可以使得曲线整 体往左移，因此，为了使得三条曲线的开启电压VoNSET接近，便于进行比较分析， 对Si GAA TFET的仿真时使用的功函数都是4.1eV⑹。另外，这里的开启电压 VONSET■指的是，从该电压开始，晶体管的漏极电流开始快速增长。从转移特性曲 线图中可以得到，GAS GAATFET的开态电流大约是Si GAATFET的lO^倍， 约等于 Ge-source GAA TFET,同时，GAS GAA TFET 的关态电流是 Ge-source GAATFET的五分之一，本文中将阈值电压吟定义为从V0NSET处电流值加SET增 长为IONSET X 107的时候的电压值，阈值电流❻则是阈值电压下的漏极电流，因 此，GAS GAA TFET、Si GAA TFET 和 Ge-source GAA TFET 三种器件的阈值电 压％、阈值电流❻分别为0.579U和10一7久Q.537V和0.663V和10-6儿 由此可以计算出三种器件的平均亚阈值斜率分别为65mV/dec. 68.71mV/dec和 83.71mV/dec,因此，综合转移特性以及亚阈值特性，错层厚度为6nm的GAS
+29
+GAA TFET 的性能优于 Si GAA TFET 和 Ge-source GAA TFETo 图 3-8(b)展示了 GAS GAA TFET、Si GAA TFET 和 Ge-source GAA TFET 三种器件随着栅极电压
+改变而改变的点亚阈值斜率图，可以看出，在0.15IZ到0.51/的范围内
+TFET的点亚阈值斜率低于Si GAA TFET和Ge-source GAATFET的，另外，可 以看出，SiGAATFET的点亚阈值斜率随着栅极电压的增大快速增大，因此其稳
+TFET和Ge-source GAA TFET的亚阈值斜率曲线相似，为了分析其稳定性，本
+文计算了两条曲线的方差，可以得到GAS GAA TFET曲线的方差为81.92(mU/ dec)2, Ge-source GAATFET 的方差为 10&01(mV/dec)2,这说明，本文提出的 GAS GAATFET 结构相较于 Si GAATFET 和 Ge-source GAATFET,亚阈值斜率 更加稳定的。

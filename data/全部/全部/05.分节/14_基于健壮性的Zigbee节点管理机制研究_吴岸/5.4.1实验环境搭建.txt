@@ -1,0 +1,17 @@
+5.4.1实验环境搭建
+上文中提出的协调器冗余备份机制仅仅是在Zigbee协议栈中增加了一组原语，来实 现网络异常检测和切换的过程，并不涉及到对协议栈整体框架的改动，而且消息的发送 也需要其他一些基本协议功能的支持，因此在已有的Zigbee协议软件的基础上进行开发。 本文选用的协议软件是Microchip Zigbee Pro。
+Microchip Zigbee Pro是美国微芯科技股份有限公司(Microchip Technology Inc)根 据最新的Zigbee协议规范Zigbee2007推出的协议软件包。Zigbee2007定义了两种不同 功能级别的特性集，其中标准集是Zigbee,增强的特性集叫做Zigbee Pro。与Zigbee相 比，Zigbee Pro提供了许多增强的网络能力，并在某些条件下支持对Zigbee的兼容性。 在Zigbee Pro中加入的新特性包括：
+•随机地址生成和地址冲突解决机制；
+・大块数据的分段发送和接收聚合机制；
+・支持跳频通信和动态信道选择；
+・源路由和多对一路由机制；
+・PANID冲突检测和解决机制；
+・支持链路状态命令；
+・启动属性集和非易失性存储特性；
+・适用于高安全应用的主密钥交换机制。
+・中心化的数据集中机制；
+支持对MPLAB C编译器、PIC24系列MCU和MRF24J40 2.4GHz无线收发模块的 兼容性。
+硬件设计采用 Microchip Explorerl6 开发板搭配 Microchip PIC24FJ128GA310 单片 机作为微控制器芯片。微控制器(MCU, Micro Control Unit)是整个系统的核心，除了 负责对系统进行控制外，其主要功能是承载Zigbee协议软件，实现完整的Zigbee协议 栈功能，包括全部应用层和网络层功能，大部分MAC层功能，和对物理层的配置。 Microchip PIC24FJ128GA310 单片机是一款 16 位的超低功耗 MCU,引入 nanoWatt XLP 技术支持器件深度休眠;采用改进哈佛型架构，拥有8KB数据存储和128KB程序存储； 内置支持整数运算的硬件乘除法器，最大工作性能可达16MIPSo以上特性提供了对运
+37 行Zigbee协议软件的有力支持。
+无线模块是Zigbee模块的无线信号收发装置，本系统采用了支持IEE802.15.4规范 的Microchip MRF24J40MC 2.4GHz无线收发器模块㈣，该模块集成了 IEE802.15.4基带 和射频电路，提供250kbps (Zigbee标准)和625kbps (加速模式)两种空口速率，用 硬件实现了 Zigbee协议MAC层组装解析协议帧、AES-128安全算法加密、CSMA-CA 机制、自动应答，和物理层差错编码、调制、扩频、能量检测等功能。此外还提供了对 功率控制功能的支持。
+外部存储器采用Microchip 25LC1024电可擦除可编程只读存储器(EEPROM, Electrically Erasable Programmable Read-Only Memory)芯片冋，作用是存储 Zigbee 节点 启动属性集(SAS)和网络层邻居表等在设备重新启动后仍然保留的信息。该芯片拥有 1Mbit存储能力，与系统微控制器通过串行外设接口(SPL Serial Peripheral Interface) 相连，釆用3线模式，单片机可提供最大4MHz的采样时钟速率。无线模块与微控制器 也采用SPI连接。

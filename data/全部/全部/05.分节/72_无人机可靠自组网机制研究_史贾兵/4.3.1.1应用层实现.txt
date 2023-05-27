@@ -1,0 +1,210 @@
+4.3.1.1应用层实现
+随着节点数的增加，发送端和接收端的增加，给节点设置发送和接收的应用 越来越繁琐，并且仿真的数据也不好管理，出于此原因，我创建了一个新模块， 用来封装应用。方便了发送端应用和接收端应用的创建，开启，停止。并通过结 果集收集仿真后的数据，便于仿真后的结果的呈现。
+37
+SJBSe0qer
+public
+void SetStartTimefUme start) void SetStopPme(Time stop)
+private Ptr<Node> m_node Time m_startTime Time m_stoplime
+private uint32J m_pktSize uint32_t m_numPkts Ptr<ConstantRcndomVariabie>m_interva! lpv4Address m_destAddress uint32_t m„destPort Ptr<Socket> m_socket std::vector<Ptr<ResultObject»m_sendList
+public setDestination(lpv4Address address) std::vector<Ptr<ResultObject» getSendUstf) private void StortApplicationf) void Stop Application 0 void SendPacketO
+^承
+每个属性的set, gel方法
+依赖/
+Time m_timestamp
+void SetTimeslampfnme time) Time GetTimestampf)
+double mjeceivetime double m_deloy uint32J m_recelvePocketNurnPerSec uint32_t m_pocKetUid
+依赖\
+图4-8应用封装类图
+图4-8展示了封装应用的类图结构，主要包含三部分：发送应用，接收应用， 时间戳，和仿真结果对象。
+发送应用(SJBSender):可以设置目的ip地址，端口号，发送数据包的大小， 发送数据包总数，发送间隔。开启，停止应用，并可以获取发送数据包的集合。
+接收应用(SJBReceiver)：可以设置监听端口，并能跟踪接收数据包。开启， 关闭应用，并能获取接收数据包的集合。
+时间戳(SJBTimestampTag)：给数据包添加时间戳，当接收到包时，可以通 过时间戳计算出应用层的时延。
+仿真结果对象(Resultobject)：是仿真对象的封装，其中包括数据包接收时 间、时延、每秒接收的数据包数，数据包id号。
+创建新模块./create-module. py s jb-module,并在mode］文件夹下创建 SJBApplication. h, SJBApplication. cc, ResultObject. h, ResultObject.cc 四 个文件。其中ResultObject封装了仿真的结果信息。SJBApplication是对应用 层的实现，具体实现代码如下：
+ttinclude <ostream>
+38
+^include "NS-3/core-module, h"
+^include “NS-3/network-module, h”
+Sinclude ，zNS-3/internet-module, h”
+#include z，NS-3/stats-module. hz，
+#include “SJBAppIication. h"
+♦ include ^ResultOb ject. hzz
+using namespace NS-3;
+NS_LOG_COMPONENT_DEFINE ("SJBApplication");
+//发送应用属性有：PacketSize传输包的大小，Destination目标主机ip 地址，Port端口，//NumPackets发送的包数，Interval数据包发送的时间间隔。
+Typeld
+SJBSender::GetTypeld (void) (
+static Typeld tid = TypeTd ("SJBSender")
+.SetParent<Applicati on> ()
+.AddConstruetor<SJBSender> ()
+.AddAttribute ("PacketSize”，〃The size of packets transmitted.，z, UintegerValue (64),
+MakeUintegerAccessor (&SJBSender::m_pktSize), MakeUintegerChecker<uint32_t>(1))
+.AddAttribute ("Destination", "Target host address. /z, Ipv4AddressValue ("255. 255. 255, 255”), MakeTpv4AddressAccessor
+(&SJBSender::m_destAddr), MakeIpv4AddressChecker ())
+.AddAttribute ("Port”, ^Destination app port.", UintegerValue (1603), MakeUintegerAccessor (&SJBSender::m_destPort), MakeUintegerChecker<uint32_t>())
+.AddAttribute ("NumPackets", "Total number of packets to send. ”, UintegerValue (30), MakeUintegerAccessor (&SJBSender::m_numPkts), MakeUintegerChecker<uint32_t>(1))
+.AddAttribute ("Interval", "Delay between transmissions.
+39
+StringValue	("NS -
+3::ConstantRandomVariable[Constant=O. 5]"),
+MakePointerAccessor (&SJBSender::m_interval), MakePointerChecker <RandomVari ableStream>()) .AddTraceSource ("Tx”, 〃A new packet is created and is sent”, MakeTraceSourceAccessor (&SJBSender::m_txTrace));
+return tid;}
+SJBSender::SJBSender () {NS_L0G_FUNCTI0N_N0ARGS (); m_interval 二 CreateObject<ConstantRandomVariable> (); m_socket = 0;}
+SJBSender::〜SJBSender() {NS_LOG_FUNCTION_NOARGS ();) void SJBSender::DoDispose (void) {NS_LOG_FUNCTION_NOARGS ();
+m_socket = 0;
+Application::DoDispose ();}
+〃发送端应用开始的入口，系统调用此函数，再通过SendPacket函数发送 数据
+void SJBSender:rStartApplication () {NS_LOG_FUNCTION_NOARGS ();
+if (m_socket == 0) {
+Ptr<SocketFactory> socketFactory 二 GetNode ()->GetObject<SocketFactory> (UdpSocketFactory::GetTypeId 0); m__socket = socketFactory->CreateSocket (); m_socket->Bind ();} m_count = 0;
+Simulator::Cancel (m_sendEvent);
+m_sendEvent = Simulator::ScheduleNow (&SjBSender::SendPacket, this) ;} void SJBSender::StopApplication () {NS_LOG_FUNCTION_NOARGS ();
+40
+Simulator::Cancel (m_sendEvent);}
+〃发送数据包并将仿真期间发送的数据存放到忆sendList.集合中，以便以 后使用
+void SJBSender::SendPacket ()
+{Ptr<Packet> packet = Greate<Packet>(m_pktS i ze);
+S JBTimestanipTag time st amp;
+times tamp, SetTimestamp (Simulator::Now ());
+packet->AddByteTag (timestamp);
+m_socket->SendTo (packet, 0, InetSocketAddress (m_destAddr, m_destPort));
+Ptr<ResultObject> tempObject=CreateObject<ResultObject>(); tempObject->setPacketUid(packet->GetUid()); m_sendList. push_back(tempObject);
+// Report the event to the trace.
+m__txTrace (packet) ;	•
+if (++m_count < m_numPkts) { nj_sendEvent = Simulator::Schedule (Seconds (m_interval->GetValue ()), &SJBSender::SendPacket, this) ;}} 〃设置目的地ip地址
+void SJBSender::setDestination(Ipv4Address destAddr) { m__destAddr=destAddr;} //获取仿真中的发送信息集合 std::vector<Ptr<ResultObject> > SJBSender::getSendList(){
+return m_sendList;}
+〃接收应用，属性包括Port接收端监听的端口。
+TypeTd
+SJBReceiver::GetTypeId (void)
+{static TypeId tid 二 TypeId ("SJBReceiver")
+.SetParent<Application> ()
+.AddConstructor<SJBReceiver> ()
+.AddAttribute ("Port", "Listening port.”, UintegerValue (1603),
+41
+MakeUintegerAccessor (&SJBReceiver::m_port), MakeUintegerChecker<uint32_t>()) .AddTraceSource ("Rx”, 〃A packet is received”, MakeTraceSourceAccessor (&SJBReceiver::m_rxTrace));
+return tid;}
+SJBReceiver::SJBReceiver():
+tn_calc (0),
+m_delay (0) {NS_LOG_FUNCTION_NOARGS ();
+m_socket = 0;}
+SJBReceiver: &SJBReceiver() {NS_LOG„FUNCTION_NOARGS ();} void SJBReceiver::DoDispose (void) {NS_LOG_FUNCTION_NOARGS ();
+m_socket = 0;
+// chain up
+Application::DoDispose () ;}
+〃发送端开始的函数入口，并设置接收端的监听回调函数。
+Void SJBReceiver:rStartApplication () {NS_LOG_FUNCTION_NOARGS ();
+if (m_socket = 0) {
+Ptr<SocketFactory> socketFactory 二
+GetNode ()->Get0bject<SocketFactory> (UdpSocketFactory::GetTypeId ());
+m_socket = socketFactory->CreateSocket ();
+InetSocketAddress local 二
+InetSocketAddress (Ipv4Address::GetAny (), m_port); m_socket->Bind (local);} m_socket->SetRecvCalIback (MakeCal1back (&SJBReceiver::Receive, this));} void SJBReceiver:zStopApplication () {NS__LOG_FUNCTION_NOARGS ();
+if (m_socket != 0) { rn_socket->SetRecvCal Iback
+42
+(MakeNulICallback<void, Ptr<Socket> > ());}}
+void SJBReceiver::SetCounter (Ptr<CounterCalculator<> > calc) {m_calc = calc;}
+void	SJBReceiver::SetDelayTracker
+(Ptr<TimeMinMaxAvgTotalCalculator> delay)
+{m_delay - delay;}
+〃获取接收端仿真期间的仿真结果数据集。
+std::vector<Ptr<ResultObject> >
+SJBReceiver::getReceiveTimeList()
+{return m_receiveTimeList;}
+〃接收数据，并往接收数据集合中增加仿真数据，以便呈现仿真结果。
+Void SJBReceiver::Receive (Ptr<Socket> socket)
+{ Ptr<Packet> packet;
+Address from;
+while ((packet = socket-〉RecvFrom (from))) { if (InetSocketAddress::IsMatchingType (from)) { NS_LOG_INFO ("Received ” << packet->GetSize () << 〃 bytes from 〃 <<
+InetSocketAddress::ConvertFrom (from). Getlpv4 () <<	-
+“packetUid: zz<< packet->GetUid()«，z time: "〈〈Simulator::Now ());) SJBTimestampTag timestamp;
+if (packet->FindFirstMatchingByteTag (timestamp)) {
+Time tx = timestamp.GetTimestamp ();
+if (m_delay != 0) {
+Time now= Simulator::Now ();
+m_delay->Update (now - tx);
+Ptr<ResultObject> tempObject=Create()bject<Result()bject> ();
+tempObject->setReceiveTime(now. GetSeconds ());
+tempObject->setDelay((now-tx). GetSeconds ());
+tempObject->setSendMacQueueSize(packet->getSendQueueSize());
+tempObject->setPacketUid(packet->GetUid ());
+m_receiveTimeList. push__back (tempObject) ;}} m_rxTrace(packet);
+if (m_calc !- 0) {
+43
+m_calc->Update ();
+NS.LOGJEBUG (，zrn_calcz，«m„calc->GetCount ());}}}
+//时间戳对象，用来标识发送数据和接收数据时刻的时间，通过这两个数据 就可以分析发送〃数据的时延
+Typeld SJBTimestanipTag: :GetTypeId (void)
+{static Typeld tid = Typeld ("SJBTimestampTag")
+.SetParent<Tag> ()
+.AddConstructor<SJBTimestampTag> ()
+.AddAttribute ("Timestamp”,
+“Some momentous point in time!”, EmptyAttributeValue (), MakeTimeAccessor
+(&SJBTimestampTag::GetTimestamp),
+MakeTimeChecker 0)；
+return tid;)
+Typeld
+SJBTimestampTag::GetInstanceTypeId (void) const
+{return GetTypeld () ;}
+uint32_t SJBTimestampTag::GetSerializedSize (void) const
+{ return 8;}
+void SJBTimestanipTag: Serialize (TagBuffer i) const
+{int64_t t = m_timestamp. GetNanoSeconds ();
+i.	Write ((const uint8_t *)&t, 8) ;}
+void SJBTimestampTag::Deserialize (TagBuffer i)
+{int64_t t;
+i.	Read ((uint8_t *)&t, 8);
+m_timestamp = NanoSeconds (t);}
+void SJBTimestampTag::SetTimestamp (Time time)
+{m_timestamp = time;}
+Time SJBTimestampTag::GetTimestamp (void) const
+{return m_timestamp;}
+void SJBTimestampTag::Print (std:rostream &os) const {os <<	<< m_timestamp;}
+44
+431.2移动模型的改进
+修改源码中二维随机游走模型，目录在mobile/ random-walk-2d-mobility-model.cc
+修改原因：如果移动的节点跑出设定的边界，程序则停止无法继续执行。由 于此移动模型是方向随机、速度随机的，如果边界设定的比较小，则很容易结束 程序。
+修改逻辑：
+判断如果向右移动最大速度乘以持续时间超出了右边界则让节点向左移动。 判断如果向左移动最大速度乘以持续时间超出了左边界则让节点向右移动。 判断如果向上移动最大速度乘以持续时间超出了上边界则让节点向下移动。 判断如果向下移动最大速度乘以持续时间超出了下边界则让节点向上移动。 代码如下：
+void RandomWalk2dMobilityModel::DoWalk (Time delayLeft)
+{Vector position = m_helper.GetCurrentPosition ();
+Vector speed = m_helper.GetVelocity ();
+Vector nextPosition = position;
+if(m_bounds.xMax<nextPosition.x+m_speed->GetValue()*m_modeTime.GetSe conds()){
+nextPosition.x ・=m_speed->GetValue()*m_modeTime.GetSeconds();
+}else	if(m_bounds.xMin>nextPosition.x-
+m_speed->GetValue()*m__rnodeTime.GetSeconds()){
+nextPosition.x += m_speed->GetValue()*m_modeTime.GetSeconds();
+}else{nextPosition.x += speed.x * delayLeft.GetSeconds ();}
+if(m_bounds.yMax<nextPosition.y+m_speed->GetValue()*in_modeTime.GetSe conds()){nextPosition.y -= m_speed->GetValue()*m_modeTime.GetSeconds();}
+else	if(m_bounds.yMin>nextPosition.y-
+m_speed->GetValue()*m_modeTime.GetSeconds()){
+nextPosition.y += m_speed->GetValue()*m_modeTime.GetSeconds();
+}else{nextPosition.y += speed.y * delayLeft.GetSeconds ();)
+if(nextPosition.x<0){ nextPosition.x-nextPosition.x;) if(nextPosition.y<0){nextPosition.y=-nextPosition.yJ if (m_bounds.lslnside (nextPosition))
+45
+{m_event=Simulator::Schedule(delayLeft5
+&Random Walk2dMobilityModel: :DoInitializePri vate, this);}
+else{nextPosition = m_bounds.CalculateIntersection (position, speed);
+Time delay = Seconds ((nextPosition.x - position.x) / speed.x);
+m_event= Simulator:: Schedule
+(delay, &RandomWalk2dMobilityModel::Rebound, this,
+delayLeft- delay);}
+NotifyCourseChange ();)
+验证修改后正确性，验证场景：设置两个节点，节点0初始位置为(10, 10, 0),节点1的初始位置为(40, 40, 0),设置他们的移动模型都是随机游走模型
+RandomWalk2dMobilityModel可移动的范围为x轴从0到50米,y轴从0到 50米，移动速度为16m/s,移动方向随机，随机触发模式为时间，每0.1s经行随 机改变方向。运行时间为1000s,以下是节点移动模型的设置。
+Ptr<ListPositionAllocator> positionAlloc = CreateObject<
+ListPositionAllocator>();
+positionAlloc->Add(Vector( 10, 10, 0.0));
+positionAlloc->Add(Vector(40, 40, 0.0));
+mobility.SetPositionAllocator(positionAlloc);
+mobility.SetMobilityModel(,,NS-3::RandomWalk2dMobilityModer,, "Bounds",
+RectangleValue(Rectangle(O, 50, 0, 50)),
+"Time", TimeValue(Seconds(0.1))? nModen,
+EnumValue(RandomWalk2dMobilityModel::MODE„TIME)
+,,'DirectionM?StringValue(,,NS3::UnifbrmRandomVariable[Min=0.0|Max=6.2831 84]n)；,Speedn?StringValue(,,NS-3::UniformRandomVariable[Min=16.0|Max=16.0]H
+);
+mobility.Install(nodeContainer);
+通过NetAnim软件可以显示节点的运行轨迹，如下图所示。虽然在图中看 到了一些范围外的轨迹，但是我通过此软件的动画发现节点并没有运行在范围外 的轨迹上，可见两个节点的运行轨迹在设置的范围内，验证成功。
+46
+图4-9 节点移动轨迹

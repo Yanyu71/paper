@@ -1,0 +1,9 @@
+5.2.3格式22a2b加扰调制模块
+该模块主要实现发送序列的加扰调制功能，扰码由gold码产生函数生成，数组 RMTable存储UCI经RM编码后序列，将QPSK调制后的I路和Q路符号存表，用数 组QPSKTable存储。通过査表得到CSI的调制后序列。
+表5-3: CSI加扰调制模块函数描述
+函数原型	void eNBRXPUCCH_ScnnbMod(UCILength,subfrmBufIdx)
+函数输入	函数参数	UCILengthiUCI 长度 subfnnBufldx：缓存索引
+全局变量	RMTable：指向UCI序列RM编码之后的数组的指针
+QPSKTable：指向组成QPSK四个相位的数组的指针
+函数输出	全局变量	ModCode：指向经过调制的控制信息数组的指针
+返回值	无

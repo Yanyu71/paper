@@ -1,0 +1,101 @@
+4.4.2文档元素自动化提取实现
+本文基于RoadRunner算法的原型编程库实现网络页面的自动化提取技术， 并根据所要提取的网络页面类型的特点进行了一定的改进。算法要求目标页面间具有相似的结构特征，但是如果需要数据提取的页面结构等特征出现变化时，仅 需要使用新的训练集进行训练产生新的包装器即可，对不同类型网络页面进行数 据提取时，也是同样的操作方式。以简单的数据集训练的方式代替数据提取程序 的重写从而极大降低了程序的维护成本，扩展了程序的适用范围
+自动提取实现
+图4-7展示了本文实现的自动化网络页面信息元素的提取步骤：
+HTML文档的语法检查
+由于，使用RoadRunner中的元素自动提取算法中需要HTML严格的符合 HTML的标准。所以进行网络页面元素提取的第一步是对原始HTML文档进行 语法检査，即语法错误修正。本文中使用NekoHTML编程工具库对原始HTML 文档进行语法检査，NekoHTML可以对HTML文档中常见的错误，如遗漏的标 签，缺失DOM父元素节点等。另外，NekoHTML将所有可选的关闭标签都进行 补齐，使其符合严格的XHTML标准。本文没有使用文献［25］中的jTidy,是因为 在实验中发现NekoHTML可以提供更好的语法检查，且NekoHTML有更加新的 维护，保证了 NekoHTML的性能的提升，以及提供了更多的新特征。方便HTML 文档的规范化。
+生成包装器
+将HTML文档标准化为XHTML后，就可以利用这些XHTML文档通过
+RoadRunner算法生成用于数据提取的包装器。
+信息元素提取
+包装器生成后，就可以对任意同结构类型的目标HTML文档的数据进行提 取了。
+HTML元素自动化提取结果分析
+本文选取了某购物网站的搜索结构页面进行了 HTML元素自动化提取的测试。
+amazon
+j ' Hx. * 療然		■BQ BLACK FRIDAY deals week >
+Shop by Department ?	　Vwur Aiiict-jtMi con<	Deal? (險 CxnJs	Help	　　　　　Hello.Smnin	l?v	Vow _	*\0?
+Your Account - Prime ~ Lists ? rr Cart
+- -- — ~ ；
+(a) 页面一
+1-16 of 102492 results for "java-
+BLACK FRIDA/ deals week〉
+M?Ka.Sjga?i Your Account -
+Yow Lists <
+Show results for
+java P(Mra 贼 mnq
+Campvtefs & Technutoffy Reftirence
+Pfoyaiwren? Languages Bechwe" Guides toJ?*a
+Pt&gramming
+? see mwe
+Kinoie Store >
+Jara Computer Projfammiofl Computw Proflramiwna computsre & Technoioov
+. See more
+? See All 32 Departments
+Refine by
+international Shaping
+SMp? China
+Amazon Ptima
+Shop The Programmer's Bookshelf
+Java I C++1 Pytftcn J Sw?! j Ruby 1 Vfcuai Basic
+ReUted Searehes: java jao^rafnniing. jjw龄顷出 玲then.
+Java: A Banner's Guide. Sixth Edition Mays. 2014 tyH8(aetlSd)iii?
+Pawrfsack
+$23.83 WM GstSUy T?e?aay, Nw 24
+More Euy：f>s Choices $15.32 uses & new (815??rs}
+嗷僉敏喰金-R
+in Beginners 3<tes to Java Pro*a：nm林
+TratJe >n you?$ for ?n Ainazon C3-6 uo tc $8.83
+FREE SHi^nn^ on ofCsts cwr S35
+Soests： See 溯 21^31 ims
+Payback
+S3ZS5 9fAW <^>rln? fuesaay. X<w 24
+More SuySno Chc-ses $25.57 us;t：d & iSSoSsrs}
+Java: The Complete Reference, Ninth Edition Apt t.aou b￥Ham?rtScaSiB
+?^喩癡囁喰r a
+Tratfe in youts fsr an A/nazon Gifl 3怂 up to $<$.08
+FREE pippins on otfSefs c?? $35
+Bo?*s： See a* 2723, ttems
+(b)页面二
+Show for
+Books〉
+Python Pfc^rafiin-iny Computers & Technofcfly Rafetec<e
+Prajraming languages Coniputer f^ogramming
+? Sea more
+Shop The Programmers Bookshelf 、密va j C++: Python i swift | Ruby | wt)ai Basic
+Related Searches 伞沖、；av& pyrhoti 冲"mining
+Kindle Store >
+Fatten Computer Ptcgmming
+Compirter Programming *S?emore
+(Python
+Learning Python. Sth Edition m 6.2013 &y Mark lute
+P?t Supplies >
+Aquanum Cteaners
+? See AB 29 Depanments
+Pap?rt?cfc
+$18.25 tc tent
+M5.G2 to bey
+Oeiil by tuesday, Uw 24
+Mors Bayiftt Ctioitss
+539.9S ut?d4n?w 縱漓《s；
+Trade in yours for an Amazon Gift Card up te S23.1? FREE Sfi：?ptt:^on oiden dver Si?
+Books: Sea all 4.1&5 Ben>$
+Fieftne by
+intenwtiOMl snipping -Sf：p to China
+Amazon Prime
+?UTO?U>n
+TMt aoxiNC trvrr WttHPVTMOW -?二 msg："
+Papaitwts；
+S24.65
+G?；3&￥ TgwJ", Mo* 24
+Mm：? Buying ChoSefts
+S16251瞬<5 &	樹 ?S?n)
+Automate Use Boring Stuff with Python: Practical Programming fix Total Begsnnecs way ?.2oi? Iff fi S?%t53rt
+盘務飼"92
+Ttade it; yuan fcr si- Amsxw Gi* Cam a# to <5.93
+FREE Sfi：PP?>9 en	?ver SJ$
+Boolcs: S?? ?H 4J55 fems
+(c)页面三
+图4-8自动化提取原始页面
+图4-9自动化提取结果
+图4-9即为根据RoadRunner算法对测试页面进行自动化提取获取的部分结 果数据集。结果中每一列代表一个还原出的原始数据的列，并用大写字母标记列 名。未表明列名的是一个子树结构。图中不显示的为元素页面中的图片地址，因 为未对地址解析，所以图片未显示。从结果可以看出，本文的提取方法较好的还 原了网络页面中的数据，并用树状结构表示数据之间的关系。生成的数据已经具 有很好的结构化，通过简单的处理就可以存入关系型数据库，或者大数据处理系 统的数据仓库内。
+但是，因为网络页面的样式的多样自由化。虽然，HTML标准的不断规范与 严格，以及XML的出现，都对HTML的规范应用以及网络页面的规范化有着巨 大的促进。但是，无监督的自动化网页信息元素的提取仍然面对的极大的挑战, 如同，上文提到的基于RoadRunner算法的HTML元素自动提取，仍是有诸多的限制，算法的效果也是有很大的提升空间。然而，这却为页面元素的自动化提取 提供了很好的参考。结合网络页面用于信息展示目的的自身的特点，未来的研究 通过结合机器学习、人工智能等技术或许是一个较为光明的研究方向。

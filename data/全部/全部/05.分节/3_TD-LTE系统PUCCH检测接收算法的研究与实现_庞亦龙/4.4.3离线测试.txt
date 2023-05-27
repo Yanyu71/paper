@@ -1,0 +1,29 @@
+4.4.3离线测试
+本文对格式1、格式la、格式lb、格式2、格式2a和格式2b分别使用不同的测试 用例来进行测试。表4-9给出了 PUCCH链路离线测试的部分测试用例列表。
+表4-9 PUCCH链路部分测试用例列表
+测试用例编号	测试项目	测试代码及测试数据文件
+TEST_PUCCH_2_001	单用户，测试PUCCU整个链路在格式1下能 否正确工作，有SR	pucchTestCaseOOl Dataln.h
+以及高层参数配置信息
+TEST_PUCCH_3 _002	单用户，测试PUCCH整个链路在格式1下能 否正确工作，无SR	pucchTestCase002Datal n .h
+以及高层参数配置信息
+TEST_PUCCH_6 003	单用户，测试PUCCH整个链路在格式格式la 下能否正确解出NACKo	pucchTestCase003 Dataln.h
+以及高层参数配置信息
+TEST_PUCCH_7 _004	单用户，测试PUCCH整个链路在格式格式la 下能否正确解出ACKO	pucchTestCase004 Dataln.h
+以及高层参数配置信息
+TEST_PUCCH_8 _005	单用户，测试PUCCH整个链路在格式格式1 b 下能否正确解出NACK/NACK。	pucchTestCase005 Datal n. h
+以及高层参数配置信息
+TEST_PUCCH_ll_006	单用户，测试PUCCH整个链路在格式格式lb 下能否正确解出ACK7ACK。	pucchTestCase006 Dataln.h
+以及高层参数配置信息
+TEST_PUCCH_12_007	单用户，测试PUCCH整个链路在格式格式2 下能否正确解码出4bit的CSI	pucchTestCase007DataIn.h
+以及高层参数配置信息
+57
+表4-9 PUCCH链路部分测试用例列表（续上表）
+测试用例编号	测试项目	测试代码及测试数据文件
+TEST_PUCCH_15_009	单用户，测试PUCCH整个链路在格式格式2a 下能否正确解出4比特CSI和NACK	pucchTestCase009DataIn.h
+以及高层参数配置信息
+TEST_PUCCH_16_010	单用户，测试PUCCH整个链路在格式格式2a 下能否正确解出8比特CSI和ACK	pucchTestCaseO lODataln.h 以及高层参数配置信息
+TEST_PUCCH_19_011	单用户,测试PUCCH整个链路在格式格式2b 下能否正确解出4比特CSI和ACK/NACK	pucchTestCaseO 11 Dataln.h
+以及高层参数配置信息
+TEST_PUCCH_20_012	单用户，测试PUCCH整个链路在格式格式2b 下能否正确解出8比特CSI和ACK/ACK	pucchTestCaseO 12 Dataln.h
+以及高层参数配置信息
+以测试用例TEST_PUCCH_12_007和测试用例TEST_PUCCH_16_010为例。

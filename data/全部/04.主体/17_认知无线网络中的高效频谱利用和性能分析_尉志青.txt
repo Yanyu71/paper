@@ -1,0 +1,2821 @@
+第一章绪论
+1.1研究背景及意义
+1.1.1认知无线网络的研究背景
+随着经济社会的不断发展，通信网络也在发生着深刻的变革，最明显的变化 是由面向点到点连接的通信网络发展为面向信息连接的信息网络。近几年，互联 网一方面与传统行业融合发展，另一方面也在不断变革和颠覆传统行业，比如购 物、医疗、教育、餐饮、旅游、金融等等，互联网己经深度融合于经济社会各个 领域，成为经济增长的重要驱动力，这就是“互联网+”的概念[1-1]。在“互联 网+”的新机遇之下，移动通信迅速发展，以移动互联网、物联网、云计算、大 数据等为代表的新技术正在渗透到人们的日常生活中。以购物为例，据“京东商 城"2014年第四季度的财报显示，第四季度移动端订单量占比36%,显示了移 动互联网的巨大潜力。在社交网络领域，移动终端的三个代表性的社交应用微信 （WeChat）用户数达7亿，月活跃用户数4.38亿，WhatsApp用户数近10亿， 月活跃用户数有7亿，Line的用户数有5.6亿，月活跃用户数有1.7亿[1-2],移 动互联网己经成为社交网络服务（Social Networking Services, SNS）的主战场。 在搜索领域，据百度2014年第三季度财报显示，百度移动端搜索流量巳经超越 了 PC （个人电脑）端，成为百度搜索新的增长点[1-3]。实际上2013年已经成为 移动互联网发展的元年，部分地区移动互联网的流量已经超过桌面互联网，比如 印度2012年移动互联网的流量己达到60%,而桌面互联网流量下滑至40%[l-4]o 所有的这些变化不一而足，无一不显示了 “互联网+”的巨大潜力，在经济增长 的刺激之下，“互联网+”依托移动互联网、物联网等技术，对移动通信提出了更 高的容量、时延等方面的需求，为移动通信的发展带来重大的挑战和机遇。在智 能手机、平板电脑等设备以及社交网络、流媒体、在线游戏等业务的驱动下，移 动通信网络的流量呈指数型增长，据美国高通公司（Qualcomm）估计，在2020 年移动通信网络承载的流量将会达到2010年的1000倍[1-5],这催生了人们对第 五代移动通信技术（fifth generation mobile communications, 5G）的研究。
+5G以高速率（峰值速率约lOGbps）、低时延（时延约1毫秒）、大量连接（以 满足物联网需求）等为特征卩-6]卩-7][]-8],得到了国内外学者和标准化组织的大 量研究。欧洲电信标准协会（European Telecommunications Standards Institute, ETS1）下属的METIS和5GNOW等项目研究5G的物理层基础技术[1-9][1-10]。 英国成立了 5G研究中心，致力于建立一个5G的系统原型。第三代合作伙伴计
+
+划(3rd Generation Partnership Project, 3GPP)也开始了 5G 相关的标准化工作, 致力于在2020年实现5G的商用。中国的IMT-2020论坛研究5G需求、关键技 术和标准化工作。韩国成立了 5G Forum,也致力于5G关键技术的研究。另夕卜 中国移动、爱立信、华为、中兴、三星等公司也开始了 5G关键技术的研究。5G 的重要需求是容量1000倍增长，根据文献[1-11],容量增长的途径主要有：无线 组网技术、新频谱资源、高效传输新技术等。如图1-1所示，在所有容量增长的 途径中，以异构组网技术和频谱资源最为重要，对容量增长的贡献最为显著。
+
+
+
+如图1-1所示，虽然频谱资源是容量增长的主要途径之一，然而目前频谱资
+源仍然存在着巨大的缺口。ITU预测移动通信在2020年需要的频谱将达到 1280-1720MHz，但是目前只有833MHz的频谱可以分配给移动通信使用，所以 移动通信的频谱非常紧缺[1-12]。如图1-2所示，我国适合移动通信的频段几乎 划分殆尽,但是另一方面，在传统固定频率划分的情况下，频谱利用率极为低下。
+美国Shared Spectrum公司对美国30-3000MHz的频段进行测量，发现频谱利用 率仅为 5.2%[l-14]-[l-19]o 而美国联邦通讯委员会(Federal Communications Commission, FCC)对纽约市的频谱测量结果显示：纽约作为一"国际都市，其 频谱利用率也只有13.1%[1-20]»新加坡资通讯研发中心(Institute for InfbComm Research, I2R)对80-5850MHz的频带进行频谱测量，发现频谱利用率仅为 4.54%[1-21]»北京邮电大学对北京市商业区440-2700MH的频带进行了测量，测 量显示：尽管北京市商业区人流较多，但是频谱利用率仅为15.2%[1-22]»另外 如图1-1所示，异构组网也是容量增长的途径之一。注意到静态、孤立的网络难 以满足用户多样化的通信需求，因为移动通信网络承载的业务是异构的，不同业 务要求的服务质量(Quality of Service, QoS)也是千差万别，单一的网络难以 匹配异构的业务。所以在5G的研究中，异构组网也是关键技术之一。人们提出 多种异构网络融合方案，比如无线网络虚拟化[1-23][1-24]O无线网络虚拟化借鉴 软件定义网络(Software Defined Network, SDN)的部分思想[1-25],将包括基 础设施、频谱等的资源进行池化管理，然后按需划分为若干虚拟网络，进而优化 地匹配用户、网络与业务，为用户提供无缝的、平滑的业务体验，同吋可以提升 以频谱为代表的资源的利用效率。以无线网络虚拟化为代表的异构网第融合方案 目前己经在3GPP实现标准化[1-26][1-27],在网络共享的架构、功能描述、业务 特征和需求等方面做出了规定。
+如前所述，异构组网技术和新频谱资源是网络容量增长的主要推动力，而认 知无线网络即致力于解决这两个问题。在前面的论述中发现：频谱资源不管在时 间维度还是在空间维度的利用率都很低，这对异构网络的融合提出了很大挑战。 可以说，传统的静态频谱规划策略在未来高速发展的异构无线网络环境中已经不 再适用。为了解决这个问题，Mitola提出了认知无线电(Cognitive Radio, CR) 的概念[1-28]，作为一种具有环境感知功能的无线电技术，认知无线电设备可以 将认知到的资源和环境信息(即认知信息)进行处理、分析、决策、执行，并且 将执行的结果反馈到认知的环节，形成闭环控制，通过学习、重构来适应不断变 化的无线环境。Mitola的认知无线电概念比较超前，甚至包括情景感知和内容感 知等内容，比如认知无线电设备可以识别用户的行为,进而调控自己的通信参数， 具有较高的智能。Haykin在文献[1-29]中对认知无线电的研究进行了具体化，提 出认知无线电目标是提升频谱利用率，手段是频谱检测、动态频谱管理、功率控 制等。且在认知无线电的研究中主要存在两个实体，即主用户(Primary User, PU)和次用户(Secondaiy User, SU),主用户拥有授权频谱，次用户在不干扰 主用户的前提下，动态使用主用户的频谱，以提升整体的频谱利用效率。在文献 卩-29］发表之后，认知无线电获得了国内外学者的大量研究。此后，基于认知无 线电的理念，文献［1-30］提出了认知无线网络(Cognitive Wireless Network, CWN) 的概念，将针对节点单域感知的认知无线电扩展到针对多域认知(包括无线、网 络、用户域等)的认知无线网络，使无线网络从整体上具备了认知能力，解决了 异构无线网络融合难题，提高了包括频谱在内的网络资源利用效率。同理，认知 无线网络也有两个实体，即主网络(Primary Network)和次网络(Secondary Network),次网络可以在不影响主网络工作的前提下，动态使用主网络的资源， 实现异构网络融合。由于认知无线网络把物理层的认知扩展到多域认知，所以认 知无线网络的资源不局限于无线域，而是扩展到了多域的资源利用。在异构的认 知无线网络中，多种无线接入技术(Radio Access Technology, RAT)共存，因 此无线环境中以频谱为代表的资源可以划归到多个域，比如无线域、网络域、政 策域、用户域等，因为每个域都可能有频谱机会，所以相比单域认知，多域认知 必然会带来更多的频谱机会，为认知无线网络带来更多的容量提升。综上所述， 认知无线网络是实现频谱高效利用和异构网络融合的重要手段。
+1.1.2认知无线网络的主要研究内容
+因为认知无线网络在高效频谱利用和异构网络融合方面的巨大潜力，认知无 线网络得到了大量的研究。本文按照认知信息的流程来归纳认知无线网络的研究 内容。认知无线网络主要包括三个平面，即认知平面，控制平面和数据平面(接 入平面)。认知平面收集控制平面和数据平面的信息，即多域环境和资源的信息， 本文称之为认知信息。认知信息在认知平面经过处理、分析，然后传递至控制平 面，经过学习、决策和执行以后，控制和优化数据平面。同时数据平面和控制平 面将认知信息反馈到认知平面，形成闭环的控制，使得网络动态适应不断变化的 无线、网络及用户环境。其中在数据平面，多个接入网构成一个资源池，动态利 用多域资源，但是注意到目前认知无线网络利用的资源类型主要是频谱。认知无 线网络有等级的概念，即主网络拥有授权频谱，次网络只能机会式地利用主网络 的频谱，而从长期发展的角度，异构网络之间动态共享多域资源是未来的趋势。 比如，美国奥巴马政府在2010年的时候发布了 “频谱高速公路计划”，计划拿出 1000MHz联邦频谱用于宽带频谱共享［1-31］«在这个计划中，不同的无线设备和 业务动态共享公共的频谱，从而提升频谱利用率，促进商业模式的创新和社会经 济的发展。在认知无线网络模型中，认知无线网络与传统无线网络最核心的区别
+4 是认知无线网络多了认知平面，认知平面作为认知环[1-28][1-32]的重要驱动，负 责获取、处理、分析、传递认知信息，是控制平面决策的基础，也是无线网络适 应动态环境的关键。于是本文按照认知信息在认知无线网络中的各个环节，对认 知无线网络的研究内容进行总结。
+认知信息是认知无线网络中的多域环境和资源的状态信息，包括无线域、网 络域、政策域、用户域等，而常见的无线域又包括空间维度、时间维度、角度维 度、高度维度、码字维度等(“域”是比“维”更广的概念)[l-33][l-34][l-35]o 需要注意的是，因为时间和精力的限制,本文研究的认知信息主要集中在无线域， 而研究的资源主要是频谱资源。这里构造一种以认知信息为中心的分类方法，将 认知无线网络的研究内容归纳为以下几个方面。
+1.1.2.1认知信息的获取、表征与度量
+认知无线网络通过认知的手段获得认知信息，这是认知无线网络奥行学习和 重构的重要前提。认知无线网络感知环境主要有两种方法：1)频谱检测 [1-32][1-36],通过频谱检测，认知用户可以获得频谱的占用状态，进而可以高效 地接入空闲频谱。2)认知数据库技术[1-37][1-38][1-39],即构建一个存储白频谱 信息的数据库，当认知用户需要频谱的时候访问数据库，查询它所在的地点和时 间的认知信息。认知数据库结合认知导频信道技术(Cognitive Pilot Channel, CPC) [l-40][l-41][l-42],将会提升认知数据库中的认知信息传递效率和准确性，最终 提升频谱利用效率,所以认知信息的快速准确获取和传递是频谱高效利用的前提, 是提升频谱利用率的重要环节。
+(1)频谱检测：频谱检测从参与检测的节点数来分类，主要包括单点检测和协 作检测[1-36],其中单点检测有能量检测、波形检测、匹配滤波检测、循 环平稳特征检测等。能量检测将接收信号的能量与一个阈值对比，如果超 过阈值即判定为主用户存在，否则判定为主用户不存在。能量检测具有较 低的计算复杂度和实现复杂度[1-38],是一种最常用的频谱检测方法，并 且在先验信息未知时，能量检测是最优的频谱检测方法。但是能量检测的 阈值依赖背景噪声[1-39],且因为能量检测只使用接收信号的能量参数， 所以能量检测不能区分目标信号和噪声[1-40],在接收信噪比较低或者检 测扩频信号时性能量检测的性能较差[1-40][1-41]»而波形检测的原理类似 扩频解扩原理，接收端利用发送端的信号模板与接收信号进行相关运算， 同时与一个阈值对比，如果超过这个阈值，即判定为主用户存在卩-36]。 波形检测在低信噪比的时候优于能量检测，但是需要信号的先验信息。匹 配滤波检测在己知信号先验信息的条件下是最优检测方法，但是匹配滤波
+器检测的前提条件往往难以满足，所以匹配滤波器是一种理论意义上的最 优检测器[1-42]。循环平稳特征检测利用接收信号的循环平稳特征进行检 测，循环平稳检测在较低的信噪比水平下也能有较好的性能，且使用不同 的循环频率可以区分不同的调制信号和干扰信号类型，但是循环平稳检测 的运算量大，复杂度高[1-43][1-44][1-45]»在协作频谱检测中，可以分类 为集中式和分布式的协作检测，在集中式的协作检测里面，多个次用户先 独立进行频谱检测，然后将接收信号或者判决结果发送给融合中心，在融 合中心做统一的判决，如果次用户将判决结果发送给融合中心，即为硬判 决；如果次用户将接收信号发送给融合中心，则为软判决方案 [1-46][1-47][1-48]o而分布式的协作检测没有融合中心，所以没有全局信 息，而是利用局部检测信息的交互做出判决，这类方法一般称为“基于共 识的协作检测方法” [1-49]。除了按照单点检测和协作检测的分类方法来 分类，频谱检测还可以从单维检测和多维检测来划分。传统的频谱检测， 不管是单点检测还是协作检测，都可以归纳为单维检测。为了更高效地利 用频谱，人们设计了多维频谱检测方法，最具代表性的是空时二维频谱检 测算法，以检测空时两维的频谱机会，提升频谱的利用率[l-50]-[l-58]o (2)认知数据库：目前认知数据库方法主要用于获取和存储TV白频谱的信息。
+美国联邦通讯委员会(Federal Communications Commission, FCC),欧洲 邮电管理局会议(European Conference of Postal and Telecommunications Administrations, CEPT)和电气和电子工程师协会(Institute of Electrical and Electronics Engineers, IEEE)都有相关规定、标准等[l-59][l-60][l-61][l-62], 允许在TV白频谱上部署非授权无线电设备，最具代表性的是IEEE 802.22 标准[1-62]。在使用TV白频谱的方法中，最具代表性的是认知数据库方 法。因为频谱检测具有隐藏终端、检测精度不高、难以适应复杂电磁环境 等问题，所以对于TV白频谱来说认知数据库方法是一种简单有效且准确 的认知信息获取方法。另外，因为终端不需要进行频谱检测，所以认知终 端也避免了时间和能量的消耗，降低了认知终端的复杂度。认知数据库是 获取、存储、处理和传递认知信息的装置[1-63],认知数据库能够准确存 储频谱空洞的信息，从而避免次网络对主网络的严重干扰[1-64],通过使 用低功率的灵活认知无线电设备利用空间和频谱维度的传输自由度，达到 提升频谱利用效率的目的[1-65][1-66]。
+认知信息的表征和度量是认知信息获取的理论基础，认知信息表征和度量将 有助于指导认知信息获取方法，比如频谱检测的参数优化和认知数据库的构建， 同时也可以更加有效地利用认知信息。为了表征认知无线网络的多域资源，文献 [1-67][1-68][1-69][1-70]研究了基于矢量资源模型的资源表征方法。利用矩阵空间 设计了认知网络资源的解析方法，从用户需求角度，完成了异构网络中各个网络 资源的统一表征。为了解决认知无线网络中认知信息的度量问题，文献 [1-34][1-71][1-72]提出了 “认知信息量”、“地理嫡”、“信息密度”等概念来度量 认知信息，使用信息论工具来分析认知过程。将次用户的认知过程建模为次用户 通过认知的手段消除资源和环境状态的不确定性的过程。且进一步在单点频谱检 测和协作频谱检测的场景下计算了次用户获得的认知信息量(消除的资源和环境 状态的不确定性)。并且用于指导频谱检测的参数优化。
+1.1.2.2认知信息的传递
+认知信息的传递既涉及到小范围的认知信息交互，比如分布式协作检测中认 知用户基于局部认知信息交互达到关于主用户状态的共识。同时认知信息传递又 涉及到大范围的认知信息传递，比如认知数据库和认知用户之间的认知信息传递。 因此认知信息的传递方式可以归纳如下。
+(1)认知导频信道(Cognitive Pilot Channel, CPC)：为了在认知终端和认知数 据库之间建立有效的传输链路，学者们提出认知导频信道(Cognitive Pilot Channel, CPC)的概念[l-72][l-73][l-74][l-75]。认知导频信道利用公共 信令信道传输多域认知信息，比如空闲频谱、可用接入网、频谱策略等等
+(本文主要考虑空闲频谱的信息)。一般来说，认知导频信道有两种方式 传递认知信息，即点播模式和广播模式[1-73]。点播模式在认知用户密度 较小的时候效率较高，而广播模式在认知用户密度较大的时候效果较好。 认知导频信道提供了一种将资源信息传输给终端的公共载体，是认知无线 网络的重要的组成部分。实际上，多域认知数据库和认知导频信道技术己 经被1TU接收，作为认知无线网络的备选技术，并且已经写进ITU-R WP5A的标准规范。
+(2)公共控制信道(Common Control Channel, CCC)：在认知无线网络中， 为了在认知用户之间灵活交换认知信息，需要设计一个公共控制信道 [l-76][l-77][l-78]o公共控制信道作为一个公共的传输媒介，在认知无线 网络中承担发送端-接收端握手协议、邻居发现、信道接入协商、拓扑重 构、路由信息更新、次用户协作等任务[1-79][1-80]。例如，认知用户可以 通过在公共控制信道向邻居认知用户广播控制信息，以向其它节点显示自 己的存在，维持与其它节点的联系,并且维持整个网络的连通性。进一步， 在协作检测中认知用户可以共享频谱检测的结果，以协作作出判决，提升 频谱检测的性能［1-46］［1-81］。在认知无线网络内部，认知用户也需要通知 其它用户关于主用户状态、频谱可用性、网络拓扑等参数，以提升频谱利 用效率，提升认知无线网络的吞吐量。因此，公共控制信道是维持认知无 线网络认知信息畅通的重要通道。
+1.1.2.3认知信息的应用
+认知平面将认知信息传递到控制平面，认知信息在控制平面经过处理、分析、 决策和执行以后，可以控制和优化认知无线网络。具体来说，认知信息主要应用 于认知无线网络的资源管理和重构环节，具体描述如下。
+(1)资源管理：认知无线网络的资源管理是一个非常广的研究课题，有不同的 分类方法，本文在这里按照功能的不同，将资源管理归纳为如下几类：1) 媒体接入控制：在认知无线网络中次用户接入授权频谱的方法称为媒体接 入控制(Medium Access Control, MAC),认知无线网络中的媒体接入控 制有多个目标，比如降低次用户之间的碰撞概率、降低对主用户的干扰、 提升频谱利用效率、实现次用户之间的公平性等。而有些目标之间会相互 制约，比如频谱利用效率和公平性之间有着权衡的关系。另外，频谱空洞 存在于多个维度，比如空间维度、时间维度、角度维度、极化维度等，所 以多维频谱空洞的接入也是媒体接入控制的重要研究内容。在认知无线网 络媒体接入控制的研究中，既有协议设计和原型实现的研究，也有理论方 法方面的研究。文献［1-82］设计了认知多信道无线网络中的认知MAC协 议，文献［1-83］开发了一个系统原型，其中使用了基于检测和预测的认知 MAC协议，解决了认知无线网络和无线局域网的干扰共存问题。文献［1-84］ 使用连续时间马尔科夫链，在理论上得到了认知无线网络的频谱利用效率 和公平性之间的权衡关系，并且基于此关系设计了一个分布式的多信道认 知MAC协议。文献［1-85］设计了随机信道选择协议，并且基于学习理论 优化了次用户的信道选择概率。2)资源分配：认知无线网络灵活动态地 利用多域资源，以提升多域资源的利用效率。在认知无线网络中资源种类 繁多，比如频谱、功率、时隙、空间、天线、接入网等等，并且在认知网 络的资源分配中面临多种约束，比如对主用户的干扰约束、频谱空洞分布 非均匀、认知信息非完美、信道传输环境复杂等等卩-32］［1-86］［1-87］。3) 频谱切换：当主用户出现的时候,或者次用户的传输信道条件较差的时候， 次用户需要停止传输并且寻找新的适合传输的频谱,认知无线网络的这种 操作称为频谱切换［1-88］。次用户找到新频谱之前传输是暂停的，这给次 用户的传输带来了额外的时延，因此一个好的频谱切换算法将能使次用户 平滑切换到新的频谱，并且使得次用户的时延尽量小。4）认知路由：在 传统的无线网络中，所有的网络节点使用固定的频谱，这样网络拓扑基本 上是静态的，路由寻找相对简单。但是在认知无线网络中，主用户的动态 性为信道带来不确定性，次用户在不同的时间和地点的信道是可变的，这 为无线组网，尤其是路由设计带来了挑战。在这种情况下，认知无线网络 路由设计不仅要适应不断动态变化的环境，还要满足网络的性能要求，比 如高吞吐量、高连通性（鲁棒性）、低时延、低丢包率等[l-89][l-90][l-91]o
+（2）网络重构：在认知信息的辅助下，认知无线网络可以进行重构，重构是在 软件定义无线电（Software Dfined Radio, SDN）的基础上，认知无线网 络可以自适应地改变网络参数、协议组件甚至硬件结构，以适应动态变化 的无线和网络环境[1-29][1-88]。依据重构机制的作用域，本文将重构行为 分三个尺度：1）小尺度：以具体系统参数作为决策对象，作用于特定网 元（例如用户或基站）。参数重构可归结为最优化问题进行求解，结果为 一组能获得最大系统性能的参数值。按照这组参数值进行配置就可以实现 对动态环境的适应。2）中尺度：以协议整体作为基本单元，重构时根据 环境变化进行成套的切换。协议重构的对象为协议组件，目标是提供更好 的服务以满足QoS要求。3）大尺度：业务和网络拓扑重构是从网络及功 能的角度，综合调度全网资源的最优分配。包括业务分流机制的引入和全 网拓扑重构研究[1-163]卩-164]。
+1.1.2.4认知信息的目标
+认知平面将认知信息传递到控制平面，认知信息在控制平面经过处理、分析、 决策和执行以后，可以控制和优化认知无线网络的性能参数。在不同的网络及业 务模型下，评价认知无线网络的性能参数有很多，最常见的是容量、频谱利用率、 连通性、丢包率、时延等等。在这里本文选择两个参数，即容量和连通性进行分 析。容量是评价通信网络的主要参数，主要反映网络的有效性，而连通性是评价 多跳通信网络可靠性的重要参数。
+（1）容量：无线网络容量作为衡量无线网络信息传输极限的参数，受网络其他 性能参数的影响，比如能量、频谱、时延、信道状态信息（Channel State Information, CS1）反馈、信道模型、可靠性、安全性等等，网络容量也 和这些参数有着一些基本的权衡关系。在分析网络容量时，根据网络容量 与其他网络参数的权衡，有不同的网络容量定义，比如中断容量（Outage Capacity）是侧重“容量-可靠性”的权衡关系，研究在中断概率约束下的 网络容量，文献[1-92][1-93][1-94]即是研究认知网络的中断容量，并且研
+究提升中断容量的方法。另外，最近学术界提出的传输容量(Transmission Capacity)本质上是用随机几何方法得到的中断容量，在节点服从随机泊 松点分布的情况下，传输容量是在一定的中断概率约束下单位面积的节点 集的可达数据速率，认知无线网络传输容量代表性的文献是［l-95］［l-96］o 有效容量(Effective Capacity)是侧重“容量-时延”的权衡关系，研究在 时延约束下的网络容量，文献［1-97］［1-98］即是研究认知网络的有效容量以 及在保证有效容量之下进行异构网络的调控。因为网络的瞬时容量是一个 随机变量，而网络的遍历容量是在网络瞬态容量各态遍历的条件下，网络 瞬态容量的期望值，文献［1-99］卩-100］［1-101］即是研究认知网络的遍历容 量以及其它网络参数对遍历容量的影响。最后，上述的容量研究主要是链 路容量，Gupta和Kumar在文献［1-102〕中得到了大规模无线网络的容量， 自从他们开创性的成果发表以来，大规模无线网络的容量尺度律得到了广 泛的研究，并影响到大规模认知无线网络容量的研%［l-103］［l-104］［l-105］o (2)连通性：连通性是衡量随机自组织网络的另一个关键的参数，自从Gupta 和Kumar开创性的成果［1-106］以来，大规模无线网络的渐进连通性得到 了广泛的研究。Zhang等人在文献［1-107］进一步考虑了 k-连通性的概念， 即在任何两个节点之间有至少存在k个不相交路径的情形。因为主用户和 次用户之间的相互影响，认知自组织网络(Cognitive Radio Ad Hoc Network, CRAHN)的连通性研究不同于传统的无线自组织网络。在认知 无线网络中，因为主用户业务在空间和时间维度的动态性，次用户的信道 状态是动态的和不确定的［1-108］。Ren等人在文献［1-108］中使用连续渗透 理论和遍历性理论推导了认知自组织网络的时延和连通性尺度律。Ao等 人在文献［1-109］中使用渗透理论推导了协作认知无线网络的连通性规律。 在文献［1-110］中，Abbagnale等人提出了基于拉普拉斯矩阵的方法来衡量 认知自组织网络的连通性。
+由以上的分析可见，认知无线网络的主要目标是提升以容量为代表的网络性 能，而手段有提升认知信息的获取精度和速度、提升认知信息的传输效率、更高 效的资源管理方法和重构方法等等，而最终衡量认知网络性能的有容量、频谱利 用率、连通性等等。本文专注于认知无线网络高效频谱利用的方法和性能分析， 主要方法是认知信息准确快速获取和传递、认知无线网络多维频谱空洞发现和接 入，最后本文分析认知无线网络以容量为代表的网络性能，进一步证明本文方法 的有效性。
+10
+1.2研究现状
+认知无线网络的目标之一是实现频谱的高效利用，为了实现这个目标， 本文从认知信息获取和传递、认知信息应用、认知信息目标三个层面来研究。 在认知信息的获取和传递方面，实现认知信息的准确获取和快速传递将有利 于认知无线网络快速准确地接入频谱空洞，提高认知无线网络的频谱利用效 率，并最终提升容量。在认知信息的应用方面，本文研究多维频谱空洞接入 方法，利用多维频谱空洞将可以提升认知无线网络的容量和频谱利用率。在 认知信息的目标方面，本文将主要使用容量来衡量认知无线网络的性能，并 分析在多维频谱接入的情况下认知无线网络的容量问题。下面分别叙述本文 的三个研究点的研究现状。
+1.2.1认知信息的获取和传递
+认知信息获取主要有两种方法，即频谱检测和认知数据库。在这里本文主要 回顾认知数据库方法中的认知信息获取和传递。认知数据库是获取、存储、处理 和分发认知信息的装置，可以辅助认知用户有效地接入多维频谱空洞，从而提升 频谱的利用效率。尽管在认知数据库方面已经有很多研究，但是现有的研究主要 集中在认知数据库的构建和认知数据库的应用方面，比如应用于动态频谱接入。 认知数据库的构建方法见于无线电环境地图(Radio Environment Map, REM) 的文献中。无线电环境地图是为了动态频谱接入而提出的一个数据库，存储多域 信息，比如地理特征、频谱政策、频谱空洞信息、授权用户的位置、用户的策略 等信息卩-111］［1-112］。无线电环境地图的构建主要有两种方式，一种方法是直接 利用授权用户的部署数据库获取授权用户的参数，比如电视塔的位置参数以及射 频参数，然后利用预测模型构建无线电环境地图。第二种方法是通过传感器测量 和插值方法来构建无线电环境地图。在文献［1-113］中，Grimoud等人利用Kriging 插值方法来迭代地构建无线电环境地图，以减少需要的测量次数。在文献［1-114］ 中,Riihijarvi等人利用测量数据之间的相关性来降低无线电环境地图构建的复杂 性。Atanasovski在文献［1-115］中开发了一个无线电环境地图的演示系统，利用 异构的频谱传感器来构建无线电环境地图。在文献［1-116］中，Yilmaz等人设计了 —个传感器的布点算法，通过考虑用户的分布来提升无线电环境地图构造的性能。 注意到构建无线电环境地图的目标是降低测量的次数，并且保证构造的精度。但 是无线电环境地图的构造精度和测量次数有一个权衡关系。在文献［1-117］中， Faint等人利用计算机模拟的方法研究了测量次数和构造精度的关系。文献［1-71］ 从理论上得到了测量次数和构造精度的关系，即假设测量次数为以,构造误差为
+Pe，那么二者有关系：已=尺/成，其中K是与以无关的常数。
+认知数据库的应用主要集中在两个方面：1)认知数据库辅助动态频谱接入： 在数据库的支持下，认知无线网络可以进行高效的资源管理，主要是动态频谱管 理。Feng等人在文献[1-118][1-119][1-220]中研究了数据库支持下的频谱拍卖， 频谱定价等策略，并研究了认知数据库应用于认知无线网络的商业模型。认知数 据库和频谱检测方法作为两种认知信息获取方法。文献[1-121]从系统容量的角度 比较了两种方法的优势和劣势。文献[1-122]在三种场景，即主用户是雷达、电视 网络和蜂窝网络的场景下研究了认知信息的获取方法，发现TV白频谱接入适合 采用数据库的方式，雷达白频谱接入适合采用数据库辅助的频谱检测，蜂窝空闲 频谱的接入适合采用频谱检测的方式。2)认知数据库辅助认知网络安全：认知 数据库由于具有全局的认知信息，所以可以实现认知无线网络安全，文献 [1-123][1-124]提出了一种数据库辅助的安全频谱接入机制，可以检测和排除主用 户模拟攻击(Primary User Emulation Attack, PUEA)。
+在认知数据库应用的场景中，认知用户需要访问认知数据库才能获得它所在 地点和时间的认知信息，进一步指导认知用户的频谱利用，但是目前研究认知信 息从认知数据库到认知用户的传递策略的文献较少，对于影响认知信息传递性能 的因素也少有分析。尤其当认知用户具有移动性的时候，认知用户何时访问认知 数据库？以什么样的频度访问认知数据库？这些问题都没有得到回答。而这些问 题对于认知信息的传输效率、认知无线网络的性能等都有影响。在认知数据库中， 为了传递认知信息，认知数据库管辖的整个区域首先被划分为小矩形，这在文献 [1-61]中称为“像素”，在文献[1-74][1-75]中称为"栅格”，其中栅格是认知信息 传递的最小处理单位。按照文献[1-73],认知信息主要有两种传输方式，即点播 模式和广播模式。在广播方式中，数据库周期性地发送每个栅格的认知信息，比 如栅格，•的认知信息。数据库发送的认知信息的信头包含栅格i的坐标信息，然 后是栅格i的环境和可用资源信息，每个次用户都能接收到栅格i的认知信息， 并且解调出来信头的内容。如果认知用户结合自己的地理信息判断自己在栅格i 内部，则继续解调岀来剩下的无线电参数信息，否则弃掉这条信息。因为广播方 式的效率只和栅格数量有关，不受认知用户数量的影响，因此广播方式在认知用 户数量较大的时候效率较高。认知用户通过数据库获取认知信息的另一种方法是 点播方式，当认知用户位于栅格，•内部的时候，访问数据库，以获取栅格，处的 认知信息，这时次用户先提供自己的地理坐标信息，然后数据库查询到次用户处 于栅格i，就将栅格i的无线电参数发送给次用户。数据库之所以发送栅格i的认 知信息而非认知用户所在位置的认知信息，一是考虑到数据库的分辨率没有那么 大,二是考虑到认知用户具有一定的移动性，当认知用户接收到认知信息的时候,
+12
+它的地理位置有可能已经移动了，而发送一个较大区域的认知信息则容错性较高。
+在认知信息的点播模式中，当认知用户位于栅格内部的时候，它只需要请求 一次认知信息，只要它仍然在栅格内部就不需要重新请求认知信息，但是当认知 用户离开原来的栅格的时候，就需要重新请求认知信息。在认知信息的广播模式 中，认知数据库对每个栅格轮流广播对应栅格的认知信息，而栅格里面的认知用 户只需接收信息即可。栅格的大小对于认知信息的传递具有重要影响。当栅格太 大，认知信息的传输效率较高，但是精度较差；当栅格太小，认知信息的传输效 率较低，但是精度较高。文献［1-59］［1-61］［1-64］研究了认知信息传递的精度，在 文献［1-59］［1-61］1议栅格的边长设置为30-200米。然而大多数的研究没有考虑 栅格的尺寸对认知信息传输的影响，更没有考虑栅格融合的可能性。因此可以发 现：认知信息传递的各个环节不管在理论还是实践上都有很多空白。
+1.2.2多维频谱空洞检测与接入
+在文献［1-36］中提出了多维频谱空洞的概念，包括时间维度、空间维度、码 维度、角度维度等的频谱机会，之后有一些文献研究了多维频谱空洞接入方法。 下面针对本文研究的空时维度、角度维度和高度维度进行文献综述。
+探索和发掘可用的频谱空洞可以提升认知无线网络的频谱利用率。在空时维 度的频谱空洞利用方面，为了发掘频谱空洞，人们设计了一些空时检测的算法， 以检测空时维度的频谱机会。其中Tandra等人在文献［1-50］和［1-51］中设计了一 种空时频谱检测方案，并且针对空时频谱检测提出一种新的度量方法，来衡量空 时频谱检测的性能。在此基础上，多种空时频谱检测方案在文献［1-56］［1-57］ ［1-125］［1-126］中得到了研究。其中Do等人在文献［1-56］中提出了一种两阶段频 谱检测方案，其中次用户在第一阶段检测时间维度频谱机会，如果时间维度机会 不存在，次用户在第二个阶段转而检测空间维度频谱机会。Ding等人在文献 ［1-57］［1-125］中研究了认知无线网络中的空时频谱检测，并且提出一个二维检测 (Two-Dimensional Sensing, TDS)架构来提升空时频谱检测的性能。他们在文 献［1-126］进一步研究了协作空时频谱检测，利用机器学习方法来提升协作空时频 谱检测的性能。虽然上述文献大量研究了空时频谱检测的算法和性能，但是关于 空时频谱空洞的位置的理论计算仍然很少涉及，上述文献一般假设空时频谱空洞 的位置是已知的。在空时频谱接入方面，文献［1-52］提出了 “主用户排斥区" (Primary Exclusive Region, PER)的概念，在PER内部只允许主用户部署，次 用户不能工作。在PER外部，次用户有空间维度的频谱机会，即次用户可以以 最大功率发射，而不用担心对主用户的干扰。之后文献［1-127］提出了 “黑白灰” 三区的概念，在黑区和灰区，次用户可以利用时间维度的频谱空洞。在白区，次
+13
+用户可以利用空间维度的频谱空洞。但是文献［1-127］只提出了一个架构，没有进 一步进行理论分析和实验验证。而文輒1-128］［1-129］为空时频谱检测和接入设计 了三区划分的结构，包括黑区、白区和灰区。并且计算了三区的半径，其中灰区 的半径根据频谱检测的虚警概率和误检概率的约束得到，而白区半径通过分析次 用户到主用户的聚合干扰以及对主用户的影响得到。另外，文献卩-128］卩-129］ 通过动态频谱租赁的视角得到最优的黑区半径，也分析了在多主用户网络的场景 下的三区边界。此外，灰区和白区之间的过渡区可能存在，文献［1-128］［1-129］ 得到了过渡区存在的条件，构建了一个相对完备的三区划分架构。
+认知无线网络可以灵活地利用多个维度的频谱空洞，在文献［1-130］中，Wang 等人提出了通过认知中继利用时、频、位置、角度四个维度的频谱空洞的架构和 方法，并验证了同时使用四个维度的频谱空洞可以提升认知无线网络的容量，但 是文献［1-130］主要考察链路级的性能。认知无线网络通过波束成形可以利用角度 维频谱空洞，认知无线网络利用角度维度频谱空洞的研究内容主要包括：1）波 束成形方法研究：在文献卩-131］中，Zheng等人研究了认知无线网络中的鲁棒波 束成形方法,Zhang等人在文献［1-132］中进一步研究了认知无线网络在知道部分 信道状态信息下的鲁棒波束成形方法，Singh等人在文献［1-133］中研究了认知无 线网络的协作波束成形方法。2）认知无线网络釆用波束成形的网络优化：在这 部分研究中，波束成形是一个约束，主要研究的问题是认知无线网络釆用波束成 形情况下的功率和速率优化，以实现网络容量的最大化或者用户之间的公平性 ［l-134］［l-135］［l-136］o 3）认知无线网络通过波束成形实现绿色通信：因为波束 成形可以将能量集中在有用的方向，从而避免了能量的耗散，可以节能，所以认 知无线网络利用角度维度频谱空洞可以实现绿色通信，这类问题一般是在波束成 形的背景下，以用户的QoS为约束，通过优化方法最小化网络和用户的发射功 率［1-137］［1-138］［1-139］。
+除了利用空间、时间、角度等维度的频谱空洞，认知无线网络还可以利用高 度维度的频谱空洞。无线网络的三维部署也可以提升网络容量，［1-140］［1-141］ 是最早研究3D （Three Dimensional）无线网络容量尺度律的文献，证明了三维 网络部署可以增加无线网络信息传输的自由度，提升网络容量。在此基础上， Li等人在［1-142］［1-143］使用新的方法得到了 3D随机无线网络的容量尺度律，他 们的成果说明：无线网络三维部署虽然会增加信息传输的自由度，但是也会带来 额外的干扰，只有当路损因子足够大（大于3）的情况下3D无线网络容量才会 得到明显提升。Hu等人在文献［1-144］也研究了 3D无线网络的容量，使用渗透 理论得到3D无线网络的容量尺度律。此外，也有文献硏究网络三维部署的应用， 比如在文献［1-145］中，Cai等人研究了三维超宽带（Ultra Wideband, UWB）网
+14
+络的部署以及容量尺度律。而认知无线网络利用高度维度频谱空洞的研究较少, 散见于认知卫星相关的研究中。欧盟第七框架计划中信息与通信技术工作组项目 致力于将之前陆地通信系统项目中的认知无线电技术引入卫星通信，研究卫星通 信的动态频谱接入，并研究卫星通信系统和地面通信系统的干扰共存与相互融合 [l-146]-[l-150]o除此之外认知无线网络利用高度维度频谱空洞的研究较少，本 文研究认知无线网络利用高度维频谱空洞下的网络协议以及容量。
+1.2.3认知无线网络容量分析
+无线网络的容量提升方法一是通过优化网络架构、设计和部署，以及资源调 度的方案来优化容量，如文献[1-152]通过协作中继来提升认知网络的频谱效率和 容量。二是通过开发网络新的传输自由度，从而提升资源利用效率，最终提升网 络的容量，如文献[1-153][1-154]通过利用方向维度的频谱空洞，来提升认知网络 的容量。但是需要说明的是，两种方案是以增加现有系统和方法的复杂性为前提 的。由于实际网络部署的不理想，无线网络的容量潜力没有完全发掘。在这种情 况下就需要部署层叠的认知无线网络,认知无线网络釆用高级的信号处理和传输 方法，比如干扰对齐、极化传输、波束赋形、干扰取消等，如果认知无线网络进 一步利用主网络信号、调制、编码等先验信息，那么层叠网络可以几乎不影响主 网络的传输，即几乎不影响主网络的容量。在这种情况下，主次网络异构组网使 得固定区域所支持的网络容量增加，即填充了主网络的“容量盲区
+认知无线网络的容量可以分为链路容量和网络容量，链路容量主要研究认知 无线网络的一条参考链路在不同的网络架构、设计、部署、以及资源调度方案下 的容量。而网络容量主要是基于随机几何、渗透理论等，研究大规模认知无线网 络的吞吐量容量。
+在链路容量方面，认知信息的完美程度对认知网络的容量有显著的影响。 Chung等人在文献[1-151]中研究了认知无线网络在利用时间维度频谱空洞的条 件下，认知信息不完美对网络容量界的影响。Liu等人在文献[1-92][1-93]中研究 了次用户信道状态信息的完美程度对主次网络的影响，即次用户信道状态参数不 完美的程度越大，对主用户的干扰也越大,次用户的容量也越低。文献[1-94][1-99] 研究了信道估计误差，反馈时延等参数对次用户网络容量的影响，对这些影响因 素的改善可以提升次用户网络的容量。在此背景下，学者们进一步研究提升次用 户网络容量，以及降低对主用户影响的方法。理论上来说，当次用户信道状态信 息是完美的，且次用户的干扰足够小的情况下，次用户对主用户的影响可以忽略。 在这种情况下，主网络的频谱空洞越大（即频谱机会越多），次用户的容量提升 空间越大，整个区域的容量提升空间也越大。在文献[1-152]中，次用户网络使用
+15 协作中继动态来利用主用户网络的频谱空洞，并且通过动态时隙分配，合理有效 地利用主用户网络的频谱空洞，在提升次用户网络频谱效率的同时，也提升了次 用户网络的容量，根据仿真验证,在合理的参数配置下，系统容量可以提升一倍。
+在网络容量方面，认知无线网络的容量主要集中在传输容量(Transmission Capacity)和容量尺度律(Capacity Scaling Law)两方面。传输容量是Weber和 Andrews等人在文献［1-155］中提出的。在节点服从随机泊松点分布的情况下，传 输容量是在一定的中断概率约束下单位面积的节点集可以传输的最大数据速率。 之后Yin等人在文献［1-95］卩-156］中研究了认知无线网络的传输容量。Lee等人 在文献［1-96］中研究了认知无线网络在干扰取消方案下的传输容量。也有一些文 献在MIMO、协作中继等场景下研究认知无线网络的传输容量［1-157］［1-158］。在 大规模认知无线网络容量尺度律方面，自从Gupta和Kumar揭示了网络的单点 容量是€>(1/丿橱)卩-102］,认知无线网络容量尺度律的研究得到了类似的结果, 在文献［1-103］中，Jeon等人研究了认知自组织网络(CRAHNs, Cognitive Radio Ad Hoc Networks)的容量尺度律，得到结论：在〃个次用户节点和四个主用户节点 共存的异构场景中，次用户能获得和单独网络同样的容量尺度律。(1/丿顽)。 在文献［1-104］中，Yin等人在一个更加实际的场景中获得了同样的结论，即次用 户只知道主用户发射机的位置，而不知道主用户接收机的位置。这个结论进一步 被Huang等人在文献［1-105］中用一个更加普适的模型验证。之后文献［1-159］使 用渗透理论研究了认知无线网络容量尺度律。文献［1-160］研究了认知多播网络的 容量，得到了更紧的容量界。文献［1-161］研究了不同主用户网络模型(比如主网 络是纯自组织网络或者混合网络)下的认知无线网络容量尺度律。而文献［1-162］ 研究了主次网络协作下的认知无线网络容量，主次网络协作是动态频谱租赁中的 一个重要方式，因此文献［1-162］的研究对动态频谱管理有着重要的意义。
+1.3主要研究内容及创新
+基于上述的分析，本文通过两种方式解决认知无线网络频谱高效利用问 题，即认知信息的准确快速获取和多维频谱空洞的高效利用。基于这个观点， 本文将研究内容划分为两部分。第一部分研充认知信息的表征、度量和传递 理论，实现准确快速的认知信息获取与传递，为频谱的高效利用奠定基础， 这部分包含一个章节。第二部分研究频谱机会的高效利用，这部分包含三个 章节。因为频谱机会存在于多个维度，因此本文研究多个维度下的频谱机会 利用。在第三章，本文研究空时二维频谱机会，并提出包括“黑白灰”三区 划分方案，联合利用空时二维频谱机会，相比单纯利用空间或时间维度频谱 机会的情形，可以显著提升认知无线网络的容量。在第四章，本文研究角度
+16
+维的频谱空洞。在第五章，本文研究利用高度维频谱空洞的认知无线网络, 构造3D认知无线网络，通过利用高度维的频谱机会，可以提升认知无线网 络的容量。这几部分研究内容的关系如图1-3所示，认知信息的表征、度量 和传递是频谱高效利用的前提，因为这部分的研究可以实现认知信息的准确 快速获取与传递，将有利于认知无线网络高效地接入频谱空洞，提高频谱利 用效率，并最终提升网络容量。多维频谱机会接入是频谱高效利用的重要方 法，通过接入空间、时间、角度、高度等维度的频谱机会，认知无线网络可 以填补主网络的“容量盲区”，提升认知无线网络的频谱利用效率和容量。 最后，容量提升是认知无线网络高效频谱利用的目标，本文分析认知无线网 络釆用多维频谱机会下的容量提升。下面详述各个研究内容。
+
+
+图1-3论文结构
+I）认知无线网络中认知信息表征、度量和传递理论：这部分研究内容分为 三部分，第一部分研究认知信息的表征理论，主要针对空间和时间维度 的认知信息。使用“地理嫡”和“时间嫡"表示空时认知信息的不确定 性，使用“无线电参数误差”来表示认知信息表征的错误率，得到地理 嫡、时间炳、无线电参数误差与认知信息表征的参数以及栅格操作的关 系，呈现认知信息空时表征的对偶性。第二部分是建立认知信息度量理
+17
+论，面向非完美认知，用“认知信息量"统一量化多个维度的认知信息， 表示认知无线网络通过认知的手段消除的资源状态的不确定性，得到认 知信息量与系统参数，尤其是与频谱利用率和主次系统干扰概率的关系， 进一步将认知信息量应用于频谱检测的参数优化中。第三部分是研究认 知信息传递方法，基于认知信息表征理论设计快速准确的认知信息传递 方案，设计栅格融合方案，实现在移动环境下的认知信息高效传递。
+2）	认知无线网络空时二维频谱机会：研究基于“黑白灰”三区划分的空时 频谱接入模型，从而刻画认知无线网络中的时间维度频谱空洞和空间维 度频谱空洞的位置。其中黑区内只允许主用户部署，次用户不允许部署 在黑区。灰区内存在次用户的时间维度频谱机会，次用户可以通过“检 测-接入”的方法机会式地使用主用户的频谱。白区内存在次用户的空间 维度频谱机会，次用户可以持续以最大发射功率在主用户的频谱工作， 而不用担心对主用户的严重干扰。本文得到了三区半径的闭式解，并且 得到了在灰区和白区之间的过渡区存在的条件。然后基于这个架构进一 步设计了数据库辅助的基于三区划分的空时频谱接入方法。本文这部分 的研究证明：同时利用空时频谱机会可以填补主用户的“容量盲区”，最 终提升认知无线网络的容量。
+3）	认知无线网络角度维频谱机会：当认知无线网络通过波束成形实现方向 性传输以后，可以提升认知无线网络的容量。在这部分的研究中，本文 首先分析角度维频谱机会的统计特性，得到角度维频谱机会的概率密度 函数及期望值。然后研究认知无线网络釆用角度维频谱机会的情况下对 主用户的影响，借此设计了主次网络的网络协议，以保证主次网络可以 正常工作，然后本文分析了釆用方向性传输的认知无线网络的吞吐量容 量和连通性。这部分的研究证明：相比于利用空时频谱机会的方案，认 知无线网络采用角度维度频谱机会可以提升自身的容量。
+4）	认知无线网络高度维频谱机会：在这个研究内容中，本文构造3D （Three Dimensional）认知无线网络，充分利用高度维来提升认知无线网络的容 量。首先，本文进行3D认知无线网络干扰分析，当认知无线网络釆用高 度维频谱机会，在提升容量的同时，也会在干扰协调方面带来挑战。然 后本文设计3D认知无线网络的网络协议，以保证主次网络正常工作。最 后本文分析3D认知无线网络的容量，理论证明了：相比认知无线网络的 二维部署，认知无线网络釆用高度维度的频谱机会可以提升自身的容量。
+18
+为了实现认知无线网络高效频谱利用，本文研究了认知信息的获取和传递、 多维频谱空洞接入，并且以网络容量为性能指标衡量频谱接入的效果，分析了认 知无线网络容量。本文详细研究上述流程，得到了以下主要创新点：
+1）	认知信息表征理论：使用“地理嫡”、“时间端”的概念来量化频谱状态 在空间和时间的不确定性，并且分析了地理炳、时间炳和系统参数的关 系。使用无线电参数误差来度量认知信息表征的误差，分析了无线电参 数误差与系统参数，无线电参数误差与地理炳、时间炳的关系。进一步 得到栅格融合和分割操作对地理嫡、时间燜、无线电参数误差的影响。
+因为栅格操作与认知信息的获取和传递都有关系，所以这部分的创新点 为认知信息获取和传递奠定了理论基础。
+2）	认知信息度量方法：使用信息论工具来分析认知过程，度量认知信息。
+将次用户认知主用户活动状态的过程解释为次用户通过认知手段消除主 用户状态的不确定性的过程。且进一步在频谱检测的场景下，计算了次 用户获得的认知信息量（消除的主用户的不确定性）。在协作频谱检测的 情况下，计算了多个次用户获得的总的认知信息量，并且将多个次用户 获得的认知信息量和单个次用户获得的认知信息量的差额定义为协作增 益（通过协作增加的认知信息量）。本文建立了认知信息量和错误检测的 联系，并且本文建立了认知信息量和网络性能的联系。考虑两个网络参 数，即频谱利用率和主次系统干扰概率，研究表明增加认知信息量可以 提升频谱利用率，同时降低干扰概率。认知信息度量的度量有助于认知 信息获取的参数优化，本文进一步应用认知信息度量理论在能量检测和 协作检测的参数优化中。
+3）	认知信息传递方法：提出了基于栅格融合的快速认知信息传递方法，以 降低认知用户获取认知信息的时延，提升频谱利用的效率。传统的研究 一是没有考虑认知信息的空间冗余度，也没有通过栅格融合来提升认知 信息传递的效率；二是没有针对移动认知用户进行认知信息传递的研究。 在这个创新点中，本文不仅针对移动认知用户设计了低复杂度的认知信 息传递方案，还设计了两种栅格融合算法（包括基于分形的栅格融合算 法）来降低认知信息的空间冗余度。
+4）	基于三区划分的空时频谱检测与接入机制：本文提出了包括“黑白灰” 的三区划分方案，并且得到了三区半径的闭式解，考察了三区半径与系 统参数的关系。本文得到了灰区和白区之间的过渡区存在的条件，并且 讨论了消除过渡区的方法。本文利用动态频谱租赁的观点得到了黑区的 最优半径，并且分析了系统参数对最优黑区半径的影响。在这个创新点 中，本文得到了一个相对完备的三区划分架构，这个架构可能指导认知 无线网络中的空时频谱检测和接入的研究。
+5）	利用角度维频谱机会的认知无线网络容量分析：在这个创新点中，本文 分析了认知无线网络采用角度维度频谱机会的容量尺度律。本文首先分 析了角度维度频谱空洞的统计特性，然后基于此设计了认知无线网络的 网络协议，以保证认知无线网络不干扰的正常工作，同时保证自己的网 络连通性。最后本文分析了认知无线网络釆用角度维频谱机会的容量尺 度律，证明了认知无线网络釆用角度维度频谱机会可以提升容量。
+6）	利用高度维频谱机会的认知无线网络容量分析：在这个创新点中，本文 分析了认知无线网络釆用高度维度频谱机会的容量尺度律。本文首先设 计了认知无线网络的网络协议，以保证认知无线网络不影响主网络的正 常工作，同时保证自己的连通性。然后本文分析了认知无线网络釆用高 度维度频谱机会的路由密度，基于此分析了认知无线网络的容量尺度律， 证明了认知无线网络釆用高度维度频谱机会可以提升容量。
+1.4论文组织结构
+本章后续有五个章节，安排如下：
+第二章针对创新点1、2、3,研究认知信息的表征、度量和传递。在理论层 面，本文得到了地理炳、时间炳、无线电参数误差等指标与系统参数、栅格操作 等的联系，为认知信息获取和传递奠定了理论基础，呈现了空时维度认知信息表 征的对偶性。在方法层面，本文设计了栅格融合算法以应用于认知信息传递，可 以显著降低认知信息的空间冗余度，提升认知信息传递的效率。此外，本文利用 信息论方法构建了认知信息度量方法，提出认知信息量的概念，将认知的过程描 述成认知用户消除主用户状态不确定性的过程，从而建立了认知信息度量的理论 体系，分析了认知信息量与系统参量的关系，并且将认知信息度量理论应用于认 知信息获取的参数优化中。最后提供数值结果来验证本文的理论和方法的有效性。
+本文在第二章研究了认知无线网络中以空间维度和时间维度为代表的多维 认知信息表征、度量和传递。但是第二章忽略了一个细节，即空间维度频谱空洞 和时间维度频谱空洞的位置。第二章的研究假设空时频谱空洞的位置是已知的， 在此基础上研究认知信息的表征、度量和传递。第三章重点研究第二章忽略的问 题，即空时频谱空洞的位置，针对创新点4,提出了基于“黑白灰”三区划分的 空时频谱检测与接入架构。详细分析了三区的边界，并且分析了系统参数对三区
+20 边界的影响。得到了灰区和白区之间的过渡区存在的条件，并且基于动态频谱租 赁的观点得到了最优的黑区半径，分析了系统参数对最优黑区半径的影响。三区 划分实际上是一个数据库和频谱检测相结合的架构，其中数据库存储三区的边界 信息，当认知用户发现自己落入白区的时候，可以直接利用空间维度频谱机会; 当认知用户发现自己落入灰区的时候，可以开始频谱检测。所以第三章和第二章 的内容都与认知数据库有着密切的联系。在第三章的最后，本文提供了数值仿真 结果，以展示三区划分方案对容量的提升，以及三区半径与系统参数的关系。
+第三章研究了认知无线网络的空时频谱机会，并且提出三区划分的概念，以 实现认知无线网络空时频谱检测和接入o仿真证明了空时频谱接入可以提升认知 无线网络的容量。在第四章，为了进一步提高认知无线网络的频谱利用效率，本 文探索认知无线网络利用角度维频谱机会的情形。第四章针对创新点5,首先分 析了角度维度频谱空洞的统计特征，基于此设计了主次网络的工作协议，保证次 网络不干扰主网络的正常工作，并且同时维持次网络的连通性。在此基础上分析 了认知无线网络在方向性传输的情况下的容量尺度律，并且分析了认知网络不允 许等待的情况下（即传统意义上）的连通性。
+第二章从一个宏观的视角研究了多维认知信息表征、度量和传递理论。第三 章重点研究了空时频谱空洞的位置。第四章研究了角度维频谱机会的利用，证明 了利用方向性传输可以提升认知无线网络的容量。而第五章针对创新点6,探索 认知无线网络利用高度维频谱机会的情形，即构建3D认知无线网络。可以证明 认知无线网络利用高度维频谱机会可以进一步提升网络容量。本文首先设计了主 次网络的网络协议，以保证次网络不影响主网络的正常工作，同时保证次网络的 连通性。在此基础上，本文进一步分析了 3D认知无线网络的容量尺度律，证明 了 3D认知无线网络可以提升网络的容量。
+第六章对本文的主要工作进行了总结，并且对未来研究进行了展望。
+参考文献
+[1-1].移动政务实验室，创新2.0研究，“互联网+”引领创新2.0时代创新驱动发 展"新常态"，http://www.mgov.cn/complexity/infdl50306.htm
+[1-2].新浪专栏.创事记，“微信、whatsapp与LINE到底有啥区别？ ”，2015年01 月 29 日，http://tech.sina.com.en/zl/post/detail/i/2015-01 -29/pid_8470628.htm
+[1-3],腾讯财经，“百度2014年第三季度财报简析，”，2014年10月30日， http://www.googuu.net/pages/content/view/3570.htm
+21
+[1-4].钛媒体，“年度总结：移动端流量超越临界点，迎接移动互联网商业化元 年，”，2012年 12月 28 日，http://www.tmtpost.com/8472.html
+[1-5]. Qualcomm, "The lOOOx data challenge," 2013. [Online Released]. Available at Web Site: https://www.qualcomm.com/invention/technologies/1000x.
+[1-6], IMT-2020(5G), White Paper on 5G Vision and Requirements.
+[1-7]. J. G. Andrews, S. Buzzi, W. Choi, S. V. Hanly, A. Lozano, A. C. K. Soong and J. C. Zhang, "What Will 5G Be?'TEEE Journal on Selected Areas in Communications, voL 32, no. 6, pp. 1065-1082, June 2014.
+[1-8], F. Boccardi, R. Heath, A. Lozano, T. Marzetta and P. Popovski, "Five disruptive technology directions for 5G,” IEEE Communications Magazine, vol. 52, no. 2, pp. 74-80, Feb. 2014.
+[1-9]. C.-L. I, C. Rowell, S. Han, Z・ Xu, G. Li and Z. Pan, "Toward green and soft: a 5G perspective,IEEE Communications Magazine, vol. 52, no. 2, pp. 66-73, Feb. 2014.
+[1-10]. P. Demestichas, A. Georgakopoulos, D. Karvounas, K. Tsagkaris, V. Stavroulaki, J. Lu, C. Xiong and J. Yao, “5G on the horizon: Key challenges for the radio-access network,IEEE Vehicular Technology Magazine, vol. 8, no. 3, pp. 47-53, Sept. 2013,
+[1-11]. I. Hwang, B. Song and S. S. Soliman, “A Holistic View on Hyper-Dense Heterogeneous and Small Cell Networks/9 IEEE Communications Magazine, vol. 51, no. 6, pp. 20 - 27, June 2013.
+[1-12]. ITU-R M.2079, "Technical and operational information for identifying Spectrum for the terrestrial component of future development of IMT-2000 and IMT・Advanced"
+[1-13].张平，冯志勇，“认知无线网络”，科学出版社,2010年4月1日。
+[1-14]. M. A. McHenry and K. Steadman, uSpectrum Occupancy Measurements: Location 1 of 6: Riverbend Park, Great Falls, Virginia,55 Shared Spectrum Company Report, Aug. 2005.
+[1-15]. M. A. McHenry and K. Steadman, “Spectrum Occupancy Measurements: Location 2 of 6: Tyson's Square Center, Vienna, Virginia, April 9 2004," Shared Spectrum Company Report, Aug. 2005.
+[1-16]. M. A. McHenry and S. Chunduri, "Spectrum Occupancy Measurements:
+22
+Location 3 of 6: National Science Foundation Building Roof April 16 2004, Revision 2,” Shared Spectrum Company Report, Aug. 2005.
+[1-17]. M. A. McHenry and D. McCloskey, G. Lane-Roberts, "Spectrum Occupancy Measurements: Location 4 of 6: Republican National Convention, New York City, August 30 2004 - September 3, 2004, Revision 2,” Shared Spectrum Company Report, Aug. 2005.
+[1-18]. M. A. McHenry and K・ Steadman, “Spectrum Occupancy Measurements: Location 5 of 6: National Radio Astronomy Observatory (NRAO), Green Bank, West Virginia, October 10 - 11 2004, Revision 3," Shared Spectrum Company Report, Aug. 2005.
+[1-19]. M. A. McHenry, D. McCloskey and J. Bates, "Spectrum Occupancy Measurements: Location 6 of 6: Shared Spectrum Building Roo£ Vienna, Virginia, December 15 - 16 2004. Shared,Shared Spectrum Company Report, Aug. 2005.
+[1-20]. Kolodzy P and Avoidance I.} "Spectrum policy task force/5 Federal Commun. Comm., Washington, DC, Rep. ET Docket, 2002 (02-135).
+[1-21]. M. H. Islam, C. L. Koh and S. W. Oh, et al., "Spectrum Survey in Singapore: Occupancy Measurements and Analyses/9 International Conference on Cognitive Radio Oriented Wireless Networks and Communications (CrownCom), pp. 1-7, May 2008.
+[1-22]. J. Xue, Z. Feng and K. Chen, “Beijing Spectrum Survey for Cognitive Radio Applications/5 IEEE 78th Vehicular Technology Conference (VTC Fall), pp. 1-5, Sept. 2013.
+[1-23]. C. Liang and F. Yu, wWireless network virtualization: A survey, some research issues and challenges/5 IEEE Communications Surveys & Tutorials, vol. 17, no. 1, pp. 358-380, 2015.
+[1-24]・X. Costa-Perez, J. Swetina, T. Guo, R. Mahindra and S. Rangarajan, "Radio access network virtualization for future mobile carrier networks," IEEE Communications Magazine, vol. 51, no. 7, pp. 27-35, July 2013.
+[1-25], S. Sezer, S. Scott-Hayward, P. Chouhan, B. Fraser, D. Lake, J. Finnegan, N. Viljoen, M. Miller and N. Rao, “Are we ready for SDN? Implementation challenges for software-defined networks/5 IEEE Communications Magazine, vol. 51, no. 7, pp. 36-43, July 2013.
+23
+[1-26], 3GPP, “Technical specification group services and system aspects; network sharing; architecture and functional description/5 3GPR TS 23.251, Mar. 2015.
+[1-27]. 3GPP, "Technical specification group services and system aspects; service aspects and requirements for network sharing,” 3GPP, TR 22.951, Oct. 2014.
+[1-28]. J. Mitola, "'Cognitive radio: An integrated agent architecture for software defined radio/5 Ph.D. dissertation, KTH Royal Inst, of TechnoL, Stockholm, Sweden, 2000.
+[1-29]. S. Haykin, ''Cognitive Radio: Brain-Empowered Wireless Communications/5 IEEE Journal on Selected Areas in Communications, vol. 23, no. 2, pp. 201-220, Feb. 2005,
+[1-30]. ITU-R M.2225, ''Introduction to cognitive radio systems in the land mobile service,” 2011.
+[1-31].杨淼，方正，李明明，“美国频谱高速公路计划浅析一一转变频谱结构， 加强频谱管理，实现频谱共享”，国家无线电监测中心，2013年02月27日， http://www.srrc.org.cn/NewsShow6911 .aspx
+[1-32]. B. Wang and K. J. R. Liu, “Advances in Cognitive Radio Networks: A Survey/5 IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1, pp. 5-23, Feb. 2011.
+[1-33]. W. Xu, J. Lin, Z. Feng, W. Xu and P. Zhang, “Cognition flow in cognitive radio networks/9 China Communications, vol. 10, no. 10, pp, 74-90, 2013.
+[1-34]. Z. Feng, Z・ Wei, Q・ Zhang and P. Zhang, "Cognitive information metrics for cognitive wireless networks/5 Chinese Science Bulletin, vol. 59, no. 17, pp. 2057-2064, June 2014.
+[1-35]. Q. Zhang, Z. Wei, Z. Feng and I. Ahmad, "Temporal Entropy and Cognitive Information Based Efficient Environment Awareness Techniques in Cognitive Radio Networks； IEEE Vehicular Technology Conference (VTC Fall), pp. 1-5, Sept, 2013.
+[1-36]. T. Yucek and H. Arslan, “A Survey of Spectrum Sensing Algorithms for Cognitive Radio Applications,IEEE Communications Surveys & Tutorials, vo. 11, no. 1, pp. 116-130, Mar. 2009.
+[1-37]. F. F. Digham, M. S・ Alouini and M. K. Simon, “On the Energy Detection of Unknown Signals Over Fading Channels,5- IEEE Transactions on
+24
+Communications, voL55, no. 1, pp. 21-24, Jan. 2007.
+[1-38]. S. Shankar, C. Cordeiro and K. Ch allapali, “Spectrum agile radios: utilization and sensing architectures/5 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 160-169, Nov. 2005.
+[1-39]. H. Urkowitz, "Energy detection of unknown deterministic signals,” Proceedings of the IEEE, vol. 55, no. 4, pp. 523-531, Apr. 1967.
+[1-40]. H. Tang, “Some physical layer issues of wide-band cognitive radio systems/9 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 151-159, Nov. 2005.
+[1-41]. D. Cabric, S. Mishra and R. Brodersen. ^Implementation issues in spectrum sensing for cognitive radios,” Conference Record of the Thirty-Eighth Asilomar Conference on Signals, Systems and Computers, vol. 1, pp. 772-776, Nov. 2004.
+[1-42]. J. G. Proakis, “Digital Communications”, 4th ed. McGraw-Hill, 2001.
+[1-43]. K. Kim, I. A. Akbar, K. K. Bae, J.-S. Um, C. M. Spooner and J. H. Reed, “Cyclostationary approaches to signal detection and classification in cognitive radio,” IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 212-215, Apr. 2007.
+[1-44]. U・ Gardner, WA, ''Exploitation of spectral redundancy in cyclostationary signals/5 IEEE Signal Processing Magazine, vol. 8, no. 2, pp. 14-36, Apr. 1991.
+[1-45], P. D. Sutton, J. Lotze, K. E. Nolan and L. E. Doyle, “Cyclostationary signature detection in multipath rayleigh fading environments,59 International Conference on Cognitive Radio Oriented Wireless Networks and Communications (CrownCom), pp. 408-413, Aug. 2007.
+[1-46]. K・ B. Letaief and W. Zhang, “Cooperative Communications for Cognitive Radio Networks,5, Proceedings of the IEEE, vol. 97, no. 5, pp. 878-893, Apr. 2009.
+[1-47]. J. Shen, S. Liu, L. Zeng, G. Xie, J・ Gao and Y. Liu, "Optimisation of cooperative spectrum sensing in cognitive radio network," IET Communications, vol.3, pp. 1170-1178, 2009.
+[1-48]. J. Ma, G. Zhao and Y. (Geoffrey) Li, “Soft Combination and Detection for
+25
+Cooperative Spectrum Sensing in Cognitive Radio Networks/9 IEEE Transactions on Wireless Communications, vol. 7, no. 11, pp. 4502-4507, Nov. 2008.
+[1-49]. Z. Li, F. R. Yu and M. Huang, “A Distributed Consensus-Based Cooperative Spectrum-Sensing Scheme in Cognitive Radios,” IEEE Transactions on Vehicular Technology, vol. 59, no. 1, pp. 383-393, Sept. 2009.
+[1-50]. R. Tandra, S. M. Mishra and A. Sahai, "What is a spectrum hole and what does it take to recognize one?" Proceedings of the IEEE, vol 97, no.5, pp. 824-848, May 2009.
+[1-51]. R. Tandra, A. Sahai and V. Veeravalli, “Unified Space-Time Metrics to Evaluate Spectrum Sensing,59 IEEE Communications Magazine, vol. 49, no. 3, pp. 54 - 61, Mar, 2011.
+[1-52]. M. Vu, N・ Devroye and V. Tarokh, "On the Primary Exclusive Region of Cognitive Networks,” IEEE Transactions on Wireless Communications, vol. 8, no. 7, pp. 3380-3385, July 2009.
+[1-53], A. Bagayoko, P. Tortelier and I. Fijalkow, "Impact of shadowing on the primary exclusive region in cognitive networks,European Wireless Conference, pp. 105-110, Apr. 2010.
+[1-54]. J. Dricot, G. Ferrari and F. Horlin, et al., “Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks,55 IEEE International Conference on Communications (ICC) Workshops, pp. 1-5, May 2010.
+[1-55]. Z・ Wei, Z. Feng, Q. Zhang and W. Li, “ Three regions for spacetime spectrum sensing and access in cognitive radio networks," IEEE Global Communications Conference (GLOBECOM), pp. 1283-1288, Dec. 2012
+[1-56]. T. Do and B. L. Mark, "Joint Spatial-Temporal Spectrum Sensing for Cognitive Radio Networks,” IEEE Transactions on Vehicular Technology, vol. 59, no. 7, pp. 3480-3490, Sept. 2010.
+[1-57]. Q. Wu, G. Ding and J. Wang, et al., "Spatial-Temporal Opportunity Detection for Spectrum-Heterogeneous Cognitive Radio Networks: Two-Dimensional Sensing,IEEE Transactions on Wireless Communications, vol. 12, no. 2, pp. 516-526, Feb. 2013.
+[1-58]. P. P. Chen and Q. Y. Zhang, "Joint Temporal and Spatial Sensing Based
+26
+Cooperative Cognitive Networks/5 IEEE Communications Letters, vol. 15, no. 5, pp. 530-532, May 2011.
+[1-59]. FCC, “Second Report and Order and Memorandum Opinion and Order: In the Matter of Unlicensed Operation in the TV Broadcast Bands,” Doc, 08-260, Nov. 2008.
+[1-60]. FCC, "Second Memorandum Opinion and Order,” Doc. 10-174, Sept. 2010.
+[1-61], ECC, "Technical and operational requirements for the operation of white space devices under geo-location approach/ ECC report 186, Jan, 2013.
+[1-62]. C. Stevenson, G. Chouinard, Z・ Lei, W. Hu, S・ J・ Shellhammer and W. Caldwell, "IEEE 802.22: The first cognitive radio wireless regional area network standard/5 IEEE Communications Magazine, vol. 47, no. 1, pp. 130-138, Jan. 2009.
+[1-63], M. Barrie, S. Delaere, P・ Anker and P. Ballon, “Aligning technology, business and regulatory scenarios for cognitive radio,” Telecommunications Policy, vol. 36, no. 7, pp. 546-559, Apr. 2012.
+[1-64]. M. Barrie, S. Delaere, G. Sukareviciene, J. Gesquiere and I. Moerman, 6CGeolocation Database beyond TV White Space? Matching Applications with Database Requirements,IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 467-478, Oct. 2012.
+[1-65]. K. Harrison and A. Sahai? ''Potential collapse of whitespaces and the prospect for a universal power rule,” IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 316-327, May 2011.
+[1-66]. C-S. Sum, H. Harada, F. Kojima, Z. Lan and R. Funada, "Smart Utility Networks in TV White Space,” IEEE Communications Magazine, vol. 49, no. 7, pp. 132-139, Jul. 2011.
+[1-67]. C. Yang, J. Li, M. Sheng, Q. Liu, R. Hou and H. Li, "Resource flow: Autonomous cognitive resource management framework for ftiture networks,” Chinese Science Bulletin, vol. 57, no. 28-29, pp 3691-3697, Oct. 2012
+[1-68].刘勤，李建东,李钊等，“基于数学空间的认知无线电频谱资源表征方法,” ZL201010204176.0o
+[1-69],刘勤，李建东，黄鹏宇等，“认知网络资源的矢量空间模型构建方法，”
+ZL201010298831.3 o
+27
+[1-70].刘勤，李钊，孟祥燕等，“一种认知网络资源的解析方法，” ZL2013100003810.8o
+[1-71]. Z. Wei, Q. Zhang, Z. Feng, W. Li and T. A. Gulliver, "On the construction of Radio Environment Maps for Cognitive Radio Networks/5 IEEE Wireless Communications and Networking Conference (WCNC), pp. 4504-4509, Apr. 2013.
+[1-72]. Z. Feng, Z. Wei, Q. Zhang and P. Zhang, ''Fractal theory based dynamic mesh grouping scheme fbr efficient cognitive pilot channel design,55 Chinese Science Bulletin, vol. 57, no. 28-29, pp. 3684-3690, Sept. 2012.
+[1-73]. J. Perez-Romero, O. Salient, R. Agusti and L. Giupponi, "A novel on demand cognitive pilot channel enabling dynamic spectrum allocation,IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 46-54, Apr. 2007.
+[1-74]. Q. Zhang, Z. Feng, G. Zhang, Q. Li and P. Zhang, “ Efficient Mesh Division and Differential Information Coding Schemes in Broadcast Cognitive Pilot Channel," Wireless Personal Communications, vol. 63, no. 2, pp. 363-392, Mar. 2012.
+[1-75]. Z. Wei and Z. Feng, “A Geographically Homogeneous Mesh Grouping Scheme fbr Broadcast Cognitive Pilot Channel in Heterogeneous Wireless Networks,5, IEEE Global Communications Conference (GLOBECOM) Workshops, pp. 1008-1012, Dec. 2011.
+[1-76]. L. Ma, X. Han and C,・C. Shen, “Dynamic open spectrum sharing for wireless ad hoc networks/5 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 203-213, Nov. 2005.
+[1-77]. C. Cormio and K・ R. Chowdhury, “Common control channel design fbr cognitive radio wireless ad hoc networks using adaptive frequency hopping,95 Ad Hoc Networks, vol. 8, pp. 430-438,2010.
+[1-78]. B. F. Lo, “A survey of common control channel design in cognitive radio networks/5 Physical Communication, vol. 4, pp. 26-39, 2011.
+[1-79]. LF. Akyildiz, W.-Y. Lee, M.C. Vuran and S. Mohanty, "Next generation dynamic spectrum access/cognitive radio wireless networks: a survey/5 Computer Networks, vol 50, no. 13, pp. 2127-2159, 2006.
+28
+[1-80]. I.F. Akyildiz, W.・Y Lee and K.R. Chowdhury, "CRAHNs: cognitive radio ad hoc networks,55 Ad Hoc Networks, vol. 7, no. 5, pp. 810-836, 2009.
+[1-81], I.F. Akyildiz, B.F. Lo and R. Balakrishnan, “Cooperative spectrum sensing in cognitive radio networks: a survey/5 Physical Communication, vol. 4, no. 1, pp. 40-62,2011.
+[1-82], C. Cordeiro, K. Challapali, P. America and B. Manor, "C-MAC: A cognitive MAC protocol for multi-channel wireless networks,55 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 147-157, Apr. 2007.
+[1-83]. S. Geirhofer, L, Tong and B. Sadler, ''Cognitive medium access: Constraining interference based on experimental models,” IEEE Journal on Selected Areas in Communications, vol. 26, no. 1, pp. 95-105, Jan. 2008.
+[1-84]. B. Wang, Z. Ji, K. J. R. Liu and T. C. Clancy, ^Primary-prioritized Markov approach fbr dynamic spectrum allocation/5 IEEE Transactions on Wireless Communications, vol. 8, no. 4, pp. 1854-1865, Apr. 2009.
+[1-85]. Y Song, Y. Fang and Y. Zhang, “Stochastic channel selection in cognitive radio networks,” IEEE Global Communications Conference (GLOBECOM), pp, 4878-4882, Nov. 2007,
+[1-86]. K. Arshad, R. Mackenzie, U. Celentano, A. Drozdy and S. Leveil, et al” "Resource management for QoS support in cognitive radio networks/5 IEEE Communications Magazine, vol. 52, no. 3, pp. 114-120, Mar. 2014.
+[1-87]. S. -Y. Lien, K. -C. Chen, Y. -C・ Liang and Y. Lin, "'Cognitive radio resource management for future cellular networks,55 vol. 21, no. 1, pp. 70-79, Feb. 2014.
+[1-88]. I. F. Akyildiz, W.-Y. Lee, M. C. Vuran and S. Mohanty, “Next generation dynamic spectrum access cognitive radio wireless networks: A survey； Computer Networks, vol. 50, pp. 2127-2159, May 2006.
+[1-89]. Q. Wang and H. Zheng, "Route and spectrum selection in dynamic spectrum networks,55 IEEE Consumer Communications Networking Conference (CCNC), vol. 1, pp. 625-629, Jan. 2006.
+[1-90]. C. Xin, B. Xie and C. Shen, “A novel layered graph model for topology formation and routing in dynamic spectrum access networks/5 IEEE
+29
+International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 308-317, Nov. 2005.
+[1-91]. S. Krishnamurthy, M. Thoppian, S. Venkatesan and R. Prakash, “Control channel based MAC-layer configuration, routing and situation awareness for cognitive radio networks/7 IEEE Military Communications Conference (MILCOM), pp. 455-460, Oct. 2005.
+[1-92]. Y. Liu, D. Xu, Z. Feng and P. Zhang, “Outage Capacity of Cognitive Radio in Rayleigh Fading Environments with Imperfect Channel Information/5 Journal of Information and Computational Science, vol. 9, pp. 955-968,2012.
+[1-93]. Y. Liu, D. Xu, Z. Feng, Q. Li and P. Zhang, "Capacity of Cognitive Radio under Outage Constraint with Partial Channel Knowledge," International Conference on Wireless Communications and Signal Processing (WCSP), pp. 1-5, Nov. 2011.
+[1-94]. D. Xu, Z. Feng and P. Zhang, "Outage Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity and Outdated CSI under Asymmetric Fading； IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, vol. 96, pp. 732-736, 2013.
+[1-95]. C. Yin, C. Chen, T. Liu, S. Cui, '"Generalized results of transmission capacities for overlaid wireless networks," IEEE International Symposium on Information Theory (ISIT), pp. 1774-1778, June 2009.
+[1-96]. J. Lee, J. G. Andrews, D. Hong, ^Spectrum-Sharing Transmission Capacity with Interference Cancellation," IEEE Transactions on Communications, vol. 61, no. 15 pp. 76-86, Feb. 2013.
+[1-97]. D. Xu5 Z. Feng and P. Zhang, "Effective Capacity of Delay Quality-of-Service Constrained Spectrum Sharing Cognitive Radio with Outdated Channel Feedback； Science China Information Sciences, vol. 56, pp. 1-13, 2013.
+[1-98]. D. Xu, Z. Feng and P. Zhang, ''Protecting Primary Users in Cognitive Radio Networks with Effective Capacity Loss Constraint/5 IEICE Transactions on Communications, voL 95, pp. 349-353, 2012.
+[1-99]. D. Xu, Z. Feng and P. Zhang, “On the Impacts of Channel Estimation Errors and Feedback Delay on the Ergodic Capacity for Spectrum Sharing Cognitive Radio,” Wireless personal communications, vol. 72, pp. 1875-1887,2013.
+30
+[1-100]. P. Zhang, D. Xu and Z. Feng, "Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity under Delay Quality-of-Service Constraints in Nakagami Fading Environments/9 KSII Transactions on Internet and Information Systems (TIIS), vol. 7, pp. 632-650, 2013.
+[1-101]. D. Xu, Z. Feng, Y. Wang and R Zhang, "Capacity of Cognitive Radio Under Delay Quality-of-Service Constraints with Outdated Channel Feedback/' IEEE International Symposium on Personal Indoor and Mobile Radio Communications (PIMRC), pp. 1704-1709, 2012.
+[1-102]. P. Gupta and P. R. Kumar, "The capacity of wireless networks； IEEE Transaction on Information Theory, vol. 46, no. 2, pp. 388-404, Mar. 2000.
+[1-103]. S.-W. Jeon, N・ Devroye, M. Vu, S.-Y. Chung and V. Tarokh, "Cognitive networks achieve throughput scaling of a homogeneous network； IEEE Transaction on Information Theory9 vol. 57, no. 8, pp. 5103-5115, Aug. 2011.
+[1-104], C. Yin, L. Gao and S. Cui, "Scaling Laws fbr Overlaid Wireless Networks: A Cognitive Radio Network versus a Primary Network,” IEEE/ACM Transactions on Networking, vol. 18, no. 4, pp. 1317-1329, Aug. 2010.
+[1-105]. W. Huang and X. Wang, "Capacity scaling of general cognitive networks/5 IEEE/ACM Transactions on Networking, vol. 20, no. 5, pp. 1501-1513, Oct. 2011.
+[1-106]. R Gupta and R R. Kumar, "Critical power for asymptotic connectivity," IEEE Conference on Decision and Control, pp. 1106-1110, Dec. 1998.
+[1-107]. H. Zhang and J. Hou, “On the critical total power for asymptotic k-connectivity in wireless networks/9 IEEE International Conference on Computer Communications (INFOCOM), pp. 466-476, Mar. 2005.
+[1-108]. W. Ren, Q. Zhao and A. Swami, “On the Connectivity and Multihop Delay of Ad Hoc Cognitive Radio Networks,” IEEE Journal on Selected Areas in Communications, vol.29, pp. 805-818, Apr, 2011.
+[1-109]. W. C. Ao, S. Cheng and K. Chen, ''Connectivity of Multiple Cooperative Cognitive Radio Ad Hoc Networks,IEEE Journal on Selected Areas in Communications, vol.30, pp. 263-270, Feb. 2012.
+[1-110]. A. Abbagnale, F. Cuomo and E. Cipollone, “Measuring the connectivity of a cognitive radio ad-hoc network/5 IEEE Communications Letters, vol.14, pp.
+31
+417-419, May 2010.
+[1-111]. Y Zhao, S. Mao, J. O. Neel and J. H. Reed, "Performance Evaluation of Cognitive Radios: Metrics, Utility Functions, and Methodology," Proceedings of the IEEE, vol. 97, no. 4, pp. 642-659, Apr. 2009.
+[1-112]. H. B. Yilmaz, T・ Tugcu, F. Alagoz and S. Bayhan, “Radio Environment Map as Enabler for Practical Cognitive Radio Networks," vol. 51, no. 12, pp. 162-169, Dec. 2013.
+[1-113]. S. Grimoud, B. Sayrac, S. Ben Jemaa and E. Moulines, “An algorithm for fast REM construction,59 Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 251-255, June 2011.
+[1-114]. J. Riihijarvi, P. M* ah'bnen, M. Petrova and V. Kolar, ''Enhancing cognitive radios with spatial statistics: From radio environment maps to topology engine,” Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 1-6, June 2009.
+[1-115]. V Atanasovski et al., "Constructing radio environment maps with heterogeneous spectrum sensors,55 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 660-661, May 2011.
+[1-116]. H. B. Yilmaz, C. -B. Chae and T. Tugcu, "Sensor Placement Algorithm for Radio Environment Map Construction in Cognitive Radio Networks/* IEEE Wireless Communications and Networking Conference (WCNC), pp. 2096-2101, Apr. 2014.
+[1-117]. S. Faint, X. O. Ureten and T. Willink, "Impact of the number of sensors on the network cost and accuracy of the radio environment map," IEEE Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-5, May 2010.
+[1-118]. X. Feng, J. Zhang and Q. Zhang, "Database-Assisted Multi-AP Network on TV White Spaces: Architecture, Spectrum Allocation and AP Discovery”, IEEE Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 265-276, May 2011.
+[1-119]. X. Feng, Q. Zhang and J. Zhang, “Hybrid Pricing for TV White Space Database,5, IEEE International Conference on Computer Communications (INFOCOM), pp. 1995-2003, Apr. 2013.
+32
+[1-120], X. Feng, J. Zhang and Q. Zhang, “A Hybrid Pricing Framework for TV White Space Database”，IEEE Transactions on Wireless Communications, Vol. 13, Issue 5, pp. 2626-2635, May 2014.
+[1-121]. W. Lee, G. Nat and D.・H. Cho, ''Comparison of Channel State Acquisition Schemes in Cognitive Radio Environment,55 IEEE Transactions on Wireless Communications, vol. 13, no. 4, pp. 2295-2307, Feb. 2014.
+[1-122]. F. Paisana, N. Marchetti and L. A. DaSilva, “Radar, TV and Cellular Bands: Which Spectrum Access Techniques for Which Bands?” IEEE Communications Surveys & Tutorials, vol. 16, no. 3, pp. 1193-1220, Apr. 2014.
+[1-123]. S. Sodagari, "A Secure Radio Environment Map Database to Share Spectrum," IEEE Journal of Selected Topics in Signal Processing, vol. PR no. 99, 2015.
+[1-124]. D. Pu and A. M. Wyglinski, “Primary-User Emulation Detection Using Database-Assisted Frequency-Domain Action Recognition," IEEE Transactions on Vehicular Technology, vol. 63, no. 9, pp. 4372-4382, Apr. 2014.
+[1-125]. G. Ding, Q. Wu and Y.-D. Yao, et al, "Kernel-based learning for statistical signal processing in cognitive radio networks: Theoretical foundations; example applications, and future directions/5 IEEE Signal Processing Magazine, vol. 30, no.4, pp. 126-136, July 2013.
+[1-126]. G. Ding, J. Wang and Q. Wu, et al, “Spectrum sensing in opportunity heterogeneous cognitive sensor networks: How to cooperate?,^ IEEE Sensors Journal, vol. 13, no. 11, pp. 4247-4255, Nov. 2013.
+[1-127]. X. Hong, C. X. Wang, H. H. Chen and Y. Zhang, “Secondary spectrum access networks/5 IEEE Vehicular Technology Magazine, vol.4, pp. 36-43, June 2009.
+[1-128]. Z・ Wei, Z. Feng, Q. Zhang and W< Li, “Three regions for space-time spectrum sensing and access in cognitive radio networks/5 IEEE Global Communications Conference (GLOBECOM), pp. 1283-1288, Dec. 2012.
+[1-129]. Z. Wei, Z. Feng, Q. Zhang, and W. Li, “Three Regions for Space-Time Spectrum Sensing and Access in Cognitive Radio Networks," IEEE Transactions on Vehicular Technology, vol. PR no. 99, Jul. 2014.
+33
+[1-130]. X. Wang, J. Liu, W. Chen and Z. Cao, "CORE-4: Cognition oriented relaying exploiting 4-D spectrum holes； Wireless Communications and Mobile Computing Conference (IWCMC), pp. 1982-1987, July 2011.
+[1-131]. G. Zheng, S. Ma, K. K. Wong and T. S. Ng, “Robust beamforming in cognitive radio," IEEE Transactions on Wireless Communications, vol. 9, no. 2, pp. 570-576, 2010.
+[1-132]. L. Zhang, Y.・C. Liang, Y. Xin and H. V. Poor, "Robust cognitive beamforming with partial channel state information/5 IEEE Transactions on Wireless Communications, vol. 8, no. 8, pp. 4143-4153, Aug. 2009.
+[1-133], S. Singh, P. D. Teal, P. A. Dmochowski and A. J. Coulson, “Robust cognitive radio cooperative beamfbrming," IEEE Transactions on Wireless Communications, vol. 13, no. 11, pp. 6370-6381, Nov. 2014.
+[1-134]. Y. Xu, X. Zhao and Y. -C. Liang, "Robust Power Control and Beamforming in Cognitive Radio Networks: A Survey/9 IEEE Communications Surveys & Tutorials, vol. PR no. 99, 2015.
+[1-135]. L. Zhang, Y. -C. Liang and Y・ Xin, “Joint beamforming and power allocation for multiple access channels in cognitive radio networks/5 IEEE Journal on Selected Areas in Communications, vol. 26, no. 1, pp. 38-51, Jan. 2008.
+[1-136]. A, Tajer, N. Prasad and X. Wang, ^Beamforming and rate allocation in MISO cognitive radio networks^ IEEE Transactions on Signal Processing, vol. 58, no. 1, pp. 362-377, Jan. 2010.
+[1-137]. D. N・ Nguyen and M. Krunz, “Power minimization in MIMO cognitive networks using beamforming games/9 IEEE Journal on Selected Areas in Communications, vol. 31, no. 5, pp. 916-925, May 2013.
+[1-138]. S. Wang, L. Guo, T. Yi and J. Lin, “Relay Beamforming with Power Minimization in Cognitive Radio Network," IEEE International Conference on Communication Technology (1CCT), pp. 681-685, Nov. 2013.
+[1-139]. S. Akin and M. C. Gursoy, “On the Throughput and Energy Efficiency of Cognitive MIMO Transmissions,77 IEEE Transactions on Vehicular Technology, vol. 62, no, 7, pp. 3245-3260, Sept. 2013.
+[1-140]. P. Gupta and P. R» Kumar et al., "Internets in the sky: The capacity of three dimensional wireless networks,55 Communications in Information and Systems,
+34
+vol. 1, no. 1, pp. 33-49,2001.
+[1-141]. M. Franceschetti, M. D. Migliore and P. Minero, “Outer Bound to the Capacity Scaling of Three Dimensional Wireless Networks/5 IEEE International Symposium on Information Theory (ISIT), pp. 1123-1127, July 2008.
+[1-142]. P. Li, M. Pan and Y. Fang, “The capacity of three-dimensional wireless ad hoc networks,” IEEE International Conference on Computer Communications (INFOCOM), Apr. 2011.
+[1-143]. R Li, M. Pan and Y. Fang, “Capacity bounds of three-dimensional wireless ad hoc networks," IEEE/ACM Transactions on Networking, vol. 20, no. 4, pp. 1304-1315,2012.
+[1-144]. C. Hu, X. Wang, Z. Yang, J. Zhang, Y. Xu and X. Gao, "A Geometry Study on the Capacity of Wireless Networks via Percolation,5> IEEE Transactions on Communications, vol. 58, no. 10, pp. 2916-2925, Oct. 2010.
+[1-145]. L. X. Cai, L. Cai, X. (Sherman) Shen and J. W. Mark, “Capacity Analysis of UWB Networks in Three-Dimensional Space," Journal of Communications and Networks, vol. 11, no. 3, pp. 287-296, Apr. 2009.
+[1-146]. E. Biglieri, “An Overview of Cognitive Radio for Satellite Communications/5 IEEE First AESS European Conference on Satellite Telecommunications (ESTEL), pp. 1・3, Oct. 2012.
+[1-147]. M. Hoyhtya, J. Kyrolainen, A, Hulkkonen, J. Ylitalo and A. Roivainen, "'Application of Cognitive Radio Techniques to Satellite Communication/5 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 540-551, Oct 2012.
+[1-148]. K. Liolis, G. Schlueter, J. Krause and F. Zimmer, et al. "Cognitive Radio Scenarios for Satellite Communications: The CoRaSat Approach," Future Network and Mobile Summit (FutureNetworkSummit), pp. 1-10, July 2013.
+[1-149]. S. Kandeepan, L. De Nardis, M. Di Benedetto, A. Guidotti and G. E. Corazza, "Cognitive Satellite Terrestrial Radios,55 IEEE Global Telecommunications Conference (GLOBECOM), pp. 1-6, Dec. 2010.
+[1-150]. S. Maleki, S. Chatzinotas, B. Evans and K. Liolis, et al, ''Cognitive Spectrum Utilization in Ka Band Multibeam Satellite Communications/5 IEEE
+35
+Communications Magazine, voL 53, no. 3, pp. 24-29, Man 2015.
+[1-151], G. Chung, S. Sridharan, S. Vishwanath, and C. S. Hwang, "On the Capacity of Overlay Cognitive Radios with Partial Cognition/' IEEE Transactions on Information Theory, voL 58, no. 5, pp. 2935-2949, Jan. 2012.
+[1-152]. Q. Zhang, Z. Feng and P. Zhang, "Joint Cooperative Relay Scheme for Spectrum-Efficient Usage and Capacity Improvement in Cognitive Radio Networks： EURASIP Journal on Wireless Communications and Networking, vol. 2012, pp. 1-9, 2012.
+[1-153]. Z. Wei, Z. Feng, Q. Zhang, W. Li and T. A. Gulliver, uThe asymptotic throughput and connectivity of cognitive radio networks with directional transmission,Journal of Communications and Networks, vol. 16, no. 2, pp. 227-237, Apr. 2014.
+[1-154], Z. Wei, Z. Feng, Q. Zhang, W. Li and T. A. Gulliver, ''Throughput scaling laws of cognitive radio networks with directional transmission," IEEE Global Communications Conference (GLOBECOM), pp. 872-877, Dec. 2013.
+[1-155]. S. P. Weber, X. Yang, J. G. Andrews, and G・ de Veciana, ^Transmission capacity of wireless ad hoc networks with outage constraints,IEEE Transactions on Information Theory, vol. 51, no. 12, pp. 4091-4102, Dec. 2005.
+[1-156]. C. Yin, L. Gao, and S. Cui, "Scaling laws for overlaid wireless networks: A cognitive radio network vs. a primary network,IEEE Global Communications Conference (GLOBECOM), pp. 1-5, Nov. 2008.
+[1-157]. X. Chen, T. Jing, Y. Huo, W. Li, X. Cheng and T. Chen, "Achievable Transmission Capacity of Cognitive Radio Networks with Cooperative Relaying,5, International ICST Conference on Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 1-6, June 2012.
+[1-158]. R. Vaze, "Transmission Capacity of Spectrum Sharing Ad Hoc Networks with Multiple Antennas,5, IEEE Transactions on Wireless Communications, vol. 10, no. 7, pp. 2334-2340, May 2011.
+[1-159]. C. Li and H. Dai, “On the Throughput Scaling of Cognitive Radio Ad Hoc Networks," IEEE International Conference on Computer Communications (INFOCOM), pp. 241-245, Apr. 2011.
+36
+[1-160]. C・ Wang, S. Tang, X. -Y. Li and C. Jiang, "Multicast Capacity Scaling Laws for Multihop Cognitive Networks,” IEEE Transactions on Mobile Computing, vol. 11, no. 11, pp. 1627-1639, Sept 2012.
+[1-161]. C. Wang, C. Jiang, S. Tang and X. -Y. Li, “Scaling Laws of Cognitive Ad Hoc Networks over General Primary Network Models,5, IEEE Transactions on Parallel and Distributed Systems, vol. 24, no. 5, pp. 1030-1041, July 2012.
+[1-162]. K・ Zheng, J. Luo, J. Zhang, W. Wu, X. Tian and X. Wang, ''Cooperation Improves Delay in Cognitive Networks with Hybrid Random Walk," IEEE Transactions on Communications, vol. PR no. 99, 2015.
+[1-163],张平，李建武，冯志勇，张奇勋，“认知无线网络基础理论与关键技术研 究，”电信科学，2014年2月2日。
+[1-164].贺倩，“认知无线网络中的重构管理研究，”北京邮电大学博士论文,2013 年4月18日。
+[1-165].徐鼎，“认知无线网络中的无线资源分配研究，”北京邮电大学博士论文， 2013 年4月 20Ho
+37
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+38
+
+
+第二章认知无线网络中认知信息表征、度量与传递
+2.1研究背景
+根据报告[2-1],在2020年移动通信网络承载的流量将会达到2010年的1000 倍，在这种情况下，移动通信网络必将需要更宽的频谱以及更加灵活的频谱使用 方式。而传统静态的频谱分配策略将会导致频谱使用不均衡，一方面使得特定的 时间或者空间出现频谱紧缺的情况，另一方面大多数频谱的利用率仍然很低[2-2], 这浪费掉了很多频谱，不能满足未来高速无线通信发展的需求。为了提升频谱的 利用效率，国内外学者提出了认知无线电的概念[2-3],并进行了大量的研究。之 后学术界又提出认知无线网络的概念[2-4][2-5],解决认知无线电的组网问题，从 网络的视角研究频谱等资源的高效利用问题。
+认知无线网络是智能的无线通信系统，它能通过认知的手段，比如频谱检测 或者认知数据库方法，获得多域环境和资源的信息，即认知信息，这是认知无线 网络进行学习和重构的重要前提。认知无线网络感知环境主要有两种方法：1) 频谱检测[2-5][2-6],即认知用户检测频谱的占用状态；2)认知数据库技术 [2-7][2-8][2-9],即构建一个存储认知信息(大多是白频谱信息)的数据库，当认 知用户需要频谱的时候访问数据库，查询它所在的地点和时间的认知信息。认知 数据库结合认知导频信道技术(Cognitive Pilot Channel, CPC)[2-10][2-ll}[2-12], 将会提升认知数据库的认知信息传输效率和准确性，最终提升频谱使用效率，所 以认知无线网络的频谱感知阶段也是提升频谱利用率的重要环节。
+认知无线网络的频谱感知方法，包括频谱检测和数据库方法，这在国际电信 联盟(International Telecommunication Union, ITU)的标准 ITU-R M.2225 中详 细描述[2-4]。另夕卜，美国联邦通讯委员会(Federal Communications Commission, FCC ),欧洲邮电管理局会议(European Conference of Postal and Telecommunications Administrations, CEPT)和电气和电子工程师协会(Institute of Electrical and Electronics Engineers, IEEE)也有相关的规定、标准等颁布 [2-13][2-14] [2-15][2-16],允许在TV白频谱上部署非授权无线电设备，最具代表 性的是IEEE 802.22标准[2-16]。在使用TV白频谱的方法中，最具代表性的是认 知数据库方法。因为频谱检测具有隐藏终端、检测精度不高、难以适应复杂电磁 环境等问题，所以认知数据库方法被视为一种简单有效且准确的认知信息获取方 法。另外，因为终端不需要进行频谱检测，所以认知终端也避免了时间和能量的 消耗，降低了认知终端的设计复杂度。
+认知数据库是获取、存储、处理和分发认知信息的装置[2-17],认知数据库
+39 能够准确存储频谱空洞的信息，从而避免次用户对主用户的严重干扰[2-18],通 过低功率的灵活的认知无线电设备利用空间和时间维度的频谱机会，提升频谱的 利用效率[2-19][2-20]o尽管在认知数据库方面己经有很多研究，但是现有的研究 主要集中在认知数据库的构建和认知数据库的应用上面（比如在动态频谱接入方 面的应用）。实际上，认知用户需要访问认知数据库才能获得它所在地点和时间 的认知信息，进一步指导认知用户的频谱利用，但是目前鲜有工作研究认知信息 从认知数据库到认知用户的传递策略，对于影响认知信息传递性能的因素也少有 分析。尤其当认知用户具有移动性的时候，认知用户何时访问认知数据库？以什 么样的频度访问认知数据库？这些问题都没有得到回答。而这些问题对于认知信 息的传递效率、认知用户的性能等都有影响。
+在认知数据库中，为了传递认知信息，认知数据库管辖的整个区域首先被划 分为小矩形，这在文献[2-15]中称为“像素”，在文献[2-11][2-12]中称为“栅格”， 本章使用栅格这个称呼，其中栅格是认知信息传递的最小处理单位。在认知信息 的点播模式中，当次用户位于栅格内部的时候,次用户只需要请求一次认知信息， 只要次用户仍然在栅格内部就不需要重新请求认知信息，但是当次用户离开原来 的栅格的时候，就需要重新请求认知信息。在认知信息的广播模式中，认知数据 库对每个栅格轮流广播对应栅格的认知信息，而栅格里面的次用户只要接收信息 即可。认知信息的点播和广播在下文中详细描述，在这里可以直观地知道：栅格 的大小对于认知信息的传递具有重要影响。当栅格太大的时候，认知信息的传递 效率较高，但是精度较差；当栅格太小的时候，认知信息的传递效率较低，但是 精度较高。文献[2-13][2-15][2-18]研究了认知信息传递的精度，在文献[2-13][2-15] 建议栅格的边长设置为30-200米。然而，大多数的研究没有考虑栅格的尺寸对 认知信息传递的影响，更没有考虑栅格融合的可能性。因此可以发现，认知信息 传递的各个环节不管在理论上还是实践上都有很多空白。
+为了更加全面地研究认知信息的快速准确传递，本文从一个更加全面的视角 来研究，即研究认知信息的表征、度量、传递整个环节，最终指导认知信息的快 速准确获取和传递。因为空间维度和时间维度的对偶性，本文也可以从时间维度 研究认知信息的表征、度量和传递方法，这会有助于频谱检测的参数优化。实际 上，本章的研究展示了空时认知信息的对偶性，从而建立了认知信息表征的统一 模型。传统的对频谱检测的研究主要集中在信号处理方面[2-6][2-36],传统的对 认知数据库的研究主要集中在数据库的构建和应用方面，这些研究都忽视了认知 信息的整个环节。而本文研究认知信息的表征、度量和传递，为认知信息的获取 和传递提供理论基础和解决方案。
+本章将建模研究认知无线网络的认知信息表征、度量和传递，其中本章的认
+40
+知信息主要是空闲频谱信息。因为认知信息分布在多个维度，所以本文研究多维 认知信息表征、度量和传递的理论和技术，为了具有代表性，本文重点研究空间 和时间两个维度的认知信息。研究认知信息表征、度量和传递可以指导认知无线 网络环境感知技术的设计，比如频谱检测技术里面的关键参数（检测周期、检测 门限、检测节点数等）的选取和优化。另外，认知信息的研究还可以指导认知数 据库的构造和认知数据库中认知信息的传递。认知数据库主要存储空间维度的认 知信息，如何设计认知数据库，使得空间维度认知信息能够被表征清楚，使得认 知信息能准确快速地传递给认知用户，是认知数据库设计过程中的两大问题。这 些问题的解决将帮助认知用户准确快速地获得环境的空闲频谱信息，从而能有效 地利用频谱空洞，实现以频谱为代表的网络资源的高效利用。
+本章的内容安排如下：2.2节介绍了认知信息的表征理论，包括空间维度和 时间维度的认知信息表征，在本节的最后介绍空时表征的对偶性，从而建立空时 认知信息的统一表征模型。在2.3节，本文研究认知信息度量方法，主要针对非 完美认知，探索认知用户对环境中资源状态的不确定性的消除，在这一节中本文 介绍认知信息度量的概念、性质及其应用。在2.4节，本文设计认知信息传递方 法，需要注意的是，本文重点研究认知数据库中的认知信息传递。在这一节中， 本文对认知信息传递进行了理论分析，并设计了基于栅格划分的认知信息传递方 法，以实现认知信息的快速准确传递，提升认知用户对频谱空洞利用的能力。在 2.5节，本文对本章的关键理论和方案进行了数值仿真验证，另外本文构建了硬 件平台以验证认知信息传递方案的性能。在2.6节，本文对本章的内容进行了总 结。需要强调的是，虽然本章建立了认知信息表征、度量、传递的一个较为完整 的理论框架，但是这个框架仍然不完备。本文对空间维度认知信息的表征和传递 理论的研究比较完备，但是空间维度认知信息的度量目前没有涉及，这是因为与 时间维度认知信息相比，空间维度认知信息的获取方法更为多样，因此其度量难 以在简单、统一的模型下进行。与此类似，本文对时间维度认知信息的表征、度 量研究比较完备，但是时间维度认知信息的传递研究较少，这是因为时间维度认 知信息的传递多发生在分布式协作感知里，或者发生在控制平面内部，而这些情 况下的认知信息传递影响因素众多，情况复杂，也难以在简单、统一的模型之下 研究。不过这些缺失的研究可以作为本文后续工作，在之后的研究中重点解决。
+2.2认知信息的表征理论
+本章主要研究认知无线网络空时两维频谱空洞，于是认知信息也分布在空时 两维。本文通过研究发现:在空间和时间维度，认知信息的表征方法具有对偶性。
+41
+2.2.1空间维度认知信息
+如图2-1所示，本文分析一个IEEE 802.22标准中的典型场景。在一个固定 的区域存在着几个电视塔，作为主网络，主网络的覆盖区域是围绕着电视塔的曲 线内部。在主网络的覆盖区域之内（曲线之内），电视的频谱不可以被次用户利 用，在主网络的覆盖区域之外（曲线之外）存在空间维度频谱空洞。于是在不同 的区域，认知信息的内容可能是不一样的，这里的认知信息具体为次用户接收到 的主用户的空闲频谱信息。在本文研究的这个模型中，次用户通过认知数据库获 取空闲频谱信息。
+考虑到认知数据库管理的区域范围很广，整个区域被进一步划分为矩形栅格, 一个栅格里的无线电参数认为是一致的［2-10］,所以栅格提供了认知信息归类和 离散化存储的一种方式，并且在认知数据库数据融合方面有一定潜力。将整个区 域离散化为小的栅格以后，就可以描述各个地理区域的空间维度认知信息。理想 地，当栅格无限小的时候，就可以描述空间上任意点的认知信息，但是在工程上 这是不现实的。下面给出基于栅格的空间维度认知信息表征方法。
+2.2.1.1空间维度认知信息表征方法
+在本文中，栅格1’表示为［标呂,1；标，3,2］，其中（知,片1）和3很,片2）分别表示 栅格对角顶点的坐标，注意到在这里栅格是矩形，且有X,,＜X,;2,为 ＜圾。假 设次用户的坐标为（X,*）,那么次用户和这个栅格的关系可以表示如下：
+次用户在【鷲嚨如"号啾＜2 （2J）
+栅格，外面 否则
+在图2-1所示的场景中，次用户主要通过数据库的方式获得认知信息，其中 次用户获得认知信息的方式主要有两种，即广播和点播的方式。在广播方式中， 数据库周期性地发送每个栅格的认知信息，比如对于栅格L数据库发送的认知 信息的信头是栅格，•的坐标信息，信头之后是栅格2的无线电参数信息。每个次 用户都能接收到栅格，•的认知信息，并且解出来信头。如果次用户结合自己的地 理位置信息判断自己在栅格『•内部，则继续解出来剩下的无线电参数信息，否则 弃掉这条认知信息。因为广播方式的效率只和栅格数量有关，不受次用户数量的 影响，因此广播方式在次用户数量较大的时候效率较高。
+次用户通过数据库获取认知信息的另一种方式是点播方式，当次用户位于栅 格，•内部的时候，次用户访问数据库，以获取栅格j处的可用频谱信息：次用户 先提供自己的地理坐标信息，然后数据库查询到次用户处于栅格i,就将栅格i 的认知信息发送给次用户。数据库之所以发送栅格，•的认知信息，而非次用户所
+42
+在位置的认知信息，一是考虑到数据库的分辨率没有那么大，二是考虑到次用户
+具有一定的移动性，实际上在次用户接收到认知信息的时候，次用户的地理位置
+有可能己经移动了。在2.4节，本文专门针对这种场景设计认知信息传递方案。
+服务器 认知数据库
+
+本文用一个二进制数R（k,x,y）表示主用户网络在坐标点（工疗）的存在与否, 详细定义如下：
+否则
+进一步，用下面的十进制数表示所有主网络在坐标点（x,V）的覆盖情况，定 义为坐标点（x，v）处的无线电参数，如下：
+
+其中T是主网络的个数，N=2r是主网络的组合数目，也是/（x，v）的取值数 目，即/（X疗）无线电参数/（X,*）可以表示坐标点（工疗）处的认 知信息，具体为“空间维度频谱信息”。如果给定主用户的覆盖情况，那么 是一个确定的量。但是因为用户的分布是随机的，所以一个用户遇到的无线电参 数也是随机的。设用户遇到的无线电参数是匕，则。有一个概率分布：
+
+一般来说，这个概率分布是未知的，但是如果考虑一个具体的区域，比如一 个栅格内部，那么这个概率分布是可以得到的。假设用户在这个栅格里面是均匀 分布的，那么,，就可以解释为在这个栅格内部无线电参数为，•的区域的面积比例。 例如，在图2-1中，栅格1只有主用户网络1,于是可以知道，在栅格1内部的 用户的无线电参数分布是：
+
+其中九“是一个用户的无线电参数。于是，定义在栅格[•内部，无线电参数 为j的区域所占的面积比例为Py,于是栅格i的无线电参数是：
+
+其中无线电参数£可以表征栅格i的认知信息，栅格i的无线电参数误差为：
+
+对于整个区域来说，无线电参数误差为：
+M
+(2-8)
+/=]
+R可以表示整个区域的认知信息表征误差，其中％是第i个栅格占整个区域 的面积比例，对于均匀栅格划分来说，有名=丄，楫，其中M是栅格的个数。
+M
+上面定义的无线电参数误差表示了认知信息的表征误差，实际上这个误差分 为两类。因为数据库发送的是一个栅格的大部分区域的无线电参数，所以次用户 有可能会收到错误的认知信息，尤其是对于处在网络边界的次用户。例如，在图 2-1中，栅格1的频谱可用信息为：
+｛主网络1的频谱不可用,主网络2的频谱可用,主网络3的频谱可用｝
+但是如果次用户出现在栅格1的A点，那么主网络1的频谱其实是可用的，
+但是次用户接收到的来自数据库的认知信息说主网络1的频谱不可用，于是次用
+户失去了一个频谱机会，这类似频谱检测里面的“虚警”(FalseAlarm)。如果次
+用户出现在B点，主网络3的频谱是不可用的，但是，因为数据库发送栅格2
+的大部分区域的无线电参数给次用户，因此次用户收到的认知信息如下：
+｛主网络1的频谱可用,主网络2的频谱可用,主网络3的频谱可用｝
+44
+
+因此如果次用户接入到主网络3的频谱，就会干扰到主网络3的主用户通信, 这种情况类似频谱检测里面的“误检”（Missed Detection）。
+显然，如果栅格的尺寸越小，上面的两种错误也越小，但是系统和算法复杂 度必然会增大。本文不区分“虚警”和“误检”两类错误，将它们发生的概率统 称为“错误概率”，即上文的A,,和A»
+空间维度频谱頰
+为了衡量空间维度频谱分布的复杂程度，本文提出“空间维度频谱嫡"的概 念。图2-1采用了规则栅格划分，观察图中的两个栅格，即栅格1和栅格2。两 个栅格里面的无线电参数不一样：栅格1有2种无线电参数，栅格2有5种无线 电参数。直观上理解，两个栅格的“炳”是不一样的。炳，即平均不确定程度的 度量。栅格1的无线电参数更加确定，因为它的无线电参数相对简单；栅格2 的无线电参数更加不确定，因为栅格2的无线电参数更加复杂。一般来说，参数 复杂有下面两种表现方式：
+1.参数的种类多；
+2.不同种类的参数分布比较均匀。
+上面参数复杂的表现方式和信息论里的炳值较大的情形是一致的，于是可以 借鉴香农炳来描述栅格里参数的“复杂程度”，这个描述可以进一步用来指导认 知资源在空间上的投放（比如传感器的密度、位置选取等），并且可以用来指导 认知数据库的信息传递设计。
+考察一个栅格的“嫡”，栅格，的嫡定义如下：
+
+其中0是参数的种类，PiJ是在栅格，•里无线电参数为丿的区域占据的面积比 例，上面的式子描述了一个栅格的嫡。
+本文假设用户在整个区域的分布是均匀的，则一个用户在一个栅格出现的概 率与这个栅格的面积成正比。于是一个栅格的面积占总面积的比例即决定了这个 栅格的燜对整个区域的炳的贡献。于是本文釆用下面的公式计算整个区域的炳：
+
+其中〃是栅格的数目，劣是栅格，•占整个区域的面积比例。在规则栅格划分 下，所有栅格的大小一致，整个区域的炳如下：
+
+这个嫡定义为“空间维度频谱炳”，简称为“地理燔”。这个燜的形式类似“炳 率”。把一个栅格类比成通信中的一个码，于是所有栅格的排列即是一个码序列， 并且可以认为是一个随机过程，如果序列内部的各个码独立，则序列燔即是：
+
+炳率即可以定义为：
+H共*乂匸应丄丄写間	（2-13）
+即是上面定义的地理嫡，下面分析地理燜的性质。
+2.2.1.3空间维度认知信息的数学性质
+在这部分中，本文探索空间维度频谱嫡（地理燜）和无线电参数误差的性质， 并且探索影响它们的关键要素，得到下面的定理。
+定理2-1：整个区域的空间维度频谱嫡为：H = 0（寿）,其中M是栅格的 数目，且有limH = Oo
+A/—>oo
+证明：在栅格数目M足够大的时候，设栅格的边长为八且令整个区域的边 长为Z,于是有M =	。在M足够大的时候，可以认为参数不纯净的栅格都
+分布在网络的边界，假设所有网络的边界总长度为&,于是所有参数不纯净的栅 格数量满足：
+優""	（2-14）
+上面的不等式是通过求解一个“填充问题”得到的，将网络的边界上的每个 点向两边的法线方向移动損£的距离，得到图2-2所示的两条虚线，两条虚线之 间的面积为2&愼,这个面积除以一个栅格的面积，就是无线电参数不纯净的 栅格的数目的上界。所有参数不纯净的栅格的最大炳为logN （这在所有参数等
+46
+
+概的情况下发生），于是本文可以表示出整个区域的嫡的上界：
+“一 1 心 v 1 2压 ..1 2国ogN	“ “、
+H<——Klog7V=—rv	 IoqN = —f=			E—	（2-15）
+M S/s2 s yjM S
+其中S是整个区域的面积，注意到当M*的时候，丑的上界趋于0,因为
+H非负，于是根据夹逼定理知道limH = 0,另外通过上述结果可以得到结论：
+W->oo
+
+图2-2网络边界切割网络
+根据定理2-1,在栅格的数目趋于无穷的时候，整个区域的嫡趋于0。这是容 易理解的：首先，当栅格很小的时候，内部的参数会越来越纯净；另外，当栅格 的数目增多的时候时候，参数不纯净的栅格被逐渐压缩到一条直线上，这些栅格 占的总面积趋于0,所以整个区域的炳趋于0。
+关于无线电参数误差，本文有如下定理：
+定理2-2：整个区域的无线电参数误差为：p,=O（去），其中M是栅格的 数目，且有lim p, = 0。
+证明:根据无线电参数误差的定义，栅格i的无线电参数误差满足如下关系： E., =m?xp〃 2土	（2-16）
+因此，本文有：
+pql-土	（2-17）
+所以整个区域的无线电参数误差为：
+47
+
+
+其中K是无线电参数不纯净的栅格数目，其上界在公式（2-14）给出。根据
+
+
+
+#
+定理2-1和定理2-2给出了空间维度频谱嫡H和无线电参数误差P,随着栅格 数量M的变化规律。而H与孔的关系在下面的定理中给出。
+定理2-3：空间维度频谱嫡H的上界可以用无线电参数误差的函数表示：
+A
+H<H（pD + p」og|N —1| =—（p）	（2-19）
+证明：根据Fano不等式，本文有：
+△
+H,VH（n，） + z,log|N-1| =—g	（2-20）
+其中H,•是栅格『•的炳，求和即可以得到整个区域的炳，如下：
+1 M	1 M	（a） C A M \
+h=点，3%心jE岳弘丿	g）
+其中（a）是根据Jensen不等式得到的，利用了函数材⑴的凹性。又因为
+1 M
+a=—代入上式，即可以得到定理的结论。
+#
+下面本文以更加直观的方式得到定理2-3。无线电参数误差可以这么理解： 一个用户在一块区域中，数据库要给这个用户发送无线电参数，因为用户所在的 这块区域的无线电参数不纯净，所以数据库有可能给用户发送了错误的信息。如 果把网络理解成“接入网资源”，那么在图2-3中，用户在点A,没有网络可以 接入，但是数据库发送的信息表明网络1可以接入，那么这个信息是错误的。如 果本文把网络理解成“主网络”，即只有在网络之外，次用户才可以接入空间维 度频谱空洞。那么错误的表现是这样的：用户出现在A点，本来可以接入空间 维度频谱空洞，可是数据库告诉它，它所在的区域有网络1 （因为绝大部分区域 有网络1）,这种情况下用户就浪费了通信机会。
+48
+
+
+图2・3错误概率的情况
+在上面的例子中有2个网络，所以无线电参数有4个集合:{0},{1},{2},{1,2}, 这四个集合占的面积比例分别为Pi，P2，P3，P4。用户在这个区域的每个点出现的 概率都相等，数据库认为面积比例最大的无线电参数是整块区域的无线电参数, 而在上图中参数{1}的比例最大，所以基站认为整个区域的参数就是{；1}。于是用 户在这块区域的错误概率就是：
+1 一 max pj
+i
+假设在栅格i的错误概率为久,（这是个条件概率，条件是用户出现在栅格/■）» 现在在整块区域思考问题：假设用户在整块区域上每个点出现的概率都相等，于 是用户在栅格，•出现的概率为兰，于是用户在整块区域的错误概率，作为一个全
+S	咽
+概率，可以展开如下。
+2 月产maxp,	（2-22）
+,=i S ,=, S i 丿丿
+其中丹是在栅格，•中参数集合丿占的比例，s,是栅格，•的面积，S是整个区域 的面积。错误事件可以定义如下：用户没有出现在栅格里比例最大的区域。设栅 格i里比例最大的区域是驾（下标丿代表这个区域的第_/个参数集合），用户出现 的区域是F,则用如下的随机变量描述一个错误事件：
+（1 P」R,
+E = \n n n	（2-23）
+0 P = Rj
+且有Pr{E = 0}=p〃.，Pr{E = l} = l-%。用户出现的区域也是一个随机变量，
+且有Pr{P =灼}=为。
+下面用一种新的思路寻找错误概率（无线电参数误差）和地理炳的联系，本
+49
+文有Pr{E = 0} = max构，Pr{E = 1} = l-max巧。香农在推导燜公式的时候使用 了三条公理，本文'使用第三条公理[2-42]o'可以发现：使用第三条公理容易证明 定理2-3。用户所处的区域接收到错误认知信息的概率，就是用户落在&之外的 概率，不失一般性，设；=1,于是整个事件分支如下图所示。
+
+现在设一个随机变量R表示用户随机的位置所在的区域，于是这个随机变量 的概率分布为:
+Pr {/? = &} = §
+其中s；为第左个区域的面积，S；是第』•个栅格的面积。计算随机变量R的嫡, 利用香农炳的第三条公理，可以得到：
+=H(P,) + M(忐7, .•.，忐7)< H(p°) + p」og ® 一1|
+于是，一步就得到定理2-3。
+空间维度频谱嫡H的下界也可以使用无线电参数误差的函数表示，但是在之 前本文需要一个引理，这个引理由Feder和Merhav在参考文献[2-31]中给出，用 错误率的函数描述了嫡的下界，如下：
+引理2-1 ([2-31])：嫡龙的一个下界可以由错误率「的函数给出，即h*),
+并且。(才)的表达式如下:
+50
+
+
+根据文献[2-31],是〃的单调递增函数，并且是〃的凸函数。因此，基 于引理2-1,本文有如下的定理：
+定理2-4：空间维度频谱燜H的下界可以用无线电参数误差月的函数表示:
+(2-27)
+证明：根据引理2-1,令h = Hi, n - pe j,本文有:
+HN 臥PG
+因此整个区域的空间维度频谱炳如下：
+1 M	1 M
+因为住）是耳,,的凸函数，所以H的下界如下:
+
+
+
+其中（b）利用了 Jensen不等式和函数。（布）的凸性。
+结合定理2-3和定理2-4,本文有如下结论：
+(2-31)
+
+这就建立了空间维度频谱嫡H和无线电参数误差已的联系，由于函数。（*）和 〃（*）都是增函数，由此就可以知道当H增加（减小）的时候，P,也会增加（减
+51
+小）；同理，当Pe增加（减小）的时候，H也增加（减小）。
+上面的分析都是基于均匀栅格划分进行的，在实际中，因为某些栅格的无线 电参数是一致的，所以可以选择性地合并一些栅格。于是，就有必要分析栅格融 合操作，即将两个或几个栅格融合成一个的情况下，空间维度频谱燔和无线电参 数误差的变化，可以得到下面的定理。
+定理2-5：融合任意两个栅格，整个区域的空间维度频谱炳不减小。
+证明：不失一般性，假设栅格1和栅格2融合成一个栅格。对于栅格i,它 里面的无线电参数分布为：pn,Pi2,.：,piN，其中N是无线电参数的种类数目， 并且栅格I•的面积是异。于是栅格1和栅格2融合以后一个栅格以后，这个新的 栅格的无线电参数分布为：
+S)Pll + S2P2I S[pn +S2P22	S\P\N + S2P2N
+S[ + S2 S] + S2	S] + s2
+因为嫡函数是凹函数，于是本文有:
+爲77（0皿,...,Pm） +金反（/"〃，…，知）
+5P11 +叫口21 S|P12 +$2「22
+S] +$2	§ +$2
+因此有:
+S[H[ +$2丑2 < （，1 + S2）H（Pi，P],..., Pn）
+在融合之前，整个区域的空间维度频谱矯为：
+M
+YH.
+h_s}H1+s2H2^ '
+~ S S
+其中S是整个区域的面积。在融合之后，整个区域的空间维度频谱炳为:
+M
+yn
+H 一(S| + $2	P2，. .Pn ) * ,=3
+_	=	S
+根据公式（2-35）,本文得到H<H',因此得到“融合操作不降炳”的结论。
+#
+根据对偶性，本文可以得到下面的结论：
+定理2-6：分割任意一个栅格，不管以什么方式分割，整个区域的空间维度 频谱炳不增加。
+证明：略，和定理2-5的证明过程类似。
+#
+52
+
+根据空间维度频谱炳H和无线电参数误差月的关联关系，本文可以得到融 合操作不减炳的结论，同时融合操作可能会增加错误率；同理，本文可以得到分 割操作不增燜的结论，同时分割操作可能会减少错误率。下面讨论一个特殊情形: 融合无线电参数相同的区域，那么整个区域的嫡和错误率是如何变化的。
+定理2-7：融合无线电参数分布完全相同的两个栅格，整个区域的嫡不变。
+证明：不失一般性，假设“参数分布完全相同”的两个栅格为栅格1和栅格 2,且它们的炳为ZT,则融合前整个区域的炳是：
+M
+SiH，+ S2H，+ £sjHi
+H, =	——
+1	S
+注意到鸟=$2,则融合后整个区域的炳为:
+M
+(S|+S2)H' + £sH・
+h2 =	——
+2 S
+于是有h^h2
+#
+定理2-7要求融合前两个栅格的无线电参数分布完全相同，这个要求实际上 比较强。如果仅仅要求融合前两个栅格的无线电参数相同，那么有下面的结论：
+定理2-8：如果两个栅格具有相同的无线电参数,那么融合这两个栅格以后， 整个区域的无线电参数误差不变。
+证明：不失一般性，仍然假设两个可融合的栅格为栅格1和栅格2,并且这 两个栅格的无线电参数相同。在融合之前，整个区域的无线电参数误差为：
+S 血,1 +S2Pe,2 +£异久,
+；=3
+S
+其中s,是栅格z的面积，S是整个区域的面积。栅格1和栅格2融合形成的 新的栅格的无线电参数误差为:
+二 S+S饱,2
+用新栅格的面积加权，栅格1和栅格2融合以后，整个区域的无线电参数误 差为：
+M
+（貝 +^2）A,„ew
+P>	— = P。	"A）
+53
+于是定理得证。
+# 综合前面两个定理，知道如果融合的两个栅格的无线电参数分布一致，则融 合前后整个区域的炳不变，否则融合后嫡变大。如果融合前两个栅格的的无线电 参数相同，那么融合前后整个区域的无线电参数误差不变。
+2.2.2时间维度认知信息
+在上一节，本文考察了空间维度的认知信息表征及其数学性质。在这一节中, 本文考察时间维度的认知信息。时间维度的认知信息是认知无线网络研究的主要 内容，认知无线电的“检测-接入”方式主要利用的即是时间维度的认知信息。 在本节中，为了与上一节对比，本文使用相同的变量符号。
+2.2.2.1时间维度认知信息表征方法
+在这一小节里，本文从时间维度观察空闲频谱信息，即时间维度认知信息。 如图2-5所示，总共有K个主用户，每个主用户在不同时刻的频谱占用情况用一 条曲线表示，曲线的纵轴有两个值，即0和1,其中0表示主用户空闲（主用户 频谱可用），1表示主用户活动（主用户频谱不可用）。
+
+
+
+与上一节类似，本文仍然用一个二进制数R（i,t）表示主用户z•在时刻，活动与
+空闲，且表示如下:
+
+一共有K个主用户，于是对所有的主用户来说，可以用一个十进制数来表示 在时刻7的频谱资源占用信息，如下：
+I(f) =支	(2-44)
+k=l
+其中K是主用户的个数，可以发现，在/时刻的认知信息1(。有N = 2k个取 值，即1(f)e{0,l,2,...,N-l}。对于一个特定的时刻，认知信息的定义是简单的， 下面对一个时段来定义认知信息。如图2-5所示，本文将整段时间离散化为M 个时间窗T},T2,...,Tm ,其中7；也表示第1•个时间窗的长度。
+定义在时间窗7；内部，认知信息为，的无线电参数所占的时间长度比例为如 于是主用户在时间窗7；的认知信息(频谱状态)定义为：
+X, = arg max py	(2-45 )
+在整个时间窗7；内部，有的时刻认知信息可能不是X,，于是认知信息表征误 差为：
+Pej =l-max Pv =1 - Pix,	( 2-46)
+上式说明：即使频谱检测的结果是完美的,次用户在使用主用户频谱的时候 仍然可能犯错。如图2-5所示，对于主用户1来说，在时间窗7；的开始，次用户 检测到主用户是空闲的，于是在整个时间窗幻，次用户将使用主用户的频谱，但 是随后主用户在绝大多数时间处于活动状态，于是次用户就会干扰主用户，这类 似频谱检测里面的“误检”。同理，对于主用户2,在时间窗4的一开始，次用 户检测到主用户2是活动的，于是次用户就停止传输，但是在时间窗7；的绝大多 数时间主用户是空闲的，于是次用户就浪费掉了通信机会，这类似频谱检测里面 的“虚警”。因此，即使次用户的频谱检测是完美的，仍然有另外形式的误检和 虚警的存在。本文使用“错误概率”来统一地衡量这种错误，对于整个时间段来 说，认知信息表征误差概率为：
+M
+□	(2-47)
+其中% 呉是第，.个时间窗占整个时间段的时间比例，在本章中，本文假设 T
+次用户的检测周期是均匀定长的，于是有丄=丄,V3
+T M
+2.2.2.2时间维度频谱蜻
+与空间维度频谱炳类似，为了研究主用户频谱状态的动态特性，本文研究在
+55
+时间维度的频谱炳（简称为“时间炳”）。本文将“时间维度频谱炳"作为频谱占 用状态不确定性的一种度量。下面给出时间维度频谱炳的定义。
+在时间T,时间维度频谱焼定义为一个“嫡率”，即单位符号的炳，形式如下：
+H =』H（Xi，X2，...,Xm）	（2-48）
+由于每个符号羌的独立性，在时间r的炳可以简化如下:
+(2-49)
+其中是时间窗7；的频谱占用状态的炳，定义如下:
+(2-50)
+其中N = 2K是主用户频谱状态的个数，灼是在第i个时间窗中主用户第丿个 状态的时间比例。
+2.2.2.3时间维度认知信息的数学性质
+本文分析影响时间维度频谱炳的各种要素，包括系统参数和栅格操作，并得 到下述定理。
+定理2-9：对于单个频带的情形，固定长度的时间『被分割为归个时间窗,
+,其中M是时间窗的个数，且有limH = 0。
+M—8
+证明：本文将主用户的活动状态用排队论来建模，因为排队论对主用户的到 达、服务、离开等过程描述得很清楚，可以更加细致地建模主用户的活动状态。 对于单频带的情形，本文使用M/M/1排队论模型来建模主用户的活动状态，主 用户系统状态转移图如下所示。
+
+主用户业务的到达是一个泊松流，到达率为人；主用户的服务时间（即占用
+频谱的时间）服从指数分布，参数为丄。对于一个长度为3的时间窗，标记在时
+U
+间$之内到达的主用户个数为M；标记在时间$之内离开的主用户个数为
+56 主用户频带的状态可以在0 （闲）和1 （忙）之间切换，如果3足够小，根据生 灭过程的理论，频谱状态在时间少之内从0转向1的条件概率如下：
+旳 0}=眾 +。0）	（2-51）
+其中。0）是比3更高阶的无穷小量。同理，根据生灭过程的理论，频谱状态 在时间5之内从1转向0的条件概率如下：
+户{0|1} = 〃3 +。（$）	（2-52）
+对于M/M/1排队模型，频带被n个主用户占用的概率为：
+pn = pn（y-p）,n^Q,\,2,...,其中p = -o因此，在时间3之内主用户的状态发生
+A
+改变的概率如下：
+J = P°P{110} + P】P{011} = 2（1 -£）舫 +。（5）	（2-53 ）
+对于等长的时间窗，它的状态改变概率&次，是相同的。且当的时候， / = —>0,因此进一步有4/Ege =。（。）	（土'） T 0。因为主用户的频谱有两
+个状态，因此有J7, <log（2） = lo对于M个时间窗来说，平均地，状态发生改变 的时间窗的个数为肘* Pf，这些时间窗的：W非零，除此之外的时间窗的炳都	"
+是零。因此得到时间维度频谱炳的上界如下。
+=	（2-54）
+上式忽略了高阶无穷小量0（6）,因此H的上界是定理得证。
+但是为了给出一个更加完整的证明，研究时间窗长度S不是足够小的情形，在这 种情况下，划分时间窗）为更加小的时间窗 W其中Zt°°,所以 有可_0,楣=1,2,...,£。根据公式（2-53）,对于时间窗0，频谱状态在时间可之 内发生改变的概率为：
+丄宀冲-北	（2-55）
+因此对于时间窗状态发生改变的概率为：
+Change =】- （1 - Pchange,!）	（ 2-56 ）
+57
+当£趋于无穷大的时候，有:
+少=艷1-（1-乌"
+
+
+(2-57)
+
+
+
+因此（2-53）是（2-57）的特例，即当时间窗$足够小的时候，仅保留级数
+
+
+
+逼定理知道时间维度频谱嫡当M趋于无穷的时候，嫡趋于0,定理亦得证！
+上面定理说明当时间窗无限小的时候，认知信息的不确定性可以降为0,即 认知趋于完美。但是上面的证明需要一个比较强的假设，即〃足够大，$足够 小。这个条件是相当强的，因为一般都不会选择足够小的检测周期，所以上面的 定理只是描述了时间维度频谱嫡一个渐进意义上的行为特征。基于定理2-9补充 的证明可以得到结论：在时间窗比较大的时候，时间窗内状态改变的概率和时间 窗长度成负指数关系。在时间窗比较小的时候，时间窗改变的概率和时间窗成线 性关系,但是嫡随肱的增加总是趋于0。
+将定理2-9与定理2-1比较，地理维度频谱焼随栅格数目M的衰减速度是 去），而时间维度频谱炳随时间窗数目M的衰减速度为。（%）（为了比较 的方便，本文将两个变量设为同一个字母）。注意到空间维度频谱燜是在二维环 境下定义的燜，而时间维度频谱燔是在一维环境下定义的炳。所以可以猜想：如 果在N维的环境下衡量频谱蝸，那么这个埔随M的衰减速度为0
+为了描述认知信息表征误差的变化，使用与定理2-9类似的证明方法，可以 得到下面的定理：
+定理2-10：时间维度认知信息表征错误概率为pe	，
+窗的个数，且有灿q。
+为了获得时间维度频谱炳丑和信息表征错误率0的关系，使用与定理2-3, 定理2-4类似的方法，可以得到下面的定理：
+58
+定理2-11：时间维度频谱焼H的上界可以用无线电参数误差已的函数表示：
+A
+HWH(W + Wog|N-l|*(W	(2-58)
+定理2-12：时间维度频谱焼反的下界可以用无线电参数误差已的函数表示：
+HR(z)	(2-59)
+其中函数“(*),。(*)的形式与定理2-3,定理2-4的定义相同。因此可以得 到类似的结论，即增大(减小)时间维度频谱嫡可以增大(减小)无线电参数误 差；反之，增大(减小)无线电参数误差可以增大(减小)时间维度频谱炳。同 理，根据定理2-5,定理2-6,可以得到下述结论。
+定理2-13：将一个时间窗以任何方式划分成两个，时间维度频谱爛不增加; 将两个相邻时间窗融合，时间维度频谱嫡不减小。
+证明：略，和证明定理2-5,定理2-6方法相同。
+#
+2.2.3空时表征的对偶性
+2.1.1节探索了空间维度的认知信息表征，2丄2节探索了时间维度认知信息 的表征，从中可以发现空时认知信息的表征具有很强的对偶性。下面从几个方面 论述。
+2.2.3.1空时认知信息表征错误的对偶性
+在时间维度认知信息表征错误主要有两类，一类是虚警，即频谱空洞存在， 但是检测结果是不存在，于是认知用户不接入频谱，这种情形会浪费频谱机会； 一类是误检，即频谱空洞不存在，但是检测结果认为频谱空洞存在，于是次用户 接入频谱空洞，对主用户造成干扰。这两类错误是衡量频谱检测性能的关键指标。
+另外，即使时间维度的频谱检测是完美的，因为频谱检测总是在一个时间点 上的检测结果，所以还是会发生类似“虚警”和“误检”的错误，以图2-5为例， 对于主用户1来说，在时间窗7；的开始，次用户检测到主用户是空闲的，于是在 整个时间窗4,次用户将使用主用户的频谱，但是随后主用户在绝大多数时间处 于活动状态，于是次用户就会干扰主用户，这类似频谱检测里面的“误检”。同 理，对于主用户2,在时间窗7；的一开始，次用户检测到主用户2是活动的，于 是次用户就停止传输，但是在时间窗4的绝大多数时间主用户是空闲的，于是次 用户就浪费掉了通信机会，这类似频谱检测里面的“虚警”。
+59
+另外，在空间维度也存在类似“虚警”和“误检”的认知信息表征错误，以 图2-1为例，栅格1的频谱可用信息为：
+｛主网络1的频谱不可用,主网络2的频谱可用,主网络3的频谱可用｝ 但是如果次用户出现在栅格1的A点，那么主网络1的频谱其实是可用的， 但是次用户接收到的来自数据库的认知信息说主网络1的频谱不可用，于是次用 户失去了一个频谱机会，这类似频谱检测里面的“虚警” (FalseAlarm)；如果次 用户出现在B点，主网络3的频谱是不可用的，但是，因为数据库发送栅格2 的大部分区域的无线电参数给次用户，因此次用户收到的认知信息如下：
+(主网络1的频谱可用,主网络2的频谱可用,主网络3的频谱可用)
+因此如果次用户接入到主网络3的频谱，就会干扰到主网络3的主用户通信, 这种情况类似频谱检测里面的“误检”(Missed Detection)。
+所以时间维度和空间维度的认知信息表征具有几乎相同的错误类型，所以对 空间维度和时间维度知信息的表征方法可以互相借鉴，互为补充。
+2.23.2空时认知信息表征方法的对偶性
+在空时认知信息表征中，描述频谱空洞存在的方法、定义无线电参数误差的 方法、以及定义时间维度频谱炳和空间维度频谱嫡的方法基本一致，并且得到的 结论具有很强的对称性，比如，在空间维度认知信息表征中，得到结论：
+整个区域的空间维维度频谱嫡为:丑=。(金)，整个区域的无线电参数误 差为:Pe = O(-y=r),其中M是栅格的数目。
+在时间维度认知信息表征中，得到结论：
+整个时间段的时间嫡的值为H =。$),时间维度认知信息表征错误概率为
+已=0(令7),其中M是时间窗的个数。
+考虑到空间维度是二维空间，时间维度是一维空间，在二维空间的表征误差 为p«=0(去)，在一维空间的表征误差就是孔=0(%［。
+另外，时间窗和栅格本就是一对对偶的概念，对于时间窗和栅格的操作也具 有相似性，比如在空间维度认知信息表征中有如下结论：
+60
+融合任意两个栅格,整个区域的空间维度频谱嫡不减小;分割任意一个栅格, 不管以什么方式分割,整个区域的空间维度频谱炳不增加;融合无线电参数分布 完全相同的两个栅格,整个区域的嫡不变。
+而在时间维度认知信息表征中有几乎相同的结论，只需要把上一段话中的 “栅格"换成“时间窗”即可。
+在认知信息表征中本文使用了一对概念，即嫡和错误率，而在空间和时间维 度认知信息表征中，炳和错误率的关系基本上相同，这也可以认为是空时表征对 偶性的例证。另外，在空间维度认知信息表征中本文提出了栅格融合的方法，即 使用不规则的栅格来表征整个区域的认知信息，而在时间维度认知信息表征中也 存在时间窗的融合，这实际上可以启发不等长周期频谱检测的研究。
+2.3认知信息度量方法
+在上一节中，本文证明了随着认知资源投入得越来越多，在空间，和时间维度 的频谱熠和无线电参数误差都会降低，并且得到一些对实际具有指导意义的结论。 然而，上面的认知都是假设为完美认知，而在实际中，由于噪声和干扰的影响， 认知是非完美的。在这一节中，本文考察在这种情况下认知用户获得的认知信息。
+2.3.1认知信息量的概念
+本文使用“认知信息量”来度量在非完美环境下获得的认知信，如其中“认 知信息量"的定义如下：
+认知信息量：在异构无线系统中，一个系统通过认知的手段，可以消除另一 个系统资源状态的不确定性，这部分消除的不确定性即是认知信息量。
+信息论的通信模型与认知过程的是有很多相似点和联系：在通信模型中存在
+“信源”，“信道”，“信宿”三个要素，信源和信宿共享一个符号集合（即符号集 合，比如。和1）,信源发信号，信宿检测，由于信号经过信道，受到噪声影响， 所以信宿的检测结果有一定的误差，即概率Pr[l 10]和Pr[0|l]非零（对于二元信 道来说）。在认知的过程中，存在“主用户”，“信道”，“次用户”三个要素，主 用户和次用户共享一个“码本”（即频谱状态集合），主用户占用或不占用频谱， 会无意中发出信号，次用户通过频谱检测获取频谱的状态信息。由于主用户的信 号经过信道，受到噪声影响，所以检测的结果有了一定的误差，即概率Pr[l|0]（虚 警率）和Pr[0|l]（误检率）非零。综上所述，本文将认知过程和通信过程建立 了一种联系，基于这种联系，可以用香农信息论来建模认知过程。联系二者的关 键是它们都存在“信号发送-信号检测"的过程。
+认知信息量可以在空间维度和时间维度来定义，本文在这里研究时间维度的
+61
+认知信息量。假设在时刻j,无线资源的状态是X,.,认知用户对这个状态的认知
+（检测）结果是X。考察N个时刻，在这N个时刻的平均序列互信息为：
+勺（"2，...，歸祁，...，％）
+N
+= %H（X*...,Xn）	（2-60）
+-丄 H（X|,X2，...,xjK，匕,.•.，％）
+N
+这就是认知信息量的表达式，意义是在N个时刻的检测中认知用户消除的主 用户的平均不确定性，即认知用户获得的平均认知信息量。因为对时间维度的检 测来说，各个X,是相互独立的，所以各个匕也是相互独立的，于是上式等价于：
+1	1 N
+万/（*,入2，..,冬“,*,...,%）=万2】0試）	（2-61）
+如果进一步假设各个X,不仅独立，而且同分布，那么上式等价于：
+勺（X”X2，...，Xn；K 出,…,％）= I（X；V）	（2-62）
+N
+这就是认知信息量的最简表达式，其中X是主用户（资源）在任意时刻的状 态，y是认知用户检测到的主用户（资源）的状态。所以本文可以给“认知信息 量” 一个数学的定义，如下所示：
+1-I（X},X2,...,Xn-,YvY2,...,Yn）
+N
+1 N
+=而£丿0,北）	（2-63）
+=1（X；y）= H（X）-H（X\Y）
+其中X是主用户的状态，r是认知用户对X的认知（检测）结果，H（力是 X的炳函数，H（X\Y）是条件炳。条件炳H（X|F）非零，主要是因为检测器的非 完美带来了虚警和误检。
+考虑到频谱检测的非完美，频谱检测的错误概率存在，因此有黄0, 且错误概率定义如下。
+Pe=Pr{X 殺}	（2-64）
+一般来说x和y可能有多个状态，但是为了简单起见，本文在这里只研究x 和y具有两个状态的情形，即0 （频谱空闲）和1 （频谱占用），用来表征频谱占 用的状态，因此错误概率可以表达如下。
+Pe=PoPf+PlPm	（2-65）
+62
+
+其中为是节点处在状态0的概率，P1是节点处在状态1的概率，P/是虚警 概率，P“是误检概率，因此认知信息量可以表达如下。
+7（JT；y）= H（X） - H（X \Y） =	| X）
+= -£g,logg,+ Z Z P（x）p（*|x）logp3|x） （2-66）
+/6（0,l）	xe{O,l} ye{O,l）
+其中％0表示了节点检测到状态0和状态1的概率，并且表达如下。
+q° = PoQ-Pf） + PiPm	（2-67）
+91 =P0Pf + P^-Pm）	（2-68）
+2.3.2认知信息量的性质
+在本节中，本文通过将认知信息量作为能量检测、协作检测等的性能参数, 来研究认知信息量的数学性质。下面分别研究能量检测和协作检测中的认知信息 量的性质，以及认知信息量与网络性能的联系。
+2.3.2.1能量检测中的认知信息量
+当主用户的信号*（，）通过信道增益为h（t）的无线信道传输时，次用户接收到
+的主用户信号为贝7）,这个信号服从二元假设检验：K （主用户空闲），為（主 用户活动），如下所示。
+
+
+
+其中火7）代表接收信号的第，.个釆样，讽是加性高斯白噪声，假设w缶是高 斯随机变量，均值为0,方差为B，也就是说，w（i）〜”（0，E，）。检验统计量是
+1 N ,
+r=±y|Xz）| o假设x（j）是复频移键控（PSK）信号，加⑴是复高斯信号，于 N怀' 1
+是误检概率p,"= Pr{H° I和虚警概率pf = Pr{0 I Ho}在文献［2-36］中给出:
+于是错误概率即是。伉財)，这就是引理2-2的结论。
+根据引理2-2,本文得到下述定理。
+定理2-14：条件炳//0|丫)的取值为0(*5),其中N是样本的个数，k是 一个正常数。
+证明：根据Fano不等式，可以得到：
+H(X\Y)<H(pe) + pe\M-l\
+其中M是随机变量X和V的状态数，根据引理2-2,可以得到：
+64
+
+
+亿=®(e2)
+因此有 H(X|T) = O(NeF)。
+#
+上述定理和引理的前提是样本数2趋于无穷大，而在实际应用中样本数N 是有限的，因此就需要调整频谱检测的参数，比如检测门限，来优化频谱检测的 性能。这个优化问题也可以从认知信息量的视角来建模，这在之后的小节中研究。 下面本文研究协作检测中的认知信息量。
+23.2.2协作检测中的认知信息量
+假设有M个节点来协作检测一个频带，且检测结果为九，那么协作 检测获得的认知信息量如下。
+1（X；K，匕,
+M
+= £】（K；x|%,上 2，“・，X）
+，=i	（2-80）
+=」（E；x）+i（&；xik）+/0；x|*，k）+...+/（%；x|%t，...，k）
+（。）
+21（匕;X）
+其中上式中不等式（a）的右端是单点检测获得的认知信息量，而不等式（a） 的左端是协作检测获得的认知信息量，所以上述不等式阐明了如下结论。
+引理2-3：协作检测获得的认知信息量大于单点检测获得的认知信息量。
+因此本文可以定义“协作增益”为协作检测获得的认知信息量与单点检测获 得的认知信息量之差，表示如下。
+G = /（X；E，匕,...，匕）一I（X；K）	（2-81）
+关于协作增益G与参与检测的节点数M的关系，本文有如下引理。 引理2-4：协作增益是M的增函数。
+证明：利用（2-80）,本文可以得到如下关系：
+10;匕，匕,...，匕）-10好匕,
+所以协作检测的认知信息量是参与节点数〃的增函数，进一步可以知道协 作增益也是参与节点数M的增函数。
+#
+引理2-4说明了通过增加参与检测的节点数可以提升协作检测的认知信息量,
+65
+但是在实际应用中节点数不可能无限多。对于协作检测里的K-out of-M准则， 节点数M是固定的，本文可以通过优化K来优化协作检测的认知信息量，这个 内容在后续的小节中讨论。
+2.3.23认知信息量与网络性能之间的联系
+
+图2-8主次系统共存的活动模型
+主用户系统的状态转移图如图2-7所示，其中主用户的到达和离开可以用泊 松过程建模，到达率为不,离开率为标记主用户系统的空闲状态为“0”， 主用户系统的繁忙状态为“1",那么状态0和1的稳态概率分别是％和历。这 个Markov链的稳态方程如下。
+(2-83) (2-84)
+因此本文有：fU。定义系统的频谱利用率为状态1的
+66
+
+稳态概率，即〃=4 =了丄_,这是4的增函数，是与的减函数。
+"p	p	p
+考虑主次系统共存的模型，主次用户共享相同的频谱和地理空间，当主用户 到达的时候，次用户要自动退让，以避免对主用户的干扰。当次用户要接入频谱 的时候，次用户先检测,后接入，因此主次系统共存的状态转移图如图2-8所示。 其中状态“S”和“P”表示只有次用户或者主用户占用频谱，状态“2"表示主 次用户同时占用频谱，这时它们会相互干扰，这种情况是因为次用户的频谱检测 发生了误检，状态“0”表示频带是空闲的，主次用户都不占用频谱。状态』•的 稳态概率标记为％,其中ie{0,S,P,2}o次用户的到达和离开可以用泊松过程建 模，其到达率和离开率分别标记为％和/。
+在状态“2”，主次用户发生了碰撞，这时主次用户工作在同一个频段上，会 互相干扰，因此本文定义状态“2”的稳态概率为干扰概率，标记为閱=刀2。定 义状态“S”和“P”的稳态概率之和为频谱利用率(或者频谱效率)，标记为 +兀、。图2-8所示的Markov链的稳态方程如下。
+气(人(i-P/)+4>)=兀s%
+(勾 + ■ ) = %■(1 - P/)+ 沔今
+(Aa,+"p )=气 4+W+w
+兀2(%+“p) = "Pm
+% + 兀s + "p + ”2 = 1	=
+因此本文可以求解稳态概率如下。
+_ "pSpSp + /) +，以必,+% +为))
+勿0 =	1 _	-
+(人卩 + uP )(弓+爲一々P/+利+up+us)
+=	4"p(4p〃, +(1-0)(人 A, +匕 +%))
+S (4p +"p)(弓 + 人一人P/ +勾)(人 +Up +M5) 头_	似与+%)
+"(弓+"p)(2、p",+%+",)  	 .	"p“，
+勿2 ■-'	"	1	■
+(4p+"p)(40,+%+",)
+经过一些变换，本文得到了干扰概率和频谱利用率的表达式如下： ,/	、如」Aa,+(i - P/)(人0"%+为))
+AP(% +MJ+	厂二一；
+,	~\Pf+us
+rj =
+"% Pl —兀2
+(爲+%)(人％+%+■)
+67
+
+其中〃'是主次系统共存时的频谱利用率，P/是系统干扰概率。当次用户的误 检概率Pm=0的时候，本文有：
+(2-89)
+这意味着当外=0的时候，主次系统共存可以提升频谱的利用率。但是频谱 利用率受制于误检概率心,，当p“,较大的时候，干扰概率乃也增加，频谱利用 率〃'将会变小。注意到〃'是亿„和右的函数，但是巧只是P〃,的函数，因此求解 方程(2-88),本文可以得到作为巧的函数，如下。
+(2-90)
+将(2-90)代入(2-66)中，本文得到认知信息量/(%;/)作为巧和七的函 数表达式。认知信息量和干扰概率的关系如图2-9所示，其中本文固定Pj的值。 如图2-9所示，干扰概率是认知信息量的减函数，即当认知信息量增加的时候, 干扰概率会降低。干扰概率是认知信息量的凸函数，因此当认知信息量较小的时 候，认知信息量的增加会使得干扰概率下降较快，但是当认知信息量较大的时候, 认知信息量的增加会使得干扰概率下降较慢，也就是说，认知信息量较小的时候 边际效用较大。在图2-9中，当P,较小的时候，干扰概率较大，这是因为巧是pm 的增函数，且当『/.较小的时候，p”较大，因此使得干扰概率较大。
+0.035
+
+0.005
+°0	0.1	0.2	0.3	0.4	0.5	0.6	0.7
+认知信息量
+图2.9认知信息量和干扰概率的关系，参数配置为Ap =	= 0.5 , up = us = 1, pQ = 0.6
+注意到频谱利用率7/和认知信息量都是pm和丹的函数，因此本文固定pj , 解方程(2-87),得到p〃，作为〃'的函数表达式，接着将p〃，的表达式代入(2-66),
+
+得到认知信息量关于频谱利用率〃'和虚警概率右的表达式。在不同的p,值之下, 认知信息量和频谱利用率的关系在图2-10中展示。同理，在不同的p〃值之下， 本文在图2-11中给岀认知信息量和频谱利用率的关系。
+
+图2-10认知信息量和频谱效率〃'的关系，固定P,的值，参数配置为\ - 0.5 ,
+匕=us = 1, p0 = 0.6
+
+
+
+4 0	0.1	0.2	0.3	0.4	0.5	0.6	0.7	0.8
+认知信息量
+图2-11认知信息量和频谱效率〃'的关系，固定的值，参数配置为\ - 0.5 ,
+Up - ws. = 1, Pq = 0.6
+在图2-10和图2-11中，频谱利用率是认知信息量的增函数。另外，频谱利 用率是认知信息量的凹函数，这意味着当认知信息量变大的时候，频谱利用率增 加的速度越来越慢，即认知信息量的边际效用在减小。在图2-10中，当虚警概 率P.较小的时候，频谱利用率较大，这说明P,对〃'有主要影响，因为右减小 的时候会相应地增大。图2-11再次验证了这个事实，因为在图中当p“,较大 的时候，P,较小，频谱效率较大。
+在这个小节中，本文展示了认知信息量和网络性能参数之间的关系。认知信 息量的增大意味着认知用户对环境的资源信息认识得更加清楚(比如通过频谱检 测)，因此随着认知信息量的增加，网络性能参数将会得到提升。在这个意义上， 为了优化网络的性能参数，比如提升频谱利用率，降低干扰概率，本文就可以以 认知信息量作为目标函数进行优化。下一部分将讨论这个主题。
+2.3.3认知信息量的应用
+这一部分使用认知信息量作为目标函数来优化频谱检测里面的参数，例如优 化能量检测的检测门限和协作检测中K-outof-M准则里面的K值。
+23.3.1决定能量检测的门限
+之前的研究一般使用Neyman-Pearson准则或者Bayesian准则来优化能量检 测的参数，注意到能量检测的判决门限影响虚警和误检概率，因此本文提出认知 信息量准则来获得最优的检测门限，如下所示。
+Maximize /(X;V)
+£	(2-91)
+Subject to
+其中孔和与分别是误检概率和虚警概率的上限，£是检测门限，】(x；r)是 认知信息量。
+决定协作检测K-out of-M准则的K值
+为了表达的方便，本文用下面的标号来表示协作检测的认知信息量；
+A M
+(2-92)
+/=|
+M △
+其中= y是各个节点的检测结果在融合中心的融合结果。在K-out of-M f=l
+准则中，标记A为判决主用户存在的次用户节点数目，那么次用户的判决策略为:
+70
+[A"判决％	(2一93)
+[A<K判决％
+标记协作检测中每个次用户的检测概率和虚警概率分别是0和Q,,于是 K-out o「M准则下的协作检测误检概率和虚警概率分别是：
+M
+P"=l -	(2-94)
+i=K
+M
+Pf=£B(i；M,Qf)	(2-95)
+1=K
+(ri\
+其中 B(k;n,p)= , /(l-p)i。将(2-94)和(2-95)代入(2-66),本文 U丿
+可以得到在K-out of-M准则下的协作检测的认知信息量，然后类似(2-91),本 文通过最大化认知信息量来优化K值。本文釆用文献[2-37]中的Neyman-Pearson (NP)准则与本章的认知信息量准则作比较。
+关于K-out of-M准则，本文有下述定理。
+定理2-15：对于协作检测中的K-out of-M准则，有关系：lim 1(X;V) = H(X)。
+A/—>eo
+证明：这个定理表明：当参与检测的节点数趋于无限大的时候，协作检测可 以将主用户的不确定性完全消除，从而获得最大的认知信息量。根零心极限定 理(Central Limit Theorem , CLT ),贝努利分布B(n, p)可以用正态分布 "(叩，叩(l-p))来逼近。当〃足够大的时候，本文有：
+Pf = X B(i- M,Q» = Q" K_M0_	(2-96)
+n =1-Y B(i; M,Q.) = Q( MQd~K )	(2-97)
+令k = M 0；』,因为本文始终有0 > Qf,因此有丄巫Pf= Km必,=0 , 而错误概率为：
+Pe=PoP,+PlPmT。	(2-98)
+根据 Fano 不等式，当n->oo的时候，H(X\Y)^0, I(X-,Y)->H(X),也就 是说，次用户可以消除主用户状态全部的不确定性。
+#
+71
+2.4认知信息传递方法
+为了高效利用环境中的频谱空洞，需要认知信息准确快速地传递。在文献 ［2-18］［2-22］中，认知数据库中认知信息的传递方法得到了研究。需要注意的是， 空间维度认知信息多是通过数据库的方法获取，而时间维度认知信息多是通过频 谱检测的方法获取。在这一节中，本文研究空间维度认知信息的传递方法。
+栅格是用来归类和存储认知信息的，是精确、高效地传递认知信息的关键。 但是现有文献中关于栅格管理策略的研究很少。在文献［2-10］,栅格划分问题被 第一次提出，并且作者建议采用大小可变的栅格。文献［2-38］和［2-39］研究了最优 栅格划分策略，［2-38］考虑了 GPS定位误差和多RAT重叠区的信息损失，一定 程度上提高了认知信息表征的精度和传递效率。［2-39］逻辑地聚合了无线电参数 相同的栅格，重新设计了认知信息发送帧格式。但是文献［2-38］和［2-39］都没有从 地理上聚合栅格，并且更严重的问题是，［2-39］延长了认知信息发送帧，所以收 发链路需要更大的带宽来通信。但是如果从地理上聚合栅格，那么不仅栅格数量 会下降，而且不会增加认知信息的帧长，所以会提高认知信息的传递效率。
+空间认知信息的传递问题在2.2.1节中已经初步介绍，次用户访问认知数据 库的方法主要有点播和广播两种方式。在图2-1中，栅格是矩形，终端分布在整 个区域。认知数据库将认知信息以广播或者点播的方式发送给终端。在广播模式 中，所有栅格的认知信息被周期性地广播下去，被相应栅格里的终端接收到。认 知信息的头部有相应栅格的地理信息，终端接收到认知信息时先取出栅格的地理 信息，然后基于自己的地理位置进行判断，如果终端在栅格内部，就接收，否则 丢弃。在栅格数量较大的时候广播模式的平均时延较大，但是广播模式的时延不 受终端数目的影响。
+点播模式既有上行链路又有下行链路［2-10］,在传统的点播模式中，终端获 取自己的地理信息，发出请求（包含用户的地理位置信息），然后数据库服务器 响应请求，将相应的认知信息发送给终端。点播模式在用户请求速率高于某个门 限的时候平均时延会无限大，即点播模式的信息传输时延对用户数目敏感，这对 应于一个不稳定的排队系统。另外，考虑到用户的移动性，尤其对于高速移动的 用户，由于数据库处理和传输信息的时延，有可能用户接收到的认知信息是自己 上个位置的认知信息，而非现在位置的认知信息，即认知信息的传输出现了错误。 本文提出一种基于栅格划分的认知信息传输策略：当次用户处于栅格i内部的时 候，它访问认知数据库获得栅格i的认知信息，之后只要次用户没移动出栅格 它就使用原来的认知信息。而一旦次用户移动出去栅格i,进入到一个新的栅格， 它就需要向数据库请求新的认知信息。直观地，栅格越小，用户获得的认知信息 的错误率越小，但是用户需要频繁向数据库请求信息，因为用户很容易移动出原 72
+
+来的栅格。反之，栅格越大，用户获得的认知信息的错误率越大，但是用户向数 据库请求信息的频度下降了，这样可以提升数据库的信息传递效率。因此，认知 信息的发送效率和错误率存在一个折中关系。
+在这部分，本文提岀了动态自适应的栅格聚合策略，可以从地理上聚合栅格, 从而可以在不增加无线电参数误差的情况下，极大地减少栅格数量。本文发现, 当栅格数量减少以后，可以直接降低广播模式的传输时延；对于点播模式来说, 在不增加无线电参数误差的情况下，栅格聚合算法可以降低用户向认知数据库的 请求频度，提升数据库的信息发送效率。
+2.4.1理论分析
+为了分析认知信息传递效率和传递正确性之间的折中关系，本文首先寻找栅
+格数量和无线电参数误差的联系。在定理2.2中，本文已经得到了无线电参数误
+
+
+
+面，本文研究无线电参数误差和栅格数量近似精确的表达式，并给出如下定理。
+定理2-16：整个区域的无线电参数误差表示为栅格数量M的函数为：
+化="焉	以-99)
+尊，
+并且右=生业竺_一 ，其中g是所有网络的边界的长度，L是
+12刀
+整个区域的边长，tanh"(z)是反双曲函数(Inverse Hyperbolic Function),定义
+为：tanh-'^-lln —,注意到k是一个常数，主要由&和Z决定。
+2 l-z
+证明：在栅格数目M足够大的时候，栅格的尺寸很小，这时切割一个参数不 纯净的栅格的主网络边界可以近似为一条直线，如图2-12所示。本文忽略多个 网络的边界切割一个栅格的情形，因为当M足够大的时候，这类事件发生的概 率很低。两个参数x和。决定了一条直线，如图2-12所示，X = x是点A到网络 边界的距离，是网络边界和正方形所有边长夹角的较小者。注意到无线电 参数误差是图2-12中较小的三角形的面积，根据对称性，我们认为矛的最大值 为(Xi +x2+x3)/2.X和€)都是均匀分布的随机变量,其概率密度函数(Probability Density Function, PDF)如下。
+f0(0) = -,O<9<^	C2-100)
+7T	4
+73
+
+在栅格内部，网络边界的长度为:
+xtanQ + xcot。	x<x}
+
+其中函数[*]+= max{0,*}，则这个栅格的无线电参数误差为图2-12中阴影区 域的面积占正方形面积的比例，表达如下。
+
+£ COS 0	2
+其中落在栅格内部的网络边界的长度&和无线电参数误差p卽•的期望值如下。
+74
+
+
+虾质(1_*0.7935,
+(2-106)
+
+
+
+
+
+(2-107)
+其中 tanh_1（z）是反双曲函数（Inverse Hyperbolic Function）,定义为：
+11 I 7
+tanh-'（z） = -ln —o本文求解参数K,即无线电参数不纯净的栅格数目。使用
+21-z
+公式（2-106）,为了简便起见，本文假设M个栅格里面前《个栅格的无线电参
+数不纯净，则本文有如下结果。
+（。）1 & 竹）1	、
+破]=土举 *	（2-108）
+其中（。）是基于大数定理，（A）是基于这个事实：无线电参数不纯净的栅 格覆盖了所有网络的边界，所以落在每个栅格里面的网络边界的长度和是总的网 络边界长度。根据公式（2-108）, K的值可以估计如下。
+K = -^— =—亍~~~竺	（2-109）
+E[&]-应 tanhp 顼片
+假设前K个栅格有不纯净的无线电环境，那么整个区域的无线电参数误差为: 己=#1＞，=令切處	（2-110）
+M M
+其中（c）是基于大数定理，将（2-109）中K的值以及（2-106）中研/,]的 值代入上式，得到整个区域的无线电参数误差和栅格数目的关系式：
+1 ^-Jn64__	_	（2-111）
+y/M 12勿 -4V2tanh_l（l-v2）Z
+其中S是所有网络边界的长度，A是整个区域的边长，M是栅格的数目，这 就是无线电参数误差的逼近表达式。
+#
+75
+
+定理2-16再次验证了定理2-2的结论，定理2-2证明了整个区域的无线电参
+
+个更紧的界。定理2-16给出了无线电参数随着栅格数目M的变化，于是为了达 到一个可以容忍的无线电参数误差，本文可以选择一个适当的M值。而从定理 2-8可以知道:如果两个栅格具有相同的无线电参数，那么融合这两个栅格以后， 整个区域的无线电参数误差不变。这为栅格融合算法提供了依据一一可以将无线 电参数相同的栅格融合在一起，这样会使认知信息的传输效率更高，且不会降低 无线电参数误差！如图2-1所示，栅格3和栅格4即是融合后的栅格。接下来本 文详述栅格融合算法。
+2.4.2算法设计
+认知数据库主要是通过信道模型来预测每个点处的信号强度，从而描绘出主 网络的覆盖边界（本文理想化地假设主网络的覆盖边界是正圆）。在认知数据库 构造完成以后，就可以实行基于栅格的认知信息发送方案。为了获取认知信息， 次用户将自己的地理位置信息发送给认知数据库，然后数据库响应次用户的请求, 将次用户所在栅格的认知信息发送给次用户，然后只要次用户还在这个栅格内部, 就不需要重复请求数据（以降低认知数据库的负荷），而一旦次用户移动出这个 栅格，就需要重新向认知数据库请求它所在栅格的认知信息。为了提升认知信息 的传递效率，相邻的无线电参数相同的栅格可以融合在一起，这样也不会降低认 知信息的表征误差，同时会降低次用户请求认知信息的频度。
+在上一节，本文得到定理2-16,描述了无线电参数误差和栅格数量M的近 似表达式，发现无线电参数误差随着〃的增加而减小。当M的值比较大的时候， 数据库和次用户的负荷都比较大，因为对于数据库来说，它将面临来自次用户的 频繁请求，对于次用户来说，它将频繁请求认知信息，这会带来额外的开销。因 此，本文通过约束无线电参数误差来得到一个M的下界，当Pe</3的时候，将 （2-99）中已的值代入上述不等式，得到：
+/ \2
+M> /	甘 + 164 肉	顼	（2-112）
+、12（-戒 tanh-” 顼））列
+当整个区域被分割为个栅格的时候，整个区域的无线电参数误 差不会超过#。但是在这些栅格中仍然存在着认知信息冗余，即相邻的栅格有可
+76 能无线电参数相同，因此栅格融合显然可以降低认知信息的冗余，降低认知数据 库和认知用户的开销。下面设计栅格划分和融合算法。
+栅格划分和融合算法的目的是以尽量少的栅格覆盖整个区域，通过将相邻的 无线电参数相同的栅格融合，可以进一步减少栅格的数量，而不会增加无线电参 数误差。这里设计两个栅格划分和融合算法。
+在第一个算法中，整个区域先被均匀地划分为规则栅格，本文标记这步操作 为规则栅格划分(Regular Mesh Division, RMD),然后将相邻的无线电参数相 同的栅格进行融合，本文标记这个算法为规则区域划分-栅格融合算法(Regular Mesh Division and Mesh Fusion Algorithm, RMD-MFA)。在第二个算法中，一开 始认为整个区域是一个不合格的栅格，其中合格的栅格定义为无线电参数误差小 于一个门限的栅格，或者尺寸足够小的栅格(这时栅格的无线电环境几乎纯净了), 然后迭代地分割不规则的栅格，保留合格的栅格，这样当栅格被划分得越来越小 的时候，所有的栅格都会成为合格栅格。因为第二个算法采用了分形的迭代操作， 所以本文称之为基于分形的栅格划分(Fractal based Mesh Division, FbMD)。其 中FbMD可以单独使用，因为FbMD操作以后栅格的数量已经足够少了，不过 在FbMD操作之后，如果再进一步融合无线电参数相同的相邻栅格，那么栅格 的数量还可以进一步减少。因此，第二个算法标记为基于分形的栅格划分-栅格 融合算法(Fractal based Mesh Division and Mesh Fusion Algorithm, FbMD-MFA)o 下面详细描述这两个算法。
+2.4.2.1 RMD-MFA
+本文从算法描述和理论分析两个层面来介绍RMD-MFA算法。
+1)算法描述
+当整个区域被均匀地划分为个规则栅格以后，本文使用栅格融 合算法(MFA)来融合栅格。两个可以融合的栅格不仅要地理上相邻，还要具有 相同的无线电参数，其中无线电参数的定义在(2-6)中给出。如图2-13所示， 栅格［冲*|；工2，坊］和栅格［x3,y3；x4,y4］被融合成一个新的栅格，即栅格 minX”min乂；max改,max巧。其中栅格融合有两种方式，如图2-13所示，可以
+/=! ...4	/=1...4	/=1...4	/=1.„4
+水平融合和垂直融合。在本章中，如果栅格i和栅格j可以融合，本文标记为 “ meshj o meshj
+77
+
+如图2-14所示，在规则栅格划分（RMD）之后，栅格是以规则的次序存储 的，因此更加高效的数据结构可以应用在MFA算法中，以节省搜索时间。在图 2-14中，数组map存储一个栅格的右相邻和下相邻栅格的编号，其中0标记为 无效栅格。以数组皿决的第［•列为例，map［）,i］是栅格i的标号，map［2,i］是栅 格/的右相邻栅格的标号，map［3,j］是栅格［•的下相邻栅格的标号。因为相邻的 栅格是以规则的方式存储，所以搜索时间可以大大降低。
+算法的参数定义如下：整个区域被划分为个栅格，其中凡“ 是算法初始的栅格数量，每个栅格的无线电参数存储在数组［FL“中。MFA算 法在算法2-1中描述，其中关键的操作是在栅格融合之后更新相邻栅格的信息。
+算法2-1 RMD-MFA算法
+分割整个区域为个规则的栅格 初始化数组map, label <-true
+while label do
+label <— false
+for i = \ to Nnf do
+if tnap\\, z] 0 then
+Lr <— map[2, i]
+if 。0 & mes*	mes/农 then
+78
+map\2, i]	map[2, Lr],历年0
+label true
+end if
+Ld^mapl3J]
+if 4 二 0 & mesh, <-> meshL^ then map[39i] <-map\3,Ld], gp[l,Ld]<-0 label <— true
+end if
+end if
+end for
+end while
+2）算法分析
+在RMD-MFA算法中，栅格融合操作可以减少栅格的数量，其中相邻的宪线 电参数相同的栅格在算法中被融合。本文在下面的定理中探索算法的性能，即算 法可以将栅格数量降低多少。
+定理2-17：在RMD-MFA算法中，经过RMD,在MFA算法之前栅格的数 量如果是M ,那么经过MFA之后栅格数量的上界是（肥-N + 2）应=8（妬）， 即栅格融合算法可以将栅格数量从〃降为。（妬）。	嶽
+证明：栅格可以水平和垂直地融合，如果只是水平地融合栅格，就能泰得 MFA之后栅格数量的上界。在组合数学里有下述结论：
+N个凸的闭合图形（比如正圆）能将整个平面最多划分为N2-N + 2个部分。
+利用这个结论，进一步假设TV网络的覆盖区域是凸的，于是在一行栅格中 无线电参数的类型最多有N2-N + 2种，因此一行的应个栅格可以被融合为 N2-N+2个栅格。因为有应行栅格，所以经过MFA之后（假如只在水平方 向上融合栅格），栅格数量为（肥一；v +2）妬=。（历）。因为只考虑水平方向上 的栅格融合，所以这个数目是MFA算法之后栅格数量的上界。
+#
+2.4.1.2 FbMD-MFA
+FbMD-MFA算法主要分为以下几步：
+1）离散化处理
+把整个区域等分为NxN个矩形，其中# =	左为正整数。获取所有矩形
+中心点的坐标。因为矩形已经分得足够小，可以认为矩形里任意点的无线电参数
+79 和矩形中心点的一致，即矩形中心点代表了整个矩形。也就是说，这里的矩形是 最小的处理单元，在本章中称为“像素”。定义一个二进制变量M｛RAT„xiy)表 示在坐标(x,*)是否有RAT；:
+1如果在(x,*)检测到RAT,
+0如果在(x,y)没检测到RAT,
+利用上述的表达，在(x,y)处将所有RAT对应的二进制变量按照如下方式组 合，即得到一个刻画坐标(x,y)处无线电参数的变量［2-10］：
+T
+］(xj)=£M(R47；,x，V)x2'T	(2-114)
+/=!
+其中T是RAT的数量，每个像素中心点的无线电参数值，3,力被存储在一个 NxN的矩阵Gra里面，矩阵Gra可以近似描述整个区域上每一个点的无线电参 数。注意到1(x，X)是0到2『的整数。
+2)算法参数
+算法有三个主要参数：误差下限，最短边长和存储不合格栅格的栈。
+误差T7次.•记为＜7血。定义一个栅格的无线电参数误差(Radio Parameters Error, RPE)为：
+N
+/E = l - max｛性｝	(2-115)
+J Np
+其中N,是在该栅格内特征为*的像素的数目,Np是该栅格内像素的数目。 如果一个栅格的"E小于仁晌，就认为这个栅格是合格的，这意味着这个栅格 内部的无线电环境是近似纯净的。
+最短边长:记为e响。最短变长定义了最小栅格的边长，上文提到的像素可 以作为最小栅格，但是为了控制栅格的数量，最小栅格要比像素大一些。如果一 个栅格的边长小于。响，它也是合格的，不管时E满足不满足要求，这意味着这 个栅格不能被进一步划分了。
+存储不合格栅格的栈：记为stack。这个栈存储不合格栅格。在每次迭代，从 stack出栈一个栅格，将出栈的栅格二等分，得到两个新栅格，其中合格的栅格 存到数组mes方中，不合格的栅格入栈到stack再进行下一次迭代，直到血以 为空迭代结束。
+3)算法描述
+在算法FbMD之后，参数相同的栅格仍然存在，所以FbMD之后再执行栅格 融合算法(Mesh Fusion Algorithm, MFA)效果更好，如果不用MFA,单独的 FbMD也是可以实用的。
+80
+
+如果两个栅格是可融合的，它们不仅在地理上相邻，还有相同的无线电环境。 一个栅格的无线电环境是由大多数像素的特征决定的，这个特征进一步定义为栅 格的特征，即公式（2-6）。两个栅格融合即把两个矩形融合成一个矩形。栅格 ［如乂汪况］和［x3,y3;x4,y4］被融合为栅格［minX”min汁;max知max"］。如果 mesh,和次偷九是可融合的，本文标记此关系为"mes九o mesh}."。
+算法2-2描述了 FbMD-MFA算法，其中栅格用对角顶点的坐标表示，一开始 整个区域也这么表示，因为它是第一个“不合格的栅格图2-15示意了栅格划 分操作，其中栅格［x},yi-,x2,y2］被划分为如下两个栅格：
+
+
+
+算法2-2 FbMD-MFA算法描述
+第一部分：基于分形的栅格划分（FbMD）
+初始化，e响为一个合适的值 stack <-整个区域，mesh <- 0
+while stack 非空 do
+栅格m JKstack出栈
+分割m，得到两个更小的栅格使，務2 .
+for 7 = 1 to 2 do
+if初j.合格then
+将rrij添加到数组/Mgs方
+else
+将 m,添力少到栈S〃冰
+81
+end if
+end for
+end while
+第二部分：栅格融合算法(MFA)
+得到栅格数目A, labels true
+while label do
+label <r- false , z ,得到 mes^
+while / < Zdo
+丿-1 while j < Z do
+if meshj o mes^ then
+将mesh.和mesh.融合
+更新数组mesh, label <r- true
+end if
+j = j+l
+end while
+1 = i + l
+end while
+end while
+4) FbMD算法分析
+栅格划分算法FbMD可以用二叉树表示。如图2-16所示，其中栅格1是整 个区域，是第一个不合格的栅格，栅格1被划分为栅格2和栅格3,其中栅格3 合格，栅格2不合格，因为算法要迭代地划分不合格的栅格，保留合格的栅格, 所以保留栅格3,划分栅格2,如图2-16所示，栅格2被划分为栅格4和栅格5o 重复上述的迭代，直到整个区域被划分为合格的栅格，如图2-16的右图所示。
+根据算法FbMD,这棵二叉树有如下性质：
+定理2-18：只有一个孩子的栅格不存在。
+证明：根据算法FbMD,如果栅格合格，它不需要被分割，于是没有孩子; 如果一个栅格不合格，它需要被二分，于是有两个孩子，所以只有一个孩子的栅 格不存在。
+#
+定理2-19：二叉树上第I层的栅格的面积是S, =S/2‘，其中S是整个区域的 面积。
+82
+证明：第，层的栅格被二分了，次，所以面积是S/2' .
+
+图2-16基于分形的栅格划分
+定理2-20：设第/层合格栅格的数量为K,,则有Z：K,2」=1,其中N是迭 代的次数(层数)。
+N
+证明：因为所有合格栅格的面积和是整个区域的面积，所以有Ek，=s ,
+/=!
+又根据定理2-19,有§=S/2',于是：
+N	a	N昭
+YK —=	= l	(2-117)
+心	z	/=1丄
+就得到了定理2-20。
+#
+定理2-21：合格的栅格是二叉树的叶子节点。
+证明：根据算法FbMD,合格的栅格是不能再分割的栅格，即没有孩子的节 点，就是叶子节点。
+定理2-22：如果二叉树有N层,那么合格栅格数量的下界是N+1,上界是2"。 证明：根据定理2-20,有：
+N V N 紆 1 N
+(2-118)
+/=!匕 /=! z 乙 i=l
+于是有
+N
+(2-119)
+83
+这是栅格数量的上界，下面求下界。记二叉树上有两个孩子的栅格的数量为 n2,没有孩子的栅格的数量为/。根据定理2-18,有一个孩子的栅格是不存在 的。根据二叉树的基本性质，有等式％=沔+ 1，并且注意到，一旦一个栅格被 分割，％就增加1。于是，为了让％减小,就要减少分割操作的次数。在每一层 （每次迭代）分割一次是最经济的操作，于是一层产生一个有二个孩子的栅格, 就有"2=N,于是”0=0 + 1。根据定理2-21,合格栅格的数目即是％,于是得 到了合格栅格数目的下界。
+2.5仿真结果与分析
+本文在这部分主要验证认知信息表征方法，包括认知信息的表征误差及其影 响因素。然后提供认知信息度量方法的数值结果。最后验证认知数据库中的认知 信息传递方法的性能，提供一些数值仿真结果，并且在最后提供硬件平台的仿真 结果。
+2.5.1认知信息表征方法
+本文在这部分提供一些数值仿真结果，以验证在认知信息表征中的理论结果。 其中无线电参数误差和栅格数量的关系在图2-17和图2-18中提供，图2-17是五 个主网络的场景，图2-18是三个主网络的场景。这些结果验证了定理2-2和定 理2-16,可以发现无线电参数误差和栅格数量的关系为：p, = O（由,
+在图2-17和图2-18中，无线电参数误差是栅格数量的减函数和凸
+函数，因此增加栅格数量可以降低无线电参数误差，提升认知信息表征的精度， 也能提升认知数据库中认知信息传递的精度。但是栅格数量的增加会降低认知信 息传递的效率，因此图2-17和图2-18也展示了在认知信息表征和传递中精确性 和有效性之间的权衡。图2-17场景中网络边界长度兮比图2-18场景中的长，因 此为了获得同样的无线电参数误差，图2-17需要的栅格数量比图2-18需要得要 多。例如，为了获得0.04的无线电参数误差，对于五个主用户网络的场景，需 要的栅格数量是900个，而在三个主用户网络的场景中需要289个栅格。因为无 线电参数误差是栅格数量的凸函数，所以当栅格数量比较大的时候，再增加栅格 数量，无线电参数误差的改善已经不明显，这意味着盲目增加栅格数量不是最优
+84
+
+的选择。图2-17和图2-18的曲线可以用于在一定的无线电参数误差约束下决定 最少的栅格的数量。
+
+
+
+S 2-17五个主网络的场景(a),无线电参数误差和栅格数量的关系(b)
+
+
+
+■ 0	1000	2000	3000
+栅格数目
+图2-18三个主网络的场景(a),无线电参数误差和栅格数量的关系(b)
+基于图2-17中五个主网络的场景，本文探索不同栅格数量下的无线电参数误 差的分布，并且在图2-19中给出了直观的结果。图2-17中整个区域的认知信息 在图2-19(3,), (b,)和(q)中标示，其中本文用颜色表示无线电参数。进一步，(a2), 也2)和(C2)分别是(aj, (b,)和(cj的无线电参数误差的分布，也用颜色表示误 差，其中颜色越偏蓝色，表示误差越小；颜色越偏红色，表示误差越大。当栅格 数量增多的时候，无线电参数越来越小，这可以通过(a2), (b2)和(C2)直观地发
+现。另外，本文可以发现：无线电参数误差总是分布在网络的边缘。
+
+
+
+图2-19无线电参数误差的分布：(a), (b|)和(C|)分别是柵格划分为16x16, 32x32和
+64x64个柵格的结果；(a2),也2)和仁2)分别是(a,), (b)和(c)的无线电参教分布
+2.5.2认知信息度量
+本文在这部分使用认知信息量准则来优化能量检测中的检测门限和协作检 测中的K值，并作详细分析。在图2-20中，通过最大化认知信息量来获得最优 的检测门限。可以在图中发现：认知信息量是检测门限的凹函数，并且随着样本 数N的增加，认知信息量也在增加，且趋于1,其中1是主用户状态的嫡(因为 A = 0.5)o也就是说，当样本数N趋于无穷大的时候，次用户能够消除主用户 状态的全部不确定性，这验证了定理2-14。另外本文发现：随着样本数7V■的增 加，最优的检测门限在减小，因为图2-20中的红线在左移。
+在图2-21中，作出认知信息量关于K值的函数，注意到存在一个最优的K 值使得认知信息量最大。并且通过协作认知信息量可以得到提升，因为在图2-21 中存在一个“认知增益Neyman-Pearson (NP)准则下的协作频谱检测可能不能 得到最优的认知信息量，注意到在图2-21中使用NP准则得到的认知信息量和 最优的认知信息量存在一个间隙。在图2-22中，作出认知信息量和K值的关系 图，对于不同的M值本文给出了一族曲线。注意到随着肱的增加，最优的认知 信息量也在增大，因为在图中红色曲线在上升。因为本文设置p°=0.5,所以主
+86
+
+用户状态的嫡为1。在图2-22中，当M趋于无穷大的时候，认知信息量趋于1, 也就是说，当参与检测的节点数趋于无限多的时候，次用户能够消除主用户全部 的不确定性。
+
+
+
+图2・20认知信息量与检测门限的关系，参数配置为：/ = 1 , p°=0.5 ,圆圈和
+红线.标示了最大化认知信息量的最优检测门限。单位：检测门限为W,认知信息量为bits
+
+
+
+02	NP准则 认知信息量准则
+0.1
+0	■	4 A
+0	5	10	15
+K值
+S 2-21认知信息量和协作频谱检测中K值的关系，参数配置为：Qd = 0.9 , Qf = 0.2 ,
+Po =0.6 , M = 20 o在Neyman-Pearson (NP)准则中，假设虚警概率的上限为0.01。认知
+信息量的单位为bits
+〔
+ca	K'、	M从4增长到40
+0 8	/	*步长为2
+圍 0.6 /
+妲	’	-.-'7 ■
+S 04
+0.2
+Q — -	•— -丿
+0	5	10	15	20	25	30	35	40
+K-out of-M准则中的K值
+图2-22对于不同M值，协作检测中认知信息量与K值的关系，参数配置为：0=0.9,
+Qf = 0.2 , p0 = 0.5 ,圆圈和红线标示了最大化认知信息量的最优K值。认知信息量的单 位为bits<>
+2.5.3认知信息传递方法
+2.5.3.1数值仿真
+在图2-23和图2-24中本文提供了栅格分割和融合的算法结果。在图2-23中， FbMD-MFA算法在融合前栅格数量是113,融合之后栅格数量是70°FbMD-MFA 算法通过分形来划分栅格，并且融合相邻的无线电参数一致的栅格，注意到它可 以显著地降低整个区域的栅格数量。另外，FbMD-MFA算法在融合操作之前已 经可以实用，因为这时的栅格数量相比规则栅格划分已经足够少了。
+RMD-MFA算法结果在图2-24中展示，其中(a)和(b)分别是对于五个主 网络和三个主网络的算法结果。在图2-24 (a)和(b)中的栅格数明显比图2.17
+(a)和图2.18 (a)中的栅格数要少，因此RMD-MFA算法能够显著减少栅格的 数量，并且相应地降低认知用户访问数据库的开销。在图2-24 (a)中的栅格数 目仍然比图2-24 (b)中的栅格数目要多，因为图2-24 (a)中有五个主网络， 无线电环境要更加复杂，因此，RMD-MFA算法的效果受无线电环境的影响。图 2.25进一步确认了这个结论。在整个区域被规则划分为均匀栅格以后，本文使用 MFA算法来融合栅格。在图2.25中本文展示了融合前后栅格数量的关系。MFA 算法可以降低栅格的数量，因为曲线上任何一点的纵坐标值要比横坐标值小很多。 定理2-17表明:RMD-MFA算法可以将栅格数量降至Y = 0(应)的水平，其中M 是融合之前的栅格数量。而定理2-17也可以被图2-25验证。对于五个主网络的 场景，本文通过数据拟合得到丫与M的关系如下：
+丁 = 3.8076应一 16.3808	(2-120)
+对于三个主网络的场景，通过数据拟合得到y与m的关系如下：
+88
+
+
+300
+•5个主网络
+250	3个主网络
+数据拟合：3个主网格
+•数据拟合：5个主网络
+200
+150
+100 ,；，.，
+5。
+害
+0	1000	2000	3000	4000	5000	6000
+融合之前的柵格数
+图2-25 RMD-MFA算法在MFA （栅格融合算法）之前和之后的栅格数量变化
+北京邮电大学工学博士论文
+因为栅格数量的减少，认知用户访问认知数据库的效率也得到了提升，这反 映在两方面：时延和数据库访问频度。图2.26给出了数据库访问时延的变化， 对于广播模式，认知信息的接收时延不受用户密度的影响，当栅格数量减少的时 候，认知用户接收认知信息的时延也相应降低。
+12
+10
+没有进行栅格融合的频谱信息传输时延 FbMD-MFA融合前的频谱信息传输时延 FbMD-MFA融合后的频谱信息传输时延
+200 400 600 800 1000 1200 1400 1600 1800 2000
+用户密度(Users/km2)
+图2-26在广播模式下认知信息的传输时延
+另外，数据库访问频度也是重要的指标，如果认知用户访问认知数据库太频 繁，不仅给认知用户带来开销(比如能量的耗费)，也为网络和认知数据库带来 额外的负载压力。因此本文研究认知数据库访问频度，并分析影响它的要素。假 设认知用户均匀地分布在整个区域内，其移动性符合随机游动模型[2-40],即在 每一次移动中，次用户在一个随机的方向上移动v的距离，因此v也可以被定义 为次用户的移动速度。在这些参数配置下，本文仿真次用户访问数据库的频度。
+认知用户通过数据库获取认知信息。首先，认知用户将自己的地理位置信息 发送给数据库，然后数据库反馈给认知用户它所在栅格的地理信息和认知信息， 然后认知用户可以判断自己是否位于原来的栅格内。一旦认知用户检测到自己走 出了原来的栅格，它将向数据库请求新的认知信息，但是如果认知用户一直在原 来的栅格之内，那么认知用户就没有必要重新请求认知信息。所以直观地讲，栅 格的数量越少，单位栅格的面积越大，认知用户向数据库请求信息的频度越低， 所以栅格融合算法可以降低认知用户访问数据库的频度。在给定栅格分割和融合 算法以及次用户移动性模型的前提下，本文探索次用户访问数据库的频度。
+在图2-27中，本文给出了认知用户访问数据库的次数和认知用户速度之间的 关系。仿真在整个区域部署了 I00个认知用户，每个认知用户移动1000次。注 意到认知用户访问数据库的次数随着认知用户速度的增加而增加。栅格融合之后,
+90
+栅格数量减少，面积变大，因此次用户走出一个栅格的可能性下降，次用户访问 数据库的次数显然小于没有栅格融合的情形，如图2-27所示。对于没有栅格融 合的情形，当次用户的速度超过某个阈值的时候，次用户一次移动就能跨越一个 栅格，因此在仿真的1000次移动中，次用户每次都需要访问数据库以请求新的 认知信息。
+
+图2-27每个次用户访问数据库的次数和次用户速度的关系，场景为五个主用户网络，主用 户网络部署如图2-16 (a)所示，以用户移动速度的单位为米每移动，即在随机游动模型中 每次移动的距离O
+
+
+
+图2-28通过认知导频信道(CPC)传递认知信息的仿真验证平台
+91
+
+2.53-2仿真验证平台
+为了验证本章提出的方案，本文开发了一个仿真验证平台，如图2-28所示。 在实验室环境下实现了图2-1的认知数据库部署架构。在图2-28中，认知数据 库服务器和一个Modem相连，Modem是一个手机模块，用于在认知数据库和终 端之间传输认知信息，用来模拟传递认知信息的认知导频信道(CPC, Cognitive Pilot Channel) [2-10]。物理终端是一个单独的终端，也和一个Modem相连，它 的地理位置随机产生，认知数据库服务器和物理终端用短信(GSM SMS)通信。 虚拟终端通过软件产生大量位置随机的终端，所以虚拟终端可以测量统计的参数, 比如认知数据库信息的平均发送时延。因为认知数据库服务器和虚拟终端之间通 信要求的数据速率较大，所以它们之间用WLAN连接。认知数据库服务器有两 种工作模式一一广播和点播[2-10][2-12],在仿真前可以在软件界面里面设置。
+设置栅格的数目为16, 36和64个，终端请求的速率从0.0005到0.0025每 毫秒变化，仿真平台的运行结果如图2-29所示。图2-29呈现了广播和点播模式 下的时延，其中横轴是用户请求速率，纵轴是不同方案下认知数据库信息的发送 时延。结果表明，当栅格的数量增加的时候，认知数据库信息的广播时延也增加， 但是点播模式不受栅格数量的影响。当用户的请求速率增加的时候，点播模式的 时延会增加，同时广播模式不受用户请求速率的影响。实际上，当用户的请求速 率超过某个门限，点播模式的时延无穷大，这时对应于不稳定的排队系统。但是 广播模式的时延相对稳定。
+
+
+
+
+图2-29仿真验证平台的结果
+2.6结论
+本章研究认知信息的表征理论，主要针对空间和时间维度的认知信息，使用
+“地理嫡'‘和“时间嫡”表示空时认知信息的不确定性，使用“无线电参数误差” 来表示认知信息表征的错误率，得到地理嫡、时间嫡、无线电参数误差与认知信 息表征的参数以及栅格操作的关系，呈现认知信息空时表征的对偶性。其次，本 文建立认知信息度量理论，面向非完美认知，用“认知信息量”统一量化多个维 度的认知信息，表示认知无线网络通过认知的手段消除的资源状态的不确定性， 得到认知信息量与系统参数，尤其是与频谱利用率和主次系统干扰概率的关系， 进一步将认知信息量应用于频谱检测的参数优化中。然后本文研究认知信息传递 方法，基于认知信息表征理论设计准确快速的认知信息传递方案，设计栅格融合 方案，从而实现在移动环境下的认知信息高效传递。最后本文进行了大量的数值 仿真，呈现了认知信息表征、度量、传递中关键参量之间的关系，同时证明了本 文设计的认知信息传递方案的高效性。同时本文还对认知信息传递方案进行了硬 件验证，这一方面验证了本文的方案具有可行性，另一方面也验证了理论结果的 正确性。
+参考文献
+[2-1]. Qualcomm, "The lOOOx data challenge/5 2013. [Online Released]： Available at Web Site: https://www.qualcomm.com/invention/technologies/1000x.
+[2-2]. M. A. McHenry, 4<NSF Spectrum Occupancy Measurements Project Summary5^, Technical Report, Shared Spectrum Company, 2005.
+[2-3]. J. Mitola, "Cognitive radio: An integrated agent architecture for software defined radio/9 Ph.D. dissertation, KTH Royal Inst, of Technol., Stockholm, Sweden, 2000.
+[2-4]. 1TU-R M.2225, "Introduction to cognitive radio systems in the land mobile service,55 2011.
+[2-5]. B. Wang and K. J. R. Liu, "'Advances in cognitive radio networks: A survey," IEEE Journal of Selected Topics in Signal Processing, vol.5, no. 1, pp. 5-23, Feb. 2011.
+[2-6]. T. Yucek and H. Arslan, “A Survey of Spectrum Sensing Algorithms for Cognitive Radio Applications,IEEE Communications Surveys & Tutorials, vo. 11, no. 1, pp. 116-130, Mar. 2009.
+93
+[2-7]. Y. Zhao, S. Mao, J. 0. Neel, J. H. Reed, ^Performance Evaluation of Cognitive Radios: Metrics, Utility Functions, and Methodology/5 Proceedings of the IEEE, vol. 97, no. 4, pp. 642-659, Apr. 2009.
+[2-8]. W. Lee, G. Nat, D.-H. Cho, "Comparison of Channel State Acquisition Schemes in Cognitive Radio Environment,IEEE Transactions on Wireless Communications, vol. 13, no. 4, pp. 2295-2307, Feb. 2014.
+[2-9]. F. Paisana, N. Marchetti, and L. A. DaSilva, “Radar, TV and Cellular Bands: Which Spectrum Access Techniques fbr Which Bands?,^ IEEE Communications Surveys & Tutorials, vol. 16, no. 3, pp. 1193・1220, Apr. 2014.
+[2-10]. J, Perez-Romero, O. Salient, R. Agusti and L. Giupponi, “A novel ondemand cognitive pilot channel enabling dynamic spectrum allocation/5 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 46-54, Apr. 2007.
+[2-11]. Q. Zhang, Z. Feng, G. Zhang, Q. Li, and P. Zhang, "'Efficient Mesh Division and Differential Information Coding Schemes in Broadcast Cognitive Pilot Channel/5 Wireless Personal Communications, vol. 63, no. 2, pp. 363-392, Mar. 2012.
+[2-12]. Z. Wei and Z. Feng, “A Geographically Homogeneous Mesh Grouping Scheme for Broadcast Cognitive Pilot Channel in Heterogeneous Wireless Networks,55 IEEE Global Communications Conference (GLOBECOM) Workshops, pp. 1008-1012, Dec. 201L
+[2-13]. FCC, “Second Report and Order and Memorandum Opinion and Order: In the Matter of Unlicensed Operation in the TV Broadcast Bands," Doc. 08-260, Nov, 2008.
+[2-14]. FCC, "Second Memorandum Opinion and Order/5 Doc. 10-174, Sep. 2010.
+[2-15]. ECC, "Technical and operational requirements fbr the operation of white space devices under geo-location approach,” ECC report 186, Jan. 2013.
+[2-16]. C. Stevenson, G. Chouinard, Z. Lei, W. Hu, S. J. Shellhammer, W. Caldwell, "IEEE 802.22: The first cognitive radio wireless regional area network standard,55 IEEE Communications Magazine, voL 47, no. 1, pp. 130-138, Jan. 2009.
+[2-17]. M. Barrie, S. Delaere, P. Anker and P. Ballon, "Aligning technology, business and regulatory scenarios fbr cognitive radio,” Telecommunications Policy, vol.
+94
+36, no. 7, pp. 546-559, Apr. 2012.
+[2-18]. M. Barrie, S. Delaere, G. Sukareviciene, J. Gesquiere, I. Moerman, “Geolocation Database beyond TV White Space? Matching Applications with Database Requirements,55 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 467-478, Oct. 2012.
+[2-19]. K. Harrison and A. Sahai, ''Potential collapse of whitespaces and the prospect for a universal power rule,” IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 316-327, May 2011.
+[2-20]. C-S. Sum, H. Harada, E Kojima, Z. Lan, R. Funada, "Smart Utility Networks in TV White Space/5 IEEE Communications Magazine, vol. 49, no. 7, pp. 132-139, July 2011.
+[2-21]. H. Ganapathy, M. Madhavan, M. Chetlur, S. Kalyanaraman, "On Exploiting Degrees-Of^Freedom in Whitespaces," IEEE International Conference on Computer Communications (INFOCOM), pp. 1773-1781, Mar, 2012.
+[2-22]. V. Petrini, H. R. Karimi, “TV white space databases: Algorithms for the calculation of maximum permitted radiated power levels/9 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 552-560, Oct. 2012.
+[2-23]. J. Heo, G. Noh and S. Park, et al., "Mobile TV White Space with Multi-Region Based Mobility Procedure,IEEE Wireless Communications Letters, vol. 1, no. 6, pp. 569-572, Dec. 2012.
+[2-24]. S. Grimoud, B. Sayrac, S. Ben Jemaa and E. Moulines, “An Algorithm for Fast REM Construction,95 International ICST Conference on Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 251-255, June 2011.
+[2-25]. S. Grimoud, B. Sayrac, S. B. Jemaa and E, Moulines, "Best Sensor Selection fbr An Iterative REM Construction/3 IEEE Vehicular Technology Conference (VTC Fall), pp. 1-5, Sept. 2011.
+[2-26]. Z. Wei, Q. Zhang, Z. Feng, W. Li and T. A. Gulliver, “On the Construction of Radio Environment Maps for Cognitive Radio Networks/5 IEEE Wireless Communications and Networking Conference (WCNC), pp. 4504-4509, Apr. 2013.
+[2-27]. J. Mitola, G. Q. Maguire Jr., ''Cognitive radio: Making software radios more personal,IEEE Personal Communications, vol. 6, no. 4, pp. 13-18, Aug.
+95
+1999,
+[2-28]. R. Wang and M. Tao, “Blind Spectrum Sensing by Information Theoretic Criteria fbr Cognitive Radios/5 IEEE Transactions on Vehicular Technology, vol. 59, no. 8, pp. 3806-3817, Oct. 2010.
+[2-29]. S. Liu, J. Shen, R. Zhang, Z. Zhang and Y. Liu, "Information theoretic criterion-based spectrum sensing for cognitive radio/5 IET Communications, vol. 2, no. 6, pp. 753-762, July 2008.
+[2-30]. F. F. Digham, M. S. Alouini and M. K. Simon, “On the Energy Detection of Unknown Signals Over Fading Channels,5, IEEE Transactions on Communications, vol.55, no. 1, pp. 21-24, Jan. 2007.
+[2-31]. Meir Feder, Neri Merhav, "Relations between Entropy and Error Probability/5 IEEE Transactions on Information Theory, vol. 40, no. 1, Jan. 1994.
+[2-32]. P. Demestichas, G. Dimitrakopoulos, J. Strassner and D. Bourse, ^Introducing Reconfigurability and Cognitive Networks Concepts in the Wireless World," IEEE Vehicular Technology Magazine, vol. 1, no. 2, pp. 32-39, 2006.
+[2-33]. S. Haykin, ''Cognitive Radio: Brain-Empowered Wireless Communications/5 IEEE Journal on Selected Areas in Communications, vol. 23, no. 2, pp. 201-220, Feb. 2005.
+[2-34]. W. Ahmed, J. Gao and M. Faulkner, "Performance Evaluation of a Cognitive Radio Network with Exponential and Truncated Usage Models,” International Symposium on Wireless Pervasive Computing, pp. 1-5, Feb. 2009.
+[2-35]. D. Cavdar, H. B. Yilmaz, T. Tugcu and F. Alagoz, "Analytical Modeling and Performance Evaluation of Cognitive Radio Networks,” Sixth Advanced International Conference on Telecommunications (AICT), pp. 35-40, May 2010.
+[2-36]. Y. -C. Liang, Y. Zeng, E. C. Y. Peh and A. T. Hoang, "Sensing-Throughput Tradeoff for Cognitive Radio Networks： IEEE Transactions on Wireless Communications, vol. 7, no. 4, pp. 1326-1337, Apr. 2008.
+[2-37]. J. Shen, S. Liu, L. Zeng, G. Xie, J. Gao and Y. Liu, "Optimisation of cooperative spectrum sensing in cognitive radio network,5, IET Communications, vol. 3, no. 7, pp. 1170-1178, July 2009.
+[2-38]. Qixun Zhang and Zhiyong Feng, “A Novel Mesh Division Scheme using Cognitive Pilot Channel in Cognitive Radio Environment,5, IEEE Vehicular Technology Conference (VTC Fall), Sept. 2009.
+96
+[2-39]. Qixun Zhang, Zhiyong Feng and Guoyi Zhang, "A Novel Homogeneous Mesh Grouping Scheme for Broadcast Cognitive Pilot Channel in Cognitive Wireless Networks," IEEE International Conference on Communications (ICC), May 2010.
+[2-40]. T. Camp, J, Boleng and V Davies, “A Survey of Mobility Models fbr Ad Hoc Network Research,” Wireless Communications and Mobile Computing, vol. 2, no. 5, pp. 483-502, 2002.
+[2-41]. T. Cover and J. Thomas, ''Elements of information theory/5 Wiley, 1991.
+[2-42]. C. E. Shannon,HA Mathematical Theory of Communication,H The Bell System Technical Journal, vol. 27, pp. 379 - 423, 623 - 656, Oct. 1948.
+97
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+98
+
+
+第三章认知无线网络空时二维频谱机会
+3.1研究背景
+第二章研究了认知无线网络中以空间和时间维度为代表的多维认知信息表 征、度量和传递。但是在上一章本文忽略了一个细节，即空间和时间维度频谱空 洞的位置。本文在上一章中假设空时频谱空洞的位置是已知的，进一步重点研究 认知信息的表征、度量和传递。而在这一章本文重点研究上一章忽略掉的细节， 即空时频谱空洞的位置问题。
+众所周知，认知无线网络是实现频谱高效利用的重要技术［3-1］。认知无线网 络通过灵活高效地利用频谱空洞来优化频谱资源的使用，提升无线网络的容量 ［3-2］。注意到频谱空洞存在于空时维度，次用户在不同的空间和时间有着不同的 频谱利用机会。比如，当次用户距离主用户较远的时候，次用户可以和主用户同 时传输而不会干扰主用户，即次用户有空间维度频谱机会。然而，当次用户距离 主用户较近的时候，次用户仅能利用主用户当前不使用的频谱，也就是说，次用 户具有时间维度的频谱机会。
+探索和发掘可用的频谱空洞可以提升认知无线网络的频谱利用率。为了发掘 频谱空洞，人们设计了一些空时检测的算法，以检测空时维度的频谱机会。其中 Tandra等人在文献［3-3］［3-4］中设计了一种空时频谱检测方案，并且针对空时频谱 检测提出一种新的度量方法，来衡量空时频谱检测的性能。在此基础上，多种空 时频谱检测方案在文献［3-5］［3-6］［3-7］［3-8］中得到了研究。其中Do等人在文献 ［3-5］中提出了一种两阶段频谱检测方案，次用户在第一阶段检测时间维度频谱机 会，如果时间维度机会不存在，次用户在第二个阶段转而检测空间维度频谱机会。 Ding等人在文献［3-6］［3-7］中研究了认知无线网络中的空时频谱检测，并且提出 一个二维频谱检测(Two-Dimensional Sensing, TDS)架构来提升空时频谱检测 的性能。他们在文献［3-8］进一步研究了协作空时频谱检测，利用机器学习方法来 提升协作空时检测的性能。虽然上述文献大量研究了空时频谱检测的算法和性能, 但是空时频谱空洞的理论计算仍然很少涉及，上述文献一般假设空时频谱空洞的 位置是已知的。
+关于空时频谱空洞的位置，Vu等人在文献［3-9］中分析了空间维度频谱空洞 存在的区域，并且提出了主用户排斥区(Primary Exclusive Region, PER)的概 念。然而，文献［3-9］没有考虑时间维度频谱空洞，因此［3-9］中的次用户没有利用 时间维度频谱机会。实际上，在部分的PER区域内有时间维度的频谱机会，次 用户可以机会式地利用主用户的频谱。当空时频谱机会被同时利用的时候，认知 无线网络的频谱利用率可以得到提升，因为在整个区域可以部署更多的次用户。 在文献［3-9］之后，文献［3-10］［3-11］在分析空间维度频谱空洞的时候进一步考虑了 阴影效应和网络层面的性能分析，从而扩展了［3-9］中PER的概念。
+对于认知无线网络高效频谱检测和接入来说，如何发现频谱空洞和计算空时 频谱空洞的位置仍然是个挑战。为了解决这个问题，本文提出了“黑白灰”三区 频谱检测和接入模型，以高效地利用空时频谱空洞。在黑区内，只允许主用户部 署，次用户不允许部署在黑区内部。在灰区内，次用户有时间维度的频谱机会， 可以利用主用户当前空闲的频谱。在白区内，次用户因为距离主用户足够远，所 以次用户有空间维度频谱机会,可以和主用户同时传输而不用担心对主用户造成 严重的干扰。另外，当灰区半径小于白区半径的时候，在灰区和白区之间会存在 一个过渡区，过渡区内部的次用户因为距离主用户发射机较远，所以频谱检测的 性能下降，不能像灰区内部的次用户一样利用时间维度频谱空洞。另外，过渡区 内部的次用户因为距离主用户接收机不是足够远，所以不能像白区内的次用户一 样利用空间维度的频谱空洞，否则会对主用户接收机造成干扰。从地理上看，灰 区包围着黑区，而白区包围着灰区。在灰区和白区之间有可能存在一个过渡带， 本文进一步给出了过渡区存在的条件。因为过渡带的消除可以让系统架构、网络 管控和资源的分配更加简单，所以本文一般希望过渡带消失。
+为了更好地发掘利用空时频谱空洞，本章重点计算“黑白灰”三个区域的边 界。首先，本文分析时间维度频谱检测的性能极限，以此得出灰区的边界。然后 通过分析从次用户到主用户的聚合干扰，并且考虑主用户的中断概率约束，得到 白区的边界。对于黑区的边界，本文通过动态频谱租赁的观点建立了一个最优化 模型，通过求解最优化模型得到黑区边界的最优值。另外，本文得到了过渡区存 在的条件，并提出了消除过渡区的方法。
+需要注意的是，本章研究的基于“黑白灰”三区划分的频谱检测和接入模型 和上一章有着密切的联系，在上一章，本文研究了认知数据库中认知信息的传递 以及频谱检测的参数优化，而本章提岀的基于“黑白灰”三区划分的频谱接入模 型正好可以应用在认知数据库和频谱检测相结合的架构中，即三区的边界信息存 储在认知数据库中，当次用户需要接入频谱的时候，访问数据库，以获取它所在 区域的认知信息。如果认知数据库反馈的信息为次用户在白区，那么只要次用户 不移动出当前栅格，就可以一直使用空间维度频谱空洞；如果认知数据库反馈的 信息为次用户在灰区，那么次用户就需要频谱检测辅助进行动态频谱接入 (Dynamic Spectrum Access, DSA)；如果认知数据库库反馈的信息为次用户在 黑区，那么次用户就不能接入主用户频段；如果认知数据库反馈的信息为次用户 在过渡区，那么次用户或者可以进行功率控制来接入主用户频段，或者可以共享
+100
+灰区内次用户的频谱检测结果，像灰区内部的次用户一样使用主用户频段。而灰 区内部的次用户可以通过认知数据库来共享频谱检测的结果，这样能减少次用户 频谱检测的次数，从而可以节省时间和能量，提升频谱检测的性能（接收信噪比 较好的次用户可以进行频谱检测）。于是过渡区内部的次用户可以共享灰区内次 用户的频谱検测结果，从而让过渡区变为灰区，最终消除了过渡区。所以本章的 研究和上一章有着密切的联系，本章可以认为是上一章内容的细化。
+本章接下来的结构如下。3.2节提出了本章研究的系统模型。3.3节分析了灰 区内部的时间维度频谱机会，并得到了备选的灰区外半径的精确解和基于中心极 限定理的近似解，分析了噪声不确定性对灰区半径的影响。3.4节分析了白区内 部的空间维度频谱机会，使用精确方法和补充方法得到了主用户受到的聚合干扰, 并且计算了白区的内半径，分析了噪声不确定性对白区半径的影响。3.5节针对 单主用户网络和多主用户网络总结了三区的半径，并且计算了最优的黑区半径， 获得了过渡区存在的条件» 3.6节提供了仿真结果和分析，主要针对云区对网络 容量的性能提升、三区的半径、过渡区的宽度、最优黑区半径、三区的应用等进 行了数值仿真。最后3.7节总结本章内容。
+3.2系统模型
+如图3-1所示，在本文考虑的系统模型中，主用户和次用户均匀分布在一个 半径为R的圆盘内。主用户的发射机，比如电视塔位于圆心处，以却率K发射 主用户的信号。主用户接收机，比如电视机，均匀分布在主用户发射II的覆盖区 域内。整个区域被划分为三个区域，即黑区，白区和灰区。黑区的外半径为 在黑区之内，只允许主用户工作，即文献［3-9］所描述的主用户排斥区（Primary Exclusive Region, PER）。灰区的外半径为在灰区内允许次用户存在，但是 次用户只可以使用overlay方式工作（即通过“检测-接入”的方式利用主用户当 前空闲的频谱），以减小次用户对主用户的干扰。白区的内半径为&，外半径为 R,其中R可以为无穷大。在白区，次用户可通过underlay方式（即可以和主用 户同时发射，但是需要控制对主用户的干扰）以最大功率发射，而不至于造成对 主用户的严重干扰。本章的主要工作即是计算您次3的值。次用户均匀分布在 灰区和白区内，密度为刀用户/单位面积，发射功率为£。本章的信道模型只考 虑大尺度衰落，即给定传输距离Z,那么信道的功率增益是g = V/lf ,其中丫是 由频率决定的参量，a是路损因子。为了简单起见，本文将丫归一化为1,并且 仅考虑aZ2的情形，因为在现实环境中，路损因子一般大于2。
+101
+
+图3-1三区划分的系统模型
+
+当R2<R3的时候，在灰区和白区之间存在一条“过渡带”，在图3-1中，内 半径为％，外半径为&的环形即是过渡带。过渡带内的用户也用underlay方式 通信，并且需要进行严格的功率控制以控制对主用户的干扰。因为采用空时频谱 检测的次用户接收机的灵敏度必然高于主用户接收机的灵敏度[3-7][3-14],所以 时间维度频谱机会在黑区和白区之间存在，而在文献[3-9]中没有考虑时间维度频 谱机会。进一步，通过在灰区内部署次用户，整个区域的频谱利用率相对于文献 [3-9]得到了提升，因为整个区域中部署了更多的次用户。在图3-1中，主用户的 覆盖区的外半径是凡，当主用户在覆盖区之外的时候，因为接收信号太弱，主 用户即使没有次用户的干扰也不可以解调主用户信号。而黑区内的主用户受保护, 可以避免次用户的强烈干扰，因此内半径为外半径为R的环形是主用户网 络的“牺牲区”，其中主用户的性能必然会下降，因为它们在黑区之外。
+为了决定灰区的外半径&，需要考虑频谱检测的关键的性能指标，包括频谱 检测的虚警概率和误检概率。一方面，在现有的频谱共享的国际标准，例如IEEE 802.22中，误检概率被严格地约束，以降低对主用户系统的干扰。另一方面，如 果虚警概率太大，次用户可能不会使用授权频段，因为次用户具有较少的频谱使 用机会，这种情况下次用户的的收益不能抵消频谱检测里能量-时间的开销。所 以本文同时约束频谱检测的虚警概率和误检概率，当主用户发射机到次用户的距
+102 离超过某一个阈值的时候，至少一个约束不能得到满足，这个阈值就是灰区的外 半径。白区的内半径主要通过黑区边缘的主用户的中断概率约束得到。为了估计 黑区边缘的主用户受到的聚合干扰，本文提出了两种方法，即精确法和补充法, 两种方法各有优势，本文在下面逐个介绍。
+为了求解黑区的最优半径，本文利用动态频谱租赁的视角，构建一个最优化 模型，通过求解最优化模型得到黑区的最优半径。本文发现：当扩大黑区，受保 护的主用户增多，但是次用户的频谱机会缩减；反之，当缩小黑区，受保护的主 用户减少，但是次用户的频谱机会增多。因此黑区的变化反映了主次用户的一个 有趣的利益博弈。然而，当主网络和公共安全相关的时候，根据一些标准和规范， 黑区的半径仍然有约束。比如，当主用户是地面雷达系统的时候，FCC规定了 一个主用户排斥区来保护雷达系统［3-13］0在这种情况下，在黑区、白区互动的 时候，必须考虑黑区的最小半径约束。
+3.3灰区的时间维度频谱机会
+在灰区，由于次用户通过overlay的方式共享频谱，所以次用户需要周期性 地检测主用户的频谱。在本章中，次用户通过能量检测的方式检测主用户的信号。
+假设分别表示带通的主用户信号（中心频率为《，带宽为匠）、信道 增益和加性高斯白噪声。当一个主用户信号x（「）通过信道增益为4的无线信道传 输的时候，它被次用户检测器接收到，并且以采样频率_/；采样。因此在检测时间 t之内，釆样的样本个数为N =	。对于一个带通信号x（r）,在次用户的检测
+器里面，它的接收信号的第"个采样为》［〃］服从一个二元假设检验模 型，即冗）（主用户空闲），為（主用户活动），模型如下。
+w[«]	: K
+hx[n] ■+ w[«] : %
+其中x［〃］和w［〃］分别是主用户信号和噪声过程的采样，風“］假设为一个高斯 随机变量，其均值为0,方差为此，即讽〃］~”（0，就）。类似地，本文假设 町”］〜因为本文在信道模型中只考虑路径损耗，所以方只和次用户的 位置有关，因此本文假设人在一次频谱检测期间维持不变。另外，xW，h, w［m］ 和假设为实数变量。接下来,本文分析频谱检测的虚警概率和误检概率约束, 通过分析频谱检测的性能极限，得到灰区的外半径&。因为在精确结果中没有& 的闭式解，所以本文使用中心极限定理（Central Limit Theorem, CLT）来分析频 谱检测的性能极限，类似地推导出灰区外半径&2的闭式解。
+103
+
+3.3.1精确结果
+N
+在这部分的能量检测中，检验统计量(Test Statistic)为/ = £(孑卩］)。根据
+/=1
+文献［3-17］,在假设"下，检验统计量P服从非中心的卡方分布。在假设％下, 检验统计量/服从中心的卡方分布。检验统计量/在假设％和九下的概率密度 函数(Probability Density Function, PDF)分别如下。
+(v-l)/2 2r+y
+-2犬
+其中r是能量检测器端的信噪比，N是样本个数(偶数)，v = N/2, 7V(*)是 v 阶第一类修正的贝塞尔函数(Modified Bessel Function of the First Kind),「(*)是
+伽马函数。能量检测的检测概率Pd=Yr{H0\H.} = Pr{Y>£\Hx}和虚警概率
+Pf = Pr{q | Ha} = Pr{Y >e\H0}表示如下。
+(3-4)
+
+其中e是检测门限，0(*,*)是广义马库姆Q函数(Generalized Marcum
+Q-function), r(a,x)是高阶不完全伽玛函数(Upper Incomplete Gamma Function),
+定义为误检概率定义为：4 = 1-4。从主用户的立场看， J X
+误检概率越小，主用户受到的次用户干扰越小。从次用户的立场来看，虚警概率 越小，次用户的频谱机会越多。但是根据接收机性能曲线(Receiver Operating
+Characteristic, ROC),月和与不能同时减小，因此本文需要约束R和弓：
+104
+
+
+并且本文定义勺和如下：
+勺= 2E.L（v,冲））
+对于约束（3-6）,本文有下述定理。
+定理3-1：当检测门限点勺的时候，对虚警概率的约束满足，其中L0,x） 是高阶不完全伽玛函数的反函数，且x是自变量，，是常数。
+证明：虚警概率弓关于检测门限$的导数是:
+
+
+
+因此与是检测门限8的减函数，解不等式（3-6）,得到：
+心炉（糾冲））％	（3-11）
+因为「（v，5）是e的单调函数，因此它的反函数存在。
+对于约束（误检约束），本文有下述定理。
+定理3-2：当心“的时候，关于误检概率的约束得到满足，其中Q；\a,x）是 广义马库姆Q函数的反函数，且x是自变量，a是常数。
+证明：误检概率R关于检测门限e的导数是：
+夺=吐竺=**冷。	（3-12）
+因此«是e的增函数，解不等式（3-7）,本文得到：
+心叫0'U糸‘1一'项 F	（3T3）
+因为广义马库姆。函数00,x）是x的单调函数，因此它的反函数存在。
+105
+因为广义马库姆。函数和高阶不完全伽玛函数的反函数的闭式解不存在，因 此勺.和风的闭式解也不存在，但是本文可以通过数值方法来得到勺和句,的值。 本文探讨勺和主用户与次用户检测器之间距离的关系，得到如下定理。
+定理3-3：设主用户发射机和次用户检测器之间的距离为L,那么硃是Z的 减函数。
+证明：风是信噪比r的隐函数，且它们的关系如下:
+
+
+
+因此本文有:
+d = dr
+dr	3尸(W)
+
+
+/0/）=启十-0。（3-16）给出的只,不适合应用在计算中，因为它涉及到无穷 级数，但是因为无穷级数中的每一项都是相对简单的，所以它可以很方便地应用 在分析中。将（3-16）代入（3-14）中，本文得到：
+
+
+w
+切 71	r（y+v+i）切 Ji r（j+v）
+M（4）7 x（丿+v+i,*）心 v,*
+=y /		2/）
+r（j+v） ）
+其中3）是通过将求和的起始项从1变成0得到的。低阶不完全伽马函数 的展开形式如下。
+
+
+步，（3-19）中的亟y e 根据公式（3-15）,本文有虹e 注意到信噪 dr	dr
+比r是距离L的减函数，因此虹=虹％0，故&是［的减函数，定理得证。 dL dr aL
+#
+次用户从区间［勺,&,］中选择一个数值作为检测门限八 其中勺是一个常数, 但是硃是距离Z的减函数。随着距离的增加，勺不变，但是纭一直在减小。因 此随着距离的增加，必然存在一个距离阈值，使得y勺，这样区间［勺,&,］就 是空集，这时次用户无法选择一个频谱检测的门限。因此8m=Sf就揭示了时间
+107
+
+维度频谱检测的性能极限，解这个等式，就可以得到灰区的半径，如下：
+2 犬L (v,扩(V))=氏(片,1 _鼻))2
+忡"	(3-21)
+n 1 一鼻=0幅 j2L(v§「(v)))
+本文可以通过数值解法得到上述等式的解，即信噪比r的值，然后就可以通
+过求解等式垒# =，，得到备选的灰区半径为L =(勻严為。因为在公式
+<	四
+(3-21)中，信噪比r不存在闭式解，所以本文通过精确方法也得不到灰区半径
+明的闭式解。因此本文通过中心极限定理得到灰区半径的近似解，标记为旳。
+3.3.2基于中心极限定理的结果
+在/［”］和w［”］都是实值高斯随机变量的假设下，根据中心极限定理，检验统 计量r=^-X(W也可以用一个高斯随机变量近似，其分布如下［3-16］：
+N 0
+■K
+
+
+
+误检概率Pm = Pr｛弘| %｝和虚警概率P, = Pr｛冗| “｝表达式如下:
+
+(Complementary Cumulative Distribution Function, CCDF),即。函数。类似地, 本文约束误检概率和虚警概率如下：
+(3-24)
+其中5和打是误检概率和虚警概率的上限，将(3-23)代入(3-24)中，本 文可以重写虚警概率和误检概率的约束如下：
+108
+
+
+其中。一|（*）是反Q函数。两个关键参数练和勺决定了检测门限£的变化范 围，检测门限8必须比勻,小，以满足对误检概率的约束。同时，检测门限8必须 比勺大，以满足对虚警概率的约束。因此，检测门限必须满足&日勺,勺注意 到勺是样本数目N的函数，而勺是样本数目N和信噪比/•的函数。如果本文固 定N的数目为一个较大值，例如2 = 100,那么勺就是一个常数，而勺是r的函 数。对于％,本文有下述定理。
+定理3-4：设主用户发射机和次用户检测器之间的距离为L,那么当釆样数 目足够大的时候，％是匕的减函数。
+证明：％是信噪比尸的函数，且％关于,的导数是：
+令*卜。黑）罔	328）
+对于足够大的样本数目N,即当N〉2（0T（為V的时候，本文有
+。《）\匕＜1,进而争＞0。例如当鼻=10一3的时候（这是非常严格的误检概 V N	ar
+率约束），本文有NZ2O（实际上定理要求的％V足够大”的条件比较容易满足），
+z/c*
+此时即能满足牛＞0。实际上，（3-23）是根据中心极限定理得到的，为了满足 dr
+中心极限定理，必然会要求N足够大。
+因为信噪比是距离Z的减函数，所以本文有性=性也＜0,即 吠	dL dr dL
+与，是［的减函数，定理得证。
+#
+109
+
+图3-2灰区半径中精确结果（砖）和使用CLT的结果（戏）的比较，对于与=0・05 , Q = 3 ,
+",Po= 100
+灰区半径的计算和上一节类似，因为与是主用户发射机和次用户检测器的距 离2的减函数，勺是常数（如果本文固定样本数目N）,因此当Z增大的时候, 必然有1 =跖使得%=十进一步，如果L>飾,则£m<£f,这时次用户无 法选择一个检测门限使得虚警概率和误检概率的约束同时满足。因此灼就是备 选的灰区半径。为了得到爲的值，本文求解下述方程。
+
+
+
+将「=乙#代入（3-29）,本文得到备选的灰区半径如下:
+
+
+
+注意到玳是主用户发射功率片的增函数，因为当主用户的发射功率增大的时
+110
+候，次用户检测器端的接收信号信噪比会增加，因此频谱检测的性能会提升，这 样灰区就会扩张，灰区的半径就会增加。夫；是样本数目N的增函数，因为当样 本数目增加的时候，频谱检测的性能也会提升，灰区也会相应地扩张。在精确结 果中，本文得到灰区的备选半径R，，母7对任何的样本数目N都适用，但是蹲没 有一个闭式解。虽然用只对足够大的N才适用（中心极限定理要求，这个条件 容易满足），但是它有闭式解，因此本文在下文中使用R；作为灰区的备选半径, 进行后续的讨论。在图3-2中，本文对于不同的样本个数N,对比了用和明。 事实验证当N足够大的时候，基于中心极限定理的结果和精确结果非常接近。
+3.3.3噪声不确定性对灰区半径的影响
+在实际中，对噪声方差的估计一般存在不确定性，因此本文探索噪声的不确
+_	2	_
+定性对灰区半径的影响。噪声方差可以认为是均匀分布在区间仁"&/E内,  	 p
+其中b；是归一化的噪声功率，Q〉1衡量了噪声不确定性的大小。为了获得要求
+的虚警概率Pf和误检概率Pm ,虚警概率和误检概率必须被修改如下:
+
+
+
+经过一些变换以后，可以将上述约束转变为对检测门限的约束,
+(3-34)
+按照3.3.1节类似的方法，本文令得到信噪比，的解如下:
+111
+
+
+为了鲁棒地得到灰区的半径，本文将信噪比的表达式「=也写 代入(3-35),
+PA
+得到灰区的备选半径值如下:
+\l/a
+(3-36)
+当戶=1的时候，矶*,此时噪声的不确定性不存在。对比(3-30)和(3-36), 本文注意到当噪声不确定性存在的时候，灰区会缩小。另外，妨是『的减函数， 即噪声的不确定性越大，灰区的半径越小，此时次用户的时间维度频谱机会越少。
+3.4白区的空间维度频谱机会
+在这一部分中，本文通过考虑从次用户到主用户的聚合干扰，来得到白区的 边界。为了估计主用户受到的次用户的干扰，本文设计了两个方法，即精确法和 补充法，来估计聚合干扰。
+3.4.1精确法
+如图3-3所示，在黑区边缘的主用户受到次用户的最严重干扰，这在接下来
+的定理3-5中得到了证明。在黑区边缘的主用户受到一个次用户的干扰值如下:
+1(杼)=；'见=			击	(3-37)
+[d(l,G)]	(T+a2_2即 cos。)
+其中d(l,0)是次用户距离黑区边缘的主用户的距离。因为次用户是均匀分布 的，所以/和。都是随机变量，其概率密度函数如下：
+2/
+人伊)=二,0<心勿
+2勿
+其中&是白区的边界(在本章中，&是白区半径的下界，其实技术上来说， 任何半径值RX>R.都可以视为是白区的半径)。因为次用户的密度是人用户/单位
+112
+面积，所以在白区内的次用户平均数目是伫如（居一尺）。假设&>1 （容易得 到满足），那么积分中的奇点可以移除。标记*为主用户受到的聚合干扰，其期 望值在下面的方程中给出。
+砲『I （罹）久）为（用刼
+（■R 户 ZIP	（3-39）
+=| I 	性	wdddi
+（尸+ &2_2&/cos。）"
+
+
+
+▲次用户发射机
+图3-3主用户受到次用户的最严重干扰
+当a = 2k且左为正整数的时候，聚合干扰的闭式解存在，表达如下： 空料。+丿-1）!玲5	1	1	）
+°J R严会（（丿!）2伏_丿_1）以+丿_「（代一年）奸”飾2_年）5丿丿 （3-40） 特别地，当a = 2的时候，本文有：
+£[70]=以R [in（R2-A,2）-ln（R； _R；）]	（3-41）
+因为limE[I0] = oo ,所以对一个无限大的区域，a = 2的情形不考虑。当a = 4
+的时候，本文有:
+
+
+R2 j 尺
+(*_層)2 (禺一層)2
+(3-42)
+113
+
+
+
+
+
+且有lim£［*］= ,以氏用2。对于一般的路损因子，聚合干扰没有闭式解， 山。（代一时
+因为（3-39）对于一般的实数a是不可积的。因为E/］对于一般路损因子不存 在闭式解，所以本文寻找它的上界，这就是下一部分一一补充法的内容。但是在 继续下一部分之前，本文现在给出定理3-5,如下：
+定理3-5：当Rtoo的时候，黑区边缘的主用户受到的干扰最强。
+证明：在公式（3-40）中，本文用变量X替换且固定&的值。然后就得 到了 作为xe［0,&］的函数，本文寻找瓦K］的单调性。当R*的时候，经 过一些变换，£卩°］的单调性和下面的函数一致：
+上述函数是X的单调增函数，因此当5 （即X取最大值）的时候，是 最大的，也就是说，黑区边缘的主用户受到的干扰最大。
+# 定理3-5说明了这样一个事实：黑区边缘的主用户受到的干扰最大，因此为 了保护主用户，本文只需要保护黑区边缘的主用户。
+3.4.2补充法
+类似文献［3-9］,本文将系统模型里面网络的圆心移动到黑区的边缘，然后在 内半径为虬-&,外半径为K+R的圆环内部署次用户，这部分次用户的密度仍 然是；I用户/单位面积。假设爲-虬＞1,则积分中的奇点可以移除。本文可以获 得黑区边缘的主用户受到的干扰的上界及其极限如下：
+
+
+
+lim £[70 ] <			?——f
+RTS L。」a_2 (&_K)
+当黑区半径&比较大的时候，根据补充法计算的聚合干扰的上界比较松，但 是公式（3-45）也可以用来获得白区的内半径。
+3.4.3白区的半径
+本文根据黑区边缘主用户的中断概率约束得到白区的内半径用。假设主用户
+114
+的数据速率为L，当*降到一个门限值C。以下的时候中断事件发生。为了保证 主用户的QoS （服务质量），主用户的中断概率必须不能超过小，表示如下：
+（3-46）
+本文推导受干扰最严重的主用户的中断概率，也就是黑区边缘的主用户的中 断概率，如下：
+p°"=Pr[log" + #^*C。]”
+v L+Qi，丿	（3_47）
+其中兄是主用户接收器端的噪声功率谱密度，定义4=学写一氏为干扰 门限，当z0>4的时候，主用户的一个中断事件就发生了。注意到4>0,所以 黑区的半径必须满足下述条件:
+/	、l/a
+— =RC	（3-48）
+[忌世。一1）丿c
+其中R是主网络覆盖区的半径。当RM 的时候，单纯的噪声就可以造成主 用户传输的中断，因为这时主用户的接收器离发射器太远，有用信号太弱。凡是 &的上界，因此黑区的半径必须满足：
+&<&	（3-49）
+一般地，次用户的检测器比主用户的检测器更加灵敏[3-7][3-14],因此有 &>凡，进而&>构。白区的半径&可以根据主用户的中断概率约束计算出来, 根据Markov不等式Pr[x2s]《企1,本文有:
+£
+(3-50)
+当a = 4且RT8的时候，本文有:
+(3-51)
+用胃来约束上述不等式的右边，白区的半径可以计算如下:
+115
+
+
+其中上述不等式的右边即是白区的半径。在公式（3-52）中的&是通过使用 精确方法计算的研"］得到的，然而这仅对a = 4的情形适用。对于一般路损因子 的情形，本文使用补充法得到的聚合干扰的上界来计算白区的半径,将公式（3-45）
+中研I。］的上界代入（3-50）,本文得到使用补充法计算的白区的半径如下:
+(3-53)
+
+这就是对于一般路损因子的白区半径&的上界。注意到在公式（3-52）和 （3-53）中的&都是月和K的增函数，因为当［.或&增加的时候，次用户要远 离主用户以降低对主用户造成的干扰，因此茂会增加。
+3.4.4噪声不确定性对白区半径的影响
+在实际中，噪声方差（功率）估计的不确定性是存在的，因此本文分析噪声
+-2	-
+不确定性对白区半径的影响。和3.3.3部分类似，噪声的方差是E，e务，次；，
+L p _
+其中E是归一化的噪声功率，？＞1是衡量不确定性大小的一个参数（p越大, 不确定性越大）。为了鲁棒性地获得白区的半径，本文将代入（3-52） 和（3-53）,得到新的白区半径如下：
+•使用精确方法的白区半径&为:
+
+
+
+•使用补充方法的白区半径佑为：
+116
+(3-55)
+注意到当噪声的不确定性存在，即『招的时候，白区的半径增加了。因为白 区半径是内半径，这意味着次用户的空间维度频谱机会减少了。Q衡量了噪声不 确定性的大小，注意到随着p的增加，即随着噪声不确定性的增加，白区的半径 也在变大。
+3.5三区的半径
+在这一部分中，本文首先计算单主网络场景下的三区半径，然后本文研究多 主网络场景下的三区计算问题。因为增加&可以增加主用户的保护区，但是会减 少白区的次用户的频谱机会，所以黑区的半径&可以通过求解一个最优化问题得 到解决。最后，本文探索过渡区存在的条件。
+3.5.1单主用户网络的三区半径
+相对于灰区的频谱机会，次用户更偏好白区的频谱机会，因为次用户在白区 可以连续传输，而不被主用户打断。因此灰区的半径选取《和的最小值。三 区的半径总结如下：
+•黑区的半径是&＜，；
+•白区的半径是％，在公式(3-52)和(3-53)中给出；
+•灰区的半径是& =min{R；,&},其中财在(3-36)中给出。
+3.5.2多主用户网络的三区半径
+对于多主网络的三区边界，本文考虑主网络在同频带部署的场景，因为当主 网络部署在不同频带的时候，可以认为主网络之间没有相互干扰(本章不考虑邻 频干扰)，即主次网络是独立的。当主次网络同频部署，多主网络的黑区是每个 主网络的黑区的并集，它的外轮廓在图3-4 (a)中标示。
+对于多主网络的场景，次用户接收到多个主网络发射机的聚合信号，因此次 用户的频谱检测性能必然比单主网络场景下的要好，因此多主网络的灰区边界相 对于单主网络的灰区边界将会向外扩张，如图3-4 (b)所示。多主网络的灰区边 界的下界即是每个单主网络的灰区的外包络，如图3-4 (a)所示。
+在多主网络的场景下，对主用户产生干扰的次用户数量比单主网络场景下的 要少，因此在多主网络的场景下，白区的内边界将会向内扩张，如图3-4 (b)所
+117
+北京邮电大学工学博士论文
+示。因此单主网络的白区边界的包络可以视为多主网络白区边界的上界。
+
+
+(a)
+黑区边界
+（b）
+图3-4多主冋络的三区半径：（a）是多主用户网络的黑区、灰区和白区，（b）多主用户网
+络和单主用户网络的三区边界比较
+根据上面的分析，本文总结多主网络场景下的三区边界如下：
+•多主网络的黑区是每个单独主网络的黑区的并集；
+118
+•多主网络的灰区的下界是每个单独主网络的灰区的包络；
+•多主网络的白区的上界是每个单独主网络的白区的包络；
+•多主网络的过渡区在单独主网络的灰区包络和白区包络之间。
+因此对于多主网络的场景，单独主网络的三区边界的包络可以视为多主网络 三区的边界。因此对于单独主网络得到的三区结论可以直接扩展到多主网络的场 景，而不会破坏频谱检测的约束和对主用户干扰的约束。但是这样会扩张过渡区, 如图3-4 (b)所示，对于多主网络场景，它的实际过渡区要比单主网络的过渡区 更窄一些。
+3.5.3最优的黑区半径
+首先，本文通过将(3-48)代入(3-52),得到人3，R和R之间的联系，如
+
+
+注意到&是鸟的增函数。另外，当R—虬的时候，有&T3,即在这种情 况下次用户没有空间维度的频谱机会。注意到增加劣将会扩展主用户的保护区， 保护更多的主用户，与此同时白区内的次用户的频谱机会将会缩减，因为％随 着K的增加而增加。因此本文可以根据动态频谱租赁的观点来优化&，即主用户 有某种激励(比如通过租赁频谱获得金钱上的补偿)，从而允许次用户在自己的 授权频段上部署［3-23］,所以&没必要设为《(以排挤出所有的次用户)，因为 在这种情况下，主用户不能通过动态频谱租赁从白区内的次用户获得收益。在这 种情况下本文分析主用户的收益，为了简单，假设过渡区被消除了。假设主用户 的密度是可用户/单位面积，本文定义主用户的效用函数如下：
+Up(RJ = c/严 R：+cvw(7) p^27rldl+ £ csw(l)A27tldl	(3-57)
+~5~~  	E			F
+其中。是主网络从自己的用户获得的收益，注意到本文不区分主用户的位置。 每个主用户贡献c,的收益给主网络，E和F分别是主网络通过将自己的频谱租 赁给灰区和白区的次用户得到的收益。在灰区，与主网络发射机的距离为/的次 用户支付cy(M给主网络，其中?0 6(0,1］是频谱价格的折扣，因为灰区的频谱 质量比白区要差(次用户的传输可能被主用户打断)。在本章中，本文假设p。就
+119
+是主用户空闲的概率，直观上理解，主用户空闲的概率越大，频谱的价格越高。 w（/） = /exp（-引）［3-3］是加权函数，次用户距离主用户越远，加权函数越小。在 白区，距离主用户发射机为/的次用户支付曹（/）给主网络，注意到次用户的支 付随着距离/的增加而减小。经过一些变换，主网络的效用函数表示如下：
+Up（RJ = CpW + 2血// 七；斌）
+k	（3-58）
++2如处苛5（也险一:预+叽）
+K
+黑区半径&的最优值即可以通过最大化效用函数《,（"）获得。因为Up （&）的 复杂性，K最优值没有闭式解。在下文的数值结果中，本文将展示g的最优值， 以及A, K和Po对它的影响。
+3.5.4过渡区的存在性
+过渡区可以通过调节系统参数来消除，如下述定理。
+定理3-6：过渡区存在的条件如下：
+您話» =［旳	（如+ 罗。（5）＞C （3-59）
+I	气,丿
+其中
+W *
+证明：当&＜&,即妙＜&的时候，灰区和白区之间的过渡区存在，否则 灰区的外边界就是白区的内边界，过渡区被消除。本文将（3-36）中依的值和（3-52） 中R3的值代入不等式＜ &，即得到这个定理。
+# 因此过渡区消失的条件是：
+WC	（3-60）
+注意到函数/（［為）是与和孔的减函数，这意味着当身或貝足够大的时候,
+（3-60）满足，此时过渡区将会消失。也就是说，放松对虚警概率和误检概率的 约束可以消除过渡区。另外，C是K和N的增函数，因此当*或N增大的时候，
+（3-60）满足，过渡区也会消失。
+在过渡区内部，时间维度的频谱机会不存在，因为此时误检概率太大，次用 户频谱检测的性能已经和一些标准，比如IEEE 802.22相冲突。注意到本文推导 120
+&的时候使用了 Markov不等式，因此足是实际白区半径的一个上界，过渡区内 仍然存在空间维度频谱机会，可以在过渡区部署一些釆用underlay方式通信的次 用户，但是过渡区的次户要进行严格的功率控制，以避免对主用户的严重干扰。
+本文发现可以通过放松对误检概率和虚警概率的约束来消除过渡区，但是这 会给主用户带来额外的干扰，另外也会降低频谱利用率。而另一种消除过渡区的 方法是将过渡区改造为灰区，即灰区的次用户可以和过渡区的次用户共享频谱检 测的结果(例如通过认知数据库)，这样过渡区的次用户可以利用时间维度频谱 机会，而不会对主用户造成严重干扰。釆用这种方式，灰区的外界可以扩展到白 区的内界，即过渡区消失了。但是这种方法的缺点是需要灰区的次用户和过渡区 的次用户协作，这会带来系统设计的复杂性。另外，如果认知数据库里面频谱的 状态没有及时更新，过渡区的次用户将会获得错误的认知信息，从而可能给主用 户带来干扰，因为这部分次用户不是部署在白区的。
+3.6仿真结果与分析
+3.6.1三区的性能
+在图3-5中本文展示了三区划分对认知无线网络性能的提升，图中给出了认 知网络和容量与次用户发射功率的关系。本文对半径为R = 400m的圆盘内所有 的次用户可达数据速率求和，得到了次网络的和容量。如图3-5所示，次网络的 和容量随着次用户发射功率［的增加而增加。然而，当£足够大的时候，次网络 的和容量增长已经不明显，因为&相应地增长了。如图3-5 (a)所示，当主用 户空闲的概率为比较大的时候，与文献［3-9］中的PER策略相比，在三区划分方 案下次网络的和容量提升较为明显。然而，当p。较小的时候，次网络的和容量 提升比较少，因为在这种情况下时间维度频谱机会比较少，如图3-5 (b)所示。
+3.6.2灰区的半径
+在图3-6中本文给出灰区备选半径和鼻，与，匝的关系，其中上、中、 下三个曲面分别是N = 200 , N = 100和N = 50对应的结果。注意到灰区的半径 随着频谱检测样本数N的增加而增加，因为随着N的增加，频谱检测的精度也 得以提升，因此灰区的半径会增加。另外，爲也随着鼻和号的增加而增加，这 意味着对虚警概率和误检概率约束的放松可以提升灰区的半径，但是这会因为误 检概率的增加而增大对主用户的干扰，同时让部分次用户因为虚警概率的增加失 去部分频谱机会。本文分析噪声的不确定性对灰区半径的影响，得到图3-7,其 中本文展示了灰区的备选半径罗和N的关系。注意到爲随着q的增加而减小，
+121
+
+图3-6灰区备选半径爲和的关系，对于a = 3,* = 100W,cr：. =10* W/Hz,
+122
+对于三个曲面，N的值分别是50, 100和200。
+
+图3-7考虑噪声不确定性的灰区备选半径玲与N的关系，对于a=3, 5=昱=0.1,
+
+*=100W, O-^IO^W/Hzo
+3.6.3白区的半径
+图3-8对比了用精确方法得到的白区半径和用补充方法得到的白区半径。其 中精确方法是用次用户对主用户的聚合干扰的精确值计算白区半径，补充法是用 聚合干扰的上界计算白区半径。精确方法只有当路损因子a是偶数的情况下才能 得到聚合干扰的闭式解，而补充方法对任何路损因子都适用，但是补充方法得不 到聚合干扰的闭式解，所以精确方法和补充方法各有利弊。因为补充方法的聚合 干扰较大，所以它得到的白区半径是一个上界，这在图3-8中表现为补充方法得 到的白区半径比精确方法得到的白区半径要大。
+图3-9中，本文展示了白区半径&和黑区半径K的关系，以次用户的发射功 率《为参考变量。注意到用随着A的增加而增加，因为当黑区扩张的时候，白 区应该收缩（白区的内半径名应该增加），以控制对黑区边缘主用户的干扰。注 意到&的增加会增加主用户的保护区域，与此同时会减少次用户的频谱机会，因 为白区收缩了（&增加了）。因此&和&的关系揭示了主次用户利益的博弈。尽 管在图3-9中本文假设&的值可以任意小，但是对于和公共安全相关的主用户网 络始终会存在一个最小的主用户保护区［3-13］。图3-10以主用户发射功率*为参 考变量，考察了白区半径&和黑区半径&的关系。随着片的增加，&在减小， 因为当主用户的发射功率*增加的时候，主用户的接收信噪比得到提升，主用户 123
+
+对干扰和噪声的容忍程度将会增加，这样白区就可以向内扩张。
+本文在图3-11中分析了噪声不确定性对白区半径的影响，图中展示了犬3和& 的关系。注意到氏随着Q的增加而增加。因为P描述了噪声的不确定性，所以 这意味着噪声（功率）的不确定性越大，&就会越大，以鲁棒地避免次用户对 主用户的干扰。
+
+
+
+^ = 0.01Users/m2, Co = 0.1bps/Hz ,	=10-6W/Hz, 0 = 0.3, a = 4, "5W,
+*=200W。
+
+
+
+图3-9不同次用户发射功率R下白区半径&和黑区半径K的关系，对于2 = 0.0lUsers/m2,
+124
+
+*=200W, CQ = O.lbps/Hz , crj 二 IO_6W/Hz , (3 = 0.3 , a = 4。
+350,
+300 250
+图3-10不同主用户发射功率*下白区半径&和黑区半径&的关系，对于
+2 = 0.01Users/m2, [=1W, Co =0.1bps/Hz, a^lO^W/Hz,尸= 0.3, a = 4o
+100»
+0些
+20	40
+2 = O.OlUsers/m2, g = 1W , * = 200W , Co = O.lbps/Hz ,死= 10_6W/Hz , 0 = 0.3 ,
+a = 4 o
+3.6.4过渡区
+过渡区存在的条件在图3-12中给出，其中在不同的C值之下，本文得到了
+125
+一族曲线。当（5為）对在曲线下方的时候，过渡区存在。以（5,為）=（o.2,o.i）为 例，当C = 4.5的时候，过渡区被消除，但是当C = 4的时候，过渡区存在。因此
+■比较大的时候，过渡区比较容易被消除。因为。=号・ 增加都让过渡区更容易被消除。一般地说，消除过渡区可以让系统架构更加简单, 因为在过渡区内部的次用户需要进行功率控制，以避免对主用户的干扰。过渡区
+可以通过调整频谱检测的参数来消除，比如N	和金。图3-12展示了通过增 加与或者貝可以消除过渡区，然而这会因为误检概率的增加而给主用户带来更 多的干扰，或者因为虚警概率的增加而减少次用户的频谱机会。
+在图3-13中本文给出在噪声不确定性存在的条件下过渡区宽度和次用户发 射功率E的关系。注意到过渡区宽度随着乙的增加而增加，因为当［增加的时 候，来自白区的次用户对主用户的干扰更大了，因此过渡区需要扩张，以隔离白 区的次用户，保护主用户不受白区内次用户的严重干扰。
+在图3-14中本文给出在噪声不确定性存在的条件下过渡区宽度和主用户发 射功率*的关系。注意到随着主用户发射功率*的增加，过渡区宽度在减小，因 为*的增加会向外扩张灰区，与此同时向内扩张白区，因此过渡区的宽度会减小。 注意到过渡区可以通过调整乙和*来消除，即当*足够大或者Ps足够小的情况 下，过渡区将会消失，这也在图3-13和图3-14中展示。
+本文分析噪声不确定性对过渡区的影响，在图3-13和图3-14中，当噪声不 确定性增加的时候，即戶增大的时候，过渡区的宽度将会变大，因为当p增大的 时候，戏将会减小，与此同时&将会增大。
+
+
+
+7?= 100m , Co = O.lbps/Hz , < = 10-6 W/Hz，/? = 0.3 , = 4 , N=100 ,与== 0.1
+
+
+
+图3-14噪声不确定性存在的，情况下过渡区宽度和主用户发射功率*的关系，对于
+&=100m , C。= 0. Ibps/Hz , cr； =10-6 W/Hz，" = 0.3 , a = 4,2=100 ,与=盆=0.1。
+3.6.5最优的黑区半径
+在图3-15中，本文给出主网络效用函数U,和黑区半径*的关系，不同的刀 值作为参考变量。当刀增加的时候，Up也增大了，因为在这种情况下频谱的价 格上升了，主网络通过动态频谱租赁从次网络得到的收益也增加了。在图3-15 中，主用户收益Up有最大值，图中的实点标明了主用户收益的最大值以及对应 的最优黑区半径代。注意到当4更大的时候，即频谱的价格更高的时候，最优的 &将会更小，这意味着主网络由于可以通过动态频谱租赁从次网络获得更多的收 益，所以主网络愿意租借更多的频谱机会给次网络。
+在图3-16中本文给出主网络效用函数U,与劣的关系，不同的k值作为参考 变量。注意随着k的减小，Up的值在增大，因为更小的k值意味着更高的频谱 价格，因此主网络可以通过动态频谱租赁从次网络那里获得更多的收益。当K增 加的时候，頻谱价格相应地降低。因此当k足够大的时候，比如在图3-16中 ^ = 0.01的时候，主网络不愿意将频谱租赁给白区的次网络，因为主网络通过频 谱租赁得到的收益不足以补偿黑区之外的主用户的损失。类似图3-15,当K减小 的时候，频谱的价格将上升，主网络将乐意租赁更多的频谱给次网络，因此最优 的黑区半径《将会减小。
+在图3-17中，本文给出主网络效用函数",与&的关系，不同的R,值作为参 考变量。注意到17,随着p°的增加而增加，因为在这种情况下灰区的频谱价格更 高，所以主网络的收益得到了提升。然而，当&比较小的时候，对于不同&值， 主网络的收益几乎一样，因为在这种情况下灰区的面积较小，灰区内次用户数量 较少。注意到R可以理解为灰区内频谱价格的折扣，因此当&增加的时候，主 网络能从灰区内的次用户获得较多的收益。另外，因为c,〉c,（对于主网络，本 文假设它主要的收益来自它自己的用户，从次网络得到的收益只是补充性的）， 所以当&增加的时候，主网络将能从主用户和灰区内的次用户获得更多的收益， 与此同时从白区内的次用户那里获得的收益将会降低。因此本文得到了一个有趣 的结论：当灰区内次用户给主用户支付得少，即折扣R更小的时候，主用户将 会减小黑区半径&以给次用户提供更多的空间维度频谱机会，这样就能通过动态 频谱租赁从白区内的次用户获得更多的收益，如图3-17所示，最优的&随着为
+128
+
+的减小而减小。
+
+
+
+2 = 0.01Users/m2,	= 10, cs = 1,	= 0.001, p0 = 0.5, Co =0.lbps/Hz ,
+0-2 ^IQ-6W/Hz, 0=0.3, a = 4o
+3.5 X1°5
+
+
+
+2
+d
+Z)
+1.5
+
+
+
+图3-16对于不同k值，主用户冋络的效用函数Up与人|的关系，对于4“ = 0.05Users/m2,
+/l = 0.01Users/m2, cp =10 , cx = 1 , A = 4 f p0 = 0.5 ,	= O.lbps/Hz ,
+cr^ = io*6W/Hz, /? = 0.3, a = 4。
+129
+北京邮电大学工学博士论文
+
+
+
+图3-17对于不同为值，主用户网络的效用函数U.与代的关系，对于Ap = 0.05Users/m2,
+A = 0.01Users/m2, % = 10, q =l, x = 0.001, A = 2 , Co =0.1bps/Hz ,
+0-^=1 O^W/Hz, /? = 0.3, a=4o
+
+1200-
+1000
+1100 1120 1140 1160 1180 1200 1220 1240 1260 1280
+R1 (m)
+图3・18在北京的一个典型IEEE 802.22场景下，对于不同的［值，丛与打的关系，对于
+2 = 0.0lUsers/m2, *=200KW , Co =0.1bps/Hz , crj = 10"6 W/Hz , /3 = 0.05 以保
+护主用户，a =4 O
+130
+3.6.6典型IEEE 802.22的应用场景
+本文应用三区划分的架构在一个典型的IEEE 802.22场景，其中主用户发射 机是一个电视塔，工作在DS-33频道，发射功率为200KW。次用户是认知家庭 基站,这是认知无线局域网，目标是利用电视网络的空间和时间维度的频谱空洞。 认知家庭基站的发射功率从10mW到100mW不等[3-28]»在本文设定的场景中 本文描绘了&与&的关系，如图3-18所示。注意到&随着&的增加而增加，这 与前面仿真的结论一致。另外，白区与黑区非常接近，因为次用户的发射功率相 比主用户特别微小。在这种情况下，空间维度频谱机会比时间维度频谱机会要多。
+3.7结论
+在本章中，本文为空时频谱检测和接入设计了三区划分的架构，包括黑区、 白区和灰区。灰区的半径根据频谱检测的虚警概率和误检概率约束得到，而白区 半径通过分析次用户到主用户的聚合干扰以及对黑区边缘主用户的影响得到。另 外，本文通过动态频谱租赁的视角得到最优的黑区半径。本文也分析了在多个主 网络的场景下的三区边界。此外，灰区和白区之间的过渡区可能存在，本文得到 了过渡区存在的条件。因此，本文得到了一个相对完备的三区划分架构，这个架 构可能指导认知无线网络中的空时频谱检测和接入的研究。最后，本文展示了一 些数值仿真结果，以呈现三区中关键参数之间的关系。
+参考文献
+[3-1] J. Mitola, '"Cognitive radio: An integrated agent architecture for software defined radio," Ph.D. dissertation, KTH Royal Inst, of TechnoL, Stockholm, Sweden, 2000.
+[3-2] B. Wang and K. J. R. Liu, "Advances in Cognitive Radio Networks: A Survey," IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1, pp. 5-23, Feb. 201k
+[3-3] R. Tandra, S. M. Mishra, and A. Sahai, 44What is a spectrum hole and what does it take to recognize one?” Proceedings of the IEEE, vol 97, no.5, pp. 824-848, May 2009.
+[3-4] R. Tandra, A. Sahai and V. Veeravalli, "Unified Space-Time Metrics to Evaluate Spectrum Sensing,” IEEE Communications Magazine, vol. 49, no. 3,
+131
+pp. 54-61, Mar. 2011.
+[3-5] T. Do and B. L. Mark, “Joint Spatial-Temporal Spectrum Sensing for Cognitive Radio Networks,95 IEEE Transactions on Vehicular Technology, vol. 59, no. 7, pp. 3480-3490, Sept. 2010.
+[3-6] G. Ding, Q. Wu and Y.-D. Yao, et al, uKemel-based learning for statistical signal processing in cognitive radio networks: Theoretical foundations, example applications, and future directions/9 IEEE Signal Processing Magazine, vol. 30, no.4, pp. 126-136, July 2013.
+[3-7] Q. Wu, G. Ding, J. Wang, et al., "Spatial-Temporal Opportunity Detection fbr Spectrum-Heterogeneous Cognitive Radio Networks: Two Dimensional Sensing," IEEE Transactions on Wireless Communications, vol. 12, no. 2, pp. 516-526, Feb. 2013.
+[3-8] G. Ding, J. Wang and Q. Wu, et al, "Spectrum sensing in opportunity heterogeneous cognitive sensor networks: How to cooperate?,, IEEE Sensors Journal, vol. 13, no. 11, pp. 4247-4255, Nov. 2013.
+[3-9] M. Vu, N. Devroye and V. Tarokh, "On the Primary Exclusive Region of Cognitive Networks,5, IEEE Transactions on Wireless Communications, vol. 8, no. 7, pp. 3380-3385, July 2009.
+[3-10] A. Bagayoko, P. Tortelier and I. Fijalkow, “Impact of shadowing on the primary exclusive region in cognitive networks," European Wireless Conference, pp. 105-110, Apr. 2010.
+[3-11] J. Dricot, G. Ferrari and F. Horlin, et al., "Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks,” IEEE International Conference on Communications (ICC) Workshops, pp. 1-5, May 2010.
+[3-12] X. Hong, C. X. Wang, H. H. Chen and Y Zhang, ''Secondary spectrum access networks,” IEEE Vehicular Technology Magazine, voL4, pp. 36-43, June 2009.
+[3-13] FCC, Enabling Innovative Small Cell Use In 3.5 GHZ Band NPRM & Order, Doc. 12-148, Dec. 2012.
+http://www.fcc.gov/document/enabling-innovative-smalkcell-use-35-ghz-band -nprm-order.
+[3-14] J. Ma, G. Li, and B. H. Juang, “Signal processing in cognitive radio,5, Proceedings of the IEEE, vol 97, no.5, pp. 805-823, May 2009.
+[3-15] G. Ganesan, Y. Li, B. Bing and S. Li, “Spatiotemporal Sensing in Cognitive Radio Networks/5 IEEE Journal on Selected Areas in Communications, vol.
+132
+26, no. 1, pp. 5-12. Jan. 2008.
+[3-16] Y. C. Liang, Y, Zeng and E. C. Y. Peh, et al., "Sensing-Throughput Tradeoff for Cognitive Radio Networks,” IEEE Transactions on Wireless Communications, vol. 7, no. 4, pp. 1326-1337, Apr. 2008.
+[3-17] F. F. Digham, M. S. Alouini and M. K. Simon, “On the Energy Detection of Unknown Signals Over Fading Channels,” IEEE Transactions on Communications, vol.55, pp. 21-24, 2007.
+[3-18] M. Vu and V. Tarokh, “Scaling laws of single-hop cognitive networks,IEEE Transactions on Wireless Communications, vol. 8, no. 8, pp. 4089-4097, Aug. 2009.
+[3-19] J. Lee, H. Wang and J. G. Andrews, et al., "Outage Probability of Cognitive Relay Networks with Interference Constraints,5, IEEE Transactions on Wireless Communications, vol. 10, no. 2, pp. 1326-1337, Feb. 2011.
+[3-20] M. Song, C. Xin, Y. Zhao and X. Cheng, “Dynamic spectrum access: from cognitive radio to network radio,5, IEEE Wireless Communications Magazine, vol. 19, no. 1, pp. 23-29, Feb. 2012.
+[3-21] E. Axell, G. Leus, E.G. Larsson and H.V. Poor, “Spectrum Sensing fbr Cognitive Radio: State-of-the-art and recent advances,5' IEEE Signal Processing Magazine, vol. 29, no. 3, pp. 101-116 , May 2012.
+[3-22] Rahul Tandra and Anant Sahai, “SNR Walls fbr Signal Detection/5 IEEE Journal of Selected Topics in Signal Processing, vol. 2, no. 1, pp. 4-17, Feb.
+2008.
+[3-23] S. K・ Jayaweera and T. Li, "Dynamic Spectrum Leasing in Cognitive Radio Networks via Primary-Secondary User Power Control Games,” IEEE Transactions on Wireless Communications, vol. 8, no. 6, pp. 3300 - 3310, June
+2009.
+[3-24] S. K. Jayaweera, G. Vazquez-Vilar and C. Mosquera, “Dynamic Spectrum Leasing: A New Paradigm for Spectrum Sharing in Cognitive Radio Networks,55 IEEE Transactions on Vehicular Technology, vol. 59, no. 5, pp. 2328-2339, June 2010.
+[3-25] M. Barrie, S. Delaere and G. Sukareviciene, et aL, “Geolocation Database beyond TV White Space? Matching Applications with Database Requirements,5, IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 467-478, 2012.
+[3-26] V. Petrini and H.R. Karimi, “TV white space databases: Algorithms fbr the
+133
+calculation of maximum permitted radiated power levels： IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 552-560, 2012.
+[3-27] J. Heo, G. Noh and S. Park, et aL, “Mobile TV White Space with multi-Region Based Mobility Procedure,” IEEE Wireless Communications Letters, voL 1, no. 6, pp. 569-572, Dec. 2012.
+[3-28] 3GPP TR 36.814, "Further advancements fbr E-UTRA physical layer aspects (Release 9)," 2010.
+[3-29] Z. Wei, Z. Feng, Q. Zhang and W. Li, “Three regions fbr space-time spectrum sensing and access in cognitive radio networks/5 IEEE Global Communications Conference (GLOBECOM), pp. 1283-1288, Dec. 2012.
+[3-30] I. S. Gradshteyn and L M. Ryzhik, Table of Integrals, Series, and Products, 7th edition. Academic Press, 2007.
+134
+第四章认知无线网络角度维频谱机会
+4.1研究背景
+在第三章中，本文研究了认知无线网络中的空时频谱机会，并且提出三区划 分的概念，以实现认知无线网络空时频谱检测和接入。仿真证明了空时频谱接入 可以提升认知无线网络容量。在本章，为了进一步提高认知无线网络的频谱利用 效率，本文探索认知无线网络利用角度维度频谱机会的情形。
+认知无线网络可以灵活地利用多个维度的频谱空洞，进而提升频谱利用效率, 同时提升认知无线网络的容量［4-1］［4-2］［4-3］0在第二章和第三章，本文探索了空 间和时间维度的频谱空洞。在这章中，本文进一步探索角度维度的频谱空洞，并 且从容量和连通性两方面验证认知无线网络利用角度维度频谱空洞的优势。容量 可以衡量网络的效率，而连通性可以衡量网络的可靠性。容量和连通性的研究可 以更加全面地展示认知无线网络的性能。
+Gupta和Kumar在文献［4-4］中得到了大规模无线网络的容量，自从他们开创 性的成果发表以来，大规模无线网络的容量尺度律得到了广泛的研究.对于"个 均匀随机分布在单位面积上的自组织（adhoc）节点，Gupta和Kumar揭示了网 络的单点容量是€）（1/丿橱）o而最近关于认知无线网络容量尺度律的研究得到 了类似的结果。在文献［4-5］中，Jeon等人研究了认知自组织网络（CRAHNs, Cognitive Radio Ad Hoc Networks）的容量尺度律，得到结论：在〃个次用户节点 和刀个主用户节点共存的异构场景，次用户能获得和单独网络同样的容量尺度律 ©（l/^lognjo在文献［4-6］中，Yin等人在一个更加实际的场景中获得了同样的 结论，即次用户只知道主用户发射机的位置，而不知道主用户接收机的位置。这 个结论进一步被Huang等人在文献［4-7］中用一个更加普适的模型验证。
+在现存的关于认知自组织网络容量尺度律的文献中，仅仅分析了认知网络利 用空时维度频谱空洞的情形，利用角度维度频谱空洞的认知无线网络容量分析还 是一个空白。Yi等人在文献［4-8］, Li等人在文献［4-9］中证明了釆用方向性传输 的传统网络能能够获得比传统网络单点尺度律容量履）更好的结果。在 文献［4-10］中，Zhao等人证明：通过利用角度维频谱空洞，认知无线网络的成功 通信概率和频谱效率都能获得提升。Zhang等人在文献［4-11］中分析了认知mesh 网络釆用全向天线和定向天线的情形，他们证明了无线mesh网络采用定向天线 具有容量增益。进一步，Dai等人在文献［4-12］中研究了多信道无线网络采用方 向性天线的情形，他们证明了通过在多信道网络中部署定向天线，网络容量可以 提升，网络的连通性也可以提升，与此同时网络内部的干扰可以降低。Wang等
+135
+
+人在文献［4-13］中研究了四维频谱空洞，即时间维度、频谱维度、位置维度和角 度维度的频谱空洞。所有这些结果证明了方向性传输可以增加次用户的频谱机会, 最终提升次用户网络的性能。在这一章中，本文分析大规模认知无线网络釆用方 向性传输的容量尺度律。考虑如图4-1所示的例子，主用户的保护区(即图中的 圆)覆盖了整个区域。这时根据文献［4-5］和文献［4-6］中的网络协议，次用户其实 没有传输机会。然而，如果次用户方向性地传输，那么次用户对主用户的干扰可 以降低，次用户仍然有传输机会，也就是说，次用户的容量得到了提升。
+
+■主用户接收机•次用户接收机。次用户发射机
+图4-1次用户网络利用角度维度频谱空洞的情形
+在本章中，本文验证了如果次用户的发射机主瓣宽度为在定 IJog”丿
+向发射-全向接收(DTOR, Directional Transmission and Omni Reception)模式中， 次用户能够获得单点吞吐量』聘 j，这比没有定向传输的容量高®(log〃)倍。
+(1	)
+类似地，如果次用户接收机的主瓣宽度为。=。亠,在全向发射-定向接收 ［log"
+(OTDR, Omni Transmission and Directional Reception)模式下，次用户能够获 得单点吞吐量容量。(聘方)。如果毎｛島危|，在定向发射-定向接收
+(DTDR, Directional Transmission and Directional Reception)模式下，次用户能 够获得单点吞吐量。［控Z 性传输的方案，在DTOR模式的次用户网络吞吐量增益为竺；如果I —
+8	［log”丿
+那么相比于没有方向性传输的方案，OTDR模式下的次用户网络吞吐量增益是 与；如果酣=亠］,那么相比于没有方向性传输的方案，在DTDR模式下 放	［log”丿
+136
+次用户网络的吞吐量增益是竺0
+s（/>
+连通性是衡量随机ad hoc网络的另一个关键的参数，自从Gupta和Kumar 开创性的成果［4-14］之后，大规模无线网络的渐进连通性得到了广泛的研究。假 设"个ad hoc节点被随机部署在单位圆盘之内，他们证明：如果每个节点能以 某个功率等级发射，以覆盖面积为也的区域，那么当c（〃）-»oo的 n
+时候网络能高概率地连通，也就是说，以高概率存在一条路径连接任何两个节点。 Zhang等人在文献［4-15］中考虑了 k-连通性的概念，即在任何两个节点之间至少 存在k个不相交路径的情形。因为主用户和次用户之间的相互影响，认知ad hoc 网络（CRAHN）的连通性研究不同于传统的ad hoc网络。在认知无线网络中， 因为主用户业务在空间和时间维度的动态性，次用户的信道状态是动:态的［4-16］。 Ren等人在文献［4-16］中使用连续渗透理论和遍历性理论推导了认知ad hoc网络 的时延和连通性尺度律。Ao等人在文献［4-17］中使用渗透理论推导了协作认知无 线网络的连通性规律。在文献［4-18］中，Abbagnale等人提出了基于拉普拉斯矩阵 的方法来衡量认知ad hoc网络的连通性。	...
+然而，现有研究认知ad hoc网络连通性的文献很少考虑路由方卷而考虑次 用户的路由方案可以更好地分析网络的实际部署和运行方案对网蟲通性的影 响。在本章中，本文发现路由方案对于认知ad hoc网络的连通性有着显著的影 响。考虑一个单位区域，假设两个ad hoc网络随机部署，即有个节点的主网 络和有"个节点的次网络，且"和別的关系是” =»2气HDP-VDP路由方案在ad hoc网络容量尺度律分析中得到了广泛应用。当使用HDP-VDP路由的时候，当 0〉1,本文可以保证单个次用户的连通性；当J3>2,本文能够保证一个单独次 用户路径的连通性。本文也分析了次用户采用环绕路由的连通性，且证明了环绕 路由可以提升次用户网络的连通性，当乃>1的时候，既能保证单个次用户的连 通性，又能保证单个次用户路径的连通性。因此为了保证次用户网络的连通性， 次用户的密度必须在量级上比主用户的密度要大，另外更灵活的路由方案可以提 升次用户网络的连通性。本文的研究有助于指导认知无线网络的部署和路由设计。
+本章接下来的各部分安排如下。4.2节首先介绍主次用户的网络协议和定义， 然后介绍角度维频谱机会的概念，并且介绍其统计特性。4.3节分析利用角度维 度频谱空洞的认知无线网络容量。4.4节分析认知无线网络的连通性。4.5节总结 本章的内容。
+137
+4.2网络协议和定义
+4.2.1主次用户的网络协议
+假设m个主用户和"个次用户均匀分布在单位正方形内部，主次网络共享相 同的地理空间和无线频谱。主用户可以不考虑次用户，而次用户要避免对主用户 的干扰。本文假设〃和m满足关系n = ",其中0是一个正数。信道的功率增 益是g(r) =丄，其中尸是发射机和接收机之间的距离，«＞2是路损因子。主次 r
+网络都是随机ad hoc网络，主次网络的工作协议与文献［4-6］的工作协议相似， 不同点在于两个方面：1)本文假设次用户知道主用户接收机的位置，因此主次 用户都釆用9-TDMA协议；2)次用户釆用方向性传输，因此一个活动次用户栅 格可能同时支持多条传输链路。其中第二条是本文与文献［4-6］的主要区别。主网 络的工作协议如下：
+＞将单位正方形区域划分为小正方形，其面积为为=A囈,K＞1。这样的一 个小正方形称为一个主用户栅格。
+＞将主用户栅格分簇，每个簇内有9个主用户栅格，主用户釆用9-TDMA传输 协议，即主用户的每个传输帧包含9个传输时隙，如图4-2所示，每个时长 为tp的传输时隙分配给簇内的一个主用户栅格传输。在每个主用户传输时隙, 簇内的主用户栅格按照循环的方式交替处于活动状态，向相邻的栅格传输数 据，如图4-3所示。
+＞如图4-5所示，主用户的数据按照水平数据路径(Horizontal Data Paths,HDPs) 和垂直传输路径(Vertical Data Paths, VDPs)从源节点传输到宿节点，这种 路由方式标记为HDP-VDP路由。在一个活动栅格里面的节点轮流担任中继 节点传输数据，以维持节点的能量均衡。
+＞由于有多条主用户路由通过一个主用户栅格，同时一个栅格内部也在产生数 据，所以当一个主用户栅格处于活动状态时，它将自己的传输时隙进一步分 为多个包时隙，每个包时隙用于为一条经过或者源于这个栅格的主用户路由 传输数据，如图4-2所示。关于通过一个主用户栅格的路由数目，本文在接 下来的引理中予以研究。
+＞每个主用户栅格的节点只能向相邻栅格的主用户发送数据，也就是说，在每 个传输时隙，主用户发射节点的发射功率是P.af ,其中*是常数。
+138
+
+
+主用户包时隙
+
+
+图4-2主用户的帧格式，这个图在文献［4-6］图3的基础上修改，将25-TDMA改为9-TDMA
+
+图4-3循环传输方案：以四个簇为例，每个簇内有9个栅格，9个栅格循环处于活跃状态，
+向相邻柵格传输数据
+
+次网络的工作协议如下：
+＞将单位正方形划分为小正方形，其面积为归箜这样的一个小 n
+正方形称为一个次用户栅格，一个主用户的保护区是指包含9个次用户栅格 的正方形，其中主用户接收器在中间的栅格内。当次用户发射机落到主用户 保护区的时候，次用户将检测角度维度的频谱空洞，如果没有角度维度的频 谱机会，次用户将缓存自己的数据，等到另一个时间维度或者角度维度频谱 机会岀现的时候传输数据，次用户的传输釆用多跳路由协议。
+＞将次用户栅格分簇，每个簇有9个次用户栅格。次用户釆用9-TDMA传输方 案，类似文献［4-6］中的传输方案，一个次用户的传输帧长等于主用户的一个 传输时隙，一个次用户的传输时隙进一步划分为次用户的包时隙，用于传输
+139
+经过或者源于这个次用户栅格的次用户路由的数据，如图4-4所示。
+> 次用户只有检测到它与最近主用户发射机的距离不小于J《/2,才能发射。
+>如图4-5所示,次用户的数据按照水平数据路径(Horizontal Data Paths,HDPs) 和垂直传输路径(Vertical Data Paths, VDPs)从源节点传输到宿节点，这种 路由方式标记为HDP-VDP路由。次用户的发射机使用DOA算法来搜索角 度维度频谱空洞。如果一个频谱空洞存在，次用户就采用功率匕。/来传输， 其中《是常数。不同于文献［4-5］和［4-6］中的方案，在这里一个活动次用户栅 格内部可以有多个次用户传输数据，只要它们能够找到频谱机会。
+
+图4-4次用户的帧格式，这个图在文献［4-6］图4的基础上修改，将25-TDMA改为9-TDMA
+
+
+
+图4-5 HDP和VDP路由示意
+
+140
+
+4.2.2链路容量、吞吐量容量和连通性的定义
+第』•个主用户收发链路的容量如下:
+
+
+
+其中乌⑦是第i个主用户发射机的发射功率，fi）和Xp„（i）分别是第i个 主用户发射机和接收机的位置。I,。）是第,•个主用户接收机接收到的来自主网络 的聚合干扰。妇。）是第I•个主用户接收到的来自次用户网络的聚合干扰。N。是 加性高斯白噪声的功率谱密度。在本章中，本文将带宽归一化为1。次用户的收 发链路的数据速率同理如下:
+']| EC/)g(|xw)-弋湛丿)||)、
++M+w)+w)~~
+其中月（丿）是第，个次用户的发射功率，和X"（丿）分别是第丿个次用户 发射机和接收机的位置，/,（力是第丿个次用户接收到的来自次用户网络内部的聚 合干扰，始侦）是第丿个次用户接收到的来自主用户网络的聚合干扰。
+另外，吞吐量容量定义如下：
+吞吐量容量:如果具有&个节点的网络的单点吞吐Xper node throughput） 是人（盼，那么意味着网络中的每个发射节点可以以人（幻bps的速率发射数貫, 而整个网络能够维持稳定工作。
+在本章中，本文分别标记主用户和次用户的单点吞吐量容量为人"和％（"）, 这个标记符号与文献[4-5][4-6]相同。
+因为主用户的存在，次用户栅格有可能落入主用户的保护区，从而导致次用 户通信链路的中断。假设m个主用户随机部署在单位面积内，如果本文考虑主 用户业务在时间维度的动态性，那么m可以认为是活动主用户的数目。本文下 面提供三个连通性的定义，从三个层面考察了网络连通性。
+1.单点的连通性：对于一个特定的次用户节点，如果它以高概率不是一个 孤立的节点，那么本文就可以保证这个节点的连通性；
+2.单路径的连通性：对于一个特定的次用户源-宿对，如果以高概率存在一 条连接它们的路径，那么本文就可以保证这条路径的连通性；
+3.全网的连通性：如果所有的节点都以高概率不孤立，那么本文就可以保 证全网的连通性。
+141
+4.2.3角度维度频谱机会的定义
+在这一部分，本文首先提出角度维度频谱机会的概念，然后本文在引理4-2 和引理4-3中给出角度维度频谱机会的统计特性，最后本文在引理4-4中研究次 用户干扰区中的主用户数目。
+如图4-6所示，在一个圆形区域，在圆心处有一个次用户和若干随机分布的 主用户，标记次用户的位置为X,标记主用户的位置为氐匕,…,匕，其中£是环 绕次用户的主用户的数目，例如在图4-6中，本文有L = 5.画一条参考线"， 其角度为0,如图4-6所示。标记射线務和髙之间的角度为％,那么对于［•<£ 的情况，匕匕XI富为：
+A
+Z*Z+i=%+i-a,=A,	(4-3)
+其中A,•代表了对于次用户的一个角度维度频谱机会。如果次用户发射机可以 在这个角度内将信息发送给次用户接收机，那么对主用户的干扰是很小的(如果 本文忽略方向性天线的旁瓣)。当i = Z的时候，角度ZYlXY{如下：
+A
+/LYLXY}=ay-a,+2n=\l	(4-4)
+这是另一个角度维度频谱机会。次用户可以使用DOA (Direction of Arrival) 估计算法来发现角度维度频谱机会。在多个主用户存在的时候，次用户可以使用 MUSIC (Multiple Signal Classification)算法来发现多个主用户的方向。另外， 次用户必须使用一个天线阵列来发现角度维度频谱机会，同时利用夭线阵列进行 波束成形，以实现方向性传输。
+
+
+0次用户发射机♦次用户接收机■主用户
+a4-6次用户的角度维度频谱机会
+对于一个周围有z个主用户的次用户，它有z个角度维度频谱机会(即有z
+142
+个角度)。当］增加的时候，这些角度将会变小，因此利用角度维度频谱空洞将 会更加困难。角度维度频谱空洞的统计特性在下面的引理4-2和引理4-3中给出。
+引理4-1 (［4-25］)：对于一个随机变量X、,X2，...,Xl的递增序列，其中 X,J = 1,...,Z是［0,1］之间的均匀分布随机变量，假设r<s,则X,和X,之间的距 离Wrs =Xs-Xr的概率密度函数为：
+
+
+
+其中0 <	< 1 >且有：
+B{a,们=£(1 一瘁t dt,a>0,b>Q	(4-6)
+基于引理4-1,本文有下述引理。
+引理4-2： 一个角度维度频谱空洞(标记为△)的概率密度函数为：
+(4-7)
+并且△的期望值为:
+(4-8)
+证明：角度值序列A4...4l是一个随机变量序列，它们不是独立的，因 为有如下关系。
+£ A,. = In	(4-9)
+/=0
+然而，如图4-6所示，角度值=	是独立同分布随机变量，且服
+从0到2汗之间的均匀分布，%的概率密度函数如下：
+f(a) = —,0<a<27r	(4-10)
+In
+角度值a,(/ = l,2,...,Z)是递增序列，即％ <«2<...<«;。另外，
+= aM -at,i<L是随机变量aM和a、的距离。在次序统计量(Order Statistics) 的理论中，均匀分布随机变量的距离在引理4-1中给出［4-25］o令引理4-1中 s = r + l,这样Wr=Xr+l-Xr,且它的概率密度函数如下：
+反戚)=洁;(1-吧广,(4-11)
+令X,=x,=4〜u(0,l)。因为本文假定了关系Wr=Xr+i-Xr,所以本文有
+143
+
+丄=3,二%钊_%=2勿吧，根据公式(4-11),本文得到△，的概率密度函数如下:
+(4-12)
+其中在推导中本文使用了关系B(\,L) = -O尽管各个△，是不独立的，但是它 L
+们是同分布的，因此忽略下标尸，角度维度频谱空洞的概率密度函数如下；
+人0)= _	,0< J<2^	(4-13)
+2 71
+并且角度维度频谱空洞的期望如下：
+硏△]=『％0)。5 =者	(4-14)
+引理得证。
+#
+O次用户发射机
+□主用户发射机
+■主用户接收机
+图4-7次用户检测主用户发射机的方向
+在前面的讨论中，本文没有考虑方向性天线和图4-6中的“主用户”的细节。 如果本文假设图4-6中的“主用户”是主用户接收机，那么一切的假设和结论都 是合理的，但是主用户的接收机必须发射一个指示信号(Beacon Signal) [4-13] 以让次用户检测到。反之，如果本文假设图4-6中的“主用户”是主用户的发射 机，那么为了消除次用户对主用户接收器的干扰，两个角度的余量将是需要的。 如图4-7所示，虚线圆的圆心是在主用户发射机的位置，虚线圆的半径是主用户 的传输距离，如果*和乌是这两个圆的切点，那么对于次用户来说角度余量是 弓=/匕格和勻=匕*羽，当次用户的发射占用这两个角度的时候，有可能会 干扰主用户的接收机。因此在这种情况下次用户的角度维度频谱空洞大小为：
+144
+ZPtXP2=3-£t-£2	(4-15)
+如果次用户在角度沔之内进行方向性传输,那么次用户发射机对主用户 接收机的干扰可以得到控制。为了简化分析，本文假设5=蜘=£，因此角度维 度频谱空洞的大小为：
+△，= [△一 与-习「=[△一	(4-16)
+其中[*]' = max{*,0},且△，的统计特性在如下引理中给出。
+引理4-3： △'的概率密度函数是：
+九 0')= ——	,0<S'<2n-2£	(4-17)
+2兀
+且其均值为：
+E[△卜 土？二(4-18)
+『 L + 1
+证明：△'的累积分布函数(Cumulative Distribution Function, CDF)为： F(») = Pr(Af < 3'} = Pr{4< S' + 2e)=。暮’人(泗	(4-19)
+因此/V的概率密度函数是：
+Zv0') =当擊=人。'+ 2功	(4-20)
+ao
+经过一些变换，本文就能得到引理中的结论。
+# 注意到引理4-3是引理4-2当5 = 0的一个特例，因为£[△']<£[△],所以当 次用户检测主用户发射机的时候，角度维度频谱空洞比次用户检测主用户接收机 的情形要小。但是在后续的分析中，为了简单起见，本文釆用引理4-2的结论。 实际上，釆用引理4-3的结论也不会影响容量阶数的分析。
+当方向性天线的主瓣宽度有最小值&的时候，根据引理4-2, 一个角度维度 频谱空洞可用的概率为：
+Pr{A>5,J = h_绥)T0，当It0的时候	(4-21)
+I &)
+其中Z是在次用户干扰区中的主用户个数。次用户的干扰区是9个次用户栅 格构成的正方形，其中次用户的发射机在中心栅格。注意到在(4-21)中，Z个 主用户分布在一个圆形内部，但是在定义中，次用户的干扰区是一个正方形。不 过这种形状上的差异可以忽略，因为Pr仏〉&}的一个紧的上(下)界可以通过
+145
+考虑干扰区的外接圆(内切圆)来获得。次用户干扰区内主用户的数目Z的规律 在如下引理中给出。
+引理44标记在一个次用户的干扰区的主用户个数为Z,其中乙是"(或 者/«)的一个函数，那么对于不同的0值，本文有如下三个情形。
+1)当”>1的时候，对于任何正数£,本文有：
+limPr(Z>ff} = 0	(4-22)
+倍Too
+即匕将以概率1趋于0.
+2)当”=1的时候，本文有：
+9K	— J log n < £ < 9 Ke log n	(4-23)
+此式子将以高概率成立，即Z = 0(log»)o
+3)当#<1的时候，本文有：
+9K [S—丄)log " < L W	log 〃	(4-24)
+此式子将以高概率成立。
+证明：这个引理研究了次用户干扰区内主用户的个数。对于一个特定的次用 户干扰区，某个主用户= 落到这个次用户干扰区中的概率为 外=9《.=竺囈，这是一个贝努利事件。标记在次用户干扰区内主用户的个 n
+数为Z,其中£是一个服从参数为(0,/M)的贝努利分布随机变量，因此Z的期 望值如下：
+E[L\ = p„m = 9Kh"t log n	(4-25)
+注意到当0>1的时候，本文有lim£[Z] = 0o本文使用Markov不等式来决定
+Z的上界，对于一个正数8,本文有：
+Pr0>8}〈业i — 0	(4-26)
+£
+令£ = !，则本文有Pr{Z>l}-»0o因为Z是一个正整数，所以Z以概率趋 于0。
+当0<1的时候，本文使用Chemoff不等式来获得A的下界，如下：
+146
+
+町山｝柵項
+
+
+
+其中（a）是将E[e‘]的值代入得到的，（b）是将，替换为负常数-。得到的,
+
+
+
+入（4-27）,本文得到下式。
+
+
+其中（d）的推出是因为理> n o因为9K（丄-eC〉0 ,本文有一\	0。
+2	次“）
+n 2
+因此对于1的情形，匕的下界以高概率是9^（|-e-'）logMo实际上，因为K > 1,
+本文有9X（|-e-'）>lo使用一致界（Union Bound）,在任何一个次用户栅格内
+
+的主用户个数超过9K（丄-e-'）log"的概率小于	\——0,这意味着在
+2	Kiogn 9踞-广）
+n 2
+所有次用户的干扰区之内，主用户个数的下界是9K（：-eT）log〃。
+147
+
+
+为了找到Z的上界，本文再次使用Chernoff不等式，如下:
+珥e”]
+Pr(Z>a}<min L(o J
+.(1 + 0-1)潟"‘
+=唧一/一
+(2(i+(’
+(4-29)
+e*
+%log/B)、
+exp
+(/)
+<
+其中(e)和(Q分别使用了类似(b)和(c)的技巧，且0是一个正数。 本文分析如下的两个情形。
+1)对于0=1的情形，将。=1, m = n和。= 9Kelog〃代入(4-29),本文有 如下关系。
+exp
+Pr{L >a}<
+"log舟心
+n
+9Kelog”
+(4-30)
+疗T=]
+以9Ke力9K
+因为9K>Q,本文有-因此对于# = 1的情形，Z的上界以高概率为
+n
+9Kelog"。和之前的讨论类似，本文有关系9K>1 (因为K >1)。使用一致界,
+在任何一个次用户栅格内部主用户个数超过9 Ke log n的概率小于
+n 1
+K logw n9K
+2)对于/?vl的情形，将m = W和• = 9Ke〃"妇log〃代入(4-29),本文得
+到：
+exp
+Pr{L>a}< ——
+(4-31)
+因为9K/W >o ,本文有这意味着9Ke" |og„以高概率是£ nKn
+148
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+的上界。类似之前的讨论，本文有9K""t〉1,因此 ——	->0»也就是
+K\o%n r^Kn
+说，在任何一个次用户栅格内，主用户的个数超过9Ke〃"T］og〃的概率趋于°。
+#
+根据引理4-4和引理4-2,当乃>1的时候，频谱机会将会存在。因此对于角 度维度频谱空洞的吞吐量容量的研究，本文只考虑0>1的情形。在这一章中， 本文考虑如下四种情形的吞吐量容量和连通性研究：全向发射和全向接收(Omni Transmission and Omni Reception, OTOR),定向发射和全向接收(Directional Transmission and Omni Reception , DTOR),全向发射和定 向接收(Omni Transmission and Directional Reception, OTDR),定向发射和定向接收(Directional Transmission and Directional Reception, DTDR)。
+4.2.4允许次用户等待的网络连通性分析
+当次用户的传输遇到主用户保护区时，次用户的传输被阻断，这在传统意义 上可以认为次用户的传输中断，但是在这里以及文献［4-6］的次用户网络协议中， 次用户可以缓存自己的数据，等待新的频谱机会，当主用户保护区消失的时候， 次用户就可以开始新的传输。于是本文可以认为虽然次用户经历了等待的时间， 但是次用户的传输没有中断。在这部分，本文分析次用户允许等待的连通性。
+根据引理4-2,当舟>1的时候，一个次用户干扰区内的主用户个数以概率趋 于0,也就是说，对于9个次用户栅格组成的一个簇来说，主用户出现在这个簇 内的概率趋于0。这意味着对于绝大多数次用户栅格，这些栅格将以高概率具有 频谱机会。但是因为主用户的个数非零，所以必然存在一些次用户栅格，里面有 主用户的存在，如图4-8所示。当主用户(接收器)落入到次用户栅格内部的时 候，围着这个次用户栅格的9个次用户栅格组成一个簇，成为主用户保护区，在 主用户保护区内部的次用户都不能发射信号，以控制对主用户的干扰。因为主用 户釆用HDP-VDP路由方式，所以对于一个主用户栅格来说，最大可能有4个主 用户栅格向它传输信息，如图4-8 (a)和(b)所示。实际上很少有邻居栅格都 向中心栅格传输信息的情形，但是本文在这里考虑最差的情形。在最差的情形里， 次用户在一个主用户帧长的时间里，有2/9的时间处于活跃状态，即次用户可以 利用2个主用户传输时隙来传输自己的信息，而一个主用户的时隙即对应一个次 用户的传输帧长，所以对于任何一个次用户栅格，在一个主用户传输帧长的时间 里，这个次用户栅格必然具有传输机会。所以当主次用户采用上述的网络协议的 时候，必然能够保证次用户的信息从源节点传送到目的节点，而不至于中断。
+149
+
+主用户保护区（時邻囂爲
+图4-8主用户保护区内的次用户的传输机会，图中阴影部分的栅格活动的时候，主用户保
+护区之内的次用户不能传输信号，在上图中，次用户可以利用4个主用户时隙
+既然认知无线网络采用上述的网络协议能够保证链路的连通性，那么本文下 面分析认知无线网络的容量尺度律。
+4.3认知无线网络采用方向性传输的容量分析
+为了获得主网络（次网络）的单点的吞吐量，本文需要研究一个主用户栅格
+（次用户栅格）可以支持的数据速率和一个主用户栅格（次用户栅格）同时承载 的路由数目。在推导主用户单点吞吐量的时候，引理4-5研究了一个主用户栅格 可以支持的数据速率，引理4-6考察了通过一个主用户栅格的路由的数目。在推 导次用户网络单点吞吐量的时候，引理4-7,引理4-8,引理4-9和引理4-10探 索了一个次用户栅格可以支持的数据速率。因为次网络和主网络都釆用 HDP-VDP路由协议，通过一个次用户栅格承载的次用户路由数目类似于通过一 个主用户栅格的主用户路由数目。
+4.3.1主网络的吞吐量
+为了得到主用户的吞吐量，本文需要下面两个引理。
+引理4-5：对于任何一个主用户接收机来说，如果一个次用户栅格内部最多 只有一个次用户发射机干扰这个主用户接收机，那么每个主用户栅格可以支持 的数据速率为其中灼是一个和/»,"无关的常数。
+证明：第i个主用户栅格的数据速率为：
+150
+
+其中;标记了由于9-TDMA传输协议带来的数据速率损失，⑴是主用户接 收器，•接收到的来自主网络的干扰，4。）是主用户接收器，•接收到的来自次网络 的干扰。如果一个次用户栅格最多有一个次用户发射机干扰主用户，那么文献 ［4-5］和［4-6］都证明了七⑺和侦/•）是有限的（如果次用户采用9-TDMA协议［4-5］ 即本文有：
+(4-33)
+因此本文有如下关系。
+岫E
+M+Ip+L
+(4-34)
+A	V	厶
+=—log 1 +		—		 — K[ < °o
+作为引理4-5的一个例子，如图4-9所示，对于DTOR的情形，如果在一个 次用户栅格内部，次用户发射机的主瓣不重叠，这时每个次用户栅格最多只有一 个次用户干扰主用户，那么根据引理4-5,每个主用户栅格可以支持恒定的数据 速率，即K】。
+引理4-6(［4-6］)：如果主用户网络釆用文献［4-6］中的网络协议，那么通过一 个主用户栅格的主用户路由数目的上界以高概率是4 国商。
+而主用户的吞吐量在如下的定理中给出“
+定理4-1：主用户网络能够获得的单点吞吐量是冬(时=0( . 1	)。
+y/m log m
+证明：如果引理4-5和引理4-6得到满足，那么文献［4-5］［4-6］［4-21］中的结论 已经证明：存在一个TDMA传输方案，使得数据速率&被纭位庇斯条路由共 享。本文只需要将主用户的传输时隙划分为O(JmlogTM)个包时隙，每条路由使 用一个包时隙，因此主用户网络的单点吞吐量为6)(丁 1	)。
+yjm log/M
+#
+4.3.2次网络的呑吐量：OTOR
+OTOR的情形已经在文献［4-5］和［4-6］中得到了研究，他们证明了次用户网络 的单点吞吐量为€>( / '-),这和一个独立网络的吞吐量尺度律是一致的。在 y/n log”
+下面，本文针对有方向性发射或者接收的情形来计算次网络的吞吐量尺度律。
+4.3.3次网络的呑吐量：DTOR
+对于一个次用户栅格中的次用户发射机，本文有如下引理。
+引理4-7：按照本章设定的网络协议，每个次用户栅格中的次用户发射机能 够支持的数据速率为其中虬是一个与m或"无关的常数。
+引理4-7的证明过程类似引理4-5,因此本文忽略证明过程。
+对于DTOR的情形，如果一个次用户栅格中的每个次用户发射机的主瓣不重 叠，那么每个次用户栅格能够支持的数据速率为灼。标记第i个次用户发射机 的主瓣宽度为为了获得次用户网络最高的吞吐量，本文釆用最紧凑的方式， 即弋4=臨,在这种情况下，一个次用户栅格的角度维度频谱空洞全部被占
+152
+用了。这时一个次用户栅格能够支持的数据速率为gK2,这相对于没有方向性传
+输的次用户栅格，数据速率提升了 g倍。如果次用户的主瓣宽度为5 =	，
+[log"丿
+本文有如下引理。
+引理4-8：如果次用户发射机的主瓣宽度为S =	丄那么一个次用户栅
+[log"丿
+格将以高概率能够支持的数据速率为。(log") O
+证明：根据引理4-8, 一个次用户栅格中的次用户的数目为0(log«)o当次
+(1 )
+用户发射机的主瓣宽度为3 =。宀的时候，在一个活跃的次用户栅格里面， 所有的次用户发射机能够传输，且它们的主瓣不重叠。因为一个次用户栅格有 0(log/7)= c2logM个发射节点，根据引理4-7, 一个次用户栅格能够支持的数据 速率为 c2K2 log n = ©(log n) »
+#
+引理4-9：如果K(丄_丄)>1,那么在一个次用户栅格中次用户的数目为
+2 e
+®(10gW)o
+证明：根据[4-21, Lemma 5.7],在一个次用户栅格中次用户数目的上界是
+0(logM)o使用类似引理4-4中的证明方法，使用条件K(丄-丄)>1即能证明：次
+2 e
+用户栅格中次用户数目的下界也是©(logH) „
+#
+引理4-10：如果次用户发射机的主瓣宽度为3 =硏丄)，那么每个次用户
+IogJ7
+栅格能够支持的数据速率为当J。
+5
+证明：当月>1的时候，次用户的角度维度频谱空洞将以高概率存在(引理
+4-4),但是一个次用户栅格中次用户的数目为®(logH)^oo,因此在一个次用户 栅格里面，次用户发射机主瓣的数目(即活跃的次用户发射机的数目)g在渐近
+153
+的意义上比次用户的数目少。在这种情况下，§的最大值是丝，一个次用户栅
+8
+格能够支持的最大数据速率即是专瓦2。
+#
+类似引理4-6,穿过一个次用户栅格的次用户路由数目的上界以高概率是 4j2”log” 0根据引理4-7,引理4-8和引理4-10,次用户的吞吐量尺度律在如 下定理中给出。
+定理4-2：在DTOR的情形，次用户按照给定的网络协议部署，当次用户发 射器的主瓣宽度为8 =。（丄）的时候，次用户网络能够以高概率获得单点吞吐
+（log"丿
+量4（〃） = %悝®）。当5 =以丄）的时候，相比于没有方向性传输的情形，次 V n	log n
+用户的吞吐量增益为夸。
+证明：当J =	的时候，一个次用户栅格可以支持的数据速率为
+[log"丿
+miogn,这些数据速率被4而顽条路由共享，因此次用户网络的单点吞吐
+量容量是0（、缨）。当5 =硕丄）的时候，相比于没有方向性传输的情形，次
+v n	log/?
+用户栅格的数据速率增益是四，因此次用户网络的吞吐量增益也是空。当次 8	8
+用户没有传输机会，需要缓存数据的时候，次用户栅格的数据速率需要乘以一个 “机会因子” （Opportunistic Factor）,机会因子是次用户处于活动状态的时间比 例，在4.2.4中机会因子是5/9,因此次用户的容量尺度律不受影响。
+#
+4.3.4次网络的吞吐量：OTDR
+对于OTDR的情形，标记次用户接收机的主瓣宽度为，。那么如果
+。=硕二!_）, 一个次用户栅格能够支持的数据速率为四虬。如果。=。仁丄_）, log”	液	[log”丿
+一个次用户栅格能够支持的数据速率为K2C2 log",因此本文有下述结论。
+定理4-3：在OTDR的情形，在给定的次用户网络协议之下，当次用户接收
+154
+
+
+人（"） = 0（保匪_）。当妇硕，）时，相比于没有方向性传输的方案，次用户网 V n	logzz
+络的单点吞吐量增益是3。
+4.3.5次网络的吞吐量：DTDR
+对于DTDR的情形，如果部=研丄），那么一个次用户栅格能够支持的数 log 72
+据速率为—X2o如果^=o\-^-~\,那么一个次用户栅格能够支持的数据速 g	[log”丿
+率为心^瞻“。因此本文有如下结论。
+定理4-4：在DRDT的情形，在给定的次用户网络协议配置之下，如果次用
+（1 、
+户发射机和接收机的主瓣宽度有关系毎=。「匚，那么次用户网络将以高概 [log 刃
+率获得单点吞吐量彼〃）=。（、陛）。当部=以丄）的时候，相比于没有方向
+V n	log"
+性传输的方案，次用户网络能够获得的吞吐量增益是繊。
+4.4不允许次用户等待的网络连通性分析
+当次用户的传输遇到主用户保护区，次用户的传输被阻断，这在传统意义上 可以认为次用户的传输中断，但是次用户可以选择缓存数据,等待新的频谱机会, 当主用户保护区消失的时候，次用户就可以开始新的传输。之前本文分析了次用 户允许等待的次用户网络连通性。在这部分，为了更加全面地分析次用户网络的 连通性，本文接下来分析次用户不允许等待的网络连通性。
+在主用户不存在的情况下，次用户在4.2节的网络协议之下可以维持连通性, 即每个次用户栅格以高概率存在至少一个次用户。然而，当主用户出现的时候, 次用户栅格有可能落入到主用户的保护区，这样就会造成次用户路径的中断，如 图4-10 （a）所示。但是在主用户保护区内部的次用户仍然可以接收数据，如图
+155
+北京邮电大学工学博士论义
+4-10 (a)所示。在本章中，本文假设“7个主用户在单位面积的区域随机部署， 如果本文考虑主用户业务的时间动态性，则m可以认为是活跃主用户的数目。 注意到〃和刀分别是次用户和主用户的密度，因为主次用户都是部署在单位面 积的区域中。当次用户釆用方向性发射和方向性接收的时候，主用户的保护区缩 小了，这时次用户中断事件发生的概率也降低了，如图4-10 (b)所示。
+
+图4-10次用户遇到主用户保护区：阴影区域
+
+4.4.1次网络在HDP-VDP路由下的连通性
+在4.2节的网络协议配置下，一个次用户只要不落入任何一个主用户的保护 区，就能保证这个次用户不是孤点，因此次用户的连通性取决于主用户。本文首 先探索在次用户的干扰区内的主用户个数，其中次用户的干扰区由9个次用户栅 格构成，次用户的发射机在中心栅格。如果一个主用户落入次用户的干扰区，则 等价于次用户落入主用户的保护区.在引理4-4中，本文给出了落入次用户干扰 区的主用户个数，这为连通性的研究提供了依据。
+4.4.1.1次用户单点的连通性
+因为本文假设〃 = 〃?〃，用〃表示的上下界也可以用，〃来表示，因此本文有引 理4-4用川表示的另一个版本。根据引理4-4,当”〉1的时候，在一个次用户干 扰区中的主用户个数以概率趋于0,因此本文有下述定理。
+定理4-5：当0〉1的时候，次用户使用HDP-VDP路由，那么以高概率能够 保证一个次用户单点的连通性。
+156
+4.4.1.2次用户单路径的连通性
+本文在这部分研究一条次用户路径的的干扰区，如图4-11所示，阴影区域即 是一条次用户路径的干扰区，它是路径上所有次用户干扰区的并集。如果一个主 用户落入到次用户路径的干扰区之内，就会遭受到次用户发射器的干扰。本文探 索一条次用户路径的连通性，有如下定理。
+定理4-6：当0> 2的时候，使用HDP-VDP路由方案，能够以高概率保证一 条次用户路径的连通性。
+证明：如图4-11所示，如果在次用户路径的干扰区之内没有主用户存在，那 么次用户路径的连通性能够得到保证。因为这条路径的源和宿节点的距离为 0(1),因此这条路径的跳数为：
+
+其中q是一个常数，。，是次用户栅格的面积。对于OTOR的情形，次用户路 径上的次用户栅格数目(即次用户路径的保护区内次用户栅格的数目)为：
+"=吋烏+(吋烏一 2)+可翕+2) = 3* 金
+对于DTOR, OTDR和DTDR的情形，次用户路径上的次用户栅格数目少于
+N = 3cJ 宀,如图4-11 (b)所示。本文探索在N = 3cjf-个栅格里面没有 \ lOgH	'log"
+主用户存在的概率。标记在R个次用户栅格里面主用户的数目为类似引理
+4-4的证明，Q是一个服从贝努利分布的随机变量，参数为3：,秫)，其中p：表
+示如下。
+g地=3阻怦
+y log n n	v n
+因此G的期望值如下。
+_l__l
+= pnm = 3Kc}np ' Jlog〃
+当0>2的时候，本文有£[Q] 0 ,使用Markov不等式，对于任意正数 本文有：
+Pr{D>8}M^^T0	(4-39)
+£
+令S = L,本文有Pr{Q>；}->0。因为。是一个正整数，所以在次用户路径 的保护区之内，以高概率不存在主用户。
+157
+当1<戶<2的时候，使用和引理4-4类似的技巧，本文能得到。的下界为
+3Kq（；-eT）Jlog〃 ,这在的时候不趋于0。因此0〉2是保证在HDP-VDP 路由下一条次用户路径连通性的充分且必要条件。
+
+
+
+注意到对于DTOR, OTDR和DTDR的情形，一条次用户路径的保护区内部
+
+
+
+OTDR, DTDR的情形也适用。
+4.4.1.3次用户全网的连通性
+主用户和次用户共享相同的地理区域和频谱资源，所以一定有一个次用户栅 格至少有一个主用户，因此本文不能保证从这个次用户栅格出发的次用户路径的 连通性。对于主次用户共存的情景，次用户网络全网的连通性不能得到满足。
+4.4.2次网络在环绕路由下的连通性
+根据定理4-6,为了保证一条次用户路径的连通性，本文必须保证”>2,也 就是说，次用户要比主用户足够密集。为了在次用户不是十分密集的情况下获得 次用户的连通性，次用户的路由可以在遇到主用户保护区的时候环绕过去，如图 4-12所示。这种路由方案在文献［4-5］中提出，但是没有作充分的分析。在环绕路 由之下，本文总结次用户的中断情形如下。
+158
+
+1.次用户路径的源节点落入主用户的保护区，如图4-13 (a)和(b)所示，其 中次用户路径的源是在主用户保护区，因此在一开始就发生了中断。
+2.当主用户的保护区包围了一个次用户的源节点或者宿节点，次用户的路径即
+发生了中断，如图4-13 (c)和(d)所小。
+
+■主用户接收器 審次用户
+
+
+图4-12次用户环绕路由：遇到主用户保护区阻挡的时候环绕过去
+
+
+图4-13主用户阻挡次用户传输的情形，其中"X"表示一个中断
+为了研究在环绕路由下次用户路径的连通性，本文首先定义“保护区链条”
+159
+
+(PRC, Preservation Region Chain)的概念，如下。
+保护区链条(PRC):保护区链条是一系列主用户保护区的集合，并且每一 个PRC内部的保护区都有相邻的保护区存在。
+一些PRC的例子在图4-14中给出，其中图4-14 (a)和(c)不能阻挡一条 次用户路径，而图4-14 (b)能阻挡源节点或者宿节点在里面的次用户路径。在 研究PRC之前，本文需要一个定义如下。
+
+
+
+(a)	(b)	(c)
+图4-14保护区链条(PRC),其中(a) (c)是开放结构，(b)是闭合结构
+主用户栅格：将单位面积的区域划分为一」个小正方形，并定义为主用户
+2 log m
+栅格，主用户栅格的面积是 2J»o
+m
+在［4-21］中有一个关于主用户栅格的引理，即［4-21］中的引理5.7,如下。 引理4-11 (［4-21］):每个主用户栅格至少有一个主用户，至多有不超过 2elogw个主用户。
+关于PRC,本文有如下引理。
+引理4-12：如果。>1,任何PRC以高概率不能穿越一个主用户栅格。 证明：如果”>1,那么一个主用户栅格包含N“，个次用户栅格，N,，取值如下。
+(21ogm
+其中C?是一个常数。如果一个PRC穿越一个主用户栅格，它需要主用户栅
+格内部至少存在匹=迎〃?号个主用户，其中这个PRC内部的主用户保护区 3	3
+形成一条直线，且各个保护区不重叠。根据引理4-11,在主用户栅格内部至多存
+_	In~
+在2e\ogm个主用户，并且本文注意到当为足够大的时候有2elogm<%H。因 此在任何一个主用户栅格内部，都没有足够多的主用户来支持一个可以穿越这个 主用户栅格的PRC。
+160
+至于一个PRC内部最多的主用户保护区的数目，本文有下述引理。
+引理4-13：如果0〉1,任何一个PRC内部最多的主用户保护区数目以高概 率为 18elogm 0
+证明：本文选择一个PRC内部的主用户保护区，当0>1的时候，根据引理 4-12,这个PRC不能穿越一个主用户栅格。因此这个PRC被局限在9个主用户 栅格形成的簇之内，其中PRC的一个主用户保护区在中心的主用户栅格之内。 根据引理4-11, 9个主用户栅格之内的主用户个数最多是18elogm,因此PRC 之内最多的主用户保护区个数以高概率是18elog/n o
+#
+如果次用户采用环绕路由，那么本文有如下引理。
+引理4-14：如果J3>\,那么被主用户保护区或者PRC阻挡的次用户的数量
+以高概率最多是0(m(log7w)2) <,	空，
+证明：本文标记所有主用户保护区的面积为4,标记被PRC隔离的孤立区 域的面积为』2,因此次用户的传输被主用户阻断的区域面积为x =	当主
+用户保护区不重叠的时候，w有一个上界，如下。
+4 < 9m Kiogn = gm-' log n	(4-41)
+n
+如图4-15所示，被PRC阻断的最大孤立区域是一个四分之一圆，根据引理 4-13, 一个PRC最多有18elogm个主用户保护区，每个主用户保护区最多贡献 6反的长度给四分之一圆的周长，因此四分之一圆的半径最多是竺逅四, 本文假设每个PRC围成一个四分之一■圆，因此能够找到被PRC包围的孤立区域 的面积上界如下。
+, m 216eJa71ogm^ 648e	,	—小、
+A2 <	y 丄 _ =	asmlog m	(4-42)
+18elog/w4]	J n '
+根据(4-41)和(4-42),本文可以得到刀的上界如下。
+A <9{3^K +	\ogm = Av	(4-43)
+本文分析在面积为刀的主用户阻断区域内部的次用户的数目，将次用户数目 标记为这是一个服从贝努利分布的随机变量，参数为(4，»)=使用Chernoff 不等式，本文得到：
+161
+Pr｛虬〉凡"技噌n-；”」
+(。).(1 + (#—1)4,)"
+/>0 exp (叫卢〃)
+V ― / ；丿	(4-44)
+exp\enAu)
+w exp ((e-1)^4,)
+exp (e 履")
+=exp (-履〃)t 0
+其中(々)通过将研。"叮的值代入得到，(b)通过将/替换为1得到，根据
+不等式l+x<eY ,本文得到(c) o根据(4-44 ),本文得到M的上界为
+Auen = 0(w(logw)2)。
+
+
+ffl主用户保护区 a次用户
+图4-15主用户阻断次用户的最大区域，其中“X"表示中断，这个图在［4-5］中图8的基础
+上修改。
+根据引理4-14,被主用户的传输阻断的次用户的比例为：
+-0(m(logm)2) = 0(^^-) = ©(^2^-)	0	(4-45)
+n	mp	n p
+因此本文有下述定理。
+162
+定理4-7：如果夕>1，使用环绕路由，能够以高概率保证一个单独次用户的 连通性。
+在环绕路由之下，本文在，〉1的条件下就可以保证一个单独次用户节点的连 通性。至于一条次用户路径的连通性，本文有如下定理。
+定理4-8：如果/3>\,使用环绕路由，能够以高概率保证一条次用户路径的 连通性。
+证明：根据前面的论述，本文知道次用户路径的源节点和目的节点都以高概 率不被PRC阻断。另外，本文将证明PRC以高概率不会阻断次用户路径的传输。 如图4-16所示，一个次用户路径到达一个主用户栅格，为了阻断这个次用户路 径，PRC必须包围主用户栅格（或者跨越主用户栅格的一条边）。但是，根据 引理4-12, 一个PRC不能穿越主用户栅格，因此PRC不可能封锁一个主用户栅 格来阻断次用户路径的传输。次用户路径将会绕过PRC,并且最终到达宿节点， 如图4-16所示。
+
+•次用户
+图4-16环绕路由
+虽然环绕路由在0〉1的条件下可以保证次用户路径的连通性,环绕路由仍然 不能满足所有次用户的连通性。另外，当的时候，根据引理4-4,在次用户 干扰区的主用户个数以高概率至少为1,因此主用户的保护区将始终覆盖次用户, 即使采用环绕路由，也不能保证次用户网络的连通性。最后，对于DTOR, OTDR, DTDR的情形，当0>1的时候，使用环绕路由本文也可以以高概率保证次用户 路径的连通性。另外，DTOR, OTDR, DTDR情形下次用户的连通概率比OTOR 下要高，因为在方向性传输之下，次用户网络的干扰区面积更小，但是在这种情 况下次用户网络连通性的要求仍然是/3>\,与OTOR的情形相同。
+163
+
+4.5结论
+在本章中，本文证明了认知用户釆用角度维度频谱机会可以提升认知无线网 络容量。如果次用户发射机的主瓣宽度为5 =。（丄），那么对于DTOR来说， log”
+次用户网络可以获得单点吞吐量。（/零），这比是没有方向性传输的方案的
+0（log«）倍。类似地，如果次用户接收器的主瓣宽度为。=。（丄），那么对于 logw
+OTDR来说，次用户能获得单点吞吐量容量壁）。如果渺=。（丄），那 V n	logn
+么对于DTDR来说，次用户能获得单点吞吐量容量0（
+云=畝丄），那么对于DTOR来说，次用户获得的吞吐量容量是没有方向性传 log"
+输的容量的吳倍。如果，二 /（―-—）,那么对于OTDR来说，次用户获得的吞
+8	logw
+吐量是没有方向性传输的容量的奖倍。如果毎=切（丄），那么对于DTDR来
+°	log 形
+说，次用户获得的吞吐量是没有方向性传输的容量的空己倍。
+本文也根据两种路由方案，即HDP-VDP路由和环绕路由，探索了随机认知 ad hoc网络的连通性。假设主次网络共存在单位面积区域，其中主用户个数为m, 次用户个数为"，且祖和〃有关系n = mp ,本文得到了如下结论；
+1.如果次用户网络釆用HDP-VDP路由，那么当0〉1的时候，能够保证单 个次用户的连通性；当0>2的时候，能够保证一条次用户路径的连通性。
+2.如果使用环绕路由，那么当0>1的时候，能够保证单个次用户和单个次 用户路径的连通性。
+3.在任何一种路由方案之下，都不能保证次用户全网的连通性。
+4.当0S1的时候，对于HDP-VDP路由和环绕路由，都不能保证次用户网 络的连通性。
+5.当次用户采用方向性传输的时候，会提升次网络的连通概率，但是不会
+164
+改变上述结论。
+参考文献
+[4-1] J. Mitola, “Cognitive radio: An integrated agent architecture for software defined radio/5 Ph.D. dissertation, KTH Royal Inst, of Technol., Stockholm, Sweden, 2000.
+[4-2] B. Wang and K・ J. R. Liu, “Advances in cognitive radio networks: A survey/5 IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1, pp. 5-23, Feb. 2011.
+[4-3] T. Yiicek and H. Arslan, “A survey of spectrum sensing algorithms for cognitive radio applications/5 IEEE Communications Surveys & Tutorials’ vol. 11, no. 1, pp. 116-130, Mar. 2009.	...
+[4-4] P. Gupta and P. R. Kumar, "The capacity of wireless networks/9 IEEE Transactions on Information Theory, vol. 46, no. 2, pp. 388-404, Mar. 2000.
+[4-5] S.-W. Jeon, N. Devroye, M. Vu, S.-Y Chung, and V larokh„ "Cognitive networks achieve throughput scaling of a homogeneous network/' IEEE Transactions on Information Theory, vol. 57, no. 8, pp. 5103-5115, Aug. 2011.
+[4-6] C. Yin, L. Gao and S. Cui, “Scaling Laws for Overlaid Wireless Networks: A Cognitive Radio Network versus a Primary Network/7 IEEE/ACM Transactions on Networking, vol. 18, no. 4, pp. 1317-1329, Aug. 2010.
+[4-7] W. Huang and X. Wang, "Capacity scaling of general cognitive networks了 IEEE/ACM Transactions on Networking, vol. 20, no. 5, pp. 1501-1513, Oct. 2011.
+[4-8] S. Yi, Y. Pei, and S. Kalyanaraman, “On the capacity improvement of ad hoc wireless networks using directional antennas/' The ACM International Symposium on Mobile Ad Hoc Networking and Computing (ACM MobiHoc), pp. 108-116, June 2003.
+[4-9] R Li, C. Zhang, and Y. Fang, “The capacity of wireless ad hoc networks using directional antennas," IEEE Transactions on Mobile Computing, vol. 10, no. 10, pp. 1374-1387, Oct. 2011.
+[4-10] G. Zhao, J. Ma, G.Y Li, et al., “Spatial spectrum holes for cognitive radio with relay-assisted directional transmission/5 IEEE Transaction Wireless Communications, vol. 8, no. 10, pp. 5270-5279, Oct. 2009.
+[4-11] J. Zhang, X. Jia, "Capacity analysis of wireless mesh networks with omni or
+165
+directional antennas,” The 28th IEEE Conference on Computer Communications (INFOCOM), pp. 2881 - 2885, Apr. 2009
+[4-12] Hong-Ning Dai, Kam-Wing Ng, Raymond Chi-Wing Wong, Min-You Wu, “On the capacity of multi-channel wireless networks using directional antennas/5 The 27th IEEE Conference on Computer Communications (INFOCOM), Apr. 2008
+[4-13] X. Wang, J. Liu, W. Chen, Z. Cao, “CORE-4: Cognition oriented relaying exploiting 4-D spectrum holes； Wireless Communications and Mobile Computing Conference (IWCMC), pp. 1982-1987, July 2011.
+[4-14] P. Gupta and P. R. Kumar, "Critical power for asymptotic connectivity/5 Proceedings of the 37th IEEE Conference on Decision and Control, pp> 1106-1110, Dec. 1998.
+[4-15] H. Zhang and J. Hou, “On the critical total power for asymptotic k-connectivity in wireless networks,24th Annual Joint Conference of the IEEE Computer and Communications Societies (INFOCOM), pp. 466-476, Mar. 2005.
+[4-16] W. Ren, Q. Zhao and A. Swami, “On the Connectivity and Multihop Delay of Ad Hoc Cognitive Radio Networks/5 IEEE Journal on Selected Areas in Communications, voL29, pp. 805-818, Apr. 2011.
+[4-17] W. C. Ao, S. Cheng and K. Chen, "Connectivity of Multiple Cooperative Cognitive Radio Ad Hoc Networks/5 IEEE Journal on Selected Areas in Communications, voL30, pp. 263-270, Feb. 2012.
+[4-18] A. Abbagnale, F. Cuomo and E. Cipollone, "Measuring the connectivity of a cognitive radio ad-hoc network/5 IEEE Communications Letters, vol. 14, pp. 417-419, May 2010.
+[4-19] G. Mao and B. D. Anderson, “On the asymptotic connectivity of random networks under the random connection model,IEEE International Conference on Computer Communications (INFOCOM), pp. 631-639, Mar. 2005.
+[4-20] A. Ghasemi and E. S. Sousa, ^Interference aggregation in spectrum sensing cognitive wireless networks,” IEEE Journal of Selected Topics in Signal Processing, vol. 2, no. 15 pp. 41-56, Feb. 2008.
+[4-21] X. Feng and P. R. Kumar, “Scaling laws for ad hoc wireless networks: An information theoretic approach/5 Foundations and Trends in Networking, vol. 1, no. 2, pp. 145-270, 2006.
+166
+第四章认知无线网络角度维频谱机会
+[4-22] Z. Wei, Z, Feng, Q. Zhang, et aL, "Throughput Scaling Laws of Cognitive Radio Networks with Directional Transmission,55 IEEE Global Communications Conference (Globecom), pp. 894 - 899, Dec. 2013.
+[4-23] Z. Wei, J. Liu, Z. Feng, et aL, “The Asymptotic Connectivity of Random Cognitive Radio Networks/5 IEEE Wireless Communications and Networking Conference (WCNC), pp. 1685 - 1690, Apr. 2013.
+[4-24] Simon Haykin and K. J. Ray Liu, Handbook on Array Processing and Sensor Networks, Wiley, New York, 2009.
+[4-25] H. A. David and H. N. Nagaraja? Order Statistics, Wiley, New York, 2003.
+167
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+168
+
+
+第五章认知无线网络高度维频谱机会
+5.1研究背景
+在第二章中本文从一个宏观的视角研究了多维认知信息表征、度量和传递理 论。在第三章中，本文重点研究了空时频谱空洞的位置。在第四章中，本文研究 了角度维的频谱机会利用，证明了利用方向性传输可以进一步提升认知无线网络 的容量，提升频谱利用效率。在这一章，本文探索认知无线网络利用新的通信维 度，即高度维的频谱机会，可以证明认知无线网络利用高度维的频谱机会可以进 一步提升认知无线网络的容量和频谱利用率。
+认知无线网络作为一种重要的频谱高效利用的技术，它可以灵活地利用多个 维度的频谱空洞，进而提升频谱的利用效率，同时提升认知无线网络的容量 ［5-l］［5-2］［5-3］o特别地，在文献［5-3］中提出了包括频谱、时间、地理空间、码、 角度等多个维度的频谱机会。但是需要注意的是，次网络利用多个维度的频谱机 会可以提升频谱利用率和容量，但是与此同时次网络的系统复杂度会增加。在文 献［5-句中，Wang等人提出了通过认知中继利用时、频、位置、角度四个维度的 频谱空洞的架构和方法，并验证了同时使用四个维度的频谱空洞可以提升认知无 线网络的容量，但是文献［5-4］主要考察链路级的性能。在文献［5-5］中，Xu等人 调研了大量关于认知无线网络通过波束成形利用角度维频谱空洞的最新成果。在 文献［5-6］中，Zheng等人研究了认知无线网络中的鲁棒波束成形方法。文献［5-7］ 研究了认知ad hoc网络利用角度维频谱空洞的网络容量尺度律。所有的这些研 究都暗示了认知无线网络利用多维频谱空洞可以提升以吞吐量容量。
+无线网络容量研究的里程碑是Gupta和Kumar的成果［5-8］,他们发现：对于 〃个均匀随机分布在单位面积上的自组织（ad hoc）节点，网络的单点容量是 0（l/7«logn）o当网络节点数较大的时候，网络的单点容量比较小。在Gupta和 Kumar开创性的成果发表以来,大量学者对多种形式的无线网络的容量进行了研 究，试图提升无线网络的容量。其中文献［5-9］将移动性引入到无线自组织网络中， 构建了移动自组织网络（MANET, Mobile Ad Hoc Network） , Grossglauser和 Tse证明了 MANET的容量可以提升至。⑴，之后文献［5-10］研究了移动自组织 网络的容量-时延之间的权衡，文献［5-11］在新的移动性模型下研究了移动自组织 网络的容量和时延规律。也有一些文献将基站引入到无线自组织网络中，构建了 混合网络［5-12］［5-13］,在混合网络中，长距离传输可以通过基站方式，短距离传 输可以通过自组织方式，混合网络结合了两个网络的优势，可以提升网络的容量。 之后在文献［5-14］中，Shila等人研究了混合网络的容量-时延之间的权衡。在文
+169
+
+献［5-15］中，Wang等人在衰落信道下研究了混合网络的吞吐量尺度律。另外， 无线网络的三维部署也可以提升网络容量，［5-16］［5-17］是最早研究三维无线网络 容量尺度律的文献，证明了三维网络部署可以增加无线网络信息传输的自由度， 提升网络容量。在此基础上，Li等人在［5-18］［5-19］使用新的方法得到了三维随 机无线网络的容量尺度律，他们的成果说明：无线网络三维部署虽然会增加信息 传输的自由度，但是也会带来额外的干扰，只有当路损因子足够大(大于3)的 情况下三维无线网络容量才会得到明显提升。Hu等人在文献［5-20］也研究了三维 无线网络的容量，使用渗透理论得到三维无线网络的容量尺度律。此外，也有文 献研究网络三维部署的应用，比如在文献［5-21］中，Cai等人研究了三维超宽带 (Ultra Wideband, UWB)网络的部署以及容量尺度律。
+前面描述的无线网络容量尺度律的研究都是针对单一网络的，而最近因为频 谱紧缺和异构网络融合的需要，人们开始广泛研究认知无线网络的架构设计、频 谱检测、频谱接入、性能分析等。在最近关于认知无线网络容量的研究中，Jeon 等人在文献［5-22］中探索了认知自组织网络(CRAHNs, Cognitive Radio Ad Hoc Networks)的容量尺度律，得到结论：在〃个次用户节点和m个主用户节点共存 的异构场景，次用户能获得和单独网络同样的容量尺度律。(1人俪訪)。在文献 ［5-23］中，Yin等人在一个更加实际的场景中获得了同样的结论，即次用户只知 道主用户发射机的位置，而不知道主用户接收机的位置。这个结论进一步被 Huang等人在文献［5-24］中用一个更加普适的模型验证。但是现有的关于认知自 组织网络容量尺度律的文献仅仅分析了认知网络利用空时维度频谱空洞的情形, 利用多维频谱空洞的认知无线网络容量尺度律的研究较少。在这一章，本文研充 认知无线网络利用高度维频谱空洞下的容量尺度律,据本文所知目前还没有这方 面的研究。
+本文研究主次网络都是三维部署的情形，在本文的网络模型中，四个主用户 和”和次用户均匀分布在三维单位正方体之内，且m和”满足关系n = mp,P>\.
+在这个网络模型下设计网络协议，最终可以保证主次网络的连通性。并且在网络 的干扰得到有效控制的前提下，因为单点承受的路由密度下降了，所以单点的吞 吐量容量得到改善。本文得到了主网络和次用户的容量尺度律分别为
+
+本章接下来的各部分安排如下。5.2节介绍本章的系统模型。5.3节介绍主次 网络的网络协议，以保证主次网络的连通性。5.4节分析主次网络的吞吐量尺度 律。最后5.5节总结全文。
+170
+5.2系统模型
+当认知无线网络利用高度维的频谱空洞，构成三维(3D, Three Dimensional) 认知无线网络，3D部署可以提升认知无线网络的容量。在下面，本文从网络模 型和信道模型两个方面介绍3D认知无线网络的系统模型。
+5.2.1网络模型
+如图5-1所示，m个主用户和”次用户均匀分布在三维单位正方体之内，且 m和〃满足关系：n = mp,其中0>0。主次用户通信的时候，都是按照均匀分 布随机选取一个用户作为源节点，然后在三维单位正方体之内按照均匀分布随机 选取一个点，再选取距离这个点最近的用户作为目的节点，源节点和目的节点以 多跳的方式进行通信。主用户通信的时候假设次用户不存在，而次用户需要进行 干扰控制，以控制对主用户的干扰。 免
+
+
+图5-1认知冋络三维部署的系统模型
+5.2.2信道模型
+在本章中，信道模型只考虑大尺度衰落，信道的功率增益是g(r) = ｛，其中 r
+，是发射机和接收机之间的距离，仅>2是路损因子。计算主次用户的链路容量， 采用香农公式得到如下结论。
+171
+
+
+其中乌⑴是以第［•个主用户链路的容量，［,（。是主用户I•的发射功率，N。是 高斯白噪声的功率谱密度，Xp^i）是主用户第，•条链路的发射节点的位置，在这 里用节点的位置来标记节点的名字，牙〃“0）是主用户第，条链路的接收节点的位 置，所以|%）F“（i）|是主用户第i条链路的欧氏距离,g（|"）-"）||） 是链路的功率增益，匕。）是主用户内部的节点对链路，•的干扰，妇⑴是次用户 节点对主用户链路的干扰。
+同理，次用户链路容量的表达如下：
+閃）=丄丝业夂4述
+'	Nq+I、（j） + Ips（j）
+其中贝侦）是以第丿个次用户链路的容量，4。）是次用户丿的发射功率，N。
+是高斯白噪声的功率谱密度，X’Q（力和分别是第j个次用户发射机和接 收机的位置坐标，故||x,,,q）-y）|是第j条次用户链路的欧氏距离， g （||xvtt（；）- x“q）|）是链路的功率增益，如）是次用户网络内部对第j个次用 户接收器的干扰，/,,（丿）是主用户网络对第丿个次用户接收器的干扰。
+5.3网络协议
+本章探索3D认知无线网络的网络吞吐量容量，首先本文设计主次网络的网 络协议，以保证主次网络能够正常工作。
+5.3.1主次网络的网络协议
+先不区分主次用户，用A来标记一个网络的用户个数，这个网络有可能是主 用户网络或者次用户网络。那么上个节点均匀分布在3D正方体空间内部，任意 一个节点都可能为源节点，当这个节点为源节点的时候，随机选一个节点为它的 目的节点。如图5-2所示，整个网络的路由为直线路由方式，即源节点和目的节
+172
+点之间连一条直线，经过的每一个小正方体之内的节点转发这条路由上的数据, 转发节点可以按照能量均衡的原则来选取，即避免一个节点持续转发数据，应该 一个小正方体内的节点轮流转发数据。为了维持路由的连通性，小正方体的边长 应该是％=（如普勺，勺>1,并且有如下引理。
+引理5-L如果％>1,标记在任何一个小正方体内的节点数为N,那么有如 下结论：
+c0^-—jlogA： < N <coelogA	（5-3）
+证明：这个引理探索了每个小正方体内部的节点个数。对于一个特定的小正 方体，节点落到小正方体内部的事件是一个贝努利事件，其概率是
+a=v,=%饗，标记落到这个小正方体内部的节点个数为N,其中N是一个 k
+服从贝努利分布的随机变量，参数是（必,幻。本文使用Chemoff界来获取N的 下界，如下：
+'"]Omin(l + &T)PJ
+eta 唱1 efa
+(1+何-。-1加)上)印宀)
+一 e*
+其中（a）是通过代入的值得到的，（b）是通过将，替换成一个负数-0 得到的，其中。>0。根据不等式l+x<ex,本文得到（l + （e"-l）pj七普（宀）, 因此得到（c）。将。=1和a =	代入（5-4）,本文得到如下结论。
+_£o
+Pr(JV<a}< , =k 2	(5-5)
+e
+当的时候，本文有Pr<^<cJ|-jjlogA-^0 ,因此
+
+
+N>c0
+jlog*以高概率满足。
+173
+
+
+
+为了找到N的上界，本文再次使用Chernoff不等式，如下。
+
+
+
+
+
+将。=1和b = c°elogk代入（5-6）,本文得到如下结论。
+Pr｛睥技*
+当A->oo的时候，本文有Pr｛^>c0elogA：｝->0,因此N>c0elogk以高概率 得到满足。
+#
+本文使用引理5-1来决定小正方体的边长，对于主网络来说，定义小正方体 为“主用户立方体”，其边长设置为匕=（业邸］,这样可以保证主网络路由 的连通性；对于次网络来说，定义小正方体为“次用户立方体”，其边长设置为 s“=（角半J",这样可以保证每个次用户正方体之内都有节点存在，这样可以 保证次用户网络路由的连通性。
+在引理5-1的基础上，本文设计主次网络的网络协议，其中主次网络的协议 与第四章中网络协议基本一致，只需要修改如下几个地方：
+1）	本章中主次网络采用27-TDMA协议传输数据，即主（次）网络的每 个簇之内有27个主（次）立方体。
+2）	主次用户的路由方式：如图5-2所示，由源节点到目的节点划一条直 线，然后数据传输的路由选择直线切割的立方体，按照三维坐标系 的“水平-垂直-竖直”三个方向传输，如图5-3所示，这实际上是 HDP-VDP路由的演变。
+3）	主用户的发射功率是次用户的发射功率为
+4）	次用户与最近主用户发射机的距离不小于立/2,才能发射。
+5）	与第四章不同的地方是，在这一节本文不考虑方向性传输，因此一 个活跃的立方体只能有一个节点发射数据。
+174
+
+
+▲发射机 △接收机
+
+图5-3路由方向：一个立方体的数据向6个邻居之一发送
+前面独立地分析了主网络和次网络，但是主次网络在同一区域共存的时候会 相互影响和制约，因为主用户是授权用户，因此为了使得两个网络正常工作，就 需要协调次用户网络，最直接的协调方法是控制次用户网络的部署密度，间接地 控制次用户网络的发射功率。次用户的密度要比主用户高，因此次用户的发射半 径要比主用户的发射半径小，这样才能灵活利用主用户网络的频谱空洞。为了保
+
+证主次网络能够正常工作，次用户的路由需要灵活避让主用户的保护区。
+
+
+
+
+图5-4次用户的干扰区
+如图5-4所示，围绕着次用户(发射机)的27个小立方体组成次用户的干扰 区。如果一个主用户出现在次用户的干扰区之内，则次用户就会干扰主用户的传 输。所以次用户的干扰区之内不能有主用户出现，考察次用户干扰区之内的主用 户个数，设这个数目是Z,则有如下引理，这个引理直接修改自引理44
+引理5-2：标记在一个次用户干扰区之内的主用户个数为L,其中匕是〃『或 〃的函数。对于不同的少值，有如下结论。
+•如果/3>\,那么对于任意正数宀 有：
+limPr{Z >^} = 0	(5-8)
+也就是说，▲以概率趋于0。
+•如果0=\,那么以高概率有:
+(5-9)
+176
+也就是说，L = ®(log «) o
+•如果p<\,那么以高概率有:
+27c0^-—jlog»<LvTlcG'R-' logw	(5-10)
+证明：这个引理探索了在次用户干扰区内的主用户个数，对于一个特定的次 用户干扰区，一个主用户，比如X疽• = 1,2,.../落入这个干扰区的事件为贝努利
+事件，其概率为A = 2—10g~°标记在这个干扰区内的主用户个数为力，其中Z n
+是一个服从贝努利分布的随机变量，参数是,并且Z的期望值如下。
+E[L\ = pnm - 27c0m1/^_1 log”	(5-11)
+注意到当0>1的时，本文有lim研幻=0.	-
+IS
+本文使用Markov不等式来决定L的上界，对于任意正数£ ,本文有：
+Pr 仏 >$}W 邑史 T0	(5-12)
+8
+令£ = L,本文有Pr(Z>l)-^Oo因为乙是一个正整数，所以£以概率趋于零。
+当;0M1的时候，本文再次使用Chemoff不等式获得Z的下界，如下所示：
+P	.(l + (d-l)p)
+Pr(L <a}< min —~- = min  	—
+i 」 /<o e	/<o	eta
+偽 log 舟。(宀))	(5-13)
+;)(1+(〃_1况)"'；)exP[ 〃	,
+—	/»_枷	―	—
+其中(a)是通过代入现e'”的值得到的，(b)是通过将I替换成负常数-。得 到的，其中。>0 -根据不等式} + x<ex ,本文有 (1 + (e-。<exp[招°g/竺,因此得到(以对于p< 1的情形，将放=],
+V n )
+m = n]l?和4 = 272；-丄]108〃 代入(5-13),本文得到：
+177
+
+其中(d)是由*S因为27C°(X)>。，本文有丄"因
+n 2
+此对于0〈 \, L的下界以咼概率是27c0(—— ^_1)log77 o实际上因为％ > 1,本文
+有27%(?-。一】)>1°使用一致界，在任何一个次用户干扰区之内的主用户个数多
+于27勺(：-/)1理〃的概率小于一:	\	0 ,这意味着在所有次用户干
+2	Co log n 27c0(--e-1)
+n z
+扰区之内的主用户个数的下界是27Co(|-^)log»o
+为了找到Z的上界，本文使用Chernoff不等式：
+E\elL] (】 + (e，-l)p“)”'
+Pr(Z >a)< min 丄旦=min 	竺丄
+I J />0 e	/>0	e
+3風瘁°心))
+(?(1 + /-1也)"'(,exP[ n ,
+其中(e)和 S 分别使用了类似(b)和(c)的技巧，。是一个正数。本 文分析如下两个情形：
+• 对于0=1的情形，代入。=1, m = n和o = 27Coelog〃到(5-15),本文有:
+
+
+
+因为27c°>0,所以本文有就TO。因此对于0 = 1的情形，Z的上界以高
+概率是27c0elog»o类似之前的讨论，因为/>1,所以本文有关系27/>1。使 用一致界，在任何一个次用户的干扰区之内，主用户个数超过27c0dogn的概率
+178
+
+
+• 对于0<1的情形，将秫=〃"和。= 27Coe〃"Tlog”代入（5-15）,本文有:
+
+
+
+
+是匕的上界。类似之前的讨论，本文有27cM氏>1,因此 一-	-0。
+c0 log n n °n
+因此在任何一个次用户干扰区之内主用户个数超过27c°e/妇log如的概率趋于Oo
+#
+由引理5-2可知，当且仅当白>1的时候，在次用户干扰区之内的主用户个数 趋于0,这时能保证次用户不受主用户的干扰，也能保证次网络存在频谱机会， 因为当主用户在次用户的干扰区之内的时候，次用户是不能传输的。
+5.3.2允许次用户等待的网络连通性分析
+当次用户的传输遇到主用户保护区时，次用户的传输被阻断，这在传统意义 上可以认为次用户的传输中断，但是在这里以及文献［5-23］的次用户网络协议中, 次用户可以选择缓存自己的数据，等待新的频谱机会，当主用户保护区消失的时 候，次用户就可以开始新的传输。于是虽然次用户经历了等待的时间，但是次用 户的传输没有中断。在这部分，本文分析次用户允许等待的连通性分析。
+根据引理5-2,当0>1的时候，一个次用户干扰区内的主用户个数以概率趋 于0,也就是说，对于27个次用户立方体组成的一个簇来说，主用户出现在这 个簇内的概率趋于0。这意味着对于绝大多数次用户立方体，这些立方体将以高 概率具有频谱机会。但是因为主用户的个数非零，所以必然存在一些次用户立方 体，里面有主用户的存在。当主用户（接吹器）落入到次用户立方体内部的时候， 围着这个次用户立方体的27个次用户立方体组成一个簇，成为主用户保护区， 在主用户保护区内部的次用户都不能发射信号，以控制对主用户的干扰。
+这里本文使用4.2.4节的技巧，可以知道对于一个主用户立方体来说，最大 可能有6个主用户立方体向它传输信息。实际上很少有邻居立方体都向中心立方 体传输信息的情形，但是本文在这里考虑最差的情形。在最差的情形里，次用户
+179 在一个主用户帧长的时间里，有14/27的时间处于活跃状态，即次用户可以利用 14个主用户传输时隙来传输自己的信息，而一个主用户的时隙即对应一个次用 户的传输帧长，所以对于任何一个次用户立方体，在一个主用户传输帧长的时间 里，这个次用户立方体必然具有传输机会。所以当主次用户采用上述的网络协议 的时候，必然能够保证次用户的信息从源节点传送到目的节点，而不至于中断。
+既然次用户网络釆用上述的网络协议能够保证链路的连通性，那么本文接下 来分析认知无线网络的容量尺度律。
+5.4呑吐量尺度定律
+在计算网络的吞吐量尺度定律之前，首先计算链路的容量。根据文献［5-18］, 当无线网络的节点釆用3D部署的情况下干扰比2D部署的情况下要大，这是因 为节点多接收一个维度的干扰。但是在路损因子a>3的情况下，节点接收到的 干扰为常数。选择一个参考主用户，则主用户接收到来自主网络和次网络的干扰 都是常数，因此根据(5-1),参考主用户的链路容量也是常数。同理，选择一个 参考次用户，根据(5-2),参考次用户的链路容量也是常数。
+5.4.1主网络的呑吐量尺度律
+如图5-2所示，如果随机地选择源节点和目的节点，源节点和目的节点以直 线路由通信，经过每一个小正方体，这个小正方体里面的节点负责转发这条路由 上面的数据。另外，当节点数目趋于无穷的时候，经过每个小正方体的路由数目 是趋于无穷的，所以3D无线网络的吞吐量受制于两个因素:一是每个小正方体 支持的数据速率；二是经过小正方体的路由数。
+一般来说，在3D网络部署下，如果节点的部署密度大，会造成节点之间的 强烈干扰。相对于二维网络部署来说，三维网络部署下节点多接收一个维度的无 线干扰。但是由于3D无线网络可以容纳更多的节点，所以在干扰得到有效控制 以后，它的整体网络的容量是增加的。假设独立3D无线网络的节点数目是奴 将［5-25］中二维网络扩展到三维网络，得到引理5-3和引理5-4。
+弓I理5-3：对于任何一条路由&和一个小正方体则存在一个常数中 使 得如下的结论成立：
+Pr{7?,经过 /}*{罕］	(5-18)
+证明：对于一个特定的小正方体V ,它的外接球的半径是4 =g［勺譬)。
+2 1 * J
+180
+
+以路由&的源节点为顶点，画一个锥，使得锥的轴线的长度为右，以保证
+这个至少覆盖正方体的一个顶点，如图5-5所示。于是，路由K经过正方体H的 条件是路由&的宿节点*在图5-5的阴影区域之内。因为整个区域的体积是1,
+所以阴影区域的体积就是路由&切割小正方体H的概率，因为这个阴影区域的精 确体积计算有难度，所以只使用这个体积的上界，路由切割小正方体的概率为
+Min{l,圆锥的体积}。
+
+
+
+圆锥的体积的上界是：吏羿。X,•是均匀分布的，令X = x为源节点到外接 x
+球球心的距离，则X的概率密度函数是f(x)^c2x\所以有:
+
+
+
+定理得证。
+下面来计算通过一个小正方体的路由的数目的阶数，有如下引理:
+181
+引理5-4：如果C3>q,那么经过一个小正方体的路由数目满足如下结论:
+Pr{经过一个小正方体的路由数超过C3〃'3(iog4)2/3}T0	(5_20)
+证明：考察一个小正方体总共有上条路由，每条路由经过小正方体的概
+△
+=p (引理5-2)o令示性变量4 = 1代表第i条路由经过小
+正方体f ,否则4=0。所以经过正方体F的路由数目是Z*=%L，利用Chemoff /=1
+不等式来寻找Z*的上界，对于任意正数a,x,有如下不等式：
+Pr{"}& 阵]	(5-21)
+exp (ox)
+仿照证明引理5-1的证明技巧，本文有：
+E[exp(aZ*)] = (l + (/_l)p)'	仁工)
+< exp(*(e" -l)p)M exp(q(矿-1店”(log*)"')
+令 x = c3F3(log)t)2/3,代入(5-21),得到：
+Pr{Zt > c3k2'3 (logA：)l/3) < exp^c/^0 -l)-c3)A：1,3 (logA：)2/3 j ( 5-23)
+只要令。3>弓，就可以取合适的a,使得上述概率随着左趋于无穷大，概率值 趋于0»现在要证明所有正方体经过的路由数目都不可能超过x = c3F3(log^)2/3, 即某一个正方体经过路由数目超过x = c3A1/3(log^)2/3的概率为0o使用一致界即 可证明，如下：
+Pr{某一个正方体经过的路由数目超过c3ky3(\ogk)213}
+1	,,	、	如	(5-24)
+Maexp((G(e" _1)-。3)砂3 (logA：) )t 0
+定理得证。
+# 根据前面的分析，在〃>3的情形下，一条链路的容量是恒定的，假设为C。
+因此存在一个TDMA传输方案，使得恒定的数据速率C被c3A1/3(logA)2/3条路由 共享。本文只需要将整个时隙划分为C3"3(log&)”3个包时隙，每条路由使用一个 包时隙，因此最终可以得到如下定理。
+定理5-1：在a >3的情形下，在TDMA方案调度下，3D无线网络的单点吞
+182
+
+吐量尺度律是:
+就(log —丿
+注意到对于2D网络来说，单点吞吐量尺度律是:
+(5-26)
+因此3D网络的吞吐量比二维网络要高，即相同数量的节点部署的情况下， 3D网络的容量较2D网络的要高。不仅3D网络的单点吞吐量要比2D网络的要 高。对于整个网络的吞吐量，3D网络的容量也要比2D网络要高。因为主网络 工作的时候是假设次网络不存在的，因此主网络的吞吐量尺度律和一个独立网络 的吞吐量尺度律相同，即本文有如下定理：
+定理5-2：在a>3的情形下，在TDMA方案调度下，主网络的单点吞吐量
+，]、
+5.4.2次网络的吞吐量尺度律
+在引理5-2中，本文证明了在主次网络都是三维部署的情况下，必须满足 0>1的条件，才能保证次用户的干扰区之内以高概率没有主用户存在，这时次 用户存在频谱机会。在5.3.3节本文证明了次用户采用本章的网络协议可以保证 次用户路由的连通性。因此，如果主次网络密度合理配置，次用户按照本章的网 络协议部署，且路损因子a >3,那么次用户的收发链路也能维持恒定的速率(因 为主网络对次用户节点的干扰和次用户内部对次用户节点的干扰都是常数)，且 可以证明通过次用户立方体的路由数目的上界为C/"3(]°g")2\所以存在一个 TDMA传输方案，使得恒定的数据速率被c4Ml/3(logn)2/3条路由共享。本文只需 要将整个时隙划分为c4n,/3(logM)2/3个包时隙，每条路由使用一个包时隙，因此最 终可以得到下属定理：
+定理5-3：在a >3的情形下，在TDMA方案调度下，3D认知无线网络的单
+(1	)
+点吞吐量尺度律是& (") =。、2,3。
+3 (网时
+5.5结论
+为了进一步提升认知无线网络的容量，本文在本章中探索高度维度的频谱机 会，构造3D (Three Dimensional)认知无线网络，充分利用高度维来提升认知 183
+无线网络的容量。首先，本文进行3D认知无线网络干扰分析，当认知无线网络 釆用高度维频谱机会，在提升容量的同时，也会在干扰协调方面带来挑战。然后 本文设计3D认知无线网络的网络协议，以保证主次网络正常工作。最后本文分 析3D认知无线网络的容量，理论证明了：相比认知无线网络的二维部署，认知 无线网络采用高度维度的频谱机会可以提升自身的容量。
+参考文献
+[5-1] J. Mitola, "Cognitive radio: An integrated agent architecture for software defined radio,” Ph.D. dissertation, KTH Royal Inst, of Technol., Stockholm, Sweden, 2000.
+[5-2] B. Wang and K. J. R. Liu, "Advances in cognitive radio networks: A survey/5 IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1? pp. 5-23, Feb. 2011.
+[5-3] T. Yucek and H. Arslan, "A survey of spectrum sensing algorithms for cognitive radio applications,IEEE Communications Surveys & Tutorials, vol. 11, no. 1, pp. 116-130, Mar. 2009.
+[5-4] X. Wang, J. Liu, W. Chen, Z. Cao, “CORE・4: Cognition oriented relaying exploiting 4-D spectrum holes," Wireless Communications and Mobile Computing Conference (IWCMC), pp. 1982-1987, July 2011.
+[5-5] Y. Xu, X. Zhao, Y. -C. Liang, "Robust Power Control and Beamfbrming in Cognitive Radio Networks: A Survey/' IEEE Communications Surveys & Tutorials, vol. PP. no. 99,2015.
+[5-6] G. Zheng, S. Ma, K. K. Wong, and T. S. Ng, “Robust beamforming in cognitive radio,H IEEE Transactions on Wireless Communications, vol. 9, no. 2, pp. 570—576,2010.
+[5-7] Z. Wei, Z. Feng, Q. Zhang, W. Li and T. A. Gulliver, "The asymptotic throughput and connectivity of cognitive radio networks with directional transmission,5, Journal of Communications and Networks, vol. 16, no. 2, pp. 227-237, Apr. 2014.
+[5-8] P. Gupta and P. R. Kumar, "The capacity of wireless networks/5 IEEE Transactions on Information Theory, vol. 46, no. 2, pp. 388-404, Mar. 2000.
+[5-9] M. Grossglauser and D.N.C. Tse, "Mobility increases the capacity of ad hoc wireless networks/ IEEE/ACM Transactions on Networking, vol. 10, no. 4, pp. 477-486, Aug. 2002.
+184
+[5-10] S. Yao, X. Wang, X. Tian and Q. Zhang, MDelay-throughput tradeoff with correlated mobility of ad-hoc networks/1 IEEE International Conference on Computer Communications (INFOCOM), pp. 2589-2597, Apr. 2014.
+[5-11] J. Liu, N・ Kato, J. Ma and T. Sakano, ''Throughput and Delay Tradeoffs for Mobile Ad Hoc Networks With Reference Point Group Mobility/' IEEE Transactions on Wireless Communications, vol. 14, no. 3, pp. 1266-1279, Mar. 2015.
+[5-12] B. Liu, Z. Liu, and D. Towsley, HOn the capacity of hybrid wireless networks/ IEEE International Conference on Computer Communications (INFOCOM), vol. 2, pp. 1543-1552,2003.
+[5-13] A. Zemlianov and G. Veciana, "Capacity of ad hoc wireless networks with infrastructure support/' IEEE Journal on Selected Areas in Communications, vol. 23, no. 3, pp. 657-667, Mar. 2005.
+[5-14] D. M. Shila, Y. Cheng and T. Anjali, 'Throughput and delay analysis of hybrid wireless networks with multi-hop uplinks/ IEEE International Conference on Computer Communications (INFOCOM), pp. 1476-1484, Apr. 2011.
+[5-15] X. Wang and Q. Liang, "On the Throughput Capacity and Performance Analysis of Hybrid Wireless Networks over Fading Channels/1 IEEE Transactions on Wireless Communications, vol. 12, no. 6, pp. 2930-2940, Jun. 2013.
+[5-16] P. Gupta, P. R. Kumar et aL, "Internets in the sky: The capacity of three dimensional wireless networks," Communications in Information and Systems, vol. 1, no. 1, pp. 33-49, 2001.
+[5-17] M. Franceschetti, M. D. Migliore, P. Minero, "Outer Bound to the Capacity Scaling of Three Dimensional Wireless Networks/ IEEE International Symposium on Information Theory (ISIT), pp. 1123-1127, Jul. 2008.
+[5-18] P. Li, M. Pan, and Y. Fang, “The capacity of three-dimensional wireless ad hoc networks,” in Proc, IEEE INFOCOM, Shanghai, China, April 2011.
+[5-19] P. Li, M. Pan, and Y. Fang, "Capacity bounds of three-dimensional wireless ad hoc networks/5 IEEE/ACM Trans. Netw., vol. 20, no. 4, pp. 1304—1315, 2012.
+[5-20] C・ Hu, X. Wang, Z. Yang, J. Zhang, Y. Xu, X. Gao, "A Geometry Study on the Capacity of Wireless Networks via Percolation,'1 IEEE Transactions on Communications, vol. 58, no. 10, pp. 2916-2925, Oct. 2010.
+[5-21] L. X. Cai, L. Cai, X. (Sherman) Shen, and J. W. Mark, "Capacity Analysis of UWB Networks in Three-Dimensional Space/' Journal of Communications
+185
+and Networks, vol. 11, no. 3, pp. 287-296, Apr. 2009.
+[5-22] S.-W. Jeon, N. Devroye, M. Vu, S.-Y. Chung, and V. Tarokh, "Cognitive networks achieve throughput scaling of a homogeneous network,IEEE Transactions on Information Theory, vol. 57, no. 8, pp. 5103-5115, Aug. 2011.
+[5-23] C. Yin, L. Gao and S. Cui, "Scaling Laws for Overlaid Wireless Networks: A Cognitive Radio Network versus a Primary Network," IEEE/ACM Transactions on Networking, vol. 18, no. 4, pp. 1317-1329, Aug. 2010.
+[5-24] W. Huang and X. Wang, "Capacity scaling of general cognitive networks/9 IEEE/ACM Transactions on Networking, vol. 20, no. 5, pp. 1501-1513, Oct. 2011.
+[5-25] X. Feng and P. R. Kumar, “Scaling laws for ad hoc wireless networks: An information theoretic approach,” Foundations and Trends in Networking, vol. 1, no. 2, pp. 145-270, 2006,
+186
+第六章总结与展望
+下面总结本文的研究内容，并展望未来可能的研究方向。
+6.1论文总结
+为了解决认知无线网络频谱高效利用问题，本文从认知信息的准确快速获取 和多维频谱空洞的高效利用两个角度入手。将研究内容划分为两部分，第一部分 研究认知信息的准确表征和高效传递理论，为频谱的高效利用奠定基础，这部分 包含一个章节。第二部分研究多维频谱空洞的高效利用，研究空间、时间、角度、 高度维度的频谱空洞接入。本文选取吞吐量容量作为认知无线网络高效频谱利用 的性能指标，分析认知无线网络利用多雄频谱空洞的吞吐量容量。本文的研究内 容可以总结为如下四个方面。
+1.认知无线网络中认知信息表征、度量和传递理论：这部分研究内容分为 三部分，第一部分是研究认知信息的表征理论，主要针对空间和时间维 度的认知信息，使用“地理炳”和“时间爆”表示空时认知信息的不确 定性，使用“无线电参数误差”来表示认知信息表征的错误率，得到地 理嫡、时间炳、无线电参数误差与认知信息表征的参数以及栅格操作的 关系，呈现认知信息空时表征的对偶性。第二部分是建立认知信息度量 理论，面向非完美认知，用“认知信息量”统一量化多个维度的认知信 息，表示认知无线网络通过认知的手段消除的资源状态的不确定性，得 到认知信息量与系统参数，尤其是与频谱利用率和主次系统干扰概率的 关系，进一步将认知信息量应用于频谱检测的参数优化中。第三部分是 研究认知信息传递方法，基于认知信息表征理论设计准确快速的认知信 息传递方案，设计了两个栅格融合方案，从而实现在移动环境下的认知 信息高效传递。
+2.认知无线网络空时二维频谱机会：研究基于“黑白灰”三区划分的空时 频谱接入模型，从而刻画认知无线网络中的时间维度频谱空洞和空间维 度频谱空洞的位置，其中黑区内只允许主用户部署，次用户不允许部署 在黑区，灰区内存在次用户的时间维度频谱机会，次用户可以通过“检 测-接入”的方法机会式地使用主用户的频谱，白区内存在次用户的空间 维度频谱机会，次用户可以持续以最大发射功率在主用户频谱工作，而 不用担心对主用户的干扰。本文分析了三区的半径，并且得到了在灰区 和白区之间的过渡区存在的条件。然后基于这个架构，分析空时频谱接
+187 入的容量，并且进一步设计了数据库辅助的基于三区划分的空时频谱接 入方法。同时利用空时频谱机会可以填补主用户的“容量盲区”，提升整 个区域的频谱利用率，同时提升次用户的容量。
+3.认知无线网络角度维频谱机会。当认知无线网络采用方向性天线，通过 波束成形实现方向性传输以后，可以提升认知无线网络的容量。这部分 内容的研究与空时频谱空洞的研究类似，本文首先分析角度维度频谱机 会的统计特性，得到角度维度频谱机会的概率密度函数及期望值。然后 研究认知无线网络釆用角度维度频谱机会的情况下对主用户的影响，借 此设计了主次网络的网络协议，以保证主次网络可以正常工作，然后本 文分析釆用方向性传输的认知无线网络的吞吐量容量和连通性。这部分 的研究证明了：相比于利用空时频谱机会的方案，认知无线网络采用角 度维度频谱机会可以进一步提升自身的容量。
+4.认知无线网络高度维频谱机会。在这个研究内容中，本文构造3D (Three Dimensional)认知无线网络，充分利用高度维来提升认知无线网络的容 量。首先，本文进行3D认知无线网络干扰分析，当认知无线网络采用高 度维频谱机会，在提升容量的同时，也会在干扰协调方面带来挑战。然 后本文设计3D认知无线网络的网络协议，以保证主次网络正常工作。最 后本文分析3D认知无线网络的容量，理论证明了：相比认知无线网络的 二维部署，认知无线网络釆用高度维度的频谱机会可以提升自身的容量。
+6.2未来研究展望
+本文研究了认知信息的获取、表征、度量和传递，多维认知信息的接入，以 实现认知无线网络的高效频谱利用，并且本文分析了网络容量，作为认知无线网 络高效频谱利用的性能指标。但是本文的研究内容仍然有不充分的地方，留作未 来的工作，现在列举如下：
+1.认知信息获取、表征、度量与传递的理论仍然不完备：本文对空间维度认知 信息的获取、表征、和传递理论的研究比较完备，但是空间维度认知信息的 度量目前没有涉及，这是因为与时间维度认知信息相比，空间维度认知信息 的获取方法更为多样，因此其度量难以在简单、统一的模型下进行。与此类 似，本文对时间维度认知信息的获取、表征、度量研究比较完备，但是时间 维度认知信息的传递研究较少，这是因为时间维度认知信息的传递多发生在 分布式协作感知里，或者发生在控制平面内部，而这些情况下的认知信息传 递影响因素众多，情况复杂，也难以在简单、统一的模型之下研究。所以,
+188 对于多维认知信息，本文其实没有得到一个完美的获取、表征、度量、传递 的完备理论。对这个完备理论的研究可以作为未来工作，在后续着重研究。
+2.空时频谱接入没有考虑主用户对次用户的影响：一般来说，次用户决定是否 接入主用户的频谱不仅要考虑主用户的QoS约束，还要考虑主用户对自己的 性能影响，这就是一个主次用户博弈的过程。在基于三区的空时频谱检测与 接入的研究中，本文只考虑了次用户对主用户的影响，而没有考虑主用户对 次用户的影响，这是因为在现有的认知无线网络的研究中，人们一般都认为 主用户的优先级比次用户高，次用户只要有频谱机会就应该接入。但是如果 将认知无线网络应用在未来5G的异构网络融合中，则需要进一步弱化主用 户的地位，即将主次用户的地位等同，即考虑次用户对主用户的影响，也要 考虑主用户对次用户的影响。在这种情况下，当次用户距离主用户较近的时 候，次用户不一定利用主用户的频谱，因为主用户可能对次用户造成严重干 扰。这是将认知无线网络扩展到异构无线网络融合的研究范畴的必要假设， 可以作为未来的研究工作。
+3.多域认知目前只考虑了无线域，没有考虑其他域的认知：认知无线网络一个 鲜明的特征就是多域认知，其中“多域”包括无线域、网络域、用户域、内 容域等等，但是因为时间和精力有限，本文只对无线域进行了研究，其他域 的认知和利用没有研究。在网络域的负载均衡研究，在用户域的用户行为认 知，在内容域的内容认知都是提升认知无线网络容量的重要手段，在未来应 该重点研究。
+4.对安全性的考虑不足；因为时间有限，本文对于多维频谱接入的安全性研究 较少，实际上安全性是认知无线网络分析、设计和优化的重要主题，例如在 基于三区的空时频谱接入中，次用户有可能是违法用户，在这种情况下如何 发现和排除违法用户是一个重要的问题。同理，在角度维度和高度维度的频 谱接入也有类似的安全性问题。多维频谱接入中的安全性问题应该作为未来 的研究课题，重点予以研究。
+综上所述，虽然本文针对认知无线网络中的高效频谱利用进行了较为充分的 研究，但是因为时间和精力的限制，本文的研究内容仍然不够充分，上面列举的 未来研究方向只是冰山一角，希望通过未来的努力，建立认知无线网络高效频谱 利用较为完备的理论和机制，进而应用并服务于5G无线通信的发展。
+189
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+190
+
+
+缩略语
+英文缩写	英文全拼	中文
+3G	　The 3rd Generation mobile communications	第三代移动通信技术
+3GPP	The 3rd Generation Partnership Project	第三代移动通信合作伙 伴计划
+FCC	Federal Communications Commission	美国联邦通信委员会
+ETSI	European Telecommunications Standards
+Institute	欧洲电信标准协会
+IEEE	Institute of Electrical and Electronics
+Engineers	电气和电子工程师协会
+I2R	Institute for InfbComm Research	新加坡资通讯研发中心
+CEPT	European Conference of Postal and
+Telecommunications Administrations	欧洲邮电管理局会议
+RAT	Radio Access Technology	无线接入技术
+4G	The 4th Generation mobile communications	第四代移动通信技术
+5G	The 5th Generation mobile communications	第五代移动通信技术
+WLAN	Wireless Local Area Network	无线局域网
+LTE	Long Term Evolution	长期演进技术
+AWGN	Additive White Gaussian Noise	加性高斯白噪声
+PDF	Probability Distribution Function	概率密度函数
+CLT	Centra] Limit Therein	中心极限定理
+SDR	Software Defined Radio	软件无线电
+SDN	Software Defined Network	软件定义网络
+CPC	Cognitive Pilot Channel	认知导频信道
+CCC	Common Control Channel	公共控制信道
+CR	Cognitive Radio	认知无线电
+CWN	Cognitive Wireless Network	认知无线网络
+DSA	Dynamic Spectrum Access	动态频谱接入
+DSL	Dynamic Spectrum Leasing	动态频谱租赁
+PU	Primary User	主用户
+SU	Secondary User	次用户
+QoS	Quality of Service	服务质量
+191
+
+
+SINR	　Signal to Interference Noise Ratio	　　　信干噪比
+SNR	　Signal to Noise Ratio	　　　信噪比
+TDMA	　Time Division Multiplexing Access	　　　时分多址接入
+MAC	　Medium Access Control	　　　媒体接入控制
+CRAHN	　Cognitive Radio Ad Hoc Network	　　　认知无线电自组织网络
+REM	　Radio Environment Map	　　　无线电环境地图
+PUEA	　Primary User Emulation Attack	　　　主用户模拟攻击
+PER	　Primary Exclusive Region	　　　主用户排斥区
+UWB	　Ultra Wideband	　　　超宽带
+CSI	　Channel State Information	　　　信道状态信息
+PUEA	　Primary User Emulation Attack	　　　主用户模拟攻击
+RPE	　Radio Parameters Error	　　　无线电参数误差
+
+192

@@ -1,0 +1,12 @@
+2.4.2.3LCS功能安排
+从功能上，LCS由若干逻辑功能实体组成。LCS的逻辑功能实体可以分为两 个主要功能组：LCS客户端功能组和LCS服务器功能组。
+LCS客户端功能组包括LCF (Location Client Function,客户端功能)，它提 供LCS客户端和服务器之间的逻辑接口，负责请求一个或者多个UE的位置， 提出QoS (Quality of Services)要求和接收响应，响应中包含位置信息或者失败 指示。
+LCS服务器功能组包括客户处理组件(client handling component),系统处 理组件(system handling component),订阅者处理组件(subscriber handling component) 和定位组件 (positioning component)(>
+客户处理组件主要包括LCCF (Location Client Control Function,定位客户端 控制功能)，负责管理和LCF的外部接口。LCCF通过和LCAF (Location Client Authorization Function,定位客户端鉴权功能)交互，对请求的LCS客户端验证 和鉴权(识别该LCS客户端是否被允许定位该订阅者)。LCCF也处理LCS客户 端的移动性管理。LCCF决定是否最终估计结果满足QoS。LCCF在同时收到多 定位请求时，提供流控制。它也可以在命令LCCTF (Location Client Coordinate Transformation Function,定位客户端坐标转换功能)执行向当地坐标的转换。它 也可以命令 LSCTF (Location System Co-ordinate Transformation Function,定位
+15
+系统坐标转换功能）执行当地坐标向网络标识（如小区ID,定位区域标识符等）-的转换。它也能通过LSBF飞Location System Billing Function,定位系统记账功 能）产生LCS收费和记账数据。
+系统处理组件主要包括LSCF （Location System Control Function,定位系统 控制功能），LSBF, LSOF （Location System Operations Function,定位系统运营 功能）,LSBcF （ Location System Broadcast Function，定位系统广播功能）,LSCTF, LIMS-IWF （Location IMS （IP Multimedia Subsystem） - Interworking Function, 定位IP多媒体子系统互操作功能）。其中LSCF负责协同定位请求，管理呼叫相 关的和非呼叫相关的LCS定位请求并分配网络资源。LSBF负责收费和记账活 动。LSOF负责指派数据，如定位能力、客户端数据和订阅者数据，错误管理和 LCS性能管理等。LSBcF提供广播能力，它仅在某些定位模式下使用。LSCTF提 供将地理格式表示的区域定义转换为网络ID的功能。在请求网络中的LIMS-IWF 负责基于IMS用户标识符决定LCS请求到目标UE家网络的路由，在家网络中 LIMS-1WF负责决定合适的HSSo
+订阅者处理组件包含 LSAF （Location Subscriber Authorization Function,位 置订阅者鉴权功能），LSTF （Location Subscriber Translation Function,位置订阅 者翻译功能），LSPF（ Location Subscriber Privacy Function，位置订阅者隐私功能）。 LSAF负责授权对某个特定的UE定位的指派，具体来说，该功能验证某订阅者 适用于LCS。如果LCF在UE中，LSAF验证该是否UE订阅请求的LCS服务。 LSTF负责映射目标UE的真名和假名。LSPF负责执行所有的隐私相关的鉴权， 对于目标UE,它应该根据它的隐私选项鉴权。
+定位组件包括PRCF （Positioning Co-ordination Function,定位无线协同功能）, PCF （Positioning Calculations Function,定位计算功能），PSMF （ Positioning Signal Measurement Function,定位信号测量功能），PRRM （Positioning Radio Resources Management,定位无线资源管理功能）。它们根据接入网类型有着不同的描述。 图2-6展示了逻辑功能组的划分和其中包括的逻辑功能实体。
+16
+上述功能需要映射到具体网元。标准中规定了功能向网元的映射方式⑷］。例 如在EPS中，LCF可以位于LCS客户端,MME或者UE中；LCCF只位于GMLC 中；LSCF只位于MME中；PRCF和PCF只位于E-SMLC中。

@@ -1,0 +1,6 @@
+2.3.1.2邻域基站集合
+当协作在一个较大的网络中进行的时候，用户主要对其周围的基站带来干 扰，而对离其较远的基站的影响较小。因此在本小节中，定义了两种邻域基站 集合，用于表示受用户干扰较大的基站集合。
+碁个用户的邻域基站集合(neighboring BS set of a given user, NBSU)包 含KbQG W召—1)个受该用户干扰影响较大的基站。用户，2的邻域基站集合 NBSU定义如下
+NBSUn = {si(n),S2㈤，…(2.7)
+类似地，某个基站的邻域基站集合(neighboring BS set of a given base station, NBSB)包含受该基站服务用户影响最大的若干个基站。基站m的邻域基站集 合NBSB定义如下
+NBSBm = [J NBSUn	(2.8)

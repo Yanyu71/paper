@@ -1,0 +1,29 @@
+2.3百度地图API
+百度地图API是百度公司于2010年4月推出的一套由Java脚本语言编写的 应用程序接口【刀。它有效地对复杂的底层逻辑进行了封装和隐藏，以简洁明了的 方式提供给开发人员，将全部运算放在百度自身的服务器中运行。基于该程序接 口，通过开发人员的二次开发可以为用户提供功能全面、极具个性化的地图应用 服务。百度地图API突破了传统的“点击一等待”模式，釆用了 Ajax这一局部 刷新技术有效地避免了重复加载地图页面脸。
+百度地图API包含了地图类、标记类、折线类、经纬信息、信息窗口类等 构建地图基本功能的接口，提供了诸如美食地点、线路规划、驾车路线等数据服 务，并且其提供的地图服务是全部免费的，任何营利机构或编程的发烧友均可通 过其提供的APL编写JavaScript脚本开发地图功能削9】。下面简要地介绍一下在 智能系统开发时需要用到的类。
+•地图类Map
+地图类作为百度地图API中最核心的部分，是其他元素的基础，任何其他 元素都是在它的基础上发挥作用的。当用户需要在网页中加载百度地图时，首先 要通过varmap = new BMap.Map(n")来获取一个Map类的实例。然后，根据实际 的需求情况，设定该地图实例的相关属性，如页面地图的中心位置、缩放等级、 是否允许拖拽等等。
+表2-1 Map类的常用方法
+方法名称	返回值	方法说明
+setCenter()	none	指定地图的中心点
+enableDragging()	none	打开地图拖拽功能
+enableScrollWheelZoom()	none	打开鼠标滚轮放缩
+enableDoubleClickZoom()	none	打开双击放大
+setMapType!d(maplypeld:
+MapTypeld)	none	设置地图类型
+•标记类Marker
+标记类Marker涉及对地图上某一点的一些相关操作。在初始化标记的位置 信息之后，将该标记添加到百度地图上；同时，可获取标记的相关信息或对标记 添加拖拽、点击等监听函数。
+表2-2 Marker类常用方法
+方法名称	返回值	方法说明
+setClickable(flag： boolean)	none	将当前层设置为可点击。
+setDraggable(flag： boolean)	none	允许在地图上拖放标记
+setTitle(titl e: string)	none	给标记取名字
+set\^sible(visible: boolean)	none	将标记设为可见
+,折线类Polyline
+折线类Polyline用来在百度地图上绘制折线的地图添加层。
+表2-3 Polyline类常用方法
+方法名称	返回值	方法说明
+setMap(map： Map)	none	在地图上添加折线
+setOptions(options： PolylineOptions)	none	设置折线的属性
+setPath(path：
+MVCArray. <LatLng>|Array. <LatLng>)	none	设置一条路径,path为折线坐标 的有序点列，可以使用一个简单 的LatLng数组或者LatLng的 MVCArray指定此路径。

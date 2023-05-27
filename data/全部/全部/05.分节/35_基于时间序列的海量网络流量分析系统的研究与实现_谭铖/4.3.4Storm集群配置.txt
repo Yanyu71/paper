@@ -1,0 +1,22 @@
+4.3.4Storm集群配置
+Storm安装其实并不复杂，主要是其依赖的组件比较多，安装Storm前需要 安装ZeroMQ、JZMQ、Python等。本文不介绍组件安装，主要介绍下Stomyaml 的配置。
+storm.zookeeper.servers:
+-"192.168.10.10"
+-"192.168.10.11"
+-"192.168.10.12"
+-"192.168.10.13"
+-"192.168.10.14"
+此处主要配置了 Storm所使用的Zookeeper集群的地址。
+stonn.local.dir: "/home/uesr/storm/workdir"
+此处主要指定了 Stom的工作路径。
+j ava.library.path: "/usr/local/lib :/opt/local/lib:/usr/lib "
+此处主要制定了 Storm运行所需的ZMQ和JZMQ地址，也可用默认的，则 不需要配置。
+nimbus.host: "192.168.10.10"
+此处主要指定了 Storm的主节点地址。
+supervisor.slots.ports:
+-6700
+-6701
+-6702
+-6703
+此处指定了每个Supervisor节点可运行的Worker的端口。Stonn默认一个 Supervisor可运行4个worker,则每个worker可用的端口即为6700、6701、 6702/6703o
+38

@@ -1,0 +1,66 @@
+3.3.2区域巡回模块的实现
+区域的查询、修改、删除等功能的实现与线路巡回模块类似，不再赘述。区 域添加是该模块中的重点，也是难点。下面我们着重介绍该功能的实现。
+步骤一、加载添加区域巡回信息页面
+在区域巡回信息管理页面设置了一个添加区域的按钮，用户通过点击它跳转 到添加线路信息页面。具体地，我们对添加线路按钮设置了一个点击触发事件， 用户点击时将触发该事件，在该事件函数中，我们写入了 parent.location.href='<umpay:newUrl url="/pm/areainfoAdd.pm'7>'+'&start=start'方 法。Href链接的目的是为了向服务器发送添加区域的请求，并传递参数给服务 器端，服务器端Controller根据相应的参数调用一个添加线路的模型和视图，解 析该模型和视图，为用户呈现出添加区域巡回信息页面，成功的完成了上述跳转。 在添加区域巡回信息页面的右侧，通过组合运用div、textbox、legend、button 这些控件，将巡回区域的整个信息显示出来，并且为了显示的整齐，我们将上述 控件按照相关次序放在一个Table的控件中。基本信息的布局显示如下图，其中， 我们设置了一个检验按钮，当用户在文本框中填写完区域编号后，通过点击该检 验按钮向服务器发送查询请求，服务器查询数据库中是否己有此区域编号，如果 有，弹框提示用户已存在此区域编号，请重新输入。另外，还设计了区域中心、 区域半径两个文本框，分别用来动态显示所画区域中心的经纬度信息和区域半 径。为了提高精确度，用户也可在这两个文本框中手动输入来制定巡回区域。
+图3-17区域巡回信息布局
+步骤二：地图上巡回区域的制定
+35
+首先在添加巡回区域页面初始化时，加载百度地图，实现方法与3丄2节相 同。为了提高代码的简洁性和高效性，在加载方法中，我们将地图变量(map) 声明成一个全局变量，实现方法为window.map = map。对于加载到页面的百度 地图我们设置了双击监听事件函数。当用户双击地图时，将触发该事件函数。在 该函数中：第一步：判断标记数组中的元素个数是否大于1个，如果满足，则弹 框提示用户地图上己具备构成圆条件的两个点，请先双击地图标记取消某一点。 如果不满足，获取用户双击地图时点的经纬度信息并拼装成特定的形式存储到经 纬度信息数组中；同时，对该点调用百度地图API提供的标记生成方法生成标 记并设置标记的相关属性，比如：大小、颜色、能否拖拽等，然后，把标记存储 到标记数组中，最后，将该标记添加在百度地图的图层上，达到显示的效果。第 二步：判断标记数组中的元素个数是否等于2个，如果不是，则继续监听用户第 地图的双击操作哦。如果是，则读取经纬度数组中的2个元素，通过公式3-5计 算出这两点之间的球面距离。第三步，经纬度信息数组中第一个经纬度信息和计 算所得球面距离为半径分别作为区域的圆心和半径，通过调用地图API的画圆 函数实现画圆，同时，设置该圆的相关属性，如圆环的颜色、粗细，区域的填充 颜色等，最后将所得的巡回区域添加到地图的图层上显示出来。
+在实际情况中，用户在制定巡回区域过程中，可能需要对区域做一些动态的 调整，使得用户操作简便且制定的区域准确性较高。为此，在本系统中，我们考 虑了两种操作。一种是当用户双击标记点时将在地图上删除该标记点。另一种是 用户可以在地图上通过拖拽标记点来动态调整巡回区域的大小和位置。为了实现 上述两种功能，我们将对地图上的标记点设置双击的监听事件和拖拽的监听事 件。
+当用户对地图上的标记点做双击操作时，将触发该标记点的双击监听事件函 数。在该事件函数中，首先，循环读取标记数组中的数据，将读取岀的数据与该 双击点的标记做比较，找到该标记点在标记数组中的位置信息，调用地图API 提供的移除层的方法将该标记点从地图中移除，并且根据所获取到的位置信息， 通过调用数组的spice函数，将对应的标记信息和经纬度信息从标记数组和经纬 度信息数组中删除。即通过markers Array. spl i c e(i, 1)将标记从标记数组中删除， 通过latLngs.splice(i, 1)将该点的经纬度信息从经纬度数组中删除。
+当用户对地图上的标记点拖拽时，将触发该标记点的拖拽监听事件函数。在 该事件函数中，首先，循环读取标记数组中的数据，将读取的数据与拖拽前该点 的标记比较，找到拖拽标记点在标记数组中的位置，根据所得的位置信息，更新 经纬度信息数组。即通过latLngs[i]=e.point;将拖拽后点经纬度信息更新到经纬度 数组中。最后，判断标记数组中元素的个数是否等于2个。如果是，则调用画圆
+36
+图3-19拖拽标记前后对比
+步骤三、保存巡回区域信息
+用户在地图上画好区域后，通过点击确定按钮向服务器发送添加请求，服务 器端的TAreainfbController将接受该服务请求，指派业务逻辑层的areainfo Service 和tAreainfbDAO处理该请求，tAreainfbDAO通过Ibatis的配置文件将区域信息 插入到数据库中。根据插入的成功与否，TAreainfoController返回两种不同的 ModelAndView。
+成功添加巡回玆路信息	ylx	添加遂回线路信息失败
+. - < - : - ■ ■- - - "
+图3-20区域添加提示框
+部分核心代码如下：
+Controller端的核心代码：
+public class TAreainfbController extends MultiActionController
+public ModelAndView areainfbAdd(HttpServletRequest request, HttpServletResponse response) throws Exception
+{
+areainfb.setAreaidCrequest.getParameterC^reaid"));
+〃从请求参数中获取区域编号 areainfo.setAreaname(request.getParameter("areaname"));
+〃从请求参数中获取区域名称 areainfb.setArearadius(Float.parseFloat(request.getParameter("arearadius"))); 〃请求参数中获取半径 areainfb.setMemo(request.getParameter("memo"));
+〃请求参数中获取宣传内容
+String latLng=request.getParameter("point");
+〃请求参数中获取经纬度信息
+latLng=latLng.replace("(",””).replace。')"，"").replace(" ",
+StringO cc=latLng.split(",")； areainfd.setArealng(Float.parseFloat(cc[0])); areainfb.setArealat(Float.parseFloat(cc[l]));
+try
+{ this.areainfbService.addAreainfo(areainfb); retMap.put("message",”成功添加区域信息”)； retMap.put("layoutflash", "true");
+return new ModelAndView(this.successView, retMap);
+} catch (Exception e)
+{retMap.put("message",”添加区域巡回信息失败，
+return new ModelAndView(this.fhilVew, retMap);}
+)
+}
+Model端Service层核心代码：
+public class AreainfoServicelmpl implements AreainfoService
+public void addAreainfb(TAreainfb record) throws DataAccessException
+{
+this.tAreainfbDAO.insert(record);//调用 Dao 插入数据
+}
+}
+38
+Model端Dao层核心代码
+public class TAreainfoDAOImpl extends SqlMapCIientDaoSiqjport implements
+TAreainfoDAO (
+public void insert(TAreainfo record)
+{getSqlMapClientTemplateO-insert("T_AREAINFO.insert", record);}
+〃将区域信息插入数据库中
+User areainfoQueryaredii儡A也漪p	TAfeainfeCentroller AreainfbS^vice | TAreatoibDAO
+rJ-
+1.增加巡回区域信&	!	!	!	：
+；	.-	■	I	t	•
+i	：	i	i	i
+；	；2.fKBentJocation.href ；	'	'	；
+!	s	—	h	:	i	：
+!	:	^	：	:	I
+；	；	L/pm/areainfoAdd.pm ；	；	I
+!	: y fi ：丨
+•	:	；	4一调用 areainfoService 中的 addAreaiufbO方法	!
+；	；	\	\	5调用tAreainfbDAO中insert ()方法
+图3-21添加巡回区域流程图

@@ -1,0 +1,21 @@
+摘要
+移动通信中，协议一致性测试是所有终端上市之前必须经过的测 试，本课题正是来源于"TD-LTE-Advanced TTCN终端协议仿真测试 仪开发”这一国家重大专项课题。本文对协议一致性测试理论及3GPP 协议对VoLTE及VoLTE测试例的规定进行分析，完成了测试例的开 发调试，并且成果已运行于TD-LTE业务测试仪。
+本文分为五章：
+第一章介绍论文背景和作者的工作。
+第二章介绍作者开发平台的软硬件架构、VoLTE网络架构和 SIP&SDP技术以及测试例的开发流程和方法。
+第三章分析了 3GPP TS34. 229-1协议对VoLTE测试例的规定，选 取了鉴权测试例、语音被叫测试例、视频主叫测试例、视频被叫测试 例对其给出基于TTCN-3的实现。
+第四章对上一章所实现的测试例进行详细验证，首先对每一个测 试例的每一个测试点进行手动验证，然后给出所有测试例的自动化测 试结果。
+第五章对本文所研究内容进行了总结，对通信测试仪表产业及 VoLTE的发展提出了一些展望，并且对作者个人的工作进行规划。
+本论文研究内容已经获得GCF认证并集成到TD-LTE业务测试仪, 投入应用且运行稳定。
+关键词:VoLTE;业务测试仪;测试例;TTCN-3
+THE DESIGH AND IMPLEMENTATION OF VoLTE TESTCASE BASED ON TD-LTE TERMINAL PROTOCOL ANALYZER
+ABSTRACT
+In the mobile communications industry, protocol conformance test is a test that must be passed before the terminal equipment brought to the market. The thesis topic is derived from a country's major research project "TD-LTE-A terminal protocol analyzer based on TTCN". The theory of protocol conformance test and the specification of VoLTE and VoLTE test of 3 GPP protocol is studied and some test cases from 3 GPP TS 34.229-1 is implemented in the thesis.
+The thesis is divided into five chapters：
+In the first chapter of the thesis, the background of the project and the author's work and result are been descried.
+The second chapter is for the reader's ease of understanding of the thesis. In the first part of this chapter, the hardware architecture and software Architecture of TD-LTE protocol analyzer is been present. In the second part, the software architecture of VoLTE and VoLTE Tester and SIP technology is introduced. In the last part, a way to develop test case based TTCN-3 is present.
+The third chapter of this thesis, the author analyses the specification of protocol 3GPP TS34.229-1 and gives an TTCN-3 implement of 4 test cases, which is authentication, mobile terminated speech call, mobile original video call, mobile terminal video call.
+The forth chapter gives the manually verification and automated test results of the test cases. In the manually verification part, the article gives the result of every test point of test case and analyzes the reason why the test point passes.
+The last chapter is the conclusion of the thesis. This chapter is to sum up the result of the author's work.
+The fruition of the thesis has passed the GCF authentication and integrated into the tester and runs stably.
+KEY WORDS:VbLTE;protocol analyzer;test case;TTCN-3

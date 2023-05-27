@@ -1,0 +1,70 @@
+4.4.1.2模块监控指标及计算
+网络监控模块在整个D2D RRM模块中作为网络参数与本机指标的汇聚整 理者，输入输出参数较多，如表4-2、表4-3。之所以强调“本机指标”，是为了 区分针对如本机所测量得到C2D的干扰值IntfLC2D[CUEID],与干扰控制模块 在干扰信息广播中接收到的其他DUE感知到的干扰值IntfJZ2Drx [DUEID][CUEID]o网络监控模块定位为汇聚本机自主感知到的信息，与其他 DUE的信息交流由其他模块完成。在其变量命名中，约定D代表DUE本机， Dtx 代表 TxDUE, Drx 代表 RxDUE, B 代表 BS, C 代表 CUE。
+55
+表4-2网络监控模块指标及参数获取
+名称	　　I/O	说明
+SystemlnfbrmationBlockl	Input	PDSCH中系统广播的SIB1,其中包含TDD UL/DL 配置[33】。
+SystemInfbnnationBlock2	Input	PDSCH中系统广播的SIB2,其中包含：小区专用 参考信号功率CRS-refbrencePower、PUSCH上行功 控的路损补偿因子a、开环工作点Po_Nominal PUSCH[331o
+PDCCH_DCI0_HI _MSG	Input	PDCCHDCI Format。消息在公共搜索域中包含
+NDI、MCS、RBStart、RBLen^I。
+HI消息包含确认数据子帧号、ACK/NACKo
+DATACTRL_MSG	Input	DUE监听D2D随路控制信道DATA CTRL-CCCH,
+CRC正确时上报消息，其中包含D2D通信的资源 段占用信息，用于辅助功率测量统计。
+SYNC_MSG	Input	D2D-SYNC-CCCH为DUE同步、状态广播信道， 用于D2D组网中的终端发现。消息包含DUE同步 信号参考功率D_ referencePower ,单位为 dBm/REo
+PowerMeasure_UL[l 10]	Input	系统总带宽(包括保护边带)中RS符号的每RB 的能量测量值，如20M系统中，共上报110RB的 功率值，单位为dBm/RB。
+C_RSRP, D_RSRP	Input	专用参考信号测量功率。异构网中专用参考信号为 LTE小区专用参考信号、D2D-SYNC专用参考信 号，测量功率值分别记为C_RSRP, D_RSRP,由 物理层计算上报，单位为dBm/RE。
+HARQ_MSG	Input	其中包含D2D数据接收方Drx_ID,使用TBSize, ACK/NACK指示。以此计算D2D发送链路速率。
+TDDConfig	Output	SIB1 中 tdd-Configuration 配置的 TDD UL/DL 帧格 式，此处为0〜6。用于调度时序的选择。
+Cell_ResourceMap	Output	保存一个上行子帧中，被调度的蜂窝用户C-RNTI 和由对应资源段起始及长度组成的资源向量 (RBStart, RBLen)»用于蜂窝用户干扰测量、蜂窝通 信质量统计、资源决策。
+56
+表4-3网络监控模块指标及参数获取（续上表）
+名称	I/O	说明
+PL_D2B	Output	DUE到基站的路损，单位dB,用于干扰控制模块。 由于DUE无法进行蜂窝网络接入，且考虑到TDD 链路对称性相对较好，近似认为
+PLd2b = PLB2D = CRS _ referencePower -C _ RSRP
+PL_Dtx2D [DtxID] \	Output	Dtx设备到DUE本机的路损，单位dB。
+PL^x 小=D _ referencePower-D_ RSRP 用于SSCA模块CTS时向RTS请求端返回路损。
+-IntCC2D[CUEID]	Output	CUEID对DUE本机的干扰值，单位dBm/RB。有 关干扰具体获得方式由下文进行详细描述。输岀用 于干扰控制模块构建干扰广播数据包。
+alpha	Output	SIB2 中 UplinkPowerControlCommon 中的上行功控 的路损补偿因子序号alpha,根据映射［0,0.4,感5, 0.6, 0.7, 0.8,0.9,1］转换为0〜1。用于干扰控制模块。
+P0_PUSCH	Output	SIB2 中 UplinkPowerControlCommon 中的开环工作 点p0 NominalPUSCHo用于干扰控制模块。
+N0_D	Output	本机测量系统频带外低保护边带得到的噪声功率， 单位dBm/RB。用于干扰控制模块。
+Q_CUE[CUEID]	Output	CUE链路质量，通过UL DCI中TBSize、RBLen 和NDI/HI计算得到链路质量，单位bit/RB/Sched。 用于干扰控制模块。
+Throughput_D2Drx [DrxID]	Output	DUE本机和Drx发送链路速率。通过HARQ信息 得到平均每次调度的速率，单位为bit/sched。用于 SSCA模块。
+下面对上表中两个输出参数的计算进行补充说明。
+1. Cell_ResourceMap：
+蜂窝网络调度资源图由PDCCH DCI FormatO中携带的UL Grant信息及
+PHICH信道中的HI指示综合得到。如第一章所述，在LTE网络调度中，使用两
+种调度策略一一动态调度和半静态调度。动态调度使用PDCCH至少提前4ms
+下发，半静态调度则是在建立数据连接后，使用RRC专用信令的方式进行配置,
+由动态转变为半静态。目前DUE可以通过对PDCCH公共搜索域盲检的形式得
+到蜂窝网络动态调度的UL Grant但却不具备解析指定UE专用RRC信令的能力。
+57 在第三章基于蜂窝网络辅助的无线资源管理策略中，可以让基站在触发半静态调 度时进行一次状态广播，使DUE获取此信息。在目前的条件下，并不支持对蜂 窝网络半静态调度资源图的获取。在D2D硬件平台的组网验证中，不使用半静 态的蜂窝业务(例如VoIP)以避开没有蜂窝网络辅助、不能获取半静态调度这 一问题。待蜂窝网络支持DUE获取半静态配置时，D2D网络监控模块在获取动 态调度资源图的基础上仅需增加配置解析便可支持半静态调度。
+通过以上分析,蜂窝网络新数据的调度能够完全通过UL Grant信息获得。 考虑蜂窝网络的HARQ机制，上行HARQ支持自适应与非自适应资源分配。当 上行重传使用自适应资源分配，重传使用的资源由基站DCIFormatO下发，新数 据指示NDI与对应上次传输NDI相同，不翻转；若使用非自适应资源分配，将 直接通过PHICH信道下发HI (NACK)指示，指示CUE以相同的频域资源在 固定时间间隔后重传，不会再次下发UL Grant信息。为了得到完整的蜂窝调度 图，需要DUE通过监听PHICH,将重传调度的资源分配按照与之对应前一次的 分配方案相同的方式，放入对应子帧的蜂窝网络资源调度图中。
+UL Grant和HI的提前调度时间为k,在子帧n上发送的UL Grant与HL其 对应的上行发送子帧为n+kP。］。
+表4-4 TDD配置0~6的提前调度偏移量k
+上下行配置	子帧号
+0	　1	2	3	4	　5	　6	7	8	9
+0	　4	　6				　4	　6
+1		6			4		　6			4
+2				4					4
+3	　4								4	4
+4									4	4
+5									4
+6	　7	　7				　7	　7			5
+若在子帧n时收到NDI或HL对应前一次传输子帧为n-k〔3。］。
+表4-5 TDD HI/NDI对应上行传输子帧偏移量k
+上下行配置	子帧号
+0	　1	2	3	4	　5	　6	7	8	9
+0	　7	　4				　7	　4
+1		　4			6		　4			6
+2				6					6
+3	　6								6	6
+4									6	6
+5									6
+6	　6	　4				　7	　4			6
+58
+2. IntLC2D[CUEID]
+对于蜂窝用于对DUE自身干扰的测量，需要综合PowerMeasure_UL[110]、 DATACTRL MSG和Cell ResourceMap得到。以下图4-10为例，通过对应子帧 的Cell_ResourceMap,得到蜂窝资源分配，CUE1的资源向量为(RBStart_CUEl, RBLen_CUEl), CUE2 的资源向量为(RBStart_CUE2, RBLen_CUE2)。通过成功 接收DATACTRL_MSG,表明在DUE冲突域内有其他DUE用户进行D2D通信, 资源向量为(RBStart_D2D, RBLen_D2D)。其关系为
+RBStartCUEX < RBStartD2D < RBStartCUEX + RBLenCUEX < RBStartCUE2 (42)
+< RBStartCUE2 + RBLenCUE2 < RBStartD2D + RBLenD2D
+图4-10上行干扰测量值
+在此情况下，DUE无法从混合测量（上图包络）中区分各个用户的独立干 扰，仅能挑选未复用部分进行测量。故在计算蜂窝用户C2D干扰时需要避开D2D 占用资源，在本子帧中不能更新CUE2的C2D干扰，仅能计算CUE1的干扰：

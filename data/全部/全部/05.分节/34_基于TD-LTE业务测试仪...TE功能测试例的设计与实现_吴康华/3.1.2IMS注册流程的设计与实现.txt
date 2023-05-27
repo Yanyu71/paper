@@ -1,0 +1,12 @@
+3.1.2IMS注册流程的设计与实现
+终端注册到IMS过程可以参考协议3GPPTS34.229-1中注册成功的测试例流 程，由以下几个步骤构成：
+1)完成LTE接入网的注册之后，SS等待具有VoLTE功能的UE发起 RIGISTER注册请求。
+2)收到REGISTER请求后，SS回复一条401 Unauthorized,消息头由以下 部分分量构成：To, From, Via, Cseq, Content-Length, Security-header 和包含 AKAvl-MD5 鉴权质询的 WWW-Authentication 头。
+3)SS等待UE发送一个临时的安全联盟，并且通过这个安全联盟发送另 一条 REGISTER 请求。
+4)SS通过UE发送第二次的REGISTER请求所携带的安全联盟集合回复 200 OKo
+5)SS收到UE发送的SUBSCRIBE请求，该请求通过新建立的安全联盟 发送。
+6)SS回复SUBSCRIBE 一条有效的200 OK。消息头包括对SUBSCRIBE 消息回复的通用定义。
+7)SS发送到UE 一个初始的NOTIFY,包括请求URL消息头，消息体。 消息体中包含的XML中包含注册公众用户身份的完整信息。
+8)UE 回复 200 OKo
+下图3-6是测试例中IMS注册部分的实现流程如图3-6所示：
+图3-6 IMS注册流程实现过程

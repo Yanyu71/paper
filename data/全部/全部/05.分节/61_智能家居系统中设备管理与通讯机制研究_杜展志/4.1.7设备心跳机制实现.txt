@@ -1,0 +1,34 @@
+4.1.7设备心跳机制实现
+a）已配置网络信息设备的心跳机制如下，设备管理器会在每一个心跳周期开启新的 线程去检测设备列表中的设备状态，控制设备将连接每一个设备去检测设备是否 在线，并根据检测的状态对设备状态加以更新，具体代码如图4-9所示。
+68
+boolean	opPmgmgC ,；
+if(hean:beatSecci^s>3) {
+戌 mqinJT 心：
+m_p 瞧: ger =new TimefTPinglger");
+tn_pin£Tnner. schedule A traedRate;
+new TsmerTaskOf
+gOenide
+public void nm(){
+fcrOe\ice de\ice:ge: AUDe\"ic*$0) {
+De\Sc*Starns denoeStatus®dtxioe.eetStatusQ；
+if( de vi»S unx<=D*\,ioe AVAIL AB LE denceS tanxs=D*\ioe. UN AV AIL AB LE | &vi8s【ani$==Oevi8 GONE)：
+dexxe.pmz,^s\'nc;denc*.£e:On?mElisten«<j；
+) ,0.heanb*a:Seconds* 1000);
+)
+retuni kasRumung;
+j
+图4-9已入网设备心跳机制核心代码
+b)未入网设备的心跳机制则通过周期性发现周围的未入网设备，检测到和已有设备 交集部分则代表设备在线，否则代表掉线，具体示意图如图4-10所示。
+public void scanQJ
+m_OnboardmgTtmer= n*^ Timen' Onboarduin im*rK);
+m_OnboardmgTnn«. $chedul*AtrDi*dRat *(ne^v Timer： a$kO {
+@ Overri 击
+public \oid nm0{
+tiy{
+Onboarding?v^ana£er.zetln$:anceC'.soanWifiO；
+} catchO^'inDisabledrxception e){
+updateTheU: IntenLAcnons-AJ-OX^TFI-DISASLED);
+e.pnntStackTrace{；］
+jL->JDE三'v."L. T" 11 -* Siz. *,»» ■
+图4-10未入网设备心跳机制核心代码
+69

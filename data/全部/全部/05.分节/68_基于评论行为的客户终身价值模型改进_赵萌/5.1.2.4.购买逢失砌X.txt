@@ -1,0 +1,5 @@
+5.1.2.4.购买逢失砌X
+本文接下来引入消费者的购买行为，提出综合考虑考虑消费者自身因素、消 费者购买行为以及消费者评论行为的评论流失预测模型。在公式5-3的基础上， 进一步提出了包括累计消费金额、购买最大金额、购买次数、工作时间段购买次 数、白天购买次数、晚上购买次数、凌晨购买次数共计20个指标作为解释变量 的综合模型，具体模型如公式5-4所示： Churnit = %aget + O2gendert + d3Contributioni +	+ ^2CmJ°Pu-i +	+
+li^CJasttimei^ + n3C_firsttimeit^ + ii6C_worktimeit_t + fi7Cjnidnightit^ + /^C—day 江一i + NgC.night 江一i + n1QMean_Scoreit^ + aiGm 让 + a2Gmjopit^ +	+
+a^Gj^orktimeit^ + a5 G_midnightit^ + a6Gjdayit-x + ayGjiighti^ + %	公式(5-4)
+5.1.3.	模型分析结果

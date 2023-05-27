@@ -1,0 +1,32 @@
+3.6.4AllSeen瘦客户端设备组网流程
+图3-10描述了 AllSeen瘦客户端设备组网的基本流程。首先，未入网的瘦客户 端会以AP模式启动并通过Wi-Fi广播其SSID, AllSeen约定尚未入网的设备SSID 以AJ_开头或是_AJ结尾。Onboarder控制应用会通过Wi-Fi扫描机制监听周围的AP, 并将符合未入网SSID命名规则的AP筛选过滤出来展示给用户进行选择。用户在选 择相应的未入网设备后，需要输入该设备的安全验证密码，然后继续选择需要配置 的目标网络，通过Onboarder安卓应用输入目标网络的SSID类型以及密码，安卓应 用会根据用户输入的未入网设备的安全信息连接到该设备，建立连接后，未入网设 备会通过Onboarder的路由广播其about消息，如果广播的about消息显示该设备支 持Onboarding接口，Onboarder应用会和未入网设备建立会话，并将用户输入的目标 网络信息发送给未入网设备以帮助它加入目标网络。当瘦客户端设备Onboardee加
+43
+入到目标网络后会广播其about消息，此时连接到目标网络的Onboarder设备会检测 到相应的about信息，从而标志设备入网完成。为了更好地识别入网设备，在接收到 about消息后，Onboarder应用会提醒用户修改设备的名称，并通过Config基础服务 框架修改设备的名称。
+Onboardee 设备
+以软AP模式启动
+--------►
+通过Wi-Fi广播SS1D
+终端用户
+.	连接到软AP
+连接至9 AJ核心daemon
+广播信号
+I提醒终端用户选择软AP的SSID和输入软AP密码
+___出P邀选弹_ _
+个人AP被选择
+广播信号
+如果支持onboard i ng接 口，建立会话
+提醒用户在WiFi扫描列表中选择个人AP SSID,类型和输入个人AP密码
+激活 Onboarding. ConfigureWiFi (PersonalAPinfo) 发送目标网络信息
+激活 Onboarding. Connect ()
+〃如果设备支持快速通道劣持, ConnectionResul t.信号
+广播信号
+二）加入个人AP
+。加入个人AP
+广播信号
+登陆完成
+提醒终端用户修改设备名称
+通过Config框架修改名称
+输入修改名称
+图3・10 AllSeen瘦客户端设备组网的基本流程
+44
+卜

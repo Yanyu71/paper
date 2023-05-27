@@ -1,0 +1,6 @@
+2.2.3理论求解器Z3
+Z3是微软公司开源的一阶逻辑推理库，是目前最好的SMT求解器【24-25】之一，它支 持多种理论，主要的用途是软件验证和软件分析。Z3的原型工具参加了 2007年的SMT 竞赛，获得了 4个理论的冠军和7个理论的亚军，之后在陆续参加的SMT竞赛中获得 大多数理论的冠军。目前Z3已经被用于很多项目，比如Pex、HAVOC、Vigilante. Yogi 和 SLAM/SDV 等。
+图2-2 Z3结构图
+Z3的Simplifier采用了--个不完金，但是高效的简化策略回。它的Compiler是将 输入转换成内部的数据结构和congruence-closure |J点。CongruenceClosure Core接受来 自SAT solver的赋值，然后处理EUF和相关组合理论，它采用的方式称作 E-matching"28】。Theory Solver 主要包含 4 种：Linear arithmetic、BV、Arrays 和 Tupleso 理论求解器是建立在congruence-closure算法㈣上的，这也是日前大多数SMT求解器使 用的方式，也就是说，congruence-closure可以看作核心求解器，各个理论求解器是外围 求解器。
+在Z3提供的Java API中，维护一个Context的概念。Context是一个类似封闭空间 的概念。可以通过Context定义Solver对象和创建BoolExpr对象，所有BoolExpr对象 表示的是一个布尔概念，只有两种取值：真和假，同时BoolExpr可以由多个Expr对象 通过与、或、非等方式组合起来表示复杂的表达式。Solver对象是用来推理和证明满足 性的主类，所有生成的BoolExpr都需要添加到Solver中，并且所有添加到Solver中的 BoolExpr是以并的形式进行推理的，调用Solver的check接「1可以得到当前整个Solver 中所有的BoolExpr的合取范式是否为真。
+Solver有一个栈的概念，可以维护BoolExpr加入的顺序。后面加入的BoolExpr在 栈的上层。在任何时刻，Solver可以调用push。方法，在此后，如果Solver调用pop接 口，则会将上一次调用push()时到当前所有加入的BoolExpr移除。此方法可以更加高 效的利用Solver的推理功能，因为可能需要频繁的添加和移除BooExpro利用Z3的一 阶逻辑推理功能，可以快速验证已有一阶逻辑的可满足性，从而推出条件是否可满足。 进而推知目标条件是否成立，从而做出相应的反馈。

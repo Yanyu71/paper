@@ -1,0 +1,41 @@
+4.3.4基于节点重要性的虚拟网络重映射算法流程
+果据底层网络的平均负载 率设置动态阈值
+痛选岀负载率超过阈值的 重要底层节点
+遍历负载率超过阈值的重 要底层节点的集合•选择 其中一个底层节点
+将各伞虚拟节点按照链路 映射开销牧益比降庁:排列
+将前M个虚拟节点加入待重
+映射集合中，使得底层节
+点的负載率低于阈值
+图4-6 VNR-NI算法流程图
+VNR-NI算法的流程如图4-6以及表4-2所示：
+（1）	初始化：根据本文提出的综合多维度属性的节点重要性评价指标得到 重要底层节点集合，根据公式（4-26）与公式（4-27）计算当前底层网络中各个 节点的负载率与整个底层网络的负载率均值，随后根据公式（4-28）计算节点负 载率动态阈值。
+（2）	过载重要节点选取：根据动态阈值，将重要节点集合中负载率大于动 态阈值的节点加入过载重要节点集合。
+55
+(3) 待重映射的虚拟节点选取：遍历过载重要节点集合中的每个节点，首 先根据公式(4-29)计算其自身承载的各个虚拟节点的值，并将各个节点 按照其值的大小降序排列。若对前m个虚拟节点进行重映射后该重要节 点的负载率低于动态阈值,则将此m个虚拟节点加入待重映射的虚拟节点集合， 并对集合中的各个虚拟节点按照值从大到小依次进行重映射。
+(4) 目标底层节点选取：按照4.33小节所述的方式得到候选目标节点集合 Ncandidate。对于N血询沏e中的每一个节点，根据公式(4-30)计算其对应的重映 射链路开销RLCAd)，选取RLC(nd)值最小的候选目标节点进行虚拟节点以及虚 拟链路的迁移，并对底层网络状态进行更新。若全部候选底层节点均无法满足链 路约束条件，则该虚拟节点迁移失败。
+(5) 输出：输出负载均衡后的底层网络。
+表4-2VNR-NI伪代码
+VNR-NI伪代码
+输入：Gs = (NSl Es),重要底层节点集合M/
+输出：经过负载均衡的底层网络
+calculate dynamic load rate threshold U by formula (4-28) for all ns from M} do
+if the load ratio of ns > U then
+add ns into set	//找出过载重要节点合集
+end if
+end for
+for all ns from Ms do
+sort the virtual nodes nv on according to CR(nv) in descending order
+calculate the load rate after migrating the first m virtual nodes on ns
+if the load rate< U then
+add the first m virtual nodes into Mv
+end if
+end for//找出待重映射的虚拟节点集合
+sort the virtual nodes in Mv according to CR(nv) in descending order
+for all nv from Mv do
+get the Ncandidate 〃找出候选目的节点集合
+for all nd from Ncandidate do calculate RLCfji^) by formula (4-28) //if 算重映射开销
+end for
+remap nv to nd with minimum
+remap virtual links using shortest path algorithm update the substrate network 〃以最小开销进彳亍重映射
+end for
+56

@@ -1,0 +1,2 @@
+2.3频谱效率和单位面积频谱效率分析
+本章分别釆用SE和ASE来衡量所提异构协作机制下MU的性能和网络平均性 能。SE定义为单位频率资源上能传输的平均数据传输速率。ASE则定义为网络中 单位面积上能承载的SE,用于衡量网络的吞吐量。本节首先分析BS的小区负载分 布，然后给出典型MU上的接收信号SINR,并分析累积信号强度(Aggregated signal strength, ASS)和累积干扰强度(Aggregated interference strength, AIS)的统计特性。 在此基础上，分析SE和ASE的数学表达式。

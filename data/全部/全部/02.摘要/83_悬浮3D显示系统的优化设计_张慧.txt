@@ -1,0 +1,19 @@
+摘要
+悬浮3D显示技术是3D显示技术的一个重要发展方向，这种显 示技术可以给观看者带来真实、自然、沉浸感强烈的3D视觉体验。 为了实现真实自然的3D显示效果，许多科研工作者提出了多种悬浮 3D显示技术方案。但是，现有的悬浮3D显示技术还存在许多问题， 例如分辨率低、视角小、像差严重等问题。为了实现高质量的悬浮3D 图像显示，针对上述问题，本文对提升悬浮3D显示系统的关键技术 进行了研究。
+论文的研究内容和创新点如下：
+1、	透射式悬浮3D显示系统的优化设计
+传统透射式悬浮3D显示系统通常使用单透镜通过改变成像的位 置来增大悬浮图像的离屏距离。但是由于单透镜像差（尤其是色差和 畸变）的存在严重降低了成像的质量和显示的效果，因此很难给观看 者提供真实感和沉浸感。为了解决这个问题，本文以对称双胶合复合 透镜作为悬浮透镜的初始结构进行优化设计。仿真和实验可以证明， 与基于单透镜的透射式悬浮3D显示系统相比，提出的基于对称双胶 合复合透镜的透射式悬浮3D显示系统的畸变和色差显著降低，其中， 最大畸变由19.9%降至0.62%,色差减小到原有的50%o
+2、	逆反射式悬浮3D显示系统优化设计
+逆反射式悬浮3D显示系统是一种无像差系统，但是当入射光的 角度大于临界角时，入射光只能进行一次反射，因此形成了杂散光。 杂散光的存在严重影响了悬浮3D图像的质量。为了解决这个问题， 本文以反射式三面角微棱镜阵列作为逆反射结构的原型提出了两种 优化结构减少杂散光。由实验结果可以看出，与传统逆反射悬浮3D 显示系统相比，所提系统的杂散光显著减少。
+关键字:悬浮3D显示;光学系统;对称双胶合复合透镜;三面角微棱镜
+
+THE OPTIMIZATION DESIGN OF FLOATING 3D DISPLAY SYSTEM
+ABSTRACT
+Floating 3D display technology is one of the development trend of display technology, which can bring viewers a realistic, natural and immersive 3D visual experience. In order to achieve a realistic and natural 3D display effect, a variety of floating 3D display technology schemes have been proposed. However, the existing floating 3D display systems still have many problems that need to be addressed, such as low resolution, small viewing angle, and serious aberrations. The key technologies of improving the floating 3D display system to achieve high-quality floating 3D display effects are mainly studied in this thesis.
+The research contents and innovations of the paper are as follows:
+1. The analysis and optimization design of transmission floating 3D display system
+Single lens is usually used in traditional transmission floating 3D display systems to increase the off-screen depth of floating image by changing the imaging position. However, the quality of the imaging and the display effect are seriously reduced because of the existence of aberrations of single lens (especially chromatic aberration and distortion). It is difficult to provide viewers with a sense of realism and immersion. To solve this problem, a symmetric cemented doublet compound lens is used as the initial structure of the floating lens. It can be verified by simulations and experiments that the distortion and chromatic aberration of the transmission floating 3D display system based on the symmetric cemented doublet compound lens are significantly reduced compared with the singlelens-based transmission floating 3D display system. The maximum distortion of the proposed system is reduced from 19.9% to 0.62% compare
+with the traditional transmission floating 3D display system, and the chromatic aberration is reduced to 50%.
+2. The analysis and optimization design of retro-reflective floating 3D display system
+The retro-reflective floating 3D display system is an aberration-free system, but when the angle of the incident light is larger than the critical angle, the incident light can only be reflected once and thus stray light is formed. The quality of floating 3D images can be seriously affected by the stray light. In order to solve this problem, two optimized structures are proposed to reduce stray light by using a reflective trihedral corner microprism array as a prototype of the retro-reflective structure. It can be seen from the experimental results that compare with the traditional retro-reflective floating 3D display system, the stray light of the proposed system is significantly reduced.
+KEY WORDS:floating 3D display;optical system;symmetric cemented doublet compound lens;trihedral comer microprism

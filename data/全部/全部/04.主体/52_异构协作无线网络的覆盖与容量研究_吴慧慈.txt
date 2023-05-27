@@ -1,0 +1,1944 @@
+
+
+第一章绪论
+本章主要阐述异构协作无线网络研究背景及选题意义、国内外研究现状以及本 文的主要研究内容与贡献等。
+1.1研究背景及选题意义
+1.1.1异构无线网络概述
+截止2017年底，我国移动通信业务量较2016年增长162.7%,近五年移动数据 流量增长28倍⑴，移动数据流量的爆炸式增长得益于移动视频业务的蓬勃发展(移 动视频业务流量占总流量的60%[2])。随着诸如虚拟现实、增强现实、物联网、车联 网、电子医疗、金融科技等新兴业务领域的拓展，以及设备间通信(Device-to-device, D2D)、机器间通信(Machine-to-machine, M2M)等技术的研究与发展，移动通信网 对内容的需求将以超出预期的极高速度持续增长，第四代移动通信系统(The 4th Generation mobile communication system, 4G)将难以支撑增长如此迅速的海量数据请 求及移动连接请求国。
+根据未来移动通信的业务需求，国际电信联盟Qntemational Telecommunication Union JTU)于 2014 年将第五代移动通信系统(The 5th Generation mobile communication system, 5G)的通信场景划分为增强移动宽带、超可靠低时延通信以及大规模机器通 信【句。此三大通信场景要求5G具有自适应承载海量并发性业务的能力。结合各类 业务对网络性能的要求，ITU以及IMT-2020推进组总结了 5G的关键性能指标所】, 5G旨在实现(与4G相比)一
+?单位区域内1000倍的移动数据速率提升；
+?10到100倍的用户体验速率提升；
+-10到100倍的连接设备数增长；
+?5倍的端到端时延降低；
+?10倍的移动设备功耗降低；
+为满足上述网络需求，全球学术界及工业界已于2010年陆续开始5G各方向的
+研究。欧盟于 2012 年设立 METIS (Mobile and Wireless Communications Enablers for
+图1-1 5G网络容量提升研究方向[8T2]
+the 2020 Information Society)计划，旨在构建5G发展基础平台，研究异构多层网络、 新无线空口以及多节点与多天线传输等技术，并提出了诸如D2D、大规模机器通信 (Massive machine type communications, mMTC)和超密集网络(Ultra Dense Network, UDN)等6个横向课题〔7〕。中国于2013年制定高技术研究发展计划(863) “第五代 移动通信(5G)系统前期研究开发”，旨在5G无线网络架构及其关键技术的研发。 2015 年，欧盟设立 5GNOW (5th Generation Non-Orthogonal Waveforms),旨在研究 新的物理层和介质访问控制层，建立多样化业务之间的异步传输，以应对物联网、数 字化和异构网络等新应用的挑战。同年，在英国由大学和企业联合创立5GIC ( 5G Innovation Center),旨在研究5G核心技术，建立5G网络关键性能指标评估验证 平台。5G标准化进程亦随着5G研究如火如荼地进行，至2017年12月21 H,全 球首个5G新空口非独立建网标准在第三代合作伙伴计划(3rd Generation Partnership Project, 3GPP)无线接入网(Radio Access Network, RAN)会议上正式冻结并公布，首 个5G标准的发布加快了 5G产业化的推进。
+纵观2010年至今的5G研究，实现5G移动数据速率1000倍增长的技术方向有 网络异构密集化、频谱效率提升和频谱资源开发等阶⑵，如图1-1所示。网络异构 密集化作为5G容量提升的主要力量，其容量增长主要依赖于在同一地理区域密集地 复用频谱资源、缩小接入节点(Accesspoints, AP)(本文AP是所有基站和热点的统 称)与移动终端(Mobile terminal, MT)的距离以提高无线链路传输有效性。由异构的 无线网络节点共存部署所形成的网络亦称为异构无线网络(Heterogeneous networks, HetNets) , HetNets中不同层(tier)网络的基站(Base station, BS)具有支持不同无 线接入技术(Radio access technology, RAT)、不同传输功率和数据处理的能力，以及 由不同类型的回程链路支持等特点。典型的HetNets场景如图1-2所示，低功率的小 小区基站(Smallcell base station, SBS)(如 Mico 基站，Pico 基站，Femto 基站)、中继 或者D2D作为宏蜂窝网络业务卸载的基本要素，能提高网络覆盖质量，提高小区边 缘用户性能，从而显著提高网络的面积频谱效率(Areaspectral efficiency, ASE)［⑶。
+
+图1-2 典型的异构多层网络场景
+
+与传统蜂窝网络相比，HetNets由于其异构密集特性，研究中存在诸多挑战。如 表1-1所示I妇6］。HetNets不规则的网络拓扑结构、复杂的用户-BS关涙机制以及移 动性管理等，使HetNets中异构网络之间的协调与干扰管理变得更加复杂。协同多点 传输/接收(Coordinated multi-point transmission/reception, CoMP)技术，亦称为 BS 协 调与协作卩2,17.18］技术，是高级长期演进OLong Term Evolution-Advanced, LTE-A)系 统中用于抑制小区间干扰的关键技术，其主要思想是协调相邻的BS同时为多个用户 协作编码(下行链路)或协作解码(上行)，从而获得多路径复用增益或分集增益。 CoMP技术应用于HetNets,预期可协调异构节点参与移动用户(Mobileuser, MU)的 数据发送和接收，使MU同时拥有较好的、甚至最好的上行链路传输和下行链路传 输卩9】，从而进一步挖掘HetNets的组网潜力。2013年，由中国科学技术部设立的国 家863计划项目“5G无线密集网络构架与关键技术研发”中，异构网络间的融合协 作是项目组的重点研究方向之一，其研究分别从理论分析、协作组网关键技术、资 源分配与控制、无线网络仿真平台和原型系统搭建等方面展开。
+此外，随着物联网、车联网、电子金融和电子医疗等行业化的应用，大量敏感、
+表1-1 传统蜂窝网络与HetNets对比
+对比方面	传统蜂窝网络	HetNets
+网络拓扑结构	　BS具有特定的覆盖区 域，规则六边形建模BS 位置	宏蜂窝网络内嵌微蜂窝网络，低功 率SBS随机、不规则部署、BS分布 建模为随机过程
+用户-BS关联机制	基于最强信号强度的BS 优先关联机制	基于最大数据传输速率的BS关联方 式，同时需考虑到异构网络BS之间的 负载均衡
+干扰管理、资源管理	所有BS开放访问，釆用 (分数)频率重用，容忍 较低的小区边缘速率	部分BS有接入权限的限制，不规则的 小区覆盖以及大量的BS使得干扰与资 源管理更加复杂［14】
+移动性管理	小区切换时，与最强BS 相连接，其信令通过有 线核心网	小区覆盖范围普遍缩小，高速移动情况 下小区切换频繁卩4〕
+回程链路	　BS通过大容量有线回 程连接到核心网络，BS 与MT的连接是瓶颈	密集部署的BS造成BS到核心网之间 的回程链路是瓶颈卩4〕
+无线信息安全	网络架构简单，采用基 于计算复杂度的加密算 法保证信息安全传输	网络架构复杂，不同网络之间采用不同 的安全保障协议，异构网络之间的安全 机制兼容复杂卩5,16］
+
+机密信息，如财务数据，医疗记录和客户档案等，将通过无线渠道传输。因此，提供 高保障性的安全服务是HetNets、乃至5G系统设计的重要研究方向之一卩5,161。除传 统的基于计算复杂度的加密安全机制之外，物理层安全(Physical layer security)技 术被认为是能实现5G系统无线信号安全可靠传输的关键技术之一。CoMP作为物理 层安全传输的关键技术之一，可协调异构节点，如BS或MT等，实现层内协作或跨 层协作［20,21］。一方面，协作发送定向保密信号，改善合法链路的无线信道质量；另 一方面，协作发送干扰信号，恶化非合法链路的信道质量。从源端切断非合法接收 端的信号来源，从而在物理层保障无线信号的安全可靠传输。2012年，5G研究项 目PHYLAWS (Physical Layer Wireless Security)旨在通过挖掘无线信号传输媒介 特性，改善信息交换在物理层的安全性和保密性，提供物理层的无线安全也2015 年，中国863计划项目“未来无线接入物理层与系统安全通信技术研究”对5G系统 物理层安全研究立项，其中一个子课题主要负责研究无线接入安全体系架构以及面 向物理层安全的协作物理层传输技术，建立无线接入网络的物理层安全模型，从理 论角度研究和分析随机网络' HetNets、协作网络等新型随机无线网络的物理层安全 性能，并分析多维系统参数以及实际系统非理想因素的影响。
+1.1.2基于CoMP的异构协作
+如图1-1所示，HetNets是实现5G覆盖与容量提升的关键网络技术之一，CoMP 是提升5G频谱效率的关键技术。HetNets结合CoMP技术，协调异构节点，实现层 内和跨层协作，可进一步提升网络覆盖与容量，并实现无线信号的安全可靠传输。
+HetNets结合CoMP技术对回程链路、信令交互以及复杂的预编码设计等提出 了更高的要求。控制面/用户面(Control/userplane, C/U)分离架构以及云无线接入网 络(Cloud-Radio Access Networks, C-RAN)架构能有效的解决 HetNets 结合 CoMP 技 术所带来的挑战卩2】。C/U分离架构中，宏蜂窝基站(Macrocell base station, MBS)层 负责保证基本覆盖，并解决系统中的大部分控制信令。MBS小区内的SBS提供MT 所需的数据服务，以能量效率(Energy efficiency, EE)、频谱效率(Spectral efficiency, SE)、负载均衡等为目标，在SBS层形成自适应的CoMP协作簇XI,而基于C-RAN 的异构CoMP能实现异构协作节点之间的自适应资源共享［23］。
+CoMP技术提高HetNets的网络覆盖与容量
+HetNets固有特征之一是多种不同制式的网络节点在相同的地理区域内部署，覆 盖范围重叠。因此HetNets中CoMP技术的应用范围更广、协作方式更多样，跨层协 作既能协调异构网络间的业务负载，亦能降低层间干扰，从而实现网络覆盖与ASE 的提升。	■
+根据网络状态及MU状态，HetNets中的CoMP可分为静态协作、半动态协作以 及动态协作卩2］。静态协作仅考虑网络拓扑结构信息，复杂度低，不需要站点之间额 外的信息交互。半动态协作除了依据网络拓扑结构之外，还考虑了 BS功率、接收信 号功率、频率资源等网络情况，主要用于减小协作簇(所有参与协作的节点组成的 集合)与簇之间的干扰。较静态协作而言，能以较低的复杂度增量提供更好的性能。 动态协作性能最佳，可分为以网络为中心的协作、以MU为中心的协作以及混合协 作【24］,能实现协作簇与簇之间的干扰最小化，且可动态优化每个MU的协作簇大小, 实现性能提升与协作复杂度之间的均衡。
+根据网络性能及MU性能需求，可分为以覆盖冲断概率、SE、ASE、EE、负 载均衡、回程链路等为目标的异构协作。覆盖概率或中断概率是衡量MU能否成功 获得网络连接的重要指标［2526］。以SE为目标的关键在于消除层内和跨层干扰，提 高接收端的信号干扰噪声比(Signal to interference plus noise ratio, SINR)。CoMP 虽 然能提高网络覆盖或者SE,但较大的协作簇会降低能效，与绿色通信不符，以EE为目标的关键在于均衡SE的提升与能量的消耗，一般实现方法为结合CoMP技术 与BS休眠。由于HetNets中BS发送功率和部署密度差异较大，大功率BS和低功 率BS的负载不均衡，HetNets中异构协作方案的制定需考虑差异化的BS密度和发 送功率，均衡异构BS之间的负载。CoMP技术在HetNets中得以应用的另一大关键 是对高容量回程链路以及低时延同步的需求。
+为了实现CoMP技术在各类HetNets场景中的应用，以及采用CoMP技术提 高HetNets的网络覆盖与容量，理论分析网络关键技术、系统关键参数以及异构协 作机制的设计对异构网络协作融合的影响至关重要。本文的研究方向之一是研究各 类HetNets场景下联合考虑不同网络状态和MU状态的异构协作，以网络覆盖概率、 中断概率、SE、ASE和平均传输速率等为性能参数，理论分析和优化异构协作无线 网络的网络覆盖与容量。该方向包括三种考虑不同HetNets场景的异构网络融合协作 研究，分别对应本文的第二章至第四章。
+CoMP技术提高HetNets的安全覆盖与安全容量
+HetNets中不同制式的网络采用不同的网络安全协议和高层安全加密算法，从而 提供不同级别的安全服务，且HetNets的C/U分离架构以及MU属性异构、业务安 全需求异构等因素，导致MT在异构网络之间的路由与切换更容易被非法终端窃听、 截获、伪装、攻击【27］。传统的基于计算复杂度的认证和密钥加密等安全保证机制在 物理层之上实现，可实现保密信息在物理层以上的安全传输。为进一步保障无线链 路安全，5G系统安全体系将从协议安全扩展至基于信息理论安全的物理层安全。物 理层安全通过发掘无线媒介的随机特性，并结合物理层编码、信号处理、多输入多输 出(Multiple-input multiple-output, MIMO)、中继、CoMP 等技术，为无线通信提供 一道新的安全防线。物理层实现异构网络间的信息安全传输仅需要对物理层信号进 行操作，无需额外的密钥共享和管理机制，能更好的实现异构网络间的安全兼容⑵〕。
+物理层安全的基本思想是创造合法链路信道质量优于窃听信道质量的无线传输 条件，从而实现无线信号的安全可靠传输。根据此思想，HetNets中基于CoMP的无 线安全覆盖与安全容量增强方案大致可分为两种：一是协调异构节点，形成虚拟天 线阵列或者结合MIMO技术联合设计预编码，使无线保密信号集中在合法接收信道 上发送，提高合法链路的信道质量；二是结合人工噪声(Artificialnoise, AN)技术, 在窃听者信道空间(窃听者信息己知)或者除合法信道之外的其他信道空间(窃听 者信息未知)上发送干扰信号，降低潜在的窃听信道质量。因此，本文的研究方向之二是研究HetNets中的基于协作的无线安全传输，以安全中断概率和安全传输速率 为性能参数，理论分析和优化异构协作无线网络的安全覆盖和安全容量。该方向的 研究对应本文的第五章。
+1.1.3与本文相关的研究背景及意义
+基于以上分析，在5G系统性能需求的驱动以及国家863计划项目的指引和指导 下，本文将围绕HetNets结合CoMP的网络覆盖与容量研究，包括安全覆盖与安全容 量研究，建立异构协作模型，从理论上分析异构协作无线网络的网络覆盖和容量性 能，力争为HetNets部署以及异构融合协作的设计与实现提供理论指导。HetNets中 多样化的接入节点为协作传输带来了更多的机会和选择性。同样，HetNets的异构特 性为CoMP技术的实现带来了诸多挑战。
+HetNets的拓扑结构改变
+如表1-1所示，较传统蜂窝网络相比，HetNets的网络拓扑结构更加随机和不规 则。传统蜂窝网络中BS的部署位置由运营商特定设计，其研究一般基于规则的六边 形网格模型，BS位于六边形中心或者顶点上。HetNets中除了运营商部署的MBS之 外，还存在为提高网络覆盖或传输速率而随机部署的SBS、中继及热点，这些异构， 节点位置随机，且呈现非均匀部署特性SI,因此，规则的六边形模型不再适用。基一 于随机几何(Stochastic geometry)的随机空间模型能刻画无线网络中节点的几何位「 置以及网络拓扑结构的随机性【29】，近年来被广泛应用于建模如自组织网络(Ad-hoc) 等随机网络部署与网络拓扑。本文拟釆用随机几何工具建模HetNets网络部署，并结 合实际网络场景与无线信号传播模型，分析异构协作无线网络的网络覆盖与容量性 能，为异构协作无线网络的设计与部署提供理论指导。
+HetNets结合无线新技术
+HetNets中密集部署的BS与核心网通过容量有限的回程链路相连，且CoMP技 术的实现亦需要通过回程链路在协作节点之间进行信息交互，因此，CoMP技术引 入HetNets使有限的回程链路容量成为异构协作无线网络的一大挑战卩单句。缓存 (cache)技术在无线网络中的引入能为缓解回程链路拥塞提供解决方法〔30,31〕。将部 分流行内容缓存在网络边缘，如SBS,当MU的内容请求与SBS的缓存匹配时，SBS 则不需要通过回程链路向核心网获取内容，从而缓解回程链路的压力。另一方面,HetNets中密集部署的BS和移动连接设备，导致全网能耗变大,如何引入有效的 新能源和设计合理的协作机制，以实现绿色通信，是异构协作无线网络的另一大挑 战，也是5G系统研究目标之一。能量收集(Energy harvesting, EH)技术能从外界挖 掘和收集如风能、太阳能和热能等绿色能量驱动低功率SBS的运行，已经吸引了越 来越多的关注［33,34］。缓存技术与EH技术联合应用于HetNets,网络拓扑结构及网络 负载状态的变化更加动态，其研究也更具挑战。本文将研究具有缓存能力和EH能力 的HetNets中的BS协调与协作，为异构网络的融合协作部署以及优化提供理论指导。
+HetNets中差异化的基站高度和无线电传播模型的改变
+HetNets中BS的密集部署同时发生于水平面和垂直面，如水平街区、高层办公 楼、住宅楼等。因此，HetNets中异构节点之间的协调与协作需要考虑差异化的BS 高度的影响。另一方面，HetNets中BS与MT的通信距离缩短，无线传输链路中将 有大量视距传播(Line-of-sightpropagation, LoS)链路存在。因此，异构协作性能分 析研究中需要考虑更实际的无线信道模型。本文将研究HetNets中考虑差异化BS 高度影响下的异构协作传输，并釆用同时考虑LoS和非视距传播(Non line-of-sight propagation, NLoS)影响的无线信号传播模型以分析异构协作传输性能。
+HetNets中基于CoMP的无线传输安全
+如前所述，由于HetNets更加开放的无线网络架构，其无线安全问题比传统蜂窝 网络更加严重［27】。并且，大量行业化应用中的敏感、机密信息将通过无线渠道传输, 因此，提供高保障性的数据安全服务是HetNets、乃至5G系统设计和实施的首要任 务之一［15，16］。基于信息理论安全的物理层安全技术能为无线安全通信提供第一道防 线。CoMP技术作为物理层传输技术的一大关键，其引入能提高HetNets物理层的无 线安全覆盖与安全传输数据率。因此，研究HetNets的基于异构协作的物理层安全, 包括网络的安全覆盖和安全容量的分析与优化，能为HetNets实现无线信号的安全可 靠传输和接入提供理论指导。本文首先研究CoMP技术应用于HetNets网络所能提 供的无线安全覆盖性能，然后研究基于协作的安全增强技术，理论分析和优化协作 节点的选择及功率分配等，以实现系统安全速率的最大化。
+研究考虑实际网络特征和应用新型关键技术的异构网络融合协作，从理论分析 角度、网络协议设计角度、网络优化角度等对异构协作无线网络的部署、系统配置和 网络优化都具有非常重要的指导意义。其中，针对异构协作无线网络的理论分析作为网络设计与优化的基础，能从数学分析角度初步研究系统关键参数、新型关键技 术以及协作机制设计对网络性能的影响。因此，本文将分别研究针对以上问题和挑 战的理论分析与优化。在考虑各类网络影响因素的异构网络融合协作场景下，分别 提出自适应网络状态和MU状态的异构协作机制，以网络覆盖概率、中断概率、SE、 平均传输数据速率，安全中断概率、安全传输速率等为性能参数衡量网络的覆盖与 容量、并理论分析系统关键参数、网络关键技术以及协作机制设计对异构协作无线 网络性能的影响。
+1.1.4本文相关研究的项目支撑
+本文的研究受到多个项目支持，包括国家863计划项目“5G无线密集网络构架 与关键技术研发”(NO.2014AA01A701),国家杰出青年科学基金项目“无线组网的理生 论、方法和技术” (No.61325006),国家863计划项目“未来无线接入物理层与系统 安全通信技术研究”(NO.SS2015AA011306),以及国家重点研究发展项目“无线接入 安全研究”(NO.2017YFB0801702)等。这些项目主要研究下一代移动通信的组网架 构与理论、无线接入安全技术等，为本论文的研究提供了良好的平台和国内外学术 交流机会。
+其中国家863计划项目“5G无线密集网络构架与关键技术研发”(以下简称863 项目)以及国家杰出青年科学基金项目“无线组网的理论、方法和技术”(以下简称 杰青项目)是本论文相关研究的主要支撑。863项目主要研究支持高密度异构聚合的 5G无线网络架构以及5G高密度异构聚合网络架构下的异构网络间的融合协作、组 网关键技术、资源分配与控制、无线网络仿真平台和原型系统搭建等。其中异构网络 间的融合协作主要是通过物理层、数据链路层、网络层以及传输层的全协作，分别 实现不同类型网络间的融合协作。杰青项目主要研究无线协作组网的理论分析、协 作实现的方法和技术。
+本论文所做研究作为异构网络融合协作的基础理论部分，主要负责研究各类异 构网络场景下、考虑不同网络因素的异构协作，以网络覆盖与容量、物理层安全覆 盖与安全容量为性能衡量参数，从理论分析角度研究系统关键参数、关键协作因素 以及协作技术对异构协作无线网络性能的影响。并且，基于863项目所搭建的无线 网络仿真平台，可对异构融合协作网络的性能进行预评估和理论分析结果的验证。
+1.2国内外研究现状及本文研究出发点
+在3GPP Release 11中，CoMP技术被确定为LTE-A中实现网络性能提升的关键 技术之一Ml。各类网络场景表明CoMP技术可显著提高LTE-A性能，特别是小区边 缘MU性能。CoMP技术可在多个层面上实现不同程度的协作方案［36】。根据协调所 需的回程链路容量和调度复杂度，3GPP中定义了 LTE-A中的三类下行协调方案：联 合发送(Joint transmission, JT)、动态节点选择 GDynamic point selection, DPS)、协 同调度/协同波束赋形(Coordinated scheduling/coordinated beamforming, CS/CB),以 及两类上行协调方案：CS/CB、联合接收(Joint reception, JR)卩5］。HetNets中CoMP 技术应用范围更广，协作策略更加随机、动态，研究HetNets结合CoMP,包括异构 协作机制设计、协作优化分析以及作性能分析，能为异构协作无线网络的性能提 升以及实际异构协作无线网络设计与部署提供理论指导。本文主要研究异构协作无 线网络的网络覆盖与容量，分析和优化网络覆盖概率、安全中断概率、SE、数据速 率和安全传输速率等。针对第1.1.3节对实际HetNets的分析，与本文相关的HetNets 协作研究现状以及本论文的出发点可从如下三个方面展开。
+1.2.1基于随机几何的异构协作研究与性能分析
+基于随机几何的无线网络分析可追溯到20世纪80年代""I,用于分析多跳自 组织网络［39,40］。由于基于随机几何的分析能刻画无线网络固有的随机特性，此模型 随后被扩展至随机网络的建模与分析，并结合无线信道的随机性，如衰落和阴影等, 分析网络性能的统计特性，在特定网络模型中，基于随机几何的分析可获得网络性 能的闭式表达式，从而为实际网络设计与部署提供强有力的指导。
+基于随机几何的 HetNets 分析起始于 Robert W. Heath、Jeffrey G. Andrews> Sayan- dev Mukherjee 等人【419］。他们采用齐次泊松点过程(Homogeneous Poisson point process, HPPP) , Poisson簇过程、或者考虑BS之间距离限制的repulsive点过程和Matem 点过程，分析刻画HetNets中典型接收端的累积干扰信号强度的统计特性，分析网络 的成功覆盖概率和传输速率等。
+这类单BS接入方案可视为DPS协作的一种。随后，文献［50］提出了多条接收链 路下典型MU的覆盖概率。文献［51］研究了不规则BS部署下基于CS/CB的静态BS 协作。HetNets中基于JT的异构BS协作研究较广［25,26,52-58］,文献〔52］提出了基于 地理位置的双连接相干JTo在随机协作机制下，文献［25］分析了 HetNets中K个最 强接收信号强度(Received signal strength, RSS)的BS协作方案和每层网络中具有最强RSS的BS的联合传输方案。作为扩展，文献［26］则分析了联合考虑异构BS在时 间和空间上的协作。文献［53］提出了一种基于位置信息的跨层协作机制并分析得到 了任意MU的中断概率和传输速率。考虑到JT需要占用额外的回程链路资源用于信 息交互，文献［54］提出了一种限定协作范围的非相干JT。以上文献中均假设所有BS 共享MU数据以及信道状态信息(Channel state information, CSI),文献［57］则考虑 了非完美CSI下JT和CS/CB的平均传输速率。考虑到HetNets中异构BS的不同发 送功率、部署密度等，文献［58］为异构BS设定独立的RSS门限，并分析了典型用 户的平均SEo
+以上研究为CoMP在HetNets中的应用提供了基础的理论指导，但需要注意的 是，己有文献忽略了以下几个重要问题：
+实际网络中BS的部署呈非均匀特性，且BS接入容量有限。已有研究一般假 设①每层网络中的BS分布服从HPPP,且层与层之间的HPPP相互独立；④所 有BS釆用单天线，忽略了 BS负载和有限的接入容量对异构协作的影响产
+HetNets中异构BS的差异化高度。目前所有文献均忽略了差异化的BS高度 的影响，所有BS在二维平面部署，而实际HetNets的协作设计应同时考虑异 构BS与MU之间的高度差距；
+实际无线信道同时存在NLoS和LoS传播链路。目前异构协作研究分析大多基 于标准的路径损耗模型，没有考虑实际无线信道中NLoS及LoS的同时存在；
+HetNets中BS安全级别异构。部分低功率SBS由于其部署的随机性，很容易 被非法MU攻击或者部署，因此HetNets的协作应考虑SBS的安全可信状态。
+本论文第二章和第四章将分别研究不可信SBS存在的非均匀HetNets场景下和考 虑BS高度影响的HetNets场景下的异构协作，考虑BS有限的接入容量，在SBS不 可信和BS差异化高度场景下，提出两种基于BS多状态(安全可信状态、负载、高 度等)联合感知的BS协调和联合传输机制。基于随机几何理论，釆用NLoS和LoS 统计分布模型，分析相应场景下的网络覆盖和容量性能，并在可行可解条件下优化 系统关键参数。
+1.2.2结合无线新技术的异构协作研究与性能分析
+如前所述，在HetNets中引入缓存技术能有效缓解回程链路拥塞，而在SBS上 配备EH技术能从周围环境中收集绿色、环保的能量来实现SBS的驱动和无线信号 的传输。SBS上引入EH技术，其BS活动状态将与其能量收集能力和负载状态紧密相关，因此网络拓扑结构更加随机Oil］。文献［59］研究了 BS具有不同能量收集能 力的HetNets,将每个BS上能量状态建模为生灭过程，采用随机游走理论、定点分 析以及随机几何，分析了 K层异构BS的可靠性(能量充足)，并在假设最强RSS基 站接入方式下，得到了典型MU的覆盖概率和下行传输速率。采用离散时间马尔科 夫链建模MU和BS的能量收集状态，文献［60］和［61］分别分析了 HetNets上行链路 和下行链路传输成功传输概率、网络吞吐量和EE。
+文献［62］研究了支持缓存的微蜂窝网络，其中SBS具有固定的内容存储容量匕 且只存储最流行的&个内容。基于该模型以及随机几何理论，文献［62］分析网络的 成功覆盖概率和数据平均传输速率。随后，文献［63］研究了支持缓存的三层HetNets 网络性能，其中MBS、中继和D2D协作缓存流行内容，内容流行服从砌?分布且所 有节点釆用最流行缓存(Most popular cache, MPC)方案，文献［63］分析了典型MU的 中断概率和平均传输速率，并进一步基于马尔科夫链分析了网络吞吐量和传输时延。 与本论文第三章和第四章最接近的研究来自于同时期的文献［64,65］。文献［64,65］提 出了一种基于内容缓存的异构协作方案：所有SBS随机地存储内容，MU从所有缓 存了其请求内容的SBS中选择最近的K个SBS来为其提供连接服务。基于该协作方 案，分析推导了典型MU的成功传输概率。并优化分析了 SBS的最佳缓存分布。
+与文献［64,65］不同，本论文第三章考虑了支持缓存技术和EH技术的HetNets 场景下的异构协作，其网络状态更加随机、动态，协作BS簇的形成和判断需要联合 考虑BS的能量状态、内容缓存状态以及BS的负载状态。而本论文第四章考虑BS 高度对协作传输的影响，釆用分段函数依概率建模NLoS和LoS传播链路，分析基 于缓存感知和BS高度感知的异构协作。
+1.2.3基于异构协作的无线安全覆盖与容量增强研究
+物理层安全起始于香农关于保密通信的信息论研究［66〕，香农理论指出物理层安 全能提供不依赖破译复杂度的“绝对安全”。1978年，Wyner建立了三点窃听信道模 型［67】，证明保密信息能安全传输而不泄露于窃听者，并定义了衡量物理层安全的性 能参数：安全容量(secrecy capacity)。Wyner指出只要合法链路的信道质量优于窃 听信道的信道质量，则可实现保密信息的安全传输。Csisz血和Komer【68］将此信道模 型扩展到了非退化离散无记忆广播信道并证明了安全容量为合法信道容量与窃听信 道容量之差。当且仅当合法主信道质量优于窃听信道质量时，安全容量为正，保密 信号得以安全、可靠地传输。
+根据窃听信道模型以及安全容量的定义，提高物理层安全传输可通过提高合 法信道质量或者降低窃听信道质量实现，实现技术包括MIMO技术［69,70］, AN技 术"751,协作技术［7只5］等。MIMO结合波束赋形(Beamforming, BF)设计阳、发 送天线选择［阿、功率分配卩3】等可发掘额外的分集增益实现无线通信安全性能提升。 特别的，当发送天线或接收天线足够多时，AN可结合BF设计［72,74,75］进一步提升 安全传输性能。但受实际天线费用和型号限制，在部分网络节点不可以部署大量天 线，因此，在窃听者能力高于合法接收端时，很难保障通信安全。为解决资源受限 条件下合法通信节点之间的安全通信，可采用外部节点协作，一方面协作发送保密 信号，提高合法接收端的接收分集增益，另一方面发送AN信号，干扰窃听端接收 信道质量，从而实现无线传输安全［76,77,7484,88,89］」文献［80］研究了双向中继网络中 的混合协作BF与干扰机制。文献［81］研究了多干扰节点协助的安全通信。文献［83］ 提出了一种随机多天线干扰节点选择机制，以提升MIMO信道下的安全自由度。文 献［88］考虑了多个友好的、单天线干扰节点协助的安全传输，提出了当种随机干扰 节点选择机制，且干扰信道与合法信道相互正交，只在窃听信道方向发送高斯干扰 信号。
+HetNets中的异构网络独立运行，各网络实体独立地制定调度机制等。为了研究 异构的、理性的网络节点，如MU、干扰节点、中继、BS等等之间的复杂关系，引入 博弈论［9。】以研究和分析异构节点之间的交互与影响。Stackelberg博弈是一种较为传 统的基础博弈理论【91-94］。釆用suckelberg博弈建模干扰节点辅助的安荃通信，自私 干扰节点以收取一定的报酬为合法链路提供协助干扰服务，报酬函数定义为提供的 干扰服务与服务对应的要价(asking price)的乘积。文献［84,94］研究了单干扰节点 协助的Stackelberg博弈，并得到了闭式的Stackelberg均衡点。文献［92］研究不可信 中继信道中采用外部干扰节点辅助的安全传输，所有节点配备单根天线。在源-终链 路与干扰节点之间建立Stackelberg博弈问题，并提出了一种分布式的迭代算法来获 得最终收敛的Stackelberg均衡点。文献［93］建立了多用户正交频分多址(Orthogonal Frequency Division Multiple Access, OFDMA)网络下的 Stackelberg 博弈问题，并得到 了最佳发送功率的数学表达式以及提出了最佳要价的求解算法。
+以上关于干扰协助的研究均基于单干扰节点或者所有节点采用单天线的窃听信 道场景。实际HetNets中BS和窃听者基本配备多天线，且基于异构多节点的干扰协 助能形成性能更优的虚拟天线阵列，精准的将干扰信号发送在窃听者方向。本论文 第五章将研究HetNets中基于异构协作的物理层安全，首先分析基于异构协作的网络安全覆盖性能，然后研究针对多天线、多节点协作干扰的窃听信道场景，研究协作 干扰节点的选择以及功率分配问题，以实现系统安全传输速率的最大化。
+1.3本文的主要研究内容及创新点
+如前所述，本文的主要目标是研究基于CoMP的HetNets网络覆盖与容量性能。 以提高HetNets网络覆盖与容量为切入点，研究异构多点协作在非均匀HetNets、支 持缓存与能量收集的HetNets、考虑BS高度的HetNets中的应用，以及研究基于异 构协作的HetNets安全覆盖与安全容量提升技术。基于随机几何、博弈论和最优化理 论等数学工具，分析和优化网络容量、安全容量、覆盖以及安全覆盖等，通过理论分 析揭示系统关键参数以及协作参数对网络性能的影响，为实际异构协作无线网络的 系统设计提供理论指导。
+本文主要研究内容和创新点如表1-2所示。
+1.4本文组织结构
+本文定位于异构协作无线网络的覆盖与容量分析，包括安全覆盖与安全容量分 析。论文章节安排如下。
+第1章为绪论部分。首先介绍本论文的研究背景，包括未来移动通信系统的发 展趋势、HetNets网络概述以及基于CoMP技术的异构协作；然后对与本论文相关的 研究进行详细的调研和综述，并分析异构协作对HetNets网络覆盖与容量（包括安全 覆盖与安全容量）的影响；最后介绍本论文的主要研究内容和贡献。
+第2章在考虑非均匀HetNets场景下，提出基于BS负载与安全可信状态感知 的异构多小区协作，并分析和优化网络平均SE。首先基于随机点过程建立非均 匀HetNets网络模型，分别推导出所提异构协作机制下的平均SE和ASE,然后理论 分析最大化网络性能的最优BS部署密度，最后提供了仿真结果来验证理论分析。
+第3章在考虑支持缓存与EH技术的HetNets场景下，提出联合考虑BS能量状 态、BS缓存以及信道资源可用性的异构BS协调与协作传输机制，分析网络覆盖 覆盖概率与平均传输速率。首先建立1+K层HetNets网络，提出异构BS协作方 案，然后基于随机几何和马尔科夫链分析SBS的能量状态以及BS的负载分布，采 用Gamma分布拟合，推导典型MU的近似覆盖概率和平均传输速率，最后通过仿真 对提岀的方案进行验证与评估。
+表1-2	论文主要内容及创新点
+关键性问题	研究场景及 目标	研究内容及贡献	对应章 节
+基于 CoMP 的 HetNets 网络覆盖 与容量分 析	非均匀HetNets 的异构 协作SE分 析与优化	1.提出基于BS负载和安全可信状态感知的异构 多小区协作；2.基于随机几何理论分析网络覆盖 概率、SE及ASE,并采用最优化理论优化BS 密度；3.理论分析BS密度、发送功率、接入容 量、安全状态以及协作门限对系统性能的影响	第二章
+支持缓 存与EH 的 HetNets 的异构BS 协作覆盖与 容量分析	1.提出基于BS能量状态、缓存、信道资源联合 感知的异构BS协调与协作方案；2.基于随机几 何理论和Gamma分布拟合分析网络覆盖概率及 平均传输速率；3.理论分析BS密度、缓存容量、 能量状态、以及协作门限对网络覆盖及SE的影 响	第三章
+考虑差异 化BS高度 的 HetNets 的联合传 输SE与业 务卸载分析	1.提出以MU为中心的，基于BS缓存、高度以 及负载感知的异构BS联合传输与业务卸载；2. 考虑BS高度影响，采用LoS/NLoS无线传播模 型与修正的COST 231路径损耗模型，理论分 析MU的卸载概率及SE； 3,理论分析BS密度、 BS高度、缓存容量、以及协作门限对系统SE及 业务卸载概率的影响	第四章
+基于CoMP的HetNets
+物理层安全覆盖与安全容量分析	HetNets网络的安全覆盖分析	提出基于DPS的安全BS选择，以安全中断概率 为性能参数，理论分析HetNets网络的安全覆盖 性能	第五章
+基于协作干扰的窃听系统安全速率优化	提出基于协作的多节点干扰机制，以安全传输速 率为目标，采用Stackberg博弈，将原问题转化 为功率分配与要价分配优化问题，理论分析干扰 节点和发送端的最优功率分配，得到最大安全传 输速率	第五章
+
+第4章在支持缓存技术与考虑差异化BS高度的HetNets场景下，提出联合考 虑BS高度、BS缓存、BS负载的异构联合传输方案，并分析网络平均SE以及业务 卸载。首先建立考虑BS高度的HetNets模型，然后提出异构联合传输方案，分析BS 负载分布以及业务卸载概率，推导典型MU的平均SE,最后通过仿真对所提联合传 输机制进行验证和评估。
+第5章研究一般HetNets场景下基于协作的物理层安全覆盖与安全容量。首先
+采用随机几何分析HetNets网络中基于DPS的BS接入方案的安全中断概率，以评 估HetNets网络的安全覆盖性能。然后研究基于多节点协作干扰的物理层安全增强, 基于Stackberg博弈建立了单引导-多跟随的Stackberg博弈问题，并从理论上分析得 到了干扰节点的选择以及最佳干扰发送功率分配，以最大化安全传输速率。最后釆 用数值仿真验证所提协作机制。
+第6章总结本论文的研究内容与创新点，并对未来的研究工作进行展望。
+参考文献
+[1]工业信息部.2017年通信业统计公报[R].北京：中国工业信息部,2018.
+[2]Cisco. Visual Networking Index, White paper[RJ. Cisco, 2017.
+[3]Agiwal M, Roy A, Saxena N. Next generation 5G wireless networks: A comprehensive survey [J]. IEEE Communications Surveys & Tutorials, 2016, 18(3): 1617-1655.
+[4]Vision I. Framework and overall objectives of the future development of IMT for 2020 and be- yond[R]. International Telecommunications Union, 2014,
+[5]Minimum Requirements Related to Technical Performance fbr IMT-2020 Radio Interface[R]. ITU- R M., 2016. [TMT-2020.TECH PERFREQ].
+[6]5G Vision and Requirements[R], IMT-2020 (5G) Promotion Group, 2014.
+[7]Pirinen P. A brief overview of 5G research activities[A]. // Inteinational Conference on 5G for Ubiquitous Connectivity[C]. Akaslompolo, Finland: IEEE, 2014: 17-22.
+[8]Li Q C5 Niu H5 Papathanassiou A T, et al. 5G network capacity : Key elements and technologies[J]. IEEE Vehicular Technology Magazine, 2014, 9(1): 71—78.
+[9]Zhang N, Cheng N, Gamage A, et al. Cloud Assisted HetNets Toward 5G Wireless Networks[J]. IEEE Communication Magazine, 2015, 53(6): 59-65.
+[10]Yang G, Wang J, Luo J, et al. Cooperative Spectrum Sensing in Heterogeneous Cognitive Radio Networks Based on Normalized Energy DetectionfJ]. IEEE Transactions on Vehicular Technology, 2016, 65(3): 1452-1463.
+[11]Chen Y Li J, Chen W, et aL Joint User Association and Resource Allocation in the Downlink of Heterogeneous Networks[J]. IEEE Transactions on Vehicular Technology, 2016,65(7): 5701-5706.
+[12]Bassoy S, Farooq H, Imran M A, et al. Coordinated Multi-Point Clustering Schemes: A Survey [J]. IEEE Communications Surveys & Tutorials, 2017,19(2): 743—764.
+[13]Lopez-Perez D, Guvenc I, De la Roche G, et al. Enhanced intercell interference coordination challenges in heterogeneous networks [J]. IEEE Wireless Communications, 2011, 18(3): 22—30.
+[14]Andrews J G. Seven Ways that HetNets Are a Cellular Paradigm Shift[J]. IEEE Communication Magazine, 2013? 51(3): 136-144.
+[15]Yang N,阪ng L F, Geraci G, et al. Safeguarding 5G Wireless Communication Networks Using Physical Layer Security [J]. IEEE Communication Magazine, 2015, 34(2): 20-27.
+[16]Wu Y, Khisti A, Xiao C, et al. A Survey of Physical Layer Security Techniques fbr 5G Wireless Networks and Challenges Ahead卩].arXiv preprint arXiv: 1801.05227, 2018.
+[17]Lee D, Seo H, Clerckx B, et al. Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges[J]. IEEE Communication Magazine, 2012, 50(2): 148-155.
+[18]Shafi M, Molisch A F, Smith P J, et al. 5G: A tutorial overview of standards, trials, challenges, deployment, and practice[J]. IEEE IEEE J. Sei. Areas Commun., 2017,35(6): 1201-1221.
+[19]Wannstrom J, Mallinson K. HetNet/Small Cells[R], 3GPP, 2014.
+[20]Chen X, Ng D W K, Gerstacker W H, et al. A survey on multiple-antenna techniques for physical layer security[J]. IEEE Communications Surveys & Tutorials, 2017, 19(2): 1027-1053.
+[21]Liu 丫 Chen H H, Wang L. Physical layer security fbr next generation wireless networks: Theories, technologies, and challenges[J]. IEEE Communications Surveys & Tutorials, 2017,19(1): 347-376.
+[22]Mustafa HAU, Imran M A, Shakir M Z, et al. Separation framework: An enabler for cooperative and D2D communication for future 5G networks[J]. IEEE Communications Surveys & Tutorials, 2016, 18(1): 419T45.
+[23]Davydov A, Morozov G, Bolotin I, et al. Evaluation of joint transmission CoMP in C-RAN based LTE-A HetNets with large coordination areas[A]. // IEEE Global Telecommunications Conference (GLOBECOM) Workshops[C], Atlanta, USA: IEEE, 2013: 801-806.
+[24]Tao X, Xu X, Cui Q. An Overview of Cooperative Communications[J]. IEEE Communication Magazine, 2012,50(6): 65—71.
+[25]Nigam G, Minero P, Haenggi M. Coordinated Multipoint Joint Transmission in Heterogeneous Net- works[J]. IEEE Transactions on Communications, 2014, 62(11): 413心 146.
+[26]Nigam G, Minero P, Haenggi M. Spatiotemporal Cooperation in Heterogeneous Cellular Net- works[J]. IEEE J. Sei. Areas Commun., 2015, 33(6): 2142-2180.
+[27]Wang X, Hao P, Hanzo L. Physical-layer authentication fbr wireless security enhancement: current challenges and future developments[J]. IEEE Communications Magazine, 2016, 54(6): 152-158.
+[28]Wang H, Zhou X, Reed M C. Coverage and throughput analysis with a non-unifbrm small cell deployment[J]. IEEE Transactions on Signal Processing, 2014, 13(4): 2047-2059.
+[29]Baccelli F, Blaszczyszyn B. Stochastic Geometry and Wireless Networks: Volume I-Theory[M]. Massachusetts: Now Publishers, 2009.
+[30]Paschos G, Ba§tug E, Land I, et al. Wireless caching: Technical misconceptions and business barri- ers[J]. IEEE Communication Magazine. 2016, 54(8): 16-22.
+[31]Atzeni I, Maso M, Ghamnia I, et aL Flexible Cache-Aided Networks with Backhauling[J]. arXiv: 1705.08576, 2017.
+[32]Mobile's Green Manifesto[R]. https://www.gsma.com/publicpolicy/wp-content/uploads/2012/06/ GSMA2012_Report_MobilesGreenManifesto.pdf: GSMA, 2012.
+[33]Zhang S, Zhang N, Zhou S, et al. Energy-Aware Traffic Offloading fbr Green Heterogeneous Networks [J], IEEE J. SeL Areas Commun., 2016, 34(5): 1116-1129.
+[34]Zheng 乙 Zhang X, Cai L X, et al. Sustainable communication and networking in two-tier green cellular networks[J]. IEEE Wireless Communications, 2014, 21(4): 47-53.
+[35]3GPP. Coordinated multi-point operation fbr LTE physical layer aspects[R]. 3rd Gener. Partnership Project (3GPP) TR 36.819 RU vl 1.2.0,2013.
+[36]Marsch R Fettweis G P. Coordinated Multi-Point in Mobile Communications: from theory to prac- tice[M]. Cambridge, U.K.: Cambridge Univ. Press, 2011.
+[37]Silvester J, Kleinrock L. On the capacity of multihop slotted ALOHA networks with regular struc- ture[J]. IEEE Transactions on Communications, 1983, 31(8): 974-982.
+[38]Takagi H, Kleinrock L. Optimal transmission ranges for randomly distributed packet radio termi- nals[J]. IEEE Transactions on Communications, 1984, 32(3): 246-257.
+[39]How J, Hatzinakos D. Analytic alpha-stable noise modeling in a Poisson field of interferers or scat- terers[J]. IEEE Transactions on Signal Processing, 1998, 46(6): 1601-1611.
+[40]Mathar R, Mattfeldt J. On the distribution of cumulated interference power in Rayleigh fading chan- nelsfJ]. Wireless Networks, 1995? 1(1): 31—36.
+[41]Robert W H, Kountouris M, Bai T. Modeling Heterogeneous Network Interference Using Poisson Point ProcessesfJ]. IEEE Transactions on Signal Processing, 2013, 61(16): 4114-4126.
+[42]Dhillon H S, Ganti R K, Baccelli F, et al. Modeling and analysis of k-tier downlink heterogeneous cellular networks [J]. IEEE J. Sei. Areas Commun., 2012, 30(3): 550—560.
+[43]Mukheijee S. Distribution of downlink SINR in heterogeneous cellular networks [J]. IEEE J. Sei. Areas Commun., 2012, 30(3): 575—585.
+[44]Jo H S, Sang Y J, Xia R et al. Heterogeneous cellular networks with flexible cell association: A comprehensive downlink STNR analysis [J]. IEEE Transactions on Wireless Communications, 2012, 11(10): 3484-3495.
+[45]Di Renzo M, Guidotti A, Corazza G E. Average rate of downlink heterogeneous cellular networks over generalized fading channels: A stochastic geometry approach[J]. IEEE Transactions on Communications, 2013, 61(7): 3050-3071.
+[46]Cheung W C, Quek T Q, Kountouris M. Throughput optimization, spectrum allocation, and access control in two-tier femtocell networks[J]. IEEE J. Set Area Comrnun., 2012, 30(3): 561—574.
+[47]Chun Y J, Hasna M O, Ghrayeb A. Modeling heterogeneous cellular networks interference using poisson cluster processes]J]. IEEE J. Sei. Area Commun.? 2015, 33(10): 2182—2195.
+[48]He Hs Xue J, Ratnarajah T, et aL Modeling and analysis of cloud radio access networks using Matern hard-core point processes!J]. IEEE Transactions on Wireless Communications, 2016, 15(6): 4074— 4087.
+[49]Ibrahim A M, ElBatt T, El-Keyi A. Coverage probability analysis for wireless networks using repulsive point processes[A], II IEEE International Symposium on Personal Indoor and Mobile Radio Communications (PIMRC)[C]. London, UK: IEEE, 2013: 1002-1007.
+[50]Keeler H P, Blaszczys2yn B, Karray M K. SlNR-based k-coverage probability in cellular networks with arbitrary shadowing[A]. // IEEE International Symposium on Information Theory Proceedings (ISIT)[C], Istanbul, Turkey: IEEE, 2013: 1167-1171.
+[51] Huang K, Andrews JG. A stochastic-geometry approach to coverage in cellul ar networks with multicell cooperation[A]. // IEEE Global Telecommunications Conference (GLOBECOM)[C]. Kathmandu, Nepal: IEEE, 2011: 1-5.
+[52]Francois B, Giovanidis A. A stochastic geometry framework for analyzing pairwise-cooperative cellular networks [J]. IEEE Transactions on Wireless Communications, 2015, 14(2): 794-808.
+[53]Sakr A H, Hossain E. Location-Aware Cross-Tier Coordinated Multipoint Transmission in Two-Tier Cellular Networks]!], IEEE Transactions on Wireless Communications, 2014, 13(11): 6311-6325.
+[54]Tanbourgi R, Singh S, Andrews J G, et al. A Tractable Model for Noncoherent Joint-Transmission Base Station CooperationfJ]. IEEE Transactions on Wireless Communications, 2014, 13(9): 4959— 4973.
+[55]Wu H, Tao X, Li N. Coverage Analysis for K-Tier Heterogeneous Networks with Multi-Cell Cooperation [A]. // IEEE Global Telecommunications Conference (GLOBECOM) Workshops[C], San Diego, CA, USA: IEEE, 2015: 1-5.
+[56]Wu H, Tao X5 Li N, et al. Coverage Analysis for CoMP in Two-Tier HetNets With Nonuniformly Deployed Femtocells[J]. IEEE Communication Letters, 2015, 19(9): 1600-1603.
+[57]Jaramillo-Ram rez D, Kountouris M, Hardouin E. Coordinated Multi-Point Transmission With Imperfect CSI and Other-Cell Interference[J]. IEEE Transactions on Wireless Communications, 2015, 14(4): 1882-1896.
+[58]Nie W, Zheng F C, Wang X, et al. User-Centric Cross-Tier Base Station Clustering and Cooperation in Heterogeneous Networks: Rate Improvement and Energy Saving[J]. IEEE J. Sei. Areas Commun., 2016, 34(5): 1192-1206.
+[59]Dhillon H S, Li Y, Nuggehalli P, et al. Fundamentals of Heterogeneous Cellular Networks with Energy Harvesting[J]. IEEE Transactions on Wireless Communications, 2014, 13(5): 2782-2797.
+[60]Sakr A H, Hossain E. Analysis of K-Tier Uplink Cellular Networks With Ambient RF Energy Har-
+vesting[J]. IEEE J. Sei. Areas Commun., 2015, 33(10): 2226-2238.	驚
+[61]Yu PS, Lee J, Quek TQS,et al. Traffic Offloading in Heterogeneous Networks with Energy Harvesting Personal Cells - Network Throughput and Energy Efficiency[J]. IEEE Transactions on Wireless Communications, 2016, 15(2): 1146-1161,
+[62]Ba§tug E, Bennis M, Kountouris M, et al. Cache-enabled small cell networks: Modeling and trade-
+EURASIP Journal Wireless Communications and Networking, 2015, 2015(1): 41.
+[63]Yang C, Yao Y, Chen Z. Analysis on cache-enabled wireless heterogeneous networks[J]. IEEE Transactions on Wireless Communications, 2016, 15(1): 131-145.
+[64]Wen W, Cui Y, Zheng F C, et al. Random Caching Based Cooperative Transmission in Heterogeneous Wireless Networks[J]. IEEE Transactions on Communications, 2018, PP(99): l-l.
+[65]Wen W, Cui Y, Zheng F C, et al. Random caching based cooperative transmission in heterogeneous wireless networks[A]. // IEEE International Conference on Communications (ICC)[C]. Paris, France: IEEE, 2017: 1-6.
+[66]Shannon C E. Communication theory of secrecy systems [J]. Bell Labs Technical Journal, 1949, 28(4): 656-715.
+[67]Wyner A D. The wire-tap channel[J]. Bell Syst. Tech. J., 1975, 54(8): 1355-1387.
+[68]Csiszar I, Korner J. Broadcast channels with confidential messages[J]. IEEE Transactions on Information Theory, 1978, 24(3): 339-348.
+[69]Khisti A, Womell G W. Secure transmission with multiple antennas I: The MIMOME wiretap channel^]. IEEE Transactions on Information Theory, 2010, 56(7): 3088-3104.
+[70]Chu Z, Johnston M, Le Goff S. Robust beamfbrming techniques for MISO secrecy communication with a cooperative jammer[A], // IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1-5.
+[71]Goel S, Negi R. Guaranteeing secrecy using artificial noise[J]. IEEE Transactions on Wireless Communications, 2008, 7(6): 2180-2189.
+[72]Li N, Tao X, Wu H, et al. Large System Analysis of Artificial Noise Assisted Communication in the Multiuser Downlink[J]. IEEE Transactions on Vehicular Technology, 2016, 65(9): 7036-7050.
+[73]Zhou X, McKay M R. Secure transmission with artificial noise over fading channels: achievable rate and optimal power allocation]〕]. IEEE Transactions on Vehicular Technology, 2010, 59(7): 38313842,
+[74]Zhu J, Schober R, Bhargava V K. Secure transmission in multicell massive MIMO systems[J]. IEEE Transactions on Wireless Communications, 2014,, 13(9): 4766-4781.
+[75]Zhu J, Schober R, Bhargava V K. Linear Precoding of Data and Artificial Noise in Secure Massive MIMO Systems[J]. IEEE Transactions on Wireless Communications, 2016,15(3): 2245-2261.
+[76]Zheng G, Choo L C, Wong K K. Optimal cooperative jamming to enhance physical layer security using relays[J]. IEEE Transactions on Signal Processing, 2011,59(3): 1317-1322.
+[77]Barros JP V PCP J. Position-based jamming for enhanced wireless secrecy [J]. IEEE Transactions on Information Forensics & Security, 2011, 6(3): 616-627.
+[78]Zhou X, Tao M, Kennedy R A. Cooperative jamming fbr secrecy in decentralized wireless networks [A]. // IEEE International Conference on Communications (ICC)[C]. Ottawa, ON, Canada: IEEE, 2012: 2339-2344.
+[79]Ding Z, Leung K K, Goeckel D L, et al. On the application of cooperative transmission to secrecy communications^]. IEEE J. Sei. Areas Commun., 2012, 30(2): 359-368.
+[80]Wang H M, Luo M, Yin Q, et al. Hybrid cooperative beamfbrming and jamming for physical-layer security of two-way relay networks[J]. IEEE Transactions on Information Forensics & Security, 2013, 8(12): 2007-2020.
+[81]Luo S9 Li J, Petropulu A P. Uncoordinated cooperative jamming fbr secret communication[J]. IEEE Transactions on Information Forensics & Security, 2013, 8(7): 1081-1090.
+[82]Vishwakarma S, Chockalingam A. Amplify-and-fbrward relay beamforming for secrecy with cooperative jamming and imperfect CSI[A]. // IEEE International Conference on Communications (ICC)[C]. Budapest, Hungary: IEEE, 2013: 3047-3052.
+[83]Lee J H, Choi W. Multiuser diversity for secrecy communication using opportunistic jammer selection: Secure DOF and jammer scaling law[J]. IEEE Transactions on Signal Processing, 2014,62(4): 828-839.
+[84]Chu Z, Cumanan K, Ding Z, et al. Secrecy rate optimization for a MIMO secrecy channel based on Stackelberg game[A]. // Proceedings of European Signal Processing Conference (EUSIPCO)[C]. Lisbon, Portugal: IEEE, 2014: 126-130.
+[85]Chu Z, Johnston M, Le Goff S. Alternating optimization fbr MIMO secrecy channel with a cooperative jammer[A]. //IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1-5.
+[86]Oggier F, Hassibi B. The Secrecy Capacity of the MIMO Wiretap Channel [J]. IEEE Transactions on Information Theory, 2011, 57(8): 4961-4972.
+[87]Hu Y, Tao X. Secrecy Outage Analysis ofMultiuser Diversity with Unequal Average SNR in Transmit Antenna Selection SystemsfJ]. IEEE Communication Letters, 2015, 19(3): 411T14.
+[88]Wang C, Wang H, Xia X, et al. Uncoordinated Jammer Selection for Securing SIMOME Wiretap Channels: A Stochastic Geometry Approach[J]. IEEE Transactions on Wireless Communications, 2015, 14(5): 2596-2612.
+[89]Zhang Q, Huang X, Li Q, et al. Cooperative Jamming Aided Robust Secure Transmission for Wireless Information and Power Transfer in MISO Channels]!]. IEEE Transactions on Communications, 2015, 63(3): 906-915.
+[90]Han Z, Niyato D, Saad W, et al. Game Theory in Wireless and Communication Networks: Theory, Models, and Applications[M], Cambridge, U.K.: Cambridge Univ. Press, 2011.
+[91 ] Han Z, Marina N, Debbah M, et aL Physical layer security game: Interaction between source, eavesdropper and fri end ly j am m er [J]. EURASIP Journal on Wireless Communications Newworks, 2009, 2009(7): 452907-1 -452907-10.
+[92]Zhang R, Song L, Han Z, et aL Physical Layer Security for Two-Way Untrusted Relaying With Friendly JammersfJ]. IEEE Transactions on Vehicular Technology, 2012, 61(8): 3693—3704.
+[93]Wang A, Cai Y Yang W, et al. A Stackelberg security game with cooperative jamming over a multiuser OFDM A network[A]. // IEEE Wireless Communications and Networking Conference (WCNC)[C]. Shanghai: IEEE, 2013: 4169顼 174.
+[94]Chu Z, Cumanan K, Ding Z, et al. Secrecy Rate Optimizations for a MIMO Secrecy Channel With a Cooperative Jammer[J]. IEEE Transactions on Vehicular Technology, 2015, 64(5): 1833-1847.
+
+
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.
+第二章 非均匀HetNets异构多点协作频谱效率分析
+移动业务流量在空间和时间上的不均匀分布［L2］要求移动网络能动态地、自适 应地提供不均匀的移动连接服务，因此实际HetNets中低功率SBS与热点AP的部署 呈现非均匀状态。为保证移动终端在非均匀HetNets中的稳定连接与容量提升，本章 将研究非均匀HetNets场景下基于异构BS协作的下行链路协作传输，并釆用随机几 何理论分析网络频谱效率，优化基站部署密度。
+2.1引言
+CoMP技术［3】协调异构BS和AP联合服务MU,能消除HetNets中严重的跨 层干扰，进一步挖掘HetNets的潜在优势，提升网络覆盖与网络容量囲。已有文献 中，HetNets的跨层异构BS联合传输研究主要包括两方面：移除主要干扰节点〔习⑹ 或将主要干扰节点转变成协作传输节点［7-,,］0 ［10］和［11］是较早研究CoMP技术 在HetNets中应用的文献，为实际HetNets协作联合传输提供了基础的理论指导。但 文献［5-11］中BS均匀分布，建模为完全随机的HPPP,没有考虑到实际网络部署中 为适应非均匀业务流量特征和降低小区间、层间干扰而非均匀部署的BS与AP0
+虽然异构BS协作能提供更优的网络覆盖和容量，但由于HetNets网络的分布式、 更加开放和多样化等特性，将MU的信息分发给异构协作BS可能引起严重的信息泄 露［⑵。MBS一般由运营商部署，且具有较强的计算能力和较全面的安全协议，其 安全性能较好。但SBS可以由MU根据自身环境和需求部署，非法MU更容易部署 非法BS或AP攻击和窃取无线保密信息，而且SBS一般是成簇分布，如在商场、体 育场等等，这让非法SBS更容易伪装成合法SBS,对网络中的无线信息展开各种攻 击，如中间人攻击 Qvlan-in-the-middle attack, MITM)】"］,拒绝服务 ODenial-of-service, DoS)［峋和窃听等，这些攻击可能会导致无效的无线传输或严重的信息泄漏。因 此HetNets中异构BS协作应考虑BS和AP的安全可信状态，以同时保障无线通信 的有效性和安全性。另一方面，由于HetNets中有限的无限资源，BS的接入容量有 限，异构协作应考虑BS的负载状态及接入容量的限制，以防止BS过载而引起拥塞。
+考虑以上两因素，本章将研究非均匀HetNets场景下考虑BS有限的接入容量和 安全可信状态的异构多小区协作。首先，提出了一种基于BS负载和安全可信状态感知的异构BS协作机制，然后理论推导该异构协作机制下MU的SE和网络的ASE, 并分析系统关键参数对网络性能的影响，进而理论证明最优SBS部署密度的存在性 和唯一性，并得到了最优SBS密度的表达式。
+2.2非均匀HetNets系统模型与基础数学概念
+2.2.1网络模型
+两层非均匀HetNets中MBS和SBS分别配备M和必根全向性天线，所有基站 复用相同的频率资源，考虑一个时频资源块上的下行链路传输。MBS和SBS最多可 服务Kx㈤w M）和*2 （阳W恤）个MU。MU配备一根全向性天线。MBS和SBS 的发送功率固定，分别表示为《X）和足TX）。
+
+图2-1	不可信SBS存在的两层HetNets模型
+
+MBS的位置分布建模成密度为；Li的二维HPPPR GR2o由于无线网络中BS 的部署存在距离限制，MBS之间不能无限的靠近。因此，为了限定MBS之间的距 离，需对中1中的点进行筛选和去除。设定。1为任意两个MBS之间的最小间距限 制，对于任意MBS,如果在以其为中心，半径为的区域，即绍（MBSQi）内存 在其他MBS,则该MBS将从?中移除，如图2-1中的休眠宏基站。因此，任意一 个MBS在0中存在的概率为卩51：
+1 一 切仇
+U1= * 扃.	（2-1）
+24 所有保留存在的MBS可近似等效为一个密度为A；=万功的HPPP " e冊2［16］。
+合法SBS和不可信SBS两种微基站同时存在。所有合法SBS的位置分布建模为 密度为M的HPPP 02GR2o不可信SBS以概率q存在于合法SBS附近窃听或者攻 击合法SBS所发送的无线保密信号，两SBS之间的距离服从某一特定的分布①。根 据此模型，包括合法SBS和不可信SBS的所有SBS的分布是一个根过程为小2的高 斯-泊松过程(Gauss-Poissonprocess, GPP) %€戚。GPP模型是一个成簇的点过程, GPP模型建模合法和不可信SBS,则任意一个簇里面包含一个或者两个SBS。如果 簇内只有一个SBS,则该BS为合法SBS；如果存在两个SBS,则位于根过程的SBS 为合法SBS,另一个为不可信SBS。
+考虑MBS和SBS之间的距离限制，定义MBS的保护区域，如图2-1中的虚 线圆形，所有簇中心位于保留MBS的保护区域内的SBS簇将被移除。令0表 示MBS保护区域的半径，则任意一个SBS簇能保留在旬中仅当该簇中心距离其最 近的保留MBS的距离大于D2,则任意一个SBS簇能保留在点过程中g中的概率为 v2 =	o所有保留的SBS簇可近似等效为一个根过程为<1>2右R2的GPP <!>； e底2,
+其中根过程或的密度近似为对=炳如
+所有MU的位置分布建模为密度为九的HPPP①"e般2。不失一般性，假设一 个典型MU位于坐标原点卩7］。本文所有分析均针对此典型MU,且分析结果适用于 所有MUo
+对于无线信号传播模型，本文同时考虑标准的路径损耗模型l(d)=d-a和均值 为1的瑞利衰落(Rayleigh fading, Rayleigh)模型，其中d是发送-接收端之间的距离, a (a >2)是路径损耗指数。
+2.2.2基于基站负载与安全可信状态感知的异构协作机制
+BS通过导频训练等策略获得MU的CSI并通过回程链路交换、共享MU信息。 BS釆用迫零(Zero-forcing, ZF)预编码实现小区内无干扰的多连接服务卩&切。BS协 作以用户为中心、同时考虑网络状态。不同层网络上的异构BS根据其到典型MU之 间链路的平均RSS、BS负载与接入容量以及安全可信状态决定是否参与协作服务典 型MU。任意一个MBS或合法SBS是否参与协作的判断流程如图2-2所示。具体而
+①本文釆用无线链路的平均接收信号强度作为衡量窃听者是否能成功窃听的依据物理层安全的思想,在物理 层安全理论中，只要保证合法链路信道质量优于窃听信道质量，就能实现安全的无线传输。因此，在保障合 法链路信道质量的前提下，只要尽量抑制或降低窃听信道质量，就能实现并提高无线传输安全性能。因此本 文釆用平均接收信号强度作为衡量标准是合理的。
+言，由于所有MBS都是安全可信的，任一 MBS能参与协作并服务典型MU当且仅 当以下两个条件均成立。
+?MBS不满载；
+?MBS与典型MU之间无线链路的平均RSS大于给定的协作RSS门限q。
+对于SBS,不可信SBS不允许参与协作。任一合法SBS能参与服务典型MU仅 当以下条件成立。
+?该合法SBS处于安全状态，即，①只有一个SBS在该SBS所在簇，或②两 个SBS在该SBS所在簇，但不可信的SBS接收到的来自该合法SBS的平 均RSS低于安全门限句；
+?该合法SBS不满载：
+?该合法SBS与典型MU之间无线链路的平均RSS大于给定协作RSS门限勾。
+
+
+
+值得注意的是，当一个BS负载超过其接入容量时，该BS上的待服务MU将处于拥 塞状态，MU所请求的服务将会被中断。更重要的是，协作条件中平均RSS的限制 不仅能保障无线信号传播的有效性，更能控制BS的小区服务范围，从而根据实际情 况降低协作BS选择的开销。
+本文假设不可信SBS的位置信息是被合法BS已知的。当不可信的SBS是活动 节点，例如活动的中继节点或者能主动发送信号的SBS,其发送的信号可以被附近的合法BS检测、收集到，从而分析出其统计信息。当不可信的SBS是安静的节点 时，由于不可信SBS在接收信号时需采用本地振荡器来对接收信号进行基带转换, 而振荡器由于本身缺陷产生的正弦波要向后传播到天线端口并泄漏出去［2。］,因此, 合法BS能从泄露信息中估计不可信SBS的信道状态信息。
+2.2.3高斯-泊松过程
+GPP是一类泊松簇过程，其中的簇都是齐次独立的。以中2 = ｛力，光，…｝表 示GPP的根过程，每个簇以概率1 -0和q存在一个和两个点。则GPP的密度表示 为4=服(1+冬)。如果一个簇中只有一个点，则此点位于簇的中心，如果簇中存在 两个点，则一个点位于簇中心，另一个点以某一随机距离分布在簇中心附近。数学 上而言，GPP可表示为电=u %，其中｛史2｝表示中心位于y的簇，數学 心2
+表示为：
+(2-2)
+其中是簇中另一个点相对簇中心的坐标。本文假设|。||服从参数为k和。 的Gamma分布⑵］。
+2.3频谱效率和单位面积频谱效率分析
+本章分别釆用SE和ASE来衡量所提异构协作机制下MU的性能和网络平均性 能。SE定义为单位频率资源上能传输的平均数据传输速率。ASE则定义为网络中 单位面积上能承载的SE,用于衡量网络的吞吐量。本节首先分析BS的小区负载分 布，然后给出典型MU上的接收信号SINR,并分析累积信号强度(Aggregated signal strength, ASS)和累积干扰强度(Aggregated interference strength, AIS)的统计特性。 在此基础上，分析SE和ASE的数学表达式。
+2.3.1小区负载分布
+令Pi,幻表示也（W用）个MU同时被一个MBS服务的概率。根据协作BS的判 断条件，任意MBS x的小区范围内有左个待服务MU的概率为：
+Pr伐个MU的RSS貝⑶｝ = Pr侦个MU在绍（x,协）内｝织"方）二"二叫＜＞3 ,
+顷	（2-3）
+其中/）是因为MU的分布服从HPPP。X1 =（尸严）/弓）1/（X是能参与协作的MBS所 在区域的半径。由于MBS的接入容量为Ki，当k＜Kv时，MBS的小区负载分布为
+n _（杖成《广exp （—以厨）
+% _	屈 .	（2-4）
+而MBS同时服务K］个MU的概率为
+c 卞（风知％xp（-机成°	，（灼,兀獄《）
+「部L員	忌	=一^一.	申）
+类似的，令P2*2表示*2（＜瓦2）个网11同时被一个合法SBS服务的概率。定义E1 为只有一个SBS在一个SBS簇的事件，E2表示两个SBS在一个SBS簇内的事件, 马表示一个SBS簇内的不可信SBS的接收RSS低于安全门限匂。事件E”幼和与 发生的概率分别是
+Pr{Ej = l一名 Pr(E2}=q.	(2-6)
+Pr(E3}=Pr(簇内邻点的 RSSW^}	全 7?,	(2-7)
+1 (幻
+其中％3 =（吏〃向严定义为SBS簇内合法SBS的不安全区域半径。因此，根 据SBS的协作判断，一个合法SBS处于不安全状态的概率为q（lf），且处于不安 全状态的SBS是零负载的。而一个合法SBS处于安全状态的概率为（1-q +列），此 时，P2*2表示为
+I Pr饱个MU 在绥(y,%2)内} #2<K2
+P2#2= [g Pr 住个 MU 在绍。,％2)内},&2=瓦2
+（効“必* exp（-敬“砂）I、 ，w
+矽	＜灰2
+/（为产兀必）＞	r
+,幻2 _8
+
+其中％2 =倜技*2)'"是能参与协作的SBS所在区域的半径。
+2.3.2接收信干扰噪声比
+由于MBS和SBS采用相同的频率资源为MU提供移动连接，MU不仅接收来 自协作BS的有用信号，也会接收到来自同层BS和不同层BS产生的干扰信号。协 作BS釆用非相干联合发送(Non-coherent joint transmission, NJT)卩,8]②，且发送功率 均匀的分配给被服务的所有MU的信号。因此，典型MU上接收的SINR可表示为：
+y _ Sm +Ss
+妇+厶+萨’
+其中是加性高斯白噪声(Additive white Gaussian noise, AWGN)功率。
+p(TX)
+Sm= E	WJ 六yllxf
+xe^n^o,%])	X,1
+是接收到的来自协作MBS的ASSo &,i表示MBSx上服务的其他MU数。幻表示x 与典型MU之间无线信道的小尺度衰落。卫(塩1＜火1)是指示函数，当x不满载时, ]1(幻,1 ＜Kj = 1 ,否则，11(灼 ＜火1)=0。母是接收到的来自协作SBS的累积信号 强度。
+p(TX)
+Ss= ￡	1 (ky<2 < K2) 1 (￡■] or (￡'2&E3)) ^-pj||y|| ahy,
+低阕(o,%2)	y'2
+其中l(￡i or (E2&E3))表示合法SBS ＞处于安全状态的指示函数。灼,2表示'上服 务的其他MU数。匀表示y与典型MU之间无线信道的小尺度衰落。对于来自MBS 的累积干扰信号强度為，由于所有的干扰MBS可分为区域绍(。,为)以内的和以外 的干扰源，妇可表示为：
+An	An,in + ^m,out
+
+(2-12)
+其中M 和林分别是来自区域绍(。伐1)以内和以外的MBS产生的累积干扰强 度。类似的，产生干扰的SBS包括区域囹(。,源以内的和以外的SBS。累积干扰强
+②非相干协作由于需要较少的信道状态信息和不需要严格的同步，其性能较相干联合传输好卩】。
+
+
+E 1 (",2 = &)［㈤0@2&吗))害切「°\
+/€时泗(0必)	J?
+
+需要注意的是，不可信SBS不参与服务MU也不主动地发送信号与MU,因此他们 对MU不产生千扰。
+BS釆用ZF预编码，如果X参与协作服务典型MU,则小尺度衰落系数勾是服 从参数为Ni—kxj和1的Gamma分布，艮卩：久~ Gamma（N】一幻」,1）卩&22］。如果； 不参与协作服务典型MU,则奴可近似等效为参数为"1和1的Gamma分布，即: h：?Gamma（Q卩1）卩您］。类似的，SBS与典型MU间的小尺度衰落系数hy和hy> 也服从 Gamma 分布，hy ~ Gamma — ky2,1） > ~ Gamma （勺1）。
+2.3.3频谱效率与单位面积频谱效率
+根据香农容量公式，在典型MU上能实现的SE可表示为:
+
+其中期望取自于ASS（心和&）和AIS（么和4）的统计分布。由公式（2-10）-（2- 13）可以看出，ASS和AIS的统计特征受基站接入容量和BS安全可信状态影响。
+令 P1= P1,O，P1,1，…，PiAi 和 P2= P2,O，P2,1，…,P2,K2 分别表示 MBS 和合法 SBS 的 负载分布向量。可得到MU的SE表达式如以下定理。
+定理2.1存在不可信SBS的非均匀HetNets中，基于BS负载和安全可信状态感知的 异构协作机制下的用户平均频谱效率可近似表示为：
+oo	o
+r	厂寸t
+绥1c 汶 / exp{—人［〃］(r) 一七〃2(，)}{1 — exp{—“1巧1 (，)一勾可2(，)}}	dl. (2-15)
+0
+/?（，）和叫《）分别为：
+妃 1） = "他 必PE （1—多（灼辰））+ （匕'8） V（K"萨q）,	（2-16）
+
+2x~b /	7	2
+客跟)=為巨2片("+丘;A+l + a；；).	(2-19)
+d\ = 1,。2 = 1—g+g。
+证明：详细证明请参考附件2.7.1。	；	□
+虽然频谱效率的数学表达式(2-15)是积分形式，但!//(?,b,x)和% (b,x)通过Matlab 可以快速计算，因此绥c可通过数值计算得到。与已有的文献相比，公式(2-15)反 映BS小区负载和SBS的安全状态对网络频谱效率的影响。采用ASE衡量HetNets 网络的单位面积频谱效率。根据小区负载的分布特性，被MBS和合法SBS服务的平 均MU数为：
+—K|	_	K2
+虎1 = ￡ 幻Pi*〕,形=(1 — q+a7?) ￡ 知2,頌
+加=1	*2=1
+因此，对于一个足够大的区域夕，所提BS协作机制下的ASE可表示为:
+(夕时名+夕足笏)阕c (，—	，—、
+ASE =			= (人^2^2j 绥c，
+单位是nats/s/Hz加2。从公式(2-15)和(2-21)可以看出，路径损耗指数a,不可信SBS 的存在概率q, MBS和合法SBS的密度人］和乃，以及BS之间的距离限制都对非 均匀HetNets的SE和ASE有重要影响。
+2.4基站部署密度优化
+HetNets中严重的跨层干扰问题影响网络的整体性能。实际网络部署中MBS 一 般是由运营商根据网络状态提前规划好，然后部署的。而低功率的SBS,如家庭BS
+31
+等，一般是有运营商或者消费者根据业务需求随机部署的。适当的增加SBS的部署 能提高网络和MU的容量和覆盖。但是随着SBS密度的增加，HetNets中的干扰问 题将变严重。为研究SBS部署密度对网络频谱效率的影响。这一小节分析SBS部 署密度的优化问题,证明最优合法SBS密度(服)的存在性和唯一性，并给出了最 优BS密度的表达式。
+SE (2-15)对合法SBS密度M求导可得
+8	2
+j氏,曷^
+0
+其中函数/(时炳)为
+/■(￡,□) =	(exp{-切1 (f)-初2?)}{1 一exp{-人 1的(r)
+=exp {-切1 (r)}(?2 (0 + w2 (0) exp {-丸("2 (。+ 叼⑺)-5 (r)}
+一 “2 (f) exp {—^2% (，)一人1 "1 (，)}.
+定义函数g(z) =zef 旳。)，则/?(.,徵 可重新表示为:
+f亿服)=exp{—人1的(，)}g (以2 (。+吻④)一g供⑺)
+为证明最优合法SBS密度的存在，需证明:
+?齢=0有唯一解脱；
+?当姻〈罗时，齢〉o,当时，將<0。
+下面将给出实现SE最大化的最优为的存在定理以及相应的证明。
+定理2.2在所提的基于BS负载和可信安全状态感知的异构协作机制下，最大化SE 的最优SBS密度唯一存在，且最优扃是如下方程的解。
+8	2f
+f {exp [—；11 的(圳g("2 (f) + "2 ⑺)一 g(叼 ?))} ^~^dt = °- 0
+证明：根据函数g(z)的定义，当z< *时，满足g'(z) >0,而当去时，g (z) WO, 即函数g(z)时一个关于z的上单峰函数，在z* = E处存在唯一的最大值。对于变量 0 < a W 1和正数y,总存在满足以下不等式的z* =器一o
+
+图2-3简单示意了函数g（z）随变量z的变化。
+由于函数与■）和w"）时关于变量，的单调递增函数，且0 < exp{-"（见W 1。 因此，总存在一个尸使函数 "*）和咁（疔）满足以下不等式，即
+.当t<t*时，函数/（/，^）满足/"） > 0；
+?当t〉t*时，函数f（2,冬）满足/（/，^） < 0。
+因此，积分函数（2-22）起始于一个正值，当积分变量低于产时，（2-22）随着『的增加 而递增，当积分变量大于尸时，（2-22）随着，的增加而递减，函数g（z）表明，z*随着 丸的增加而递减，由于函数坊?（/）和吋⑺是关于，的递增函数，因此尸随着;12的增 加而递减，醫是关于七的递减函数。另一方面，函数g（" + w2（f））和g（M）） 表明存在〃满足宠。因此，随着丸-0,存在/T8,且幾>0。另外，由于
+lim
+&T8
+exp{—人 iWi([)}g("2 (f) + W2 (。)
+川2(。)
+=0,
+(2-26)
+
+
+不等式 lim < O,Vr 及
+^2 ->°°
+oo
+A>2 ~ 8 Cl 7^2	A2 ~* 00 J总成立。
+综上讨论，可将函数的变化趋势总结如表2-1③。可以得到结论：总存在唯一的 表2-1 函教变化趋势
+f 0徵	奴C 她
+TO	　—> OO	\	>0
+t		\
+—> 8		<0	<0
+
+满足最大化SE的最佳BS密度服，且最佳为是方程読=0的根。	口
+类似地，可以证明最大化ASE的唯一賜的存在。
+推论2.1在非均匀HetNets中采用所提异构协作机制，总存在最佳的合法SBS密度 使网络ASE性能最大化，且最优的SBS密度可通过解方程(2-28)= 0得到。
+证明：公式(2-21)对扁求导，有
++ &影)?	(2-28)
+不等式0＜忍。2说＜+8结合(2-27)及表2-1,可得结论：ASE是一个上单峰函数, 存在唯一的最佳BS密度，且最佳BS密度可通过设置表达式(2-28)等于0得到。口
+结合公式(2-22)和(2-28),由于存在 義2 0和工羽+ /彩2 0,最大 化ASE的最佳合法SBS密度大于最大化SE的最佳合法SBS密度。
+2.5数值、仿真与分析
+本节将采用数值结果和蒙特卡洛仿真结果验证以上理论分析，并为非均 匀HetNets中釆用所提异构协作机制提供一些实际部署指导。除特殊声明，详细的系 统参数值如表2-2所示。蒙特卡洛仿真结果是通过1。4次求平均得到。仿真区域是 半径为10km的圆形区域。每次仿真BS的分布都是根据HPPP得到，且考虑MBS 与SBS之间的距离限制。每个SINR样本中的信道衰落是通过独立Rayleigh随机分 布产生。
+③［表示递增，1表示递减。-
+表2-2	第二章系统仿真参数
+参数	参数值
+MBS、合法SBS以及MU的密度	"1 = 7T5002—顽& = 7E5002
+MBS和SBS的配备天线数	M = 8,阳=4
+MBS和SBS的接入容量	沢］=8,长2 =4
+MBS和SBS的发送功率	p"x）= 37 dBm,zf、x）= 30 dBm
+内点距离的Gamma分布参数	k = 25, 0 = 2
+不可信SBS存在概率	q = 0.5
+路径损耗指数	a =4.28
+热噪声功率尸	<y2 = -104dBm（10MHz 带宽）
+
+決 o=4.28
+△ “=4.28
+—-??=4.28
+* -=3.75
+<i =3.75
+△ o=3.75
+<i=3.75
+图 2-4 协作门限 了1、t2 对 SE 和 ASE 的影响（。| = 400 m, D2 = 100 m,乌=—45 dBm）
+图2-4至图2-8展示了分析结果与仿真结果的比较。结果表明分析结果与仿真 结果之间存在间隙，其主要原因来自于采用HPPP拟合非均匀分布的MBS和SBS。 但此间隙非常微小，可以忽略不计，从而验证了釆用HPPP拟合的准确性以及理论 分析结果的正确性。进一步的，图2-4-图2-6展示了协作门限q和t2对SE和ASE 的影响。首先，图2-4分析了不同协作门限宛和路径损耗指数a的影响。由图可知, 存在最大化SE和ASE的最佳协作门限。其主要原因是由于有限的接入容量的限制, 当协作门限低于某一定值时，用户接入会发生严重的拥塞，在此情况下，MU平均 接入概率，即Pr（終＜Y）和Pr（格＜&），几乎为0,从而平均SE接近于0。随着协 作门限的增加，拥塞被缓解，接入概率Pr（終 ＜灼）和Pr（对 ＜思）提高。但是与此同
+
+
+时，能为MU提供协作服务的BS数量下降。因此，存在一个均衡用户接入概率和协 作BS数量的最佳协作门限，而此门限决定了最优SE和ASE性能。另外，由图可 知，较低的路径损耗指数环境下需要较高的最佳协作门限句。
+图2-5和图2-6展示了BS之间的距离限制，即。］和。2的影响。可以看到，当 协作门限Ti和t2较小时，BS几乎以概率1处于满载状态而不能参与协助服务典型 用户，但是他们却能产生干扰。因此，一个较大的BS距离限制能令更多的BS休眠 而降低干扰，提供更好的SE性能。但由于活动BS数量减少，网络的整体性能，即
+
+
+M 对 SE 和 ASE 的影响（Ti = -65 dBm, T2 = -65 dBm,⑶=-35 dBm）
+ASE会有所下降。随着们和宠的增加，BS负载降低，拥塞减轻，更多的BS能参 与协作，从而大幅提升系统性能。此时，减小BS距离限制勿和￡>2能保留更多活 动BS,从而提供更好的SE和ASE性能。但是，随着q的持续增加，MBS的数量 以及其负载下降，最终没有MBS参与协作服务典型用户。这种情况下，一个较大的 距离限制Dx能让活动MBS更加稀疏，从而能保留更多的活动SBS参与协作。
+
+不可信SBS的存在对协作SBS的选择以及系统性能具有很大的影响。图2- 7展示了不可信SBS的存在概率（q）以及安全门限（匂）对SE和ASE的影响。 当向=-35dBm时，不可信SBS处于合法SBS的不安全区域以外的概率为幻1， 而当t3 = -65dBm时，口司0。7］次1意味着所有的合法SBS几乎均处于安全状态, 且能为MU提供安全的数据传输，这种情况下，不可信SBS的存在概率对SE和ASE 的影响微乎甚微。当T/Q0时，所有处于存在两个SBS的SBS簇内的合法SBS处于 不安全状态且不能协作传输MU数据，这种情况下，能参与协作的合法SBS数量随 着q的增加而减小。因此，网络的SE和ASE性能随着不可信SBS的存在概率的增 加而减小。
+图2-8分析了合法SBS的密度对SE和ASE的影响。可以看出SE和ASE是关 于合法SBS的密度幺的单峰函数，与定理.2.2和引理2.1中的理论分析结果吻合。 SE和ASE在最优合法SBS的密度右边呈现的下降趋势是因为协作区域的限制导致 累积信息信号强度受限，而持续增长的SBS密度导致越来越严重的干扰。而且曲线 表明，高路径损耗环境下的最佳万比低路径损耗环境下的最佳；12高，并且高路径 损耗指数能提供更高的SE和ASE性能。这是由于高路径损耗环境下，信号传播距 离短，因此需要更密集的SBS来提供高的信号接收功率。综合结果表明，为了实现 最优的SE和ASE性能，应在高路径损耗环境下部署更多的合法SBSo
+进一步地，不同路径损耗环境下协作门限位与不可信SBS的存在概率对最佳
+图2-10	图2-9对应的最大SE和ASE
+合法SBS密度的影响如图2-9和图2-10所示。图2-9表明，最佳扃随着协作门限玄 的增加而增加。这是因为当候选协作BS所在范围缩小时，需要更多SBS来实现最 大的SE和ASE。此外，最大化ASE的最佳不大于最大化SE的最佳;12。图2-10显 示，随着g的增加，需要更高的最佳合法SBS密度，而且存在最大化SE和ASE的最 佳协作门限位，并且高路径损耗环境下的最佳协作门限偏低。这些结果与图2-4结 果一致。最大SE和ASE不随不可信SBS的存在概率的改变而改变，这是因为不可 信SBS的存在概率只影响处于安全状态的合法SBS的密度。以上结果综合表明，为 达到相同的处于安全状态的合法SBS密度，在高q条件下需要部署更多的合法SBS。
+2.6本章小结
+针对非均匀HetNets网络中的异构协作，考虑到实际HetNets中有限的无线资源 和不可信SBS的存在，本节研究了非均匀HetNets中基于BS负载和BS安全可信 状态感知的异构多小区协作，并分析了该协作机制下SE和ASE的数学表达式。进 而优化了最大化SE和ASE的最佳合法SBS密度，证明了最佳SBS密度的唯一存 在性和表达式。仿真结果验证了理论分析的正确性，并指出了最大化SE和ASE的 最优协作门限的存在。并且，在高路径损耗环境下设置较低的协作门限和更多的合 法SBS能提供更高的SE和ASE。在不可信SBS存在概率较高情况下，需要部署更
+多的合法SBS来实现最大的SE和ASE性能。本章分析结果可为不可信BS存在的 非均匀HetNets场景下的异构网络融合协作设计及系统优化提供理论指导。
+2.7附录
+2.7.1定理2.1证明
+分析SE之前，引出如下引理。
+N	M
+引理2.1设置乂/?.,初”1〉...）加为任意非负随机变量，令x = ￡ xn, y= ￡為。则 n=1	m=1
+E In （1 + 庁）=J,+X）e3,	（2-29）
+其中乌（f） = IE [e~tA]是随机变量A的Laplace变换函数。
+证明：详细证明请见文献[24]o	□
+根据引理2.1,典型MU的SE为:
+
+
+
+其中（c）是由于ASS和AIS之间相互独立。（①是由于保留的MBS和SBS建模为独 立的HPPPo根据点过程的Laplace泛函，变量&的Laplace变换为： 其中(e)跟根据 HPPP 的概率生成泛函(Probability generating functional, PGFL)冋。
+
+（/）是根据小区负载灼的分布。由于力~ Gamma（M 一灯，1）, E力
+
+
+
+据此，WH'）可重新表达为:
+
+(2-32)
+
+
+
+类似的，根据公式（2-11）, S.的Laplace变换为:
+勺	K-)-\	p\
+?^sv (z) —exp<	I 1 -(P2,K2+(1-P2A2) 0(1-门))「2*2+所 e 右
+b L	*2=0
+\~^^2%2a2 ￡ P2,k2+l f 1 -	6
+[	k2=0	\	\
+(2-33)
+其中（/?）是因为合法SBS以概率P2A2 + （1 — P2A2） 0（1 — 〃）不参与协作。知=1 —q + qq是一个两点SBS簇内合法SBS处于安全状态的概率。
+由于来自区域绍（。,为）之内和之外的MBS的累积干扰信号相互独立，Im的 Laplace转换可计算如下。
+
+
+%（'）= E頌“即带］巳做何-"］,
+(2-34)
+(2-35)
+OO
+旧队广少]=exp\ -2兀彳J
+Z1
+—利(圮"))'、(/静1,*”1)}
+(2-36)
+其中（/）是根据h{ 2 Gamma （砰,1）得到。
+类似的，4的Laplace变换可表达为气（t） = E*何-，知］吳皿［厂《，。叫，其中
+电,泌叫”］=exp {-戒砂（1 -g +刊）p2,K2 （1 -缪（弥2,斜））}，	（2'37）
+改函= exp {-兀徵1 一 q + g"(讷"))羽(芥2”2,*，顷)} .	(2-38)
+将公式(2-32), (2-33)和(2-35)-(2-38)带入公式(2-30), SE可得到如公式(2-15)。
+参考文献
+[1]Wang H, Zhou X, Reed M C. Coverage and throughput analysis with a non-uniform small cell deployment^]. IEEE Transactions on Signal Processing, 2014, 13⑷：2047-2059.
+[2]Mirahsan M, Schoenen R, Yanikomeroglu H. HetHetNets: Heterogeneous traffic distribution in heterogeneous wireless cellular networks]}]. IEEE J. Sei. Areas Commun., 2015, 33(10): 2252— 2265.
+[3]Lee D, Seo H, Clerckx B, et al. Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges[J]. IEEE Communication Magazine, 2012, 50(2): 148-155.
+[4]Ling J, ChizhikD, Chen C S, et aL Capacity growth of heterogeneous cellular networks[J]. Bell Labs Technical Journal, 2013, 18(1): 27-40.
+[5]Nigam G, Minero P, Haenggi M. Spatiotemporal Cooperation in Heterogeneous Cellular Networks! J]. IEEE J. Sei. Areas Commun., 2015, 33(6): 2142—2180.
+[6]Peng M, Xie X, Hu Q, et al. Contract-Based Interference Coordination in Heterogeneous Cloud Radio Access Networks[J]. IEEE J. SeL Areas Commun., 2015, 33(6): 1140-1153.
+[7]Tanbourgi R, Singh S, Andrews J G, et al. A Tractable Model for Noncoherent Joint-Transmission Base Station Cooperation]〕], IEEE Transactions on Wireless Communications, 2014, 13(9): 49594973.
+[8]Nie W, Zheng F C, Wang X, et al. User-Centric Cross-Tier Base Station Clustering and Cooperation in Heterogeneous Networks: Rate Improvement and Energy SavingfJ]. IEEE J. SeL Areas Commun., 2016,34(5): 1192—1206.
+[9]Jaramillo-Ram rez D, Kountouris M, Hardouin E. Coordinated Multi-Point Transmission With Imperfect CSI and Other-Cell Interference[J]. IEEE Transactions on Wireless Communications, 2015, 14(4):【882-1.896.
+[10]Sakr A H, Hossain E. Location-Aware Cross-Tier Coordinated Multipoint Transmission in Two-Tier Cellular Networks[J]. IEEE Transactions on Wireless Communications, 2014, 13(11): 6311—6325.
+[11]Nigam G, Minero R Haenggi M. Coordinated Multipoint Joint Transmission in Heterogeneous Net- works[J]. IEEE Transactions on Communications, 2014, 62(11): 4134-4146.
+[12]Yang N, Wang L F, Geraci G, et al. Safeguarding 5G Wireless Communication Networks Using Physical Layer SecurityfJ]. IEEE Communication Magazine, 2015, 34(2): 20-27.
+[13]Conti M, Dragoni N, Lesyk V. A Survey of Man In The Middle Attacks [J]. IEEE Communications Surveys & Tutorials, 2016, 18(3): 2027-2051.
+[14]Wasef A, Lu R, Lin X, et al. Complementing Public Key Infrastructure to Secure Vehicular AD Hoc Networks[J]. IEEE Wireless Communications, 2010, 17(5): 22-28.
+[15]Haenggi M. Mean Interference in Hard-Core Wireless Networks卩].IEEE Communication Letters, 2011, 15(8): 792-794.
+[16]Ibrahim A M, EIBatt T, El-Keyi A. Coverage probability analysis for wireless networks using repulsive point processes[A]. // IEEE International Symposiuin on Personal Indoorand Mobile Radio Communications (P1MRC)[C]. London, UK: IEEE, 2013: 1002-1007.
+[17]Haenggi M. Stochastic Geometry for Wireless Networks[M]. Cambridge, U.K.: Cambridge Univ. Press, 2012.
+[18]Jindal N, Andrews J G, Weber S. Multi-Antenna Communication in Ad Hoc Networks: Achieving MIMO Gains with SIMO Transmission[J]. IEEE Transactions on Communications, 2011, 59(2): 529-540.
+[19]Li C, Zhang J, Andrews J G, et al. Success Probability and Area Spectral Efficiency in Multiuser MIMO HetNets[J]. IEEE Trans. Commun, 2016, 64(4): 1544-1556.
+[20]Mukheijee A, Fakoorian S A A, Huang J, et aL Principles of physical layer security in multiuser wireless networks: A survey [J]. IEEE Communications Surveys & Tutorials, 2014, 16(3): 15501573.
+[21]Guo A, Zhong Y, Zhang W, et al. The Gauss-Poisson Process fbr Wireless Networks and the Benefits of CooperationfJ]. IEEE Transactions on Communications, 2016, 64(5): 1916-1929.
+[22]Heath R, Wu T, Kwon Y H, et al. Multiuser MIMO in distributed antenna systems with out-of-cell interference[J], IEEE Trans. Commun, 2011,59(10): 4885-4899.
+[23]Hosseini K, Yu W> Adve R. Large-scale MIMO versus network MIMO for multicell interference mitigation]!]. IEEE J? Sei. Topics Signal Process., 2014, 8(5): 930-941.
+[24]Ham di K A. A Useful Lemma for Capacity Analysis of Fading Interference Channels]!]. IEEE Transactions on Communications, 2010, 58(2): 41 IT 16.
+[25]Gradshteyn S5 Ryzhik IM. Table of Integrals, Series, and Products[M]. New York: Academic Press, 2000.
+第三章 支持缓存与能量收集技术的HetNets基站协作覆盖与容量务析
+HetNets中引入缓存技术和EH技术，异构BS协调与协作需根据BS能量状态 和内容缓存匹配状态动态调整。本章进一步研究和分析1 +K层HetNets的异构BS 协调与协作传输。MBS为MU提供最基本的连接覆盖，K层由收集的能量驱动的异 构SBS提供基于内容感知和信道资源感知的协作传输来进一步提高网络传输速率和 网络覆盖。基于随机几何建模和分析异构协作传输的覆盖与传输速率。
+3.1引言
+由第2章可知，HetNets网络釆用CoMP技术能降低异构网络间的干扰，提高网 络覆盖和容量性能卩⑵。但HetNets中异构BS之间的协调需要信息交互，且密集BS 与核心网之间业务的传输给回程链路造成了巨大压力〔3,4］。近期研究表明，在网络边 缘，如SBS,缓存部分流行内容能显著缓解回程链路的拥塞［5,6］。更重要的是，Emu 请求-BS缓存命中，则不需要从内容服务器获取请求内容，具有缓存能力的SBS能 为MU提供低时延业务服务。
+另一方面，随着移动连接设备的激增，部署越来越密集的异构BS以及较大 的CoMPBS簇，全网能量消耗逐渐严重民7］,对网络运营和绿色通信带来了巨大的 压力。EH技术能从外界挖掘和收集如风能、太阳能和热能等绿色能源，可用于驱动 低功率SBS的运行［8,9】。
+研究具有缓存能力和EH能力的HetNets中的BS协调与协作能为实际HetNets 部署和优化提供理论指导。然而，此研究具有多项挑战。首先，采用EH技术，能量 的间歇性到达造成BS能量状态以及网络拓扑的动态变化；其次，MU内容请求与BS 内容缓存匹配的随机性影响MU与网络的接入；最后，异构BS为MU提供差异化的 用户服务。具体而言，在异构网络中联合考虑缓存技术和能量收集技术，对网络的 拓扑结构和用户-基站接入有非常大的影响，如图3-1所示，引入能量收集技术，外 部环境中能量的间歇性到达将直接影响基站的能量状态，并进一步影响网络的拓扑 结构，另一方面，基站缓存与用户请求的匹配与网络拓扑结构一起作用于基站与用 户之间的关联以及异构基站的协作，从而直接影响基站的负载状态。由于能量的消
+图3-1引入缓存技术和能量收集技术对网络状态的影响
+
+耗与基站负载有关，因此，基站负载的变化将影响基站的能量状态。总而言之，由于 引入能量收集技术和缓存技术，两个外部因素的改变直接作用于网络状态以及用户 与基站直接的关联。
+为了研究缓存技术与能量收集技术的引入对异构协作无线网络中的异构基站协 调、用户与基站关联等的影响，本章将首先建模该场景下的异构无线网络模型，然 后提出同时考虑基站能量状态、基站缓存与用户请求、信道资源等的异构基站协调 与协作方案以及用户与基站关联方案，并釆用随机几何、马尔科夫链以及Gamma拟 合理论分析所提异构BS协调与协作机制下的网络覆盖与数据传输速率，最后，理论 地和数值地分析系统关键参数、如能量收集能力、基站缓存能力、信道复用参数等 对网络性能的影响。
+3.2支持缓存与能量收集技术的HetNets系统模型
+3.2.1网络部署模型
+本章考虑一个基于OFDMA的1 + K层HetNets,其中一层MBS为MU提供基 本连接覆盖，X层支持缓存和由EH驱动的异构SBS协调、协作服务MU。图3-2示 意了一个三层异构网络模型。MBS的位置分布服从密度为扁的HPPP中OCR?。k 层SBS的位置分布分别服从密度为4的独立HPPP既€閥2。MU的分布同样建模为 密度为兀的独立HPPP <f?GR2o本章主要研究下行链路的协作传输与性能分析, 根据Slivnyak定理【剧，一个位于二维坐标原点的MU定义为典型MU。
+MU始终与最近的MBS连接以保障基本覆盖。宏蜂窝网络共有Mo个带宽为W 的正交子信道，MBS随机、均匀地将Mo个信道分配于与之相关联的MU。分配给典 型MU的信道定义为参考信道。根据MU需求，SBS随机地复用MBS的信道资源服 务MU。第化层SBS可复用的最大信道数为 性（WM。）。BS分配给每个MU一个唯 一的信道，即被同一个基站服务的MU之间不存在用户间干扰。因此，BS的接入容 量，即可同时被一个BS服务的MU数量，为肱"= 0,../。
+图3-2 支持缓存和EH的三层HetNets模型
+
+MBS和SBS的发送功率为用以)，此功率均匀地分配于与之关联的MU。无线信 道模型釆用标准路径损耗函数1(d) =d-a与小尺度衰落，其中d是发送-接收之间的 距离，a (a >2)是路径损耗指数①。小尺度衰落釆用独立准静态Rayleigh衰落。
+3.2.2能量收集模型
+MBS由电力系统驱动，有足够的能量用于维持基站运行。SBS配备能量收集和 存储模块，能从绿色能源中收集能量。不同层SBS具有不同的能量收集能力，即能 量收集速率和能量存储差异。将连续时间离散化，每个时隙的能量按一定的概率达 到并被收集，如文献〔IL对于第*层SBS,能量到达过程建模为概率为四的独立同 分布(Independent and identical distributed, z.z.tZ.) Bernoulli 过程。每个时隙到达的能 量表示为。。令与表示收集足够传输能量所需的时隙，则当收集能量小于以勾时， SBS处于休眠不工作状态。当收集能量大于冷时，SBS则处于工作状态，可实现 无线信号的发送与接收。
+①本文所釆用的正交子信道的中心频率变化相对较小,因此本文忽略不同正交子信道频率对路径损耗因子的 影响，考虑相同的路径损耗指数。
+3.2.3内容缓存模型
+令T表示多媒体内容数量。所有内容大小相同，为S比特，根据请求频率排序 表示为夕=卩,2,...,幻，序号越低，内容越流行。令｛人！…,左耕表示第上层网络上 的内容流行分布或内容请求概率，该分布是根据本地或者全局网络的内容请求统计 得到。Zipf分布〔12,13]是一种广泛应用的内容流行建模模型，有如下表达形式：
+1M °
+fk,t= —卷少，	(3-1)
+￡ 1/以
+(=1
+其中*(2 0)是3渺■分布的特征参数，表示第k层网络的内容流行分布偏度。MBS 通过光纤与核心网相连。SBS配有缓冲存储模块，第左层SBS的存储容量为项 SBS釆用MPC机制，即第上层SBS预先缓存最流行的屁个内容②。
+3.2.4基于基站能量状态、缓存和信道资源联合感知的基站协调机制
+本章提出一种基于BS能量状态、缓存和信道资源联合感知异构BS协调和联合 传输机制，该机制同时考虑了相应链路的平均RSS以保证无线信号传播的有效性。
+典型MU与最近MBS相关联，工作在参考信道，以来保障基本无线覆盖。第k 层SBS复用参考信道协作发送典型MU的请求内容。一个SBS参与协作服务典 型MU当且仅当如下四个事件(条件)同时成立：①事件访：该SBS有足够的能量 以实现无线传输；@事件&2：典型MU的请求内容被该SBS缓存，即缓存命中事件 发生；③事件给该SBS处于不满载状态，且参考信道没有被SBS用于服务其他的 与之相关联的MU；最后，@事件￡4:该SBS与典型MU之间的无线链路平均RSS 大于给定的协作RSS门限砚，即p^r~a Tko也就是说，该SBS处于以典型MU 为中心、半径为游=(用昧)/%)'"的圆形协作区域内。该协作判断过程也可通过 图3-3中的流程图展示。
+从MU角度看，该协作机制是以MU为中心的异构协作。根据条件场，第上层 网络的协作候选SBS位于区域绍(。,終)以内，能参与协作来服务典型MU当且仅当 事件E], E2和E3同时成立。
+② BS定期的更新缓存内容，本章考虑本地流行内容缓存,这样MU附近的SBS能更好的实现协作。
+图3-3 任意SBS参与协作的判断示意图
+3.3小区负载分布
+BS的小区负载定义为BS同时服务的MU个数。由于BS的位置分布服从HPPP, 根据Slivnyak' s定理卩°】，第上层网络上任意BS的小区负载分布特性相同。因此, 以第k层网络上的一个典型BS为分析参考，本节分析BS小区负载的分布特性。
+3.3.1 MBS的小区负载分布
+令p0(w)表示个MU同时被一个MBS服务的概率。由于MU与最近的MBS 相关联，宏蜂窝网络的网络拓扑结构为泊松voronoi多边形图(Poisson voronoi tessellation, PVT)。PVT 中 BS 小区尺寸的概率密度函数(Probability density function, pdf)可近似拟合为Gamma分布卩4,15］：
+
+m0个MU处于一个MBS的小区范围内的概率为MM］：
+
+由于MBS的接入容量为气，因此MBS的最大小区负载为气。一个MBS处于满
+载状态，即m0 = M0,等效于事件：超过气个MU位于该MBS的小区范围内但只
+有肱0个MU被该MBS服务。因此，m0<M0的宏小区负载分布可表示如公式(3-3),
+而MBS满载的概率为：
+枷。)=/￡。竺芸竺心心
+(3-4)
+其中(a)由文献[18]中的公式(6.455-2)得到。如果MBS的接入容量足够大，能提供 归0—1
+所有MU的基本覆盖，即当MqXq ?4时，则E Po(mo)急1。
+mo=0
+3.3.2 SBS的小区负载分布
+根据所提协作机制，第*层网络的任意SBS以的小区服务范围是半径为跋的圆 形区域，即阕(垃,族)。令以(欧)表示吹个MU同时被第化层网络的一个SBS服务 的概率。根据事件幼，能量不足的SBS负载为0。将SBS的能量状态建模为马尔科 Mk
+夫(Markov)链，如图3-4所示，该马尔科夫链保持稳定的条件是出<様￡ P#(他)，
+1
+因此一个SBS有充足能量的概率为：皿=— [1I]o根据事件E2和公式(3-1), 嬴 ￡ Pkg
+咬=i
+
+图3-4 SBS能量状态的离散马尔科夫链模型
+第*层网络中缓存命中事件的概率为：T]k = E 由于sbs 4的接入容量为算， ￡3对SBS的小区负载给定了一个最大接入MU数量。根据事件&，只有位于点的 圆形小区范围内的MU才能有机会被其服务。当4的小区范围内存在n个候选MU 时，冈U好有mk个缓存命中事件发生的概率是一个参数为n和爪的二项式分布，即
+
+因此，mk（＜Mk）个MU同时被城服务的概率是:
+其中（b）是根据MU的HPPP建模和缓存命中的二项式分布。（c）是根据指数分布的 泰勒展开。第k层网络中一个SBS满载的概率，即mk=Mk的概率为：
+
+结合SBS的小区负载分布，第k层网络的SBS有足够传输能量的概率可重新表示为:
+供—[1 - exp （-时由“）]&	°8）
+系统参数影响及实际网络指导：根据SBS能量状态的马尔科夫建模，若能量到 达速率大于能量消耗速率，即出N [1-exp （-砍為囚）]毎，该马尔科夫链将处于 不稳定状态，SBS总有足够的无线传输能量。因此，当SBS以较高概率处于非零负 载状态时，收集的能量很快被消耗，从而概率以锐减。设置一个较高的协作RSS门 限或者一个较小的缓存容量，SBS零负载概率增加，从而SBS±存储的能量以及有 足够传输能量的概率也増长。总而言之，从公式（3-6）-（3-8）可看出，协作RSS门限 Tk, SBS的缓存容量乙，以及SBS可复用的最大信道数量偽联合作用于SBS的小 区负载分布，进一步的影响SBS的能量状态。
+3.4用户平均容量和覆盖概率分析
+基于小区负载分布的分析结果，本节首先研究所提协作传输机制下典型MU 的接收ASS和AIS的统计特性，然后，基于ASS和AIS的Laplace变换，得到典 型MU的平均用户容量。进一步地，基于ASS和AIS的阶距特性，釆用Gamma分 布拟合ASS和AIS的分布，并分析得到典型MU成功覆盖概率的近似表达式。
+3.4.1累积信息信号强度与累积干扰信号强度的统计特性
+令和表示离典型MU最近的MBS,且-0 = ll^oll，则根据HPPP性质，/?()的pdf 为：fro (r) =	。令&和4表示来自第左层网络SBS的ASS和AIS。所有
+异构协作BS采用NJT,贝!J典型MU的接收SINR可表示为：
+K
+第+毕
+SINR=	—,	(3-9)
+E24 + <^2
+其中So和；0分别是来自MBS的ASS和AIS,表示如下：
+(TX)
+S。=斜I岡「％。弘。WMo-1,	(3-10)
+(TX)
+Zo= ￡	3 上参考信道被占用)一\\x\\~ahx,	(3-11)
+疋如\阕(0/0)	叫
+其中佝和mx分别是与冲和其他干扰MBS x相关联的其他MU个数。hXQ和幻表示 Rayleigh衰落的信道增益，服从均值为1的指数分布。
+对于一个位于弥仁处e阕(。,源)且有％?个其他待服务MU的SBS,此SBS 能参与协作发送典型MU的请求数据当且仅当满足协作条件E],鸵和马。因此，来 自第左层网络的SBS的ASS表示为：
+尸(职)
+Sk= L l(￡：y&E2&E3)-^—\\xkrahXk.	(3-12)
+砂蜥興。，源	如"1
+若参考信道被SBS用于服务其他MU,则此SBS将对典型MU产生干扰。因此，来 自第k层的AIS表示为：
+n(TX)
+】k= ￡ 叽咼&我上参考信道被占用)-^膈|「°\	(3-13)
+xk^k
+引理3.1在小给定条件下，So的Laplace变换函数为：
+m0-2	Tfiyro
+糸0（巾o） = Po（Mo）+ ￡ Po（mo+1）―	?	（3-14）
+?o=°	' +河寿
+证明：详细证明过程请见第3.7.1节附录。	口
+对于第A:层SBS,有mk ? Mk）个与之关联的MU,若任意一个MU都不工作于 参考信道，则此信道资源可用于服务典型MUo因此，参考信道可用于服务典型MU 的概率为：
+（以0~~1）?“（桃~-晚）	=Mq_nik .	（3-15）
+Mq（M（）-1）...（气-吹+ 1） Mo
+若一个SBS上的参考信道不可用于服务典型MU或者典型MU的请求内容没 有被缓存，则此SBS将不参与协作。因此，第*层网络中任意一个位于区域 绍（。,族）内且有足够能量的SBS参与发送典型MU的请求数据的概率可表示为:
+Mk-1	財
+Vk = m ￡ Pk + 1） V-。
+mk=°
+引理3.2 Sk的Laplace变换函数表示为：
+为k（'）= exp < -叫皿%抓 E Pk（mk + 1）-揣 k （1 - % （	1）） } '（3-16）
+其中
+名⑴=爲2片（1,1 + §2+春-j'	（3-17）
+证明：详细证明过程请见第3.7.2节附录。	口
+MBS随机、均匀地分配信道资源于与之相关联的MU。一个有个其他被服 务MU的MBS刚好使用了参考信道，即刚好能干扰典型MU的概率是獄。 引理3.3 10的Laplace变换函数表示为：
+'	Mo
+另°（巾0）= exp〈-兀A展￡ PoSo）书?塔
+^o=i
+其中
+統（，）=七2耳—	—￡;—广）.	（3-19）
+证明：详细证明过程请见第3.7.3节附录。
+对于第k层网络中有足够传输能量的SBS,当且仅当他们刚好复用了参考信道 来服务其他MU才能对典型MU产生干扰。一个服务了出个MU的SBS复用了参 考信道的概率为：
+出（气_1）...（物_出+1）=性	（3-20）
+（肱0 - 1）…（峋-％ +1）肱0
+引理3.4来自第上层网络的SBS产生的AIS的Laplace变换函数表示为：
+p⑴=。乂卩｛-端（峪严B信,1 一三）些严伽眼严｝ ?	（3-21）
+证明：详细证明过程请见第3.7.4节附录。	口
+系统参数影响及实际网络指导：从小区负载分布（3-6）和Laplace变换函数（3-16） 可以看出，随着协作RSS门限的下降（即协作区域的扩张），候选协作SBS的数量 以及SBS重负载的概率持续增长，而概率%和（ok却在下降。从而导致候选SBS的 数量与任意候选SBS参与协助的概率之间存在均衡。类似的，随着SBS缓存容量的
+Mr— 1
+增加，缓存命中概率m与联合概率収E pfeH+i）之间存在均衡。对于果积干扰 喚=Q
+信号强度4,随着协作RSS门限和缓存容量的变化，SBS具有充足能量的概率叫和
+Mk
+干扰概率E Pkg 之间存在均衡，为了获得系统参数的直观影响，接下来以平均 夜=]
+用户容量和覆盖概率为系统性能衡量参数，具体探析所提协作传输机制以及系统参 数对MU服务质量的影响。
+3.4.2用户平均容量
+协作BS与典型MU之间的平均容量可表示为：
+绥c = WE[ln（l+ SINR）] （nats/s）.	（3-22）
+定理3.1在支持缓存的、由能量收集技术驱动的HetNets中，基于所提的协作传输机
+制，MU能实现的平均用户容量为：
+1 一以。（市）卩4①））扁（加「）也 （3-23）
+证明：应用文献［19］中的结果，典型MU上单位频率带宽上的平均容量表示为:
+K	/ K	\	.
+/ k=。* ' k=。*)a w 0
+（=yj （另o （市）耳4（?）-另。（市）免0 （中卄我⑴総（‘）丿⑺北 其中（C是由于随机变量之间的独立性。将公式（3-24）带入（3-22）,平均用户容量可 得到如公式（3-23）。
+3.4.3覆盖概率
+当所有协作BS以固定速率发送信息，若典型MU上接收到的SINR低于预先 定义的门限值时，则典型MU不能可靠的解码无线信号，从而导致中断的发生。 为衡量HetNets的网络覆盖性能，定义覆盖概率为接收SINR的互补累计分布函数 （Complementary cumulative distribution function, CCDF）,艮卩
+（3-25）
+其中。是预先定义的覆盖门限。
+定理3.2在支持缓存的、由能量收集技术驱动的HetNets中，基于所提的异构协作传 输机制，MU的覆盖概率可近似表达为：
+
++写她。+2「怎+，泌
+秫0=。	o
+
+
+其中"0和Uk的表达式分别是:
+
+(P的定义是＜?=暨。与，缶以及&的表达式分别是第3.7.5节附录中的公式 (3-40)和(3-43)。魏(x)和勿4(X)分别为：
+増(力=3+0)&+电)2鸟(1,际+ 电;2+1；(x+矶),
+/	尤_ Ez(m°+1)、
+幼 3) = (1+叶(吟+%)2歹］l,R+% Ks+l；一當己
+证明：详细证明过程请见第3.7.5节附录。
+系统参数影响及实际网络指导：虽然平均数据率(3-23)和覆盖概率(3-26)不是 闭式表达式，但其中的Laplace变换函数通过Matlab计算，因此成功覆盖概率和平 均用户容量可通过数值计算得到。基于以上分析，进一步发现，对于一个起主导作 用的协作或者干扰SBS,即位于区域绍(。,液)以内的SBS,作为协作源的平均发送 功率为：
+n(TX) Mk-1
+°3润时 I	錦F'	(3_30)
+作为干扰源的平均发送功率为：
+p(TX) Mk
+欧 匕° ￡ Pk(m).	(3-31)
+因此，在起主导作用的SBS上，平均协作发送功率和平均干扰发送功率之间存在均 衡。协作RSS门限和SBS的缓存容量、能量收集能力以及最大信道复用数是影响平 均协作或干扰发送功率的主要因素。
+3.5数值、仿真与分析
+为了验证以上理论分析结果，本节将主要针对一个两层HetNets展开数值和仿 真结果分析，来衡量所提协作机制以及系统参数对MU覆盖和容量的影响。MBS和
+
+表3-1第三章系统仿真参数
+系统参数	仿真值	系统参数	仿真值
+扁'为1，兀	　　1	10	20
+成。。2。咒5而为尤50。2	肱0,州	50, 10
+応TX), p(TX)	37 dBm, 30 dBm	a	4.28
+200, 10,0.8	Mi Ai’Ei	0.5, 1,5
+W	10 MHz	(y2	-104 dBm (10 MHz 带
+宽)
+
+支持缓存与EH的SBS在半径为5km的圆形区域内按HPPP分布。所有仿真结果均 通过蒙特卡洛方法得到。具体的仿真参数如表3-1所示。首先，图3-5展示了仿真结 果与理论分析结果的对比，图中分析结果与仿真结果之间的间隙是由于分析过程中 对ASS和AIS采用了 Gamma分布拟合。
+3.5.1协作RSS门限的影响
+图3-6展示了协作RSS门限(q)对覆盖概率和平均用户容量的影响。可以看出, 当q近似等于或者小于-90 dBm时，SBS以概率1处于满载状态，而当q接近或者 大于0 dBm时，SBS基本处于零负载状态。此外还可看出存在最大化平均用户容量 和覆盖概率的最佳协作RSS门限值。这是由于SBS的协作概率与候选协作SBS数量 之间的均衡，正如第3.4节中的理论分析。对于一个较小的句，SBS的服务小区范围 较大，因此一个有足够传输能量的SBS上的负载较重，反过来又使得SBS有足够传输能量的概率降低。因此，有非常少的SBS能参与协作，而有足够传输能量的SBS 却几乎能以概率1产生干扰，从而造成了较低的传输速率和网络覆盖。随着q的增 加，虽然候选协作SBS的服务小区范围和候选SBS的数量减小，但是候选SBS的协 作概率以及有充足传输能量的概率增加。因此，累积信息信号强度随着q的增加而 先增加后减小。类似的，SBS的干扰概率随着q的增加而锐减，因此累积干扰信号 强度也锐减。因此，MU上的平均接收SINR先增加而后减小，存在一个最大化平均 用户容量的最佳的丁1。
+
+
+结合公式(3-42), (3-47),随着q的增加，MU的接收SINR的方差也在变化。 当C1足够大时，SBS既不参与协作，也不产生干扰，因此SINR以非常高的概率可 表示为SINR=^y。这种情况下，SINR的方差相对较小。随着⑶的增加，SBS 的平均小区负载丸必1到0变化，协作SBS的数量先增加后减小，导致SINR的方 差是关于3的峰值函数。结合平均SINR的分析结果，当覆盖门限较小时，覆盖概 率Pr{SINR>)3}将有一个极小值，如图3-6所示。
+3.5.2 SBS的最大信道复用数的影响
+为了研究SBS信道资源复用的影响，图3-7展示了平均用户容量和覆盖概率 与SBS的最大信道复用数(Mi)的关系。对于固定的协作RSS门限和缓存容量, SBS处于零负载的概率以及SBS有足够传输能量的概率便己确定。若一个起主导作 用的SBS上的平均协作传输功率(3-30)大于干扰传输功率(3-31),网络性能将被提 升。如图3-7所示，对于一个较低的句，如T! =-70 dBm,当至少有一个信道资源 可复用于SBS时，SBS零负载的概率很小91(0) = 0.057)。这种情况下，当M从0 变到1时，厶>Si，网络性能下降。但是，51随着M］的增加而增加，而I】基本保持 不变，从而网络性能提升。选择一个合适的协作RSS门限，如q=—50 dBm, SBS 的零负载概率为Pi (0) =0.75,这种情况下Si总是比A强，平均用户容量和覆盖概 率随着Ml的增加而提升。
+
+
+3.5.3基站缓存容量的影响
+图3-8展示了 SBS缓存容量的影响。可以看出，当设置合适的协作RSS门限时，存 在最大化平均用户容量和覆盖概率的最佳缓存容量。当勺较小时，如T］ = -90 dBm, 若缓存命中且(3-31)〉(3-30)+<5③，SBS将处于满载状态。因此厶总是比大而 网络性能随着缓存容量的变大而下降。当t1 = -70 dBm时，SBS处于中等负载状 态，若缓存容量乙1小于某定值时，(3-31) <(3-30)+S,而3大于此值时，(3-31) > (3-30) +3,从而造成了最佳缓存容量的存在。当协作RSS门限为匂=-50 dBm或者 更高时，SBS处于轻负载状态，(3-31) <(3-30)+3总是成立。这种情况下网络性能 随着3的增加而提升，最终收敛于最大值。
+③6是全网干扰SBS产生的干扰对起主导作用的干扰SBS产生的干扰的一个补偿因子。
+
+
+0	0.2	0.4	0.6	0.8	1	0	0.2	0.4	0.6	0.8	1
+能量收集概率“1	能,吊:收集概率“]
+图3-8 妇对平均用户容量和覆盖概率的影响
+3.5.4能量收集能力的影响
+图3-9分析了能量收集速率M的影响。当Ti = -70 dBm时，网络性能随着乂 的增加而恶化，而当t1 = -30 dBm时，网络性能逐渐提升，最终收敛于最大值。 当= -50 dBm时，存在一个最佳的能量收集速率。从公式（3-8）看出，对于固定 的们和侃，SBS有足够多的传输能量的概率取决于乂。当SBS处于高负载状态时, 如句=-70dBm, SBS由于接入容量有限很难参与协作，但随着收集能量的增多, SBS会引起严重的干扰。当SBS处于中度负载状态时，如q = —50dBm,平均用户 容量和覆盖概率先增加的原因是因为ASS的增加量大于AIS的增加量。但是，由于 协作SBS数量有限，系统性能最终由于持续增长的干扰而降低。当SBS处于轻度负 载状态时，如T1 = -30dBm,由于干扰SBS数量有限，系统性能随着月的增加而提 升。系统性能最终收敛于最大值的原因是：即使不断提高能量收集速率，协作SBS 有充足传输能量的概率最大只能为1。
+3.6本章小结
+本章针对支持缓存技术和EH技术的HetNets中的BS协调与协作传输展开研究。 提出了一种基于BS能量状态、缓存内容和信道资源可靠性联合感知的协作传输机制 来进一步提升网络容量和覆盖。釆用随机几何理论和Gamma拟合，理论分析了网络 容量和覆盖概率。最后，数值仿真结果验证了理论分析的正确性和Gamma拟合的准
+
+0	50	100	150	200	0	50	100	150	200
+缓存容坦: '	缓存容量L1
+图3-9卩对平均用户容量和覆盖概率的影响
+确性。同时，分析结果表明，存在最大化网络覆盖和容量的最佳协作RSS门限。进 一步，当设置一个合适的协作RSS门限使BS处于中度负载状态时，1）存在最大化 网络性能的最佳缓存容量和能量收集速率；2）平均容量和覆盖概率随着最大信道复 用数的增加先下降后提升，最终收敛于最大值。本章所提异构BS协调与协作机制可 应用于能量受限和回程链路容量受限的网络，以提升MU的覆盖和服务毎量，分析 结果能为支持缓存和EH技术的HetNets的部署提供理论指导。
+3.7附录
+3.7.1引理3.1证明
+在给定S和mQ的条件下，So的分布为：
+fs。（巾0,㈣）=与寄（啓寄相
+则在给定r0的条件下，的Laplace变换表示为:
+8 M —2	的+1 a
+^S0(tlro)-Po(^o)+ [e~st ￡ Po(mo + 1)普导力七俨)0 ds
+o mo=°	P°
+? a
+r0
+其中（e）是因为当最近MBS处于满载状态时不服务典型MU,从而So = 0。
+3.7.2引理3.2证明
+根据Laplace变换的定义，的Laplace变换函数为:
+
+
+
+
+其中（O来自于HPPP的PGFL［瑚。（g）是因为SBS参与协作的概率为攻且人~ exp{I}。
+3.7.3引理3.3证明
+干扰MBS位于区域绍(。,勺)以外，因此
+
+=exp {—财也p"o)錢為齢2万(1,1 - f ；2 — g;
+(3-34)
+其中(h)是因为MBS以概率po (0)处于零负载状态，且有m0个关联MU的MBS复 用参考信道的概率为謝。
+3.7.4引理3.4证明
+SBS产生的累积干扰信号强度4的Laplace变换函数为:
+
+
+其中⑦来自于如下积分。
+
+
+
+3.7.5定理3.2证明
+根据覆盖概率的定义，伊cov(0)可表示为:
+
+K	K
+定义 s = ￡Sk 和 Z = /o+￡4，则
+k=l	k=l
+伊c°v (8 Z Pr [So 2 0Z] + Pr 凡 < 阳 S 邳Z - S°]
+= Pr[50 2 PZ] + Pr[So < 0Z,S2 pZ]+Pr[SQ < PZ,PZ-SO <S^pZ].
+(3-38)
+第一项Pr [So N ￡Z]可应用Ik的Laplace变换函数得到，即
+Pr[So2 0Z]^*：po(mo + l)谊另(捋爲上)扁⑺妬	(3'39)
+其中。)是由于hXo服从指数分布。由于釆用Laplace反变换直接获取Sk和Ik的pdf 的闭式表达式很复杂，本文采用Gamma分布㈣来拟合S和Z的pdf.据文献[20,21] 证明，采用二阶距匹配Gamma分布足够用于拟合多个Gamma分布的和。因此，与S 有相同一阶距和二阶矩的Gamma分布有如下形状(shape)参数际和尺度(scale) 参数6S-
+/ K \ 2 K
+￡E[Sk]	E ￥[5,]
+& =毛—— ,0s =旱——，	(3-40)
+岡	財[&]
+其中E［&］和V&］分别是Sk的均值和方差。Sk的均值可釆用文献［10］中的公式 (2-19)获得：
+"2—a _ /2-a 算一1 麻二，E E+i)
+乙—a B
+Mq_mk
+mk+l
+(3-41)
+其中4 = 1。根据文献［10］中的结果(2-21), S*的方差为:
+2	Xk
+2兀鼻阳Ik [ rl-2adr
+爲
+r(TX)
++ 1
+Aft— 1	■ <	/ n(
+S=E(/?)epm + i)虹? 4
+旳=°
+一	(5])七.
+2-2a ”住人扁+i)2
+Mq
+(3-42)
+类似的，与Z有相同一阶距和二阶矩的Gamma分布的形状和尺度参数表达如 下：
+(E[Z0]+EE[Z,f =I	k=i	，
+Z	K
+v[z0]+E v[zA]
+k=\
+2	K
+V[/o]+E V[/J -，°Z=号—
+E 卩o] +E E[/fc]
+k=\
+其中在r0给定条件下10的均值和方差分别为:
+Mq	戶(TX)
+E [/oko] = 2兀為 ￡ Po (m)号一 ，
+妇	Mo a_z
+是-2a 或)(^TX)) 岑 Po(m)
+妇m
+阳盛=2a-2 Mo
+4的均值和方差可获得如下:
+E囹=2区妒硏
+65
+,.2 一 a
+r0
+Mk
+E Pkg), mk=l
+y Pkg
+出1 mk
+(3-43)
+(3-44)
+(3-45)
+(3-46)
+(3-47)
+
+根据S和Z的Gamma拟合，概率Pr [So < PZ,S 2 jBZ]近似如下:
+f OO gz oo	)
+Pr [So <PZ,S 2 PZ] = E㈣,「° { ///了s(s)dsfs。(x)dxfz⑵K }
+、0 0位	丿
+露衿"叫5
+羸 /「(际+互川咤絕⑴]
+r(5(— + i) j
+_F	J「(於 + 勺)中际 _6&(佝 +1)、1
+_蛔，叽r(0r(Kz+i产I/+成以)甘丿j
+其中9 =警 和窃(X)表示为公式(3-28)。任)和(/)是根据S, Z的Gamma拟合以 及仅的指数分布。相似的，概率Pr[So<FZ,0Z-So<SW0Z]可获得如下：
+
+
+
+(3-49)
+其中(〃)是通过变化积分变量域。线(%)表达如公式(3-29)O结合公式(3-38), (3-39), (3-48)以及(3-49),覆盖概率可近似表达为(3-26)o
+参考文献
+[1]Li Q C, Niu H, Papathanassiou A T, et al. 5G network capacity: Key elements and technologies]!]. IEEE Vehicular Technology Magazine, 2014,9(1): 71-78.
+[2]Wu H, Zhang N, Tao X, et al. Capacity-and Trust-Aware BS Cooperation in Nonuniform HetNets: Spectral Efficiency and Optimal BS Density [J]. IEEE Transactions on Vehicular Technology, 2017, 66(12): 11317-11329.
+[3]Lee D, Seo H, Clerckx B, et al. Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges[J]. IEEE Communication Magazine, 2012, 50(2): 148-155.
+[4]Bassoy S, Farooq H, Imran M A, et al. Coordinated Multi-Point Clustering Schemes: A Survey [J]. IEEE Communications Surveys & Tutorials, 2017, 19(2): 743—764.
+[5]Paschos G, Ba§tug E, Land I, et al. Wireless caching: Technical misconceptions and business barriers [J]. IEEE Communication Magazine, 2016, 54(8): 16-22.
+[6]Liu D, Chen B, Yang C, et al. Caching at the wireless edge: design aspects, challenges, and future directions[J]. IEEE Communications Magazine, 2016, 54(9): 22-28.
+[7]Mobile's Green Manifesto[R]. https://www.gsma.com/publicpolicy/wp-content/uploads/2012/06/ GSMA2012_Report_MobiIesGreenManifesto.pdf: GSMA, 2012.
+[8]Zhang S, Zhang N, Zhou S, et al. Energy-Aware Traffic Offloading for Green Heterogeneous Net- works[J], IEEE J. SeL Areas Commun., 2016, 34(5): 1116-1129.
+[9]Zheng Z, Zhang X, Cai L X, et aL Sustainable communication and networking in two-tier green cellular networks[J]. IEEE Wireless Communications, 2014, 21(4): 47-53.
+[10]Baccelli F, Blaszczyszyn B. Stochastic Geometry and Wireless Networks: Volume I-Theory[M]. Massachusetts: Now Publishers, 2009.
+[11]Yu P S, Lee J, Quek TQS, et al. Traffic Offloading in Heterogeneous Networks with Energy Harvesting Personal Cells - Network Throughput and Energy Efficiency[J]. IEEE Transactions on Wireless Communications, 2016, 15(2): 1146-1161.
+[12]Yang C, Yao Y Chen Z. Analysis on cache-enabled wireless heterogeneous networks。], IEEE Transactions on Wireless Communications, 2016, 15(1): 131-145.
+[13]Wang X, Chen M, Taleb T, et al. Cache in the air: Exploiting content caching and delivery techniques for 5G systems[J]. IEEE Transactions on Communications, 2014, 52(2): 131-139.
+[14]Ferenc J S,Neda Z. On the size distribution of poisson voronoi cells[J]. Phys. A: Stat. Meeh. AppL, 2007,385(2): 519-529.
+[15]Kiang T. Random fragmentation in two and three dimensions]」]. Zeitschrift fur Astrophysik, 1966, 64: 433T39.
+[16]Dhillon H S, Andrews J G. Downlink rate distribution in heterogeneous cellular networks under generalized cell selection[J]. IEEE Wireless Communications Letters, 2014, 3(1): 42-45.
+[17]Di Renzo M, Lu W, Guan P. The intensity matching approach: A tractable stochastic geometry approximation to system-level analysis of cellular networks[J]. IEEE Transactions on Wireless Communications, 2016, 15(9): 5963-5983.
+[18]Gradshteyn S, Ryzhik I M. Table of Integrals, Series, and ProductsfM]. New York: Academic Press, 2000.
+[19]Di Renzo M, Guidotti A, Corazza G E. Average rate of downlink heterogeneous cellular networks over generalized fading channels: A stochastic geometry approach[J]. IEEE Transactions on Communications, 2013, 61(7): 3050-3071.
+[20]Robert W H, Kountouris M, Bai T. Modeling Heterogeneous Network Interference Using Poisson Point Processes[J]. IEEE Transactions on Signal Processing, 2013, 61(16): 41U126.
+[21]Heath Jr R W, Wu T, Kwon Y H, et al. Multiuser MIMO in distributed antenna systems with out-ofcell interference[J]. IEEE Transactions on Signal Processing, 2011, 59(10): 4885M899.
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.
+第四章 考虑差异化基站高度的HetNets联合传输频谱效率与业务卸载分析
+第二章和第三章分别针对非均匀HetNets和支持缓存与EH的HetNets中的BS 协调与协作展开了研究与分析。网络建模中均釆用独立的二维HPPP对异构网络节 点进行建模。考虑HetNets中异构BS与MU之间差异化的部署高度，本章进一步展 开研究，分析具有差异化BS高度的HetNets中的联合协作传输与业务卸载，同时考 虑无线信号传播的LoS和NLoS链路对协作传输性能的影响。
+4.1引言
+己有的结合缓存技术的异构协作研究卩T1］证明能通过协调多个异构BS和挖掘 内容协作缓存进一步网络覆盖与容量。然而，以下两个关键因素在已有研究工作中 很少被考虑，一：HetNets中差异化的BS高度影响无线信号的传播，从而会影响用 户与基站之间的关联。由于无线信号的传播依赖于地理几何环境，实际网络的BS部 署在不同位置、高架于高海拔的基础设施之上,例如水平面上BS沿街部署，垂直方向 上部署于建筑物楼顶之上，等等。高架BS之间不同的高度差以及SBS的缓存容量与 缓存策略，严重影响BS的小区关联与小区负载分布，进一步影响HetNets中CoMP 设计与传输。二：无线信号传播过程中同时存在LoS和NLoS链路，因此对异构协 作无线网络的分析应考虑更加实际的无线信号传播模型。已有关于HetNets的协作性 能分析的文献大多基于标准的路径损耗模型，很少有考虑到实际无线信号传播中同 时存在的LoS和NLoS链路，而无线链路的建模对分析HetNets异构协作性能有关键 影响。
+考虑以上因素，本章将分析具有差异化BS高度的HetNets联合传输机制，并结 合无线信号传播的LoS和NLoS链路模型分析联合传输机制的性能。首先，在支持 支持缓存技术的异构SBS中，同时考虑到基站高度、缓存匹配、基站负载等因素的 影响，提出了一种以用户为中心的异构协作与业务卸载机制，通过协作传输和业务 卸载提高网络容量。通过分析刻画BS小区负载分布和信息信号与干扰信号的统计特 性，得到了业务卸载概率和平均SE的数学表达式，最后，釆用数值结果与蒙特卡洛 仿真验证理论分析并进一步探索系统参数对联合传输机制的影响。
+4.2支持缓存与考虑差异化基站高度的HetNets系统模型
+4.2.1网络部署模型
+1 + K层HetNets中包括一层高架MBS和K层支持缓存的高架SBS。MBS与核 心网通过高容量光纤连接以提供可靠的无线覆盖和连接，SBS缓存部分流行内容 为MU提供高速率数据服务。MBS的位置分布建模为密度为扁的HPPP①° €股2。爪 层SBS的位置分布建模为相互独立的、密度为兀的HPPP以€R2/=i,MU 随机分布在水平地面上，其分布建模成密度为4的HPPP 4>?GR2o第上层BS的高 度为Hkm,k = O,l,-,Ka根据Slivnyak定理【⑵，一个位于二维坐标原点的MU定义 为典型MU--
+第上层BS配有M根天线。BS的发送功率表示为pfX)。MBS和SBS釆用正 交的频率资源以避免层间干扰【⑶。为同时服务多个MU而避免小区内干扰，BS釆 用ZF预编码以及平均功率分配。因此，本章定义第*层网络的BS接入容量，即可 同时被一个BS服务的MU个数，为刃(WM)。
+4.2.2内容缓存模型
+多媒体库内共有T个内容，令^ = ［1,2,...,?］表示多媒体内容库，所有内容按 请求频率排序。序号越低，内容越流行。所有内容的大小相同，为S比特。内容流行 分布建模为Zipf分布〔IL"］：
+力=客丄顷	(4-1)
+￡ 1/计
+?
+其中『00)是Z沥分布的特征参数，表示内容流行分布偏度。第上层SBS的缓存容 量为屁S。SBS独立预存储最流行的屁个内容，且存储内容根据变化的流行分布实 时更新。MU根据流行分布随机请求服务内容。
+4.2.3无线信号传播模型
+无线信号传播同时考虑路径损耗和小尺度衰落。考虑到LoS和NLoS两种传播 链路的存在，本章釆用3GPP中的概率路径损耗模型mH］。第4层网络的路径损耗
+函数表示为:
+Si热咋，依概率件），	（4.2）
+]厶件力-仍）,依概率1 一 Pr?）⑷
+其中d是发送-接收之间的距离，以千米为单位。A?）和人件）分别是LoS和NLoS 在参考距离d = 1 （km）处的路径损耗因子。a￡）和屹叫分别是LoS和NLoS的路径 损耗指数。
+Pi?即）=（1一孟"部妇,	（4-3）
+0,（4,0,8〕
+是第k层网络传输链路为LoS的概率[”】，其中d*是决定分段线性函数Pr?L）0）的 下降梯度参数。根据实际测量和无线信号传播模型，NLoS的路径损耗因子&阻） 和路径损耗指数祢NL）分别是关于基站高度的递增和递减函数。在修正的COST （Cooperation europeenne dans le domaine de la recherche Scientifique et Technique） 231 Hata卩8，191传播模型中，宏蜂窝网络中NLoS的路径损耗表示为：
+- 101ogi（y4gNL）=46.3 + 33.91og]Q（/）- 13,821og[Q//o + 3
+<	,	（4-4）
+10 祢阻）=44.9 - 6.551og）0//0	'
+其中/'是载波频率，单位是MHz, f的范围是1.5 GHz-2 GHz,公式（4-4）在"％ >30m 时有效。基于COST 231 Walfish-Ikegami街道峡谷模型卩&叫 小小区网络的NLoS路 径损耗表示为：
+-101og1（/（NL）=a-181og10（l+^）
+（NL）	，	（4-5）
+10a； L）= 38
+其中a由无线环境，如载波频率、建筑物高度、建筑物间距、道路方向等决定。
+4.2.4以用户为中心的异构协作传输与卸载机制
+本章提出了一种MBS辅助、协作SBS簇提升的协作传输与卸载机制，同时考 虑SBS缓存内容与MU请求匹配、高架BS上射频单元与MU之间的距离，以及SBS 的小区负载与接入容量。为提供高速率传输，支持缓存的SBS形成以用户为中心的 协作SBS簇从MBS卸载MU并协作服务MUo图4-1展示了任意协作SBS的选择判 断流程。具体的，第*层网络中的任意SBS瓦,丿能参与协作、卸载和服务典型MU当且仅当以下事件同时发生：①事件昌：x辅上的高架射频单元与典型MU的传输距 离小于预先定义的协作距离门限%k(Xk^Hk),即候选协作SBS閃位于以典型MU 为中心的、半径为J必-成的圆形协作区域内①,即阕搭—段);②事件 旦：典型MU的请求内容被处丿缓存，即缓存命中事件发生；以及③事件幼：令以j 为Xkj上满足条件E］和E2的其他待服务MU,当nkJ < Mk时，xkJ -定参与协作, 否则，任意服务Mk个候选MU?
+根据条件与，一个SBS能服务所有候选MU仅当待服务MU数量小于SBS 接入容量，即不超载，否则该SBS将任意服务个MUo如果没有SBS为典型 MU提供无线连接服务，即典型MU不能被卸载到协作SBS簇，则该MU被最近 的MBS服务来保证基本的无线覆盖。
+当典型MU被协作SBS簇服务时，其接收SINR可表示为：
+
+其中Sk和4是接收到的来自第左层网络的协作SBS簇和干扰SBS的ASS和AISo
+① 半径也称为sbs的小区服务半径。
+Sk和Ik分别表示为：
+
+
+Sk= ￡ ^㈤&电兰[.（护快尸+孫）（4-7） 	 %河顽（o,J必-班）	%
+和
+
+
+
+其中!E2和!￡3分别表示事件E2和E3的对立事件。％，.和mXk .分别是基站SBSxfc）z 和細上的其他待服务MU个数。虹和 y 是信道衰落增益扃量，其中每个元素 都服从均值为1的U.d.复高斯分布。当乂心参与协作服务典型MU时，服从
+2	2
+Gamma分布 坦* ~ Gamma ^Nk -mXk否则，若我/.是干扰SBS,七
+2	2
+服从参数为”知和1的Gamma分布，艮卩 蛎丿.，?Gamma 1）則。
+令知,0表示离典型MU最近的MBS,定义ro^ko|。釆用先进的无线技术，如大 规模多输入多输出（Massive multiple-input multiple-output, massive MIMO）和非正交 多址（Non-Orthogonal Multiple Access, NOMA）技术四，MBS接入容量足以支撑所 有MU的连接请求，即扁气》為。若典型MU的协作SBS簇为空簇，即没有SBS 能为之提供连接服务，则将该典型MU被xo,o服务，其接收SINR表示为：
+
+宀”0 （《国,0|2 + 照）llholli
+SINRra = 1 （空协作 SBS 簇）卫一、.科扌			>%0 < M。，	（4-9）
+其中
+
+是AISo nXQQ和mXo.分别是MBS旳）和x0J上的其他待服务MU。信道衰落||垢||] 和服从Gamma分布，即\\hQ\\2 Gamma （% -叫曲,1）,阻』；?Gama （叫饥,1）。
+
+从公式（4-6H4-9）可以看出，小区的负载分布对协作SBS的选择、协作SBS簇 对MU的卸载以及MU的RSS有决定性影响。
+4.3小区负载分布与业务卸载分析
+4.3.1 SBS的小区负载分布及卸载概率分析
+定义高架BS的小区负载为BS同时服务的MU个数。对于第k层SBS, 一
+Lk
+个SBS存储了典型MU的请求内容的概率为：爪="根据所提联合协作传 输机制，晚（＜阳个MU被位于Xkj的SBS服务等気于超过mk个MU位于区 域绍（用”必_班）以内，但是只有硃个MU的内容-缓存命中。因此，从数学上 讲，mk （＜ MQ个MU被位于細的SBS服务的概率为：
+p" ￡ （质-堕寸伊顼囊顼）蜀 二	（俨（If F
+n—mk	凡.	\n mk）t
+仞（兀（必—段）队為严exp （一兀（必—璟）以為）
+mk'-	'
+（4-11）
+其中0）是由于MU的分布服从HPPP且"个MU的缓存命中事件服从二项式分布。 0）是根据指数分布的泰勒展开。由于SBS满载的事件等效于超过Mk个待服务MU 请求连接的事件，因此事件mk=Mk的概率为：
+O0
+Pk（Mk） = ￡ Pk（m）,	（4-⑵
+fn=M*
+其中以（m）=（"对一程血必-理仇）o
+定义卸载概率为MU从MBS卸载到协作SBS簇的概率。根据SBS的小区负载 分布，可以得到MU的卸载概率为如下引理。
+引理4.1在支持缓存的HetNets中，基于所提的联合协作传输与卸载机制，任意MU
+从MBS卸载到协作SBS簇的概率为1-V,其中v = fl vk＞坎的表达式为：
+k=\
+vk = exp （-7T （必—班）楸Q ?	（4-13）
+74
+证明：对于第*层SBS,定义奴为位于区域绍(。,J必_球)以内的任意SBS参 与协作服务典型MU的概率。根据联合协作传输机制，祝表示为：
+￡ Pk(" + 1)+ ￡ Pk (n+ 0 j ,	(4-14)
+n=0	n=Mk	”十 1 ,
+其中〃是SBS上其他的待服务MU的个数。根据HPPP的压缩性质，位于区 域绍(。,"必_璟)以内的、能为典型MU提供连接服务的所有SBS的分布服 从密度参数为板屁的HPPP。因此，第*层网络中0个SBS参与协作、服务典型MU K
+的概率为攻，而典型MU被最近MBS服务的概率则为：v=n*。	□
+k=l
+4.3.2 MBS的小区负载分布分析
+根据引理4.1,所有被MBS服务的MU的位置分布服从密度参数为& =
+的HPPPo由于MU与MBS以最近的连接方式关联，宏蜂窝网络的拓扑结构是PVT,
+如第3章中的分析【23-25],当负载低于MBS的接入容量时，MBS的小区负载分布为:
+(4-15)
+而MBS满载(％ =气)的概率为:
+(4-16)
+M。一 1
+如系统模型中所述，MBS的接入容量足以保证MU的基本覆盖，因此￡ PoW-lo 用0=0
+系统参数影响及实际网络指导：根据MBS和SBS的小区负载分布，一部分MU 将从MBS卸载到SBSO引理4.1以及公式(4-14)指出，卸载概率依赖于SBS的基站 高度和密度，以及协作距离门限和SBS缓存容量大小。当SBS的基站高度等于协作 距离门限时，SBS将不参与协作服务MU,所有MU将被MBS以最近BS关联方式 服务。随着SBS密度的增加、SBS高度的降低或者协作距离门限和缓存容量的增加, 更多的MU被卸载到协作SBS簇上。但是，随着SBS密度、协作距离门限和缓存容 量的持续增长或者是SBS高度的持续降低，SBS趋于重负载，甚至是满载，这种情 况下，被协作SBS簇服务的MU的服务质量将有所下降。
+4.4频谱效率分析
+为研究MU接收SINR的统计特性及所提协作机制对HetNets性能的影响，本节 以平均SE为性能参数，分析典型MU的链路传输速率。定义
+So = 1 (空协作 SBS 簇)HhoII2，	(4-17)
+十丄'	J
+则当MU被最近的MBS服务时，其平均SE表示为:
+练K"+SNQ灣％| ［产（恒。1）（=刊&
+Lo
+（4-18） 单位是nats/s/Hz0 （d）是根据文献［26］中的结果得到。劣（?）是变量X的Laplace变 换。类似的，当MU被协作SBS簇服务时，其平均SE表示为：
+
+
+
+定义平均用户SE为MU从MBS和协作SBS簇接收的平均SE,即:
+(4-20)
+4.4.1用户被MBS服务的平均频谱效率
+|xo,o|的统计特性
+根据MBS的HPPP建模，-0的p.为frQ （r） = 2泓0”-屿戶。根据路径损耗模 型（4-2）,国,0|的分布在不同区域不同。当 厲+丑强知 时，无线信号经历NLoS 和LoS的概率分别是1-P* （《祐+H須）和PW （侷+瑞）o令x/nl）, x/l）分别表 示典型MU接收NLoS和LoS信号时与其服务MBS之间的距离。则事件乂/阻）> % 等效于事件：r0>x且MU的服务MBS提供NLoS服务链路。因此，X（JNL）的累
+分布函数(Cumulative distribution function, cdf)是:
+勺NL) (x) = 1 -Pr{x° >x} = l-Pr{r0>x,最近 MBS 提供NLoS 服务链路}
+8
+I (1—Pr$)(j* +屬))2兀扁佰一"如％尸
+弓(件)(x)对X求导，可得到x/NL)的pdf为:
+
+类似的，当MBS服务MU的无线信号经历LoS时，X/L)的pdf为:
+
+
+
+
+当損+既〉如时，无线信号以概率1经历NLoS,令X。表示典型MU与其服 务MBS的距离，则X。的p序为：
+fx0 (x) = 2m)xexp (-兀守).	(4-24)
+从公式(4-22)-(4-24)可以看出，无线信号经历NLoS的概率随着BS高度的增长而增 加。
+So 和。的 Laplace 变换
+根据So的定义，在给定A条件下&的Laplace变换函数为:
+
+
+
+
+So-No)
+
+
+
+其中当信号经历NLoS时，（*）表示（NL）,而经历LoS时，（*）表示（L）。
+/0的统计特性分成两种情况分析:0 ＜ -0 w 如）2以及r0 ＞《（知）2-璟。 引理4.2 ?当0 ＜小W J（知）2 一毋时，在给定r0条件下”o的Laplace变换函数为:
+（M。	\
+後o，i（巾o）= exp -兀扁E Po㈣他血,屮0）,	（4-27）
+\	m= 1	J
+其中
+Mo,i （mj/o）=窍（祢°,秫,2弘思昧山",如）—实（祢功次,2弘,応以）滯）,《絲+璟［ + ：（客（必喝,3次思叫*知）—"必冰,3双,职绪）,如）） 2《絲+H?（窍（?oNL）,衍,3,m,酣次豊）,佐+願）、 一 3如［"（*m,3,qTX）&L）,扁姦）） 一多（忒喝,5《x）&nl）,知），
+（4-28）
+函数多（a/"2,"3，c,x）表示为：
+穿（a/i，"2/3，c,x） =? （1-2歹1（丄1,—号；1一 言-,
+?当r（）〉，（如）2 一瑞 时，/（）的Laplace变换函数为： （Mo	\
+^i0,2 （d^o） = exp I ttAq ￡ p0 （w） A）,2	r0） I ,
+其中
+Mo,2 （m,顷o）=燹（祢阻）,秫,2次,応以）&阻）,《幣+临）.
+证明：详细证明过程请见第4.7.1节附录。
+结合公式（4-26）, （4-27）和（4-18）,平均SE	可得到如以下定理。
+定理4.1考虑BS高度因素下，在支持缓存的HetNets中釆用所提的联合协作传输与 卸载机制，用户被最近的MBS服务的平均SE表示为：
+\/（d0,o） ~H0 8 -JT扁 L「0（,”）他]（"心）_ 2
++ j j 	—					（1—继）（4））奶好）（X）故	（4-32）
+0	0
+A/。
+8	8 —兀扁 ￡ Po（m）Mo,2（mJ，X）
++	[	/——— 		—（1 _缚'）（巾））丸况（了）&?
+证明：该结果可通过将公式（4-22H4-24）以及（4-26）代入（4-18）得到。	□
+系统参数影响戶实际网络指导:根据公式（4-26）44-32）,当最近MBS与典型MU 之间的距离小于《（如）2 —照时，缚L） ?博叫）以及NLoS的概率随着MBS高 度的增加而增加，从而导致（4-32）中前两项的减小。相同地，当勺〉J（知）2_瑞 时，第三项随着MBS高度的增加而减小。总之，当MU被MBS服务时，平均SE绥m 随着MBS高度的增加而下降。除此之外，从公式（4-15）可以看出，随着MBS密度的增加，MBS的小区负载递减，最终近似于零，即lim pQ（0） 1 o同时，MBS
+Aq~＞8
+与MU之间的平均距离逐渐趋于零，这种情况下，BS高度成为决定SE （练）性能 的关键因素。
+4.4.2用户被协作SBS簇服务的平均频谱效率
+与鸟⑴的分析一样，公式（4-19）中的Laplac e变换函数％”）和 鸟（。分两 种情况分析：0＜急＜由,。和貢 ＞如。
+引理4.3 S&的Laplace变换函数为
+（	Mk~l
+■^sk（z）= exp 一兀人& ￡1）皿四一1）
+\	nk=°
+x exp （-玖俄皿（Nk —% +1,的t） ￡	?一~
+?当 0 ＜ %k w dk,o 时，GJ；t（w,n）表示为：
+瓯,1（E）=缕（ag）,m,2/思t%l）%） _ 贫（诚 1）皿2/,矿礼1"血）
++普停（梦山,3,"以讐）必）—蜜（就）,妃,",职雄）,对）
+
+
+
+叫,2 （血/）= 筌（职皿2,”祁X）啞），如）-穿（就山,2,樹以衅）,为）
++饼（此）弘2,提以就心,对一多（啪）,心財以件）,如）
++ ：（多（此）",3,財叫笋）丄）“（理）网3,成以）世）,如））
+-務（穿（君％,3,機叫件）,坊）-维（砂侦3,花,职就）,为））
+（4-35）
+而当也〉dko时GJk （m,n）表示为：
+収3 （m/）=多（ocgL）,秫,2,"尸喝叫,欢）一纣砂阻）,m, 2/,尸"厶件）,h,
+（4-36）
+
+、皿,3 (网；,,Xk> dk、o，Hk 2 dk、o
+kg的Laplace变换函数为:
+%%(')= exP \-^k E Pk(mJ 四,m (旳)),
+'	\ mk=l	)
+?当0 <Xk《dk、o时，出仞“（吹）表示为：
+卩k,out,i （吹）=望（就）,晚,2,吹,用叫#）,如）-宪（涉U ，他,2,叫 咨膈） + | （或此）,晚,3,他祁板件）,如）一多（婚），叫3,%貯捋）,如）） -箫紈酣）,吹,3,旳祁X）爲NL）,对"时）次",吹,貯）&L）,对） 一空［"ND,以,2,他秘啓厶件）液。）
+（4-41）
+?当Xk > dk,0时，岫t M表示为：
+阪w,2（吹）=客（a阡，吹,2,叫凡叫4件成）.
+证明：详细证明过程请见第4.7.3节附录。	口
+系统参数影响及实际网络指导：根据引理4.2-引理4.4,无线信道特性（如 （4-4）,（4-5）所示，受BS高度Hk影响），影响Sk和Ik的统计分布的主要因素有协 作距离门限%k, SBS缓存容量Lk以及SBS密度屁。对于固定Hk和较小的Xk或 者固定Xk和较大为，候选协作SBS的所在区域和候选协作SBS的数量较小。随 着取增加或者诳减小，候选协作SBS的数量递增。但根据小区负载分布（4-11）, SBS将趋于重度负载状态，任意SBS参与协作的概率下降。总而言之，随着候 选协作SBS所在区域，即俱_璟,的变化，在候选协作SBS数量以及SBS参 与协作的概率之间存在均衡。而且，从公式（4-33）和（4-38）可以看出，随着缓存 命中概率以及SBS小区负载分布的变化，在任意SBS的协作概率板和干扰概率 （1 一臨E A+1） + ￡/*（彻* +1）（1—瓷务'）之间存在均衡。结合小区负载分 布（4-11）,还可以看出随着缓存容量和半径有二毎的变化，协作范围内SBS的& 和Ik存在均衡。
+结合务（0, %和公式（4-19），MU被协作SBS簇服务时的平均SE可得到 如以下定理。
+定理4.2考虑BS高度因素下，在支持缓存的HetNets中釆用所提的联合协作传输与 卸载机制，用户被协作SBS簇服务的平均SE表示为：
+烫s = j卩厂―岫）"_ 口厂叫如）（4-43） 其中
+—1	8	/	ijr \
+假（f） = （1 一勿）￡ Pk （mk + 1）	（.mk） + ￡ Pk （以 + 1） （ 1	） ^k,in （峰）
+mk=l	"Mk	'	以十丄丿
+稣
++ ￡ Pk （吹）催g （吹），
+mk=l
+（4-44）
+根据协作距离门限Xk的取值，四5 （以）和俄g （m，可分别替换成（4-39）, （4-41）和
+
+
+（4-42）0最后，a⑴的表达如下:
+妇
+m ￡ 以（以+1）叫（狄—％酷+1） 处=°
+与己有研究成果【15,27-29］对比，可以发现BS高度，SBS的缓存容量以及协作距 离门限是影响HetNets网络性能的关键参数。此外，根据（4-43）,随着SBS密度（兀） 的变化，在以.（，）和学（f）之间存在均衡。正如第2章所证明，存在最大化绥.的最 优SBS密度。
+4.5数值、仿真与分析
+本节针对两层HetNets展开数值和仿真结果分析与验证。MBS和支持缓存的SBS 在半径为5km的圆形区域内按独立HPPP分布。所有结果均基于10 MHz带宽额 和2 GHz的频率点。蒙特卡洛仿真结果通过1。4次遍历求平均得到。宏蜂窝网络 中的LoS因子和指数分别设置为滯）=10-W34和祢D =2.42【16〕。宏蜂窝网络中 的 NLoS 基于 Hata 模型（4-46）得到（％ > 30m）。
+［-101oglXNL） = 161.2-13.821og10/70	..	” “、
+< （NL）	，	'	（4-46）
+110站叫=44.9 - 6.551og10//0
+低功率小小区网络中的NLoS根据Walfish-Ikegami模型得到（％ > 20 m）。
+(-101og10A；NL) = 160.4-181og10(l +H])
+[10afNL) = 38
+低功率小小区网络中的LoS根据文献［16］设置。若没有特殊提及，具体的仿真参数 如表4-1所示。
+4.5.1基站高度的影响
+图4-2展示了BS高度的影响，从图可以看出，理论分析结果与蒙特卡洛仿真结 果吻合，证明了理论分析结果的正确性。另一方面，平均用户SE随着BS高度的降 低而下降。特别的，随着SBS高度的增加，由协作SBS簇提供的平均SER,不断降 低而由MBS提供的平均SE%不断提升。对于卸载概率，MBS的高度变化对卸载
+表4-1 第四章系统仿真参数
+系统参数	参数值	系统参数	参数值
+扁,入1,兀	　　]	3	5
+兀50。2'兀50。2，兀50。2	^TX),料以)	37 dBm, 30 dBm
+32, 32,150 m		4, 4,50 m
+如％	0.3 km , 0.1 km	此滯)	2.42, i°T0?34
+勇十)	2.09, 10-2.38	", Xi	200, 50, 0.8
+（y2	-104 dBm （10 MHz 带 宽）
+
+
+
+概率没有影响，而卸载概率随着SBS高度的增加而递减，平均用户SE和卸载概 率的递减是由于BS上的固定发送功率和所采用的路径损耗模型。设置越高的SBS 高度，SBS的服务小区范围不断缩小，更多的MU趋于被MBS服务，因此绥汗不断 降低。
+4.5.2协作距离门限的影响
+图4-3展示了平均SE与协作距离门限％1的关系，其中蓝色实线表示平均用户 SE绥，红色虚线表示平均SE/，绿色点线表示平均SE阕m从图可以看出，对于不 同的SBS高度，总存在最大化平均SE的最优协作距离门限为，而卸载概率随着为 的增加而递增。当％】等于SBS高度时，即SBS服务范围为0,不能协作卸 载和服务MU,所有SBS处于零负载状态，MU被MBS服务。随着为增加，协作候 选SBS的所在区域变大，协作候选SBS的数量增多，因此，更多的MU被卸载到协作SBS簇上，以此同时，SBS的小区负载变重，反过来又降低了协作候选SBS参与 协作的概率。因此，随着为的增加，MU上接收的信息信号强度先增后减，而SBS 产生的干扰却在不断变严重。当％1足够大时，SBS几乎以概率1处于满载状态，这 种情况下，平均SE和卸载概率基本保持不变。图4-3验证了第4.4.2节中的理论分析, 即在协作候选SBS数量和SBS参与协作的概率之间存在均衡关系，过重的卸载将会 降低平均SE,不利于网络容量的提升。
+
+
+Tf一用户的最大总频i普效率R
+N工&二 q)
+0.05
+0.2
+小功率基站高度H1 (km)
+
+为进一步研究SBS高度对最佳协作距离门限为的影响，图4-4展示了最佳为 与SBS高度的关系。可以看出，随着SBS高度的增加，最佳为先增后减，而最大平 均用户SE绥和卸载概率随着SBS高度增加而递减。这是因为随着SBS高度的增加, 由协作SBS簇提供的平均SE久不断下降而由MBS提供的平均SE练不断提高。 因此，缩小协作候选SBS的所在区域能降低卸载概率，从而提供更好的SE性能，正 如图4-4中的星线所示。
+4.5.3缓存容量的影响
+
+
+
+为研究SBS缓存能力的影响，图4-5展示了 SBS缓存容量&对平均SE的影响, 其中蓝色实线表示平均用户SE阕，红色虚线表示平均SE/,绿色点线表示平均SE 场小结果显示，卸载概率随着SBS缓存容量的增加而递增，设置合适的协作距离门 限，存在最大化平均用户SE （烫）和协作SBS簇提供的平均SE （跖）的最佳缓存 容量。当协作距离门限的设置为250m和500m时，SBS处于轻度负载状态，勇随 着Li的增加而增长，最终收敛于最大值。但当Zi = 500m时，阕关于烏是一个单峰 函数，这是由于斑的增长量先大于、后小于％的减小量。因此，平均用户SE先 增后减。随着协作SBS所在区域的扩张，如Zi = 750m,名先由于SBS处于中度负 载而提升，后由于SBS处于重度负载而下降，这种情况下，SBS参与协作的概率以 及累积信息信号强度随着妇的增加先增后减，而累积干扰信号强度随着妇的增加 一直保持增长，从而导致名是关于乙1的单峰函数。由于可以看出，若协作距离门 限太大，随着缓存容量的增大，MU区域从最近的MBS卸载到距离较远的SBS簇, 从而导致SE的下降。综上所述，可以从图4-5得到结论：SBS上的最佳缓存容量与 协作距离门限为的设定密切相关。
+4.5.4基站密度的影响
+图4-6展示了 SBS密度对平均SE的影响，其中蓝色实线表示平均用户SE绥, 红色虚线表示平均SE/,绿色点线表示平均SE阕u结果表明，协作SBS簇提供 的平均SE （绥3）与SBS密度呈现出单峰曲线的关系，即存在最大化绥-的最佳SBS 密度。部署越密集的SBS,越多的MU将卸载到SBS上，最终所有MU都将被SBS 服务，如右图所示。因此，由MBS提供的平均SE （阕”）逐渐减小，最终为零。对 于《，其首先提高的原因是随着SBS密度的增加，更多的SBS参与协作，从而导致 累积信息信号强度的提升。但是由于协作距离的限制，累积信息信号强度的增加最 终达到其极限，而E由于累积干扰信号强度的不断增加而下降。最终，通信链路处 于干扰受限场景下，平均SE基于保持不变，图4-6验证了定理4.2中的理论分析。
+
+
+根据所提的联合协作传输机制和协作SBS成簇，SBS的密度影响协作SBS的数
+
+
+量和干扰SBS的数量，进一步影响了最佳距离门限为的设定。图4-7展示了最大绥 以及最佳Xi与SBS密度的关系。从图可以看出，最佳Xi随着BS密度的增加减小, 最终保持一个比SBS高度大的最小值。这是由于SBS部署越密集，需要越小的协作 距离门限来维持累积信号强度，并同时减小SBS负载从而降低累积干扰信号强度。
+4.6 本章小结
+在考虑BS高度和无线信号传播的NLoS与LoS影响下，本章研究了支持缓存 的HetNets中的联合协作传输与业务卸载。提出了一个MBS辅助的、基于缓存内容 和BS高度联合感知的协作传输机制，通过从MBS上卸载部分MU到SBS上来提高 网络SE。采用3GPP概率路径损耗模型，基于随机几何理论，建立了一套新的、准确 的网络频谱效率分析建模方法，分析结果表明在所提协作传输机制下，釆用修正的 COST路径损耗模型，1）平均SE随着BS高度的增加而下降;2）最大化SE的最佳缓 存容量随着协作距离门限的增加而减小；3）最佳协作距离门限随着SBS密度以及高 度的增加而减小。本章结果表明协作SBS簇能提升网络频谱效率，但由于有限的BS 接入容量，重度负载的协作SBS簇反而会减小SE的提升。更重要的是，在SBS重 度负载情况下需要考虑、研究宏蜂窝网络和小小区网络之间的负载均衡问题。
+本章研究分析结果与国家863计划项目“5G无线密集网络构架与关键技术研发” 中的动态流量卸载方案相呼应，从理论的角度分析了异构融合基站及协作对异构网
+络间流量卸载和网络频谱效率的影响，为异构BS协作与异构网络间业务卸载提供理 论指导，基于所提协作方案，863项目组对异构基站间的协作与卸载提出了具体的协 议栈设计与实现方案，结果表明进行动态流量卸载比无流量卸载方案有明显优势。
+4.7附录
+4.7.1引理4.2证明
+当0 ＜十W《00,0）2 -願 时，/o的Laplace变换函数为:
+
+
+
+其中（e）是根据路径损耗模型（4.2）得到。如前讨论，干扰MBS与典型MU之间的 信道衰落增益服从参数为秫和1的Gamma分布，且MBS以概率E p0H 干扰典 m=l
+型MU-因此，（4-48）可重新计算为：
+
+x exp <
+峋	\!(弟《_H*
+—2丸扁 ￡ Po (m) I
+m=l
+X
+尸0
+oo
+必+璟
+如
++導瑯(土碣-磐
+xdx
+x exp <
+M0	/
+一2兀扁 ￡ Po (m)
+航=]	I
+(1-
+
+JUo,o)2-理
+忒寸+疏)-
+xdx,
+(4-49)
+
+其中第一项积分结果为:
+饼(骨),秫,2,m思以)滯),如)_會(o^\m,2,m,P^X)A^,击+瑞
+(4-50)
+
+第二项积分结果为: 捉(忒膈,3,岫叫肾妃—^^绊何膈,3,皿叫部而珂.
+0，°	(4-51)
+最后一项积分结果为：
+，2 —多(必叫,2爵思叫壯),如)?	(4-52)
+将公式(4-50), (4-51)和(4-52)插入(4-49),当 0 < 尸。W 而席奇时，Zo 的 Laplace 变换函数可得到如公式(4-27)o
+
+当尸0 > J(知)2 一 7/須时，1°的Laplace变换函数为:
+4.7.2 引理4.3证明
+
+
+
+
+其中（T）根据路径损耗模型以及SBS参与协作的概率为何。由于||h侬全|販』；服 从Gamma分布「㈣-％」），对皿低求均值为耳仇版广方］=如小广咬。因此，采用 （4-50）和（4-51）相同的分析步骤，Sk的Laplace变换函数可得到如（4-33）。
+类似的，当为< dk,0 < %k时，五& （。中的积分分为两部分: 和（/（4。）2-硃底司）。区域（0,而了二展）内的信号分别以概率贋座 和（1 — ^^^）经历NLoS和LoS。而在区域（\/（4,。）2一//3"才—禺）以内以 概率1经历NLoSo釆用（4-50）和（4-51）相同的操作并作进一步分析，Hk < d* < %k
+下我的Laplace变换函数可得到如（4-35）。当dky0 <Hk<%k时，所有信号以概率1
+经历NLoS,因此我冷分析得到如公式（4-36）。
+4.7.3引理4.4证明
+1 的分析可根据忽简单扩展得到：1）令干扰概率（1-以）% + ■"	mk=l
+￡ P以欧）（1-喲替换协作概率饥，2）用甞替换黯，3）应用干扰信道衰 务血~「（吹,1）。
+
+Mk	J(%) -Hl /X2+H2	]
+-2巩:￡ Pkg)			　　A
+x exp <	mk=}				I
+/		「P(TX)E	T2
+X	1-E.	||2		jcdx
+1 1	瞄』2		z
+
+采用(4-49)相同的计算步骤，(r)的表达式可得到如公式(4-40)o
+当Xk > dk.o时，在区域绍。为0以外的干扰信号只经历NLoS,因此NLoS以概 率1存在于%顷(')的积分空间内。Xk> dk,°内的具体分析可通过(4-55)相同的计 算步骤得到。
+参考文献
+[1]Li X, Wang X, Li K, et aL Collaborative multi-tier caching in heterogeneous networks: Modeling, analysis, and design[J]. IEEE Transactions on Wireless Communications, 2017} 16( 10): 6926-6939.
+[2]Zhou Y Yu F R, Chen J, et al. Resource Allocation fbr Information-Centric Virtualized Heterogeneous Networks with In-Network Caching and Mobile Edge Computing[J]. IEEE Transactions on Vehicular Technology, 2017, 66(12): 11339 - 11351.
+[3]Chen Y Ding M, Li J, et al. Probabilistic small-cell caching: Performance analysis and optimization [J]. IEEE Transactions on Vehicular Technology, 2017, 66(5): 4341T354.
+[4]Zhang S, Zhang N, Yang P, et al. Cost-Effective Cache Deployment in Mobile Heterogeneous Networks [J]. IEEE Transactions on Vehicular Technology, 2017, 66(12): 11264 一 11276.
+[5]Han B, Wang X, Choi N, et al. AMVS-NDN: Adaptive mobile video streaming and sharing in wireless named data networking[A]. // IEEE INFOCOM Workshops[C]. Turin, Italy: IEEE, 2013: 375380.
+[6]Chen Z, Lee J, Quek T Q S, et aL Cooperative caching and transmission design in cluster-centric small cell networks [J]. IEEE Transactions on Wireless Communications, 2017, 16(5): 3401-3415.
+[7]Liu A, Lau V K. Cache-enabled opportunistic cooperative MIMO for video streaming in wireless systems[J]. IEEE Transactions on Signal Processing, 2014, 62(2): 390—402.
+[8]Wen W, Cui Y, Zheng F C, et al. Random Caching Based Cooperative Transmission in Heterogeneous Wireless Networks[J]. IEEE Transactions on Communications, 2018, PP(99): 1-1.
+[9]Golrezaei N, Shanmugam K, Dimakis A G, et al. Femtocaching: Wireless video content delivery through distributed caching helpers[A]. // Proceedings on IEEE INFOCOM[C]. Orlando, USA: IEEE, 2012: 1107-1115.
+[10]Ba§tug E, Bennis M, Kountouris M, et al. Cache-enabled small cell networks: Modeling and tradeoffs^]. EURASIP Journal Wireless Communications and Networking, 2015, 2015(1): 41.
+[11]Yang C, Yao Y Chen Z. Analysis on cache-enabled wireless heterogeneous networks [J]. IEEE Transactions on Wireless Communications, 2016, 15(1): 131-145.
+[12]Haenggi M. Stochastic Geometry for Wireless NetworksfM]. Cambridge, U.K,: Cambridge Univ. Press, 2012.
+[13]Zhang N, Zhang S, Wu S, et al. Beyond coexistence: Traffic steering in LTE networks with unlicensed bands[J]. IEEE Wireless Communications, 2016,23(6): 40-46.
+[14]Wang X, Chen M, Taleb T, et al. Cache in the air: Exploiting content caching and delivery techniques for 5G systems[J]. IEEE Transactions on Communications, 2014, 52(2): 131-139.
+[15]Ding M, Wang P, Lopez-Perez D, et al. Performance Impact of LoS and NLoS Transmissions in Dense Cellular Networks[J]. IEEE Transactions on Wireless Communications, 2016, 15(3): 23652380.
+[16]3GPP. TR 36.828 (VI 1,0.0): Further enhancements to LTE time division duplex (TDD) for downlink-uplink (DL-UL) interference management and traffic adaptationfR]. Valbonne-FRANCE: European Communities, EUR, 2012.
+[17]Spatial Channel Model Text Description[R]. http://ftp://www.3gpp.org/tsg_ran/WGl_RLl/3GPP_ 3GPP2_SCM/ConfCall- 16-20030417/SCM^ 134%20Text%20v5.0.doc.: Spatial Channel Model AHG (3GPP), 2003.
+[18]COST Action 231. Digital mobile radio towards future generation systems, Final report[R]. Belgium: European Communities, EUR, 1999.
+[19]ITU-R.300MHZ至100 GHz频率范围内的短距离室外无线电通信系统和无线本地网规划所 用的传播数据和预测方法[R].日内瓦：ITU, 2010.
+[20]Jindal N, Andrews J G, Weber S. Multi-Antenna Communication in Ad Hoc Networks: Achieving MIMO Gains with SIMO Transmission^]. IEEE Transactions on Communications, 2011, 59(2): 529-540.
+[21]Li C, Zhang J, Andrews J G, et al. Success Probability and Area Spectral Efficiency in Multiuser MIMO HetNets[J]. IEEE Trans. Commun, 2016, 64(4): 1544-1556.
+[22]Liu G, Ma Z, Chen X, et al, Cross-layer Power Allocation in Non-Orthogonal Multiple Access Systems for Statistical QoS Provisioning]J]* IEEE Transactions on Vehicular Technology, 2017, 66(12): 11388 - 11393.
+[23]Ferenc J S, Neda Z. On the size distribution of poisson voronoi cells[J]. Phys. A: Stat. Meeh. AppL, 2007,385(2): 519-529.
+[24]Kiang T. Random fragmentation in two and three dimensions[J]. Zeitschrift fur Astrophysik, 1966, 64: 433T39.
+[25]Wu H, Tao X, Zhang N, et al. On Base Station Coordination in Cache-and Energy Harvesting- Enabled HetNets: A Stochastic Geometry Study [J]. IEEE Transactions on Communications, 2018, PP(99): 1-1.
+[26]Hamdi K A. A Useful Lemma fbr Capacity Analysis of Fading Interference Channels[J]. IEEE Transactions on Communications, 2010, 58(2): 411-416.
+[27]Robert W H, Kountouris M, Bai T. Modeling Heterogeneous Network Interference Using Poisson Point Processes [J]. IEEE Transactions on Signal Processing, 2013, 61(16): 4114-4126.
+[28]Dhillon H S, Ganti R K, Baccelli F, et al. Modeling and analysis of k-tier downlink heterogeneous cellular networks[J], IEEE J. Sei. Areas Commun., 2012, 30(3): 550—560.
+[29]Mukheijee S. Distribution of downlink SINR in heterogeneous cellular networksfJ]. IEEE J. Sei. Areas Commun., 2012, 30(3): 575—585.
+
+
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.
+第五章 基于协作的HetNets物理层安全覆盖与安全容量研究
+本论文前三章以CoMP提高HetNets网络覆盖或容量为目标，研究结合无线新 技术或考虑差异化基站高度场景下的异构协作。以提高网络安全覆盖和安全容量为 目标，本章将研究HetNets中基于异构协作的物理层无线信号安全传输。以安全中断 概率以及安全传输速率为系统安全性能衡量参数，首先分析了 HetNets的无线安全 覆盖性能，然后，为进一步提高无线信号的安全传输，提出了一种多干扰节点协助 (jamming assisted)的安全传输机制，通过动态多点协作，在窃听者的方向协作发送 干扰信号，弱化窃听者的信道质量，从而提高无线信号的安全传输速率。
+5.1引言
+由于HetNets更加开放的无线网络架构，其无线安全问题比传统蜂窝网络更加严 重⑴。并且，大量行业化应用中的敏感、机密信息将通过无线渠道传输，因此，提供 高保障性的数据安全服务是HetNets、乃至5G系统设计和实施的首要任务之一已叫 基于信息理论安全的物理层安全技术能为无线安全通信提供第一道防线。CoMP技 术作为物理层传输技术的一大关键，其引入能提高HetNets物理层的无线安全覆盖与 安全传输数据率。因此，研究HetNets的基于异构协作的物理层安全，包括网络的安 全覆盖和安全容量的分析与优化，能为HetNets实现无线信号的安全可靠传输和接入 提供理论指导。
+近几年在大规模随机系统中的物理层安全传输研究逐渐增多宀9】。［4］定义了 本质(intrinsically)安全通信图并分析了点与邻点之间的最大安全速率。［5］则关 注网络中部分MU作为窃听者时，任意下行链路传输的可达安全速率。在考虑多小 区massive MIMO系统的安全通信时，［5］釆用匹配滤波器预编码和AN来提高安 全通信性能，并得到了遍历安全速率的紧致下界以及安全中断概率(Secrecy outage probability, SOP)的紧致上界。［7,8］研究随机分布的基站同时发送保密信号给多 个MU场景下的安全通信，即广播信道下的安全通信。
+以上研究工作大多集中在点到点或者多小区通信场景，关于HetNets系统的安 全研究较少。本章首先研究HetNets中的安全覆盖性能，MU与基站釆用DPS方式 关联：MU总是选择与提供最佳安全通信质量的基站连接。为保障无线链路的有效性并降低基站选择的复杂度，只有在MU 一定范围内的基站才能为MU提供安全连 接服务。基于随机几何理论，分析了任意MU在单层同构无线网络(Homogeneous networks, HomNets)以及两层 HetNets 中的 SOP。
+为了进一步提高HetNets的安全传输速率，物理层先进的传输技术，包括多天线 技术n°，E, AN技术［6,12-成，以及协作干扰技术［16-25］等能通过提高主信道质量或 者降低窃听信道质量实现物理层的信息安全传输。已有文献中关于采用协作干扰来 提高安全通信性能卩6,17,19一24,26,27］的研究基本是单个干扰节点协助或者相互独立的多 个干扰节点协作通信。考虑到HetNets的大规模、分布式特性，异构网络之间独立运 行，且各网络实体倾向于制定独立的、自私的决定，本章第二部分将研究自私干扰节 点辅助的物理层安全增强技术，在多输入单输出多天线窃听(Multi-inputsingle-output multi-antenna eavesdropper, MI SOME)场景下，多个干扰节点根据自身的CSI以及窃 听者的CSI或者信道分布信息(Channel distribution information, CDI)形成协作干扰 簇，联合设计虚拟BF发送AN信道干扰窃听信道。基于Stackelberg博弈模型，将干 扰节点和合法发送BS建模为博弈对手，建立了单领导(leader) -多跟随(follower) 的博弈问题，BS目标在于以最小的代价获取最大的安全传输速率，而干扰节点的目 标在于以获取最大的收益帮助基站干扰窃听者。基于此博弈模型，理论优化协作干扰 节点和BS的发送功率，从而最大化了安全传输速率。分析结果表明，所提的安全协 作机制和博弈优化模型能以非常小的复杂度获取与集中式算法非常接近的安全性能。
+5.2基于动态节点选择的物理层安全传输分析
+5.2.1系统模型与假设
+本节分别考虑单层HomNets以及两层HetNets T行链路的安全传输性能。所 有BS和MU均配备全向性单天线。HomNets中只包含一种类型的BS,而HetNets 中包含两层部署密度不同、发送功率等不同的异构BS。
+网络部署模型：HomNets和HetNets中所有BS、合法MU以及非合法MU的位 置分布服从独立HPPP。根据Slivnyak定理郞1,典型的合法MU位于坐标原点。具 体的数学表达符号如表5-1所示。合法MU以及非合法MU的位置信息和CSI均可 通过BS之间的信息交换被所有BS获得。HetNets中各层BS采用不同的RAT,工 作在不同的、相互正交的频段上，因此不存在层间干扰。HomNets中的所有BS以 及HetNets中每层网络的BS均可采用该层所有的频率资源。在每个BS小区内釆 用OFDMA服务所有关联的MU以避免小区内干扰。
+表5-1第5.2节关键系统参数的数学表达
+HomNets和HetNets中第上层基站的分布，A： — 1,2
+为,M	HomNets和HetNets中第k层基站的密度，k = 1,2.
+p(TX),	HomNets和HetNets中第k层基站的发送功率，k = 1,2.
+MU和窃听者的分布模型
+MU和窃听者的分布密度
+w	HomNets的总带宽
+Wk	HetNets中第k层网络的总带宽
+X	HomNets 中 DPS 门限
+tk	HetNets中第A层网络的DPS门限
+a	路径损耗指数
+p	安全中断门限
+a2	热噪声功率
+
+无线信号传播模型：无线信号的传播采用标准的路径损耗模型，路径损耗指数 为a(a2 2)。BS发送功率固定，且每层网络BS发送功率不同。加性高斯白噪声的 功率为。2。由于本节侧重研究网络拓扑结构对安全传输的影响，因此不考虑小尺度 衰落或者阴影衰落等的影响。小区间的干扰可通过合理的频率规划所消除，因此本 节不考虑干扰因素的影响。
+用户与小区关联：所有非合法MU不合谋，离每个BS最近的非合法MU视为 该BS的无线信号窃听者。合法MU根据自身的位置信息以及CSI信息动态选择, 与提供最大安全传输速率的BS相关联。为保证无线链路的传输有效性，并降低合 法MU在全网选择服务BS的开销，引入一种合理的BS选择限制方案：只有为MU 提供的RSS超过给定信号接收功率门限的BS才能成为MU的候选服务BSo HetNets 中由于不同层BS为M U提供的服务质量(Quality of service, QoS)不同，每层网络 釆用独立的、不同的信号接收功率门限。令BSk,i表示两层HetNets中第上层网络的 第Z个BS,定义柘?为基站BS、]与典型合法MU的距离，则典型合法MU的候选BS 需满足以下不等式：
+铲％。2 %	(5-1)
+其中化是预先定义的第化层网络的接收信号功率门限。换言之，所有候选服务BS 需位于以原点为圆心，半径为従0=(話) 的圆形候选区域囹(0,玖,0)内。如 图5-1所示单层HomNets,典型合法MU位于坐标原点，三角形表示BS,在红色虚 线圆形区域内的红三角为典型合法MU的候选服务BS。以原点为圆心，半径为％],。
+99
+
+(绍(O,%i,o))的圆形区域定义为候选服务区域。
+2500
+2000
+1500
+1000
+500
+0
+-500
+-1000
+-1500
+-2000
+-2500
+-2500 -2000 -1500 -1000	-500	0	500	1000	1500	2000	2500
+图5-1 单层HomNets中候选基站选择示意图
+因此，典型合法MU与基站BSk,i相关联时能获得的最大安全速率为：
+% = max ｛欧.-战,0｝
+= max"s,,｝傳跋(1 +冬弓令g2 (1 + 字))，。｝，
+(5-2) 其中R%和R&分别是基站BSkj提供连接服务时，典型合法MU和窃听者上的可达 遍历速率。x k,i ^argminUx-^JI是基站8S妇的窃听者到基站妇的距离。N妇?表 示与基站BS、i相关联的亩有合法MU数量，即基站BS、i的小区负载。强的分布跟 基站的小区大小A妇相关。根据基站关联限制(5-1),典型合法MU从第化层网络以 及整个异构网络上实现的最大可达安全速率分别表示为：
+Q= 嚙 ％,	(5-3)
+Xk,3k，Pk Xk,^Tk
+C5 = maxCf
+k=l,2
+100
+
+由于窃听者是离基站BSk i最近的非合法用户，Xek,i的pdf为
+專（X）= 2吼＞ 0.
+基于以上系统模型和假设，首先分析HomNets中的安全传输性能。
+5.2.2单层同构网络安全覆盖分析
+在HomNets中，由于只有一层基站，典型合法MU上的最大安全速率（5-4）可表 示为：
+Cs = max Rf
+
+
+
+由于HomNets中BS的分布服从密度参数为M的HPPP, BS的小区尺寸（&.）的 分布可采用Gamma分布来拟合⑵"]：	°
+必）=潔＞厂3.泌	（5-7）
+因此，在给定小区尺寸A,?的条件下，与一个BS相关联的合法MU的数量为〃的概 率为：
+Pr"N = n\Aj]=（雄）exP （-為厶，）?	（5-8）
+定义SOP为合法MU上的最大安全速率低于安全门限。（0 2 0）的概率，因此典 型合法MU的SOP表示为：
+
+
+Pout=Pr\Cs <^]=Pr
+max R' ＜P 叼￡中,尸（以）尤「。海
+(5-9)
+101
+
+
+
+
+
+安全终端概率的下届分析
+令M表示满足条件（5-1）的BS数量，即M个BS位于半径为%0 =（零）的 区域绍（0,知）内。则（5-9）可重新表示为：
+max V §
+:	-I	（5-10）
+= Pr[M = 0]+￡ Pr[M = m]Pr （J 足 ,
+"2=1	_
+其中第一项表示当没有BS满足5-1时，合法MU一定处于安全中断状态。基于此结 果，可以分析得到HomNets中SOP的下界。
+
+定理5.1在单层HomNets中，合法MU的SOP的下界为 在會(0,X°)内存在BS时，与最近的BS相关联总是一个可能的方案，但并不一定是 最佳的BS,因此P麻＜0］是SOP的一个上界。
+
+定理5.2在单层HomNets中，合法MU的SOP的上界为
+oo
+Pout < 厂威妬 + ￡ V 3) & S), 0 2 0,
+71=0
+其中
+
+
+
+证明：详细证明过程请见第5.5.2节附录。
+与推论5.1类似，令T t-8(x°T8),可得到当在整个平面选择最佳BS时 的SOP上界。
+推论5.2当合法MU将在整个二维平面上动态选择服务BS时，HomNets中合法MU 的SOP上界表示为：
+23+1)。	, 、
+小兀 2F^v(〃)
+餌=0 A +兀2
+系统参数影响及实际网络指导：从公式(5-13)和(5-16)可以看出当在整个二维 平面选在最佳关联基站时，SOP随着路径损耗指数a的增加而递减，也就是说可高 路径损耗环境下能实现更好的信息安全传输。
+数值、仿真与分析
+本小节对HomNets中的安全性能的分析结果进行仿真分析。具体的系统参数值 如表5-2所示。
+表5-2 HomNets网络的SOP仿真参数值
+冲),z	37dBm, Z = l/(^5002)	a2	-104dBm
+4	A = 5/(^5002)		A =0.1/(^5002)
+a	4.28	p	IMbits/s
+W	10MHz
+
+103
+
+
+
+
+
+从图5-2,图5-3和图5-4可以看出SOP的仿真结果在理论分析的上、下界 中间。图5-2中「的取值为-85dBm?25dBm,即候选BS的所在区域半径大约 为0(m) <z0< 1600(m)o随着r的增加，图中上、下界逐渐收敛于仿真SOP,即随 着候选BS所在区域的缩小，理论分析的上、下界逐渐收敛于准确的SOPo还可以看 出，当z低于一定值时，SOP基本保持不变，而当c大于此值时，SOP快速增长。 这是由于当t低于此值时，合法MU总是选择全局最佳BS,而随着c的增加，合法
+MU逐渐选择次优BSo这为异构网络中合法MU对安全BS的动态选择提供了一个 实际指导：为了提供较好的安全传输性能，候选服务BS所在区域的半径应大于某个 门限值。图5-3和图5-4展示了安全中断门限与非合法MU密度；le的影响。可以看 出，SOP随着非合法MU密度的增加而增加。当非合法MU密度足够高时，将完全 不能实现信息的安全传输。
+
+
+
+
+-=-60dBm
+图5-4 HomNet:非合法用户密度对SOP的影响
+阶至S二-谷根?
+臺罗一*
+
+从图5-2到图5-5可以看?出，当合法MU在全网选择最佳服务BS时，SOP随着 路劲损耗指数的增高而下降，这与推论5.1和推论5.2中的理论分析一致。
+5.2.3两层异构网络分析
+两层HetNets中合法MU的SOP为:
+
+其中(a)是由于两层BS的独立HPPP建模。
+如第5.2.2节分析，第k层网络的SOP与小区尺寸有关。但是HetNets中的小区 尺寸分布比HomNets的分析更加复杂，因此在分析SOP之前，先分析HetNets中小 区尺寸的分布。
+小区尺寸的分布特性
+HetNets中MU可能选择一个较远的高发送功率BS而不选择一个较近的低功 率BSo因此HetNets的网络拓扑是加权PVT^U。加权PVT中小区尺寸的pdf可通 过Gamma分布拟合，PVT是加权PVT在?JTX) = *诙)或者k = l时的特例。
+引理5.1在两层HetNets中，第化层网络中BS的平均小区尺寸为:
+瓦=宀
+L c馬
+i=i
+证明：具体证明请见文献［31］。对于MU,两层HetNets等下与密度参数为￡ 沾
+i=i
+的单层HomNets0詩妃的MU与第&层网络的BS关联。从而在相对较大的区域内, 第k层网络的平均杲区大小为(5-18)o	□
+采用Gamma函数拟合，第上层网络中BS小区尺寸的分布为:
+f /_、_K—exp(—z/缶) 久⑵―z	epg '
+其中(%冷是Gamma分布的关键参数。4的均值和方差分别为：E(*Q =顔& =亙 和Var(Ak) = K戒。a和缶是发送功率和BS密度的函数，即成(於丁气由=璀,, 缶(支气&3= 1,2,...*)。则(5-19)重新表示为：
+(K \ Kk ( L 汕 \
+(Kk I c几丿 exp -	- Kkz I
+"V _zl (5-20)
+Kk的取值可通过仿真得到Di】。文献［31］给出了两层HetNets中的Gamma参数的分 析过程。发送功率的比例为勺=10占2 = 1,路径损耗指数为a =4。第一层和第二 层BS小区尺寸的分布特征参数为：
+
+
+
+安全中断概率的上下界分析
+根据以上小区分布特征，可分析得到两层HetNets中SOP的上、下界。
+
+
+将公式(5-28)和(5-30)带入(5-17), SOP的上界得证。
+当不考虑(5-1)限制时，合法MU的SOP的上、下界如下推论 推论5.3两层HetNets中，当合法MU在这个网络中查找最佳服务BS时，SOP的
+表5-3 HetNets网络SOP仿真参数值
+37 dBm, 1/350()2)	矽X), M	27 dBm, 5/(7r5002)
+A = 5/(tc5002)	K	久=0.1/35002)
+a	4.28	6	1 Mbits/s
+W}.W2	10MHz
+
+
+
+2	8
+EL
+*=1"=°丸2
+数值、仿真与分析
+本小节对两层HetNets中的安全性能的分析结果进行仿真分析。具体的系统参数 值如表5-3所示。首先需要分析HetNets中小区大小的拟合Gamma分布(Eq. (5-20)) 中的参数0 根据公式(5-21),可得到拟合参数％和k2分别为& = 5.9431 和七=2.6414.
+
+
+图5?6 两层HetNets: 对SOP的影响
+钟变云二-0根
+
+r^^—SOdBm
+"=-80dBm, r2=r1+20dBm
+祭yy
+50	60	70	80
+Me
+图5-7 两层HetNets:基站密度、窃听密度比对SOP的影响
+图5-6和图5-7展示了 tpt2以及冬对SOP的影响。图5-6结果展示了与HomNets 中相同的现象，即当c大于某一值时,’SOP快速增长。从图5-7可以看出，网络安 全性能可通过部署更多的低功率BS,如室外picoBS和室内femto BS,实现。结合 推论5.1和推论5.2中的分析结果，可已得出：HetNets中的安全性能可通过在高路径 损耗环境下部署低功率BS实现。从这两个图还可以得到看出，第2层网络设置较低 的攻，能降低SOP,这就意味着低功率BS设置较低的接入门限能提高HetNets网络 的无线传输安全性能。
+5.2.4小结
+基于随机几何理论，本节给出了 HetNets物理层安全传输性能分析方法。分别 针对单层HomNets和两层HetNets网络中，基于DPS的安全基站关联方案，同时考 虑到无线链路的有效性和基站选择的复杂度，提出了基于RSS的BS选择限制方案。 基于所提的方案，以SOP为性能衡量参数，分析了分析了任意位置MU的SOP上、 下界。结果表明SOP性能随着路径损耗指数的增大而递减，即高路径损耗环境下的 无线通信更安全。更进一步地，低功率BS或AP设置较低的RSS门限能提供更安全 的无线传输。
+
+图5-8 MISOME下行窃听信道模型，存在M个干扰协助节点 夕=｛，〃｝
+
+5.3基于协作干扰的物理层安全增强研究
+为进一步提升网络的物理层安全传输性能，本节研究MISOME窃听信道中基 于协作干扰的物理层安全增强。多天线BS发送保密信息的同时发送AN降低窃听 信道质量，而随机分布的自私干扰节点根据自身CSI以及窃听者的CSI或CDI形成 协作干扰簇以及虚拟天线阵列，在窃听者方向发送干扰信号干扰窃听者。为了最大 化安全速率，本节首先建立BS与协作干扰节点之间的Stackelberg博弈，然后分析 Stackelberg均衡点的解，包括发送功率以及干扰节点的要价。仿真结果表明所提的 协作干扰机制能在节省更多的能量的同时极大地提高系统的安全性能。
+5.3.1系统模型与问题描述
+网络模型与信道模型
+本节考虑配有Nb （三2）根天线的基站BSq与单天线合法MU UEq之间的保密信 息传输，同时存在一个配有院（<阿根天线的窃听者Eve,如图5-8所示。BS。同时 发送保密信息信号与AN信号，其中AN信号用于降低Eve的信道质量。空间随机分 布的单天线节点/ = S｝ （|/| =	粉）是潜在的协作干扰节点。所有干扰节点
+根据实际信道情况被部分选择或者全部选择，通过发送干扰信号来干扰窃听者，并 根据所作贡献向BSq索取相应报酬。无线信号传播同时考虑标准的路径损耗和小尺 度衰落。标准路径损耗模型为l（d）=d-a,其中d表示发送-接收之间的距离，a>2
+ill 表示路径损耗指数。首先，考虑RS。和协作干扰节点巳知Eve的CSI的场景下的安 全增强问题（第5.3.2节）。然后在第5.3.3节考虑只有Eve的CDI已知场景下的安全 问题①。BSq已知干扰节点的CSI②。令h ￡。成、8和He e 表示BS0与UE0 以及BSq与Eve之间的信道因子。虬站C 表示第m个干扰节点与Eve之间的 信道因子。信道参数的元素是3.W的、均值为0,方差为1的复高斯随机变量。
+BSq的发送信号表示为乂=寸（1 -。泪ws + z,其中S表示信息信号，= lo 4是35°的发送功率。。是HSo分配给AN z的功率分配因子。由于所有链路的CSI 均一致，RS。采用最大比发送（Maximum ratio transmission, MRT）眾］发送信息信号, 即BSo的预编码向量为w = ^。令G表示信道向量h的一个正交子空间。为了在最 大化Eve端干扰的同时使UEq接收零AN信号，AN预编码矩阵设计为H￡到子空 间G的正交投影【33］,即：
+(5-33)
+其中中=功。一节|是投影矩阵，v是AN向量v?CN如1雄。同时，干扰节点利 用信道随机性获就伪高斯序列作为干扰信号，选择合适的节点作为协作节点发送干 扰信号。干扰信号在合法接收端t/与可成功解调或者消除。
+以上假设在已有工作，如［34-36］,中已被应用。可通过信号处理方法，使协助干 扰节点的干扰信号发送在合法接收端信道的零空间上。本文被选择的协助干扰节点 采用分布式BF③发送干扰信号在协助干扰节点与U￡o的信道向量（h7eClxM）的正 交子空间上，同时最大化在Eve上的干扰，即W =祥牛^丿，其中，珂=板―第%, Hj,e =［虹￡,…，蛎物和V』~ C7V（0,1临）是咼斯信号向量。
+基于以上系统模型和假设，UE0和Eve上的接收信号y和际分别表示为：
+y = g] _ ()Rd_a/2hws + n,
+和
+M
+Ye = /(I —	"Hews + dEa^2HEx + ￡ 丿^娠,修縮血—九 + n￡>	(5-35)
+m=l
+①当Eve是主动窃听终端或者是与基站（除BS。之外的其他基站）连接通信的MT时，Eve的CSI或者CDI均 可被BS（）获知。
+②属于不同网络或有不同属性的干扰节点的CSI可以被其归属基站通过上行信道训练和信道互易特性得, 基站之间可通过基站中心控制器共享干扰节点的CSI。
+③本文假设所有干扰节点之间具有完美的同步，干扰节点之间的同步问题不在本文研究范围之内。
+112 其中CN(O,祯)是第m个干扰节点发送的干扰信号，其BF权重为吧。巴是 第秫个干扰节点的发送功率。0=0表示是第zn个干扰节点不参与干扰Eve。d 和dE分别是与UE0以及BSq与Eve之间的距离。d*是第m个干扰节点与Eve 之间的距离。n ~ CN (O,(72) and n￡ ~ CN(0,(j21Ne^表示接收端UEQ和Eve的加性 高斯白噪声。应用香农容量公式，BS0与UEq的合法信道以及BS0与Eve的窃听信 道容量分别为：
+叫,	(5-36)
+和
+Re = 1理2 (|Ai +A2 + A3|) — log2 (|A] +A3|),	(5-37)
+其中A[ =1临+ § "各虹如槌唄矿A2 =爲礬HeQoH#, A3 =咛;% HeQH#。Qo 和Q是BF向量的协方差，Qo = ww〃KO, Q = %皤*" W 0。因此，合法链路 的可达安全速率表示为"I：	￡
+Rs = (R-Re)+.	(5-38)
+研究问题描述	’
+本节主要目标在于通过优化AN发送功率分配，即优化如 并选择适当的协作干 扰节点，以最优的发送功率最大化合法链路的可达安全速率。实际网络中，干扰几 点通常是私自的、属于不同网络、有不同属性和目标的MT。这些自私MT在协助服 务其他链路的同时会收取相应报酬。因此，假设所有的干扰节点会为他们的协作服 务收取一定的报酬，本节所研究的问题可总结为：BSo旨在以最小的付出实现最佳的 安全性能，而干扰节点旨在为自己的协作服务收取尽可能多的报酬。基于以上问题 描述，首先将此问题建立为一个Stackelberg博弈El问题，其中3岛作为买方或者引 导方开始博弈，干扰节点作为卖方或者跟随方根据引导方的策略跟随博弈；然后基 于Stackelberg博弈，分析Stackelberg均衡点的存在性以及均衡解，包括0的最优解, 干扰节点的发送功率以及协助干扰节点的要价。
+针对该研究问题，本章分别考虑Eve的CSI已知和CDI已知场景下的安全增强 问题。第5.3.2节考虑和协作干扰节点已知Eve的CSI条件下的MISOME下行窃听信道优化，进一步地，第5.3.3节考虑只有Eve的CDI已知条件下的MISOME广播 窃听信道优化。
+5.3.2全CSI已知条件下MISOME下行窃听信道优化
+本小节研究MISOME下行窃听信道的优化问题,8So和干扰节点己知Eve的CSI。 首先建立了一个单引导者-多跟随者的Stackelberg博弈问题，然后定义、证明和分析 了 Stackelberg均衡点的存在和均衡解。
+Stackelberg博弈建模
+该研究问题的Stackelberg博弈模型可从BS0角度和干扰节点角度建立和分析。
+基站（引导者）的决策与博弈BSo的可达安全速率可表示为：
+Rs = log2 （1 + 	" *—	） +1理2（內 +A3I） -log2（|A[ +A2 + A3I）. （5-39）
+考虑干扰节点的自私特性，假设根据第m个干扰节点的协助干扰服务给予 报偿，死彼垢％他心償弘=1,2,...,〃。因此，引导者的效用函数定义为：
+M
+Ub（8,.,u）=也Rs - L 厶形祓强 ||h?J|；	（5-40）
+m=l
+其中￥ =（貯周，功）和＜1 =（四],啊,...,如）分别表示干扰节点的发送功率向量和 M	O
+要价向量。￡即孩吒d囂是3岛给予所有干扰节点的总报酬。向是单位安
+m=l	'
+全速率的效益。国是第农个干扰节点对单位干扰功率的要价④。根据以上描述，引 导方的博弈策略为研究最佳的0和干扰节点的发送功率以实现效用函数的最大化。
+④ 姑与㈤，在问题分析中可理解为BSo和干扰节点对自身效益的衡量,从实际意义上说，设置不同的向与“，“ 是发送端对安全速率和干扰之间的权重衡量，若向偏大，则BSo更侧重安全速率的提升，若尙偏小，则 更侧重对干扰服务的报酬。如果向远远大于思，那么期）的效用函数函数相当于安全速率，而忽略了对干 扰服务的付出。
+114
+因此，BSo的博弈问题可表达成如下优化问题。
+务1：罗賢｛妃。囂>
+( 心	(5-41)
+OW4W1,
+s.t. <
+I 0 W R W %x丿當=
+其中Rax是干扰节点的最大发送功率。出=0表示第m个干扰节点不在协作干扰簇 内，不参与干扰Eve。这种事件在三种情况下发生：第一，当BSo倾向于第秫个干扰 节点以最大发送功率参与干扰Eve,而第m个干扰节点为了最大化自身报酬“漫天要 价"，从而损害BSo的“效益”；第二，当〃个干扰节点创造的干扰价值远远小于其他 干扰节点；最后，当BS。尽其所有发送功率发送AN信号，即。=1,这种情况在实 际中不可能发生，因此本文设定这种情况来确保巾的定义域为紧集。
+.-i"
+干扰节点(跟随方)的决策与博弈 对每一个干扰节点，定义干扰节点的目标在于 最大化所做干扰贡献对应的报酬。因此，第m个干扰节点的效用函数定义为：
+院(W,u) = %氐吧垢￡||h*||；m = 1,2,…,M.	(5-42)
+作为卖方，每一个干扰节点的策略在于优化单位干扰贡献的要价。因此，协助干扰 节点的优化问题为：
+疹*2 :	inax	= > 2, , M
+(5-43) s.t. iim》0.
+截止目前为止，优化问题绥1和伊2形成了 MISOME下行窃听信道的Stackelberg博 弈问题。
+优化问题务1和宓2中，每个干扰节点的发送功率是干扰贡献以及要价国，的函 数，每个干扰节点的要价反过来又是干扰发送功率嗦的函数，也就是 说BS0从第m个干扰节点“购买”的干扰功率以及第m个干扰节点的要价与其他干 扰节点的发送功率紧密相关，相互影响。
+Stackelberg均衡点的定义与存在性
+Stackelberg博弈的均衡点定义为这样一组策略解：在此策略上，任何一方，包 括BS。和干扰节点，不可以仅单独的改变自身的策略而进一步提高其效益。因此，由优化问题 密1和密2组成的Stackelberg博弈的均衡点定义为：
+定义5.1令欧,叫泗二(吁。雄$-。供,...,职M)和11冲=(産1處Pt ."方)表示 Stackelberg博弈的均衡点，则对于任何如P7和u,总存在
+Ub (?oPtp-oPLuOPt) 2 魅(饥四心咿)，	(5-44)
+U匕(巾吧已-吧11。仇)2 U%(4。机,四-喚,u).	(5-45)
+根据定义的Stackelberg均衡点，该均衡点存在的条件在如下引理中给出。 引理5.2 Stackelberg均衡点的存在性卩刃：
+当如下条件成立时,Stackelberg均衡点存在
+1)策略集。，R和是紧致度量空间；
+2)UB和g是连续函数；
+3)对于任意。和處是凹函数。
+从公式(5-40)和(5-41)可以看出，Ub和憲满足前两个条件。最后一个条件将 在下一小节中给出证明。
+Stackelberg均衡点的解
+Stackelberg均衡点从两方面分析。首先，引导方的最佳策略，即和四-呼, 可通过解优化问题伊1得到，且均衡解是关于要价和其他干扰节点的发送功率的函 数。然后，跟随方(干扰节点)的最佳策略，即11。叫可通过代入第一步中的 和 P7-°Pt into 疹*2。
+第一步：解最优功率分配：如加和W-OPt首先，在具体分析求解之前，首先现提供 一些关于后续证明所需的矩阵运算公式。
+引理5.3对任意nxn随机矩阵X,
+, log |X|的微分为HO]
+dlog |X| = Tr (X-i^X) .	(5-46)
+?对于常数矩阵A和B, Tr(AX-iB)的微分为〔啊
+dTr (AX「1b) = -Tr (X'^AX-^X) .	(5-47)
+?对任意两个正定Hermitian矩阵BbB2GCnxn,由于矩阵+B?的第z?大的特征 值要大于Bi或者B2 [39, Weyl theory]的第/大特征值，即兀仙+B2) 则[41]
+&. ((Bi +B2)t) W \(B「)° Tr	W Tr (Bf1)	° 网)
+白(Bi+B2)t 0(B]+B2)T-0.
+根据A】，A2,和A3的定义，Ab A2,A3 G CnexNe是正定Hermitian矩阵。基于 以上引理，以下引理将证明"1的目标函数是。和干扰节点的发送功率的凹函数。
+引理5.4 Ub(8F,u)是。和的严格凹函数。
+证明：详细证明过程请见5.5.3。	□
+由于〃8(。？史)是关于。和P板= 1,2,...,M的严格凹函数，且策略集。和卩丿 的定义域为凸集，根据Karush-Kuhn-Tucker (KKT)条件网.优化问题绥1的全局最 优解可通过令公式(5-18)等于零求解。
+定理5.4最大化BSo效用函数的最佳牝〃是如下等式的解
+-低|质	(1—们祥 *竺_ (1-们日廿 _ 彼0
+”吒口崎 + (1 一 巾)衅1 + (1-?)(因 K1 1+(1 — 0) K-! /C3	1+喧断。
+(1 —们秘心畛卿0	(1-?)少2*1七财福
+(1 + 均)(1 + (1 —少)心盾)(1 + (1 - 0)從3)(1	知2
+(1 一?)妒 31理财)2	=0
+(1 + (1 — 8) K] K3) (1 +怀1 爪2)2
+(5-49)
+
+证明：详细证明过程请见5.5.4.1o
+公式(5-49)经进一步计算是一■个一元五次方程。Abel-Ruffini "定理指出了一般 解的不可能性，即一般的五次方程在有理数范围内不存在明确的表达形式。但是，可 通过数值方法，如多项式函数的求根算法，近似解得其根。
+定理5.5对于固定的=	干扰节点的发送功率的最优解是：
+玲-°皿(弗)=min{%ax 丿,max{以-*(即),0}}書=1,2,...,肱,	(5-50)
+其中
+咯* (即)=；(。"+史竹项2 +	罗蛭			(5_51)
+2口一祖,1以_皿,2%虹￡	2妇|	) 12mJ
+△的定义为：
+△=件皓应 f,2))"』沒財。a J】一 J?).
+\	"0	J	MO
+(5-52) 其中。一叫1 =h；E(B5 + A3)Th邮宀f,2 =h#,E(BF + A2 + A3)Th*。B m 是矩 阵Al除去第m项干扰后的矩阵，即B_w =%e+ E 生礬蠕11隹。
+i=
+证明：详细证明过程请见5.542。	□
+公式(5-50)中，第/n个干扰节点的发送功率与3岛的效益增益向、干扰节点的要 价端以及其他干扰节点的发送功率=	+ 紧密相关，也就意
+味着，干扰节点的最佳发送功率不仅受其自身信道条件的影响，也与其他干扰节点 的信道条件以及策略有关。
+第二步：求解协作干扰节点的最优单价11咿干扰节点的最优发送功率可表示为 (5-50)，作为卖方，每个干扰节点的目标在于设定最优的要价来最大化其效益。将公 式(5-50)带入(5-41),优化问题务2可重新表示为：
+他心,max{“思//蜓也峥II；，o} }
+(5-53)
+= 1,2,
+引理5.5对彻瞄)是关于⑶的凹函数。
+118
+
+证明：u" （"t,心）对即求导有
+'Raxyd；,%||h成,e||；,左一*2 死ax
+驾客。〈治 ＜哈
+
+引理5.5指出，殁是凹函数，满足引理5’2中关于Stackelberg均衡点存在性的 条件三。因此，所建立的Stackelberg博弈问题存在均衡点，且干扰节点的最优要价 可通过令两略）等于零然后求解得到。
+119
+
+
+(5-61)
+b = （a_mj +。一四,2）m,]。—岁,2一°结合8的最优解,干扰节点的最优发 送功率和8可通过解M+1个M+ 1维方程得到。
+求解Stackelberg均衡点最优解的策略迭代算法
+如公式（5-49）和（5-60）所示，很难直接解得M + 1个等式的解，因此，本文提出 一种策略迭代算法来获得最终Stackelberg均衡解，如算法Algorithm 1 o首先，初始化干扰节点的发送功率为零，然后通过二分法解(l)opt,当所有跟新的发送功率基本 保持不变时，迭代结束，否则，迭代继续。
+Algorithm 1求解Stackelberg均衡解的迭代算法
+1：初始化系统参数和迭代标志/ = 1，￡= 10-6；
+2：初始化 <!(「)=(崗,???」)，P[⑤ 根据8So发送AN信号的假设,假设AS。同时服务K (KWNr—Ne)个合法来保证AN的有效性。当BS。 同时服务大于Nb ―巨 个合法MU时，BS°通过用戸调度策略选择Nb-Ne个合法MU服务卩3】。
+121] (『)=(*,...,明) = ((), ?..,());
+3：釆用二分法解(5-49),获得?(f);
+4： while Vm, |玲0 + 1) 一玲(，)| 2 ￡ 和 |。(? + 1) 一。(。| 2 ￡ do
+5： u(r + l)=u(r),P/(z+l) = P/(r)；
+6： for m = 1 : Af do
+7： 按(5-59)计算 M+l)，按(5-51)计算知+ 1);
+8： if"(f + l) <Oor0(u)(/ + l) 2 瑶嵌 then
+9： 弗(f + 1)=气弟 Q + l) =0；
+10： end if
+11:	end for
+12： t = t+l;
+13：通过二分法解(5-49),得到S(f+1)；
+14： end while
+5.3.3窃听者CDI已知条件下MISOME下行广播窃听信道优化
+本小节进一步研究当BSo和干扰节点仅知Eve CDI时的安全增强。考虑MISOME 下行广播窃听信道模型，即BS。同时服务多个合法MU。基于该模型假设，本小节的 目标在于最大化BS0的安全总速率。
+CDI已知下的广播窃听信道模型
+K (K&Nb-Ne)⑤个合法MU同时与相连接。保密信息的发送功率均匀 的分配给每个合法MU,因此BSo的发送信号可表示为：x ="爭RWs + z,其中s = [s,..,SkK 是每个MU 的保密信息符号，有E[ssw] =L 令 H = [h1,...,hK]rGC^ 表示与合法MU之间的信道衰落因子。为了消除合法MU之间的干扰，BSo采 用ZF预编码[451。因此，船0预编码矩阵表示为：W=[wi，...,Wk] = v^HH(HH&)t,
+是归一化因子。由于仅已知Eve的CDL 3So在H的零
+空间发送AN,从而使合法MU不受AN干扰，z =《畿Tv,其中T G Cnb^b-k 是H的零空间的正交基，v是AN向量，v?汉夕（0,1心_"。同样，协助干扰节点
+疽=?,其中T7 6 CMxM-K⑥是H7的零空间的正交基。
+由于已知合法MU的CSI和窃听者Eve的CDI,定义第k个合法MU的保密信 息的安全速率为公式（5-62）〔13,34〕，此公式也是3第的优化目标。根据公式（5-62）,最 佳功率分配需要根据合法MU的CSI自适应的调整。
+Rs、k = (og2 (1 + —'	* — ) +E{log2 |A1+A3|}—E {log21 A1+A2ife+A31
+(5-62) 其中 \器=尊日次潮#, A3 =(￡1 毕qHeQH#。Qk= wkwk，Q = TvWt”。BS0 K
+的可达安全总速率为：Rs = ￡Rsk。
+k=l '
+广播窃听信道下的Stackelberg博弈
+基于以上系统模型，BS0旨在通过优化其功率分配以及干扰节点的功率分配来 最大化其安全总速率。引导方（8S。）的博弈策略可表示为以下优化问题。
+K M	(	1
+P0 ￡	1 ||蝴,￡ ||2 >
+k=l zn=l	I	J J
+OW] <1,
+° W Pm W Inax丿)m —	M.
+跟随方（干扰节点）的博弈策略可表示为:
+务 4: njaxs*总,%E {|| 卜林0112 }	= 1,2,} M
+弗〉0.
+优化问题 夜3和＜^4建立了 MISOME下行广播窃听信道场景下的Stackelbetg博弈。
+⑥ 若T/不存在，干扰节点不参与干扰窃听者Eve。
+122
+
+Stackelberg 均衡点的解
+优化问题务3中的目标函数对。和孩求导，有
+一% —_站质
+3Ub (奴P同 & 3Rs,k “ 丿厂a" II* ||21
+a pg	— /A) E apj	[ ||^,￡-||2 J -
+二阶求导有
+一密一_咯w
+"吨⑷小问-n v "Rs,代
+―液p ——向(閣2?
+根据第5.3.2节中相同的分析过程，可以得到幣 <0和京苧<°。结合(5-65) 与优化问题多3,全局最优的铲/和^-opt,m=l,...,M可通过就￥等式得到。
+3Ub((I)"u) = _§	R 逮 a|h#w『	.
+神 』1阮2十(1—8)3尹|峠5^|2
++￡屮 3 + A3)-号-(A"f 广(奇 _ 答))} = 0.
+(5-68)
+妇Ml&’Elh} +* J		\ =0
+理	。仙 k=i [(双+尸霹驟…‘何+尸眾垢%已_成*) J
+(5-69) 其中 a-m,2,k = hm,E (B-m + A2,* + A3)
+公式(5-68)和(5-69)分别是阶数高于五和四的多项式等式。根据Abel-Ruffini定
+理[43],在有理数基内不存在准确的求根表达式。因此，无法获得最优。和P^,m =
+的准确表达式。但是可以通过多项式的求根算法获得近似的数值解。
+
+令哈°Pt表示干扰节点Jm,m=	的最优解，则
+=咯"(国)”糸囂'E {||h扁I；} + 国一	囂E {||11* ||；},
+公式(5-69)对国求微分，有嘰^<0和嘿^ = 0。因此，器〈°，原是凹函 数，根据引理5.2,存在S tackelberg均衡点。令體等于零，干扰节点的最优要价为:
+瞄=—哈"(崎
+根据以上等式，可根据以下迭代算法来获得最终均衡点的解。
+Algorithm 2求解Stackelberg均衡解的迭代算法
+1:初始化系统参数和迭代标志/=!,￡= 10-6；
+2:初始化 W(f)=(碎,...,死)=(0,...,0)；
+3： while V秫，|孩(f+1) — 玲。)| 2 ￡ 和冷(7 + 1) - ? (圳 2 ￡ do
+4：釆用二分法解等式(5-68)获得机1)；
+5： for m = 1 : Af do
+6:	解球(t + 1)为关于弗的函数；
+7： 解(5-71)获得国，将结果代入玫(f+1);
+8： if 弟(f + l)(。或者 R (u)1)》％凝 then
+9：	缶j = 8,R(f + l) = 0;
+10： end if
+11:	end for
+12： m；
+13： end while
+5.3.4数值、仿真与分析
+本节提供数值结果与蒙特卡罗仿真验证理论分析的正确性以及所提协作干扰机 制的效果。位于坐标原点，1/瓦)和窃听者分别位于(0,300m)和(300m,0)。M=4 个干扰节点UEi，UE2,"归3和随机分布在边长为750m、中心位于窃听者的方形区域。BSo配有际=4根天线。BS。的发送功率为Ps = 40dBm,干扰节点的最大 发送功率为 = 37dBmo噪声信号功率为＜y2 = -104dBm (即10MHz带宽)，路 径损耗指数为a = 5。信道衰落因子的每个元素，即huE。，璀和hy中的元素为 均值为1的Rayleigh衰落。单位安全速率的效益为出=50。
+
+
+
+(a) 0的影响
+
+
+
+(b)干扰节点发送功率的影响
+图5-9 BSo的效用函数与?和干扰节点发送功率的关系
+对于只有两个随机分布的干扰节点，令P：=时=薄,有占=1个合法MU, 此=1, 8 = 0.5,卩1=奥=1。图中“实现1”到“实现6”表示整个系统的6次实现, 每一次系统实现都是根据随机的干扰节点位置分布和信道衰落所得到的。US。的效 用函数如图5-9,干扰节点的效用函数如图5-10所示，数值结果验证了引理5.4和引 理5.5中的理论分析，即Ub",u）是关于少以及外和对的凹函数。同样，臨是 关于要价⑶的凹函数。从图5-10还可以看岀，当要价低于某特定值时，臨是严格 凹函数，而当要价大于此值时，原=0,这与理论分析一致，即当要价太大时，UB0 不会请求该干扰节点的协助，因此其发送功率设置为零，该干扰节点获取零收益。
+
+
+
+对于多个干扰节点，应用算法1解得Stackelberg均衡点的解。窃听者天线数 为Ne = 2,存在一个合法MU。考虑两种情况：M = 3, Ne — 2和M = 4,2Vg=3来 验证定理5.4,定理5.5和定理5.6的结果以及算法1的实际可行性。当M=3时，选 择口功，UE2和UE3为干扰节点。
+图5-11和图5-12表明迭代算法经过4-6次迭代收敛于最优结果，从而验证了 所提算法的效率。从图5-11和图5.12（a）可以看出，在干扰节点的协助下，BSo分配 给AN的功率的下降（10%?14%）远大于所有干扰节点上的发送功率，这有利于 未来的绿色无线通信。从图5-12可以看到，在三个干扰节点和四个干扰节点情况下, 第一个干扰节点和第二个干扰节点的发送功率为零，而要价为无穷，这与定理5.5和 定理5.6中的分析结果一致，可能由两个原因所致：1）干扰节点提供的干扰非常小;
+
+
+图5-H 迭代的最优功率分配因子欧
+
+
+图5-12	迭代的干扰节点发送功率及要价
+2)干扰节点的要价太高。
+结合图5.13(a)中干扰节点的效用函数曲线，很容易得到结论：在三个和四个干 扰节点情况下，第一个和第二个干扰节点不协助3S。干扰窃听者。图5.13(b)展示 了 BSo的效用函数曲线和最大可达安全速率。除此之外，与集中式的最优解(存在一 个虚拟集中控制器，通过全局搜索最佳。和以〉m = 1,...实现BSq的安全速率的最大 化)相比较，最终的Stackelberg均衡解接近集中式的最优解，从而验证了所提的基 于Stackelberg博弈的最优解的有效性。进一步的，还可以看出，与没有协作干扰节
+127
+
+
+图5-13	迭代的效用函数曲线及最大安全速率
+点的系统相比，基于多节点协作干扰的MISOME窃听系统安全性能提升约8.77 dB (3个干扰节点)和10.33 dB (4个干扰节点)。
+
+(a)迭代的最佳?和干扰节点发送功率	(b) BSo的最大可达安全总速率
+图5-14 广播窃听信道中的迭代结果及最大安全总速率
+基于Eve的CDI,图5-14展示了广播窃听信道中的最佳均衡解和可达安全总速 率。K = 2个合法MU位于(0,300 m)和(300 m,300 m)? BS。和Eve的天线数分别 为临=4和％ = 2。肱=4个随机分布的干扰节点协助干扰窃听者。从图可以看 出，最优解在5-7次迭代收敛，且最大安全速率几乎等于集中式的最大安全速率结 果。除此之外，与没有干扰协助相比，最大安全总速率提升约5.29 dB, AS。分配 与AN的功率因子大幅下降，意味着可分配更多的功率给有用的信息信号。结 合图5-11-图5.14(b)中的分析结果，所提基于多节点协作干扰的安全增强技术能在 提升网络安全性能的同时节省更多的能量。
+5.3.5小结
+本节研究了 MISOME窃听信道中基于多节点协作干扰的安全增强。基于 Stackelberg博弈，建立了合法发送端和协助干扰节点之间的博弈优化问题。证明了 Stackelberg均衡点的存在性，并得到了均衡点的表达式，提出了得到收敛的均衡解' 的迭代算法。结果表明，与没有协作干扰节点的系统相比，所提的基于多节点协作 干扰的安全增强机制能提高安全速率至少5.29 dB,并且同时能降低合法发送端分配 给AN的功率约50%,对于合法通信节点而言，这一结果表明所提的基于多节点协 作干扰的安全增强技术能实现绿色的安全通信。
+5.4本章小结
+本章首先研究了 HetNets中基于DPS的安全覆盖性能，基于随机几何，理论分 析得到了任意MU的SOP,并且，理论结果表明在高路径损耗环境下部署低功率 的SBS能提供更安全的无线信号传输。进一步地，为了提高无线信号在HetNets中 的安全传输性能，本章研究了 MISOME窃听信道下基于多节点协作干扰的物理层安 全增强，分析得到了最大化系统安全传输速率的最佳干扰节点发送功率分配，结果 表明，与无干扰节点辅助相比，基于多节点协作干扰的安全增强机制能提高安全速 率约 5.29 dB =
+本章研究工作是基于国家杰出青年科学基金项目“无线组网的理论、方法和技 术”中关于安全组网的理论架构，一方面，理论分析了异构协作无线网络的物理层安 全覆盖，另一方面，提出了提高物理层安全组网的多节点协作加扰技术.在异构无线 网络中关于物理层安全的理论分析与增强技术研究，为项目组建立无线网络安全组 网提供了理论分析和技术研究支撑。
+5.5附录
+5.5.1定理5.1证明
+由于基站的分布服从HPPP, m个基站位于绍(0,X°)内的概率为：
+Pr [M = m] =Pr 个 BS 位于阕(0,X。)内]=("給3)exp {—兀人X，} .	(5-72)
+最近的M个基站的分布即M个基站在绍(0,X())内独立均匀分布，因此事件翳</3 与Rsj<P相互独立，冷顶，很=1,2,...,肱。公式(5-41)中第二项的联合中断概率为：
+
+(5-73)
+其中是位于半径为X。的圆形区域内的任意节点与典型合法MU的距离。
+h ⑺=泌。W r WX()
+Ao
+给定“条件下，坪中的平均中断概率为:
+
+
+的 SOP。
+
+
+
+因此，结合公式(5-73)和(5-76),可得联合中断概率。典型合法MU的SOP则为：
+8	(h}
+Pout Pr[M = 0]+ ￡ Pr[M = m]?mlexp{—兀；LXj(l —疔)}	(5-77)
+rn=\
+其中游)是应用W的麦克劳林展开。
+5.5.2定理5.2证明
+根据全概率公式，娴的c#可分成两部分
+Pr 岡 < 0] = Pr 崗 > X。] + Pr [x0 < X。] Pr 岡 < 緋。< X。]
+最近基站位于阕(0,X°)之外的概率为Pr优° >X° ] = e-”％。(5-78)中第二项的联合 概率为：
+w
+Prfxo <X° ]Pr[R* <叩()<X()] =E{n,a} EXq Pr — log2
+工0是HomNets中的最近基站。因此，x()的p#■为/(x) = 2効源。因此，以上 公式的期望项为：
+(?) - Ex0
+Pr
+Pr
+(j2+p(TX)x-a
+a2+p(TX)x-a
+。2 + p(TX)]-a < 2 厶 ko = x < X() A. exp {—兀兀2“ 册”X侦} ' ~~Ee2W	1
+W I
+p(TX)x-a
+<p
+-a
+*
+(5-80)
+
+其中的近似项是由于忽略2睥廿。
+结合(5-78), (5-79)和(5-80),可得到R&的c序为:
+8
+Pr屬 ＜创＜。一”咨+ ￡vS)FoS)
+n=0
+(5-81)
+证毕。
+5.5.3引理5.4证明
+(5-40)的目标函数对巾和玲有，
+at/g (巾",11) _ dRs 3Ub(<I)"u) 一赢一=也顽
+(5-40)对?和刘的二阶求导为：
+a初(?Mu)
+向一⑶吧d慧 ||hm,￡-||r
+(5-82)
+W'职V	次艰?
+因此，所要做的是对砲求微分。砲对。求导有
+8Rs _ 	51og|Aj +A3| d logjA] + A2 + A31
+卯 一 ＜y2 + (l-0)^-?||h||2
+(c)	-^-a||h||2
+ff2+(l-0)^-a||h||2
+(5-83)
+FTr (A]+A3)t
+—TrH Aj +A2 + A3) 1
+a2 y i 一夜
+(5-84)
+其中(c)是应用公式(5-46)。畿为
+dR
+繪=TJ (Ai +A3)t哄维瞄Eh烏
+-Tr ((Ai +A2 + A3)t 二扩蝙仲磊).
+(5-85)
+应用等式(5-47),可得二阶求导,
+即-气|圳2)2
+d2Rs ~df
+一 Tr((A]+A3)-*(A]+A3)T
++ Tr
+伊 + (1_。)％一外圳2)2
+((A]+A2+A3)T (牛―告)x(A]+A2+A3)T (3—告
+(5-86)
+
+(A】+ A? + A3) h/) - (hg,￡(A[ + A3)、*)
+(5-87)
+
+
+
+其中0）来自于矩阵等式Tr（AB） = Tr（BA）【41］。
+对任意正定Hermitian矩阵A,B,CandD,应用（5-48）有
+?.?(A + C)T <AT,B —DWB,.?.(A + C)T(B —D) WA-B,
+Tr((A+C)T(B—D)(A+C)T(B—D))〈Tr(A-iBATB),
+((A】+ A?) 1 - A：) h* < 0 n hg,E(Ai + A?)	< h^/A]字* n
+(hg,E(A[ +A2)屁￡)< (崂泌]%*)?.
+因此，结合（5-88）和（5-89）,奈 <0和普y <0完全成立。结合（5-83）,引 理5.4得证。
+5.5.4定理5.4和定理5.5证明
+该证明分成两部分，求解最佳少和干扰节点的最大发送功率
+求解最优功率分配因子（t>opt
+根据公式（5-37）,定义HeQoH# = e"和H￡QH^ =ffw,则最佳。可通过 令纳拦）=0求解得到。
+
+
+次+ （1—切-气冋|2
++ /A)Tr
+十A3)
+(01+A2+A3)
+=0
+133
+(5-90)
+
+
+
+
+
+
+应用矩阵等式 Tr(A8C) = Tr(CBA)和(X+yzr)_1 -X"1 一 "抵'了 ,有
+
+
+
+
+进一步的数学推导，们〃可通过解（5-49）得到。
+求解最优发送功率
+应用第一部分的矩阵等式，令B_m=I+皀竺彝蝙唯，则Ai=B_m + i=l,详m	， 1
+也笋h^EhWE。因此兇扩）=0可表示为：
+险陰(h%E(BF + A2 + A3)Th*)2
+1+ m ?2m"Eh^￡.(B_m + A2 + A3)_1hOT￡
+(hg.E(BF + A3)Th")2
+1+wahH￡(B^+A3)-ihm)￡
+令 G-m,l =hW,E(B_?,+A3)瓦￡ 和 ?-w,2 = ^￡(B_m + A2 + A3)	以上公式重
+写为：
+2
+Q_m,l		卩槌 llu ||2 = n
+［卢d詮	,,県"〃	||n回2-un
+丄 ^21	^2	a-m,2
+a-mJ （/ + P^W糸/知5,2） -。—小,2 （。之+謂吧』囂" 一払1）
+-宜gdl；伊+船山財睥）（尸+玲被蜓fl） = 0命
+間忡 J』"2（吧）粉狒％% 她法应（"』+心,2）祯騙黒 H）	M0
++ 妇”"財—（"L j,2 侦=0.
+Mo
+（5-94）
+上述二次方程的判别式为：
+必也扁|打4(吧尸垢晉
+△ ==	72	(a_m
+> °	0	(5-95)
+国|幅』2。2(崎垢曾
++ 4	-	a_m {a_fn 2 [a-mJ ~a-m,2).
+应用引理5.3中的第三个矩阵等式，有(B_m+A3)-|-(B_ra+A2+A3)-1 >0,因此很容 易得到以下结果。
+已一知 _a_m,2 =hg,E ((B_?, + A3)t - (B_?；+A2 + A3)1 hmE 0.	(5-96)
+因此，A ^0成立，等式(5-75)有两个解，其中较大的一个解为最优发送功率。
+哈* (弗)=-+	尹匝	—.(5-97)
+2a_m^a_m2wjndmE 2/1,?\\hm>E\\2a_mAa_m_2{w^)
+节和发送功率的限制，0W^WRax，^=l，2,..”M，可得到最佳策略如(5-50)o
+5.5.5定理5.6证明
+对于0 瑶ax，令当彤=0，即
+F,1 +。-巾,2)°2
+P-m	,	、2 ,、IIl i|2 2	/	x square
+=			~a-m,2)+2||hm,￡,ll2Cr a-m,\a-m,2 \a-m,\ ~a-m,2)今
+An)
+必怕扁財	)	(	、丄也||h邮|財
+-^2	 2				a-m,\a-m,2 = u-
+(5-98) 其判别式为
+16||h叫￡以。4 2	2 丄」I&’eII：04	(	、2 n ncn
+妃	a-w,la-m,2 + 4	^2	a-m,\a-m,2(a-m,l ~ a-m,2)〉。?	(5-99)
+因此，最大化第初个干扰节点效用的要价为
+~P0	一 (a-in,l +a-m,2)\/a-m,la-m,2)
+K =——	=	L .	(5-100)
+||蝙』|脚2 {a_mA-a_m2)
+结合讨论的三种情况，第m个干扰节点的最优要价可表示为(5-58)o
+参考文献
+[1]Wang X, Hao P, Hanzo L. Physical-layer authentication for wireless security enhancement: current challenges and future developments]J]. IEEE Communications Magazine, 2016, 54(6): 152-158.
+[2]Yang N, Wang L F, Geraci G, et aL Safeguarding 5G Wireless Communication Networks Using Physical Layer Security [J]. IEEE Communication Magazine, 2015, 34(2): 20-27.
+[3]Wu Y, Khisti A, Xiao C, et al. A Survey of Physical Layer Security Techniques for 5G Wireless Networks and Challenges Ahead[J]. arXiv preprint arXiv: 1801,05227,2018.
+[4]Pinto P C3 Barros J, Win M Z. Secure Cominunication in Stochastic Wireless Networks—Part I: Connectivity [J]. IEEE Transactions on Information Forensics & Security, 2012, 7(1): 125-137、
+[5]Wang H, Zhou Xa Reed M C. Physical Layer Security in Cellular Networks: A Stochastic Geometry Approach[J]. IEEE Transactions on Wireless Communications, 2013, 12(6): 2776-2787.
+[6]Zhu 丄 Schober R, Bhargava V K. Secure transmission in multicell massive MIMO systems [J]. IEEE Transactions on Wireless Communications, 2014, 13(9): 4766-4781.
+[7]Geraci G, Couillet R, Yuan J, et al. Large System Analysis of Linear Precoding in MISO Broadcast Channels with Confidential Messages]J].【EEE J. Sei. Areas Common., 2013, 31(9): 1660-1671.
+[8]Geraci G, Singh S, Andrews J G, et al. Secrecy Rates in Broadcast Channels with Confidential Messages and External Eavesdroppers]」], IEEE Transactions on Wireless Communications, 2015, 13(5): 2931—2943.
+[9]Navaratnarajah S, Saeed A, Dianati M, et al. Energy efficiency in heterogeneous wireless access networks[JJ. IEEE Transactions on Wireless Communications, 2013, 20(5): 37顼3_
+[10]Khisti A, Womell G W. Secure transmission with multiple antennas I: The MIMOME wiretap chan- nel[J]. IEEE Transactions on Information Theory, 2010, 56(7): 3088-3104.
+[11]Chu Z, Johnston M? Le Goff S. Robust beamforming techniques for MISO secrecy communication with a cooperative jammer[A]. // IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1—5.
+[12]Goel Ss Negi R. Guaranteeing secrecy using artificial noisefJ]. IEEE Transactions on Wireless Communications, 2008, 7(6): 2180—2189.
+[13]Li N, Tao X, Wu H, et al. Large System Analysis of Artificial Noise Assisted Communication in the Multiuser Downlink[J]. IEEE Transactions on Vehicular Technology, 2016, 65(9): 7036—7050.
+[14]Zhou X, McKay M R. Secure transmission with artificial noise over fading channels: achievable rate and optimal power allocation[J]. IEEE Transactions on Vehicular Technology, 2010, 59(7): 38313842.
+[15]Zhu J, Schober R, Bhargava V K. Linear Precoding of Data and Artificial Noise in Secure Massive MIMO Systems[J]. IEEE Transactions on Wireless Communications, 2016, 15(3): 2245—2261.
+[16]Zheng G, Choo L C, Wong K K. Optimal cooperative jamming to enhance physical layer security using relays[J]. IEEE Transactions on Signal Processing, 2011, 59(3): 1317-1322.
+[17]Barros J P V P C P J. Position-based jamming for enhanced wireless secrecy [J]. IEEE Transactions on Information Forensics & Security, 2011, 6(3): 616—627.
+[18]Zhou X, Tao Kennedy R A. Cooperative jamming fbr secrecy in decentralized wireless net- works[A]. // IEEE International Conference on Communications (ICC)[C]. Ottawa, ON, Canada: IEEE, 2012: 2339-2344.
+[19]Ding Z, Leung K K, Goeckel D L, et al. On the application of cooperative transmission to secrecy communications]J]. IEEE J. SeL Areas Commun., 2012, 30(2): 359—368.
+[20]Wang H M, Luo M, Yin Q, et al. Hybrid cooperative beamforming and jamming for physical-layer security of two-way relay networksfJ]. IEEE Transactions on Information Forensics & Security, 2013,8(12): 2007-2020.
+[21]Luo S, Li J, Petropulu A P. Uncoordinated cooperative jamming for secret communication[J]. IEEE Transactions on Information Forensics & Security, 2013, 8(7): 1081-1090.
+[22]Vishwakarma S, Chockalingam A, Amplify-and-fbrward relay beamfbrming for secrecy with cooperative jamming and imperfect CSI[A]. // IEEE International Conference on Communications (ICC)[C]. Budapest, Hungary: IEEE, 2013: 3047-3052.
+[23]Lee J H, Choi W. Multiuser diversity for secrecy communication using opportunistic jammer selection: Secure DOF and jammer scaling law[J]. IEEE Transactions on Signal Processing, 2014,62(4): 828-839.
+[24]Chu Z, Cumanan K, Ding Z, et al. Secrecy rate optimization for a MIMO secrecy channel based on Stackelberg game[A]. // Proceedings of European Signal Processing Conference (EUSIPCO)[C]. Lisbon, Portugal: IEEE, 2014: 126-130.
+[25]Chu Z, Johnston M, Le Goff S. Alternating optimization for MIMO secrecy channel with a cooperative jammer[A]. // IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1—5.
+[26]Wang C, Wang H, Xia X, et al. Uncoordinated Jammer Selection for Securing SIMOME Wiretap Channels: A Stochastic Geometry Approach[J], IEEE Transactions on Wireless Communications, 2015, 14(5): 2596-2612.
+[27]Zhang Q, Huang X, Li Q, et al. Cooperative Jamming Aided Robust Secure Transmission for Wire
+less Information and Power Transfer in MISO Channels[J]. IEEE Transactions on Communications, 2015,63(3): 906-915.	泛
+[28]Haenggi M. Stochastic Geometry for Wireless Networks[M]. Cambridge, U.K.: Cambridge Univ. Press, 2012.
+[29]Ferenc J S, Neda Z. On the size distribution of poisson voronoi cells[J]. Phys. A: Stat. Meeh. AppL, 2007, 385(2): 519-529.
+[30]Kiang T. Random fragmentation in two and three dimensions[J]. Zeitschrift fur Astrophysik, 1966, 64: 433-439.
+[31]Cao D, Zhou S, Niu Z. Optimal Combination of Base Station Densities for Energy-Efficient Two- Tier Heterogeneous Cellular NetworksfJ], IEEE Transactions on Wireless Communications, 2013, 12(9): 4350-4362.
+[32]Paulraj A, Nabar R, Gore D. Introduction to Space-Time Wireless Communications[M]. Cambridge, U.K.: Cambridge Univ. Press, 2003.
+[33]Shafie E, Ahmed, Niyato D, et al. Security ofRechargeable Energy-Harvesting Transmitters in Wireless Networks[J]. IEEE Wireless Communications Letters, 2016, 5(4): 384-387.
+[34]Chu Z, Cumanan K, Ding Z, et al. Secrecy Rate Optimizations for a MIMO Secrecy Channel With a Cooperative Jammer[J]. IEEE Transactions on Vehicular Technology, 2015, 64(5): 1833-1847.
+[35]Zhang R, Song L, Han Z, et al. Physical Layer Security fbr Two-Way Untrusted Relaying With Friendly Jammers[J]. IEEE Transactions on Vehicular Technology, 2012, 61(8): 3693-3704.
+[36]Wang A, Cai Y Yang W et al. A Stackelberg security game with cooperative jamming over a multiuser OFDMA network[A]. // IEEE Wireless Communications and Networking Conference (WCNC)[C], Shanghai: IEEE, 2013: 4169-4174.
+[37]Bloch M, Barros J, Rodrigues M R D, et al. Wireless information-theoretic security[J]. IEEE Transactions on Information Theory,, 2008, 54(6): 2515-2534.
+[38]Han Z, Niyato D, Saad W, et al. Game Theory in Wireless and Communication Networks: Theory, Models, and Applications[M]. Cambridge, U.K.: Cambridge Univ. Press, 2011.
+[39]Bas ar T, Olsder G J. Dynamic noncooperative game theoiy[M]. New York: Academic press, 1982.
+[40]Lancaster P, Tismenetsky M. The Theory of Matrices with Applications[M]. New York: Academic press, 1985.
+[41]AHorn R, Johnson C R. Matrix Analysis[M]. Cambridge, U.K.: Cambridge Univ. Press, 1985.
+[42]Bazaraa M S, Sherali H D, Shetty C M. Nonlinear Programming: Theory and Algorithms[M]. "New Jersey: John Wiley & Sons, 2013.
+[43]Du Sautoy M. Symmetry: A journey into the patterns of nature[M]. New York: Harper Collins, 2008.
+[44]B R J. Existence and uniqueness of equilibrium points for concave n-person games [J]. Econometrica: Journal of the Econometric Society, 1965, 33(3): 520-534,
+[45]Spencer Q H, Swindlehurst A L, Haardt M. Zero-forcing methods for downlink spatial multiplexing in multiuser MIMO channels[J]. IEEE Transactions on Signal Processing, 2004, 52(2): 461—471.
+第六章总结与展望
+HetNets作为5G系统架构的主要特征之一，能显著提升网络覆盖与容量。 但HetNets中严重的跨层干扰问题需要更先进的干扰消除机制。另一方面，HetNets 扁平的网络架构、无处不在的异构连接引入了更严重的安全威胁。CoMP技术作 为5G系统频谱效率提升的关键技术之一，能协调HetNets中的异构基站，实现层内 和跨层协作，降低异构小区间的干扰，从而进一步提升HetNets网络覆盖与容量。另 一方面，基于异构协作的物理层安全增强技术能协调异构节点，提高合法链路的无 线信道质量，干扰非合法接收端对保密信号的窃听与破坏，实现保密信息在物理层 的安全传输。在此研究背景下，本论文围绕HetNets结合CoMP技术的网络覆盖与容 量分析、安全覆盖与安全容量分析展开了研究。
+6.1论文总结
+本论文研究了不同HetNets场景下的异构基站协调与协作传输所能实现的网络 覆盖与容量性能。针对不同场景，先后提出了三种提升网络覆盖与容量的异构协作 传输方案和两种提升网络安全覆盖与安全容量的协作方案。基于随机几何、博弈论 和最优化理论，分析了所提协作机制下的异构协作无线网络覆盖与容量性能，并在 可行可解情况下优化了部分系统参数。本文的主要工作及结论总结如下：
+(1)在非均匀HetNets场景下，考虑有限基站接入容量和SBS安全可信情况下, 提出了基于基站负载和安全可信状态感知的异构协作传输方案；基于随机几何和概 率论，分析了基站的小区负载分布，推导了典型用户的平均SE和网络的ASE,并 优化了最大化SE和ASE的基站部署密度；分析结果表明在考虑基站接入容量限制 条件下，存在最大化系统性能的协作RSS门限，且在高路径损耗环境下设置较低的 协作RSS门限和更密集的合法SBS能获得更优的SE和ASE性能；在较高的不可 信SBS存在概率情况下，需要部署更多的合法SBS,才能保证网络性能的提升。本 章相应成果发表于 IEEE Transactions on Vehicular Technology [2].
+(2)在支持缓存和EH的HetNets场景下，提出了联合考虑基站能量状态、缓存 与请求匹配、信道资源和链路RSS质量的基站协调与协作方案；基于所提方案，首 先分析了 MBS和SBS的小区负载分布，然后基于随机几何和Gamma拟合，分析了累积接收信号强度的统计特性，基于此结果，推导了典型用户的覆盖概率和平均数据 传输速率；分析结果表明存在最大化网络覆盖和容量的最佳协作RSS门限，并且基 站的缓存容量和能量收集能力对网络覆盖和容量的影响与协作RSS门限的选择密切 相关：当设置合适的协作RSS门限使基站处于中度负载状态时，1）存在最大化网络 性能的能量收集速率和基站缓存容量；2）网络覆盖和容量随着SBS上的最大信道复 用数增加而先减小后增加，最终趋于最大值。该基站协调与协作机制能被应用于能 量受限和骨干网络容量受限的HetNets,以提升MU的成功覆盖和数据传输速率，理 论分析结果能为HetNets部署和协作设计提供理论指导。本章相应成果发表于IEEE Transactions on Communications [3].
+（3）	考虑差异化基站高度对无线信号传播的影响，在支持缓存技术的HetNets网 络中提出了基于缓存-请求匹配、基站高度和基站负载感知的异构联合协作传输与卸 载机制；依概率建模无线信号传播的NLoS链路和LoS链路，并引入修正的COST 模型刻画基站高度对路径损耗的影响，分析了典型MU上的累积接收有用信号强度 和累积接收干扰信号强度的统计特性，并得到了 MU从MBS卸载到协作SBS簇上 的卸载概率，基于刻画的统计结果，推导了典型MU的平均SE表达式，分析结果表 明；1）基于修正的COST模型以及所提异构协作机制，平均SE随着基站高度的增加 而降低；2）根据所提协作机制，改变MBS的基站高度不影响MU的卸载概率；3）最 佳协作距离门限随着SBS部署密度增加而递减；4）基站的最佳缓存容量随着协作距 离门限的增加而递减；5）MU的卸载概率随着协作距离门限、SBS缓存容量及部署 密度的增加而增大，而随着SBS高度的增加而减小。虽然协作SBS簇能提高SE,但 由于有限的基站接入容量，过大的卸载概率反而会降低网络的SE性能。以上结果表 明，HetNets网络中系统参数对异构协作基站簇的选择有非常大的影响，设置合适的 系统参数和协作参能提高网络的SE性能，但应同时考虑异构基站之间的负载均衡 问题。本章相应成果发表于 IEEE Transactions on Vehicular Technology [4].
+（4）	针对异构协作提高HetNets的安全覆盖和安全容量研究，首先提出了一种 基于DPS的安全基站关联机制，分析了 HetNets中典型用户的安全中断概率，结果 表明在高路径损失环境下部署高密度的SBS能提供更安全的物理层无线传输；为了 进一步提高物理层的安全传输性能，提出了一种基于多点协作干扰、并结合BS发 送AN的物理层安全增强机制，通过Stackberg博弈建立了基站旨在最大化安全传输 速率、干扰节点旨在最大化干扰收益的“单领导-多跟随”博弈问题，并建立了基站 和干扰节点的凸优化问题，通过矩阵分析，证明了 Stackberg均衡点的存在性和唯一性，并推导了 Stackberg均衡解（基站的功率分配、干扰节点的发送功率以及要 价）的表达式，由于所有均衡解彼此相关，且不可直接得到各均衡解的闭式表达式, 最后提出了得到最终收敛均衡解的迭代算法。数值仿真结果表明，所提协作干扰机 制能在降低给配给AN的功率的同时，提高系统的安全传输速率，该方案适用于实 际HetNets网络的物理层安全传输的提升。本章相应成果发表于IEEE Transactions on Communications [1]布口 IEEE Communications Letters [5].
+本论文研究成果作为国家863计划项目“5G无线密集网络构架与关键技术研发” 和国家杰出青年科学基金项目“无线组网的理论、方法和技术”的基础理论研究成果 之一，重点研究5G高密度异构聚合网络架构下的异构网络间融合协作，理论分析结 果详细展示了异构协作技术与协作方案、系统关键参数以及关键技术对网络覆盖与 容量性能的影响；进一步地，基于863项目组开发的支持多制式异构网络融合的超 密集异构组网系统级仿真平台，对理论分析的合理性和准确性展开验证。本论文研 究成果可为实际异构协作无线网络的融合协作方案设计、协作参数配置以及性能优 化提供理论参考和指导。
+6.2未来工作展望
+本文针对四种不同的HetNets网络场景，分别研究了考虑不同因素、不同目标的 异构协作通信，取得了有一定意义的研究成果。然而，由于时间的限制:本文所涉及 的相关研究内容有一定的局限性，因此仍存在进一步研究的可能和价檎，可以从以 下几个方面开展后续工作：
+（1）	本文大多考虑基于随机几何的性能分析，虽然从理论分析结果中得到了系 统参数对系统性能的影响，证明了一些最优系统参数的存在性，但是没有针对网络 性能和系统参数的优化展开研究，因此，在未来工作中，基于已有的协作方案，将釆 用优化理论进一步优化系统参数；
+（2）	已有的分析都是假设所有BS和MU之间相互独立，且只研究单一典型MU 上的一阶性能分析，如覆盖概率、平均速率等，这些性能参数不能完全刻画任意节 点上的空时相关性。因此，在未来工作中，将需要分析连续时-空上的性能分析；
+（3）	本文研究内容基本上是基于地面异构蜂窝网络之间的协作，没有考虑到蜂 窝网络与中继、D2D等的协作情况，而且未来移动通信网络不仅仅局限于地面网络， 将扩展至空-天-地一体化的移动通信，因此，在未来的工作中，将首先研究地面蜂窝 网络与空中基站之间的协作通信，然后进一步扩展至更高层面的、更广的异构协作。
+
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.
+
+附录缩略语表
+cdf i.i.d. Pdf
+3GPP
+4G
+5G	　　Cumulative distribution function ?累积分布函数
+Independent and identical distributed, 独立同分布
+Probability density function,概率密度函数
+3rd Generation Partnership Project,第三代合作伙伴计划
+The 4th Generation mobile communication system,第四代移动通信系统
+The 5th Generation mobile communication system,第五代移动通信系统
+AIS
+AN
+AP
+ASE
+ASS
+AWGN	Aggregated interference strength,累积干扰强度 Artificial noise,人工噪声
+Access points? 接入节点
+Area spectral efficiency,面积频谱效率 Aggregated signal strength, 累积信号弓虽度 Additive white Gaussian noise,加性高斯白噪声
+BF
+BS	　　Beamforming＞波束赋形
+Base station,基站
+C-RAN
+CCDF
+CDI
+CoMP
+CS/CB
+CSI	　　Cloud-Radio Access Networks,云无线接入网络
+Complementary cumulative distribution function,互补累计分布函数 Channel distribution information, 信道分布信息
+Coordinated multi-point transmission/reception,协同多点传输/接收 Coordinated scheduling/coordinated beaniforming,协同调度/协'同波束赋形 Channel state information, 信道状态信息
+D2D
+DoS
+DPS	　　Device-to-device,设备间通信
+Denial-of-service,拒绝服务
+Dynamic point selection,动态节点选择
+EE
+EH	　　Energy efficiency,能量效率
+Energy harvesting,能量收集
+GPP	　　Gauss-Poisson process,高斯-泊松过程
+HetNets
+HomNets	　　Heterogeneous networks,异构无线网络
+Homogeneous networks,同构无线网络
+HPPP	Homogeneous Poisson point process,齐次泊松点过程
+ITU	International Telecommunication Union,国际电信联盟
+JR
+JT	Joint reception,联合接收
+Joint transmission,联合发送
+LoS
+LTE-A	Line-otsight propagation,视距传播
+Long Term Evolution-Advanced,高级长期演进
+M2M massive MIMO
+MBS
+MIMO
+MISOME
+MITM
+mMTC
+MPC
+MRT
+MT
+MU	Machine-to-machine,机器间通信
+Massive multiple-input multiple-output,大规模多输入多输出
+Macrocell base station,宏蜂窝基站
+Multiple-input multiple-output,多输入多输出
+Multi-input single-output multi-antenna eavesdropper,多输入单输出多天线窃听 Man-in-the-middle attack,中间人攻击
+Massive machine type communications> 大规模机器通信
+Most popular cache,最流行缓存
+Maxirnum ratio transmission, 最大k匕发送
+Mobile terminal,移动终端
+Mobile user?移动用户
+NJT
+NLoS
+NOMA	Non-coherent joint transmission,才目干联合发送 Non line-of-sight propagation,非视距传播 Non-Orthogonal Multiple Access,非正交多址
+OFDMA	Orthogonal Frequency Division Multiple Access,正交频分多址
+PGFL
+PVT	Probability generating functional,概率生成泛函 Poisson voronoi tessellation,泊松 voronoi 多边形图
+QoS	Quality of service,服务质量
+RAN
+RAT
+Rayleigh
+RSS	Radio Access Network,无线接入网
+Radio access technology,无线接入技术
+Rayleigh fading,瑞利衰落
+Received signal strength,接收信号强度
+SBS	Smallcell base station,小小区基站
+SE
+SINR
+SNR
+SOP	　　　Spectral efficiency,频谱效率
+Signal to interference plus noise ratio, 信号干扰噪声比 Signal to noise ratio, 信噪比
+Secrecy outage probability,安全中断概率
+UDN	　　　Ultra Dense Network,超密集网络
+ZF	　　　Zero-forcing,迫零
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.

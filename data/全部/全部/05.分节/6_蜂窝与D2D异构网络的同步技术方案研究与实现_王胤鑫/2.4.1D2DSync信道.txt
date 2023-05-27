@@ -1,0 +1,19 @@
+2.4.1D2DSync信道
+D2D-Sync 子信道用于帮助终端搜索附近的用户终端，并使要进行D2D 通信  的两个互盲的D2D 终端建立D2D 通信同步，以及所需的相关广播信息(SyncInfo), 这些信息包括对方的ID  ( 或IP 地址)、 TDD 配置、帧号/子帧号、同步来源、时  间提前量(TA) 调整指令等。实际上，两个D2D UE 间一旦通过接收对方D2D-Sync    完成了同步，也就完成了相互间的D2D 终端发现过程。
+为了避免干扰， D2D-Sync 信道使用的是从LTE 物理上行共享信道
+19)(Physical  Uplink  Shared  CHannel,PUSCH) 频谱资源中保留的资源(D2D-Sync  所使用的资源为特殊子帧中的上行最后两个符号的保护边带),即特殊子帧的最 后两个符号的保护边带 (GB),  如图2-4所示。其中，最后一个符号用于传输同
+步信号，同步信号采取蜂窝上行通信的RS 信号设计，且全部用户的RS 信号所
+8
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+用序列都相同以减小同步计算量；倒数第二个符号用于传输广播信息(SyncInfo),
+采取蜂窝上行PUSCH  技术，但因数据量较少(几十bit), 为减小实现复杂度，
+信道编码方式采用卷积码而不是上行链路的Turbo 码。
+网络中所有D2D 终端都会在D2D-Sync 信道中发送自身的D2D-Sync 信息(同 步信号以及广播信息SyncInfo), 不 同D2D 终端对D2D-Sync 资源采取时分复用 的方式，以避免终端之间发生冲突。每个D2D 终端都周期性的占用某些无线帧 中 的D2D-Sync 信道资源发送自己的D2D-Sync 信号。取N=8 个无线帧为周期(考 虑演示系统最多要求8个D2D 终端同时工作，因此取了8个无线帧作为周期),
+在 D2D 终端系统中维护无线帧号 (FrameNumber)。   根据下式
+SFNOffset       =       FrameNumber%N       =ID%N                              (2-3)
+计算各D2D 终端的时域偏移位置SFNOffset, 由 于N 个 D2D 终端的ID 各 不相同，将SFNOffset 分配给不同D2D 终端时，使处在同一区域中的邻近D2D
+终端在不同的无线帧中发送S 子帧同步以避免冲突。
+0	1	2	3	4	5	6	7	8	9	10	11	12	13
+图2-4 D2D Sync资源使用
+9
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net

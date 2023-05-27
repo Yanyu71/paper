@@ -1,0 +1,529 @@
+﻿{
+    "knowledge_points": [
+        {"title": "无线通信技术", "en": "Wireless Communication Technology"},
+        {"title": "4G移动网络", "en": "4G Mobile Network"},
+        {"title": "5G移动网络", "en": "5G Mobile Network"},
+        {"title": "中继协作通信技术", "en": "Relay Cooperative Communication Technology"},
+        {"title": "多输入多输出技术", "en": "Multiple-Input Multiple-Output Technology (MIMO)"}
+    ],
+    "relations": [
+        {"source": "无线通信技术", "target": "4G移动网络", "type": "属于"},
+        {"source": "无线通信技术", "target": "5G移动网络", "type": "属于"},
+        {"source": "4G移动网络", "target": "5G移动网络", "type": "延伸"},
+        {"source": "5G移动网络", "target": "中继协作通信技术", "type": "应用"},
+        {"source": "中继协作通信技术", "target": "多输入多输出技术", "type": "结合应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "双向中继系统", "en": "Bidirectional relay system"},
+        {"title": "信息交互", "en": "Information exchange"},
+        {"title": "物理层网络编码", "en": "Physical network coding"},
+        {"title": "信号空间对齐技术", "en": "Signal space alignment technology"},
+        {"title": "机会干扰对齐技术", "en": "Opportunistic interference alignment technology"},
+        {"title": "自干扰", "en": "Self-interference"},
+        {"title": "功率配置SI方案", "en": "Power allocation SI scheme"},
+        {"title": "中继选择技术", "en": "Relay selection technology"}
+    ],
+    "relations": [
+        {"source": "双向中继系统", "target": "信息交互", "type": "包含"},
+        {"source": "双向中继系统", "target": "物理层网络编码", "type": "包含"},
+        {"source": "双向中继系统", "target": "信号空间对齐技术", "type": "包含"},
+        {"source": "信号空间对齐技术", "target": "物理层网络编码", "type": "包含"},
+        {"source": "信号空间对齐技术", "target": "自干扰", "type": "涉及"},
+        {"source": "机会干扰对齐技术", "target": "信号空间对齐技术", "type": "包含"},
+        {"source": "机会干扰对齐技术", "target": "自干扰", "type": "涉及"},
+        {"source": "功率配置SI方案", "target": "双向中继系统", "type": "应用于"},
+        {"source": "中继选择技术", "target": "双向中继系统", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "功率配置", "en": "Power allocation"},
+        {"title": "中继选择", "en": "Relay selection"},
+        {"title": "波束成型技术", "en": "Beamforming technology"},
+        {"title": "多用户增益", "en": "Multiuser diversity"},
+        {"title": "奇异值分解", "en": "Singular value decomposition"},
+        {"title": "模拟网络编码", "en": "Analog network coding"},
+        {"title": "能量收集技术", "en": "Energy harvesting technology"},
+        {"title": "同步无线信息与功率传输", "en": "Simultaneous wireless information and power transfer"},
+        {"title": "中继选择协议", "en": "Relay selection protocol"},
+        {"title": "信道模值选择方案", "en": "Channel norm selection scheme"},
+        {"title": "全局信道状态信息", "en": "Channel-state information"}
+    ],
+    "relations": [
+        {"source": "功率配置", "target": "系统性能", "type": "提高"},
+        {"source": "中继选择", "target": "系统性能", "type": "提高"},
+        {"source": "波束成型技术", "target": "系统性能", "type": "提高"},
+        {"source": "多用户增益", "target": "抵抗无线衰落", "type": "重要技术"},
+        {"source": "奇异值分解", "target": "机会信号空间对齐方案", "type": "基础技术"},
+        {"source": "模拟网络编码", "target": "低复杂度用户调度设计", "type": "引入技术"},
+        {"source": "能量收集技术", "target": "延长无线网络寿命", "type": "有效技术"},
+        {"source": "同步无线信息与功率传输", "target": "无线通信设备", "type": "应用技术"},
+        {"source": "中继选择协议", "target": "中继进行EH或者ID", "type": "实现方式"},
+        {"source": "信道模值选择方案", "target": "低复杂度", "type": "简单方案"},
+        {"source": "全局信道状态信息", "target": "近似最优调度", "type": "必要信息"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "网络编码技术", "en": "Network coding technology"},
+        {"title": "干扰对齐技术", "en": "Interference alignment technology"},
+        {"title": "能量采集技术", "en": "Energy harvesting technology"}
+    ],
+    "relations": [
+        {"source": "双向中继系统", "target": "网络编码技术", "type": "应用"},
+        {"source": "中继系统", "target": "干扰对齐技术", "type": "应用"},
+        {"source": "充电中继系统", "target": "能量采集技术", "type": "研究"},
+        {"source": "网络编码技术", "target": "中继系统", "type": "应用"},
+        {"source": "干扰对齐技术", "target": "双向中继系统", "type": "应用"},
+        {"source": "能量采集技术", "target": "充电中继系统", "type": "研究"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "PNC编码方案", "en": "PNC coding scheme"},
+        {"title": "CF协议", "en": "CF protocol"},
+        {"title": "干扰对齐", "en": "Interference alignment"},
+        {"title": "IA技术", "en": "Interference alignment technology"},
+        {"title": "DOF", "en": "Degrees of freedom"},
+        {"title": "信号空间对齐", "en": "Signal space alignment"}
+    ],
+    "relations": [
+        {"source": "PNC编码方案", "target": "CF协议", "type": "基于"},
+        {"source": "干扰对齐", "target": "IA技术", "type": "属于"},
+        {"source": "IA技术", "target": "DOF", "type": "影响"},
+        {"source": "IA技术", "target": "信号空间对齐", "type": "实现"},
+        {"source": "信号空间对齐", "target": "IA技术", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "机会信号空间对齐技术", "en": "Opportunistic Signal Space Alignment Technology"},
+        {"title": "双向中继系统", "en": "Bidirectional Relay System"},
+        {"title": "IA技术", "en": "Interference Alignment Technology"},
+        {"title": "信号空间对齐技术SSA", "en": "Signal Space Alignment Technology SSA"},
+        {"title": "SVD技术", "en": "Singular Value Decomposition Technology"},
+        {"title": "波束成型", "en": "Beamforming"},
+        {"title": "DOF性能", "en": "Degrees of Freedom Performance"}
+    ],
+    "relations": [
+        {"source": "机会信号空间对齐技术", "target": "双向中继系统", "type": "应用于"},
+        {"source": "机会信号空间对齐技术", "target": "SVD技术", "type": "基于"},
+        {"source": "机会信号空间对齐技术", "target": "波束成型", "type": "联合设计"},
+        {"source": "机会信号空间对齐技术", "target": "DOF性能", "type": "提高"},
+        {"source": "双向中继系统", "target": "IA技术", "type": "引入"},
+        {"source": "双向中继系统", "target": "信号空间对齐技术SSA", "type": "应用于"},
+        {"source": "信号空间对齐技术SSA", "target": "IA技术", "type": "结合"},
+        {"source": "信号空间对齐技术SSA", "target": "SVD技术", "type": "基于"},
+        {"source": "SVD技术", "target": "波束成型", "type": "联合设计"},
+        {"source": "IA技术", "target": "DOF性能", "type": "提高"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "信道矩阵", "en": "Channel Matrix"},
+        {"title": "加性噪声", "en": "Additive Noise"},
+        {"title": "预编码向量", "en": "Precoding Vector"},
+        {"title": "波束成形矩阵", "en": "Beamforming Matrix"},
+        {"title": "干扰消除", "en": "Interference Cancellation"},
+        {"title": "信干噪比", "en": "Signal-to-Interference-plus-Noise Ratio (SINR)"},
+        {"title": "奇异值分解", "en": "Singular Value Decomposition (SVD)"},
+        {"title": "用户调度", "en": "User Scheduling"},
+        {"title": "功率控制", "en": "Power Control"}
+    ],
+    "relations": [
+        {"source": "信道矩阵", "target": "加性噪声", "type": "包含"},
+        {"source": "预编码向量", "target": "波束成形矩阵", "type": "包含"},
+        {"source": "波束成形矩阵", "target": "干扰消除", "type": "实现"},
+        {"source": "干扰消除", "target": "信干噪比", "type": "影响"},
+        {"source": "信干噪比", "target": "奇异值分解", "type": "影响"},
+        {"source": "奇异值分解", "target": "预编码向量", "type": "实现"},
+        {"source": "用户调度", "target": "预编码向量", "type": "实现"},
+        {"source": "用户调度", "target": "信道矩阵", "type": "依赖"},
+        {"source": "功率控制", "target": "波束成形矩阵", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "中继可以消除对间干扰", "en": "Relay can eliminate interferences"},
+        {"title": "机会分集可以降低对间干扰", "en": "Opportunistic diversity can reduce interferences"},
+        {"title": "SINR是系统性能的关键因素", "en": "SINR is the key factor of system performance"},
+        {"title": "OSSA方案可以提升系统容量", "en": "OSSA scheme can improve system capacity"},
+        {"title": "用户调度可以提高系统容量", "en": "User scheduling can improve system capacity"}
+    ],
+    "relations": [
+        {"source": "中继可以消除对间干扰", "target": "SINR是系统性能的关键因素", "type": "cause-effect"},
+        {"source": "机会分集可以降低对间干扰", "target": "SINR是系统性能的关键因素", "type": "cause-effect"},
+        {"source": "SINR是系统性能的关键因素", "target": "OSSA方案可以提升系统容量", "type": "cause-effect"},
+        {"source": "OSSA方案可以提升系统容量", "target": "用户调度可以提高系统容量", "type": "cause-effect"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "双向中继与多向中继方案", "en": "Bidirectional and multi-way relay schemes"},
+        {"title": "物理层网络编码技术和模拟网络编码技术", "en": "Physical layer network coding and analog network coding"},
+        {"title": "功率配置方案", "en": "Power allocation scheme"},
+        {"title": "中继选择技术", "en": "Relay selection technology"},
+        {"title": "波束成型技术", "en": "Beamforming technology"},
+        {"title": "MuD技术", "en": "MuD technology"},
+        {"title": "CSI信息", "en": "CSI information"},
+        {"title": "CNO-A方案", "en": "CNO-A scheme"},
+        {"title": "CNO-S方案", "en": "CNO-S scheme"}
+    ],
+    "relations": [
+        {"source": "双向中继与多向中继方案", "target": "物理层网络编码技术和模拟网络编码技术", "type": "相关"},
+        {"source": "物理层网络编码技术和模拟网络编码技术", "target": "双向中继与多向中继方案", "type": "相关"},
+        {"source": "功率配置方案", "target": "双向中继与多向中继方案", "type": "相关"},
+        {"source": "中继选择技术", "target": "双向中继与多向中继方案", "type": "相关"},
+        {"source": "波束成型技术", "target": "双向中继与多向中继方案", "type": "相关"},
+        {"source": "MuD技术", "target": "双向中继与多向中继方案", "type": "相关"},
+        {"source": "CSI信息", "target": "CNO-A方案", "type": "前置条件"},
+        {"source": "CNO-A方案", "target": "CNO-S方案", "type": "改进"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多用户双向中继系统", "en": "Multi-user bidirectional relay system"},
+        {"title": "用户调度方案", "en": "User scheduling scheme"},
+        {"title": "预编码矩阵设计", "en": "Precoding matrix design"},
+        {"title": "信道增益模值", "en": "Channel gain magnitude"},
+        {"title": "正交特性", "en": "Orthogonal property"},
+        {"title": "容量", "en": "Capacity"}
+    ],
+    "relations": [
+        {"source": "多用户双向中继系统", "target": "用户调度方案", "type": "包含"},
+        {"source": "多用户双向中继系统", "target": "预编码矩阵设计", "type": "包含"},
+        {"source": "预编码矩阵设计", "target": "信道增益模值", "type": "涉及"},
+        {"source": "用户调度方案", "target": "信道增益模值", "type": "涉及"},
+        {"source": "正交特性", "target": "消除用户对间的干扰", "type": "实现"},
+        {"source": "容量", "target": "系统和速率", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "CN用户调度算法",
+            "en": "CN User Scheduling Algorithm"
+        },
+        {
+            "title": "CNO-A用户调度方案",
+            "en": "CNO-A User Scheduling Scheme"
+        },
+        {
+            "title": "CNO-S用户调度方案",
+            "en": "CNO-S User Scheduling Scheme"
+        },
+        {
+            "title": "信道强度",
+            "en": "Channel Strength"
+        },
+        {
+            "title": "用户对",
+            "en": "User Pair"
+        },
+        {
+            "title": "干扰",
+            "en": "Interference"
+        },
+        {
+            "title": "CSI信息",
+            "en": "CSI Information"
+        }
+    ],
+    "relations": [
+        {
+            "source": "CN用户调度算法",
+            "target": "CNO-A用户调度方案",
+            "type": "improvement"
+        },
+        {
+            "source": "CN用户调度算法",
+            "target": "CNO-S用户调度方案",
+            "type": "improvement"
+        },
+        {
+            "source": "信道强度",
+            "target": "CN用户调度算法",
+            "type": "attribute"
+        },
+        {
+            "source": "用户对",
+            "target": "CN用户调度算法",
+            "type": "attribute"
+        },
+        {
+            "source": "用户对",
+            "target": "CNO-A用户调度方案",
+            "type": "input"
+        },
+        {
+            "source": "用户对",
+            "target": "CNO-S用户调度方案",
+            "type": "input"
+        },
+        {
+            "source": "干扰",
+            "target": "CN用户调度算法",
+            "type": "limitation"
+        },
+        {
+            "source": "CSI信息",
+            "target": "CNO-A用户调度方案",
+            "type": "input"
+        },
+        {
+            "source": "CSI信息",
+            "target": "CNO-S用户调度方案",
+            "type": "input"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CNO-S用户调度算法", "en": "CNO-S User Scheduling Algorithm"},
+        {"title": "CNO-A用户调度算法", "en": "CNO-A User Scheduling Algorithm"},
+        {"title": "CN用户调度算法", "en": "CN User Scheduling Algorithm"},
+        {"title": "CSI开销", "en": "CSI Overhead"},
+        {"title": "和速率", "en": "Sum Rate"},
+        {"title": "备选用户", "en": "Candidate Users"},
+        {"title": "阈值", "en": "Threshold"},
+        {"title": "实现复杂度", "en": "Implementation Complexity"}
+    ],
+    "relations": [
+        {"source": "CNO-S用户调度算法", "target": "CNO-A用户调度算法", "type": "combination"},
+        {"source": "CNO-S用户调度算法", "target": "CN用户调度算法", "type": "combination"},
+        {"source": "CNO-S用户调度算法", "target": "和速率", "type": "affects"},
+        {"source": "CNO-S用户调度算法", "target": "备选用户", "type": "uses"},
+        {"source": "CNO-S用户调度算法", "target": "阈值", "type": "uses"},
+        {"source": "CNO-S用户调度算法", "target": "实现复杂度", "type": "affects"},
+        {"source": "CNO-A用户调度算法", "target": "和速率", "type": "affects"},
+        {"source": "CNO-A用户调度算法", "target": "备选用户", "type": "uses"},
+        {"source": "CNO-A用户调度算法", "target": "实现复杂度", "type": "affects"},
+        {"source": "CN用户调度算法", "target": "和速率", "type": "affects"},
+        {"source": "CN用户调度算法", "target": "备选用户", "type": "uses"},
+        {"source": "CSI开销", "target": "CNO-S用户调度算法", "type": "affects"},
+        {"source": "CSI开销", "target": "CNO-A用户调度算法", "type": "affects"},
+        {"source": "CSI开销", "target": "CN用户调度算法", "type": "affects"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多用户双向中继系统", "en": "Multi-user bidirectional relay system"},
+        {"title": "用户调度方案", "en": "User scheduling scheme"},
+        {"title": "CN方案", "en": "CN scheme"},
+        {"title": "CNO-A方案", "en": "CNO-A scheme"},
+        {"title": "CNO-S方案", "en": "CNO-S scheme"},
+        {"title": "能量收集技术", "en": "Energy harvesting technology"},
+        {"title": "SWIPT技术", "en": "SWIPT technology"},
+        {"title": "中继选择技术", "en": "Relay selection technology"},
+        {"title": "长期平均系统和速率", "en": "Long-term average system and rate"}
+    ],
+    "relations": [
+        {"source": "多用户双向中继系统", "target": "用户调度方案", "type": "包含"},
+        {"source": "用户调度方案", "target": "CN方案", "type": "包含"},
+        {"source": "用户调度方案", "target": "CNO-A方案", "type": "包含"},
+        {"source": "用户调度方案", "target": "CNO-S方案", "type": "包含"},
+        {"source": "能量收集技术", "target": "SWIPT技术", "type": "包含"},
+        {"source": "SWIPT技术", "target": "中继选择技术", "type": "包含"},
+        {"source": "用户调度方案", "target": "长期平均系统和速率", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SWIPT系统",
+            "en": "SWIPT System"
+        },
+        {
+            "title": "中继节点",
+            "en": "Relay Node"
+        },
+        {
+            "title": "能量收集",
+            "en": "Energy Harvesting"
+        },
+        {
+            "title": "信道向量",
+            "en": "Channel Vector"
+        },
+        {
+            "title": "瑞利衰落",
+            "en": "Rayleigh Fading"
+        },
+        {
+            "title": "信噪比",
+            "en": "Signal-to-Noise Ratio"
+        },
+        {
+            "title": "能量消耗",
+            "en": "Energy Consumption"
+        },
+        {
+            "title": "优化目标",
+            "en": "Optimization Objective"
+        },
+        {
+            "title": "凸优化问题",
+            "en": "Convex Optimization Problem"
+        },
+        {
+            "title": "拉格朗日形式",
+            "en": "Lagrange Form"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SWIPT System",
+            "target": "Relay Node",
+            "type": "包括"
+        },
+        {
+            "source": "SWIPT System",
+            "target": "Energy Harvesting",
+            "type": "包括"
+        },
+        {
+            "source": "Relay Node",
+            "target": "Energy Harvesting",
+            "type": "参与"
+        },
+        {
+            "source": "Relay Node",
+            "target": "Channel Vector",
+            "type": "包括"
+        },
+        {
+            "source": "Channel Vector",
+            "target": "Rayleigh Fading",
+            "type": "服从"
+        },
+        {
+            "source": "Relay Node",
+            "target": "Signal-to-Noise Ratio",
+            "type": "影响"
+        },
+        {
+            "source": "Relay Node",
+            "target": "Energy Consumption",
+            "type": "影响"
+        },
+        {
+            "source": "Optimization Objective",
+            "target": "Convex Optimization Problem",
+            "type": "转化为"
+        },
+        {
+            "source": "Convex Optimization Problem",
+            "target": "Lagrange Form",
+            "type": "转化为"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "中继选择",
+            "en": "Relay selection"
+        },
+        {
+            "title": "OMAS算法",
+            "en": "OMAS algorithm"
+        },
+        {
+            "title": "POMAS算法",
+            "en": "POMAS algorithm"
+        },
+        {
+            "title": "平均和速率",
+            "en": "Average sum-rate"
+        },
+        {
+            "title": "收敛性",
+            "en": "Convergence"
+        },
+        {
+            "title": "能量吸收率",
+            "en": "Energy absorption rate"
+        },
+        {
+            "title": "功率约束",
+            "en": "Power constraint"
+        },
+        {
+            "title": "信道状态信息",
+            "en": "Channel state information"
+        }
+    ],
+    "relations": [
+        {
+            "source": "中继选择",
+            "target": "OMAS算法",
+            "type": "包含"
+        },
+        {
+            "source": "中继选择",
+            "target": "POMAS算法",
+            "type": "包含"
+        },
+        {
+            "source": "OMAS算法",
+            "target": "收敛性",
+            "type": "涉及"
+        },
+        {
+            "source": "POMAS算法",
+            "target": "平均和速率",
+            "type": "涉及"
+        },
+        {
+            "source": "中继选择",
+            "target": "能量吸收率",
+            "type": "涉及"
+        },
+        {
+            "source": "功率约束",
+            "target": "中继选择",
+            "type": "约束"
+        },
+        {
+            "source": "信道状态信息",
+            "target": "POMAS算法",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "OMAS方案", "en": "OMAS scheme"},
+        {"title": "POMAS方案", "en": "POMAS scheme"},
+        {"title": "SWIPT场景", "en": "SWIPT scenario"},
+        {"title": "双向中继系统", "en": "Bidirectional relay system"},
+        {"title": "用户调度算法", "en": "User scheduling algorithm"},
+        {"title": "机会干扰对齐", "en": "Opportunistic interference alignment"},
+        {"title": "中继调度算法", "en": "Relay scheduling algorithm"},
+        {"title": "信道强度", "en": "Channel strength"},
+        {"title": "和速率性能", "en": "Sum rate performance"},
+        {"title": "能量采集", "en": "Energy harvesting"}
+    ],
+    "relations": [
+        {"source": "OMAS方案", "target": "和速率性能", "type": "提升"},
+        {"source": "OMAS方案", "target": "最小所需采集能量", "type": "受约束"},
+        {"source": "POMAS方案", "target": "和速率性能", "type": "折中"},
+        {"source": "POMAS方案", "target": "平均收集的能量", "type": "提升"},
+        {"source": "SWIPT场景", "target": "中继调度算法", "type": "涉及"},
+        {"source": "双向中继系统", "target": "用户调度算法", "type": "问题"},
+        {"source": "用户调度算法", "target": "机会干扰对齐", "type": "基于"},
+        {"source": "用户调度算法", "target": "信道强度", "type": "考虑"},
+        {"source": "用户调度算法", "target": "中继端计算复杂度", "type": "降低"},
+        {"source": "用户调度算法", "target": "CSI开销", "type": "降低"},
+        {"source": "中继调度算法", "target": "能量采集", "type": "涉及"},
+        {"source": "和速率性能", "target": "收集到的能量", "type": "折中"},
+        {"source": "和速率性能", "target": "系统容量", "type": "提升"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {
+            "title": "模拟网络编码",
+            "en": "Analog Network Coding"
+        }
+    ],
+    "relations": []
+}

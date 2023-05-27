@@ -1,0 +1,27 @@
+5.4.2TRECVID2016MED竞赛
+1	.实验设置
+TREC 视频检索系列测评(TREC Video Retrieval Evaluation, TRECVID)是由美国 国家标准技术协会(National Institute of Standards and Technology, NIST)组织的视频 信息检索领域的国际权威测评，旨在以公平公开的评测方式展现视频检索的最新技术 和进展，从而推动视频检索及相关技术的发展。评测自2001年起每年举行一次，包 括多个视频内容理解任务，极具挑战性，因而吸引了超过100家世界知名大学、研究 所和企业参与。本人所在的实验室参加了 TRECVED2016 MED〔i刀Pre-Specified Events 的评测，评测提交的结果采用了本文所提的方法
+参加评测的mAP结果如表5-5所示。
+表 5-5 TRECVID2016 MED 竞赛结果
+Teams	PS_SUB_10EX	PS_SUB_100EX	Platform
+Ours(single model)	0.336	0.469	SML
+Ours(combined model)	0354	0.490	SML
+Etter	0.014		SML
+INF	0.298		SML
+ITICERTH	0.318	0.462	SML
+KU-ISPL	0.209	0.340	SML
+MCIS	0.004	0.004	SML
+MediaMill(FullAsSub)	0.354		SML
+NIIHitachiUIT	0.007		SML
+TokyoTech	0.279	0.415	SML
+VIREO	0.335	0.419	0。	MED
+67
+nttfudan	0.328	0.457	SML
+其中“Ours(single model)”为本文单模型方法，即利用GoogleNetl2988c模型进行 特征提取，VLAD进行特征融合，SVM进行类别预测的结果；而“Ours(combined model)”为本文的多模型融合方法，融合了 GoogleNetl2988c和ResNetl52两种模型。 “Platform”表示测试平台占用资源规模大小，占用资源规模越小意味着方法越容易实 施、适用性越广，其中“SML”表示使用小规模平台，“MED”表示中规模平台。
+图5-3给出了多模型混合方法在各个多媒体事件检测上的准确率。
+iaa
+獭 10EX W 2 0GEX
+图5-3 MED16竞赛多模型混合方法结果
+2	.实验结果分析
+由表5-5可知，本文的方法利用小规模平台达到较高的准确率，其中多模型方法 在两种数据集下均达到了最高的准确率，而单模型方法与其他队伍的方法相比优势也 较大。
+通过图5-3可知，多数事件获得了较高的准确率，而且100EX的结果始终高于 10EX的结果，这说明扩大样本的数量对于提高多媒体事件检测的准确率是有帮助的。 但一些个别的事件始终维持在较低的准确率上，这也说明多媒体事件检测框架上还有 较大的改进空间，来提升对各种多媒体事件的检测效果。

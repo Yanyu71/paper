@@ -1,0 +1,3 @@
+3.2.2初始条件
+初始时，UE包含任何ISIM和USIM应用或只有USIM的UICC应用,且还 没有注册的IMS服务，但是包含激活的PDP上下文，并且UE已经发现SS并通 过一系列步骤联系上P-CSCFo
+SS配置了 IMSAKA算法的共享密钥，与UE上装配的UICC卡的IMS私有 用户身份(IMPI)相关联。SS可以对该IMPI执行AKAV1-MD5认证算法(TS 33.203)。无论TCP,还是UDP协议，SS监听SIP默认端口 5060。

@@ -1,0 +1,2 @@
+第四章基于Meta分布的移动异构网络空时协作性能分析
+第二、三章以标准成功概率和Meta分布为指标，对多种CoMP技术在HCN中 的性能进行分析。在本章中，将CoMP作为一项“空域协作”技术，进一步考虑 “时域上的协作”［125］,即混合自动重传请求(Hybrid automatic repeat request, HARQ) 技术，研究其联合方案对HCN的性能影响，利用Meta分布增强对该“空时协作 (Spatiotemporal cooperation)”联合方案的理解。

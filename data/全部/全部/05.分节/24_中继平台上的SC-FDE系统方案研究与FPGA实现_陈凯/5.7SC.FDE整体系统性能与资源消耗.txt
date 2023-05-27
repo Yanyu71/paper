@@ -1,0 +1,33 @@
+5.7SC.FDE整体系统性能与资源消耗
+图5- 19SC-FDE系统效果图
+图5- 19中的画出的波形为Modelsim仿真同步均衡系统得到的数据，将数据导入 Matlab作图得到。可以看出，输入数据为受到多径效应影响的正弦波，通过均衡后，输 出波形恢复为正弦波，仅存在幅值上的差别。
+Flow Status
+Quartus n Version
+Revision Name
+Top-level Entity Name
+Family
+Device
+Timing Models
+，Total logic elements
+Total combinational fumifons
+Dedicated logic registers
+Total registers
+Total pins
+Total virtual pins
+Total memory bits
+Embedded Multiplier 9-bft elements Total PUs	Successful - Mon Jan 05 13:57:22 2015 10.1 Build 153 11/29/2010 SJ Full Verston syn!28	.
+system„top
+Cyclone m
+EP3C40F484C7
+Final
+15^12 / 39,600 (39%)
+11,189/39,600 (28 %)
+13,0»7 / 39,600 ( 33 %)
+13087
+45/332( 14%)
+0
+541,408 / 1,161,216 (47%)
+64 / 252 ( 25%)
+0/4(0%)
+图5- 20 SC-FDE系统资源消耗情况
+从系统的资源消耗中可以看出，正如上文分析，存储器资源的消耗增加比较多，而 逻辑资源只增加了大约50%o如果不采用复用FFT与1FFT的方案，逻辑资源的增加量 大约是100%。因此，可以看出，本系统在节约FPGA资源上达到最优。

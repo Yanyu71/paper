@@ -1,0 +1,23 @@
+5.4.1与其他方法的对比实验
+为了测试所提方法的性能，本文与目前具有较好性能的方法进行了实验比较，表 5-3列出了 MED14_10EX的mAP结果对比。
+表5-3 MED14J0EX数据集上与其他方法的对比实验
+方法	mAP
+Ours(VGG19)	0.232
+Ours(GoogleNet 12988c)	0.279
+Rank SVM	<0,1
+C3D	<0.1
+B-LSA	0.186
+IDT+DCC	0.164
+IDT+CNN+wSML+SVM	0.258
+Joint Event Detection	0.252
+表5-3中的Ours(VGG19)为本文提出的框架在使用VGG19提取帧级别特征时的 结果，Ours(GoogleNetl2988c)为本文提出的框架在使用GoogleNetl2988c提取帧级别 特征时的性能。两个CNN模型均采用在最后一个卷积层均按照密集局部特征提取的 方式提取1X1、2X2、3X3和6X6四种尺度特征图的响应作为帧级别特征。
+Rank SVM和C3D方法分别为实现了文献［11］的方法和使用［3］的模型在多媒体事 件检测数据集上进行测试的结果；而B-LSA, IDT+DCC, IDT+CNN+wSML+SVM, Joint Event Detection 分别为文献［37］、［38］、［39］和［40］中提及的其在 MED14_10EX 数据集上的结果。
+本文的方法与其他论文提及的方法在MED14_100EX的mAP对比如表5-4所示。
+表5-4 MED14J00EX数据集上与其他方法的对比实验结果
+方法	mAP
+66
+Ours(GoogleNet12988c)	0.380
+Idt(cmu's method)	0.276
+Semantic Saliency and Nearly-Isotonic SVM	0.344
+其中 Idt(cmu's method)> Semantic Saliency and Nearly-Isotonic SVM 分别为文献 ［2］、［41］中提及的其在MED14_100EX数据集上的结果。
+从表5-3和表5-4的对比实验可以看出，本文提出的MED检测方法在准确率上 明显优于现有文献中的其他方法。

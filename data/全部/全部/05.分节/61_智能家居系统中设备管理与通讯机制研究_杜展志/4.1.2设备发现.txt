@@ -1,0 +1,39 @@
+4.1.2设备发现
+a)已配置网络信息设备的入网发现
+对于已经配置网络信息设备的发现主要是通过About机制实现的，其中设备管 理器会保持对总线上About信息的监听，如图4-3所示：
+public class Aj'lan琴er unplements 且比ulLt逋?鲍丁[
+@Overri 立
+public void	Sttinf busName, find mt version, short port,
+final AboutObjecOescriptionO objectDesonptions. final \£ap<String. Varian;〉abou:Data}{
+new Thr±a&、/v RiamablefX
+gCh,emde
+public void n»0{
+(!Z)^*ic^-anaferImpr.De\'ic£vIana£erItnpl.fe:Instance-O)
+.onAimouncecientfbusName.pert.OtjectDesenptions.aboutData'.]
+}).sranO；
+图4・3已配置网络信息设备发现代码
+并将监听到的信息转换为已配置网络信息设备的数据格式。需要强调的是，在 实现过程中，由于about广播的数据是〈String,Variant〉,在获取数据时需要注意数据格 式，将其转换为相应的类型。本智能家居系统已配置入网信息设备类数据成员如表 4-1所示：
+表4-1已配置网络信息设备数据成员
+数据字段	变量名
+设备名称	friendlyNaine
+总线名称	busName
+端口号	port
+总线对象描述	obj ectDescription
+about元数据	aboutData
+设备ID	deviceld
+设备应用ID	uniqueld （唯一标识字段）
+设备默认语言	defaultLanguage
+62
+续表4-1已配置网络信息设备数据成员
+数据字段	变量名
+设备名称	friendlyName
+设备支持Uri	supportUrl
+设备状态	status
+b）未入网设备发现
+对于未入网设备的发现，主要通过如图4-4所示的Onboarding机制的scan（）API 来实现。再通过注册的监听器对扫描结果进行数据抽象，本智能家居系统未入网设 备类数据成员如表4-2所示：
+图45未入网设备发现核心代码
+表4-2未配置网络信息设备数据成员
+数据字段	变量名
+AP名称	SSID（唯一标示符）
+总线名称	AP信息：包含名称、类型、和信号强弱
+设备状态	status：离线,在线已入网、在线未入网

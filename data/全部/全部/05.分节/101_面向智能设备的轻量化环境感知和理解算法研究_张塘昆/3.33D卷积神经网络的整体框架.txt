@@ -1,0 +1,7 @@
+3.33D卷积神经网络的整体框架
+Layer
+Repeat
+Output Size
+Input Clips
+图3-10本文所使用3D神经网络结构示意图
+本文所使用的3D卷积神经网络是在2D卷积神经网络RegNetX-400M〔22〕的 基础上进行调整设计过来的，整体设计结构如上图3-10所示，首先会进行 StemBlock3D进行第一次空间维度的下采样，随后特征图进入Stagel, Stagel由 ResBottleneckBlock* 1 组成，Stage2 由 ResBottleneckBlock*2 组成，之后进入 Stage3, Stage3 由 ResBottleneckBlock* 7 组成，Stage4 由 ResBottleneckBlock* 12 组成，最 后将输出的特征图进行全局池化，然后进行维度上的拉伸，向量再送入全连接层 进行分类。

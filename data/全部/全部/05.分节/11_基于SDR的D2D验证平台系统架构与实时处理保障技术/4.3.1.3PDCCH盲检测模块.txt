@@ -1,0 +1,46 @@
+4.3.1.3PDCCH盲检测模块
+PDCCH是ETE协议体系结构下的下行控制信道，承载下行控制信息(DCI), 蜂窝基站通过该信道向蜂窝终端分发资源分配和其他的控制信息。如第三章所述, D2D终端物理层通过对该信道的解码获取蜂窝上行通信资源分配信息，以实现频 谱空洞的探测，同时，PDSCH模块的解码也依赖于对PDCCH信道的解码。本节 仅介绍用于获取蜂窝上行蜂窝通信资源分配信息的PDCCH盲检测部分，支持
+50
+PDSCH模块的PDCCH模块将与PDSCH模块一同介绍。
+在每一个下行子帧中,PDCCH的符号数是由PCFICH信道指示的，而PCFICH 信道的位置在PBCH中被指定，因此为了对PDCCH进行解码，物理层需要先解 码PCFICH信道。
+在ETE系统中，PHICH信道仅承载了 1个比特的PUSCH信道的HARQ的 ACK/NACK信息。但由于蜂窝系统在进行HARQ重传时，不一定仍会通过PDCCH 再次下发资源分配信息，而是仅通过PHICH告知蜂窝终端进行重传，重传时使用 的无线资源与之前完全相同。因此，PDCCH的DCI Format 0与PHICH消息的结 合才是完整的蜂窝上行通信资源分配信息。
+PCFICH模块的主要函数接口如表4-17所示：
+表4-17 PHY PCFICH模块功能接口
+函数接口定义
+CFIDeRsrcMapO
+CFIPath。
+其中CFIDeRsrcMapO函数用于对PCFICH信道进行解资源映射，CFIPathQ 函数用于PCFICH信道的解码。	’、’
+PDCCH盲检测的主要函数接口如表4-18：
+表4-18 PHY PDCCH盲检测模块功能接口
+函数接口定义
+PdcchDeRsrcMapforD2D0
+PdcchPathForD2D0
+其中PdcchDeRsrcMapforD2D°函数用于对PDCCH信道进行解资源映射， PdcchPathForD2D 0函数用于对PDCCH信道DCI Format 0的盲检测。
+PHICH模块的主要函数接口如表4-20所示：
+表4-19 PHY PHICH模块功能接口
+函数接口定义
+HiDeRsrcMapO
+DeHIPath。
+其中HiDeRsrcMap()函数用于对PHICH信道进行解资源映射，DeHIPath() 函数用于对PHICH信道进行解码。
+PDCCH DCI Format 0与PHICH信道解码完成后，物理层接收链路使用表4-20 中的DciHiToPuschRsrcMap()函数将其最终合并为基站对蜂窝上行资源的调度信 息，并以PDCCH Core Msg的形式上报到协议栈。
+表4-20PHY蜂窝上行资源上报功能接口
+函数接口定义
+DciHiToPuschRsrcMapO
+51
+物理层PDCCH盲检测模块的执行逻辑如图4-19所示，其中PCFICH和
+PHICH的处理由接收主线程完成，PDCCH盲检测由PDCCH线程完成：
+接收主线程	PDCCH盲解码线程
+图4-19物理层PDCCH盲检测模块逻辑
+PDSCH 模块
+D2D终端没有复用ETE的PDSCH信道进行D2D业务数据的传输，但由于 PDSCH承载了 SIB(》sfem Information Blocks'),其中携带了一些上行信道资源配 置信息，因此D2D物理层需要支持PDSCH解码以获取该信息。而对PDSCH进 行解码前需要先通过对PDCCH的解码获取PDSCH上的资源配置情况。PDSCH 模块的主要函数接口如表4-21所示：
+表4-21 PHY PDSCH模块功能接口
+函数接口定义
+PdcchDeRsrcMap()
+PdcchPath()
+PDSCHDeRsrcMap()
+PdschPath()
+其中，PdcchDeRsrcMap()和PdcchPath()函数分别用于对PDCCH的解资源映 射和解码,PDSCHDeRsrcMap()和PdschPath。函数分别用于对PDSCH的解资源映 射和解码。解出SIB消息后,PDSCH模块以Core MSG的形式将其上报到协议栈， 上报的内容包括PRACH信道占用RB资源起始位置、PUCCH占用RB资源起始 位置及长度、蜂窝小区专属参考信号发射功率、蜂窝上行用户静态工作点和蜂窝
+52
+上行通信链路补偿因子等。
+物理层PDSCH模块的执行逻辑如图4-20所示，PDCCH检测和PDSCH解码 均由PDSCH线程完成：
+图4-20物理层PDSCH模块逻辑

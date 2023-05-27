@@ -1,0 +1,6 @@
+3.2.1测试目的
+根据协议规定，鉴权测试例有如下两个目的：
+第一，验证当UE发送REGISTER请求之后，从网侧收到了一条401 (Unauthorized)回复，UE检测该身份验证质询的有效性，验证方式为比较本地 计算的XMAC和该质询的AUTN (authentication)部分的MAC参数是否匹配。
+第二，验证如果本地的XMAC和401 (Unauthorized)的AUTN部分的MAC 参数不匹配时UE是否有如下动作：
+A.UE回复另一条REGISTER给S-CSCF表明质询无效，并且这个接下的来 的REGISER请求不包含’abuts，和* response'授权头分量参数；
+B.继续发送一条新的REGISTER请求，在里面包含了新的Security-Client 头分量和相关地址，以及确认它所支持的安全机制、IPSec算法和参数；并且不 创建一个临时的安全关联。

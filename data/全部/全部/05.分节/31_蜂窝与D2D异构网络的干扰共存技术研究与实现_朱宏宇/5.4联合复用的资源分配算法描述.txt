@@ -1,0 +1,29 @@
+5.4联合复用的资源分配算法描述
+如5.3小节所分析的，在约束C7下提出的算法虽然有较好的时间性能，但 是会有CUE的干扰余量没有被用尽的现象。为了更好地利用CUE的干扰余量来 获得更高的D2D速率，本小节尝试让多个DUE复用同?块资源，但仍需满足 5.2小节模型中的各种约朿。
+当多个DUE复用同-资源段时分配干扰功率的难点夜于DUE复用功率的变 化会导致部分资源占用方案能达到的D2D速率变化，并且…种资源占用方案可 能占用连续的多段资源，每段资源上的不同的干扰功率分配会对方案速率带来多 重影响，在这种情况下提出最优算法是一个很困难的问题。因此，本小节提出的 算法以5.3小节所述的单独复用的资源分配算法为基础，尝试在每次单独复用的 资源分配完成后再对各资源段上剩余的干扰余量进行进一步分配以提高D2D总 吞吐。算法中每次循环一开始先根据己完成资源分配的DUE的资源占用及发送 功率更新各资源段上的干扰功率余量值，并据此更新未完成资源分配的DUE在 各种资源占用方案下的速率，基于更新了的D2D速率，用单独复用资源分配算 法对未完成资源分配的DUE进行资源分配，更新已完成资源分配的DUE集合， 进行下- -次循环。循环终止条件是所有DUE都已完成资源分配或所有资源段上 的干扰余量都为零。这样在每次循环中是在单独复用的约束下进行的资源分配， 而只在各次循环之间存在联合复用的情况，联合复用时干扰功率分配的规则是 “先到先得”，即较先被确定资源分配情况的DUE有更大的优先权使用干扰余量, 这样做的理由是较先被确定的DUE能达到较大的速率，把干扰余量分配给它能 得到更大的增益。
+算法的伪代码如下：
+Greedy-unoin(D2DChunkRate,M,N)
+1s <-0
+2tot al Rate 0
+3C<-0
+4D 0
+5d —0
+6while s M
+7> recalculate remain interference power for eveiy CUE
+8￡> according to D2D resource allocation in last iteration
+9do RF ? updateReinamJnterf(d. C)
+1()	> recalculate rate for every un-conliged D2D of
+11> every configuration under new RF
+12updateD2DRate(RF. D, D2DChunkRale)
+13CD
+14d 4- 0
+15d> do D2D resource	allocation	under EXCLUSIVE constraint
+16lC,d, max Rate] -i—	exclusiveD2DRA (D2 DC h u n k Ra I e.	M	—	s. N)
+17> update total Rate and conligcd D2D set I)
+18total Rate ― total	Rate +	marRate
+19D	—D|Jd
+2()	[>	update conliged	D2D number	s	and unoccupied chunk number b
+21	s	s + length[<\]
+算法的输入与5.3小节所述的单独复用贪心算法的输入相同。代码1?5行进 行了变量定义及初始化：s表示当前已经完成资源分配的DUE数目，初始时没 有DUE被分配了资源，初始化为0； totalRate表示总D2D速率，初始化为0； 集合C表示在每次循环中分配给DUE的资源段编号，初始化为空；集合D表示 已经分配了资源的DUE集合，初始化为空；集合d表示每次循环中被分配了资 源的DUE集合。代码6~21行是循环主体，调用了三个函数:updateRemainlnterfs updateD2DRate 以及 exclusiveD2DRAo updateRemainlnterf 函数根据上次循环中 所确定的DUE的资源占用情况更新各资源段的干扰功率余量值；updateD2DRate 根据已更新的干扰余量值更新尚未进行资源分配的DUE的速率； exclusiveD2DRA即5.3小节所述的单独复用算法，它在单独复用的约束下尝试 让未分配资源的DUE在剩余干扰余量上获得最大吞吐。每次循环先调用 updateRemainlnterf更新资源段上的干扰余量，接着调用updateD2DRate更新DUE 能达到的速率，再调用exclusiveD2DRA来完成剩余干扰余量上的DUE资源分 配。第18?21行更新各集合及变量的值。
+假设有N段资源段，有M个DUE需要进行资源分配，计算D2DChunkRate 数组的复杂度为。（枷2）；由于每次迭代至少能确定一个DUE的资源分配，因此迭代总次数小于等于M,每次迭代中exclusiveD2DRA的复杂度最高，最差情况 下为。"2）。因此算法的最差时间复杂度为O{M2N2）,相比于5.3小节中单独 复用的资源分配算法复杂度有所提高，但相比于遍历的算法有较低的复杂度。
+本算法能协调各DUE的发送功率，且能获得局部最优的D2D吞吐值；在一 个DUE复用了多段资源时，若出现本DUE未完全使用某些资源段上的干扰余 量的情况，这些剩余的干扰值能够在后面的循环中被其他DUE所使用，从而提 高了整体D2D吞吐。

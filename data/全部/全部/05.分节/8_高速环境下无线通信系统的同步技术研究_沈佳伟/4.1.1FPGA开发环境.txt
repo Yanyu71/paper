@@ -1,0 +1,3 @@
+4.1.1FPGA开发环境
+FPGA (Field Programmable Gate Array )是现场可编程门阵列，它是在 CPLD 的基础上发展起来的高性能可编程逻辑器件，一般采用SRAM工艺，集成度很 高，可以完成极其复杂的时序与组合逻辑电路功能，非常适用于高速、高密度的 高端数字逻辑电路设计领域。因此，作为原型机的设计与实现，我们采用了能够 进行灵活编程实现的FPGA技术，便于原型机的研发与编程以及反复的修改，节 省了开发成本。
+本文硬件实现用的FPGA开发板是ALTERA公司的Cyclone III系列的FPGA 开发板 DK-DEV-3C120N，其中 FPGA 芯片的型号是 EP3C120F780C7N。该 FPGA 芯片核心供电电压是1.2V,拥有119088个逻辑单元(LE),可使用I/O引脚为532 个，片上存储单元3981312bits,内嵌乘法器数量为576个，还有4个锁相环(PLL) 和20个全局时钟。如此丰富的硬件资源为原型机的实现奠定了基础。采用的硬 件编程语言是Verilog HDL,主要的开发环境是ALTERA公司的FPGA开发环境 Quartus II 9.L 配合的硬件仿真环境是 Matlab 和 ModelSim-Altera 6.5b(Quartus II 9.1) Starter Edition o

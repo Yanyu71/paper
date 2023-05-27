@@ -1,0 +1,2 @@
+3.4DPSDPB的Meta
+在本节中，关注DPS和DPB的联合方案——下行DPS/DPB,分析DPS/DPB场 景下一般用户和最坏情况用户的Meta分布及相关性能指标。首先给出DPS/DPB方 案下的两类用户的SIR模型。

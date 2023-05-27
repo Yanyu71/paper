@@ -1,0 +1,984 @@
+﻿{
+    "knowledge_points": [
+        {"title": "深度学习", "en": "Deep Learning"},
+        {"title": "计算机视觉", "en": "Computer Vision"},
+        {"title": "目标检测", "en": "Object Detection"},
+        {"title": "小目标检测", "en": "Small Object Detection"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Networks"},
+        {"title": "区域提名", "en": "Region Proposal"},
+        {"title": "端到端", "en": "End-to-End"}
+    ],
+    "relations": [
+        {"source": "深度学习", "target": "计算机视觉", "type": "属于"},
+        {"source": "计算机视觉", "target": "目标检测", "type": "包含"},
+        {"source": "目标检测", "target": "小目标检测", "type": "特例"},
+        {"source": "卷积神经网络", "target": "目标检测", "type": "基础"},
+        {"source": "区域提名", "target": "目标检测", "type": "方法"},
+        {"source": "端到端", "target": "目标检测", "type": "方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FastR-CNN", "en": "FastR-CNN"},
+        {"title": "RPN", "en": "Region Proposal Network"},
+        {"title": "FasterR-CNN", "en": "Faster R-CNN"},
+        {"title": "YOLO", "en": "You Only Look Once"},
+        {"title": "SSD", "en": "Single Shot Detector"},
+        {"title": "FPN", "en": "Feature Pyramid Network"},
+        {"title": "DSSD", "en": "Deconvolutional Single Shot Detector"},
+        {"title": "RRC", "en": "Recurrent Rolling Convolution"},
+        {"title": "SNIP", "en": "Scale Normalization for Image Pyramids"},
+        {"title": "SNIPER", "en": "Scale Normalization for Image Pyramid with Efficient Resampling"}
+    ],
+    "relations": [
+        {"source": "FastR-CNN", "target": "SPP-NET", "type": "改进"},
+        {"source": "FastR-CNN", "target": "R-CNN", "type": "改进"},
+        {"source": "FastR-CNN", "target": "分层采样", "type": "应用"},
+        {"source": "FastR-CNN", "target": "多任务损失函数", "type": "应用"},
+        {"source": "RPN", "target": "FasterR-CNN", "type": "应用"},
+        {"source": "FasterR-CNN", "target": "端到端训练", "type": "应用"},
+        {"source": "YOLO", "target": "一步检测算法", "type": "提出"},
+        {"source": "SSD", "target": "CNN", "type": "应用"},
+        {"source": "SSD", "target": "先验框", "type": "应用"},
+        {"source": "YOLOv2", "target": "多尺度特征图", "type": "应用"},
+        {"source": "YOLOv2", "target": "跨越层", "type": "应用"},
+        {"source": "YOLOv2", "target": "Darknet-19", "type": "应用"},
+        {"source": "YOLOv3", "target": "Darknet-53", "type": "应用"},
+        {"source": "FPN", "target": "小目标检测", "type": "应用"},
+        {"source": "DSSD", "target": "Resnet-100", "type": "应用"},
+        {"source": "DSSD", "target": "反卷积层", "type": "应用"},
+        {"source": "RRC", "target": "小目标检测", "type": "应用"},
+        {"source": "SNIP", "target": "小目标检测", "type": "应用"},
+        {"source": "SNIPER", "target": "小目标检测", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "小目标检测",
+            "en": "Small Object Detection"
+        },
+        {
+            "title": "三叉戟网络",
+            "en": "Trident Networks"
+        },
+        {
+            "title": "感受野",
+            "en": "Receptive Field"
+        },
+        {
+            "title": "数据增广",
+            "en": "Data Augmentation"
+        },
+        {
+            "title": "采样均衡",
+            "en": "Sampling Balance"
+        },
+        {
+            "title": "空间均衡",
+            "en": "Spatial Balance"
+        },
+        {
+            "title": "损失均衡",
+            "en": "Loss Balance"
+        },
+        {
+            "title": "联合分割",
+            "en": "Joint Segmentation"
+        },
+        {
+            "title": "全卷积网络",
+            "en": "Fully Convolutional Network"
+        },
+        {
+            "title": "自顶向下",
+            "en": "Top-Down"
+        },
+        {
+            "title": "跳层连接",
+            "en": "Skip Connection"
+        },
+        {
+            "title": "知识的递归注意神经网络",
+            "en": "Knowledge-based Recurrent Attentive Neural Network"
+        },
+        {
+            "title": "梯度协调机制损失",
+            "en": "Gradient Harmonized Mechanism Loss"
+        },
+        {
+            "title": "旋转的数据集增强策略",
+            "en": "Rotation-based Data Augmentation Strategy"
+        },
+        {
+            "title": "掩膜的小目标实例增强策略",
+            "en": "Mask-based Small Object Instance Augmentation Strategy"
+        }
+    ],
+    "relations": [
+        {
+            "source": "三叉戟网络",
+            "target": "小目标检测",
+            "type": "提出"
+        },
+        {
+            "source": "三叉戟网络",
+            "target": "感受野",
+            "type": "解决"
+        },
+        {
+            "source": "数据增广秘籍",
+            "target": "小目标检测",
+            "type": "提出"
+        },
+        {
+            "source": "PS",
+            "target": "小目标检测",
+            "type": "提出"
+        },
+        {
+            "source": "联合分割",
+            "target": "小目标检测",
+            "type": "提出"
+        },
+        {
+            "source": "全卷积网络",
+            "target": "联合分割",
+            "type": "应用"
+        },
+        {
+            "source": "自顶向下",
+            "target": "小目标检测",
+            "type": "应用"
+        },
+        {
+            "source": "跳层连接",
+            "target": "小目标检测",
+            "type": "应用"
+        },
+        {
+            "source": "光学遥感图像",
+            "target": "小目标检测",
+            "type": "特定应用"
+        },
+        {
+            "source": "知识的递归注意神经网络",
+            "target": "小目标检测",
+            "type": "提出"
+        },
+        {
+            "source": "梯度协调机制损失",
+            "target": "小目标检测",
+            "type": "应用"
+        },
+        {
+            "source": "旋转的数据集增强策略",
+            "target": "小目标检测",
+            "type": "提出"
+        },
+        {
+            "source": "掩膜的小目标实例增强策略",
+            "target": "小目标检测",
+            "type": "提出"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FasterR-CNN算法", "en": "FasterR-CNN algorithm"},
+        {"title": "SSD算法", "en": "SSD algorithm"},
+        {"title": "特征尺度上的FPN", "en": "Feature Pyramid Network on scale"},
+        {"title": "图像尺度上的SNIP", "en": "SNIP on image scale"},
+        {"title": "内容维度上的FocalLoss", "en": "FocalLoss on content dimension"},
+        {"title": "MateAnchor", "en": "MateAnchor"},
+        {"title": "特征尺度融合", "en": "Feature scale fusion"},
+        {"title": "特征尺度增强", "en": "Feature scale enhancement"},
+        {"title": "RPN网络", "en": "RPN network"},
+        {"title": "锚框", "en": "Anchor box"},
+        {"title": "交叉熵损失", "en": "Cross-entropy loss"},
+        {"title": "smoothL1损失", "en": "SmoothL1 loss"},
+        {"title": "IOU", "en": "Intersection over Union"}
+    ],
+    "relations": [
+        {"source": "FasterR-CNN算法", "target": "SSD算法", "type": "对比"},
+        {"source": "小目标检测算法", "target": "特征尺度上的FPN", "type": "优化思想"},
+        {"source": "小目标检测算法", "target": "图像尺度上的SNIP", "type": "优化思想"},
+        {"source": "小目标检测算法", "target": "内容维度上的FocalLoss", "type": "优化思想"},
+        {"source": "小目标检测算法", "target": "MateAnchor", "type": "优化思想"},
+        {"source": "小目标检测算法", "target": "特征尺度融合", "type": "优化改进"},
+        {"source": "小目标检测算法", "target": "特征尺度增强", "type": "优化改进"},
+        {"source": "FasterR-CNN算法", "target": "RPN网络", "type": "组成部分"},
+        {"source": "RPN网络", "target": "锚框", "type": "概念"},
+        {"source": "RPN网络", "target": "交叉熵损失", "type": "损失函数"},
+        {"source": "RPN网络", "target": "smoothL1损失", "type": "损失函数"},
+        {"source": "RPN网络", "target": "IOU", "type": "概念"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "ROI池化层",
+            "en": "ROI Pooling Layer"
+        },
+        {
+            "title": "分类回归层",
+            "en": "Classification and Regression Layer"
+        },
+        {
+            "title": "一步检测算法",
+            "en": "One-Stage Detection Algorithm"
+        },
+        {
+            "title": "SSD算法",
+            "en": "Single Shot MultiBox Detector (SSD) Algorithm"
+        },
+        {
+            "title": "Anchor尺寸设计",
+            "en": "Anchor Size Design"
+        }
+    ],
+    "relations": [
+        {
+            "source": "RPN网络生成的候选区域",
+            "target": "ROI池化层",
+            "type": "经过"
+        },
+        {
+            "source": "ROI池化层",
+            "target": "分类回归层",
+            "type": "接入"
+        },
+        {
+            "source": "分类回归层",
+            "target": "目标检测框",
+            "type": "进行边界框修正得到"
+        },
+        {
+            "source": "SSD算法",
+            "target": "一步检测算法",
+            "type": "属于"
+        },
+        {
+            "source": "SSD算法",
+            "target": "Anchor尺寸设计",
+            "type": "采用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "小目标检测", "en": "Small Object Detection"},
+        {"title": "尺度维度的设计与优化", "en": "Scale Dimension Design and Optimization"},
+        {"title": "内容维度的设计与优化", "en": "Content Dimension Design and Optimization"},
+        {"title": "FPN", "en": "Feature Pyramid Network"},
+        {"title": "SNIP", "en": "Scale Normalization for Image Pyramids"}
+    ],
+    "relations": [
+        {"source": "小目标检测", "target": "尺度维度的设计与优化", "type": "包含"},
+        {"source": "尺度维度的设计与优化", "target": "FPN", "type": "方法"},
+        {"source": "尺度维度的设计与优化", "target": "SNIP", "type": "方法"},
+        {"source": "小目标检测", "target": "内容维度的设计与优化", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "FocalLoss",
+            "en": "FocalLoss"
+        },
+        {
+            "title": "MateAnchor",
+            "en": "MateAnchor"
+        },
+        {
+            "title": "类别不平衡",
+            "en": "Class Imbalance"
+        },
+        {
+            "title": "空间不平衡",
+            "en": "Spatial Imbalance"
+        },
+        {
+            "title": "正负样本",
+            "en": "Positive and Negative Samples"
+        },
+        {
+            "title": "交叉熵损失",
+            "en": "Cross-Entropy Loss"
+        },
+        {
+            "title": "困难样本",
+            "en": "Hard Samples"
+        },
+        {
+            "title": "简单样本",
+            "en": "Easy Samples"
+        },
+        {
+            "title": "权重因子",
+            "en": "Weight Factor"
+        },
+        {
+            "title": "聚焦参数",
+            "en": "Focusing Parameter"
+        },
+        {
+            "title": "Anchor机制",
+            "en": "Anchor Mechanism"
+        },
+        {
+            "title": "MetaAnchor函数",
+            "en": "MetaAnchor Function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "类别不平衡",
+            "target": "FocalLoss",
+            "type": "主要代表"
+        },
+        {
+            "source": "正负样本",
+            "target": "FocalLoss",
+            "type": "解决"
+        },
+        {
+            "source": "困难样本",
+            "target": "FocalLoss",
+            "type": "解决"
+        },
+        {
+            "source": "简单样本",
+            "target": "FocalLoss",
+            "type": "解决"
+        },
+        {
+            "source": "交叉熵损失",
+            "target": "FocalLoss",
+            "type": "基础"
+        },
+        {
+            "source": "权重因子",
+            "target": "FocalLoss",
+            "type": "调整"
+        },
+        {
+            "source": "聚焦参数",
+            "target": "FocalLoss",
+            "type": "调整"
+        },
+        {
+            "source": "空间不平衡",
+            "target": "MateAnchor",
+            "type": "主要代表"
+        },
+        {
+            "source": "Anchor机制",
+            "target": "MateAnchor",
+            "type": "解决"
+        },
+        {
+            "source": "小目标检测",
+            "target": "MateAnchor",
+            "type": "增强"
+        },
+        {
+            "source": "MetaAnchor函数",
+            "target": "MateAnchor",
+            "type": "核心"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MetaAnchor框架", "en": "MetaAnchor framework"},
+        {"title": "anchor函数生成器", "en": "anchor function generator"},
+        {"title": "先验知识", "en": "prior knowledge"},
+        {"title": "二层神经网络", "en": "two-layer neural network"},
+        {"title": "特征尺度融合", "en": "feature scale fusion"},
+        {"title": "FSFM", "en": "FeatureScaleFusionModule"},
+        {"title": "最大池化", "en": "max pooling"},
+        {"title": "超像素卷积", "en": "superpixel convolution"}
+    ],
+    "relations": [
+        {"source": "MetaAnchor框架", "target": "先验知识", "type": "has"},
+        {"source": "MetaAnchor框架", "target": "anchor函数生成器", "type": "has"},
+        {"source": "anchor函数生成器", "target": "先验知识", "type": "uses"},
+        {"source": "anchor函数生成器", "target": "二层神经网络", "type": "uses"},
+        {"source": "特征尺度融合", "target": "FSFM", "type": "has"},
+        {"source": "FSFM", "target": "最大池化", "type": "uses"},
+        {"source": "FSFM", "target": "超像素卷积", "type": "uses"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "图像超分辨率重建技术",
+            "en": "Image Super-Resolution Reconstruction Technology"
+        },
+        {
+            "title": "LR",
+            "en": "Low Resolution"
+        },
+        {
+            "title": "HR",
+            "en": "High Resolution"
+        },
+        {
+            "title": "骨干网络",
+            "en": "Backbone Network"
+        },
+        {
+            "title": "卷积操作",
+            "en": "Convolution Operation"
+        },
+        {
+            "title": "特征图",
+            "en": "Feature Map"
+        },
+        {
+            "title": "超像素卷积",
+            "en": "Superpixel Convolution"
+        },
+        {
+            "title": "损失函数",
+            "en": "Loss Function"
+        },
+        {
+            "title": "最大池化",
+            "en": "Max Pooling"
+        },
+        {
+            "title": "FSFM结构",
+            "en": "Feature Fusion Scale Module Structure"
+        },
+        {
+            "title": "VGG-16",
+            "en": "VGG-16"
+        },
+        {
+            "title": "卷积神经网络",
+            "en": "Convolutional Neural Network"
+        },
+        {
+            "title": "池化层",
+            "en": "Pooling Layer"
+        },
+        {
+            "title": "检测速度",
+            "en": "Detection Speed"
+        },
+        {
+            "title": "检测精度",
+            "en": "Detection Accuracy"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LR",
+            "target": "图像超分辨率重建技术",
+            "type": "包含"
+        },
+        {
+            "source": "HR",
+            "target": "图像超分辨率重建技术",
+            "type": "包含"
+        },
+        {
+            "source": "骨干网络",
+            "target": "图像超分辨率重建技术",
+            "type": "包含"
+        },
+        {
+            "source": "卷积操作",
+            "target": "骨干网络",
+            "type": "包含"
+        },
+        {
+            "source": "特征图",
+            "target": "骨干网络",
+            "type": "包含"
+        },
+        {
+            "source": "超像素卷积",
+            "target": "图像超分辨率重建技术",
+            "type": "包含"
+        },
+        {
+            "source": "损失函数",
+            "target": "图像超分辨率重建技术",
+            "type": "包含"
+        },
+        {
+            "source": "最大池化",
+            "target": "FSFM结构",
+            "type": "包含"
+        },
+        {
+            "source": "超像素卷积",
+            "target": "FSFM结构",
+            "type": "包含"
+        },
+        {
+            "source": "特征图",
+            "target": "FSFM结构",
+            "type": "包含"
+        },
+        {
+            "source": "FSFM结构",
+            "target": "骨干网络",
+            "type": "嵌入"
+        },
+        {
+            "source": "VGG-16",
+            "target": "卷积神经网络",
+            "type": "包含"
+        },
+        {
+            "source": "卷积操作",
+            "target": "VGG-16",
+            "type": "包含"
+        },
+        {
+            "source": "池化层",
+            "target": "VGG-16",
+            "type": "包含"
+        },
+        {
+            "source": "检测速度",
+            "target": "卷积神经网络",
+            "type": "约束"
+        },
+        {
+            "source": "检测精度",
+            "target": "卷积神经网络",
+            "type": "约束"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VGG-16模型", "en": "VGG-16 model"},
+        {"title": "FSFM结构", "en": "FSFM structure"},
+        {"title": "FasterR-CNN", "en": "FasterR-CNN"},
+        {"title": "特征尺度增强算法", "en": "Feature Scale Enhancement Algorithm"},
+        {"title": "多尺度感受野增强", "en": "Multi-Scale Receptive Field Enhancement"},
+        {"title": "空洞卷积", "en": "Dilated Convolution"}
+    ],
+    "relations": [
+        {"source": "VGG-16模型", "target": "FSFM结构", "type": "嵌入"},
+        {"source": "FSFM结构", "target": "VGG-16模型", "type": "嵌入"},
+        {"source": "FSFM结构", "target": "FasterR-CNN", "type": "输入"},
+        {"source": "FasterR-CNN", "target": "FSFM结构", "type": "接收输出"},
+        {"source": "特征尺度增强算法", "target": "多尺度感受野增强", "type": "包含"},
+        {"source": "多尺度感受野增强", "target": "空洞卷积", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多尺度感受野增强模块", "en": "Multi-scale Receptive Field Enhancement Module"},
+        {"title": "通道注意力增强", "en": "Channel Attention Enhancement"},
+        {"title": "特征尺度增强模块", "en": "Feature Scale Enhancement Module"},
+        {"title": "IOU", "en": "Intersection-over-Union"},
+        {"title": "精确率", "en": "Precision"},
+        {"title": "召回率", "en": "Recall"},
+        {"title": "PR曲线", "en": "PR Curve"}
+    ],
+    "relations": [
+        {"source": "多尺度感受野增强模块", "target": "通道注意力增强", "type": "包含"},
+        {"source": "多尺度感受野增强模块", "target": "特征尺度增强模块", "type": "包含"},
+        {"source": "通道注意力增强", "target": "特征尺度增强模块", "type": "包含"},
+        {"source": "IOU", "target": "精确率", "type": "影响"},
+        {"source": "IOU", "target": "召回率", "type": "影响"},
+        {"source": "精确率", "target": "PR曲线", "type": "影响"},
+        {"source": "召回率", "target": "PR曲线", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "PR曲线", "en": "PR curve"},
+        {"title": "AP值", "en": "AP value"},
+        {"title": "VOC数据集", "en": "VOC dataset"},
+        {"title": "mAP", "en": "mean Average Precision"},
+        {"title": "PascalVOC", "en": "Pascal VOC"},
+        {"title": "目标检测", "en": "object detection"},
+        {"title": "数据集", "en": "dataset"},
+        {"title": "深度学习框架", "en": "deep learning framework"},
+        {"title": "学习率衰减", "en": "learning rate decay"},
+        {"title": "网络权重", "en": "network weights"},
+        {"title": "特征尺度融合模块", "en": "feature scale fusion module"},
+        {"title": "背景墙", "en": "background wall"}
+    ],
+    "relations": [
+        {"source": "PR曲线", "target": "AP值", "type": "describes"},
+        {"source": "AP值", "target": "VOC数据集", "type": "measures"},
+        {"source": "VOC数据集", "target": "mAP", "type": "calculates"},
+        {"source": "PascalVOC", "target": "VOC数据集", "type": "contains"},
+        {"source": "目标检测", "target": "数据集", "type": "uses"},
+        {"source": "深度学习框架", "target": "网络权重", "type": "uses"},
+        {"source": "学习率衰减", "target": "网络权重", "type": "affects"},
+        {"source": "网络权重", "target": "目标检测", "type": "affects"},
+        {"source": "特征尺度融合模块", "target": "目标检测", "type": "improves"},
+        {"source": "背景墙", "target": "AP值", "type": "affects"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FSFM+FSEM在PascalVOC数据集上的表现", "en": "Performance of FSFM+FSEM on PascalVOC dataset"},
+        {"title": "物体-图像比", "en": "Object-image ratio"},
+        {"title": "COCO数据集", "en": "COCO dataset"},
+        {"title": "实验平台和检测模型", "en": "Experimental platform and detection model"},
+        {"title": "表3-6 COCO数据集上不同算法的性能对比", "en": "Table 3-6 Performance comparison of different algorithms on COCO dataset"}
+    ],
+    "relations": [
+        {"source": "FSFM+FSEM在PascalVOC数据集上的表现", "target": "物体-图像比", "type": "包含"},
+        {"source": "物体-图像比", "target": "表3-4VOC物体-图像比", "type": "包含"},
+        {"source": "表3-4VOC物体-图像比", "target": "表3-5本章模型与baseline性能末", "type": "包含"},
+        {"source": "表3-5本章模型与baseline性能末", "target": "实验平台和检测模型", "type": "包含"},
+        {"source": "实验平台和检测模型", "target": "表3-6 COCO数据集上不同算法的性能对比", "type": "包含"},
+        {"source": "COCO数据集", "target": "表3-6 COCO数据集上不同算法的性能对比", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Faster R-CNN算法", "en": "Faster R-CNN algorithm"},
+        {"title": "ResNet-101骨干网络", "en": "ResNet-101 backbone network"},
+        {"title": "VGG-16骨干网络", "en": "VGG-16 backbone network"},
+        {"title": "特征尺度融合模块", "en": "Feature scale fusion module"},
+        {"title": "特征尺度增强模块", "en": "Feature scale enhancement module"},
+        {"title": "GHMLossPO损失函数", "en": "GHMLossPO loss function"}
+    ],
+    "relations": [
+        {"source": "Faster R-CNN算法", "target": "ResNet-101骨干网络", "type": "使用"},
+        {"source": "Faster R-CNN算法", "target": "VGG-16骨干网络", "type": "使用"},
+        {"source": "ResNet-101骨干网络", "target": "VGG-16骨干网络", "type": "对比"},
+        {"source": "特征尺度融合模块", "target": "Faster R-CNN算法", "type": "嵌入"},
+        {"source": "特征尺度增强模块", "target": "特征尺度融合模块", "type": "增强"},
+        {"source": "GHMLossPO损失函数", "target": "RPN网络", "type": "改进"},
+        {"source": "数据增强算法", "target": "小目标检测性能", "type": "提升"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "RPN网络",
+            "en": "RPN network"
+        },
+        {
+            "title": "anchor",
+            "en": "anchor"
+        },
+        {
+            "title": "anchor噪声及其分布不平衡",
+            "en": "Anchor noise and its distribution imbalance"
+        },
+        {
+            "title": "anchor样本不平衡",
+            "en": "Anchor sample imbalance"
+        },
+        {
+            "title": "清洁度及其在RPN上的应用",
+            "en": "Cleanliness and its application in RPN"
+        }
+    ],
+    "relations": [
+        {
+            "source": "RPN网络",
+            "target": "anchor",
+            "type": "core"
+        },
+        {
+            "source": "RPN网络",
+            "target": "anchor噪声及其分布不平衡",
+            "type": "problem"
+        },
+        {
+            "source": "anchor噪声及其分布不平衡",
+            "target": "anchor",
+            "type": "affects"
+        },
+        {
+            "source": "anchor噪声及其分布不平衡",
+            "target": "后续网络训练",
+            "type": "affects"
+        },
+        {
+            "source": "anchor样本不平衡",
+            "target": "anchor",
+            "type": "affects"
+        },
+        {
+            "source": "清洁度及其在RPN上的应用",
+            "target": "RPN网络",
+            "type": "application"
+        },
+        {
+            "source": "清洁度及其在RPN上的应用",
+            "target": "anchor",
+            "type": "application"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "回归精度", "en": "Regression Accuracy"},
+        {"title": "分类置信度", "en": "Classification Confidence"},
+        {"title": "清洁度", "en": "Cleanliness"},
+        {"title": "GHMLoss", "en": "GHM Loss"},
+        {"title": "FocalLoss", "en": "Focal Loss"},
+        {"title": "IOU", "en": "Intersection over Union"},
+        {"title": "RPN网络", "en": "Region Proposal Network"},
+        {"title": "正样本", "en": "Positive Sample"},
+        {"title": "负样本", "en": "Negative Sample"},
+        {"title": "梯度均衡机制", "en": "Gradient Harmonizing Mechanism"},
+        {"title": "梯度密度", "en": "Gradient Density"}
+    ],
+    "relations": [
+        {"source": "回归精度", "target": "RPN网络", "type": "属于"},
+        {"source": "分类置信度", "target": "RPN网络", "type": "属于"},
+        {"source": "清洁度", "target": "RPN网络", "type": "影响"},
+        {"source": "IOU", "target": "RPN网络", "type": "用于"},
+        {"source": "正样本", "target": "RPN网络", "type": "属于"},
+        {"source": "负样本", "target": "RPN网络", "type": "属于"},
+        {"source": "GHMLoss", "target": "梯度均衡机制", "type": "包含"},
+        {"source": "FocalLoss", "target": "GHMLoss", "type": "前置"},
+        {"source": "梯度密度", "target": "GHMLoss", "type": "用于"},
+        {"source": "梯度均衡机制", "target": "GHMLoss", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "梯度密度函数", "en": "Gradient Density Function"},
+        {"title": "GHM损失", "en": "GHM Loss"},
+        {"title": "数据增强策略", "en": "Data Augmentation Strategies"},
+        {"title": "目标旋转策略", "en": "Object Rotation Strategy"}
+    ],
+    "relations": [
+        {"source": "梯度密度函数", "target": "GHM损失", "type": "定义"},
+        {"source": "GHM损失", "target": "RPN网络", "type": "应用于"},
+        {"source": "数据增强策略", "target": "目标检测", "type": "应用于"},
+        {"source": "目标旋转策略", "target": "数据增强", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "图像旋转后目标框坐标计算",
+            "en": "Calculation of target box coordinates after image rotation"
+        },
+        {
+            "title": "小目标实例增强策略",
+            "en": "Small target instance enhancement strategy"
+        },
+        {
+            "title": "汽车轮毂X光数据集",
+            "en": "Car wheel X-ray dataset"
+        }
+    ],
+    "relations": [
+        {
+            "source": "图像旋转后目标框坐标计算",
+            "target": "小目标实例增强策略",
+            "type": "包含"
+        },
+        {
+            "source": "小目标实例增强策略",
+            "target": "汽车轮毂X光数据集",
+            "type": "应用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "数据集数量过小", "en": "Small dataset size"},
+        {"title": "缺陷目标实例太少", "en": "Too few defect instances"},
+        {"title": "数据集增强策略", "en": "Dataset augmentation strategy"},
+        {"title": "旋转数据集增强策略", "en": "Rotation dataset augmentation strategy"},
+        {"title": "掩膜的小目标实例增强策略", "en": "Mask-based small instance augmentation strategy"},
+        {"title": "IOU值", "en": "IOU value"},
+        {"title": "数据增强后的分布", "en": "Distribution after data augmentation"},
+        {"title": "学习率衰减", "en": "Learning rate decay"},
+        {"title": "mAP", "en": "mAP"}
+    ],
+    "relations": [
+        {"source": "数据集数量过小", "target": "缺陷目标实例太少", "type": "cause"},
+        {"source": "缺陷目标实例太少", "target": "训练不出合适的模型", "type": "effect"},
+        {"source": "数据集增强策略", "target": "旋转数据集增强策略", "type": "sub-category"},
+        {"source": "数据集增强策略", "target": "掩膜的小目标实例增强策略", "type": "sub-category"},
+        {"source": "旋转数据集增强策略", "target": "图像旋转", "type": "method"},
+        {"source": "掩膜的小目标实例增强策略", "target": "缺陷实例增强", "type": "method"},
+        {"source": "掩膜的小目标实例增强策略", "target": "IOU值", "type": "method"},
+        {"source": "数据增强后的分布", "target": "训练集", "type": "part-of"},
+        {"source": "数据增强后的分布", "target": "验证集", "type": "part-of"},
+        {"source": "数据增强后的分布", "target": "测试集", "type": "part-of"},
+        {"source": "学习率衰减", "target": "学习率", "type": "method"},
+        {"source": "mAP", "target": "一级", "type": "measure"},
+        {"source": "mAP", "target": "二级", "type": "measure"},
+        {"source": "mAP", "target": "三级", "type": "measure"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "数据增强", "en": "Data Augmentation"},
+        {"title": "清洁度", "en": "Cleanliness"},
+        {"title": "GHMLoss", "en": "GHM Loss"},
+        {"title": "RPN网络", "en": "RPN Network"},
+        {"title": "目标检测算法", "en": "Object Detection Algorithm"},
+        {"title": "小目标检测", "en": "Small Object Detection"}
+    ],
+    "relations": [
+        {"source": "数据增强", "target": "小目标检测", "type": "有利于"},
+        {"source": "清洁度", "target": "小目标检测", "type": "有利于"},
+        {"source": "GHMLoss", "target": "小目标检测", "type": "有利于"},
+        {"source": "RPN网络", "target": "小目标检测", "type": "影响因素"},
+        {"source": "目标检测算法", "target": "小目标检测", "type": "基础"},
+        {"source": "数据增强", "target": "清洁度", "type": "有利于"},
+        {"source": "清洁度", "target": "GHMLoss", "type": "有利于"},
+        {"source": "RPN网络", "target": "GHMLoss", "type": "影响因素"},
+        {"source": "数据增强", "target": "RPN网络", "type": "有利于"},
+        {"source": "清洁度", "target": "RPN网络", "type": "有利于"},
+        {"source": "GHMLoss", "target": "RPN网络", "type": "有利于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "小目标检测",
+            "en": "Small Object Detection"
+        },
+        {
+            "title": "深度学习",
+            "en": "Deep Learning"
+        },
+        {
+            "title": "特征尺度融合模块",
+            "en": "Feature Scale Fusion Module"
+        },
+        {
+            "title": "特征尺度增强模块",
+            "en": "Feature Scale Enhancement Module"
+        },
+        {
+            "title": "GHMLoss",
+            "en": "GHMLoss"
+        },
+        {
+            "title": "数据增强",
+            "en": "Data Augmentation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "小目标检测",
+            "target": "图像语义理解",
+            "type": "related"
+        },
+        {
+            "source": "小目标检测",
+            "target": "目标识别",
+            "type": "related"
+        },
+        {
+            "source": "小目标检测",
+            "target": "计算机视觉",
+            "type": "related"
+        },
+        {
+            "source": "小目标检测",
+            "target": "通信",
+            "type": "application"
+        },
+        {
+            "source": "小目标检测",
+            "target": "交通",
+            "type": "application"
+        },
+        {
+            "source": "小目标检测",
+            "target": "安全",
+            "type": "application"
+        },
+        {
+            "source": "小目标检测",
+            "target": "救援",
+            "type": "application"
+        },
+        {
+            "source": "深度学习",
+            "target": "小目标检测",
+            "type": "related"
+        },
+        {
+            "source": "特征尺度融合模块",
+            "target": "小目标检测",
+            "type": "method"
+        },
+        {
+            "source": "特征尺度增强模块",
+            "target": "小目标检测",
+            "type": "method"
+        },
+        {
+            "source": "GHMLoss",
+            "target": "小目标检测",
+            "type": "method"
+        },
+        {
+            "source": "数据增强",
+            "target": "小目标检测",
+            "type": "method"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "R-FCN", "en": ""},
+        {"title": "You Only Look Once", "en": ""},
+        {"title": "SSD", "en": ""},
+        {"title": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation", "en": ""},
+        {"title": "Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition", "en": ""},
+        {"title": "Fast R-CNN", "en": ""},
+        {"title": "YOLO9000", "en": ""},
+        {"title": "Very Deep Convolutional Networks for Large-Scale Image Recognition", "en": ""},
+        {"title": "YOLOv3", "en": ""},
+        {"title": "The PASCAL Visual Object Classes Challenge 2007 (VOC2007) Results", "en": ""},
+        {"title": "Feature Pyramid Networks for Object Detection", "en": ""},
+        {"title": "DSSD", "en": ""},
+        {"title": "Deep Residual Learning for Image Recognition", "en": ""},
+        {"title": "Accurate Single Stage Detector Using Recurrent Rolling Convolution", "en": ""},
+        {"title": "An Analysis of Scale Invariance in Object Detection", "en": ""},
+        {"title": "SNIPER: Efficient Multi-Scale Training", "en": ""},
+        {"title": "Scale-Aware Trident Networks for Object Detection", "en": ""},
+        {"title": "Augmentation for Small Object Detection", "en": ""}
+    ],
+    "relations": [
+        {"source": "R-FCN", "target": "Object Detection", "type": "is a"},
+        {"source": "You Only Look Once", "target": "Object Detection", "type": "is a"},
+        {"source": "SSD", "target": "Object Detection", "type": "is a"},
+        {"source": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation", "target": "Object Detection", "type": "is a"},
+        {"source": "Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition", "target": "Visual Recognition", "type": "is a"},
+        {"source": "Fast R-CNN", "target": "Object Detection", "type": "is a"},
+        {"source": "YOLO9000", "target": "Object Detection", "type": "is a"},
+        {"source": "Very Deep Convolutional Networks for Large-Scale Image Recognition", "target": "Image Recognition", "type": "is a"},
+        {"source": "YOLOv3", "target": "Object Detection", "type": "is a"},
+        {"source": "The PASCAL Visual Object Classes Challenge 2007 (VOC2007) Results", "target": "Object Detection", "type": "is a"},
+        {"source": "Feature Pyramid Networks for Object Detection", "target": "Object Detection", "type": "is a"},
+        {"source": "DSSD", "target": "Object Detection", "type": "is a"},
+        {"source": "Deep Residual Learning for Image Recognition", "target": "Image Recognition", "type": "is a"},
+        {"source": "Accurate Single Stage Detector Using Recurrent Rolling Convolution", "target": "Object Detection", "type": "is a"},
+        {"source": "An Analysis of Scale Invariance in Object Detection", "target": "Object Detection", "type": "is a"},
+        {"source": "SNIPER: Efficient Multi-Scale Training", "target": "Object Detection", "type": "is a"},
+        {"source": "Scale-Aware Trident Networks for Object Detection", "target": "Object Detection", "type": "is a"},
+        {"source": "Augmentation for Small Object Detection", "target": "Object Detection", "type": "is a"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LibraR-CNN", "en": ""},
+        {"title": "Combining deep features for object detection at various scales", "en": ""},
+        {"title": "Small object detection in optical remote sensing images via modified faster R-CNN", "en": ""},
+        {"title": "Knowledge-based recurrent attentive neural network for small object detection", "en": ""},
+        {"title": "Gradient Harmonized Single-stage Detector", "en": ""},
+        {"title": "Efficient Non-Maximum Suppression", "en": ""},
+        {"title": "Focal Loss for Dense Object Detection", "en": ""},
+        {"title": "Metaanchor: Learning to detect objects with customized anchors", "en": ""},
+        {"title": "Training Region-based Object Detectors with Online Hard Example Mining", "en": ""},
+        {"title": "ScaleMatch for Tiny Person Detection", "en": ""},
+        {"title": "Acquisition of Localization Confidence for Accurate Object Detection", "en": ""},
+        {"title": "Learning Data Augmentation Strategies for Object Detection", "en": ""},
+        {"title": "AutoML: A Survey of the State-of-the-Art", "en": ""}
+    ],
+    "relations": [
+        {"source": "LibraR-CNN", "target": "Balanced Learning", "type": "相关"},
+        {"source": "Combining deep features for object detection at various scales", "target": "Object Detection", "type": "相关"},
+        {"source": "Small object detection in optical remote sensing images via modified faster R-CNN", "target": "Object Detection", "type": "相关"},
+        {"source": "Knowledge-based recurrent attentive neural network for small object detection", "target": "Object Detection", "type": "相关"},
+        {"source": "Gradient Harmonized Single-stage Detector", "target": "Object Detection", "type": "相关"},
+        {"source": "Efficient Non-Maximum Suppression", "target": "Object Detection", "type": "相关"},
+        {"source": "Focal Loss for Dense Object Detection", "target": "Object Detection", "type": "相关"},
+        {"source": "Metaanchor: Learning to detect objects with customized anchors", "target": "Object Detection", "type": "相关"},
+        {"source": "Training Region-based Object Detectors with Online Hard Example Mining", "target": "Object Detection", "type": "相关"},
+        {"source": "ScaleMatch for Tiny Person Detection", "target": "Object Detection", "type": "相关"},
+        {"source": "Acquisition of Localization Confidence for Accurate Object Detection", "target": "Object Detection", "type": "相关"},
+        {"source": "Learning Data Augmentation Strategies for Object Detection", "target": "Object Detection", "type": "相关"},
+        {"source": "AutoML: A Survey of the State-of-the-Art", "target": "Machine Learning", "type": "相关"}
+    ]
+}

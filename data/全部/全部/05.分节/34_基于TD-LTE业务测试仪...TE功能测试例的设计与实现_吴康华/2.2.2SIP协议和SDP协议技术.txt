@@ -1,0 +1,112 @@
+2.2.2SIP协议和SDP协议技术
+为支持VoLTE业务的实现，3GPP引入了多项新技术，例如AMR-WB编码 技术，该技术釆用16KHZ釆用，大大提升了语音的清新度和柔和性。RoHC健 壮性头报压缩技术降低了 IP头开销，提升了传输效率。SPS半持续调度可以减 少控制信道的资源开销和时延抖动等等。本文不一一介绍，只介绍SIP协议和 SDP协议技术。本文后续内容将持续用到该项技术。
+SIP （Session Initiation Protocol）协议是互联网行业标准组织IETF提出的， SIP是一个“工作于应用层的信令控制协议”㈣組该协议用于创建、修改和终 止一个或多个终端参与者的会话。这些会话既可以是IP电话，也可以是Internet 多媒体会议或者多媒体分发。会话的参与者可以通过网状单播（unicast）、组播 （multicast）或者混合组播和单播进行通信SIP协议是参考HTTP协议定义 的，适用于基于IP的网络，因此具有较强的互操作性，同时具有良好的可扩展 特性，如果需要，可以方便地增加定义到终端，以快速实现新功能，最后该协议还具有良好的开放性卩匸并且SIP协议还可以免费使用，所以3GPP使用SIP协 议实现VoLTE信令交互。
+前文提到，VoLTE网络架构的核心网中引入了 IMS,对VoLTE进行业务和信 令控制，移动性管理实体(MME)只是作为业务的承载体，IMS对业务的控制全 部通过SIP协议消息完成，因此必须掌握SIP协议技术。
+SIP可以按照发起方分为两类［⑵，分别是：
+请求消息：从客户端(Client)发到服务器(Server)的消息。
+响应消息：从服务器发送到客户端的消息。
+其中VoLTE常用的请求消息包括下列几种，如表2-1所示：
+表2-1 常用SIP请求消息表
+SIP消息	注释	　　　　定义文档
+INVITE	表示一个客户端主动发起或被邀请参加会话	　　　　RFC3261
+ACK	　　　确认客户已经收到一个INVITE请求的最终响应	　　　　RFC3261
+PRACK	临时确认，在最终确认之前先临时确认	　　　　RFC3262
+OPTIONS	终端查询服务器的能力	　　　　RFC3261
+CANCEL	取消所有正在处理中的请求	　　　　RFC3261
+REGISTER	　　　　向标题字段中的SIP服务器发起地址列表注册	　　　　RFC3261
+BYE	　　　　终端终止--个呼叫，可以由主叫或被叫方发起	　　　　RFC3261
+SUBSCRIBE	向服务器订阅某一个事件通知	　　　　RFC3265
+NOTIFY	向订阅者发送一个新的事件通知	　　　　RFC3265
+UPDATE	在没有修改对话状态的情况下修改会话	　　　　RFC3311
+PUBLISH	发布一个事件请求到服务器	　　　　RFC3903
+INFO	会话进行中发送一个会话消息，但并不修改会话状态	　　　　RFC6086
+REFER	请求收件人发出SIP请求	　　　　RFC3515
+MESSAGE	使用SIP协议传输即时消息	　　　　RFC3248
+与HTTP协议一样，响应消息以数字响应代码开头，并且所有SIP响应代码 都基于HTTP响应代码。
+SIP响应可以分成临时响应和最终响应：
+临时响应(1XX)：服务器用临时响应来指示请求处理进程，但是并不终结SIP 事务。
+最终响应(2XX, 3XX, 4XX, 5XX, 6XX)：服务器对客户端请求的最终 响应，并终止SIP事务。常用响应消息如下表2-2：
+表2-2 SIP响应消息类型表
+Ixx	进展响应	临时响应
+2xx	成功	最终响应
+3 xx	重定向错误	最终响应
+4xx	客户端错误	最终响应
+5xx	服务端错误	最终响应
+6xx	全局错误	最终响应
+SIP协议采用UTF-8字符集来进行编码的文本协议，消息格式很简单，简 单的说，SIP消息由起始行(请求行或者状态行)、消息头(Message Header)和 可选的消息体(Message body)构成向，Message Header从第二行开始每一行都 由“Tag :Value”格式组成，每一行描述一个属性，SDP协议同样由文本格式描述， 一个SDP消息可以包含很多行，每一行的格式也是“Type : Value”。
+1)SIP起始行
+SIP起始行很简单，只有两种形式：请求行和状态行。其中请求行出现在请 求消息的起始处，单独一行，请求行有如下格式，其中[]表示可选：
+Request-Line = Method + [] Request-URI + [] SIP-Version
+Method是必填项，SIP协议一共定义了六种Method,即REGISTER、 OPTIONS> INVITE, CANCEL. ACK 和 BYE。其中，REGISTER 用于注册请 求，INVITE. CANCEL和ACK用于建立会话，BYE用于结束会话。
+Request-URL为可选项，表示被请求用户地址，SIP协议规定Request-URL 不能被包含在内且不能出现空格或者控制符。
+SIP-Version是可选项，表示当前协议版本号。
+最后SIP起始行必须以换行键结束。
+状态行(Status-Line)出现在响应消息的起始处，请求行有如下格式，其中 □表示可选：
+Status-Line = SIP-Version [] Status-Code [] Reason-Phrase
+SIP-Version同请求行。
+Status-Code是状态码，由一个三位的十进制数表示，用于指示请求消息的 执行结果，例如200 OKo
+Reason-Phrase是一^原因短语，用于简单的解释上面的状态码的原因。同 样，响应行也必须以换行符结束。
+2)SIP消息头
+SIP消息头主要用来指明本消息是有由谁发起和由谁接收，经过多少跳转等 基本信息；
+在SIP消息中，有四种类型的头字段，即通用头(General Header)、请求头 (Request Header)> 响应头(Response Header)和实体头(Entity Header)四种 类型。下面仅介绍几种本文即将用到的通用头：
+Call-ID:代表该会话的唯一标示符。一次会话的所有SIP信令该值相同。
+From：请求和响应必须包含From通用头域，指示请求的发起者。
+To：指示请求的接收者。
+Via：用于记录一个请求传送的路径。
+Contact：指用户代理的实际地址，它可以提供一个给用户进一步通信的URI, 可出现INVITE、REGISTER和ACK请求以及响应消息Ixx、2xx、3xx和485 中［14］。
+Expires：消息内容活动的日期和时间。仅用于INVITE和REGISTER请求。
+CSeq:一次会话中每一条每一条请求的唯一编号，且按时间顺序严格递增， 在响应消息中，该值是它所响应的请求的CSeq号。
+Content-Type：实体头，用以指示接收者收到的消息体的媒体类型。
+Content-Length：实体头，表示有效载荷的大小，以字节为单位。
+Max-Forwards：适用于任何请求方式，用以限制前转请求的代理或者网关的 数目。
+3) SIP消息体
+SIP消息体主要用来描述本次会话具体实现方式，通过另一种协议来描述， 即SDP协议(Session Description Protocol,会话描述协议)。SDP协议分成 多行，每一行由<Type>=<Value>组成，其中Type只有一个小写字母。通常，SDP 消息由一个一个会话描述(Session-level)和零个或多个媒体描述(Media-level ) 组成，常见的SDP属性如下：
+会话描述类：
+▼=协议版本
+，=会话名称
+i=(可选)会话信息
+。=会话拥有者/创建者和会话标识符
+u=(可选)URI描述
+c=(可选)连接信息
+P=(可选)电话号码
+e=(可选)Email地址
+b=（任选）带宽信息
+z=（可选）时区调整
+k=（可选）密钥
+a=（可选）零个或者多个会话属性行
+媒体描述的格式为：
+m=媒体名和传送地址
+c=（可选）连接信息：如果己含于会话级描述则为任选项
+i=（可选）媒体名称
+b=（可选）带宽信息
+k=（可选）加密密钥
+a=（可选）零个或多个媒体属性行。
+本节我们研究了 SIP消息的分类和结构，下面两个表格是典型的SIP请求消 息和响应消息的格式：
+表2-3请求消息的典型格式
+请求名称，如INVITE	请求对象URI	协议版本
+Call~ID: Value
+Via: Value
+From: Value
+To: Value
+Cseq: Value
+Contact: Value
+Content-type: Value
+Content-length: Value
+Max-forward: Value
+White-space: Value
+SDP消息体
+表2-4响应消息的典型格式
+SIP协议版本	响应状态码
+Call-ID: Value
+Via: Value
+表2-4响应消息的典型格式（续上表）
+From: Value
+To: Value
+Cseq: Value
+Contact: Value
+Content-type: Value
+Content-length: Value
+Max-forward: Value
+Whi te-space: Value
+SDP消息体 上面两个表格中，第一行和最后一行分别为起始行和消息体，中间若干行是 消息头。
+本节对VoLTE新网络架构和新技术进行了研究，正是由于对原有网络的升 级和新技术新流程的引入，使得VoLTE测试具有必要性和紧迫性，并同时增加 了测试开发的困难性。

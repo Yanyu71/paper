@@ -1,0 +1,15 @@
+摘要
+近年来，随着物联网、5G网络、云计算、大数据等新型应用不断出 现，数据中心服务器的吞吐量需求已经达到万兆级别，同时要求微秒级 的处理时延，传统的网卡由于数据处理和带宽的限制难以满足上述需求。 高速智能网卡作为解决网络瓶颈的关键技术应运而生。本文根据目前高 速智能网卡研究趋势，基于现场可编程逻辑门阵列(Field Programmable Gate Array, FPGA)设计了支持万兆以太网的高速智能网卡，本文具体 工作如下：
+对目前产业界的咼速智能网卡进行总体分析，并对其中二个关键技 术——64b/66b编码技术、硬件卸载加速技术、DMA多队列技术——进 行深入研究，并确定了本文的技术解决方案。
+结合上述解决方案对网卡的关键模块展开设计与实现：设计了基于 64b/66b编码技术的物理编码子层(Physical Coding Sublayer, PCS),重 点解决了接收时同步头的锁定问题；在介质访问控制层(Media Access Control, MAC)设计了基于MAC目的地址的硬件卸载加速方式，完成 了基于内容可寻址存储器(Content-addressableMemory, CAM)的匹配 查找功能；在PCI-Express总线接口设计了基于描述符的直接内存访问 (Direct Memory Access, DMA )1作方式，完成了数据的快速搬移功能。
+最后，基于Vivado+Modelsim软件完成了各个部分以及系统的功能 仿真，并给出仿真结果。结果表明各个部分的基本功能都已达到预定的 设计要求，这对国内关于高速智能网卡的关键技术实现提供了新思路， 具有良好的工程应用价值。
+关键词:高速智能网卡技术;PCS;匹配查找;PCIE;DMA多队列
+DESIGN AND IMPLEMENTATION OF PCIE HIGH-SPEED NETWORK INTERFACE CARD SUPPORTING DMA MULTI-QUEUE
+
+ABSTRACT
+In recent years, with the emergence of new applications such as the Internet of Things, 5G network, cloud computing, and big data, the thi'oughput demand of data center servers has reached the level of 10 megabits, and the processing delay of microsecond is also required. Traditional network interface cards are difficult to meet the above requirements due to the limitations of data processing and bandwidth. High-speed smart network interface card as a key technology to solve the bottleneck of network emerged. According to the cuiTent research trend of high-speed smart network interface card, based on Field Programmable Gate Array (FPGA), this paper designs a high-speed smart network interface card that supports 10Gb Ethernet. The specific work of this paper is as follows:
+This paper makes an overall analysis of the current high speed smart network interface card in the industry, and makes an in-depth study of the three key technologies — 64B / 66B encoding technology, hardware unload acceleration technology, and DMA multi-queue technology, and determines the technical solution in this paper.
+Combined with the above solutions, the key modules of the network card are designed and implemented. Physical Coding Sublayer (PCS) based on 64B / 66B Coding technology is designed, and the synchronization head locking problem is mainly solved during receiving. In Media Access Control (MAC) layer, a hardware unload acceleration method based on MAC destination address is designed, and the matching search function based on Content- Addressable Memory (CAM) is completed. Direct Memory Access (DMA) based on descriptor is designed in the PCI-Express bus interface, and the function of moving data quickly is completed.
+Finally, based on Vivado+ Model Sim software, the simulation of each part and the function of the system is completed, and the simulation results are given. The results show that the basic functions of each part have reached the predetermined design requirements, which provides a new idea for realizing the key technology of high-speed smart network interface card in China, and has good engineering application value.
+
+KEY WORDS:High-Speed Smart Network Interface Card Technology;PCS;Match Search;PCIE;DMA multi-queue

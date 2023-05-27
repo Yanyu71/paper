@@ -1,0 +1,17 @@
+4.1.1底层通讯基础
+由于本智能家居系统需要实时监测设备的发现、掉线，以及接收和发送设备通 知，因而控制设备在开发功能时通过实现安卓系统的Application类将控制设备的准 备工作完成，包括完成设备管理器和通知管理器的初始化，保证在应用开启前，控 制系统的功能全部处于就绪状态，如图4-1所示：
+public void mxtListenersO{
+Wi5Util.getIns:anceO.ini:(th:s);
+if(UZShared?referencesManaE*r.xsToSAcctpted(；. {
+final String ke^torerileName^getAppEcationContextO
+£• trileS treamPathC all) oyn_key s tore'*)
+.getAbsolvtePathO;
+DenceN lanagerlmp !.g*tln.stan:	?kn,S t orer ileN ame);
+Nou5cationsMana£*fImpi.2e:In$tanceO-mit:.this);
+图4-1控制应用启动前准备工作
+设备管理器主要负责开启标准设备和瘦客户端设备的发现机制以及设备的心跳 机制，代码如图4-2所示：
+Aj\lafta£er.g*dn$tance().in:t(c .keyS t orekeyStorer d*Name);
+.AjMaxiager.getlnstanceO-onntctToAJO；
+Onboardai£?vManager getlnstan:?." in::(m_ccctextTAj?^2anafer.gednstance. .gerBusAttachment 二二
+图4-2设备管理器初始化工作
+61

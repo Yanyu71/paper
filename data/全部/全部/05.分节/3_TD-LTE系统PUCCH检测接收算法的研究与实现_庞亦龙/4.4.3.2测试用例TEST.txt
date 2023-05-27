@@ -1,0 +1,34 @@
+4.4.3.2测试用例TEST
+用例编号：TEST_PUCCH_16_010；
+测试内容：单用户，测试PUCCH整个链路在格式2a下能否正确解出8比特CSI 和 ACK；
+测试步骤：
+1.调用函数eNBRxPucch Handle,按照matlab配置参数；
+2.检验 pPhyMacHarqInd->HarqProcess[NumOfA.ckUe].Ack 是否正确；
+3.检验译码后的decodedBits是否正确；
+输入数据 pucchTestCaseO 1 ODataln.h:
+高层参数配置表信息如表4-11所示；
+被测代码：Core。和Core4各个函数的代码；	-
+预期输出：8bitCQI(01U0001)+ACK；
+u8WideBandCqiValueO=7 ；
+u8WideBandCqiValue 1 =7 ；
+表4-11 TEST PUCCH 16 010部分配置参数
+Celllnfb 控制	配置值	Cellinfo 控制	配置值
+Cellld	1	PhyCellld	80
+UlBandWidthlndex	1 (20M)	UlCpType	0 (Normal cp)
+SubSfnConifg	0	SSubSfhConfig	7
+UlSeqGroupHoppingFlag	0	UlSeqHoppingFlag	0
+N2Rb	1	NICs	6
+DeltaPucchShift	3	N1 Pucch	4
+Radio link into 控制	配置值	Radio link into 控制	配置值
+Cellld	1	Crnti	0
+ISrs	0	UeMId	0
+nPUCCH2	1	AckCodingMode	0
+subframe 控制	配置值	subframe 控制	配置值
+AirFrameNum	1	Cellld	1
+NumOfPUCCHUe	1	NumOfPUSCHUe	0
+Pucch 子帧控制 aPucchPa ra	UE	参数名	值	参数名	值
+UE1	BandType	1	NumOfLayers	2
+TransMode	5	PMIRIReportFlag	1
+UeMId	0
+nPUCCH2	1
+UciFormat	FORMAT_2a

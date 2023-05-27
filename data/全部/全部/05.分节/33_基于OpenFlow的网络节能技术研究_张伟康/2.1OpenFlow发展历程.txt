@@ -1,0 +1,14 @@
+2.1OpenFlow发展历程
+软件定义网络(Software Defined networking, SDN)〔⑷是一种新型的网络架 构，如图2.1四所示。SDN网络架构包括三层，分别是基础设施层，控制层和应 用层。基础设施层主要由物理转发设备组成，主要负责网络数据包转发工作，控 制器层是SDN网络的“大脑”，由控制器构成，主要负责网络的链路发现、路由 计算、设备管理等，应用层是网络应用者根据个性化需求制定的应用程序。SDN 的核心思想是将网络的控制功能和数据转发功能进行分离。在SDN网络中，网 络研究者可以更加专注于网络控制功能的开发而无需关注底层的转发设备，给网络开发者带来了极大的便利。
+业务应用
+API
+$ OpenFlow协议等
+基础设施层
+图2-1 SDN架构图
+OpenFlow 是当前软件定义网络(Software-defined Networking, SDN)的南 向接口通用协议。OpenFlow最初是在从斯坦福大学Clean state计划资助的 Ethane项目发展起来，该项目尝试使用集中式的控制器让网络管理员可以更加便 捷地定义基于流表的安全策略，并且将这些安全策略应用于网络设备中，从而实 现对整个网络通信的控制和管理。
+2008年，斯坦福大学的Nick Mckeown教授发表的一篇重要的论文 "OpenFlow： Enabling Innovation in Campus Networks"】 ”，正式提出了 OpenFlow 的概念。OpenFlow的最初出发点是考虑到网络创新思想需要在实际网络上才能 被更好地验证，而研究人员又无法修改网络中的设备。通过OpenFlow,网络可 以实现将控制功能和数据转发功能的相分离，研究者可以通过编程实现新型的网 络协议。
+2009年，第一个可用于商业化的正式标准OpenFlow Specification Version 1.0.0[15]正式发布，标志着OpenFlow协议正式地走向了商业化。
+2011 年 3 月，在 Nick Mckeown 教授等的推动下，由 Google> Facebook、 Microsoft公司等联合成立了非盈利性的开放网络基金会(ONF, Open Networking Foundation) [14],该组织致力于SDN网络的发展和标准化工作。
+2015 年 5 月，ONF 发布了 最新 OpenFlow Specification Versionl.5。
+OpenFlow的核心思想的将网络的控制功能和数据转发功能进行分离， OpenFlow是作为SDN(software defined network,软件定义网络)的原型提出的， 主要包括OpenFlow控制器和OpenFlow交换机两个部分，如图2-2。OpenFlow 交换机作为SDN网络的数据转发平面，以OpenFlow控制器下发的流表作为数 据转发的依据，通过与控制器建立的安全通道与控制器通信。OpenFlow控制器 作为SDN网络的控制平面，拥有网络的拓扑信息、流量信息等，并且负责整个 网络的决策工作，是SDN网络的“大脑”，控制着各种网络行为。
+图2-2 OpenFlow网络通信架构图

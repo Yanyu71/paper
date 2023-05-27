@@ -1,0 +1,17 @@
+5.1.1训练集样本
+训练集样本的作用是通过行为分析等手段提取恶意代码家族的特征码，并且 本系统使用训练集生成恶意家族的偏移量从而得到恶意家族偏移量的置信区间。 具体的训练集样本的相关信息如下表所示：
+表5-1训练集样本信息表
+序号	家族名称	数量(个)
+1	Worm.Win32.Netsky	132
+2	DangerousObject.Multi.Generic	52
+3	Trojan. Win32.Generic	63
+4	Trojan.Win32.AutoRun.gen	37
+5	Virus*Win32.Sality.gen	80
+6	Exploit. Win32.CVE-2010-2568.gen	26
+7	AdWare.Win32.DelBar.a	34
+8	Troj an. Win32. Starter.lgb	18
+52
+续上表
+序号	家族名称	数量（个）
+9	Virus.Win32.Nimnul.a	47
+10	Worm.Win32.Debris.a	12

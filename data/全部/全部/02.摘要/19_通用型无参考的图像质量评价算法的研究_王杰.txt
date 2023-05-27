@@ -1,0 +1,18 @@
+摘要
+图像质量评价作为图像信息工程的基础技术之一，具有非常重要 的实用价值，在视觉信息处理领域受到越来越多的关注。并且随着目 前移动设备数量的急剧增多，包括视频、图像在内的多媒体信息呈现 爆炸式增长，图像质量评价算法的研究越来越不可忽视。通用型无参 考图像质量评价算法研究的目标是无需借助参考图像，无需图像失真 类型的信息，通过建立与视觉感知相关的计算模型来评估图像质量， 是最有前景、最贴近实际应用场景的研究方向。
+通过对通用型无参考图像质量评价方法的研究，本文提出了以下 几点研究成果：
+1）	对现有图像质量评价算法进行分类，并重点分析设计通用型 无参考图像质量评价算法时需要重点考虑的因素，为之后的研究工作 奠定基础。
+2）	对自然场景统计特性进行详细介绍，接着深入分析并对比目前 论文中已经提出的自然场景特征的提取方法，证实了多分辨率的、局 部的、多方向的Contourlet变换对自然图像统计特性的高效表征能力。 并且在充分考虑人眼视觉特性的基础上，本文设计并提取了三类新型 的符合人眼视觉感知特性的Contourlet域的自然图像特征。
+3）	提出了两种基于Contourlet域的自然图像统计特征的无参考 图像质量评价算法。利用从Contourlet域提取的精心设计的对失真敏 感的特征，分别基于全局框架和两阶段框架设计无参考图像质量评价 算法。并进行仿真实验，分析并对比实验结果，表明这两种算法的客 观评价结果与人眼视觉特性都具有较好的一致性，但各有优劣，适用 于不同的应用场景。
+关键字：无参考图像质量评价自然场景统计特性Contourlet变换 人眼视觉特性
+RESEARCH ON GENERAL
+NO-REFERENCE IMAGE QUALITY
+ASSESSMENT
+ABSTRACT
+As a fundamental technology of image information engineering, image quality assessment is very important to practical application. It gets more and more attention in visual information field. What's more, with the rapid growth of the mobile devices, multimedia information explodes recently. Thus, the research of image quality assessment becomes more and more significant. The goal of the NR-IQA (no-reference image quality assessment) is to assess an image without the original image and the knowledge of the distortion type. Learning a NR-IQA model consistent with visual perception to evaluate image quality is the most promising and practical research direction.
+After the research of the NR-IQA metrics, this paper proposed following research achievements:
+1)Firstly, we classified the existing IQA algorithms, introduced the NR-IQA algorithms in detail and analyzed the key point of designing a NR-IQA, which lay the foundation for the subsequent research work.
+2)Secondly, we made a detailed introduction of natural scene statistic (NSS), then analyzed and compared the existing NSS feature extraction methods which referred to by recent papers. Therefore, we verified the strong power of the Contourlet transformation (which is multi-resolution, regional, multi-scale) to capture image NSS features. Taking into account the HVS (human visual system), we designed and extracted three kind novel natural
+image features in Contourlet domain. These features are consistent with the human visual perception.
+3)Lastly, we proposed two NR-IQA algorithms based on the NSS in Contourlet domain. After extracting the elaborately designed NSS features that are sensitive to distortion in Contourlet domain, operating upon a two-stage framework or a whole-stage framework, we designed two NR-IQA algorithms. Then we carried out the simulation experiment, analyzed and compared the experiment results. Experimental results demonstrate that these two proposed algorithms are well consistent with the human visual perception. Because each has its advantages and disadvantages, each is suitable for respective different application situation.
+KEYWORDS: NR-IQA, NSS, Contourlettransform, HVS.

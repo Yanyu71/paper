@@ -1,0 +1,15 @@
+4.2A.4HARQ
+HARQ控制器负责ACK信令的发送和接收处理，并根据ACK接收的结果正 确与否，进行一系列的HARQ流程管理。其提供的主要函数接口如表4-11所示：
+44
+表4-11 MAC CTS控制器主要接口
+函数接口定义
+send(int fn)	*
+recv(const char * const header, int msg len)
+proc ack(int fn , int crcflag, int rxid)
+pushjprocess(harq process info t* p j)rocinfo, int n, bool sent)
+pull_process(int rxid, harq_process_info_t& p_procinfo)	!
+HARQ控制器的发送操作由Heartbeat Msg在指定的TTI触发，如果HARQ 控制器之前已经收到来自DATA控制器发出的发送准备指令，则调用send。函数 发送ACK信令。其中，一次ACK信令可以对应多个上行子帧的传输。
+图4-15 HARQ发送处理逻辑
+HARQ控制器的接收操作由来自物理层的ACK上报的Core Msg触发，执行 recv°函数，解码其中的ACK结果并执行proc_ack()函数。ACK Core Msg的负载 部分除如图3-8所示的ACK信令以外，还携带一个CRC校验位。若ACK反馈 结果正确，HARQ控制器将对应的子帧从HARQ重传发送队列中弹出，确认此次 发送完成；若ACK反馈结果为错误，且重传次数未到上限，则HARQ控制器开 启对该子帧的重传，准备重新发起竞争接入；若ACK反馈结果错误，且重传次 数达到上限，则HARQ控制器放弃对该子帧的重传。
+45
+图4-16 HARQ接收处理逻辑

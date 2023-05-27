@@ -1,0 +1,8 @@
+2.4.2.2LCS系统架构
+LCS客户端通过Le接口接入LCS服务器，来自一个或者多个PLMN（Public Land Mobile Network）的LCS服务器之间可以通过Lg或者Lr接口连接。Lg接 口是 MSC （Mobile Switching Center,移动交换中心）/ SGSN （Serving GPRS Support Node,服务GPRS支撑点）之间的连接，属于间接接口； Lr是GMLC （Gateway Mobile Location Center,网关移动位置中心）和GMLC之间的连接， 属于直接连接。服务器和客户端之间的接口如图2-4所示。
+图2-4LCS接入接口与参考点
+这里主要介绍涉及E-UTRAN的LCS服务器组件。它们包括GMLC, MME （Mobility Management Entity,移动性管理实体），E-SMLC （Evolved Serving Mobile Location Center,演进的服务移动位置中心）或 SLP （SUPL （Secure User Plane Location ） Location Platform,安全用户面定位平台），LMU （ Location Measurement Unit,位置测量单元）。此外还有 HSS （Home Subscriber Server,家 订阅者服务器），LRF （LocationRetrieval Function,位置存取功能），PPR （Privacy Profile Register,隐私配置寄存器）等必需功能组件。这里E-SMLC和SLP的功 能是等价的，取决于E-UTRAN中的LCS基于用户面还是控制面，基于用户面
+14
+则采用SLP,否则为E-SMLC» LCS服务器内部各组件/网元之间的接口如图2-
+5所示-
+图2-5 LCS 一般安排MU

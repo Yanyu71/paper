@@ -1,0 +1,4 @@
+2.1.4高斯受限玻尔兹曼机
+高斯受限玻尔兹曼机(Gaussian Restricted Boltzmann Machine, Gaussian RBM) [37]类似于重复软最大化模型，针对图像的原始输入或特征，RBM模型的输入层 通过修改使其可以针对浮点数进行取样。对于实数输入层vgRd,Gaussian RBM 的能量函数如下所示：
+E(5 =尝夢-芯+咐广以也	(2-17)
+心 厶。i	，=1 丿=1 0	y=i

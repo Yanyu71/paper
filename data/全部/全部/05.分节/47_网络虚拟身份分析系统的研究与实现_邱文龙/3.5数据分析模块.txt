@@ -1,0 +1,2 @@
+3.5数据分析模块
+数据分析模块是基于Hadoop平台的大数据分析是我们自己搭建的Hadoop集群，包含一个NameNode，一个 SecondaryNameNode 和十个 DataNode，每个DataNode可以存储3.5T的数据，性能足以分析 TB级的数据。在据预处理阶段，被预处理的数据报文会分别上传到数据库和 HDFS 上，因此数据分析时直接读取HDFS上的数据即可。数据分析后的结果首先保存在HDFS 上，然后根据需要再将数据上传到 Postgresql 或Hbase 上。想要查询结果时，可以直接从客户端连接数据库或HDFS，从而使结果有更好的可读性。

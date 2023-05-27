@@ -1,0 +1,7 @@
+3.6本章小结
+论文在本章提出针对基于认知无线电的TD-LTE 系统的一种连续和载波聚合  混合的频谱分配策略，保证了系统灵活性和有效性。该策略的中心思想是，在为  一个用户分配载波资源时，当有足够的空白连续频谱，就利用最优匹配的原则为  该用户分配相应的载波；当空白频率资源中没有可以满足用户需求的连续频段时， 再在聚合能力范围内利用载波聚合为该用户分配相应的载波资源。用这种方式一  方面利用载波聚合的策略来提高频谱的利用率，另一方面又尽量避免了过多的聚  合过程。仿真结果显示，当频谱相对完整，即频谱破碎度很小时，该策略可以减  少载波聚合带来的额外开销，而在频谱非常破碎时，又能保证较高的频谱利用率，
+从而实现了频谱利用率和频谱破碎度之间的折衷。
+33
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+34
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net

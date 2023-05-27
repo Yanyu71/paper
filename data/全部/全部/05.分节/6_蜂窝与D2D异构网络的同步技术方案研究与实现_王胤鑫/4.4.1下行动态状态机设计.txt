@@ -1,0 +1,7 @@
+4.4.1下行动态状态机设计
+根据异构网络的覆盖情况，当CELL STATE,UE STATE     和 D2D STATE
+三个状态标志发生变化时，下行状态机也根据决策进行状态变迁。由下图所示，
+下行状态机的状态变迁有两种变迁条件：
+a) CELL STATE:Idle->Active。  即网络中出现蜂窝基站信号，该状态变迁条件 是 D2D Mode    >Cell Mode状态变迁的变迁条件。
+b) CELL STATE:Active   >Idle。即网络中丢失蜂窝基站信号，该状态变迁条件 是 Cell Mode->D2D Mode   状态变迁的变迁条件。
+图4-1 下行状态机状态转移图

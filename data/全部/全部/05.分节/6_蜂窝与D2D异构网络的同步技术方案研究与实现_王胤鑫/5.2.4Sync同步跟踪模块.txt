@@ -1,0 +1,11 @@
+5.2.4Sync同步跟踪模块
+Sync同步跟踪模块对应的函数为Sync Tracking,该函数的接口如下：
+Sync  Tracking(int16  t*data  Input,uint8  t       sub  Frm,int32  t
+sync  Track Foffset,int32 t sync  Track  Toffset)
+表5-6 Sync Tracking函数接口
+名字	I/O	数据类型	描述
+data Input	I	int16 t*	输入数据
+sub Frm	I	uint8 t	子帧号
+sync Track Foffset	O	int32 t	频偏
+sync Track Toffset
+O	int32 t	时偏

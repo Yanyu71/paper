@@ -1,0 +1,74 @@
+4.4.2上行动态状态机设计
+由于蜂窝上行用户UE 的存在，上行状态机相对于下行会较为复杂，状态的 变迁也更为多样。随着异构网络覆盖情况的实时变化，根据CELL STATE,
+D2D STATE  和 UE STATE  状态标志变量实时决策上行状态机的状态变迁。由图
+4-2和43所示，当状态标志CELL STATE,D2D STATE     和 UE STATE  发生变
+化时，状态机的变化可以根据同步优先级的高低分为状态的升迁或者降迁，升迁 是指新的同步源 (D2D 终端，蜂窝基站或cellUE) 接入，降迁是指失去现有的 同步源。
+1. 上行状态机升迁
+上行状态机的升迁有多种变迁场景，图4-2展示了上行状态机各状态之间的
+升迁转移情况，各状态升迁所需的变迁条件有如下四种：
+a)    CELL  STATE:Idle->Active。
+33
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+北京邮电大学工学硕士学位论文
+即网络中出现蜂窝基站信号，该状态变迁条件是 D2D Master Mode  > Cell Slave Mode和 D2D Slave Mode>Cell Slave Mode  两种状态变迁的变迁 条件。
+b)    UE  STATE:Idle->Active。
+即网络中出现 UE 上行用户信号，该状态变迁条件是 Cell Slave Mode > UE Slave Mode 状态变迁的变迁条件。
+c) CELL STATE 和 UE STATE:Idle->Active。
+即网络中同时出现蜂窝基站信号和 UE 上行用户信号，该状态变迁条件是
+D2D Master Mode  ->UE Slave Mode和 D2D Slave Mode   ->UE Slave Mode
+两种状态变迁的变迁条件。
+d) 发现更高优先级的D2D 终端[17]。
+该变迁条件有两种判断条件， 一是根据SyncInfo 中传输的SYNC UL ORG
+信息，当发现根源同步源是具有更高优先级的D2D 终端时，被认定符合发现更 高优先级的D2D 终端。二是根据SYNC UL ORG   信息判定发现的D2D 终端根 源同步源和本机的根源同步源种类是否均是D2D 终端，若是，则再根据SyncInfo 中传输的SYNC ID ORG  信息，判断根源同步源的ID 号，如果发现根源同步源 ID 号更高的D2D 终端，则被认定发现更高优先级的 D2D 终端。第一种判断条 件，可以用于处理有蜂窝网络覆盖的场景，第二种判断条件则可以用于处理D2D  自组织网络下的场景，例如当两个处于D2D Master Mode 的 D2D 终端从不能互 相发现到能够互相发现时(该场景可能为两个D2D 终端由远及近接近),应有一 个处于D2D Master Mode 的终端抛弃本机主机模式，升迁为D2D Slave Mode,
+保证网络中只有一个主机定时基准，从而实现D2D 通信。由于两个D2D 终端是 同优先级，确立任意一个为主机，另一个为从机即可，因此可以根据ID 号来确 定。该状态变迁条件是D2D Master Mode  >  D2D Slave Mode和 D2D Slave  Mode   >D2D Slave Mode两种状态变迁的变迁条件，对于后者，该变迁并不改 变本机同步模式，但会更改本机的同步源，即发现更高优先级的 D2D 终端时， 抛弃目前 D2D 同步源，而与新发现的更高优先级的D2D 终端建立同步关系，并 运行在D2D Slave Mode。
+e) 发现干扰功率更高的上行蜂窝用户UE。
+在通信系统中Stack高层会实时对蜂窝系统进行干扰测量并下发测量结果到 物理层。当测量结果显示有更高干扰功率的蜂窝UE 出现时，则应与其建立同步 关系，获取提前量TA, 从而减少D2D 系统和蜂窝系统之间的干扰。
+34
+(C)1994-2022   China   Academic   Journal   Electronic   Publishing   House.All   rights   reserved.    http://www.cnki.net
+(d)
+D2D  Master  Mode
+_          _
+(d)
+D2D  Slave  Mode)
+(c)
+(a)
+(c)
+(a)
+UE Slave  Mode
+_       _
+—
+Cell Slave Mode
+_       _
+(e)
+图4-2 上行状态机状态升迁图
+2. 上行状态机降迁
+上行状态机的降迁也有多种状态变迁场景，图4-3展示了上行状态机各状态
+之间的降迁转移情况，各状态降迁所需的变迁条件有如下三种：
+a)   D2D   STATE:Active   ->Idle。
+即丢失各 D2D  终端同步信号，该状态变迁条件是 D2D   Slave Mode  ->
+D2D Master Mode状态变迁的变迁条件。
+b) D2D STATE:Active->Active, 但丢失现D2D 同步源。
+该状态变迁条件是D2D  Slave  Mode  >  D2D  Slave  Mode状态变迁的变 迁条件，该变迁并不改变本机同步模式，但会更改本机的同步源，即根据SyncInfo 中传输的 D2D 终端ID 信息判定是否丢失现D2D 终端同步源，若丢失，则选择 其他D2D 终端作为同步源重新建立同步关系。
+c)    CELL   STATE:Active   ->Idle。
+即 网 络 中 丢 失 基 站 信 号 ， 该 状 态 变 迁 条 件 是 Cell Slave Mode -> D2D Master Mode和 Cell Slave Mode ->D2D Slave Mode两种状态变迁的变 迁条件。由于 UE 同步是在 CELL  同步基础上，因此当与基站失步也会导致和 UE 失步，因此该状态变迁条件也是 UE Slave Mode -> D2D Master Mode 和 UE Slave Mode ->D2D Slave Mode两种状态变迁的变迁条件。
+d)    UE  STATE:Active   ->Idle。
+35
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.    http://www.cnki.net
+北京邮电大学工学硕士学位论文
+即网络中丢失 UE 上行用户信号，该状态变迁条件是 UE Slave Mode  >
+Cell Slave Mode状态变迁的变迁条件。
+e) UE STATE:Active->Active, 但丢失现UE 同步源
+该状态变迁条件是UE Slave Mode   >UE Slave. Mode状态变迁的变迁条 件，该变迁并不改变本机上行同步模式，但会更改本机上行的同步源，会选取新 的UE 作为同步源获取提前量TA。
+、
+D2D Master Mode
+_         _
+—
+02D Slave Mode)
+(6)
+(c)
+(c)
+气 ·
+(c)
+UE Slave Mode                    (d)—                   Cell  Slave  Mode,
+(e)
+图4-3 上行状态机状态降迁图

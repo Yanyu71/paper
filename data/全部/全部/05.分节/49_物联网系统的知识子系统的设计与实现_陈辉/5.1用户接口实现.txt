@@ -1,0 +1,59 @@
+5.1用户接口实现
+用户接口模块主要是提供用户一个直观的Web管理和操作界面，结合之前的设计, 主要包括提供基本的知识库管理操作功能和用户自主定义事件推理目标及结果展示功 能。用户也可以通过界面按照提供的选项输入领域信息，选择相关参数和相关的约束算 子，然后提交给后台，后台完成处理之后将数据存储到数据库MongoDB中。之后用户 可以选择展示结果，同样的前端会将请求提交到Web后台，后台根据请求访问数据库 获取数据，然后以Json的数据格式返回。用户也可以通过界面进行基本的知识库管理 操作，包括知识库的添加、删除、文件上传、备份和SPARQL査询。请求提交时序图 如下图5-1所示：
+图5-1请求提交时序图
+前端基于backbone框架同时结合Bootstrap库和jquery.js库实现开发，釆用MVC 设计模式，主要涉及 dataset-controller.js、manage-controller.js、query-controller.js、server.js、 upload-controller.js等几个类。server.js:用于发送请求的主类，用于将用户的操作发送给 后台服务器。dataset-controller.js是dataset.html控制主类，用于获取数据集列表并显示 加载数据集页面。初始化数据集，在页面中生成对应列表，记录下用户的操作并进行响 应。manage-controller.js是数据集管理器，负责响应用户的数据集添加、删除、备份操 作并根据返回结果更新界面。query-controller.js是SPARQL查询控制器，嵌入Qonsole component编辑器，用于加载整个SPARQL编辑器并负责将SPARQL代码传送至后台。 upload-controller.js：负责文件的上传操作，并根据上传结果渲染界面。
+规则定义界面的主体实现为一个Bootstrap表单(fbrm),用户可以选择知识库名，然 后系统会自动根据选择的知识库更新相关选项。界面包含映射定义、推理定义、推理、 结果展示等相关功能选项。如下图5-2所示：
+。定义事件处理规则：
+知识库
+談射定义	推建定义	推理	结果展示	停止展示
+图5-2定义事件处理规则主界面图
+映射定义按钮触发事件与知识映射定义窗口，用于事件与知识的映射，包括选择特 定的知识对象，选择事件主题及事件的属性，知识实例(事件推理范围)。界面实现同 样为一个Bootstrap表单，釆用Bootstrap模态框形式进行弹出。表单包含的项目包含推 理映射定义的各项内容，包括要映射的知识库中的知识对象，事件主题和用于映射的事 件的一级属性、知识实例等选项。在表单各项中，知识对象、知识实例和事件主题等选 项使用了下拉列表框(select)类型，事件属性选择使用了多选框(checkbox)类型，数据输 入框使用了下拉列表框(select)和文件(file)类型，备注使用了文本域(textarea)类型，其他 各项使用的都是文本框(text)类型。事件与知识映射定义界面如下图5-3所示：
+事件知识映射
+知识对象
+http://www.semanticweb.Org/traffic-ontology#Position
+事件主题
+shenzhen
+速度	经度 新
+'?莅j欵為參忒迎.	板％....	! 纬度 62 状态	　　　方向
+知识实例
+http://www.semanticweb.Org/traffic-ontology# 翠竹路		　　　▲
+图5-3映射定义图
+推理定义按钮触发约束定义窗口，用于推理目标的约束定义，包括选择选择相关参 数以及输入相应的参数值。界面实现同样为一个Bootstrap表单，采用Bootstrap模态框 形式进行弹出。约束定义界面如下图5-4所示：
+推理按钮用于提交用户推理请求，用户点击就会触发请求处理函数。函数会首先要 阻止表单自动提交，然后会获取表单中的每一项参数以及参数值。随后，会附上一个唯 一 id值，此id值用于标识此次推理。以便后续获取结果时作为凭证。然后利用jQuery 中?瘁技术提交所有参数到后台监听地址和端口。
+结果展示的时序图如下图5-5所示：
+图5-5结果获取时序图
+结果界面的渲染釆用百度的echarts.js库实现。echarts.js库需要提供一个div元素来 初始化图表，并提供一个json格式的配置对象用于设置图表的参数，包括标题、tooltip、 legend、x轴和y轴的类型、数据展示的图表类型等。结果获取釆用轮询的方式，前端 每隔固定时间访问后台请求结果数据，同样也是采用Ajax技术实现，用户单击结果展 示之后，触发相应事件响应函数。首先响应函数会做一些初始化的工作，包括基本图表 的渲染，id值的获取等，然后向服务器发送推理时提交id号，服务器会根据此id号返 回相应的推理结果数据。数据都是以json的形式返回，为了更新界面，首先要解析数 据生成一个JSON格式的对象。对象中的各个属性值存储着结果信息，通过将结果信息 push到图表的option配置对象的数据数组里，同时把最开始的数据给移除。这样相当 于时刻维护一个数据窗口，每次更新界面时只渲染此窗口中的数据。。
+定义事件处理规则:
+知识库
+Traffic
+道路拥堵状态
+19:40:0	19:45:0 19:50:0	19:55:0	200:0	20:5:0	20:10:0 20:15:0
+图5-6结果渲染图
+后台服务器基于Jetty技术实现，通过继承AbstractHandler类实现DataHandler类, 这是处理请求的主类，根据请求的不同执行不同的响应操作。后台启动之后会监听固定 的端口，前端的请求经过jetty的封装之后会生成Request对象。通过分析Request中的 path判断是推理请求还是结果获取。如果是推理请求则将参数封装为Targetinfo对象中, 并将此对象作为入口参数调用推理模块进行推理，如果是结果获取则根据参数id访问 数据库获取结果。类图如图5-7所示：
+图5-7后台服务类图
+具体涉及到的类有：DataHandler 类、Main 类、MongoTool 类、JettyService 类、 DatasetFactory 类、JettyService 类、Targetinfo 类、ClientHelper 类。表 5-1 对上述的这 些类和对应的实现功能作了简要介绍：
+表5-1数据集删除功能
+类/接口	功能描述
+Main	后台服务入口，Web后台的服务启动类。监听1古1定端口，如果参数 中没有提供启动端口，则默认从15100端口启动。
+DataHandler	Web请求处理类。根据接收到的HttpRequest,判断其中的请求地址 后缀，如果是/dataset开始的地址则进行知识库相关的操作，如果是 /deduce则将其余参数传给推理器，如果是/data则获取结果并返冋。
+MongoTool	MongoDB数据库的类，采用单例模式实现。提供获取利存储数据的 接口。
+JettyService	Jetty的启动类，启动函数start负责从给定端口启动，并将请求作为 转发给DataHandlere处理。
+Target In fo	封装Request中的参数，是推理模块入口参数对象。
+ClientHelper	结果获取辅助类，根据配置文件获取存储结果的数据库名和数据集 名，并生成MongoDB的访问对象MongoCliento
+DatasetFactory	用于数据集操作,DatesetHandler调用接口响应用户的知识管理操作。
+表5-2是JettyService类的启动方法介绍。
+表 5-2 JettyService 类 start 方法
+方法	protected void start(int port, bstractHandler handler)
+描述	根据传入的接口和AbstractHandle对象生成Jetty的Server对象。
+AbstractHandler是Handler接口，实际传入的是实现接口的DataHandler对 象。然后启动Server开始监听输入的端口，将到来的请求分发给传入的 DataHandler对象进行处理。
+参数	@Param port要监听端口。
+@Param handler实际响应类对象。
+返冋	void
+表5-3是DataHandler类的handle方法介绍。
+表 5-3 DataHandler 类 handle 方法
+方法	protected void handle(HttpServletRequest request,
+HttpServletResponse response)
+描述	响应用户接口的请求，根据请求的内容生成进行处理，包括推理、结果获 取以及模型知识库的增删改査等功能调用。
+参数	@Param request http 请求。
+@Param response http 响应对象。
+返冋	void

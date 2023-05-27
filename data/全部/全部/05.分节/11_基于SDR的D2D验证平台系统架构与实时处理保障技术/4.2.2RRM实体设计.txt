@@ -1,0 +1,25 @@
+4.2.2RRM实体设计
+如第三章所述通信流程，本论文中一子帧业务数据的发送使用的发射功率、 使用的频域资源、调制方式以及编码速率均由D2D终端的RRM实体分布式地确 定。根据需求，RRM实体的功能可以分为两大部分，即链路测量信息的维护和数 据发送控制参数的确定。这两部分的内容都与系统使用的干扰管理算法密切相关o 为了方便系统在日后的研究中应用不同的干扰管理算法，甚至能在有基站额外辅 助的条件下工作，本论文将参数生成的逻辑抽象成了几个通用的逻辑步骤，使其 可适用于使用相同D2D通信流程的其它干扰管理算法。
+目前本论文中所使用的策略如节所述，使用到的链路测量信息和维护的 链路控制参数包括：
+33
+表4-4 RRM链路测量信息与链路控制参数
+参数意义	数据格式
+与蜂窝基站间的路径损耗	value
+蜂窝基站规定的蜂窝上行用户静态工作点	value
+蜂窝上行通信链路补偿因子	value
+无线环境基底噪声	value
+与其它D2D终端之间的路径损耗列表	map<D2Did, passloss>
+蜂窝用户单位资源基准呑吐量列表	map<cellueid, throughpht>
+蜂窝用户单位资源实时吞吐量列表	map<cellueid, throughput>
+复用不同蜂窝用户资源时使用的功率惩罚因子列表	map<cellueid, B>
+与其它D2D终端之间通信的链路补偿因子列表	map<D2Did, A>
+上行子帧上的蜂窝用户上行通信授权列表	map<fn, vector<struct rb pair> >
+其中，rb_pair是RRM为了描述RB段所定义的一个结构体，包含RB段的起 始位置，长度，该RB段内资源被复用的蜂窝上行用户的ueid列表，以及该RB 段内，蜂窝上行用户可能对D2D用户造成的干扰的估计值。
+数据发送控制参数的确定，包括发送功率、使用的RB段的起始位置和持续 长度、对应的MAC层TB块大小、调制方式、HARQ的RV版本、使用的IMCS 编号。RRM定义了一个结构体rmjnfo_t以包含以上参数。一次无线资源调度即 生成一个对应的rm_info_t，因此RRM提供了一个总的接口为generate_rmJnfoO， 返回与对应子帧相对应的资源调度结果。在执行时，generate_rm_info()被业务数 据发送函数调用(见4.2.4节)，首先检查对应子帧的RB资源被蜂窝上行通信的占 用情况，调用available_rb()函数生成若干个候选的连续RB段，在每一个候选RB 段上先后执行powerctrl_openloop()确定发送功率，执行mcs_select_openloop()确定 调制编码方式(IMCS),获取该方式下TB块的大小，即物理层能够承载的MAC PDU的比特数。其中TB块的大小由RB段的长度和IMCS共同决定。
+在当前策略下，若使用正交资源的策略能够发送缓冲区内全部数据，则不使 用复用策略，否则选取所有RB段上能提供最大TB块的RB段及其方案为本次无 线资源调度的结果。这一部分逻辑在generate_rm_info()函数内实现。
+RRM实体提供的主要接口如表4-5所示。除了本节之前提到的几个接口外， powerctrl_closeloop()由对蜂窝用户链路的测量模块调用，用于更新复用不同蜂窝 用户资源时使用的功率惩罚因子列表；mcs_select_closeloop()由HARQ实体在其 接收链路反馈结果时调用，用于更新与其它D2D终端之间通信的链路补偿因子列 表。
+34
+表4-5RRM主要接口
+函数接口定义
+generate_rm_info(int fn, int rxid, int pdu_len) available_rb(int rxid) powerctrl_openlo0p(iiit delta) powerctrl_closeloop(int cellueid) mcs_select_openloop(int p_tx, int rxid) 	 —
+mcs select closeloop(int rxid)

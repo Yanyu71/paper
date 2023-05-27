@@ -1,0 +1,12 @@
+4.3.1下行静态状态机设计
+对于D2D '终端下行；根据有无蜂窝覆盖其同步定时方式只有两个：与蜂窝 基站同步定时；根据上行Sync 同步定时和提前量进行下行定时。对于这两种定 时方式，若同时存在，即存在蜂窝基站信号覆盖时，为避免干扰与蜂窝网络共享 资源， D2D 下行应首选与蜂窝基站下行定时对齐，同步优先级理应为蜂窝基站  同步定时高于基于上行sync定时的下行定时。
+因此，对于下行状态机，可以设置两个状态15]:
+STATE DL=D2D Mode:    自组状态，外界无基站同步信号覆盖，下行定时
+方式为由上行Sync同步定时对齐而自动对齐，需要状态标志CELL STATE 为Idle。
+STATE DL=Cell Mode:   基站状态，在基站信号覆盖下，下行时频偏信息 由下行Cell同步获取，下行与基站下行定时对齐，需要状态标志CELL STATE
+为Active。
+师
+表.4-1 下行状态机各状态与状态标志决策条件
+D2D STATE	CELL STATE	UE STATE
+D2D Mode	Active	Idle	Idle
+Cell Mode	Active/Idle	Active	Active/Idle

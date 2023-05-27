@@ -1,0 +1,4 @@
+2.4.4Jaccard系数
+Jaccard系数(Jaccard Index)也是一种相似性的计算方法。下面使用Jaccard系数 对样本a与b进行相似性度量，那么样本a与b的Jaccard系数即可定义为：
+J(a,b)=翳	公式 2-2
+若J(a,b)=l则说明这两个样本具有相同的行为。

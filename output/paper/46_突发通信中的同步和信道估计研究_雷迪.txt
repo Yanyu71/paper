@@ -1,0 +1,705 @@
+﻿{
+    "knowledge_points": [
+        {"title": "通信在人类生活中的重要性", "en": "Importance of communication in human life"},
+        {"title": "移动通信技术的发展", "en": "Development of mobile communication technology"},
+        {"title": "突发通信的定义和应用", "en": "Definition and application of burst communication"},
+        {"title": "突发通信中的信道估计技术", "en": "Channel estimation technology in burst communication"},
+        {"title": "突发通信系统的组成", "en": "Composition of burst communication system"},
+        {"title": "典型的突发通信信道", "en": "Typical burst communication channels"},
+        {"title": "单载波调制与多载波调制技术", "en": "Single-carrier modulation and multi-carrier modulation technology"}
+    ],
+    "relations": [
+        {"source": "通信在人类生活中的重要性", "target": "移动通信技术的发展", "type": "关联"},
+        {"source": "移动通信技术的发展", "target": "突发通信的定义和应用", "type": "关联"},
+        {"source": "突发通信的定义和应用", "target": "突发通信中的信道估计技术", "type": "关联"},
+        {"source": "突发通信中的信道估计技术", "target": "突发通信系统的组成", "type": "关联"},
+        {"source": "突发通信系统的组成", "target": "典型的突发通信信道", "type": "关联"},
+        {"source": "典型的突发通信信道", "target": "单载波调制与多载波调制技术", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "分集接收原理", "en": "Principle of diversity reception"},
+        {"title": "多载波调制定义", "en": "Definition of multi-carrier modulation"},
+        {"title": "单载波调制与多载波调制的比较", "en": "Comparison between single-carrier modulation and multi-carrier modulation"},
+        {"title": "正交频分复用技术", "en": "Orthogonal frequency-division multiplexing technology"},
+        {"title": "正交频分复用技术的优点", "en": "Advantages of orthogonal frequency-division multiplexing technology"},
+        {"title": "正交频分复用技术的缺点", "en": "Disadvantages of orthogonal frequency-division multiplexing technology"},
+        {"title": "同步和信道估计技术", "en": "Synchronization and channel estimation technology"}
+    ],
+    "relations": [
+        {"source": "分集接收原理", "target": "多载波调制定义", "type": "应用"},
+        {"source": "单载波调制与多载波调制的比较", "target": "多载波调制定义", "type": "定义"},
+        {"source": "单载波调制与多载波调制的比较", "target": "正交频分复用技术", "type": "比较"},
+        {"source": "正交频分复用技术", "target": "同步和信道估计技术", "type": "应用"},
+        {"source": "正交频分复用技术的优点", "target": "正交频分复用技术的缺点", "type": "对比"},
+        {"source": "同步和信道估计技术", "target": "分集接收原理", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "狭义的信道估计", "en": "Narrowband Channel Estimation"},
+        {"title": "正交频分复用系统中的信道估计算法", "en": "Channel Estimation Algorithms in Orthogonal Frequency Division Multiplexing Systems"},
+        {"title": "基于压缩感知的信道估计", "en": "Compressed Sensing-based Channel Estimation"},
+        {"title": "突发通信系统中的同步问题", "en": "Synchronization Issues in Burst Communication Systems"},
+        {"title": "突发通信中的同步检测", "en": "Synchronization Detection in Burst Communication"},
+        {"title": "定时同步和载波同步", "en": "Timing and Carrier Synchronization"},
+        {"title": "突发检测算法", "en": "Burst Detection Algorithms"}
+    ],
+    "relations": [
+        {"source": "狭义的信道估计", "target": "系统识别", "type": "包含关系"},
+        {"source": "狭义的信道估计", "target": "信道冲激响应", "type": "包含关系"},
+        {"source": "正交频分复用系统中的信道估计算法", "target": "LS信道估计算法", "type": "包含关系"},
+        {"source": "正交频分复用系统中的信道估计算法", "target": "MMSE信道估计算法", "type": "包含关系"},
+        {"source": "基于压缩感知的信道估计", "target": "压缩感知理论", "type": "包含关系"},
+        {"source": "突发通信系统中的同步问题", "target": "定时同步", "type": "包含关系"},
+        {"source": "突发通信系统中的同步问题", "target": "载波同步", "type": "包含关系"},
+        {"source": "突发通信中的同步检测", "target": "信号存在性检测", "type": "包含关系"},
+        {"source": "突发检测算法", "target": "时域信号分析", "type": "包含关系"},
+        {"source": "突发检测算法", "target": "频域信号分析", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于频域数据的突发检测算法", "en": "Burst detection algorithm based on frequency domain data"},
+        {"title": "基于信号功率的突发检测算法", "en": "Burst detection algorithm based on signal power"},
+        {"title": "改进的基于信号功率的突发检测算法", "en": "Improved burst detection algorithm based on signal power"},
+        {"title": "基于时域信号能量的突发检测算法", "en": "Burst detection algorithm based on time domain signal energy"},
+        {"title": "滑动窗口法", "en": "Sliding window method"},
+        {"title": "分析信号主分量的能量检测算法", "en": "Energy detection algorithm based on analysis of signal principal component"},
+        {"title": "双滑动窗口检测算法", "en": "Double sliding window detection algorithm"},
+        {"title": "长序列相关检测算法", "en": "Long sequence correlation detection algorithm"}
+    ],
+    "relations": [
+        {"source": "基于频域数据的突发检测算法", "target": "基于信号功率的突发检测算法", "type": "包含"},
+        {"source": "基于信号功率的突发检测算法", "target": "改进的基于信号功率的突发检测算法", "type": "改进"},
+        {"source": "改进的基于信号功率的突发检测算法", "target": "基于时域信号能量的突发检测算法", "type": "包含"},
+        {"source": "基于时域信号能量的突发检测算法", "target": "滑动窗口法", "type": "实现方式"},
+        {"source": "基于时域信号能量的突发检测算法", "target": "分析信号主分量的能量检测算法", "type": "实现方式"},
+        {"source": "基于时域信号能量的突发检测算法", "target": "双滑动窗口检测算法", "type": "实现方式"},
+        {"source": "滑动窗口法", "target": "双滑动窗口检测算法", "type": "实现方式"},
+        {"source": "长序列相关检测算法", "target": "基于时域信号能量的突发检测算法", "type": "实现方式"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "同步检测算法",
+            "en": "Synchronization detection algorithm"
+        },
+        {
+            "title": "定时同步",
+            "en": "Timing synchronization"
+        },
+        {
+            "title": "数据辅助算法",
+            "en": "Data-aided algorithm"
+        },
+        {
+            "title": "基于判决算法",
+            "en": "Decision-directed algorithm"
+        },
+        {
+            "title": "非数据辅助算法",
+            "en": "Non-data-aided algorithm"
+        },
+        {
+            "title": "最大似然定时估计",
+            "en": "Maximum likelihood timing estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "同步检测算法",
+            "target": "定时同步",
+            "type": "属于"
+        },
+        {
+            "source": "同步检测算法",
+            "target": "数据辅助算法",
+            "type": "包括"
+        },
+        {
+            "source": "同步检测算法",
+            "target": "基于判决算法",
+            "type": "包括"
+        },
+        {
+            "source": "同步检测算法",
+            "target": "非数据辅助算法",
+            "type": "包括"
+        },
+        {
+            "source": "定时同步",
+            "target": "数据辅助算法",
+            "type": "包括"
+        },
+        {
+            "source": "定时同步",
+            "target": "基于判决算法",
+            "type": "包括"
+        },
+        {
+            "source": "定时同步",
+            "target": "非数据辅助算法",
+            "type": "包括"
+        },
+        {
+            "source": "定时同步",
+            "target": "最大似然定时估计",
+            "type": "包括"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "载波同步", "en": "Carrier synchronization"},
+        {"title": "直接法", "en": "Direct method"},
+        {"title": "插入导频法", "en": "Insertion pilot method"},
+        {"title": "开环前馈算法", "en": "Open-loop feedforward algorithm"},
+        {"title": "闭环反馈算法", "en": "Closed-loop feedback algorithm"}
+    ],
+    "relations": [
+        {"source": "载波同步", "target": "直接法", "type": "包含"},
+        {"source": "载波同步", "target": "插入导频法", "type": "包含"},
+        {"source": "载波同步", "target": "开环前馈算法", "type": "包含"},
+        {"source": "载波同步", "target": "闭环反馈算法", "type": "包含"},
+        {"source": "直接法", "target": "非线性变换", "type": "包含"},
+        {"source": "插入导频法", "target": "导频", "type": "包含"},
+        {"source": "开环前馈算法", "target": "导频", "type": "依赖"},
+        {"source": "闭环反馈算法", "target": "反馈", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "闭环反馈算法", "en": "Closed-loop feedback algorithm"},
+        {"title": "载波同步算法", "en": "Carrier synchronization algorithm"},
+        {"title": "数据辅助算法", "en": "Data-assisted algorithm"},
+        {"title": "非数据辅助算法", "en": "Non-data-assisted algorithm"},
+        {"title": "编码辅助算法", "en": "Code-assisted algorithm"},
+        {"title": "前向载波频偏估计算法", "en": "Forward carrier frequency offset estimation algorithm"},
+        {"title": "最大似然估计算法", "en": "Maximum likelihood estimation algorithm"},
+        {"title": "Kay算法", "en": "Kay algorithm"},
+        {"title": "Fitz算法", "en": "Fitz algorithm"},
+        {"title": "L&R算法", "en": "L&R algorithm"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "冲激响应估计", "en": "Impulse response estimation"},
+        {"title": "ML准则", "en": "Maximum likelihood criterion"},
+        {"title": "PN序列", "en": "Pseudorandom noise sequence"},
+        {"title": "信号帧结构", "en": "Signal frame structure"}
+    ],
+    "relations": [
+        {"source": "闭环反馈算法", "target": "载波同步算法", "type": "包含"},
+        {"source": "载波同步算法", "target": "数据辅助算法", "type": "包含"},
+        {"source": "载波同步算法", "target": "非数据辅助算法", "type": "包含"},
+        {"source": "载波同步算法", "target": "编码辅助算法", "type": "包含"},
+        {"source": "数据辅助算法", "target": "前向载波频偏估计算法", "type": "包含"},
+        {"source": "非数据辅助算法", "target": "最大似然估计算法", "type": "包含"},
+        {"source": "最大似然估计算法", "target": "Kay算法", "type": "包含"},
+        {"source": "最大似然估计算法", "target": "Fitz算法", "type": "包含"},
+        {"source": "最大似然估计算法", "target": "L&R算法", "type": "包含"},
+        {"source": "信道估计", "target": "冲激响应估计", "type": "包含"},
+        {"source": "冲激响应估计", "target": "ML准则", "type": "包含"},
+        {"source": "信道估计", "target": "PN序列", "type": "包含"},
+        {"source": "PN序列", "target": "信号帧结构", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "PN序列", "en": "PN sequence"},
+        {"title": "信道参数估计", "en": "Channel parameter estimation"},
+        {"title": "定时同步", "en": "Timing synchronization"},
+        {"title": "载波同步", "en": "Carrier synchronization"},
+        {"title": "多径效应", "en": "Multipath effect"},
+        {"title": "多普勒效应", "en": "Doppler effect"},
+        {"title": "短波信道特性", "en": "Shortwave channel characteristics"},
+        {"title": "电离层分层特性", "en": "Ionospheric layering characteristics"},
+        {"title": "短波通信系统", "en": "Shortwave communication system"},
+        {"title": "训练序列", "en": "Training sequence"},
+        {"title": "时频联合同步算法", "en": "Time-frequency joint synchronization algorithm"},
+        {"title": "CAZAC序列", "en": "CAZAC sequence"}
+    ],
+    "relations": [
+        {"source": "PN序列", "target": "信道参数估计", "type": "defines"},
+        {"source": "信道参数估计", "target": "PN序列", "type": "uses"},
+        {"source": "定时同步", "target": "短波通信系统", "type": "is a part of"},
+        {"source": "载波同步", "target": "短波通信系统", "type": "is a part of"},
+        {"source": "多径效应", "target": "短波信道特性", "type": "affects"},
+        {"source": "多普勒效应", "target": "短波信道特性", "type": "affects"},
+        {"source": "短波信道特性", "target": "短波通信系统", "type": "affects"},
+        {"source": "电离层分层特性", "target": "短波信道特性", "type": "affects"},
+        {"source": "训练序列", "target": "时频联合同步算法", "type": "uses"},
+        {"source": "时频联合同步算法", "target": "训练序列", "type": "uses"},
+        {"source": "CAZAC序列", "target": "训练序列", "type": "is a type of"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "短波通信的特点", "en": "Characteristics of Shortwave Communication"},
+        {"title": "短波信道Watterson模型", "en": "Watterson Model of Shortwave Channel"},
+        {"title": "多载波短波通信系统中的同步算法", "en": "Synchronization Algorithm in Multi-Carrier Shortwave Communication System"}
+    ],
+    "relations": [
+        {"source": "短波通信的特点", "target": "短波信道Watterson模型", "type": "包含"},
+        {"source": "短波通信的特点", "target": "多载波短波通信系统中的同步算法", "type": "包含"},
+        {"source": "短波信道Watterson模型", "target": "短波通信的特点", "type": "属于"},
+        {"source": "多载波短波通信系统中的同步算法", "target": "短波通信的特点", "type": "属于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CAZAC序列的对称自相关性质", "en": "Symmetric autocorrelation properties of CAZAC sequences"},
+        {"title": "PN序列加权", "en": "PN sequence weighting"},
+        {"title": "基于PN序列加权的CAZAC序列的训练序列", "en": "Training sequence based on PN sequence weighting of CAZAC sequences"},
+        {"title": "时频联合同步算法", "en": "Time-frequency joint synchronization algorithm"},
+        {"title": "OFDM系统模型", "en": "OFDM system model"},
+        {"title": "交织", "en": "Interleaving"},
+        {"title": "QPSK调制", "en": "QPSK modulation"},
+        {"title": "IFFT运算", "en": "IFFT operation"},
+        {"title": "循环前缀", "en": "Cyclic prefix"},
+        {"title": "定时同步", "en": "Timing synchronization"},
+        {"title": "频偏估计", "en": "Frequency offset estimation"},
+        {"title": "符号间干扰", "en": "Inter-symbol interference"},
+        {"title": "子载波间干扰", "en": "Inter-carrier interference"},
+        {"title": "定时度量函数", "en": "Timing metric function"},
+        {"title": "对称自相关", "en": "Symmetric autocorrelation"},
+        {"title": "伪随机性", "en": "Pseudo-randomness"},
+        {"title": "二维搜索算法", "en": "Two-dimensional search algorithm"}
+    ],
+    "relations": [
+        {"source": "CAZAC序列的对称自相关性质", "target": "PN序列加权", "type": "包含"},
+        {"source": "PN序列加权", "target": "基于PN序列加权的CAZAC序列的训练序列", "type": "包含"},
+        {"source": "基于PN序列加权的CAZAC序列的训练序列", "target": "时频联合同步算法", "type": "应用"},
+        {"source": "OFDM系统模型", "target": "交织", "type": "包含"},
+        {"source": "交织", "target": "QPSK调制", "type": "应用"},
+        {"source": "QPSK调制", "target": "IFFT运算", "type": "应用"},
+        {"source": "IFFT运算", "target": "循环前缀", "type": "应用"},
+        {"source": "循环前缀", "target": "定时同步", "type": "应用"},
+        {"source": "定时同步", "target": "频偏估计", "type": "应用"},
+        {"source": "频偏估计", "target": "符号间干扰", "type": "影响"},
+        {"source": "频偏估计", "target": "子载波间干扰", "type": "影响"},
+        {"source": "符号间干扰", "target": "定时度量函数", "type": "影响"},
+        {"source": "子载波间干扰", "target": "定时度量函数", "type": "影响"},
+        {"source": "定时度量函数", "target": "对称自相关", "type": "应用"},
+        {"source": "CAZAC序列的对称自相关性质", "target": "对称自相关", "type": "应用"},
+        {"source": "PN序列加权", "target": "伪随机性", "type": "应用"},
+        {"source": "伪随机性", "target": "二维搜索算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "小数倍频偏估计", "en": "Estimation of fractional frequency offset"},
+        {"title": "CAZAC序列", "en": "CAZAC sequence"},
+        {"title": "伪随机时域加权因子", "en": "Pseudo-random time-domain weighting factor"},
+        {"title": "时频联合同步算法", "en": "Time-frequency joint synchronization algorithm"},
+        {"title": "定时同步", "en": "Timing synchronization"},
+        {"title": "整数倍频偏估计", "en": "Estimation of integer frequency offset"},
+        {"title": "单载波短波通信系统", "en": "Single-carrier shortwave communication system"},
+        {"title": "LDPC编码", "en": "LDPC coding"},
+        {"title": "信道均衡技术", "en": "Channel equalization technology"}
+    ],
+    "relations": [
+        {"source": "小数倍频偏估计", "target": "训练序列", "type": "包含"},
+        {"source": "小数倍频偏估计", "target": "时频联合同步算法", "type": "应用"},
+        {"source": "小数倍频偏估计", "target": "CAZAC序列", "type": "应用"},
+        {"source": "小数倍频偏估计", "target": "伪随机时域加权因子", "type": "应用"},
+        {"source": "小数倍频偏估计", "target": "整数倍频偏估计", "type": "比较"},
+        {"source": "定时同步", "target": "训练序列", "type": "包含"},
+        {"source": "定时同步", "target": "时频联合同步算法", "type": "应用"},
+        {"source": "单载波短波通信系统", "target": "LDPC编码", "type": "应用"},
+        {"source": "单载波短波通信系统", "target": "信道均衡技术", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LDPC编码", "en": "LDPC coding"},
+        {"title": "n/4-DQPSK调制", "en": "n/4-DQPSK modulation"},
+        {"title": "差分解调", "en": "Differential demodulation"},
+        {"title": "M序列", "en": "M-sequence"},
+        {"title": "同步头生成", "en": "Synchronization header generation"},
+        {"title": "频偏估计", "en": "Frequency offset estimation"}
+    ],
+    "relations": [
+        {"source": "LDPC编码", "target": "n/4-DQPSK调制", "type": "应用"},
+        {"source": "n/4-DQPSK调制", "target": "差分解调", "type": "调制解调"},
+        {"source": "M序列", "target": "同步头生成", "type": "应用"},
+        {"source": "同步头生成", "target": "频偏估计", "type": "同步"},
+        {"source": "n/4-DQPSK调制", "target": "同步头生成", "type": "同步"},
+        {"source": "频偏估计", "target": "同步头捕获", "type": "同步"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频率粗搜索", "en": "Coarse frequency search"},
+        {"title": "频率细搜索", "en": "Fine frequency search"},
+        {"title": "相关峰值", "en": "Correlation peak"},
+        {"title": "同步头", "en": "Sync header"},
+        {"title": "信噪比估计", "en": "SNR estimation"},
+        {"title": "AWGN信道", "en": "AWGN channel"},
+        {"title": "瑞利衰落信道", "en": "Rayleigh fading channel"},
+        {"title": "ITU信道参数", "en": "ITU channel parameters"},
+        {"title": "同步头漏检概率", "en": "Sync header miss detection probability"},
+        {"title": "CAZAC序列", "en": "CAZAC sequence"},
+        {"title": "PN序列", "en": "PN sequence"},
+        {"title": "时频联合同步算法", "en": "Joint time-frequency synchronization algorithm"},
+        {"title": "定时度量函数", "en": "Timing metric function"},
+        {"title": "突发帧结构", "en": "Burst frame structure"},
+        {"title": "编译码", "en": "Coding and decoding"},
+        {"title": "调制解调技术", "en": "Modulation and demodulation"},
+        {"title": "线性均衡技术", "en": "Linear equalization technique"},
+        {"title": "最小二乘信道估计", "en": "Least squares channel estimation"},
+        {"title": "最小均方误差信道估计", "en": "Minimum mean square error channel estimation"},
+        {"title": "压缩感知理论", "en": "Compressed sensing theory"},
+        {"title": "联合稀疏模型", "en": "Joint sparse model"}
+    ],
+    "relations": [
+        {"source": "频率粗搜索", "target": "频率细搜索", "type": "包含"},
+        {"source": "频率细搜索", "target": "相关峰值", "type": "产生"},
+        {"source": "相关峰值", "target": "频率细搜索", "type": "指导"},
+        {"source": "同步头", "target": "信噪比估计", "type": "用于"},
+        {"source": "信噪比估计", "target": "AWGN信道", "type": "应用于"},
+        {"source": "信噪比估计", "target": "瑞利衰落信道", "type": "应用于"},
+        {"source": "ITU信道参数", "target": "瑞利衰落信道", "type": "定义"},
+        {"source": "AWGN信道", "target": "同步头漏检概率", "type": "影响"},
+        {"source": "ITU好信道", "target": "同步头漏检概率", "type": "影响"},
+        {"source": "ITU中信道", "target": "同步头漏检概率", "type": "影响"},
+        {"source": "CAZAC序列", "target": "时频联合同步算法", "type": "应用于"},
+        {"source": "时频联合同步算法", "target": "定时度量函数", "type": "使用"},
+        {"source": "突发帧结构", "target": "编译码", "type": "应用于"},
+        {"source": "编译码", "target": "调制解调技术", "type": "使用"},
+        {"source": "调制解调技术", "target": "线性均衡技术", "type": "使用"},
+        {"source": "线性均衡技术", "target": "信道参数估计", "type": "应用于"},
+        {"source": "信道参数估计", "target": "最小二乘信道估计", "type": "方法"},
+        {"source": "信道参数估计", "target": "最小均方误差信道估计", "type": "方法"},
+        {"source": "压缩感知理论", "target": "OFDM信道估计", "type": "应用于"},
+        {"source": "联合稀疏模型", "target": "OFDM信道估计", "type": "方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "压缩感知技术", "en": "Compressed sensing technology"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "稀疏性", "en": "Sparsity"},
+        {"title": "联合稀疏模型", "en": "Joint sparse model"},
+        {"title": "OFDM系统", "en": "OFDM system"},
+        {"title": "正交匹配追踪算法", "en": "Orthogonal matching pursuit algorithm"},
+        {"title": "SOMP算法", "en": "Subspace orthogonal matching pursuit algorithm"}
+    ],
+    "relations": [
+        {"source": "压缩感知技术", "target": "信道估计", "type": "应用"},
+        {"source": "压缩感知技术", "target": "OFDM系统", "type": "应用"},
+        {"source": "信道估计", "target": "稀疏性", "type": "相关性"},
+        {"source": "信道估计", "target": "联合稀疏模型", "type": "应用"},
+        {"source": "OFDM系统", "target": "信道估计", "type": "应用"},
+        {"source": "联合稀疏模型", "target": "信道估计", "type": "应用"},
+        {"source": "正交匹配追踪算法", "target": "联合稀疏模型", "type": "应用"},
+        {"source": "SOMP算法", "target": "联合稀疏模型", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "压缩感知信道估计",
+            "en": "Compressed sensing channel estimation"
+        },
+        {
+            "title": "正交频分复用系统",
+            "en": "Orthogonal frequency division multiplexing system"
+        },
+        {
+            "title": "LS信道估计",
+            "en": "Least squares channel estimation"
+        },
+        {
+            "title": "自适应信道估计",
+            "en": "Adaptive channel estimation"
+        },
+        {
+            "title": "MMSE算法",
+            "en": "Minimum mean square error algorithm"
+        },
+        {
+            "title": "LMS算法",
+            "en": "Least mean squares algorithm"
+        },
+        {
+            "title": "RLS算法",
+            "en": "Recursive least squares algorithm"
+        }
+    ],
+    "relations": [
+        {
+            "source": "压缩感知信道估计",
+            "target": "正交频分复用系统",
+            "type": "适用于"
+        },
+        {
+            "source": "压缩感知信道估计",
+            "target": "LS信道估计",
+            "type": "性能优于"
+        },
+        {
+            "source": "压缩感知信道估计",
+            "target": "自适应信道估计",
+            "type": "性能优于"
+        },
+        {
+            "source": "压缩感知信道估计",
+            "target": "MMSE算法",
+            "type": "基于"
+        },
+        {
+            "source": "压缩感知信道估计",
+            "target": "LMS算法",
+            "type": "基于"
+        },
+        {
+            "source": "压缩感知信道估计",
+            "target": "RLS算法",
+            "type": "基于"
+        },
+        {
+            "source": "LS信道估计",
+            "target": "自适应信道估计",
+            "type": "一种"
+        },
+        {
+            "source": "LS信道估计",
+            "target": "MMSE算法",
+            "type": "基于"
+        },
+        {
+            "source": "LS信道估计",
+            "target": "LMS算法",
+            "type": "基于"
+        },
+        {
+            "source": "LS信道估计",
+            "target": "RLS算法",
+            "type": "基于"
+        },
+        {
+            "source": "自适应信道估计",
+            "target": "LMS算法",
+            "type": "一种"
+        },
+        {
+            "source": "自适应信道估计",
+            "target": "RLS算法",
+            "type": "一种"
+        },
+        {
+            "source": "MMSE算法",
+            "target": "LS算法",
+            "type": "基于"
+        },
+        {
+            "source": "MMSE算法",
+            "target": "压缩感知信道估计",
+            "type": "基于"
+        },
+        {
+            "source": "LMS算法",
+            "target": "LS算法",
+            "type": "一种"
+        },
+        {
+            "source": "LMS算法",
+            "target": "压缩感知信道估计",
+            "type": "基于"
+        },
+        {
+            "source": "RLS算法",
+            "target": "LS算法",
+            "type": "一种"
+        },
+        {
+            "source": "RLS算法",
+            "target": "压缩感知信道估计",
+            "type": "基于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "RLS算法",
+            "en": "RLS algorithm"
+        },
+        {
+            "title": "维纳滤波器",
+            "en": "Wiener filter"
+        },
+        {
+            "title": "LMS算法",
+            "en": "LMS algorithm"
+        },
+        {
+            "title": "OFDM信道估计算法",
+            "en": "OFDM channel estimation algorithm"
+        },
+        {
+            "title": "信道均衡技术",
+            "en": "Channel equalization technology"
+        },
+        {
+            "title": "线性均衡",
+            "en": "Linear equalization"
+        },
+        {
+            "title": "非线性均衡",
+            "en": "Nonlinear equalization"
+        },
+        {
+            "title": "迫零算法",
+            "en": "Zero-forcing algorithm"
+        },
+        {
+            "title": "均方误差算法",
+            "en": "MSE algorithm"
+        },
+        {
+            "title": "训练序列",
+            "en": "Training sequence"
+        },
+        {
+            "title": "短波信道",
+            "en": "Shortwave channel"
+        },
+        {
+            "title": "自相关",
+            "en": "Autocorrelation"
+        },
+        {
+            "title": "互相关",
+            "en": "Cross-correlation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "RLS算法",
+            "target": "维纳滤波器",
+            "type": "is"
+        },
+        {
+            "source": "RLS算法",
+            "target": "LMS算法",
+            "type": "compare"
+        },
+        {
+            "source": "OFDM信道估计算法",
+            "target": "信道均衡技术",
+            "type": "is"
+        },
+        {
+            "source": "信道均衡技术",
+            "target": "线性均衡",
+            "type": "is"
+        },
+        {
+            "source": "信道均衡技术",
+            "target": "非线性均衡",
+            "type": "is"
+        },
+        {
+            "source": "线性均衡",
+            "target": "迫零算法",
+            "type": "compare"
+        },
+        {
+            "source": "线性均衡",
+            "target": "均方误差算法",
+            "type": "compare"
+        },
+        {
+            "source": "训练序列",
+            "target": "短波信道",
+            "type": "is"
+        },
+        {
+            "source": "训练序列",
+            "target": "自相关",
+            "type": "is"
+        },
+        {
+            "source": "训练序列",
+            "target": "互相关",
+            "type": "is"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "同步和信道估计技术", "en": "Synchronization and channel estimation technology"},
+        {"title": "突发通信系统", "en": "Burst communication system"},
+        {"title": "同步检测", "en": "Synchronization detection"},
+        {"title": "定时同步", "en": "Timing synchronization"},
+        {"title": "频偏估计", "en": "Frequency offset estimation"},
+        {"title": "CAZAC序列", "en": "CAZAC sequence"},
+        {"title": "PN序列", "en": "PN sequence"},
+        {"title": "时频联合同步算法", "en": "Time-frequency joint synchronization algorithm"},
+        {"title": "压缩感知信道估计算法", "en": "Compressed sensing channel estimation algorithm"},
+        {"title": "稀疏信道模型", "en": "Sparse channel model"},
+        {"title": "单载波短波通信系统", "en": "Single-carrier shortwave communication system"},
+        {"title": "自适应信道估计技术", "en": "Adaptive channel estimation technology"},
+        {"title": "MMSE算法", "en": "MMSE algorithm"},
+        {"title": "训练序列设计", "en": "Training sequence design"},
+        {"title": "线性均衡器", "en": "Linear equalizer"},
+        {"title": "判决反馈均衡", "en": "Decision feedback equalization"},
+        {"title": "AWGN信道", "en": "AWGN channel"},
+        {"title": "ITU信道", "en": "ITU channel"},
+        {"title": "信道变化", "en": "Channel variation"}
+    ],
+    "relations": [
+        {"source": "同步和信道估计技术", "target": "突发通信系统", "type": "属于"},
+        {"source": "同步和信道估计技术", "target": "同步检测", "type": "包含"},
+        {"source": "同步和信道估计技术", "target": "定时同步", "type": "包含"},
+        {"source": "同步和信道估计技术", "target": "频偏估计", "type": "包含"},
+        {"source": "同步检测", "target": "CAZAC序列", "type": "使用"},
+        {"source": "同步检测", "target": "PN序列", "type": "使用"},
+        {"source": "定时同步", "target": "时频联合同步算法", "type": "使用"},
+        {"source": "压缩感知信道估计算法", "target": "稀疏信道模型", "type": "使用"},
+        {"source": "单载波短波通信系统", "target": "自适应信道估计技术", "type": "包含"},
+        {"source": "自适应信道估计技术", "target": "MMSE算法", "type": "使用"},
+        {"source": "单载波短波通信系统", "target": "训练序列设计", "type": "包含"},
+        {"source": "训练序列设计", "target": "线性均衡器", "type": "使用"},
+        {"source": "单载波短波通信系统", "target": "判决反馈均衡", "type": "考虑"},
+        {"source": "信道变化", "target": "AWGN信道", "type": "包含"},
+        {"source": "信道变化", "target": "ITU信道", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "同步技术", "en": "Synchronization technology"},
+        {"title": "短波通信信道估计技术", "en": "Shortwave communication channel estimation technology"},
+        {"title": "基于M序列的突发同步算法", "en": "Burst synchronization algorithm based on M-sequence"},
+        {"title": "MMSE算法", "en": "MMSE algorithm"},
+        {"title": "可行性验证", "en": "Feasibility verification"}
+    ],
+    "relations": [
+        {"source": "同步技术", "target": "短波通信信道估计技术", "type": "包含"},
+        {"source": "短波通信信道估计技术", "target": "基于M序列的突发同步算法", "type": "应用"},
+        {"source": "短波通信信道估计技术", "target": "MMSE算法", "type": "应用"},
+        {"source": "可行性验证", "target": "同步技术", "type": "依赖"},
+        {"source": "可行性验证", "target": "短波通信信道估计技术", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "通信原理", "en": "Communication Theory"},
+        {"title": "载波同步技术", "en": "Carrier Synchronization Technology"},
+        {"title": "快速载波频偏估计算法", "en": "Fast Carrier Frequency Offset Estimation Algorithm"},
+        {"title": "无线突发通信信道估计", "en": "Wireless Burst Communication Channel Estimation"},
+        {"title": "OFDM时频同步算法", "en": "OFDM Time-Frequency Synchronization Algorithm"},
+        {"title": "LDPC码", "en": "LDPC Code"},
+        {"title": "稀疏信道估计", "en": "Sparse Channel Estimation"}
+    ],
+    "relations": [
+        {"source": "通信原理", "target": "载波同步技术", "type": "包含"},
+        {"source": "载波同步技术", "target": "快速载波频偏估计算法", "type": "相关"},
+        {"source": "无线突发通信信道估计", "target": "OFDM时频同步算法", "type": "相关"},
+        {"source": "OFDM时频同步算法", "target": "LDPC码", "type": "相关"},
+        {"source": "OFDM时频同步算法", "target": "稀疏信道估计", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "OFDM系统信道估计技术", "en": "Channel estimation technology for OFDM systems"},
+        {"title": "稀疏信道估计", "en": "Sparse channel estimation"},
+        {"title": "压缩感知", "en": "Compressed sensing"},
+        {"title": "MIMO-OFDM系统", "en": "MIMO-OFDM system"},
+        {"title": "天线空间分集", "en": "Antenna spatial diversity"},
+        {"title": "极化失配", "en": "Polarization mismatch"},
+        {"title": "载波间干扰抑制技术", "en": "Inter-carrier interference suppression technology"}
+    ],
+    "relations": [
+        {"source": "OFDM系统信道估计技术", "target": "稀疏信道估计", "type": "包含"},
+        {"source": "OFDM系统信道估计技术", "target": "压缩感知", "type": "包含"},
+        {"source": "稀疏信道估计", "target": "MIMO-OFDM系统", "type": "适用于"},
+        {"source": "压缩感知", "target": "MIMO-OFDM系统", "type": "适用于"},
+        {"source": "MIMO-OFDM系统", "target": "天线空间分集", "type": "包含"},
+        {"source": "MIMO-OFDM系统", "target": "极化失配", "type": "包含"},
+        {"source": "OFDM系统信道估计技术", "target": "载波间干扰抑制技术", "type": "包含"}
+    ]
+}

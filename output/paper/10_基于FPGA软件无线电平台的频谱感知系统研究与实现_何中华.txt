@@ -1,0 +1,1361 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "认知无线电技术",
+            "en": "Cognitive Radio Technology"
+        },
+        {
+            "title": "频谱感知技术",
+            "en": "Spectrum Sensing Technology"
+        },
+        {
+            "title": "软件无线电技术",
+            "en": "Software Defined Radio Technology"
+        },
+        {
+            "title": "FPGA技术",
+            "en": "FPGA Technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "认知无线电技术",
+            "target": "频谱感知技术",
+            "type": "包含"
+        },
+        {
+            "source": "认知无线电技术",
+            "target": "软件无线电技术",
+            "type": "包含"
+        },
+        {
+            "source": "软件无线电技术",
+            "target": "FPGA技术",
+            "type": "实现"
+        },
+        {
+            "source": "频谱感知技术",
+            "target": "能量检测",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "能量检测", "en": "Energy Detection"},
+        {"title": "频谱感知技术", "en": "Spectrum Sensing Technology"},
+        {"title": "软件无线电", "en": "Software Defined Radio"},
+        {"title": "FPGA", "en": "Field Programmable Gate Array"},
+        {"title": "信号处理", "en": "Signal Processing"}
+    ],
+    "relations": [
+        {"source": "能量检测", "target": "频谱感知技术", "type": "包含"},
+        {"source": "频谱感知技术", "target": "软件无线电", "type": "实现"},
+        {"source": "软件无线电", "target": "FPGA", "type": "实现"},
+        {"source": "FPGA", "target": "信号处理", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "宽带频谱感知技术",
+            "en": "Wideband Spectrum Sensing Technology"
+        },
+        {
+            "title": "频谱感知能量检测算法",
+            "en": "Spectrum Sensing Energy Detection Algorithm"
+        },
+        {
+            "title": "噪声估计",
+            "en": "Noise Estimation"
+        },
+        {
+            "title": "奈奎斯特采样定理",
+            "en": "Nyquist Sampling Theorem"
+        },
+        {
+            "title": "FFT变换",
+            "en": "FFT Transformation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "宽带频谱感知技术",
+            "target": "频谱感知能量检测算法",
+            "type": "包含"
+        },
+        {
+            "source": "频谱感知能量检测算法",
+            "target": "噪声估计",
+            "type": "依赖"
+        },
+        {
+            "source": "奈奎斯特采样定理",
+            "target": "FFT变换",
+            "type": "依赖"
+        }
+    ]
+}(2-16)可以得到噪声方差和有用信号的平均能量:
+a;=£(印0)2-£(印0)2	(2-10)
+:=(印0)2-丁2	(2-11)
+其中,印0表示被判决为噪声的频点集合,印1表示被判决为有用信号的频点集合
+根据式(2-10)和式(2-11)可以得到噪声方差和有用信号的平均能量的估计值,进而可以得到门限的更新公式:
+Vth,i+1=Q~l(Pe)•(a;+C2E)	(2-12)
+其中,Pe为错判率门限,一般取值为0.1%~1%,C2为一个常数,一般取值为1~2,表示门限的安全系数,避免门限过低导致的误判
+算法的迭代过程是通过不断更新门限来实现的,当门限的变化小于一定的阈值时,算法迭代结束,输出最终的门限值
+综上所述,宽带频谱能量检测算法的关键技术包括:频谱感知采样、频谱能量检测、门限设计和迭代算法等,其中门限设计和迭代算法是保证算法性能的关键技术{
+    "knowledge_points": [
+        {"title": "能量检测算法", "en": "Energy Detection Algorithm"},
+        {"title": "频谱占用率", "en": "Spectrum Occupancy"},
+        {"title": "信道空闲率", "en": "Channel Idle Rate"},
+        {"title": "信噪比", "en": "Signal-to-Noise Ratio"},
+        {"title": "门限计算模块", "en": "Threshold Calculation Module"},
+        {"title": "迭代运算", "en": "Iterative Calculation"},
+        {"title": "收敛", "en": "Convergence"},
+        {"title": "FFT", "en": "Fast Fourier Transform"},
+        {"title": "频谱分辨率", "en": "Spectral Resolution"},
+        {"title": "栅栏效应", "en": "Spectral Leakage"},
+        {"title": "错检率", "en": "False Alarm Rate"},
+        {"title": "虚警率", "en": "False Positive Rate"},
+        {"title": "漏检率", "en": "Missed Detection Rate"},
+        {"title": "计算复杂度", "en": "Computational Complexity"}
+    ],
+    "relations": [
+        {"source": "频谱占用率", "target": "能量检测算法", "type": "相关"},
+        {"source": "信道空闲率", "target": "能量检测算法", "type": "相关"},
+        {"source": "信噪比", "target": "能量检测算法", "type": "相关"},
+        {"source": "门限计算模块", "target": "能量检测算法", "type": "相关"},
+        {"source": "迭代运算", "target": "能量检测算法", "type": "相关"},
+        {"source": "收敛", "target": "能量检测算法", "type": "相关"},
+        {"source": "FFT", "target": "能量检测算法", "type": "相关"},
+        {"source": "频谱分辨率", "target": "FFT", "type": "相关"},
+        {"source": "栅栏效应", "target": "频谱分辨率", "type": "影响"},
+        {"source": "错检率", "target": "能量检测算法", "type": "评价指标"},
+        {"source": "虚警率", "target": "错检率", "type": "相关"},
+        {"source": "漏检率", "target": "错检率", "type": "相关"},
+        {"source": "计算复杂度", "target": "能量检测算法", "type": "评价指标"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "宽带频谱感知能量检测算法", "en": "Wideband Spectrum Sensing Energy Detection Algorithm"},
+        {"title": "信噪比", "en": "Signal-to-Noise Ratio"},
+        {"title": "迭代次数", "en": "Iteration Times"},
+        {"title": "频谱占用率", "en": "Spectrum Occupancy"},
+        {"title": "能量检测", "en": "Energy Detection"},
+        {"title": "奈奎斯特采样定理", "en": "Nyquist Sampling Theorem"},
+        {"title": "频率分辨率", "en": "Frequency Resolution"},
+        {"title": "错检率", "en": "False Alarm Rate"},
+        {"title": "漏检率", "en": "Miss Detection Rate"},
+        {"title": "感知能力", "en": "Sensing Capability"},
+        {"title": "频谱细腻度", "en": "Spectrum Finesse"},
+        {"title": "射频前端", "en": "RF Front-end"},
+        {"title": "频谱感知系统", "en": "Spectrum Sensing System"},
+        {"title": "频率范围", "en": "Frequency Range"},
+        {"title": "频率分辨率", "en": "Frequency Resolution"},
+        {"title": "门限设计", "en": "Threshold Design"}
+    ],
+    "relations": [
+        {"source": "宽带频谱感知能量检测算法", "target": "信噪比", "type": "关联"},
+        {"source": "宽带频谱感知能量检测算法", "target": "迭代次数", "type": "关联"},
+        {"source": "宽带频谱感知能量检测算法", "target": "频谱占用率", "type": "关联"},
+        {"source": "宽带频谱感知能量检测算法", "target": "能量检测", "type": "关联"},
+        {"source": "奈奎斯特采样定理", "target": "频率分辨率", "type": "关联"},
+        {"source": "频谱占用率", "target": "错检率", "type": "关联"},
+        {"source": "频谱占用率", "target": "漏检率", "type": "关联"},
+        {"source": "频谱感知系统", "target": "射频前端", "type": "关联"},
+        {"source": "频谱感知系统", "target": "频率范围", "type": "关联"},
+        {"source": "频谱感知系统", "target": "频率分辨率", "type": "关联"},
+        {"source": "门限设计", "target": "错检率", "type": "关联"},
+        {"source": "门限设计", "target": "漏检率", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频谱感知系统", "en": "Spectrum sensing system"},
+        {"title": "软件无线电", "en": "Software-defined radio (SDR)"},
+        {"title": "FPGA", "en": "Field-programmable gate array"},
+        {"title": "射频前端", "en": "RF front-end"},
+        {"title": "ADC", "en": "Analog-to-digital converter"},
+        {"title": "IDELAY", "en": "Input delay"},
+        {"title": "AXI-STREAM", "en": "Advanced eXtensible Interface-Stream"},
+        {"title": "HC通信接口", "en": "HC communication interface"}
+    ],
+    "relations": [
+        {"source": "频谱感知系统", "target": "软件无线电", "type": "属于"},
+        {"source": "频谱感知系统", "target": "FPGA", "type": "实现技术"},
+        {"source": "频谱感知系统", "target": "射频前端", "type": "硬件部分"},
+        {"source": "频谱感知系统", "target": "ADC", "type": "数据采集"},
+        {"source": "射频前端", "target": "ADC", "type": "数据转换"},
+        {"source": "硬件部分", "target": "RTL级代码", "type": "组成部分"},
+        {"source": "RTL级代码", "target": "IP核", "type": "转换"},
+        {"source": "RTL级代码", "target": "IDELAY", "type": "控制"},
+        {"source": "RTL级代码", "target": "AXI-STREAM", "type": "数据传输"},
+        {"source": "软件驱动控制部分", "target": "HC通信接口", "type": "通信方式"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基带处理子系统", "en": "Baseband Processing Subsystem"},
+        {"title": "FMC接口", "en": "FMC Interface"},
+        {"title": "ADC采样信号", "en": "ADC Sampling Signal"},
+        {"title": "数字下变频抽取滤波器", "en": "Digital Down-Conversion Filter"},
+        {"title": "复FFT变换", "en": "Complex FFT Transformation"},
+        {"title": "频谱能量均值处理", "en": "Spectrum Energy Mean Processing"},
+        {"title": "跨时钟域FIFO", "en": "Cross-Clock Domain FIFO"},
+        {"title": "控制系统", "en": "Control System"},
+        {"title": "Microblaze平台SOC系统", "en": "Microblaze Platform SOC System"},
+        {"title": "Firmware软件控制模块", "en": "Firmware Software Control Module"},
+        {"title": "Linux操作系统", "en": "Linux Operating System"},
+        {"title": "C++程序控制模块", "en": "C++ Program Control Module"},
+        {"title": "DMA引擎", "en": "DMA Engine"},
+        {"title": "Socket通信", "en": "Socket Communication"},
+        {"title": "宽带频谱能量检测算法", "en": "Wideband Spectrum Energy Detection Algorithm"},
+        {"title": "高斯白噪声能量", "en": "Gaussian White Noise Energy"},
+        {"title": "信号能量", "en": "Signal Energy"},
+        {"title": "迭代运算", "en": "Iterative Calculation"},
+        {"title": "能量门限数值", "en": "Energy Threshold Value"},
+        {"title": "噪声估计运算模块", "en": "Noise Estimation Calculation Module"},
+        {"title": "最小错判概率准则", "en": "Minimum False Alarm Probability Criterion"},
+        {"title": "Xilinx公司的ISE软件", "en": "Xilinx ISE Software"},
+        {"title": "MentorGraphics公司的Modelsim仿真验证软件", "en": "MentorGraphics Modelsim Simulation Verification Software"},
+        {"title": "MathWorks公司的Matlab软件", "en": "MathWorks Matlab Software"},
+        {"title": "GCC编译器", "en": "GCC Compiler"}
+    ],
+    "relations": [
+        {"source": "基带处理子系统", "target": "FMC接口", "type": "包含"},
+        {"source": "FMC接口", "target": "ADC采样信号", "type": "输入"},
+        {"source": "基带处理子系统", "target": "数字下变频抽取滤波器", "type": "处理"},
+        {"source": "数字下变频抽取滤波器", "target": "时域加窗处理", "type": "处理"},
+        {"source": "时域加窗处理", "target": "复FFT变换", "type": "处理"},
+        {"source": "复FFT变换", "target": "频谱能量均值处理", "type": "处理"},
+        {"source": "频谱能量均值处理", "target": "输出端", "type": "输出"},
+        {"source": "基带处理子系统", "target": "跨时钟域FIFO", "type": "处理"},
+        {"source": "跨时钟域FIFO", "target": "控制系统", "type": "连接"},
+        {"source": "控制系统", "target": "Microblaze平台SOC系统", "type": "包含"},
+        {"source": "控制系统", "target": "Firmware软件控制模块", "type": "包含"},
+        {"source": "控制系统", "target": "Linux操作系统", "type": "包含"},
+        {"source": "控制系统", "target": "C++程序控制模块", "type": "包含"},
+        {"source": "Firmware软件控制模块", "target": "DMA引擎", "type": "控制"},
+        {"source": "Firmware软件控制模块", "target": "Socket通信", "type": "控制"},
+        {"source": "Linux操作系统", "target": "Socket通信", "type": "控制"},
+        {"source": "C++程序控制模块", "target": "Socket通信", "type": "控制"},
+        {"source": "Socket通信", "target": "宽带频谱能量检测算法", "type": "输入"},
+        {"source": "宽带频谱能量检测算法", "target": "输出端", "type": "输出"},
+        {"source": "宽带频谱能量检测算法", "target": "迭代运算", "type": "处理"},
+        {"source": "迭代运算", "target": "噪声估计运算模块", "type": "处理"},
+        {"source": "噪声估计运算模块", "target": "迭代运算", "type": "反馈"},
+        {"source": "宽带频谱能量检测算法", "target": "最小错判概率准则", "type": "处理"},
+        {"source": "Xilinx公司的ISE软件", "target": "基带处理子系统", "type": "开发工具"},
+        {"source": "Xilinx公司的ISE软件", "target": "Microblaze平台SOC系统", "type": "开发工具"},
+        {"source": "MentorGraphics公司的Modelsim仿真验证软件", "target": "基带处理子系统", "type": "仿真工具"},
+        {"source": "MathWorks公司的Matlab软件", "target": "宽带频谱能量检测算法", "type": "仿真工具"},
+        {"source": "Linux平台下的GCC编译器", "target": "C++程序控制模块", "type": "编译工具"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Modelsim", "en": "Modelsim"},
+        {"title": "MATLAB", "en": "MATLAB"},
+        {"title": "GCC", "en": "GCC"},
+        {"title": "Linux", "en": "Linux"},
+        {"title": "VerilogHDL", "en": "VerilogHDL"},
+        {"title": "VHDL", "en": "VHDL"},
+        {"title": "Tcl/Tk", "en": "Tcl/Tk"},
+        {"title": "Xilinx", "en": "Xilinx"},
+        {"title": "Altera", "en": "Altera"},
+        {"title": "IP核", "en": "IP core"},
+        {"title": "C语言", "en": "C language"},
+        {"title": "Microblaze", "en": "Microblaze"},
+        {"title": "Socket", "en": "Socket"},
+        {"title": "AXI-STREAM", "en": "AXI-STREAM"},
+        {"title": "RTL", "en": "RTL"}
+    ],
+    "relations": [
+        {"source": "Modelsim", "target": "VHDL", "type": "supports"},
+        {"source": "Modelsim", "target": "VerilogHDL", "type": "supports"},
+        {"source": "Modelsim", "target": "Tcl/Tk", "type": "supports"},
+        {"source": "Modelsim", "target": "Xilinx", "type": "supports"},
+        {"source": "Modelsim", "target": "Altera", "type": "supports"},
+        {"source": "Modelsim", "target": "IP核", "type": "supports"},
+        {"source": "MATLAB", "target": "矩阵计算", "type": "supports"},
+        {"source": "MATLAB", "target": "科学数据分析", "type": "supports"},
+        {"source": "MATLAB", "target": "可视化研究", "type": "supports"},
+        {"source": "MATLAB", "target": "非线性动态系统建模", "type": "supports"},
+        {"source": "GCC", "target": "C语言", "type": "supports"},
+        {"source": "GCC", "target": "Linux", "type": "supports"},
+        {"source": "Linux", "target": "GCC", "type": "supports"},
+        {"source": "Linux", "target": "Python", "type": "supports"},
+        {"source": "Linux", "target": "Tel脚本", "type": "supports"},
+        {"source": "VerilogHDL", "target": "FPGA", "type": "supports"},
+        {"source": "VHDL", "target": "FPGA", "type": "supports"},
+        {"source": "Xilinx", "target": "FPGA", "type": "supports"},
+        {"source": "Altera", "target": "FPGA", "type": "supports"},
+        {"source": "IP核", "target": "FPGA", "type": "supports"},
+        {"source": "C语言", "target": "Microblaze", "type": "supports"},
+        {"source": "Microblaze", "target": "FPGA", "type": "supports"},
+        {"source": "Socket", "target": "FPGA", "type": "supports"},
+        {"source": "AXI-STREAM", "target": "FPGA", "type": "supports"},
+        {"source": "RTL", "target": "FPGA", "type": "supports"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Testbench测试环境", "en": "Testbench testing environment"},
+        {"title": "Modelsim仿真软件", "en": "Modelsim simulation software"},
+        {"title": "FPGA硬件Soc环境", "en": "FPGA hardware Soc environment"},
+        {"title": "RTL代码封装为独立IP核", "en": "Packaging RTL code as independent IP core"},
+        {"title": "Matlab仿真数据", "en": "Matlab simulation data"},
+        {"title": "链路系统", "en": "Link system"},
+        {"title": "基带处理", "en": "Baseband processing"},
+        {"title": "胶合逻辑", "en": "Glue logic"},
+        {"title": "AXI-BRIDGE总线桥", "en": "AXI-BRIDGE bus bridge"},
+        {"title": "射频子板驱动", "en": "RF sub-board driver"},
+        {"title": "ReferenceDesign参考设计", "en": "ReferenceDesign reference design"},
+        {"title": "AXI-STREAM", "en": "AXI-STREAM"},
+        {"title": "FPGA控制子系统", "en": "FPGA control subsystem"},
+        {"title": "SOC架构", "en": "SOC architecture"},
+        {"title": "MicroblazeCPU", "en": "Microblaze CPU"},
+        {"title": "DDR", "en": "DDR"},
+        {"title": "BRAM", "en": "BRAM"},
+        {"title": "Ethernet", "en": "Ethernet"},
+        {"title": "DMA", "en": "DMA"},
+        {"title": "AXI4_0", "en": "AXI4_0"},
+        {"title": "Firmware", "en": "Firmware"},
+        {"title": "Socket以太网通信", "en": "Socket Ethernet communication"},
+        {"title": "HostServer", "en": "HostServer"},
+        {"title": "Linux", "en": "Linux"},
+        {"title": "C语言", "en": "C language"},
+        {"title": "多线程", "en": "Multithreading"},
+        {"title": "Matlab联合编译", "en": "Matlab joint compilation"},
+        {"title": "频谱感知系统", "en": "Spectrum sensing system"},
+        {"title": "FPGA", "en": "FPGA"},
+        {"title": "软件无线电平台", "en": "Software radio platform"},
+        {"title": "射频前端子系统", "en": "RF front-end subsystem"},
+        {"title": "API接口", "en": "API interface"},
+        {"title": "频谱分辨率", "en": "Spectral resolution"}
+    ],
+    "relations": [
+        {"source": "Testbench测试环境", "target": "Modelsim仿真软件", "type": "包含"},
+        {"source": "Modelsim仿真软件", "target": "FPGA硬件Soc环境", "type": "包含"},
+        {"source": "FPGA硬件Soc环境", "target": "RTL代码封装为独立IP核", "type": "包含"},
+        {"source": "Modelsim仿真软件", "target": "Matlab仿真数据", "type": "对比验证"},
+        {"source": "基带处理", "target": "胶合逻辑", "type": "连接"},
+        {"source": "胶合逻辑", "target": "链路系统", "type": "连接"},
+        {"source": "链路系统", "target": "Matlab仿真数据", "type": "对比验证"},
+        {"source": "链路系统", "target": "FPGA硬件Soc环境", "type": "连接"},
+        {"source": "射频子板驱动", "target": "ReferenceDesign参考设计", "type": "基于"},
+        {"source": "ReferenceDesign参考设计", "target": "AXI-STREAM", "type": "连接"},
+        {"source": "FPGA控制子系统", "target": "SOC架构", "type": "基于"},
+        {"source": "SOC架构", "target": "MicroblazeCPU", "type": "包含"},
+        {"source": "SOC架构", "target": "DDR", "type": "包含"},
+        {"source": "SOC架构", "target": "BRAM", "type": "包含"},
+        {"source": "SOC架构", "target": "Ethernet", "type": "包含"},
+        {"source": "SOC架构", "target": "DMA", "type": "包含"},
+        {"source": "SOC架构", "target": "AXI4_0", "type": "包含"},
+        {"source": "Firmware", "target": "AXI-BRIDGE总线桥", "type": "连接"},
+        {"source": "Firmware", "target": "DMA", "type": "控制"},
+        {"source": "Firmware", "target": "Socket以太网通信", "type": "控制"},
+        {"source": "Socket以太网通信", "target": "HostServer", "type": "连接"},
+        {"source": "HostServer", "target": "Linux", "type": "基于"},
+        {"source": "HostServer", "target": "C语言", "type": "使用"},
+        {"source": "HostServer", "target": "多线程", "type": "使用"},
+        {"source": "HostServer", "target": "Matlab联合编译", "type": "使用"},
+        {"source": "频谱感知系统", "target": "FPGA", "type": "基于"},
+        {"source": "FPGA", "target": "软件无线电平台", "type": "使用"},
+        {"source": "软件无线电平台", "target": "射频前端子系统", "type": "包含"},
+        {"source": "射频前端子系统", "target": "API接口", "type": "连接"},
+        {"source": "射频前端子系统", "target": "频谱分辨率", "type": "性能保证"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AD-FMCOMMS1射频子板", "en": "AD-FMCOMMS1 RF Sub-board"},
+        {"title": "发送链路", "en": "Transmit Link"},
+        {"title": "接收链路", "en": "Receive Link"},
+        {"title": "时钟管理", "en": "Clock Management"},
+        {"title": "电源管理", "en": "Power Management"},
+        {"title": "AD9122", "en": "AD9122"},
+        {"title": "ADL5375", "en": "ADL5375"},
+        {"title": "ADF4351", "en": "ADF4351"},
+        {"title": "ADL5602", "en": "ADL5602"},
+        {"title": "ADL5380", "en": "ADL5380"},
+        {"title": "AD8366", "en": "AD8366"},
+        {"title": "AD9643", "en": "AD9643"},
+        {"title": "AD9548", "en": "AD9548"},
+        {"title": "AD9523-1", "en": "AD9523-1"},
+        {"title": "FMC接口", "en": "FMC Interface"},
+        {"title": "PLL", "en": "PLL"}
+    ],
+    "relations": [
+        {"source": "AD-FMCOMMS1射频子板", "target": "发送链路", "type": "包含"},
+        {"source": "AD-FMCOMMS1射频子板", "target": "接收链路", "type": "包含"},
+        {"source": "AD-FMCOMMS1射频子板", "target": "时钟管理", "type": "包含"},
+        {"source": "AD-FMCOMMS1射频子板", "target": "电源管理", "type": "包含"},
+        {"source": "发送链路", "target": "AD9122", "type": "包含"},
+        {"source": "发送链路", "target": "ADL5375", "type": "包含"},
+        {"source": "发送链路", "target": "ADF4351", "type": "包含"},
+        {"source": "发送链路", "target": "ADL5602", "type": "包含"},
+        {"source": "接收链路", "target": "ADL5380", "type": "包含"},
+        {"source": "接收链路", "target": "AD8366", "type": "包含"},
+        {"source": "接收链路", "target": "AD9643", "type": "包含"},
+        {"source": "时钟管理", "target": "AD9548", "type": "包含"},
+        {"source": "时钟管理", "target": "AD9523-1", "type": "包含"},
+        {"source": "时钟管理", "target": "FMC接口", "type": "包含"},
+        {"source": "时钟管理", "target": "PLL", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "射频板的电源管理", "en": "Power Management of RF Board"},
+        {"title": "ADP2323", "en": "ADP2323"},
+        {"title": "ADP7104", "en": "ADP7104"},
+        {"title": "ADP150/1", "en": "ADP150/1"},
+        {"title": "ADP1740", "en": "ADP1740"},
+        {"title": "FMC接口", "en": "FMC Interface"},
+        {"title": "XilinxML605FPGA开发板", "en": "Xilinx ML605 FPGA Development Board"},
+        {"title": "ADC/DACI/Q数据端口", "en": "ADC/DAC I/Q Data Ports"},
+        {"title": "ADC数据链路", "en": "ADC Data Link"},
+        {"title": "IDELAY", "en": "IDELAY"},
+        {"title": "IIC总线", "en": "IIC Bus"},
+        {"title": "SPI总线", "en": "SPI Bus"},
+        {"title": "Microblaze平台", "en": "Microblaze Platform"},
+        {"title": "API接口", "en": "API Interface"},
+        {"title": "axi_adc_2c_0", "en": "axi_adc_2c_0"},
+        {"title": "axi_iic_O", "en": "axi_iic_O"},
+        {"title": "DDR", "en": "DDR"},
+        {"title": "以太网", "en": "Ethernet"}
+    ],
+    "relations": [
+        {"source": "ADP2323", "target": "射频板的电源管理", "type": "包含"},
+        {"source": "ADP7104", "target": "射频板的电源管理", "type": "包含"},
+        {"source": "ADP150/1", "target": "射频板的电源管理", "type": "包含"},
+        {"source": "ADP1740", "target": "射频板的电源管理", "type": "包含"},
+        {"source": "FMC接口", "target": "射频板的电源管理", "type": "传输能量"},
+        {"source": "XilinxML605FPGA开发板", "target": "FMC接口", "type": "连接"},
+        {"source": "ADC/DACI/Q数据端口", "target": "FMC接口", "type": "传输数据"},
+        {"source": "ADC数据链路", "target": "ADC/DACI/Q数据端口", "type": "连接"},
+        {"source": "IDELAY", "target": "ADC数据链路", "type": "延时控制"},
+        {"source": "IIC总线", "target": "ADC数据链路", "type": "控制"},
+        {"source": "SPI总线", "target": "IIC总线", "type": "连接"},
+        {"source": "Microblaze平台", "target": "API接口", "type": "使用"},
+        {"source": "axi_adc_2c_0", "target": "Microblaze平台", "type": "连接"},
+        {"source": "axi_iic_O", "target": "Microblaze平台", "type": "连接"},
+        {"source": "DDR", "target": "axi_adc_2c_0", "type": "缓存数据"},
+        {"source": "以太网", "target": "DDR", "type": "传输数据"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "射频子板的API函数",
+            "en": "API functions of RF sub-board"
+        },
+        {
+            "title": "基带处理子系统",
+            "en": "Baseband processing subsystem"
+        },
+        {
+            "title": "降采样滤波器",
+            "en": "Downsampling filter"
+        }
+    ],
+    "relations": [
+        {
+            "source": "射频子板的API函数",
+            "target": "各个ADC、DAC、数字可调增益放大器、时钟等芯片的寄存器地址",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板的API函数",
+            "target": "IIC的读写逻辑与函数",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板的API函数",
+            "target": "射频板上各个功能区域的控制与调节",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "频谱感知平台设计的核心部分",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "FMC接口接收到射频板的ADC数据",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "降采样和抗混叠滤波器(DDC)",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "AXI配置总线设计",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "频谱感知硬件控制部分",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "时域加窗模块",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "复FFT变换模块",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统",
+            "target": "频谱能量与均值模块",
+            "type": "包含"
+        },
+        {
+            "source": "降采样滤波器",
+            "target": "多采样率转换技术",
+            "type": "包含"
+        },
+        {
+            "source": "降采样滤波器",
+            "target": "信号抽取",
+            "type": "包含"
+        },
+        {
+            "source": "降采样滤波器",
+            "target": "低通滤波器",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "抗混叠低通滤波器", "en": "Anti-aliasing low-pass filter"},
+        {"title": "降采样滤波器的参数设计", "en": "Parameter design of decimation filter"},
+        {"title": "降采样滤波器的性能分析", "en": "Performance analysis of decimation filter"},
+        {"title": "降采样滤波器的硬件实现", "en": "Hardware implementation of decimation filter"}
+    ],
+    "relations": [
+        {"source": "抗混叠低通滤波器", "target": "降采样滤波器的参数设计", "type": "包含"},
+        {"source": "降采样滤波器的参数设计", "target": "降采样滤波器的性能分析", "type": "包含"},
+        {"source": "降采样滤波器的性能分析", "target": "降采样滤波器的硬件实现", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "滤波器模块设计接口信息", "en": "Filter module design interface information"},
+        {"title": "滤波器封装Wrapper的功能结构图", "en": "Functional structure diagram of filter packaging wrapper"},
+        {"title": "跨时钟域处理", "en": "Cross-clock domain processing"},
+        {"title": "时域加窗模块的设计与实现", "en": "Design and implementation of time-domain windowing module"},
+        {"title": "频率分辨率与采样周期", "en": "Frequency resolution and sampling period"},
+        {"title": "栅栏效应", "en": "Spectral leakage"},
+        {"title": "布莱克曼哈里斯窗", "en": "Blackman-Harris window"},
+        {"title": "时域加窗封装模块接口信息", "en": "Interface information of time-domain windowing packaging module"}
+    ],
+    "relations": [
+        {"source": "滤波器模块设计接口信息", "target": "滤波器封装Wrapper的功能结构图", "type": "包含"},
+        {"source": "滤波器封装Wrapper的功能结构图", "target": "跨时钟域处理", "type": "需要"},
+        {"source": "滤波器封装Wrapper的功能结构图", "target": "时域加窗模块的设计与实现", "type": "需要"},
+        {"source": "频率分辨率与采样周期", "target": "时域加窗模块的设计与实现", "type": "相关"},
+        {"source": "栅栏效应", "target": "布莱克曼哈里斯窗", "type": "解决"},
+        {"source": "时域加窗模块的设计与实现", "target": "时域加窗封装模块接口信息", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "复FFT变换模块的设计与实现",
+            "en": "Design and Implementation of Complex FFT Transformation Module"
+        },
+        {
+            "title": "FFT算法思想与原理",
+            "en": "Principles and Ideas of FFT Algorithm"
+        },
+        {
+            "title": "快速傅里叶变换(FFT)",
+            "en": "Fast Fourier Transform (FFT)"
+        },
+        {
+            "title": "离散傅里叶变换(DFT)",
+            "en": "Discrete Fourier Transform (DFT)"
+        },
+        {
+            "title": "时间抽选法和频率抽选法",
+            "en": "Time Selection Method and Frequency Selection Method"
+        },
+        {
+            "title": "奈圭斯特采样定律",
+            "en": "Nyquist Sampling Theorem"
+        },
+        {
+            "title": "频谱的泄露",
+            "en": "Spectral Leakage"
+        },
+        {
+            "title": "基2的FFT算法",
+            "en": "Radix-2 FFT Algorithm"
+        },
+        {
+            "title": "地址发生器",
+            "en": "Address Generator"
+        },
+        {
+            "title": "系统控制器",
+            "en": "System Controller"
+        },
+        {
+            "title": "蝶形运算单元",
+            "en": "Butterfly Operation Unit"
+        },
+        {
+            "title": "存储单元组",
+            "en": "Storage Unit Group"
+        },
+        {
+            "title": "双口RAM",
+            "en": "Dual-Port RAM"
+        }
+    ],
+    "relations": [
+        {
+            "source": "复FFT变换模块的设计与实现",
+            "target": "FFT算法思想与原理",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "快速傅里叶变换(FFT)",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "离散傅里叶变换(DFT)",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "时间抽选法和频率抽选法",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "基2的FFT算法",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "蝶形运算单元",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "存储单元组",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "双口RAM",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "奈圭斯特采样定律",
+            "type": "包含"
+        },
+        {
+            "source": "FFT算法思想与原理",
+            "target": "频谱的泄露",
+            "type": "包含"
+        },
+        {
+            "source": "复FFT变换模块的设计与实现",
+            "target": "地址发生器",
+            "type": "包含"
+        },
+        {
+            "source": "复FFT变换模块的设计与实现",
+            "target": "系统控制器",
+            "type": "包含"
+        },
+        {
+            "source": "复FFT变换模块的设计与实现",
+            "target": "蝶形运算单元",
+            "type": "包含"
+        },
+        {
+            "source": "复FFT变换模块的设计与实现",
+            "target": "存储单元组",
+            "type": "包含"
+        },
+        {
+            "source": "复FFT变换模块的设计与实现",
+            "target": "双口RAM",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "地址发生器",
+            "en": "Address generator"
+        },
+        {
+            "title": "FFTIPCore",
+            "en": "FFTIPCore"
+        },
+        {
+            "title": "流水线型",
+            "en": "Pipeline type"
+        },
+        {
+            "title": "PipelinedStreamingI/O模式",
+            "en": "PipelinedStreamingI/O mode"
+        },
+        {
+            "title": "频谱感知",
+            "en": "Spectrum sensing"
+        },
+        {
+            "title": "缓冲处理",
+            "en": "Buffer processing"
+        },
+        {
+            "title": "定点化方案",
+            "en": "Fixed-point scheme"
+        },
+        {
+            "title": "AXLStream接口",
+            "en": "AXLStream interface"
+        }
+    ],
+    "relations": [
+        {
+            "source": "地址发生器",
+            "target": "FFT中地址发生器模块",
+            "type": "包含"
+        },
+        {
+            "source": "FFT中地址发生器模块",
+            "target": "乱序到自然序列的重新排序",
+            "type": "功能"
+        },
+        {
+            "source": "FFT中地址发生器模块",
+            "target": "级与级之间蝶形单元运算结果与运算输入数据的地址对接",
+            "type": "功能"
+        },
+        {
+            "source": "FFT中地址发生器模块",
+            "target": "从RAM中读取对应蝶形单元的旋转因子",
+            "type": "功能"
+        },
+        {
+            "source": "FFT中地址发生器模块",
+            "target": "蝶形运算单元计算完成之后，将对应数据存在对应地址的RAM中",
+            "type": "功能"
+        },
+        {
+            "source": "FFTIPCore",
+            "target": "流水线",
+            "type": "提供"
+        },
+        {
+            "source": "FFTIPCore",
+            "target": "基4",
+            "type": "提供"
+        },
+        {
+            "source": "FFTIPCore",
+            "target": "基2",
+            "type": "提供"
+        },
+        {
+            "source": "FFTIPCore",
+            "target": "流水线型",
+            "type": "支持"
+        },
+        {
+            "source": "流水线型",
+            "target": "PipelinedStreamingI/O模式",
+            "type": "包含"
+        },
+        {
+            "source": "PipelinedStreamingI/O模式",
+            "target": "基-2的时间抽选法的蝶形运算",
+            "type": "实现"
+        },
+        {
+            "source": "PipelinedStreamingI/O模式",
+            "target": "连续的数据输入、输出和运算",
+            "type": "支持"
+        },
+        {
+            "source": "频谱感知",
+            "target": "FFT",
+            "type": "应用"
+        },
+        {
+            "source": "缓冲处理",
+            "target": "小FIFO",
+            "type": "使用"
+        },
+        {
+            "source": "定点化方案",
+            "target": "FFT全精度计算的结果进行截位取舍",
+            "type": "应用"
+        },
+        {
+            "source": "AXLStream接口",
+            "target": "输入和输出侧均采用",
+            "type": "使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FFT输出端AXI-StreamMaster接口输入ready信号", "en": ""},
+        {"title": "FFT输岀端AXI-StreamMaster接口输出复频域数据(data)信号,低16bit实部,高16bit虚部", "en": ""},
+        {"title": "频谱能量均值模块的设计与实现", "en": "Design and Implementation of Spectral Energy Mean Module"},
+        {"title": "流式处理", "en": "Stream Processing"},
+        {"title": "128次求平均", "en": "128 times averaging"},
+        {"title": "MUIT18X18S乘法器的使用", "en": "Use of MUIT18X18S Multiplier"},
+        {"title": "MULT18X18S乘法器逻辑关系表", "en": "MULT18X18S Multiplier Logic Table"},
+        {"title": "频谱能量模块的实现", "en": "Implementation of Spectral Energy Module"},
+        {"title": "均值模块的实现", "en": "Implementation of Mean Module"},
+        {"title": "乒乓缓冲处理结构图", "en": "Ping-pong Buffer Processing Structure Diagram"},
+        {"title": "状态机", "en": "State Machine"}
+    ],
+    "relations": [
+        {"source": "FFT输出端AXI-StreamMaster接口输入ready信号", "target": "FFT输岀端AXI-StreamMaster接口输出复频域数据(data)信号,低16bit实部,高16bit虚部", "type": "input/output"},
+        {"source": "FFT输岀端AXI-StreamMaster接口输出复频域数据(data)信号,低16bit实部,高16bit虚部", "target": "频谱能量均值模块的设计与实现", "type": "input"},
+        {"source": "频谱能量均值模块的设计与实现", "target": "流式处理", "type": "concept"},
+        {"source": "频谱能量均值模块的设计与实现", "target": "128次求平均", "type": "concept"},
+        {"source": "频谱能量均值模块的设计与实现", "target": "MUIT18X18S乘法器的使用", "type": "concept"},
+        {"source": "MUIT18X18S乘法器的使用", "target": "MULT18X18S乘法器逻辑关系表", "type": "concept"},
+        {"source": "频谱能量均值模块的设计与实现", "target": "频谱能量模块的实现", "type": "concept"},
+        {"source": "频谱能量模块的实现", "target": "均值模块的实现", "type": "input"},
+        {"source": "均值模块的实现", "target": "乒乓缓冲处理结构图", "type": "concept"},
+        {"source": "均值模块的实现", "target": "状态机", "type": "concept"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "控制系统", "en": "Control System"},
+        {"title": "Microblaze", "en": "Microblaze"},
+        {"title": "SOC系统", "en": "SOC System"},
+        {"title": "AXI/AXI-Lite总线架构", "en": "AXI/AXI-Lite Bus Architecture"},
+        {"title": "DDR3SDRAM", "en": "DDR3 SDRAM"},
+        {"title": "Ethernet控制器", "en": "Ethernet Controller"},
+        {"title": "DMA引擎", "en": "DMA Engine"},
+        {"title": "IP核", "en": "IP Core"},
+        {"title": "XPS", "en": "XPS"},
+        {"title": "Firmware程序", "en": "Firmware Program"},
+        {"title": "C语言", "en": "C Language"},
+        {"title": "消息队列", "en": "Message Queue"},
+        {"title": "DMA传输", "en": "DMA Transfer"},
+        {"title": "扫频控制", "en": "Sweep Control"},
+        {"title": "射频子板", "en": "RF Subboard"},
+        {"title": "中心频率", "en": "Center Frequency"}
+    ],
+    "relations": [
+        {"source": "控制系统", "target": "Microblaze", "type": "包含"},
+        {"source": "Microblaze", "target": "AXI/AXI-Lite总线架构", "type": "使用"},
+        {"source": "Microblaze", "target": "Firmware程序", "type": "执行"},
+        {"source": "SOC系统", "target": "Microblaze", "type": "包含"},
+        {"source": "SOC系统", "target": "AXI/AXI-Lite总线架构", "type": "使用"},
+        {"source": "SOC系统", "target": "DDR3SDRAM", "type": "使用"},
+        {"source": "SOC系统", "target": "Ethernet控制器", "type": "使用"},
+        {"source": "SOC系统", "target": "DMA引擎", "type": "连接"},
+        {"source": "SOC系统", "target": "IP核", "type": "挂载"},
+        {"source": "XPS", "target": "SOC系统", "type": "设计"},
+        {"source": "Firmware程序", "target": "C语言", "type": "使用"},
+        {"source": "Firmware程序", "target": "消息队列", "type": "使用"},
+        {"source": "Firmware程序", "target": "DMA传输", "type": "控制"},
+        {"source": "Firmware程序", "target": "扫频控制", "type": "控制"},
+        {"source": "Firmware程序", "target": "射频子板", "type": "控制"},
+        {"source": "射频子板", "target": "中心频率", "type": "更改"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "DMA接收工作和基带处理",
+            "en": "DMA reception and baseband processing"
+        },
+        {
+            "title": "帧头数据",
+            "en": "Frame header data"
+        },
+        {
+            "title": "Microblaze平台的以太网传输",
+            "en": "Ethernet transmission on Microblaze platform"
+        },
+        {
+            "title": "TCP/IP协议簇的LWIP实现",
+            "en": "LWIP implementation of TCP/IP protocol suite"
+        },
+        {
+            "title": "Socket数据传输",
+            "en": "Socket data transmission"
+        },
+        {
+            "title": "Socket长连接",
+            "en": "Socket long connection"
+        },
+        {
+            "title": "数据队列",
+            "en": "Data queue"
+        },
+        {
+            "title": "AXI配置总线设计",
+            "en": "AXI configuration bus design"
+        },
+        {
+            "title": "感知控制的实现",
+            "en": "Implementation of perception control"
+        },
+        {
+            "title": "ADC采样率",
+            "en": "ADC sampling rate"
+        },
+        {
+            "title": "跨时钟域的处理",
+            "en": "Cross-clock domain processing"
+        },
+        {
+            "title": "异步FIFO",
+            "en": "Asynchronous FIFO"
+        },
+        {
+            "title": "AXI-Lite接口",
+            "en": "AXI-Lite interface"
+        },
+        {
+            "title": "AXI总线协议",
+            "en": "AXI bus protocol"
+        },
+        {
+            "title": "AMBA协议族",
+            "en": "AMBA protocol family"
+        },
+        {
+            "title": "数据传输",
+            "en": "Data transmission"
+        },
+        {
+            "title": "哈佛的思想",
+            "en": "Harvard architecture"
+        },
+        {
+            "title": "数据读写通道",
+            "en": "Data read and write channels"
+        },
+        {
+            "title": "握手操作",
+            "en": "Handshake operation"
+        },
+        {
+            "title": "AXI-LitetoIPbridge模块",
+            "en": "AXI-Lite to IP bridge module"
+        },
+        {
+            "title": "AXI_SINK模块",
+            "en": "AXI_SINK module"
+        },
+        {
+            "title": "AXI_RESPONSE_ARBITRATOR模块",
+            "en": "AXI_RESPONSE_ARBITRATOR module"
+        },
+        {
+            "title": "AXI_ASYNC_COUPLER模块",
+            "en": "AXI_ASYNC_COUPLER module"
+        },
+        {
+            "title": "AXI_TARGET模块",
+            "en": "AXI_TARGET module"
+        },
+        {
+            "title": "AXI_REG_TARGET模块",
+            "en": "AXI_REG_TARGET module"
+        },
+        {
+            "title": "AXI_MEM_TARGET模块",
+            "en": "AXI_MEM_TARGET module"
+        }
+    ],
+    "relations": [
+        {
+            "source": "DMA接收工作和基带处理",
+            "target": "帧头数据",
+            "type": "包含"
+        },
+        {
+            "source": "DMA接收工作和基带处理",
+            "target": "数据队列",
+            "type": "包含"
+        },
+        {
+            "source": "Microblaze平台的以太网传输",
+            "target": "TCP/IP协议簇的LWIP实现",
+            "type": "实现"
+        },
+        {
+            "source": "TCP/IP协议簇的LWIP实现",
+            "target": "Socket数据传输",
+            "type": "实现"
+        },
+        {
+            "source": "Socket数据传输",
+            "target": "Socket长连接",
+            "type": "包含"
+        },
+        {
+            "source": "Socket数据传输",
+            "target": "数据队列",
+            "type": "包含"
+        },
+        {
+            "source": "AXI配置总线设计",
+            "target": "感知控制的实现",
+            "type": "实现"
+        },
+        {
+            "source": "感知控制的实现",
+            "target": "ADC采样率",
+            "type": "涉及"
+        },
+        {
+            "source": "感知控制的实现",
+            "target": "跨时钟域的处理",
+            "type": "涉及"
+        },
+        {
+            "source": "跨时钟域的处理",
+            "target": "异步FIFO",
+            "type": "实现"
+        },
+        {
+            "source": "AXI配置总线设计",
+            "target": "AXI-Lite接口",
+            "type": "涉及"
+        },
+        {
+            "source": "AXI-Lite接口",
+            "target": "AXI总线协议",
+            "type": "基于"
+        },
+        {
+            "source": "AXI总线协议",
+            "target": "AMBA协议族",
+            "type": "属于"
+        },
+        {
+            "source": "AXI总线协议",
+            "target": "数据传输",
+            "type": "支持"
+        },
+        {
+            "source": "AXI总线协议",
+            "target": "哈佛的思想",
+            "type": "基于"
+        },
+        {
+            "source": "AXI总线协议",
+            "target": "数据读写通道",
+            "type": "包含"
+        },
+        {
+            "source": "数据读写通道",
+            "target": "握手操作",
+            "type": "涉及"
+        },
+        {
+            "source": "AXI配置总线设计",
+            "target": "AXI-LitetoIPbridge模块",
+            "type": "实现"
+        },
+        {
+            "source": "AXI-LitetoIPbridge模块",
+            "target": "AXI_SINK模块",
+            "type": "包含"
+        },
+        {
+            "source": "AXI-LitetoIPbridge模块",
+            "target": "AXI_RESPONSE_ARBITRATOR模块",
+            "type": "包含"
+        },
+        {
+            "source": "AXI-LitetoIPbridge模块",
+            "target": "AXI_ASYNC_COUPLER模块",
+            "type": "包含"
+        },
+        {
+            "source": "AXI-LitetoIPbridge模块",
+            "target": "AXI_TARGET模块",
+            "type": "包含"
+        },
+        {
+            "source": "AXI_TARGET模块",
+            "target": "AXI_REG_TARGET模块",
+            "type": "包含"
+        },
+        {
+            "source": "AXI_TARGET模块",
+            "target": "AXI_MEM_TARGET模块",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MEM_TARGET模块", "en": "MEM_TARGET module"},
+        {"title": "AXI_RESPONSE_ABITRATOR计时器", "en": "AXI_RESPONSE_ABITRATOR timer"},
+        {"title": "AXItoIPBridge总线桥单元", "en": "AXItoIPBridge bus bridge unit"},
+        {"title": "HostServer的PC_Server程序", "en": "PC_Server program of HostServer"},
+        {"title": "Socket连接", "en": "Socket connection"},
+        {"title": "Lwip协议", "en": "Lwip protocol"},
+        {"title": "MATLAB", "en": "MATLAB"},
+        {"title": "能量检测算法", "en": "Energy detection algorithm"}
+    ],
+    "relations": [
+        {"source": "MEM_TARGET模块", "target": "基带处理子系统", "type": "连接"},
+        {"source": "AXI_RESPONSE_ABITRATOR计时器", "target": "MEM_TARGET模块", "type": "连接"},
+        {"source": "AXItoIPBridge总线桥单元", "target": "基带处理子系统", "type": "连接"},
+        {"source": "HostServer的PC_Server程序", "target": "控制系统firmware", "type": "连接"},
+        {"source": "Socket连接", "target": "数据传输", "type": "连接"},
+        {"source": "Lwip协议", "target": "以太网传输", "type": "连接"},
+        {"source": "MATLAB", "target": "能量检测算法", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "射频子板模块性能测试与验证",
+            "en": "Performance testing and verification of RF sub-board module"
+        },
+        {
+            "title": "ADC接收信号质量的测试",
+            "en": "Testing the quality of ADC received signals"
+        },
+        {
+            "title": "噪声测试",
+            "en": "Noise testing"
+        },
+        {
+            "title": "射频子板板载时钟芯片",
+            "en": "RF sub-board onboard clock chip"
+        },
+        {
+            "title": "ADC/DAC芯片",
+            "en": "ADC/DAC chip"
+        },
+        {
+            "title": "功率放大器芯片",
+            "en": "Power amplifier chip"
+        },
+        {
+            "title": "调制/解调芯片",
+            "en": "Modulation/demodulation chip"
+        },
+        {
+            "title": "Chipscope工具",
+            "en": "Chipscope tool"
+        },
+        {
+            "title": "基带处理子系统各模块仿真与测试",
+            "en": "Simulation and testing of each module in the baseband processing subsystem"
+        },
+        {
+            "title": "降采样滤波器模块",
+            "en": "Downsampling filter module"
+        },
+        {
+            "title": "2倍抽取操作",
+            "en": "2x decimation operation"
+        },
+        {
+            "title": "抗混叠滤波器",
+            "en": "Anti-aliasing filter"
+        },
+        {
+            "title": "Matlab建模",
+            "en": "Matlab modeling"
+        },
+        {
+            "title": "Modelei工具",
+            "en": "Modelei tool"
+        }
+    ],
+    "relations": [
+        {
+            "source": "射频子板模块性能测试与验证",
+            "target": "ADC接收信号质量的测试",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板模块性能测试与验证",
+            "target": "噪声测试",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板模块性能测试与验证",
+            "target": "射频子板板载时钟芯片",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板模块性能测试与验证",
+            "target": "ADC/DAC芯片",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板模块性能测试与验证",
+            "target": "功率放大器芯片",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板模块性能测试与验证",
+            "target": "调制/解调芯片",
+            "type": "包含"
+        },
+        {
+            "source": "射频子板模块性能测试与验证",
+            "target": "Chipscope工具",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统各模块仿真与测试",
+            "target": "降采样滤波器模块",
+            "type": "包含"
+        },
+        {
+            "source": "降采样滤波器模块",
+            "target": "2倍抽取操作",
+            "type": "包含"
+        },
+        {
+            "source": "降采样滤波器模块",
+            "target": "抗混叠滤波器",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统各模块仿真与测试",
+            "target": "Matlab建模",
+            "type": "包含"
+        },
+        {
+            "source": "基带处理子系统各模块仿真与测试",
+            "target": "Modelei工具",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VerilogHDL语言", "en": "VerilogHDL language"},
+        {"title": "Modelsim仿真工具", "en": "Modelsim simulation tool"},
+        {"title": "高斯白噪声信号", "en": "Gaussian white noise signal"},
+        {"title": "滤波器模块", "en": "Filter module"},
+        {"title": "频域功率数据", "en": "Frequency domain power data"},
+        {"title": "AXI配置总线模块", "en": "AXI configuration bus module"},
+        {"title": "AXI-Lite总线", "en": "AXI-Lite bus"},
+        {"title": "基带处理链路子系统", "en": "Baseband processing subsystem"},
+        {"title": "REG_TARGET接口", "en": "REG_TARGET interface"},
+        {"title": "MEM_TARGET接口", "en": "MEM_TARGET interface"},
+        {"title": "复FFT变换模块", "en": "Complex FFT module"},
+        {"title": "时频域转换操作", "en": "Time-frequency domain conversion operation"},
+        {"title": "FFT_Wrapper模块", "en": "FFT_Wrapper module"}
+    ],
+    "relations": [
+        {"source": "VerilogHDL语言", "target": "Modelsim仿真工具", "type": "使用工具"},
+        {"source": "高斯白噪声信号", "target": "VerilogHDL语言", "type": "输入数据"},
+        {"source": "VerilogHDL语言", "target": "滤波器模块", "type": "处理数据"},
+        {"source": "滤波器模块", "target": "Modelsim仿真工具", "type": "仿真测试"},
+        {"source": "Modelsim仿真工具", "target": "Matlab", "type": "仿真测试结果对比"},
+        {"source": "AXI配置总线模块", "target": "AXI-Lite总线", "type": "使用总线"},
+        {"source": "AXI配置总线模块", "target": "基带处理链路子系统", "type": "配置控制"},
+        {"source": "REG_TARGET接口", "target": "AXI_TO_IP_BRIDGE模块", "type": "接口类型"},
+        {"source": "REG_TARGET接口", "target": "Modelsim仿真工具", "type": "仿真测试"},
+        {"source": "REG_TARGET接口", "target": "Chipscope工具", "type": "硬件测试"},
+        {"source": "MEM_TARGET接口", "target": "AXI_TO_IP_BRIDGE模块", "type": "接口类型"},
+        {"source": "MEM_TARGET接口", "target": "Modelsim仿真工具", "type": "仿真测试"},
+        {"source": "MEM_TARGET接口", "target": "Chipscope工具", "type": "硬件测试"},
+        {"source": "复FFT变换模块", "target": "FFT_Wrapper模块", "type": "模块关系"},
+        {"source": "FFT_Wrapper模块", "target": "Modelsim仿真工具", "type": "仿真测试"},
+        {"source": "FFT_Wrapper模块", "target": "Matlab", "type": "仿真测试结果对比"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Modelsim", "en": "Modelsim"},
+        {"title": "Matlab", "en": "Matlab"},
+        {"title": "FFT", "en": "FFT"},
+        {"title": "CORDIC算法", "en": "CORDIC algorithm"},
+        {"title": "频谱能量均值模块", "en": "Spectrum energy mean module"},
+        {"title": "射频前端", "en": "RF front-end"},
+        {"title": "FPGA基带处理", "en": "FPGA baseband processing"},
+        {"title": "SOC嵌入式系统", "en": "SOC embedded system"},
+        {"title": "HostServer程序", "en": "HostServer program"},
+        {"title": "MATLAB能量检测与展示模块", "en": "MATLAB energy detection and display module"},
+        {"title": "频谱感知系统", "en": "Spectrum sensing system"},
+        {"title": "迭代算法", "en": "Iterative algorithm"},
+        {"title": "Microblaze", "en": "Microblaze"},
+        {"title": "IP核Module", "en": "IP core Module"}
+    ],
+    "relations": [
+        {"source": "Modelsim", "target": "Matlab", "type": "对比"},
+        {"source": "FFT", "target": "CORDIC算法", "type": "应用"},
+        {"source": "频谱能量均值模块", "target": "FFT", "type": "数据处理"},
+        {"source": "射频前端", "target": "FPGA基带处理", "type": "数据传输"},
+        {"source": "FPGA基带处理", "target": "SOC嵌入式系统", "type": "数据传输"},
+        {"source": "SOC嵌入式系统", "target": "HostServer程序", "type": "数据传输"},
+        {"source": "HostServer程序", "target": "MATLAB能量检测与展示模块", "type": "数据传输"},
+        {"source": "频谱感知系统", "target": "射频前端", "type": "数据采集"},
+        {"source": "迭代算法", "target": "频谱感知系统", "type": "应用"},
+        {"source": "Microblaze", "target": "IP核Module", "type": "设计开发"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AD-FMC0MMS1射频前端子系统", "en": "AD-FMC0MMS1 RF front-end subsystem"},
+        {"title": "TCP/IP通信、控制中心程序、Matlab算法实现与展示系统", "en": "TCP/IP communication, control center program, Matlab algorithm implementation and display system"},
+        {"title": "频谱信号感知、处理、传输、能量检测与实时展示", "en": "Spectrum signal perception, processing, transmission, energy detection and real-time display"},
+        {"title": "认知无线电技术", "en": "Cognitive radio technology"},
+        {"title": "频谱感知工程实践的新方法", "en": "New methods for spectrum perception engineering practice"},
+        {"title": "宽带频谱能量检测算法", "en": "Wideband spectrum energy detection algorithm"},
+        {"title": "动态频谱分配和频谱共享", "en": "Dynamic spectrum allocation and spectrum sharing"}
+    ],
+    "relations": [
+        {"source": "AD-FMC0MMS1射频前端子系统", "target": "TCP/IP通信、控制中心程序、Matlab算法实现与展示系统", "type": "包括"},
+        {"source": "TCP/IP通信、控制中心程序、Matlab算法实现与展示系统", "target": "频谱信号感知、处理、传输、能量检测与实时展示", "type": "实现"},
+        {"source": "频谱信号感知、处理、传输、能量检测与实时展示", "target": "认知无线电技术", "type": "基于"},
+        {"source": "频谱感知工程实践的新方法", "target": "宽带频谱能量检测算法", "type": "改善"},
+        {"source": "宽带频谱能量检测算法", "target": "动态频谱分配和频谱共享", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "全盲频谱感知", "en": "Blind Spectrum Sensing"},
+        {"title": "能量检测", "en": "Energy Detection"},
+        {"title": "噪声功率估计", "en": "Noise Power Estimation"},
+        {"title": "协作频谱感知", "en": "Collaborative Spectrum Sensing"},
+        {"title": "循环相关检测", "en": "Cyclic Correlation Detection"},
+        {"title": "压缩感知", "en": "Compressed Sensing"},
+        {"title": "统计协方差", "en": "Statistical Covariance"}
+    ],
+    "relations": [
+        {"source": "全盲频谱感知", "target": "噪声功率估计", "type": "包含"},
+        {"source": "全盲频谱感知", "target": "能量检测", "type": "包含"},
+        {"source": "全盲频谱感知", "target": "协作频谱感知", "type": "包含"},
+        {"source": "全盲频谱感知", "target": "循环相关检测", "type": "包含"},
+        {"source": "全盲频谱感知", "target": "压缩感知", "type": "包含"},
+        {"source": "全盲频谱感知", "target": "统计协方差", "type": "包含"},
+        {"source": "能量检测", "target": "噪声功率估计", "type": "依赖"},
+        {"source": "协作频谱感知", "target": "能量检测", "type": "依赖"},
+        {"source": "循环相关检测", "target": "能量检测", "type": "依赖"},
+        {"source": "压缩感知", "target": "能量检测", "type": "依赖"},
+        {"source": "统计协方差", "target": "能量检测", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "能量检测的性能评估", "en": "Performance evaluation of energy detection"},
+        {"title": "多径衰落认知无线电中能量检测的损失因子上界", "en": "Upper bound for the loss factor of energy detection of random signals in multipath fading cognitive radios"},
+        {"title": "图像噪声方差估计的中值滤波方法", "en": "Median filter method for image noise variance estimation"},
+        {"title": "基于能量检测的频谱感知方法", "en": "Spectrum sensing method based on energy detection"},
+        {"title": "多抽样率信号处理的基本原理及应用", "en": "Basic principles and applications of multi-sampling signal processing"},
+        {"title": "认知无线电系统设计视角", "en": "Cognitive radio system design perspective"},
+        {"title": "认知无线电：脑控无线通信", "en": "Cognitive radio: Brain-empowered wireless communications"},
+        {"title": "认知无线电系统的异构可重构平台", "en": "Heterogeneous reconfigurable platform for cognitive radio systems"}
+    ],
+    "relations": [
+        {"source": "能量检测的性能评估", "target": "基于能量检测的频谱感知方法", "type": "应用"},
+        {"source": "多径衰落认知无线电中能量检测的损失因子上界", "target": "认知无线电系统设计视角", "type": "相关"},
+        {"source": "图像噪声方差估计的中值滤波方法", "target": "信号处理", "type": "应用"},
+        {"source": "基于能量检测的频谱感知方法", "target": "认知无线电系统设计视角", "type": "相关"},
+        {"source": "多抽样率信号处理的基本原理及应用", "target": "信号处理", "type": "相关"},
+        {"source": "认知无线电系统设计视角", "target": "认知无线电：脑控无线通信", "type": "相关"},
+        {"source": "认知无线电系统的异构可重构平台", "target": "认知无线电系统设计视角", "type": "应用"}
+    ]
+}

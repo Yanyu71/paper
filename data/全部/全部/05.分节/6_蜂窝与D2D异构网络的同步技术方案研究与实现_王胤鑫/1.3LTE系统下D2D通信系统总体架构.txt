@@ -1,0 +1,13 @@
+1.3LTE系统下D2D通信系统总体架构
+图1 - 1  系统总体结构
+本文的研究依托于 《LTE 系统下设备直通技术》课题， LTE 系统下D2D 通 信系统的总体架构如图1-1所示④:整个系统由上自下由APP 应用层， Scheduler
+调度器， PHY 物理层， USRP 射频前端几个主要模块组成。
+APP 应用层用于实现实际业务，如视频传输等，可借助于VLC 等软件实现。
+Scheduler调度器不仅需要连接应用层 (APP) 和物理层 (PHY)  之间的数据 通路，实现业务数据的传输，还需在数据传输的过程中，需要实现资源调度以及 对等实体的信令流程通信控制等。调度器大致可以划分为五个独立的功能实体， 分别是TUN 虚拟网卡， Resource Map无线资源位图， RLCTX  发送链路RLC 实
+体， RLCRX  接收链路RLC 实体， HARQ  混合重传控制。
+PHY 层是系统物理层，负责链路的处理，包括发送和接收两大部分，发送
+包括编码、调制等模块，接收包括同步、解码、解扰等模块。
+3
+(C)1994-2022   China   Academic   Journal   Electronic   Publishing   House.All   rights   reserved.   http:// www.cnki.net
+USRP 层是系统的底层硬件层，使用USRP 模拟D2D 终端，实现系统中数
+据的收发等功能。

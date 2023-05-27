@@ -1,0 +1,16 @@
+5.2.1ZC序列参数计算模块
+在符号3到来时，eNodeB已知PUCCH所有小区及用户配置信息，可以根据本文
+在2.2章节介绍的内容计算PUCCH中ZC序列的组号“（冬），循环移位撰）以及。以及
+PUCCH映射的RB位置。其中组号u和循环移位ncs（ns,l）是小区级参数。并不需要在每 帧的符号3到来时计算。如果高层重新配置了小区参数，则更新组号和循环移位两个参 数。
+表5-1： ZC序列相关参数计算模块函数描述
+函数原型	void eNBRxPucch_NcsNocCal(TsIdx, siibtrmBufldx)
+函数输入	函数参数	Tsldx：时隙号
+subthnBufldx：缓存索引
+全局变量	PucchNCellCs：指向PUCCH所有符号用到的循环移位的指针，参考式2-2
+UlSubFrmlnfb：指向子帧参数信息结构体的指针
+UlPhyRLIntb：指向用户链路级信息结构体的指针
+函数输出	全局变量	PucchU： ZC序列组序号
+PucchNcs：指向PUCC1I匕ZC序列的循环移位数组的指针
+S_ns：指向fonnatl/la/lb h控制信息的时隙扰码数组的指针，参考式2<
+PucchPRBIdx：指向PUCCH映射RB位置数组的指针
+返回值	无

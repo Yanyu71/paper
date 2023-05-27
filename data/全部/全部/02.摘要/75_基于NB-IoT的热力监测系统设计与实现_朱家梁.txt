@@ -1,0 +1,14 @@
+摘要
+自物联网概念提出以来，物联网及其相关技术不断飞速地发展。 特别是低功耗窄带物联网领域(LPWAN),以NB-IoT为代表的技术推动 着物联网技术深度应用。本文依据热力领域的实际需求，基于硬件系 统的低功耗技术，综合设计并实现NB-IoT物联网系统，全文主要工 作如下：
+首先，本文评估了基于NB-toT技术的通信系统的性能，根据实 际需求，依据NBToT模组和MCU提供的不同工作状态，在保证广域 网环境信息传输的准确性和时效性基础上，设计并实现了基于NBToT 技术的热力行业的物联网监测系统。
+其次，本文分析了动态功耗管理以及动态电压调节等低功耗技术, 比较了多种应用场景下不同低功耗技术的性能。为增强系统实现，基 于嵌入式实时操作系统优化了动态电源管理技术，并针对现实场景需 求优化了系统流程，并通过实际硬件验证了低功耗系统性能。
+最后，本文解决了实际工程中存在的消息传递问题。基于系统的 硬件设备实现了动态电源管理技术的低功耗解决方案，提出了物联网 硬件设备的消息重传机制，实现了硬件设备数据高并发的消息处理方 法，并进行了系统功能测试；验证了方案设计的有效性。
+关键询：物联网NB-IoT LPWAN低功耗任务调度
+Design and Implementation of Thermal Monitoring System Based on NB-IoT
+ABSTRACT
+Since the concept of the Internet of Things was proposed, the Internet of Things and its related technologies have been developing rapidly. Especially in the field of low-power narrowband Internet of Things (LPWAN), the technology represented by NB-IoT is promoting the in-depth application of Internet of Things technology. According to the actual needs in the field of thermal engineering, based on the low-power technology of the hardware system, a comprehensive design and implementation of the NB-IoT Internet of Things system was implemented. The main work of the ftill text is as follows:
+First, this paper evaluates the performance of communication systems based on NB-IoT technology. According to the actual needs, according to the different working states provided by the NB-IoT module and the MCU, on the basis of ensuring the accuracy and timeliness of the transmission of WAN environmental information, a thermal power industry loT monitoring system based on NB-IoT technology was implemented.
+Second, this article analyzes low-power technologies, such as dynamic power management and dynamic voltage regulation, and compares the performance of different low-power technologies in various applications. In order to enhance the implementation of the system, the dynamic power management technology is optimized based on the embedded real-time operating system, and the system process is optimized according to the needs of the actual scenario. The performance of the low-power system is verified by actual hardware.
+Finally, this article solves the problem of message passing in actual engineering. System-based hardware devices implement low-power
+solutions for dynamic power management technologies, propose message retransmission mechanisms for loT hardware devices, implement highly concurrent message processing methods for hardware device data, and perform system function tests and Verification scheme design.
+KEY WORDS: loT NB-IoT LPWAN low-power technology Task scheduling

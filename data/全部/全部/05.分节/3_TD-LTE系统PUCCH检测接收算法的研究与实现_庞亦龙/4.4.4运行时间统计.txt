@@ -1,0 +1,14 @@
+4.4.4运行时间统计
+每个函数的运行时间根据PUCCH格式的不同而有所差异，总体上来看，格式1/la/lb 运行的时间略小于格式2/2a/2b行的时间，测试用例TEST_PUCCH_7 _004和 TEST_PUCCH_12_007得出的具体数据见表4-12。
+表4-12 PUCCH函数运行时间统计
+任务	函数	耗费时间(格式la) (us)	耗费时间(格式2) (us)
+Job_PUCCH_Symb31nt	PucchNcsNocCal	7.25	5.722
+Pucch ZcDeCorr	15.892	16.148
+Job_PUCCH_Symb6Int	PucchZcDeCorr	13.152	13.246
+Pucch DTXChEstEq	16.088	16.928
+JobPUCCHSymb 1 OInt	PucchZcDeCorr	16.548	16.3
+Job_PUCCH_Symbl3Int	PucchZcDeCorr	13.336	13.412
+Pucch DTXChEstEq	16.724	16.332
+PUCCH DemoDeScrmb	7.24	11.85
+总计	106.23	109.938
+从总的处理时间上来看，本文在DSP上实现的PUCCH链路处理一个用户大约需要 O.llmSo

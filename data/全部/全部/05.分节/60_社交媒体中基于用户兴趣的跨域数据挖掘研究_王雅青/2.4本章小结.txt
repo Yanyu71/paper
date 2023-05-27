@@ -1,0 +1,158 @@
+2.4本章小结
+本章首先概述了社交媒体中跨域数据挖掘研究的现状，并指出了建模用户兴趣 是挖掘跨域信息间复杂关联关系的关键。然后梳理了用户兴趣模型的研究现状，概
+33
+述了用户兴趣模型的构建并具体阐述了用户兴趣建模的方法。最后阐述了社交媒体 中基于用户兴趣的跨域数据挖掘的研究现状，以及探讨了用户兴趣模型提升跨域数 据挖掘性能的优势。
+参考文献
+[1]	Shu K, Wang S, Tang J, et al. User identity linkage across online social networks: a review[J]. ACM SIGKDD Explorations Newsletter, 2017, 18(2): 5-17.
+[2]	Li B. Cross-domain collaborative filtering: a brief survey [A]. II 2011 IEEE 23rd International Conference on Tools with Artificial Intelligence[C] . Piscataway,NJ: IEEE Press, 2011: 1085-1086.
+[3]	Khan M M, Ibrahim R, Ghani I. Cross domain recommender systems: a systematic literature re-view[J]. ACM Computing Surveys (CSUR), 2017, 50(3): 1-34.
+[4]	Cantador I, Femandez-lbbias I, Berkovsky S, et at Cross-domain recommender systems[!]. Recommender systems handbook, 2015: 919-959.
+[5]	Zhao L, Pan S J, Xiang E W, et al. Active transfer learning for cross-system recommendation[A]. 〃 Twenty-Seventh AAAI Conference on Artificial Intelligence[C]. Menio Park, CA: AAAI Press, 2013.
+[6]	Tang J. Computational models for social network analysis: a Brief Survey [A]. // Proceedings of the 26th International Conference on World Wide Web Companion[C]. Berlin, German: Springer, 2017: 921-925.
+[7]	Marketing charts. Majority of Twitter Users Also Use Instagram[EB/OL]. http://www. marketingcharts.com/online/majority-ottwitter-users-also-use-instagrani-389414 2014.
+[8]	Cohen W, Ravikumar P, Fienberg S. A comparison of string metrics for matching names 皿d records[A]. // Kdd workshop on data cleaning and object consolidation^]. New York, NY: ACM, 2003: 73-78.
+[9]	Shen Y Jin H. Controllable information sharing for user accounts linkage across multiple online social networks[A], // Proceedings of the 23rd ACM International Conference on Conference on Information and Knowledge Management[C]. New York, NY: ACM, 2014: 381-390.
+[10]	Bartunov S, Korshunov A, Park S T, et al. Joint link-attribute user identity resolution in online social networks[A]. // Proceedings of the 6th International Conference on Knowledge Discovery and Data Mining, Workshop on Social Network Mining and Analysis. ACM[C]. New York, NY: ACM, 2012.
+[11]	Tan S, Guan Z, Cai D, et al. Mapping users across networks by manifold alignment on hyper-graph[A]. // Twenty-Eighth AAAI Conference on Artificial Intelligence[C]. Menio Park, CA: AAAI Press, 2014.
+[12]	Bennacer N, Jipmo C N, Penta A, et al. Matching user profiles across social networks[A]. // International Conference dn Advanced Information Systems Engineering[C]. Berlin, German: Springer, 2014: 42138.
+[13]	lofciu T, Fankhauser R Abel F, et al. Identiiying users across social tagging systems[A]. // Fifth International AAAI Conference on Weblogs and Social Media[C]. Menio Park, CA: AAAI Press, 2011.
+34
+[14]	Liu S, Wang S, Zhu F, et al. Hydra: large-scale social identity linkage via heterogeneous behavior modeling[A]. // Proceedings of the 2014 ACM SIGMOD international conference on Management ofdata[C]. New York, NY: ACM, 2014: 51-62.
+[15]	Zafarani R, Liu H. Connecting corresponding identities across communities[A]. // Third International AAAI Conference on Weblogs and Social Media[C]. Memo Park, CA: AAAI Press, 2009.
+[16]	Malhotra A, Totti L, Meira Jr 也 et al. Studying user footprints in different online social networks [A]. //2012IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining[C]. Piscataway, NJ: IEEE, 2012: 1065-1070.
+[17]	Vbsecky J, Hong D, Shen V Y User identification across multiple social networks [A]. // 2009 first international conference on networked digital technologies©. Piscataway, NJ: IEEE, 2009: 360-365.
+[18]	Narayanan A, Shmatikov V De-anonymizing social networks[A]. // 2009 30th IEEE symposium on security and privacy[C], Piscataway, NJ: IEEE, 2009: 173-187.
+[19]	Korula N, Lattanzi S. An efficient reconciliation algorithm for social networks[A]. // Proceedings of the VLDB Endowment©. Trondheim, Norway: VLDB Endowment, 2014: 377—388.
+[20]	Zhang J, Philip S Y Integrated anchor and social link predictions across social networks[A]. // Twenty-Fourth International Joint Conference on Artificial Intelligence[C]. Menio Paric, CA: AAAI Press, 2015.
+[21]	Phan M C, Sun A, Tay Y Cross-device user linking: url, session, visiting time, and device-log embedding[A]. // Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval©. New York, NY: ACM, 2017: 933-936.
+[22]	Riederer C, Kim Y Chaintreau A, et al. Linking users across domains with location data: theory and validation[A]. // Proceedings of the 25th International Conference on World Wide Web[C], Berlin, German: Springer, 2016: 707-719.
+[23]	Li B, Yang Q, Xue X. Transfer learning for collaborative filtering via a rating-matrix generative model[A]. // Proceedings of the 26th annual international conference on machine leaming[C]. New York, NY: ACM, 2009: 617-624.
+[24]	Winoto R Tang T. If you like the devil wears prada the book, will you also enjoy the devil wears prada the movie? a study of cross-domain recommendations] J]. New Generation Computing, 2008, 26(3): 209-225.
+[25]	Gao S, Luo H, Chen D, et al. Cross-domain recommendation via cluster-level latent factor model[A]. // Joint European conference on machine learning and knowledge discovery in databases[C]. Berlin, German: Springer, 2013: 161-176.
+[26]陈雷慧，匡俊，陈辉，etal.跨领域推荐技术综述[J].华东师范大学学报(自然科学版)， 2017(2017 年 05): 101—116.
+[27]	Li B, Yang Q, Xue X. Can movies and books collaborate? cross-domain collaborative filtering for sparsity reduction[A]. // International Joint Conference on Artificial Intelligence[C]. San Francisco, CA: Morgan Kaufinann Publishers Inc, 2009.
+[28]	Ren S, Gao S, Liao J, et al. Improving cross-domain recommendation through probabilistic clusterlevel latent factor model [A]. // Twenty-Ninth AAAI Conference on Artificial Intelligence [C]. Menio Park, CA: AAAI Press, 2015.
+35
+[29]	Chung R, Sundaram D, Srinivasan A. Integrated personal recommender systems]A]. // Proceedings of the Ninth International Conference on Electronic Commerce[C]. New York, NY: ACM, 2007: 65-74.
+[30]	Loizou A. How to recommend music to film bufife: enabling the provision of recommendations from multiple domains[D]. Southampton, England: University of Southampton, 2009.
+[31]	Fernandez-Tobias I, Cantador I, Kaminskas M, et al. A generic semantic-based framework for cross-domain recommendation[A]. H Proceedings of the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems[C]. New York, NY: ACM, 2011: 25-32.
+[32]	Kaminskas M, Femandez-Ibbfas I, Cantador I, et al. Ontology-based identification of music for places[A]. // Information and Communication Technologies in Tourism 2013[C]. Berlin, German: Springer, 2013: 436-447.
+[33]	Berkovsky S, Kuflik T, Ricci F. Mediation of user models for enhanced personalization in recommender systems[J]. User Modeling and User-Adapted Interaction, 2008, 18(3): 245-286.
+[34]	Singh A H Gordon G J. Relational learning via collective matrix factorization[A]. // Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining[C]. New York, NY: ACM, 2008: 650-658.
+[35]	Pan Yang Q. Transfer learning in heterogeneous collaborative filtering domains [J]. Artificial intelligence, 2013, 197: 39-55.
+[36]	Jiang M, Cui R Yuan N J, et al. Little is much: bridging cross-platform behaviors through overlapped crowds [A]. // Thirtieth AAAI Conference on Artificial IntelIigence[C]. Menio Park, CA: AAAI Press, 2016.
+[37]	Berkovsky S, Kuflik 工 Ricci F. Cross-domain mediation in collaborative filtering[A]. // International Conference on User Modeling[C]. Berlin, German: Springer, 2007: 355-359.
+[38]	Shapira B, Rokach L, Freilikhman S. Facebook single and cross domain data for recommendation systems[J]. User Modeling and User-Adapted Interaction, 2013,23(2-3): 211-247.
+[39]	Tiroshi A, Kuflik T. Domain ranking for cross domain collaborative filtering[A]. // International Conference on User Modeling, Adaptation, and Personalization[C]. Berlin, German: Springer, 2012: 328-333.
+[40]	Jiang M, Cui P, Chen X, et al. Social recommendation with cross-domain transferable knowledge^. IEEE transactions on knowledge and data engineering, 2015, 27(11): 3084-3097.
+[41]	Ying G, Xi C. Cross-domain scientific collaborations prediction with citation infbrmation[A], // 2014 IEEE 38th International Computer Software and Applications Conference Wbrkshops[C]. Piscataway, NJ: IEEE, 2014: 229-233.
+[42]	Jin S, Zhang J, Philip S Y, et al. Synergistic partitioning in multiple large scale social networks[A]. // 2014 IEEE International Conference on Big Data (Big Data)[C]. Piscataway, NJ: IEEE, 2014: 281-290.
+[43]	Zhang J, Yu P S. Community detection for emerging networksfA]. // Proceedings of the 2015 SIAM International Conference on Data Mining[C]. Philadelphia, PA: SIAM, 2015: 127-135.
+[44]	Philip S Y Zhang J. MCD: mutual clustering across multiple social networks[A]. // 2015 IEEE International Congress on Big Data[C]. Piscataway, NJ: IEEE, 2015: 762-771.
+[45]	Wang Z, Zhou X, Zhang D, et al. Cross-domain community detection in heterogeneous social net-works[J]. Personal and ubiquitous computing, 2014, 18(2): 369-383.
+36
+[46]	Zhan Q, Zhang J, Yu P, et al. Community detection for emerging social networks]J]. World Wide Web, 2017, 20(6): 1409-1441.
+[47]	Zhang H, Nguyen D T, Zhang H, et al. Least cost influence maximization across multiple social networks[J]. IEEE/ACM Transactions on Networking, 2015, 24(2): 929-939.
+[48]	Zhan Q, Zhang J, Wang S, et al. Influence maximization across partially aligned heterogenous social networks [A]. // Pacific-Asia Conference on Knowledge Discovery and Data Mining[C]. Berlin, German: Springer, 2015: 58-69.
+[49]	Rao A, Spasojevic Li Z, et al. Klout score: measuring influence across multiple social networks [A]. // 2015 IEEE International Conference on Big Data (Big Data)[C]. Piscataway, NJ: IEEE, 2015: 2282-2289.
+[50]	Zhang T, Xu C. Cross-domain multi-event tracking via CO-PMHT[J]. ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2014, 10(4): 1-19.
+[51]	Zaharieva M, Del Fabro M, Zeppelzauer M. Cross-platform social event detection[J]. IEEE MultiMedia, 2015.
+[52]桑基韬,路冬媛,徐常胜.基于共同用户的跨网络分析：社交媒体大数据中的多源问题[J].科 学通报,2014, 59: 3554-3560.
+[53]	Zhang J. Social network fusion and mining: a survey [J]. arXiv: Social and Information Networks, 2018.
+[54]	Abdel-Hafez A, Xu Y A survey of user modelling in social media websites [J]. Computer and Information Science, 2013, 6(4): 59-71.
+[55]	Piao G, Breslin J G. Inferring user interests in microblogging social networks: a survey[J]. User Modeling and User-Adapted Interaction, 2018, 28(3): 277-329.
+[56]	Rich E. Building and exploiting user models[A]. // Proceedings of the 6th international joint conference on Artificial intelligencefC]. Berlin, German: Springe^ 1979: 720-722.
+[57]	Rich E. User modeling via stereotypes[J]. Cognitive science, 1979,3(4): 329-354.
+[58]	Rich E. User models in dialog systems[M]. Berlin4 German: Springer, 1989: 35-51.
+[59]	Cooper A, 丁全钢.北京，中国：电子工业出版社,2006.
+[60]	Cooper A, others. Sams Indianapolis, 2004.
+[61]	Chin D N. User models in dialog systemsfM]. Berlin, German: Springer, 1989: 74-107.
+[62]	Gao M, Liu K, Wu Z. Personalisation in web computing and informatics: theories, techniques, applications, and fiiture researchfJ]. Information Systems Frontiers, 2010, 12(5): 607-629.
+[63]	Bobadilla J, Ortega E Hernando A, et al. Recommender systems survey]J]. Knowledge-based systems, 2013,46: 109-132.
+[64]	Frias-Martinez E, Magoulas G, Chen S, et al. Automated user modeling for personalized digital libraries[J]. International booktitle of Information Management, 2006, 26(3): 234-248.
+[65]	Jeevan V, Padhi R A selective review of research in content personalization]J]. Library Review, 2006.
+[66]	Benyon D, Murray D. Applying user modeling to human-computer interaction design[J]. Artificial Intelligence Review, 1993, 7(3-4): 199-225.
+37
+[67]	Kim H N, Ha I, Lee K S, et al. Collaborative user modeling for enhanced content filtering in recommender systems[J]. Decision Support Systems, 2011, 51(4): 772-781.
+[68]	Hannon J, McCarthy K5 Of Mahony M P> et al. A multi-faceted user model for twitter[A]. // International Conference on User Modeling, Adaptation, and Personalization[C]. Berlin, German: Springer, 2012: 303-309.
+[69]	Michlmayr E, Cayzer S. Learning user profiles from tagging data and leveraging them for personal (ized) information accessfA]. // Proceedings of the Workshop on Tagging and Metadata for Social Information Organization, 16th International World Wide Web Conference (WWW2007)[C]. Berlin, German: Springer, 2007: 1-7.
+[70]	Hung C C, Huang Y C, Hsu J Y j, et al. Tag-based user profiling for social media recommenda-tion[A]. // Workshop on Intelligent Techniques for Web Personalization & Recommender Systems at AAAI[C]. Menio Park, CA: AAAI Press, 2008: 49-55.
+[71]	Uschold M, Gruninger M. Ontologies: principles, methods and applications[1]. The knowledge engineering review, 1996,11(2): 93-136.
+[72]徐振宁，张维明，陈文伟.基于Ontology的智能信息检索[J].计算机科学，2001, 028(6): 21-26,44.
+[73]李勇.智能检索中基于本体的个性化用户建模技术及应用[D],湖南，中国：国防科技大学, 2002.
+[74]	Salton G, Buckley C. Term-weighting approaches in automatic text retrieval [J]. Information processing & management, 1988, 24(5): 513-523.
+[75]	Cai H, Zheng V W, Chang K C C. A comprehensive survey of graph embedding: problems, techniques, and applications[}]. IEEE Transactions on Knowledge and Data Engineering, 2018, 30(9): 1616~1637.
+[76]	Goyal R Ferrara E. Graph embedding techniques, applications, and performance: a survey[J]. Knowledge-Based Systems, 2018, 151: 78-94,
+[77]	Mikolov T, Chen K, Conado G, et al. Efficient estimation of word representations in vector space[J]. arXiv preprint arXiv: 13013781, 2013.
+[78]	Kumar H, Lee S, Kim H G. Exploiting social bookmarking services to build clustered user interest profile for personalized search[J]. Information Sciences, 2014,281: 399-417.
+[79]	Biswas R Robinson P. A brief survey on user modelling in HCI[A]. // International Conference on Intelligent Human Computer Interaction (IHCI)[C]. 2010.
+[80]	Fischer G. User modeling in human-computer interaction]J]. User modeling and user-adapted interaction, 2001, 11(1-2): 65-86.
+[81]	McAuley J, Leskovec J. Hidden factors and hidden topics: understanding rating dimensions with review text[A]. // Proceedings of the 7th ACM conference on Recommender systems[C]. New York, NY: ACM, 2013: 165-172.
+[82]	Mikolov T, Sutskever I, Chen K, et at Distributed representations of words and phrases and their compositionality [A]. //Advances in neural information processing systems[C]. Neural information processing systems foundation, 2013: 3111—3119.
+[83]	Paterek A. Improving regularized singular value decomposition for collaborative filtering[A], // Proceedings ofKDD cup and workshop©. New York, NY: ACM, 2007: 5-8.
+38
+[84]	Koren Y Bell 氏 Vblinsky C. Matrix factorization techniques for recommender systems[J]. Computer, 2009,42(8): 30-37.
+[85]	Mnih A, Salakhutdinov R R. Probabilistic matrix factorization[A]. // Advances in neural information processing systems[C]. Massachusetts, US: MIT press, 2008: 1257-1264.
+[86]	Koren Y Factorization meets the neighborhood: a multifaceted collaborative filtering modelfA]. // Proceedings of the 14th ACM SIGKDD international conference on Knowledge discovery and data mining[C]. New York, NY: ACM, 2008: 426-434.
+[87]	De Pessemier 工 Deryckere T, Martens L. Context aware recommendations for user-generated content on a social network site[A]. // Proceedings of the 7 th European Conference on Interactive TV and VideofC]. New York, NY: ACM, 2009: 133-136.
+[88]	Shi C, Li Y Zhang J, et aL A survey of heterogeneous information network analysis [J]. IEEE Transactions on Knowledge and Data Engineering, 2016, 29(1): 17-37.
+[89]	Jacob Y, Denoyer L, Gallinari P. Learning latent representations of nodes for classifying in heterogeneous social networks[AJ. // Proceedings of the 7th ACM international conference on Web search and data mining[C]« New York, NY: ACM, 2014: 373-382.
+[90]	Jamali M, Lakshinanan L. Heteromf: recommendation in heterogeneous information networks using context dependent factor models[A]. // Proceedings of the 22nd international conferenee on World Wide Web[C]. Berlin, German: Springer, 2013: 643-654.
+[91]	Perozzi B, Al-Rjfbu R, Skiena S. Deepwalk: online learning of social representations]A]. // Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining[C]. New York, NY: ACM, 2014: 701-710.
+[92]	Tang J, Qu M, Wang M, et al. Line: large-scale information network embedding[A]. // Proceedings of the 24 th international conference on world wide web[C],2015: 1067~1077.
+[93]	Tang J, Qu M, Mei Q. Pte: predictive text embedding through large-scale heterogeneous text networks [A]. // Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining[C]. New York, NY: ACM, 2015: 1165-1174.
+[94]	Shi C, Hu B, Zhao W X, et al. Heterogeneous information network embedding for recommenda-tion[J], IEEE Transactions on Knowledge and Data Engineering, 2018, 31(2): 357-370.
+[95]	Zhao H, Yao Q, Li J, et al. Meta-graph based recommendation fusion over heterogeneous information networks[A]. // Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining©. New York, NY: ACM, 2017: 635-644.
+[96]	Loepp B, Donkers T, Kleemann T, et al. Interactive recommending with tag-enhanced matrix factorization (TagMF)[J]. International booktitle of Human-Computer Studies, 2019, 121: 21T L
+[97]	Sun G, Zhang X. Graph embedding with rich information through heterogeneous network[J]. arXiv preprint arXiv: 1710.06879, 2017.
+[98]	Yang C, Sun J, Ma J, et al. Scientific collaborator recommendation in heterogeneous bibliographic networks [A]. // 2015 48th Hawaii International Conference on System SciencesfC]. Piscataway, NJ: IEEE, 2015: 552-561.
+[99]	Cheng H [ Koc L, Harmsen J, et al. Wide & deep learning for recommender systems[A]. // Proceedings of the 1st workshop on deep learning for recommender systems[C]. New York, NY: ACM, 2016: 7-10.
+39
+[100]	Kim D, Park C, Oh J, et al. Convolutional matrix factorization for document context-aware recom-mendation[A]. // Proceedings of the 10th ACM Conference on Recommender Systems[C]. New York, NY: ACM, 2016: 233-240.
+[101]	Linden G, Smith B, York J. Amazon.com recommendations: item-to-item collaborative filtermg[J]. IEEE Internet computing, 2003, 7(1): 76-80,
+[102]	Sarwar B, Karypis G, Konstan J, et al. Item-based collaborative filtering recommendation algo-rithms[A]. // Proceedings of the 10th International Conference on World Wide Web[C]. Berlin, German: Springer, 2001: 285-295.
+[103]	Hidasi B, Karatzoglou A, Baltrunas L, et al. Session-based recommendations with recurrent neural networks [J]. arXiv preprint arXiv: 1511.06939, 2015.
+[104]	Jannach D, Ludewig M. When recurrent neural networks meet the neighborhood for session-based recommendation[A]. // Proceedings of the Eleventh ACM Conference on Recommender Sys-tems[C]. New York, NY: ACM, 2017: 306-310.
+[105]	Tan Y K, Xu X, Liu Y Improved recurrent neural networks for session-based recommendations[A]. // Proceedings of the 1st Workshop on Deep Learning for Recommender Systems[C]. New York, NY: ACM, 2016: 17-22.
+[106]	Barkan O, Koenigstein N. Item2vec: neural item embedding for collaborative filtering]A]. //2016 IEEE 26th International Workshop on Machine Learning for Signal Processing (MLSP)[C]. Piscataway, NJ: IEEE, 2016: 1-6.
+[107]	Greenstein-Messica A, Rokach L, Friedman M. Session-based recommendations using item em-bedding[A]. U Proceedings of the 22nd International Conference on Intelligent User Interfaces[C]. New York, NY: ACM, 2017: 629-633.
+[108]	Zhao W, Wang B, Ye J, et al. PLASTIC: prioritize long and short-term information in top-n recommendation using adversarial training,[A]. // International Joint Conference on Artificial Intel-ligence[C]. Menio Park, CA: AAAI Press, 2018: 3676-3682.
+[109]	Rendle S, Freudenthaler C, Schmidt-Thieme L. Factorizing personalized markov chains for nextbasket recommendation[A]. // Proceedings of the 19th international conference on World wide web[C]. Berlin, Gennan: Springer, 2010: 811-820.
+[110]	He R, McAuley J. Fusing similarity models with markov chains for sparse sequential recommen-dation[A]. // 2016 IEEE 16th International Conference on Data Mining (ICDM)[C]. Piscataway, NJ: IEEE, 2016: 191-200.
+[Ill]	Hariri N, Mobasher B, Burke R. Context-aware music recommendation based on latenttopic sequential pattems[A]. // Proceedings of the sixth ACM conference on Recommender systems[C]. New York, NY: ACM, 2012: 131-138.
+[112]	Quadrana M, Cremonesi P, Jannach D. Sequence-aware recommender systems]J]. ACM Computing Surveys (CSUR), 2018, 51(4): 1-36.
+[113]	Vasile F, Smirnova E, Conneau A. Meta-prod2vec: product embeddings using side-information for recommendation[A]. // Proceedings of the 10th ACM Conference on Recommender SystemsfC]. New York, NY: ACM, 2016: 225-232.
+[114]	Hidasi B, Karatzoglou A. Recurrent neural networks with top-k gains for session-based recom-mendations[A]. // Proceedings of the 27th ACM International Conference on Information and Knowledge ManagementfC]. New York, NY: ACM, 2018: 843-852.
+40
+[115]	Bogina V, Kuflik T. Incorporating dwell time in session-based recommendations with recurrent neural networks[A]. // The ACM Conference on Recommender System[C]. New York, NY: ACM, 2017: 57-59.
+[116]	Zhou G, Mou N, Fan Y et al. Deep interest evolution network for elick-through rate prediction[A]. // Proceedings of the AAAI Conference on Artificial Intelligence[C]. Menio Park, CA: AAAI Press, 2019： 5941-5948.
+[117]	Wang S, Cao L, Wang Y A survey on session-based recommender systems[J]. arXiv preprint arXiv: 1902.04864, 2019.
+[118]	Tang J, Wang K・ Personalized top-n sequential recommendation via convolutional sequence em-bedding[A]. // Proceedings of the Eleventh ACM International Conference on Web Search and DataMining[C], 2018: 565-573.
+[119]	Tuan T X, Phuong T M. 3D convolutional networks for session-based recommendation with content features[A]. // Proceedings of the Eleventh ACM Conference on Recommender Systems [C]. New York, NY: ACM, 2017: 138-146.
+[120]	Quadrana M, Karatzoglou A, Hidasi B, et al. Personalizing session-based recommendations with hierarchical recurrent neural networks[A]. // Proceedings of the Eleventh ACM Conference on Recomrnender Systems[C]. New York, NY: ACM, 2017: 130-137.
+[121]	Ma C, Kang H Liu X. Hierarchical gating networks for sequential recommendation]A]. // Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining[C], New York, NY: ACM, 2019: 825-833.
+[122]	Mu X, Zhu F, Lim E P, et al. User identity linkage by latent user space modelling[A]. // Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining[C]. New York, NY: ACM, 2016: 1775-1784.
+[123]	Liu L, Cheung W K, Li X, et al. Aligning Users across Social Networks Using Network Embed-ding[A]. // Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelli-gence[C]. Menio Park, CA: AAAI Press, 2016: 1774-1780.
+[124]	Man T, Shen H, Liu S? et al. Predict Anchor Links across Social Networks via an Embedding Approach[A]. // Proceedings of the Twenty-Fifth International Joint Conference on Artificial In-telligence[C]. Menio Park, CA: AAAI Press, 2016: 1823-1829.
+[125]	Chu X, Fan X, Yao D, et al. Cross-network embedding for multi-network aIignment[A]. // The World Wide Web Conference[C]. New York, NY； USA: Association for Computing Machinery, 2019: 273-284.
+[126]	Du X, Yan J, Zha H. Joint link prediction and network alignment via cross-graph embedding[A]. // Proceedings of the 28th International Joint Conference on Artificial Intelligence[C]. Menio Park, CA: AAAI Press, 2019: 2251-2257.
+[127]	Fu S, \^ng G, Xia S, et al. Deep multi-granularity graph embedding for user identity linkage across social networks [J]. Knowledge-Based Systems, 2020, 193: 105301.
+[128]	Kong X, Zhang J, Yii P S. Inferring anchor links across multiple heterogeneous social networks[A]. // Proceedings of the 22nd ACM international conference on Information & Knowledge Manage-ment[C]. New York. NY: ACM, 2013: 179-188.
+[129]	Nie Y Jia Y Li S, et al. Identifying users across social networks based on dynamic core interests [J]. Neurocomputing, 2016, 210: 107-115.
+41
+[130]	Heimann M, Shen H, Safavi T, et al. Regal: Representation learning-based graph alignment [A]. // Proceedings of the 27th ACM International Conference on Information and Knowledge Manage-ment[C]. New York, NY: ACM, 2018: 117-126.
+[131]	Cao X? Yu Y. BASS: a bootstrapping approach for aligning heterogenous social net\vorks[A]. // Joint European Conference on Machine Learning and Knowledge Discovery in DatabasesfC]. Berlin, German: Springer, 2016: 459-475.
+[132]	Feng J, Zhang M, Wang H, et al. DPLink: User Identity Linkage via Deep Neural Network From Heterogeneous Mobility Data[A]. // The International World Wide Web Conference[C]. Berlin, German: Springer, 2019: 459-469.
+[133]	Szomszor M, Alani H, Cantador I, et al. Semantic modelling of user interests based on crossfolksonomy analysis[A]. // The Semantic Web - ISWC 2008[C]. Berlin, German: Springer, 2008: 632-648.
+[134]	Yu S, Wang X, Zhu W, et al. Disparity-preserved deep cross-platform association for cross-platform video recommendation[A]. // Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence[C], Menio Park, CA: AAAI Press, 2019: 4635-4641.
+[135]	Tang J, Wu S, Sun J, et al. Cross-domain collaboration recommendation[A]. // Proceedings of the 18th ACM SIGKDD International Conference on Knowledge Discoveiy and Data Mining[C]. New York, NY: ACM, 2012: 1285-1293.
+[136]	Hu L, Cao J, Xu G, et al. Personalized recommendation via cross-domain triadic factorization [A]. // Proceedings of the 22nd international conference on World Wide Web[C]. Berlin, German: Springer, 2013: 595-606.
+[137]	Loni B5 Shi 丫 Larson M, et al. Cross-domain collaborative filtering with factorization machines[A]. // Proceedings of the European Conference on Information Retrieval [C]. Berlin, German: Springer, 2014: 656-661.
+[138]	Elkahky A M, Song Y, He X. A multi-view deep learning approach for cross domain user modeling in recommendation systems[A]. // Proceedings of the 24th International Conference on World Wide Web[C]. Berlin, German: Springer, 2015: 278-288.
+[139]	Zhao C, Li C, Fu C. Cross-domain recommendation via preference propagation graphNet[A]. // Proceedings of the 28th ACM International Conference on Information and Knowledge Man-agement[C]. New York, NY: ACM, 2019: 2165-2168.
+[140]	Yuan F, Yao L, Benatallah B. DA Rec: deep domain adaptation for cross-domain recommendation via transferring rating pattems[A]. // Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence[C]. Menio Park, CA: AAAI Press, 2019: 4227-4233.
+[141]	Li P, Tuzhilin A. DDTCDR: deep dual transfer cross domain recommendation]A]. // Proceedings of the 13th International Conference on Web Search and Data Mining[C]. New York, NY: ACM, 2020: 331-339.	一
+[142]	Pan W, Xiang E W, Liu N N, et al. Transfer learning in collaborative filtering for sparsity re-duction[A]. // Proceedings of the Twenty-Fourth AAAI Conference on Artificial Intelligence[C]. Menio Park, CA: AAAI Press, 2010: 230-235.
+[143]	Pan W, Liu Z, Ming Z, et al. Compressed knowledge transfer via factorization machine for heterogeneous collaborative recommendation[J]. Knowledge-Based Systems, 2015, 85(C): 234-244.
+[144]	Hu G, Zhang Y, Yang Q. Transfer meets hybrid: a synthetic approach for cross-domain collaborative filtering with text [A]. // The World Wide Web ConferencefC]. Berlin, German: Springer, 2019: 2822-2829.
+42

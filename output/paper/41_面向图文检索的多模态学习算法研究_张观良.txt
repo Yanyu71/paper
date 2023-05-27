@@ -1,0 +1,837 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "基于文本的图像检索",
+            "en": "Text-based image retrieval"
+        },
+        {
+            "title": "基于内容的图像检索",
+            "en": "Content-based image retrieval"
+        },
+        {
+            "title": "语义鸿沟",
+            "en": "Semantic gap"
+        },
+        {
+            "title": "多模态数据",
+            "en": "Multimodal data"
+        },
+        {
+            "title": "预处理",
+            "en": "Preprocessing"
+        },
+        {
+            "title": "特征提取",
+            "en": "Feature extraction"
+        },
+        {
+            "title": "主成分提取",
+            "en": "Principal component analysis"
+        },
+        {
+            "title": "尺度不变特征转换",
+            "en": "Scale-invariant feature transform"
+        },
+        {
+            "title": "方向梯度直方图",
+            "en": "Histogram of oriented gradient"
+        },
+        {
+            "title": "卷积神经网络",
+            "en": "Convolutional neural network"
+        },
+        {
+            "title": "词袋模型",
+            "en": "Bag-of-words model"
+        },
+        {
+            "title": "限制玻尔兹曼机",
+            "en": "Restricted Boltzmann machine"
+        },
+        {
+            "title": "深度信念网",
+            "en": "Deep belief network"
+        },
+        {
+            "title": "深度学习",
+            "en": "Deep learning"
+        }
+    ],
+    "relations": [
+        {
+            "source": "基于文本的图像检索",
+            "target": "文本信息",
+            "type": "描述"
+        },
+        {
+            "source": "基于文本的图像检索",
+            "target": "关键字",
+            "type": "匹配"
+        },
+        {
+            "source": "基于文本的图像检索",
+            "target": "搜索引擎",
+            "type": "定位"
+        },
+        {
+            "source": "基于内容的图像检索",
+            "target": "图像特征",
+            "type": "比较"
+        },
+        {
+            "source": "语义鸿沟",
+            "target": "视觉信息",
+            "type": "不一致性"
+        },
+        {
+            "source": "多模态数据",
+            "target": "图像、音频、视频、文本内容",
+            "type": "类型"
+        },
+        {
+            "source": "预处理",
+            "target": "图像",
+            "type": "去噪、减平均值、像素归一化"
+        },
+        {
+            "source": "预处理",
+            "target": "文本",
+            "type": "分词、统计高频词、过滤无用单词、词型转换"
+        },
+        {
+            "source": "特征提取",
+            "target": "主成分提取",
+            "type": "全局信息"
+        },
+        {
+            "source": "特征提取",
+            "target": "尺度不变特征转换",
+            "type": "局部信息"
+        },
+        {
+            "source": "特征提取",
+            "target": "方向梯度直方图",
+            "type": "局部信息"
+        },
+        {
+            "source": "特征提取",
+            "target": "卷积神经网络",
+            "type": "提取特征"
+        },
+        {
+            "source": "特征提取",
+            "target": "词袋模型",
+            "type": "特征"
+        },
+        {
+            "source": "限制玻尔兹曼机",
+            "target": "深度信念网",
+            "type": "构建"
+        },
+        {
+            "source": "深度学习",
+            "target": "深度信念网",
+            "type": "应用"
+        },
+        {
+            "source": "深度学习",
+            "target": "卷积神经网络",
+            "type": "应用"
+        },
+        {
+            "source": "深度学习",
+            "target": "特征提取",
+            "type": "应用"
+        },
+        {
+            "source": "深度学习",
+            "target": "模态转化",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "深度学习", "en": "Deep Learning"},
+        {"title": "语音识别", "en": "Speech Recognition"},
+        {"title": "GoogleBrain项目", "en": "GoogleBrain Project"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "语言模型", "en": "Language Model"},
+        {"title": "受限玻尔兹曼机", "en": "Restricted Boltzmann Machine"},
+        {"title": "循环神经网络", "en": "Recurrent Neural Network"},
+        {"title": "多模态模型", "en": "Multimodal Model"},
+        {"title": "图像检索", "en": "Image Retrieval"},
+        {"title": "文本生成", "en": "Text Generation"},
+        {"title": "依赖树递归神经网络", "en": "Dependency Tree Recursive Neural Network"},
+        {"title": "双向循环神经网络", "en": "Bidirectional Recurrent Neural Network"}
+    ],
+    "relations": [
+        {"source": "深度学习", "target": "语音识别", "type": "应用"},
+        {"source": "深度学习", "target": "GoogleBrain项目", "type": "应用"},
+        {"source": "GoogleBrain项目", "target": "深度神经网络", "type": "构建"},
+        {"source": "卷积神经网络", "target": "深度学习", "type": "应用"},
+        {"source": "语言模型", "target": "深度学习", "type": "应用"},
+        {"source": "受限玻尔兹曼机", "target": "深度学习", "type": "应用"},
+        {"source": "受限玻尔兹曼机", "target": "自然语言模型", "type": "引入"},
+        {"source": "循环神经网络", "target": "受限玻尔兹曼机", "type": "改进"},
+        {"source": "多模态模型", "target": "图像检索", "type": "应用"},
+        {"source": "多模态模型", "target": "文本生成", "type": "应用"},
+        {"source": "依赖树递归神经网络", "target": "文本特征", "type": "提取"},
+        {"source": "双向循环神经网络", "target": "文本特征", "type": "提取"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "受限玻尔兹曼机模型",
+            "en": "Restricted Boltzmann Machine Model"
+        },
+        {
+            "title": "深度信念网络",
+            "en": "Deep Belief Network"
+        },
+        {
+            "title": "对比散度算法",
+            "en": "Contrastive Divergence Algorithm"
+        },
+        {
+            "title": "图像检索",
+            "en": "Image Retrieval"
+        },
+        {
+            "title": "视觉特征",
+            "en": "Visual Features"
+        },
+        {
+            "title": "文本语义",
+            "en": "Text Semantics"
+        }
+    ],
+    "relations": [
+        {
+            "source": "受限玻尔兹曼机模型",
+            "target": "深度信念网络",
+            "type": "包含"
+        },
+        {
+            "source": "受限玻尔兹曼机模型",
+            "target": "对比散度算法",
+            "type": "包含"
+        },
+        {
+            "source": "深度信念网络",
+            "target": "图像检索",
+            "type": "应用"
+        },
+        {
+            "source": "深度信念网络",
+            "target": "文本语义",
+            "type": "关联"
+        },
+        {
+            "source": "图像检索",
+            "target": "视觉特征",
+            "type": "包含"
+        },
+        {
+            "source": "文本语义",
+            "target": "视觉特征",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "受限玻尔兹曼机", "en": "Restricted Boltzmann Machine"},
+        {"title": "CD算法", "en": "Contrastive Divergence Algorithm"},
+        {"title": "重复软最大化模型", "en": "Replicated Softmax Model"},
+        {"title": "高斯受限玻尔兹曼机", "en": "Gaussian Restricted Boltzmann Machine"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"}
+    ],
+    "relations": [
+        {"source": "受限玻尔兹曼机", "target": "CD算法", "type": "包含"},
+        {"source": "受限玻尔兹曼机", "target": "重复软最大化模型", "type": "包含"},
+        {"source": "受限玻尔兹曼机", "target": "高斯受限玻尔兹曼机", "type": "包含"},
+        {"source": "卷积神经网络", "target": "局部感受野", "type": "包含"},
+        {"source": "卷积神经网络", "target": "权重共享", "type": "包含"},
+        {"source": "卷积神经网络", "target": "空间池化层", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "局部特征表示",
+            "en": "Local Feature Representation"
+        },
+        {
+            "title": "CNN模型",
+            "en": "CNN Model"
+        },
+        {
+            "title": "感受野",
+            "en": "Receptive Field"
+        },
+        {
+            "title": "权重共享",
+            "en": "Weight Sharing"
+        },
+        {
+            "title": "池化层",
+            "en": "Pooling Layer"
+        },
+        {
+            "title": "局部对比度归一化层",
+            "en": "Local Response Normalization Layer"
+        },
+        {
+            "title": "剔除层",
+            "en": "Dropout Layer"
+        },
+        {
+            "title": "过拟合",
+            "en": "Overfitting"
+        }
+    ],
+    "relations": [
+        {
+            "source": "局部特征表示",
+            "target": "CNN模型",
+            "type": "包含"
+        },
+        {
+            "source": "CNN模型",
+            "target": "感受野",
+            "type": "包含"
+        },
+        {
+            "source": "CNN模型",
+            "target": "权重共享",
+            "type": "包含"
+        },
+        {
+            "source": "CNN模型",
+            "target": "池化层",
+            "type": "包含"
+        },
+        {
+            "source": "CNN模型",
+            "target": "局部对比度归一化层",
+            "type": "包含"
+        },
+        {
+            "source": "CNN模型",
+            "target": "剔除层",
+            "type": "包含"
+        },
+        {
+            "source": "CNN模型",
+            "target": "过拟合",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "区间卷积神经网络", "en": "Regions with Convolutional Neural Network (R-CNN)"},
+        {"title": "循环神经网络", "en": "Recurrent Neural Networks (RNN)"},
+        {"title": "词向量", "en": "Word Embedding"},
+        {"title": "对数双线性语言模型", "en": "Log-Bilinear Language Model (LBL)"},
+        {"title": "多模态深度玻尔兹曼机", "en": "Multimodal Deep Boltzmann Machine (DBM)"}
+    ],
+    "relations": [
+        {"source": "卷积神经网络", "target": "区间卷积神经网络", "type": "包含"},
+        {"source": "区间卷积神经网络", "target": "物体识别算法", "type": "使用"},
+        {"source": "循环神经网络", "target": "序列传递", "type": "实现"},
+        {"source": "词向量", "target": "n-gram模型", "type": "基于"},
+        {"source": "对数双线性语言模型", "target": "RBM模型", "type": "基于"},
+        {"source": "多模态深度玻尔兹曼机", "target": "深度信念网", "type": "相比较"},
+        {"source": "多模态深度玻尔兹曼机", "target": "深度玻尔兹曼机", "type": "基于"},
+        {"source": "多模态深度玻尔兹曼机", "target": "重复软最大化模型", "type": "使用"},
+        {"source": "多模态深度玻尔兹曼机", "target": "高斯受限玻尔兹曼机", "type": "使用"},
+        {"source": "多模态深度玻尔兹曼机", "target": "联合特征", "type": "完成"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "DBM模型",
+            "en": "DBM model"
+        },
+        {
+            "title": "DBN模型",
+            "en": "DBN model"
+        },
+        {
+            "title": "RBM模型",
+            "en": "RBM model"
+        },
+        {
+            "title": "多模态模型",
+            "en": "Multimodal model"
+        },
+        {
+            "title": "逐层训练",
+            "en": "Layer-wise training"
+        },
+        {
+            "title": "重复软最大化模型",
+            "en": "Repeated Softmax model"
+        },
+        {
+            "title": "高斯受限玻尔兹曼机模型",
+            "en": "Gaussian Restricted Boltzmann Machine model"
+        },
+        {
+            "title": "多模态深度玻尔兹曼机模型",
+            "en": "Multimodal Deep Boltzmann Machine model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "DBN模型",
+            "target": "DBM模型",
+            "type": "is a"
+        },
+        {
+            "source": "DBM模型",
+            "target": "RBM模型",
+            "type": "uses"
+        },
+        {
+            "source": "多模态模型",
+            "target": "文本",
+            "type": "has"
+        },
+        {
+            "source": "多模态模型",
+            "target": "图片",
+            "type": "has"
+        },
+        {
+            "source": "逐层训练",
+            "target": "堆积RBM模型",
+            "type": "uses"
+        },
+        {
+            "source": "重复软最大化模型",
+            "target": "文本",
+            "type": "uses"
+        },
+        {
+            "source": "高斯受限玻尔兹曼机模型",
+            "target": "图片",
+            "type": "uses"
+        },
+        {
+            "source": "多模态深度玻尔兹曼机模型",
+            "target": "多模态模型",
+            "type": "is a"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多模态深度玻尔兹曼机", "en": "Multimodal Deep Boltzmann Machine"},
+        {"title": "受限玻尔兹曼机", "en": "Restricted Boltzmann Machine"},
+        {"title": "CD算法", "en": "Contrastive Divergence Algorithm"},
+        {"title": "依赖树递归神经网络", "en": "Dependency Tree Recursive Neural Network"},
+        {"title": "双向循环神经网络", "en": "Bidirectional Recurrent Neural Network"}
+    ],
+    "relations": [
+        {"source": "多模态深度玻尔兹曼机", "target": "受限玻尔兹曼机", "type": "包含"},
+        {"source": "受限玻尔兹曼机", "target": "CD算法", "type": "使用"},
+        {"source": "多模态深度玻尔兹曼机", "target": "依赖树递归神经网络", "type": "包含"},
+        {"source": "依赖树递归神经网络", "target": "双向循环神经网络", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "前向传播",
+            "en": "Forward propagation"
+        },
+        {
+            "title": "后向传播",
+            "en": "Backward propagation"
+        },
+        {
+            "title": "双向循环神经网络",
+            "en": "Bidirectional Recurrent Neural Network"
+        }
+    ],
+    "relations": [
+        {
+            "source": "前向传播",
+            "target": "后向传播",
+            "type": "依赖"
+        },
+        {
+            "source": "前向传播",
+            "target": "双向循环神经网络",
+            "type": "应用"
+        },
+        {
+            "source": "后向传播",
+            "target": "双向循环神经网络",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "依赖树递归神经网络", "en": "Dependency Tree Recursive Neural Network"},
+        {"title": "双向循环神经网络", "en": "Bidirectional Recurrent Neural Network"},
+        {"title": "多模态模型", "en": "Multimodal Model"},
+        {"title": "RBM模型", "en": "Restricted Boltzmann Machine Model"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "损失函数", "en": "Loss Function"}
+    ],
+    "relations": [
+        {"source": "依赖树递归神经网络", "target": "句子特征", "type": "包含"},
+        {"source": "双向循环神经网络", "target": "单词特征", "type": "包含"},
+        {"source": "RBM模型", "target": "特征重构", "type": "实现"},
+        {"source": "卷积神经网络", "target": "图片特征提取", "type": "实现"},
+        {"source": "损失函数", "target": "特征融合", "type": "实现"},
+        {"source": "多模态模型", "target": "文本特征", "type": "包含"},
+        {"source": "多模态模型", "target": "图片特征", "type": "包含"},
+        {"source": "多模态模型", "target": "特征映射关系", "type": "学习"},
+        {"source": "多模态模型", "target": "排列损失函数", "type": "定义"},
+        {"source": "多模态模型", "target": "细粒度特征", "type": "获取"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "物体识别算法",
+            "en": "Object recognition algorithm"
+        },
+        {
+            "title": "R-CNN",
+            "en": "Regions with Convolutional Neural Network (R-CNN)"
+        },
+        {
+            "title": "SelectiveSearch",
+            "en": "SelectiveSearch"
+        },
+        {
+            "title": "EdgeBoxes",
+            "en": "EdgeBoxes"
+        },
+        {
+            "title": "多模态映射",
+            "en": "Multimodal mapping"
+        },
+        {
+            "title": "Caffe",
+            "en": "Caffe"
+        }
+    ],
+    "relations": [
+        {
+            "source": "物体识别算法",
+            "target": "R-CNN",
+            "type": "包含"
+        },
+        {
+            "source": "R-CNN",
+            "target": "SelectiveSearch",
+            "type": "使用"
+        },
+        {
+            "source": "R-CNN",
+            "target": "EdgeBoxes",
+            "type": "使用"
+        },
+        {
+            "source": "SelectiveSearch",
+            "target": "EdgeBoxes",
+            "type": "差异"
+        },
+        {
+            "source": "多模态映射",
+            "target": "排列损失函数",
+            "type": "训练"
+        },
+        {
+            "source": "Caffe",
+            "target": "memorylayer",
+            "type": "包含"
+        },
+        {
+            "source": "Caffe",
+            "target": "visionlayer",
+            "type": "包含"
+        },
+        {
+            "source": "Caffe",
+            "target": "losslayer",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "layer", "en": "layer"},
+        {"title": "Blob类", "en": "Blob class"},
+        {"title": "SyncedMemory类", "en": "SyncedMemory class"},
+        {"title": "Net", "en": "Net"},
+        {"title": "Sovler类", "en": "Sovler class"},
+        {"title": "ProtocolBuffer语言", "en": "ProtocolBuffer language"},
+        {"title": "双向循环神经网络", "en": "Bidirectional Recurrent Neural Network"},
+        {"title": "蒙版输入", "en": "Masked Input"},
+        {"title": "多模态模型", "en": "Multimodal Model"},
+        {"title": "相似性矩阵", "en": "Similarity Matrix"}
+    ],
+    "relations": [
+        {"source": "layer", "target": "Net", "type": "compose"},
+        {"source": "Blob类", "target": "layer", "type": "compose"},
+        {"source": "SyncedMemory类", "target": "Blob类", "type": "compose"},
+        {"source": "Net", "target": "Sovler类", "type": "compose"},
+        {"source": "ProtocolBuffer语言", "target": "Net", "type": "compose"},
+        {"source": "双向循环神经网络", "target": "Net", "type": "compose"},
+        {"source": "蒙版输入", "target": "双向循环神经网络", "type": "input"},
+        {"source": "双向循环神经网络", "target": "多模态模型", "type": "output"},
+        {"source": "Blob类", "target": "SyncedMemory类", "type": "contain"},
+        {"source": "Sovler类", "target": "Net", "type": "contain"},
+        {"source": "相似性矩阵", "target": "多模态模型", "type": "input"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "双向循环神经网络", "en": "Bidirectional Recurrent Neural Network"},
+        {"title": "Pooling层", "en": "Pooling Layer"},
+        {"title": "RankingMatrixLoss层", "en": "RankingMatrixLoss Layer"},
+        {"title": "自然语言多模态模型", "en": "Natural Language Multimodal Model"},
+        {"title": "对数双线性模型", "en": "Log-Bilinear Model"},
+        {"title": "困惑度", "en": "Perplexity"}
+    ],
+    "relations": [
+        {"source": "双向循环神经网络", "target": "Pooling层", "type": "包含"},
+        {"source": "Pooling层", "target": "RankingMatrixLoss层", "type": "包含"},
+        {"source": "自然语言多模态模型", "target": "对数双线性模型", "type": "基于"},
+        {"source": "自然语言多模态模型", "target": "困惑度", "type": "评价指标"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "图文检索",
+            "en": "Image and Text Retrieval"
+        },
+        {
+            "title": "困惑度",
+            "en": "Perplexity"
+        },
+        {
+            "title": "多模态模型",
+            "en": "Multimodal Model"
+        },
+        {
+            "title": "依赖树递归神经网络",
+            "en": "Dependency Tree Recursive Neural Network"
+        },
+        {
+            "title": "细粒度多模态模型",
+            "en": "Fine-grained Multimodal Model"
+        },
+        {
+            "title": "对数双线性模型",
+            "en": "Log-bilinear Model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "图文检索",
+            "target": "困惑度",
+            "type": "包含"
+        },
+        {
+            "source": "图文检索",
+            "target": "多模态模型",
+            "type": "包含"
+        },
+        {
+            "source": "多模态模型",
+            "target": "依赖树递归神经网络",
+            "type": "包含"
+        },
+        {
+            "source": "多模态模型",
+            "target": "细粒度多模态模型",
+            "type": "包含"
+        },
+        {
+            "source": "细粒度多模态模型",
+            "target": "对数双线性模型",
+            "type": "包含"
+        },
+        {
+            "source": "图文检索",
+            "target": "Flickr8k",
+            "type": "数据集"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "图片描述",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "标签",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "标题",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "用户评论",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "人工生成",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "信息检索",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "训练集",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "验证集",
+            "type": "包含"
+        },
+        {
+            "source": "Flickr8k",
+            "target": "测试集",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多模态深度玻尔兹曼模型", "en": "Multimodal Deep Boltzmann Machine"},
+        {"title": "MIRFlickr数据集", "en": "MIRFlickr dataset"},
+        {"title": "高斯RBM模型", "en": "Gaussian Restricted Boltzmann Machine model"},
+        {"title": "PCD算法", "en": "Persistent Contrastive Divergence algorithm"},
+        {"title": "Flickr8k数据集", "en": "Flickr8k dataset"},
+        {"title": "依赖树递归神经网络", "en": "Dependency Tree Recursive Neural Network"},
+        {"title": "SelectiveSearch", "en": "SelectiveSearch"},
+        {"title": "EdgeBoxes", "en": "EdgeBoxes"},
+        {"title": "R-CNN模型", "en": "R-CNN model"},
+        {"title": "VGG-16的CNN网络", "en": "VGG-16's CNN network"},
+        {"title": "word2vec词向量", "en": "word2vec word vector"}
+    ],
+    "relations": [
+        {"source": "多模态深度玻尔兹曼模型", "target": "MIRFlickr数据集", "type": "使用"},
+        {"source": "MIRFlickr数据集", "target": "Flickr8k数据集", "type": "结合"},
+        {"source": "高斯RBM模型", "target": "PCD算法", "type": "使用"},
+        {"source": "Flickr8k数据集", "target": "多模态深度玻尔兹曼模型", "type": "微调"},
+        {"source": "依赖树递归神经网络", "target": "斯坦福大学的语言分析器", "type": "使用"},
+        {"source": "依赖树递归神经网络", "target": "word2vec词向量", "type": "使用"},
+        {"source": "SelectiveSearch", "target": "R-CNN模型", "type": "提取"},
+        {"source": "EdgeBoxes", "target": "R-CNN模型", "type": "提取"},
+        {"source": "R-CNN模型", "target": "VGG-16的CNN网络", "type": "使用"},
+        {"source": "VGG-16的CNN网络", "target": "多模态深度玻尔兹曼模型", "type": "微调"},
+        {"source": "word2vec词向量", "target": "依赖树递归神经网络", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "△的增大可以提高模型整体性能", "en": "Increasing △ can improve the overall performance of the model"},
+        {"title": "自然语言多模态模型中使用word2vec的词向量初始化", "en": "Word2vec is used to initialize word vectors in natural language multimodal models"},
+        {"title": "使用SelectiveSearch和R-CNN的细粒度模型有最好的结果", "en": "The fine-grained model using SelectiveSearch and R-CNN has the best results"},
+        {"title": "评价标准包括排列中值和R@N", "en": "Evaluation criteria include median rank and R@N"}
+    ],
+    "relations": [
+        {"source": "△的增大可以提高模型整体性能", "target": "式(4-6)", "type": "defines"},
+        {"source": "自然语言多模态模型中使用word2vec的词向量初始化", "target": "上下文参数矩阵", "type": "uses"},
+        {"source": "自然语言多模态模型中使用word2vec的词向量初始化", "target": "单词特征", "type": "uses"},
+        {"source": "使用SelectiveSearch和R-CNN的细粒度模型有最好的结果", "target": "EdgeBoxes", "type": "uses"},
+        {"source": "使用SelectiveSearch和R-CNN的细粒度模型有最好的结果", "target": "R-CNN", "type": "uses"},
+        {"source": "评价标准包括排列中值和R@N", "target": "Medr", "type": "defines"},
+        {"source": "评价标准包括排列中值和R@N", "target": "R@N", "type": "defines"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VGG-16和R-CNN的CNN网络在提取图片特征时的效果", "en": "Effectiveness of VGG-16 and R-CNN CNN networks in extracting image features"},
+        {"title": "对VGG-16的全连通层进行微调可以提高检索精度", "en": "Fine-tuning the fully connected layers of VGG-16 can improve retrieval accuracy"},
+        {"title": "对conv3-l以上的网络进行微调可以得到更好的效果", "en": "Fine-tuning networks above conv3-l can achieve better results"},
+        {"title": "DeepFragment利用单词在依赖树的关系形成词组，寻找与物体之间的关系", "en": "DeepFragment uses word dependencies in a tree structure to form phrases and find relationships with objects"},
+        {"title": "双向循环神经网络优于依赖树的建模", "en": "Bidirectional recurrent neural networks are better than tree-based modeling"},
+        {"title": "多模态深度玻尔兹曼机的效果较差，主要原因在于文本建模上", "en": "The performance of multimodal deep Boltzmann machines is poor, mainly due to text modeling"},
+        {"title": "RBM模型可以利用大量无标记数据进行预训练，还具有提升空间", "en": "RBM models can use a large amount of unlabeled data for pre-training and have room for improvement"},
+        {"title": "依赖树使用单一特征表示句子和图片，在检索结果上比细粒度模型差", "en": "Tree-based modeling uses a single feature to represent sentences and images, and performs worse in retrieval results than fine-grained models"},
+        {"title": "自然语言多模态模型在检索上使用困惑度作为图片与文本之间的匹配评价标准，因此检索速度较慢", "en": "Natural language multimodal models use perplexity as the matching evaluation criterion between images and text in retrieval, so the retrieval speed is slow"},
+        {"title": "细粒度多模态模型除了能够提升图文检索精度外，还建立了视觉特征与文本语义之间的关系", "en": "Fine-grained multimodal models not only improve the accuracy of image-text retrieval, but also establish the relationship between visual features and text semantics"},
+        {"title": "介词没有特定的图片-文本组合，因此也没有学到任何关系", "en": "Prepositions do not have specific image-text combinations, so they do not learn any relationships"},
+        {"title": "本文主要围绕当前跨模态检索中图像-文本的交互检索问题展开", "en": "This article mainly focuses on the interactive retrieval problem of image-text in current cross-modal retrieval"},
+        {"title": "深度模型在各模态下的发展，使得能够更好地获取图像与文本特征", "en": "The development of deep models in various modalities makes it possible to better obtain image and text features"},
+        {"title": "本文研究了如何学习图像特征与文本特征之间的关系，建立多模态模型，并通过实验证明了其在图文检索上的性能和学习视觉特征与文本语义关系上的能力", "en": "This article studies how to learn the relationship between image features and text features, establish multimodal models, and proves its performance in image-text retrieval and the ability to learn the relationship between visual features and text semantics through experiments"}
+    ],
+    "relations": [
+        {"source": "VGG-16和R-CNN的CNN网络在提取图片特征时的效果", "target": "对VGG-16的全连通层进行微调可以提高检索精度", "type": "cause-effect"},
+        {"source": "VGG-16和R-CNN的CNN网络在提取图片特征时的效果", "target": "对conv3-l以上的网络进行微调可以得到更好的效果", "type": "cause-effect"},
+        {"source": "DeepFragment利用单词在依赖树的关系形成词组，寻找与物体之间的关系", "target": "双向循环神经网络优于依赖树的建模", "type": "comparison"},
+        {"source": "多模态深度玻尔兹曼机的效果较差，主要原因在于文本建模上", "target": "RBM模型可以利用大量无标记数据进行预训练，还具有提升空间", "type": "contrast"},
+        {"source": "依赖树使用单一特征表示句子和图片，在检索结果上比细粒度模型差", "target": "自然语言多模态模型在检索上使用困惑度作为图片与文本之间的匹配评价标准，因此检索速度较慢", "type": "contrast"},
+        {"source": "细粒度多模态模型除了能够提升图文检索精度外，还建立了视觉特征与文本语义之间的关系", "target": "介词没有特定的图片-文本组合，因此也没有学到任何关系", "type": "contrast"},
+        {"source": "本文主要围绕当前跨模态检索中图像-文本的交互检索问题展开", "target": "深度模型在各模态下的发展，使得能够更好地获取图像与文本特征", "type": "background"},
+        {"source": "本文研究了如何学习图像特征与文本特征之间的关系，建立多模态模型，并通过实验证明了其在图文检索上的性能和学习视觉特征与文本语义关系上的能力", "target": "本文主要围绕当前跨模态检索中图像-文本的交互检索问题展开", "type": "background"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多模态模型", "en": "Multimodal Model"},
+        {"title": "特征转换", "en": "Feature Transformation"},
+        {"title": "深度玻尔兹曼机", "en": "Deep Boltzmann Machine"},
+        {"title": "依赖树递归神经网络", "en": "Recursive Neural Network with Dependency Tree"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "物体识别算法", "en": "Object Recognition Algorithm"},
+        {"title": "双向循环神经网络", "en": "Bidirectional Recurrent Neural Network"},
+        {"title": "细粒度多模态模型", "en": "Fine-grained Multimodal Model"},
+        {"title": "Faster R-CNN", "en": "Faster R-CNN"}
+    ],
+    "relations": [
+        {"source": "多模态模型", "target": "特征转换", "type": "包含"},
+        {"source": "特征转换", "target": "深度玻尔兹曼机", "type": "应用"},
+        {"source": "依赖树递归神经网络", "target": "句子结构信息", "type": "建模"},
+        {"source": "卷积神经网络", "target": "单词结构", "type": "学习"},
+        {"source": "细粒度多模态模型", "target": "物体识别算法", "type": "整合"},
+        {"source": "细粒度多模态模型", "target": "双向循环神经网络", "type": "应用"},
+        {"source": "细粒度多模态模型", "target": "Faster R-CNN", "type": "整合"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "Topic modeling beyond bag-of-words", "en": ""},
+        {"title": "Long short-term memory", "en": ""},
+        {"title": "Greedy layer-wise training of deep networks", "en": ""},
+        {"title": "Very deep convolutional networks for large-scale image recognition", "en": ""},
+        {"title": "Fast and accurate dependency parser using neural networks", "en": ""},
+        {"title": "Efficient estimation of word representations in vector space", "en": ""},
+        {"title": "Devise: A deep visual-semantic embedding model", "en": ""},
+        {"title": "Deep fragment embeddings for bidirectional image-sentence mapping", "en": ""},
+        {"title": "Principal component analysis", "en": ""},
+        {"title": "Recurrent neural network based language model", "en": ""},
+        {"title": "Multimodal deep learning", "en": ""},
+        {"title": "Content-based image retrieval at the end of the early years", "en": ""},
+        {"title": "Pictorial database systems", "en": ""},
+        {"title": "基于内容图像检索中的\"语义鸿沟\"问题", "en": "The problem of \"semantic gap\" in content-based image retrieval"},
+        {"title": "Challenges in designing digital interfaces for the study of multimodal phenomena", "en": ""},
+        {"title": "A novel cross-media layered semantic mining model", "en": ""},
+        {"title": "Context-dependent pre-trained deep neural networks for large-vocabulary speech recognition", "en": ""}
+    ],
+    "relations": [
+        {"source": "Topic modeling beyond bag-of-words", "target": "Efficient estimation of word representations in vector space", "type": "related"},
+        {"source": "Long short-term memory", "target": "Recurrent neural network based language model", "type": "related"},
+        {"source": "Greedy layer-wise training of deep networks", "target": "Very deep convolutional networks for large-scale image recognition", "type": "related"},
+        {"source": "Devise: A deep visual-semantic embedding model", "target": "Content-based image retrieval at the end of the early years", "type": "related"},
+        {"source": "Deep fragment embeddings for bidirectional image-sentence mapping", "target": "Devise: A deep visual-semantic embedding model", "type": "related"},
+        {"source": "Multimodal deep learning", "target": "Challenges in designing digital interfaces for the study of multimodal phenomena", "type": "related"},
+        {"source": "A novel cross-media layered semantic mining model", "target": "Multimodal deep learning", "type": "related"},
+        {"source": "Context-dependent pre-trained deep neural networks for large-vocabulary speech recognition", "target": "Long short-term memory", "type": "related"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}

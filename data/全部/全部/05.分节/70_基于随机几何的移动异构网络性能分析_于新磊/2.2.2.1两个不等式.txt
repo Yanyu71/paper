@@ -1,0 +1,20 @@
+2.2.2.1两个不等式
+首先引入Gamma分布定义，Gamma^.Q)表示具有形状参数k和尺度参 数(Scale parameter) 0的Gamma分布［⑵］。若随机变量X服从Gamma分布，即 X~Gamma(k,e),则 X 的概率密度函数(Probability density function, PDF)为
+1«一%/e
+#p因，x>o, k,e >0,
+(2-26)
+其中F1(左)是完全Gamma函数(Complete gamma function),对于正整数左eZ+,有 r(k) = ("l)!0 X 的 CDF 为
+及(苍女,6)=华却，x>0, k,&>0,	(2-27)
+其中 y(a, b) = Jq ta~le~ldt 是下不完全 Gamma 函数(Lower incomplete gamma function )o	'
+引理2.1 ( Rayleigh分布随机变量加权和的平方的CDF下界WU )如果X” i= 1,…/ 是尺度参数为o的独立同分布Rayleigh随机变量，那么所有笈加权和的平方 (£屋叫入)2的CDF下界是
+《£同工)前茅更
+(2-28)
+其中叫 e 肢+, £葭 X? ~ Gamma(n, 2b2), s = £隔 w?。
+如果随机变量X服从Gamma8 1)分布，X的CDF Fx(x-,n, 1)由归一化下不完全 Gamma函数给出，即
+与住?1)=等?全厂(产-。-//(5—l)!))dr, nGZ+. (2-29)
+1 \n) Jo
+引理2.2给出了的上下界。
+39
+引理2.2 ( Alzer不等式“221 )如果随机变量X服从Gamma分布Gamma(% 1),“e Z+, X的CDF&(x;%1)的上下界为
+(1 _ e-例)” W a(x;% 1) W (1 — e-x-	(2-30)
+其中。金(加厂1/%当且仅当九=1,公式(2-30)等号成立，即X是单位均值的指数 分布随机变量。

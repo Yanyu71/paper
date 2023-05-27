@@ -1,0 +1,13 @@
+4.3.6Reed.muller译码功能设计
+实现函数为
+void Pucch DeReedMuller （
+char *pDataIn,
+STRU PUCCH REEDMULLER PARA * pPucchReedMullerPara unsigned char *pDataOut,
+）°
+ReedMuller译码只作用于PUCCH格式2/2a/2b中的CSI。具体实现过程为：
+1）	将输入的软比特变为双极性数据，将20bit数据后添12bit的0,变为32bit；
+2）	消除掩码影响：7个掩码序列可以产生128个掩码矢量（存于masktable中）， 这些掩码矢量分别与接收码字相乘后即可消掩；
+3）	利用交织表对数据进行交织，交织表为interleaver[32]；
+4）	将交织后的数据128*32进行快速哈达玛变换（FHT）,找出输出数据128*32的 绝对值最大的数（数值，数所在的行号、列号）；
+5）	对处理后的数据进行译码：译码的第0位，正号译为0,负号译为1；译码1〜5 位为列号；译码6〜12位为行号。
+55

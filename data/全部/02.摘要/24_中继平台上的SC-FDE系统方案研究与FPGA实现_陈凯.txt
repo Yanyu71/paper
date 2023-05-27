@@ -1,0 +1,16 @@
+摘要
+随着通信系统传输速率的提高，信道的多径效应对信号的影响越来越 大。本文着重研究近年来逐渐兴起的能够抵抗多径效应的SC-FDE系统。 本文首先研究无线多径信道的特性，发现在无线信道中存在多径效应，在 其中传输信号会受到码间干扰的影响。为了克服多径效应，本文对均衡技 术进行了研究，着重对时域均衡和频域均衡进行了对比分析。通过研究发 现，时频域的均衡器在系数确定方法和均衡器结构设计方面大致相同。但 是对于高速通信系统，时域均衡器算法为指数级复杂度，不利于实现；频 域均衡器算法为线性对数级复杂度，在数字系统中容易实现。
+由于SC-FDE系统对定时频偏比较敏感，本文设计了适用于SC-FDE 系统的同步方法。本文通过对经典同步算法的研究发现Park算法比SC与 Minn算法性能更好，同步准确率更高，同时采用CAZAC序列作为Park算 法的训练序列能够改善系统的同步性能，消除原始Park算法的虚假峰值。 为了对SC-FDE系统中的频域处理资源进行复用，本文研究了频域同步方 案，发现当在某一个数据块内包含所有的同步信息时，就能够使用频域同 步。针对这一发现，木文提岀了新型的频域同步方案。该方案以频域处理 为基础，利用同步峰值在数据块内的位置信息，推导出同步码字的起始位 置。新方案与原始频域同步方案相比同步头设计简单，同步性能更好，并 且还可以复用SC-FDE系统资源，非常适合作为SC-FDE系统的同步方案。
+最后，本文结合课题硬件平台，将SC-FDE整体系统分为同步子系统 与FDE子系统，两个子系统分别完成后，进行联合设计得到整体系统。整 体系统采用改进的频域同步方式，使用线性频域均衡，复用了 FFT资源， 在保证性能的前提下，节约了 FPGA资源。
+关键词：SC-FDE 频域均衡同步FPGA
+THE RESEARCH ANDIMPLEMENT OF
+SC-FDE SYSTEM ON RELAY PLATFORM
+BASED ON FPGA
+ABSTRACT
+As data transfer rate goes higher and higher, the influence of multipath is more and more big. To overcome the multipath effect, communication systems have to use OFDM, TDE or FDE. In high speed systems TDE is hard to implement, meanwhile OFDM also has some disadvantages that make it inappropriate to use in some environment such as mobile phones. So SC-FDE attracts researchers' eyes.
+Firstly, this paper analyzes the multipath channel, and simulate the tap coefficient model of the delay line and its influence to the signal. And introduces the knowledge of equalization, as it's hard to implement equalization in time zone, so leads equalization to frequency zone.
+Secondly, this paper derives the theory of FDE and introduce an improvedesign of FDE system. Meanwhile make a comparison of the complexity of TDE and FDE systems. TDE system often has the complexity of the square, and the FDE often has the linear logarithmic complexity. So in high speed communication system, choose FDE is a smart choice. But to achieve the good performance, FDE must get the accurate frame timing.
+Thirdly; this paper focus on timing technology. Timing have many aspects, this paper just researches the bit timing and frame timing. Though researching the classic algorithms, find out that oversampling can help make the bit timing and frame timing one system. Classic algorithms are almost time zone method, but in FDE system, frequency zone method must be more resource save. So this paper research the frequency zone timing method and propose a new timing method that use the information of peak position to find the start of the frame.
+At last, this paper introduce the implement of the joint system of SC-FDE and timing. This two subsystems will share the FFT/IFFT modules, this will save a lot resource of FPGA, because in frequency zone most operation are multiplication.
+KEY WORDS: SC-FDE, frequency zone, equalization, timing,FPGA
+v

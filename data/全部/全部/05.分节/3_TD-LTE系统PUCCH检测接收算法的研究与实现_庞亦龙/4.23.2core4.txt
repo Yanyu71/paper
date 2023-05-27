@@ -1,0 +1,17 @@
+4.23.2core4
+core4在处理完PUCCH的消息之后，将解码的物理上行控制信息发送给coreO,然 后由coreO发送给高层。具体的接口如表4-5所示：
+表4-5 core4反馈给coreO的消息结构体
+接口结构体	类型	描述
+O PHYMAC PUCCI! UCI IND	struct
+-> AirFrameNum	unsigned int	空口无线帧号
+-> SubFrameNum	　unsigned char	无线子帧号取值范围0~9
+-> NumOtUe	unsigned char	ue个数
+-> Cellld	unsigned short	小区ID
+-> STRU_UL_UCI_1ND [MAX_USER_NUM|	struct	每个UE上报的UCI信息
+->UeMId	unsigned short	ue唯一标识
+—>UciType	　unsigned char	0-5 对应格式 l/la/lb/2/2a/2b
+->SR	unsigned char	SR调度请求
+—>CS I Length	unsigned char	CSI有效R度
+->CSI[13]	　unsigned char	0〜13
+->HARQ[2]	unsigned char	Ofor NACK.l fbrACK
+45

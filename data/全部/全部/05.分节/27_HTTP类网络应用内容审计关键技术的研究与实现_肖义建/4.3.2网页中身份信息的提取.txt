@@ -1,0 +1,54 @@
+4.3.2网页中身份信息的提取
+如果要对网络页面也就是HTML文档进行元素提取，就要先理解 DOM（Document Object Model,文档对象模型）。DOM 是用于 HTML、XHTML 以及XML文档中对象展示和交互的，跨平台且独立于具体编程语言的编程规范 [23]
+0
+<head>
+<title>DOM Example</title> </head>
+<body>
+<hl>Example Body</hl>
+<p>Hellc world1</p>
+</body>
+图4-4 HTML示例文档代码
+图4-4的HTML代码段可以解析为以下的DOM结构:
+图4-5 HTML示例文档DOM结构图
+上图DOM结构图可以看到，除文档(document)节点外的每个节点都有自己 的父节点。例如，＜head＞节点和＜body＞节点的父节点是＜html＞ ,文本节点 “Hello world!w的父节点是＜p＞节点，DOM中共有12种类型的节点。大部 分元素节点都有子节点，＜head＞节点拥有一个子节点＜title＞。同时，＜title＞节 点也有一个子节点，文本节点“DOM Example”。当多个节点拥有一个共同的父 节点时，它们就是同级节点。图中，节点＜hl＞和＜p＞即同级节点，它们的共同 父节点是＜body＞o
+在选择的编程库方面，Jsoup是一款使用Java语言编写的HTML文档解 析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力 的APL可通过DOM, CSS以及类似于jQuery的操作方法来取出和操作数据 [24]
+O
+Jsoup的主要功能如下：
+1.从一个URL,文件或字符串中解析HTML；
+2.使用DOM或CSS选择器来查找、取出数据；
+3.对HTML文档的元素、属性、文本等进行操作。
+另外，Jsoup还具有其他几点非常优秀的特性。首先，Jsoup编程语言库是基 于开源MIT协议发布的，因此可以将Jsoup应用于商业应用的项目，这即拓展了 Jsoup的适用领域，反过来也促进了 Jsoup的发展。Jsoup可以以本地文件的方 式加载HTML文档，同时，提供了一个使用URL获取网络页面的静态方法，但 是该方法仅对网站中的静态页面有效，对动态加载的页面无效。
+其次，Jsoup提供静态的解析HTML的方法，该方法根据WHATWG HTML5 规范，能够最大程度上从原始的HTML文档中解析出结果，无论HTML文档的 语言是否完整。Jsoup可以处理包括未关闭的标签，隐式标签等不规范的情形。 另外，Jsoup还可以解HTML片断，例如，在论坛等可以接受用户使用HTML 发帖、提交评论的网站中，可以使用Jsoup对提交的HTML代码片段进行解析， 从而最大程度的解析出其中的内容。同时，Jsoup还利用白名单策略，过滤HTML 代码段中的恶意代码。另一方面，Jsoup还支持在解析HTML文档时对文档中的 元素进行修改、删除等操作，为元素提取过程中对HTML文档修改提供了方便。
+Jsoup在解析、提取HTML文档中的元素时提供了两种方式，一种是传统的 DOM方式，Jsoup按照DOM对HTML文档进行解析，然后，采用遍历方式， 查找、提取需要的文档元素。第二种便是非常独特也是，最常用到的选择器的方 式，在这种方式下，Jsoup可以像CSS或jQuery那样以多种类型的方式选择和提 取文档元素，这是Jsoup与传统HTML解析库相比的独特之处，为HTML文档 信息元素提取提供了灵活，方便的方式。
+<!-- saved from url=(0049)http://weibo.com/u/3832e32124/home?topnav?l&wvr=5 -->
+? <head>-.</head>
+▼ <body class="FRAf-1E_main 8_indexM>
+<div styles," posit ion: absolute; top: -9999px; left: -9999px; "></div>
+▼〈div class*,,WB_ainiblog" >
+▼ <div class=,,WB_miniblog_fb" >
+▼ <div id="plc top">
+〈…简易唤奇导航拚页面用
+▼〈div class="l、B_global_nav WB_global_nav_alpha - node-type="top_all">
+▼ <div class="gn_header clearfix">
+<!-- logo -->
+?<div class="gn_logo', node-type="logo" data-logotype="logo" data-logourl= "http://weioo.com? topnav?l&mod=logo">_</div >
+<!-- logo -->
+<! ??捜索
+?<div class=,'gn_search">-</div>
+<!-搜索 ->
+▼ <div class="gn_position">
+▼ <div class?"gn_nav,,>
+▼ <ul class=',gn_nav_lisf>
+? <li>_</li>
+▼ <a aot="pos55b9e0848171G" bpfilter=,'page_frame" href="/3832032124/profile?topnav=l&wvr?6 class="gn_name" suda-uatrack="key?topnav_tat>&value=profile',>
+<em dass="W_ficon _fic_on_user S_ficon" >H</eno
+<em class="S_txt 1"修龜—MH em>
+</a>
+</li>
+</ul>
+</div>
+图4-6 包含身份信息的HTML代码段
+对如图4-6这样，包含身份信息的网络进行分析时，就应首先对HTML文
+档的D0M结构进行分析，从图中可以发现待提取的信息元素位于一个属性为”
+32
+gn_nav"的分块中，该分块在DOM结构中还从属于多个分块。由于每个分块的 属性都不相同，进行元素解析时，解析库会按照DOM结构逐级解析，所以，进 行元素选择时，只需要指定可以区分元素所在节点的层级就可以，再利用选择器 方式来对身份信息进行提取即可。因此，示例代码的身份信息提取选择器的设置 为 select ("div.gn_nav > ul.gn_nav_list > li:eq(3) > a > em.S_txtl" ) 0 这样可以极大 降低代码复杂度，其它的目标提取元素也可以按照类似的方式进行。

@@ -1,0 +1,8 @@
+5.5.1同步监测线程同步搜索模块
+同步监测线程中的同步搜索模块相对于通信接收线程中的同步搜索模块，加
+入了UE 上行同步搜索。同步监测线程中的同步搜索模块的架构如下图：
+48
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net
+图5-9 同步监测线程中同步搜索模块架构
+其原理与之前介绍的通信接收线程中的同步搜索模块相同，只是新增一个上
+行UE 同步搜索和相应的同步结果Buffer, 在此不再赘述。

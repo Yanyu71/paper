@@ -1,0 +1,885 @@
+﻿{
+    "knowledge_points": [
+        {"title": "绿色通信", "en": "Green Communication"},
+        {"title": "功放非线性失真", "en": "Nonlinear Distortion of Power Amplifier"},
+        {"title": "极化调制技术", "en": "Polarization Modulation Technology"},
+        {"title": "去极化效应", "en": "Depolarization Effect"},
+        {"title": "极化相关衰减", "en": "Polarization Dependent Loss"},
+        {"title": "极化模式色散", "en": "Polarization Mode Dispersion"},
+        {"title": "交叉极化鉴别度", "en": "Cross Polarization Discrimination"},
+        {"title": "极化分集", "en": "Polarization Diversity"},
+        {"title": "极分多址技术", "en": "Polarization Division Multiple Access"}
+    ],
+    "relations": [
+        {"source": "绿色通信", "target": "功放非线性失真", "type": "解决问题"},
+        {"source": "功放非线性失真", "target": "极化调制技术", "type": "影响"},
+        {"source": "极化调制技术", "target": "去极化效应", "type": "影响"},
+        {"source": "去极化效应", "target": "极化相关衰减", "type": "包含"},
+        {"source": "去极化效应", "target": "极化模式色散", "type": "包含"},
+        {"source": "去极化效应", "target": "交叉极化鉴别度", "type": "包含"},
+        {"source": "极化分集", "target": "极化调制技术", "type": "应用"},
+        {"source": "极分多址技术", "target": "极化调制技术", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "极化调制", "en": "Polarization Modulation"},
+        {"title": "去极化效应XPD", "en": "Cross-Polarization Discrimination (XPD)"},
+        {"title": "极化信号处理", "en": "Polarization Signal Processing"},
+        {"title": "功放能效", "en": "Power Amplifier Efficiency"},
+        {"title": "信道估计", "en": "Channel Estimation"},
+        {"title": "误码率", "en": "Bit Error Rate (BER)"},
+        {"title": "导频", "en": "Pilot Signal"}
+    ],
+    "relations": [
+        {"source": "极化调制", "target": "去极化效应XPD", "type": "包含"},
+        {"source": "极化调制", "target": "极化信号处理", "type": "相关"},
+        {"source": "去极化效应XPD", "target": "极化信号处理", "type": "影响"},
+        {"source": "功放能效", "target": "极化调制", "type": "应用"},
+        {"source": "信道估计", "target": "去极化效应XPD", "type": "影响"},
+        {"source": "误码率", "target": "极化调制", "type": "评估"},
+        {"source": "导频", "target": "信道估计", "type": "应用"},
+        {"source": "去极化效应XPD", "target": "XPD补偿算法", "type": "研究对象"},
+        {"source": "XPD补偿算法", "target": "极化调制", "type": "提升性能"},
+        {"source": "XPD补偿算法", "target": "信道估计", "type": "研究对象"},
+        {"source": "XPD补偿算法", "target": "误码率", "type": "评估"},
+        {"source": "XPD补偿算法", "target": "功放能效", "type": "提升性能"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "极化调制", "en": "Polarization Modulation"},
+        {"title": "去极化效应", "en": "Depolarization Effect"},
+        {"title": "信道估计误差", "en": "Channel Estimation Error"},
+        {"title": "XPD补偿算法", "en": "XPD Compensation Algorithm"},
+        {"title": "Jones矢量", "en": "Jones Vector"},
+        {"title": "Stokes矢量", "en": "Stokes Vector"}
+    ],
+    "relations": [
+        {"source": "极化调制", "target": "去极化效应", "type": "包含"},
+        {"source": "极化调制", "target": "频谱效率", "type": "提升"},
+        {"source": "极化调制", "target": "功放能量效率", "type": "提升"},
+        {"source": "去极化效应", "target": "PDL", "type": "包含"},
+        {"source": "去极化效应", "target": "PMD", "type": "包含"},
+        {"source": "去极化效应", "target": "XPD", "type": "包含"},
+        {"source": "XPD补偿算法", "target": "信道估计误差", "type": "存在影响"},
+        {"source": "XPD补偿算法", "target": "极化调制", "type": "补偿"},
+        {"source": "Jones矢量", "target": "极化调制信号", "type": "描述"},
+        {"source": "Stokes矢量", "target": "极化调制信号", "type": "描述"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "极化调制",
+            "en": "Polarization Modulation"
+        },
+        {
+            "title": "极化状态",
+            "en": "Polarization State"
+        },
+        {
+            "title": "Jones矢量表示方式",
+            "en": "Jones Vector Representation"
+        },
+        {
+            "title": "Stokes矢量表示方式",
+            "en": "Stokes Vector Representation"
+        },
+        {
+            "title": "极化分集",
+            "en": "Polarization Diversity"
+        },
+        {
+            "title": "极分多址技术",
+            "en": "Polarization Division Multiple Access Technology"
+        },
+        {
+            "title": "PDL",
+            "en": "Polarization Dependent Loss"
+        },
+        {
+            "title": "PMD",
+            "en": "Polarization Mode Dispersion"
+        },
+        {
+            "title": "XPD",
+            "en": "Cross-Polarization Discrimination"
+        }
+    ],
+    "relations": [
+        {
+            "source": "极化调制",
+            "target": "极化状态",
+            "type": "包含"
+        },
+        {
+            "source": "极化状态",
+            "target": "Jones矢量表示方式",
+            "type": "描述"
+        },
+        {
+            "source": "极化状态",
+            "target": "Stokes矢量表示方式",
+            "type": "描述"
+        },
+        {
+            "source": "极化调制",
+            "target": "极化分集",
+            "type": "应用"
+        },
+        {
+            "source": "极化调制",
+            "target": "极分多址技术",
+            "type": "应用"
+        },
+        {
+            "source": "极化状态",
+            "target": "PDL",
+            "type": "包含"
+        },
+        {
+            "source": "极化状态",
+            "target": "PMD",
+            "type": "包含"
+        },
+        {
+            "source": "极化状态",
+            "target": "XPD",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Stokes矢量", "en": "Stokes vector"},
+        {"title": "Poincare极化球", "en": "Poincare sphere"},
+        {"title": "极化调制技术", "en": "Polarization modulation technology"},
+        {"title": "任意极化状态发射方案", "en": "Arbitrary polarization state transmission scheme"},
+        {"title": "极化调制原理", "en": "Polarization modulation principle"}
+    ],
+    "relations": [
+        {"source": "Stokes矢量", "target": "Poincare极化球", "type": "包含"},
+        {"source": "Stokes矢量", "target": "极化状态信息", "type": "包含"},
+        {"source": "Stokes矢量", "target": "极化相位描述子", "type": "包含"},
+        {"source": "Poincare极化球", "target": "极化状态信息", "type": "包含"},
+        {"source": "极化调制技术", "target": "偏振调制技术", "type": "同类"},
+        {"source": "极化调制技术", "target": "极化状态", "type": "关联"},
+        {"source": "任意极化状态发射方案", "target": "变极化方案", "type": "同类"},
+        {"source": "任意极化状态发射方案", "target": "虚拟极化", "type": "关联"},
+        {"source": "极化调制原理", "target": "Jones矢量", "type": "包含"},
+        {"source": "极化调制原理", "target": "Stokes矢量", "type": "包含"},
+        {"source": "极化调制原理", "target": "极化状态", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Stokes矢量参数", "en": "Stokes vector parameters"},
+        {"title": "极化调制解调方案", "en": "Polarization modulation and demodulation scheme"},
+        {"title": "Poincare球", "en": "Poincare sphere"},
+        {"title": "极化状态调制解调单元", "en": "Polarization modulation and demodulation unit"},
+        {"title": "偏振状态", "en": "Polarization state"},
+        {"title": "偏振技术", "en": "Polarization technology"},
+        {"title": "偏振移位键控调制", "en": "Polarization shift keying modulation"},
+        {"title": "二进制调制技术", "en": "Binary modulation technology"},
+        {"title": "圆极化调制技术", "en": "Circular polarization modulation technology"},
+        {"title": "连续极化调制技术", "en": "Continuous polarization modulation technology"},
+        {"title": "极化一频率联合调制技术", "en": "Polarization and frequency joint modulation technology"},
+        {"title": "极化-幅度联合调制技术", "en": "Polarization and amplitude joint modulation technology"},
+        {"title": "差分极化调制技术", "en": "Differential polarization modulation technology"},
+        {"title": "Stokes矢量参数提取技术", "en": "Stokes vector parameter extraction technology"},
+        {"title": "相干极化检测", "en": "Coherent polarization detection"},
+        {"title": "非相干极化检测", "en": "Incoherent polarization detection"},
+        {"title": "PAPM技术", "en": "Polarization amplitude and phase modulation technology"}
+    ],
+    "relations": [
+        {"source": "极化调制解调方案", "target": "Stokes矢量参数", "type": "包含"},
+        {"source": "极化调制解调方案", "target": "Poincare球", "type": "包含"},
+        {"source": "极化调制解调方案", "target": "极化状态调制解调单元", "type": "包含"},
+        {"source": "极化调制解调方案", "target": "判决", "type": "包含"},
+        {"source": "极化调制解调方案", "target": "逆映射", "type": "包含"},
+        {"source": "偏振技术", "target": "偏振移位键控调制", "type": "包含"},
+        {"source": "偏振技术", "target": "二进制调制技术", "type": "包含"},
+        {"source": "偏振技术", "target": "圆极化调制技术", "type": "包含"},
+        {"source": "偏振技术", "target": "连续极化调制技术", "type": "包含"},
+        {"source": "偏振技术", "target": "极化一频率联合调制技术", "type": "包含"},
+        {"source": "偏振技术", "target": "极化-幅度联合调制技术", "type": "包含"},
+        {"source": "偏振技术", "target": "差分极化调制技术", "type": "包含"},
+        {"source": "极化状态调制解调单元", "target": "Stokes矢量参数提取技术", "type": "包含"},
+        {"source": "相干极化检测", "target": "极化调制解调方案", "type": "适用于"},
+        {"source": "非相干极化检测", "target": "极化调制解调方案", "type": "适用于"},
+        {"source": "PAPM技术", "target": "极化调制解调方案", "type": "适用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "极化调制",
+            "en": "Polarization Modulation"
+        },
+        {
+            "title": "Jones矢量",
+            "en": "Jones Vector"
+        },
+        {
+            "title": "频谱效率",
+            "en": "Spectral Efficiency"
+        },
+        {
+            "title": "误码率性能",
+            "en": "Error Rate Performance"
+        },
+        {
+            "title": "极化相关衰减PDL",
+            "en": "Polarization Dependent Loss (PDL)"
+        },
+        {
+            "title": "极化模式色散PMD",
+            "en": "Polarization Mode Dispersion (PMD)"
+        },
+        {
+            "title": "交叉极化鉴别度XPD",
+            "en": "Cross-Polarization Discrimination (XPD)"
+        },
+        {
+            "title": "双极化信道",
+            "en": "Dual-Polarization Channel"
+        },
+        {
+            "title": "群智能",
+            "en": "Swarm Intelligence"
+        },
+        {
+            "title": "OFDM",
+            "en": "Orthogonal Frequency Division Multiplexing (OFDM)"
+        },
+        {
+            "title": "极化分集",
+            "en": "Polarization Diversity"
+        },
+        {
+            "title": "极分多址技术",
+            "en": "Polarization Division Multiple Access (PDMA)"
+        }
+    ],
+    "relations": [
+        {
+            "source": "极化调制",
+            "target": "Jones矢量",
+            "type": "包含"
+        },
+        {
+            "source": "极化调制",
+            "target": "频谱效率",
+            "type": "提升"
+        },
+        {
+            "source": "极化调制",
+            "target": "误码率性能",
+            "type": "提升"
+        },
+        {
+            "source": "极化调制",
+            "target": "双极化信道",
+            "type": "应用"
+        },
+        {
+            "source": "双极化信道",
+            "target": "极化相关衰减PDL",
+            "type": "影响"
+        },
+        {
+            "source": "极化相关衰减PDL",
+            "target": "群智能",
+            "type": "应用"
+        },
+        {
+            "source": "双极化信道",
+            "target": "极化模式色散PMD",
+            "type": "影响"
+        },
+        {
+            "source": "极化模式色散PMD",
+            "target": "OFDM",
+            "type": "应用"
+        },
+        {
+            "source": "极化模式色散PMD",
+            "target": "群智能",
+            "type": "应用"
+        },
+        {
+            "source": "双极化信道",
+            "target": "交叉极化鉴别度XPD",
+            "type": "影响"
+        },
+        {
+            "source": "交叉极化鉴别度XPD",
+            "target": "极化分集",
+            "type": "应用"
+        },
+        {
+            "source": "交叉极化鉴别度XPD",
+            "target": "极分多址技术",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "极化调制",
+            "en": "Polarization Modulation"
+        },
+        {
+            "title": "去极化效应",
+            "en": "Depolarization Effect"
+        },
+        {
+            "title": "PDL",
+            "en": "Polarization Dependent Loss"
+        },
+        {
+            "title": "PMD",
+            "en": "Polarization Mode Dispersion"
+        },
+        {
+            "title": "XPD",
+            "en": "Cross-Polarization Discrimination"
+        },
+        {
+            "title": "信道估计",
+            "en": "Channel Estimation"
+        },
+        {
+            "title": "极化状态",
+            "en": "Polarization State"
+        },
+        {
+            "title": "极化解调",
+            "en": "Polarization Demodulation"
+        },
+        {
+            "title": "极化分集增益",
+            "en": "Polarization Diversity Gain"
+        },
+        {
+            "title": "极化滤波",
+            "en": "Polarization Filtering"
+        },
+        {
+            "title": "误码率性能",
+            "en": "Error Rate Performance"
+        }
+    ],
+    "relations": [
+        {
+            "source": "极化调制",
+            "target": "极化状态",
+            "type": "包含"
+        },
+        {
+            "source": "极化调制",
+            "target": "极化解调",
+            "type": "相反"
+        },
+        {
+            "source": "极化调制",
+            "target": "极化分集增益",
+            "type": "相关"
+        },
+        {
+            "source": "极化调制",
+            "target": "极化滤波",
+            "type": "相关"
+        },
+        {
+            "source": "去极化效应",
+            "target": "PDL",
+            "type": "包含"
+        },
+        {
+            "source": "去极化效应",
+            "target": "PMD",
+            "type": "包含"
+        },
+        {
+            "source": "去极化效应",
+            "target": "XPD",
+            "type": "包含"
+        },
+        {
+            "source": "信道估计",
+            "target": "极化调制",
+            "type": "应用"
+        },
+        {
+            "source": "误码率性能",
+            "target": "极化调制",
+            "type": "评估"
+        },
+        {
+            "source": "XPD",
+            "target": "极化调制",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "信道矩阵",
+            "en": "Channel Matrix"
+        },
+        {
+            "title": "双极化信道",
+            "en": "Dual-polarized Channel"
+        },
+        {
+            "title": "去极化效应",
+            "en": "Depolarization Effect"
+        },
+        {
+            "title": "Stokes矢量参数",
+            "en": "Stokes Vector Parameters"
+        },
+        {
+            "title": "极化调制",
+            "en": "Polarization Modulation"
+        },
+        {
+            "title": "误码率性能",
+            "en": "Error Rate Performance"
+        },
+        {
+            "title": "信道估计",
+            "en": "Channel Estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "信道矩阵",
+            "target": "双极化信道",
+            "type": "描述"
+        },
+        {
+            "source": "双极化信道",
+            "target": "去极化效应",
+            "type": "影响"
+        },
+        {
+            "source": "Stokes矢量参数",
+            "target": "极化调制",
+            "type": "描述"
+        },
+        {
+            "source": "去极化效应",
+            "target": "极化调制",
+            "type": "影响"
+        },
+        {
+            "source": "误码率性能",
+            "target": "极化调制",
+            "type": "评估"
+        },
+        {
+            "source": "信道估计",
+            "target": "XPD补偿算法",
+            "type": "基础"
+        }
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "极化状态",
+      "en": "Polarization state"
+    },
+    {
+      "title": "去极化效应",
+      "en": "Depolarization effect"
+    },
+    {
+      "title": "补偿算法",
+      "en": "Compensation algorithm"
+    },
+    {
+      "title": "信道估计",
+      "en": "Channel estimation"
+    },
+    {
+      "title": "误码率",
+      "en": "Error rate"
+    },
+    {
+      "title": "功放能效",
+      "en": "Power amplifier efficiency"
+    }
+  ],
+  "relations": [
+    {
+      "source": "极化状态",
+      "target": "去极化效应",
+      "type": "包含"
+    },
+    {
+      "source": "去极化效应",
+      "target": "补偿算法",
+      "type": "影响"
+    },
+    {
+      "source": "信道估计",
+      "target": "补偿算法",
+      "type": "依赖"
+    },
+    {
+      "source": "误码率",
+      "target": "补偿算法",
+      "type": "评估"
+    },
+    {
+      "source": "功放能效",
+      "target": "补偿算法",
+      "type": "优化"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "去极化效应XPD对极化调制信号的影响", "en": "Impact of depolarization effect XPD on polarization modulation signals"},
+        {"title": "基于理想信道估计的XPD补偿算法", "en": "XPD compensation algorithm based on ideal channel estimation"},
+        {"title": "存在信道估计误差时的XPD补偿算法", "en": "XPD compensation algorithm in the presence of channel estimation errors"}
+    ],
+    "relations": [
+        {"source": "去极化效应XPD对极化调制信号的影响", "target": "极化调制系统模型", "type": "包含"},
+        {"source": "极化调制系统模型", "target": "XPD补偿算法系统模型", "type": "包含"},
+        {"source": "XPD补偿算法系统模型", "target": "基于理想信道估计的XPD补偿算法", "type": "包含"},
+        {"source": "基于理想信道估计的XPD补偿算法", "target": "极化调制误码率性能", "type": "影响"},
+        {"source": "基于理想信道估计的XPD补偿算法", "target": "功放能效", "type": "影响"},
+        {"source": "存在信道估计误差时的XPD补偿算法", "target": "信道估计误差影响下的极化调制信号以及信道模型", "type": "包含"},
+        {"source": "信道估计误差影响下的极化调制信号以及信道模型", "target": "XPD补偿算法系统模型", "type": "包含"},
+        {"source": "存在信道估计误差时的XPD补偿算法", "target": "极化调制误码率性能", "type": "影响"},
+        {"source": "存在信道估计误差时的XPD补偿算法", "target": "功放能效", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "XPD补偿算法",
+            "en": "XPD compensation algorithm"
+        },
+        {
+            "title": "极化调制",
+            "en": "Polarization modulation"
+        },
+        {
+            "title": "信道估计误差",
+            "en": "Channel estimation error"
+        },
+        {
+            "title": "Jones矢量",
+            "en": "Jones vector"
+        },
+        {
+            "title": "双极化信道",
+            "en": "Dual-polarization channel"
+        },
+        {
+            "title": "高斯白噪声",
+            "en": "Gaussian white noise"
+        },
+        {
+            "title": "功放能效",
+            "en": "Power amplifier efficiency"
+        }
+    ],
+    "relations": [
+        {
+            "source": "XPD补偿算法",
+            "target": "极化调制",
+            "type": "应用"
+        },
+        {
+            "source": "信道估计误差",
+            "target": "XPD补偿算法",
+            "type": "影响"
+        },
+        {
+            "source": "Jones矢量",
+            "target": "双极化信道",
+            "type": "描述"
+        },
+        {
+            "source": "高斯白噪声",
+            "target": "双极化信道",
+            "type": "影响"
+        },
+        {
+            "source": "功放能效",
+            "target": "XPD补偿算法",
+            "type": "优化"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "XPD效应", "en": "XPD effect"},
+        {"title": "极化调制信号", "en": "Polarization modulation signal"},
+        {"title": "功放能效", "en": "Power amplifier efficiency"},
+        {"title": "信道估计误差", "en": "Channel estimation error"},
+        {"title": "补偿算法", "en": "Compensation algorithm"},
+        {"title": "信道状态信息", "en": "Channel state information"},
+        {"title": "导频", "en": "Pilot signal"},
+        {"title": "伪逆矩阵", "en": "Pseudo-inverse matrix"},
+        {"title": "信噪比", "en": "Signal-to-noise ratio"},
+        {"title": "AWGN信道", "en": "Additive white Gaussian noise channel"}
+    ],
+    "relations": [
+        {"source": "XPD效应", "target": "极化调制信号", "type": "affects"},
+        {"source": "XPD效应", "target": "功放能效", "type": "affects"},
+        {"source": "补偿算法", "target": "信道估计误差", "type": "considers"},
+        {"source": "信道状态信息", "target": "导频", "type": "uses"},
+        {"source": "伪逆矩阵", "target": "信道状态信息", "type": "uses"},
+        {"source": "伪逆矩阵", "target": "补偿算法", "type": "used in"},
+        {"source": "信道估计误差", "target": "补偿算法", "type": "affects"},
+        {"source": "AWGN信道", "target": "极化调制信号", "type": "affects"},
+        {"source": "信噪比", "target": "极化调制信号", "type": "affects"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "极化调制", "en": "Polarization Modulation"},
+        {"title": "去极化效应", "en": "Depolarization Effect"},
+        {"title": "信道估计误差", "en": "Channel Estimation Error"},
+        {"title": "XPD补偿算法", "en": "XPD Compensation Algorithm"},
+        {"title": "功放能效", "en": "Power Amplifier Efficiency"}
+    ],
+    "relations": [
+        {"source": "极化调制", "target": "去极化效应", "type": "影响"},
+        {"source": "去极化效应", "target": "XPD补偿算法", "type": "对抗"},
+        {"source": "信道估计误差", "target": "XPD补偿算法", "type": "影响"},
+        {"source": "XPD补偿算法", "target": "功放能效", "type": "优化"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "极化调制", "en": "Polarization Modulation"},
+        {"title": "去极化效应XPD", "en": "Depolarization Effect XPD"},
+        {"title": "XPD补偿算法", "en": "XPD Compensation Algorithm"},
+        {"title": "信道状态信息估计", "en": "Channel State Information Estimation"},
+        {"title": "理想信道估计的XPD补偿算法", "en": "XPD Compensation Algorithm Based on Ideal Channel Estimation"},
+        {"title": "信道估计误差的XPD补偿算法", "en": "XPD Compensation Algorithm Based on Channel Estimation Error"}
+    ],
+    "relations": [
+        {"source": "极化调制", "target": "去极化效应XPD", "type": "影响"},
+        {"source": "去极化效应XPD", "target": "极化调制", "type": "影响"},
+        {"source": "去极化效应XPD", "target": "XPD补偿算法", "type": "关联"},
+        {"source": "XPD补偿算法", "target": "极化调制", "type": "提升性能"},
+        {"source": "信道状态信息估计", "target": "理想信道估计的XPD补偿算法", "type": "基础"},
+        {"source": "信道状态信息估计", "target": "信道估计误差的XPD补偿算法", "type": "基础"},
+        {"source": "理想信道估计的XPD补偿算法", "target": "XPD补偿算法", "type": "改进"},
+        {"source": "信道估计误差的XPD补偿算法", "target": "XPD补偿算法", "type": "改进"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "加性高斯白噪声", "en": "Additive White Gaussian Noise"},
+        {"title": "星座映射单元", "en": "Constellation Mapping Unit"},
+        {"title": "最小二乘估计", "en": "Least Squares Estimate"},
+        {"title": "多输入多输出", "en": "Multiple-Input Multiple-Output"},
+        {"title": "最大似然估计", "en": "Maximum Likelihood Estimation"},
+        {"title": "最小均方误差估计", "en": "Minimum Mean Squared Error"},
+        {"title": "正交频分复用", "en": "Orthogonal Frequency Division Multiplexing"},
+        {"title": "功率放大器", "en": "Power Amplifier"},
+        {"title": "极化-幅度相位联合调制", "en": "Polarization-Amplitude-Phase Modulation"},
+        {"title": "极化相关衰减", "en": "Polarization Dependent Loss"},
+        {"title": "极分多址接入", "en": "Polarization Division Multiple Access"},
+        {"title": "功分网络单元", "en": "Power Division Unit"},
+        {"title": "极化调制", "en": "Polarization Modulation"},
+        {"title": "极化模式色散", "en": "Polarization Mode Dispersion"},
+        {"title": "极化频移键控", "en": "Polarization Shift Keying"},
+        {"title": "移相网络单元", "en": "Phase Shift Unit"},
+        {"title": "接收信噪比", "en": "Received Signal to Noise Ratio"},
+        {"title": "误码率", "en": "Symbol Error Rate"},
+        {"title": "信噪比", "en": "Signal to Noise Ratio"},
+        {"title": "交叉极化鉴别度", "en": "Cross Polarization Discrimination"},
+        {"title": "迫零", "en": "Zero Forcing"},
+        {"title": "迫零串行干扰消除", "en": "Zero Forcing-Successive Interference Cancellation"}
+    ],
+    "relations": [
+        {"source": "加性高斯白噪声", "target": "功率放大器", "type": "影响"},
+        {"source": "星座映射单元", "target": "正交频分复用", "type": "应用"},
+        {"source": "最小二乘估计", "target": "最大似然估计", "type": "对比"},
+        {"source": "最小二乘估计", "target": "最小均方误差估计", "type": "对比"},
+        {"source": "多输入多输出", "target": "功率放大器", "type": "应用"},
+        {"source": "多输入多输出", "target": "正交频分复用", "type": "应用"},
+        {"source": "最大似然估计", "target": "极化调制", "type": "应用"},
+        {"source": "最大似然估计", "target": "极化频移键控", "type": "应用"},
+        {"source": "最大似然估计", "target": "极化-幅度相位联合调制", "type": "应用"},
+        {"source": "最大似然估计", "target": "迫零", "type": "应用"},
+        {"source": "最大似然估计", "target": "迫零串行干扰消除", "type": "应用"},
+        {"source": "最小均方误差估计", "target": "极化调制", "type": "应用"},
+        {"source": "最小均方误差估计", "target": "极化频移键控", "type": "应用"},
+        {"source": "最小均方误差估计", "target": "极化-幅度相位联合调制", "type": "应用"},
+        {"source": "最小均方误差估计", "target": "迫零", "type": "应用"},
+        {"source": "最小均方误差估计", "target": "迫零串行干扰消除", "type": "应用"},
+        {"source": "功率放大器", "target": "极化调制", "type": "应用"},
+        {"source": "功率放大器", "target": "极化频移键控", "type": "应用"},
+        {"source": "功率放大器", "target": "极化-幅度相位联合调制", "type": "应用"},
+        {"source": "功率放大器", "target": "迫零", "type": "应用"},
+        {"source": "功率放大器", "target": "迫零串行干扰消除", "type": "应用"},
+        {"source": "极化-幅度相位联合调制", "target": "功率放大器", "type": "应用"},
+        {"source": "极化-幅度相位联合调制", "target": "极化调制", "type": "应用"},
+        {"source": "极化-幅度相位联合调制", "target": "极化频移键控", "type": "应用"},
+        {"source": "极化-幅度相位联合调制", "target": "迫零", "type": "应用"},
+        {"source": "极化-幅度相位联合调制", "target": "迫零串行干扰消除", "type": "应用"},
+        {"source": "极化相关衰减", "target": "极化调制", "type": "影响"},
+        {"source": "极分多址接入", "target": "极化调制", "type": "应用"},
+        {"source": "功分网络单元", "target": "功率放大器", "type": "应用"},
+        {"source": "极化调制", "target": "极化模式色散", "type": "影响"},
+        {"source": "极化调制", "target": "极化频移键控", "type": "应用"},
+        {"source": "极化调制", "target": "迫零", "type": "应用"},
+        {"source": "极化调制", "target": "迫零串行干扰消除", "type": "应用"},
+        {"source": "极化频移键控", "target": "极化调制", "type": "应用"},
+        {"source": "移相网络单元", "target": "功率放大器", "type": "应用"},
+        {"source": "接收信噪比", "target": "加性高斯白噪声", "type": "影响"},
+        {"source": "误码率", "target": "极化调制", "type": "影响"},
+        {"source": "信噪比", "target": "加性高斯白噪声", "type": "影响"},
+        {"source": "交叉极化鉴别度", "target": "极化调制", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "后补偿技术", "en": "Post-compensation technique"},
+        {"title": "射频功率放大器", "en": "RF power amplifier"},
+        {"title": "输出功率反馈技术", "en": "Output power feedback technique"},
+        {"title": "失真技术", "en": "Distortion technique"},
+        {"title": "调制技术", "en": "Modulation technique"},
+        {"title": "偏振模色散", "en": "Polarization mode dispersion"}
+    ],
+    "relations": [
+        {"source": "射频功率放大器", "target": "后补偿技术", "type": "包含"},
+        {"source": "射频功率放大器", "target": "输出功率反馈技术", "type": "包含"},
+        {"source": "射频功率放大器", "target": "失真技术", "type": "包含"},
+        {"source": "射频功率放大器", "target": "调制技术", "type": "包含"},
+        {"source": "偏振模色散", "target": "光纤", "type": "发生于"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {
+            "title": "目标估计、检测和跟踪",
+            "en": "Target Estimation, Detection and Tracking"
+        },
+        {
+            "title": "雷达极化信息处理及其应用",
+            "en": "Radar Polarization Information Processing and Its Application"
+        },
+        {
+            "title": "极化转换",
+            "en": "Polarization Conversion"
+        },
+        {
+            "title": "极化编码",
+            "en": "Polarization Coding"
+        },
+        {
+            "title": "极化调制",
+            "en": "Polarization Modulation"
+        },
+        {
+            "title": "极化控制",
+            "en": "Polarization Control"
+        },
+        {
+            "title": "光纤偏振态的高速控制与偏振编码通信",
+            "en": "High-speed Control and Polarization Coding Communication of Fiber Polarization State"
+        },
+        {
+            "title": "相位噪声和极化状态不敏感的光学相干系统",
+            "en": "Phase Noise and Polarization State Insensitive Optical Coherent Systems"
+        }
+    ],
+    "relations": [
+        {
+            "source": "目标估计、检测和跟踪",
+            "target": "雷达极化信息处理及其应用",
+            "type": "应用"
+        },
+        {
+            "source": "雷达极化信息处理及其应用",
+            "target": "极化转换",
+            "type": "基础"
+        },
+        {
+            "source": "极化转换",
+            "target": "极化编码",
+            "type": "基础"
+        },
+        {
+            "source": "极化编码",
+            "target": "极化调制",
+            "type": "基础"
+        },
+        {
+            "source": "极化调制",
+            "target": "极化控制",
+            "type": "基础"
+        },
+        {
+            "source": "光纤偏振态的高速控制与偏振编码通信",
+            "target": "极化控制",
+            "type": "应用"
+        },
+        {
+            "source": "相位噪声和极化状态不敏感的光学相干系统",
+            "target": "极化调制",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Circular Polarization Modulation for Digital Communication Systems", "en": ""},
+        {"title": "Highly Bandwidth Efficient Transmission through Continuous Polarisation Modulation", "en": ""},
+        {"title": "Minimum Polarization Modulation: A Highly Bandwidth Efficient Coherent Optical Modulation Scheme", "en": ""},
+        {"title": "Multilevel Differential Polarization Shift Keying", "en": ""},
+        {"title": "The Analysis of Polarization at Satellite Earth Mobile Station", "en": ""},
+        {"title": "Analysis of Direct Detection and Coherent Detection in Wireless Optical Communication with Polarization Shift Keying", "en": ""},
+        {"title": "Direct Detection of Optical Digital Transmission Based on Polarization Shift Keying Modulation", "en": ""},
+        {"title": "Polarization Division Multiple Access with Polarization Modulation for LOS Wireless Communications", "en": ""},
+        {"title": "An Energy Efficient Polarization Modulation Scheme for Nonlinear Power Amplifier", "en": ""},
+        {"title": "An Optimal Pre-Compensation Based Joint Polarization-Amplitude-Phase Modulation Scheme for the Power Amplifier Energy Efficiency Improvement", "en": ""},
+        {"title": "An Energy Efficient Subcarrier-Power Allocation Scheme for Polarization-Amplitude-Phase Modulation in Channel with Polarization Mode Dispersion", "en": ""}
+    ],
+    "relations": [
+        {"source": "Circular Polarization Modulation for Digital Communication Systems", "target": "Highly Bandwidth Efficient Transmission through Continuous Polarisation Modulation", "type": "related"},
+        {"source": "Circular Polarization Modulation for Digital Communication Systems", "target": "Minimum Polarization Modulation: A Highly Bandwidth Efficient Coherent Optical Modulation Scheme", "type": "related"},
+        {"source": "Circular Polarization Modulation for Digital Communication Systems", "target": "Multilevel Differential Polarization Shift Keying", "type": "related"},
+        {"source": "The Analysis of Polarization at Satellite Earth Mobile Station", "target": "Circular Polarization Modulation for Digital Communication Systems", "type": "related"},
+        {"source": "Analysis of Direct Detection and Coherent Detection in Wireless Optical Communication with Polarization Shift Keying", "target": "Direct Detection of Optical Digital Transmission Based on Polarization Shift Keying Modulation", "type": "related"},
+        {"source": "Polarization Division Multiple Access with Polarization Modulation for LOS Wireless Communications", "target": "Circular Polarization Modulation for Digital Communication Systems", "type": "related"},
+        {"source": "An Energy Efficient Polarization Modulation Scheme for Nonlinear Power Amplifier", "target": "Circular Polarization Modulation for Digital Communication Systems", "type": "related"},
+        {"source": "An Optimal Pre-Compensation Based Joint Polarization-Amplitude-Phase Modulation Scheme for the Power Amplifier Energy Efficiency Improvement", "target": "Circular Polarization Modulation for Digital Communication Systems", "type": "related"},
+        {"source": "An Energy Efficient Subcarrier-Power Allocation Scheme for Polarization-Amplitude-Phase Modulation in Channel with Polarization Mode Dispersion", "target": "Circular Polarization Modulation for Digital Communication Systems", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Continuous Polarization Modulation Scheme", "en": ""},
+        {"title": "Transmit Energy Efficiency for Long Range Wireless Communications", "en": ""},
+        {"title": "Polarization-Induced Distortions in Optical Fiber Networks", "en": ""},
+        {"title": "Adaptive Polarization Transmission of OFDM Signals", "en": ""},
+        {"title": "Statistical Characteristic of Polarization Dependent Loss", "en": ""},
+        {"title": "Introduction to Polarization Mode Dispersion in Optical Systems", "en": ""},
+        {"title": "Polarization Mode Dispersion and Polarization Dependent Loss for a Pulse in Single-Mode Fibers", "en": ""},
+        {"title": "Limitations Imposed by Polarization-Dependent Gain and Loss on All-Optical Ultralong Communication Systems", "en": ""},
+        {"title": "Comparison of RF Remote Sensing Vibrometry Focusing on Polarization Mode Dispersion", "en": ""},
+        {"title": "Comparison Between Different PMD Compensation Techniques", "en": ""},
+        {"title": "Evaluation of True Polarization Diversity for MIMO Systems", "en": ""},
+        {"title": "Polarization-Based Interference Mitigation for OFDM Signals", "en": ""},
+        {"title": "Adaptive Polarization Modulation in Depolarization Channel with Polarization Dependent Loss", "en": ""}
+    ],
+    "relations": [
+        {"source": "Continuous Polarization Modulation Scheme", "target": "International Symposium on Wireless Personal Multimedia Communications", "type": "会议论文"},
+        {"source": "Transmit Energy Efficiency for Long Range Wireless Communications", "target": "IEEE Transactions on Aerospace & Electronic Systems", "type": "期刊论文"},
+        {"source": "Polarization-Induced Distortions in Optical Fiber Networks", "target": "IEEE Journal of Selected Topics in Quantum Electronics", "type": "期刊论文"},
+        {"source": "Adaptive Polarization Transmission of OFDM Signals", "target": "IEEE Transactions on Wireless Communications", "type": "期刊论文"},
+        {"source": "Statistical Characteristic of Polarization Dependent Loss", "target": "", "type": ""},
+        {"source": "Introduction to Polarization Mode Dispersion in Optical Systems", "target": "Journal of Optical and Fiber Communications Research", "type": "期刊论文"},
+        {"source": "Polarization Mode Dispersion and Polarization Dependent Loss for a Pulse in Single-Mode Fibers", "target": "Journal of Lightwave Technology", "type": "期刊论文"},
+        {"source": "Limitations Imposed by Polarization-Dependent Gain and Loss on All-Optical Ultralong Communication Systems", "target": "Journal of Lightwave Technology", "type": "期刊论文"},
+        {"source": "Comparison of RF Remote Sensing Vibrometry Focusing on Polarization Mode Dispersion", "target": "IEEE Sensors Journal", "type": "期刊论文"},
+        {"source": "Comparison Between Different PMD Compensation Techniques", "target": "Journal of Lightwave Technology", "type": "期刊论文"},
+        {"source": "Evaluation of True Polarization Diversity for MIMO Systems", "target": "Ophthalmic Surgery", "type": "期刊论文"},
+        {"source": "Polarization-Based Interference Mitigation for OFDM Signals", "target": "Military Communications Conference", "type": "会议论文"},
+        {"source": "Adaptive Polarization Modulation in Depolarization Channel with Polarization Dependent Loss", "target": "Vehicular Technology Conference", "type": "会议论文"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}

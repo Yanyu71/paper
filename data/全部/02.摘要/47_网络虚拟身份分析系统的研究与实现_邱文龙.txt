@@ -1,0 +1,18 @@
+摘要
+随着互联网的快速发展人类的生活方式正发生着翻天覆地的变化，人们的沟通和交际方式也变得多种多样，相应的，一个新的概念一虚拟身份应运而生。与现实生活不同的是，由虚拟身份组成的互联网社区是一-个看不见摸不着的虚拟世界，不同国家、不同肤色的人们可以跨越地理和语言的障碍，在互联网上进行随意地、无障碍地沟通。在网络生活中，人与人之间的交流是通过数字符号和各种虚拟表情进行的，并且是通过人与计算机之间的间接对话来实现的。在虚拟世界交往中，人们可以随时随地的修改自己的姓名、性别、年龄和背景等信息，掩饰现实生活中部分甚至全部的真实信息，而展现出另一个自己，构建一个与现实社会身份差别很大的虚拟身份，因此受到人们的热烈追捧。网络中的各种应用和网站大都要求用户申请独一无二的用户账号，以区别出不同的使用人，并且绝大多数用户都是使用虚假信息进行申请注册的，部分用户还会以不同的虚假信息注册多个用户账号，所以在互联网上就产生了海量虚拟身份。为此，我们将对海量虚拟身份进行分析，判断属于同一个使用人的虚拟身份组，从而对用户行为进行分析。由于数据量太大，所以我们的研究是基于分布式处理可扩展的 Hadoop 云计算平台，包括 Hadoop Distributed File System(HDFS)和并行处理框架 MapReduce。
+本文首先介绍了网络用户虚拟身份的基本概念及网络用户行为分析的现状。
+其次，介绍了本课题研究的技术基础平台--Hadoop,包括HDFSMapReduce 和Hbase 组件，
+接着，详细的描述了网络虚拟身份分析系统的组成框架，包括三个模块:数据采集模块、数据预处理模块和数据分析模块。
+最后，具体的描述了在 Hadoop 平台上对该系统的具体实现
+
+关键词:网络虚拟身份;虚拟身份合并;用户行为分析;海量数据Hadoop
+
+RESEARCH AND IMPLEMENTATIONOF ANALYSIS SYSTEM OF NETWORKUSER VIRTUALIDENTITY
+ABSTRACT
+With the rapid development of the Internet, the style of human life isundergoing earth shaking changes, and the way to communication isdiverse. Accordingly, a new concept--virtual identity comes into beingDifferent from real life the Internet community, which is composed ofvirtual identity, is a virtual world that cannot be seen or touched. People indifferent countries and different colors can cross the barriers of geographyand language, and they can commnunicate freely and easily on the Internetn the network, the communication is carried out by digital symbols andvarious virtual expressions, and it is realized through the indirect dialoguebetween human and computers. In the virtual world people can changetheir name, gender, age and background freely to cover up their realinformations, so it is a hot pursuit of people. Various applications and sitesin the Internet are required user to apply for a unique user account todistinguish different users, and the most users are using false informationto registration, some users will register multiple user accouts with differentfalse informations, therefore, there are massive virtual identities in theInternet For this reason, we will analyze which network virtual identitiesbelong to the same person to analyze the user behaviors. We adopt theMapReduce programming model and Hadoop Distributed File System onHadoop to analyze due to the huge data.
+Firstly, this thesis introduces the basic concept of virtual identity andthe status of network user behavior analysis.
+Secondly, this thesis introduces the foundation platform of thisresearch,including HDFS.MapReduce and HBase.
+Thirdly, a detailed description of the framework of analysis system of network virtual identity, including three modules: data acquisition module,data preprocessing module and data analysis module.Finally, the implementation of the system on the Hadoop platform isdescribed in detail.
+
+KEY WORDS:network virtual identity;big data;network user's behavior;Hadoop
+

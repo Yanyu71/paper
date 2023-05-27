@@ -1,0 +1,39 @@
+5.5本章小结
+针对跨域数据动态性导致跨域信息间具有复杂动态关联的问题，本章主要研究 了如何在捕捉用户跨域动态信息时兼顾域内动态信息的捕捉，以完整融合不同域中 的动态信息提升跨域推荐性能。首先定义了针对动态跨域数据的跨域推荐问题。然 后针对跨域信息的全局动态变化和域内动态变化存在差异性特点，提出了跨域多层 循环神经兴趣模型和基于用户级-会话级动态兴趣的跨域推荐模型，通过设计跨域最 小批训练机制提升模型的训练性能。其次，为了解决在捕捉用户级和会话级动态变 化时引起部分单域行为间链接损失的问题，设计了跨域循环-门控神经兴趣模型和基 于长短期兴趣的跨域推荐模型，在捕捉跨域行为动态变化的同时重建损失的单域行 为间链接，提升跨域推荐准确性。最后设计实验，验证了本章所提的两种方法相比 于其他基于动态数据的单域推荐和跨域推荐方法性能至少提升8%,证明通过准确捕 捉跨域信息间的动态关联可以有效提升推荐性能。
+120
+参考文献
+[1]	Ludewig M, Jannach D. Evaluation of session-based recommendation algorithms ] J]. User Modeling and User-Adapted Interaction, 2018, 28(4-5): 331-390.
+[2]	Wang S, Cao L, Wang Y A survey on session-based recommender systems]J]. arXiv preprint arXiv:1902.04864, 2019.
+[3]	Quadrana M, Karatzoglou A, Hidasi B, et al. Personalizing session-based recommendations with hierarchical recurrent neural networks [A]. // Proceedings of the Eleventh ACM Conference on Recommender Systems[C]. New York, NY: ACM, 2017: 130-137.
+[4]	Donkers T» Loepp B, Ziegler J. Sequential user-based recurrent neural network recommendations [A]. // Proceedings of the Eleventh ACM Conference on Recommender SystemsfC]. New York, NY: ACM, 2017: 152-160.
+[5]	Okura S, Tagami Y Ono S, et al. Embedding-based news recommendation fbr millions of users[A]. // Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining[C]. New York, NY: ACM, 2017: 1933-1942.
+[6]	Li C Y Lin S D. Matching users and items across domains to improve the recommendation qual-ity[A]. // Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining[C]. New York, NY: ACM, 2014: 801-810.
+[7]	Zhang Z, Jin X, Li L, et al. Multi-domain active learning fbr recommendation[A]. // Thirtieth AAAI Conference on Artificial Intelligence[C]. Menio Park, CA: AAAI Press, 2016.
+[8]	Man E Shen H, Jin X, et al. Cross-domain recommendation: an embedding and mapping ap-proach[A]. // International Joint Conference on Artificial Intelligence[C]. Memo Park, CA: AAAI Press, 2017: 2464-2470.
+[9]	Elkahky A M, Song Y He X. A multi-view deep learning approach for cross domain user modeling in recommendation systems [A]. // Proceedings of the 24th International Conference on World Wide Web[C]. Berlin, German: Springer, 2015: 278-288.
+[10]	Lian J, Zhang F, Xie X, et al. CCCFNet: a content-boosted collaborative filtering neural network for cross domain recommender systems[A]. // Proceedings of the 26th international conference on World Wide Web companion[C]. Berlin, German: Springer, 2017: 817-818.
+[11]	Kazama M, Varga I. Multi cross domain recommendation using item embedding and canonical correlation analysis[A]. // the ACM Conference on Recommender Systems[C]. New York, NY: ACM, 2017.
+[12]	Wang Y Feng C, Guo C, et al. Solving the sparsity problem in recommendations via cross-domain item embedding based on co-clustering[A]. // Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining[C]. New York, NY: ACM, 2019: 717-725.
+[13]	Kim D, Kim S, Zhao H, et al. Domain switch-aware holistic recurrent neural network fbr modeling multi-domain user behavior[A]. // Proceedings of the Twelfth ACM International Conference on Web Search and Data Mining[C]. New York, NY: ACM, 2019: 663-671.
+[14]	Lipton Z C, Berkowitz J, Elkan C. A critical review of reeuirent neural networks for sequence leam-ing[J]. arXiv preprint arXiv: 1506.00019,2015.
+[15]	Hochreiter S, Schmidhuber J. Long short-term memoiy[J]. Neural computation, 1997, 9(8): 17351780.
+121
+[16]	Cho K, Van Merrienboer B, Gulcehre C, et al. Learning phrase representations using RNN encoderdecoder fbr statistical machine translation]J]. arXiv preprint arXiv: 1406.1078, 2014.
+[17]	Qu Y Cai H, Ren K, et al. Product-based neural networks for user response prediction[A]. II2016 IEEE 16th International Conference on Data Mining (ICDM)[C]. Piscataway, NJ: IEEE, 2016: 1149-1154.
+[18]	Zhang H, Huang W, Liu L, et al. Learning to match clothing from textual feature-based compatible relationships^. IEEE Transactions on Industrial Informatics, 2019.
+[19]	Hidasi B, Karatzoglou A, Baltrunas L, et al. Session-based recommendations with recurrent neural networks[J]. arXiv preprint arXiv: 1511.06939, 2015.
+[20]	Hidasi B, Karatzoglou A. Recurrent neural networks wititi top-k gains for session-based recommen-dations[A]. // Proceedings of the 27th ACM International Conference on Information and Knowledge Management[C]. New York, NY: ACM, 2018: 843-852.
+[21]	Tan S, Bu J, Qin X, et al. Cross domain recommendation based on multi-type media fiision[J]. Neurocomputing, 2014, 127: 124-134.
+[22]	Yi C； Shang M S, Zhang Q M. Auxiliary domain selection in cross-domain collaborative filtering]J]. Applied Mathematics & Information Sciences, 2015, 9(3): 1375.
+[23]	Zhang Y Cao B, Yeung D Y Multi-domain collaborative filtering[J]. arXiv preprint arXiv: 1203.3535, 2012.
+[24]	Zhong E, Fan W, Yang Q. User behavior learning and transfer in composite social networks[1]. ACM Transactions on Knowledge Discovery from Data (TKDD), 2014, 8(1): 1-32.
+[25]	Rendle S, Freudenthaler C, Gantner Z, et al. Bpr: bayesian personalized ranking from implicit feed-back[J], arXiv preprint arXiv: 1205.2618,2012.
+[26]	Barkan O, Koenigstein N. Item2vec: neural item embedding for collaborative filtering[A]. // 2016 IEEE 26th International Workshop on Machine Learning for Signal Processing (MLSP)[C]. Piscataway, NJ: IEEE, 2016: 1-6.
+[27]	Duchi J, Hazan E, Singer Y Adaptive subgradient methods fbr online learning and stochastic opti-mization[J]. booktitle of machine learning research, 2011,12(Jul): 2121-2159.
+[28]	Zhang H, Sun Y9 Zhao M, et al. Bridging user interest to item content fbr recommender systems: an optimization model[J]. IEEE transactions on cybernetics, 2019.
+[29]	Team T T D, Al-Rfbu R, Alain G, et al. Theano: A Python framework for fast computation of mathematical expressions[J]. arXiv preprint arXiv: 1605.02688,2016.
+[30]	Dauphin Y N, Fan A, Auli M, et al. Language modeling with gated convolutional networks [A]. // Proceedings of the 34th International Conference on Machine Leaming[C]. New York, NY: ACM, 2017: 933-941.
+[31]	Wan M, McAuley J. Item recommendation on monotonic behavior chains[A]. // Proceedings of the 12th ACM Conference on Recommender Systems[C]. New York, NY: ACM,2018: 86-94.
+[32]	Tang J, Wang K. Personalized top-n sequential recommendation via convolutional sequence embed-ding[A]. // Proceedings of the Eleventh ACM International Conference on Web Search and Data MiningfC]. 2018: 565-573.
+[33]	Ma C, Kang R Liu X. Hierarchical gating networks fbr sequential recommendation[A]. // Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining[C]. New York, NY: ACM, 2019: 825-833.
+122

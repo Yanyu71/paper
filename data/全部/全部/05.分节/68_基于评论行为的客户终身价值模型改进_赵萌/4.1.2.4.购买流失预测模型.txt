@@ -1,0 +1,8 @@
+4.1.2.4.购买流失预测模型
+本文接下来引入消费者评论行为，提出综合考虑考虑消费者自身因素、消费
+32
+者购买行为以及消费者评论行为的购买流失预测模型。基于公式4-5涉及的变量， 进一步提出了包括累积评论贡献值、评论最高贡献值、评论次数、工作时间段评 论次数、白天评论次数、晚上评论次数、凌晨评论次数共计19个指标作为解释 变量的综合模型，具体模型如公式4-6所示：
+Churnit = ^agex + ^gendert + ^Contribution^ + yiGwim +	+
+YiGJasttvmeit^ + YsGjtrsttimeu^ + Y^Gjvorktimeu^ + y-jGjnidnighti^ + YaG_daylt^ + YgGjiight^ + 61cmit + SiCmjtopi^ +	+ SiCjMorktime^^ + 85C jnidnight^^ +
+86C_daytt^ + S4C_nishtit_1 + £iJt	公式(4-6)
+4.1.3.	模型分析结果

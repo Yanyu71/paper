@@ -1,0 +1,24 @@
+2.5蜂窝上行CellUE同步技术
+混合蜂窝与D2D 异构网络中可能存在蜂窝上行用户进行蜂窝通信，此时需避 免蜂窝通信和D2D通信之间的干扰。这就要求与蜂窝上行用户建立同步关系，获 取其相对与基站的定时提前量TA。 蜂窝上行Cell  E 同步主要目的是获取提前
+10
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.    http://www.cnki.net
+量TA, 因此只关注时域即可，并且由于蜂窝上行Cell UE同步需要在已建立下
+行Cell 同步的基础上，相当于实时监测，因此不存在同步搜索和同步跟踪之分。
+在蜂窝上行用户所发送的PUSCH 信号中，最能有效用于同步检测的是PUSCH RS 序列，其为CAZAC 序列有良好的同步、异步相关性。 CellUE 同步技术就是在 蜂窝同步的基础上，由蜂窝同步获取RB 起始位置等同步信息，生成PUSCH RS
+本地序列，利用PUSCH RS的 CAZAC 性质进行同步检测。
+在目前D2D 系统中，PSS 检测和S 子帧的D2D-Sync信道的RS 序列检测都是 CAZAC序列，采用了时域相关算法(原理是循环相关)。时域相关算法的快速实 现是利用 FFT/IFFT 实现循环相关。蜂窝用户 PUSCH RS 的同步检测也将运用 FFT/IFFT 的循环卷积快速算法实现。具体方案如下图所示：
+1200个载波数据
+PUSCH RS本地序列 (L CRB*12个载波)
+依据RB START确定起始位置
+加保护边带、2048点IFFT
+时域本地序列(2048点)          补零 (N 点)
+往前追加N个数据 2048个RS时域数据
+2048+N点FFT
+复共轭
+2048+N点FFT
+点乘
+2048+N点IFFT
+搜索相关峰
+图2-5 Cell UE同步过程
+11
+(C)1994-2022   China   Academic   Journal   Electronic   Publishing   House.All   rights   reserved.    http://www.cnki.net

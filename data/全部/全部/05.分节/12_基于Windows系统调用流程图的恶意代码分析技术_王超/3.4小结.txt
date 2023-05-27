@@ -1,0 +1,52 @@
+3.4小结
+本章是论文的核心章节，主要对ACS系统整伝进行了分析与设计，并且就 其中用到的关键算法进行了详尽阐述。下面进行具体介绍。
+第一部分主要描述了系统的总体设计思想，根据需求提出了整体的设计思 路。
+第二部分主要描述了系统的功能需求。ACS系统主要分为三部分：恶意代
+33
+码收集与初步分析、特征提取和构建特征知识库以及基于聚类算法构建恶意代码 的基准类别及其家族的原型特征。
+第三部分主要描述了系统的结构设计。更具体地对第二部分进行了阐述， 这部分又分为四部分：二元组的初始化与API映射、特征选择与特征库的构建、 数据预处理和图相似性分析。在本章每个小节中都对各部分的流程进行了介绍, 并对各个功能模块中使用的算法进行了详尽描述。在特征选择与特征库的构建这 一节中对ACS系统的关键算法签名迭代算法进行了深入分析。.
+34
+第四章.恶意代码检测系统的实现
+基于第三章的讨论，基于Windows API流程图的恶意代码检测系统需要满足 应满足以下需求：
+1、	恶意代码收集与初步分析。考虑到恶意样本可能经过加壳或加密处理， 在分析的时候极有可能出现运行异常情况，故在分析前需要对样本进行相应的脱 壳和解密操作。
+2、	提取特征并构建特征知识库。对样本进行反汇编，提取出样本的Windows API调用序列作为其特征。将所得到的样本的Windows API调用信息添加到数据 库，在这步中对API调用信息进行了处理，将调用信息抽象化为对象和操作共同 标识的二元组，构建恶意样本特征知识库。
+3、	提取恶意代码的行为特征并归纳其家族的原型特征。首先，对Windows API进行二元组的映射，然后构建样本的二元组矩阵，随后进行迭代，归纳生成 恶意家族的特征矩阵。
+所以，系统的实现将围绕这三个需求点进行具体实现，下面将分模块进行具 体介绍。基于上述需求，本文对其进行实现，ACS系统即为本文所述方案的具 体实现。ACS系统的实现语言是python,版本为2.7； ACS系统使用的数据库为 MySQL； ACS系统使用的编译器为Eclipse。下图所示为程序的目录结构：
+35
+愣 PyDev Package Explorer U B 籌 | 券。c
+，malDetec
+丄白config
+甬]conf.cFg
+IS description
+H He"
+U Files_dbw
+Uj Instructioninfo
+R]	obyect_operationMap
+4 百 graph
+>易 callFlowGraph
+>& flowGraph
+皀 _ nu__exception_handler.gdl
+、 画 CallGraph.gdl
+S]	fflushgraph.gdl
+项；netsky_a_>vin m a in_cfg. g d I
+Mj netsky_a_V</inMainl6.gdl
+』百info
+U IDA_testFunc.txt
+国 ID A_te sti n g API .txt
+，> util
+0 _init_.py
+0 痢 extractPaths.py
+>S getAttrl.py
+l> 嬉 getAttrs.py
+A 屈 models.py
+i> 回 refinedData,py
+>0 similar.py
+b ■ python (D:\Progr ... thon27\python.exe)
+图4-1 ACS系统的目录结构
+由图4-1可知，系统总体分为四个部分，分别是config、graph、info和 utilo下面对这四个文件夹依次进行介绍。
+Config文件夹主要用于程序各项系数的配置，这些系数包括二元组映射码 表、输入文件名、输入文件类型、家族后缀等。
+Graph文件夹中包含所有系统的输入文件。ACS系统中主要使用两种文件作 为输入，它们均是由I DA Pro生成的，后缀均为gdl。这两种文件分别是函数调 用图(Function Call)和控制流图(Flow Chart),其中前者用于获取子程序中调 用的Windows APL后者用于获取样本程序的子程序调用偏序，将二者结合分析 即可得出样本整体调用Windows API的偏序关系。
+Info文件夹包含ACS系统的描述信息，这些信息具体包含IDA Pro提取 Windows API的签名库信息、系统的功能描述信息等。
+Util文件夹中包含主要的处理函数以及主要的数据结构，数据结构分布于 models, py和refinedData. py两个文件中，前者存储基本的顶点、边等数据结 构；后者存储权值矩阵等数据结构，主要用来进行相似性分析。处理函数则分布
+36
+于getAttrl. py, getAttrs. py以及similar, py中，前两个文件主要提供数据预 处理函数，后一个文件主要提供相似性比对处理函数。下面将就数据预处理、图 相似性分析两个需求点分别进行具体介绍。

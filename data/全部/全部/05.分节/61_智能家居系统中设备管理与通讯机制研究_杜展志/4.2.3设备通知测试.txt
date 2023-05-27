@@ -1,0 +1,14 @@
+4.2.3设备通知测试
+a）首先清空控制应用的通知列表，使其为空
+b）控制音乐播放器Hitachew50,使其播放张学友的《一千个伤心的理由》
+c）控制设备会接收到一条系统通知
+d）点开系统通知，控制应用跳转到消息列表界面
+e）点击相应的消息，进入到通知的详情界面
+下图4-13-a、4-13-b、4-13-c、4-13-d分别为步骤a、c、d、e的观察结果,从图 中可以看出控制应用可以接收网络中设备传送的通知，并获取通知的详情。
+H
+■MH
+<1
+No noUkution* to cfeplwy
+D
+You will receive notifications from the devices tn Nearby Devices on this screen
+图4-13 a）已入网设备组网测试b）未入网设备组网测试c）未入网设备组网测试d）未入网设备组网测试

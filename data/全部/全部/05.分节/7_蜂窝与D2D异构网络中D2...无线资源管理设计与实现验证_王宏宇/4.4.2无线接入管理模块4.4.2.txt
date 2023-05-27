@@ -1,0 +1,21 @@
+4.4.2无线接入管理模块4.4.2
+无线接入管理模块主要负责信道接入需求的判断、RTS0/RTS1/CTS流程的 实现、RTS必要时的退避功能及流程完成后对数据发送/接收定时器的触发配置。
+前文已经进行了 SSCA算法流程的设计及优化，实现采用的方案为使用优先 发送RTS0机制、基于D2D链路速率预估的多进程RTS、二进制指数退避的 SSCAo
+在模块设计中，需要设计的有SSCA状态机、与其他模块的交互流程、主要 对外接口及对等层间RTS/CTS消息格式。
+4A.2.2 SSCA 状态机
+首先，设计SSCA状态机的进入与退出。RTS发送触发为时序触发，触发后 进入SSCA发送状态机。RTS接收触发为正确解码的RTS-CCCH消息触发，触
+60
+发后进入SSCA接收状态机。当RTS/CTS流程成功时，状态转移图以向时序队 列添加关于数据及ACK的发送/接收触发回归Idle状态。
+在RTS发送被时序触发后，首先判断是RTSO还是RTS1,并进入相应的RTS- Query状态。若处于RTS1,则需要判断是否退避定时器是否打开、RTS1是否使 能（接收到带有单播的RTSO后会禁用本帧的RTSDo若处于RTS0或RTS1非 退避且使能，则进行后续对发送缓冲区状态及HARQ重传进程状态、链路发送 吞吐的查询，若满足链路速率预估触发条件，才会发送RTS并进入CTS-Wait状 态。状态转移如图4-11、图4-12»
+SSCA接收状态机与发送状态机相互配合，状态转移如图4-13o
+对应申请子帧数
+图4-12 RTS1-CTS发送处理状态机
+图4-13 RTS-CTS接收处理状态机
+442.3模块接口
+其主要对外接口如下:
+// timing queue trigger handler
+void rts send trigger(const int& type);
+void cts_send_trigger();
+// message process handler
+void rts_msgproc_handler(const void* msg, const int& size, const int& type); void cts_msgproc_handler(const void* msg, const int& size);
+第一部分为时序触发调用，触发RTS、CTS发送调度。第二部分为消息触发 调用，用于对RTS、CTS信道上报消息处理。

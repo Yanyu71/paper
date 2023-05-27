@@ -1,0 +1,834 @@
+﻿{
+    "knowledge_points": [
+        {"title": "移动通信的需求变化", "en": "Changes in demand for mobile communication"},
+        {"title": "数据业务与语音业务的差异", "en": "Differences between data and voice services"},
+        {"title": "多径干扰", "en": "Multipath interference"},
+        {"title": "均衡器", "en": "Equalizer"},
+        {"title": "正交频分复用(OFDM)", "en": "Orthogonal frequency-division multiplexing (OFDM)"},
+        {"title": "单载波频域均衡(SC-FDE)", "en": "Single-carrier frequency-domain equalization (SC-FDE)"},
+        {"title": "频域均衡", "en": "Frequency-domain equalization"},
+        {"title": "线性均衡器", "en": "Linear equalizer"},
+        {"title": "非线性均衡器", "en": "Nonlinear equalizer"},
+        {"title": "迫零算法", "en": "Zero-forcing algorithm"},
+        {"title": "最小均方误差准则(MMSE)", "en": "Minimum mean square error (MMSE)"},
+        {"title": "LTE", "en": "Long-Term Evolution (LTE)"}
+    ],
+    "relations": [
+        {"source": "移动通信的需求变化", "target": "数据业务与语音业务的差异", "type": "包含"},
+        {"source": "数据业务与语音业务的差异", "target": "多径干扰", "type": "相关"},
+        {"source": "多径干扰", "target": "均衡器", "type": "相关"},
+        {"source": "均衡器", "target": "线性均衡器", "type": "包含"},
+        {"source": "均衡器", "target": "非线性均衡器", "type": "包含"},
+        {"source": "线性均衡器", "target": "横向滤波器", "type": "包含"},
+        {"source": "非线性均衡器", "target": "判决反馈均衡器", "type": "包含"},
+        {"source": "非线性均衡器", "target": "自适应均衡器", "type": "包含"},
+        {"source": "均衡系数估计方法的研究", "target": "迫零算法", "type": "包含"},
+        {"source": "均衡系数估计方法的研究", "target": "最小均方误差准则(MMSE)", "type": "包含"},
+        {"source": "单载波频域均衡(SC-FDE)", "target": "正交频分复用(OFDM)", "type": "相对"},
+        {"source": "单载波频域均衡(SC-FDE)", "target": "频域均衡", "type": "包含"},
+        {"source": "LTE", "target": "单载波频域均衡(SC-FDE)", "type": "采用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "非线性判决反馈均衡器", "en": "Nonlinear decision feedback equalizer"},
+        {"title": "重组CP的迭代方法算法", "en": "Iterative method algorithm for recombined CP"},
+        {"title": "连续相位调制(CPM)", "en": "Continuous phase modulation (CPM)"},
+        {"title": "MIMO与SC-FDE系统", "en": "MIMO and SC-FDE system"},
+        {"title": "精确的定时同步", "en": "Accurate timing synchronization"},
+        {"title": "基于数据辅助的OFDM同步算法", "en": "Data-aided OFDM synchronization algorithm"},
+        {"title": "Schmidl&Cox符号定时同步算法", "en": "Schmidl&Cox symbol timing synchronization algorithm"},
+        {"title": "CAZAC序列", "en": "CAZAC sequence"},
+        {"title": "时域均衡技术", "en": "Time-domain equalization technology"},
+        {"title": "频域均衡器", "en": "Frequency-domain equalizer"},
+        {"title": "经典的同步算法", "en": "Classical synchronization algorithm"},
+        {"title": "频域滑动窗同步算法", "en": "Frequency-domain sliding window synchronization algorithm"},
+        {"title": "循环卷积", "en": "Circular convolution"}
+    ],
+    "relations": [
+        {"source": "非线性判决反馈均衡器", "target": "重组CP的迭代方法算法", "type": "改进"},
+        {"source": "重组CP的迭代方法算法", "target": "系统频带利用率", "type": "优化"},
+        {"source": "连续相位调制(CPM)", "target": "SC-FDE系统", "type": "结合"},
+        {"source": "MIMO", "target": "SC-FDE系统", "type": "联合研究"},
+        {"source": "SC-FDE系统", "target": "精确的定时同步", "type": "需要"},
+        {"source": "OFDM同步算法", "target": "基于数据辅助", "type": "研究历史"},
+        {"source": "OFDM同步算法", "target": "Schmidl&Cox符号定时同步算法", "type": "改进"},
+        {"source": "Schmidl&Cox符号定时同步算法", "target": "H.Minn", "type": "改进"},
+        {"source": "H.Minn", "target": "Park", "type": "改进"},
+        {"source": "频域均衡器", "target": "时域均衡器", "type": "对比"},
+        {"source": "频域均衡器", "target": "滑动窗同步算法", "type": "运用"},
+        {"source": "滑动窗同步算法", "target": "基本频域同步算法", "type": "研究"},
+        {"source": "循环卷积", "target": "基本频域同步算法", "type": "计算方法"},
+        {"source": "基本频域同步算法", "target": "全新的同步算法", "type": "设计"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FPGA实现", "en": "FPGA Implementation"},
+        {"title": "同步子系统", "en": "Synchronization Subsystem"},
+        {"title": "FDE子系统", "en": "FDE Subsystem"},
+        {"title": "概要设计", "en": "Overview Design"},
+        {"title": "接口规范", "en": "Interface Specification"},
+        {"title": "模块划分", "en": "Module Partitioning"},
+        {"title": "系统框图", "en": "System Diagram"},
+        {"title": "详细设计", "en": "Detailed Design"},
+        {"title": "模块间连接方式", "en": "Module Interconnection"},
+        {"title": "工作原理", "en": "Working Principle"},
+        {"title": "FPGA设计注意事项", "en": "FPGA Design Considerations"},
+        {"title": "联合仿真", "en": "Co-simulation"},
+        {"title": "系统调试", "en": "System Debugging"},
+        {"title": "改进优化方案", "en": "Improvement and Optimization Plan"},
+        {"title": "时域均衡技术", "en": "Time Domain Equalization Technology"},
+        {"title": "无线信道环境", "en": "Wireless Channel Environment"},
+        {"title": "多径信道", "en": "Multipath Channel"},
+        {"title": "延时抽头系数建模", "en": "Delay Tap Coefficient Modeling"},
+        {"title": "信道估计算法", "en": "Channel Estimation Algorithm"},
+        {"title": "均衡器分类", "en": "Equalizer Classification"},
+        {"title": "线性均衡器", "en": "Linear Equalizer"}
+    ],
+    "relations": [
+        {"source": "FPGA实现", "target": "同步子系统", "type": "包含"},
+        {"source": "FPGA实现", "target": "FDE子系统", "type": "包含"},
+        {"source": "FPGA实现", "target": "联合仿真", "type": "包含"},
+        {"source": "同步子系统", "target": "概要设计", "type": "包含"},
+        {"source": "同步子系统", "target": "详细设计", "type": "包含"},
+        {"source": "FDE子系统", "target": "概要设计", "type": "包含"},
+        {"source": "FDE子系统", "target": "详细设计", "type": "包含"},
+        {"source": "概要设计", "target": "接口规范", "type": "关联"},
+        {"source": "概要设计", "target": "模块划分", "type": "关联"},
+        {"source": "概要设计", "target": "系统框图", "type": "关联"},
+        {"source": "详细设计", "target": "模块间连接方式", "type": "关联"},
+        {"source": "详细设计", "target": "工作原理", "type": "关联"},
+        {"source": "详细设计", "target": "FPGA设计注意事项", "type": "关联"},
+        {"source": "联合仿真", "target": "系统调试", "type": "包含"},
+        {"source": "多径信道", "target": "延时抽头系数建模", "type": "包含"},
+        {"source": "多径信道", "target": "信道估计算法", "type": "包含"},
+        {"source": "时域均衡技术", "target": "无线信道环境", "type": "包含"},
+        {"source": "时域均衡技术", "target": "均衡器分类", "type": "包含"},
+        {"source": "均衡器分类", "target": "线性均衡器", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "迫零法",
+            "en": "Forced zero method"
+        },
+        {
+            "title": "迫零算法",
+            "en": "Forced zero algorithm"
+        },
+        {
+            "title": "最小MSE法",
+            "en": "Minimum mean square error method"
+        },
+        {
+            "title": "反馈判决均衡器",
+            "en": "Decision feedback equalizer"
+        },
+        {
+            "title": "自适应均衡",
+            "en": "Adaptive equalization"
+        },
+        {
+            "title": "均衡器效果图",
+            "en": "Equalizer performance chart"
+        },
+        {
+            "title": "SUI-3信道",
+            "en": "SUI-3 channel"
+        }
+    ],
+    "relations": [
+        {
+            "source": "迫零法",
+            "target": "迫零算法",
+            "type": "包含"
+        },
+        {
+            "source": "迫零算法",
+            "target": "最小MSE法",
+            "type": "包含"
+        },
+        {
+            "source": "反馈判决均衡器",
+            "target": "非线性均衡器",
+            "type": "属于"
+        },
+        {
+            "source": "自适应均衡",
+            "target": "时变特性",
+            "type": "关联"
+        },
+        {
+            "source": "SUI-3信道",
+            "target": "多径信道",
+            "type": "属于"
+        },
+        {
+            "source": "均衡器效果图",
+            "target": "仿真波形",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "无线信道建模",
+            "en": "Wireless Channel Modeling"
+        },
+        {
+            "title": "多径信道",
+            "en": "Multipath Channel"
+        },
+        {
+            "title": "均衡器",
+            "en": "Equalizer"
+        },
+        {
+            "title": "迫零均衡",
+            "en": "Zero-Forcing Equalization"
+        },
+        {
+            "title": "MMSE均衡",
+            "en": "Minimum Mean Square Error Equalization"
+        },
+        {
+            "title": "线性均衡器",
+            "en": "Linear Equalizer"
+        },
+        {
+            "title": "判决反馈均衡器",
+            "en": "Decision Feedback Equalizer"
+        },
+        {
+            "title": "自适应均衡器",
+            "en": "Adaptive Equalizer"
+        },
+        {
+            "title": "SC-FDE技术",
+            "en": "SC-FDE Technology"
+        },
+        {
+            "title": "频域均衡",
+            "en": "Frequency Domain Equalization"
+        },
+        {
+            "title": "OFDM技术",
+            "en": "Orthogonal Frequency Division Multiplexing Technology"
+        },
+        {
+            "title": "ETE规范",
+            "en": "Evolved Universal Terrestrial Radio Access (E-UTRA) Specification"
+        },
+        {
+            "title": "IQ数据",
+            "en": "In-phase and Quadrature Data"
+        },
+        {
+            "title": "循环前缀",
+            "en": "Cyclic Prefix"
+        },
+        {
+            "title": "独特字",
+            "en": "Unique Word"
+        },
+        {
+            "title": "信道估计",
+            "en": "Channel Estimation"
+        },
+        {
+            "title": "星座逆映射",
+            "en": "Constellation Inversion"
+        },
+        {
+            "title": "串并变换",
+            "en": "Serial-to-Parallel Conversion"
+        },
+        {
+            "title": "信道编解码",
+            "en": "Channel Coding and Decoding"
+        }
+    ],
+    "relations": [
+        {
+            "source": "无线信道建模",
+            "target": "多径信道",
+            "type": "包含"
+        },
+        {
+            "source": "多径信道",
+            "target": "均衡器",
+            "type": "影响"
+        },
+        {
+            "source": "均衡器",
+            "target": "迫零均衡",
+            "type": "包含"
+        },
+        {
+            "source": "均衡器",
+            "target": "MMSE均衡",
+            "type": "包含"
+        },
+        {
+            "source": "均衡器",
+            "target": "线性均衡器",
+            "type": "包含"
+        },
+        {
+            "source": "均衡器",
+            "target": "判决反馈均衡器",
+            "type": "包含"
+        },
+        {
+            "source": "均衡器",
+            "target": "自适应均衡器",
+            "type": "包含"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "频域均衡",
+            "type": "包含"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "OFDM技术",
+            "type": "对比"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "ETE规范",
+            "type": "应用"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "IQ数据",
+            "type": "使用"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "循环前缀",
+            "type": "使用"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "独特字",
+            "type": "使用"
+        },
+        {
+            "source": "独特字",
+            "target": "信道估计",
+            "type": "实现"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "星座逆映射",
+            "type": "使用"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "串并变换",
+            "type": "使用"
+        },
+        {
+            "source": "SC-FDE技术",
+            "target": "信道编解码",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "CAZAC序列",
+            "en": "CAZAC sequence"
+        },
+        {
+            "title": "PN序列",
+            "en": "PN sequence"
+        },
+        {
+            "title": "SC-FDE系统",
+            "en": "SC-FDE system"
+        },
+        {
+            "title": "IQ两路传输",
+            "en": "IQ dual transmission"
+        },
+        {
+            "title": "频域均衡",
+            "en": "Frequency domain equalization"
+        },
+        {
+            "title": "迫零均衡",
+            "en": "Zero-forcing equalization"
+        },
+        {
+            "title": "MMSE算法",
+            "en": "MMSE algorithm"
+        },
+        {
+            "title": "多径时延",
+            "en": "Multipath delay"
+        }
+    ],
+    "relations": [
+        {
+            "source": "CAZAC序列",
+            "target": "SC-FDE系统",
+            "type": "适用于"
+        },
+        {
+            "source": "PN序列",
+            "target": "SC-FDE系统",
+            "type": "适用于"
+        },
+        {
+            "source": "PN序列",
+            "target": "CAZAC序列",
+            "type": "对比"
+        },
+        {
+            "source": "SC-FDE系统",
+            "target": "IQ两路传输",
+            "type": "需要"
+        },
+        {
+            "source": "SC-FDE系统",
+            "target": "频域均衡",
+            "type": "使用"
+        },
+        {
+            "source": "频域均衡",
+            "target": "迫零均衡",
+            "type": "一种实现方式"
+        },
+        {
+            "source": "频域均衡",
+            "target": "MMSE算法",
+            "type": "一种实现方式"
+        },
+        {
+            "source": "多径时延",
+            "target": "迫零均衡",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "迫零均衡", "en": "Zero Forcing Equalization"},
+        {"title": "噪声方差估计", "en": "Noise Variance Estimation"},
+        {"title": "信道冲击响应估计", "en": "Channel Impulse Response Estimation"},
+        {"title": "频域均衡滤波器结构", "en": "Frequency Domain Equalization Filter Structure"},
+        {"title": "线性结构", "en": "Linear Structure"},
+        {"title": "判决反馈结构", "en": "Decision Feedback Structure"},
+        {"title": "同步偏移对SC-FDE系统性能的影响", "en": "Effect of Timing Offset on SC-FDE System Performance"},
+        {"title": "定时同步偏移", "en": "Timing Synchronization Offset"},
+        {"title": "频偏", "en": "Frequency Offset"},
+        {"title": "时域均衡", "en": "Time Domain Equalization"},
+        {"title": "计算复杂度", "en": "Computational Complexity"}
+    ],
+    "relations": [
+        {"source": "迫零均衡", "target": "噪声方差估计", "type": "包含"},
+        {"source": "噪声方差估计", "target": "信道冲击响应估计", "type": "导致"},
+        {"source": "信道冲击响应估计", "target": "频域均衡滤波器结构", "type": "导致"},
+        {"source": "频域均衡滤波器结构", "target": "线性结构", "type": "包含"},
+        {"source": "频域均衡滤波器结构", "target": "判决反馈结构", "type": "包含"},
+        {"source": "同步偏移对SC-FDE系统性能的影响", "target": "定时同步偏移", "type": "包含"},
+        {"source": "同步偏移对SC-FDE系统性能的影响", "target": "频偏", "type": "包含"},
+        {"source": "时域均衡", "target": "计算复杂度", "type": "相关"},
+        {"source": "频域均衡滤波器结构", "target": "计算复杂度", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频域均衡器", "en": "Frequency domain equalizer"},
+        {"title": "时域均衡器", "en": "Time domain equalizer"},
+        {"title": "迫零", "en": "Forced zero"},
+        {"title": "MMSE准则", "en": "MMSE criterion"},
+        {"title": "线性结构", "en": "Linear structure"},
+        {"title": "反馈结构", "en": "Feedback structure"},
+        {"title": "同步", "en": "Synchronization"},
+        {"title": "载波同步", "en": "Carrier synchronization"},
+        {"title": "位同步", "en": "Bit synchronization"},
+        {"title": "帧同步", "en": "Frame synchronization"},
+        {"title": "群同步", "en": "Group synchronization"},
+        {"title": "开环同步", "en": "Open-loop synchronization"},
+        {"title": "闭环同步", "en": "Closed-loop synchronization"},
+        {"title": "线谱法", "en": "Line spectrum method"},
+        {"title": "早迟门", "en": "Early-late gate"},
+        {"title": "Gardner算法", "en": "Gardner algorithm"}
+    ],
+    "relations": [
+        {"source": "时域均衡器", "target": "频域均衡器", "type": "推导出"},
+        {"source": "频域均衡器", "target": "时域均衡器", "type": "对比分析"},
+        {"source": "频域均衡器", "target": "迫零", "type": "设计均衡系数"},
+        {"source": "频域均衡器", "target": "MMSE准则", "type": "设计均衡系数"},
+        {"source": "时域均衡器", "target": "线性结构", "type": "比较分析"},
+        {"source": "时域均衡器", "target": "反馈结构", "type": "比较分析"},
+        {"source": "同步", "target": "载波同步", "type": "划分为"},
+        {"source": "同步", "target": "位同步", "type": "划分为"},
+        {"source": "同步", "target": "帧同步", "type": "划分为"},
+        {"source": "同步", "target": "群同步", "type": "划分为"},
+        {"source": "位同步", "target": "开环同步", "type": "划分为"},
+        {"source": "位同步", "target": "闭环同步", "type": "划分为"},
+        {"source": "开环同步", "target": "线谱法", "type": "属于"},
+        {"source": "闭环同步", "target": "早迟门", "type": "属于"},
+        {"source": "位同步", "target": "Gardner算法", "type": "实现方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "内插滤波器", "en": "Interpolation filter"},
+        {"title": "外同步", "en": "External synchronization"},
+        {"title": "位同步", "en": "Bit synchronization"},
+        {"title": "帧同步", "en": "Frame synchronization"},
+        {"title": "Schmidl&Cox算法", "en": "Schmidl&Cox algorithm"},
+        {"title": "Minn算法", "en": "Minn algorithm"}
+    ],
+    "relations": [
+        {"source": "内插滤波器", "target": "外同步", "type": "包含"},
+        {"source": "外同步", "target": "位同步", "type": "包含"},
+        {"source": "外同步", "target": "帧同步", "type": "包含"},
+        {"source": "位同步", "target": "过采样", "type": "包含"},
+        {"source": "帧同步", "target": "同步码字", "type": "包含"},
+        {"source": "帧同步", "target": "Schmidl&Cox算法", "type": "包含"},
+        {"source": "帧同步", "target": "Minn算法", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Schmidl-Cox算法",
+            "en": "Schmidl-Cox algorithm"
+        },
+        {
+            "title": "Minn算法",
+            "en": "Minn algorithm"
+        },
+        {
+            "title": "Park算法",
+            "en": "Park algorithm"
+        },
+        {
+            "title": "频域算法",
+            "en": "Frequency domain algorithm"
+        },
+        {
+            "title": "傅里叶变换",
+            "en": "Fourier transform"
+        },
+        {
+            "title": "滑动窗",
+            "en": "Sliding window"
+        },
+        {
+            "title": "自相关特性",
+            "en": "Autocorrelation property"
+        },
+        {
+            "title": "Chu序列",
+            "en": "Chu sequence"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Schmidl-Cox算法",
+            "target": "Minn算法",
+            "type": "包含"
+        },
+        {
+            "source": "Minn算法",
+            "target": "Park算法",
+            "type": "包含"
+        },
+        {
+            "source": "频域算法",
+            "target": "傅里叶变换",
+            "type": "包含"
+        },
+        {
+            "source": "频域算法",
+            "target": "滑动窗",
+            "type": "包含"
+        },
+        {
+            "source": "自相关特性",
+            "target": "Chu序列",
+            "type": "具备"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "同步码字",
+            "en": "Synchronization code"
+        },
+        {
+            "title": "滑动窗算法",
+            "en": "Sliding window algorithm"
+        },
+        {
+            "title": "互相关函数",
+            "en": "Cross-correlation function"
+        },
+        {
+            "title": "测度函数",
+            "en": "Measure function"
+        },
+        {
+            "title": "频域同步方法",
+            "en": "Frequency domain synchronization method"
+        }
+    ],
+    "relations": [
+        {
+            "source": "同步码字",
+            "target": "滑动窗算法",
+            "type": "包含"
+        },
+        {
+            "source": "滑动窗算法",
+            "target": "同步码字",
+            "type": "依赖"
+        },
+        {
+            "source": "滑动窗算法",
+            "target": "互相关函数",
+            "type": "使用"
+        },
+        {
+            "source": "互相关函数",
+            "target": "滑动窗算法",
+            "type": "被使用"
+        },
+        {
+            "source": "滑动窗算法",
+            "target": "测度函数",
+            "type": "使用"
+        },
+        {
+            "source": "测度函数",
+            "target": "滑动窗算法",
+            "type": "被使用"
+        },
+        {
+            "source": "频域同步方法",
+            "target": "滑动窗算法",
+            "type": "使用"
+        },
+        {
+            "source": "滑动窗算法",
+            "target": "频域同步方法",
+            "type": "被使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "同步判决准则", "en": "Synchronization decision criteria"},
+        {"title": "同步位置搜索方法", "en": "Synchronization position search method"},
+        {"title": "频率同步", "en": "Frequency synchronization"},
+        {"title": "位同步", "en": "Timing synchronization"},
+        {"title": "帧同步", "en": "Frame synchronization"},
+        {"title": "过采样的位定时同步方法", "en": "Oversampled timing synchronization method"},
+        {"title": "经典帧同步方法", "en": "Classical frame synchronization method"},
+        {"title": "频域帧同步方法", "en": "Frequency domain frame synchronization method"},
+        {"title": "FPGA的SC-FDE整体系统设计", "en": "FPGA-based SC-FDE system design"},
+        {"title": "迫零算法", "en": "Zero-forcing algorithm"},
+        {"title": "线性均衡器", "en": "Linear equalizer"}
+    ],
+    "relations": [
+        {"source": "同步判决准则", "target": "同步位置搜索方法", "type": "包含"},
+        {"source": "同步判决准则", "target": "频率同步", "type": "属于"},
+        {"source": "同步判决准则", "target": "位同步", "type": "属于"},
+        {"source": "同步判决准则", "target": "帧同步", "type": "属于"},
+        {"source": "位同步", "target": "过采样的位定时同步方法", "type": "包含"},
+        {"source": "帧同步", "target": "经典帧同步方法", "type": "包含"},
+        {"source": "帧同步", "target": "频域帧同步方法", "type": "包含"},
+        {"source": "FPGA的SC-FDE整体系统设计", "target": "迫零算法", "type": "包含"},
+        {"source": "FPGA的SC-FDE整体系统设计", "target": "线性均衡器", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "数据帧结构设计", "en": "Data Frame Structure Design"},
+        {"title": "突发帧结构", "en": "Burst Frame Structure"},
+        {"title": "同步头", "en": "Synchronization Header"},
+        {"title": "Chu序列", "en": "Chu Sequence"},
+        {"title": "均衡", "en": "Equalization"},
+        {"title": "频域同步", "en": "Frequency Domain Synchronization"},
+        {"title": "信道估计", "en": "Channel Estimation"},
+        {"title": "FFT/IFFT", "en": "FFT/IFFT"},
+        {"title": "复乘运算", "en": "Complex Multiplication"},
+        {"title": "信噪比估计", "en": "SNR Estimation"},
+        {"title": "数据定位", "en": "Data Positioning"}
+    ],
+    "relations": [
+        {"source": "数据帧结构设计", "target": "突发帧结构", "type": "包含"},
+        {"source": "数据帧结构设计", "target": "同步头", "type": "包含"},
+        {"source": "同步头", "target": "Chu序列", "type": "包含"},
+        {"source": "数据帧结构设计", "target": "均衡", "type": "包含"},
+        {"source": "均衡", "target": "Chu序列", "type": "包含"},
+        {"source": "数据帧结构设计", "target": "频域同步", "type": "包含"},
+        {"source": "频域同步", "target": "FFT/IFFT", "type": "依赖"},
+        {"source": "频域同步", "target": "信道估计", "type": "依赖"},
+        {"source": "频域同步", "target": "复乘运算", "type": "依赖"},
+        {"source": "均衡", "target": "FFT/IFFT", "type": "依赖"},
+        {"source": "均衡", "target": "复乘运算", "type": "依赖"},
+        {"source": "FFT/IFFT", "target": "复乘运算", "type": "依赖"},
+        {"source": "频域同步", "target": "信噪比估计", "type": "依赖"},
+        {"source": "数据定位", "target": "同步头", "type": "依赖"},
+        {"source": "数据定位", "target": "数据块", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FFT计算", "en": "FFT calculation"},
+        {"title": "频域信号与本地数据进行复数乘法", "en": "Complex multiplication between frequency domain signal and local data"},
+        {"title": "IFFT模块", "en": "IFFT module"},
+        {"title": "信号幅值计算", "en": "Signal amplitude calculation"},
+        {"title": "信噪比", "en": "Signal-to-noise ratio"},
+        {"title": "同步条件", "en": "Synchronization condition"},
+        {"title": "滑动窗模块", "en": "Sliding window module"},
+        {"title": "FFT/IFFT模块", "en": "FFT/IFFT module"},
+        {"title": "复乘均衡模块", "en": "Complex multiplication equalization module"},
+        {"title": "本地数据控制模块", "en": "Local data control module"}
+    ],
+    "relations": [
+        {"source": "FFT计算", "target": "频域信号与本地数据进行复数乘法", "type": "process"},
+        {"source": "频域信号与本地数据进行复数乘法", "target": "IFFT模块", "type": "process"},
+        {"source": "IFFT模块", "target": "信号幅值计算", "type": "process"},
+        {"source": "信号幅值计算", "target": "信噪比", "type": "process"},
+        {"source": "信噪比", "target": "同步条件", "type": "process"},
+        {"source": "FFT计算", "target": "滑动窗模块", "type": "process"},
+        {"source": "滑动窗模块", "target": "FFT/IFFT模块", "type": "process"},
+        {"source": "FFT/IFFT模块", "target": "复乘均衡模块", "type": "process"},
+        {"source": "FFT/IFFT模块", "target": "本地数据控制模块", "type": "process"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "计算信号功率", "en": "Calculate signal power"},
+        {"title": "能量计算模块", "en": "Energy calculation module"},
+        {"title": "同步判断模块", "en": "Synchronization judgment module"},
+        {"title": "数据定位模块", "en": "Data positioning module"},
+        {"title": "系统时钟设计", "en": "System clock design"}
+    ],
+    "relations": [
+        {"source": "计算信号功率", "target": "能量计算模块", "type": "包含"},
+        {"source": "能量计算模块", "target": "同步判断模块", "type": "输出"},
+        {"source": "同步判断模块", "target": "数据定位模块", "type": "输出"},
+        {"source": "数据定位模块", "target": "系统时钟设计", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "仿真条件", "en": "Simulation conditions"},
+        {"title": "Modelsim仿真", "en": "Modelsim simulation"},
+        {"title": "估计信噪比", "en": "Estimated signal-to-noise ratio"},
+        {"title": "Matlab仿真", "en": "Matlab simulation"},
+        {"title": "板级调试图", "en": "Board-level debugging diagram"},
+        {"title": "同步子系统性能指标与资源消耗分析", "en": "Performance indicators and resource consumption analysis of synchronization subsystem"},
+        {"title": "动态范围", "en": "Dynamic range"},
+        {"title": "资源消耗", "en": "Resource consumption"},
+        {"title": "FDE子系统设计", "en": "FDE subsystem design"},
+        {"title": "FDE子系统方案与框图", "en": "FDE subsystem scheme and block diagram"},
+        {"title": "去CP以及时钟提升模块", "en": "CP removal and clock boosting module"},
+        {"title": "数据分支模块", "en": "Data branching module"},
+        {"title": "数据选择模块", "en": "Data selection module"},
+        {"title": "信道估计模块", "en": "Channel estimation module"},
+        {"title": "同步SC-FDE系统", "en": "Synchronous SC-FDE system"}
+    ],
+    "relations": [
+        {"source": "仿真条件", "target": "Modelsim仿真", "type": "simulate"},
+        {"source": "Modelsim仿真", "target": "估计信噪比", "type": "estimate"},
+        {"source": "Matlab仿真", "target": "估计信噪比", "type": "estimate"},
+        {"source": "板级调试图", "target": "同步丢失", "type": "observe"},
+        {"source": "同步子系统性能指标与资源消耗分析", "target": "动态范围", "type": "analyze"},
+        {"source": "同步子系统性能指标与资源消耗分析", "target": "资源消耗", "type": "analyze"},
+        {"source": "FDE子系统设计", "target": "FDE子系统方案与框图", "type": "design"},
+        {"source": "FDE子系统方案与框图", "target": "去CP以及时钟提升模块", "type": "include"},
+        {"source": "FDE子系统方案与框图", "target": "数据分支模块", "type": "include"},
+        {"source": "FDE子系统方案与框图", "target": "数据选择模块", "type": "include"},
+        {"source": "FDE子系统方案与框图", "target": "信道估计模块", "type": "include"},
+        {"source": "同步SC-FDE系统", "target": "同步子系统性能指标与资源消耗分析", "type": "include"},
+        {"source": "同步SC-FDE系统", "target": "FDE子系统设计", "type": "include"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SC-FDE整体系统", "en": "SC-FDE overall system"},
+        {"title": "FFT模块", "en": "FFT module"},
+        {"title": "同步子系统", "en": "Synchronization subsystem"},
+        {"title": "均衡", "en": "Equalization"},
+        {"title": "RAM资源", "en": "RAM resources"},
+        {"title": "FPGA优化", "en": "FPGA optimization"}
+    ],
+    "relations": [
+        {"source": "SC-FDE整体系统", "target": "FFT模块", "type": "包含"},
+        {"source": "SC-FDE整体系统", "target": "同步子系统", "type": "包含"},
+        {"source": "同步子系统", "target": "均衡", "type": "包含"},
+        {"source": "均衡", "target": "RAM资源", "type": "影响"},
+        {"source": "SC-FDE整体系统", "target": "FPGA优化", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "均衡", "en": "Equalization"},
+        {"title": "多径干扰", "en": "Multipath interference"},
+        {"title": "时域均衡", "en": "Time-domain equalization"},
+        {"title": "频域均衡", "en": "Frequency-domain equalization"},
+        {"title": "SC-FDE系统", "en": "SC-FDE system"},
+        {"title": "同步技术", "en": "Synchronization technology"},
+        {"title": "位同步", "en": "Bit synchronization"},
+        {"title": "帧同步", "en": "Frame synchronization"},
+        {"title": "FPGA", "en": "Field Programmable Gate Array"}
+    ],
+    "relations": [
+        {"source": "均衡", "target": "多径干扰", "type": "解决"},
+        {"source": "时域均衡", "target": "频域均衡", "type": "替代"},
+        {"source": "频域均衡", "target": "SC-FDE系统", "type": "应用于"},
+        {"source": "同步技术", "target": "位同步", "type": "分类"},
+        {"source": "同步技术", "target": "帧同步", "type": "分类"},
+        {"source": "时域均衡", "target": "帧同步", "type": "应用于"},
+        {"source": "频域均衡", "target": "帧同步", "type": "应用于"},
+        {"source": "FPGA", "target": "频域均衡", "type": "实现"},
+        {"source": "FPGA", "target": "同步技术", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "OFDM系统的鲁棒性频率和时间同步", "en": "Robust frequency and timing synchronization for OFDM"},
+        {"title": "OFDM系统的定时偏移估计", "en": "Timing offset estimation for OFDM systems"},
+        {"title": "OFDM系统的一种新的定时估计方法", "en": "A novel timing estimation method for OFDM systems"},
+        {"title": "60GHz WPAN系统的帧/频同步和信道估计", "en": "Joint frame/frequency synchronization and channel estimation for 60GHz WPAN system"},
+        {"title": "基于DFT的OFDM系统的MMSE信道估计研究", "en": "Research on MMSE channel estimation of OFDM system based on DFT"},
+        {"title": "移动通信信道建模与仿真的研究", "en": "Research on channel modeling and simulation in mobile communication"},
+        {"title": "CAZAC序列在LTE中的应用研究", "en": "Application research of CAZAC sequence in LTE"},
+        {"title": "基于ATSC数字电视接收机判决反馈均衡器的研究", "en": "Research on decision feedback equalizer based on ATSC digital TV receiver"},
+        {"title": "ITE上行链路SC-FDE同步技术研究", "en": "Research on synchronization technology of SC-FDE in ITE uplink"},
+        {"title": "多载波与单载波频域均衡系统的仿真与测量", "en": "Simulation and measurement of multi-carrier and single-carrier frequency domain equalization system"}
+    ],
+    "relations": [
+        {"source": "OFDM系统的鲁棒性频率和时间同步", "target": "OFDM系统的定时偏移估计", "type": "相关"},
+        {"source": "OFDM系统的定时偏移估计", "target": "OFDM系统的一种新的定时估计方法", "type": "相关"},
+        {"source": "OFDM系统的一种新的定时估计方法", "target": "60GHz WPAN系统的帧/频同步和信道估计", "type": "相关"},
+        {"source": "基于DFT的OFDM系统的MMSE信道估计研究", "target": "OFDM系统的定时偏移估计", "type": "相关"},
+        {"source": "移动通信信道建模与仿真的研究", "target": "CAZAC序列在LTE中的应用研究", "type": "相关"},
+        {"source": "CAZAC序列在LTE中的应用研究", "target": "基于ATSC数字电视接收机判决反馈均衡器的研究", "type": "相关"},
+        {"source": "ITE上行链路SC-FDE同步技术研究", "target": "基于ATSC数字电视接收机判决反馈均衡器的研究", "type": "相关"},
+        {"source": "多载波与单载波频域均衡系统的仿真与测量", "target": "单载波频域均衡技术的定时同步研究", "type": "相关"},
+        {"source": "单载波频域均衡技术的定时同步研究", "target": "TDE和FDE在单载波系统中的性能比较", "type": "相关"},
+        {"source": "OFDM系统的一种新的定时估计方法", "target": "SC-FDE系统的同步技术研究", "type": "相关"},
+        {"source": "SC-FDE系统的同步技术研究", "target": "SC-FDE系统的频域均衡器设计", "type": "相关"},
+        {"source": "SC-FDE系统的频域均衡器设计", "target": "ITE上行链路SC-FDE同步技术研究", "type": "相关"},
+        {"source": "OFDM系统的鲁棒性频率和时间同步", "target": "SC-FDE系统的同步技术研究", "type": "相关"},
+        {"source": "OFDM系统的定时偏移估计", "target": "SC-FDE系统的同步技术研究", "type": "相关"},
+        {"source": "OFDM系统的定时偏移估计", "target": "单载波频域均衡技术的定时同步研究", "type": "相关"},
+        {"source": "单载波频域均衡技术的定时同步研究", "target": "TDE和FDE在单载波系统中的性能比较", "type": "相关"},
+        {"source": "OFDM系统的定时偏移估计", "target": "基于早迟门位同步环的FPGA实现", "type": "相关"},
+        {"source": "基于早迟门位同步环的FPGA实现", "target": "Gardner定时同步环路参数设计及性能分析", "type": "相关"},
+        {"source": "Gardner定时同步环路参数设计及性能分析", "target": "Gardner定时同步环路的非线性修改分析", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "OFDM系统定时同步算法", "en": "Timing synchronization algorithm for OFDM system"},
+        {"title": "符号定时同步研究及实现", "en": "Research and implementation of symbol timing synchronization"},
+        {"title": "基于卷积的OFDM定时同步算法实现", "en": "Implementation of convolution-based timing synchronization algorithm for OFDM"},
+        {"title": "数字信号处理基础", "en": "Fundamentals of digital signal processing"}
+    ],
+    "relations": [
+        {"source": "OFDM系统定时同步算法", "target": "符号定时同步研究及实现", "type": "包含"},
+        {"source": "OFDM系统定时同步算法", "target": "基于卷积的OFDM定时同步算法实现", "type": "包含"},
+        {"source": "OFDM系统定时同步算法", "target": "数字信号处理基础", "type": "涉及"},
+        {"source": "符号定时同步研究及实现", "target": "数字信号处理基础", "type": "涉及"},
+        {"source": "基于卷积的OFDM定时同步算法实现", "target": "数字信号处理基础", "type": "涉及"}
+    ]
+}

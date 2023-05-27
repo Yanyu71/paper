@@ -1,0 +1,8 @@
+4.3.2.3PUSCH模块
+物理层发送链路的PUSCH模块由协议栈DATA Sched Msg调度控制，使用 CCCH_TX()函数生成数据随路的DAIACTRL信令，并生成PUSCH链路负载， 合并为待发送的PUSCH上行子帧。PUSCH上行子帧遵守ETE上行子帧的空口格 式，因此，PUSCH上行子帧的发送使用Uplink_TxFrontEndO函数对数据进行CP 和GuardBand生成等前端处理，.函数接口如表4-26所示，处理逻辑如图4-24所 _ .	; . 「二 L■一；	■ .	- ■	■	■ ■-	. ' ■
+小：
+表 4-26 PHY PUSCH 发送接 口
+函数接口定义
+Uplink TxFrontEnd()；
+发送主线程
+图4-24物理层PUSCH发送端模块逻辑

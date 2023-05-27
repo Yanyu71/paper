@@ -1,0 +1,15 @@
+4.2.2特征注意力
+注意力机制使2014年由Bahdanau等人［50］提出，主要用来解决Seq2Seq中无 法记住长句子的问题。广义上讲，它旨在将输入序列（源）转换为新序列（目标）, 并且两个序列都可以具有任意长度。转换任务的示例包括在文本或音频中的多种 语言之间进行机器翻译，生成问答对话框，甚至将句子解析为语法树。在某种程 度上，注意力是由我们如何视觉关注图像的不同区域或如何关联一个句子中的单 词所激发的。人类的视觉注意力使我们能够将注意力集中在“高分辨率”的特定区 域，同时以“低分辨率”感知周围的图像，然后调整焦点或进行相应的推断。
+Scaled Dot-Product Attention
+图4・5 （左）Scaled Dot-Product Attention。（右）由并行运行的几个attention层组成的
+Multi-Head Attention」5】］
+注意机制已成为各种任务中引人注目的序列建模和转导模型不可或缺的一 部分,从而允许对依赖项进行建模，而无需考虑它们在输入或输出序列中的距离。 在论文"Attention is all your need" （V^swani 等人，）［51］中提出了 Transformer,它 是一种避免重复发生的模型体系结构，而是完全依赖于注意力机制来绘制输入和 输出之间的全局依存关系。其中一个最主要的结构是：multi head attention□
+特征注意力，在本文指style attention,采用了Multi-Head attention结构，用于 获取reference embedding的相似性度量。Multi-head attention功能可以描述为将查 询和一组键值对（key-value）映射到输出，其中查询（Q, query）,键（K, key）, 值（V, values）和输出都是向量。将输出计算为值的加权总和，其中分配给每 个值的权重是通过查询与相应键的兼容性函数来计算的。
+Scaled Dot-Product Attention （称为特别注意"点乘积注意力"）（图4-5左侧）。
+25 输入由查询(Q)和维度比的键(K)以及维度比的值(V)组成。我们用所有键 计算查询的点积，每个除以“;，并应用softmax函数来获取值的权重。实际上， 我们在一组查询上同时计算注意力函数，将它们打包成矩阵Q,键和值也打包成 矩阵K和V。通过公式(4~4)计算输出矩阵。
+AttentionQQ, K, V) = softmax(^=)V	( 4-4 )
+此外，使用并行机制执行attention,产生维度为d”的输出值V,将它们连接 起来并再次投影，得到最终值。相比单个执行attention功能，产生d^odez维度 的键K,值V和查询Q,这种并行机制将查询，键和值分别以dk, dk和dv维度分别 学习不同的线性投影线性投影h次更有效的。其中h是参ahead numso这种并行 机制称为Multi-Head attention,如图 4-5右侧所示。Multi-Head attention结构允许 模型在不同位置共同关注来自不同表示子空间的信息。对于一个注意力集中的头 部(MutiHead),平均操作会抑制这种情况，如公式所示。
+MultiHeadQQ, K, V) = Concat(headr,..., head^W0	(4-5)
+where head： = AttentionQQW^, KW^,
+其中投影参数矩阵叫° 6 RdmodelXdk ,	}	£ /JdmodeZxdv ,
+IV。G J^^vx^m.odel o

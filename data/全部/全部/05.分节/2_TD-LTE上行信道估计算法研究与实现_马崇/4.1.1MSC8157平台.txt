@@ -1,0 +1,20 @@
+4.1.1MSC8157平台
+MSC8157的结构如下图4-1所述：
+43
+MSC8157 and MSC8157E BlacK Diagram
+图4-1 MSC8157架构图Bl
+现从内核、存储、DMA以及MAPLE四个方面来详细介绍飞思卡尔MSC8157 平台。
+1)MSC8157 内核
+如上图4-1所示，MSC8157具有6个SC3850 DSP子系统，每个子系统中有 一个 SC3850 芯片、32kB 的指令 cache(LHcache). 32kB 的数据 cache(LlDcache)、 512KB L2 cache,其中L2可灵活配置为共享内存M2； Core工作主频1GHz；数据 运算和逻辑单元(DALU)包括4个运算逻辑单元ALU(Arithmetic and Logic Unit), 每个ALU包括2个16X16乘法器，同时还有2个地址产生单元(AGU),每个AGU 中包含两个地址运算单元(AAU)；每个时钟周期能做多处理6条指令：4 ALU+2AGU；具有丰富的16位宽指令集。
+2)存储
+除了每个core里的LI, L2缓存，MSC8157还有3MB、128bit位宽的M3内 存。512M DDR3, DDR控制器时钟主频667MHz(数据速率1333MHz), 32bit数据 总线。
+3)DMA
+16个双向通道的DMA控制器。每个控制器含有1024个BD(Buffer Descriptor), 总内存32KbyteSo其中buffer descriptor既可以布置在M2中，也可以布置在DDR 内存中。DMA通道间采用基于优先级的时分复用，在同等优先级组中，采用循环 仲裁来提供4个优先级选择。
+4)MAPLE
+MAPLE-B2是第二代硬件加速引擎，该加速器引擎针对无线通信需求，提供
+44
+多门类，高性能加速器。可选择3G模式(支持3GLTE和UMTS标准)和WiMAX 模式(IEEE 802.16e和802.16m标准)，其主要功能模块如下：
+eTVPE： Turbo译码器，支持WiMAX, UMTS和3GLTE系统的Turbo译码； 集成Turbo译码，解速率匹配和HARQ合并功能；支持二进制和双二进制编码方 式的译码；对于码率为1/3的编码方式，提供多样的解速率匹配函数；译码准则为 Max Log Map或Linear Log Map；提供多种译码终止触发条件，如CRC检测、输 出硬比特校验以及配置的指示。
+DEPE： Turbo 编码器，支持 WiMAX OFDMA、3G ETE DL/UL-SCH 和 UMTS 系统；3GLTE及WiMAX应用场景中，信息比特编码和速率匹配处理速率高达 1.8Gbps；支持3GLTE制式中码快CRC和比特填充；支持3GLTE标准中的单码块 的传输块CRC功能；针对FDD-LTE,支持可选的传输块比特扰码功能。
+eFTPE：支持DFT/IDFT和FFT/IFFT处理；FFT/IFFT运算支持多种长度，如 128、256、512、1024、1535 和 2048； DFT/IDFT 能支持 3G LTE 中的所有 RB 可 能配置下的子载波数；提供多种不同的输入数据大小支持，如16bit (81, 8Q)或 者32bit (161, 16Q)；在FFT/IFFT运算时可配置是否进行保护边带的插入或去除， 循环前缀的插入或删除也可配置；支持对输入复数的相位进行旋转。
+除了这三个常用的模块之外，MAPLE-B2还有完成CRC校验的CRCPE,还 能支持MMSE/ZF/IRC准则的信道均衡等操作。

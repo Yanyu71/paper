@@ -1,0 +1,8 @@
+2.2.2.5并行Hammerstein模型
+对上节介绍的Hammerstein模型进行拓展，我们能得到并行Hammerstein模型， 两者不同之处在于各阶数的无记忆非线性系统后级联的线性时不变系统不同，下图 2-6是并行Hammerstein模型的简化结构图。
+x(n)
+图2・6并行Hammerstein模型简化图
+利用并行Hammerstein模型对功率放大器进行建模，其输出信号表示如下:
+y[n) =b2二(q)|x(〃)|"T)x(〃) =	卜(〃	x(“ -。)	(2/7)
+p=\	p=l m=Q
+总的来说，Wiener模型和Hammerstein模型都是有记忆多项式的特殊情况，实 质上，有记忆多项式与并行Wiener模型、并行Hammerstein模型是完全等效的。对 于Wiener模型和Hammerstein模型而言，两者较记忆多项式而言，虽然项数减少， 但是求解并不方便，有记忆多项式数字预失真算法在求解复杂度和性能之间能取得 最有的平衡。

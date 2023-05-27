@@ -1,0 +1,41 @@
+4.4视频主叫测试例的验证与分析
+视频主叫测试例的执行结果如下:
+进入测试状态后，UE应当发出会话请求，此时SS将收到UE发送的第一条
+INVITE (Cseq： 815695452),并且携带SDP请求，测试点1通过，如图4-13
+所示:
+*Request-Line: 1KMI5 tel: 1234. phone-coatextaiaa. ancOOl. ssccDOi. 3<ppnet?art cat 5IP/2,0
+?Header
+Mestag? Body
+-Session Dtfscris?tlon Protccol
+Session Description Protocol Version <v); 0
+Omer^Creator, Sessioa Id S): ro 0)^002 003\<?4 005'006'.a a\0<?\301?7_\27-J^255\032\346Pl
+图 4-13 UE 发出的 INVITE (Cseq： 815695452)消息结构
+接下来 SS 连续发送两条 100 TryingCCseq: 815695452)和 183 Progress Session (Cseq： 815695452)o 终端收到后应当发送 PRACK (Cseq： 815695453),其中 可以携带SDP消息体(可选)，本例中没有携带。测试点2通过，如下图4-14 所示：
+图 4-14 UE 发送.PRACK (Cseq： 815695453)消息结构
+收到 PRACK (Cseq： 815695453)后，SS 发送 200 OK (Cseq： 815695453) 确认，由于下一条UPDATE请求是可选项，所以不作为测试点，以UE对180
+Ringing (Cseq： 815695452)的确认后发送的 PRACK (Cseq： 815695455)作为
+测试点3,下图4-15表示测试点3通过:
+(weshaiieptapng - Wireshark
+Jfew Qo ￡?p?ur? finaiyze	T?*?phor^ TooH 村？
+警峯峯。銀愈終落辭彩'、争畛餐岑薫签齢馈& ■蹲鞏徳嚟参急
+Prsxy-Re<iuire: sec-agree
+图4-15 UE回复的PRACK消息结构图
+接下来SS将连续发送两条最终响应200 OK,分别回复PRACK (Cseq： 815695455)和初始的 INVITE (Cseq： 815695452),针对后面一条回复 INVITE (Cseq： 815695452)的 200 OK (Cseq： 815695452),按照协议规定，UE 应当 发送 ACK (Cseq： 815695452)以确定收到 200 OK (Cseq： 815695452)。测试 点4通过，表示视频通话已经建立，如下图4-16所示：
+! Vser OstagrajB Protocol, Src Fort; S006 (SC06?, Dst Pert: na-iocaiise (5062)
+:t! Request-Line: ACK sip:User-B-Contact^gpp.org S1P/2.0 由 ifessa^e Beader
+Call-ID: 1839437276_175373236?192. 168.0. 1
+Cootenx-Lenftht 0
+竈 CSeq: 835695452 ACK
+総 Frc?: <sip:00l010]23456789OlB￡. rnicOOl. accOOl. dfppnetvork. or<>.taj-1889437285 Hax-Farwards: 70
+'贏 lot <tel:1334;j^ione-context=iB3.nncOOl. bccOOI. Ssppnetwort. org>. taraabc-INVnE~Tota?
+蛍 vu： SIP/2. 0/UK9 192.168. 0.1; 8903: braneh=z9h?bK4250941463
+Route: <sip：138.195.216. 75:5062:lr>, <slp：Qrirdscfcf. 3gpp. org;lr>, <sip：scccf. other.cos;lr>,<?lp;pc?cf.other.c?s：ir> Require: sec-agree
+Proxr-ReQuire： sec-agree
+图4-16 UE确认收到200 OK的ACK (Cseq： 815695452)消息结构
+最后，由UE发起挂机请求，系统收到BYE (Cseq： 815695456),通话结束。
+如图4-17所示:
+图4-17 SS收到UE会话结束请求BYE (Cseq： 815695456)消息结构
+自此，所有测试点均通过，测试例TS_12_21 pass,下图4-18是TS_Manager 软件结果截图：
+^StorPoint T S Managef
+fife J<??5 tfetp	淬5；扑 f，,:
+图4-18 TS Manager软件运行结果

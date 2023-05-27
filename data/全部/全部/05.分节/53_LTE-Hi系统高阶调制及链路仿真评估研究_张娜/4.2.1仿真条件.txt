@@ -1,0 +1,19 @@
+4.2.1仿真条件
+表47 LTE-Hi静态场景信道下的仿真条件
+测试场景	LTE-Hi NLOS LOS 静点场景
+系统带宽	20M
+RB资源数	WOPRBs
+上下行配比	上下行配置1: 3,特殊子帧配置7
+HARQ	打开
+AMC	自适应调制 阶数范围：	QPSK 16QAM 64QAM ;记为 without 256QAM QPSK 16QAM 64QAM 256QAM 记为 with 256QAM
+59
+MIMO模式	TM2 TM3
+载波频率	3.5G
+接收算法	MMSE
+信道估计算法	2维维纳滤波
+CFI	3符号
+PSS\PBCH\SSS	理想已知
+天线配置	eNode B 2天线（发送、接收）； UE 2天线接收，1天线发送；
+Antenna configuration (base station)	基站10倍波长； （直射径与移动台天线阵法线夹角0 degrees）
+Antenna configuration (UE)	终端0.5波长； （直射径与移动台天线阵法线夹角150degrees）
+需要说明，仿真条件中的信道估计算法并未采用一般论文研究中采用的理想信 道估计，而是采用了基于二维维纳滤波的信道估计算法。原因是由于本文进行链路 级仿真的目的不仅是为了得到256QAM所能带来的增益比例，还包通过仿真得到吞 吐量的具体峰值和增长量，本文的研究结果力图接近真实的吞吐性能，所以采用了 非理想信道估计的算法。

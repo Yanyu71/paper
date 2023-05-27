@@ -1,0 +1,29 @@
+4.4.3.1测试用例TEST
+用例编号：TEST PUCCH 12 007；
+测试内容：单用户，测试PUCCH整个链路在格式2下能否正确解码出4bit的CSI； 测试步骤：
+1.调用函数eNBRxPucch Handle,按照matlab配置参数；
+2,检验译码后的decodedBits是否正确； 输入数据：pucchTestCase007DataIn.h
+高层参数配置表信息如表4-10所示； 被测代码：Core。和Core4各个函数的代码； 预期输岀：期望输出CSI值为1010；
+u8 WideBandCqi Value0= 10。
+表4-10 TEST PUCCH 12 007部分配置参数
+C	elllnfb 控制	配置值	Cellinfo 控制	配置值
+Cellld	1	　　　　PhyCellld	80
+UlBandWidthlndex	0 (10M)	　　　　UICpType	　　0 (Normal cp)
+SubSfnConifg	0	　　SSubSfnConflg	7
+UlSeqGroupHoppingFlag	0	　　SeqHoppingFlag	0
+u8N2Rb	1	NICs	6
+DeltaPucchShift	3	N1 Pucch	4
+Radio link into 控制	配置值	　　Radio link info 控制	配置值
+Cellld	1	Crnti	0
+ISrs	0	UeMId	0
+nPUCCH2	14	　　AckCodingMode	0
+subframe 控制	配置值	subframe 控制	配置值
+AirFrameNum	1	　　　　u8Cell!d	1
+NumOfPUCCHUe	1	　　u8NumOiPUSCHUe	0
+Pucch	　　UE	参a	故名	值	参数名	值
+子帧控制	BandType	0	Bandlype	　　　　　1
+aPucchPa	TransMode	0	TransMode	　　　　　1
+ra	　　UEl	UeMId	0	　　　　NumOfLayers	　　　　　0
+nPUCCHl	4	　　　　PMIRIReportFlag	　　　　　0
+UciFormat	FORMAT2
+58

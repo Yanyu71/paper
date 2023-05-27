@@ -1,0 +1,14 @@
+第五章实验
+为验证不同模型的效果，这里使用同样的数据集Flickr8k【23】，该数据集有 8000张图片，每张图片有5个句子。其中图片数据是来源于Flickr,而文本数据 则是人工生成，不是原始数据。原始数据主要有图片描述、标签、标题和用户评 论，这些文本数据虽然丰富，但是文本数据一般不针对图像的内容，更多是人的 情感或者拍这张图片时的地点和发生的事情PR。该数据是用于信息检索，因此 文本数据通过Amazon Mechanical Turk重新生成，如表5-1所示。这8000张图 片中，1000张作为验证集，1000张作为测试集，剩下的作为训练集。
+表5-1训练数据
+A child in a pink dress is climbing up a set of stairs in an entry way.
+A girl going into a wooden building.
+A little girl climbing into a wooden playhouse.
+A little girl climbing the stairs to her playhouse.
+A little girl in a pink dress going into a wooden cabin.
+m ’him	A black dog and a spotted dog are fighting
+A black dog and a tri-colored dog playing with each other on the road.
+A black dog and a white dog with brown spots are staring at each other
+jv 1	in the street.
+涔緇雪京	Two dogs of different breeds looking at each other on the road.
+Two dogs on pavement moving toward each other.

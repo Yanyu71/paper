@@ -1,0 +1,20 @@
+摘要
+随着社会的不断发展，各种网络的规模变得越来越庞大，结构也 越来越复杂。为了维持网络的正常运行，企业不得不派遣巡检人员对 网络的线路进行维护和检查。为了提高巡检的效率和质量，我们开发 了一套智能巡检系统。本系统通过结合SprinMVC+Ibatis Web开发技 术、百度地图API、GPS定位技术、JavaScript和数据库技术，实现 了对巡检的监控与调度，显著提高了巡检管理的效率，降低了巡检人 员的工作量。
+地图模块是智能巡检系统的核心功能模块，提供了大量的地理化 信息的显示功能，包含了实时监控、线路巡回和区域巡回功能。用户 通过实时监控模块对特定巡检人员进行监控和调度，通过线路巡回模 块添加和修改巡检人员的巡检线路，通过区域巡回模块制定或编辑宣 传工作。因此，地图模块对智能巡检具有非常重要的意义。
+本文以地图模块为研究重点，从平台端和Android端两个维度， 设计和实现了地图模块。主要工作如下：
+1、	基于SpringMVC+Ibatis开发框架、Ajax技术和百度地图API 技术，给出了地图模块平台端的设计，实现了实时监控、在百度地图 上制定或修改巡回线路和区域等功能。
+2、	基于Java技术和SQLite数据库技术，给出了地图模块Android 端的设计，实现了在终端的百度地图上精确定位、实时定位、巡检任 务显木等功能；
+3、	将地图模块与智能巡检系统的其它模块连接，对各个子模块 进行开发测试，并对结果进行了分析。
+关键词：SpringMVC Ibatis 百度地图 Android SQLite
+DESIGN AND IMPLEMENTATION
+OF MAP MODULE IN
+INTELLIGENT PATROL SYSTEM
+ABSTRACT
+With the continuous development of society, the scale of network becomes increasingly large and the structure of network becomes increasingly complex. In order to maintain the operation of network, enterprises have to dispatch stafF to inspect and maintain the line of network. To improve the efficiency and quality of inspection, we develop a system named intelligent patrol system. The system is developed base on the combination of SpringMVC+Ibatis Web development technology, Baidu Maps API, GPS positioning technology, JavaScript and database technology, which can realize the monitoring and scheduling function and therefore significantly improve the efficiency of patrol management,reduce the workload of staff.
+Map module is the core function module in intelligent patrol system, which provides a large number of geo-infbrmation display functions, including real-time monitoring, line inspection and regional inspection. With the real-time monitoring function module, the users can monitor and schedule the staff. With the line inspection function module, the users can add and modify the propaganda work. Therefore, the map module has very important significance for the intelligent patrol system.
+In this paper, we place our interest on map module. We design and realize the map module from the dimensions of platform and android terminal. The main contribution of this work can be listed as follows:
+1、	Based on SpringMVC + Ibatis framework, Ajax and Baidu Maps API technology, the paper gives the design of map on the platform, realizes real-time monitoring add or modify the line and regional inspection on Baidu map.
+2、	Based on Java technology and SQLite database technology, the
+paper gives the design of map on the Android terminal, realizes precise positioning real-time positioning and inspection tasks display on Baidu Map of the terminal.
+3、Connecting map module with other system modules, the testing work is conducted on these sub-module and analyzing of the results
+KEY WORDS: SpringMVC Ibatis Baidu Map Android SQLite

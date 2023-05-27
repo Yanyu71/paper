@@ -1,0 +1,915 @@
+﻿{
+    "knowledge_points": [
+        {"title": "移动通信技术", "en": "Mobile Communication Technology"},
+        {"title": "无线宽带业务", "en": "Wireless Broadband Services"},
+        {"title": "基站建设", "en": "Base Station Construction"},
+        {"title": "空中接口带宽", "en": "Air Interface Bandwidth"},
+        {"title": "无线接入网络", "en": "Wireless Access Network"},
+        {"title": "能源消耗问题", "en": "Energy Consumption Issues"},
+        {"title": "运行维护成本", "en": "Operation and Maintenance Costs"},
+        {"title": "移动用户状态", "en": "Mobile User Status"},
+        {"title": "时间规律性", "en": "Temporal Regularity"},
+        {"title": "网络负载", "en": "Network Load"},
+        {"title": "计算处理资源", "en": "Computing Resources"},
+        {"title": "计算资源池", "en": "Computing Resource Pool"},
+        {"title": "物理硬件资源", "en": "Physical Hardware Resources"},
+        {"title": "虚拟化技术", "en": "Virtualization Technology"},
+        {"title": "负载均衡", "en": "Load Balancing"},
+        {"title": "节省能源", "en": "Energy Saving"},
+        {"title": "容灾备份", "en": "Disaster Recovery Backup"},
+        {"title": "C-RAN", "en": "Cloud Radio Access Network"},
+        {"title": "无线接入网", "en": "Wireless Access Network"},
+        {"title": "频谱利用率", "en": "Spectrum Utilization Efficiency"}
+    ],
+    "relations": [
+        {"source": "移动通信技术", "target": "无线宽带业务", "type": "包含"},
+        {"source": "无线宽带业务", "target": "基站建设", "type": "需要"},
+        {"source": "基站建设", "target": "空中接口带宽", "type": "影响"},
+        {"source": "无线接入网络", "target": "能源消耗问题", "type": "存在"},
+        {"source": "能源消耗问题", "target": "运行维护成本", "type": "导致"},
+        {"source": "移动用户状态", "target": "时间规律性", "type": "具有"},
+        {"source": "时间规律性", "target": "网络负载", "type": "影响"},
+        {"source": "计算处理资源", "target": "计算资源池", "type": "组成"},
+        {"source": "物理硬件资源", "target": "虚拟化技术", "type": "应用"},
+        {"source": "虚拟化技术", "target": "计算资源池", "type": "实现"},
+        {"source": "计算资源池", "target": "负载均衡", "type": "需要"},
+        {"source": "计算资源池", "target": "节省能源", "type": "需要"},
+        {"source": "计算资源池", "target": "容灾备份", "type": "需要"},
+        {"source": "C-RAN", "target": "无线接入网", "type": "替代"},
+        {"source": "无线接入网", "target": "频谱利用率", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "C-RAN的优势", "en": "Advantages of C-RAN"},
+        {"title": "C-RAN的组成部分", "en": "Components of C-RAN"},
+        {"title": "动态迁移技术的概念", "en": "Concept of Dynamic Migration Technology"},
+        {"title": "动态迁移技术的意义", "en": "Significance of Dynamic Migration Technology"}
+    ],
+    "relations": [
+        {"source": "移动互联网", "target": "C-RAN的优势", "type": "包含"},
+        {"source": "绿色无线接入网", "target": "C-RAN的概念", "type": "同义词"},
+        {"source": "集中式基带资源处理池", "target": "C-RAN的组成部分", "type": "包含"},
+        {"source": "协作式无线网络和基于开放平台实时的具有云架构的基础设施", "target": "C-RAN的组成部分", "type": "包含"},
+        {"source": "实时信号处理业务", "target": "动态迁移技术的概念", "type": "包含"},
+        {"source": "云计算和虚拟化", "target": "动态迁移技术的意义", "type": "包含"},
+        {"source": "实时信号处理程序的动态调度与分配", "target": "动态迁移技术的意义", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "动态迁移技术",
+            "en": "Dynamic migration technology"
+        },
+        {
+            "title": "负载均衡",
+            "en": "Load balancing"
+        },
+        {
+            "title": "解除硬件依赖",
+            "en": "Relieving hardware dependencies"
+        },
+        {
+            "title": "节约能源",
+            "en": "Energy saving"
+        },
+        {
+            "title": "客户机地理位置上的远程迁移",
+            "en": "Remote migration of client's geographical location"
+        },
+        {
+            "title": "实时信号处理",
+            "en": "Real-time signal processing"
+        },
+        {
+            "title": "虚拟机系统",
+            "en": "Virtual machine system"
+        },
+        {
+            "title": "SDR",
+            "en": "Software Defined Radio"
+        },
+        {
+            "title": "USRP",
+            "en": "Universal Software Radio Peripheral"
+        },
+        {
+            "title": "动态迁移核心系统",
+            "en": "Dynamic migration core system"
+        },
+        {
+            "title": "中继业务",
+            "en": "Relay service"
+        }
+    ],
+    "relations": [
+        {
+            "source": "动态迁移技术",
+            "target": "负载均衡",
+            "type": "应用场景"
+        },
+        {
+            "source": "动态迁移技术",
+            "target": "解除硬件依赖",
+            "type": "应用场景"
+        },
+        {
+            "source": "动态迁移技术",
+            "target": "节约能源",
+            "type": "应用场景"
+        },
+        {
+            "source": "动态迁移技术",
+            "target": "客户机地理位置上的远程迁移",
+            "type": "应用场景"
+        },
+        {
+            "source": "动态迁移技术",
+            "target": "实时信号处理",
+            "type": "应用场景"
+        },
+        {
+            "source": "虚拟机系统",
+            "target": "动态迁移技术",
+            "type": "基础技术"
+        },
+        {
+            "source": "SDR",
+            "target": "动态迁移技术",
+            "type": "硬件设备"
+        },
+        {
+            "source": "USRP",
+            "target": "动态迁移技术",
+            "type": "硬件设备"
+        },
+        {
+            "source": "动态迁移技术",
+            "target": "动态迁移核心系统",
+            "type": "核心技术"
+        },
+        {
+            "source": "动态迁移核心系统",
+            "target": "实时信号处理",
+            "type": "应用场景"
+        },
+        {
+            "source": "动态迁移核心系统",
+            "target": "中继业务",
+            "type": "应用场景"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "虚拟化技术", "en": "Virtualization Technology"},
+        {"title": "动态迁移技术", "en": "Dynamic Migration Technology"},
+        {"title": "USRP设备的数据流迁移技术", "en": "USRP Device Data Stream Migration Technology"},
+        {"title": "中继业务", "en": "Relay Service"},
+        {"title": "Xen虚拟机系统", "en": "Xen Virtual Machine System"},
+        {"title": "VMware虚拟机系统", "en": "VMware Virtual Machine System"},
+        {"title": "Hyper-V虚拟化技术", "en": "Hyper-V Virtualization Technology"}
+    ],
+    "relations": [
+        {"source": "虚拟化技术", "target": "动态迁移技术", "type": "包含"},
+        {"source": "虚拟化技术", "target": "Xen虚拟机系统", "type": "包含"},
+        {"source": "虚拟化技术", "target": "VMware虚拟机系统", "type": "包含"},
+        {"source": "虚拟化技术", "target": "Hyper-V虚拟化技术", "type": "包含"},
+        {"source": "动态迁移技术", "target": "USRP设备的数据流迁移技术", "type": "应用于"},
+        {"source": "USRP设备的数据流迁移技术", "target": "中继业务", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Hyper-V架构", "en": "Hyper-V Architecture"},
+        {"title": "KVM架构", "en": "KVM Architecture"},
+        {"title": "虚拟化技术", "en": "Virtualization Technology"},
+        {"title": "完全虚拟化", "en": "Full Virtualization"},
+        {"title": "半虚拟化", "en": "Para-virtualization"}
+    ],
+    "relations": [
+        {"source": "Hyper-V架构", "target": "物理平台和虚拟机系统之间的中间层", "type": "包含"},
+        {"source": "Hyper-V架构", "target": "WindowsServer2003SP2、NovellSUSELinuxEnterpriseServer10SP1、WindowsVistaSP1(x86)和WindowsXPSP3(x86)", "type": "支持"},
+        {"source": "Hyper-V架构", "target": "远程管理", "type": "实现"},
+        {"source": "KVM架构", "target": "完全免费开放的实现虚拟化的虚拟机系统软件", "type": "包含"},
+        {"source": "KVM架构", "target": "Linux2.6.20内核系统", "type": "被加入"},
+        {"source": "KVM架构", "target": "IntelVT技术", "type": "利用"},
+        {"source": "KVM架构", "target": "QEMU中间层", "type": "利用"},
+        {"source": "虚拟化技术", "target": "将资源计算处理单元运行在虚拟出来的系统平台上", "type": "定义"},
+        {"source": "虚拟化技术", "target": "将整个物理硬件基础包括处理器、内存和外设作为处理资源", "type": "定义"},
+        {"source": "虚拟化技术", "target": "虚拟化出多个虚拟系统平台", "type": "定义"},
+        {"source": "虚拟化技术", "target": "需要加入一个叫做虚拟机监控器(VirtualMachineMonitor,VMM)的虚拟出来的中间层", "type": "定义"},
+        {"source": "完全虚拟化", "target": "虚拟的计算处理基础资源和真实的物理硬件基础资源相同", "type": "定义"},
+        {"source": "完全虚拟化", "target": "客户机操作系统不需要做其他改动", "type": "定义"},
+        {"source": "完全虚拟化", "target": "安装了一个虚拟机监控器(Hypervisor)", "type": "定义"},
+        {"source": "完全虚拟化", "target": "客户机操作系统内核想要执行的任何有特权的指令都有经过Hypervisor翻译", "type": "定义"},
+        {"source": "半虚拟化", "target": "需要修改每个操作系统内核以支持\"hypercall\"", "type": "定义"},
+        {"source": "半虚拟化", "target": "支持客户在单台硬件平台上并行运行多种不同的操作系统", "type": "定义"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "完全虚拟化", "en": "Full virtualization"},
+        {"title": "半虚拟化", "en": "Paravirtualization"},
+        {"title": "操作系统级虚拟化", "en": "Operating system-level virtualization"},
+        {"title": "虚拟机的动态迁移技术", "en": "Dynamic migration technology of virtual machines"},
+        {"title": "网络的迁移", "en": "Network migration"},
+        {"title": "存储的迁移", "en": "Storage migration"},
+        {"title": "内存的迁移", "en": "Memory migration"}
+    ],
+    "relations": [
+        {"source": "完全虚拟化", "target": "半虚拟化", "type": "相似"},
+        {"source": "半虚拟化", "target": "操作系统级虚拟化", "type": "相似"},
+        {"source": "虚拟机的动态迁移技术", "target": "网络的迁移", "type": "包含"},
+        {"source": "虚拟机的动态迁移技术", "target": "存储的迁移", "type": "包含"},
+        {"source": "虚拟机的动态迁移技术", "target": "内存的迁移", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "虚拟机系统", "en": "Virtual Machine System"},
+        {"title": "动态迁移", "en": "Dynamic Migration"},
+        {"title": "迁移策略", "en": "Migration Strategy"},
+        {"title": "预拷贝算法", "en": "Pre-copy Algorithm"},
+        {"title": "Pull阶段", "en": "Pull Phase"},
+        {"title": "SDR", "en": "Software Defined Radio"},
+        {"title": "控制信息流动态迁移", "en": "Dynamic Migration of Control Information Flow"},
+        {"title": "信号处理任务动态迁移", "en": "Dynamic Migration of Signal Processing Tasks"}
+    ],
+    "relations": [
+        {"source": "虚拟机系统", "target": "动态迁移", "type": "包含"},
+        {"source": "动态迁移", "target": "迁移策略", "type": "关联"},
+        {"source": "迁移策略", "target": "预拷贝算法", "type": "包含"},
+        {"source": "动态迁移", "target": "Pull阶段", "type": "包含"},
+        {"source": "SDR", "target": "动态迁移", "type": "使用"},
+        {"source": "动态迁移", "target": "控制信息流动态迁移", "type": "包含"},
+        {"source": "动态迁移", "target": "信号处理任务动态迁移", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "USRP设备",
+            "en": "USRP Device"
+        },
+        {
+            "title": "实时信号处理单元",
+            "en": "Real-time Signal Processing Unit"
+        },
+        {
+            "title": "动态迁移技术",
+            "en": "Dynamic Migration Technology"
+        },
+        {
+            "title": "射频端通信业务数据流",
+            "en": "RF End Communication Business Data Stream"
+        },
+        {
+            "title": "热迁移",
+            "en": "Hot Migration"
+        },
+        {
+            "title": "USRP母板",
+            "en": "USRP Motherboard"
+        },
+        {
+            "title": "FPGA模块",
+            "en": "FPGA Module"
+        },
+        {
+            "title": "ADC/DAC模块",
+            "en": "ADC/DAC Module"
+        },
+        {
+            "title": "DDC/DUC模块",
+            "en": "DDC/DUC Module"
+        },
+        {
+            "title": "以太网物理层模块",
+            "en": "Ethernet Physical Layer Module"
+        },
+        {
+            "title": "辅助I/O数据接口",
+            "en": "Auxiliary I/O Data Interface"
+        }
+    ],
+    "relations": [
+        {
+            "source": "USRP设备",
+            "target": "实时信号处理单元",
+            "type": "包含"
+        },
+        {
+            "source": "实时信号处理单元",
+            "target": "动态迁移技术",
+            "type": "关联"
+        },
+        {
+            "source": "射频端通信业务数据流",
+            "target": "热迁移",
+            "type": "关联"
+        },
+        {
+            "source": "USRP母板",
+            "target": "FPGA模块",
+            "type": "包含"
+        },
+        {
+            "source": "USRP母板",
+            "target": "ADC/DAC模块",
+            "type": "包含"
+        },
+        {
+            "source": "USRP母板",
+            "target": "DDC/DUC模块",
+            "type": "包含"
+        },
+        {
+            "source": "USRP母板",
+            "target": "以太网物理层模块",
+            "type": "包含"
+        },
+        {
+            "source": "USRP母板",
+            "target": "辅助I/O数据接口",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "wishbone",
+            "en": "Wishbone"
+        },
+        {
+            "title": "FPGA子系统",
+            "en": "FPGA subsystem"
+        },
+        {
+            "title": "USRPN210FPGA子系统数据链路架构",
+            "en": "USRPN210 FPGA subsystem data link architecture"
+        },
+        {
+            "title": "UHD驱动",
+            "en": "UHD driver"
+        },
+        {
+            "title": "UHD在系统中的位置",
+            "en": "UHD's position in the system"
+        },
+        {
+            "title": "UHD的API接口函数",
+            "en": "UHD's API interface functions"
+        },
+        {
+            "title": "USRP与IBMServer之间的驱动接口程序",
+            "en": "Driver interface program between USRP and IBMServer"
+        },
+        {
+            "title": "USRP数据流的热切换技术",
+            "en": "USRP data stream hot switching technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "子模块等",
+            "target": "wishbone",
+            "type": "包含"
+        },
+        {
+            "source": "FPGA子系统",
+            "target": "wishbone",
+            "type": "通信"
+        },
+        {
+            "source": "FPGA子系统",
+            "target": "USRPN210FPGA子系统数据链路架构",
+            "type": "包含"
+        },
+        {
+            "source": "UHD驱动",
+            "target": "USRP与IBMServer之间的驱动接口程序",
+            "type": "实现"
+        },
+        {
+            "source": "UHD在系统中的位置",
+            "target": "UHD的API接口函数",
+            "type": "包含"
+        },
+        {
+            "source": "UHD的API接口函数",
+            "target": "USRP与IBMServer之间的驱动接口程序",
+            "type": "实现"
+        },
+        {
+            "source": "USRP数据流的热切换技术",
+            "target": "USRP与IBMServer之间的驱动接口程序",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "USRP设备初始化",
+            "en": "USRP Device Initialization"
+        },
+        {
+            "title": "USRP数据流热切换",
+            "en": "USRP Data Stream Hot Switching"
+        },
+        {
+            "title": "UHD API接口函数",
+            "en": "UHD API Interface Functions"
+        },
+        {
+            "title": "动态迁移系统",
+            "en": "Dynamic Migration System"
+        }
+    ],
+    "relations": [
+        {
+            "source": "USRP设备初始化",
+            "target": "动态迁移系统",
+            "type": "属于"
+        },
+        {
+            "source": "UHD API接口函数",
+            "target": "USRP设备初始化",
+            "type": "包含"
+        },
+        {
+            "source": "USRP数据流热切换",
+            "target": "USRP设备初始化",
+            "type": "依赖"
+        },
+        {
+            "source": "USRP数据流热切换",
+            "target": "动态迁移系统",
+            "type": "属于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "动态迁移系统方案示意图",
+            "en": "Dynamic migration system architecture diagram"
+        },
+        {
+            "title": "实时信号处理程序",
+            "en": "Real-time signal processing program"
+        },
+        {
+            "title": "D2D终端",
+            "en": "D2D terminal"
+        },
+        {
+            "title": "基站覆盖",
+            "en": "Base station coverage"
+        },
+        {
+            "title": "非基站覆盖",
+            "en": "Non-base station coverage"
+        },
+        {
+            "title": "局部通信网",
+            "en": "Local communication network"
+        },
+        {
+            "title": "USRP设备",
+            "en": "USRP device"
+        },
+        {
+            "title": "IBMServer",
+            "en": "IBMServer"
+        },
+        {
+            "title": "虚拟网卡",
+            "en": "Virtual network card"
+        },
+        {
+            "title": "ping数据业务",
+            "en": "Ping data business"
+        },
+        {
+            "title": "ZMQ通信机制",
+            "en": "ZMQ communication mechanism"
+        },
+        {
+            "title": "ip冲突",
+            "en": "IP conflict"
+        },
+        {
+            "title": "数据链路连接",
+            "en": "Data link connection"
+        }
+    ],
+    "relations": [
+        {
+            "source": "实时信号处理程序",
+            "target": "D2D终端",
+            "type": "属于"
+        },
+        {
+            "source": "实时信号处理程序",
+            "target": "基站覆盖",
+            "type": "适用于"
+        },
+        {
+            "source": "实时信号处理程序",
+            "target": "非基站覆盖",
+            "type": "适用于"
+        },
+        {
+            "source": "非基站覆盖",
+            "target": "局部通信网",
+            "type": "包含"
+        },
+        {
+            "source": "USRP设备",
+            "target": "IBMServer",
+            "type": "物理连接"
+        },
+        {
+            "source": "虚拟网卡",
+            "target": "数据业务接收端",
+            "type": "通信地址"
+        },
+        {
+            "source": "ping数据业务",
+            "target": "数据业务接收端",
+            "type": "通信验证"
+        },
+        {
+            "source": "ZMQ通信机制",
+            "target": "动态迁移系统",
+            "type": "通信方式"
+        },
+        {
+            "source": "ip冲突",
+            "target": "USRP设备",
+            "type": "影响"
+        },
+        {
+            "source": "数据链路连接",
+            "target": "USRP设备",
+            "type": "建立"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D信号处理程序", "en": "D2D signal processing program"},
+        {"title": "IBMServerl", "en": "IBMServerl"},
+        {"title": "IBMServer2", "en": "IBMServer2"},
+        {"title": "动态迁移系统", "en": "Dynamic migration system"},
+        {"title": "控制信息", "en": "Control information"},
+        {"title": "业务数据链路", "en": "Business data link"},
+        {"title": "Python", "en": "Python"},
+        {"title": "ZMQ通信机制", "en": "ZMQ communication mechanism"},
+        {"title": "标准输入终端", "en": "Standard input terminal"}
+    ],
+    "relations": [
+        {"source": "D2D信号处理程序", "target": "IBMServerl", "type": "迁移发起端"},
+        {"source": "D2D信号处理程序", "target": "IBMServer2", "type": "迁移目的端"},
+        {"source": "IBMServerl", "target": "动态迁移系统", "type": "包含"},
+        {"source": "IBMServer2", "target": "动态迁移系统", "type": "包含"},
+        {"source": "动态迁移系统", "target": "控制信息", "type": "包含"},
+        {"source": "动态迁移系统", "target": "Python", "type": "编写"},
+        {"source": "动态迁移系统", "target": "ZMQ通信机制", "type": "使用"},
+        {"source": "动态迁移系统", "target": "标准输入终端", "type": "等待输入"},
+        {"source": "动态迁移系统", "target": "业务数据链路", "type": "建立"},
+        {"source": "动态迁移系统", "target": "控制信息", "type": "发送"},
+        {"source": "动态迁移系统", "target": "控制信息", "type": "更新"},
+        {"source": "动态迁移系统", "target": "控制信息", "type": "保存"},
+        {"source": "动态迁移系统", "target": "控制信息", "type": "传送"},
+        {"source": "动态迁移系统", "target": "控制信息", "type": "迁移流程"},
+        {"source": "动态迁移系统", "target": "Python", "type": "编写"},
+        {"source": "动态迁移系统", "target": "标准输入终端", "type": "等待输入"},
+        {"source": "动态迁移系统", "target": "控制信息", "type": "接收"},
+        {"source": "动态迁移系统", "target": "业务数据链路", "type": "缩短中断时间"},
+        {"source": "动态迁移系统", "target": "动态迁移系统的主控程序", "type": "启动"},
+        {"source": "动态迁移系统的主控程序", "target": "标准输入终端", "type": "等待输入"},
+        {"source": "动态迁移系统的主控程序", "target": "控制模块", "type": "跳转执行"},
+        {"source": "控制模块", "target": "相应的处理工作", "type": "执行"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "DS控制指令", "en": "DS control command"},
+        {"title": "KL控制指令", "en": "KL control command"},
+        {"title": "M/Migration控制指令", "en": "M/Migration control command"},
+        {"title": "MB/MigrationBack控制指令", "en": "MB/MigrationBack control command"},
+        {"title": "DSR/DoubleStartRemote控制指令", "en": "DSR/DoubleStartRemote control command"},
+        {"title": "KR/KillRemote控制指令", "en": "KR/KillRemote control command"},
+        {"title": "h/help控制指令", "en": "h/help control command"},
+        {"title": "end控制指令", "en": "end control command"},
+        {"title": "q/quit控制指令", "en": "q/quit control command"},
+        {"title": "启动实时信号处理相关进程模块", "en": "Start real-time signal processing related process module"},
+        {"title": "结束实时信号处理相关进程模块", "en": "End real-time signal processing related process module"}
+    ],
+    "relations": [
+        {"source": "DS控制指令", "target": "启动实时信号处理相关进程模块", "type": "包含"},
+        {"source": "KL控制指令", "target": "结束实时信号处理相关进程模块", "type": "包含"},
+        {"source": "M/Migration控制指令", "target": "启动D2D实时信号处理程序由IBMServerl迁移到IBMServer?上的功能模块", "type": "包含"},
+        {"source": "MB/MigrationBack控制指令", "target": "启动D2D实时信号处理程序由IBMServer?迁移回到IBMServerl的功能模块", "type": "包含"},
+        {"source": "DSR/DoubleStartRemote控制指令", "target": "启动迁移目的端(IBMServer2)上的实时信号处理程序相关的D2D进程和USRP进程的处理模块", "type": "包含"},
+        {"source": "KR/KillRemote控制指令", "target": "结束IBMServer2的实时信号处理程序相关的D2D进程和USRP进程的处理模块", "type": "包含"},
+        {"source": "h/help控制指令", "target": "打印相关的控制指令说明信息到标准输出,以提示如何进行操作", "type": "包含"},
+        {"source": "end控制指令", "target": "执行结束IBMServer2上动态迁移系统的主控程序操作", "type": "包含"},
+        {"source": "q/quit控制指令", "target": "主控程序结束工作,退出", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "迁移发起端IBMServer中结束实时信号处理相关的D2D进程和USRP进程的处理流程",
+            "en": "The process of ending real-time signal processing related D2D processes and USRP processes in the migration initiator IBMServer"
+        },
+        {
+            "title": "实时信号处理迁移功能模块",
+            "en": "Real-time signal processing migration function module"
+        },
+        {
+            "title": "控制指令",
+            "en": "Control command"
+        },
+        {
+            "title": "ZMQ通信机制",
+            "en": "ZMQ communication mechanism"
+        },
+        {
+            "title": "虚拟网卡ip地址",
+            "en": "Virtual network card IP address"
+        },
+        {
+            "title": "D2D进程",
+            "en": "D2D process"
+        },
+        {
+            "title": "USRP实体",
+            "en": "USRP entity"
+        },
+        {
+            "title": "数据链路连接",
+            "en": "Data link connection"
+        }
+    ],
+    "relations": [
+        {
+            "source": "迁移发起端IBMServer中结束实时信号处理相关的D2D进程和USRP进程的处理流程",
+            "target": "实时信号处理迁移功能模块",
+            "type": "包含"
+        },
+        {
+            "source": "实时信号处理迁移功能模块",
+            "target": "控制指令",
+            "type": "涉及"
+        },
+        {
+            "source": "实时信号处理迁移功能模块",
+            "target": "ZMQ通信机制",
+            "type": "涉及"
+        },
+        {
+            "source": "实时信号处理迁移功能模块",
+            "target": "虚拟网卡ip地址",
+            "type": "涉及"
+        },
+        {
+            "source": "实时信号处理迁移功能模块",
+            "target": "D2D进程",
+            "type": "涉及"
+        },
+        {
+            "source": "实时信号处理迁移功能模块",
+            "target": "USRP实体",
+            "type": "涉及"
+        },
+        {
+            "source": "实时信号处理迁移功能模块",
+            "target": "数据链路连接",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "实时信号处理动态迁移", "en": "Real-time signal processing dynamic migration"},
+        {"title": "实时信号处理迁回功能模块", "en": "Real-time signal processing migration module"},
+        {"title": "启动迁移目的端实时信号处理相关进程模块", "en": "Start migration destination real-time signal processing related process module"}
+    ],
+    "relations": [
+        {"source": "实时信号处理动态迁移", "target": "实时信号处理迁回功能模块", "type": "包含"},
+        {"source": "实时信号处理动态迁移", "target": "启动迁移目的端实时信号处理相关进程模块", "type": "包含"},
+        {"source": "实时信号处理迁回功能模块", "target": "启动迁移目的端实时信号处理相关进程模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "启动迁移目的端实时信号处理相关进程的处理流程",
+            "en": "The process of starting the real-time signal processing related processes on the destination side of the migration"
+        },
+        {
+            "title": "结束迁移目的端实时信号处理相关进程模块",
+            "en": "The module for ending the real-time signal processing related processes on the destination side of the migration"
+        },
+        {
+            "title": "主控程序的其他处理模块",
+            "en": "Other processing modules of the main control program"
+        },
+        {
+            "title": "迁移目的端实时信号任务动态迁移的设计",
+            "en": "Design of dynamic migration of real-time signal tasks on the destination side of the migration"
+        },
+        {
+            "title": "动态迁移系统的主控程序处理流程",
+            "en": "The process of the main control program of the dynamic migration system"
+        }
+    ],
+    "relations": [
+        {
+            "source": "启动迁移目的端实时信号处理相关进程的处理流程",
+            "target": "结束迁移目的端实时信号处理相关进程模块",
+            "type": "包含"
+        },
+        {
+            "source": "主控程序的其他处理模块",
+            "target": "结束迁移目的端实时信号处理相关进程模块",
+            "type": "包含"
+        },
+        {
+            "source": "动态迁移系统的主控程序处理流程",
+            "target": "启动迁移目的端实时信号处理相关进程的处理流程",
+            "type": "包含"
+        },
+        {
+            "source": "动态迁移系统的主控程序处理流程",
+            "target": "主控程序的其他处理模块",
+            "type": "包含"
+        },
+        {
+            "source": "动态迁移系统的主控程序处理流程",
+            "target": "迁移目的端实时信号任务动态迁移的设计",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "模块", "en": "Module"},
+        {"title": "结束D2D进程处理模块", "en": "End D2D Process Handling Module"},
+        {"title": "获取虚拟网卡IP操作处理模块", "en": "Get Virtual Network Card IP Operation Handling Module"},
+        {"title": "配置虚拟网卡IP操作处理模块", "en": "Configure Virtual Network Card IP Operation Handling Module"},
+        {"title": "获取迁移目的端Control变量处理模块", "en": "Get Control Variable Handling Module"},
+        {"title": "启动USRP进程模块", "en": "Start USRP Process Module"},
+        {"title": "创建USRP实体模块", "en": "Create USRP Entity Module"},
+        {"title": "USRP实体与USRP设备数据链路建立模块", "en": "Establish Data Link between USRP Entity and USRP Device Module"}
+    ],
+    "relations": [
+        {"source": "模块", "target": "结束D2D进程处理模块", "type": "包含"},
+        {"source": "模块", "target": "获取虚拟网卡IP操作处理模块", "type": "包含"},
+        {"source": "模块", "target": "配置虚拟网卡IP操作处理模块", "type": "包含"},
+        {"source": "模块", "target": "获取迁移目的端Control变量处理模块", "type": "包含"},
+        {"source": "模块", "target": "启动USRP进程模块", "type": "包含"},
+        {"source": "模块", "target": "创建USRP实体模块", "type": "包含"},
+        {"source": "模块", "target": "USRP实体与USRP设备数据链路建立模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "USRP实体与USRP设备之间数据链路链接的操作流程", "en": "Data link connection process between USRP entity and USRP device"},
+        {"title": "启动实时信号处理D2D进程模块", "en": "Start real-time signal processing D2D process module"},
+        {"title": "结束USRP进程模块", "en": "End USRP process module"},
+        {"title": "结束实时信号处理D2D进程模块", "en": "End real-time signal processing D2D process module"},
+        {"title": "结束实时信号处理相关进程模块", "en": "End real-time signal processing related process module"},
+        {"title": "获取和配置虚拟网卡ip地址模块", "en": "Get and configure virtual network card IP address module"}
+    ],
+    "relations": [
+        {"source": "USRP实体与USRP设备之间数据链路链接的操作流程", "target": "启动实时信号处理D2D进程模块", "type": "包含"},
+        {"source": "USRP实体与USRP设备之间数据链路链接的操作流程", "target": "结束USRP进程模块", "type": "包含"},
+        {"source": "启动实时信号处理D2D进程模块", "target": "结束实时信号处理D2D进程模块", "type": "包含"},
+        {"source": "结束实时信号处理D2D进程模块", "target": "结束实时信号处理相关进程模块", "type": "包含"},
+        {"source": "结束USRP进程模块", "target": "结束实时信号处理相关进程模块", "type": "包含"},
+        {"source": "获取和配置虚拟网卡ip地址模块", "target": "结束实时信号处理相关进程模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ZMQ机制", "en": "ZMQ mechanism"},
+        {"title": "ip地址值", "en": "IP address value"},
+        {"title": "虚拟网卡地址", "en": "Virtual network card address"},
+        {"title": "ifconfig指令", "en": "ifconfig command"},
+        {"title": "控制指令", "en": "Control command"},
+        {"title": "异常处理", "en": "Exception handling"},
+        {"title": "实时信号处理", "en": "Real-time signal processing"},
+        {"title": "数据业务", "en": "Data business"},
+        {"title": "ping指令", "en": "ping command"},
+        {"title": "动态迁移操作", "en": "Dynamic migration operation"}
+    ],
+    "relations": [
+        {"source": "ZMQ机制", "target": "set_tun_ip控制指令", "type": "包含"},
+        {"source": "set_tun_ip控制指令", "target": "ip地址值", "type": "包含"},
+        {"source": "ip地址值", "target": "tun_ip变量", "type": "包含"},
+        {"source": "ifconfig指令", "target": "虚拟网卡地址", "type": "包含"},
+        {"source": "ZMQ机制", "target": "控制指令", "type": "包含"},
+        {"source": "控制指令", "target": "get_comrol控制指令", "type": "包含"},
+        {"source": "get_comrol控制指令", "target": "Control变量信息", "type": "包含"},
+        {"source": "控制指令", "target": "end控制指令", "type": "包含"},
+        {"source": "ZMQ机制", "target": "异常处理", "type": "包含"},
+        {"source": "异常处理", "target": "命令执行异常消息", "type": "包含"},
+        {"source": "实时信号处理", "target": "数据业务", "type": "包含"},
+        {"source": "数据业务", "target": "ping指令", "type": "包含"},
+        {"source": "动态迁移操作", "target": "获取迁移发起端虚拟网卡ip", "type": "包含"},
+        {"source": "获取迁移发起端虚拟网卡ip", "target": "配置迁移目的端虚拟网卡", "type": "包含"},
+        {"source": "动态迁移操作", "target": "向迁移目的端传送控制信息并启动D2D程序进程", "type": "包含"},
+        {"source": "动态迁移操作", "target": "业务中断时间", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "动态迁移技术", "en": "Dynamic migration technology"},
+        {"title": "实时信号处理", "en": "Real-time signal processing"},
+        {"title": "USRP设备", "en": "USRP device"},
+        {"title": "中继处理业务", "en": "Relay processing business"},
+        {"title": "路由表信息", "en": "Routing table information"}
+    ],
+    "relations": [
+        {"source": "修改迁移目的端eth3端口", "target": "数据业务丢包个数", "type": "影响"},
+        {"source": "链接USRP实体与USRP设备", "target": "实时信号处理程序同步", "type": "关联"},
+        {"source": "通过对搭建的实时信号处理的动态迁移系统进行测试", "target": "动态迁移过程总花费时间", "type": "关联"},
+        {"source": "通过对搭建的实时信号处理的动态迁移系统进行测试", "target": "数据业务丢包个数", "type": "影响"},
+        {"source": "实时动态迁移系统方案", "target": "基于虚拟机系统的迁移方案", "type": "比较"},
+        {"source": "实时动态迁移系统方案", "target": "实时信号处理", "type": "应用"},
+        {"source": "中继处理业务的应用", "target": "中继处理的可靠性", "type": "关联"},
+        {"source": "中继处理业务的应用", "target": "资源处理效率", "type": "关联"},
+        {"source": "中继处理的动态迁移技术方案", "target": "实时信号处理的动态迁移系统架构图", "type": "包含"},
+        {"source": "中继处理的动态迁移技术方案", "target": "中继处理业务的实时信号处理程序", "type": "包含"},
+        {"source": "中继处理业务的实时信号处理程序", "target": "LTE通信协议", "type": "基于"},
+        {"source": "中继处理业务的实时信号处理程序", "target": "D2D程序", "type": "基于"},
+        {"source": "中继处理业务的路由表信息迁移", "target": "路由表信息的建立", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "路由表信息", "en": "Routing Table Information"},
+        {"title": "IP地址索引", "en": "IP Address Index"},
+        {"title": "路由表建立过程", "en": "Routing Table Establishment Process"},
+        {"title": "路由表信息的迁移", "en": "Routing Table Information Migration"},
+        {"title": "中继处理的动态迁移方案处理流程", "en": "Dynamic Migration Process for Relay Processing"},
+        {"title": "迁移发起端的中继处理迁移流程", "en": "Relay Processing Migration Process for Migration Initiator"},
+        {"title": "迁移目的端的中继处理迁移流程", "en": "Relay Processing Migration Process for Migration Destination"}
+    ],
+    "relations": [
+        {"source": "路由表信息", "target": "IP地址索引", "type": "包含"},
+        {"source": "路由表信息", "target": "路由表建立过程", "type": "包含"},
+        {"source": "路由表信息", "target": "路由表信息的迁移", "type": "包含"},
+        {"source": "路由表信息的迁移", "target": "迁移发起端的中继处理迁移流程", "type": "包含"},
+        {"source": "路由表信息的迁移", "target": "迁移目的端的中继处理迁移流程", "type": "包含"},
+        {"source": "中继处理的动态迁移方案处理流程", "target": "迁移发起端的中继处理迁移流程", "type": "包含"},
+        {"source": "中继处理的动态迁移方案处理流程", "target": "迁移目的端的中继处理迁移流程", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "迁移发起", "en": "Migration initiation"},
+        {"title": "ZMQ机制", "en": "ZMQ mechanism"},
+        {"title": "路由表信息变量", "en": "Routing table information variable"},
+        {"title": "迁移目的端", "en": "Migration destination"},
+        {"title": "routejist变量", "en": "routejist variable"},
+        {"title": "D2D进程", "en": "D2D process"},
+        {"title": "route_t结构体", "en": "route_t structure"},
+        {"title": "中继处理业务", "en": "Relay processing business"},
+        {"title": "动态迁移系统", "en": "Dynamic migration system"},
+        {"title": "中继转发点", "en": "Relay forwarding point"},
+        {"title": "迁移指令", "en": "Migration command"},
+        {"title": "计算处理资源", "en": "Computing and processing resources"},
+        {"title": "处理效率", "en": "Processing efficiency"},
+        {"title": "处理能力", "en": "Processing capability"},
+        {"title": "实时信号处理动态迁移技术", "en": "Real-time signal processing dynamic migration technology"},
+        {"title": "可扩展性", "en": "Scalability"}
+    ],
+    "relations": [
+        {"source": "迁移发起", "target": "ZMQ机制", "type": "包含"},
+        {"source": "迁移发起", "target": "路由表信息变量", "type": "包含"},
+        {"source": "迁移目的端", "target": "ZMQ机制", "type": "包含"},
+        {"source": "迁移目的端", "target": "routejist变量", "type": "包含"},
+        {"source": "迁移目的端", "target": "D2D进程", "type": "包含"},
+        {"source": "D2D进程", "target": "route_t结构体", "type": "包含"},
+        {"source": "中继处理业务", "target": "动态迁移系统", "type": "包含"},
+        {"source": "中继处理业务", "target": "中继转发点", "type": "包含"},
+        {"source": "动态迁移系统", "target": "迁移指令", "type": "包含"},
+        {"source": "动态迁移系统", "target": "计算处理资源", "type": "包含"},
+        {"source": "动态迁移系统", "target": "处理效率", "type": "包含"},
+        {"source": "动态迁移系统", "target": "处理能力", "type": "包含"},
+        {"source": "实时信号处理动态迁移技术", "target": "可扩展性", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "无线通信技术发展", "en": "Development of wireless communication technology"},
+        {"title": "移动网络业务需求", "en": "Demand for mobile network services"},
+        {"title": "计算处理资源局部性紧张", "en": "Local tension of computing resources"},
+        {"title": "计算处理资源闲置浪费", "en": "Waste of computing resources"},
+        {"title": "计算资源整合与动态调度", "en": "Integration and dynamic scheduling of computing resources"},
+        {"title": "实时信号处理动态迁移技术", "en": "Real-time signal processing dynamic migration technology"},
+        {"title": "资源虚拟化", "en": "Resource virtualization"},
+        {"title": "计算处理资源池", "en": "Computing resource pool"},
+        {"title": "云计算能力", "en": "Cloud computing capability"},
+        {"title": "资源调度分配算法", "en": "Resource scheduling and allocation algorithm"}
+    ],
+    "relations": [
+        {"source": "无线通信技术发展", "target": "移动网络业务需求", "type": "cause"},
+        {"source": "移动网络业务需求", "target": "计算处理资源局部性紧张", "type": "cause"},
+        {"source": "移动网络业务需求", "target": "计算处理资源闲置浪费", "type": "cause"},
+        {"source": "计算处理资源局部性紧张", "target": "计算资源整合与动态调度", "type": "solution"},
+        {"source": "计算处理资源闲置浪费", "target": "计算资源整合与动态调度", "type": "solution"},
+        {"source": "计算资源整合与动态调度", "target": "实时信号处理动态迁移技术", "type": "solution"},
+        {"source": "实时信号处理动态迁移技术", "target": "资源虚拟化", "type": "implementation"},
+        {"source": "资源虚拟化", "target": "计算处理资源池", "type": "implementation"},
+        {"source": "计算处理资源池", "target": "云计算能力", "type": "implementation"},
+        {"source": "实时信号处理动态迁移技术", "target": "资源调度分配算法", "type": "solution"}
+    ]
+}

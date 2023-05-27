@@ -1,0 +1,30 @@
+4.33基于RMAB的业务分流调度策略
+定义ISD. (Integrated State Detector)表示综合路径状态参数，其中cw”d,•表 示子流i的拥塞窗口大小(以字节为单位)，交付时延差AEDD.的计算方法上以 给出(单位为毫秒)，由于交付时延差可能为负数，所以用绝对值进行计算，化表 小子流i的丢包率(百分比表ZK)。1SD］与c-wnd.成正比，与△£££>；,如成反比。
+/S。,的计算公式为：
+ISD. = _cw 也.	(4-13)
+| AEDD, | *化
+定义规则如下：
+若ISD. = 0 ,即拥塞窗口为0,且EDD, > 3RTTi则为bad状态
+若JSDi >0 ,即血>0 ,则为good状态，比较JSDi的大小，最先调度1SD, 最大的子流，其次是次大的子流，以此类推。
+利用RMAB模型中的平衡索引优化方法，首先对每个子流的/SO,建立一个 马尔科夫过程，再利用平衡索引优化策略进行数据分组调度，伪代码如下：
+42
+Input: the set of available interface 1 = {/r,/2) , the set of subflows
+At any time step for a fixed 2 //already got the optimal 2 by iteration
+Update S = {i：	> 0} and z. = z.(2)
+if S is not NULL then
+repeat
+if there are subflows in (g,l) then //good state
+f= max(ISD,i)
+M = minW/Q
+Offloading M packets on the subflows f
+else if t > t. then // ready state
+M =
+Offloading M packets on the subflows in (b, t)
+else
+Do not transmit packets at this step
+end if
+end if
+在此算法中，Mb定义为在传输层数据缓存剩余的空间大小；为拥塞窗 口大小，M =	为接收端缓存可以获取的最大数据大小。】=分
+别为LTE和WiFi接口，S = {i：m(；l)>0}表示good状态的子流集合，(s,f)表 示子流在t,步之前的状态。我们给定一个X使得2>(l-f)OPT/：,并且 G(2)> OPT 12 o对于给定的人，LPLagrange(A)的解就是对于S中每个子流 的最优运作策略。其中，OPT表示Whittle's LP的优化目标。定义(g,i)为子流 处于good状态。匕(4)表示对于子流i,和给定的惩罚九获得最大名以)应取的最 小的t值.(b,t)表示子流处于ready状态，在E弓时，子流会转移到good状态。
+43
+(ZM)表示子流在，〈匕时处于bad状态。当集合S不为空，即有子流处于good 状态时，始终选择/SQ最小的子流先进行传输，再选择次小的进行传输， 以此类推。每次调度过程中，在选中的子流中= m\n{Mh,Wf)的数据。当 这一时隙没有任何子流处于good或者ready的状态时，将不在此轮传输数据。

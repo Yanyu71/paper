@@ -1,0 +1,17 @@
+4.1.3O.GASGAATFET的工艺设计
+在第三章的最后，本论文设计了 GASGAATFET的加工工艺流程图，现在， 本小节将在其基础上，设计O-GAS GAATFET的加工流程，具体如图4-7所示。
+:' cr -"(di
+「
+"i"…ji
+图4-7 O-GAS GAA TFET的加工流程图
+下面介绍O-GAS GAATFET的详细加工流程，与GAS GAATFET重复的步 骤使用简述的形式。
+⑴形成器件漏极和沟道，如图4-7⑻所示。
+(2) 接形成器件的圆柱体外层。首先，在SOI上沉积圆形硬掩膜层，其横切 面图如图4-7(b),接着通过沉淀和刻蚀形成图4-7(c)中的牺牲硅氧化层，最后向 下刻蚀形成图4-7 (d沖的GAS GAATFET晶体管的外层。其中，为了形成具有 Overlap长度的O-GAS GAATFET,在向下刻蚀形成图4-7(d)时,需要根据Overlap 的长度调整向下刻蚀的厚度。O-GAS GAATFET和GAS GAATFET的加工工艺 的区别就在这里。
+(3) 形成器件的栅极，图4-7(e)(g)所示。
+(4) 形成源极中的错层，如图4-7(g)(h)(i)所示。
+42
+(5) 形成源极中的硅层，如题4-7①(k)⑴所示。
+(6) 最后，形成连接和隔离层。如图4-7(m)所示。
+到此，O-GAS GAA TFET器件制备完成。
+O-GAS GAA TFET与GAS GAA TFET加工流程的主要区别在第4-7(d)步， 当使用电子束光刻技术形成圆柱型硅柱的时候，GAS GAA TFET使用电子束光 刻刻蚀的厚度是固定的，而O-GAS GAA TFET刻蚀的厚度是由所需Overlap长 度决定的，如下图4-8(a)所示，通过调节电子束光刻刻蚀的厚度，就可以调整O- GAS GAATFET中Overlap工程的长度。
+图4-8 O-GAS GAA TFET和GAS GAA TFET的工艺区别(a)过程：(b)结果。

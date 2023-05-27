@@ -1,0 +1,54 @@
+2.6结论
+本章研究认知信息的表征理论，主要针对空间和时间维度的认知信息，使用
+“地理嫡'‘和“时间嫡”表示空时认知信息的不确定性，使用“无线电参数误差” 来表示认知信息表征的错误率，得到地理嫡、时间嫡、无线电参数误差与认知信 息表征的参数以及栅格操作的关系，呈现认知信息空时表征的对偶性。其次，本 文建立认知信息度量理论，面向非完美认知，用“认知信息量”统一量化多个维 度的认知信息，表示认知无线网络通过认知的手段消除的资源状态的不确定性， 得到认知信息量与系统参数，尤其是与频谱利用率和主次系统干扰概率的关系， 进一步将认知信息量应用于频谱检测的参数优化中。然后本文研究认知信息传递 方法，基于认知信息表征理论设计准确快速的认知信息传递方案，设计栅格融合 方案，从而实现在移动环境下的认知信息高效传递。最后本文进行了大量的数值 仿真，呈现了认知信息表征、度量、传递中关键参量之间的关系，同时证明了本 文设计的认知信息传递方案的高效性。同时本文还对认知信息传递方案进行了硬 件验证，这一方面验证了本文的方案具有可行性，另一方面也验证了理论结果的 正确性。
+参考文献
+[2-1]. Qualcomm, "The lOOOx data challenge/5 2013. [Online Released]： Available at Web Site: https://www.qualcomm.com/invention/technologies/1000x.
+[2-2]. M. A. McHenry, 4<NSF Spectrum Occupancy Measurements Project Summary5^, Technical Report, Shared Spectrum Company, 2005.
+[2-3]. J. Mitola, "Cognitive radio: An integrated agent architecture for software defined radio/9 Ph.D. dissertation, KTH Royal Inst, of Technol., Stockholm, Sweden, 2000.
+[2-4]. 1TU-R M.2225, "Introduction to cognitive radio systems in the land mobile service,55 2011.
+[2-5]. B. Wang and K. J. R. Liu, "'Advances in cognitive radio networks: A survey," IEEE Journal of Selected Topics in Signal Processing, vol.5, no. 1, pp. 5-23, Feb. 2011.
+[2-6]. T. Yucek and H. Arslan, “A Survey of Spectrum Sensing Algorithms for Cognitive Radio Applications,IEEE Communications Surveys & Tutorials, vo. 11, no. 1, pp. 116-130, Mar. 2009.
+93
+[2-7]. Y. Zhao, S. Mao, J. 0. Neel, J. H. Reed, ^Performance Evaluation of Cognitive Radios: Metrics, Utility Functions, and Methodology/5 Proceedings of the IEEE, vol. 97, no. 4, pp. 642-659, Apr. 2009.
+[2-8]. W. Lee, G. Nat, D.-H. Cho, "Comparison of Channel State Acquisition Schemes in Cognitive Radio Environment,IEEE Transactions on Wireless Communications, vol. 13, no. 4, pp. 2295-2307, Feb. 2014.
+[2-9]. F. Paisana, N. Marchetti, and L. A. DaSilva, “Radar, TV and Cellular Bands: Which Spectrum Access Techniques fbr Which Bands?,^ IEEE Communications Surveys & Tutorials, vol. 16, no. 3, pp. 1193・1220, Apr. 2014.
+[2-10]. J, Perez-Romero, O. Salient, R. Agusti and L. Giupponi, “A novel ondemand cognitive pilot channel enabling dynamic spectrum allocation/5 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 46-54, Apr. 2007.
+[2-11]. Q. Zhang, Z. Feng, G. Zhang, Q. Li, and P. Zhang, "'Efficient Mesh Division and Differential Information Coding Schemes in Broadcast Cognitive Pilot Channel/5 Wireless Personal Communications, vol. 63, no. 2, pp. 363-392, Mar. 2012.
+[2-12]. Z. Wei and Z. Feng, “A Geographically Homogeneous Mesh Grouping Scheme for Broadcast Cognitive Pilot Channel in Heterogeneous Wireless Networks,55 IEEE Global Communications Conference (GLOBECOM) Workshops, pp. 1008-1012, Dec. 201L
+[2-13]. FCC, “Second Report and Order and Memorandum Opinion and Order: In the Matter of Unlicensed Operation in the TV Broadcast Bands," Doc. 08-260, Nov, 2008.
+[2-14]. FCC, "Second Memorandum Opinion and Order/5 Doc. 10-174, Sep. 2010.
+[2-15]. ECC, "Technical and operational requirements fbr the operation of white space devices under geo-location approach,” ECC report 186, Jan. 2013.
+[2-16]. C. Stevenson, G. Chouinard, Z. Lei, W. Hu, S. J. Shellhammer, W. Caldwell, "IEEE 802.22: The first cognitive radio wireless regional area network standard,55 IEEE Communications Magazine, voL 47, no. 1, pp. 130-138, Jan. 2009.
+[2-17]. M. Barrie, S. Delaere, P. Anker and P. Ballon, "Aligning technology, business and regulatory scenarios fbr cognitive radio,” Telecommunications Policy, vol.
+94
+36, no. 7, pp. 546-559, Apr. 2012.
+[2-18]. M. Barrie, S. Delaere, G. Sukareviciene, J. Gesquiere, I. Moerman, “Geolocation Database beyond TV White Space? Matching Applications with Database Requirements,55 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 467-478, Oct. 2012.
+[2-19]. K. Harrison and A. Sahai, ''Potential collapse of whitespaces and the prospect for a universal power rule,” IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 316-327, May 2011.
+[2-20]. C-S. Sum, H. Harada, E Kojima, Z. Lan, R. Funada, "Smart Utility Networks in TV White Space/5 IEEE Communications Magazine, vol. 49, no. 7, pp. 132-139, July 2011.
+[2-21]. H. Ganapathy, M. Madhavan, M. Chetlur, S. Kalyanaraman, "On Exploiting Degrees-Of^Freedom in Whitespaces," IEEE International Conference on Computer Communications (INFOCOM), pp. 1773-1781, Mar, 2012.
+[2-22]. V. Petrini, H. R. Karimi, “TV white space databases: Algorithms for the calculation of maximum permitted radiated power levels/9 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 552-560, Oct. 2012.
+[2-23]. J. Heo, G. Noh and S. Park, et al., "Mobile TV White Space with Multi-Region Based Mobility Procedure,IEEE Wireless Communications Letters, vol. 1, no. 6, pp. 569-572, Dec. 2012.
+[2-24]. S. Grimoud, B. Sayrac, S. Ben Jemaa and E. Moulines, “An Algorithm for Fast REM Construction,95 International ICST Conference on Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 251-255, June 2011.
+[2-25]. S. Grimoud, B. Sayrac, S. B. Jemaa and E, Moulines, "Best Sensor Selection fbr An Iterative REM Construction/3 IEEE Vehicular Technology Conference (VTC Fall), pp. 1-5, Sept. 2011.
+[2-26]. Z. Wei, Q. Zhang, Z. Feng, W. Li and T. A. Gulliver, “On the Construction of Radio Environment Maps for Cognitive Radio Networks/5 IEEE Wireless Communications and Networking Conference (WCNC), pp. 4504-4509, Apr. 2013.
+[2-27]. J. Mitola, G. Q. Maguire Jr., ''Cognitive radio: Making software radios more personal,IEEE Personal Communications, vol. 6, no. 4, pp. 13-18, Aug.
+95
+1999,
+[2-28]. R. Wang and M. Tao, “Blind Spectrum Sensing by Information Theoretic Criteria fbr Cognitive Radios/5 IEEE Transactions on Vehicular Technology, vol. 59, no. 8, pp. 3806-3817, Oct. 2010.
+[2-29]. S. Liu, J. Shen, R. Zhang, Z. Zhang and Y. Liu, "Information theoretic criterion-based spectrum sensing for cognitive radio/5 IET Communications, vol. 2, no. 6, pp. 753-762, July 2008.
+[2-30]. F. F. Digham, M. S. Alouini and M. K. Simon, “On the Energy Detection of Unknown Signals Over Fading Channels,5, IEEE Transactions on Communications, vol.55, no. 1, pp. 21-24, Jan. 2007.
+[2-31]. Meir Feder, Neri Merhav, "Relations between Entropy and Error Probability/5 IEEE Transactions on Information Theory, vol. 40, no. 1, Jan. 1994.
+[2-32]. P. Demestichas, G. Dimitrakopoulos, J. Strassner and D. Bourse, ^Introducing Reconfigurability and Cognitive Networks Concepts in the Wireless World," IEEE Vehicular Technology Magazine, vol. 1, no. 2, pp. 32-39, 2006.
+[2-33]. S. Haykin, ''Cognitive Radio: Brain-Empowered Wireless Communications/5 IEEE Journal on Selected Areas in Communications, vol. 23, no. 2, pp. 201-220, Feb. 2005.
+[2-34]. W. Ahmed, J. Gao and M. Faulkner, "Performance Evaluation of a Cognitive Radio Network with Exponential and Truncated Usage Models,” International Symposium on Wireless Pervasive Computing, pp. 1-5, Feb. 2009.
+[2-35]. D. Cavdar, H. B. Yilmaz, T. Tugcu and F. Alagoz, "Analytical Modeling and Performance Evaluation of Cognitive Radio Networks,” Sixth Advanced International Conference on Telecommunications (AICT), pp. 35-40, May 2010.
+[2-36]. Y. -C. Liang, Y. Zeng, E. C. Y. Peh and A. T. Hoang, "Sensing-Throughput Tradeoff for Cognitive Radio Networks： IEEE Transactions on Wireless Communications, vol. 7, no. 4, pp. 1326-1337, Apr. 2008.
+[2-37]. J. Shen, S. Liu, L. Zeng, G. Xie, J. Gao and Y. Liu, "Optimisation of cooperative spectrum sensing in cognitive radio network,5, IET Communications, vol. 3, no. 7, pp. 1170-1178, July 2009.
+[2-38]. Qixun Zhang and Zhiyong Feng, “A Novel Mesh Division Scheme using Cognitive Pilot Channel in Cognitive Radio Environment,5, IEEE Vehicular Technology Conference (VTC Fall), Sept. 2009.
+96
+[2-39]. Qixun Zhang, Zhiyong Feng and Guoyi Zhang, "A Novel Homogeneous Mesh Grouping Scheme for Broadcast Cognitive Pilot Channel in Cognitive Wireless Networks," IEEE International Conference on Communications (ICC), May 2010.
+[2-40]. T. Camp, J, Boleng and V Davies, “A Survey of Mobility Models fbr Ad Hoc Network Research,” Wireless Communications and Mobile Computing, vol. 2, no. 5, pp. 483-502, 2002.
+[2-41]. T. Cover and J. Thomas, ''Elements of information theory/5 Wiley, 1991.
+[2-42]. C. E. Shannon,HA Mathematical Theory of Communication,H The Bell System Technical Journal, vol. 27, pp. 379 - 423, 623 - 656, Oct. 1948.
+97
+98

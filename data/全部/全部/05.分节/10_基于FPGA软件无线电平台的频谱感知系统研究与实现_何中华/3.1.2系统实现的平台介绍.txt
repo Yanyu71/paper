@@ -1,0 +1,4 @@
+3.1.2系统实现的平台介绍
+经过仔细的调研分析，系统实现采用的FPGA开发板为Xilinx公司提供的基 于Vertex-6系列FPGA芯片的ML605开发套件，它的核心芯片是Virtex-6 XC6VLX240 T【i4】，具有丰富的逻辑资源和存储资源，1GB的DDR3 Memory内存， 512MB的板载Flash资源，32MB的Linear BPI Flash, 200MHz的板载晶振，丰富 的接口资源，如FMC-HPC, FMC-LPC. SMA、PCIe等,可以满足频谱感知系统的 设计要求。
+系统的射频子板采用ADI公司的AD-FMCOMMS1-EBZ板卡，它是一款FMC 接口的模拟前端硬件平台，适用于各类学术研究、工业和国防应用。 AD-FMCOMMS1-EBZ子板支持400MHz~4GHz频率范围内的射频应用，它采用软 件定义无线电(Software Defined Radio, SDR)的思想，无需更改硬件，通过软 件便可实现对不同频率进行定制、更改发送和接收的增益等控制功能。
+19

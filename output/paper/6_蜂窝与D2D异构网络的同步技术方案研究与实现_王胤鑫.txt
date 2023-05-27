@@ -1,0 +1,1327 @@
+﻿{
+    "knowledge_points": [
+        {"title": "TD-LTE简介", "en": "Introduction to TD-LTE"},
+        {"title": "混合蜂窝网络中D2D通信", "en": "D2D Communication in Hybrid Cellular Networks"}
+    ],
+    "relations": [
+        {"source": "TD-LTE简介", "target": "LTE", "type": "属于"},
+        {"source": "TD-LTE简介", "target": "OFDM/FDMA", "type": "包括"},
+        {"source": "TD-LTE简介", "target": "UMTS", "type": "演进自"},
+        {"source": "TD-LTE简介", "target": "LTE", "type": "长期演进项目"},
+        {"source": "TD-LTE简介", "target": "频谱效率", "type": "具备较大优势"},
+        {"source": "TD-LTE简介", "target": "混合蜂窝网络中D2D通信", "type": "应用于未来移动业务"},
+        {"source": "混合蜂窝网络中D2D通信", "target": "蜂窝无线移动通信系统", "type": "基于"},
+        {"source": "混合蜂窝网络中D2D通信", "target": "LTE-A", "type": "提供新的通信技术"},
+        {"source": "混合蜂窝网络中D2D通信", "target": "D2D直通通信", "type": "提高频谱利用率和通信效率"},
+        {"source": "混合蜂窝网络中D2D通信", "target": "混合蜂窝与端到端网络", "type": "基于此基础提出来的网络系统"},
+        {"source": "混合蜂窝网络中D2D通信", "target": "LTE系统", "type": "保证各UE上行信号到达基站时具有正交性"},
+        {"source": "混合蜂窝网络中D2D通信", "target": "TAD2D", "type": "保持用户间同步"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异构网络", "en": "Heterogeneous network"},
+        {"title": "同步源", "en": "Synchronization source"},
+        {"title": "同步技术", "en": "Synchronization technology"},
+        {"title": "D2D通信", "en": "Device-to-device communication"},
+        {"title": "同步机制", "en": "Synchronization mechanism"},
+        {"title": "LTE系统", "en": "LTE system"},
+        {"title": "总体架构", "en": "Overall architecture"},
+        {"title": "APP应用层", "en": "APP application layer"},
+        {"title": "Scheduler调度器", "en": "Scheduler scheduler"},
+        {"title": "PHY物理层", "en": "PHY physical layer"},
+        {"title": "USRP射频前端", "en": "USRP RF front end"},
+        {"title": "数据通路", "en": "Data path"},
+        {"title": "资源调度", "en": "Resource scheduling"},
+        {"title": "信令流程通信控制", "en": "Signaling process communication control"},
+        {"title": "状态模式", "en": "State pattern"},
+        {"title": "业务传输", "en": "Business transmission"}
+    ],
+    "relations": [
+        {"source": "异构网络", "target": "D2D通信", "type": "包含"},
+        {"source": "异构网络", "target": "LTE系统", "type": "包含"},
+        {"source": "同步源", "target": "蜂窝基站", "type": "包含"},
+        {"source": "同步源", "target": "邻近D2D终端", "type": "包含"},
+        {"source": "同步源", "target": "邻近蜂窝用户", "type": "包含"},
+        {"source": "同步技术", "target": "蜂窝下行Cell同步技术", "type": "包含"},
+        {"source": "同步技术", "target": "上行D2DSync同步技术", "type": "包含"},
+        {"source": "同步技术", "target": "上行CellUE同步技术", "type": "包含"},
+        {"source": "LTE系统", "target": "总体架构", "type": "包含"},
+        {"source": "总体架构", "target": "APP应用层", "type": "包含"},
+        {"source": "总体架构", "target": "Scheduler调度器", "type": "包含"},
+        {"source": "总体架构", "target": "PHY物理层", "type": "包含"},
+        {"source": "总体架构", "target": "USRP射频前端", "type": "包含"},
+        {"source": "Scheduler调度器", "target": "数据通路", "type": "包含"},
+        {"source": "Scheduler调度器", "target": "资源调度", "type": "包含"},
+        {"source": "Scheduler调度器", "target": "信令流程通信控制", "type": "包含"},
+        {"source": "状态模式", "target": "上行状态机", "type": "包含"},
+        {"source": "状态模式", "target": "下行状态机", "type": "包含"},
+        {"source": "业务传输", "target": "同步方案", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "物理层小区ID", "en": "Physical layer cell ID"},
+        {"title": "PSS序列", "en": "Primary synchronization sequence"},
+        {"title": "SSS序列", "en": "Secondary synchronization sequence"},
+        {"title": "帧结构", "en": "Frame structure"},
+        {"title": "时间同步", "en": "Time synchronization"},
+        {"title": "频率同步", "en": "Frequency synchronization"},
+        {"title": "时域跟踪", "en": "Time-domain tracking"},
+        {"title": "频域跟踪", "en": "Frequency-domain tracking"},
+        {"title": "ML算法", "en": "Maximum likelihood algorithm"},
+        {"title": "循环前缀", "en": "Cyclic prefix"}
+    ],
+    "relations": [
+        {"source": "物理层小区ID", "target": "扇区地址", "type": "包含"},
+        {"source": "PSS序列", "target": "物理层小区ID", "type": "检测得到"},
+        {"source": "SSS序列", "target": "小区ID", "type": "检测得到"},
+        {"source": "帧结构", "target": "主同步序列", "type": "插入"},
+        {"source": "帧结构", "target": "辅同步序列", "type": "插入"},
+        {"source": "时间同步", "target": "主同步信号", "type": "采用"},
+        {"source": "时间同步", "target": "辅同步信号", "type": "采用"},
+        {"source": "时间同步", "target": "PSS序列", "type": "检测实现"},
+        {"source": "时间同步", "target": "CP", "type": "检测"},
+        {"source": "频率同步", "target": "SSS序列", "type": "频偏估计"},
+        {"source": "频率同步", "target": "CP信号", "type": "频偏估计"},
+        {"source": "频率同步", "target": "导频信号", "type": "频偏估计"},
+        {"source": "时域跟踪", "target": "主同步信号", "type": "自相关检测"},
+        {"source": "频域跟踪", "target": "小数倍频偏", "type": "估计"},
+        {"source": "频域跟踪", "target": "整数倍频偏", "type": "估计"},
+        {"source": "ML算法", "target": "CP", "type": "基于"},
+        {"source": "循环前缀", "target": "相关运算", "type": "采用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2DSync同步技术",
+            "en": "D2DSync synchronization technology"
+        },
+        {
+            "title": "D2DSync信道",
+            "en": "D2DSync channel"
+        },
+        {
+            "title": "Sync同步搜索",
+            "en": "Sync synchronization search"
+        },
+        {
+            "title": "Sync同步跟踪",
+            "en": "Sync synchronization tracking"
+        },
+        {
+            "title": "蜂窝上行CellUE同步技术",
+            "en": "CellUE synchronization technology for cellular uplink"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2DSync同步技术",
+            "target": "D2DSync信道",
+            "type": "包含"
+        },
+        {
+            "source": "D2DSync信道",
+            "target": "Sync同步搜索",
+            "type": "包含"
+        },
+        {
+            "source": "D2DSync信道",
+            "target": "Sync同步跟踪",
+            "type": "包含"
+        },
+        {
+            "source": "蜂窝上行CellUE同步技术",
+            "target": "Sync同步跟踪",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "PUSCHRS序列", "en": "PUSCHRS sequence"},
+        {"title": "CAZAC序列", "en": "CAZAC sequence"},
+        {"title": "CellUE同步技术", "en": "CellUE synchronization technology"},
+        {"title": "D2DSync同步技术", "en": "D2DSync synchronization technology"},
+        {"title": "同步搜索技术", "en": "Synchronization search technology"},
+        {"title": "同步跟踪技术", "en": "Synchronization tracking technology"},
+        {"title": "Sync信道", "en": "Sync channel"},
+        {"title": "D2D自组织通信", "en": "D2D self-organized communication"}
+    ],
+    "relations": [
+        {"source": "PUSCHRS序列", "target": "CellUE同步技术", "type": "is used for"},
+        {"source": "CAZAC序列", "target": "PUSCHRS序列", "type": "has good synchronization and asynchronous correlation"},
+        {"source": "CellUE同步技术", "target": "D2DSync同步技术", "type": "is related to"},
+        {"source": "同步搜索技术", "target": "同步跟踪技术", "type": "is a subtype of"},
+        {"source": "D2DSync同步技术", "target": "Sync信道", "type": "is based on"},
+        {"source": "D2D自组织通信", "target": "Sync同步信号", "type": "uses"},
+        {"source": "D2D自组织通信", "target": "D2D终端", "type": "involves"},
+        {"source": "D2D自组织通信", "target": "时间对齐", "type": "requires"},
+        {"source": "D2D自组织通信", "target": "频域补偿", "type": "requires"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D自组织通信",
+            "en": "D2D self-organized communication"
+        },
+        {
+            "title": "全蜂窝覆盖通信",
+            "en": "Full cellular coverage communication"
+        },
+        {
+            "title": "全CellUE覆盖通信",
+            "en": "Full CellUE coverage communication"
+        },
+        {
+            "title": "半蜂窝覆盖通信",
+            "en": "Semi-cellular coverage communication"
+        },
+        {
+            "title": "半CellUE半蜂窝覆盖通信",
+            "en": "Semi-CellUE and semi-cellular coverage communication"
+        },
+        {
+            "title": "半CellUE覆盖通信",
+            "en": "Semi-CellUE coverage communication"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D自组织通信",
+            "target": "全蜂窝覆盖通信",
+            "type": "包含"
+        },
+        {
+            "source": "全蜂窝覆盖通信",
+            "target": "全CellUE覆盖通信",
+            "type": "包含"
+        },
+        {
+            "source": "全蜂窝覆盖通信",
+            "target": "半蜂窝覆盖通信",
+            "type": "包含"
+        },
+        {
+            "source": "半蜂窝覆盖通信",
+            "target": "半CellUE半蜂窝覆盖通信",
+            "type": "包含"
+        },
+        {
+            "source": "半蜂窝覆盖通信",
+            "target": "半CellUE覆盖通信",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "频偏补偿",
+            "en": "Frequency offset compensation"
+        },
+        {
+            "title": "双终端通信",
+            "en": "Two-terminal communication"
+        },
+        {
+            "title": "基础通信场景",
+            "en": "Basic communication scenarios"
+        },
+        {
+            "title": "异构网络",
+            "en": "Heterogeneous network"
+        },
+        {
+            "title": "覆盖情况",
+            "en": "Coverage situation"
+        },
+        {
+            "title": "场景切换",
+            "en": "Scenario switching"
+        },
+        {
+            "title": "D2D自组织通信",
+            "en": "D2D self-organized communication"
+        },
+        {
+            "title": "全蜂窝基站覆盖通信",
+            "en": "Full cellular base station coverage communication"
+        },
+        {
+            "title": "全CellUE覆盖通信",
+            "en": "Full CellUE coverage communication"
+        },
+        {
+            "title": "半蜂窝覆盖通信",
+            "en": "Semi-cellular coverage communication"
+        },
+        {
+            "title": "半CellUE半蜂窝覆盖通信",
+            "en": "Semi-CellUE and semi-cellular coverage communication"
+        },
+        {
+            "title": "半CellUE覆盖通信",
+            "en": "Semi-CellUE coverage communication"
+        }
+    ],
+    "relations": [
+        {
+            "source": "频偏补偿",
+            "target": "D2D终端1",
+            "type": "使用"
+        },
+        {
+            "source": "频偏补偿",
+            "target": "D2D终端2",
+            "type": "使用"
+        },
+        {
+            "source": "全蜂窝基站覆盖通信",
+            "target": "D2D自组织通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全蜂窝基站覆盖通信",
+            "target": "全CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全蜂窝基站覆盖通信",
+            "target": "半蜂窝覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全蜂窝基站覆盖通信",
+            "target": "半CellUE半蜂窝覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全蜂窝基站覆盖通信",
+            "target": "半CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全CellUE覆盖通信",
+            "target": "D2D自组织通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全CellUE覆盖通信",
+            "target": "全蜂窝基站覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全CellUE覆盖通信",
+            "target": "半蜂窝覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全CellUE覆盖通信",
+            "target": "半CellUE半蜂窝覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "全CellUE覆盖通信",
+            "target": "半CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半蜂窝覆盖通信",
+            "target": "D2D自组织通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半蜂窝覆盖通信",
+            "target": "全蜂窝基站覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半蜂窝覆盖通信",
+            "target": "全CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半蜂窝覆盖通信",
+            "target": "半CellUE半蜂窝覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半蜂窝覆盖通信",
+            "target": "半CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE半蜂窝覆盖通信",
+            "target": "D2D自组织通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE半蜂窝覆盖通信",
+            "target": "全蜂窝基站覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE半蜂窝覆盖通信",
+            "target": "全CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE半蜂窝覆盖通信",
+            "target": "半蜂窝覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE半蜂窝覆盖通信",
+            "target": "半CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE覆盖通信",
+            "target": "D2D自组织通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE覆盖通信",
+            "target": "全蜂窝基站覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE覆盖通信",
+            "target": "全CellUE覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE覆盖通信",
+            "target": "半蜂窝覆盖通信",
+            "type": "切换条件"
+        },
+        {
+            "source": "半CellUE覆盖通信",
+            "target": "半CellUE半蜂窝覆盖通信",
+            "type": "切换条件"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "基础场景",
+            "en": "Basic Scenarios"
+        },
+        {
+            "title": "D2D自组织通信",
+            "en": "D2D Self-Organizing Communication"
+        },
+        {
+            "title": "全蜂窝覆盖通信",
+            "en": "Full Cellular Coverage Communication"
+        },
+        {
+            "title": "全CellUE覆盖通信",
+            "en": "Full CellUE Coverage Communication"
+        },
+        {
+            "title": "半CellUE半蜂窝覆盖通信",
+            "en": "Half CellUE and Half Cellular Coverage Communication"
+        },
+        {
+            "title": "半CellUE覆盖通信",
+            "en": "Half CellUE Coverage Communication"
+        },
+        {
+            "title": "三终端场景",
+            "en": "Three-Terminal Scenario"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D自组织通信",
+            "target": "基础场景1",
+            "type": "属于"
+        },
+        {
+            "source": "全蜂窝覆盖通信",
+            "target": "基础场景2",
+            "type": "属于"
+        },
+        {
+            "source": "全CellUE覆盖通信",
+            "target": "基础场景3",
+            "type": "属于"
+        },
+        {
+            "source": "半CellUE半蜂窝覆盖通信",
+            "target": "基础场景5",
+            "type": "属于"
+        },
+        {
+            "source": "半CellUE覆盖通信",
+            "target": "基础场景6",
+            "type": "属于"
+        },
+        {
+            "source": "基础场景4",
+            "target": "基础场景5",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景1",
+            "target": "基础场景5",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景2",
+            "target": "基础场景5",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景3",
+            "target": "基础场景5",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景4",
+            "target": "基础场景6",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景1",
+            "target": "基础场景6",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景2",
+            "target": "基础场景6",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景3",
+            "target": "基础场景6",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景5",
+            "target": "基础场景1",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景5",
+            "target": "基础场景2",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景5",
+            "target": "基础场景3",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景5",
+            "target": "基础场景4",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景6",
+            "target": "基础场景1",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景6",
+            "target": "基础场景2",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景6",
+            "target": "基础场景3",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景6",
+            "target": "基础场景4",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "基础场景6",
+            "target": "基础场景5",
+            "type": "向其他场景切换条件"
+        },
+        {
+            "source": "三终端场景",
+            "target": "双终端场景",
+            "type": "基于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D自组织通信模式", "en": "D2D self-organized communication mode"},
+        {"title": "三终端场景1", "en": "Three-terminal scenario 1"},
+        {"title": "三终端场景2", "en": "Three-terminal scenario 2"},
+        {"title": "三终端场景3", "en": "Three-terminal scenario 3"},
+        {"title": "三终端场景4", "en": "Three-terminal scenario 4"},
+        {"title": "三终端场景5", "en": "Three-terminal scenario 5"}
+    ],
+    "relations": [
+        {"source": "D2D自组织通信模式", "target": "三终端场景1", "type": "包含"},
+        {"source": "D2D自组织通信模式", "target": "三终端场景2", "type": "包含"},
+        {"source": "D2D自组织通信模式", "target": "三终端场景3", "type": "包含"},
+        {"source": "D2D自组织通信模式", "target": "三终端场景4", "type": "包含"},
+        {"source": "D2D自组织通信模式", "target": "三终端场景5", "type": "包含"},
+        {"source": "三终端场景1", "target": "D2D自组织通信模式", "type": "属于"},
+        {"source": "三终端场景2", "target": "D2D自组织通信模式", "type": "属于"},
+        {"source": "三终端场景3", "target": "D2D自组织通信模式", "type": "属于"},
+        {"source": "三终端场景4", "target": "D2D自组织通信模式", "type": "属于"},
+        {"source": "三终端场景5", "target": "D2D自组织通信模式", "type": "属于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D终端", "en": "D2D terminal"},
+        {"title": "同步关系", "en": "Synchronization relationship"},
+        {"title": "异构网络", "en": "Heterogeneous network"},
+        {"title": "定时基准", "en": "Timing reference"},
+        {"title": "Sync同步", "en": "Sync synchronization"},
+        {"title": "定时调整", "en": "Timing adjustment"},
+        {"title": "提前量TA", "en": "Advance amount TA"},
+        {"title": "传播时延", "en": "Propagation delay"},
+        {"title": "循环前缀", "en": "Cyclic prefix"},
+        {"title": "OFDM", "en": "Orthogonal frequency-division multiplexing"}
+    ],
+    "relations": [
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "同步关系"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "从机"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "定时基准"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "定时基准"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type{
+    "knowledge_points": [
+        {"title": "D2D终端", "en": "D2D terminal"},
+        {"title": "同步关系", "en": "Synchronization relationship"},
+        {"title": "异构网络", "en": "Heterogeneous network"},
+        {"title": "定时基准", "en": "Timing reference"},
+        {"title": "Sync同步", "en": "Sync synchronization"},
+        {"title": "定时调整", "en": "Timing adjustment"},
+        {"title": "提前量TA", "en": "Advance amount TA"},
+        {"title": "传播时延", "en": "Propagation delay"},
+        {"title": "循环前缀", "en": "Cyclic prefix"},
+        {"title": "OFDM", "en": "Orthogonal frequency-division multiplexing"}
+    ],
+    "relations": [
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "同步关系"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "从机"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "定时基准"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端3", "type": "定时基准"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时基准"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时调整"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "同步关系"},
+        {"source": "D2D终端1", "target": "D2D终端2", "type": "从机"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type": "定时对齐"},
+        {"source": "D2D终端2", "target": "D2D终端1", "type":通过D2D自组织网络同步获取;
+●TA(指示上行相对于下行的时延,单位为子帧,该值可通过与上行蜂窝用户进行同步而获取)
+4.2.2状态信息
+状态信息包括以下内容:
+●CELLSYNC(指示与外部蜂窝小区的同步关系,取值为True和False,True代表已经与外部蜂窝小区同步, False代表未同步),该值可通过下Cell同步获取;
+●D2DSYNC(指示与邻近D2D终端的同步关系,取值为True和False,True代表已经与邻近D2D终端同步, False代表未同步),该值可通过D2D自组织网络同步获取;
+●TASYNC(指示上行相对于下行的时延是否已经同步,取值为True和False,True代表已经同步, False代表未同步),该值可通过与上行蜂窝用户进行同步而获取;
+●CELLSYNCTIME(指示与外部蜂窝小区同步的时间戳),该值可通过下Cell同步获取;
+●D2DSYNCTIME(指示与邻近D2D终端同步的时间戳),该值可通过D2D自组织网络同步获取;
+●TASYNCVALUE(指示上行相对于下行的时延值),该值可通过与上行蜂窝用户进行同步而获取。
+4.3同步状态机设计
+4.3.1下行同步状态机设计
+下行同步状态机的状态转移图如图4-1所示。
+图4-1下行同步状态机状态转移图
+30
+(C)1994-2022ChinaAcademicJournalElectronicPublishingHouse.Allrightsreserved.http://www.cnki.net
+下行同步状态机的状态包括:
+●Idle:表示系统处于空闲状态,等待下Cell同步信号的到来;
+●CellSync:表示系统已经接收到下Cell同步信号,正在与外部蜂窝小区进行同步;
+●D2DSync:表示系统已经完成与外部蜂窝小区的同步,正在与邻近D2D终端进行同步;
+●Synced:表示系统已经完成与邻近D2D终端的同步,同步状态机处于同步状态。
+下行同步状态机的状态转移条件如下:
+●Idle->CellSync:当系统处于Idle状态时,如果接收到下Cell同步信号,则状态转移到CellSync状态;
+●CellSync->D2DSync:当系统处于CellSync状态时,如果完成与外部蜂窝小区的同步,则状态转移到D2DSync状态;
+●D2DSync->Synced:当系统处于D2DSync状态时,如果完成与邻近D2D终端的同步,则状态转移到Synced状态。
+4.3.2上行同步状态机设计
+上行同步状态机的状态转移图如图4-2所示。
+图4-2上行同步状态机状态转移图
+上行同步状态机的状态包括:
+●Idle:表示系统处于空闲状态,等待上行蜂窝用户信号的到来;
+●TASync:表示系统已经接收到上行蜂窝用户信号,正在与上行蜂窝用户进行同步;
+●Synced:表示系统已经完成与上行蜂窝用户的同步,同步状态机处于同步状态。
+上行同步状态机的状态转移条件如下:
+●Idle->TASync:当系统处于Idle状态时,如果接收到上行蜂窝用户信号,则状态转移到TASync状态;
+●TASync->Synced:当系统处于TASync状态时,如果完成与上行蜂窝用户的同步,则状态转移到Synced状态。通过D2D自组织网络同步获取;
+●TA(指示上行相对于下行的时延,单位为子帧,该值可通过与上行蜂窝用户进行同步而获取)
+4.2.2状态信息
+状态信息包括以下内容:
+●CELLSYNC(指示与外部蜂窝小区的同步关系,取值为True和False,True代表已经与外部蜂窝小区同步, False代表未同步),该值可通过下Cell同步获取;
+●D2DSYNC(指示与邻近D2D终端的同步关系,取值为True和False,True代表已经与邻近D2D终端同步, False代表未同步),该值可通过D2D自组织网络同步获取;
+●TASYNC(指示上行相对于下行的时延是否已经同步,取值为True和False,True代表已经同步, False代表未同步),该值可通过与上行蜂窝用户进行同步而获取;
+●CELLSYNCTIME(指示与外部蜂窝小区同步的时间戳),该值可通过下Cell同步获取;
+●D2DSYNCTIME(指示与邻近D2D终端同步的时间戳),该值可通过D2D自组织网络同步获取;
+●TASYNCVALUE(指示上行相对于下行的时延值),该值可通过与上行蜂窝用户进行同步而获取。
+4.3同步状态机设计
+4.3.1下行同步状态机设计
+下行同步状态机的状态转移图如图4-1所示。
+图4-1下行同步状态机状态转移图
+30
+(C)1994-2022ChinaAcademicJournalElectronicPublishingHouse.Allrightsreserved.http://www.cnki.net
+下行同步状态机的状态包括:
+●Idle:表示系统处于空闲状态,等待下Cell同步信号的到来;
+●CellSync:表示系统已经接收到下Cell同步信号,正在与外部蜂窝小区进行同步;
+●D2DSync:表示系统已经完成与外部蜂窝小区的同步,正在与邻近D2D终端进行同步;
+●Synced:表示系统已经完成与外部蜂窝小区和邻近D2D终端的同步,同步状态机处于同步状态。
+下行同步状态机的状态转移条件如下:
+●Idle->CellSync:当系统处于Idle状态时,如果接收到下Cell同步信号,则状态转移为CellSync;
+●CellSync->D2DSync:当系统处于CellSync状态时,如果完成与外部蜂窝小区的同步,则状态转移为D2DSync;
+●D2DSync->Synced:当系统处于D2DSync状态时,如果完成与邻近D2D终端的同步,则状态转移为Synced。
+4.3.2上行同步状态机设计
+上行同步状态机的状态转移图如图4-2所示。
+图4-2上行同步状态机状态转移图
+上行同步状态机的状态包括:
+●Idle:表示系统处于空闲状态,等待上行蜂窝用户信号的到来;
+●TASync:表示系统已经接收到上行蜂窝用户信号,正在与上行蜂窝用户进行同步;
+●Synced:表示系统已经完成与上行蜂窝用户的同步,同步状态机处于同步状态。
+上行同步状态机的状态转移条件如下:
+●Idle->TASync:当系统处于Idle状态时,如果接收到上行蜂窝用户信号,则状态转移为TASync;
+●TASync->Synced:当系统处于TASync状态时,如果完成与上行蜂窝用户的同步,则状态转移为Synced。{
+    "knowledge_points": [
+        {
+            "title": "UESTATE",
+            "en": "UESTATE"
+        },
+        {
+            "title": "同步信息",
+            "en": "Sync Information"
+        },
+        {
+            "title": "ID",
+            "en": "ID"
+        },
+        {
+            "title": "SYNCID",
+            "en": "SYNCID"
+        },
+        {
+            "title": "SYNCIDORG",
+            "en": "SYNCIDORG"
+        },
+        {
+            "title": "SYNCULORG",
+            "en": "SYNCULORG"
+        },
+        {
+            "title": "TA",
+            "en": "TA"
+        },
+        {
+            "title": "静态状态机设计",
+            "en": "Static State Machine Design"
+        },
+        {
+            "title": "下行静态状态机设计",
+            "en": "Downlink Static State Machine Design"
+        },
+        {
+            "title": "D2DMode",
+            "en": "D2DMode"
+        },
+        {
+            "title": "CellMode",
+            "en": "CellMode"
+        },
+        {
+            "title": "上行静态状态机设计",
+            "en": "Uplink Static State Machine Design"
+        },
+        {
+            "title": "D2DMasterMode",
+            "en": "D2DMasterMode"
+        },
+        {
+            "title": "D2DSlaveMode",
+            "en": "D2DSlaveMode"
+        },
+        {
+            "title": "CellSlaveMode",
+            "en": "CellSlaveMode"
+        }
+    ],
+    "relations": [
+        {
+            "source": "UESTATE",
+            "target": "同步信息",
+            "type": "包含"
+        },
+        {
+            "source": "同步信息",
+            "target": "ID",
+            "type": "包含"
+        },
+        {
+            "source": "同步信息",
+            "target": "SYNCID",
+            "type": "包含"
+        },
+        {
+            "source": "同步信息",
+            "target": "SYNCIDORG",
+            "type": "包含"
+        },
+        {
+            "source": "同步信息",
+            "target": "SYNCULORG",
+            "type": "包含"
+        },
+        {
+            "source": "同步信息",
+            "target": "TA",
+            "type": "包含"
+        },
+        {
+            "source": "静态状态机设计",
+            "target": "下行静态状态机设计",
+            "type": "包含"
+        },
+        {
+            "source": "下行静态状态机设计",
+            "target": "D2DMode",
+            "type": "包含"
+        },
+        {
+            "source": "下行静态状态机设计",
+            "target": "CellMode",
+            "type": "包含"
+        },
+        {
+            "source": "静态状态机设计",
+            "target": "上行静态状态机设计",
+            "type": "包含"
+        },
+        {
+            "source": "上行静态状态机设计",
+            "target": "D2DMasterMode",
+            "type": "包含"
+        },
+        {
+            "source": "上行静态状态机设计",
+            "target": "D2DSlaveMode",
+            "type": "包含"
+        },
+        {
+            "source": "上行静态状态机设计",
+            "target": "CellSlaveMode",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D终端", "en": "D2D terminal"},
+        {"title": "Cell同步", "en": "Cell synchronization"},
+        {"title": "UE同步", "en": "UE synchronization"},
+        {"title": "状态标志", "en": "State flag"},
+        {"title": "动态状态机设计", "en": "Dynamic state machine design"},
+        {"title": "异构网络", "en": "Heterogeneous network"},
+        {"title": "覆盖环境", "en": "Coverage environment"},
+        {"title": "下行状态机", "en": "Downlink state machine"},
+        {"title": "上行状态机", "en": "Uplink state machine"},
+        {"title": "升迁", "en": "Promotion"},
+        {"title": "降迁", "en": "Demotion"}
+    ],
+    "relations": [
+        {"source": "D2D终端", "target": "Cell同步", "type": "采用"},
+        {"source": "D2D终端", "target": "UE同步", "type": "获取"},
+        {"source": "D2D终端", "target": "状态标志", "type": "决策"},
+        {"source": "Cell同步", "target": "状态标志", "type": "影响"},
+        {"source": "UE同步", "target": "状态标志", "type": "影响"},
+        {"source": "异构网络", "target": "覆盖环境", "type": "存在于"},
+        {"source": "覆盖环境", "target": "下行状态机", "type": "影响"},
+        {"source": "覆盖环境", "target": "上行状态机", "type": "影响"},
+        {"source": "状态标志", "target": "下行状态机", "type": "决策"},
+        {"source": "状态标志", "target": "上行状态机", "type": "决策"},
+        {"source": "下行状态机", "target": "升迁", "type": "状态变迁"},
+        {"source": "下行状态机", "target": "降迁", "type": "状态变迁"},
+        {"source": "上行状态机", "target": "升迁", "type": "状态变迁"},
+        {"source": "上行状态机", "target": "降迁", "type": "状态变迁"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D终端同步模式", "en": "D2D Terminal Synchronization Mode"},
+        {"title": "干扰测量", "en": "Interference Measurement"},
+        {"title": "上行状态机状态升迁图", "en": "Upstream State Machine State Transition Diagram"},
+        {"title": "上行状态机状态降迁图", "en": "Upstream State Machine State Transition Diagram"},
+        {"title": "状态模式", "en": "State Pattern"},
+        {"title": "多线程技术", "en": "Multithreading Technology"}
+    ],
+    "relations": [
+        {"source": "D2D终端同步模式", "target": "干扰测量", "type": "应用"},
+        {"source": "D2D终端同步模式", "target": "上行状态机状态升迁图", "type": "关联"},
+        {"source": "D2D终端同步模式", "target": "上行状态机状态降迁图", "type": "关联"},
+        {"source": "状态模式", "target": "D2D终端同步模式", "type": "实现"},
+        {"source": "状态模式", "target": "上行状态机状态升迁图", "type": "实现"},
+        {"source": "状态模式", "target": "上行状态机状态降迁图", "type": "实现"},
+        {"source": "多线程技术", "target": "同步状态机软件总体架构", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "进程",
+            "en": "Process"
+        },
+        {
+            "title": "线程",
+            "en": "Thread"
+        },
+        {
+            "title": "多核多线程技术",
+            "en": "Multi-core Multi-threading Technology"
+        },
+        {
+            "title": "同步状态机",
+            "en": "Synchronous State Machine"
+        },
+        {
+            "title": "D2D终端直通通信技术",
+            "en": "D2D Terminal Direct Communication Technology"
+        },
+        {
+            "title": "通信接收线程",
+            "en": "Communication Reception Thread"
+        },
+        {
+            "title": "同步搜索模块",
+            "en": "Synchronization Search Module"
+        },
+        {
+            "title": "状态决策模块",
+            "en": "State Decision Module"
+        },
+        {
+            "title": "通信处理模块",
+            "en": "Communication Processing Module"
+        },
+        {
+            "title": "同步跟踪模块",
+            "en": "Synchronization Tracking Module"
+        },
+        {
+            "title": "同步监测线程",
+            "en": "Synchronization Monitoring Thread"
+        },
+        {
+            "title": "异构网络",
+            "en": "Heterogeneous Network"
+        }
+    ],
+    "relations": [
+        {
+            "source": "进程",
+            "target": "线程",
+            "type": "提高资源利用率和系统吞吐量"
+        },
+        {
+            "source": "进程",
+            "target": "线程",
+            "type": "减少操作系统的时空开销"
+        },
+        {
+            "source": "进程",
+            "target": "线程",
+            "type": "增强响应能力"
+        },
+        {
+            "source": "进程",
+            "target": "线程",
+            "type": "减少系统开销"
+        },
+        {
+            "source": "多核多线程技术",
+            "target": "D2D终端直通通信技术",
+            "type": "实现"
+        },
+        {
+            "source": "同步状态机",
+            "target": "多核多线程技术",
+            "type": "基础"
+        },
+        {
+            "source": "通信接收线程",
+            "target": "同步搜索模块",
+            "type": "负责"
+        },
+        {
+            "source": "通信接收线程",
+            "target": "状态决策模块",
+            "type": "负责"
+        },
+        {
+            "source": "通信接收线程",
+            "target": "通信处理模块",
+            "type": "负责"
+        },
+        {
+            "source": "通信接收线程",
+            "target": "同步跟踪模块",
+            "type": "负责"
+        },
+        {
+            "source": "通信接收线程",
+            "target": "同步监测线程",
+            "type": "周期性触发"
+        },
+        {
+            "source": "同步监测线程",
+            "target": "同步搜索模块",
+            "type": "使用"
+        },
+        {
+            "source": "同步监测线程",
+            "target": "状态决策模块",
+            "type": "进行"
+        },
+        {
+            "source": "同步监测线程",
+            "target": "通信接收线程",
+            "type": "发送结果"
+        },
+        {
+            "source": "同步监测线程",
+            "target": "通信发送线程",
+            "type": "发送结果"
+        },
+        {
+            "source": "通信接收线程",
+            "target": "通信发送线程",
+            "type": "变迁状态机状态"
+        },
+        {
+            "source": "同步状态机",
+            "target": "D2D终端直通通信技术",
+            "type": "实现"
+        },
+        {
+            "source": "Cell下行同步搜索模块",
+            "target": "Cell下行同步跟踪模块",
+            "type": "接口"
+        },
+        {
+            "source": "Sync同步搜索模块",
+            "target": "Sync同步跟踪模块",
+            "type": "接口"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SyncInfo结构体定义", "en": "SyncInfo Structure Definition"},
+        {"title": "Sync同步跟踪模块", "en": "Sync Synchronization Tracking Module"},
+        {"title": "UE蜂窝用户上行同步搜索模块", "en": "UE Cellular User Uplink Synchronization Search Module"},
+        {"title": "PUSCHSyncCtrl结构体定义", "en": "PUSCHSyncCtrl Structure Definition"},
+        {"title": "通信接收线程", "en": "Communication Reception Thread"},
+        {"title": "通信接收线程同步搜索模块", "en": "Communication Reception Thread Synchronization Search Module"},
+        {"title": "通信接收线程同步决策模块", "en": "Communication Reception Thread Synchronization Decision Module"}
+    ],
+    "relations": [
+        {"source": "SyncInfo结构体定义", "target": "Sync同步跟踪模块", "type": "包含"},
+        {"source": "SyncInfo结构体定义", "target": "UE蜂窝用户上行同步搜索模块", "type": "包含"},
+        {"source": "UE蜂窝用户上行同步搜索模块", "target": "PUSCHSyncCtrl结构体定义", "type": "包含"},
+        {"source": "通信接收线程", "target": "通信接收线程同步搜索模块", "type": "包含"},
+        {"source": "通信接收线程", "target": "通信接收线程同步决策模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "同步决策模块",
+            "en": "Synchronization decision module"
+        },
+        {
+            "title": "状态决策",
+            "en": "State decision"
+        },
+        {
+            "title": "同步建立",
+            "en": "Synchronization establishment"
+        },
+        {
+            "title": "Cell同步搜索结果Buffer",
+            "en": "Cell synchronization search result buffer"
+        },
+        {
+            "title": "Sync同步搜索结果Buffer",
+            "en": "Sync synchronization search result buffer"
+        },
+        {
+            "title": "SyncRes结构体",
+            "en": "SyncRes structure"
+        },
+        {
+            "title": "Cell同步搜索结果选择算法",
+            "en": "Cell synchronization search result selection algorithm"
+        },
+        {
+            "title": "Sync同步搜索结果算法",
+            "en": "Sync synchronization search result algorithm"
+        },
+        {
+            "title": "同步跟踪模块",
+            "en": "Synchronization tracking module"
+        },
+        {
+            "title": "子帧号",
+            "en": "Subframe number"
+        },
+        {
+            "title": "特殊子帧",
+            "en": "Special subframe"
+        },
+        {
+            "title": "D2DSlaveMode",
+            "en": "D2DSlaveMode"
+        },
+        {
+            "title": "Sync同步跟踪函数",
+            "en": "Sync synchronization tracking function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "同步决策模块",
+            "target": "状态决策",
+            "type": "包含"
+        },
+        {
+            "source": "同步决策模块",
+            "target": "同步建立",
+            "type": "包含"
+        },
+        {
+            "source": "同步决策模块",
+            "target": "同步跟踪模块",
+            "type": "包含"
+        },
+        {
+            "source": "状态决策",
+            "target": "Cell同步搜索结果Buffer",
+            "type": "包含"
+        },
+        {
+            "source": "状态决策",
+            "target": "Sync同步搜索结果Buffer",
+            "type": "包含"
+        },
+        {
+            "source": "Cell同步搜索结果Buffer",
+            "target": "SyncRes结构体",
+            "type": "包含"
+        },
+        {
+            "source": "Sync同步搜索结果Buffer",
+            "target": "SyncRes结构体",
+            "type": "包含"
+        },
+        {
+            "source": "Cell同步搜索结果选择算法",
+            "target": "SyncRes结构体",
+            "type": "包含"
+        },
+        {
+            "source": "Sync同步搜索结果算法",
+            "target": "SyncRes结构体",
+            "type": "包含"
+        },
+        {
+            "source": "同步跟踪模块",
+            "target": "子帧号",
+            "type": "涉及"
+        },
+        {
+            "source": "同步跟踪模块",
+            "target": "特殊子帧",
+            "type": "涉及"
+        },
+        {
+            "source": "同步跟踪模块",
+            "target": "D2DSlaveMode",
+            "type": "涉及"
+        },
+        {
+            "source": "同步跟踪模块",
+            "target": "Sync同步跟踪函数",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "同步跟踪模块流程",
+            "en": "Synchronization tracking module process"
+        },
+        {
+            "title": "同步跟踪结果的可靠性",
+            "en": "Reliability of synchronization tracking results"
+        },
+        {
+            "title": "同步跟踪结果处理流程",
+            "en": "Synchronization tracking result processing process"
+        },
+        {
+            "title": "通信发送线程",
+            "en": "Communication sending thread"
+        },
+        {
+            "title": "同步监测线程",
+            "en": "Synchronization monitoring thread"
+        },
+        {
+            "title": "同步搜索模块",
+            "en": "Synchronization search module"
+        },
+        {
+            "title": "同步决策模块",
+            "en": "Synchronization decision module"
+        }
+    ],
+    "relations": [
+        {
+            "source": "同步跟踪模块流程",
+            "target": "同步跟踪结果的可靠性",
+            "type": "包含"
+        },
+        {
+            "source": "同步跟踪结果的可靠性",
+            "target": "同步跟踪结果处理流程",
+            "type": "包含"
+        },
+        {
+            "source": "通信发送线程",
+            "target": "同步跟踪结果处理流程",
+            "type": "包含"
+        },
+        {
+            "source": "同步监测线程",
+            "target": "同步搜索模块",
+            "type": "包含"
+        },
+        {
+            "source": "同步监测线程",
+            "target": "同步决策模块",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "状态变迁", "en": "State Transition"},
+        {"title": "同步搜索结果Buffer", "en": "Synchronization Search Result Buffer"},
+        {"title": "同步选择算法", "en": "Synchronization Selection Algorithm"},
+        {"title": "动态状态机", "en": "Dynamic State Machine"},
+        {"title": "视频传输业务", "en": "Video Transmission Service"},
+        {"title": "文件拷贝业务", "en": "File Copy Service"}
+    ],
+    "relations": [
+        {"source": "状态变迁", "target": "同步监测线程", "type": "包含"},
+        {"source": "同步监测线程", "target": "同步搜索结果Buffer", "type": "包含"},
+        {"source": "同步监测线程", "target": "同步选择算法", "type": "包含"},
+        {"source": "同步监测线程", "target": "动态状态机", "type": "实现"},
+        {"source": "动态状态机", "target": "状态变迁", "type": "包含"},
+        {"source": "视频传输业务", "target": "同步方案", "type": "验证"},
+        {"source": "文件拷贝业务", "target": "同步方案", "type": "验证"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "上行同步下行同步D2D同步", "en": "Upstream synchronization, downstream synchronization, and D2D synchronization"},
+        {"title": "Sync同步结果展示", "en": "Sync synchronization result display"},
+        {"title": "CellUE同步结果展示", "en": "CellUE synchronization result display"},
+        {"title": "VLC视频直播效果", "en": "VLC video live streaming effect"},
+        {"title": "文件拷贝效果图", "en": "File copying effect picture"},
+        {"title": "本章小结", "en": "Summary of this chapter"}
+    ],
+    "relations": [
+        {"source": "上行同步下行同步D2D同步", "target": "Sync同步结果展示", "type": "展示"},
+        {"source": "Sync同步结果展示", "target": "上行同步下行同步D2D同步", "type": "实现"},
+        {"source": "Sync同步结果展示", "target": "CellUE同步结果展示", "type": "对比"},
+        {"source": "CellUE同步结果展示", "target": "上行同步下行同步D2D同步", "type": "实现"},
+        {"source": "上行同步下行同步D2D同步", "target": "VLC视频直播效果", "type": "展示"},
+        {"source": "VLC视频直播效果", "target": "上行同步下行同步D2D同步", "type": "验证"},
+        {"source": "上行同步下行同步D2D同步", "target": "文件拷贝效果图", "type": "展示"},
+        {"source": "文件拷贝效果图", "target": "上行同步下行同步D2D同步", "type": "验证"},
+        {"source": "本章小结", "target": "上行同步下行同步D2D同步", "type": "总结"}
+    ]
+}

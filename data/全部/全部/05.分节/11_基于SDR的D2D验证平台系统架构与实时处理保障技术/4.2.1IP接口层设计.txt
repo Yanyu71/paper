@@ -1,0 +1,23 @@
+4.2.1IP接口层设计
+在以太网链接的网络中，网络层以下的数据通信由以太网的数据链路层和物 理层完成。IP数据包从网络层下发后的处理通常由操作系统的以太网协议栈完成, 用户并不需要了解其中的细节。为了将服务器上的基于IP的业务数据与D2D验 证平台系统打通，本论文在D2D协议栈与操作系统网络层之间设立了 IP接口层， 使用Linux系统提供的一种虚拟网卡程序TUNCTL模拟网络设备.，在发送端调用 TUN接口将IP数据包从网络层读取到D2D协议栈的缓冲区，在接收端将接收到 的IP数据包通过TUN接口传递到网络层。此时，网络层以下的数据通信将由D2D 验证平台系统替代以太网实现，而底层实现的区别则对于网络层及其以上的业务 是透明的。
+在使用虚拟网卡时，需要在用户程序中将虚拟网卡与IP地址绑定，之后就可 以通过该设备与网络层进行通信。每个D2D终端只需配置一个与D2D通信使用 的IP地址进行绑定的TUN实体，即TunDevice。其主要接口包括：
+表4-3 TunDevice主要函数接口
+函数接口定义
+TunDevice 0 〜TunDevice Q push_j)acket (const char *in_packet, intbufi^_len) pull packet (char *out packet, intbuff_len)
+其中，构造函数TunDevice()用于建立TUN对象，并实现了虚拟设备与IP地 址的绑定操作。push_packet()和pull_packet()函数分别由RLC层的接收端和发送 端调用，用于向网络层提交接收到的数据，和从网络层读取要发送的数据，如图 4-3所示。
+Operating System
+，'push_packet () pull_packet()
+D2D Stack RLC
+图4-3 TUN功能示意图
+除了使用虚拟网卡技术实现与网络层的连通外，IP接口层还在网络层引入 Babeld协议实现自主路由和中继转发的功能。Babeld是一个基于AODV的，面 向Ad-Hoc网络的开源路由协议［26J,与D2D通信的场景相符合。它可以以一个用
+32
+户进程的形式存在，管理一个网卡设备的路由，本论文中就将其与D2D设备的 TunDevice绑定。其基本思路是，通过与其绑定的网卡定时发送携带其路由表的 路由请求报文，邻近终端收到该请求后，更新自身的路由表，并向其发送路由回 应。Babeld可以通过丢包率与延时对链路的质量进行估计，并在此基础上生成一 定的路由策略，覆盖操作系统自身的路由机制，反映在IP数据包的下一跳地址上。 例如，在A和C之间的链路延时为10000,而A和B、B和C之间的链路延时为 100,那么当一个IP数据包将从A发送到C时，终端A协议栈的Babeld将以C 作为该数据包的目的地址，以B作为该数据包的下一跳IP地址。当该IP包到达 TunDevice时，路由决策已经完成，因此，D2D协议栈只需在创建TunDevice时 将其与一个Babeld.进程绑定，即可由Babeld实现自主路由和中继转发功能，如 图4-4所示。
+APP
+1
+I
+I
+Babeld	*
+IP ad*reMs	| IP packages
+Routing Table	TUN
+Routing broadcast package
+图4-4 babeld功能

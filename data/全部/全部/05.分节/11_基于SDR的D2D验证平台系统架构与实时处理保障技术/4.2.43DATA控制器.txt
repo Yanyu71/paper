@@ -1,0 +1,12 @@
+4.2.43DATA控制器
+DATA控制器负责业务信道的发送和接收处理，以及随路的DAIACTRL控制 信令的发送、接收与配置，其提供的主要函数接口如表4-10所示：
+42
+表4-10 MAC DAIA控制器主要接口
+函数接口定义
+send(int fn)
+recv(const char * const header, int msgjen)
+DATA控制器的发送操作由Heartbeat Msg在指定的TTI触发，如果DATA控 制器之前已经收到来自RTS控制器或CTS控制器发出的发送准备指令，则调用 send。函数进行发送数据的准备。如果发送的是新数据，则从RLC层发送队列当 前的缓冲区数据量，调用RRM接口执行调度获取rmjnfo,生成发送功率、占用 RB的位置和调制编码方式，根据TBSize长度确定将要发送的MAC SDU大小, 并从RLC缓冲区中读取这些数据,并放入HARQ重传队列预备可能发生的重传。 如果发送的是HARQ的重传数据，则从HARQ重传队列中获取待发送的数据， 调用RRM接口执行调度获取rm_info,但只使用其发送功率和占用RB的位置，使 用HARQ第一次传输使用的调制编码方式。之后DAIA控制器将MAC SDU复制 到Sched Msg的Payload字段，并下发到物理层。DATA控制器的Sched Msg携带 Config字段，格式如4.2节所示。
+图4-13 DATA发送处理逻辑
+43
+DAIA控制器的接收操作由来自物理层的DATA上报的Core Msg触发，执行 recv()函数。DAIACore Msg的负载部分除如图3-7所示的DAIACTRL信令以外， 还携带一个CRC校验位。如果物理层解码的CRC校验正确，recv()函数将调用 RLC的commit。函数，将去掉MAC头的RLC负载发送到RLC层接收端。根据 物理层解码的正确与否，DAIA控制器更新链路测量信息。如果接收到的这一子 帧传输的不是广播数据，则DAIA控制器告知ACK控制器在下一无线帧发送 ACK/NACK 反馈。
+图4-14 DAIA接收处理逻辑

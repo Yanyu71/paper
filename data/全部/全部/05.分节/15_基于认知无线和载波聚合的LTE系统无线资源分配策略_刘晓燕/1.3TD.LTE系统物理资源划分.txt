@@ -1,0 +1,21 @@
+1.3TD.LTE系统物理资源划分
+与以往的技术相比， TD-LTE 物理层的设计在技术上有着较大的革新，性能 也得到了增强[12]。其核心技术的创新和改进主要有下列几点：正交频分多址
+(Orthogonal Frequency Division Multiplexing,OFDM)技术的引入使得时频资源
+手持终端设备
+100mW
+电视广播基站 20- 1000kW
+家庭接入热点3
+家庭接入热点2
+图1-4 IEEE WRAN 802.22 规定的工作于电视白频段的认知场景图
+7
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+的灵活配置得以实现；多输多输出(Multiple-Input Multiple-Output,MIMO)技 术的采用大幅提升了频谱效率；如自适应调制编成 (Adaptive Modulation and Coding,AMC)、   功率控制、混合自动请求重传 (Hybrid Auto Repeat Request,  HARQ)  这些自适应技术，以及多种传输模式相互匹配的配置，进一步优化了传 输性能，也实现了对不同环境的支持；另外，灵活的上下行控制信道设计也充分 地优化了资源管理。
+TD-LTE 系统的这些良好性能与其合理的物理层资源和帧结构的划分方式密
+图1 - 5 TD-LTE 下行物理资源划分
+8
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.    http://www.cnki.net
+不可分。结合文章的需要，这里仅简要介绍 TD-LTE 系统下行物理资源的划分。 为提高用户终端的功率效率， LTE 下行链路使用OFDM  技术，物理资源块划分  如图1-5所示。
+在资源粒度划分上， TD-LTE 系统的下行链路中的最小时频单元定义为基本
+资源单元 (Resource       Element,RE),  由一个时域OFDM 符号和频载一个子载波
+唯一确定。若干RE 组成资源块(Resource       Block,RB),RB是更大粒度的资源，
+包含时域上Nsm 个连续OFDM 符号和频域上N。个连续子载波。在 TD-LTE 系 统中， RB  的大小定义为时域宽度的一个时隙(0.5ms),   频域宽度上的180kHz  (下行载波间隔为15kHz, 一个资源块包括12个子载波)。常规循环前缀(Cyclic Prefix,CP)    时，7个 OFDM 符号可以组成一个资源块，如图1-4所示。

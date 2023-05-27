@@ -1,0 +1,1372 @@
+﻿{
+    "knowledge_points": [
+        {"title": "网络发展历程", "en": "Development of Network"},
+        {"title": "异构网络", "en": "Heterogeneous Network"},
+        {"title": "服务质量保障", "en": "Quality of Service Guarantee"},
+        {"title": "软件定义网络", "en": "Software Defined Network"},
+        {"title": "网络虚拟化技术", "en": "Network Virtualization Technology"},
+        {"title": "虚拟网络映射算法", "en": "Virtual Network Mapping Algorithm"}
+    ],
+    "relations": [
+        {"source": "网络发展历程", "target": "异构网络", "type": "包含"},
+        {"source": "异构网络", "target": "服务质量保障", "type": "关联"},
+        {"source": "服务质量保障", "target": "软件定义网络", "type": "关联"},
+        {"source": "软件定义网络", "target": "网络虚拟化技术", "type": "包含"},
+        {"source": "网络虚拟化技术", "target": "虚拟网络映射算法", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "精确式映射算法",
+            "en": "Exact mapping algorithm"
+        },
+        {
+            "title": "启发式映射算法",
+            "en": "Heuristic mapping algorithm"
+        },
+        {
+            "title": "元启发式映射算法",
+            "en": "Meta-heuristic mapping algorithm"
+        },
+        {
+            "title": "单域模型和跨域模型",
+            "en": "Single-domain model and multi-domain model"
+        },
+        {
+            "title": "离线映射和在线映射",
+            "en": "Offline mapping and online mapping"
+        },
+        {
+            "title": "两步映射和一步映射",
+            "en": "Two-stage mapping and one-stage mapping"
+        },
+        {
+            "title": "静态映射和动态映射",
+            "en": "Static mapping and dynamic mapping"
+        },
+        {
+            "title": "集中式网络和分布式网络",
+            "en": "Centralized network and distributed network"
+        }
+    ],
+    "relations": [
+        {
+            "source": "精确式映射算法",
+            "target": "启发式映射算法",
+            "type": "包含"
+        },
+        {
+            "source": "启发式映射算法",
+            "target": "元启发式映射算法",
+            "type": "包含"
+        },
+        {
+            "source": "单域模型和跨域模型",
+            "target": "精确式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "单域模型和跨域模型",
+            "target": "启发式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "离线映射和在线映射",
+            "target": "精确式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "离线映射和在线映射",
+            "target": "启发式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "两步映射和一步映射",
+            "target": "精确式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "两步映射和一步映射",
+            "target": "启发式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "静态映射和动态映射",
+            "target": "精确式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "静态映射和动态映射",
+            "target": "启发式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "集中式网络和分布式网络",
+            "target": "精确式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "集中式网络和分布式网络",
+            "target": "启发式映射算法",
+            "type": "相关"
+        },
+        {
+            "source": "集中式网络和分布式网络",
+            "target": "元启发式映射算法",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "不可分割链路和可分割链路", "en": "Indivisible and divisible links"},
+        {"title": "虚拟网络映射问题的优化目标", "en": "Optimization objectives of virtual network mapping problem"},
+        {"title": "异构SDN网络转发平面", "en": "Heterogeneous SDN forwarding plane"},
+        {"title": "虚拟网络映射算法的研究现状", "en": "Research status of virtual network mapping algorithm"},
+        {"title": "基于链路剩余带宽的启发式在线网络映射算法", "en": "Heuristic online network mapping algorithm based on residual bandwidth of links"},
+        {"title": "基于蚁群算法改进的带宽和时延感知的虚拟网络在线映射算法", "en": "Ant colony algorithm-based virtual network online mapping algorithm with bandwidth and delay awareness"},
+        {"title": "异构SDN虚拟网络映射关键技术", "en": "Key technologies for heterogeneous SDN virtual network mapping"}
+    ],
+    "relations": [
+        {"source": "不可分割链路和可分割链路", "target": "虚拟网络映射问题的优化目标", "type": "包含"},
+        {"source": "虚拟网络映射问题的优化目标", "target": "基于链路剩余带宽的启发式在线网络映射算法", "type": "相关"},
+        {"source": "虚拟网络映射问题的优化目标", "target": "基于蚁群算法改进的带宽和时延感知的虚拟网络在线映射算法", "type": "相关"},
+        {"source": "异构SDN网络转发平面", "target": "虚拟网络映射算法的研究现状", "type": "包含"},
+        {"source": "虚拟网络映射算法的研究现状", "target": "基于链路剩余带宽的启发式在线网络映射算法", "type": "相关"},
+        {"source": "虚拟网络映射算法的研究现状", "target": "基于蚁群算法改进的带宽和时延感知的虚拟网络在线映射算法", "type": "相关"},
+        {"source": "异构SDN虚拟网络映射关键技术", "target": "异构SDN网络转发平面", "type": "包含"},
+        {"source": "异构SDN虚拟网络映射关键技术", "target": "虚拟网络映射算法的研究现状", "type": "包含"},
+        {"source": "异构SDN虚拟网络映射关键技术", "target": "基于链路剩余带宽的启发式在线网络映射算法", "type": "相关"},
+        {"source": "异构SDN虚拟网络映射关键技术", "target": "基于蚁群算法改进的带宽和时延感知的虚拟网络在线映射算法", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "传统网络架构",
+            "en": "Traditional Network Architecture"
+        },
+        {
+            "title": "软件定义网络架构",
+            "en": "Software Defined Network Architecture"
+        },
+        {
+            "title": "SDN控制器",
+            "en": "SDN Controller"
+        },
+        {
+            "title": "OpenFlow协议",
+            "en": "OpenFlow Protocol"
+        },
+        {
+            "title": "SDN交换机",
+            "en": "SDN Switch"
+        },
+        {
+            "title": "南北向接口",
+            "en": "North-South Interface"
+        },
+        {
+            "title": "异构SDN网络模型",
+            "en": "Heterogeneous SDN Network Model"
+        },
+        {
+            "title": "虚拟网络资源映射",
+            "en": "Virtual Network Resource Mapping"
+        }
+    ],
+    "relations": [
+        {
+            "source": "传统网络架构",
+            "target": "软件定义网络架构",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义网络架构",
+            "target": "SDN控制器",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义网络架构",
+            "target": "OpenFlow协议",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义网络架构",
+            "target": "SDN交换机",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义网络架构",
+            "target": "南北向接口",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义网络架构",
+            "target": "异构SDN网络模型",
+            "type": "包含"
+        },
+        {
+            "source": "异构SDN网络模型",
+            "target": "虚拟网络资源映射",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "网络虚拟化", "en": "Network Virtualization"},
+        {"title": "虚拟专用网络", "en": "Virtual Private Network (VPN)"},
+        {"title": "虚拟局域网络", "en": "Virtual Local Area Network (VLAN)"},
+        {"title": "覆盖网络", "en": "Overlay Network"},
+        {"title": "可编程网络", "en": "Programmable Network"},
+        {"title": "SDN网络虚拟化平台", "en": "SDN Network Virtualization Platform"},
+        {"title": "转发设备集成式", "en": "Integrated Forwarding Device"},
+        {"title": "透明代理式", "en": "Transparent Proxy"},
+        {"title": "控制器集成式", "en": "Integrated Controller"}
+    ],
+    "relations": [
+        {"source": "网络虚拟化", "target": "虚拟专用网络", "type": "包含"},
+        {"source": "网络虚拟化", "target": "虚拟局域网络", "type": "包含"},
+        {"source": "网络虚拟化", "target": "覆盖网络", "type": "包含"},
+        {"source": "网络虚拟化", "target": "可编程网络", "type": "包含"},
+        {"source": "SDN网络虚拟化平台", "target": "转发设备集成式", "type": "实现方式"},
+        {"source": "SDN网络虚拟化平台", "target": "透明代理式", "type": "实现方式"},
+        {"source": "SDN网络虚拟化平台", "target": "控制器集成式", "type": "实现方式"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "虚拟化组件",
+            "en": "Virtualization Component"
+        },
+        {
+            "title": "SDN控制器",
+            "en": "SDN Controller"
+        },
+        {
+            "title": "异构SDN网络虚拟化平台",
+            "en": "Heterogeneous SDN Network Virtualization Platform"
+        },
+        {
+            "title": "虚拟网络映射算法",
+            "en": "Virtual Network Mapping Algorithm"
+        },
+        {
+            "title": "虚拟网络映射算法模型",
+            "en": "Virtual Network Mapping Algorithm Model"
+        },
+        {
+            "title": "虚拟网络映射算法目标",
+            "en": "Virtual Network Mapping Algorithm Objective"
+        }
+    ],
+    "relations": [
+        {
+            "source": "租户",
+            "target": "虚拟化组件",
+            "type": "提交虚拟化请求"
+        },
+        {
+            "source": "虚拟化组件",
+            "target": "SDN控制器",
+            "type": "实时翻译"
+        },
+        {
+            "source": "虚拟化组件",
+            "target": "底层物理网络",
+            "type": "扮演控制器的功能"
+        },
+        {
+            "source": "SDN控制器",
+            "target": "虚拟化组件",
+            "type": "提供底层网络拓扑"
+        },
+        {
+            "source": "虚拟化组件",
+            "target": "控制器",
+            "type": "集成"
+        },
+        {
+            "source": "虚拟化组件",
+            "target": "业务管理模块",
+            "type": "获取、缓存并解析虚拟网络请求"
+        },
+        {
+            "source": "虚拟化层",
+            "target": "控制器",
+            "type": "转换数据"
+        },
+        {
+            "source": "虚拟化层",
+            "target": "底层物理网络",
+            "type": "处理信令数据"
+        },
+        {
+            "source": "虚拟化层",
+            "target": "网络状态管理模块",
+            "type": "处理网络状态参数"
+        },
+        {
+            "source": "虚拟化层",
+            "target": "业务管理模块",
+            "type": "返回虚拟网络建立结果"
+        },
+        {
+            "source": "虚拟化层",
+            "target": "网络资源池管理模块",
+            "type": "完成虚拟化映射算法"
+        },
+        {
+            "source": "虚拟化层",
+            "target": "网络状态管理模块",
+            "type": "建立网络资源列表"
+        },
+        {
+            "source": "虚拟化层",
+            "target": "网络映射管理模块",
+            "type": "完成虚拟网络和物理网络之间的相互映射"
+        },
+        {
+            "source": "虚拟网络请求",
+            "target": "虚拟化层",
+            "type": "输入"
+        },
+        {
+            "source": "底层物理网络",
+            "target": "虚拟化组件",
+            "type": "根据虚拟网络的映射信息进行实时翻译"
+        },
+        {
+            "source": "虚拟网络请求",
+            "target": "虚拟网络映射算法模型",
+            "type": "数学建模"
+        },
+        {
+            "source": "底层物理网络",
+            "target": "虚拟网络映射算法模型",
+            "type": "数学建模"
+        },
+        {
+            "source": "虚拟网络映射算法模型",
+            "target": "虚拟网络映射算法",
+            "type": "抽象为一个映射"
+        },
+        {
+            "source": "虚拟网络映射算法",
+            "target": "节点映射",
+            "type": "分阶段"
+        },
+        {
+            "source": "虚拟网络映射算法",
+            "target": "链路映射",
+            "type": "分阶段"
+        },
+        {
+            "source": "物理网络",
+            "target": "InP",
+            "type": "所有者"
+        },
+        {
+            "source": "虚拟网络请求",
+            "target": "SP",
+            "type": "所有者"
+        },
+        {
+            "source": "虚拟网络映射算法目标",
+            "target": "InP",
+            "type": "分析角度"
+        },
+        {
+            "source": "虚拟网络映射算法目标",
+            "target": "SP",
+            "type": "分析角度"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "虚拟网络映射目标", "en": "Virtual Network Mapping Objectives"},
+        {"title": "虚拟网络映射算法性能指标", "en": "Performance Indicators of Virtual Network Mapping Algorithms"},
+        {"title": "映射成功率", "en": "Mapping Success Rate"},
+        {"title": "虚拟网络映射收益支出比", "en": "Revenue-to-Cost Ratio of Virtual Network Mapping"},
+        {"title": "物理资源利用率", "en": "Physical Resource Utilization"}
+    ],
+    "relations": [
+        {"source": "虚拟网络映射目标", "target": "最小化物理网络支出", "type": "目标"},
+        {"source": "虚拟网络映射目标", "target": "最大化长期虚拟网络收益", "type": "目标"},
+        {"source": "虚拟网络映射目标", "target": "综合利润和收益", "type": "目标"},
+        {"source": "虚拟网络映射目标", "target": "虚拟网络请求成功率或服务稳定度", "type": "目标"},
+        {"source": "虚拟网络映射算法性能指标", "target": "映射成功率", "type": "指标"},
+        {"source": "虚拟网络映射算法性能指标", "target": "虚拟网络映射收益支出比", "type": "指标"},
+        {"source": "虚拟网络映射算法性能指标", "target": "物理资源利用率", "type": "指标"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "在线映射算法",
+            "en": "Online mapping algorithm"
+        },
+        {
+            "title": "异构SDN网络",
+            "en": "Heterogeneous SDN network"
+        },
+        {
+            "title": "链路剩余带宽",
+            "en": "Residual bandwidth of links"
+        },
+        {
+            "title": "物理网络支出模型",
+            "en": "Physical network expenditure model"
+        },
+        {
+            "title": "异构网络切换代价",
+            "en": "Cost of heterogeneous network switching"
+        },
+        {
+            "title": "无向多重图",
+            "en": "Undirected multigraph"
+        },
+        {
+            "title": "虚拟网络映射模型",
+            "en": "Virtual network mapping model"
+        },
+        {
+            "title": "CPU计算能力",
+            "en": "CPU computing power"
+        },
+        {
+            "title": "异构网络切换",
+            "en": "Heterogeneous network switching"
+        },
+        {
+            "title": "虚拟节点约束",
+            "en": "Virtual node constraint"
+        },
+        {
+            "title": "虚拟链路带宽请求约束",
+            "en": "Virtual link bandwidth request constraint"
+        }
+    ],
+    "relations": [
+        {
+            "source": "在线映射算法",
+            "target": "异构SDN网络",
+            "type": "适用于"
+        },
+        {
+            "source": "异构SDN网络",
+            "target": "链路剩余带宽",
+            "type": "影响"
+        },
+        {
+            "source": "物理网络支出模型",
+            "target": "CPU计算能力",
+            "type": "描述"
+        },
+        {
+            "source": "物理网络支出模型",
+            "target": "链路带宽资源",
+            "type": "描述"
+        },
+        {
+            "source": "异构网络切换代价",
+            "target": "物理网络支出模型",
+            "type": "引入"
+        },
+        {
+            "source": "无向多重图",
+            "target": "异构SDN网络",
+            "type": "描述"
+        },
+        {
+            "source": "虚拟网络映射模型",
+            "target": "CPU计算能力",
+            "type": "描述"
+        },
+        {
+            "source": "虚拟网络映射模型",
+            "target": "虚拟节点约束",
+            "type": "描述"
+        },
+        {
+            "source": "虚拟网络映射模型",
+            "target": "虚拟链路带宽请求约束",
+            "type": "描述"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "物理网络节点", "en": "Physical network node"},
+        {"title": "物理网络节点集合", "en": "Collection of physical network nodes"},
+        {"title": "物理网络链路", "en": "Physical network link"},
+        {"title": "物理网络链路集合", "en": "Collection of physical network links"},
+        {"title": "虚拟网络节点", "en": "Virtual network node"},
+        {"title": "虚拟网络节点集合", "en": "Collection of virtual network nodes"},
+        {"title": "虚拟网络链路", "en": "Virtual network link"},
+        {"title": "虚拟网络链路集合", "en": "Collection of virtual network links"},
+        {"title": "虚拟网络映射", "en": "Virtual network mapping"},
+        {"title": "在线映射策略", "en": "Online mapping strategy"},
+        {"title": "离线映射", "en": "Offline mapping"},
+        {"title": "FIFO队列", "en": "FIFO queue"},
+        {"title": "节点映射", "en": "Node mapping"},
+        {"title": "链路映射", "en": "Link mapping"},
+        {"title": "映射失败", "en": "Mapping failure"},
+        {"title": "映射收益支出比", "en": "Mapping revenue-to-cost ratio"},
+        {"title": "物理网络支出", "en": "Physical network cost"},
+        {"title": "异构子网切换次数", "en": "Heterogeneous subnet switching times"},
+        {"title": "约束条件", "en": "Constraint condition"},
+        {"title": "节点映射矩阵", "en": "Node mapping matrix"},
+        {"title": "剩余可用资源", "en": "Remaining available resources"}
+    ],
+    "relations": [
+        {"source": "物理网络节点", "target": "物理网络节点集合", "type": "包含"},
+        {"source": "物理网络链路", "target": "物理网络链路集合", "type": "包含"},
+        {"source": "虚拟网络节点", "target": "虚拟网络节点集合", "type": "包含"},
+        {"source": "虚拟网络链路", "target": "虚拟网络链路集合", "type": "包含"},
+        {"source": "虚拟网络映射", "target": "在线映射策略", "type": "使用"},
+        {"source": "虚拟网络映射", "target": "离线映射", "type": "对比"},
+        {"source": "在线映射策略", "target": "FIFO队列", "type": "使用"},
+        {"source": "虚拟节点", "target": "剩余可用资源", "type": "依赖"},
+        {"source": "节点映射", "target": "虚拟节点", "type": "映射"},
+        {"source": "节点映射", "target": "物理节点", "type": "映射"},
+        {"source": "虚拟节点集合", "target": "物理节点集合", "type": "映射"},
+        {"source": "链路映射", "target": "虚拟链路", "type": "映射"},
+        {"source": "链路映射", "target": "物理路径", "type": "映射"},
+        {"source": "虚拟链路集合", "target": "物理路径集合", "type": "映射"},
+        {"source": "映射失败", "target": "节点映射", "type": "影响"},
+        {"source": "映射失败", "target": "链路映射", "type": "影响"},
+        {"source": "映射收益支出比", "target": "映射收益", "type": "计算"},
+        {"source": "映射收益支出比", "target": "物理网络支出", "type": "计算"},
+        {"source": "物理网络支出", "target": "物理链路支出", "type": "包含"},
+        {"source": "物理网络支出", "target": "物理节点支出", "type": "包含"},
+        {"source": "物理链路支出", "target": "带宽支出", "type": "包含"},
+        {"source": "物理链路支出", "target": "异构子网切换代价", "type": "包含"},
+        {"source": "约束条件", "target": "节点映射矩阵", "type": "限制"},
+        {"source": "约束条件", "target": "虚拟节点", "type": "限制"},
+        {"source": "约束条件", "target": "物理节点", "type": "限制"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "虚拟链路和物理链路",
+            "en": "Virtual and Physical Links"
+        },
+        {
+            "title": "链路映射矩阵",
+            "en": "Link Mapping Matrix"
+        },
+        {
+            "title": "子网切换约束",
+            "en": "Subnet Switching Constraint"
+        },
+        {
+            "title": "链路带宽感知映射算法设计",
+            "en": "Link Bandwidth-Aware Mapping Algorithm Design"
+        },
+        {
+            "title": "节点映射",
+            "en": "Node Mapping"
+        },
+        {
+            "title": "贪婪节点映射算法",
+            "en": "Greedy Node Mapping Algorithm"
+        },
+        {
+            "title": "链路映射",
+            "en": "Link Mapping"
+        },
+        {
+            "title": "约束最短路径优先问题",
+            "en": "Constrained Shortest Path First Problem"
+        }
+    ],
+    "relations": [
+        {
+            "source": "虚拟链路和物理链路",
+            "target": "链路映射矩阵",
+            "type": "包含"
+        },
+        {
+            "source": "链路映射矩阵",
+            "target": "子网切换约束",
+            "type": "关联"
+        },
+        {
+            "source": "链路映射矩阵",
+            "target": "链路带宽感知映射算法设计",
+            "type": "关联"
+        },
+        {
+            "source": "链路带宽感知映射算法设计",
+            "target": "节点映射",
+            "type": "包含"
+        },
+        {
+            "source": "节点映射",
+            "target": "贪婪节点映射算法",
+            "type": "包含"
+        },
+        {
+            "source": "链路带宽感知映射算法设计",
+            "target": "链路映射",
+            "type": "包含"
+        },
+        {
+            "source": "链路映射",
+            "target": "约束最短路径优先问题",
+            "type": "包含"
+        }
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "路径松弛算法",
+      "en": "Path relaxation algorithm"
+    },
+    {
+      "title": "多重图松弛算法",
+      "en": "Multiple graph relaxation algorithm"
+    },
+    {
+      "title": "K最短路径算法",
+      "en": "K shortest path algorithm"
+    },
+    {
+      "title": "异构网络",
+      "en": "Heterogeneous network"
+    },
+    {
+      "title": "链路映射",
+      "en": "Link mapping"
+    },
+    {
+      "title": "SDN控制器",
+      "en": "SDN controller"
+    }
+  ],
+  "relations": [
+    {
+      "source": "路径松弛算法",
+      "target": "多重图松弛算法",
+      "type": "包含"
+    },
+    {
+      "source": "多重图松弛算法",
+      "target": "K最短路径算法",
+      "type": "包含"
+    },
+    {
+      "source": "异构网络",
+      "target": "链路映射",
+      "type": "涉及"
+    },
+    {
+      "source": "SDN控制器",
+      "target": "链路映射",
+      "type": "涉及"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "物理节点数", "en": "Number of physical nodes"},
+        {"title": "节点初始CPU容量", "en": "Initial CPU capacity of nodes"},
+        {"title": "节点链路连接概率", "en": "Probability of link connection between nodes"},
+        {"title": "子网1链路初始带宽容量", "en": "Initial bandwidth capacity of subnet 1 links"},
+        {"title": "子网2链路初始带宽容量", "en": "Initial bandwidth capacity of subnet 2 links"},
+        {"title": "子网3链路初始带宽容量", "en": "Initial bandwidth capacity of subnet 3 links"},
+        {"title": "计算资源影响因子", "en": "Factor of computing resource impact"},
+        {"title": "异构切换因子", "en": "Factor of heterogeneous switching"},
+        {"title": "使用率因子", "en": "Factor of usage rate"},
+        {"title": "虚拟网络请求数量", "en": "Number of virtual network requests"},
+        {"title": "请求中虚拟节点数", "en": "Number of virtual nodes in request"},
+        {"title": "请求中虚拟链路数", "en": "Number of virtual links in request"},
+        {"title": "请求中节点间链接概率", "en": "Probability of link between nodes in request"},
+        {"title": "链路带宽需求", "en": "Bandwidth demand of links"}
+    ],
+    "relations": [
+        {"source": "物理节点数", "target": "节点初始CPU容量", "type": "包含"},
+        {"source": "物理节点数", "target": "节点链路连接概率", "type": "包含"},
+        {"source": "节点链路连接概率", "target": "子网1链路初始带宽容量", "type": "影响"},
+        {"source": "节点链路连接概率", "target": "子网2链路初始带宽容量", "type": "影响"},
+        {"source": "节点链路连接概率", "target": "子网3链路初始带宽容量", "type": "影响"},
+        {"source": "计算资源影响因子", "target": "异构切换因子", "type": "影响"},
+        {"source": "使用率因子", "target": "虚拟网络请求数量", "type": "影响"},
+        {"source": "虚拟网络请求数量", "target": "请求中虚拟节点数", "type": "包含"},
+        {"source": "虚拟网络请求数量", "target": "请求中虚拟链路数", "type": "包含"},
+        {"source": "请求中虚拟节点数", "target": "请求中节点间链接概率", "type": "包含"},
+        {"source": "请求中虚拟链路数", "target": "链路带宽需求", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "最短路径", "en": "Shortest Path"},
+        {"title": "贪婪策略", "en": "Greedy Strategy"},
+        {"title": "随机策略", "en": "Random Strategy"},
+        {"title": "映射收益支出比", "en": "Mapping Profit and Cost Ratio"},
+        {"title": "映射成功率", "en": "Mapping Success Rate"},
+        {"title": "物理网络支出", "en": "Physical Network Cost"},
+        {"title": "CPU资源利用率", "en": "CPU Resource Utilization"},
+        {"title": "链路带宽利用率", "en": "Link Bandwidth Utilization"},
+        {"title": "启发式算法", "en": "Heuristic Algorithm"},
+        {"title": "异构网络", "en": "Heterogeneous Network"},
+        {"title": "约束条件", "en": "Constraint Condition"},
+        {"title": "蚁群优化", "en": "Ant Colony Optimization"},
+        {"title": "时延约束", "en": "Delay Constraint"},
+        {"title": "带宽约束", "en": "Bandwidth Constraint"},
+        {"title": "节点计算资源", "en": "Node Computing Resource"},
+        {"title": "链路带宽资源", "en": "Link Bandwidth Resource"}
+    ],
+    "relations": [
+        {"source": "最短路径", "target": "链路映射", "type": "实现"},
+        {"source": "贪婪策略", "target": "虚拟网络映射", "type": "应用"},
+        {"source": "随机策略", "target": "虚拟网络映射", "type": "应用"},
+        {"source": "映射收益支出比", "target": "虚拟网络映射", "type": "评价指标"},
+        {"source": "映射成功率", "target": "虚拟网络映射", "type": "评价指标"},
+        {"source": "物理网络支出", "target": "虚拟网络映射", "type": "评价指标"},
+        {"source": "CPU资源利用率", "target": "虚拟网络映射", "type": "评价指标"},
+        {"source": "链路带宽利用率", "target": "虚拟网络映射", "type": "评价指标"},
+        {"source": "启发式算法", "target": "虚拟网络映射", "type": "应用"},
+        {"source": "异构网络", "target": "虚拟网络映射", "type": "环境"},
+        {"source": "约束条件", "target": "虚拟网络映射", "type": "限制条件"},
+        {"source": "蚁群优化", "target": "虚拟网络映射", "type": "优化算法"},
+        {"source": "时延约束", "target": "虚拟网络映射", "type": "限制条件"},
+        {"source": "带宽约束", "target": "虚拟网络映射", "type": "限制条件"},
+        {"source": "节点计算资源", "target": "虚拟网络映射", "type": "资源"},
+        {"source": "链路带宽资源", "target": "虚拟网络映射", "type": "资源"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "启发式算法",
+            "en": "Heuristic algorithm"
+        },
+        {
+            "title": "元启发式算法",
+            "en": "Metaheuristic algorithm"
+        },
+        {
+            "title": "蚁群算法",
+            "en": "Ant colony optimization algorithm"
+        },
+        {
+            "title": "多QoS模型",
+            "en": "Multi-QoS model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "启发式算法",
+            "target": "元启发式算法",
+            "type": "包含"
+        },
+        {
+            "source": "元启发式算法",
+            "target": "蚁群算法",
+            "type": "包含"
+        },
+        {
+            "source": "多QoS模型",
+            "target": "时延约束",
+            "type": "包含"
+        },
+        {
+            "source": "多QoS模型",
+            "target": "带宽约束",
+            "type": "包含"
+        },
+        {
+            "source": "蚁群算法",
+            "target": "信息素",
+            "type": "包含"
+        },
+        {
+            "source": "蚁群算法",
+            "target": "启发函数",
+            "type": "包含"
+        },
+        {
+            "source": "蚁群算法",
+            "target": "链路映射",
+            "type": "应用"
+        },
+        {
+            "source": "多QoS模型",
+            "target": "最小化物理网络支出",
+            "type": "目标"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "信息素",
+            "en": "Pheromone"
+        },
+        {
+            "title": "蚁群算法",
+            "en": "Ant Colony Algorithm"
+        },
+        {
+            "title": "优点",
+            "en": "Advantages"
+        },
+        {
+            "title": "蚁群优化算法模型",
+            "en": "Ant Colony Optimization Algorithm Model"
+        },
+        {
+            "title": "元启发式算法",
+            "en": "Metaheuristic Algorithm"
+        },
+        {
+            "title": "虚拟网络映射问题",
+            "en": "Virtual Network Mapping Problem"
+        },
+        {
+            "title": "蚂蚁",
+            "en": "Ant"
+        },
+        {
+            "title": "信息素模型",
+            "en": "Pheromone Model"
+        },
+        {
+            "title": "启发函数模型",
+            "en": "Heuristic Function Model"
+        },
+        {
+            "title": "正反馈机制",
+            "en": "Positive Feedback Mechanism"
+        }
+    ],
+    "relations": [
+        {
+            "source": "信息素",
+            "target": "蚁群算法",
+            "type": "包含"
+        },
+        {
+            "source": "蚁群算法",
+            "target": "优点",
+            "type": "具有"
+        },
+        {
+            "source": "蚁群算法",
+            "target": "蚁群优化算法模型",
+            "type": "包含"
+        },
+        {
+            "source": "蚁群优化算法模型",
+            "target": "元启发式算法",
+            "type": "包含"
+        },
+        {
+            "source": "虚拟网络映射问题",
+            "target": "蚁群优化算法模型",
+            "type": "解决"
+        },
+        {
+            "source": "蚂蚁",
+            "target": "信息素模型",
+            "type": "释放"
+        },
+        {
+            "source": "蚂蚁",
+            "target": "启发函数模型",
+            "type": "基于"
+        },
+        {
+            "source": "信息素模型",
+            "target": "正反馈机制",
+            "type": "作用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "问题分解",
+            "en": "Problem decomposition"
+        },
+        {
+            "title": "子问题求解",
+            "en": "Sub-problem solving"
+        },
+        {
+            "title": "信息素模型",
+            "en": "Pheromone model"
+        },
+        {
+            "title": "比例随机算法",
+            "en": "Fitness proportionate selection"
+        },
+        {
+            "title": "路径度量",
+            "en": "Path metric"
+        }
+    ],
+    "relations": [
+        {
+            "source": "问题分解",
+            "target": "子问题求解",
+            "type": "包含"
+        },
+        {
+            "source": "子问题求解",
+            "target": "比例随机算法",
+            "type": "使用"
+        },
+        {
+            "source": "子问题求解",
+            "target": "路径度量",
+            "type": "使用"
+        },
+        {
+            "source": "信息素模型",
+            "target": "子问题求解",
+            "type": "影响"
+        },
+        {
+            "source": "比例随机算法",
+            "target": "子问题求解",
+            "type": "使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "虚拟网络请求",
+            "en": "Virtual network request"
+        },
+        {
+            "title": "映射物理网络链路",
+            "en": "Mapping physical network links"
+        },
+        {
+            "title": "信息素矩阵",
+            "en": "Pheromone matrix"
+        },
+        {
+            "title": "启发函数",
+            "en": "Heuristic function"
+        },
+        {
+            "title": "悬挂链路映射",
+            "en": "Hanging link mapping"
+        },
+        {
+            "title": "映射扩展图",
+            "en": "Mapping expansion graph"
+        },
+        {
+            "title": "算法流程",
+            "en": "Algorithm process"
+        },
+        {
+            "title": "蚁群优化算法",
+            "en": "Ant colony optimization algorithm"
+        },
+        {
+            "title": "带宽",
+            "en": "Bandwidth"
+        },
+        {
+            "title": "时延",
+            "en": "Delay"
+        },
+        {
+            "title": "异构子网",
+            "en": "Heterogeneous subnet"
+        },
+        {
+            "title": "评估虚拟网络请求规模",
+            "en": "Evaluate the scale of virtual network requests"
+        },
+        {
+            "title": "启发式策略",
+            "en": "Heuristic strategy"
+        },
+        {
+            "title": "迭代次数",
+            "en": "Iteration times"
+        },
+        {
+            "title": "信息素蒸发",
+            "en": "Pheromone evaporation"
+        },
+        {
+            "title": "全局最优映射解",
+            "en": "Global optimal mapping solution"
+        },
+        {
+            "title": "蚂蚁数量",
+            "en": "Number of ants"
+        },
+        {
+            "title": "转移概率矩阵",
+            "en": "Transition probability matrix"
+        },
+        {
+            "title": "可映射物理节点集合",
+            "en": "Mappable physical node set"
+        },
+        {
+            "title": "随机比例算法",
+            "en": "Random proportion algorithm"
+        },
+        {
+            "title": "资源约束",
+            "en": "Resource constraint"
+        },
+        {
+            "title": "已映射虚拟节点",
+            "en": "Mapped virtual node"
+        },
+        {
+            "title": "未映射悬挂邻居节点",
+            "en": "Unmapped hanging neighbor node"
+        }
+    ],
+    "relations": [
+        {
+            "source": "虚拟网络请求",
+            "target": "映射物理网络链路",
+            "type": "包含"
+        },
+        {
+            "source": "信息素矩阵",
+            "target": "蚁群优化算法",
+            "type": "使用"
+        },
+        {
+            "source": "启发函数",
+            "target": "蚁群优化算法",
+            "type": "使用"
+        },
+        {
+            "source": "悬挂链路映射",
+            "target": "映射扩展图",
+            "type": "包含"
+        },
+        {
+            "source": "映射扩展图",
+            "target": "蚁群优化算法",
+            "type": "使用"
+        },
+        {
+            "source": "算法流程",
+            "target": "蚁群优化算法",
+            "type": "包含"
+        },
+        {
+            "source": "带宽",
+            "target": "虚拟网络请求",
+            "type": "属性"
+        },
+        {
+            "source": "时延",
+            "target": "虚拟网络请求",
+            "type": "属性"
+        },
+        {
+            "source": "异构子网",
+            "target": "虚拟网络请求",
+            "type": "属性"
+        },
+        {
+            "source": "评估虚拟网络请求规模",
+            "target": "启发式策略",
+            "type": "使用"
+        },
+        {
+            "source": "迭代次数",
+            "target": "算法流程",
+            "type": "属性"
+        },
+        {
+            "source": "信息素蒸发",
+            "target": "蚁群优化算法",
+            "type": "使用"
+        },
+        {
+            "source": "全局最优映射解",
+            "target": "算法流程",
+            "type": "属性"
+        },
+        {
+            "source": "蚂蚁数量",
+            "target": "算法流程",
+            "type": "属性"
+        },
+        {
+            "source": "转移概率矩阵",
+            "target": "蚂蚁搜索流程算法",
+            "type": "使用"
+        },
+        {
+            "source": "可映射物理节点集合",
+            "target": "蚂蚁搜索流程算法",
+            "type": "使用"
+        },
+        {
+            "source": "随机比例算法",
+            "target": "蚂蚁搜索流程算法",
+            "type": "使用"
+        },
+        {
+            "source": "资源约束",
+            "target": "蚂蚁搜索流程算法",
+            "type": "限制条件"
+        },
+        {
+            "source": "已映射虚拟节点",
+            "target": "蚂蚁搜索流程算法",
+            "type": "状态"
+        },
+        {
+            "source": "未映射悬挂邻居节点",
+            "target": "蚂蚁搜索流程算法",
+            "type": "状态"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异构SDN网络", "en": "Heterogeneous SDN network"},
+        {"title": "节点", "en": "Node"},
+        {"title": "链路带宽", "en": "Link bandwidth"},
+        {"title": "链路时延", "en": "Link delay"},
+        {"title": "蚁群搜索算法", "en": "Ant colony optimization algorithm"},
+        {"title": "启发式算法", "en": "Heuristic algorithm"},
+        {"title": "物理链路", "en": "Physical link"},
+        {"title": "虚拟网络请求", "en": "Virtual network request"},
+        {"title": "映射成功率", "en": "Mapping success rate"},
+        {"title": "物理网络支出", "en": "Physical network expenditure"},
+        {"title": "映射收益支出比", "en": "Mapping revenue-to-cost ratio"},
+        {"title": "物理资源利用率", "en": "Physical resource utilization rate"},
+        {"title": "节点CPU利用率", "en": "Node CPU utilization rate"},
+        {"title": "链路带宽利用率", "en": "Link bandwidth utilization rate"},
+        {"title": "信息素权重因子a", "en": "Weight factor of pheromone"},
+        {"title": "启发函数权重因子0", "en": "Weight factor of heuristic function"},
+        {"title": "信息素蒸发系数Q", "en": "Pheromone evaporation coefficient Q"},
+        {"title": "信息素强度Q", "en": "Pheromone intensity Q"},
+        {"title": "最大蚂蚁个数", "en": "Maximum number of ants"},
+        {"title": "最大迭代次数", "en": "Maximum number of iterations"}
+    ],
+    "relations": [
+        {"source": "异构SDN网络", "target": "节点", "type": "包含"},
+        {"source": "异构SDN网络", "target": "物理链路", "type": "包含"},
+        {"source": "节点", "target": "节点CPU利用率", "type": "关联"},
+        {"source": "物理链路", "target": "链路带宽", "type": "包含"},
+        {"source": "物理链路", "target": "链路时延", "type": "包含"},
+        {"source": "蚁群搜索算法", "target": "信息素权重因子a", "type": "包含"},
+        {"source": "蚁群搜索算法", "target": "启发函数权重因子0", "type": "包含"},
+        {"source": "蚁群搜索算法", "target": "信息素蒸发系数Q", "type": "包含"},
+        {"source": "蚁群搜索算法", "target": "信息素强度Q", "type": "包含"},
+        {"source": "蚁群搜索算法", "target": "最大蚂蚁个数", "type": "包含"},
+        {"source": "蚁群搜索算法", "target": "最大迭代次数", "type": "包含"},
+        {"source": "启发式算法", "target": "节点", "type": "关联"},
+        {"source": "启发式算法", "target": "链路带宽", "type": "关联"},
+        {"source": "启发式算法", "target": "链路时延", "type": "关联"},
+        {"source": "虚拟网络请求", "target": "节点", "type": "包含"},
+        {"source": "虚拟网络请求", "target": "链路带宽", "type": "包含"},
+        {"source": "虚拟网络请求", "target": "链路时延", "type": "包含"},
+        {"source": "映射成功率", "target": "虚拟网络请求", "type": "关联"},
+        {"source": "映射成功率", "target": "算法", "type": "关联"},
+        {"source": "物理网络支出", "target": "物理链路", "type": "关联"},
+        {"source": "映射收益支出比", "target": "虚拟网络请求", "type": "关联"},
+        {"source": "映射收益支出比", "target": "物理网络支出", "type": "关联"},
+        {"source": "物理资源利用率", "target": "节点CPU利用率", "type": "关联"},
+        {"source": "物理资源利用率", "target": "链路带宽利用率", "type": "关联"},
+        {"source": "链路信息素分布图", "target": "蚁群搜索算法", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "虚拟网络映射问题", "en": "Virtual network mapping problem"},
+        {"title": "异构SDN网络", "en": "Heterogeneous SDN network"},
+        {"title": "带宽资源约束", "en": "Bandwidth resource constraint"},
+        {"title": "物理网络支出", "en": "Physical network expenditure"},
+        {"title": "蚁群优化算法", "en": "Ant colony optimization algorithm"},
+        {"title": "启发函数", "en": "Heuristic function"},
+        {"title": "信息素模型", "en": "Pheromone model"},
+        {"title": "增广图", "en": "Augmented graph"},
+        {"title": "多QoS模型", "en": "Multi-QoS model"},
+        {"title": "静态映射算法", "en": "Static mapping algorithm"}
+    ],
+    "relations": [
+        {"source": "虚拟网络映射问题", "target": "带宽资源约束", "type": "包含"},
+        {"source": "虚拟网络映射问题", "target": "物理网络支出", "type": "包含"},
+        {"source": "虚拟网络映射问题", "target": "蚁群优化算法", "type": "包含"},
+        {"source": "蚁群优化算法", "target": "启发函数", "type": "包含"},
+        {"source": "蚁群优化算法", "target": "信息素模型", "type": "包含"},
+        {"source": "蚁群优化算法", "target": "增广图", "type": "包含"},
+        {"source": "虚拟网络映射问题", "target": "多QoS模型", "type": "包含"},
+        {"source": "虚拟网络映射问题", "target": "静态映射算法", "type": "包含"},
+        {"source": "异构SDN网络", "target": "虚拟网络映射问题", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SDN环境下考虑链路分割和链路迁移的部署问题",
+            "en": "Deployment issues considering link segmentation and link migration in SDN environment"
+        },
+        {
+            "title": "异构子网切换代价的链路映射算法",
+            "en": "Link mapping algorithm considering heterogeneous subnet switching cost"
+        },
+        {
+            "title": "多条虚拟链路的异构切换代价",
+            "en": "Heterogeneous switching cost for multiple virtual links"
+        },
+        {
+            "title": "下一代异构IP网络的关键技术",
+            "en": "Key technologies for the next generation of heterogeneous IP networks"
+        },
+        {
+            "title": "软件定义5G网络中的挑战和问题",
+            "en": "Aspirations, challenges, and open issues for software-based 5G networks in extremely dense and heterogeneous scenarios"
+        },
+        {
+            "title": "基于异构网络互联的软定义控制系统研究",
+            "en": "Research on software-defined control system based on heterogeneous network interconnection"
+        },
+        {
+            "title": "软件定义网络在异构网络中的应用",
+            "en": "Application of software-defined networking in heterogeneous networks"
+        },
+        {
+            "title": "虚拟网络组件的底层资源分配算法",
+            "en": "Underlying resource allocation algorithm for virtual network components"
+        },
+        {
+            "title": "网络虚拟化的正确性问题",
+            "en": "Correctness problem of network virtualization"
+        },
+        {
+            "title": "基于SDN技术的异构网络切换技术",
+            "en": "Heterogeneous network switching technology based on SDN technology"
+        },
+        {
+            "title": "虚拟网络嵌入的精确解法",
+            "en": "Exact solutions for virtual network embedding"
+        },
+        {
+            "title": "虚拟网络嵌入的启发式解法",
+            "en": "Heuristic solutions for virtual network embedding"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SDN环境下考虑链路分割和链路迁移的部署问题",
+            "target": "异构子网切换代价的链路映射算法",
+            "type": "包含"
+        },
+        {
+            "source": "异构子网切换代价的链路映射算法",
+            "target": "多条虚拟链路的异构切换代价",
+            "type": "包含"
+        },
+        {
+            "source": "下一代异构IP网络的关键技术",
+            "target": "软件定义5G网络中的挑战和问题",
+            "type": "相关"
+        },
+        {
+            "source": "下一代异构IP网络的关键技术",
+            "target": "基于异构网络互联的软定义控制系统研究",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义5G网络中的挑战和问题",
+            "target": "基于异构网络互联的软定义控制系统研究",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义5G网络中的挑战和问题",
+            "target": "虚拟网络组件的底层资源分配算法",
+            "type": "包含"
+        },
+        {
+            "source": "软件定义5G网络中的挑战和问题",
+            "target": "网络虚拟化的正确性问题",
+            "type": "包含"
+        },
+        {
+            "source": "基于异构网络互联的软定义控制系统研究",
+            "target": "软件定义网络在异构网络中的应用",
+            "type": "包含"
+        },
+        {
+            "source": "虚拟网络组件的底层资源分配算法",
+            "target": "虚拟网络嵌入的精确解法",
+            "type": "包含"
+        },
+        {
+            "source": "虚拟网络组件的底层资源分配算法",
+            "target": "虚拟网络嵌入的启发式解法",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ViNEYard: Virtual Network Embedding Algorithms with Coordinated Node and Link Mapping", "en": ""},
+        {"title": "Rethinking Virtual Network Embedding: Substrate Support for Path Splitting and Migration", "en": ""},
+        {"title": "Virtual Network Embedding through Topology-aware Node ranking", "en": ""},
+        {"title": "Topology-aware Virtual Network Embedding through the Degree/1", "en": ""},
+        {"title": "Topology-aware Virtual Network Embedding Based on Multiple Characteristics", "en": ""},
+        {"title": "Profit-seeking Virtual Network Embedding Algorithm via Global Resource Capacity", "en": ""},
+        {"title": "Optimization, Learning and Natural Algorithms", "en": ""},
+        {"title": "VNE-AC: Virtual Network Embedding Algorithm based on Ant Colony Metaheuristic", "en": ""},
+        {"title": "A Unified Enhanced Particle Swarm Optimization based Virtual Network Embedding Algorithm", "en": ""},
+        {"title": "Optimization by Simulated Annealing", "en": ""},
+        {"title": "Optimal Virtual Network Embedding based on Artificial Bee Colony", "en": ""},
+        {"title": "Virtual Network Embedding via Monte Carlo Tree Search", "en": ""},
+        {"title": "A Novel Reinforcement Learning Algorithm for Virtual Network Embedding", "en": ""},
+        {"title": "SVNE: Survivable Virtual Network Embedding", "en": ""}
+    ],
+    "relations": [
+        {"source": "ViNEYard: Virtual Network Embedding Algorithms with Coordinated Node and Link Mapping", "target": "Rethinking Virtual Network Embedding: Substrate Support for Path Splitting and Migration", "type": "related"},
+        {"source": "Virtual Network Embedding through Topology-aware Node ranking", "target": "Topology-aware Virtual Network Embedding through the Degree/1", "type": "related"},
+        {"source": "Topology-aware Virtual Network Embedding Based on Multiple Characteristics", "target": "Profit-seeking Virtual Network Embedding Algorithm via Global Resource Capacity", "type": "related"},
+        {"source": "Optimization, Learning and Natural Algorithms", "target": "VNE-AC: Virtual Network Embedding Algorithm based on Ant Colony Metaheuristic", "type": "related"},
+        {"source": "A Unified Enhanced Particle Swarm Optimization based Virtual Network Embedding Algorithm", "target": "Optimization by Simulated Annealing", "type": "related"},
+        {"source": "Optimal Virtual Network Embedding based on Artificial Bee Colony", "target": "Virtual Network Embedding via Monte Carlo Tree Search", "type": "related"},
+        {"source": "A Novel Reinforcement Learning Algorithm for Virtual Network Embedding", "target": "SVNE: Survivable Virtual Network Embedding", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "虚拟网络嵌入", "en": "Virtual Network Embedding"},
+        {"title": "SDN", "en": "Software-defined Networking"},
+        {"title": "网络虚拟化", "en": "Network Virtualization"},
+        {"title": "OpenFlow", "en": "OpenFlow"},
+        {"title": "容器技术", "en": "Container Technology"},
+        {"title": "FlowVisor", "en": "FlowVisor"},
+        {"title": "VeRTIGO", "en": "VeRTIGO"},
+        {"title": "OpenVirteX", "en": "OpenVirteX"},
+        {"title": "备份共享", "en": "Backup Sharing"},
+        {"title": "策略", "en": "Policy"},
+        {"title": "负载均衡", "en": "Load Balancing"},
+        {"title": "数据卸载", "en": "Data Offloading"},
+        {"title": "多路径路由", "en": "Multipath Routing"}
+    ],
+    "relations": [
+        {"source": "虚拟网络嵌入", "target": "SDN", "type": "属于"},
+        {"source": "虚拟网络嵌入", "target": "网络虚拟化", "type": "属于"},
+        {"source": "SDN", "target": "OpenFlow", "type": "实现"},
+        {"source": "容器技术", "target": "虚拟网络嵌入", "type": "应用"},
+        {"source": "FlowVisor", "target": "SDN", "type": "实现"},
+        {"source": "VeRTIGO", "target": "网络虚拟化", "type": "实现"},
+        {"source": "OpenVirteX", "target": "SDN", "type": "实现"},
+        {"source": "备份共享", "target": "虚拟网络嵌入", "type": "应用"},
+        {"source": "策略", "target": "虚拟网络嵌入", "type": "影响"},
+        {"source": "负载均衡", "target": "虚拟网络嵌入", "type": "应用"},
+        {"source": "数据卸载", "target": "虚拟网络嵌入", "type": "应用"},
+        {"source": "多路径路由", "target": "虚拟网络嵌入", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Dijkstra算法", "en": "Dijkstra's algorithm"},
+        {"title": "多图最短路径提取", "en": "Extraction of shortest paths in directed multigraphs"},
+        {"title": "虚拟网络映射算法", "en": "Virtual network mapping algorithm"},
+        {"title": "蚁群算法", "en": "Ant colony algorithm"},
+        {"title": "SDN网络映射", "en": "SDN network mapping"}
+    ],
+    "relations": [
+        {"source": "Dijkstra算法", "target": "多图最短路径提取", "type": "包含"},
+        {"source": "虚拟网络映射算法", "target": "蚁群算法", "type": "基于"},
+        {"source": "蚁群算法", "target": "SDN网络映射", "type": "应用于"}
+    ]
+}

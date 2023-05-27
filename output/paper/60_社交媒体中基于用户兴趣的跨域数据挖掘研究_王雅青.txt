@@ -1,0 +1,2194 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "社交媒体",
+            "en": "Social Media"
+        },
+        {
+            "title": "跨域数据挖掘",
+            "en": "Cross-domain Data Mining"
+        },
+        {
+            "title": "用户兴趣",
+            "en": "User Interest"
+        },
+        {
+            "title": "数据稀疏性问题",
+            "en": "Data Sparsity Problem"
+        },
+        {
+            "title": "异质数据",
+            "en": "Heterogeneous Data"
+        }
+    ],
+    "relations": [
+        {
+            "source": "社交媒体",
+            "target": "用户",
+            "type": "包含"
+        },
+        {
+            "source": "社交媒体",
+            "target": "数据量",
+            "type": "关联"
+        },
+        {
+            "source": "社交媒体",
+            "target": "数据挖掘",
+            "type": "关联"
+        },
+        {
+            "source": "跨域数据挖掘",
+            "target": "数据联合挖掘",
+            "type": "同义"
+        },
+        {
+            "source": "用户兴趣",
+            "target": "数据挖掘",
+            "type": "关联"
+        },
+        {
+            "source": "用户兴趣",
+            "target": "信息关联",
+            "type": "关联"
+        },
+        {
+            "source": "数据稀疏性问题",
+            "target": "数据挖掘",
+            "type": "关联"
+        },
+        {
+            "source": "异质数据",
+            "target": "数据类型",
+            "type": "包含"
+        },
+        {
+            "source": "异质数据",
+            "target": "用户交互方式",
+            "type": "包含"
+        },
+        {
+            "source": "跨域数据挖掘",
+            "target": "异质数据",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域数据挖掘", "en": "Cross-domain data mining"},
+        {"title": "跨域信息关联", "en": "Cross-domain information correlation"},
+        {"title": "匿名化跨域数据", "en": "Anonymous cross-domain data"},
+        {"title": "用户兴趣", "en": "User interest"},
+        {"title": "跨域用户身份识别", "en": "Cross-domain user identification"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "跨域动态关联", "en": "Cross-domain dynamic correlation"},
+        {"title": "深度学习", "en": "Deep learning"}
+    ],
+    "relations": [
+        {"source": "跨域数据挖掘", "target": "跨域信息关联", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "匿名化跨域数据", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "用户兴趣", "type": "包含"},
+        {"source": "用户兴趣", "target": "跨域用户身份识别", "type": "应用"},
+        {"source": "用户兴趣", "target": "跨域推荐", "type": "应用"},
+        {"source": "用户兴趣", "target": "跨域动态关联", "type": "应用"},
+        {"source": "跨域信息关联", "target": "用户兴趣", "type": "关联"},
+        {"source": "匿名化跨域数据", "target": "用户兴趣", "type": "关联"},
+        {"source": "跨域动态关联", "target": "深度学习", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域数据挖掘", "en": "Cross-domain data mining"},
+        {"title": "用户兴趣模型", "en": "User interest model"},
+        {"title": "异质跨域数据", "en": "Heterogeneous cross-domain data"},
+        {"title": "跨域用户身份识别", "en": "Cross-domain user identification"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "动态跨域数据", "en": "Dynamic cross-domain data"}
+    ],
+    "relations": [
+        {"source": "跨域数据挖掘", "target": "用户兴趣模型", "type": "包含"},
+        {"source": "用户兴趣模型", "target": "跨域数据挖掘", "type": "应用于"},
+        {"source": "异质跨域数据", "target": "用户兴趣模型", "type": "影响"},
+        {"source": "用户兴趣模型", "target": "异质跨域数据", "type": "建立在"},
+        {"source": "跨域用户身份识别", "target": "异质跨域数据", "type": "应用于"},
+        {"source": "异质跨域数据", "target": "跨域用户身份识别", "type": "数据源"},
+        {"source": "跨域推荐", "target": "异质跨域数据", "type": "应用于"},
+        {"source": "异质跨域数据", "target": "跨域推荐", "type": "数据源"},
+        {"source": "动态跨域数据", "target": "跨域推荐", "type": "影响"},
+        {"source": "跨域推荐", "target": "动态跨域数据", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域数据挖掘", "en": "Cross-domain data mining"},
+        {"title": "用户兴趣模型", "en": "User interest model"},
+        {"title": "跨域用户身份识别", "en": "Cross-domain user identification"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "异质网络嵌入", "en": "Heterogeneous network embedding"},
+        {"title": "循环神经网络", "en": "Recurrent neural network"},
+        {"title": "门控神经网络", "en": "Gated neural network"}
+    ],
+    "relations": [
+        {"source": "跨域数据挖掘", "target": "用户兴趣模型", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "跨域用户身份识别", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "跨域推荐", "type": "包含"},
+        {"source": "用户兴趣模型", "target": "跨域用户身份识别", "type": "基础"},
+        {"source": "用户兴趣模型", "target": "跨域推荐", "type": "基础"},
+        {"source": "跨域用户身份识别", "target": "异质网络嵌入", "type": "方法"},
+        {"source": "跨域推荐", "target": "异质网络嵌入", "type": "方法"},
+        {"source": "跨域推荐", "target": "循环神经网络", "type": "方法"},
+        {"source": "跨域推荐", "target": "门控神经网络", "type": "方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域数据匿名化", "en": "Anonymization of cross-domain data"},
+        {"title": "跨域异质关系嵌入", "en": "Embedding of cross-domain heterogeneous relationships"},
+        {"title": "联合训练算法", "en": "Joint training algorithm"},
+        {"title": "动态跨域数据", "en": "Dynamic cross-domain data"},
+        {"title": "多层循环神经网络", "en": "Multi-layer recurrent neural network"},
+        {"title": "循环-门控神经网络", "en": "Recurrent gated neural network"},
+        {"title": "跨域演化模式", "en": "Cross-domain evolution pattern"},
+        {"title": "单域动态模式", "en": "Single-domain dynamic pattern"},
+        {"title": "推荐性能", "en": "Recommendation performance"}
+    ],
+    "relations": [
+        {"source": "跨域数据匿名化", "target": "跨域异质关系嵌入", "type": "解决问题"},
+        {"source": "跨域数据匿名化", "target": "联合训练算法", "type": "解决问题"},
+        {"source": "动态跨域数据", "target": "多层循环神经网络", "type": "解决问题"},
+        {"source": "动态跨域数据", "target": "循环-门控神经网络", "type": "解决问题"},
+        {"source": "多层循环神经网络", "target": "跨域演化模式", "type": "建模"},
+        {"source": "多层循环神经网络", "target": "单域动态模式", "type": "建模"},
+        {"source": "循环-门控神经网络", "target": "跨域演化模式", "type": "建模"},
+        {"source": "循环-门控神经网络", "target": "单域动态模式", "type": "建模"},
+        {"source": "跨域异质关系嵌入", "target": "推荐性能", "type": "影响"},
+        {"source": "联合训练算法", "target": "推荐性能", "type": "影响"},
+        {"source": "多层循环神经网络", "target": "推荐性能", "type": "影响"},
+        {"source": "循环-门控神经网络", "target": "推荐性能", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨领域推荐系统", "en": "Cross-domain recommender systems"},
+        {"title": "跨领域三元分解", "en": "Cross-domain triadic factorization"},
+        {"title": "异构协同过滤中的迁移学习", "en": "Transfer learning in heterogeneous collaborative filtering domains"},
+        {"title": "跨领域协同过滤中的领域排名", "en": "Domain ranking for cross-domain collaborative filtering"},
+        {"title": "社交网络的去匿名化", "en": "De-anonymizing social networks"},
+        {"title": "社交网络的有效调解算法", "en": "An efficient reconciliationalgorithm for social networks"},
+        {"title": "跨设备用户链接", "en": "Cross-device user linking"},
+        {"title": "聚类级别潜在因子模型", "en": "Cluster-level latent factor model"},
+        {"title": "概率聚类级别潜在因子模型", "en": "Probabilistic cluster-level latent factor model"},
+        {"title": "跨领域数据融合方法", "en": "Methodologies for cross-domain data fusion"},
+        {"title": "基于循环神经网络的会话推荐", "en": "Session-based recommendations with recurrent neural networks"},
+        {"title": "基于循环神经网络的会话推荐中的Top-K增益", "en": "Recurrent neural networks with Top-K gains for session-based recommendations"},
+        {"title": "基于会话的推荐系统综述", "en": "A survey on session-based recommender systems"}
+    ],
+    "relations": [
+        {"source": "跨领域推荐系统", "target": "跨领域三元分解", "type": "相关"},
+        {"source": "跨领域推荐系统", "target": "异构协同过滤中的迁移学习", "type": "相关"},
+        {"source": "跨领域推荐系统", "target": "跨领域协同过滤中的领域排名", "type": "相关"},
+        {"source": "社交网络的去匿名化", "target": "社交网络的有效调解算法", "type": "相关"},
+        {"source": "跨设备用户链接", "target": "跨领域推荐系统", "type": "相关"},
+        {"source": "聚类级别潜在因子模型", "target": "概率聚类级别潜在因子模型", "type": "相关"},
+        {"source": "跨领域推荐系统", "target": "聚类级别潜在因子模型", "type": "相关"},
+        {"source": "聚类级别潜在因子模型", "target": "概率聚类级别潜在因子模型", "type": "相关"},
+        {"source": "跨领域推荐系统", "target": "概率聚类级别潜在因子模型", "type": "相关"},
+        {"source": "跨领域数据融合方法", "target": "跨领域推荐系统", "type": "相关"},
+        {"source": "基于循环神经网络的会话推荐", "target": "基于循环神经网络的会话推荐中的Top-K增益", "type": "相关"},
+        {"source": "基于循环神经网络的会话推荐", "target": "基于会话的推荐系统综述", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "推荐系统", "en": "Recommendation System"},
+        {"title": "跨域数据挖掘", "en": "Cross-domain Data Mining"},
+        {"title": "用户兴趣模型", "en": "User Interest Model"},
+        {"title": "数据共享", "en": "Data Sharing"},
+        {"title": "社交媒体", "en": "Social Media"},
+        {"title": "数据稀疏性", "en": "Data Sparsity"}
+    ],
+    "relations": [
+        {"source": "推荐系统", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "用户兴趣模型", "type": "包含"},
+        {"source": "数据共享", "target": "推荐系统", "type": "提供数据"},
+        {"source": "数据共享", "target": "社交媒体", "type": "提供数据"},
+        {"source": "社交媒体", "target": "跨域数据挖掘", "type": "提供数据"},
+        {"source": "跨域数据挖掘", "target": "数据稀疏性", "type": "解决问题"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域数据挖掘", "en": "Cross-domain data mining"},
+        {"title": "用户兴趣模型", "en": "User interest model"},
+        {"title": "社交媒体", "en": "Social media"},
+        {"title": "跨域用户身份识别", "en": "Cross-domain user identification"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "跨域社区发现", "en": "Cross-domain community detection"},
+        {"title": "跨域影响力分析", "en": "Cross-domain influence analysis"},
+        {"title": "跨域事件检测", "en": "Cross-domain event detection"}
+    ],
+    "relations": [
+        {"source": "跨域数据挖掘", "target": "用户兴趣模型", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "社交媒体", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "跨域用户身份识别", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "跨域推荐", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "跨域社区发现", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "跨域影响力分析", "type": "包含"},
+        {"source": "跨域数据挖掘", "target": "跨域事件检测", "type": "包含"},
+        {"source": "社交媒体", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "用户兴趣模型", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "跨域用户身份识别", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "跨域推荐", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "跨域社区发现", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "跨域影响力分析", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "跨域事件检测", "target": "跨域数据挖掘", "type": "包含"},
+        {"source": "跨域用户身份识别", "target": "属性数据", "type": "包含"},
+        {"source": "跨域用户身份识别", "target": "社交结构数据", "type": "包含"},
+        {"source": "跨域用户身份识别", "target": "内容数据", "type": "包含"},
+        {"source": "跨域推荐", "target": "用户无重叠情况下的跨域推荐", "type": "包含"},
+        {"source": "跨域推荐", "target": "用户有重叠情况下的跨域推荐", "type": "包含"},
+        {"source": "跨域社区发现", "target": "基于社交结构数据的跨域社区发现", "type": "包含"},
+        {"source": "跨域社区发现", "target": "引入属性数据的跨域社区发现", "type": "包含"},
+        {"source": "跨域影响力分析", "target": "面向单一类型信息的跨域影响力分析", "type": "包含"},
+        {"source": "跨域影响力分析", "target": "面向多种类型信息的跨域影响力分析", "type": "包含"},
+        {"source": "跨域事件检测", "target": "基于内容数据的跨域事件检测", "type": "包含"},
+        {"source": "跨域事件检测", "target": "基于属性数据的跨域事件检测", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "属性数据包含无效或不一致数据", "en": "Invalid or inconsistent data in attribute data"},
+        {"title": "利用社交结构数据或内容数据提升识别性能", "en": "Using social structure or content data to improve identification performance"},
+        {"title": "基于邻居特征的跨域用户身份识别方法", "en": "Cross-domain user identification method based on neighbor features"},
+        {"title": "基于共同邻居的图模型用于用户身份识别", "en": "Graph model based on common neighbors for user identification"},
+        {"title": "基于邻居特征的并行映射算法", "en": "Parallel mapping algorithm based on neighbor features"},
+        {"title": "联合预测域内和域间用户链接提升性能", "en": "Joint prediction of intra-domain and inter-domain user links to improve performance"},
+        {"title": "利用内容数据进行跨域用户身份识别", "en": "Using content data for cross-domain user identification"},
+        {"title": "基于浏览内容数据的成对分类问题", "en": "Pairwise classification problem based on browsing content data"},
+        {"title": "利用对齐算法计算位置数据相似度得分", "en": "Using alignment algorithm to calculate similarity scores for location data"},
+        {"title": "融合不同数据提升跨域身份识别性能", "en": "Fusing different data to improve cross-domain identification performance"},
+        {"title": "跨域推荐的应用场景", "en": "Application scenarios of cross-domain recommendation"},
+        {"title": "跨域推荐的信息迁移方法", "en": "Information transfer methods for cross-domain recommendation"},
+        {"title": "基于共有和个性化部分的用户评分模式划分", "en": "Division of user rating patterns based on common and personalized parts"},
+        {"title": "利用外部知识库构建语义网络进行信息传递", "en": "Using external knowledge base to construct semantic network for information transfer"},
+        {"title": "用户重叠情况下的跨域推荐方法", "en": "Cross-domain recommendation methods with overlapping users"},
+        {"title": "基于合并的矩阵分解方法", "en": "Matrix factorization method based on merging"},
+        {"title": "引入不同类型行为关系缓解数据稀疏性问题", "en": "Introducing different types of behavior relationships to alleviate data sparsity issues"}
+    ],
+    "relations": [
+        {"source": "属性数据包含无效或不一致数据", "target": "利用社交结构数据或内容数据提升识别性能", "type": "包含"},
+        {"source": "利用社交结构数据或内容数据提升识别性能", "target": "基于邻居特征的跨域用户身份识别方法", "type": "提升"},
+        {"source": "基于邻居特征的跨域用户身份识别方法", "target": "基于共同邻居的图模型用于用户身份识别", "type": "基于"},
+        {"source": "基于邻居特征的跨域用户身份识别方法", "target": "基于邻居特征的并行映射算法", "type": "基于"},
+        {"source": "基于邻居特征的跨域用户身份识别方法", "target": "联合预测域内和域间用户链接提升性能", "type": "联合预测"},
+        {"source": "利用社交结构数据或内容数据提升识别性能", "target": "利用内容数据进行跨域用户身份识别", "type": "利用"},
+        {"source": "利用内容数据进行跨域用户身份识别", "target": "基于浏览内容数据的成对分类问题", "type": "基于"},
+        {"source": "利用内容数据进行跨域用户身份识别", "target": "利用对齐算法计算位置数据相似度得分", "type": "利用"},
+        {"source": "利用社交结构数据或内容数据提升识别性能", "target": "融合不同数据提升跨域身份识别性能", "type": "融合"},
+        {"source": "融合不同数据提升跨域身份识别性能", "target": "跨域推荐的应用场景", "type": "应用于"},
+        {"source": "跨域推荐的应用场景", "target": "跨域推荐的信息迁移方法", "type": "使用"},
+        {"source": "跨域推荐的信息迁移方法", "target": "基于共有和个性化部分的用户评分模式划分", "type": "基于"},
+        {"source": "跨域推荐的信息迁移方法", "target": "利用外部知识库构建语义网络进行信息传递", "type": "利用"},
+        {"source": "跨域推荐的应用场景", "target": "用户重叠情况下的跨域推荐方法", "type": "应用于"},
+        {"source": "用户重叠情况下的跨域推荐方法", "target": "基于合并的矩阵分解方法", "type": "基于"},
+        {"source": "用户重叠情况下的跨域推荐方法", "target": "引入不同类型行为关系缓解数据稀疏性问题", "type": "引入"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域数据挖掘", "en": "Cross-domain data mining"},
+        {"title": "重叠用户", "en": "Overlapping users"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "跨域社区发现", "en": "Cross-domain community detection"},
+        {"title": "跨域影响力分析", "en": "Cross-domain influence analysis"},
+        {"title": "跨域事件检测", "en": "Cross-domain event detection"},
+        {"title": "跨域用户身份识别", "en": "Cross-domain user identification"},
+        {"title": "跨域数据异质性", "en": "Cross-domain data heterogeneity"},
+        {"title": "跨域数据匿名化", "en": "Cross-domain data anonymization"},
+        {"title": "跨域数据动态性", "en": "Cross-domain data dynamics"}
+    ],
+    "relations": [
+        {"source": "重叠用户", "target": "跨域推荐", "type": "实现"},
+        {"source": "跨域推荐", "target": "重叠用户", "type": "依赖"},
+        {"source": "跨域推荐", "target": "跨域数据异质性", "type": "考虑"},
+        {"source": "跨域推荐", "target": "跨域数据匿名化", "type": "考虑"},
+        {"source": "跨域推荐", "target": "跨域数据动态性", "type": "考虑"},
+        {"source": "跨域社区发现", "target": "跨域数据异质性", "type": "考虑"},
+        {"source": "跨域社区发现", "target": "跨域数据动态性", "type": "考虑"},
+        {"source": "跨域影响力分析", "target": "跨域数据异质性", "type": "考虑"},
+        {"source": "跨域影响力分析", "target": "跨域数据动态性", "type": "考虑"},
+        {"source": "跨域事件检测", "target": "跨域数据异质性", "type": "考虑"},
+        {"source": "跨域事件检测", "target": "跨域数据动态性", "type": "考虑"},
+        {"source": "跨域用户身份识别", "target": "跨域数据匿名化", "type": "考虑"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "用户兴趣模型", "en": "User Interest Model"},
+        {"title": "用户兴趣模型研究", "en": "Research on User Interest Model"},
+        {"title": "Elaine Rich博士", "en": "Dr. Elaine Rich"},
+        {"title": "用户画像", "en": "User Profile"},
+        {"title": "推荐系统", "en": "Recommendation System"},
+        {"title": "数字图书馆", "en": "Digital Library"},
+        {"title": "人机交互系统", "en": "Human-Computer Interaction System"},
+        {"title": "属性数据", "en": "Attribute Data"},
+        {"title": "交互数据", "en": "Interaction Data"},
+        {"title": "内容数据", "en": "Content Data"},
+        {"title": "关键词列表法", "en": "Keyword List Method"},
+        {"title": "本体论表示法", "en": "Ontology Representation Method"},
+        {"title": "向量空间模型表示法", "en": "Vector Space Model Representation Method"}
+    ],
+    "relations": [
+        {"source": "用户兴趣模型", "target": "用户行为信息", "type": "描述"},
+        {"source": "用户兴趣模型", "target": "跨域数据挖掘", "type": "应用"},
+        {"source": "用户兴趣模型研究", "target": "Elaine Rich博士", "type": "起源"},
+        {"source": "Elaine Rich博士", "target": "建模用户兴趣", "type": "提出"},
+        {"source": "用户画像", "target": "用户兴趣特征", "type": "描述"},
+        {"source": "推荐系统", "target": "用户兴趣模型", "type": "应用"},
+        {"source": "数字图书馆", "target": "用户兴趣模型", "type": "应用"},
+        {"source": "人机交互系统", "target": "用户兴趣模型", "type": "应用"},
+        {"source": "属性数据", "target": "用户兴趣建模", "type": "数据来源"},
+        {"source": "交互数据", "target": "用户兴趣建模", "type": "数据来源"},
+        {"source": "内容数据", "target": "用户兴趣建模", "type": "数据来源"},
+        {"source": "用户兴趣建模", "target": "用户兴趣表示", "type": "转化"},
+        {"source": "关键词列表法", "target": "用户兴趣表示", "type": "表示方法"},
+        {"source": "本体论表示法", "target": "用户兴趣表示", "type": "表示方法"},
+        {"source": "向量空间模型表示法", "target": "用户兴趣表示", "type": "表示方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "向量空间模型", "en": "Vector Space Model"},
+        {"title": "用户兴趣模型", "en": "User Interest Model"},
+        {"title": "嵌入向量表示法", "en": "Embedding Vector Representation"},
+        {"title": "推荐系统", "en": "Recommendation System"},
+        {"title": "用户画像", "en": "User Profile"},
+        {"title": "数字图书馆", "en": "Digital Library"},
+        {"title": "词袋模型", "en": "Bag-of-Words Model"},
+        {"title": "TF-IDF", "en": "Term Frequency-Inverse Document Frequency"},
+        {"title": "主题模型", "en": "Topic Model"},
+        {"title": "神经网络语言模型", "en": "Neural Network Language Model"},
+        {"title": "奇异值分解", "en": "Singular Value Decomposition"},
+        {"title": "概率矩阵分解", "en": "Probabilistic Matrix Factorization"},
+        {"title": "偏置矩阵分解", "en": "Biased Matrix Factorization"},
+        {"title": "SVD++", "en": "SVD++"}
+    ],
+    "relations": [
+        {"source": "向量空间模型", "target": "用户兴趣模型", "type": "描述"},
+        {"source": "用户兴趣模型", "target": "推荐系统", "type": "应用"},
+        {"source": "用户兴趣模型", "target": "用户画像", "type": "应用"},
+        {"source": "用户兴趣模型", "target": "数字图书馆", "type": "应用"},
+        {"source": "词袋模型", "target": "用户兴趣模型", "type": "建模"},
+        {"source": "TF-IDF", "target": "用户兴趣模型", "type": "建模"},
+        {"source": "主题模型", "target": "用户兴趣模型", "type": "建模"},
+        {"source": "神经网络语言模型", "target": "用户兴趣模型", "type": "建模"},
+        {"source": "奇异值分解", "target": "用户兴趣模型", "type": "建模"},
+        {"source": "概率矩阵分解", "target": "用户兴趣模型", "type": "建模"},
+        {"source": "偏置矩阵分解", "target": "用户兴趣模型", "type": "建模"},
+        {"source": "SVD++", "target": "用户兴趣模型", "type": "建模"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "社交链接", "en": "Social Links"},
+        {"title": "有向图", "en": "Directed Graph"},
+        {"title": "兴趣相似的用户组", "en": "Groups of Users with Similar Interests"},
+        {"title": "基于异质数据的用户兴趣模型", "en": "User Interest Model Based on Heterogeneous Data"},
+        {"title": "异质信息网络", "en": "Heterogeneous Information Network"},
+        {"title": "标签传播模型", "en": "Label Propagation Model"},
+        {"title": "推荐系统", "en": "Recommendation System"},
+        {"title": "网络嵌入方法", "en": "Network Embedding Method"},
+        {"title": "DeepWalk", "en": "DeepWalk"},
+        {"title": "Large-scale Information Network Embedding (LINE)", "en": "Large-scale Information Network Embedding (LINE)"},
+        {"title": "预测文本嵌入 (PTE)", "en": "Predictive Text Embedding (PTE)"},
+        {"title": "因子分解机", "en": "Factorization Machine"},
+        {"title": "基于匿名数据的用户兴趣模型", "en": "User Interest Model Based on Anonymous Data"},
+        {"title": "项目-项目矩阵分解", "en": "Item-Item Matrix Factorization"},
+        {"title": "循环神经网络 (RNN)", "en": "Recurrent Neural Network (RNN)"},
+        {"title": "GRU4REC", "en": "GRU4REC"}
+    ],
+    "relations": [
+        {"source": "社交链接", "target": "有向图", "type": "包含关系"},
+        {"source": "有向图", "target": "兴趣相似的用户组", "type": "提取关系"},
+        {"source": "基于异质数据的用户兴趣模型", "target": "异质信息网络", "type": "基于关系"},
+        {"source": "异质信息网络", "target": "标签传播模型", "type": "应用关系"},
+        {"source": "异质信息网络", "target": "推荐系统", "type": "应用关系"},
+        {"source": "网络嵌入方法", "target": "DeepWalk", "type": "包含关系"},
+        {"source": "网络嵌入方法", "target": "Large-scale Information Network Embedding (LINE)", "type": "包含关系"},
+        {"source": "网络嵌入方法", "target": "预测文本嵌入 (PTE)", "type": "包含关系"},
+        {"source": "推荐系统", "target": "因子分解机", "type": "应用关系"},
+        {"source": "基于匿名数据的用户兴趣模型", "target": "项目-项目矩阵分解", "type": "基于关系"},
+        {"source": "循环神经网络 (RNN)", "target": "GRU4REC", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "匿名用户行为依赖关系挖掘", "en": "Mining dependency relationships between anonymous user behaviors"},
+        {"title": "基于动态数据的用户兴趣模型", "en": "User interest model based on dynamic data"},
+        {"title": "用户兴趣模型构建细节", "en": "Details of user interest model construction"},
+        {"title": "跨域数据挖掘方法", "en": "Cross-domain data mining methods"},
+        {"title": "基于用户兴趣的跨域身份识别", "en": "Cross-domain identity recognition based on user interests"}
+    ],
+    "relations": [
+        {"source": "匿名用户行为依赖关系挖掘", "target": "基于动态数据的用户兴趣模型", "type": "相关"},
+        {"source": "基于动态数据的用户兴趣模型", "target": "用户兴趣模型构建细节", "type": "包含"},
+        {"source": "用户兴趣模型构建细节", "target": "跨域数据挖掘方法", "type": "相关"},
+        {"source": "跨域数据挖掘方法", "target": "基于用户兴趣的跨域身份识别", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "跨网络嵌入方法",
+            "en": "Cross-network embedding method"
+        },
+        {
+            "title": "交叉图嵌入方法",
+            "en": "Cross-graph embedding method"
+        },
+        {
+            "title": "深度多粒度图嵌入方法",
+            "en": "Deep multi-granularity graph embedding method"
+        },
+        {
+            "title": "支持向量机模型",
+            "en": "Support Vector Machine model"
+        },
+        {
+            "title": "多目标框架",
+            "en": "Multi-objective framework"
+        },
+        {
+            "title": "聚合方法",
+            "en": "Aggregation method"
+        },
+        {
+            "title": "异构节点嵌入方法",
+            "en": "Heterogeneous node embedding method"
+        },
+        {
+            "title": "bootstrapping方法",
+            "en": "Bootstrapping method"
+        },
+        {
+            "title": "深度学习模型",
+            "en": "Deep learning model"
+        },
+        {
+            "title": "多模态自编码器",
+            "en": "Multimodal autoencoder"
+        },
+        {
+            "title": "跨域主题建模方法",
+            "en": "Cross-domain topic modeling method"
+        },
+        {
+            "title": "联合矩阵分解方法",
+            "en": "Joint matrix factorization method"
+        },
+        {
+            "title": "张量分解方法",
+            "en": "Tensor factorization method"
+        },
+        {
+            "title": "分解机模型",
+            "en": "Factorization Machines model"
+        },
+        {
+            "title": "图卷积网络模型",
+            "en": "Graph Convolutional Network model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "跨网络嵌入方法",
+            "target": "交叉图嵌入方法",
+            "type": "相关"
+        },
+        {
+            "source": "跨网络嵌入方法",
+            "target": "深度多粒度图嵌入方法",
+            "type": "相关"
+        },
+        {
+            "source": "跨网络嵌入方法",
+            "target": "支持向量机模型",
+            "type": "相关"
+        },
+        {
+            "source": "多目标框架",
+            "target": "支持向量机模型",
+            "type": "相关"
+        },
+        {
+            "source": "聚合方法",
+            "target": "支持向量机模型",
+            "type": "相关"
+        },
+        {
+            "source": "异构节点嵌入方法",
+            "target": "支持向量机模型",
+            "type": "相关"
+        },
+        {
+            "source": "bootstrapping方法",
+            "target": "支持向量机模型",
+            "type": "相关"
+        },
+        {
+            "source": "深度学习模型",
+            "target": "多模态自编码器",
+            "type": "相关"
+        },
+        {
+            "source": "跨域主题建模方法",
+            "target": "联合矩阵分解方法",
+            "type": "相关"
+        },
+        {
+            "source": "联合矩阵分解方法",
+            "target": "张量分解方法",
+            "type": "相关"
+        },
+        {
+            "source": "分解机模型",
+            "target": "图卷积网络模型",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域推荐模型", "en": "Cross-domain recommendation model"},
+        {"title": "用户行为数据", "en": "User behavior data"},
+        {"title": "异质跨域数据", "en": "Heterogeneous cross-domain data"},
+        {"title": "用户兴趣模型", "en": "User interest model"},
+        {"title": "同一兴趣空间", "en": "Same interest space"},
+        {"title": "隐式兴趣信息", "en": "Implicit interest information"},
+        {"title": "深度学习", "en": "Deep learning"},
+        {"title": "动态关联", "en": "Dynamic correlation"}
+    ],
+    "relations": [
+        {"source": "跨域推荐模型", "target": "用户行为数据", "type": "包含"},
+        {"source": "跨域推荐模型", "target": "异质跨域数据", "type": "包含"},
+        {"source": "跨域推荐模型", "target": "用户兴趣模型", "type": "关联"},
+        {"source": "用户兴趣模型", "target": "同一兴趣空间", "type": "包含"},
+        {"source": "用户兴趣模型", "target": "隐式兴趣信息", "type": "包含"},
+        {"source": "用户兴趣模型", "target": "深度学习", "type": "关联"},
+        {"source": "用户兴趣模型", "target": "动态关联", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "用户行为中的时序依赖关系",
+            "en": "Temporal dependency in user behavior"
+        },
+        {
+            "title": "信息间简单的线性关联",
+            "en": "Simple linear correlation between information"
+        },
+        {
+            "title": "跨域信息间的动态关联非常复杂",
+            "en": "Dynamic correlation between cross-domain information is very complex"
+        },
+        {
+            "title": "深度学习",
+            "en": "Deep learning"
+        },
+        {
+            "title": "用户兴趣模型",
+            "en": "User interest model"
+        },
+        {
+            "title": "向量形式",
+            "en": "Vector form"
+        },
+        {
+            "title": "异质跨域数据下基于用户兴趣的跨域用户身份识别方法",
+            "en": "User identity recognition method based on user interest in heterogeneous cross-domain data"
+        },
+        {
+            "title": "匿名跨域数据下基于用户兴趣的跨域推荐方法",
+            "en": "Cross-domain recommendation method based on user interest in anonymous cross-domain data"
+        },
+        {
+            "title": "动态跨域数据下基于用户兴趣的跨域推荐方法",
+            "en": "Cross-domain recommendation method based on user interest in dynamic cross-domain data"
+        }
+    ],
+    "relations": [
+        {
+            "source": "用户行为中的时序依赖关系",
+            "target": "信息间简单的线性关联",
+            "type": "related"
+        },
+        {
+            "source": "信息间简单的线性关联",
+            "target": "跨域信息间的动态关联非常复杂",
+            "type": "contradictory"
+        },
+        {
+            "source": "深度学习",
+            "target": "跨域信息间的动态关联非常复杂",
+            "type": "related"
+        },
+        {
+            "source": "用户兴趣模型",
+            "target": "向量形式",
+            "type": "related"
+        },
+        {
+            "source": "异质跨域数据下基于用户兴趣的跨域用户身份识别方法",
+            "target": "用户兴趣模型",
+            "type": "related"
+        },
+        {
+            "source": "匿名跨域数据下基于用户兴趣的跨域推荐方法",
+            "target": "用户兴趣模型",
+            "type": "related"
+        },
+        {
+            "source": "动态跨域数据下基于用户兴趣的跨域推荐方法",
+            "target": "用户兴趣模型",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "社交网络", "en": "Social Networks"},
+        {"title": "跨领域推荐", "en": "Cross-domain Recommendation"},
+        {"title": "协同过滤", "en": "Collaborative Filtering"},
+        {"title": "概率模型", "en": "Probabilistic Model"},
+        {"title": "个性化推荐", "en": "Personalized Recommendation"}
+    ],
+    "relations": [
+        {"source": "社交网络", "target": "跨领域推荐", "type": "包含"},
+        {"source": "社交网络", "target": "协同过滤", "type": "包含"},
+        {"source": "跨领域推荐", "target": "协同过滤", "type": "关联"},
+        {"source": "跨领域推荐", "target": "概率模型", "type": "包含"},
+        {"source": "个性化推荐", "target": "跨领域推荐", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "mutual clustering across multiple social networks", "en": ""},
+        {"title": "cross-domain community detection in heterogeneous social networks", "en": ""},
+        {"title": "community detection for emerging social networks", "en": ""},
+        {"title": "least cost influence maximization across multiple social networks", "en": ""},
+        {"title": "influence maximization across partially aligned heterogeneous social networks", "en": ""},
+        {"title": "Klout score: measuring influence across multiple social networks", "en": ""},
+        {"title": "cross-domain multi-event tracking via CO-PMHT", "en": ""},
+        {"title": "cross-platform social event detection", "en": ""},
+        {"title": "基于共同用户的跨网络分析:社交媒体大数据中的多源问题", "en": "Cross-network analysis based on common users: multi-source problems in social media big data"},
+        {"title": "social network fusion and mining: a survey", "en": ""},
+        {"title": "a survey of user modelling in social media websites", "en": ""},
+        {"title": "inferring user interests in microblogging social networks: a survey", "en": ""},
+        {"title": "building and exploiting user models", "en": ""},
+        {"title": "user modeling via stereotypes", "en": ""},
+        {"title": "user models in dialog systems", "en": ""},
+        {"title": "human-computer interaction", "en": ""},
+        {"title": "designing for usability", "en": ""},
+        {"title": "user models in dialog systems", "en": ""},
+        {"title": "the elements of user experience", "en": ""},
+        {"title": "don't make me think", "en": ""},
+        {"title": "user models in dialog systems", "en": ""}
+    ],
+    "relations": [
+        {"source": "mutual clustering across multiple social networks", "target": "cross-domain community detection in heterogeneous social networks", "type": "related"},
+        {"source": "cross-domain community detection in heterogeneous social networks", "target": "community detection for emerging social networks", "type": "related"},
+        {"source": "least cost influence maximization across multiple social networks", "target": "influence maximization across partially aligned heterogeneous social networks", "type": "related"},
+        {"source": "influence maximization across partially aligned heterogeneous social networks", "target": "Klout score: measuring influence across multiple social networks", "type": "related"},
+        {"source": "cross-domain multi-event tracking via CO-PMHT", "target": "cross-platform social event detection", "type": "related"},
+        {"source": "social network fusion and mining: a survey", "target": "a survey of user modelling in social media websites", "type": "related"},
+        {"source": "a survey of user modelling in social media websites", "target": "inferring user interests in microblogging social networks: a survey", "type": "related"},
+        {"source": "building and exploiting user models", "target": "user modeling via stereotypes", "type": "related"},
+        {"source": "user modeling via stereotypes", "target": "user models in dialog systems", "type": "related"},
+        {"source": "user models in dialog systems", "target": "human-computer interaction", "type": "related"},
+        {"source": "designing for usability", "target": "user models in dialog systems", "type": "related"},
+        {"source": "user models in dialog systems", "target": "the elements of user experience", "type": "related"},
+        {"source": "don't make me think", "target": "user models in dialog systems", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "推荐系统调查", "en": "Survey of Recommender Systems"},
+        {"title": "个性化数字图书馆的自动化用户建模", "en": "Automated User Modeling for Personalized Digital Libraries"},
+        {"title": "内容个性化研究综述", "en": "Selective Review of Research in Content Personalization"},
+        {"title": "将用户建模应用于人机交互设计", "en": "Applying User Modeling to Human-Computer Interaction Design"},
+        {"title": "协同用户建模增强推荐系统中的内容过滤", "en": "Collaborative User Modeling for Enhanced Content Filtering in Recommender Systems"},
+        {"title": "Twitter的多方面用户建模", "en": "Multi-faceted User Modeling for Twitter"},
+        {"title": "从标记数据中学习用户配置文件并利用它们进行个性化信息访问", "en": "Learning User Profiles from Tagging Data and Leveraging Them for Personal(ized) Information Access"},
+        {"title": "基于标签的社交媒体推荐的用户配置文件", "en": "Tag-based User Profiling for Social Media Recommendation"},
+        {"title": "本体论：原理、方法和应用", "en": "Ontologies: Principles, Methods and Applications"},
+        {"title": "基于本体的智能信息检索", "en": "Ontology-based Intelligent Information Retrieval"},
+        {"title": "个性化用户建模技术及应用", "en": "Personalized User Modeling Techniques and Applications"},
+        {"title": "自动文本检索中的术语加权方法", "en": "Term-weighting Approaches in Automatic Text Retrieval"},
+        {"title": "图嵌入：问题、技术和应用的综述", "en": "Comprehensive Survey of Graph Embedding: Problems, Techniques, and Applications"},
+        {"title": "图嵌入技术、应用和性能：综述", "en": "Graph Embedding Techniques, Applications, and Performance: A Survey"},
+        {"title": "向量空间中单词表示的高效估计", "en": "Efficient Estimation of Word Representations in Vector Space"}
+    ],
+    "relations": [
+        {"source": "推荐系统调查", "target": "个性化数字图书馆的自动化用户建模", "type": "相关"},
+        {"source": "推荐系统调查", "target": "内容个性化研究综述", "type": "相关"},
+        {"source": "将用户建模应用于人机交互设计", "target": "个性化用户建模技术及应用", "type": "相关"},
+        {"source": "协同用户建模增强推荐系统中的内容过滤", "target": "推荐系统调查", "type": "相关"},
+        {"source": "协同用户建模增强推荐系统中的内容过滤", "target": "图嵌入技术、应用和性能：综述", "type": "相关"},
+        {"source": "Twitter的多方面用户建模", "target": "推荐系统调查", "type": "相关"},
+        {"source": "从标记数据中学习用户配置文件并利用它们进行个性化信息访问", "target": "基于本体的智能信息检索", "type": "相关"},
+        {"source": "从标记数据中学习用户配置文件并利用它们进行个性化信息访问", "target": "本体论：原理、方法和应用", "type": "相关"},
+        {"source": "基于标签的社交媒体推荐的用户配置文件", "target": "推荐系统调查", "type": "相关"},
+        {"source": "基于标签的社交媒体推荐的用户配置文件", "target": "图嵌入：问题、技术和应用的综述", "type": "相关"},
+        {"source": "基于本体的智能信息检索", "target": "个性化用户建模技术及应用", "type": "相关"},
+        {"source": "自动文本检索中的术语加权方法", "target": "基于本体的智能信息检索", "type": "相关"},
+        {"source": "图嵌入：问题、技术和应用的综述", "target": "图嵌入技术、应用和性能：综述", "type": "相关"},
+        {"source": "向量空间中单词表示的高效估计", "target": "图嵌入技术、应用和性能：综述", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "用户建模", "en": "User modeling"},
+        {"title": "隐藏因素和隐藏主题", "en": "Hidden factors and hidden topics"},
+        {"title": "分布式表示", "en": "Distributed representation"},
+        {"title": "矩阵分解", "en": "Matrix factorization"},
+        {"title": "概率矩阵分解", "en": "Probabilistic matrix factorization"},
+        {"title": "协同过滤", "en": "Collaborative filtering"},
+        {"title": "上下文感知推荐", "en": "Context-aware recommendation"},
+        {"title": "异构信息网络分析", "en": "Heterogeneous information network analysis"},
+        {"title": "节点潜在表示学习", "en": "Learning latent representations of nodes"}
+    ],
+    "relations": [
+        {"source": "79", "target": "38", "type": "引用"},
+        {"source": "80", "target": "38", "type": "引用"},
+        {"source": "81", "target": "38", "type": "引用"},
+        {"source": "82", "target": "38", "type": "引用"},
+        {"source": "83", "target": "38", "type": "引用"},
+        {"source": "84", "target": "38", "type": "引用"},
+        {"source": "85", "target": "38", "type": "引用"},
+        {"source": "86", "target": "38", "type": "引用"},
+        {"source": "87", "target": "38", "type": "引用"},
+        {"source": "88", "target": "38", "type": "引用"},
+        {"source": "89", "target": "38", "type": "引用"},
+        {"source": "90", "target": "38", "type": "引用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Large-scale information network embedding", "en": ""},
+        {"title": "Predictive text embedding through large-scale heterogeneous text networks", "en": ""},
+        {"title": "Heterogeneous information network embedding for recommendation", "en": ""},
+        {"title": "Meta-graph based recommendation fusion over heterogeneous information networks", "en": ""},
+        {"title": "Interactive recommending with tag-enhanced matrix factorization (TagMF)", "en": ""},
+        {"title": "Graph embedding with rich information through heterogeneous network", "en": ""},
+        {"title": "Scientific collaborator recommendation in heterogeneous bibliographic networks", "en": ""},
+        {"title": "Wide & deep learning for recommender systems", "en": ""},
+        {"title": "Convolutional matrix factorization for document context-aware recommendation", "en": ""},
+        {"title": "Amazon.com recommendations: item-to-item collaborative filtering", "en": ""},
+        {"title": "Item-based collaborative filtering recommendation algorithms", "en": ""},
+        {"title": "Session-based recommendations with recurrent neural networks", "en": ""}
+    ],
+    "relations": [
+        {"source": "Large-scale information network embedding", "target": "Heterogeneous information network embedding for recommendation", "type": "related"},
+        {"source": "Large-scale information network embedding", "target": "Graph embedding with rich information through heterogeneous network", "type": "related"},
+        {"source": "Predictive text embedding through large-scale heterogeneous text networks", "target": "Heterogeneous information network embedding for recommendation", "type": "related"},
+        {"source": "Heterogeneous information network embedding for recommendation", "target": "Meta-graph based recommendation fusion over heterogeneous information networks", "type": "related"},
+        {"source": "Interactive recommending with tag-enhanced matrix factorization (TagMF)", "target": "Convolutional matrix factorization for document context-aware recommendation", "type": "related"},
+        {"source": "Amazon.com recommendations: item-to-item collaborative filtering", "target": "Item-based collaborative filtering recommendation algorithms", "type": "related"},
+        {"source": "Session-based recommendations with recurrent neural networks", "target": "Wide & deep learning for recommender systems", "type": "related"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "Identifying users across social networks based on dynamic core interests", "en": ""},
+        {"title": "Representation learning-based graph alignment", "en": ""},
+        {"title": "BASS: a bootstrapping approach for aligning heterogeneous social networks", "en": ""},
+        {"title": "DP-Link: User Identity Linkage via Deep Neural Network From Heterogeneous Mobility Data", "en": ""},
+        {"title": "Semantic modelling of user interests based on cross-folksonomy analysis", "en": ""},
+        {"title": "Disparity-preserved deep cross-platform association for cross-platform video recommendation", "en": ""},
+        {"title": "Cross-domain collaboration recommendation", "en": ""},
+        {"title": "Personalized recommendation via cross-domain triadic factorization", "en": ""},
+        {"title": "Cross-domain collaborative filtering with factorization machines", "en": ""},
+        {"title": "A multi-view deep learning approach for cross-domain user modeling in recommendation systems", "en": ""},
+        {"title": "Cross-domain recommendation via preference propagation graphNet", "en": ""}
+    ],
+    "relations": [
+        {"source": "Identifying users across social networks based on dynamic core interests", "target": "Representation learning-based graph alignment", "type": "相关"},
+        {"source": "Identifying users across social networks based on dynamic core interests", "target": "BASS: a bootstrapping approach for aligning heterogeneous social networks", "type": "相关"},
+        {"source": "DP-Link: User Identity Linkage via Deep Neural Network From Heterogeneous Mobility Data", "target": "Disparity-preserved deep cross-platform association for cross-platform video recommendation", "type": "相关"},
+        {"source": "Cross-domain collaboration recommendation", "target": "Personalized recommendation via cross-domain triadic factorization", "type": "相关"},
+        {"source": "Cross-domain collaboration recommendation", "target": "Cross-domain collaborative filtering with factorization machines", "type": "相关"},
+        {"source": "Cross-domain collaboration recommendation", "target": "A multi-view deep learning approach for cross-domain user modeling in recommendation systems", "type": "相关"},
+        {"source": "Cross-domain recommendation via preference propagation graphNet", "target": "Personalized recommendation via cross-domain triadic factorization", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "DDTCDR", "en": "Deep Dual Transfer Cross Domain Recommendation"},
+        {"title": "Transfer learning in collaborative filtering for sparsity reduction", "en": "协同过滤中的迁移学习用于稀疏性降低"},
+        {"title": "Compressed knowledge transfer via factorization machine for heterogeneous collaborative recommendation", "en": "利用因子分解机进行异构协同推荐的压缩知识传递"},
+        {"title": "基于用户兴趣的跨域用户身份识别方法研究", "en": "Research on Cross-domain User Identity Recognition Method Based on User Interest"}
+    ],
+    "relations": [
+        {"source": "DDTCDR", "target": "基于用户兴趣的跨域用户身份识别方法研究", "type": "相关研究"},
+        {"source": "Transfer learning in collaborative filtering for sparsity reduction", "target": "基于用户兴趣的跨域用户身份识别方法研究", "type": "相关研究"},
+        {"source": "Compressed knowledge transfer via factorization machine for heterogeneous collaborative recommendation", "target": "基于用户兴趣的跨域用户身份识别方法研究", "type": "相关研究"},
+        {"source": "基于用户兴趣的跨域用户身份识别方法研究", "target": "DDTCDR", "type": "引用"},
+        {"source": "基于用户兴趣的跨域用户身份识别方法研究", "target": "Transfer learning in collaborative filtering for sparsity reduction", "type": "引用"},
+        {"source": "基于用户兴趣的跨域用户身份识别方法研究", "target": "Compressed knowledge transfer via factorization machine for heterogeneous collaborative recommendation", "type": "引用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "跨域用户身份识别问题",
+            "en": "Cross-domain user identification problem"
+        },
+        {
+            "title": "链接异质网络",
+            "en": "Heterogeneous network"
+        },
+        {
+            "title": "用户社交结构数据",
+            "en": "User social structure data"
+        },
+        {
+            "title": "内容数据",
+            "en": "Content data"
+        },
+        {
+            "title": "主题模型",
+            "en": "Topic model"
+        },
+        {
+            "title": "用户兴趣表示",
+            "en": "User interest representation"
+        },
+        {
+            "title": "跨域信息转移",
+            "en": "Cross-domain information transfer"
+        },
+        {
+            "title": "用户身份对齐",
+            "en": "User identity alignment"
+        },
+        {
+            "title": "LHNE模型",
+            "en": "LHNE model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "用户社交结构数据",
+            "target": "跨域用户身份识别问题",
+            "type": "包含"
+        },
+        {
+            "source": "内容数据",
+            "target": "跨域用户身份识别问题",
+            "type": "包含"
+        },
+        {
+            "source": "主题模型",
+            "target": "内容数据",
+            "type": "建模"
+        },
+        {
+            "source": "用户社交结构数据",
+            "target": "用户兴趣表示",
+            "type": "捕捉"
+        },
+        {
+            "source": "内容数据",
+            "target": "用户兴趣表示",
+            "type": "捕捉"
+        },
+        {
+            "source": "链接异质网络",
+            "target": "用户兴趣表示",
+            "type": "嵌入"
+        },
+        {
+            "source": "跨域信息转移",
+            "target": "用户兴趣表示",
+            "type": "学习"
+        },
+        {
+            "source": "用户兴趣表示",
+            "target": "用户身份对齐",
+            "type": "应用"
+        },
+        {
+            "source": "LHNE模型",
+            "target": "跨域用户身份识别问题",
+            "type": "解决"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "主题模型", "en": "Topic Model"},
+        {"title": "社交媒体网络", "en": "Social Media Network"},
+        {"title": "异质网络", "en": "Heterogeneous Network"},
+        {"title": "用户相似度", "en": "User Similarity"},
+        {"title": "主题相似度", "en": "Topic Similarity"},
+        {"title": "网络嵌入", "en": "Network Embedding"},
+        {"title": "KL-散度", "en": "KL Divergence"},
+        {"title": "SVM模型", "en": "SVM Model"},
+        {"title": "跨域链接预测", "en": "Cross-domain Link Prediction"},
+        {"title": "转移概率", "en": "Transition Probability"},
+        {"title": "主题概率", "en": "Topic Probability"},
+        {"title": "先验概率", "en": "Prior Probability"}
+    ],
+    "relations": [
+        {"source": "主题模型", "target": "社交媒体网络", "type": "适用于"},
+        {"source": "社交媒体网络", "target": "异质网络", "type": "包含"},
+        {"source": "用户相似度", "target": "网络嵌入", "type": "基础概念"},
+        {"source": "主题相似度", "target": "网络嵌入", "type": "基础概念"},
+        {"source": "KL-散度", "target": "网络嵌入", "type": "基础概念"},
+        {"source": "SVM模型", "target": "跨域链接预测", "type": "应用于"},
+        {"source": "转移概率", "target": "跨域链接预测", "type": "基础概念"},
+        {"source": "主题概率", "target": "异质网络", "type": "基础概念"},
+        {"source": "先验概率", "target": "异质网络", "type": "基础概念"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "用户-用户的跨网络",
+            "en": "User-user cross-network"
+        },
+        {
+            "title": "用户-主题的跨网络",
+            "en": "User-topic cross-network"
+        },
+        {
+            "title": "异质网络",
+            "en": "Heterogeneous network"
+        },
+        {
+            "title": "条件概率",
+            "en": "Conditional probability"
+        },
+        {
+            "title": "负采样",
+            "en": "Negative sampling"
+        },
+        {
+            "title": "异质网络嵌入",
+            "en": "Heterogeneous network embedding"
+        }
+    ],
+    "relations": [
+        {
+            "source": "用户-用户的跨网络",
+            "target": "用户-用户的社交链接",
+            "type": "包含"
+        },
+        {
+            "source": "用户-用户的跨网络",
+            "target": "用户-用户的跨域链接",
+            "type": "包含"
+        },
+        {
+            "source": "用户-主题的跨网络",
+            "target": "用户-主题二部网络",
+            "type": "包含"
+        },
+        {
+            "source": "异质网络",
+            "target": "用户-用户/用户-主题的单网络",
+            "type": "包含"
+        },
+        {
+            "source": "条件概率",
+            "target": "基于用户的转移概率",
+            "type": "相关"
+        },
+        {
+            "source": "条件概率",
+            "target": "基于主题的跨域转移概率",
+            "type": "相关"
+        },
+        {
+            "source": "负采样",
+            "target": "负采样方法",
+            "type": "包含"
+        },
+        {
+            "source": "异质网络嵌入",
+            "target": "节点向量",
+            "type": "包含"
+        },
+        {
+            "source": "异质网络嵌入",
+            "target": "联合嵌入",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域用户身份识别算法", "en": "Cross-domain user identification algorithm"},
+        {"title": "余弦相似度", "en": "Cosine similarity"},
+        {"title": "主题建模", "en": "Topic modeling"},
+        {"title": "负采样", "en": "Negative sampling"},
+        {"title": "SVM", "en": "Support Vector Machine"}
+    ],
+    "relations": [
+        {"source": "跨域用户身份识别算法", "target": "余弦相似度", "type": "包含概念"},
+        {"source": "跨域用户身份识别算法", "target": "主题建模", "type": "包含概念"},
+        {"source": "跨域用户身份识别算法", "target": "负采样", "type": "包含概念"},
+        {"source": "跨域用户身份识别算法", "target": "SVM", "type": "包含概念"},
+        {"source": "跨域用户身份识别算法", "target": "联合训练算法", "type": "包含概念"},
+        {"source": "余弦相似度", "target": "跨域用户身份识别算法", "type": "属于"},
+        {"source": "主题建模", "target": "跨域用户身份识别算法", "type": "属于"},
+        {"source": "负采样", "target": "跨域用户身份识别算法", "type": "属于"},
+        {"source": "SVM", "target": "跨域用户身份识别算法", "type": "属于"},
+        {"source": "联合训练算法", "target": "跨域用户身份识别算法", "type": "属于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Twitter-Flickr跨域数据集的统计信息表", "en": "Statistics of Twitter-Flickr Cross-Domain Dataset"},
+        {"title": "DBLP跨域数据集的统计信息表", "en": "Statistics of DBLP Cross-Domain Dataset"},
+        {"title": "LHNE模型", "en": "LHNE Model"},
+        {"title": "LHNE-U模型", "en": "LHNE-U Model"},
+        {"title": "LHNE-S模型", "en": "LHNE-S Model"},
+        {"title": "LHNE-C模型", "en": "LHNE-C Model"},
+        {"title": "IONES模型", "en": "IONES Model"},
+        {"title": "IONES-C模型", "en": "IONES-C Model"},
+        {"title": "K近邻(KNN)", "en": "K-Nearest Neighbor (KNN)"},
+        {"title": "召回率(Recall)", "en": "Recall"},
+        {"title": "精确率(Precision)", "en": "Precision"},
+        {"title": "F1", "en": "F1"},
+        {"title": "互通度(Interop)", "en": "Interoperability"},
+        {"title": "稀疏度(sparsitylevel)", "en": "Sparsity Level"},
+        {"title": "LDA模型", "en": "LDA Model"}
+    ],
+    "relations": [
+        {"source": "Twitter-Flickr跨域数据集的统计信息表", "target": "Twitter", "type": "包含"},
+        {"source": "Twitter-Flickr跨域数据集的统计信息表", "target": "Flickr", "type": "包含"},
+        {"source": "DBLP跨域数据集的统计信息表", "target": "DM", "type": "包含"},
+        {"source": "DBLP跨域数据集的统计信息表", "target": "WWW", "type": "包含"},
+        {"source": "LHNE模型", "target": "用户的社交结构数据", "type": "包含"},
+        {"source": "LHNE模型", "target": "内容数据", "type": "包含"},
+        {"source": "LHNE-U模型", "target": "LHNE模型", "type": "变体"},
+        {"source": "LHNE-S模型", "target": "LHNE模型", "type": "变体"},
+        {"source": "LHNE-C模型", "target": "LHNE模型", "type": "变体"},
+        {"source": "IONES模型", "target": "用户的社交结构数据", "type": "包含"},
+        {"source": "IONES-C模型", "target": "用户的社交结构数据", "type": "包含"},
+        {"source": "IONES-C模型", "target": "内容数据", "type": "包含"},
+        {"source": "召回率(Recall)", "target": "LHNE模型", "type": "评价指标"},
+        {"source": "精确率(Precision)", "target": "LHNE模型", "type": "评价指标"},
+        {"source": "F1", "target": "LHNE模型", "type": "评价指标"},
+        {"source": "互通度(Interop)", "target": "LHNE模型", "type": "结构特征指标"},
+        {"source": "稀疏度(sparsitylevel)", "target": "LHNE模型", "type": "结构特征指标"},
+        {"source": "LDA模型", "target": "内容数据", "type": "提取主题"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LHNE方法", "en": "LHNE method"},
+        {"title": "IONES-C方法", "en": "IONES-C method"},
+        {"title": "IONES方法", "en": "IONES method"},
+        {"title": "KNN方法", "en": "KNN method"},
+        {"title": "社交媒体数据集", "en": "Social media dataset"},
+        {"title": "跨域用户身份识别", "en": "Cross-domain user identification"},
+        {"title": "相似度阈值", "en": "Similarity threshold"},
+        {"title": "训练率", "en": "Training rate"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "超参数", "en": "Hyperparameters"},
+        {"title": "不平衡率", "en": "Imbalance rate"}
+    ],
+    "relations": [
+        {"source": "LHNE方法", "target": "IONES-C方法", "type": "superiority"},
+        {"source": "LHNE方法", "target": "IONES方法", "type": "superiority"},
+        {"source": "LHNE方法", "target": "KNN方法", "type": "superiority"},
+        {"source": "LHNE方法", "target": "社交媒体数据集", "type": "related"},
+        {"source": "LHNE方法", "target": "跨域用户身份识别", "type": "related"},
+        {"source": "相似度阈值", "target": "LHNE方法", "type": "affects"},
+        {"source": "训练率", "target": "LHNE方法", "type": "affects"},
+        {"source": "稀疏度", "target": "LHNE方法", "type": "tested by"},
+        {"source": "超参数", "target": "LHNE方法", "type": "tested by"},
+        {"source": "不平衡率", "target": "LHNE方法", "type": "tested by"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LHNE", "en": "LHNE"},
+        {"title": "用户-主题关系", "en": "User-Topic Relationship"},
+        {"title": "社交媒体数据集", "en": "Social Media Dataset"},
+        {"title": "合成数据集", "en": "Synthetic Dataset"},
+        {"title": "跨域用户", "en": "Cross-domain User"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "采样数", "en": "Sampling Number"},
+        {"title": "维度", "en": "Dimensionality"}
+    ],
+    "relations": [
+        {"source": "LHNE", "target": "用户-主题关系", "type": "包含"},
+        {"source": "LHNE", "target": "社交媒体数据集", "type": "应用于"},
+        {"source": "LHNE", "target": "合成数据集", "type": "应用于"},
+        {"source": "LHNE", "target": "跨域用户", "type": "涉及"},
+        {"source": "稀疏度", "target": "LHNE", "type": "影响"},
+        {"source": "采样数", "target": "LHNE", "type": "影响"},
+        {"source": "维度", "target": "LHNE", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "采样数", "en": "Sampling size"},
+        {"title": "Recall", "en": "Recall"},
+        {"title": "Precision", "en": "Precision"},
+        {"title": "Fl", "en": "Fl"},
+        {"title": "维度", "en": "Dimensionality"},
+        {"title": "同一兴趣空间", "en": "Unified interest space"},
+        {"title": "异质网络", "en": "Heterogeneous network"},
+        {"title": "主题建模", "en": "Topic modeling"},
+        {"title": "用户共现性", "en": "User co-occurrence"},
+        {"title": "跨域转移", "en": "Cross-domain transfer"},
+        {"title": "社交媒体数据集", "en": "Social media dataset"},
+        {"title": "身份识别", "en": "Identity recognition"}
+    ],
+    "relations": [
+        {"source": "采样数", "target": "图3-8", "type": "实验结果"},
+        {"source": "维度", "target": "图3-9", "type": "实验结果"},
+        {"source": "异质网络", "target": "同一兴趣空间", "type": "数据表示"},
+        {"source": "主题建模", "target": "同一兴趣空间", "type": "数据表示"},
+        {"source": "用户共现性", "target": "同一兴趣空间", "type": "数据表示"},
+        {"source": "异质网络", "target": "跨域转移", "type": "信息交换"},
+        {"source": "主题建模", "target": "跨域转移", "type": "信息交换"},
+        {"source": "社交媒体数据集", "target": "实验结果", "type": "评估"},
+        {"source": "身份识别", "target": "实验结果", "type": "评估"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Bootstrapping Approach for Aligning Heterogeneous Social Networks", "en": ""},
+        {"title": "Inferring Anchor Links Across Multiple Heterogeneous Social Networks", "en": ""},
+        {"title": "Hydra: Large-Scale Social Identity Linkage via Heterogeneous Behavior Modeling", "en": ""},
+        {"title": "Integrated Anchor and Social Link Predictions Across Social Networks", "en": ""},
+        {"title": "Comprehensive Survey of Graph Embedding: Problems, Techniques, and Applications", "en": ""},
+        {"title": "PTE: Predictive Text Embedding Through Large-Scale Heterogeneous Text Networks", "en": ""},
+        {"title": "Learning Graph-Based POI Embedding for Location-Based Recommendation", "en": ""},
+        {"title": "Aligning Users Across Social Networks Using Network Embedding", "en": ""},
+        {"title": "Predict Anchor Links Across Social Networks via an Embedding Approach", "en": ""},
+        {"title": "Hogwild: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent", "en": ""}
+    ],
+    "relations": [
+        {"source": "Bootstrapping Approach for Aligning Heterogeneous Social Networks", "target": "Inferring Anchor Links Across Multiple Heterogeneous Social Networks", "type": "related"},
+        {"source": "Bootstrapping Approach for Aligning Heterogeneous Social Networks", "target": "Hydra: Large-Scale Social Identity Linkage via Heterogeneous Behavior Modeling", "type": "related"},
+        {"source": "Inferring Anchor Links Across Multiple Heterogeneous Social Networks", "target": "Integrated Anchor and Social Link Predictions Across Social Networks", "type": "related"},
+        {"source": "Integrated Anchor and Social Link Predictions Across Social Networks", "target": "Predict Anchor Links Across Social Networks via an Embedding Approach", "type": "related"},
+        {"source": "Comprehensive Survey of Graph Embedding: Problems, Techniques, and Applications", "target": "PTE: Predictive Text Embedding Through Large-Scale Heterogeneous Text Networks", "type": "related"},
+        {"source": "Learning Graph-Based POI Embedding for Location-Based Recommendation", "target": "Aligning Users Across Social Networks Using Network Embedding", "type": "related"},
+        {"source": "Aligning Users Across Social Networks Using Network Embedding", "target": "Predict Anchor Links Across Social Networks via an Embedding Approach", "type": "related"},
+        {"source": "Predict Anchor Links Across Social Networks via an Embedding Approach", "target": "Hogwild: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Large-scale information network embedding", "en": ""},
+        {"title": "Friend transfer: cold-start friend recommendation with cross-platform transfer learning of social knowledge", "en": ""},
+        {"title": "Towards topic following in heterogeneous information networks", "en": ""},
+        {"title": "Identifying users across social networks based on dynamic core interests", "en": ""},
+        {"title": "Mapping users across networks by manifold alignment on hyper-graph", "en": ""},
+        {"title": "Exploiting spatio-temporal user behaviors for user linkage", "en": ""},
+        {"title": "Cross-domain recommendation method based on user interest under anonymous cross-domain data", "en": ""}
+    ],
+    "relations": [
+        {"source": "Large-scale information network embedding", "target": "Communication Theory", "type": "related"},
+        {"source": "Friend transfer: cold-start friend recommendation with cross-platform transfer learning of social knowledge", "target": "Communication Theory", "type": "related"},
+        {"source": "Towards topic following in heterogeneous information networks", "target": "Communication Theory", "type": "related"},
+        {"source": "Identifying users across social networks based on dynamic core interests", "target": "Communication Theory", "type": "related"},
+        {"source": "Mapping users across networks by manifold alignment on hyper-graph", "target": "Communication Theory", "type": "related"},
+        {"source": "Exploiting spatio-temporal user behaviors for user linkage", "target": "Communication Theory", "type": "related"},
+        {"source": "Cross-domain recommendation method based on user interest under anonymous cross-domain data", "target": "Communication Theory", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域信息", "en": "Cross-domain information"},
+        {"title": "稀疏性问题", "en": "Sparsity problem"},
+        {"title": "噪声", "en": "Noise"},
+        {"title": "同构关系", "en": "Homogeneous relationship"},
+        {"title": "异质关系", "en": "Heterogeneous relationship"},
+        {"title": "序列信息", "en": "Sequential information"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "双聚类算法", "en": "Biclustering algorithm"},
+        {"title": "跨域关联挖掘", "en": "Cross-domain association mining"},
+        {"title": "跨域兴趣嵌入模型", "en": "Cross-domain interest embedding model"},
+        {"title": "项目-项目关系嵌入模型", "en": "Item-item relationship embedding model"},
+        {"title": "项目-跨域类别关系嵌入模型", "en": "Item-cross-domain category relationship embedding model"},
+        {"title": "联合训练算法", "en": "Joint training algorithm"}
+    ],
+    "relations": [
+        {"source": "跨域信息", "target": "稀疏性问题", "type": "cause"},
+        {"source": "跨域信息", "target": "噪声", "type": "cause"},
+        {"source": "跨域信息", "target": "同构关系", "type": "contrast"},
+        {"source": "跨域信息", "target": "异质关系", "type": "contrast"},
+        {"source": "跨域信息", "target": "序列信息", "type": "contrast"},
+        {"source": "跨域信息", "target": "跨域推荐", "type": "result"},
+        {"source": "双聚类算法", "target": "跨域关联挖掘", "type": "method"},
+        {"source": "跨域关联挖掘", "target": "跨域兴趣嵌入模型", "type": "input"},
+        {"source": "项目-项目关系嵌入模型", "target": "跨域兴趣嵌入模型", "type": "input"},
+        {"source": "项目-跨域类别关系嵌入模型", "target": "跨域兴趣嵌入模型", "type": "input"},
+        {"source": "跨域兴趣嵌入模型", "target": "联合训练算法", "type": "method"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于双聚类的跨域关联挖掘模型", "en": "Cross-domain association mining model based on biclustering"},
+        {"title": "用户兴趣联合嵌入模型", "en": "Joint embedding model for user interests"},
+        {"title": "基于跨域异质关系嵌入的跨域推荐方法框架描述", "en": "Description of cross-domain recommendation method framework based on cross-domain heterogeneous relationship embedding"},
+        {"title": "跨域推荐算法", "en": "Cross-domain recommendation algorithm"},
+        {"title": "二部图模型", "en": "Bipartite graph model"},
+        {"title": "邻接矩阵", "en": "Adjacency matrix"},
+        {"title": "奇异向量", "en": "Singular vector"},
+        {"title": "规范化矩阵", "en": "Normalized matrix"},
+        {"title": "K-means聚类方法", "en": "K-means clustering method"},
+        {"title": "项目-项目关系嵌入模型", "en": "Project-project relationship embedding model"},
+        {"title": "skip-gramword2vec模型", "en": "Skip-gram word2vec model"},
+        {"title": "PMI矩阵", "en": "Point-wise Mutual Information matrix"},
+        {"title": "SPPMI矩阵", "en": "Shifted Positive PMI matrix"},
+        {"title": "贝叶斯个性化排序(BPR)模型", "en": "Bayesian Personalized Ranking (BPR) model"},
+        {"title": "成对排序损失", "en": "Pairwise ranking loss"},
+        {"title": "矩阵分解方法", "en": "Matrix factorization method"}
+    ],
+    "relations": [
+        {"source": "基于双聚类的跨域关联挖掘模型", "target": "跨域推荐算法", "type": "包含"},
+        {"source": "用户兴趣联合嵌入模型", "target": "跨域推荐算法", "type": "包含"},
+        {"source": "基于跨域异质关系嵌入的跨域推荐方法框架描述", "target": "跨域推荐算法", "type": "包含"},
+        {"source": "二部图模型", "target": "邻接矩阵", "type": "包含"},
+        {"source": "奇异向量", "target": "规范化矩阵", "type": "包含"},
+        {"source": "规范化矩阵", "target": "奇异向量", "type": "包含"},
+        {"source": "规范化矩阵", "target": "K-means聚类方法", "type": "应用"},
+        {"source": "项目-项目关系嵌入模型", "target": "skip-gramword2vec模型", "type": "基于"},
+        {"source": "skip-gramword2vec模型", "target": "PMI矩阵", "type": "基于"},
+        {"source": "PMI矩阵", "target": "SPPMI矩阵", "type": "转化为"},
+        {"source": "项目-项目关系嵌入模型", "target": "贝叶斯个性化排序(BPR)模型", "type": "基于"},
+        {"source": "贝叶斯个性化排序(BPR)模型", "target": "成对排序损失", "type": "基于"},
+        {"source": "矩阵分解方法", "target": "贝叶斯个性化排序(BPR)模型", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "项目-项目关系嵌入模型",
+            "en": "Project-Project Relationship Embedding Model"
+        },
+        {
+            "title": "项目-跨域类别关系嵌入模型",
+            "en": "Project-Cross-Domain Category Relationship Embedding Model"
+        },
+        {
+            "title": "用户兴趣联合嵌入模型",
+            "en": "User Interest Joint Embedding Model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "项目-项目关系嵌入模型",
+            "target": "项目-跨域类别关系嵌入模型",
+            "type": "扩展"
+        },
+        {
+            "source": "项目-跨域类别关系嵌入模型",
+            "target": "用户兴趣联合嵌入模型",
+            "type": "联合"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "项目向量表示", "en": "Project Vector Representation"},
+        {"title": "匿名跨域用户", "en": "Anonymous Cross-Domain User"},
+        {"title": "兴趣表示", "en": "Interest Representation"},
+        {"title": "随机梯度下降算法", "en": "Stochastic Gradient Descent Algorithm"},
+        {"title": "BPR模型", "en": "BPR Model"},
+        {"title": "异质关系", "en": "Heterogeneous Relationship"},
+        {"title": "项目-项目上下文关系", "en": "Item-Item Contextual Relationship"},
+        {"title": "项目-跨域类别关系", "en": "Item-Cross-Domain Category Relationship"},
+        {"title": "跨域类别-项目上下文关系", "en": "Cross-Domain Category-Item Contextual Relationship"},
+        {"title": "联合训练算法", "en": "Joint Training Algorithm"},
+        {"title": "余弦相似度", "en": "Cosine Similarity"}
+    ],
+    "relations": [
+        {"source": "项目向量表示", "target": "兴趣表示", "type": "包含"},
+        {"source": "匿名跨域用户", "target": "兴趣表示", "type": "拥有"},
+        {"source": "随机梯度下降算法", "target": "BPR模型", "type": "优化"},
+        {"source": "BPR模型", "target": "异质关系", "type": "针对"},
+        {"source": "异质关系", "target": "项目-项目上下文关系", "type": "包含"},
+        {"source": "异质关系", "target": "项目-跨域类别关系", "type": "包含"},
+        {"source": "异质关系", "target": "跨域类别-项目上下文关系", "type": "包含"},
+        {"source": "项目-项目上下文关系", "target": "联合训练算法", "type": "利用"},
+        {"source": "项目-跨域类别关系", "target": "联合训练算法", "type": "利用"},
+        {"source": "跨域类别-项目上下文关系", "target": "联合训练算法", "type": "利用"},
+        {"source": "兴趣表示", "target": "余弦相似度", "type": "度量"},
+        {"source": "匿名跨域用户", "target": "余弦相似度", "type": "计算"},
+        {"source": "余弦相似度", "target": "跨域推荐算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Movie-Music数据集", "en": "Movie-Music dataset"},
+        {"title": "Health-Beauty数据集", "en": "Health-Beauty dataset"},
+        {"title": "Clothing-Sports数据集", "en": "Clothing-Sports dataset"},
+        {"title": "CDIE-C模型", "en": "CDIE-C model"},
+        {"title": "流行预测", "en": "PopularityPredictor"},
+        {"title": "ITEM2VEC", "en": "ITEM2VEC"},
+        {"title": "BPR", "en": "BPR"},
+        {"title": "GRU4REC", "en": "GRU4REC"},
+        {"title": "基于类别级的潜在因子模型", "en": "Cluster-LevelbasedLatentFactorModel"},
+        {"title": "Recall@30", "en": "Recall@30"},
+        {"title": "平均倒数排名", "en": "MeanReciprocalRank"},
+        {"title": "会话型推荐", "en": "Session-based recommendation"}
+    ],
+    "relations": [
+        {"source": "Movie-Music数据集", "target": "Health-Beauty数据集", "type": "跨域数据集"},
+        {"source": "Movie-Music数据集", "target": "Clothing-Sports数据集", "type": "跨域数据集"},
+        {"source": "Health-Beauty数据集", "target": "Clothing-Sports数据集", "type": "跨域数据集"},
+        {"source": "CDIE-C模型", "target": "流行预测", "type": "单域推荐方法"},
+        {"source": "CDIE-C模型", "target": "ITEM2VEC", "type": "单域推荐方法"},
+        {"source": "CDIE-C模型", "target": "BPR", "type": "单域推荐方法"},
+        {"source": "CDIE-C模型", "target": "GRU4REC", "type": "单域推荐方法"},
+        {"source": "CDIE-C模型", "target": "基于类别级的潜在因子模型", "type": "跨域推荐方法"},
+        {"source": "CDIE-C模型", "target": "Recall@30", "type": "评价指标"},
+        {"source": "CDIE-C模型", "target": "平均倒数排名", "type": "评价指标"},
+        {"source": "CDIE-C模型", "target": "会话型推荐", "type": "推荐任务"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CDIE-C性能优于CDIE-C(item)", "en": "CDIE-C outperforms CDIE-C(item)"},
+        {"title": "整合跨域类别-项目上下文关系可以增强跨域间的关联", "en": "Integrating cross-domain category-item context relationships can enhance cross-domain associations"},
+        {"title": "忽略项目间序列化信息会降低CLFM性能", "en": "Ignoring serialization information between items will reduce CLFM performance"},
+        {"title": "各方法在不同数据集和域中的性能对比", "en": "Performance comparison of various methods in different datasets and domains"},
+        {"title": "数据稀疏性问题对推荐系统的影响", "en": "The impact of data sparsity on recommendation systems"},
+        {"title": "CDIE-C方法在处理数据稀疏性问题方面有效", "en": "CDIE-C method is effective in dealing with data sparsity issues"},
+        {"title": "短会话会降低GRU4REC和CLFM性能", "en": "Short sessions will reduce the performance of GRU4REC and CLFM"},
+        {"title": "CDIE-C方法能够补充短会话中的缺失信息", "en": "CDIE-C method can supplement missing information in short sessions"},
+        {"title": "CDIE-C方法联合利用跨域数据增加训练数据", "en": "CDIE-C method uses cross-domain data to increase training data"}
+    ],
+    "relations": [
+        {"source": "CDIE-C", "target": "CDIE-C(item)", "type": "outperforms"},
+        {"source": "跨域类别-项目上下文关系", "target": "增强跨域间关联", "type": "enhances"},
+        {"source": "项目间序列化信息", "target": "CLFM性能", "type": "reduces"},
+        {"source": "数据集", "target": "域", "type": "has"},
+        {"source": "数据稀疏性问题", "target": "推荐系统", "type": "affects"},
+        {"source": "CDIE-C方法", "target": "数据稀疏性问题", "type": "effective in dealing with"},
+        {"source": "短会话", "target": "GRU4REC性能", "type": "reduces"},
+        {"source": "短会话", "target": "CLFM性能", "type": "reduces"},
+        {"source": "CDIE-C方法", "target": "短会话中缺失信息", "type": "supplements"},
+        {"source": "CDIE-C方法", "target": "跨域数据", "type": "uses to increase training data"},
+        {"source": "单域推荐方法", "target": "同时对两个域进行推荐", "type": "cannot"},
+        {"source": "CDIE-C方法", "target": "同时对两个域进行推荐", "type": "can"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CDIE-C模型", "en": "CDIE-C model"},
+        {"title": "跨域数据匿名化", "en": "Cross-domain data anonymization"},
+        {"title": "跨域关联缺失", "en": "Cross-domain association missing"},
+        {"title": "双聚类方法", "en": "Biclustering method"},
+        {"title": "跨域项目", "en": "Cross-domain item"},
+        {"title": "跨域类别", "en": "Cross-domain category"},
+        {"title": "项目-项目上下文关系", "en": "Item-item context relationship"},
+        {"title": "项目-类别上下文关系", "en": "Item-category context relationship"},
+        {"title": "类别-项目上下文关系", "en": "Category-item context relationship"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "推荐性能", "en": "Recommendation performance"}
+    ],
+    "relations": [
+        {"source": "CDIE-C模型", "target": "跨域数据匿名化", "type": "解决问题"},
+        {"source": "CDIE-C模型", "target": "跨域关联缺失", "type": "解决问题"},
+        {"source": "CDIE-C模型", "target": "双聚类方法", "type": "使用方法"},
+        {"source": "CDIE-C模型", "target": "跨域项目", "type": "涉及概念"},
+        {"source": "CDIE-C模型", "target": "跨域类别", "type": "涉及概念"},
+        {"source": "CDIE-C模型", "target": "项目-项目上下文关系", "type": "涉及概念"},
+        {"source": "CDIE-C模型", "target": "项目-类别上下文关系", "type": "涉及概念"},
+        {"source": "CDIE-C模型", "target": "类别-项目上下文关系", "type": "涉及概念"},
+        {"source": "稀疏度", "target": "CDIE-C模型", "type": "影响因素"},
+        {"source": "推荐性能", "target": "CDIE-C模型", "type": "评价指标"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "推荐系统", "en": "Recommendation System"},
+        {"title": "基于物品的协同过滤", "en": "Item-based Collaborative Filtering"},
+        {"title": "基于会话的推荐", "en": "Session-based Recommendation"},
+        {"title": "循环神经网络", "en": "Recurrent Neural Network"},
+        {"title": "跨领域推荐", "en": "Cross-domain Recommendation"},
+        {"title": "语义框架", "en": "Semantic Framework"},
+        {"title": "本体", "en": "Ontology"}
+    ],
+    "relations": [
+        {"source": "推荐系统", "target": "基于物品的协同过滤", "type": "属于"},
+        {"source": "推荐系统", "target": "基于会话的推荐", "type": "属于"},
+        {"source": "基于会话的推荐", "target": "循环神经网络", "type": "使用"},
+        {"source": "基于物品的协同过滤", "target": "循环神经网络", "type": "使用"},
+        {"source": "推荐系统", "target": "跨领域推荐", "type": "属于"},
+        {"source": "跨领域推荐", "target": "语义框架", "type": "使用"},
+        {"source": "跨领域推荐", "target": "本体", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "序列化数据", "en": "Serialized data"},
+        {"title": "动态变化", "en": "Dynamic changes"},
+        {"title": "会话", "en": "Session"},
+        {"title": "用户行为意图", "en": "User behavior intention"},
+        {"title": "跨域分布", "en": "Cross-domain distribution"},
+        {"title": "交互", "en": "Interaction"}
+    ],
+    "relations": [
+        {"source": "用户行为记录", "target": "序列化数据", "type": "包含"},
+        {"source": "用户兴趣", "target": "动态变化", "type": "具有"},
+        {"source": "序列化行为", "target": "会话", "type": "组织成"},
+        {"source": "用户兴趣", "target": "用户行为意图", "type": "帮助挖掘"},
+        {"source": "用户行为", "target": "会话", "type": "组织成"},
+        {"source": "用户行为", "target": "跨域分布", "type": "具有"},
+        {"source": "交互", "target": "跨域分布", "type": "共享信息"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域动态行为特点", "en": "Characteristics of Cross-Domain Dynamic Behavior"},
+        {"title": "单域推荐方法的局限性", "en": "Limitations of Single-Domain Recommendation Methods"},
+        {"title": "跨域数据集的稀疏性问题", "en": "Sparsity Problem in Cross-Domain Datasets"},
+        {"title": "跨域信息间的复杂动态关联", "en": "Complex Dynamic Relationships between Cross-Domain Information"},
+        {"title": "跨域多层循环神经兴趣模型", "en": "Cross-Domain Hierarchical Recurrent Neural Interest Model"},
+        {"title": "跨域循环-门控神经兴趣模型", "en": "Cross-Domain Recurrent-Gated Neural Interest Model"}
+    ],
+    "relations": [
+        {"source": "跨域动态行为特点", "target": "单域推荐方法的局限性", "type": "cause"},
+        {"source": "跨域动态行为特点", "target": "跨域数据集的稀疏性问题", "type": "cause"},
+        {"source": "跨域数据集的稀疏性问题", "target": "单域推荐方法的局限性", "type": "result"},
+        {"source": "跨域信息间的复杂动态关联", "target": "跨域多层循环神经兴趣模型", "type": "solution"},
+        {"source": "跨域信息间的复杂动态关联", "target": "跨域循环-门控神经兴趣模型", "type": "solution"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域长期兴趣模型", "en": "Cross-domain Long-term Interest Model"},
+        {"title": "跨域推荐", "en": "Cross-domain Recommendation"},
+        {"title": "循环神经网络", "en": "Recurrent Neural Network (RNN)"},
+        {"title": "门控循环单元", "en": "Gated Recurrent Unit (GRU)"},
+        {"title": "乘积神经网络", "en": "Multiplicative Neural Network"}
+    ],
+    "relations": [
+        {"source": "跨域长期兴趣模型", "target": "跨域推荐", "type": "属于"},
+        {"source": "循环神经网络", "target": "跨域长期兴趣模型", "type": "应用于"},
+        {"source": "门控循环单元", "target": "循环神经网络", "type": "应用于"},
+        {"source": "乘积神经网络", "target": "跨域推荐", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "基于连接和乘积的方式",
+            "en": "Connection and Product Based Fusion"
+        },
+        {
+            "title": "会话级兴趣表示",
+            "en": "Session-level Interest Representation"
+        },
+        {
+            "title": "循环神经网络",
+            "en": "Recurrent Neural Network"
+        },
+        {
+            "title": "域感知会话级循环神经兴趣模型",
+            "en": "Domain-aware Session-level Recurrent Neural Interest Model"
+        },
+        {
+            "title": "独热编码",
+            "en": "One-hot Encoding"
+        },
+        {
+            "title": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "en": "Cross-domain Recommendation Model based on User-level and Session-level Dynamic Interests"
+        },
+        {
+            "title": "指数线性单元函数",
+            "en": "Exponential Linear Unit Function"
+        },
+        {
+            "title": "TOPl-max函数",
+            "en": "Top-Largest Maximum Function"
+        },
+        {
+            "title": "贝叶斯个性化最大排序函数",
+            "en": "Bayesian Personalized Ranking-max Function"
+        },
+        {
+            "title": "softmax函数",
+            "en": "Softmax Function"
+        },
+        {
+            "title": "sigmoid函数",
+            "en": "Sigmoid Function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "基于连接和乘积的方式",
+            "target": "会话级兴趣表示",
+            "type": "融合方式"
+        },
+        {
+            "source": "基于连接和乘积的方式",
+            "target": "循环神经网络",
+            "type": "融合方式"
+        },
+        {
+            "source": "域感知会话级循环神经兴趣模型",
+            "target": "循环神经网络",
+            "type": "建模方法"
+        },
+        {
+            "source": "域感知会话级循环神经兴趣模型",
+            "target": "会话级兴趣表示",
+            "type": "建模对象"
+        },
+        {
+            "source": "域感知会话级循环神经兴趣模型",
+            "target": "独热编码",
+            "type": "编码方式"
+        },
+        {
+            "source": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "target": "会话级兴趣表示",
+            "type": "建模对象"
+        },
+        {
+            "source": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "target": "循环神经网络",
+            "type": "建模方法"
+        },
+        {
+            "source": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "target": "指数线性单元函数",
+            "type": "激活函数"
+        },
+        {
+            "source": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "target": "TOPl-max函数",
+            "type": "目标函数"
+        },
+        {
+            "source": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "target": "贝叶斯个性化最大排序函数",
+            "type": "目标函数"
+        },
+        {
+            "source": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "target": "softmax函数",
+            "type": "权重函数"
+        },
+        {
+            "source": "基于用户级-会话级动态兴趣的跨域推荐模型",
+            "target": "sigmoid函数",
+            "type": "目标函数"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "CDHRM方法",
+            "en": "CDHRM method"
+        },
+        {
+            "title": "成对损失函数",
+            "en": "Pairwise loss function"
+        },
+        {
+            "title": "正则化项",
+            "en": "Regularization term"
+        },
+        {
+            "title": "跨域最小批训练机制",
+            "en": "Cross-domain mini-batch training mechanism"
+        },
+        {
+            "title": "GRU",
+            "en": "GRU"
+        },
+        {
+            "title": "数据集",
+            "en": "Dataset"
+        }
+    ],
+    "relations": [
+        {
+            "source": "CDHRM方法",
+            "target": "成对损失函数",
+            "type": "包含"
+        },
+        {
+            "source": "CDHRM方法",
+            "target": "正则化项",
+            "type": "包含"
+        },
+        {
+            "source": "CDHRM方法",
+            "target": "跨域最小批训练机制",
+            "type": "包含"
+        },
+        {
+            "source": "跨域最小批训练机制",
+            "target": "GRU",
+            "type": "包含"
+        },
+        {
+            "source": "数据集",
+            "target": "Comedy-Romance(CR)",
+            "type": "包含"
+        },
+        {
+            "source": "数据集",
+            "target": "Thriller-Action(TA)",
+            "type": "包含"
+        },
+        {
+            "source": "数据集",
+            "target": "Movie-Music(MM)",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "重叠项目数", "en": "Overlap item number"},
+        {"title": "重叠用户数", "en": "Overlap user number"},
+        {"title": "构建实验数据集", "en": "Construct experimental dataset"},
+        {"title": "实验", "en": "Experiment"},
+        {"title": "预处理", "en": "Preprocessing"},
+        {"title": "训练集", "en": "Training set"},
+        {"title": "测试集", "en": "Test set"},
+        {"title": "验证集", "en": "Validation set"},
+        {"title": "问题1", "en": "Problem 1"},
+        {"title": "问题2", "en": "Problem 2"},
+        {"title": "问题3", "en": "Problem 3"},
+        {"title": "问题4", "en": "Problem 4"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "实验流程图", "en": "Experimental flowchart"},
+        {"title": "策略1", "en": "Strategy 1"},
+        {"title": "策略2", "en": "Strategy 2"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "CDHRM", "en": "CDHRM"},
+        {"title": "BPR", "en": "BPR"},
+        {"title": "Item2vec", "en": "Item2vec"},
+        {"title": "SF-SKNN", "en": "SequentialFilterSession-basedKNN"},
+        {"title": "GRU4REC", "en": "GRU4REC"},
+        {"title": "HRNN", "en": "Hierarchical Recurrent Neural Networks"},
+        {"title": "CCA-CDR", "en": "Cross-Domain Recommendation using Canonical Correlation Analysis"},
+        {"title": "CDIE-C", "en": "Cross-Domain Interest Embedding with Cluster-based Model"},
+        {"title": "超参数", "en": "Hyperparameters"}
+    ],
+    "relations": [
+        {"source": "重叠项目数", "target": "重叠用户数", "type": "相关"},
+        {"source": "构建实验数据集", "target": "实验", "type": "包含"},
+        {"source": "预处理", "target": "策略1", "type": "使用"},
+        {"source": "预处理", "target": "策略2", "type": "使用"},
+        {"source": "策略1", "target": "训练集", "type": "包含"},
+        {"source": "策略1", "target": "测试集", "type": "包含"},
+        {"source": "策略1", "target": "验证集", "type": "包含"},
+        {"source": "策略1", "target": "问题1", "type": "适用于"},
+        {"source": "策略1", "target": "问题2", "type": "适用于"},
+        {"source": "策略1", "target": "问题4", "type": "适用于"},
+        {"source": "策略2", "target": "训练集", "type": "包含"},
+        {"source": "策略2", "target": "测试集", "type": "包含"},
+        {"source": "策略2", "target": "验证集", "type": "包含"},
+        {"source": "策略2", "target": "问题3", "type": "适用于"},
+        {"source": "稀疏度", "target": "策略2", "type": "影响"},
+        {"source": "CDHRM", "target": "问题1", "type": "解决"},
+        {"source": "CDHRM", "target": "问题2", "type": "解决"},
+        {"source": "CDHRM", "target": "问题3", "type": "解决"},
+        {"source": "CDHRM", "target": "问题4", "type": "解决"},
+        {"source": "CDHRM", "target": "跨域推荐", "type": "属于"},
+        {"source": "CDHRM", "target": "实验流程图", "type": "包含"},
+        {"source": "BPR", "target": "CDHRM", "type": "对比"},
+        {"source": "Item2vec", "target": "CDHRM", "type": "对比"},
+        {"source": "SF-SKNN", "target": "CDHRM", "type": "对比"},
+        {"source": "GRU4REC", "target": "CDHRM", "type": "对比"},
+        {"source": "HRNN", "target": "CDHRM", "type": "对比"},
+        {"source": "CCA-CDR", "target": "CDHRM", "type": "对比"},
+        {"source": "CDIE-C", "target": "CDHRM", "type": "对比"},
+        {"source": "超参数", "target": "CDHRM", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域6应九八域感知", "en": "Cross-domain 6-9-8 domain perception"},
+        {"title": "跨域GRU四", "en": "Cross-domain GRU-4"},
+        {"title": "域感知的GRU腹中的融合层", "en": "Fusion layer in domain-aware GRU"},
+        {"title": "GR%的初始化", "en": "Initialization of GR%"},
+        {"title": "CDHRM的Dropout概率", "en": "Dropout probability of CDHRM"},
+        {"title": "负样本", "en": "Negative samples"},
+        {"title": "采样部分", "en": "Sampling part"},
+        {"title": "评价指标设置", "en": "Evaluation metric settings"},
+        {"title": "召回率", "en": "Recall rate"},
+        {"title": "精确度", "en": "Precision"},
+        {"title": "F1", "en": "F1"},
+        {"title": "MRR", "en": "Mean reciprocal rank"},
+        {"title": "会话型推荐任务", "en": "Session-based recommendation task"},
+        {"title": "CDHRM方法", "en": "CDHRM method"},
+        {"title": "融合机制影响分析", "en": "Analysis of the impact of fusion mechanism"},
+        {"title": "基于连接的融合方式", "en": "Connection-based fusion method"},
+        {"title": "基于乘积的融合方式", "en": "Product-based fusion method"},
+        {"title": "跨域行为模式", "en": "Cross-domain behavior pattern"},
+        {"title": "交互模式", "en": "Interaction mode"},
+        {"title": "推荐性能分析", "en": "Analysis of recommendation performance"}
+    ],
+    "relations": [
+        {"source": "跨域6应九八域感知", "target": "跨域GRU四", "type": "包含"},
+        {"source": "跨域GRU四", "target": "域感知的GRU腹中的融合层", "type": "包含"},
+        {"source": "域感知的GRU腹中的融合层", "target": "GR%的初始化", "type": "包含"},
+        {"source": "CDHRM的Dropout概率", "target": "负样本", "type": "涉及"},
+        {"source": "负样本", "target": "采样部分", "type": "包含"},
+        {"source": "评价指标设置", "target": "召回率", "type": "包含"},
+        {"source": "评价指标设置", "target": "精确度", "type": "包含"},
+        {"source": "评价指标设置", "target": "F1", "type": "包含"},
+        {"source": "评价指标设置", "target": "MRR", "type": "包含"},
+        {"source": "评价指标设置", "target": "会话型推荐任务", "type": "包含"},
+        {"source": "CDHRM方法", "target": "融合机制影响分析", "type": "涉及"},
+        {"source": "融合机制影响分析", "target": "基于连接的融合方式", "type": "包含"},
+        {"source": "融合机制影响分析", "target": "基于乘积的融合方式", "type": "包含"},
+        {"source": "基于连接的融合方式", "target": "跨域行为模式", "type": "涉及"},
+        {"source": "交互模式", "target": "CDHRM方法", "type": "涉及"},
+        {"source": "推荐性能分析", "target": "CDHRM方法", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "单域推荐方法",
+            "en": "Single-domain recommendation methods"
+        },
+        {
+            "title": "item2vec",
+            "en": "item2vec"
+        },
+        {
+            "title": "SF-SKNN",
+            "en": "SF-SKNN"
+        },
+        {
+            "title": "GRU4REC",
+            "en": "GRU4REC"
+        },
+        {
+            "title": "HRNN",
+            "en": "HRNN"
+        },
+        {
+            "title": "GRU4REC+",
+            "en": "GRU4REC+"
+        },
+        {
+            "title": "跨域",
+            "en": "Cross-domain"
+        },
+        {
+            "title": "CCA-CDR",
+            "en": "CCA-CDR"
+        },
+        {
+            "title": "CDIE-C",
+            "en": "CDIE-C"
+        },
+        {
+            "title": "CDHRM",
+            "en": "CDHRM"
+        }
+    ],
+    "relations": [
+        {
+            "source": "单域推荐方法",
+            "target": "item2vec",
+            "type": "包含"
+        },
+        {
+            "source": "单域推荐方法",
+            "target": "SF-SKNN",
+            "type": "包含"
+        },
+        {
+            "source": "单域推荐方法",
+            "target": "GRU4REC",
+            "type": "包含"
+        },
+        {
+            "source": "单域推荐方法",
+            "target": "HRNN",
+            "type": "包含"
+        },
+        {
+            "source": "单域推荐方法",
+            "target": "GRU4REC+",
+            "type": "包含"
+        },
+        {
+            "source": "跨域",
+            "target": "CCA-CDR",
+            "type": "包含"
+        },
+        {
+            "source": "推荐",
+            "target": "CDIE-C",
+            "type": "包含"
+        },
+        {
+            "source": "方法",
+            "target": "CDHRM",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "序列化信息", "en": "Sequential information"},
+        {"title": "会话型推荐", "en": "Session-based recommendation"},
+        {"title": "item2vec", "en": "item2vec"},
+        {"title": "SF-SKNN", "en": "SF-SKNN"},
+        {"title": "GRU4REC", "en": "GRU4REC"},
+        {"title": "HRNN", "en": "HRNN"},
+        {"title": "CDHRM", "en": "CDHRM"},
+        {"title": "跨域重叠项目", "en": "Cross-domain overlapping items"},
+        {"title": "CDIE-C", "en": "CDIE-C"},
+        {"title": "CCA-CDR", "en": "CCA-CDR"},
+        {"title": "MM数据集", "en": "MM dataset"},
+        {"title": "数据稀疏性", "en": "Data sparsity"}
+    ],
+    "relations": [
+        {"source": "序列化信息", "target": "会话型推荐", "type": "is_a"},
+        {"source": "序列化信息", "target": "CDHRM", "type": "is_a"},
+        {"source": "item2vec", "target": "SF-SKNN", "type": "is_better_than"},
+        {"source": "SF-SKNN", "target": "item2vec", "type": "is_worse_than"},
+        {"source": "SF-SKNN", "target": "CDHRM", "type": "is_better_than"},
+        {"source": "GRU4REC", "target": "HRNN", "type": "is_worse_than"},
+        {"source": "GRU4REC+", "target": "GRU4REC", "type": "is_better_than"},
+        {"source": "GRU4REC+", "target": "HRNN", "type": "is_better_than"},
+        {"source": "CDHRM", "target": "CDIE-C", "type": "is_better_than"},
+        {"source": "CDHRM", "target": "CCA-CDR", "type": "is_better_than"},
+        {"source": "跨域重叠项目", "target": "CDHRM", "type": "is_a"},
+        {"source": "CDIE-C", "target": "CDHRM", "type": "is_worse_than"},
+        {"source": "CCA-CDR", "target": "CDHRM", "type": "is_worse_than"},
+        {"source": "MM数据集", "target": "CDHRM", "type": "is_a"},
+        {"source": "数据稀疏性", "target": "CDHRM", "type": "is_a"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "CDHRM", "en": "CDHRM"},
+        {"title": "GRU4REC+", "en": "GRU4REC+"},
+        {"title": "TA数据集", "en": "TA dataset"},
+        {"title": "MM数据集", "en": "MM dataset"},
+        {"title": "RNN", "en": "RNN"},
+        {"title": "CCA-CDR", "en": "CCA-CDR"},
+        {"title": "CDIE-C", "en": "CDIE-C"},
+        {"title": "Item2vec", "en": "Item2vec"},
+        {"title": "SF-SKNN", "en": "SF-SKNN"},
+        {"title": "BPR", "en": "BPR"},
+        {"title": "CDRGM", "en": "CDRGM"}
+    ],
+    "relations": [
+        {"source": "稀疏度", "target": "所有方法的性能", "type": "影响"},
+        {"source": "CDHRM", "target": "其他所有对比方法", "type": "性能优于"},
+        {"source": "稀疏度", "target": "CDHRM的表现", "type": "影响"},
+        {"source": "CDHRM的表现", "target": "GRU4REC+", "type": "性能提升"},
+        {"source": "TA数据集", "target": "CDHRM的性能", "type": "更好"},
+        {"source": "CR数据集", "target": "TA数据集", "type": "重叠率"},
+        {"source": "TA数据集", "target": "CDHRM", "type": "性能提升"},
+        {"source": "MM数据集", "target": "CDHRM的性能", "type": "较差"},
+        {"source": "MM数据集", "target": "CDHRM", "type": "跨域共享"},
+        {"source": "GRU4REC+", "target": "CDHRM", "type": "无法获得性能提升"},
+        {"source": "CDHRM", "target": "在线推荐", "type": "适用于"},
+        {"source": "CDHRM", "target": "Item2vec", "type": "训练时间短于"},
+        {"source": "CDHRM", "target": "SF-SKNN", "type": "训练时间短于"},
+        {"source": "CDHRM", "target": "基于RNN的单域方法", "type": "训练时间相同"},
+        {"source": "CDHRM", "target": "CDRGM", "type": "提出"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于循环神经网络的跨域短期兴趣模型", "en": "Cross-domain short-term interest model based on recurrent neural networks"},
+        {"title": "基于门控神经网络的跨域长期兴趣模型", "en": "Cross-domain long-term interest model based on gated neural networks"},
+        {"title": "基于长短期兴趣的跨域推荐模型", "en": "Cross-domain recommendation model based on long and short-term interests"},
+        {"title": "会话RNN单元", "en": "Session RNN unit"}
+    ],
+    "relations": [
+        {"source": "基于循环神经网络的跨域短期兴趣模型", "target": "基于门控神经网络的跨域长期兴趣模型", "type": "长期兴趣表示"},
+        {"source": "基于门控神经网络的跨域长期兴趣模型", "target": "基于长短期兴趣的跨域推荐模型", "type": "长期兴趣信息"},
+        {"source": "基于循环神经网络的跨域短期兴趣模型", "target": "基于长短期兴趣的跨域推荐模型", "type": "短期兴趣信息"},
+        {"source": "会话RNN单元", "target": "基于循环神经网络的跨域短期兴趣模型", "type": "跨域短期兴趣模型"},
+        {"source": "会话RNN单元", "target": "基于门控神经网络的跨域长期兴趣模型", "type": "跨域长期兴趣模型"},
+        {"source": "基于长短期兴趣的跨域推荐模型", "target": "基于循环神经网络的跨域短期兴趣模型", "type": "短期兴趣表示"},
+        {"source": "基于长短期兴趣的跨域推荐模型", "target": "基于门控神经网络的跨域长期兴趣模型", "type": "长期兴趣表示"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "最大池化", "en": "Max-pooling"},
+        {"title": "跨域兴趣正则化函数", "en": "Cross-domain interest regularization function"},
+        {"title": "长短期兴趣的跨域推荐模型", "en": "Cross-domain recommendation model based on long and short-term interests"},
+        {"title": "BPR-max函数", "en": "BPR-max function"},
+        {"title": "跨域最小批训练机制", "en": "Cross-domain mini-batch training mechanism"},
+        {"title": "Movielens-20M", "en": "Movielens-20M dataset"},
+        {"title": "Goodreads", "en": "Goodreads dataset"},
+        {"title": "DoubanEventP41", "en": "DoubanEventP41 dataset"}
+    ],
+    "relations": [
+        {"source": "最大池化", "target": "长期兴趣表示", "type": "包含"},
+        {"source": "最大池化", "target": "平均池化", "type": "性能优于"},
+        {"source": "跨域兴趣正则化函数", "target": "长期兴趣表示", "type": "恢复丢失的信息"},
+        {"source": "跨域兴趣正则化函数", "target": "跨域行为切换处的两个长期兴趣表示", "type": "最小化距离"},
+        {"source": "长短期兴趣的跨域推荐模型", "target": "BPR-max函数", "type": "基于"},
+        {"source": "BPR-max函数", "target": "最小化目标得分高于最大负样本得分的负对数概率", "type": "优化目标"},
+        {"source": "跨域最小批训练机制", "target": "并行训练", "type": "设计用于"},
+        {"source": "跨域最小批训练机制", "target": "跨域切换位置", "type": "检测"},
+        {"source": "跨域最小批训练机制", "target": "丢失的短期兴趣信息", "type": "恢复"},
+        {"source": "跨域最小批训练机制", "target": "丢失的长期兴趣信息", "type": "引入"},
+        {"source": "Movielens-20M", "target": "TA数据集", "type": "包含"},
+        {"source": "Goodreads", "target": "CC数据集", "type": "包含"},
+        {"source": "DoubanEventP41", "target": "MB数据集", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "会话划分", "en": "Session partitioning"},
+        {"title": "数据集统计数据", "en": "Dataset statistics"},
+        {"title": "训练集、验证集和测试集的生成策略", "en": "Strategies for generating training, validation, and test sets"},
+        {"title": "对比方法选取", "en": "Selection of comparison methods"},
+        {"title": "单域推荐方法", "en": "Single-domain recommendation methods"},
+        {"title": "跨域推荐方法", "en": "Cross-domain recommendation methods"},
+        {"title": "CDRGM的不同变体", "en": "Different variants of CDRGM"}
+    ],
+    "relations": [
+        {"source": "会话划分", "target": "数据集统计数据", "type": "包含"},
+        {"source": "数据集统计数据", "target": "训练集、验证集和测试集的生成策略", "type": "包含"},
+        {"source": "训练集、验证集和测试集的生成策略", "target": "对比方法选取", "type": "包含"},
+        {"source": "对比方法选取", "target": "单域推荐方法", "type": "包含"},
+        {"source": "对比方法选取", "target": "跨域推荐方法", "type": "包含"},
+        {"source": "跨域推荐方法", "target": "CDIE-C", "type": "包含"},
+        {"source": "跨域推荐方法", "target": "DS-HRNN", "type": "包含"},
+        {"source": "对比方法选取", "target": "CDHRM", "type": "包含"},
+        {"source": "对比方法选取", "target": "CDRGM", "type": "包含"},
+        {"source": "CDRGM", "target": "CDRGM的不同变体", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多层RNN并没有显著提高模型性能", "en": "Multilayer RNN does not significantly improve model performance"},
+        {"title": "单层RNN的使用", "en": "The use of single-layer RNN"},
+        {"title": "负样本数量为128", "en": "The number of negative samples is set to 128"},
+        {"title": "CDRGM和CDHRM在Theano框架下实现", "en": "CDRGM and CDHRM are implemented in Theano framework"},
+        {"title": "基于RNN的方法在Nvidia M40服务器上进行训练", "en": "RNN-based methods are trained on Nvidia M40 server with 24GB GPU memory"},
+        {"title": "评价指标为Recall@K和MRR", "en": "The evaluation metrics are Recall@K and MRR"},
+        {"title": "CDRGM方法中CRN和CGN模块的有效性", "en": "The effectiveness of CRN and CGN modules in CDRGM method"},
+        {"title": "CDRGM的性能优于CDRGM-i和CDRGM-s", "en": "The performance of CDRGM is better than CDRGM-i and CDRGM-s"},
+        {"title": "CDRGM中的跨域兴趣正则化函数可以进一步弥补用户切换行为处中断的长期兴趣信息", "en": "The cross-domain interest regularization function in CDRGM can further compensate for the interrupted long-term interest information at the user switching behavior"},
+        {"title": "CDRGM和CDHRM方法在所有数据集上优于所有单域推荐方法", "en": "CDRGM and CDHRM methods are better than all single-domain recommendation methods on all datasets"},
+        {"title": "CDRGM方法的性能更好", "en": "CDRGM method has better performance"},
+        {"title": "GRU4REC+、Caser和HGN在单域场景中的性能", "en": "The performance of GRU4REC+, Caser, and HGN in single-domain scenarios"},
+        {"title": "CDHRM和CDRGM都能够通过引入相关域的互补信息来综合捕捉用户兴趣的全局动态演化规律", "en": "CDHRM and CDRGM can both comprehensively capture the global dynamic evolution law of user interests by introducing complementary information from related domains"}
+    ],
+    "relations": [
+        {"source": "多层RNN并没有显著提高模型性能", "target": "单层RNN的使用", "type": "包含"},
+        {"source": "单层RNN的使用", "target": "负样本数量为128", "type": "包含"},
+        {"source": "CDRGM和CDHRM在Theano框架下实现", "target": "基于RNN的方法在Nvidia M40服务器上进行训练", "type": "使用"},
+        {"source": "评价指标为Recall@K和MRR", "target": "CDRGM和CDHRM方法在所有数据集上优于所有单域推荐方法", "type": "评估"},
+        {"source": "CDRGM方法中CRN和CGN模块的有效性", "target": "CDRGM的性能优于CDRGM-i和CDRGM-s", "type": "相关"},
+        {"source": "CDRGM的性能优于CDRGM-i和CDRGM-s", "target": "CDRGM中的跨域兴趣正则化函数可以进一步弥补用户切换行为处中断的长期兴趣信息", "type": "相关"},
+        {"source": "CDRGM和CDHRM方法在所有数据集上优于所有单域推荐方法", "target": "CDRGM方法的性能更好", "type": "相关"},
+        {"source": "GRU4REC+、Caser和HGN在单域场景中的性能", "target": "CDHRM和CDRGM都能够通过引入相关域的互补信息来综合捕捉用户兴趣的全局动态演化规律", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CDHRM方法", "en": "CDHRM method"},
+        {"title": "CDRGM方法", "en": "CDRGM method"},
+        {"title": "DS-HRNN方法", "en": "DS-HRNN method"},
+        {"title": "跨域推荐方法", "en": "Cross-domain recommendation method"},
+        {"title": "稀疏度影响分析", "en": "Analysis of sparsity impact"}
+    ],
+    "relations": [
+        {"source": "CDHRM方法", "target": "DS-HRNN方法", "type": "提升性能"},
+        {"source": "CDRGM方法", "target": "DS-HRNN方法", "type": "提升性能"},
+        {"source": "CDRGM方法", "target": "CDHRM方法", "type": "提升性能"},
+        {"source": "CDRGM方法", "target": "稀疏度影响分析", "type": "缓解数据稀疏性问题"},
+        {"source": "CDHRM方法", "target": "稀疏度影响分析", "type": "缓解数据稀疏性问题"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "跨域数据动态性", "en": "Dynamic nature of cross-domain data"},
+    {"title": "跨域推荐问题", "en": "Cross-domain recommendation problem"},
+    {"title": "跨域多层循环神经兴趣模型", "en": "Cross-domain multi-layer recurrent neural interest model"},
+    {"title": "基于用户级-会话级动态兴趣的跨域推荐模型", "en": "Cross-domain recommendation model based on user-level and session-level dynamic interests"},
+    {"title": "跨域循环-门控神经兴趣模型", "en": "Cross-domain recurrent-gated neural interest model"},
+    {"title": "基于长短期兴趣的跨域推荐模型", "en": "Cross-domain recommendation model based on long and short-term interests"},
+    {"title": "单域行为间链接损失", "en": "Loss of links between single-domain behaviors"}
+  ],
+  "relations": [
+    {"source": "稀疏度增加", "target": "所有方法的性能变差", "type": "影响"},
+    {"source": "稀疏度高于50%", "target": "DS-HRNN的性能开始超过GRU4REC+", "type": "影响"},
+    {"source": "CDRGM和CDHRM方法", "target": "性能优于其他所有单域推荐方法", "type": "影响"},
+    {"source": "CDRGM和CDHRM与DS-HRNN相比", "target": "性能明显优于DS-HRNN", "type": "比较"},
+    {"source": "CDHRM的RecaH@30的值", "target": "相比于DS-HRNN分别提高了20.76%和18.31%", "type": "影响"},
+    {"source": "CDRGM的Recall@30的值", "target": "相比于DS-HRNN分别提高了25.82%和28.29%", "type": "影响"},
+    {"source": "CDRGM和CDHRM", "target": "捕捉了用户兴趣在不同域的会话内的动态变化", "type": "特点"},
+    {"source": "CDRGM和CDHRM", "target": "通过捕获不同会话间的动态演化模式,以学习到更全面的用户兴趣表示", "type": "特点"},
+    {"source": "本章提出的两种方法", "target": "相比于其他基于动态数据的单域推荐和跨域推荐方法性能至少提升8%", "type": "比较"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "基于嵌入的新闻推荐", "en": "Embedding-based news recommendation"},
+        {"title": "跨领域推荐", "en": "Cross-domain recommendation"},
+        {"title": "多领域主动学习", "en": "Multi-domain active learning"},
+        {"title": "多视角深度学习", "en": "Multi-view deep learning"},
+        {"title": "内容增强的协同过滤神经网络", "en": "Content-boosted collaborative filtering neural network"},
+        {"title": "基于项嵌入和规范相关分析的多领域推荐", "en": "Multi-cross-domain recommendation using item embedding and canonical correlation analysis"},
+        {"title": "基于共聚类的跨领域项嵌入", "en": "Cross-domain item embedding based on co-clustering"},
+        {"title": "多领域用户行为建模", "en": "Multi-domain user behavior modeling"},
+        {"title": "循环神经网络", "en": "Recurrent neural network"},
+        {"title": "长短时记忆网络", "en": "Long short-term memory network"}
+    ],
+    "relations": [
+        {"source": "基于嵌入的新闻推荐", "target": "跨领域推荐", "type": "相关"},
+        {"source": "跨领域推荐", "target": "多领域主动学习", "type": "相关"},
+        {"source": "跨领域推荐", "target": "多视角深度学习", "type": "相关"},
+        {"source": "跨领域推荐", "target": "内容增强的协同过滤神经网络", "type": "相关"},
+        {"source": "跨领域推荐", "target": "基于项嵌入和规范相关分析的多领域推荐", "type": "相关"},
+        {"source": "基于项嵌入和规范相关分析的多领域推荐", "target": "基于共聚类的跨领域项嵌入", "type": "相关"},
+        {"source": "多领域主动学习", "target": "多领域用户行为建模", "type": "相关"},
+        {"source": "多视角深度学习", "target": "循环神经网络", "type": "相关"},
+        {"source": "循环神经网络", "target": "长短时记忆网络", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "RNN encoder-decoder", "en": ""},
+        {"title": "Product-based neural networks", "en": ""},
+        {"title": "Learning to match clothing from textual feature-based compatible relationships", "en": ""},
+        {"title": "Session-based recommendations with recurrent neural networks", "en": ""},
+        {"title": "Recurrent neural networks with top-k gains for session-based recommendations", "en": ""},
+        {"title": "Cross-domain recommendation based on multi-type media fusion", "en": ""},
+        {"title": "Auxiliary domain selection in cross-domain collaborative filtering", "en": ""},
+        {"title": "Multi-domain collaborative filtering", "en": ""},
+        {"title": "User behavior learning and transfer in composite social networks", "en": ""},
+        {"title": "Bayesian personalized ranking from implicit feedback", "en": ""},
+        {"title": "Item2vec: neural item embedding for collaborative filtering", "en": ""},
+        {"title": "Adaptive subgradient methods for online learning and stochastic optimization", "en": ""},
+        {"title": "Bridging user interest to item content for recommender systems: an optimization model", "en": ""},
+        {"title": "Theano: A Python framework for fast computation of mathematical expressions", "en": ""}
+    ],
+    "relations": [
+        {"source": "RNN encoder-decoder", "target": "Learning to match clothing from textual feature-based compatible relationships", "type": "应用"},
+        {"source": "Session-based recommendations with recurrent neural networks", "target": "Recurrent neural networks with top-k gains for session-based recommendations", "type": "拓展"},
+        {"source": "Cross-domain recommendation based on multi-type media fusion", "target": "Auxiliary domain selection in cross-domain collaborative filtering", "type": "应用"},
+        {"source": "Multi-domain collaborative filtering", "target": "Auxiliary domain selection in cross-domain collaborative filtering", "type": "拓展"},
+        {"source": "Bayesian personalized ranking from implicit feedback", "target": "Item2vec: neural item embedding for collaborative filtering", "type": "拓展"},
+        {"source": "Adaptive subgradient methods for online learning and stochastic optimization", "target": "Theano: A Python framework for fast computation of mathematical expressions", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "跨域数据挖掘", "en": "Cross-domain data mining"},
+        {"title": "用户兴趣模型", "en": "User interest model"},
+        {"title": "异质跨域数据", "en": "Heterogeneous cross-domain data"},
+        {"title": "跨域用户身份识别", "en": "Cross-domain user identification"},
+        {"title": "跨域推荐", "en": "Cross-domain recommendation"},
+        {"title": "多层循环神经网络", "en": "Multi-layer recurrent neural network"},
+        {"title": "门控-循环神经网络", "en": "Gated recurrent neural network"}
+    ],
+    "relations": [
+        {"source": "跨域数据挖掘", "target": "用户兴趣模型", "type": "包含"},
+        {"source": "用户兴趣模型", "target": "跨域数据挖掘", "type": "属于"},
+        {"source": "跨域数据挖掘", "target": "异质跨域数据", "type": "包含"},
+        {"source": "异质跨域数据", "target": "跨域数据挖掘", "type": "属于"},
+        {"source": "跨域数据挖掘", "target": "跨域用户身份识别", "type": "包含"},
+        {"source": "跨域用户身份识别", "target": "跨域数据挖掘", "type": "属于"},
+        {"source": "跨域数据挖掘", "target": "跨域推荐", "type": "包含"},
+        {"source": "跨域推荐", "target": "跨域数据挖掘", "type": "属于"},
+        {"source": "跨域推荐", "target": "异质跨域数据", "type": "涉及"},
+        {"source": "异质跨域数据", "target": "跨域推荐", "type": "涉及"},
+        {"source": "跨域推荐", "target": "多层循环神经网络", "type": "基于"},
+        {"source": "多层循环神经网络", "target": "跨域推荐", "type": "应用于"},
+        {"source": "跨域推荐", "target": "门控-循环神经网络", "type": "基于"},
+        {"source": "门控-循环神经网络", "target": "跨域推荐", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "跨域最小批训练机制",
+            "en": "Cross-domain mini-batch training mechanism"
+        },
+        {
+            "title": "基于门控-循环神经网络的跨域推荐方法",
+            "en": "Cross-domain recommendation method based on gated recurrent neural network"
+        },
+        {
+            "title": "异质网络嵌入",
+            "en": "Heterogeneous network embedding"
+        },
+        {
+            "title": "多模态数据",
+            "en": "Multimodal data"
+        },
+        {
+            "title": "图神经网络",
+            "en": "Graph neural network"
+        },
+        {
+            "title": "多域场景",
+            "en": "Multi-domain scenario"
+        }
+    ],
+    "relations": [
+        {
+            "source": "跨域最小批训练机制",
+            "target": "基于门控-循环神经网络的跨域推荐方法",
+            "type": "提升"
+        },
+        {
+            "source": "异质网络嵌入",
+            "target": "多模态数据",
+            "type": "融合"
+        },
+        {
+            "source": "异质网络嵌入",
+            "target": "图神经网络",
+            "type": "应用"
+        },
+        {
+            "source": "基于门控-循环神经网络的跨域推荐方法",
+            "target": "图神经网络",
+            "type": "应用"
+        },
+        {
+            "source": "多域场景",
+            "target": "多模态数据",
+            "type": "涉及"
+        },
+        {
+            "source": "多域场景",
+            "target": "图神经网络",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Database Systems and Logic Programming", "en": "数据库系统和逻辑编程"},
+        {"title": "Domain Switch-Aware Holistic Recurrent Neural Network", "en": "域切换感知的整体循环神经网络"},
+        {"title": "Exponential Linear Unit", "en": "指数线性单元"},
+        {"title": "Expectation Maximum", "en": "期望最大化"},
+        {"title": "Factorization Machines", "en": "分解机"},
+        {"title": "Gated Linear Unit", "en": "门控线性单元"},
+        {"title": "Graphics Processing Unit", "en": "图形处理器"},
+        {"title": "Gated Recurrent Unit", "en": "门控循环单元"},
+        {"title": "Global Web Index", "en": "全球网络指数"},
+        {"title": "Hierarchical Gating Networks", "en": "分层门控网络"},
+        {"title": "Hierarchical Recurrent Neural Networks", "en": "分层循环神经网络"},
+        {"title": "K-Nearest Neighbor", "en": "K近邻"},
+        {"title": "Latent Dirichlet Allocation", "en": "潜在狄利克雷分布"},
+        {"title": "Linked-Heterogeneous-Network-based Interest Embedding", "en": "基于链接异质网络的兴趣嵌入模型"},
+        {"title": "Large-scale Information Network Embedding", "en": "大规模信息网络嵌入"},
+        {"title": "Long Short-Term Memory", "en": "长短期记忆"},
+        {"title": "Mean Reciprocal Rank", "en": "平均倒数排名"},
+        {"title": "Probabilistic Matrix Factorization", "en": "概率矩阵分解"},
+        {"title": "Point-wise Mutual Information", "en": "点相关的互信息"},
+        {"title": "Popularity Predictor", "en": "流行预测"},
+        {"title": "Predictive Text Embedding", "en": "预测文本嵌入"},
+        {"title": "Recurrent Neural Network", "en": "循环神经网络"},
+        {"title": "Sequential Filter Session-based KNN", "en": "序列化过滤的基于会话的最近邻"},
+        {"title": "Stochastic Gradient Descent", "en": "随机梯度下降"},
+        {"title": "Session-based KNN", "en": "基于会话的K近邻"},
+        {"title": "Shifted Positive PMI", "en": "平移正定PMI"},
+        {"title": "Singular Value Decomposition", "en": "奇异值分解"},
+        {"title": "Support Vector Machine", "en": "支持向量机"},
+        {"title": "Term Frequency-Inverse Document Frequency", "en": "词频-逆文本频率指数"}
+    ],
+    "relations": [
+        {"source": "Database Systems and Logic Programming", "target": "Factorization Machines", "type": "相关"},
+        {"source": "Domain Switch-Aware Holistic Recurrent Neural Network", "target": "Hierarchical Gating Networks", "type": "相关"},
+        {"source": "Domain Switch-Aware Holistic Recurrent Neural Network", "target": "Hierarchical Recurrent Neural Networks", "type": "相关"},
+        {"source": "Exponential Linear Unit", "target": "Predictive Text Embedding", "type": "相关"},
+        {"source": "Expectation Maximum", "target": "Probabilistic Matrix Factorization", "type": "相关"},
+        {"source": "Factorization Machines", "target": "Probabilistic Matrix Factorization", "type": "相关"},
+        {"source": "Gated Linear Unit", "target": "Gated Recurrent Unit", "type": "相关"},
+        {"source": "Gated Recurrent Unit", "target": "Hierarchical Gating Networks", "type": "相关"},
+        {"source": "Gated Recurrent Unit", "target": "Hierarchical Recurrent Neural Networks", "type": "相关"},
+        {"source": "Global Web Index", "target": "Popularity Predictor", "type": "相关"},
+        {"source": "Large-scale Information Network Embedding", "target": "Linked-Heterogeneous-Network-based Interest Embedding", "type": "相关"},
+        {"source": "Long Short-Term Memory", "target": "Recurrent Neural Network", "type": "相关"},
+        {"source": "Probabilistic Matrix Factorization", "target": "Shifted Positive PMI", "type": "相关"},
+        {"source": "Point-wise Mutual Information", "target": "Shifted Positive PMI", "type": "相关"},
+        {"source": "Predictive Text Embedding", "target": "Session-based KNN", "type": "相关"},
+        {"source": "Sequential Filter Session-based KNN", "target": "Session-based KNN", "type": "相关"},
+        {"source": "Singular Value Decomposition", "target": "Large-scale Information Network Embedding", "type": "相关"},
+        {"source": "Support Vector Machine", "target": "K-Nearest Neighbor", "type": "相关"},
+        {"source": "Term Frequency-Inverse Document Frequency", "target": "Point-wise Mutual Information", "type": "相关"},
+        {"source": "Term Frequency-Inverse Document Frequency", "target": "Shifted Positive PMI", "type": "相关"},
+        {"source": "TF-IDF", "target": "Point-wise Mutual Information", "type": "相关"},
+        {"source": "TF-IDF", "target": "Shifted Positive PMI", "type": "相关"}
+    ]
+}

@@ -1,0 +1,2 @@
+2.1.3本体的构建工具
+本体构建冋工具主要是辅助本体编辑、构建、开发和维护的软件。主要有基于特定 语言的软件如Ontolingua, OntoSaurus, WebOnto和WebODE等，独立于特定语言的工 具Protege. OntoEdit、OilEd,它们支持导入导出多种本体描述语言，比如OWL、XML、 RDF等。斯坦福大学医学中心开发的Protege是目前应最广的本体构建工具。本论文也 采用Protege作为本体构建的工具。Protege是一个跨平台、可扩展、独立于领域的本体 编辑软件，本论文使用最新的5.1.0版本。Protege开发界面非常友好，允许用户在概念 层次上设计实领域模型，文件的导入导出也支持几乎XML、OWL、RDF/RDFS等所有 格式。

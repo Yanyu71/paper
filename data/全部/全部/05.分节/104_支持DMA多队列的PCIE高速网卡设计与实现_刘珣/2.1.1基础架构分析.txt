@@ -1,0 +1,59 @@
+2.1.1基础架构分析
+基于软件实现的加速优化方案无法从根本上带来网络数据转发的性能提升0】， 基于硬件平台实现的加速架构成为了研究趋势。目前围绕硬件网卡实现架构主要有 三种主流的架构：片上系统(System-on-Chip,SoC )架构、特定应用集成电路 (Application Specific Integrated Circuit, ASIC)架构以及现场可编程门阵列(Field Programmable Gate Array, FPGA)架构。下面将依次对网卡不同的实现架构进行分 析。
+(1) 基于SoC架构
+片上系统是一类具有片上存储器的嵌入式处理器内核，使用的处理器核包括专 用的网络处理器(Network Processor, NP)以及通用处理器(General Processor,GP), 下面将对这两种处理器进行介绍。
+a. 基于NP-SoC智能网卡
+基于NP-SoC的智能网卡特定应用于通信领域的各种任务，类似包处理、协议分 析、服务质量(Quality of Service, QoS)等。比如Cavium推出基于cnMIPS III网络 处理器的LiquidlOH］系列智能网卡。它包括对基于Linux和DPDK的完整网络软件 堆栈，QoS 和 GENEVE ( Generic Network Virtualization Encapsulation )等网络卸载功 能的支持。LiquidlO III架构基于0CTEON架构处理器，拥有36核，最高频率可达 2.2GHzo同时提供5端口的1 OOGbps的以太网适配器以及两个PCIE Gen4 X 16接口。
+b. 基于GP-SoC智能网卡
+基于GP-SoC的智能网卡使用通用处理器，这种网卡在性能上低于基于NP-SoC 的智能网卡，但在编程方面相比于NP-SoC要友好。像基于GP-SoC的智能网卡产品 比如Mellanox推出了基于BlueField IPU(I/O Processing Unit)系列可编程智能网卡 ［⑹一ConnectX-5。其可提供两个25/50/1 OOGbps端口或者单个200Gbps端口，通过 PCIeGen4X16连接到主机。同时可支持在线TLS动态数据加密、网络虚拟化、RoCE (RDMA over Converged Ethernet)和 NVMe-oF (NVMe over Fabrics )存储加速等卸 载功能。
+基于NP-SoC和GP-SoC的智能网卡架构一般如图2-1所示，均含有以下重点模 块：1.网络接口模块，支持如以太网、InfiniBand协议等；2.多种已经成熟的加速部 件，如CAM存储器、Hash计算等；3。用于与主机通信的PCIE接口，多数支持SR- 10V； 4.多种与外设通信的接口，如PC, JTAG等；5.片上NP或者GP多核，用于 OVS,接收端缩放(Receive Side Scaling, RSS)等网络功能，以及用户自定义功能。
+智能网卡上的存储
+图2-1基于SoC智能网卡架构
+(2) 基于ASIC架构
+目前，市面上仅存在少量的基于ASIC的智能网卡，ASIC芯片在智能网卡中的 主要负责网络控制器的功能，比如Mellanox的ConnectX系列㈤，Broadcom的 NetXtreme系列〔却以及Cavium的FastLinQ系列〔绚。此类ASIC网卡芯片不仅具备一 定的卸载CPU处理能力和可编程性，还能够满足传统的网络协议(如TCP)处理需 求。以Mellanox最新的ConnectX-6产品为例，其在一定程度上提供对数据平面的可 编程处理和硬件加速功能，可硬件卸载网络虚拟化中的VxLAN(Virtual Extensible
+Lock Area Networks) , NVGRE ( Network Virtualization use Generic Routing Encapsulation)等协议，并且提供虚拟化、SDN的支持，卸载网络安全中的部分加解 密运算，同时支持PCIE4.0X16主机侧接口和200Gbps双端口的吞吐量。
+(3) 基于FPGA架构
+基于FPGA架构的智能网卡通过硬件编程语言如VHDL和Verilog实现不同的 配置文件，将配置文件写入FPGA芯片中，从而使FPGA实现不同的功能，因此FPGA 同样具有很高的可编程性。2014年，微软提出了基于高端FPGA——AlteraStratixV D5〔25啲Shell (通用逻辑)+Role (可重构处理逻辑)的可重构数据中心云服务加速 方案，用于解决商用服务器满足不了飞速增长的数据中心业务需求、定制化加速器 成本开销大且灵活性不足的问题［⑴。如图2-2所示，其中Shell包括很多可重用的逻 辑位，这些逻辑位对所有应用程序都通用，并将它们抽象为一组定义良好的接口，例 如基于PCIE的DMA核，2个DRAM内存管理单元和4个lOGbps以太网接口。 Role位于FPGA芯片的固定区域中，与用户加速应用的逻辑紧密相关。
+DRAM
+Socket服务器
+CPU
+10
+10 10 Gbps
+图2・2基于FPGA的Catapult智能网卡架构
+综上所述，如表2-1所示。1.在性价比方面，基于ASIC的智能网卡基本上可以 满足多数通用网络处理的应用场景，可以在预定义的范围内对数据平面进行可编程 处理，并且只能提供有限范围内的硬件加速支持，但对于模块的移植性和灵活性不 具优势；2.在编程复杂度方面，基于FPGA和ASIC的智能网卡要远低于基于SoC的 智能网卡；3.在使用灵活性方面，基于FPGA和SoC的智能网卡要优于基于ASIC的 智能网卡。因此相比SoC, FPGA的处理效率更高，速度更快。相比于ASIC芯片, FPGA的开发难度小，而且开发周期更短，并且FPGA高速并发的特征保证了其高 吞吐率和低延时，而且对于模块的移植性和灵活性，FPGA更具有优势。本文将基于 FPGA架构对网卡进行开发设计。
+8
+表2-1不同架构网卡的特点对比
+核心处理器
+FPGA
+NP-SoC
+ASIC
+GP-SoC
+性能
+较高
+较高
+高
+低
+价格
+较高
+较低
+低
+中等
+可编程复杂度
+较低
+高
+较低
+高
+灵活性
+较高
+较高
+低
+高
+典型产品
+Microsoft,
+Xilinx Alveo
+Netronome,
+LiquidlO
+Mellanox,
+ConnectX
+BlueField,
+Broadcom

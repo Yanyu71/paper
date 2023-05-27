@@ -1,0 +1,3 @@
+3.5.2初始条件
+UE可以包含SIM应用、ISIM应用和USIM应用，或者只包含USIM关于 UICC的应用。并且UE经过一系列步骤已经驻留到EUTRA小区，且已发现 P-CSCF并已经注册到IMS服务。
+SS配置了与UE上的UICC上配置的IMS私有用户身份(IMPI)相关联的 IMSAKA算法的共享秘钥。SS已经完成AKAV1-MD5验证并且接收注册(IMS 安全)。

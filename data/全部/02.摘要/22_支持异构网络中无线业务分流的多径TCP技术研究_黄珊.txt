@@ -1,0 +1,11 @@
+摘要
+随着移动互联网时代的到来，新型智能无线设备和多样的移动数 据业务不断涌现，移动数据流量呈现爆炸式的增长，蜂窝移动通信网 络己无法满足用户对高质量服务的需求。目前，基于WiFi的业务分 流技术和多路径传输技术都致力于缓解流量压力，提升网络利用率， 但分别面临耦合较低分流效果差、大量的分组乱序，丢包等挑战。多 径TCP协议(Multi-path TCP, MPTCP)支持多条路径同时进行数据 传输，能够通过流量调度来提升业务分流性能，优化网络利用率，对 缓解移动数据流量爆炸具有重大意义。
+本文首先介绍了本课题的研究背景及主要内容，然后概述了异构 无线网络下的业务分流及多路径传输控制协议的关键技术及发展现 状，并详细介绍了多径TCP典型的调度方案。接着利用随机优化理 论中的 RMAB (Restless Multi-Armed Bandit)问题对 MPTCP 分流调 度问题进行了建模，在此基础上提出了基于RMAB的分流调度算法。 最后，搭建了仿真系统，对算法进行仿真，通过与典型调度方案的对 比分析，验证了本文所提出的算法可以有效进行数据分流，在提升系 统吞吐量的同时，具有良好的时延抖动性能。
+关键词：多径TCP业务分流数据调度RMAB
+RESEARCH ON MULTIPATH TCP BASED
+DATA OFFLOADING OVER
+HETEROGENEOUS NETWORK
+ABSTRACT
+With the advent of the mobile Internet era, all kinds of smart wireless devices and services emerging, mobile data traffic showing explosive growth, cellular mobile communication network has been unable to meet user demand for high quality services. At present, WiFi-based data offloading scheme and multi-path transmission technology are committed to ease traffic pressure and improve network utilization, but meet with bad user experience, out of order packets, high packet loss and other challenges. Multipath TCP protocol (Multi-path TCP, MPTCP) support multiple paths transmite simultaneously, can improve offloading performance, and optimize network utilization, can ease the mobile data traffic explosion.
+In this paper, first we introduce the research background and main content of this paper; give an overview of heterogeneous networks and key technology and development status of data offloding. After summarizing the relevant technical background of multi-path transmission control protocol, multipath TCP typical scheduling schemes are introduced and analyzed in detail. Then we use RMAB to model the multipath TCP scheduling problem and propose the RMAB based offloading algorithm for MPTCP. Finally, we build the simulation systems and simulated the algorithm. We verified that the proposed algorithm can effectively improve the offloading performance and overall goodput, also have good performance on delay and jitter.
+KEY WORDS： multipath TCP, offloading, transmission schedule，strategy, restless multi-armed bandit

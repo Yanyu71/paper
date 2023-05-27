@@ -1,0 +1,1271 @@
+﻿{
+    "knowledge_points": [
+        {"title": "交通拥堵和事故的全球问题", "en": "Global issues of traffic congestion and accidents"},
+        {"title": "智能交通系统的必然趋势", "en": "The inevitable trend of intelligent transportation systems"},
+        {"title": "车联网作为智能交通系统的支撑技术", "en": "Vehicle-to-everything (V2X) as the supporting technology of intelligent transportation systems"},
+        {"title": "认知车联网的提出", "en": "The proposal of cognitive vehicular networks"},
+        {"title": "异质频谱资源在车联网中的应用", "en": "The application of heterogeneous spectrum resources in vehicular networks"},
+        {"title": "频谱共享技术在认知车联网中的应用", "en": "The application of spectrum sharing technology in cognitive vehicular networks"}
+    ],
+    "relations": [
+        {"source": "交通拥堵和事故的全球问题", "target": "智能交通系统的必然趋势", "type": "相关"},
+        {"source": "智能交通系统的必然趋势", "target": "车联网作为智能交通系统的支撑技术", "type": "支持"},
+        {"source": "车联网作为智能交通系统的支撑技术", "target": "认知车联网的提出", "type": "支持"},
+        {"source": "认知车联网的提出", "target": "异质频谱资源在车联网中的应用", "type": "支持"},
+        {"source": "异质频谱资源在车联网中的应用", "target": "频谱共享技术在认知车联网中的应用", "type": "支持"},
+        {"source": "频谱共享技术在认知车联网中的应用", "target": "复杂多变的车辆间异质频谱干扰", "type": "挑战"},
+        {"source": "复杂多变的车辆间异质频谱干扰", "target": "异质频谱共享技术的难点", "type": "挑战"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知车联网", "en": "Cognitive Vehicular Networks"},
+        {"title": "频谱共享技术", "en": "Spectrum Sharing Technology"},
+        {"title": "异质频谱共享技术", "en": "Heterogeneous Spectrum Sharing Technology"},
+        {"title": "QoS保障", "en": "QoS Guarantee"},
+        {"title": "干扰多图", "en": "Interference Graph"},
+        {"title": "干扰感知多图", "en": "Interference-Aware Graph"},
+        {"title": "多智能体深度强化学习", "en": "Multi-Agent Deep Reinforcement Learning"}
+    ],
+    "relations": [
+        {"source": "认知车联网", "target": "频谱共享技术", "type": "包含"},
+        {"source": "认知车联网", "target": "异质频谱共享技术", "type": "包含"},
+        {"source": "异质频谱共享技术", "target": "QoS保障", "type": "关联"},
+        {"source": "异质频谱共享技术", "target": "干扰多图", "type": "关联"},
+        {"source": "异质频谱共享技术", "target": "干扰感知多图", "type": "关联"},
+        {"source": "干扰多图", "target": "异质频谱共享技术", "type": "关联"},
+        {"source": "干扰感知多图", "target": "异质频谱共享技术", "type": "关联"},
+        {"source": "异质频谱共享技术", "target": "多智能体深度强化学习", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "车联网", "en": "Connected Vehicles"},
+        {"title": "认知车联网", "en": "Cognitive Connected Vehicles"},
+        {"title": "频谱共享技术", "en": "Spectrum Sharing Technology"},
+        {"title": "多业务场景", "en": "Multi-Service Scenarios"},
+        {"title": "车联网无线通信技术", "en": "Wireless Communication Technologies for Connected Vehicles"}
+    ],
+    "relations": [
+        {"source": "车联网", "target": "认知车联网", "type": "包含"},
+        {"source": "车联网", "target": "频谱共享技术", "type": "应用"},
+        {"source": "车联网", "target": "多业务场景", "type": "应用"},
+        {"source": "车联网", "target": "车联网无线通信技术", "type": "包含"},
+        {"source": "认知车联网", "target": "频谱共享技术", "type": "应用"},
+        {"source": "车联网无线通信技术", "target": "多业务场景", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "车联网无线通信技术",
+            "en": "Wireless Communication Technology for Connected Vehicles"
+        },
+        {
+            "title": "DSRC技术",
+            "en": "DSRC Technology"
+        },
+        {
+            "title": "C-V2X技术",
+            "en": "C-V2X Technology"
+        },
+        {
+            "title": "认知车联网",
+            "en": "Cognitive Vehicular Network"
+        },
+        {
+            "title": "频谱感知",
+            "en": "Spectrum Sensing"
+        },
+        {
+            "title": "频谱共享",
+            "en": "Spectrum Sharing"
+        },
+        {
+            "title": "频谱移动性管理",
+            "en": "Spectrum Mobility Management"
+        }
+    ],
+    "relations": [
+        {
+            "source": "车联网无线通信技术",
+            "target": "DSRC技术",
+            "type": "包含"
+        },
+        {
+            "source": "车联网无线通信技术",
+            "target": "C-V2X技术",
+            "type": "包含"
+        },
+        {
+            "source": "DSRC技术",
+            "target": "频谱感知",
+            "type": "涉及"
+        },
+        {
+            "source": "DSRC技术",
+            "target": "频谱共享",
+            "type": "涉及"
+        },
+        {
+            "source": "C-V2X技术",
+            "target": "频谱感知",
+            "type": "涉及"
+        },
+        {
+            "source": "C-V2X技术",
+            "target": "频谱共享",
+            "type": "涉及"
+        },
+        {
+            "source": "认知车联网",
+            "target": "频谱感知",
+            "type": "包含"
+        },
+        {
+            "source": "认知车联网",
+            "target": "频谱共享",
+            "type": "包含"
+        },
+        {
+            "source": "认知车联网",
+            "target": "频谱移动性管理",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频谱共享", "en": "Spectrum Sharing"},
+        {"title": "认知车联网", "en": "Cognitive Vehicular Networks"},
+        {"title": "移动性管理", "en": "Mobility Management"},
+        {"title": "可用频谱", "en": "Available Spectrum"},
+        {"title": "网络架构", "en": "Network Architecture"},
+        {"title": "接入模式", "en": "Access Mode"},
+        {"title": "算法", "en": "Algorithm"},
+        {"title": "异质频谱共享", "en": "Heterogeneous Spectrum Sharing"},
+        {"title": "集中式频谱共享", "en": "Centralized Spectrum Sharing"},
+        {"title": "分布式频谱共享", "en": "Distributed Spectrum Sharing"},
+        {"title": "机会式频谱共享", "en": "Opportunistic Spectrum Sharing"},
+        {"title": "底层复用式频谱共享", "en": "Underlay Spectrum Sharing"},
+        {"title": "覆盖式频谱共享", "en": "Overlay Spectrum Sharing"},
+        {"title": "QoS", "en": "Quality of Service"}
+    ],
+    "relations": [
+        {"source": "频谱共享", "target": "认知车联网", "type": "属于"},
+        {"source": "频谱共享", "target": "可用频谱", "type": "包括"},
+        {"source": "频谱共享", "target": "网络架构", "type": "包括"},
+        {"source": "频谱共享", "target": "接入模式", "type": "包括"},
+        {"source": "频谱共享", "target": "算法", "type": "包括"},
+        {"source": "认知车联网", "target": "频谱共享", "type": "包括"},
+        {"source": "认知车联网", "target": "移动性管理", "type": "包括"},
+        {"source": "可用频谱", "target": "认知车联网", "type": "属于"},
+        {"source": "网络架构", "target": "认知车联网", "type": "属于"},
+        {"source": "接入模式", "target": "认知车联网", "type": "属于"},
+        {"source": "算法", "target": "认知车联网", "type": "属于"},
+        {"source": "频谱共享", "target": "异质频谱共享", "type": "包括"},
+        {"source": "异质频谱共享", "target": "频谱共享", "type": "所属"},
+        {"source": "网络架构", "target": "集中式频谱共享", "type": "包括"},
+        {"source": "网络架构", "target": "分布式频谱共享", "type": "包括"},
+        {"source": "集中式频谱共享", "target": "网络架构", "type": "所属"},
+        {"source": "分布式频谱共享", "target": "网络架构", "type": "所属"},
+        {"source": "接入模式", "target": "机会式频谱共享", "type": "包括"},
+        {"source": "接入模式", "target": "底层复用式频谱共享", "type": "包括"},
+        {"source": "机会式频谱共享", "target": "接入模式", "type": "所属"},
+        {"source": "底层复用式频谱共享", "target": "接入模式", "type": "所属"},
+        {"source": "接入模式", "target": "覆盖式频谱共享", "type": "包括"},
+        {"source": "覆盖式频谱共享", "target": "接入模式", "type": "所属"},
+        {"source": "移动性管理", "target": "认知车联网", "type": "所属"},
+        {"source": "QoS", "target": "认知车联网", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于博弈论的频谱共享技术", "en": "Spectrum sharing technology based on game theory"},
+        {"title": "基于图论的频谱共享技术", "en": "Spectrum sharing technology based on graph theory"},
+        {"title": "基于机器学习的频谱共享技术", "en": "Spectrum sharing technology based on machine learning"}
+    ],
+    "relations": [
+        {"source": "基于博弈论的频谱共享技术", "target": "基于图论的频谱共享技术", "type": "包含"},
+        {"source": "基于博弈论的频谱共享技术", "target": "基于机器学习的频谱共享技术", "type": "包含"},
+        {"source": "基于图论的频谱共享技术", "target": "基于机器学习的频谱共享技术", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "迁移行动者-评论家强化学习算法", "en": "Transfer Actor-Critic Reinforcement Learning Algorithm"},
+        {"title": "机器学习在车联网中的应用", "en": "Application of Machine Learning in Vehicular Ad Hoc Networks"},
+        {"title": "异质频谱共享技术", "en": "Heterogeneous Spectrum Sharing Technology"},
+        {"title": "基于图论的异质频谱共享技术", "en": "Graph Theory-based Heterogeneous Spectrum Sharing Technology"},
+        {"title": "基于博弈论的频谱共享技术", "en": "Game Theory-based Spectrum Sharing Technology"},
+        {"title": "基于拍卖的异质频谱共享技术", "en": "Auction-based Heterogeneous Spectrum Sharing Technology"},
+        {"title": "面向业务QoS保障频谱共享技术", "en": "QoS-oriented Spectrum Sharing Technology"}
+    ],
+    "relations": [
+        {"source": "迁移行动者-评论家强化学习算法", "target": "机器学习在车联网中的应用", "type": "应用"},
+        {"source": "机器学习在车联网中的应用", "target": "异质频谱共享技术", "type": "应用"},
+        {"source": "异质频谱共享技术", "target": "基于图论的异质频谱共享技术", "type": "子类"},
+        {"source": "异质频谱共享技术", "target": "基于博弈论的频谱共享技术", "type": "子类"},
+        {"source": "异质频谱共享技术", "target": "基于拍卖的异质频谱共享技术", "type": "子类"},
+        {"source": "异质频谱共享技术", "target": "面向业务QoS保障频谱共享技术", "type": "子类"},
+        {"source": "基于图论的异质频谱共享技术", "target": "车联网中的频谱资源", "type": "关联"},
+        {"source": "基于博弈论的频谱共享技术", "target": "车联网中的频谱资源", "type": "关联"},
+        {"source": "基于拍卖的异质频谱共享技术", "target": "车联网中的频谱资源", "type": "关联"},
+        {"source": "面向业务QoS保障频谱共享技术", "target": "车联网中的业务种类", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "同质频谱共享技术",
+            "en": "Homogeneous spectrum sharing technology"
+        },
+        {
+            "title": "异质频谱共享技术",
+            "en": "Heterogeneous spectrum sharing technology"
+        },
+        {
+            "title": "QoS区分",
+            "en": "QoS differentiation"
+        },
+        {
+            "title": "安全服务",
+            "en": "Security services"
+        },
+        {
+            "title": "延时性能",
+            "en": "Delay performance"
+        },
+        {
+            "title": "可靠性性能",
+            "en": "Reliability performance"
+        },
+        {
+            "title": "车联网",
+            "en": "Vehicular ad hoc network (VANET)"
+        },
+        {
+            "title": "传输展开研究",
+            "en": "Transmission research"
+        },
+        {
+            "title": "频谱共享",
+            "en": "Spectrum sharing"
+        },
+        {
+            "title": "端到端延时",
+            "en": "End-to-end delay"
+        },
+        {
+            "title": "缓存中等待延时",
+            "en": "Waiting delay in cache"
+        },
+        {
+            "title": "多业务并存",
+            "en": "Multi-service coexistence"
+        },
+        {
+            "title": "QoS性能",
+            "en": "QoS performance"
+        },
+        {
+            "title": "QoS偏差效用函数",
+            "en": "QoS deviation utility function"
+        },
+        {
+            "title": "加权QoS偏差效用函数",
+            "en": "Weighted QoS deviation utility function"
+        },
+        {
+            "title": "强化学习",
+            "en": "Reinforcement learning"
+        },
+        {
+            "title": "信道接入算法",
+            "en": "Channel access algorithm"
+        },
+        {
+            "title": "奖惩函数",
+            "en": "Reward and punishment function"
+        },
+        {
+            "title": "有效容量",
+            "en": "Effective capacity"
+        },
+        {
+            "title": "中断容量",
+            "en": "Interrupt capacity"
+        },
+        {
+            "title": "吞吐量",
+            "en": "Throughput"
+        },
+        {
+            "title": "丢包率",
+            "en": "Packet loss rate"
+        },
+        {
+            "title": "数据包延时",
+            "en": "Packet delay"
+        },
+        {
+            "title": "传输速率",
+            "en": "Transmission rate"
+        },
+        {
+            "title": "自主选择",
+            "en": "Autonomous selection"
+        },
+        {
+            "title": "异质频谱干扰问题",
+            "en": "Heterogeneous spectrum interference problem"
+        },
+        {
+            "title": "毫米波",
+            "en": "Millimeter wave"
+        },
+        {
+            "title": "6GHz以下频段",
+            "en": "Frequency band below 6GHz"
+        },
+        {
+            "title": "方向性干扰",
+            "en": "Directional interference"
+        },
+        {
+            "title": "全向干扰",
+            "en": "Omnidirectional interference"
+        },
+        {
+            "title": "通信性能",
+            "en": "Communication performance"
+        }
+    ],
+    "relations": [
+        {
+            "source": "同质频谱共享技术",
+            "target": "异质频谱共享技术",
+            "type": "包含"
+        },
+        {
+            "source": "异质频谱共享技术",
+            "target": "QoS区分",
+            "type": "涉及"
+        },
+        {
+            "source": "异质频谱共享技术",
+            "target": "安全服务",
+            "type": "涉及"
+        },
+        {
+            "source": "安全服务",
+            "target": "延时性能",
+            "type": "涉及"
+        },
+        {
+            "source": "安全服务",
+            "target": "可靠性性能",
+            "type": "涉及"
+        },
+        {
+            "source": "异质频谱共享技术",
+            "target": "车联网",
+            "type": "涉及"
+        },
+        {
+            "source": "车联网",
+            "target": "传输展开研究",
+            "type": "包含"
+        },
+        {
+            "source": "传输展开研究",
+            "target": "频谱共享",
+            "type": "涉及"
+        },
+        {
+            "source": "传输展开研究",
+            "target": "端到端延时",
+            "type": "涉及"
+        },
+        {
+            "source": "端到端延时",
+            "target": "缓存中等待延时",
+            "type": "涉及"
+        },
+        {
+            "source": "异质频谱共享技术",
+            "target": "多业务并存",
+            "type": "涉及"
+        },
+        {
+            "source": "多业务并存",
+            "target": "QoS性能",
+            "type": "涉及"
+        },
+        {
+            "source": "QoS性能",
+            "target": "QoS偏差效用函数",
+            "type": "包含"
+        },
+        {
+            "source": "QoS性能",
+            "target": "加权QoS偏差效用函数",
+            "type": "包含"
+        },
+        {
+            "source": "QoS偏差效用函数",
+            "target": "加权QoS偏差效用函数",
+            "type": "涉及"
+        },
+        {
+            "source": "多业务并存",
+            "target": "强化学习",
+            "type": "涉及"
+        },
+        {
+            "source": "强化学习",
+            "target": "信道接入算法",
+            "type": "包含"
+        },
+        {
+            "source": "强化学习",
+            "target": "奖惩函数",
+            "type": "包含"
+        },
+        {
+            "source": "多业务并存",
+            "target": "有效容量",
+            "type": "涉及"
+        },
+        {
+            "source": "有效容量",
+            "target": "中断容量",
+            "type": "涉及"
+        },
+        {
+            "source": "有效容量",
+            "target": "吞吐量",
+            "type": "涉及"
+        },
+        {
+            "source": "有效容量",
+            "target": "丢包率",
+            "type": "涉及"
+        },
+        {
+            "source": "有效容量",
+            "target": "数据包延时",
+            "type": "涉及"
+        },
+        {
+            "source": "有效容量",
+            "target": "传输速率",
+            "type": "涉及"
+        },
+        {
+            "source": "{
+    "knowledge_points": [
+        {
+            "title": "同质频谱共享技术",
+            "en": "Homogeneous spectrum sharing technology"
+        },
+        {
+            "title": "异质频谱共享技术",
+            "en": "Heterogeneous spectrum sharing technology"
+        },
+        {
+            "title": "QoS区分",
+            "en": "QoS differentiation"
+        },
+        {
+            "title": "单一业务QoS保障问题",
+            "en": "QoS guarantee for single service"
+        },
+        {
+            "title": "车联网安全业务",
+            "en": "Vehicular network security service"
+        },
+        {
+            "title": "延时性能要求",
+            "en": "Delay performance requirements"
+        },
+        {
+            "title": "缓存中等待延时",
+            "en": "Waiting delay in cache"
+        },
+        {
+            "title": "多业务并存的车联网",
+            "en": "Vehicular network with multiple services"
+        },
+        {
+            "title": "QoS性能",
+            "en": "QoS performance"
+        },
+        {
+            "title": "QoS偏差效用函数",
+            "en": "QoS deviation utility function"
+        },
+        {
+            "title": "加权QoS偏差效用函数",
+            "en": "Weighted QoS deviation utility function"
+        },
+        {
+            "title": "强化学习",
+            "en": "Reinforcement learning"
+        },
+        {
+            "title": "有效容量",
+            "en": "Effective capacity"
+        },
+        {
+            "title": "异质频谱干扰问题",
+            "en": "Heterogeneous spectrum interference problem"
+        }
+    ],
+    "relations": [
+        {
+            "source": "同质频谱共享技术",
+            "target": "单一业务QoS保障问题",
+            "type": "相关"
+        },
+        {
+            "source": "异质频谱共享技术",
+            "target": "单一业务QoS保障问题",
+            "type": "相关"
+        },
+        {
+            "source": "车联网安全业务",
+            "target": "单一业务QoS保障问题",
+            "type": "相关"
+        },
+        {
+            "source": "单一业务QoS保障问题",
+            "target": "延时性能要求",
+            "type": "包含"
+        },
+        {
+            "source": "延时性能要求",
+            "target": "缓存中等待延时",
+            "type": "包含"
+        },
+        {
+            "source": "多业务并存的车联网",
+            "target": "QoS性能",
+            "type": "相关"
+        },
+        {
+            "source": "QoS偏差效用函数",
+            "target": "多业务并存的车联网",
+            "type": "相关"
+        },
+        {
+            "source": "加权QoS偏差效用函数",
+            "target": "多业务并存的车联网",
+            "type": "相关"
+        },
+        {
+            "source": "强化学习",
+            "target": "多业务并存的车联网",
+            "type": "相关"
+        },
+        {
+            "source": "有效容量",
+            "target": "多业务并存的车联网",
+            "type": "相关"
+        },
+        {
+            "source": "异质频谱干扰问题",
+            "target": "异质频谱共享技术",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异质频谱共享技术", "en": "Heterogeneous spectrum sharing technology"},
+        {"title": "车联网业务QoS保障问题", "en": "QoS guarantee issue in vehicular networks"},
+        {"title": "传统干扰图模型", "en": "Traditional interference graph model"},
+        {"title": "基于博弈论的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on game theory"},
+        {"title": "基于拍卖的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on auction theory"},
+        {"title": "车联网的高动态特性", "en": "High dynamic characteristics of vehicular networks"},
+        {"title": "面向QoS保障的频谱共享算法", "en": "Spectrum sharing algorithm for QoS guarantee"},
+        {"title": "车联网安全业务的可靠性和延时性能要求", "en": "Reliability and latency performance requirements for vehicular safety services"},
+        {"title": "多业务QoS要求", "en": "QoS requirements for multiple services"},
+        {"title": "干扰多图", "en": "Interference multi-graph"},
+        {"title": "干扰感知多图", "en": "Interference-aware multi-graph"},
+        {"title": "量化车辆端到端延时", "en": "Quantifying end-to-end delay of vehicles"},
+        {"title": "基于干扰多图的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on interference multi-graph"},
+        {"title": "基于干扰感知多图的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on interference-aware multi-graph"},
+        {"title": "有效容量", "en": "Effective capacity"},
+        {"title": "多智能体深度强化学习算法", "en": "Multi-agent deep reinforcement learning algorithm"}
+    ],
+    "relations": [
+        {"source": "传统干扰图模型", "target": "异质频谱共享技术", "type": "包含"},
+        {"source": "基于博弈论的异质频谱共享算法", "target": "车联网的高动态特性", "type": "适用性"},
+        {"source": "基于拍卖的异质频谱共享算法", "target": "车联网的高动态特性", "type": "适用性"},
+        {"source": "面向QoS保障的频谱共享算法", "target": "车联网安全业务的可靠性和延时性能要求", "type": "应用"},
+        {"source": "面向QoS保障的频谱共享算法", "target": "多业务QoS要求", "type": "应用"},
+        {"source": "干扰多图", "target": "基于干扰多图的异质频谱共享算法", "type": "包含"},
+        {"source": "干扰感知多图", "target": "基于干扰感知多图的异质频谱共享算法", "type": "包含"},
+        {"source": "量化车辆端到端延时", "target": "基于干扰感知多图的异质频谱共享算法", "type": "应用"},
+        {"source": "有效容量", "target": "多智能体深度强化学习算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "异质频谱共享模型",
+            "en": "Heterogeneous spectrum sharing model"
+        },
+        {
+            "title": "网络演算理论",
+            "en": "Network calculus theory"
+        },
+        {
+            "title": "接收信干噪比",
+            "en": "Signal-to-Interference-plus-Noise Ratio (SINR)"
+        },
+        {
+            "title": "干扰多图",
+            "en": "Interference graph"
+        },
+        {
+            "title": "多图着色算法",
+            "en": "Graph coloring algorithm"
+        },
+        {
+            "title": "最大化系统和速率问题",
+            "en": "Maximization of system throughput problem"
+        },
+        {
+            "title": "最大化-最小传输速率问题",
+            "en": "Maximization of minimum transmission rate problem"
+        },
+        {
+            "title": "干扰感知多图",
+            "en": "Interference-aware graph"
+        },
+        {
+            "title": "车联网",
+            "en": "Vehicular ad hoc network (VANET)"
+        }
+    ],
+    "relations": [
+        {
+            "source": "异质频谱共享模型",
+            "target": "网络演算理论",
+            "type": "包含"
+        },
+        {
+            "source": "异质频谱共享模型",
+            "target": "接收信干噪比",
+            "type": "包含"
+        },
+        {
+            "source": "异质频谱共享模型",
+            "target": "干扰多图",
+            "type": "包含"
+        },
+        {
+            "source": "干扰多图",
+            "target": "多图着色算法",
+            "type": "包含"
+        },
+        {
+            "source": "最大化系统和速率问题",
+            "target": "最大化-最小传输速率问题",
+            "type": "转化为"
+        },
+        {
+            "source": "最大化-最小传输速率问题",
+            "target": "干扰感知多图",
+            "type": "包含"
+        },
+        {
+            "source": "车联网",
+            "target": "异质频谱共享模型",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "毫米波频谱资源", "en": "Millimeter-wave spectrum resources"},
+        {"title": "V2V链路", "en": "V2V link"},
+        {"title": "延时约束", "en": "Delay constraint"},
+        {"title": "异质频谱共享", "en": "Heterogeneous spectrum sharing"},
+        {"title": "干扰多图", "en": "Interference multi-graph"},
+        {"title": "节点着色问题", "en": "Node coloring problem"}
+    ],
+    "relations": [
+        {"source": "毫米波频谱资源", "target": "V2V链路", "type": "使用"},
+        {"source": "V2V链路", "target": "延时约束", "type": "具有"},
+        {"source": "V2V链路", "target": "异质频谱共享", "type": "应用于"},
+        {"source": "异质频谱共享", "target": "干扰多图", "type": "建模为"},
+        {"source": "干扰多图", "target": "节点着色问题", "type": "转化为"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SINR限制条件", "en": "SINR constraint"},
+        {"title": "Signal-to-Interference Limited Area (SLA)", "en": "Signal-to-Interference Limited Area (SLA)"},
+        {"title": "频谱资源", "en": "Spectrum resources"},
+        {"title": "干扰边集合", "en": "Interference edge set"},
+        {"title": "干扰子图", "en": "Interference subgraph"},
+        {"title": "干扰多图着色算法", "en": "Interference-aware multi-graph coloring algorithm"},
+        {"title": "MGC算法", "en": "MGC algorithm"},
+        {"title": "最大化-最小V2V传输速率问题", "en": "Max-min V2V transmission rate optimization problem"},
+        {"title": "干扰感知多图", "en": "Interference-aware multi-graph"}
+    ],
+    "relations": [
+        {"source": "SINR限制条件", "target": "Signal-to-Interference Limited Area (SLA)", "type": "defines"},
+        {"source": "Signal-to-Interference Limited Area (SLA)", "target": "频谱资源", "type": "contains"},
+        {"source": "频谱资源", "target": "干扰边集合", "type": "defines"},
+        {"source": "干扰边集合", "target": "干扰子图", "type": "defines"},
+        {"source": "干扰子图", "target": "干扰感知多图", "type": "defines"},
+        {"source": "干扰感知多图", "target": "干扰多图着色算法", "type": "uses"},
+        {"source": "干扰多图着色算法", "target": "MGC算法", "type": "variant of"},
+        {"source": "最大化-最小V2V传输速率问题", "target": "干扰感知多图", "type": "uses"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "干扰感知多图",
+            "en": "Interference-aware Multi-Graph"
+        },
+        {
+            "title": "加权干扰图",
+            "en": "Weighted Interference Graph"
+        },
+        {
+            "title": "共信道干扰",
+            "en": "Co-Channel Interference"
+        },
+        {
+            "title": "蜂窝干扰子图",
+            "en": "Cellular Interference Subgraph"
+        },
+        {
+            "title": "毫米波子图",
+            "en": "Millimeter Wave Subgraph"
+        },
+        {
+            "title": "干扰感知多图着色算法",
+            "en": "Interference-aware Multi-Graph Coloring Algorithm"
+        },
+        {
+            "title": "异质频谱共享",
+            "en": "Heterogeneous Spectrum Sharing"
+        },
+        {
+            "title": "频谱资源分配",
+            "en": "Spectrum Resource Allocation"
+        },
+        {
+            "title": "通信质量",
+            "en": "Communication Quality"
+        },
+        {
+            "title": "V2V链路",
+            "en": "V2V Link"
+        },
+        {
+            "title": "信道环境",
+            "en": "Channel Environment"
+        },
+        {
+            "title": "路损模型",
+            "en": "Path Loss Model"
+        },
+        {
+            "title": "小尺度衰落",
+            "en": "Small-scale Fading"
+        }
+    ],
+    "relations": [
+        {
+            "source": "加权干扰图",
+            "target": "干扰感知多图",
+            "type": "包含"
+        },
+        {
+            "source": "共信道干扰",
+            "target": "加权干扰图",
+            "type": "导致"
+        },
+        {
+            "source": "蜂窝干扰子图",
+            "target": "干扰感知多图",
+            "type": "包含"
+        },
+        {
+            "source": "毫米波子图",
+            "target": "干扰感知多图",
+            "type": "包含"
+        },
+        {
+            "source": "干扰感知多图",
+            "target": "干扰感知多图着色算法",
+            "type": "基于"
+        },
+        {
+            "source": "干扰感知多图着色算法",
+            "target": "异质频谱共享",
+            "type": "解决"
+        },
+        {
+            "source": "频谱资源分配",
+            "target": "干扰感知多图着色算法",
+            "type": "应用"
+        },
+        {
+            "source": "通信质量",
+            "target": "干扰感知多图着色算法",
+            "type": "考虑"
+        },
+        {
+            "source": "V2V链路",
+            "target": "干扰感知多图着色算法",
+            "type": "涉及"
+        },
+        {
+            "source": "信道环境",
+            "target": "路损模型",
+            "type": "影响"
+        },
+        {
+            "source": "小尺度衰落",
+            "target": "信道环境",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "车辆间距", "en": "Vehicle Spacing"},
+        {"title": "时隙", "en": "Time Slot"},
+        {"title": "数据包到达率", "en": "Packet Arrival Rate"},
+        {"title": "数据包大小", "en": "Packet Size"},
+        {"title": "时延溢出概率门限", "en": "Delay Overflow Probability Threshold"},
+        {"title": "最大容忍延时", "en": "Maximum Tolerable Delay"},
+        {"title": "蜂窝用户信干噪比门限", "en": "Cellular User Signal-to-Interference-plus-Noise Ratio Threshold"},
+        {"title": "V2V用户信干噪比门限", "en": "Vehicle-to-Vehicle User Signal-to-Interference-plus-Noise Ratio Threshold"},
+        {"title": "小尺度衰落", "en": "Small-scale Fading"},
+        {"title": "瑞利衰落", "en": "Rayleigh Fading"},
+        {"title": "阴影衰落", "en": "Shadow Fading"},
+        {"title": "仿真结果分析", "en": "Simulation Results Analysis"}
+    ],
+    "relations": [
+        {"source": "车辆间距", "target": "时隙", "type": "关联"},
+        {"source": "时隙", "target": "完全车辆速度", "type": "关联"},
+        {"source": "数据包到达率", "target": "时隙", "type": "关联"},
+        {"source": "数据包大小", "target": "兆比特", "type": "关联"},
+        {"source": "时延溢出概率门限", "target": "", "type": "限制"},
+        {"source": "最大容忍延时", "target": "", "type": "限制"},
+        {"source": "蜂窝用户信干噪比门限", "target": "", "type": "限制"},
+        {"source": "V2V用户信干噪比门限", "target": "", "type": "限制"},
+        {"source": "小尺度衰落", "target": "瑞利衰落", "type": "包含"},
+        {"source": "小尺度衰落", "target": "阴影衰落", "type": "包含"},
+        {"source": "仿真结果分析", "target": "MGC算法", "type": "对比"},
+        {"source": "仿真结果分析", "target": "IMGC算法", "type": "对比"},
+        {"source": "仿真结果分析", "target": "异质频谱共享算法", "type": "对比"},
+        {"source": "仿真结果分析", "target": "全毫米波通信", "type": "对比"},
+        {"source": "仿真结果分析", "target": "全蜂窝频谱通信", "type": "对比"},
+        {"source": "仿真结果分析", "target": "V2V链路最小SINR门限", "type": "使用"},
+        {"source": "V2V用户的信干噪比曲线和通信链路中断概率曲线", "target": "IMGC算法", "type": "对比"},
+        {"source": "V2V用户的信干噪比曲线和通信链路中断概率曲线", "target": "MGC算法", "type": "对比"},
+        {"source": "V2V用户的数据包延时概率密度分布直方图", "target": "IMGC算法", "type": "对比"},
+        {"source": "V2V用户的数据包延时概率密度分布直方图", "target": "MGC算法", "type": "对比"},
+        {"source": "V2V用户的数据包延时概率密度分布直方图", "target": "异质频谱共享算法", "type": "对比"},
+        {"source": "V2V用户的数据包延时概率密度分布直方图", "target": "全毫米波通信", "type": "对比"},
+        {"source": "V2V用户的数据包延时概率密度分布直方图", "target": "全蜂窝频谱通信", "type": "对比"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "蜂窝用户的信噪比曲线", "en": "SINR curve of cellular users"},
+        {"title": "算法复杂度分析", "en": "Algorithm complexity analysis"},
+        {"title": "异质频谱共享问题", "en": "Heterogeneous spectrum sharing problem"},
+        {"title": "基于干扰多图的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on interference graph"},
+        {"title": "基于干扰感知多图的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on interference-aware graph"},
+        {"title": "多业务QoS保障的异质频谱共享技术", "en": "Heterogeneous spectrum sharing technology for multi-service QoS guarantee"},
+        {"title": "基于干扰感知多智能体深度强化学习的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on interference-aware multi-agent deep reinforcement learning"}
+    ],
+    "relations": [
+        {"source": "蜂窝用户的信噪比曲线", "target": "算法复杂度分析", "type": "包含"},
+        {"source": "算法复杂度分析", "target": "基于干扰多图的异质频谱共享算法", "type": "应用于"},
+        {"source": "算法复杂度分析", "target": "基于干扰感知多图的异质频谱共享算法", "type": "应用于"},
+        {"source": "异质频谱共享问题", "target": "基于干扰多图的异质频谱共享算法", "type": "解决"},
+        {"source": "异质频谱共享问题", "target": "基于干扰感知多图的异质频谱共享算法", "type": "解决"},
+        {"source": "多业务QoS保障的异质频谱共享技术", "target": "基于干扰感知多智能体深度强化学习的异质频谱共享算法", "type": "提出"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "多业务并存单小区城市场景",
+            "en": "Multi-service coexisting single-cell urban scenario"
+        },
+        {
+            "title": "异质频谱共享模型",
+            "en": "Heterogeneous spectrum sharing model"
+        },
+        {
+            "title": "干扰感知多智能体深度强化学习",
+            "en": "Interference-aware multi-agent deep reinforcement learning"
+        },
+        {
+            "title": "有效容量模型",
+            "en": "Effective capacity model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "多业务并存单小区城市场景",
+            "target": "异质频谱共享模型",
+            "type": "包含"
+        },
+        {
+            "source": "异质频谱共享模型",
+            "target": "干扰感知多智能体深度强化学习",
+            "type": "使用"
+        },
+        {
+            "source": "异质频谱共享模型",
+            "target": "有效容量模型",
+            "type": "使用"
+        },
+        {
+            "source": "干扰感知多智能体深度强化学习",
+            "target": "有效容量模型",
+            "type": "使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "V2V链路的延时QoS约束参数",
+            "en": "Delay QoS constraint parameters of V2V link"
+        },
+        {
+            "title": "V2V链路的数据溢出/丢失概率约束",
+            "en": "Data overflow/loss probability constraint of V2V link"
+        },
+        {
+            "title": "车联网V2V链路的流量模型",
+            "en": "Traffic model of V2V link in vehicular ad hoc network"
+        },
+        {
+            "title": "V2V链路的传输速率/节点服务速率",
+            "en": "Transmission rate/node service rate of V2V link"
+        },
+        {
+            "title": "车辆用户数据在FIFO缓存中的存储",
+            "en": "Storage of vehicle user data in FIFO buffer"
+        },
+        {
+            "title": "V2V链路的数据传输延迟",
+            "en": "Data transmission delay of V2V link"
+        },
+        {
+            "title": "有效容量的相关定义",
+            "en": "Definition of effective capacity"
+        },
+        {
+            "title": "多业务的异质频谱共享问题",
+            "en": "Heterogeneous spectrum sharing problem with multiple services"
+        },
+        {
+            "title": "马尔可夫决策问题",
+            "en": "Markov decision process problem"
+        },
+        {
+            "title": "干扰感知多智能体深度强化学习算法",
+            "en": "Interference-aware multi-agent deep reinforcement learning algorithm"
+        }
+    ],
+    "relations": [
+        {
+            "source": "V2V链路的延时QoS约束参数",
+            "target": "V2V链路的数据溢出/丢失概率约束",
+            "type": "关联"
+        },
+        {
+            "source": "车联网V2V链路的流量模型",
+            "target": "V2V链路的传输速率/节点服务速率",
+            "type": "关联"
+        },
+        {
+            "source": "车辆用户数据在FIFO缓存中的存储",
+            "target": "V2V链路的数据传输延迟",
+            "type": "关联"
+        },
+        {
+            "source": "V2V链路的数据传输延迟",
+            "target": "有效容量的相关定义",
+            "type": "关联"
+        },
+        {
+            "source": "多业务的异质频谱共享问题",
+            "target": "马尔可夫决策问题",
+            "type": "关联"
+        },
+        {
+            "source": "马尔可夫决策问题",
+            "target": "干扰感知多智能体深度强化学习算法",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "QoS保障参数求解",
+            "en": "QoS guarantee parameter solving"
+        },
+        {
+            "title": "异质频谱分配子问题",
+            "en": "Heterogeneous spectrum allocation sub-problem"
+        },
+        {
+            "title": "马尔可夫决策过程",
+            "en": "Markov decision process"
+        },
+        {
+            "title": "干扰感知多智能体Q学习模型",
+            "en": "Interference-aware multi-agent Q-learning model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "QoS保障参数求解",
+            "target": "异质频谱分配子问题",
+            "type": "包含"
+        },
+        {
+            "source": "异质频谱分配子问题",
+            "target": "马尔可夫决策过程",
+            "type": "包含"
+        },
+        {
+            "source": "马尔可夫决策过程",
+            "target": "干扰感知多智能体Q学习模型",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "动作空间力", "en": "Action Space Power"},
+        {"title": "转移概率矩阵", "en": "Transition Probability Matrix"},
+        {"title": "奖励口", "en": "Reward Function"},
+        {"title": "策略", "en": "Policy"},
+        {"title": "基于干扰感知多智能体深度Q学习的异质频谱分配算法", "en": "Heterogeneous Spectrum Allocation Algorithm Based on Interference-Aware Multi-Agent Deep Q-Learning"}
+    ],
+    "relations": [
+        {"source": "动作空间力", "target": "转移概率矩阵", "type": "描述"},
+        {"source": "转移概率矩阵", "target": "策略", "type": "描述"},
+        {"source": "奖励口", "target": "策略", "type": "描述"},
+        {"source": "策略", "target": "基于干扰感知多智能体深度Q学习的异质频谱分配算法", "type": "描述"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "车联网场景",
+            "en": "Vehicular ad hoc network (VANET) scenario"
+        },
+        {
+            "title": "QoS",
+            "en": "Quality of Service"
+        },
+        {
+            "title": "碰撞避免信息传输业务",
+            "en": "Collision Avoidance Information Transmission Service (CAITS)"
+        },
+        {
+            "title": "端到端延时",
+            "en": "End-to-end delay"
+        },
+        {
+            "title": "可靠性",
+            "en": "Reliability"
+        },
+        {
+            "title": "数据传输速率",
+            "en": "Data transmission rate"
+        },
+        {
+            "title": "数据溢出率门限",
+            "en": "Data overflow rate threshold"
+        },
+        {
+            "title": "数据包大小",
+            "en": "Packet size"
+        },
+        {
+            "title": "数据包到达率",
+            "en": "Packet arrival rate"
+        },
+        {
+            "title": "自动驾驶信息传输业务",
+            "en": "Automatic Driving Information Transmission Service (ADITS)"
+        },
+        {
+            "title": "异质频谱共享算法",
+            "en": "Heterogeneous spectrum sharing algorithm"
+        },
+        {
+            "title": "干扰多图",
+            "en": "Interference graph"
+        },
+        {
+            "title": "联盟博弈论",
+            "en": "Coalitional game theory"
+        },
+        {
+            "title": "数据包延时",
+            "en": "Packet delay"
+        },
+        {
+            "title": "数据包延时溢出概率",
+            "en": "Packet delay overflow probability"
+        },
+        {
+            "title": "有效容量模型",
+            "en": "Effective capacity model"
+        },
+        {
+            "title": "强化学习",
+            "en": "Reinforcement learning"
+        },
+        {
+            "title": "SINR",
+            "en": "Signal-to-Interference-plus-Noise Ratio"
+        }
+    ],
+    "relations": [
+        {
+            "source": "车联网场景",
+            "target": "QoS",
+            "type": "包含"
+        },
+        {
+            "source": "QoS",
+            "target": "碰撞避免信息传输业务",
+            "type": "应用于"
+        },
+        {
+            "source": "碰撞避免信息传输业务",
+            "target": "端到端延时",
+            "type": "包含"
+        },
+        {
+            "source": "碰撞避免信息传输业务",
+            "target": "可靠性",
+            "type": "包含"
+        },
+        {
+            "source": "碰撞避免信息传输业务",
+            "target": "数据传输速率",
+            "type": "包含"
+        },
+        {
+            "source": "碰撞避免信息传输业务",
+            "target": "数据溢出率门限",
+            "type": "包含"
+        },
+        {
+            "source": "碰撞避免信息传输业务",
+            "target": "数据包大小",
+            "type": "包含"
+        },
+        {
+            "source": "碰撞避免信息传输业务",
+            "target": "数据包到达率",
+            "type": "包含"
+        },
+        {
+            "source": "QoS",
+            "target": "自动驾驶信息传输业务",
+            "type": "应用于"
+        },
+        {
+            "source": "自动驾驶信息传输业务",
+            "target": "端到端延时",
+            "type": "包含"
+        },
+        {
+            "source": "自动驾驶信息传输业务",
+            "target": "数据传输速率",
+            "type": "包含"
+        },
+        {
+            "source": "自动驾驶信息传输业务",
+            "target": "数据溢出率门限",
+            "type": "包含"
+        },
+        {
+            "source": "自动驾驶信息传输业务",
+            "target": "数据包大小",
+            "type": "包含"
+        },
+        {
+            "source": "自动驾驶信息传输业务",
+            "target": "数据包到达率",
+            "type": "包含"
+        },
+        {
+            "source": "异质频谱共享算法",
+            "target": "干扰多图",
+            "type": "应用于"
+        },
+        {
+            "source": "干扰多图",
+            "target": "异质频谱共享算法",
+            "type": "应用"
+        },
+        {
+            "source": "异质频谱共享算法",
+            "target": "有效容量模型",
+            "type": "应用于"
+        },
+        {
+            "source": "有效容量模型",
+            "target": "异质频谱共享算法",
+            "type": "应用"
+        },
+        {
+            "source": "有效容量模型",
+            "target": "强化学习",
+            "type": "应用于"
+        },
+        {
+            "source": "强化学习",
+            "target": "有效容量模型",
+            "type": "应用"
+        },
+        {
+            "source": "SINR",
+            "target": "蜂窝用户",
+            "type": "应用于"
+        },
+        {
+            "source": "蜂窝用户",
+            "target": "SINR",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异质频谱共享问题", "en": "Heterogeneous spectrum sharing problem"},
+        {"title": "网络演算理论", "en": "Network calculus theory"},
+        {"title": "SINR约束条件", "en": "SINR constraint condition"},
+        {"title": "V2V用户之间的异质频谱干扰多图", "en": "Heterogeneous spectrum interference graph between V2V users"},
+        {"title": "干扰感知多图", "en": "Interference-aware graph"},
+        {"title": "最大化-最小链路速率问题", "en": "Max-min link rate problem"},
+        {"title": "多智能体深度强化学习的异质频谱共享算法", "en": "Heterogeneous spectrum sharing algorithm based on multi-agent deep reinforcement learning"},
+        {"title": "有效容量", "en": "Effective capacity"},
+        {"title": "分布式的异质频谱共享算法", "en": "Distributed heterogeneous spectrum sharing algorithm"},
+        {"title": "TVWS频段", "en": "TV white space frequency band"},
+        {"title": "V2X通信场景", "en": "V2X communication scenario"},
+        {"title": "累计干扰", "en": "Cumulative interference"}
+    ],
+    "relations": [
+        {"source": "异质频谱共享问题", "target": "网络演算理论", "type": "包含"},
+        {"source": "网络演算理论", "target": "SINR约束条件", "type": "相关"},
+        {"source": "异质频谱共享问题", "target": "V2V用户之间的异质频谱干扰多图", "type": "包含"},
+        {"source": "V2V用户之间的异质频谱干扰多图", "target": "干扰感知多图", "type": "相关"},
+        {"source": "异质频谱共享问题", "target": "最大化-最小链路速率问题", "type": "包含"},
+        {"source": "最大化-最小链路速率问题", "target": "干扰感知多图", "type": "相关"},
+        {"source": "多智能体深度强化学习的异质频谱共享算法", "target": "干扰感知多图", "type": "相关"},
+        {"source": "异质频谱共享问题", "target": "有效容量", "type": "相关"},
+        {"source": "异质频谱共享问题", "target": "分布式的异质频谱共享算法", "type": "包含"},
+        {"source": "异质频谱共享问题", "target": "TVWS频段", "type": "相关"},
+        {"source": "异质频谱共享问题", "target": "V2X通信场景", "type": "包含"},
+        {"source": "V2X通信场景", "target": "累计干扰", "type": "相关"}
+    ]
+}

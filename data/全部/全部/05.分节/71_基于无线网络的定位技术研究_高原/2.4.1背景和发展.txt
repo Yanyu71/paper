@@ -1,0 +1,8 @@
+2.4.1背景和发展
+如前文所述，一方面由于基于位置的服务提出的定位需求，另一方面相关法 律法规也要求网络运营商在某些情况下具有确定用户位置范围的能力，3GPP决 定其标准应该支持位置服务特性。从2009年的Release 9起，3Gpp将基于LTE 的无线定位引入了 LCS。
+LCS能够用标准的形式报告用户终端的位置，这些信息可以为用户、移动设 备、网络运营商、服务提供商、增值服务提供商等所用，用来支持基于位置的服 务，合法监视和紧急呼叫等功能，提供的位置服务可以被收费。LCS的设计支持
+12
+GSM ( Global System for Mobile Communication ), UMTS ( Universal Mobile Telecommunications System) / 3G(3rd Generation)或者 LTE / EPS(Evolved Packet System)网络，即支持 E-UTRAN, GERAN (GSM EDGE Radio Access Network ) 和 UTRAN(UMTSTerrestrialRadioAccessNetwork)等多种接入网，EPC (Evolved Packet Core), CS (Circuit Switch)和 PS (Packet Switch)等多种核心网，此外 也支持 I-WLAN (Interworking WLAN)网络(一种 Wi-Fi 和 3GPP 网络的结合)。
+目前LCS还在不断修订和更新中，这里根据3GPPRelease 14标准对其进行 简要介绍。
+242系统架构，接口，协议和流程
+本节主要描述了 3GPP对LCS的标准化情况。3GPP协议中对LCS的描述 分为了第一阶段(stage 1),第二阶段(stage 2)和第三阶段(stage 3),第一阶 段是提供总体服务的描述，主要从订阅者和用户的角度，但不涉及人机接口的细 节；第二阶段描述包含LCS系统功能模型，系统架构，状态描述，信息流，位置 估计机制和信令交互等；第三阶段是对第二阶段的补充。现对其系统架构、接口、 协议和流程进行简要介绍。

@@ -1,0 +1,22 @@
+4.2.4任务划分及模块划分
+PUCCH的任务处理逻辑上分为三个阶段，即符号处理阶段、时隙处理阶段和子帧 处理阶段。
+1）	符号处理：在PUCCH的任务符号级处理过程中主要有ZC序列去相关，即对接 收到的PUCCH信道子载波数据符号与本地基序列做相关，分别得到解调参考信号和数 据。在FPGA的中断到来时，会激活该符号处理过程。符号3中断到来，开始符号0〜 符号3的任务（命名为Job_PUCCH_Symb3Int）处理，在Job_PUCCH_Symb3Int处理释 放完毕，符号6中断到来后，开始执行符号4〜符号的任务（Job_PUCCH_Symb6Int） 处理；同样的Job_PUCCH_Symb3Int处理释放完毕，符号10中断到来后，开始符号7〜 符号 10 的 Job_PUCCH_SymblOInt 处理；Job_PUCCH_SymblOInt 处理释放完毕，符号 13中断到来后，开始符号11〜符号13的Job_PUCCH_Symb 13Int处理。
+2）	时隙处理：符号6的中断触发Job_PUCCH_Symb6Int处理，在处理完符号级流 程后，此时时隙0的符号级处理己完成，可以进行时隙0的信道估计和数据估计。而符 号13的中断触发Job_PUCCH_Symbl3Int,在处理完时隙1的符号级流程后，进行时隙 1的信道估计和数据估计。
+3）	子帧处理：符号13触发Job_PUCCH_Symbl3Int,在处理完该子帧所有符号的 处理和时隙的信道估计和数据估计后，进行信道均衡、格式1/la/lb的UCI信息的检测 或格式2/2a/2b的UCI信息的检测。然后将解码后的UCI信息反馈给高层，让高层做下 一歩处理。4个任务的逻辑结构和所包含的功能如图4-3和表4-6所示：
+图4-3 PUCCH 4个任务的逻辑结构
+46
+表4-6 PUCCH 4个任务所包含的功能
+任务	包含功能
+Job_PUCCH_Symb3Int	计算PUCCH资源位置
+计算Ncs, Noc和u
+ZC序列去相关
+Job_PUCCH_Symb6Int	ZC序列去相关
+信道估计、均衡、DTX判决
+Job_PUCCH_SymblOInt	计算PUCCH资源位置
+计算Ncs, Noc和u
+ZC序列去相关
+Job_PUCCH_Symbl3Int	ZC序列去相关
+信道估计、均衡、DTX判决
+解调、解扰
+对格式2/2a/2b进行Reed-muller译码
+对格式2/2a/2b进行CQI、PML RI的提取

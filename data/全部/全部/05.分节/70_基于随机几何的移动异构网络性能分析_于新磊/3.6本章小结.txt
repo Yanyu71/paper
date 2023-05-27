@@ -1,0 +1,5 @@
+3.6本章小结
+本章研究了采用JT, DPB和DPS/DPB等CoMP方案的移动异构网络下行链路 的Meta分布，并给出了 JT和DPB结合的一般化方案JT-DPB, JT和DPB为其特例。 对于每种CoMP方案，考虑两种类型的典型用户-----般用户和最坏情况用户。对于
+采用JT-DPB的两类典型用户，分别推导得出条件成功概率的匕阶矩。对于DPS/DPB 方案，推导了一般用户的1阶矩(标准成功概率)以及最坏情况用户的1阶矩和2阶 矩。此外，基于Gil-Pelaez方法获得了 JT-DPB方案下最坏情况用户Meta分布的精 确值，并计算了几乎所有方案和用户类型的Meta分布的Beta近似。结果表明Beta 近似方法为Meta分布提供了很好的近似。对于JT-DPB方案，推导了两类典型用户 的平均本地时延。分析表明，对于非相干JT的一般用户和最坏情况用户，平均本地 时延相位转移的临界值为(1/5-1)小 而对于DPB则为1/3-1。通过对JT, DPB和 DPS/DPB的Meta分布的比较和分析，提供了有关不同CoMP方案链路可靠性的更 精细化的信息。分析显示：1) CoMP可以显着改善系统性能，尤其是增强小区边缘 覆盖；2) JT的性能增益与期望信号的合并方式密切相关；3) CoMP的性能增益随 着协作集规模的增加而降低。
+73
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved, http://www.cnki.net

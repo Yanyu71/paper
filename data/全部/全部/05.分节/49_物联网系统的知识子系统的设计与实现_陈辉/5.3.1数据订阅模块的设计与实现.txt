@@ -1,0 +1,24 @@
+5.3.1数据订阅模块的设计与实现
+数据是经过发布订阅系统进入推理功能模块中的，需要向发布系统订阅需要接收的 事件的主题，然后可以从发布订阅系统接收相关主题的事件，本模块涉及相关事件的订 阅。在本课题中，推理功能模块是消息的消费者。物联网平台数据接入平台是消息的生 产者。结合面向对象的编程思想，数据订阅模块相关类图如图5-8所示，此部分主要涉 及的类有：PubSub 类、Configuration 类、TopicEntry 类。
+表5-13对上述的这些类和对应的实现功能作了简要介绍：
+表5-13订阅模块主要涉及类
+类/接口	功能描述
+TopicEntry	发布订阅系统主题对象实体。
+Configuration	动态信息配置类。可以在配置文件中对发布订阅系统相关
+1P、端口等信息进行动态配置。
+PubSub	实现了与发布订阅系统消息空间节点的交互。
+主要方法：
+获取所有的主题名称allTopicNamesQ; 获取所有的主题树目录allTopicContents();
+向主题树中新增主题叩loadTopic(String, String); 订阅主题 subscribe(String);
+取消主题 unsubscribe(String);
+得到消息主题的schema文件getSchema(String)
+表 5-14 PubSub 类 getSchema 方法
+方法	protected void getSchema(String topic)；
+描述	根据订阅主题名得到相应的schema文件。
+参数	@Param topic 主题名。
+返冋	File文件对象。
+表 5-15 PubSub 类 subscribe 方法
+方法	protected TopicEnty subscribe (String topic);
+描述	根据主题名获取对应的主题。
+参数	@Param topic主题名字。
+返冋	TopicEntry返冋的主题对象。

@@ -1,0 +1,2 @@
+2.1统计学习的基本理论
+统计学习理论(Statistical learning theory, SLT)客服了在经典统计学中要求 样例数量接近无限大的极限条件的问题，主要用于有限样本研究的机器学习方 法。统计理论中结构风险最小化(Structural Risk Minimization, SRM)原则和VC 维理论是本文基础算法SVM的理论基础。

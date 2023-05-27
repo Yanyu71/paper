@@ -1,0 +1,10 @@
+2.2.2PUCCH发送格式
+UE在一个子帧中传输的控制信息量取决于可用的SC-FDMA符号数量，根据不同 的PUCCH发送格式，PUCCH的一次传输可能发送包含调度请求SR、PDSCH中下行 数据包的HARQACK/NACK、信道质量指示CQI、与MIMO反馈相关的RI和PMI的 一种或多种控制信息。截至Release 10, PUCCH共支持8钟不同的格式第7钟与第8 种本文暂不讨论，前六种格式所承载的控制信息如表2-3所示
+表2-3 PUCCH格式及其控制信息闵
+PUCCH格式	上行控制信息（UCI）
+格式1	调度请求SR
+格式la	1 比特 HARQACK/NACK,有/无 SR
+格式lb	2 比特 HARQ ACK/NACK,有/无 SR
+格式2	20比特信道状态信息CSI （可包含CQI、RI、PMI）
+格式2a	CSI 和 1 比特 HARQ ACK/NACK
+格式2b	CSI 和 2 比特 HARQ ACK/NACK

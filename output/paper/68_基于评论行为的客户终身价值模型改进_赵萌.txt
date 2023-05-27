@@ -1,0 +1,1591 @@
+﻿{
+    "knowledge_points": [
+        {"title": "Web2.0", "en": "Web2.0"},
+        {"title": "点评类网站", "en": "Review websites"},
+        {"title": "社交类网站", "en": "Social networking websites"},
+        {"title": "评论行为", "en": "Comment behavior"},
+        {"title": "客户终身价值", "en": "Customer Lifetime Value (CLV)"},
+        {"title": "关系营销", "en": "Relationship marketing"},
+        {"title": "直接价值", "en": "Direct value"},
+        {"title": "间接价值", "en": "Indirect value"},
+        {"title": "RFM模型", "en": "RFM model"},
+        {"title": "K-Means聚类分析", "en": "K-Means clustering analysis"},
+        {"title": "Logit回归分析", "en": "Logit regression analysis"},
+        {"title": "Pareto/NBD模型", "en": "Pareto/NBD model"},
+        {"title": "Gamma-Gamma模型", "en": "Gamma-Gamma model"}
+    ],
+    "relations": [
+        {"source": "Web2.0", "target": "点评类网站", "type": "包含"},
+        {"source": "Web2.0", "target": "社交类网站", "type": "包含"},
+        {"source": "点评类网站", "target": "评论行为", "type": "包含"},
+        {"source": "社交类网站", "target": "评论行为", "type": "包含"},
+        {"source": "评论行为", "target": "客户终身价值", "type": "影响"},
+        {"source": "关系营销", "target": "客户终身价值", "type": "相关"},
+        {"source": "客户终身价值", "target": "直接价值", "type": "包含"},
+        {"source": "客户终身价值", "target": "间接价值", "type": "包含"},
+        {"source": "客户终身价值", "target": "RFM模型", "type": "相关"},
+        {"source": "客户终身价值", "target": "K-Means聚类分析", "type": "相关"},
+        {"source": "客户终身价值", "target": "Logit回归分析", "type": "相关"},
+        {"source": "客户终身价值", "target": "Pareto/NBD模型", "type": "相关"},
+        {"source": "客户终身价值", "target": "Gamma-Gamma模型", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "客户终身价值研究", "en": "Customer Lifetime Value Research"},
+        {"title": "评论行为对客户终身价值的影响", "en": "The Impact of Commenting Behavior on Customer Lifetime Value"},
+        {"title": "RFM模型", "en": "RFM Model"},
+        {"title": "RFMP模型", "en": "RFMP Model"},
+        {"title": "K-means聚类分析", "en": "K-means Clustering Analysis"},
+        {"title": "Logit计量经济学模型", "en": "Logit Econometric Model"},
+        {"title": "Pareto/NBD模型", "en": "Pareto/NBD Model"},
+        {"title": "Gamma-Gamma模型", "en": "Gamma-Gamma Model"}
+    ],
+    "relations": [
+        {"source": "客户终身价值研究", "target": "RFM模型", "type": "包含"},
+        {"source": "客户终身价值研究", "target": "评论行为对客户终身价值的影响", "type": "相关"},
+        {"source": "客户终身价值研究", "target": "K-means聚类分析", "type": "包含"},
+        {"source": "客户终身价值研究", "target": "Logit计量经济学模型", "type": "包含"},
+        {"source": "客户终身价值研究", "target": "Pareto/NBD模型", "type": "包含"},
+        {"source": "客户终身价值研究", "target": "Gamma-Gamma模型", "type": "包含"},
+        {"source": "RFM模型", "target": "RFMP模型", "type": "扩展"},
+        {"source": "RFM模型", "target": "客户终身价值研究", "type": "子集"},
+        {"source": "评论行为对客户终身价值的影响", "target": "客户终身价值研究", "type": "子集"},
+        {"source": "K-means聚类分析", "target": "客户细分方法", "type": "相关"},
+        {"source": "Logit计量经济学模型", "target": "客户购买次数预测", "type": "包含"},
+        {"source": "Logit计量经济学模型", "target": "客户评论次数预测", "type": "包含"},
+        {"source": "Pareto/NBD模型", "target": "客户购买次数预测", "type": "扩展"},
+        {"source": "Pareto/NBD模型", "target": "客户评论次数预测", "type": "扩展"},
+        {"source": "Gamma-Gamma模型", "target": "客户购买金额预测", "type": "包含"},
+        {"source": "客户购买次数预测", "target": "个体层面的客户终身价值计算", "type": "子集"},
+        {"source": "客户评论次数预测", "target": "个体层面的客户终身价值计算", "type": "子集"},
+        {"source": "客户购买金额预测", "target": "个体层面的客户终身价值计算", "type": "子集"},
+        {"source": "个体层面的客户终身价值计算", "target": "客户终身价值研究", "type": "子集"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "研究背景问题的提出", "en": "Research background and problem statement"},
+        {"title": "国内外文献综述", "en": "Review of domestic and foreign literature"},
+        {"title": "基于RFM模型的客户终身价值研究", "en": "Research on customer lifetime value based on RFM model"},
+        {"title": "基于评论行为的客户购买次数预测", "en": "Prediction of customer purchase frequency based on comment behavior"},
+        {"title": "基于购买行为的客户评论次数预测", "en": "Prediction of customer comment frequency based on purchase behavior"},
+        {"title": "客户消费金额及终身价值改进", "en": "Improvement of customer consumption amount and lifetime value"},
+        {"title": "结论及展望", "en": "Conclusion and prospect"},
+        {"title": "研究工具", "en": "Research tools"},
+        {"title": "文献综述框架", "en": "Framework of literature review"},
+        {"title": "常用分析方法", "en": "Common analysis methods"},
+        {"title": "建模方法", "en": "Modeling methods"},
+        {"title": "Gamma-Gamma模型", "en": "Gamma-Gamma model"},
+        {"title": "客户终身价值", "en": "Customer lifetime value"},
+        {"title": "CLV定义", "en": "Definition of CLV"},
+        {"title": "CLV计算公式", "en": "Calculation formula of CLV"}
+    ],
+    "relations": [
+        {"source": "研究背景问题的提出", "target": "国内外文献综述", "type": "review"},
+        {"source": "国内外文献综述", "target": "基于RFM模型的客户终身价值研究", "type": "study"},
+        {"source": "国内外文献综述", "target": "基于评论行为的客户购买次数预测", "type": "study"},
+        {"source": "国内外文献综述", "target": "基于购买行为的客户评论次数预测", "type": "study"},
+        {"source": "基于RFM模型的客户终身价值研究", "target": "客户消费金额及终身价值改进", "type": "improvement"},
+        {"source": "客户消费金额及终身价值改进", "target": "结论及展望", "type": "conclusion"},
+        {"source": "研究工具", "target": "EXCEL", "type": "tool"},
+        {"source": "研究工具", "target": "STATA", "type": "tool"},
+        {"source": "研究工具", "target": "Matlab", "type": "tool"},
+        {"source": "EXCEL", "target": "数据处理", "type": "process"},
+        {"source": "STATA", "target": "影响因素和预测模型的分析与验证", "type": "analysis"},
+        {"source": "Matlab", "target": "模型中的参数进行估计", "type": "estimate"},
+        {"source": "Matlab", "target": "客户活跃度、交易次数、评论次数的计算", "type": "calculation"},
+        {"source": "文献综述框架", "target": "客户终身价值", "type": "review"},
+        {"source": "客户终身价值", "target": "CLV定义", "type": "definition"},
+        {"source": "客户终身价值", "target": "CLV计算公式", "type": "calculation"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "客户终身价值的三维模型",
+            "en": "Three-dimensional model of customer lifetime value"
+        },
+        {
+            "title": "客户终身价值的改进模型",
+            "en": "Improved models of customer lifetime value"
+        },
+        {
+            "title": "客户终身价值的计算公式",
+            "en": "Calculation formula of customer lifetime value"
+        },
+        {
+            "title": "客户终身价值的建模方法",
+            "en": "Modeling methods of customer lifetime value"
+        },
+        {
+            "title": "RFM模型",
+            "en": "RFM model"
+        },
+        {
+            "title": "概率模型",
+            "en": "Probability models"
+        },
+        {
+            "title": "计量经济学模型",
+            "en": "Econometric models"
+        },
+        {
+            "title": "持久性模型",
+            "en": "Persistence models"
+        },
+        {
+            "title": "计算机科学模型",
+            "en": "Computer science models"
+        },
+        {
+            "title": "扩散/增长模型",
+            "en": "Diffusion/growth models"
+        }
+    ],
+    "relations": [
+        {
+            "source": "客户终身价值的三维模型",
+            "target": "客户忠诚",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的三维模型",
+            "target": "客户当前价值",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的三维模型",
+            "target": "潜在价值",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的改进模型",
+            "target": "购买价值",
+            "type": "相关"
+        },
+        {
+            "source": "客户终身价值的改进模型",
+            "target": "口碑效应价值",
+            "type": "相关"
+        },
+        {
+            "source": "客户终身价值的计算公式",
+            "target": "直接收益",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的计算公式",
+            "target": "间接收益",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的建模方法",
+            "target": "RFM模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的建模方法",
+            "target": "概率模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的建模方法",
+            "target": "计量经济学模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的建模方法",
+            "target": "持久性模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的建模方法",
+            "target": "计算机科学模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值的建模方法",
+            "target": "扩散/增长模型",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "客户流失模型",
+            "en": "Customer Churn Model"
+        },
+        {
+            "title": "客户扩展模型",
+            "en": "Customer Expansion Model"
+        },
+        {
+            "title": "持久性模型",
+            "en": "Persistence Model"
+        },
+        {
+            "title": "计算机科学模型",
+            "en": "Computer Science Model"
+        },
+        {
+            "title": "扩散/增长模型",
+            "en": "Diffusion/Growth Model"
+        },
+        {
+            "title": "Gamma-Gamma模型",
+            "en": "Gamma-Gamma Model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "客户流失模型",
+            "target": "风险模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户流失模型",
+            "target": "加速失效时间模型",
+            "type": "细分"
+        },
+        {
+            "source": "客户流失模型",
+            "target": "比例风险模型",
+            "type": "细分"
+        },
+        {
+            "source": "客户扩展模型",
+            "target": "直接对利润进行建模",
+            "type": "细分"
+        },
+        {
+            "source": "客户扩展模型",
+            "target": "间接对交叉购买进行建模",
+            "type": "细分"
+        },
+        {
+            "source": "持久性模型",
+            "target": "计量经济学模型",
+            "type": "相似"
+        },
+        {
+            "source": "持久性模型",
+            "target": "多变量时间序列分析",
+            "type": "相似"
+        },
+        {
+            "source": "计算机科学模型",
+            "target": "客户流失行为",
+            "type": "适用于"
+        },
+        {
+            "source": "计算机科学模型",
+            "target": "广义相加模型",
+            "type": "细分"
+        },
+        {
+            "source": "计算机科学模型",
+            "target": "多元自适应回归样条",
+            "type": "细分"
+        },
+        {
+            "source": "计算机科学模型",
+            "target": "营销学领域的研究",
+            "type": "不适用于"
+        },
+        {
+            "source": "扩散/增长模型",
+            "target": "客户资产",
+            "type": "适用于"
+        },
+        {
+            "source": "Gamma-Gamma模型",
+            "target": "Normal-Normal模型",
+            "type": "基础"
+        },
+        {
+            "source": "Gamma-Gamma模型",
+            "target": "Pareto/NBD模型",
+            "type": "扩展"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Gamma-Gamma模型", "en": "Gamma-Gamma model"},
+        {"title": "Lognonnal-Lognonnal模型", "en": "Lognormal-Lognormal model"},
+        {"title": "客户终身价值", "en": "Customer Lifetime Value"},
+        {"title": "RFM模型", "en": "RFM model"},
+        {"title": "RFMP模型", "en": "RFMP model"},
+        {"title": "K-Means聚类分析", "en": "K-Means clustering analysis"},
+        {"title": "层次分析法", "en": "Analytic Hierarchy Process"},
+        {"title": "专家咨询方法", "en": "Expert consultation method"},
+        {"title": "神经网络", "en": "Neural network"},
+        {"title": "主成分分析法", "en": "Principal component analysis"},
+        {"title": "熵值法", "en": "Entropy method"}
+    ],
+    "relations": [
+        {"source": "Normal-Normal模型", "target": "Gamma-Gamma模型", "type": "替换为"},
+        {"source": "Normal-Normal模型", "target": "Lognonnal-Lognonnal模型", "type": "替换为"},
+        {"source": "Gamma-Gamma模型", "target": "模型预测效果", "type": "提高"},
+        {"source": "Gamma-Gamma模型", "target": "模型推导", "type": "易于"},
+        {"source": "Lognonnal-Lognonnal模型", "target": "个体客户的消费金额均值分布", "type": "无法得到闭式表达式"},
+        {"source": "Gamma-Gamma模型", "target": "个体客户的消费金额均值分布", "type": "存在闭式表达式"},
+        {"source": "客户终身价值建模", "target": "RFM模型", "type": "涉及到"},
+        {"source": "客户终身价值建模", "target": "Logit计量模型", "type": "涉及到"},
+        {"source": "客户终身价值建模", "target": "Pareto/NBD模型", "type": "涉及到"},
+        {"source": "客户终身价值建模", "target": "Gamma-Gamma模型", "type": "涉及到"},
+        {"source": "客户终身价值", "target": "购买价值", "type": "包括"},
+        {"source": "客户终身价值", "target": "评论价值", "type": "包括"},
+        {"source": "RFM模型", "target": "购买价值", "type": "度量"},
+        {"source": "RFMP模型", "target": "评论价值", "type": "度量"},
+        {"source": "K-Means聚类分析", "target": "用户聚类分析", "type": "使用"},
+        {"source": "RFMP模型", "target": "意见领袖识别", "type": "针对线上意见领袖识别的改进方法"},
+        {"source": "RFMP模型", "target": "评论影响力", "type": "研究网络社区单个用户的评论影响力"},
+        {"source": "RFMA模型", "target": "评论行为贡献", "type": "对用户评论行为贡献的评价主体为企业"},
+        {"source": "RFM模型", "target": "购买行为", "type": "针对用户的购买行为"},
+        {"source": "RFM模型", "target": "R", "type": "最近购买时间"},
+        {"source": "RFM模型", "target": "F", "type": "购买频率"},
+        {"source": "RFM模型", "target": "M", "type": "购买总金额"},
+        {"source": "RFMA模型", "target": "R'", "type": "最近评论时间"},
+        {"source": "RFMA模型", "target": "尸", "type": "评论频率"},
+        {"source": "RFMA模型", "target": "M'", "type": "购买总金额"},
+        {"source": "RFMA模型", "target": "评论正向占比", "type": "表示一段时间内用户发表的正向评论数占该用户发表评论数的百分比"},
+        {"source": "客户终身价值计算模型", "target": "购买价值权重", "type": "包括"},
+        {"source": "客户终身价值计算模型", "target": "评论价值权重", "type": "包括"},
+        {"source": "层次分析法", "target": "权重确定", "type": "主观方法"},
+        {"source": "专家咨询方法", "target": "权重确定", "type": "主观方法"},
+        {"source": "神经网络", "target": "权重确定", "type": "客观方法"},
+        {"source": "主成分分析法", "target": "权重确定", "type": "客观方法"},
+        {"source": "熵值法", "target": "权重确定", "type": "客观方法"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "终身价值模型中各指标的权重",
+            "en": "Weights of each index in the lifetime value model"
+        },
+        {
+            "title": "标准化处理",
+            "en": "Normalization"
+        },
+        {
+            "title": "比重矩阵",
+            "en": "Weight matrix"
+        },
+        {
+            "title": "信息熵值和信息效用值",
+            "en": "Information entropy value and information utility value"
+        },
+        {
+            "title": "指标权重",
+            "en": "Index weight"
+        },
+        {
+            "title": "数据来源",
+            "en": "Data source"
+        },
+        {
+            "title": "大众点评网",
+            "en": "Dianping.com"
+        },
+        {
+            "title": "大众点评网的服务",
+            "en": "Services of Dianping.com"
+        },
+        {
+            "title": "数据取样过程",
+            "en": "Data sampling process"
+        },
+        {
+            "title": "缺失值处理",
+            "en": "Missing value processing"
+        },
+        {
+            "title": "评论贡献值",
+            "en": "Comment contribution value"
+        },
+        {
+            "title": "用户注册时间",
+            "en": "User registration time"
+        },
+        {
+            "title": "用户团购数据",
+            "en": "User group buying data"
+        }
+    ],
+    "relations": [
+        {
+            "source": "终身价值模型中各指标的权重",
+            "target": "标准化处理",
+            "type": "包含"
+        },
+        {
+            "source": "标准化处理",
+            "target": "比重矩阵",
+            "type": "包含"
+        },
+        {
+            "source": "比重矩阵",
+            "target": "信息熵值和信息效用值",
+            "type": "包含"
+        },
+        {
+            "source": "信息熵值和信息效用值",
+            "target": "指标权重",
+            "type": "包含"
+        },
+        {
+            "source": "数据来源",
+            "target": "大众点评网",
+            "type": "包含"
+        },
+        {
+            "source": "大众点评网",
+            "target": "大众点评网的服务",
+            "type": "包含"
+        },
+        {
+            "source": "数据来源",
+            "target": "数据取样过程",
+            "type": "包含"
+        },
+        {
+            "source": "数据取样过程",
+            "target": "缺失值处理",
+            "type": "包含"
+        },
+        {
+            "source": "数据取样过程",
+            "target": "用户注册时间",
+            "type": "包含"
+        },
+        {
+            "source": "数据取样过程",
+            "target": "用户团购数据",
+            "type": "包含"
+        },
+        {
+            "source": "用户团购数据",
+            "target": "用户注册时间",
+            "type": "包含"
+        },
+        {
+            "source": "用户团购数据",
+            "target": "评论贡献值",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "大众点评网", "en": "Dianping"},
+        {"title": "RFM模型", "en": "RFM model"},
+        {"title": "RFMP模型", "en": "RFMP model"},
+        {"title": "购物", "en": "Shopping"},
+        {"title": "美食", "en": "Food"},
+        {"title": "结婚", "en": "Wedding"},
+        {"title": "丽人", "en": "Beauty"},
+        {"title": "正负性", "en": "Positive and negative sentiment"},
+        {"title": "贡献值", "en": "Contribution value"},
+        {"title": "年龄", "en": "Age"},
+        {"title": "性别", "en": "Gender"},
+        {"title": "最近一次购买时间", "en": "Recency"},
+        {"title": "购买次数", "en": "Frequency"},
+        {"title": "购买总金额", "en": "Monetary"},
+        {"title": "评论打分", "en": "Rating"},
+        {"title": "评论字数", "en": "Comment length"},
+        {"title": "评论类别", "en": "Comment category"}
+    ],
+    "relations": [
+        {"source": "大众点评网", "target": "购物", "type": "属于"},
+        {"source": "大众点评网", "target": "美食", "type": "属于"},
+        {"source": "大众点评网", "target": "结婚", "type": "属于"},
+        {"source": "大众点评网", "target": "丽人", "type": "属于"},
+        {"source": "购物", "target": "RFM模型", "type": "使用"},
+        {"source": "美食", "target": "RFM模型", "type": "使用"},
+        {"source": "结婚", "target": "RFM模型", "type": "使用"},
+        {"source": "丽人", "target": "RFM模型", "type": "使用"},
+        {"source": "RFM模型", "target": "最近一次购买时间", "type": "包含"},
+        {"source": "RFM模型", "target": "购买次数", "type": "包含"},
+        {"source": "RFM模型", "target": "购买总金额", "type": "包含"},
+        {"source": "RFMP模型", "target": "评论打分", "type": "包含"},
+        {"source": "RFMP模型", "target": "评论字数", "type": "包含"},
+        {"source": "RFMP模型", "target": "评论类别", "type": "包含"},
+        {"source": "RFMP模型", "target": "正负性", "type": "包含"},
+        {"source": "RFMP模型", "target": "贡献值", "type": "包含"},
+        {"source": "RFMP模型", "target": "购买R'", "type": "包含"},
+        {"source": "RFMP模型", "target": "购买F'", "type": "包含"},
+        {"source": "RFMP模型", "target": "购买M'", "type": "包含"},
+        {"source": "RFMP模型", "target": "评论R", "type": "包含"},
+        {"source": "RFMP模型", "target": "评论F", "type": "包含"},
+        {"source": "RFMP模型", "target": "评论M", "type": "包含"},
+        {"source": "RFMP模型", "target": "评论P", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "熠值法",
+            "en": "Yi value method"
+        },
+        {
+            "title": "标准化矩阵",
+            "en": "Normalized matrix"
+        },
+        {
+            "title": "信息端值",
+            "en": "Information end value"
+        },
+        {
+            "title": "指标权重",
+            "en": "Indicator weight"
+        },
+        {
+            "title": "客户终身价值计算公式",
+            "en": "Formula for calculating customer lifetime value"
+        },
+        {
+            "title": "RFM模型",
+            "en": "RFM model"
+        },
+        {
+            "title": "Max-Min指标标准化处理",
+            "en": "Max-Min index normalization"
+        }
+    ],
+    "relations": [
+        {
+            "source": "熠值法",
+            "target": "标准化矩阵",
+            "type": "包含"
+        },
+        {
+            "source": "熠值法",
+            "target": "信息端值",
+            "type": "包含"
+        },
+        {
+            "source": "熠值法",
+            "target": "指标权重",
+            "type": "包含"
+        },
+        {
+            "source": "指标权重",
+            "target": "客户终身价值计算公式",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值计算公式",
+            "target": "RFM模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值计算公式",
+            "target": "Max-Min指标标准化处理",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "客户终身价值",
+            "en": "Customer Lifetime Value"
+        },
+        {
+            "title": "购买行为",
+            "en": "Purchase Behavior"
+        },
+        {
+            "title": "评论行为",
+            "en": "Comment Behavior"
+        },
+        {
+            "title": "K-Means聚类分析法",
+            "en": "K-Means Clustering Analysis"
+        },
+        {
+            "title": "用户群细分",
+            "en": "User Segmentation"
+        },
+        {
+            "title": "高价值用户",
+            "en": "High-Value Customers"
+        },
+        {
+            "title": "低价值用户",
+            "en": "Low-Value Customers"
+        },
+        {
+            "title": "传统用户",
+            "en": "Traditional Users"
+        },
+        {
+            "title": "口碑用户",
+            "en": "Word-of-Mouth Users"
+        }
+    ],
+    "relations": [
+        {
+            "source": "客户终身价值",
+            "target": "购买行为",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值",
+            "target": "评论行为",
+            "type": "包含"
+        },
+        {
+            "source": "购买行为",
+            "target": "客户终身价值",
+            "type": "影响"
+        },
+        {
+            "source": "评论行为",
+            "target": "客户终身价值",
+            "type": "影响"
+        },
+        {
+            "source": "K-Means聚类分析法",
+            "target": "用户群细分",
+            "type": "同义词"
+        },
+        {
+            "source": "用户群细分",
+            "target": "K-Means聚类分析法",
+            "type": "同义词"
+        },
+        {
+            "source": "高价值用户",
+            "target": "客户终身价值",
+            "type": "属于"
+        },
+        {
+            "source": "低价值用户",
+            "target": "客户终身价值",
+            "type": "属于"
+        },
+        {
+            "source": "传统用户",
+            "target": "客户终身价值",
+            "type": "属于"
+        },
+        {
+            "source": "口碑用户",
+            "target": "客户终身价值",
+            "type": "属于"
+        }
+    ]
+}{"knowledge_points": [{"title": "客户终身价值计算方法", "en": "Calculation method of customer lifetime value"}, {"title": "RFM模型", "en": "RFM model"}, {"title": "Logit回归模型", "en": "Logit regression model"}, {"title": "Pareto/NBD模型", "en": "Pareto/NBD model"}],
+"relations": [{"source": "客户终身价值计算方法", "target": "RFM模型", "type": "包含"}, {"source": "RFM模型", "target": "Logit回归模型", "type": "包含"}, {"source": "Logit回归模型", "target": "Pareto/NBD模型", "type": "改进预测次数"}, {"source": "客户终身价值计算方法", "target": "口碑用户", "type": "划分用户群"}, {"source": "客户终身价值计算方法", "target": "低价值用户", "type": "划分用户群"}, {"source": "客户终身价值计算方法", "target": "传统用户", "type": "划分用户群"}, {"source": "客户终身价值计算方法", "target": "高价值用户", "type": "划分用户群"}, {"source": "Logit回归模型", "target": "客户购买流失", "type": "预测"}, {"source": "Pareto/NBD模型", "target": "购买次数预测", "type": "改进预测次数"}]}{
+    "knowledge_points": [
+        {"title": "客户流失预测模型", "en": "Customer Churn Prediction Model"},
+        {"title": "RFM模型", "en": "RFM Model"},
+        {"title": "Logit回归模型", "en": "Logit Regression Model"}
+    ],
+    "relations": [
+        {"source": "客户流失预测模型", "target": "性别", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "年龄", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "年收入", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "购买总金额", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "白天购买次数", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "客户信用得分", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "重复购买次数", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "晚上购买次数", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "工作时间段购买次数", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "购买总次数", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "深夜购买次数", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "最后购买时间", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "第一次购买时间", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "RFM模型", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "消费者评论行为", "type": "影响因素"},
+        {"source": "客户流失预测模型", "target": "Logit回归模型", "type": "分析模型"},
+        {"source": "消费者评论行为", "target": "购买流失行为", "type": "影响因素"},
+        {"source": "RFM模型", "target": "购买流失行为", "type": "影响因素"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "模型因变量",
+            "en": "Model Dependent Variable"
+        },
+        {
+            "title": "模型自变量",
+            "en": "Model Independent Variable"
+        },
+        {
+            "title": "累计消费金额",
+            "en": "Cumulative Consumption Amount"
+        },
+        {
+            "title": "购买最大金额",
+            "en": "Maximum Purchase Amount"
+        },
+        {
+            "title": "购买次数",
+            "en": "Purchase Frequency"
+        },
+        {
+            "title": "最后购买时间",
+            "en": "Last Purchase Time"
+        },
+        {
+            "title": "第一次购买时间",
+            "en": "First Purchase Time"
+        },
+        {
+            "title": "工作时间段购买次数",
+            "en": "Purchase Frequency during Work Hours"
+        },
+        {
+            "title": "凌晨购买次数",
+            "en": "Purchase Frequency during Midnight"
+        },
+        {
+            "title": "白天购买次数",
+            "en": "Purchase Frequency during Daytime"
+        },
+        {
+            "title": "晚上购买次数",
+            "en": "Purchase Frequency during Evening"
+        },
+        {
+            "title": "累积评论贡献值",
+            "en": "Cumulative Comment Contribution Value"
+        },
+        {
+            "title": "评论最高贡献值",
+            "en": "Maximum Comment Contribution Value"
+        },
+        {
+            "title": "评论次数",
+            "en": "Comment Frequency"
+        },
+        {
+            "title": "工作时间段评论次数",
+            "en": "Comment Frequency during Work Hours"
+        },
+        {
+            "title": "凌晨评论次数",
+            "en": "Comment Frequency during Midnight"
+        },
+        {
+            "title": "白天评论次数",
+            "en": "Comment Frequency during Daytime"
+        },
+        {
+            "title": "晚上评论次数",
+            "en": "Comment Frequency during Evening"
+        }
+    ],
+    "relations": [
+        {
+            "source": "购买流失",
+            "target": "累计消费金额",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "购买最大金额",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "购买次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "最后购买时间",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "第一次购买时间",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "工作时间段购买次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "凌晨购买次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "白天购买次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "晚上购买次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "累积评论贡献值",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "评论最高贡献值",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "评论次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "工作时间段评论次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "凌晨评论次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "白天评论次数",
+            "type": "自变量"
+        },
+        {
+            "source": "购买流失",
+            "target": "晚上评论次数",
+            "type": "自变量"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "实证模型中的控制变量为消费者的自身因素", "en": "Control variables in empirical models are consumers' self-factors"},
+        {"title": "模型自变量列表", "en": "List of independent variables in the model"},
+        {"title": "模型变量描述性统计", "en": "Descriptive statistics of model variables"},
+        {"title": "购买流失预测模型一未考虑评论行为模型构建", "en": "Purchase loss prediction model without considering comment behavior model construction"},
+        {"title": "购买流失预测模型综合考虑评论及购买行为模型构建", "en": "Purchase loss prediction model considering both comment and purchase behavior model construction"},
+        {"title": "模型检验", "en": "Model verification"}
+    ],
+    "relations": [
+        {"source": "实证模型中的控制变量为消费者的自身因素", "target": "模型自变量列表", "type": "包含"},
+        {"source": "模型自变量列表", "target": "实证模型中的控制变量为消费者的自身因素", "type": "属于"},
+        {"source": "模型变量描述性统计", "target": "模型自变量列表", "type": "包含"},
+        {"source": "购买流失预测模型一未考虑评论行为模型构建", "target": "模型自变量列表", "type": "包含"},
+        {"source": "购买流失预测模型综合考虑评论及购买行为模型构建", "target": "模型自变量列表", "type": "包含"},
+        {"source": "模型检验", "target": "购买流失预测模型一未考虑评论行为模型构建", "type": "先导"},
+        {"source": "模型检验", "target": "购买流失预测模型综合考虑评论及购买行为模型构建", "type": "先导"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "逐步回归", "en": "Stepwise Regression"},
+        {"title": "VIF", "en": "Variance Inflation Factor"},
+        {"title": "Logit回归模型", "en": "Logistic Regression Model"},
+        {"title": "购买流失预测模型", "en": "Purchase Churn Prediction Model"}
+    ],
+    "relations": [
+        {"source": "逐步回归", "target": "VIF", "type": "包含"},
+        {"source": "逐步回归", "target": "Logit回归模型", "type": "应用于"},
+        {"source": "Logit回归模型", "target": "购买流失预测模型", "type": "衍生出"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "流失预测评价矩阵", "en": "Churn prediction evaluation matrix"},
+        {"title": "预测命中率", "en": "Prediction accuracy rate"},
+        {"title": "十重交叉验证", "en": "Ten-fold cross-validation"},
+        {"title": "Pareto/NBD模型", "en": "Pareto/NBD model"},
+        {"title": "客户购买次数预测", "en": "Customer purchase frequency prediction"}
+    ],
+    "relations": [
+        {"source": "流失预测评价矩阵", "target": "预测命中率", "type": "评价标准"},
+        {"source": "预测命中率", "target": "模型一", "type": "对比分析"},
+        {"source": "预测命中率", "target": "模型三", "type": "对比分析"},
+        {"source": "十重交叉验证", "target": "模型一", "type": "模型验证"},
+        {"source": "十重交叉验证", "target": "模型三", "type": "模型验证"},
+        {"source": "Pareto/NBD模型", "target": "客户购买次数预测", "type": "预测模型"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Pareto/NBD模型", "en": "Pareto/NBD model"},
+        {"title": "客户重复购买行为", "en": "Customer repeat purchase behavior"},
+        {"title": "泊松分布", "en": "Poisson distribution"},
+        {"title": "伽玛分布", "en": "Gamma distribution"},
+        {"title": "指数分布", "en": "Exponential distribution"},
+        {"title": "最大似然方法", "en": "Maximum likelihood method"},
+        {"title": "个体用户重复购买次数期望值", "en": "Expected value of individual user's repeat purchase frequency"},
+        {"title": "活跃度", "en": "Activity level"},
+        {"title": "购买次数的条件期望值", "en": "Conditional expected value of purchase frequency"}
+    ],
+    "relations": [
+        {"source": "Pareto/NBD模型", "target": "客户重复购买行为", "type": "描述"},
+        {"source": "Pareto/NBD模型", "target": "泊松分布", "type": "描述"},
+        {"source": "Pareto/NBD模型", "target": "伽玛分布", "type": "描述"},
+        {"source": "Pareto/NBD模型", "target": "指数分布", "type": "描述"},
+        {"source": "Pareto/NBD模型", "target": "最大似然方法", "type": "描述"},
+        {"source": "Pareto/NBD模型", "target": "个体用户重复购买次数期望值", "type": "计算"},
+        {"source": "Pareto/NBD模型", "target": "活跃度", "type": "计算"},
+        {"source": "Pareto/NBD模型", "target": "购买次数的条件期望值", "type": "计算"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "数据提取", "en": "Data Extraction"},
+        {"title": "模型参数预测结果", "en": "Model Parameter Prediction Results"},
+        {"title": "模型预测结果", "en": "Model Prediction Results"}
+    ],
+    "relations": [
+        {"source": "数据提取", "target": "模型参数预测结果", "type": "包含"},
+        {"source": "数据提取", "target": "模型预测结果", "type": "包含"},
+        {"source": "模型参数预测结果", "target": "模型预测结果", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Pareto/NBD模型",
+            "en": "Pareto/NBD model"
+        },
+        {
+            "title": "协变量",
+            "en": "Covariate"
+        },
+        {
+            "title": "比例危险模型",
+            "en": "Proportional hazards model"
+        },
+        {
+            "title": "流失行为",
+            "en": "Churn behavior"
+        },
+        {
+            "title": "似然函数",
+            "en": "Likelihood function"
+        },
+        {
+            "title": "标准化处理",
+            "en": "Normalization"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Pareto/NBD模型",
+            "target": "协变量",
+            "type": "引入"
+        },
+        {
+            "source": "Pareto/NBD模型",
+            "target": "比例危险模型",
+            "type": "类比"
+        },
+        {
+            "source": "Pareto/NBD模型",
+            "target": "流失行为",
+            "type": "预测"
+        },
+        {
+            "source": "Pareto/NBD模型",
+            "target": "似然函数",
+            "type": "参数估计"
+        },
+        {
+            "source": "标准化处理",
+            "target": "协变量",
+            "type": "数据处理"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Logit回归模型", "en": "Logit regression model"},
+        {"title": "Pareto/NBD模型", "en": "Pareto/NBD model"},
+        {"title": "影响因素", "en": "Influencing factors"},
+        {"title": "评论价值", "en": "Comment value"},
+        {"title": "客户评论流失", "en": "Customer comment churn"},
+        {"title": "预测准确性", "en": "Prediction accuracy"}
+    ],
+    "relations": [
+        {"source": "消费者的评论行为", "target": "购买行为", "type": "影响"},
+        {"source": "购买行为", "target": "评论行为", "type": "影响"},
+        {"source": "Logit回归模型", "target": "客户评论流失", "type": "预测"},
+        {"source": "关键变量", "target": "Pareto/NBD模型", "type": "引入"},
+        {"source": "Pareto/NBD模型", "target": "评论次数预测", "type": "改进"},
+        {"source": "评论价值", "target": "评论次数预测", "type": "影响"},
+        {"source": "购买行为", "target": "评论流失行为", "type": "影响"},
+        {"source": "预测准确性", "target": "客户评论流失", "type": "评估"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Logit回归模型",
+            "en": "Logit Regression Model"
+        },
+        {
+            "title": "消费者评论流失模型",
+            "en": "Consumer Churn Model"
+        },
+        {
+            "title": "因变量和自变量",
+            "en": "Dependent and Independent Variables"
+        }
+    ],
+    "relations": [
+        {
+            "source": "消费者评论流失模型",
+            "target": "Logit回归模型",
+            "type": "属于"
+        },
+        {
+            "source": "Logit回归模型",
+            "target": "因变量和自变量",
+            "type": "包含"
+        },
+        {
+            "source": "因变量和自变量",
+            "target": "消费者评论流失模型",
+            "type": "构成"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "累计消费金额", "en": "Accumulated consumption amount"},
+        {"title": "购买最大金额", "en": "Maximum purchase amount"},
+        {"title": "购买次数", "en": "Purchase frequency"},
+        {"title": "工作时间段购买次数", "en": "Purchase frequency during work hours"},
+        {"title": "凌晨购买次数", "en": "Purchase frequency during midnight"},
+        {"title": "白天购买次数", "en": "Purchase frequency during daytime"},
+        {"title": "晚上购买次数", "en": "Purchase frequency during nighttime"},
+        {"title": "累积评论贡献值", "en": "Accumulated contribution value of comments"},
+        {"title": "评论最高贡献值", "en": "Maximum contribution value of comments"},
+        {"title": "评论次数", "en": "Comment frequency"},
+        {"title": "平均打分", "en": "Average rating"},
+        {"title": "最后评论时间", "en": "Last comment time"},
+        {"title": "第一次评论时间", "en": "First comment time"},
+        {"title": "工作时间段评论次数", "en": "Comment frequency during work hours"},
+        {"title": "凌晨评论次数", "en": "Comment frequency during midnight"},
+        {"title": "白天评论次数", "en": "Comment frequency during daytime"},
+        {"title": "晚上评论次数", "en": "Comment frequency during nighttime"},
+        {"title": "性别", "en": "Gender"},
+        {"title": "年龄", "en": "Age"},
+        {"title": "整体贡献值", "en": "Overall contribution value"}
+    ],
+    "relations": [
+        {"source": "累计消费金额", "target": "购买逢失砌X~~综合考虑评论及购奖行为胭构建", "type": "包含"},
+        {"source": "购买最大金额", "target": "购买逢失砌X~~综合考虑评论及购奖行为胭构建", "type": "包含"},
+        {"source": "购买次数", "target": "购买逢失砌X~~综合考虑评论及购奖行为胭构建", "type": "包含"},
+        {"source": "工作时间段购买次数", "target": "购买逢失砌X~~综合考虑评论及购奖行为胭构建", "type": "包含"},
+        {"source": "凌晨购买次数", "target": "购买逢失砌X~~综合考虑评论及购奖行为胭构建", "type": "包含"},
+        {"source": "白天购买次数", "target": "购买逢失砌X~~综合考虑评论及购奖行为胭构建", "type": "包含"},
+        {"source": "晚上购买次数", "target": "购买逢失砌X~~综合考虑评论及购奖行为胭构建", "type": "包含"},
+        {"source": "累积评论贡献值", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "评论最高贡献值", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "评论次数", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "最后评论时间", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "第一次评论时间", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "工作时间段评论次数", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "凌晨评论次数", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "白天评论次数", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "晚上评论次数", "target": "评论流失预测模型--未考虑购买行为模型构建", "type": "包含"},
+        {"source": "性别", "target": "模型控制变量", "type": "包含"},
+        {"source": "年龄", "target": "模型控制变量", "type": "包含"},
+        {"source": "整体贡献值", "target": "模型控制变量", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "模型检验",
+            "en": "Model verification"
+        },
+        {
+            "title": "多重共线性检验",
+            "en": "Multicollinearity test"
+        },
+        {
+            "title": "VIF因子分析",
+            "en": "VIF factor analysis"
+        },
+        {
+            "title": "训练集结果分析",
+            "en": "Analysis of training set results"
+        },
+        {
+            "title": "Logit回归模型",
+            "en": "Logit regression model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "多重共线性检验",
+            "target": "VIF因子分析",
+            "type": "包含"
+        },
+        {
+            "source": "VIF因子分析",
+            "target": "Logit回归模型",
+            "type": "影响"
+        },
+        {
+            "source": "训练集结果分析",
+            "target": "Logit回归模型",
+            "type": "包含"
+        },
+        {
+            "source": "模型检验",
+            "target": "训练集结果分析",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "平均购买金额与消费者下一阶段的评论流失行为呈显著正相关性", "en": "Positive correlation between average purchase amount and customer churn behavior in the next stage"},
+        {"title": "最高购买金额和夜间购买次数均与下一阶段的评论流失行为呈显著负相关性", "en": "Negative correlation between highest purchase amount/nighttime purchase frequency and customer churn behavior in the next stage"},
+        {"title": "用户购买流失预测模型", "en": "Customer churn prediction model based on purchase behavior and other factors"},
+        {"title": "模型预测准确度对比", "en": "Comparison of prediction accuracy between two models"},
+        {"title": "十重交叉验证", "en": "Ten-fold cross-validation"},
+        {"title": "Pareto/NBD模型预测客户评论次数", "en": "Prediction of customer comment frequency using Pareto/NBD model"}
+    ],
+    "relations": [
+        {"source": "平均购买金额", "target": "消费者下一阶段的评论流失行为", "type": "positive correlation"},
+        {"source": "最高购买金额", "target": "下一阶段的评论流失行为", "type": "negative correlation"},
+        {"source": "夜间购买次数", "target": "下一阶段的评论流失行为", "type": "negative correlation"},
+        {"source": "用户购买流失预测模型", "target": "消费者的贡献值、平均评论贡献值、最后一次评论时间、第一次评论时间、平均打分、平均购买金额、最高购买金额以及夜间购买次数", "type": "influences"},
+        {"source": "模型预测准确度", "target": "评论流失行为预测和评论未流失行为的预测的命中率", "type": "comparison"},
+        {"source": "十重交叉验证", "target": "模型稳定性", "type": "validation"},
+        {"source": "Pareto/NBD模型", "target": "客户评论次数", "type": "prediction"},
+        {"source": "改进模型", "target": "客户评论次数", "type": "prediction"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Pareto/NBD模型",
+            "en": "Pareto/NBD model"
+        },
+        {
+            "title": "数据提取",
+            "en": "Data extraction"
+        },
+        {
+            "title": "模型参数预测结果",
+            "en": "Model parameter prediction results"
+        },
+        {
+            "title": "模型预测结果",
+            "en": "Model prediction results"
+        }
+    ],
+    "relations": [
+        {
+            "source": "数据提取",
+            "target": "Pareto/NBD模型",
+            "type": "包含"
+        },
+        {
+            "source": "模型参数预测结果",
+            "target": "Pareto/NBD模型",
+            "type": "包含"
+        },
+        {
+            "source": "模型预测结果",
+            "target": "Pareto/NBD模型",
+            "type": "包含"
+        },
+        {
+            "source": "模型预测结果",
+            "target": "数据提取",
+            "type": "依赖"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Logit计量经济学模型",
+            "en": "Logit econometric model"
+        },
+        {
+            "title": "消费者评论流失行为",
+            "en": "Consumer comment churn behavior"
+        },
+        {
+            "title": "Pareto/NBD模型",
+            "en": "Pareto/NBD model"
+        },
+        {
+            "title": "协变量",
+            "en": "Covariate"
+        },
+        {
+            "title": "平均购买金额",
+            "en": "Average purchase amount"
+        },
+        {
+            "title": "平均评论贡献值",
+            "en": "Average comment contribution value"
+        },
+        {
+            "title": "Max-Min标准化方法",
+            "en": "Max-Min normalization method"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Logit计量经济学模型",
+            "target": "消费者评论流失行为",
+            "type": "综合考虑影响因素"
+        },
+        {
+            "source": "消费者自身因素、购买行为、评论行为",
+            "target": "消费者评论流失行为",
+            "type": "影响因素"
+        },
+        {
+            "source": "平均购买金额",
+            "target": "消费者评论流失行为",
+            "type": "正向影响"
+        },
+        {
+            "source": "Pareto/NBD模型",
+            "target": "消费者评论次数预测",
+            "type": "预测模型"
+        },
+        {
+            "source": "Pareto/NBD模型",
+            "target": "改进模型",
+            "type": "基础模型"
+        },
+        {
+            "source": "协变量",
+            "target": "Pareto/NBD改进模型",
+            "type": "引入"
+        },
+        {
+            "source": "平均购买金额",
+            "target": "Pareto/NBD改进模型",
+            "type": "协变量"
+        },
+        {
+            "source": "平均评论贡献值",
+            "target": "Pareto/NBD改进模型",
+            "type": "协变量"
+        },
+        {
+            "source": "Max-Min标准化方法",
+            "target": "Pareto/NBD改进模型",
+            "type": "数据处理方法"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Gamma-Gamma模型",
+            "en": "Gamma-Gamma Model"
+        },
+        {
+            "title": "消费金额模型",
+            "en": "Consumer Spending Model"
+        },
+        {
+            "title": "伽玛分布",
+            "en": "Gamma Distribution"
+        },
+        {
+            "title": "最大似然函数法",
+            "en": "Maximum Likelihood Estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Gamma-Gamma模型",
+            "target": "消费金额模型",
+            "type": "属于"
+        },
+        {
+            "source": "伽玛分布",
+            "target": "Gamma-Gamma模型",
+            "type": "基础知识"
+        },
+        {
+            "source": "最大似然函数法",
+            "target": "Gamma-Gamma模型",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "贝叶斯理论",
+            "en": "Bayesian theory"
+        },
+        {
+            "title": "伽马分布",
+            "en": "Gamma distribution"
+        },
+        {
+            "title": "最大似然函数法",
+            "en": "Maximum likelihood function method"
+        },
+        {
+            "title": "Gamma-Gamma模型",
+            "en": "Gamma-Gamma model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "贝叶斯理论",
+            "target": "伽马分布",
+            "type": "基础理论"
+        },
+        {
+            "source": "伽马分布",
+            "target": "Gamma-Gamma模型",
+            "type": "应用模型"
+        },
+        {
+            "source": "最大似然函数法",
+            "target": "Gamma-Gamma模型",
+            "type": "参数估计方法"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Gamma-Gamma模型", "en": "Gamma-Gamma model"},
+        {"title": "客户终身价值", "en": "Customer Lifetime Value"},
+        {"title": "直接价值", "en": "Direct Value"},
+        {"title": "间接价值", "en": "Indirect Value"},
+        {"title": "购买价值", "en": "Purchase Value"},
+        {"title": "评论价值", "en": "Comment Value"},
+        {"title": "独立性假设", "en": "Independence Assumption"},
+        {"title": "边际利润", "en": "Marginal Profit"},
+        {"title": "交易金额", "en": "Transaction Amount"},
+        {"title": "预期交易次数", "en": "Expected Transaction Times"},
+        {"title": "贴现值", "en": "Discounted Value"}
+    ],
+    "relations": [
+        {"source": "Gamma-Gamma模型", "target": "客户终身价值", "type": "包含"},
+        {"source": "客户终身价值", "target": "直接价值", "type": "包含"},
+        {"source": "客户终身价值", "target": "间接价值", "type": "包含"},
+        {"source": "直接价值", "target": "购买价值", "type": "包含"},
+        {"source": "间接价值", "target": "评论价值", "type": "包含"},
+        {"source": "购买价值", "target": "独立性假设", "type": "依赖"},
+        {"source": "购买价值", "target": "边际利润", "type": "依赖"},
+        {"source": "购买价值", "target": "交易金额", "type": "依赖"},
+        {"source": "购买价值", "target": "预期交易次数", "type": "依赖"},
+        {"source": "预期交易次数", "target": "贴现值", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "DET模型",
+            "en": "DET model"
+        },
+        {
+            "title": "Gamma-Gamma模型",
+            "en": "Gamma-Gamma model"
+        },
+        {
+            "title": "Pareto/NBD模型",
+            "en": "Pareto/NBD model"
+        },
+        {
+            "title": "客户终身价值",
+            "en": "Customer lifetime value"
+        },
+        {
+            "title": "购买价值",
+            "en": "Purchase value"
+        },
+        {
+            "title": "相关性检验",
+            "en": "Correlation test"
+        },
+        {
+            "title": "影响流失行为的协变量",
+            "en": "Covariates affecting churn behavior"
+        },
+        {
+            "title": "参数估计",
+            "en": "Parameter estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "DET模型",
+            "target": "Gamma-Gamma模型",
+            "type": "包含"
+        },
+        {
+            "source": "DET模型",
+            "target": "Pareto/NBD模型",
+            "type": "包含"
+        },
+        {
+            "source": "客户终身价值",
+            "target": "购买价值",
+            "type": "相关"
+        },
+        {
+            "source": "购买价值",
+            "target": "Gamma-Gamma模型",
+            "type": "计算"
+        },
+        {
+            "source": "Pareto/NBD模型",
+            "target": "购买价值",
+            "type": "计算"
+        },
+        {
+            "source": "相关性检验",
+            "target": "购买次数",
+            "type": "相关"
+        },
+        {
+            "source": "相关性检验",
+            "target": "消费金额均值",
+            "type": "相关"
+        },
+        {
+            "source": "影响流失行为的协变量",
+            "target": "最高购买金额",
+            "type": "包含"
+        },
+        {
+            "source": "影响流失行为的协变量",
+            "target": "评论次数",
+            "type": "包含"
+        },
+        {
+            "source": "参数估计",
+            "target": "Gamma-Gamma模型",
+            "type": "计算"
+        },
+        {
+            "source": "参数估计",
+            "target": "Pareto/NBD模型",
+            "type": "计算"
+        },
+        {
+            "source": "客户终身价值",
+            "target": "购买价值",
+            "type": "对比分析"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "客户终身价值", "en": "Customer Lifetime Value"},
+        {"title": "Web2.0时代", "en": "Web2.0 era"},
+        {"title": "消费者评论行为", "en": "Consumer comment behavior"},
+        {"title": "群体层面", "en": "Group level"},
+        {"title": "个体层面", "en": "Individual level"},
+        {"title": "RFM模型", "en": "RFM model"},
+        {"title": "RFMP模型", "en": "RFMP model"},
+        {"title": "K-Means聚类分析", "en": "K-Means clustering analysis"},
+        {"title": "Logit计量回归模型", "en": "Logit regression model"}
+    ],
+    "relations": [
+        {"source": "客户终身价值", "target": "Web2.0时代", "type": "related"},
+        {"source": "客户终身价值", "target": "消费者评论行为", "type": "related"},
+        {"source": "客户终身价值", "target": "群体层面", "type": "related"},
+        {"source": "客户终身价值", "target": "个体层面", "type": "related"},
+        {"source": "群体层面", "target": "RFM模型", "type": "related"},
+        {"source": "群体层面", "target": "RFMP模型", "type": "related"},
+        {"source": "群体层面", "target": "K-Means聚类分析", "type": "related"},
+        {"source": "个体层面", "target": "Logit计量回归模型", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "客户终身价值建模",
+            "en": "Customer Lifetime Value Modeling"
+        },
+        {
+            "title": "消费者自身的评论行为与购买行为结合",
+            "en": "Combining Consumer's Comment Behavior with Purchase Behavior"
+        },
+        {
+            "title": "Logit回归模型",
+            "en": "Logit Regression Model"
+        },
+        {
+            "title": "Pareto/NBD模型",
+            "en": "Pareto/NBD Model"
+        },
+        {
+            "title": "评论贡献值预测",
+            "en": "Prediction of Comment Contribution Value"
+        }
+    ],
+    "relations": [
+        {
+            "source": "客户终身价值建模",
+            "target": "消费者自身的评论行为与购买行为结合",
+            "type": "包含"
+        },
+        {
+            "source": "消费者自身的评论行为与购买行为结合",
+            "target": "Logit回归模型",
+            "type": "应用"
+        },
+        {
+            "source": "消费者自身的评论行为与购买行为结合",
+            "target": "Pareto/NBD模型",
+            "type": "应用"
+        },
+        {
+            "source": "Pareto/NBD模型",
+            "target": "评论次数预测",
+            "type": "应用"
+        },
+        {
+            "source": "评论次数预测",
+            "target": "协变量",
+            "type": "影响"
+        },
+        {
+            "source": "评论贡献值预测",
+            "target": "客户终身价值建模",
+            "type": "补充"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "客户终身价值模型", "en": "Customer Lifetime Value Model"},
+        {"title": "客户细分模型", "en": "Customer Segmentation Model"},
+        {"title": "随机RFM模型", "en": "Random RFM Model"},
+        {"title": "客户资产价值", "en": "Customer Asset Value"},
+        {"title": "互联网推荐系统", "en": "Internet Recommendation System"},
+        {"title": "销售和客户资产的建模", "en": "Modeling the Sales and Customer Equity"},
+        {"title": "营销诱导和口碑效应对客户资产的影响", "en": "Impact of Marketing-Induced and Word-of-Mouth Customer Acquisition on Customer Equity Growth"},
+        {"title": "多元自适应回归样条", "en": "Multivariate Adaptive Regression Splines"},
+        {"title": "客户资产管理", "en": "Customer Asset Management"}
+    ],
+    "relations": [
+        {"source": "客户终身价值模型", "target": "客户细分模型", "type": "包含"},
+        {"source": "客户终身价值模型", "target": "随机RFM模型", "type": "包含"},
+        {"source": "客户终身价值模型", "target": "客户资产价值", "type": "包含"},
+        {"source": "客户细分模型", "target": "随机RFM模型", "type": "包含"},
+        {"source": "客户资产价值", "target": "客户资产管理", "type": "包含"},
+        {"source": "互联网推荐系统", "target": "客户细分模型", "type": "应用"},
+        {"source": "销售和客户资产的建模", "target": "客户终身价值模型", "type": "包含"},
+        {"source": "销售和客户资产的建模", "target": "客户资产价值", "type": "包含"},
+        {"source": "营销诱导和口碑效应对客户资产的影响", "target": "客户终身价值模型", "type": "影响"},
+        {"source": "多元自适应回归样条", "target": "客户终身价值模型", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "在线口碑传播的意见领袖识别方法研究", "en": "Research on Opinion Leader Identification Method for Online Word-of-Mouth Communication"},
+        {"title": "RFM评分的思考", "en": "Thoughts on RFM Scoring"},
+        {"title": "电子商务客户流失三阶段预测模型", "en": "Three-stage Prediction Model for E-commerce Customer Churn"},
+        {"title": "基于神经网络的客户流失预警研究", "en": "Research on Customer Churn Early Warning Based on Neural Network"},
+        {"title": "基于ERFM和二元logistic的商业银行零售客户流失模型研究", "en": "Research on Retail Customer Churn Model of Commercial Banks Based on ERFM and Binary Logistic Regression"},
+        {"title": "电子商务客户流失的建模与预测研究", "en": "Modeling and Prediction of E-commerce Customer Churn"},
+        {"title": "基于用户细分的流失预测", "en": "Churn Prediction Based on User Segmentation"},
+        {"title": "上市公司财务困境预测模型比较研究", "en": "Comparative Study on Financial Distress Prediction Models of Listed Companies"},
+        {"title": "Counting Your Customers: Who Are They and What Will They Do Next?", "en": "Counting Your Customers: Who Are They and What Will They Do Next?"},
+        {"title": "Counting Your Customers the Easy Way: An Alternative to the Pareto/NBD Model", "en": "Counting Your Customers the Easy Way: An Alternative to the Pareto/NBD Model"},
+        {"title": "Customer-Base Analysis in a Discrete-Time Noncontractual Setting", "en": "Customer-Base Analysis in a Discrete-Time Noncontractual Setting"},
+        {"title": "基于改进的Pareto/NBD模型预测博客用户在线行为", "en": "Prediction of Blog User Online Behavior Based on Improved Pareto/NBD Model"}
+    ],
+    "relations": [
+        {"source": "在线口碑传播的意见领袖识别方法研究", "target": "电子商务客户流失三阶段预测模型", "type": "相关"},
+        {"source": "电子商务客户流失三阶段预测模型", "target": "基于神经网络的客户流失预警研究", "type": "相关"},
+        {"source": "电子商务客户流失三阶段预测模型", "target": "基于ERFM和二元logistic的商业银行零售客户流失模型研究", "type": "相关"},
+        {"source": "电子商务客户流失三阶段预测模型", "target": "电子商务客户流失的建模与预测研究", "type": "相关"},
+        {"source": "电子商务客户流失三阶段预测模型", "target": "基于用户细分的流失预测", "type": "相关"},
+        {"source": "上市公司财务困境预测模型比较研究", "target": "Counting Your Customers: Who Are They and What Will They Do Next?", "type": "相关"},
+        {"source": "Counting Your Customers: Who Are They and What Will They Do Next?", "target": "Counting Your Customers the Easy Way: An Alternative to the Pareto/NBD Model", "type": "相关"},
+        {"source": "Counting Your Customers: Who Are They and What Will They Do Next?", "target": "Customer-Base Analysis in a Discrete-Time Noncontractual Setting", "type": "相关"},
+        {"source": "基于改进的Pareto/NBD模型预测博客用户在线行为", "target": "Counting Your Customers the Easy Way: An Alternative to the Pareto/NBD Model", "type": "相关"}
+    ]
+}

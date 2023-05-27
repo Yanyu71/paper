@@ -1,0 +1,12 @@
+3.3.4移动模型
+NS-3有一套移动模型用来跟踪节点的位置和速度。在此模块中有一些助手 类用于给节点安装移动模型。移动模型的源代码目录位置为src/mobilityo
+该移动模型的设计包括移动模型，位置分配器和帮助函数。在NS-3中，特 殊的MobilityModel对象跟踪(笛卡尔)坐标系统的位置演变。移动模型通常聚 合到 NS-3 :: Node 对象，并使用 GetObject <MobilityModel> ()查询。基类 NS-3 :: MobilityModel针对不同的运动行为进行了分类。对象的初始位置通常由 PositionAllocator设置。这些类型的对象将在抽象画布上展现出来。一旦模拟开 始，位置分配器可能不再被使用，或者它可以被用来为这种移动模型选择未来的
+23
+移动“路标”。大多数用户使用移动辅助类与移动系统进行交互。MobilityHelper 结合了移动性模型和位置分配器，并且可以与节点容器一起使用，以在一组节点 上安装移动性能。
+移动模型助手的使用分为两步。1,给MobilityHelper设置位置分配器。2, 给MobilityHelper设置移动模型。以下是代码使用的细节：
+MobilityHelper mobilityHelper;
+mobility Helper. SetPositionAllocator ("NS-3: :GridPositionAllocator",
+"MinX", DoubleValue (0.0),...);
+该代码告诉移动助手使用二维网格来初始节点的位置。第一个参数是指定 位置分配器类型的NS-3 Typeld其余的属性/值对用来配置这个位置分配器，如最 小x轴位置MinX,最小y轴位置MinY,节点间的x轴的距离DeltaX,节点间 y轴的距离DeltaY等。
+mobilityHelper.SetMobilityModel("NS3::RandomWalk2dMobilityModel","Boun ds", RectangleValue (Rectangle (-40,40, -40, 40)));
+该代码设置移动模型等子类。第一个参数是指定移动模型类型的NS-3 Typeld其余的属性/值对用来配置这个移动模型。最后讲移动模型设置给节点如， mobilityHelper.Install (wifiStaNodes);

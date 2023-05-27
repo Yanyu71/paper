@@ -1,0 +1,15 @@
+摘要
+随着科学技术的发展以及互联网的普及，数码技术得到了广泛的 应用，然而数字图像的获取、处理、编码、存储、传输和重建这每… 个必要的环节都会影响图像的质量，而图像质量的下降势必影响到图 像所表达信息的充分性与准确性，所以图像质量评价显得尤为重要。
+图像处理办法在不断改善，高动态范围图像的应用也越来越广， 图像评价办法也需要不断改进以适应新需求。优秀的数字图像评价方 法不仅能够准确地反映图像的质量，而且能对图像处理技术提供良好 的改进方向。本文围绕全参考图像质量评价主题即失真图像所对应的 参考图像可以获得，在学习和研究已有基于相似性图像质量评价的基 础上提出了新的方法。
+首先，本文在已有一级加权策略基础上提出了二级加权方法，对 已有的图像质量评价算法进行了改进。已有的加权策略都是集中在像 素级的加权上，而人眼感兴趣的往往是某一块区域，而不是某一个像 素点。区域加权算法具体为：区域内对像素级局部质量值进行加权得 到各个区域的质量值，区域间通过各个区域的权重对区域间的质量值 进行加权。其次，人眼是一个很好的信息提取者。图像若有失真，人 眼从图像中感受的内容信息就会改变。本文基于人眼的信息提取特性 对图像的内容信息进行建模，并结合梯度和色度特征，提出了一种基 于内容信息相似性的图像质量评价算法。第三，本文融合修正的梯度 相似性和图像的自然性实现了对色调映射图像的质量评价。在图像质 量评价方面公开的数据库上进行的试验表明，本文提出的三种算法均 取得了良好的性能。
+关键词:全参考图像质量评价;区域级;内容信息;梯度相似性;色调映射图像质量评价
+THE RESEACH OF SIMILARITY BASED IMAGE QUALITY ASSESSMENT ALGORITHM
+
+ABSTRACT
+With the development of science, technology and the popularization of the Internet, digital image technology has been widely used. The process of digital image acquisition, processed, coding, storage, transmission and reconstruction may cause loss of image quality. The loss of image quality affects the image expression and the accuracy of information which image is supposed to express, so the image quality assessment is important.
+When image process method continuously improves, high dynamic range image is widely accepted. Image assessment method needs constantly improvement so that it can be applied to new needs. Excellent digital image assessment method can not only assess the quality of the image, but also provide a good direction on improving image technology. This paper focuses on the theme of the full-reference image quality assessment that the corresponding reference image of the distorted image is available. Based on existing studies and research on the evaluation of image quality, this paper proposed our own image quality algorithms.
+First of all, based on the existing pixel level of weighted strategy, a second-level weighting method is proposed, which improved existing image quality assessment algorithms. Existing weighted strategy is concentrated on pixel level, human visual system tend to be interested in a particular area rather than pixels. Area-weighted algorithm is described as: local pixel level quality value is weighted by pixel weight in a regions, the quality of regional value is weight by region weight. Secondly, human eye is a very good information extractor. When there is distortion in image, the content information extracted by human visual system changes. In this paper, based on the information extraction characteristic of human eye, information content is modeled based on infbmiation theory . With image
+gradient and chromaticity characteristic, an information content similarity algorithm is proposed. Third, this paper modified gradient similarity and fuses it with naturalness to evaluate tone-mapped image. The test result on image quality assessment public database shows that all of the proposed algorithms achieve good performance.
+
+KEY WORDS:full-reference image quality assessment;region level;information content;gradient similarity;Tone-mapped image quality assessment
+

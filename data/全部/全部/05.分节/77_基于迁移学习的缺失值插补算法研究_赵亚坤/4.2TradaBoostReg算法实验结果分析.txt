@@ -1,0 +1,2 @@
+4.2TradaBoostReg算法实验结果分析
+在上一节中，我们给出了我们的基于回归的TradaBoost框架TradaBoostReg, TradaBoostReg利用源数据来帮助目标的回归学习，在这一部分里，我们通过设 计实验，来验证效果。

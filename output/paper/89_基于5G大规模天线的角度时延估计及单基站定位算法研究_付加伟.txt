@@ -1,0 +1,1173 @@
+﻿{
+    "knowledge_points": [
+        {"title": "位置信息", "en": "Location Information"},
+        {"title": "位置服务", "en": "Location-Based Services (LBS)"},
+        {"title": "全球卫星导航系统", "en": "Global Navigation Satellite System (GNSS)"},
+        {"title": "定位技术", "en": "Positioning Technology"},
+        {"title": "5G移动通信技术", "en": "5G Mobile Communication Technology"},
+        {"title": "超密集组网技术", "en": "Ultra-Dense Network (UDN) Technology"},
+        {"title": "大规模天线技术", "en": "Massive Input and Massive Output (MIMO) Technology"},
+        {"title": "毫米波技术", "en": "Millimeter Wave Technology"},
+        {"title": "指纹库构建与匹配", "en": "Fingerprint Database Construction and Matching"},
+        {"title": "信号参数估计", "en": "Signal Parameter Estimation"}
+    ],
+    "relations": [
+        {"source": "位置信息", "target": "位置服务", "type": "包含"},
+        {"source": "位置服务", "target": "全球卫星导航系统", "type": "依赖"},
+        {"source": "定位技术", "target": "全球卫星导航系统", "type": "依赖"},
+        {"source": "定位技术", "target": "5G移动通信技术", "type": "结合"},
+        {"source": "5G移动通信技术", "target": "超密集组网技术", "type": "包含"},
+        {"source": "5G移动通信技术", "target": "大规模天线技术", "type": "包含"},
+        {"source": "5G移动通信技术", "target": "毫米波技术", "type": "包含"},
+        {"source": "定位技术", "target": "指纹库构建与匹配", "type": "依赖"},
+        {"source": "定位技术", "target": "信号参数估计", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CSI特征匹配阶段", "en": "CSI feature matching stage"},
+        {"title": "离线指纹的提取与采集", "en": "Offline fingerprint extraction and collection"},
+        {"title": "移动终端位置的解算", "en": "Calculation of mobile terminal position"},
+        {"title": "信号参数的估计", "en": "Estimation of signal parameters"},
+        {"title": "基于最短路径的TOA估计多基站定位算法", "en": "TOA estimation multi-base station positioning algorithm based on shortest path"},
+        {"title": "基于RSSI、TDOA、AOA的三种定位方法", "en": "Three positioning methods based on RSSI, TDOA, and AOA"},
+        {"title": "超密集网络下,随机节点分布与基于TOA定位性能之间的关系", "en": "Relationship between random node distribution and TOA-based positioning performance in ultra-dense networks"},
+        {"title": "基于多个节点上的线性阵列估计得到的AOA值可实现亚米级的定位精度", "en": "The AOA value estimated by linear arrays on multiple nodes can achieve sub-meter positioning accuracy"},
+        {"title": "利用MassiveMIMO带来的角度估计精度的提升", "en": "Improvement of angle estimation accuracy using Massive MIMO"},
+        {"title": "TOA定义的相同延迟轮廓交线的定位模型", "en": "Positioning model based on the intersection of delay contours defined by TOA"},
+        {"title": "单基站超宽带(UWB)定位系统", "en": "Single-base station ultra-wideband (UWB) positioning system"},
+        {"title": "基于支持向量机的单基站定位方法", "en": "Single-base station positioning method based on support vector machine"},
+        {"title": "低信噪比条件下AOA估计方法", "en": "AOA estimation method under low signal-to-noise ratio conditions"}
+    ],
+    "relations": [
+        {"source": "CSI特征匹配阶段", "target": "离线指纹的提取与采集", "type": "包含"},
+        {"source": "离线指纹的提取与采集", "target": "移动终端位置的解算", "type": "需要"},
+        {"source": "移动终端位置的解算", "target": "信号参数的估计", "type": "需要"},
+        {"source": "信号参数的估计", "target": "基于最短路径的TOA估计多基站定位算法", "type": "使用"},
+        {"source": "信号参数的估计", "target": "基于RSSI、TDOA、AOA的三种定位方法", "type": "使用"},
+        {"source": "信号参数的估计", "target": "超密集网络下,随机节点分布与基于TOA定位性能之间的关系", "type": "使用"},
+        {"source": "信号参数的估计", "target": "基于多个节点上的线性阵列估计得到的AOA值可实现亚米级的定位精度", "type": "使用"},
+        {"source": "信号参数的估计", "target": "利用MassiveMIMO带来的角度估计精度的提升", "type": "使用"},
+        {"source": "信号参数的估计", "target": "TOA定义的相同延迟轮廓交线的定位模型", "type": "使用"},
+        {"source": "单基站超宽带(UWB)定位系统", "target": "基于支持向量机的单基站定位方法", "type": "使用"},
+        {"source": "低信噪比条件下AOA估计方法", "target": "基于支持向量机的单基站定位方法", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "5G背景下的单基站定位技术研究意义", "en": "Significance of Single Base Station Localization Technology Research under 5G Background"},
+        {"title": "基站定位技术的发展趋势", "en": "Development Trend of Base Station Localization Technology"},
+        {"title": "5G网络下单基站定位的潜在优势", "en": "Potential Advantages of Single Base Station Localization under 5G Network"},
+        {"title": "基于混合阶的远近场角度时延估计算法", "en": "Angle Delay Estimation Algorithm Based on Hybrid Order for Far and Near Field"},
+        {"title": "非视距情况下基于PDR约束的NLOS基站检测方法", "en": "NLOS Base Station Detection Method Based on PDR Constraint under Non-Line-of-Sight Condition"},
+        {"title": "DBSCAN聚类算法", "en": "DBSCAN Clustering Algorithm"},
+        {"title": "虚拟基站", "en": "Virtual Base Station"},
+        {"title": "二次加权的NLOS位置估计方法", "en": "Secondary Weighted NLOS Position Estimation Method"},
+        {"title": "5G相关技术知识", "en": "5G Related Technical Knowledge"},
+        {"title": "移动通信网络中常见的几种基站定位技术", "en": "Several Common Base Station Localization Technologies in Mobile Communication Networks"},
+        {"title": "单基站定位的潜在优势和原理", "en": "Potential Advantages and Principles of Single Base Station Localization"},
+        {"title": "近场效应和非视距误差", "en": "Near Field Effect and Non-Line-of-Sight Error"}
+    ],
+    "relations": [
+        {"source": "5G背景下的单基站定位技术研究意义", "target": "基站定位技术的发展趋势", "type": "相关"},
+        {"source": "5G背景下的单基站定位技术研究意义", "target": "5G网络下单基站定位的潜在优势", "type": "相关"},
+        {"source": "基站定位技术的发展趋势", "target": "5G网络下单基站定位的潜在优势", "type": "相关"},
+        {"source": "5G相关技术知识", "target": "移动通信网络中常见的几种基站定位技术", "type": "相关"},
+        {"source": "移动通信网络中常见的几种基站定位技术", "target": "单基站定位的潜在优势和原理", "type": "相关"},
+        {"source": "单基站定位的潜在优势和原理", "target": "近场效应和非视距误差", "type": "相关"},
+        {"source": "基于混合阶的远近场角度时延估计算法", "target": "角度和时延两个信号参数量完成单基站定位过程", "type": "实现"},
+        {"source": "基于混合阶的远近场角度时延估计算法", "target": "非视距情况下基于PDR约束的NLOS基站检测方法", "type": "解决"},
+        {"source": "非视距情况下基于PDR约束的NLOS基站检测方法", "target": "DBSCAN聚类算法", "type": "使用"},
+        {"source": "非视距情况下基于PDR约束的NLOS基站检测方法", "target": "虚拟基站", "type": "使用"},
+        {"source": "虚拟基站", "target": "二次加权的NLOS位置估计方法", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "超密集组网技术", "en": "Ultra-dense networking technology"},
+        {"title": "大规模天线技术", "en": "Massive MIMO technology"},
+        {"title": "波束成形技术", "en": "Beamforming technology"},
+        {"title": "移动通信网络中常见的几种定位技术", "en": "Several common positioning technologies in mobile communication networks"},
+        {"title": "单基站定位的优势和原理", "en": "Advantages and principles of single base station positioning"}
+    ],
+    "relations": [
+        {"source": "超密集组网技术", "target": "单基站定位的优势和原理", "type": "包含"},
+        {"source": "大规模天线技术", "target": "单基站定位的优势和原理", "type": "包含"},
+        {"source": "波束成形技术", "target": "大规模天线技术", "type": "应用"},
+        {"source": "移动通信网络中常见的几种定位技术", "target": "单基站定位的优势和原理", "type": "前置"},
+        {"source": "超密集组网技术", "target": "移动通信网络中常见的几种定位技术", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "大规模天线阵列", "en": "Large-scale antenna array"},
+        {"title": "毫米波技术", "en": "Millimeter wave technology"},
+        {"title": "信号强度定位技术", "en": "Signal strength-based positioning technology"},
+        {"title": "基于时间的定位技术", "en": "Time-based positioning technology"}
+    ],
+    "relations": [
+        {"source": "大规模天线阵列", "target": "FDD模式下", "type": "研究"},
+        {"source": "大规模天线阵列", "target": "降低硬件开销的混合预编码结构和方法", "type": "研究"},
+        {"source": "大规模天线阵列", "target": "定位服务", "type": "应用"},
+        {"source": "毫米波技术", "target": "5G网络", "type": "应用"},
+        {"source": "毫米波技术", "target": "定位服务", "type": "应用"},
+        {"source": "信号强度定位技术", "target": "蓝牙", "type": "应用"},
+        {"source": "信号强度定位技术", "target": "WIFI", "type": "应用"},
+        {"source": "基于时间的定位技术", "target": "TOA", "type": "原理"},
+        {"source": "基于时间的定位技术", "target": "非视距多径信号", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "到达时间差(TDOA)定位方法", "en": "TDOA positioning method"},
+        {"title": "基于角度的定位技术", "en": "Angle-based positioning technology"},
+        {"title": "单基站定位技术", "en": "Single base station positioning technology"}
+    ],
+    "relations": [
+        {"source": "到达时间差(TDOA)定位方法", "target": "基于时间的定位技术", "type": "related"},
+        {"source": "到达时间差(TDOA)定位方法", "target": "多基站定位技术", "type": "related"},
+        {"source": "基于角度的定位技术", "target": "多基站定位技术", "type": "related"},
+        {"source": "单基站定位技术", "target": "多基站定位技术", "type": "complementary"},
+        {"source": "单基站定位技术", "target": "到达时间差(TDOA)定位方法", "type": "complementary"},
+        {"source": "单基站定位技术", "target": "基于角度的定位技术", "type": "complementary"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "定位服务",
+            "en": "Location-based services"
+        },
+        {
+            "title": "单基站定位",
+            "en": "Single base station positioning"
+        },
+        {
+            "title": "视距基站",
+            "en": "Line-of-sight base station"
+        },
+        {
+            "title": "非视距误差",
+            "en": "Non-line-of-sight error"
+        },
+        {
+            "title": "波束成形",
+            "en": "Beamforming"
+        },
+        {
+            "title": "远场",
+            "en": "Far field"
+        },
+        {
+            "title": "近场",
+            "en": "Near field"
+        },
+        {
+            "title": "角度时延估计",
+            "en": "Angle-delay estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "定位服务",
+            "target": "单基站定位",
+            "type": "包含"
+        },
+        {
+            "source": "单基站定位",
+            "target": "视距基站",
+            "type": "相关"
+        },
+        {
+            "source": "单基站定位",
+            "target": "非视距误差",
+            "type": "相关"
+        },
+        {
+            "source": "视距基站",
+            "target": "波束成形",
+            "type": "利用"
+        },
+        {
+            "source": "波束成形",
+            "target": "远场",
+            "type": "作用于"
+        },
+        {
+            "source": "波束成形",
+            "target": "近场",
+            "type": "作用于"
+        },
+        {
+            "source": "远场",
+            "target": "角度时延估计",
+            "type": "需要"
+        },
+        {
+            "source": "近场",
+            "target": "角度时延估计",
+            "type": "需要"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LOS基站",
+            "en": "LOS base station"
+        },
+        {
+            "title": "TOA",
+            "en": "Time of Arrival"
+        },
+        {
+            "title": "4G波束成形天线",
+            "en": "4G beamforming antenna"
+        },
+        {
+            "title": "5G波束成形天线",
+            "en": "5G beamforming antenna"
+        },
+        {
+            "title": "通导融合LOS基站选择方法",
+            "en": "Integrated LOS base station selection method"
+        },
+        {
+            "title": "AMF",
+            "en": "Access and Mobility Management Function"
+        },
+        {
+            "title": "LMF",
+            "en": "Location Management Function"
+        },
+        {
+            "title": "UDM",
+            "en": "Unified Data Management"
+        },
+        {
+            "title": "NG-RAN",
+            "en": "Next Generation Radio Access Network"
+        },
+        {
+            "title": "MEC",
+            "en": "Mobile Edge Cloud"
+        }
+    ],
+    "relations": [
+        {
+            "source": "终端与基站距离",
+            "target": "LOS基站的初步选取",
+            "type": "包含"
+        },
+        {
+            "source": "TOA值",
+            "target": "距离参数",
+            "type": "表征"
+        },
+        {
+            "source": "5G波束",
+            "target": "方向性",
+            "type": "具备"
+        },
+        {
+            "source": "4G波束成形天线",
+            "target": "全向天线",
+            "type": "包含"
+        },
+        {
+            "source": "4G波束成形天线",
+            "target": "波束成形天线",
+            "type": "包含"
+        },
+        {
+            "source": "5G波束成形天线",
+            "target": "天线阵元数量的增加",
+            "type": "导致"
+        },
+        {
+            "source": "5G波束成形天线",
+            "target": "排布方式的变化",
+            "type": "导致"
+        },
+        {
+            "source": "5G波束",
+            "target": "可控性增强",
+            "type": "导致"
+        },
+        {
+            "source": "5G波束",
+            "target": "方向判断",
+            "type": "具备"
+        },
+        {
+            "source": "通导融合LOS基站选择方法",
+            "target": "空旷场景",
+            "type": "适用场景"
+        },
+        {
+            "source": "通导融合LOS基站选择方法",
+            "target": "复杂场景",
+            "type": "适用场景"
+        },
+        {
+            "source": "LMF",
+            "target": "选取",
+            "type": "负责"
+        },
+        {
+            "source": "MEC",
+            "target": "云计算服务",
+            "type": "提供"
+        },
+        {
+            "source": "MEC",
+            "target": "波束成形",
+            "type": "利用"
+        },
+        {
+            "source": "MEC",
+            "target": "重叠区域判断",
+            "type": "使用"
+        },
+        {
+            "source": "LMF",
+            "target": "定位请求响应和处理",
+            "type": "负责"
+        },
+        {
+            "source": "LMF",
+            "target": "信号估计结果获取",
+            "type": "负责"
+        },
+        {
+            "source": "LMF",
+            "target": "辅助定位数据获取",
+            "type": "负责"
+        },
+        {
+            "source": "LMF",
+            "target": "定位结果响应",
+            "type": "负责"
+        },
+        {
+            "source": "AMF",
+            "target": "定位消息传输",
+            "type": "负责"
+        },
+        {
+            "source": "AMF",
+            "target": "LMF选取",
+            "type": "负责"
+        },
+        {
+            "source": "UDM",
+            "target": "隐私设置和授权信息提供",
+            "type": "负责"
+        },
+        {
+            "source": "NG-RAN",
+            "target": "gNB和ng-eNB",
+            "type": "包括"
+        },
+        {
+            "source": "UE",
+            "target": "LCS定位服务请求发送",
+            "type": "触发"
+        },
+        {
+            "source": "AMF",
+            "target": "LCS服务请求响应",
+            "type": "负责"
+        },
+        {
+            "source": "定位结果",
+            "target": "加密存储",
+            "type": "存储"
+        },
+        {
+            "source": "定位结果",
+            "target": "历史轨迹查询",
+            "type": "可用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "MEC网元降低终端与基站连接次数",
+            "en": "MEC reduces the number of connections between terminals and base stations"
+        },
+        {
+            "title": "基于波束定位的架构图可适用于不存在LOS基站的情况",
+            "en": "Beamforming-based architecture can be applied in the absence of LOS base stations"
+        },
+        {
+            "title": "远场模型和近场模型的区别",
+            "en": "Difference between far-field and near-field models"
+        },
+        {
+            "title": "信号在传输过程中的幅值和相位",
+            "en": "Amplitude and phase of signals during transmission"
+        },
+        {
+            "title": "信号在时域和频域的接收模型",
+            "en": "Signal reception models in time and frequency domains"
+        }
+    ],
+    "relations": [
+        {
+            "source": "MEC网元降低终端与基站连接次数",
+            "target": "基于波束定位的架构图可适用于不存在LOS基站的情况",
+            "type": "应用"
+        },
+        {
+            "source": "基于波束定位的架构图可适用于不存在LOS基站的情况",
+            "target": "远场模型和近场模型的区别",
+            "type": "概念"
+        },
+        {
+            "source": "信号在传输过程中的幅值和相位",
+            "target": "信号在时域和频域的接收模型",
+            "type": "概念"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "相对时延",
+            "en": "Relative Delay"
+        },
+        {
+            "title": "单位冲激响应",
+            "en": "Unit Impulse Response"
+        },
+        {
+            "title": "远场信号",
+            "en": "Far-field Signal"
+        },
+        {
+            "title": "参考阵元",
+            "en": "Reference Element"
+        },
+        {
+            "title": "传输时延",
+            "en": "Transmission Delay"
+        },
+        {
+            "title": "传输衰减系数",
+            "en": "Transmission Attenuation Coefficient"
+        },
+        {
+            "title": "观测区间",
+            "en": "Observation Interval"
+        },
+        {
+            "title": "子载波",
+            "en": "Subcarrier"
+        },
+        {
+            "title": "频域响应",
+            "en": "Frequency Response"
+        },
+        {
+            "title": "傅里叶变换",
+            "en": "Fourier Transform"
+        },
+        {
+            "title": "加性高斯白噪声",
+            "en": "Additive Gaussian White Noise"
+        },
+        {
+            "title": "扩展信道频域响应矩阵",
+            "en": "Extended Channel Frequency Response Matrix"
+        },
+        {
+            "title": "混合阶",
+            "en": "Mixed Order"
+        },
+        {
+            "title": "超分辨率角度时延估计算法",
+            "en": "Super-resolution Angle-delay Estimation Algorithm"
+        },
+        {
+            "title": "信号子空间分解",
+            "en": "Signal Subspace Decomposition"
+        },
+        {
+            "title": "MUSIC算法",
+            "en": "Multiple Signal Classification Algorithm"
+        },
+        {
+            "title": "旋转子空间不变",
+            "en": "Rotation Invariant Subspace"
+        },
+        {
+            "title": "ESPRIT算法",
+            "en": "Estimation of Signal Parameters via Rotational Invariance Techniques Algorithm"
+        },
+        {
+            "title": "高阶累积量",
+            "en": "Higher-order Cumulant"
+        },
+        {
+            "title": "参数估计",
+            "en": "Parameter Estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "相对时延",
+            "target": "单位冲激响应",
+            "type": "包含"
+        },
+        {
+            "source": "单位冲激响应",
+            "target": "参考阵元",
+            "type": "描述"
+        },
+        {
+            "source": "传输时延",
+            "target": "参考阵元",
+            "type": "描述"
+        },
+        {
+            "source": "传输衰减系数",
+            "target": "参考阵元",
+            "type": "描述"
+        },
+        {
+            "source": "观测区间",
+            "target": "子载波",
+            "type": "包含"
+        },
+        {
+            "source": "子载波",
+            "target": "傅里叶变换",
+            "type": "描述"
+        },
+        {
+            "source": "加性高斯白噪声",
+            "target": "频域响应",
+            "type": "描述"
+        },
+        {
+            "source": "频域响应",
+            "target": "傅里叶变换",
+            "type": "描述"
+        },
+        {
+            "source": "扩展信道频域响应矩阵",
+            "target": "子载波",
+            "type": "包含"
+        },
+        {
+            "source": "混合阶",
+            "target": "超分辨率角度时延估计算法",
+            "type": "描述"
+        },
+        {
+            "source": "信号子空间分解",
+            "target": "MUSIC算法",
+            "type": "描述"
+        },
+        {
+            "source": "MUSIC算法",
+            "target": "超分辨率角度时延估计算法",
+            "type": "描述"
+        },
+        {
+            "source": "旋转子空间不变",
+            "target": "ESPRIT算法",
+            "type": "描述"
+        },
+        {
+            "source": "ESPRIT算法",
+            "target": "超分辨率角度时延估计算法",
+            "type": "描述"
+        },
+        {
+            "source": "高阶累积量",
+            "target": "近场D0A估计",
+            "type": "描述"
+        },
+        {
+            "source": "参数估计",
+            "target": "近场D0A估计",
+            "type": "描述"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "混合阶远近场角度时延估计算法", "en": "Mixed-order far-field and near-field angle and delay estimation algorithm"},
+        {"title": "ESPRIT算法", "en": "ESPRIT algorithm"},
+        {"title": "高阶MUSIC算法", "en": "Higher-order MUSIC algorithm"},
+        {"title": "协方差矩阵", "en": "Covariance matrix"},
+        {"title": "频谱搜索函数", "en": "Spectrum search function"},
+        {"title": "信号子空间", "en": "Signal subspace"},
+        {"title": "总体最小二乘准则", "en": "Total least squares criterion"}
+    ],
+    "relations": [
+        {"source": "混合阶远近场角度时延估计算法", "target": "ESPRIT算法", "type": "基于"},
+        {"source": "混合阶远近场角度时延估计算法", "target": "高阶MUSIC算法", "type": "对比"},
+        {"source": "混合阶远近场角度时延估计算法", "target": "协方差矩阵", "type": "利用"},
+        {"source": "混合阶远近场角度时延估计算法", "target": "频谱搜索函数", "type": "构建"},
+        {"source": "混合阶远近场角度时延估计算法", "target": "信号子空间", "type": "利用"},
+        {"source": "混合阶远近场角度时延估计算法", "target": "总体最小二乘准则", "type": "利用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ESPRIT-Like算法", "en": "ESPRIT-Like algorithm"},
+        {"title": "高阶MUSIC算法", "en": "Higher-order MUSIC algorithm"},
+        {"title": "角度和时延估计", "en": "Angle and delay estimation"},
+        {"title": "频域信号接收模型", "en": "Frequency domain signal reception model"},
+        {"title": "均方根误差", "en": "Root mean square error"},
+        {"title": "加性高斯白噪声", "en": "Additive white Gaussian noise"},
+        {"title": "近场信源", "en": "Near-field source"},
+        {"title": "远场信源", "en": "Far-field source"},
+        {"title": "快拍数", "en": "Snapshot number"},
+        {"title": "复杂度", "en": "Complexity"},
+        {"title": "NLOS场景", "en": "NLOS scenario"},
+        {"title": "PDR约束", "en": "PDR constraint"},
+        {"title": "信号传播模型", "en": "Signal propagation model"},
+        {"title": "聚类", "en": "Clustering"},
+        {"title": "虚拟基站", "en": "Virtual base station"},
+        {"title": "二次加权位置估计", "en": "Secondary weighted position estimation"}
+    ],
+    "relations": [
+        {"source": "ESPRIT-Like算法", "target": "高阶MUSIC算法", "type": "similar"},
+        {"source": "角度和时延估计", "target": "频域信号接收模型", "type": "related"},
+        {"source": "均方根误差", "target": "加性高斯白噪声", "type": "related"},
+        {"source": "近场信源", "target": "远场信源", "type": "opposite"},
+        {"source": "快拍数", "target": "均方根误差", "type": "related"},
+        {"source": "复杂度", "target": "ESPRIT-Like算法", "type": "opposite"},
+        {"source": "复杂度", "target": "高阶MUSIC算法", "type": "related"},
+        {"source": "NLOS场景", "target": "PDR约束", "type": "related"},
+        {"source": "信号传播模型", "target": "聚类", "type": "related"},
+        {"source": "聚类", "target": "虚拟基站", "type": "related"},
+        {"source": "虚拟基站", "target": "二次加权位置估计", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "NLOS基站判断方法",
+            "en": "NLOS Base Station Judgment Method"
+        },
+        {
+            "title": "惯性导航器件",
+            "en": "Inertial Navigation Device"
+        },
+        {
+            "title": "LOS信号传播路径",
+            "en": "LOS Signal Propagation Path"
+        },
+        {
+            "title": "NLOS信号传播模型",
+            "en": "NLOS Signal Propagation Model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "惯性导航器件",
+            "target": "NLOS基站判断方法",
+            "type": "包含"
+        },
+        {
+            "source": "LOS信号传播路径",
+            "target": "NLOS基站判断方法",
+            "type": "应用"
+        },
+        {
+            "source": "NLOS信号传播模型",
+            "target": "NLOS基站判断方法",
+            "type": "应用"
+        },
+        {
+            "source": "NLOS信号传播模型",
+            "target": "LOS信号传播路径",
+            "type": "对比"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "反射体所在直线的确定",
+            "en": "Determination of the line where the reflector is located"
+        },
+        {
+            "title": "信号反射损耗",
+            "en": "Signal reflection loss"
+        },
+        {
+            "title": "反射次数的影响",
+            "en": "Influence of reflection times"
+        },
+        {
+            "title": "基于虚拟基站的NLOS位置解算方法",
+            "en": "NLOS position calculation method based on virtual base station"
+        },
+        {
+            "title": "参数聚类",
+            "en": "Parameter clustering"
+        },
+        {
+            "title": "DBSCAN基于密度的聚类算法",
+            "en": "DBSCAN density-based clustering algorithm"
+        },
+        {
+            "title": "NLOS虚拟基站生成",
+            "en": "NLOS virtual base station generation"
+        },
+        {
+            "title": "终端UE位置坐标计算",
+            "en": "Calculation of terminal UE position coordinates"
+        }
+    ],
+    "relations": [
+        {
+            "source": "反射体所在直线的确定",
+            "target": "基于虚拟基站的NLOS位置解算方法",
+            "type": "前置条件"
+        },
+        {
+            "source": "信号反射损耗",
+            "target": "反射次数的影响",
+            "type": "影响"
+        },
+        {
+            "source": "反射次数的影响",
+            "target": "基于虚拟基站的NLOS位置解算方法",
+            "type": "前置条件"
+        },
+        {
+            "source": "参数聚类",
+            "target": "DBSCAN基于密度的聚类算法",
+            "type": "包含"
+        },
+        {
+            "source": "DBSCAN基于密度的聚类算法",
+            "target": "NLOS虚拟基站生成",
+            "type": "前置条件"
+        },
+        {
+            "source": "NLOS虚拟基站生成",
+            "target": "终端UE位置坐标计算",
+            "type": "前置条件"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "多次反射虚拟基站原理",
+            "en": "Principle of Multi-Reflection Virtual Base Station"
+        },
+        {
+            "title": "二次加权位置估计方法",
+            "en": "Secondary Weighted Position Estimation Method"
+        }
+    ],
+    "relations": [
+        {
+            "source": "多次反射虚拟基站原理",
+            "target": "二次加权位置估计方法",
+            "type": "应用"
+        },
+        {
+            "source": "NLOS传播路径",
+            "target": "多次反射虚拟基站原理",
+            "type": "基础"
+        },
+        {
+            "source": "多个NLOS路径",
+            "target": "二次加权位置估计方法",
+            "type": "基础"
+        },
+        {
+            "source": "PDR技术",
+            "target": "二次加权位置估计方法",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "角度时延估计",
+            "en": "Angle-delay estimation"
+        },
+        {
+            "title": "NLOS路径判断",
+            "en": "NLOS path identification"
+        },
+        {
+            "title": "PDR",
+            "en": "Pedestrian Dead Reckoning"
+        },
+        {
+            "title": "单基站定位",
+            "en": "Single base station positioning"
+        },
+        {
+            "title": "MIMO天线",
+            "en": "MIMO antenna"
+        },
+        {
+            "title": "射线追踪",
+            "en": "Ray tracing"
+        }
+    ],
+    "relations": [
+        {
+            "source": "角度时延估计",
+            "target": "NLOS路径判断",
+            "type": "包含"
+        },
+        {
+            "source": "角度时延估计",
+            "target": "单基站定位",
+            "type": "相关"
+        },
+        {
+            "source": "PDR",
+            "target": "单基站定位",
+            "type": "融合"
+        },
+        {
+            "source": "MIMO天线",
+            "target": "角度时延估计",
+            "type": "应用"
+        },
+        {
+            "source": "射线追踪",
+            "target": "单基站定位",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "智能手机参数", "en": "Smartphone Parameters"},
+        {"title": "测试仪器", "en": "Testing Instruments"},
+        {"title": "定位精度", "en": "Positioning Accuracy"},
+        {"title": "NLOS路径识别方法", "en": "NLOS Path Identification Method"},
+        {"title": "NLOS传播模型", "en": "NLOS Propagation Model"},
+        {"title": "PDR约束关系", "en": "PDR Constraint Relationship"},
+        {"title": "虚拟基站", "en": "Virtual Base Station"},
+        {"title": "角度和时延估计", "en": "Angle and Time Delay Estimation"},
+        {"title": "大规模天线阵列", "en": "Large-scale Antenna Array"},
+        {"title": "通导融合一体化解决方案", "en": "Integrated Solution of Navigation and Communication Fusion"}
+    ],
+    "relations": [
+        {"source": "智能手机参数", "target": "测试仪器", "type": "包含"},
+        {"source": "测试仪器", "target": "定位精度", "type": "影响"},
+        {"source": "定位精度", "target": "NLOS路径识别方法", "type": "需要"},
+        {"source": "NLOS路径识别方法", "target": "NLOS传播模型", "type": "基于"},
+        {"source": "NLOS传播模型", "target": "虚拟基站", "type": "利用"},
+        {"source": "NLOS传播模型", "target": "角度和时延估计", "type": "基于"},
+        {"source": "PDR约束关系", "target": "NLOS路径识别方法", "type": "应用于"},
+        {"source": "虚拟基站", "target": "定位精度", "type": "提高"},
+        {"source": "角度和时延估计", "target": "大规模天线阵列", "type": "基于"},
+        {"source": "大规模天线阵列", "target": "通导融合一体化解决方案", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "GPS原理与接收机设计",
+            "en": "GPS Principles and Receiver Design"
+        },
+        {
+            "title": "室内定位",
+            "en": "Indoor Positioning"
+        },
+        {
+            "title": "蓝牙室内定位算法",
+            "en": "Bluetooth Indoor Positioning Algorithm"
+        },
+        {
+            "title": "WiFi/PDR融合的室内定位方法",
+            "en": "Indoor Positioning Method Based on WiFi/PDR Fusion"
+        },
+        {
+            "title": "WIFI定位技术在智慧校园建设中的应用研究",
+            "en": "Application of WiFi Positioning Technology in Smart Campus Construction"
+        },
+        {
+            "title": "基于坐标搜索格网的卫星定位",
+            "en": "Satellite Positioning Based on Coordinate Search Grid"
+        },
+        {
+            "title": "矩阵填充和压缩感知的蓝牙室内定位方法",
+            "en": "Bluetooth Indoor Positioning Method Based on Matrix Padding and Compressed Sensing"
+        },
+        {
+            "title": "UWB精定位算法",
+            "en": "UWB Precision Positioning Algorithm"
+        },
+        {
+            "title": "基于超宽带和惯导数据融合的高精度室内定位系统",
+            "en": "High-precision Indoor Positioning System Based on UWB and Inertial Data Fusion"
+        },
+        {
+            "title": "PDR算法对地磁室内定位精度的提升研究",
+            "en": "Research on the Improvement of Indoor Positioning Accuracy Based on PDR Algorithm and Geomagnetic Field"
+        },
+        {
+            "title": "5G发展展望白皮书",
+            "en": "White Paper on the Development Prospect of 5G"
+        },
+        {
+            "title": "面向5G的定位技术研究综述",
+            "en": "Research Summary of Location Technology for 5G"
+        },
+        {
+            "title": "大规模MIMO关键技术及应用",
+            "en": "Key Technologies and Applications of Massive MIMO"
+        },
+        {
+            "title": "设备在5G超密集组网中的定位模拟与分析",
+            "en": "Simulation and Analysis of Device Positioning in 5G Ultra-Dense Network"
+        },
+        {
+            "title": "5G网络中高速列车的定位和基于定位的波束成形",
+            "en": "Positioning and Location-Based Beamforming for High-Speed Trains in 5G NR Networks"
+        },
+        {
+            "title": "Massive MIMO的直接定位",
+            "en": "Direct Localization for Massive MIMO"
+        }
+    ],
+    "relations": [
+        {
+            "source": "GPS原理与接收机设计",
+            "target": "室内定位",
+            "type": "相关"
+        },
+        {
+            "source": "室内定位",
+            "target": "蓝牙室内定位算法",
+            "type": "相关"
+        },
+        {
+            "source": "室内定位",
+            "target": "WiFi/PDR融合的室内定位方法",
+            "type": "相关"
+        },
+        {
+            "source": "室内定位",
+            "target": "WIFI定位技术在智慧校园建设中的应用研究",
+            "type": "相关"
+        },
+        {
+            "source": "GPS原理与接收机设计",
+            "target": "基于坐标搜索格网的卫星定位",
+            "type": "相关"
+        },
+        {
+            "source": "室内定位",
+            "target": "矩阵填充和压缩感知的蓝牙室内定位方法",
+            "type": "相关"
+        },
+        {
+            "source": "室内定位",
+            "target": "UWB精定位算法",
+            "type": "相关"
+        },
+        {
+            "source": "UWB精定位算法",
+            "target": "基于超宽带和惯导数据融合的高精度室内定位系统",
+            "type": "相关"
+        },
+        {
+            "source": "PDR算法对地磁室内定位精度的提升研究",
+            "target": "室内定位",
+            "type": "相关"
+        },
+        {
+            "source": "5G发展展望白皮书",
+            "target": "面向5G的定位技术研究综述",
+            "type": "相关"
+        },
+        {
+            "source": "大规模MIMO关键技术及应用",
+            "target": "设备在5G超密集组网中的定位模拟与分析",
+            "type": "相关"
+        },
+        {
+            "source": "设备在5G超密集组网中的定位模拟与分析",
+            "target": "5G网络中高速列车的定位和基于定位的波束成形",
+            "type": "相关"
+        },
+        {
+            "source": "大规模MIMO关键技术及应用",
+            "target": "Massive MIMO的直接定位",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ARSSI/PDR-based probabilistic position selection algorithm with NLOS identification for indoor localisation", "en": ""},
+        {"title": "Predictable 802.11 packet delivery from wireless channel measurements", "en": ""},
+        {"title": "CSI-MIMO: An efficient WiFi fingerprinting using channel state information with MIMO", "en": ""},
+        {"title": "CSI-based fingerprinting for indoor localization: A deep learning approach", "en": ""},
+        {"title": "CSI phase fingerprinting for indoor localization with a deep learning approach", "en": ""},
+        {"title": "基于Wi-Fi的室内定位技术研究进展", "en": "Research progress of indoor positioning technology based on Wi-Fi"},
+        {"title": "基于深度信念网络的室内定位算法研究", "en": "Research on indoor positioning algorithm based on deep belief network"},
+        {"title": "Signal processing techniques in network-aided positioning: a survey of state-of-the-art positioning designs", "en": ""},
+        {"title": "基于5G毫米波信号的TOA估计及定位算法的研究", "en": "Research on TOA estimation and positioning algorithm based on 5G millimeter wave signal"},
+        {"title": "Evaluation of localization methods in millimeter-wave wireless systems", "en": ""},
+        {"title": "Method and Analysis of TOA-Based Localization in 5G Ultra-Dense Networks with Randomly Distributed Nodes", "en": ""},
+        {"title": "On the Performance of AoA-Based Localization in 5G Ultra-Dense Networks", "en": ""},
+        {"title": "Direct Positioning Method of Mixed Far-Field and Near-Field Based on 5G Massive MIMO System", "en": ""},
+        {"title": "TOA-based localization error modeling of distributed MIMO radar for positioning accuracy enhancement", "en": ""}
+    ],
+    "relations": [
+        {"source": "ARSSI/PDR-based probabilistic position selection algorithm with NLOS identification for indoor localisation", "target": "Research progress of indoor positioning technology based on Wi-Fi", "type": "related"},
+        {"source": "Predictable 802.11 packet delivery from wireless channel measurements", "target": "ARSSI/PDR-based probabilistic position selection algorithm with NLOS identification for indoor localisation", "type": "related"},
+        {"source": "CSI-MIMO: An efficient WiFi fingerprinting using channel state information with MIMO", "target": "Research progress of indoor positioning technology based on Wi-Fi", "type": "related"},
+        {"source": "CSI-based fingerprinting for indoor localization: A deep learning approach", "target": "Research progress of indoor positioning technology based on Wi-Fi", "type": "related"},
+        {"source": "CSI phase fingerprinting for indoor localization with a deep learning approach", "target": "Research progress of indoor positioning technology based on Wi-Fi", "type": "related"},
+        {"source": "基于Wi-Fi的室内定位技术研究进展", "target": "Research on indoor positioning algorithm based on deep belief network", "type": "related"},
+        {"source": "Signal processing techniques in network-aided positioning: a survey of state-of-the-art positioning designs", "target": "ARSSI/PDR-based probabilistic position selection algorithm with NLOS identification for indoor localisation", "type": "related"},
+        {"source": "基于5G毫米波信号的TOA估计及定位算法的研究", "target": "Evaluation of localization methods in millimeter-wave wireless systems", "type": "related"},
+        {"source": "Method and Analysis of TOA-Based Localization in 5G Ultra-Dense Networks with Randomly Distributed Nodes", "target": "Evaluation of localization methods in millimeter-wave wireless systems", "type": "related"},
+        {"source": "On the Performance of AoA-Based Localization in 5G Ultra-Dense Networks", "target": "Evaluation of localization methods in millimeter-wave wireless systems", "type": "related"},
+        {"source": "Direct Positioning Method of Mixed Far-Field and Near-Field Based on 5G Massive MIMO System", "target": "Evaluation of localization methods in millimeter-wave wireless systems", "type": "related"},
+        {"source": "TOA-based localization error modeling of distributed MIMO radar for positioning accuracy enhancement", "target": "Evaluation of localization methods in millimeter-wave wireless systems", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "MIMO移动通信系统中的单基站定位技术研究",
+            "en": "Research on Single Base Station Localization Technology in MIMO Mobile Communication System"
+        },
+        {
+            "title": "基于WiFi信道状态信息的单基站室内定位研究",
+            "en": "Research on Single Base Station Indoor Localization Based on WiFi Channel State Information"
+        },
+        {
+            "title": "5G中的应用场景和使能技术",
+            "en": "Application Scenarios and Enabling Technologies of 5G"
+        },
+        {
+            "title": "5G超密集组网关键技术与组网架构探讨",
+            "en": "Discussion on Key Technologies and Network Architecture of 5G Ultra-Dense Networking"
+        },
+        {
+            "title": "面向5G的超密集网络中分布式无线资源管理的研究",
+            "en": "Research on Distributed Wireless Resource Management in Ultra-Dense Networks for 5G"
+        },
+        {
+            "title": "UDN部署下的多连接技术研究",
+            "en": "Research on Multi-Connection Technology in UDN Deployment"
+        },
+        {
+            "title": "Massive MIMO的概述：优势和挑战",
+            "en": "An Overview of Massive MIMO: Benefits and Challenges"
+        },
+        {
+            "title": "毫米波移动宽带系统介绍",
+            "en": "Introduction to Millimeter-Wave Mobile Broadband Systems"
+        },
+        {
+            "title": "TD-LTE基于RSRP/RSRQ的小区切换算法优化",
+            "en": "Optimization of Cell Switching Algorithm Based on RSRP/RSRQ in TD-LTE"
+        },
+        {
+            "title": "无线通信基站的定位算法研究",
+            "en": "Research on Localization Algorithm of Wireless Communication Base Station"
+        },
+        {
+            "title": "4G网络中无线基站的设计分析",
+            "en": "Design Analysis of Wireless Base Station in 4G Network"
+        },
+        {
+            "title": "5G本地定位架构发展趋势探讨",
+            "en": "Exploration of Development Trends of 5G Local Positioning Architecture"
+        },
+        {
+            "title": "高阶ESPRIT定位算法性能分析",
+            "en": "Performance Analysis of Higher Order ESPRIT Localization Algorithm"
+        },
+        {
+            "title": "线性天线阵列简化高阶DOA和距离估计",
+            "en": "Simplified High-Order DOA and Range Estimation with Linear Antenna Array"
+        },
+        {
+            "title": "室内TOA测距误差建模",
+            "en": "Modeling of Indoor TOA Ranging Error for Body-Mounted Sensors"
+        },
+        {
+            "title": "基于散射区模型与参数聚类的室外NLOS单站定位算法",
+            "en": "Outdoor NLOS Single Station Localization Algorithm Based on Scattering Area Model and Parameter Clustering"
+        },
+        {
+            "title": "基于RSS的多径区分方法",
+            "en": "Method of Multipath Discrimination Based on RSS"
+        },
+        {
+            "title": "基于双网格的改进DBSCAN聚类算法",
+            "en": "Revised DBSCAN Clustering Algorithm Based on Dual Grid"
+        }
+    ],
+    "relations": [
+        {
+            "source": "MIMO移动通信系统中的单基站定位技术研究",
+            "target": "基于WiFi信道状态信息的单基站室内定位研究",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "5G超密集组网关键技术与组网架构探讨",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "面向5G的超密集网络中分布式无线资源管理的研究",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "UDN部署下的多连接技术研究",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "毫米波移动宽带系统介绍",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "TD-LTE基于RSRP/RSRQ的小区切换算法优化",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "无线通信基站的定位算法研究",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "4G网络中无线基站的设计分析",
+            "type": "相关"
+        },
+        {
+            "source": "5G中的应用场景和使能技术",
+            "target": "5G本地定位架构发展趋势探讨",
+            "type": "相关"
+        },
+        {
+            "source": "高阶ESPRIT定位算法性能分析",
+            "target": "线性天线阵列简化高阶DOA和距离估计",
+            "type": "相关"
+        },
+        {
+            "source": "室内TOA测距误差建模",
+            "target": "基于散射区模型与参数聚类的室外NLOS单站定位算法",
+            "type": "相关"
+        },
+        {
+            "source": "基于RSS的多径区分方法",
+            "target": "基于双网格的改进DBSCAN聚类算法",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "NLOS identification in range-based source localization", "en": ""},
+        {"title": "Maximum likelihood location for identification of line-of-sight base stations", "en": ""},
+        {"title": "Radio wave propagation prediction based on 3D reverse ray-tracing", "en": ""}
+    ],
+    "relations": [
+        {"source": "NLOS identification in range-based source localization", "target": "Radio wave propagation prediction based on 3D reverse ray-tracing", "type": "prediction method"},
+        {"source": "Maximum likelihood location for identification of line-of-sight base stations", "target": "NLOS identification in range-based source localization", "type": "location identification method"}
+    ]
+}

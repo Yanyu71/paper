@@ -1,0 +1,152 @@
+4.3.3.1VCFR信道估计实现的优化
+1. LS估计模块的优化
+在VCFR信道实现中，Code Warrior提供了很多可进行代码分析的工具。下文 进行优化分析的场景均为100RB, QPSK调制情形。所有代码按编译器03进行编 译。优化前LS模块总时间如下图所述：
+Start addr.„ Function name	cycles-total	da粕 stalls executjcn stalls 存 executed program stalls
+GxCOOOOOOO	coRi»Dn_go 1 d_gen	61892	　　　　25408	　　6892	　　31505	43
+OxCDQfXXTlO eNb5HPuschCh>anEs t NcsCa. 1	571	　　　　248	　　67	　　　253	　　　0
+OxCWOOFSO	©HbPxChanEst. AgCa ic	26901$	|~L2^~]	　　35079	　　皿618	130
+0x£W01B20 eNbRxPuschChanEs t ZcGen	433		　　50	　　　148	33
+OxCOOOlDAO eNbRxChanEst	4®	　　　　　95	　　35	　　　80	1S8
+jxCOOOIEAO 虾云	206	　　　　　33	　　37	　　　6J	61
+GxCOOOlFSQ		Qdiv32_s	147	　　　　　0	　　31	　　　114	　　　0
+OxCOOO^GW		Q»iod32_&	246	　　　　　Q	　　73	　　　14B	　　　1
+OxC0002130		QFMul	184	　　　　　0	　　21	　　　45	92
+QxC00027EO		QFloatToInt32u	108	　　　　　0	　　13	　　　34	48
+0yCOOO2MO		QFloatToIntl^u	32	　　　　　0	　　13	　　　6	59
+G>C0OG2DFa		QInt32sToFloat	122	　　　　　Q	　　7	　　　24	82
+图4-9 LS估计模块优化前时间
+由上图4-9可见，在优化前，总时间约为330000个cycle （左侧框区域cycle 数累加），内核主频为1GHz,故优化前时间约为330us。分函数来看主要时间开销 在函数eNbRxChanEstAgcalc。该函数主要功能为RB数大于2时，进行基本ZC 序列产生。进一步分析该函数，由Trace工具得到该函数内部时间使用情况如下图：
+压瘀ws诲y	家罗蕊S executed	　cydei-totd!	　　　stalk fjrog>an； sjafis	*项)
+z-Llki -12 3 5-1
+Eox； i»l. i- u£>Nsc„a. 1++.：		　　1«03	　　3	0	698
+(% 98, 1,0)
+for t j»0- j<12z j+<-)
+(	　　X17S	”242	137	0	　　5100
+locp_o;.'Unt (12. 12,1^ ■■)'：
+Eti&dx ” Mat感服3FFF0而)，>1；:	　　X17«	2SS12	G	0	　　14112
+CG；nl£"ieMp2c = ps?2t!upzc[ arinAdi-]	　　1176		胶诡	　　70S6	0	　　35225
+dell aM--3Quai'e.	　　1176	8552	　　5528	9	0
+1176	11753	　　3528	0	　　352S
+。C_,L_»py ： ?^ Iph；) [ 3 ) cow.1 (■ t o»p~c	　　1176	關斜	　　7056	0	　　17640
+.wi-iter (sl6pte：c.prE. eofiSJtSHpl .	. cmSZt©tipi J-sfei
+•■,coal § I sin ' (6LSi k ； ； < < 16 + psl6LSin.(k-i-i ;.
+。	•:>:•)：< 1 tetjplsin)
+.?»riter_2f	tput_.ls*k --iM AzroBp.': :ssb, co»32t.rSJip.? i -1
+vxitsr_2f >	. coM22ienpl »sb co»32te>iipi . isb?.，，>
+k * k+2.
+>	lx7S	　　1764©	0	　　0	3408
+>
+taz {b.： - 0 : b j < «8iszc„t !>：+；)
+<	5	　　　131	5	　　0	47
+E.n楸h、"怎厲FFFfgX，1 ：	5	　　　110	0	　　0	60
+coai6teKp2.c = pi 3 21 npza [ sx nAd r ].	5	　　　177	30	　　0	82
+'■		　　• -	-• - *
+57
+图4-10 LS估计中eNbRxChanEstAgcalc函数耗时分析
+由图4-10矩形部分标注了该函数主要耗时部分。通过分析，可见其主要耗时 发生在取数据耗时。该函数主要完成式2-6操作，C实现为了保证取dK的精度和 对各种RB下不同N值的适配，在存储指数表时最终采用了 N为32768的基本单 位，即以J32768作为存表的单位。这样存储指数表的实部、虚部，需要设置一个 short SinCos[32768*2]的大表，使用存储空间约为128K。产生ZC序列时需要中这 个大表中取数，在一个循环体内部取表不具有连续性，这导致了读数据cache命中 率低，读数据开销大。Cache Misses高的问题在Cache分析工具中亦有体现，如下 图 4-11：
+图4-11 LS模块优化前Cache Miss数据
+上图4-11中，柱状图分为三部分，最下方红色部分为Data Read的Cache Misses,中间蓝色部分为Data Write的Cache Misses,而最上方绿色部分为 Instruction Read的Cache Misses,可见红色部分在整个Cache Misses统计中占了大 部分比例o Cache Misses的统计也从侧面反映了读数据慢是本模块耗时大的重要原 因。而Cache Misses率高，很大程度上源自于大表的读写。CPU对于经常读写的 数据会load到cache中，但是对于大表，由于其数据太大无法在cache中驻留， 会导致数据频繁的从cache搬入搬出，直接导致CPU取数据失败，从而导致整个 代码时间执行开销大大增加。
+为了优化这个模块，开始时尝试优化表存储，通过减小表大小来达到Cache Misses问题的改善，但是多次尝试后效果并不好。
+最后通过“空间换时间”的方式，直接存储ZC基本序列来达到优化效果。考 虑到MSC8157拥有512Mbytes DDR3的存储空间，根据式2-3分析，基本ZC序 列取决于u, v值以及子载波数，u取值为0〜11,而v值为0,1,而子载波数只有 34种可能。因此，可以实现通过MATLAB计算得到所有的定点化处理的基本ZC 序列，并存表，该表累计使用3.45M空间。
+虽然从DDR3取出数据耗时比从M3中取数据开销大，但是将ZC序列直接存 表后，无需进行多余运算，只需要根据u, v计算查表索引。通过DMA直接从DDR3 中将大块连续的数据取进内存即可。
+通过存表法，辅以多字节操作指令、复数乘法指令等手段，起到了一个非常 好的优化效果。优化后时间统计如下：
+Start addr... function narne	cycles ieUi	=VIES executed	data		prcgi ann staHs	debug
+0xC0(XXXXX) eHbRKChanEsr	12771	5534	　　7065	32	事捋	　　G
+47	17	　　4	4	　　11	　　0
+cosn4on_goid_gen	1638	1527	　　2	30	　　78	　　0
+OxCOOCllSG 話部tcpy	391	SO	　　£8	20	3	　　0
+图4-12 LS估计模块优化后耗时统计
+由统计可知，时间开销从优化前的33Ous降为约14uso
+为了描述优化对Cache Misses问题的解决效果，将优化后Cache Misses统计
+图4-13 LS估计模块优化后cache Misses统计
+对比图4-11,4-13,不难发现，通过LS的各项优化，Cache Misses指数由优化 前的约890降到不到120,而且优化后Data Read在总Cache Misses中的占比也大 大降低。
+为了进一步衡量优化效果，引入AGU, ALU使用率来对比。在4.1节中介绍 了 MSC8157每个内核中有4个运算逻辑单元(ALU)以及2个地址产生单元 (AGU),在每个时钟周期内可以完成4ALU+2AGU操作。这说明，使用多ALU+ 多AGU的比例越高，代码执行效率越高。现将优化前后，AGU、ALU使用情况
+对比如下:
+59
+SUMMARY：
+图4-14 LS估计模块优化前ALU-AGU使用情况统计
+SUMMARY:
+D^y.U Paraiielis...
+L04	DALU Counter
+7384	AGU Psralleiism ...
+1.05	AGU Countef
+7441
+% / No. VL£S	4 ALU	　　3 ALU	2 ALU	　　　1 ALU	0 ALU	Totai AGU
+1.41% / 100 VIES	　0.01% / 1 VLES	0.04% / 3 VLES	　0.18% / 13 VLES	27.12% / 1928 VLES	28 77% / 2045 VIES
+1 AGU	-	13.14% / §34 VL6S	　0.03% / 2 VLES	0.17% / 12 VLES	　0.37% 7 26 VLES	33.44% / 2377 VIES	47.14%/ 3351 VLES
+sagu	2.58% / 212 VIES	　1.36^ / 97 VLSS	8嗣％ / 631 VLES	10.82% / 769 VLES	■' ?4-c / 3 V_£：	24.09% / 1712 VL£S
+Iota； ALU _	17.53% i 1246 VIES	1.41% / 100 VLES	必％ / 646 VLES	11.37% l 808 VLES	| 60.61% : 430& VIES	:100.00% / 7108 V„.
+图4-15 LS信道估计模块优化后ALU-AGU使用情况统计
+通过上图4-14与图4-15对比，图中左侧绿色框部分表示高效使用ALU-AGU 情形比例，在优化前高效使用AGU+ALU比例为零，而优化后4ALU+1 AGU的比 例占到13.14%,这说明经过优化后，代码执行过程中更加充分使用过了 CPU计算 资源。0ALU使用情形，这能从侧面反映出AGU的负载。优化前0ALU为87.18%, 优化后0ALU情形为60.61%,这说明经过优化AGU的负载降低了。
+2. VCFR信道估计子模块的优化
+在4.3.2.2节中详细介绍了 VCFR信道估计子模块的设计。该子模块主要运算 量为FFT与IFFT操作。除了这些模块外，其余主要运算量为复数乘法，对复数乘 法的优化主要从充分利用ALU, AGU考虑。手动将循环展开，在每个循环内部通 过read_4f完成64bit数据读，使用指令完成复数乘法，最后使用write_2f每次将 32bit数据写回数组中。-个基本的循环内部代码如下图：
+芝玲駕•冬归&藉 ™ 0; ■jl'SIdx <' () i ：?.:	)
+£
+eprlcop_ccun.,c •: ,: ' -
+read_4f 、
+read_2 三..
+目：：• ；	- ... -■ L_srulz ' ?, „	11,::： 1 <<：.•；. ;
+§ ' ST*:喏*泾£： :". •” ■: 21S '> ■' : ' T ''iss-i.：' r '	■ ：,4);
+芋 >21触半?es .；.：.：• .: L_eiu.1 t .,.... < "；cpl2,厂..•- T;
+:■- L	'■-::a : slS ■- ■ ； ：	• ：-1 ■；=，:
+- - •…
+i;	.. .. ： . *	■: .." - ;:：I. ?s ' r x <.；;
+"ET&X/Me 矿 '-工 '' '•	: ~	■: •■:-;
+i<• .■:確發題ks :？:.、：...:. ■ - L_znu 1 z . S ；.'w 14, s ："；•：：•涔如2 ； ：•
+$'TeKT5pP.es . ； - • - :	：.•"匸球务侦I"、—;
+z ■	■-	l
+)
+图4-16 VCFR子模块优化后代码实例
+如上图4-16所示，在复数乘循环内部采用“取多组数据一指令完成乘法-存多
+60
+组数据”的模式，对代码进行优化。这样做的好处是可以充分利用ALU, AGU资
+源。
+由于MAPLE-B2的使用需要硬件支持，而硬件平台不支持Trace工具使用。在 统计VCFR时间时，通过添加函数Timer的方式来计算时间。儿个Timer探针设置 如下图：
+图4-17 VCFR时间测试Timer探针设置点
+由于VCFR子模块实现时，需要两次调用eFTPE,分别完成IDFT和DFT的 计算，因此为了获取eFTPE计算IDFT的时间，需要设置两个Timer探针，如图 4-17中的T2及T3探针。Timer探针T2放置于eFTPE配置操作之前，而T3放置 于信号量结束等待状态之后，这样，T2和T3之间的时间差就是eFTPE完成IDFT 处理的时间。同理，为了得到eFTPE完成DFT处理的时间设置了 Timer探针T4
+61
+及T5。为了减小单次统计的误差，统计VCFR子模块时一共完成了 10000个子帧 的信道估计操作，进行平均之后，单次VCFR子模块时间统计Timer值如下图4-18 所示。图4-18中所示的6个计时变量即6个Timer探针的计时，计时器可以精确 到纳秒级别。要获得各个功能子模块的运行耗时，用这几个计时变量求差值即可。
+Name	Value
+4 渗'FmeVCFRlJ：。能：T	0x5Occb2bO
+(X)： u32Seccnd	42
+u32MiniSec	507
+u32MicroSec	684
+u32NaocSec	116
+s 冬¥ nimeVCFR2^Corel,	Ox50ccb2dO
+u32Seccnd	42
+(x)= u32MiHiSec	507
+网k u32MicroSec	698
+u32NaooSec	296
+4 矛 *TimeVCFR3^Ccrel"	0x50ccb2c0
+g u32Second	42
+u32Millt$e€	507
+(x)- u32M:c?o$ec	720
+3 u32NaooSec	32
+q RTimeVCFR4_Cor€l ,	Dx50ccb2a0
+(3<)- u92$e<ond	42
+d u32Milh$ec	507
+凶* u32Micro$ec	757
+妗 u32NaooSec	700
+4 0 ,,TimeVCFR5_Corel,	0x5Gccb290
+(x> u32Second	42
+fxr u32MilHSec	507
+即 u32MicroSec	776
+u32NacoSec	876
+或BTimeVCFR6_Corela	0x50ccb280
+(4- u32Second	42
+阵u32MilHSec	507
+u32MkroSec	785
+翎打 uS2Naoo$ec	952
+图4-18 VCFR子模块Timer计时结果
+使用这6个Timer可以得到对于模块的时间，时间整理如下表
+功能	耗时(us)
+添加VCFR,频域加窗操作	14.18
+IDFT	22.02
+时域去噪操作	3 /.J
+DFT	19.17
+去窗及去VCFR	9.07
+总时间	计 101.546
+表4-9 VCFR子模块各功能耗费时间统计
+由上表4-9可见，经过优化后，VCFR整体时间为lOlus左右。
+62
+结合前文LS模块估计时间，整个基于VCFR拓展的信道估计算法在最大RB 块情形下所费时间为115us.左右。在做系统设计时，供信道估计处理的时延为3 个SC-FDMA符号的时间跨亩，总共为214us。优化后的约为可供处理时延要求的 一半，这表明经过优化后的信道估计算法能够满足系统设计的要求。

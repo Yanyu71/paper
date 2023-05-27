@@ -1,0 +1,5 @@
+2.2.2软件选择
+除了硬件设备之外，软件的选择同样会影响Hadoop集群的性能。
+首先，Hadoop的版本选择。Hadoop有很多版本，作为一个开源项目，同时 很多公司也有自己的发行版。最普通的方式为选择Apache官方提供的版本(如 果根据业务需求发现其他公司提供的版本更能契合实际要求，亦可自行选择。)， Apache提供的Hadoop版本至目前分为Hadoop 1和Hadoop2,主要区别为 MapReduce (MRvl)和Yam (MRv2)框架。这两个框架的进程启动和概念都是 不一样的，而且Yam作为最新版本，业界普遍认为稳定性和成熟度不如 MapReduceo另外，当前最流行的非Apache的Hadoop发行版是Cloudera公司 的Hadoop版本，即CDH。当前CDH的版本为CDH5,具有Apache2.0和1.0的 特点，包括NameNode HA和Federation,同时支持MRvl和MRv2,这是当前 Apache版本不具备的。CDH的另一个特点是其集成了不同的Hadoop生态系统 项目，如HBase、Hive等，这些组件使得Hadoop使用起来更加友好，简化了组 件安装步骤，大大缩短了开发周期。还有其他的不同Hadoop版本，根据自己的 实际需求进行选择最适合的Hadoop版本，从而提升Hadoop集群的性能。
+其次，操作系统和Java版本的选择。Hadoop内核和生态系统中的部分的组 件是Java写的，因为Java代码本身是跨平台的，所以理论上可以运行在各种操 作系统上。但Hadoop编写的时候，基本以Linux为设计目标系统，因此其中借 鉴大量的Linux架构思想和设计思路，使得Hadoop和其组件的很多代码如： start/stop脚本及权限模型都依赖于Linux的环境。故建议Hadoop集群运行在 Linux系统而不是Windows系统上，更容易操作和运用。Hadoop集群运行要求 Java的最低版本为Java6,使用更新版本的Java可以更好地利用其新特性，如
+Java6ul4之后的版本，具有压缩普通对象指针的功能。

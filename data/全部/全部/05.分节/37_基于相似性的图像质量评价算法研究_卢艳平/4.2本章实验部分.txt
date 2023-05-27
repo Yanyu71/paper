@@ -1,0 +1,2 @@
+4.2本章实验部分
+为了客观地衡量图像质量评价方法效果的好坏，最直观且最有效的办法就是将图像质 量评价方法的结果与人为主观评价的结果进行对比，并进行分析。为了对质量评价算法的 质量进行评价，目前一些大学和学者创建了图像质量评价数据，常见的图像质量评价数据 库为：LIVE database?, Categorical Image Quality (CSIQ) database[54], Tampere Image Database 2008 (TID2008)印1, Tampere Image Database 2013 database (TID2013)其〕。

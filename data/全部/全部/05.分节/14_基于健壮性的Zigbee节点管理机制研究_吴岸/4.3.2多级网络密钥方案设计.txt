@@ -1,0 +1,41 @@
+4.3.2多级网络密钥方案设计
+正如本文2.2.1所示，簇型网络目前的使用场景最为广泛，适合絶大多数大型网络。 簇型网络是以簇为基本单位，每个簇内的非簇头节点的数据都要先发送到簇头节点。簇 头节点对这些信息进行处理和汇聚后再转发。根据这种簇型网络的结构特点，本文创新 性地提出了一种多级网络密钥更新机制。
+多级网络密钥将网络密钥分为两类：公共网络密钥和内部网络密钥。每个簇内都维 护自己的网络密钥；同时所有的簇头节点除了存储各自内部网络密钥之外还保留一个共 享的公共网络密钥。传感器节点直接使用内部网络迷药加密数据，而簇头节点负责整个 簇内的数据加解密。详细的处理过程如图4-3所示：
+Cluster-head M如」receives Z)«ra.{Dst,Scr,Key;.}
+If ( Dst W Cluster Rad ,{•} ), where Clusterhead ,.{•} means the set of
+nodes in the cluster of N, J
+head
+If( Scr^Clusterhcad )
+Transmit Datai directly to Dst
+else
+decrypt Data, with NKpublic , then set Keyi=NK.ilernal
+encrypt Datai With Key.
+Transmit Datai to another Nhead j,i h j
+else
+If( Scr ^Clusterheiid .{i})
+decrypt Data, with NKinternaI , then set Key^NK^.
+encrypt Datai With Keyj
+Transmit Datai to another Nhead w j
+else
+Transmit Data, directly to Dst
+图4-3分级网络密钥加解密过程伪代码
+25
+当一个非簇头节点离开网络时，公共网络密钥保持不变，只需要在簇内更新内部密 钥；当簇头节点离开网络时，在所有簇头节点间更新公共网络密钥，每个簇的内部网络 密钥保持不变。用INK代表内部网络密钥，PNK代表公共网络密钥。由是整个网络簇 头节点的个数。112是每个簇的节点数。多级网络的密钥更新过程如下图：
+Trust center TC receives a leaving notification of node
+IRN,. ^Nheads{i} ),where Nheads{9} means a set of cluster-head nodes in network
+Generate a new PNKt
+Broadcast PNK update frame {Public, PNK,. }in whole network
+For i =1 to n；
+Nheads{^} set PNK = PNKj
+else
+Broadcast INK update frame {Internal, clusterlD} in whole network
+For i =1 to
+If( i = clusterlD)
+Generate a new INK,
+Broadcast NK update frame in cluster
+For i =1 to n2
+setNK=WK,
+else
+Abandon frame
+图4-4分级网络密钥加解密过程伪代码
+这种分级网络更新机制利用簇型网络的通信信息需发往簇头节点的特点，将网络密 钥划分为两个层次：内部网络密钥和公共网络密钥。通过将内部网络密钥更新过程限制 在一个簇的范围内来减少网络密钥更新所需的帧数，从而减少网络资源的消耗。

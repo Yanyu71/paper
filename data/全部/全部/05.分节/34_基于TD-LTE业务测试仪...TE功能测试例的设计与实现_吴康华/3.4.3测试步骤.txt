@@ -1,0 +1,38 @@
+3.4.3测试步骤
+测试步骤如下：
+I)UE发起视频寻呼，该会话呼叫配置在SS上的px_CalleeUri分量，根据 UE的支持情况可以是SIP地址或者是电话号码，并且该分量可能包含拨 号串指示全球的、本地的、地理上本地的电话号码。SS等待UE发送包 含首条SDP邀请的INVITE请求。
+2 )	UE发送INVITE请求到SS。
+3)SS对UE请求回复一条100Tryingo
+4)SS接下来继续回复一条183 Session Progresso
+5)SS等待UE发送PRACK请求，该请求中可能包含第二条SDP邀请。
+6)SS 回复 PRACK 以 200 OK。
+7)SS等待UE发送UPDATE请求，该请求包含最后一次SDP邀请。
+8)SS 回复 UPDATE 以 200 OK。
+9)SS 回复 INVITE 以 180 Ringing。
+10)SS等待UE发送PRACK请求。
+II)SS 回复 PRACK 一条 200 OKo
+12)SS 回复 INVITE —条 200 OKo
+13)SS等待UE发送针对200 OK的ACK。
+14)UE 发送 BYE。
+15)SS接收到BYE回复200 OK。
+下面的表格是详细的信令流程设计以及测试点的标注：
+表3-3视频主叫测试例详细信令流程
+步骤	　方向	信令	注释	测试点
+1		UE准备发起IMS视 频呼叫
+2	上行	INVITE	INVITE中包含第一 条SDP邀请	　　测试点1
+3	下行	100 Trying	　SS发送临时回复
+4	下行	183 Session Progress	　SS发送SDP回复
+5	上行	PRACK	UE确认收到183 Session Progress,女口 果专用EPS承载己 经建立，则包含第二 次SDP邀请	　　测试点2
+6	下行	200 OK	SS发送200 OK回复
+第二条SDP邀请
+7	上行	UPDATE	如果专用EPS承载 已经建立，UE发送 第二次SDP邀请（可 选）
+8	下行	200 OK	　　　回复上一条
+UPDATE （回复）
+9	　下行	180 Ringing	SS 发送 180 Ringing
+10	上行	PRACK	　UE确认收到180
+Ringing	　　测试点3
+11	　下行	200 OK	　　　回复PRACK
+12	　下行	200 OK	　　　回复INVITE
+13	上行	ACK	　UE 确认 200 OK	　　测试点4
+14	上行	BYE	　UE发送挂机请求	　　测试点5
+15	　下行	200 OK	回复BYE

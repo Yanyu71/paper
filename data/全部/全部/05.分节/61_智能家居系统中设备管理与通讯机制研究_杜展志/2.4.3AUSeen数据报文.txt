@@ -1,0 +1,16 @@
+2.4.3AUSeen数据报文
+AllSeen设备通过总线方法、信号或属性进行数据交互，因而，AllSeen框架引 入了 METHOD_CALL、METHOD_RETURN 和 SIGNAL 三个新标志来拓展 D-BUS 的底层消息报文格式。这三个标志分别用于标识AllSeen服务框架调用、响应总线方 法或是发送总线信号时使用的消息类型。此外，AUSeen服务框架还定义了 ERROR 消息格式专门用于标识调用方法时发生故障的异常信息。虽然这四种消息使用的场 景各异，但它们共同组成了 AUSeen的基础消息报文集。
+为了进一步了解AllSeen的消息报文，图2-11描述了 AllSeen的消息报文格式。 字节顺序标识标明了 AllSeen消息报文采用的字节顺序，其中ASCH字符代表 小头字节序，'B'代表大头字节序；消息类型描述了 AHSeen报文的类型，AllSeen 一共支持如下五种报文格式，INVALID代表无效消息，METHOD_CALL代表方法调用消 息，METHOD_RETURN代表方法结果返回消息，ERROR代表方法调用异常，SIGNAL代表 信号信息，分别用数字0,1, 2, 3, 4表示；头标识是头域的按位或，其中有关头域定 义详见表2-4；协议版本描述了消息发送方使用的AHSeen协议版本；消息体长度定 义了 AHSeen报文的长度，从报头结尾开始计算，单位为字节；表2-4描述了 AUSeen 消息报文中各个字段所代表的含义；消息序列是发送方给AllSeen报文赋值的非零数 字，主要用于识别响应的AUSeen报文；头域链表，由（字节，变量）数组或是结构 体构成，每位成员分别代表不同头域的域码和相应的取值；消息体为AllSeen报文 需要传送的数据。
+图2・11 AllSeen消息报文
+18
+头域定义了 AllSeen报文的基本信息，AllSeen头域的定义如表2-4所示。
+表2-4 AllSeen头域定义
+名称	值	描述
+NO_REPLY_EXPECTED	0x01	方法调用无需返回结果
+AUTO_START	0x02	自动启用服务
+ALLOW_REMOTE_MSG	0x04	允许接收远端消息
+(Reserved)	0x08	保留域
+SESSIONLESS	0x10	无会话信号信息
+GLOBAL_BROADCAST	0x20	全局广播信号
+COMPRESSED	0x40	表明AllSeen信息报头被压缩
+ENCRYPTED	0x80	表明AllSeen信息正文被加密

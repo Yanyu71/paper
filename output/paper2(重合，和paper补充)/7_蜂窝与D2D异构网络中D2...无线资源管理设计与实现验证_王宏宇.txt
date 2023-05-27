@@ -1,0 +1,3264 @@
+﻿{
+    "knowledge_points": [
+        {"title": "无线网络发展", "en": "Development of Wireless Networks"},
+        {"title": "LTE/LTE-A蜂窝网络", "en": "LTE/LTE-A Cellular Network"},
+        {"title": "快速调度", "en": "Fast Scheduling"},
+        {"title": "协作多点", "en": "Coordinated Multipoint"},
+        {"title": "载波聚合", "en": "Carrier Aggregation"},
+        {"title": "OFDMA/SC-FDMA", "en": "OFDMA/SC-FDMA"},
+        {"title": "LTE-A/LTE物理层帧结构", "en": "LTE-A/LTE Physical Layer Frame Structure"},
+        {"title": "终端直通技术", "en": "Device-to-Device Communication Technology"}
+    ],
+    "relations": [
+        {"source": "无线网络发展", "target": "LTE/LTE-A蜂窝网络", "type": "包含"},
+        {"source": "LTE/LTE-A蜂窝网络", "target": "快速调度", "type": "包含"},
+        {"source": "LTE/LTE-A蜂窝网络", "target": "协作多点", "type": "包含"},
+        {"source": "LTE/LTE-A蜂窝网络", "target": "载波聚合", "type": "包含"},
+        {"source": "LTE/LTE-A蜂窝网络", "target": "OFDMA/SC-FDMA", "type": "包含"},
+        {"source": "LTE/LTE-A蜂窝网络", "target": "LTE-A/LTE物理层帧结构", "type": "包含"},
+        {"source": "无线网络发展", "target": "终端直通技术", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "移动互联网本地服务(ProSe)", "en": "ProSe for Mobile Internet Local Services"},
+        {"title": "蜂窝与公共安全网络(PubSe)", "en": "PubSe for Cellular and Public Safety Networks"},
+        {"title": "终端直通技术", "en": "Direct Device-to-Device Communication Technology"},
+        {"title": "D2D技术", "en": "Device-to-Device Communication Technology"},
+        {"title": "蜂窝网络", "en": "Cellular Network"},
+        {"title": "WiFi", "en": "WiFi"},
+        {"title": "蓝牙", "en": "Bluetooth"},
+        {"title": "LTE-D2D", "en": "LTE-D2D"},
+        {"title": "商业应用", "en": "Commercial Applications"},
+        {"title": "公共安全服务", "en": "Public Safety Services"},
+        {"title": "干扰控制", "en": "Interference Control"},
+        {"title": "无线资源分配", "en": "Wireless Resource Allocation"},
+        {"title": "功率控制", "en": "Power Control"},
+        {"title": "链路自适应机制", "en": "Link Adaptation Mechanism"},
+        {"title": "基站辅助控制", "en": "Base Station-Assisted Control"},
+        {"title": "分布式控制方案", "en": "Distributed Control Scheme"},
+        {"title": "资源空洞", "en": "Resource Hole"},
+        {"title": "PDCCH", "en": "Physical Downlink Control Channel"}
+    ],
+    "relations": [
+        {"source": "ProSe", "target": "PubSe", "type": "related"},
+        {"source": "ProSe", "target": "Direct Device-to-Device Communication Technology", "type": "related"},
+        {"source": "PubSe", "target": "Direct Device-to-Device Communication Technology", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Cellular Network", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "WiFi", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Bluetooth", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "LTE-D2D", "type": "related"},
+        {"source": "LTE-D2D", "target": "Commercial Applications", "type": "related"},
+        {"source": "Commercial Applications", "target": "Local Broadcast", "type": "related"},
+        {"source": "Commercial Applications", "target": "Information Sharing", "type": "related"},
+        {"source": "Commercial Applications", "target": "Content-Based Services", "type": "related"},
+        {"source": "LTE-D2D", "target": "Public Safety Services", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Interference Control", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Wireless Resource Allocation", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Power Control", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Link Adaptation Mechanism", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Base Station-Assisted Control", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Distributed Control Scheme", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Resource Hole", "type": "related"},
+        {"source": "Direct Device-to-Device Communication Technology", "target": "Physical Downlink Control Channel", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "overlay与underlay复用", "en": "Overlay and underlay reuse"},
+        {"title": "分段预估SINR最大化D2D吞吐的资源选择方案", "en": "Resource selection scheme based on segmented estimated SINR maximization for D2D throughput"},
+        {"title": "异构网络资源复用方式", "en": "Heterogeneous network resource reuse methods"},
+        {"title": "D2D无线资源管理设计", "en": "D2D wireless resource management design"},
+        {"title": "D2DRRM方案", "en": "D2DRRM scheme"},
+        {"title": "链路自适应机制", "en": "Link adaptive mechanism"},
+        {"title": "分布式D2D无线资源管理方案", "en": "Distributed D2D wireless resource management scheme"},
+        {"title": "干扰控制", "en": "Interference control"},
+        {"title": "频谱利用率", "en": "Spectrum utilization rate"}
+    ],
+    "relations": [
+        {"source": "overlay与underlay复用", "target": "分段预估SINR最大化D2D吞吐的资源选择方案", "type": "包含"},
+        {"source": "分段预估SINR最大化D2D吞吐的资源选择方案", "target": "D2D无线资源管理设计", "type": "涉及"},
+        {"source": "D2D无线资源管理设计", "target": "D2DRRM方案", "type": "包含"},
+        {"source": "D2D无线资源管理设计", "target": "链路自适应机制", "type": "包含"},
+        {"source": "D2D无线资源管理设计", "target": "分布式D2D无线资源管理方案", "type": "包含"},
+        {"source": "分布式D2D无线资源管理方案", "target": "干扰控制", "type": "涉及"},
+        {"source": "分布式D2D无线资源管理方案", "target": "频谱利用率", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D通信", "en": "D2D Communication"},
+        {"title": "蜂窝网络", "en": "Cellular Network"},
+        {"title": "异构网络", "en": "Heterogeneous Network"},
+        {"title": "无线资源管理", "en": "Wireless Resource Management"},
+        {"title": "集中控制", "en": "Centralized Control"},
+        {"title": "辅助控制", "en": "Assisted Control"},
+        {"title": "干扰管理", "en": "Interference Management"}
+    ],
+    "relations": [
+        {"source": "D2D通信", "target": "蜂窝网络", "type": "属于"},
+        {"source": "蜂窝网络", "target": "异构网络", "type": "属于"},
+        {"source": "无线资源管理", "target": "蜂窝网络", "type": "关联"},
+        {"source": "无线资源管理", "target": "D2D通信", "type": "关联"},
+        {"source": "蜂窝网络", "target": "集中控制", "type": "包含"},
+        {"source": "蜂窝网络", "target": "辅助控制", "type": "包含"},
+        {"source": "集中控制", "target": "干扰管理", "type": "关联"},
+        {"source": "辅助控制", "target": "干扰管理", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "专用无线资源的复用方式", "en": "Reuse of dedicated wireless resources"},
+        {"title": "蜂窝通信与D2D通信的信道独立性", "en": "Independence of channels between cellular communication and D2D communication"},
+        {"title": "蜂窝网络内部干扰", "en": "Internal interference in cellular networks"},
+        {"title": "D2D网络内部干扰", "en": "Internal interference in D2D networks"},
+        {"title": "基于正交的多址接入技术", "en": "Orthogonal multiple access technology"},
+        {"title": "分布式协同机制", "en": "Distributed collaborative mechanism"},
+        {"title": "共享方式复用无线资源", "en": "Reuse of wireless resources in shared mode"},
+        {"title": "异构网络间干扰", "en": "Interference between heterogeneous networks"},
+        {"title": "重用蜂窝上行资源", "en": "Reuse of cellular uplink resources"},
+        {"title": "重用蜂窝下行资源", "en": "Reuse of cellular downlink resources"},
+        {"title": "无线资源管理", "en": "Wireless resource management"},
+        {"title": "异构网络组网方案选择", "en": "Selection of heterogeneous network networking scheme"}
+    ],
+    "relations": [
+        {"source": "专用无线资源的复用方式", "target": "蜂窝通信与D2D通信的信道独立性", "type": "包含"},
+        {"source": "专用无线资源的复用方式", "target": "共享方式复用无线资源", "type": "包含"},
+        {"source": "蜂窝通信与D2D通信的信道独立性", "target": "网络内部干扰", "type": "排除"},
+        {"source": "蜂窝通信与D2D通信的信道独立性", "target": "D2D网络内部干扰", "type": "排除"},
+        {"source": "网络内部干扰", "target": "基于正交的多址接入技术", "type": "解决"},
+        {"source": "D2D网络内部干扰", "target": "分布式协同机制", "type": "解决"},
+        {"source": "共享方式复用无线资源", "target": "网络内部干扰", "type": "一致"},
+        {"source": "共享方式复用无线资源", "target": "异构网络间干扰", "type": "一致"},
+        {"source": "重用蜂窝上行资源", "target": "网络内部干扰", "type": "一致"},
+        {"source": "重用蜂窝下行资源", "target": "网络内部干扰", "type": "一致"},
+        {"source": "重用蜂窝上行资源", "target": "异构网络间干扰", "type": "产生"},
+        {"source": "重用蜂窝下行资源", "target": "异构网络间干扰", "type": "产生"},
+        {"source": "无线资源管理", "target": "重用蜂窝上行资源", "type": "包含"},
+        {"source": "无线资源管理", "target": "重用蜂窝下行资源", "type": "包含"},
+        {"source": "异构网络组网方案选择", "target": "专用无线资源的复用方式", "type": "包含"},
+        {"source": "异构网络组网方案选择", "target": "蜂窝通信与D2D通信的信道独立性", "type": "包含"},
+        {"source": "异构网络组网方案选择", "target": "无线资源管理", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异构网络资源使用角色", "en": "Role of Heterogeneous Network Resource Usage"},
+        {"title": "复用上下行资源的选择", "en": "Selection of Reusing Uplink and Downlink Resources"},
+        {"title": "D2D通信物理层设计思路", "en": "Design Ideas for D2D Communication Physical Layer"},
+        {"title": "D2D无线资源管理框架", "en": "Framework for D2D Wireless Resource Management"}
+    ],
+    "relations": [
+        {"source": "蜂窝网络用户", "target": "授权资源使用主用户", "type": "is-a"},
+        {"source": "D2D用户", "target": "异构网络中的次用户", "type": "is-a"},
+        {"source": "蜂窝网络", "target": "集中控制特性", "type": "has"},
+        {"source": "基站", "target": "提前通知蜂窝终端所使用的信道位置", "type": "has"},
+        {"source": "LTE网络", "target": "下行资源分配指示以PDCCH随路的方式下发", "type": "has"},
+        {"source": "D2D通信", "target": "复用上行蜂窝资源", "type": "uses"},
+        {"source": "D2D网络", "target": "使用与蜂窝网络相同的帧格式及多址方案", "type": "has"},
+        {"source": "LTE", "target": "D2D技术在3GPPLTfc-A的标准化中被引入蜂窝通信网络", "type": "has"},
+        {"source": "D2DRRM", "target": "提供对其通信所使用的时域、频域资源位置、发送功率、调制编码方案(MCS)决策的能力", "type": "has"},
+        {"source": "D2DRRM", "target": "保证通信的可靠高效，并保证网络间干扰可控", "type": "has"},
+        {"source": "D2DRRM", "target": "决策应全部在DUE侧进行，蜂窝网络仅提供辅助信息", "type": "has"},
+        {"source": "D2DRRM", "target": "使用自主竞争方式完成D2D对数据信道的接入", "type": "has"},
+        {"source": "干扰认知", "target": "通过收集蜂窝网络资源调度信息、干扰感知功率信息，综合形成干扰图谱知识供后续决策使用", "type": "has"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "干扰认知", "en": "Interference Cognition"},
+        {"title": "干扰控制", "en": "Interference Control"},
+        {"title": "资源分配", "en": "Resource Allocation"},
+        {"title": "链路自适应", "en": "Link Adaptation"},
+        {"title": "D2D资源选择决策", "en": "D2D Resource Selection Decision"},
+        {"title": "D2D网络自主竞争接入机制", "en": "D2D Autonomous Competition Access Mechanism"},
+        {"title": "同步时隙冲突避免", "en": "Synchronous Time Slot Conflict Avoidance"},
+        {"title": "SSCA方案", "en": "SSCA Scheme"}
+    ],
+    "relations": [
+        {"source": "干扰认知", "target": "干扰控制", "type": "related"},
+        {"source": "干扰认知", "target": "资源分配", "type": "related"},
+        {"source": "干扰控制", "target": "资源分配", "type": "related"},
+        {"source": "资源分配", "target": "链路自适应", "type": "related"},
+        {"source": "资源分配", "target": "D2D资源选择决策", "type": "related"},
+        {"source": "链路自适应", "target": "D2D资源选择决策", "type": "related"},
+        {"source": "D2D网络自主竞争接入机制", "target": "同步时隙冲突避免", "type": "related"},
+        {"source": "同步时隙冲突避免", "target": "SSCA方案", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "RTS-CTS-DATA传输流程",
+            "en": "RTS-CTS-DATA transmission process"
+        },
+        {
+            "title": "D2D通信中的竞争场景",
+            "en": "Competition scenarios in D2D communication"
+        },
+        {
+            "title": "SSCA分布协同机制",
+            "en": "SSCA distributed coordination mechanism"
+        },
+        {
+            "title": "P-概率时隙Aloha算法",
+            "en": "P-probability slot Aloha algorithm"
+        },
+        {
+            "title": "二进制指数退避算法",
+            "en": "Binary exponential backoff algorithm"
+        },
+        {
+            "title": "最大信道利用率",
+            "en": "Maximum channel utilization"
+        },
+        {
+            "title": "终端的传输概率",
+            "en": "Terminal transmission probability"
+        }
+    ],
+    "relations": [
+        {
+            "source": "RTS-CTS-DATA传输流程",
+            "target": "D2D通信中的竞争场景",
+            "type": "包含"
+        },
+        {
+            "source": "D2D通信中的竞争场景",
+            "target": "RTS-CTS-DATA传输流程",
+            "type": "被包含"
+        },
+        {
+            "source": "SSCA分布协同机制",
+            "target": "P-概率时隙Aloha算法",
+            "type": "基于"
+        },
+        {
+            "source": "SSCA分布协同机制",
+            "target": "二进制指数退避算法",
+            "type": "基于"
+        },
+        {
+            "source": "最大信道利用率",
+            "target": "终端的传输概率",
+            "type": "相关"
+        },
+        {
+            "source": "终端的传输概率",
+            "target": "最大信道利用率",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "C%和固定窗口值对BEB算法的影响",
+            "en": "Impact of C% and fixed window value on BEB algorithm"
+        },
+        {
+            "title": "标准BEB算法的退避过程",
+            "en": "Backoff process of standard BEB algorithm"
+        },
+        {
+            "title": "D2D通信中冲突域较小的特点",
+            "en": "The characteristic of small collision domain in D2D communication"
+        },
+        {
+            "title": "初传非退避BEB算法",
+            "en": "Initial non-backoff BEB algorithm"
+        },
+        {
+            "title": "PBCA算法",
+            "en": "PBCA algorithm"
+        },
+        {
+            "title": "D2D公共控制信道分配",
+            "en": "Allocation of D2D common control channel"
+        },
+        {
+            "title": "基于SSCA的D2D数据传输流程",
+            "en": "Data transmission process of D2D based on SSCA"
+        }
+    ],
+    "relations": [
+        {
+            "source": "C%和固定窗口值对BEB算法的影响",
+            "target": "标准BEB算法的退避过程",
+            "type": "包含"
+        },
+        {
+            "source": "标准BEB算法的退避过程",
+            "target": "初传非退避BEB算法",
+            "type": "改进"
+        },
+        {
+            "source": "初传非退避BEB算法",
+            "target": "PBCA算法",
+            "type": "比较"
+        },
+        {
+            "source": "D2D通信中冲突域较小的特点",
+            "target": "初传非退避BEB算法",
+            "type": "应用"
+        },
+        {
+            "source": "D2D公共控制信道分配",
+            "target": "基于SSCA的D2D数据传输流程",
+            "type": "前置"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "TDD网络中D2D数据传输的竞争粒度设计",
+            "en": "Competition granularity design of D2D data transmission in TDD network"
+        },
+        {
+            "title": "FDD网络中D2D数据传输的竞争粒度设计",
+            "en": "Competition granularity design of D2D data transmission in FDD network"
+        },
+        {
+            "title": "基于D2D链路速率预估的多进程RTS触发机制",
+            "en": "Multi-process RTS triggering mechanism based on D2D link rate estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "TDD网络中D2D数据传输的竞争粒度设计",
+            "target": "FDD网络中D2D数据传输的竞争粒度设计",
+            "type": "对比"
+        },
+        {
+            "source": "TDD网络中D2D数据传输的竞争粒度设计",
+            "target": "基于D2D链路速率预估的多进程RTS触发机制",
+            "type": "关联"
+        },
+        {
+            "source": "FDD网络中D2D数据传输的竞争粒度设计",
+            "target": "基于D2D链路速率预估的多进程RTS触发机制",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D链路速率预估",
+            "en": "D2D Link Rate Estimation"
+        },
+        {
+            "title": "多进程RTS触发机制",
+            "en": "Multi-Process RTS Trigger Mechanism"
+        },
+        {
+            "title": "多进程HARQ",
+            "en": "Multi-Process HARQ"
+        },
+        {
+            "title": "D2D通信用户",
+            "en": "D2D Communication User"
+        },
+        {
+            "title": "D2D-PSCH",
+            "en": "D2D-PSCH"
+        },
+        {
+            "title": "SD2D",
+            "en": "SD2D"
+        },
+        {
+            "title": "链路质量",
+            "en": "Link Quality"
+        },
+        {
+            "title": "蜂窝网络负载",
+            "en": "Cellular Network Load"
+        },
+        {
+            "title": "待发送缓冲区",
+            "en": "Pending Send Buffer"
+        },
+        {
+            "title": "RTS",
+            "en": "RTS"
+        },
+        {
+            "title": "CTS",
+            "en": "CTS"
+        },
+        {
+            "title": "信道竞争",
+            "en": "Channel Competition"
+        },
+        {
+            "title": "闭环控制",
+            "en": "Closed-Loop Control"
+        },
+        {
+            "title": "系统间干扰",
+            "en": "Interference between Systems"
+        },
+        {
+            "title": "认知协调机制",
+            "en": "Cognitive Coordination Mechanism"
+        },
+        {
+            "title": "异构网络",
+            "en": "Heterogeneous Network"
+        },
+        {
+            "title": "蜂窝上行资源",
+            "en": "Cellular Uplink Resources"
+        },
+        {
+            "title": "DUE",
+            "en": "DUE"
+        },
+        {
+            "title": "D2C干扰",
+            "en": "D2C Interference"
+        },
+        {
+            "title": "C2D干扰",
+            "en": "C2D Interference"
+        },
+        {
+            "title": "正交复用",
+            "en": "Orthogonal Multiplexing"
+        },
+        {
+            "title": "非线性",
+            "en": "Nonlinear"
+        },
+        {
+            "title": "截止",
+            "en": "Cutoff"
+        },
+        {
+            "title": "信号处理",
+            "en": "Signal Processing"
+        },
+        {
+            "title": "SINR",
+            "en": "SINR"
+        },
+        {
+            "title": "误码率",
+            "en": "Bit Error Rate"
+        },
+        {
+            "title": "D2D发送功率",
+            "en": "D2D Transmission Power"
+        },
+        {
+            "title": "PBSD2D",
+            "en": "PBSD2D"
+        },
+        {
+            "title": "D2D控制",
+            "en": "D2D Control"
+        },
+        {
+            "title": "SIB2",
+            "en": "SIB2"
+        },
+        {
+            "title": "PUSCH",
+            "en": "PUSCH"
+        },
+        {
+            "title": "路损",
+            "en": "Path Loss"
+        },
+        {
+            "title": "小区专用参考信号",
+            "en": "Cell-Specific Reference Signal"
+        },
+        {
+            "title": "PRACH",
+            "en": "PRACH"
+        },
+        {
+            "title": "Gpc",
+            "en": "Gpc"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D链路速率预估",
+            "target": "多进程RTS触发机制",
+            "type": "包含"
+        },
+        {
+            "source": "多进程HARQ",
+            "target": "多进程RTS触发机制",
+            "type": "相似"
+        },
+        {
+            "source": "D2D通信用户",
+            "target": "D2D-PSCH",
+            "type": "包含"
+        },
+        {
+            "source": "SD2D",
+            "target": "D2D链路速率预估",
+            "type": "属性"
+        },
+        {
+            "source": "链路质量",
+            "target": "D2D链路速率预估",
+            "type": "属性"
+        },
+        {
+            "source": "蜂窝网络负载",
+            "target": "D2D链路速率预估",
+            "type": "属性"
+        },
+        {
+            "source": "待发送缓冲区",
+            "target": "D2D链路速率预估",
+            "type": "属性"
+        },
+        {
+            "source": "RTS",
+            "target": "多进程RTS触发机制",
+            "type": "包含"
+        },
+        {
+            "source": "CTS",
+            "target": "多进程RTS触发机制",
+            "type": "包含"
+        },
+        {
+            "source": "信道竞争",
+            "target": "多进程RTS触发机制",
+            "type": "属性"
+        },
+        {
+            "source": "闭环控制",
+            "target": "多进程RTS触发机制",
+            "type": "属性"
+        },
+        {
+            "source": "系统间干扰",
+            "target": "认知协调机制",
+            "type": "包含"
+        },
+        {
+            "source": "异构网络",
+            "target": "认知协调机制",
+            "type": "属性"
+        },
+        {
+            "source": "蜂窝上行资源",
+            "target": "D2C干扰",
+            "type": "属性"
+        },
+        {
+            "source": "DUE",
+            "target": "D2C干扰",
+            "type": "包含"
+        },
+        {
+            "source": "DUE",
+            "target": "C2D干扰",
+            "type": "包含"
+        },
+        {
+            "source": "正交复用",
+            "target": "D2C干扰",
+            "type": "属性"
+        },
+        {
+            "source": "非线性",
+            "target": "D2C干扰",
+            "type": "属性"
+        },
+        {
+            "source": "截止",
+            "target": "D2C干扰",
+            "type": "属性"
+        },
+        {
+            "source": "信号处理",
+            "target": "D2C干扰",
+            "type": "属性"
+        },
+        {
+            "source": "SINR",
+            "target": "C2D干扰",
+            "type": "属性"
+        },
+        {
+            "source": "误码率",
+            "target": "C2D干扰",
+            "type": "属性"
+        },
+        {
+            "source": "D2D发送功率",
+            "target": "PBSD2D",
+            "type": "属性"
+        },
+        {
+            "source": "D2D控制",
+            "target": "PBSD2D",
+            "type": "属性"
+        },
+        {
+            "source": "SIB2",
+            "target": "PBSD2D",
+            "type": "属性"
+        },
+        {
+            "source": "PUSCH",
+            "target": "PBSD2D",
+            "type": "属性"
+        },
+        {
+            "source": "路损",
+            "target": "PBSD2D",
+            "type": "属性"
+        },
+        {
+            "source": "小区专用参考信号",
+            "target": "路损",
+            "type": "属性"
+        },
+        {
+            "source": "PRACH",
+            "target": "路损",
+            "type": "属性"
+        },
+        {
+            "source": "Gpc",
+            "target": "路损",
+            "type": "属性"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "deltaMCS-Enabled",
+            "en": "deltaMCS-Enabled"
+        },
+        {
+            "title": "RRC专用信令",
+            "en": "RRC dedicated signaling"
+        },
+        {
+            "title": "蜂窝辅助异构网络",
+            "en": "Cellular-assisted heterogeneous network"
+        },
+        {
+            "title": "蜂窝通信平均码率",
+            "en": "Average MCS rate of cellular communication"
+        },
+        {
+            "title": "LTEPUSCH",
+            "en": "LTEPUSCH"
+        },
+        {
+            "title": "累积干扰",
+            "en": "Cumulative interference"
+        },
+        {
+            "title": "正交干扰",
+            "en": "Orthogonal interference"
+        },
+        {
+            "title": "分布式重用干扰控制机制",
+            "en": "Distributed reuse interference control mechanism"
+        },
+        {
+            "title": "链路质量损失门限",
+            "en": "Link quality loss threshold"
+        },
+        {
+            "title": "重用囲源",
+            "en": "Reuse source"
+        },
+        {
+            "title": "干扰协同",
+            "en": "Interference coordination"
+        },
+        {
+            "title": "上行链路质量",
+            "en": "Uplink quality"
+        },
+        {
+            "title": "功率裕量",
+            "en": "Power margin"
+        },
+        {
+            "title": "分布式功控",
+            "en": "Distributed power control"
+        },
+        {
+            "title": "集中式重用干扰控制机制",
+            "en": "Centralized reuse interference control mechanism"
+        },
+        {
+            "title": "干扰容限",
+            "en": "Interference tolerance"
+        }
+    ],
+    "relations": [
+        {
+            "source": "deltaMCS-Enabled",
+            "target": "MCS补偿",
+            "type": "包含"
+        },
+        {
+            "source": "deltaMCS-Enabled",
+            "target": "蜂窝网络",
+            "type": "适用于"
+        },
+        {
+            "source": "RRC专用信令",
+            "target": "系统配置",
+            "type": "用于"
+        },
+        {
+            "source": "蜂窝辅助异构网络",
+            "target": "基站广播",
+            "type": "用于"
+        },
+        {
+            "source": "蜂窝通信平均码率",
+            "target": "deltaMCS-Enabled",
+            "type": "计算依据"
+        },
+        {
+            "source": "LTEPUSCH",
+            "target": "MCS配置",
+            "type": "包含"
+        },
+        {
+            "source": "累积干扰",
+            "target": "最大码率补偿项",
+            "type": "一致"
+        },
+        {
+            "source": "正交干扰",
+            "target": "接收功率裕量",
+            "type": "解决"
+        },
+        {
+            "source": "分布式重用干扰控制机制",
+            "target": "链路质量损失门限",
+            "type": "配置依据"
+        },
+        {
+            "source": "分布式重用干扰控制机制",
+            "target": "重用囲源",
+            "type": "引入干扰"
+        },
+        {
+            "source": "分布式重用干扰控制机制",
+            "target": "干扰协同",
+            "type": "达成目标"
+        },
+        {
+            "source": "上行链路质量",
+            "target": "链路质量损失门限",
+            "type": "衡量标准"
+        },
+        {
+            "source": "上行链路质量",
+            "target": "NDI",
+            "type": "计算依据"
+        },
+        {
+            "source": "分布式功控",
+            "target": "非正交干扰控制",
+            "type": "步骤"
+        },
+        {
+            "source": "集中式重用干扰控制机制",
+            "target": "链路质量损失率",
+            "type": "配置依据"
+        },
+        {
+            "source": "集中式重用干扰控制机制",
+            "target": "干扰容限",
+            "type": "基础"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "CUE",
+            "en": "CUE"
+        },
+        {
+            "title": "TxPowerMargin",
+            "en": "TxPowerMargin"
+        },
+        {
+            "title": "QoSClass",
+            "en": "QoSClass"
+        },
+        {
+            "title": "QcUE_allow",
+            "en": "QcUE_allow"
+        },
+        {
+            "title": "QcUE_minreq",
+            "en": "QcUE_minreq"
+        },
+        {
+            "title": "QcUE_cur",
+            "en": "QcUE_cur"
+        },
+        {
+            "title": "Totalinference",
+            "en": "Totalinference"
+        },
+        {
+            "title": "TorInterference",
+            "en": "TorInterference"
+        },
+        {
+            "title": "D2D",
+            "en": "D2D"
+        },
+        {
+            "title": "PDCCHFormat3A",
+            "en": "PDCCHFormat3A"
+        },
+        {
+            "title": "SINR",
+            "en": "SINR"
+        },
+        {
+            "title": "RxDUE",
+            "en": "RxDUE"
+        }
+    ],
+    "relations": [
+        {
+            "source": "CUE",
+            "target": "TxPowerMargin",
+            "type": "维护"
+        },
+        {
+            "source": "CUE",
+            "target": "QoSClass",
+            "type": "维护"
+        },
+        {
+            "source": "CUE",
+            "target": "QcUE_allow",
+            "type": "维护"
+        },
+        {
+            "source": "CUE",
+            "target": "QcUE_minreq",
+            "type": "维护"
+        },
+        {
+            "source": "CUE",
+            "target": "QcUE_cur",
+            "type": "维护"
+        },
+        {
+            "source": "CUE",
+            "target": "Totalinference",
+            "type": "维护"
+        },
+        {
+            "source": "CUE",
+            "target": "PDCCHFormat3A",
+            "type": "上行闭环功控"
+        },
+        {
+            "source": "CUE",
+            "target": "SINR",
+            "type": "影响"
+        },
+        {
+            "source": "D2D",
+            "target": "TorInterference",
+            "type": "干扰控制"
+        },
+        {
+            "source": "D2D",
+            "target": "RxDUE",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D分布式资源管理",
+            "en": "D2D Distributed Resource Management"
+        },
+        {
+            "title": "自动调制编码(AMC)",
+            "en": "Adaptive Modulation and Coding (AMC)"
+        },
+        {
+            "title": "SINR预估",
+            "en": "SINR Estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D分布式资源管理",
+            "target": "异构网络子网络内部及子网络间干扰控制机制",
+            "type": "包含"
+        },
+        {
+            "source": "D2D分布式资源管理",
+            "target": "TxDUE",
+            "type": "涉及"
+        },
+        {
+            "source": "D2D分布式资源管理",
+            "target": "数据传输",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "动态调整调制方式与编码速率",
+            "type": "定义"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "物理层(PHY)",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "频谱利用率",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "通信速率",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "调制编码方案(MCS)",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "信道测量SNR",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "传输正误指示",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "物理层MCS分级方案",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "UE",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "模块重用",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "Turbo编码器",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "速率匹配模块",
+            "type": "涉及"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "调制模块",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "蜂窝网络",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "D2D异构通信",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "复用",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "资源段",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "干扰功率值",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "底噪功率",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "SINR",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "发送功率",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "正交和重用干扰控制限定",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "集中式重用干扰控制机制",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "分布式重用干扰控制机制",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "复用功率因子",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "最大正交功率",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "链路损耗",
+            "type": "涉及"
+        },
+        {
+            "source": "SINR预估",
+            "target": "周期性广播",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "竞争接入SSCA",
+            "en": "Competition access SSCA"
+        },
+        {
+            "title": "PL",
+            "en": "PL"
+        },
+        {
+            "title": "CTS",
+            "en": "CTS"
+        },
+        {
+            "title": "TxDUE",
+            "en": "TxDUE"
+        },
+        {
+            "title": "I",
+            "en": "I"
+        },
+        {
+            "title": "N",
+            "en": "N"
+        },
+        {
+            "title": "C2D干扰避免机制",
+            "en": "C2D interference avoidance mechanism"
+        },
+        {
+            "title": "RxDUE",
+            "en": "RxDUE"
+        },
+        {
+            "title": "IntfCUEn",
+            "en": "IntfCUEn"
+        },
+        {
+            "title": "资源分配图",
+            "en": "Resource allocation diagram"
+        },
+        {
+            "title": "SC-FDMA技术",
+            "en": "SC-FDMA technology"
+        },
+        {
+            "title": "基带信号",
+            "en": "Baseband signal"
+        },
+        {
+            "title": "DFT",
+            "en": "DFT"
+        },
+        {
+            "title": "插零扩展",
+            "en": "Zero padding"
+        },
+        {
+            "title": "IFFT变换",
+            "en": "IFFT transformation"
+        },
+        {
+            "title": "频域补零时域扩展",
+            "en": "Frequency domain zero padding and time domain extension"
+        },
+        {
+            "title": "RBSEG",
+            "en": "RBSEG"
+        },
+        {
+            "title": "式3-23",
+            "en": "Equation 3-23"
+        },
+        {
+            "title": "预估SINR",
+            "en": "Estimated SINR"
+        },
+        {
+            "title": "AMC控制",
+            "en": "AMC control"
+        },
+        {
+            "title": "SINR",
+            "en": "SINR"
+        },
+        {
+            "title": "MCS",
+            "en": "MCS"
+        },
+        {
+            "title": "Turbo编码",
+            "en": "Turbo coding"
+        },
+        {
+            "title": "误比特率",
+            "en": "Bit error rate"
+        },
+        {
+            "title": "误传输块率",
+            "en": "Block error rate"
+        },
+        {
+            "title": "闭式解",
+            "en": "Closed-form solution"
+        },
+        {
+            "title": "物理层MCS方案",
+            "en": "Physical layer MCS scheme"
+        },
+        {
+            "title": "蒙特卡罗法仿真",
+            "en": "Monte Carlo simulation"
+        },
+        {
+            "title": "BLER曲线",
+            "en": "BLER curve"
+        },
+        {
+            "title": "ETU70",
+            "en": "ETU70"
+        },
+        {
+            "title": "EVA70",
+            "en": "EVA70"
+        },
+        {
+            "title": "子区间",
+            "en": "Subinterval"
+        },
+        {
+            "title": "频谱效率",
+            "en": "Spectral efficiency"
+        },
+        {
+            "title": "TBSize",
+            "en": "TBSize"
+        },
+        {
+            "title": "频谱效率最大化准则",
+            "en": "Maximization of spectral efficiency criterion"
+        },
+        {
+            "title": "误包率",
+            "en": "Packet error rate"
+        },
+        {
+            "title": "保证误包率准则",
+            "en": "Packet error rate guarantee criterion"
+        },
+        {
+            "title": "异构网络",
+            "en": "Heterogeneous network"
+        },
+        {
+            "title": "可靠性",
+            "en": "Reliability"
+        },
+        {
+            "title": "频谱利用率",
+            "en": "Spectrum utilization"
+        },
+        {
+            "title": "BLER仿真曲线",
+            "en": "BLER simulation curve"
+        },
+        {
+            "title": "SINR区域划分",
+            "en": "SINR region division"
+        },
+        {
+            "title": "ACK",
+            "en": "ACK"
+        },
+        {
+            "title": "NACK",
+            "en": "NACK"
+        },
+        {
+            "title": "误包率约束",
+            "en": "Packet error rate constraint"
+        },
+        {
+            "title": "调整步长",
+            "en": "Adjustment step size"
+        },
+        {
+            "title": "间接调整MCS",
+            "en": "Indirect adjustment of MCS"
+        },
+        {
+            "title": "调节因子",
+            "en": "Adjustment factor"
+        },
+        {
+            "title": "传输正误反馈",
+            "en": "Transmission positive and negative feedback"
+        },
+        {
+            "title": "传输数据包总量",
+            "en": "Total amount of transmitted data packets"
+        },
+        {
+            "title": "BLERmeas",
+            "en": "Measured BLER"
+        },
+        {
+            "title": "BLER^",
+            "en": "BLER^"
+        },
+        {
+            "title": "Ay调整策略",
+            "en": "Ay adjustment strategy"
+        },
+        {
+            "title": "MCS_downstep",
+            "en": "MCS_downstep"
+        }
+    ],
+    "relations": [
+        {
+            "source": "竞争接入SSCA",
+            "target": "PL",
+            "type": "过程中"
+        },
+        {
+            "source": "PL",
+            "target": "CTS",
+            "type": "响应告知"
+        },
+        {
+            "source": "CTS",
+            "target": "TxDUE",
+            "type": "告知"
+        },
+        {
+            "source": "I",
+            "target": "TxDUE",
+            "type": "干扰避免机制"
+        },
+        {
+            "source": "N",
+            "target": "TxDUE",
+            "type": "干扰避免机制"
+        },
+        {
+            "source": "TxDUE",
+            "target": "C2D干扰避免机制",
+            "type": "获得"
+        },
+        {
+            "source": "C2D干扰避免机制",
+            "target": "RxDUE",
+            "type": "获得"
+        },
+        {
+            "source": "IntfCUEn",
+            "target": "RxDUE",
+            "type": "获得"
+        },
+        {
+            "source": "资源分配图",
+            "target": "计算",
+            "type": "进行"
+        },
+        {
+            "source": "计算",
+            "target": "I+N",
+            "type": "得到"
+        },
+        {
+            "source": "D2D数据传输",
+            "target": "SC-FDMA技术",
+            "type": "使用"
+        },
+        {
+            "source": "SC-FDMA技术",
+            "target": "基带信号",
+            "type": "进行"
+        },
+        {
+            "source": "基带信号",
+            "target": "DFT",
+            "type": "先进行"
+        },
+        {
+            "source": "DFT",
+            "target": "插零扩展",
+            "type": "后进行"
+        },
+        {
+            "source": "插零扩展",
+            "target": "IFFT变换",
+            "type": "再进行"
+        },
+        {
+            "source": "IFFT变换",
+            "target": "时域调制方式",
+            "type": "本质为"
+        },
+        {
+            "source": "资源段",
+            "target": "RBSEG",
+            "type": "干扰"
+        },
+        {
+            "source": "RBSEG",
+            "target": "计算",
+            "type": "按照式3-23以资源段加权平均的方式"
+        },
+        {
+            "source": "计算",
+            "target": "预估SINR",
+            "type": "得到"
+        },
+        {
+            "source": "预估SINR",
+            "target": "AMC控制",
+            "type": "通过SINR与MCS的对应曲线进行"
+        },
+        {
+            "source": "SINR",
+            "target": "MCS",
+            "type": "与之对应"
+        },
+        {
+            "source": "Turbo编码",
+            "target": "误比特率",
+            "type": "{
+    "knowledge_points": [
+        {
+            "title": "竞争接入SSCA",
+            "en": "Competition access SSCA"
+        },
+        {
+            "title": "PL",
+            "en": "PL"
+        },
+        {
+            "title": "CTS",
+            "en": "CTS"
+        },
+        {
+            "title": "TxDUE",
+            "en": "TxDUE"
+        },
+        {
+            "title": "IntfCUEn",
+            "en": "IntfCUEn"
+        },
+        {
+            "title": "N",
+            "en": "N"
+        },
+        {
+            "title": "C2D干扰避免机制",
+            "en": "C2D interference avoidance mechanism"
+        },
+        {
+            "title": "RxDUE",
+            "en": "RxDUE"
+        },
+        {
+            "title": "资源分配图",
+            "en": "Resource allocation diagram"
+        },
+        {
+            "title": "I",
+            "en": "I"
+        },
+        {
+            "title": "D2D数据传输",
+            "en": "D2D data transmission"
+        },
+        {
+            "title": "LTE蜂窝网络",
+            "en": "LTE cellular network"
+        },
+        {
+            "title": "SC-FDMA技术",
+            "en": "SC-FDMA technology"
+        },
+        {
+            "title": "基带信号",
+            "en": "Baseband signal"
+        },
+        {
+            "title": "调制符号",
+            "en": "Modulation symbol"
+        },
+        {
+            "title": "DFT",
+            "en": "DFT"
+        },
+        {
+            "title": "插零扩展",
+            "en": "Zero padding"
+        },
+        {
+            "title": "IFFT变换",
+            "en": "IFFT transformation"
+        },
+        {
+            "title": "频域补零时域扩展",
+            "en": "Frequency domain zero padding and time domain extension"
+        },
+        {
+            "title": "资源段",
+            "en": "Resource segment"
+        },
+        {
+            "title": "子载波",
+            "en": "Subcarrier"
+        },
+        {
+            "title": "干扰噪声",
+            "en": "Interference noise"
+        },
+        {
+            "title": "解调",
+            "en": "Demodulation"
+        },
+        {
+            "title": "RBSEG",
+            "en": "RBSEG"
+        },
+        {
+            "title": "式3-23",
+            "en": "Formula 3-23"
+        },
+        {
+            "title": "预估SINR",
+            "en": "Estimated SINR"
+        },
+        {
+            "title": "AMC控制",
+            "en": "AMC control"
+        },
+        {
+            "title": "SINR",
+            "en": "SINR"
+        },
+        {
+            "title": "MCS",
+            "en": "MCS"
+        },
+        {
+            "title": "Turbo编码",
+            "en": "Turbo coding"
+        },
+        {
+            "title": "误比特率",
+            "en": "Bit error rate"
+        },
+        {
+            "title": "误传输块率",
+            "en": "Block error rate"
+        },
+        {
+            "title": "闭式解",
+            "en": "Closed-form solution"
+        },
+        {
+            "title": "物理层MCS方案",
+            "en": "Physical layer MCS scheme"
+        },
+        {
+            "title": "蒙特卡罗法仿真",
+            "en": "Monte Carlo simulation"
+        },
+        {
+            "title": "BLER曲线",
+            "en": "BLER curve"
+        },
+        {
+            "title": "资源分配",
+            "en": "Resource allocation"
+        },
+        {
+            "title": "天线配置",
+            "en": "Antenna configuration"
+        },
+        {
+            "title": "信道模型",
+            "en": "Channel model"
+        },
+        {
+            "title": "ETU70",
+            "en": "ETU70"
+        },
+        {
+            "title": "EVA70",
+            "en": "EVA70"
+        },
+        {
+            "title": "子区间",
+            "en": "Subinterval"
+        },
+        {
+            "title": "信噪比",
+            "en": "Signal-to-noise ratio"
+        },
+        {
+            "title": "频谱效率",
+            "en": "Spectral efficiency"
+        },
+        {
+            "title": "TBSize",
+            "en": "TBSize"
+        },
+        {
+            "title": "频谱效率最大化准则",
+            "en": "Maximization of spectral efficiency criterion"
+        },
+        {
+            "title": "BLE5",
+            "en": "BLE5"
+        },
+        {
+            "title": "保证误包率准则",
+            "en": "Guaranteed error rate criterion"
+        },
+        {
+            "title": "可靠性",
+            "en": "Reliability"
+        },
+        {
+            "title": "异构网络",
+            "en": "Heterogeneous network"
+        },
+        {
+            "title": "次用户间通信",
+            "en": "Secondary user communication"
+        },
+        {
+            "title": "BLER仿真曲线",
+            "en": "BLER simulation curve"
+        },
+        {
+            "title": "MCS码率",
+            "en": "MCS code rate"
+        },
+        {
+            "title": "误包率约束",
+            "en": "Error rate constraint"
+        },
+        {
+            "title": "ACK",
+            "en": "ACK"
+        },
+        {
+            "title": "NACK",
+            "en": "NACK"
+        },
+        {
+            "title": "传输正误反馈",
+            "en": "Transmission positive and negative feedback"
+        },
+        {
+            "title": "调整步长",
+            "en": "Adjustment step size"
+        },
+        {
+            "title": "频谱效率最大化",
+            "en": "Maximization of spectral efficiency"
+        },
+        {
+            "title": "间接调整MCS",
+            "en": "Indirect adjustment of MCS"
+        },
+        {
+            "title": "调节因子",
+            "en": "Adjustment factor"
+        },
+        {
+            "title": "传输数据包总量",
+            "en": "Total amount of transmitted data packets"
+        },
+        {
+            "title": "Nerror",
+            "en": "Nerror"
+        },
+        {
+            "title": "BLERmeas",
+            "en": "Measured BLER"
+        },
+        {
+            "title": "Ay调整策略",
+            "en": "Ay adjustment strategy"
+        },
+        {
+            "title": "MCS_downstep",
+            "en": "MCS_downstep"
+        }
+    ],
+    "relations": [
+        {
+            "source": "竞争接入SSCA",
+            "target": "PL",
+            "type": "过程中"
+        },
+        {
+            "source": "PL",
+            "target": "CTS",
+            "type": "响应告知"
+        },
+        {
+            "source": "CTS",
+            "target": "TxDUE",
+            "type": "告知"
+        },
+        {
+            "source": "I",
+            "target": "TxDUE",
+            "type": "干扰避免机制"
+        },
+        {
+            "source": "N",
+            "target": "TxDUE",
+            "type": "干扰避免机制"
+        },
+        {
+            "source": "TxDUE",
+            "target": "C2D干扰避免机制",
+            "type": "获得"
+        },
+        {
+            "source": "C2D干扰避免机制",
+            "target": "RxDUE",
+            "type": "获得"
+        },
+        {
+            "source": "资源分配图",
+            "target": "计算",
+            "type": "进行"
+        },
+        {
+            "source": "计算",
+            "target": "I+N",
+            "type": "得到"
+        },
+        {
+            "source": "D2D数据传输",
+            "target": "SC-FDMA技术",
+            "type": "使用"
+        },
+        {
+            "source": "SC-FDMA技术",
+            "target": "基带信号",
+            "type": "进行"
+        },
+        {
+            "source": "基带信号",
+            "target": "调制符号",
+            "type": "进行"
+        },
+        {
+            "source": "调制符号",
+            "target": "DFT",
+            "type": "先进行"
+        },
+        {
+            "source": "DFT",
+            "target": "插零扩展",
+            "type": "进行"
+        },
+        {
+            "source": "插{
+    "knowledge_points": [
+        {
+            "title": "TBSizeTable",
+            "en": "TBSizeTable"
+        },
+        {
+            "title": "HARQ",
+            "en": "HARQ"
+        },
+        {
+            "title": "FEC",
+            "en": "FEC"
+        },
+        {
+            "title": "ARQ",
+            "en": "ARQ"
+        },
+        {
+            "title": "QoS",
+            "en": "QoS"
+        },
+        {
+            "title": "D2D",
+            "en": "D2D"
+        },
+        {
+            "title": "LTE",
+            "en": "LTE"
+        },
+        {
+            "title": "MAC层",
+            "en": "MAC layer"
+        },
+        {
+            "title": "物理层",
+            "en": "Physical layer"
+        },
+        {
+            "title": "RRM-PHY",
+            "en": "RRM-PHY"
+        },
+        {
+            "title": "IR",
+            "en": "IR"
+        },
+        {
+            "title": "CC",
+            "en": "CC"
+        },
+        {
+            "title": "RV",
+            "en": "RV"
+        },
+        {
+            "title": "ACK",
+            "en": "ACK"
+        },
+        {
+            "title": "PUSCH",
+            "en": "PUSCH"
+        },
+        {
+            "title": "ACKBundling",
+            "en": "ACKBundling"
+        }
+    ],
+    "relations": [
+        {
+            "source": "TBSizeTable",
+            "target": "mcsidx",
+            "type": "argmin"
+        },
+        {
+            "source": "mcsidx",
+            "target": "HARQ",
+            "type": "return"
+        },
+        {
+            "source": "HARQ",
+            "target": "FEC",
+            "type": "combination"
+        },
+        {
+            "source": "HARQ",
+            "target": "ARQ",
+            "type": "combination"
+        },
+        {
+            "source": "FEC",
+            "target": "transmission efficiency",
+            "type": "negative impact"
+        },
+        {
+            "source": "FEC",
+            "target": "transmission accuracy",
+            "type": "positive impact"
+        },
+        {
+            "source": "ARQ",
+            "target": "transmission efficiency",
+            "type": "positive impact"
+        },
+        {
+            "source": "ARQ",
+            "target": "transmission accuracy",
+            "type": "negative impact"
+        },
+        {
+            "source": "HARQ",
+            "target": "QoS",
+            "type": "guarantee"
+        },
+        {
+            "source": "HARQ",
+            "target": "fast fading",
+            "type": "compensation"
+        },
+        {
+            "source": "D2D",
+            "target": "HARQ",
+            "type": "use"
+        },
+        {
+            "source": "HARQ",
+            "target": "LTE",
+            "type": "comparison"
+        },
+        {
+            "source": "LTE",
+            "target": "synchronous HARQ",
+            "type": "use"
+        },
+        {
+            "source": "D2D",
+            "target": "DCCCH",
+            "type": "use"
+        },
+        {
+            "source": "DCCCH",
+            "target": "ACK/NACK",
+            "type": "timing"
+        },
+        {
+            "source": "DCCCH",
+            "target": "data transmission",
+            "type": "specify"
+        },
+        {
+            "source": "DUE",
+            "target": "HARQ",
+            "type": "user"
+        },
+        {
+            "source": "DUE",
+            "target": "resource allocation",
+            "type": "dependence"
+        },
+        {
+            "source": "HARQ",
+            "target": "MAC layer",
+            "type": "provide"
+        },
+        {
+            "source": "MAC layer",
+            "target": "HARQ entity management",
+            "type": "manage"
+        },
+        {
+            "source": "MAC layer",
+            "target": "MCS selection",
+            "type": "participate"
+        },
+        {
+            "source": "MAC layer",
+            "target": "transmission",
+            "type": "participate"
+        },
+        {
+            "source": "MAC layer",
+            "target": "feedback",
+            "type": "participate"
+        },
+        {
+            "source": "Physical layer",
+            "target": "HARQ",
+            "type": "provide"
+        },
+        {
+            "source": "Physical layer",
+            "target": "IR",
+            "type": "support"
+        },
+        {
+            "source": "Physical layer",
+            "target": "CC",
+            "type": "support"
+        },
+        {
+            "source": "Physical layer",
+            "target": "rate matching",
+            "type": "support"
+        },
+        {
+            "source": "D2D",
+            "target": "MCS",
+            "type": "same"
+        },
+        {
+            "source": "IR",
+            "target": "merge gain",
+            "type": "provide"
+        },
+        {
+            "source": "D2D",
+            "target": "LTE",
+            "type": "reuse"
+        },
+        {
+            "source": "HARQ",
+            "target": "process",
+            "type": "parallel"
+        },
+        {
+            "source": "HARQ",
+            "target": "stop-and-wait protocol",
+            "type": "use"
+        },
+        {
+            "source": "D2D",
+            "target": "RRM-PHY",
+            "type": "cross-layer"
+        },
+        {
+            "source": "D2D",
+            "target": "control parameter",
+            "type": "change"
+        },
+        {
+            "source": "D2D",
+            "target": "RxDUE",
+            "type": "HARQ soft combining"
+        },
+        {
+            "source": "D2D",
+            "target": "ACK bundling",
+            "type": "use"
+        },
+        {
+            "source": "FDD-LTE",
+            "target": "PUSCH",
+            "type": "correspond"
+        },
+        {
+            "source": "TDD-LTE",
+            "target": "ACK bundling",
+            "type": "use"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D通信",
+            "en": "D2D Communication"
+        },
+        {
+            "title": "ACKBundling",
+            "en": "ACK Bundling"
+        },
+        {
+            "title": "TDD模式",
+            "en": "TDD Mode"
+        },
+        {
+            "title": "FDD",
+            "en": "FDD"
+        },
+        {
+            "title": "干扰计算",
+            "en": "Interference Calculation"
+        },
+        {
+            "title": "发送功率选择",
+            "en": "Transmit Power Selection"
+        },
+        {
+            "title": "MCS选择",
+            "en": "MCS Selection"
+        },
+        {
+            "title": "资源选择方案",
+            "en": "Resource Selection Scheme"
+        },
+        {
+            "title": "遍历组合的资源分段",
+            "en": "Traversal Combination Resource Segmentation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D通信",
+            "target": "ACKBundling",
+            "type": "related"
+        },
+        {
+            "source": "TDD模式",
+            "target": "FDD",
+            "type": "opposite"
+        },
+        {
+            "source": "D2D通信",
+            "target": "干扰计算",
+            "type": "related"
+        },
+        {
+            "source": "D2D通信",
+            "target": "发送功率选择",
+            "type": "related"
+        },
+        {
+            "source": "D2D通信",
+            "target": "MCS选择",
+            "type": "related"
+        },
+        {
+            "source": "资源选择方案",
+            "target": "遍历组合的资源分段",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "资源分段优化", "en": "Resource segmentation optimization"},
+        {"title": "无线资源选择决策", "en": "Wireless resource selection decision"},
+        {"title": "D2D公共控制信道", "en": "D2D common control channel"},
+        {"title": "SSCA机制", "en": "SSCA mechanism"},
+        {"title": "系统间干扰认知协调方案", "en": "Interference awareness and coordination scheme between systems"},
+        {"title": "正交干扰控制与重用干扰控制机制", "en": "Orthogonal interference control and reuse interference control mechanism"},
+        {"title": "干扰测量并主动避免的干扰控制机制", "en": "Interference control mechanism based on interference measurement and active avoidance"},
+        {"title": "SINR预估与开闭环结合的AMC实现自适应调制编码控制方案", "en": "Adaptive modulation and coding control scheme based on SINR estimation and open-loop/closed-loop combination"},
+        {"title": "D2D终端资源决策方案", "en": "D2D terminal resource decision-making scheme"}
+    ],
+    "relations": [
+        {"source": "资源分段优化", "target": "无线资源选择决策", "type": "包含"},
+        {"source": "D2D公共控制信道", "target": "SSCA机制", "type": "包含"},
+        {"source": "系统间干扰认知协调方案", "target": "正交干扰控制与重用干扰控制机制", "type": "包含"},
+        {"source": "系统间干扰认知协调方案", "target": "干扰测量并主动避免的干扰控制机制", "type": "包含"},
+        {"source": "无线资源选择决策", "target": "SINR预估与开闭环结合的AMC实现自适应调制编码控制方案", "type": "包含"},
+        {"source": "无线资源选择决策", "target": "D2D终端资源决策方案", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D通信",
+            "en": "D2D Communication"
+        },
+        {
+            "title": "D2DRRM算法",
+            "en": "D2DRRM Algorithm"
+        },
+        {
+            "title": "LTE/D2D网络",
+            "en": "LTE/D2D Network"
+        },
+        {
+            "title": "SSCA机制",
+            "en": "SSCA Mechanism"
+        },
+        {
+            "title": "RTS-CTS流程",
+            "en": "RTS-CTS Process"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D通信",
+            "target": "D2DRRM算法",
+            "type": "包含"
+        },
+        {
+            "source": "D2D通信",
+            "target": "LTE/D2D网络",
+            "type": "包含"
+        },
+        {
+            "source": "D2DRRM算法",
+            "target": "LTE/D2D网络",
+            "type": "应用于"
+        },
+        {
+            "source": "D2DRRM算法",
+            "target": "SSCA机制",
+            "type": "包含"
+        },
+        {
+            "source": "SSCA机制",
+            "target": "RTS-CTS流程",
+            "type": "应用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "RTS/CTS协议", "en": "RTS/CTS Protocol"},
+        {"title": "广播业务的设计优化", "en": "Design Optimization for Broadcasting Services"},
+        {"title": "优先接入机制", "en": "Priority Access Mechanism"},
+        {"title": "D2D无线资源管理方案", "en": "D2D Wireless Resource Management Scheme"},
+        {"title": "DCCCH物理信道设计", "en": "DCCCH Physical Channel Design"},
+        {"title": "DATACTRL-CCCH", "en": "DATACTRL-CCCH"},
+        {"title": "RTS-CCCH", "en": "RTS-CCCH"},
+        {"title": "CTS-CCCH", "en": "CTS-CCCH"},
+        {"title": "ACK-CCCH", "en": "ACK-CCCH"},
+        {"title": "卷积编码", "en": "Convolutional Coding"},
+        {"title": "QPSK调制", "en": "QPSK Modulation"},
+        {"title": "CRC校验", "en": "CRC Check"}
+    ],
+    "relations": [
+        {"source": "RTS/CTS Protocol", "target": "广播业务的设计优化", "type": "包含"},
+        {"source": "广播业务的设计优化", "target": "优先接入机制", "type": "包含"},
+        {"source": "广播业务的设计优化", "target": "D2D无线资源管理方案", "type": "包含"},
+        {"source": "D2D无线资源管理方案", "target": "DCCCH物理信道设计", "type": "包含"},
+        {"source": "DCCCH物理信道设计", "target": "DATACTRL-CCCH", "type": "包含"},
+        {"source": "DCCCH物理信道设计", "target": "RTS-CCCH", "type": "包含"},
+        {"source": "DCCCH物理信道设计", "target": "CTS-CCCH", "type": "包含"},
+        {"source": "DCCCH物理信道设计", "target": "ACK-CCCH", "type": "包含"},
+        {"source": "DCCCH物理信道设计", "target": "卷积编码", "type": "包含"},
+        {"source": "DCCCH物理信道设计", "target": "QPSK调制", "type": "包含"},
+        {"source": "DCCCH物理信道设计", "target": "CRC校验", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "上行DCCCH复用与LTEPUSCH相同的基带信号处理技术", "en": "Baseband signal processing technology for uplink DCCCH multiplexing and LTE PUSCH is the same"},
+        {"title": "RRM模块设计与实现", "en": "Design and implementation of RRM module"},
+        {"title": "网络监控模块", "en": "Network monitoring module"},
+        {"title": "模块功能", "en": "Module function"},
+        {"title": "模块监控指标及计算", "en": "Module monitoring indicators and calculations"},
+        {"title": "蜂窝网络调度信息感知获取机制", "en": "Mechanism for obtaining cellular network scheduling information perception"},
+        {"title": "D2D网络内部信道接入机制", "en": "D2D network internal channel access mechanism"},
+        {"title": "异构网络间干扰控制机制", "en": "Interference control mechanism between heterogeneous networks"},
+        {"title": "链路自适应机制", "en": "Link adaptation mechanism"},
+        {"title": "D2D的资源选择决策机制", "en": "Resource selection decision mechanism for D2D"}
+    ],
+    "relations": [
+        {"source": "上行DCCCH复用与LTEPUSCH相同的基带信号处理技术", "target": "RRM模块设计与实现", "type": "包含"},
+        {"source": "RRM模块设计与实现", "target": "网络监控模块", "type": "包含"},
+        {"source": "网络监控模块", "target": "模块功能", "type": "包含"},
+        {"source": "网络监控模块", "target": "模块监控指标及计算", "type": "包含"},
+        {"source": "RRM模块设计与实现", "target": "蜂窝网络调度信息感知获取机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "D2D网络内部信道接入机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "异构网络间干扰控制机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "链路自适应机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "D2D的资源选择决策机制", "type": "需要"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "DUE",
+            "en": "Dedicated User Equipment"
+        },
+        {
+            "title": "TDD",
+            "en": "Time Division Duplex"
+        },
+        {
+            "title": "PDCCH",
+            "en": "Physical Downlink Control Channel"
+        },
+        {
+            "title": "ULGrant",
+            "en": "Uplink Grant"
+        },
+        {
+            "title": "PHICH",
+            "en": "Physical Hybrid ARQ Indicator Channel"
+        },
+        {
+            "title": "NDI",
+            "en": "New Data Indicator"
+        },
+        {
+            "title": "HARQ",
+            "en": "Hybrid Automatic Repeat Request"
+        },
+        {
+            "title": "SSCA",
+            "en": "Semi-static Channel Assignment"
+        },
+        {
+            "title": "CUE",
+            "en": "Cell User Equipment"
+        },
+        {
+            "title": "RRC",
+            "en": "Radio Resource Control"
+        }
+    ],
+    "relations": [
+        {
+            "source": "PL_D2B",
+            "target": "干扰控制模块",
+            "type": "Output"
+        },
+        {
+            "source": "PL_D2B",
+            "target": "DUE",
+            "type": "Output"
+        },
+        {
+            "source": "PL_D2B",
+            "target": "基站",
+            "type": "Output"
+        },
+        {
+            "source": "PL_Dtx2D[DtxID]",
+            "target": "DUE本机",
+            "type": "Output"
+        },
+        {
+            "source": "PL_Dtx2D[DtxID]",
+            "target": "路损",
+            "type": "Output"
+        },
+        {
+            "source": "PL_Dtx2D[DtxID]",
+            "target": "SSCA模块",
+            "type": "Output"
+        },
+        {
+            "source": "PL_Dtx2D[DtxID]",
+            "target": "CTS",
+            "type": "Output"
+        },
+        {
+            "source": "PL_Dtx2D[DtxID]",
+            "target": "RTS",
+            "type": "Output"
+        },
+        {
+            "source": "alpha",
+            "target": "SIB2",
+            "type": "Output"
+        },
+        {
+            "source": "alpha",
+            "target": "干扰控制模块",
+            "type": "Output"
+        },
+        {
+            "source": "P0_PUSCH",
+            "target": "SIB2",
+            "type": "Output"
+        },
+        {
+            "source": "P0_PUSCH",
+            "target": "干扰控制模块",
+            "type": "Output"
+        },
+        {
+            "source": "N0_D",
+            "target": "干扰控制模块",
+            "type": "Output"
+        },
+        {
+            "source": "Q_CUE[CUEID]",
+            "target": "干扰控制模块",
+            "type": "Output"
+        },
+        {
+            "source": "Throughput_D2Drx[DrxID]",
+            "target": "DUE本机",
+            "type": "Output"
+        },
+        {
+            "source": "Throughput_D2Drx[DrxID]",
+            "target": "Drx",
+            "type": "Output"
+        },
+        {
+            "source": "HARQ",
+            "target": "自适应资源分配",
+            "type": "Support"
+        },
+        {
+            "source": "HARQ",
+            "target": "非自适应资源分配",
+            "type": "Support"
+        },
+        {
+            "source": "ULGrant",
+            "target": "PDCCH",
+            "type": "Information"
+        },
+        {
+            "source": "ULGrant",
+            "target": "动态调度",
+            "type": "Support"
+        },
+        {
+            "source": "ULGrant",
+            "target": "半静态调度",
+            "type": "Support"
+        },
+        {
+            "source": "PHICH",
+            "target": "重传调度",
+            "type": "Information"
+        },
+        {
+            "source": "NDI",
+            "target": "重传调度",
+            "type": "Information"
+        },
+        {
+            "source": "IntCC2D[CUEID]",
+            "target": "DUE本机",
+            "type": "Output"
+        },
+        {
+            "source": "IntLC2D[CUEID]",
+            "target": "PowerMeasure_UL[110]",
+            "type": "Information"
+        },
+        {
+            "source": "IntLC2D[CUEID]",
+            "target": "DATACTRLMSG",
+            "type": "Information"
+        },
+        {
+            "source": "IntLC2D[CUEID]",
+            "target": "CellResourceMap",
+            "type": "Information"
+        },
+        {
+            "source": "IntLC2D[CUEID]",
+            "target": "干扰测量",
+            "type": "Output"
+        },
+        {
+            "source": "IntLC2D[CUEID]",
+            "target": "干扰控制模块",
+            "type": "Output"
+        },
+        {
+            "source": "RRC",
+            "target": "半静态调度",
+            "type": "Configuration"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D通信", "en": "D2D Communication"},
+        {"title": "资源向量", "en": "Resource Vector"},
+        {"title": "混合测量", "en": "Hybrid Measurement"},
+        {"title": "干扰控制模块", "en": "Interference Control Module"},
+        {"title": "无线接入管理模块", "en": "Wireless Access Management Module"},
+        {"title": "RTS/CTS流程", "en": "RTS/CTS Process"},
+        {"title": "SSCA算法", "en": "SSCA Algorithm"}
+    ],
+    "relations": [
+        {"source": "DUE", "target": "资源向量", "type": "拥有"},
+        {"source": "DATACTRL_MSG", "target": "DUE", "type": "触发"},
+        {"source": "DUE", "target": "混合测量", "type": "进行"},
+        {"source": "D2D通信", "target": "DUE", "type": "存在于"},
+        {"source": "DUE", "target": "干扰控制模块", "type": "连接"},
+        {"source": "干扰控制模块", "target": "无线接入管理模块", "type": "连接"},
+        {"source": "无线接入管理模块", "target": "RTS/CTS流程", "type": "实现"},
+        {"source": "无线接入管理模块", "target": "SSCA算法", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "消息触发调用", "en": "Message Trigger Call"},
+        {"title": "RTS/CTS消息格式", "en": "RTS/CTS Message Format"},
+        {"title": "RLC使用无确认模式", "en": "RLC uses Unacknowledged Mode"},
+        {"title": "UMSN初始化请求", "en": "UMSN Initialization Request"},
+        {"title": "干扰控制模块", "en": "Interference Control Module"},
+        {"title": "蜂窝与D2D异构网络间的干扰控制", "en": "Interference Control between Cellular and D2D Heterogeneous Networks"},
+        {"title": "AMC与资源决策", "en": "AMC and Resource Decision"},
+        {"title": "D2C重用干扰控制", "en": "D2C Reuse Interference Control"},
+        {"title": "D2C正交干扰控制", "en": "D2C Orthogonal Interference Control"},
+        {"title": "C2D干扰避免", "en": "C2D Interference Avoidance"},
+        {"title": "干扰感知数据的交换", "en": "Exchange of Interference Perception Data"},
+        {"title": "D2C闭环干扰控制", "en": "D2C Closed-loop Interference Control"},
+        {"title": "本地测量更新", "en": "Local Measurement Update"},
+        {"title": "干扰广播发送", "en": "Interference Broadcast Transmission"},
+        {"title": "干扰广播接收并更新记录", "en": "Interference Broadcast Reception and Record Update"},
+        {"title": "AMC相关参数更新及返回", "en": "AMC-related Parameter Update and Return"},
+        {"title": "timingqueuetriggerhandler", "en": "Timing Queue Trigger Handler"},
+        {"title": "messageprocesshandler", "en": "Message Process Handler"}
+    ],
+    "relations": [
+        {"source": "消息触发调用", "target": "RTS/CTS消息格式", "type": "包含"},
+        {"source": "RTS/CTS消息格式", "target": "RLC使用无确认模式", "type": "涉及"},
+        {"source": "RTS/CTS消息格式", "target": "UMSN初始化请求", "type": "涉及"},
+        {"source": "干扰控制模块", "target": "蜂窝与D2D异构网络间的干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "AMC与资源决策", "type": "包含"},
+        {"source": "干扰控制模块", "target": "D2C重用干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "D2C正交干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "C2D干扰避免", "type": "包含"},
+        {"source": "干扰控制模块", "target": "干扰感知数据的交换", "type": "包含"},
+        {"source": "干扰控制模块", "target": "D2C闭环干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "本地测量更新", "type": "包含"},
+        {"source": "干扰控制模块", "target": "干扰广播发送", "type": "包含"},
+        {"source": "干扰控制模块", "target": "干扰广播接收并更新记录", "type": "包含"},
+        {"source": "干扰控制模块", "target": "AMC相关参数更新及返回", "type": "包含"},
+        {"source": "timingqueuetriggerhandler", "target": "消息触发调用", "type": "实现"},
+        {"source": "messageprocesshandler", "target": "消息触发调用", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "update_intf^c2d", "en": ""},
+        {"title": "update_pO", "en": ""},
+        {"title": "update_jpl_d2b", "en": ""},
+        {"title": "update_noise", "en": ""},
+        {"title": "update_alpha", "en": ""},
+        {"title": "update_pl_d2drx", "en": ""},
+        {"title": "update_qualitycue", "en": ""},
+        {"title": "set_underlaylist", "en": ""},
+        {"title": "get_intf^c2d", "en": ""},
+        {"title": "get_noise_drx", "en": ""},
+        {"title": "get_maxpower_d2b", "en": ""},
+        {"title": "get_powerfactor_d2c", "en": ""},
+        {"title": "干扰广播消息格式", "en": "Interference Broadcast Message Format"},
+        {"title": "AMC模块", "en": "AMC Module"},
+        {"title": "开环AMC", "en": "Open-loop AMC"},
+        {"title": "闭环AMC", "en": "Closed-loop AMC"},
+        {"title": "模块接口及关键数据结构", "en": "Module Interface and Key Data Structures"}
+    ],
+    "relations": [
+        {"source": "update_intf^c2d", "target": "get_intf^c2d", "type": "related"},
+        {"source": "update_pO", "target": "", "type": ""},
+        {"source": "update_jpl_d2b", "target": "get_maxpower_d2b", "type": "related"},
+        {"source": "update_noise", "target": "get_noise_drx", "type": "related"},
+        {"source": "update_alpha", "target": "get_powerfactor_d2c", "type": "related"},
+        {"source": "update_pl_d2drx", "target": "", "type": ""},
+        {"source": "update_qualitycue", "target": "", "type": ""},
+        {"source": "set_underlaylist", "target": "", "type": ""},
+        {"source": "干扰广播消息格式", "target": "", "type": ""},
+        {"source": "AMC模块", "target": "开环AMC", "type": "subordinate"},
+        {"source": "AMC模块", "target": "闭环AMC", "type": "subordinate"},
+        {"source": "开环AMC", "target": "get_intf^c2d", "type": "related"},
+        {"source": "开环AMC", "target": "干扰广播消息格式", "type": "related"},
+        {"source": "闭环AMC", "target": "HARQ", "type": "related"},
+        {"source": "模块接口及关键数据结构", "target": "amc_closeloop", "type": "interface"},
+        {"source": "模块接口及关键数据结构", "target": "amc_openloop", "type": "interface"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AMC功能", "en": "AMC function"},
+        {"title": "amcinfo_t数据结构", "en": "amcinfo_t data structure"},
+        {"title": "资源决策模块", "en": "Resource decision module"},
+        {"title": "rminfo_t/rbpair_t定义", "en": "Definition of rminfo_t/rbpair_t"},
+        {"title": "HARQ模块", "en": "HARQ module"}
+    ],
+    "relations": [
+        {"source": "用的发送功率与调制编码方式", "target": "AMC功能", "type": "实现"},
+        {"source": "amcinfo_t数据结构", "target": "AMC功能", "type": "维护"},
+        {"source": "资源决策模块", "target": "AMC功能", "type": "依赖"},
+        {"source": "rminfo_t/rbpair_t定义", "target": "资源决策模块", "type": "定义"},
+        {"source": "HARQ模块", "target": "AMC功能", "type": "依赖"},
+        {"source": "HARQ模块", "target": "资源决策模块", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "时序触发",
+            "en": "Timing Trigger"
+        },
+        {
+            "title": "ACK消息、CRC处理",
+            "en": "ACK Message and CRC Processing"
+        },
+        {
+            "title": "HARQ进程相关",
+            "en": "HARQ Process Related"
+        },
+        {
+            "title": "D2D-HI传输",
+            "en": "D2D-HI Transmission"
+        },
+        {
+            "title": "ACK消息格式",
+            "en": "ACK Message Format"
+        },
+        {
+            "title": "LTE蜂窝网络配置",
+            "en": "LTE Cellular Network Configuration"
+        },
+        {
+            "title": "持续型业务",
+            "en": "Continuous Business"
+        },
+        {
+            "title": "突发高容量业务",
+            "en": "Burst High Capacity Business"
+        },
+        {
+            "title": "接入方案验证",
+            "en": "Access Scheme Verification"
+        },
+        {
+            "title": "Dummy数据满发送",
+            "en": "Dummy Data Full Sending"
+        }
+    ],
+    "relations": [
+        {
+            "source": "时序触发",
+            "target": "ACK消息、CRC处理",
+            "type": "包含"
+        },
+        {
+            "source": "ACK消息、CRC处理",
+            "target": "HARQ进程相关",
+            "type": "包含"
+        },
+        {
+            "source": "HARQ进程相关",
+            "target": "D2D-HI传输",
+            "type": "包含"
+        },
+        {
+            "source": "ACK消息格式",
+            "target": "D2D-HI传输",
+            "type": "包含"
+        },
+        {
+            "source": "LTE蜂窝网络配置",
+            "target": "持续型业务",
+            "type": "包含"
+        },
+        {
+            "source": "LTE蜂窝网络配置",
+            "target": "突发高容量业务",
+            "type": "包含"
+        },
+        {
+            "source": "接入方案验证",
+            "target": "持续型业务",
+            "type": "包含"
+        },
+        {
+            "source": "接入方案验证",
+            "target": "突发高容量业务",
+            "type": "包含"
+        },
+        {
+            "source": "接入方案验证",
+            "target": "Dummy数据满发送",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SSCA自主竞争接入方案",
+            "en": "SSCA Autonomous Competitive Access Scheme"
+        },
+        {
+            "title": "RTS接入效率",
+            "en": "RTS Access Efficiency"
+        },
+        {
+            "title": "初传非退避SSCA",
+            "en": "Non-persistent SSCA"
+        },
+        {
+            "title": "传统SSCA",
+            "en": "Traditional SSCA"
+        },
+        {
+            "title": "理想满发送状态",
+            "en": "Ideal Full Transmission State"
+        },
+        {
+            "title": "普通RTS过程",
+            "en": "Normal RTS Process"
+        },
+        {
+            "title": "初传退避",
+            "en": "Non-persistent Backoff"
+        },
+        {
+            "title": "标准BEB",
+            "en": "Binary Exponential Backoff"
+        },
+        {
+            "title": "干扰协调验证",
+            "en": "Interference Coordination Verification"
+        },
+        {
+            "title": "D2C强干扰验证场景",
+            "en": "D2C Strong Interference Verification Scene"
+        },
+        {
+            "title": "C2D强干扰验证场景",
+            "en": "C2D Strong Interference Verification Scene"
+        },
+        {
+            "title": "D2D通信",
+            "en": "D2D Communication"
+        },
+        {
+            "title": "异构网络拓扑",
+            "en": "Heterogeneous Network Topology"
+        },
+        {
+            "title": "干扰认知",
+            "en": "Interference Cognition"
+        },
+        {
+            "title": "CellID",
+            "en": "Cell ID"
+        },
+        {
+            "title": "D2D1",
+            "en": "D2D1"
+        },
+        {
+            "title": "D2D3",
+            "en": "D2D3"
+        },
+        {
+            "title": "CUEID",
+            "en": "CUE ID"
+        },
+        {
+            "title": "UL子帧",
+            "en": "UL Subframe"
+        },
+        {
+            "title": "D2DRRM",
+            "en": "D2D Resource Reservation Mechanism"
+        },
+        {
+            "title": "频谱功率",
+            "en": "Spectrum Power"
+        },
+        {
+            "title": "D2C干扰控制性能",
+            "en": "D2C Interference Control Performance"
+        },
+        {
+            "title": "损失率",
+            "en": "Loss Rate"
+        },
+        {
+            "title": "蜂窝业务保有率",
+            "en": "Cellular Service Retention Rate"
+        },
+        {
+            "title": "动态配置",
+            "en": "Dynamic Configuration"
+        },
+        {
+            "title": "Tloss",
+            "en": "Tloss"
+        },
+        {
+            "title": "C2D干扰避免",
+            "en": "C2D Interference Avoidance"
+        },
+        {
+            "title": "AMC",
+            "en": "Adaptive Modulation and Coding"
+        },
+        {
+            "title": "MCS因子",
+            "en": "MCS Factor"
+        },
+        {
+            "title": "BLER",
+            "en": "Block Error Rate"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "RTS接入效率",
+            "type": "关联"
+        },
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "初传非退避SSCA",
+            "type": "关联"
+        },
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "传统SSCA",
+            "type": "关联"
+        },
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "理想满发送状态",
+            "type": "关联"
+        },
+        {
+            "source": "RTS接入效率",
+            "target": "初传非退避SSCA",
+            "type": "对比"
+        },
+        {
+            "source": "RTS接入效率",
+            "target": "普通RTS过程",
+            "type": "对比"
+        },
+        {
+            "source": "初传非退避SSCA",
+            "target": "普通RTS过程",
+            "type": "对比"
+        },
+        {
+            "source": "D2C强干扰验证场景",
+            "target": "C2D强干扰验证场景",
+            "type": "对比"
+        },
+        {
+            "source": "D2D通信",
+            "target": "干扰认知",
+            "type": "关联"
+        },
+        {
+            "source": "D2D通信",
+            "target": "异构网络拓扑",
+            "type": "关联"
+        },
+        {
+            "source": "干扰认知",
+            "target": "CellID",
+            "type": "关联"
+        },
+        {
+            "source": "干扰认知",
+            "target": "D2D1",
+            "type": "关联"
+        },
+        {
+            "source": "干扰认知",
+            "target": "D2D3",
+            "type": "关联"
+        },
+        {
+            "source": "干扰认知",
+            "target": "CUEID",
+            "type": "关联"
+        },
+        {
+            "source": "干扰认知",
+            "target": "UL子帧",
+            "type": "关联"
+        },
+        {
+            "source": "干扰认知",
+            "target": "D2DRRM",
+            "type": "关联"
+        },
+        {
+            "source": "频谱功率",
+            "target": "D2C干扰控制性能",
+            "type": "关联"
+        },
+        {
+            "source": "D2C干扰控制性能",
+            "target": "损失率",
+            "type": "关联"
+        },
+        {
+            "source": "D2C干扰控制性能",
+            "target": "蜂窝业务保有率",
+            "type": "关联"
+        },
+        {
+            "source": "动态配置",
+            "target": "Tloss",
+            "type": "关联"
+        },
+        {
+            "source": "C2D干扰避免",
+            "target": "D2D通信",
+            "type": "关联"
+        },
+        {
+            "source": "AMC",
+            "target": "MCS因子",
+            "type": "关联"
+        },
+        {
+            "source": "AMC",
+            "target": "BLER",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SSCA自主竞争接入方案",
+            "en": "SSCA Autonomous Competitive Access Scheme"
+        },
+        {
+            "title": "RTS接入效率",
+            "en": "RTS Access Efficiency"
+        },
+        {
+            "title": "初传非退避SSCA",
+            "en": "Non-persistent SSCA"
+        },
+        {
+            "title": "传统SSCA",
+            "en": "Traditional SSCA"
+        },
+        {
+            "title": "理想满发送状态",
+            "en": "Ideal Full Transmission State"
+        },
+        {
+            "title": "普通RTS过程",
+            "en": "Normal RTS Process"
+        },
+        {
+            "title": "初传退避",
+            "en": "Initial Backoff"
+        },
+        {
+            "title": "标准BEB",
+            "en": "Binary Exponential Backoff"
+        },
+        {
+            "title": "干扰协调验证",
+            "en": "Interference Coordination Verification"
+        },
+        {
+            "title": "D2C强干扰验证场景",
+            "en": "D2C Strong Interference Verification Scene"
+        },
+        {
+            "title": "C2D强干扰验证场景",
+            "en": "C2D Strong Interference Verification Scene"
+        },
+        {
+            "title": "D2D通信",
+            "en": "D2D Communication"
+        },
+        {
+            "title": "异构网络拓扑",
+            "en": "Heterogeneous Network Topology"
+        },
+        {
+            "title": "干扰认知",
+            "en": "Interference Cognition"
+        },
+        {
+            "title": "CellID",
+            "en": "Cell ID"
+        },
+        {
+            "title": "D2D1",
+            "en": "D2D1"
+        },
+        {
+            "title": "D2D3",
+            "en": "D2D3"
+        },
+        {
+            "title": "CUEID",
+            "en": "CUE ID"
+        },
+        {
+            "title": "UL子帧",
+            "en": "UL Subframe"
+        },
+        {
+            "title": "D2DRRM",
+            "en": "D2D Resource Reservation Mechanism"
+        },
+        {
+            "title": "频谱功率",
+            "en": "Spectrum Power"
+        },
+        {
+            "title": "D2C干扰控制性能",
+            "en": "D2C Interference Control Performance"
+        },
+        {
+            "title": "损失率",
+            "en": "Loss Rate"
+        },
+        {
+            "title": "蜂窝业务保有率",
+            "en": "Cellular Service Retention Rate"
+        },
+        {
+            "title": "动态配置",
+            "en": "Dynamic Configuration"
+        },
+        {
+            "title": "Tloss",
+            "en": "Tloss"
+        },
+        {
+            "title": "C2D干扰避免",
+            "en": "C2D Interference Avoidance"
+        },
+        {
+            "title": "AMC",
+            "en": "Adaptive Modulation and Coding"
+        },
+        {
+            "title": "MCS因子",
+            "en": "MCS Factor"
+        },
+        {
+            "title": "BLER",
+            "en": "Block Error Rate"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "RTS接入效率",
+            "type": "关联"
+        },
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "初传非退避SSCA",
+            "type": "关联"
+        },
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "传统SSCA",
+            "type": "关联"
+        },
+        {
+            "source": "SSCA自主竞争接入方案",
+            "target": "理想满发送状态",
+            "type": "关联"
+        },
+        {
+            "source": "RTS接入效率",
+            "target": "初传非退避SSCA",
+            "type": "对比"
+        },
+        {
+            "source": "RTS接入效率",
+            "target": "普通RTS过程",
+            "type": "对比"
+        },
+        {
+            "source": "初传非退避SSCA",
+            "target": "普通RTS过程",
+            "type": "对比"
+        },
+        {
+            "source": "D2C强干扰验证场景",
+            "target": "C2D强干扰验证场景",
+            "type": "对比"
+        },
+        {
+            "source": "D2D通信",
+            "target": "干扰认知",
+            "type": "关联"
+        },
+        {
+            "source": "D2D1",
+            "target": "异构网络拓扑",
+            "type": "关联"
+        },
+        {
+            "source": "D2D1",
+            "target": "D2D3",
+            "type": "关联"
+        },
+        {
+            "source": "CUEID",
+            "target": "UL子帧",
+            "type": "关联"
+        },
+        {
+            "source": "D2DRRM",
+            "target": "干扰认知",
+            "type": "关联"
+        },
+        {
+            "source": "D2C干扰控制性能",
+            "target": "损失率",
+            "type": "关联"
+        },
+        {
+            "source": "D2C干扰控制性能",
+            "target": "蜂窝业务保有率",
+            "type": "关联"
+        },
+        {
+            "source": "动态配置",
+            "target": "Tloss",
+            "type": "关联"
+        },
+        {
+            "source": "C2D干扰避免",
+            "target": "D2D通信",
+            "type": "关联"
+        },
+        {
+            "source": "AMC",
+            "target": "MCS因子",
+            "type": "关联"
+        },
+        {
+            "source": "MCS因子",
+            "target": "BLER",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "发送子帧、残余错误子帧数与MCS因子调整关系", "en": "Relationship between subframe transmission, residual error subframe number and MCS factor adjustment"},
+        {"title": "性能分析及扩展", "en": "Performance analysis and extension"},
+        {"title": "D2D所能提供的业务场景", "en": "Business scenarios that D2D can provide"},
+        {"title": "临近服务与公共安全服务", "en": "Proximity services and public safety services"},
+        {"title": "蜂窝覆盖下的D2D通信性能", "en": "D2D communication performance under cellular coverage"},
+        {"title": "异构网络整体性能", "en": "Overall performance of heterogeneous networks"},
+        {"title": "FTP服务器与FTP用户端", "en": "FTP server and FTP client"},
+        {"title": "无上行蜂窝用户", "en": "No uplink cellular users"},
+        {"title": "D2D冲突域内仅有一对D2D", "en": "Only one pair of D2D in the D2D conflict domain"},
+        {"title": "链路质量较好时", "en": "When the link quality is good"},
+        {"title": "D2D无线资源管理模块", "en": "D2D wireless resource management module"},
+        {"title": "网络中的资源空洞", "en": "Resource holes in the network"},
+        {"title": "D2D通信最高速率", "en": "Maximum D2D communication rate"},
+        {"title": "PUCCH资源为12RB", "en": "PUCCH resources are 12RB"},
+        {"title": "PUSCH资源为76RB", "en": "PUSCH resources are 76RB"},
+        {"title": "上行PUSCH最大可用资源长度为75RB", "en": "The maximum available resource length for uplink PUSCH is 75RB"},
+        {"title": "Imcs26", "en": "Imcs26"},
+        {"title": "最大TBSize为45352", "en": "The maximum TBSize is 45352"},
+        {"title": "上行理论最高速率", "en": "Theoretical maximum uplink rate"},
+        {"title": "MTU1500Bytes", "en": "MTU1500Bytes"},
+        {"title": "TCP确认包", "en": "TCP acknowledgement packet"},
+        {"title": "RLC模块", "en": "RLC module"},
+        {"title": "SSCA的竞争效率0.94", "en": "SSCA's competition efficiency is 0.94"},
+        {"title": "实际FTP测得的均值900kBps", "en": "The actual average FTP measurement is 900kBps"},
+        {"title": "CUE通信共存情形", "en": "Coexistence of CUE communication"},
+        {"title": "高容量业务", "en": "High-capacity business"},
+        {"title": "网盘上传业务", "en": "Cloud disk upload business"},
+        {"title": "非蜂窝边缘用户", "en": "Non-cellular edge users"},
+        {"title": "边缘用户", "en": "Edge users"},
+        {"title": "功率裕量", "en": "Power margin"},
+        {"title": "干扰控制性能", "en": "Interference control performance"},
+        {"title": "远场D2D与非蜂窝边缘用户共同组网情形", "en": "Far-field D2D and non-cellular edge users jointly networked situation"},
+        {"title": "蜂窝引入D2D模式后频谱利用率的提高", "en": "Improvement of spectrum utilization rate after cellular introduces D2D mode"},
+        {"title": "AdvancedRRM方案", "en": "AdvancedRRM scheme"},
+        {"title": "盲复用RRM", "en": "Blind reuse RRM"},
+        {"title": "C2D强干扰时D2D仍有通信速率", "en": "D2D still has communication rate when C2D is strongly interfered"},
+        {"title": "蜂窝上传业务进行限制", "en": "Limiting cellular upload business"},
+        {"title": "C2D的干扰", "en": "C2D interference"},
+        {"title": "通信保有率为80%", "en": "Communication retention rate is 80%"},
+        {"title": "蜂窝最小吞吐需求", "en": "Minimum throughput requirement for cellular"},
+        {"title": "D2D通信引入的干扰必须可控", "en": "The interference introduced by D2D communication must be controllable"},
+        {"title": "D2C的干扰值降低15dB/RB", "en": "The interference value of D2C is reduced by 15dB/RB"},
+        {"title": "重用在干扰允许范围内的无线资源", "en": "Reuse wireless resources within the allowable interference range"},
+        {"title": "异构网络中D2D通信资源管理的目的", "en": "The purpose of D2D communication resource management in heterogeneous networks"},
+        {"title": "自主找寻频谱空洞并加以有效利用", "en": "Autonomously find spectrum holes and make effective use of them"},
+        {"title": "提升网络整体频谱利用率的目的", "en": "The purpose of improving the overall spectrum utilization of the network"},
+        {"title": "有效性与高效性得到了验证", "en": "Effectiveness and efficiency have been verified"}
+    ],
+    "relations": [
+        {"source": "发送子帧、残余错误子帧数与MCS因子调整关系", "target": "MCS因子与正确、残余错误传输次数间的关系曲线", "type": "关联"},
+        {"source": "性能分析及扩展", "target": "D2D所能提供的业务场景", "type": "属于"},
+        {"source": "D2D所能提供的业务场景", "target": "临近服务与公共安全服务", "type": "包括"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "FTP服务器与FTP用户端", "type": "使用"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "无上行蜂窝用户", "type": "条件"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "D2D冲突域内仅有一对D2D", "type": "条件"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "链路质量较好时", "type": "条件"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "D2D无线资源管理模块", "type": "使用"},
+        {"source": "D2D无线资源管理模块", "target": "网络中的资源空洞", "type": "包括"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "D2D通信最高速率", "type": "描述"},
+        {"source": "PUCCH资源为12RB", "target": "上行PUSCH最大可用资源长度为75RB", "type": "条件"},
+        {"source": "上行PUSCH最大可用资源长度为75RB", "target": "Imcs26", "type": "条件"},
+        {"source": "Imcs26", "target": "最大TBSize为45352", "type": "条件"},
+        {"source": "最大TBSize为45352", "target": "上行理论最高速率", "type": "条件"},
+        {"source": "上行理论最高速率", "target": "MTU1500Bytes", "type": "条件"},
+{
+    "knowledge_points": [
+        {"title": "发送子帧、残余错误子帧数与MCS因子调整关系", "en": "Relationship between subframe transmission, residual error subframe number and MCS factor adjustment"},
+        {"title": "性能分析及扩展", "en": "Performance analysis and extension"},
+        {"title": "D2D所能提供的业务场景", "en": "Business scenarios that D2D can provide"},
+        {"title": "临近服务与公共安全服务", "en": "Proximity services and public safety services"},
+        {"title": "蜂窝覆盖下的D2D通信性能", "en": "D2D communication performance under cellular coverage"},
+        {"title": "异构网络整体性能", "en": "Overall performance of heterogeneous networks"},
+        {"title": "FTP服务器与FTP用户端", "en": "FTP server and FTP client"},
+        {"title": "无上行蜂窝用户", "en": "No uplink cellular users"},
+        {"title": "链路质量较好时", "en": "When the link quality is good"},
+        {"title": "D2D无线资源管理模块", "en": "D2D wireless resource management module"},
+        {"title": "网络中的资源空洞", "en": "Resource holes in the network"},
+        {"title": "D2D通信与CUE通信共存情形下的网络整体性能", "en": "Overall network performance with coexistence of D2D and CUE communication"},
+        {"title": "高容量业务", "en": "High capacity services"},
+        {"title": "非蜂窝边缘用户与边缘用户的区别", "en": "Difference between non-cellular edge users and edge users"},
+        {"title": "干扰控制性能", "en": "Interference control performance"},
+        {"title": "基于干扰控制的RRM方案与盲复用RRM方案吞吐对比", "en": "Throughput comparison between interference control-based RRM scheme and blind reuse RRM scheme"},
+        {"title": "蜂窝业务保有率配置下的实际蜂窝吞吐率", "en": "Actual cellular throughput rate under cellular service retention rate configuration"},
+        {"title": "D2C干扰值降低15dB/RB得到的结果", "en": "Results obtained by reducing D2C interference value by 15dB/RB"},
+        {"title": "异构网络中D2D通信资源管理的目的", "en": "The purpose of D2D communication resource management in heterogeneous networks"}
+    ],
+    "relations": [
+        {"source": "发送子帧、残余错误子帧数与MCS因子调整关系", "target": "MCS因子与正确、残余错误传输次数间的关系曲线", "type": "关联"},
+        {"source": "性能分析及扩展", "target": "D2D所能提供的业务场景", "type": "属于"},
+        {"source": "D2D所能提供的业务场景", "target": "临近服务与公共安全服务", "type": "包括"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "FTP服务器与FTP用户端", "type": "使用"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "无上行蜂窝用户", "type": "条件"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "链路质量较好时", "type": "条件"},
+        {"source": "蜂窝覆盖下的D2D通信性能", "target": "D2D无线资源管理模块", "type": "使用"},
+        {"source": "D2D无线资源管理模块", "target": "网络中的资源空洞", "type": "包括"},
+        {"source": "异构网络整体性能", "target": "蜂窝覆盖下的D2D通信性能", "type": "影响"},
+        {"source": "异构网络整体性能", "target": "D2D通信与CUE通信共存情形下的网络整体性能", "type": "影响"},
+        {"source": "D2D通信与CUE通信共存情形下的网络整体性能", "target": "高容量业务", "type": "使用"},
+        {"source": "D2D通信与CUE通信共存情形下的网络整体性能", "target": "非蜂窝边缘用户与边缘用户的区别", "type": "条件"},
+        {"source": "D2D通信与CUE通信共存情形下的网络整体性能", "target": "干扰控制性能", "type": "影响"},
+        {"source": "干扰控制性能", "target": "基于干扰控制的RRM方案与盲复用RRM方案吞吐对比", "type": "包括"},
+        {"source": "基于干扰控制的RRM方案与盲复用RRM方案吞吐对比", "target": "蜂窝业务保有率配置下的实际蜂窝吞吐率", "type": "影响"},
+        {"source": "蜂窝业务保有率配置下的实际蜂窝吞吐率", "target": "D2C干扰值降低15dB/RB得到的结果", "type": "影响"},
+        {"source": "D2C干扰值降低15dB/RB得到的结果", "target": "异构网络中D2D通信资源管理的目的", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "分布式RRM方案", "en": "Distributed RRM scheme"},
+        {"title": "无蜂窝网络覆盖", "en": "Non-cellular network coverage"},
+        {"title": "D2C设计", "en": "D2C design"},
+        {"title": "集中式重用干扰控制机制", "en": "Centralized reuse interference control mechanism"},
+        {"title": "DUE侧", "en": "DUE side"},
+        {"title": "D2D同步子信道", "en": "D2D synchronous subchannel"},
+        {"title": "帧格式", "en": "Frame format"},
+        {"title": "TDDFormat1", "en": "TDDFormat1"},
+        {"title": "上行子帧", "en": "Uplink subframe"},
+        {"title": "数据传输资源", "en": "Data transmission resources"},
+        {"title": "FTP最大吞吐量", "en": "Maximum FTP throughput"},
+        {"title": "D2D通信速率", "en": "D2D communication rate"},
+        {"title": "D2D通信服务", "en": "D2D communication service"},
+        {"title": "扩展", "en": "Extension"},
+        {"title": "物理层支持同步状态机", "en": "Physical layer supports synchronous state machine"},
+        {"title": "路由协议", "en": "Routing protocol"},
+        {"title": "D2D内部多跳中继功能", "en": "D2D internal multi-hop relay function"},
+        {"title": "频谱空洞", "en": "Spectrum hole"},
+        {"title": "网络整体频谱利用率", "en": "Overall spectrum utilization of the network"},
+        {"title": "验证场景", "en": "Verification scenario"},
+        {"title": "SSCA", "en": "SSCA"},
+        {"title": "RTSO", "en": "RTSO"},
+        {"title": "RTS1", "en": "RTS1"},
+        {"title": "DCCCH信道帧格式", "en": "DCCCH channel frame format"},
+        {"title": "基带信号处理流程", "en": "Baseband signal processing flow"},
+        {"title": "交互设计", "en": "Interactive design"},
+        {"title": "接口", "en": "Interface"},
+        {"title": "功能实现", "en": "Function implementation"}
+    ],
+    "relations": [
+        {"source": "分布式RRM方案", "target": "无蜂窝网络覆盖", "type": "考虑"},
+        {"source": "D2C设计", "target": "集中式重用干扰控制机制", "type": "设计"},
+        {"source": "DUE侧", "target": "分布式RRM方案", "type": "完成"},
+        {"source": "D2D同步子信道", "target": "帧格式", "type": "建立"},
+        {"source": "帧格式", "target": "TDDFormat1", "type": "选用"},
+        {"source": "帧格式", "target": "上行子帧", "type": "配置"},
+        {"source": "D2D通信", "target": "数据传输资源", "type": "使用"},
+        {"source": "D2D通信", "target": "FTP最大吞吐量", "type": "测试"},
+        {"source": "D2D通信速率", "target": "FTP最大吞吐量", "type": "维持"},
+        {"source": "D2D通信速率", "target": "图4-37无蜂窝网络覆盖下的D2D场景(D2D1视角)", "type": "实测得到"},
+        {"source": "D2D通信服务", "target": "高码率视频分享", "type": "承载"},
+        {"source": "D2D通信服务", "target": "本地广告推荐", "type": "承载"},
+        {"source": "D2D通信服务", "target": "文件传输", "type": "承载"},
+        {"source": "D2DAdvancedRRM", "target": "物理层支持同步状态机", "type": "使用"},
+        {"source": "D2DAdvancedRRM", "target": "路由协议", "type": "引入"},
+        {"source": "D2DAdvancedRRM", "target": "D2D内部多跳中继功能", "type": "支持"},
+        {"source": "RRM", "target": "D2D网络内部两跳", "type": "扩展"},
+        {"source": "RRM", "target": "D2D网络内部三跳通信", "type": "扩展"},
+        {"source": "频谱空洞", "target": "重用相应资源", "type": "加以利用"},
+        {"source": "网络整体频谱利用率", "target": "提升", "type": "达到"},
+        {"source": "验证场景", "target": "SSCA", "type": "优化设计"},
+        {"source": "SSCA", "target": "RTSO", "type": "优先接入"},
+        {"source": "SSCA", "target": "RTS1", "type": "竞争接入"},
+        {"source": "DCCCH信道帧格式", "target": "基带信号处理流程", "type": "设计"},
+        {"source": "RRM模块", "target": "交互设计", "type": "进行"},
+        {"source": "RRM模块", "target": "接口", "type": "设计"},
+        {"source": "RRM模块", "target": "功能实现", "type": "验证"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线电技术", "en": "Cognitive radio technology"},
+        {"title": "D2D通信", "en": "Device-to-device communication"},
+        {"title": "蜂窝网络", "en": "Cellular network"},
+        {"title": "异构网络", "en": "Heterogeneous network"},
+        {"title": "干扰问题", "en": "Interference problem"},
+        {"title": "无线资源管理", "en": "Wireless resource management"},
+        {"title": "频谱空洞", "en": "Spectrum hole"}
+    ],
+    "relations": [
+        {"source": "认知无线电技术", "target": "D2D通信", "type": "包含"},
+        {"source": "蜂窝网络", "target": "D2D通信", "type": "融合"},
+        {"source": "蜂窝网络", "target": "无线资源管理", "type": "关联"},
+        {"source": "异构网络", "target": "干扰问题", "type": "包含"},
+        {"source": "无线资源管理", "target": "频谱空洞", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "设备到设备通信", "en": "Device-to-Device Communication"},
+        {"title": "混合网络", "en": "Hybrid Network"},
+        {"title": "干扰协调", "en": "Interference Coordination"},
+        {"title": "认知无线电", "en": "Cognitive Radio"},
+        {"title": "资源分配", "en": "Resource Allocation"}
+    ],
+    "relations": [
+        {"source": "设备到设备通信", "target": "混合网络", "type": "属于"},
+        {"source": "设备到设备通信", "target": "干扰协调", "type": "涉及"},
+        {"source": "设备到设备通信", "target": "资源分配", "type": "涉及"},
+        {"source": "混合网络", "target": "干扰协调", "type": "涉及"},
+        {"source": "混合网络", "target": "资源分配", "type": "涉及"},
+        {"source": "干扰协调", "target": "资源分配", "type": "涉及"},
+        {"source": "认知无线电", "target": "混合网络", "type": "涉及"},
+        {"source": "认知无线电", "target": "干扰协调", "type": "涉及"},
+        {"source": "认知无线电", "target": "资源分配", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "网络辅助的设备决策通道选择和功率控制", "en": "Network-assisted device-decided channel selection and power control"},
+        {"title": "WINNER II信道模型", "en": "WINNER II channel models"},
+        {"title": "计算机网络", "en": "Computer Networks"},
+        {"title": "IEEE 802.11", "en": "IEEE 802.11"},
+        {"title": "贝叶斯广播网络控制", "en": "Bayesian broadcast network control"},
+        {"title": "时隙ALOHA二进制指数回退算法", "en": "Slotted ALOHA binary exponential backoff algorithm"},
+        {"title": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "en": "Evolved Universal Terrestrial Radio Access (E-UTRA)"},
+        {"title": "蜂窝与D2D异构网络下的D2D通信方案及原型系统设计", "en": "D2D communication scheme and prototype system design in cellular and D2D heterogeneous networks"},
+        {"title": "Radio Resource Control (RRC)协议规范", "en": "Radio Resource Control (RRC) protocol specification"},
+        {"title": "关于通信信道容量的大偏差分析", "en": "Large deviation analysis on communication channel capacity"}
+    ],
+    "relations": [
+        {"source": "网络辅助的设备决策通道选择和功率控制", "target": "WINNER II信道模型", "type": "相关"},
+        {"source": "计算机网络", "target": "IEEE 802.11", "type": "相关"},
+        {"source": "IEEE 802.11", "target": "网络辅助的设备决策通道选择和功率控制", "type": "相关"},
+        {"source": "贝叶斯广播网络控制", "target": "通信信道容量", "type": "相关"},
+        {"source": "时隙ALOHA二进制指数回退算法", "target": "网络辅助的设备决策通道选择和功率控制", "type": "相关"},
+        {"source": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "target": "蜂窝与D2D异构网络下的D2D通信方案及原型系统设计", "type": "相关"},
+        {"source": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "target": "Radio Resource Control (RRC)协议规范", "type": "相关"},
+        {"source": "蜂窝与D2D异构网络下的D2D通信方案及原型系统设计", "target": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "type": "相关"},
+        {"source": "Radio Resource Control (RRC)协议规范", "target": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "type": "相关"},
+        {"source": "关于通信信道容量的大偏差分析", "target": "WINNER II信道模型", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+} 
+
+Sorry, there is no relevant knowledge point or relationship with 'Communication Theory' in the given content.

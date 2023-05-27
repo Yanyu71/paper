@@ -1,0 +1,33 @@
+4.3.2上行静态状态机设计
+上行状态机相对于下行状态机较为复杂，根据上行时偏值和提前量 TA 的来 源上行的同步定时方式根据优先级从低到高应有如下几个：以自身为定时，即  D2D 网络主机；以其他D2D 终端为定时基准，即D2D 从机；在下行与基站定时 的基础上，以默认TA 相对于下行定时；在下行与基站定时的基础上，与Cell UE 建立同步关系，获取Cell UE提前量TA, 从而确定上行定时。
+这个优先级顺序是为了使异构网络中D2D 通信和蜂窝通信尽可能减小互相 干扰，提高同步准确性。即当存在蜂窝基站时， D2D 各终端应优先选择均以基 站为定时基准，在此基础上，当存在Cell UE时，应与其同步从而获取提前量TA。
+根据以上分析，上行状态机STATE UL 应有如下子状态：
+STATE UL=D2D Master Mode:D2D     自组主机状态，不和任何同步源建立 同步关系，以本机为定时， TA 获取方式为默认值，上行部分以LTE 协议要求的 标准默认提前量相对于下行进行提前发送与接收。此状态对应状态标志
+CELL STATE,D2D STATE    和 UE STATE  均为 Idle。
+31
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.    http://www.cnki.net
+STATE UL=D2D Slave Mode;   D2D自组从机状态，此时只存在邻近D2D
+终端同步信号， D2D 终端上行部分与邻近D2D 终端通过Sync同步建立同步关  系，并通过解析Sync带外信息获取D2D 同步源上行提前量信息。如若存在多   D2D 终端同步信号，则根据优先级选取最高优先级的邻近D2D 终端同步信号。
+TA 获取方式为通过SyncInfo获取，上行部分以通过Sync 同步解析出的提  前量TA 相对于下行进行提前发送与接收。此状态对应状态标志D2D STATE 为 Active, CELL STATE 和UE STATE 为 Idle。
+STATE UL=Cell Slave Mode: 基站从机状态。此时存在基站信号，没有  cellUE存在。此时D2D 终端上行和下行采用cell同步时偏值。TA 获取方式为默 认值，上行采用LTE 协议标准的提前量相对于下行提前发送和接收。此状态对 应状态标志CELL STATE 为Active,UE STATE 为 Idle,D2D STATE 为 Idle  或Active均可。
+STATE UL=UE Slave Mode:  基站与Cell UE信号同时存在。此时D2D 终 端下行采用Cell同步时偏值，与基站下行定时对齐。 TA 则通过Cell UE 同步获 取。此状态对应状态标志CELL STATE 和UE STATE 均为Active,D2D STATE 为Idle或 Active均可。
+表4-2 上行状态机各状态与状态标志决策条件
+D2D ST
+ATE	CELL ST
+ATE	UE STA
+TE
+TA
+D2D Master
+Mode	Idle	Idle	Idle	默认值
+D2D Slave M
+ode
+Active	Idle	Idle	　SyncInfo 获取
+Cell Slave M
+ode	Active
+/Idle
+Active	Idle	默认值
+UE Slave Mo
+de	　Active /Idle
+Active
+Active	UE同步获
+取

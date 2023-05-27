@@ -1,0 +1,12 @@
+2.3WindowsAPI概述
+Windows API(Application Programming Interface,简称 WinAPI)是微软对于 Windows操作系统中可用的核心应用程序编程接口的称法，包括函数、结构、消 息、宏及接口等。Windows API能被各种语言调用，也是应用程序与Windows 系统最常使用的交互方式。Native API可以为大多数驱动程序提供更低层次的访 问接口，具体映射关系情况因版本而异。为方便程序员开发使用Windows API 的软件，微软专门为程序员开发了一套软件开发包(Software Development Kit,简 -称SDK)',并提供了相应的文档和其他软件卩3］。在实际开发时，由于不同版本 的系统提供的Windows API存在差异，而程序中经常会使用这些Windows APL 所以程序的开发依赖底层平台。
+近年来，由于不断更新补丁、替换版本，Windows操作系统越发强大，相应 的，Windows API也随之改变。一方面Windows API的数目增加了，另一方面 Windows API也进行了一些扩展，比如1.0版本的Windows API只提供了不到 450个函数调用(Subroutine),而现在的版本则提供了数千个函数调用。不过总体 而言，Windows API还是保持了较好的一致性，兼容性较好。Windows API按功 能可以分为七类tl4］：
+1.基础服务(Base Services)。可用的基础资源访问接口即是由基础服务提供 的，这些基础资源包括文件系统(file system)>外部设备(device)、错误处理机制 (error handling mechanism)> 进程(process)、线程(thread)以及访问注册表(registry) 等。这些功能接口在可执行文件和动态链接库中大量分布，例如在16位Windows 系统下(winl6),基础服务 API 存在于 kemel.exe、kml286.exe 和 kml386.exe 系统 文档中。而在32位Windows系统(Win32)下则存在于kemel32.dll和advapi32.dll 中。
+2.图形设备接口(GDI),将图形内容输出到外设上的功能就是由图形设备接 口进行定义的。在winl6下，图形设备接口存在于gdi.exe。而在Win32下，图 形设备接口存在于gdi32.dll中。
+3.图形化用户界面(GUI),系统中大部分基本控件的各项操作都是由图形化 界面接口进行定义的。这些控件包括屏幕、按钮和滚动条等，鼠标的输入信号与 键盘的输入也是交由图形化用户界面接口进行处理的。图形化用户界面接口在
+19
+winl6下存在于user.exe中，而在Win32下存在于user32.dll0在最近版本的 Windows系统下，图形化界面接口存在于comctl32.dll中。
+4.通用对话框链接库(Common Dialog Box Library),对话框的各项操作就是 由通用对话框链接库定义的，这些操作包含打开、关闭、新建和保存等。通用对 话框链接库在winl6下存在于commdlg.dll中，而在Win32下通用对话框链接库 则存在于comdlg32.dll中。这一链接库被归类为用户接口 APL
+5.通用控件锥接库(Common Control Library),操作高级控件的功能就是由 通用控件链接库定义的。这些高级控件包含工具栏、进度条、状态栏和标签等。 这个链接库在winl6下存在于commctrl.dll中，而在Win32下存在于comctl32.dll 中。通用控件链接库属于用户接口 API。
+6.Windows 外壳(Windows Shell), Windows 外壳的接 口就是由 Windows 外 壳定义的。Windows外壳在winl6下存在于shell.dll中，而在Win32下存在于 shell32.dll 中(Windows 95 则在 shlwapi.dll 中)oWindows 外壳属于用户接口 .API。
+7.网络服务(NetworkServices),系统中的网络功能就是由网络服务提供的。 这些功能有 NetDDE、Winsock、RPC 和 NetBIOS 等。

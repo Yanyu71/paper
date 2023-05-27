@@ -1,0 +1,13 @@
+3.2.23D神经网络的设计
+大多数的3D卷积神经网络在视频识别任务上的设计都是由2D卷积神经网 络驱动设计的，如将2D的空间卷积核拓展到3D的时间空间卷积核，也有在2D 神经网络的基础上添加RNN,本文将借鉴的2D神经网络RegNet的设计，同时 结合参数量和计算量进行考虑进行调整修改，形成本文所使用的3D神经网络。
+33
+本文所使用3D卷积神经网络由三个部分组成，分别为stem, body, head, 其中stem部分设计由下图所示，原始的2D RegNet网络的stem部分是常见的 conv2d+BatchNorm2d+ReLU的组合，本文3D-CNN设计的stem中，将会增加一 个额外的时域的3D卷积，尝试在网络的最开始处进行时域信息的整合提取。如 图3-7所示。
+图3-7 Regnet中所使用的stem部分(左图)，本文使用的3D卷积神经网络stem部分(右图)
+在3D卷积神经网络的body部分主要分为两个种类，需要进行下采样的 ResBottleneckBlock,如图 3-8 所示，不需要进行下采样的 ResBottleneckBlock, 如图3-9所示，传统的Bottleneck系列设^一般是的(Conv2d + BatchNorm2d + ReLU + Conv2d + BatchNorm2d + Re LU + Conv2d + BatchNorm2d)的结构，在 这里本文将2D的卷积核进行拓展，将ReLU激活函数替换为Swish激活函数, Conv3d + BatchNorm3d + Swish + Conv3d + BatchNorm3d + Swish +
+Conv3d + BatchNorm3d),其中 Swish 激活函数为 F(X) = X * Sigmoid(X),在 将2D的卷积核延展成3D卷积核时，第一个Conv3d卷积核和第三个Conv3d卷 积核T维度的T维度固定为1,在第二个卷积核上的T维度上将会在网络的不 同深度设置不同的参数，在后层一般都设置为3。在需要进行下采样的时候，另 一个分支会设置大小为t*l*l的卷积核，步长为2的卷积核，t的大小和另一路
+34
+图3-8 Regnet中所使用的ResBottleneckBlock-0部分（左图），本文使用的3D卷积神经网络
+3D 型 ResBottleneckBlock-0 部分(右图)
+图3-9 Regnet中所使用的ResBottleneckBlock-1部分（左图），本文使用的3D卷积神经网络
+3D 型 ResBottleneckBlock-1 部分（右图）
+35

@@ -1,0 +1,21 @@
+摘要
+关系抽取技术能够从自然语言里抽取出具有某些关系的实体对， 从而方便人们快速查找这些知识。同时，它能帮助人们将海量的文本 信息中蕴含的关系自动抽取出来，重新构建成易于计算机理解的结 构，增强人们组织分析信息的能力。
+目前，关系抽取技术还没有完全成熟，本文综合当前研究成果， 深入理解关系抽取问题的实质，充分调研相关领域的技术发展，提出 了进一步改进半监督关系抽取问题的思路，并予以验证。本文的主要 工作和研究成果包括：
+第一，设计并实现了基于co-training的关系抽取改进算法。针对 语义漂移问题，本文提出了评估中间产出实体对和模板语义漂移程度 的计算公式，对于质量不高的实体对和模板进行过滤，从而确保算法 迭代更加有效。这项改进使得算法能够迭代更多次数而且F1值提高 了 0.09。
+第二，提出了 word embedding的co-training关系抽取改进算法。 关系抽取中充分利用特征信息是近些年研究者一直以来的工作重点 之一，而深度学习在这方面具有非常强大的优势。本文将word embedding以及其他语言学信息加入到模板之中，从而丰富了模板的 表现力。深度学习技术的引进，使得co-training关系抽取算法性能有 了进一步的提升，实验表明F1值提高了 O.lOo
+第三，提出了一种基于核函数的co-training关系抽取改进算法。 根据有监督算法和半监督算法各自的优点，本文首先利用co-training 进行有效迭代产出大量的模板。然后，将这些模板作为训练集并使用 基于核函数的SVM对其训练，形成半监督和有监督的级联系统。通 过充分利用核函数，实验显示F1值再次提高了 0.05o
+最后，通过上述研究，搭建了 一个在TAC会议中KBP任务的研 究平台。该系统曾取得过这项任务的第一名。
+本文的研究工作对于关系抽取提供了一些新想法和新思路，对于 关系抽取的进一步发展具有一定的借鉴意义和参考价值。
+关键词：关系抽取 co-training 核函数语义漂移 半监督学习
+RELATIONSHIP EXTRACTION
+TECHNOLOGY BASED ON CO-TRAINING
+AND KERNEL METHOD
+ABSTRACT
+Relation extraction technology can extract entities that have a certain relationship from natural language text, and this enables people to find information easily and quickly. At the same time, this technology helps people extract entity pairs in the text automatically. By re-build a new data structure, it enhances people's ability to analyze information.
+Currently, the relation extraction technology has many areas for improvement. This paper investigates the current research, and enhances the understanding of the issues for relation extraction and researches some related fields. Then, this article proposes some ideas to improved semi-supervised relation extraction technology and do test to verify them. The main results of this work and research include:
+Firstly, this paper design and implement an improved algorithm based on the co-training. For semantic drift problem, this paper presents a formula to evaluate score of entities and templates. This paper filters out lower score entities and templates to ensure more effective iterative algorithm. This improvement enables iterative algorithm can improve more times and makes the Fl value increased by 0.09.
+Secondly, this paper proposes a new method based on word embedding to improves co-training algorithm. For researchers, full use of the characteristics of information is one of the priorities in recent years and word embedding has a very strong advantage in this field. This article adds word embedding and other linguistic information into the template to enrich the expressive power of templates. The use of deep learning technology makes co-training algorithm performance further improved. Experiments show that Fl value is increased by 0.10.
+Thirdly, this paper proposes an improved co-training algorithm based on kernel function. According to the characteristics of supervised and semi-supervised algorithm, we organize these two algorithms. Firstly, get a lot of templates by co-training algorithm, and then use SVM algorithm to train these templates. Finally, this paper conducts a cascade of these two algorithms. Through effective use of the kernel function, experiments show that the value of Fl raises 0.05.
+Finally, we set up a research system in the TAC meeting tasks, and won first prize.
+In relation extraction field, this paper makes a lot of experiments, and put forward some new ideas, and have meaningful value fbr the further development of relation extraction.
+KEY WORDS: relationship extraction co-training kernel method semantic drift word embedding semi-supervised

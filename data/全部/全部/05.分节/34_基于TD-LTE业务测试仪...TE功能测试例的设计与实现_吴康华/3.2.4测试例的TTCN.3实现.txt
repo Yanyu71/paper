@@ -1,0 +1,36 @@
+3.2.4测试例的TTCN.3实现
+为了和3GPP保持一致，将测试例命名为“TC_9_1 ”,在MTC上定义VoLTE 鉴权测试例时,激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模拟TD-LTE 小区接入网和核心网的IMS、IP部分的测试主体，以下为这一过程的TTCN-3 实现代码：
+testcase TC_9_1() runs on MTC_IMS system SYSTEMJMS {
+// Invalid Behavior- MAC Parameter Invalid
+var IMS_PTC v_IMSl := null;
+var IMS_PTC v_IMS2 := null;
+timer tGuardTimer := int2float(300);
+v IMSl := IMS PTC.create alive;
+f.MTC_IMS_CreateMapAndConnectPTCs_EUTRA(v_IMSl, v_IMS2); v_IMS 1 .start(f_TC_9_l_IMS());
+t_GuardTimer.start;
+JMTC_IMS_MainLoop(t_GuardTimer);
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC，测试例开始执行时，首先通过 EUTRA_PTC接入核心网，通过IP_PTC转发到IMS_PTC,最后由IMS_PTC负 责与UE进行信令交互。各测试成分之间的关系如下图3-7所示：
+图3-7 各PTC之间关系
+作为鉴权测试例的主体函数，CTC_9_1_IMS()内部实现比较复杂，仅选取几 个关键函数说明内部执行情况，下面是LTC_9_1_IMS()函数内部几组比较重要 的步骤，测试例中所有消息配置如无特殊声明则参考3GPPTS 34.229-1 o
+第一组是本端的一些配置：
+flGeneratelnvalidNonce(macError); f_IMS_CC_StartSignalling(IPCAN_InitialRegistration);
+v_DigestResponseContainingAuts := (cr_GenericParam("auts", ?),*};
+首先函数fl_Generate!nvalidNonce ()设置一个随机的mac值，该值将会在测 试例执行过程中发给终端，终端通过比较该值与终端本地计算的xmac值(协议 要求两者不匹配)。函数f_IMS_CC_StartSignalling ()启动信令流程，IPCAN初 始化注册。按照协议 TS34.229-1 对参数 v DigestResponseContainingAuts 配置 "auts"。
+第二组函数表示测试例开始处理SS接收终端发起的REGISTER请求：
+f.IMS_REGISTER_InitialRequestO； OMS_RoutingInfb_ULtoDL(v_IMS_DAIA_REQ.RoutmgInfo); f_IMS_Register_SecurityInit(v_RegisterReq);
+f^IMS_Register_GetSecurityClientParams(v_RegisterReq);
+其中函数口MS_REGISTER_InitialRequest()初始化对 REGISTER 的回复的 消息。JIMS_RoutingInfo_ULtoDL ()从参数中上行请求的路由信息赋值到下行消 息的路由信息中。函数LIMS_Register_SecurityInit()初始化安全保护。函数 口 MS_Register_GetSecurityClientParams()从参数注册请求中获取客户端的安全 保护参数。
+第三组函数对应信令流程的第二部到第六步，具体如下：
+nMS_REGISTER_RequestWithSpecificAuth(v_CallId,cr_Authorization_9_l); activate(a_IgnoreFurtherRegistration());
+fl_CheckSecurityClientParams(v_SecurityClientParamsList, vRegisterReq);
+IMS_Server.send(cas_IMS_DATA_RSP(v_RoutingInfd_DL, csResponse (c_statusLine403, f_IMS_RegisterResponse_403_MessageHeaderTX (v_RegisterReq))));
+其中，函数 MMS_REGISTER_RequestWithSpecificAuth ()按照协议要求配 置“auth”参数，函数activate。使得SS不再接收该终端的REGISTER请求， IMS_Server.send()通知 IMS 服务器发送 403 Forbidden 消息。
+第四组函数是测试例结束操作的函数，每一个测试例结束时都需要调用，具 体如下：
+OMS_TestBody_Set(false); f.IMS_CC_Postamble(IPCAN_MO_VideoCall);
+其中函数JIMS_TestBody_Set()根据参数false结束测试例，测试例开始时根 据参数true开始测试，函数JIMS_CC_Postamble()测试例结束过后的通用释放过 程，参数IPCAN_MO_VideoCall表示业务类型。
+第五组函数是打印log,因为要申请GCF认证，不但要将测试例跑通，还要 提交TTCN logo另一方面，log在调试过程中也起着很大作用。具体如下：
+&_OutputTTCNLog(LogClass_Note," <— 401 Unauthorized ", (});
+其中，LogClass_Note 表示打印的 txt 文件，"<---401 UnauthorizedM 表示 SIP 消息类型。后续测试例流程同样会调用该函数，不表。
+鉴权测试例的实现流程如图3-8所示：
+图3-8签权测试例实现流程

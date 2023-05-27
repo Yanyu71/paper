@@ -1,0 +1,722 @@
+﻿{
+    "knowledge_points": [
+        {"title": "互联网的影响", "en": "Impact of the Internet"},
+        {"title": "网络流量异常", "en": "Abnormal Network Traffic"},
+        {"title": "分布式拒绝服务攻击", "en": "Distributed Denial of Service (DDoS) Attack"},
+        {"title": "异常流量检测", "en": "Abnormal Traffic Detection"},
+        {"title": "基于阈值基线的异常流量检测法", "en": "Threshold-based Abnormal Traffic Detection"},
+        {"title": "大数据处理技术", "en": "Big Data Processing Technology"},
+        {"title": "Apache Hadoop", "en": "Apache Hadoop"},
+        {"title": "Apache Spark", "en": "Apache Spark"},
+        {"title": "Apache Storm", "en": "Apache Storm"}
+    ],
+    "relations": [
+        {"source": "互联网的影响", "target": "网络流量异常", "type": "包含"},
+        {"source": "网络流量异常", "target": "分布式拒绝服务攻击", "type": "导致"},
+        {"source": "分布式拒绝服务攻击", "target": "异常流量检测", "type": "关联"},
+        {"source": "异常流量检测", "target": "基于阈值基线的异常流量检测法", "type": "属于"},
+        {"source": "大数据处理技术", "target": "Apache Hadoop", "type": "属于"},
+        {"source": "大数据处理技术", "target": "Apache Spark", "type": "属于"},
+        {"source": "大数据处理技术", "target": "Apache Storm", "type": "属于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Storm", "en": "Storm"},
+        {"title": "实时数据处理", "en": "Real-time data processing"},
+        {"title": "分布式处理框架", "en": "Distributed processing framework"},
+        {"title": "海量网络流量数据", "en": "Massive network traffic data"},
+        {"title": "异常流量检测算法", "en": "Abnormal traffic detection algorithm"},
+        {"title": "格拉布斯检测法", "en": "Grubbs' test"},
+        {"title": "动态K近邻", "en": "Dynamic K-nearest neighbor"},
+        {"title": "Kafka", "en": "Kafka"},
+        {"title": "Hbase", "en": "Hbase"},
+        {"title": "数据分析", "en": "Data analysis"}
+    ],
+    "relations": [
+        {"source": "Storm", "target": "实时数据处理", "type": "包含"},
+        {"source": "分布式处理框架", "target": "Storm", "type": "基于"},
+        {"source": "海量网络流量数据", "target": "异常流量检测算法", "type": "需求"},
+        {"source": "异常流量检测算法", "target": "格拉布斯检测法", "type": "包含"},
+        {"source": "异常流量检测算法", "target": "动态K近邻", "type": "包含"},
+        {"source": "数据采集模块", "target": "Kafka", "type": "使用"},
+        {"source": "数据处理模块", "target": "Storm", "type": "使用"},
+        {"source": "数据存储模块", "target": "Hbase", "type": "使用"},
+        {"source": "异常流量实时监控系统数据分析", "target": "数据分析", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "HDFS", "en": "HDFS"},
+        {"title": "Namenode", "en": "Namenode"},
+        {"title": "Datanode", "en": "Datanode"},
+        {"title": "Hadoop", "en": "Hadoop"},
+        {"title": "MapReduce", "en": "MapReduce"},
+        {"title": "Spark", "en": "Spark"},
+        {"title": "RDD", "en": "RDD"},
+        {"title": "Pregel", "en": "Pregel"},
+        {"title": "YARN", "en": "YARN"}
+    ],
+    "relations": [
+        {"source": "HDFS", "target": "Namenode", "type": "包含"},
+        {"source": "HDFS", "target": "Datanode", "type": "包含"},
+        {"source": "Hadoop", "target": "HDFS", "type": "依赖"},
+        {"source": "Hadoop", "target": "MapReduce", "type": "依赖"},
+        {"source": "Hadoop", "target": "Spark", "type": "依赖"},
+        {"source": "MapReduce", "target": "Hadoop", "type": "依赖"},
+        {"source": "Spark", "target": "Hadoop", "type": "依赖"},
+        {"source": "Spark", "target": "RDD", "type": "包含"},
+        {"source": "Pregel", "target": "BulkSynchronousParallel", "type": "采用"},
+        {"source": "YARN", "target": "MapReduceV2", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Yarn的核心是资源管理器(ResourceManager)", "en": "The core of Yarn is the ResourceManager for resource management"},
+        {"title": "实时流处理技术概述", "en": "Overview of real-time stream processing technology"},
+        {"title": "Storm", "en": "Storm"},
+        {"title": "S4", "en": "S4"},
+        {"title": "分布式消息系统Kafka", "en": "Distributed messaging system Kafka"},
+        {"title": "Broker", "en": "Broker"},
+        {"title": "Topic", "en": "Topic"}
+    ],
+    "relations": [
+        {"source": "Yarn的核心是资源管理器(ResourceManager)", "target": "实时流处理技术概述", "type": "包含"},
+        {"source": "实时流处理技术概述", "target": "Storm", "type": "包含"},
+        {"source": "实时流处理技术概述", "target": "S4", "type": "包含"},
+        {"source": "实时流处理技术概述", "target": "分布式消息系统Kafka", "type": "包含"},
+        {"source": "分布式消息系统Kafka", "target": "Broker", "type": "包含"},
+        {"source": "分布式消息系统Kafka", "target": "Topic", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Producer", "en": "生产者"},
+        {"title": "Consumer", "en": "消费者"},
+        {"title": "ConsumerGroup", "en": "消费者组"},
+        {"title": "Kafka拓扑结构", "en": "Kafka Topology"},
+        {"title": "Kafka存储策略", "en": "Kafka Storage Strategy"},
+        {"title": "分布式流处理平台Storm", "en": "Distributed Stream Processing Platform Storm"},
+        {"title": "Storm平台主要特性介绍", "en": "Introduction to the Main Features of Storm Platform"},
+        {"title": "Storm平台主要组件介绍", "en": "Introduction to the Main Components of Storm Platform"}
+    ],
+    "relations": [
+        {"source": "Producer", "target": "KafkaBroker", "type": "发布消息数据到"},
+        {"source": "Consumer", "target": "Kafka集群", "type": "从集群获取消息数据"},
+        {"source": "Consumer", "target": "Topic", "type": "关注"},
+        {"source": "Consumer", "target": "ConsumerGroup", "type": "属于"},
+        {"source": "Kafka集群", "target": "Broker服务器", "type": "包含"},
+        {"source": "Kafka集群", "target": "Zookeeper集群", "type": "用于通信和协调"},
+        {"source": "Kafka集群", "target": "Partition", "type": "按照Topic进行分类"},
+        {"source": "Partition", "target": "逻辑日志", "type": "匹配"},
+        {"source": "逻辑日志", "target": "log文件", "type": "组成"},
+        {"source": "Producer", "target": "Partition", "type": "发送消息数据到"},
+        {"source": "log文件", "target": "硬盘存储", "type": "写入"},
+        {"source": "Consumer", "target": "Partition", "type": "从其订阅消息的Partition获得数据"},
+        {"source": "Consumer", "target": "偏移量", "type": "获取消息时包括所要获取消息的"},
+        {"source": "Storm平台", "target": "拓扑结构", "type": "构建"},
+        {"source": "Storm平台", "target": "流数据", "type": "处理"},
+        {"source": "Storm平台", "target": "编程模型", "type": "简单"},
+        {"source": "Storm平台", "target": "编程语言", "type": "支持多种"},
+        {"source": "Storm平台", "target": "容错性", "type": "良好"},
+        {"source": "Storm平台", "target": "可扩展性", "type": "良好"},
+        {"source": "Storm平台", "target": "消息处理", "type": "可靠"},
+        {"source": "Storm平台", "target": "处理能力", "type": "快速"},
+        {"source": "Storm平台", "target": "本地模式", "type": "设计有"},
+        {"source": "Storm集群", "target": "主节点", "type": "包含"},
+        {"source": "Storm集群", "target": "工作节点", "type": "包含"},
+        {"source": "Storm集群", "target": "Zookeeper", "type": "进行协调"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Nimbus", "en": "Nimbus"},
+        {"title": "Supervisor", "en": "Supervisor"},
+        {"title": "Topology", "en": "Topology"},
+        {"title": "Spout", "en": "Spout"},
+        {"title": "Bolt", "en": "Bolt"},
+        {"title": "StreamGrouping", "en": "StreamGrouping"},
+        {"title": "Tuple", "en": "Tuple"},
+        {"title": "Hbase", "en": "Hbase"},
+        {"title": "关系型数据库", "en": "Relational Database"},
+        {"title": "非关系型数据库", "en": "Non-Relational Database"}
+    ],
+    "relations": [
+        {"source": "Nimbus", "target": "Strom", "type": "类比"},
+        {"source": "Supervisor", "target": "Storm集群", "type": "运行于"},
+        {"source": "Supervisor", "target": "Nimbus", "type": "监听"},
+        {"source": "Topology", "target": "MapReduceJob", "type": "类比"},
+        {"source": "Topology", "target": "Storm计算逻辑组件", "type": "编排、容纳"},
+        {"source": "Topology", "target": "有向无环图", "type": "组合成"},
+        {"source": "Topology", "target": "StreamGrouping", "type": "自定义消息的分发方式"},
+        {"source": "Spout", "target": "Tuple", "type": "产生"},
+        {"source": "Bolt", "target": "Tuple", "type": "计算"},
+        {"source": "Bolt", "target": "StreamGrouping", "type": "定义消息传输机制"},
+        {"source": "StreamGrouping", "target": "ShuffleGrouping", "type": "分发策略"},
+        {"source": "StreamGrouping", "target": "FieldsGrouping", "type": "分发策略"},
+        {"source": "StreamGrouping", "target": "AllGrouping", "type": "分发策略"},
+        {"source": "StreamGrouping", "target": "GlobalGrouping", "type": "分发策略"},
+        {"source": "StreamGrouping", "target": "NonGrouping", "type": "分发策略"},
+        {"source": "StreamGrouping", "target": "DirectGrouping", "type": "分发策略"},
+        {"source": "StreamGrouping", "target": "LocalorShuffleGrouping", "type": "分发策略"},
+        {"source": "Tuple", "target": "键值对", "type": "传递形式"},
+        {"source": "Hbase", "target": "持续性", "type": "存储结果"},
+        {"source": "关系型数据库", "target": "数据关系模型", "type": "存储结构"},
+        {"source": "非关系型数据库", "target": "NoSql", "type": "分类"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "关系型数据库的劣势", "en": "Disadvantages of relational databases"},
+        {"title": "非关系型数据库的概念", "en": "Concept of non-relational databases"},
+        {"title": "HBase的特点和数据模型", "en": "Characteristics and data model of HBase"},
+        {"title": "异常流量监测系统", "en": "Abnormal traffic monitoring system"},
+        {"title": "传统的异常流量监测方法", "en": "Traditional methods for abnormal traffic monitoring"}
+    ],
+    "relations": [
+        {"source": "关系型数据库的劣势", "target": "非关系型数据库的概念", "type": "包含"},
+        {"source": "非关系型数据库的概念", "target": "HBase的特点和数据模型", "type": "包含"},
+        {"source": "HBase的特点和数据模型", "target": "异常流量监测系统", "type": "应用于"},
+        {"source": "传统的异常流量监测方法", "target": "异常流量监测系统", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "网络流量的动态调整",
+            "en": "Dynamic adjustment of network traffic"
+        },
+        {
+            "title": "K最近邻-格拉布斯法",
+            "en": "K-nearest neighbor Grubbs method"
+        },
+        {
+            "title": "时间序列分析",
+            "en": "Time series analysis"
+        },
+        {
+            "title": "格拉布斯异常值检测法",
+            "en": "Grubbs anomaly detection method"
+        }
+    ],
+    "relations": [
+        {
+            "source": "网络流量的动态调整",
+            "target": "K最近邻-格拉布斯法",
+            "type": "包含"
+        },
+        {
+            "source": "时间序列分析",
+            "target": "K最近邻-格拉布斯法",
+            "type": "基础"
+        },
+        {
+            "source": "格拉布斯异常值检测法",
+            "target": "K最近邻-格拉布斯法",
+            "type": "基础"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Grubbs检测法", "en": "Grubbs detection method"},
+        {"title": "时间序列的K近邻算法", "en": "K-nearest neighbors algorithm for time series"},
+        {"title": "KNN算法", "en": "K-nearest neighbors algorithm"},
+        {"title": "实时网络流量的KNN-GRUBBS法", "en": "KNN-GRUBBS method for real-time network traffic"}
+    ],
+    "relations": [
+        {"source": "Grubbs检测法", "target": "时间序列的K近邻算法", "type": "包含"},
+        {"source": "时间序列的K近邻算法", "target": "KNN算法", "type": "包含"},
+        {"source": "KNN算法", "target": "实时网络流量的KNN-GRUBBS法", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "KNN回归算法",
+            "en": "KNN regression algorithm"
+        },
+        {
+            "title": "Grubbs检测法",
+            "en": "Grubbs detection method"
+        },
+        {
+            "title": "异常流量检测",
+            "en": "Abnormal traffic detection"
+        },
+        {
+            "title": "时间序列",
+            "en": "Time series"
+        },
+        {
+            "title": "正态分布",
+            "en": "Normal distribution"
+        },
+        {
+            "title": "P-P图",
+            "en": "P-P plot"
+        },
+        {
+            "title": "Q-Q图",
+            "en": "Q-Q plot"
+        },
+        {
+            "title": "K-S检验",
+            "en": "Kolmogorov-Smirnov test"
+        }
+    ],
+    "relations": [
+        {
+            "source": "KNN回归算法",
+            "target": "异常流量检测",
+            "type": "应用"
+        },
+        {
+            "source": "Grubbs检测法",
+            "target": "异常流量检测",
+            "type": "应用"
+        },
+        {
+            "source": "时间序列",
+            "target": "异常流量检测",
+            "type": "基础"
+        },
+        {
+            "source": "正态分布",
+            "target": "异常流量检测",
+            "type": "基础"
+        },
+        {
+            "source": "P-P图",
+            "target": "正态分布",
+            "type": "验证"
+        },
+        {
+            "source": "Q-Q图",
+            "target": "正态分布",
+            "type": "验证"
+        },
+        {
+            "source": "K-S检验",
+            "target": "正态分布",
+            "type": "验证"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "网络流量", "en": "Network Traffic"},
+        {"title": "时间序列", "en": "Time Series"},
+        {"title": "Grubbs异常值检测法", "en": "Grubbs' Test for Outliers"},
+        {"title": "K近邻分析法", "en": "K-Nearest Neighbor Analysis"},
+        {"title": "KNN-Grubbs检测法", "en": "KNN-Grubbs Test"},
+        {"title": "异常流量实时监控系统设计", "en": "Design of Real-time Abnormal Traffic Monitoring System"}
+    ],
+    "relations": [
+        {"source": "网络流量", "target": "时间序列", "type": "包含"},
+        {"source": "时间序列", "target": "Grubbs异常值检测法", "type": "应用"},
+        {"source": "时间序列", "target": "K近邻分析法", "type": "应用"},
+        {"source": "Grubbs异常值检测法", "target": "KNN-Grubbs检测法", "type": "改进"},
+        {"source": "KNN-Grubbs检测法", "target": "异常流量实时监控系统设计", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Apache Hadoop",
+            "en": "Apache Hadoop"
+        },
+        {
+            "title": "分布式文件系统HDFS",
+            "en": "Distributed File System HDFS"
+        },
+        {
+            "title": "分布式计算框架MapReduce",
+            "en": "Distributed Computing Framework MapReduce"
+        },
+        {
+            "title": "离线的大数据分析",
+            "en": "Offline Big Data Analysis"
+        },
+        {
+            "title": "流处理平台Storm",
+            "en": "Stream Processing Platform Storm"
+        },
+        {
+            "title": "基于数据流的计算模型",
+            "en": "Data Stream-based Computing Model"
+        },
+        {
+            "title": "分布式消息系统Kafka",
+            "en": "Distributed Messaging System Kafka"
+        },
+        {
+            "title": "分布式非关系型数据库Hbase",
+            "en": "Distributed Non-Relational Database Hbase"
+        },
+        {
+            "title": "实时流处理平台",
+            "en": "Real-time Stream Processing Platform"
+        },
+        {
+            "title": "异常网络流量监测",
+            "en": "Abnormal Network Traffic Monitoring"
+        },
+        {
+            "title": "数据采集模块",
+            "en": "Data Collection Module"
+        },
+        {
+            "title": "数据处理模块",
+            "en": "Data Processing Module"
+        },
+        {
+            "title": "KNN-Grubbs算法",
+            "en": "KNN-Grubbs Algorithm"
+        },
+        {
+            "title": "数据存储模块",
+            "en": "Data Storage Module"
+        },
+        {
+            "title": "面向列的非关系型数据库",
+            "en": "Column-oriented Non-Relational Database"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Apache Hadoop",
+            "target": "分布式文件系统HDFS",
+            "type": "包含"
+        },
+        {
+            "source": "Apache Hadoop",
+            "target": "分布式计算框架MapReduce",
+            "type": "包含"
+        },
+        {
+            "source": "Apache Hadoop",
+            "target": "离线的大数据分析",
+            "type": "适用于"
+        },
+        {
+            "source": "流处理平台Storm",
+            "target": "基于数据流的计算模型",
+            "type": "基于"
+        },
+        {
+            "source": "流处理平台Storm",
+            "target": "实时流处理平台",
+            "type": "属于"
+        },
+        {
+            "source": "分布式消息系统Kafka",
+            "target": "数据采集模块",
+            "type": "解决"
+        },
+        {
+            "source": "分布式消息系统Kafka",
+            "target": "数据处理模块",
+            "type": "解决"
+        },
+        {
+            "source": "分布式非关系型数据库Hbase",
+            "target": "数据存储模块",
+            "type": "使用"
+        },
+        {
+            "source": "数据处理模块",
+            "target": "KNN-Grubbs算法",
+            "type": "应用"
+        },
+        {
+            "source": "数据处理模块",
+            "target": "数据存储模块",
+            "type": "保存结果到"
+        },
+        {
+            "source": "数据采集模块",
+            "target": "分布式消息系统Kafka",
+            "type": "使用"
+        },
+        {
+            "source": "数据处理模块",
+            "target": "流处理平台Storm",
+            "type": "使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "HBase是基于Hadoop平台的分布式数据库", "en": "HBase is a distributed database based on the Hadoop platform"},
+        {"title": "HBase支持海量数据和高并发读写", "en": "HBase supports massive data and high-concurrency read and write"},
+        {"title": "HBase用于存储Storm平台各个Bolt输出结果", "en": "HBase is used to store the output results of each Bolt in the Storm platform"},
+        {"title": "HBase存储格式", "en": "HBase storage format"},
+        {"title": "Kafka+Storm+HBase的结构", "en": "Kafka+Storm+HBase structure"},
+        {"title": "Kafka性能测试", "en": "Kafka performance testing"},
+        {"title": "Kafka与Storm的连接", "en": "Connection between Kafka and Storm"}
+    ],
+    "relations": [
+        {"source": "HBase是基于Hadoop平台的分布式数据库", "target": "HBase支持海量数据和高并发读写", "type": "包含"},
+        {"source": "HBase支持海量数据和高并发读写", "target": "HBase用于存储Storm平台各个Bolt输出结果", "type": "应用"},
+        {"source": "HBase用于存储Storm平台各个Bolt输出结果", "target": "HBase存储格式", "type": "包含"},
+        {"source": "Kafka+Storm+HBase的结构", "target": "HBase用于存储Storm平台各个Bolt输出结果", "type": "应用"},
+        {"source": "Kafka+Storm+HBase的结构", "target": "Kafka与Storm的连接", "type": "包含"},
+        {"source": "Kafka性能测试", "target": "Kafka与Storm的连接", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Kafka与Storm连接成功返回信息", "en": ""},
+        {"title": "Zookeeper集群配置", "en": ""},
+        {"title": "Storm集群配置", "en": ""},
+        {"title": "Storm性能优化", "en": ""},
+        {"title": "Spout、Bolt、Task、Worker、Executor的关系", "en": ""}
+    ],
+    "relations": [
+        {"source": "Kafka与Storm连接成功返回信息", "target": "Zookeeper集群配置", "type": "包含"},
+        {"source": "Zookeeper集群配置", "target": "Storm集群配置", "type": "依赖"},
+        {"source": "Storm集群配置", "target": "Storm性能优化", "type": "包含"},
+        {"source": "Storm性能优化", "target": "Spout、Bolt、Task、Worker、Executor的关系", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Storm的优化", "en": "Optimization of Storm"},
+        {"title": "并发度设置", "en": "Setting of Concurrency"},
+        {"title": "监控内存及CPU等参数使用量", "en": "Monitoring of Memory and CPU Usage"},
+        {"title": "Storm拓扑设计", "en": "Storm Topology Design"},
+        {"title": "数据采集模块", "en": "Data Collection Module"},
+        {"title": "数据处理模块", "en": "Data Processing Module"},
+        {"title": "数据保存的格式", "en": "Data Storage Format"},
+        {"title": "Zookeeper和Storm的配置", "en": "Configuration of Zookeeper and Storm"},
+        {"title": "Kafka的性能测试", "en": "Performance Testing of Kafka"},
+        {"title": "Kafka和Storm的连接关键技术点", "en": "Key Technology Points for Connecting Kafka and Storm"},
+        {"title": "异常流量实时监控系统数据分析", "en": "Data Analysis of Real-time Abnormal Traffic Monitoring System"},
+        {"title": "数据来源", "en": "Data Source"},
+        {"title": "复合会话", "en": "Composite Session"},
+        {"title": "忙期和闲期", "en": "Busy Period and Idle Period"},
+        {"title": "探测器", "en": "Detector"}
+    ],
+    "relations": [
+        {"source": "Storm的优化", "target": "并发度设置", "type": "包含"},
+        {"source": "Storm的优化", "target": "监控内存及CPU等参数使用量", "type": "包含"},
+        {"source": "Storm的优化", "target": "Storm拓扑设计", "type": "包含"},
+        {"source": "Storm拓扑设计", "target": "数据采集模块", "type": "包含"},
+        {"source": "Storm拓扑设计", "target": "数据处理模块", "type": "包含"},
+        {"source": "Storm拓扑设计", "target": "数据保存的格式", "type": "包含"},
+        {"source": "Storm的优化", "target": "Zookeeper和Storm的配置", "type": "包含"},
+        {"source": "Storm的优化", "target": "Kafka的性能测试", "type": "包含"},
+        {"source": "Storm的优化", "target": "Kafka和Storm的连接关键技术点", "type": "包含"},
+        {"source": "异常流量实时监控系统数据分析", "target": "数据来源", "type": "包含"},
+        {"source": "数据来源", "target": "复合会话", "type": "包含"},
+        {"source": "复合会话", "target": "忙期和闲期", "type": "包含"},
+        {"source": "数据来源", "target": "探测器", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "复合会话",
+            "en": "Composite Session"
+        },
+        {
+            "title": "宏观层",
+            "en": "Macro Layer"
+        },
+        {
+            "title": "中观层",
+            "en": "Meso Layer"
+        },
+        {
+            "title": "微观层",
+            "en": "Micro Layer"
+        },
+        {
+            "title": "实时表",
+            "en": "Real-time Table"
+        },
+        {
+            "title": "日表",
+            "en": "Daily Table"
+        },
+        {
+            "title": "月表",
+            "en": "Monthly Table"
+        },
+        {
+            "title": "主机流量分析",
+            "en": "Host Traffic Analysis"
+        },
+        {
+            "title": "异常检测",
+            "en": "Anomaly Detection"
+        },
+        {
+            "title": "企业网流量参数计算",
+            "en": "Enterprise Network Traffic Parameter Calculation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "复合会话",
+            "target": "宏观层",
+            "type": "包含"
+        },
+        {
+            "source": "复合会话",
+            "target": "中观层",
+            "type": "包含"
+        },
+        {
+            "source": "复合会话",
+            "target": "微观层",
+            "type": "包含"
+        },
+        {
+            "source": "复合会话",
+            "target": "实时表",
+            "type": "转化为"
+        },
+        {
+            "source": "复合会话",
+            "target": "日表",
+            "type": "转化为"
+        },
+        {
+            "source": "复合会话",
+            "target": "月表",
+            "type": "转化为"
+        },
+        {
+            "source": "实时表",
+            "target": "主机流量分析",
+            "type": "用于"
+        },
+        {
+            "source": "主机流量分析",
+            "target": "异常检测",
+            "type": "包含"
+        },
+        {
+            "source": "企业网流量参数计算",
+            "target": "复合会话",
+            "type": "涉及"
+        },
+        {
+            "source": "企业网流量参数计算",
+            "target": "主机流量分析",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "间接测量", "en": "Indirect measurement"},
+        {"title": "随机误差", "en": "Random error"},
+        {"title": "标准差传递公式", "en": "Propagation of uncertainty formula"},
+        {"title": "企业网流量数据分析", "en": "Enterprise network traffic data analysis"},
+        {"title": "流式处理平台", "en": "Stream processing platform"},
+        {"title": "KNN-Grubbs检测法", "en": "KNN-Grubbs detection method"},
+        {"title": "正态分布", "en": "Normal distribution"},
+        {"title": "Storm", "en": "Storm"},
+        {"title": "Kafka", "en": "Kafka"},
+        {"title": "Hbase", "en": "Hbase"},
+        {"title": "实时网络流量异常检测系统", "en": "Real-time network traffic anomaly detection system"}
+    ],
+    "relations": [
+        {"source": "间接测量", "target": "随机误差", "type": "包含"},
+        {"source": "标准差传递公式", "target": "随机误差", "type": "影响"},
+        {"source": "企业网流量数据分析", "target": "流量检测结果", "type": "包含"},
+        {"source": "流式处理平台", "target": "KNN-Grubbs检测法", "type": "使用"},
+        {"source": "KNN-Grubbs检测法", "target": "正态分布", "type": "基于"},
+        {"source": "流式处理平台", "target": "Storm", "type": "使用"},
+        {"source": "流式处理平台", "target": "Kafka", "type": "使用"},
+        {"source": "流式处理平台", "target": "Hbase", "type": "使用"},
+        {"source": "实时网络流量异常检测系统", "target": "KNN-Grubbs检测法", "type": "包含"},
+        {"source": "实时网络流量异常检测系统", "target": "流式处理平台", "type": "基于"},
+        {"source": "实时网络流量异常检测系统", "target": "企业网流量数据分析", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "实时网络流量异常检测系统",
+            "en": "Real-time network traffic anomaly detection system"
+        },
+        {
+            "title": "大数据处理技术",
+            "en": "Big data processing technology"
+        },
+        {
+            "title": "Kafka消息队列",
+            "en": "Kafka message queue"
+        },
+        {
+            "title": "Storm流处理平台",
+            "en": "Storm stream processing platform"
+        },
+        {
+            "title": "Hbase分布式数据库",
+            "en": "Hbase distributed database"
+        },
+        {
+            "title": "时间序列分析",
+            "en": "Time series analysis"
+        },
+        {
+            "title": "Grubbs检测法",
+            "en": "Grubbs detection method"
+        },
+        {
+            "title": "复合会话",
+            "en": "Composite session"
+        },
+        {
+            "title": "误差传递公式",
+            "en": "Error propagation formula"
+        }
+    ],
+    "relations": [
+        {
+            "source": "实时网络流量异常检测系统",
+            "target": "大数据处理技术",
+            "type": "包含"
+        },
+        {
+            "source": "实时网络流量异常检测系统",
+            "target": "Kafka消息队列",
+            "type": "包含"
+        },
+        {
+            "source": "实时网络流量异常检测系统",
+            "target": "Storm流处理平台",
+            "type": "包含"
+        },
+        {
+            "source": "实时网络流量异常检测系统",
+            "target": "Hbase分布式数据库",
+            "type": "包含"
+        },
+        {
+            "source": "实时网络流量异常检测系统",
+            "target": "时间序列分析",
+            "type": "包含"
+        },
+        {
+            "source": "时间序列分析",
+            "target": "Grubbs检测法",
+            "type": "包含"
+        },
+        {
+            "source": "实时网络流量异常检测系统",
+            "target": "复合会话",
+            "type": "包含"
+        },
+        {
+            "source": "复合会话",
+            "target": "误差传递公式",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Time Series Analysis", "en": ""},
+        {"title": "Detection of HTTP Flooding Attacks", "en": ""},
+        {"title": "Storm-Kafka", "en": ""},
+        {"title": "Apache Hadoop Goes Realtime at Facebook", "en": ""},
+        {"title": "Signal Analysis of Network Traffic Anomalies", "en": ""},
+        {"title": "Kafka", "en": ""}
+    ],
+    "relations": [
+        {"source": "Time Series Analysis", "target": "Basic Statistics and Data Analysis", "type": "相关"},
+        {"source": "Detection of HTTP Flooding Attacks", "target": "Communication, Computing & Security", "type": "相关"},
+        {"source": "Storm-Kafka", "target": "Kafka", "type": "相关"},
+        {"source": "Apache Hadoop Goes Realtime at Facebook", "target": "STGMOD", "type": "相关"},
+        {"source": "Signal Analysis of Network Traffic Anomalies", "target": "ACM SIGCOMM Workshop on Internet Measurement", "type": "相关"},
+        {"source": "Kafka", "target": "Apache Hadoop", "type": "相关"}
+    ]
+}

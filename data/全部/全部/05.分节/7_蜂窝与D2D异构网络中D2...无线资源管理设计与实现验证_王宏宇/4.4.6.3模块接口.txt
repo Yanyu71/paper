@@ -1,0 +1,32 @@
+4.4.6.3模块接口
+针对以上流程，HARQ模块需要提供对外接口如下:
+// timing trigger
+void ackmsg_send_trigger(int fh, int sfii);
+void ackmsg_waitexpired_trigger(int fh, int sfh);
+// ack-msg/crc process
+void ackmsg_recv_handler(const char* msg, const int* msgsize);
+void setcrc(int fh, int sfh, char crcflag);
+// HARQ process
+int check_retransnum(int dueid);
+int check_availableprocess();
+bool save_process(int procid, rminfb t rminfb, int rvidx, char* dpsch, int size);
+int get_retransprocidx(int dueid)
+bool retrans_process(int procid, rminfb_t* rminfb, int* rvidx,
+char* dpsch, int*size)
+模块接口说明如下：
+1)时序触发：时序队列在ACKSEND和ACKWAITEXPIRED时，会分别 调用ACK信息打包发送函数ackmsg_send_trigger()和ACK过期处理函数 ackmsg_ waitexpired_trigger()。
+2)ACK消息、CRC处理：在数据接收端，数据传输控制器每收到一次传 输便将其CRC结果通过setcrc()函数写入HARQ模块，等待打包反馈；在接收 端收到ACK-MSG后，调用ackmsg_recv_handler()进行有效性检查及处理。
+3)HARQ进程相关：在RTS申请前与数据发送前，都可以通过调用check_ retransnum(dueid)获取对应 dueid 是否有进程等待重传；check_availableprocess() 检査是否有空闲进程用以存储新数据，如果有，返回进程号；在数据发送后，将 数据内容及配置调用save_process()存入指定进程号中；若有重传需求，通过 get_retransprocidx(int dueid)以指定规则(此处是等待重传时间最久的进程优先重 传)获得dueid的重传进程号；retrans_process()将指定进程号的进程中的配置和 数据取出，待重传后再次调用save_process()存入进程。
+对于AMC及网络监控模块的D2D-HI传输，由对应接收模块提供方法支持。
+上述为一个完整的HARQ模块结构，完成对模块间的交互的设计。下一小 节主要关注对等层ACK-MSG的消息格式设计。
+72
+4A.6.4 ACK消息格式
+在LTE中使用重复编码对HARQ指示（HI）进行编码。但在D2D系统中， ACK-CCCH的概念与LTE HI的概念不同，ACK-CCCH以一独立信道存在，使 用CRC-24校验。当校验通过时，可以认为上报ACK-MSG都是有效数据包。所 以无需考虑对HI进行重复编码。同时，如3.6.2节中的设计，需要考虑类似ACK Bundling技术以实现一个ACK信道对多上行子帧的反馈，这里，采用3.6.2小节 的方案，以6 bits对应TDD FormatO中的上行子帧，默认NACK, CRC正确时 将对应子帧置为ACK。
+综上考虑后，ACK消息格式如下：
+表4-12 ACK消息格式
+字段	　　比特位置	含义
+TxUE ID	Bit[0:3]	数据发送端TxUE IDo
+RxUE ID	Bit[4:7]	数据接收端RxUE ID,为自己的ID。
+RadioFrameNum	Bit[8:17]	此次ACK对应的数据传输帧号，范围为 0〜1023。
+ACK/NACK Indicator	Bit[18:23]	以6比特表示ACK/NACK指示，对应 Format 0,最低位代表子帧2的确认指示， 最高位代表子帧9的确认指示，其他 Format,非上行子帧按照NACK填充， 未接收到数据及译码错误均按照NACK 填充。ACK=0, NACK=1 o
+保留	Bit[24:104]	保留比特用于未来扩充。

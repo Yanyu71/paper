@@ -1,0 +1,20 @@
+2.4.3测试例验证方法
+下面介绍一种简单的手动验证方法卩8］：
+1）	搭建验证环境。
+具体的验证环境，可参考本章第一节硬件平台部分。
+2）	编译测试例相关代码。
+首先，编译适配层代码，产生 ADPCTRL. dlb CODEC, dll. EXTFUNC. dlK LOGCTRL. dll等动态链接库。然后使用IBM Rational Tester编译TTCN-3测试例代码，产生相应的.C和.h文件。最后将上述动态链接库和所有的C文件导入 Framework I程，使用Visio Studio进行编译链接，产生最终的可执行文件。
+3）执行VoLTE测试例
+打开系统管理软件TS Manager,选择需要执行的可执行文件，新建测试计 划，命名并勾选所需要执行的测试例，例如TC_9_1,右键点击Run按钮，测试例 就进入执行阶段。下图是TS Manager的UI,如图所示，从TS Manager界面可
+以看到执行计划及测试例名称、MSC图、测试情况＞Output窗口以及Message Info
+窗口信息。如图2-7所示:
+图2-7 TS管理界面截图
+同时，由于需要解析SIP消息，所以还需要专门的抓IP包并解析软件，本 文使用Wireshark。Wireshark作为一款网络封包软件，具有操作简易、开源免费 等优点。下图2-8是Wireshark软件的用户界面。
+621 3?.07S62：Q'i92.168.0.1
+Status: ISO Ringing
+<t Destination: 14:cf:92:68:32:bc (I4:cf：92;68:33:bc?
+**' Source: 14：da:e9:e2:76：e5 (14:da：e9:e2：76;eS)
+ge： IP (0x0300)
+interaer Protocol. Src: 192.168. 100. 20 <192.16S. 100.20), D$x: 192,1^. 0.1 H92.168.(?. J)
+Trassalssltm Control Protocol. Src Port： sip (3060), Dst Port: 3221? (322I7>. SeQ： 1, Ack: 1500, Leni 706 Session Inftiatltsa Protocol
+图2-8 wireshark界面截图

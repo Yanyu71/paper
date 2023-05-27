@@ -1,0 +1,6 @@
+1.3本文的组织结构
+根据论文的研究内容，本文共有五章。
+第一章为绪论，主要介绍信道编译码的发展情况，并着重介绍了 Turbo译码 算法的发展历程及其应用场景。
+第二章详细介绍基于维特比译码算法(VA)的信道译码方案，主要介绍了维 特比译码算法(Viterbi Decoding Algorithm),同时为降低维特比译码算法的计算 复杂度，又提出序列译码算法(Sequential Decoding Algorithm),以及利用人工 智能领域基于Dijkstra算法快速查找最短路径的A*译码算法。第二章提出的基 于Viterbi译码算法的两种低复杂度译码方案，为第三章中SOVA算法寻找最大 似然路径(MLPath)提供了降低复杂度的方向。
+第三章提出了一种简化的SOVA译码算法，即T-SOVA算法(Trimming Soft-input Soft-Output Viterbi Algorithm),并将该低复杂度 SOVA 算法应用到 Turbo 译码算法中，在适宜信噪比条件下，使其能够达到与当前大量使用的BCJR算法 性能基本相同，但译码复杂度大大降低的效果。
+第四章介绍基于该T-SOVA算法的Turbo译码方案在MIMO-SCFDE (多天 线一单载波频域均衡)系统中的应用，并利用该Turbo译码器与MIMO-SCFDE系 统中的均衡器进行迭代，利用Turbo均衡方案进一步提高系统性能。

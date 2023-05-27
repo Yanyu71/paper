@@ -1,0 +1,1247 @@
+﻿{
+    "knowledge_points": [
+        {"title": "移动互联网、物联网等新兴业务对高速无线通信的需求", "en": "Demand for high-speed wireless communication from emerging businesses such as mobile internet and IoT"},
+        {"title": "传统无线射频频谱资源濒临枯竭", "en": "Depletion of traditional wireless RF spectrum resources"},
+        {"title": "可见光通信利用可见光频谱资源进行通信", "en": "Visible light communication uses visible light spectrum resources for communication"},
+        {"title": "VLC利用LED照明装置实现通信", "en": "VLC uses LED lighting devices for communication"},
+        {"title": "VLC需要兼顾照明和调光的双重要求", "en": "VLC needs to balance the dual requirements of lighting and dimming"},
+        {"title": "OFDM-VLC系统是当前的研究热点", "en": "OFDM-VLC system is currently a research hotspot"},
+        {"title": "模拟调光和数字调光是OFDM-VLC系统的两种调光技术", "en": "Analog and digital dimming are two dimming techniques for OFDM-VLC systems"},
+        {"title": "OFDM-VLC系统存在调光性能问题", "en": "OFDM-VLC systems have dimming performance issues"},
+        {"title": "实际场景中的VLC系统是个天然的多链路系统", "en": "Real-world VLC systems are naturally multi-link systems"},
+        {"title": "本课题研究了单链路和多链路场景下的OFDM-VLC系统调光技术", "en": "This project studied the dimming techniques of OFDM-VLC systems in single and multi-link scenarios"}
+    ],
+    "relations": [
+        {"source": "移动互联网、物联网等新兴业务对高速无线通信的需求", "target": "传统无线射频频谱资源濒临枯竭", "type": "cause-effect"},
+        {"source": "传统无线射频频谱资源濒临枯竭", "target": "可见光通信利用可见光频谱资源进行通信", "type": "cause-effect"},
+        {"source": "可见光通信利用可见光频谱资源进行通信", "target": "VLC利用LED照明装置实现通信", "type": "cause-effect"},
+        {"source": "VLC利用LED照明装置实现通信", "target": "VLC需要兼顾照明和调光的双重要求", "type": "cause-effect"},
+        {"source": "OFDM-VLC系统是当前的研究热点", "target": "OFDM-VLC系统存在调光性能问题", "type": "effect"},
+        {"source": "OFDM-VLC系统存在调光性能问题", "target": "本课题研究了单链路和多链路场景下的OFDM-VLC系统调光技术", "type": "cause-effect"},
+        {"source": "实际场景中的VLC系统是个天然的多链路系统", "target": "本课题研究了单链路和多链路场景下的OFDM-VLC系统调光技术", "type": "cause-effect"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "系统模型", "en": "System Model"},
+    {"title": "DCO-OFDM和ACO-OFDM调制方案性能分析", "en": "Performance Analysis of DCO-OFDM and ACO-OFDM Modulation Schemes"},
+    {"title": "调光参数对系统性能的影响", "en": "Impact of Dimming Parameters on System Performance"},
+    {"title": "调光和通信约束的最优化问题", "en": "Optimization Problem of Dimming and Communication Constraints"},
+    {"title": "多链路OFDM-VLC系统调光技术研究", "en": "Dimming Technology for Multi-Link OFDM-VLC Systems"}
+  ],
+  "relations": [
+    {"source": "系统模型", "target": "DCO-OFDM和ACO-OFDM调制方案性能分析", "type": "包含"},
+    {"source": "DCO-OFDM和ACO-OFDM调制方案性能分析", "target": "调光参数对系统性能的影响", "type": "关联"},
+    {"source": "调光参数对系统性能的影响", "target": "调光和通信约束的最优化问题", "type": "关联"},
+    {"source": "调光和通信约束的最优化问题", "target": "多链路OFDM-VLC系统调光技术研究", "type": "包含"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信系统", "en": "Visible Light Communication System"},
+        {"title": "基于OFDM的VLC系统", "en": "OFDM-based VLC System"},
+        {"title": "DCO-OFDM和ACO-OFDM", "en": "DCO-OFDM and ACO-OFDM"},
+        {"title": "单链路OFDM-VLC系统调光技术研究", "en": "Research on Dimming Technology of Single-Link OFDM-VLC System"},
+        {"title": "多链路OFDM-VLC系统调光技术研究", "en": "Research on Dimming Technology of Multi-Link OFDM-VLC System"}
+    ],
+    "relations": [
+        {"source": "可见光通信系统", "target": "基于OFDM的VLC系统", "type": "包含"},
+        {"source": "基于OFDM的VLC系统", "target": "DCO-OFDM和ACO-OFDM", "type": "包含"},
+        {"source": "基于OFDM的VLC系统", "target": "单链路OFDM-VLC系统调光技术研究", "type": "包含"},
+        {"source": "单链路OFDM-VLC系统调光技术研究", "target": "多链路OFDM-VLC系统调光技术研究", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "信道", "en": "Channel"},
+        {"title": "有线通信信道", "en": "Wired communication channel"},
+        {"title": "无线信道", "en": "Wireless channel"},
+        {"title": "可见光通信", "en": "Visible light communication"},
+        {"title": "室内场景", "en": "Indoor scenario"},
+        {"title": "室外场景", "en": "Outdoor scenario"},
+        {"title": "定向链路", "en": "Directional link"},
+        {"title": "混合链路", "en": "Hybrid link"},
+        {"title": "视距链路", "en": "Line-of-sight link"},
+        {"title": "非视距链路", "en": "Non-line-of-sight link"},
+        {"title": "LOS链路", "en": "Line-of-sight link"},
+        {"title": "NLOS链路", "en": "Non-line-of-sight link"},
+        {"title": "信道模型", "en": "Channel model"},
+        {"title": "信道损耗", "en": "Channel loss"},
+        {"title": "多径效应", "en": "Multipath effect"},
+        {"title": "频谱资源", "en": "Spectrum resources"},
+        {"title": "安全保密性", "en": "Security and confidentiality"},
+        {"title": "无电磁污染", "en": "No electromagnetic pollution"},
+        {"title": "基站建设", "en": "Base station construction"}
+    ],
+    "relations": [
+        {"source": "信道", "target": "信号传输的媒介", "type": "is-a"},
+        {"source": "有线通信信道", "target": "信道", "type": "is-a"},
+        {"source": "无线信道", "target": "信道", "type": "is-a"},
+        {"source": "可见光通信", "target": "无线信道", "type": "is-a"},
+        {"source": "室内场景", "target": "可见光通信", "type": "is-a"},
+        {"source": "室外场景", "target": "可见光通信", "type": "is-a"},
+        {"source": "可见光通信", "target": "定向链路", "type": "is-a"},
+        {"source": "可见光通信", "target": "混合链路", "type": "is-a"},
+        {"source": "定向链路", "target": "定向发射器", "type": "is-a"},
+        {"source": "定向链路", "target": "定向接收器", "type": "is-a"},
+        {"source": "非定向链路", "target": "非定向器件", "type": "is-a"},
+        {"source": "视距链路", "target": "Line-of-sight", "type": "is-a"},
+        {"source": "非视距链路", "target": "Non-line-of-sight", "type": "is-a"},
+        {"source": "LOS链路", "target": "视距链路", "type": "is-a"},
+        {"source": "NLOS链路", "target": "非视距链路", "type": "is-a"},
+        {"source": "LOS链路", "target": "信道模型", "type": "has-a"},
+        {"source": "NLOS链路", "target": "信道模型", "type": "has-a"},
+        {"source": "信道模型", "target": "信道损耗", "type": "has-a"},
+        {"source": "信道模型", "target": "多径效应", "type": "has-a"},
+        {"source": "可见光通信", "target": "频谱资源", "type": "has-a"},
+        {"source": "可见光通信", "target": "安全保密性", "type": "has-a"},
+        {"source": "可见光通信", "target": "无电磁污染", "type": "has-a"},
+        {"source": "可见光通信", "target": "基站建设", "type": "has-a"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "阴影效应", "en": "Shadowing effect"},
+        {"title": "路径损耗", "en": "Path loss"},
+        {"title": "环境光干扰", "en": "Environmental light interference"},
+        {"title": "上行链路技术", "en": "Uplink technology"},
+        {"title": "VLC应用与发展", "en": "Applications and development of VLC"},
+        {"title": "室内定位", "en": "Indoor positioning"},
+        {"title": "室内无线宽带接入", "en": "Indoor wireless broadband access"},
+        {"title": "智能交通", "en": "Intelligent transportation"},
+        {"title": "VLC关键技术", "en": "Key technologies of VLC"},
+        {"title": "调制技术", "en": "Modulation technology"},
+        {"title": "MIMO技术", "en": "MIMO technology"},
+        {"title": "组网技术", "en": "Networking technology"},
+        {"title": "调光技术", "en": "Dimming technology"}
+    ],
+    "relations": [
+        {"source": "阴影效应", "target": "路径损耗", "type": "cause-effect"},
+        {"source": "路径损耗", "target": "可见光通信", "type": "related"},
+        {"source": "环境光干扰", "target": "可见光通信", "type": "related"},
+        {"source": "上行链路技术", "target": "可见光通信", "type": "related"},
+        {"source": "VLC应用与发展", "target": "室内定位", "type": "related"},
+        {"source": "VLC应用与发展", "target": "室内无线宽带接入", "type": "related"},
+        {"source": "VLC应用与发展", "target": "智能交通", "type": "related"},
+        {"source": "VLC关键技术", "target": "调制技术", "type": "related"},
+        {"source": "VLC关键技术", "target": "MIMO技术", "type": "related"},
+        {"source": "VLC关键技术", "target": "组网技术", "type": "related"},
+        {"source": "VLC关键技术", "target": "调光技术", "type": "related"},
+        {"source": "调制技术", "target": "MIMO技术", "type": "related"},
+        {"source": "调制技术", "target": "组网技术", "type": "related"},
+        {"source": "调制技术", "target": "调光技术", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "OOK调制", "en": "OOK Modulation"},
+        {"title": "PAM调制", "en": "PAM Modulation"},
+        {"title": "PWM调制", "en": "PWM Modulation"},
+        {"title": "PPM调制", "en": "PPM Modulation"},
+        {"title": "OFDM调制", "en": "OFDM Modulation"}
+    ],
+    "relations": [
+        {"source": "OOK调制", "target": "NRZ-OOK", "type": "分为"},
+        {"source": "OOK调制", "target": "RZ-OOK", "type": "分为"},
+        {"source": "NRZ-OOK", "target": "RZ-OOK", "type": "区别于"},
+        {"source": "PAM调制", "target": "脉冲幅度调制", "type": "同义词"},
+        {"source": "PWM调制", "target": "脉冲宽度调制", "type": "同义词"},
+        {"source": "PWM调制", "target": "调光", "type": "应用于"},
+        {"source": "PPM调制", "target": "功率利用率高", "type": "特点"},
+        {"source": "OFDM调制", "target": "多载波调制", "type": "属于"},
+        {"source": "OFDM调制", "target": "频谱效率高", "type": "特点"},
+        {"source": "OFDM调制", "target": "信道均衡", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "星座映射", "en": "Constellation Mapping"},
+        {"title": "二进制相移键控", "en": "Binary Phase Shift Keying (BPSK)"},
+        {"title": "正交幅度调制", "en": "Quadrature Amplitude Modulation (QAM)"},
+        {"title": "串并变换", "en": "Serial-to-Parallel Conversion"},
+        {"title": "IFFT", "en": "Inverse Fast Fourier Transform"},
+        {"title": "OFDM符号", "en": "Orthogonal Frequency Division Multiplexing (OFDM) Symbol"},
+        {"title": "数模转换", "en": "Digital-to-Analog Conversion (D/A)"},
+        {"title": "模数转换", "en": "Analog-to-Digital Conversion (A/D)"},
+        {"title": "MIMO技术", "en": "Multiple-Input Multiple-Output (MIMO) Technology"},
+        {"title": "重复编码", "en": "Repetition Code (RC)"},
+        {"title": "空间复用", "en": "Spatial Multiplexing (SMP)"},
+        {"title": "空间调制", "en": "Spatial Modulation (SM)"},
+        {"title": "天线选择", "en": "Antenna Selection"},
+        {"title": "功率失衡", "en": "Power Imbalance"},
+        {"title": "交叉线路阻塞", "en": "Cross-Talk Interference"},
+        {"title": "人工神经网络技术", "en": "Artificial Neural Network (ANN) Technology"},
+        {"title": "组网技术", "en": "Networking Technology"},
+        {"title": "可见光网络切换技术", "en": "Visible Light Network Switching Technology"},
+        {"title": "垂直切换", "en": "Vertical Handover"},
+        {"title": "水平切换", "en": "Horizontal Handover"},
+        {"title": "光波分多址", "en": "Optical Wavelength Division Multiple Access (OWDMA)"},
+        {"title": "光码分多址", "en": "Optical Code Division Multiple Access (OCDMA)"},
+        {"title": "光时分多址", "en": "Optical Time Division Multiple Access (OTDMA)"},
+        {"title": "副载波多址", "en": "Subcarrier Multiple Access (SCMA)"},
+        {"title": "光正交多址", "en": "Optical Orthogonal Frequency-Division Multiple Access (OFDMA)"},
+        {"title": "混合多址技术", "en": "Hybrid Multiple Access Technology"},
+        {"title": "上行链路设计", "en": "Uplink Design"}
+    ],
+    "relations": [
+        {"source": "星座映射", "target": "二进制相移键控", "type": "包含"},
+        {"source": "星座映射", "target": "正交幅度调制", "type": "包含"},
+        {"source": "二进制相移键控", "target": "星座映射", "type": "属于"},
+        {"source": "正交幅度调制", "target": "星座映射", "type": "属于"},
+        {"source": "串并变换", "target": "OFDM符号", "type": "转化为"},
+        {"source": "IFFT", "target": "串并变换", "type": "转化为"},
+        {"source": "OFDM符号", "target": "串并变换", "type": "由"},
+        {"source": "数模转换", "target": "QuadratureAmplitudeModulation", "type": "转换为"},
+        {"source": "模数转换", "target": "FFT", "type": "转换为"},
+        {"source": "FFT", "target": "模数转换", "type": "转换为"},
+        {"source": "MIMO技术", "target": "重复编码", "type": "包含"},
+        {"source": "MIMO技术", "target": "空间复用", "type": "包含"},
+        {"source": "MIMO技术", "target": "空间调制", "type": "包含"},
+        {"source": "重复编码", "target": "MIMO技术", "type": "属于"},
+        {"source": "空间复用", "target": "MIMO技术", "type": "属于"},
+        {"source": "空间调制", "target": "MIMO技术", "type": "属于"},
+        {"source": "天线选择", "target": "降低信道相关性", "type": "解决"},
+        {"source": "功率失衡", "target": "降低信道相关性", "type": "解决"},
+        {"source": "交叉线路阻塞", "target": "降低信道相关性", "type": "解决"},
+        {"source": "人工神经网络技术", "target": "降低信道相关性", "type": "解决"},
+        {"source": "可见光网络切换技术", "target": "垂直切换", "type": "包含"},
+        {"source": "可见光网络切换技术", "target": "水平切换", "type": "包含"},
+        {"source": "垂直切换", "target": "可见光网络切换技术", "type": "属于"},
+        {"source": "水平切换", "target": "可见光网络切换技术", "type": "属于"},
+        {"source": "光波分多址", "target": "光多址方式", "type": "属于"},
+        {"source": "光码分多址", "target": "光多址方式", "type": "属于"},
+        {"source": "光时分多址", "target": "光多址方式", "type": "属于"},
+        {"source": "副载波多址", "target": "光多址方式", "type": "属于"},
+        {"source": "光正交多址", "target": "光多址方式", "type": "属于"},
+        {"source": "混合多址技术", "target": "光多址方式", "type": "属于"},
+        {"source": "上行链路设计", "target": "与RF组网技术研究", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "RF通信",
+            "en": "RF communication"
+        },
+        {
+            "title": "组网技术",
+            "en": "Networking technology"
+        },
+        {
+            "title": "调光技术",
+            "en": "Dimming technology"
+        },
+        {
+            "title": "OFDM-VLC系统",
+            "en": "OFDM-VLC system"
+        },
+        {
+            "title": "O-OFDM调制",
+            "en": "O-OFDM modulation"
+        },
+        {
+            "title": "Hermitian对称条件",
+            "en": "Hermitian symmetric condition"
+        },
+        {
+            "title": "子载波调制",
+            "en": "Subcarrier modulation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "RF通信",
+            "target": "组网技术",
+            "type": "相关"
+        },
+        {
+            "source": "调光技术",
+            "target": "可见光通信",
+            "type": "应用"
+        },
+        {
+            "source": "OFDM-VLC系统",
+            "target": "O-OFDM调制",
+            "type": "包含"
+        },
+        {
+            "source": "O-OFDM调制",
+            "target": "Hermitian对称条件",
+            "type": "包含"
+        },
+        {
+            "source": "O-OFDM调制",
+            "target": "子载波调制",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Hermitian对称条件",
+            "en": "Hermitian symmetry condition"
+        },
+        {
+            "title": "OFDM信号",
+            "en": "OFDM signal"
+        },
+        {
+            "title": "半波奇对称特性",
+            "en": "Half-wave odd symmetry"
+        },
+        {
+            "title": "直流偏置",
+            "en": "Direct current bias"
+        },
+        {
+            "title": "频谱效率",
+            "en": "Spectral efficiency"
+        },
+        {
+            "title": "光功率效率",
+            "en": "Optical power efficiency"
+        },
+        {
+            "title": "DCO-OFDM",
+            "en": "DCO-OFDM"
+        },
+        {
+            "title": "ACO-OFDM",
+            "en": "ACO-OFDM"
+        },
+        {
+            "title": "Flip-OFDM",
+            "en": "Flip-OFDM"
+        },
+        {
+            "title": "双极性信号",
+            "en": "Bipolar signal"
+        },
+        {
+            "title": "单极性信号",
+            "en": "Unipolar signal"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Hermitian对称条件",
+            "target": "OFDM信号",
+            "type": "满足"
+        },
+        {
+            "source": "OFDM信号",
+            "target": "半波奇对称特性",
+            "type": "具有"
+        },
+        {
+            "source": "OFDM信号",
+            "target": "频谱效率",
+            "type": "影响"
+        },
+        {
+            "source": "DCO-OFDM",
+            "target": "Hermitian对称条件",
+            "type": "需要满足"
+        },
+        {
+            "source": "DCO-OFDM",
+            "target": "双极性信号",
+            "type": "得到"
+        },
+        {
+            "source": "DCO-OFDM",
+            "target": "直流偏置",
+            "type": "加入"
+        },
+        {
+            "source": "ACO-OFDM",
+            "target": "Hermitian对称条件",
+            "type": "需要满足"
+        },
+        {
+            "source": "ACO-OFDM",
+            "target": "半波奇对称特性",
+            "type": "具有"
+        },
+        {
+            "source": "Flip-OFDM",
+            "target": "Hermitian对称条件",
+            "type": "需要满足"
+        },
+        {
+            "source": "Flip-OFDM",
+            "target": "双极性信号",
+            "type": "得到"
+        },
+        {
+            "source": "Flip-OFDM",
+            "target": "单极性信号",
+            "type": "变为"
+        },
+        {
+            "source": "频谱效率",
+            "target": "光功率效率",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Hermitian对称条件", "en": "Hermitian symmetry condition"},
+        {"title": "DCO-OFDM", "en": "DCO-OFDM"},
+        {"title": "ACO-OFDM", "en": "ACO-OFDM"},
+        {"title": "Flip-OFDM", "en": "Flip-OFDM"},
+        {"title": "U-OFDM", "en": "U-OFDM"},
+        {"title": "PM-OFDM", "en": "PM-OFDM"},
+        {"title": "频谱效率", "en": "Spectral efficiency"},
+        {"title": "PAPR", "en": "Peak-to-Average Power Ratio"}
+    ],
+    "relations": [
+        {"source": "Hermitian对称条件", "target": "信号的极性处理", "type": "simplify"},
+        {"source": "DCO-OFDM", "target": "频谱效率", "type": "positive"},
+        {"source": "DCO-OFDM", "target": "功率效率", "type": "negative"},
+        {"source": "ACO-OFDM", "target": "功率效率", "type": "positive"},
+        {"source": "ACO-OFDM", "target": "频谱效率", "type": "negative"},
+        {"source": "Flip-OFDM", "target": "复杂性", "type": "negative"},
+        {"source": "Flip-OFDM", "target": "频谱效率", "type": "negative"},
+        {"source": "U-OFDM", "target": "复杂性", "type": "negative"},
+        {"source": "U-OFDM", "target": "频谱效率", "type": "negative"},
+        {"source": "〃-OFDM", "target": "PAPR", "type": "low"},
+        {"source": "〃-OFDM", "target": "频谱效率", "type": "positive"},
+        {"source": "PM-OFDM", "target": "复杂度", "type": "high"},
+        {"source": "PM-OFDM", "target": "频谱效率", "type": "negative"},
+        {"source": "DCO-OFDM", "target": "AsymmetricallyCompandedDCO-OFDM", "type": "improve"},
+        {"source": "ACO-OFDM", "target": "非对称重建的改进ACO-OFDM调制方案", "type": "improve"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ACO-OFDM调制方案", "en": "ACO-OFDM Modulation Scheme"},
+        {"title": "SEE-OFDM调制方案", "en": "SEE-OFDM Modulation Scheme"},
+        {"title": "eU-OFDM调制方案", "en": "eU-OFDM Modulation Scheme"},
+        {"title": "eACO-OFDM调制方案", "en": "eACO-OFDM Modulation Scheme"},
+        {"title": "多种调制方案的叠加", "en": "Superposition of Multiple Modulation Schemes"},
+        {"title": "OFDM-VLC系统调光技术", "en": "Dimming Techniques for OFDM-VLC Systems"},
+        {"title": "单链路场景", "en": "Single-Link Scenario"},
+        {"title": "多链路场景", "en": "Multi-Link Scenario"},
+        {"title": "PAM-DMT调制方案", "en": "PAM-DMT Modulation Scheme"},
+        {"title": "PWM数字调光", "en": "PWM Digital Dimming"},
+        {"title": "自适应正交幅度调制", "en": "Adaptive Quadrature Amplitude Modulation"},
+        {"title": "多脉冲位置调制", "en": "Multi-Pulse Position Modulation"},
+        {"title": "ACO-OFDM的PWM调光控制方法", "en": "PWM Dimming Control Method based on ACO-OFDM"},
+        {"title": "U-OFDM的PWM调光控制方法", "en": "PWM Dimming Control Method based on U-OFDM"},
+        {"title": "Flip-OFDM的PWM调光控制方法", "en": "PWM Dimming Control Method based on Flip-OFDM"},
+        {"title": "模拟调光", "en": "Analog Dimming"},
+        {"title": "DCO-OFDM调制方案", "en": "DCO-OFDM Modulation Scheme"}
+    ],
+    "relations": [
+        {"source": "ACO-OFDM调制方案", "target": "SEE-OFDM调制方案", "type": "类似于"},
+        {"source": "ACO-OFDM调制方案", "target": "eU-OFDM调制方案", "type": "类似于"},
+        {"source": "ACO-OFDM调制方案", "target": "eACO-OFDM调制方案", "type": "类似于"},
+        {"source": "多种调制方案的叠加", "target": "ACO-OFDM调制方案", "type": "包含"},
+        {"source": "多种调制方案的叠加", "target": "SEE-OFDM调制方案", "type": "包含"},
+        {"source": "多种调制方案的叠加", "target": "PAM-DMT调制方案", "type": "包含"},
+        {"source": "多种调制方案的叠加", "target": "DCO-OFDM调制方案", "type": "包含"},
+        {"source": "OFDM-VLC系统调光技术", "target": "单链路场景", "type": "属于"},
+        {"source": "OFDM-VLC系统调光技术", "target": "多链路场景", "type": "属于"},
+        {"source": "单链路场景", "target": "PAM-DMT调制方案", "type": "采用"},
+        {"source": "单链路场景", "target": "PWM数字调光", "type": "考虑数字调光"},
+        {"source": "单链路场景", "target": "自适应正交幅度调制", "type": "采用"},
+        {"source": "单链路场景", "target": "多脉冲位置调制", "type": "采用"},
+        {"source": "单链路场景", "target": "ACO-OFDM的PWM调光控制方法", "type": "采用"},
+        {"source": "单链路场景", "target": "U-OFDM的PWM调光控制方法", "type": "采用"},
+        {"source": "单链路场景", "target": "Flip-OFDM的PWM调光控制方法", "type": "采用"},
+        {"source": "单链路场景", "target": "模拟调光", "type": "考虑模拟调光"},
+        {"source": "单链路场景", "target": "DCO-OFDM调制方案", "type": "采用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "ACO-OFDM调制方案",
+            "en": "ACO-OFDM Modulation Scheme"
+        },
+        {
+            "title": "AHO-OFDM调制方案",
+            "en": "AHO-OFDM Modulation Scheme"
+        },
+        {
+            "title": "DO-OFDM调制方案",
+            "en": "DO-OFDM Modulation Scheme"
+        },
+        {
+            "title": "调光技术",
+            "en": "Dimming Technology"
+        },
+        {
+            "title": "DCO-OFDM调制方案",
+            "en": "DCO-OFDM Modulation Scheme"
+        },
+        {
+            "title": "AAD-OFDM调制方案",
+            "en": "AAD-OFDM Modulation Scheme"
+        }
+    ],
+    "relations": [
+        {
+            "source": "ACO-OFDM调制方案",
+            "target": "模拟调光",
+            "type": "适用于"
+        },
+        {
+            "source": "AHO-OFDM调制方案",
+            "target": "模拟调光",
+            "type": "适用于"
+        },
+        {
+            "source": "DO-OFDM调制方案",
+            "target": "模拟调光",
+            "type": "适用于"
+        },
+        {
+            "source": "DCO-OFDM调制方案",
+            "target": "模拟调光",
+            "type": "适用于"
+        },
+        {
+            "source": "调光技术",
+            "target": "OFDM-VLC系统",
+            "type": "影响"
+        },
+        {
+            "source": "DCO-OFDM调制方案",
+            "target": "ACO-OFDM调制方案",
+            "type": "互补性"
+        },
+        {
+            "source": "AAD-OFDM调制方案",
+            "target": "DCO-OFDM调制方案",
+            "type": "结合"
+        },
+        {
+            "source": "AAD-OFDM调制方案",
+            "target": "ACO-OFDM调制方案",
+            "type": "结合"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LED的线性动态范围",
+            "en": "Linear dynamic range of LED"
+        },
+        {
+            "title": "VLC削峰操作",
+            "en": "Peak clipping operation in VLC"
+        },
+        {
+            "title": "比例因子压扩加直流偏置的双因子调节法",
+            "en": "Dual-factor regulation method of proportion factor compression and DC bias addition"
+        },
+        {
+            "title": "OFDM信号的光功率",
+            "en": "Optical power of OFDM signal"
+        },
+        {
+            "title": "加性高斯白噪声信道",
+            "en": "Additive white Gaussian noise channel"
+        },
+        {
+            "title": "光电二极管",
+            "en": "Photodiode"
+        },
+        {
+            "title": "信道状态信息",
+            "en": "Channel state information"
+        },
+        {
+            "title": "均衡模块",
+            "en": "Equalization module"
+        },
+        {
+            "title": "DCO-OFDM",
+            "en": "DCO-OFDM"
+        },
+        {
+            "title": "ACO-OFDM",
+            "en": "ACO-OFDM"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LED的线性动态范围",
+            "target": "VLC削峰操作",
+            "type": "necessary"
+        },
+        {
+            "source": "VLC削峰操作",
+            "target": "比例因子压扩加直流偏置的双因子调节法",
+            "type": "necessary"
+        },
+        {
+            "source": "比例因子压扩加直流偏置的双因子调节法",
+            "target": "OFDM信号的光功率",
+            "type": "cause"
+        },
+        {
+            "source": "OFDM信号的光功率",
+            "target": "加性高斯白噪声信道",
+            "type": "cause"
+        },
+        {
+            "source": "加性高斯白噪声信道",
+            "target": "光电二极管",
+            "type": "necessary"
+        },
+        {
+            "source": "光电二极管",
+            "target": "信道状态信息",
+            "type": "necessary"
+        },
+        {
+            "source": "信道状态信息",
+            "target": "均衡模块",
+            "type": "necessary"
+        },
+        {
+            "source": "DCO-OFDM",
+            "target": "VLC削峰操作",
+            "type": "method"
+        },
+        {
+            "source": "ACO-OFDM",
+            "target": "VLC削峰操作",
+            "type": "method"
+        }
+    ]
+}种调制方案结合的实现难度。在发送端，通过添加开关模块，实现在不同亮度范围内自适应切换DCO-OFDM和ACO-OFDM调制方案。具体来说，当LED发光亮度处于最大发光功率的中间范围时，选择DCO-OFDM调制方案，否则选择ACO-OFDM调制方案。在接收端，通过均衡和FFT等操作，实现对接收信号的解调和解码。
+
+3.4.2	系统调光技术
+为了实现自适应切换调制方案，需要对LED的发光亮度进行实时监测和调节。本文提出了一种基于PWM调光技术的实现方案。具体来说，通过控制PWM信号的占空比，实现对LED的发光亮度的调节。在实现过程中，需要考虑到PWM信号的频率和占空比对LED发光亮度的影响，以及PWM信号的抖动对通信性能的影响。
+
+通过理论分析和仿真实验，本文证明了AAD-OFDM调制方案在不同亮度范围内具有互补性，并且在硬件实现上具有可行性。同时，PWM调光技术也可以实现对LED发光亮度的实时监测和调节。因此，AAD-OFDM调制方案和PWM调光技术的结合，可以实现在任意亮度下的最优通信性能。{
+    "knowledge_points": [
+        {"title": "光传感器模块", "en": "Optical sensor module"},
+        {"title": "开关模块", "en": "Switch module"},
+        {"title": "调制方案", "en": "Modulation scheme"},
+        {"title": "削峰噪声", "en": "Clipping noise"},
+        {"title": "信噪比", "en": "Signal-to-noise ratio"},
+        {"title": "比特误码率", "en": "Bit error rate"},
+        {"title": "频谱效率", "en": "Spectral efficiency"},
+        {"title": "可靠性", "en": "Reliability"},
+        {"title": "有效性", "en": "Efficiency"}
+    ],
+    "relations": [
+        {"source": "光传感器模块", "target": "LED发光亮度", "type": "控制"},
+        {"source": "开关模块", "target": "调制方案", "type": "选择"},
+        {"source": "开关模块", "target": "亮度门限值", "type": "设定"},
+        {"source": "削峰噪声", "target": "信号失真", "type": "引起"},
+        {"source": "信噪比", "target": "比特误码率", "type": "影响"},
+        {"source": "调制方案", "target": "频谱效率", "type": "影响"},
+        {"source": "可靠性", "target": "比特误码率", "type": "评价"},
+        {"source": "有效性", "target": "频谱效率", "type": "评价"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "QAM调制",
+            "en": "QAM Modulation"
+        },
+        {
+            "title": "LED动态范围",
+            "en": "LED Dynamic Range"
+        },
+        {
+            "title": "模拟调光",
+            "en": "Analog Dimming"
+        },
+        {
+            "title": "比例因子",
+            "en": "Proportion Factor"
+        },
+        {
+            "title": "直流偏置",
+            "en": "DC Bias"
+        },
+        {
+            "title": "频谱效率",
+            "en": "Spectral Efficiency"
+        },
+        {
+            "title": "BER性能",
+            "en": "BER Performance"
+        },
+        {
+            "title": "最优化问题",
+            "en": "Optimization Problem"
+        },
+        {
+            "title": "光功率要求",
+            "en": "Optical Power Requirement"
+        },
+        {
+            "title": "亮度门限",
+            "en": "Brightness Threshold"
+        },
+        {
+            "title": "DCO-OFDM",
+            "en": "DCO-OFDM"
+        },
+        {
+            "title": "ACO-OFDM",
+            "en": "ACO-OFDM"
+        },
+        {
+            "title": "信号形式",
+            "en": "Signal Form"
+        },
+        {
+            "title": "零值削峰",
+            "en": "Zero Value Peak Clipping"
+        },
+        {
+            "title": "系统性能",
+            "en": "System Performance"
+        },
+        {
+            "title": "亮度切换门限",
+            "en": "Brightness Switching Threshold"
+        },
+        {
+            "title": "二分算法",
+            "en": "Binary Search Algorithm"
+        },
+        {
+            "title": "FFT/IFFT",
+            "en": "FFT/IFFT"
+        },
+        {
+            "title": "SNR",
+            "en": "Signal-to-Noise Ratio"
+        },
+        {
+            "title": "信道增益",
+            "en": "Channel Gain"
+        },
+        {
+            "title": "BER曲线",
+            "en": "BER Curve"
+        }
+    ],
+    "relations": [
+        {
+            "source": "QAM调制",
+            "target": "频谱效率",
+            "type": "基础概念"
+        },
+        {
+            "source": "QAM调制",
+            "target": "BER性能",
+            "type": "基础概念"
+        },
+        {
+            "source": "LED动态范围",
+            "target": "模拟调光",
+            "type": "基础概念"
+        },
+        {
+            "source": "模拟调光",
+            "target": "比例因子",
+            "type": "基础概念"
+        },
+        {
+            "source": "模拟调光",
+            "target": "直流偏置",
+            "type": "基础概念"
+        },
+        {
+            "source": "比例因子",
+            "target": "直流偏置",
+            "type": "基础概念"
+        },
+        {
+            "source": "频谱效率",
+            "target": "QAM调制",
+            "type": "基础概念"
+        },
+        {
+            "source": "BER性能",
+            "target": "QAM调制",
+            "type": "基础概念"
+        },
+        {
+            "source": "最优化问题",
+            "target": "比例因子",
+            "type": "基础概念"
+        },
+        {
+            "source": "最优化问题",
+            "target": "直流偏置",
+            "type": "基础概念"
+        },
+        {
+            "source": "光功率要求",
+            "target": "最优化问题",
+            "type": "基础概念"
+        },
+        {
+            "source": "BER门限",
+            "target": "最优化问题",
+            "type": "基础概念"
+        },
+        {
+            "source": "DCO-OFDM",
+            "target": "ACO-OFDM",
+            "type": "基础概念"
+        },
+        {
+            "source": "DCO-OFDM",
+            "target": "信号形式",
+            "type": "基础概念"
+        },
+        {
+            "source": "ACO-OFDM",
+            "target": "信号形式",
+            "type": "基础概念"
+        },
+        {
+            "source": "ACO-OFDM",
+            "target": "零值削峰",
+            "type": "基础概念"
+        },
+        {
+            "source": "亮度门限",
+            "target": "最优化问题",
+            "type": "基础概念"
+        },
+        {
+            "source": "亮度门限",
+            "target": "二分算法",
+            "type": "基础概念"
+        },
+        {
+            "source": "FFT/IFFT",
+            "target": "仿真参数设置",
+            "type": "基础概念"
+        },
+        {
+            "source": "SNR",
+            "target": "仿真参数设置",
+            "type": "基础概念"
+        },
+        {
+            "source": "信道增益",
+            "target": "仿真参数设置",
+            "type": "基础概念"
+        },
+        {
+            "source": "BER曲线",
+            "target": "DCO-OFDM",
+            "type": "实验结果"
+        },
+        {
+            "source": "BER曲线",
+            "target": "ACO-OFDM",
+            "type": "实验结果"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "DCO-OFDM调制方案", "en": "DCO-OFDM Modulation Scheme"},
+        {"title": "ACO-OFDM调制方案", "en": "ACO-OFDM Modulation Scheme"},
+        {"title": "AAD-OFDM调制方案", "en": "AAD-OFDM Modulation Scheme"},
+        {"title": "多链路OFDM-VLC系统", "en": "Multi-Link OFDM-VLC System"},
+        {"title": "ST-OFDM调制方案", "en": "ST-OFDM Modulation Scheme"},
+        {"title": "模拟调光", "en": "Analog Dimming"},
+        {"title": "空域调光", "en": "Spatial Dimming"}
+    ],
+    "relations": [
+        {"source": "DCO-OFDM调制方案", "target": "ACO-OFDM调制方案", "type": "性能互补"},
+        {"source": "DCO-OFDM调制方案", "target": "AAD-OFDM调制方案", "type": "结合应用"},
+        {"source": "ACO-OFDM调制方案", "target": "AAD-OFDM调制方案", "type": "结合应用"},
+        {"source": "多链路OFDM-VLC系统", "target": "ST-OFDM调制方案", "type": "提升性能"},
+        {"source": "ST-OFDM调制方案", "target": "模拟调光", "type": "联合调光技术"},
+        {"source": "ST-OFDM调制方案", "target": "空域调光", "type": "联合调光技术"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "帧映射", "en": "Frame Mapping"},
+        {"title": "比特交织", "en": "Bit Interleaving"},
+        {"title": "OFDM", "en": "Orthogonal Frequency Division Multiplexing"},
+        {"title": "AWGN信道", "en": "Additive White Gaussian Noise Channel"},
+        {"title": "分集增益", "en": "Diversity Gain"},
+        {"title": "重复编码", "en": "Repetition Coding"},
+        {"title": "等增益合并", "en": "Equal Gain Combining"},
+        {"title": "QAM解调", "en": "Quadrature Amplitude Modulation Demodulation"},
+        {"title": "削峰", "en": "Clipping"},
+        {"title": "SFOFDM", "en": "Separated Frequency Orthogonal Frequency Division Multiplexing"},
+        {"title": "模拟调光", "en": "Analog Dimming"},
+        {"title": "空域调光", "en": "Spatial Dimming"},
+        {"title": "Bussgang定理", "en": "Bussgang Theorem"},
+        {"title": "衰减因子", "en": "Attenuation Factor"}
+    ],
+    "relations": [
+        {"source": "帧映射", "target": "OFDM", "type": "属于"},
+        {"source": "比特交织", "target": "帧映射", "type": "前置"},
+        {"source": "OFDM", "target": "AWGN信道", "type": "经过"},
+        {"source": "AWGN信道", "target": "分集增益", "type": "影响"},
+        {"source": "重复编码", "target": "分集增益", "type": "提高"},
+        {"source": "等增益合并", "target": "分集增益", "type": "获取"},
+        {"source": "QAM解调", "target": "削峰", "type": "前置"},
+        {"source": "削峰", "target": "QAM调制", "type": "前置"},
+        {"source": "SFOFDM", "target": "OFDM", "type": "基于"},
+        {"source": "模拟调光", "target": "SFOFDM", "type": "应用于"},
+        {"source": "空域调光", "target": "SFOFDM", "type": "应用于"},
+        {"source": "Bussgang定理", "target": "削峰", "type": "应用于"},
+        {"source": "衰减因子", "target": "Bussgang定理", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "方差表达式",
+            "en": "Expression of variance"
+        },
+        {
+            "title": "发送信号表达式",
+            "en": "Expression of transmitted signal"
+        },
+        {
+            "title": "调光方法",
+            "en": "Dimming method"
+        },
+        {
+            "title": "接收信号表达式",
+            "en": "Expression of received signal"
+        },
+        {
+            "title": "最优化问题",
+            "en": "Optimization problem"
+        },
+        {
+            "title": "BER公式",
+            "en": "BER formula"
+        },
+        {
+            "title": "频谱效率公式",
+            "en": "Spectral efficiency formula"
+        }
+    ],
+    "relations": [
+        {
+            "source": "方差表达式",
+            "target": "发送信号表达式",
+            "type": "包含"
+        },
+        {
+            "source": "发送信号表达式",
+            "target": "接收信号表达式",
+            "type": "传递"
+        },
+        {
+            "source": "调光方法",
+            "target": "发送信号表达式",
+            "type": "影响"
+        },
+        {
+            "source": "最优化问题",
+            "target": "调光方法",
+            "type": "包含"
+        },
+        {
+            "source": "最优化问题",
+            "target": "BER公式",
+            "type": "影响"
+        },
+        {
+            "source": "最优化问题",
+            "target": "频谱效率公式",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "仿真结果与分析", "en": "Simulation Results and Analysis"},
+        {"title": "仿真参数设置", "en": "Simulation Parameter Settings"},
+        {"title": "LED最大允许电流", "en": "Maximum Allowable Current for LED"},
+        {"title": "FFT/IFFT大小", "en": "FFT/IFFT Size"},
+        {"title": "光滤波器增益", "en": "Optical Filter Gain"},
+        {"title": "折射率", "en": "Refractive Index"},
+        {"title": "LED的半功率半角", "en": "Half Power Angle of LED"},
+        {"title": "PD的探测面面积", "en": "Detection Area of PD"},
+        {"title": "PD的视场半角", "en": "Field of View Angle of PD"},
+        {"title": "LED到PD的距离", "en": "Distance from LED to PD"},
+        {"title": "辐射角", "en": "Radiation Angle"},
+        {"title": "入射角", "en": "Incident Angle"},
+        {"title": "QAM符号的平均功率", "en": "Average Power of QAM Symbols"},
+        {"title": "发送信噪比", "en": "Signal-to-Noise Ratio (SNR)"},
+        {"title": "对比方案选择", "en": "Selection of Comparison Schemes"},
+        {"title": "SD-OFDM方案", "en": "SD-OFDM Scheme"},
+        {"title": "结果分析", "en": "Result Analysis"}
+    ],
+    "relations": [
+        {"source": "仿真参数设置", "target": "LED最大允许电流", "type": "包含"},
+        {"source": "仿真参数设置", "target": "FFT/IFFT大小", "type": "包含"},
+        {"source": "仿真参数设置", "target": "光滤波器增益", "type": "包含"},
+        {"source": "仿真参数设置", "target": "折射率", "type": "包含"},
+        {"source": "仿真参数设置", "target": "LED的半功率半角", "type": "包含"},
+        {"source": "仿真参数设置", "target": "PD的探测面面积", "type": "包含"},
+        {"source": "仿真参数设置", "target": "PD的视场半角", "type": "包含"},
+        {"source": "仿真参数设置", "target": "LED到PD的距离", "type": "包含"},
+        {"source": "仿真参数设置", "target": "辐射角", "type": "包含"},
+        {"source": "仿真参数设置", "target": "入射角", "type": "包含"},
+        {"source": "仿真参数设置", "target": "QAM符号的平均功率", "type": "包含"},
+        {"source": "仿真参数设置", "target": "发送信噪比", "type": "包含"},
+        {"source": "对比方案选择", "target": "SD-OFDM方案", "type": "包含"},
+        {"source": "结果分析", "target": "SD-OFDM方案", "type": "对比"},
+        {"source": "结果分析", "target": "ST-OFDM调制方案", "type": "对比"},
+        {"source": "结果分析", "target": "传统DCO-OFDM方案", "type": "对比"},
+        {"source": "结果分析", "target": "AAD-OFDM方案", "type": "对比"},
+        {"source": "结果分析", "target": "频谱效率", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频谱效率", "en": "Spectral Efficiency"},
+        {"title": "可靠性", "en": "Reliability"},
+        {"title": "ST-OFDM调制方案", "en": "ST-OFDM Modulation Scheme"},
+        {"title": "DCO-OFDM调制方案", "en": "DCO-OFDM Modulation Scheme"},
+        {"title": "双极性信号", "en": "Bipolar Signal"},
+        {"title": "单极性信号", "en": "Unipolar Signal"},
+        {"title": "调光技术", "en": "Dimming Technology"},
+        {"title": "多链路OFDM-VLC系统", "en": "Multi-Link OFDM-VLC System"},
+        {"title": "信道模型", "en": "Channel Model"},
+        {"title": "接收信噪比", "en": "Signal-to-Noise Ratio (SNR)"},
+        {"title": "模拟调光", "en": "Analog Dimming"},
+        {"title": "空域调光", "en": "Spatial Dimming"}
+    ],
+    "relations": [
+        {"source": "频谱效率", "target": "可靠性", "type": "建立在"},
+        {"source": "ST-OFDM调制方案", "target": "DCO-OFDM调制方案", "type": "优于"},
+        {"source": "ST-OFDM调制方案", "target": "SD-OFDM", "type": "优于"},
+        {"source": "ST-OFDM调制方案", "target": "AAD-OFDM", "type": "优于"},
+        {"source": "DCO-OFDM调制方案", "target": "双极性信号", "type": "采用"},
+        {"source": "ST-OFDM调制方案", "target": "双极性信号", "type": "分离为"},
+        {"source": "ST-OFDM调制方案", "target": "单极性信号", "type": "发送"},
+        {"source": "多链路OFDM-VLC系统", "target": "信道模型", "type": "基于"},
+        {"source": "多链路OFDM-VLC系统", "target": "接收信噪比", "type": "影响"},
+        {"source": "调光技术", "target": "模拟调光", "type": "联合使用"},
+        {"source": "调光技术", "target": "空域调光", "type": "联合使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "O-OFDM调制技术", "en": "O-OFDM Modulation Technology"},
+        {"title": "调光技术", "en": "Dimming Technology"},
+        {"title": "单链路系统", "en": "Single-Link System"},
+        {"title": "自适应切换的调光调制方案", "en": "Adaptive Switching Dimming Modulation Scheme"},
+        {"title": "多链路场景", "en": "Multi-Link Scenario"},
+        {"title": "ST-OFDM调制方案", "en": "ST-OFDM Modulation Scheme"},
+        {"title": "联合调光技术", "en": "Joint Dimming Technology"},
+        {"title": "信道建模", "en": "Channel Modeling"},
+        {"title": "LOS链路", "en": "Line-of-Sight Link"},
+        {"title": "NLOS链路", "en": "Non-Line-of-Sight Link"},
+        {"title": "LED辐射模型", "en": "LED Radiation Model"},
+        {"title": "实验验证", "en": "Experimental Verification"},
+        {"title": "MIMO技术", "en": "MIMO Technology"},
+        {"title": "数字调光技术", "en": "Digital Dimming Technology"},
+        {"title": "AAD-OFDM", "en": "Asymmetrical And Direct Current Biased Optical OFDM"},
+        {"title": "ACO-OFDM", "en": "Asymmetrically Clipped Optical OFDM"},
+        {"title": "AHO-OFDM", "en": "Asymmetrical Hybrid Optical OFDM"},
+        {"title": "AWGN", "en": "Additive White Gaussian Noise"},
+        {"title": "BER", "en": "Bit Error Ratio"},
+        {"title": "DCO-OFDM", "en": "Direct Current Biased Optical OFDM"},
+        {"title": "DD", "en": "Direct Detection"},
+        {"title": "IM", "en": "Intensity Modulation"},
+        {"title": "LED", "en": "Light Emitting Diodes"},
+        {"title": "MIMO", "en": "Multiple-Input Multiple-Output"},
+        {"title": "OOK", "en": "On-Off Keying"},
+        {"title": "PAM", "en": "Pulse Amplitude Modulation"},
+        {"title": "PPM", "en": "Pulse Position Modulation"},
+        {"title": "PWM", "en": "Pulse Width Modulation"},
+        {"title": "QAM", "en": "Quadrature Amplitude Modulation"},
+        {"title": "RF", "en": "Radio Frequency"},
+        {"title": "SD-OFDM", "en": "Spatial Dimming OFDM"},
+        {"title": "SNR", "en": "Signal-to-Noise Ratio"},
+        {"title": "U-OFDM", "en": "Unipolar OFDM"},
+        {"title": "VLC", "en": "Visible Light Communication"}
+    ],
+    "relations": [
+        {"source": "O-OFDM调制技术", "target": "调光技术", "type": "应用"},
+        {"source": "调光技术", "target": "自适应切换的调光调制方案", "type": "改进方案"},
+        {"source": "自适应切换的调光调制方案", "target": "单链路系统", "type": "应用"},
+        {"source": "多链路场景", "target": "ST-OFDM调制方案", "type": "改进方案"},
+        {"source": "多链路场景", "target": "联合调光技术", "type": "改进方案"},
+        {"source": "信道建模", "target": "LOS链路", "type": "相关概念"},
+        {"source": "信道建模", "target": "NLOS链路", "type": "相关概念"},
+        {"source": "信道建模", "target": "LED辐射模型", "type": "相关概念"},
+        {"source": "实验验证", "target": "O-OFDM调制技术", "type": "验证"},
+        {"source": "MIMO技术", "target": "多链路场景", "type": "应用"},
+        {"source": "数字调光技术", "target": "调光技术", "type": "改进方案"},
+        {"source": "AAD-OFDM", "target": "O-OFDM调制技术", "type": "相关技术"},
+        {"source": "ACO-OFDM", "target": "O-OFDM调制技术", "type": "相关技术"},
+        {"source": "AHO-OFDM", "target": "O-OFDM调制技术", "type": "相关技术"},
+        {"source": "AWGN", "target": "信道噪声", "type": "相关概念"},
+        {"source": "BER", "target": "误码率", "type": "相关概念"},
+        {"source": "DCO-OFDM", "target": "O-OFDM调制技术", "type": "相关技术"},
+        {"source": "DD", "target": "光检测技术", "type": "相关技术"},
+        {"source": "IM", "target": "光调制技术", "type": "相关技术"},
+        {"source": "LED", "target": "VLC", "type": "相关技术"},
+        {"source": "OOK", "target": "光调制技术", "type": "相关技术"},
+        {"source": "PAM", "target": "光调制技术", "type": "相关技术"},
+        {"source": "PPM", "target": "光调制技术", "type": "相关技术"},
+        {"source": "PWM", "target": "光调制技术", "type": "相关技术"},
+        {"source": "QAM", "target": "光调制技术", "type": "相关技术"},
+        {"source": "RF", "target": "VLC", "type": "相关技术"},
+        {"source": "SD-OFDM", "target": "调光技术", "type": "相关技术"},
+        {"source": "SNR", "target": "信噪比", "type": "相关概念"},
+        {"source": "U-OFDM", "target": "O-OFDM调制技术", "type": "相关技术"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信", "en": "Visible Light Communication"},
+        {"title": "正交频分复用", "en": "Orthogonal Frequency Division Multiplexing"},
+        {"title": "LED", "en": "LED"},
+        {"title": "脉冲调制", "en": "Pulse Modulation"},
+        {"title": "调制技术", "en": "Modulation Techniques"},
+        {"title": "室内定位", "en": "Indoor Localization"}
+    ],
+    "relations": [
+        {"source": "可见光通信", "target": "正交频分复用", "type": "使用"},
+        {"source": "可见光通信", "target": "LED", "type": "使用"},
+        {"source": "可见光通信", "target": "脉冲调制", "type": "使用"},
+        {"source": "可见光通信", "target": "调制技术", "type": "涉及"},
+        {"source": "可见光通信", "target": "室内定位", "type": "应用于"},
+        {"source": "正交频分复用", "target": "LED", "type": "使用"},
+        {"source": "脉冲调制", "target": "LED", "type": "使用"},
+        {"source": "LED", "target": "室内定位", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信的脉冲调制和调光方法研究", "en": "Research on Pulse Modulation and Dimming Methods for Visible Light Communication"},
+        {"title": "IEEE 802.15.7可见光通信：调制方案和调光支持", "en": "IEEE 802.15.7 Visible Light Communication: Modulation Schemes and Dimming Support"},
+        {"title": "脉冲幅度调制可见光通信的调光方案分析", "en": "Dimming Scheme Analysis for Pulse Amplitude Modulated Visible Light Communications"},
+        {"title": "利用脉宽调制实现可见光通信系统的设计与实现", "en": "Design and Implementation of Visible Light Communication System Using Pulse Width Modulation"},
+        {"title": "频分复用数据传输", "en": "Frequency Division Multiplexing Data Transmission"},
+        {"title": "通信原理(第3版)", "en": "Principles of Communication (3rd Edition)"},
+        {"title": "可见光通信、网络和传感：调查、潜力和挑战", "en": "Visible Light Communication, Networking, and Sensing: A Survey, Potential and Challenges"},
+        {"title": "MIMO空间复用的接收天线选择：理论和算法", "en": "Receive Antenna Selection for MIMO Spatial Multiplexing: Theory and Algorithms"},
+        {"title": "光无线MIMO信道速率自适应的功率和偏移分配", "en": "Power and Offset Allocation for Rate Adaptation of Spatial Multiplexing in Optical Wireless MIMO Channels"},
+        {"title": "室内环境下光无线通信MIMO技术性能比较", "en": "Performance Comparison of MIMO Techniques for Optical Wireless Communications in Indoor Environments"},
+        {"title": "用于增加有机可见光通信系统数据速率的MIMO-ANN系统", "en": "MIMO-ANN System for Increasing Data Rates in Organic Visible Light Communications Systems"}
+    ],
+    "relations": [
+        {"source": "可见光通信的脉冲调制和调光方法研究", "target": "IEEE 802.15.7可见光通信：调制方案和调光支持", "type": "相关"},
+        {"source": "可见光通信的脉冲调制和调光方法研究", "target": "脉冲幅度调制可见光通信的调光方案分析", "type": "相关"},
+        {"source": "可见光通信的脉冲调制和调光方法研究", "target": "利用脉宽调制实现可见光通信系统的设计与实现", "type": "相关"},
+        {"source": "IEEE 802.15.7可见光通信：调制方案和调光支持", "target": "脉冲幅度调制可见光通信的调光方案分析", "type": "相关"},
+        {"source": "脉冲幅度调制可见光通信的调光方案分析", "target": "利用脉宽调制实现可见光通信系统的设计与实现", "type": "相关"},
+        {"source": "频分复用数据传输", "target": "通信原理(第3版)", "type": "相关"},
+        {"source": "可见光通信、网络和传感：调查、潜力和挑战", "target": "可见光通信的脉冲调制和调光方法研究", "type": "相关"},
+        {"source": "可见光通信、网络和传感：调查、潜力和挑战", "target": "MIMO空间复用的接收天线选择：理论和算法", "type": "相关"},
+        {"source": "光无线MIMO信道速率自适应的功率和偏移分配", "target": "MIMO空间复用的接收天线选择：理论和算法", "type": "相关"},
+        {"source": "室内环境下光无线通信MIMO技术性能比较", "target": "MIMO空间复用的接收天线选择：理论和算法", "type": "相关"},
+        {"source": "用于增加有机可见光通信系统数据速率的MIMO-ANN系统", "target": "MIMO空间复用的接收天线选择：理论和算法", "type": "相关"},
+        {"source": "IEEE 802.15.7可见光通信：调制方案和调光支持", "target": "IEEEStandardforLocalandMetropolitanAreaNetworks-Part15.7:Short-RangeWirelessOpticalCommunicationUsingVisibleLight,IEEEStd802.15.7,Sep.2011.", "type": "相关"},
+        {"source": "可见光通信、网络和传感：调查、潜力和挑战", "target": "IEEEStandardforLocalandMetropolitanAreaNetworks-Part15.7:Short-RangeWirelessOpticalCommunicationUsingVisibleLight,IEEEStd802.15.7,Sep.2011.", "type": "相关"},
+        {"source": "Multi-InputMulti-Output(MIMO)indooropticalwirelesscommunications", "target": "D.Tsonev,S.Sinanovic,andH.Haas,\"PracticalMIMOcapacityforindooropticalwirelesscommunicationwithwhiteLEDs,\"inProc.IEEE77thVTCSpring,Jun.2013,pp.1-5.", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "垂直切换决策算法", "en": "Vertical handover decision-making algorithm"},
+        {"title": "可见光通信和OFDMA系统的混合网络中的协议设计和容量分析", "en": "Protocol design and capacity analysis in hybrid network of visible light communication and OFDMA systems"},
+        {"title": "照明要求对VLC系统的影响", "en": "Impact of lighting requirements on VLC systems"},
+        {"title": "磷光转换白光LED的颜色稳定性研究", "en": "Study on the color stability of phosphor-converted white LEDs"},
+        {"title": "室内可见光通信系统调光控制技术的研究", "en": "Research on dimming control technology of indoor visible light communication system"},
+        {"title": "基于OFDM的室内高速可见光通信系统的研究与实现", "en": "Research and implementation of indoor high-speed visible light communication system based on OFDM"},
+        {"title": "基于u-Law映射的简单OFDM方案", "en": "A simple OFDM scheme based on u-Law mapping"},
+        {"title": "用于光无线通信的位置调制OFDM", "en": "Position modulating OFDM for optical wireless communications"},
+        {"title": "一种光功率高效的非对称压缩DCO-OFDM方案", "en": "An optical power efficient asymmetrically companded DCO-OFDM scheme"},
+        {"title": "可见光通信的非对称重构OFDM", "en": "Asymmetrically reconstructed optical OFDM for visible light communications"},
+        {"title": "Spectral and energy efficient OFDM for optical IM/DD systems", "en": "SEE-OFDM: Spectral and energy efficient OFDM for optical IM/DD systems"},
+        {"title": "避免单极性OFDM光无线通信中的频谱效率损失", "en": "Avoiding spectral efficiency loss in unipolar OFDM-based optical wireless communication"},
+        {"title": "基于OFDM的光无线通信中的叠加调制", "en": "On the superposition modulation for OFDM-based optical wireless communication"},
+        {"title": "同时传输ACO-OFDM和DCO-OFDM的新技术", "en": "A novel technique to simultaneously transmit ACO-OFDM and DCO-OFDM in IM/DD systems"}
+    ],
+    "relations": [
+        {"source": "垂直切换决策算法", "target": "可见光通信和OFDMA系统的混合网络中的协议设计和容量分析", "type": "相关"},
+        {"source": "可见光通信和OFDMA系统的混合网络中的协议设计和容量分析", "target": "照明要求对VLC系统的影响", "type": "相关"},
+        {"source": "照明要求对VLC系统的影响", "target": "磷光转换白光LED的颜色稳定性研究", "type": "相关"},
+        {"source": "磷光转换白光LED的颜色稳定性研究", "target": "室内可见光通信系统调光控制技术的研究", "type": "相关"},
+        {"source": "室内可见光通信系统调光控制技术的研究", "target": "基于OFDM的室内高速可见光通信系统的研究与实现", "type": "相关"},
+        {"source": "基于OFDM的室内高速可见光通信系统的研究与实现", "target": "用于光无线通信的位置调制OFDM", "type": "相关"},
+        {"source": "基于OFDM的室内高速可见光通信系统的研究与实现", "target": "一种光功率高效的非对称压缩DCO-OFDM方案", "type": "相关"},
+        {"source": "基于OFDM的室内高速可见光通信系统的研究与实现", "target": "可见光通信的非对称重构OFDM", "type": "相关"},
+        {"source": "基于OFDM的室内高速可见光通信系统的研究与实现", "target": "Spectral and energy efficient OFDM for optical IM/DD systems", "type": "相关"},
+        {"source": "用于光无线通信的位置调制OFDM", "target": "基于OFDM的光无线通信中的叠加调制", "type": "相关"},
+        {"source": "一种光功率高效的非对称压缩DCO-OFDM方案", "target": "可见光通信的非对称重构OFDM", "type": "相关"},
+        {"source": "可见光通信的非对称重构OFDM", "target": "Spectral and energy efficient OFDM for optical IM/DD systems", "type": "相关"},
+        {"source": "Spectral and energy efficient OFDM for optical IM/DD systems", "target": "避免单极性OFDM光无线通信中的频谱效率损失", "type": "相关"},
+        {"source": "避免单极性OFDM光无线通信中的频谱效率损失", "target": "基于OFDM的光无线通信中的叠加调制", "type": "相关"},
+        {"source": "同时传输ACO-OFDM和DCO-OFDM的新技术", "target": "基于OFDM的光无线通信中的叠加调制", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信的改进OFDM调制解调方案", "en": "Improved OFDM modulation and demodulation scheme for visible light communication"},
+        {"title": "基于脉宽调制的照明调光与基于离散多音调的可见光通信相结合", "en": "Combining illumination dimming based on pulse-width modulation with visible light communications based on discrete multitone"},
+        {"title": "照明和可见光通信系统的亮度控制方法", "en": "Brightness control methods for illumination and visible light communication systems"},
+        {"title": "可见光通信系统中调光控制方案的性能", "en": "Performance of dimming control scheme in visible light communication system"},
+        {"title": "室内可见光通信中使用MPPM调光控制的高效数据传输", "en": "Efficient data transmission using MPPM dimming control in indoor visible light communication"},
+        {"title": "可逆极性光学OFDM(RPO-OFDM):适用于千兆可见光通信链路的调光兼容OFDM", "en": "Reverse polarity optical-OFDM (RPO-OFDM): dimming compatible OFDM for gigabit VLC links"},
+        {"title": "OFDM在可见光通信中的应用及照明约束的适应性", "en": "Adaptation of OFDM under visible light communication and illumination constraints"},
+        {"title": "室内可见光OFDM通信系统调光控制技术", "en": "Dimming control technology for indoor visible light OFDM communication system"},
+        {"title": "并行翻转-正交频分复用调光控制室内可见光通信系统", "en": "Parallel flip-orthogonal frequency division multiplexing dimming control indoor visible light communication system"},
+        {"title": "用于可见光通信系统中调光控制的增强DCO-OFDM方案", "en": "An enhanced DCO-OFDM scheme for dimming control in visible light communication systems"},
+        {"title": "降低可见光OFDM系统限幅失真的部分线性压扩变换研究", "en": "Research on partial linear companding transform to reduce clipping distortion in visible light OFDM system"},
+        {"title": "基于ACO-OFDM的VLC系统亮度控制", "en": "Brightness control of ACO-OFDM based VLC system"},
+        {"title": "用于可见光通信的不对称混合光学OFDM与调光控制", "en": "Asymmetrical hybrid optical OFDM for visible light communications with dimming control"},
+        {"title": "基于多层ACO-OFDM的可调光可见光通信", "en": "Dimmable visible light communications based on multilayer ACO-OFDM"},
+        {"title": "利用多个灯具的室内MIMO可见光通信系统的天线选择调光方案", "en": "Antenna selection based dimming scheme for indoor MIMO visible light communication systems utilizing multiple lamps"}
+    ],
+    "relations": [
+        {"source": "可见光通信的改进OFDM调制解调方案", "target": "基于脉宽调制的照明调光与基于离散多音调的可见光通信相结合", "type": "应用"},
+        {"source": "基于脉宽调制的照明调光与基于离散多音调的可见光通信相结合", "target": "照明和可见光通信系统的亮度控制方法", "type": "应用"},
+        {"source": "可见光通信的改进OFDM调制解调方案", "target": "照明和可见光通信系统的亮度控制方法", "type": "应用"},
+        {"source": "可见光通信的改进OFDM调制解调方案", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "室内可见光中使用MPPM调光控制的高效数据传输", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "可逆极性光学OFDM(RPO-OFDM):适用于千兆可见光通信链路的调光兼容OFDM", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "OFDM在可见光通信中的应用及照明约束的适应性", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "室内可见光OFDM通信系统调光控制技术", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "并行翻转-正交频分复用调光控制室内可见光通信系统", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "用于可见光通信系统中调光控制的增强DCO-OFDM方案", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "降低可见光OFDM系统限幅失真的部分线性压扩变换研究", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "基于ACO-OFDM的VLC系统亮度控制", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "用于可见光通信的不对称混合光学OFDM与调光控制", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "基于多层ACO-OFDM的可调光可见光通信", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "利用多个灯具的室内MIMO可见光通信系统的天线选择调光方案", "target": "可见光通信系统中调光控制方案的性能", "type": "应用"},
+        {"source": "可见光通信的改进OFDM调制解调方案", "target": "基于ACO-OFDM的VLC系统亮度控制", "type": "应用"},
+        {"source": "可见光通信的改进OFDM调制解调方案", "target": "用于可见光通信的不对称混合光学OFDM与调光控制", "type": "应用"},
+        {"source": "可见光通信的改进OFDM调制解调方案", "target": "基于多层ACO-OFDM的可调光可见光通信", "type": "应用"},
+        {"source": "可见光通信的改进OFDM调制解调方案", "target": "利用多个灯具的室内MIMO可见光通信系统的天线选择调光方案", "type": "应用"},
+        {"source": "基于脉宽调制的照明调光与基于离散多音调的可见光通信相结合", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "可见光通信系统中调光控制方案的性能", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "室内可见光中使用MPPM调光控制的高效数据传输", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "可逆极性光学OFDM(RPO-OFDM):适用于千兆可见光通信链路的调光兼容OFDM", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "OFDM在可见光通信中的应用及照明约束的适应性", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "室内可见光OFDM通信系统调光控制技术", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "并行翻转-正交频分复用调光控制室内可见光通信系统", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "用于可见光通信系统中调光控制的增强DCO-OFDM方案", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "降低可见光OFDM系统限幅失真的部分线性压扩变换研究", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "基于ACO-OFDM的VLC系统亮度控制", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "用于可见光通信的不对称混合光学OFDM与调光控制", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "基于多层ACO-OFDM的可调光可见光通信", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"},
+        {"source": "利用多个灯具的室内MIMO可见光通信系统的天线选择调光方案", "target": "可见光通信的改进OFDM调制解调方案", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "OFDM-based optical wireless communication systems", "en": ""},
+        {"title": "Adaptive scaling and biasing scheme for OFDM-based visible light communication systems", "en": ""},
+        {"title": "Indoor high-speed adjustable light VLC communication technology research", "en": ""},
+        {"title": "Double-sided signal clipping in ACO-OFDM wireless communication systems", "en": ""},
+        {"title": "Information rate of OFDM-based optical wireless communication systems with nonlinear distortion", "en": ""},
+        {"title": "Theoretical characterization of nonlinear clipping effects in IM/DD optical OFDM systems", "en": ""},
+        {"title": "Cross-correlation functions of amplitude-distorted Gaussian signals", "en": ""},
+        {"title": "Exact BEP analysis for coherent M-ary PAM and QAM over AWGN and Rayleigh fading channels", "en": ""},
+        {"title": "Performance comparison of MIMO techniques for optical wireless communications in indoor environments", "en": ""},
+        {"title": "Practical OFDM signalling for visible light communications using spatial summation", "en": ""},
+        {"title": "OFDM visible light communication transmitter based on LED array", "en": ""},
+        {"title": "Visible light communication using LED array with DFT-spread OFDM", "en": ""},
+        {"title": "Visible light communications using OFDM and multiple LEDs", "en": ""}
+    ],
+    "relations": [
+        {"source": "OFDM-based optical wireless communication systems", "target": "Double-sided signal clipping in ACO-OFDM wireless communication systems", "type": "相关"},
+        {"source": "OFDM-based optical wireless communication systems", "target": "Information rate of OFDM-based optical wireless communication systems with nonlinear distortion", "type": "相关"},
+        {"source": "OFDM-based optical wireless communication systems", "target": "Performance comparison of MIMO techniques for optical wireless communications in indoor environments", "type": "相关"},
+        {"source": "Adaptive scaling and biasing scheme for OFDM-based visible light communication systems", "target": "Practical OFDM signalling for visible light communications using spatial summation", "type": "相关"},
+        {"source": "OFDM visible light communication transmitter based on LED array", "target": "Visible light communication using LED array with DFT-spread OFDM", "type": "相关"},
+        {"source": "Visible light communications using OFDM and multiple LEDs", "target": "Practical OFDM signalling for visible light communications using spatial summation", "type": "相关"}
+    ]
+}

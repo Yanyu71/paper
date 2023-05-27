@@ -1,0 +1,80 @@
+第六章总结与展望
+为提高用频效率，本文针对精准频谱感知问题开展研究，将接收信号半自适 应釆样方法、人工智能技术和N-out-of-K近似模型应用于频谱感知领域。首先 提出了接收信号半自适应采样的频谱感知方法,设计了基于卷积神经网络-长短期 记忆网络的环境信噪比评估架构。然后，构建了单节点二维观测信号数据集，并 釆用生成对抗网络对数据集进行了有效的数据增强，在此基础上提岀了 4种神经 网络架构，实现了单节点下高精度频谱感知。其次，将单节点智能频谱感知方法 延伸至多节点协作频谱感知，构建了适用于协作频谱感知的观测信号二维数据集, 并优化、训练了 LeNet、AlexNet、VGG-16三种神经网络。再者，建立异构相关 网络下N-out-of-K近似模型并对逼近误差进行了理论分析，在保障感知精度相当 的情况下大幅度降低了感知复杂度。最后，设计了多种场景下的仿真实验，验证 了所提方案的有效性。本文的研究成果将进一步深化无线智能通信技术，助力物 联网等相关技术的理论发展及产品落地。
+下一步拟聚焦跳频信号检测技术发展的科技前沿，针对无人机通信领域的遥 控信号检测问题开展基础性、前瞻性、创新性研究，形成资源受限下无人机遥控 信号检测性能优化建议，探索计算受限下的无人机遥控信号检测技术和多维资源 联合优化的无人机遥控信号检测技术，推动无人机检测技术落地于现实生活，为 无人机产业更好、更快的发展提供支撑。
+1、	计算受限下的无人机遥控信号优化检测
+设计计算受限下无人机遥控信号检测策略，优化融合计算资源、检测性能的 无人机遥控信号检测技术，求取计算受限下无人机遥控信号检测概率、虚警概率 和吞吐量的解析解，为计算受限下无人机遥控信号检测提供支撑。
+2、	多维资源联合优化的无人机遥控信号检测
+在单节点情况下，探索基于能量检测的检测性能、计算资源、存储资源融合 优化的多通道无人机遥控信号检测技术，实现无人机遥控信号效能最优化检测； 在单节点无人机遥控信号检测的基础上，设计并实现多节点无人机遥控信号融合 检测算法，实现无人机遥控信号准确高效检测。
+99
+100
+参考文献
+[1]Li L, Wang D , Niu X , et al. mmWave communications fbr 5G: implementation challenges and advances[J]. Sciece China. Information Sciences, 2018, 61(2):021301.
+[2]Al-Quzweeni A N , Lawey A Q , Elgorashi T ? et al. Optimized Energy Aware 5G Network Function Virtualization[J]. IEEE Access, 2019.
+[3]S. Chen et al., "Pattern Division Multiple Access-A Novel Nonorthogonal Multiple Access fbr Fifth-Generation Radio Networks/5 EEEE Trans. Vehic. Tech., vol. 66, no. 4, Apr. 2017, pp. 3185-96.
+[4]杨冬.多用户MIMO系统中的干扰消除方法研究[D].河南理工大学.
+[5]Aijoune Y Kaabouch N. A comprehensive survey on spectrum sensing in cognitive radio networks: Recent advances, new challenges, and future research directions [J]. Sensors, 2019, 19(1): 126.
+[6]国家无线电检测中心，全球移动通信系统协会.450MHz.5GHz关注频段频谱 资源评估报告[R].北京:国家无线电检测中心,2014.
+[7]Kansal P , Kumar A , Gangadharappa M . Optimized Extreme Learning Machine for Intelligent Spectrum Sensing in 5G systems [J]. Journal of Communications Technology and Electronics, 2021, 66(3):322-332.
+[8]S. Maleki, A. Pandharipande and G. Leus, Energy-Efficient Distributed Spectrum Sensing fbr Cognitive Sensor Networks, in IEEE Sensors Journal, voL 11, no. 3, pp. 565-573, March 2011? doi: 10.1109/JSEN.2010.2051327.
+[9]Franck A , Bama-Si, Tonye E , et al. Real Time Bidding (RTB) for Dynamic Spectrum Access in 5G Cognitive Radio Networks[J]. International Journal of Innovative Science & Technology, 2020, 5(10):1244.
+[10]J. Mitola, III, ''Cognitive radio: An integrated agent architecture for software defined radio/5 Ph.D. dissertation, KTH Royal Inst. Technol., Stockholm, Sweden, 2000.
+[1 l]Zhi-Rui L I , Zhao L H ? Cheng W L . Optimal linear cooperation fbr spectrum sensing in cognitive radio [J]. Information Technology, 2015.
+[12]Computer, Engineering, Department, et al. Routing Protocol for Cognitive Radio
+Ad Hoc	Networks [J].	International Journal of Interdisciplinary
+Telecommunications & Networking, 2017.
+[13]Khan AA, Rehmani M H , Reisslein M . Cognitive Radio fbr Smart Grids: Survey of Architectures, Spectrum Sensing Mechanisms, and Networking Protocols]」]. IEEE Communications Surveys & Tutorials, 2016, 18(1):860-898.
+[14]Alfahham A , Berekovic M . Energy efficient cooperative spectrum sensing in Cognitive Radio Sensor Network Using FPGA: A survey[C]// Open Innovations Association. IEEE、2017.
+[15]J Ren, Zhang H, Hu H, et aL Achievable Throughput Analysis and Channel Access in Energy Harvesting Cognitive Radio Sensor Network [J]. IEEE Access, 2019, 7(99):82277-82287.
+101
+[16]Sharma S K, Bogale T E , Chatzinotas S , et al. Cognitive Radio Techniques under Practical Imperfections: A Survey [J]. IEEE Communications Surveys & Tutorials, 2017, 17(4):1858-1884.
+[17]Sharma S K, Lagunas E, Chatzinotas S, et al. Application of Compressive Sensing in Cognitive Radio Communications: A Survey [J]. IEEE Communications Surveys & Tutorials, 2017, 18(3):1838-1860.
+[18]Diab R A, N Bastaki, Abdrabou A. A Survey on Routing Protocols for Delay and Energy-Constrained Cognitive Radio Networks[J]. IEEE Access, 2020, 8:198779198800.
+[19]Hassan M , Singh M , Hamid K . Overview of Cognitive Radio Networks [J]. Journal of Physics Conference Series’ 2021, 1831(1):012013.
+[20]Sadkhan S B , Reda D M . Security Issues of Cognitive Radio Network[C]// 2019 2nd International Conference on Engineering Technology and its Applications (IICETA). 2019.
+[21]Hassan M U , Rehmani M H , Faheem Y, Performance evaluation of broadcasting strategies in cognitive radio networks[J]. Wireless Networks, 2019, 25(3):999- 1016.
+[22]Eappen G , Shankar T . A Survey on Soft Computing Techniques for Spectrum Sensing in a Cognitive Radio Network[J]. SN Computer Science, 2020, 1(6).
+[23]海 A, Ps B , Kka C , et al. Grasshopper algorithm based channel assignment for cognitive radio networks - ScienceDirect[J]. 2020.
+[24]Tashman D H , Hamouda W . An Overview and Future Directions on PhysicalLayer Security for Cognitive Radio Networks[J]. IEEE Network, 2020.
+[25]Xu L , Yan S , Wang X . A Rollout Algorithm for Light-weight Physical-Layer Authentication in Cognitive Radio Networks[J]. IET Communications, 2020,14(4).
+[26]N Armi, Gharibi W, Khan W Z. Error rate detection due to primary user emulation attack in cognitive radio networks [J]. International Journal of Electrical and Computer Engineering, 2020, 10(5):5385.
+[27]Khan T A , Islam A . Enhancing tliroughput in multi-radio cognitive radio networks[J]. Wireless Networks, 2019(13).
+[28]Huang H 9 Zhang Z , Cheng P , et al. Cooperative spectrum sensing in cognitive radio systems with limited sensing ability [J]. Journal of Zhejiang University: Science C, 2010, 11(3):175-186.
+[29]Chavan A S , Junnarkar A . Dynamic Spectrum Sensing Method For Mobile Cognitive Radio Ad Hoc NetworksfC]// 2020 International Conference on Emerging Smart Computing and Informatics (ESCI). 2020.
+[30]Cristina B F , Tong K F , Kevin C . A low-cost mechanism to reconfigure the operating frequency band of a Vivaldi antenna for cognitive radio and spectrum monitoring applicationsfJ]. let Microwaves Antennas & Propagation, 2018, 12(5):779-782.
+[31 ] Shirgan S S , Bombale U L . Hybrid Neural Network Based Wideband Spectrum Behavior Sensing Predictor for Cognitive Radio Application [J]. Sensing and Imaging, 2020, 21(1).
+[32] A, Ahmed O. Abdul Salam , et al. Adaptive threshold and optimal frame duration
+102
+for multi-taper spectrum sensing in cognitive radio[J]. ICT Express, 2019,5( 1 ):31 - 36.
+[33]Matthew, F, Dixon, et aL Deep learning fbr spatio - temporal modeling: Dynamic traffic flows and high frequency trading[J]. Applied Stochastic Models in Business & Industry, 2019, 35(3):788-807.
+[34]Rui Z , Yan R, Chen Z, et al. Deep learning and its applications to machine health monitoring[J]. Mechanical Systems and Signal Processing, 2019, 115:213-237,
+[35]Xie C , Kumar A. Finger vein identification using Convolutional Neural Network and supervised discrete hashing[J]. Pattern Recognition Letters, 2019,119:148-156.
+[36]Granter S R , Beck A H , Papke D J . AlphaGo, Deep Learning, and the Future of the Human Microscopist[J]. Archives of Pathology & Laboratory Medicine, 2017, 141(5):619.
+[37]Furlanello T , Lipton Z C , Tschannen M , et al. Bom Again Neural Networks[C]// International Conference on Machine Learning (ICML). 2018.
+[3 8] Gudmundson, M. Correlation Model fbr Shadow Fading in Mobile Radio Systems [J]. Electronics Letters, 2011, 27(23):2145-2146.
+[39]Jeremias, Sulam, Aviad, et al. On Multi-Layer Basis Pursuit, Efficient Algorithms
+and Convolutional Neural Networks.[J]. IEEE Transactions on Pattern Analysis & Machine Intelligence, 2019.	.
+[40]Hua W , Guo Y . Classification of polarimetric synthetic aperture radar images based on multilayer Wishart-restricted Boltzmann machine [J]. Journal of Applied Remote Sensing, 2020, 14(3).
+[41]Mohamed A. Acoustic modeling using deep belief networks [J]. Audio,Speech, and Language Processing, IEEE Transactions, 2017, 20.
+[42]Bojnordi M N , Ipek E . Memristive Boltzmann machine: A hardware accelerator fbr combinatorial optimization and deep leaming[C]// IEEE International Symposium on High Performance Computer Architecture. IEEE, 2QI6.
+[43]Goodfellow I J , Pouget-Abadie J , Mirza M , et al. Generative Adversarial Networks [J]. Advances in Neural Information Processing Systems, 2014, 3:26722680.
+[44]Armi N, Chaeriah B , Arshad M. Spectrum sensing performance in cognitive radio systemfC]// 2015 2nd International Conference on Information Technology, Computer, and Electrical Engineering (ICITACEE). IEEE, 2016.
+[45]Narieda S , Cho D , Ogasawara H , et al. Theoretical Analyses of Maximum Cyclic Autocorrelation Selection Based Spectrum Sensing[J]. IEICE Transactions on Communications, 2020, E103.B(12).
+[46]Pawar P R , Patil P , Jain P P , et aL Comparative Analysis between Energy Detection Method and Matched Filter Detection fbr Spectrum Sensing in Intelligent Network Intended towards 3G/4G/VOLTE. 2020.
+[47]Senanayake R, Smith P J, Dmochowski PA, et aL Mixture Detectors for Improved Spectrum Sensing[J]. IEEE Transactions on Wireless Communications, 2020, PP(99):1-1・
+[48]Lu J , Huang M , Yang J . A covariance matrix-based spectrum sensing technology exploiting stochastic resonance and fi!ters[J]. EURASIP Journal on Advances in
+103
+Signal Processing, 2021, 2021(1).
+[49]S. Al-Juboori and X. N. Fernando, ”Multiantenna Spectrum Sensing Over Correlated Nakagami-$m$ Channels With MRC and EGC Diversity Receptions,n in IEEE Transactions on Vehicular Technology, vol. 67, no. 3, pp. 2155-2164, March 2018, doi: 10.I109/TVT.2017.2764387.
+[50]Rao A K , Sabat S , Singh R K, et al. Cooperative Spectrum Sensing using Mobile Full-Duplex Cognitive Radio and Non-time-slotted Primary user Activity [J]. Transactions on Electrical and Electronic Materials, 2021(4):1-8.
+[51]Zhi T , Tafesse Y , Sadler B M . Cyclic Feature Detection With Sub-Nyquist Sampling for Wideband Spectrum Sensing]J]. IEEE Journal of Selected Topics in Signal Processing, 2012, 6(1):58-69.
+[52]Patel J B , Collins S , Sirkeci-Mergen B . A framework to analyze decision strategies for multi-band spectrum sensing in cognitive radios - ScienceDirect[J]. Physical Communication, 2020, 42.
+[53]Lu J , Huang M , Yang J . A covariance matrix-based spectrum sensing technology exploiting stochastic resonance and filters[J]. EURASIP Journal on Advances in Signal Processing, 2021,2021(1).
+[54]FERNANDEZ, MANUEL, WILLIAMS, et al. Closed-Foi*m Expression for the Poisson-Binomial Probability Density Function.[J]. IEEE Transactions on Aerospace & Electronic Systems, 2010.01awole? Akinbode A , lakawira, et al. Fusion rule and cluster head selection scheme in cooperative spectrum sensing]J]. IET Communications, 2019.
+[55]B. Zhu et al.? nAsymptotic Outage Probability of Dual-Branch Equal-Gain Combining over Correlated, Non-Identically Distributed Lognormal Fading Channels/ 2018 IEEE International Conference on Communications (ICC), 2018, pp. 1-6, doi: 10.1109/ICC.2018.8422919.
+[56]Liang H? Gao C? Li Y et al. Analysis of selection combining scheme for hybrid FSO/RF transmission considering misalignment[J]. Optics Communications, 2019, 435: 399-404.
+[57]O. S. Badameh, D. B. da Costa, P. C. Sofbtasios, S. Muhaidat and S. L. Cotton, "On the Sum of Fisher-Snedecor F Variates and Its Application to Maximal-Ratio Combining/' in IEEE Wireless Communications Letters, vol. 7, no. 6, pp. 966-969, Dec. 2018, doi: 10.1109/LWC.2018.2836453.
+[58]IEEE Standard for Information Technology—Telecommunications and information exchange between systems—Local and metropolitan area networks—Specific requirements Part 22.1: Standard to Enhance Harmful Interference Protection for Low-Power Licensed Devices Operating in TV Broadcast Bands, in IEEE Std 802.22.1-2010 , vol., no., pp.1-145, 1 Nov. 2010.
+[59]IEEE Draft Standard for Spectrum Sensing Interfaces and Data Structures for Dynamic Spectrum Access and other Advanced Radio Communication Systems. Spectrum Database Interfaces Amendment, in IEEE P1900.6b/D4.0, January 2020 , vol., no., pp.1-149, 14 Feb. 2020.
+[60]IEEE Standard for Spectrum Sensing Interfaces and Data Structures for Dynamic Spectrum Access and other Advanced Radio Communication Systems., in IEEE
+104
+Std 1900.6-2011	, vol., no., pp.1-168, 22 April 2011, doi:

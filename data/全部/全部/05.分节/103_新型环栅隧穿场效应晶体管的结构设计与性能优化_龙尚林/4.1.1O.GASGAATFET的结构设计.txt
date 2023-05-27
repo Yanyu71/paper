@@ -1,0 +1,41 @@
+4.1.1O.GASGAATFET的结构设计
+图4-l(a)是错层厚度为6nm的GAS GAA TFET结构示意图。本节提出的0- GAS GAATFET结构图如图4-l(b)所示，因为在器件结构中增加了 Overlap结构， 故命名为O-GAS GAA TFETo O-GAS GAA TFET通过将栅极向漏极延长的 Overlap结构，使得在关态时，器件的沟道和漏极处的电场降低，进而使得器件 的关态电流降低。本节将对O-GAS GAATFET结构进行仿真，具体器件结构参 数如表4-1。
+Overlap I程将栅极向漏极延长，在关态时，可以降低了器件沟道和漏极接触 面处的电场，进而降低器件的关态电流，为了清晰的阐述Overlap长度对GAS GAA TFET器件性能的影响，在器件其他参数都不变的情况下，本节分别取 Overlap长度为3run, 6nm, 9nm, 12nm和15?mi的器件进行仿真，研究其电学 特性以及物理特性。本小节将会从转移特性、电场强度分布、电流密度、能带结 构等方面研究不同长度Overlap对器件性能的影响，为优化GAS GAA TFET以 及其他TFETs器件提供指导，同时设计0-GAS GAATFET的工艺流程，为在实 际器件中使用Overlap结构提供理论基础。
+37
+图 4-1 器件结构横切图(a)GAS GAA TEFT; (b)O-GAS GAA TFETo
+表4-1 O-GAS GAA TFET的参数定义
+参数名
+参数含义
+参数值
+r
+器件半径
+12nm
+LSD
+源极漏极长度
+40n?n
+Lc
+沟道长度
+30nm
+Tox
+氧化层厚度
+2nm
+TGe
+错层厚度
+6nm
+Overlap
+栅极向漏极延长长度
+可调
+Ns
+源极掺杂浓度（P型）
+5 x 1019cm-3
+Nc
+沟道扌参杂浓度（P型）
+1 x 1015cm-3
+*Ge
+源极硅层掺杂浓度（P型）
+5 x 1019cm-3
+ND
+漏极掺杂浓度（n型）
+1 x 1017cm-3
+WK
+栅极功函数

@@ -1,0 +1,16 @@
+摘要
+近年来，随着政策的大力支持和科技的不断进步，物联网行业迎来 了发展的春天。作为物联网行业的重要应用领域，智能家居迅速发展到 了前所未有的高度,各种智能家居产品、通信标准和服务框架层出不穷， 造成了智能家居领域产品种类的多样性、通信协议的复杂性和标准框架 的差异性，市场上的智能设备缺乏统一管理和通讯协议。因此，本文对 智能家居系统中设备管理与通讯机制进行了研究，主要工作如下：
+首先，分析了 AllSeen服务框架的技术原理和底层基础通信机制， 阐述了该技术框架在智能家居领域应用的可行性，提出了 Wi-Fi设备和 ZigBee设备的统一发现、联网、通讯和心跳检测机制。
+其次，设计了定制网关中的虚拟AllSeen设备，并通过虚拟设备实 现了 ZigBee协议与Wi-Fi协议转换，拓展了 AllSeen服务框架对ZigBee 协议的支持。
+再次，提出了与Wi-Fi设备组网方案兼容的蓝牙哑设备组网方案。 借助带有图形输入界面的标准设备，实现了蓝牙哑设备之间的动态组网， 完善了基于AllSeen技术的蓝牙微微网和散射网的通讯机制。
+最后，改进了 AllSeen基础服务框架的通信方式，具体包括以下两 个方面：将ADSeen服务框架的事件-动作机制拓展为支持CRUD （增删 改查）功能的异步触发机制；在多点通信会话基础上，引入了分布式代 理，进一步优化了资源配置。
+关键词：智能家居 AllSeen 设备发现设备通讯设备组网
+THE RESEARCH OF DEVICES,MANAGEMENTHET AND COMMUNICATION ON SMART HOME
+ABSTRACT
+In recent years, with the strong support of the relevant policy and the continuous development of the technology, the Internet of Things (loT) industry has ushered in its spring. Smart home, as one of the most important application areas of the loT industry, has rapidly developed to an unprecedented new height. Various intelligent home products, communication standards and service framework have come to the market one after the other, which have resulted in the diversity of the products, the complexity of communication protocols, and the difference of the standard frameworks. Until now, there is still no unified management and communication protocol among these intelligent products in the market. Therefore, this thesis has focused on the research of the management and communication mechanisms of the intelligent devices. The main work is summarized as follows:
+Firstly, the thesis analyzed the technical principles and the underlying communication mechanisms of All Seen service framework, elaborated its feasibility over smart home area and proposed the unified discovery, networking, and communication as well as the heartbeat detection mechanisms of the Wi-Fi and ZigBee devices.
+Secondly, the thesis designed the virtual AllSeen devices of the customized gateway, and by taking advantage of these virtual devices, the ZigBee devices can be transited into virtual Wi-Fi devices to extend AllSeen service framework^ support to ZigBee protocol.
+Thirdly, the thesis proposed a networking scheme of Bluetooth dummy
+devices, which is compatible with the current networking scheme of Wi-Fi devices. With the aid of the standard devices which owns graphical user input interface, the proposed scheme realized the dynamic networking among Bluetooth dummy devices, and consummated the communication mechanisms of Bluetooth Piconet and Scattemet based on AllSeen service framework.
+Finally, the thesis improved the underlying communication methods of the AllSeen service framework from the following two aspects; extended AllSeen service frameworks event-action mechanism to an asynchronous one with CRUD (create, retrieve, update, delete) functions; introduced distributed agents to the multi-point session to further optimize the resource allocation.
+KEY WORDS: smart home allseen devices5 management devices5 communication devices, networking

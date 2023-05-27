@@ -1,0 +1,18 @@
+摘要
+基于图结构的数据分析是当前大数据集处理中最热门的技术之 一，它可以很好地描述同一时刻时间序列的和互关系，以及不同时刻 时间序列的内部关系。然而在实际应用中,图结构往往未知，比如同 一板块的股票价格之间虽具有较强的相关性，俱往往无法直接套用现 有的图结构。因此，很有必要从有限的样本中学习 ＜效的图拓扑结构。
+本论文针对大规模动态高斯马尔科夫过程的图结构参数估计问 题开展研究。本文的主要贡献如卜：
+1	.基于一阶高斯马尔科夫过程的联合图结构参数估计,分析联合 数据图结构及噪声图结构的构造，定性地确定权重参数的取值范围； 并采用交替梯度下降法对联合图结构进行阈值筛选，从而得到稀疏的 图结构，证明了分组阈值q算法（GTQ）这一过程的收敛性并通过仿 真验证其收敛性。
+2	.基于聚类的一阶高斯马尔科夫过程的图结构参数估计，从谱聚 类算法出发，将聚类嵌入动态线性系统中，并提出确定聚类数K的算 法。通过仿真研究不同网络规模、阈值q对聚类性能、聚类数K的影 响以及算法复杂分析，同时通过不同的图模型对比GTG、CDG、MRCE、 JGSE在模型拓扑识别率与模型估计准确率方面的性能，最后将其运 用到实际股票市场的数据。
+3	.基于稀疏自适应的迭代最小二乘图结构参数估计，从批-最小二 乘（B-LSM）算法出发提出迭代最小二乘（ILSM）算法，利用先验估 计的图结构和相关的新息信息，进行在线图结构的估计。同时在误差 可控的范围内利用信号结构的共稀疏性，提出稀疏自适应-迭代最小 二乘（ASP-LSM）算法，提高拓扑识别的能力，最后通过实验仿真验 证ASP-LSM算法的性能，并将其运用于实际股票市场的数据。
+关键字大规模空时信号结构参数估计高斯过程
+PARAMETER ESTIMATION OF
+LARGE-SCALE DYNAMICAL GAUSS
+MARKOV PROCESS
+ABSTRACT
+Data analysis based on graph structure is one of the most popular technologies in the process of large data sets, which can describe the inter relationships among the time series, and their intra relationships across the time series. However, in practical applications, graph structure is often unknown for us, for example, in the stock market, stocks between in the same sector have a strong correlation and mutual influence. Dealing with these large-scale price data, there is no ready-made available graph for prediction. So it is very necessary to study the topology of the graph from the limited samples.
+This thesis focuses on the research of modeling large-scale spatial-temporal signal as dynamic Gauss Markov process and parameter estimation. The main contributions of this paper are as follows:
+1.	To estimate joint graph stnicture parameters based on first-order Gauss Markov process, this thesis explored the data with joint graph structure and analyzed the construction of joint graph structure with noise. In detail this thesis determined the range of weighting parameters; then to obtain sparse graph stnicture it embedded the mechanism of threshold screening joint graph stnicture into the process of alternating gradient, also it proved the convergence of threshold q estimator algorithm (GTQ) and verify the convergence by simulation.
+2.	To estimate joint graph structure parameters of first-order Gauss Markov process based on clustering, this thesis started from the spectral clustering algorithm, and embedded clustering into dynamic linear system
+and puts forward the algorithm to determine the number of clusters K. Then we study how the influence of different network scale on clustering performance and how the influence of threshold value q on clustering performance^ clustering number K and we learn the model of complex analysis. At the same time, it compared accuracy of model estimation and topology recognition compared with GTG, CDG, MRCE, JGSE models. Finally, it is applied the algorithm into the real world stock market data.
+3.	To estimate graph structure parameters of iterative least square method based on adaptive sparse hypothesis, this thesis started from patchleast squares method(B-LSM) and proposed iterative least squares estimation algorithm(ILSM), which making use of a priori estimation graph structure and new information to estimate graph structure online. At the same time, using the common sparse of signal stmcture in the range within controlled error, it proposed sparse adaptive iterative least squares algorithm(ASP-LSM), which improve the ability of topology identification. Finally, it validated the performance ofASP-LSM algorithm by simulation, and applied the algorithm into the real world stock market data.
+KEY WORDS large-scale spatial time signal structure parameter estimation Gauss Markov process

@@ -1,0 +1,7 @@
+1.1研究背景及意义
+在移动互联网时代，涌现出大量基于位置的服务（Location Based Service, LBS）,它们包括但不限于急救服务，天气预报，社交网络，广告投放，导航和地 图等.它们为人们的生活带来了极大的便利，吸引了海量的用户，创造了巨大的 价值。据报道，2016年12月，腾讯位置服务团队宣布其定位服务日均调用量已 突破500亿次，峰值突破520亿次，覆盖用户数6.8亿，平均每个用户每天调用 位置服务73次内，可见用户对于基于位置的服务的庞大需求。根据ITU-R
+（International Telecommunication Union - Radio Communication Sector, 国际电信 联盟无线电通信部门）的 IM「2020（ Inemational Mobile Telecommunications - 2020, 国际移动通信-2020）规划，可以预见在5G （5thGeneration,第五代通信）时代， 在诸如 VR （Virtual Reality,虚拟现实）/AR （AugmentedReality,增强现实）等 eMBB （enlianced Mobile Broadband,演进的移动宽带）场景中，基于位置的服务 将在现有基础上得到进一步发展，例如车联网（Vehicle to X,V2X）和物联网
+（Internet of Things, loT）等 URLLC （Ultra-Reliable Low Latency Communication, 低延迟高可靠）场景和mMTC （massive Machine-Type Communication,海量机器 间通信）场景可能会为基于位置的服务开创新的发展空间。
+作为基于位置的服务的支撑条件，需要终端具有估计其位置的能力，即无线 定位能力。未来新兴的基于位置的应用会给无线定位技术提出更高的要求，例如 需要更为精确的定位能力，误差在米级别及以下；更低的复杂程度，能够实时定 位，并且跟踪用户的位置；泛在的定位能力，在室内，地下室等多种场景支持定 位服务。
+一些专用的定位系统的出现一定程度上满足了现阶段的定位需求，例如全球 卫星定位系统（Global Positioning Systems, GPS）。此外在一些商用通信系统中， 也加入了对无线定位能力的支持，以期望满足定位需求，例如在3GPP （3rd Generation Partnership Project,第三代合作伙伴计划）规定的定位服务（Location Service. LCS）, IEEE （Institute ofElectrical and Electronics Engine,国际电气电子 工程师协会）对ZigBee （BP IEEE802.15.4）物理层的扩展IEEE802.15.4a。但是 这些系统对于新兴的基于位置的服务提出的要求还有一定差距。
+在上述背景下，无线定位技术的研究目前是学术界和产业界的热点话题之一, 被广泛讨论。无线定位技术本身是一项系统技术，涉及传感器网络，信号检测与估计，位置估计与跟踪等诸多领域，也需要对相关分系统技术进行改进和优化， 以满足定位技术的需求。

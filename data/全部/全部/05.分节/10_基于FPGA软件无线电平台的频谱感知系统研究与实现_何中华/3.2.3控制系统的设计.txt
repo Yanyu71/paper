@@ -1,0 +1,5 @@
+3.2.3控制系统的设计
+控制系统主要分为两个部分：基于Microblaze平台SOC系统的Firmware软 件控制模块和基于Linux操作系统的C++程序控制模块。Firmware软件控制模块 主要进行三个部分的处理，首先是负责射频子板的初始化工作，以及射频前端的 中心频点设置与更改、接收增益设置、ADC采样率设置等工作；其次需要负责初 始化DMA引擎，维护DMA对基带处理子系统数据接收过程，接收数据存储于数 据队里之中并由软件维护队列的出队、入队操作；最后，Firmware程序还需要负 责FPGA开发板与PC机的Socket通信，初始化与Host Server的Socket连接，负
+21
+责监控DMA接收数据的数据队列，并持续稳定地将数据队列中的数据通过Socket 传给PC机的Host Server程序。
+基于Linux操作系统的PC机Host Server程序负责两个部分的工作：一个工 作是与FPGA开发板进行的Socket连接，持续稳定地接收FPGA开发板传来的频 谱能量数据，并对每一帧的数据进行解包处理，提出单次频谱感知的60MHz带 宽内的频谱能量数据，并对每一帧的数据进行拼接，完成600MHz~3.0GHz整个 2.4GHz带宽内的频谱能量数据整合，并存储于数据队列之中；Host Server的另 一份工作是与Matlab程序负责通信，每次Matlab与Host Server建立Socket连 接时，Host Server负责将解包处理后的频谱感知频谱能量数据发送至Matlab - 侧，由Matlab程序迸行宽带能量检测判决与展示。

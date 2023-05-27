@@ -1,0 +1,24 @@
+4.3.3文本生成
+在给定开始单词与图片后，根据式(2-26)可以求出下一个单词的出现概率， 概率最高的作为该位置的单词，之后再利用新的上下文预测新的单词，当遇到特 殊介绍单词，，<end>”时则停止。生成的句子的质量依赖于训练数据的质量和数量, 生成句子的风格会与训练数据挂钩。如表4-1所示为给定图片生成文本，模型通 过Flickr8k【23］训练，每张图片中的前5个句子是数据集中图片对应的正确句子, 第6个句子是模型生成的句子，并给出对应的困惑度，困惑度越低说明生成句子 质量越高。
+表4-1生成文本
+a tan dog jumping through the field with some barren trees in the background .
+A tan dog runs through the brush.
+A white dog runs on brown grass.
+A white dog with beige spots is running through a field.
+The light colored dog is running through a field.
+a dog is running through the grass. (0.586217)
+a boy runs along the street.
+A child running on the sidewalk.
+a young boy running in a street race.
+A young boy runs in a race.
+Blond child running in a race.
+a young girl wearing a red shirt is holding a object in the background』1.262091)
+The girls are taking a picture of themselves.
+Two blonde girls are taking a picture of themselves.
+Two blonde women are smiling while one is holding a camera to capture their image.
+Two girls taking a picture of themselves.
+Two young girls are taking a picture of themselves with a
+(续上表)camera.
+the woman is holding the camera , while the woman and
+the other is playing the the street (1.960438)
+从生成文本可以看岀，模型基本可以找到图片中的关键部分，但有一定的语 法问题或者是描述错误。

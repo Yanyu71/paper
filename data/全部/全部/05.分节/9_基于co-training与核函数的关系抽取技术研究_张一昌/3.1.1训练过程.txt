@@ -1,0 +1,86 @@
+3.1.1训练过程
+Co-training算法在进行关系抽取时是一个反复迭代的过程，但是这只是一个 框架。本节实现的算法中，种子是实体关系对，而模板则是基于依存树构建的最 短路径。
+在给定一个实体关系对< E{,E2 > ,如< Obama,Honolulu > ,这代表着Obama 的出生地是Honolulu,然后抽取出表征这个种子对的模板，完成之后再利用模板 抽取出新的实体关系对，如此反复迭代。这就是co-training关系抽取算法的概要 步骤。
+由于研究的关系具有很多种，而每次进行训练的时候只能处理一个关系，所 以系统的主要流程图只针对一个关系，其他关系类似，流程图如图3-1所示，其 中深色部分加入了防卄漂移的公式。
+图3-1 co-training关系抽取算法流程图
+以人和出生地关系为例，co-training关系抽眼算法过程如下：
+(1 )种子对：这是指算法最开始的实体对，$0 < Obama,Honolulu >
+< Michelle ,Chicago >等等。种子对相当于是co-training的起始状态。
+17
+(2)检索相关文档：由于实体在文档集中的分布概率比较低，所以需要对 实体对进行检索，返回仇"个相关文档，相关文档是sgml格式的，如图3-2。
+<DCC id="XIN_ENG_20101C=30.0049"	>
+<HEADLINE>
+Roundup: Afghan election body has yet tc anno nr： ce election i rsult
+■:- although 6 weeks on
+</HEADLINE>
+<TEZT>
+<F>
+By Farid Behfoua
+■- </P>
+•. <P>
+KABUL, Oct. 30 (Xinhua) -- Even though six have passsa from Sept. IS when
+willicns of v;ai-weary Afghans dared Taliban threats and cast their ballots in the country's 3=cond parliamentary election, the final requite have yct tc come -out.
+</p>
+图3-2新闻语料文档原始格式
+(3)处理分析文档：使用CoreNLP对文档进行分句、词性标注、命名实体 识别以及句法分析等相关处理，处理后的文档格式如图3-3所示。
+<roct>
+〈document〉
+<docDate>2010-lC-30</dGcDa te>
+<sentences>
+^sentence
+<tokens>
+<token ia=,'l,,>
+<word>Roundup</wcrd>
+< 1 ernma > P.oun ^up< / l&nira«>
+:GharacterCf f3etEegiii>5S</CharacterGff s^tBegin>
+<CharactercffsetEnd>c5</Chai3cterCff'?tEnd>
+<pcs>r-r<p</fros>
+<M£R>O<yNER>
+</'token>
+<token id=,'2n>
+<wora>:</word>
+<lemma>:</leiriina>
+<CharacterCffsetBegin>65</criar«cterCffsetSegin>
+<CharacterCffsetEnd>66</€haracterCffsetEnd>
+<PCS>：</POS>
+<NERX)</NEP.>
+图3-3处理分析后的文档
+处理分析后的句子会产出很多信息，如上图所示包括词形还原、偏移量、词 性标注以及命名实体识别等°CoreNLP官方网站还给出了一个可视化的句子分析 图，如对句子：The preliminary results of Afghanistan's second parliamentary elections since the collapse of Taliban regime in late 2001, held amid tight security was announced on Oct. 20 with surfacing over 50 percent new faces.
+对其进行分析可得到可视化的效果，如图3-4至图3-6：
+Pan-of-Speech:
+®J JJ O IN 雖 O JJ JJ	® IN iffi IN
+The p>rehn->nary results of Afghanistan s second parhamentary	chons since the coHapse of
+W： IN JJ 侦—顾 III JJ M VBD VBN	IN ®' CD IN VBG IN
+Taliban regime in late 2001. held am：cl tight security was announced on Oct. 20 witn surfacing over a ® jj醵注
+50 percent new faces.
+图3-4 CoreNLP处理后词性标注结果
+18
+Named Entity Recognition:
+ORDINAL	館袞
+The preliminary results of Afghanistan s second pariianrentary ejections since the coUapse of Tahban
+(DflLte'i	[Datej
+regime in late 2001, hesd mmd tight sec□■ •ty was announ<:ed on Oct. 20 with surfac ng over
+Percent
+50 percent new faces.
+图3-5 CoreNLP处理后命名实体标注结果
+pobj
+poss		 ；. , 	vmod	；	►
+/	det		/	/		amod 	、&	pobj —♦
+^f.-possessive-*-^ jj，	prep>IK [町&t-
+The preb mi nary results	u? Afghanistan rs second parliamentary elections smce the
+:	 vmod	:	•、
+—pobj-、	—pobj—、	/—pobj—^、	\	-—pobj—、
+—攝-、职 pr*p Fl 抵-pmp pN. 」\砌【‘心》邛	jjfod•谕	VKL f 5"
+of Taliban regime in laze 2001, held amid tight security was
+\	/	p°bj	\
+\ I	,• •	num
+>		prep	 .	/ / ，	nn	 a
+''VBHfWAiNE捎」—niF num—m *IH pcomp-prep-IN/ gf 曲‘ 叫一孙边描氐
+announced on Oct. 20 surfacing over 50 percent new faces.
+图3-6 CoreNLP处理后依存树结果
+(4)抽取模板：首先，将句子中的实体对找到，如果有多对则选择距离最 近的一对。然后，根据依存树标注结果，采用单源点最短路径算法抽取出实体对 之间的路径，并保存。
+(5)过滤出高质量模板：指定一个评价模板质量的函数，并以此来判定模 板的质量，其中模板长度大小限制在勾以内，这是出于对算法效率以及距离过 滤的考虑。由于差的模板会造成语义漂移，所以将每一伦迭代的产岀的新模板进 行排序，选择满足模板质量大于阈值a的前％个模板存储，并丢弃其他模板。
+(6)使用模板抽取实体对：对于当前相关文档集的所有句子进行分析，如 果其中具有满足命名实体条件的句子，则判定该实体对之间的最短路径与己有模 板相似度是否大于阈值人，如果满足条件，则存储这对实体。当模块分析完所有 句子，会得到大量的新增实体对。
+(7)过滤出高质量实体对：与过滤出高质量模板的目的一样，同时使用的 也是类似的评价函数，只是会选取质量大于阈值"的前倪个实体对，丢弃其他 的实体对。
+到此为止，完成一轮迭代，后面则按照流程图继续上面的过程，使用新产生 的实体对进行检索相关文档。如此往复，直到达到指定迭代次数上线7V,nax o
+19

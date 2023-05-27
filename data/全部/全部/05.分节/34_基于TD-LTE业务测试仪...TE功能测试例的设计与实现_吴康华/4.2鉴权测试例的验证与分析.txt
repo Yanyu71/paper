@@ -1,0 +1,44 @@
+4.2鉴权测试例的验证与分析
+测试例执行结果如下所述：首先终端发送REGISTER (Cseq： 1068384109) 请求，SS回复一条失败的响应401 Unauthorized (Cseq： 1068384109),按照协 议规定，此时UE应当再上一条REGISTER (Cseq： 1068384110),表明上一条 401 Unauthorized (Cseq： 1068384109)是无效的，401 Unauthorized (Cseq： 1068384109)和第二条 REGISTER (Cseq： 1068384110)如图 4-2 和图 4-3 所示：
+HTC_9J_PAS5.pcapng - Wineshark
+&e Edit yiew Go ￡apt?re finafyic Statistics Tel^jhcnj JooU Help
+.i ’ E^xessicn... Clear Apply
+.raaeter ： viaco
+.raseter: -sip.instance=*<urn:gsaa:iaei:35344006-OS7326~0>*
+Authorixation: Digest response3**, cpaq[ue=*5ccc069c403ei>af9f017ie9547f4Ce4I*, 8iscriths=AKAvl-Jfi)5, csonce= *4259609565", nc=OOOOOOCi. nonce=*c94J5bTY*MM?JkpAePG- JVd2 .tion Schese: Digest cs069c-403ebaf9f017ie95i；f 4：0?41*
+AKAV1-H&5
+:S98G9565*
+H
+M'?；Y*^fcj!Ae?S<;jVd24^bEbK(iTXCDxkc3gY5A?， ss. ssicOQl. eccOOI. 3§ppsetTGrk. erg*
+?. ?nc001. ?cc001. 3gppnetwork. erg”
+001010J334567S9CiE=. sracOOl. eccOOI. 3gppnetifork. Gra" ?000
+图 4-3 REGISTER (Cseq： 1068384110)消息结构图
+通过比较两条消息的Security-Server分量和Security-Client分量可知鉴权失 败，因此测试点1通过。
+当UE第二次收到401 Unauthorized (Cseq： 1068384110)消息之后会尝试 发起第三条REGISTER (Cseq： 1068384111),消息结构与上一条REGISTER相 同，测试点2通过，如图4-4所示。
+g|HTC_9.1_PASS.pat{wig ? W^eshart:
+卽 l&t X So	浦条-Teiepbc^ 1奶 g
+酸* ?巔赣窺儀解彩愁 R傘略尊警瑟緩鬚豉贅敷髪確縫啜％ 爨
+-Internet Protocol, Src： 1?2. iS4.0^ 1 (192. C. i 1, Dsi : 133.195.256.7S U38^ 195. 216.75)
+-TranmUston Control Fjwtecci, Src Pert： 5$3U (3231S), ￡>sx Pon： $ip <5060). Sea： 4560, AcXc U33, ten： 262
+湿[Reasswbled TCP Segments(1650 bytes>:心SOtGSSS}, ?li502<362)j
+■ Session Initiation Fr?t?.ci
+競 Request-Line: REGISTER sip: i?5. sdcOQUbccOOI. 3<ppntftwork. ?rg SIP'2. 0
+!S Message Header
+-f ： <slp:00i010123456789eiH3. BncOOl. accOOl. 3fppnet?ork. cr<>: tag=?42S961-4029
+?' t: <*lp: 001010123456*8^185. atncOOl. ?ce001. 3fppnet*?rk. or<>
+> CSeq: 1068384111 REGISIEX
+i: 42896093a；_175413S16?l92. 168.0. 1
+? v: 5IP/2. O/ICP 192. 168.0. i:5060.branch=z9?>4bK2279€?0789
+Max-Fonrards： ?0
+n； <sip:0010i0123456789<192. 16S. 0.1 ：3060> .-g. 3gpp. tc?i-ref?*urn%3Aurn-7MA3?jp-jervlce. ins. ic<i. s?tel，;-Fg. ss3ip;audle; video.	1 ns t anc e - *z srn: g.s
+1 . A
+[truncated] Authorization: Digest re 5pcn.se= * *. opaque= *5c c c069c 4O3ebaf 9f 0171 e95! 7 f 40e41 *. algoritha=AKAvl-)?5. cn?.nce= *4289609565", nc=00000003, nonce="o945? Expires: 600000
+Reouire:
+Prox尸Require： ?ec-afree
+k： path, sec-agree
+Allow: WHS. BYE. CAJiCSL, ACK. WUFY, URMTB, MUCK. IXFQ, MESSAGE. OHlOfS
+'truncated； Security-Client： ipsee-Sspp a：g?hBac-Bc5-9fe ealg=dej-^de3-cb<. epi-c=43343605；. @。3-舛306：36398. port-c=83S9. port-s?8915, ipaec-3spp. ?!(
+图 4~4 第三条 RESISTER (Cseq： 1068384111)消息结构图
+最后SS向UE发送403 Forbidden (Cseq： 1068384111),标志着测试结束,
+下面图4-5是测试结果的TS Manager软件截图，表明测试例已经pass。
+图4-5测试例通过界面截图

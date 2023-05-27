@@ -1,0 +1,34 @@
+4.4本章小结
+本章主要介绍了通过多字节电磁分析来提高信息的利用率，从微观和宏观两 个角度进行了理论分析，并对其进行了实验验证。利用智能算法对电磁旁路分析 进行优化，将密钥的恢复问题转化为密钥的寻优问题，主要分为两个部分：
+(1)基于粒子群优化算法的多字节电磁分析。通过粒子群在密钥搜索空间 中的定向移动实现多字节密钥的优化，并对粒子群的速度更新公式和位置更新公 式加以改进，使之更适合密钥的搜索。
+(2)基于遗传算法的多字节电磁分析。将遗传算法与多目标分析的结合实 现密钥所有字节的利用，通过将密钥等效为遗传算法染色体上基因，然后经过选 择、交叉和变异的操作进化出最优密钥。除此之外，增加了排序算子和筛选算子 以更高效的方式搜索到最优密钥。
+经过实验验证，基于智能算法优化的电磁旁路分析相较于传统的电磁分析方 法均有的不同程度的改善。其中，基于粒子群算法优化的电磁分析采用递进式的 多字节电磁分析，实现了约13.72%的改进；而基于遗传算法优化的电磁分析采 用全覆盖式的多字节电磁分析，实现了约42.72%的改善。虽然基于遗传算法优 化多字节电磁分析相较于基于粒子群优化算法的多字节电磁分析的改善程度较 大，但是与此同时也造成了电磁分析算法复杂度增加的问题。因此，在不同场景 下应考虑使用不同的方式来进行电磁旁路分析。
+84
+本章参考文献
+[1]	Ding G L, Guo Chen L J, et al. Research on difierential electromagnetic analysis for cryptographic systems [J]. Computer Engineering and Design, 2009.
+[2]	Zhang P, Deng G, Chen K, et al. Electromagnetic correlation analysis attacks on microcontroller implementations of AES in far field [J]. Journal of Huazhong University of ence & Technology, 2009: 31-34.
+[3]	Tiachacht S, Bouazzouni A, Khatir S, et al. Damage assessment in structures using combination of a modified Cornwell indicator and genetic algorithm [J]. Engineering Structures, 2018, 177: 421-430.
+[4]	Zhang H, Liang Y Zhang W, et al. Improved PSO-based method for leak detection and localization in liquid pipelines [J]. IEEE Transactions on Industrial Informatics, 2018, 14(7): 3143-3154.
+[5]	Zhang Z, Wu L, Wang A, et al. A novel bit scalable leakage model based on genetic algorithm [J]. Secxirity and Communication Networks, 2015, 8(18): 3896-3905.
+[6]	Yda B, Ying S C, An W A, et al. Block-oriented correlation power analysis with bitwise linear leakage: An artificial intelligence approach based on genetic algorithms [J]. Future Generation Computer Systems, 2020, 106: 34-42.
+[7]张振宾.国密SM4和SM2算法功耗攻击关键技术研究与实现[D].清华大 学,2015.
+[8]	Ding Y, Zhu L, Wang A, et al. A Multiple Sieve Approach Based on Artificial Intelligent Techniques and Correlation Power Analysis [J]. ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2021, 17(2s): 1-21.
+[9]	Brier E, Clavier C, Olivier F. Optimal Statistical power analysis [J]. http://eprintiacrorg/2003/152? 2003.
+[10]	Poli & Kennedy J, Blackwell T. Particle swarm optimization [J]. Swarm Intelligence, 2007: 33-57.
+[11]	Kennedy J, Eberhart R. Particle swarm optimization [A]. // Proceedings of ICNN,95-international conference on neural networks [C]: IEEE 1995: 1942-1948.
+[12]	Shi 丫 Eberhart R. A modified particle swarm optimizer [A]. // 1998 IEEE international conference on evolutioiiary computation proceedings IEEE world congress on computational intelligence (Cat No 98TH8360) [C]: IEEE 1998: 69-
+85
+73.
+[13]	Sun S, Zhang H? Cui X, et al. Multibyte Electromagnetic Analysis Based on Particle Swarm Optimization Algorithm [J]. Applied Sciences, 2021, 11(2): 839.
+[14]	Brier E, Clavier C, Olivier F. Correlation power analysis with a leakage model [A]. // International workshop on cryptographic hardware and embedded systems [C]: Springer 2004: 16-29-
+[15]	Ding G L, Chu J, Yuan L, et al. Correlation electromagnetic analysis for cryptographic device [A]. // 2009 Pacific-Asia Conference on Circuits, Communications and Systems [C]: IEEE 2009: 388-391.
+[16]	NIST. Announcing the Advanced Encryption Standard (AES) [J]. Fips Pub, 2001, 29(8): 2200-2203.
+[17]	Hou S? Zhou Y Liu H, et al. Wavelet support vector machine algorithm in power analysis attacks [J]. Radioengineering, 2017, 26(3): 890-902.
+[18]	Srinivas M, Patnaik L M. Genetic Algorithms: A Survey [J]. Computer, 1994, 27(6): 17-26.
+[19]	Goldberg D E. Genetic Algorithm in Search, Optimization, and Machine Learning [M]. New Jersey: Addison Wesley, 1989.
+[20]王小川.MATLAB神经网络43个案例分析[M].北京：北京航空航天大学 出版社，2013.
+[21]雷英杰，张善文.MATLAB遗传算法工具箱及应用[M].西安：西安电子科 技大学出版社，2014.
+[22]	Konak A, Coit D W, Smith A E. Multi-objective optimization using genetic algorithms: A tutorial [J]. Reliability Engineering & System Safety, 2006, 91(9): 992-1007.
+[23]	Pettersson F, Chakraborti N, Saxen H A. A genetic algorithms based multiobjective neural net applied to noisy blast furnace data [J]. Applied Soft Computing, 2007, 7(1): 387-397.
+[24]	Sun S, Zhang H, Dong L, et al. A Novel Multi-Objective Electromagnetic Analysis Based on Genetic Algorithm [J]. Sensors, 2019, 19(24): 5542.
+86

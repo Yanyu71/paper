@@ -1,0 +1,5 @@
+2.4.2归一化压缩距离
+归_化压缩距离(Normalized Compression Distance,简称NCD)。P. Vitanyi等人 最早提出了归一化压缩距离的概念［峋。后来Chen Xin等人又提出了基于NCD的相 似性检测算法［切。字符串x与y之间的NCD定义为：
+20
+NCD(X,y) max(C(x),C(y))
+公式2-1中，x+y表示字符串x和y的并集，C(x)表示使用zlib对x字符串进行 压缩的字符串长度。NCD(x,y)表示字符串x与y的相似程度。M. Bailey等人以NCD 方法作为度量方法，通过对比恶意程序运行前后系统发生的变化作为恶意程序的 特征卩司。S.Wehner等人同样使用了NCD方法来对蠕虫进行分类【"I。

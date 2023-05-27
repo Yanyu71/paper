@@ -1,0 +1,10 @@
+5.2.2Cell下行同步跟踪模块
+Cell同步跟踪模块对应的函数为Cell Tracking,该函数的接口如下：
+Cell  Tracking(int16  t*data  Input,uint8  t                        sub  Frm,int32  t
+cell  Track  Foffset,int32  t           cell  Track  Toffset)
+表5-3 Sync Tracking函数接口
+名字	I/O	数据类型	描述
+data Input	I	int16 t*	输入数据
+sub Frm	I	uint8 t	子帧号
+cell Track Foffset	O	int32 t	频偏
+cell Track Toffset	O	int32 t	时偏

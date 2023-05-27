@@ -1,0 +1,11 @@
+1.3.3本论文创新点
+本论文的主要创新点如下：
+(1)探究了密码集成电路的电磁发射原理，并针对发射源的电磁发射和近 场探头的电磁波接收分别进行了建模刻画，构建了一种密码集成电路信息泄露的 电磁分析模型，可用于电磁旁路分析。
+该部分研究成果已产出论文 Analysis Of Electromagnetic Information Leakage Based On Cryptographic Integrated Circuits,其对应章节为第三章，对应学术成果 为［J4］。
+(2)传统电磁旁路分析采用“分而治之”的思想仅对密码算法密钥的单个字 节进行分析，这对硬件并行实现的密码算法会造成有效信息的浪费，因为密码算 法密钥的每一个字节均包含有用信息，仅利用密钥的一个字节进行分析等同于将 密钥的其他字节视为噪声处理。因此，本文提出一种基于密钥多个字节的电磁旁 路分析方法，充分利用密钥的有效信息，提高信息利用率。
+该部分研究成果已产出论文 Multi-Bytes Electromagnetic Analysis: A Novel Method To Get The Key,其对应章节为第四章4.1,对应学术成果为［C6］。
+15
+（3）通过电磁旁路分析与智能算法结合，利用智能算法迭代寻优的优势， 将电磁旁路分析的密钥恢复问题转换成密钥相关系数的寻优问题，并对智能算法 加以改进使之更适合密钥的寻优求解。
+该部分研究成果已产出论文 1： Multibyte Electromagnetic Analysis Based On Particle Swarm Optimization Algorithm,其对应章节为第四章4.2,对应的学术成 果为［J2］；论文 2： A Novel Multi-Objective Electromagnetic Analysis Based On Genetic Algorithm,其对应章节为第四章4.3,对应的学术成果为［J3］。
+（4）提出了一种基于迁移学习的硬件木马检测框架，通过迁移学习对硬件 木马电磁泄漏的时频信息进行检测分类。除此之外，对基本的迁移学习进行改进, 融入支持向量机以获得更好的硬件木马检测分类效果。
+该部分研究成果已产出论文 1 ： Electromagnetic Side-Channel Hardware Trojan Detection Based On Transfer Learning,其对应章节为第五章，对应的学术成果为 ［J1］； 论文 2 ： The Electromagnetic Leakage Analysis Based On Arithmetic Operation OfFPGA,其对应章节为第五章5.4,对应的学术成果为［C5］；论文3： Hardware Trojan Detection Based On Transfer Learning By Electromagnetic Fingerprint, 其对 应章节为第五章，对应的学术成果为［C刀。

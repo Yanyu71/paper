@@ -1,0 +1,19 @@
+3.2.2实体匹配
+实体匹配函数是完成匹配句子中实体的功能，一般而言，一个实体很有可能 是具有多个单词构成的序列，这样的话，本文需要找到这个实体的位置，并进行 标示。
+每一个句子中的单词，程序上都给按顺序表上序号，同时艮据对后续使用依 存树时方便，本文取实体序列的最后一个单词作为这个实体序列的标识。因为， 实验观察到一个实体序列的最后一个单词是这个序列的中心词，实体序列作为一 个单元的话只有中心词会与其他词具有依存关系。这样，本文设计出返回实体标 识的函数，见图3-8。
+其中，entity是实体，而last代表从什么位置开始计算，这样是为了方便一 个句子中包含多份实体。
+sub GetEntitylndex(entityJast)
+index*rlast
+for word seq in reversef sentencef :last]) do
+if sentence[len(entity )r index] = entity
+return index
+return -1
+图3-8获取实体位置序号
+另外，当给出一个数字，需要有一个机制找到个数字代表的实体序列，为 此，本文需要设计出一个相应的反函数，伪代码见图3-9。
+21
+sub GetlndexEntity (index,ner) for word in reverse(sentence[:index]) do if word.ner = ner
+entity, a ppend( word)
+else
+return entity.reverse()	-
+return entity.reverse()
+图3-9获取指定位置实体

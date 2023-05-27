@@ -1,0 +1,14 @@
+4.2.2同步信息
+D2D 通信系统中的同步信息主要是通过Sync 同步中的带外SyncInfo信息进
+行传输。本方案设计SyncInfo中传输以下同步信息114:
+●  ID:   D2D终端本机ID。
+●  SYNC  ID:本机与之建立同步关系，成为其从机的D2D 终 端ID,  该信息 _
+表征本机以哪个D2D 终端为直接定时基准建立同步关系，对于D2D 主
+机，该值为本机ID。
+●  SYNC  ID  ORG:   本机定时基准的根源D2D 终端ID 。该信息表征本机 _    _
+与以哪个D2D 终端为根源定时基准建立同步关系，即如果存在中继的 情况，中继的源头D2D 终端ID。 对于D2D 主机，该值为本机ID
+●  SYNC  UL  ORG:  上行的根源同步源类型，表征本机上行定时基准的同 _     _
+步源类型。
+●  TA: 本机的上行提前量TA。
+30
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.    http://www.cnki.net

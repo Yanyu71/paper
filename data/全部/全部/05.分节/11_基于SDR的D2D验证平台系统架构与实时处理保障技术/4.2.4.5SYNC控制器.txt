@@ -1,0 +1,2 @@
+4.2.4.5SYNC控制器
+SYNC控制器负责SYNC信令的发送和接收处理，并协助协议栈维护终端的 同步状态oSYNC信令的发送操作由Hearbeat Msg在指定的TTI触发，生成SYNC Sched Msg并下发到物理层;接收操作由物理层的SYNC_recv Core Msg±报触发， 由协议栈更新周围发送SYNC的D2D终端列表。SYNC_recv Core Msg的负载部 分除如图3-4所示的SYNC信令以外，还携带一个CRC校验位。

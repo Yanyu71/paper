@@ -1,0 +1,15 @@
+4.2.3TDMA模块的调用
+TDMA模块的调用，其实非常简单，只需要三部就可以完成。
+1,首先需要引入 TDMA 模块#include "NS-3/simple-wireless-tdma-module.h",
+2,通过简单无线信道中的属性MaxRange可以设置最大通信范围
+Config::SetDefault(nNS-3::SimpleWirelessChannel::MaxRangeH, DoubleValue(txDistance));
+3,给每个节点分配一个时隙，即节点数等于时隙数，然后通过这两个参数 获取 TdmaHelper, TdmaHelper 管理 TdmaController 和通过 install 函数给节点安 装tdma协议生成网络设备。
+TdmaHelper tdma = TdmaHelper(nodeContainer.GetN()?
+nodeContainer. GetN ());
+TdmaContmller负责协议中的调度，需要设置的参数包括时隙时间，保护时 间，帧间时间。
+TdmaControllerHelper controller;
+controller.Set(MSlotTimeH, TimeValue(MicroSeconds(l 100)));
+controller.Set(,,GaurdTimeH, TimeValue(MicroSeconds(100)));
+controller.Set(HInterFranieTimen, TimeValue(MicroSeconds(0)));
+tdma.SetTdmaControllerHelper(controller);
+netDeviceContainer = tdma.Install(nodeContainer);

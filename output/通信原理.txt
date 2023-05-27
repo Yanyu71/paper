@@ -1,0 +1,1194 @@
+﻿{
+    "knowledge_points": [
+        {"title": "通信技术", "en": "Communication Technology"},
+        {"title": "通信产业", "en": "Communication Industry"},
+        {"title": "信息社会", "en": "Information Society"},
+        {"title": "信息熵", "en": "Information Entropy"},
+        {"title": "信道容量", "en": "Channel Capacity"},
+        {"title": "数字化", "en": "Digitalization"},
+        {"title": "远程通信", "en": "Telecommunication"},
+        {"title": "大容量化", "en": "High Capacity"},
+        {"title": "网络化", "en": "Networking"},
+        {"title": "移动化", "en": "Mobility"}
+    ],
+    "relations": [
+        {"source": "通信技术", "target": "通信产业", "type": "属于"},
+        {"source": "通信技术", "target": "信息社会", "type": "促进"},
+        {"source": "信息熵", "target": "通信技术", "type": "奠基"},
+        {"source": "信息熵", "target": "信息社会", "type": "奠基"},
+        {"source": "信道容量", "target": "信息熵", "type": "概念"},
+        {"source": "数字化", "target": "通信技术", "type": "发展方向"},
+        {"source": "数字化", "target": "远程通信", "type": "应用"},
+        {"source": "大容量化", "target": "通信技术", "type": "发展方向"},
+        {"source": "网络化", "target": "通信技术", "type": "发展方向"},
+        {"source": "移动化", "target": "通信技术", "type": "发展方向"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "激光器寿命提高", "en": "Improvement of laser lifespan"},
+        {"title": "SDH体系的光缆网", "en": "SDH system optical cable network"},
+        {"title": "微波通信", "en": "Microwave communication"},
+        {"title": "卫星通信", "en": "Satellite communication"},
+        {"title": "电路转接方式", "en": "Circuit switching"},
+        {"title": "信息转接方式", "en": "Packet switching"},
+        {"title": "移动通信", "en": "Mobile communication"},
+        {"title": "个人通信", "en": "Personal communication"},
+        {"title": "通信系统和通信网", "en": "Communication system and network"},
+        {"title": "香农模型", "en": "Shannon model"},
+        {"title": "编码和译码", "en": "Encoding and decoding"}
+    ],
+    "relations": [
+        {"source": "激光器寿命提高", "target": "SDH体系的光缆网", "type": "前置"},
+        {"source": "微波通信", "target": "卫星通信", "type": "前置"},
+        {"source": "电路转接方式", "target": "信息转接方式", "type": "前置"},
+        {"source": "通信系统和通信网", "target": "香农模型", "type": "前置"},
+        {"source": "香农模型", "target": "编码和译码", "type": "前置"},
+        {"source": "移动通信", "target": "个人通信", "type": "前置"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "通信系统", "en": "Communication System"},
+        {"title": "信源、信宿和信号", "en": "Source, Destination and Signal"},
+        {"title": "信源编译码设备", "en": "Source Encoding and Decoding Equipment"},
+        {"title": "信道及信道编译码设备", "en": "Channel and Channel Encoding and Decoding Equipment"},
+        {"title": "傅里叶级数与傅里叶变换", "en": "Fourier Series and Fourier Transform"},
+        {"title": "能量谱密度与功率谱密度", "en": "Energy Spectral Density and Power Spectral Density"}
+    ],
+    "relations": [
+        {"source": "通信系统", "target": "信源、信宿和信号", "type": "包含"},
+        {"source": "通信系统", "target": "信源编译码设备", "type": "包含"},
+        {"source": "通信系统", "target": "信道及信道编译码设备", "type": "包含"},
+        {"source": "信源、信宿和信号", "target": "信号", "type": "包含"},
+        {"source": "信源编译码设备", "target": "信号", "type": "包含"},
+        {"source": "信道及信道编译码设备", "target": "信道", "type": "包含"},
+        {"source": "傅里叶级数与傅里叶变换", "target": "信号", "type": "关联"},
+        {"source": "傅里叶级数与傅里叶变换", "target": "能量谱密度与功率谱密度", "type": "包含"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "自相关函数", "en": "Autocorrelation function"},
+    {"title": "互谱密度", "en": "Cross-spectral density"},
+    {"title": "单边谱", "en": "One-sided spectrum"},
+    {"title": "带宽", "en": "Bandwidth"},
+    {"title": "线性时不变系统", "en": "Linear time-invariant system"},
+    {"title": "带通信号", "en": "Bandpass signal"},
+    {"title": "无失真系统", "en": "Distortionless system"}
+  ],
+  "relations": [
+    {"source": "自相关函数", "target": "实信号", "type": "属于"},
+    {"source": "自相关函数", "target": "实偶函数", "type": "具有"},
+    {"source": "自相关函数", "target": "功率谱密度", "type": "傅氏变换"},
+    {"source": "互谱密度", "target": "能量信号", "type": "加和"},
+    {"source": "互谱密度", "target": "功率信号", "type": "加和"},
+    {"source": "单边谱", "target": "双边谱", "type": "合并"},
+    {"source": "带宽", "target": "信号频谱", "type": "宽度"},
+    {"source": "线性时不变系统", "target": "卷积关系", "type": "具有"},
+    {"source": "线性时不变系统", "target": "传递函数", "type": "定义"},
+    {"source": "带通信号", "target": "频谱集中", "type": "具有"},
+    {"source": "无失真系统", "target": "波形无失真", "type": "定义"},
+    {"source": "无失真系统", "target": "传递函数", "type": "具有"}
+  ]
+}{
+  "knowledge_points": [
+    {
+      "title": "随机过程",
+      "en": "Random Process"
+    },
+    {
+      "title": "随机变量",
+      "en": "Random Variable"
+    },
+    {
+      "title": "联合分布",
+      "en": "Joint Distribution"
+    },
+    {
+      "title": "均值",
+      "en": "Mean"
+    },
+    {
+      "title": "相关函数",
+      "en": "Correlation Function"
+    }
+  ],
+  "relations": [
+    {
+      "source": "随机过程",
+      "target": "随机变量",
+      "type": "包含"
+    },
+    {
+      "source": "随机过程",
+      "target": "联合分布",
+      "type": "包含"
+    },
+    {
+      "source": "随机过程",
+      "target": "均值",
+      "type": "拥有"
+    },
+    {
+      "source": "随机过程",
+      "target": "相关函数",
+      "type": "拥有"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "随机过程", "en": "Random Process"},
+        {"title": "自相关函数", "en": "Autocorrelation Function"},
+        {"title": "互相关函数", "en": "Cross-correlation Function"},
+        {"title": "功率谱密度", "en": "Power Spectral Density"},
+        {"title": "宽平稳随机过程", "en": "Wide-sense Stationary Random Process"},
+        {"title": "各态历经性", "en": "Ergodicity"},
+        {"title": "联合平稳", "en": "Jointly Stationary"},
+        {"title": "复平稳过程", "en": "Complex Stationary Process"},
+        {"title": "循环平稳过程", "en": "Cyclostationary Process"},
+        {"title": "高斯过程", "en": "Gaussian Process"},
+        {"title": "高斯白噪声", "en": "Gaussian White Noise"}
+    ],
+    "relations": [
+        {"source": "随机过程", "target": "自相关函数", "type": "包含"},
+        {"source": "随机过程", "target": "互相关函数", "type": "包含"},
+        {"source": "随机过程", "target": "功率谱密度", "type": "包含"},
+        {"source": "随机过程", "target": "宽平稳随机过程", "type": "属于"},
+        {"source": "宽平稳随机过程", "target": "各态历经性", "type": "包含"},
+        {"source": "随机过程", "target": "联合平稳", "type": "包含"},
+        {"source": "联合平稳", "target": "复平稳过程", "type": "包含"},
+        {"source": "复平稳过程", "target": "循环平稳过程", "type": "包含"},
+        {"source": "随机过程", "target": "高斯过程", "type": "属于"},
+        {"source": "高斯过程", "target": "高斯白噪声", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高斯白噪声与确定信号的内积", "en": "Gaussian white noise and inner product of deterministic signals"},
+        {"title": "高斯白噪声通过带通滤波器", "en": "Gaussian white noise through bandpass filter"},
+        {"title": "解析信号的特性", "en": "Characteristics of analytic signal"},
+        {"title": "同相分量与正交分量的特性", "en": "Characteristics of in-phase and quadrature components"},
+        {"title": "包络与相位的分布特性", "en": "Distribution characteristics of envelope and phase"},
+        {"title": "匹配滤波器", "en": "Matched filter"},
+        {"title": "幅度调制", "en": "Amplitude modulation"},
+        {"title": "双边带抑制载波调幅", "en": "Double-sideband suppressed-carrier amplitude modulation"},
+        {"title": "包络调制", "en": "Envelope modulation"}
+    ],
+    "relations": [
+        {"source": "高斯白噪声与确定信号的内积", "target": "高斯白噪声通过带通滤波器", "type": "前置"},
+        {"source": "高斯白噪声通过带通滤波器", "target": "解析信号的特性", "type": "前置"},
+        {"source": "解析信号的特性", "target": "同相分量与正交分量的特性", "type": "前置"},
+        {"source": "解析信号的特性", "target": "包络与相位的分布特性", "type": "前置"},
+        {"source": "同相分量与正交分量的特性", "target": "包络与相位的分布特性", "type": "前置"},
+        {"source": "高斯白噪声通过带通滤波器", "target": "匹配滤波器", "type": "前置"},
+        {"source": "幅度调制", "target": "双边带抑制载波调幅", "type": "前置"},
+        {"source": "幅度调制", "target": "包络调制", "type": "前置"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AM调制", "en": "AM Modulation"},
+        {"title": "单边带调制", "en": "Single Sideband Modulation"},
+        {"title": "角度调制", "en": "Angle Modulation"},
+        {"title": "抗噪声性能", "en": "Noise Performance"},
+        {"title": "频分复用", "en": "Frequency Division Multiplexing"},
+        {"title": "立体声调频广播", "en": "Stereo FM Broadcasting"},
+        {"title": "噪声系数与等效噪声温度", "en": "Noise Figure and Equivalent Noise Temperature"}
+    ],
+    "relations": [
+        {"source": "AM调制", "target": "单边带调制", "type": "前置知识"},
+        {"source": "AM调制", "target": "角度调制", "type": "前置知识"},
+        {"source": "单边带调制", "target": "相干解调", "type": "解决方法"},
+        {"source": "单边带调制", "target": "残留边带调制", "type": "变种"},
+        {"source": "角度调制", "target": "调频", "type": "一种方式"},
+        {"source": "角度调制", "target": "调相", "type": "一种方式"},
+        {"source": "抗噪声性能", "target": "系统模型", "type": "基础概念"},
+        {"source": "频分复用", "target": "时分复用", "type": "对比"},
+        {"source": "频分复用", "target": "立体声调频广播", "type": "应用实例"},
+        {"source": "噪声系数与等效噪声温度", "target": "热噪声的特性", "type": "基础概念"}
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "热噪声源",
+      "en": "Thermal noise source"
+    },
+    {
+      "title": "线性双端口网络的等效噪声带宽及噪声系数",
+      "en": "Equivalent noise bandwidth and noise figure of linear two-port network"
+    },
+    {
+      "title": "无源网络的噪声系数",
+      "en": "Noise figure of passive network"
+    },
+    {
+      "title": "数字基带信号及数字基带传输",
+      "en": "Digital baseband signal and transmission"
+    },
+    {
+      "title": "数字调制器",
+      "en": "Digital modulator"
+    }
+  ],
+  "relations": [
+    {
+      "source": "热噪声源",
+      "target": "线性双端口网络的等效噪声带宽及噪声系数",
+      "type": "前置"
+    },
+    {
+      "source": "线性双端口网络的等效噪声带宽及噪声系数",
+      "target": "无源网络的噪声系数",
+      "type": "前置"
+    },
+    {
+      "source": "数字基带信号及数字基带传输",
+      "target": "数字调制器",
+      "type": "前置"
+    }
+  ]
+}{
+  "knowledge_points": [
+    {"title": "数字基带信号波形", "en": "Digital baseband signal waveform"},
+    {"title": "功率谱密度计算", "en": "Power spectral density calculation"},
+    {"title": "加性白高斯噪声信道条件下的数字基带传输", "en": "Digital baseband transmission under additive white Gaussian noise channel conditions"},
+    {"title": "限带和加性白高斯噪声信道条件下的数字基带传输", "en": "Digital baseband transmission under band-limited and additive white Gaussian noise channel conditions"},
+    {"title": "均衡器、部分响应系统及符号同步的基本原理", "en": "Basic principles of equalizers, partial response systems, and symbol synchronization"},
+    {"title": "信息量单位、信息速率及码元速率、误比特率及误符率、频带利用率", "en": "Information unit, information rate and symbol rate, bit error rate and symbol error rate, bandwidth utilization"},
+    {"title": "数字脉冲调制", "en": "Digital pulse modulation"},
+    {"title": "数字PAM信号", "en": "Digital PAM signal"},
+    {"title": "数字PAM信号的功率谱密度计算", "en": "Power spectral density calculation of digital PAM signal"}
+  ],
+  "relations": [
+    {"source": "数字基带信号波形", "target": "功率谱密度计算", "type": "包含"},
+    {"source": "数字基带信号波形", "target": "数字脉冲调制", "type": "包含"},
+    {"source": "数字脉冲调制", "target": "数字PAM信号", "type": "包含"},
+    {"source": "数字PAM信号", "target": "数字基带传输", "type": "包含"},
+    {"source": "数字基带传输", "target": "加性白高斯噪声信道条件下的数字基带传输", "type": "包含"},
+    {"source": "数字基带传输", "target": "限带和加性白高斯噪声信道条件下的数字基带传输", "type": "包含"},
+    {"source": "加性白高斯噪声信道条件下的数字基带传输", "target": "均衡器、部分响应系统及符号同步的基本原理", "type": "包含"},
+    {"source": "限带和加性白高斯噪声信道条件下的数字基带传输", "target": "均衡器、部分响应系统及符号同步的基本原理", "type": "包含"},
+    {"source": "信息量单位、信息速率及码元速率、误比特率及误符率、频带利用率", "target": "数字基带传输", "type": "包含"},
+    {"source": "数字PAM信号的功率谱密度{
+  "knowledge_points": [
+    {
+      "title": "数字微波通信设备",
+      "en": "Digital Microwave Communication Equipment"
+    },
+    {
+      "title": "单极性不归零码",
+      "en": "Unipolar Non-Return-to-Zero Code"
+    },
+    {
+      "title": "同轴电缆",
+      "en": "Coaxial Cable"
+    },
+    {
+      "title": "HDB3码",
+      "en": "High Density Bipolar of Order 3 Code"
+    },
+    {
+      "title": "基带传输",
+      "en": "Baseband Transmission"
+    },
+    {
+      "title": "线路码型",
+      "en": "Line Coding"
+    },
+    {
+      "title": "AMI码",
+      "en": "Alternate Mark Inversion Code"
+    },
+    {
+      "title": "CMI码",
+      "en": "Coded Mark Inversion Code"
+    },
+    {
+      "title": "数字双相码",
+      "en": "Manchester Code"
+    },
+    {
+      "title": "加性白高斯噪声信道",
+      "en": "Additive White Gaussian Noise Channel"
+    },
+    {
+      "title": "匹配滤波器",
+      "en": "Matched Filter"
+    },
+    {
+      "title": "误比特率",
+      "en": "Bit Error Rate"
+    }
+  ],
+  "relations": [
+    {
+      "source": "数字微波通信设备",
+      "target": "单极性不归零码",
+      "type": "使用"
+    },
+    {
+      "source": "单极性不归零码",
+      "target": "同轴电缆",
+      "type": "传输"
+    },
+    {
+      "source": "单极性不归零码",
+      "target": "HDB3码",
+      "type": "变换"
+    },
+    {
+      "source": "HDB3码",
+      "target": "电缆",
+      "type": "传输"
+    },
+    {
+      "source": "HDB3码",
+      "target": "基带传输",
+      "type": "适用于"
+    },
+    {
+      "source": "线路码型",
+      "target": "基带传输",
+      "type": "适用于"
+    },
+    {
+      "source": "线路码型",
+      "target": "AMI码",
+      "type": "包括"
+    },
+    {
+      "source": "线路码型",
+      "target": "CMI码",
+      "type": "包括"
+    },
+    {
+      "source": "线路码型",
+      "target": "数字双相码",
+      "type": "包括"
+    },
+    {
+      "source": "加性白高斯噪声信道",
+      "target": "匹配滤波器",
+      "type": "最佳接收{
+  "knowledge_points": [
+    {
+      "title": "限带信道",
+      "en": "Limited Bandwidth Channel"
+    },
+    {
+      "title": "限带信号",
+      "en": "Limited Bandwidth Signal"
+    },
+    {
+      "title": "线性滤波器",
+      "en": "Linear Filter"
+    },
+    {
+      "title": "码间干扰",
+      "en": "Inter-Symbol Interference"
+    },
+    {
+      "title": "奈奎斯特准则",
+      "en": "Nyquist Criterion"
+    },
+    {
+      "title": "眼图",
+      "en": "Eye Diagram"
+    },
+    {
+      "title": "信道均衡",
+      "en": "Channel Equalization"
+    },
+    {
+      "title": "迫零算法",
+      "en": "Forced-Zero Algorithm"
+    },
+    {
+      "title": "均方误差算法",
+      "en": "Mean Square Error Algorithm"
+    }
+  ],
+  "relations": [
+    {
+      "source": "限带信道",
+      "target": "限带信号",
+      "type": "包含"
+    },
+    {
+      "source": "限带信号",
+      "target": "线性滤波器",
+      "type": "传输"
+    },
+    {
+      "source": "线性滤波器",
+      "target": "码间干扰",
+      "type": "引起"
+    },
+    {
+      "source": "限带信号",
+      "target": "奈奎斯特准则",
+      "type": "适用"
+    },
+    {
+      "source": "限带信号",
+      "target": "眼图",
+      "type": "评价"
+    },
+    {
+      "source": "限带信道",
+      "target": "{
+  "knowledge_points": [
+    {"title": "横向滤波器", "en": "Transversal filter"},
+    {"title": "均衡器", "en": "Equalizer"},
+    {"title": "迫零算法", "en": "Forced zero algorithm"},
+    {"title": "均方误差算法", "en": "Mean square error algorithm"},
+    {"title": "判决反馈均衡器", "en": "Decision feedback equalizer"},
+    {"title": "自适应均衡器", "en": "Adaptive equalizer"},
+    {"title": "部分响应系统", "en": "Partial response system"},
+    {"title": "符号同步", "en": "Symbol synchronization"}
+  ],
+  "relations": [
+    {"source": "横向滤波器", "target": "均衡器", "type": "包含"},
+    {"source": "均衡器", "target": "迫零算法", "type": "前置"},
+    {"source": "均衡器", "target": "均方误差算法", "type": "前置"},
+    {"source": "均衡器", "target": "判决反馈均衡器", "type": "前置"},
+    {"source": "均衡器", "target": "自适应均衡器", "type": "前置"},
+    {"source": "均衡器", "target": "部分响应系统", "type": "前置"},
+    {"source": "部分响应系统", "target": "符号同步", "type": "包含"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "二进制通断键控", "en": "Binary On-Off Keying"},
+        {"title": "数字调制", "en": "Digital Modulation"},
+        {"title": "振幅键控", "en": "Amplitude Shift Keying"},
+        {"title": "频率键控", "en": "Frequency Shift Keying"},
+        {"title": "相位键控", "en": "Phase Shift Keying"},
+        {"title": "正交幅度调制", "en": "Quadrature Amplitude Modulation"},
+        {"title": "二进制数字调制", "en": "Binary Digital Modulation"},
+        {"title": "M进制数字调制", "en": "M-ary Digital Modulation"},
+        {"title": "线性调制", "en": "Linear Modulation"},
+        {"title": "非线性调制", "en": "Nonlinear Modulation"},
+        {"title": "有记忆调制", "en": "Memory Modulation"},
+        {"title": "无记忆调制", "en": "Memoryless Modulation"},
+        {"title": "连续相位调制", "en": "Continuous Phase Modulation"},
+        {"title": "带通型数字调制", "en": "Bandpass Digital Modulation"},
+        {"title": "功率谱密度", "en": "Power Spectral Density"},
+        {"title": "相干解调", "en": "Coherent Demodulation"},
+        {"title": "非相干解调", "en": "Noncoherent Demodulation"},
+        {"title": "误比特率", "en": "Bit Error Rate"}
+    ],
+    "relations": [
+        {"source": "二进制数字调制", "target": "振幅键控", "type": "子类"},
+        {"source": "二进制数字调制", "target": "频率键控", "type": "子类"},
+        {"source": "二进制数字调制", "target": "相位键控", "type": "子类"},
+        {"source": "M进制数字调制", "target": "正交幅度调制", "type": "子类"},
+        {"source": "M进制数字调制", "target": "连续相位调制", "type": "子类"},
+        {"source": "数字调制", "target": "二进制数字调制", "type": "包含"},
+        {"source": "数字调制", "target": "M进制数字调制", "type": "包含"},
+        {"source": "数字调制", "target": "带通型数字调制", "type": "包含"},
+        {"source": "带通型数字调制", "target": "二进制通断键控", "type": "子类"},
+        {"source": "功率谱密度", "target": "二进制数字调制", "{
+  "knowledge_points": [
+    {"title": "包络检波器", "en": "Envelope detector"},
+    {"title": "二进制移频键控", "en": "Binary frequency shift keying (BFSK)"},
+    {"title": "相位不连续的2FSK信号", "en": "Non-coherent 2-frequency shift keying (2FSK) signal with discontinuous phase"},
+    {"title": "相位连续的2FSK信号", "en": "Non-coherent 2-frequency shift keying (2FSK) signal with continuous phase"},
+    {"title": "连续相位2FSK调制方式", "en": "Continuous phase 2-frequency shift keying (2FSK) modulation"},
+    {"title": "2FSK信号的功率谱密度及其信号带宽", "en": "Power spectral density and signal bandwidth of 2-frequency shift keying (2FSK) signal"},
+    {"title": "相干解调", "en": "Coherent demodulation"},
+    {"title": "非相干解调", "en": "Non-coherent demodulation"},
+    {"title": "二进制移相键控", "en": "Binary phase shift keying (BPSK)"},
+    {"title": "DPSK信号的产生", "en": "Differential phase shift keying (DPSK) signal generation"},
+    {"title": "DPSK信号的解调及其误比特率", "en": "Differential phase shift keying (DPSK) signal demodulation and its bit error rate"}
+  ],
+  "relations": [
+    {"source": "包络检波器", "target": "OOK的非相干解调", "type": "前置条件"},
+    {"source": "二进制移频键控", "target": "相位不连续的2FSK信号", "type": "包含关系"},
+    {"source": "二进制移频键控", "target": "相位连续的2FSK信号", "type": "包含关系"},
+    {"source": "相位不连续的2FSK信号", "target": "相位连续的2FSK信号", "type": "区别"},
+    {"source": "相位连续的2FSK信号", "target": "连续相位2FSK调制方式", "type": "前置条件"},
+    {"source": "连续相位2FSK调制方式", "target": "2FSK信号的功率谱密度及其信号带宽", "type": "包含关系"},
+    {"source": "相干解调", "target": "二进制移相键控", "type": "应用"},
+    {"source": "非相干解调", "target": "二进制移频键控", "type": "应用"},
+    {"source": "二进制移相键控", "target": "{
+  "knowledge_points": [
+    {"title": "相干解调", "en": "Coherent demodulation"},
+    {"title": "差分译码", "en": "Differential decoding"},
+    {"title": "平均误比特率", "en": "Average bit error rate"},
+    {"title": "四相移相键控", "en": "Quadrature phase shift keying (QPSK)"},
+    {"title": "格雷码", "en": "Gray code"},
+    {"title": "功率谱密度", "en": "Power spectral density"},
+    {"title": "匹配滤波器", "en": "Matched filter"},
+    {"title": "加性白高斯噪声信道", "en": "Additive white Gaussian noise (AWGN) channel"},
+    {"title": "差分四相移相键控", "en": "Differential quadrature phase shift keying (DQPSK)"},
+    {"title": "偏移四相移相键控", "en": "Offset quadrature phase shift keying (OQPSK)"}
+  ],
+  "relations": [
+    {"source": "相干解调", "target": "差分译码", "type": "前置条件"},
+    {"source": "相干解调", "target": "平均误比特率", "type": "影响因素"},
+    {"source": "四相移相键控", "target": "格雷码", "type": "逻辑关系"},
+    {"source": "四相移相键控", "target": "功率谱密度", "type": "特性"},
+    {"source": "四相移相键控", "target": "匹配滤波器", "type": "解调器"},
+    {"source": "四相移相键控", "target": "加性白高斯噪声信道", "type": "信道条件"},
+    {"source": "差分四相移相键控", "target": "格雷码", "type": "逻辑关系"},
+    {"source": "偏移四相移相键控", "target": "根号升余弦滚降频谱成形", "type": "调制方式"}
+  ]
+}{
+  "knowledge_points": [
+    {
+      "title": "OQPSK",
+      "en": "OQPSK"
+    },
+    {
+      "title": "M进制数字调制",
+      "en": "M-ary digital modulation"
+    },
+    {
+      "title": "MASK",
+      "en": "MASK"
+    },
+    {
+      "title": "MPSK",
+      "en": "MPSK"
+    },
+    {
+      "title": "MQAM",
+      "en": "MQAM"
+    },
+    {
+      "title": "MFSK",
+      "en": "MFSK"
+    },
+    {
+      "title": "信号波形的矢量表示",
+      "en": "Vector representation of signal waveform"
+    },
+    {
+      "title": "正交矢量空间",
+      "en": "Orthogonal vector space"
+    },
+    {
+      "title": "正交信号空间",
+      "en": "Orthogonal signal space"
+    },
+    {
+      "title": "统计判决理论",
+      "en": "Statistical decision theory"
+    }
+  ],
+  "relations": [
+    {
+      "source": "OQPSK",
+      "target": "QPSK",
+      "type": "is a variant of"
+    },
+    {
+      "source": "M进制数字调制",
+      "target": "MASK",
+      "type": "includes"
+    },
+    {
+      "source": "M进制数字调制",
+      "target": "MPSK",
+      "type": "includes"
+    },
+    {
+      "source": "M进制数字调制",
+      "target": "MQAM",
+      "type": "includes"
+    },
+    {
+      "source": "M进制数字调制",
+      "target": "MFSK",
+      "type": "includes"
+    },
+    {
+      "source": "信号波形的矢量表示",
+      "target": "正交矢量空间",
+      "type": "is related to"
+    },
+    {
+      "source": "信号波形的矢量表示",
+      "target": "正交信号空间",
+      "type": "is related to"
+    },
+    {
+      "source": "统计判决理论",
+      "target": "M进制数字调制",
+      "type": "is applied in"
+    }
+  ]
+}{
+  "knowledge_points": [
+    {"title": "MAP准则", "en": "MAP criterion"},
+    {"title": "判决域", "en": "Decision region"},
+    {"title": "条件概率密度函数", "en": "Conditional probability density function"},
+    {"title": "观察矢量", "en": "Observation vector"},
+    {"title": "最佳检测器", "en": "Optimal detector"},
+    {"title": "加性白高斯噪声干扰", "en": "Additive white Gaussian noise interference"},
+    {"title": "M进制数字调制系统", "en": "M-ary digital modulation system"},
+    {"title": "归一化正交函数集", "en": "Normalized orthogonal function set"},
+    {"title": "平均误符率", "en": "Average symbol error rate"},
+    {"title": "振幅键控调制", "en": "Amplitude shift keying (ASK)"},
+    {"title": "功率谱密度", "en": "Power spectral density"},
+    {"title": "正交展开", "en": "Orthogonal expansion"},
+    {"title": "最大似然准则", "en": "Maximum likelihood criterion"},
+    {"title": "移相键控调制", "en": "Phase shift keying (PSK)"},
+    {"title": "欧氏距离", "en": "Euclidean distance"},
+    {"title": "正交幅度调制", "en": "Quadrature amplitude modulation (QAM)"},
+    {"title": "星座图", "en": "Constellation diagram"}
+  ],
+  "relations": [
+    {"source": "MAP准则", "target": "判决域", "type": "包含"},
+    {"source": "MAP准则", "target": "条件概率密度函数", "type": "结合"},
+    {"source": "判决域", "target": "观察矢量", "type": "依赖"},
+    {"source": "观察矢量", "target": "最佳检测器", "type": "输入"},
+    {"source": "最佳检测器", "target": "加性白高斯噪声干扰", "type": "受制于"},
+    {"source": "M进制数字调制系统", "target": "归一化正交函数集", "type": "利用"},
+    {"source": "振幅键控调制", "target": "功率谱密度", "type": "相关"},
+    {"source": "M进制数字调制系统", "target": "正交展开", "type": "应用"},
+    {"source": "最大{
+  "knowledge_points": [
+    {"title": "矩形星座MQAM信号", "en": "Rectangular constellation MQAM signal"},
+    {"title": "同相及正交支路", "en": "In-phase and quadrature branches"},
+    {"title": "平均功率谱密度", "en": "Average power spectral density"},
+    {"title": "符号间隔", "en": "Symbol interval"},
+    {"title": "功率谱主瓣宽度", "en": "Main lobe width of power spectrum"},
+    {"title": "数字调制信号的频带利用率", "en": "Bandwidth utilization of digital modulation signal"},
+    {"title": "正交MFSK信号", "en": "Orthogonal MFSK signal"},
+    {"title": "矢量表示", "en": "Vector representation"},
+    {"title": "平均功率谱密度", "en": "Average power spectral density"},
+    {"title": "加性白高斯噪声信道", "en": "Additive white Gaussian noise channel"},
+    {"title": "最佳接收", "en": "Optimal reception"},
+    {"title": "误符率", "en": "Error rate"},
+    {"title": "恒包络连续相位调制", "en": "Constant envelope continuous phase modulation"},
+    {"title": "最小移频键控", "en": "Minimum shift keying"},
+    {"title": "调制指数", "en": "Modulation index"},
+    {"title": "加预编码的MSK调制", "en": "MSK modulation with pre-coding"},
+    {"title": "高斯最小移频键控", "en": "Gaussian minimum shift keying"},
+    {"title": "基带数字化实现", "en": "Baseband digital implementation"},
+    {"title": "解调", "en": "Demodulation"},
+    {"title": "预编码器", "en": "Pre-coder"}
+  ],
+  "relations": [
+    {"source": "矩形星座MQAM信号", "target": "同相及正交支路", "type": "包含"},
+    {"source": "同相及正交支路", "target": "平均功率谱密度", "type": "相关"},
+    {"source": "矩形星座MQAM信号", "target": "符号间隔", "type": "相关"},
+    {"source": "矩形星座MQAM信号", "target": "功率谱主瓣宽度", "type": "相关"},
+    {"source": "矩形星座MQAM信号", "target": "数字调制信号的频带利用率", "type": "相关"},
+    {"source": "正交MFSK信号", "target": "矢量表示", "type": "包含"},
+    {"source": "正交MFSK信号", "target": "平均功率谱密度", "type": "相关"},
+    {"source": "正交MFSK信号", "target": "加性白高斯噪声信道", "type": "相关"},
+    {"source": "正交MFSK信号", "target": "最佳接收", "type": "包含"},
+    {"source": "最佳接收", "target": "误符率", "type": "相关"},
+    {"source": "恒包络连{
+    "knowledge_points": [
+        {"title": "信源", "en": "Source of Information"},
+        {"title": "信道", "en": "Channel"},
+        {"title": "通信系统", "en": "Communication System"},
+        {"title": "有效性度量", "en": "Effectiveness Measurement"},
+        {"title": "可靠性度量", "en": "Reliability Measurement"},
+        {"title": "信源统计特性", "en": "Statistical Characteristics of Information Source"},
+        {"title": "信息熵", "en": "Information Entropy"},
+        {"title": "信源编码", "en": "Source Coding"},
+        {"title": "离散单消息信源", "en": "Discrete Single Message Source"},
+        {"title": "离散无记忆信源", "en": "Discrete Memoryless Source"},
+        {"title": "限失真编码", "en": "Lossy Compression Coding"},
+        {"title": "脉冲编码调制", "en": "Pulse Code Modulation"},
+        {"title": "有记忆信源", "en": "Memory Source"},
+        {"title": "信息率失真函数", "en": "Rate-Distortion Function"}
+    ],
+    "relations": [
+        {"source": "信源", "target": "通信系统", "type": "包含"},
+        {"source": "信道", "target": "通信系统", "type": "包含"},
+        {"source": "信源", "target": "信源统计特性", "type": "包含"},
+        {"source": "信源统计特性", "target": "信息熵", "type": "基础概念"},
+        {"source": "信源", "target": "信源编码", "type": "包含"},
+        {"source": "信源编码", "target": "离散单消息信源", "type": "基础概念"},
+        {"source": "信源编码", "target": "离散无记忆信源", "type": "基础概念"},
+        {"source": "信源编码", "target": "限失真编码", "type": "基础概念"},
+        {"source": "信源编码", "target": "脉冲编码调制", "type": "基础概念"},
+        {"source": "信源", "target": "有记忆信源", "type": "包含"},
+        {"source": "信息熵", "target": "信息率失真函数", "type": "基础概念"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "信息、信号、消息的关系", "en": "Relationship between information, signal and message"},
+        {"title": "信息的不确定性", "en": "Uncertainty of information"},
+        {"title": "信息的定量化", "en": "Quantification of information"},
+        {"title": "信息熵", "en": "Information entropy"},
+        {"title": "信息量与信息熵的关系", "en": "Relationship between information quantity and information entropy"},
+        {"title": "互信息", "en": "Mutual information"},
+        {"title": "无失真离散信源编码定理", "en": "No-distortion discrete source coding theorem"}
+    ],
+    "relations": [
+        {"source": "信息、信号、消息的关系", "target": "信息的定量化", "type": "包含"},
+        {"source": "信息、信号、消息的关系", "target": "信息的不确定性", "type": "包含"},
+        {"source": "信息的不确定性", "target": "信息的定量化", "type": "前置"},
+        {"source": "信息的定量化", "target": "信息熵", "type": "包含"},
+        {"source": "信息量与信息熵的关系", "target": "信息熵", "type": "包含"},
+        {"source": "信息量与信息熵的关系", "target": "互信息", "type": "包含"},
+        {"source": "互信息", "target": "信息熵", "type": "前置"},
+        {"source": "无失真离散信源编码定理", "target": "信息的定量化", "type": "前置"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "无失真编码定理", "en": "Lossless encoding theorem"},
+        {"title": "等长编码定理", "en": "Fixed-length encoding theorem"},
+        {"title": "变长编码定理", "en": "Variable-length encoding theorem"},
+        {"title": "哈夫曼编码", "en": "Huffman coding"},
+        {"title": "算术编码", "en": "Arithmetic coding"},
+        {"title": "信息率失真函数", "en": "Rate-distortion function"}
+    ],
+    "relations": [
+        {"source": "无失真编码定理", "target": "等长编码定理", "type": "前置"},
+        {"source": "无失真编码定理", "target": "变长编码定理", "type": "前置"},
+        {"source": "变长编码定理", "target": "哈夫曼编码", "type": "前置"},
+        {"source": "变长编码定理", "target": "算术编码", "type": "前置"},
+        {"source": "信息率失真函数", "target": "无失真编码定理", "type": "前置"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "活动电影的基本原理", "en": "Basic principle of motion pictures"},
+        {"title": "数字化语音传输中的信源编码", "en": "Source coding in digital voice transmission"},
+        {"title": "通信系统中的限失真信源编码", "en": "Limited distortion source coding in communication systems"},
+        {"title": "最小互信息与信息率失真函数", "en": "Minimum mutual information and rate-distortion function"},
+        {"title": "离散、无记忆、限失真信源编码定理", "en": "Discrete, memoryless, limited distortion source coding theorem"},
+        {"title": "连续信源的限失真编码", "en": "Limited distortion coding for continuous sources"}
+    ],
+    "relations": [
+        {"source": "活动电影的基本原理", "target": "通信中的图像传输", "type": "相关"},
+        {"source": "数字化语音传输中的信源编码", "target": "信源输出的部分信息即可传输", "type": "相关"},
+        {"source": "通信系统中的限失真信源编码", "target": "限失真信源编码能以小于信源熵的信息率进行编码", "type": "相关"},
+        {"source": "最小互信息与信息率失真函数", "target": "从信宿获得关于信源的最小信息量", "type": "相关"},
+        {"source": "离散、无记忆、限失真信源编码定理", "target": "存在一种编码方式使其译码以后的失真小于或等于0+e", "type": "相关"},
+        {"source": "连续信源的限失真编码", "target": "连续信源的数字化表示属于限失真编码范畴", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "模拟信号数字化过程", "en": "Analog signal digitization process"},
+        {"title": "采样定理", "en": "Sampling theorem"},
+        {"title": "标量量化", "en": "Scalar quantization"},
+        {"title": "均匀量化器", "en": "Uniform quantizer"},
+        {"title": "最佳量化器", "en": "Optimal quantizer"},
+        {"title": "动态范围", "en": "Dynamic range"},
+        {"title": "非均匀量化", "en": "Non-uniform quantization"},
+        {"title": "压扩", "en": "Companding"}
+    ],
+    "relations": [
+        {"source": "模拟信号数字化过程", "target": "采样定理", "type": "包含关系"},
+        {"source": "模拟信号数字化过程", "target": "标量量化", "type": "包含关系"},
+        {"source": "标量量化", "target": "均匀量化器", "type": "包含关系"},
+        {"source": "标量量化", "target": "最佳量化器", "type": "包含关系"},
+        {"source": "标量量化", "target": "动态范围", "type": "包含关系"},
+        {"source": "标量量化", "target": "非均匀量化", "type": "包含关系"},
+        {"source": "非均匀量化", "target": "压扩", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "脉冲编码调制", "en": "Pulse Code Modulation"},
+        {"title": "自然二进制码", "en": "Natural Binary Code"},
+        {"title": "折叠二进制码", "en": "Folded Binary Code"},
+        {"title": "格雷二进制码", "en": "Gray Binary Code"},
+        {"title": "CCITT G.711建议", "en": "CCITT G.711 Recommendation"},
+        {"title": "时分复用", "en": "Time Division Multiplexing"},
+        {"title": "数字复接", "en": "Digital Multiplexing"},
+        {"title": "矢量量化", "en": "Vector Quantization"}
+    ],
+    "relations": [
+        {"source": "脉冲编码调制", "target": "自然二进制码", "type": "包含"},
+        {"source": "脉冲编码调制", "target": "折叠二进制码", "type": "包含"},
+        {"source": "脉冲编码调制", "target": "格雷二进制码", "type": "包含"},
+        {"source": "CCITT G.711建议", "target": "脉冲编码调制", "type": "基于"},
+        {"source": "时分复用", "target": "数字复接", "type": "包含"},
+        {"source": "数字复接", "target": "时分复用", "type": "实现"},
+        {"source": "矢量量化", "target": "均方误差", "type": "使用"},
+        {"source": "矢量量化", "target": "群聚法", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "矢量量化编译码", "en": "Vector Quantization Coding"},
+        {"title": "搜索最近的码字", "en": "Search for the Nearest Codeword"},
+        {"title": "计算量", "en": "Computational Complexity"},
+        {"title": "信源相关性", "en": "Source Correlation"},
+        {"title": "预测编码", "en": "Predictive Coding"},
+        {"title": "最小均方误差准则", "en": "Minimum Mean Square Error Criterion"},
+        {"title": "预测函数", "en": "Prediction Function"},
+        {"title": "预测器输入数据", "en": "Predictor Input Data"},
+        {"title": "DPCM", "en": "Differential Pulse Code Modulation"},
+        {"title": "增量调制", "en": "Delta Modulation"},
+        {"title": "变换编码", "en": "Transform Coding"}
+    ],
+    "relations": [
+        {"source": "矢量量化编译码", "target": "搜索最近的码字", "type": "包含"},
+        {"source": "矢量量化编译码", "target": "计算量", "type": "包含"},
+        {"source": "矢量量化编译码", "target": "信源相关性", "type": "包含"},
+        {"source": "信源相关性", "target": "矢量量化编译码", "type": "相关性"},
+        {"source": "信源相关性", "target": "预测编码", "type": "应用"},
+        {"source": "预测编码", "target": "最小均方误差准则", "type": "包含"},
+        {"source": "预测编码", "target": "预测函数", "type": "包含"},
+        {"source": "预测编码", "target": "预测器输入数据", "type": "包含"},
+        {"source": "预测编码", "target": "DPCM", "type": "应用"},
+        {"source": "DPCM", "target": "增量调制", "type": "应用"},
+        {"source": "信源相关性", "target": "变换编码", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "静止图像信源压缩编码", "en": "Static Image Source Compression Encoding"},
+        {"title": "正交变换", "en": "Orthogonal Transformation"},
+        {"title": "最佳正交变换矩阵", "en": "Optimal Orthogonal Transformation Matrix"},
+        {"title": "准最佳正交变换", "en": "Quasi-Optimal Orthogonal Transformation"},
+        {"title": "离散余弦变换", "en": "Discrete Cosine Transform"},
+        {"title": "JPEG标准", "en": "JPEG Standard"},
+        {"title": "均匀量化", "en": "Uniform Quantization"},
+        {"title": "熵编码", "en": "Entropy Coding"},
+        {"title": "信道分类", "en": "Channel Classification"},
+        {"title": "信道模型", "en": "Channel Model"},
+        {"title": "信道容量", "en": "Channel Capacity"},
+        {"title": "信道编码定理", "en": "Channel Coding Theorem"}
+    ],
+    "relations": [
+        {"source": "静止图像信源压缩编码", "target": "正交变换", "type": "包含"},
+        {"source": "正交变换", "target": "最佳正交变换矩阵", "type": "前置"},
+        {"source": "最佳正交变换矩阵", "target": "准最佳正交变换", "type": "前置"},
+        {"source": "准最佳正交变换", "target": "离散余弦变换", "type": "包含"},
+        {"source": "离散余弦变换", "target": "JPEG标准", "type": "应用"},
+        {"source": "JPEG标准", "target": "均匀量化", "type": "应用"},
+        {"source": "均匀量化", "target": "熵编码", "type": "应用"},
+        {"source": "信道分类", "target": "信道模型", "type": "包含"},
+        {"source": "信道模型", "target": "信道容量", "type": "前置"},
+        {"source": "信道容量", "target": "信道编码定理", "type": "前置"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "连续信道", "en": "Continuous Channel"},
+        {"title": "离散信道", "en": "Discrete Channel"},
+        {"title": "模拟信号", "en": "Analog Signal"},
+        {"title": "数字信号", "en": "Digital Signal"},
+        {"title": "恒参信道", "en": "Time-Invariant Channel"},
+        {"title": "随参信道", "en": "Time-Varying Channel"},
+        {"title": "无线信道", "en": "Wireless Channel"},
+        {"title": "有线信道", "en": "Wired Channel"},
+        {"title": "光信道", "en": "Optical Channel"},
+        {"title": "加性干扰", "en": "Additive Interference"}
+    ],
+    "relations": [
+        {"source": "连续信道", "target": "模拟信号", "type": "属于"},
+        {"source": "离散信道", "target": "数字信号", "type": "属于"},
+        {"source": "调制信道", "target": "连续信道", "type": "属于"},
+        {"source": "编码信道", "target": "离散信道", "type": "属于"},
+        {"source": "恒参信道", "target": "时不变信道", "type": "同义词"},
+        {"source": "随参信道", "target": "时变信道", "type":{
+    "knowledge_points": [
+        {"title": "窄带干扰", "en": "Narrowband Interference"},
+        {"title": "脉冲干扰", "en": "Pulse Interference"},
+        {"title": "起伏噪声", "en": "Fluctuation Noise"},
+        {"title": "离散信道模型", "en": "Discrete Channel Model"},
+        {"title": "无失真信道", "en": "Distortionless Channel"},
+        {"title": "衰落信道", "en": "Fading Channel"},
+        {"title": "分集", "en": "Diversity"},
+        {"title": "信道容量", "en": "Channel Capacity"},
+        {"title": "信道编码", "en": "Channel Coding"}
+    ],
+    "relations": [
+        {"source": "窄带干扰", "target": "脉冲干扰", "type": "相关"},
+        {"source": "窄带干扰", "target": "起伏噪声", "type": "相关"},
+        {"source": "脉冲干扰", "target": "起伏噪声", "type": "相关"},
+        {"source": "离散信道模型", "target": "二进制离散信道模型", "type": "包含"},
+        {"source": "离散信道模型", "target": "四进制编码信道", "type": "包含"},
+        {"source": "离散信道模型", "target": "无记忆编码信道", "type": "包含"},
+        {"source": "离散信道模型", "target": "有记忆编码信道", "type": "包含"},
+        {"source": "无失真信道", "target": "波形无失真", "type": "包含"},
+        {"source": "无失真信道", "target": "复包络无失真", "type": "包含"},
+        {"source": "衰落信道", "target": "时变平衰落信道", "type": "包含"},
+        {"source": "衰落信道", "target": "时变频率选择性衰落信道", "type": "包含"},
+        {"source": "分集", "target": "空间分集", "type": "包含"},
+        {"source": "分集", "target": "频率分集", "type": "包含"},
+        {"source": "分集", "target": "角度分集", "type": "包含"},
+        {"source": "分集", "target": "极化分集", "type": "{
+    "knowledge_points": [
+        {"title": "信道传输引起的随机差错与突发差错", "en": "Random and Burst Errors Caused by Channel Transmission"},
+        {"title": "码的重复编码", "en": "Repetition Code"},
+        {"title": "线性分组码", "en": "Linear Block Code"},
+        {"title": "前向纠错、反馈重传与混合差错控制", "en": "Forward Error Correction, Feedback Retransmission, and Hybrid Error Control"},
+        {"title": "有限域的知识", "en": "Finite Field Knowledge"}
+    ],
+    "relations": [
+        {"source": "信道传输引起的随机差错与突发差错", "target": "前向纠错、反馈重传与混合差错控制", "type": "属于"},
+        {"source": "码的重复编码", "target": "前向纠错、反馈重传与混合差错控制", "type": "属于"},
+        {"source": "线性分组码", "target": "前向纠错、反馈重传与混合差错控制", "type": "属于"},
+        {"source": "有限域的知识", "target": "线性分组码", "type": "前置条件"},
+        {"source": "有限域的知识", "target": "前向纠错、反馈重传与混合差错控制", "type": "前置条件"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "线性分组码", "en": "Linear Block Codes"},
+        {"title": "线性分组码的基本概念", "en": "Basic Concepts of Linear Block Codes"},
+        {"title": "生成矩阵和监督矩阵", "en": "Generator Matrix and Parity Check Matrix"},
+        {"title": "对偶码", "en": "Dual Codes"},
+        {"title": "系统码的编码与译码", "en": "Encoding and Decoding of Systematic Codes"},
+        {"title": "汉明码", "en": "Hamming Codes"},
+        {"title": "循环码", "en": "Cyclic Codes"},
+        {"title": "码的多项式描述及其加法与乘法运算", "en": "Polynomial Description and Operations of Codes"}
+    ],
+    "relations": [
+        {"source": "线性分组码", "target": "线性分组码的基本概念", "type": "包含"},
+        {"source": "线性分组码的基本概念", "target": "生成矩阵和监督矩阵", "type": "关联"},
+        {"source": "线性分组码的基本概念", "target": "对偶码", "type": "关联"},
+        {"source": "线性分组码的基本概念", "target": "系统码的编码与译码", "type": "关联"},
+        {"source": "系统码的编码与译码", "target": "汉明码", "type": "包含"},
+        {"source": "线性分组码的基本概念", "target": "循环码", "type": "包含"},
+        {"source": "循环码", "target": "码的多项式描述及其加法与乘法运算", "type": "关联"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "循环码", "en": "Cyclic codes"},
+    {"title": "多项式模运算", "en": "Polynomial modulo operation"},
+    {"title": "循环码的生成多项式", "en": "Generator polynomial of cyclic codes"},
+    {"title": "循环码的生成矩阵", "en": "Generator matrix of cyclic codes"},
+    {"title": "循环冗余校验", "en": "Cyclic redundancy check (CRC)"},
+    {"title": "BCH码", "en": "Bose-Chaudhuri-Hocquenghem codes"},
+    {"title": "RS码", "en": "Reed-Solomon codes"},
+    {"title": "卷积码", "en": "Convolutional codes"}
+  ],
+  "relations": [
+    {"source": "循环码", "target": "多项式模运算", "type": "包含"},
+    {"source": "循环码", "target": "循环码的生成多项式", "type": "包含"},
+    {"source": "循环码", "target": "循环码的生成矩阵", "type": "包含"},
+    {"source": "循环码", "target": "循环冗余校验", "type": "包含"},
+    {"source": "BCH码", "target": "循环码", "type": "继承"},
+    {"source": "RS码", "target": "BCH码", "type": "继承"},
+    {"source": "卷积码", "target": "多项式模运算", "type": "包含"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "卷积码的编码器", "en": "Convolutional Encoder"},
+        {"title": "卷积码的解析表示法", "en": "Analytical Representation of Convolutional Codes"},
+        {"title": "卷积码的图形表示法", "en": "Graphical Representation of Convolutional Codes"},
+        {"title": "卷积码的译码", "en": "Convolutional Code Decoding"},
+        {"title": "最大似然译码", "en": "Maximum Likelihood Decoding"},
+        {"title": "维特比译码", "en": "Viterbi Decoding"}
+    ],
+    "relations": [
+        {"source": "卷积码的编码器", "target": "卷积码的解析表示法", "type": "包含"},
+        {"source": "卷积码的编码器", "target": "卷积码的图形表示法", "type": "包含"},
+        {"source": "卷积码的解析表示法", "target": "离散卷积法", "type": "包含"},
+        {"source": "卷积码的解析表示法", "target": "生成矩阵法", "type": "包含"},
+        {"source": "卷积码的解析表示法", "target": "码多项式法", "type": "包含"},
+        {"source": "卷积码的图形表示法", "target": "状态图法", "type": "包含"},
+        {"source": "卷积码的图形表示法", "target": "树图法", "type": "包含"},
+        {"source": "卷积码的图形表示法", "target": "网格图法", "type": "包含"},
+        {"source": "卷积码的译码", "target": "最大似然译码", "type": "包含"},
+        {"source": "卷积码的译码", "target": "维特比译码", "type": "包含"}
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "编码器状态",
+      "en": "Encoder State"
+    },
+    {
+      "title": "维特比算法",
+      "en": "Viterbi Algorithm"
+    },
+    {
+      "title": "软判决译码",
+      "en": "Soft Decision Decoding"
+    },
+    {
+      "title": "交织",
+      "en": "Interleaving"
+    },
+    {
+      "title": "级联码",
+      "en": "Concatenated Code"
+    },
+    {
+      "title": "Turbo码",
+      "en": "Turbo Code"
+    },
+    {
+      "title": "高效率信道编码TCM",
+      "en": "Trellis-Coded Modulation (TCM)"
+    },
+    {
+      "title": "信号矢量间的欧氏距离",
+      "en": "Euclidean Distance between Signal Vectors"
+    },
+    {
+      "title": "码组（字）间的汉明距离",
+      "en": "Hamming Distance between Code Words"
+    }
+  ],
+  "relations": [
+    {
+      "source": "编码器状态",
+      "target": "维特比算法",
+      "type": "前置条件"
+    },
+    {
+      "source": "维特比算法",
+      "target": "软判决译码",
+      "type": "前置条件"
+    },
+    {
+      "source": "交织",
+      "target": "软判决译码",
+      "type": "前置条件"
+    },
+    {
+      "source": "级联码",
+      "target": "Turbo码",
+      "type": "前置条件"
+    },
+    {
+      "source": "Turbo码",
+      "target": "高效率信道编码TCM",
+      "type": "前置条件"
+    },
+    {
+      "source": "信号矢量间的欧氏距离",
+      "target": "高效率信道编码TCM",
+      "type": "前置条件"
+    },
+    {
+      "source": "码组（字）间的汉明距离",
+      "target": "级联码",
+      "type": "前置条件"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "两类距离的等效性", "en": "Equivalence of two types of distances"},
+        {"title": "香农定理", "en": "Shannon's theorem"},
+        {"title": "Ungerboeck子集划分理论", "en": "Ungerboeck's subset partition theory"},
+        {"title": "TCM的实现", "en": "Implementation of TCM"},
+        {"title": "低密度校验码", "en": "Low-density parity-check code"},
+        {"title": "m序列的产生", "en": "Generation of m-sequences"}
+    ],
+    "relations": [
+        {"source": "两类距离的等效性", "target": "香农定理", "type": "concept_prerequisite"},
+        {"source": "香农定理", "target": "Ungerboeck子集划分理论", "type": "concept_prerequisite"},
+        {"source": "Ungerboeck子集划分理论", "target": "TCM的实现", "type": "concept_prerequisite"},
+        {"source": "TCM的实现", "target": "低密度校验码", "type": "concept_prerequisite"},
+        {"source": "低密度校验码", "target": "m序列的产生", "type": "concept_prerequisite"}
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "移位寄存器",
+      "en": "Shift Register"
+    },
+    {
+      "title": "线性反馈电路",
+      "en": "Linear Feedback Circuit"
+    },
+    {
+      "title": "m序列",
+      "en": "m-sequence"
+    },
+    {
+      "title": "Gold码",
+      "en": "Gold Code"
+    },
+    {
+      "title": "伪码同步",
+      "en": "Pseudo-code synchronization"
+    },
+    {
+      "title": "正交码",
+      "en": "Orthogonal Code"
+    },
+    {
+      "title": "沃尔什函数",
+      "en": "Walsh Function"
+    },
+    {
+      "title": "直接序列扩频",
+      "en": "Direct Sequence Spread Spectrum"
+    }
+  ],
+  "relations": [
+    {
+      "source": "移位寄存器",
+      "target": "线性反馈电路",
+      "type": "包含"
+    },
+    {
+      "source": "线性反馈电路",
+      "target": "m序列",
+      "type": "产生"
+    },
+    {
+      "source": "m序列",
+      "target": "Gold码",
+      "type": "派生"
+    },
+    {
+      "source": "m序列",
+      "target": "伪码同步",
+      "type": "应用"
+    },
+    {
+      "source": "正交码",
+      "target": "沃尔什函数",
+      "type": "包含"
+    },
+    {
+      "source": "沃尔什函数",
+      "target": "正交码",
+      "type": "派生"
+    },
+    {
+      "source": "直接序列扩频",
+      "target": "伪码同步",
+      "type": "应用"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "扩频系统", "en": "Spread Spectrum System"},
+        {"title": "矩形脉冲", "en": "Rectangular Pulse"},
+        {"title": "码片", "en": "Chip"},
+        {"title": "扩频系数", "en": "Spreading Factor"},
+        {"title": "功率谱密度", "en": "Power Spectral Density"},
+        {"title": "DS-BPSK", "en": "Direct-Sequence Binary Phase-Shift Keying"},
+        {"title": "抗干扰性能", "en": "Anti-Interference Performance"},
+        {"title": "多址干扰", "en": "Multiple Access Interference"},
+        {"title": "码分复用", "en": "Code Division Multiplexing"},
+        {"title": "沃尔什码", "en": "Walsh Code"},
+        {"title": "多径分集接收", "en": "Rake Receiver"},
+        {"title": "误码率", "en": "Bit Error Rate"},
+        {"title": "扰码与解扰", "en": "Scrambling and Descrambling"},
+        {"title": "噪声发生器", "en": "Noise Generator"}
+    ],
+    "relations": [
+        {"source": "扩频系统", "target": "矩形脉冲", "type": "包含"},
+        {"source": "扩频系统", "target": "码片", "type": "包含"},
+        {"source": "扩频系统", "target": "扩频系数", "type": "包含"},
+        {"source": "扩频系统", "target": "DS-BPSK", "type": "包含"},
+        {"source": "扩频系统", "target": "抗干扰性能", "type": "包含"},
+        {"source": "抗干扰性能", "target": "功率谱密度", "type": "关联"},
+        {"source": "抗干扰性能", "target": "多址干扰", "type": "关联"},
+        {"source": "抗干扰性能", "target": "多径干扰", "type": "关联"},
+        {"source": "码分复用", "target": "沃尔什码", "type": "包含"},
+        {"source": "码分复用", "target": "多址干扰", "type": "关联"},
+        {"source": "多径分集接收", "target": "扩频系统", "type": "包含"},
+        {"source": "误码率", "target": "扩频系统", "type": "包含"},
+        {"source": "扰码与解扰", "target": "{
+    "knowledge_points": [
+        {"title": "噪声发生器", "en": "Noise generator"},
+        {"title": "数字通信加密", "en": "Digital communication encryption"},
+        {"title": "伪随机序列", "en": "Pseudo-random sequence"},
+        {"title": "时延测量", "en": "Delay measurement"},
+        {"title": "m序列", "en": "m-sequence"},
+        {"title": "相关积累作用", "en": "Correlation accumulation effect"},
+        {"title": "信噪比", "en": "Signal-to-noise ratio"}
+    ],
+    "relations": [
+        {"source": "噪声发生器", "target": "数字通信加密", "type": "基础概念"},
+        {"source": "数字通信加密", "target": "伪随机序列", "type": "基础概念"},
+        {"source": "伪随机序列", "target": "数字通信加密", "type": "基础概念"},
+        {"source": "伪随机序列", "target": "时延测量", "type": "应用"},
+        {"source": "m序列", "target": "数字通信加密", "type": "基础概念"},
+        {"source": "m序列", "target": "时延测量", "type": "应用"},
+        {"source": "相关积累作用", "target": "时延测量", "type": "基础概念"},
+        {"source": "信噪比", "target": "时延测量", "type": "基础概念"}
+    ]
+}

@@ -1,0 +1,17 @@
+2.3.4AUSeen总线接口成员
+AllSeen是一个面向对象的服务框架，系统依靠各种类型的对象交互得以运行。 类似于其它面向对象的编程语言，AUSeen服务框架也通过总线接口定义相应的方法 和属性并以接口的方式向外暴露服务，AllSeen对象通过实现这些接口来获取相应的 方法和属性。在AUSeen系统中，接口规范按照D-Bus规范采用XML进行描述，在 此，给出AUSeen底层接口的例子，如下所示：
+<node name-7example,,>
+interface name=,,bupt.edu.cn.example,,> <!—接 口名称-->
+<method name=,,method,,><!—方法节点，定义方法名称-->
+<arg name="inStr" type="s" direction="in"><!一定义入参名称类型-->
+<arg name="outStr" type="s" direction="out"><!—出参名称及类型 </method>
+<signal name-,signal,,><!—信号节点,定义信号名称
+<arg name="content" type="s”><!一定义信号内容类型-->
+</signal>
+</interface>
+</node>
+在开发时，并不需要通过编写如此复杂的XML来定义接口，类似于Spring, AllSeen也采用注解的方式来定义某一类型的数据，利用@BusInterface来进行接口定 义即可将普通接口转换为AllSeen接口。AllSeen将AllSeen总线对象实现的接口方 法称为总线方法，总线方法可以当作服务被远端应用调用。在AllSeen开发中，以 @BusMethod来区分总线方法和普通方法。AllSeen服务框架通过信号来通知客户端 服务端对象的状态变化或是异步事件。AllSeen中总线信号的定义方式为@BusSignal。 AllSeen中信号主要分为单播信号和多播信号两类，其中单播信号是点对点的单向信 号，多播信号是一对多的信号。AUSeen服务框架除了可以定义总线方法，还可以通 过@BusProperty定义总线属性，以方便远端客户端程序来读取和修改服务端对象的 属性。
+在此需要特别强调的是，AllSeen服务框架的数据发生一般都发生在会话之中， 除了 AllSeen服务框架提供的特殊多播信号，不针对会话的信号，该信号独立于会话 而存在，只要应用订阅了不针对会话的信号，即使在服务端在发送信号时，客户端
+15
+和服务端之间尚未建立会话，客户端也能接收到服务端发送的信号。
+开发者既可以通过总线方法、信号和属性进行设备之间的联动控制，也可以利 用AllSeen服务框架的Event-Action机制进行联动。AllSeen服务框架的Event-事件 与Action-动作机制沿袭和拓展了 AllSeen的总线信号和方法网。具体来说，事件Event 是AllSeen中带有描述信息的信号，主要向用户描述该信号对应的某一现象或是结果。 动作Action是带有描述信息的方法，主要向用户描述该动作的对应的操作和行为。 在AllSeen服务框架中，Event与Action主要用来描述设备的联动，其中，事件被用 来作为动作的触发源，也就是说，当相应的事件发生后，与之相对应的一个或多个 动作便会被触发以响应相应的信号。事件和动作的描述信息，分别构成了 AllSeen联 动操作的前半句和后半句。

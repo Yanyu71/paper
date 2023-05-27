@@ -1,0 +1,200 @@
+1.4论文组织结构
+本章后续有五个章节，安排如下：
+第二章针对创新点1、2、3,研究认知信息的表征、度量和传递。在理论层 面，本文得到了地理炳、时间炳、无线电参数误差等指标与系统参数、栅格操作 等的联系，为认知信息获取和传递奠定了理论基础，呈现了空时维度认知信息表 征的对偶性。在方法层面，本文设计了栅格融合算法以应用于认知信息传递，可 以显著降低认知信息的空间冗余度，提升认知信息传递的效率。此外，本文利用 信息论方法构建了认知信息度量方法，提出认知信息量的概念，将认知的过程描 述成认知用户消除主用户状态不确定性的过程，从而建立了认知信息度量的理论 体系，分析了认知信息量与系统参量的关系，并且将认知信息度量理论应用于认 知信息获取的参数优化中。最后提供数值结果来验证本文的理论和方法的有效性。
+本文在第二章研究了认知无线网络中以空间维度和时间维度为代表的多维 认知信息表征、度量和传递。但是第二章忽略了一个细节，即空间维度频谱空洞 和时间维度频谱空洞的位置。第二章的研究假设空时频谱空洞的位置是已知的， 在此基础上研究认知信息的表征、度量和传递。第三章重点研究第二章忽略的问 题，即空时频谱空洞的位置，针对创新点4,提出了基于“黑白灰”三区划分的 空时频谱检测与接入架构。详细分析了三区的边界，并且分析了系统参数对三区
+20 边界的影响。得到了灰区和白区之间的过渡区存在的条件，并且基于动态频谱租 赁的观点得到了最优的黑区半径，分析了系统参数对最优黑区半径的影响。三区 划分实际上是一个数据库和频谱检测相结合的架构，其中数据库存储三区的边界 信息，当认知用户发现自己落入白区的时候，可以直接利用空间维度频谱机会; 当认知用户发现自己落入灰区的时候，可以开始频谱检测。所以第三章和第二章 的内容都与认知数据库有着密切的联系。在第三章的最后，本文提供了数值仿真 结果，以展示三区划分方案对容量的提升，以及三区半径与系统参数的关系。
+第三章研究了认知无线网络的空时频谱机会，并且提出三区划分的概念，以 实现认知无线网络空时频谱检测和接入o仿真证明了空时频谱接入可以提升认知 无线网络的容量。在第四章，为了进一步提高认知无线网络的频谱利用效率，本 文探索认知无线网络利用角度维频谱机会的情形。第四章针对创新点5,首先分 析了角度维度频谱空洞的统计特征，基于此设计了主次网络的工作协议，保证次 网络不干扰主网络的正常工作，并且同时维持次网络的连通性。在此基础上分析 了认知无线网络在方向性传输的情况下的容量尺度律，并且分析了认知网络不允 许等待的情况下（即传统意义上）的连通性。
+第二章从一个宏观的视角研究了多维认知信息表征、度量和传递理论。第三 章重点研究了空时频谱空洞的位置。第四章研究了角度维频谱机会的利用，证明 了利用方向性传输可以提升认知无线网络的容量。而第五章针对创新点6,探索 认知无线网络利用高度维频谱机会的情形，即构建3D认知无线网络。可以证明 认知无线网络利用高度维频谱机会可以进一步提升网络容量。本文首先设计了主 次网络的网络协议，以保证次网络不影响主网络的正常工作，同时保证次网络的 连通性。在此基础上，本文进一步分析了 3D认知无线网络的容量尺度律，证明 了 3D认知无线网络可以提升网络的容量。
+参考文献
+[1-1].移动政务实验室，创新2.0研究，“互联网+”引领创新2.0时代创新驱动发 展"新常态"，http://www.mgov.cn/complexity/infdl50306.htm
+[1-2].新浪专栏.创事记，“微信、whatsapp与LINE到底有啥区别？ ”，2015年01 月 29 日，http://tech.sina.com.en/zl/post/detail/i/2015-01 -29/pid_8470628.htm
+[1-3],腾讯财经，“百度2014年第三季度财报简析，”，2014年10月30日， http://www.googuu.net/pages/content/view/3570.htm
+21
+[1-4].钛媒体，“年度总结：移动端流量超越临界点，迎接移动互联网商业化元 年，”，2012年 12月 28 日，http://www.tmtpost.com/8472.html
+[1-5]. Qualcomm, "The lOOOx data challenge," 2013. [Online Released]. Available at Web Site: https://www.qualcomm.com/invention/technologies/1000x.
+[1-6], IMT-2020(5G), White Paper on 5G Vision and Requirements.
+[1-7]. J. G. Andrews, S. Buzzi, W. Choi, S. V. Hanly, A. Lozano, A. C. K. Soong and J. C. Zhang, "What Will 5G Be?'TEEE Journal on Selected Areas in Communications, voL 32, no. 6, pp. 1065-1082, June 2014.
+[1-8], F. Boccardi, R. Heath, A. Lozano, T. Marzetta and P. Popovski, "Five disruptive technology directions for 5G,” IEEE Communications Magazine, vol. 52, no. 2, pp. 74-80, Feb. 2014.
+[1-9]. C.-L. I, C. Rowell, S. Han, Z・ Xu, G. Li and Z. Pan, "Toward green and soft: a 5G perspective,IEEE Communications Magazine, vol. 52, no. 2, pp. 66-73, Feb. 2014.
+[1-10]. P. Demestichas, A. Georgakopoulos, D. Karvounas, K. Tsagkaris, V. Stavroulaki, J. Lu, C. Xiong and J. Yao, “5G on the horizon: Key challenges for the radio-access network,IEEE Vehicular Technology Magazine, vol. 8, no. 3, pp. 47-53, Sept. 2013,
+[1-11]. I. Hwang, B. Song and S. S. Soliman, “A Holistic View on Hyper-Dense Heterogeneous and Small Cell Networks/9 IEEE Communications Magazine, vol. 51, no. 6, pp. 20 - 27, June 2013.
+[1-12]. ITU-R M.2079, "Technical and operational information for identifying Spectrum for the terrestrial component of future development of IMT-2000 and IMT・Advanced"
+[1-13].张平，冯志勇，“认知无线网络”，科学出版社,2010年4月1日。
+[1-14]. M. A. McHenry and K. Steadman, uSpectrum Occupancy Measurements: Location 1 of 6: Riverbend Park, Great Falls, Virginia,55 Shared Spectrum Company Report, Aug. 2005.
+[1-15]. M. A. McHenry and K. Steadman, “Spectrum Occupancy Measurements: Location 2 of 6: Tyson's Square Center, Vienna, Virginia, April 9 2004," Shared Spectrum Company Report, Aug. 2005.
+[1-16]. M. A. McHenry and S. Chunduri, "Spectrum Occupancy Measurements:
+22
+Location 3 of 6: National Science Foundation Building Roof April 16 2004, Revision 2,” Shared Spectrum Company Report, Aug. 2005.
+[1-17]. M. A. McHenry and D. McCloskey, G. Lane-Roberts, "Spectrum Occupancy Measurements: Location 4 of 6: Republican National Convention, New York City, August 30 2004 - September 3, 2004, Revision 2,” Shared Spectrum Company Report, Aug. 2005.
+[1-18]. M. A. McHenry and K・ Steadman, “Spectrum Occupancy Measurements: Location 5 of 6: National Radio Astronomy Observatory (NRAO), Green Bank, West Virginia, October 10 - 11 2004, Revision 3," Shared Spectrum Company Report, Aug. 2005.
+[1-19]. M. A. McHenry, D. McCloskey and J. Bates, "Spectrum Occupancy Measurements: Location 6 of 6: Shared Spectrum Building Roo£ Vienna, Virginia, December 15 - 16 2004. Shared,Shared Spectrum Company Report, Aug. 2005.
+[1-20]. Kolodzy P and Avoidance I.} "Spectrum policy task force/5 Federal Commun. Comm., Washington, DC, Rep. ET Docket, 2002 (02-135).
+[1-21]. M. H. Islam, C. L. Koh and S. W. Oh, et al., "Spectrum Survey in Singapore: Occupancy Measurements and Analyses/9 International Conference on Cognitive Radio Oriented Wireless Networks and Communications (CrownCom), pp. 1-7, May 2008.
+[1-22]. J. Xue, Z. Feng and K. Chen, “Beijing Spectrum Survey for Cognitive Radio Applications/5 IEEE 78th Vehicular Technology Conference (VTC Fall), pp. 1-5, Sept. 2013.
+[1-23]. C. Liang and F. Yu, wWireless network virtualization: A survey, some research issues and challenges/5 IEEE Communications Surveys & Tutorials, vol. 17, no. 1, pp. 358-380, 2015.
+[1-24]・X. Costa-Perez, J. Swetina, T. Guo, R. Mahindra and S. Rangarajan, "Radio access network virtualization for future mobile carrier networks," IEEE Communications Magazine, vol. 51, no. 7, pp. 27-35, July 2013.
+[1-25], S. Sezer, S. Scott-Hayward, P. Chouhan, B. Fraser, D. Lake, J. Finnegan, N. Viljoen, M. Miller and N. Rao, “Are we ready for SDN? Implementation challenges for software-defined networks/5 IEEE Communications Magazine, vol. 51, no. 7, pp. 36-43, July 2013.
+23
+[1-26], 3GPP, “Technical specification group services and system aspects; network sharing; architecture and functional description/5 3GPR TS 23.251, Mar. 2015.
+[1-27]. 3GPP, "Technical specification group services and system aspects; service aspects and requirements for network sharing,” 3GPP, TR 22.951, Oct. 2014.
+[1-28]. J. Mitola, "'Cognitive radio: An integrated agent architecture for software defined radio/5 Ph.D. dissertation, KTH Royal Inst, of TechnoL, Stockholm, Sweden, 2000.
+[1-29]. S. Haykin, ''Cognitive Radio: Brain-Empowered Wireless Communications/5 IEEE Journal on Selected Areas in Communications, vol. 23, no. 2, pp. 201-220, Feb. 2005,
+[1-30]. ITU-R M.2225, ''Introduction to cognitive radio systems in the land mobile service,” 2011.
+[1-31].杨淼，方正，李明明，“美国频谱高速公路计划浅析一一转变频谱结构， 加强频谱管理，实现频谱共享”，国家无线电监测中心，2013年02月27日， http://www.srrc.org.cn/NewsShow6911 .aspx
+[1-32]. B. Wang and K. J. R. Liu, “Advances in Cognitive Radio Networks: A Survey/5 IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1, pp. 5-23, Feb. 2011.
+[1-33]. W. Xu, J. Lin, Z. Feng, W. Xu and P. Zhang, “Cognition flow in cognitive radio networks/9 China Communications, vol. 10, no. 10, pp, 74-90, 2013.
+[1-34]. Z. Feng, Z・ Wei, Q・ Zhang and P. Zhang, "Cognitive information metrics for cognitive wireless networks/5 Chinese Science Bulletin, vol. 59, no. 17, pp. 2057-2064, June 2014.
+[1-35]. Q. Zhang, Z. Wei, Z. Feng and I. Ahmad, "Temporal Entropy and Cognitive Information Based Efficient Environment Awareness Techniques in Cognitive Radio Networks； IEEE Vehicular Technology Conference (VTC Fall), pp. 1-5, Sept, 2013.
+[1-36]. T. Yucek and H. Arslan, “A Survey of Spectrum Sensing Algorithms for Cognitive Radio Applications,IEEE Communications Surveys & Tutorials, vo. 11, no. 1, pp. 116-130, Mar. 2009.
+[1-37]. F. F. Digham, M. S・ Alouini and M. K. Simon, “On the Energy Detection of Unknown Signals Over Fading Channels,5- IEEE Transactions on
+24
+Communications, voL55, no. 1, pp. 21-24, Jan. 2007.
+[1-38]. S. Shankar, C. Cordeiro and K. Ch allapali, “Spectrum agile radios: utilization and sensing architectures/5 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 160-169, Nov. 2005.
+[1-39]. H. Urkowitz, "Energy detection of unknown deterministic signals,” Proceedings of the IEEE, vol. 55, no. 4, pp. 523-531, Apr. 1967.
+[1-40]. H. Tang, “Some physical layer issues of wide-band cognitive radio systems/9 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 151-159, Nov. 2005.
+[1-41]. D. Cabric, S. Mishra and R. Brodersen. ^Implementation issues in spectrum sensing for cognitive radios,” Conference Record of the Thirty-Eighth Asilomar Conference on Signals, Systems and Computers, vol. 1, pp. 772-776, Nov. 2004.
+[1-42]. J. G. Proakis, “Digital Communications”, 4th ed. McGraw-Hill, 2001.
+[1-43]. K. Kim, I. A. Akbar, K. K. Bae, J.-S. Um, C. M. Spooner and J. H. Reed, “Cyclostationary approaches to signal detection and classification in cognitive radio,” IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 212-215, Apr. 2007.
+[1-44]. U・ Gardner, WA, ''Exploitation of spectral redundancy in cyclostationary signals/5 IEEE Signal Processing Magazine, vol. 8, no. 2, pp. 14-36, Apr. 1991.
+[1-45], P. D. Sutton, J. Lotze, K. E. Nolan and L. E. Doyle, “Cyclostationary signature detection in multipath rayleigh fading environments,59 International Conference on Cognitive Radio Oriented Wireless Networks and Communications (CrownCom), pp. 408-413, Aug. 2007.
+[1-46]. K・ B. Letaief and W. Zhang, “Cooperative Communications for Cognitive Radio Networks,5, Proceedings of the IEEE, vol. 97, no. 5, pp. 878-893, Apr. 2009.
+[1-47]. J. Shen, S. Liu, L. Zeng, G. Xie, J・ Gao and Y. Liu, "Optimisation of cooperative spectrum sensing in cognitive radio network," IET Communications, vol.3, pp. 1170-1178, 2009.
+[1-48]. J. Ma, G. Zhao and Y. (Geoffrey) Li, “Soft Combination and Detection for
+25
+Cooperative Spectrum Sensing in Cognitive Radio Networks/9 IEEE Transactions on Wireless Communications, vol. 7, no. 11, pp. 4502-4507, Nov. 2008.
+[1-49]. Z. Li, F. R. Yu and M. Huang, “A Distributed Consensus-Based Cooperative Spectrum-Sensing Scheme in Cognitive Radios,” IEEE Transactions on Vehicular Technology, vol. 59, no. 1, pp. 383-393, Sept. 2009.
+[1-50]. R. Tandra, S. M. Mishra and A. Sahai, "What is a spectrum hole and what does it take to recognize one?" Proceedings of the IEEE, vol 97, no.5, pp. 824-848, May 2009.
+[1-51]. R. Tandra, A. Sahai and V. Veeravalli, “Unified Space-Time Metrics to Evaluate Spectrum Sensing,59 IEEE Communications Magazine, vol. 49, no. 3, pp. 54 - 61, Mar, 2011.
+[1-52]. M. Vu, N・ Devroye and V. Tarokh, "On the Primary Exclusive Region of Cognitive Networks,” IEEE Transactions on Wireless Communications, vol. 8, no. 7, pp. 3380-3385, July 2009.
+[1-53], A. Bagayoko, P. Tortelier and I. Fijalkow, "Impact of shadowing on the primary exclusive region in cognitive networks,European Wireless Conference, pp. 105-110, Apr. 2010.
+[1-54]. J. Dricot, G. Ferrari and F. Horlin, et al., “Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks,55 IEEE International Conference on Communications (ICC) Workshops, pp. 1-5, May 2010.
+[1-55]. Z・ Wei, Z. Feng, Q. Zhang and W. Li, “ Three regions for spacetime spectrum sensing and access in cognitive radio networks," IEEE Global Communications Conference (GLOBECOM), pp. 1283-1288, Dec. 2012
+[1-56]. T. Do and B. L. Mark, "Joint Spatial-Temporal Spectrum Sensing for Cognitive Radio Networks,” IEEE Transactions on Vehicular Technology, vol. 59, no. 7, pp. 3480-3490, Sept. 2010.
+[1-57]. Q. Wu, G. Ding and J. Wang, et al., "Spatial-Temporal Opportunity Detection for Spectrum-Heterogeneous Cognitive Radio Networks: Two-Dimensional Sensing,IEEE Transactions on Wireless Communications, vol. 12, no. 2, pp. 516-526, Feb. 2013.
+[1-58]. P. P. Chen and Q. Y. Zhang, "Joint Temporal and Spatial Sensing Based
+26
+Cooperative Cognitive Networks/5 IEEE Communications Letters, vol. 15, no. 5, pp. 530-532, May 2011.
+[1-59]. FCC, “Second Report and Order and Memorandum Opinion and Order: In the Matter of Unlicensed Operation in the TV Broadcast Bands,” Doc, 08-260, Nov. 2008.
+[1-60]. FCC, "Second Memorandum Opinion and Order,” Doc. 10-174, Sept. 2010.
+[1-61], ECC, "Technical and operational requirements for the operation of white space devices under geo-location approach/ ECC report 186, Jan, 2013.
+[1-62]. C. Stevenson, G. Chouinard, Z・ Lei, W. Hu, S・ J・ Shellhammer and W. Caldwell, "IEEE 802.22: The first cognitive radio wireless regional area network standard/5 IEEE Communications Magazine, vol. 47, no. 1, pp. 130-138, Jan. 2009.
+[1-63], M. Barrie, S. Delaere, P・ Anker and P. Ballon, “Aligning technology, business and regulatory scenarios for cognitive radio,” Telecommunications Policy, vol. 36, no. 7, pp. 546-559, Apr. 2012.
+[1-64]. M. Barrie, S. Delaere, G. Sukareviciene, J. Gesquiere and I. Moerman, 6CGeolocation Database beyond TV White Space? Matching Applications with Database Requirements,IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 467-478, Oct. 2012.
+[1-65]. K. Harrison and A. Sahai? ''Potential collapse of whitespaces and the prospect for a universal power rule,” IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 316-327, May 2011.
+[1-66]. C-S. Sum, H. Harada, F. Kojima, Z. Lan and R. Funada, "Smart Utility Networks in TV White Space,” IEEE Communications Magazine, vol. 49, no. 7, pp. 132-139, Jul. 2011.
+[1-67]. C. Yang, J. Li, M. Sheng, Q. Liu, R. Hou and H. Li, "Resource flow: Autonomous cognitive resource management framework for ftiture networks,” Chinese Science Bulletin, vol. 57, no. 28-29, pp 3691-3697, Oct. 2012
+[1-68].刘勤，李建东,李钊等，“基于数学空间的认知无线电频谱资源表征方法,” ZL201010204176.0o
+[1-69],刘勤，李建东，黄鹏宇等，“认知网络资源的矢量空间模型构建方法，”
+ZL201010298831.3 o
+27
+[1-70].刘勤，李钊，孟祥燕等，“一种认知网络资源的解析方法，” ZL2013100003810.8o
+[1-71]. Z. Wei, Q. Zhang, Z. Feng, W. Li and T. A. Gulliver, "On the construction of Radio Environment Maps for Cognitive Radio Networks/5 IEEE Wireless Communications and Networking Conference (WCNC), pp. 4504-4509, Apr. 2013.
+[1-72]. Z. Feng, Z. Wei, Q. Zhang and P. Zhang, ''Fractal theory based dynamic mesh grouping scheme fbr efficient cognitive pilot channel design,55 Chinese Science Bulletin, vol. 57, no. 28-29, pp. 3684-3690, Sept. 2012.
+[1-73]. J. Perez-Romero, O. Salient, R. Agusti and L. Giupponi, "A novel on demand cognitive pilot channel enabling dynamic spectrum allocation,IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 46-54, Apr. 2007.
+[1-74]. Q. Zhang, Z. Feng, G. Zhang, Q. Li and P. Zhang, “ Efficient Mesh Division and Differential Information Coding Schemes in Broadcast Cognitive Pilot Channel," Wireless Personal Communications, vol. 63, no. 2, pp. 363-392, Mar. 2012.
+[1-75]. Z. Wei and Z. Feng, “A Geographically Homogeneous Mesh Grouping Scheme fbr Broadcast Cognitive Pilot Channel in Heterogeneous Wireless Networks,5, IEEE Global Communications Conference (GLOBECOM) Workshops, pp. 1008-1012, Dec. 2011.
+[1-76]. L. Ma, X. Han and C,・C. Shen, “Dynamic open spectrum sharing for wireless ad hoc networks/5 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 203-213, Nov. 2005.
+[1-77]. C. Cormio and K・ R. Chowdhury, “Common control channel design fbr cognitive radio wireless ad hoc networks using adaptive frequency hopping,95 Ad Hoc Networks, vol. 8, pp. 430-438,2010.
+[1-78]. B. F. Lo, “A survey of common control channel design in cognitive radio networks/5 Physical Communication, vol. 4, pp. 26-39, 2011.
+[1-79]. LF. Akyildiz, W.-Y. Lee, M.C. Vuran and S. Mohanty, "Next generation dynamic spectrum access/cognitive radio wireless networks: a survey/5 Computer Networks, vol 50, no. 13, pp. 2127-2159, 2006.
+28
+[1-80]. I.F. Akyildiz, W.・Y Lee and K.R. Chowdhury, "CRAHNs: cognitive radio ad hoc networks,55 Ad Hoc Networks, vol. 7, no. 5, pp. 810-836, 2009.
+[1-81], I.F. Akyildiz, B.F. Lo and R. Balakrishnan, “Cooperative spectrum sensing in cognitive radio networks: a survey/5 Physical Communication, vol. 4, no. 1, pp. 40-62,2011.
+[1-82], C. Cordeiro, K. Challapali, P. America and B. Manor, "C-MAC: A cognitive MAC protocol for multi-channel wireless networks,55 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 147-157, Apr. 2007.
+[1-83]. S. Geirhofer, L, Tong and B. Sadler, ''Cognitive medium access: Constraining interference based on experimental models,” IEEE Journal on Selected Areas in Communications, vol. 26, no. 1, pp. 95-105, Jan. 2008.
+[1-84]. B. Wang, Z. Ji, K. J. R. Liu and T. C. Clancy, ^Primary-prioritized Markov approach fbr dynamic spectrum allocation/5 IEEE Transactions on Wireless Communications, vol. 8, no. 4, pp. 1854-1865, Apr. 2009.
+[1-85]. Y Song, Y. Fang and Y. Zhang, “Stochastic channel selection in cognitive radio networks,” IEEE Global Communications Conference (GLOBECOM), pp, 4878-4882, Nov. 2007,
+[1-86]. K. Arshad, R. Mackenzie, U. Celentano, A. Drozdy and S. Leveil, et al” "Resource management for QoS support in cognitive radio networks/5 IEEE Communications Magazine, vol. 52, no. 3, pp. 114-120, Mar. 2014.
+[1-87]. S. -Y. Lien, K. -C. Chen, Y. -C・ Liang and Y. Lin, "'Cognitive radio resource management for future cellular networks,55 vol. 21, no. 1, pp. 70-79, Feb. 2014.
+[1-88]. I. F. Akyildiz, W.-Y. Lee, M. C. Vuran and S. Mohanty, “Next generation dynamic spectrum access cognitive radio wireless networks: A survey； Computer Networks, vol. 50, pp. 2127-2159, May 2006.
+[1-89]. Q. Wang and H. Zheng, "Route and spectrum selection in dynamic spectrum networks,55 IEEE Consumer Communications Networking Conference (CCNC), vol. 1, pp. 625-629, Jan. 2006.
+[1-90]. C. Xin, B. Xie and C. Shen, “A novel layered graph model for topology formation and routing in dynamic spectrum access networks/5 IEEE
+29
+International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 308-317, Nov. 2005.
+[1-91]. S. Krishnamurthy, M. Thoppian, S. Venkatesan and R. Prakash, “Control channel based MAC-layer configuration, routing and situation awareness for cognitive radio networks/7 IEEE Military Communications Conference (MILCOM), pp. 455-460, Oct. 2005.
+[1-92]. Y. Liu, D. Xu, Z. Feng and P. Zhang, “Outage Capacity of Cognitive Radio in Rayleigh Fading Environments with Imperfect Channel Information/5 Journal of Information and Computational Science, vol. 9, pp. 955-968,2012.
+[1-93]. Y. Liu, D. Xu, Z. Feng, Q. Li and P. Zhang, "Capacity of Cognitive Radio under Outage Constraint with Partial Channel Knowledge," International Conference on Wireless Communications and Signal Processing (WCSP), pp. 1-5, Nov. 2011.
+[1-94]. D. Xu, Z. Feng and P. Zhang, "Outage Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity and Outdated CSI under Asymmetric Fading； IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, vol. 96, pp. 732-736, 2013.
+[1-95]. C. Yin, C. Chen, T. Liu, S. Cui, '"Generalized results of transmission capacities for overlaid wireless networks," IEEE International Symposium on Information Theory (ISIT), pp. 1774-1778, June 2009.
+[1-96]. J. Lee, J. G. Andrews, D. Hong, ^Spectrum-Sharing Transmission Capacity with Interference Cancellation," IEEE Transactions on Communications, vol. 61, no. 15 pp. 76-86, Feb. 2013.
+[1-97]. D. Xu5 Z. Feng and P. Zhang, "Effective Capacity of Delay Quality-of-Service Constrained Spectrum Sharing Cognitive Radio with Outdated Channel Feedback； Science China Information Sciences, vol. 56, pp. 1-13, 2013.
+[1-98]. D. Xu, Z. Feng and P. Zhang, ''Protecting Primary Users in Cognitive Radio Networks with Effective Capacity Loss Constraint/5 IEICE Transactions on Communications, voL 95, pp. 349-353, 2012.
+[1-99]. D. Xu, Z. Feng and P. Zhang, “On the Impacts of Channel Estimation Errors and Feedback Delay on the Ergodic Capacity for Spectrum Sharing Cognitive Radio,” Wireless personal communications, vol. 72, pp. 1875-1887,2013.
+30
+[1-100]. P. Zhang, D. Xu and Z. Feng, "Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity under Delay Quality-of-Service Constraints in Nakagami Fading Environments/9 KSII Transactions on Internet and Information Systems (TIIS), vol. 7, pp. 632-650, 2013.
+[1-101]. D. Xu, Z. Feng, Y. Wang and R Zhang, "Capacity of Cognitive Radio Under Delay Quality-of-Service Constraints with Outdated Channel Feedback/' IEEE International Symposium on Personal Indoor and Mobile Radio Communications (PIMRC), pp. 1704-1709, 2012.
+[1-102]. P. Gupta and P. R. Kumar, "The capacity of wireless networks； IEEE Transaction on Information Theory, vol. 46, no. 2, pp. 388-404, Mar. 2000.
+[1-103]. S.-W. Jeon, N・ Devroye, M. Vu, S.-Y. Chung and V. Tarokh, "Cognitive networks achieve throughput scaling of a homogeneous network； IEEE Transaction on Information Theory9 vol. 57, no. 8, pp. 5103-5115, Aug. 2011.
+[1-104], C. Yin, L. Gao and S. Cui, "Scaling Laws fbr Overlaid Wireless Networks: A Cognitive Radio Network versus a Primary Network,” IEEE/ACM Transactions on Networking, vol. 18, no. 4, pp. 1317-1329, Aug. 2010.
+[1-105]. W. Huang and X. Wang, "Capacity scaling of general cognitive networks/5 IEEE/ACM Transactions on Networking, vol. 20, no. 5, pp. 1501-1513, Oct. 2011.
+[1-106]. R Gupta and R R. Kumar, "Critical power for asymptotic connectivity," IEEE Conference on Decision and Control, pp. 1106-1110, Dec. 1998.
+[1-107]. H. Zhang and J. Hou, “On the critical total power for asymptotic k-connectivity in wireless networks/9 IEEE International Conference on Computer Communications (INFOCOM), pp. 466-476, Mar. 2005.
+[1-108]. W. Ren, Q. Zhao and A. Swami, “On the Connectivity and Multihop Delay of Ad Hoc Cognitive Radio Networks,” IEEE Journal on Selected Areas in Communications, vol.29, pp. 805-818, Apr, 2011.
+[1-109]. W. C. Ao, S. Cheng and K. Chen, ''Connectivity of Multiple Cooperative Cognitive Radio Ad Hoc Networks,IEEE Journal on Selected Areas in Communications, vol.30, pp. 263-270, Feb. 2012.
+[1-110]. A. Abbagnale, F. Cuomo and E. Cipollone, “Measuring the connectivity of a cognitive radio ad-hoc network/5 IEEE Communications Letters, vol.14, pp.
+31
+417-419, May 2010.
+[1-111]. Y Zhao, S. Mao, J. O. Neel and J. H. Reed, "Performance Evaluation of Cognitive Radios: Metrics, Utility Functions, and Methodology," Proceedings of the IEEE, vol. 97, no. 4, pp. 642-659, Apr. 2009.
+[1-112]. H. B. Yilmaz, T・ Tugcu, F. Alagoz and S. Bayhan, “Radio Environment Map as Enabler for Practical Cognitive Radio Networks," vol. 51, no. 12, pp. 162-169, Dec. 2013.
+[1-113]. S. Grimoud, B. Sayrac, S. Ben Jemaa and E. Moulines, “An algorithm for fast REM construction,59 Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 251-255, June 2011.
+[1-114]. J. Riihijarvi, P. M* ah'bnen, M. Petrova and V. Kolar, ''Enhancing cognitive radios with spatial statistics: From radio environment maps to topology engine,” Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 1-6, June 2009.
+[1-115]. V Atanasovski et al., "Constructing radio environment maps with heterogeneous spectrum sensors,55 IEEE International Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 660-661, May 2011.
+[1-116]. H. B. Yilmaz, C. -B. Chae and T. Tugcu, "Sensor Placement Algorithm for Radio Environment Map Construction in Cognitive Radio Networks/* IEEE Wireless Communications and Networking Conference (WCNC), pp. 2096-2101, Apr. 2014.
+[1-117]. S. Faint, X. O. Ureten and T. Willink, "Impact of the number of sensors on the network cost and accuracy of the radio environment map," IEEE Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-5, May 2010.
+[1-118]. X. Feng, J. Zhang and Q. Zhang, "Database-Assisted Multi-AP Network on TV White Spaces: Architecture, Spectrum Allocation and AP Discovery”, IEEE Symposium on New Frontiers in Dynamic Spectrum Access Networks (DySPAN), pp. 265-276, May 2011.
+[1-119]. X. Feng, Q. Zhang and J. Zhang, “Hybrid Pricing for TV White Space Database,5, IEEE International Conference on Computer Communications (INFOCOM), pp. 1995-2003, Apr. 2013.
+32
+[1-120], X. Feng, J. Zhang and Q. Zhang, “A Hybrid Pricing Framework for TV White Space Database”，IEEE Transactions on Wireless Communications, Vol. 13, Issue 5, pp. 2626-2635, May 2014.
+[1-121]. W. Lee, G. Nat and D.・H. Cho, ''Comparison of Channel State Acquisition Schemes in Cognitive Radio Environment,55 IEEE Transactions on Wireless Communications, vol. 13, no. 4, pp. 2295-2307, Feb. 2014.
+[1-122]. F. Paisana, N. Marchetti and L. A. DaSilva, “Radar, TV and Cellular Bands: Which Spectrum Access Techniques for Which Bands?” IEEE Communications Surveys & Tutorials, vol. 16, no. 3, pp. 1193-1220, Apr. 2014.
+[1-123]. S. Sodagari, "A Secure Radio Environment Map Database to Share Spectrum," IEEE Journal of Selected Topics in Signal Processing, vol. PR no. 99, 2015.
+[1-124]. D. Pu and A. M. Wyglinski, “Primary-User Emulation Detection Using Database-Assisted Frequency-Domain Action Recognition," IEEE Transactions on Vehicular Technology, vol. 63, no. 9, pp. 4372-4382, Apr. 2014.
+[1-125]. G. Ding, Q. Wu and Y.-D. Yao, et al, "Kernel-based learning for statistical signal processing in cognitive radio networks: Theoretical foundations; example applications, and future directions/5 IEEE Signal Processing Magazine, vol. 30, no.4, pp. 126-136, July 2013.
+[1-126]. G. Ding, J. Wang and Q. Wu, et al, “Spectrum sensing in opportunity heterogeneous cognitive sensor networks: How to cooperate?,^ IEEE Sensors Journal, vol. 13, no. 11, pp. 4247-4255, Nov. 2013.
+[1-127]. X. Hong, C. X. Wang, H. H. Chen and Y. Zhang, “Secondary spectrum access networks/5 IEEE Vehicular Technology Magazine, vol.4, pp. 36-43, June 2009.
+[1-128]. Z・ Wei, Z. Feng, Q. Zhang and W< Li, “Three regions for space-time spectrum sensing and access in cognitive radio networks/5 IEEE Global Communications Conference (GLOBECOM), pp. 1283-1288, Dec. 2012.
+[1-129]. Z. Wei, Z. Feng, Q. Zhang, and W. Li, “Three Regions for Space-Time Spectrum Sensing and Access in Cognitive Radio Networks," IEEE Transactions on Vehicular Technology, vol. PR no. 99, Jul. 2014.
+33
+[1-130]. X. Wang, J. Liu, W. Chen and Z. Cao, "CORE-4: Cognition oriented relaying exploiting 4-D spectrum holes； Wireless Communications and Mobile Computing Conference (IWCMC), pp. 1982-1987, July 2011.
+[1-131]. G. Zheng, S. Ma, K. K. Wong and T. S. Ng, “Robust beamforming in cognitive radio," IEEE Transactions on Wireless Communications, vol. 9, no. 2, pp. 570-576, 2010.
+[1-132]. L. Zhang, Y.・C. Liang, Y. Xin and H. V. Poor, "Robust cognitive beamforming with partial channel state information/5 IEEE Transactions on Wireless Communications, vol. 8, no. 8, pp. 4143-4153, Aug. 2009.
+[1-133], S. Singh, P. D. Teal, P. A. Dmochowski and A. J. Coulson, “Robust cognitive radio cooperative beamfbrming," IEEE Transactions on Wireless Communications, vol. 13, no. 11, pp. 6370-6381, Nov. 2014.
+[1-134]. Y. Xu, X. Zhao and Y. -C. Liang, "Robust Power Control and Beamforming in Cognitive Radio Networks: A Survey/9 IEEE Communications Surveys & Tutorials, vol. PR no. 99, 2015.
+[1-135]. L. Zhang, Y. -C. Liang and Y・ Xin, “Joint beamforming and power allocation for multiple access channels in cognitive radio networks/5 IEEE Journal on Selected Areas in Communications, vol. 26, no. 1, pp. 38-51, Jan. 2008.
+[1-136]. A, Tajer, N. Prasad and X. Wang, ^Beamforming and rate allocation in MISO cognitive radio networks^ IEEE Transactions on Signal Processing, vol. 58, no. 1, pp. 362-377, Jan. 2010.
+[1-137]. D. N・ Nguyen and M. Krunz, “Power minimization in MIMO cognitive networks using beamforming games/9 IEEE Journal on Selected Areas in Communications, vol. 31, no. 5, pp. 916-925, May 2013.
+[1-138]. S. Wang, L. Guo, T. Yi and J. Lin, “Relay Beamforming with Power Minimization in Cognitive Radio Network," IEEE International Conference on Communication Technology (1CCT), pp. 681-685, Nov. 2013.
+[1-139]. S. Akin and M. C. Gursoy, “On the Throughput and Energy Efficiency of Cognitive MIMO Transmissions,77 IEEE Transactions on Vehicular Technology, vol. 62, no, 7, pp. 3245-3260, Sept. 2013.
+[1-140]. P. Gupta and P. R» Kumar et al., "Internets in the sky: The capacity of three dimensional wireless networks,55 Communications in Information and Systems,
+34
+vol. 1, no. 1, pp. 33-49,2001.
+[1-141]. M. Franceschetti, M. D. Migliore and P. Minero, “Outer Bound to the Capacity Scaling of Three Dimensional Wireless Networks/5 IEEE International Symposium on Information Theory (ISIT), pp. 1123-1127, July 2008.
+[1-142]. P. Li, M. Pan and Y. Fang, “The capacity of three-dimensional wireless ad hoc networks,” IEEE International Conference on Computer Communications (INFOCOM), Apr. 2011.
+[1-143]. R Li, M. Pan and Y. Fang, “Capacity bounds of three-dimensional wireless ad hoc networks," IEEE/ACM Transactions on Networking, vol. 20, no. 4, pp. 1304-1315,2012.
+[1-144]. C. Hu, X. Wang, Z. Yang, J. Zhang, Y. Xu and X. Gao, "A Geometry Study on the Capacity of Wireless Networks via Percolation,5> IEEE Transactions on Communications, vol. 58, no. 10, pp. 2916-2925, Oct. 2010.
+[1-145]. L. X. Cai, L. Cai, X. (Sherman) Shen and J. W. Mark, “Capacity Analysis of UWB Networks in Three-Dimensional Space," Journal of Communications and Networks, vol. 11, no. 3, pp. 287-296, Apr. 2009.
+[1-146]. E. Biglieri, “An Overview of Cognitive Radio for Satellite Communications/5 IEEE First AESS European Conference on Satellite Telecommunications (ESTEL), pp. 1・3, Oct. 2012.
+[1-147]. M. Hoyhtya, J. Kyrolainen, A, Hulkkonen, J. Ylitalo and A. Roivainen, "'Application of Cognitive Radio Techniques to Satellite Communication/5 IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 540-551, Oct 2012.
+[1-148]. K. Liolis, G. Schlueter, J. Krause and F. Zimmer, et al. "Cognitive Radio Scenarios for Satellite Communications: The CoRaSat Approach," Future Network and Mobile Summit (FutureNetworkSummit), pp. 1-10, July 2013.
+[1-149]. S. Kandeepan, L. De Nardis, M. Di Benedetto, A. Guidotti and G. E. Corazza, "Cognitive Satellite Terrestrial Radios,55 IEEE Global Telecommunications Conference (GLOBECOM), pp. 1-6, Dec. 2010.
+[1-150]. S. Maleki, S. Chatzinotas, B. Evans and K. Liolis, et al, ''Cognitive Spectrum Utilization in Ka Band Multibeam Satellite Communications/5 IEEE
+35
+Communications Magazine, voL 53, no. 3, pp. 24-29, Man 2015.
+[1-151], G. Chung, S. Sridharan, S. Vishwanath, and C. S. Hwang, "On the Capacity of Overlay Cognitive Radios with Partial Cognition/' IEEE Transactions on Information Theory, voL 58, no. 5, pp. 2935-2949, Jan. 2012.
+[1-152]. Q. Zhang, Z. Feng and P. Zhang, "Joint Cooperative Relay Scheme for Spectrum-Efficient Usage and Capacity Improvement in Cognitive Radio Networks： EURASIP Journal on Wireless Communications and Networking, vol. 2012, pp. 1-9, 2012.
+[1-153]. Z. Wei, Z. Feng, Q. Zhang, W. Li and T. A. Gulliver, uThe asymptotic throughput and connectivity of cognitive radio networks with directional transmission,Journal of Communications and Networks, vol. 16, no. 2, pp. 227-237, Apr. 2014.
+[1-154], Z. Wei, Z. Feng, Q. Zhang, W. Li and T. A. Gulliver, ''Throughput scaling laws of cognitive radio networks with directional transmission," IEEE Global Communications Conference (GLOBECOM), pp. 872-877, Dec. 2013.
+[1-155]. S. P. Weber, X. Yang, J. G. Andrews, and G・ de Veciana, ^Transmission capacity of wireless ad hoc networks with outage constraints,IEEE Transactions on Information Theory, vol. 51, no. 12, pp. 4091-4102, Dec. 2005.
+[1-156]. C. Yin, L. Gao, and S. Cui, "Scaling laws for overlaid wireless networks: A cognitive radio network vs. a primary network,IEEE Global Communications Conference (GLOBECOM), pp. 1-5, Nov. 2008.
+[1-157]. X. Chen, T. Jing, Y. Huo, W. Li, X. Cheng and T. Chen, "Achievable Transmission Capacity of Cognitive Radio Networks with Cooperative Relaying,5, International ICST Conference on Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM), pp. 1-6, June 2012.
+[1-158]. R. Vaze, "Transmission Capacity of Spectrum Sharing Ad Hoc Networks with Multiple Antennas,5, IEEE Transactions on Wireless Communications, vol. 10, no. 7, pp. 2334-2340, May 2011.
+[1-159]. C. Li and H. Dai, “On the Throughput Scaling of Cognitive Radio Ad Hoc Networks," IEEE International Conference on Computer Communications (INFOCOM), pp. 241-245, Apr. 2011.
+36
+[1-160]. C・ Wang, S. Tang, X. -Y. Li and C. Jiang, "Multicast Capacity Scaling Laws for Multihop Cognitive Networks,” IEEE Transactions on Mobile Computing, vol. 11, no. 11, pp. 1627-1639, Sept 2012.
+[1-161]. C. Wang, C. Jiang, S. Tang and X. -Y. Li, “Scaling Laws of Cognitive Ad Hoc Networks over General Primary Network Models,5, IEEE Transactions on Parallel and Distributed Systems, vol. 24, no. 5, pp. 1030-1041, July 2012.
+[1-162]. K・ Zheng, J. Luo, J. Zhang, W. Wu, X. Tian and X. Wang, ''Cooperation Improves Delay in Cognitive Networks with Hybrid Random Walk," IEEE Transactions on Communications, vol. PR no. 99, 2015.
+[1-163],张平，李建武，冯志勇，张奇勋，“认知无线网络基础理论与关键技术研 究，”电信科学，2014年2月2日。
+[1-164].贺倩，“认知无线网络中的重构管理研究，”北京邮电大学博士论文,2013 年4月18日。
+[1-165].徐鼎，“认知无线网络中的无线资源分配研究，”北京邮电大学博士论文， 2013 年4月 20Ho
+37
+38

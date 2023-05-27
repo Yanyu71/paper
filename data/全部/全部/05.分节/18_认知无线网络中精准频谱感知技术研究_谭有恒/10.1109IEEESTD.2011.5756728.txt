@@ -1,0 +1,4 @@
+10.1109IEEESTD.2011.5756728
+[61]IEEE Standard for Spectrum Sensing Interfaces and Data Structures for Dynamic Spectrum Access and Other Advanced Radio Communication Systems - Amendment 1: Procedures, Protocols, and Data Archive Enhanced Interfaces, in IEEE Std 1900.6a-2014 (Amendment to IEEE Std 1900.6-2011), vol., no., pp.l- 52, 6 June 2014, doi: 10.1109/IEEESTD.2014.6823063.
+[62]IEEE Standard - Information Teclinology-Telecommunications and information
+exchange between systems-Wireless Regional Area Networks-Specific requirements-Part 22: Cognitive Wireless RAN MAC and PHY specifications: Policies and Procedures for Operation in the Bands that Allow Spectrum Sharing where the Communications Devices May Opportunistically Operate in the Spectrum of Primary Service, in IEEE Std 802.22-2019 (Revision of IEEE Std 802.22-2011)	, vol., no., pp.1-1465,	5 May 2020, doi:

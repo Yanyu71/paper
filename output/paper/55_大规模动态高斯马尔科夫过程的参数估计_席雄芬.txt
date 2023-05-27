@@ -1,0 +1,1193 @@
+﻿{
+    "knowledge_points": [
+        {"title": "物联网", "en": "Internet of Things"},
+        {"title": "传感器", "en": "Sensor"},
+        {"title": "大数据", "en": "Big Data"},
+        {"title": "动态高斯马氏过程", "en": "Dynamic Gaussian Markov Process"},
+        {"title": "数据表示形式", "en": "Data Representation"},
+        {"title": "数据规范化", "en": "Data Normalization"},
+        {"title": "数据预处理", "en": "Data Preprocessing"},
+        {"title": "数据维度", "en": "Data Dimensionality"},
+        {"title": "计算复杂度", "en": "Computational Complexity"},
+        {"title": "图拓扑关系", "en": "Graph Topology"}
+    ],
+    "relations": [
+        {"source": "物联网", "target": "传感器", "type": "包含"},
+        {"source": "物联网", "target": "大数据", "type": "关联"},
+        {"source": "大数据", "target": "动态高斯马氏过程", "type": "关联"},
+        {"source": "数据表示形式", "target": "物联网", "type": "关联"},
+        {"source": "数据规范化", "target": "物联网", "type": "关联"},
+        {"source": "数据预处理", "target": "物联网", "type": "关联"},
+        {"source": "数据维度", "target": "物联网", "type": "关联"},
+        {"source": "计算复杂度", "target": "大数据", "type": "关联"},
+        {"source": "图拓扑关系", "target": "大数据", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "大数据处理中的图模型", "en": "Graph models in big data processing"},
+        {"title": "图节点和边的表示", "en": "Representation of graph nodes and edges"},
+        {"title": "先验已知的图数据分析和处理", "en": "Analysis and processing of known graph data"},
+        {"title": "从有限的样本中学习有效的图拓扑结构", "en": "Learning effective graph topology from limited samples"},
+        {"title": "空时信号的图结构建模与参数估计", "en": "Graph structure modeling and parameter estimation of spatiotemporal signals"},
+        {"title": "联合图结构模型", "en": "Joint graph structure model"},
+        {"title": "稀疏惩罚方法", "en": "Sparse penalty method"},
+        {"title": "谱聚类算法", "en": "Spectral clustering algorithm"},
+        {"title": "迭代最小二乘法", "en": "Iterative least squares method"}
+    ],
+    "relations": [
+        {"source": "大数据处理中的图模型", "target": "图节点和边的表示", "type": "包含"},
+        {"source": "大数据处理中的图模型", "target": "先验已知的图数据分析和处理", "type": "包含"},
+        {"source": "大数据处理中的图模型", "target": "从有限的样本中学习有效的图拓扑结构", "type": "包含"},
+        {"source": "从有限的样本中学习有效的图拓扑结构", "target": "空时信号的图结构建模与参数估计", "type": "包含"},
+        {"source": "空时信号的图结构建模与参数估计", "target": "联合图结构模型", "type": "包含"},
+        {"source": "空时信号的图结构建模与参数估计", "target": "稀疏惩罚方法", "type": "包含"},
+        {"source": "空时信号的图结构建模与参数估计", "target": "谱聚类算法", "type": "包含"},
+        {"source": "空时信号的图结构建模与参数估计", "target": "迭代最小二乘法", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "图的邻接矩阵权重表示顶点域数据结构的概率依赖关系", "en": "Adjacency matrix weight of the graph represents the probability dependence relationship of the vertex domain data structure"},
+        {"title": "通过现实对象的信息建立的图结构模型可以描述系统的因果关系与相互依赖关系", "en": "The graph structure model established through the information of real objects can describe the causal relationship and mutual dependence relationship of the system"},
+        {"title": "经典的参数估计方法有矩估计、最小二乘估计、极大似然函数估计", "en": "Classical parameter estimation methods include moment estimation, least squares estimation, and maximum likelihood function estimation"},
+        {"title": "矩估计是一种估计总体各阶原点矩参数的方法", "en": "Moment estimation is a method of estimating the parameters of the population's various order moment"},
+        {"title": "最小二乘是回归分析中一种标准方法", "en": "Least squares is a standard method in regression analysis"},
+        {"title": "极大似然估计是在已知条件概率密度情况下,求解使条件概率密度达到极大的那个参数值", "en": "Maximum likelihood estimation is to find the parameter value that makes the conditional probability density reach the maximum under the known condition probability density"},
+        {"title": "寻求最小二乘估计和极大似然估计最优解的常用方法是将目标函数对估计的参数进行求导,计算梯度", "en": "The common method to seek the optimal solution of least squares estimation and maximum likelihood estimation is to take the derivative of the objective function with respect to the estimated parameters and calculate the gradient"},
+        {"title": "空时信号可以将信号定义在具有权重的、有向的或无向的图上", "en": "Spatial-temporal signals can define signals on graphs with weights, directed or undirected"},
+        {"title": "图可以很直观地表示事物与事物之间的联系", "en": "Graphs can intuitively represent the relationship between things"},
+        {"title": "在大规模网络中我们面对的图结构都是稀疏的", "en": "The graph structures we face in large-scale networks are sparse"},
+        {"title": "拉普拉斯矩阵可以用来描述无向图中的关系", "en": "The Laplacian matrix can be used to describe the relationship in undirected graphs"},
+        {"title": "通过拉普拉斯矩阵的特征值分解，可以产生频率和图信号傅里叶变换的概念", "en": "Through the eigenvalue decomposition of the Laplacian matrix, the concepts of frequency and graph signal Fourier transform can be generated"}
+    ],
+    "relations": [
+        {"source": "图的邻接矩阵权重表示顶点域数据结构的概率依赖关系", "target": "经典的参数估计方法有矩估计、最小二乘估计、极大似然函数估计", "type": "包含"},
+        {"source": "经典的参数估计方法有矩估计、最小二乘估计、极大似然函数估计", "target": "矩估计是一种估计总体各阶原点矩参数的方法", "type": "包含"},
+        {"source": "经典的参数估计方法有矩估计、最小二乘估计、极大似然函数估计", "target": "最小二乘是回归分析中一种标准方法", "type": "包含"},
+        {"source": "经典的参数估计方法有矩估计、最小二乘估计、极大似然函数估计", "target": "极大似然估计是在已知条件概率密度情况下,求解使条件概率密度达到极大的那个参数值", "type": "包含"},
+        {"source": "寻求最小二乘估计和极大似然估计最优解的常用方法是将目标函数对估计的参数进行求导,计算梯度", "target": "最小二乘是回归分析中一种标准方法", "type": "包含"},
+        {"source": "寻求最小二乘估计和极大似然估计最优解的常用方法是将目标函数对估计的参数进行求导,计算梯度", "target": "极大似然估计是在已知条件概率密度情况下,求解使条件概率密度达到极大的那个参数值", "type": "包含"},
+        {"source": "空时信号可以将信号定义在具有权重的、有向的或无向的图上", "target": "图可以很直观地表示事物与事物之间的联系", "type": "包含"},
+        {"source": "在大规模网络中我们面对的图结构都是稀疏的", "target": "图可以很直观地表示事物与事物之间的联系", "type": "包含"},
+        {"source": "拉普拉斯矩阵可以用来描述无向图中的关系", "target": "通过拉普拉斯矩阵的特征值分解，可以产生频率和图信号傅里叶变换的概念", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "拉普拉斯算子",
+            "en": "Laplacian operator"
+        },
+        {
+            "title": "全变差",
+            "en": "Total variation"
+        },
+        {
+            "title": "图平滑性",
+            "en": "Graph smoothness"
+        },
+        {
+            "title": "图正则",
+            "en": "Graph regularization"
+        },
+        {
+            "title": "半监督学习",
+            "en": "Semi-supervised learning"
+        },
+        {
+            "title": "图滤波",
+            "en": "Graph filtering"
+        },
+        {
+            "title": "线性移不变图滤波",
+            "en": "Linear shift-invariant graph filtering"
+        },
+        {
+            "title": "拉普拉斯矩阵",
+            "en": "Laplacian matrix"
+        },
+        {
+            "title": "因子模型",
+            "en": "Factor model"
+        },
+        {
+            "title": "因果图过程模型",
+            "en": "Causal graph process model"
+        },
+        {
+            "title": "一阶高斯马尔科夫线性动态模型",
+            "en": "First-order Gaussian Markov linear dynamic model"
+        },
+        {
+            "title": "稀疏矢量自回归",
+            "en": "Sparse vector autoregression"
+        }
+    ],
+    "relations": [
+        {
+            "source": "拉普拉斯算子",
+            "target": "全变差",
+            "type": "描述"
+        },
+        {
+            "source": "拉普拉斯算子",
+            "target": "图平滑性",
+            "type": "描述"
+        },
+        {
+            "source": "图平滑性",
+            "target": "图正则",
+            "type": "相关"
+        },
+        {
+            "source": "图平滑性",
+            "target": "半监督学习",
+            "type": "相关"
+        },
+        {
+            "source": "图滤波",
+            "target": "线性移不变图滤波",
+            "type": "属于"
+        },
+        {
+            "source": "拉普拉斯矩阵",
+            "target": "图平滑性",
+            "type": "描述"
+        },
+        {
+            "source": "因子模型",
+            "target": "拉普拉斯矩阵",
+            "type": "使用"
+        },
+        {
+            "source": "因果图过程模型",
+            "target": "稀疏矢量自回归",
+            "type": "相关"
+        },
+        {
+            "source": "因果图过程模型",
+            "target": "一阶高斯马尔科夫线性动态模型",
+            "type": "属于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "因果图过程模型",
+            "en": "Causal graph process model"
+        },
+        {
+            "title": "一阶高斯马尔科夫线性动态模型",
+            "en": "First-order Gaussian Markov linear dynamic model"
+        },
+        {
+            "title": "图结构参数估计方法",
+            "en": "Graph structure parameter estimation method"
+        },
+        {
+            "title": "最大似然估计",
+            "en": "Maximum likelihood estimation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "因果图过程模型",
+            "target": "一阶高斯马尔科夫线性动态模型",
+            "type": "包含"
+        },
+        {
+            "source": "一阶高斯马尔科夫线性动态模型",
+            "target": "因果转移图",
+            "type": "包含"
+        },
+        {
+            "source": "一阶高斯马尔科夫线性动态模型",
+            "target": "高斯密度矩阵",
+            "type": "包含"
+        },
+        {
+            "source": "一阶高斯马尔科夫线性动态模型",
+            "target": "自回归模型",
+            "type": "包含"
+        },
+        {
+            "source": "一阶高斯马尔科夫线性动态模型",
+            "target": "条件回归模型",
+            "type": "包含"
+        },
+        {
+            "source": "图结构参数估计方法",
+            "target": "最大似然估计",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "最大似然估计",
+            "en": "Maximum Likelihood Estimation"
+        },
+        {
+            "title": "数值优化技术",
+            "en": "Numerical Optimization Techniques"
+        },
+        {
+            "title": "优化问题",
+            "en": "Optimization Problems"
+        },
+        {
+            "title": "牛顿法",
+            "en": "Newton's Method"
+        },
+        {
+            "title": "拟牛顿法",
+            "en": "Quasi-Newton Methods"
+        },
+        {
+            "title": "L-BFGS",
+            "en": "Limited-memory BFGS"
+        },
+        {
+            "title": "局部最优解",
+            "en": "Local Optimum"
+        },
+        {
+            "title": "全局最优解",
+            "en": "Global Optimum"
+        },
+        {
+            "title": "非凸问题",
+            "en": "Non-convex Problems"
+        }
+    ],
+    "relations": [
+        {
+            "source": "最大似然估计",
+            "target": "数值优化技术",
+            "type": "包含"
+        },
+        {
+            "source": "数值优化技术",
+            "target": "优化问题",
+            "type": "属于"
+        },
+        {
+            "source": "优化问题",
+            "target": "牛顿法",
+            "type": "包含"
+        },
+        {
+            "source": "优化问题",
+            "target": "拟牛顿法",
+            "type": "包含"
+        },
+        {
+            "source": "拟牛顿法",
+            "target": "L-BFGS",
+            "type": "包含"
+        },
+        {
+            "source": "局部最优解",
+            "target": "全局最优解",
+            "type": "对立"
+        },
+        {
+            "source": "非凸问题",
+            "target": "数值优化技术",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "参数估计", "en": "Parameter Estimation"},
+        {"title": "优化", "en": "Optimization"},
+        {"title": "高斯图结构学习", "en": "Gaussian Graph Structure Learning"},
+        {"title": "多元高斯分布", "en": "Multivariate Gaussian Distribution"},
+        {"title": "最大似然估计", "en": "Maximum Likelihood Estimation"},
+        {"title": "梯度求解", "en": "Gradient Descent"},
+        {"title": "稀疏假设", "en": "Sparse Hypothesis"},
+        {"title": "图结构参数估计方法", "en": "Graph Structure Parameter Estimation Method"},
+        {"title": "因果图结构学习", "en": "Causal Graph Structure Learning"},
+        {"title": "矢量自回归", "en": "Vector Autoregression"}
+    ],
+    "relations": [
+        {"source": "参数估计", "target": "高斯图结构学习", "type": "包含"},
+        {"source": "高斯图结构学习", "target": "多元高斯分布", "type": "涉及"},
+        {"source": "高斯图结构学习", "target": "最大似然估计", "type": "涉及"},
+        {"source": "高斯图结构学习", "target": "梯度求解", "type": "涉及"},
+        {"source": "高斯图结构学习", "target": "稀疏假设", "type": "涉及"},
+        {"source": "高斯图结构学习", "target": "图结构参数估计方法", "type": "涉及"},
+        {"source": "因果图结构学习", "target": "矢量自回归", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Granger因果关系",
+            "en": "Granger causality"
+        },
+        {
+            "title": "因果转移图过程模型",
+            "en": "Causal transfer function model"
+        },
+        {
+            "title": "VAR模型",
+            "en": "Vector autoregression model"
+        },
+        {
+            "title": "最大似然估计",
+            "en": "Maximum likelihood estimation"
+        },
+        {
+            "title": "稀疏惩罚方法",
+            "en": "Sparse penalty method"
+        },
+        {
+            "title": "Lasso方法",
+            "en": "Lasso method"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Granger因果关系",
+            "target": "因果转移图过程模型",
+            "type": "描述"
+        },
+        {
+            "source": "因果转移图过程模型",
+            "target": "VAR模型",
+            "type": "描述"
+        },
+        {
+            "source": "VAR模型",
+            "target": "最大似然估计",
+            "type": "描述"
+        },
+        {
+            "source": "最大似然估计",
+            "target": "稀疏惩罚方法",
+            "type": "描述"
+        },
+        {
+            "source": "稀疏惩罚方法",
+            "target": "Lasso方法",
+            "type": "描述"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Lasso模型",
+            "en": "Lasso Model"
+        },
+        {
+            "title": "SCAD稀疏惩罚模型",
+            "en": "SCAD Sparse Penalty Model"
+        },
+        {
+            "title": "MCP稀疏惩罚模型",
+            "en": "MCP Sparse Penalty Model"
+        },
+        {
+            "title": "自适应Lasso",
+            "en": "Adaptive Lasso"
+        },
+        {
+            "title": "松弛Lasso",
+            "en": "Relaxed Lasso"
+        },
+        {
+            "title": "桥回归网模型",
+            "en": "Bridge Regression Network Model"
+        },
+        {
+            "title": "分组稀疏模型",
+            "en": "Group Sparse Model"
+        },
+        {
+            "title": "非凸稀疏惩罚",
+            "en": "Non-Convex Sparse Penalty"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Lasso Model",
+            "target": "SCAD Sparse Penalty Model",
+            "type": "is similar to"
+        },
+        {
+            "source": "Lasso Model",
+            "target": "MCP Sparse Penalty Model",
+            "type": "is similar to"
+        },
+        {
+            "source": "SCAD Sparse Penalty Model",
+            "target": "MCP Sparse Penalty Model",
+            "type": "is similar to"
+        },
+        {
+            "source": "Lasso Model",
+            "target": "Adaptive Lasso",
+            "type": "is similar to"
+        },
+        {
+            "source": "Lasso Model",
+            "target": "Relaxed Lasso",
+            "type": "is similar to"
+        },
+        {
+            "source": "Lasso Model",
+            "target": "Bridge Regression Network Model",
+            "type": "is similar to"
+        },
+        {
+            "source": "Group Sparse Model",
+            "target": "Lasso Model",
+            "type": "is a type of"
+        },
+        {
+            "source": "Non-Convex Sparse Penalty",
+            "target": "Lasso Model",
+            "type": "is a type of"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "动态空时信号的图模型",
+            "en": "Graph models for dynamic spatio-temporal signals"
+        },
+        {
+            "title": "空时图建模方法",
+            "en": "Methods for spatio-temporal graph modeling"
+        },
+        {
+            "title": "高斯图结构学习",
+            "en": "Gaussian graphical model structure learning"
+        },
+        {
+            "title": "因果过程图学习",
+            "en": "Causal process graph learning"
+        },
+        {
+            "title": "稀疏惩罚方法",
+            "en": "Sparse penalty methods"
+        },
+        {
+            "title": "模型选择方法",
+            "en": "Model selection methods"
+        }
+    ],
+    "relations": [
+        {
+            "source": "动态空时信号的图模型",
+            "target": "空时图建模方法",
+            "type": "包含"
+        },
+        {
+            "source": "空时图建模方法",
+            "target": "高斯图结构学习",
+            "type": "包含"
+        },
+        {
+            "source": "空时图建模方法",
+            "target": "因果过程图学习",
+            "type": "包含"
+        },
+        {
+            "source": "空时图建模方法",
+            "target": "稀疏惩罚方法",
+            "type": "包含"
+        },
+        {
+            "source": "空时图建模方法",
+            "target": "模型选择方法",
+            "type": "包含"
+        },
+        {
+            "source": "高斯图结构学习",
+            "target": "稀疏惩罚方法",
+            "type": "包含"
+        },
+        {
+            "source": "稀疏惩罚方法",
+            "target": "模型选择方法",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高斯独立分布", "en": "Gaussian independent distribution"},
+        {"title": "因果图结构学习(GTG)", "en": "Causal graph structure learning (GTG)"},
+        {"title": "过拟合", "en": "Overfitting"},
+        {"title": "稀疏正则图", "en": "Sparse regular graph"},
+        {"title": "二阶统计关系", "en": "Second-order statistical relationship"},
+        {"title": "高斯图结构学习(CDG)", "en": "Gaussian graph structure learning (CDG)"},
+        {"title": "动态模型", "en": "Dynamic model"},
+        {"title": "联合正则稀疏预测", "en": "Joint regular sparse prediction"},
+        {"title": "联合图稀疏正则可分解网络算法", "en": "Joint graph sparse regular decomposable network algorithm"},
+        {"title": "稀疏惩罚", "en": "Sparse penalty"},
+        {"title": "联合正则图结构估计", "en": "Joint regular graph structure estimation"},
+        {"title": "Occam's razor原则", "en": "Occam's razor principle"}
+    ],
+    "relations": [
+        {"source": "高斯独立分布", "target": "因果图结构学习(GTG)", "type": "对应"},
+        {"source": "因果图结构学习(GTG)", "target": "过拟合", "type": "挑战"},
+        {"source": "稀疏正则图", "target": "稀疏惩罚", "type": "包含"},
+        {"source": "高斯图结构学习(CDG)", "target": "动态模型", "type": "不适用于"},
+        {"source": "联合正则稀疏预测", "target": "高斯图结构学习(CDG)", "type": "交替使用"},
+        {"source": "联合图稀疏正则可分解网络算法", "target": "联合正则稀疏预测", "type": "改进"},
+        {"source": "联合图稀疏正则可分解网络算法", "target": "稀疏惩罚", "type": "使用"},
+        {"source": "联合正则图结构估计", "target": "稀疏正则图", "type": "使用"},
+        {"source": "Occam's razor原则", "target": "稀疏模型", "type": "一致"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "一阶高斯马尔科夫过程模型",
+            "en": "First-order Gaussian Markov process model"
+        },
+        {
+            "title": "联合图结构C",
+            "en": "Joint graph structure C"
+        },
+        {
+            "title": "联合正则问题",
+            "en": "Joint regularization problem"
+        },
+        {
+            "title": "分组稀疏惩罚",
+            "en": "Group sparse penalty"
+        },
+        {
+            "title": "分组阈值q稀疏惩罚",
+            "en": "Group threshold q sparse penalty"
+        },
+        {
+            "title": "交替梯度下降法",
+            "en": "Alternating gradient descent method"
+        },
+        {
+            "title": "收敛性分析",
+            "en": "Convergence analysis"
+        }
+    ],
+    "relations": [
+        {
+            "source": "一阶高斯马尔科夫过程模型",
+            "target": "联合图结构C",
+            "type": "组成"
+        },
+        {
+            "source": "联合图结构C",
+            "target": "联合正则问题",
+            "type": "涉及"
+        },
+        {
+            "source": "联合正则问题",
+            "target": "分组稀疏惩罚",
+            "type": "涉及"
+        },
+        {
+            "source": "分组稀疏惩罚",
+            "target": "分组阈值q稀疏惩罚",
+            "type": "演化为"
+        },
+        {
+            "source": "分组阈值q稀疏惩罚",
+            "target": "交替梯度下降法",
+            "type": "使用"
+        },
+        {
+            "source": "分组阈值q稀疏惩罚",
+            "target": "收敛性分析",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "迭代收缩阈值算法", "en": "Iterative Shrinkage-Thresholding Algorithm"},
+        {"title": "连续序列", "en": "Continuous Sequence"},
+        {"title": "能量函数", "en": "Energy Function"},
+        {"title": "分组阈值稀疏惩罚", "en": "Group Thresholding Sparse Penalty"},
+        {"title": "局部最优解", "en": "Local Optimal Solution"},
+        {"title": "参数调整", "en": "Parameter Adjustment"},
+        {"title": "Armijo线性搜索方法", "en": "Armijo Linear Search Method"}
+    ],
+    "relations": [
+        {"source": "迭代收缩阈值算法", "target": "连续序列", "type": "包含"},
+        {"source": "迭代收缩阈值算法", "target": "能量函数", "type": "使用"},
+        {"source": "迭代收缩阈值算法", "target": "分组阈值稀疏惩罚", "type": "使用"},
+        {"source": "迭代收缩阈值算法", "target": "局部最优解", "type": "可能产生"},
+        {"source": "迭代收缩阈值算法", "target": "参数调整", "type": "需要"},
+        {"source": "参数调整", "target": "Armijo线性搜索方法", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异步Armijo线性搜索", "en": "Asynchronous Armijo linear search"},
+        {"title": "联合图结构参数估计算法", "en": "Joint graph structure parameter estimation algorithm"},
+        {"title": "迭代分组阈值q稀疏算法", "en": "Iterative grouping threshold q sparse algorithm"},
+        {"title": "稀疏惩罚", "en": "Sparse penalty"},
+        {"title": "图结构B", "en": "Graph structure B"},
+        {"title": "图结构Q", "en": "Graph structure Q"},
+        {"title": "Chollesky分解", "en": "Cholesky decomposition"}
+    ],
+    "relations": [
+        {"source": "异步Armijo线性搜索", "target": "迭代分组阈值q稀疏算法", "type": "包含"},
+        {"source": "联合图结构参数估计算法", "target": "迭代分组阈值q稀疏算法", "type": "实现"},
+        {"source": "图结构B", "target": "联合图结构参数估计算法", "type": "输入"},
+        {"source": "图结构Q", "target": "联合图结构参数估计算法", "type": "输入"},
+        {"source": "稀疏惩罚", "target": "迭代分组阈值q稀疏算法", "type": "参数"},
+        {"source": "Chollesky分解", "target": "图结构Q", "type": "判断正定性"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "联合图结构",
+            "en": "Joint Graph Structure"
+        },
+        {
+            "title": "一阶高斯马尔科夫过程",
+            "en": "First-order Gaussian Markov Process"
+        },
+        {
+            "title": "稀疏图",
+            "en": "Sparse Graph"
+        },
+        {
+            "title": "交替梯度下降法",
+            "en": "Alternating Gradient Descent"
+        },
+        {
+            "title": "阈值筛选",
+            "en": "Threshold Filtering"
+        },
+        {
+            "title": "正确率",
+            "en": "Accuracy"
+        },
+        {
+            "title": "错误率",
+            "en": "Error Rate"
+        },
+        {
+            "title": "噪声",
+            "en": "Noise"
+        },
+        {
+            "title": "迭代收敛",
+            "en": "Iterative Convergence"
+        }
+    ],
+    "relations": [
+        {
+            "source": "联合图结构",
+            "target": "一阶高斯马尔科夫过程",
+            "type": "描述"
+        },
+        {
+            "source": "一阶高斯马尔科夫过程",
+            "target": "时间序列",
+            "type": "描述"
+        },
+        {
+            "source": "时间序列",
+            "target": "标准化处理",
+            "type": "描述"
+        },
+        {
+            "source": "联合图结构",
+            "target": "稀疏图",
+            "type": "描述"
+        },
+        {
+            "source": "联合图结构",
+            "target": "交替梯度下降法",
+            "type": "描述"
+        },
+        {
+            "source": "联合图结构",
+            "target": "阈值筛选",
+            "type": "描述"
+        },
+        {
+            "source": "正确率",
+            "target": "联合图结构",
+            "type": "评价"
+        },
+        {
+            "source": "错误率",
+            "target": "联合图结构",
+            "type": "评价"
+        },
+        {
+            "source": "噪声",
+            "target": "联合图结构",
+            "type": "影响"
+        },
+        {
+            "source": "迭代收敛",
+            "target": "交替梯度下降法",
+            "type": "描述"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "稀疏惩罚分析", "en": "Sparse Penalty Analysis"},
+        {"title": "样本大小", "en": "Sample Size"},
+        {"title": "最大迭代次数", "en": "Maximum Iteration Times"},
+        {"title": "误差容忍率", "en": "Error Tolerance Rate"},
+        {"title": "子网络", "en": "Subnetwork"},
+        {"title": "验证集", "en": "Validation Set"},
+        {"title": "网格搜索", "en": "Grid Search"},
+        {"title": "LASSO估计", "en": "LASSO Estimation"},
+        {"title": "共线性问题", "en": "Collinearity Problem"},
+        {"title": "SCAD惩罚", "en": "SCAD Penalty"},
+        {"title": "ML估计", "en": "Maximum Likelihood Estimation"},
+        {"title": "稀疏连接结构", "en": "Sparse Connection Structure"},
+        {"title": "分组阈值算法", "en": "Group Threshold Algorithm"},
+        {"title": "大规模空时信号结构的聚类算法", "en": "Clustering Algorithm for Large-scale Spatio-temporal Signal Structure"}
+    ],
+    "relations": [
+        {"source": "稀疏惩罚分析", "target": "样本大小", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "最大迭代次数", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "误差容忍率", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "子网络", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "验证集", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "网格搜索", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "LASSO估计", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "共线性问题", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "SCAD惩罚", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "ML估计", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "稀疏连接结构", "type": "包含"},
+        {"source": "稀疏惩罚分析", "target": "分组阈值算法", "type": "包含"},
+        {"source": "大规模空时信号结构的聚类算法", "target": "稀疏连接结构", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "块对角形式", "en": "Block diagonal form"},
+        {"title": "噪声污染", "en": "Noise pollution"},
+        {"title": "相似矩阵", "en": "Similarity matrix"},
+        {"title": "节点聚类", "en": "Node clustering"},
+        {"title": "谱聚类算法", "en": "Spectral clustering algorithm"},
+        {"title": "拉普拉斯矩阵", "en": "Laplacian matrix"},
+        {"title": "特征分解", "en": "Eigen decomposition"},
+        {"title": "簇间相似性", "en": "Inter-cluster similarity"},
+        {"title": "簇内相似性", "en": "Intra-cluster similarity"},
+        {"title": "归一化拉普拉斯矩阵", "en": "Normalized Laplacian matrix"},
+        {"title": "非归一化拉普拉斯矩阵", "en": "Unnormalized Laplacian matrix"},
+        {"title": "聚类数K的确定", "en": "Determination of clustering number K"}
+    ],
+    "relations": [
+        {"source": "相似矩阵", "target": "拉普拉斯矩阵", "type": "包含关系"},
+        {"source": "拉普拉斯矩阵", "target": "特征分解", "type": "包含关系"},
+        {"source": "谱聚类算法", "target": "拉普拉斯矩阵", "type": "使用关系"},
+        {"source": "谱聚类算法", "target": "归一化拉普拉斯矩阵", "type": "使用关系"},
+        {"source": "谱聚类算法", "target": "非归一化拉普拉斯矩阵", "type": "使用关系"},
+        {"source": "节点聚类", "target": "相似矩阵", "type": "依赖关系"},
+        {"source": "簇间相似性", "target": "聚类算法", "type": "目标关系"},
+        {"source": "簇内相似性", "target": "聚类算法", "type": "目标关系"},
+        {"source": "归一化拉普拉斯矩阵", "target": "谱聚类算法", "type": "使用关系"},
+        {"source": "非归一化拉普拉斯矩阵", "target": "谱聚类算法", "type": "使用关系"},
+        {"source": "聚类数K的确定", "target": "联合图结构估计", "type": "依赖关系"},
+        {"source": "拉普拉斯矩阵", "target": "块对角形式", "type": "特征关系"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "自动确定聚类数K的谱聚类算法",
+            "en": "Automatic determination of the number of clusters K in spectral clustering algorithm"
+        },
+        {
+            "title": "联合图结构分解与精准估计",
+            "en": "Joint graph structure decomposition and accurate estimation"
+        },
+        {
+            "title": "归一化拉普拉斯矩阵",
+            "en": "Normalized Laplacian matrix"
+        },
+        {
+            "title": "特征值",
+            "en": "Eigenvalue"
+        },
+        {
+            "title": "特征值差",
+            "en": "Difference of eigenvalues"
+        },
+        {
+            "title": "精准估计算法",
+            "en": "Accurate estimation algorithm"
+        },
+        {
+            "title": "稀疏结构",
+            "en": "Sparse structure"
+        },
+        {
+            "title": "交替坐标下降",
+            "en": "Alternating coordinate descent"
+        },
+        {
+            "title": "CDG方法",
+            "en": "CDG method"
+        },
+        {
+            "title": "graphlasso算法",
+            "en": "Graphical Lasso algorithm"
+        },
+        {
+            "title": "MRCE算法",
+            "en": "MRCE algorithm"
+        },
+        {
+            "title": "JGSE算法",
+            "en": "JGSE algorithm"
+        },
+        {
+            "title": "模型拓扑识别率",
+            "en": "Model topology recognition rate"
+        },
+        {
+            "title": "模型估计准确率",
+            "en": "Model estimation accuracy"
+        },
+        {
+            "title": "预测准确率",
+            "en": "Prediction accuracy"
+        }
+    ],
+    "relations": [
+        {
+            "source": "自动确定聚类数K的谱聚类算法",
+            "target": "归一化拉普拉斯矩阵",
+            "type": "包含"
+        },
+        {
+            "source": "自动确定聚类数K的谱聚类算法",
+            "target": "特征值",
+            "type": "包含"
+        },
+        {
+            "source": "自动确定聚类数K的谱聚类算法",
+            "target": "特征值差",
+            "type": "包含"
+        },
+        {
+            "source": "自动确定聚类数K的谱聚类算法",
+            "target": "精准估计算法",
+            "type": "包含"
+        },
+        {
+            "source": "自动确定聚类数K的谱聚类算法",
+            "target": "JGSE算法",
+            "type": "包含"
+        },
+        {
+            "source": "联合图结构分解与精准估计",
+            "target": "稀疏结构",
+            "type": "包含"
+        },
+        {
+            "source": "联合图结构分解与精准估计",
+            "target": "CDG方法",
+            "type": "包含"
+        },
+        {
+            "source": "联合图结构分解与精准估计",
+            "target": "graphlasso算法",
+            "type": "包含"
+        },
+        {
+            "source": "联合图结构分解与精准估计",
+            "target": "MRCE算法",
+            "type": "包含"
+        },
+        {
+            "source": "联合图结构分解与精准估计",
+            "target": "JGSE算法",
+            "type": "包含"
+        },
+        {
+            "source": "模型拓扑识别率",
+            "target": "TPR",
+            "type": "同义词"
+        },
+        {
+            "source": "模型拓扑识别率",
+            "target": "FPR",
+            "type": "同义词"
+        },
+        {
+            "source": "模型估计准确率",
+            "target": "MEb",
+            "type": "同义词"
+        },
+        {
+            "source": "预测准确率",
+            "target": "TPoTP",
+            "type": "同义词"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "联合图结构", "en": "Joint graph structure"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "谱聚类", "en": "Spectral clustering"},
+        {"title": "模型拓扑识别率", "en": "Model topology recognition rate"},
+        {"title": "模型估计准确率", "en": "Model estimation accuracy"}
+    ],
+    "relations": [
+        {"source": "联合图结构", "target": "大规模网络的分解", "type": "适合"},
+        {"source": "联合图结构", "target": "聚类指标CI和聚类数K的确定", "type": "稳定"},
+        {"source": "联合图结构", "target": "抗噪性", "type": "具有"},
+        {"source": "稀疏度", "target": "网络规模", "type": "影响"},
+        {"source": "谱聚类", "target": "噪声抑制功能", "type": "具有"},
+        {"source": "模型拓扑识别率", "target": "GTG和CDG模型", "type": "过于简单"},
+        {"source": "模型拓扑识别率", "target": "MRCE模型", "type": "计算成本高"},
+        {"source": "模型拓扑识别率", "target": "JGSE模型", "type": "高效"},
+        {"source": "模型估计准确率", "target": "GTQ模型", "type": "鲁棒性强"},
+        {"source": "模型估计准确率", "target": "CDG模型", "type": "估计性能较差"},
+        {"source": "模型估计准确率", "target": "MRCE模型", "type": "计算成本高"},
+        {"source": "模型估计准确率", "target": "JGSE模型", "type": "估计性能较好"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "联合图结构的分解(GTQ)", "en": "Joint Graph Structure Decomposition (GTQ)"},
+        {"title": "图结构的精准估计(GFE)", "en": "Accurate Estimation of Graph Structure (GFE)"},
+        {"title": "JGSE算法", "en": "JGSE Algorithm"},
+        {"title": "大规模空时信号结构的稀疏自适应估计", "en": "Sparse Adaptive Estimation of Large-Scale Spatiotemporal Signal Structures"},
+        {"title": "迭代最小二乘法(1LSM)", "en": "Iterative Least Squares Method (1LSM)"},
+        {"title": "广阈值筛选的算法", "en": "Algorithm of Wide Threshold Screening"}
+    ],
+    "relations": [
+        {"source": "联合图结构的分解(GTQ)", "target": "图结构的精准估计(GFE)", "type": "包含"},
+        {"source": "图结构的精准估计(GFE)", "target": "JGSE算法", "type": "包含"},
+        {"source": "JGSE算法", "target": "大规模空时信号结构的稀疏自适应估计", "type": "应用于"},
+        {"source": "大规模空时信号结构的稀疏自适应估计", "target": "迭代最小二乘法(1LSM)", "type": "使用"},
+        {"source": "大规模空时信号结构的稀疏自适应估计", "target": "广阈值筛选的算法", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "B-EST算法", "en": "B-EST algorithm"},
+        {"title": "ILSM算法", "en": "ILSM algorithm"},
+        {"title": "ASP-LSM算法", "en": "ASP-LSM algorithm"},
+        {"title": "迭代最小二乘方法", "en": "Iterative Least Squares Method"},
+        {"title": "正则参数", "en": "Regularization parameter"},
+        {"title": "能量平滑性", "en": "Energy smoothness"},
+        {"title": "误差范围", "en": "Error range"},
+        {"title": "QT", "en": "QT"},
+        {"title": "正则函数", "en": "Regularization function"},
+        {"title": "图节点", "en": "Graph node"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "迭代更新过程", "en": "Iterative update process"},
+        {"title": "交替梯度下降法", "en": "Alternating Gradient Descent Method"},
+        {"title": "LSM", "en": "Least Squares Method"},
+        {"title": "在线估计", "en": "Online estimation"},
+        {"title": "马尔科夫过程", "en": "Markov process"},
+        {"title": "能量密度矩阵", "en": "Energy density matrix"},
+        {"title": "噪声协方差矩阵", "en": "Noise covariance matrix"},
+        {"title": "F范数约束", "en": "F-norm constraint"}
+    ],
+    "relations": [
+        {"source": "B-EST算法", "target": "ILSM算法", "type": "包含"},
+        {"source": "ILSM算法", "target": "ASP-LSM算法", "type": "包含"},
+        {"source": "迭代最小二乘方法", "target": "ILSM算法", "type": "基础算法"},
+        {"source": "正则参数", "target": "迭代最小二乘方法", "type": "约束参数"},
+        {"source": "能量平滑性", "target": "正则函数", "type": "约束条件"},
+        {"source": "误差范围", "target": "QT", "type": "约束条件"},
+        {"source": "正则函数", "target": "图节点", "type": "约束条件"},
+        {"source": "稀疏度", "target": "正则函数", "type": "约束条件"},
+        {"source": "迭代更新过程", "target": "ILSM算法", "type": "迭代过程"},
+        {"source": "交替梯度下降法", "target": "ILSM算法", "type": "优化方法"},
+        {"source": "LSM", "target": "B-EST算法", "type": "基础算法"},
+        {"source": "在线估计", "target": "ILSM算法", "type": "应用场景"},
+        {"source": "马尔科夫过程", "target": "ILSM算法", "type": "应用场景"},
+        {"source": "能量密度矩阵", "target": "ILSM算法", "type": "优化目标"},
+        {"source": "噪声协方差矩阵", "target": "ILSM算法", "type": "优化目标"},
+        {"source": "F范数约束", "target": "ILSM算法", "type": "约束条件"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "ILSM算法",
+            "en": "ILSM algorithm"
+        },
+        {
+            "title": "稀疏自适应估计",
+            "en": "Sparse adaptive estimation"
+        },
+        {
+            "title": "阈值筛选",
+            "en": "Threshold screening"
+        },
+        {
+            "title": "ASP-LSM算法",
+            "en": "ASP-LSM algorithm"
+        },
+        {
+            "title": "能量检测函数",
+            "en": "Energy detection function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "ILSM算法",
+            "target": "稀疏自适应估计",
+            "type": "包含"
+        },
+        {
+            "source": "稀疏自适应估计",
+            "target": "阈值筛选",
+            "type": "包含"
+        },
+        {
+            "source": "稀疏自适应估计",
+            "target": "ASP-LSM算法",
+            "type": "包含"
+        },
+        {
+            "source": "ASP-LSM算法",
+            "target": "能量检测函数",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ASP-LSM算法", "en": "ASP-LSM algorithm"},
+        {"title": "ILSM算法", "en": "ILSM algorithm"},
+        {"title": "B-EST算法", "en": "B-EST algorithm"},
+        {"title": "误差率(Err)", "en": "Error rate (Err)"},
+        {"title": "准确率(AR)", "en": "Accuracy rate (AR)"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "图结构", "en": "Graph structure"},
+        {"title": "拓扑识别能力", "en": "Topology recognition ability"},
+        {"title": "邻接关系", "en": "Adjacent relationship"},
+        {"title": "股票市场", "en": "Stock market"},
+        {"title": "相关关系", "en": "Correlation relationship"},
+        {"title": "对数收益率", "en": "Logarithmic return rate"},
+        {"title": "聚类特性", "en": "Clustering characteristics"},
+        {"title": "信息科技公司", "en": "Information technology company"},
+        {"title": "消费行业", "en": "Consumer industry"},
+        {"title": "金融行业", "en": "Financial industry"}
+    ],
+    "relations": [
+        {"source": "ASP-LSM算法", "target": "ILSM算法", "type": "compared with"},
+        {"source": "ASP-LSM算法", "target": "B-EST算法", "type": "compared with"},
+        {"source": "误差率(Err)", "target": "图结构", "type": "evaluates"},
+        {"source": "准确率(AR)", "target": "图结构", "type": "evaluates"},
+        {"source": "稀疏度", "target": "图结构", "type": "evaluates"},
+        {"source": "图结构", "target": "拓扑识别能力", "type": "affects"},
+        {"source": "图结构", "target": "邻接关系", "type": "describes"},
+        {"source": "股票市场", "target": "相关关系", "type": "analyzes"},
+        {"source": "对数收益率", "target": "股票市场", "type": "applies to"},
+        {"source": "聚类特性", "target": "图结构", "type": "describes"},
+        {"source": "信息科技公司", "target": "股票市场", "type": "related to"},
+        {"source": "消费行业", "target": "股票市场", "type": "related to"},
+        {"source": "金融行业", "target": "股票市场", "type": "related to"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "联合图结构参数估计", "en": "Joint graph structure parameter estimation"},
+        {"title": "聚类算法", "en": "Clustering algorithm"},
+        {"title": "迭代最小二乘算法", "en": "Iterative least squares algorithm"},
+        {"title": "稀疏假设", "en": "Sparse hypothesis"},
+        {"title": "压缩感知理论", "en": "Compressed sensing theory"},
+        {"title": "缺失数据填补", "en": "Missing data imputation"}
+    ],
+    "relations": [
+        {"source": "联合图结构参数估计", "target": "聚类算法", "type": "包含"},
+        {"source": "联合图结构参数估计", "target": "迭代最小二乘算法", "type": "包含"},
+        {"source": "稀疏假设", "target": "压缩感知理论", "type": "相关"},
+        {"source": "缺失数据填补", "target": "空时数据", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "大数据", "en": "Big data"},
+        {"title": "信号处理", "en": "Signal processing"},
+        {"title": "图信号处理", "en": "Graph signal processing"},
+        {"title": "图傅里叶变换", "en": "Graph Fourier transform"},
+        {"title": "图滤波", "en": "Graph filtering"},
+        {"title": "图拉普拉斯矩阵", "en": "Graph Laplacian matrix"},
+        {"title": "凸优化", "en": "Convex optimization"},
+        {"title": "高斯马尔可夫随机场", "en": "Gaussian Markov random field"},
+        {"title": "矩阵正态分布", "en": "Matrix normal distribution"},
+        {"title": "牛顿下降法", "en": "Newton's method"},
+        {"title": "峰值网格搜索法", "en": "Peak grid search method"},
+        {"title": "综合加权评分法", "en": "Comprehensive weighted scoring method"},
+        {"title": "束方法", "en": "Bundle method"},
+        {"title": "秩优化", "en": "Rank optimization"},
+        {"title": "向量值强扰动优化定理", "en": "Vector-valued strong perturbation optimization theorem"},
+        {"title": "图形套索", "en": "Graphical Lasso"}
+    ],
+    "relations": [
+        {"source": "大数据", "target": "信号处理", "type": "包含"},
+        {"source": "信号处理", "target": "图信号处理", "type": "包含"},
+        {"source": "图信号处理", "target": "图傅里叶变换", "type": "包含"},
+        {"source": "图信号处理", "target": "图滤波", "type": "包含"},
+        {"source": "图信号处理", "target": "图拉普拉斯矩阵", "type": "包含"},
+        {"source": "凸优化", "target": "牛顿下降法", "type": "包含"},
+        {"source": "凸优化", "target": "峰值网格搜索法", "type": "包含"},
+        {"source": "凸优化", "target": "束方法", "type": "包含"},
+        {"source": "凸优化", "target": "秩优化", "type": "包含"},
+        {"source": "高斯马尔可夫随机场", "target": "矩阵正态分布", "type": "包含"},
+        {"source": "牛顿下降法", "target": "向量值强扰动优化定理", "type": "包含"},
+        {"source": "图形套索", "target": "图滤波", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Lasso", "en": ""},
+        {"title": "Statistics for High-Dimensional Data", "en": "高维数据统计"},
+        {"title": "Regularized Sparse Model", "en": "正则化稀疏模型"},
+        {"title": "RIP Criterion in Compressed Sensing Theory", "en": "压缩感知理论中的RIP准则"},
+        {"title": "Group SCAD Regression Analysis for Microarray Time Course Gene Expression Data", "en": "基于组的SCAD回归分析微阵列时间序列基因表达数据"},
+        {"title": "Adaptive Lasso for Sparse High-Dimensional Regression", "en": "自适应Lasso用于稀疏高维回归"},
+        {"title": "Relaxed Lasso", "en": ""},
+        {"title": "Asymptotics for Lasso-type Estimators", "en": "Lasso估计器的渐近性质"},
+        {"title": "Trace Lasso: A Trace Norm Regularization for Conelated Designs", "en": "Trace Lasso：一种用于相关设计的迹范数正则化方法"},
+        {"title": "Elastic Net for Regularization and Variable Selection", "en": "弹性网络用于正则化和变量选择"},
+        {"title": "Group Variable Selection via SCAD", "en": "基于组的SCAD变量选择"},
+        {"title": "Thresholding-based Iterative Selection Procedures for Model Selection and Shrinkage", "en": "基于阈值的迭代选择过程用于模型选择和收缩"},
+        {"title": "Learning Topology and Dynamics of Large Recurrent Neural Networks", "en": "学习大型循环神经网络的拓扑和动力学"},
+        {"title": "Overview of High-Dimensional Model Selection Methods", "en": "高维模型选择方法综述"},
+        {"title": "The Danzig Selector: Statistical Estimation When p is Much Larger than n", "en": "Danzig选择器：当p远大于n时的统计估计"},
+        {"title": "SIMPLS: An Alternative Approach to Partial Least Squares Regression", "en": "SIMPLS：偏最小二乘回归的另一种方法"},
+        {"title": "A Generalized Approximate Cross-Validation for Smoothing Splines with Non-Gaussian Data", "en": "一种广义的逼近交叉验证方法用于非高斯数据的平滑样条"},
+        {"title": "Controlling Variable Selection by the Addition of Pseudovariables", "en": "通过添加伪变量来控制变量选择"},
+        {"title": "Stability Selection", "en": "稳定性选择"}
+    ],
+    "relations": [
+        {"source": "Lasso", "target": "Statistics for High-Dimensional Data", "type": "相关"},
+        {"source": "Lasso", "target": "Regularized Sparse Model", "type": "相关"},
+        {"source": "Regularized Sparse Model", "target": "RIP Criterion in Compressed Sensing Theory", "type": "相关"},
+        {"source": "Group SCAD Regression Analysis for Microarray Time Course Gene Expression Data", "target": "Lasso", "type": "相关"},
+        {"source": "Adaptive Lasso for Sparse High-Dimensional Regression", "target": "Lasso", "type": "相关"},
+        {"source": "Relaxed Lasso", "target": "Lasso", "type": "相关"},
+        {"source": "Asymptotics for Lasso-type Estimators", "target": "Lasso", "type": "相关"},
+        {"source": "Trace Lasso: A Trace Norm Regularization for Conelated Designs", "target": "Lasso", "type": "相关"},
+        {"source": "Elastic Net for Regularization and Variable Selection", "target": "Lasso", "type": "相关"},
+        {"source": "Group Variable Selection via SCAD", "target": "Lasso", "type": "相关"},
+        {"source": "Thresholding-based Iterative Selection Procedures for Model Selection and Shrinkage", "target": "Lasso", "type": "相关"},
+        {"source": "Learning Topology and Dynamics of Large Recurrent Neural Networks", "target": "Lasso", "type": "相关"},
+        {"source": "Overview of High-Dimensional Model Selection Methods", "target": "Lasso", "type": "相关"},
+        {"source": "The Danzig Selector: Statistical Estimation When p is Much Larger than n", "target": "Lasso", "type": "相关"},
+        {"source": "SIMPLS: An Alternative Approach to Partial Least Squares Regression", "target": "Lasso", "type": "相关"},
+        {"source": "A Generalized Approximate Cross-Validation for Smoothing Splines with Non-Gaussian Data", "target": "Lasso", "type": "相关"},
+        {"source": "Controlling Variable Selection by the Addition of Pseudovariables", "target": "Lasso", "type": "相关"},
+        {"source": "Stability Selection", "target": "Lasso", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "稀疏多元回归", "en": "Sparse Multivariate Regression"},
+        {"title": "协方差估计", "en": "Covariance Estimation"},
+        {"title": "大规模图形Lasso", "en": "Large-Scale Graphical Lasso"},
+        {"title": "基于阈值的迭代选择过程", "en": "Thresholding-based Iterative Selection Procedures"},
+        {"title": "非凸惩罚广义线性模型的迭代算法", "en": "Iterative Algorithm for Fitting Nonconvex Penalized Generalized Linear Models with Grouped Predictors"},
+        {"title": "谱聚类", "en": "Spectral Clustering"}
+    ],
+    "relations": [
+        {"source": "稀疏多元回归", "target": "协方差估计", "type": "包含"},
+        {"source": "大规模图形Lasso", "target": "协方差估计", "type": "包含"},
+        {"source": "基于阈值的迭代选择过程", "target": "稀疏多元回归", "type": "应用"},
+        {"source": "非凸惩罚广义线性模型的迭代算法", "target": "稀疏多元回归", "type": "应用"},
+        {"source": "非凸惩罚广义线性模型的迭代算法", "target": "基于阈值的迭代选择过程", "type": "应用"},
+        {"source": "谱聚类", "target": "大规模图形Lasso", "type": "应用"},
+        {"source": "谱聚类", "target": "基于阈值的迭代选择过程", "type": "应用"},
+        {"source": "谱聚类", "target": "非凸惩罚广义线性模型的迭代算法", "type": "应用"}
+    ]
+}

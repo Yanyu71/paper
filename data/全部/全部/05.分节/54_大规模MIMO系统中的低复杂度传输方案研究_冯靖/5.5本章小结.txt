@@ -1,0 +1,5 @@
+5.5本章小结
+在本文中，我们针对大规模天线系统提出了一个完整的多用户非相干的检测与 译码算法。明确来说，文中提出了一个简单的用户选择方法来优化不同用户在天线
+40
+阵列上能量的空间分布。本章提出的PF-RUS方法优于RUS选择。并且，我们提出 的基于BP算法的联合检测与信道译码模型也能在多用户的模型下有很好的性能。
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved. http://www.cnki.net

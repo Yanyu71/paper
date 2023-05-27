@@ -1,0 +1,16 @@
+2.424接口和协议
+本节主要介绍E-UTRAN中的LCS接口和协议。如图2-5所示,在E-UTRAN 中，支持LCS所需的接口有：LTE-UU接口，S1-MME接口，SLs接口和SLm 接口。LCS协议可以根据在E-UTRAN中的终点被为三类：以UE为终点，以 eNB为终点和以LMU为终点。
+LCS中，以UE为终点的协议有LPP （LTEPositioning Protocol, LTE定位协 议）和RRC （Radio Resource Control,无线资源控制）协议。LPP以目标UE和 定位服务器（在控制面情况是E-SMLC,在用户面情况是SLP）为终点，是一个 点对点的定位协议。它被设计为允许通过多种定位模式来定位，同时独立特定定 位模式和底层传输的细节。LPP消息被用合适的协议通过中间网络接口（如在S1-MME接口 S1-AP协议，在Uu接口通过NAS/RRC协、议）作为透明PDU（ Protocol Data Unit,协议数据单元）被传输。RRC协议以UE和eNode B为终点。除了提 供LPP消息的传输，它也支持用于定位目的的测量量的传输。
+17
+以 eNB 为终点的的协议有 LPPa （LTE Positioning Protocol Annex, LTE 定位 协议组件）和Sl-AP （S1应用协议）。LPPa在eNB和E-SMLC之间传递信息， 用来支持某些定位功能，例如从eNB收集数据。它对MME是透明的。S1-AP以 MME和eNB为终点，它被用来在S1-MME接口上传输LPP和LPPa消息，也 被用来发起和终结eNB相关的定位流程。
+以 LMU 为终点的协议有 SLmAP （SLm Application Protocol, SLm 应用协 议）。SLmAP以E-SMLC和LMU为终点，用来从E-SMLC向LMU传递目标用 户配置数据，或者请求LMU测量和传递LMU测量量到E-SMLCo
+为了支持E-SMLC和UE之间的LPP消息传输，协议分层如图2-7所示。为 了支持E-SMLC和eNB之间的LPPa PDU传输，协议分层如图2-8所示。为了 支持E-SMLC和LMU之间的SLmAP消息传输，协议分层如图2-9所示。
+图2-7 LPP协议7⑷1
+图2-8 LPPa协议栈M2]
+SLmAP			SLmAP
+SCTP			SCTP
+IP			IP
+L2			L2
+L1			L1
+LMU	SLm		E-SMLC
+图2-9 SLmAP协议栈回

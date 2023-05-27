@@ -1,0 +1,28 @@
+4.3.4信道估计及均衡功能设计
+实现函数为
+void Pucch_DTXChEstEq(
+short *pDataInO,
+short *pDataInl,
+STRU_PUCCH_DTX_CHEST_EQ_PARA *pStruPucchDtxChEstEqPara,
+unsigned char *pPucchDtxFlag,
+short *pDataOut,
+)°
+格式1/la/lb实现流程如图4-10所示：
+是
+结束
+、 	丿
+图4-10 PUCCH格式1/la/lb信道估计均衡流程图 流程中涉及到的算法有：
+53
+信道估计及均衡：
+1）	取出每个用户数据DataZCed,将其分成数据部分DataZCed[dataIdx][12]和参考 信号 DataZCed[rsIdx][12],其中 dataldx =0,1,5,6, rsldx =2,3,4；
+2）	参考信号DataZCed[rsIdx][12]每个符号的12个子载波值相加后与并进行解扩， 得到信道估计值CE,并计算信道功率powerH；
+3）	数据部分DataZCed[dataIdx][12]每个符号的12个子载波值相加后，对数据部分 4个符号进行解扩，得到dataBefbreEq；
+4）	dataBefbreEq乘以信道估计CE的共氟 得蓟每个用户一个时隙上均衡植 dataEqed[TsIdx]。
+噪声估计和DTX判决：
+D数据部分DataZCed[dataIdx][12]每个符号的12个子载波值相加后，对其4个符 号进行不同于上述数据的解扩，得到该时隙噪声项，计算功率NoisePower。
+2）将两个时隙上NoisePower相加，也将两个时隙上powerH相加，然后两天线上 NoisePower和powerH加权，判断得到是否为DTX。
+格式2/2a/2b的处理过程为：
+1）	取出每个用户数据DataZCed,将其分成数据部分DataZCed[dataIdx][12]和参考 信号 DataZCed[rsIdx][12]» 对于常规 cp,对于格式 2, dataldx =0,2,3,4,6 为数据部分，rsldx =1,5为参考信号部分；对于格式2a/2b, rsldx =0,2,3,4,5,6为数据部分，rsldx =1为参考 信号部分。
+2）	对DataZCed [rsldx][12]的12个子载波值相加，将两个或1个符号和并共辘，得 到信号估计值；
+3）	将DataZCed [dataldx][12]的数据部分12个子载波相加得到数据解扩值 dataBefbreEqe[6]；
+4）	将dataBeforeEqe[6]中每个值与信道估计值共轴分别相乘，即得到每个用户一个 时隙上均衡值dataEqed[6]o

@@ -1,0 +1,13 @@
+2.4.2Storm平台主要组件介绍
+Storm集群主要由一个主节点（Master Node）和一群工作节点（Worker Node） 组成，集群内部通过Zookeeper （分布式服务框架）进行协调。
+Nimbus：在Strom集群主节点（Master Node）上运行的后台程序，负责在 Storm集群内分配任务并发送代码到工作节点，并且负责监控整个集群的拓扑运 行状态。Nimbus之于Strom类似于JobTracker之于Hadoop。
+Supervisor：在Storm集群每个工作节点（Work Node）上运行的后台程序， 负责监听从Nimbus分配给本工作节点执行的任务，据此启动或停止执行任务的 工作进程。
+Topology： Storm 中 Topology 的概念和 Hadoop 中的 MapReduce Job 很相似。 类似于 Hadoop MapReduce 中一个 Job 包含一组 Map Task>Reduce Task, Topology 是一个用来编排、容纳一组Storm计算逻辑组件（Spout、Bolt）的对象，这些逻 辑元件可以根据需求自由组合成有向无环图，并且可以根据Stream Grouping的 方法自定义消息的分发方式，组合成一个由计算逻辑组成的DAG图，从而完成 更加复杂计算任务对象。拓扑流一旦开始运行就不会自动终止，即会永远运行下 去，直到人为终止拓扑，或者服务器节点宕掉，拓扑才会终止。
+Spout：在拓扑中，一个消息流产生的起点称为Spout。Spout可以源源不断 的产生数据流。Spout只是一个代号，其实现形式可以多种多样，其可能是Kafka 的Consumer,也可能是监听的某个目录下的log文件，也可能是网站的PV, UV 指标等等。Spout产生的数据流在拓扑中是以Tuple的形式传输的，Tuple通过在 拓扑的各个组件间传输来完成计算任务。整个流计算也就是这样完成的。
+Bolt： Storm中数据的计算是在Bolt中实现的，Bolt中可以自定义计算的逻 辑，只需在Bolt中实现其对应的函数即可，函数编写和普通java函数类似。特 别之处在于，要按照所设想的拓扑中数据流动的规则来定义Spout和Bolt、Bolt 和Bolt之间的消息传输机制，包括Declare> Stream Grouping等。Bolt可以从多 个对象接收消息数据，既可以从不仅限于一个Spout接收消息，也能接收不仅限 于一个Bolt的消息数据，甚至可以从Spout与Bolt组合接收数据。
+Stream Grouping： Storm的拓扑中，消息流在逻辑元件之间的传输策略机 制被称为Stream Grouping□ Storm定义了如下7种分发策略：Shuffle Grouping （随机分组）、Fields Grouping （按字段分组）、All Grouping （广播分组）、 Global Grouping （全局分组）、Non Grouping （不分组）、Direct Grouping （直 接分组）、Local or Shuffle Grouping （本地/随机分组）。
+Tuple： Storm使用Tuple来作为它的数据模型。Tuple是一堆值的统称，每 个值可以有不同的名字。Tuple可以有很多类型，基本上Java里所有的数据类型都可以做为Tuple。只要对数据进行一些基本的序列化，理论上，用户甚至可以 自己编写数据类型来当Tuple。一般来说,Tuple本来应该是以键值对(Key-Value) 的形式来传递的，但是由于Strom的消息传递机制，逻辑元件间传输的Tuple的 Key已经定义好了,所以Tuple只需要按序填入各个Value,即一个Value Listo
+Storm各组件关系图如图2-2所示：
+图2-2 Storm各组件关系
+Storm分布式处理平台定义了不同于MR的流处理模型，即拓扑(Toplogy)。 拓扑中的传输的源源不断的数据元组Tuple即组成了数据流(Stream)。Tuple 可以是任何类型的数据，可以是Integer, Float,或者Byte数组，也可以由使用 者根据自己的需求定义新的数据类型。Stream之间通过一个唯一 ID进行区分， 以确保拓扑传输过程中不会混淆。Stream从Spout出发，Spout将Stream发射到 下一个Bolt,完成了将外部数据源的数据传输进拓扑中，Storm计算由此开始。 当数据进入Bolt中，Bolt便根据使用者设定对数据进行计算。如果一级Bolt满 足不了使用者的需求，使用者也可自己调整Bolt结构，串联或者并联多级Bolt 进行数据处理。最后，Bolt也可负责将计算结果存入Hbase或者MySql等数据 库或者数据仓库中。整个Storm拓扑结构如图2-3所示。
+图2-3 Storm拓朴结构图

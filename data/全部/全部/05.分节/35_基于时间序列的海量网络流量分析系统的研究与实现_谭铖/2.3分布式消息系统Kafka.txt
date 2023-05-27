@@ -1,0 +1,15 @@
+2.3分布式消息系统Kafka
+Kafka最初是领英提出的分布式消息系统，基于发布/订阅的模型，因为良好 的扩展性和优秀的传输性能而被广泛采用。Kafka 一般被用来处理活动的流式数 据。这种数据在网站数据中很常见，包括用户的Page View (PV)、Unique Visitor (UV)、Event等行为。通常，这些数据会以log文件的形式保存下来，到一定 时间再统一进行处理。Kafka有良好的可扩展性，与当下的很多大数据处理框架 都相容，Kafka-Storm已成为Storm处理形式上的经典组合。
+Kafka的架构包括以下组件：
+Broker： Kafka由多个Broker服务器组成，已发布的消息保存在Broker中。
+Topic：每条消息数据发送到Kafka几千前，都会被要求指定一个Topic, Kafka按不同的物理逻辑对消息数据进行分类存储，同一个Topic可能被存与不 同的Broker服务器上，但是不影响消息数据的消费顺序。
+Partition：消息在物理上的分区即成为Partition, 一个Topic可以由多个 Partition组成，这样即可达到负载均衡的效果。
+Producer： Producer指消息的提供者，负责发布消息数据到Kafka Broker ±. 对应的Topic o
+Consumer： Consumer指息的使用者，其可以从Kafka关注多个Topic,并 在相应的Topic有新消息数据时，从Kafka集群获得数据，并加以后续处理。
+Consumer Group： 多个 Consumer 组成 了 Consumer Group, 单个 Consumer 也可自定义Group Name,若不指定Group Name,则属于默认的Group。
+Kafka拓扑结构图：
+图2-1 Kafka拓扑结构
+如图，Kafka集群中可能会有多个消息生产者，这些生产者可能是一些log 文件，或者是网站的PV, UV等；多个Broker服务器，显然服务器越多，Kafka 集群性能也越好；多个消费者组，消息消费者都属于一个特定的消费者组；一个 Zookeeper集群，Kafka集群内部是用Zookeeper进行通信并协调各节点的。生产 者通过Push模式发送消息到Kafka集群，消费者通过Pull模式从集群获取消息。
+Kafka存储策略
+Kafka集群的消息存储模式一点都不复杂。消息数据会按照Topic进行分类， 并有每个逻辑日志与之匹配，在物理存储上，同一个逻辑日志由一系列同容量的 log文件组成。Producer发送一个消息数据到对应的Partition,该消息数据将被追 加到对应的最新的log文件中。当log文件超过一个阈值后，Kafka会将其写入 硬盘存储。之后，Consumer即可以从硬盘上获得该数据。特别的是，一般的消 息系统所传输的消息数据都会有一个对应的消息ID,而Kafka却没有。Kafka 是通过log文件的偏移量来控制消息数据的。这样做的好处是免去了通过消息ID 来反向寻找对应消息的时间和开销o Kafka集群中通过偏移量来定位消息，若想 获得下一条数据的偏移量，则用本条消息数据的偏移量加上本条数据长度即可实 现，方便快捷。
+Consumer是从其订阅消息的Partition获得数据，所以Consumer获取了所关 注消息的偏移量，则其获得了该条以前的所有消息数据。Consumer每次向Ka&a 请求获取消息时都会包括所要获取消息的偏移量。而当Kakfa接收到该请求后， 会利用SendfileAPI来快速的将消息数据发送给Consumer=

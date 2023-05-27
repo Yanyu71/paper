@@ -1,0 +1,49 @@
+5.4PCIEDMA模块仿真测试
+本部分功能由于无法通过仿真波形显示，本文利用Modelsim在根复合体的TX 和RX端抓取TLP包，通过对TLP包的分析显示功能的正确性。通过编写测试程序 在根复合体（以下简称RC）端模拟出真实驱动与PCIEDMA模块的数据交互过程。 下面以网卡接收数据过程为例介绍完整的测试流程，如图5-9所示。
+图5-9接收数据包测试流程图
+为了测试此部分内容，选择第二条路径，即由1OG Ethernet PCS/PMA （10GB ASE- R/KR）的IP Example Design产生数据激励源，经过PCS接收、MAC接收（卸载加速）、 路径转换、PCIE DMA模块，再到达主机侧中的RC,这一路径可测试PCIE DMA模 块的整体功能。
+62
+(1) PCIE事务层仿真测试
+在测试程序中RC首先对PCIE配置空间进行初始化操作，主要对MSI中断进 行配置。如图5-10所示，在左图中RC对网卡PCIE配置空间进行了一次配置写请 求，向0x010寄存器地址写入了 FF,随后又对0x010寄存器进行了一次配置读请求 来判断是否成功写入。在右图中可看到，由于第一次为配置写请求，网卡返回不带数 据的CMPL包，第二次为配置读请求，网卡将要读取的数据FF返回给了 RC。结果
+图5-10存储器读写请求(左)和CMPL包(右)
+(2) DMA寄存器仿真测试
+在对PCIE进行初始化操作后，RC开始通过PCIE总线对DMA寄存器进行配 置，主要对4.3.2小节中所设计的寄存器进行配置。如图5-11所示，根据寄存器地址 0x800F0000可知RC对RX_BASE_LOW进行存储器写请求，在此过程中，完成了 对 RX_BASE_HIGH ( Ox800F0200 )、TX_BASE_LOW ( 0x800F1000 )以及 TX_BASE_HIGH (Ox800F1200)等寄存器的配置，同时使能RX接收队列，为接收 数据做准备。结果表明DMA寄存器功能正确。
+63
+图5-11 DMA寄存器相关配置
+(3) DMA读操作仿真测试
+经过RC对DMA寄存器配置后以及使能接收队列后，RC再次发起存储器写请 求，对RX_BD_TAIL (Ox800F0800)寄存器写入了 0x10,表示预先定义好的16个 接收BD在内存中等待读取，如图5-12所示。随后DMA控制器发起DMA读操作， 从64位内存地址OxOOOOOOOSBBBBOOOO中将16个接收BD进行读取，RC以带数据 的CMPL包的形式将接收BD发送到网卡，如图5-13所示(仅贴出了部分接收BD 信息)。结果表明DMA读操作功能正确。
+图5-12写使能RX队列和RX_BD_TAIL寄存器
+64
+EP： e
+Attrib吐g£： 0x0
+Length: 0x040
+Requester Id: 0X01A0
+Tag: 0x00
+Last and First Byte Enables: 0xFF
+Address High: 0x00000008:
+Address Low: 0XBBBB0000
+图5-13 DMA读操作（左）和CMPL包（右）
+（4）	DMA写操作仿真测试
+DMA控制器将读取回来的接收BD进行缓存，并随即发起DMA写操作，将接
+收到的网络数据根据接收BD中具体的地址信息写入到指定内存。如图5-14所示， 具体内存地址为0x0000000AAAAOOOOO»左图中OxFBCXGMII接口中的start信号） 为以太网帧的起始标志，OxFD （XGMII接口中的terminate信号）为以太网帧的结束 标志，和右图中后半部分网卡要写入内存的数据一致，其中前半部分中的16bytes数 据为内部控制信息，主要是包长度等信息。此过程由10G Ethernet PCS/PMA （10GBASE-R/KR）发出激励数据，经过PCS模块以及MAC层后通过DMA方式转 发到根复合体结果也表明了这一路径上的模块功能正确，即系统整体功能正确。
+[200844*417 ns ] : Memory Write-64 Frame；
+Traffic Class: 0x0
+TD: 0
+EP: 0
+Attributes: 0x0
+Length: 0x014
+Requester Id: 0X01A0
+Tag: 0x00
+Last and First Byte Enables: QxFF
+Address High: 0X0006000A
+Address Low: 0XAAA60000
+0x00 0X00	0x01	0x00	0x38	0x80	0x01	0x30	8x65	0x3E
+0x00 0x00	0x06	0x00	0x00	0x60	0xFB	0x02	6x03	0x04
+0X05 0X06	0x02	0x02	0x03	0x64	0x05	0X06	0x00	0x2E	|
+0XAA 0X55	0X5S	0xAA	0x55	€xAA	0xAA	0xS5	0xAA	0x55	:
+|	0x55 0XAA 0x5S 0xAA 8xAA 0x55 0xAA 6x55 0x55 0xAA[ |
+0x55 0xAA	0xAA	0x55	0xAA	0x55	8x55	0xAA	8x55	0xAA
+0xAA 0x55	0xAA	0x55	0x55	8xAA	8x55	0xAA	0xAA	0x55:
+0xAA 0x55	0x5S	0xAA	0x55	0xFD	0x08	0x00	0x00	0x80
+图5・14测试程序中的激励数据（左）和网卡收到的数据（右）
+65

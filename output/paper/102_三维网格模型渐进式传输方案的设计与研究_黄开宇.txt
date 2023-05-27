@@ -1,0 +1,693 @@
+﻿{
+    "knowledge_points": [
+        {"title": "虚拟现实技术", "en": "Virtual Reality Technology"},
+        {"title": "增强现实技术", "en": "Augmented Reality Technology"},
+        {"title": "三维模型", "en": "3D Model"},
+        {"title": "流媒体技术", "en": "Streaming Media Technology"},
+        {"title": "渐进式传输", "en": "Progressive Transmission"}
+    ],
+    "relations": [
+        {"source": "计算机科学技术", "target": "虚拟现实技术", "type": "包含"},
+        {"source": "计算机科学技术", "target": "增强现实技术", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "计算机图形技术", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "计算机仿真技术", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "显示技术", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "传感器技术", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "三维虚拟世界", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "人机交互界面", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "听觉", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "视觉", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "触觉", "type": "包含"},
+        {"source": "虚拟现实技术", "target": "沉浸式体验", "type": "包含"},
+        {"source": "增强现实技术", "target": "AR试穿", "type": "应用"},
+        {"source": "增强现实技术", "target": "虚拟看房", "type": "应用"},
+        {"source": "增强现实技术", "target": "在线家装", "type": "应用"},
+        {"source": "增强现实技术", "target": "网络游戏", "type": "应用"},
+        {"source": "三维模型", "target": "网格模型", "type": "包含"},
+        {"source": "三维模型", "target": "点云模型", "type": "包含"},
+        {"source": "网格模型", "target": "三角形网格", "type": "包含"},
+        {"source": "点云模型", "target": "点描述", "type": "包含"},
+        {"source": "点云模型", "target": "三维重建", "type": "应用"},
+        {"source": "流媒体技术", "target": "视频文件下载", "type": "历史"},
+        {"source": "流媒体技术", "target": "流媒体传输", "type": "现状"},
+        {"source": "流媒体技术", "target": "音视频内容体验", "type": "应用"},
+        {"source": "渐进式传输", "target": "三维媒体流", "type": "包含"},
+        {"source": "渐进式传输", "target": "基础层", "type": "包含"},
+        {"source": "渐进式传输", "target": "优化层", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "渐进式传输",
+            "en": "Progressive transmission"
+        },
+        {
+            "title": "三维场景",
+            "en": "3D scene"
+        },
+        {
+            "title": "兴趣管理技术",
+            "en": "Interest management technology"
+        },
+        {
+            "title": "视椎体剔除",
+            "en": "Frustum culling"
+        },
+        {
+            "title": "遮挡剔除",
+            "en": "Occlusion culling"
+        },
+        {
+            "title": "多分辨率建模技术",
+            "en": "Multi-resolution modeling technology"
+        },
+        {
+            "title": "视觉分辨率",
+            "en": "Visual resolution"
+        },
+        {
+            "title": "视觉注意机制",
+            "en": "Visual attention mechanism"
+        },
+        {
+            "title": "纹理图片",
+            "en": "Texture image"
+        }
+    ],
+    "relations": [
+        {
+            "source": "渐进式传输",
+            "target": "三维场景",
+            "type": "包含"
+        },
+        {
+            "source": "兴趣管理技术",
+            "target": "渐进式传输",
+            "type": "实现"
+        },
+        {
+            "source": "视椎体剔除",
+            "target": "兴趣管理技术",
+            "type": "实现"
+        },
+        {
+            "source": "遮挡剔除",
+            "target": "兴趣管理技术",
+            "type": "实现"
+        },
+        {
+            "source": "多分辨率建模技术",
+            "target": "渐进式传输",
+            "type": "实现"
+        },
+        {
+            "source": "视觉分辨率",
+            "target": "渐进式传输",
+            "type": "影响"
+        },
+        {
+            "source": "视觉注意机制",
+            "target": "渐进式传输",
+            "type": "影响"
+        },
+        {
+            "source": "纹理图片",
+            "target": "渐进式传输",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "三维模型建模方式", "en": "Three-dimensional model modeling methods"},
+        {"title": "三维网格模型", "en": "Three-dimensional mesh model"},
+        {"title": "网格模型压缩方式", "en": "Mesh model compression methods"},
+        {"title": "多分辨率压缩", "en": "Multi-resolution compression"},
+        {"title": "三维场景渐进式传输", "en": "Progressive transmission of three-dimensional scenes"}
+    ],
+    "relations": [
+        {"source": "三维模型建模方式", "target": "三维网格模型", "type": "包含"},
+        {"source": "三维网格模型", "target": "网格模型压缩方式", "type": "关联"},
+        {"source": "网格模型压缩方式", "target": "多分辨率压缩", "type": "包含"},
+        {"source": "多分辨率压缩", "target": "三维场景渐进式传输", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "点云模型", "en": "Point Cloud Model"},
+        {"title": "三维流", "en": "3D Streaming"},
+        {"title": "网格模型", "en": "Mesh Model"},
+        {"title": "渐进式传输", "en": "Progressive Transmission"}
+    ],
+    "relations": [
+        {"source": "点云模型", "target": "3D Streaming", "type": "包含"},
+        {"source": "网格模型", "target": "渐进式传输", "type": "应用"},
+        {"source": "三维流", "target": "渐进式传输", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "渐进式传输",
+            "en": "Progressive transmission"
+        },
+        {
+            "title": "网格模型",
+            "en": "Mesh model"
+        },
+        {
+            "title": "纹理图片",
+            "en": "Texture image"
+        },
+        {
+            "title": "PM算法",
+            "en": "PM algorithm"
+        },
+        {
+            "title": "边折叠",
+            "en": "Edge collapse"
+        },
+        {
+            "title": "点分裂",
+            "en": "Vertex split"
+        },
+        {
+            "title": "渐进森林分裂表示算法",
+            "en": "Progressive forest split representation algorithm"
+        },
+        {
+            "title": "压缩的渐进式网格",
+            "en": "Compressed progressive meshes"
+        },
+        {
+            "title": "三维场景",
+            "en": "3D scene"
+        },
+        {
+            "title": "兴趣管理技术",
+            "en": "Interest management technology"
+        },
+        {
+            "title": "AOI",
+            "en": "Area of interest"
+        },
+        {
+            "title": "圆形区域",
+            "en": "Circular area"
+        },
+        {
+            "title": "扇形区域",
+            "en": "Sector area"
+        },
+        {
+            "title": "组合区域",
+            "en": "Combined area"
+        }
+    ],
+    "relations": [
+        {
+            "source": "网格模型",
+            "target": "渐进式传输",
+            "type": "包含"
+        },
+        {
+            "source": "纹理图片",
+            "target": "渐进式传输",
+            "type": "包含"
+        },
+        {
+            "source": "PM算法",
+            "target": "网格模型",
+            "type": "实现"
+        },
+        {
+            "source": "边折叠",
+            "target": "PM算法",
+            "type": "基础操作"
+        },
+        {
+            "source": "点分裂",
+            "target": "PM算法",
+            "type": "基础操作"
+        },
+        {
+            "source": "渐进森林分裂表示算法",
+            "target": "网格模型",
+            "type": "实现"
+        },
+        {
+            "source": "压缩的渐进式网格",
+            "target": "网格模型",
+            "type": "实现"
+        },
+        {
+            "source": "兴趣管理技术",
+            "target": "三维场景",
+            "type": "应用"
+        },
+        {
+            "source": "AOI",
+            "target": "兴趣管理技术",
+            "type": "基础概念"
+        },
+        {
+            "source": "圆形区域",
+            "target": "AOI",
+            "type": "类型"
+        },
+        {
+            "source": "扇形区域",
+            "target": "AOI",
+            "type": "类型"
+        },
+        {
+            "source": "组合区域",
+            "target": "AOI",
+            "type": "类型"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "圆形兴趣区域", "en": "Circular interest area"},
+        {"title": "扇形兴趣区域", "en": "Sector interest area"},
+        {"title": "兴趣区域管理方案", "en": "Interest area management plan"},
+        {"title": "纹理图片压缩", "en": "Texture image compression"},
+        {"title": "纹理压缩标准", "en": "Texture compression standards"},
+        {"title": "LODs网格模型", "en": "LODs mesh model"},
+        {"title": "渐进式传输", "en": "Progressive transmission"},
+        {"title": "二次误差度量算法", "en": "Quadric Error Metrics algorithm"},
+        {"title": "传输队列确定", "en": "Transmission queue determination"},
+        {"title": "传输优先级", "en": "Transmission priority"}
+    ],
+    "relations": [
+        {"source": "圆形兴趣区域", "target": "扇形兴趣区域", "type": "has higher relevance than"},
+        {"source": "圆形兴趣区域", "target": "兴趣区域管理方案", "type": "is used in"},
+        {"source": "扇形兴趣区域", "target": "兴趣区域管理方案", "type": "is used in"},
+        {"source": "兴趣区域管理方案", "target": "确定对象在兴趣区域内的重要程度", "type": "defines how to determine the importance of objects in the interest area"},
+        {"source": "纹理图片压缩", "target": "网格模型的属性信息在三维场景的传输占据了很高的比重", "type": "is related to"},
+        {"source": "纹理图片压缩", "target": "纹理图片贡献了网络传输数据量的61%-88%", "type": "is related to"},
+        {"source": "纹理图片压缩", "target": "纹理压缩标准", "type": "is related to"},
+        {"source": "纹理图片压缩", "target": "纹理图片简化", "type": "is related to"},
+        {"source": "纹理压缩标准", "target": "ASTC", "type": "is a type of"},
+        {"source": "纹理压缩标准", "target": "DXTC", "type": "is a type of"},
+        {"source": "纹理压缩标准", "target": "ETC", "type": "is a type of"},
+        {"source": "纹理图片简化", "target": "LODs网格模型", "type": "is related to"},
+        {"source": "渐进式传输", "target": "LODs网格模型", "type": "is used in"},
+        {"source": "渐进式传输", "target": "兴趣区域管理方案", "type": "is used in"},
+        {"source": "二次误差度量算法", "target": "模型的失真情况", "type": "calculates the distortion of the model"},
+        {"source": "传输队列确定", "target": "场景信息", "type": "determines the scene information to be transmitted"},
+        {"source": "传输队列确定", "target": "模型信息", "type": "determines the model information to be transmitted"},
+        {"source": "传输优先级", "target": "二次误差度量算法", "type": "uses the Quadric Error Metrics algorithm"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "渲染管线", "en": "Rendering Pipeline"},
+        {"title": "物体消除", "en": "Object Culling"},
+        {"title": "背面消除", "en": "Backface Culling"},
+        {"title": "Mipmap", "en": "Mipmap"},
+        {"title": "兴趣区域", "en": "Interest Region"},
+        {"title": "渐进式编码", "en": "Progressive Encoding"},
+        {"title": "P2P网络框架", "en": "P2P Network Framework"},
+        {"title": "客户端/服务器框架", "en": "Client/Server Framework"},
+        {"title": "网格模型重要程度计算", "en": "Mesh Importance Calculation"},
+        {"title": "纹理图片简化", "en": "Texture Simplification"},
+        {"title": "更新策略", "en": "Update Strategy"},
+        {"title": "包围球", "en": "Bounding Sphere"},
+        {"title": "包围盒", "en": "Bounding Box"},
+        {"title": "视锥体", "en": "View Frustum"}
+    ],
+    "relations": [
+        {"source": "渲染管线", "target": "物体消除", "type": "包含"},
+        {"source": "渲染管线", "target": "背面消除", "type": "包含"},
+        {"source": "渲染管线", "target": "Mipmap", "type": "包含"},
+        {"source": "兴趣区域", "target": "渐进式编码", "type": "包含"},
+        {"source": "兴趣区域", "target": "网格模型重要程度计算", "type": "包含"},
+        {"source": "兴趣区域", "target": "纹理图片简化", "type": "包含"},
+        {"source": "兴趣区域", "target": "更新策略", "type": "包含"},
+        {"source": "渐进式编码", "target": "P2P网络框架", "type": "使用"},
+        {"source": "渐进式编码", "target": "客户端/服务器框架", "type": "使用"},
+        {"source": "网格模型重要程度计算", "target": "包围球", "type": "使用"},
+        {"source": "网格模型重要程度计算", "target": "视锥体", "type": "使用"},
+        {"source": "纹理图片简化", "target": "包围盒", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Z轴方向物体消除条件", "en": "Z-axis direction object elimination condition"},
+        {"title": "X轴方向物体消除条件", "en": "X-axis direction object elimination condition"},
+        {"title": "Y轴方向物体消除条件", "en": "Y-axis direction object elimination condition"},
+        {"title": "背面消除", "en": "Backface culling"},
+        {"title": "可见区域和不可见区域", "en": "Visible and invisible regions"},
+        {"title": "视点对三维内容的影响", "en": "The impact of viewpoint on 3D content"},
+        {"title": "Mipmap技术", "en": "Mipmap technology"}
+    ],
+    "relations": [
+        {"source": "Z轴方向物体消除条件", "target": "X轴方向物体消除条件", "type": "related"},
+        {"source": "Z轴方向物体消除条件", "target": "Y轴方向物体消除条件", "type": "related"},
+        {"source": "X轴方向物体消除条件", "target": "Y轴方向物体消除条件", "type": "related"},
+        {"source": "X轴方向物体消除条件", "target": "背面消除", "type": "related"},
+        {"source": "Y轴方向物体消除条件", "target": "背面消除", "type": "related"},
+        {"source": "可见区域和不可见区域", "target": "背面消除", "type": "related"},
+        {"source": "视点对三维内容的影响", "target": "背面消除", "type": "related"},
+        {"source": "Mipmap技术", "target": "背面消除", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Mipmap技术", "en": "Mipmap technology"},
+        {"title": "AR应用中的姿态求解", "en": "Pose estimation in AR applications"},
+        {"title": "网格重要程度", "en": "Mesh importance"},
+        {"title": "基于视觉感知的模型重要程度计算", "en": "Model importance calculation based on visual perception"},
+        {"title": "基于中心-周围机制的视点显著性计算", "en": "Viewpoint saliency calculation based on center-surround mechanism"}
+    ],
+    "relations": [
+        {"source": "Mipmap技术", "target": "渐进式压缩和传输", "type": "实现过程"},
+        {"source": "Mipmap技术", "target": "纹理图片", "type": "实现过程"},
+        {"source": "AR应用中的姿态求解", "target": "渲染流程", "type": "相同"},
+        {"source": "AR应用中的姿态求解", "target": "三维场景应用", "type": "相同"},
+        {"source": "AR应用中的姿态求解", "target": "模型的姿态求解", "type": "需要关注"},
+        {"source": "AR应用中的姿态求解", "target": "现实世界的联系", "type": "需要确定"},
+        {"source": "网格重要程度", "target": "三维场景包含的内容", "type": "相关"},
+        {"source": "网格重要程度", "target": "模型简化编码", "type": "相关"},
+        {"source": "网格重要程度", "target": "传输保护", "type": "相关"},
+        {"source": "网格重要程度", "target": "场景重建", "type": "相关"},
+        {"source": "网格重要程度", "target": "兴趣区域管理", "type": "相关"},
+        {"source": "基于视觉感知的模型重要程度计算", "target": "三角形网格表示", "type": "基础"},
+        {"source": "基于视觉感知的模型重要程度计算", "target": "人类视觉系统", "type": "基础"},
+        {"source": "基于视觉感知的模型重要程度计算", "target": "视觉分辨率", "type": "基础"},
+        {"source": "基于视觉感知的模型重要程度计算", "target": "模型重要程度计算算法", "type": "提出"},
+        {"source": "基于中心-周围机制的视点显著性计算", "target": "视点显著性计算方式", "type": "提出"},
+        {"source": "基于中心-周围机制的视点显著性计算", "target": "视觉质量", "type": "评价"},
+        {"source": "基于中心-周围机制的视点显著性计算", "target": "网格模型重要评价方式", "type": "提出"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "三维网格模型简化",
+            "en": "3D Mesh Simplification"
+        },
+        {
+            "title": "视距",
+            "en": "Viewing Distance"
+        },
+        {
+            "title": "LOD模型",
+            "en": "LOD Model"
+        },
+        {
+            "title": "相机投影",
+            "en": "Camera Projection"
+        },
+        {
+            "title": "视觉注意机制",
+            "en": "Visual Attention Mechanism"
+        },
+        {
+            "title": "中心-周围机制",
+            "en": "Center-Surround Mechanism"
+        },
+        {
+            "title": "曲率",
+            "en": "Curvature"
+        },
+        {
+            "title": "显著性计算",
+            "en": "Saliency Calculation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "三维网格模型简化",
+            "target": "LOD模型",
+            "type": "包含"
+        },
+        {
+            "source": "视距",
+            "target": "LOD模型",
+            "type": "影响"
+        },
+        {
+            "source": "LOD模型",
+            "target": "相机投影",
+            "type": "应用"
+        },
+        {
+            "source": "相机投影",
+            "target": "视觉注意机制",
+            "type": "应用"
+        },
+        {
+            "source": "视觉注意机制",
+            "target": "中心-周围机制",
+            "type": "包含"
+        },
+        {
+            "source": "中心-周围机制",
+            "target": "曲率",
+            "type": "应用"
+        },
+        {
+            "source": "中心-周围机制",
+            "target": "显著性计算",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "基于视点的网格显著性",
+            "en": "Viewpoint-based mesh saliency"
+        },
+        {
+            "title": "相机坐标",
+            "en": "Camera coordinates"
+        },
+        {
+            "title": "最佳视点",
+            "en": "Optimal viewpoint"
+        },
+        {
+            "title": "最不利视点",
+            "en": "Adverse viewpoint"
+        },
+        {
+            "title": "渐进式传输",
+            "en": "Progressive transmission"
+        },
+        {
+            "title": "重要程度",
+            "en": "Importance"
+        },
+        {
+            "title": "模型姿态",
+            "en": "Model posture"
+        },
+        {
+            "title": "LOD",
+            "en": "Level of detail"
+        },
+        {
+            "title": "标准差",
+            "en": "Standard deviation"
+        },
+        {
+            "title": "非线性映射",
+            "en": "Nonlinear mapping"
+        },
+        {
+            "title": "模型描述文件",
+            "en": "Model description file"
+        },
+        {
+            "title": "方向向量",
+            "en": "Direction vector"
+        }
+    ],
+    "relations": [
+        {
+            "source": "基于视点的网格显著性",
+            "target": "相机坐标",
+            "type": "相关"
+        },
+        {
+            "source": "基于视点的网格显著性",
+            "target": "最佳视点",
+            "type": "相关"
+        },
+        {
+            "source": "基于视点的网格显著性",
+            "target": "最不利视点",
+            "type": "相关"
+        },
+        {
+            "source": "基于视点的网格显著性",
+            "target": "渐进式传输",
+            "type": "相关"
+        },
+        {
+            "source": "基于视点的网格显著性",
+            "target": "重要程度",
+            "type": "相关"
+        },
+        {
+            "source": "模型姿态",
+            "target": "基于视点的网格显著性",
+            "type": "相关"
+        },
+        {
+            "source": "LOD",
+            "target": "模型姿态",
+            "type": "相关"
+        },
+        {
+            "source": "标准差",
+            "target": "基于视点的网格显著性",
+            "type": "相关"
+        },
+        {
+            "source": "非线性映射",
+            "target": "基于视点的网格显著性",
+            "type": "相关"
+        },
+        {
+            "source": "模型描述文件",
+            "target": "基于视点的网格显著性",
+            "type": "相关"
+        },
+        {
+            "source": "方向向量",
+            "target": "模型描述文件",
+            "type": "相关"
+        },
+        {
+            "source": "相机坐标",
+            "target": "方向向量",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "方向向量和夹角",
+            "en": "Direction vectors and angles"
+        },
+        {
+            "title": "视觉重要程度",
+            "en": "Visual importance"
+        },
+        {
+            "title": "渐进式传输",
+            "en": "Progressive transmission"
+        },
+        {
+            "title": "联合优化",
+            "en": "Joint optimization"
+        },
+        {
+            "title": "比特率-失真度曲线",
+            "en": "Bitrate-distortion curve"
+        },
+        {
+            "title": "更新策略",
+            "en": "Update strategy"
+        }
+    ],
+    "relations": [
+        {
+            "source": "方向向量和夹角",
+            "target": "视觉重要程度",
+            "type": "描述"
+        },
+        {
+            "source": "视觉重要程度",
+            "target": "渐进式传输",
+            "type": "描述"
+        },
+        {
+            "source": "渐进式传输",
+            "target": "联合优化",
+            "type": "描述"
+        },
+        {
+            "source": "联合优化",
+            "target": "比特率-失真度曲线",
+            "type": "描述"
+        },
+        {
+            "source": "比特率-失真度曲线",
+            "target": "更新策略",
+            "type": "描述"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "传输控制协议TCP", "en": "Transmission Control Protocol TCP"},
+        {"title": "用户数据报协议UDP", "en": "User Datagram Protocol UDP"},
+        {"title": "三维模型基础网格和纹理", "en": "Basic mesh and texture of 3D models"},
+        {"title": "增强层", "en": "Enhancement layer"},
+        {"title": "视觉重要程度", "en": "Visual importance"},
+        {"title": "渐进式编码", "en": "Progressive encoding"},
+        {"title": "兴趣区域管理", "en": "Interest area management"},
+        {"title": "混合传输协议", "en": "Hybrid transmission protocol"},
+        {"title": "数据预处理", "en": "Data preprocessing"},
+        {"title": "传输队列", "en": "Transmission queue"},
+        {"title": "视觉重要性计算", "en": "Visual importance calculation"}
+    ],
+    "relations": [
+        {"source": "传输控制协议TCP", "target": "用户数据报协议UDP", "type": "对比"},
+        {"source": "三维模型基础网格和纹理", "target": "传输控制协议TCP", "type": "使用"},
+        {"source": "增强层", "target": "用户数据报协议UDP", "type": "使用"},
+        {"source": "视觉重要程度", "target": "渐进式编码", "type": "计算"},
+        {"source": "兴趣区域管理", "target": "视觉重要程度", "type": "基于"},
+        {"source": "数据预处理", "target": "渐进式编码", "type": "实现"},
+        {"source": "数据预处理", "target": "视觉重要程度", "type": "绑定"},
+        {"source": "传输队列", "target": "数据预处理", "type": "加载"},
+        {"source": "传输队列", "target": "混合传输协议", "type": "选择"},
+        {"source": "视觉重要性计算", "target": "兴趣区域管理", "type": "输入"},
+        {"source": "视觉重要性计算", "target": "混合传输协议", "type": "排序"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "传输队列", "en": "Transmission queue"},
+        {"title": "渐进式传输", "en": "Progressive transmission"},
+        {"title": "数据预处理", "en": "Data preprocessing"},
+        {"title": "网格模型", "en": "Mesh model"},
+        {"title": "纹理图片", "en": "Texture image"},
+        {"title": "多分辨率处理", "en": "Multiresolution processing"},
+        {"title": "视觉重要程度计算", "en": "Visual importance calculation"},
+        {"title": "更新策略", "en": "Update strategy"},
+        {"title": "模型简化率", "en": "Model simplification rate"},
+        {"title": "PSNR", "en": "Peak signal-to-noise ratio"},
+        {"title": "HVS", "en": "Human visual system"}
+    ],
+    "relations": [
+        {"source": "传输队列", "target": "数据预处理", "type": "包含"},
+        {"source": "传输队列", "target": "更新策略", "type": "包含"},
+        {"source": "数据预处理", "target": "网格模型", "type": "包含"},
+        {"source": "数据预处理", "target": "纹理图片", "type": "包含"},
+        {"source": "网格模型", "target": "多分辨率处理", "type": "包含"},
+        {"source": "纹理图片", "target": "多分辨率处理", "type": "包含"},
+        {"source": "网格模型", "target": "视觉重要程度计算", "type": "包含"},
+        {"source": "视觉重要程度计算", "target": "更新策略", "type": "影响"},
+        {"source": "模型简化率", "target": "网格模型", "type": "影响"},
+        {"source": "模型简化率", "target": "渐进式传输", "type": "影响"},
+        {"source": "PSNR", "target": "渐进式传输", "type": "评价指标"},
+        {"source": "HVS", "target": "渐进式传输", "type": "评价指标"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "渐进式传输三维场景", "en": "Progressive transmission of 3D scenes"},
+        {"title": "视觉感知的计算模型重要程度的算法", "en": "Algorithm for calculating the visual perception of the importance of the model"},
+        {"title": "模型视觉质量最优的更新策略", "en": "Optimal update strategy for model visual quality"},
+        {"title": "基于渲染管线的客户端出发的兴趣区域管理方法", "en": "Interest area management method based on client-side rendering pipeline"},
+        {"title": "网格模型和纹理图片的联合优化方案", "en": "Joint optimization scheme for mesh models and texture images"},
+        {"title": "TCP/UDP混合协议传输", "en": "TCP/UDP hybrid protocol transmission"}
+    ],
+    "relations": [
+        {"source": "渐进式传输三维场景", "target": "视觉感知的计算模型重要程度的算法", "type": "包含"},
+        {"source": "渐进式传输三维场景", "target": "模型视觉质量最优的更新策略", "type": "包含"},
+        {"source": "渐进式传输三维场景", "target": "基于渲染管线的客户端出发的兴趣区域管理方法", "type": "包含"},
+        {"source": "网格模型和纹理图片的联合优化方案", "target": "渐进式传输三维场景", "type": "包含"},
+        {"source": "TCP/UDP混合协议传输", "target": "渐进式传输三维场景", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}
+
+The contents do not contain any knowledge points or relations related to Communication Theory. The sentences are discussing a different topic related to network topology and optimization.

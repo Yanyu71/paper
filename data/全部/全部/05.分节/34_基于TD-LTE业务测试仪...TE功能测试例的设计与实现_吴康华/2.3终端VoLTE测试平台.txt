@@ -1,0 +1,15 @@
+2.3终端VoLTE测试平台
+结合现有TD-LTE平台以及VoLTE网络架构，作者所在团队其他成员对软 件架构进行了修改，添加了 IP_PTC,并对适配层和EUTRA_PTC模块进行了修 改。下面的图是增加了 VoLTE测试功能的系统模型，只对相对于原先系统增加 的部分进行简要介绍。
+VoLTE测试平台架构如图2-5所示四：
+图2-5 终端volte协议一致性测试平台模块各部件功能
+volte终端协议一致性测试用例的开发需要基于协议一致性功能模块开发。 包括测试例模块开发、接口模块开发和对底层协议栈模块参数配置。测试例模块 模拟V6LTE网络系统的相关高层协议栈完成终端测试例模块功能；同时，它控 制整个测试系统时间；通过各接口对底层协议栈各层进行参数配置、信令和数据 传输。架构大体分为三个部分,EUTRA_PTC模块、IP_PTC模块和适配层(System Adaptor)模块。
+1)EUTRA_PTC是TTCN-3测试例脚本，该模块模拟接入网和核心网的部 分功能，包括EUTRA小区和IMS模块，设计中将原本属于核心网的IMS集成 到该模块实现。在测试过程中，由该模块负责与小区进行信令交互和参数配置。
+2)IP_PTC是完全新增模块，其内部主要包括MUX/Filter模块、SIP消息编 解码模块(虚线中的不属于基本功能实体，暂时没有实现，包括VbLTE processor 模块、SRVCC processor 模块、RCS server 模块)。其中：
+终端发过来的IP数据经过MUX/Filter后由该模块按业务类型分类并转发到 相应模块(如图中的SIP Codec, RCS Server、SRVCC processor)分别处理。
+SIP编解码模块就是为了实现SIP格式消息和TTCN-3格式消息的相互转换, 分为SIP编码模块和SIP解码模块，其中上行过程中将终端发来的SIP消息解码 为TTCN-3消息，下行过程中将系统发出的TTCN-3脚本所携带的消息转换为 SIP消息。
+SRVCC processor的功能是当发生EUTRAN与WCDMA或者GSM之间的 切换时，负责在切换期间缓存分组域数据，并在切换完成后进行转发处理，以保 证通话业务的连续性。
+3）由图可知，适配层增加了三个子模块，分别是IP transmit模块、IP Sec 模块和DRB-MUX模块。各子模块功能如下：
+IP transmit负责IP包的转发，具体的说，上行过程中，将接收到的终端发出 的IP包转发给MUX/Filter作进一步处理。下行过程中，接收TTCN要发给终端 的消息，转发到DRB-MUX模块。
+IP Sec模块的功能是对收到的已加密的IP数据进行解密，对要发送的IP数 据进行加密。也就是进行IP security的封装与解封装。根据3GPP TS34.229协议 规定，IP Sec模块支持IKE （Internet Key Exchange,因特网密钥交换）协议、ESP （Encapsulating Security Payload,封装安全载荷）协议头处理以及传输模式的 AH （Authentication Header, 认证头）。
+DRB-MUX模块起着上行数据分发的作用。系统接收上行数据时，由该模块 检查路由配置信息，SIP消息将经过IP Sec、IP transmit模块被发往IP_PTC进行 处理，普通的RRC层的信令消息则直接发往EUTRA_PTC。
+介绍完各功能模块，下面简要描述一下消息的路径（只描述SIP消息）。上 行过程中，TD-LTE系统模拟器（SS）收到终端发送的上行消息后发到适配层 DRB-MUX, DRB-MUX将消息发到IP Sec模块进行解密，再转发到IP transmit 模块,该模块转发到MUX/Filter过滤后在SIP Codec模块进行SIP解码成TTCN-3 格式发送到EUTRA-PTCo EUTRA-PTC收到消息后，进行处理，将TTCN-3格 式消息发到SIP Codec编码成SIP消息格式，由MUX/Filter过滤，IP transmit转 发，再由IP Sec加密后由TD-LTE系统模拟器发送到终端。

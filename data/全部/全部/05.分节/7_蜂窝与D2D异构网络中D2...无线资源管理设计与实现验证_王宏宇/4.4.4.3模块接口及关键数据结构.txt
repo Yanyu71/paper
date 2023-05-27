@@ -1,0 +1,19 @@
+4.4.4.3模块接口及关键数据结构
+AMC模块提供的接口如下:
+// HI report from HARQ
+void amc_closeloop (int dueid, int fh, int sfh, int HI);
+// AMC openloop trigger bool amc_openloop(std::map<cueid, std::pair<rbstart, rblen> >& resourcemap,
+int rbstart, int rblen, int& mcs, int& txpower);
+在 amc_openloop 中，resourcemap、rbstart、rblen 为输入参数，给定需要计 算的资源段；mcs. txpower为输出参数，向资源决策模块反馈此段资源可以使
+68
+用的发送功率与调制编码方式，完成AMC功能。
+其维护的关键数据结构为amcinfo_t,每个DUE的链路质量均由一个amcinfo 结构体记录，定义见表4-10o其中，transresult记录每一次上报的传输情况并以 滑动窗平滑的方式给出残留误包率在一段时间内的平均值，共闭环算法使用。
+表4・10 amcinfo定义
+struct amcicfb t definition
+struct amcinfo_t (
+int totaltrans;
+int residualerrortrans;
+std::queue<std::pair<int sfn, int residualHI> > transresult;
+int mcsfactor;
+} amcinfo [MAX_DUENUM];
+开环AMC中使用有关干扰、路损的数据不在本地存储，需要时向干扰控制 模块请求。

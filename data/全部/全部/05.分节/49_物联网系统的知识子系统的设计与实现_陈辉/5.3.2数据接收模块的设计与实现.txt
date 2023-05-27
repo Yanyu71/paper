@@ -1,0 +1,14 @@
+5.3.2数据接收模块的设计与实现
+数据接收模块主要是用于接收数据订阅模块所有订阅主题的数据，只要此相关主题 的消息被发布，推理功能模块就需要得到这些数据（事件）进行处理。如何接收并正确 的预处理这些数据由数据接收模块来实现。
+由于推理功能模块能接收处理的数据是带有领域信息的对象，所有数据接收模块需 要将从发布订阅接收到的数据转化为Java对象，具体涉及到的类有：SchemaFunction, 类,NotificationProcessImpl 类，DeducerData 类。
+表5-16对上述的这些类和对应的实现功能作了简要介绍：
+表5-16数据接收模块主要涉及类
+类/接口	功能描述
+SchemaFunction	根据输入的Schema文件，解析事件属于哪个主题。
+Deduce Data	生成的数据对象，用于推理模块处理。
+NotifictionProcesslmpl	负责监听是否有数据到来，每当有新的数据到来时，首先 解析出数据是属于个主题。然后根据相应的主题生成对应 的数据对象。
+表 5-17 SchemaFunction 类 getTopicNameBySchema 方法
+方法	protected String getTopicNameBySchema(Document schema)
+描述	根据输入的schema文件的内容判断数据属丁?哪个主题，返冋值为类名。
+参数	@Param schemat org.w3c.dom.Document 对象。
+返冋	String

@@ -1,0 +1,5 @@
+2.3.2SPARQL查询语言
+SPARQL[30]是W3C制定的一个语义网标准协议，是Web上或在一个RDF存储(RDF store)中查询和操作RDF图相关的一组推荐标准。它是在以前的比如rdfDB, RDQL 以及SeRQL的基础上开发的,W3C的官方文档对SPARQL有非常详细的介绍。SPARQL 将RDF看作一个数据图的形式，数据之间关系用Triple三元组⑶】的形式表示。SPARQL 包括 IRK literals lexical fornix plain literals language tag> typed literal、datatype IRL blank node等概念。在RDF模型中，基本对象是资源、属性和陈述。-个特定的资源 陈述由主体(subject)，谓词(predicate),客体(object)组成。SPARQL查询语言是基『图模 式匹配实现的，最简单的图模式是三元组模式，复杂图模式由简单图模式组合而成mi,
+常见的复杂图模式是基本图模式、组合图模式、川,选择图模式、联合图模式、RDF数 据集图模式、值约束条件六种模式中的?种。
+通过定义SPARQL查询语句，实现了 SPARQL协议的查询引擎可以返回三元组形 式的结果，并且在标准的SPARQL查魂结果XML格式［SPARQL-XML-Result］之外， SPARQL 1.1还提供了三种常见的格式来表达查询结果，即JSON、CSV (逗号分割值) 及TSV (制表符分割的值)。当前众多的语义Web库都对SPARQL有支持，例如Jena ARQ、SPARQL4J. Pellet 等等。
+本论文采用SPARQL作为知识的查询语言，利用Jena的SPARQL引擎ARQ实现 对知识库的查询。首先要根据查询需求生成String类型的查询语句。然后利用工厂类 QueryFactory类的方法根据String类型的查询语句生成Query查询语句对象，然后再利 用Jena抽象工厂对象QueryExecutionFactory的create方法生成查询执行对象。生成执 行对象之后调用其exexSelectQ方法可获取查询结果，查询结果是Jena的结果集ResultSet 对象。ResultSet对象是一组三元组的集合，包含了查询语句返冋的所有三元组信息，通 过其提供的迭代器接口可以遍历这些三元组并进行相应的处理，也可以通过其 getResourceModel接口得到结果集的Model对象表示。

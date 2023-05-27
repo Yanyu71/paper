@@ -1,0 +1,33 @@
+4.4.2.4RTSCTS消息格式
+最后，为了实现收发端的信令交互，针对无线接入模块发送接收端对等层间 消息格式进行设计。
+RTS消息需要兼容RTS0与RTS1,同时支持单播与广播子帧的申请。考虑 到RLC使用无确认模式(Unacknowledged Mode, UM),在链路的首次传输或 者链路中断后的再次传输前，都需要对接收侧RLC的序列号(SN)初始化，使 收发两端RLC协同。基于跨层设计，由于传输开始前均需要RTS流程，UM SN 初始化请求由RTS消息承载传输。同时需满足最大消息长度不超过96bitso综上 考虑，RTS消息格式设计如下：
+表4-7 RTS消息格式
+字段	　　比特位置	含义
+TxDUE ID	　Bit[0:3]	RTS发送端DUE-ID,范围0-15 =
+RxDUEID	　Bit[4:7]	RTS接收端DUE-ID,范围0~15o
+Broadcast Flag	　Bit[8]	广播子帧申请指示，0：未申请，1：申请
+Unicast Flag	　Bit[9]	D2D单播子帧申请指示，同上。
+Broadcast
+Subframe Number	　Bit[10:12]	广播申请子帧数。范围满足
+0 < Nbcasl < N霓为使用的TDD上下 行配置中，无线帧的上行子帧总数。
+Unicast
+Subframe Number	　Bit[13:15]	单播申请子帧数。范围满足
+= 0 或 Nunieast = Nl'rame - Nhcas.
+SN Initial Request
+Flag	　Bit[16]	UM RLC SN初始化请求指示， 0：无需初始化，1：需要初始化。
+Reserved	　Bit[17:95]	保留比特用于未来扩充。
+当一个无线帧中既有广播子帧预约接入又有单播子帧预约接入，规定广播子 帧占用前子帧，单播子帧占用后Nunicast子帧。
+CTS消息仅回应RTS单播申请。在其中需要确认发送端可以使用的子帧数， 值可能与发送端申请的子帧数不同，场景如图4-14。同时，若RTS申请RLC SN 初始化，也需要CTS进行确认才认为初始化成功，否则RTS需继续请求初始化。
+图4-14 TxDUE2收不到RTSO需由CTS修正
+CTS的消息格式设计如下表4-8：
+63
+表4-8 CTS消息格式
+字段	　　比特位置	含义
+TxDUE ID	　Bit[0:3]	RTS发送端DUE-ID,范围0〜15。
+RxDUE ID	　Bit[4:7]	RTS接收端DUE-ID,范围0~15o
+Pathloss	　Bit[8:14]	反馈测量得到的发送链路路损值，范围 0〜128dB。
+SN Initial ACK Flag	　Bit[15]	UM RLC SN初始化确认指示， 0：未初始化，1：已初始化。
+Unicast Subframe
+Number	　Bit[16:18]	单播申请子帧数。范围满足
+Nunicast = ° 或 Ng] = MLe - Nbeast
+Reserved	　Bit[19:95]	保留比特用于未来扩充。

@@ -1,0 +1,13 @@
+4.5.1仿真平台
+因为目前没有合适的理论分析工具来评价时延估计算法的性能，本文通过链 路级仿真进行算法性能研究。仿真平台基于LTE系统。在仿真中，PRS信号根 据第二章的描述生成。含有PRS的OFDM符号根据标准团生成，并加上常规 CPo在定位机会中，包含上述OFDM符号的子帧被重复地从一个eNB发送到一 个固定的UE。因为差分后可以消除定时误差，所以为了简便起见，这里假设不 存在定时误差。
+根据上述仿真需求，本文搭建了仿真平台，其组成如图4-1所示，现对其进 行介绍。
+图4-1仿真平台
+仿真平台的组件按照功能可以被划分为主过程，发射部分，信道部分，接收 部分，估计器部分，还有结果分析工具。
+其中主过程main负责初始化仿真场景相关参数，维护进行蒙特卡洛仿真循 环，调用其他功能模块，最后进行仿真数据的格式化存储。
+发射部分产生定位机会子帧，包含函数GenerateSubframe, GeneratePRS, GenerateCRS , ResourceMapping 和 GenerateRandom。GenerateSub行ame 调 用 GeneratePRS, GenerateCRS 和 ResourceMapping 产生 PRS 和 CRS 信号包含的 RE 索引，对应的QPSK符号，并将它们映射到RB上，然后对子载波符号做IFFT
+44
+可以得到OFDM符号，最后加上CP,封装成子帧。GeneratePRS和GenerateCRS 会调用GenerateRandom,按照定义产生CRS和PRS的RE索引，QPSK符号。 GenerateRandom产生随机随机序列。
+信道部分根据信道模型，将信道的影响作用在输入信号上，得到输出信号； 包含函数 Channel_main, ETU, PassAWGN 和 PassDelay。其中 Channel_main 根 据参数设置（ETU,瑞利衰落或AWGN）的不同，调用不同的信道函数。ETU根 据ETU信道模型，将信号通过不同时延的瑞利衰落信道，最后加上加性噪声。 PassAWGN根据输入参数衰落幅度值和噪声功率，使信号通过具有一定幅度的 AWGN信道。PassDelay将循环移位作用在输入参数信号上。
+接收部分对接收信号进行处理，得到OFDM符号或者导频符号，包含函数 GetOFDMSymbol, GetSC Symbol, SplitSubframe 和 ResolveSubframe。其中 GetOFDMSymbol 调用 SplitSubframe 和 ResolveSubframe,来得到输入参数指定 的OFDM符号和对应的RBo GetSCSymbol同样调用ResolveSubframe来得至U PRS导频上的子载波符号和对应的子载波序号。SplitSubframe的作用是将输入参 数的子帧分割为OFDM符号和CPo ResolveSubframe的作用是将输入参数的子 帧解调为RB,它的作用与ResourceMapping的作用相逆。
+估计部分以OFDM符号或者子载波符号为输入，输盅对首达径传播时延的 估计。根据同一组接收信号，多种估计算法并行进行。有些算法在时域进行，因 此会调用GetOFDMSymbol得到OFDM符号，有些算法是在频域进行，因此会 调用GetSCSymbol得到导频上的符号。另外，由于是主动模式的估计，估计器 还能得到一份发射信号的副本，同样地根据其需要得到QFDM符号或者导频符 号。估计器也会调用一些基础的数学运算函数，如CircularShift, EigenSort和 Inner_LSo由于不同估计器的实现方式不同，提出的算法之前有过详细描述，后 文将对比较算法进行简要介绍，这里不再赘述。
+分析工具根据不同参数下的主过程输出的结果，对于特定的性能指标进行统 计，绘制图表。这里采用的性能指标后文将详细描述。因为需要对不同参数下算 法输出的结果做进一步的统计，所以这一部分的子过程子函数比较繁杂，故不再 赘述。

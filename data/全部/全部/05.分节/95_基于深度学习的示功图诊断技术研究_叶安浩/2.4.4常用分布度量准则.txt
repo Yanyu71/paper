@@ -1,0 +1,14 @@
+2.4.4常用分布度量准则
+迁移学习的核心思想是在模型训练过程中减小源域和目标域的分布差异，因 此数据分布之间的差异度量非常关键。目前有很多用于度量数据分布差异的指标, 常用的数据分布度量准则列举如下：
+1) 欧式距离(Euclidean Distance)
+D euclidean =	x2)2 + CVl V2)2	(2 — 22)
+2) 曼哈顿距离(Manhattan Distance)
+^Manhattan = |xx - X21 + |^ - y21	(2 - 23)
+3) 切比雪夫距离(Chebyshev Distance)
+Dchebyshev = max©】-x2l.lyi - y2l)	(2 - 24)
+4) 余弦距离(Cosine Distance)
+5) KL 散度(Kullback-Leibler Divergence)
+DKZ(PIIQ)=工 P(x”og謡 (2 - 26)
+6) 最大均值差异(Maximum Mean Discrepancy),最大均值差异是一种非参数 的距离度量准则，它将原数据映射到希尔伯特空间中，然后在新的空间中计算样 本之间的平均距离，作为两个数据分布之间的距离。通常在计算MMD时，为了 降低运算复杂度，会采用核技巧，直接得到两个样本在希尔伯特空间的距离,
+MMD的定义如式2-19o在迁移学习领域，MMD是应用最广泛的数据分布差异
+度量指标。

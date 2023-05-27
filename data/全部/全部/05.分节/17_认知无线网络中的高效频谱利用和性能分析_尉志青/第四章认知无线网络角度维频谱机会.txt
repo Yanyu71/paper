@@ -1,0 +1,7 @@
+第四章认知无线网络角度维频谱机会
+[4-22] Z. Wei, Z, Feng, Q. Zhang, et aL, "Throughput Scaling Laws of Cognitive Radio Networks with Directional Transmission,55 IEEE Global Communications Conference (Globecom), pp. 894 - 899, Dec. 2013.
+[4-23] Z. Wei, J. Liu, Z. Feng, et aL, “The Asymptotic Connectivity of Random Cognitive Radio Networks/5 IEEE Wireless Communications and Networking Conference (WCNC), pp. 1685 - 1690, Apr. 2013.
+[4-24] Simon Haykin and K. J. Ray Liu, Handbook on Array Processing and Sensor Networks, Wiley, New York, 2009.
+[4-25] H. A. David and H. N. Nagaraja? Order Statistics, Wiley, New York, 2003.
+167
+168

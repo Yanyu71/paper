@@ -1,0 +1,10 @@
+4.3.5解调解扰功能设计
+实现函数为
+void Pucch DemoDeScrmb （
+short *pDataIn,
+unsigned char *pAckNack,
+char *pCsiSoftBit
+）°
+对于格式la/lb和格式2a/2b中的ACK7NACK信息,解调流程如图4-11左图所示； 格式2/2a/2b中的CSI信息，其解扰解调过程如图4-11右图所示。具体的算法描述可以 参见第三章。
+54
+图4-11解调解扰模块流程图，ACK/NACK （左），CSI （右）

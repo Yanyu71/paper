@@ -1,0 +1,115 @@
+1.4本文组织结构
+本文定位于异构协作无线网络的覆盖与容量分析，包括安全覆盖与安全容量分 析。论文章节安排如下。
+第1章为绪论部分。首先介绍本论文的研究背景，包括未来移动通信系统的发 展趋势、HetNets网络概述以及基于CoMP技术的异构协作；然后对与本论文相关的 研究进行详细的调研和综述，并分析异构协作对HetNets网络覆盖与容量（包括安全 覆盖与安全容量）的影响；最后介绍本论文的主要研究内容和贡献。
+第2章在考虑非均匀HetNets场景下，提出基于BS负载与安全可信状态感知 的异构多小区协作，并分析和优化网络平均SE。首先基于随机点过程建立非均 匀HetNets网络模型，分别推导出所提异构协作机制下的平均SE和ASE,然后理论 分析最大化网络性能的最优BS部署密度，最后提供了仿真结果来验证理论分析。
+第3章在考虑支持缓存与EH技术的HetNets场景下，提出联合考虑BS能量状 态、BS缓存以及信道资源可用性的异构BS协调与协作传输机制，分析网络覆盖 覆盖概率与平均传输速率。首先建立1+K层HetNets网络，提出异构BS协作方 案，然后基于随机几何和马尔科夫链分析SBS的能量状态以及BS的负载分布，采 用Gamma分布拟合，推导典型MU的近似覆盖概率和平均传输速率，最后通过仿真 对提岀的方案进行验证与评估。
+表1-2	论文主要内容及创新点
+关键性问题	研究场景及 目标	研究内容及贡献	对应章 节
+基于 CoMP 的 HetNets 网络覆盖 与容量分 析	非均匀HetNets 的异构 协作SE分 析与优化	1.提出基于BS负载和安全可信状态感知的异构 多小区协作；2.基于随机几何理论分析网络覆盖 概率、SE及ASE,并采用最优化理论优化BS 密度；3.理论分析BS密度、发送功率、接入容 量、安全状态以及协作门限对系统性能的影响	第二章
+支持缓 存与EH 的 HetNets 的异构BS 协作覆盖与 容量分析	1.提出基于BS能量状态、缓存、信道资源联合 感知的异构BS协调与协作方案；2.基于随机几 何理论和Gamma分布拟合分析网络覆盖概率及 平均传输速率；3.理论分析BS密度、缓存容量、 能量状态、以及协作门限对网络覆盖及SE的影 响	第三章
+考虑差异 化BS高度 的 HetNets 的联合传 输SE与业 务卸载分析	1.提出以MU为中心的，基于BS缓存、高度以 及负载感知的异构BS联合传输与业务卸载；2. 考虑BS高度影响，采用LoS/NLoS无线传播模 型与修正的COST 231路径损耗模型，理论分 析MU的卸载概率及SE； 3,理论分析BS密度、 BS高度、缓存容量、以及协作门限对系统SE及 业务卸载概率的影响	第四章
+基于CoMP的HetNets
+物理层安全覆盖与安全容量分析	HetNets网络的安全覆盖分析	提出基于DPS的安全BS选择，以安全中断概率 为性能参数，理论分析HetNets网络的安全覆盖 性能	第五章
+基于协作干扰的窃听系统安全速率优化	提出基于协作的多节点干扰机制，以安全传输速 率为目标，采用Stackberg博弈，将原问题转化 为功率分配与要价分配优化问题，理论分析干扰 节点和发送端的最优功率分配，得到最大安全传 输速率	第五章
+第4章在支持缓存技术与考虑差异化BS高度的HetNets场景下，提出联合考 虑BS高度、BS缓存、BS负载的异构联合传输方案，并分析网络平均SE以及业务 卸载。首先建立考虑BS高度的HetNets模型，然后提出异构联合传输方案，分析BS 负载分布以及业务卸载概率，推导典型MU的平均SE,最后通过仿真对所提联合传 输机制进行验证和评估。
+第5章研究一般HetNets场景下基于协作的物理层安全覆盖与安全容量。首先
+采用随机几何分析HetNets网络中基于DPS的BS接入方案的安全中断概率，以评 估HetNets网络的安全覆盖性能。然后研究基于多节点协作干扰的物理层安全增强, 基于Stackberg博弈建立了单引导-多跟随的Stackberg博弈问题，并从理论上分析得 到了干扰节点的选择以及最佳干扰发送功率分配，以最大化安全传输速率。最后釆 用数值仿真验证所提协作机制。
+第6章总结本论文的研究内容与创新点，并对未来的研究工作进行展望。
+参考文献
+[1]工业信息部.2017年通信业统计公报[R].北京：中国工业信息部,2018.
+[2]Cisco. Visual Networking Index, White paper[RJ. Cisco, 2017.
+[3]Agiwal M, Roy A, Saxena N. Next generation 5G wireless networks: A comprehensive survey [J]. IEEE Communications Surveys & Tutorials, 2016, 18(3): 1617-1655.
+[4]Vision I. Framework and overall objectives of the future development of IMT for 2020 and be- yond[R]. International Telecommunications Union, 2014,
+[5]Minimum Requirements Related to Technical Performance fbr IMT-2020 Radio Interface[R]. ITU- R M., 2016. [TMT-2020.TECH PERFREQ].
+[6]5G Vision and Requirements[R], IMT-2020 (5G) Promotion Group, 2014.
+[7]Pirinen P. A brief overview of 5G research activities[A]. // Inteinational Conference on 5G for Ubiquitous Connectivity[C]. Akaslompolo, Finland: IEEE, 2014: 17-22.
+[8]Li Q C5 Niu H5 Papathanassiou A T, et al. 5G network capacity : Key elements and technologies[J]. IEEE Vehicular Technology Magazine, 2014, 9(1): 71—78.
+[9]Zhang N, Cheng N, Gamage A, et al. Cloud Assisted HetNets Toward 5G Wireless Networks[J]. IEEE Communication Magazine, 2015, 53(6): 59-65.
+[10]Yang G, Wang J, Luo J, et al. Cooperative Spectrum Sensing in Heterogeneous Cognitive Radio Networks Based on Normalized Energy DetectionfJ]. IEEE Transactions on Vehicular Technology, 2016, 65(3): 1452-1463.
+[11]Chen Y Li J, Chen W, et aL Joint User Association and Resource Allocation in the Downlink of Heterogeneous Networks[J]. IEEE Transactions on Vehicular Technology, 2016,65(7): 5701-5706.
+[12]Bassoy S, Farooq H, Imran M A, et al. Coordinated Multi-Point Clustering Schemes: A Survey [J]. IEEE Communications Surveys & Tutorials, 2017,19(2): 743—764.
+[13]Lopez-Perez D, Guvenc I, De la Roche G, et al. Enhanced intercell interference coordination challenges in heterogeneous networks [J]. IEEE Wireless Communications, 2011, 18(3): 22—30.
+[14]Andrews J G. Seven Ways that HetNets Are a Cellular Paradigm Shift[J]. IEEE Communication Magazine, 2013? 51(3): 136-144.
+[15]Yang N,阪ng L F, Geraci G, et al. Safeguarding 5G Wireless Communication Networks Using Physical Layer Security [J]. IEEE Communication Magazine, 2015, 34(2): 20-27.
+[16]Wu Y, Khisti A, Xiao C, et al. A Survey of Physical Layer Security Techniques fbr 5G Wireless Networks and Challenges Ahead卩].arXiv preprint arXiv: 1801.05227, 2018.
+[17]Lee D, Seo H, Clerckx B, et al. Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges[J]. IEEE Communication Magazine, 2012, 50(2): 148-155.
+[18]Shafi M, Molisch A F, Smith P J, et al. 5G: A tutorial overview of standards, trials, challenges, deployment, and practice[J]. IEEE IEEE J. Sei. Areas Commun., 2017,35(6): 1201-1221.
+[19]Wannstrom J, Mallinson K. HetNet/Small Cells[R], 3GPP, 2014.
+[20]Chen X, Ng D W K, Gerstacker W H, et al. A survey on multiple-antenna techniques for physical layer security[J]. IEEE Communications Surveys & Tutorials, 2017, 19(2): 1027-1053.
+[21]Liu 丫 Chen H H, Wang L. Physical layer security fbr next generation wireless networks: Theories, technologies, and challenges[J]. IEEE Communications Surveys & Tutorials, 2017,19(1): 347-376.
+[22]Mustafa HAU, Imran M A, Shakir M Z, et al. Separation framework: An enabler for cooperative and D2D communication for future 5G networks[J]. IEEE Communications Surveys & Tutorials, 2016, 18(1): 419T45.
+[23]Davydov A, Morozov G, Bolotin I, et al. Evaluation of joint transmission CoMP in C-RAN based LTE-A HetNets with large coordination areas[A]. // IEEE Global Telecommunications Conference (GLOBECOM) Workshops[C], Atlanta, USA: IEEE, 2013: 801-806.
+[24]Tao X, Xu X, Cui Q. An Overview of Cooperative Communications[J]. IEEE Communication Magazine, 2012,50(6): 65—71.
+[25]Nigam G, Minero P, Haenggi M. Coordinated Multipoint Joint Transmission in Heterogeneous Net- works[J]. IEEE Transactions on Communications, 2014, 62(11): 413心 146.
+[26]Nigam G, Minero P, Haenggi M. Spatiotemporal Cooperation in Heterogeneous Cellular Net- works[J]. IEEE J. Sei. Areas Commun., 2015, 33(6): 2142-2180.
+[27]Wang X, Hao P, Hanzo L. Physical-layer authentication fbr wireless security enhancement: current challenges and future developments[J]. IEEE Communications Magazine, 2016, 54(6): 152-158.
+[28]Wang H, Zhou X, Reed M C. Coverage and throughput analysis with a non-unifbrm small cell deployment[J]. IEEE Transactions on Signal Processing, 2014, 13(4): 2047-2059.
+[29]Baccelli F, Blaszczyszyn B. Stochastic Geometry and Wireless Networks: Volume I-Theory[M]. Massachusetts: Now Publishers, 2009.
+[30]Paschos G, Ba§tug E, Land I, et al. Wireless caching: Technical misconceptions and business barri- ers[J]. IEEE Communication Magazine. 2016, 54(8): 16-22.
+[31]Atzeni I, Maso M, Ghamnia I, et aL Flexible Cache-Aided Networks with Backhauling[J]. arXiv: 1705.08576, 2017.
+[32]Mobile's Green Manifesto[R]. https://www.gsma.com/publicpolicy/wp-content/uploads/2012/06/ GSMA2012_Report_MobilesGreenManifesto.pdf: GSMA, 2012.
+[33]Zhang S, Zhang N, Zhou S, et al. Energy-Aware Traffic Offloading fbr Green Heterogeneous Networks [J], IEEE J. SeL Areas Commun., 2016, 34(5): 1116-1129.
+[34]Zheng 乙 Zhang X, Cai L X, et al. Sustainable communication and networking in two-tier green cellular networks[J]. IEEE Wireless Communications, 2014, 21(4): 47-53.
+[35]3GPP. Coordinated multi-point operation fbr LTE physical layer aspects[R]. 3rd Gener. Partnership Project (3GPP) TR 36.819 RU vl 1.2.0,2013.
+[36]Marsch R Fettweis G P. Coordinated Multi-Point in Mobile Communications: from theory to prac- tice[M]. Cambridge, U.K.: Cambridge Univ. Press, 2011.
+[37]Silvester J, Kleinrock L. On the capacity of multihop slotted ALOHA networks with regular struc- ture[J]. IEEE Transactions on Communications, 1983, 31(8): 974-982.
+[38]Takagi H, Kleinrock L. Optimal transmission ranges for randomly distributed packet radio termi- nals[J]. IEEE Transactions on Communications, 1984, 32(3): 246-257.
+[39]How J, Hatzinakos D. Analytic alpha-stable noise modeling in a Poisson field of interferers or scat- terers[J]. IEEE Transactions on Signal Processing, 1998, 46(6): 1601-1611.
+[40]Mathar R, Mattfeldt J. On the distribution of cumulated interference power in Rayleigh fading chan- nelsfJ]. Wireless Networks, 1995? 1(1): 31—36.
+[41]Robert W H, Kountouris M, Bai T. Modeling Heterogeneous Network Interference Using Poisson Point ProcessesfJ]. IEEE Transactions on Signal Processing, 2013, 61(16): 4114-4126.
+[42]Dhillon H S, Ganti R K, Baccelli F, et al. Modeling and analysis of k-tier downlink heterogeneous cellular networks [J]. IEEE J. Sei. Areas Commun., 2012, 30(3): 550—560.
+[43]Mukheijee S. Distribution of downlink SINR in heterogeneous cellular networks [J]. IEEE J. Sei. Areas Commun., 2012, 30(3): 575—585.
+[44]Jo H S, Sang Y J, Xia R et al. Heterogeneous cellular networks with flexible cell association: A comprehensive downlink STNR analysis [J]. IEEE Transactions on Wireless Communications, 2012, 11(10): 3484-3495.
+[45]Di Renzo M, Guidotti A, Corazza G E. Average rate of downlink heterogeneous cellular networks over generalized fading channels: A stochastic geometry approach[J]. IEEE Transactions on Communications, 2013, 61(7): 3050-3071.
+[46]Cheung W C, Quek T Q, Kountouris M. Throughput optimization, spectrum allocation, and access control in two-tier femtocell networks[J]. IEEE J. Set Area Comrnun., 2012, 30(3): 561—574.
+[47]Chun Y J, Hasna M O, Ghrayeb A. Modeling heterogeneous cellular networks interference using poisson cluster processes]J]. IEEE J. Sei. Area Commun.? 2015, 33(10): 2182—2195.
+[48]He Hs Xue J, Ratnarajah T, et aL Modeling and analysis of cloud radio access networks using Matern hard-core point processes!J]. IEEE Transactions on Wireless Communications, 2016, 15(6): 4074— 4087.
+[49]Ibrahim A M, ElBatt T, El-Keyi A. Coverage probability analysis for wireless networks using repulsive point processes[A], II IEEE International Symposium on Personal Indoor and Mobile Radio Communications (PIMRC)[C]. London, UK: IEEE, 2013: 1002-1007.
+[50]Keeler H P, Blaszczys2yn B, Karray M K. SlNR-based k-coverage probability in cellular networks with arbitrary shadowing[A]. // IEEE International Symposium on Information Theory Proceedings (ISIT)[C], Istanbul, Turkey: IEEE, 2013: 1167-1171.
+[51] Huang K, Andrews JG. A stochastic-geometry approach to coverage in cellul ar networks with multicell cooperation[A]. // IEEE Global Telecommunications Conference (GLOBECOM)[C]. Kathmandu, Nepal: IEEE, 2011: 1-5.
+[52]Francois B, Giovanidis A. A stochastic geometry framework for analyzing pairwise-cooperative cellular networks [J]. IEEE Transactions on Wireless Communications, 2015, 14(2): 794-808.
+[53]Sakr A H, Hossain E. Location-Aware Cross-Tier Coordinated Multipoint Transmission in Two-Tier Cellular Networks]!], IEEE Transactions on Wireless Communications, 2014, 13(11): 6311-6325.
+[54]Tanbourgi R, Singh S, Andrews J G, et al. A Tractable Model for Noncoherent Joint-Transmission Base Station CooperationfJ]. IEEE Transactions on Wireless Communications, 2014, 13(9): 4959— 4973.
+[55]Wu H, Tao X, Li N. Coverage Analysis for K-Tier Heterogeneous Networks with Multi-Cell Cooperation [A]. // IEEE Global Telecommunications Conference (GLOBECOM) Workshops[C], San Diego, CA, USA: IEEE, 2015: 1-5.
+[56]Wu H, Tao X5 Li N, et al. Coverage Analysis for CoMP in Two-Tier HetNets With Nonuniformly Deployed Femtocells[J]. IEEE Communication Letters, 2015, 19(9): 1600-1603.
+[57]Jaramillo-Ram rez D, Kountouris M, Hardouin E. Coordinated Multi-Point Transmission With Imperfect CSI and Other-Cell Interference[J]. IEEE Transactions on Wireless Communications, 2015, 14(4): 1882-1896.
+[58]Nie W, Zheng F C, Wang X, et al. User-Centric Cross-Tier Base Station Clustering and Cooperation in Heterogeneous Networks: Rate Improvement and Energy Saving[J]. IEEE J. Sei. Areas Commun., 2016, 34(5): 1192-1206.
+[59]Dhillon H S, Li Y, Nuggehalli P, et al. Fundamentals of Heterogeneous Cellular Networks with Energy Harvesting[J]. IEEE Transactions on Wireless Communications, 2014, 13(5): 2782-2797.
+[60]Sakr A H, Hossain E. Analysis of K-Tier Uplink Cellular Networks With Ambient RF Energy Har-
+vesting[J]. IEEE J. Sei. Areas Commun., 2015, 33(10): 2226-2238.	驚
+[61]Yu PS, Lee J, Quek TQS,et al. Traffic Offloading in Heterogeneous Networks with Energy Harvesting Personal Cells - Network Throughput and Energy Efficiency[J]. IEEE Transactions on Wireless Communications, 2016, 15(2): 1146-1161,
+[62]Ba§tug E, Bennis M, Kountouris M, et al. Cache-enabled small cell networks: Modeling and trade-
+EURASIP Journal Wireless Communications and Networking, 2015, 2015(1): 41.
+[63]Yang C, Yao Y, Chen Z. Analysis on cache-enabled wireless heterogeneous networks[J]. IEEE Transactions on Wireless Communications, 2016, 15(1): 131-145.
+[64]Wen W, Cui Y, Zheng F C, et al. Random Caching Based Cooperative Transmission in Heterogeneous Wireless Networks[J]. IEEE Transactions on Communications, 2018, PP(99): l-l.
+[65]Wen W, Cui Y, Zheng F C, et al. Random caching based cooperative transmission in heterogeneous wireless networks[A]. // IEEE International Conference on Communications (ICC)[C]. Paris, France: IEEE, 2017: 1-6.
+[66]Shannon C E. Communication theory of secrecy systems [J]. Bell Labs Technical Journal, 1949, 28(4): 656-715.
+[67]Wyner A D. The wire-tap channel[J]. Bell Syst. Tech. J., 1975, 54(8): 1355-1387.
+[68]Csiszar I, Korner J. Broadcast channels with confidential messages[J]. IEEE Transactions on Information Theory, 1978, 24(3): 339-348.
+[69]Khisti A, Womell G W. Secure transmission with multiple antennas I: The MIMOME wiretap channel^]. IEEE Transactions on Information Theory, 2010, 56(7): 3088-3104.
+[70]Chu Z, Johnston M, Le Goff S. Robust beamfbrming techniques for MISO secrecy communication with a cooperative jammer[A], // IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1-5.
+[71]Goel S, Negi R. Guaranteeing secrecy using artificial noise[J]. IEEE Transactions on Wireless Communications, 2008, 7(6): 2180-2189.
+[72]Li N, Tao X, Wu H, et al. Large System Analysis of Artificial Noise Assisted Communication in the Multiuser Downlink[J]. IEEE Transactions on Vehicular Technology, 2016, 65(9): 7036-7050.
+[73]Zhou X, McKay M R. Secure transmission with artificial noise over fading channels: achievable rate and optimal power allocation]〕]. IEEE Transactions on Vehicular Technology, 2010, 59(7): 38313842,
+[74]Zhu J, Schober R, Bhargava V K. Secure transmission in multicell massive MIMO systems[J]. IEEE Transactions on Wireless Communications, 2014,, 13(9): 4766-4781.
+[75]Zhu J, Schober R, Bhargava V K. Linear Precoding of Data and Artificial Noise in Secure Massive MIMO Systems[J]. IEEE Transactions on Wireless Communications, 2016,15(3): 2245-2261.
+[76]Zheng G, Choo L C, Wong K K. Optimal cooperative jamming to enhance physical layer security using relays[J]. IEEE Transactions on Signal Processing, 2011,59(3): 1317-1322.
+[77]Barros JP V PCP J. Position-based jamming for enhanced wireless secrecy [J]. IEEE Transactions on Information Forensics & Security, 2011, 6(3): 616-627.
+[78]Zhou X, Tao M, Kennedy R A. Cooperative jamming fbr secrecy in decentralized wireless networks [A]. // IEEE International Conference on Communications (ICC)[C]. Ottawa, ON, Canada: IEEE, 2012: 2339-2344.
+[79]Ding Z, Leung K K, Goeckel D L, et al. On the application of cooperative transmission to secrecy communications^]. IEEE J. Sei. Areas Commun., 2012, 30(2): 359-368.
+[80]Wang H M, Luo M, Yin Q, et al. Hybrid cooperative beamfbrming and jamming for physical-layer security of two-way relay networks[J]. IEEE Transactions on Information Forensics & Security, 2013, 8(12): 2007-2020.
+[81]Luo S9 Li J, Petropulu A P. Uncoordinated cooperative jamming fbr secret communication[J]. IEEE Transactions on Information Forensics & Security, 2013, 8(7): 1081-1090.
+[82]Vishwakarma S, Chockalingam A. Amplify-and-fbrward relay beamforming for secrecy with cooperative jamming and imperfect CSI[A]. // IEEE International Conference on Communications (ICC)[C]. Budapest, Hungary: IEEE, 2013: 3047-3052.
+[83]Lee J H, Choi W. Multiuser diversity for secrecy communication using opportunistic jammer selection: Secure DOF and jammer scaling law[J]. IEEE Transactions on Signal Processing, 2014,62(4): 828-839.
+[84]Chu Z, Cumanan K, Ding Z, et al. Secrecy rate optimization for a MIMO secrecy channel based on Stackelberg game[A]. // Proceedings of European Signal Processing Conference (EUSIPCO)[C]. Lisbon, Portugal: IEEE, 2014: 126-130.
+[85]Chu Z, Johnston M, Le Goff S. Alternating optimization fbr MIMO secrecy channel with a cooperative jammer[A]. //IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1-5.
+[86]Oggier F, Hassibi B. The Secrecy Capacity of the MIMO Wiretap Channel [J]. IEEE Transactions on Information Theory, 2011, 57(8): 4961-4972.
+[87]Hu Y, Tao X. Secrecy Outage Analysis ofMultiuser Diversity with Unequal Average SNR in Transmit Antenna Selection SystemsfJ]. IEEE Communication Letters, 2015, 19(3): 411T14.
+[88]Wang C, Wang H, Xia X, et al. Uncoordinated Jammer Selection for Securing SIMOME Wiretap Channels: A Stochastic Geometry Approach[J]. IEEE Transactions on Wireless Communications, 2015, 14(5): 2596-2612.
+[89]Zhang Q, Huang X, Li Q, et al. Cooperative Jamming Aided Robust Secure Transmission for Wireless Information and Power Transfer in MISO Channels]!]. IEEE Transactions on Communications, 2015, 63(3): 906-915.
+[90]Han Z, Niyato D, Saad W, et al. Game Theory in Wireless and Communication Networks: Theory, Models, and Applications[M], Cambridge, U.K.: Cambridge Univ. Press, 2011.
+[91 ] Han Z, Marina N, Debbah M, et aL Physical layer security game: Interaction between source, eavesdropper and fri end ly j am m er [J]. EURASIP Journal on Wireless Communications Newworks, 2009, 2009(7): 452907-1 -452907-10.
+[92]Zhang R, Song L, Han Z, et aL Physical Layer Security for Two-Way Untrusted Relaying With Friendly JammersfJ]. IEEE Transactions on Vehicular Technology, 2012, 61(8): 3693—3704.
+[93]Wang A, Cai Y Yang W, et al. A Stackelberg security game with cooperative jamming over a multiuser OFDM A network[A]. // IEEE Wireless Communications and Networking Conference (WCNC)[C]. Shanghai: IEEE, 2013: 4169顼 174.
+[94]Chu Z, Cumanan K, Ding Z, et al. Secrecy Rate Optimizations for a MIMO Secrecy Channel With a Cooperative Jammer[J]. IEEE Transactions on Vehicular Technology, 2015, 64(5): 1833-1847.
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.

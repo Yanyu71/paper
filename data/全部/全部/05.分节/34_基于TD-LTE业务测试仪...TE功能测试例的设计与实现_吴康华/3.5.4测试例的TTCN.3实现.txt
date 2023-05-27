@@ -1,0 +1,24 @@
+3.5.4测试例的TTCN.3实现
+为了和3GPP保持一致，将测试例命名为“TC_12_22”，在MTC上定义 VoLTE鉴权测试例时，激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模 拟TD-LTE小区的接入网和核心网的IMS、IP部分的测试主体，以下为这一过 程的TTCN-3实现代码：
+testcase TC_12_22() runs on MTC IMS system SYSTEMJMS (
+// @purpose
+// MT MTSI Video call
+var IMS_PTC v_IMSl := null;
+var IMS PTC v_IMS2 := null;
+timer t GuardTimer := int2float(300);
+v_IMSl IMS_PTC.create alive;
+LMTC_IMS_CreateMapAndConnectPTCs_EUTRA(v_IMS 1, vJMS2); vJMS 1 .start(fLTC_l 2_22_IMS());
+t_GuardTimer, start;
+f_MTC_IMS_MainLoop(t_GuardTimer);
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC,并设置等待时间阈值。测试例 开始执行时，首先通过EUTRA_PTC接入核心网，通过IP_PTC转发值IMS_PTC,, 最后由IMS_PTC负责与UE进行信令交互。各测试成分之间的关系如4.2节图。
+代码中的f!TC_12_22_IMS()是测试例的主体函数，测试例的开始阶段和结 束阶段所执行的流程同视频主叫测试例，部分参数略有不同，本节不再详述。下 面是本测试例不同于其他测试例的部分：
+第一组函数函数如下：
+f^IMS_MTCallSetup_Video_Receivel83(C26, v_InviteRequestWithSdp,
+v FmtAudio, v_FmtVideo); f^MessageHeader_GetContactSipUrl(v_SessionInProgressl83.msgHeader);
+JIMS_MTCallSetup_AnnexC26_Steps5_13(v_InviteRequestWithSdp, v_FmtAudio, v_FmtVideo, v SessionlnProgressl 83, v_SDP_MessageStep4);
+f^IMS_CaHReleaseMT(v_InviteRequest, v_ContactUrl)；
+其中，函数 f_IMS_MTCallSetup_Video_Receivel83()接收上行的 183 Session Progress,函数 f_MessageHeader_GetContactSipUrl ()从参数的消息头中提取 URL 信息。f_IMS_MTCallSetup_AnnexC26_Steps5_l3()执行协议规定的第 5 步到第
+13步，即从SS发宋PRACK到发送对200 OK的ACK完成呼叫建立的过程。与 函数 f_IMS_CallReleaseMO()不同，函数 fJMS_CallReleaseMT()多携带一个参 数 v_ContactUrl,该参数就是函数 JMessageHeader_GetContactSipUrl()的返回值。 以上过程执行完成之后在执行通用的测试例结束函数，同于视频主叫测试例所描 述，只是部分参数略有不同。
+下面的图3-11是视频被叫测试例的执行流程：
+图3-11视频被叫测试例实现流程

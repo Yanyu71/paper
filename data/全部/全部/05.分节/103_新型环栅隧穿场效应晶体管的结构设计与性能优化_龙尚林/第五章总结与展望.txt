@@ -1,0 +1,45 @@
+第五章总结与展望
+随着集成电路的不断发展，MOSFETs的特征尺寸不断缩小，集成电路上集 成度不断提高，使得芯片的功耗不断增大，同时，MOSFETs自身被漏端引入的 势垒降低、短沟道效应、窄沟道效应等影响，严重影响性能。在这种情况下，基 于带带隧穿原理的TFETs引起了人们的兴趣和大量的研究。TFETs与MOSFETs 的基本原理不同，带带隧穿的原理令TFETs具有超低的关态电流和可以突破 60mV/decade的玻尔兹曼限制的优秀亚阈值特性，并且对MOSFETs中存在的二 级效应具有一定免疫能力。因此，TFETs是最有希望成为低功耗器件的新型晶体 管之一。但是，传统的硅基TFETs存在着许多的问题：开态电流低，驱动能力不 足；具有双极性效应；亚阈值斜率不稳定，影响在电路中的实际应用。本论文针 对TFET器件面临的主要问题，进行了如下研究：
+首先，本论文提出一种新型器件-错环绕源极环栅隧穿场效应晶体管(GAS GAATFET),错环绕源极的结构是该器件的创新之处，本论文使用的仿真软件是 Sentaurus TCAD。通过仿真得出GAS GAA TFET在错层厚度为6〃n时开态电流 和关态电流分别为1.65 x 10-M和2.79x10754,综合性能最好。接着，通过比 较得出，GAS GAA TFET的开态电流和Ge-source GAA TFET接近，比Si GAA TFET 高大约 104数量级，同时，相比于 Ge-source GAA TFET, GAS GAA TFET 的关态电流大约降低了五分之四。另外，通过计算发现，GASGAATFET的亚阈 值斜率的方差低于Si GAA TFET和Ge-source GAA TFET两种器件，这说明了 GAS GAATFET的亚阈值特性最稳定。接下来，本论文研究了栅极功函数和GAS GAA TFET双极性效应之间的关系,发现缓解GAS GAA TFET的双极性效应可 以通过降低器件的栅极功函数的方法，不过，降低器件的栅极功函数会增大器件 的关态电流，影响器件的亚阈值特性，因此，综合考虑本论文中使用了4.4eU的 栅极功函数。
+接着，本论文针对TFETs器件的沟道和漏极、源极和沟道接触面进行研究， 提出了 O-GAS GAATFET和P-GAS GAATFET两种器件并对两种器件进行了深 入的探讨分析。栅极向漏极延长Overlap的结构可以对O-GAS GAA TFET中沟 道和漏极接触位置的电场有着抑制作用，这使得器件的关态电流降低，另外，器 件的点亚阈值斜率和关态电流随着Overlap的长度的增长而降低，不过，Overlap 增长也会加重双极性效应，综合考虑，本论文中O-GAS GAATFET在Overlap长 度为6nm时性能最好，可以得到点亚阈值斜率和平均亚阈值斜率分别为 36.47mV/dec和52.71mU/dec的最优良性能。P-GAS GAA TFET 中 Pocket 的存
+52
+在弯曲了器件的的源极价带和沟道导带，两条能带因此而靠近，势垒的宽度也因 此降低，进而器件局部发生带带隧穿的概率得到了提升，开态电流增大，通过研 究发现，器件的开态电流随着Pocket的掺杂浓度的增大而增大，但是，Pocket也 会影响器件的关态电流，掺杂浓度过高会使得P-GAS GAA TFET的关态电流剧 烈增加，亚阈值斜率增加，在本论文设计中，当Pocket的掺杂浓度为4 x 1018cm-3 时，P-GAS GAA TFET的开态电流相比于GAS GAA TFET可以提升3.9%,同 时，亚阈值斜率仅有微小的增加，因此，Pocket掺杂浓度为4 x 1018cm~3的P- GASGAATFET综合性能最好。最后，本论文参考GAS GAATFET的加工流程， 以此为基础，分别设计了 O-GAS GAATFET和P-GAS GAATFET对应的加工流 程。
+本论文研究工作主要为器件结构设计与Sentaurus TCAD仿真模拟，受条件 限制缺乏实际加工验证。在本论文的理论分析和仿真分析基础上，后续可以从以 下几个方面深入研究：
+(1) 通过仿真研究本文提出的GAS GAATFET, O-GAS GAATFET, P-GAS GAATFET三种器件加工工艺以及具体加工方案。
+(2) 实现 GAS GAATFET, O-GAS GAATFET, P-GAS GAA TFET,并搭建 实际电路模型，对其射频性能进行研究。
+(3) 以本文设计的器件结构为基础，采用其他结构和材料进行进一步优化设 计。
+53
+参考文献
+[1] http://amuseiim.cdstm.cn/AMuseum/ic/index_02_04_02.html 中国数字科技 馆
+[2] https://ieeexplore.ieee.org/stamp/stamp.jsp?tp:=:&amumber=7332204&tag=l Moore's Law at Fifty
+[3] 陶桂龙，许高博，殷华湘,徐秋霞•隧穿场效应晶体管的研究进展[J]・微纳电 子技术,201 &55(10):707-718.
+[4] Wang Y Y. The driving force for development of IC and systemin future: Reducing the power consumption andimproving the ratio of performance to powerconsumptionf J]. Science China (Information Sciences), 2011(05):7-27.
+[5] Kondo K, Takahashi K, Kada M・ Three-dimensional integration of semiconductors: Processing, materials, and applications [M] // ThreeDimensional Integration of Semiconductors. Springer International Publishing, 2015.
+[6] Musalgaonkar, G.; Sahay. S.; Saxena, R.S.; Kumar, M.J. Nanotube tunnelling FET with a Core Source for Ultrasteep Subthreshold Swing: A Simulation Study. IEEE Trans. Electron Devices 2019, 66, 4425*432.
+[7] Beohar, A.; Vishvakarma, S・K・ Performance enhancement of asymmetrical underlap 3D-cylindrical GAA-TFET with low spacer width. Micro Nano Lett. 2016,11,443*45.
+[8] C. Wu? Q. Huang, Y. Zhao, J. Wang, Y Wang and R. Huang, "A Novel Tunnel FET Design With Stacked Source Configuration for Average Subthreshold Swing Reduction/' in IEEE Transactions on Electron Devices^ vol. 63, no. 12, pp. 5072-5076, Dec. 2016, doi: 10.1109/TED.2016.2619694.
+[9] Lin, H.H.; Hu? V.P. Device design of vertical nanowire III-V heterojunction TFETs for performance enhancement. In Proceedings of the 2018 7th International Symposium on Next Generation Electronics (ISNE), Taipei, Taiwan, 7-9 May 2018; pp. 1-4.
+[10] Seo, J.H.; Ybon? YJ.; Lee, H.G.; Kang, LM. Design optimization InGaAs/GaAsSb-based heterojunction Gate-all-around (GAA) arch-shaped tunnelling field-efifect transistor (A-TFET). In Proceedings of the 2018 International Conference on Electronics, Information, and Communication
+54
+(ICEIC), Honolulu, HI, USA, 24-27 January 201 & pp. 1-2.
+[11] Mamidala9 J.K.; Vishnoi, R・；Pandey, P. Tunnel Field-Effect Transistors (TFET); John Wiley and Sons Ltd.: West Sussex, UK, 2016.
+[12] Gopalakrishnan, K・；Griffin, P.B.; Plummer, J.D. Impact ionization MOS (I- MOS)—Part I: Device and circuit simulations. IEEE Trans. Electron Devices 2005, 52, 69—76.
+[13] Musalgaonkar, G.; Sahay，S・；Saxena, R.S»; Kumar, M.J. An impact ionization MOSFET with reduced breakdown voltage based on baekgate misalignment・ IEEE Trans. Electron Devices 2018, 66, 868-875・
+[14] Onal, C.; Woo, R.; Koh, H.Y.; Griffin, P.B.; Plummer, J.D. A novel depletion- IMOS (DIMOS) device with improved reliability and reduced operating voltage. IEEE Electron Device Lett. 2009, 30, 64-67.
+[15] Kumar, M.J.; Maheedhar, M.; Varma, P.P. Bipolar I-MOS—An impactionization MOS with reduced operating voltage using the openbase BJT configuration. IEEE Trans. Electron Devices 2015, 62, 4345—4348.
+[16] Saurabh, S.; Kumar, M.J. Fundamentals of Tunnel Field-Effect Transistors; CRC Press: Boca Raton, FL, USA, 2016.
+[17] Abdi, D.B.; Kumar, MJ. In-built N+ pocket p-n-p-n tunnel field-efifect transisto匚 IEEE Electron Device Lett. 2014, 35, 1170-1172・
+[18] Lin J.T.; Wang T.C.; Lee W.H.; Yeh C.T.; Glass S.; Zhao, Q.T. Ch^acteristics of recessed-gate TFETs with line tunnelling・ IEEE Trans* Electron Devices 201& 65, 769-775.
+[19] Nagavarapu, V.; Jhaveri, R.; Woo, J.C. The tunnel source (PNPN) n-MOSFET: A novel high performance transisto匚 IEEE Trans. Electron Devices 2008, 55, 1013-1019.
+[20] Zhu, J.; Zhao, Y.; Huang, Q.; Chen, C.; Wu? C.; Jia, R.; Huang, R. Design and simulation of a novel graded-channel heterojunction tunnel FET with high ION/IOFF ratio and steep swing. IEEE Electron Device Lett 2017, 3& 12001203.
+[21] Beohar, A.； Yadav, N.; Vishvakarma, S.K. Analysis of trap-assisted tunnelling in asymmetrical underlap 3D-cylindrical GAA-TFET based on hetero-spacer engineering for improved device reliability. Micro Nano Lett. 2017, 12, 982986.
+[22] Kisaki H. Tunnel transistor [J], Proceedings of the IEEE, 1973, 61(7):1053-
+55
+1054.
+[23] Dubey P K，Kaushik B K. T-Shaped III-V Heterojunction Tunneling FieldEffect Transistor [J]. IEEE Transactions on Electron Devices, 2017:1-6.
+[24] N. Bagga, A. Kumar and S. Dasgupta, "Demonstration of a Novel Two Source Region Tunnel FET,M in IEEE Transactions on Electron Devices^ vol. 64. no. 12, pp. 5256-5262, Dec. 2017, doi: 10.1109/TED.2017.2759898.
+[25] G. Musalgaonkar, S. Sahay, R. S. Saxena and M. J. Kumar,H A Line Tunneling Field-Effect Transistor Based on Misaligned Core-Shell Gate Architecture in Emerging Nanotube FETs,” in IEEE Transactions on Electron Devices, vol. 66, no. 6, pp. 2809-2816, June 2019, doi: 10.1109/TED.2019.2910156.
+[26] S. Sharma and R. Chaujar, 'Terformance Analysis of a Novel Hetero-material InAs/GaAs Junctionless TFET," 2020 IEEE VLSI DEVICE CIRCUIT AND SYSTEM (VLSI DCS), Kolkata, India, 2020, pp. 38-41, doi: 10.1109/VLSIDCS47293.2020.9179852.
+[27] S. Chen, S. Wang, H. Liu, W. Li, Q. Wang and X. Wang, "Symmetric U- Shaped Gate Tunnel Field-Effect Transistor/' in IEEE Transactions on Electron Devices, vol. 64, no. 3, pp. 1343-1349, March 2017, doi: 10.1109/TED.2017.2647809.
+[28] K. Liu and C. Cheng, "Investigation on the Effects of Gate-Source
+Overlap/Underlap and Source Doping Gradient of n-lype Si Cylindrical GateAll-Around Tunnel Field-Effect Transistors/ in IEEE Transactions on Nanotechnology vol. 19, pp. 382-389,	2020, doi:

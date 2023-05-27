@@ -1,0 +1,8 @@
+3.1功能需求
+首先，简要介绍基于Hadoop的网络大规模流量分析系统。该分析系统部署 在Hadoop集群之上，依赖Hadoop集群的HDFS和Yam组件。该分析系统将合 作单位釆集得到的海量网络流量数据存放至HDFS,进而通过Yam框架运行计 算分析程序，对网络流量数据进行离线分析，如基础统计、数据挖掘等，得到相 应网络流量数据的研究分析结果。
+分析系统框架如图3-1所示，釆取经典的Hadoop集群部署方案：1个主节 点、1个备份节点兼客户机和9个子节点。除了 HDFS (NameNode、DataNode) 和 Yam (ResourceManager、NodeManager, Application)相关的进程之外，还运 行其他与数据分析相关的组件进程，如数据存储相关的HBase (HMater. HRegionServer)相关进程。其中一台备份节点作为用户进入服务器，所有用户均 通过该服务器连接分析系统，并提交运行各自的应用程序。
+Name Node
+Resource Manager
+HMaster
+Job History Server
+图3-1分析系统集群框架图

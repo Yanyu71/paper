@@ -1,0 +1,14 @@
+5.4通信发送线程
+通信发送线程负责 D2D 终端直通通信发送数据的处理等，同步的搜索和跟 踪等并不在该线程中调用，因此发送线程中只有 Synclnfo 发送是与同步状态机
+相关联的。
+对于5.3节中设计的SyncInfo结构体，并不能直接用于传输。系统中数据的 传输是以8位数据传输，由于带外资源非常紧缺，因此将 Synclnfo 中的信息通
+过高四位和低四位拼接的方法进行打包传输。
+将 Synclnfo 中的信息A 和信息B 可以按下式合并成一个SyncMessage 变 量
+用于传输：
+SyncMessage   =A>>4|B(5- 1)
+合并后， A 占高四位， B 占第四位。通过该方案的处理，用于发送的SyncInfo
+存储情况如下图5-8所示。
+47
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+Sync   Message
+图5-8 同步发送线程中 SyncInfo的存储

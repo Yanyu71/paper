@@ -1,0 +1,20 @@
+5.2.2去除ZC相关及子载波合并模块
+该模块实现在4个符号终端处理中，将接收数据与ZC共轴序列相乘，去除ZC序 列的影响。并将12个子载波解相关后的信号进行合并。
+下表给岀了该模块的函数描述。
+表5-2:去ZC相关模块函数描述
+函数原型	void eNBRxPucch_ZcDeCorr(TsIdx, SymNo, subfrmBufldx)
+函数输入	函数参数	Tsldx：时隙号
+SymNo：符号数 subfirnBufldx：缓存索引
+全局变量	FRONTOUT_POOL_ANT1:天线］解前端输出
+FRONTOUT_POOL_ANT2:天线2解前端输出
+UlSubFrmlnfb：子帧配置信息
+PnPhaseTable：指向PUCCH的ZC基序列元素在PnElemTable表上的索引
+PnElemTable： ZC基序列的组成
+PucchNcs：指向ZC序列循环移位数组的指针
+CsTable：指向ZC序列的相位数组的指针
+PucchPRBIdx：指向PUCCH映射RB数组的指针
+函数输出	全局变量	PucchZCedDatal；指向天线1上PUCCH域去ZC相关后信号数组的指针
+PucchZCedData2：指向天线2上PUCCH域去ZC相关后信号数组的指针
+返回值	无
+该模块处理流程图如下:
+图5-3:去ZC相关模块处理流程

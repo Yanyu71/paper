@@ -1,0 +1,19 @@
+4.4.2单元測试
+本文首先对DSP上的实现代码进行了单元测试，如图4-12所示，从上到下四个模 块分别为对应PUCCH处理过程的4个任务，模块中的数字为测试节点编号。每个测试 节点的数据来源与输出的数据的结构在表4-8中给岀。其中节点1输入数据由CoreO给 出，由Matlab仿真出的空口数据模拟得到，因此每个节点的输出内容也应该与对应测 试数据的Matlab的输出一致。
+图4-12 PUCCH模块结构划分
+56
+表4-8 PUCCH测试节点定义
+NO.	测试节点定义	来源	数据结构
+1	时隙号0-19	corcO
+2	不同用户的ncs, noc 初始输入数据	M3,计算	g aFFTData [14*1200*2* ANT_NUM]
+3	不同用户的ncs, noc 初始输入数据	M3,计算	g aFFTData [14*1200*2 * ANT_NUM]
+4	去除ZC相关后的数据	eNBRxPucchZcDeCorr	AZC[C MAX N USER* 12* 14*2]
+5	不同用户的ncs, noc 初始输入数据	M3,计算	g aFFTData [14*1200*2* ANT_NUM]
+6	不同用户的ncs, noc 初始输入数据	M3,计算	g aFFTData [14*1200*2*
+ANT_NUM]
+7	　　去除ZC相关后的数据	eNBRxPucchZcDeCorr	DataAZC[C_MAX_N_USER* 12* 1
+4*2]
+8	均衡后的数据	eNBRxPucchDTXChEstEq	　DataAEq[C_MAX_N_USER* 12]
+9	解调解扰后的数据	eNBRxPucchDemoDeScrmb	ACK/NACK.RI.未解码的 CSI
+10	　　　　解码后的CSI	eNbRxPucchDeReedMuller	l-13bit
+我们使用Matlab ±行链路的仿真平台，根据不同的高层配置，在每个节点产生多 组测试向量，对每个节点的输出进行测试，输出结果均与Matlab ±行链路仿真平台的 输出相一致，这里就不再逐一列举测试用例了。

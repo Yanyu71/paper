@@ -1,0 +1,63 @@
+5.5.5定理5.6证明
+对于0 瑶ax，令当彤=0，即
+F,1 +。-巾,2)°2
+P-m	,	、2 ,、IIl i|2 2	/	x square
+=			~a-m,2)+2||hm,￡,ll2Cr a-m,\a-m,2 \a-m,\ ~a-m,2)今
+An)
+必怕扁財	)	(	、丄也||h邮|財
+-^2	 2				a-m,\a-m,2 = u-
+(5-98) 其判别式为
+16||h叫￡以。4 2	2 丄」I&’eII：04	(	、2 n ncn
+妃	a-w,la-m,2 + 4	^2	a-m,\a-m,2(a-m,l ~ a-m,2)〉。?	(5-99)
+因此，最大化第初个干扰节点效用的要价为
+~P0	一 (a-in,l +a-m,2)\/a-m,la-m,2)
+K =——	=	L .	(5-100)
+||蝙』|脚2 {a_mA-a_m2)
+结合讨论的三种情况，第m个干扰节点的最优要价可表示为(5-58)o
+参考文献
+[1]Wang X, Hao P, Hanzo L. Physical-layer authentication for wireless security enhancement: current challenges and future developments]J]. IEEE Communications Magazine, 2016, 54(6): 152-158.
+[2]Yang N, Wang L F, Geraci G, et aL Safeguarding 5G Wireless Communication Networks Using Physical Layer Security [J]. IEEE Communication Magazine, 2015, 34(2): 20-27.
+[3]Wu Y, Khisti A, Xiao C, et al. A Survey of Physical Layer Security Techniques for 5G Wireless Networks and Challenges Ahead[J]. arXiv preprint arXiv: 1801,05227,2018.
+[4]Pinto P C3 Barros J, Win M Z. Secure Cominunication in Stochastic Wireless Networks—Part I: Connectivity [J]. IEEE Transactions on Information Forensics & Security, 2012, 7(1): 125-137、
+[5]Wang H, Zhou Xa Reed M C. Physical Layer Security in Cellular Networks: A Stochastic Geometry Approach[J]. IEEE Transactions on Wireless Communications, 2013, 12(6): 2776-2787.
+[6]Zhu 丄 Schober R, Bhargava V K. Secure transmission in multicell massive MIMO systems [J]. IEEE Transactions on Wireless Communications, 2014, 13(9): 4766-4781.
+[7]Geraci G, Couillet R, Yuan J, et al. Large System Analysis of Linear Precoding in MISO Broadcast Channels with Confidential Messages]J].【EEE J. Sei. Areas Common., 2013, 31(9): 1660-1671.
+[8]Geraci G, Singh S, Andrews J G, et al. Secrecy Rates in Broadcast Channels with Confidential Messages and External Eavesdroppers]」], IEEE Transactions on Wireless Communications, 2015, 13(5): 2931—2943.
+[9]Navaratnarajah S, Saeed A, Dianati M, et al. Energy efficiency in heterogeneous wireless access networks[JJ. IEEE Transactions on Wireless Communications, 2013, 20(5): 37顼3_
+[10]Khisti A, Womell G W. Secure transmission with multiple antennas I: The MIMOME wiretap chan- nel[J]. IEEE Transactions on Information Theory, 2010, 56(7): 3088-3104.
+[11]Chu Z, Johnston M? Le Goff S. Robust beamforming techniques for MISO secrecy communication with a cooperative jammer[A]. // IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1—5.
+[12]Goel Ss Negi R. Guaranteeing secrecy using artificial noisefJ]. IEEE Transactions on Wireless Communications, 2008, 7(6): 2180—2189.
+[13]Li N, Tao X, Wu H, et al. Large System Analysis of Artificial Noise Assisted Communication in the Multiuser Downlink[J]. IEEE Transactions on Vehicular Technology, 2016, 65(9): 7036—7050.
+[14]Zhou X, McKay M R. Secure transmission with artificial noise over fading channels: achievable rate and optimal power allocation[J]. IEEE Transactions on Vehicular Technology, 2010, 59(7): 38313842.
+[15]Zhu J, Schober R, Bhargava V K. Linear Precoding of Data and Artificial Noise in Secure Massive MIMO Systems[J]. IEEE Transactions on Wireless Communications, 2016, 15(3): 2245—2261.
+[16]Zheng G, Choo L C, Wong K K. Optimal cooperative jamming to enhance physical layer security using relays[J]. IEEE Transactions on Signal Processing, 2011, 59(3): 1317-1322.
+[17]Barros J P V P C P J. Position-based jamming for enhanced wireless secrecy [J]. IEEE Transactions on Information Forensics & Security, 2011, 6(3): 616—627.
+[18]Zhou X, Tao Kennedy R A. Cooperative jamming fbr secrecy in decentralized wireless net- works[A]. // IEEE International Conference on Communications (ICC)[C]. Ottawa, ON, Canada: IEEE, 2012: 2339-2344.
+[19]Ding Z, Leung K K, Goeckel D L, et al. On the application of cooperative transmission to secrecy communications]J]. IEEE J. SeL Areas Commun., 2012, 30(2): 359—368.
+[20]Wang H M, Luo M, Yin Q, et al. Hybrid cooperative beamforming and jamming for physical-layer security of two-way relay networksfJ]. IEEE Transactions on Information Forensics & Security, 2013,8(12): 2007-2020.
+[21]Luo S, Li J, Petropulu A P. Uncoordinated cooperative jamming for secret communication[J]. IEEE Transactions on Information Forensics & Security, 2013, 8(7): 1081-1090.
+[22]Vishwakarma S, Chockalingam A, Amplify-and-fbrward relay beamfbrming for secrecy with cooperative jamming and imperfect CSI[A]. // IEEE International Conference on Communications (ICC)[C]. Budapest, Hungary: IEEE, 2013: 3047-3052.
+[23]Lee J H, Choi W. Multiuser diversity for secrecy communication using opportunistic jammer selection: Secure DOF and jammer scaling law[J]. IEEE Transactions on Signal Processing, 2014,62(4): 828-839.
+[24]Chu Z, Cumanan K, Ding Z, et al. Secrecy rate optimization for a MIMO secrecy channel based on Stackelberg game[A]. // Proceedings of European Signal Processing Conference (EUSIPCO)[C]. Lisbon, Portugal: IEEE, 2014: 126-130.
+[25]Chu Z, Johnston M, Le Goff S. Alternating optimization for MIMO secrecy channel with a cooperative jammer[A]. // IEEE Vehicular Technology Conference (VTC Spring)[C]. Glasgow: IEEE, 2015: 1—5.
+[26]Wang C, Wang H, Xia X, et al. Uncoordinated Jammer Selection for Securing SIMOME Wiretap Channels: A Stochastic Geometry Approach[J], IEEE Transactions on Wireless Communications, 2015, 14(5): 2596-2612.
+[27]Zhang Q, Huang X, Li Q, et al. Cooperative Jamming Aided Robust Secure Transmission for Wire
+less Information and Power Transfer in MISO Channels[J]. IEEE Transactions on Communications, 2015,63(3): 906-915.	泛
+[28]Haenggi M. Stochastic Geometry for Wireless Networks[M]. Cambridge, U.K.: Cambridge Univ. Press, 2012.
+[29]Ferenc J S, Neda Z. On the size distribution of poisson voronoi cells[J]. Phys. A: Stat. Meeh. AppL, 2007, 385(2): 519-529.
+[30]Kiang T. Random fragmentation in two and three dimensions[J]. Zeitschrift fur Astrophysik, 1966, 64: 433-439.
+[31]Cao D, Zhou S, Niu Z. Optimal Combination of Base Station Densities for Energy-Efficient Two- Tier Heterogeneous Cellular NetworksfJ], IEEE Transactions on Wireless Communications, 2013, 12(9): 4350-4362.
+[32]Paulraj A, Nabar R, Gore D. Introduction to Space-Time Wireless Communications[M]. Cambridge, U.K.: Cambridge Univ. Press, 2003.
+[33]Shafie E, Ahmed, Niyato D, et al. Security ofRechargeable Energy-Harvesting Transmitters in Wireless Networks[J]. IEEE Wireless Communications Letters, 2016, 5(4): 384-387.
+[34]Chu Z, Cumanan K, Ding Z, et al. Secrecy Rate Optimizations for a MIMO Secrecy Channel With a Cooperative Jammer[J]. IEEE Transactions on Vehicular Technology, 2015, 64(5): 1833-1847.
+[35]Zhang R, Song L, Han Z, et al. Physical Layer Security fbr Two-Way Untrusted Relaying With Friendly Jammers[J]. IEEE Transactions on Vehicular Technology, 2012, 61(8): 3693-3704.
+[36]Wang A, Cai Y Yang W et al. A Stackelberg security game with cooperative jamming over a multiuser OFDMA network[A]. // IEEE Wireless Communications and Networking Conference (WCNC)[C], Shanghai: IEEE, 2013: 4169-4174.
+[37]Bloch M, Barros J, Rodrigues M R D, et al. Wireless information-theoretic security[J]. IEEE Transactions on Information Theory,, 2008, 54(6): 2515-2534.
+[38]Han Z, Niyato D, Saad W, et al. Game Theory in Wireless and Communication Networks: Theory, Models, and Applications[M]. Cambridge, U.K.: Cambridge Univ. Press, 2011.
+[39]Bas ar T, Olsder G J. Dynamic noncooperative game theoiy[M]. New York: Academic press, 1982.
+[40]Lancaster P, Tismenetsky M. The Theory of Matrices with Applications[M]. New York: Academic press, 1985.
+[41]AHorn R, Johnson C R. Matrix Analysis[M]. Cambridge, U.K.: Cambridge Univ. Press, 1985.
+[42]Bazaraa M S, Sherali H D, Shetty C M. Nonlinear Programming: Theory and Algorithms[M]. "New Jersey: John Wiley & Sons, 2013.
+[43]Du Sautoy M. Symmetry: A journey into the patterns of nature[M]. New York: Harper Collins, 2008.
+[44]B R J. Existence and uniqueness of equilibrium points for concave n-person games [J]. Econometrica: Journal of the Econometric Society, 1965, 33(3): 520-534,
+[45]Spencer Q H, Swindlehurst A L, Haardt M. Zero-forcing methods for downlink spatial multiplexing in multiuser MIMO channels[J]. IEEE Transactions on Signal Processing, 2004, 52(2): 461—471.

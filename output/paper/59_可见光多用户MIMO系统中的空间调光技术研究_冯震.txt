@@ -1,0 +1,3511 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "无线通信技术",
+            "en": "Wireless Communication Technology"
+        },
+        {
+            "title": "射频频段",
+            "en": "RF Frequency Band"
+        },
+        {
+            "title": "移动数据流量",
+            "en": "Mobile Data Traffic"
+        },
+        {
+            "title": "可见光通信",
+            "en": "Visible Light Communication"
+        },
+        {
+            "title": "VLC",
+            "en": "VLC"
+        },
+        {
+            "title": "LED",
+            "en": "LED"
+        },
+        {
+            "title": "MIMO",
+            "en": "MIMO"
+        },
+        {
+            "title": "室内无线接入",
+            "en": "Indoor Wireless Access"
+        },
+        {
+            "title": "异构网络",
+            "en": "Heterogeneous Network"
+        },
+        {
+            "title": "绿色通信",
+            "en": "Green Communication"
+        }
+    ],
+    "relations": [
+        {
+            "source": "无线通信技术",
+            "target": "射频频段",
+            "type": "应用于"
+        },
+        {
+            "source": "移动数据流量",
+            "target": "无线通信技术",
+            "type": "驱动"
+        },
+        {
+            "source": "射频频段",
+            "target": "可见光通信",
+            "type": "扩展到"
+        },
+        {
+            "source": "LED",
+            "target": "可见光通信",
+            "type": "应用于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "MIMO",
+            "type": "应用了"
+        },
+        {
+            "source": "LED",
+            "target": "室内无线接入",
+            "type": "应用于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "室内无线接入",
+            "type": "作为"
+        },
+        {
+            "source": "可见光通信",
+            "target": "异构网络",
+            "type": "组成"
+        },
+        {
+            "source": "LED",
+            "target": "绿色通信",
+            "type": "应用于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "绿色通信",
+            "type": "实现"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光通信",
+            "en": "Visible Light Communication"
+        },
+        {
+            "title": "附加在LED照明设备上",
+            "en": "Attached to LED lighting equipment"
+        },
+        {
+            "title": "降低通信能量损耗",
+            "en": "Reducing communication energy loss"
+        },
+        {
+            "title": "保密性好",
+            "en": "Good confidentiality"
+        },
+        {
+            "title": "难以向外泄露",
+            "en": "Difficult to leak outside"
+        },
+        {
+            "title": "适合保密通信场景",
+            "en": "Suitable for confidential communication scenarios"
+        },
+        {
+            "title": "基础设施泛在",
+            "en": "Ubiquitous infrastructure"
+        },
+        {
+            "title": "降低部署成本和难度",
+            "en": "Reducing deployment costs and difficulties"
+        },
+        {
+            "title": "绿色节能",
+            "en": "Green and energy-saving"
+        },
+        {
+            "title": "安全无辐射",
+            "en": "Safe and non-radiative"
+        },
+        {
+            "title": "不影响人眼安全与照明需求",
+            "en": "Does not affect human eye safety and lighting needs"
+        },
+        {
+            "title": "兼容射频通信",
+            "en": "Compatible with RF communication"
+        },
+        {
+            "title": "不会相互干扰",
+            "en": "Will not interfere with each other"
+        },
+        {
+            "title": "缓解流量需求不断增长与射频频谱资源紧缺之间的矛盾",
+            "en": "Alleviating the contradiction between the increasing demand for traffic and the shortage of RF spectrum resources"
+        },
+        {
+            "title": "可用频段宽",
+            "en": "Wide available frequency band"
+        },
+        {
+            "title": "通信速率高",
+            "en": "High communication rate"
+        },
+        {
+            "title": "未来5G技术的有力补充",
+            "en": "A powerful supplement to future 5G technology"
+        },
+        {
+            "title": "智能家居",
+            "en": "Smart home"
+        },
+        {
+            "title": "物联网",
+            "en": "Internet of Things"
+        },
+        {
+            "title": "可见光通信的发展现状",
+            "en": "Development status of visible light communication"
+        },
+        {
+            "title": "光子电话",
+            "en": "Photonic telephone"
+        },
+        {
+            "title": "金属板对太阳光的反射",
+            "en": "Reflection of sunlight by metal plates"
+        },
+        {
+            "title": "光源的稳定性",
+            "en": "Stability of light source"
+        },
+        {
+            "title": "白光LED",
+            "en": "White LED"
+        },
+        {
+            "title": "高速通断LED",
+            "en": "High-speed on-off LED"
+        },
+        {
+            "title": "可见光信号调制",
+            "en": "Visible light signal modulation"
+        },
+        {
+            "title": "智能交通",
+            "en": "Intelligent transportation"
+        },
+        {
+            "title": "室内可见光通信理论模型",
+            "en": "Indoor visible light communication theoretical model"
+        },
+        {
+            "title": "OFDM技术",
+            "en": "OFDM technology"
+        },
+        {
+            "title": "多径传播",
+            "en": "Multipath propagation"
+        },
+        {
+            "title": "码间干扰",
+            "en": "Inter-code interference"
+        },
+        {
+            "title": "可见光通信联盟组织",
+            "en": "Visible Light Communications Consortium"
+        },
+        {
+            "title": "广告牌",
+            "en": "Billboard"
+        },
+        {
+            "title": "灯塔",
+            "en": "Lighthouse"
+        },
+        {
+            "title": "定位",
+            "en": "Positioning"
+        },
+        {
+            "title": "成像MIMO",
+            "en": "Imaging MIMO"
+        },
+        {
+            "title": "均衡技术",
+            "en": "Equalization technology"
+        },
+        {
+            "title": "多入多出技术",
+            "en": "Multiple input multiple output technology"
+        },
+        {
+            "title": "非成像MIMO",
+            "en": "Non-imaging MIMO"
+        },
+        {
+            "title": "可见光MIMO通信传输实验",
+            "en": "Visible light MIMO communication transmission experiment"
+        },
+        {
+            "title": "新型微型LED",
+            "en": "New micro-LED"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光通信",
+            "target": "LED照明设备",
+            "type": "附加在"
+        },
+        {
+            "source": "可见光通信",
+            "target": "LED照明设备",
+            "type": "降低能量损耗"
+        },
+        {
+            "source": "可见光通信",
+            "target": "电磁波",
+            "type": "保密性好"
+        },
+        {
+            "source": "可见光通信",
+            "target": "墙体等障碍物",
+            "type": "保密性好"
+        },
+        {
+            "source": "可见光通信",
+            "target": "封闭环境",
+            "type": "保密性好"
+        },
+        {
+            "source": "可见光通信",
+            "target": "智能照明",
+            "type": "基础设施泛在"
+        },
+        {
+            "source": "可见光通信",
+            "target": "智能家居",
+            "type": "基础设施泛在"
+        },
+        {
+            "source": "可见光通信",
+            "target": "车联网",
+            "type": "基础设施泛在"
+        },
+        {
+            "source": "可见光通信",
+            "target": "水下通信",
+            "type": "基础设施泛在"
+        },
+        {
+            "source": "可见光通信",
+            "target": "射频信号",
+            "type": "兼容"
+        },
+        {
+            "source": "可见光通信",
+            "target": "射频通信系统",
+            "type": "兼容"
+        },
+        {
+            "source": "可见光通信",
+            "target": "流量需求",
+            "type": "缓解矛盾"
+        },
+        {
+            "source": "可见光通信",
+            "target": "射频频谱资源",
+            "type": "缓解矛盾"
+        },
+        {
+            "source": "可见光通信",
+            "target": "5G技术",
+            "type": "有力补充"
+        },
+        {
+            "source": "可见光通信",
+            "target": "智能家居",
+            "type": "重要作用"
+        },
+        {
+            "source": "可见光通信",
+            "target": "物联网",
+            "type": "重要作用"
+        },
+        {
+            "source": "光子电话",
+            "target": "贝尔",
+            "type": "研制"
+{
+    "knowledge_points": [
+        {
+            "title": "可见光通信",
+            "en": "Visible Light Communication"
+        },
+        {
+            "title": "附加在LED照明设备上",
+            "en": "Attached to LED lighting equipment"
+        },
+        {
+            "title": "降低通信能量损耗",
+            "en": "Reducing communication energy loss"
+        },
+        {
+            "title": "保密性好",
+            "en": "Good confidentiality"
+        },
+        {
+            "title": "难以向外泄露",
+            "en": "Difficult to leak outside"
+        },
+        {
+            "title": "适合保密通信场景",
+            "en": "Suitable for confidential communication scenarios"
+        },
+        {
+            "title": "基础设施泛在",
+            "en": "Ubiquitous infrastructure"
+        },
+        {
+            "title": "降低部署成本和难度",
+            "en": "Reducing deployment costs and difficulties"
+        },
+        {
+            "title": "绿色节能",
+            "en": "Green and energy-saving"
+        },
+        {
+            "title": "安全无辐射",
+            "en": "Safe and non-radiative"
+        },
+        {
+            "title": "不影响人眼安全与照明需求",
+            "en": "Does not affect human eye safety and lighting needs"
+        },
+        {
+            "title": "兼容射频通信",
+            "en": "Compatible with RF communication"
+        },
+        {
+            "title": "不会相互干扰",
+            "en": "Will not interfere with each other"
+        },
+        {
+            "title": "缓解流量需求不断增长与射频频谱资源紧缺之间的矛盾",
+            "en": "Alleviating the contradiction between the increasing demand for traffic and the shortage of RF spectrum resources"
+        },
+        {
+            "title": "可用频段宽",
+            "en": "Wide available frequency band"
+        },
+        {
+            "title": "通信速率高",
+            "en": "High communication rate"
+        },
+        {
+            "title": "未来5G技术的有力补充",
+            "en": "A powerful supplement to future 5G technology"
+        },
+        {
+            "title": "智能家居",
+            "en": "Smart home"
+        },
+        {
+            "title": "物联网",
+            "en": "Internet of Things"
+        },
+        {
+            "title": "贝尔光子电话",
+            "en": "Bell's photophone"
+        },
+        {
+            "title": "光源稳定性",
+            "en": "Light source stability"
+        },
+        {
+            "title": "高速通断LED",
+            "en": "High-speed on-off LED"
+        },
+        {
+            "title": "可见光信号调制",
+            "en": "Visible light signal modulation"
+        },
+        {
+            "title": "智能交通",
+            "en": "Intelligent transportation"
+        },
+        {
+            "title": "室内可见光通信理论模型",
+            "en": "Indoor visible light communication theoretical model"
+        },
+        {
+            "title": "OFDM技术",
+            "en": "OFDM technology"
+        },
+        {
+            "title": "多径传播",
+            "en": "Multipath propagation"
+        },
+        {
+            "title": "码间干扰",
+            "en": "Inter-symbol interference"
+        },
+        {
+            "title": "可见光通信联盟组织",
+            "en": "Visible Light Communications Consortium"
+        },
+        {
+            "title": "广告牌",
+            "en": "Billboard"
+        },
+        {
+            "title": "灯塔",
+            "en": "Lighthouse"
+        },
+        {
+            "title": "定位",
+            "en": "Positioning"
+        },
+        {
+            "title": "成像MIMO",
+            "en": "Imaging MIMO"
+        },
+        {
+            "title": "均衡技术",
+            "en": "Equalization technology"
+        },
+        {
+            "title": "多入多出技术",
+            "en": "Multiple input multiple output technology"
+        },
+        {
+            "title": "非成像MIMO",
+            "en": "Non-imaging MIMO"
+        },
+        {
+            "title": "海因里希-赫兹研究所",
+            "en": "Heinrich-Hertz-Institut"
+        },
+        {
+            "title": "离散多音调制",
+            "en": "Discrete multi-tone modulation"
+        },
+        {
+            "title": "速率",
+            "en": "Rate"
+        },
+        {
+            "title": "O'Brien团队",
+            "en": "O'Brien team"
+        },
+        {
+            "title": "H.Haas团队",
+            "en": "H.Haas team"
+        },
+        {
+            "title": "新型微型LED",
+            "en": "New micro-LED"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光通信",
+            "target": "LED照明设备",
+            "type": "附加在"
+        },
+        {
+            "source": "可见光通信",
+            "target": "通信能量损耗",
+            "type": "降低"
+        },
+        {
+            "source": "可见光通信",
+            "target": "电磁波",
+            "type": "相比于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "墙体等障碍物",
+            "type": "更容易受阻挡"
+        },
+        {
+            "source": "可见光通信",
+            "target": "封闭环境",
+            "type": "难以向外泄露"
+        },
+        {
+            "source": "可见光通信",
+            "target": "保密通信场景",
+            "type": "适合"
+        },
+        {
+            "source": "可见光通信",
+            "target": "智能照明",
+            "type": "应用于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "智能家居",
+            "type": "发挥重要作用"
+        },
+        {
+            "source": "可见光通信",
+            "target": "物联网",
+            "type": "发挥重要作用"
+        },
+        {
+            "source": "贝尔光子电话",
+            "target": "光源稳定性",
+            "type": "由于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "高速通断LED",
+            "type": "利用"
+        },
+        {
+            "source": "可见光通信",
+            "target": "可见光信号调制",
+            "type": "实现"
+        },
+        {
+            "source": "可见光通信",
+            "target": "智能交通",
+            "type": "应用于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "OFDM技术",
+            "type": "利用"
+        },
+        {
+            "source": "可见光通信",
+            "target": "多径传播",
+            "type": "引起"
+        },
+        {
+            "source": "可见光通信",
+            "target": "码间干扰",
+            "type": "影响"
+        },
+        {
+            "source": "可见光通信",
+            "target": "可见光通信联盟组织",
+            "type": "成立"
+        },
+{
+    "knowledge_points": [
+        {"title": "PureLiFi公司", "en": "PureLiFi company"},
+        {"title": "超并行可见光通信(UP-VLC)项目", "en": "UltraParallelVisibleLightCommunication (UP-VLC) project"},
+        {"title": "地平线2020(Horizon2020)项目", "en": "Horizon2020 project"},
+        {"title": "智能照明通信(SmartLightingCommunication,SLC)项目", "en": "Smart Lighting Communication (SLC) project"},
+        {"title": "可见光通信与WiFi的兼容性", "en": "Compatibility between visible light communication and WiFi"},
+        {"title": "可见光MIMO技术", "en": "Visible light MIMO technology"},
+        {"title": "可见光OFDM技术", "en": "Visible light OFDM technology"},
+        {"title": "可见光平台", "en": "Visible light platform"},
+        {"title": "泛光通信(CenterforUbiquitousCommunicationbyLight,UC-Light)中心", "en": "Center for Ubiquitous Communication by Light (UC-Light)"},
+        {"title": "数字多媒体音视频信号白光LED传输系统", "en": "Digital multimedia audio and video signal white light LED transmission system"},
+        {"title": "中国可见光通信产业技术联盟", "en": "China Visible Light Communication Industry Technology Alliance"},
+        {"title": "可见光通信标准", "en": "Visible light communication standards"},
+        {"title": "Philips^PureLiFi、OledComm^Velmenni、VLNComm等公司", "en": "Companies such as Philips^PureLiFi, OledComm^Velmenni, VLNComm, etc."}
+    ],
+    "relations": [
+        {"source": "PureLiFi公司", "target": "Li-Fi的产品生产和Li-Fi技术的推广", "type": "致力于"},
+        {"source": "超并行可见光通信(UP-VLC)项目", "target": "研制支持高达ITbps/mn照明LED模组", "type": "研制"},
+        {"source": "超并行可见光通信(UP-VLC)项目", "target": "研发基于该模组的高速可见光通信系统", "type": "研发"},
+        {"source": "地平线2020(Horizon2020)项目", "target": "投入约800亿欧元以推进热门领域的研究工作以及相关科技成果的市场转化", "type": "投入"},
+        {"source": "地平线2020(Horizon2020)项目", "target": "将可见光通信纳入支持范畴", "type": "支持"},
+        {"source": "智能照明通信(SmartLightingCommunication,SLC)项目", "target": "利用LED照明设备的可见光信号实现无线通信设备的互联", "type": "利用"},
+        {"source": "可见光通信与WiFi的兼容性", "target": "现有的WiFi系统", "type": "兼容性"},
+        {"source": "可见光通信与WiFi的兼容性", "target": "可见光通信系统", "type": "兼容性"},
+        {"source": "可见光通信与WiFi的兼容性", "target": "混合组网", "type": "混合组网"},
+        {"source": "可见光MIMO技术", "target": "可见光系统", "type": "技术"},
+        {"source": "可见光OFDM技术", "target": "新型的可见光OFDM技术", "type": "技术"},
+        {"source": "可见光OFDM技术", "target": "可见光小区", "type": "应用"},
+        {"source": "可见光平台", "target": "可见光通信在通信、定位和传输方面的实际应用", "type": "应用"},
+        {"source": "可见光平台", "target": "LED熄灭条件下的可见光通信", "type": "应用"},
+        {"source": "泛光通信(CenterforUbiquitousCommunicationbyLight,UC-Light)中心", "target": "未来泛在、互联的可见光通信系统", "type": "研究"},
+        {"source": "中国可见光通信产业技术联盟", "target": "50Gbps的大容量实时可见光通信系统", "type": "实现"},
+        {"source": "中国可见光通信产业技术联盟", "target": "全球首款商品级超宽带可见光通信专用芯片组", "type": "研发"},
+        {"source": "Philips^PureLiFi、OledComm^Velmenni、VLNComm等公司", "target": "可见光通信原型系统的开发", "type": "开发"},
+        {"source": "Philips^PureLiFi、OledComm^Velmenni、VLNComm等公司", "target": "推出了第一代产品模型", "type": "推出"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光通信",
+            "en": "Visible Light Communication"
+        },
+        {
+            "title": "多用户MIMO系统",
+            "en": "Multi-User MIMO System"
+        },
+        {
+            "title": "准直性",
+            "en": "Directivity"
+        },
+        {
+            "title": "半功率角",
+            "en": "Half Power Angle"
+        },
+        {
+            "title": "视场角",
+            "en": "Field of View"
+        },
+        {
+            "title": "上行通信",
+            "en": "Uplink Communication"
+        },
+        {
+            "title": "闪烁",
+            "en": "Flicker"
+        },
+        {
+            "title": "射频",
+            "en": "Radio Frequency"
+        },
+        {
+            "title": "红外",
+            "en": "Infrared"
+        },
+        {
+            "title": "信道估计",
+            "en": "Channel Estimation"
+        },
+        {
+            "title": "光功率",
+            "en": "Optical Power"
+        },
+        {
+            "title": "信道相关性",
+            "en": "Channel Correlation"
+        },
+        {
+            "title": "信号衰减",
+            "en": "Signal Attenuation"
+        },
+        {
+            "title": "空间调光技术",
+            "en": "Spatial Dimming Technology"
+        },
+        {
+            "title": "预编码",
+            "en": "Precoding"
+        },
+        {
+            "title": "多用户干扰",
+            "en": "Multi-User Interference"
+        },
+        {
+            "title": "发送天线选择",
+            "en": "Transmit Antenna Selection"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光通信",
+            "target": "多用户MIMO系统",
+            "type": "属于"
+        },
+        {
+            "source": "可见光通信",
+            "target": "准直性",
+            "type": "存在问题"
+        },
+        {
+            "source": "可见光通信",
+            "target": "上行通信",
+            "type": "存在问题"
+        },
+        {
+            "source": "上行通信",
+            "target": "闪烁",
+            "type": "影响"
+        },
+        {
+            "source": "上行通信",
+            "target": "射频",
+            "type": "替代方式"
+        },
+        {
+            "source": "上行通信",
+            "target": "红外",
+            "type": "替代方式"
+        },
+        {
+            "source": "上行通信",
+            "target": "信道估计",
+            "type": "存在问题"
+        },
+        {
+            "source": "可见光通信",
+            "target": "光功率",
+            "type": "存在问题"
+        },
+        {
+            "source": "可见光通信",
+            "target": "信道相关性",
+            "type": "存在问题"
+        },
+        {
+            "source": "可见光通信",
+            "target": "信号衰减",
+            "type": "存在问题"
+        },
+        {
+            "source": "可见光通信",
+            "target": "空间调光技术",
+            "type": "解决问题"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "预编码",
+            "type": "影响"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "多用户干扰",
+            "type": "解决问题"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "发送天线选择",
+            "type": "提升性能"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SD-ZF和SD-MMSE方案", "en": "SD-ZF and SD-MMSE schemes"},
+        {"title": "光功率调节", "en": "Optical power adjustment"},
+        {"title": "OFDM信号削峰失真", "en": "OFDM signal peak-to-average power ratio distortion"},
+        {"title": "CSI", "en": "Channel state information"},
+        {"title": "TAS算法", "en": "Transmit antenna selection algorithm"},
+        {"title": "空间调光技术", "en": "Spatial dimming technology"},
+        {"title": "JASD方案", "en": "Joint analogue and spatial dimming scheme"},
+        {"title": "用户信道状态自适应", "en": "User channel state adaptation"},
+        {"title": "功率分配算法", "en": "Power allocation algorithm"},
+        {"title": "MUI消除", "en": "Multi-user interference cancellation"}
+    ],
+    "relations": [
+        {"source": "SD-ZF和SD-MMSE方案", "target": "光功率调节", "type": "实现"},
+        {"source": "SD-ZF和SD-MMSE方案", "target": "OFDM信号削峰失真", "type": "降低"},
+        {"source": "SD-ZF和SD-MMSE方案", "target": "CSI", "type": "利用"},
+        {"source": "SD-ZF和SD-MMSE方案", "target": "TAS算法", "type": "确定"},
+        {"source": "JASD方案", "target": "空间调光技术", "type": "属于"},
+        {"source": "JASD方案", "target": "CSI", "type": "利用"},
+        {"source": "JASD方案", "target": "光功率调节", "type": "联合调节"},
+        {"source": "JASD方案", "target": "削峰噪声", "type": "降低"},
+        {"source": "JASD方案", "target": "TAS算法", "type": "确定"},
+        {"source": "用户信道状态自适应", "target": "空间调光技术", "type": "属于"},
+        {"source": "用户信道状态自适应", "target": "功率分配算法", "type": "设计"},
+        {"source": "用户信道状态自适应", "target": "MUI消除", "type": "解决"},
+        {"source": "功率分配算法", "target": "用户信道状态自适应", "type": "应用"},
+        {"source": "MUI消除", "target": "空间调光技术", "type": "解决"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信的背景和意义", "en": "Background and significance of visible light communication"},
+        {"title": "可见光多用户MIMO系统", "en": "Visible light multi-user MIMO system"},
+        {"title": "空间调光技术", "en": "Spatial modulation technology"}
+    ],
+    "relations": [
+        {"source": "可见光通信的背景和意义", "target": "可见光多用户MIMO系统", "type": "包含"},
+        {"source": "可见光通信的背景和意义", "target": "空间调光技术", "type": "包含"},
+        {"source": "可见光多用户MIMO系统", "target": "空间调光技术", "type": "包含"},
+        {"source": "可见光多用户MIMO系统", "target": "空间信息处理", "type": "包含"},
+        {"source": "空间调光技术", "target": "基于用户而干扰消除的空间调光技术研究", "type": "包含"},
+        {"source": "空间调光技术", "target": "基于用户信道去相关的空间调光技术研究", "type": "包含"},
+        {"source": "空间调光技术", "target": "基于用户信道状态自适应的空间调光技术研究", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "光无线信道传播",
+            "en": "Optical wireless channel propagation"
+        },
+        {
+            "title": "光电二极管",
+            "en": "Photo-diode"
+        },
+        {
+            "title": "隔直处理",
+            "en": "DC isolation"
+        },
+        {
+            "title": "解调",
+            "en": "Demodulation"
+        },
+        {
+            "title": "信道解码",
+            "en": "Channel decoding"
+        },
+        {
+            "title": "白光LED",
+            "en": "White LED"
+        },
+        {
+            "title": "LED照明装置",
+            "en": "LED lighting device"
+        },
+        {
+            "title": "调节电流",
+            "en": "Current regulation"
+        },
+        {
+            "title": "调制带宽",
+            "en": "Modulation bandwidth"
+        },
+        {
+            "title": "PINPD型",
+            "en": "PINPD type"
+        },
+        {
+            "title": "AvalanchePD(APD)型",
+            "en": "AvalanchePD(APD) type"
+        },
+        {
+            "title": "图像传感器",
+            "en": "Image sensor"
+        },
+        {
+            "title": "物理层关键技术",
+            "en": "Physical layer key technologies"
+        },
+        {
+            "title": "MAC层关键技术",
+            "en": "MAC layer key technologies"
+        },
+        {
+            "title": "可见光通信的应用",
+            "en": "Applications of visible light communication"
+        },
+        {
+            "title": "调光技术",
+            "en": "Dimming technology"
+        },
+        {
+            "title": "MIMO技术",
+            "en": "MIMO technology"
+        },
+        {
+            "title": "多用户MIMO技术",
+            "en": "Multi-user MIMO technology"
+        },
+        {
+            "title": "调制技术",
+            "en": "Modulation technology"
+        },
+        {
+            "title": "小区协作技术",
+            "en": "Cell cooperation technology"
+        },
+        {
+            "title": "小区间干扰消除",
+            "en": "Inter-cell interference cancellation"
+        },
+        {
+            "title": "小区切换技术",
+            "en": "Cell switching technology"
+        },
+        {
+            "title": "同构组网",
+            "en": "Homogeneous networking"
+        },
+        {
+            "title": "异构组网",
+            "en": "Heterogeneous networking"
+        },
+        {
+            "title": "可见光通信技术的应用",
+            "en": "Applications of visible light communication technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "光无线信道传播",
+            "target": "光电二极管",
+            "type": "传输"
+        },
+        {
+            "source": "光电二极管",
+            "target": "隔直处理",
+            "type": "传输"
+        },
+        {
+            "source": "隔直处理",
+            "target": "解调",
+            "type": "处理"
+        },
+        {
+            "source": "解调",
+            "target": "信道解码",
+            "type": "处理"
+        },
+        {
+            "source": "白光LED",
+            "target": "LED照明装置",
+            "type": "构成"
+        },
+        {
+            "source": "LED照明装置",
+            "target": "调节电流",
+            "type": "控制"
+        },
+        {
+            "source": "调制带宽",
+            "target": "可见光通信传输速率",
+            "type": "影响"
+        },
+        {
+            "source": "PINPD型",
+            "target": "AvalanchePD(APD)型",
+            "type": "比较"
+        },
+        {
+            "source": "AvalanchePD(APD)型",
+            "target": "PINPD型",
+            "type": "比较"
+        },
+        {
+            "source": "图像传感器",
+            "target": "可见光信号接收",
+            "type": "实现"
+        },
+        {
+            "source": "物理层关键技术",
+            "target": "MAC层关键技术",
+            "type": "关联"
+        },
+        {
+            "source": "MAC层关键技术",
+            "target": "物理层关键技术",
+            "type": "关联"
+        },
+        {
+            "source": "MAC层关键技术",
+            "target": "可见光通信组网",
+            "type": "实现"
+        },
+        {
+            "source": "小区协作技术",
+            "target": "小区间干扰消除",
+            "type": "实现"
+        },
+        {
+            "source": "小区协作技术",
+            "target": "小区切换技术",
+            "type": "实现"
+        },
+        {
+            "source": "小区协作技术",
+            "target": "同构组网",
+            "type": "实现"
+        },
+        {
+            "source": "小区协作技术",
+            "target": "异构组网",
+            "type": "实现"
+        },
+        {
+            "source": "调光技术",
+            "target": "可见光通信照明",
+            "type": "实现"
+        },
+        {
+            "source": "MIMO技术",
+            "target": "单用户MIMO技术",
+            "type": "分类"
+        },
+        {
+            "source": "MIMO技术",
+            "target": "多用户MIMO技术",
+            "type": "分类"
+        },
+        {
+            "source": "调制技术",
+            "target": "单载波调制技术",
+            "type": "分类"
+        },
+        {
+            "source": "调制技术",
+            "target": "多载波调制技术",
+            "type": "分类"
+        },
+        {
+            "source": "MAC层关键技术",
+            "target": "多址接入技术",
+            "type": "分类"
+        },
+        {
+            "source": "MAC层关键技术",
+            "target": "小区协作技术",
+            "type": "分类"
+        },
+        {
+            "source": "可见光通信的应用",
+            "target": "室内定位",
+            "type": "应用"
+        },
+        {
+            "source": "可见光通信的应用",
+            "target": "水下通信",
+            "type": "应用"
+        },
+        {
+            "source": "可见光通信的应用",
+            "target": "车联网",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "PPM",
+            "en": "PPM"
+        },
+        {
+            "title": "VLC",
+            "en": "Visible Light Communication"
+        },
+        {
+            "title": "ML",
+            "en": "Overlap Pulse Position Modulation"
+        },
+        {
+            "title": "R3",
+            "en": "Multiple Pulse Position Modulation"
+        },
+        {
+            "title": "DPPM",
+            "en": "Differential Pulse Position Modulation"
+        },
+        {
+            "title": "OMPPM",
+            "en": "Overlapping MPPM"
+        },
+        {
+            "title": "DOPPM",
+            "en": "Differential Overlapping PPM"
+        },
+        {
+            "title": "编码技术",
+            "en": "Encoding Technology"
+        },
+        {
+            "title": "OFDM",
+            "en": "Orthogonal Frequency Division Multiplexing"
+        },
+        {
+            "title": "O-OFDM",
+            "en": "Optical-OFDM"
+        },
+        {
+            "title": "DCO-OFDM",
+            "en": "DC-biased optical OFDM"
+        },
+        {
+            "title": "ACO-OFDM",
+            "en": "Asymmetrically-clipped optical OFDM"
+        },
+        {
+            "title": "U-OFDM",
+            "en": "Unipolar OFDM"
+        },
+        {
+            "title": "IPM-OFDM",
+            "en": "Polarization Multiplexed OFDM"
+        },
+        {
+            "title": "Flip-OFDM",
+            "en": "Flip-OFDM"
+        },
+        {
+            "title": "eU-OFDM",
+            "en": "Enhanced Unipolar OFDM"
+        },
+        {
+            "title": "导频协助",
+            "en": "Pilot-assisted"
+        },
+        {
+            "title": "MIMO",
+            "en": "Multiple-Input Multiple-Output"
+        },
+        {
+            "title": "RC",
+            "en": "Repetition Code"
+        },
+        {
+            "title": "SMP",
+            "en": "Spatial Multiplexing"
+        },
+        {
+            "title": "SM",
+            "en": "Spatial Modulation"
+        },
+        {
+            "title": "SVD",
+            "en": "Singular Value Decomposition"
+        },
+        {
+            "title": "星座符号",
+            "en": "Constellation Symbols"
+        },
+        {
+            "title": "CSI",
+            "en": "Channel State Information"
+        }
+    ],
+    "relations": [
+        {
+            "source": "PPM",
+            "target": "VLC",
+            "type": "采用"
+        },
+        {
+            "source": "VLC",
+            "target": "ML",
+            "type": "改进形式"
+        },
+        {
+            "source": "VLC",
+            "target": "R3",
+            "type": "改进形式"
+        },
+        {
+            "source": "PPM",
+            "target": "DPPM",
+            "type": "改进形式"
+        },
+        {
+            "source": "VLC",
+            "target": "DPPM",
+            "type": "采用"
+        },
+        {
+            "source": "VLC",
+            "target": "OMPPM",
+            "type": "相结合"
+        },
+        {
+            "source": "OMPPM",
+            "target": "MPPM",
+            "type": "相结合"
+        },
+        {
+            "source": "OMPPM",
+            "target": "PPM",
+            "type": "相结合"
+        },
+        {
+            "source": "VLC",
+            "target": "DOPPM",
+            "type": "相结合"
+        },
+        {
+            "source": "编码技术",
+            "target": "VLC",
+            "type": "应用"
+        },
+        {
+            "source": "OFDM",
+            "target": "VLC",
+            "type": "引入"
+        },
+        {
+            "source": "OFDM",
+            "target": "O-OFDM",
+            "type": "改进"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "DCO-OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "ACO-OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "U-OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "IPM-OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "Flip-OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "eU-OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "频谱和能量有效OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "非对称削峰绝对值光OFDM",
+            "type": "类型"
+        },
+        {
+            "source": "O-OFDM",
+            "target": "导频协助",
+            "type": "方法"
+        },
+        {
+            "source": "MIMO",
+            "target": "VLC",
+            "type": "应用"
+        },
+        {
+            "source": "MIMO",
+            "target": "RC",
+            "type": "类型"
+        },
+        {
+            "source": "MIMO",
+            "target": "SMP",
+            "type": "类型"
+        },
+        {
+            "source": "MIMO",
+            "target": "SM",
+            "type": "类型"
+        },
+        {
+            "source": "SMP",
+            "target": "信道矩阵反转",
+            "type": "实现"
+        },
+        {
+            "source": "信道矩阵反转",
+            "target": "SMP",
+            "type": "实现"
+        },
+        {
+            "source": "SMP",
+            "target": "信道矩阵的伪逆",
+            "type": "实现"
+        },
+        {
+            "source": "信道矩阵的伪逆",
+            "target": "SMP",
+            "type": "实现"
+        },
+        {
+            "source": "SMP",
+            "target": "奇异值分解",
+            "type": "实现"
+        },
+        {
+            "source": "奇异值分解",
+            "target": "SMP",
+            "type": "实现"
+        },
+        {
+            "source": "RC",
+            "target": "MIMO",
+            "type": "应用"
+        },
+        {
+            "source": "SMP",
+            "target": "MIMO",
+            "type": "应用"
+        },
+        {
+            "source": "SM",
+            "target": "MIMO",
+            "type": "应用"
+        },
+        {
+            "source": "星座符号",
+            "target": "SM",
+            "type": "重要因素"
+        },
+        {
+            "source": "CSI",
+            "target": "SM",
+            "type": "重要因素"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光MIMO技术", "en": "Visible Light MIMO Technology"},
+        {"title": "OFDM", "en": "Orthogonal Frequency Division Multiplexing"},
+        {"title": "IM/DD方式", "en": "Intensity Modulation/Direct Detection"},
+        {"title": "非成像接收机", "en": "Non-Imaging Receiver"},
+        {"title": "图像传感器", "en": "Imaging Receiver"},
+        {"title": "信道相关性", "en": "Channel Correlation"},
+        {"title": "调光技术", "en": "Dimming Technology"},
+        {"title": "MAC层关键技术", "en": "MAC Layer Key Technologies"},
+        {"title": "多址接入技术", "en": "Multiple Access Techniques"}
+    ],
+    "relations": [
+        {"source": "可见光MIMO技术", "target": "OFDM", "type": "结合"},
+        {"source": "可见光MIMO技术", "target": "IM/DD方式", "type": "采用"},
+        {"source": "可见光MIMO技术", "target": "非成像接收机", "type": "应用于"},
+        {"source": "可见光MIMO技术", "target": "图像传感器", "type": "应用于"},
+        {"source": "可见光MIMO技术", "target": "信道相关性", "type": "面临挑战"},
+        {"source": "调光技术", "target": "可见光通信", "type": "兼容"},
+        {"source": "MAC层关键技术", "target": "多址接入技术", "type": "包括"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "调光的CCM设计", "en": "CCM design for dimming"},
+        {"title": "光随机码设计", "en": "Design of optical random codes"},
+        {"title": "光CDMA功率分配技术", "en": "Power allocation technology in optical CDMA"},
+        {"title": "多色LED实现的WDMA", "en": "WDMA using multi-color LEDs"},
+        {"title": "SDMA技术", "en": "SDMA technology"},
+        {"title": "OFDMA在可见光通信中的应用", "en": "Application of OFDMA in visible light communication"},
+        {"title": "小区间干扰消除技术", "en": "Inter-cell interference cancellation technology"},
+        {"title": "小区切换技术", "en": "Cellular handover technology"},
+        {"title": "小区组网技术", "en": "Cellular networking technology"},
+        {"title": "可见光通信的应用", "en": "Applications of visible light communication"},
+        {"title": "室内定位算法", "en": "Indoor positioning algorithm"}
+    ],
+    "relations": [
+        {"source": "调光的CCM设计", "target": "光CDMA功率分配技术", "type": "相关"},
+        {"source": "调光的CCM设计", "target": "光随机码设计", "type": "相关"},
+        {"source": "光CDMA功率分配技术", "target": "光随机码设计", "type": "相关"},
+        {"source": "多色LED实现的WDMA", "target": "SDMA技术", "type": "相关"},
+        {"source": "OFDMA在可见光通信中的应用", "target": "光CDMA功率分配技术", "type": "相关"},
+        {"source": "OFDMA在可见光通信中的应用", "target": "SDMA技术", "type": "相关"},
+        {"source": "小区间干扰消除技术", "target": "小区切换技术", "type": "相关"},
+        {"source": "小区间干扰消除技术", "target": "小区组网技术", "type": "相关"},
+        {"source": "小区切换技术", "target": "小区组网技术", "type": "相关"},
+        {"source": "可见光通信的应用", "target": "室内定位算法", "type": "相关"},
+        {"source": "可见光通信的应用", "target": "水下通信", "type": "应用"},
+        {"source": "可见光通信的应用", "target": "车联网", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光水下通信",
+            "en": "Visible Light Underwater Communication"
+        },
+        {
+            "title": "车联网中的可见光通信",
+            "en": "Visible Light Communication in Vehicular Ad Hoc Networks"
+        },
+        {
+            "title": "可见光多用户MIMO系统",
+            "en": "Visible Light Multi-User MIMO System"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光水下通信",
+            "target": "传统RF和超声波通信技术",
+            "type": "提供更高的通信速率和带宽"
+        },
+        {
+            "source": "可见光水下通信",
+            "target": "信道建模",
+            "type": "围绕水下光通信的信道建模"
+        },
+        {
+            "source": "可见光车联网通信",
+            "target": "车载设备",
+            "type": "利用车载设备作为收发装置"
+        },
+        {
+            "source": "可见光车联网通信",
+            "target": "V2I通信",
+            "type": "车辆与基础设施(Vehicle-to-Infrastructure, V2I)通信"
+        },
+        {
+            "source": "可见光车联网通信",
+            "target": "V2V通信",
+            "type": "车辆与车辆(Vehicle-to-Vehicle, V2V)通信"
+        },
+        {
+            "source": "可见光多用户MIMO系统",
+            "target": "单用户场景",
+            "type": "针对单用户场景的研究"
+        },
+        {
+            "source": "可见光多用户MIMO系统",
+            "target": "全方位组网",
+            "type": "实现可见光通信节点的全方位组网"
+        },
+        {
+            "source": "可见光多用户MIMO系统",
+            "target": "多用户MIMO",
+            "type": "单点对多点的可见光多用户MIMO系统"
+        },
+        {
+            "source": "可见光多用户MIMO系统",
+            "target": "多接入信道",
+            "type": "将上行和下行的多用户MIMO通信场景分别建模为多接入信道(Multi-access Channel, MAC)"
+        },
+        {
+            "source": "可见光多用户MIMO系统",
+            "target": "广播信道",
+            "type": "将上行和下行的多用户MIMO通信场景分别建模为广播信道(Broadcast Channel, BC)"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光多用户MIMO系统",
+            "en": "Visible Light Multi-User MIMO System"
+        },
+        {
+            "title": "下行链路",
+            "en": "Downlink"
+        },
+        {
+            "title": "干扰消除",
+            "en": "Interference Cancellation"
+        },
+        {
+            "title": "预处理",
+            "en": "Preprocessing"
+        },
+        {
+            "title": "预编码",
+            "en": "Precoding"
+        },
+        {
+            "title": "用户调度",
+            "en": "User Scheduling"
+        },
+        {
+            "title": "资源分配",
+            "en": "Resource Allocation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "下行链路",
+            "target": "可见光多用户MIMO系统",
+            "type": "属于"
+        },
+        {
+            "source": "干扰消除",
+            "target": "可见光多用户MIMO系统",
+            "type": "关联"
+        },
+        {
+            "source": "预处理",
+            "target": "可见光多用户MIMO系统",
+            "type": "关联"
+        },
+        {
+            "source": "预编码",
+            "target": "可见光多用户MIMO系统",
+            "type": "关联"
+        },
+        {
+            "source": "预编码",
+            "target": "干扰消除",
+            "type": "基础"
+        },
+        {
+            "source": "用户调度",
+            "target": "可见光多用户MIMO系统",
+            "type": "关联"
+        },
+        {
+            "source": "资源分配",
+            "target": "可见光多用户MIMO系统",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光通信的调光技术",
+            "en": "Dimming technology in visible light communication"
+        },
+        {
+            "title": "模拟调光技术",
+            "en": "Analog dimming technology"
+        },
+        {
+            "title": "数字调光技术",
+            "en": "Digital dimming technology"
+        },
+        {
+            "title": "空间调光技术",
+            "en": "Spatial dimming technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光通信的调光技术",
+            "target": "模拟调光技术",
+            "type": "包含"
+        },
+        {
+            "source": "可见光通信的调光技术",
+            "target": "数字调光技术",
+            "type": "包含"
+        },
+        {
+            "source": "可见光通信的调光技术",
+            "target": "空间调光技术",
+            "type": "包含"
+        },
+        {
+            "source": "模拟调光技术",
+            "target": "IEEE802.15.7协议",
+            "type": "应用"
+        },
+        {
+            "source": "模拟调光技术",
+            "target": "光OFDM技术",
+            "type": "应用"
+        },
+        {
+            "source": "数字调光技术",
+            "target": "IEEE802.15.7协议",
+            "type": "应用"
+        },
+        {
+            "source": "数字调光技术",
+            "target": "脉冲调制技术",
+            "type": "应用"
+        },
+        {
+            "source": "数字调光技术",
+            "target": "可见光通信的编码技术",
+            "type": "应用"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "LED",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "模拟调光",
+            "en": "Analog dimming"
+        },
+        {
+            "title": "数字调光",
+            "en": "Digital dimming"
+        },
+        {
+            "title": "空间调光技术",
+            "en": "Spatial dimming technology"
+        },
+        {
+            "title": "MIMO系统",
+            "en": "MIMO system"
+        },
+        {
+            "title": "CSI",
+            "en": "Channel State Information"
+        }
+    ],
+    "relations": [
+        {
+            "source": "模拟调光",
+            "target": "低光功率条件下的信号峰峰值受到严重限制，必须采用低阶的调制机制以保障通信可靠性。",
+            "type": "影响"
+        },
+        {
+            "source": "数字调光",
+            "target": "在低光功率限制下，需要降低占空比以满足相应的调光需求，从而极大限制其可实现的通信速率。",
+            "type": "影响"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "是一种更为直接、有效的调光方式，可以利用CSI通过空间信息处理对工作LED集合进行优化，进而提升系统在不同亮度条件下的通信性能。",
+            "type": "优化"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "可以保障每个工作LED中的信号不受影响，避免系统通信速率的损失，同时该技术只需在光源中添加简单LED开关控制电路就能实现，具有很高的实用性。",
+            "type": "优势"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "可以联合调节信号的幅度以实现更高的调光精度，进一步提升系统的调光精度和通信容量。",
+            "type": "优化"
+        },
+        {
+            "source": "MIMO系统",
+            "target": "可以利用可见光信号下行广播的特性同时满足室内多用户的照明和通信需求。",
+            "type": "应用"
+        },
+        {
+            "source": "CSI",
+            "target": "可以通过空间信息的处理进一步利用CSI提升系统的通信性能。",
+            "type": "优化"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "空间调光方案", "en": "Spatial dimming scheme"},
+        {"title": "预编码优化问题", "en": "Precoding optimization problem"},
+        {"title": "可见光信道容量", "en": "Visible light channel capacity"},
+        {"title": "可见光多用户MIMO系统", "en": "Visible light multi-user MIMO system"},
+        {"title": "MUI消除", "en": "MUI elimination"},
+        {"title": "调光精度", "en": "Dimming accuracy"},
+        {"title": "用户信道状态不一致", "en": "Inconsistent user channel state"},
+        {"title": "功率分配", "en": "Power allocation"}
+    ],
+    "relations": [
+        {"source": "空间调光方案", "target": "预编码优化问题", "type": "related"},
+        {"source": "空间调光方案", "target": "可见光信道容量", "type": "related"},
+        {"source": "空间调光方案", "target": "可见光多用户MIMO系统", "type": "related"},
+        {"source": "预编码优化问题", "target": "MUI消除", "type": "related"},
+        {"source": "预编码优化问题", "target": "调光精度", "type": "related"},
+        {"source": "可见光多用户MIMO系统", "target": "MUI消除", "type": "related"},
+        {"source": "可见光多用户MIMO系统", "target": "用户信道状态不一致", "type": "related"},
+        {"source": "可见光多用户MIMO系统", "target": "功率分配", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信研究现状", "en": "Research Status of Visible Light Communication"},
+        {"title": "可见光多用户MIMO及预编码技术", "en": "Visible Light Multi-User MIMO and Precoding Technology"},
+        {"title": "可见光调光技术", "en": "Visible Light Dimming Technology"},
+        {"title": "发送天线选择的空间调光方案", "en": "Transmit Antenna Selection Spatial Dimming Scheme"},
+        {"title": "基于用户间干扰消除的空间调光技术研究", "en": "Research on Spatial Dimming Technology Based on Interference Elimination between Users"}
+    ],
+    "relations": [
+        {"source": "可见光通信研究现状", "target": "可见光多用户MIMO及预编码技术", "type": "包含"},
+        {"source": "可见光多用户MIMO及预编码技术", "target": "可见光调光技术", "type": "包含"},
+        {"source": "可见光多用户MIMO及预编码技术", "target": "发送天线选择的空间调光方案", "type": "包含"},
+        {"source": "发送天线选择的空间调光方案", "target": "基于用户间干扰消除的空间调光技术研究", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光单用户MIMO系统",
+            "en": "Visible Light Single-User MIMO System"
+        },
+        {
+            "title": "空间调光技术",
+            "en": "Spatial Dimming Technology"
+        },
+        {
+            "title": "可见光MU-MISO系统",
+            "en": "Visible Light MU-MISO System"
+        },
+        {
+            "title": "MUI",
+            "en": "Multiple User Interference"
+        },
+        {
+            "title": "ZF预编码",
+            "en": "Zero-Forcing Precoding"
+        },
+        {
+            "title": "MMSE预编码",
+            "en": "Minimum Mean Square Error Precoding"
+        },
+        {
+            "title": "CSI",
+            "en": "Channel State Information"
+        },
+        {
+            "title": "TAS",
+            "en": "Transmit Antenna Selection"
+        },
+        {
+            "title": "OFDM",
+            "en": "Orthogonal Frequency Division Multiplexing"
+        },
+        {
+            "title": "DCO-OFDM",
+            "en": "DC-biased Optical OFDM"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光单用户MIMO系统",
+            "target": "空间调光技术",
+            "type": "应用"
+        },
+        {
+            "source": "可见光MU-MISO系统",
+            "target": "MUI",
+            "type": "影响因素"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "ZF预编码",
+            "type": "组合方式"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "MMSE预编码",
+            "type": "组合方式"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "LED",
+            "type": "调光对象"
+        },
+        {
+            "source": "ZF预编码",
+            "target": "MMSE预编码",
+            "type": "比较"
+        },
+        {
+            "source": "可见光MU-MISO系统",
+            "target": "CSI",
+            "type": "利用"
+        },
+        {
+            "source": "CSI",
+            "target": "TAS",
+            "type": "提升性能"
+        },
+        {
+            "source": "OFDM",
+            "target": "DCO-OFDM",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "倍道模型",
+            "en": "Multipath Model"
+        },
+        {
+            "title": "视距和非视距链路",
+            "en": "Line-of-Sight and Non-Line-of-Sight Links"
+        },
+        {
+            "title": "朗伯发射模型",
+            "en": "Lambertian Emission Model"
+        },
+        {
+            "title": "LoS信道",
+            "en": "Line-of-Sight Channel"
+        },
+        {
+            "title": "频率平坦",
+            "en": "Frequency Flat"
+        },
+        {
+            "title": "信道衰落",
+            "en": "Channel Fading"
+        },
+        {
+            "title": "信道状态信息",
+            "en": "Channel State Information"
+        },
+        {
+            "title": "接收端模型",
+            "en": "Receiver Model"
+        },
+        {
+            "title": "光电转换系数",
+            "en": "Optoelectronic Conversion Coefficient"
+        },
+        {
+            "title": "加性高斯噪声信号",
+            "en": "Additive Gaussian Noise Signal"
+        },
+        {
+            "title": "点噪声",
+            "en": "Shot Noise"
+        },
+        {
+            "title": "热噪声",
+            "en": "Thermal Noise"
+        },
+        {
+            "title": "ZF预编码",
+            "en": "Zero-Forcing Precoding"
+        },
+        {
+            "title": "空间调光",
+            "en": "Spatial Dimming"
+        },
+        {
+            "title": "MUI",
+            "en": "Multi-User Interference"
+        },
+        {
+            "title": "天线选择",
+            "en": "Antenna Selection"
+        }
+    ],
+    "relations": [
+        {
+            "source": "倍道模型",
+            "target": "LoS信道",
+            "type": "包含"
+        },
+        {
+            "source": "倍道模型",
+            "target": "视距和非视距链路",
+            "type": "相关"
+        },
+        {
+            "source": "朗伯发射模型",
+            "target": "LoS信道",
+            "type": "相关"
+        },
+        {
+            "source": "LoS信道",
+            "target": "频率平坦",
+            "type": "相关"
+        },
+        {
+            "source": "信道衰落",
+            "target": "LoS信道",
+            "type": "相关"
+        },
+        {
+            "source": "信道状态信息",
+            "target": "ZF预编码",
+            "type": "相关"
+        },
+        {
+            "source": "接收端模型",
+            "target": "光电转换系数",
+            "type": "包含"
+        },
+        {
+            "source": "接收端模型",
+            "target": "加性高斯噪声信号",
+            "type": "包含"
+        },
+        {
+            "source": "加性高斯噪声信号",
+            "target": "点噪声",
+            "type": "相关"
+        },
+        {
+            "source": "加性高斯噪声信号",
+            "target": "热噪声",
+            "type": "相关"
+        },
+        {
+            "source": "ZF预编码",
+            "target": "MUI",
+            "type": "消除"
+        },
+        {
+            "source": "ZF预编码",
+            "target": "天线选择",
+            "type": "优化"
+        },
+        {
+            "source": "空间调光",
+            "target": "ZF预编码",
+            "type": "结合"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SD-ZF方案",
+            "en": "SD-ZF scheme"
+        },
+        {
+            "title": "可见光MU-MISO系统",
+            "en": "Visible light MU-MISO system"
+        },
+        {
+            "title": "空间调光",
+            "en": "Spatial dimming"
+        },
+        {
+            "title": "ZF预编码",
+            "en": "ZF precoding"
+        },
+        {
+            "title": "直流偏置",
+            "en": "DC bias"
+        },
+        {
+            "title": "OFDM信号",
+            "en": "OFDM signal"
+        },
+        {
+            "title": "削峰失真",
+            "en": "Peak-to-average power ratio distortion"
+        },
+        {
+            "title": "发送天线选择算法",
+            "en": "Transmit antenna selection algorithm"
+        },
+        {
+            "title": "容量下界",
+            "en": "Capacity lower bound"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SD-ZF方案",
+            "target": "可见光MU-MISO系统",
+            "type": "属于"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "ZF预编码",
+            "type": "包含"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "空间调光",
+            "type": "应用"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "直流偏置",
+            "type": "调节"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "OFDM信号",
+            "type": "存在"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "削峰失真",
+            "type": "影响"
+        },
+        {
+            "source": "可见光MU-MISO系统",
+            "target": "空间调光",
+            "type": "应用"
+        },
+        {
+            "source": "可见光MU-MISO系统",
+            "target": "发送天线选择算法",
+            "type": "使用"
+        },
+        {
+            "source": "可见光MU-MISO系统",
+            "target": "容量下界",
+            "type": "计算"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SD-ZF方案",
+            "en": "SD-ZF scheme"
+        },
+        {
+            "title": "MUI消除",
+            "en": "MUI cancellation"
+        },
+        {
+            "title": "调光",
+            "en": "Dimming"
+        },
+        {
+            "title": "ZF预编码",
+            "en": "ZF precoding"
+        },
+        {
+            "title": "发送天线选择",
+            "en": "Transmit antenna selection"
+        },
+        {
+            "title": "CSI",
+            "en": "Channel state information"
+        },
+        {
+            "title": "FPGA",
+            "en": "Field-programmable gate array"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SD-ZF方案",
+            "target": "MUI消除",
+            "type": "related"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "调光",
+            "type": "related"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "ZF预编码",
+            "type": "related"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "发送天线选择",
+            "type": "related"
+        },
+        {
+            "source": "SD-ZF方案",
+            "target": "CSI",
+            "type": "related"
+        },
+        {
+            "source": "ZF预编码",
+            "target": "调光",
+            "type": "related"
+        },
+        {
+            "source": "发送天线选择",
+            "target": "CSI",
+            "type": "related"
+        },
+        {
+            "source": "FPGA",
+            "target": "ZF预编码",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "QAM调制符号", "en": "QAM modulation symbols"},
+        {"title": "预编码向量", "en": "Precoding vector"},
+        {"title": "Hermitian对称", "en": "Hermitian symmetry"},
+        {"title": "IFFT变换", "en": "IFFT transformation"},
+        {"title": "BCU", "en": "BCU"},
+        {"title": "LED电光转换", "en": "LED electro-optical conversion"},
+        {"title": "可见光信道", "en": "Visible light channel"},
+        {"title": "浮点运算", "en": "Floating-point operation"},
+        {"title": "矩阵运算", "en": "Matrix operation"},
+        {"title": "矩阵乘法", "en": "Matrix multiplication"},
+        {"title": "矩阵逆运算", "en": "Matrix inverse operation"},
+        {"title": "SD-ZF算法复杂度", "en": "SD-ZF algorithm complexity"},
+        {"title": "迭代运算", "en": "Iterative operation"},
+        {"title": "发送天线选择", "en": "Transmit antenna selection"},
+        {"title": "AD-ZF算法复杂度", "en": "AD-ZF algorithm complexity"},
+        {"title": "MMSE预编码", "en": "MMSE precoding"},
+        {"title": "均方误差", "en": "Mean square error"},
+        {"title": "SD-MMSE调光方案", "en": "SD-MMSE dimming scheme"},
+        {"title": "鲁棒性", "en": "Robustness"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "导频序列", "en": "Pilot sequence"},
+        {"title": "频域信道估计", "en": "Frequency domain channel estimation"},
+        {"title": "红外通信", "en": "Infrared communication"},
+        {"title": "射频通信", "en": "Radio frequency communication"}
+    ],
+    "relations": [
+        {"source": "QAM调制符号", "target": "预编码向量", "type": "related"},
+        {"source": "预编码向量", "target": "Hermitian对称", "type": "related"},
+        {"source": "Hermitian对称", "target": "IFFT变换", "type": "related"},
+        {"source": "IFFT变换", "target": "BCU", "type": "related"},
+        {"source": "BCU", "target": "LED电光转换", "type": "related"},
+        {"source": "LED电光转换", "target": "可见光信道", "type": "related"},
+        {"source": "浮点运算", "target": "矩阵运算", "type": "related"},
+        {"source": "矩阵运算", "target": "矩阵乘法", "type": "related"},
+        {"source": "矩阵运算", "target": "矩阵逆运算", "type": "related"},
+        {"source": "矩阵乘法", "target": "SD-ZF算法复杂度", "type": "related"},
+        {"source": "矩阵逆运算", "target": "SD-ZF算法复杂度", "type": "related"},
+        {"source": "SD-ZF算法复杂度", "target": "迭代运算", "type": "related"},
+        {"source": "迭代运算", "target": "发送天线选择", "type": "related"},
+        {"source": "发送天线选择", "target": "AD-ZF算法复杂度", "type": "related"},
+        {"source": "MMSE预编码", "target": "均方误差", "type": "related"},
+        {"source": "均方误差", "target": "SD-MMSE调光方案", "type": "related"},
+        {"source": "SD-ZF算法复杂度", "target": "SD-MMSE调光方案", "type": "related"},
+        {"source": "可见光信道", "target": "信道估计", "type": "related"},
+        {"source": "信道估计", "target": "导频序列", "type": "related"},
+        {"source": "导频序列", "target": "频域信道估计", "type": "related"},
+        {"source": "频域信道估计", "target": "红外通信", "type": "related"},
+        {"source": "频域信道估计", "target": "射频通信", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MU-MISO系统", "en": "MU-MISO system"},
+        {"title": "MMSE预编码", "en": "MMSE precoding"},
+        {"title": "可见光通信", "en": "Visible light communication"},
+        {"title": "发送天线选择算法", "en": "Transmit antenna selection algorithm"},
+        {"title": "均方误差", "en": "Mean square error"}
+    ],
+    "relations": [
+        {"source": "MU-MISO system", "target": "MMSE precoding", "type": "is based on"},
+        {"source": "MU-MISO system", "target": "Visible light communication", "type": "is a type of"},
+        {"source": "MMSE precoding", "target": "Transmit antenna selection algorithm", "type": "uses"},
+        {"source": "Transmit antenna selection algorithm", "target": "Mean square error", "type": "minimizes"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Hermitian对称和", "en": "Hermitian symmetric sum"},
+        {"title": "IFFT变换", "en": "IFFT transformation"},
+        {"title": "SD-MMSE方案", "en": "SD-MMSE scheme"},
+        {"title": "反馈信道", "en": "Feedback channel"},
+        {"title": "预编码矩阵", "en": "Precoding matrix"},
+        {"title": "直流偏置", "en": "DC bias"},
+        {"title": "LED照明装置", "en": "LED lighting device"},
+        {"title": "可见光通信", "en": "Visible light communication"},
+        {"title": "MIMO系统", "en": "MIMO system"},
+        {"title": "空间调光", "en": "Spatial dimming"},
+        {"title": "ZF预编码", "en": "ZF precoding"}
+    ],
+    "relations": [
+        {"source": "Hermitian对称和", "target": "IFFT变换", "type": "related"},
+        {"source": "SD-MMSE方案", "target": "反馈信道", "type": "related"},
+        {"source": "SD-MMSE方案", "target": "预编码矩阵", "type": "related"},
+        {"source": "SD-MMSE方案", "target": "LED照明装置", "type": "related"},
+        {"source": "SD-MMSE方案", "target": "可见光通信", "type": "related"},
+        {"source": "SD-ZF", "target": "空间调光", "type": "related"},
+        {"source": "AD-MMSE", "target": "直流偏置", "type": "related"},
+        {"source": "AD-MMSE", "target": "预编码矩阵", "type": "related"},
+        {"source": "AD-ZF", "target": "空间调光", "type": "related"},
+        {"source": "MIMO系统", "target": "可见光通信", "type": "related"},
+        {"source": "ZF预编码", "target": "MIMO系统", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LED动态区间限制",
+            "en": "LED dynamic range limitation"
+        },
+        {
+            "title": "直流偏置",
+            "en": "DC bias"
+        },
+        {
+            "title": "削峰",
+            "en": "Clipping"
+        },
+        {
+            "title": "交叉调制",
+            "en": "Cross modulation"
+        },
+        {
+            "title": "SD-MMSE",
+            "en": "Successive decoding minimum mean square error"
+        },
+        {
+            "title": "SD-ZF",
+            "en": "Successive decoding zero forcing"
+        },
+        {
+            "title": "AD-MMSE",
+            "en": "Active decoding minimum mean square error"
+        },
+        {
+            "title": "AD-ZF",
+            "en": "Active decoding zero forcing"
+        },
+        {
+            "title": "Busgang理论",
+            "en": "Busgang theory"
+        },
+        {
+            "title": "底部削峰失真",
+            "en": "Bottom clipping distortion"
+        },
+        {
+            "title": "信号衰减系数",
+            "en": "Signal attenuation coefficient"
+        },
+        {
+            "title": "互补累计分布函数",
+            "en": "Complementary cumulative distribution function"
+        },
+        {
+            "title": "削峰噪声",
+            "en": "Clipping noise"
+        },
+        {
+            "title": "预编码矩阵",
+            "en": "Precoding matrix"
+        },
+        {
+            "title": "SINR",
+            "en": "Signal-to-interference-plus-noise ratio"
+        },
+        {
+            "title": "BER",
+            "en": "Bit error rate"
+        },
+        {
+            "title": "MUI",
+            "en": "Multi-user interference"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LED动态区间限制",
+            "target": "直流偏置",
+            "type": "包含"
+        },
+        {
+            "source": "直流偏置",
+            "target": "削峰",
+            "type": "导致"
+        },
+        {
+            "source": "直流偏置",
+            "target": "交叉调制",
+            "type": "导致"
+        },
+        {
+            "source": "SD-MMSE",
+            "target": "直流偏置",
+            "type": "设定"
+        },
+        {
+            "source": "SD-ZF",
+            "target": "直流偏置",
+            "type": "设定"
+        },
+        {
+            "source": "AD-MMSE",
+            "target": "直流偏置",
+            "type": "设定"
+        },
+        {
+            "source": "AD-ZF",
+            "target": "直流偏置",
+            "type": "设定"
+        },
+        {
+            "source": "Busgang理论",
+            "target": "削峰噪声",
+            "type": "建模"
+        },
+        {
+            "source": "削峰噪声",
+            "target": "预编码矩阵",
+            "type": "折算"
+        },
+        {
+            "source": "预编码矩阵",
+            "target": "削峰噪声",
+            "type": "等效表示"
+        },
+        {
+            "source": "预编码矩阵",
+            "target": "SINR",
+            "type": "影响"
+        },
+        {
+            "source": "SINR",
+            "target": "BER",
+            "type": "影响"
+        },
+        {
+            "source": "SD-ZF",
+            "target": "AD-ZF",
+            "type": "比较"
+        },
+        {
+            "source": "SD-MMSE",
+            "target": "AD-MMSE",
+            "type": "比较"
+        },
+        {
+            "source": "SD-ZF",
+            "target": "SD-MMSE",
+            "type": "比较"
+        },
+        {
+            "source": "AD-ZF",
+            "target": "AD-MMSE",
+            "type": "比较"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SD-MMSE调光技术", "en": "SD-MMSE dimming technology"},
+        {"title": "AD-MMSE调光技术", "en": "AD-MMSE dimming technology"},
+        {"title": "空间调光技术", "en": "Spatial dimming technology"},
+        {"title": "模拟调光技术", "en": "Analog dimming technology"},
+        {"title": "BER性能", "en": "BER performance"},
+        {"title": "频谱效率", "en": "Spectral efficiency"},
+        {"title": "预编码技术", "en": "Precoding technology"},
+        {"title": "工作LED集合", "en": "Working LED set"},
+        {"title": "信道不确定性", "en": "Channel uncertainty"},
+        {"title": "CSI", "en": "Channel State Information"}
+    ],
+    "relations": [
+        {"source": "SD-MMSE调光技术", "target": "空间调光技术", "type": "属于"},
+        {"source": "AD-MMSE调光技术", "target": "模拟调光技术", "type": "属于"},
+        {"source": "空间调光技术", "target": "BER性能", "type": "影响"},
+        {"source": "模拟调光技术", "target": "BER性能", "type": "影响"},
+        {"source": "空间调光技术", "target": "频谱效率", "type": "影响"},
+        {"source": "模拟调光技术", "target": "频谱效率", "type": "影响"},
+        {"source": "预编码技术", "target": "SD-MMSE调光技术", "type": "使用"},
+        {"source": "预编码技术", "target": "AD-MMSE调光技术", "type": "使用"},
+        {"source": "空间调光技术", "target": "工作LED集合", "type": "利用"},
+        {"source": "模拟调光技术", "target": "直流偏置", "type": "影响"},
+        {"source": "信道不确定性", "target": "CSI", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光通信",
+            "en": "Visible Light Communication"
+        },
+        {
+            "title": "可见光MU-MISO系统",
+            "en": "Visible Light MU-MISO System"
+        },
+        {
+            "title": "可见光多用户多入多出(Multi-user Multiple Input Multiple Output, MU-MIMO)系统",
+            "en": "Visible Light Multi-user Multiple Input Multiple Output (MU-MIMO) System"
+        },
+        {
+            "title": "空间调光技术",
+            "en": "Spatial Dimming Technology"
+        },
+        {
+            "title": "基于用户信道去相关的空间调光技术",
+            "en": "User Channel Dependent Spatial Dimming Technology"
+        },
+        {
+            "title": "预编码技术",
+            "en": "Precoding Technology"
+        },
+        {
+            "title": "信道相关性",
+            "en": "Channel Correlation"
+        },
+        {
+            "title": "发送天线选择算法",
+            "en": "Transmit Antenna Selection Algorithm"
+        },
+        {
+            "title": "最小奇异值",
+            "en": "Minimum Singular Value"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光MU-MISO系统",
+            "target": "可见光多用户多入多出(MU-MIMO)系统",
+            "type": "包含"
+        },
+        {
+            "source": "可见光MU-MIMO系统",
+            "target": "用户信道相关性",
+            "type": "影响"
+        },
+        {
+            "source": "空间调光技术",
+            "target": "预编码技术",
+            "type": "相关"
+        },
+        {
+            "source": "可见光MU-MIMO系统",
+            "target": "空间调光技术",
+            "type": "应用"
+        },
+        {
+            "source": "可见光MU-MIMO系统",
+            "target": "发送天线选择算法",
+            "type": "应用"
+        },
+        {
+            "source": "发送天线选择算法",
+            "target": "最小奇异值",
+            "type": "基于"
+        },
+        {
+            "source": "用户信道相关性",
+            "target": "空间调光技术",
+            "type": "限制"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可见光多用户MIMO系统模型",
+            "en": "Visible Light Multi-User MIMO System Model"
+        },
+        {
+            "title": "发送端的BD预编码技术",
+            "en": "BD Precoding Technology at the Transmitter"
+        },
+        {
+            "title": "JASD方案",
+            "en": "JASD Scheme"
+        },
+        {
+            "title": "TAS-MMSV算法",
+            "en": "TAS-MMSV Algorithm"
+        },
+        {
+            "title": "SINR和BER性能",
+            "en": "SINR and BER Performance"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可见光多用户MIMO系统模型",
+            "target": "发送端的BD预编码技术",
+            "type": "包含"
+        },
+        {
+            "source": "可见光多用户MIMO系统模型",
+            "target": "JASD方案",
+            "type": "包含"
+        },
+        {
+            "source": "JASD方案",
+            "target": "TAS-MMSV算法",
+            "type": "包含"
+        },
+        {
+            "source": "JASD方案",
+            "target": "SINR和BER性能",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "解码矩阵U", "en": "Decoding matrix U"},
+        {"title": "FFT变换", "en": "FFT transformation"},
+        {"title": "QAM解调", "en": "QAM demodulation"},
+        {"title": "信干噪比(SINR)", "en": "Signal-to-Interference-plus-Noise Ratio (SINR)"},
+        {"title": "Bussgang定理", "en": "Bussgang theorem"},
+        {"title": "调光方案", "en": "Dimming scheme"},
+        {"title": "空间调光技术", "en": "Spatial dimming technology"},
+        {"title": "混合光OFDM(HD-OFDM)方案", "en": "Hybrid dimming OFDM (HD-OFDM) scheme"},
+        {"title": "JASD方案", "en": "Joint analogue spatial dimming (JASD) scheme"},
+        {"title": "削峰噪声", "en": "Peak-to-Average Power Ratio (PAPR)"},
+        {"title": "线性预编码", "en": "Linear precoding"},
+        {"title": "整数优化问题", "en": "Integer optimization problem"}
+    ],
+    "relations": [
+        {"source": "解码矩阵U", "target": "FFT变换", "type": "包含"},
+        {"source": "FFT变换", "target": "QAM解调", "type": "包含"},
+        {"source": "信干噪比(SINR)", "target": "解码矩阵U", "type": "定义"},
+        {"source": "Bussgang定理", "target": "削峰噪声", "type": "解释"},
+        {"source": "调光方案", "target": "空间调光技术", "type": "包含"},
+        {"source": "调光方案", "target": "混合光OFDM(HD-OFDM)方案", "type": "包含"},
+        {"source": "调光方案", "target": "JASD方案", "type": "包含"},
+        {"source": "JASD方案", "target": "削峰噪声", "type": "影响"},
+        {"source": "JASD方案", "target": "线性预编码", "type": "实现"},
+        {"source": "整数优化问题", "target": "JASD方案", "type": "解决"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "JASD方案", "en": "JASD scheme"},
+        {"title": "可见光MU-MIMO-OFDM系统", "en": "Visible light MU-MIMO-OFDM system"},
+        {"title": "调光等级", "en": "Dimming level"},
+        {"title": "LED总数", "en": "Total number of LEDs"},
+        {"title": "直流偏置", "en": "DC bias"},
+        {"title": "TAS-MMSV天线选择算法", "en": "TAS-MMSV antenna selection algorithm"},
+        {"title": "信道状态信息", "en": "Channel State Information"},
+        {"title": "BD预编码矩阵", "en": "BD precoding matrix"},
+        {"title": "QAM符号向量", "en": "QAM symbol vector"},
+        {"title": "动态区间", "en": "Dynamic range"},
+        {"title": "信噪比", "en": "Signal-to-Noise Ratio"},
+        {"title": "等效信道", "en": "Equivalent channel"},
+        {"title": "奇异值", "en": "Singular value"},
+        {"title": "可达BER", "en": "Achievable Bit Error Rate"}
+    ],
+    "relations": [
+        {"source": "调光等级", "target": "LED总数", "type": "影响"},
+        {"source": "LED总数", "target": "直流偏置", "type": "影响"},
+        {"source": "JASD方案", "target": "直流偏置", "type": "实现"},
+        {"source": "JASD方案", "target": "TAS-MMSV天线选择算法", "type": "实现"},
+        {"source": "TAS-MMSV天线选择算法", "target": "信道状态信息", "type": "利用"},
+        {"source": "信道状态信息", "target": "BD预编码矩阵", "type": "确定"},
+        {"source": "BD预编码矩阵", "target": "QAM符号向量", "type": "处理"},
+        {"source": "QAM符号向量", "target": "动态区间", "type": "限制"},
+        {"source": "动态区间", "target": "QAM符号向量", "type": "限制"},
+        {"source": "QAM符号向量", "target": "等效信道", "type": "传输"},
+        {"source": "等效信道", "target": "奇异值", "type": "决定"},
+        {"source": "奇异值", "target": "信噪比", "type": "影响"},
+        {"source": "信噪比", "target": "可达BER", "type": "影响"},
+        {"source": "JASD方案", "target": "可见光MU-MIMO-OFDM系统", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "BD预编码",
+            "en": "BD precoding"
+        },
+        {
+            "title": "可见光MU-MIMO-OFDM系统",
+            "en": "Visible Light MU-MIMO-OFDM System"
+        },
+        {
+            "title": "调光参数",
+            "en": "Dimming parameters"
+        },
+        {
+            "title": "等效信道",
+            "en": "Equivalent channel"
+        },
+        {
+            "title": "奇异值",
+            "en": "Singular value"
+        },
+        {
+            "title": "发送天线选择",
+            "en": "Transmit antenna selection"
+        },
+        {
+            "title": "接收端SNR",
+            "en": "Receiver SNR"
+        },
+        {
+            "title": "条件数",
+            "en": "Condition number"
+        }
+    ],
+    "relations": [
+        {
+            "source": "BD预编码",
+            "target": "可见光MU-MIMO-OFDM系统",
+            "type": "适用于"
+        },
+        {
+            "source": "可见光MU-MIMO-OFDM系统",
+            "target": "调光参数",
+            "type": "影响"
+        },
+        {
+            "source": "可见光MU-MIMO-OFDM系统",
+            "target": "等效信道",
+            "type": "涉及"
+        },
+        {
+            "source": "等效信道",
+            "target": "奇异值",
+            "type": "具有"
+        },
+        {
+            "source": "发送天线选择",
+            "target": "等效信道",
+            "type": "优化"
+        },
+        {
+            "source": "等效信道",
+            "target": "接收端SNR",
+            "type": "影响"
+        },
+        {
+            "source": "奇异值",
+            "target": "接收端SNR",
+            "type": "具有"
+        },
+        {
+            "source": "等效信道",
+            "target": "条件数",
+            "type": "具有"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "JASD方案的硬件需求", "en": "Hardware requirements of JASD scheme"},
+        {"title": "模拟调光(AD)方案", "en": "Analogue Dimming (AD) scheme"},
+        {"title": "工程实现方面", "en": "Engineering implementation aspect"},
+        {"title": "BD预编码", "en": "BD precoding"},
+        {"title": "CSI", "en": "CSI"},
+        {"title": "发送天线选择", "en": "Transmit antenna selection"},
+        {"title": "复杂度方面", "en": "Complexity aspect"},
+        {"title": "系统容量", "en": "System capacity"},
+        {"title": "SVD分解运算", "en": "SVD decomposition operation"},
+        {"title": "仿真结果与分析", "en": "Simulation results and analysis"},
+        {"title": "可见光MU-MIMO-OFDM系统", "en": "Visible light MU-MIMO-OFDM system"},
+        {"title": "空间直角坐标系", "en": "Spatial rectangular coordinate system"},
+        {"title": "调光等级", "en": "Dimming level"},
+        {"title": "BER性能", "en": "BER performance"}
+    ],
+    "relations": [
+        {"source": "JASD方案的硬件需求", "target": "工程实现方面", "type": "包含"},
+        {"source": "JASD方案的硬件需求", "target": "BD预编码", "type": "相关"},
+        {"source": "JASD方案的硬件需求", "target": "CSI", "type": "相关"},
+        {"source": "JASD方案的硬件需求", "target": "发送天线选择", "type": "相关"},
+        {"source": "JASD方案的硬件需求", "target": "复杂度方面", "type": "包含"},
+        {"source": "模拟调光(AD)方案", "target": "工程实现方面", "type": "包含"},
+        {"source": "BD预编码", "target": "JASD方案的硬件需求", "type": "相关"},
+        {"source": "CSI", "target": "JASD方案的硬件需求", "type": "相关"},
+        {"source": "发送天线选择", "target": "JASD方案的硬件需求", "type": "相关"},
+        {"source": "复杂度方面", "target": "JASD方案的硬件需求", "type": "包含"},
+        {"source": "复杂度方面", "target": "系统容量", "type": "相关"},
+        {"source": "复杂度方面", "target": "SVD分解运算", "type": "相关"},
+        {"source": "仿真结果与分析", "target": "可见光MU-MIMO-OFDM系统", "type": "包含"},
+        {"source": "仿真结果与分析", "target": "空间直角坐标系", "type": "包含"},
+        {"source": "仿真结果与分析", "target": "调光等级", "type": "相关"},
+        {"source": "仿真结果与分析", "target": "BER性能", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "JASD方案",
+            "en": "JASD scheme"
+        },
+        {
+            "title": "AD方案",
+            "en": "AD scheme"
+        },
+        {
+            "title": "SINR",
+            "en": "SINR"
+        },
+        {
+            "title": "可见光MU-MIMO-OFDM系统",
+            "en": "Visible light MU-MIMO-OFDM system"
+        },
+        {
+            "title": "削峰等级",
+            "en": "Peak clipping level"
+        },
+        {
+            "title": "BER",
+            "en": "BER"
+        },
+        {
+            "title": "信道相关性",
+            "en": "Channel correlation"
+        },
+        {
+            "title": "发送天线选择",
+            "en": "Transmit antenna selection"
+        }
+    ],
+    "relations": [
+        {
+            "source": "JASD方案",
+            "target": "AD方案",
+            "type": "比较"
+        },
+        {
+            "source": "JASD方案",
+            "target": "SINR",
+            "type": "验证"
+        },
+        {
+            "source": "AD方案",
+            "target": "SINR",
+            "type": "验证"
+        },
+        {
+            "source": "JASD方案",
+            "target": "可见光MU-MIMO-OFDM系统",
+            "type": "适用于"
+        },
+        {
+            "source": "AD方案",
+            "target": "可见光MU-MIMO-OFDM系统",
+            "type": "适用于"
+        },
+        {
+            "source": "JASD方案",
+            "target": "削峰等级",
+            "type": "比较"
+        },
+        {
+            "source": "AD方案",
+            "target": "削峰等级",
+            "type": "比较"
+        },
+        {
+            "source": "JASD方案",
+            "target": "BER",
+            "type": "比较"
+        },
+        {
+            "source": "AD方案",
+            "target": "BER",
+            "type": "比较"
+        },
+        {
+            "source": "JASD方案",
+            "target": "信道相关性",
+            "type": "影响"
+        },
+        {
+            "source": "AD方案",
+            "target": "信道相关性",
+            "type": "影响"
+        },
+        {
+            "source": "JASD方案",
+            "target": "发送天线选择",
+            "type": "利用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "模拟-空间协同的调光方案", "en": "Analog-Spatial Coordinated Dimming Scheme"},
+        {"title": "可见光MU-MIMO系统", "en": "Visible Light MU-MIMO System"},
+        {"title": "信道状态信息", "en": "Channel State Information"},
+        {"title": "自适应技术", "en": "Adaptive Technology"},
+        {"title": "可见光OFDM的自适应", "en": "Adaptive Visible Light OFDM"},
+        {"title": "可见光MIMO的自适应", "en": "Adaptive Visible Light MIMO"},
+        {"title": "联合OFDM与MIMO的自适应技术", "en": "Adaptive Technology Combining OFDM and MIMO"}
+    ],
+    "relations": [
+        {"source": "模拟-空间协同的调光方案", "target": "可见光MU-MIMO系统", "type": "属于"},
+        {"source": "可见光MU-MIMO系统", "target": "信道状态信息", "type": "涉及"},
+        {"source": "自适应技术", "target": "可见光OFDM的自适应", "type": "包含"},
+        {"source": "自适应技术", "target": "可见光MIMO的自适应", "type": "包含"},
+        {"source": "自适应技术", "target": "联合OFDM与MIMO的自适应技术", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "功率分配技术",
+            "en": "Power allocation technology"
+        },
+        {
+            "title": "可见光通信系统",
+            "en": "Visible light communication system"
+        },
+        {
+            "title": "可见光OFDMA",
+            "en": "Visible light OFDMA"
+        },
+        {
+            "title": "可见光CDMA",
+            "en": "Visible light CDMA"
+        },
+        {
+            "title": "可见光NOMA",
+            "en": "Visible light NOMA"
+        },
+        {
+            "title": "功率一模拟一空间协同调光",
+            "en": "Joint power analogue spatial dimming"
+        },
+        {
+            "title": "MU-MIMO-OFDM系统",
+            "en": "MU-MIMO-OFDM system"
+        },
+        {
+            "title": "BD预编码技术",
+            "en": "Block diagonal precoding technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "功率分配技术",
+            "target": "可见光OFDMA",
+            "type": "属于"
+        },
+        {
+            "source": "功率分配技术",
+            "target": "可见光CDMA",
+            "type": "属于"
+        },
+        {
+            "source": "功率分配技术",
+            "target": "可见光NOMA",
+            "type": "属于"
+        },
+        {
+            "source": "可见光OFDMA",
+            "target": "BD预编码技术",
+            "type": "采用"
+        },
+        {
+            "source": "功率一模拟一空间协同调光",
+            "target": "MU-MIMO-OFDM系统",
+            "type": "应用于"
+        },
+        {
+            "source": "MU-MIMO-OFDM系统",
+            "target": "BD预编码技术",
+            "type": "采用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "阶跃函数和狄拉克函数",
+            "en": "Step function and Dirac function"
+        },
+        {
+            "title": "电光转换因子",
+            "en": "Electro-optical conversion factor"
+        },
+        {
+            "title": "功率一模拟一空间协同调光方案",
+            "en": "Joint power-analogue-spatial dimming scheme"
+        },
+        {
+            "title": "用户信道状态自适应",
+            "en": "User channel state adaptation"
+        },
+        {
+            "title": "分布式用户功率分配算法",
+            "en": "Distributed user power allocation algorithm"
+        }
+    ],
+    "relations": [
+        {
+            "source": "阶跃函数和狄拉克函数",
+            "target": "电光转换因子",
+            "type": "包含"
+        },
+        {
+            "source": "电光转换因子",
+            "target": "功率一模拟一空间协同调光方案",
+            "type": "应用"
+        },
+        {
+            "source": "功率一模拟一空间协同调光方案",
+            "target": "用户信道状态自适应",
+            "type": "实现"
+        },
+        {
+            "source": "用户信道状态自适应",
+            "target": "分布式用户功率分配算法",
+            "type": "实现"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "反馈信道H", "en": "Feedback Channel H"},
+        {"title": "调节直流偏置", "en": "Adjusting DC Bias"},
+        {"title": "TAS-MMSV算法", "en": "TAS-MMSV Algorithm"},
+        {"title": "JPASD方案", "en": "JPASD Scheme"},
+        {"title": "可见光MU-MIMO-OFDM系统", "en": "Visible Light MU-MIMO-OFDM System"},
+        {"title": "信道状态信息", "en": "Channel State Information (CSI)"},
+        {"title": "信道矩阵H", "en": "Channel Matrix H"},
+        {"title": "等效信道奇异值", "en": "Equivalent Channel Singular Value"},
+        {"title": "功率分配向量", "en": "Power Allocation Vector"},
+        {"title": "BD预编码", "en": "Block Diagonal (BD) Precoding"},
+        {"title": "Hermitian对称模块", "en": "Hermitian Symmetric Module"},
+        {"title": "IFFT变换", "en": "Inverse Fast Fourier Transform (IFFT)"},
+        {"title": "空间维度调光", "en": "Spatial Dimension Dimming"},
+        {"title": "集中式的用户功率分配算法", "en": "Centralized User Power Allocation Algorithm"},
+        {"title": "注水(Water-Filling)公式", "en": "Water-Filling Formula"},
+        {"title": "凸问题", "en": "Convex Problem"},
+        {"title": "朗格朗日乘子法", "en": "Lagrange Multiplier Method"}
+    ],
+    "relations": [
+        {"source": "反馈信道H", "target": "信道状态信息", "type": "包含"},
+        {"source": "TAS-MMSV算法", "target": "信道矩阵H", "type": "依赖"},
+        {"source": "可见光MU-MIMO-OFDM系统", "target": "JPASD方案", "type": "包含"},
+        {"source": "信道状态信息", "target": "JPASD方案", "type": "依赖"},
+        {"source": "信道矩阵H", "target": "等效信道奇异值", "type": "包含"},
+        {"source": "功率分配向量", "target": "BD预编码", "type": "依赖"},
+        {"source": "BD预编码", "target": "Hermitian对称模块", "type": "依赖"},
+        {"source": "Hermitian对称模块", "target": "IFFT变换", "type": "依赖"},
+        {"source": "空间维度调光", "target": "信号直流偏置", "type": "包含"},
+        {"source": "集中式的用户功率分配算法", "target": "注水(Water-Filling)公式", "type": "依赖"},
+        {"source": "凸问题", "target": "朗格朗日乘子法", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "JPASD方案",
+            "en": "JPASD scheme"
+        },
+        {
+            "title": "JASD方案",
+            "en": "JASD scheme"
+        },
+        {
+            "title": "功率-模拟协同调光方案",
+            "en": "Joint Power Analogue Dimming (JPAD) scheme"
+        },
+        {
+            "title": "AD方案",
+            "en": "AD scheme"
+        },
+        {
+            "title": "可见光MU-MIMO系统",
+            "en": "Visible Light MU-MIMO system"
+        },
+        {
+            "title": "BER",
+            "en": "Bit Error Rate"
+        },
+        {
+            "title": "系统容量",
+            "en": "System Capacity"
+        }
+    ],
+    "relations": [
+        {
+            "source": "JPASD方案",
+            "target": "JASD方案",
+            "type": "对比"
+        },
+        {
+            "source": "JPASD方案",
+            "target": "功率-模拟协同调光方案",
+            "type": "对比"
+        },
+        {
+            "source": "JPASD方案",
+            "target": "AD方案",
+            "type": "对比"
+        },
+        {
+            "source": "JPASD方案",
+            "target": "可见光MU-MIMO系统",
+            "type": "应用"
+        },
+        {
+            "source": "JPASD方案",
+            "target": "BER",
+            "type": "影响"
+        },
+        {
+            "source": "JPASD方案",
+            "target": "系统容量",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LED数目", "en": "Number of LEDs"},
+        {"title": "LED动态区间", "en": "Dynamic range of LEDs"},
+        {"title": "光集线器的折射系数", "en": "Refractive index of light concentrator"},
+        {"title": "半功率角", "en": "Half-power angle"},
+        {"title": "接收PD面积", "en": "Area of receiving PD"},
+        {"title": "接收机半视场角", "en": "Half-field angle of receiver"},
+        {"title": "收发平面之间的高度差", "en": "Height difference between transmitter and receiver planes"},
+        {"title": "PD的相应带宽", "en": "Bandwidth of PD"},
+        {"title": "可见光MU-MIMO-OFDM系统", "en": "Visible light MU-MIMO-OFDM system"},
+        {"title": "空间调光联合调节", "en": "Joint spatial and dimming control"},
+        {"title": "信号直流偏置", "en": "Signal DC bias"},
+        {"title": "电功率增益", "en": "Electrical power gain"},
+        {"title": "功率分配", "en": "Power allocation"},
+        {"title": "BER性能", "en": "Bit error rate performance"},
+        {"title": "调光等级", "en": "Dimming level"},
+        {"title": "空间协同调光", "en": "Spatially coordinated dimming"},
+        {"title": "模拟维度调光", "en": "Analog dimming"},
+        {"title": "用户信道状态", "en": "User channel state"},
+        {"title": "用户功率分配", "en": "User power allocation"},
+        {"title": "削峰噪声", "en": "Peak-to-average ratio noise"},
+        {"title": "BD预编码", "en": "Block diagonal precoding"},
+        {"title": "注水定理", "en": "Water-filling theorem"},
+        {"title": "系统容量", "en": "System capacity"}
+    ],
+    "relations": [
+        {"source": "LED数目", "target": "可见光MU-MIMO-OFDM系统", "type": "包含"},
+        {"source": "LED动态区间", "target": "空间调光联合调节", "type": "相关"},
+        {"source": "光集线器的折射系数", "target": "接收PD面积", "type": "影响"},
+        {"source": "半功率角", "target": "LED数目", "type": "相关"},
+        {"source": "接收PD面积", "target": "可见光MU-MIMO-OFDM系统", "type": "包含"},
+        {"source": "接收机半视场角", "target": "可见光MU-MIMO-OFDM系统", "type": "包含"},
+        {"source": "收发平面之间的高度差", "target": "可见光MU-MIMO-OFDM系统", "type": "包含"},
+        {"source": "PD的相应带宽", "target": "可见光MU-MIMO-OFDM系统", "type": "包含"},
+        {"source": "空间调光联合调节", "target": "电功率增益", "type": "相关"},
+        {"source": "信号直流偏置", "target": "电功率增益", "type": "相关"},
+        {"source": "电功率增益", "target": "可见光MU-MIMO-OFDM系统", "type": "影响"},
+        {"source": "功率分配", "target": "空间协同调光", "type": "相关"},
+        {"source": "BER性能", "target": "可见光MU-MIMO-OFDM系统", "type": "影响"},
+        {"source": "调光等级", "target": "空间协同调光", "type": "相关"},
+        {"source": "空间协同调光", "target": "模拟维度调光", "type": "对比"},
+        {"source": "模拟维度调光", "target": "BER性能", "type": "相关"},
+        {"source": "用户信道状态", "target": "功率分配", "type": "相关"},
+        {"source": "用户功率分配", "target": "BD预编码", "type": "相关"},
+        {"source": "削峰噪声", "target": "BER性能", "type": "影响"},
+        {"source": "BD预编码", "target": "系统容量", "type": "影响"},
+        {"source": "注水定理", "target": "用户功率分配", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光多用户MIMO系统", "en": "Visible Light Multi-User MIMO System"},
+        {"title": "空间调光技术", "en": "Spatial Dimming Technology"},
+        {"title": "CSI", "en": "Channel State Information"},
+        {"title": "ZF", "en": "Zero Forcing"},
+        {"title": "MMSE", "en": "Minimum Mean Square Error"},
+        {"title": "模拟-空间协同的调光技术", "en": "Analog-Spatial Coordinated Dimming Technology"},
+        {"title": "功率-模拟-空间协同的调光技术", "en": "Power-Analog-Spatial Coordinated Dimming Technology"}
+    ],
+    "relations": [
+        {"source": "可见光多用户MIMO系统", "target": "空间调光技术", "type": "包含"},
+        {"source": "空间调光技术", "target": "CSI", "type": "依赖"},
+        {"source": "空间调光技术", "target": "ZF", "type": "结合"},
+        {"source": "空间调光技术", "target": "MMSE", "type": "结合"},
+        {"source": "空间调光技术", "target": "模拟-空间协同的调光技术", "type": "改进"},
+        {"source": "模拟-空间协同的调光技术", "target": "功率-模拟-空间协同的调光技术", "type": "改进"},
+        {"source": "功率-模拟-空间协同的调光技术", "target": "可见光多用户MIMO系统", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光MU-MIMO系统", "en": "Visible Light MU-MIMO System"},
+        {"title": "IM/DD", "en": "Intensity Modulation/Direct Detection"},
+        {"title": "JASD方案", "en": "JASD Scheme"},
+        {"title": "BER性能", "en": "BER Performance"},
+        {"title": "功率一模拟一空间协同调光", "en": "Power-One Simulation-One Spatial Collaborative Dimming"},
+        {"title": "预编码矩阵", "en": "Precoding Matrix"},
+        {"title": "Non-LoS信道", "en": "Non-Line-of-Sight Channel"},
+        {"title": "平台验证与实用化研究", "en": "Platform Verification and Practical Research"}
+    ],
+    "relations": [
+        {"source": "可见光MU-MIMO系统", "target": "IM/DD", "type": "采用"},
+        {"source": "可见光MU-MIMO系统", "target": "JASD方案", "type": "解决"},
+        {"source": "JASD方案", "target": "BER性能", "type": "影响"},
+        {"source": "JASD方案", "target": "预编码矩阵", "type": "联合优化"},
+        {"source": "JASD方案", "target": "功率一模拟一空间协同调光", "type": "提出"},
+        {"source": "可见光MU-MIMO系统", "target": "Non-LoS信道", "type": "考虑"},
+        {"source": "Non-LoS信道", "target": "功率一模拟一空间协同调光", "type": "扩展"},
+        {"source": "可见光MU-MIMO系统", "target": "平台验证与实用化研究", "type": "需要"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光多用户MIMO系统平台", "en": "Visible Light Multi-User MIMO System Platform"},
+        {"title": "预编码模块", "en": "Precoding Module"},
+        {"title": "信道估计", "en": "Channel Estimation"},
+        {"title": "上行链路", "en": "Uplink"},
+        {"title": "CSI", "en": "Channel State Information"},
+        {"title": "空间调光", "en": "Spatial Modulation"},
+        {"title": "灯源", "en": "Light Source"},
+        {"title": "体积", "en": "Volume"},
+        {"title": "成本", "en": "Cost"},
+        {"title": "硬件处理能力", "en": "Hardware Processing Capability"},
+        {"title": "解决方案", "en": "Solution"},
+        {"title": "移动数据流量预测", "en": "Mobile Data Traffic Prediction"},
+        {"title": "数字化面向5G演进", "en": "5G-oriented Digitalization"},
+        {"title": "可见光通信", "en": "Visible Light Communication"},
+        {"title": "网络中心设计", "en": "Network-centric Design"},
+        {"title": "用户中心设计", "en": "User-centric Design"},
+        {"title": "音频系统", "en": "Audio System"},
+        {"title": "LED光源", "en": "LED Light Source"},
+        {"title": "白色LED", "en": "White LED"},
+        {"title": "无线光传输", "en": "Wireless Optical Transmission"},
+        {"title": "室内可见光通信", "en": "Indoor Visible Light Communication"},
+        {"title": "反射", "en": "Reflection"},
+        {"title": "可见光通信联盟组织", "en": "Visible Light Communication Alliance Organization"},
+        {"title": "高速全双工多接入系统", "en": "High-speed Full-duplex Multi-access System"}
+    ],
+    "relations": [
+        {"source": "可见光多用户MIMO系统平台", "target": "预编码模块", "type": "包含"},
+        {"source": "可见光多用户MIMO系统平台", "target": "信道估计", "type": "包含"},
+        {"source": "可见光多用户MIMO系统平台", "target": "上行链路", "type": "包含"},
+        {"source": "可见光多用户MIMO系统平台", "target": "CSI", "type": "包含"},
+        {"source": "预编码模块", "target": "信道估计", "type": "依赖"},
+        {"source": "上行链路", "target": "CSI", "type": "反馈"},
+        {"source": "空间调光", "target": "灯源", "type": "依赖"},
+        {"source": "空间调光", "target": "体积", "type": "依赖"},
+        {"source": "空间调光", "target": "成本", "type": "依赖"},
+        {"source": "空间调光", "target": "硬件处理能力", "type": "依赖"},
+        {"source": "空间调光", "target": "解决方案", "type": "依赖"},
+        {"source": "移动数据流量预测", "target": "可见光通信", "type": "相关"},
+        {"source": "数字化面向5G演进", "target": "可见光通信", "type": "相关"},
+        {"source": "可见光通信", "target": "网络中心设计", "type": "包含"},
+        {"source": "可见光通信", "target": "用户中心设计", "type": "包含"},
+        {"source": "音频系统", "target": "可见光通信", "type": "应用"},
+        {"source": "LED光源", "target": "白色LED", "type": "种类"},
+        {"source": "无线光传输", "target": "室内可见光通信", "type": "应用"},
+        {"source": "室内可见光通信", "target": "反射", "type": "影响"},
+        {"source": "可见光通信联盟组织", "target": "可见光通信", "type": "支持"},
+        {"source": "高速全双工多接入系统", "target": "LED光源", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MIMO光无线通信", "en": "MIMO Optical Wireless Communications"},
+        {"title": "可见光通信", "en": "Visible Light Communications"},
+        {"title": "智能照明通信", "en": "Smart Lighting Communications"},
+        {"title": "光空间调制", "en": "Optical Spatial Modulation"},
+        {"title": "极化基OFDM和SC-FDE链路", "en": "Polar-Based OFDM and SC-FDE Links"},
+        {"title": "SINR分析和定点放大", "en": "SINR Analysis and Cell Zooming"},
+        {"title": "LAT室内MIMO-VLC", "en": "LAT Indoor MIMO-VLC"}
+    ],
+    "relations": [
+        {"source": "MIMO光无线通信", "target": "可见光通信", "type": "属于"},
+        {"source": "MIMO光无线通信", "target": "智能照明通信", "type": "属于"},
+        {"source": "可见光通信", "target": "光空间调制", "type": "涉及"},
+        {"source": "智能照明通信", "target": "可见光通信", "type": "涉及"},
+        {"source": "光空间调制", "target": "MIMO光无线通信", "type": "应用于"},
+        {"source": "极化基OFDM和SC-FDE链路", "target": "MIMO光无线通信", "type": "应用于"},
+        {"source": "SINR分析和定点放大", "target": "MIMO光无线通信", "type": "应用于"},
+        {"source": "LAT室内MIMO-VLC", "target": "MIMO光无线通信", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "动态范围受限制的可见光OFDM系统", "en": "Dynamic range constrained visible light OFDM system"},
+        {"title": "峰均功率比和照明-通信效率考虑下的可见光OFDM系统", "en": "Peak-to-average power ratio and illumination-to-communication efficiency considerations in visible light OFDM systems"},
+        {"title": "泛光通信中心", "en": "UCLight Center for Broadband Communication"},
+        {"title": "白光LED照明光源用作室内无线通信研究", "en": "Research on indoor wireless communication using white LED lighting source"},
+        {"title": "中国可见光通信产业技术创新战略联盟", "en": "China Visible Light Communication Industry Technology Innovation Strategic Alliance"},
+        {"title": "基于单载波频域均衡的3.25 Gbps可见光通信系统", "en": "3.25 Gbps visible light communication system based on single-carrier frequency domain equalization using RGB LED"},
+        {"title": "基于CAP调制和RLS自适应均衡的4.5 Gb/s RGB-LED WDM可见光通信系统", "en": "4.5 Gb/s RGB-LED WDM visible light communication system based on CAP modulation and RLS adaptive equalization"},
+        {"title": "基于OOK-NRS调制的460 MB/S可见光数据传输的模拟调制器", "en": "An analog modulator for 460 MB/s visible light data transmission based on OOK-NRS modulation"},
+        {"title": "基于后均衡电路的高带宽可见光通信", "en": "High bandwidth visible light communications based on a post-equalization circuit"},
+        {"title": "基于可见光标牌的信息广播系统", "en": "Information broadcasting system based on visible light signboard"},
+        {"title": "利用多重谐振均衡的高速可见光通信", "en": "High-speed visible light communications using multiple-resonant equalization"},
+        {"title": "125 Mbit/s的无线距离为5m的磷光白光LED OOK调制可见光通信", "en": "125 Mbit/s wireless distance of 5m phosphorescent white LED OOK modulation visible light communication"},
+        {"title": "基于OOK调制的磷光白光LED的无线可见光链路230 Mbit/s", "en": "230 Mbit/s wireless visible light link of phosphorescent white LED based on OOK modulation"},
+        {"title": "照明和可见光通信系统的亮度控制方法", "en": "Brightness control methods for illumination and visible light communication systems"}
+    ],
+    "relations": [
+        {"source": "动态范围受限制的可见光OFDM系统", "target": "峰均功率比和照明-通信效率考虑下的可见光OFDM系统", "type": "相关"},
+        {"source": "动态范围受限制的可见光OFDM系统", "target": "基于单载波频域均衡的3.25 Gbps可见光通信系统", "type": "相关"},
+        {"source": "峰均功率比和照明-通信效率考虑下的可见光OFDM系统", "target": "基于CAP调制和RLS自适应均衡的4.5 Gb/s RGB-LED WDM可见光通信系统", "type": "相关"},
+        {"source": "峰均功率比和照明-通信效率考虑下的可见光OFDM系统", "target": "基于OOK-NRS调制的460 MB/S可见光数据传输的模拟调制器", "type": "相关"},
+        {"source": "基于单载波频域均衡的3.25 Gbps可见光通信系统", "target": "基于CAP调制和RLS自适应均衡的4.5 Gb/s RGB-LED WDM可见光通信系统", "type": "相关"},
+        {"source": "基于CAP调制和RLS自适应均衡的4.5 Gb/s RGB-LED WDM可见光通信系统", "target": "基于OOK调制的磷光白光LED的无线可见光链路230 Mbit/s", "type": "相关"},
+        {"source": "基于OOK-NRS调制的460 MB/S可见光数据传输的模拟调制器", "target": "基于后均衡电路的高带宽可见光通信", "type": "相关"},
+        {"source": "基于后均衡电路的高带宽可见光通信", "target": "利用多重谐振均衡的高速可见光通信", "type": "相关"},
+        {"source": "125 Mbit/s的无线距离为5m的磷光白光LED OOK调制可见光通信", "target": "基于OOK调制的磷光白光LED的无线可见光链路230 Mbit/s", "type": "相关"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "动态范围受限制的可见光OFDM系统", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "峰均功率比和照明-通信效率考虑下的可见光OFDM系统", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "基于单载波频域均衡的3.25 Gbps可见光通信系统", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "基于CAP调制和RLS自适应均衡的4.5 Gb/s RGB-LED WDM可见光通信系统", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "基于OOK-NRS调制的460 MB/S可见光数据传输的模拟调制器", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "基于后均衡电路的高带宽可见光通信", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "利用多重谐振均衡的高速可见光通信", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "125 Mbit/s的无线距离为5m的磷光白光LED OOK调制可见光通信", "type": "应用"},
+        {"source": "照明和可见光通信系统的亮度控制方法", "target": "基于OOK调制的磷光白光LED的无线可见光链路230 Mbit/s", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LED dimming and high capacity visible light communication", "en": ""},
+        {"title": "Differential pulse-position modulation for power-efficient optical communication", "en": ""},
+        {"title": "Differential PPM has a higher throughput than PPM for the band-limited and average-power-limited optical channel", "en": ""},
+        {"title": "Overlapping multi-pulse pulse position modulation in optical direct detection channel", "en": ""},
+        {"title": "Differential overlapping pulse position modulation in optical direct-detection channel", "en": ""},
+        {"title": "Modified Reed-Muller coding scheme made from the bent function for dimmable visible light communications", "en": ""},
+        {"title": "Inverse source coding for dimming invisible light communications using NRZ-OOK on reliable links", "en": ""},
+        {"title": "Comparison of Asymmetrically Clipped Optical OFDM and DC-Biased Optical OFDM in AWGN", "en": ""},
+        {"title": "Power efficient optical OFDM", "en": ""},
+        {"title": "Novel unipolar orthogonal frequency division multiplexing (U-OFDM) for optical wireless", "en": ""},
+        {"title": "Position modulating OFDM for optical wireless communications", "en": ""},
+        {"title": "Flip-OFDM for optical wireless communications", "en": ""}
+    ],
+    "relations": [
+        {"source": "LED dimming and high capacity visible light communication", "target": "Joint LED dimming and high capacity visible light communication by overlapping PPM", "type": "related"},
+        {"source": "Differential pulse-position modulation for power-efficient optical communication", "target": "Differential PPM has a higher throughput than PPM for the band-limited and average-power-limited optical channel", "type": "related"},
+        {"source": "Overlapping multi-pulse pulse position modulation in optical direct detection channel", "target": "Differential overlapping pulse position modulation in optical direct-detection channel", "type": "related"},
+        {"source": "Comparison of Asymmetrically Clipped Optical OFDM and DC-Biased Optical OFDM in AWGN", "target": "Power efficient optical OFDM", "type": "related"},
+        {"source": "Novel unipolar orthogonal frequency division multiplexing (U-OFDM) for optical wireless", "target": "Position modulating OFDM for optical wireless communications", "type": "related"},
+        {"source": "Position modulating OFDM for optical wireless communications", "target": "Flip-OFDM for optical wireless communications", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SEE-OFDM", "en": ""},
+        {"title": "Asymmetrically Clipped Absolute Value Optical OFDM", "en": ""},
+        {"title": "LED non-linearity mitigation techniques for optical OFDM-based visible light communications", "en": ""},
+        {"title": "Iterative Clipping for PAPR Reduction in Visible Light OFDM Communication", "en": ""},
+        {"title": "PAR Reduced OFDM visible light communication using exponential nonlinear companding", "en": ""},
+        {"title": "Hadamard precoding for PAPR reduction in optical direct detection OFDM systems", "en": ""},
+        {"title": "Precoding techniques for PAPR reduction in asymmetrically clipped OFDM based optical wireless system", "en": ""},
+        {"title": "PARP reduction for DCO-OFDM visible light communications via semi-definite relaxation", "en": ""},
+        {"title": "PAPR Reduction in Pilot-Assisted Optical OFDM Communication Systems", "en": ""},
+        {"title": "Performance Comparison of MIMO Techniques for Optical Wireless Communications in Indoor Environments", "en": ""},
+        {"title": "Optical wireless MIMO communications (OMIMO)", "en": ""},
+        {"title": "Indoor Optical Wireless MIMO System with an Imaging Receiver", "en": ""},
+        {"title": "Enabling high data rate VLC via MIMO-LEDs PPM", "en": ""}
+    ],
+    "relations": [
+        {"source": "SEE-OFDM", "target": "Asymmetrically Clipped Absolute Value Optical OFDM", "type": "related"},
+        {"source": "Asymmetrically Clipped Absolute Value Optical OFDM", "target": "LED non-linearity mitigation techniques for optical OFDM-based visible light communications", "type": "related"},
+        {"source": "Iterative Clipping for PAPR Reduction in Visible Light OFDM Communication", "target": "PAR Reduced OFDM visible light communication using exponential nonlinear companding", "type": "related"},
+        {"source": "Hadamard precoding for PAPR reduction in optical direct detection OFDM systems", "target": "Precoding techniques for PAPR reduction in asymmetrically clipped OFDM based optical wireless system", "type": "related"},
+        {"source": "PARP reduction for DCO-OFDM visible light communications via semi-definite relaxation", "target": "PAPR Reduction in Pilot-Assisted Optical OFDM Communication Systems", "type": "related"},
+        {"source": "Performance Comparison of MIMO Techniques for Optical Wireless Communications in Indoor Environments", "target": "Optical wireless MIMO communications (OMIMO)", "type": "related"},
+        {"source": "Optical wireless MIMO communications (OMIMO)", "target": "Indoor Optical Wireless MIMO System with an Imaging Receiver", "type": "related"},
+        {"source": "Enabling high data rate VLC via MIMO-LEDs PPM", "target": "LED non-linearity mitigation techniques for optical OFDM-based visible light communications", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "空间复用技术", "en": "Spatial Multiplexing"},
+        {"title": "光学无线MIMO通道", "en": "Optical Wireless MIMO Channels"},
+        {"title": "光学空间调制", "en": "Optical Spatial Modulation"},
+        {"title": "空间移位键控", "en": "Space Shift Keying (SSK)"},
+        {"title": "可见光通信", "en": "Visible Light Communications (VLC)"},
+        {"title": "正交频分复用", "en": "Orthogonal Frequency Division Multiplexing (OFDM)"},
+        {"title": "多输入多输出", "en": "Multiple-Input Multiple-Output (MIMO)"}
+    ],
+    "relations": [
+        {"source": "空间复用技术", "target": "光学无线MIMO通道", "type": "适用于"},
+        {"source": "光学无线MIMO通道", "target": "光学空间调制", "type": "使用"},
+        {"source": "光学空间调制", "target": "空间移位键控", "type": "一种调制技术"},
+        {"source": "空间移位键控", "target": "可见光通信", "type": "一种通信技术"},
+        {"source": "可见光通信", "target": "正交频分复用", "type": "使用"},
+        {"source": "可见光通信", "target": "多输入多输出", "type": "使用"},
+        {"source": "多输入多输出", "target": "光学无线MIMO通道", "type": "适用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MIMO Modulation Schemes with Imaging Receivers in VLC", "en": ""},
+        {"title": "Performance Analysis of Indoor Diffuse VLC MIMO Channels Using Angular Diversity Detectors", "en": ""},
+        {"title": "Mirror-Aided Non-imaging Receiver for Indoor 2x2 MIMO VLC Systems", "en": ""},
+        {"title": "Indoor MIMO VLC: Novel Angle Diversity Receivers for Mobile Users", "en": ""},
+        {"title": "Design and Analysis of an Angular-Segmented Full-Mobility VLC Receiver", "en": ""},
+        {"title": "Maximizing Constrained Capacity of Power-Imbalanced Optical Wireless MIMO Communications Using Spatial Modulation", "en": ""},
+        {"title": "MIMO-ANN System for Increasing Data Rates in Organic VLC Systems", "en": ""},
+        {"title": "Indoor Positioning Algorithm Using LED VLC", "en": ""},
+        {"title": "Multiple Access Scheme Based on Block Encoding Time Division Multiplexing in an Indoor Positioning System Using VLC", "en": ""},
+        {"title": "Experimental Demonstration of an Indoor VLC Positioning System Based on OFDMA", "en": ""},
+        {"title": "Code Division Multiple-Access Techniques in Optical Fiber Networks. I. Fundamental Principles", "en": ""},
+        {"title": "Ethernet-OCDMA System for Multi-User VLC", "en": ""}
+    ],
+    "relations": [
+        {"source": "MIMO Modulation Schemes with Imaging Receivers in VLC", "target": "Performance Analysis of Indoor Diffuse VLC MIMO Channels Using Angular Diversity Detectors", "type": "related"},
+        {"source": "MIMO Modulation Schemes with Imaging Receivers in VLC", "target": "Mirror-Aided Non-imaging Receiver for Indoor 2x2 MIMO VLC Systems", "type": "related"},
+        {"source": "Performance Analysis of Indoor Diffuse VLC MIMO Channels Using Angular Diversity Detectors", "target": "Indoor MIMO VLC: Novel Angle Diversity Receivers for Mobile Users", "type": "related"},
+        {"source": "Mirror-Aided Non-imaging Receiver for Indoor 2x2 MIMO VLC Systems", "target": "Indoor MIMO VLC: Novel Angle Diversity Receivers for Mobile Users", "type": "related"},
+        {"source": "Indoor MIMO VLC: Novel Angle Diversity Receivers for Mobile Users", "target": "Design and Analysis of an Angular-Segmented Full-Mobility VLC Receiver", "type": "related"},
+        {"source": "Design and Analysis of an Angular-Segmented Full-Mobility VLC Receiver", "target": "Maximizing Constrained Capacity of Power-Imbalanced Optical Wireless MIMO Communications Using Spatial Modulation", "type": "related"},
+        {"source": "Maximizing Constrained Capacity of Power-Imbalanced Optical Wireless MIMO Communications Using Spatial Modulation", "target": "MIMO-ANN System for Increasing Data Rates in Organic VLC Systems", "type": "related"},
+        {"source": "Indoor Positioning Algorithm Using LED VLC", "target": "Multiple Access Scheme Based on Block Encoding Time Division Multiplexing in an Indoor Positioning System Using VLC", "type": "related"},
+        {"source": "Multiple Access Scheme Based on Block Encoding Time Division Multiplexing in an Indoor Positioning System Using VLC", "target": "Experimental Demonstration of an Indoor VLC Positioning System Based on OFDMA", "type": "related"},
+        {"source": "Code Division Multiple-Access Techniques in Optical Fiber Networks. I. Fundamental Principles", "target": "Ethernet-OCDMA System for Multi-User VLC", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Expurgated PPM", "en": "Expurgated PPM"},
+        {"title": "Indoor Visible Light Communications", "en": "Indoor Visible Light Communications"},
+        {"title": "Optical Orthogonal Codes", "en": "Optical Orthogonal Codes"},
+        {"title": "Combinatorial Designs", "en": "Combinatorial Designs"},
+        {"title": "Random Optical Codes", "en": "Random Optical Codes"},
+        {"title": "Wireless Optical CDMA Systems", "en": "Wireless Optical CDMA Systems"},
+        {"title": "Multiuser MIMO Indoor Visible Light Communication System", "en": "Multiuser MIMO Indoor Visible Light Communication System"},
+        {"title": "Wavelength Division Multiplexed Visible Light Communications", "en": "Wavelength Division Multiplexed Visible Light Communications"},
+        {"title": "RGBY LED based WDM VLC system", "en": "RGBY LED based WDM VLC system"},
+        {"title": "Space Division Multiple Access Optical Beamforming", "en": "Space Division Multiple Access Optical Beamforming"},
+        {"title": "Indoor Optical Wireless Communication", "en": "Indoor Optical Wireless Communication"},
+        {"title": "Angle Diversity for Non-directed Wireless Infrared Communication", "en": "Angle Diversity for Non-directed Wireless Infrared Communication"},
+        {"title": "Optical Attocell Network", "en": "Optical Attocell Network"},
+        {"title": "Biased Multi-LED Beamforming", "en": "Biased Multi-LED Beamforming"},
+        {"title": "OFDMA for LiFi Downlink", "en": "OFDMA for LiFi Downlink"}
+    ],
+    "relations": [
+        {"source": "Expurgated PPM", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "Optical Orthogonal Codes", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "Combinatorial Designs", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "Random Optical Codes", "target": "Optical Attocell Network", "type": "Application"},
+        {"source": "Wireless Optical CDMA Systems", "target": "Indoor Visible Light Communications", "type": "Impact"},
+        {"source": "Multiuser MIMO Indoor Visible Light Communication System", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "Wavelength Division Multiplexed Visible Light Communications", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "RGBY LED based WDM VLC system", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "Space Division Multiple Access Optical Beamforming", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "Indoor Optical Wireless Communication", "target": "Indoor Visible Light Communications", "type": "Potential"},
+        {"source": "Angle Diversity for Non-directed Wireless Infrared Communication", "target": "Indoor Visible Light Communications", "type": "Impact"},
+        {"source": "Optical Attocell Network", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "Biased Multi-LED Beamforming", "target": "Indoor Visible Light Communications", "type": "Application"},
+        {"source": "OFDMA for LiFi Downlink", "target": "Indoor Visible Light Communications", "type": "Application"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Joint transmission in indoor visible light communication downlink cellular networks", "en": ""},
+        {"title": "Channel reuse strategies for indoor infrared wireless communications", "en": ""},
+        {"title": "Self-organising interference coordination in optical wireless networks", "en": ""},
+        {"title": "Performance gains of cooperative transmission concepts in intensity modulated direct detection visible light communication networks", "en": ""},
+        {"title": "Coordinated broadcasting for multiuser indoor visible light communication systems", "en": ""},
+        {"title": "Coordinated beamforming for downlink visible light communication networks", "en": ""},
+        {"title": "Handover in VLC systems with cooperating mobile devices", "en": ""},
+        {"title": "Anticipatory association for indoor visible light communications: Light, Follow Me!", "en": ""},
+        {"title": "Handover in VIC networks with coordinated multipoint transmission", "en": ""},
+        {"title": "Implementation of a hybrid optical-RF wireless network with fast network handover", "en": ""},
+        {"title": "A hybrid radio frequency and broadcast visible light communication system", "en": ""},
+        {"title": "Protocol design and capacity analysis in hybrid network of visible light communication and OFDMA systems", "en": ""}
+    ],
+    "relations": [
+        {"source": "Joint transmission in indoor visible light communication downlink cellular networks", "target": "Channel reuse strategies for indoor infrared wireless communications", "type": "related"},
+        {"source": "Joint transmission in indoor visible light communication downlink cellular networks", "target": "Self-organising interference coordination in optical wireless networks", "type": "related"},
+        {"source": "Performance gains of cooperative transmission concepts in intensity modulated direct detection visible light communication networks", "target": "Coordinated broadcasting for multiuser indoor visible light communication systems", "type": "related"},
+        {"source": "Coordinated broadcasting for multiuser indoor visible light communication systems", "target": "Coordinated beamforming for downlink visible light communication networks", "type": "related"},
+        {"source": "Handover in VLC systems with cooperating mobile devices", "target": "Anticipatory association for indoor visible light communications: Light, Follow Me!", "type": "related"},
+        {"source": "Handover in VIC networks with coordinated multipoint transmission", "target": "Implementation of a hybrid optical-RF wireless network with fast network handover", "type": "related"},
+        {"source": "A hybrid radio frequency and broadcast visible light communication system", "target": "Protocol design and capacity analysis in hybrid network of visible light communication and OFDMA systems", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信与OFDMA系统混合网络的协议设计和容量分析", "en": "Protocol Design and Capacity Analysis in Hybrid Network of Visible Light Communication and OFDMA Systems"},
+        {"title": "一种混合射频和可见光通信系统的设计与分析", "en": "Design and Analysis of a Hybrid Radio Frequency and Visible Light Communication System"},
+        {"title": "利用可见光通信和补偿地磁感应的视障人士室内导航系统", "en": "Indoor Navigation System for Visually Impaired People Using Visible Light Communication and Compensated Geomagnetic Sensing"},
+        {"title": "利用LED照明的鲁棒异步室内定位", "en": "Robust Asynchronous Indoor Localization Using LED Lighting"},
+        {"title": "利用可见光的到达时间定位的位置精度及其在室内定位系统中的应用", "en": "Position Accuracy of Time-of-Arrival Based Ranging Using Visible Light with Application in Indoor Localization Systems"},
+        {"title": "基于到达时间差的可见光室内定位", "en": "TDOA-based Indoor Positioning Using Visible Light"},
+        {"title": "一种基于可见光的定位系统Epsilon", "en": "Epsilon: A Visible Light Based Positioning System"},
+        {"title": "多元素可见光通信系统中基于AOA的定位和跟踪", "en": "AOA-based Localization and Tracking in Multi-element VLC Systems"},
+        {"title": "利用移动电话和可见光的室内定位系统Luxapose", "en": "Luxapose: Indoor Positioning with Mobile Phones and Visible Light"},
+        {"title": "线性预编码多用户MIMO系统中的发射天线选择性能分析和算法设计", "en": "Performance Analysis and Algorithm Designs for Transmit Antenna Selection in Linearly Precoded Multiuser MIMO Systems"},
+        {"title": "基于MMSE的多用户线性预编码用户选择算法", "en": "MMSE-Based User Selection Algorithms for Multiuser Linear Precoding"},
+        {"title": "可见光通信的OFDM-PWM方案", "en": "OFDM-PWM Scheme for Visible Light Communications"}
+    ],
+    "relations": [
+        {"source": "可见光通信与OFDMA系统混合网络的协议设计和容量分析", "target": "一种混合射频和可见光通信系统的设计与分析", "type": "相关"},
+        {"source": "可见光通信与OFDMA系统混合网络的协议设计和容量分析", "target": "利用可见光通信和补偿地磁感应的视障人士室内导航系统", "type": "相关"},
+        {"source": "利用可见光通信和补偿地磁感应的视障人士室内导航系统", "target": "利用LED照明的鲁棒异步室内定位", "type": "相关"},
+        {"source": "利用可见光通信和补偿地磁感应的视障人士室内导航系统", "target": "利用可见光的到达时间定位的位置精度及其在室内定位系统中的应用", "type": "相关"},
+        {"source": "利用可见光的到达时间定位的位置精度及其在室内定位系统中的应用", "target": "基于到达时间差的可见光室内定位", "type": "相关"},
+        {"source": "基于到达时间差的可见光室内定位", "target": "一种基于可见光的定位系统Epsilon", "type": "相关"},
+        {"source": "一种基于可见光的定位系统Epsilon", "target": "多元素可见光通信系统中基于AOA的定位和跟踪", "type": "相关"},
+        {"source": "利用移动电话和可见光的室内定位系统Luxapose", "target": "线性预编码多用户MIMO系统中的发射天线选择性能分析和算法设计", "type": "相关"},
+        {"source": "线性预编码多用户MIMO系统中的发射天线选择性能分析和算法设计", "target": "基于MMSE的多用户线性预编码用户选择算法", "type": "相关"},
+        {"source": "可见光通信的OFDM-PWM方案", "target": "一种混合射频和可见光通信系统的设计与分析", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "水下光学无线通信网络", "en": "Underwater optical wireless communication network"},
+        {"title": "水下光学无线通信信道模型调查", "en": "Survey of channel models for underwater optical wireless communication"},
+        {"title": "水下机器人集成通信和定位的双重用途可见光方法", "en": "Dual-use visible light approach to integrated communication and localization of underwater robots with application to non-destructive nuclear reactor inspection"},
+        {"title": "车辆应用中可见光通信使用的当前挑战：一项调查", "en": "Current challenges for visible light communications usage in vehicle applications: A survey"},
+        {"title": "基于ETC车辆的开放式交通灯控制模型", "en": "An open traffic light control model for reducing vehicles CO2 emissions based on ETC vehicles"},
+        {"title": "智能汽车照明以提高车辆安全性", "en": "Smart automotive lighting for vehicle safety"},
+        {"title": "基础设施到车辆可见光通信链路中的接收机角度控制", "en": "Receiver angle control in an infrastructure-to-car visible light communication link"},
+        {"title": "IEEE802.1Ip和基于可见光通信的编队安全漏洞", "en": "Security vulnerabilities of IEEE802.1Ip and visible light communication based platoon"},
+        {"title": "多用户可见光通信：现状和未来方向", "en": "Multi-User Visible Light Communications: State-of-the-Art and Future Directions"},
+        {"title": "混合RF和可见光通信系统的带宽聚合协议和吞吐量最优调度器", "en": "Bandwidth Aggregation Protocol and Throughput-Optimal Scheduler for Hybrid RF and Visible Light Communication Systems"},
+        {"title": "移动多输入多输出范式的转变", "en": "Shifting the MIMO Paradigm"}
+    ],
+    "relations": [
+        {"source": "水下光学无线通信网络", "target": "水下光学无线通信信道模型调查", "type": "相关"},
+        {"source": "水下光学无线通信网络", "target": "水下机器人集成通信和定位的双重用途可见光方法", "type": "相关"},
+        {"source": "车辆应用中可见光通信使用的当前挑战：一项调查", "target": "基于ETC车辆的开放式交通灯控制模型", "type": "相关"},
+        {"source": "智能汽车照明以提高车辆安全性", "target": "车辆应用中可见光通信使用的当前挑战：一项调查", "type": "相关"},
+        {"source": "基础设施到车辆可见光通信链路中的接收机角度控制", "target": "车辆应用中可见光通信使用的当前挑战：一项调查", "type": "相关"},
+        {"source": "IEEE802.1Ip和基于可见光通信的编队安全漏洞", "target": "多用户可见光通信：现状和未来方向", "type": "相关"},
+        {"source": "混合RF和可见光通信系统的带宽聚合协议和吞吐量最优调度器", "target": "多用户可见光通信：现状和未来方向", "type": "相关"},
+        {"source": "移动多输入多输出范式的转变", "target": "混合RF和可见光通信系统的带宽聚合协议和吞吐量最优调度器", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LED照明装置", "en": "LED lighting device"},
+        {"title": "室内高速可见光通信", "en": "Indoor high-speed visible light communication"},
+        {"title": "可见光MIMO通信系统预编码技术", "en": "Pre-coding technology for visible light MIMO communication system"},
+        {"title": "多用户可见光通信", "en": "Multi-user visible light communication"},
+        {"title": "可见光通信中的光功率约束", "en": "Optical power constraint in visible light communication"},
+        {"title": "可见光通信中的光学正交频分复用", "en": "Optical orthogonal frequency division multiplexing in visible light communication"},
+        {"title": "可见光通信中的多输入多输出", "en": "Multiple input multiple output in visible light communication"},
+        {"title": "可见光通信中的零强制预编码", "en": "Zero-forcing pre-coding in visible light communication"},
+        {"title": "可见光通信中的速率最大化", "en": "Rate maximization in visible light communication"},
+        {"title": "可见光通信中的光学正交频分复用成像", "en": "Optical orthogonal frequency division multiplexing imaging in visible light communication"},
+        {"title": "可见光通信中的天线选择", "en": "Antenna selection in visible light communication"},
+        {"title": "可见光通信中的调度算法", "en": "Scheduling algorithm in visible light communication"}
+    ],
+    "relations": [
+        {"source": "LED照明装置", "target": "室内高速可见光通信", "type": "应用"},
+        {"source": "室内高速可见光通信", "target": "可见光MIMO通信系统预编码技术", "type": "关联"},
+        {"source": "可见光MIMO通信系统预编码技术", "target": "多用户可见光通信", "type": "关联"},
+        {"source": "多用户可见光通信", "target": "可见光通信中的光功率约束", "type": "关联"},
+        {"source": "可见光通信中的光功率约束", "target": "可见光通信中的光学正交频分复用", "type": "关联"},
+        {"source": "可见光通信中的光学正交频分复用", "target": "可见光通信中的多输入多输出", "type": "关联"},
+        {"source": "可见光通信中的多输入多输出", "target": "可见光通信中的零强制预编码", "type": "关联"},
+        {"source": "可见光通信中的零强制预编码", "target": "可见光通信中的速率最大化", "type": "关联"},
+        {"source": "可见光通信中的速率最大化", "target": "可见光通信中的光学正交频分复用成像", "type": "关联"},
+        {"source": "可见光通信中的光学正交频分复用成像", "target": "可见光通信中的天线选择", "type": "关联"},
+        {"source": "可见光通信中的调度算法", "target": "多用户可见光通信", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "可见光通信的调光方案研究", "en": "Dimming schemes for visible light communication"},
+        {"title": "可见光通信的调光控制技术", "en": "Dimming control technology for visible light communication"},
+        {"title": "可见光通信的调制方案研究", "en": "Modulation schemes for visible light communication"},
+        {"title": "可见光通信的信道均衡技术", "en": "Channel equalization technology for visible light communication"},
+        {"title": "可见光通信的编码技术", "en": "Coding technology for visible light communication"}
+    ],
+    "relations": [
+        {"source": "可见光通信的调光方案研究", "target": "可见光通信的调光控制技术", "type": "包含"},
+        {"source": "可见光通信的调光方案研究", "target": "可见光通信的调制方案研究", "type": "相关"},
+        {"source": "可见光通信的调光方案研究", "target": "可见光通信的信道均衡技术", "type": "相关"},
+        {"source": "可见光通信的调光方案研究", "target": "可见光通信的编码技术", "type": "相关"},
+        {"source": "可见光通信的调光控制技术", "target": "可见光通信的调光方案研究", "type": "被包含"},
+        {"source": "可见光通信的调光控制技术", "target": "可见光通信的调制方案研究", "type": "相关"},
+        {"source": "可见光通信的调光控制技术", "target": "可见光通信的信道均衡技术", "type": "相关"},
+        {"source": "可见光通信的调光控制技术", "target": "可见光通信的编码技术", "type": "相关"},
+        {"source": "可见光通信的调制方案研究", "target": "可见光通信的调光方案研究", "type": "相关"},
+        {"source": "可见光通信的调制方案研究", "target": "可见光通信的调光控制技术", "type": "相关"},
+        {"source": "可见光通信的调制方案研究", "target": "可见光通信的信道均衡技术", "type": "相关"},
+        {"source": "可见光通信的调制方案研究", "target": "可见光通信的编码技术", "type": "相关"},
+        {"source": "可见光通信的信道均衡技术", "target": "可见光通信的调光方案研究", "type": "相关"},
+        {"source": "可见光通信的信道均衡技术", "target": "可见光通信的调光控制技术", "type": "相关"},
+        {"source": "可见光通信的信道均衡技术", "target": "可见光通信的调制方案研究", "type": "相关"},
+        {"source": "可见光通信的信道均衡技术", "target": "可见光通信的编码技术", "type": "相关"},
+        {"source": "可见光通信的编码技术", "target": "可见光通信的调光方案研究", "type": "相关"},
+        {"source": "可见光通信的编码技术", "target": "可见光通信的调光控制技术", "type": "相关"},
+        {"source": "可见光通信的编码技术", "target": "可见光通信的调制方案研究", "type": "相关"},
+        {"source": "可见光通信的编码技术", "target": "可见光通信的信道均衡技术", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "High-speed 405-nm superluminescent diode (SLD) with 807-MHz modulation bandwidth", "en": ""},
+        {"title": "LED-Based Wavelength Division Multiplexed 10Gb/s Visible Light Communications", "en": ""},
+        {"title": "Joint Optimization of Precoder and Equalizer in MIMO VLC Systems", "en": ""},
+        {"title": "Block Precoding for Peak-Limited MISO Broadcast VLC: Constellation-Optimal Structure and Addition-Unique Designs", "en": ""},
+        {"title": "An Improved FD-DFE Structure for Downlink VLC Systems Based on SC-FDMA/1 in IEEE Communications Letters", "en": ""},
+        {"title": "Relay-Assisted OFDM-Based Visible Light Communications", "en": ""},
+        {"title": "Adaptive Modulation Schemes for Visible Light Communications", "en": ""},
+        {"title": "Experimental Demonstration of an Indoor VLC Positioning System Based on OFDMA", "en": ""},
+        {"title": "On the Capacity of Free-Space Optical Intensity Channels", "en": ""},
+        {"title": "Capacity Bounds for Wireless Optical Intensity Channels with Gaussian Noise", "en": ""},
+        {"title": "Modulation and Coding for Dimmable Visible Light Communication", "en": ""},
+        {"title": "The Spatial Dimming Scheme for the MU-MIMO-OFDM VLC System", "en": ""},
+        {"title": "Efficient Coding Modulation and Seamless Rate Adaptation for Visible Light Communications", "en": ""},
+        {"title": "On the Performance of Adaptive MIMO-OFDM Indoor Visible Light Communications", "en": ""}
+    ],
+    "relations": [
+        {"source": "High-speed 405-nm superluminescent diode (SLD) with 807-MHz modulation bandwidth", "target": "LED-Based Wavelength Division Multiplexed 10Gb/s Visible Light Communications", "type": "相关"},
+        {"source": "Joint Optimization of Precoder and Equalizer in MIMO VLC Systems", "target": "Block Precoding for Peak-Limited MISO Broadcast VLC: Constellation-Optimal Structure and Addition-Unique Designs", "type": "相关"},
+        {"source": "An Improved FD-DFE Structure for Downlink VLC Systems Based on SC-FDMA/1 in IEEE Communications Letters", "target": "Relay-Assisted OFDM-Based Visible Light Communications", "type": "相关"},
+        {"source": "Adaptive Modulation Schemes for Visible Light Communications", "target": "Experimental Demonstration of an Indoor VLC Positioning System Based on OFDMA", "type": "相关"},
+        {"source": "On the Capacity of Free-Space Optical Intensity Channels", "target": "Capacity Bounds for Wireless Optical Intensity Channels with Gaussian Noise", "type": "相关"},
+        {"source": "Modulation and Coding for Dimmable Visible Light Communication", "target": "The Spatial Dimming Scheme for the MU-MIMO-OFDM VLC System", "type": "相关"},
+        {"source": "Efficient Coding Modulation and Seamless Rate Adaptation for Visible Light Communications", "target": "On the Performance of Adaptive MIMO-OFDM Indoor Visible Light Communications", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Joint Dimming Control and Transceiver Design for MIMO-Aided Visible Light Communication", "en": ""},
+        {"title": "An Optimal Scaling Scheme for DCO-OFDM Based Visible Light Communications", "en": ""},
+        {"title": "Linear Preceding for Multiuser Visible-Light Communication with Field-of-View Diversity", "en": ""},
+        {"title": "Fair Non-Orthogonal Multiple Access for Visible Light Communication Downlinks", "en": ""},
+        {"title": "User Grouping and Power Allocation for NOMA Visible Light Communication Multi-Cell Networks", "en": ""},
+        {"title": "Optimal Power Allocation for Downlink Two-User Non-orthogonal Multiple Access in Visible Light Communication", "en": ""},
+        {"title": "On the Capacity of Free-Space Optical Intensity Channels", "en": ""},
+        {"title": "Practical Algorithms for a Family of Waterfilling Solutions", "en": ""},
+        {"title": "Analogue Dimming", "en": ""},
+        {"title": "Block Diagonalization", "en": ""},
+        {"title": "Broadcast Channel", "en": ""},
+        {"title": "Code Division Multiple Access", "en": ""},
+        {"title": "Channel State Information", "en": ""},
+        {"title": "Carrier Sense Multiple Access with Collision Detection", "en": ""},
+        {"title": "Digital Dimming", "en": ""},
+        {"title": "Discrete Multi-Tone", "en": ""},
+        {"title": "Fast Fourier Transform Algorithm", "en": ""},
+        {"title": "Inter-cell Interference", "en": ""},
+        {"title": "Institute of Electrical and Electronic Engineers", "en": ""},
+        {"title": "Inverse Fast Fourier Transform Algorithm", "en": ""},
+        {"title": "Intensity Modulation with Direct Detection", "en": ""},
+        {"title": "International Telecommunication Union", "en": ""},
+        {"title": "Light-Emitting Diode", "en": ""},
+        {"title": "Line of Sight", "en": ""},
+        {"title": "Media Access Control", "en": ""},
+        {"title": "Minimum Mean-Squared Error", "en": ""},
+        {"title": "Multiple Input Multiple Output", "en": ""},
+        {"title": "Multi-user Multiple Input Single Output", "en": ""}
+    ],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "Multi-user Interference", "en": "多用户干扰"},
+        {"title": "Non-Orthogonal Multiple Access", "en": "非正交多址"},
+        {"title": "Orthogonal Frequency Division Multiplexing", "en": "正交频分复用"},
+        {"title": "Orthogonal Frequency Division Multiplexing Access", "en": "正交频分多址接入"},
+        {"title": "hOMEGigabit Access project", "en": "家庭千兆接入项目"},
+        {"title": "On-Off Keying", "en": "开关键控"},
+        {"title": "Power Allocation", "en": "功率分配"},
+        {"title": "Peak to Average Power Ratio", "en": "峰均比"},
+        {"title": "Photo-diode", "en": "光电二极管"},
+        {"title": "Probability Density Function", "en": "概率密度函数"},
+        {"title": "Pulse Modulation", "en": "脉冲调制"},
+        {"title": "Pulse Position Modulation", "en": "脉冲位置调制"},
+        {"title": "Pulse Width Modulation", "en": "脉冲宽度调制"},
+        {"title": "Repetition Coding", "en": "重复编码"},
+        {"title": "Radio Frequency", "en": "射频"},
+        {"title": "Red Green Blue", "en": "红绿蓝"},
+        {"title": "Spatial Dimming", "en": "空间调光"},
+        {"title": "Spatial Modulation", "en": "空间调制"},
+        {"title": "Spatial Multiplexing", "en": "空间复用"},
+        {"title": "Signal to Noise Ratio", "en": "信噪比"},
+        {"title": "Signal to Interference plus Noise Ratio", "en": "信干噪比"},
+        {"title": "Transmit Antenna Selection", "en": "发送天线选择"},
+        {"title": "Time Division Multiple Access", "en": "时分多址"},
+        {"title": "Visible Light Communications", "en": "可见光通信"},
+        {"title": "Wavelength Division Multiple Access", "en": "波分多址"},
+        {"title": "Water Filling", "en": "注水"},
+        {"title": "Zero Forcing", "en": "迫零"}
+    ],
+    "relations": []
+}

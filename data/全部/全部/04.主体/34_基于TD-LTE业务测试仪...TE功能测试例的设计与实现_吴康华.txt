@@ -1,0 +1,1092 @@
+
+
+
+第一章绪论
+移动通信中，所有终端上市前必须通过一定的测试例进行协议一致性测试。 本章将介绍论文产生的背景、作者所从事的工作和论文组织结构。
+1.1论文的背景
+协议一致性及一致性测试
+ISO/IEC 9646对协议一致性有如下定义：“一个一致性的实现应满足静态一 致性和动态一致性需求，并与协议一致性声明中所声明的功能相符合”。协议一 致性测试(protocol conformance test)是开放系统互连(OSI)产品的协议实现与 OSI协议标准一致性程度的测试。由于OSI协议标准本身具有许多可供选择的功 能和需要设定的参数，不同的OSI产品设计者和生产者也可能会对同一协议标 准作出不同的理解和解释，以及一些人为差错，都会使采用相同协议标准的OSI 产品有所差异，影响OSI产品之间的互操作。最终结果就是降低了用户体验， 甚至无法满足基本功能需求。在移动通信中，终端厂家和产品数量众多，不同厂 家生产的终端设备必须要同一网络中互联操作，所以必须进行一致性测试。3GPP 为终端协议一致性测试定义了大量的测试例，其中本文研究的Volte相关测试定 义于 TS 34.229-10
+协议一致性测试标准化方法
+3GPP只定义测试例，并不负责何时开展测试、如何开展测试、测试标准这 些工作。为此，全球运营商和终端设备商成立了 GCF(Global Certification Forum), 该组织负责一致性测试平台/测试例以及终端的认证。该组织通过独立的过程确 保终端的全球互操作，GCF定义了每个终端必须接受的测试，包括射频一致性 测试、协议一致性测试、无线资源管理一致性测试等只有通过GCF认证的 终端才能上市。同时所有测试例必须经过两款不同厂商的终端测试通过才能申请 GCF认证，因此测试例与终端是相互验证的。为了对测试进行GCF认证，厂商 必须提交测试通过结果以及测试过程中产生的logo
+VoLTE技术优势
+LTE作为当今最主流的新一代宽带无线通信技术方案，相对3G时代又有了 长足的进步。由于LTE面向数据业务的分组域(PS)的系统设计目标，在LTE 网络中没有传统的电路域结构。因此LTE不再支持传统的电路域交换的语音解 决方案。IP多媒体子系统(IP Multimedia Subsystem, IMS)控制的VoIP将是LTE 的终极语音解决方案，即Voice over LTE ( VoLTE)o VoLTE相对于传统语音解决 方案及过渡方案(例如CSFB)有着显著的性能优势和用户体验，例如低时延、 高清晰度和支持多媒体通信等。凭借全方位的性能优势，volte必将逐渐替代现 有方案，在运营商、设备商和芯片商的大力推动下，市场上将出现大量支持volte 的终端。
+4现有测试仪表功能局限性
+在整个LTE产业链中，无线终端协议一致性测试仪表的研发是重要一环。 目前，国外仪表厂商已做出了商用的支持VoLTE功能测试的LTE业务测试仪， 然而在本项目立项之时，国内现有平台尚无法支持VoLTE测试，因此支持终端 VoLTE的仪表的研发具有一定的必要性和紧迫性。
+VoLTE测试功能实现难度
+协议一致性测试仪表通过全面模拟网侧功能和信令流程对终端进行测试。 3GPP协议不仅定义了 VoLTE网络架构和业务信令流程，还在3GPP TS34.229-1 中为终端VoLTE测试定义了大量测试例。然而协议文本并没有给出测试例和系 统平台的具体实现。从协议文本到测试功能的完整实现需要经过大量的工作。
+首先，测试仪表虽然对现网进行模拟，但始终不是实际网络，因此测试仪表 的实现虽然参考协议但又不能完全照搬协议。必须经过系统平台开发人员和测试 例开发人员反复沟通，充分调研。决定如何模拟协议架构。例如某个模块只需对 现有系统稍加修改即可完成，而某些模块需要直接添加。同样对于需要添加的模 块，是直接集成与现有平台的某个模块中。或者某个模块可以再细分为若干个子 模块。这些都需要不同模块开发人员共同进行大量研究。不良的设计将会给后续 调试工作增加困难，同时提升了维护成本，影响产品的商业价值。
+其次，由于VoLTE对现有网络进行了重大升级，反映在仪表平台上则是在 EUTRA_PTC上增加了 IMS_PTC子模块。在平台上增加IP_PTC模块，其内部 包括SIP编解码模块、MUX/Filter模块等。在系统适配层(System Adapter)增 加IP Sec模块和IP Transmit模块等。新模块的添加和原有模块的修改提高了系 统的复杂性，增加了开发难度。在这一过程中，测试例开发人员要与平台开发人 员多次沟通，分析确定接口。
+最后，没有测试例的平台没有意义，测试例也不能脱离测试平台而存在，因 此测试例开发人员不仅需要熟练掌握平台所提供的接口，同时也要了解接口函数 内部实现，同时结合自己对测试例的理解，帮助平台开发人员提高平台的执行效 率。同时VoLTE作为应用层服务，其测试例的流程更长更复杂，任何一个环节 出现问题都会导致测试例失败。例如某一条消息的配置与协议不一致，某一个函 数调用过程中产生bug,这些问题都需要平台开发人员和测试例开发人员一起配 合联调，一步步定位问题代码，分析代码执行结果不符合预期的原因。找到原因 后对代码重新修改，同时由于一个函数或者一个变量可能在不同模块、不同时间 被调用，所以要防止修改过程中引入新的bug,避免顾此失彼。
+选题来源
+基于volte功能测试的必要性和紧迫性，作者研究生阶段参与到了国家重 大专项课题"TD-LTE-Advanced TTCN终端协议仿真测试仪开发”的科研项目中， 并选择“基于TD-LTE业务测试仪的VoLTE测试例的设计与实现”作为作者研 究方向。该课题目标为研发出国内首款支持VoLTE功能的测试仪表。
+1.2作者的主要工作与成果
+作者从立项开始，参与了 TD-LTE业务测试仪的VoLTE功能研发的每一个 阶段。VoLTE功能的测试的实现包含两个方面测试平台和测试例的开发，测试平 台是测试例运行平台，为测试例的执行提供底层的接口实现，测试平台通过测试 例对终端进行测试，因此两者缺一不可。在项目的准备阶段以及开发过程中，作 者首先阅读了大量3GPP协议，包括接入层协议(3GPPTS36.33K3GPP TS36.508、 3GPPTS36.523-1等)和VoLTE协议描述(3GPPTS24.229),重点研究了接入层 和VoLTE网络架构和信令流程。其次，作者对现有仪表时刻关注，学习了现有 仪表的硬件平台和软件架构，重点研究了软件架构中各模块的功能和实现方法， 熟练掌握了测试例开发的基础知识和基本技能。最后，作者根据协议在TD-LTE 平台上完成了基于TTCN-3的测试例的开发工作。这一工作中，作者主要完成两 方面的工作，一方面完成测试例的代码编写，调试和验证，保证了测试兩的正确 性。另一方面，在与平台开发人员的联调中，结合自身对测试例的理解，为平台 开发人员提出意见。在所有开发工作完成后，作者为VoLTE测试例申请了 GCF 认证。可以作为产品上市。
+1.3论文的结构
+本文共分为五章：
+第一章是本文的绪论部分，介绍了论文的背景和作者所从事的工作和取得的 成果，并介绍论文的结构和章节安排。
+第二章"TD-LTE业务测试系统及VoLTE测试概述”介绍作者工作所基于的 平台，包括系统的硬件平台和软件架构，并将详细介绍各子模块功能，在此基础 上引入作者所在团队为支持VoLTE测试对平台的升级方案。本章最后将研介绍 试例的开发周期，具体分析基于TTCN-3构造VoLTE测试例的流程和方法，并 且将介绍一种简单直观的验证方法。
+第三章“M)LTE终端业务测试用例的设计与实现”部分将实现鉴权测试例、 语音被叫测试例、视频主叫测试例、视频被叫测试例。首先分析测试例的目的、 流程。并从中提取测试点。第一节对测试例的通用部分进行实现，第二节实现鉴 权测试例，第三节实现语音被叫测试例，第四节实现视频主叫测试例，第五节实 现语音被叫测试例。并在每一节最后都给出该测试例的TTCN-3实现。
+第四章“Volte终端业务测试用例的结果验证”部分将给出测试例的运行结 果，并将对所有测试点的每一个测试点进行分析判决。第一节给出测试例通用过 程的验证，第二节给出鉴权测试例的验证，第三节给出语音被叫测试例的验证, 第四节给出视频主叫测试例的验证，第五节给出视频被叫测试例的验证。最后一 节给出所有测试例的自动化测试结果。
+第五章“总结和展望”，本章对整个论文所研究的工作进行总结。
+第二章TD-LTE业务测试系统及VoLTE测试概述
+为了便于读者理解论文，本章将对开发平台、VoLTE架构和关键技术
+(SIP&SDP)进行必要的简介和说明。其中，第一节介绍TD-LTE业务测试仪的 软硬件架构和各模块功能。第二节介绍VoLTE网络架构和SIP&SDP技术。第三 节介绍VoLTE测试平台，即在TD-LTE系统基础上为增加VoLTE测试对其进行 的修改。第四节介绍测试例的一般开发过程和和基于TTCN-3的VoLTE测试例 的构造方法，并将介绍一种测试例验证方法。
+2.1 TD-LTE业务测试系统架构
+本论文中所使用的TD-LTE业务测试仪基于TTCN-3语言来设计测试用例， 开发者和用户都可以通过平台提供的接口原语开发测试例。用户只要按照协议规 定，使用仪表提供的接口就可以自定义开发3GPP规定的测试用例。由于仪表在 底层进行实现，且开放接口给用户，因此用户除了直接订购测试例或者开发标准 测试例以外，还可以开发自定义测试例。
+在此基础上，仪表还提供了友好的界面，学习成本低，便于用户上手。仪表 的logl具，可以帮助用户实时查看PHY、MAC、RLC、PDCP、RRC层的数据 流和信令交互流程，借助其他工具，用户还可以査看应用层消息交互。并且，用 户可以编写脚本，以实现远程自动化操作，便于大规模生产测试使用。
+2.1.1硬件架构
+TD-LTE业务测试仪主要由终端业务测试仪本体(TD-LTE SS)和控制计算 机组成，如果需要双表级联以支持多小区，需要以交换机支持互联。硬件架构如 图2-1所示。
+
+图2-1 TD-LTE业务测试系统硬件架构
+下面将根据图2-1对硬件架构做简要介绍。
+控制计算机即为普通的Windows PC机，在控制计算机上运行系统管理软件、 TTCN-3可执行测试套软件和Log分析软件。
+终端业务测试仪本体的硬件架构⑵是基于PXKPCI extension for instrument） 总线设计的。按照模块功能划分为射频单元、基带处理单元、主控制器单元以及 GPIB控制卡几个模块，并且PXI总线背板由上述几个模块所共享。外部设备 如鼠标、键盘以及外接显示器连接到主控制器，射频单元上引出射频发射接收和 10ms时钟输出端口，基带处理单元上引出5ms时钟输出端口，GPIB控制卡上 引出GPIB接口。
+硬件架构中的下面几个模块需要重点介绍：
+基带处理单元：基带处理单元，简称BBU,包含数模/模数转换模块、FPGA 模块和DSP模块。数模/模数转换模块负责信号的数字模拟之间转换。DSP模块 的作用是运行底层协议栈，包括物理层和数据链路层软件。FPGA模块的作用有 三点：即提供中断，数据通路以及Trigger In/Out接口。上行链路中，模数转换 器收到射频信号后转换为数字信号，发送到FPGA进行取样，再转发到物理层, 一直往更高层协议栈转发。而下行链路则反之，高层协议栈将数据一层层传到物 理层（DSP）, DSP将数据转发给FPGA处理之后经模数转换器转换为模拟信号 发送。
+主控制器：驱动软件在主控上运行，驱动软件的作用是实现硬件自检、对射 频单元的控制、授权控制，同时数据转发也由其控制。
+射频单元：射频单元有三点作用：首先，对整个系统提供10MHz的时钟源； 其次，在下行线路中，接收基带处理单元发来的中频信号，上变频至射频，再通 过射频端口发送到终端；最后，在上行链路中，负责终端射频信号的采集，然后 下变频为基带信号，基带信号由LVDS线传到基带处理单元，基带处理单元再对 其进行一定处理。
+2.1.2软件架构
+运行在TD-LTE业务测试仪本体和控制计算机上的所有软件可分为四个模 块：TD-LTE SS软件、系统管理软件及Log分析软件和TTCN-3可执行测试套 软件，图2-2是TD-LTE业务测试系统的软件架构叫
+
+
+图2-2 TD-LTE业务测试系统软件架构 下面根据图2-2予以简要说明。
+1.TTCN-3可执行测试套
+TTCN-3可执行测试套软件有两部分构成：TTCN-3测试套和系统适配层 (SystemAdapter)o其中，TTCN-3测试套由测试例和测试套公共部分构成。
+TTCN-3测试套既可以是标准PCT测试套，由3GPP发布，也可以是用户自定义 测试套，但必须符合标准ASP。系统适配层需要研发人员自己实现。
+测试套均遵守3GPP协议规定，协议3GPPTS36.523-1规定了测试例的信令 流程、参数配置、初始条件、测试点等。协议3GPPTS36.523-3规定了测试套的 公共部分标准。TTCN-3文件讲过编译后生成C语言文件，将这些C文件与适配 层代码导入Visio Studio后编译链接生成可执行文件。
+适配层由以下几个模块组成：适配层控制模块，该模块作用是完成适配层初 始化、接口映射和测试例执行控制。原语编解码模块，该模块作用是将TTCN-3 格式与C语言格式的原语之间相互转换。原语发送模块和原语接收模块，负责 TTCN-3原语的发送和接收。TTCN-3 Timer适配模块，负责测试流程中的始终控 制。TTCN-3外部函数集，为TTCN-3申明的外部函数进行定义。Log模块，该 模块负责执行过程中的log打印输出到log管理软件。
+2)系统管理软件作为用户与仪表交互软件，有很友好的用户界面。系统管 理软件的作用是进行系统初始化操作，硬件管理(包括硬件自检等)。同时， TTCN-3可执行测试套、测试例的执行与结束和测试过程中产生的交互信息均由 该模块控制。系统管理软件与TD-LTESS之间的通信方式是socket通信，包括 控制命令、本端参数配置原语和TTCN-3测试例的空口信令(包括上行和下行)。
+3)Log分析软件的作用是输出各层产生的日志信息。包括物理层、数据链 路层以及高层logo其中运行在DSP上的物理层和数据链路层的log由通信接口 发送到控制计算机上的log分析软件。L3的控制信令本身就存在于控制计算机 上。Log分析软件能够显示物理层的比特流，数据链路层的码流和RRC层的信 令消息及其内部结构。
+4)TD-LTE SS软件即运行在终端协议分析仪本体上的软件集合。主要是运 行在DSP上的物理层和数据链路层协议栈软件，辅以通信接口软件和操作系统 提供的进程管理软件。系统开机后，TD-LTE SS始终处于运行状态，等待控制计 算机发送的原语进行相应的操作。
+通信接口软件负责TD-LTE系统模拟器(System Simulator)和控制计算机之 间的通信，其通信方式是socket通信。接收控制计算机发送到物理层和数据链路 层的控制指令和消息原语。并将DSP上软件的消息发送给控制计算机。并且通 信软件模块还可以设置射频参数如频点等。上文提到物理层和数据链路层的log 发送到控制计算机就是由通信接口模块负责的。
+2.2 Volte网络架构及关键技术
+2.2.1 VoLTE网络架构
+VbLTE （Voice overLTE）,实际上就是VoIP,在现有的VoLTE方案中，由 IMS （IP Multimedia Subsystem, IP多媒体子系统）作为业务的核心控制网络， 以EPS （Evolved Packet System,是LTE/EPC的合称）提供承载以实现端到端的 基于PS域的语音以及视频通信业务。同时，再配以PCC架构（Policy and charging control策略和计费控制，由于作为测试仪表的一部分，可以不考虑）实现计费策 略控制和用户业务QoS控制【4】。下面的图2-3是VoLTE业务系统的网络架构⑶：
+
+图2-3 VoLTE系统网络架构
+
+EPC （Evolved Packet Core,演进分组核心网络）的实体作为GPRS的演进， 最早出现在3GPP协议Release 8版本中。并且是完全面向分组域交换而设计的， 因此EPS （包括EPC和ENodeB）作用是在移动通信中提供连续的基于分组域的 数据服务。EPC中的功能实体包括一个控制层面的MME （Mobility Management Entity,移动性管理实体），两个用户层面的网关，即P-GW和S-GW。
+MME作为终端和核心网间信令交互的控制节点，执行NAS协议。其功能 包括：
+EPC的接入控制：鉴权控制，用户标识，信令加密，完整性保护等
+移动性管理：终端位置信息、业务持续性、安全性管理等
+会话管理层：会话的建立、维护、释放等
+切换管理：MME和S4-SGSN选择
+网关选择：P-GW和S-GW选择。
+S-GW （Serving Gateway ）,即服务网关，提供面向接入网的接口，系统给每 个终端在一个指定的时间一个S-GWo S-GW负责终端切换时的用户层面网关功能， 包括3GPP接入网之间和其他接入网之间的切换。在VoLTE网络中，S-GW有如下 功能：
+路由和数据转发，用户IP数据包发送。
+Inter-eNB切换锚点
+3GPP不同接入方式的锚点
+本地移动性管理实体
+P-GW （PDN Gateway, PDN网关）提供面向外部网络（包括互联网和IMS） 的接口，P-GW提供给终端IP网络的连接点，为终端分配IP地址，并且保证终 端的QoS。同时负责PCRF选择。
+IMS （IP Multimedia Subsystem, IP多媒体子系统）是一个专门控制IP分组 接入的控制模块。由于是基于与接入方式无关的SIP,所以符合移动网络向多种 接入、多类终端、多种应用都由统一的控制核心网控制的系统的发展方向。IMS 的核心部分主要是各种CSCF（Call Session Control Function,呼叫会话控制功能模 块），包括 S-CSCF （服务 CSCF）、I-CSCF （査询 CSCF）、P-CSCF （代理 CSCF） 回，本质上它们都是SIP服务器，处理SIP信令。
+HSS （Home Subscriber Server）存储所有用户描述信息，包括国际移动用户 识别码IMSLUE接入P-GW的地址信息、接入点名称（APN）、服务质量（QoS）、 移动台识别号码（MSISDN）等等。支持非3GPP网络。
+PCRF （Policy and Charging Rules Function?计费和策略规则功能）〔刀记录有 计费策略和规则，P-GW可以根据所提供的规则计费。并且可以将应用层数据转 换成3GPP标准格式的参数。
+2.2.2 SIP协议和SDP协议技术
+为支持VoLTE业务的实现，3GPP引入了多项新技术，例如AMR-WB编码 技术，该技术釆用16KHZ釆用，大大提升了语音的清新度和柔和性。RoHC健 壮性头报压缩技术降低了 IP头开销，提升了传输效率。SPS半持续调度可以减 少控制信道的资源开销和时延抖动等等。本文不一一介绍，只介绍SIP协议和 SDP协议技术。本文后续内容将持续用到该项技术。
+SIP （Session Initiation Protocol）协议是互联网行业标准组织IETF提出的， SIP是一个“工作于应用层的信令控制协议”㈣組该协议用于创建、修改和终 止一个或多个终端参与者的会话。这些会话既可以是IP电话，也可以是Internet 多媒体会议或者多媒体分发。会话的参与者可以通过网状单播（unicast）、组播 （multicast）或者混合组播和单播进行通信SIP协议是参考HTTP协议定义 的，适用于基于IP的网络，因此具有较强的互操作性，同时具有良好的可扩展 特性，如果需要，可以方便地增加定义到终端，以快速实现新功能，最后该协议还具有良好的开放性卩匸并且SIP协议还可以免费使用，所以3GPP使用SIP协 议实现VoLTE信令交互。
+前文提到，VoLTE网络架构的核心网中引入了 IMS,对VoLTE进行业务和信 令控制，移动性管理实体(MME)只是作为业务的承载体，IMS对业务的控制全 部通过SIP协议消息完成，因此必须掌握SIP协议技术。
+SIP可以按照发起方分为两类［⑵，分别是：
+请求消息：从客户端(Client)发到服务器(Server)的消息。
+响应消息：从服务器发送到客户端的消息。
+其中VoLTE常用的请求消息包括下列几种，如表2-1所示：
+表2-1 常用SIP请求消息表
+SIP消息	注释	　　　　定义文档
+INVITE	表示一个客户端主动发起或被邀请参加会话	　　　　RFC3261
+ACK	　　　确认客户已经收到一个INVITE请求的最终响应	　　　　RFC3261
+PRACK	临时确认，在最终确认之前先临时确认	　　　　RFC3262
+OPTIONS	终端查询服务器的能力	　　　　RFC3261
+CANCEL	取消所有正在处理中的请求	　　　　RFC3261
+REGISTER	　　　　向标题字段中的SIP服务器发起地址列表注册	　　　　RFC3261
+BYE	　　　　终端终止--个呼叫，可以由主叫或被叫方发起	　　　　RFC3261
+SUBSCRIBE	向服务器订阅某一个事件通知	　　　　RFC3265
+NOTIFY	向订阅者发送一个新的事件通知	　　　　RFC3265
+UPDATE	在没有修改对话状态的情况下修改会话	　　　　RFC3311
+PUBLISH	发布一个事件请求到服务器	　　　　RFC3903
+INFO	会话进行中发送一个会话消息，但并不修改会话状态	　　　　RFC6086
+REFER	请求收件人发出SIP请求	　　　　RFC3515
+MESSAGE	使用SIP协议传输即时消息	　　　　RFC3248
+
+与HTTP协议一样，响应消息以数字响应代码开头，并且所有SIP响应代码 都基于HTTP响应代码。
+SIP响应可以分成临时响应和最终响应：
+临时响应(1XX)：服务器用临时响应来指示请求处理进程，但是并不终结SIP 事务。
+最终响应(2XX, 3XX, 4XX, 5XX, 6XX)：服务器对客户端请求的最终 响应，并终止SIP事务。常用响应消息如下表2-2：
+表2-2 SIP响应消息类型表
+Ixx	进展响应	临时响应
+2xx	成功	最终响应
+3 xx	重定向错误	最终响应
+4xx	客户端错误	最终响应
+5xx	服务端错误	最终响应
+6xx	全局错误	最终响应
+
+SIP协议采用UTF-8字符集来进行编码的文本协议，消息格式很简单，简 单的说，SIP消息由起始行(请求行或者状态行)、消息头(Message Header)和 可选的消息体(Message body)构成向，Message Header从第二行开始每一行都 由“Tag :Value”格式组成，每一行描述一个属性，SDP协议同样由文本格式描述， 一个SDP消息可以包含很多行，每一行的格式也是“Type : Value”。
+1)SIP起始行
+SIP起始行很简单，只有两种形式：请求行和状态行。其中请求行出现在请 求消息的起始处，单独一行，请求行有如下格式，其中[]表示可选：
+Request-Line = Method + [] Request-URI + [] SIP-Version
+Method是必填项，SIP协议一共定义了六种Method,即REGISTER、 OPTIONS> INVITE, CANCEL. ACK 和 BYE。其中，REGISTER 用于注册请 求，INVITE. CANCEL和ACK用于建立会话，BYE用于结束会话。
+Request-URL为可选项，表示被请求用户地址，SIP协议规定Request-URL 不能被包含在内且不能出现空格或者控制符。
+SIP-Version是可选项，表示当前协议版本号。
+最后SIP起始行必须以换行键结束。
+状态行(Status-Line)出现在响应消息的起始处，请求行有如下格式，其中 □表示可选：
+Status-Line = SIP-Version [] Status-Code [] Reason-Phrase
+SIP-Version同请求行。
+Status-Code是状态码，由一个三位的十进制数表示，用于指示请求消息的 执行结果，例如200 OKo
+Reason-Phrase是一^原因短语，用于简单的解释上面的状态码的原因。同 样，响应行也必须以换行符结束。
+2)SIP消息头
+
+SIP消息头主要用来指明本消息是有由谁发起和由谁接收，经过多少跳转等 基本信息；
+在SIP消息中，有四种类型的头字段，即通用头(General Header)、请求头 (Request Header)> 响应头(Response Header)和实体头(Entity Header)四种 类型。下面仅介绍几种本文即将用到的通用头：
+Call-ID:代表该会话的唯一标示符。一次会话的所有SIP信令该值相同。
+From：请求和响应必须包含From通用头域，指示请求的发起者。
+To：指示请求的接收者。
+Via：用于记录一个请求传送的路径。
+Contact：指用户代理的实际地址，它可以提供一个给用户进一步通信的URI, 可出现INVITE、REGISTER和ACK请求以及响应消息Ixx、2xx、3xx和485 中［14］。
+Expires：消息内容活动的日期和时间。仅用于INVITE和REGISTER请求。
+CSeq:一次会话中每一条每一条请求的唯一编号，且按时间顺序严格递增， 在响应消息中，该值是它所响应的请求的CSeq号。
+Content-Type：实体头，用以指示接收者收到的消息体的媒体类型。
+Content-Length：实体头，表示有效载荷的大小，以字节为单位。
+Max-Forwards：适用于任何请求方式，用以限制前转请求的代理或者网关的 数目。
+3) SIP消息体
+SIP消息体主要用来描述本次会话具体实现方式，通过另一种协议来描述， 即SDP协议(Session Description Protocol,会话描述协议)。SDP协议分成 多行，每一行由<Type>=<Value>组成，其中Type只有一个小写字母。通常，SDP 消息由一个一个会话描述(Session-level)和零个或多个媒体描述(Media-level ) 组成，常见的SDP属性如下：
+会话描述类：
+▼=协议版本
+，=会话名称
+i=(可选)会话信息
+。=会话拥有者/创建者和会话标识符
+u=(可选)URI描述
+c=(可选)连接信息
+P=(可选)电话号码
+e=(可选)Email地址
+b=（任选）带宽信息
+z=（可选）时区调整
+k=（可选）密钥
+a=（可选）零个或者多个会话属性行
+媒体描述的格式为：
+m=媒体名和传送地址
+c=（可选）连接信息：如果己含于会话级描述则为任选项
+i=（可选）媒体名称
+b=（可选）带宽信息
+k=（可选）加密密钥
+a=（可选）零个或多个媒体属性行。
+本节我们研究了 SIP消息的分类和结构，下面两个表格是典型的SIP请求消 息和响应消息的格式：
+表2-3请求消息的典型格式
+请求名称，如INVITE	请求对象URI	协议版本
+Call~ID: Value
+Via: Value
+From: Value
+To: Value
+Cseq: Value
+Contact: Value
+Content-type: Value
+Content-length: Value
+Max-forward: Value
+White-space: Value
+SDP消息体
+表2-4响应消息的典型格式
+SIP协议版本	响应状态码
+Call-ID: Value
+Via: Value
+
+表2-4响应消息的典型格式（续上表）
+From: Value
+To: Value
+Cseq: Value
+Contact: Value
+Content-type: Value
+Content-length: Value
+Max-forward: Value
+Whi te-space: Value
+SDP消息体 上面两个表格中，第一行和最后一行分别为起始行和消息体，中间若干行是 消息头。
+本节对VoLTE新网络架构和新技术进行了研究，正是由于对原有网络的升 级和新技术新流程的引入，使得VoLTE测试具有必要性和紧迫性，并同时增加 了测试开发的困难性。
+2.3终端VoLTE测试平台
+结合现有TD-LTE平台以及VoLTE网络架构，作者所在团队其他成员对软 件架构进行了修改，添加了 IP_PTC,并对适配层和EUTRA_PTC模块进行了修 改。下面的图是增加了 VoLTE测试功能的系统模型，只对相对于原先系统增加 的部分进行简要介绍。
+VoLTE测试平台架构如图2-5所示四：
+
+
+图2-5 终端volte协议一致性测试平台模块各部件功能
+
+volte终端协议一致性测试用例的开发需要基于协议一致性功能模块开发。 包括测试例模块开发、接口模块开发和对底层协议栈模块参数配置。测试例模块 模拟V6LTE网络系统的相关高层协议栈完成终端测试例模块功能；同时，它控 制整个测试系统时间；通过各接口对底层协议栈各层进行参数配置、信令和数据 传输。架构大体分为三个部分,EUTRA_PTC模块、IP_PTC模块和适配层(System Adaptor)模块。
+1)EUTRA_PTC是TTCN-3测试例脚本，该模块模拟接入网和核心网的部 分功能，包括EUTRA小区和IMS模块，设计中将原本属于核心网的IMS集成 到该模块实现。在测试过程中，由该模块负责与小区进行信令交互和参数配置。
+2)IP_PTC是完全新增模块，其内部主要包括MUX/Filter模块、SIP消息编 解码模块(虚线中的不属于基本功能实体，暂时没有实现，包括VbLTE processor 模块、SRVCC processor 模块、RCS server 模块)。其中：
+终端发过来的IP数据经过MUX/Filter后由该模块按业务类型分类并转发到 相应模块(如图中的SIP Codec, RCS Server、SRVCC processor)分别处理。
+SIP编解码模块就是为了实现SIP格式消息和TTCN-3格式消息的相互转换, 分为SIP编码模块和SIP解码模块，其中上行过程中将终端发来的SIP消息解码 为TTCN-3消息，下行过程中将系统发出的TTCN-3脚本所携带的消息转换为 SIP消息。
+
+SRVCC processor的功能是当发生EUTRAN与WCDMA或者GSM之间的 切换时，负责在切换期间缓存分组域数据，并在切换完成后进行转发处理，以保 证通话业务的连续性。
+3）由图可知，适配层增加了三个子模块，分别是IP transmit模块、IP Sec 模块和DRB-MUX模块。各子模块功能如下：
+IP transmit负责IP包的转发，具体的说，上行过程中，将接收到的终端发出 的IP包转发给MUX/Filter作进一步处理。下行过程中，接收TTCN要发给终端 的消息，转发到DRB-MUX模块。
+IP Sec模块的功能是对收到的已加密的IP数据进行解密，对要发送的IP数 据进行加密。也就是进行IP security的封装与解封装。根据3GPP TS34.229协议 规定，IP Sec模块支持IKE （Internet Key Exchange,因特网密钥交换）协议、ESP （Encapsulating Security Payload,封装安全载荷）协议头处理以及传输模式的 AH （Authentication Header, 认证头）。
+DRB-MUX模块起着上行数据分发的作用。系统接收上行数据时，由该模块 检查路由配置信息，SIP消息将经过IP Sec、IP transmit模块被发往IP_PTC进行 处理，普通的RRC层的信令消息则直接发往EUTRA_PTC。
+介绍完各功能模块，下面简要描述一下消息的路径（只描述SIP消息）。上 行过程中，TD-LTE系统模拟器（SS）收到终端发送的上行消息后发到适配层 DRB-MUX, DRB-MUX将消息发到IP Sec模块进行解密，再转发到IP transmit 模块,该模块转发到MUX/Filter过滤后在SIP Codec模块进行SIP解码成TTCN-3 格式发送到EUTRA-PTCo EUTRA-PTC收到消息后，进行处理，将TTCN-3格 式消息发到SIP Codec编码成SIP消息格式，由MUX/Filter过滤，IP transmit转 发，再由IP Sec加密后由TD-LTE系统模拟器发送到终端。
+2.4 Volte测试例开发研究
+3GPP协议定义了 VoLTE的网络架构和协议流程，然而更为关键的实现方法 协议文本却并没有给出。因此为了便于后文展开，本节将研究测试例从协议文本 到成为最终产品的流程。本节首先将概述测试例从预研到最终验收所经过的阶段。 其次将具体研究基于TTCN-3的测试例的构造方法和过程。最后介绍一种测试例 的验证方法。本论文所研究的测试例都是基于以上步骤实现。
+2.4.1测试例的一般开发流程
+协议一致性测试用例的研发过程包括从协议文本的规定到最终满足商用需 求的产品室一个长期的过程，大致可以分为七个阶段［戚：
+
+1）	3GPP协议预研
+2）	测试例以及为满足测试例新功能对原有平台的升级开发代码编写
+3）	测试例和测试平台代码调试
+4）	测试例协议一致性核对
+5）	测试例首次交付
+6）	测试例及平台代码维护
+7）	测试例最终验收
+首先开发人员需要明确测试例需求，然后查找3GPP相关协议并进行预研。 明确为了实现测试例对平台功能的需求，例如本文为了实现VbLTE测试例需要 在原有平台添加IMS等功能模块。在LTE中，3GPP对系统有多项协议规定，例 如 3GPPTS 36.201、3GPPTS 36.211、3GPPTS 36.212、3GPPTS 36.213、3GPPTS 36.214 详细规定了物理层。3GPPTS36.32K 3GPPTS 36.322、3GPPTS 36.213 对数据链路层进行了详细规定。3GPPTS36.4XX定义了接口规范。3GPPTS 36.1XX定义了射频规范。3GPPTS 36.331定义了 RRC层框架流程等。3GPPTS 36.5XX定义了终端协议一致性测试规范IE。本文所研究的VbLTE系统架构及流 程定义域3GPP TS 34.229中。
+对需求进行确定后，接下来就是代码开发，为了实现测试例，可能需要对测 试平台进行修改，添加相关功能。测试平台和测试例代码开发完成后，进行协议 一致性核对，确认流程符合协议要求后进入调试阶段，使用一款主流终端跑通测 试例后就可以进行首次交付。再此基础上继续维护代码，调试到至少两款终端测 试成功后即可以提交TTCN-3 log申请GCF认证。此时，测试例开发就进入最终 验收环节。经过GCF认证后就可以上市。
+2.4.2 VoLTE测试例的构造过程及方法
+测试中分为白盒测试和黑盒测试。协议一致性测试不关注内部实现，因此是 黑盒测试的一种。协议一致性测试中，将测试系统（如测试仪表）和被测系统（如 终端）通过端口连接起来，测试系统向被测系统发出激励信号，接收被测系统的 反馈消息。测试系统收到反馈消息后根据协议与本地数据进行对比，判断该激励 的反馈是否通过，通过则执行下一条激励，如此直到测试例执行结束。测试例就 是这个测试过程的一个描述。如图2-6所示：
+
+M 激励 \
+测试系统 <	被测系统
+图2-6协议一致性测试模型
+在协议一致性测试中，从3GPP规范到开发出最终的可用的测试例和测试平 台过程复杂，需要深入研究测试内容。一般来说，成功的设计一个测试例大概有 这几个过程：首先，深入分析协议要求，提取出关键的测试点和测试过程中需要 重点关注的地方。其次，协议规定了必须执行的步骤，也规定了可选步骤，必须 准确把握测试例的核心点，设计良好的测试例是简单高效的。这样可以减少测试 过程中可能出现的漏洞。最后，协议对测试环境和相关配置都有所规定，必须准 确按照协议要求进行配置，否则可能因仪表问题使得终端无法通过测试。
+基于TTCN-3语言以及相关开发工具开发一个完整可用的测试例要经过以 下过程［1刀：
+首先，根据协议规定，定义测试相关的数据类型，主要包括消息的数据结构 和消息内部的信息元素的数据结构。
+其次，在测试例的执行过程中，需要构建相关的数据和消息，主要包括消息 模板和相关常量的定义，消息的初始化以及执行过程中的参数配置以及数据消息 和相应参数的一致性。
+再次，定义和创建相关的端口和测试套组件，包括各端口的定义以及执行的 操作，各组件的创建和中止，各组件之间的连接，各组件和抽象测试接口之间的 映射等等。
+最后，测试过程中的各种操作，包括消息数据的运算处理，例如加解密等过 程，各端口对数据的接收和发送，根据接收到的消息和数据进行判定测试点是否 通过以及据此生成下一条消息的过程。
+2.4.3测试例验证方法
+下面介绍一种简单的手动验证方法卩8］：
+1）	搭建验证环境。
+具体的验证环境，可参考本章第一节硬件平台部分。
+2）	编译测试例相关代码。
+首先，编译适配层代码，产生 ADPCTRL. dlb CODEC, dll. EXTFUNC. dlK LOGCTRL. dll等动态链接库。然后使用IBM Rational Tester编译TTCN-3测试例代码，产生相应的.C和.h文件。最后将上述动态链接库和所有的C文件导入 Framework I程，使用Visio Studio进行编译链接，产生最终的可执行文件。
+3）执行VoLTE测试例
+打开系统管理软件TS Manager,选择需要执行的可执行文件，新建测试计 划，命名并勾选所需要执行的测试例，例如TC_9_1,右键点击Run按钮，测试例 就进入执行阶段。下图是TS Manager的UI,如图所示，从TS Manager界面可
+以看到执行计划及测试例名称、MSC图、测试情况＞Output窗口以及Message Info
+窗口信息。如图2-7所示:
+
+图2-7 TS管理界面截图
+同时，由于需要解析SIP消息，所以还需要专门的抓IP包并解析软件，本 文使用Wireshark。Wireshark作为一款网络封包软件，具有操作简易、开源免费 等优点。下图2-8是Wireshark软件的用户界面。
+
+621 3?.07S62：Q'i92.168.0.1
+Status: ISO Ringing
+<t Destination: 14:cf:92:68:32:bc (I4:cf：92;68:33:bc?
+**' Source: 14：da:e9:e2:76：e5 (14:da：e9:e2：76;eS)
+ge： IP (0x0300)
+interaer Protocol. Src: 192.168. 100. 20 <192.16S. 100.20), D$x: 192,1^. 0.1 H92.168.(?. J)
+Trassalssltm Control Protocol. Src Port： sip (3060), Dst Port: 3221? (322I7>. SeQ： 1, Ack: 1500, Leni 706 Session Inftiatltsa Protocol
+
+
+图2-8 wireshark界面截图
+2.5本章小结
+本章作为论文的方法论基础，第一节概述了测试例运行平台，包羸硬件平台 和软件架构，对各模块功能进行了重点介绍。第二节研究了 volte网络架构和 新引进的支撑技术。第三节结合前两节介绍了作者所在开发团队为实现volte 测试对仪表软件模块的升级，简要说明了新增或修改部分模块，并概述了消息传 输路径。第四节介绍了测试例的一般开发周期，并重点分析了基于TTCN-3构造 测试例的方法和流程，最后介绍了测试例的直观验证方法。
+
+第三章volte终端业务测试用例的设计与实现
+3GPP根据VoLTE的不同使用场景和信令流程设计了一系列测试用例冋 則 PL本章将选取一系列典型测试例进行实现。通过分析测试例的协议流程、依 次确定每一个测试点的方式确定测试流程，并且在此基础上给出测试例的实现方 案。第一节实现每一个测试例的公共流程部分，即EUTRA注册过程四[23] [24] [25]、 IMS注册过程，其中EUTRA注册过程参考协议3GPP TS36.523-1实现，IMS注 册流程参考协议TS 34.229-1协议中注册成功测试例。第二节实现鉴权测试例， 通过发出一个错误的鉴权值使得终端鉴权失败无法完成注册。第三节实现语音被 叫测试例，即已注册IMS服务的终端在待机条件下接收系统寻呼到语音通话建 立到最后释放的一个过程。第四节实现视频主叫测试例，即待机条件下具备视频 通话软硬件条件的终端主动发起寻呼到呼叫建立到呼叫释放的过程。第五节实现 视频被叫测试例，即待机状态下的终端接收系统发起的视频寻呼到挂机的整个过 程。
+最后将对每一个测试例都给出基于TTCN-3的设计方案，并对TTCN-3实现 方案中的每一步关键函数都将给出简要描述。
+3.1volte测试例的通用过程的设计与实现
+VoLTE是属于业务层面的设计，其实现需要底层平台的支持，即支持VoLTE 的终端在发起VoLTE服务请求之前，首先需要通过一系列信令流程注册到 EUTRA小区，在TD-LTE业务测试仪中，同样需要考虑该过程的实现。本节将 概述该过程的设计与实现。
+VoLTE终端从开机到发起VoLTE会话需要经过LTE注册、IMS注册、会话 建立、会话释放这几个阶段。本节除了鉴权测试例以外所有测试例都要执行这四 个阶段，因此本节首先实现测试的LTE注册、IMS注册这两个公共过程。
+LTE的注册属于接入网功能，其流程参考协议3GPP TS36.523-1,并不涉及 IMS,但它却是实现VoLTE业务的准备工作，所以本节首先实现这一部分流程。
+3.1.1LTE接入层注册流程的实现
+前文提到，测试例执行过程中涉及到端口的映射，EUTRA_PTC中定义了部 分端口，主要包括空中信令端口和本端配置端口，空中信令端口，简称为空口， 负责发送消息和配置到终端。本端配置端口负责发送消息和配置到本地仪表底层, 通知其修改配置。
+空口端口主要指SRB （Signaling Radio Bearer,信令无线承载），在上行链路 中，SRB端口接收终端发送的SRB_COMMOM_IND类型的RRC层和非接入层 消息。如果接收的是非接入层消息，则要先经过NAS_EMU_PTC进行解密处理， 然后再传到EUTRA_PTC处理。在下行链路中，系统通过SRB端口发送 SRB_COMMON_REQ信令，同样的，如果发送的是非接入层消息，则需要先经 过NAS_EMU_PTC进行加密和完整性保护。
+本端配置端口主要包括DRV_A、SYS和SYSIND。其中DRV_A是驱动端 口，上行链路中，低层数据处理模块通过该端口将L3_DRV_A_IND发送到高层 协议栈实体，下行链路中，负责传输L3_DRV_A_REQ到数据处理模块，使得低 层配置按照RRC要求更新。SYS在上行链路中传输SYSTEM_CTRL_CNF到高 层协议栈实体以确认本端配置完成。下行链路中,高层协议栈通过该端口发送
+SYSTEM_CTRL_REQ通知低层更新配置。SYS只能用于上行链路中，低层模块 通过该端口传输SYSTEM_IND以指示低层状态。
+测试例接入层实现的流程以及部分TTCN-3代码如下图3-1所示:
+TD-LTE业务
+测试仪
+终端
+终端发起注册
+等待终端注册
+RRC CONNECTION REQUEST
+RRC CONNECTION SETUP
+RRC CONNECTION SETUP COMPLETE
+(携带NAS消息附着请求和PDN连接请求)
+-AUTHENTICATION REQUEST	? -AUTHENTICATION RESPONSE	 -SECURITY MODE COMMAND	? -SECURITY MODE COMPLETE	 ——接入层安全模式命令	? ——接入层安全模式完成
+RRC CONNECTION RECONFIGURATION SETUP-
+-RRC CONNECTION RECONFIGURATION COMPLETE-
+完成附着并且激活默认EPS承载-
+EUTRA注册完
+成终端注册
+触发终端发起
+VoLTE业务
+图3-1	接入层实现流程图
+
+测试例接入层实现包含两个过程，即EUTRA小区建立及激活过程和终端注 册过程。详细流程如下：
+1.EUTRA小区建立及激活过程
+小区建立及激活过程中主要是根据协议3GPPTS36.508初始化小区。首先调 用 TTCN-3 函数 CEUTRAJnit (),然后调用函数 fLEUTRA_CellConfig_Def () 实现SRB (信令无线承载)、DRB (Data Radio Bearer,数据无线承载)以及信 道的配置。该函数在实现过程中调用下面三个函数，分别为：
+f^EUTRA_SS_ConfigureActiveCell ()；
+CEUTRA_SS_DRB_DefConfig ();
+LEUTRA_SS_ConfigureSRBs ()；
+其中，函数CEUTRA_SS_ConfigureActiveCell ()实现协议栈中各层模块的初 始化配置，函数f_EUTRA_SS_DRB_DefConfig ()实现了 DRB (数据无线承载) 的配置，而SRB配置则由第三个函数f_EUTRA_SS_ConfigureSRBs ()实现。
+小区建立过程如下面的图3-2所示。
+
+
+图3-2 小区建立及激活流程图
+EUTRA注册流程的实现
+小区建立及激活完成之后，会通过空口发送广播消息。此时，手动或者使用
+AT+FUN指令打开终端，终端开机后会发起注册流程。整个过程的协议流程可以
+
+参考3GPPTS36.523-1,为了代码的可读性，测试例实现过程函数命名与协议一 致。如图3.1所示，EUTRA注册流程还可以分为三个阶段，即RRC连接建立过 程，NAS鉴权即非接入层安全模式和接入层安全模式，RRC连接重配置和附着 过程。分别由下面三个函数实现
+f_EUTRA_IdleUpdated_Stepl _4 ();
+f.EUTRA_IdleUpdated_Step5_l3 (); f_EUTRA_IdleUpdated_Stepl4_15 ();
+下面简要说明以上三个函数：
+首先，函数f_EUTRA_IdleUpdated_Stepl _4 ()负责执行终端注册流程中的 RRC连接建立过程。终端发出RRC连接请求消息到EUTRA_PTC,该消息由SRB 端口接收。此时EUTRA_PTC通过配置原语SYS_CTRL_REQ之后发送到本端， 该原语由SYS端口发送且包含本端的时间提前命令发送周期和上行授权。系统 通过SRB端口收到RRC连接建立请求后在该端口发送RRC连接建立消息。此 时系统将生成一条预期的终端发送的RRC连接建立完成消息，通过比较两条消 息是否匹配以确定是否进入下一测试阶段。函数f_EUTRA_IdleUpdated_Stepl _4 ()的流程如图3-3所示：
+
+
+
+开始
+SRB端口接收上行RRC连接请求
+配置本端UL Grant和TA
+，
+SRB端口发送RRC CONNECTION SETUP
+y	r
+接收RRC CONNECTION SETUP判断其携带的ATTACH 顼EQUEST与PDN CONNECTIVITY REQUEST是否匹配^
+
+RRC连接建立完成，等待进入下一测试阶
+段
+图3-3终端RRC连接建立流程图
+其次，注册流程中的非接入层鉴权、非接入层安全模式和接入层安全模式的 激活由函数CEUTRA_IdleUpdated_Step5_l3 ()实现。该函数的实现分为三个阶 段：
+首先是鉴权过程，在调用该函数是，系统和终端己完成RRC连接建立。小 区通过SRB端口发送鉴权请求消息，此时，按照协议终端收到后应当回复鉴权 响应消息。同样的，系统在SRB端口接收该消息。
+其次是非接入层安全模式激活，首先NAS消息安全模式命令经过加密后再 SRB端口发送到终端，SRB端口等待终端回复经加密的安全模式完成消息。正 确接收该消息标志着非接入层安全模式激活。
+
+最后是接入层安全模式激活，此时EUTRA.PTC经本端端口 SYS发送原语 SYS_CTRL_REQ到低层(L2 PDCP层)，收到低层回复确认后，将RRC层的安 全模式命令通过SRB端口发送给终端，当收到终端回复的安全模式完成时标志 着接入层安全模式成功激活。
+函数 CEUTRA_IdleUpdated_Step5_l3()流程如下图 3-4 所示：
+
+
+图 3-4 函数 f_EUTRA_ldleUpdated_Step5_13()流程图
+最后，函数f.EUTRA_IdleUpdated_Stepl4_l 5 ()实现了 RRC连接重配置和终 端附着。本端NAS_EMU_PTC模块生成附着接受(ATTACH ACCEPT)和激活 专用 EPS 承载上下文接受(ACTIVE DEFAULT EPS BEARERCONTEXT ACCEPT ) 消息，该消息由RRC层的RRC连接重配置消息所携带，并经SRB端口发送， 当系统正确接收到终端发回的RRC连接重配置完成后标志终端注册成功。
+函数 f_EUTRA_IdleUpdated_Stepl4_l5()具体实现如图 3-5 所示：
+
+
+图3-5终端注册函数流程图
+
+3.1.2 IMS注册流程的设计与实现
+终端注册到IMS过程可以参考协议3GPPTS34.229-1中注册成功的测试例流 程，由以下几个步骤构成：
+1)完成LTE接入网的注册之后，SS等待具有VoLTE功能的UE发起 RIGISTER注册请求。
+2)收到REGISTER请求后，SS回复一条401 Unauthorized,消息头由以下 部分分量构成：To, From, Via, Cseq, Content-Length, Security-header 和包含 AKAvl-MD5 鉴权质询的 WWW-Authentication 头。
+3)SS等待UE发送一个临时的安全联盟，并且通过这个安全联盟发送另 一条 REGISTER 请求。
+4)SS通过UE发送第二次的REGISTER请求所携带的安全联盟集合回复 200 OKo
+5)SS收到UE发送的SUBSCRIBE请求，该请求通过新建立的安全联盟 发送。
+6)SS回复SUBSCRIBE 一条有效的200 OK。消息头包括对SUBSCRIBE 消息回复的通用定义。
+7)SS发送到UE 一个初始的NOTIFY,包括请求URL消息头，消息体。 消息体中包含的XML中包含注册公众用户身份的完整信息。
+8)UE 回复 200 OKo
+下图3-6是测试例中IMS注册部分的实现流程如图3-6所示：
+
+
+图3-6 IMS注册流程实现过程
+3.2鉴权测试例的设计与实现
+鉴权测试例是为了测试UE发起注册请求后收到网侧回复无效之后所执行的 信令流程是否符合协议要求。本测试例来源于3GPPTS34.229-1的9.1节Invalid Behavior - MAC Parameter Invalid测试例。该测试例关键在于本端随机生成一个 key值发送给终端，使得鉴权算法失败，无法完成注册。
+
+3.2.1测试目的
+根据协议规定，鉴权测试例有如下两个目的：
+第一，验证当UE发送REGISTER请求之后，从网侧收到了一条401 (Unauthorized)回复，UE检测该身份验证质询的有效性，验证方式为比较本地 计算的XMAC和该质询的AUTN (authentication)部分的MAC参数是否匹配。
+第二，验证如果本地的XMAC和401 (Unauthorized)的AUTN部分的MAC 参数不匹配时UE是否有如下动作：
+A.UE回复另一条REGISTER给S-CSCF表明质询无效，并且这个接下的来 的REGISER请求不包含’abuts，和* response'授权头分量参数；
+B.继续发送一条新的REGISTER请求，在里面包含了新的Security-Client 头分量和相关地址，以及确认它所支持的安全机制、IPSec算法和参数；并且不 创建一个临时的安全关联。
+3.2.2初始条件
+初始时，UE包含任何ISIM和USIM应用或只有USIM的UICC应用,且还 没有注册的IMS服务，但是包含激活的PDP上下文，并且UE已经发现SS并通 过一系列步骤联系上P-CSCFo
+SS配置了 IMSAKA算法的共享密钥，与UE上装配的UICC卡的IMS私有 用户身份(IMPI)相关联。SS可以对该IMPI执行AKAV1-MD5认证算法(TS 33.203)。无论TCP,还是UDP协议，SS监听SIP默认端口 5060。
+3.2.3测试步骤
+测试步骤如下：
+1)UE已经初始化了 IMS注册，SS等待UE发起REGISTER请求。
+2)SS 收到 REGISTER 请求之后回复一条 401 Unauthorized?
+3)SS等待UE发送第二次注册请求，该请求表明SS回复的401 Unauthorized 无效。
+4)SS收到第二条REGISTER之后继续回复401 Unauthorized□
+5)SS等待UE发送第二次注册请求，该请求表面SS回复的401 Unauthorized 无效。注：从此点之后SS忽略该UE的任何注册请求。
+6)SS发送一条403 Forbidden到该UE使得该UE在测试例结束后处于稳 定状态。
+详细的信令流程及测试点如下面的表3-1所示。
+
+表3-1 鉴权测试例详细信令流程
+步骤	方向	信令	注释	测试点
+1	上行	REGISTER	UE请求IMS服务	　　　测试点1
+2	下行	401 Unauthorized	　　SS回复无效的
+MAC值，以表明 无效的
+AKAvl-MD5 身份 质询
+3	上行	REGISTER	该消息不包含 "abuts”和 "response” 授权 头分量参数，即没 有质询回复	测试点2
+4	下行	401 Unauthorized	　　　同步骤2
+5	上行	REGISTER	　　　同步骤3	测试点3
+6	下行	403 Forbidden	从此UE处于稳定 状态（即不再发送
+IMS注册请求）
+3.2.4测试例的TTCN-3实现
+
+为了和3GPP保持一致，将测试例命名为“TC_9_1 ”,在MTC上定义VoLTE 鉴权测试例时,激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模拟TD-LTE 小区接入网和核心网的IMS、IP部分的测试主体，以下为这一过程的TTCN-3 实现代码：
+testcase TC_9_1() runs on MTC_IMS system SYSTEMJMS {
+// Invalid Behavior- MAC Parameter Invalid
+var IMS_PTC v_IMSl := null;
+var IMS_PTC v_IMS2 := null;
+timer tGuardTimer := int2float(300);
+v IMSl := IMS PTC.create alive;
+f.MTC_IMS_CreateMapAndConnectPTCs_EUTRA(v_IMSl, v_IMS2); v_IMS 1 .start(f_TC_9_l_IMS());
+t_GuardTimer.start;
+
+JMTC_IMS_MainLoop(t_GuardTimer);
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC，测试例开始执行时，首先通过 EUTRA_PTC接入核心网，通过IP_PTC转发到IMS_PTC,最后由IMS_PTC负 责与UE进行信令交互。各测试成分之间的关系如下图3-7所示：
+
+图3-7 各PTC之间关系
+
+作为鉴权测试例的主体函数，CTC_9_1_IMS()内部实现比较复杂，仅选取几 个关键函数说明内部执行情况，下面是LTC_9_1_IMS()函数内部几组比较重要 的步骤，测试例中所有消息配置如无特殊声明则参考3GPPTS 34.229-1 o
+第一组是本端的一些配置：
+flGeneratelnvalidNonce(macError); f_IMS_CC_StartSignalling(IPCAN_InitialRegistration);
+v_DigestResponseContainingAuts := (cr_GenericParam("auts", ?),*};
+首先函数fl_Generate!nvalidNonce ()设置一个随机的mac值，该值将会在测 试例执行过程中发给终端，终端通过比较该值与终端本地计算的xmac值(协议 要求两者不匹配)。函数f_IMS_CC_StartSignalling ()启动信令流程，IPCAN初 始化注册。按照协议 TS34.229-1 对参数 v DigestResponseContainingAuts 配置 "auts"。
+第二组函数表示测试例开始处理SS接收终端发起的REGISTER请求：
+
+f.IMS_REGISTER_InitialRequestO； OMS_RoutingInfb_ULtoDL(v_IMS_DAIA_REQ.RoutmgInfo); f_IMS_Register_SecurityInit(v_RegisterReq);
+f^IMS_Register_GetSecurityClientParams(v_RegisterReq);
+其中函数口MS_REGISTER_InitialRequest()初始化对 REGISTER 的回复的 消息。JIMS_RoutingInfo_ULtoDL ()从参数中上行请求的路由信息赋值到下行消 息的路由信息中。函数LIMS_Register_SecurityInit()初始化安全保护。函数 口 MS_Register_GetSecurityClientParams()从参数注册请求中获取客户端的安全 保护参数。
+第三组函数对应信令流程的第二部到第六步，具体如下：
+nMS_REGISTER_RequestWithSpecificAuth(v_CallId,cr_Authorization_9_l); activate(a_IgnoreFurtherRegistration());
+fl_CheckSecurityClientParams(v_SecurityClientParamsList, vRegisterReq);
+IMS_Server.send(cas_IMS_DATA_RSP(v_RoutingInfd_DL, csResponse (c_statusLine403, f_IMS_RegisterResponse_403_MessageHeaderTX (v_RegisterReq))));
+其中，函数 MMS_REGISTER_RequestWithSpecificAuth ()按照协议要求配 置“auth”参数，函数activate。使得SS不再接收该终端的REGISTER请求， IMS_Server.send()通知 IMS 服务器发送 403 Forbidden 消息。
+第四组函数是测试例结束操作的函数，每一个测试例结束时都需要调用，具 体如下：
+OMS_TestBody_Set(false); f.IMS_CC_Postamble(IPCAN_MO_VideoCall);
+其中函数JIMS_TestBody_Set()根据参数false结束测试例，测试例开始时根 据参数true开始测试，函数JIMS_CC_Postamble()测试例结束过后的通用释放过 程，参数IPCAN_MO_VideoCall表示业务类型。
+第五组函数是打印log,因为要申请GCF认证，不但要将测试例跑通，还要 提交TTCN logo另一方面，log在调试过程中也起着很大作用。具体如下：
+&_OutputTTCNLog(LogClass_Note," <— 401 Unauthorized ", (});
+其中，LogClass_Note 表示打印的 txt 文件，"<---401 UnauthorizedM 表示 SIP 消息类型。后续测试例流程同样会调用该函数，不表。
+鉴权测试例的实现流程如图3-8所示：
+
+
+
+图3-8签权测试例实现流程
+
+3.3语音被叫测试例的设计与实现
+语音被叫是volte应用中最基础最典型的使用场景，该测试例模拟用户在 待机状态从接收其他终端呼叫到最后挂机的整个过程，本测试例来源于3GPP TS34.229-1 的 12.13 节的 MTMTSI speech call。
+
+3.3.1测试目的
+测试例的流程是UE使用IMS多媒体通话时接收到网侧的语音呼叫。测试 目的如下：
+1)验证当SS发起语音会话并且需要备用资源时，UE和SS是否能执行正 确的SIP信令交互。
+2)验证UE的SIP信令中是否包含了正确的SIP头和参数内容。
+3 )验证在SIP信令交互过程中UE是否正确的交换SDP内容。
+4)验证UE能否正确挂机。
+3.3.2初始条件
+初始时,UE应当包含ISIM和USIM应用或者只包含USIM关于UICC的应 用，并且UE己经发现P-CSCF且己经注册到IMS服务。
+SS配置了与UE上的UICC上配置的IMS私有用户身份(IMPI)相关联的 IMS AKA算法的共享秘钥。SS已经完成AKAV1-MD5验证并且接收注册(IMS 安全)。
+3.3.3测试步骤
+测试步骤如下：
+1)SS 发送 SIP 消息 INVITE 至 UE。
+2)SS收到终端发送的100 Trying (可选)。
+3)SS 收到终端发送的 183 Session Progresso
+4)SS 发送 PRACK 到 UE 确认已收到上一条 183 Session Progress。
+5)SS收到UE对上一条PRACK的回复200 OK。
+6)SS发送一条UPDATE到UE,包含确认服务端符合先决条件的SDP。
+7)SS收到UE发送的200 OK,并且包含适当的SDP。
+8 )	SS 收到 UE 的 180 Ringing=
+9)SS发送PRACK到UE以确认收到180 Ringing。
+10)SS收到200 OK作为对PRACK的回复。
+11)SS收到UE发出的200 0K作为对INVITE的响应。
+12)SS 发送 ACK。
+13)SS 发送 BYE 到 UE。
+14)SS收到200 OK确认挂机。
+下面的表3-2是详细的信令流程设计以及测试点的标注：
+表3-2语音被叫测试例详细信令流程
+步骤	　　方向	信令	注释	测试点
+1	　　下行	INVITE	SS发送INVITE作为第一 条SDP邀请
+2	　　上行	100 Trying	UE回复一条临时响应
+（可选）
+3	　　上行	183 Session Progress	UE回复的SDP消息中包 含对SDP邀请的回复	　测试点1
+4	　　下行	PRACK	SS确认收到183 Session
+Progress
+5	　　上行	200 OK	UE对PRACK的回复	　测试点2
+6	　　下行	UPDATE	SS发送UPDATE消息中 包含SS指示保留资源
+7	　　上行	200 OK	UE确认UPDATE,且该 消息中包含其当前先决 条件状态的回复	　测试点3
+8	　　上行	180 Ringing	UE对INVITE的回复（可 选）
+9	　　下行	PRACK	如果UE发送的180
+Ringing 包含 1 OOrel 可选 标签，则SS回复PRACK
+10	　　上行	200 OK	UE对PRACK的响应（可 选）
+11	　　上行	200 OK	UE对INVITE的最终响
+应	　测试点4
+12	　　下行	ACK	SS对最终的200OK的确 认
+会话已经建立
+13	　　　下行	BYE	SS发送结束通话
+14	　　　上行	200 OK	终端回复结束通话	　测试点5
+
+3.3.4测试例的TTCN-3实现
+为了和3GPP保持一致，将测试例命名为“TC_12_13”，在MTC上定义 VbLTE鉴权测试例时，激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模 拟TD-LTE小区的接入网和核心网的IMS、IP部分的测试主体，以下为这一过 程的TTCN-3实现代码：
+testcase TC_12_13() runs on MTC IMS system SYSTEM IMS (
+// MTMTSI Speech call
+var IMS_PTC v_IMSl := null;
+var IMS_PTC v_IMS2 := null;
+timer tGuardTimer := int2float (300 );
+v_IMSl := IMS PTC.create alive; f_MTC_IMS_CreateMapAndConnectPTCs_EUTRA ( v_IMSl, v_IMS2); v_IMSl.start ( f_TC_12_13_IMS ());
+tGuardTimer.start;
+f_MTC_IMS_MainLoop( t_GuardTimer );
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC,设置时间阈值。测试例开始执 行时，首先通过EUTRA_PTC接入核心网，通过IP_PTC转发值IMS_PTC,,最 后由IMS_PTC负责与UE进行信令交互。各测试成分之间的关系如上一节图。 该测试例的主体函数f.TC_12_13_IMS()实现细节比较复杂，仅按功能分组简述： 第一组是参数初始化配置函数：
+f.IMS_CC_Preamble (IPCAN_SpeechCall, IMS_REGISTERED );
+JIMS_TestBody_Set (true );
+MMS_CC_StartCall ( IPCAN_MT_SpeechCall );
+其中，函数JIMS_CC_Preamble ()进行初始化通用设置，两个参数分别表 示语音通话和终端己注册。函数f_IMS_TestBody_Set ()设置测试状态，true表示 开始。函数JIMS_CC_StartCaU()表示开始通话,参数表示通话方式为语音通话。
+第二组是根据测试例流程执行发送INVITE到接收183 Session Progress的过 程。具体如下：
+f.IMS_MTCallSetup_AnnexCl 1_INVITE ();
+f_IMS_MTCallSetup_AnnexCl l_Stepsl_3 (v_InviteRequestWithSdp ); f_MessageHeader_GetContactSipUrl (v_SessionInProgress 183 .msgHeader);
+38
+其中，函数 JIMS_MTCallSetup_AnnexC 11_INVITE ()配置 INVITE 消息， 函数 f_IMS_MTCallSetup_AnnexCll_Stepsl_3 ()执行发送 INVITE 到接收 183 Session Progress 的过程，函数 f^MessageHeaderGetContactS ipUrl ()从 183 Session Progress的消息头中获取接收方的URL。
+第三组是测试例第四步到最后挂机的全部过程，具体如下： f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MT_SpeechCall); f^IMS MTCallSetup AnnexC 11 _Steps4_ 12 (v_InviteRequestWithSdp, v_SessionInProgressl83);
+LDelay(3.0);
+f^IMS_CallReleaseMT(v_InviteRequestWithSdp.Invite,vContactUrl); fJMS_CC_Postamble(IPCAN_MT_SpeechCall);
+其中，函数 JIMS_CC_TriggerDedicatedBearerActivation()触发 IPCAN 激活 第二条PDP±下文建立专用EPS承载，函数
+f_IMS_MTCallSetup_AnnexC 11 _Steps4_l2 ()执行从接收到 183 Session Progress 到通话建立完成的所有信令流程，通话时间设置为3.0秒，之后由函数 f_IMS_CallReleaseMT()释放语音被叫通话流程。测试例运行完成，调用函数 f_IMS_TestBody_Set (),参数为false表示结束测试。最后调用函数 fLIMS_CC_Postamble()执行测试例结束的通用流程，参数IPCAN_MT_SpeechCall 表示要结束的通话方式。
+语音被叫测试例的实现流程如图3-9所示：
+
+
+3.4视频主叫测试例的设计与实现
+volte不仅使得语音通话的体验更好，更重要的是引入了继语音、短信之后 新的运营商底层支持的多媒体通信方式，即视频通话。因此视频通话是V6LTE 最有代表性的功能，针对该功能的终端测试显得尤为重要，本节和下面一节分别 实现视频主叫和视频被叫测试例。其中，视频主叫测试例由3GPPTS34.229-1的 12.22节的MO MTSI Video call所定义。该测试例模拟用户主动发起视频通话请 求到正常通话再到最终顺利挂机的整个流程。
+3.4.1测试目的
+本测试例测试目的如下：
+1)	验证当发起视频主叫时,UE能否正确执行发起会话的SIP协议信令交换。
+2)验证在SIP信令内部，UE是否正确执行SDP消息交互，这些SDP消息 是为了协商媒体和指示预留资源的先决条件的。
+3)验证UE是否可以正确结束视频会话。
+3.4.2初始条件
+UE可以包含SIM应用、ISIM应用和USIM应用，或者只包含USIM关于 UICC的应用。并且UE经过一系列步骤已经驻留到EUTRA小区，且已发现 P-CSCF并已经注册到IMS服务。
+SS配置了与UE上的UICC ±配置的IMS私有用户身份(IMPI)相关联的 IMS AKA算法的共享秘钥。SS己经完成AKAV1-MD5验证并且接受注册(IMS 安全)。
+3.4.3测试步骤
+测试步骤如下：
+I)UE发起视频寻呼，该会话呼叫配置在SS上的px_CalleeUri分量，根据 UE的支持情况可以是SIP地址或者是电话号码，并且该分量可能包含拨 号串指示全球的、本地的、地理上本地的电话号码。SS等待UE发送包 含首条SDP邀请的INVITE请求。
+2 )	UE发送INVITE请求到SS。
+3)SS对UE请求回复一条100Tryingo
+4)SS接下来继续回复一条183 Session Progresso
+5)SS等待UE发送PRACK请求，该请求中可能包含第二条SDP邀请。
+6)SS 回复 PRACK 以 200 OK。
+7)SS等待UE发送UPDATE请求，该请求包含最后一次SDP邀请。
+8)SS 回复 UPDATE 以 200 OK。
+9)SS 回复 INVITE 以 180 Ringing。
+10)SS等待UE发送PRACK请求。
+II)SS 回复 PRACK 一条 200 OKo
+12)SS 回复 INVITE —条 200 OKo
+13)SS等待UE发送针对200 OK的ACK。
+14)UE 发送 BYE。
+15)SS接收到BYE回复200 OK。
+下面的表格是详细的信令流程设计以及测试点的标注：
+
+表3-3视频主叫测试例详细信令流程
+步骤	　方向	信令	注释	测试点
+1		UE准备发起IMS视 频呼叫
+2	上行	INVITE	INVITE中包含第一 条SDP邀请	　　测试点1
+3	下行	100 Trying	　SS发送临时回复
+4	下行	183 Session Progress	　SS发送SDP回复
+5	上行	PRACK	UE确认收到183 Session Progress,女口 果专用EPS承载己 经建立，则包含第二 次SDP邀请	　　测试点2
+6	下行	200 OK	SS发送200 OK回复
+第二条SDP邀请
+7	上行	UPDATE	如果专用EPS承载 已经建立，UE发送 第二次SDP邀请（可 选）
+8	下行	200 OK	　　　回复上一条
+UPDATE （回复）
+9	　下行	180 Ringing	SS 发送 180 Ringing
+10	上行	PRACK	　UE确认收到180
+Ringing	　　测试点3
+11	　下行	200 OK	　　　回复PRACK
+12	　下行	200 OK	　　　回复INVITE
+13	上行	ACK	　UE 确认 200 OK	　　测试点4
+14	上行	BYE	　UE发送挂机请求	　　测试点5
+15	　下行	200 OK	回复BYE
+
+3.4.4测试例的TTCN-3实现
+为了和3GPP保持一致，将测试例命名为“TC_12_21”，在MTC上定义
+VoLTE鉴权测试例时，激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模拟TD-LTE小区的接入网和核心网的IMS、IP部分的测试主体，以下为这一过 程的TTCN-3实现代码：
+testcase TC_12_21() runs on MTC IMS system SYSTEM IMS (
+// @purpose
+// MO MTSI Video call
+var IMS PTC v_IMSl := null;
+var IMS_PTC v_IMS2 := null;
+timer t GuardTimer := int2float(300);
+vJMSl := IMS PTC.create alive;
+LMTCJMS_CreateMapAndConnectPTCs_EUTRA(v_IMS 1, v_IMS2);
+vJMS l.start(CTC_12_21JMS());
+t_GuardTimer.start;
+f_MTC_IMS_MainLoop(t_GuardTimer);
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC,设置时间阈值。测试例开始执 行时，首先通过EUTRA_PTC接入核心网，通过IP_PTC转发值IMS_PTC,最 后由IMS_PTC负责与UE进行信令交互。各测试成分之间的关系如3.2节图。 fLTC_12_21_IMS()是视频主叫测试例的主体函数，内部流程以函数方式简要描述。
+第一组函数执行测试例流程的初始化到专用承载的建立，具体如下： f_IMS_CC_StartCall(IPCAN_MO_VideoCall);
+LIMS_MOCallSetup_Video_Step2(C25); f^IMS_MOCallSetup_Video_Step3_4(C25, v lnviteRequestWithSdp); f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MOVideoCall);
+其中函数 fJMS_CC_StartCall(IPCAN_MO_VideoCal 1)初始化以及开启 MO 或者MT通话，函数nMS_MOCallSetup_Video_Step2()发起视频主叫的信令的 第二步，其中实参C25表示该参数按照3GPP TS34.229-1 Annex C.25的INVITE 消息定义的，函数 fJMS_MOCallSetup_Video_Step3_4()按照 3GPP TS34.229-1 Annex C.25 来配置 183 Session Progress (实参 v_InviteRequestWithSdp)的消息。 f_IMS_CC_TriggerDedicatedBearerActivation()触发 IPCAN 激活第二个 PDP 上下 文并建立专用承载。
+第二组函数从建立专用EPS承载到测试例结束。具体如下： f_IMS_MOCallSetup_AnnexC25_Steps5_13(v_InviteRequestWithSdp,v_Messa geHeader_Response 183);
+
+
+OMS_CallReleaseMO(v_InviteRequest);
+其中，函数 f_IMS_MOCallSetup_AnnexC25_Steps5_l 3 ()执行测试例的第五 步接收上行的ACK,且所有消息参数参考3GPPTS34.229-1 Annex C.25,即从专 用EPS承载建立到会话建立完成，函数口MS_CallReleaseMO()处理终端发起的 挂机请求。同样，在这些函数执行完成之后还会执行上一节所列举的函数 JIMS_TestBody_Set,参数为fhlse,再执行测试例结束通用流程函数，参数为 IPCAN_MO_VideoCall。
+下面的图3-10是视频主叫测试例的执行流程：
+
+
+
+图3-10视频主叫测试例实现流程
+
+3.5视频被叫测试例的设计与实现
+视频被叫测试例来源于3GPP TS34.229-1第12.23节定义的MT MTSI Video call测试例，该测试例模拟待机状态下的终端收到视频寻呼请求到顺利视频通话 并正常挂机的整个流程。
+3.5.1测试目的
+本测试例测试目的如下：
+1)验证当SS发起视频呼叫并且需要保留资源时，UE能否正确执行SIP信 令流程。
+2)验证在SIP信令内部，UE是否正确交互SIP头和参数内容。
+3)验证在SIP信令内部，UE是否能正确交互SDP消息内容。
+4)验证UE能否正确挂机。
+3.5.2初始条件
+UE可以包含SIM应用、ISIM应用和USIM应用，或者只包含USIM关于 UICC的应用。并且UE经过一系列步骤已经驻留到EUTRA小区，且已发现 P-CSCF并已经注册到IMS服务。
+SS配置了与UE上的UICC上配置的IMS私有用户身份(IMPI)相关联的 IMSAKA算法的共享秘钥。SS已经完成AKAV1-MD5验证并且接收注册(IMS 安全)。
+3.5.3测试步骤
+测试步骤如下：
+1)SS发送INVITE请求到UE o
+2)SS收到UE发送的100 Tryingo (可选)
+3)SS 收到 UE 发送 183 Session Progress?
+4)SS 发送 PRACK 到 UE 确认收到 183 Session Progress?
+5)SS收到UE发送的200 OK-
+6)SS发送UPDATE到UE,该消息中包含指示服务端满足的先决条件的SDP。
+7)SS收到UE发送的200 OK,包含适当的SDP回复。
+8)SS 收到 UE 发送的 180 Ringingo
+9)SS 发送对 180 Ringing 的回复 PRACK。
+10)SS收到UE对INVITE的最终响应200 OK。
+
+11）	SS发送200 0K的回复ACK。
+12）	SS发送BYE通知挂机。
+13）	SS 收到 200 OKo
+下面的表3-3是信令的详细流程和测试点的注释：
+表3-3视频主叫测试例详细信令流程
+步骤	　　方向	　　　　信令	注释	测试点
+1	下行	INVITE	在INVITE中包含第 一条SDP邀请
+2	　　上行	100 Trying	终端回复临时响应
+3	　　上行	Session Progress	终端回复183 Session Progress 中 携带SDP回复	　　测试点1
+4	下行	PRACK	　　SS确认收到183
+Session Progress
+5	上行	200 OK	　　UE 收到 PRACK	　　测试点2
+6	　　下行	UPDATE	该UPDATE中包含 指示保留资源的
+SDP消息
+7	　　上行	200 OK	UE发送200 OK包 含了当前先决条件 的状态的SDP	　　测试点3
+8	　　上行	180 Ringing	UE对INVITE的响 应（可选）
+9	　　下行	PRACK	SS 对 180 Ringing 确 认（可选）
+10	　　上行	200 OK	　　确认收到PRACK
+11	上行	200 OK	回复INVITE	　　测试点4
+12	　　下行	ACK	　　SS 确认 200 OK
+13	　　下行	BYE	挂机请求
+14	　　上行	200 OK	挂机确认，通话结 束。	　　测试点5
+
+3.5.4测试例的TTCN-3实现
+为了和3GPP保持一致，将测试例命名为“TC_12_22”，在MTC上定义 VoLTE鉴权测试例时，激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模 拟TD-LTE小区的接入网和核心网的IMS、IP部分的测试主体，以下为这一过 程的TTCN-3实现代码：
+testcase TC_12_22() runs on MTC IMS system SYSTEMJMS (
+// @purpose
+// MT MTSI Video call
+var IMS_PTC v_IMSl := null;
+var IMS PTC v_IMS2 := null;
+timer t GuardTimer := int2float(300);
+v_IMSl IMS_PTC.create alive;
+LMTC_IMS_CreateMapAndConnectPTCs_EUTRA(v_IMS 1, vJMS2); vJMS 1 .start(fLTC_l 2_22_IMS());
+t_GuardTimer, start;
+f_MTC_IMS_MainLoop(t_GuardTimer);
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC,并设置等待时间阈值。测试例 开始执行时，首先通过EUTRA_PTC接入核心网，通过IP_PTC转发值IMS_PTC,, 最后由IMS_PTC负责与UE进行信令交互。各测试成分之间的关系如4.2节图。
+代码中的f!TC_12_22_IMS()是测试例的主体函数，测试例的开始阶段和结 束阶段所执行的流程同视频主叫测试例，部分参数略有不同，本节不再详述。下 面是本测试例不同于其他测试例的部分：
+第一组函数函数如下：
+f^IMS_MTCallSetup_Video_Receivel83(C26, v_InviteRequestWithSdp,
+v FmtAudio, v_FmtVideo); f^MessageHeader_GetContactSipUrl(v_SessionInProgressl83.msgHeader);
+JIMS_MTCallSetup_AnnexC26_Steps5_13(v_InviteRequestWithSdp, v_FmtAudio, v_FmtVideo, v SessionlnProgressl 83, v_SDP_MessageStep4);
+f^IMS_CaHReleaseMT(v_InviteRequest, v_ContactUrl)；
+其中，函数 f_IMS_MTCallSetup_Video_Receivel83()接收上行的 183 Session Progress,函数 f_MessageHeader_GetContactSipUrl ()从参数的消息头中提取 URL 信息。f_IMS_MTCallSetup_AnnexC26_Steps5_l3()执行协议规定的第 5 步到第
+
+13步，即从SS发宋PRACK到发送对200 OK的ACK完成呼叫建立的过程。与 函数 f_IMS_CallReleaseMO()不同，函数 fJMS_CallReleaseMT()多携带一个参 数 v_ContactUrl,该参数就是函数 JMessageHeader_GetContactSipUrl()的返回值。 以上过程执行完成之后在执行通用的测试例结束函数，同于视频主叫测试例所描 述，只是部分参数略有不同。
+下面的图3-11是视频被叫测试例的执行流程：
+
+图3-11视频被叫测试例实现流程
+
+3.6本章小结
+本章根据3GPPTS34.229-1协议(接入层流程由3GPP TS36.523-1规定)对 VoLTE测试例进行了分析，从所有VoLTE测试例中提取出公共部分，并且对其 进行了一一实现，其中：第一节实现了 VoLTE测试例的公共部分，包括EUTRA 注册和IMS注册的实现；其中EUTRA注册过程参考协议3GPPTS36.523实现， IMS注册流程参考协议TS 34.229-1中注册成功测试例。第二节实现了鉴权测试 例，通过发出一个错误的鉴权值使得终端鉴权失败无法完成注册。第三节实现了语音被叫测试例，即已注册IMS服务的终端在待机条件下接收系统寻呼到语音 通话建立到最后释放的一个过程。第四节实现了视频主叫测试例，即待机条件下 具备视频通话软硬件条件的终端主动发起寻呼到呼叫建立到呼叫释放的过程。第 五节实现了视频被叫测试例，即待机状态下的终端接收系统发起的视频寻呼到挂 机的整个过程。在此基础上给出了基于TTCN-3语言及相关工具进行了编码实现, 并且对每一个测试例的每一步流程的关键函数都进行了简要描述。
+
+第四章volte终端业务测试用例的验证与分析
+本章将依据第三章给出的方法对测试例进行验证。第一节验证VbLTE测试 例的通用流程部分，即终端能否驻留EUTRA小区并注册到IMS服务。第二节 至第五节给出本文所实现的所有测试例的各测试点消息内容的详细验证。第六节 给出所有测试例的自动化测试结果。第七节将列举一些调试过程中出现的问题及 解决方法。
+4.1测试例通用部分的验证
+为了验证测试例的LTE注册和IMS注册部分，可以釆用3GPPTS 34.229-1 中8.1节的注册成功测试例进行测试，本文中对此不作详细描述。下面的图4-1
+是TC_8_1测试例的wireshark截图:
+
+
+
+图4-1 测试例通用部分信令图
+4.2鉴权测试例的验证与分析
+测试例执行结果如下所述：首先终端发送REGISTER (Cseq： 1068384109) 请求，SS回复一条失败的响应401 Unauthorized (Cseq： 1068384109),按照协 议规定，此时UE应当再上一条REGISTER (Cseq： 1068384110),表明上一条 401 Unauthorized (Cseq： 1068384109)是无效的，401 Unauthorized (Cseq： 1068384109)和第二条 REGISTER (Cseq： 1068384110)如图 4-2 和图 4-3 所示：
+
+
+HTC_9J_PAS5.pcapng - Wineshark
+&e Edit yiew Go ￡apt?re finafyic Statistics Tel^jhcnj JooU Help
+.i ’ E^xessicn... Clear Apply
+
+.raaeter ： viaco
+.raseter: -sip.instance=*<urn:gsaa:iaei:35344006-OS7326~0>*
+Authorixation: Digest response3**, cpaq[ue=*5ccc069c403ei>af9f017ie9547f4Ce4I*, 8iscriths=AKAvl-Jfi)5, csonce= *4259609565", nc=OOOOOOCi. nonce=*c94J5bTY*MM?JkpAePG- JVd2 .tion Schese: Digest cs069c-403ebaf9f017ie95i；f 4：0?41*
+AKAV1-H&5
+:S98G9565*
+H
+M'?；Y*^fcj!Ae?S<;jVd24^bEbK(iTXCDxkc3gY5A?， ss. ssicOQl. eccOOI. 3§ppsetTGrk. erg*
+?. ?nc001. ?cc001. 3gppnetwork. erg”
+001010J334567S9CiE=. sracOOl. eccOOI. 3gppnetifork. Gra" ?000
+
+
+
+图 4-3 REGISTER (Cseq： 1068384110)消息结构图
+通过比较两条消息的Security-Server分量和Security-Client分量可知鉴权失 败，因此测试点1通过。
+当UE第二次收到401 Unauthorized (Cseq： 1068384110)消息之后会尝试 发起第三条REGISTER (Cseq： 1068384111),消息结构与上一条REGISTER相 同，测试点2通过，如图4-4所示。
+
+g|HTC_9.1_PASS.pat{wig ? W^eshart:
+卽 l&t X So	浦条-Teiepbc^ 1奶 g
+酸* ?巔赣窺儀解彩愁 R傘略尊警瑟緩鬚豉贅敷髪確縫啜％ 爨
+
+
+-Internet Protocol, Src： 1?2. iS4.0^ 1 (192. C. i 1, Dsi : 133.195.256.7S U38^ 195. 216.75)
+-TranmUston Control Fjwtecci, Src Pert： 5$3U (3231S), ￡>sx Pon： $ip <5060). Sea： 4560, AcXc U33, ten： 262
+湿[Reasswbled TCP Segments(1650 bytes>:心SOtGSSS}, ?li502<362)j
+■ Session Initiation Fr?t?.ci
+競 Request-Line: REGISTER sip: i?5. sdcOQUbccOOI. 3<ppntftwork. ?rg SIP'2. 0
+!S Message Header
+-f ： <slp:00i010123456789eiH3. BncOOl. accOOl. 3fppnet?ork. cr<>: tag=?42S961-4029
+?' t: <*lp: 001010123456*8^185. atncOOl. ?ce001. 3fppnet*?rk. or<>
+> CSeq: 1068384111 REGISIEX
+i: 42896093a；_175413S16?l92. 168.0. 1
+? v: 5IP/2. O/ICP 192. 168.0. i:5060.branch=z9?>4bK2279€?0789
+Max-Fonrards： ?0
+n； <sip:0010i0123456789<192. 16S. 0.1 ：3060> .-g. 3gpp. tc?i-ref?*urn%3Aurn-7MA3?jp-jervlce. ins. ic<i. s?tel，;-Fg. ss3ip;audle; video.	1 ns t anc e - *z srn: g.s
+1 . A
+[truncated] Authorization: Digest re 5pcn.se= * *. opaque= *5c c c069c 4O3ebaf 9f 0171 e95! 7 f 40e41 *. algoritha=AKAvl-)?5. cn?.nce= *4289609565", nc=00000003, nonce="o945? Expires: 600000
+Reouire:
+Prox尸Require： ?ec-afree
+k： path, sec-agree
+Allow: WHS. BYE. CAJiCSL, ACK. WUFY, URMTB, MUCK. IXFQ, MESSAGE. OHlOfS
+'truncated； Security-Client： ipsee-Sspp a：g?hBac-Bc5-9fe ealg=dej-^de3-cb<. epi-c=43343605；. @。3-舛306：36398. port-c=83S9. port-s?8915, ipaec-3spp. ?!(
+图 4~4 第三条 RESISTER (Cseq： 1068384111)消息结构图
+最后SS向UE发送403 Forbidden (Cseq： 1068384111),标志着测试结束,
+下面图4-5是测试结果的TS Manager软件截图，表明测试例已经pass。
+图4-5测试例通过界面截图
+4.3语音被叫测试例的验证与分析
+语音被叫测试例执行结果如下所述:
+
+
+在本测试例的第一个测试点之前，首先SS发送第一条INVITE(Cseq：4711) 到UE,标志着测试例流程开始，如下图4-6所示。
+HTC.J2. J	- Wireshafk
+6!e E廨	$>pture	Tocis 負
+駁峯春編猴遊爲鷺辭蹑"、辭蠟喩簽携！絃嬴感纹鹼愚繊臟擊滤族
+Max-For?ards： 6?
+P-€alJ?4-?ssjrty-lD:^3ip:001CWlSS456iS9€iss. wicOOl. ssecSOh Sgppnetwrk. crg>
+Record-Route;<sip: -92. 1§S. iOS. 20:3062： lr>, <sip:terjs?$c5cfi. 3?pp. arg;Ir \ <21p：orlglSacscf2.3gsyp. srg: lr>, <sip:pcscf2. $跡,erg: lr>
+Sujgr* 味 lOOrel. precondition
+? Jo:<sij>:GSlQl0123^36789?ias. meOQl. isccMl, 3gpf>network. org>
+密云xh心tt&C Vi?：Sl?Z2.0/UF 192. J6S. IGO. 20:3052;brancfe=T9feG4bK34567890J2, SIP/S.	sesef 1. 3gj>i>. crg:branch=z9^4b￡45€7B90i33, SIF/2. 0/C3F scxef2. 3?pp.
+& Mtssa^e Socy
+图 4-6 INVITE (Cseq： 4711)消息结构
+根据SIP协议规定，INVITE的From字段表面发起寻呼的是sip： PeerUE-Public@stfl60.etsi.org:6543 所在 IP 地址为 192.168.0.1,邀请对象是 sip： 0010101234567890@ims.mnc001 .mccOO 1.3gppnetwork.org,所在 IP 地址为 192.168.100.20o
+在测试点 1 处，SS 收到一条发自 UE 的 183 Session Progress (Cseq： 4711), 该消息的Cseq (4711)值等于INVITE (Cseq： 4711)的Cseq值，同时，该消 息的SIP部分包含了通信双方的IP地址和对INVITE中包含的SDP的SDP回复。 测试点1通过。如图4-7所示：
+x Status-Line: SI? 2.0 IS3 Session Prsxress
+ST*xu?-Codtf： 1B3 ;Resent Packet:
+-Mexsag* Header
+C?U~ID： ：XV1	IdO-*7fe5-&0a0c91 efebf68192. ￡68. 100. 2C
+Cantact: <ssi3>:001G10>23456~89<i92. ifi8. 0. * :8919z :??g. Sxpp. lcsi-s-?f?',arji%3A<ira-7%3A3xpj>-3es'vlce. iats. icsi-video 猝 Cont?￡t-Ggr： *is>:??iCHOi2345e?89?192. 165. Q. i:8919
+Contact paraseter;	3?pp. ScsWefas^tirst^SAurn-T^SASsEp^-service. las. icssi.
+Contact par?B38eter：
+Cutset parasseter ：
+C?nteat~￡en<th: 4iS
+Cenieat-Tyj>?：々關 心”g's?5p
+洲 CSea： 47X1 m'XTE
+?ro?-. \sip：?e?rVH-Fiufelleftstf XSO. etsi. arg'; tag=abc-INV1 T￡-Fr??stm
+Recora-JtouTe: ；.stp：iS2.. ISS. 100. 20:5062; 2r>. <sip：ters?scscf2. Sgpp. ?r?, ir>, <.5ip:orig?5€scf2. 3g?p. ovg：lr>, zsip:pcscf2. SjrsJ>> or?. Ir>
+& Io: ；sip:G010xe：S34587S9Si?s. wicOOi. Btcc&Ol. Sgppnetwork. org> , ts?*S3O2S47
+也 ftruncstedj Via^ SlP/2. O/VUF 193. JSS. iOO. 20:SG62;branch=x9hG4bK345S7S50i2. S1F/3.0： ^￡>P sesefi. 3sp?. ars.branch=zShG^b^SfeTa^SZS, SiF '2. Q/CDP scscfZ. 3gpp. RSeq: 1
+P-Access~??ex?orli:-Inf8： 3CPP-E-CTRAK-TDO; utr<Mj-cell-id-3gpj>?OOiOiOOO：(X}OOtGO
+Require: ：00rel. cr?ceM4tt<a?
+
+
+@ 4-7 183 Session Progress (Cseq： 4711)消息结构图
+
+SS 发送 PRACK (Cseq： 4712)后收到 UE 发送的 200 OK (Cseq： 4712), 如下图4-8所示，该消息的Cseq值与PRACK的Cseq值相等，于是测试点2通 过。
+37,078627000 19?.155.0 i 192J63.10070 SIP SutuS. 200 OK	-OX
+?Ethernet II, $rc:	旺4:6s:由：姪;76；e5)>	：4;加：貝；7：汪：寿5 (14：da：e9；e2;
+?leternet Pretocdl. Srct 152.168,0.1 <192,1^.0.1),龄t : m. S68.10C.20 092. t6S. 100.26)
+1 Encapsulating Security Paylead
+, Vs*r Daturas Protocol, Src Fort; 8214	Pert； na-Xocaiise (5053)
+-Session laitiaii^n Prototol
+关 Statua-Lise: SIP. 0 200 OK
+Status-Code: 200
+[Resent Packet: False：
+t； Message Header
+Cali-ID: INVH￡-0-7dec-ll??-a765-OQaOc95e6bf64192.168.100.20
+Coatent-Length: 0
+说 CSetj: 4712 PRACK
+? Frc?: <sip:PeerfE-Public?STfI60. etfi. ort>；tajr?abc-I5?vnE-Fr<?tat
+?* To： <?ip:0010i0123456'?89ftlBS. ancOO：. bccOOJ. S?ppnetwork. cr<>. tar?S302847
+■?- :truncated： VU： SIP/2.0<'CDP l$2.163- 100.20:5062 :brftnth?z9hG4bK89012345S7, SIP 2. O/UDP sesefi. 3<pp. ors.branch??9bC4bK9012345e?8, S1P/2.0/UDP tCKf2. 3<pr>. or
+P-Acces?-Net?oric-lnfo： 3GPP-B-VTRA?<-TDO. utran~ceH-id-3gpp><0O!0l000iO0O0100
+k: lOOrei
+Kllov: INVITO. ACK, CWCEL. BYE. VTOAH. FRACK. MESSAGE. REFZK NOTIR. INFO
+图4-8 UE发送的200 OK (Cseq： 4712)消息结构
+接下来，SS发送UPDATE (Cseq： 4713)到UE后应当收到来自UE的回 复200 OK (Cseq： 4713),如下图4-9所示，可以看到，该条200 OK (Cseq： 4713)包含SDP消息，这是与上一条200 OK (Cseq： 4712)不同的地方。标志 测试点3通过。
+% State?-line: SIP>2.0 200 OK
+Status-Code: 200
+[Resent Packet: False]
+”	Header
+CaU-ID: IJAfn￡-O-7dec-UdO-a765-00*0e9Xe6bf6?192. 168. 100.20
+? Costaet: <510：0019101234367896^93. ：68- 0. 1:8919'；-j. 3gpp. ￡csl-refM*om^3Attrn-?%3S3f^>-servlc?. las. icxi. sat^l* ;aud J?;vldeo
+Content-lenxth: 396
+Ccatent-Type: applicatlca- sdp
+"Sg: 4713 UFDAiZ
+Frc?: <sip：FeerVE-Fublictst f 160. etsl. org). taf?abc~IXVII2-Fr?Bt?8
+*, To: <jip：OOlO10S334S67S9?im. ancOOl. ?cc00；.誕ppnevror虹 ar?' :tsgs830Z34?
+* ? truncated] V<a： SIP/2. O^UDP 192. JS9.100. 20:3062 :hr<?nch??9hC4bKS； 63432109, SIF/3.0/U&P scscfl. 3<pp. erc，br&nch?s9htC4bK765432J098, SI? 2.0/Uff sc sc f 2.3?>p. ?-Aecess-Xct?crit-Info: 3GPP-C-UTRAN-TDD; Vtra?-cen-id-3sy5=0010i0a0i0000i00 Require: precondition k： lOOrel
+Al lo?： 1NVHS. ACK. CANCEL. BYE, VPJ?TE, PSACK. MESS"礼	KOTIFV, INFS
+<"Message Body
+Session Description Protocol
+DescrJulios, nacse and stress (?>: a?d￡<? 50010 RTP/AVF §7 Inf?raati?n fb): AS: 29
+&?nd?idth Infsrsation (b)t RS:9
+图4-9 UE发送的200 OK (Cseq： 4713)消息结构
+由于180 Ringing是可选信令,不属于测试点，直接接收UE发送的200 OK, 如下图 4-10 所示，200 OK (Cseq： 4711)的 Cseq值等于 INVITE (Cseq： 4711) 的Cseq值，测试点4通过。
+
+
+Status-Code: 200
+[Resent Packet: False]
+臨岫海萨Header
+CaU-ID: INVITB-O-7dec-il(i0~a765-0Qa0c33e6bf6ei92. !63.100. 20
+C?>nteat-Lensth: 0
+宓 CSeq： 4711 INVIlg
+箋 Fra?: <3ip:PeerUE-Public?stf 160. etsi. axg); Tagsabc-IWIIE-Froatag
+Recoed-Rcute: <slp:192. 16S. 100.20:5062; lr>, <slp: tersfiscscf 1. 3s)p. erg; lr>, <slp:origttsc3cf2. 3gpp. org: 1 r>, <sip:pcscf2. 3gpp. org;lr>
+￡ 7g: <slp:OOi010l23456789fiiHS. BtntOOZ. secOOl. Sjppnetvca'k. org> ;rag=S3O2S47
+￡ L-rancated] Via: SIP/2.0/liDP 192. 16S. 100. 20:5062;；5ra3cfe=z9hG4bK3456789013, S17/2. O/UDF scscfl. 3gpp. org: branch=?9hG4bK4567890123, SIP/2.0.-UDP scscf2. Sgpp. or；
+P-Access-Net?ork-Isfo: SGFP-E-umS-T3D: urran-cell-id-3gpp=001010001000i3100
+? a: <sip：0010101234587894i92. 168.0.1;8519>: *g. 3gpp. lcsi-ref="urn%3Aurn-7%3A3?pp-service. i&￡. icsi. aEEte;*: audio, video
+k: iOOre1
+Al JXVZTE, ACK, CANCEL, BYE. UPDATE, PHACK, MESSAGE. R￡F￡F, IXFO
+图4-10 UE对INVITE的最终响应200 OK (Cseq： 4711)消息结构
+SS将回复UE的200 OK (Cseq： 4714)以ACK,然后SS紧接着再发送BYE 请求挂机，按照分析，此时SS应当收到UE回复200 OKo如下图4-11所示， 200 OK消息Cseq字段值为4714 BYE,表示该消息响应的是BYE (Cseq值为 4714),测试点5通过,整个测试例TC_12_13 pass。
+Status-Cade: 20G
+[Resest Packet: False]
+噎 Message Header
+Call-IB: I*MIS-^-7dee-ll^-a7S5~0Ga0c91e6bfggl92.1S8. IGO. 20
+C?aieat-le?Sth： Q
+險游g: 4724 Brg
+'? Frs?： <sip:?eerV￡-rsablic€stfl60. etsi. srg>;tag=:3fec-3N^'I7Z~?r?stas
+滋 Io; <3ip:061020-2343€~89^iffis. sncOCi.sccGOi. 3gs>pnet?Grk. cr?>: 188=8302347
+滋：tr仪VSa: S5：?/2. 0/U3P 192. 168. :SO. SOiSOSSibrasch^Sh&ibKaTfe^SSOOS, S1F/2.0/VSP scscf L 3?pp. arg;bra?ch=29JsG4bK-&5432009S! SXP/'S. 0/U5P &c$zt2. Sjpp. or
+F~A?cess-Xetw?rk-Is.f?>: 3gPP-E~um?J-I?X); snvan-NllTd?■舞p戶QOmsgHgXH?
+图4-11 UE发送的200 OK (Cseq： 4714)消息结构图
+图是TS Manager软件截图如图4-12所示：
+
+图 4-12 测试例 TC_12_13 pass 图
+4.4视频主叫测试例的验证与分析
+视频主叫测试例的执行结果如下:
+进入测试状态后，UE应当发出会话请求，此时SS将收到UE发送的第一条
+INVITE (Cseq： 815695452),并且携带SDP请求，测试点1通过，如图4-13
+所示:
+
+*Request-Line: 1KMI5 tel: 1234. phone-coatextaiaa. ancOOl. ssccDOi. 3<ppnet?art cat 5IP/2,0
+?Header
+Mestag? Body
+-Session Dtfscris?tlon Protccol
+Session Description Protocol Version <v); 0
+Omer^Creator, Sessioa Id S): ro 0)^002 003\<?4 005'006'.a a\0<?\301?7_\27-J^255\032\346Pl
+图 4-13 UE 发出的 INVITE (Cseq： 815695452)消息结构
+接下来 SS 连续发送两条 100 TryingCCseq: 815695452)和 183 Progress Session (Cseq： 815695452)o 终端收到后应当发送 PRACK (Cseq： 815695453),其中 可以携带SDP消息体(可选)，本例中没有携带。测试点2通过，如下图4-14 所示：
+
+
+图 4-14 UE 发送.PRACK (Cseq： 815695453)消息结构
+收到 PRACK (Cseq： 815695453)后，SS 发送 200 OK (Cseq： 815695453) 确认，由于下一条UPDATE请求是可选项，所以不作为测试点，以UE对180
+Ringing (Cseq： 815695452)的确认后发送的 PRACK (Cseq： 815695455)作为
+测试点3,下图4-15表示测试点3通过:
+(weshaiieptapng - Wireshark
+Jfew Qo ￡?p?ur? finaiyze	T?*?phor^ TooH 村？
+警峯峯。銀愈終落辭彩'、争畛餐岑薫签齢馈& ■蹲鞏徳嚟参急
+
+
+
+
+
+
+
+Prsxy-Re<iuire: sec-agree
+图4-15 UE回复的PRACK消息结构图
+接下来SS将连续发送两条最终响应200 OK,分别回复PRACK (Cseq： 815695455)和初始的 INVITE (Cseq： 815695452),针对后面一条回复 INVITE (Cseq： 815695452)的 200 OK (Cseq： 815695452),按照协议规定，UE 应当 发送 ACK (Cseq： 815695452)以确定收到 200 OK (Cseq： 815695452)。测试 点4通过，表示视频通话已经建立，如下图4-16所示：
+
+! Vser OstagrajB Protocol, Src Fort; S006 (SC06?, Dst Pert: na-iocaiise (5062)
+:t! Request-Line: ACK sip:User-B-Contact^gpp.org S1P/2.0 由 ifessa^e Beader
+Call-ID: 1839437276_175373236?192. 168.0. 1
+Cootenx-Lenftht 0
+竈 CSeq: 835695452 ACK
+総 Frc?: <sip:00l010]23456789OlB￡. rnicOOl. accOOl. dfppnetvork. or<>.taj-1889437285 Hax-Farwards: 70
+'贏 lot <tel:1334;j^ione-context=iB3.nncOOl. bccOOI. Ssppnetwort. org>. taraabc-INVnE~Tota?
+蛍 vu： SIP/2. 0/UK9 192.168. 0.1; 8903: braneh=z9h?bK4250941463
+Route: <sip：138.195.216. 75:5062:lr>, <slp：Qrirdscfcf. 3gpp. org;lr>, <sip：scccf. other.cos;lr>,<?lp;pc?cf.other.c?s：ir> Require: sec-agree
+Proxr-ReQuire： sec-agree
+图4-16 UE确认收到200 OK的ACK (Cseq： 815695452)消息结构
+最后，由UE发起挂机请求，系统收到BYE (Cseq： 815695456),通话结束。
+如图4-17所示:
+
+
+图4-17 SS收到UE会话结束请求BYE (Cseq： 815695456)消息结构
+自此，所有测试点均通过，测试例TS_12_21 pass,下图4-18是TS_Manager 软件结果截图：
+
+
+^StorPoint T S Managef
+fife J<??5 tfetp	淬5；扑 f，,:
+
+图4-18 TS Manager软件运行结果
+4.5视频被叫测试例的验证与分析
+视频被叫测试例执行结果如下所述:
+在本测试例的第一个测试点之前，首先SS发送第一条INVITE(Cseq：4711) 到UE,标志着测试例流程开始，按照协议，应当收到连续两条100 Trying和183 Session Progress,并且Cseq值均为4711,由于100 Trying是可选信令，因此以 183 SessionProgress如下图4-19所示，测试点1通过。
+函?2.32?5teih8rit.i>capflg -孕膈$^砒	— 13 X
+杉拓	GpJwe	Statistics	Jcolt
+鶴潔參餾巔 為做翼,a -溢峰囑警盘 袤耳 我做欢愆；情密整芯 霧
+他為把虹5 沖心i	，5鄭.e g
+
+图 4-19 183 Session Progress (Cseq： 4711)消息结构图
+当 SS 发出 PRACK (Cseq： 4712)以确认收到 183 Session Progress (Cseq：
+4711)之后，根据协议，此时UE将发送200 OK(Cseq： 4712)作为PRACKCCseq：
+4712)的响应。测试点2通过，如下图4-20所示:
+鶴?2.22wire?h?rk.pc?{?ng ■ Wififshark
+￡關必Qa Gpture finaiyte JtaSstics T熟Jpals
+Source
+2098 34.6576740192.16S. 0.1	138.195.216.75	SIP, SCFStaxus: 183 Session Progress, with session description
+3261 36.2903030138.195.216. 75	192. 168.0. 1	SI? gMt, FRACS sip：0010l0l23456789tl92, 168.0. l；8904
+, Fraae 2268. 774 byte# on ?￡re (6192 bits). 774 byte captured (6192 bits)
+、Ethernet II. Src： 60：a4：4c：b4：5J：5e f60：a4:4c：b4：5】：5e? Dst： 60 a?：4c：b4：51：5e (€C：a4:4c：b4:51;5e)
+? Internet Protoeol. Src: 192.168. 0.1 (192. 163.0. D. &?t： i38. 195.216. 75 <138. 195.216. 75)
+? Encap.ulatiai： Security Payload
+十 User Datajrika Protocol. Src Port: http-alt (3008b Dst Port: na-locallse (5062) Sesaiofi Initlatioo Protocol
+* Status-Line: SIP 2.0 200 OK
+-■ Message Header
+CaII-10: IN￥ire-0-7dec-ndO-A?65-OOaOc9le6bf6tl38. 1?5. 216. 75
+Content-Leagth： 0
+* CSeq: 4712 PRACK
+Pros： <sip：PeerUE-Pvbl IctsxflSO. etsl. otg>. ta<=abc-INVITE-Froata?
+To: <tip:O0iO10123456*8991BS. bhcOOJ. accOCl. 3<ppnetwoxk. orj>. tag?：3S9618194
+? [truncated； Via： SIP/2.0 UK* 138. 195.216. T5：5062;branch?z9hG4bK89Ol234567, SIP- 2. O VDP scscfl. 3?pp- org:branch?s9hG4bK9013345678, S1P/2.0- WF jc?cf2. 3?pp. or P-Accei*-Network-Info: 3GP?-E-UTRAN-T1?; utran-cell-ld-Sjpp-OOlOlOCOlOOOOlOO
+k: lOOrel
+AUcnr: 1NV1T2, ACK, CANCEL, BYE, UPDATE, PRACK, MESSAGE. R￡FER. NOTIFY, INFO
+图 4-20 200 OK (Cseq： 4712)消息结构
+SS发送包含指示保留资源的SDP消息体的UPDATE (Cseq： 4713)之后,
+根据协议规定，应当收到UE发送的200 OK (Cseq： 4713),测试点3通过。如
+图4-21所示:
+Q 狼	- Vrtreshark
+￡3*	加 Capture ^naiyse $tat>?ucs	looh
+PwocoJ info
+, ?raj?e 229St 3W brtes oo wire (2480 bits), 310 b^tea cspturttd (2480 bits)
+-Ethernet II, Src： G0:a4:4c:b4；51 ;5e(6O.a4；4c:b4:51:5e-, Ost： 60;a4:-4c:lH：5l;5e <fi0；a4；4c:M:52:5e：-
+, Internet Protocol, Src; 192.163.0.1 G9Z !68.0.1), Ost： 136.195.216.：5 (138.195.^16.75)
+-砒 Security PayZsd
+■Vser Data<r? fn>tocol, Src Port： http-alt ￡8008〉，Ost Port: n?-localise <5062)
+■Session Initiation Protocol
+簽 Status-Line: SIP<-2.0 200 W
+# Message Header
+C&li-IB: Wm-O-76ec-lld<y-a7€5-(X)aQcSle6bf6Sli>8. i%S. 216. 75
+￡ C?Rtact: <sip:00101G1234567S9€192. J6S. 0.1 ；8904 ':-*g. 3gpp. icsi~ref-',vTi^3fLwm-7,^3styp~3ervict. Ibj. icsi.jaBTei*;?udlo: video
+C?Ktent-lei<th: 771
+Cofttent-Iype； application/sdp
+i CSeq: 4753 vmtE
+■* Fr<?: "-sipiFeerUS-Publlctstf 1^0. ets?. org'. tag=ab<-IN￥IT￡-Fro?tsg
+* Io： <sip:00iOlO1234567B9tias- aacOOi. ?c<001,3gppn?t??rSu crg>::ag=i5S96181&?
+Itruncatedj Via： SIF/2. O- VD? J33. 195. 216. ；5：5062;branci3==29hC4bKS?&54S2109, SlP-iO UD? scscfl. 38PP- org.hr?ic??=z9hG4bK7654321098I SIP/2.0 UDP scscf2. 3<j>p. or ?-Acc?5s-NetTOrk-Info: ^P?-E-UTRAN-IS?; utran-c€ll-dd-3gpp=0010i00010000100
+Require: precondition
+k： iQQrcl
+AHw: mm. ACK, CANCEL. BYg, ITOAT2, PRACfL MESSAC2,蘇汗爲 XOIIFY, INFO
+-Message Es>dy						 ..... _	―...…
+图 4-21 200 OK (Cseq： 4713)消息结构
+由于接下来三条信令作为可选的，不作为测试点，测试点4是UE回复初始
+的INVITE (Cseq： 4711)的200 OK (Cseq： 4711),标志着会话建立完成，如
+图4-22所示，测试点4通过。
+
+?<? 3 垫《w So Opture ^uiiyK gUtitiic* Teiephot^ look fcjeip
+'￡ Fr啊：<sip:Peerl^E-Fal? 1 icfstf 160. etsi. srg>:t?^=abc~lS￥n￡~Fr?stas
+Record-Route: <sip:J3S. i95.216.73:5862;lr>, <sip:ters^acS€f1. 3gpp.era,lr>? isip:crig€scscf3. 3gpp. erg:ir>. <sip：pcscf2. 3gpp. erg;lr>
+斂 To: ^sip:OO10lCi23456789?iffis. ancQOl. acc(M51. Sgjjpnet^rk. erx ;iag= 15896181^4
+燃 LtrE?cateiil YU: SIP/2.0/U&P 138.195. 216, ?5:5062;braach=z9hG4bKS456759ai2, SIF/2. Q/VOP scscf i. 3gpp. crg.branch-sSb^bK^SSTSSO^S, SIF-2.scscfS. 3gpp. sr ?-Ai：cess-Hftt?ork-l3fox 鴻涔m澈XT源S. tttrft8-cen~Sd-3spp?<X>SO10QOiOCKX>10O k： lOGrel
+图 4-22 200 OK (Cseq： 4711)消息结构
+在本测试例中，挂机请求由主叫方发起，在测试仪表中也就是又SS发起,
+根据协议，SS 发送 BYE (Cseq： 4714), UE 回复 200 OK (Cseq： 4714),通话 结束完成。测试点5通过，如图4-23所示：
+?222w?reshaffcpcap?§ - ^resha^	—OX
+
+
+
+‘ ?r?ae 2652；鈴4 byte? on 哦"(5552 bits). 694 bytes captsired <5552 biu)
+?t cttoet II. Src; S0;a4;4c;b4:3i:5e ^；a4^c:b<J；Sl:5e), Sst;夠怂4:松，梅澎如如 f6?：a4;4e:b4;51:5^
+-Internet Prot&csi. Srct 152.168. Q. I {192.168,0.0, Dst; 133.195,216. 75 <138.195.21€.75)
+￡ EscajssulatiM Secsrhr PaylsatJ
+? 我"r Dsstagraa 每々wca幻 Src Fart: htt^-alx <80087, Ost Perri na-l&c?li$e {以防2，
+?■?■耘弟InltUtlon ?rt>tot.?4
+滋 Statws'Line： S1F 2.0 20? 燃
+? Message Header
+Cai>ID： I?n-n2-0~7dec-li€0-a765'00a<k§ie€bmias, 195.216. 75
+Coftt?nt-Lengxh: 0
+題C弘Q： 4：U彫
+安 Frt?: <sip:?eerVg-Fubli€?stf!60. etsi. ci-g>;tag8abc-IXVirE-RriMfilag
+宅 Tot <Sip23456<83?las.砌c(XH. ?cc081.3gppn<t?crk? ?rg>;女a铲：飾96^8294
+* (truncated； VU： 3IP/2. 0-5JO? 133. 195. 2X6. 75;50?2;hranch?29hG4bK8r^5432009, SIP/2.0/W 女就￡云耘润j. 3rg：brmc汲於hG熟辭654泣姗&处P，2 位滋泠 scscf2.3<pp. ?r
+F-Access-Xexwrk-Info: 3GPP-E-UTRAN-m； sstran-celi-14-3fpp=00-0190010000100
+图 4-23 200 OK (Cseq： 4714)消息结构
+至此，所有测试点通过，视频被叫测试例pass。如图4-24所示:
+
+
+
+图4-24 测试例TC_12_22通过界面裁图
+4.6测试例自动化测试结果
+本章前几节给出了每一个测试例的手动执行结果，然而产品上市前，需要进 行自动化测试。本节选取了国内外3款主流厂商（厂商H、厂商S涉厂商T）终 端对测试例进行了 100次自动化测试，结果如下表格4-1：	>
+表4-1不同终端的自动化测试结果
+■端
+测试小、\	H	S	T
+鉴权测试例	　　　100%	　　　　100%	　　　　100%
+语音被叫测试例	　　　100%	　　　　100%	　　　　100%
+视频主叫测试例	　　　100%	　　　　100%	98%
+视频被叫测试例	　　　100%	　　　　100%	　　　　100%
+T厂商的终端在测试过程中出现两次None,对log进行分析后发现实际流程 已经执行完成，并且获得通过，但是协议分析软件出现异常，并不是视频主叫测 试例出现bug,因此所有测试例获得通过。并且已提交测试过程的TTCNlog, 申请GCF认证。
+
+4.7调试过程中的问题及解决方法
+调试过程是整个开发阶段重要的，自项目进入编码阶段以来，作者遇到的问 题林林总总，大体上可以分为以下几类：测试例中参数配置出错，底层参数配置 出错，代码设计时边界问题疏忽，算法本身出错，工具软件出错，系统出错等等。 解决方法主要是査看TTCN log,打断点定位等等。下面列出作者在调试中遇到 的问题及解决方法：
+编解码调试过程中，socket管理和route管理传上来的数据有问题， 修改适配层代码解决。
+EUTRA_PTC初始化完成，等待终端发起注册请求时，IP_PTC尚有 未完成的动作，此处导致exe蹦框，修改适配层代码解决。
+TTCN中参数表没有生效的问题,运行测试用例，读取参数表正常， 往TTCN中写参数也正常，检査TTCN log后找到原因：TTCN初 始化的时候，对参数表己经进行初始化赋值，导致后写的参数没有 生效。修改TTCN代码后解决。
+调试过程中驱动A抓包存在问题，更换一台PC后解决，此问题驱 动代码抓包存在问题，己配合底层开发人员解决。
+使用某品牌H的终端调试，终端默认承载建立完之后，终端会发起 PDN请求，经过对系统的排查之后更换终端后问题即解决，最后确 认原因是终端版本不对。
+鉴权测试例中，SS收到REGISTER请求时，下发401 Unauthorized 消息的时候失败，经检査，socket编码有问题，原因是传输长度被 写死成1300字节，后修改为实际TTCN下发的长度，问题解决。
+response边界问题，原因SIP编解码模块中request和response共用 一个编解码，实际response结构比request少一层，处理的时候分拆， 问题解决。
+下行数据发送时，由于抓包开关配置时间点不对，导致抓包出错， 修改TTCN脚本解决。
+测试套语法编译出错，升级软件IBM Rational Tester, ['rI题解决。
+本端建立第二个小区没有回复cnf消息，平台问题，配合平台开发 人员解决。
+XML编码问题，TTCN不能实现XML编码，在适配层实现XML 编码，问题解决。
+
+DRB2数据下发的数据终端没有收到，驱动A和层二增加DRB和 Cell ID信息扩展字段，指示层二使用哪个DRB下发数据，问题解 决。
+TTCN上报IssueGRLOOO, “Assertion^ ”的问题，修改脚本，对变 量进行初始化，问题解决。
+适配层的socket端接收存在问题，本地IP地址和端口号等管理存在 问题，把响应的协议类型信息写成常量，可以收到终端发过来的IMS 注册请求，问题解决。
+DSP长时间挂机死机问题。经联调发现原因是内存泄漏导致，底层 申请内存后没有及时释放，修改底层代码解决。
+调试过程中发现TTCN log ±没有语音数据。检查发现仪表层二没 有添加TM模式数据处理模块，修改代码解决。
+4.8本章小结
+本章给出了第四章所实现的测试例执行结果的详细验证，其中第一节验证了 V6LTE测试例的通用流程，即EUTRA小区驻留和IMS服务注册。第二节给出 了鉴权测试例的验证过程。第三节给出了语音被叫测试例的详细验证。第四节给 岀了视频主叫测试例的详细验证。第五节给出了视频被叫测试例的验证过程。第 六章给出了 3款国内外主流厂商的终端的100次自动化测试结果。:羅后，作者己 经为该测试例提交了 TTCN log,并已获得了 GCF认证。在本章最后，还给岀了 调试过程中出现的问题及解决方法。
+
+
+第五章总结和展望
+国内正在大规模部署商用volte网络，其商用指日可待，所以急需相关仪 表对大批即将投入市场的volte终端进行测试。本文所研究的基于td-lte的 volte测试例的实现，完成了 volte的一些主要使用场景的流程的测试。通过 了 GCF认证并最终将该功能集成到产品中。第一节对本文进行总结，在此基础 上，第二节提出未来的行业发展趋势和作者本人的工作展望。
+5.1本文总结
+在本文研究内容的开发期间，作者主要工作是基于TD-LTE平台，将3GPP 所定义的VoLTE测试例。首先需要阅读和理解3GPP相关协议，并根据协议要 求，实现了测试步骤、信令流程、测试点，完成了代码的编写及单元测试，并且 在平台开发人员的配合下完成了调试工作，最后得到稳定运行的测试例，并提交 GCF认证通过。
+本文工作的难点在于，3GPP协议虽然对测试例的流程有了规定，但将协议 简单的文本规定转换为有应用价值的产品具有一定的难度。首先，测试例本身的 编码调试需要考虑种种情况，对每一处细节都需要仔细把握，稍一疏忽则可能出 现bug。其次，在测试例与底层平台的联调中，需要考虑相关参数的配置，以及 参数的传递中可能对参数的破坏。最后，作为产品性能的一部分，测试例的执行 速度也需要考虑到，并且测试例的执行速度以及稳定性是产品性能最关键的两点, 也是提升的难点。
+论文最终目的是研究volte测试例的实现。为了这一目标，本文完成了以 下工作：
+第一章作为绪论介绍了本文产生的背景：协议一致性测试是所有开放互联互 通设备上市前必须做的测试，volte技术以其显著的优势成为lte语音解决方 案，并且得到运营商、设备商和芯片商大力推进。在商用volte过程中缺少支 持VoLTE协议一致性测试功能的国产仪表，因此亟待实现。VoLTE功能测试包 含测试平台和测试例，两者缺一不可。因此本文所研究的测试例的实现是VoLTE 测试的重要部分。
+第二章首先介绍了现有仪表的软硬件平台，并且详细分析了各软件模块的功 能，其次概述了 VoLTE网络架构和关键技术，指出了 VoLTE测试的重要性和开 发VoLTE测试例的困难性。再次，结合现有平台架构和VoLTE测试平台需求引 入了作者所在团队对TD-LTE平台的修改。最后，概述了测试例的开发周期，并
+重点介绍了其中基于TTCN-3构造测试例的方法和过程。在本章的最后，给出了 一种直观判断测试例是否通过的方法。
+第三章作为论文的主体章节，对3GPP协议进行了深入的分析，研究了测试 例的测试目的、测试流程、信令交互，并在此基础上给出了测试例的基于TTCN-3 的一种实现。第一节首先实现了测试例的公共部分，即EUTRA小区驻留和IMS 注册，大部分VbLTE测试例都是在此基础上开始执行。第二节到第五节分别对 鉴权测试例、语音被叫测试例、视频主叫测试例、视频被叫测试例的详细流程进 行分析，并且给出了基于TTCN-3的实现方法。本章所实现的测试例既是VoLTE 基础测试例，又是对VoLTE典型的应用场景的模拟。3GPPTS34.229-1为VoLTE 定义了近百个测试例，完成这些测试例的开发都可以参考本章。
+第四章依据第二章所提出的验证方法对第三章所实现的所有测试例进行详 细验证，首先利用3GPPTS34.229-1中VoLTE注册测试例的执行结果验证了测 试例通用部分的正确性。第二节到第五节利用wireshark抓包，对每一个测试例 执行过程中的每一个判决点截图分析以验证每一个环节的正确性。在此基础上， 本章还对所有测试例进行了自动化验证，测试例运行稳定。本章的最后列出了一 些调试过程中出现的问题及解决方法。
+5.2未来展望
+通信行业己经渗透到人类文明的各方面，作为当今社会的基础产业，其发展 之迅速令人惊叹不已。下面对本文所涉及的方向进行一些短时间内的展望并对个 人未来工作进行一点规划。
+1）	通信仪表发展：
+目前国内通信测试仪表与国际仪表巨头（例如安捷伦、斯波轮、R&S等） 的产品还有一定差距，硬件集成以及仪表稳定性和效率还需要提高。当然，面对 国际巨头的激烈竞争，国内厂商也有一定的机会，首先立足于国内规模巨大的 LTE网络，数以亿计的终端用户。再加上国内不断涌现的具有扎实专业基础的通 信人才，假以时日，国内厂商可以不断完善测试系统的软硬件系统。在竞争激烈 的国际国内市场占有一席之地。
+2）	VoLTE的发展：
+目前，中国移动已经大规模商用LTE,中国联通和中国电信也在及时跟进, 随着支持VbLTE的IMS网络的大规模部署，以及使用场景越来越多，VoLTE功 能的测试会更多更复杂的需求，TD-LTE业务测试仪将面临更大的挑战，同时也 拥有更加光明的前景。同时，随着LTE-A的深入部署以及将来更高速的移动网 络的兴起，传统的电路域交换技术将不断地失去市场份额，移动语音通信将会迎来更加优质的体验。今后将有很多的工作需要完成，相信国内仪表厂商能够为运 营商和终端及芯片厂商提供更加完善的解决方案，为国内外通信产业以及整个现 代科技产业的发展贡献自己的力量。
+
+
+参考文献
+[1]徐勇.工业和信息化部电信研究院副总工王志勤TD—LTE迎来发展新机遇[N]. 人民邮电，2010-11-11 (7)
+[2]马永生.基于TTCN-3的TD-LTE终端协议一致性测试系统中安全机制的实 现[D].北京：北京邮电大学，2012: 11-9.
+[3]李清泉 基于终端RRM 一致性测试系统的TD-LTE/TD-SCDMA异系统小区重选 测试例的研究与实现[D].北京：北京邮电大学，2013: 12-1.
+[4]陆烽.VoLTE IMS网络的SIP协议栈研究[J].中国新通信，2013(12)： 34-35
+[5]Miikka Poikselka, Harri Hol ma, Jukka Hongisto, Antti Toskala. VOICE OVER LTE[M]. USA:John Wiley&Sons,Ltd.,Publication,2012
+[6]杨红梅，胡泊.VoLTE关键技术及相关标准[J].电信网技术，2013 (02)： 57-60
+[7]张长青.浅析TD-LTE四网协同下的移动互联网[J].电信网技术，2015(03)：
+曲文娟.地下变电站VoIP系统的设计与实现[D].北京：北京邮电大学， 2011: 05-31.
+[9]纪春光.数字集群与公众网单路通信的SIP网关研究与实现[D].北京：北 京交通大学，2012: 3-1.
+[10]邢璐.基于DSP平台的视频编码优化与SIP协议实现[D].北京：北京邮电 大学，2010: 1-12.
+[11]宋敦波，卢如海.VoIP体系在移动设备上的Java实现[J].实验科学与技 术，2009, 7 (5)： 63-65
+[12]李宁.基于SIP协议的融合媒体服务器的设计与实现[D].成都：电子科技 大学，2010: 10-10
+[13]会话初始协议技术要求，第一部分，基本的会话初始协议[S].北京：中华人 民共和国信息产业部，2006
+[14]王天翼.基于SIP协议的业务测试环境的设计与实现[D].北京：北京邮电 大学，2011: 1-10.
+[15]赵王麟.基于TD-LTE-A终端协议分析仪的VoLTE功能测试方案的设计和实 现 北京：北京邮电大学，2014: 12-1.
+[16]白文迁.基于LTE终端RRM 一致性测试系统的LTE随机接入测试例的研究 与实现[D].北京：北京邮电大学，2014: 12-1.
+[17]王航宇.基于TTCN-3的TD-LTE终端数据业务测试的研究与实现[D].北 京：北京邮电大学，2015: 3-10.
+[18]石暗.基于终端RRM 一致性测试系统的TD-LTE异系统互操作测试例的研究 与实现[D].北京：北京邮电大学，2014: 12-1.
+[19]3GPP TS 34. 229-1 Universal Mobile Telecommunications
+System (UMTS) ;LTE; Internet Protocol (IP) multimedia call control protocol based on Session Initiation Protocol (SIP) and Session Description Protocol (SDP);User Equipment(UE) conformance specification;Part 1:Protocol conformance specification[S]. Europe:3GPP, 2015
+[20]3GPP TS 34. 229-2 Universal Mobile Telecommunications
+System (UMTS) ;LTE; Internet Protocol (IP) multimedia call control protocol based on Session Initiation Protocol (SIP) and Session Description Protocol(SDP);User Equipment(UE) conformance specification:Part 2: Implementation Conformance Statement[S]. Europe:3GPP, 2015
+[21]3GPP TS 34. 229-2 Universal Mobile Telecommunications
+System (UMTS) : LTE; Internet Protocol (IP) multimedia call control protocol based on Session Initiation Protocol (SIP) and Session Description Protocol(SDP);User Equipment(UE) conformance specification:Part 3: Abstract Test Suite (ATS)[S]. Europe:3GPP, 2015
+[22]3GPP. TS36. 331 LTE； Evolved Universal Terrestrial Radio Access； Radio Resource Control； Protocol specification V12. 5. 0 [s]. Europe:3GPP, 2015.
+[23]3GPP. TS36.508 LTE； Evolved Universal Terrestrial Radio Access and Evolved Packet Core； Common test environments for User Equipment conformance testing (version 11. 3. 0) [s]. Europe:3GPP, 2014.
+[24]3GPP. TS36. 523-1 LTE； Evolved Universal Terrestrial Radio Access and Evolved Packet Core； User Equipment (UE) conformance specification； Parti： Protocol conformance specification (version 11. 4. 0 Release 11) [s]. Europe: 3GPP, 2013.
+[25]3GPP. TS36. 523-3 LTE； Evolved Universal Terrestrial Radio Access and Evolved Packet Core； User Equipment (UE) conformance specification； Part3： Test suites (version 11. 1.0 Release 11) [s].Europe:3GPP, 2013.
+

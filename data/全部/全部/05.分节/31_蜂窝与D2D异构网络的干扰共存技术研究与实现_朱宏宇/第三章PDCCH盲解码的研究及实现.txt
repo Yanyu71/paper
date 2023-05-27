@@ -1,0 +1,2 @@
+第三章PDCCH盲解码的研究及实现
+在D2D复用蜂窝上行链路的混合网络中，D2D实现干扰控制及干扰避免的 前提是能实时地感知蜂窝用户所占用的资源及其干扰功率。在4GLTE系统中， 基站通过物理下行控制信道(Physical Downlink Control channeh PDCCH)中承 载的下行控制信息(Downlink Control Information, DCI)来指示蜂窝终端将使用 的上行资源位置等信息向。本章将讨论D2D用户如何解码PDCCHo

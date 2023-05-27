@@ -1,0 +1,30 @@
+4.2.3.1coreO到core4
+core。负责给core4发送无线帧号、时隙号、符号索引以及当前子帧的数据地址等基 本信息，如表4-1所示。还需要为core4提供用户级别和小区基本的参数信息，如表4-2 所示。
+43
+表4-1 coreO给core4发送的基本信息
+core4将在每个子帧符号中断3到达时，判断小区状态，如果小区状态是新建立或
+有更新，那么就需要更新并保存如下与PUCCH相关的小区级参数：
+表4-2从STRU_CRMPHY_CELL_SETUP_REQ中提取的小区级别参数
+core4将在子帧中断3到达时，判断某用户链路状态是新建立或更新，以便将更新 并保存消息中与PUCCH相关的如表4-3所示的用户级参数。
+表4-3从O RACPHY RL SETUP REQ中提取的链路级别参数
+44
+core4将在符号中断3到达时，将该子帧的配置实例化，如表4-4所示。
+表4-4从STRU MACPHY_UL_SUBFRAME_CONFIG_IND中提取的子帧级别参数
+接口结构体	类型	描述
+STRU MACPHY UL SUBFRAME LOCAL	struct
+-> AirFrameNum	unsigned int	空口无线帧号0-1023
+-> SubFrameNum	　unsigned char	无线子帧号取值范围0~9
+-> Cellld	　unsigned short	小区ID,保留
+-> NumOfPUCCHUe	　unsigned char	上行PUCCH的ue个数
+-> Reserved[3]	　unsigned char
+-> astruPucchPara[MAX_USER_NUM]	STRU_
+PUCCH PARA
+・・>UeMId	　unsigned short	UE的唯一标识
+—> RntiType	　unsigned char	确定本次该RNT1的类型：
+枚举
+—>Rnti	　unsigned short	RNTI的值
+—> UciFormat	　unsigned char	上行控制信道格式：0〜5对 应格式 l/la/lb/2/2a/2b
+—> nPucchl	　unsigned char	由MAC配置
+—>BandType	　unsigned char	宽带/子带
+—>TransMode	　unsigned char	传输模式
+->PMIFlag	　unsigned char	有无PMI

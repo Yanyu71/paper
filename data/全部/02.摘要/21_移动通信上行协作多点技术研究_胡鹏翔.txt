@@ -1,0 +1,18 @@
+摘要
+在当前的移动通信中，人们对数据通信的容量需求越来越大。 协作多点传输技术，又称为基站协作技术，已经成为了对抗小区间 干扰、提高网络吞吐量和用户公平性的一项关键技术。
+本文对上行基站协作场景中的若干关键技术进行了研究，覆盖 了无线资源分配、功率分配、回传资源分配、协作策略选择等诸多 问题。除了理论上的分析外，还并针对若干子问题设计了低复杂度 的算法，并通过仿真进行了验证。
+首先，对基站协作场景中的调度算法进行了研究，考虑了上行 协作调度场景中的载波资源分配、功率分配问题，提出了一种低复 杂度的联合调度算法，能够在线性时间复杂度内获取一个局部最优 解。并通过引入用户过滤、基站过滤、邻域基站集合等概念，进一 步加快了算法的收敛速度、降低了计算复杂度。
+随后，对基站协作场景中的多协作策略组合问题进行了研究。 考虑了在一个协作集合内釆用多种协作策略，以有效利用用户信道 情况、回传网络等的不对称性，最大化协作网络的性能，提出了一 种启发式的多策略联合算法，用以自适应地根据信道条件、回传状 态的变化改变选取协作策略组合、分配回传容量。
+最后，对基站协作场景中，回传容量限制等实际因素对协作干 扰消除技术的性能的影响进行了研究。利用马尔可夫链对误差的传 播过程进行了建模，并以此为基础分析了不同协作干扰消除技术下, 残余干扰的主要组成部分、概率分布，推导出了误符号率的闭式表 达式，并通过链路级仿真进行了验证。
+关键词：移动通信；CoMP;基站协作；资源分配；协作策略选取; 回传容量分配
+ON UPLINK BASE STATION COOPERATION IN
+MOBILE COMMUNICATION
+ABSTRACT
+In current mobile communication, base station (BS) cooperation, also referred to as coordinated multi-point processing or transmission (CoMP), has emerged as a key technique to combat with inter-cell interference and improve the network throughput and user fairness.
+This thesis investigates several key techniques in uplink BS cooperation, covering many basic problems including sub-carrier resource allocation, power control, backhaul capacity allocation, cooperative strategy selection etc. Some practical restrictions, such as backhaul capacity limitation, are also considered. Apart from theoretical analysis, low-complexity algorithms are designed and validated through simulations.
+Firstly, the scheduling problem in uplink BS cooperation is studied. The subcarrier allocation problem and the power control problem in uplink coordinated scheduling problem are jointly considered. A low-complexity algorithm is proposed, which is able to obtain a sub-optimal solution with linear time complexity. Moreover, three concepts, namely neighboring BS set, user filter and BS filter, are introduced to further reduce the complexity and accelerate the convergence of the proposed algorithm.
+Secondly, the problem of combining different cooperative strategies in uplink BS cooperation is studied. We consider adopting several decentralized strategies in a cooperation set to fully utilize the asymmetric channel quality and the backhaul infrastructure and maximize the network performance. A heuristic algorithm with polynomial time complexity is proposed to establish the combination of the multiple cooperative strategies, which consists of two procedures, namely strategy selection and backhaul capacity allocation.
+Finally, the influence of backhaul capacity limitation on cooperative interference cancellation is analysed. The error propagation procedure is modeled with a Markov chain, with which the composition and probability distribution of the residual interference under different cooperative interference cancellation techniques are analysed. Closed-form expressions for the symbol error probability are derived and validated it with link-level simulations.
+Ill
+KEY WORDS: mobile communication; CoMP; base station cooperation; resource allocation; cooperative strategy selection;backhaul capacity allocation
+

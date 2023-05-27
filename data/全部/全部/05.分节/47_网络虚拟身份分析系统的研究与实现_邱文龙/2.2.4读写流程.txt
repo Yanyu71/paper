@@ -1,0 +1,29 @@
+2.2.4读写流程
+HBase的数据是以HFile的形式存储在 RegionServer 中的，因此对HBase数据表(Table)进行读写的关键就是如何通过表名和行关键字(RowKey)找到所对应的 RegionServer。在这里先介绍 HBase 中两张最关键的表:-ROOT-表和META表。
+-ROOT-表
+正如它的名称所示，-ROOT-表是 HBase 中的根数据表，它存放了META.表元数据表)的 HRegionServer 信息。-ROOT-表是保存在 Zookeeper 服务器中。当HBase 客户端第一次向 HBase 读取或写入数据时，首先要访问 Zookeeper 以获取ROOT-表的位置并存入缓存，然后得到-ROOT-表。-ROOT-表的结构如表2-1 所
+表2-1-ROOT表结构
+Row Key
+Columnl
+Column 2
+Column 3
+.META. Region Key
+info:regioninfo
+info:server
+info:serverstartcode
+其中行 RowKey(行关键字)代表了每个META.表的 Region 索引，info:regioninfo 记录了该 Region 的一些有用信息，info:server 记录了该 Region所在的 RegionServer 的端口和地址，inforserverstartcode 代表此 RegionServer 拥有对应META.表的进程的启动时间。为了保证寻址性能，-ROOT-表的 Region永远不会被拆分，保证了最多通过三次跳转就能定位任意一个存储数据的RegionServer。
+META.表
+META.表保存了所有表的元数据信息，支持以表名和行关键字 RowKey(或关键字的范围)查找到对应的 RegionServer。.META.表的结构如表2-2 所示。表 2-2.META.表结构
+Row Key
+Column 1
+<table, region start key, region id> info:regioninfo
+Column 2
+info:server
+Column 3
+info:serverstartcode
+其中RowKey(行关键字)表示该表名及该Region起始关键字和Region的id,info:regioninfo 记录了该 Region 的一些有用信息，info:server 记录了该Region所在的 RegionServer 的地址和端口，inforserverstartcode 表示该 RegionServer 拥有对应 RegionServer 信息的进程的启动时间。为了能够实现快速访问，META.表的全部 Region会加载到内存中。
+读数据流程
+假设 HBase Client 要读取 Table 中的第一行数据，并且是第一次读取操作。HBase Client 会先从 Zookeeper 中得到存放-ROOT-表的 Region 服务器 S，并从Region 服务器S中根据表的名称索引找到META表所在的 Region 服务器R用户表 Region 服务器信息是以表和行关键字(RowKey)为索引创建的，且以 B+树的形式存放在META服务器中HBase Client 根据表名和行关键字(RowKey)找到相应的 Region 服务器后，使用对应接口直接从服务器中进行数据读取。
+实际上，从 RegionServer 中查找并读取一行或几行数据的过程并非像描述的那样简答。因为RegionServer 中的数据还有可能存放在memStore或storeFile中所以除了需要根据行关键字(RowKey)找到对应的 HRegion 外，还要根据行关键字(RowKey)找到相对应的 memStore 或 storeFile。如果要读取的数据存放在memStore 中，则HBase Client 可以直接从中读取:如果要读取的数据存放在storeFile 中，RegionServer 中的 HDFS 客户端组件首先要从HDFS 文件系统中获取该数据。为了减少网络时延以加快读取速度，通常在实际应用中大都将 HDFSDataNode 与 RegionServer 部署在一起，这样可以充分利用 HDFS 的位置感知特性，将与某个 RegionServer 中存放的表和行相关的数据存放到本机的 DataNode中，从而提高读取效率。
+写数据流程假设HBase Client 要向 Table 中写入数据，并且是第一次进行写操作，同样的，要经历与读数据相同的步骤以找到对应的 Region Server，如果不是第一次写操作则可以从缓存中直接获取要写入的地址。在HBase Client 向 RegionServe 发出写入请求后，RegionServer 会将该请求分发到对应的HRegion 上。在进行真正的写入数据操作之前，会根据用户自已设置的标志位来决定是否要写 HLOg。HLog可以在 Region Server 出现故障时进行数据回复，防止数据丢失，实现高可用。
+在完成HLog记录后，数据会先被保存在 memStore 中，当写入全部完成后本次HBaseClient的写操作才算完成。接下来的数据文件持久化工作是由 RegionServer进行的，Region Server 会判断memStore 的存储量是否达到已定阙值，如果超出闯值则会触发一个请求，该请求会将缓存中的数据写入磁盘，该请求操作是由专门的服务器线程来完成的。写入数据的文件形式是 StoreFile，并且在写入时是以追加的形式进行的，所以 storeFile 数据文件会不断增大，直到超过一定的闯值会再触发合并操作。在多个 storeFile 数据文件进行合并的同时还会进行删除无效的数据等操作。

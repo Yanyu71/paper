@@ -1,0 +1,21 @@
+LTE-Hi系统高阶调制及链路仿真评估研究 摘要
+移动通信已成为当今人们生活不可或缺的一部分，随着用户对各种 多媒体业务需求的增加，数据业务将绝大部分发生在室内区域，LTE-Hi (LTE-Hotspot Indoor)室内专用系统应运而生。室内良好的信道环境允 许了更高阶调制技术(256QAM)的引入，为了推进高阶调制技术在 LTE-Hi系统中的商用化,亟需对高阶调制引入后涉及的关键技术开展研 究，评估高阶调制技术引入LTE-Hi系统后可以带来的吞吐增益量。
+本文主要对LTE-Hi系统高阶调制及链路仿真评估涉及到的关键技 术进行了研究。为了搭建以吞吐量为性能指标的LTE-Hi链路级仿真平 台，首先对高阶调制下的链路自适应技术中涉及的有效信噪比合并 (ESM)方法进行了研究，对两种主流的ESM,即指数有效信噪比合 并(EESM)和互信息有效信噪比合并(MIESM)进行了大量的仿真和 优化工作；在这基础上，完成了在LTE-Hi静态/动态信道环境下多维度 的仿真与分析，得到的仿真结果可为厂家的测试工作提供基础依据；最 后进一步研究了链路自适应评估技术——MIESM在HARQIR链路抽象 中的应用，修正了原始的链路抽象公式。论文的主要贡献和创新点包括:
+首先，高阶调制(256QAM)对原有的自适应调制与编码带来了挑 战，其中ESM是进行CQI上报的重要部分，为了使EESM和MIESM 能够准确的应用于高阶调制的OFDM系统中，设计了参数优化方案并 得到优化后的参数值，通过对两者仿真性能的比较，得出双参数优化下 的MIESM是适合于高阶调制的信噪比合并方法。
+其次，通过搭建链路仿真平台完成了 LTE-Hi系统下高阶调制的链 路评估。通过对TM2/TM3/TM自适应及LOS/NLOS传输模式下的仿真 结果进行深入分析，给出了高阶调制技术在LTE-Hi静态信道下可以带 来的增益量及所需的信噪比,对动态信道下引入256QAM给出了可行性 分析。
+最后，IRHARQ链路性能评估与抽象是HARQ的系统级仿真的基 础，是链路级到系统级仿真接口(L2S)技术的重要部分。本文验证了 基于去重传相关性的MIESM在IR HARQ及高阶调制系统下链路抽象 的性能，发现随着调制阶数和编码速率的提高各次重传后映射AWGN 曲线得到的误帧率与真实误帧率之间的偏差会增大。仿真得到了各调制
+I
+编码方式（MCS）下的偏差补偿量，对于Turbo编码的系统可以直接使 用该偏差补偿量搭建HARQ模型。
+关键词：链路级仿真LTETH系统高阶调制有效信噪比合并
+II
+RESEARCH ON LTE - HI SYSTEM
+HIGHER ORDER MODULATION AND
+LINK-LEVEL SIMULATION EVALUATION
+ABSTRACT
+Mobile communication has been indispensable in people's daily life. To meet the increasing demand of multimedia service, especilally for the vast majority of data service in the indoor area.3GPP has proposed LTE-Hotspot Indoor System. In order to promote the commercialization of high-order modulation technology in LTE-Hi system, it is urgent to study the key technology involved in the introduction of high-order modulation, and to verify the LTE-Hi system throughput gain when introduced high-order modulation technology (256QAM)intothe good indoor channel environment.
+In this paper, the key technologies of LTE-Hi system high-order modulation and link simulation evaluation are studied. An effective SNR combining method fbr high - order modulation is given by simulation and optimization. The simulation platform is built under the link self-adaptive condition. The multi-dimensional simulation and analysis are done in LTE-Hi static and dynamic channel environment. The simulation results can provide the basis for the testing work. Moreover, the performance of MIESM in HARQ link abstraction is studied, and the formula of high order modulation is modified by simulation. The major contributions of this paper are as follows：
+Firstly, the high-order modulation (256QAM) brings the challenge to the original adaptive modulation and coding, in which the effective signal-to-noise mapping (ESM) is an important part of CQI reporting. In order to make EESM and MIESM accurately applied to high Order modulated OFDM system, the parameter optimization scheme is designed and the optimized parameter values are obtained. By analyzing the in
+advantages and disadvantages of the two algorithms, it is concluded that MIESM is a signal-to-noise ratio combining method suitable for high order modulation.
+Secondly, in order to complete the link evaluation of high-order modulation in LTE-Hi system, a link simulation platform is built. By analyzing the simulation results of TM2 / TM3 / TM adaptive and LOS / NLOS transmission modes, the gain of the high-order modulation technique under the LTE-Hi static channel and the required infbnnation are given. Noise ratio, the feasibility of introducing 256QAM into the dynamic channel is analyzed.
+Finally, it verifies the accuracy of the MITSM-based HARQ system's link abstraction in high-order modulation. It is found that with the increase of the modulation order and the coding rate, the link aberration will increase. The amount of offset compensation under each MCS is obtained by a large number of simulations. The correction of the final formula is completed. The parameters and corrections obtained by the calculation and simulation provide the basis for system level simulation of HARQ.
+KEYWORDS： Link Level Simulation LTE-Hi 256QAM ESM

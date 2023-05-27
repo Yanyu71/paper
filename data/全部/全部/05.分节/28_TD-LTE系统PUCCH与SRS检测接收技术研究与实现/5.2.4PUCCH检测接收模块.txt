@@ -1,0 +1,15 @@
+5.2.4PUCCH检测接收模块
+PUCCH检测接收模块计算流程：
+该模块实现在符号6和符号13到来时进行PUCCH检测接收计算。符号6到来时, 已经接收到完整的时隙。的数据。加扰调制模块已经得到发送端调制符号，可以对第一 个时隙进行PUCCH检测操作。当符号13到来，接收到完整的时隙1的数据，进行第 二个时隙的检测接收处理。
+下表给出了 PUCCCH检测接收模块的函数描述。
+表5-4: PUCCH检测接收模块函数描述
+函数原型	void eNBRxPucch_DTXDetection (DataInl,DataIn2, PucchDtxDetPara, PucchDtxFlag,DataOut)
+函数输入	函数参数	Datalnl：天线1上去ZC相关后的PUCCH域数据
+Datalnl：天线2上去ZC相关后的PUCCH域数据
+PucchDtxDetPara：模块控制信息参数，包括UCI长度，时隙号，缓存索引等成员
+全局变量	UlSubFrmInfb：指向子帧信息结构体的指针
+ModCode：指向经过调制的控制信息数组的指针
+函数输出	全局变量	PucchDtxFlag：标识格式1/la/lb上DTX的标志位
+DataOut： PUCCH上承载控制信息
+返回值	无
+该模块实现流程如下:

@@ -1,0 +1,12 @@
+2.2.2HBase组件
+HBase Client
+HBase Client 主要负责与HMaster 和 HRegionServer 之间的通信，主要是通过RPC(远程过程调用)机制实现。
+ZookeeperZookeeper 是 HBase 的协同管理者，它可以将 HRegionServer 的运行状况上报给HMaster，使HMaster 及时发现故障，更好地维护集群。Zookeeper Quorum中还会配置 Zookeeper 管理的节点，一般配置奇数个，避免了 HMaster 的单点问题。
+HMaster
+HBase 集群中可以启动多个 HMaster，所以HBase 不存在单点故障，并且作为协同管理者的 Zookeeper 也会保证总有一个节点在运行1141。HMaster 的主要功能是管理数据库表的增、删、改、查操作，负责任务的分配和资源调度2.2.2.4 HRegionServer
+HRegionServer 是用户对数据库表的各种请求具体执行的部分，而其最底层的存储单元 HFile 就是基于 Hadoop 的 HDFS 来把 HBase 数据库表以一些KeyValue对的形式来存储[15]2.2.3物理存储
+虽然 HBase 的数据模型可以采用与传统关系型数据库类似的数据行表的形式表示，但实际上这些数据在进行物理存储时是以列族为单位的。Table 到HRegion
+首先，HBase 表(Table)中的数据在行上会按 RowKey 进行排序，并被分为多个HRegion存储单元存储在 HRegionServer 上。对表进行分割的目的是为了能够应对大表存储的情况。每个表在创建开始时只有一个HRegion，随着数据量不断的增加，HRegion会越变越大，当超过一个阙值时，这个 HRegion 会被等分为两个HRegion。这个过程会不断重复，HRegion 数量也随之不断增加。HRegion 是最小的存储单元，即不同的 HRegion 可以存放在同一个HRegionServer 上，但个HRegion 不可被拆分到多个HRegionServer 上。这种存放方式也很好地实现了数据管理的负载均衡。
+HRegion 到 Store
+HRegion 是 HBase 中的最小存储单元，但并不是物理存储的最小单元。在物理存储时,HRegion被划分为若干个Store,每个Store 保存了一个列族的数据[16]Store 到HFile
+Store由两部分组成，MemStore 和 StoreFile。MemStore是HRegionServer 上的一段内存空间。写入的数据会最先存入 MemStore，当MemStore 中的数据量达到一定的阙值后会转存到 StoreFile 中。HRegionServer 借用了HDFS DataNode的功能，StoreFile 实际上是 HDFS 中的一个 HFile。

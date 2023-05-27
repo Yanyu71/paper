@@ -1,0 +1,28 @@
+4.2.2.SFFT模块的封装与实现
+在ISE 13.4版本中，提供了免费的FFT/IFFT的IPCore,可以完成各个场景 下的FFT及IFFT运算，配置灵活，长度可调，多路复用。FFT IP Core的用户界 面如图4-17所示。
+图4-17 FFTIP Core的用户界面
+FFT的IP Core提供了 3中结构，分别为：
+> 流水线，Pipelined Streaming I/O结构：允许连续的数据处理;
+47
+>基4, Burst I/O结构：分为数据导入/导出阶段，以及运算处理阶段，运 算时间较久，数据需要以burst的形式输入，而不是流式输入；
+>基2, Burst I/O结构：相对于基4的Burst I/O结构使用了较少的逻辑资 源，其他类似，也不支持流式的数据运算。
+考虑系统的需求，需要在200MHz的时钟频率下高速运转，所以考虑使用流 式的Pipelined Streaming I/O处理结构，它可支持连续的数据输入、输出和运算， 并能满足系统的实时性要求。流式的计算，流水线的处理结构，再借助FPGA并 行计算的能力，可以大大加快FFT的运算，使得当天帧的数据正在加载的同时， 有另一帧数据正在运算之中，同时还有一帧数据正在输出接口输出。Pipelined Streaming I/O结构是由很多基2的蝶形单元构成的，其结构如图4-18所示。
+设计中将FFT IP核的配置为流水线型、Pipelined Streaming I/O模式，单通 道8192点的FFT,运行时钟稳定在200MHz,以满足实时性处理的要求oPipelined Streaming I/O模式的内部是基-2的时间抽选法的蝶形运算，级与级之间采用四舍
+不会导致数据溢出。
+FFT Wrapper封装模块的整体结构图见图4-19。首先对生成的FFT IP Core
+48
+的Verilog文件进行封装，封装为fft_wrapper。封装中，首先定义变量检测FFT 的运算状态，是否有溢出、运算出错、数据长度不符等错误，由于配置的是 Unsealed模式，输出的实部和虚部均为32bit,所以对FFT的输出需要做定点化， 以防止输入太大时产生溢出的现象，最后FFT运算结果进行下一步的处理。
+FFT运算之后有一步去冗余的操作，频谱感知的每帧数据长度是8192,对 应81.92MHz带宽的频谱数据，其中靠近中心频点的60MHz带宽内的频谱数据 是我们利用的数据，最靠近边缘的21.92MHz带宽的信号由于干扰和不平坦等因 素弃之不用。靠近中心频点的60MHz带宽信号位于FFT之后数据的两端，即起 始处的3000点和末尾处的3000点，此处会进一步提取岀每一帧数据中6000个 有用频谱信息，然后经过一个小FIFO作为缓冲处理，传递给下一级处理，即求 频谱能量和求均值模块。
+配置寄存器接口下发配置信息，共分为两种：第一种是为FFTIPCore正常 工作提供必要配置信息，主要为FFT的正/反变换信息和运算精度信息，每一帧 FFT需要下发一个配置，IP Core内部的配置缓冲BUFFER可以缓存8个配置， 因为系统中每一帧的配置信息均相同，故可连续不断下发相同的配置信息；第二 种是下发到定点化方案处对FFT全精度计算的结果进行截位取舍，此处的配置 信息可追溯到SOC系统软件层面，下发的具体值可以根据应用场景信噪比和信 号功率值的不同而进行灵活分配，以确保信号不会溢出。
+FFT Wrapper模块的接口信号定义及说明见表4-7。输入和输出侧均采用 AXLStream接口模式，输入为Slave类型，输出为Master类型，Slave和Master 接口均使用valid和ready信号进行前后级设备的握手操作，此方法可高效可靠 地保证数据快速有效地被传递。
+表4-7 FFT Wrapper封装模块接口信息
+Name	Port Width	Direction	Description
+rstn	　　.:1	:1 .'	复位信号，低电平有效
+elk	　　■. if	　：.1	时钟信号，运算处理时钟，200MHz
+sfft _wvalid	　　."1注	1	FFT输入端AXI-Stream Slave接口输入valid信号
+sfft _wready	1	0	FFT输入端AXI-Stream Slave接口输出ready信号
+sfft 三 wd ata	32	1	FFT 输入端 AXI-Stream Slave 接 口数据（data）信 号，位宽32bit,输入时域加窗处理后的数据
+mfft _wvalid	.....""I.—	0	FFT 输出端 AXI-Stream Master 接口输出 valid 信号
+mfft ^wready	　　...1		FFT 输出端 AXI-Stream Master 接口输入 ready 信号
+49
+mfft _wdata	32	　。0	FFT输岀端AXI-Stream Master接口输出复频域数据 (data)信号，低16bit实部，高16bit虚部

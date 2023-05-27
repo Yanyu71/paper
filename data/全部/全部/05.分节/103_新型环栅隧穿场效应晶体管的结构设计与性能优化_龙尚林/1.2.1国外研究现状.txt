@@ -1,0 +1,9 @@
+1.2.1国外研究现状
+2017 年，由 Prabhat Kumar Dubey 和 Braj esh Kumar Kaushik 提出了一 种新型 异质TTFET: InP/In0.53Ga0.47As T形隧穿场效应晶体管，如下图l-l(b)所示。通 过比较TTFET和LTFET性能，LTTFET如下图l-l(a)所示，发现具有T形结构 的TFET比具有L形结构的TFET的电学特性更加优秀，因为T型结构可以增加 TFET的隧穿面积。TTFET的开态电流是LTFET的4.3倍，跨导是其4倍，截止 频率是其2.36倍。另外，TTFET中将晶体管的栅极覆盖了漏极部分区域，通过 这种方式减少了 TFET的双极性效应QI。
+图1-1由Prabhat和Brajesh提出的TTFET结构㈢】
+2017 年，由 Navjeet Bagga, Anil Kumar 和 Sudeb Dasgupta 提出了 一种新型 的TFET结构：双源极TFET,如下图1-2所示。双源极TFET中有两个源极， 增加了源极与沟道接触位置附近的有效隧穿区域，提高了器件的开态电流，同时, 为了将器件的关态电流限制在一个比较低的值，在器件的源极和漏极之间引入了 氧化隔离层，避免源极和漏极的直接耦合。该器件具有非常优秀的高达9 x 1O10 的开关电流比Bl。
+图1-2Navjeet等人提出了双源极隧穿场效应晶体管凶
+2019年，Gaurav Musalgaonkar等人提出了内栅外栅不对准线性纳米TFET (TFET Based on Misaligned Core-Shell Gate Architecture),结构图以及横切图如图 l-3(a)(b)所示。该结构在器件的源极内部增加了新的栅极，同时，外部栅极覆盖 在沟道区域之上，这样的结构使TFET的内栅和外栅之间形成了额外的线性隧穿 区域，从而有效增加了带带隧穿几率。研究者通过仿真验证了其提出的MGNT- TFET无论是静态性能还是动态性能都比传统的纳米TFET更加优秀。MGNT- TFET的开态电流是传统的纳米TFET的11倍，并且其点亚阈值斜率可以低到 5mV/dec,平均亚阈值斜率为｝5.5mV/dec.但是，MGNT-TFET和MOSFETs的 工艺并不兼容，因此，研究者提出了 MGNT-TFET的加工工艺流程图，如下图1- 3(c)所示［叭
+图1-3 Gaurav等人提出的MGNT-TFET及其加工流程示意图㈤
+2020 年，Samriti Shanna 等人提出了异质无结 TFETs(HM-HLTFET),如图 1- 4(a)所示，HM-HLTFET与传统TFETs的区别是其分别在源区引入了低功函数的 InAs材料，在沟道和漏极引入了高功函数的GaAs材料，同时在源极增加了辅助 栅结构。文中比较了该器件和传统TFETs的传输特性、漏电流、电流开关比等特 性，如下图l-4(b)所示。仿真结果表明，该结构具有抑制漏电流，降低器件功耗 等的能力，同时提高了低栅极电压下电流的驱动能力以及器件的开关速度［26】。
+图1-4 Samriti等人提出的HM-HLTFET及其转移特性曲线必］

@@ -1,0 +1,29 @@
+4.1.2映射码初始化
+映射码初始化即是将二元组进行初始化并将其存储到数据库中。其具体实现 函数是initMapQ,实现步骤如下：首先从配置文件中读取映射文件，然后从映射 文件中获取操作映射码和类型映射码，并将其进行组合，存储到数据库中。最后 将数据库中的数据与映射文件中的数据进行匹配，得到总体的映射码。其流程图 如下：
+图4-2映射码初始化流程图
+42
+下图所示为initMap()的部分代码：
+def	•filename,mapFile):
+Ext ractedCa.il (filename) t	. .	•.
+models.Extractedinstruction«createTable()
+conf = self, get File (filenafne)
+■For i in range(0,4):
+self. extractedOperations[i] = conf. get ( "operation% i) for j in range(0,32):
+self. extractedObjects[ j]=conf.get(	"慈庁"% j)
+• for k in range(0z4):
+for m in range(0J32):
+extInstruction = \ models ・ Extractedlnstruction\ (m, k> self. ext r a ct e dOb j ect s. get (m), \ set/.extractedOperations.get(k)) extInstruction» addData()
+mapfile = open(mapFile) lines = mapfile«readlines() ■flag = -1	'
+-For eachtine in lines:
+i-F tr[instruction] *r in eachLine:
+flag = 0
+elif ^[object]"" in eachLine:
+flag = I
+elif *YoperationJ" in eachLine:
+^lag = 2
+else:
+豪 源版 instruction
+if flag==O:
+splitPos = eachLine .-Find( specInstruction = eachLine[rsplitPos] specNumber = int(eachLine[splitPos+l:]) ^prin-t "渝汶 instruction number are:** Sprint."绥％ %d>!驚 C spec In struct Mn.
+:--•- ~•….•-  工，…….…...	T-.. . ' •，” '	."”
+图4-3 initMap()函数的部分代码

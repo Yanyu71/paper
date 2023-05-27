@@ -1,0 +1,23 @@
+3.1.1DCI的格式及长度
+DCI是PDCCH所承载的实际内容，DCI可用来传输卜行数据的调度信息、 上行数据的调度信息(UL Grant)、功率控制命令(TPC)、上行数据的ACK/NACK。 不同的DCI格式传输不同的信息，共有10种不同的DCI格式”］。
+D2D用户需要从各种DCI格式中区分岀传输上行数据调度信息的format 0 DCL这种DCI中的内容如下：
+Ibit , Format 0 和 Format 1A 的区分标识，0 指示 Format 0, 1 指示 Format 1A
+?Ibit,跳频标识位
+log2(C(C +1)/2)-Nbr hop)bits 或者(pog2(C(C+D/2))bits, 前者是PUSCH采用跳频时的资源分配，后者是非跳频的资源分配。
+5bits, I"*调制和编码方案及冗余版本
+Ibit,新数据指示符
+2bits, PUSCH的TPC传输功率控制命令
+3bits, DMRS的循环移位
+2bits, UL index上行子帧号，针对的是TDD上下行配置0
+2bits, DAI下行分配的索引，TDD上下行配置1-6
+Ibits, CQI 请求
+根据不同的DCI长度可以大致区分出不同DCI格式。若已知系统的带宽、 双工方式及天线配置，可以计算出各种不同格式的DCI长度回，10种格式的DCI 共有6种可能的长度，因为其中用于上行传输调度的format 0.用于下行数据调 度的format lAs用于上行功率控制的format 3/3A具有相同的长度，formatlB、
+formatlD的长度也相同。表3-1给出了在20M带宽、双工方式为TDD、两天线 的系统中各种format的DCI长度。
+DCI format	DCI 长度(bit)
+1C	13
+0/1A/3/3A	31
+1	33
+1B/1D	42
+2	51
+2A	54
+表3-120M带宽双天线TDDETE系统中的format长度

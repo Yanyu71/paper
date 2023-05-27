@@ -1,0 +1,9 @@
+3.3.4动态迁移系统中执行函数简介
+动态迁移系统中，在迁移发起端和迁移目的端都会经常用到一些执行命令， 因此利用python编写了一些公用的执行函数如下：
+•def cmdProcess(cmd,cmd_label):
+该函数执行输入命令Zmd,并返回执行结果是成功(True)还是失败(False) 输入cmd是所要执行的系统命令，类型为字符串；cmd_label是执行命令 的说明，用于打印，类型为字符串。
+•def getProcess(cmdname):
+该函数获取输入参数cmdname的进程id,如果执行成功则返回进程id, 失败返回Falseo 输入参数cmdname为所要获取进程id的进程名，类型为字符串。
+•def killProcess(cmdname):
+该函数杀死输入进程。成功返回True,失败返回False
+输入参数cmdname为进程名，类型为字符串。

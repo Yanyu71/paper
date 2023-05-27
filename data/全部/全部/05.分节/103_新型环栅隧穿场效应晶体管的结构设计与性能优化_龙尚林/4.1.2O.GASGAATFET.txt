@@ -1,0 +1,19 @@
+4.1.2O.GASGAATFET
+图 4-2 O-GAS GAA TFET 与 GAS GAA TFET 的转移特性图
+图4-2展示了Uds = 0.75IZ条件下，GAS GAA TFET和Overlap长度分别为 3nm. 6nm, 9nm、和15nm的0-GAS GAATFET的转移特性曲线。从图 中可以看出，在均S = oy时,GASGAATFET的关态电流为1.17 x IO-14?!,Overlap 长度为3/im、9nm、12nm和的O-GAS GAATFET的关态电流分别 是4.69 x 105、2.08 x 10_15?1> 1.34 x	9.93 x 10~16A和8.69 x 10_16?l =
+38 因此，可以看出，与GAS GAATFET相比，有Overlap的O-GAS GAATFET的 关态电流降低了 1至2个数量级，并且，随着Overlap长度越长，O-GAS GAA TFET的关态电流越低。另外，由于Overlap工程对关态电流的影响，O-GASGAA TFET有着更好的亚阈值特性，更低的亚阈值斜率。GAS GAATFET的最低亚阈 值斜率是43.796mU/dec,平均亚阈值斜率是62.05mV/dec, O-GAS GAA TFET 的最低亚阈值斜率随着Overlap长度的增加而降低，Overlap长度3nm、6nm、 9rwn、和15nm的O-GAS GAA TFET分别对应的最低亚阈值斜率为 39.52mV/dec、36.47mV/dec、34.96mV/dec、33.75mV/dec 和 32.90mV/dec, 平均亚阈值斜率为52.92mV/dec、52.71mV/dec> 54.10mV/dec、55.52mV/ dec和58.37mV/dec。O-GAS GAATFET的关态电流降低主要是因为Overlap工 程降低了关态下器件沟道和漏极位置处的电场，在TFETs器件处于关态时，在 沟道和漏极处发生的少量带带隧穿，而通过Overlap可以降低沟道和漏极处的电 场，电场的减小导致了器件沟道和漏极接触面处沟道价带和漏极导带相互之间的 距离增加，进而降低了该处发生的带带隧穿，降低了关态电流。另外，随着Overlap 长度的增加，器件的点亚阈值斜率不断减小，但是，器件的平均亚阈值斜率却没 有不断减小，相反，当Overlap长度增加到9nrn以上是，平均亚阈值斜率不断增 加。从图中可以看出，Overlap长度为9rmi、12nm和的器件的转移特性曲 线，在栅极电压接近零时开始出现弯曲，这说明器件开始出现双极性效应，并且 可以发现，Overlap长度越长，弯曲越明显，这说明双极性效应越严重。这个现 象也可以用电场来理解，随着O-GAS GAA TFET的Overlap增长，器件的沟道 和漏极处的电场越低，因此，Overlap长的器件，沟道和漏极处需要的栅极电压 多于Overlap短的器件，也因此在Overlap长的器件中，首先出现了双极性效应， 因此，综合来看，Overlap 长度为6nm的 O-GAS GAA TFET 对 GAS GAA TFET 的优化效果最好。　　图 4-3 展示了 Vds = 0.75U, Vgs = 0U条件下，GAS GAATFET 和 O-GAS GAA TFET的电场分布图。图中用黑色笔标记的中间则是器件低电场的分布范围。从 图中可以看出，器件的沟道大部分区域都处于低电场中，而器件漏极中低电场的 区域也随着Overlap长度的增加而增加，从沟道向漏极不断延伸。
+为了更形象的说明，图4-4(b)展示了Vds = 0.75*沧=01/条件下,GASGAA TFET 和 Overlap 长度为3nm、6nm> 9nm>	和 的 O-GAS GAATFET
+的中心沿沟道方向变化的电场分布图。从图中可以看出，在TFETs器件常发生 带带隧穿的源极和沟道的接触面处，即X = -0.015um的位置，GAS GAA TFET 和不同Overlap长度的O-GAS GAATFET的电场强度接近，因此，Overlap工程
+39
+对器件的影响主要是影响器件关态电流的沟道和漏极接触面处。在器件中心位置 的沟道和漏极接触面处，即丫 = 0.015的位置，GAS GAATFET的电场强度1.5 x 10W*cmT,而 Overlap 为 的 O-GAS GAATFET 的电场强度为0.5 X 105K* cm-1,大约为GAS GAA TFET的1/3。另外，在器件中心位置的沟道和漏极接 触面处，即Y = 0.015um的位置,O-GAS GAATFET随着Overlap长度不断增加， 电场强度也逐渐减小。因此，O-GAS GAATFET器件可以通过控制Overlap长度 的方法对沟道和漏极接触面附近的电场进行控制，进而可以控制器件的关态电流
+图4-4关态下GAS GAA TFET和O-GAS GAA TFET中心位置沿沟道方向电场分布图
+图 4-5 展示了心=0.75U、Vgs = OU条件下，GAS GAATFET 和 O-GAS GAA
+TFET的中心沿沟道方向变化的电流密度图。图中，在源极(Y < -0.015um)主要 分布的是空穴电流，在漏极(丫 > 0.015um)主要分布的是电子电流。
+40
+Y(um)
+图4-5关态下GAS GAA TFET和O-GAS GAA TFET的电流密度图
+从图中可以看出，源极中空穴电流密度最高的是GAS GAA TFET,其最大 值大于3 x 10~3A * cm~3,漏极中电流密度最高的也是GAS GAATFET,其最大 值大于2.5 x 10~3A * cm_3o随着Overlap长度的增长，器件源极和漏极中的电流 密度都呈现下降趋势。当Overlap长度为和时，其电流密度小于1 X 10~4?1 * cm~3,因此，Overlap结构会对O-GAS GAATFET器件的源极和漏极中 的电流密度同时产生了影响。另外，在VgS = 0V时，电流密度减小会降低器件中 带带隧穿的发生，进而降低器件的关态电流。因此，Overlap长度越长，O-GAS GAATFET中电流密度越低，关态电流越低，可以通过增长Overlap的方式来降 低器件的关态电流。
+图4-6关态下GAS GAA TFET和O-GAS GAA TFET的能带结构图
+图4-6是关态下，GAS GAATFET和O-GAS GAATFET的中心沿沟道方向 变化的能带结构图。从图中可以看出，不同Overlap长度的O-GAS GAATFET的 能带结构的区别在沟道和漏极接触面处，而O-GAS GAA TFET和GAS GAA
+41
+TFET的能带结构从沟道开始就出现了不同。在沟道中，即丫 = —0.015um至浮= 0.015um的范围内，GAS GAATFET的价带和导带相对于O-GAS GAATFET更 高，而O-GASGAATFET之间的价带和导带相对接近；在沟道和漏极接触面处， 即Y = 0.015的位置，GAS GAA TFET的价带和导带，相对于GAS GAA TFET 而言，向下弯曲的更加剧烈，而O-GAS GAA TFET之间，则是跟随Overlap长 度进行变化，主要体现为随着Overlap长度的增长，O-GAS GAATFET器件的价 带和导带更加平稳。在沟道和漏极接触面，能带的剧烈向下弯曲会使得沟道价带 和漏极导带更加接近，有助于带带隧穿的发生，因此，增加Overlap的长度，使 得在沟道和漏极接触面的能带结构更加平稳有利于降低关态电流，可以通过改变 Overlap长度的方法来改变O-GAS GAATFET的沟道和漏极位置的能带结构，进 而改变器件的性能。

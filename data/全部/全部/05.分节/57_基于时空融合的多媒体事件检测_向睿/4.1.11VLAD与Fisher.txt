@@ -1,0 +1,12 @@
+4.1.11VLAD与Fisher
+1	.实验设置
+本文对比了 CNN特征使用VLAD与Fisher Vector两种多媒体事件的时空表示方 法的准确率。本文将VGG16作为特征提取模型，在最后一个卷积层均按照密集局部 特征提取的方式提取1 X 1,2X2,3 X3,6X6四种尺度特征图的响应，其中VLAD采用 默认设置，而Fisher Vector使用了与VLAD相同的取样样本数、聚类中心数，使用 了平方根归一化和12归一化。两种多媒体事件的时空表示方法均采用TRECVID MED
+43
+竞赛中10EX评测标准计算准确率，其训练集总共5030个视频，包含20个事件，每 个事件10个正样本，其余为背景样本；测试集约30000样本。两种方法在 MED14J0EX网上的mAP如表4-4所示：
+表4-4 VLAD与Fisher Vector的对比实验结果
+融合方法	mAP
+VLAD	0.232
+Fisher Vector	0.218
+2	.实验结果分析
+由上述结果可知，VLAD相比于Fisher Vector在准确率上有着较小的优势，但由 于Fisher Vector在相同的聚类中心下维度是VLAD两倍，并且由于使用了高斯函数, 所以速度会显著慢于VLAD,本文认为VLAD相比于Fisher Vector更适合用于CNN 特征的融合上。
+而对于文献［13］中提到Fisher Vector与VLAD相比在IDT、SIFT特征融合上拥有 更高的准确率，本文认为局部特征的性质导致了 VLAD与Fisher Vector的结果差异， Fisher Vector尽管在理论上有着更加完备的优势，但需要注意的是Fisher Vector有着 样本满足高斯分布的假设，IDT与SIFT中的局部特征多数来自于直方图的统计，这 与高斯分布是比较相符的。而本文CNN局部特征可看做是高度抽象的视觉信息，是 取自Max Pooling的结果，这种特征形式是否与高斯分布相符有待论证，本文不做赘 述，但就本文实验结果和考虑效率而言VLAD相比于Fisher Vector更加适合。

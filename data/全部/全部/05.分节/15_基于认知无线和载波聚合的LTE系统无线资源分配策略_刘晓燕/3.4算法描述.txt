@@ -1,0 +1,52 @@
+3.4算法描述
+在第3.2节系统模型中已经得到，所提分配策略可以转化为对归一化的子载 波的分配。本章提出一种连续和载波聚合混合的频谱分配策略，其中心思想是对 不同的信道可用状况采取不同的分配方法。在为一个用户分配载波资源时，当有
+足够的空白连续频谱，就利用如图3-2中所示意的最佳适应算法思想为该用户分
+28
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+配相应的载波；当空白频率资源中没有可以满足用户需求的连续频段时，再在聚
+合能力范围内利用载波聚合为该用户分配相应的载波资源。 一共包括以下几步：
+1)把请求接入的所有次级用户 SU 的最小速率需求(反映该用户的 QoS 需求)
+递减排序，保证需求大的用户有更高的优先级。
+2)如果尚有未被遍历分配的待接入用户，且有空白的频率资源，则对于某个等 待分配的用户来说，对其载波资源分配过程可以分为以下3)和4)两个阶段；
+否则直接结束整个分配过程。
+3)从低频到高频逐步搜索已感知到的整个空白频段范围，当有足够的空白连续 频段，就进入连续载波分配阶段。此时利用计算机内存分配中的最优匹配原 则，即为当前待分配用户找到能满足其需求的最小频段并为之分配满足其需 求的子载波，以尽量减少载波分配过程中引起的频谱碎片。否则进入4)中
+的载波聚合阶段。
+4)当没有足够的空白连续频谱，就会进入到非连续分配阶段。此时会引入载波
+算法3 . 1:MixCASA	算法3.2: Spectrum Aggregation
+输入：待分配的认知用户的带宽需求数组 RB,归一化的可用空白带宽B“,聚合能 力门限Tthreshald ,滑动窗口大小Twindow
+输出：分配后的信道可用情况。1表示被分配， 0表示仍未被分配	输入：滑动窗口大小Twindow,第n个认知用 户的带宽要求,归一化的可用空白带宽 B”e
+输出：为第n个认知用户的分配完后的信道状
+况。1表示被分配，0)表示仍未被分配
+forn =1 to Ndo
+tag =0
+forj=1  to  |B |do
+if |B,>0andRBs<-[B | then
+Sl =j
+/* Sl is an temporary array to store,j*/
+tag=1
+end if
+end for
+if tag=1 then
+y=min(S1)
+/*y is the location of the minimum of$1*/ L.=L,-Twmdw+1
+else
+Twindow=Ttheeshold
+Spectrum Aggregate
+endif
+end for	/*pl,p2 are the start and stop location of slide window */
+forpl=1to |B |-T*do
+p2 =pl+ T'indow-1
+S2    =find(B~"(p1:p2)=O)
+/* S2 stores the location of available channels within slide window */
+L,=L,+T*-1
+else
+pl=pl+1
+end if
+end for
+聚合策略，即“滑动窗”从低频到高频依次搜索整个可用频段范围，依次计
+29
+(C)1994-2022   China   Academic   Journal   Electronic   Publishing   House.All   rights   reserved.    http://www.cnki.net
+算“窗”内的可用空白归一化子载波个数总和，如果满足当前待分配用户的 需求，则把“窗”内可用的空白频段聚合起来，分配给这个用户并停止查找， 进入步骤2)对下一个用户进行频率资源的分配。若整个频谱搜索结束而在 “窗”内没有找到足够的空白频谱，则该用户被拒绝接入。其中滑动窗口的
+大小由聚合门限决定。
+5)按照上述步骤依次进行，直到遍历完所有请求分配的用户或者没有可用的空
+白频段为止。

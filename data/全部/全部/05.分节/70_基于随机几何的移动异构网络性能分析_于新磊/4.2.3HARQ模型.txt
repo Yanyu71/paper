@@ -1,0 +1,8 @@
+4.2.3HARQ模型
+HARQ是一类重要的差错控制方法，与文献［125］相似，考虑以下两种类型的 HARQ模型：
+• Type-I HARQ (独立尝试，Independent Attempts)：最简单的 HARQ。用户会 丢弃错误传输中的接收信号，并尝试从最后一次重传中进行解码。若SIR门限
+77
+为。，最大传输(重传)次数为N,给定基站点过程中，用户的条件成功概率 可以表示为
+G(t) = 1	< 弓 | ①)	(4-4)
+, iype-11 HARQ (追逐合并，Chase Combining)：在 Type-H HARQ 方案中，用 户合并每次传输(重传)的接收信号并尝试解码。此方案可进一步分为追逐合 并和增量冗余(Incremental redundancy) □本章关注的Type-II HARQ仅指追逐 合并。在N次传输(重传)后，用户基于MRC的合并SIR为£磐［SIR：。给定 基站点过程①，用户的条件成功概率可以表示为
+7^rc(t) = P(XSIRj > £ | ①)	(4-5)

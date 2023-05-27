@@ -1,0 +1,24 @@
+摘要
+
+系统的吞吐量、频谱利用率和能量效率等是衡量无线通信系统的 关键因素。整个无线通信系统的发展历程也正是最大限度地增加系统 吞吐量、提高频谱利用率及能量效率的过程。在对无线资源分配策略 的研究中，大多数工作的侧重点是基于最大化系统吞吐量或最小化系 统能耗为主体而展开的。而在实际通信系统中，单一性能的优劣往往 无法代表系统整体性能的好坏，更重要的是系统的整体性能的均衡折 衷与配合。本论文在结合前人工作的基础上，致力于从多个不同角度 提升无线通信系统的综合性能，主要研究是基于认知的TD-LTE 系统 MAC 层无线资源分配策略。其中的主要成果如下。
+1)总结了基于OFDM  的无线资源分配算法。论文在第三章分析 对比了当前已知的OFDM  系统常见而且经典的无线资源分配 策略，为后续研究做好准备。
+2)提出一种以最小化频谱破碎度为目标的混合频谱分配算法，旨 在减小频率资源分配过程中造成的频谱“碎片”个数的同时保 证较高的频谱利用率。
+3)提出了一种兼顾系统吞吐量、频谱利用率、用户公平性和能量 效率的TD-LTE 系统MAC 层无线资源分配策略。该策略结合 数字化电视的趋势和“绿色通信”的理念，创新之处在于兼顾 诸多种性能指标，且利用分式优化方法降低了计算复杂度。在 以上工作的基础上，推导并仿真得出在对资源利用和分配时， 多个不同因素的考虑与作用对无线通信系统综合性能的影响。
+
+
+关键字： 认知无线电 OFDM   资源分配 频谱破碎度 能量效率
+WIRELESS                RESOURCE                ALLOCATION                ALGORITHM
+
+FOR            COGNITIVE            RADIO-BASED            TD-LTE            SYSTEM
+
+ABSTRACT
+
+
+
+System throughput, spectrum efficiency and energy efficiency are the main factors that a wireless communication system may concern. The development process of the wireless communication system is also the history to maximize system throughput, spectrum efficiency and energy efficiency. In this thesis, the wireless resource allocation strategy in the MAC layer of the TD-LTE system based on cognitive radio is studied. Main contributions of this paper are shown below.
+1)Chapter  2  analyzes  and  compares  the  currently  radio  resource allocation strategy for OFDM system, then gives feasibilityof the algorithm combined with cognitive radio background.
+2)A new allocation algorithm named MixCASA(Mixed Contiguous and  Aggregated  Spectrum  Allocation  algorithm)for  CR  based TD-LTE Networks is proposed. By combining contiguous with discontiguous   spectrum   allocation   together,   the    algorithm proposed here guarantees the feasibility and spectrum efficiency of the system.
+3)An  energy  efficient  wireless  resource  allocation  algorithm  is proposed,with  overall  and  comprehensive  consideration  of the essential factors such as capacity, energy efficiency, and fairess. Assume that the secondary user obeys the first-in-first-serve rule here, and the simulation results indicates a good performance in  respect to the energy efficiency and energy consumption, which corresponds to the trend of digital TV and the principle of green communication.    The    innovation    is    that    this    algorithm  compromises several considerations to get an overall performance, and  the  use  of  fractional  optimization  methods  reduce  the
+
+KEY WORDS: cognitive radio,OFDM, resource  allocation,  spectrum fragment, energy efficiency
+

@@ -1,0 +1,8 @@
+4.2.3特征嵌入
+reference embedding输入注意力模块，作为查询向量。在这里注意力机制学 习reference embedding和每个token之间相似程度。token随机初始化，是一组 embedding,即模型名称的由来，称为global style tokens, GSTs。在训练阶段在所 有训练序列中共享。注意力模块输出一组组合权重，这些组合权重表示每个style token对reference embedding的贡献，GSTs的加权总和称为特征嵌入，本文指GST 结构中的输出：style embedding。
+style token层由一组style token embeddings和注意力模块组成。原论文种使 用10个样式标记(tokens),认为标记足以表示训练数据中的少量但丰富的韵律维 度。为了匹配文本编码器状态的维数，每个token embedding为256维度。
+本文提出基于GST模型结构的说话人估计方法，在说话人数量估计任务中， 将style embedding作为说话人数量特征表示，并将其传递到softmax层，使用交叉 矯损失函数进行分类训练。本文使用10个token的默认配置，每个token的维度是 256,并在数量估计中假设最多9个说话人数量限制，因此包含静音状态，可视为 10分类问题。可合理的假设10个token正对应10个类别的样式信息。比较基于
+26
+CRNN模型结构的CountNet,基于GST模型结构的说话人估计方法适用于变长的 语音片段。
+最后我们将style embedding用作说话人数量特征表征，将说话人数量视为分 类任务，style embedding输入sofitmax,交叉燔为损失函数，训练分类模型。
+27

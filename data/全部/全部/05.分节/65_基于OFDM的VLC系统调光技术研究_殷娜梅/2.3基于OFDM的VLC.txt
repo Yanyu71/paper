@@ -1,0 +1,2 @@
+2.3基于OFDM的VLC
+OFDM调制技术应用于VLC中所形成的系统叫做OFDM-VLC系统。由于 VLC中传输信号的实值、正极性要求，使得射频中的OFDM无法直接用于VLC 系统。所以，研究适合于VLC的OFDM调制方案就很有必要，为了区别于 RF-OFDM,人们将适用于 VLC 的 OFDM 叫做 Optical OFDM (O-OFDM)。此 外，因为VLC系统需要兼顾照明和通信的双重要求，所以OFDM-VLC系统也 不能例外。下面就从OFDM-VLC系统的O-OFDM调制技术和调光技术两方面 进行论述。

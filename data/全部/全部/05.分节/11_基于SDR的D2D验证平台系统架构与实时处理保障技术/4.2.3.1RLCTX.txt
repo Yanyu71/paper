@@ -1,0 +1,14 @@
+4.2.3.1RLCTX
+RLCTX工作在链路的发送端，对上层调用IP接口层的数据读取接口获取高 层数据，根据目的IP地址进行放入不同的发送等待队列，并报告等待队列的缓冲 情况；对下层实现对数据的分割級联和PDU组装，将IP数据包重组成RLC PDU 提供给MAC层。其提供的主要函数接口如表4-6所示：
+表4-6 RLCTX主要接口
+函数接口定义
+get buffer status 0
+pull buffer (size t req bytes, char *dest)
+refill_buffer_loopO
+RLC TX对MAC和RRM提供get_buffer_status()接口以实现发送队列缓冲报 告。MAC层通过检查发送队列是否为空决定是否启动RTS发送，待发送数据量
+36
+大小则会影响RRM单次发送时资源调度的策略。
+RLC TX对MAC提供pull_buffer()接口实现对发送队列数据的访问。当一个 子帧的资源调度完成后，RRM决定本次传输中能发送的数据负载量，RLCTX执 行调用该接口从发送队列获取相应长度的数据，进行数据包的拆分和合并，添加 RLC包头组成RLC PDU,提供给MAC作为MAC SDU。
+RLC TX通过refill—buffer_loopO接口调用IP接口层提供的服务，获取高层要 发送的IP数据包。为了避免系统逻辑引入额外的系统延时，这个服务通过另一个 线程以异步方式实现，并通过互斥锁实现了对数据缓冲区的同步。
+RLC TX接口的功能如图4-7所示。
+图4-7 RLC TX接口功能示意图

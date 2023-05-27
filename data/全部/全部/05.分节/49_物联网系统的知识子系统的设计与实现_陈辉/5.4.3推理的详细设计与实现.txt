@@ -1,0 +1,46 @@
+5.4.3推理的详细设计与实现
+结合之前的的设计，事件推理时序图如图5.14所示:
+HL hr h .
+图5-14事件推理时序图
+具体类图如图5-15所示:
+Client类接收目标请求对象Targetlnfb,采用一个Deducer类作为推理的主类。此类 然后调用之前的目标解析进行主题订阅、知识库查询并翻译、目标一阶逻辑表达式生成。 查询知识库并翻译所得的BoolExpr存放在一个名叫scopeDeduceSolver的Solver对象中, 用于后续事件范围推理。目标一阶逻辑表达式生成得到一个Solver的列表list,列表中 的每一个Solver保存一^推理目标表达式BoolExpr的逻辑反，即利用Context的 mkNot(BoolExpr)接口获得一个布尔表达式的逻辑反。
+然后，每来一个事件，首先利用IncidentFactory接口生成一个事件对象。Incident 是Java的接口，目前实现此接口的只有Trafficincident类。然后利用IncidentToKnowledge 将事件对象映射生成一 Knowdedge对象，如果不存在映射就将事件进行销毁。Kowledge 也是接口类，目前具体实现的只有IncidentKowledge。然后利用Knowledge对象判断是 否在推理范围内，范围推理由scopeDeduceSolver实现。如果事件不属于目标推理范围 内则将事件对象和事件知识对象都销毁。如果属于目标推理范围则将事件对象和事件知 识对象交给Deducer进行推理。
+属于推理范围的事件会加入到一个队列之中，如果队列内包含的事件时间跨度超过 一定范围就开始对队列内所有的数据进行一次对理，每个事件根据处理最终会生成一个 布尔表达式BoolExpr,根据其与哪些目标相关添加到相应的Solver中。然后调用Solver 的check。接口，如果结果等于Status.UNSATISFIABLE则证明相应的目标成立。如果 结果等于Status.SATISFIABLE则证明相应的目标不成立。并将结果存储在MongoDB 中。主要涉及的类有：Client类、Deducer类、IncidentFactory 类、TargetParser类、 IncidentToKnowledge 类等。
+表5-24对上述的这些类和对应的实现功能作了简要介绍：
+表5-24推理主要涉及类
+类/接口	功能描述
+Client	用丁?接收推理目标，包括参数的提取和转化。从发布订阅接收 事件数据。调用査询知识库API,过滤无用数据。
+IncidentFactory	将接收到的事件映射为对象。
+Deducer	推理主类。
+Deduce(BoolExpr)将布尔表达式添加到对应Solver中，调用 Solver的check()得到推理结果。
+TargetParser	解析日标对象，具体实现在目标解析模块。
+IncidentToKnowledge	将事件对象映射为知识库中的知识对象。
+表 5-25 Deducer 类 deduce 方法
+方法	protected void deduce(Knowledge knowledge.
+Incident incident)
+描述	首先根据knowledge生成布尔表达式进行范围推理。如果不在推理范围内 则返冋。如果在推理范围内则根据incident生成布尔表达式添加到成员变 量List<Solver>的每个Solver中，调用Solver的check()接口得到推理结果， 并将推理结果存储到数据库中。
+参数	@Param Knowledge事件映射生成的知识对象。
+@Param Incident解析事件生成的Java对象。
+返冋	Void
+5-26事件推理核心算法
+标题	事件推理核心算法
+输入	String message 事件信息
+输出	Boolean
+〃事件对象生成
+1:	Incident incident = IncidentFactory.convertlncident(message)
+//事件映射知识对象
+2:	Knowledge = incidentToKnowledge.getKnowledge(incident);
+3:	if (Knowledge = null):
+4:	　　　destroy incident;
+5:	BoolExpr expr = mkBoolExpr(knowledge);
+//	范围推理
+6:	scopeDeduceSolver.add(expr);
+7:	if (scopeDeduceSolver.check() = Status.UNSATIFIABLE):
+8:	　　　destroy incident and knowledge ;
+//	如果距离上次推理已经过去interval Ibl fnJ,则进行推理
+9:	if (time - lastTime) > interval :
+10	: BoolExpr expr2 = boolmkBoolExpr(incident, knowledge)
+11	:	for (Solver solver: list):
+12	　　　　solver.add(expr2);
+13	　　　　if(solver.check() == Status.UNSATISFIABLE):
+14	proved; //推理成功

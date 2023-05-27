@@ -1,0 +1,12 @@
+摘要
+设备到设备(Device-to-Device, D2D)的通信是设备之间不通过基 站或其他AP (Access Point)转发而进行直接通信的技术，将D2D通信 同传统的蜂窝相结合，可以获得更优的用户体验以及更高的传输速率, 因此D2D通信成为IMT-Advanced系统的关键技术之一。
+传统蜂窝组播服务质量受限于信道质量最差的边缘用户，通过 引入D2D通信技术，利用设备间短距离通信进行中继转发，可以有 效的扩大组播服务的覆盖范围，减少组播的能耗，提高组播的传输速 率及容量。
+针对D2D与蜂窝网的混合网络，论文首先简要介绍了 D2D通信 的模型及关键技术，包括邻居发现、干扰控制等，并对D2D辅助组 播的场景进行了详细介绍；其次，详细总结了传统网络中已有的成熟 簇头选取算法，并对这些算法进行了分析和比较；最后针对D2D辅 助组播的场景，提出了基于节点干扰值及相对移动性的加权算法，在 优化组播通信速率的同时，保证了数据发送过程中的簇结构稳定，提 升了组播服务的容量。通过计算机仿真，验证了所提分簇算法的正确 性及有效性。
+关键词：D2D辅助组播，分簇，中继，容量
+RESEARCH ON ALGORITHM OF CLUSTER HEAD
+SELECTION IN D2D MULTICAST COMMUNICATION
+ABSTRACT
+Device-to-Device (D2D) communication, which promises direct communication between devices without relaying via base stations or AP(Access Point), turns out to be a key technology for IMT-Advanced system, due to its potential in improving the user experience and quality of transmission. Through combining multicast communication with D2D technology, multicast communication can obtain extended coverage, better data transfer rate and capacity.
+The quality of multicast service in traditional cellular is limited by the worst channel quality of edge users. Through introducing the D2D communication technology, the use of short distance communication between devices for relaying can effectively enlarge the coverage, reduce the energy consumption, and increase the transmission rate and capacity of multicast service.
+In view of the D2D hybrid network and cellular network, this paper first introduces the D2D communication model and key technology briefly, including the neighbor discovery, interference control etc, and the scene of multicast assisted by D2D is introduced in detail; Second we introduces the mature algorithms of traditional network systematically; Finally according to scenes of multicast communication assisted by D2D communication, we propose a weighted clustering algorithm based on interference and relative mobility of node, which ensures the stability of cluster architecture in the data transfer process and improves multicast capacity. By simulation, we compares our algorithm with the traditional algorithms, which advantageously proves the correctness and validity of our algorithm
+KEYWORDS: Multicast, D2D, Cluster, Relay, Capacity

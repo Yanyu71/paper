@@ -1,0 +1,4 @@
+4.6本章小结
+本章实现了基于NB-IoT协议的热力监测系统的设计，分别对NB-IoT客户 端设备、电信CDP Server以及第三方后台应用的实现方式进行了描述。在系统 的设备端实现了基于动态电源管理技术的低功耗解决方案，并实现了设备端的消 息重传机制，在系统的服务端实现了针对NB-IoT数据高并发场景的消息处理方 案。最后，分别对上述的方案进行了对应的功能测试，验证了方案设计的有效性 及实用性。
+53
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved, http://www.cnki.net

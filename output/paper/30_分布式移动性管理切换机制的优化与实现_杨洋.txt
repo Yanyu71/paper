@@ -1,0 +1,1214 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "移动性管理的产生和发展",
+            "en": "The emergence and development of mobility management"
+        },
+        {
+            "title": "传统网络中移动性管理相关研究",
+            "en": "Related research on mobility management in traditional networks"
+        },
+        {
+            "title": "移动IPv6协议(MIPv6)",
+            "en": "Mobile IPv6 protocol (MIPv6)"
+        },
+        {
+            "title": "代理移动IPv6协议(PMIPv6)",
+            "en": "Proxy Mobile IPv6 protocol (PMIPv6)"
+        }
+    ],
+    "relations": [
+        {
+            "source": "移动性管理的产生和发展",
+            "target": "传统网络中移动性管理相关研究",
+            "type": "包含"
+        },
+        {
+            "source": "传统网络中移动性管理相关研究",
+            "target": "移动IPv6协议(MIPv6)",
+            "type": "包含"
+        },
+        {
+            "source": "传统网络中移动性管理相关研究",
+            "target": "代理移动IPv6协议(PMIPv6)",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MIPv6协议", "en": "MIPv6 Protocol"},
+        {"title": "PMIPv6协议", "en": "PMIPv6 Protocol"},
+        {"title": "LMA", "en": "LMA"},
+        {"title": "MAG", "en": "MAG"},
+        {"title": "PMIPv6架构", "en": "PMIPv6 Architecture"},
+        {"title": "移动性管理面临的挑战", "en": "Challenges of Mobility Management"}
+    ],
+    "relations": [
+        {"source": "MIPv6协议", "target": "PMIPv6协议", "type": "基于关系"},
+        {"source": "PMIPv6协议", "target": "LMA", "type": "代替关系"},
+        {"source": "PMIPv6协议", "target": "MAG", "type": "代替关系"},
+        {"source": "PMIPv6协议", "target": "IETF工作组", "type": "标准化关系"},
+        {"source": "PMIPv6架构", "target": "LMA", "type": "包含关系"},
+        {"source": "PMIPv6架构", "target": "MAG", "type": "包含关系"},
+        {"source": "MAG", "target": "LMA", "type": "通信关系"},
+        {"source": "移动性管理面临的挑战", "target": "集中式移动性管理方案", "type": "对比关系"},
+        {"source": "移动性管理面临的挑战", "target": "DMM方案", "type": "对比关系"},
+        {"source": "DMM方案", "target": "移动锚点", "type": "分布式部署关系"},
+        {"source": "IETFDMM方案", "target": "CMD", "type": "信令关系"},
+        {"source": "IETFDMM方案", "target": "最优路径", "type": "问题关系"},
+        {"source": "sMAAR", "target": "nMAAR", "type": "切换关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "移动性管理的产生和发展过程", "en": "The emergence and development of mobility management"},
+        {"title": "集中式移动性管理协议MIPv6和PMIPv6", "en": "Centralized mobility management protocols MIPv6 and PMIPv6"},
+        {"title": "分布式移动性管理的发展情况", "en": "The development of distributed mobility management"},
+        {"title": "软件定义网络(SDN)和网络功能虚拟化(NFV)", "en": "Software-defined networking (SDN) and network function virtualization (NFV)"},
+        {"title": "基于虚拟化的VDMM方案", "en": "VDMM solution based on virtualization"},
+        {"title": "自适应负载均衡算法", "en": "Adaptive load balancing algorithm"}
+    ],
+    "relations": [
+        {"source": "移动性管理的产生和发展过程", "target": "集中式移动性管理协议MIPv6和PMIPv6", "type": "包含"},
+        {"source": "移动性管理的产生和发展过程", "target": "分布式移动性管理的发展情况", "type": "包含"},
+        {"source": "分布式移动性管理的发展情况", "target": "完全分布式和部分分布式移动性管理方案", "type": "包含"},
+        {"source": "分布式移动性管理的发展情况", "target": "软件定义网络(SDN)和网络功能虚拟化(NFV)", "type": "包含"},
+        {"source": "基于虚拟化的VDMM方案", "target": "分布式移动性管理的发展情况", "type": "基于"},
+        {"source": "自适应负载均衡算法", "target": "分布式移动性管理的发展情况", "type": "基于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "集中式移动性管理方案存在的问题",
+            "en": "Issues with centralized mobility management solutions"
+        },
+        {
+            "title": "移动锚点",
+            "en": "Mobile anchor point"
+        },
+        {
+            "title": "完全分布式移动性管理方案",
+            "en": "Fully distributed mobility management solution"
+        },
+        {
+            "title": "部分分布式移动性管理方案",
+            "en": "Partially distributed mobility management solution"
+        },
+        {
+            "title": "PMIPv6协议",
+            "en": "PMIPv6 protocol"
+        }
+    ],
+    "relations": [
+        {
+            "source": "集中式移动性管理方案存在的问题",
+            "target": "移动锚点",
+            "type": "包含"
+        },
+        {
+            "source": "移动锚点",
+            "target": "集中式移动性管理方案",
+            "type": "管理"
+        },
+        {
+            "source": "移动锚点",
+            "target": "完全分布式移动性管理方案",
+            "type": "替代"
+        },
+        {
+            "source": "完全分布式移动性管理方案",
+            "target": "控制层",
+            "type": "分布式"
+        },
+        {
+            "source": "完全分布式移动性管理方案",
+            "target": "数据层",
+            "type": "分布式"
+        },
+        {
+            "source": "完全分布式移动性管理方案",
+            "target": "移动锚点",
+            "type": "管理"
+        },
+        {
+            "source": "完全分布式移动性管理方案",
+            "target": "部分分布式移动性管理方案",
+            "type": "替代"
+        },
+        {
+            "source": "部分分布式移动性管理方案",
+            "target": "控制层",
+            "type": "集中式"
+        },
+        {
+            "source": "部分分布式移动性管理方案",
+            "target": "数据层",
+            "type": "分布式"
+        },
+        {
+            "source": "部分分布式移动性管理方案",
+            "target": "移动锚点",
+            "type": "管理"
+        },
+        {
+            "source": "部分分布式移动性管理方案",
+            "target": "PMIPv6协议",
+            "type": "继承"
+        },
+        {
+            "source": "PMIPv6协议",
+            "target": "集中式移动性管理方案",
+            "type": "属于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "PMIPv6分布式移动性管理方案", "en": "PMIPv6 Distributed Mobility Management Scheme"},
+        {"title": "MAAR", "en": "MAAR"},
+        {"title": "CMD", "en": "CMD"},
+        {"title": "部分分布式移动性管理方案", "en": "Partial Distributed Mobility Management Scheme"},
+        {"title": "SDN移动性管理", "en": "SDN Mobility Management"},
+        {"title": "DMM协议", "en": "DMM Protocol"}
+    ],
+    "relations": [
+        {"source": "PMIPv6分布式移动性管理方案", "target": "MAAR", "type": "包含"},
+        {"source": "PMIPv6分布式移动性管理方案", "target": "CMD", "type": "包含"},
+        {"source": "PMIPv6分布式移动性管理方案", "target": "部分分布式移动性管理方案", "type": "演化"},
+        {"source": "部分分布式移动性管理方案", "target": "MAAR", "type": "包含"},
+        {"source": "部分分布式移动性管理方案", "target": "CMD", "type": "包含"},
+        {"source": "SDN移动性管理", "target": "DMM协议", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "DMM协议", "en": "DMM Protocol"},
+        {"title": "SDN技术", "en": "SDN Technology"},
+        {"title": "移动性管理", "en": "Mobility Management"},
+        {"title": "三角路由问题", "en": "Triangle Routing Problem"},
+        {"title": "控制层", "en": "Control Layer"},
+        {"title": "OpenFlow协议", "en": "OpenFlow Protocol"},
+        {"title": "SDN控制器", "en": "SDN Controller"},
+        {"title": "南向接口", "en": "Southbound Interface"},
+        {"title": "北向接口", "en": "Northbound Interface"},
+        {"title": "NFV移动性管理", "en": "NFV Mobility Management"},
+        {"title": "网络功能虚拟化", "en": "Network Function Virtualization"}
+    ],
+    "relations": [
+        {"source": "DMM协议", "target": "SDN技术", "type": "应用"},
+        {"source": "SDN技术", "target": "移动性管理", "type": "解决"},
+        {"source": "SDN技术", "target": "三角路由问题", "type": "解决"},
+        {"source": "SDN技术", "target": "控制层", "type": "解耦"},
+        {"source": "SDN技术", "target": "OpenFlow协议", "type": "核心协议"},
+        {"source": "SDN技术", "target": "SDN控制器", "type": "核心组件"},
+        {"source": "SDN技术", "target": "南向接口", "type": "连接"},
+        {"source": "SDN技术", "target": "北向接口", "type": "连接"},
+        {"source": "NFV移动性管理", "target": "网络功能虚拟化", "type": "基础技术"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "虚拟机", "en": "Virtual Machine"},
+        {"title": "在线迁移", "en": "Live Migration"},
+        {"title": "虚拟化数据中心", "en": "Virtualized Data Center"},
+        {"title": "网络功能虚拟化", "en": "Network Function Virtualization (NFV)"},
+        {"title": "NFV架构", "en": "NFV Architecture"},
+        {"title": "虚拟网络功能(VNF)", "en": "Virtual Network Function (VNF)"},
+        {"title": "软件定义网络(SDN)", "en": "Software Defined Network (SDN)"},
+        {"title": "网络切片", "en": "Network Slicing"},
+        {"title": "分布式移动性管理", "en": "Distributed Mobility Management (DMM)"},
+        {"title": "完全分布式移动性管理方案", "en": "Fully Distributed Mobility Management (FDMM)"},
+        {"title": "VDMM方案", "en": "Virtualized Distributed Mobility Management (VDMM)"}
+    ],
+    "relations": [
+        {"source": "虚拟机", "target": "虚拟化数据中心", "type": "属于"},
+        {"source": "虚拟机", "target": "在线迁移", "type": "相关"},
+        {"source": "在线迁移", "target": "虚拟化数据中心", "type": "实现"},
+        {"source": "虚拟化数据中心", "target": "网络功能虚拟化", "type": "实现"},
+        {"source": "网络功能虚拟化", "target": "VNF", "type": "实现"},
+        {"source": "网络功能虚拟化", "target": "NFV架构", "type": "包含"},
+        {"source": "NFV架构", "target": "VNF", "type": "包含"},
+        {"source": "NFV架构", "target": "NFV管理和编排", "type": "包含"},
+        {"source": "NFV管理和编排", "target": "VNF", "type": "管理"},
+        {"source": "SDN", "target": "NFV架构", "type": "关联"},
+        {"source": "网络切片", "target": "NFV架构", "type": "关联"},
+        {"source": "分布式移动性管理", "target": "完全分布式移动性管理方案", "type": "包含"},
+        {"source": "分布式移动性管理", "target": "VDMM方案", "type": "关联"},
+        {"source": "完全分布式移动性管理方案", "target": "广播消息", "type": "使用"},
+        {"source": "VDMM方案", "target": "分布式移动性管理", "type": "实现"},
+        {"source": "VDMM方案", "target": "虚拟化数据中心", "type": "实现"},
+        {"source": "VDMM方案", "target": "SDN", "type": "关联"},
+        {"source": "VDMM方案", "target": "网络切片", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "IETFDMM方案中存在的问题",
+            "en": "Issues in IETFDMM scheme"
+        },
+        {
+            "title": "VDMM方案架构",
+            "en": "Architecture of VDMM scheme"
+        },
+        {
+            "title": "VDMM方法流程",
+            "en": "Process of VDMM scheme"
+        },
+        {
+            "title": "虚拟AP的创建过程",
+            "en": "Process of creating virtual AP"
+        }
+    ],
+    "relations": [
+        {
+            "source": "IETFDMM方案中存在的问题",
+            "target": "VDMM方案架构",
+            "type": "包含"
+        },
+        {
+            "source": "IETFDMM方案中存在的问题",
+            "target": "VDMM方法流程",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案架构",
+            "target": "VDMM方法流程",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方法流程",
+            "target": "虚拟AP的创建过程",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "虚拟AP",
+            "en": "Virtual AP"
+        },
+        {
+            "title": "公共静态虚拟AP",
+            "en": "Public Static Virtual AP"
+        },
+        {
+            "title": "动态虚拟AP",
+            "en": "Dynamic Virtual AP"
+        },
+        {
+            "title": "身份验证",
+            "en": "Authentication"
+        },
+        {
+            "title": "移动性协议",
+            "en": "Mobility Protocol"
+        },
+        {
+            "title": "家乡地址",
+            "en": "Home Address"
+        },
+        {
+            "title": "接入注册流程",
+            "en": "Access Registration Process"
+        },
+        {
+            "title": "映射表",
+            "en": "Mapping Table"
+        }
+    ],
+    "relations": [
+        {
+            "source": "集中处理器",
+            "target": "物理AP",
+            "type": "配置文件传输"
+        },
+        {
+            "source": "物理AP",
+            "target": "虚拟AP",
+            "type": "创建"
+        },
+        {
+            "source": "虚拟AP",
+            "target": "用户",
+            "type": "接入"
+        },
+        {
+            "source": "动态虚拟AP",
+            "target": "用户",
+            "type": "创建"
+        },
+        {
+            "source": "用户",
+            "target": "服务器",
+            "type": "请求"
+        },
+        {
+            "source": "服务器",
+            "target": "物理AP",
+            "type": "响应"
+        },
+        {
+            "source": "物理AP",
+            "target": "用户",
+            "type": "身份验证"
+        },
+        {
+            "source": "移动性协议",
+            "target": "节点",
+            "type": "主机标识分配"
+        },
+        {
+            "source": "节点",
+            "target": "网络",
+            "type": "移动性工作"
+        },
+        {
+            "source": "接入注册流程",
+            "target": "API",
+            "type": "消息传输"
+        },
+        {
+            "source": "API",
+            "target": "控制器",
+            "type": "绑定更新消息传输"
+        },
+        {
+            "source": "控制器",
+            "target": "虚拟AP",
+            "type": "分配"
+        },
+        {
+            "source": "控制器",
+            "target": "AP",
+            "type": "确认消息传输"
+        },
+        {
+            "source": "API",
+            "target": "虚拟AP",
+            "type": "分配"
+        },
+        {
+            "source": "API",
+            "target": "映射表",
+            "type": "表项添加"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VDMM方案", "en": "VDMM scheme"},
+        {"title": "移动性管理网络架构", "en": "Mobile network architecture"},
+        {"title": "PBU/PBA消息", "en": "PBU/PBA message"},
+        {"title": "双向隧道", "en": "Bidirectional tunnel"},
+        {"title": "虚拟化", "en": "Virtualization"},
+        {"title": "VAP", "en": "VAP"},
+        {"title": "FH-PMIPV6方案", "en": "FH-PMIPV6 scheme"},
+        {"title": "切换流程", "en": "Handover process"},
+        {"title": "信令流程", "en": "Signaling process"},
+        {"title": "数据通信", "en": "Data communication"}
+    ],
+    "relations": [
+        {"source": "移动性管理网络架构", "target": "VDMM方案", "type": "属于"},
+        {"source": "PBU/PBA消息", "target": "移动性管理网络架构", "type": "包含"},
+        {"source": "双向隧道", "target": "移动性管理网络架构", "type": "包含"},
+        {"source": "虚拟化", "target": "VDMM方案", "type": "应用于"},
+        {"source": "VAP", "target": "VDMM方案", "type": "应用于"},
+        {"source": "FH-PMIPV6方案", "target": "VDMM方案", "type": "借鉴"},
+        {"source": "切换流程", "target": "VDMM方案", "type": "应用于"},
+        {"source": "信令流程", "target": "VDMM方案", "type": "应用于"},
+        {"source": "数据通信", "target": "VDMM方案", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "移动切换前的数据通信",
+            "en": "Data communication before mobile handover"
+        },
+        {
+            "title": "移动切换过程中的数据通信",
+            "en": "Data communication during mobile handover"
+        },
+        {
+            "title": "移动切换后的数据通信",
+            "en": "Data communication after mobile handover"
+        },
+        {
+            "title": "移动性管理分析模型",
+            "en": "Analysis model for mobility management"
+        },
+        {
+            "title": "切换延迟模型",
+            "en": "Handover delay model"
+        },
+        {
+            "title": "切换延时",
+            "en": "Handover delay"
+        },
+        {
+            "title": "丢包率",
+            "en": "Packet loss rate"
+        },
+        {
+            "title": "信令开销",
+            "en": "Signaling overhead"
+        },
+        {
+            "title": "VDMM方案",
+            "en": "VDMM scheme"
+        },
+        {
+            "title": "IETF-DMM方案",
+            "en": "IETF-DMM scheme"
+        }
+    ],
+    "relations": [
+        {
+            "source": "移动切换前的数据通信",
+            "target": "移动切换过程中的数据通信",
+            "type": "包含"
+        },
+        {
+            "source": "移动切换过程中的数据通信",
+            "target": "移动切换后的数据通信",
+            "type": "包含"
+        },
+        {
+            "source": "移动性管理分析模型",
+            "target": "切换延迟模型",
+            "type": "包含"
+        },
+        {
+            "source": "移动性管理分析模型",
+            "target": "切换延时",
+            "type": "关联"
+        },
+        {
+            "source": "移动性管理分析模型",
+            "target": "丢包率",
+            "type": "关联"
+        },
+        {
+            "source": "移动性管理分析模型",
+            "target": "信令开销",
+            "type": "关联"
+        },
+        {
+            "source": "切换延迟模型",
+            "target": "VDMM方案",
+            "type": "适用于"
+        },
+        {
+            "source": "切换延迟模型",
+            "target": "IETF-DMM方案",
+            "type": "适用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "无线链路传输失败的可能性",
+            "en": "Probability of wireless link transmission failure"
+        },
+        {
+            "title": "无线网络发送数据包的延迟表达式",
+            "en": "Delay expression for sending data packets in wireless networks"
+        },
+        {
+            "title": "本章中需要用到的相关符号及含义",
+            "en": "Related symbols and meanings used in this chapter"
+        },
+        {
+            "title": "分布式移动性管理方案VDMM",
+            "en": "Distributed mobility management scheme VDMM"
+        },
+        {
+            "title": "VDMM方案的优点",
+            "en": "Advantages of VDMM scheme"
+        },
+        {
+            "title": "切换延迟与丢包率",
+            "en": "Switching delay and packet loss rate"
+        },
+        {
+            "title": "IETFDMM方案中的切换流程",
+            "en": "Switching process in IETFDMM scheme"
+        },
+        {
+            "title": "VDMM方案中的切换流程",
+            "en": "Switching process in VDMM scheme"
+        },
+        {
+            "title": "VDMM方案中的切换准备阶段",
+            "en": "Switching preparation phase in VDMM scheme"
+        }
+    ],
+    "relations": [
+        {
+            "source": "无线链路传输失败的可能性",
+            "target": "无线网络发送数据包的延迟表达式",
+            "type": "包含"
+        },
+        {
+            "source": "本章中需要用到的相关符号及含义",
+            "target": "无线网络发送数据包的延迟表达式",
+            "type": "包含"
+        },
+        {
+            "source": "分布式移动性管理方案VDMM",
+            "target": "切换延迟与丢包率",
+            "type": "涉及"
+        },
+        {
+            "source": "分布式移动性管理方案VDMM",
+            "target": "VDMM方案的优点",
+            "type": "包含"
+        },
+        {
+            "source": "IETFDMM方案中的切换流程",
+            "target": "切换延迟与丢包率",
+            "type": "涉及"
+        },
+        {
+            "source": "VDMM方案中的切换流程",
+            "target": "切换延迟与丢包率",
+            "type": "涉及"
+        },
+        {
+            "source": "VDMM方案中的切换准备阶段",
+            "target": "VDMM方案中的切换流程",
+            "type": "前置"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "VDMM方案",
+            "en": "VDMM Scheme"
+        },
+        {
+            "title": "IETF切换方案",
+            "en": "IETF Handover Scheme"
+        },
+        {
+            "title": "链路层建立延迟",
+            "en": "Link Layer Establishment Delay"
+        },
+        {
+            "title": "验证用户身份的延迟",
+            "en": "User Authentication Delay"
+        },
+        {
+            "title": "VDMM方案绑定注册过程的延迟",
+            "en": "VDMM Binding Registration Delay"
+        },
+        {
+            "title": "丢包率",
+            "en": "Packet Loss Rate"
+        },
+        {
+            "title": "会话恢复时间",
+            "en": "Session Recovery Time"
+        },
+        {
+            "title": "信令开销",
+            "en": "Signaling Overhead"
+        },
+        {
+            "title": "MAAR",
+            "en": "Mobile Access Anchor Router"
+        },
+        {
+            "title": "CMD",
+            "en": "Centralized Mobility Database"
+        },
+        {
+            "title": "PBU/PBA消息",
+            "en": "Proxy Binding Update/Proxy Binding Acknowledgement Message"
+        },
+        {
+            "title": "VAPMoveRequest/VAPDuplication/VAPMoveConfirm消息",
+            "en": "Virtual AP Move Request/Duplication/Confirm Message"
+        }
+    ],
+    "relations": [
+        {
+            "source": "VDMM方案",
+            "target": "IETF切换方案",
+            "type": "类似"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "链路层建立延迟",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "验证用户身份的延迟",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "VDMM方案绑定注册过程的延迟",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "丢包率",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "会话恢复时间",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "信令开销",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "MAAR",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "CMD",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "PBU/PBA消息",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "VAPMoveRequest/VAPDuplication/VAPMoveConfirm消息",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VDMM方案", "en": "VDMM scheme"},
+        {"title": "IETFDMM方案", "en": "IETFDMM scheme"},
+        {"title": "移动性管理", "en": "Mobility management"},
+        {"title": "流量优化", "en": "Traffic optimization"},
+        {"title": "负载均衡", "en": "Load balancing"},
+        {"title": "SSF方法", "en": "SSF method"},
+        {"title": "LLF方法", "en": "LLF method"},
+        {"title": "小区呼吸方法", "en": "Cell breathing method"},
+        {"title": "SDN", "en": "SDN"}
+    ],
+    "relations": [
+        {"source": "VDMM方案", "target": "移动性管理", "type": "属于"},
+        {"source": "IETFDMM方案", "target": "移动性管理", "type": "属于"},
+        {"source": "VDMM方案", "target": "流量优化", "type": "涉及"},
+        {"source": "移动性管理", "target": "流量优化", "type": "相关"},
+        {"source": "负载均衡", "target": "移动性管理", "type": "属于"},
+        {"source": "SSF方法", "target": "负载均衡", "type": "属于"},
+        {"source": "LLF方法", "target": "负载均衡", "type": "属于"},
+        {"source": "小区呼吸方法", "target": "负载均衡", "type": "属于"},
+        {"source": "SDN", "target": "负载均衡", "type": "涉及"},
+        {"source": "SDN", "target": "移动性管理", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "负载均衡算法",
+            "en": "Load balancing algorithm"
+        },
+        {
+            "title": "WLAN",
+            "en": "WLAN"
+        },
+        {
+            "title": "RSSI",
+            "en": "RSSI"
+        },
+        {
+            "title": "VDMM方案",
+            "en": "VDMM scheme"
+        },
+        {
+            "title": "AP",
+            "en": "AP"
+        },
+        {
+            "title": "用户体验",
+            "en": "User experience"
+        },
+        {
+            "title": "FORWARD-VAP-LOAD协议信令",
+            "en": "FORWARD-VAP-LOAD protocol message"
+        },
+        {
+            "title": "ALB算法",
+            "en": "ALB algorithm"
+        },
+        {
+            "title": "阈值",
+            "en": "Threshold"
+        }
+    ],
+    "relations": [
+        {
+            "source": "负载均衡算法",
+            "target": "WLAN",
+            "type": "属于"
+        },
+        {
+            "source": "WLAN",
+            "target": "用户体验",
+            "type": "影响"
+        },
+        {
+            "source": "负载均衡算法",
+            "target": "RSSI",
+            "type": "基于"
+        },
+        {
+            "source": "负载均衡算法",
+            "target": "VDMM方案",
+            "type": "基于"
+        },
+        {
+            "source": "负载均衡算法",
+            "target": "AP",
+            "type": "涉及"
+        },
+        {
+            "source": "FORWARD-VAP-LOAD协议信令",
+            "target": "负载均衡算法",
+            "type": "使用"
+        },
+        {
+            "source": "ALB算法",
+            "target": "负载均衡算法",
+            "type": "实现"
+        },
+        {
+            "source": "阈值",
+            "target": "ALB算法",
+            "type": "参数"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于虚拟化的分布式移动性管理切换优化方法", "en": "Virtualization-based distributed mobility management switching optimization method"},
+        {"title": "分布式移动性管理方案中存在的问题", "en": "Problems in distributed mobility management solutions"},
+        {"title": "VDMM方案", "en": "VDMM solution"},
+        {"title": "分布式移动性管理的分析模型", "en": "Analysis model of distributed mobility management"},
+        {"title": "切换延迟模型", "en": "Switching delay model"},
+        {"title": "自适应负载均衡ALB算法", "en": "Adaptive load balancing ALB algorithm"}
+    ],
+    "relations": [
+        {"source": "分布式移动性管理方案中存在的问题", "target": "基于虚拟化的分布式移动性管理切换优化方法", "type": "包含"},
+        {"source": "基于虚拟化的分布式移动性管理切换优化方法", "target": "VDMM方案", "type": "实现"},
+        {"source": "VDMM方案", "target": "用户接入注册", "type": "涉及场景"},
+        {"source": "VDMM方案", "target": "用户切换过程", "type": "涉及场景"},
+        {"source": "VDMM方案", "target": "切换前、切换中、切换后三中数据通信过程", "type": "涉及场景"},
+        {"source": "分布式移动性管理的分析模型", "target": "切换延迟模型", "type": "包含"},
+        {"source": "分布式移动性管理方案中存在的问题", "target": "自适应负载均衡ALB算法", "type": "包含"},
+        {"source": "自适应负载均衡ALB算法", "target": "负载不均衡的检测机制", "type": "包含"},
+        {"source": "自适应负载均衡ALB算法", "target": "用户的虚拟AP从负载高的AP快速地迁移到负载较低且RSSI值合适的AP上", "type": "包含"},
+        {"source": "自适应负载均衡ALB算法", "target": "控制器执行负载均衡算法", "type": "包含"},
+        {"source": "自适应负载均衡ALB算法", "target": "算法的执行过程", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Docker平台",
+            "en": "Docker platform"
+        },
+        {
+            "title": "容器",
+            "en": "Container"
+        },
+        {
+            "title": "镜像",
+            "en": "Image"
+        },
+        {
+            "title": "VDMM方案",
+            "en": "VDMM solution"
+        },
+        {
+            "title": "API",
+            "en": "API"
+        },
+        {
+            "title": "VAP",
+            "en": "Virtual AP"
+        },
+        {
+            "title": "接入处理模块",
+            "en": "Access processing module"
+        },
+        {
+            "title": "消息处理模块",
+            "en": "Message processing module"
+        },
+        {
+            "title": "位置管理模块",
+            "en": "Location management module"
+        },
+        {
+            "title": "加密/解密模块",
+            "en": "Encryption/decryption module"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Docker平台",
+            "target": "容器",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "API",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "VAP",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "接入处理模块",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "消息处理模块",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "位置管理模块",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案",
+            "target": "加密/解密模块",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "消息处理模块", "en": "Message Processing Module"},
+        {"title": "位置管理模块", "en": "Location Management Module"},
+        {"title": "Docker平台验证VDMM方案", "en": "Verification of VDMM Scheme on Docker Platform"}
+    ],
+    "relations": [
+        {"source": "消息处理模块", "target": "移动上下文信息", "type": "处理"},
+        {"source": "消息处理模块", "target": "目的地址", "type": "解析"},
+        {"source": "消息处理模块", "target": "控制器", "type": "查询"},
+        {"source": "位置管理模块", "target": "用户信息", "type": "维护"},
+        {"source": "位置管理模块", "target": "缓存映射表信息", "type": "初始化"},
+        {"source": "Docker平台验证VDMM方案", "target": "网络元件", "type": "模拟"},
+        {"source": "Docker平台验证VDMM方案", "target": "VAP2", "type": "创建"},
+        {"source": "Docker平台验证VDMM方案", "target": "VAPL", "type": "创建"},
+        {"source": "Docker平台验证VDMM方案", "target": "Docker镜像", "type": "生成"},
+        {"source": "Docker平台验证VDMM方案", "target": "容器", "type": "部署"},
+        {"source": "Docker平台验证VDMM方案", "target": "MN", "type": "测试"},
+        {"source": "Docker平台验证VDMM方案", "target": "CN", "type": "测试"},
+        {"source": "Docker平台验证VDMM方案", "target": "VLC视频流", "type": "测试"},
+        {"source": "Docker平台验证VDMM方案", "target": "AP3", "type": "移动"},
+        {"source": "Docker平台验证VDMM方案", "target": "虚拟AP", "type": "克隆"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "VDMM方案和IETFDMM方案性能对比",
+            "en": "Comparison of performance between VDMM scheme and IETFDMM scheme"
+        },
+        {
+            "title": "切换延迟",
+            "en": "Handover delay"
+        },
+        {
+            "title": "丢包率",
+            "en": "Packet loss rate"
+        },
+        {
+            "title": "子网半径",
+            "en": "Subnet radius"
+        },
+        {
+            "title": "无线链路失败率",
+            "en": "Wireless link failure rate"
+        }
+    ],
+    "relations": [
+        {
+            "source": "VDMM方案和IETFDMM方案性能对比",
+            "target": "切换延迟",
+            "type": "包含"
+        },
+        {
+            "source": "VDMM方案和IETFDMM方案性能对比",
+            "target": "丢包率",
+            "type": "包含"
+        },
+        {
+            "source": "切换延迟",
+            "target": "子网半径",
+            "type": "影响"
+        },
+        {
+            "source": "切换延迟",
+            "target": "无线链路失败率",
+            "type": "影响"
+        },
+        {
+            "source": "子网半径",
+            "target": "切换延迟",
+            "type": "影响"
+        },
+        {
+            "source": "无线链路失败率",
+            "target": "切换延迟",
+            "type": "影响"
+        },
+        {
+            "source": "子网半径",
+            "target": "丢包率",
+            "type": "影响"
+        },
+        {
+            "source": "丢包率",
+            "target": "子网半径",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "无线链路失败率", "en": "Wireless link failure rate"},
+        {"title": "丢包率", "en": "Packet loss rate"},
+        {"title": "IETF方案", "en": "IETF scheme"},
+        {"title": "VDMM方案", "en": "VDMM scheme"},
+        {"title": "切换延迟", "en": "Handover delay"},
+        {"title": "信令交换", "en": "Signaling exchange"},
+        {"title": "数据包缓存机制", "en": "Packet caching mechanism"},
+        {"title": "双向隧道", "en": "Bidirectional tunnel"},
+        {"title": "信令开销", "en": "Signaling overhead"}
+    ],
+    "relations": [
+        {"source": "无线链路失败率", "target": "丢包率", "type": "correlation"},
+        {"source": "无线链路失败率", "target": "IETF方案", "type": "comparison"},
+        {"source": "无线链路失败率", "target": "VDMM方案", "type": "comparison"},
+        {"source": "IETF方案", "target": "VDMM方案", "type": "comparison"},
+        {"source": "切换延迟", "target": "IETF方案", "type": "comparison"},
+        {"source": "切换延迟", "target": "VDMM方案", "type": "comparison"},
+        {"source": "信令交换", "target": "切换延迟", "type": "cause-effect"},
+        {"source": "数据包缓存机制", "target": "丢包率", "type": "correlation"},
+        {"source": "数据包缓存机制", "target": "VDMM方案", "type": "comparison"},
+        {"source": "双向隧道", "target": "IETF方案", "type": "comparison"},
+        {"source": "信令开销", "target": "IETF方案", "type": "comparison"},
+        {"source": "信令开销", "target": "VDMM方案", "type": "comparison"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "虚拟化的分布式移动性管理VDMM方案", "en": "VDMM solution for virtualized distributed mobility management"},
+        {"title": "控制器", "en": "Controller"},
+        {"title": "自适应负载均衡算法", "en": "Adaptive load balancing algorithm"},
+        {"title": "移动节点", "en": "Mobile node"},
+        {"title": "切换延时", "en": "Handover delay"},
+        {"title": "隧道开销", "en": "Tunnel overhead"},
+        {"title": "分布式移动性管理", "en": "Distributed mobility management"},
+        {"title": "移动锚定接入路由", "en": "Mobility anchor and access router"},
+        {"title": "服务质量", "en": "Quality of service"}
+    ],
+    "relations": [
+        {"source": "虚拟化的分布式移动性管理VDMM方案", "target": "控制器", "type": "包含"},
+        {"source": "虚拟化的分布式移动性管理VDMM方案", "target": "移动节点", "type": "包含"},
+        {"source": "虚拟化的分布式移动性管理VDMM方案", "target": "自适应负载均衡算法", "type": "包含"},
+        {"source": "控制器", "target": "移动节点", "type": "管理"},
+        {"source": "控制器", "target": "自适应负载均衡算法", "type": "管理"},
+        {"source": "移动节点", "target": "切换延时", "type": "影响"},
+        {"source": "移动节点", "target": "隧道开销", "type": "影响"},
+        {"source": "分布式移动性管理", "target": "移动锚定接入路由", "type": "相关"},
+        {"source": "服务质量", "target": "移动节点", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "5G网络概述及现有方法分析",
+            "en": "Overview and analysis of existing approaches for 5G networks"
+        },
+        {
+            "title": "IPv6中的移动性支持",
+            "en": "Mobility support in IPv6"
+        },
+        {
+            "title": "基于PMIPv6的分布式动态移动管理中的信令成本最小化",
+            "en": "Minimizing signaling costs for PMIPv6-based distributed dynamic mobility management"
+        },
+        {
+            "title": "未来移动网络的分布式移动管理：关键设计选项的综合分析",
+            "en": "Distributed mobility management for the future mobile networks: A comprehensive analysis of key design options"
+        },
+        {
+            "title": "未来5G网络的分布式移动管理：现有方法的概述和分析",
+            "en": "Distributed mobility management for future 5G networks: Overview and analysis of existing approaches"
+        },
+        {
+            "title": "未来网络中的分布式移动管理：隧道或主机路由？",
+            "en": "Distributed mobility management in future networks: Tunneling or host routing?"
+        },
+        {
+            "title": "分布式移动管理的现有实践和差距分析",
+            "en": "Current practices and gap analysis of distributed mobility management"
+        },
+        {
+            "title": "网络移动性的高效分布式管理方案",
+            "en": "An efficient distributed mobility management scheme for network mobility"
+        },
+        {
+            "title": "软件定义网络中支持IP移动性的解决方案",
+            "en": "A solution for IP mobility support in software-defined networks"
+        },
+        {
+            "title": "基于SDN的5G网络分布式移动管理",
+            "en": "SDN-based distributed mobility management for 5G networks"
+        },
+        {
+            "title": "基于中心性的密集5G网络分布式移动管理",
+            "en": "Distributed mobility management based on centrality for dense 5G networks"
+        },
+        {
+            "title": "在4G/5G移动网络中适应分布式移动管理模型的差距分析",
+            "en": "Gap analysis for adapting the distributed mobility management model in 4G/5G mobile networks"
+        }
+    ],
+    "relations": [
+        {
+            "source": "5G网络概述及现有方法分析",
+            "target": "未来5G网络的分布式移动管理：现有方法的概述和分析",
+            "type": "相关"
+        },
+        {
+            "source": "IPv6中的移动性支持",
+            "target": "基于PMIPv6的分布式动态移动管理中的信令成本最小化",
+            "type": "相关"
+        },
+        {
+            "source": "基于PMIPv6的分布式动态移动管理中的信令成本最小化",
+            "target": "未来移动网络的分布式移动管理：关键设计选项的综合分析",
+            "type": "相关"
+        },
+        {
+            "source": "未来移动网络的分布式移动管理：关键设计选项的综合分析",
+            "target": "未来5G网络的分布式移动管理：现有方法的概述和分析",
+            "type": "相关"
+        },
+        {
+            "source": "未来5G网络的分布式移动管理：现有方法的概述和分析",
+            "target": "未来网络中的分布式移动管理：隧道或主机路由？",
+            "type": "相关"
+        },
+        {
+            "source": "未来网络中的分布式移动管理：隧道或主机路由？",
+            "target": "分布式移动管理的现有实践和差距分析",
+            "type": "相关"
+        },
+        {
+            "source": "分布式移动管理的现有实践和差距分析",
+            "target": "基于SDN的5G网络分布式移动管理",
+            "type": "相关"
+        },
+        {
+            "source": "网络移动性的高效分布式管理方案",
+            "target": "基于SDN的5G网络分布式移动管理",
+            "type": "相关"
+        },
+        {
+            "source": "软件定义网络中支持IP移动性的解决方案",
+            "target": "基于SDN的5G网络分布式移动管理",
+            "type": "相关"
+        },
+        {
+            "source": "基于SDN的5G网络分布式移动管理",
+            "target": "基于中心性的密集5G网络分布式移动管理",
+            "type": "相关"
+        },
+        {
+            "source": "在4G/5G移动网络中适应分布式移动管理模型的差距分析",
+            "target": "基于SDN的5G网络分布式移动管理",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "分布式移动管理", "en": "Distributed Mobility Management"},
+        {"title": "虚拟接入点相关性", "en": "Virtual Access Point Correlation"},
+        {"title": "SDN基础下的校园WLAN框架", "en": "SDN-based Campus WLAN Framework"},
+        {"title": "5G基站虚拟化基站资源管理", "en": "5G Base Station Virtualization Base Station Resource Management"},
+        {"title": "全球虚拟机移动的移动管理系统", "en": "Mobility Management System for Global Virtual Machine Migration"},
+        {"title": "LTE移交方案", "en": "LTE Handover Scheme"},
+        {"title": "5G SDN移动网络架构下的移交实现", "en": "Handover Implementation in 5G SDN-based Mobile Network Architecture"}
+    ],
+    "relations": [
+        {"source": "分布式移动管理", "target": "Design and evaluation of network-based distributed mobility management solution based on PFMIPv6", "type": "研究/设计"},
+        {"source": "分布式移动管理", "target": "An efficient distributed mobility management scheme for network mobility", "type": "研究/设计"},
+        {"source": "分布式移动管理", "target": "Handover performance analysis of distributed mobility management in vehicular networks", "type": "研究/设计"},
+        {"source": "虚拟接入点相关性", "target": "A graph-theoretic approach to virtual access point correlation", "type": "研究/设计"},
+        {"source": "SDN基础下的校园WLAN框架", "target": "SWAN: An SDN-based campus WLAN framework", "type": "研究/设计"},
+        {"source": "SDN基础下的校园WLAN框架", "target": "An SDN-based seamless convergence approach of WLAN and LTE networks", "type": "研究/设计"},
+        {"source": "5G基站虚拟化基站资源管理", "target": "5G基站虚拟化基站资源管理关键技术研究", "type": "研究/设计"},
+        {"source": "全球虚拟机移动的移动管理系统", "target": "A Mobility Management System for the Global Live Migration of Virtual Machine across Multiple Sites", "type": "研究/设计"},
+        {"source": "LTE移交方案", "target": "Enhanced LTE handover scheme using NFV for LTE handover delay reduction", "type": "研究/设计"},
+        {"source": "5G SDN移动网络架构下的移交实现", "target": "Handover implementation in a 5G SDN-based mobile network architecture", "type": "研究/设计"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SDN/NFV概念、架构和挑战", "en": "Concepts, architectures, and challenges of SDN/NFV"},
+        {"title": "NFV和SDN是5G网络的关键技术", "en": "NFV and SDN are key technologies for 5G networks"},
+        {"title": "SDN和NFV的思考与实践", "en": "Reflection and practice of SDN and NFV"},
+        {"title": "SDN和NFV在5G移动通信网络架构中的应用研究", "en": "Application research of SDN and NFV in 5G mobile communication network architecture"},
+        {"title": "软件定义网络功能虚拟化综述", "en": "A survey of software-defined network function virtualization"},
+        {"title": "面向5G移动云管理系统的弹性分布式SDN/NFV控制器", "en": "Elastic distributed SDN/NFV controller for 5G mobile cloud management systems"},
+        {"title": "软件定义网络中的虚拟机迁移规划", "en": "Virtual machine migration planning in software-defined networks"},
+        {"title": "基于分层任务网络和网络功能虚拟化的SDN管理", "en": "SDN management based on hierarchical task network and network function virtualization"},
+        {"title": "SDN数据平面中的网络功能虚拟化实现", "en": "Network function virtualization implementation in SDN data plane"},
+        {"title": "通过网络功能虚拟化实现的端到端网络切片", "en": "End-to-end network slicing enabled through network function virtualization"},
+        {"title": "网络功能虚拟化的路由和部署方案", "en": "Routing and deployment scheme for network function virtualization"},
+        {"title": "面向软件定义企业WLAN的自适应负载均衡应用", "en": "Adaptive load balancing application for software-defined enterprise WLANs"},
+        {"title": "基于AP选择及自适应切换的负载均衡算法", "en": "Load balancing algorithm based on AP selection and adaptive switching"},
+        {"title": "基于无线SDN的关联控制的自适应负载均衡方案", "en": "Adaptive load balancing scheme through wireless SDN-based association control"},
+        {"title": "使用关联控制的无线局域网中的需求感知负载均衡", "en": "Demand-aware load balancing in wireless LANs using association control"}
+    ],
+    "relations": [
+        {"source": "SDN/NFV概念、架构和挑战", "target": "NFV和SDN是5G网络的关键技术", "type": "包含"},
+        {"source": "SDN/NFV概念、架构和挑战", "target": "SDN和NFV的思考与实践", "type": "包含"},
+        {"source": "NFV和SDN是5G网络的关键技术", "target": "SDN和NFV在5G移动通信网络架构中的应用研究", "type": "包含"},
+        {"source": "SDN和NFV的思考与实践", "target": "面向5G移动云管理系统的弹性分布式SDN/NFV控制器", "type": "包含"},
+        {"source": "SDN和NFV的思考与实践", "target": "软件定义网络中的虚拟机迁移规划", "type": "包含"},
+        {"source": "SDN和NFV的思考与实践", "target": "基于分层任务网络和网络功能虚拟化的SDN管理", "type": "包含"},
+        {"source": "SDN和NFV的思考与实践", "target": "通过网络功能虚拟化实现的端到端网络切片", "type": "包含"},
+        {"source": "软件定义网络功能虚拟化综述", "target": "面向5G移动云管理系统的弹性分布式SDN/NFV控制器", "type": "包含"},
+        {"source": "软件定义网络功能虚拟化综述", "target": "软件定义网络中的虚拟机迁移规划", "type": "包含"},
+        {"source": "软件定义网络功能虚拟化综述", "target": "基于分层任务网络和网络功能虚拟化的SDN管理", "type": "包含"},
+        {"source": "软件定义网络功能虚拟化综述", "target": "SDN数据平面中的网络功能虚拟化实现", "type": "包含"},
+        {"source": "软件定义网络功能虚拟化综述", "target": "通过网络功能虚拟化实现的端到端网络切片", "type": "包含"},
+        {"source": "面向5G移动云管理系统的弹性分布式SDN/NFV控制器", "target": "通过网络功能虚拟化实现的端到端网络切片", "type": "包含"},
+        {"source": "SDN数据平面中的网络功能虚拟化实现", "target": "通过网络功能虚拟化实现的端到端网络切片", "type": "包含"},
+        {"source": "通过网络功能虚拟化实现的端到端网络切片", "target": "网络功能虚拟化的路由和部署方案", "type": "包含"},
+        {"source": "面向软件定义企业WLAN的自适应负载均衡应用", "target": "基于AP选择及自适应切换的负载均衡算法", "type": "包含"},
+        {"source": "面向软件定义企业WLAN的自适应负载均衡应用", "target": "基于无线SDN的关联控制的自适应负载均衡方案", "type": "包含"},
+        {"source": "基于无线SDN的关联控制的自适应负载均衡方案", "target": "使用关联控制的无线局域网中的需求感知负载均衡", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SDN-based data center networks", "en": ""},
+        {"title": "Load balancing scheme for cellular-WLAN heterogeneous systems", "en": ""},
+        {"title": "Client-network collaborative load balancing mechanism for WLAN based on SDN and 802.11u", "en": ""},
+        {"title": "WLAN load balancing algorithm based on software-defined network", "en": ""},
+        {"title": "Software-defined WLAN architecture and load balancing switching", "en": ""},
+        {"title": "Creation, management and migration of virtual access points in software-defined WLAN", "en": ""},
+        {"title": "Fast handoff scheme in Proxy Mobile IPv6 networks", "en": ""}
+    ],
+    "relations": [
+        {"source": "SDN-based data center networks", "target": "Load balancing scheme for cellular-WLAN heterogeneous systems", "type": "相关"},
+        {"source": "SDN-based data center networks", "target": "Client-network collaborative load balancing mechanism for WLAN based on SDN and 802.11u", "type": "相关"},
+        {"source": "WLAN load balancing algorithm based on software-defined network", "target": "Software-defined WLAN architecture and load balancing switching", "type": "相关"},
+        {"source": "Software-defined WLAN architecture and load balancing switching", "target": "Creation, management and migration of virtual access points in software-defined WLAN", "type": "相关"},
+        {"source": "Fast handoff scheme in Proxy Mobile IPv6 networks", "target": "", "type": ""}  // 无关系
+    ]
+}

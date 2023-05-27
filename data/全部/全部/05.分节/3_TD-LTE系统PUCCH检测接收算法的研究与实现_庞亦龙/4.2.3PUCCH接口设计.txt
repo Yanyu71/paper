@@ -1,0 +1,9 @@
+4.2.3PUCCH接口设计
+coreO至0 core4之间的通信消息可以由图4-2表示:
+42
+图4-2 coreO与core4之间的新消息通信
+1）	消息 STRU_CRMPHY_CELL_SETUP_REQ 为 core4 提供小区级别参数，core4 将在符号中断3到达时，如果小区状态是新建立提交或更新，那么就需要更新并保存消 息中与PUCCH相关的小区级参数。
+2）	消息O_RACPHY_RL_SETUP_REQ为core4提供用户级别参数，core4将在时 隙中断3到达时，如果某用户链路状态是新建立或更新，那么就需要更新并保存消息中 与PUCCH相关的用户级参数。
+3）	消息 STRU_MACPHY_UL_SUBFRAME_CONFIG_IND,应在每个子帧的时隙 中断3前到来，提供子帧级别的信息。
+在每个子帧的符号中断3,6,10,13时，core。给core4的Task发送消息，告知core4 相应的数据地址，同时捆绑帧号，时隙号和符号编号一同发送。在core4处理完成1个 子帧的数据时，发送UCI信息给coreO,消息O_PHYMAC_UL_UCI_IND反馈UCI信息 给 coreOo
+下面为消息的具体内容，仅列出消息中PUCCH相关的参数（消息中或包括其他信 道的相关信息）

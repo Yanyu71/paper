@@ -1,0 +1,10 @@
+4.3.1.5D2D.CCCH模块
+D2D物理层链路端支持对D2D-CCCH物理信道的接收，这里特指对除 D2D-SYNC信令以外的D2D-CCCH信令的接收。物理层对RTS、CTS和ACK信 令的接收由系统上下行配置和系统子帧号共同触发，其使用的无线资源和编码方 式见3.3节。解码成功后，物理层D2D-CCCH模块生成相应的Core Msg上报到 协议栈，Core Msg的格式见4.2.4节。
+表4-22 PHY D2D-CCCH接收模块功能接口
+函数接口定义
+CCCH RX (uint8 t CCCH Chanl\pe)
+D2D物理层的RTS、CTS和ACK信令使用相同的接口接收，如表4-22所示。 其中CCCH_ChanType参数由接收主线程控制，用于区分CCCH信令类型。
+物理层D2D-CCCH接收端的执行逻辑如图4-21所示，D2D-CCCH的解码均 由接收主线程完成：
+53
+接收主线程
+图4-21物理层D2D-CCCH接收端模块逻辑

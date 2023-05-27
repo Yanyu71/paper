@@ -1,0 +1,1021 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "语音增强技术",
+            "en": "Speech Enhancement Technology"
+        },
+        {
+            "title": "移动互联网时代",
+            "en": "Mobile Internet Era"
+        },
+        {
+            "title": "多种媒体传输技术",
+            "en": "Various Media Transmission Technologies"
+        },
+        {
+            "title": "语音信号",
+            "en": "Speech Signal"
+        },
+        {
+            "title": "噪声干扰",
+            "en": "Noise Interference"
+        },
+        {
+            "title": "语音增强算法",
+            "en": "Speech Enhancement Algorithm"
+        },
+        {
+            "title": "信号处理方法",
+            "en": "Signal Processing Method"
+        },
+        {
+            "title": "谱减法",
+            "en": "Spectral Subtraction Method"
+        },
+        {
+            "title": "深度学习增强算法",
+            "en": "Deep Learning Enhancement Algorithm"
+        },
+        {
+            "title": "单麦克风语音增强",
+            "en": "Single Microphone Speech Enhancement"
+        },
+        {
+            "title": "多麦克风语音增强",
+            "en": "Multiple Microphone Speech Enhancement"
+        },
+        {
+            "title": "波束成形算法",
+            "en": "Beamforming Algorithm"
+        },
+        {
+            "title": "无监督语音增强",
+            "en": "Unsupervised Speech Enhancement"
+        },
+        {
+            "title": "有监督语音增强",
+            "en": "Supervised Speech Enhancement"
+        },
+        {
+            "title": "Weiner滤波算法",
+            "en": "Wiener Filtering Algorithm"
+        },
+        {
+            "title": "谱减法改进",
+            "en": "Improvement of Spectral Subtraction Method"
+        },
+        {
+            "title": "MMSE对数幅度谱估计器",
+            "en": "MMSE Log Spectral Amplitude Estimator"
+        }
+    ],
+    "relations": [
+        {
+            "source": "语音增强技术",
+            "target": "移动互联网时代",
+            "type": "应用"
+        },
+        {
+            "source": "语音信号",
+            "target": "移动互联网时代",
+            "type": "应用"
+        },
+        {
+            "source": "语音信号",
+            "target": "噪声干扰",
+            "type": "影响"
+        },
+        {
+            "source": "语音增强算法",
+            "target": "信号处理方法",
+            "type": "分类"
+        },
+        {
+            "source": "信号处理方法",
+            "target": "谱减法",
+            "type": "算法"
+        },
+        {
+            "source": "信号处理方法",
+            "target": "深度学习增强算法",
+            "type": "算法"
+        },
+        {
+            "source": "语音增强算法",
+            "target": "单麦克风语音增强",
+            "type": "分类"
+        },
+        {
+            "source": "语音增强算法",
+            "target": "多麦克风语音增强",
+            "type": "分类"
+        },
+        {
+            "source": "多麦克风语音增强",
+            "target": "波束成形算法",
+            "type": "算法"
+        },
+        {
+            "source": "语音增强算法",
+            "target": "无监督语音增强",
+            "type": "分类"
+        },
+        {
+            "source": "语音增强算法",
+            "target": "有监督语音增强",
+            "type": "分类"
+        },
+        {
+            "source": "无监督语音增强",
+            "target": "Weiner滤波算法",
+            "type": "算法"
+        },
+        {
+            "source": "谱减法",
+            "target": "谱减法改进",
+            "type": "算法"
+        },
+        {
+            "source": "有监督语音增强",
+            "target": "MMSE对数幅度谱估计器",
+            "type": "算法"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "话音业务",
+            "type": "应用"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "车载语音识别系统",
+            "type": "应用"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "移动通信",
+            "type": "应用"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "智能家居",
+            "type": "应用"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "电话会议",
+            "type": "应用"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "人工耳蜗助听设备",
+            "type": "应用"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "网络通讯",
+            "type": "应用"
+        },
+        {
+            "source": "语音增强技术",
+            "target": "在线直播",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "优化修正对数谱振幅估计器", "en": "Optimally Modified Log-Spectral Amplitude Estimator"},
+        {"title": "最小控制递推平均算法", "en": "Minimum Control Recursive Average Algorithm"},
+        {"title": "语音增强算法", "en": "Speech Enhancement Algorithm"},
+        {"title": "基于隐马尔科夫模型的语音增强算法", "en": "Speech Enhancement Algorithm Based on Hidden Markov Model"},
+        {"title": "非负矩阵分解的语音增强算法", "en": "Speech Enhancement Algorithm Based on Non-negative Matrix Factorization"},
+        {"title": "基于深度神经网络的语音增强算法", "en": "Speech Enhancement Algorithm Based on Deep Neural Network"},
+        {"title": "基于循环神经网络的语音增强算法", "en": "Speech Enhancement Algorithm Based on Recurrent Neural Network"},
+        {"title": "生成对抗网络在语音增强中的应用", "en": "Application of Generative Adversarial Networks in Speech Enhancement"}
+    ],
+    "relations": [
+        {"source": "优化修正对数谱振幅估计器", "target": "最小控制递推平均算法", "type": "改进"},
+        {"source": "最小控制递推平均算法", "target": "语音增强算法", "type": "应用"},
+        {"source": "基于隐马尔科夫模型的语音增强算法", "target": "语音增强算法", "type": "应用"},
+        {"source": "非负矩阵分解的语音增强算法", "target": "语音增强算法", "type": "应用"},
+        {"source": "基于深度神经网络的语音增强算法", "target": "语音增强算法", "type": "应用"},
+        {"source": "基于循环神经网络的语音增强算法", "target": "语音增强算法", "type": "应用"},
+        {"source": "生成对抗网络在语音增强中的应用", "target": "语音增强算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SEWGAN", "en": "SEWGAN"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network (CNN)"},
+        {"title": "幅度谱语音增强的冗余卷积编解码网络(RCED)", "en": "Redundant Convolutional Encoder-Decoder Network (RCED)"},
+        {"title": "时域监督学习语音增强框架", "en": "Time-Domain Supervised Learning Speech Enhancement Framework"},
+        {"title": "基于多目标学习卷积神经网络的语音增强技术", "en": "Multi-Objective Learning Convolutional Neural Network for Speech Enhancement"},
+        {"title": "端到端的全卷积网络语音增强框架", "en": "End-to-End Fully Convolutional Network Speech Enhancement Framework"},
+        {"title": "注意力机制", "en": "Attention Mechanism"},
+        {"title": "二维相对自注意机制", "en": "2D Relative Self-Attention Mechanism"}
+    ],
+    "relations": [
+        {"source": "SEWGAN", "target": "卷积神经网络", "type": "基于"},
+        {"source": "卷积神经网络", "target": "幅度谱语音增强的冗余卷积编解码网络(RCED)", "type": "基于"},
+        {"source": "幅度谱语音增强的冗余卷积编解码网络(RCED)", "target": "时域监督学习语音增强框架", "type": "基于"},
+        {"source": "卷积神经网络", "target": "基于多目标学习卷积神经网络的语音增强技术", "type": "基于"},
+        {"source": "端到端的全卷积网络语音增强框架", "target": "短时客观可懂度(STOI)", "type": "使用"},
+        {"source": "端到端的全卷积网络语音增强框架", "target": "注意力机制", "type": "结合"},
+        {"source": "注意力机制", "target": "二维相对自注意机制", "type": "发展"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "HuberLoss损失函数", "en": "HuberLoss loss function"},
+        {"title": "AAUNet", "en": "AAUNet"},
+        {"title": "SAUNet", "en": "SAUNet"},
+        {"title": "语音增强技术", "en": "Speech enhancement technology"},
+        {"title": "卷积神经网络", "en": "Convolutional neural network"},
+        {"title": "注意力机制", "en": "Attention mechanism"},
+        {"title": "LeNet-5", "en": "LeNet-5"}
+    ],
+    "relations": [
+        {"source": "HuberLoss损失函数", "target": "AAUNet", "type": "使用"},
+        {"source": "L1损失函数", "target": "HuberLoss损失函数", "type": "组合"},
+        {"source": "L2损失函数", "target": "HuberLoss损失函数", "type": "组合"},
+        {"source": "AAUNet", "target": "SAUNet", "type": "改进"},
+        {"source": "自注意力机制", "target": "AAUNet", "type": "使用"},
+        {"source": "独立自注意机制", "target": "SAUNet", "type": "使用"},
+        {"source": "语音增强技术", "target": "AAUNet", "type": "应用"},
+        {"source": "语音增强技术", "target": "SAUNet", "type": "应用"},
+        {"source": "卷积神经网络", "target": "AAUNet", "type": "基础"},
+        {"source": "卷积神经网络", "target": "SAUNet", "type": "基础"},
+        {"source": "注意力机制", "target": "AAUNet", "type": "基础"},
+        {"source": "注意力机制", "target": "SAUNet", "type": "基础"},
+        {"source": "LeNet-5", "target": "卷积神经网络", "type": "示例"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "注意力机制", "en": "Attention Mechanism"},
+        {"title": "传统注意力机制", "en": "Traditional Attention Mechanism"},
+        {"title": "软注意力机制", "en": "Soft Attention Mechanism"},
+        {"title": "硬注意力机制", "en": "Hard Attention Mechanism"},
+        {"title": "全局注意力机制", "en": "Global Attention Mechanism"},
+        {"title": "局部注意力机制", "en": "Local Attention Mechanism"},
+        {"title": "自注意力机制", "en": "Self-Attention Mechanism"}
+    ],
+    "relations": [
+        {"source": "传统注意力机制", "target": "软注意力机制", "type": "衍生"},
+        {"source": "传统注意力机制", "target": "硬注意力机制", "type": "衍生"},
+        {"source": "传统注意力机制", "target": "全局注意力机制", "type": "衍生"},
+        {"source": "传统注意力机制", "target": "局部注意力机制", "type": "衍生"},
+        {"source": "自注意力机制", "target": "Transformer", "type": "应用"},
+        {"source": "注意力机制", "target": "机器翻译", "type": "应用"},
+        {"source": "注意力机制", "target": "语音识别", "type": "应用"},
+        {"source": "注意力机制", "target": "深度学习", "type": "相关"},
+        {"source": "注意力机制", "target": "神经网络", "type": "相关"},
+        {"source": "注意力机制", "target": "语音增强", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "卷积神经网络在语音增强技术中的应用",
+            "en": "Application of Convolutional Neural Network in Speech Enhancement Technology"
+        },
+        {
+            "title": "冗余度卷积编解码网络",
+            "en": "Redundant Convolutional Encoder-Decoder Network"
+        },
+        {
+            "title": "全卷积神经网络",
+            "en": "Fully Convolutional Neural Network"
+        },
+        {
+            "title": "注意力机制强化全卷积神经网络",
+            "en": "Attention Mechanism Enhanced Fully Convolutional Neural Network"
+        },
+        {
+            "title": "批量标准化",
+            "en": "Batch Normalization"
+        },
+        {
+            "title": "ReLU激活函数",
+            "en": "ReLU Activation Function"
+        },
+        {
+            "title": "跳跃连接",
+            "en": "Skip Connection"
+        }
+    ],
+    "relations": [
+        {
+            "source": "卷积神经网络在语音增强技术中的应用",
+            "target": "冗余度卷积编解码网络",
+            "type": "应用"
+        },
+        {
+            "source": "冗余度卷积编解码网络",
+            "target": "全卷积神经网络",
+            "type": "改进"
+        },
+        {
+            "source": "全卷积神经网络",
+            "target": "注意力机制强化全卷积神经网络",
+            "type": "改进"
+        },
+        {
+            "source": "全卷积神经网络",
+            "target": "批量标准化",
+            "type": "应用"
+        },
+        {
+            "source": "全卷积神经网络",
+            "target": "ReLU激活函数",
+            "type": "应用"
+        },
+        {
+            "source": "全卷积神经网络",
+            "target": "跳跃连接",
+            "type": "改进"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "特征图拼接方式",
+            "en": "Feature map concatenation method"
+        },
+        {
+            "title": "跳跃连接机制",
+            "en": "Skip connection mechanism"
+        },
+        {
+            "title": "卷积神经网络",
+            "en": "Convolutional neural network"
+        },
+        {
+            "title": "局部感知能力",
+            "en": "Local perception ability"
+        },
+        {
+            "title": "自注意力机制",
+            "en": "Self-attention mechanism"
+        },
+        {
+            "title": "全局语境",
+            "en": "Global context"
+        },
+        {
+            "title": "相对位置编码",
+            "en": "Relative position encoding"
+        },
+        {
+            "title": "多头注意力",
+            "en": "Multi-head attention"
+        }
+    ],
+    "relations": [
+        {
+            "source": "特征图拼接方式",
+            "target": "跳跃连接机制",
+            "type": "包含"
+        },
+        {
+            "source": "卷积神经网络",
+            "target": "局部感知能力",
+            "type": "具有"
+        },
+        {
+            "source": "自注意力机制",
+            "target": "全局语境",
+            "type": "实现"
+        },
+        {
+            "source": "自注意力机制",
+            "target": "相对位置编码",
+            "type": "应用"
+        },
+        {
+            "source": "多头注意力",
+            "target": "自注意力机制",
+            "type": "扩展"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "自注意力机制",
+            "en": "Self-attention mechanism"
+        },
+        {
+            "title": "相对编码方案",
+            "en": "Relative encoding scheme"
+        },
+        {
+            "title": "注意力头",
+            "en": "Attention head"
+        },
+        {
+            "title": "注意力强化卷积",
+            "en": "Attention-enhanced convolution"
+        },
+        {
+            "title": "AAUNet",
+            "en": "Attention-augmented UNet"
+        },
+        {
+            "title": "HuberLoss",
+            "en": "Huber loss"
+        }
+    ],
+    "relations": [
+        {
+            "source": "自注意力机制",
+            "target": "相对编码方案",
+            "type": "包含"
+        },
+        {
+            "source": "自注意力机制",
+            "target": "注意力头",
+            "type": "包含"
+        },
+        {
+            "source": "自注意力机制",
+            "target": "注意力强化卷积",
+            "type": "应用"
+        },
+        {
+            "source": "注意力强化卷积",
+            "target": "AAUNet",
+            "type": "应用"
+        },
+        {
+            "source": "HuberLoss",
+            "target": "注意力强化卷积",
+            "type": "损失函数"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "TIMIT语料库", "en": "TIMIT Corpus"},
+        {"title": "语音活动检测(VAD)", "en": "Voice Activity Detection (VAD)"},
+        {"title": "NOISEX-92噪声库", "en": "NOISEX-92 Noise Database"},
+        {"title": "短时傅里叶算法", "en": "Short-time Fourier Transform (STFT)"},
+        {"title": "汉明窗", "en": "Hamming Window"},
+        {"title": "卷积层", "en": "Convolutional Layer"},
+        {"title": "注意力强化卷积", "en": "Attention-Enhanced Convolution"},
+        {"title": "Adam优化器", "en": "Adam Optimizer"},
+        {"title": "HuberLoss", "en": "Huber Loss"},
+        {"title": "最佳修正对数功率谱估计器(OMLSA)", "en": "Optimal Modified Logarithmic Spectral Amplitude (OMLSA) Estimator"},
+        {"title": "最小控制迭代平均(IMCRA)算法", "en": "Minimum Controlled Recursive Averaging (IMCRA) Algorithm"},
+        {"title": "UNet全卷积神经网络", "en": "UNet Fully Convolutional Neural Network"},
+        {"title": "AAUNet", "en": "AAUNet"},
+        {"title": "二维相对自注意机制", "en": "2D Relative Self-Attention Mechanism"},
+        {"title": "卷积网络(CED)", "en": "Convolutional Encoder-Decoder Network"}
+    ],
+    "relations": [
+        {"source": "TIMIT语料库", "target": "语音数据集", "type": "包含"},
+        {"source": "语音活动检测(VAD)", "target": "去除静默帧", "type": "操作"},
+        {"source": "NOISEX-92噪声库", "target": "噪声数据集", "type": "包含"},
+        {"source": "短时傅里叶算法", "target": "时频域变换", "type": "操作"},
+        {"source": "汉明窗", "target": "语音波形分帧加窗", "type": "操作"},
+        {"source": "卷积层", "target": "网络模型组成部分", "type": "组成"},
+        {"source": "注意力强化卷积", "target": "网络模型组成部分", "type": "组成"},
+        {"source": "Adam优化器", "target": "模型训练", "type": "使用"},
+        {"source": "HuberLoss", "target": "模型训练", "type": "使用"},
+        {"source": "OMLSA", "target": "性能比较", "type": "比较"},
+        {"source": "IMCRA算法", "target": "性能比较", "type": "比较"},
+        {"source": "UNet全卷积神经网络", "target": "性能比较", "type": "比较"},
+        {"source": "AAUNet", "target": "性能比较", "type": "比较"},
+        {"source": "二维相对自注意机制", "target": "网络模型组成部分", "type": "组成"},
+        {"source": "卷积网络(CED)", "target": "性能比较", "type": "比较"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "语音增强性能评估指标",
+            "en": "Evaluation Indicators for Speech Enhancement Performance"
+        },
+        {
+            "title": "主观测听打分(Mean Opinion Score, MOS)",
+            "en": "Mean Opinion Score (MOS)"
+        },
+        {
+            "title": "客观评价方法",
+            "en": "Objective Evaluation Methods"
+        },
+        {
+            "title": "客观语音质量评估(Perceptual Evaluation of Speech Quality, PESQ)",
+            "en": "Perceptual Evaluation of Speech Quality (PESQ)"
+        },
+        {
+            "title": "短时客观可懂度(Short-Time Objective Intelligibility, STOI)",
+            "en": "Short-Time Objective Intelligibility (STOI)"
+        },
+        {
+            "title": "信号失真(SIG)的复合测度、噪声失真(BAK)的复合测度、整体语音质量(OVL)的复合测度",
+            "en": "Composite Measures of Signal Distortion (SIG), Noise Distortion (BAK), and Overall Speech Quality (OVL)"
+        },
+        {
+            "title": "注意力强化全卷积神经网络AAUNet",
+            "en": "Attention-Augmented U-Net (AAUNet)"
+        }
+    ],
+    "relations": [
+        {
+            "source": "语音增强性能评估指标",
+            "target": "主观测听打分(Mean Opinion Score, MOS)",
+            "type": "包含"
+        },
+        {
+            "source": "语音增强性能评估指标",
+            "target": "客观评价方法",
+            "type": "包含"
+        },
+        {
+            "source": "客观评价方法",
+            "target": "客观语音质量评估(Perceptual Evaluation of Speech Quality, PESQ)",
+            "type": "包含"
+        },
+        {
+            "source": "客观评价方法",
+            "target": "短时客观可懂度(Short-Time Objective Intelligibility, STOI)",
+            "type": "包含"
+        },
+        {
+            "source": "客观评价方法",
+            "target": "信号失真(SIG)的复合测度、噪声失真(BAK)的复合测度、整体语音质量(OVL)的复合测度",
+            "type": "包含"
+        },
+        {
+            "source": "注意力强化全卷积神经网络AAUNet",
+            "target": "语音增强性能评估指标",
+            "type": "属于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "STOI分值", "en": "STOI score"},
+        {"title": "注意力通道比例", "en": "Attention channel ratio"},
+        {"title": "位置信息嵌入", "en": "Position information embedding"},
+        {"title": "消融实验", "en": "Ablation experiment"},
+        {"title": "相对位置信息", "en": "Relative position information"},
+        {"title": "信噪比", "en": "Signal-to-noise ratio"},
+        {"title": "评估指标", "en": "Evaluation metrics"},
+        {"title": "特征图拼接", "en": "Feature map concatenation"},
+        {"title": "跳跃连接", "en": "Skip connection"}
+    ],
+    "relations": [
+        {"source": "STOI分值", "target": "注意力通道比例", "type": "correlation"},
+        {"source": "位置信息嵌入", "target": "注意力通道比例", "type": "impact"},
+        {"source": "位置信息嵌入", "target": "STOI分值", "type": "impact"},
+        {"source": "注意力通道比例", "target": "STOI分值", "type": "correlation"},
+        {"source": "注意力通道比例", "target": "消融实验", "type": "impact"},
+        {"source": "相对位置信息", "target": "消融实验", "type": "impact"},
+        {"source": "信噪比", "target": "消融实验", "type": "impact"},
+        {"source": "评估指标", "target": "消融实验", "type": "impact"},
+        {"source": "特征图拼接", "target": "跳跃连接", "type": "implementation"},
+        {"source": "位置信息嵌入", "target": "跳跃连接", "type": "impact"},
+        {"source": "注意力强化特征图", "target": "跳跃连接", "type": "implementation"},
+        {"source": "原始卷积特征图", "target": "跳跃连接", "type": "implementation"},
+        {"source": "跳跃连接", "target": "消融实验", "type": "impact"},
+        {"source": "评估指标", "target": "跳跃连接", "type": "impact"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "注意力机制", "en": "Attention mechanism"},
+        {"title": "卷积神经网络", "en": "Convolutional neural network"},
+        {"title": "损失函数", "en": "Loss function"},
+        {"title": "语音增强", "en": "Speech enhancement"},
+        {"title": "信噪比", "en": "Signal-to-noise ratio"},
+        {"title": "功率谱", "en": "Power spectrum"}
+    ],
+    "relations": [
+        {"source": "aatskip-pos", "target": "aatskip-np", "type": "比较"},
+        {"source": "Conv-attskip-pos", "target": "Conv-attskip-np", "type": "比较"},
+        {"source": "PESQ、STOI、SIG、BAK", "target": "noisy", "type": "比较"},
+        {"source": "Conv-attskip-np", "target": "语音质量、清晰度、噪声抑制能力", "type": "评价"},
+        {"source": "AAUNet", "target": "三种损失函数", "type": "训练"},
+        {"source": "MSE、MAE、HuberLoss", "target": "收敛性", "type": "评价"},
+        {"source": "MSE、MAE、HuberLoss", "target": "PESQ、STOI、SIG", "type": "评价"},
+        {"source": "UNet", "target": "AAUNet", "type": "比较"},
+        {"source": "语音增强网络", "target": "语音时域波形图", "type": "展示"},
+        {"source": "语音增强网络", "target": "对数功率谱", "type": "展示"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "语音增强算法", "en": "Speech Enhancement Algorithm"},
+        {"title": "OMLSA-IMCRA", "en": "OMLSA-IMCRA"},
+        {"title": "UNet", "en": "UNet"},
+        {"title": "AAUNet", "en": "AAUNet"},
+        {"title": "CED", "en": "CED"},
+        {"title": "AACED", "en": "AACED"},
+        {"title": "二维相对自注意机制", "en": "2D Relative Self-Attention Mechanism"},
+        {"title": "HuberLoss", "en": "HuberLoss"},
+        {"title": "独立自注意机制", "en": "Independent Self-Attention Mechanism"}
+    ],
+    "relations": [
+        {"source": "语音增强算法", "target": "OMLSA-IMCRA", "type": "最佳算法"},
+        {"source": "语音增强算法", "target": "UNet", "type": "算法"},
+        {"source": "语音增强算法", "target": "AAUNet", "type": "算法"},
+        {"source": "语音增强算法", "target": "CED", "type": "算法"},
+        {"source": "语音增强算法", "target": "AACED", "type": "算法"},
+        {"source": "UNet", "target": "二维相对自注意机制", "type": "应用"},
+        {"source": "AAUNet", "target": "二维相对自注意机制", "type": "应用"},
+        {"source": "CED", "target": "AACED", "type": "注意力强化"},
+        {"source": "HuberLoss", "target": "独立自注意机制", "type": "损失函数"},
+        {"source": "独立自注意机制", "target": "语音增强算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "卷积算子", "en": "Convolution Operator"},
+        {"title": "膨胀卷积", "en": "Dilated Convolution"},
+        {"title": "注意力机制", "en": "Attention Mechanism"},
+        {"title": "通道挤压激发机制", "en": "Squeeze-and-Excite Mechanism"},
+        {"title": "空间感知非局部模块", "en": "Non-local Block"},
+        {"title": "语音增强技术", "en": "Speech Enhancement Technology"},
+        {"title": "AAUNet", "en": "AAUNet"},
+        {"title": "独立自注意机制", "en": "Independent Self-Attention Mechanism"},
+        {"title": "相对位置编码", "en": "Relative Position Encoding"},
+        {"title": "距离感知特征", "en": "Distance-Aware Features"}
+    ],
+    "relations": [
+        {"source": "卷积算子", "target": "膨胀卷积", "type": "is_a"},
+        {"source": "卷积算子", "target": "注意力机制", "type": "related_to"},
+        {"source": "注意力机制", "target": "通道挤压激发机制", "type": "is_a"},
+        {"source": "注意力机制", "target": "空间感知非局部模块", "type": "is_a"},
+        {"source": "语音增强技术", "target": "注意力机制", "type": "related_to"},
+        {"source": "AAUNet", "target": "独立自注意机制", "type": "is_a"},
+        {"source": "独立自注意机制", "target": "相对位置编码", "type": "related_to"},
+        {"source": "独立自注意机制", "target": "距离感知特征", "type": "related_to"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "单头局部独立自注意机制",
+            "en": "Single-head local independent self-attention mechanism"
+        },
+        {
+            "title": "注意力核",
+            "en": "Attention kernel"
+        },
+        {
+            "title": "查询向量",
+            "en": "Query vector"
+        },
+        {
+            "title": "键矩阵",
+            "en": "Key matrix"
+        },
+        {
+            "title": "值矩阵",
+            "en": "Value matrix"
+        },
+        {
+            "title": "softmax归一化",
+            "en": "Softmax normalization"
+        },
+        {
+            "title": "多头注意力机制",
+            "en": "Multi-head attention mechanism"
+        },
+        {
+            "title": "相对位置编码",
+            "en": "Relative position encoding"
+        },
+        {
+            "title": "局部相对位置编码",
+            "en": "Local relative position encoding"
+        },
+        {
+            "title": "距离感知",
+            "en": "Distance perception"
+        },
+        {
+            "title": "值注意力核",
+            "en": "Value attention kernel"
+        },
+        {
+            "title": "绝对位置信息",
+            "en": "Absolute position information"
+        },
+        {
+            "title": "加性组合",
+            "en": "Additive combination"
+        },
+        {
+            "title": "超参数",
+            "en": "Hyperparameter"
+        }
+    ],
+    "relations": [
+        {
+            "source": "单头局部独立自注意机制",
+            "target": "输入特征图",
+            "type": "提取"
+        },
+        {
+            "source": "单头局部独立自注意机制",
+            "target": "注意力核",
+            "type": "使用"
+        },
+        {
+            "source": "单头局部独立自注意机制",
+            "target": "查询向量",
+            "type": "得到"
+        },
+        {
+            "source": "单头局部独立自注意机制",
+            "target": "键矩阵",
+            "type": "得到"
+        },
+        {
+            "source": "单头局部独立自注意机制",
+            "target": "值矩阵",
+            "type": "得到"
+        },
+        {
+            "source": "单头局部独立自注意机制",
+            "target": "softmax归一化",
+            "type": "使用"
+        },
+        {
+            "source": "单头局部独立自注意机制",
+            "target": "输出特征图",
+            "type": "得到"
+        },
+        {
+            "source": "多头注意力机制",
+            "target": "单头局部独立自注意机制",
+            "type": "扩展"
+        },
+        {
+            "source": "相对位置编码",
+            "target": "注意力机制",
+            "type": "嵌入"
+        },
+        {
+            "source": "局部相对位置编码",
+            "target": "相对位置编码",
+            "type": "特化"
+        },
+        {
+            "source": "距离感知",
+            "target": "值向量",
+            "type": "修改"
+        },
+        {
+            "source": "值向量",
+            "target": "值注意力核",
+            "type": "替代"
+        },
+        {
+            "source": "值注意力核",
+            "target": "绝对位置信息",
+            "type": "注入"
+        },
+        {
+            "source": "值注意力核",
+            "target": "加性组合",
+            "type": "使用"
+        },
+        {
+            "source": "值注意力核",
+            "target": "超参数",
+            "type": "依赖"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "归一化函数Mmax", "en": "Mmax normalization function"},
+        {"title": "卷积运算的参数量随着感受域的增大而迅速增加", "en": "The number of parameters in convolutional operation increases rapidly with the increase of receptive field"},
+        {"title": "独立自注意机制的参数量主要与输入特征图和输出特征图的通道数有关", "en": "The number of parameters in independent self-attention mechanism is mainly related to the number of channels in input and output feature maps"},
+        {"title": "SAUNet的语音增强算法", "en": "SAUNet speech enhancement algorithm"},
+        {"title": "独立自注意机制嵌入到基于UNet架构的全卷积神经网络中", "en": "Independent self-attention mechanism is embedded into the fully convolutional neural network based on UNet architecture"},
+        {"title": "SAUNet模型架构", "en": "SAUNet model architecture"},
+        {"title": "层标准化函数(LayerNormalization)", "en": "Layer normalization function"},
+        {"title": "ELU激活函数", "en": "ELU activation function"},
+        {"title": "实验数据集的选择及处理过程", "en": "Selection and processing of experimental datasets"},
+        {"title": "网络模型主要由14个卷积层和3个独立全注意层组成", "en": "The network model mainly consists of 14 convolutional layers and 3 independent self-attention layers"}
+    ],
+    "relations": [
+        {"source": "归一化函数Mmax", "target": "第A个位置嵌入的权重", "type": "applied to"},
+        {"source": "卷积运算的参数量", "target": "感受域的增大", "type": "increases with"},
+        {"source": "独立自注意机制的参数量", "target": "输入特征图和输出特征图的通道数", "type": "related to"},
+        {"source": "SAUNet的语音增强算法", "target": "独立自注意机制嵌入到基于UNet架构的全卷积神经网络中", "type": "proposed"},
+        {"source": "独立自注意机制", "target": "用作网络的一层", "type": "used as"},
+        {"source": "SAUNet模型架构", "target": "基于UNet架构的全卷积神经网络", "type": "based on"},
+        {"source": "层标准化函数", "target": "输入样本数据做标准化", "type": "used for"},
+        {"source": "ELU激活函数", "target": "ReLU激活函数", "type": "compared to"},
+        {"source": "实验数据集", "target": "TIMIT语料库", "type": "selected from"},
+        {"source": "实验数据集", "target": "NOISEX-92噪声库", "type": "selected from"},
+        {"source": "网络模型", "target": "14个卷积层和3个独立全注意层", "type": "composed of"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "优化器", "en": "Optimizer"},
+        {"title": "学习率衰减策略", "en": "Learning rate decay strategy"},
+        {"title": "损失函数", "en": "Loss function"},
+        {"title": "epoch数量", "en": "Number of epochs"},
+        {"title": "mini-batch大小", "en": "Mini-batch size"},
+        {"title": "独立自注意机制", "en": "Self-attention mechanism"},
+        {"title": "语音增强算法", "en": "Speech enhancement algorithm"},
+        {"title": "SAUNet", "en": "SAUNet"},
+        {"title": "消融实验", "en": "Ablation experiment"},
+        {"title": "泛化能力", "en": "Generalization ability"},
+        {"title": "收敛性", "en": "Convergence"},
+        {"title": "PESQ得分", "en": "PESQ score"},
+        {"title": "BAK得分", "en": "BAK score"},
+        {"title": "OVL得分", "en": "OVL score"},
+        {"title": "局部区域大小", "en": "Local receptive field size"},
+        {"title": "STOI得分", "en": "STOI score"}
+    ],
+    "relations": [
+        {"source": "训练阶段所使用的优化器、设置的初始学习率及其衰减策略、损失函数、epoch的数量和mini-batch的大小与第三章中相同", "target": "优化器", "type": "包含"},
+        {"source": "训练阶段所使用的优化器、设置的初始学习率及其衰减策略、损失函数、epoch的数量和mini-batch的大小与第三章中相同", "target": "学习率衰减策略", "type": "包含"},
+        {"source": "训练阶段所使用的优化器、设置的初始学习率及其衰减策略、损失函数、epoch的数量和mini-batch的大小与第三章中相同", "target": "损失函数", "type": "包含"},
+        {"source": "训练阶段所使用的优化器、设置的初始学习率及其衰减策略、损失函数、epoch的数量和mini-batch的大小与第三章中相同", "target": "epoch数量", "type": "包含"},
+        {"source": "训练阶段所使用的优化器、设置的初始学习率及其衰减策略、损失函数、epoch的数量和mini-batch的大小与第三章中相同", "target": "mini-batch大小", "type": "包含"},
+        {"source": "4.3.2仿真实验结果分析", "target": "消融实验", "type": "包含"},
+        {"source": "4.3.2仿真实验结果分析", "target": "泛化能力", "type": "包含"},
+        {"source": "4.3.2仿真实验结果分析", "target": "收敛性", "type": "包含"},
+        {"source": "消融实验", "target": "SAUNet", "type": "包含"},
+        {"source": "SAUNet", "target": "独立自注意机制", "type": "包含"},
+        {"source": "SAUNet", "target": "语音增强算法", "type": "包含"},
+        {"source": "消融实验", "target": "PESQ得分", "type": "包含"},
+        {"source": "消融实验", "target": "BAK得分", "type": "包含"},
+        {"source": "消融实验", "target": "OVL得分", "type": "包含"},
+        {"source": "消融实验", "target": "局部区域大小", "type": "包含"},
+        {"source": "消融实验", "target": "STOI得分", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SAUNet", "en": "SAUNet"},
+        {"title": "独立自注意机制", "en": "Self-attention mechanism"},
+        {"title": "相对位置信息", "en": "Relative position information"},
+        {"title": "语音可懂度", "en": "Speech intelligibility"},
+        {"title": "语音质量", "en": "Speech quality"},
+        {"title": "整体语音恢复水平", "en": "Overall speech recovery level"},
+        {"title": "STOI", "en": "STOI"},
+        {"title": "PESQ", "en": "PESQ"},
+        {"title": "OVL", "en": "OVL"},
+        {"title": "距离感知能力", "en": "Distance perception ability"},
+        {"title": "多值数", "en": "Multi-value number"},
+        {"title": "OMLSA-IMCRA", "en": "OMLSA-IMCRA"},
+        {"title": "UNet", "en": "UNet"},
+        {"title": "AAUNet", "en": "AAUNet"},
+        {"title": "含噪语音", "en": "Noisy speech"}
+    ],
+    "relations": [
+        {"source": "SAUNet", "target": "独立自注意机制", "type": "嵌入"},
+        {"source": "独立自注意机制", "target": "相对位置信息", "type": "嵌入"},
+        {"source": "SAUNet", "target": "语音可懂度", "type": "提升"},
+        {"source": "SAUNet", "target": "语音质量", "type": "提升"},
+        {"source": "SAUNet", "target": "整体语音恢复水平", "type": "提升"},
+        {"source": "SAUNet", "target": "STOI", "type": "评估"},
+        {"source": "SAUNet", "target": "PESQ", "type": "评估"},
+        {"source": "SAUNet", "target": "OVL", "type": "评估"},
+        {"source": "独立自注意机制", "target": "距离感知能力", "type": "加强"},
+        {"source": "距离感知能力", "target": "SAUNet", "type": "嵌入"},
+        {"source": "多值数", "target": "距离感知能力", "type": "影响"},
+        {"source": "OMLSA-IMCRA", "target": "UNet", "type": "对比"},
+        {"source": "UNet", "target": "AAUNet", "type": "对比"},
+        {"source": "AAUNet", "target": "SAUNet", "type": "对比"},
+        {"source": "含噪语音", "target": "OMLSA-IMCRA", "type": "增强"},
+        {"source": "含噪语音", "target": "UNet", "type": "增强"},
+        {"source": "含噪语音", "target": "AAUNet", "type": "增强"},
+        {"source": "含噪语音", "target": "SAUNet", "type": "增强"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "语音增强", "en": "Speech Enhancement"},
+        {"title": "数字信号处理技术", "en": "Digital Signal Processing Technology"},
+        {"title": "背景噪声", "en": "Background Noise"},
+        {"title": "增强语音", "en": "Enhanced Speech"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "权值共享特性", "en": "Weight Sharing Property"}
+    ],
+    "relations": [
+        {"source": "SAUNet", "target": "UNet", "type": "outperforms"},
+        {"source": "SAUNet", "target": "AAUNet", "type": "outperforms"},
+        {"source": "SAUNet", "target": "OMLSA", "type": "outperforms"},
+        {"source": "SAUNet", "target": "PESQ", "type": "compares"},
+        {"source": "SAUNet", "target": "STOI", "type": "compares"},
+        {"source": "SAUNet", "target": "独立自注意机制", "type": "applies"},
+        {"source": "SAUNet", "target": "语音质量", "type": "improves"},
+        {"source": "SAUNet", "target": "语音可懂度", "type": "improves"},
+        {"source": "SAUNet", "target": "噪声抑制程度", "type": "improves"},
+        {"source": "SAUNet", "target": "参数量", "type": "compares"},
+        {"source": "卷积神经网络", "target": "语音增强模型", "type": "is a"},
+        {"source": "权值共享特性", "target": "卷积神经网络", "type": "has"},
+        {"source": "语音增强", "target": "语音分离", "type": "is a"},
+        {"source": "语音增强", "target": "数字信号处理技术", "type": "relates to"},
+        {"source": "背景噪声", "target": "增强语音", "type": "affects"},
+        {"source": "增强语音", "target": "可理解性", "type": "relates to"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "卷积网络中的通道和特征类型", "en": "Channels and feature types in convolutional networks"},
+        {"title": "自注意力机制在全卷积网络中的应用", "en": "Application of self-attention mechanism in fully convolutional networks"},
+        {"title": "基于独立自注意机制的语音增强算法", "en": "Speech enhancement algorithm based on independent self-attention mechanism"},
+        {"title": "HuberLoss损失函数", "en": "HuberLoss loss function"},
+        {"title": "二维相对自注意机制在语音增强卷积网络中的通用性", "en": "Universality of 2D relative self-attention mechanism in speech enhancement convolutional networks"}
+    ],
+    "relations": [
+        {"source": "卷积网络中的通道和特征类型", "target": "自注意力机制在全卷积网络中的应用", "type": "包含"},
+        {"source": "自注意力机制在全卷积网络中的应用", "target": "基于独立自注意机制的语音增强算法", "type": "应用"},
+        {"source": "基于独立自注意机制的语音增强算法", "target": "HuberLoss损失函数", "type": "使用"},
+        {"source": "自注意力机制在全卷积网络中的应用", "target": "二维相对自注意机制在语音增强卷积网络中的通用性", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Combined LCMV-TRINICON Beamforming", "en": ""},
+        {"title": "Multichannel Speech Separation and Enhancement Using the Convolutive Transfer Function", "en": ""},
+        {"title": "Compressive Sensing-Based Speech Enhancement", "en": ""},
+        {"title": "A Noise Reduction Postfilter for Binaurally Linked Single-Microphone Hearing Aids", "en": ""},
+        {"title": "All-Pole Modeling of Degraded Speech", "en": ""},
+        {"title": "Multiplicative Update of Auto-Regressive Gains for Codebook Based Speech Enhancement", "en": ""},
+        {"title": "Single-Channel Speech Enhancement Using Spectral Subtraction in the Short-Time Modulation Domain", "en": ""},
+        {"title": "Enhancement of Single Channel Speech Using Perceptual-Decision Directed Approach", "en": ""},
+        {"title": "Speech Enhancement Using an MMSE Spectral Amplitude Estimator Based on a Modulation Domain Kalman Filter with a Gamma Prior", "en": ""},
+        {"title": "A Generalized Log-Spectral Amplitude Estimator for Single-Channel Speech Enhancement", "en": ""},
+        {"title": "Single-Channel Speech Enhancement Based on Adaptive Low-Rank Matrix Decomposition", "en": ""}
+    ],
+    "relations": [
+        {"source": "Combined LCMV-TRINICON Beamforming", "target": "Multichannel Speech Separation and Enhancement Using the Convolutive Transfer Function", "type": "相关"},
+        {"source": "Multichannel Speech Separation and Enhancement Using the Convolutive Transfer Function", "target": "Compressive Sensing-Based Speech Enhancement", "type": "相关"},
+        {"source": "Compressive Sensing-Based Speech Enhancement", "target": "A Noise Reduction Postfilter for Binaurally Linked Single-Microphone Hearing Aids", "type": "相关"},
+        {"source": "All-Pole Modeling of Degraded Speech", "target": "Multiplicative Update of Auto-Regressive Gains for Codebook Based Speech Enhancement", "type": "相关"},
+        {"source": "Multiplicative Update of Auto-Regressive Gains for Codebook Based Speech Enhancement", "target": "Single-Channel Speech Enhancement Using Spectral Subtraction in the Short-Time Modulation Domain", "type": "相关"},
+        {"source": "Single-Channel Speech Enhancement Using Spectral Subtraction in the Short-Time Modulation Domain", "target": "Enhancement of Single Channel Speech Using Perceptual-Decision Directed Approach", "type": "相关"},
+        {"source": "Enhancement of Single Channel Speech Using Perceptual-Decision Directed Approach", "target": "Speech Enhancement Using an MMSE Spectral Amplitude Estimator Based on a Modulation Domain Kalman Filter with a Gamma Prior", "type": "相关"},
+        {"source": "Speech Enhancement Using an MMSE Spectral Amplitude Estimator Based on a Modulation Domain Kalman Filter with a Gamma Prior", "target": "A Generalized Log-Spectral Amplitude Estimator for Single-Channel Speech Enhancement", "type": "相关"},
+        {"source": "A Generalized Log-Spectral Amplitude Estimator for Single-Channel Speech Enhancement", "target": "Single-Channel Speech Enhancement Based on Adaptive Low-Rank Matrix Decomposition", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Speech Enhancement with Stacked Frames and Deep Neural Network for VoIP Applications", "en": ""},
+        {"title": "Noise Spectrum Estimation in Adverse Environments: Improved Minima Controlled Recursive Averaging", "en": ""},
+        {"title": "Deep Learning for Environmentally Robust Speech Recognition", "en": ""},
+        {"title": "Sparse Hidden Markov Models for Speech Enhancement in Non-Stationary Noise Environments", "en": ""},
+        {"title": "Monaural Speech Separation and Recognition Challenge", "en": ""},
+        {"title": "Speech Enhancement Using Hidden Markov Models in Frequency Domain", "en": ""},
+        {"title": "A Non-Negative Approach to Semi-Supervised Separation of Speech from Noise with the Use of Temporal Dynamics", "en": ""},
+        {"title": "Combining Non-Negative Matrix Factorization and Deep Neural Networks for Speech Enhancement and Automatic Speech Recognition", "en": ""},
+        {"title": "A Family of MLP Based Nonlinear Spectral Estimators for Noise Reduction", "en": ""},
+        {"title": "A Fast Learning Algorithm for Deep Belief Nets", "en": ""},
+        {"title": "基于深层神经网络的语音增强方法研究", "en": "Research on Speech Enhancement Method Based on Deep Neural Network"},
+        {"title": "Multi-Objective Learning and Mask-Based Postprocessing for Deep Neural Network Based Speech Enhancement", "en": ""}
+    ],
+    "relations": [
+        {"source": "Speech Enhancement with Stacked Frames and Deep Neural Network for VoIP Applications", "target": "Deep Learning for Environmentally Robust Speech Recognition", "type": "related"},
+        {"source": "Speech Enhancement with Stacked Frames and Deep Neural Network for VoIP Applications", "target": "Combining Non-Negative Matrix Factorization and Deep Neural Networks for Speech Enhancement and Automatic Speech Recognition", "type": "related"},
+        {"source": "Noise Spectrum Estimation in Adverse Environments: Improved Minima Controlled Recursive Averaging", "target": "Sparse Hidden Markov Models for Speech Enhancement in Non-Stationary Noise Environments", "type": "related"},
+        {"source": "Monaural Speech Separation and Recognition Challenge", "target": "A Non-Negative Approach to Semi-Supervised Separation of Speech from Noise with the Use of Temporal Dynamics", "type": "related"},
+        {"source": "Speech Enhancement Using Hidden Markov Models in Frequency Domain", "target": "Sparse Hidden Markov Models for Speech Enhancement in Non-Stationary Noise Environments", "type": "related"},
+        {"source": "A Non-Negative Approach to Semi-Supervised Separation of Speech from Noise with the Use of Temporal Dynamics", "target": "Combining Non-Negative Matrix Factorization and Deep Neural Networks for Speech Enhancement and Automatic Speech Recognition", "type": "related"},
+        {"source": "A Family of MLP Based Nonlinear Spectral Estimators for Noise Reduction", "target": "Speech Enhancement Using Hidden Markov Models in Frequency Domain", "type": "related"},
+        {"source": "A Fast Learning Algorithm for Deep Belief Nets", "target": "基于深层神经网络的语音增强方法研究", "type": "related"},
+        {"source": "基于深层神经网络的语音增强方法研究", "target": "Multi-Objective Learning and Mask-Based Postprocessing for Deep Neural Network Based Speech Enhancement", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SEGAN: Speech Enhancement Generative Adversarial Network", "en": ""},
+        {"title": "基于Wasserstein生成对抗网络的语音增强算法研究", "en": "Speech enhancement algorithm research based on Wasserstein generative adversarial network"},
+        {"title": "A Fully Convolutional Neural Network for Speech Enhancement", "en": ""},
+        {"title": "A New Framework for CNN-Based Speech Enhancement in the Time Domain", "en": ""},
+        {"title": "End-to-End Waveform Utterance Enhancement for Direct Evaluation Metrics Optimization by Fully Convolutional Neural Networks", "en": ""},
+        {"title": "An Algorithm for Intelligibility Prediction of Time-Frequency Weighted Noisy Speech", "en": ""},
+        {"title": "A Convolutional Recurrent Neural Network for Real-Time Speech Enhancement", "en": ""},
+        {"title": "Using Recurrences in Time and Frequency within U-Net Architecture for Speech Enhancement", "en": ""},
+        {"title": "Attention Is All You Need", "en": ""},
+        {"title": "Attention Augmented Convolutional Networks", "en": ""},
+        {"title": "Stand-Alone Self-Attention in Vision Models", "en": ""},
+        {"title": "An Attention-Based Neural Network Approach for Single Channel Speech Enhancement", "en": ""},
+        {"title": "Combining Multi-Perspective Attention Mechanism With Convolutional Networks for Monaural Speech Enhancement", "en": ""}
+    ],
+    "relations": [
+        {"source": "SEGAN: Speech Enhancement Generative Adversarial Network", "target": "基于Wasserstein生成对抗网络的语音增强算法研究", "type": "基于"},
+        {"source": "A Fully Convolutional Neural Network for Speech Enhancement", "target": "A New Framework for CNN-Based Speech Enhancement in the Time Domain", "type": "相比于"},
+        {"source": "A New Framework for CNN-Based Speech Enhancement in the Time Domain", "target": "End-to-End Waveform Utterance Enhancement for Direct Evaluation Metrics Optimization by Fully Convolutional Neural Networks", "type": "基于"},
+        {"source": "An Algorithm for Intelligibility Prediction of Time-Frequency Weighted Noisy Speech", "target": "A Convolutional Recurrent Neural Network for Real-Time Speech Enhancement", "type": "应用于"},
+        {"source": "A Convolutional Recurrent Neural Network for Real-Time Speech Enhancement", "target": "Using Recurrences in Time and Frequency within U-Net Architecture for Speech Enhancement", "type": "相比于"},
+        {"source": "Attention Is All You Need", "target": "Attention Augmented Convolutional Networks", "type": "相比于"},
+        {"source": "Attention Augmented Convolutional Networks", "target": "Stand-Alone Self-Attention in Vision Models", "type": "基于"},
+        {"source": "An Attention-Based Neural Network Approach for Single Channel Speech Enhancement", "target": "Combining Multi-Perspective Attention Mechanism With Convolutional Networks for Monaural Speech Enhancement", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Monaural Speech Enhancement with Deep Residual-Dense Lattice Network and Attention Mechanism in the Time Domain", "en": ""},
+        {"title": "Perceptual Evaluation of Speech Quality (PESQ): An Objective Method for End-to-End Speech Quality Assessment of Narrow-Band Telephone Networks and Speech Codecs", "en": ""},
+        {"title": "Gradient-Based Learning Applied to Document Recognition", "en": ""},
+        {"title": "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention", "en": ""},
+        {"title": "Effective Approaches to Attention-Based Neural Machine Translation", "en": ""},
+        {"title": "U-Net: Convolutional Networks for Biomedical Image Segmentation", "en": ""},
+        {"title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift", "en": ""},
+        {"title": "Deep Residual Learning for Image Recognition", "en": ""},
+        {"title": "Music Transformer", "en": ""},
+        {"title": "Robust Estimation of a Location Parameter", "en": ""},
+        {"title": "Evaluation of Objective Quality Measures for Speech Enhancement", "en": ""},
+        {"title": "On Layer Normalization in the Transformer Architecture", "en": ""}
+    ],
+    "relations": [
+        {"source": "Monaural Speech Enhancement with Deep Residual-Dense Lattice Network and Attention Mechanism in the Time Domain", "target": "Perceptual Evaluation of Speech Quality (PESQ): An Objective Method for End-to-End Speech Quality Assessment of Narrow-Band Telephone Networks and Speech Codecs", "type": "应用"},
+        {"source": "Gradient-Based Learning Applied to Document Recognition", "target": "U-Net: Convolutional Networks for Biomedical Image Segmentation", "type": "应用"},
+        {"source": "Show, Attend and Tell: Neural Image Caption Generation with Visual Attention", "target": "Effective Approaches to Attention-Based Neural Machine Translation", "type": "应用"},
+        {"source": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift", "target": "Deep Residual Learning for Image Recognition", "type": "应用"},
+        {"source": "Music Transformer", "target": "On Layer Normalization in the Transformer Architecture", "type": "应用"}
+    ]
+}

@@ -1,0 +1,14 @@
+4.2.4.1RTS控制器
+RTS控制器负责对RTS信令的发送和接收处理，其提供的主要函数接口如下： 表4-8 MAC RTS控制器主要接口
+.：	函数接口定义	：
+send rtsO(int fn)
+send rtsl(int fn)
+reev rtsO(const char * const header, int fn)
+recv_rtsl(const char * const header, int fo)
+RTS控制器的发送操作由Heartbeat Msg在指定的TTI触发，如果RLC层发 送缓冲队列非空或HARQ要求数据重传，且RTS控制器没有在进行RTS碰撞退 避，则根据子帧号以及D2D-CCCH时序调用send_rtsO()和send_rtsl()生成发送 RTS0或RTS1的SchedMsg,并下发到物理层。特别地，RLC的广播数据发送缓 冲队列非空时，只能触发RTSO的发送。若发送的RTS申请了一次点对点通信, 则RTS控制器通知CTS控制器在下一无线帧接收该RTS的反馈CTS；若发送的 RTS申请了一次广播通信，则RTS控制器通知DATA控制器准备在两个无线帧后 发送数据。
+39
+图4-9 RTS发送处理逻辑
+RTS控制器的接收操作由来自物理层的RTS上报的Core Msg触发。RTS Core Msg的负载部分除如图3-5所示的RTS信令以外，还携带一个CRC校验位。如 果接收到的RTS申请了一次点对点通信，且接收者为自己，那么RTS控制器将 告知CTS控制器准备发送CTSO,并告知DAIA控制器在下下无线帧接收数据。 接收到的RTS申请了一次广播通信，那么RTS控制器通知DAIA控制器准备在 两个无线帧后接收数据。
+40
+准备反馈CTS,准 备接收点对点数据
+图4-10 RTS接收处理逻辑

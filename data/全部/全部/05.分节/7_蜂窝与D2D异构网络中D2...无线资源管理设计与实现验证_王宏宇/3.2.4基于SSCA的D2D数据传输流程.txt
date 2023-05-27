@@ -1,0 +1,41 @@
+3.2.4基于SSCA的D2D数据传输流程
+基于RTS/CTS,改进BEB退避算法的SSCA机制的数据通信如图3-8所示。
+DCCCH Allocation Broadcast-
+RTS——
+<	CTS—
+DATA
+—DATACTRL
+图3-8 基于SSCA数据通信流程
+与普通Ad-hoc或者802.11等独立频谱网络不同，LTE网络的不同帧格式 配置允许的下行D2D控制信道数量各不相同，故SSCA不能直接使用传统RTS- CTS帧格式。下面针对TDD与FDD基于SSCA的D2D数据传输流程进行设计。
+1.TDD
+TDD-LTE的蜂窝网络上下行配置方式有7种如表3-1所示。
+表3-1 TDD-LTE ±下行配置
+Uplink-downlink configuration	Downlink-to-Uplink Switch-point periodicity	Subframe number
+0	1	2	3	4	5	6	7	8	9
+0	5 ms	D	S	u	U	U	D	S	U	U	U
+1	5 ms	D	S	u	U	D	D	s	U	u	D
+2	5 ms	D	s	u	D	D	D	s	U	D	D
+3	10 ms	D	s	u	U	U	D	D	D	D	D
+4	10 ms	D	s	u	U	D	D	D	D	D	D
+5	10 ms	D	s	u	D	D	D	D	D	D	D
+6	5 ms	D	s	u	U	U	D	S	U	U	D
+在传统RTS过程中，1次RTS申请1 TTI的资源，但在TDD网络中，上 下行子帧数量并不对称，导致基于下行的DCCCH与上行数据传输信道无法一 一对应。同时，一次完整的数据通信需要使用RTS、CTS、ACK三个辅助信道。 为了使竞争粒度最小，将这三个辅助控制信道设计为基于时隙。这样，对于下 行子帧最少的TDD ConfigO,也有6个时隙可供安排D2D控制信道，通过在一 个无线帧内设计两组竞争接入过程，可以将竞争粒度控制为半帧。但此时主要 考虑到D2D控制信道可能还有的其他用处，需至少保留一个时隙，方便后续对 终端发现等基于DCCCH功能的扩展。最终将TDD的竞争粒度设计为1个无线 帧，即如果竞争成功将会获得后续对应一个无线帧的上行资源接入权。
+以TDD Configl为例，对一次D2D数据传输过程的具体流程进行说明，如 图3-9示。其中DataCtrl为D2D数据随路控制信道,ACK为传输结果确认信道。
+第n帧	第n+1帧	第n+2帧	第n+3帧	第n+4帧
+人 .				 	A___	 	A. 		A			a
+I d| s| u| u| d| d| s| u| uj d| d| s| u| u| d| d| sl u| u| d| d| s| u| u| d| dHI u| u| d] d| s| u| ul d| d| s| u| U! d| d| s| u| u| d| d| sl u| uPdI
+图3-9 TDD Configl的D2D数据通信定时关系
+1)DUE-TX在第n帧通过D2D-RTS向RxUE发送传输请求，同时也是向 周围的其它DUE发出D2D独占资源竞争，即发出了对第n+2帧的D2D传输资 源进行独占使用的请求；
+2)DUE-RX在第n帧正确接收RTS (没有D2D-RTS碰撞发生)后，在第 n+1帧向DUE-TX发出D2D-CTS作为数据传输请求的响应，否则不发
+24 D2D-CTS-如果DUE-TX正确接收（没有D2D-CTS碰撞发生），则这一对DUE 通信对就成功获得了对第n+2帧的D2D传输资源独占使用进行D2D数据传输 的权利；
+3）	在第n+2帧的一个或多个上行子帧中DUE-TX向DUE-RX发送一个或 多个D2D数据传输块，在发送D2D数据的子帧中同时发送D2D-DataCtrl指示 该子帧中D2D数据传输的数据格式和资源配置信息；
+4）	RxUE在第n+3帧中向TxUE发送对应上述D2D数据传输块的ACK/NAK 确认信息，完成本次D2D数据传输过程。
+2. FDD
+FDD相比较于TDD,每个无线帧均有10个下行子帧，设计的灵活性更大。 与TDD的设计思想一致，首先考虑最小的竞争粒度。基于时隙的RTS、CTS、 ACK控制子信道可以被压缩到2个子帧的控制信道中，所以1次RTS竞争2 个后续上行子帧的D2D通信资源，RTS控制信道使用偶数子帧slotO, CTS控 制信道使用偶数子帧sloth ACK控制信道使用奇数子帧slotlo控制信令交互 间隔选用与LTE网络提前下发上行物理信道配置一致的4ms,数据传输流程如 图 3-10o
+具体为：
+1）	TxDUE在偶数子帧n通过D2D-RTS向RxDUE发送传输请求，同时也 是向周围的其它DUE发出D2D独占资源竞争，即发岀对n+8、n+9子帧的D2D 传输资源进行独占使用的请求；
+2）	RxDUE在n子帧正确接收RTS （没有D2D-RTS碰撞发生）后，在第 n+4子帧向TxDUE发出D2D-CTS作为数据传输请求的响应，否则不发
+25
+D2D-CTSo如果TxDUE正确接收（没有D2D-CTS碰撞发生），则这一对DUE 通信对就成功获得了对n+8、n+9子帧的D2D传输资源独占使用进行D2D数据 传输的权利；
+3）	TxDUE在n+8、n+9子帧的上行信道中向RxDUE发送一个或多个D2D 数据传输块，在发送D2D数据的子帧中同时发送D2D-DataCtrl指示该子帧中 D2D数据传输的数据格式和资源配置信息；
+4）	RxUE在n+13帧中向TxUE发送对应上述D2D数据传输块的ACK/NAK 确认信息，完成本次D2D数据传输过程。

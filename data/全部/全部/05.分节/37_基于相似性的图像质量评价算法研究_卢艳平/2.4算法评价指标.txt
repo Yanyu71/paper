@@ -1,0 +1,22 @@
+2.4算法评价指标
+客观算法评价的结果可以通过一定的函数来拟合图像主观质量评价结果，通常各质量 点越集中，越接近拟合的曲线，说明图像的质量越好。拟合函数一般采用SheikhH.R.等人 提出的5参数的Logistic函数【36〕，如下面所示：
+Quality(x) = ^logistic^^, (x — $)) + p4x + /?5	(2-13)
+1 1
+logistic^	(2-14)
+利用上式进行拟合取得了比较好的效果，并在图像质量评价的主客观分数拟合中获得 了广泛应用。
+本文采用4种评价指标来评价不同图像质量评价算法的性能，分别是：
+1)皮尔逊线性相关系数(Pearson Linear Correlation Coefficient, PLCC)：
+PMC =	= E W(F	(2-15)
+在计算PLCC之前，需要先对客观质量值和质量值进行拟合。拟合后的曲线上的客观质 量值所对应的主观质量值与主观质量值之间按照计算式(2-11)计算相关性。
+2)斯皮尔曼相关系数(Spearman Rank Order Correlation Coefficient, SROCC):
+SROCC = 1 一 &平尸？	(2-16)
+n(n2-l)	'	7
+假设主观评价分数序列为X,客观评价分数为y, n为样本容量。将X和y按照从大到小 的顺序进行排列，记X/、力为原数组中豹、贝在排序之后的位置。
+15
+3) 坎德尔(Kendall Rank Order Correlation Coefficient, KROCC)相关系数：
+KROCC = (P —Q)由 ,	(2-17)
+其中P为和谐对的个数,Q为不和谐对的个数，n为样本容量。
+4)均方根误差(Root Mean Squared Error, RMSE)x
+RMSE = J 里皓宣	(2-18)
+RMSE越接近0,图像质量评价算法的精度就越高。
+一个好的图像质量评价算法，应该具有较高的SROCC,PLCC,KROCC和较低的RMSE 值。

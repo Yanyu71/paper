@@ -1,0 +1,2 @@
+2.3时、频及空域频谱感知算法
+频谱感知技术作为认知无线电系统中的关键技术之一，可以按照实现方式, 分为对对PU的发射机或接收机的感知方法。本节将对现有的基于发射机信号 的时域、频域及空频谱感知算法进行介绍，包括匹配滤波器检测(Matched Filter, MF)。】、能量检测(Energy Detection, ED)[6\算术-几何平均特征值感知(Arithmetic to Geometric Mean, AGM)^、基于信号秩的感知算法(rank-P)[32l和基于广义似然比的感 知(Generalized Likelihood Ratio, GLRT)⑼算法。

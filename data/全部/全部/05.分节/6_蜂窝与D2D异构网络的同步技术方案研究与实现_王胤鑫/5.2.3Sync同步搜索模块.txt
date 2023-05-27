@@ -1,0 +1,24 @@
+5.2.3Sync同步搜索模块
+Sync 同步搜索模块对应的函数为Sync Search,该函数的接口如下：
+Sync  Search(int16  t*RxData,             int16  t*sync  Foffset,int16  t*sync  Toffset,
+SyncInfo      sync  Info)
+表5-4 Sync Search函数接口
+名字	I/O	数据类型	描述
+RxData	I	int16 t*	接收数据
+sync Foffset	O	int16 t	频偏值
+sync Toffset	O	int16 t	时偏值
+sync Info	O	Struct	带外同步信息
+其中sync Info是一类型为Synclnfo 的结构体，用于在带外传输Sync 同步
+的同步信息。该结构体根据4.2.2节的设计，其定义如表5-4所示：
+39
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+北京邮电大学工学硕士学位论文
+表5-5 SyncInfo结构体定义
+名字	数据类型	描述
+rX ID	uint8 t	对方ID
+rx SYNC ID	uint8 t	对方Sync直接同步源
+ID
+SYNC ID ORG	uint8 t	对方Sync根源同步源
+ID
+SYNC UL ORG	uint8 t	对方根源同步源种类
+rx TA	int32 t	对方提前量TA

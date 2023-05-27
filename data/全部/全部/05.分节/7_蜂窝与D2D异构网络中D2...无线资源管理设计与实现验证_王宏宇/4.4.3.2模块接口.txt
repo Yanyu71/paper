@@ -1,0 +1,25 @@
+4.4.3.2模块接口
+通过对交互流程的设计，模块需提供对外接口如下:
+// timing queue trigger handler
+void intf^send_trigger();
+// message process handler
+void intf_msgproc_handler(const void* msg, const int& size);
+// interface to NetMonitor module
+void update_intf^c2d(const int& cueid, const int& intf);
+void update_pO(const int& pO);
+void updatejpl_d2b(const int& pl_meas);	.
+void update_noise(const int& noise_meas);
+void update_alpha(const double& alpha);
+// interface to SSCA module
+void update_pl_d2drx(const int& pl_cts)
+// D2C interference tracing
+void update_qualitycue(const int& cueid, const int& quality);
+void set_underlaylist(int fh, int sfh, std::vector<int>& underlay cuelist);
+// interface to AMC
+int get_intf^c2d(int dueid, int cueid);
+int get_noise_drx(int dueid);
+int get_maxpower_d2b();
+int get_powerfactor_d2c(int cueid);
+在上表中，函数名大致能够反映函数的作用，仅对其中两个函数补充说明。
+1)干扰跟踪时，在DUE本机未发送数据的情况下，CUE的通信质量也可 能发生改变，此时DUE本机不应该对此CUE进行闭环干扰控制，所以需要在本 机数据发送时，使用set_underlaylist()记录复用的CUE ID,以此进行干扰跟踪。
+2)get_maxpower_d2b()为正交干扰控制函数，返回最大允许发送功率值。 get_power factor_d2c()返回重用干扰闭环控制后的重用功率因子。

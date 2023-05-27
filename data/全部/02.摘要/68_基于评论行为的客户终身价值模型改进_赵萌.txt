@@ -1,0 +1,21 @@
+摘要
+客户终身价值一直以来都是企业进行客户管理以及相关营销活 动的重要依据。通过对群体层面的客户终身价值和个体层面的客户终 身价值进行分析，企业能够对现存客户的价值进行识别，并且不断改 进客户管理方向以实现客户价值最大化。
+本文主要从群体层面和个体层面两个维度来进行客户终身价值 的计算，分别通过两种不同的数学模型来对客户的价值进行全方位的 分析，以期为企业对客户的管理决策奠定基础。
+在Web2.0时代越来越多的消费者乐于在购物网站、点评类网站 以及社交类网站上以文字的形式，发布对相关产品、服务、品牌或企 业的评价。众所周知，对于企业而言，用户每产生一次购买行为都会 为企业带来一定的利润，会给企业带来一定的直接价值，而用户每产 生一次评论行为是否同样会为企业带来一定的影响与价值。
+现阶段研究者仅从消费者的购买行为出发对客户的终身价值进 行建模，并未有研究者综合考虑了客户的购买行为和评论行为。由于 该研究点较为新颖，未出现相关的研究，因此本文决定将评论行为引 入客户终身价值建模领域，来进行相关的尝试和探索。
+在研究大众点评网客户的过程中，本文发现同一消费者会同时使 用其点评平台和团购平台，从而使得用户自身的两种行为会产生相互 影响，因此针对这种客户特征，本文尝试建立了群体层面和个体层面 两种改进的客户终身价值模型。
+本文的模型主要由两部分组分：群体层面的客户终身价值模型和 个体层面的客户终身价值模型。针对群体层面的模型研究，本文选取 RFM作为基础模型，将评论行为引入模型中，提出了综合考虑两种 行为的改进RFM模型；针对个体层面的模型研究,本文首先利用Logit 回归模型对评论行为对购买行为的影响进行研究，提取出关键变量, 并将这些变量作为协变量引入Pareto/NBD模型中，进一步的改进了
+1基金项目：(1)国家臼然科学基金重点项目“面向不确定性的Web2.0用户创作内容管理研究：项目编号: 71231002; (2)国家自然科学基金项目一半契约情景下的豕户终生价值建模及营销决策研究”，项目编号： 71171023; (3)国家重点基础研究发展计划(973计划)“社交网络分析与网络传播的基础研究”，项目编号： 2013CV329604; (4) 973项目”面向服务的木火互联网体系结构与机制研究1项目编号：2012cB315800:(5) 基于网络社会资本的企业网络舆情沟通决策研究，项目编号：20120005110015.
+俣里舟■妈头金融世仃预测；月供1可杵利用LOglt慢里和改进 Pareto/NBD的方法进行评论次数的预测；最后提出针对个体层面的 客户终身价值模型。实证结果显示，预测模型都取得了很好的拟合和 预测效果。
+本研究发现了消费者自身评论行为对于其购买行为的影响，并且 通过实证分析达到了较好的预测结果，这对于企业今后进行真正高价 值用户的识别，改进相关管理措施提供了重要依据。
+关解字RFM模型客户流失行为购买行为预测评论行为预测 客户终身价值
+CUSTOMER LIFETIME VALUE IMPROVED BASED ON ONLINE REVIEW BEHAVIOR
+ABSTRACT
+Customer lifetime value has always been the most important support for enterprises to manage the customers and do the relative marketing activities. By calculating customer lifetime value in both the aggregate level and individual level, enterprises can recognize the customers9 values so that they can adjust the customer management direction to realize the maximum of customer value.
+This paper focused on the two dimensionalities: the aggregate level and the individual level, by using two different mathematical models to calculate the customer value so that we can lay the foundation for the marketing decisions.
+During the era of web2.0, more and more customers are willing to make comments about the relative products, services, brands and comments about the enterprises on the purchase, review and SNS websites. As we all known, for the enterprises, each customer can bring direct value by purchase behavior. But we don't know whether the review behavior can also bring values for the enterprises or not.
+Nowadays, researchers only analyze the customers' purchase behaviors and make the mathematical model from this dimensionality, ignoring the review behaviors and do not analyze the purchase and review behaviors together. Because the view is relative new and lack of studies, we decide to rebuild the mathematical model to calculate customer lifetime value by considering the purchase and review behaviors together.
+While studying the Dianping.com, we found that one customer can both use the purchase platform and review platform so that these two behaviors can influence each other. Because of this characteristic, we try to build the aggregate level and individual level models to recalculate the customer lifetime value.
+The models of our paper are composed by two parts: the aggregate level and the individual level. For the aggregate level, we use the RFM model as the basic model, and bring the review behavior into the basic model, proposing the improved RFM model considering two behaviors; For the individual level, we first use Logit model to analyze the influence between two behaviors and get the important variables. Then put these important variables into the Pareto/NBD model as covariant. Next, we use the traditional Gamma-Gamma model to predict the purchase monetary. Meanwhile, we also use the Logit and Pareto/NBD to predict the review times. Finally, we build the customer lifetime value mathematical model. The result find that the prediction model have good effect.
+Our research finds that the customer's purchase behavior can influence their own purchase behavior by using the real data from Dianping.com. This result can support the enterprise to recognize high value customer and provide strong support of the relative management measures.
+KEY WORDS RFM Model Customer Chum Behavior Purchase Behavior Prediction Review Behavior Prediction Customer Lifetime Value

@@ -1,0 +1,18 @@
+5.4.1目标和事件解析模块的详细设计与实现
+此部分的时序图如图5-10所示：
+具体实现的类图如下图5-11所示:
+下面就模块中涉及的类的主要接口进行说明：Targetinfo类是目标解析主类。首先 提取主题信息，然后通过事件接入模块订阅接口 PubSub订阅相关主题信息以接收事件。 ScopeManage类用于知识对象映射，提取目标中的scope信息，通过映射生成知识对象 并且通过LoadTargetKnowledge查询本体知识库获取与此对象实例相关的实例、数据属
+性、对象属性。TargetToBoolExpr用于目标一阶表达式生成。主要将目标中的参数和相 关约束处理成一阶逻辑表达式。
+表5-18目标解析主要涉及类
+类/接口	功能描述
+TargetParser	目标解析主类，解析传入的Target Info对象，调用相关接口 完成提取主题信息并订阅、映射知识对象并査询知识库获 取相关联的知识、目标一阶表达式生成等二个任务。
+T argetToBoo 1 Expr	目标一阶表达式生成。主要将目标中的参数和相关约束处 理成一阶逻辑表达式
+ScopeManager	ScopeManage用丁-知识对象映射，提取目标中的scope信 息，通过映射生成知识对象。
+Load T arget Knowledge	查询知识库获取相关联的知识。
+PubSub	用于订阅相关事件主题。
+表 5-19 TargetToBoolExpr 类方法
+方法	List<Solver> parseTargetToBoolExpr(Context ctx,Targetlnfb info)
+描述	根据输入的Targetinfo对象生成BoolExpr,并对应生成一个Z3 Solver对象， 将生成的BoolExpr对象加入到Z3中。
+参数	@Param Context Z3 上卜文对象。
+@Param Targetlnfb推理目标对象。
+返冋	List<Solver>

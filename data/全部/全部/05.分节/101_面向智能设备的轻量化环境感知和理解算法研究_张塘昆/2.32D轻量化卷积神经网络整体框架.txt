@@ -1,0 +1,40 @@
+2.32D轻量化卷积神经网络整体框架
+本文的卷积神经网络的结构如下图2-4所示:
+In put
+Operator
+Out cha nnel
+2242x3?x3
+StemBlock
+256
+562x256
+DownSample Block
+512
+28?x512
+Mobile SOSA
+512
+282x512
+DownSample Block
+1024
+142x1024
+Mobile SOSA
+1024
+142x1024
+DownSample Block
+2048
+72x2048
+Mobile SOSA
+2048
+72x2048
+GConvlxl + Shuffle
+2048
+72x2048
+GConvlxl * Shuffle
+1280
+72x1280
+7x7 global average pool woo-d fc, softmax
+1000
+图2-4本文所提出的M-SOSANet的结构在ImageNet数据集上的神经网络结构示意
+针对图像分类任务中的大规模数据集ImageNet,以下采样模块（MEESP） + Mobile SOSA的组合重复叠加3次组成，在最后将会使用两次逐点卷积piontwise convolution +通道混洗channel shuffle进行特征的重组，最后送入全连接层对高 级特征进行分类。在进行CIFAR-10和CIFAR-100的图像分类的时候，由于图像 的分辨率小，将会调整下釆样的次数，将原有的5次下采样改为3次下采样，以 保证最后的特征图的w和h均大于1,保证下采样不损失过多的信息。
+在图像分割的实验中，基于M-SOSANet的图像分割任务，将使用ASPP模 块和该网络模型结合卩7】。ASPP结构的全称是Atrous Spatial Pyramid Pooling,其 中采用4个并行，不同空洞率的空洞卷积对输入的特征图进行处理，具有不同的 空洞率的卷积核能够捕获到多尺度的信息。其中包含有1*1的普通卷积，3*3的 空洞率为6的卷积，3*3的空洞率12的卷积，3*3的空洞率为18的卷积，以及 一个全局的池化操作。在M-SOSAnet的基础上进行拓展，语义分割算法模型的 整体结构和语义分割算法的深度神经网络模型DeepLabV3相似⑶】。如下图2-5 所示。
+22
+图2-5基于M-SOSANet的图像语义分割算法模型

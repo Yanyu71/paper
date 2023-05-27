@@ -1,0 +1,12 @@
+5.3.3SRS子载波映射位置及长度计算模块
+LTE在上行子帧的最后最后一个SC-FDMA符号上传输SRS,本模块负责计算子载 波位置和SRS长度以供后续SRS信道探测模块中取出SRS信号。
+表5-7: SRS子载波映射位置及长度计算函数描述
+函数原型	void eNBRxSRS_SCIdxCal(UeMId, SubFrameNum, RadioFrameNum, SrsUserlnfo, SRSBufldx)
+函数输入	函数参数	UeMId：用户 ID
+SubFrameNum：子帧号
+RadioFrameNum：无线帧号
+SRSBufldx： SRS缓存索引
+SrsUserlnfo：全局变量，指向用户SRS参数的指针
+函数输岀	全局变量	SrsScIdx： SRS物理资源映射起始子载波
+SrsLength：用户 SRS 长度
+返回值	无

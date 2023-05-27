@@ -1,0 +1,16 @@
+4.5RRM模块功能验证
+在LTE蜂窝网络覆盖下，使用商用LTE终端与自制LTE D2D终端异构组网, 对RRM模块功能及方案有效性进行验证。
+LTE蜂窝网络为楼内分布式BBU+RRU系统，配置如表4-13所示：
+表 4-13	LTE蜂窝网络配置
+Duplex Mode	　　　　TDD
+Bandwidth	　　　　20MHz
+UL/DLConfig index	　　　　2
+POnominalPUSCH	　　　　-75 dBm/RB
+C-RS power	　　　　12dBm/RE
+Alpha index	　　　　5
+NRBPUCCH	　　　　12
+MCS enable	　　　　true
+设备最大发送功率为：CUE设备最大24dBm, DUE射频前端最大发送功率
+73
+4dBm。
+验证中使用的蜂窝通信业务，根据业务模式的不同可划分为持续低容量型业 务和突发高容量型业务。持续型业务如VoIP、实时视频流，每次传输数据量较 小，资源分配与传输数据量相关；突发高容量业务如文件上传，待发送数据量充 裕，调度时通常分配较多传输资源。

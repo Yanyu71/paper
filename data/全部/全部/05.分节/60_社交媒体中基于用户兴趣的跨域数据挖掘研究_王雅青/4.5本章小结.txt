@@ -1,0 +1,30 @@
+4.5本章小结
+针对跨域数据匿名化导致跨域信息间关联缺失不足的问题，本章联合通过挖掘 匿名跨域用户的单域会话数据和跨域会话数据中的链接关系来增强跨域关联，提出 CDIE-C模型来学习用户兴趣的统一表示。首先使用双聚类方法提取类别级的跨域相 关性，并过滤噪声。然后通过联合捕捉用户行为数据中的项目级的序列信息和类别 级关联信息，将跨域项目和跨域类别统一嵌入到低维空间中。此外，模型联合利用 三种类型的关系(即项目-项目上下文关系、项目-类别上下文关系和类别-项目上下 文关系)增强了跨域的信息交换。其次通过设计有效的联合训练算法来训练本文提 出的模型。最后在三个跨域数据集中进行实验，以评估CDIE-C模型的性能。结果表 明，当数据集的稀疏度高达50%时(即信息缺失50%时)，所提方法CDIE-C的推 荐性能相比于传统的针对匿名用户的单域推荐和跨域推荐方法至少提升11%,证明
+85
+了通过全面挖掘隐藏的跨域关联，可以很好地弥补缺失的跨域信息以提升推荐性能。
+参考文献
+[1]	Bobadilla J, Ortega F, Hernando A, et al. Recommender systems survey [J]. Knowledge-based systems, 2013,46： 109-132.
+[2]	Barkan O, Koenigstein N. Item2vec: neural item embedding for collaborative filtering[A]. //2016 IEEE 26th International Workshop on Machine Learning for Signal Processing (MLSP)[C]. Piscataway, NJ: EEE, 2016: 1-6.
+[3]	Greenstein-Messica A, Rokach L, Friedman M. Session-based recommendations using item embed-ding[A]. // Proceedings of the 22nd International Conference on Intelligent User Interfaces[C]. New York, NY: ACM, 2017: 62^-633.
+[4]	Bogina Y Kuflik T. Incorporating dwell time in session-based recommendations with recurrent neural networks[A]. // The ACM Conference on Recommender System[C], New York, NY: ACM, 2017: 57-59.
+[5]	Jannach D, Ludewig M. When recurrent neural networks meet the neighborhood for session-based recommendation[A]. II Proceedings of the Eleventh ACM Conference on Recommender Sys-tems[C]. New York, NY: ACM, 2017: 306-310.
+[6]	Linden G, Smith B, York J. Amazon.com recommendations: item-to-item collaborative filtering[J]. IEEE Internet computing, 2003, 7(1): 76-80.
+[7]	Sarwar B, Kaiypis G, Konstan J, et al. Item-based collaborative filtering recommendation algorithms [A]. // Proceedings of the 10th International Conference on World Wide Web[C]. Berlin, German: Springer, 2001: 285-295.
+[8]	Tan Y K, Xu X, Liu Y Improved recurrent neural networks for session-based recomniendations[A]. // Proceedings of the 1st Workshop on Deep Learning for Recommender Systems©. New York, NY: ACM, 2016: 17-22.
+[9]	Zhuang F, Zhou Y Zhang F, et at Sequential transfer learning: cross-domain novelty seeking trait mining for recommendation[A]. // Proceedings of the 26th international conference on world wide web companion[C]. Berlin, German: Springer, 2017: 881-882.
+[10]	Cantador I, Fernandez-Tobias I, Berkovsky S, et al. Cross-domain recommender systems[J]. Recommender systems handbook, 2015: 919-959.
+[11]	Femandez-Tobias I, Cantador I, Kaminskas M, et al. A generic semantic-based framework for crossdomain recommendation[A]. // Proceedings of the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems[C]. New York, NY: ACM, 2011: 25-32.
+[12]	Kaminskas M, Femandez-Tobias I, Cantador I, et al. Ontology-based identification of music for places[A]. // Information and Communication Technologies in Tourism 2013[C]. Berlin, German: Springer, 2013: 436-447.
+[13]	Gao S, Luo H, Chen D, et al. Cross-domain recommendation via cluster-level latent factor model[A]. // Joint European conference on machine learning and knowledge discovery in databases©. Berlin, German: Springer, 2013: 161-176.
+[14]	Iwata T, Koh T. Cross-domain recommendation without shared users or items by sharing latent vector distributions [A]. //Artificial Intelligence and Statistics[C]. Microtome Publishing, 2015: 379-387.
+86
+[15]	Li B, Yang Q, Xue X. Can movies and books collaborate? cross-domain collaborative filtering for sparsity reduction[A], // International Joint Conference on Artificial IntelligencefC]. San Francisco, CA: Morgan Kaufmann Publishers Inc, 2009.
+[16]	Dhillon I S. Co-clustering documents and words using bipartite spectral graph partitioning[A]. U Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining[C]. New York, NY: ACM, 2001: 269-274.
+[17]	Cao D, Nie L, He X, et al. Embedding factorization models forjointly recommending items and user generated lists[A]. // Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval[CJ. New York, NY: ACM, 2017: 585—594.
+[18]	Liang D, Altosaar J, Charlin L. et al. Factorization meets the item embedding: regularizing matrix factorization with item. co-occurrence[A], // Proceedings of the 10th ACM conference on recommender systems[C]. New York, NY: ACM, 2016: 59-66.
+[19]	Grbovic M, Radosavljevic Y Djuric N, et at E-commerce in your inbox: product recommendations at scale[A]. // Proceedings of the 21th ACM SIGKDD international conference on knowledge discovery and data mining[C]. New York, NY: ACM, 2015: 1809-1818.
+[20]	Levy O, Goldberg Y Neural word embedding as implicit matrix factorizationfA]. // Advances in neural information processing systems[C]. Massachusetts, US: MIT press, 2014: 2177-2185.
+[21]	Rendle S, Freudenthaler C, Gantner Z, et al. Bpr: bayesian personalized ranking from implicit feed-back[J]. arXiv preprint arXiv: 1205.2618, 2012.
+[22]	Hidasi B, Karatzoglou A, Baltrunas L, et al. Session-based recommendations with recurrent neural networks[J]. arXiv preprint arXiv: 1511.06939,2015.
+87
+(0)1994-2022 China Academic Journal Electronic Publishing House. All rights reserved, http://www.cnki.net

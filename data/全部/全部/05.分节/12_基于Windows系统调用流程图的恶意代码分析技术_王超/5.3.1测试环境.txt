@@ -1,0 +1,6 @@
+5.3.1测试环境
+系统的测试环境由两部分组成，分别是硬件环境和软件环境，下面将对其进 行详细描述：
+CPU	Intel(R) Core(TM) Duo 15
+运行内存	8G
+操作系统	Windows 7
+软件	Eclipse> IDA Pro, PEiD、MySQL

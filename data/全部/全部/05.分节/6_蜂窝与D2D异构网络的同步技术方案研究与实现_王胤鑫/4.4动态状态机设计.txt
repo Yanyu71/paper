@@ -1,0 +1,6 @@
+4.4动态状态机设计
+异构网络中外界覆盖环境在不断实时变化，上行和下行的同步定时状态也在 不断的变化。因此通过对外界覆盖环境进行实时监测，获取 CELL STATE,
+32
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+UE STATE  和 D2D STATE  三个状态标志的实时信息，根据4.2节中确定的静态 状态机的各状态条件进行决策判定，决定状态机下一状态，进行状态切换，从而
+决策D2D 终端上行状态机和下行状态机是否需要动态变化[16]。

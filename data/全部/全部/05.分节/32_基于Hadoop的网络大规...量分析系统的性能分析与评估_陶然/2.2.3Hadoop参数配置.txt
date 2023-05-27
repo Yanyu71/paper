@@ -1,0 +1,39 @@
+2.2.3Hadoop参数配置
+Hadoop参数对于一个集群的工作效率有及其重要的影响，良好的参数配置可 以提高集群作业的运行效率和集群的吞吐率。用户可以根据实际集群的硬件设备 和生产需求，自行设定这些参数，使得集群调整至最优状态。Hadoop有几个重 要的参数配置文件，分别简要如下。
+core-site.xml, Hadoop的核心属性文件，用于定义系统级别的参数，其主要 参数如表2-1所示。
+表2-1 core-site.xml基本参数表
+参数名称	默认值	参数说明
+fs.defaultname	file:/// （本地文件系 统）	设置Namenode的 hostname 及 port,默认 为本地文件系统，如果 使用集群模式则配置为 hdfs://hostname:900
+hadoop.tmp.dir	Ztmp/hadoop- ${user.name}	Hadoop的临时目录，其 它目录会基于此路径
+io.file.buflfer.size	4096 (bytes)	读写文件时使用的缓存 大小，这个大小应该是 内存Page的倍数
+ipc.client.connection.maxi
+dietime	10000（毫秒）	设定Hadoop client连接 時最大的闲置
+fis.trash.interval	0	以分钟为单位的垃圾回 收时间，垃圾站中数据 超过此时间，会被删除
+hdfs-site.xmL用于定义HDFS相关的参数，其主要参数如表2-2所示。
+表2-2 hdfs-site.xml基本参数表
+参数名称	默认值	参数说明
+dfs.blocksize	67108864 (bytes)	每个数据块的大小
+dfe.replication	3	数据块的副本数
+dfs.heartbeat.interval	3 （秒）	DataNode的心跳间隔
+dfs.namenode.handleECOunt	10	NameNode的服务线 程数，用于处理RPC 请求
+dfs.datanode.handler,count	3	DataNode的服务线程 数，仅用于接收请 求，处理业务命令
+dfe.datanode.max.xcievers	256	DataNode可同时处理 的最大文件数量
+yarn-site.xml,用于定义Yam相关的参数，其主要参数如表2-3所示，其中
+RM 为 ResourceManager, NM 为 NodeManager。
+表2?3 yarn-site.xml基本参数表
+参数名称	默认值	参数说明
+y am.resourcemanager. schedu ler. class	org.apache.hadoop.y am.server.resourcem anager. scheduler, cap acity. Capacity Sched uler	作业调度器实现类，目 前可用的有FIFO、 Capacity Schedule 不口 Fair Scheduler o
+yam.resourcemanager.resourc
+e-tracker.client.thread-count	50	RM处理来自NM的
+RPC请求的进程数目
+yam.scheduler.minimum- allocation-mb/ yarn.scheduler.maximum- allocation-mb	1024/8192	单个container可申请的
+最小/最大内存资源量
+yam.scheduler.minimum- al location-vcores/ yam.scheduler.maximum- allocation-vcores	1/32	单个container可申请的 最小/最大虚拟CPU个数
+yarn.nodemanager,resource.m emory-mb	8192	NM总的可用物理内存容 量
+（续上表）
+参数名称	默认值	参数说明
+yam.nodemanager.resource.cpu-
+vcores	8	NM总的可用虚拟CPU 个数
+yam.nodemanager.log.retain-
+seconds	10800 (秒)	NM上日志存放最长时间
+除此之外，还有mapred-site.xml、https-site.xml等配置文件，分别用于配置 不同方面的参数，用户均可以灵活设置。

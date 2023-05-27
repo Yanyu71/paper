@@ -1,0 +1,3 @@
+4.3.2Kafka与Storm的连接
+系统的技术难点之一在于如何将实时流处理平台Storm与消息队列Kafka相 连接，本文釆用了 KafkaSpout来实现两个组件的连接。KafkaSpout是Storm中 自带的Spout,使用KafkaSpout时需要子集实现Scheme接口，它主要负责从消 息流中解析出需要的数据。连接成功后终端显示信息如下：
+图4-4 Kakfa与Storm连接成功返回信息

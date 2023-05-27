@@ -1,0 +1,11 @@
+4.3.2.1D2D.CCCH模块
+物理层发送链路的D2D-CCCH模块(特指除DAIACTRL以外的D2D-CCCH 物理信道)由协议栈RTS/CTS/ACK/SYNC Sched Msg调度控制，发送D2D-CCCH 子帧信号。物理层生成SYNC子帧的接口为UlSyncTx。函数，物理层生成 RTS/CTS/ACK 子帧的接口为 CCCH_TX°函数，并使用 CCCH_ChanType 对 D2D-CCCH的类型进行区分，如表4-25所示：
+表 4-25 PHY D2D-CCCH 发送接口
+函数接口定义
+UlSyncTx。
+CCCH TX(uint8 t CCCH ChanType)
+Downlink TxFrontEndO
+RTS> CTS、ACK> SYNC信令均在LTE下行子帧发送，因此相应的子帧发 送应遵守ETE下行子帧的空口格式。因此，RTS、CTS、ACK、SYNC子帧的发 送调用Downlink_TxFrontEnd()进行与ETE下行信号一致的CP和GuardBand生成 等前端处理，处理逻辑如图4-23所示：
+发送主线程
+图4-23物理层D2D-CCCH发送端模块逻辑
+56

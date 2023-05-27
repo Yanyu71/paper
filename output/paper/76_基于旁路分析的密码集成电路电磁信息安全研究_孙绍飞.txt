@@ -1,0 +1,2119 @@
+﻿{
+    "knowledge_points": [
+        {"title": "万物互联时代的到来", "en": "The arrival of the Internet of Everything era"},
+        {"title": "智能硬件的构成", "en": "The composition of smart hardware"},
+        {"title": "智能硬件的信息安全问题", "en": "Information security issues of smart hardware"},
+        {"title": "全球信息安全形势", "en": "Global information security situation"},
+        {"title": "我国对信息安全的重视", "en": "China's emphasis on information security"},
+        {"title": "集成电路的安全性问题", "en": "Security issues of integrated circuits"},
+        {"title": "硬件安全攻击的上升趋势", "en": "The rising trend of hardware security attacks"},
+        {"title": "密码技术在信息安全中的作用", "en": "The role of cryptography in information security"}
+    ],
+    "relations": [
+        {"source": "万物互联时代的到来", "target": "智能硬件的构成", "type": "包含"},
+        {"source": "智能硬件的构成", "target": "智能硬件的信息安全问题", "type": "导致"},
+        {"source": "全球信息安全形势", "target": "我国对信息安全的重视", "type": "影响"},
+        {"source": "集成电路的安全性问题", "target": "硬件安全攻击的上升趋势", "type": "相关"},
+        {"source": "硬件安全攻击的上升趋势", "target": "密码技术在信息安全中的作用", "type": "解决"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "信息加密", "en": "Information Encryption"},
+        {"title": "密码算法的安全性分析", "en": "Security Analysis of Cryptographic Algorithms"},
+        {"title": "旁路分析", "en": "Side-Channel Analysis"},
+        {"title": "电磁分析", "en": "Electromagnetic Analysis"},
+        {"title": "硬件木马", "en": "Hardware Trojan"},
+        {"title": "集成电路供应链", "en": "Integrated Circuit Supply Chain"}
+    ],
+    "relations": [
+        {"source": "信息加密", "target": "密码算法的安全性分析", "type": "包含"},
+        {"source": "密码算法的安全性分析", "target": "旁路分析", "type": "包含"},
+        {"source": "旁路分析", "target": "电磁分析", "type": "包含"},
+        {"source": "电磁分析", "target": "硬件木马", "type": "相关"},
+        {"source": "硬件木马", "target": "集成电路供应链", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "集成电路供应链的各阶段", "en": "Various stages of the integrated circuit supply chain"},
+        {"title": "硬件木马的定义和分类", "en": "Definition and classification of hardware trojans"},
+        {"title": "电磁信息安全的重要性", "en": "The importance of electromagnetic information security"},
+        {"title": "TEMPEST研究", "en": "TEMPEST research"}
+    ],
+    "relations": [
+        {"source": "集成电路供应链的各阶段", "target": "硬件木马的定义和分类", "type": "包含关系"},
+        {"source": "硬件木马的定义和分类", "target": "集成电路供应链的各阶段", "type": "被包含关系"},
+        {"source": "硬件木马的定义和分类", "target": "电磁信息安全的重要性", "type": "相关性"},
+        {"source": "电磁信息安全的重要性", "target": "TEMPEST研究", "type": "相关性"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "计算机CRT显示器和液晶显示器的电磁泄漏原理和截获接收方法",
+            "en": "Electromagnetic leakage principle and interception method of computer CRT and LCD monitors"
+        },
+        {
+            "title": "SOFT-TEMPEST技术",
+            "en": "SOFT-TEMPEST technology"
+        },
+        {
+            "title": "电磁辐射泄漏的最远可接收距离",
+            "en": "Farthest receivable distance of electromagnetic radiation leakage"
+        },
+        {
+            "title": "DROPMIRE",
+            "en": "DROPMIRE"
+        },
+        {
+            "title": "电磁泄漏信息安全理论范围的估算方法和防护措施",
+            "en": "Estimation method and protection measures of electromagnetic leakage information security theory"
+        },
+        {
+            "title": "电磁信息安全与万物互联的交互融合",
+            "en": "Interaction and integration of electromagnetic information security with the Internet of Things"
+        },
+        {
+            "title": "密码算法执行过程中所泄露的计算时间存在的差异",
+            "en": "Differences in computation time leakage during password algorithm execution"
+        },
+        {
+            "title": "密码集成电路的电磁旁路分析",
+            "en": "Electromagnetic side-channel analysis of password integrated circuits"
+        },
+        {
+            "title": "TEMPEST技术",
+            "en": "TEMPEST technology"
+        },
+        {
+            "title": "电磁分析",
+            "en": "Electromagnetic analysis"
+        },
+        {
+            "title": "简单电磁分析(SEMA)和差分电磁分析(DEMA)",
+            "en": "Simple electromagnetic analysis (SEMA) and differential electromagnetic analysis (DEMA)"
+        },
+        {
+            "title": "电磁发射信号与底层计算所处理的不同数据相关",
+            "en": "Correlation between electromagnetic emission signals and different data processed by underlying computation"
+        },
+        {
+            "title": "电磁泄漏评估方法",
+            "en": "Electromagnetic leakage evaluation method"
+        },
+        {
+            "title": "遥控门锁系统的KeeLoq算法的电磁旁路分析",
+            "en": "Electromagnetic side-channel analysis of KeeLoq algorithm in remote door lock system"
+        },
+        {
+            "title": "非接触智能卡的电磁旁路分析",
+            "en": "Electromagnetic side-channel analysis of contactless smart cards"
+        },
+        {
+            "title": "Mifare非接触智能卡的电磁旁路分析",
+            "en": "Electromagnetic side-channel analysis of Mifare contactless smart cards"
+        },
+        {
+            "title": "RSA密码算法的电磁攻击",
+            "en": "Electromagnetic attack on RSA encryption algorithm"
+        },
+        {
+            "title": "椭圆曲线加密算法(ECC)的密钥恢复",
+            "en": "Key recovery of elliptic curve cryptography (ECC)"
+        }
+    ],
+    "relations": [
+        {
+            "source": "计算机CRT显示器和液晶显示器的电磁泄漏原理和截获接收方法",
+            "target": "SOFT-TEMPEST技术",
+            "type": "相关"
+        },
+        {
+            "source": "计算机CRT显示器和液晶显示器的电磁泄漏原理和截获接收方法",
+            "target": "电磁泄漏信息安全理论范围的估算方法和防护措施",
+            "type": "相关"
+        },
+        {
+            "source": "电磁辐射泄漏的最远可接收距离",
+            "target": "计算机CRT显示器和液晶显示器的电磁泄漏原理和截获接收方法",
+            "type": "相关"
+        },
+        {
+            "source": "DROPMIRE",
+            "target": "计算机CRT显示器和液晶显示器的电磁泄漏原理和截获接收方法",
+            "type": "相关"
+        },
+        {
+            "source": "电磁泄漏信息安全理论范围的估算方法和防护措施",
+            "target": "电磁信息安全与万物互联的交互融合",
+            "type": "相关"
+        },
+        {
+            "source": "密码算法执行过程中所泄露的计算时间存在的差异",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "TEMPEST技术",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "电磁分析",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "电磁发射信号与底层计算所处理的不同数据相关",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "电磁泄漏评估方法",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "遥控门锁系统的KeeLoq算法的电磁旁路分析",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "非接触智能卡的电磁旁路分析",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "Mifare非接触智能卡的电磁旁路分析",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "RSA密码算法的电磁攻击",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "椭圆曲线加密算法(ECC)的密钥恢复",
+            "target": "密码集成电路的电磁旁路分析",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "电磁旁路分析", "en": "Electromagnetic Side-Channel Analysis"},
+        {"title": "AES加密算法", "en": "AES Encryption Algorithm"},
+        {"title": "数字滤波", "en": "Digital Filtering"},
+        {"title": "曲线对齐", "en": "Curve Alignment"},
+        {"title": "相关电磁分析", "en": "Correlation Electromagnetic Analysis"},
+        {"title": "敏感信息的电磁泄漏", "en": "Sensitive Information Electromagnetic Leakage"},
+        {"title": "远场电磁发射", "en": "Far-field Electromagnetic Emission"},
+        {"title": "近场电磁发射", "en": "Near-field Electromagnetic Emission"},
+        {"title": "深度学习", "en": "Deep Learning"},
+        {"title": "支持向量机", "en": "Support Vector Machine"},
+        {"title": "回声状态网络", "en": "Echo State Network"},
+        {"title": "电磁脉冲故障注入", "en": "Electromagnetic Pulse Fault Injection"},
+        {"title": "可重构密码集成电路", "en": "Reconfigurable Cryptographic Integrated Circuit"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "图形处理单元", "en": "Graphics Processing Unit"},
+        {"title": "非建模分析", "en": "Non-Modeling Analysis"},
+        {"title": "建模分析", "en": "Modeling Analysis"}
+    ],
+    "relations": [
+        {"source": "AES加密算法", "target": "电磁旁路分析", "type": "应用"},
+        {"source": "数字滤波", "target": "电磁旁路分析", "type": "预处理"},
+        {"source": "曲线对齐", "target": "电磁旁路分析", "type": "预处理"},
+        {"source": "相关电磁分析", "target": "AES加密算法", "type": "攻击"},
+        {"source": "敏感信息的电磁泄漏", "target": "电磁旁路分析", "type": "攻击"},
+        {"source": "远场电磁发射", "target": "电磁旁路分析", "type": "攻击"},
+        {"source": "近场电磁发射", "target": "电磁旁路分析", "type": "攻击"},
+        {"source": "深度学习", "target": "电磁旁路分析", "type": "应用"},
+        {"source": "支持向量机", "target": "电磁旁路分析", "type": "应用"},
+        {"source": "回声状态网络", "target": "电磁旁路分析", "type": "应用"},
+        {"source": "电磁脉冲故障注入", "target": "电磁旁路分析", "type": "攻击"},
+        {"source": "可重构密码集成电路", "target": "电磁旁路分析", "type": "防护"},
+        {"source": "卷积神经网络", "target": "电磁旁路分析", "type": "应用"},
+        {"source": "图形处理单元", "target": "电磁旁路分析", "type": "研究对象"},
+        {"source": "非建模分析", "target": "电磁旁路分析", "type": "分析方法"},
+        {"source": "建模分析", "target": "电磁旁路分析", "type": "分析方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于旁路分析的硬件木马检测", "en": "Hardware Trojan Detection Based on Side-Channel Analysis"},
+        {"title": "硬件木马的概念", "en": "Concept of Hardware Trojan"},
+        {"title": "机器学习在硬件木马检测中的应用", "en": "Application of Machine Learning in Hardware Trojan Detection"},
+        {"title": "硬件木马信号的特征选择和数据降维", "en": "Feature Selection and Data Dimensionality Reduction of Hardware Trojan Signals"},
+        {"title": "国内外硬件木马检测现状", "en": "Current Status of Hardware Trojan Detection at Home and Abroad"},
+        {"title": "密码集成电路的电磁旁路分析", "en": "Electromagnetic Side-Channel Analysis of Cryptographic Integrated Circuits"},
+        {"title": "基于零假设的通用电磁旁路分析模型", "en": "General Electromagnetic Side-Channel Analysis Model Based on Null Hypothesis"}
+    ],
+    "relations": [
+        {"source": "基于旁路分析的硬件木马检测", "target": "硬件木马的概念", "type": "包含"},
+        {"source": "基于旁路分析的硬件木马检测", "target": "机器学习在硬件木马检测中的应用", "type": "包含"},
+        {"source": "基于旁路分析的硬件木马检测", "target": "硬件木马信号的特征选择和数据降维", "type": "包含"},
+        {"source": "国内外硬件木马检测现状", "target": "基于旁路分析的硬件木马检测", "type": "包含"},
+        {"source": "密码集成电路的电磁旁路分析", "target": "基于零假设的通用电磁旁路分析模型", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "密码集成电路", "en": "Cryptographic Integrated Circuits"},
+        {"title": "电磁旁路分析", "en": "Electromagnetic Side-Channel Analysis"},
+        {"title": "硬件木马", "en": "Hardware Trojan"},
+        {"title": "多源信息融合", "en": "Multi-source Information Fusion"},
+        {"title": "智能算法", "en": "Intelligent Algorithm"},
+        {"title": "迁移学习", "en": "Transfer Learning"}
+    ],
+    "relations": [
+        {"source": "密码集成电路", "target": "电磁旁路分析", "type": "包含"},
+        {"source": "密码集成电路", "target": "硬件木马", "type": "包含"},
+        {"source": "电磁旁路分析", "target": "信息泄露的电磁分析建模", "type": "包含"},
+        {"source": "电磁旁路分析", "target": "多字节电磁分析", "type": "包含"},
+        {"source": "多字节电磁分析", "target": "智能算法优化", "type": "包含"},
+        {"source": "电磁旁路分析", "target": "硬件木马检测", "type": "包含"},
+        {"source": "信息泄露的电磁分析建模", "target": "电磁发射原理", "type": "包含"},
+        {"source": "信息泄露的电磁分析建模", "target": "密码算法工作机制", "type": "包含"},
+        {"source": "多字节电磁分析", "target": "密钥信息利用率", "type": "包含"},
+        {"source": "智能算法优化", "target": "密钥寻优问题", "type": "包含"},
+        {"source": "硬件木马检测", "target": "迁移学习", "type": "包含"},
+        {"source": "迁移学习", "target": "时频信息检测分类", "type": "包含"},
+        {"source": "迁移学习", "target": "支持向量机", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "密码集成电路电磁旁路分析", "en": "Electromagnetic Side-Channel Analysis of Cryptographic Integrated Circuits"},
+        {"title": "第一章:绪论", "en": "Chapter 1: Introduction"},
+        {"title": "第二章:密码集成电路电磁旁路分析基础", "en": "Chapter 2: Fundamentals of Electromagnetic Side-Channel Analysis of Cryptographic Integrated Circuits"},
+        {"title": "第三章:密码集成电路信息泄露的电磁分析建模", "en": "Chapter 3: Electromagnetic Analysis Modeling of Information Leakage in Cryptographic Integrated Circuits"},
+        {"title": "第四章:基于智能算法优化的多字节电磁分析", "en": "Chapter 4: Multi-Byte Electromagnetic Analysis Optimization Based on Intelligent Algorithms"},
+        {"title": "第五章:基于迁移学习的电磁旁路硬件木马检测", "en": "Chapter 5: Electromagnetic Side-Channel Hardware Trojan Detection Based on Transfer Learning"},
+        {"title": "第六章:总结与展望", "en": "Chapter 6: Conclusion and Future Work"}
+    ],
+    "relations": [
+        {"source": "密码集成电路电磁旁路分析", "target": "第一章:绪论", "type": "包含"},
+        {"source": "第一章:绪论", "target": "密码集成电路信息泄露的电磁分析建模", "type": "引出"},
+        {"source": "第二章:密码集成电路电磁旁路分析基础", "target": "第三章:密码集成电路信息泄露的电磁分析建模", "type": "基础知识"},
+        {"source": "第三章:密码集成电路信息泄露的电磁分析建模", "target": "基于多元线性回归的电磁分析模型", "type": "包含"},
+        {"source": "第三章:密码集成电路信息泄露的电磁分析建模", "target": "密码集成电路电磁接收模型分析", "type": "包含"},
+        {"source": "第四章:基于智能算法优化的多字节电磁分析", "target": "第二章:密码集成电路电磁旁路分析基础", "type": "基础知识"},
+        {"source": "第五章:基于迁移学习的电磁旁路硬件木马检测", "target": "第二章:密码集成电路电磁旁路分析基础", "type": "基础知识"},
+        {"source": "第五章:基于迁移学习的电磁旁路硬件木马检测", "target": "基于迁移学习的电磁旁路硬件木马检测框架", "type": "包含"},
+        {"source": "第六章:总结与展望", "target": "密码集成电路电磁旁路分析", "type": "总结"},
+        {"source": "第六章:总结与展望", "target": "基于智能算法优化的多字节电磁分析", "type": "总结"},
+        {"source": "第六章:总结与展望", "target": "基于迁移学习的电磁旁路硬件木马检测", "type": "总结"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Differential Power Analysis", "en": ""},
+        {"title": "RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis", "en": ""},
+        {"title": "Non-Intrusive Analysis of Smart Cards Based on Electromagnetic Emissions", "en": ""},
+        {"title": "Differential Fault Analysis of Secret Key Cryptosystems", "en": ""},
+        {"title": "Hardware Security Risk Analysis and Prevention Suggestions", "en": ""},
+        {"title": "Machine Learning Against Hardware Trojan Attacks", "en": ""},
+        {"title": "Ten Years of Hardware Trojans: A Survey from the Attacker's Perspective", "en": ""},
+        {"title": "Introduction to Hardware Security and Trust", "en": ""},
+        {"title": "Side-Channel Hardware Trojan Detection Method Based on Classification Decision", "en": ""},
+        {"title": "Information Leakage Type Hardware Trojan and Hardware Trojan Detection Method", "en": ""},
+        {"title": "Hardware Trojan Detection Method Based on Side-Channel Signal Analysis", "en": ""},
+        {"title": "Practical Computer Radiation Information Capture Technology Research", "en": ""},
+        {"title": "Electromagnetic Radiation from Video Display Units: A Eavesdropping Risk?", "en": ""},
+        {"title": "Electromagnetic Eavesdropping Risks of Flat-Panel Displays", "en": ""},
+        {"title": "Study on Maximum Receivable Distance for Radiated Emission of Information Technology Equipment Causing Information Leakage", "en": ""},
+        {"title": "Research on Video Information Cognition and Restoration Technology Accompanied by Computer Electromagnetic Emission", "en": ""},
+        {"title": "Research on Accompanying Electromagnetic Emission and Information Electromagnetic Pattern of Digital Devices", "en": ""},
+        {"title": "Research on Computer Electromagnetic Information Leakage and Video Information Cognition", "en": ""},
+        {"title": "Power and Electromagnetic Analysis: Improved Model, Consequences and Comparisons", "en": ""},
+        {"title": "Concrete Results of Electromagnetic Analysis", "en": ""}
+    ],
+    "relations": [
+        {"source": "Differential Power Analysis", "target": "RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis", "type": "related"},
+        {"source": "Non-Intrusive Analysis of Smart Cards Based on Electromagnetic Emissions", "target": "Differential Power Analysis", "type": "related"},
+        {"source": "Differential Fault Analysis of Secret Key Cryptosystems", "target": "Differential Power Analysis", "type": "related"},
+        {"source": "Hardware Security Risk Analysis and Prevention Suggestions", "target": "Machine Learning Against Hardware Trojan Attacks", "type": "related"},
+        {"source": "Machine Learning Against Hardware Trojan Attacks", "target": "Ten Years of Hardware Trojans: A Survey from the Attacker's Perspective", "type": "related"},
+        {"source": "Ten Years of Hardware Trojans: A Survey from the Attacker's Perspective", "target": "Introduction to Hardware Security and Trust", "type": "related"},
+        {"source": "Side-Channel Hardware Trojan Detection Method Based on Classification Decision", "target": "Information Leakage Type Hardware Trojan and Hardware Trojan Detection Method", "type": "related"},
+        {"source": "Information Leakage Type Hardware Trojan and Hardware Trojan Detection Method", "target": "Hardware Trojan Detection Method Based on Side-Channel Signal Analysis", "type": "related"},
+        {"source": "Practical Computer Radiation Information Capture Technology Research", "target": "Electromagnetic Radiation from Video Display Units: A Eavesdropping Risk?", "type": "related"},
+        {"source": "Electromagnetic Radiation from Video Display Units: A Eavesdropping Risk?", "target": "Electromagnetic Eavesdropping Risks of Flat-Panel Displays", "type": "related"},
+        {"source": "Electromagnetic Eavesdropping Risks of Flat-Panel Displays", "target": "Study on Maximum Receivable Distance for Radiated Emission of Information Technology Equipment Causing Information Leakage", "type": "related"},
+        {"source": "Research on Video Information Cognition and Restoration Technology Accompanied by Computer Electromagnetic Emission", "target": "Research on Accompanying Electromagnetic Emission and Information Electromagnetic Pattern of Digital Devices", "type": "related"},
+        {"source": "Research on Accompanying Electromagnetic Emission and Information Electromagnetic Pattern of Digital Devices", "target": "Research on Computer Electromagnetic Information Leakage and Video Information Cognition", "type": "related"},
+        {"source": "Power and Electromagnetic Analysis: Improved Model, Consequences and Comparisons", "target": "Concrete Results of Electromagnetic Analysis", "type": "related"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "远场相关性电磁分析攻击", "en": "Remote Correlation Electromagnetic Analysis Attack"},
+        {"title": "近场差分电磁分析攻击", "en": "Near-field Differential Electromagnetic Analysis Attack"},
+        {"title": "IC卡芯片旁路攻击分析方法研究", "en": "Research on Side-channel Attack Analysis Method for IC Card Chip"},
+        {"title": "新型功耗分析方法研究及密码攻防实践", "en": "Research on New Power Analysis Method and Password Attack and Defense Practice"},
+        {"title": "典型公钥密码实现的功耗分析与防护技术研究", "en": "Research on Power Analysis and Protection Technology for Typical Public Key Cryptography Implementation"},
+        {"title": "基于机器学习的密码芯片电磁攻击技术研究", "en": "Research on Electromagnetic Attack Technology for Password Chips Based on Machine Learning"},
+        {"title": "基于功耗泄露的侧信道分析和评估技术研究", "en": "Research on Side-channel Analysis and Evaluation Technology Based on Power Leakage"},
+        {"title": "基于密码芯片的旁路攻击方法研究", "en": "Research on Side-channel Attack Method Based on Password Chip"},
+        {"title": "多字节电磁分析", "en": "Multibyte Electromagnetic Analysis"},
+        {"title": "基于粒子群优化算法的多目标电磁分析", "en": "Multi-objective Electromagnetic Analysis Based on Particle Swarm Optimization Algorithm"},
+        {"title": "基于遗传算法的AES密码芯片电磁攻击研究", "en": "Research on Electromagnetic Attack of AES Cryptographic Chip Based on Genetic Algorithm"},
+        {"title": "电磁脉冲故障注入实现及其机理的研究", "en": "Research on Implementation and Mechanism of Electromagnetic Pulse Fault Injection"},
+        {"title": "利用动态局部重构特性抵抗电磁攻击关键技术研究", "en": "Research on Key Technologies to Resist Electromagnetic Attacks Using Dynamic Local Reconstruction Characteristics"},
+        {"title": "基于空间电磁辐射的旁路攻击", "en": "Side-channel Attack Based on Spatial Electromagnetic Radiation"},
+        {"title": "针对真实RFID标签的侧信道攻击", "en": "Side-channel Attack on Real RFID Tags"},
+        {"title": "基于卷积神经网络的能量迹预处理方法研究", "en": "Research on Energy Trace Preprocessing Method Based on Convolutional Neural Network"},
+        {"title": "GPU位切AES实现的高效电磁分析", "en": "Efficient Electromagnetic Analysis of GPU Bitsliced AES Implementation"},
+        {"title": "密码芯片侧信道分析与检测技术研究", "en": "Research on Side-channel Analysis and Detection Technology for Password Chips"},
+        {"title": "IC指纹检测", "en": "IC Fingerprint Detection"},
+        {"title": "硬件木马检测", "en": "Hardware Trojan Detection"},
+        {"title": "基于电磁电路指纹的硬件木马检测", "en": "Hardware Trojan Detection Based on Electromagnetic Circuit Fingerprint"}
+    ],
+    "relations": [
+        {"source": "远场相关性电磁分析攻击", "target": "近场差分电磁分析攻击", "type": "相关"},
+        {"source": "近场差分电磁分析攻击", "target": "IC卡芯片旁路攻击分析方法研究", "type": "相关"},
+        {"source": "IC卡芯片旁路攻击分析方法研究", "target": "新型功耗分析方法研究及密码攻防实践", "type": "相关"},
+        {"source": "新型功耗分析方法研究及密码攻防实践", "target": "典型公钥密码实现的功耗分析与防护技术研究", "type": "相关"},
+        {"source": "典型公钥密码实现的功耗分析与防护技术研究", "target": "基于机器学习的密码芯片电磁攻击技术研究", "type": "相关"},
+        {"source": "基于机器学习的密码芯片电磁攻击技术研究", "target": "基于功耗泄露的侧信道分析和评估技术研究", "type": "相关"},
+        {"source": "基于功耗泄露的侧信道分析和评估技术研究", "target": "基于密码芯片的旁路攻击方法研究", "type": "相关"},
+        {"source": "多字节电磁分析", "target": "基于粒子群优化算法的多目标电磁分析", "type": "相关"},
+        {"source": "基于粒子群优化算法的多目标电磁分析", "target": "基于遗传算法的AES密码芯片电磁攻击研究", "type": "相关"},
+        {"source": "基于遗传算法的AES密码芯片电磁攻击研究", "target": "电磁脉冲故障注入实现及其机理的研究", "type": "相关"},
+        {"source": "电磁脉冲故障注入实现及其机理的研究", "target": "利用动态局部重构特性抵抗电磁攻击关键技术研究", "type": "相关"},
+        {"source": "利用动态局部重构特性抵抗电磁攻击关键技术研究", "target": "基于空间电磁辐射的旁路攻击", "type": "相关"},
+        {"source": "基于空间电磁辐射的旁路攻击", "target": "针对真实RFID标签的侧信道攻击", "type": "相关"},
+        {"source": "基于卷积神经网络的能量迹预处理方法研究", "target": "GPU位切AES实现的高效电磁分析", "type": "相关"},
+        {"source": "GPU位切AES实现的高效电磁分析", "target": "密码芯片侧信道分析与检测技术研究", "type": "相关"},
+        {"source": "IC指纹检测", "target": "硬件木马检测", "type": "相关"},
+        {"source": "硬件木马检测", "target": "基于电磁电路指纹的硬件木马检测", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "硬件木马", "en": "Hardware Trojan"},
+        {"title": "多层神经网络", "en": "Multi-layer neural networks"},
+        {"title": "机器学习", "en": "Machine learning"},
+        {"title": "支持向量机", "en": "Support vector machine"},
+        {"title": "深度卷积神经网络", "en": "Deep convolutional neural network"},
+        {"title": "信号相关性聚类", "en": "Signal correlation-based clustering"},
+        {"title": "遗传算法", "en": "Genetic algorithm"},
+        {"title": "随机森林分类器", "en": "Random forest classifier"},
+        {"title": "缩短激活时间", "en": "Shortening activation time"},
+        {"title": "工艺偏差校正", "en": "Process deviation correction"},
+        {"title": "高层次安全模型", "en": "High-level security model"}
+    ],
+    "relations": [
+        {"source": "硬件木马", "target": "多层神经网络", "type": "应用"},
+        {"source": "硬件木马", "target": "机器学习", "type": "应用"},
+        {"source": "硬件木马", "target": "支持向量机", "type": "应用"},
+        {"source": "硬件木马", "target": "深度卷积神经网络", "type": "应用"},
+        {"source": "硬件木马", "target": "信号相关性聚类", "type": "应用"},
+        {"source": "硬件木马", "target": "遗传算法", "type": "应用"},
+        {"source": "硬件木马", "target": "随机森林分类器", "type": "应用"},
+        {"source": "硬件木马", "target": "缩短激活时间", "type": "应用"},
+        {"source": "硬件木马", "target": "工艺偏差校正", "type": "应用"},
+        {"source": "硬件木马", "target": "高层次安全模型", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于故障注入的硬件木马设计", "en": ""},
+        {"title": "载波泄漏型硬件木马芯片设计", "en": ""},
+        {"title": "基于核最大间距准则的硬件木马检测新方法", "en": ""},
+        {"title": "硬件木马的非线性功耗检测方法及实现", "en": ""},
+        {"title": "基于密钥的硬件木马预防方法研究", "en": ""},
+        {"title": "FPGA硬件木马检测的关键技术研究", "en": ""},
+        {"title": "硬件木马检测方法研究", "en": ""},
+        {"title": "基于遗传算法的硬件木马检测方法", "en": ""},
+        {"title": "基于温度特征分析的硬件木马检测方法", "en": ""},
+        {"title": "基于投影寻踪分析的芯片硬件木马检测", "en": ""},
+        {"title": "密码集成电路电磁旁路分析基础", "en": "Basics of Electromagnetic Side-Channel Analysis of Cryptographic Integrated Circuits"},
+        {"title": "分组密码算法基础", "en": "Basics of Block Cipher Algorithms"}
+    ],
+    "relations": [
+        {"source": "基于故障注入的硬件木马设计", "target": "基于核最大间距准则的硬件木马检测新方法", "type": "关联"},
+        {"source": "载波泄漏型硬件木马芯片设计", "target": "硬件木马的非线性功耗检测方法及实现", "type": "关联"},
+        {"source": "基于核最大间距准则的硬件木马检测新方法", "target": "FPGA硬件木马检测的关键技术研究", "type": "关联"},
+        {"source": "硬件木马的非线性功耗检测方法及实现", "target": "基于遗传算法的硬件木马检测方法", "type": "关联"},
+        {"source": "基于密钥的硬件木马预防方法研究", "target": "基于投影寻踪分析的芯片硬件木马检测", "type": "关联"},
+        {"source": "FPGA硬件木马检测的关键技术研究", "target": "硬件木马检测方法研究", "type": "关联"},
+        {"source": "基于遗传算法的硬件木马检测方法", "target": "基于温度特征分析的硬件木马检测方法", "type": "关联"},
+        {"source": "基于温度特征分析的硬件木马检测方法", "target": "基于投影寻踪分析的芯片硬件木马检测", "type": "关联"},
+        {"source": "密码集成电路电磁旁路分析基础", "target": "分组密码算法基础", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "字节代替",
+            "en": "Byte Substitution"
+        },
+        {
+            "title": "行移位",
+            "en": "ShiftRows"
+        },
+        {
+            "title": "列混淆",
+            "en": "MixColumns"
+        },
+        {
+            "title": "轮密钥加",
+            "en": "AddRoundKey"
+        },
+        {
+            "title": "密码集成电路",
+            "en": "Integrated Circuit for Cryptography"
+        },
+        {
+            "title": "电磁旁路分析",
+            "en": "Electromagnetic Side-Channel Analysis"
+        },
+        {
+            "title": "半导体物理基础",
+            "en": "Semiconductor Physics"
+        },
+        {
+            "title": "CMOS电路",
+            "en": "CMOS Circuit"
+        },
+        {
+            "title": "动态消耗",
+            "en": "Dynamic Power Consumption"
+        }
+    ],
+    "relations": [
+        {
+            "source": "字节代替",
+            "target": "行移位",
+            "type": "前置"
+        },
+        {
+            "source": "行移位",
+            "target": "列混淆",
+            "type": "前置"
+        },
+        {
+            "source": "列混淆",
+            "target": "轮密钥加",
+            "type": "前置"
+        },
+        {
+            "source": "轮密钥加",
+            "target": "字节代替",
+            "type": "前置"
+        },
+        {
+            "source": "密码集成电路",
+            "target": "电磁旁路分析",
+            "type": "相关"
+        },
+        {
+            "source": "电磁旁路分析",
+            "target": "半导体物理基础",
+            "type": "前置"
+        },
+        {
+            "source": "半导体物理基础",
+            "target": "CMOS电路",
+            "type": "前置"
+        },
+        {
+            "source": "CMOS电路",
+            "target": "动态消耗",
+            "type": "前置"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "电磁分侬论", "en": "Electromagnetic Theory"},
+        {"title": "密码集成电路的电磁发射", "en": "Electromagnetic Emission of Cryptographic Integrated Circuits"},
+        {"title": "电磁兼容标准IEC61967", "en": "Electromagnetic Compatibility Standard IEC61967"},
+        {"title": "预处理措施", "en": "Preprocessing Measures"},
+        {"title": "滑动压缩", "en": "Sliding Compression"},
+        {"title": "主成分分析", "en": "Principal Component Analysis"},
+        {"title": "小波变换", "en": "Wavelet Transform"},
+        {"title": "麦克斯韦方程组", "en": "Maxwell's Equations"},
+        {"title": "直接发射", "en": "Direct Emission"},
+        {"title": "调制发射", "en": "Modulated Emission"},
+        {"title": "简单电磁分析", "en": "Simple Electromagnetic Analysis"}
+    ],
+    "relations": [
+        {"source": "密码集成电路的电磁发射", "target": "电磁分侬论", "type": "属于"},
+        {"source": "电磁兼容标准IEC61967", "target": "电磁分侬论", "type": "属于"},
+        {"source": "预处理措施", "target": "密码集成电路的电磁发射", "type": "影响"},
+        {"source": "滑动压缩", "target": "预处理措施", "type": "包含"},
+        {"source": "主成分分析", "target": "预处理措施", "type": "包含"},
+        {"source": "小波变换", "target": "预处理措施", "type": "包含"},
+        {"source": "麦克斯韦方程组", "target": "电磁分侬论", "type": "描述"},
+        {"source": "直接发射", "target": "密码集成电路的电磁发射", "type": "包含"},
+        {"source": "调制发射", "target": "密码集成电路的电磁发射", "type": "包含"},
+        {"source": "简单电磁分析", "target": "密码集成电路的电磁发射", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "设备威胁", "en": "Device Threat"},
+        {"title": "公钥密码算法", "en": "Public Key Cryptography"},
+        {"title": "RSA加密算法", "en": "RSA Encryption Algorithm"},
+        {"title": "电磁发射迹线", "en": "Electromagnetic Emission Trace"},
+        {"title": "相关电磁分析", "en": "Correlation Electromagnetic Analysis"},
+        {"title": "密码集成电路", "en": "Integrated Circuit for Cryptography"},
+        {"title": "密钥恢复", "en": "Key Recovery"},
+        {"title": "差分电磁分析", "en": "Differential Electromagnetic Analysis"},
+        {"title": "电磁旁路信息泄露模型", "en": "Electromagnetic Side-Channel Information Leakage Model"},
+        {"title": "汉明重量模型", "en": "Hamming Weight Model"},
+        {"title": "比特模型", "en": "Bit Model"},
+        {"title": "汉明距离模型", "en": "Hamming Distance Model"},
+        {"title": "零值模型", "en": "Zero Value Model"}
+    ],
+    "relations": [
+        {"source": "设备威胁", "target": "公钥密码算法", "type": "属于"},
+        {"source": "RSA加密算法", "target": "电磁发射迹线", "type": "涉及"},
+        {"source": "电磁发射迹线", "target": "相关电磁分析", "type": "使用"},
+        {"source": "密码集成电路", "target": "电磁发射迹线", "type": "产生"},
+        {"source": "相关电磁分析", "target": "密钥恢复", "type": "实现"},
+        {"source": "电磁发射迹线", "target": "差分电磁分析", "type": "使用"},
+        {"source": "差分电磁分析", "target": "密钥恢复", "type": "实现"},
+        {"source": "电磁旁路信息泄露模型", "target": "汉明重量模型", "type": "包括"},
+        {"source": "电磁旁路信息泄露模型", "target": "汉明距离模型", "type": "包括"},
+        {"source": "电磁旁路信息泄露模型", "target": "比特模型", "type": "包括"},
+        {"source": "电磁旁路信息泄露模型", "target": "零值模型", "type": "包括"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "数字电路",
+            "en": "Digital Circuit"
+        },
+        {
+            "title": "电磁发射值",
+            "en": "Electromagnetic Emission Value"
+        },
+        {
+            "title": "汉明距离",
+            "en": "Hamming Distance"
+        },
+        {
+            "title": "汉明重量模型",
+            "en": "Hamming Weight Model"
+        },
+        {
+            "title": "比特模型",
+            "en": "Bit Model"
+        },
+        {
+            "title": "零值模型",
+            "en": "Zero-Value Model"
+        },
+        {
+            "title": "AES密码算法",
+            "en": "AES Cryptographic Algorithm"
+        },
+        {
+            "title": "电磁旁路分析",
+            "en": "Electromagnetic Side-Channel Analysis"
+        },
+        {
+            "title": "智能算法优化",
+            "en": "Intelligent Algorithm Optimization"
+        }
+    ],
+    "relations": [
+        {
+            "source": "数字电路",
+            "target": "电磁发射值",
+            "type": "映射"
+        },
+        {
+            "source": "汉明距离",
+            "target": "电磁发射值",
+            "type": "映射"
+        },
+        {
+            "source": "汉明重量模型",
+            "target": "电磁发射值",
+            "type": "映射"
+        },
+        {
+            "source": "比特模型",
+            "target": "电磁发射值",
+            "type": "映射"
+        },
+        {
+            "source": "零值模型",
+            "target": "电磁发射值",
+            "type": "映射"
+        },
+        {
+            "source": "AES密码算法",
+            "target": "数字电路",
+            "type": "基础"
+        },
+        {
+            "source": "电磁旁路分析",
+            "target": "数字电路",
+            "type": "应用"
+        },
+        {
+            "source": "电磁旁路分析",
+            "target": "电磁发射值",
+            "type": "建模"
+        },
+        {
+            "source": "智能算法优化",
+            "target": "电磁旁路分析",
+            "type": "分析"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "电磁分析建模", "en": "Electromagnetic Analysis Modeling"},
+        {"title": "集成电路信息安全", "en": "Integrated Circuit Information Security"},
+        {"title": "电磁发射", "en": "Electromagnetic Emission"},
+        {"title": "电磁接收", "en": "Electromagnetic Reception"},
+        {"title": "相关比特", "en": "Correlated Bits"},
+        {"title": "电磁泄漏过程", "en": "Electromagnetic Leakage Process"},
+        {"title": "电磁旁路分析", "en": "Electromagnetic Side-Channel Analysis"},
+        {"title": "多元线性回归", "en": "Multiple Linear Regression"},
+        {"title": "CMOS电路能量消耗", "en": "CMOS Circuit Energy Consumption"},
+        {"title": "静态消耗", "en": "Static Consumption"},
+        {"title": "动态消耗", "en": "Dynamic Consumption"},
+        {"title": "开关消耗", "en": "Switching Consumption"},
+        {"title": "短路消耗", "en": "Short Circuit Consumption"}
+    ],
+    "relations": [
+        {"source": "集成电路信息安全", "target": "电磁分析建模", "type": "包含"},
+        {"source": "电磁分析建模", "target": "电磁发射", "type": "涉及"},
+        {"source": "电磁分析建模", "target": "电磁接收", "type": "涉及"},
+        {"source": "电磁发射", "target": "相关比特", "type": "涉及"},
+        {"source": "电磁发射", "target": "电磁泄漏过程", "type": "涉及"},
+        {"source": "电磁接收", "target": "电磁泄漏过程", "type": "涉及"},
+        {"source": "集成电路信息安全", "target": "电磁旁路分析", "type": "涉及"},
+        {"source": "电磁分析建模", "target": "多元线性回归", "type": "涉及"},
+        {"source": "CMOS电路能量消耗", "target": "静态消耗", "type": "包含"},
+        {"source": "CMOS电路能量消耗", "target": "动态消耗", "type": "包含"},
+        {"source": "动态消耗", "target": "开关消耗", "type": "包含"},
+        {"source": "动态消耗", "target": "短路消耗", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CMOS反相器", "en": "CMOS inverter"},
+        {"title": "集成电路", "en": "Integrated circuit"},
+        {"title": "电磁发射", "en": "Electromagnetic emission"},
+        {"title": "密钥", "en": "Key"},
+        {"title": "赫兹偶极子", "en": "Hertzian dipole"},
+        {"title": "笛卡尔坐标系", "en": "Cartesian coordinate system"},
+        {"title": "球面坐标系", "en": "Spherical coordinate system"},
+        {"title": "磁矢量滞后位", "en": "Magnetic vector potential"}
+    ],
+    "relations": [
+        {"source": "CMOS反相器", "target": "集成电路", "type": "属于"},
+        {"source": "电磁发射", "target": "集成电路", "type": "关联"},
+        {"source": "密钥", "target": "集成电路", "type": "关联"},
+        {"source": "密钥", "target": "电磁发射", "type": "影响"},
+        {"source": "赫兹偶极子", "target": "电磁发射", "type": "基本单元"},
+        {"source": "笛卡尔坐标系", "target": "赫兹偶极子", "type": "使用"},
+        {"source": "球面坐标系", "target": "赫兹偶极子", "type": "使用"},
+        {"source": "磁矢量滞后位", "target": "电磁发射", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "磁矢量滞后位", "en": "Magnetic vector lag position"},
+        {"title": "电偶极子", "en": "Electric dipole"},
+        {"title": "磁偶极子", "en": "Magnetic dipole"},
+        {"title": "近区场", "en": "Near field"},
+        {"title": "远区场", "en": "Far field"},
+        {"title": "群体发射", "en": "Emission from a group"},
+        {"title": "密钥", "en": "Key"},
+        {"title": "多极展开理论", "en": "Multipole expansion theory"},
+        {"title": "电磁波", "en": "Electromagnetic wave"}
+    ],
+    "relations": [
+        {"source": "磁矢量滞后位", "target": "电偶极子", "type": "基础理论"},
+        {"source": "电偶极子", "target": "磁偶极子", "type": "对偶性"},
+        {"source": "近区场", "target": "远区场", "type": "区域划分"},
+        {"source": "电磁波", "target": "电偶极子", "type": "辐射源"},
+        {"source": "多极展开理论", "target": "磁矢量滞后位", "type": "基础理论"},
+        {"source": "群体发射", "target": "电磁波", "type": "辐射特性"},
+        {"source": "密钥", "target": "群体发射", "type": "获取方式"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "电偶极子偶极矩", "en": "Electric dipole moment"},
+    {"title": "磁偶极子偶极矩", "en": "Magnetic dipole moment"},
+    {"title": "电四极子的极矩", "en": "Electric quadrupole moment"},
+    {"title": "电磁辐射", "en": "Electromagnetic radiation"},
+    {"title": "磁矢量滞后位", "en": "Magnetic vector potential"},
+    {"title": "电磁探头", "en": "Electromagnetic probe"},
+    {"title": "麦克斯韦方程", "en": "Maxwell's equations"},
+    {"title": "磁感应强度", "en": "Magnetic induction"},
+    {"title": "电磁分析", "en": "Electromagnetic analysis"},
+    {"title": "多元线性回归", "en": "Multiple linear regression"}
+  ],
+  "relations": [
+    {"source": "电偶极子偶极矩", "target": "磁偶极子偶极矩", "type": "相关"},
+    {"source": "电偶极子偶极矩", "target": "电四极子的极矩", "type": "相关"},
+    {"source": "磁偶极子偶极矩", "target": "电磁辐射", "type": "产生"},
+    {"source": "电四极子的极矩", "target": "电磁辐射", "type": "产生"},
+    {"source": "电磁辐射", "target": "磁矢量滞后位", "type": "相关"},
+    {"source": "磁矢量滞后位", "target": "电磁探头", "type": "应用"},
+    {"source": "麦克斯韦方程", "target": "磁感应强度", "type": "相关"},
+    {"source": "电磁探头", "target": "磁感应强度", "type": "测量"},
+    {"source": "电磁探头", "target": "电磁分析", "type": "应用"},
+    {"source": "多元线性回归", "target": "电磁分析", "type": "建模"}
+  ]
+}{
+    "knowledge_points": [
+        {
+            "title": "多元线性回归模型",
+            "en": "Multiple linear regression model"
+        },
+        {
+            "title": "响应变量和回归变量",
+            "en": "Response variable and regression variable"
+        },
+        {
+            "title": "最小二乘法",
+            "en": "Least squares method"
+        },
+        {
+            "title": "决定系数",
+            "en": "Coefficient of determination"
+        },
+        {
+            "title": "电磁分析模型",
+            "en": "Electromagnetic analysis model"
+        },
+        {
+            "title": "电磁旁路分析实验平台",
+            "en": "Electromagnetic side-channel analysis experimental platform"
+        }
+    ],
+    "relations": [
+        {
+            "source": "多元线性回归模型",
+            "target": "响应变量和回归变量",
+            "type": "包含"
+        },
+        {
+            "source": "多元线性回归模型",
+            "target": "最小二乘法",
+            "type": "包含"
+        },
+        {
+            "source": "多元线性回归模型",
+            "target": "决定系数",
+            "type": "包含"
+        },
+        {
+            "source": "响应变量和回归变量",
+            "target": "多元线性回归模型",
+            "type": "属于"
+        },
+        {
+            "source": "最小二乘法",
+            "target": "多元线性回归模型",
+            "type": "属于"
+        },
+        {
+            "source": "决定系数",
+            "target": "多元线性回归模型",
+            "type": "属于"
+        },
+        {
+            "source": "电磁分析模型",
+            "target": "多元线性回归模型",
+            "type": "应用"
+        },
+        {
+            "source": "电磁旁路分析实验平台",
+            "target": "电磁分析模型",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "主芯片", "en": "Main Chip"},
+        {"title": "控制芯片", "en": "Control Chip"},
+        {"title": "H-field近场探头组", "en": "H-field Near-field Probe Group"},
+        {"title": "低噪声放大器", "en": "Low Noise Amplifier"},
+        {"title": "数字示波器", "en": "Digital Oscilloscope"},
+        {"title": "笔记本电脑", "en": "Laptop Computer"},
+        {"title": "直流电源", "en": "DC Power Supply"},
+        {"title": "电磁旁路分析实验采集平台", "en": "Electromagnetic Side-channel Analysis Experimental Collection Platform"},
+        {"title": "USB协议", "en": "USB Protocol"},
+        {"title": "差分信号技术", "en": "Differential Signal Technology"},
+        {"title": "AES-128密码算法", "en": "AES-128 Encryption Algorithm"}
+    ],
+    "relations": [
+        {"source": "主芯片", "target": "密码算法的实现", "type": "实现"},
+        {"source": "控制芯片", "target": "为主芯片提供激励和控制时序", "type": "提供"},
+        {"source": "主芯片", "target": "配备了48MHz的时钟信号", "type": "配备"},
+        {"source": "控制芯片", "target": "配备了48MHz的时钟信号", "type": "配备"},
+        {"source": "H-field近场探头组", "target": "用来检测密码设备工作时的电磁泄漏源", "type": "检测"},
+        {"source": "H-field近场探头组", "target": "采集加密算法运行时的电磁发射信号", "type": "采集"},
+        {"source": "H-field近场探头组", "target": "LangerLF1set", "type": "使用"},
+        {"source": "低噪声放大器", "target": "紧邻近场探头", "type": "紧邻"},
+        {"source": "低噪声放大器", "target": "对近场探头采集到的电磁信号进行放大", "type": "放大"},
+        {"source": "低噪声放大器", "target": "减少杂波的影响", "type": "减少"},
+        {"source": "低噪声放大器", "target": "提高检测的灵敏度", "type": "提高"},
+        {"source": "低噪声放大器", "target": "提供30dB增益的线性放大器", "type": "提供"},
+        {"source": "低噪声放大器", "target": "仅对电磁发射信号的幅度进行放大", "type": "放大"},
+        {"source": "数字示波器", "target": "用来捕捉经由近场探头获取到的电磁发射信号", "type": "捕捉"},
+        {"source": "数字示波器", "target": "将实时采集到的电磁信号通过网线传送给笔记本电脑进行存储", "type": "传送"},
+        {"source": "数字示波器", "target": "是德科技MSOS054A", "type": "使用"},
+        {"source": "数字示波器", "target": "4模拟通道", "type": "具备"},
+        {"source": "数字示波器", "target": "带宽500M", "type": "具备"},
+        {"source": "数字示波器", "target": "最大存储深度800Mpts", "type": "具备"},
+        {"source": "数字示波器", "target": "最高采样率可达20GSa/s", "type": "具备"},
+        {"source": "数字示波器", "target": "满足奈奎斯特采样定理", "type": "满足"},
+        {"source": "笔记本电脑", "target": "用来存储示波器发送过来的电磁信号数据", "type": "存储"},
+        {"source": "笔记本电脑", "target": "负责与Sakura-G实验板的通信和收发明密文等功能", "type": "通信"},
+        {"source": "直流电源", "target": "为Sakura-G实验板供电以减少噪声的影响", "type": "供电"},
+        {"source": "电磁旁路分析实验采集平台", "target": "克服了传统人工操作明密文发送费时费力的缺点", "type": "克服"},
+        {"source": "电磁旁路分析实验采集平台", "target": "实现了对多种加密算法的数据收发存储和自动循环采集一体化的功能", "type": "实现"},
+        {"source": "电磁旁路分析实验采集平台", "target": "具有面向对象多样、信息采集量大、运行速度快、传输效率高、简单易操作等优点", "type": "具有"},
+        {"source": "电磁旁路分析实验采集平台", "target": "避免长时间人为操作对实验环境和实验数据质量所造成的影响", "type": "避免"},
+        {"source": "数据发送模块", "target": "向Sakura-G实验板发送128比特的明文和128比特的密钥", "type": "发送"},
+        {"source": "数据加密模块", "target": "进行密码算法的加解密运行", "type": "运行"},
+        {"source": "数据加密模块", "target": "对数据发送模块所发送来的数据进行加解密运算并输出明文或密文", "type": "加解密"},
+        {"source": "数据加密模块", "target": "本文所涉及的加密算法为AES-128密码算法", "type": "使用"},
+        {"source": "数据发送模块", "target": "与数据加密模块之间遵循USB协议通过差分信号技术进行数据间的通信", "type": "通信"},
+        {"source": "数据采集传输模块", "target": "对电磁旁路信号进行捕捉和传输", "type": "{
+    "knowledge_points": [
+        {"title": "主芯片", "en": "Main Chip"},
+        {"title": "控制芯片", "en": "Control Chip"},
+        {"title": "H-field近场探头组", "en": "H-field Near-field Probe Group"},
+        {"title": "低噪声放大器", "en": "Low Noise Amplifier"},
+        {"title": "数字示波器", "en": "Digital Oscilloscope"},
+        {"title": "笔记本电脑", "en": "Laptop Computer"},
+        {"title": "直流电源", "en": "DC Power Supply"},
+        {"title": "电磁旁路分析实验采集平台", "en": "Electromagnetic Side-channel Analysis Experimental Collection Platform"},
+        {"title": "USB协议", "en": "USB Protocol"},
+        {"title": "差分信号技术", "en": "Differential Signal Technology"},
+        {"title": "AES-128密码算法", "en": "AES-128 Encryption Algorithm"}
+    ],
+    "relations": [
+        {"source": "主芯片", "target": "密码算法的实现", "type": "实现"},
+        {"source": "控制芯片", "target": "主芯片", "type": "提供激励和控制时序"},
+        {"source": "主芯片", "target": "48MHz的时钟信号", "type": "配备"},
+        {"source": "控制芯片", "target": "48MHz的时钟信号", "type": "配备"},
+        {"source": "H-field近场探头组", "target": "检测电磁泄漏源", "type": "用来"},
+        {"source": "H-field近场探头组", "target": "采集加密算法运行时的电磁发射信号", "type": "用来"},
+        {"source": "H-field近场探头组", "target": "LangerLF1set", "type": "所用的一组"},
+        {"source": "H-field近场探头组", "target": "探测的频率范围为100KHz-50MHz", "type": "探测频率范围"},
+        {"source": "低噪声放大器", "target": "紧邻近场探头", "type": "放置"},
+        {"source": "低噪声放大器", "target": "对近场探头采集到的电磁信号进行放大", "type": "用来"},
+        {"source": "低噪声放大器", "target": "减少杂波的影响", "type": "用来"},
+        {"source": "低噪声放大器", "target": "提高检测的灵敏度", "type": "用来"},
+        {"source": "低噪声放大器", "target": "提供30dB增益的线性放大器", "type": "所用的"},
+        {"source": "低噪声放大器", "target": "仅对电磁发射信号的幅度进行放大", "type": "放大幅度"},
+        {"source": "数字示波器", "target": "捕捉经由近场探头获取到的电磁发射信号", "type": "用来"},
+        {"source": "数字示波器", "target": "将实时采集到的电磁信号通过网线传送给笔记本电脑进行存储", "type": "用来"},
+        {"source": "数字示波器", "target": "是德科技MSOS054A", "type": "所使用的"},
+        {"source": "数字示波器", "target": "4模拟通道", "type": "具有"},
+        {"source": "数字示波器", "target": "带宽500M", "type": "具有"},
+        {"source": "数字示波器", "target": "最大存储深度800Mpts", "type": "具有"},
+        {"source": "数字示波器", "target": "最高采样率可达20GSa/s", "type": "具有"},
+        {"source": "数字示波器", "target": "满足奈奎斯特采样定理", "type": "需要"},
+        {"source": "数字示波器", "target": "采样率需设定为目标信号最高频率的2倍及以上", "type": "需要"},
+        {"source": "笔记本电脑", "target": "存储示波器发送过来的电磁信号数据", "type": "用来"},
+        {"source": "笔记本电脑", "target": "与Sakura-G实验板的通信和收发明密文等功能", "type": "用来"},
+        {"source": "直流电源", "target": "为Sakura-G实验板供电以减少噪声的影响", "type": "用来"},
+        {"source": "电磁旁路信号采集流程", "target": "笔记本电脑通过一根标准的USBB-A线缆向Sakura-G实验板发送128比特的明文和128比特的密钥", "type": "流程中的步骤"},
+        {"source": "电磁旁路信号采集流程", "target": "实验板接收到明文和密钥后开始进行加密算法的操作", "type": "流程中的步骤"},
+        {"source": "电磁旁路信号采集流程", "target": "加密算法在开始时会产生一个触发信号以同步示波器进行存储操作", "type": "流程中的步骤"},
+        {"source": "电磁旁路信号采集流程", "target": "H-field近场探头通常置于主芯片的表面来检测电磁发射信号", "type": "流程中的步骤"},
+        {"source": "电磁旁路信号采集流程", "target": "近场探头接收电磁发射信号后,经过一个30dB的低噪声放大器提供增益,并将信号传送给示波器", "type": "流程中的步骤"},
+        {"source": "电磁旁路信号采集流程", "target": "示波器捕捉到信号后将信号传送给电脑并储存下来以进行深入分析", "type": "流程中的步骤"},
+        {"source": "电磁旁路信号{
+    "knowledge_points": [
+        {
+            "title": "电磁旁路分析实验",
+            "en": "Electromagnetic Side-Channel Analysis Experiment"
+        },
+        {
+            "title": "AES-128密码算法",
+            "en": "AES-128 Cryptographic Algorithm"
+        },
+        {
+            "title": "多元线性回归",
+            "en": "Multivariate Linear Regression"
+        },
+        {
+            "title": "决定系数",
+            "en": "Coefficient of Determination"
+        },
+        {
+            "title": "密钥",
+            "en": "Key"
+        },
+        {
+            "title": "电磁发射迹线",
+            "en": "Electromagnetic Emission Trajectory"
+        }
+    ],
+    "relations": [
+        {
+            "source": "电磁旁路分析实验",
+            "target": "AES-128密码算法",
+            "type": "应用"
+        },
+        {
+            "source": "AES-128密码算法",
+            "target": "多元线性回归",
+            "type": "应用"
+        },
+        {
+            "source": "多元线性回归",
+            "target": "决定系数",
+            "type": "应用"
+        },
+        {
+            "source": "AES-128密码算法",
+            "target": "密钥",
+            "type": "包含"
+        },
+        {
+            "source": "电磁旁路分析实验",
+            "target": "电磁发射迹线",
+            "type": "采集"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "密码集成电路信息泄露的电磁模型", "en": "Electromagnetic model for information leakage of cryptographic integrated circuits"},
+        {"title": "电磁发射模型", "en": "Electromagnetic emission model"},
+        {"title": "近场探头电磁接收模型", "en": "Near-field probe electromagnetic reception model"},
+        {"title": "电磁旁路泄漏", "en": "Electromagnetic side-channel leakage"},
+        {"title": "电偶极子模型", "en": "Electric dipole model"},
+        {"title": "磁偶极子模型", "en": "Magnetic dipole model"},
+        {"title": "电磁旁路分析", "en": "Electromagnetic side-channel analysis"},
+        {"title": "硬件木马检测", "en": "Hardware Trojan detection"}
+    ],
+    "relations": [
+        {"source": "密码集成电路信息泄露的电磁模型", "target": "电磁发射模型", "type": "包含"},
+        {"source": "密码集成电路信息泄露的电磁模型", "target": "近场探头电磁接收模型", "type": "包含"},
+        {"source": "电磁发射模型", "target": "电磁旁路泄漏", "type": "导致"},
+        {"source": "电磁旁路泄漏", "target": "电磁旁路分析", "type": "相关"},
+        {"source": "电偶极子模型", "target": "电磁发射泄漏", "type": "用于"},
+        {"source": "磁偶极子模型", "target": "电磁发射泄漏", "type": "用于"},
+        {"source": "电磁旁路分析", "target": "硬件木马检测", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Near-field scanning and its EMC applications", "en": ""},
+        {"title": "On correlating TEM cell and OATS emission measurements", "en": ""},
+        {"title": "Standard probes for electromagnetic field measurements", "en": ""},
+        {"title": "Research on electromagnetic information leakage and video information cognition of computers", "en": ""},
+        {"title": "The Elements of Statistical Learning", "en": ""},
+        {"title": "Multi-Byte Power Analysis: A Generic Approach Based on Linear Regression", "en": ""},
+        {"title": "Research on electromagnetic attack technology of password chip based on machine learning", "en": ""},
+        {"title": "基于智能算法优化的多字节电磁分析", "en": "Multi-byte Electromagnetic Analysis Based on Intelligent Algorithm Optimization"},
+        {"title": "多字节电磁分析", "en": "Multi-byte Electromagnetic Analysis"},
+        {"title": "多字节电磁分析理论基础", "en": "Theoretical Basis of Multi-byte Electromagnetic Analysis"}
+    ],
+    "relations": [
+        {"source": "Near-field scanning and its EMC applications", "target": "Communication Theory", "type": "related"},
+        {"source": "On correlating TEM cell and OATS emission measurements", "target": "Communication Theory", "type": "related"},
+        {"source": "Standard probes for electromagnetic field measurements", "target": "Communication Theory", "type": "related"},
+        {"source": "Research on electromagnetic information leakage and video information cognition of computers", "target": "Communication Theory", "type": "related"},
+        {"source": "The Elements of Statistical Learning", "target": "Communication Theory", "type": "related"},
+        {"source": "Multi-Byte Power Analysis: A Generic Approach Based on Linear Regression", "target": "Communication Theory", "type": "related"},
+        {"source": "Research on electromagnetic attack technology of password chip based on machine learning", "target": "Communication Theory", "type": "related"},
+        {"source": "基于智能算法优化的多字节电磁分析", "target": "Multi-byte Electromagnetic Analysis", "type": "subclass"},
+        {"source": "多字节电磁分析", "target": "Multi-byte Electromagnetic Analysis", "type": "synonym"},
+        {"source": "多字节电磁分析理论基础", "target": "Multi-byte Electromagnetic Analysis", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "皮尔逊相关系数",
+            "en": "Pearson correlation coefficient"
+        },
+        {
+            "title": "汉明距离模型",
+            "en": "Hamming distance model"
+        },
+        {
+            "title": "电磁发射迹线",
+            "en": "Electromagnetic emission trace"
+        },
+        {
+            "title": "信噪比",
+            "en": "Signal-to-noise ratio"
+        },
+        {
+            "title": "多字节电磁分析",
+            "en": "Multi-byte electromagnetic analysis"
+        },
+        {
+            "title": "粒子群优化算法",
+            "en": "Particle swarm optimization algorithm"
+        }
+    ],
+    "relations": [
+        {
+            "source": "皮尔逊相关系数",
+            "target": "汉明距离模型",
+            "type": "转化为"
+        },
+        {
+            "source": "汉明距离模型",
+            "target": "皮尔逊相关系数",
+            "type": "转化为"
+        },
+        {
+            "source": "电磁发射迹线",
+            "target": "皮尔逊相关系数",
+            "type": "应用于"
+        },
+        {
+            "source": "电磁发射迹线",
+            "target": "多字节电磁分析",
+            "type": "应用于"
+        },
+        {
+            "source": "信噪比",
+            "target": "多字节电磁分析",
+            "type": "稳定不变的"
+        },
+        {
+            "source": "多字节电磁分析",
+            "target": "电磁发射迹线",
+            "type": "应用于"
+        },
+        {
+            "source": "多字节电磁分析",
+            "target": "粒子群优化算法",
+            "type": "基于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "粒子群优化算法",
+            "en": "Particle Swarm Optimization Algorithm"
+        },
+        {
+            "title": "速度更新",
+            "en": "Velocity Update"
+        },
+        {
+            "title": "位置更新",
+            "en": "Position Update"
+        },
+        {
+            "title": "加速因子",
+            "en": "Acceleration Factor"
+        },
+        {
+            "title": "记忆性",
+            "en": "Memory"
+        },
+        {
+            "title": "搜索空间",
+            "en": "Search Space"
+        },
+        {
+            "title": "全局最优位置",
+            "en": "Global Best Position"
+        },
+        {
+            "title": "局部最优位置",
+            "en": "Local Best Position"
+        },
+        {
+            "title": "迭代次数",
+            "en": "Iteration Times"
+        },
+        {
+            "title": "收敛速度",
+            "en": "Convergence Speed"
+        },
+        {
+            "title": "相关电磁分析",
+            "en": "Correlation Electromagnetic Analysis"
+        },
+        {
+            "title": "密钥恢复",
+            "en": "Key Recovery"
+        },
+        {
+            "title": "密钥相关系数",
+            "en": "Key Correlation Coefficient"
+        },
+        {
+            "title": "密钥搜索空间",
+            "en": "Key Search Space"
+        },
+        {
+            "title": "字节",
+            "en": "Byte"
+        },
+        {
+            "title": "多维空间坐标系",
+            "en": "Multidimensional Coordinate System"
+        },
+        {
+            "title": "皮尔逊相关系数",
+            "en": "Pearson Correlation Coefficient"
+        },
+        {
+            "title": "汉明距离模型",
+            "en": "Hamming Distance Model"
+        },
+        {
+            "title": "变异算子",
+            "en": "Mutation Operator"
+        }
+    ],
+    "relations": [
+        {
+            "source": "粒子群优化算法",
+            "target": "速度更新",
+            "type": "包含"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "位置更新",
+            "type": "包含"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "加速因子",
+            "type": "包含"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "记忆性",
+            "type": "具有"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "搜索空间",
+            "type": "包含"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "全局最优位置",
+            "type": "具有"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "局部最优位置",
+            "type": "具有"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "迭代次数",
+            "type": "具有"
+        },
+        {
+            "source": "粒子群优化算法",
+            "target": "收敛速度",
+            "type": "具有"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "密钥恢复",
+            "type": "包含"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "密钥相关系数",
+            "type": "具有"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "密钥搜索空间",
+            "type": "包含"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "字节",
+            "type": "具有"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "多维空间坐标系",
+            "type": "具有"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "皮尔逊相关系数",
+            "type": "具有"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "汉明距离模型",
+            "type": "具有"
+        },
+        {
+            "source": "相关电磁分析",
+            "target": "变异算子",
+            "type": "具有"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "粒子群优化算法", "en": "Particle Swarm Optimization Algorithm"},
+        {"title": "适应度值", "en": "Fitness Value"},
+        {"title": "密码算法", "en": "Cryptographic Algorithm"},
+        {"title": "密钥长度", "en": "Key Length"},
+        {"title": "多维坐标系", "en": "Multidimensional Coordinate System"},
+        {"title": "对称加密算法", "en": "Symmetric Encryption Algorithm"},
+        {"title": "AES算法", "en": "AES Algorithm"},
+        {"title": "汉明距离", "en": "Hamming Distance"},
+        {"title": "电磁分析", "en": "Electromagnetic Analysis"},
+        {"title": "成功率", "en": "Success Rate"},
+        {"title": "迭代次数", "en": "Iteration Number"},
+        {"title": "初始粒子数目", "en": "Initial Particle Number"},
+        {"title": "变异操作", "en": "Mutation Operation"}
+    ],
+    "relations": [
+        {"source": "粒子群优化算法", "target": "适应度值", "type": "包含"},
+        {"source": "密码算法", "target": "密钥长度", "type": "关联"},
+        {"source": "多维坐标系", "target": "空间点", "type": "包含"},
+        {"source": "对称加密算法", "target": "AES算法", "type": "属于"},
+        {"source": "AES算法", "target": "密钥长度", "type": "关联"},
+        {"source": "多维坐标系", "target": "初始粒子", "type": "包含"},
+        {"source": "粒子群优化算法", "target": "电磁分析", "type": "应用"},
+        {"source": "电磁分析", "target": "成功率", "type": "关联"},
+        {"source": "粒子群优化算法", "target": "迭代次数", "type": "影响"},
+        {"source": "初始粒子数目", "target": "成功率", "type": "影响"},
+        {"source": "粒子群优化算法", "target": "变异操作", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "电磁分析", "en": "Electromagnetic Analysis"},
+        {"title": "粒子群优化算法", "en": "Particle Swarm Optimization Algorithm"},
+        {"title": "遗传算法", "en": "Genetic Algorithm"},
+        {"title": "适应度函数", "en": "Fitness Function"},
+        {"title": "相关系数", "en": "Correlation Coefficient"},
+        {"title": "密钥恢复", "en": "Key Recovery"}
+    ],
+    "relations": [
+        {"source": "电磁分析", "target": "粒子群优化算法", "type": "包含"},
+        {"source": "电磁分析", "target": "遗传算法", "type": "包含"},
+        {"source": "遗传算法", "target": "适应度函数", "type": "使用"},
+        {"source": "电磁分析", "target": "相关系数", "type": "使用"},
+        {"source": "电磁分析", "target": "密钥恢复", "type": "目的"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "个体适应度", "en": "Individual fitness"},
+        {"title": "交叉算子", "en": "Crossover operator"},
+        {"title": "变异算子", "en": "Mutation operator"},
+        {"title": "标准遗传算法", "en": "Standard genetic algorithm"},
+        {"title": "遗传算法的理论基础", "en": "Theoretical basis of genetic algorithm"},
+        {"title": "模式定理", "en": "Schema theorem"},
+        {"title": "积木块假设", "en": "Building block hypothesis"},
+        {"title": "基于遗传算法优化的多字节电磁分析", "en": "Multi-Byte Electro Magnetic Analysis based on Genetic Algorithm (MBEMAGA)"},
+        {"title": "多目标优化", "en": "Multi-objective optimization"},
+        {"title": "向量适应度函数", "en": "Vector fitness function"},
+        {"title": "排序算子", "en": "Sorting operator"},
+        {"title": "筛选算子", "en": "Selection operator"}
+    ],
+    "relations": [
+        {"source": "个体适应度", "target": "种群数量", "type": "影响"},
+        {"source": "交叉算子", "target": "种群中的个体", "type": "操作"},
+        {"source": "交叉算子", "target": "子代新个体", "type": "产生"},
+        {"source": "变异算子", "target": "种群中的个体", "type": "操作"},
+        {"source": "变异算子", "target": "子代新个体", "type": "产生"},
+        {"source": "标准遗传算法", "target": "选择算子", "type": "包含"},
+        {"source": "标准遗传算法", "target": "交叉算子", "type": "包含"},
+        {"source": "标准遗传算法", "target": "变异算子", "type": "包含"},
+        {"source": "标准遗传算法", "target": "模式定理", "type": "基础"},
+        {"source": "标准遗传算法", "target": "积木块假设", "type": "基础"},
+        {"source": "遗传算法的理论基础", "target": "模式定理", "type": "基础"},
+        {"source": "遗传算法的理论基础", "target": "积木块假设", "type": "基础"},
+        {"source": "基于遗传算法优化的多字节电磁分析", "target": "多目标优化", "type": "应用"},
+        {"source": "基于遗传算法优化的多字节电磁分析", "target": "向量适应度函数", "type": "应用"},
+        {"source": "基于遗传算法优化的多字节电磁分析", "target": "排序算子", "type": "应用"},
+        {"source": "基于遗传算法优化的多字节电磁分析", "target": "筛选算子", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于遗传算法优化的多字节相关电磁分析", "en": "Multi-byte Correlated Electromagnetic Analysis Based on Genetic Algorithm"},
+        {"title": "算法4-2基于遗传算法优化的多字节相关电磁分析", "en": "Algorithm 4-2 Multi-byte Correlated Electromagnetic Analysis Based on Genetic Algorithm"},
+        {"title": "操作算子", "en": "Operation Operator"},
+        {"title": "CEMA方法", "en": "CEMA Method"},
+        {"title": "MBEMAGA方法", "en": "MBEMAGA Method"},
+        {"title": "电磁发射迹线", "en": "Electromagnetic Emission Trajectory"},
+        {"title": "密钥恢复", "en": "Key Recovery"}
+    ],
+    "relations": [
+        {"source": "基于遗传算法优化的多字节相关电磁分析", "target": "算法4-2基于遗传算法优化的多字节相关电磁分析", "type": "包含"},
+        {"source": "算法4-2基于遗传算法优化的多字节相关电磁分析", "target": "操作算子", "type": "使用"},
+        {"source": "算法4-2基于遗传算法优化的多字节相关电磁分析", "target": "电磁发射迹线", "type": "使用"},
+        {"source": "CEMA方法", "target": "电磁发射迹线", "type": "使用"},
+        {"source": "MBEMAGA方法", "target": "电磁发射迹线", "type": "使用"},
+        {"source": "MBEMAGA方法", "target": "操作算子", "type": "使用"},
+        {"source": "电磁发射迹线", "target": "密钥恢复", "type": "用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AES密码算法", "en": "AES Cryptographic Algorithm"},
+        {"title": "CEMAM", "en": "CEMAM"},
+        {"title": "电磁发射迹线", "en": "Electromagnetic Emission Trace"},
+        {"title": "PSO-CEMA", "en": "PSO-CEMA"},
+        {"title": "MBEMAGA", "en": "MBEMAGA"},
+        {"title": "遗传算法", "en": "Genetic Algorithm"},
+        {"title": "密钥恢复", "en": "Key Recovery"},
+        {"title": "密钥寻优", "en": "Key Optimization"},
+        {"title": "粒子群优化算法", "en": "Particle Swarm Optimization Algorithm"},
+        {"title": "遗传算法染色体", "en": "Genetic Algorithm Chromosome"},
+        {"title": "排序算子", "en": "Sorting Operator"},
+        {"title": "筛选算子", "en": "Screening Operator"},
+        {"title": "电磁旁路分析", "en": "Electromagnetic Side-Channel Analysis"}
+    ],
+    "relations": [
+        {"source": "AES密码算法", "target": "CEMAM", "type": "属于"},
+        {"source": "CEMAM", "target": "电磁发射迹线", "type": "产生"},
+        {"source": "PSO-CEMA", "target": "密钥恢复", "type": "实现"},
+        {"source": "MBEMAGA", "target": "密钥恢复", "type": "实现"},
+        {"source": "遗传算法", "target": "AES密码算法", "type": "优化"},
+        {"source": "粒子群优化算法", "target": "电磁旁路分析", "type": "优化"},
+        {"source": "遗传算法", "target": "电磁旁路分析", "type": "优化"},
+        {"source": "遗传算法染色体", "target": "密钥寻优", "type": "等效于"},
+        {"source": "排序算子", "target": "密钥寻优", "type": "应用于"},
+        {"source": "筛选算子", "target": "密钥寻优", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多筛选器方法", "en": "Multiple Sieve Approach"},
+        {"title": "人工智能技术", "en": "Artificial Intelligent Techniques"},
+        {"title": "相关功率分析", "en": "Correlation Power Analysis"},
+        {"title": "统计功率分析", "en": "Statistical Power Analysis"},
+        {"title": "粒子群优化", "en": "Particle Swarm Optimization"},
+        {"title": "改进的粒子群优化", "en": "Modified Particle Swarm Optimization"},
+        {"title": "多字节电磁分析", "en": "Multibyte Electromagnetic Analysis"},
+        {"title": "高级加密标准", "en": "Advanced Encryption Standard (AES)"},
+        {"title": "小波支持向量机算法", "en": "Wavelet Support Vector Machine Algorithm"},
+        {"title": "遗传算法", "en": "Genetic Algorithm"},
+        {"title": "MATLAB神经网络案例分析", "en": "MATLAB Neural Network Case Analysis"},
+        {"title": "MATLAB遗传算法工具箱及应用", "en": "MATLAB Genetic Algorithm Toolbox and Application"},
+        {"title": "多目标优化", "en": "Multi-objective Optimization"}
+    ],
+    "relations": [
+        {"source": "多筛选器方法", "target": "人工智能技术", "type": "应用"},
+        {"source": "多筛选器方法", "target": "相关功率分析", "type": "应用"},
+        {"source": "统计功率分析", "target": "相关功率分析", "type": "比较"},
+        {"source": "粒子群优化", "target": "改进的粒子群优化", "type": "演化"},
+        {"source": "多字节电磁分析", "target": "粒子群优化", "type": "应用"},
+        {"source": "高级加密标准", "target": "多字节电磁分析", "type": "应用"},
+        {"source": "小波支持向量机算法", "target": "多字节电磁分析", "type": "应用"},
+        {"source": "遗传算法", "target": "多目标优化", "type": "应用"},
+        {"source": "MATLAB神经网络案例分析", "target": "人工智能技术", "type": "应用"},
+        {"source": "MATLAB遗传算法工具箱及应用", "target": "遗传算法", "type": "应用"},
+        {"source": "多目标优化", "target": "遗传算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "集成电路技术的发展",
+            "en": "Development of integrated circuit technology"
+        },
+        {
+            "title": "硬件木马的安全问题",
+            "en": "Security issues of hardware trojans"
+        },
+        {
+            "title": "基于随机测试向量的集成电路结构测试",
+            "en": "Integrated circuit structural testing based on random test vectors"
+        },
+        {
+            "title": "基于旁路分析的硬件木马检测",
+            "en": "Hardware trojan detection based on side-channel analysis"
+        },
+        {
+            "title": "电磁旁路信号",
+            "en": "Electromagnetic side-channel signal"
+        },
+        {
+            "title": "基于迁移学习的电磁旁路硬件木马检测",
+            "en": "Hardware trojan detection based on transfer learning of electromagnetic side-channel signals"
+        }
+    ],
+    "relations": [
+        {
+            "source": "集成电路技术的发展",
+            "target": "硬件木马的安全问题",
+            "type": "相关"
+        },
+        {
+            "source": "硬件木马的安全问题",
+            "target": "基于随机测试向量的集成电路结构测试",
+            "type": "挑战"
+        },
+        {
+            "source": "基于随机测试向量的集成电路结构测试",
+            "target": "基于旁路分析的硬件木马检测",
+            "type": "不足"
+        },
+        {
+            "source": "基于旁路分析的硬件木马检测",
+            "target": "电磁旁路信号",
+            "type": "基础"
+        },
+        {
+            "source": "电磁旁路信号",
+            "target": "基于迁移学习的电磁旁路硬件木马检测",
+            "type": "方法"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "功能验证",
+            "en": "Functional Verification"
+        },
+        {
+            "title": "动态检测",
+            "en": "Dynamic Detection"
+        },
+        {
+            "title": "静态分析",
+            "en": "Static Analysis"
+        },
+        {
+            "title": "形式化验证",
+            "en": "Formal Verification"
+        },
+        {
+            "title": "HDL设计分析",
+            "en": "HDL Design Analysis"
+        },
+        {
+            "title": "流片后的检测",
+            "en": "Post-fabrication Detection"
+        },
+        {
+            "title": "破坏性方法",
+            "en": "Destructive Methods"
+        },
+        {
+            "title": "非破坏性方法",
+            "en": "Non-destructive Methods"
+        },
+        {
+            "title": "逻辑测试",
+            "en": "Logic Testing"
+        },
+        {
+            "title": "旁路分析",
+            "en": "Side-channel Analysis"
+        },
+        {
+            "title": "硬件木马",
+            "en": "Hardware Trojan"
+        },
+        {
+            "title": "触发逻辑",
+            "en": "Trigger Logic"
+        },
+        {
+            "title": "有效载荷",
+            "en": "Payload"
+        },
+        {
+            "title": "CMOS反相器",
+            "en": "CMOS Inverter"
+        }
+    ],
+    "relations": [
+        {
+            "source": "功能验证",
+            "target": "动态检测",
+            "type": "包含"
+        },
+        {
+            "source": "功能验证",
+            "target": "静态分析",
+            "type": "包含"
+        },
+        {
+            "source": "功能验证",
+            "target": "形式化验证",
+            "type": "包含"
+        },
+        {
+            "source": "HDL设计分析",
+            "target": "静态分析",
+            "type": "包含"
+        },
+        {
+            "source": "流片后的检测",
+            "target": "破坏性方法",
+            "type": "包含"
+        },
+        {
+            "source": "流片后的检测",
+            "target": "非破坏性方法",
+            "type": "包含"
+        },
+        {
+            "source": "非破坏性方法",
+            "target": "逻辑测试",
+            "type": "包含"
+        },
+        {
+            "source": "非破坏性方法",
+            "target": "旁路分析",
+            "type": "包含"
+        },
+        {
+            "source": "硬件木马",
+            "target": "触发逻辑",
+            "type": "包含"
+        },
+        {
+            "source": "硬件木马",
+            "target": "有效载荷",
+            "type": "包含"
+        },
+        {
+            "source": "CMOS反相器",
+            "target": "硬件木马",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "漏电流效应",
+            "en": "Leakage current effect"
+        },
+        {
+            "title": "动态电流",
+            "en": "Dynamic current"
+        },
+        {
+            "title": "电磁发射",
+            "en": "Electromagnetic emission"
+        },
+        {
+            "title": "硬件木马",
+            "en": "Hardware Trojan"
+        },
+        {
+            "title": "电磁指纹",
+            "en": "Electromagnetic fingerprint"
+        },
+        {
+            "title": "迁移学习",
+            "en": "Transfer learning"
+        },
+        {
+            "title": "卷积神经网络",
+            "en": "Convolutional neural network"
+        }
+    ],
+    "relations": [
+        {
+            "source": "漏电流效应",
+            "target": "动态电流",
+            "type": "包含"
+        },
+        {
+            "source": "动态电流",
+            "target": "硬件木马",
+            "type": "增加检测灵敏度"
+        },
+        {
+            "source": "电磁发射",
+            "target": "硬件木马",
+            "type": "用于检测"
+        },
+        {
+            "source": "电磁发射",
+            "target": "电磁指纹",
+            "type": "提取"
+        },
+        {
+            "source": "硬件木马",
+            "target": "电磁指纹",
+            "type": "用于区分"
+        },
+        {
+            "source": "电磁指纹",
+            "target": "迁移学习",
+            "type": "应用"
+        },
+        {
+            "source": "迁移学习",
+            "target": "卷积神经网络",
+            "type": "基于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "卷积层(Convolution,Conv)",
+            "en": "Convolution Layer"
+        },
+        {
+            "title": "池化层(Pooling)",
+            "en": "Pooling Layer"
+        },
+        {
+            "title": "全连接层(FullConnect,FC)",
+            "en": "Fully Connected Layer"
+        },
+        {
+            "title": "Softmax层",
+            "en": "Softmax Layer"
+        },
+        {
+            "title": "基于小波变换的时频分析",
+            "en": "Time-Frequency Analysis Based on Wavelet Transform"
+        },
+        {
+            "title": "连续小波变换(ContinuousWaveletTransfbnn,CWT)",
+            "en": "Continuous Wavelet Transform (CWT)"
+        },
+        {
+            "title": "莫尔斯小波",
+            "en": "Morlet Wavelet"
+        }
+    ],
+    "relations": [
+        {
+            "source": "卷积层(Convolution,Conv)",
+            "target": "池化层(Pooling)",
+            "type": "前向传播"
+        },
+        {
+            "source": "卷积层(Convolution,Conv)",
+            "target": "全连接层(FullConnect,FC)",
+            "type": "前向传播"
+        },
+        {
+            "source": "全连接层(FullConnect,FC)",
+            "target": "Softmax层",
+            "type": "前向传播"
+        },
+        {
+            "source": "基于小波变换的时频分析",
+            "target": "连续小波变换(ContinuousWaveletTransfbnn,CWT)",
+            "type": "方法"
+        },
+        {
+            "source": "连续小波变换(ContinuousWaveletTransfbnn,CWT)",
+            "target": "莫尔斯小波",
+            "type": "母小波函数"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "莫尔斯小波",
+            "en": "Morse wavelet"
+        },
+        {
+            "title": "连续小波变换",
+            "en": "Continuous wavelet transform"
+        },
+        {
+            "title": "支持向量机",
+            "en": "Support vector machine"
+        },
+        {
+            "title": "拉格朗日函数",
+            "en": "Lagrangian function"
+        },
+        {
+            "title": "KKT条件",
+            "en": "KKT conditions"
+        },
+        {
+            "title": "核函数",
+            "en": "Kernel function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "莫尔斯小波",
+            "target": "连续小波变换",
+            "type": "是"
+        },
+        {
+            "source": "连续小波变换",
+            "target": "莫尔斯小波",
+            "type": "使用"
+        },
+        {
+            "source": "连续小波变换",
+            "target": "硬件木马电磁发射指纹",
+            "type": "用于构建"
+        },
+        {
+            "source": "支持向量机",
+            "target": "KKT条件",
+            "type": "基于"
+        },
+        {
+            "source": "拉格朗日函数",
+            "target": "支持向量机",
+            "type": "用于求解"
+        },
+        {
+            "source": "核函数",
+            "target": "支持向量机",
+            "type": "用于特征空间变换"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "支持向量机",
+            "en": "Support Vector Machine"
+        },
+        {
+            "title": "核函数",
+            "en": "Kernel Function"
+        },
+        {
+            "title": "线性核函数",
+            "en": "Linear Kernel Function"
+        },
+        {
+            "title": "多项式核函数",
+            "en": "Polynomial Kernel Function"
+        },
+        {
+            "title": "高斯核函数",
+            "en": "Gaussian Kernel Function"
+        },
+        {
+            "title": "Sigmoid核函数",
+            "en": "Sigmoid Kernel Function"
+        },
+        {
+            "title": "硬件木马检测",
+            "en": "Hardware Trojan Detection"
+        },
+        {
+            "title": "电磁旁路分析",
+            "en": "Electromagnetic Side-Channel Analysis"
+        },
+        {
+            "title": "连续小波变换",
+            "en": "Continuous Wavelet Transform"
+        },
+        {
+            "title": "迁移学习",
+            "en": "Transfer Learning"
+        },
+        {
+            "title": "深度学习",
+            "en": "Deep Learning"
+        }
+    ],
+    "relations": [
+        {
+            "source": "支持向量机",
+            "target": "核函数",
+            "type": "包含"
+        },
+        {
+            "source": "线性核函数",
+            "target": "核函数",
+            "type": "属于"
+        },
+        {
+            "source": "多项式核函数",
+            "target": "核函数",
+            "type": "属于"
+        },
+        {
+            "source": "高斯核函数",
+            "target": "核函数",
+            "type": "属于"
+        },
+        {
+            "source": "Sigmoid核函数",
+            "target": "核函数",
+            "type": "属于"
+        },
+        {
+            "source": "硬件木马检测",
+            "target": "电磁旁路分析",
+            "type": "包含"
+        },
+        {
+            "source": "电磁旁路分析",
+            "target": "连续小波变换",
+            "type": "包含"
+        },
+        {
+            "source": "迁移学习",
+            "target": "深度学习",
+            "type": "包含"
+        },
+        {
+            "source": "深度学习",
+            "target": "支持向量机",
+            "type": "比较"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Trust-Hub网站",
+            "en": "Trust-Hub website"
+        },
+        {
+            "title": "硬件木马电路基准",
+            "en": "Hardware Trojan circuit benchmark"
+        },
+        {
+            "title": "触发式硬件木马",
+            "en": "Trigger-based hardware Trojan"
+        },
+        {
+            "title": "电磁旁路分析实验平台",
+            "en": "Electromagnetic side-channel analysis experimental platform"
+        },
+        {
+            "title": "评估标准",
+            "en": "Evaluation criteria"
+        },
+        {
+            "title": "准确率",
+            "en": "Accuracy"
+        },
+        {
+            "title": "精确率",
+            "en": "Precision"
+        },
+        {
+            "title": "召回率",
+            "en": "Recall"
+        },
+        {
+            "title": "混淆矩阵",
+            "en": "Confusion matrix"
+        },
+        {
+            "title": "损失函数",
+            "en": "Loss function"
+        },
+        {
+            "title": "VGG-16网络",
+            "en": "VGG-16 network"
+        },
+        {
+            "title": "迁移学习",
+            "en": "Transfer learning"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Trust-Hub网站",
+            "target": "硬件木马电路基准",
+            "type": "提供"
+        },
+        {
+            "source": "硬件木马电路基准",
+            "target": "触发式硬件木马",
+            "type": "参考"
+        },
+        {
+            "source": "触发式硬件木马",
+            "target": "电磁旁路分析实验平台",
+            "type": "应用"
+        },
+        {
+            "source": "评估标准",
+            "target": "准确率",
+            "type": "包含"
+        },
+        {
+            "source": "评估标准",
+            "target": "精确率",
+            "type": "包含"
+        },
+        {
+            "source": "评估标准",
+            "target": "召回率",
+            "type": "包含"
+        },
+        {
+            "source": "评估标准",
+            "target": "混淆矩阵",
+            "type": "包含"
+        },
+        {
+            "source": "损失函数",
+            "target": "深度学习",
+            "type": "相关"
+        },
+        {
+            "source": "VGG-16网络",
+            "target": "迁移学习",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "迁移学习", "en": "Transfer Learning"},
+        {"title": "分类准确率", "en": "Classification Accuracy"},
+        {"title": "损失值", "en": "Loss Value"},
+        {"title": "混淆矩阵", "en": "Confusion Matrix"},
+        {"title": "支持向量机", "en": "Support Vector Machine"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "CNN+SVM", "en": "CNN+SVM"}
+    ],
+    "relations": [
+        {"source": "迁移学习", "target": "分类准确率", "type": "包含"},
+        {"source": "迁移学习", "target": "损失值", "type": "包含"},
+        {"source": "迁移学习", "target": "混淆矩阵", "type": "包含"},
+        {"source": "支持向量机", "target": "分类准确率", "type": "包含"},
+        {"source": "卷积神经网络", "target": "分类准确率", "type": "包含"},
+        {"source": "CNN+SVM", "target": "分类准确率", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "硬件木马",
+            "en": "Hardware Trojan"
+        },
+        {
+            "title": "电磁泄漏机理",
+            "en": "Electromagnetic Leakage Mechanism"
+        },
+        {
+            "title": "迁移学习",
+            "en": "Transfer Learning"
+        },
+        {
+            "title": "卷积神经网络",
+            "en": "Convolutional Neural Network"
+        },
+        {
+            "title": "SVM",
+            "en": "Support Vector Machine"
+        },
+        {
+            "title": "电磁发射信号",
+            "en": "Electromagnetic Emission Signal"
+        },
+        {
+            "title": "时频信息",
+            "en": "Time-Frequency Information"
+        },
+        {
+            "title": "电磁指纹",
+            "en": "Electromagnetic Fingerprint"
+        },
+        {
+            "title": "CNN+SVM网络",
+            "en": "CNN+SVM Network"
+        }
+    ],
+    "relations": [
+        {
+            "source": "卷积神经网络",
+            "target": "特征提取能力",
+            "type": "具有"
+        },
+        {
+            "source": "迁移学习",
+            "target": "平衡训练时间和输出分类准确率之间的关系",
+            "type": "能够"
+        },
+        {
+            "source": "迁移学习",
+            "target": "节省训练时间和解决数据不足的问题",
+            "type": "能够"
+        },
+        {
+            "source": "连续小波变换",
+            "target": "处理原始电磁发射信号",
+            "type": "用于"
+        },
+        {
+            "source": "连续小波变换",
+            "target": "获得时频信息",
+            "type": "用于"
+        },
+        {
+            "source": "时频信息",
+            "target": "提取电磁指纹",
+            "type": "用于"
+        },
+        {
+            "source": "迁移学习",
+            "target": "从源域学习到的知识迁移到目标域",
+            "type": "能够"
+        },
+        {
+            "source": "CNN+SVM网络",
+            "target": "提取硬件木马的电磁发射指纹差异",
+            "type": "用于"
+        },
+        {
+            "source": "CNN+SVM网络",
+            "target": "对电磁发射指纹差异进行检测区分",
+            "type": "用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "硬件木马", "en": "Hardware Trojan"},
+        {"title": "机器学习", "en": "Machine Learning"},
+        {"title": "电磁辐射分析", "en": "Electromagnetic Radiation Analysis"},
+        {"title": "迁移学习", "en": "Transfer Learning"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "小波变换", "en": "Wavelet Transform"},
+        {"title": "时频分析", "en": "Time-Frequency Analysis"}
+    ],
+    "relations": [
+        {"source": "硬件木马", "target": "机器学习", "type": "应用"},
+        {"source": "硬件木马", "target": "电磁辐射分析", "type": "检测方法"},
+        {"source": "硬件木马", "target": "迁移学习", "type": "应用"},
+        {"source": "机器学习", "target": "硬件木马", "type": "应用"},
+        {"source": "卷积神经网络", "target": "机器学习", "type": "算法"},
+        {"source": "小波变换", "target": "时频分析", "type": "方法"},
+        {"source": "时频分析", "target": "小波变换", "type": "方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "电磁旁路分析", "en": "Electromagnetic Side-Channel Analysis"},
+        {"title": "密码集成电路", "en": "Cryptographic Integrated Circuit"},
+        {"title": "电磁发射模型", "en": "Electromagnetic Emission Model"},
+        {"title": "电磁接收模型", "en": "Electromagnetic Reception Model"},
+        {"title": "多字节电磁分析", "en": "Multi-Byte Electromagnetic Analysis"},
+        {"title": "智能算法", "en": "Intelligent Algorithm"},
+        {"title": "硬件木马检测", "en": "Hardware Trojan Detection"},
+        {"title": "迁移学习", "en": "Transfer Learning"}
+    ],
+    "relations": [
+        {"source": "电磁旁路分析", "target": "密码集成电路", "type": "属于"},
+        {"source": "密码集成电路", "target": "电磁发射模型", "type": "包含"},
+        {"source": "密码集成电路", "target": "电磁接收模型", "type": "包含"},
+        {"source": "电磁发射模型", "target": "电磁接收模型", "type": "影响"},
+        {"source": "多字节电磁分析", "target": "电磁旁路分析", "type": "属于"},
+        {"source": "智能算法", "target": "多字节电磁分析", "type": "应用于"},
+        {"source": "硬件木马检测", "target": "密码集成电路", "type": "应用于"},
+        {"source": "迁移学习", "target": "硬件木马检测", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "相关电磁分析", "en": "Correlation ElectroMagnetic Analysis"},
+        {"title": "智能算法", "en": "Intelligent Algorithm"},
+        {"title": "深度学习", "en": "Deep Learning"},
+        {"title": "硬件木马", "en": "Hardware Trojan"},
+        {"title": "高级加密标准", "en": "Advanced Encryption Standard"},
+        {"title": "双轨预充电", "en": "Dual-Rail Precharge"},
+        {"title": "遗传算法", "en": "Genetic Algorithm"},
+        {"title": "支持向量机", "en": "Support Vector Machine"}
+    ],
+    "relations": [
+        {"source": "相关电磁分析", "target": "高级加密标准", "type": "应用"},
+        {"source": "相关电磁分析", "target": "智能算法", "type": "应用"},
+        {"source": "相关电磁分析", "target": "深度学习", "type": "应用"},
+        {"source": "相关电磁分析", "target": "双轨预充电", "type": "应用"},
+        {"source": "相关电磁分析", "target": "遗传算法", "type": "应用"},
+        {"source": "相关电磁分析", "target": "支持向量机", "type": "应用"},
+        {"source": "硬件木马", "target": "迁移学习", "type": "应用"},
+        {"source": "智能算法", "target": "遗传算法", "type": "关联"},
+        {"source": "智能算法", "target": "粒子群优化", "type": "关联"},
+        {"source": "智能算法", "target": "深度学习", "type": "关联"}
+    ]
+}

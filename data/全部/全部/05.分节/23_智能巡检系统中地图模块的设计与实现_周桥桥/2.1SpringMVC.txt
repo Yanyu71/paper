@@ -1,0 +1,20 @@
+2.1SpringMVC
+Spring是为了解决企业应用程序开发繁杂性而创建的一款轻量级开源框架， 具有良好的分层架构和松耦合因。它以控制反转（IoC）和面向切面编程（AOP） 为核心机制，提供了展现层SpringMVC、持久层SpringDAO以及上下文配置文 件Spring Context等众多的企业级应用技术。开发人员可根据需要选择Spring提 供的部分模块，同时，Spring还提供了与其它开源软件的无缝结合。
+SpringMVC是由Spring提供的一个基于MVC设计理念的Web框架⑶，内 部具有良好的扩展性，能有效地帮助开发人员处理复杂问题。与其他MVC框架 相比，它具有以下一些与众不同的特点：
+,清晰的角色划分。Spring在模型（Model）、视图（View）和控制器 （Controller）方面有着非常明确的划分，各自完成自己相应的功能；
+•灵活的应用配置。Spring的核心是控制反转，因此，在具体实现时，也 可以把类当作一个Bean,通过xml文件进行配置；
+・视图层是真正意义上的实现无关的，它不强制开发人员使用JSP,它也 支持 FreeMaker、Velocity 等；
+•面向切面编程。这是Spring的一"很重要的特性,SpringMVC作为Spring 的一部分，也继承了这个优点。它使得程序员在开发时易于调试。
+・提供了许多的控制器接口和实现类。开发人员可根据需要直接使用 Spring提供的实现类或自己实现提供的控制器接口。在方便用户的同时 也为用户提供了很大的自由度。
+•强大的标签库，减少HTML文件生成开销，提供标记最大灵活性；
+基于上述优点，在智能巡检系统中地图模块的开发时，我们釆用了 SpringMVC作为我们的MVC框架。
+SpringMVC主要由分发器（DispatcherServlet）、控制器、模型和视图三部分 构成，主要围绕DispatcherServlet展开。DispatcherServlet负责接收用户的请求并 将其分配给相应的处理器处理。具体工作流程如下：
+1.整个流程始于用户发送HTTP请求，Web服务器接受请求，搜索 DispatcherServlet的请求映射路径（在Web.xml文件中给定），判断是否 匹配，如果匹配，则Web容器将该用户的请求交由DispatcherServlet来 负责分发它。
+2.用户请求进入后，Dispatcher Servlet根据HanddlerMapping的配置，将用 户请求转发给相应的控制器进行业务处理；
+3.Controller进行业务处理之后，返回一个包含了视图逻辑名和模型数据信 息的 ModelAndView 对象给 DispatcherServlet；
+4.DispatcherServlet获得的ModelAndView中的视图逻辑名并非真正意义上 的视图对象，需要借助视图解析器(ViewResolver)将其解析成真正要 显示的View对象，譬如，JSPo DispatcherServlet!在获取到真正的视图 对象View之后，将使用该视图对象View对ModelAndView中的模型数
+据进行视图渲染。最后，呈现给用户的可能是一个html网页，也可能 是一张图片或一个pdf文档⑸。
+控制器
+(2)
+请求
+图2-1 SpringMVC整体框架图

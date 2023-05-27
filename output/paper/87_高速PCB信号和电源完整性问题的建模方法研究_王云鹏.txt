@@ -1,0 +1,807 @@
+﻿{
+    "knowledge_points": [
+        {"title": "摩尔定律", "en": "Moore's Law"},
+        {"title": "集成电路", "en": "Integrated Circuit"},
+        {"title": "信号完整性", "en": "Signal Integrity"},
+        {"title": "电源完整性", "en": "Power Integrity"},
+        {"title": "印刷电路板", "en": "Printed Circuit Board"},
+        {"title": "电磁兼容", "en": "Electromagnetic Compatibility"},
+        {"title": "反射问题", "en": "Reflection Problem"}
+    ],
+    "relations": [
+        {"source": "摩尔定律", "target": "集成电路", "type": "包含"},
+        {"source": "集成电路", "target": "印刷电路板", "type": "应用"},
+        {"source": "印刷电路板", "target": "信号完整性", "type": "影响"},
+        {"source": "印刷电路板", "target": "电源完整性", "type": "影响"},
+        {"source": "电磁兼容", "target": "印刷电路板", "type": "研究对象"},
+        {"source": "反射问题", "target": "信号完整性", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "反射问题", "en": "Reflection problem"},
+        {"title": "传输线阻抗不匹配", "en": "Mismatched impedance of transmission line"},
+        {"title": "过孔对反射问题的影响", "en": "Impact of vias on reflection problem"},
+        {"title": "走线串扰", "en": "Crosstalk of transmission line"},
+        {"title": "电源完整性", "en": "Power integrity"},
+        {"title": "电源分配系统", "en": "Power distribution system"},
+        {"title": "电源地平面阻抗", "en": "Impedance of power/ground plane"}
+    ],
+    "relations": [
+        {"source": "反射问题", "target": "传输线阻抗不匹配", "type": "cause"},
+        {"source": "反射问题", "target": "过孔对反射问题的影响", "type": "cause"},
+        {"source": "传输线阻抗不匹配", "target": "走线串扰", "type": "result"},
+        {"source": "走线串扰", "target": "传输线阻抗不匹配", "type": "cause"},
+        {"source": "电源完整性", "target": "电源分配系统", "type": "belong to"},
+        {"source": "电源分配系统", "target": "电源地平面阻抗", "type": "related to"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "传输线理论", "en": "Transmission line theory"},
+        {"title": "反射分析方法", "en": "Reflection analysis method"},
+        {"title": "传输线参数计算方法", "en": "Transmission line parameter calculation method"}
+    ],
+    "relations": [
+        {"source": "传输线理论", "target": "反射分析方法", "type": "包含"},
+        {"source": "传输线理论", "target": "传输线参数计算方法", "type": "包含"},
+        {"source": "反射分析方法", "target": "形成反射的原理", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "理想的均匀传输线",
+            "en": "Ideal uniform transmission line"
+        },
+        {
+            "title": "阻抗突变",
+            "en": "Impedance mismatch"
+        },
+        {
+            "title": "反射现象",
+            "en": "Reflection phenomenon"
+        },
+        {
+            "title": "反射系数",
+            "en": "Reflection coefficient"
+        },
+        {
+            "title": "PCB中影响反射的因素",
+            "en": "Factors affecting reflection in PCB"
+        },
+        {
+            "title": "导线布置",
+            "en": "Wire arrangement"
+        },
+        {
+            "title": "过孔",
+            "en": "Via"
+        },
+        {
+            "title": "终端负载匹配",
+            "en": "Terminal load matching"
+        },
+        {
+            "title": "串联匹配",
+            "en": "Series matching"
+        },
+        {
+            "title": "并联匹配",
+            "en": "Parallel matching"
+        },
+        {
+            "title": "传输线特征参数",
+            "en": "Characteristic parameters of transmission line"
+        }
+    ],
+    "relations": [
+        {
+            "source": "理想的均匀传输线",
+            "target": "阻抗突变",
+            "type": "包含"
+        },
+        {
+            "source": "阻抗突变",
+            "target": "反射现象",
+            "type": "导致"
+        },
+        {
+            "source": "反射现象",
+            "target": "反射系数",
+            "type": "涉及"
+        },
+        {
+            "source": "PCB中影响反射的因素",
+            "target": "导线布置",
+            "type": "包含"
+        },
+        {
+            "source": "PCB中影响反射的因素",
+            "target": "过孔",
+            "type": "包含"
+        },
+        {
+            "source": "PCB中影响反射的因素",
+            "target": "终端负载匹配",
+            "type": "包含"
+        },
+        {
+            "source": "终端负载匹配",
+            "target": "串联匹配",
+            "type": "包含"
+        },
+        {
+            "source": "终端负载匹配",
+            "target": "并联匹配",
+            "type": "包含"
+        },
+        {
+            "source": "导线布置",
+            "target": "传输线特征参数",
+            "type": "涉及"
+        },
+        {
+            "source": "过孔",
+            "target": "传输线特征参数",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "传输线的电阻和电感",
+            "en": "Resistance and Inductance of Transmission Lines"
+        },
+        {
+            "title": "导线的容性和感性",
+            "en": "Capacitance and Inductance of Wires"
+        },
+        {
+            "title": "微带线和带状线",
+            "en": "Microstrip and Stripline"
+        },
+        {
+            "title": "微带线的特征阻抗",
+            "en": "Characteristic Impedance of Microstrip"
+        },
+        {
+            "title": "带状线的特征阻抗",
+            "en": "Characteristic Impedance of Stripline"
+        },
+        {
+            "title": "趋肤效应",
+            "en": "Skin Effect"
+        },
+        {
+            "title": "高频传输线电阻和电感的计算方法",
+            "en": "Calculation Method of Resistance and Inductance of High-Frequency Transmission Lines"
+        }
+    ],
+    "relations": [
+        {
+            "source": "传输线的电阻和电感",
+            "target": "导线的容性和感性",
+            "type": "包含"
+        },
+        {
+            "source": "导线的容性和感性",
+            "target": "微带线和带状线",
+            "type": "包含"
+        },
+        {
+            "source": "微带线和带状线",
+            "target": "微带线的特征阻抗",
+            "type": "包含"
+        },
+        {
+            "source": "微带线和带状线",
+            "target": "带状线的特征阻抗",
+            "type": "包含"
+        },
+        {
+            "source": "微带线的特征阻抗",
+            "target": "带状线的特征阻抗",
+            "type": "相似"
+        },
+        {
+            "source": "微带线和带状线",
+            "target": "趋肤效应",
+            "type": "包含"
+        },
+        {
+            "source": "趋肤效应",
+            "target": "高频传输线电阻和电感的计算方法",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "拉普拉斯算子的恒等式和洛伦兹条件",
+            "en": "Laplace operator identity and Lorentz condition"
+        },
+        {
+            "title": "传输线的非齐次微分方程",
+            "en": "Non-homogeneous differential equation of transmission line"
+        },
+        {
+            "title": "矩量法",
+            "en": "Moment method"
+        },
+        {
+            "title": "基函数和检验函数",
+            "en": "Basis functions and test functions"
+        },
+        {
+            "title": "电阻和电感的求解方法",
+            "en": "Methods for solving resistance and inductance"
+        },
+        {
+            "title": "高斯积分函数",
+            "en": "Gaussian integration function"
+        },
+        {
+            "title": "反射问题的仿真分析",
+            "en": "Simulation analysis of reflection problems"
+        }
+    ],
+    "relations": [
+        {
+            "source": "拉普拉斯算子的恒等式和洛伦兹条件",
+            "target": "传输线的非齐次微分方程",
+            "type": "包含"
+        },
+        {
+            "source": "传输线的非齐次微分方程",
+            "target": "矩量法",
+            "type": "使用"
+        },
+        {
+            "source": "矩量法",
+            "target": "基函数和检验函数",
+            "type": "使用"
+        },
+        {
+            "source": "基函数和检验函数",
+            "target": "电阻和电感的求解方法",
+            "type": "使用"
+        },
+        {
+            "source": "高斯积分函数",
+            "target": "电阻和电感的求解方法",
+            "type": "使用"
+        },
+        {
+            "source": "电阻和电感的求解方法",
+            "target": "反射问题的仿真分析",
+            "type": "使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高速电路中的信号反射和串扰问题", "en": "Signal reflection and crosstalk problems in high-speed circuits"},
+        {"title": "PCB板的层叠结构和介质材料", "en": "PCB board's layer stack structure and dielectric material"},
+        {"title": "Stratix IV GX FPGA开发板的部分芯片", "en": "Partial chips on Stratix IV GX FPGA development board"},
+        {"title": "非理想传输线的等效电路模型", "en": "Equivalent circuit model of non-ideal transmission line"},
+        {"title": "传输线终端端接的阻抗匹配", "en": "Impedance matching of transmission line terminal termination"},
+        {"title": "管脚封装所带来的寄生电容和电感信息", "en": "Parasitic capacitance and inductance information brought by pin packaging"},
+        {"title": "长传输线的选取和过孔对电路的影响", "en": "Selection of long transmission lines and the impact of vias on circuits"},
+        {"title": "使用ADS软件对电路进行仿真验证", "en": "Simulation verification of circuits using ADS software"}
+    ],
+    "relations": [
+        {"source": "高速电路中的信号反射和串扰问题", "target": "PCB板的层叠结构和介质材料", "type": "包含"},
+        {"source": "PCB板的层叠结构和介质材料", "target": "Stratix IV GX FPGA开发板的部分芯片", "type": "包含"},
+        {"source": "非理想传输线的等效电路模型", "target": "传输线终端端接的阻抗匹配", "type": "相关"},
+        {"source": "管脚封装所带来的寄生电容和电感信息", "target": "长传输线的选取和过孔对电路的影响", "type": "相关"},
+        {"source": "长传输线的选取和过孔对电路的影响", "target": "使用ADS软件对电路进行仿真验证", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "传输线反射问题", "en": "Transmission Line Reflection Problem"},
+        {"title": "串扰问题", "en": "Crosstalk Problem"},
+        {"title": "感性耦合", "en": "Inductive Coupling"},
+        {"title": "容性耦合", "en": "Capacitive Coupling"},
+        {"title": "等效电路分析", "en": "Equivalent Circuit Analysis"}
+    ],
+    "relations": [
+        {"source": "传输线反射问题", "target": "S参数", "type": "相关"},
+        {"source": "传输线反射问题", "target": "等效电路模型", "type": "相关"},
+        {"source": "传输线反射问题", "target": "矩量法", "type": "相关"},
+        {"source": "串扰问题", "target": "感性耦合", "type": "相关"},
+        {"source": "串扰问题", "target": "容性耦合", "type": "相关"},
+        {"source": "等效电路分析", "target": "传输线参数预测", "type": "相关"},
+        {"source": "等效电路分析", "target": "大批量仿真", "type": "相关"},
+        {"source": "等效电路分析", "target": "HyperLynx仿真软件", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "分布电容", "en": "Distributed Capacitance"},
+        {"title": "电容值", "en": "Capacitance Value"},
+        {"title": "方波信号", "en": "Square Wave Signal"},
+        {"title": "电平转换", "en": "Level Conversion"},
+        {"title": "攻击线", "en": "Aggressor Line"},
+        {"title": "受迫线", "en": "Victim Line"},
+        {"title": "感性耦合", "en": "Inductive Coupling"},
+        {"title": "互感", "en": "Mutual Inductance"},
+        {"title": "耦合长度", "en": "Coupling Length"},
+        {"title": "相对位置", "en": "Relative Position"}
+    ],
+    "relations": [
+        {"source": "分布电容", "target": "电容值", "type": "包含"},
+        {"source": "电容值", "target": "电压值", "type": "乘积关系"},
+        {"source": "方波信号", "target": "电压变化", "type": "存在关系"},
+        {"source": "电平转换", "target": "电压变化", "type": "存在关系"},
+        {"source": "电容", "target": "攻击线", "type": "存在关系"},
+        {"source": "电容", "target": "受迫线", "type": "存在关系"},
+        {"source": "攻击线", "target": "受迫线", "type": "干扰关系"},
+        {"source": "感性耦合", "target": "互感", "type": "包含"},
+        {"source": "互感", "target": "感应电动势", "type": "存在关系"},
+        {"source": "耦合长度", "target": "串扰强度", "type": "影响关系"},
+        {"source": "相对位置", "target": "串扰强度", "type": "影响关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "传输线的干扰问题", "en": "Interference problems of transmission lines"},
+        {"title": "线间距和线宽的影响", "en": "Influence of line spacing and line width"},
+        {"title": "层叠参数对串扰的影响", "en": "Influence of stack parameters on crosstalk"},
+        {"title": "信号频率对串扰的影响", "en": "Influence of signal frequency on crosstalk"},
+        {"title": "端接对串扰的影响", "en": "Influence of termination on crosstalk"},
+        {"title": "PCB信息的分类", "en": "Classification of PCB information"}
+    ],
+    "relations": [
+        {"source": "传输线的干扰问题", "target": "线间距和线宽的影响", "type": "影响"},
+        {"source": "线间距和线宽的影响", "target": "传输线的干扰问题", "type": "影响"},
+        {"source": "线间距和线宽的影响", "target": "层叠参数对串扰的影响", "type": "影响"},
+        {"source": "层叠参数对串扰的影响", "target": "线间距和线宽的影响", "type": "影响"},
+        {"source": "信号频率对串扰的影响", "target": "传输线的干扰问题", "type": "影响"},
+        {"source": "端接对串扰的影响", "target": "传输线的干扰问题", "type": "影响"},
+        {"source": "PCB信息的分类", "target": "传输线拓扑结构", "type": "包含"},
+        {"source": "PCB信息的分类", "target": "PCB文件格式", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "印刷电路板的层叠信息", "en": "StackUp"},
+        {"title": "电路中的器件信息", "en": "Devices"},
+        {"title": "焊盘的技术信息", "en": "PadStack"},
+        {"title": "管脚信息", "en": "Pin"},
+        {"title": "建立PCB信息的集合", "en": ""},
+        {"title": "有源器件管脚格式", "en": ""},
+        {"title": "无源器件管脚格式", "en": ""},
+        {"title": "走线的集合", "en": "Segs"},
+        {"title": "线段的数据格式", "en": ""},
+        {"title": "过孔的集合", "en": "Vias"},
+        {"title": "过孔的数据格式", "en": ""},
+        {"title": "PCB的拓扑结构", "en": ""}
+    ],
+    "relations": [
+        {"source": "StackUp", "target": "印刷电路板", "type": "包含"},
+        {"source": "Devices", "target": "电路", "type": "包含"},
+        {"source": "PadStack", "target": "焊盘", "type": "包含"},
+        {"source": "Pin", "target": "器件", "type": "包含"},
+        {"source": "建立PCB信息的集合", "target": "PCB信息", "type": "包含"},
+        {"source": "有源器件管脚格式", "target": "管脚信息", "type": "包含"},
+        {"source": "无源器件管脚格式", "target": "管脚信息", "type": "包含"},
+        {"source": "Segs", "target": "走线", "type": "包含"},
+        {"source": "线段的数据格式", "target": "Segs", "type": "包含"},
+        {"source": "Vias", "target": "过孔", "type": "包含"},
+        {"source": "过孔的数据格式", "target": "Vias", "type": "包含"},
+        {"source": "PCB的拓扑结构", "target": "拓扑结构", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "深度优先搜索(DFS)算法", "en": "Depth-first search (DFS) algorithm"},
+        {"title": "队列(Queue)", "en": "Queue"},
+        {"title": "拓扑结构", "en": "Topology"},
+        {"title": "传输线拓扑结构", "en": "Transmission line topology"},
+        {"title": "串扰", "en": "Crosstalk"},
+        {"title": "PCB", "en": "Printed circuit board"},
+        {"title": "耦合段", "en": "Coupling segment"},
+        {"title": "阻抗突变", "en": "Impedance discontinuity"}
+    ],
+    "relations": [
+        {"source": "深度优先搜索(DFS)算法", "target": "队列(Queue)", "type": "包含"},
+        {"source": "队列(Queue)", "target": "拓扑结构", "type": "包含"},
+        {"source": "拓扑结构", "target": "传输线拓扑结构", "type": "属于"},
+        {"source": "传输线拓扑结构", "target": "串扰", "type": "相关"},
+        {"source": "PCB", "target": "传输线拓扑结构", "type": "包含"},
+        {"source": "传输线拓扑结构", "target": "耦合段", "type": "包含"},
+        {"source": "PCB", "target": "耦合段", "type": "包含"},
+        {"source": "PCB", "target": "阻抗突变", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "线段的两点式方程",
+            "en": "Two-point equation of a line segment"
+        },
+        {
+            "title": "平行线之间的距离",
+            "en": "Distance between parallel lines"
+        },
+        {
+            "title": "3W原则",
+            "en": "3W rule"
+        },
+        {
+            "title": "双向全连接有向图",
+            "en": "Bidirectional fully connected directed graph"
+        },
+        {
+            "title": "数据填充",
+            "en": "Data padding"
+        },
+        {
+            "title": "数据归一化处理",
+            "en": "Data normalization"
+        }
+    ],
+    "relations": [
+        {
+            "source": "线段的两点式方程",
+            "target": "平行线之间的距离",
+            "type": "包含"
+        },
+        {
+            "source": "平行线之间的距离",
+            "target": "3W原则",
+            "type": "应用"
+        },
+        {
+            "source": "平行线之间的距离",
+            "target": "双向全连接有向图",
+            "type": "应用"
+        },
+        {
+            "source": "双向全连接有向图",
+            "target": "数据填充",
+            "type": "应用"
+        },
+        {
+            "source": "数据填充",
+            "target": "数据归一化处理",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "传输线串扰的机理",
+            "en": "Mechanism of crosstalk in transmission lines"
+        },
+        {
+            "title": "PCB数据预处理",
+            "en": "Preprocessing of PCB data"
+        },
+        {
+            "title": "数据标注",
+            "en": "Data labeling"
+        },
+        {
+            "title": "机器学习算法预测",
+            "en": "Prediction with machine learning algorithms"
+        },
+        {
+            "title": "数据格式用于快速分析串扰",
+            "en": "Data format for fast crosstalk analysis"
+        }
+    ],
+    "relations": [
+        {
+            "source": "传输线串扰的机理",
+            "target": "PCB数据预处理",
+            "type": "包含"
+        },
+        {
+            "source": "PCB数据预处理",
+            "target": "数据标注",
+            "type": "包含"
+        },
+        {
+            "source": "数据标注",
+            "target": "机器学习算法预测",
+            "type": "包含"
+        },
+        {
+            "source": "机器学习算法预测",
+            "target": "数据格式用于快速分析串扰",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "电源完整性",
+            "en": "Power Integrity"
+        },
+        {
+            "title": "电源分配网络",
+            "en": "Power Distribution Network"
+        },
+        {
+            "title": "电压调节模块",
+            "en": "Voltage Regulator Module"
+        },
+        {
+            "title": "去耦电容",
+            "en": "Decoupling Capacitor"
+        }
+    ],
+    "relations": [
+        {
+            "source": "电源完整性",
+            "target": "电源分配网络",
+            "type": "包含"
+        },
+        {
+            "source": "电源分配网络",
+            "target": "电压调节模块",
+            "type": "包含"
+        },
+        {
+            "source": "电源分配网络",
+            "target": "去耦电容",
+            "type": "包含"
+        },
+        {
+            "source": "电压调节模块",
+            "target": "去耦电容",
+            "type": "并列"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "耦合电容的谐振频率与电容值成反比",
+            "en": "Resonant frequency of coupling capacitor is inversely proportional to its capacitance"
+        },
+        {
+            "title": "并联多个谐振频率相近电容实现滤波",
+            "en": "Filtering by parallel connection of multiple capacitors with similar resonant frequencies"
+        },
+        {
+            "title": "去耦电容与器件管脚间距越小去耦效果越佳",
+            "en": "The closer the decoupling capacitor is to the device pin, the better the decoupling effect"
+        },
+        {
+            "title": "电源/地平面是VRM中体量最大的部分",
+            "en": "Power/ground plane is the largest part of VRM"
+        },
+        {
+            "title": "电源/地平面常被看作一个中间距离为隔离材料厚度的电容",
+            "en": "Power/ground plane is often regarded as a capacitor with a distance equal to the thickness of the isolation material"
+        },
+        {
+            "title": "目标阻抗是电源/地平面设计的重要目标",
+            "en": "Target impedance is an important goal in power/ground plane design"
+        },
+        {
+            "title": "谐振腔法和有限元法是电源/地平面常见的分析方法",
+            "en": "Resonant cavity method and finite element method are common analysis methods for power/ground plane"
+        }
+    ],
+    "relations": [
+        {
+            "source": "耦合电容的谐振频率与电容值成反比",
+            "target": "并联多个谐振频率相近电容实现滤波",
+            "type": "实现"
+        },
+        {
+            "source": "去耦电容与器件管脚间距越小去耦效果越佳",
+            "target": "电源/地平面设计",
+            "type": "影响"
+        },
+        {
+            "source": "电源/地平面",
+            "target": "目标阻抗",
+            "type": "设计目标"
+        },
+        {
+            "source": "目标阻抗",
+            "target": "电源/地平面设计",
+            "type": "指导"
+        },
+        {
+            "source": "电源/地平面",
+            "target": "谐振腔法",
+            "type": "分析方法"
+        },
+        {
+            "source": "电源/地平面",
+            "target": "有限元法",
+            "type": "分析方法"
+        }
+    ]
+}来分析电路的传输特性,这种方法计算速度快,但精度相对较低.
+本文采用"路"分析法,将电源/地平面建模为多个传输线段的串联,每个传输线段的特性参数可以通过有限元法或者测量得到,通过计算每个传输线段的传输矩阵,可以得到整个电源/地平面的传输矩阵.
+传输矩阵是指在电路中,输入端口和输出端口之间的传输关系,其可以表示为一个2x2的矩阵,其中每个元素表示输入端口的电压和电流与输出端口的电压和电流之间的关系.
+对于单条区域的传输矩阵,可以采用微带线的传输线模型进行建模,其传输矩阵可以表示为:
+[cos(hl), jZ0sin(hl)]
+[jsin(hl)/Z0, cos(hl)]
+其中h为微带线的传播常数, l为微带线的长度, Z0为微带线的特性阻抗.
+对于多个传输线段的串联,其传输矩阵可以通过每个传输线段的传输矩阵相乘得到.
+4.4.3电源/地平面的阻抗提取
+通过建立电源/地平面的传输矩阵,可以得到其输入端口和输出端口之间的传输关系,进而可以计算出其输入阻抗和输出阻抗.
+对于输入阻抗,可以通过将输出端口短路,计算输入端口的反射系数得到,进而计算出输入阻抗.
+对于输出阻抗,可以通过将输入端口短路,计算输出端口的反射系数得到,进而计算出输出阻抗.
+在实际应用中,电源/地平面的阻抗往往是一个复数,其实部表示电阻,虚部表示电容或电感,可以通过将输入端口和输出端口分别短路和开路,计算出其实部和虚部,进而得到其阻抗值.
+4.5本章小结
+本章主要介绍了电源/地平面的建模方法,包括矩量法、谐振腔法和有限元法等方法,并详细介绍了有限元法的原理和步骤.同时介绍了电源/地平面中过孔的影响和建模方法,以及单条区域的传输矩阵和阻抗提取方法.{
+    "knowledge_points": [
+        {"title": "传输线的特征参数", "en": "Characteristic parameters of transmission line"},
+        {"title": "电躍分析", "en": "Electromagnetic analysis"},
+        {"title": "电源/地平面建模", "en": "Modeling of power/ground plane"},
+        {"title": "二端口网络", "en": "Two-port network"},
+        {"title": "S参数", "en": "S-parameters"},
+        {"title": "传输矩阵", "en": "Transmission matrix"},
+        {"title": "阻抗计算方法", "en": "Impedance calculation method"},
+        {"title": "去耦电容", "en": "Decoupling capacitor"},
+        {"title": "全波仿真", "en": "Full-wave simulation"}
+    ],
+    "relations": [
+        {"source": "传输线的特征参数", "target": "电躍分析", "type": "包含"},
+        {"source": "电躍分析", "target": "电源/地平面建模", "type": "应用"},
+        {"source": "电源/地平面建模", "target": "二端口网络", "type": "涉及"},
+        {"source": "二端口网络", "target": "S参数", "type": "包含"},
+        {"source": "二端口网络", "target": "传输矩阵", "type": "涉及"},
+        {"source": "传输矩阵", "target": "阻抗计算方法", "type": "应用"},
+        {"source": "阻抗计算方法", "target": "去耦电容", "type": "涉及"},
+        {"source": "去耦电容", "target": "全波仿真", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "印刷电路板数字化建模", "en": "Digital modeling of printed circuit boards"},
+        {"title": "反射问题分析", "en": "Analysis of reflection problems"},
+        {"title": "批量化串扰预测", "en": "Batch prediction of crosstalk"},
+        {"title": "电源/地平面阻抗分析", "en": "Analysis of power/ground plane impedance"}
+    ],
+    "relations": [
+        {"source": "印刷电路板数字化建模", "target": "反射问题分析", "type": "包含"},
+        {"source": "印刷电路板数字化建模", "target": "批量化串扰预测", "type": "包含"},
+        {"source": "印刷电路板数字化建模", "target": "电源/地平面阻抗分析", "type": "包含"},
+        {"source": "反射问题分析", "target": "等效电路建模", "type": "包含"},
+        {"source": "反射问题分析", "target": "传输线拓扑结构", "type": "包含"},
+        {"source": "批量化串扰预测", "target": "数据序列构建", "type": "包含"},
+        {"source": "电源/地平面阻抗分析", "target": "级联二端口网络", "type": "包含"},
+        {"source": "电源/地平面阻抗分析", "target": "去耦电容位置调整", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "有限元方法",
+            "en": "Finite Element Method"
+        },
+        {
+            "title": "有限差分法",
+            "en": "Finite Difference Method"
+        },
+        {
+            "title": "矩量法",
+            "en": "Moment Method"
+        },
+        {
+            "title": "平衡传输线方法",
+            "en": "Balanced Transmission Line Method"
+        },
+        {
+            "title": "边缘激励",
+            "en": "Edge Excitation"
+        },
+        {
+            "title": "等效电路模型",
+            "en": "Equivalent Circuit Model"
+        },
+        {
+            "title": "传输线方程",
+            "en": "Transmission Line Equations"
+        },
+        {
+            "title": "信号完整性",
+            "en": "Signal Integrity"
+        },
+        {
+            "title": "串扰",
+            "en": "Crosstalk"
+        }
+    ],
+    "relations": [
+        {
+            "source": "有限元方法",
+            "target": "电磁学",
+            "type": "属于"
+        },
+        {
+            "source": "有限差分法",
+            "target": "电磁学",
+            "type": "属于"
+        },
+        {
+            "source": "矩量法",
+            "target": "电磁学",
+            "type": "属于"
+        },
+        {
+            "source": "平衡传输线方法",
+            "target": "电磁学",
+            "type": "属于"
+        },
+        {
+            "source": "边缘激励",
+            "target": "电磁学",
+            "type": "属于"
+        },
+        {
+            "source": "等效电路模型",
+            "target": "电路设计",
+            "type": "属于"
+        },
+        {
+            "source": "传输线方程",
+            "target": "电路设计",
+            "type": "属于"
+        },
+        {
+            "source": "信号完整性",
+            "target": "电路设计",
+            "type": "属于"
+        },
+        {
+            "source": "串扰",
+            "target": "电路设计",
+            "type": "属于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多层PCB中的非平行走线和印刷元件的电气模拟", "en": "Electrical simulation of multilayer PCB with non-parallel tracks and printed components"},
+        {"title": "多层印刷电路板中via之间串扰的分析预测", "en": "Analytical prediction of crosstalk among vias in multilayer printed circuit boards"},
+        {"title": "改进的PCB via图案以减少高速串行接口区域的串扰", "en": "Improved PCB via pattern to reduce crosstalk at package BGA region for high-speed serial interface"},
+        {"title": "混合PCB结构中使用传输线消除微带线远端串扰", "en": "Microstrip lines far-end crosstalk cancellation using striplines in hybrid PCB structure"},
+        {"title": "三维多导体系统的等效电路模型", "en": "Equivalent circuit models for three-dimensional multiconductor systems"},
+        {"title": "电源总线阻抗计算中快速算法的收敛加速和精度提高", "en": "Convergence acceleration and accuracy improvement in power bus impedance calculation with a fast algorithm using cavity modes"},
+        {"title": "网格状电源分配网络的电磁建模研究", "en": "Electromagnetic modeling of grid-like power distribution network"},
+        {"title": "Cadence高速电路板设计与仿真", "en": "Cadence high-speed circuit board design and simulation"},
+        {"title": "信号完整性与电源完整性分析", "en": "Signal integrity and power integrity analysis"},
+        {"title": "非均匀辐射传输线的反射和传输系数介绍", "en": "Introduction of reflection and transmission coefficients for non-uniform radiating transmission lines"},
+        {"title": "微波技术与微波电路", "en": "Microwave technology and microwave circuits"},
+        {"title": "PCB布线的进展", "en": "Advances in PCB routing"},
+        {"title": "多层PCB中via对信号传输的影响研究", "en": "Research on the influence of vias on signal transmission in multilayer PCB"},
+        {"title": "PCB和电磁兼容设计", "en": "PCB and electromagnetic compatibility design"},
+        {"title": "基于IBIS模型的模拟SPICE行为模型开发", "en": "Development of analog SPICE behavioral model based on IBIS model"},
+        {"title": "高速PCB设计中串扰与反射的研究", "en": "Study on crosstalk and reflection in high-speed PCB design"}
+    ],
+    "relations": [
+        {"source": "多层PCB中的非平行走线和印刷元件的电气模拟", "target": "多层印刷电路板中via之间串扰的分析预测", "type": "相关"},
+        {"source": "多层PCB中的非平行走线和印刷元件的电气模拟", "target": "改进的PCB via图案以减少高速串行接口区域的串扰", "type": "相关"},
+        {"source": "多层印刷电路板中via之间串扰的分析预测", "target": "改进的PCB via图案以减少高速串行接口区域的串扰", "type": "相关"},
+        {"source": "混合PCB结构中使用传输线消除微带线远端串扰", "target": "三维多导体系统的等效电路模型", "type": "相关"},
+        {"source": "电源总线阻抗计算中快速算法的收敛加速和精度提高", "target": "网格状电源分配网络的电磁建模研究", "type": "相关"},
+        {"source": "Cadence高速电路板设计与仿真", "target": "信号完整性与电源完整性分析", "type": "相关"},
+        {"source": "Cadence高速电路板设计与仿真", "target": "非均匀辐射传输线的反射和传输系数介绍", "type": "相关"},
+        {"source": "PCB布线的进展", "target": "多层PCB中via对信号传输的影响研究", "type": "相关"},
+        {"source": "PCB和电磁兼容设计", "target": "高速PCB设计中串扰与反射的研究", "type": "相关"},
+        {"source": "基于IBIS模型的模拟SPICE行为模型开发", "target": "Cadence高速电路板设计与仿真", "type": "相关"},
+        {"source": "基于IBIS模型的模拟SPICE行为模型开发", "target": "信号完整性与电源完整性分析", "type": "相关"},
+        {"source": "基于IBIS模型的模拟SPICE行为模型开发", "target": "高速PCB设计中串扰与反射的研究", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "端接方式", "en": "Termination method"},
+        {"title": "高速电路串扰", "en": "High-speed circuit crosstalk"},
+        {"title": "PCB串扰预测", "en": "PCB crosstalk prediction"},
+        {"title": "信号与电源完整性分析", "en": "Signal and power integrity analysis"},
+        {"title": "VRM建模", "en": "VRM modeling"},
+        {"title": "PDN设计策略", "en": "PDN design strategies"},
+        {"title": "PCB去耦", "en": "PCB decoupling"},
+        {"title": "电源分配网络设计", "en": "Power distribution network design"},
+        {"title": "共模噪声抑制", "en": "Common mode noise suppression"}
+    ],
+    "relations": [
+        {"source": "端接方式", "target": "高速电路串扰", "type": "影响"},
+        {"source": "机器学习", "target": "PCB串扰预测", "type": "应用"},
+        {"source": "Cadence高速电路版设计与仿真", "target": "信号与电源完整性分析", "type": "工具"},
+        {"source": "MeasurementbasedVRMmodeling", "target": "VRM建模", "type": "研究"},
+        {"source": "PDNDesignStrategies", "target": "PDN设计策略", "type": "研究"},
+        {"source": "PCB去耦", "target": "电源分配网络设计", "type": "关联"},
+        {"source": "电源分配网络设计", "target": "信号与电源完整性分析", "type": "影响"},
+        {"source": "PCB板级共模噪声抑制方法研究", "target": "共模噪声抑制", "type": "研究"},
+        {"source": "高速数字PCB板互连噪声建模与仿真研究", "target": "高速电路串扰", "type": "研究"}
+    ]
+}

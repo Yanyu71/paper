@@ -1,0 +1,10 @@
+3.2.5模板匹配与实体对匹配函数
+这两个函数是规则匹配的重要部分，给定句子和种子对，模板生成函数找到 种子对的两个实体之间的最短依存路径；种子对生成函数则根据模板和句子，判 段句子中是否存在该模板，如存在则返回实体对，不存在则返回NIL,伪代码参 见图3-10和图3-llo
+Sub GeneratePatteni(seiiten£«,seed)
+srcidGetEntityIndex(sentence,seed.entity 1) desid GetEntityIndex(sentence3eed*entity2) pattern BFS(sentence,src_id,des_id) return pattern
+图3-10模板生成函数
+Sub GenerateSeed(sentence,pattem)
+for seed in sentence do
+path <— getSPT(sentence,seed) if match(path,pattern) return seed
+return NIL
+图3-11种子对生成函数

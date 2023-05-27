@@ -1,0 +1,7 @@
+3.1.5半CellUE半蜂窝覆盖通信
+当异构网络场景为部分有蜂窝信号覆盖和Cell UE信号覆盖，而部分无蜂窝 信号和Cell UE信号覆盖时，如图3-5所示，对于处于蜂窝网络覆盖下的D2D 终 端2,其下行与基站建立同步关系。上行则基于下行对齐的基础上，通过与Cell UE 建立同步获取CellUE 的时间提前量TA, 并使用TA 相对于下行提前发送和 接收。而对于处于无蜂窝网络覆盖下的D2D 终端1则通过Sync 同步与处于网络 覆盖下的D2D 终端建立同步关系，其上行相对于下行提前发送和接收的提前量 TA 通过与D2D 终端2建立的Sync 同步中的带外信息Synclnfo获取。在该场景
+中 D2D 终端1的下行根同步源也是蜂窝基站，D2D 终端2起到了一个中继作用，
+频偏的情形与3.1.4所讨论的场景相同。
+图3-5 双终端半Cell UE半蜂窝覆盖通信
+16
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.    http://www.cnki.net

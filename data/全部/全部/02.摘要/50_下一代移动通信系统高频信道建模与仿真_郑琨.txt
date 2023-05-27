@@ -1,0 +1,19 @@
+摘要
+由于下一代通信网络对信道容量、频谱效率等方面的要求更高, 需要更大的频谱带宽支持，因此在下一代通信技术发展中，高频段的 信道建模成为了重要的研究方向。无线信道在高频条件下可能会产生 低频条件中难以体现的特性，如何准确描述信道特性成为了各组织和 研究机构面临的挑战。论文开展信道建模研究，主要工作如下：
+(1)对高频信道的建模和准进行了研究和仿真评估，分析了 无线信道在高频条件下具有的特性，为高频信道模型的建立提供了理 论基础。
+(2)讨论了高频信道模型的建模方法和对模型的仿真校准及分 析。釆用基于几何统计的建模方法，将3DMIMO信道模型扩充到高 频段，给出了高频信道的建模步骤。
+(3)为保证信道模型的准确度，对高频信道模型进行了仿真， 并将仿真结果从大尺度参数、小尺度参数和高频特性参数三个方面与 权威机构结果进行校准，保证了仿真结果的准确性。
+(4)定性分析了高频信道的部分仿真结果，对高频信道的性能 和部分参数进行了简要说明。
+论文中信道建模是对无线通信环境的抽象描述，利用一系列参数 和建模步骤，表述传输环境的物理特性，能够准确刻画无线信号的传 输机制，是评估无线技术性能的一种重要手段。
+关键词:高频;信道建模;MIMO;仿真;校准分析
+HIGH FREQUENCY CHANNEL MODELING AND SIMULATION IN NEXT GENERATION MOBILE COMMUNICATION SYSTEMS
+ABSTRACT
+As the next generation communication network is more demanding in terms of channel capacity and spectrum efficiency, it needs more spectrum bandwidth support. Therefore, in the development of next generation communication technology, channel modeling in high frequency band becomes an important research direction. How to accurately characterize the channel becomes a challenge for organizations and research institutions because of the characteristics of wireless channel which may be difficult to be reflected in low frequency conditions under high frequency conditions. The paper carnes on the channel modeling research, and the main work is as follows:
+(1)In this paper, the modeling and calibration of high fi'equency channel are studied and simulated. The characteristics of wireless channel under high frequency are analyzed, which provides a theoretical basis for the establishment of high frequency channel model.
+(2)The modeling method of HF channel model and the simulation calibration and analysis of the model are discussed. The 3D MIMO channel model is extended to the high frequency band using the modeling method based on geometric statistics, and the modeling steps of the high frequency channel are given.
+(3)In order to ensure the accuracy of the channel model, the high frequency channel model is simulated and the simulation results are calibrated from the large-scale parameter, the small-scale parameter and the additional high-frequency characteristic parameter to ensure the
+accuracy of the simulation results.
+(4)The simulation results of the high frequency channel are analyzed qualitatively. The performance and some parameters of the high frequency channel are briefly described.
+In this paper, channel modeling is an abstract description of the wireless communication environment. Using a series of parameters and modeling steps to describe the physical characteristics of the transmission environment, it can accurately depict the transmission mechanism of the wireless signal is an important means to evaluate the performance of wireless technology.
+KEY WORDS:high frequency;channel model;mimo;simulation;calibration
+

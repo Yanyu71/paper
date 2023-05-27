@@ -1,0 +1,14 @@
+5.3.4SRS信道探测模块
+本文SRS实现信道探测统计信号平均功率和信噪比两个参数。釆用虚子载波扩展信 道估计及相应噪声估计算法进行信噪比探测，得到信号平均功率和信噪比两个信道测量 值。VCFR信道估计算法中FFT运算通过调用TI的FFT协处理器(FFTC)来实现，FFTC 通过读取配置寄存器的参数来配置是运算FFT还是IFFT, FFT/IFFT点数，是否包含循 环前缀，幅值缩放模式，FFT/IFFT补零等参数。
+信道探测模块计算流程如下：
+图5-6: SRS信道探测流程
+表5-8给出了 SRS信道探测模块的函数描述：
+表5-8: SRS信道探测函数描述
+函数原型	void eNBRxSRS_SRSMeasure( ns, SRSBufldx, PhyMacUIC hanCsilnd)
+函数输入	函数参数	ns：时隙号
+SRSBufldx： SRS缓存索引
+全局变量	SreUserlnfb；全局变量，指向用户SRS参数的指针
+SrsScIdx： SRS物理资源映射起始子载波
+SrsLength： SRS 长度
+函数输出	函数参数	PhyMacUlChanCsilnd：指向包含SRS测量结果的结构体的指针
+返回值	无

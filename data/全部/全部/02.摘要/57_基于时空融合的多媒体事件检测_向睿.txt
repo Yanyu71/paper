@@ -1,0 +1,18 @@
+摘要
+多媒体事件检测(Multimedia event detection, MED)是计算机视觉和 视频检索领域中一个极具挑战性的研究热点。过去的十年，人工设计 (Hand-crafted)的特征及其融合策略在诸如UCF-101等公开的行为库中 获得了较高的识别精度，却未能在MED中取得令人满意的结果。这是由 于多媒体事件远比行为识别任务复杂，其视频内容抽象多变，难以用传 统的底层特征表示。
+最近几年，深度学习在图像分类领域不断取得突破，它借助大数据 集下规模化的监督学习，提取出有效的图像表示；特别是其端到端的学 习模式为其他一些视觉任务提供了有益参考。然而，在MED等特定的视 频任务中，深度学习算法由于缺乏成熟的面向视频分析的网络结构以及 受到设备的限制，依然没能取得较大进步。
+本文针对MED任务中的难点，从特征的提取、视频内容的表示、分 类器学习等方面进行了深入的研究，主要工作包括：
+1	.提出了一种融合多个深度网络模型的图像特征提取算法，提高了 特征的区分性和泛化能力。
+2	.基于经典VLAD编码方法，提出了一种改进的视频表示算法，增 强了视频表示的有效性。
+3	.提出了一种基于线性支持向量机的视频分类算法，实现了视频的 快速分类。
+4	.搭建了一个基于时空融合的多媒体事件检测系统，在 TRECVID2016MED评测中的10EX和100EX任务中均获得了第一名， 同时在其他多个数据集和全国首届舆情挑战赛上也取得了好成绩，验证 了本文提出的MED检测框架及算法的有效性。
+关键词 多媒体事件检测深度学习视频分类
+MULTIMEDIA EVENT DETECTION BASED ON SPATIOTEMPORAL FUSION
+ABSTRACT
+Multimedia event detection (MED),which targets the detection of complex event in a multimedia video recently called a lot of researcher's attention in computer vision field. Compared to past times researches which focus on action recognition, the multimedia event detection is more challenging because the event we need to detect can be more complex and varied.
+Although the optical flow based methods dominant the researches on action recognition tasks, they showed modest perfonnance when the contents of videos become complex on a more practical dataset, which proved these descriptors are not robust to iiTegular movements, complex moving background and uneven quality of videos.
+As deep neural networks structures like Convolutional Neural Networks (CNNs) and RecuiTent Neural Networks (RNN) have achieved great progresses on object classification, detection, segmentation tasks in image field recent years, we focus on proposing a effective algorithm based on deep learning frameworks for large scale video classification. We also compared these deep learning based methods with other traditional methods, and then chose the most suitable algorithm for our MED system. We propose a lightweight and effective framework for video's multimedia event detection(MED).The final fi-amework we build has good perfonnance, high speed, and low storage cost .And also it can be easily applied for other video classification or detection tasks on a affordable platfonn.
+This paper mainly contains four aspects of work. Firstly, we proposed a discriminative descriptor based on deep Convolutional Neural Networks (CNNs). Secondly, we improved the original VLAD encoding to represent videos. Thirdly, we realized the video classification and score prediction based on linear Support Vector Machine (SVM). Lastly, we build a MED
+system which have achieved the state-of-the-art performance on TRECVID2016 MED task and other datasets.
+KEYWORDS Multimedia event detection deep neural networks classification
+video

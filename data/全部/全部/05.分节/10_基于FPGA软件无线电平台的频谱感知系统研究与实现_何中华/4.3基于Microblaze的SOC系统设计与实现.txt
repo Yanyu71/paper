@@ -1,0 +1,4 @@
+4.3基于Microblaze的SOC系统设计与实现
+控制系统作为整个频谱感知平台的硬件控制中心，控制着硬件系统的运转, 确保系统稳定运行的鲁棒性，具有举足轻重的地位。控制系统釆用基于Microblaze
+52
+CPU的SOC结构，其釆用AXI/AXI-Lite总线架构，使用Microblaze嵌入式处理作 为firmware程序的执行单元，DDR3 SDRAM存储器作为系统的主存，不仅要存储 firmware程序执行指令和程序动态开辟的存储空间，还要作为Ethernet和DMA 传输的缓冲单元。Ethernet控制器完成以太网底层协议处理，为控制系统与上位 机PC程序提供以太网通信的基本功能oDMA引擎连接频谱感知信号处理子系统, 将感知得到的频谱数据转存到主存中。射频子板RTL驱动模块和整个基带处理子 系统均独立封装为IP核的形式，以IP Peripheral的形式挂载到Microblaze CPU之 上，作为SOC系统的一个外部信号处理设备，不同IP Peripheral之间以及IP Peripheral与Microblaze之间的通信接口均釆用AXI-Stream的形式，可实现高速 率、流式握手式数据传输。

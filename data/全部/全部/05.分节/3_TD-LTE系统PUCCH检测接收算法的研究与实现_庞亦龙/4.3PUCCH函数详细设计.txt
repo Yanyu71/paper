@@ -1,0 +1,48 @@
+4.3PUCCH函数详细设计
+core4上所包含的函数的定义以及功能由表4-7给出，eNBRxPucch为PUCCH处理 过程的入口函数，其中包含了计算PUCCH资源位置、计算ZC序列参数、生成ZC序 列并去除ZC序列的相关性、信道估计和均衡、DTX判决及噪声计算、解扰解调、产生 伪随机序列以及Reed-muller译码几个模块□ eNBRxPucch的处理流程以及函数间的调用
+关系如图4-4和图4-5所示:
+小区建立或重配置
+保存小晟别参数
+保存用户级别参数
+图4-4 eNBRxPucch处理流程图
+47
+Pucch_NcsNocCal()	j 	: Common_gold _gen()
+Pucch ZcDeCorr()
+Pucch DTXChEstEq()
+Pucch_DemoDeScrmb()	:…… 		:Common_gold_gen() 1
+Pucch DeReedMuller()
+图4-5 eNBRxPucch函数调用关系
+表4.7给出了 Pucch的函数列表：
+表4-7 Pucch函数列表及功能说明
+函数亿	　　　说明（功能及所在模块）
+void Pucch (
+STRU_UL_HARQ_PROCESS*pHarqProcess
+STRU_UL_CQI_IND *pCqi!nd
+)	PUCCH处理模块
+void PUCCH RsrcIdxCal (unsigned char Tsldx)	计算PUCCH频域上资源位置
+void Pucch_NcsNocCal(unsigned char Tsldx)	计算PUCCH中使用Ncs, Noc和u 参数
+void common_gold_gen ( unsigned int Cinit. unsigned short OutPutLen. unsigned char *pOutPut )	Gold序列生成，属于计算PUCCH 中使用Ncs, Noc和u参数模块
+void Pucch ZcDeCorr (
+short *pData!nO,
+short *pDataInl,
+short *pDataOutO,
+short *pDataOutl,
+STRU_PUCCH_ZC_DECORR_PARA*pPucchZcDeCorrPara )	去除ZC序列影响和其他用户的十 扰
+void Pucch_DTXChEstEq(
+short *pDataInO,
+short *pData!nl,
+STRU_PUCCH_DTX_CHEST_EQ_PARA *pStruPucchDtxChEstEqPara.
+unsigned char *pPucchDtxFlag. short *pDataOut.
+)	PUCCH的信道估计，均衡，以及
+DTX判断
+void Pucch_DemoDeScrmb ( short *pData!n.
+unsigned char *pAckNack. char *pCsiSoftBit
+)	PUCCH解调解扰
+48
+表4-7 Pucch函数列表及功能说明（续上表）
+函数名	说明（功能及所在模块）
+void common_gold_gen ( unsigned int Cinit, unsigned short	OutPutLen.
+unsigned char	*pOutPut
+)	Gold序列生成
+void PucchDeReedMulIer ( char *pData!n, STRU_PUCCH_REEDMULLER_PARA * pPucchReedMullerPara unsigned char *pDataOut,
+)	解 Reed-Muller 码

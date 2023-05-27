@@ -1,0 +1,1004 @@
+﻿{
+    "knowledge_points": [
+        {"title": "高速智能网卡", "en": "Smart NICs"},
+        {"title": "数据中心网络架构", "en": "Data Center Network Architecture"},
+        {"title": "网络数据处理", "en": "Network Data Processing"},
+        {"title": "CPU负担", "en": "CPU Burden"},
+        {"title": "硬件加速", "en": "Hardware Acceleration"},
+        {"title": "可重构网络", "en": "Reconfigurable Network"},
+        {"title": "DDoS缓解", "en": "DDoS Mitigation"}
+    ],
+    "relations": [
+        {"source": "数据中心网络架构", "target": "高速智能网卡", "type": "包含"},
+        {"source": "网络数据处理", "target": "CPU负担", "type": "导致"},
+        {"source": "高速智能网卡", "target": "硬件加速", "type": "实现"},
+        {"source": "高速智能网卡", "target": "可重构网络", "type": "实现"},
+        {"source": "高速智能网卡", "target": "数据中心网络架构", "type": "应用于"},
+        {"source": "高速智能网卡", "target": "DDoS缓解", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高速智能网卡", "en": "High-speed intelligent network card"},
+        {"title": "数据中心", "en": "Data center"},
+        {"title": "金融证券交易", "en": "Financial securities trading"},
+        {"title": "网络虚拟化", "en": "Network virtualization"},
+        {"title": "64b/66b编码", "en": "64b/66b encoding"},
+        {"title": "物理编码子层", "en": "Physical Coding Sublayer (PCS)"},
+        {"title": "MAC地址", "en": "MAC address"},
+        {"title": "PCI-Express", "en": "PCI-Express"},
+        {"title": "直接内存访问", "en": "Direct Memory Access (DMA)"},
+        {"title": "描述符", "en": "Buffer Descriptor (BD)"},
+        {"title": "VHDL硬件描述语言", "en": "VHDL hardware description language"},
+        {"title": "Vivado平台", "en": "Vivado platform"},
+        {"title": "IEEE802.3ae", "en": "IEEE802.3ae"}
+    ],
+    "relations": [
+        {"source": "高速智能网卡", "target": "数据中心", "type": "应用场景"},
+        {"source": "高速智能网卡", "target": "金融证券交易", "type": "应用场景"},
+        {"source": "高速智能网卡", "target": "网络虚拟化", "type": "应用场景"},
+        {"source": "64b/66b编码", "target": "物理编码子层", "type": "包含关系"},
+        {"source": "物理编码子层", "target": "MAC地址", "type": "数据传输"},
+        {"source": "PCI-Express", "target": "直接内存访问", "type": "工作方式"},
+        {"source": "直接内存访问", "target": "描述符", "type": "数据结构"},
+        {"source": "VHDL硬件描述语言", "target": "Vivado平台", "type": "开发工具"},
+        {"source": "物理编码子层", "target": "IEEE802.3ae", "type": "规范"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高速智能网卡", "en": "High-speed intelligent network card"},
+        {"title": "基础架构分析", "en": "Analysis of basic architecture"},
+        {"title": "SoC架构", "en": "SoC architecture"},
+        {"title": "NP-SoC智能网卡", "en": "NP-SoC intelligent network card"},
+        {"title": "GP-SoC智能网卡", "en": "GP-SoC intelligent network card"},
+        {"title": "ASIC架构", "en": "ASIC architecture"},
+        {"title": "Mellanox ConnectX-6", "en": "Mellanox ConnectX-6"}
+    ],
+    "relations": [
+        {"source": "高速智能网卡", "target": "基础架构分析", "type": "包含"},
+        {"source": "基础架构分析", "target": "SoC架构", "type": "包含"},
+        {"source": "SoC架构", "target": "NP-SoC智能网卡", "type": "包含"},
+        {"source": "SoC架构", "target": "GP-SoC智能网卡", "type": "包含"},
+        {"source": "基础架构分析", "target": "ASIC架构", "type": "包含"},
+        {"source": "ASIC架构", "target": "Mellanox ConnectX-6", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FPGA架构", "en": "FPGA architecture"},
+        {"title": "硬件编程语言", "en": "Hardware programming language"},
+        {"title": "Altera Stratix V D5", "en": "Altera Stratix V D5"},
+        {"title": "Catapult智能网卡架构", "en": "Catapult intelligent NIC architecture"},
+        {"title": "ASIC智能网卡", "en": "ASIC intelligent NIC"},
+        {"title": "SoC智能网卡", "en": "SoC intelligent NIC"},
+        {"title": "高速智能网卡", "en": "High-speed intelligent NIC"},
+        {"title": "网络协议处理", "en": "Network protocol processing"},
+        {"title": "网络功能处理", "en": "Network function processing"},
+        {"title": "金融算法交易", "en": "Financial algorithmic trading"}
+    ],
+    "relations": [
+        {"source": "FPGA架构", "target": "硬件编程语言", "type": "包含"},
+        {"source": "FPGA架构", "target": "Altera Stratix V D5", "type": "包含"},
+        {"source": "Altera Stratix V D5", "target": "Catapult智能网卡架构", "type": "应用于"},
+        {"source": "ASIC智能网卡", "target": "性价比低", "type": "关联"},
+        {"source": "ASIC智能网卡", "target": "编程复杂度低", "type": "关联"},
+        {"source": "ASIC智能网卡", "target": "灵活性差", "type": "关联"},
+        {"source": "FPGA智能网卡", "target": "处理效率高", "type": "关联"},
+        {"source": "FPGA智能网卡", "target": "速度快", "type": "关联"},
+        {"source": "FPGA智能网卡", "target": "开发难度小", "type": "关联"},
+        {"source": "FPGA智能网卡", "target": "开发周期短", "type": "关联"},
+        {"source": "FPGA智能网卡", "target": "灵活性强", "type": "关联"},
+        {"source": "高速智能网卡", "target": "网络协议处理", "type": "应用场景"},
+        {"source": "高速智能网卡", "target": "网络功能处理", "type": "应用场景"},
+        {"source": "高速智能网卡", "target": "金融算法交易", "type": "应用场景"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高速智能网卡", "en": "High-speed intelligent network card"},
+        {"title": "不同应用场景中的侧重点", "en": "Emphasis in different application scenarios"},
+        {"title": "计算复杂度", "en": "Computational complexity"},
+        {"title": "并行能力", "en": "Parallelism"},
+        {"title": "隔离性", "en": "Isolation"},
+        {"title": "流水处理能力", "en": "Pipeline processing capability"},
+        {"title": "网络协议处理", "en": "Network protocol processing"},
+        {"title": "网络功能处理", "en": "Network function processing"},
+        {"title": "金融算法交易", "en": "Financial algorithm trading"},
+        {"title": "64b/66b编码技术", "en": "64b/66b encoding technology"},
+        {"title": "直流平衡", "en": "DC balance"},
+        {"title": "扰码", "en": "Scrambling code"},
+        {"title": "位同步对齐", "en": "Bit synchronization alignment"}
+    ],
+    "relations": [
+        {"source": "高速智能网卡", "target": "不同应用场景中的侧重点", "type": "包含"},
+        {"source": "不同应用场景中的侧重点", "target": "计算复杂度", "type": "相关"},
+        {"source": "不同应用场景中的侧重点", "target": "并行能力", "type": "相关"},
+        {"source": "不同应用场景中的侧重点", "target": "隔离性", "type": "相关"},
+        {"source": "不同应用场景中的侧重点", "target": "流水处理能力", "type": "相关"},
+        {"source": "不同应用场景中的侧重点", "target": "网络协议处理", "type": "相关"},
+        {"source": "不同应用场景中的侧重点", "target": "网络功能处理", "type": "相关"},
+        {"source": "不同应用场景中的侧重点", "target": "金融算法交易", "type": "相关"},
+        {"source": "64b/66b编码技术", "target": "直流平衡", "type": "相关"},
+        {"source": "64b/66b编码技术", "target": "扰码", "type": "相关"},
+        {"source": "64b/66b编码技术", "target": "位同步对齐", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "硬件卸载加速技术",
+            "en": "Hardware Offloading Acceleration Technology"
+        },
+        {
+            "title": "ClickNP架构",
+            "en": "ClickNP Architecture"
+        },
+        {
+            "title": "RMT架构",
+            "en": "RMT Architecture"
+        },
+        {
+            "title": "高速串行总线技术",
+            "en": "High-speed Serial Bus Technology"
+        },
+        {
+            "title": "PCIE总线",
+            "en": "PCI Express Bus"
+        },
+        {
+            "title": "DMA多队列技术",
+            "en": "DMA Multi-queue Technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "硬件卸载加速技术",
+            "target": "TCP/UDPBS",
+            "type": "协议卸载功能"
+        },
+        {
+            "source": "硬件卸载加速技术",
+            "target": "RSS",
+            "type": "硬件加速技术"
+        },
+        {
+            "source": "硬件卸载加速技术",
+            "target": "OVS",
+            "type": "硬件加速技术"
+        },
+        {
+            "source": "硬件卸载加速技术",
+            "target": "CPU",
+            "type": "资源释放"
+        },
+        {
+            "source": "ClickNP架构",
+            "target": "商用服务器",
+            "type": "应用场景"
+        },
+        {
+            "source": "ClickNP架构",
+            "target": "FPGA",
+            "type": "编译处理"
+        },
+        {
+            "source": "RMT架构",
+            "target": "FlexNIC",
+            "type": "继承关系"
+        },
+        {
+            "source": "高速串行总线技术",
+            "target": "PCIE4.0",
+            "type": "技术发展"
+        },
+        {
+            "source": "高速串行总线技术",
+            "target": "PCIE2.0",
+            "type": "使用情况"
+        },
+        {
+            "source": "PCIE总线",
+            "target": "TCP/IP协议",
+            "type": "类比关系"
+        },
+        {
+            "source": "DMA多队列技术",
+            "target": "中断",
+            "type": "通知机制"
+        },
+        {
+            "source": "DMA多队列技术",
+            "target": "PCIE总线协议",
+            "type": "实现方式"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "基于寄存器的DMA传输",
+            "en": "Register-based DMA transfer"
+        },
+        {
+            "title": "基于描述符的DMA传输",
+            "en": "Descriptor-based DMA transfer"
+        },
+        {
+            "title": "描述符",
+            "en": "Descriptor"
+        },
+        {
+            "title": "队列",
+            "en": "Queue"
+        },
+        {
+            "title": "多队列技术",
+            "en": "Multi-queue technology"
+        },
+        {
+            "title": "网络虚拟化",
+            "en": "Network virtualization"
+        },
+        {
+            "title": "高速智能网卡",
+            "en": "High-speed intelligent network card"
+        },
+        {
+            "title": "协议栈",
+            "en": "Protocol stack"
+        },
+        {
+            "title": "MAC地址",
+            "en": "MAC address"
+        },
+        {
+            "title": "PCIE",
+            "en": "PCI Express"
+        },
+        {
+            "title": "FIFO缓冲",
+            "en": "FIFO buffer"
+        }
+    ],
+    "relations": [
+        {
+            "source": "基于寄存器的DMA传输",
+            "target": "基于描述符的DMA传输",
+            "type": "包含"
+        },
+        {
+            "source": "基于描述符的DMA传输",
+            "target": "描述符",
+            "type": "包含"
+        },
+        {
+            "source": "队列",
+            "target": "多队列技术",
+            "type": "相关"
+        },
+        {
+            "source": "多队列技术",
+            "target": "网络虚拟化",
+            "type": "相关"
+        },
+        {
+            "source": "高速智能网卡",
+            "target": "协议栈",
+            "type": "包含"
+        },
+        {
+            "source": "协议栈",
+            "target": "MAC地址",
+            "type": "包含"
+        },
+        {
+            "source": "高速智能网卡",
+            "target": "PCIE",
+            "type": "包含"
+        },
+        {
+            "source": "高速智能网卡",
+            "target": "FIFO缓冲",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "PCS模块", "en": "PCS Module"},
+        {"title": "MAC地址卸载加速模块", "en": "MAC Address Offloading Acceleration Module"},
+        {"title": "FIFO缓冲", "en": "FIFO Buffer"},
+        {"title": "PCIEDMA模块", "en": "PCIE DMA Module"}
+    ],
+    "relations": [
+        {"source": "PCS模块", "target": "物理编码子层", "type": "属于"},
+        {"source": "PCS模块", "target": "64b/66b编码", "type": "围绕"},
+        {"source": "PCS模块", "target": "PMA", "type": "相连"},
+        {"source": "PCS模块", "target": "10G介质独立接口", "type": "相连"},
+        {"source": "PCS模块", "target": "位宽转换", "type": "完成"},
+        {"source": "PCS模块", "target": "同步操作", "type": "完成"},
+        {"source": "PCS模块", "target": "解扰", "type": "完成"},
+        {"source": "PCS模块", "target": "解码", "type": "完成"},
+        {"source": "PCS模块", "target": "发送数据", "type": "完成"},
+        {"source": "MAC地址卸载加速模块", "target": "基于MAC地址匹配和转发功能", "type": "完成"},
+        {"source": "MAC地址卸载加速模块", "target": "数据包头解析", "type": "完成"},
+        {"source": "MAC地址卸载加速模块", "target": "MAC地址提取", "type": "完成"},
+        {"source": "MAC地址卸载加速模块", "target": "匹配查找", "type": "完成"},
+        {"source": "MAC地址卸载加速模块", "target": "数据包动作执行", "type": "完成"},
+        {"source": "FIFO缓冲", "target": "解决数据接口类型不同、数据位宽不同以及时钟不同的问题", "type": "用于"},
+        {"source": "FIFO缓冲", "target": "数据缓冲", "type": "完成"},
+        {"source": "PCIEDMA模块", "target": "数据搬移", "type": "完成"},
+        {"source": "PCIEDMA模块", "target": "DMA方式", "type": "采用"},
+        {"source": "PCIEDMA模块", "target": "PCIE接口", "type": "依靠"},
+        {"source": "PCIEDMA模块", "target": "数据发送引擎", "type": "从网卡写入到内存中"},
+        {"source": "PCIEDMA模块", "target": "数据接收引擎", "type": "从内存读到网卡中进行发送"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "数据通道分为发送通道和接收通道", "en": "Data channels are divided into sending and receiving channels"},
+        {"title": "MAC地址卸载加速模块完成基于MAC地址的匹配查找操作", "en": "MAC address offloading acceleration module completes MAC address-based matching and lookup operations"},
+        {"title": "PCIE DMA模块负责网卡与主机之间的数据交互", "en": "PCIE DMA module is responsible for data exchange between network card and host"},
+        {"title": "PCS模块中同步头锁定是设计的难点和重点", "en": "Locking the synchronization header in the PCS module is the difficulty and focus of the design"},
+        {"title": "在MAC中提高匹配查找速度以及进行高效的DMA传输是关键点", "en": "Improving the matching and lookup speed in MAC and performing efficient DMA transmission are key points"}
+    ],
+    "relations": [
+        {"source": "数据通道分为发送通道和接收通道", "target": "MAC地址卸载加速模块完成基于MAC地址的匹配查找操作", "type": "包含"},
+        {"source": "数据通道分为发送通道和接收通道", "target": "PCIE DMA模块负责网卡与主机之间的数据交互", "type": "包含"},
+        {"source": "MAC地址卸载加速模块完成基于MAC地址的匹配查找操作", "target": "在MAC中提高匹配查找速度以及进行高效的DMA传输是关键点", "type": "相关"},
+        {"source": "PCIE DMA模块负责网卡与主机之间的数据交互", "target": "在MAC中提高匹配查找速度以及进行高效的DMA传输是关键点", "type": "相关"},
+        {"source": "PCS模块中同步头锁定是设计的难点和重点", "target": "在MAC中提高匹配查找速度以及进行高效的DMA传输是关键点", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "同步头", "en": "Sync Header"},
+        {"title": "RX变速箱", "en": "RX Gearbox"},
+        {"title": "滑动窗口", "en": "Sliding Window"},
+        {"title": "CAM存储器", "en": "CAM Memory"}
+    ],
+    "relations": [
+        {"source": "同步头", "target": "RX变速箱", "type": "包含关系"},
+        {"source": "RX变速箱", "target": "滑动窗口", "type": "包含关系"},
+        {"source": "滑动窗口", "target": "同步头", "type": "关联"},
+        {"source": "CAM存储器", "target": "MAC地址匹配查找", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "MAC地址的分段匹配",
+            "en": "Segmented matching of MAC addresses"
+        },
+        {
+            "title": "CAM容量设计",
+            "en": "Design of CAM capacity"
+        },
+        {
+            "title": "基于DMA描述符多队列的读取设计",
+            "en": "Design of DMA descriptor multi-queue reading"
+        },
+        {
+            "title": "描述符的环形队列设计",
+            "en": "Design of circular queue for descriptors"
+        },
+        {
+            "title": "描述符的基地址寄存器、头指针寄存器、尾指针寄存器、数量寄存器和使能寄存器",
+            "en": "Base address register, head pointer register, tail pointer register, size register, and enable register for descriptors"
+        },
+        {
+            "title": "DMA描述符多队列技术",
+            "en": "DMA descriptor multi-queue technology"
+        },
+        {
+            "title": "描述符队列的数量和长度的取值",
+            "en": "Values of the number and length of descriptor queues"
+        },
+        {
+            "title": "RAM存储器以18Kbit为一块进行分布",
+            "en": "RAM memory is distributed in blocks of 18Kbit"
+        },
+        {
+            "title": "数据流的分类处理",
+            "en": "Classification processing of data flow"
+        }
+    ],
+    "relations": [
+        {
+            "source": "MAC地址的分段匹配",
+            "target": "CAM容量设计",
+            "type": "包含"
+        },
+        {
+            "source": "CAM容量设计",
+            "target": "基于DMA描述符多队列的读取设计",
+            "type": "包含"
+        },
+        {
+            "source": "基于DMA描述符多队列的读取设计",
+            "target": "描述符的环形队列设计",
+            "type": "包含"
+        },
+        {
+            "source": "描述符的环形队列设计",
+            "target": "描述符的基地址寄存器、头指针寄存器、尾指针寄存器、数量寄存器和使能寄存器",
+            "type": "包含"
+        },
+        {
+            "source": "基于DMA描述符多队列的读取设计",
+            "target": "DMA描述符多队列技术",
+            "type": "包含"
+        },
+        {
+            "source": "DMA描述符多队列技术",
+            "target": "描述符队列的数量和长度的取值",
+            "type": "包含"
+        },
+        {
+            "source": "描述符队列的数量和长度的取值",
+            "target": "RAM存储器以18Kbit为一块进行分布",
+            "type": "包含"
+        },
+        {
+            "source": "RAM存储器以18Kbit为一块进行分布",
+            "target": "描述符队列的数量和长度的取值",
+            "type": "关联"
+        },
+        {
+            "source": "DMA描述符多队列技术",
+            "target": "数据流的分类处理",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "描述符队列", "en": "Descriptor Queue"},
+        {"title": "缓冲区大小", "en": "Buffer Size"},
+        {"title": "接收描述符队列", "en": "Receive Descriptor Queue"},
+        {"title": "应用需求分配", "en": "Application-based Allocation"},
+        {"title": "PCS模块", "en": "PCS Module"},
+        {"title": "MAC地址卸载加速模块", "en": "MAC Address Offload Acceleration Module"},
+        {"title": "PCIEDMA模块", "en": "PCIe DMA Module"},
+        {"title": "TX通道", "en": "TX Channel"},
+        {"title": "RX通道", "en": "RX Channel"},
+        {"title": "64b/66b编码器", "en": "64b/66b Encoder"}
+    ],
+    "relations": [
+        {"source": "描述符队列", "target": "缓冲区大小", "type": "包含关系"},
+        {"source": "描述符队列", "target": "接收描述符队列", "type": "包含关系"},
+        {"source": "缓冲区大小", "target": "应用需求分配", "type": "影响关系"},
+        {"source": "接收描述符队列", "target": "应用需求分配", "type": "影响关系"},
+        {"source": "应用需求分配", "target": "接收描述符队列", "type": "关联关系"},
+        {"source": "PCS模块", "target": "TX通道", "type": "包含关系"},
+        {"source": "PCS模块", "target": "RX通道", "type": "包含关系"},
+        {"source": "TX通道", "target": "64b/66b编码器", "type": "包含关系"},
+        {"source": "64b/66b编码器", "target": "TX通道", "type": "关联关系"},
+        {"source": "MAC地址卸载加速模块", "target": "TX通道", "type": "包含关系"},
+        {"source": "MAC地址卸载加速模块", "target": "RX通道", "type": "包含关系"},
+        {"source": "PCIEDMA模块", "target": "TX通道", "type": "包含关系"},
+        {"source": "PCIEDMA模块", "target": "RX通道", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "64b/66b编码",
+            "en": "64b/66b encoding"
+        },
+        {
+            "title": "扰码器",
+            "en": "Scrambler"
+        },
+        {
+            "title": "TX变速箱",
+            "en": "TX gearbox"
+        },
+        {
+            "title": "RX通道",
+            "en": "RX channel"
+        },
+        {
+            "title": "RX变速箱",
+            "en": "RX gearbox"
+        },
+        {
+            "title": "Sync_Block同步模块",
+            "en": "Sync_Block synchronization module"
+        }
+    ],
+    "relations": [
+        {
+            "source": "64b/66b编码",
+            "target": "扰码器",
+            "type": "包含"
+        },
+        {
+            "source": "64b/66b编码",
+            "target": "TX变速箱",
+            "type": "包含"
+        },
+        {
+            "source": "RX通道",
+            "target": "RX变速箱",
+            "type": "包含"
+        },
+        {
+            "source": "RX变速箱",
+            "target": "Sync_Block同步模块",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "同步头",
+            "en": "Sync Header"
+        },
+        {
+            "title": "解扰器",
+            "en": "Descrambler"
+        },
+        {
+            "title": "64b/66b编码",
+            "en": "64b/66b Encoding"
+        },
+        {
+            "title": "CAM存储器",
+            "en": "CAM Memory"
+        },
+        {
+            "title": "MAC地址卸载加速模块",
+            "en": "MAC Address Unloading Acceleration Module"
+        }
+    ],
+    "relations": [
+        {
+            "source": "同步头",
+            "target": "64b/66b编码",
+            "type": "前置条件"
+        },
+        {
+            "source": "同步头",
+            "target": "解扰器",
+            "type": "数据传输"
+        },
+        {
+            "source": "64b/66b编码",
+            "target": "同步头",
+            "type": "后置条件"
+        },
+        {
+            "source": "MAC地址卸载加速模块",
+            "target": "CAM存储器",
+            "type": "数据存储"
+        },
+        {
+            "source": "解扰器",
+            "target": "64b/66b编码",
+            "type": "前置条件"
+        },
+        {
+            "source": "CAM存储器",
+            "target": "MAC地址卸载加速模块",
+            "type": "数据传输"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "PCIE事务层逻辑设计",
+            "en": "PCIE Transaction Layer Logic Design"
+        },
+        {
+            "title": "PCIE发送引擎设计",
+            "en": "PCIE Sending Engine Design"
+        },
+        {
+            "title": "PCIE接收引擎设计",
+            "en": "PCIE Receiving Engine Design"
+        },
+        {
+            "title": "DMA控制器设计",
+            "en": "DMA Controller Design"
+        },
+        {
+            "title": "描述符相关寄存器设计",
+            "en": "Descriptor Related Register Design"
+        }
+    ],
+    "relations": [
+        {
+            "source": "PCIE事务层逻辑设计",
+            "target": "PCIE发送引擎设计",
+            "type": "包含"
+        },
+        {
+            "source": "PCIE事务层逻辑设计",
+            "target": "PCIE接收引擎设计",
+            "type": "包含"
+        },
+        {
+            "source": "PCIE事务层逻辑设计",
+            "target": "DMA控制器设计",
+            "type": "包含"
+        },
+        {
+            "source": "DMA控制器设计",
+            "target": "描述符相关寄存器设计",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "存储器写请求", "en": "Memory Write Request"},
+        {"title": "PCIE控制器", "en": "PCIE Controller"},
+        {"title": "DMA控制器", "en": "DMA Controller"},
+        {"title": "RX_WR_WAIT", "en": "RX_WR_WAIT"},
+        {"title": "RXRDWAIT", "en": "RXRDWAIT"},
+        {"title": "RXCMPLDATA", "en": "RXCMPLDATA"},
+        {"title": "图4-19PCIE接收引擎模块状态转换图", "en": "Figure 4-19 PCIE Receiver Engine Module State Transition Diagram"},
+        {"title": "RX_READ", "en": "RX_READ"},
+        {"title": "RX_WRITE", "en": "RX_WRITE"},
+        {"title": "RX_CMPL", "en": "RX_CMPL"},
+        {"title": "PCIE控制器设计", "en": "PCIE Controller Design"},
+        {"title": "H2F_WR", "en": "H2F_WR"},
+        {"title": "F2H_RD", "en": "F2H_RD"},
+        {"title": "RECV", "en": "RECV"},
+        {"title": "表4-3PCIE控制器模块状态机描述", "en": "Table 4-3 Description of PCIE Controller Module State Machine"},
+        {"title": "DMA控制器逻辑设计", "en": "DMA Controller Logic Design"},
+        {"title": "图4-21所示", "en": "As shown in Figure 4-21"},
+        {"title": "DMA读写操作模块", "en": "DMA Read-Write Operation Module"},
+        {"title": "数据缓存模块", "en": "Data Cache Module"},
+        {"title": "DMA寄存器模块", "en": "DMA Register Module"},
+        {"title": "中断控制模块", "en": "Interrupt Control Module"},
+        {"title": "图4-22DMA读写操作模块状态转移图", "en": "Figure 4-22 DMA Read-Write Operation Module State Transition Diagram"}
+    ],
+    "relations": [
+        {"source": "存储器写请求", "target": "PCIE控制器", "type": "包含"},
+        {"source": "PCIE控制器", "target": "RX_WR_WAIT", "type": "包含"},
+        {"source": "PCIE控制器", "target": "RXRDWAIT", "type": "包含"},
+        {"source": "PCIE控制器", "target": "RXCMPLDATA", "type": "包含"},
+        {"source": "PCIE控制器", "target": "RX_READ", "type": "包含"},
+        {"source": "PCIE控制器", "target": "RX_WRITE", "type": "包含"},
+        {"source": "PCIE控制器", "target": "RX_CMPL", "type": "包含"},
+        {"source": "PCIE控制器", "target": "PCIE控制器设计", "type": "包含"},
+        {"source": "PCIE控制器设计", "target": "H2F_WR", "type": "包含"},
+        {"source": "PCIE控制器设计", "target": "F2H_RD", "type": "包含"},
+        {"source": "PCIE控制器设计", "target": "RECV", "type": "包含"},
+        {"source": "PCIE控制器设计", "target": "表4-3PCIE控制器模块状态机描述", "type": "包含"},
+        {"source": "DMA控制器", "target": "DMA读写操作模块", "type": "包含"},
+        {"source": "DMA控制器", "target": "数据缓存模块", "type": "包含"},
+        {"source": "DMA控制器", "target": "DMA寄存器模块", "type": "包含"},
+        {"source": "DMA控制器", "target": "中断控制模块", "type": "包含"},
+        {"source": "DMA读写操作模块", "target": "图4-22DMA读写操作模块状态转移图", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "DMA读操作流程",
+            "en": "DMA read operation process"
+        },
+        {
+            "title": "DMA写操作流程",
+            "en": "DMA write operation process"
+        },
+        {
+            "title": "PCIEIP核",
+            "en": "PCIE IP core"
+        },
+        {
+            "title": "BAR0空间",
+            "en": "BAR0 space"
+        },
+        {
+            "title": "DMA寄存器逻辑设计",
+            "en": "DMA register logic design"
+        }
+    ],
+    "relations": [
+        {
+            "source": "DMA读操作流程",
+            "target": "DMA写操作流程",
+            "type": "related"
+        },
+        {
+            "source": "DMA读操作流程",
+            "target": "PCIEIP核",
+            "type": "related"
+        },
+        {
+            "source": "DMA写操作流程",
+            "target": "PCIEIP核",
+            "type": "related"
+        },
+        {
+            "source": "PCIEIP核",
+            "target": "DMA寄存器逻辑设计",
+            "type": "related"
+        },
+        {
+            "source": "BAR0空间",
+            "target": "DMA寄存器逻辑设计",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "中断控制逻辑设计", "en": "Interrupt Control Logic Design"},
+        {"title": "中断控制模块端口定义", "en": "Interrupt Control Module Port Definition"},
+        {"title": "中断控制模块状态机", "en": "Interrupt Control Module State Machine"},
+        {"title": "本章小结", "en": "Summary of this Chapter"},
+        {"title": "系统测试与验证", "en": "System Testing and Verification"},
+        {"title": "仿真测试环境搭建", "en": "Simulation Test Environment Setup"}
+    ],
+    "relations": [
+        {"source": "中断控制模块", "target": "DMA写操作模块", "type": "连接"},
+        {"source": "中断控制模块", "target": "PCIEIP核", "type": "连接"},
+        {"source": "DMA写操作模块", "target": "PCIEIP核", "type": "连接"},
+        {"source": "中断控制模块", "target": "pcie_int_out_l〜3", "type": "连接"},
+        {"source": "中断控制模块", "target": "pcie_int_rdy_l〜3", "type": "连接"},
+        {"source": "中断控制模块", "target": "int_free", "type": "连接"},
+        {"source": "PCIEIP核", "target": "MSI中断机制", "type": "连接"},
+        {"source": "中断控制模块", "target": "状态机", "type": "包含"},
+        {"source": "状态机", "target": "INT_IDLE", "type": "状态"},
+        {"source": "状态机", "target": "INT_SEND", "type": "状态"},
+        {"source": "状态机", "target": "INT_WAIT", "type": "状态"},
+        {"source": "状态机", "target": "INT_BUSY", "type": "状态"},
+        {"source": "PCS模块", "target": "64b/66b编解码器", "type": "设计实现"},
+        {"source": "PCS模块", "target": "加解扰器", "type": "设计实现"},
+        {"source": "PCS模块", "target": "TX/RX变速箱", "type": "设计实现"},
+        {"source": "PCS模块", "target": "Sync_Block模块", "type": "设计实现"},
+        {"source": "Sync_Block模块", "target": "滑动机制", "type": "采用"},
+        {"source": "MAC地址卸载加速模块", "target": "CAM存储器", "type": "基于"},
+        {"source": "MAC地址卸载加速模块", "target": "解析模块", "type": "设计实现"},
+        {"source": "MAC地址卸载加速模块", "target": "配置模块", "type": "设计实现"},
+        {"source": "MAC地址卸载加速模块", "target": "匹配查找模块", "type": "设计实现"},
+        {"source": "MAC地址卸载加速模块", "target": "动作模块", "type": "设计实现"},
+        {"source": "PCIEDMA模块", "target": "PCIE总线", "type": "基于"},
+        {"source": "PCIEDMA模块", "target": "PCIE逻辑事务层", "type": "整体设计"},
+        {"source": "PCIEDMA模块", "target": "DMA控制器", "type": "整体设计"},
+        {"source": "PCIEDMA模块", "target": "描述符", "type": "工作方式"},
+        {"source": "系统测试与验证", "target": "时序功能测试", "type": "进行"},
+        {"source": "PCS模块", "target": "功能仿真", "type": "完成"},
+        {"source": "MAC地址卸载加速模块", "target": "功能仿真", "type": "完成"},
+        {"source": "PCIEDMA模块", "target": "功能仿真", "type": "完成"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "电路设计导入Modelsim仿真工具", "en": "Importing circuit design into Modelsim simulation tool"},
+        {"title": "PCS模块功能仿真测试", "en": "Functional simulation testing of PCS module"},
+        {"title": "TX通道和RX通道", "en": "TX channel and RX channel"},
+        {"title": "64b/66b编码器", "en": "64b/66b encoder"},
+        {"title": "扰码器", "en": "Scrambler"},
+        {"title": "TX变速箱", "en": "TX gearbox"},
+        {"title": "RX变速箱", "en": "RX gearbox"},
+        {"title": "Sync_Block同步模块", "en": "Sync_Block synchronization module"},
+        {"title": "解扰器", "en": "Descrambler"},
+        {"title": "64b/66b解码器", "en": "64b/66b decoder"},
+        {"title": "同步头锁定功能", "en": "Sync header lock function"},
+        {"title": "MAC地址卸载加速模块仿真测试", "en": "Simulation testing of MAC address offloading acceleration module"},
+        {"title": "解析模块", "en": "Parsing module"},
+        {"title": "配置模块", "en": "Configuration module"},
+        {"title": "匹配查找模块", "en": "Matching and searching module"},
+        {"title": "动作模块", "en": "Action module"}
+    ],
+    "relations": [
+        {"source": "电路设计导入Modelsim仿真工具", "target": "PCS模块功能仿真测试", "type": "包含"},
+        {"source": "PCS模块功能仿真测试", "target": "TX通道和RX通道", "type": "包含"},
+        {"source": "TX通道和RX通道", "target": "64b/66b编码器", "type": "包含"},
+        {"source": "TX通道和RX通道", "target": "扰码器", "type": "包含"},
+        {"source": "TX通道和RX通道", "target": "TX变速箱", "type": "包含"},
+        {"source": "TX通道和RX通道", "target": "RX变速箱", "type": "包含"},
+        {"source": "TX通道和RX通道", "target": "Sync_Block同步模块", "type": "包含"},
+        {"source": "TX通道和RX通道", "target": "解扰器", "type": "包含"},
+        {"source": "TX通道和RX通道", "target": "64b/66b解码器", "type": "包含"},
+        {"source": "Sync_Block同步模块", "target": "同步头锁定功能", "type": "包含"},
+        {"source": "MAC地址卸载加速模块仿真测试", "target": "解析模块", "type": "包含"},
+        {"source": "MAC地址卸载加速模块仿真测试", "target": "配置模块", "type": "包含"},
+        {"source": "MAC地址卸载加速模块仿真测试", "target": "匹配查找模块", "type": "包含"},
+        {"source": "MAC地址卸载加速模块仿真测试", "target": "动作模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "整体功能仿真测试",
+            "en": "Overall functional simulation test"
+        },
+        {
+            "title": "匹配查找模块仿真测试",
+            "en": "Simulation test of matching and searching module"
+        },
+        {
+            "title": "PCIEDMA模块仿真测试",
+            "en": "Simulation test of PCIEDMA module"
+        },
+        {
+            "title": "PCIE事务层仿真测试",
+            "en": "Simulation test of PCIE transaction layer"
+        },
+        {
+            "title": "DMA寄存器仿真测试",
+            "en": "Simulation test of DMA registers"
+        },
+        {
+            "title": "DMA读操作仿真测试",
+            "en": "Simulation test of DMA read operation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "整体功能仿真测试",
+            "target": "匹配查找模块仿真测试",
+            "type": "包含"
+        },
+        {
+            "source": "匹配查找模块仿真测试",
+            "target": "整体功能仿真测试",
+            "type": "被包含于"
+        },
+        {
+            "source": "PCIEDMA模块仿真测试",
+            "target": "PCIE事务层仿真测试",
+            "type": "包含"
+        },
+        {
+            "source": "PCIE事务层仿真测试",
+            "target": "DMA寄存器仿真测试",
+            "type": "包含"
+        },
+        {
+            "source": "PCIE事务层仿真测试",
+            "target": "DMA读操作仿真测试",
+            "type": "包含"
+        },
+        {
+            "source": "DMA寄存器仿真测试",
+            "target": "PCIE事务层仿真测试",
+            "type": "被包含于"
+        },
+        {
+            "source": "DMA读操作仿真测试",
+            "target": "PCIE事务层仿真测试",
+            "type": "被包含于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "64b/66b编码", "en": "64b/66b encoding"},
+        {"title": "PCS模块", "en": "PCS module"},
+        {"title": "MAC地址卸载加速模块", "en": "MAC address offloading acceleration module"},
+        {"title": "PCIE接口", "en": "PCIE interface"},
+        {"title": "CAM存储器", "en": "CAM memory"},
+        {"title": "描述符", "en": "Descriptor"}
+    ],
+    "relations": [
+        {"source": "PCS模块", "target": "64b/66b编码", "type": "包含"},
+        {"source": "PCS模块", "target": "MAC地址卸载加速模块", "type": "连接"},
+        {"source": "MAC地址卸载加速模块", "target": "CAM存储器", "type": "使用"},
+        {"source": "PCIE接口", "target": "描述符", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高速智能网卡", "en": "High-speed intelligent network card"},
+        {"title": "PCS模块", "en": "PCS module"},
+        {"title": "MAC地址卸载加速模块", "en": "MAC address offload acceleration module"},
+        {"title": "PCIEDMA模块", "en": "PCIe DMA module"},
+        {"title": "回环测试法", "en": "Loopback test method"},
+        {"title": "Vivado", "en": "Vivado"},
+        {"title": "Modelsim", "en": "ModelSim"},
+        {"title": "128b/130b编码方式", "en": "128b/130b encoding method"},
+        {"title": "8b/10b编码方式", "en": "8b/10b encoding method"},
+        {"title": "IP核", "en": "IP core"},
+        {"title": "根复合体", "en": "Root complex"},
+        {"title": "第三方权威认证", "en": "Third-party authoritative certification"}
+    ],
+    "relations": [
+        {"source": "高速智能网卡", "target": "PCS模块", "type": "包含"},
+        {"source": "高速智能网卡", "target": "MAC地址卸载加速模块", "type": "包含"},
+        {"source": "高速智能网卡", "target": "PCIEDMA模块", "type": "包含"},
+        {"source": "PCS模块", "target": "128b/130b编码方式", "type": "使用"},
+        {"source": "PCS模块", "target": "8b/10b编码方式", "type": "使用"},
+        {"source": "PCIEDMA模块", "target": "根复合体", "type": "连接"},
+        {"source": "IP核", "target": "高速智能网卡", "type": "提供数据激励源"},
+        {"source": "根复合体", "target": "高速智能网卡", "type": "验证数据"},
+        {"source": "回环测试法", "target": "测试平台", "type": "使用"},
+        {"source": "Vivado", "target": "测试平台", "type": "使用"},
+        {"source": "Modelsim", "target": "测试平台", "type": "使用"},
+        {"source": "第三方权威认证", "target": "仿真测试环境", "type": "认证"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "Microsoft TCP/IP offload overview", "en": ""},
+        {"title": "Introduction to receive side scaling", "en": ""},
+        {"title": "Network virtualization using generic routing encapsulation (NVGRE) task offload", "en": ""},
+        {"title": "Alveo SN1000 SmartNIC Accelerator Card", "en": ""},
+        {"title": "Alveo U50 Data-Center Accelerator Card", "en": ""},
+        {"title": "The 802.3z Gigabit Ethernet Standard", "en": ""},
+        {"title": "IEEE Std 802.3ae-2002 Edition", "en": ""},
+        {"title": "Error correction on 64/66 bit encoded links", "en": ""},
+        {"title": "多协议高速串口芯片的PCS层设计和实现", "en": "Design and Implementation of PCS Layer for Multi-Protocol High-Speed Serial Chip"},
+        {"title": "10G背板以太网物理编码子层的设计与验证", "en": "Design and Verification of Physical Coding Sublayer for 10G Backplane Ethernet"},
+        {"title": "Implementation techniques for IEEE 802.3ba 40Gbps Ethernet Physical Coding Sublayer (PCS)", "en": ""},
+        {"title": "0.18 pin CMOS transmit physical coding sublayer IC for 100G Ethernet", "en": ""},
+        {"title": "FPGA Development of an Emulator Framework and a High-Speed I/O Core for the ITk Pixel Upgrade", "en": ""},
+        {"title": "DC-Balanced Perfect Classified Channel for Hiding Framing Signals", "en": ""},
+        {"title": "100Gbps以太网PCS子层模块设计与验证", "en": "Design and Verification of 100Gbps Ethernet PCS Sublayer Module"}
+    ],
+    "relations": [
+        {"source": "Microsoft TCP/IP offload overview", "target": "Introduction to receive side scaling", "type": "related"},
+        {"source": "Microsoft TCP/IP offload overview", "target": "Network virtualization using generic routing encapsulation (NVGRE) task offload", "type": "related"},
+        {"source": "Alveo SN1000 SmartNIC Accelerator Card", "target": "Alveo U50 Data-Center Accelerator Card", "type": "related"},
+        {"source": "The 802.3z Gigabit Ethernet Standard", "target": "IEEE Std 802.3ae-2002 Edition", "type": "related"},
+        {"source": "Error correction on 64/66 bit encoded links", "target": "Implementation techniques for IEEE 802.3ba 40Gbps Ethernet Physical Coding Sublayer (PCS)", "type": "related"},
+        {"source": "多协议高速串口芯片的PCS层设计和实现", "target": "10G背板以太网物理编码子层的设计与验证", "type": "related"},
+        {"source": "Implementation techniques for IEEE 802.3ba 40Gbps Ethernet Physical Coding Sublayer (PCS)", "target": "0.18 pin CMOS transmit physical coding sublayer IC for 100G Ethernet", "type": "related"},
+        {"source": "FPGA Development of an Emulator Framework and a High-Speed I/O Core for the ITk Pixel Upgrade", "target": "DC-Balanced Perfect Classified Channel for Hiding Framing Signals", "type": "related"},
+        {"source": "100Gbps以太网PCS子层模块设计与验证", "target": "多协议高速串口芯片的PCS层设计和实现", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "UDP/IP Offload Engine IP Core with PCIe Interface", "en": ""},
+        {"title": "Hardware-based Low Latency TCP Offload Engine for 10Gbps Ethernet", "en": ""},
+        {"title": "Hardware-Accelerated Platforms and Infrastructures for Network Functions: A Survey of Enabling Technologies and Research Studies", "en": ""},
+        {"title": "ClickNP: Highly Flexible and High-Performance Network Processing with Reconfigurable Hardware", "en": ""},
+        {"title": "Forwarding Metamorphosis: Fast Programmable Match-Action Processing in Hardware for SDN", "en": ""},
+        {"title": "We Need to Talk About NICs", "en": ""},
+        {"title": "PCI Express 4.0 Base Specification 1.0", "en": ""},
+        {"title": "7 Series FPGAs Integrated Block for PCI Express v3.3", "en": ""},
+        {"title": "A PCIe DMA Engine to Support the Virtualization of 40Gbps FPGA-Accelerated Network Appliances", "en": ""},
+        {"title": "Design of PCIe-DMA Bridge Interface for High-Speed Ethernet Applications", "en": ""},
+        {"title": "Area and Performance Evaluation of Central DMA Controller in Xilinx Embedded FPGA Designs", "en": ""},
+        {"title": "A PCIe DMA Architecture for Multi-Gigabyte Per Second Data Transmission", "en": ""}
+    ],
+    "relations": [
+        {"source": "UDP/IP Offload Engine IP Core with PCIe Interface", "target": "PCI Express 4.0 Base Specification 1.0", "type": "基于"},
+        {"source": "Hardware-based Low Latency TCP Offload Engine for 10Gbps Ethernet", "target": "PCI Express 4.0 Base Specification 1.0", "type": "基于"},
+        {"source": "Hardware-Accelerated Platforms and Infrastructures for Network Functions: A Survey of Enabling Technologies and Research Studies", "target": "PCI Express 4.0 Base Specification 1.0", "type": "基于"},
+        {"source": "ClickNP: Highly Flexible and High-Performance Network Processing with Reconfigurable Hardware", "target": "7 Series FPGAs Integrated Block for PCI Express v3.3", "type": "基于"},
+        {"source": "Forwarding Metamorphosis: Fast Programmable Match-Action Processing in Hardware for SDN", "target": "Special Interest Group on Data Communication", "type": "所属会议"},
+        {"source": "We Need to Talk About NICs", "target": "Workshop on Hot Topics in Operating Systems", "type": "所属会议"},
+        {"source": "A PCIe DMA Engine to Support the Virtualization of 40Gbps FPGA-Accelerated Network Appliances", "target": "International Conference on ReConFigurable Computing and FPGAs", "type": "所属会议"},
+        {"source": "Design of PCIe-DMA Bridge Interface for High-Speed Ethernet Applications", "target": "International Conference on Advanced Computational and Communication Paradigms", "type": "所属会议"},
+        {"source": "Area and Performance Evaluation of Central DMA Controller in Xilinx Embedded FPGA Designs", "target": "Iranian Conference on Electrical Engineering", "type": "所属会议"},
+        {"source": "A PCIe DMA Architecture for Multi-Gigabyte Per Second Data Transmission", "target": "IEEE Transactions on Nuclear Science", "type": "所属期刊"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "164b/66b编码规则", "en": "164b/66b encoding rules"},
+        {"title": "参考文献[26]", "en": "Reference [26]"},
+        {"title": "控制字符", "en": "Control characters"},
+        {"title": "XGMII控制码", "en": "XGMII control code"},
+        {"title": "OG-BASE-R", "en": "OG-BASE-R"},
+        {"title": "KKJBASE-R", "en": "KKJBASE-R"},
+        {"title": "SB/10B编码", "en": "SB/10B encoding"},
+        {"title": "8B/10B编码", "en": "8B/10B encoding"},
+        {"title": "空闲", "en": "Idle"},
+        {"title": "K28.0", "en": "K28.0"},
+        {"title": "K28.3", "en": "K28.3"},
+        {"title": "K28.5", "en": "K28.5"},
+        {"title": "起始", "en": "Start"},
+        {"title": "K27.7", "en": "K27.7"},
+        {"title": "终止", "en": "Terminate"},
+        {"title": "K29.7", "en": "K29.7"},
+        {"title": "编码块类型字段", "en": "Encoded block type field"},
+        {"title": "K27.0", "en": "K27.0"},
+        {"title": "序列顺序标记", "en": "Sequence order mark"},
+        {"title": "K28.4", "en": "K28.4"},
+        {"title": "保留", "en": "Reserved"},
+        {"title": "K28.6", "en": "K28.6"},
+        {"title": "OK7H", "en": "OK7H"},
+        {"title": "信号接收序列", "en": "Signal received sequence"},
+        {"title": "参考文献[49]", "en": "Reference [49]"},
+        {"title": "PCI Express", "en": "PCI Express"},
+        {"title": "用户逻辑", "en": "User logic"},
+        {"title": "时钟和复位", "en": "Clock and reset"},
+        {"title": "系列PCIE IP核结构框图", "en": "Series PCIE IP core structure diagram"}
+    ],
+    "relations": [
+        {"source": "164b/66b编码规则", "target": "参考文献[26]", "type": "引用"},
+        {"source": "控制字符", "target": "XGMII控制码", "type": "包含"},
+        {"source": "控制字符", "target": "OG-BASE-R", "type": "包含"},
+        {"source": "控制字符", "target": "KKJBASE-R", "type": "包含"},
+        {"source": "控制字符", "target": "编码块类型字段", "type": "包含"},
+        {"source": "控制字符", "target": "序列顺序标记", "type": "包含"},
+        {"source": "PCI Express", "target": "用户逻辑", "type": "包含"},
+        {"source": "PCI Express", "target": "时钟和复位", "type": "包含"},
+        {"source": "PCI Express", "target": "系列PCIE IP核结构框图", "type": "包含"}
+    ]
+}

@@ -1,0 +1,17 @@
+摘要
+认知无线电技术是解决当前频谱资源紧张和利用率低下的有效 方法，频谱感知作为认知无线电的核心技术，能够感知周围环境的频 谱使用状况，为次级用户的通信需求寻找频谱空洞。本文研究和实现 了基于FPGA SOC架构的频谱感知软件无线电平台，提出了一种应用 于600MHz~3.0GHz宽带场景的全盲频谱感知能量检测算法，对算法 进行理论分析与仿真验证，并应用于本文研究实现的频谱感知系统中, 获得了很好的效果。
+本文的主要工作和创新点如下：
+1.提岀一种基于迭代运算的宽带频谱感知能量检测算法，算法在 先验信息全盲的前提下以较优的性能实现对整个2.4GHz带宽信号的 能量检测与判决，仿真显示当信噪比大于-1时，错判率稳定于IO,以 下。算法的性能在本文研究实现的系统中得以验证。
+2.设计和实现基于FPGA SOC架构的频谱感知软件无线电平台， 包括基于AD-FMCOMMS1射频板的射频驱动与控制子系统、RTL级基 带信号处理子系统、基于Microblaze的SOC控制系统、基于Linux C++ 的控制及数据通信子系统和基于MA1ALB的宽带能量检测与展示子系 统。
+3.系统采用多次扫频、频谱拼接的方法完成600MHz~3.0GHz范围 内频谱信号的感知，整体性能取得重大突破。射频前端ADC采样率 达到163.84Msps,基带信号处理单元稳定运行于200MHz时钟，单次 频谱感知带宽达到60MHz,具有10kHz超细腻的频谱分辨率，且每个 频带的能量均为128次连续感知的均值。经实际验证，系统可完成每 秒10次以上2.4GHz频带信号的频谱感知，并将感知与能量检测结果 实时显示于前端。
+关键词：宽带频谱感知能量检测软件无线电FPGA SOC
+RESEARCH AND IMPLEMENTATION OF
+SPECTRM SENSING SYSTEM BASED ON
+FPGA-BASED SOFTWARE RADIO PLATFORM
+ABSTRACT
+Cognitive radio technology is an effective way to solve the current spectrum problem of resource constraints and underutilized situation. As a core technology of cognitive radio, the spectrum sensing can sense the surrounding spectrum environment to look for spectrum holes for the communications needs of users. These paper studied and implemented a spectrum sensing software radio platfonn system based on FPGA and AD-FMCOMMS1 RF board, proposed a blind spectrum sensing energy detection algorithm for broadband scene of 600MHz〜3.0GHz, and did the algorithm theoretical analysis and simulation. The algorithm is applied in the spectrum sensing system and get good performance.
+The main work and innovation of this paper is as follows:
+1.This paper proposed a broadband spectrum sensing energy detection algorithm based on iteration, the algorithm can achieve the energy detection and judgment of the entire 2.4GHz bandwidth signal with optimum perfomance. The simulation results show that when the SNR is greater than -1, the misjudged rate is steady at 0.1 or less.
+2.This paper designed and implementated a spectrum sensing software radio platform system based on SOC system, including the RF drive and control subsystem based on AD-FMCOMMS 1, RTL-level baseband signal processing subsystem, the control system of SOC based on the Microblaze, the control and data transmission subsystem based on Linux C++, and the subsystem of achieving broadband energy detection and final display based on MATLAB.
+3.The system used the method of multiple sweep and spectrum stitching to complete the spectrum sensing fbr signal in the frequency range of 600MHz 〜3.0GHz, achieving a major breakthrough in the overall performance. The ADC sampling rate in RF front-end is 163.84Msps, the baseband signal processing unit is running stably at 200MHz clock, once single spectrum sensing has a bandwidth of 60MHz, with an ultra-fine spectral resolution 10kHz. After the actual verification, the system can complete more than 10 times spectrum sensing per second for the 2.4GHz band frequency signal, and display the results of spectrum sensing and energy detection in real time on the front end.
+KEY WORDS: Broadband Spectrum Sensing; Energy Detection; Software Defined Radio; FPGA; SOC

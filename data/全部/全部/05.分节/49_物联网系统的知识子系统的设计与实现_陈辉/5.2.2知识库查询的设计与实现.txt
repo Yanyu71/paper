@@ -1,0 +1,43 @@
+5.2.2知识库查询的设计与实现
+知识库的管理功能另--功能就是SPARQL查询，已冇的本体模型存储在知识库中， 需要实现查询接口以方便使用知识库的知识。本系统利用Jena语义框架的SPARQL查 询引擎ARQ来实现这一功能，实现类图如图5-9所示：
+图5-9 SPARQL查询支持类图
+SPARQL査询语句首先需要转化生成为Query对象，然后调用静态工厂类 QueryExecutionFactory 的 create 接 口获得 QueryExecution 对象,调用此对象的 exexSelect() 接口可以得用结果集对象ResultSet,具体涉及到的类有：SparqlQuery类、SystemState 类，DatasetFactory类。表5-9对上述的这些类和对应的实现功能作了简要介绍：
+表5-9知识库SPARQL查询主要涉及类
+类/接口	功能描述
+SparqlQuery	Sparql査询主类，提供査询Jena Model和Jena Dataset静态的 接口，返回 ResultSeto
+SystemState	初始化类，加载数据集利维护系统状态
+ResultSet	SPARQL査询结果集对象。
+Dataset	Dataset数据集类
+Model	本体表示接口类。
+DatasetFactory	知识库管理主类，默认是resource目录下的每个子目录是一个 数据集。同时根据输入的名字生成、删除、办公数据集，利用 Map进行名字和数据集之间的映射。
+表 5-10 SparqlQuery 类 queryModel 方法
+方法	protected ResultSet queryModel(String queryString, Model model)
+描还	响应传入的SPARQL査询请求和提供的Jena Model对象获取结果集对象， 结果集可提供迭代器遍历三元组结果。
+参数	@Param queryString SPARQL 查询语句
+@Param model Jena Model对象,Jena内部对本体的表示接口
+返冋	ResultSet结果集
+表 5-11 SparqlQuery 类 queryModel 方 法
+方法	protected ResultSet queryModel(String queryString, Dataset model)
+描述	响应传入的SPARQL査询请求利提供的数据集对象获取结果集，结果集可 提供迭代器遍历三元组结果。
+参数	@Param queryString SPARQL 查询语句
+@Param dataset数据集对象
+返冋	ResultSet结果集
+SPARQL查询核心算法如表5-12所示:
+表5-12 SPARQL查询部分核心算法
+标题	SPARQL部分核心算法
+输入	String sparql String
+输出	ResultSet
+1: Dataset dataset = getDatasetByNaine(datasetNaine);
+2: if not dataset
+3: return null ; //如果对应的数据集不存在则返回空
+4: begin
+5:	dataset.begin(ReadWrite.READ); // 写事务开始
+//根据查询语句和选定数据集生成査询对象
+6: QueryExecution qExc =
+QueryExecutionFactory.createa(sparqlString, dataset);
+7: ResultSet resultSet = qExc.execSlect();
+8:		;//结果过滤
+9：	......；
+10: return resultSet;
+11: dataset.end();// 写爭务结朿
+12:end

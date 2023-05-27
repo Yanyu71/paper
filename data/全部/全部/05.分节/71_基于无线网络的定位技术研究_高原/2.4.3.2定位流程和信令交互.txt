@@ -1,0 +1,8 @@
+2.4.3.2定位流程和信令交互
+下行定位流程主要分为三个阶段：能力传输过程，辅助数据传输过程和位置 信息传输过程。对应于2.4.2.5小节中一般网络定位流程中的步骤7）,其他步骤 和一般流程中的相同。主要涉及eNB. UE和E-SMLC 0
+首先是能力传输过程。这里的能力指的是UE或者E-SMLC能够支持的不同 定位模式，某个特定定位模式的不同方面或者共同特性（如处理LPP会话）。这 些能力定义在LPP协议中，用LPP协议在UE和E-SMLC之间传输。能力传输 可以由请求发起，称为LPP能力传输过程，也可以主动发出，称为LPP能力指 示过程。在LPP能力传输过程中，首先E-SMLC发送UELPP相关能力请求，
+25
+然后UE传输LPP相关能力给E-SMLCOLPP能力指示过程中UE无请示地向E-SMLC传输能力。
+其次是辅助数据传输过程。辅助数据传输过程分为E-SMLC和UE间的辅助 数据传输，E-SMLC和eNB间的辅助数据传输。E-SMLC和UE之间的辅助数据 传输又可以分为UE发起的和E-SMLC发起的。由E-SMLC向UE传输的辅助数 据包括：测量候选TP的PCI （Physical Cell ID,物理层小区ID）, GCI （Global Cell ID,全球小区ID）和TPID；服务（参考TP）和候选TP的相对定时；候选 TP的PRS配置。E-SMLC和eNB之间的辅助数据传输由E-SMLC发起。E-SMLC 决定是否需要某种辅助数据，然后发送LPPa请求报文给eNB, eNB在响应报文 中提供请求的辅助数据。由eNB向E-SMLC传输的辅助数据有:该eNB的PCI, GCI,所含TP的TPID；所含TP的定时信息，PRS配置，物理坐标等。但是该 辅助信息传输不是必须的，例如可以通过OA&M （Operations. Administration, and Maintenance,运营管理和维护）系统获得。
+最后是位置信息传输过程。UE需要向E-SMLC传输位置信息，可以包含 PCI, GCL TPID和下行定时测量。位置信息传输过程分为E-SMLC发起的位置 信息传输和UE发起的位置信息传输。在E-SMLC发起的位置信息传输过程中， E-SMLC发送LPP请求位置信息报文给UE； UE得到请求的下行测量量后，在 响应时间未到之前，返回LPP提供位置信息报文给E-SMLC,附上得到的下行测 量量。在UE发起的位置信息传输过程中，UE发送一个LPP提供位置信息报文 给E-SMLC,可以包含UE已经取得的任何下行测量量。
+如标准中所规定的卬］,UE是通过LPP中的IE （InformationElements,信息 元素）OTDOA-ProvideLocationlnfbrmation 提供位置信息给 E-SMLC,它可以被 用来提供相关错误原因。其中主要包含IE OTDOA-SignalMeasurementlnformation, 用来向E-SMLC提供RSTD测量。RSTD测量涉及的相邻小区和参考小区，都是 根据IE OTDOA-ProvideAssistanceData中提供的，参考小区可以是也可以不是辅 助数据中提供的参考小区。在IE OTDOA-SignalMeasurementlnformation中包含 域：系统帧号，指示参考小区的PRS定位机会的启始帧号；参考小区CID；参考 小区GCI；参考质量；参考TPID；参考PRS ID；参考附加径，指示检测到的 RSTD参考小区多径时间；邻小区测量列表等。其中，邻小区测量列表由多个邻 居测量元素组成，它包含域：邻小区CID； RSTD； RSTD质量；邻居TPID；邻 居PRSID； RSTD差值，用作高精度RSTD指示和邻居附加径等。

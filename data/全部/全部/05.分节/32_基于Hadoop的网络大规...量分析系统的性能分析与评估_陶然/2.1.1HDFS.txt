@@ -1,0 +1,6 @@
+2.1.1HDFS
+HDFS ( Hadoop Distributed File System),是 Hadoop 的最底层组件，用于存 储Hadoop集群中所有存储节点的文件。对于Hadoop的普通用户而言，HDFS 较常见的传统分级文件系统而言，在使用过程中区别不大，因为HDFS提供了标 准的文件操作接口，这与传统的Unix文件接口类似。HDFS系统由一系列的功 能节点组成，釆用主从(Master/Slave)结构模型，在Hadoop2版本，一个HDFS 集群是由若干个Namenode和若干个DataNode组成的。HDFS内部的所有通信 均基于标准的TCP/IP协议。HDFS的架构㈣如图2-1所示：
+NameNode
+图2-1 HDFS基本架构图
+Namenode作为主服务器，其主要任务为管理文件系统的命名空间以及客户 端对文件的访问操作，通常运行在HDFS实例中的单独一个节点上。当外部客户 机发送请求以要求创建文件时，NameNode会以块标识和该块的第一个副本的 DataNode的IP地址作为响应。同时NameNode还会通知其他将要接收该块的副 本的DataNodeo Namenode仅仅是所有HDFS中元数据的管理者，用户的所有数 据均不会经过Namenodeo NameNode在管理整个HDFS文件系统时，主要借助 于两个文件：“Fslmage”文件用于存储所有关于文件系统名称空间的信息； “EditLog”用于存储所有事务的记录文件。这两个文件均存储于NameNode所 在服务器的本地文件系统中。相对于Hadoopl的单NameNode机制，Hadoop2通 过多个NameNode的机制改进，已解决Namenode的单点故障问题。
+DataNode作为从服务器，主要负责存储数据和检索数据块。除了响应来自 HDFS客户机的读写请求之外，它们还响应来自NameNode的创建、复制和删除 数据块的命令。每个DataNode负责维护该节点上所存储的所有数据块信息，并 且通过定期的心跳报文向NameNode报告本地的数据块信息。存储在HDFS中 的文件被分成若干数据块，然后将这些数据块复制到多个DataNode。数据块的 大小（默认值为64MB）和数据块的备份数（默认值为3份）在创建文件时由用 户根据自己的具体需求进行设定。

@@ -1,0 +1,12 @@
+3.3.1MBS的小区负载分布
+令p0(w)表示个MU同时被一个MBS服务的概率。由于MU与最近的MBS 相关联，宏蜂窝网络的网络拓扑结构为泊松voronoi多边形图(Poisson voronoi tessellation, PVT)。PVT 中 BS 小区尺寸的概率密度函数(Probability density function, pdf)可近似拟合为Gamma分布卩4,15］：
+m0个MU处于一个MBS的小区范围内的概率为MM］：
+由于MBS的接入容量为气，因此MBS的最大小区负载为气。一个MBS处于满
+载状态，即m0 = M0,等效于事件：超过气个MU位于该MBS的小区范围内但只
+有肱0个MU被该MBS服务。因此，m0<M0的宏小区负载分布可表示如公式(3-3),
+而MBS满载的概率为：
+枷。)=/￡。竺芸竺心心
+(3-4)
+其中(a)由文献[18]中的公式(6.455-2)得到。如果MBS的接入容量足够大，能提供 归0—1
+所有MU的基本覆盖，即当MqXq ?4时，则E Po(mo)急1。
+mo=0

@@ -1,0 +1,43 @@
+6.2未来工作展望
+本文对于高速智能网卡的关键部分的设计实现了其基本功能，相比于产业界关 于智能网卡成熟的解决方案还存在不足之处，但可以看到的是，本文对于国内关于 智能网卡的研究实现具有一定的指导意义。在完成高速智能网卡的基本功能后，对 于PCS模块，随着网络带宽的升级，现已迎来1 OOGbE时代，随着编码方式的改变 其PCS模块的实现也发生了改变，本文在这一部分缺少可扩展性，之后应补充更高 效编码方式128b/130b,同时向后兼容8b/10b编码方式。对于MAC层，在其中设计 了一种MAC地址的匹配查找方式，但尚未进行仿真测试，之后会完善这部分的仿真 工作。在PCIE总线接口部分中，采用基于描述符的DMA方式完成了数据在网卡与 内存中的快速搬移，实现了微秒级的转发时延，但整体性能与最高性能指标还有一 定的差距，之后会对代码进行优化。在对仿真测试环境的搭建中，本文采用lOGBase- R的IP核作为数据激励源，PCIE核作为根复合体来验证数据，本文设计的网卡作为 中间被测部分，具体测试流程为：数据激励源产生数据，经过网卡，发送到根复合体 做验证，这种仿真测试环境缺少第三方的权威认证，在后期应补充对本文仿真测试 环境的认证。
+68
+参考文献
+[1] Singh, J. Ong, A. Agarwal, G. Anderson, A. Armistead,R. Bannon, S. Boving, G. Desai, B. Felderman, P. Germano,A. Kanagala, J. Provost, J. Simmons, E. Tanda, J. Wanderer,U. Holzle, S. Stuart, and A. Vahdat. Jupiter rising: A decade of "Clos topologies and centralized control in Googles datacentemetwork. In ACM Conference on SIGCOMM, 2015.
+[2] FPGA 技术在沪深行情加速 的应用[EB/OL].https://www.sohu.eom/a/318623270 _1000061005Year=2019.
+[3] Li Xiaoyao, Wang Xiuxiu, Liu Fangming, et al. DHL: Enabling flexible software network functions with FPGA acceleration[C]//Proc of the 38th Int Conf on Distributed Computing Systems. Piscataway, NJ: IEEE： 2018.
+[4] Ma Xiaoxiao, Lu Gang, Fu Binzhang, et al. Implementation method and performance analysis of non-contiguous data communication in network[J].Chinese Journal of Computers, 2020, 43(6): 1123-1138 (in Chinese).
+[5] Li Bojie,Ruan Zhenyuan, Xiao Wencong, et al.KV-Direct:High-perfoiTnance inmemory key・value store with programmable NIC[C]//Proc of the 26th Symp on Operating Systems Principles. New York: ACM,2017:137-152.
+[6] Tokusashi Y? Matsutani H? Zilberman N・ LaKe: The power of in-network computing [C] //Proc of the Int Conf on ReConFigurable Computing and FPGAs. Piscataway, NJ: IEEE? 2018.
+[7] Tokusashi Y, Dang T, Pedone F, et al. The case for in-network computing on demand [C] //Proc of the 14th EuroSys Conf. New York: ACM, 2019.
+[8] Kaufinann A , Peter S ? Sharma N K , et al. High Performance Packet Processing with FlexNIC[J]. Computer Architecture News, 2016, 44(2):67-81.
+[9] 马潇潇，杨帆，王展，元国军,安学军•智能网卡综述[J/OL].计算机研究与发展: 20[2021-0330].http://kns.cnki.net/kcms/detail/11.1777.TP,20210225.1903.00&htail.
+[10] 张登科，王兴伟，贾杰，李婕•智能网卡研究新进展[J/OL].小型微型计算机系统:1・ 8[2021-03-30].http://kns.cnki.net/kcms/detail/21.1106.tp.20210319.0906.004.html.
+[11] Putnam A, Caulfield A, Chung E, et al. A reconfigurable fabric for accelerating large- scale datacenter services [C] //Proc of the 41st ACM/IEEE Int Symp on Computer Architecture. Piscataway, NJ: IEEE,2014: 13-24
+[12] Daniel F, Andrew P9 Sambhrama M, et al. Azure accelerated networking:SmartNICs in the public cloud [C] //Proc of the 15th Symp on Networked Systems Design and
+69
+Implementation. Berkeley, CA: USENIX Association,2018:51 -66
+[13] Caulfield A, Chung E, Putnam A, et aL A cloud-scale acceleration architecture [C]//Proc of the 49th Annual IEEE/ACM Int Symp on Microarcliitecture. Piscataway, NJ: IEEE, 2016
+[14] Caulfield A, Costa P, Ghobadi M. Beyond SmartNICs: Towards a fully programmable cloud [C]//Proc of the 19th Int Conf on High Perfbmiance Switching and Routing. Piscataway, NJ: IEEE, 2018
+[15] Miano S?Doriguzzi-Corin R,Risso F,et al. Introducing SmartNICs in Server-based Data Plane Processing: the DDoS Mitigation Use Case[J]. IEEE Access, 2019, PP(99):1-1.
+[16] Mellanox. Mellanox BlueField series SmartNIC white paper [EB/OL].[2020-08-10]
+[17] Netronome. Agilio series SmartNIC [EB/OL], [2020-08-10].
+https://www.netronome.com/products/smartnic/overview/
+[18] Broadcom. Stingray series SmartNIC [EB/OL]. [2020-08-10]. https://www.broadcom.com/products/ethemet-connectivity/smartnic
+[19] Cavium. LiquidlO SmartNIC family [EB/OL] . [2020-08-10]. https://www.marvell.com/products/ethemet-adapters-and-controners/liquidi o-smail-nics.html
+[20] Maroun T, Lina M, Mark S. Lynx: A SmartNIC-driven accelerator-centric architecture for network servers[C] //Proc of the 25th Int Conf on Architectural Support for Programming Languages and Operating Systems. New York: ACM, 2020: 117-131.
+[21] Ii T H . Advanced microservices : a hands-on approach to microservice infrastructure and tooling.2017.
+[22] Mellanox. ConnextX family intelligent data-center network adapters [EB/OL]. [2020・ 08-11] .https://cn.mellanox.com/products/ethemet/connectx-smartnic
+[23] Broadcom. BCM58800 NetXtreme S~series named linley groups best embedded processor [EB/OL]. 2018 [2020-08-11]. https://www.broadcom.com/blog/bcm58800- netxtreme-s-series-named-linley-group ■s-best-embedded-processor
+[24] Cavium. Marvell FastLinQ Ethernet NICs [EB/OL]. [2020-08-11]. https://www.marvell.com/products/ethemet-adapteTs-and-controllers/fhstlinq- performance-nics/documents.html
+[25] Intel. Stratix V Device Handbook [EB/OL]. 2011 [2020-08-10]・ https://www.intel.com/content/www/us/en/programmable/dociinientation/nikl409774 008946.html
+[26] Microsoft. TCP/IP offload overview [EB/OL]. 2019 [2020-08-11].
+70
+https://docs.microsoft.com/en-us/windows-hardware/drivers/network/tcp-ip-ofHoad
+[27] Microsoft. Introduction to receive side scaling [EB/OL]. 2017[2020-08-l 1]. https://docs.microsoft.com/en-us/windows-hardware/drivers/network/introduction-to- receive-side-scaling
+[28] Microsoft. Network virtualization using generic routing encapsulation(NVGRE) task offload[EB/OL].2017[2020-08-l l].https://docs.microsoft.com/en-us/windows- hardware/drivers/network/network-virtualization ・using・genei*ic-routing ・ encapsulation—nvgre—task-offload
+[29] Xilinx.Products.Alveo SN1000 SmartNIC Accelerator Card[EB/OL].2021 [2019-0347] https://china.xilinx.com/support/documentation/data_sheets/c_ds965-u50.pdf
+[30] Xilinx.Products.Alveo U50 Data-Center Accelerator Card[EB/OL].2019[2021 -02- 18]https://china.xilinx.com/products/boards-and-kits/alveo/sn 1000.html
+[31] H. Frazier, nThe 802.3z Gigabit Ethernet Standard," in IEEE Network, vol. 12, no. 3, pp. 6-7, May-June 1998, doi: 10.1109/65.690946.
+[32] IEEE Std 802.3ae 2002 Edition
+[33] B. Raahemi, nError correction on 64/66 bit encoded links,'1 Canadian Conference on
+Electrical and Computer Engineering, 2005.,	2005， pp. 412-416, doi:

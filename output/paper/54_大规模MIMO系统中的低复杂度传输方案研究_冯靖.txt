@@ -1,0 +1,769 @@
+﻿{
+    "knowledge_points": [
+        {"title": "矩阵A", "en": "Matrix A"},
+        {"title": "向量a", "en": "Vector a"},
+        {"title": "矩阵空间", "en": "Matrix space"},
+        {"title": "转置矩阵", "en": "Transpose matrix"},
+        {"title": "共扼矩阵", "en": "Hermitian matrix"},
+        {"title": "共辗转置矩阵", "en": "Conjugate transpose matrix"},
+        {"title": "行列式", "en": "Determinant"},
+        {"title": "向量的2范数", "en": "2-norm of vector"},
+        {"title": "复数", "en": "Complex number"},
+        {"title": "模", "en": "Modulus"},
+        {"title": "虚数", "en": "Imaginary number"},
+        {"title": "单位阵", "en": "Identity matrix"},
+        {"title": "期望", "en": "Expectation"},
+        {"title": "方差", "en": "Variance"},
+        {"title": "最大化", "en": "Maximization"},
+        {"title": "最小化", "en": "Minimization"},
+        {"title": "复高斯随机变量", "en": "Complex Gaussian random variable"},
+        {"title": "几乎处处收敛", "en": "Almost everywhere convergence"},
+        {"title": "移动通信技术", "en": "Mobile communication technology"},
+        {"title": "移动通信系统", "en": "Mobile communication system"},
+        {"title": "第二代移动网络", "en": "2nd Generation mobile networks"},
+        {"title": "第三代移动网络", "en": "3rd Generation mobile networks"},
+        {"title": "第四代移动网络", "en": "4th Generation mobile networks"},
+        {"title": "第五代移动网络", "en": "5th Generation mobile networks"},
+        {"title": "多输入多输出技术", "en": "Multiple-input Multiple-output technology"},
+        {"title": "天线", "en": "Antenna"},
+        {"title": "自由度", "en": "Degree of freedom"},
+        {"title": "传输速率", "en": "Transmission rate"},
+        {"title": "数据可靠性", "en": "Data reliability"},
+        {"title": "大规模天线技术", "en": "Large-scale antenna technology"},
+        {"title": "频谱利用率", "en": "Spectrum utilization rate"},
+        {"title": "能量利用率", "en": "Energy utilization rate"},
+        {"title": "信道信息", "en": "Channel information"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "非相干检测技术", "en": "Non-coherent detection technology"},
+        {"title": "脉冲超宽带系统", "en": "Impulse Radio-Ultra Wideband system"},
+        {"title": "多径信号", "en": "Multipath signal"},
+        {"title": "差分检测", "en": "Differential detection"},
+        {"title": "信道编码", "en": "Channel coding"},
+        {"title": "Turbo码", "en": "Turbo code"},
+        {"title": "LDPC码", "en": "LDPC code"},
+        {"title": "信道容量", "en": "Channel capacity"},
+        {"title": "贝叶斯网络", "en": "Bayesian network"},
+        {"title": "置信度传播算法", "en": "Belief propagation algorithm"},
+        {"title": "因子图", "en": "Factor graph"},
+        {"title": "软判决量", "en": "Soft decision"}
+    ],
+    "relations": [
+        {"source": "矩阵A", "target": "向量a", "type": "包含"},
+        {"source": "矩阵空间", "target": "矩阵A", "type": "包含"},
+        {"source": "矩阵A", "target": "转置矩阵", "type": "关联"},
+        {"source": "矩阵A", "target": "共扼矩阵", "type": "关联"},
+        {"source": "矩阵A", "target": "共辗转置矩阵", "type": "关联"},
+        {"source": "矩阵A", "target": "行列式", "type": "关联"},
+        {"source": "向量a", "target": "向量的2范数", "type": "关联"},
+        {"source": "复数", "target": "模", "type": "关联"},
+        {"source": "复数", "target": "虚数", "type": "关联"},
+        {"source": "单位阵", "target": "矩阵空间", "type": "包含"},
+        {"source": "期望", "target": "方差", "type": "关联"},
+        {"source": "最大化", "target": "期望", "type": "关联"},
+        {"source": "最小化", "target": "方差", "type": "关联"},
+        {"source": "复高斯随机变量", "target": "几乎处处收敛", "type": "关联"},
+        {"source": "移动通信技术", "target": "移动通信系统", "type": "包含"},
+        {"source": "移动通信系统", "target": "第二代移动网络", "type": "包含"},
+        {"source": "移动通信系统", "target": "第三代移动网络", "type": "包含"},
+        {"source": "移动通信系统", "target": "第四代移动网络", "type": "包含"},
+        {"source": "移动通信系统", "target": "第五代移动网络", "type": "包含"},
+        {"source": "第四代移动网络", "target": "多输入多输出技术", "type": "包含"},
+        {"source": "多输入多输出技术", "target": "天线", "type": "包含"},
+        {"source": "多输入多输出技术", "target": "自由度", "type": "关联"},
+        {"source": "多输入多输出技术", "target": "传输速率", "type": "关联"},
+        {"source": "多输入多输出技术", "target": "数据可靠性", "type": "关联"},
+        {"source": "大规模天线技术", "target": "频谱利用率", "type": "关联"},
+        {"source": "大规模天线技术", "target": "能量利用率", "type": "关联"},
+        {"source": "信道信息", "target": "信道估计", "type": "关联"},
+        {"source": "大规模天线技术", "target": "非相干检测技术", "type": "包含"},
+        {"source": "非相干检测技术", "target": "差分检测", "type": "包含"},
+        {"source": "信道编码", "target": "Turbo码", "type": "包含"},
+        {"source": "信道编码", "target": "LDPC码", "type": "包含"},
+        {"source": "Turbo码", "target": "信道容量", "type": "关联"},
+        {"source": "LDPC码", "target": "信道容量", "type": "关联"},
+        {"source": "贝叶斯网络", "target": "置信度传播算法", "type": "包含"},
+        {"source": "因子图", "target": "置信度传播算法", "type": "包含"},
+        {"source": "大规模天线技术", "target": "软判决量", "type": "关联"}
+    ]
+}阵上的分布是未知的,因此需要重新研究非相干的干扰消除方法
+本研究内容下的研究目标:
+(1)研究大规模天线系统下多用户非相干传输的信道模型;
+(2)设计有效的干扰消除方法,提高系统的传输速率和性能;
+(3)研究有限的信道信息下的用户调度算法,最大限度地利用信道空间自由度。 
+
+根据以上内容，我们可以提取出以下知识点和关系：
+
+知识点：
+- 大规模天线系统
+- MSDD
+- SISOMSDD算法
+- LDPC码
+- 联合检测与信道译码算法
+- 多用户MIMO
+- 干扰消除方法
+- 用户调度算法
+- 贝叶斯估计
+- 和积算法
+- 迭代译码算法
+
+关系：
+- MSDD是典型的非相干检测技术之一
+- LDPC与Turbo码采用迭代译码的形式
+- LDPC编码器先于调制和差分编码之前
+- 软信息可以在检测器和译码器之间相互交换
+- 在大规模天线系统中使用LDPC信道纠错编码
+- 需要重新研究非相干的干扰消除方法
+- 研究有限的信道信息下的用户调度算法
+- 和积算法是一种软判决消息传递算法
+- 消息沿着因子图边进行传递{
+    "knowledge_points": [
+        {"title": "大规模天线系统", "en": "Large-scale antenna system"},
+        {"title": "功率分布", "en": "Power distribution"},
+        {"title": "用户调度策略", "en": "User scheduling strategy"},
+        {"title": "干扰消除", "en": "Interference cancellation"},
+        {"title": "非相干系统", "en": "Non-coherent system"},
+        {"title": "多用户检测算法", "en": "Multi-user detection algorithm"},
+        {"title": "信道编码", "en": "Channel coding"},
+        {"title": "因子图", "en": "Factor graph"},
+        {"title": "置信度传播算法", "en": "Belief propagation algorithm"},
+        {"title": "SISOMSDD检测算法", "en": "SISOMSDD detection algorithm"},
+        {"title": "联合检测与译码", "en": "Joint detection and decoding"},
+        {"title": "空间自由度", "en": "Spatial degrees of freedom"}
+    ],
+    "relations": [
+        {"source": "大规模天线系统", "target": "功率分布", "type": "包含"},
+        {"source": "大规模天线系统", "target": "用户调度策略", "type": "包含"},
+        {"source": "大规模天线系统", "target": "干扰消除", "type": "包含"},
+        {"source": "大规模天线系统", "target": "非相干系统", "type": "包含"},
+        {"source": "大规模天线系统", "target": "多用户检测算法", "type": "包含"},
+        {"source": "大规模天线系统", "target": "信道编码", "type": "包含"},
+        {"source": "信道编码", "target": "因子图", "type": "包含"},
+        {"source": "因子图", "target": "置信度传播算法", "type": "包含"},
+        {"source": "大规模天线系统", "target": "SISOMSDD检测算法", "type": "包含"},
+        {"source": "SISOMSDD检测算法", "target": "联合检测与译码", "type": "包含"},
+        {"source": "大规模天线系统", "target": "空间自由度", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "大规模天线技术",
+            "en": "Large-scale antenna technology"
+        },
+        {
+            "title": "大规模天线技术的应用",
+            "en": "Applications of large-scale antenna technology"
+        },
+        {
+            "title": "大规模天线技术的理论基础",
+            "en": "Theoretical basis of large-scale antenna technology"
+        },
+        {
+            "title": "大规模天线的理论特性",
+            "en": "Theoretical characteristics of large-scale antennas"
+        },
+        {
+            "title": "大规模天线系统遭遇的技术挑战",
+            "en": "Technical challenges faced by large-scale antenna systems"
+        },
+        {
+            "title": "分集增益",
+            "en": "Diversity gain"
+        },
+        {
+            "title": "复用增益",
+            "en": "Multiplexing gain"
+        },
+        {
+            "title": "波束成形增益",
+            "en": "Beamforming gain"
+        },
+        {
+            "title": "信道信息的获取",
+            "en": "Channel information acquisition"
+        },
+        {
+            "title": "导频污染",
+            "en": "Pilot contamination"
+        }
+    ],
+    "relations": [
+        {
+            "source": "大规模天线技术",
+            "target": "大规模天线技术的应用",
+            "type": "应用"
+        },
+        {
+            "source": "大规模天线技术",
+            "target": "大规模天线技术的理论基础",
+            "type": "基础"
+        },
+        {
+            "source": "大规模天线技术的理论基础",
+            "target": "分集增益",
+            "type": "包含"
+        },
+        {
+            "source": "大规模天线技术的理论基础",
+            "target": "复用增益",
+            "type": "包含"
+        },
+        {
+            "source": "大规模天线技术的理论基础",
+            "target": "波束成形增益",
+            "type": "包含"
+        },
+        {
+            "source": "大规模天线技术的理论特性",
+            "target": "信号的空间分辨率提升",
+            "type": "特性"
+        },
+        {
+            "source": "大规模天线技术的理论特性",
+            "target": "信道的硬化特性",
+            "type": "特性"
+        },
+        {
+            "source": "大规模天线技术的应用",
+            "target": "大规模天线系统遭遇的技术挑战",
+            "type": "挑战"
+        },
+        {
+            "source": "大规模天线系统遭遇的技术挑战",
+            "target": "信道信息的获取",
+            "type": "挑战"
+        },
+        {
+            "source": "大规模天线系统遭遇的技术挑战",
+            "target": "导频污染",
+            "type": "挑战"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "正交导频序列", "en": "Orthogonal pilot sequence"},
+        {"title": "导频污染", "en": "Pilot contamination"},
+        {"title": "多用户MIMO系统", "en": "Multi-user MIMO system"},
+        {"title": "概率图模型", "en": "Probabilistic graphical model"},
+        {"title": "信道编码", "en": "Channel coding"},
+        {"title": "LDPC码", "en": "Low-density parity-check code"}
+    ],
+    "relations": [
+        {"source": "正交导频序列", "target": "导频污染", "type": "cause"},
+        {"source": "导频污染", "target": "下行波束成形", "type": "negative impact"},
+        {"source": "导频污染", "target": "上行传输数据", "type": "negative impact"},
+        {"source": "多用户MIMO系统", "target": "天线数目", "type": "has"},
+        {"source": "多用户MIMO系统", "target": "用户配对传输", "type": "challenge"},
+        {"source": "概率图模型", "target": "推断", "type": "related"},
+        {"source": "信道编码", "target": "可靠性", "type": "goal"},
+        {"source": "LDPC码", "target": "构造方法", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LDPC码", "en": "LDPC Code"},
+        {"title": "线性分组码", "en": "Linear Block Code"},
+        {"title": "码长", "en": "Code Length"},
+        {"title": "校验矩阵", "en": "Parity Check Matrix"},
+        {"title": "稀疏矩阵", "en": "Sparse Matrix"},
+        {"title": "向量空间", "en": "Vector Space"},
+        {"title": "译码器", "en": "Decoder"},
+        {"title": "最大似然法", "en": "Maximum Likelihood"},
+        {"title": "局部校验节点", "en": "Local Parity Check Node"},
+        {"title": "译码性能", "en": "Decoding Performance"},
+        {"title": "并行解码", "en": "Parallel Decoding"},
+        {"title": "香农极限", "en": "Shannon Limit"},
+        {"title": "信道编码", "en": "Channel Coding"},
+        {"title": "因子图模型", "en": "Factor Graph Model"},
+        {"title": "变量节点", "en": "Variable Node"},
+        {"title": "校验节点", "en": "Check Node"},
+        {"title": "线性方程组", "en": "Linear Equation System"},
+        {"title": "编码矩阵构造", "en": "Code Matrix Construction"},
+        {"title": "解码算法优化", "en": "Decoding Algorithm Optimization"},
+        {"title": "Multi-Edge构造方法", "en": "Multi-Edge Construction Method"},
+        {"title": "递增冗余技术", "en": "Incremental Redundancy Technique"},
+        {"title": "LDPC码的编码算法", "en": "LDPC Code Encoding Algorithm"},
+        {"title": "生成矩阵", "en": "Generator Matrix"},
+        {"title": "LDPC码的译码算法", "en": "LDPC Code Decoding Algorithm"},
+        {"title": "消息迭代译码方法", "en": "Message Passing Decoding Method"},
+        {"title": "Turbo码", "en": "Turbo Code"},
+        {"title": "硬判决译码", "en": "Hard Decision Decoding"}
+    ],
+    "relations": [
+        {"source": "LDPC码", "target": "线性分组码", "type": "属于"},
+        {"source": "LDPC码", "target": "码长", "type": "具有"},
+        {"source": "LDPC码", "target": "校验矩阵", "type": "具有"},
+        {"source": "LDPC码", "target": "稀疏矩阵", "type": "具有"},
+        {"source": "LDPC码", "target": "向量空间", "type": "应用"},
+        {"source": "LDPC码", "target": "译码器", "type": "应用"},
+        {"source": "LDPC码", "target": "最大似然法", "type": "应用"},
+        {"source": "LDPC码", "target": "局部校验节点", "type": "应用"},
+        {"source": "LDPC码", "target": "译码性能", "type": "具有"},
+        {"source": "LDPC码", "target": "并行解码", "type": "应用"},
+        {"source": "LDPC码", "target": "香农极限", "type": "应用"},
+        {"source": "LDPC码", "target": "信道编码", "type": "应用"},
+        {"source": "LDPC码", "target": "因子图模型", "type": "具有"},
+        {"source": "因子图模型", "target": "变量节点", "type": "包含"},
+        {"source": "因子图模型", "target": "校验节点", "type": "包含"},
+        {"source": "LDPC码", "target": "线性方程组", "type": "应用"},
+        {"source": "LDPC码", "target": "编码矩阵构造", "type": "应用"},
+        {"source": "LDPC码", "target": "解码算法优化", "type": "应用"},
+        {"source": "LDPC码", "target": "Multi-Edge构造方法", "type": "应用"},
+        {"source": "Multi-Edge构造方法", "target": "递增冗余技术", "type": "应用"},
+        {"source": "LDPC码", "target": "LDPC码的编码算法", "type": "应用"},
+        {"source": "LDPC码的编码算法", "target": "生成矩阵", "type": "包含"},
+        {"source": "LDPC码", "target": "LDPC码的译码算法", "type": "应用"},
+        {"source": "LDPC码的译码算法", "target": "消息迭代译码方法", "type": "包含"},
+        {"source": "LDPC码", "target": "Turbo码", "type": "相似"},
+        {"source": "LDPC码", "target": "硬判决译码", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "软判决译码",
+            "en": "Soft decision decoding"
+        },
+        {
+            "title": "混合译码",
+            "en": "Hybrid decoding"
+        },
+        {
+            "title": "置信度传播算法",
+            "en": "Belief propagation algorithm"
+        },
+        {
+            "title": "贝叶斯估计",
+            "en": "Bayesian estimation"
+        },
+        {
+            "title": "因子图",
+            "en": "Factor graph"
+        },
+        {
+            "title": "LDPC的迭代译码",
+            "en": "Iterative decoding of LDPC"
+        }
+    ],
+    "relations": [
+        {
+            "source": "软判决译码",
+            "target": "混合译码",
+            "type": "包含"
+        },
+        {
+            "source": "置信度传播算法",
+            "target": "贝叶斯估计",
+            "type": "基于"
+        },
+        {
+            "source": "置信度传播算法",
+            "target": "因子图",
+            "type": "基于"
+        },
+        {
+            "source": "LDPC的迭代译码",
+            "target": "置信度传播算法",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "图模型", "en": "Graphical Model"},
+        {"title": "置信度传播算法", "en": "Belief Propagation Algorithm"},
+        {"title": "信道编码", "en": "Channel Coding"},
+        {"title": "LDPC码", "en": "LDPC Code"},
+        {"title": "大规模天线系统", "en": "Large-scale Antenna System"},
+        {"title": "非相干检测", "en": "Non-coherent Detection"},
+        {"title": "MSDD", "en": "Multi-Symbol Differential Detection"},
+        {"title": "因子图", "en": "Factor Graph"},
+        {"title": "SISO", "en": "Soft-In Soft-Out"},
+        {"title": "信道信息", "en": "Channel Information"}
+    ],
+    "relations": [
+        {"source": "图模型", "target": "置信度传播算法", "type": "包含"},
+        {"source": "图模型", "target": "LDPC码", "type": "包含"},
+        {"source": "信道编码", "target": "LDPC码", "type": "包含"},
+        {"source": "大规模天线系统", "target": "非相干检测", "type": "包含"},
+        {"source": "非相干检测", "target": "MSDD", "type": "包含"},
+        {"source": "因子图", "target": "LDPC码", "type": "包含"},
+        {"source": "因子图", "target": "MSDD", "type": "包含"},
+        {"source": "SISO", "target": "LDPC码", "type": "包含"},
+        {"source": "SISO", "target": "信道信息", "type": "包含"},
+        {"source": "大规模天线系统", "target": "联合多符号差分检测", "type": "包含"},
+        {"source": "大规模天线系统", "target": "信道译码", "type": "包含"},
+        {"source": "联合多符号差分检测", "target": "MSDD", "type": "包含"},
+        {"source": "联合多符号差分检测", "target": "因子图", "type": "包含"},
+        {"source": "联合多符号差分检测", "target": "SISO", "type": "包含"},
+        {"source": "信道译码", "target": "LDPC码", "type": "包含"},
+        {"source": "信道译码", "target": "SISO", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "准静态信道",
+            "en": "Quasi-static channel"
+        },
+        {
+            "title": "非相干自相关接收机",
+            "en": "Non-coherent autocorrelation receiver"
+        },
+        {
+            "title": "多符号差分检测",
+            "en": "Multi-symbol differential detection"
+        },
+        {
+            "title": "联合多符号差分检测与信道译码",
+            "en": "Joint multi-symbol differential detection and channel decoding"
+        },
+        {
+            "title": "因子图",
+            "en": "Factor graph"
+        }
+    ],
+    "relations": [
+        {
+            "source": "准静态信道",
+            "target": "非相干自相关接收机",
+            "type": "包含"
+        },
+        {
+            "source": "非相干自相关接收机",
+            "target": "多符号差分检测",
+            "type": "基于"
+        },
+        {
+            "source": "多符号差分检测",
+            "target": "联合多符号差分检测与信道译码",
+            "type": "基于"
+        },
+        {
+            "source": "联合多符号差分检测与信道译码",
+            "target": "因子图",
+            "type": "基于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "定理4.1", "en": "Theorem 4.1"},
+        {"title": "独立高斯", "en": "Independent Gaussian"},
+        {"title": "信道转移函数", "en": "Channel Transfer Function"},
+        {"title": "因子化", "en": "Factorization"},
+        {"title": "BP算法", "en": "Belief Propagation Algorithm"},
+        {"title": "MSDD", "en": "Multiple Symbol Differential Detection"},
+        {"title": "信道译码", "en": "Channel Decoding"},
+        {"title": "外信息", "en": "Extrinsic Information"},
+        {"title": "传输间隙", "en": "Transmission Gap"},
+        {"title": "天线阵列", "en": "Antenna Array"},
+        {"title": "信噪比", "en": "Signal-to-Noise Ratio"},
+        {"title": "误码率", "en": "Bit Error Rate"},
+        {"title": "LDPC码率", "en": "LDPC Code Rate"},
+        {"title": "置信度信息", "en": "Confidence Information"},
+        {"title": "能量估计", "en": "Energy Estimation"},
+        {"title": "迭代次数", "en": "Iteration Number"}
+    ],
+    "relations": [
+        {"source": "定理4.1", "target": "独立高斯", "type": "近似成为"},
+        {"source": "定理4.1", "target": "信道转移函数", "type": "条件"},
+        {"source": "因子化", "target": "独立高斯", "type": "近似认为"},
+        {"source": "因子化", "target": "数据符号", "type": "独立地"},
+        {"source": "BP算法", "target": "MSDD", "type": "计算"},
+        {"source": "BP算法", "target": "信道译码", "type": "计算"},
+        {"source": "MSDD", "target": "外信息", "type": "交换"},
+        {"source": "传输间隙", "target": "数据符号", "type": "分割"},
+        {"source": "天线阵列", "target": "信噪比", "type": "影响"},
+        {"source": "误码率", "target": "信噪比", "type": "定义"},
+        {"source": "LDPC码率", "target": "置信度信息", "type": "处理"},
+        {"source": "能量估计", "target": "系统性能", "type": "影响"},
+        {"source": "迭代次数", "target": "系统性能", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SISOMSDD",
+            "en": "SISO-MSDD"
+        },
+        {
+            "title": "信道译码",
+            "en": "Channel Decoding"
+        },
+        {
+            "title": "多符号差分检测",
+            "en": "Multi-Symbol Differential Detection"
+        },
+        {
+            "title": "大规模天线系统",
+            "en": "Large-scale Antenna System"
+        },
+        {
+            "title": "非相干多用户传输",
+            "en": "Non-coherent Multi-user Transmission"
+        },
+        {
+            "title": "干扰消除",
+            "en": "Interference Cancellation"
+        },
+        {
+            "title": "用户调度",
+            "en": "User Scheduling"
+        },
+        {
+            "title": "相移键控调制",
+            "en": "Phase Shift Keying Modulation"
+        },
+        {
+            "title": "加性白高斯噪声",
+            "en": "Additive White Gaussian Noise"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SISOMSDD",
+            "target": "信道译码",
+            "type": "利用"
+        },
+        {
+            "source": "多符号差分检测",
+            "target": "大规模天线系统",
+            "type": "应用于"
+        },
+        {
+            "source": "大规模天线系统",
+            "target": "非相干多用户传输",
+            "type": "研究对象"
+        },
+        {
+            "source": "非相干多用户传输",
+            "target": "干扰消除",
+            "type": "解决问题"
+        },
+        {
+            "source": "用户调度",
+            "target": "相移键控调制",
+            "type": "影响"
+        },
+        {
+            "source": "相移键控调制",
+            "target": "加性白高斯噪声",
+            "type": "受到影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "信道向量的时间下标",
+            "en": "Time index of channel vector"
+        },
+        {
+            "title": "PSP对方差的影响",
+            "en": "Impact of PSP on variance"
+        },
+        {
+            "title": "极坐标表示用户位置",
+            "en": "Polar coordinates represent user position"
+        },
+        {
+            "title": "用户位置已知",
+            "en": "User location is known"
+        },
+        {
+            "title": "估计用户位置的容易程度",
+            "en": "Ease of estimating user location"
+        },
+        {
+            "title": "PSP针对特定用户的信道平均能量集合",
+            "en": "PSP for the average energy of the channel for a specific user"
+        },
+        {
+            "title": "能量空间分布的高斯函数",
+            "en": "Gaussian function of energy space distribution"
+        },
+        {
+            "title": "多用户非相干自相关接收机",
+            "en": "Multi-user non-coherent autocorrelation receiver"
+        },
+        {
+            "title": "MSDD滑窗的基本原理",
+            "en": "Basic principle of MSDD sliding window"
+        },
+        {
+            "title": "多用户非相干顺序干扰消除",
+            "en": "Multi-user non-coherent sequential interference cancellation"
+        },
+        {
+            "title": "干扰和噪声的统计特性",
+            "en": "Statistical characteristics of interference and noise"
+        },
+        {
+            "title": "多用户软入软出多符号差分检测",
+            "en": "Multi-user soft-in soft-out multi-symbol differential detection"
+        },
+        {
+            "title": "用户调度的目标",
+            "en": "Objective of user scheduling"
+        }
+    ],
+    "relations": [
+        {
+            "source": "信道向量的时间下标",
+            "target": "极坐标表示用户位置",
+            "type": "related"
+        },
+        {
+            "source": "PSP对方差的影响",
+            "target": "能量空间分布的高斯函数",
+            "type": "related"
+        },
+        {
+            "source": "用户位置已知",
+            "target": "估计用户位置的容易程度",
+            "type": "related"
+        },
+        {
+            "source": "PSP针对特定用户的信道平均能量集合",
+            "target": "多用户非相干自相关接收机",
+            "type": "related"
+        },
+        {
+            "source": "MSDD滑窗的基本原理",
+            "target": "多用户非相干自相关接收机",
+            "type": "related"
+        },
+        {
+            "source": "多用户非相干自相关接收机",
+            "target": "多用户非相干顺序干扰消除",
+            "type": "related"
+        },
+        {
+            "source": "干扰和噪声的统计特性",
+            "target": "多用户非相干顺序干扰消除",
+            "type": "related"
+        },
+        {
+            "source": "多用户非相干顺序干扰消除",
+            "target": "多用户软入软出多符号差分检测",
+            "type": "related"
+        },
+        {
+            "source": "多用户软入软出多符号差分检测",
+            "target": "用户调度的目标",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "能量空间分布", "en": "Energy spatial distribution"},
+        {"title": "用户分区", "en": "User partitioning"},
+        {"title": "固定模式随机用户选择算法", "en": "Pattern-fixed random user selection algorithm"},
+        {"title": "信干噪比", "en": "Signal-to-interference-plus-noise ratio (SINR)"},
+        {"title": "顺序干扰消除", "en": "Sequential interference cancellation"},
+        {"title": "仿真结果与讨论", "en": "Simulation results and discussion"}
+    ],
+    "relations": [
+        {"source": "能量空间分布", "target": "用户分区", "type": "包含"},
+        {"source": "用户分区", "target": "固定模式随机用户选择算法", "type": "应用"},
+        {"source": "用户分区", "target": "信干噪比", "type": "影响"},
+        {"source": "信干噪比", "target": "顺序干扰消除", "type": "输入"},
+        {"source": "顺序干扰消除", "target": "固定模式随机用户选择算法", "type": "输出"},
+        {"source": "仿真结果与讨论", "target": "固定模式随机用户选择算法", "type": "验证"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "大规模天线系统", "en": "Large-scale antenna system"},
+        {"title": "多用户传输", "en": "Multi-user transmission"},
+        {"title": "多符号差分检测", "en": "Multi-symbol differential detection"},
+        {"title": "软入软出", "en": "Soft-in soft-out"},
+        {"title": "信道编码", "en": "Channel coding"},
+        {"title": "置信度传播算法", "en": "Belief propagation algorithm"},
+        {"title": "LDPC码", "en": "Low-density parity-check code"}
+    ],
+    "relations": [
+        {"source": "小组2", "target": "RUS", "type": "比较"},
+        {"source": "小组3", "target": "PF-RUS", "type": "优于"},
+        {"source": "小组4", "target": "PF-RUS", "type": "优于"},
+        {"source": "用户PSP", "target": "多符号差分检测", "type": "应用"},
+        {"source": "图5-4", "target": "非编码系统的误码率结果", "type": "展示"},
+        {"source": "图5-5", "target": "编码系统的误码率结果", "type": "展示"},
+        {"source": "联合多符号差分检测和信道译码模型", "target": "误码率结果", "type": "影响"},
+        {"source": "信道编码", "target": "性能提升", "type": "带来"},
+        {"source": "置信度传播算法", "target": "软判决消息传递算法", "type": "属于"},
+        {"source": "LDPC码", "target": "图模型", "type": "融合"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于硬判决和基于软输出的多符号差分检测", "en": "Multiple Symbol Differential Detection Based on Hard Decision and Soft Output"},
+        {"title": "大规模天线系统下基于用户调度的完整的多用户检测与译码模型", "en": "Complete Multi-User Detection and Decoding Model Based on User Scheduling in Large-Scale Antenna Systems"},
+        {"title": "用户选择方法", "en": "User Selection Method"},
+        {"title": "非相干的顺序干扰消除器", "en": "Non-coherent Sequential Interference Canceller"},
+        {"title": "联合多符号差分检测与信道译码器", "en": "Joint Multiple Symbol Differential Detection and Channel Decoding"},
+        {"title": "大规模天线阵列天线的长度限制", "en": "Length Limitation of Antennas in Large-Scale Antenna Arrays"},
+        {"title": "用户区域细分", "en": "User Area Subdivision"},
+        {"title": "图模型的扩展性", "en": "Scalability of Graph Models"},
+        {"title": "缩略语表", "en": "Abbreviation Table"}
+    ],
+    "relations": [
+        {"source": "大规模天线系统下基于用户调度的完整的多用户检测与译码模型", "target": "用户选择方法", "type": "包含"},
+        {"source": "大规模天线系统下基于用户调度的完整的多用户检测与译码模型", "target": "非相干的顺序干扰消除器", "type": "包含"},
+        {"source": "大规模天线系统下基于用户调度的完整的多用户检测与译码模型", "target": "联合多符号差分检测与信道译码器", "type": "包含"},
+        {"source": "用户选择方法", "target": "固定模式随机用户选择", "type": "包含"},
+        {"source": "用户选择方法", "target": "相移键控", "type": "包含"},
+        {"source": "用户选择方法", "target": "能量空间分布", "type": "包含"},
+        {"source": "大规模天线阵列天线的长度限制", "target": "在线性天线上的功率混叠", "type": "包含"},
+        {"source": "用户区域细分", "target": "多种调度策略之间的影响", "type": "包含"},
+        {"source": "图模型的扩展性", "target": "其他通信检测问题中的应用", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "非相干决策反馈均衡", "en": "Noncoherent decision-feedback equalization"},
+        {"title": "大规模MIMO系统", "en": "Massive MIMO systems"},
+        {"title": "非相干大规模SIMO系统", "en": "Noncoherent massive SIMO systems"},
+        {"title": "近最优纠错编码和解码：Turbo码", "en": "Near-optimum error-correcting coding and decoding: Turbo codes"},
+        {"title": "基于非常稀疏矩阵的好的纠错码", "en": "Good error-correcting codes based on very sparse matrices"},
+        {"title": "Turbo解码作为Pearl的置信传播算法的一个实例", "en": "Turbo decoding as an instance of Pearl's belief propagation algorithm"},
+        {"title": "智能系统中的概率推理：合理推断网络", "en": "Probabilistic reasoning in intelligent systems: networks of plausible inference"},
+        {"title": "因子图和和-积算法", "en": "Factor graphs and the sum-product algorithm"},
+        {"title": "UWB通信的多符号差分检测", "en": "Multiple symbol differential detection for UWB communications"},
+        {"title": "多符号差分检测的软输入软输出球解码器", "en": "Soft-output sphere decoder for multiple-symbol differential detection of impulse-radio ultra-wideband"},
+        {"title": "基于多个观测值组合的超宽带系统的低复杂度软输出检测", "en": "Low-complexity soft-output detection for impulse-radio ultra-wideband systems via combining multiple observations"},
+        {"title": "基于因子图的LDPCC编码大规模MIMO系统的联合检测/解码", "en": "Factor graph-based joint detection/decoding for LDPC-coded large-MIMO systems"},
+        {"title": "通用图上的编码和迭代解码", "en": "Codes and iterative decoding on general graphs"},
+        {"title": "无线通信的随机矩阵方法", "en": "Random matrix methods for wireless communications"},
+        {"title": "有限信道状态信息下实现大规模MIMO增益的联合空间分割和复用", "en": "Joint spatial division and multiplexing: realizing massive MIMO gains with limited channel state information"},
+        {"title": "大规模MIMO波束成形系统的闭环训练方法", "en": "Closed-loop training approach for massive MIMO beamforming systems"},
+        {"title": "FDD大规模MIMO系统的下行链路训练技术：具有记忆的开环和闭环训练", "en": "Downlink training techniques for FDD massive MIMO systems: open-loop and closed-loop training with memory"}
+    ],
+    "relations": [
+        {"source": "非相干决策反馈均衡", "target": "大规模MIMO系统", "type": "应用"},
+        {"source": "非相干大规模SIMO系统", "target": "大规模MIMO系统", "type": "应用"},
+        {"source": "近最优纠错编码和解码：Turbo码", "target": "大规模MIMO系统", "type": "应用"},
+        {"source": "基于非常稀疏矩阵的好的纠错码", "target": "大规模MIMO系统", "type": "应用"},
+        {"source": "Turbo解码作为Pearl的置信传播算法的一个实例", "target": "大规模MIMO系统", "type": "应用"},
+        {"source": "智能系统中的概率推理：合理推断网络", "target": "因子图和和-积算法", "type": "应用"},
+        {"source": "因子图和和-积算法", "target": "UWB通信的多符号差分检测", "type": "应用"},
+        {"source": "UWB通信的多符号差分检测", "target": "多符号差分检测的软输入软输出球解码器", "type": "应用"},
+        {"source": "多符号差分检测的软输入软输出球解码器", "target": "基于多个观测值组合的超宽带系统的低复杂度软输出检测", "type": "应用"},
+        {"source": "因子图和和-积算法", "target": "基于因子图的LDPCC编码大规模MIMO系统的联合检测/解码", "type": "应用"},
+        {"source": "通用图上的编码和迭代解码", "target": "基于因子图的LDPCC编码大规模MIMO系统的联合检测/解码", "type": "应用"},
+        {"source": "无线通信的随机矩阵方法", "target": "有限信道状态信息下实现大规模MIMO增益的联合空间分割和复用", "type": "应用"},
+        {"source": "有限信道状态信息下实现大规模MIMO增益的联合空间分割和复用", "target": "大规模MIMO波束成形系统的闭环训练方法", "type": "应用"},
+        {"source": "大规模MIMO波束成形系统的闭环训练方法", "target": "FDD大规模MIMO系统的下行链路训练技术：具有记忆的开环和闭环训练", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Massive MIMO in cellular networks", "en": ""},
+        {"title": "Modem Coding Theory", "en": ""},
+        {"title": "Introduction to factor graphs", "en": ""},
+        {"title": "Multiple-symbol differential detection of MPSK", "en": ""},
+        {"title": "BER analysis of decision-feedback multiple-symbol detection in noncoherent MIMO ultrawideband systems", "en": ""},
+        {"title": "Codes and iterative decoding on general graphs", "en": ""},
+        {"title": "Soft-Input Soft-Output Multiple Symbol Detection for Ultra-Wideband Systems", "en": ""},
+        {"title": "Joint Noncoherent Detection and Channel Decoding for UWB Impulse Radio by Belief Propagation", "en": ""}
+    ],
+    "relations": [
+        {"source": "Massive MIMO in cellular networks", "target": "Communication Theory", "type": "属于"},
+        {"source": "Modem Coding Theory", "target": "Communication Theory", "type": "属于"},
+        {"source": "Introduction to factor graphs", "target": "Communication Theory", "type": "属于"},
+        {"source": "Multiple-symbol differential detection of MPSK", "target": "Communication Theory", "type": "属于"},
+        {"source": "BER analysis of decision-feedback multiple-symbol detection in noncoherent MIMO ultrawideband systems", "target": "Communication Theory", "type": "属于"},
+        {"source": "Codes and iterative decoding on general graphs", "target": "Communication Theory", "type": "属于"},
+        {"source": "Soft-Input Soft-Output Multiple Symbol Detection for Ultra-Wideband Systems", "target": "Communication Theory", "type": "属于"},
+        {"source": "Joint Noncoherent Detection and Channel Decoding for UWB Impulse Radio by Belief Propagation", "target": "Communication Theory", "type": "属于"}
+    ]
+}

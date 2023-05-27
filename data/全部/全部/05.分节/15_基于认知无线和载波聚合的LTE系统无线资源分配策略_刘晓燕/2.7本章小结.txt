@@ -1,0 +1,4 @@
+2.7本章小结
+本意给出了论文后续工作中要涉及到的概念及问题，从基于 OFDM   的单小 区系统及其资常见资源分配策略着手，分别介绍了目前研究比较成熟的无线资源 分配算法的类型，如系统吞吐量最大化算法、比例公平算法、能耗最小化算法。 这些基础算法将为后续论文中重点讲述的频谱破碎度最小化算法和能量效率最 大化算法作出铺垫。
+24
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.    http://www.cnki.net

@@ -1,0 +1,799 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "视频感知技术",
+            "en": "Video perception technology"
+        },
+        {
+            "title": "视频理解技术",
+            "en": "Video understanding technology"
+        },
+        {
+            "title": "计算机视觉技术",
+            "en": "Computer vision technology"
+        },
+        {
+            "title": "多模态信息",
+            "en": "Multimodal information"
+        },
+        {
+            "title": "音频模态",
+            "en": "Audio modality"
+        },
+        {
+            "title": "OCR技术",
+            "en": "OCR technology"
+        },
+        {
+            "title": "NLP技术",
+            "en": "NLP technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "视频感知技术",
+            "target": "智能设备",
+            "type": "应用"
+        },
+        {
+            "source": "视频感知技术",
+            "target": "视频数据",
+            "type": "处理"
+        },
+        {
+            "source": "视频理解技术",
+            "target": "视频感知技术",
+            "type": "基础"
+        },
+        {
+            "source": "计算机视觉技术",
+            "target": "视频感知技术",
+            "type": "基础"
+        },
+        {
+            "source": "计算机视觉技术",
+            "target": "智能设备",
+            "type": "应用"
+        },
+        {
+            "source": "多模态信息",
+            "target": "视频感知技术",
+            "type": "应用"
+        },
+        {
+            "source": "音频模态",
+            "target": "视频感知技术",
+            "type": "应用"
+        },
+        {
+            "source": "OCR技术",
+            "target": "视频感知技术",
+            "type": "应用"
+        },
+        {
+            "source": "NLP技术",
+            "target": "视频感知技术",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "远程服务器算力加速神经网络算法处理速度", "en": "Remote server accelerates the processing speed of neural network algorithms"},
+        {"title": "视频数据传输需要高速稳定通信网络", "en": "Video data transmission requires high-speed and stable communication network"},
+        {"title": "智能设备上需要本地端可靠运行的视频算法", "en": "Reliable local video algorithms are needed on smart devices"},
+        {"title": "神经网络模型需要轻量化加速处理", "en": "Neural network models need lightweight acceleration processing"},
+        {"title": "模型压缩是对神经网络进行压缩加速的技术", "en": "Model compression is a technology for compressing and accelerating neural networks"},
+        {"title": "移动智能设备必须满足模型尺寸小、计算复杂度低、电池耗电量低等特点", "en": "Mobile smart devices must meet the characteristics of small model size, low computational complexity, and low battery consumption"},
+        {"title": "模型压缩和加速并不是相辅相成的", "en": "Model compression and acceleration are not complementary"}
+    ],
+    "relations": [
+        {"source": "远程服务器算力加速神经网络算法处理速度", "target": "视频数据传输需要高速稳定通信网络", "type": "需要"},
+        {"source": "智能设备上需要本地端可靠运行的视频算法", "target": "远程服务器算力加速神经网络算法处理速度", "type": "需要"},
+        {"source": "神经网络模型需要轻量化加速处理", "target": "模型压缩是对神经网络进行压缩加速的技术", "type": "包含"},
+        {"source": "移动智能设备必须满足模型尺寸小、计算复杂度低、电池耗电量低等特点", "target": "模型压缩和加速并不是相辅相成的", "type": "对立"},
+        {"source": "模型压缩和加速并不是相辅相成的", "target": "神经网络模型需要轻量化加速处理", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "神经网络剪枝",
+            "en": "Neural Network Pruning"
+        },
+        {
+            "title": "网络参数共享",
+            "en": "Network Parameter Sharing"
+        },
+        {
+            "title": "权值量化",
+            "en": "Weight Quantization"
+        },
+        {
+            "title": "网络分解",
+            "en": "Network Decomposition"
+        },
+        {
+            "title": "知识蒸憾",
+            "en": "Knowledge Distillation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "神经网络剪枝",
+            "target": "网络参数共享",
+            "type": "包含"
+        },
+        {
+            "source": "神经网络剪枝",
+            "target": "权值量化",
+            "type": "包含"
+        },
+        {
+            "source": "神经网络剪枝",
+            "target": "网络分解",
+            "type": "包含"
+        },
+        {
+            "source": "神经网络剪枝",
+            "target": "知识蒸憾",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "神经网络知识蒸馆流程", "en": "Neural Network Knowledge Distillation Process"},
+        {"title": "轻量级神经网络架构设计", "en": "Design of Lightweight Neural Network Architecture"},
+        {"title": "视频感知算法", "en": "Video Perception Algorithm"},
+        {"title": "视频理解技术", "en": "Video Understanding Technology"},
+        {"title": "动作检测", "en": "Action Detection"},
+        {"title": "行为识别", "en": "Behavior Recognition"},
+        {"title": "时序动作检测", "en": "Temporal Action Detection"},
+        {"title": "行为预测", "en": "Behavior Prediction"},
+        {"title": "视频摘要", "en": "Video Summary"}
+    ],
+    "relations": [
+        {"source": "神经网络知识蒸馆流程", "target": "轻量级神经网络架构设计", "type": "包含"},
+        {"source": "轻量级神经网络架构设计", "target": "神经网络搜索的方法", "type": "包含"},
+        {"source": "轻量级神经网络架构设计", "target": "mobilenet轻量型卷积神经网络", "type": "包含"},
+        {"source": "mobilenet轻量型卷积神经网络", "target": "深度可分离卷积", "type": "包含"},
+        {"source": "mobilenetv2", "target": "逆向残差模块", "type": "包含"},
+        {"source": "mobilenetv3", "target": "新的激活函数", "type": "包含"},
+        {"source": "Shufflenet", "target": "channelshuffle", "type": "包含"},
+        {"source": "Shufflenet", "target": "pointwisegroupconvolutions", "type": "包含"},
+        {"source": "ShufflenetV2", "target": "基于神经网络搜索的技术", "type": "包含"},
+        {"source": "EfficientNet", "target": "神经网络搜索的技术", "type": "包含"},
+        {"source": "视频感知算法", "target": "视频数据", "type": "包含"},
+        {"source": "视频感知算法", "target": "计算机视觉算法", "type": "包含"},
+        {"source": "视频感知算法", "target": "目标检测", "type": "包含"},
+        {"source": "视频感知算法", "target": "语义分割", "type": "包含"},
+        {"source": "视频理解技术", "target": "视频数据", "type": "包含"},
+        {"source": "视频理解技术", "target": "社会生产", "type": "包含"},
+        {"source": "视频理解技术", "target": "安防领域", "type": "包含"},
+        {"source": "视频理解技术", "target": "人机交互领域", "type": "包含"},
+        {"source": "视频理解技术", "target": "互联网业务", "type": "包含"},
+        {"source": "视频理解技术", "target": "短视频", "type": "包含"},
+        {"source": "视频理解技术", "target": "长视频", "type": "包含"},
+        {"source": "视频理解技术", "target": "直播平台", "type": "包含"},
+        {"source": "视频理解技术", "target": "自动驾驶领域", "type": "包含"},
+        {"source": "视频理解技术", "target": "视频内容理解", "type": "包含"},
+        {"source": "视频理解技术", "target": "交互对象", "type": "包含"},
+        {"source": "视频理解技术", "target": "场景环境", "type": "包含"},
+        {"source": "视频理解技术", "target": "人类姿态", "type": "包含"},
+        {"source": "视频理解技术", "target": "语义理解", "type": "包含"},
+        {"source": "动作检测", "target": "视频数据", "type": "包含"},
+        {"source": "行为识别", "target": "视频数据", "type": "包含"},
+        {"source": "时序动作检测", "target": "视频数据", "type": "包含"},
+        {"source": "行为预测", "target": "视频数据", "type": "包含"},
+        {"source": "视频摘要", "target": "视频数据", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "音频转化为文本", "en": "Audio-to-Text Conversion"},
+        {"title": "音频信号处理", "en": "Audio Signal Processing"},
+        {"title": "深度神经网络", "en": "Deep Neural Networks"},
+        {"title": "多模态融合", "en": "Multimodal Fusion"},
+        {"title": "环境感知神经网络模型", "en": "Environment Perception Neural Network Model"},
+        {"title": "3D神经网络模型", "en": "3D Neural Network Model"},
+        {"title": "音频分类算法", "en": "Audio Classification Algorithm"}
+    ],
+    "relations": [
+        {"source": "音频转化为文本", "target": "文本关键词筛选", "type": "包含"},
+        {"source": "音频信号处理", "target": "特征表示", "type": "包含"},
+        {"source": "音频信号处理", "target": "分类模型", "type": "包含"},
+        {"source": "特征表示", "target": "深度神经网络", "type": "关联"},
+        {"source": "分类模型", "target": "深度神经网络", "type": "关联"},
+        {"source": "多模态融合", "target": "表征", "type": "包含"},
+        {"source": "多模态融合", "target": "翻译", "type": "包含"},
+        {"source": "多模态融合", "target": "对齐", "type": "包含"},
+        {"source": "多模态融合", "target": "融合", "type": "包含"},
+        {"source": "多模态融合", "target": "联合学习", "type": "包含"},
+        {"source": "环境感知神经网络模型", "target": "图像分类", "type": "包含"},
+        {"source": "环境感知神经网络模型", "target": "语义分割", "type": "包含"},
+        {"source": "3D神经网络模型", "target": "行为识别", "type": "包含"},
+        {"source": "3D神经网络模型", "target": "动作分类", "type": "包含"},
+        {"source": "音频分类算法", "target": "轻量化", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "轻量型神经网络模型M-SOSANet", "en": "M-SOSANet: A Lightweight Neural Network Model"},
+        {"title": "轻量型3D卷积神经网络RegNet3D", "en": "RegNet3D: A Lightweight 3D Convolutional Neural Network"},
+        {"title": "声音分类模型的训练方法", "en": "Training Method for Sound Classification Model"},
+        {"title": "基于多模态特征融合的视频描述神经网络", "en": "Neural Network for Video Description Based on Multimodal Feature Fusion"}
+    ],
+    "relations": [
+        {"source": "轻量型神经网络模型M-SOSANet", "target": "图像分类数据集CIFAR-10,CIFAR-100,ImageNet-lOOOK", "type": "适用于"},
+        {"source": "轻量型神经网络模型M-SOSANet", "target": "语义分割数据集PASCALVOC", "type": "适用于"},
+        {"source": "轻量型神经网络模型M-SOSANet", "target": "移动设备NvidiaTX2,常规CPU15-8400,NvidiaTITANX", "type": "适用于"},
+        {"source": "轻量型3D卷积神经网络RegNet3D", "target": "行为识别动作分类数据集UCF-101", "type": "适用于"},
+        {"source": "轻量型3D卷积神经网络RegNet3D", "target": "大规模手势动作分类数据集Jester", "type": "适用于"},
+        {"source": "轻量型3D卷积神经网络RegNet3D", "target": "大规模行为分类SomethingSomethingV2", "type": "适用于"},
+        {"source": "声音分类模型的训练方法", "target": "声音场景分类数据集UrbanSound8K", "type": "适用于"},
+        {"source": "基于多模态特征融合的视频描述神经网络", "target": "视频描述任务的数据集", "type": "适用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "智能设备的环境感知和理解算法", "en": "Environment perception and understanding algorithm for intelligent devices"},
+        {"title": "轻量化的2D卷积神经网络", "en": "Lightweight 2D convolutional neural network"},
+        {"title": "轻量化的3D卷积神经网络", "en": "Lightweight 3D convolutional neural network"},
+        {"title": "用于音频模态数据的轻量化卷积神经网络", "en": "Lightweight convolutional neural network for audio modal data"},
+        {"title": "跨模态注意力机制的特征融合网络", "en": "Feature fusion network with cross-modal attention mechanism"},
+        {"title": "MEESP下采样模块", "en": "MEESP downsampling module"},
+        {"title": "MobileSOSA模块", "en": "MobileSOSA module"},
+        {"title": "通道混洗", "en": "Channel shuffle"},
+        {"title": "全局平均池化", "en": "Global average pooling"},
+        {"title": "全局最大池化", "en": "Global max pooling"},
+        {"title": "特征转换分析模块", "en": "Feature transformation analysis module"}
+    ],
+    "relations": [
+        {"source": "智能设备的环境感知和理解算法", "target": "轻量化的2D卷积神经网络", "type": "包含"},
+        {"source": "智能设备的环境感知和理解算法", "target": "轻量化的3D卷积神经网络", "type": "包含"},
+        {"source": "智能设备的环境感知和理解算法", "target": "用于音频模态数据的轻量化卷积神经网络", "type": "包含"},
+        {"source": "轻量化的2D卷积神经网络", "target": "MobileSOSA模块", "type": "包含"},
+        {"source": "轻量化的2D卷积神经网络", "target": "MEESP下采样模块", "type": "包含"},
+        {"source": "轻量化的2D卷积神经网络", "target": "跨模态注意力机制的特征融合网络", "type": "包含"},
+        {"source": "MEESP下采样模块", "target": "通道混洗", "type": "包含"},
+        {"source": "MEESP下采样模块", "target": "全局平均池化", "type": "包含"},
+        {"source": "MEESP下采样模块", "target": "全局最大池化", "type": "包含"},
+        {"source": "轻量化的2D卷积神经网络", "target": "特征转换分析模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "下采样模块", "en": "Downsample Module"},
+        {"title": "通道注意力和空间注意力机制", "en": "Channel Attention and Spatial Attention Mechanism"},
+        {"title": "MobileSOSA特征映射模块", "en": "MobileSOSA Feature Mapping Module"},
+        {"title": "2D轻量化卷积神经网络整体框架", "en": "2D Lightweight Convolutional Neural Network Overall Framework"},
+        {"title": "ImageNet数据集", "en": "ImageNet Dataset"},
+        {"title": "卷积神经网络", "en": "Convolutional Neural Network"},
+        {"title": "特征图", "en": "Feature Map"},
+        {"title": "卷积操作", "en": "Convolution Operation"},
+        {"title": "通道混洗", "en": "Channel Shuffle"},
+        {"title": "全连接层", "en": "Fully Connected Layer"},
+        {"title": "分类", "en": "Classification"}
+    ],
+    "relations": [
+        {"source": "下采样模块", "target": "通道注意力和空间注意力机制", "type": "包含"},
+        {"source": "下采样模块", "target": "MobileSOSA特征映射模块", "type": "包含"},
+        {"source": "MobileSOSA特征映射模块", "target": "通道混洗", "type": "包含"},
+        {"source": "2D轻量化卷积神经网络整体框架", "target": "ImageNet数据集", "type": "应用于"},
+        {"source": "2D轻量化卷积神经网络整体框架", "target": "卷积神经网络", "type": "包含"},
+        {"source": "2D轻量化卷积神经网络整体框架", "target": "全连接层", "type": "包含"},
+        {"source": "2D轻量化卷积神经网络整体框架", "target": "分类", "type": "应用于"},
+        {"source": "卷积操作", "target": "特征图", "type": "产生"},
+        {"source": "MobileSOSA特征映射模块", "target": "特征图", "type": "处理"},
+        {"source": "下采样模块", "target": "特征图", "type": "处理"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "ASPP结构",
+            "en": "ASPP structure"
+        },
+        {
+            "title": "M-SOSANet",
+            "en": "M-SOSANet"
+        },
+        {
+            "title": "DeepLabV3",
+            "en": "DeepLabV3"
+        },
+        {
+            "title": "图像分类",
+            "en": "Image classification"
+        },
+        {
+            "title": "CIFAR-10",
+            "en": "CIFAR-10"
+        },
+        {
+            "title": "CIFAR-100",
+            "en": "CIFAR-100"
+        },
+        {
+            "title": "ImageNet",
+            "en": "ImageNet"
+        },
+        {
+            "title": "数据增强",
+            "en": "Data augmentation"
+        },
+        {
+            "title": "SGD",
+            "en": "Stochastic gradient descent"
+        },
+        {
+            "title": "Flops",
+            "en": "Flops"
+        },
+        {
+            "title": "mixup",
+            "en": "Mixup"
+        },
+        {
+            "title": "GPUs",
+            "en": "GPUs"
+        },
+        {
+            "title": "batchsize",
+            "en": "Batch size"
+        },
+        {
+            "title": "权值衰减",
+            "en": "Weight decay"
+        },
+        {
+            "title": "动量",
+            "en": "Momentum"
+        },
+        {
+            "title": "学习率",
+            "en": "Learning rate"
+        },
+        {
+            "title": "warmup",
+            "en": "Warmup"
+        }
+    ],
+    "relations": [
+        {
+            "source": "ASPP结构",
+            "target": "M-SOSANet",
+            "type": "包含"
+        },
+        {
+            "source": "ASPP结构",
+            "target": "DeepLabV3",
+            "type": "相似"
+        },
+        {
+            "source": "图像分类",
+            "target": "CIFAR-10",
+            "type": "包含"
+        },
+        {
+            "source": "图像分类",
+            "target": "CIFAR-100",
+            "type": "包含"
+        },
+        {
+            "source": "图像分类",
+            "target": "ImageNet",
+            "type": "包含"
+        },
+        {
+            "source": "CIFAR-10",
+            "target": "数据增强",
+            "type": "使用"
+        },
+        {
+            "source": "CIFAR-10",
+            "target": "SGD",
+            "type": "使用"
+        },
+        {
+            "source": "CIFAR-10",
+            "target": "Flops",
+            "type": "性能对比"
+        },
+        {
+            "source": "CIFAR-100",
+            "target": "数据增强",
+            "type": "使用"
+        },
+        {
+            "source": "CIFAR-100",
+            "target": "SGD",
+            "type": "使用"
+        },
+        {
+            "source": "CIFAR-100",
+            "target": "Flops",
+            "type": "性能对比"
+        },
+        {
+            "source": "ImageNet",
+            "target": "数据增强",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "SGD",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "Flops",
+            "type": "性能对比"
+        },
+        {
+            "source": "ImageNet",
+            "target": "mixup",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "GPUs",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "batchsize",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "权值衰减",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "动量",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "学习率",
+            "type": "使用"
+        },
+        {
+            "source": "ImageNet",
+            "target": "warmup",
+            "type": "使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "混合精度训练", "en": "Mixed precision training"},
+        {"title": "语义分割", "en": "Semantic segmentation"},
+        {"title": "PascalVOC2012数据集", "en": "PascalVOC2012 dataset"},
+        {"title": "M-SOSANet", "en": "M-SOSANet"},
+        {"title": "2D卷积神经网络", "en": "2D convolutional neural network"},
+        {"title": "3D卷积神经网络", "en": "3D convolutional neural network"}
+    ],
+    "relations": [
+        {"source": "混合精度训练", "target": "Communication Theory", "type": "related"},
+        {"source": "语义分割", "target": "Communication Theory", "type": "related"},
+        {"source": "PascalVOC2012数据集", "target": "Communication Theory", "type": "related"},
+        {"source": "M-SOSANet", "target": "Communication Theory", "type": "related"},
+        {"source": "2D卷积神经网络", "target": "Communication Theory", "type": "related"},
+        {"source": "3D卷积神经网络", "target": "Communication Theory", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "3D卷积神经网络", "en": "3D Convolutional Neural Network"},
+        {"title": "视频数据采样策略", "en": "Video Data Sampling Strategy"},
+        {"title": "关键帧提取方法", "en": "Keyframe Extraction Method"},
+        {"title": "3D神经网络设计", "en": "3D Neural Network Design"}
+    ],
+    "relations": [
+        {"source": "视频数据采样策略", "target": "3D卷积神经网络", "type": "包含"},
+        {"source": "3D卷积神经网络", "target": "关键帧提取方法", "type": "依赖"},
+        {"source": "3D神经网络设计", "target": "3D卷积神经网络", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Regnet中的stem部分", "en": "Stem part in Regnet"},
+        {"title": "3D卷积神经网络的body部分", "en": "Body part of 3D convolutional neural network"},
+        {"title": "ResBottleneckBlock", "en": "ResBottleneckBlock"},
+        {"title": "3D卷积神经网络的整体框架", "en": "Overall framework of 3D convolutional neural network"},
+        {"title": "SomethingSomethingV2数据集", "en": "SomethingSomethingV2 dataset"},
+        {"title": "Jester数据集", "en": "Jester dataset"}
+    ],
+    "relations": [
+        {"source": "Regnet中的stem部分", "target": "3D卷积神经网络的body部分", "type": "包含"},
+        {"source": "3D卷积神经网络的body部分", "target": "ResBottleneckBlock", "type": "包含"},
+        {"source": "ResBottleneckBlock", "target": "3D卷积神经网络的整体框架", "type": "包含"},
+        {"source": "SomethingSomethingV2数据集", "target": "Jester数据集", "type": "相似"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Jester数据集", "en": "Jester dataset"},
+        {"title": "数据集收集方式", "en": "Data collection method"},
+        {"title": "数据集内容", "en": "Dataset content"},
+        {"title": "数据集目的", "en": "Dataset purpose"},
+        {"title": "神经网络模型训练过程", "en": "Neural network model training process"},
+        {"title": "图像大小对模型计算量的影响", "en": "Impact of image size on model computation"},
+        {"title": "UCF-101数据集", "en": "UCF-101 dataset"},
+        {"title": "迁移学习能力验证", "en": "Verification of transfer learning ability"},
+        {"title": "卷积神经网络性能比较", "en": "Comparison of convolutional neural network performance"}
+    ],
+    "relations": [
+        {"source": "Jester数据集", "target": "数据集收集方式", "type": "包含"},
+        {"source": "Jester数据集", "target": "数据集内容", "type": "包含"},
+        {"source": "Jester数据集", "target": "数据集目的", "type": "包含"},
+        {"source": "神经网络模型训练过程", "target": "Jester数据集", "type": "基于"},
+        {"source": "图像大小对模型计算量的影响", "target": "神经网络模型训练过程", "type": "影响"},
+        {"source": "UCF-101数据集", "target": "数据集内容", "type": "包含"},
+        {"source": "迁移学习能力验证", "target": "UCF-101数据集", "type": "基于"},
+        {"source": "卷积神经网络性能比较", "target": "UCF-101数据集", "type": "基于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "轻量化3D卷积神经网络", "en": "Lightweight 3D Convolutional Neural Network"},
+        {"title": "音频分类", "en": "Audio Classification"},
+        {"title": "知识蒸馏", "en": "Knowledge Distillation"}
+    ],
+    "relations": [
+        {"source": "轻量化3D卷积神经网络", "target": "视频数据的输入形式", "type": "影响"},
+        {"source": "轻量化3D卷积神经网络", "target": "视频行为识别算法", "type": "包含"},
+        {"source": "轻量化3D卷积神经网络", "target": "动作分类算法", "type": "包含"},
+        {"source": "轻量化3D卷积神经网络", "target": "音频分类网路", "type": "结合"},
+        {"source": "音频分类", "target": "声音场景分类", "type": "包含"},
+        {"source": "音频分类", "target": "音频模式识别", "type": "包含"},
+        {"source": "知识蒸馏", "target": "轻量型卷积神经网络", "type": "结合"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "基于AudioSet数据集预训练的优势",
+            "en": "Advantages of pre-training based on AudioSet dataset"
+        },
+        {
+            "title": "知识蒸馏KD",
+            "en": "Knowledge Distillation (KD)"
+        },
+        {
+            "title": "知识蒸馏KD的目标",
+            "en": "Objectives of Knowledge Distillation (KD)"
+        },
+        {
+            "title": "知识蒸馏KD的流程",
+            "en": "Process of Knowledge Distillation (KD)"
+        },
+        {
+            "title": "使用RegNetX-400M作为学生模型",
+            "en": "Using RegNetX-400M as the student model"
+        },
+        {
+            "title": "使用CnnlO作为教师模型",
+            "en": "Using CnnlO as the teacher model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "基于AudioSet数据集预训练的优势",
+            "target": "知识蒸馏KD",
+            "type": "相关"
+        },
+        {
+            "source": "知识蒸馏KD",
+            "target": "知识蒸馏KD的目标",
+            "type": "包含"
+        },
+        {
+            "source": "知识蒸馏KD",
+            "target": "知识蒸馏KD的流程",
+            "type": "包含"
+        },
+        {
+            "source": "知识蒸馏KD的目标",
+            "target": "使用RegNetX-400M作为学生模型",
+            "type": "实现"
+        },
+        {
+            "source": "使用CnnlO作为教师模型",
+            "target": "知识蒸馏KD的流程",
+            "type": "实现"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "知识转移学习训练", "en": "Knowledge transfer learning training"},
+        {"title": "卷积神经网络在音频场景分类上的性能对比", "en": "Performance comparison of convolutional neural networks in audio scene classification"},
+        {"title": "构建轻量型的卷积神经网络模型", "en": "Building a lightweight convolutional neural network model"},
+        {"title": "视频描述任务", "en": "Video description task"},
+        {"title": "跨模态注意力融合机制", "en": "Cross-modal attention fusion mechanism"}
+    ],
+    "relations": [
+        {"source": "知识转移学习训练", "target": "卷积神经网络在音频场景分类上的性能对比", "type": "相关"},
+        {"source": "卷积神经网络在音频场景分类上的性能对比", "target": "构建轻量型的卷积神经网络模型", "type": "相关"},
+        {"source": "视频描述任务", "target": "跨模态注意力融合机制", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "视频描述任务编码器-解码器结构", "en": "Encoder-Decoder Structure for Video Description Task"},
+        {"title": "RNN结构", "en": "RNN Structure"},
+        {"title": "Transformer结构", "en": "Transformer Structure"},
+        {"title": "DeLight结构", "en": "DeLight Structure"},
+        {"title": "跨模态注意力机制", "en": "Cross-Modal Attention Mechanism"}
+    ],
+    "relations": [
+        {"source": "视频描述任务编码器-解码器结构", "target": "RNN结构", "type": "包含"},
+        {"source": "视频描述任务编码器-解码器结构", "target": "Transformer结构", "type": "包含"},
+        {"source": "Transformer结构", "target": "RNN结构", "type": "替代"},
+        {"source": "Transformer结构", "target": "DeLight结构", "type": "替代"},
+        {"source": "DeLight结构", "target": "Transformer结构", "type": "包含"},
+        {"source": "跨模态注意力机制", "target": "视频描述任务编码器-解码器结构", "type": "应用于"},
+        {"source": "跨模态注意力机制", "target": "DeLight结构", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ActivityNetCaptionsdataset®", "en": "ActivityNet Captions dataset"},
+        {"title": "视频描述任务", "en": "Video description task"},
+        {"title": "密集视频描述任务", "en": "Dense video description task"},
+        {"title": "训练集、验证集和测试集", "en": "Training, validation, and testing sets"},
+        {"title": "METEOR、BLEU@3、BLEU@4", "en": "METEOR, BLEU@3, BLEU@4"},
+        {"title": "特征填充", "en": "Feature padding"},
+        {"title": "labelsmooth数据增强", "en": "Label smoothing data augmentation"},
+        {"title": "掩码mask操作", "en": "Mask operation"},
+        {"title": "跨模态注意力机制", "en": "Cross-modal attention mechanism"},
+        {"title": "轻量型注意力机制模型", "en": "Lightweight attention mechanism model"},
+        {"title": "多头注意力机制", "en": "Multi-head attention mechanism"},
+        {"title": "DeLighT", "en": "DeLighT"},
+        {"title": "编码器-解码器架构", "en": "Encoder-decoder architecture"},
+        {"title": "总结", "en": "Summary"}
+    ],
+    "relations": [
+        {"source": "ActivityNetCaptionsdataset®", "target": "视频描述任务", "type": "包含"},
+        {"source": "视频描述任务", "target": "密集视频描述任务", "type": "区别于"},
+        {"source": "ActivityNetCaptionsdataset®", "target": "训练集、验证集和测试集", "type": "包含"},
+        {"source": "视频描述任务", "target": "METEOR、BLEU@3、BLEU@4", "type": "评价指标"},
+        {"source": "特征填充", "target": "跨模态注意力机制", "type": "前置处理"},
+        {"source": "labelsmooth数据增强", "target": "跨模态注意力机制", "type": "数据增强"},
+        {"source": "掩码mask操作", "target": "跨模态注意力机制", "type": "前置处理"},
+        {"source": "跨模态注意力机制", "target": "轻量型注意力机制模型", "type": "改进"},
+        {"source": "轻量型注意力机制模型", "target": "多头注意力机制", "type": "包含"},
+        {"source": "多头注意力机制", "target": "DeLighT", "type": "结合"},
+        {"source": "DeLighT", "target": "编码器-解码器架构", "type": "组成"},
+        {"source": "编码器-解码器架构", "target": "视频描述任务", "type": "应用"},
+        {"source": "总结", "target": "视频描述任务", "type": "总结"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "视频行为识别算法",
+            "en": "Video behavior recognition algorithm"
+        },
+        {
+            "title": "动作分类算法",
+            "en": "Action classification algorithm"
+        },
+        {
+            "title": "知识蒸憾的音频分类模型",
+            "en": "Knowledge distillation-based audio classification model"
+        },
+        {
+            "title": "多模态神经网络模型的视频描述框架",
+            "en": "Video description framework of multimodal neural network model"
+        },
+        {
+            "title": "图像特征抽取",
+            "en": "Image feature extraction"
+        },
+        {
+            "title": "神经网络结构搜索技术",
+            "en": "Neural network architecture search technology"
+        },
+        {
+            "title": "神经网络模型优化和加速",
+            "en": "Optimization and acceleration of neural network models"
+        }
+    ],
+    "relations": [
+        {
+            "source": "视频行为识别算法",
+            "target": "动作分类算法",
+            "type": "包含"
+        },
+        {
+            "source": "视频行为识别算法",
+            "target": "多模态神经网络模型的视频描述框架",
+            "type": "包含"
+        },
+        {
+            "source": "知识蒸憾的音频分类模型",
+            "target": "音频场景分类数据集UrbanSoundSK",
+            "type": "应用"
+        },
+        {
+            "source": "多模态神经网络模型的视频描述框架",
+            "target": "跨模态的注意力机制",
+            "type": "包含"
+        },
+        {
+            "source": "多模态神经网络模型的视频描述框架",
+            "target": "transformer的轻量化",
+            "type": "包含"
+        },
+        {
+            "source": "图像特征抽取",
+            "target": "Kinetic数据集",
+            "type": "应用"
+        },
+        {
+            "source": "神经网络结构搜索技术",
+            "target": "神经网络模型的自动化设计",
+            "type": "包含"
+        },
+        {
+            "source": "神经网络模型优化和加速",
+            "target": "模型的结构设计改造",
+            "type": "包含"
+        },
+        {
+            "source": "神经网络模型优化和加速",
+            "target": "神经网络模型剪枝和量化",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Incremental Network Quantization", "en": ""},
+        {"title": "Exploiting Linear Structure Within Convolutional Networks for Efficient Evaluation", "en": ""},
+        {"title": "Distilling the Knowledge in a Neural Network", "en": ""},
+        {"title": "FitNets: Hints for Thin Deep Nets", "en": ""},
+        {"title": "Cross-Modal Distillation for Supervision Transfer", "en": ""},
+        {"title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", "en": ""},
+        {"title": "Deep Residual Learning for Image Recognition", "en": ""},
+        {"title": "MobileNetV2: Inverted Residuals and Linear Bottlenecks", "en": ""},
+        {"title": "ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices", "en": ""},
+        {"title": "ShuffleNetV2: Practical Guidelines for Efficient CNN Architecture Design", "en": ""},
+        {"title": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks", "en": ""},
+        {"title": "Designing Network Design Spaces", "en": ""},
+        {"title": "Large-Scale Video Classification with Convolutional Neural Networks", "en": ""},
+        {"title": "Two-Stream Convolutional Networks for Action Recognition in Videos", "en": ""},
+        {"title": "Learning Spatiotemporal Features with 3D Convolutional Networks", "en": ""},
+        {"title": "Temporal Segment Networks: Towards Good Practices for Deep Action Recognition", "en": ""},
+        {"title": "ActionVLAD: Learning Spatio-Temporal Aggregation for Action Classification", "en": ""},
+        {"title": "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset", "en": ""}
+    ],
+    "relations": [
+        {"source": "Incremental Network Quantization", "target": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks", "type": "related"},
+        {"source": "Exploiting Linear Structure Within Convolutional Networks for Efficient Evaluation", "target": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", "type": "related"},
+        {"source": "Distilling the Knowledge in a Neural Network", "target": "FitNets: Hints for Thin Deep Nets", "type": "related"},
+        {"source": "Distilling the Knowledge in a Neural Network", "target": "Cross-Modal Distillation for Supervision Transfer", "type": "related"},
+        {"source": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", "target": "MobileNetV2: Inverted Residuals and Linear Bottlenecks", "type": "related"},
+        {"source": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", "target": "ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices", "type": "related"},
+        {"source": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications", "target": "ShuffleNetV2: Practical Guidelines for Efficient CNN Architecture Design", "type": "related"},
+        {"source": "Deep Residual Learning for Image Recognition", "target": "MobileNetV2: Inverted Residuals and Linear Bottlenecks", "type": "related"},
+        {"source": "ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices", "target": "ShuffleNetV2: Practical Guidelines for Efficient CNN Architecture Design", "type": "related"},
+        {"source": "Designing Network Design Spaces", "target": "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks", "type": "related"},
+        {"source": "Large-Scale Video Classification with Convolutional Neural Networks", "target": "Two-Stream Convolutional Networks for Action Recognition in Videos", "type": "related"},
+        {"source": "Large-Scale Video Classification with Convolutional Neural Networks", "target": "Learning Spatiotemporal Features with 3D Convolutional Networks", "type": "related"},
+        {"source": "Large-Scale Video Classification with Convolutional Neural Networks", "target": "Temporal Segment Networks: Towards Good Practices for Deep Action Recognition", "type": "related"},
+        {"source": "Two-Stream Convolutional Networks for Action Recognition in Videos", "target": "Learning Spatiotemporal Features with 3D Convolutional Networks", "type": "related"},
+        {"source": "Learning Spatiotemporal Features with 3D Convolutional Networks", "target": "Temporal Segment Networks: Towards Good Practices for Deep Action Recognition", "type": "related"},
+        {"source": "ActionVLAD: Learning Spatio-Temporal Aggregation for Action Classification", "target": "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset", "type": "related"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "X3D: 扩展架构用于高效视频识别", "en": "X3D: Expanding Architectures for Efficient Video Recognition"},
+        {"title": "资源高效的3D卷积神经网络", "en": "Resource Efficient 3D Convolutional Neural Networks"},
+        {"title": "BERT: 深度双向转换器的预训练", "en": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"},
+        {"title": "使用概率知识转移学习学习深度表示", "en": "Learning Deep Representations with Probabilistic Knowledge Transfer"},
+        {"title": "PANNs: 大规模预训练音频神经网络用于音频模式识别", "en": "PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition"},
+        {"title": "使用双模态Transformer进行密集视频字幕生成", "en": "A Better Use of Audio-Visual Cues: Dense Video Captioning with Bi-modal Transformer"},
+        {"title": "DeLighT: 非常深且轻量级的Transformer", "en": "DeLighT: Very Deep and Light-weight Transformer"},
+        {"title": "Attention Is All You Need", "en": "Attention Is All You Need"},
+        {"title": "在Moments in Time数据集上进行大规模短视频活动识别", "en": "Activity Recognition on a Large Scale in Short Videos - Moments in Time Dataset"}
+    ],
+    "relations": [
+        {"source": "X3D: 扩展架构用于高效视频识别", "target": "资源高效的3D卷积神经网络", "type": "引申"},
+        {"source": "资源高效的3D卷积神经网络", "target": "PANNs: 大规模预训练音频神经网络用于音频模式识别", "type": "引申"},
+        {"source": "BERT: 深度双向转换器的预训练", "target": "使用概率知识转移学习学习深度表示", "type": "引申"},
+        {"source": "使用概率知识转移学习学习深度表示", "target": "DeLighT: 非常深且轻量级的Transformer", "type": "引申"},
+        {"source": "使用双模态Transformer进行密集视频字幕生成", "target": "Attention Is All You Need", "type": "引申"},
+        {"source": "在Moments in Time数据集上进行大规模短视频活动识别", "target": "X3D: 扩展架构用于高效视频识别", "type": "引申"}
+    ]
+}

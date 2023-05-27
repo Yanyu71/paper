@@ -1,0 +1,20 @@
+3.2.3测试步骤
+测试步骤如下：
+1)UE已经初始化了 IMS注册，SS等待UE发起REGISTER请求。
+2)SS 收到 REGISTER 请求之后回复一条 401 Unauthorized?
+3)SS等待UE发送第二次注册请求，该请求表明SS回复的401 Unauthorized 无效。
+4)SS收到第二条REGISTER之后继续回复401 Unauthorized□
+5)SS等待UE发送第二次注册请求，该请求表面SS回复的401 Unauthorized 无效。注：从此点之后SS忽略该UE的任何注册请求。
+6)SS发送一条403 Forbidden到该UE使得该UE在测试例结束后处于稳 定状态。
+详细的信令流程及测试点如下面的表3-1所示。
+表3-1 鉴权测试例详细信令流程
+步骤	方向	信令	注释	测试点
+1	上行	REGISTER	UE请求IMS服务	　　　测试点1
+2	下行	401 Unauthorized	　　SS回复无效的
+MAC值，以表明 无效的
+AKAvl-MD5 身份 质询
+3	上行	REGISTER	该消息不包含 "abuts”和 "response” 授权 头分量参数，即没 有质询回复	测试点2
+4	下行	401 Unauthorized	　　　同步骤2
+5	上行	REGISTER	　　　同步骤3	测试点3
+6	下行	403 Forbidden	从此UE处于稳定 状态（即不再发送
+IMS注册请求）

@@ -1,0 +1,1874 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "物联网",
+            "en": "Internet of Things"
+        },
+        {
+            "title": "智能感知能力",
+            "en": "Intelligent sensing capability"
+        },
+        {
+            "title": "物联广域网",
+            "en": "IoT wide area network"
+        },
+        {
+            "title": "市场前景",
+            "en": "Market prospects"
+        },
+        {
+            "title": "物联网落地元年",
+            "en": "The first year of IoT landing"
+        },
+        {
+            "title": "政策支持",
+            "en": "Policy support"
+        },
+        {
+            "title": "智能家居",
+            "en": "Smart home"
+        },
+        {
+            "title": "联盟发展",
+            "en": "Alliance development"
+        },
+        {
+            "title": "联网解决方案",
+            "en": "Networking solutions"
+        },
+        {
+            "title": "平台发展",
+            "en": "Platform development"
+        },
+        {
+            "title": "软硬件产品发展",
+            "en": "Software and hardware product development"
+        }
+    ],
+    "relations": [
+        {
+            "source": "物联网",
+            "target": "智能感知能力",
+            "type": "包含"
+        },
+        {
+            "source": "物联网",
+            "target": "物联广域网",
+            "type": "包含"
+        },
+        {
+            "source": "物联网",
+            "target": "市场前景",
+            "type": "相关"
+        },
+        {
+            "source": "市场前景",
+            "target": "物联网落地元年",
+            "type": "包含"
+        },
+        {
+            "source": "政策支持",
+            "target": "物联网",
+            "type": "相关"
+        },
+        {
+            "source": "政策支持",
+            "target": "智能家居",
+            "type": "相关"
+        },
+        {
+            "source": "智能家居",
+            "target": "物联网",
+            "type": "包含"
+        },
+        {
+            "source": "联盟发展",
+            "target": "物联网",
+            "type": "相关"
+        },
+        {
+            "source": "联网解决方案",
+            "target": "物联网",
+            "type": "相关"
+        },
+        {
+            "source": "平台发展",
+            "target": "物联网",
+            "type": "相关"
+        },
+        {
+            "source": "软硬件产品发展",
+            "target": "物联网",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Afero平台", "en": "Afero platform"},
+        {"title": "阿里集团物联网服务平台", "en": "Alibaba Group IoT service platform"},
+        {"title": "IBM Quarks开发工具", "en": "IBM Quarks development tool"},
+        {"title": "长虹UP平台", "en": "Changhong UP platform"},
+        {"title": "NuanceMix物联网开发平台", "en": "NuanceMix IoT development platform"},
+        {"title": "京东智能智能家居解决方案", "en": "JD Smart smart home solution"},
+        {"title": "AylaInsights大数据平台", "en": "AylaInsights big data platform"},
+        {"title": "AndromedaBox平台", "en": "AndromedaBox platform"},
+        {"title": "华为eW-IOT解决方案", "en": "Huawei eW-IOT solution"},
+        {"title": "微信硬件平台开发板计划", "en": "WeChat hardware platform development board plan"},
+        {"title": "安森美半导体即插即用开发工具", "en": "Analog Devices plug-and-play development tool"},
+        {"title": "ARM Cortex-A32芯片", "en": "ARM Cortex-A32 chip"},
+        {"title": "Ring智能门铃", "en": "Ring smart doorbell"},
+        {"title": "微软OpenTranslatorstoThings", "en": "Microsoft OpenTranslatorstoThings"},
+        {"title": "AllSeen技术", "en": "AllSeen technology"}
+    ],
+    "relations": [
+        {"source": "Afero平台", "target": "安全连接物联网", "type": "解决方案"},
+        {"source": "阿里集团物联网服务平台", "target": "物联网时代服务平台", "type": "解决方案"},
+        {"source": "IBM Quarks开发工具", "target": "基于物联网感应数据的高效应用", "type": "解决方案"},
+        {"source": "长虹UP平台", "target": "全球首个开放的物联运营支撑平台", "type": "解决方案"},
+        {"source": "NuanceMix物联网开发平台", "target": "物联网开发平台", "type": "解决方案"},
+        {"source": "京东智能智能家居解决方案", "target": "智能家居解决方案", "type": "解决方案"},
+        {"source": "AylaInsights大数据平台", "target": "物联网数据分析与商业智能解决方案", "type": "解决方案"},
+        {"source": "AndromedaBox平台", "target": "可扩展网关平台", "type": "解决方案"},
+        {"source": "华为eW-IOT解决方案", "target": "统一工业互联平台", "type": "解决方案"},
+        {"source": "微信硬件平台开发板计划", "target": "安全无缝连接微信硬件平台", "type": "解决方案"},
+        {"source": "安森美半导体即插即用开发工具", "target": "部署无线无源传感器方案到任何物联网云平台", "type": "解决方案"},
+        {"source": "ARM Cortex-A32芯片", "target": "物联网CPU", "type": "产品"},
+        {"source": "Ring智能门铃", "target": "智能家居产品", "type": "产品"},
+        {"source": "微软OpenTranslatorstoThings", "target": "简化物联网设备的app开发", "type": "解决方案"},
+        {"source": "AllSeen技术", "target": "智能家居系统方案", "type": "技术"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AUSeen技术", "en": "AUSeen technology"},
+        {"title": "智能家居系统", "en": "Smart home system"},
+        {"title": "AllSeen服务框架", "en": "AllSeen service framework"},
+        {"title": "D-bus总线协议", "en": "D-bus bus protocol"},
+        {"title": "平台中立性", "en": "Platform neutrality"},
+        {"title": "通信协议独立性", "en": "Protocol independence"},
+        {"title": "开发语言独立性", "en": "Language independence"},
+        {"title": "安全性", "en": "Security"},
+        {"title": "网络拓扑结构", "en": "Network topology"},
+        {"title": "应用层", "en": "Application layer"},
+        {"title": "应用服务", "en": "Application service"},
+        {"title": "服务框架", "en": "Service framework"},
+        {"title": "AUSeen核心库", "en": "AUSeen core library"},
+        {"title": "AUSeen路由", "en": "AUSeen routing"}
+    ],
+    "relations": [
+        {"source": "AUSeen技术", "target": "智能家居系统", "type": "基于"},
+        {"source": "AUSeen技术", "target": "AllSeen服务框架", "type": "基础技术"},
+        {"source": "AllSeen服务框架", "target": "D-bus总线协议", "type": "实现协议"},
+        {"source": "AllSeen服务框架", "target": "平台中立性", "type": "实现特性"},
+        {"source": "AllSeen服务框架", "target": "通信协议独立性", "type": "实现特性"},
+        {"source": "AllSeen服务框架", "target": "开发语言独立性", "type": "实现特性"},
+        {"source": "AllSeen服务框架", "target": "安全性", "type": "实现特性"},
+        {"source": "网络拓扑结构", "target": "智能家居系统", "type": "应用于"},
+        {"source": "应用层", "target": "应用服务", "type": "包含"},
+        {"source": "应用层", "target": "服务框架", "type": "包含"},
+        {"source": "应用层", "target": "AUSeen核心库", "type": "包含"},
+        {"source": "应用层", "target": "AUSeen路由", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AllSeen协议栈", "en": "AllSeen Protocol Stack"},
+        {"title": "AllSeen设备|应用服务", "en": "AllSeen Device|Application Service"},
+        {"title": "国服务框架", "en": "National Service Framework"},
+        {"title": "AHSeen核心库", "en": "AHSeen Core Library"},
+        {"title": "AUSeen路由", "en": "AUSeen Routing"},
+        {"title": "传输抽象层", "en": "Transport Abstraction Layer"},
+        {"title": "传输层(有线,无线)", "en": "Transport Layer (Wired, Wireless)"},
+        {"title": "网络层＜IP层和非」P层)", "en": "Network Layer <IP Layer and Non-IP Layer>"},
+        {"title": "数据链路层", "en": "Data Link Layer"},
+        {"title": "AllSeen高层系统框架", "en": "AllSeen High-level System Framework"},
+        {"title": "系统和语言绑定(可选)", "en": "System and Language Binding (Optional)"},
+        {"title": "辅助总线附件", "en": "Auxiliary Bus Attachment"},
+        {"title": "安全代理总线对象", "en": "Secure Proxy Bus Object"},
+        {"title": "信息和路由", "en": "Information and Routing"},
+        {"title": "终端", "en": "Terminal"},
+        {"title": "本地网络传输层", "en": "Local Network Transport Layer"},
+        {"title": "操作系统抽象层", "en": "Operating System Abstraction Layer"},
+        {"title": "本地系统", "en": "Local System"},
+        {"title": "AllSeen标准设备", "en": "AllSeen Standard Device"},
+        {"title": "AllSeen标准应用", "en": "AllSeen Standard Application"},
+        {"title": "应用代码", "en": "Application Code"},
+        {"title": "AllSeen标准服务框架", "en": "AllSeen Standard Service Framework"},
+        {"title": "AllSeen核心标准库", "en": "AllSeen Core Standard Library"},
+        {"title": "AllSeen瘦客户端设备", "en": "AllSeen Thin Client Device"},
+        {"title": "AllSeen瘦应用", "en": "AllSeen Thin Application"},
+        {"title": "AllSeen瘦客户端服务框架", "en": "AllSeen Thin Client Service Framework"},
+        {"title": "AllSeen瘦客户端核心标准库", "en": "AllSeen Thin Client Core Standard Library"},
+        {"title": "AllSeen总线", "en": "AllSeen Bus"},
+        {"title": "AllSeen路由", "en": "AllSeen Routing"},
+        {"title": "D-Bus总线协议", "en": "D-Bus Bus Protocol"},
+        {"title": "分布式总线场景", "en": "Distributed Bus Scene"},
+        {"title": "快速轻量序列化的消息传递方式", "en": "Fast and Lightweight Serialized Message Passing Method"},
+        {"title": "系统总线", "en": "System Bus"},
+        {"title": "会话总线", "en": "Session Bus"},
+        {"title": "广播和发现应用的服务", "en": "Broadcasting and Discovering Application Services"},
+        {"title": "建立会话连接", "en": "Establishing Session Connection"},
+        {"title": "广播信号和数据", "en": "Broadcasting Signals and Data"},
+        {"title": "转发消息", "en": "Forwarding Messages"}
+    ],
+    "relations": [
+        {"source": "AllSeen协议栈", "target": "AHSeen核心库", "type": "包含"},
+        {"source": "AllSeen协议栈", "target": "AUSeen路由", "type": "包含"},
+        {"source": "AllSeen协议栈", "target": "传输抽象层", "type": "包含"},
+        {"source": "AllSeen协议栈", "target": "传输层(有线,无线)", "type": "包含"},
+        {"source": "AllSeen协议栈", "target": "网络层＜IP层和非」P层)", "type": "包含"},
+        {"source": "AllSeen协议栈", "target": "数据链路层", "type": "包含"},
+        {"source": "AllSeen协议栈", "target": "AllSeen高层系统框架", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "系统和语言绑定(可选)", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "辅助总线附件", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "安全代理总线对象", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "信息和路由", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "终端", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "本地网络传输层", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "操作系统抽象层", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "本地系统", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "AllSeen标准设备", "type": "包含"},
+        {"source": "AllSeen高层系统框架", "target": "AllSeen瘦客户端设备", "type": "包含"},
+        {"source": "AllSeen标准设备", "target": "AllSeen标准应用", "type": "包含"},
+        {"source": "AllSeen标准应用", "target": "应用代码", "type": "包含"},
+        {"source": "AllSeen标准应用", "target": "AllSeen标准服务框架", "type": "包含"},
+        {"source": "AllSeen标准服务框架", "target": "AllSeen核心标准库", "type": "包含"},
+        {"source": "AllSeen瘦客户端设备", "target": "AllSeen瘦应用", "type": "包含"},
+        {"source": "AllSeen瘦应用", "target": "应用代码", "type": "包含"},
+        {"source": "AllSeen瘦应用", "target": "AllSeen瘦客户端服务框架", "type": "包含"},
+        {"source": "AllSeen瘦客户端服务框架", "target": "AllSeen瘦客户端核心标准库", "type": "包含"},
+        {"source": "AllSeen总线", "target": "AllSeen路由", "type": "包含"},
+        {"source": "AllSeen路由", "target": "D-Bus总线协议", "type": "基于"},
+        {"source": "AllSeen路由", "target": "分布式总线场景", "type": "基于"},
+        {"source": "AllSeen路由", "target": "快速轻量序列化的消息传递方式", "type": "基于"},
+        {"source": "AllSeen总线", "target": "系统总线", "type": "包含"},
+        {"source": "AllSeen总线", "target": "会话总线", "type": "包含"},
+        {"source": "AllSeen路由", "target": "广播和发现应用的服务", "type": "实现"},
+        {"source": "AllSeen路由", "target": "建立会话连接", "type": "实现"},
+        {"source": "AllSeen路由", "target": "广播信号和数据", "type": "实现"},
+        {"source": "AllSeen路由", "target": "转发消息", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "应用服务框架", "en": "Application Service Framework"},
+        {"title": "AllSeen瘦客户端核心库", "en": "AllSeen Thin Client Core Library"},
+        {"title": "AHSeen核心库", "en": "AHSeen Core Library"},
+        {"title": "AHSeen路由", "en": "AHSeen Router"},
+        {"title": "总线附件", "en": "Bus Attachment"},
+        {"title": "WKN名称", "en": "WKN Name"},
+        {"title": "AllSeen总线对象", "en": "AllSeen Bus Object"},
+        {"title": "代理总线对象", "en": "Proxy Bus Object"},
+        {"title": "AUSeen总线接口成员", "en": "AllSeen Bus Interface Members"}
+    ],
+    "relations": [
+        {"source": "应用服务框架", "target": "AllSeen瘦客户端核心库", "type": "包含"},
+        {"source": "应用服务框架", "target": "AHSeen核心库", "type": "包含"},
+        {"source": "应用服务框架", "target": "AHSeen路由", "type": "包含"},
+        {"source": "AHSeen路由", "target": "总线附件", "type": "包含"},
+        {"source": "总线附件", "target": "WKN名称", "type": "包含"},
+        {"source": "AllSeen总线对象", "target": "代理总线对象", "type": "实现"},
+        {"source": "AUSeen总线接口成员", "target": "AllSeen总线对象", "type": "定义"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "总线方法",
+            "en": "Bus Method"
+        },
+        {
+            "title": "总线信号",
+            "en": "Bus Signal"
+        },
+        {
+            "title": "总线属性",
+            "en": "Bus Property"
+        },
+        {
+            "title": "Event-Action机制",
+            "en": "Event-Action Mechanism"
+        },
+        {
+            "title": "AllSeen基本数据",
+            "en": "AllSeen Basic Data"
+        },
+        {
+            "title": "AllSeen数据结构",
+            "en": "AllSeen Data Structure"
+        },
+        {
+            "title": "AllSeen数据类型",
+            "en": "AllSeen Data Types"
+        },
+        {
+            "title": "AllSeen数据匹配",
+            "en": "AllSeen Data Matching"
+        }
+    ],
+    "relations": [
+        {
+            "source": "总线方法",
+            "target": "总线信号",
+            "type": "related"
+        },
+        {
+            "source": "总线信号",
+            "target": "单播信号",
+            "type": "subordinate"
+        },
+        {
+            "source": "总线信号",
+            "target": "多播信号",
+            "type": "subordinate"
+        },
+        {
+            "source": "AllSeen基本数据",
+            "target": "AllSeen数据结构",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen基本数据",
+            "target": "AllSeen数据类型",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen数据结构",
+            "target": "AllSeen数据类型",
+            "type": "subordinate"
+        },
+        {
+            "source": "AllSeen数据匹配",
+            "target": "总线方法",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen数据匹配",
+            "target": "总线信号",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen数据匹配",
+            "target": "总线属性",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "对象路径",
+            "en": "Object Path"
+        },
+        {
+            "title": "AUSeen数据报文",
+            "en": "AUSeen Data Message"
+        },
+        {
+            "title": "AllSeen服务框架",
+            "en": "AllSeen Service Framework"
+        },
+        {
+            "title": "总线方法",
+            "en": "Bus Method"
+        },
+        {
+            "title": "总线信号",
+            "en": "Bus Signal"
+        },
+        {
+            "title": "属性",
+            "en": "Property"
+        },
+        {
+            "title": "METHOD_CALL",
+            "en": "METHOD_CALL"
+        },
+        {
+            "title": "METHOD_RETURN",
+            "en": "METHOD_RETURN"
+        },
+        {
+            "title": "SIGNAL",
+            "en": "SIGNAL"
+        },
+        {
+            "title": "ERROR",
+            "en": "ERROR"
+        },
+        {
+            "title": "字节顺序标识",
+            "en": "Byte Order Mark"
+        },
+        {
+            "title": "头标识",
+            "en": "Header Flag"
+        },
+        {
+            "title": "协议版本",
+            "en": "Protocol Version"
+        },
+        {
+            "title": "消息体长度",
+            "en": "Message Body Length"
+        },
+        {
+            "title": "头域",
+            "en": "Header Field"
+        },
+        {
+            "title": "NO_REPLY_EXPECTED",
+            "en": "NO_REPLY_EXPECTED"
+        },
+        {
+            "title": "AUTO_START",
+            "en": "AUTO_START"
+        },
+        {
+            "title": "ALLOW_REMOTE_MSG",
+            "en": "ALLOW_REMOTE_MSG"
+        },
+        {
+            "title": "SESSIONLESS",
+            "en": "SESSIONLESS"
+        },
+        {
+            "title": "GLOBAL_BROADCAST",
+            "en": "GLOBAL_BROADCAST"
+        },
+        {
+            "title": "COMPRESSED",
+            "en": "COMPRESSED"
+        },
+        {
+            "title": "ENCRYPTED",
+            "en": "ENCRYPTED"
+        },
+        {
+            "title": "AllSeen数据交互",
+            "en": "AllSeen Data Interaction"
+        },
+        {
+            "title": "服务端应用",
+            "en": "Server Application"
+        },
+        {
+            "title": "总线对象",
+            "en": "Bus Object"
+        },
+        {
+            "title": "AUSeen总线接口",
+            "en": "AUSeen Bus Interface"
+        },
+        {
+            "title": "客户端",
+            "en": "Client"
+        },
+        {
+            "title": "代理总线对象",
+            "en": "Proxy Bus Object"
+        },
+        {
+            "title": "AllSeen路由",
+            "en": "AllSeen Routing"
+        },
+        {
+            "title": "会话状态",
+            "en": "Session State"
+        },
+        {
+            "title": "会话信息",
+            "en": "Session Information"
+        },
+        {
+            "title": "消息序列",
+            "en": "Message Sequence"
+        },
+        {
+            "title": "会话监听器",
+            "en": "Session Listener"
+        },
+        {
+            "title": "方法调用器",
+            "en": "Method Invoker"
+        }
+    ],
+    "relations": [
+        {
+            "source": "对象路径",
+            "target": "总线方法",
+            "type": "包含"
+        },
+        {
+            "source": "对象路径",
+            "target": "总线信号",
+            "type": "包含"
+        },
+        {
+            "source": "对象路径",
+            "target": "属性",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen服务框架",
+            "target": "METHOD_CALL",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen服务框架",
+            "target": "METHOD_RETURN",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen服务框架",
+            "target": "SIGNAL",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen服务框架",
+            "target": "ERROR",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "METHOD_CALL",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "METHOD_RETURN",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "SIGNAL",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "ERROR",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "字节顺序标识",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "头标识",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "协议版本",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "消息体长度",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "头域",
+            "type": "包含"
+        },
+        {
+            "source": "头域",
+            "target": "NO_REPLY_EXPECTED",
+            "type": "包含"
+        },
+        {
+            "source": "头域",
+            "target": "AUTO_START",
+            "type": "包含"
+        },
+        {
+            "source": "头域",
+            "target": "ALLOW_REMOTE_MSG",
+            "type": "包含"
+        },
+        {
+            "source": "头域",
+            "target": "SESSIONLESS",
+            "type": "包含"
+        },
+        {
+            "source": "头域",
+            "target": "GLOBAL_BROADCAST",
+            "type": "包含"
+        },
+        {
+            "source": "头域",
+            "target": "COMPRESSED",
+            "type": "包含"
+        },
+        {
+            "source": "头域",
+            "target": "ENCRYPTED",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen数据交互",
+            "target": "服务端应用",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen数据交互",
+            "target": "客户端",
+            "type": "包含"
+        },
+        {
+            "source": "服务端应用",
+            "target": "总线对象",
+            "type": "包含"
+        },
+        {
+            "source": "服务端应用",
+            "target": "AUSeen总线接口",
+            "type": "包含"
+        },
+        {
+            "source": "客户端",
+            "target": "代理总线对象",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen数据交互",
+            "target": "AllSeen路由",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen数据交互",
+            "target": "会话状态",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen数据交互",
+            "target": "会话信息",
+            "type": "包含"
+        },
+        {
+            "source": "AUSeen数据报文",
+            "target": "消息序列",
+            "type": "包含"
+        },
+        {
+            "source": "服务端应用",
+            "target": "会话监听器",
+            "type": "包含"
+        },
+        {
+            "source": "服务端应用",
+            "target": "方法调用器",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "METHOD_CALL消息",
+            "en": "METHOD_CALL message"
+        },
+        {
+            "title": "选择路由端点",
+            "en": "Select routing endpoint"
+        },
+        {
+            "title": "代理总线",
+            "en": "Proxy bus"
+        },
+        {
+            "title": "IAJ.METHODJ&LL消息",
+            "en": "IAJ.METHODJ&LL message"
+        },
+        {
+            "title": "调用方法",
+            "en": "Call method"
+        },
+        {
+            "title": "方法没有响",
+            "en": "Method has no response"
+        },
+        {
+            "title": "METHOD_RETURN消息",
+            "en": "METHOD_RETURN message"
+        },
+        {
+            "title": "输出参数",
+            "en": "Output parameter"
+        },
+        {
+            "title": "AllSeen通过总线方法进行数据交换",
+            "en": "Data exchange through bus method in AllSeen"
+        },
+        {
+            "title": "总线信号",
+            "en": "Bus signal"
+        },
+        {
+            "title": "服务端",
+            "en": "Server"
+        },
+        {
+            "title": "总线对象",
+            "en": "Bus object"
+        },
+        {
+            "title": "总线接口",
+            "en": "Bus interface"
+        },
+        {
+            "title": "近邻网络",
+            "en": "Neighborhood network"
+        },
+        {
+            "title": "会话监听器",
+            "en": "Session listener"
+        },
+        {
+            "title": "客户端",
+            "en": "Client"
+        },
+        {
+            "title": "信号监听器",
+            "en": "Signal listener"
+        },
+        {
+            "title": "SIGNAL信号",
+            "en": "SIGNAL signal"
+        },
+        {
+            "title": "总线属性",
+            "en": "Bus property"
+        },
+        {
+            "title": "setter",
+            "en": "Setter"
+        },
+        {
+            "title": "getter",
+            "en": "Getter"
+        },
+        {
+            "title": "AllSeen基本机制",
+            "en": "Basic mechanism of AllSeen"
+        },
+        {
+            "title": "AllSeen广播发现机制",
+            "en": "Broadcast and discovery mechanism of AllSeen"
+        },
+        {
+            "title": "WKN",
+            "en": "WKN"
+        },
+        {
+            "title": "unique名称",
+            "en": "Unique name"
+        },
+        {
+            "title": "名字服务",
+            "en": "Name service"
+        },
+        {
+            "title": "WHO-HAS",
+            "en": "WHO-HAS"
+        },
+        {
+            "title": "IS-AT",
+            "en": "IS-AT"
+        },
+        {
+            "title": "消息类型",
+            "en": "Message type"
+        },
+        {
+            "title": "报文格式",
+            "en": "Message format"
+        },
+        {
+            "title": "AHSeen发现协议版本号",
+            "en": "AHSeen discovery protocol version number"
+        },
+        {
+            "title": "名字服务版本号",
+            "en": "Name service version number"
+        },
+        {
+            "title": "寻求的服务数量",
+            "en": "Number of services sought"
+        },
+        {
+            "title": "提供的服务数量",
+            "en": "Number of services provided"
+        },
+        {
+            "title": "IS-AT回答的有效时间期",
+            "en": "Effective time period of IS-AT response"
+        },
+        {
+            "title": "WKN广播设定的周期时间",
+            "en": "Period time set by WKN broadcast"
+        },
+        {
+            "title": "消息有效期",
+            "en": "Message validity period"
+        }
+    ],
+    "relations": [
+        {
+            "source": "METHOD_CALL消息",
+            "target": "选择路由端点",
+            "type": "包含"
+        },
+        {
+            "source": "代理总线",
+            "target": "IAJ.METHODJ&LL消息",
+            "type": "产生"
+        },
+        {
+            "source": "代理总线",
+            "target": "选择路由端点",
+            "type": "包含"
+        },
+        {
+            "source": "IAJ.METHODJ&LL消息",
+            "target": "调用方法",
+            "type": "包含"
+        },
+        {
+            "source": "调用方法",
+            "target": "方法没有响",
+            "type": "可能导致"
+        },
+        {
+            "source": "调用方法",
+            "target": "METHOD_RETURN消息",
+            "type": "产生"
+        },
+        {
+            "source": "METHOD_RETURN消息",
+            "target": "输出参数",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen通过总线方法进行数据交换",
+            "target": "总线方法",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen通过总线方法进行数据交换",
+            "target": "数据交换",
+            "type": "包含"
+        },
+        {
+            "source": "总线信号",
+            "target": "服务端",
+            "type": "产生"
+        },
+        {
+            "source": "总线对象",
+            "target": "总线接口",
+            "type": "实现"
+        },
+        {
+            "source": "服务端",
+            "target": "总线对象",
+            "type": "使用"
+        },
+        {
+            "source": "服务端",
+            "target": "近邻网络",
+            "type": "广播"
+        },
+        {
+            "source": "服务端",
+            "target": "会话监听器",
+            "type": "设置"
+        },
+        {
+            "source": "客户端",
+            "target": "信号监听器",
+            "type": "注册"
+        },
+        {
+            "source": "客户端",
+            "target": "近邻网络",
+            "type": "检测"
+        },
+        {
+            "source": "客户端",
+            "target": "服务端",
+            "type": "建立会话"
+        },
+        {
+            "source": "客户端",
+            "target": "路由接收信号",
+            "type": "设置"
+        },
+        {
+            "source": "服务端",
+            "target": "SIGNAL信号",
+            "type": "发送"
+        },
+        {
+            "source": "SIGNAL信号",
+            "target": "总线",
+            "type": "传送"
+        },
+        {
+            "source": "总线属性",
+            "target": "setter",
+            "type": "修改"
+        },
+        {
+            "source": "总线属性",
+            "target": "getter",
+            "type": "获取"
+        },
+        {
+            "source": "AllSeen广播发现机制",
+            "target": "WKN",
+            "type": "支持"
+        },
+        {
+            "source": "AllSeen广播发现机制",
+            "target": "unique名称",
+            "type": "支持"
+        },
+        {
+            "source": "名字服务",
+            "target": "路由",
+            "type": "支持"
+        },
+        {
+            "source": "路由",
+            "target": "WHO-HAS",
+            "type": "广播"
+        },
+        {
+            "source": "路由",
+            "target": "IS-AT",
+            "type": "广播"
+        },
+        {
+            "source": "WHO-HAS",
+            "target": "路由",
+            "type": "接收"
+        },
+        {
+            "source": "IS-AT",
+            "target": "路由",
+            "type": "接收"
+        },
+        {
+            "source": "WHO-HAS",
+            "target": "寻求的服务数量",
+            "type": "包含"
+        },
+        {
+            "source": "IS-AT",
+            "target": "提供的服务数量",
+            "type": "包含"
+        },
+        {
+            "source": "IS-AT",
+            "target": "IS-AT回答的有效时间期",
+            "type": "包含"
+        },
+        {
+            "source": "WKN广播设定的周期时间",
+            "target": "消息有效期",
+            "type": "共同决定"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "IS-AT消息格式", "en": "IS-AT message format"},
+        {"title": "WHO-HAS消息格式", "en": "WHO-HAS message format"},
+        {"title": "Adc_Validity_Period参数", "en": "Adc_Validity_Period parameter"},
+        {"title": "Adv_Msg_Retransmit_Interval参数", "en": "Adv_Msg_Retransmit_Interval parameter"},
+        {"title": "FindAdvertiseName(WKN/WKN前缀)", "en": "FindAdvertiseName(WKN/WKN prefix)"},
+        {"title": "FoundAdvertiseameAPI", "en": "FoundAdvertiseameAPI"},
+        {"title": "Disc_Msg_Number_Of_Retries参数", "en": "Disc_Msg_Number_Of_Retries parameter"},
+        {"title": "DiscMsgRetry_Interval参数", "en": "DiscMsgRetry_Interval parameter"},
+        {"title": "基于About的广播和发现", "en": "About-based broadcasting and discovery"}
+    ],
+    "relations": [
+        {"source": "IS-AT消息格式", "target": "WHO-HAS消息格式", "type": "defines"},
+        {"source": "IS-AT消息格式", "target": "Adc_Validity_Period参数", "type": "uses"},
+        {"source": "IS-AT消息格式", "target": "Adv_Msg_Retransmit_Interval参数", "type": "uses"},
+        {"source": "WHO-HAS消息格式", "target": "Disc_Msg_Number_Of_Retries参数", "type": "uses"},
+        {"source": "WHO-HAS消息格式", "target": "DiscMsgRetry_Interval参数", "type": "uses"},
+        {"source": "FindAdvertiseName(WKN/WKN前缀)", "target": "WHO-HAS消息格式", "type": "generates"},
+        {"source": "FoundAdvertiseameAPI", "target": "FindAdvertiseName(WKN/WKN前缀)", "type": "uses"},
+        {"source": "IS-AT消息格式", "target": "FoundAdvertiseameAPI", "type": "triggers"},
+        {"source": "基于About的广播和发现", "target": "About模块", "type": "uses"},
+        {"source": "About模块", "target": "SLS模块", "type": "stores"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SLS模块",
+            "en": "SLS module"
+        },
+        {
+            "title": "About",
+            "en": "About"
+        },
+        {
+            "title": "NGNS",
+            "en": "NGNS"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SLS模块",
+            "target": "服务端应用",
+            "type": "生成"
+        },
+        {
+            "source": "服务端应用",
+            "target": "消费端应用",
+            "type": "连接"
+        },
+        {
+            "source": "服务端应用",
+            "target": "AllSeen应用",
+            "type": "注册总线对象"
+        },
+        {
+            "source": "消费端AS路由",
+            "target": "服务端AS路由",
+            "type": "建立AS会话"
+        },
+        {
+            "source": "服务端AS路由",
+            "target": "消费端AS路由",
+            "type": "建立AS会话"
+        },
+        {
+            "source": "服务端应用",
+            "target": "SLS模块",
+            "type": "发送SLS信号"
+        },
+        {
+            "source": "消费端应用",
+            "target": "SLS模块",
+            "type": "获取声明信息"
+        },
+        {
+            "source": "服务端应用",
+            "target": "SLS模块",
+            "type": "生成一条带有SLSWKN的IS-AT信息"
+        },
+        {
+            "source": "消费端应用",
+            "target": "SLS模块",
+            "type": "添加匹配以获得平会话信号"
+        },
+        {
+            "source": "服务端应用",
+            "target": "SLS模块",
+            "type": "在SLS缓存中存储信号生成SLSWKN"
+        },
+        {
+            "source": "服务端应用",
+            "target": "消费端应用",
+            "type": "传送声明信息"
+        },
+        {
+            "source": "服务端应用",
+            "target": "消费端应用",
+            "type": "连接"
+        },
+        {
+            "source": "消费端应用",
+            "target": "AS核心库",
+            "type": "连接"
+        },
+        {
+            "source": "服务端应用",
+            "target": "AS核心库",
+            "type": "连接"
+        },
+        {
+            "source": "服务端应用",
+            "target": "AllSeen路由",
+            "type": "寻找广播名称(SLSWKN前缀)"
+        },
+        {
+            "source": "消费端应用",
+            "target": "AllSeen路由",
+            "type": "寻找广播名称(名称前缀)"
+        },
+        {
+            "source": "服务端应用",
+            "target": "消费端应用",
+            "type": "回复"
+        },
+        {
+            "source": "服务端应用",
+            "target": "NGNS",
+            "type": "带有NGNS"
+        },
+        {
+            "source": "消费端应用",
+            "target": "NGNS",
+            "type": "带<NGNS"
+        },
+        {
+            "source": "AllSeen应用",
+            "target": "NGNS",
+            "type": "WHO-HAS信息(版本,支持版本,WKN前缀)"
+        },
+        {
+            "source": "NGNS",
+            "target": "AllSeen路由",
+            "type": "WHO-HAS按照相同的NGNS传输表"
+        },
+        {
+            "source": "AllSeen路由",
+            "target": "NGNS",
+            "type": "NGNS通过多播DNS发送基于DNS-SD的查询消息以及名字服务支持的WHO-HAS消息"
+        },
+        {
+            "source": "服务端应用",
+            "target": "AllSeen路由",
+            "type": "寻找广播名称(名称前缀)"
+        },
+        {
+            "source": "消费端应用",
+            "target": "AllSeen路由",
+            "type": "寻找广播名称(名称前缀)"
+        },
+        {
+            "source": "NGNS",
+            "target": "nDNS应答",
+            "type": "回答:PTR,TXT.SRV;addl:\"sender____infb\".\"advertisen…\"文本i己录"
+        },
+        {
+            "source": "NGNS",
+            "target": "nDNS询问",
+            "type": "问题:PTR.addl:\"sender-infb\",\"search\"文本记录"
+        },
+        {
+            "source": "消费端应用",
+            "target": "AllSeen路由",
+            "type": "FindAdvertisedName()初始化消息序列"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "About广播机制", "en": "About Broadcast Mechanism"},
+        {"title": "WKN/unique名称广播", "en": "WKN/Unique Name Broadcast"},
+        {"title": "AllSeen会话机制", "en": "AllSeen Session Mechanism"},
+        {"title": "单点会话和多点会话", "en": "Point-to-Point and Multi-Point Sessions"},
+        {"title": "Onboarding组网服务框架", "en": "Onboarding Network Setup Framework"}
+    ],
+    "relations": [
+        {"source": "About广播机制", "target": "WKN/unique名称广播", "type": "related"},
+        {"source": "WKN/unique名称广播", "target": "AllSeen会话机制", "type": "related"},
+        {"source": "AllSeen会话机制", "target": "单点会话和多点会话", "type": "related"},
+        {"source": "AllSeen会话机制", "target": "Onboarding组网服务框架", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Onboardee设备", "en": "Onboardee device"},
+        {"title": "Onboarder设备", "en": "Onboarder device"},
+        {"title": "Notification通知服务框架", "en": "Notification service framework"},
+        {"title": "AllSeenNotification服务框架", "en": "AllSeenNotification service framework"},
+        {"title": "设备通知产生方", "en": "Device notification producer"},
+        {"title": "设备通知消耗方", "en": "Device notification consumer"},
+        {"title": "Config配置服务框架", "en": "Config service framework"},
+        {"title": "ControlPanel控制服务框架", "en": "ControlPanel service framework"},
+        {"title": "AllSeen服务框架", "en": "AllSeen service framework"},
+        {"title": "网络拓扑结构", "en": "Network topology"},
+        {"title": "协议栈", "en": "Protocol stack"},
+        {"title": "系统框架", "en": "System framework"},
+        {"title": "数据", "en": "Data"},
+        {"title": "广播发现", "en": "Broadcast discovery"},
+        {"title": "会话机制", "en": "Session mechanism"},
+        {"title": "设备转换", "en": "Device conversion"},
+        {"title": "设备发现", "en": "Device discovery"},
+        {"title": "组网", "en": "Networking"},
+        {"title": "通讯", "en": "Communication"},
+        {"title": "控制", "en": "Control"},
+        {"title": "图标获取", "en": "Icon acquisition"},
+        {"title": "心跳机制", "en": "Heartbeat mechanism"},
+        {"title": "异步事件-动作触发", "en": "Asynchronous event-action triggering"},
+        {"title": "分布式多点会话", "en": "Distributed multipoint session"}
+    ],
+    "relations": [
+        {"source": "Onboardee设备", "target": "Onboarder设备", "type": "依靠"},
+        {"source": "Onboarder设备", "target": "目标网络", "type": "选择"},
+        {"source": "Onboarder设备", "target": "目标网络", "type": "建立会话"},
+        {"source": "目标网络", "target": "连接凭证", "type": "提供"},
+        {"source": "目标网络", "target": "密码", "type": "提供"},
+        {"source": "Notification通知服务框架", "target": "设备之间的通讯方式", "type": "提供"},
+        {"source": "AllSeenNotification服务框架", "target": "不针对会话的信号组成", "type": "采用"},
+        {"source": "AllSeenNotification服务框架", "target": "设备通知产生方", "type": "分类"},
+        {"source": "AllSeenNotification服务框架", "target": "设备通知消耗方", "type": "分类"},
+        {"source": "Config配置服务框架", "target": "特定设备的配置和操作PL", "type": "用于执行"},
+        {"source": "ControlPanel控制服务框架", "target": "设备上的应用", "type": "允许通过控件集合向临近的其他设备广播"},
+        {"source": "设备通知产生方", "target": "发送通知", "type": "产生"},
+        {"source": "设备通知消耗方", "target": "接收通知", "type": "消耗"},
+        {"source": "Notification基础服务框架", "target": "通过AllSeen不针对会话的信号形式将通知广播打到网络中", "type": "发送"},
+        {"source": "网络拓扑结构", "target": "AllSeen的整体框架", "type": "阐述"},
+        {"source": "协议栈", "target": "AllSeen的整体框架", "type": "阐述"},
+        {"source": "系统框架", "target": "AllSeen的整体框架", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "基本概念", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "数据", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "广播发现", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "会话机制", "type": "阐述"},
+        {"source": "设备转换", "target": "ZigBee设备", "type": "转换为"},
+        {"source": "设备发现", "target": "AllSeen标准设备", "type": "发现"},
+        {"source": "设备发现", "target": "AllSeen瘦客户端设备", "type": "发现"},
+        {"source": "设备发现", "target": "ZigBee设备", "type": "发现"},
+        {"source": "设备发现", "target": "云端设备", "type": "发现"},
+        {"source": "组网", "target": "AllSeen标准设备", "type": "支持"},
+        {"source": "组网", "target": "AllSeen瘦客户端设备", "type": "支持"},
+        {"source": "组网", "target": "ZigBee设备", "type": "支持"},
+        {"source": "通讯", "target": "AllSeen标准设备", "type": "实现"},
+        {"source": "通讯", "target": "AllSeen瘦客户端设备", "type": "实现"},
+        {"source": "通讯", "target": "ZigBee设备", "type": "实现"},
+        {"source": "控制", "target": "受控方", "type": "实现"},
+        {"source": "控制", "target": "控制方", "type": "实现"},
+        {"source": "图标获取", "target": "获取", "type": "实现"},
+        {"source": "心跳机制", "target": "在线状态", "type": "监测和更新"},
+        {"source": "异步事件-动作触发", "target": "触发", "type": "实现"},
+        {"source": "分布式多点会话", "target": "实现", "type": "具备"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Onboardee设备", "en": "Onboardee device"},
+        {"title": "Onboarder设备", "en": "Onboarder device"},
+        {"title": "Notification通知服务框架", "en": "Notification service framework"},
+        {"title": "AllSeenNotification服务框架", "en": "AllSeenNotification service framework"},
+        {"title": "设备通知产生方", "en": "Device notification producer"},
+        {"title": "设备通知消耗方", "en": "Device notification consumer"},
+        {"title": "Config配置服务框架", "en": "Config service framework"},
+        {"title": "ControlPanel控制服务框架", "en": "ControlPanel service framework"},
+        {"title": "AllSeen服务框架", "en": "AllSeen service framework"},
+        {"title": "网络拓扑结构", "en": "Network topology"},
+        {"title": "协议栈", "en": "Protocol stack"},
+        {"title": "系统框架", "en": "System framework"},
+        {"title": "数据", "en": "Data"},
+        {"title": "广播发现", "en": "Broadcast discovery"},
+        {"title": "会话机制", "en": "Session mechanism"},
+        {"title": "设备转换", "en": "Device conversion"},
+        {"title": "设备发现", "en": "Device discovery"},
+        {"title": "组网", "en": "Networking"},
+        {"title": "通讯", "en": "Communication"},
+        {"title": "控制", "en": "Control"},
+        {"title": "图标获取", "en": "Icon acquisition"},
+        {"title": "心跳机制", "en": "Heartbeat mechanism"},
+        {"title": "异步事件-动作触发", "en": "Asynchronous event-action triggering"},
+        {"title": "分布式多点会话", "en": "Distributed multipoint session"}
+    ],
+    "relations": [
+        {"source": "Onboardee设备", "target": "Onboarder设备", "type": "依靠"},
+        {"source": "Onboarder设备", "target": "目标网络", "type": "选择"},
+        {"source": "Onboarder设备", "target": "目标网络", "type": "建立会话"},
+        {"source": "目标网络", "target": "Onboardee设备", "type": "连接凭证和密码"},
+        {"source": "设备通知产生方", "target": "设备通知消耗方", "type": "发送通知"},
+        {"source": "设备通知消耗方", "target": "应用", "type": "传递信号"},
+        {"source": "AllSeenNotification服务框架", "target": "设备之间通讯", "type": "提供"},
+        {"source": "AllSeenNotification服务框架", "target": "不针对会话的信号组成", "type": "采用"},
+        {"source": "AllSeenNotification服务框架", "target": "事件通知", "type": "发送"},
+        {"source": "AllSeenNotification服务框架", "target": "状态更新", "type": "发送"},
+        {"source": "设备通知产生方", "target": "设备通知消耗方", "type": "不冲突"},
+        {"source": "设备通知产生方", "target": "设备通知消耗方", "type": "独立角色"},
+        {"source": "设备通知产生方", "target": "设备通知消耗方", "type": "承担两个角色"},
+        {"source": "Notification基础服务框架", "target": "AllSeen不针对会话的信号", "type": "通过"},
+        {"source": "AllSeen不针对会话的信号", "target": "网络中注册了通知订阅的设备", "type": "接收"},
+        {"source": "网络中注册了通知订阅的设备", "target": "应用", "type": "传递信号"},
+        {"source": "Config配置服务框架", "target": "特定设备的配置和操作PL", "type": "用于执行"},
+        {"source": "设备密码", "target": "特定设备可设置的属性", "type": "属性"},
+        {"source": "ControlPanel控制服务框架", "target": "AllSeen的四大基础服务框架之一", "type": "属于"},
+        {"source": "ControlPanel控制服务框架", "target": "近邻网络中设备上的应用", "type": "允许"},
+        {"source": "近邻网络中设备", "target": "临近的其他设备", "type": "广播虚拟控制面板"},
+        {"source": "临近的其他设备", "target": "控制方", "type": "渲染虚拟面板"},
+        {"source": "控制方", "target": "受控方", "type": "交互"},
+        {"source": "AllSeen服务框架", "target": "技术基础", "type": "本文的"},
+        {"source": "AllSeen服务框架", "target": "概述", "type": "从概述入手"},
+        {"source": "AllSeen服务框架", "target": "历史来源", "type": "详细介绍"},
+        {"source": "AllSeen服务框架", "target": "网络拓扑结构", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "协议栈", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "系统框架", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "基本概念", "type": "深入了解"},
+        {"source": "AllSeen服务框架", "target": "数据", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "广播发现", "type": "阐述"},
+        {"source": "AllSeen服务框架", "target": "会话机制", "type": "阐述"},
+        {"source": "设备转换", "target": "ZigBee设备", "type": "转换为AllSeen设备"},
+        {"source": "ZigBee设备", "target": "网关虚拟的AllSeen设备", "type": "转换"},
+        {"source": "云端设备", "target": "控制应用", "type": "连接账户"},
+        {"source": "云端设备", "target": "网络数据", "type": "获取"},
+        {"source": "网络数据", "target": "云端设备", "type": "存储数据"},
+        {"source": "设备发现", "target": "标准设备服务", "type": "About机制"},
+        {"source": "标准设备服务", "target": "控制设备", "type": "监听总线"},
+        {"source": "控制设备", "target": "标准设备", "type": "发现"},
+        {"source": "AllSeen瘦客户端设备", "target": "Onboarding服务框架", "type": "借助"},
+        {"source": "Onboarding服务框架", "target": "控制设备", "type": "实时检测周围AP信息"},
+        {"source": "ZigBee协议", "target": "参考", "type": "提供"},
+        {"source": "蓝牙协议", "target": "参考", "type": "提供"},
+        {"source": "Zwave协议", "target": "参考", "type": "提供"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AllSeen服务框架", "en": "AllSeen Service Framework"},
+        {"title": "心跳机制算法", "en": "Heartbeat Mechanism Algorithm"},
+        {"title": "Onboarding框架", "en": "Onboarding Framework"},
+        {"title": "ControlPanel", "en": "ControlPanel"},
+        {"title": "BusObject", "en": "BusObject"},
+        {"title": "Config", "en": "Config"},
+        {"title": "Event-Action机制", "en": "Event-Action Mechanism"},
+        {"title": "Wi-Fi通信协议", "en": "Wi-Fi Communication Protocol"},
+        {"title": "ZigBee通信协议", "en": "ZigBee Communication Protocol"},
+        {"title": "蓝牙通信协议", "en": "Bluetooth Communication Protocol"},
+        {"title": "本地设备", "en": "Local Devices"},
+        {"title": "云端设备", "en": "Cloud Devices"},
+        {"title": "控制设备", "en": "Control Devices"},
+        {"title": "网关", "en": "Gateway"}
+    ],
+    "relations": [
+        {"source": "心跳机制算法", "target": "AllSeen服务框架", "type": "属于"},
+        {"source": "Onboarding框架", "target": "AllSeen服务框架", "type": "属于"},
+        {"source": "心跳机制算法", "target": "本地设备", "type": "监测"},
+        {"source": "Onboarding框架", "target": "本地设备", "type": "实现"},
+        {"source": "控制设备", "target": "本地设备", "type": "交互"},
+        {"source": "ControlPanel", "target": "AllSeen服务框架", "type": "属于"},
+        {"source": "BusObject", "target": "本地设备", "type": "控制"},
+        {"source": "Config", "target": "AllSeen服务框架", "type": "属于"},
+        {"source": "Event-Action机制", "target": "本地设备", "type": "控制"},
+        {"source": "Wi-Fi通信协议", "target": "本地设备", "type": "连接"},
+        {"source": "ZigBee通信协议", "target": "本地设备", "type": "连接"},
+        {"source": "蓝牙通信协议", "target": "本地设备", "type": "连接"},
+        {"source": "本地设备", "target": "网关", "type": "连接"},
+        {"source": "云端设备", "target": "网关", "type": "连接"},
+        {"source": "控制设备", "target": "本地设备", "type": "控制"},
+        {"source": "控制设备", "target": "网关", "type": "交互"},
+        {"source": "AllSeen服务框架", "target": "智能家居系统", "type": "基础"},
+        {"source": "ZigBee通信协议", "target": "智能家居系统", "type": "底层通信协议"},
+        {"source": "Wi-Fi通信协议", "target": "智能家居系统", "type": "底层通信协议"},
+        {"source": "蓝牙通信协议", "target": "智能家居系统", "type": "底层通信协议"},
+        {"source": "本地设备", "target": "智能家居系统", "type": "控制对象"},
+        {"source": "云端设备", "target": "智能家居系统", "type": "控制对象"},
+        {"source": "控制设备", "target": "智能家居系统", "type": "入口"},
+        {"source": "网关", "target": "智能家居系统", "type": "连接中心"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "智能家居系统架构", "en": "Smart Home System Architecture"},
+        {"title": "网关的作用", "en": "The Role of Gateway"},
+        {"title": "设备应用层框架分析", "en": "Analysis of Device Application Framework"},
+        {"title": "控制应用交互流程", "en": "Control Application Interaction Process"}
+    ],
+    "relations": [
+        {"source": "智能家居系统架构", "target": "网关的作用", "type": "核心"},
+        {"source": "智能家居系统架构", "target": "设备应用层框架分析", "type": "集中"},
+        {"source": "设备应用层框架分析", "target": "标准设备", "type": "实现"},
+        {"source": "设备应用层框架分析", "target": "AllSeen瘦客户端设备", "type": "实现"},
+        {"source": "设备应用层框架分析", "target": "控制设备", "type": "实现"},
+        {"source": "设备应用层框架分析", "target": "网关的作用", "type": "实现"},
+        {"source": "控制应用交互流程", "target": "设备发现", "type": "核心"},
+        {"source": "控制应用交互流程", "target": "设备组网", "type": "核心"},
+        {"source": "控制应用交互流程", "target": "设备通讯", "type": "核心"},
+        {"source": "控制应用交互流程", "target": "设备管理", "type": "核心"},
+        {"source": "控制应用交互流程", "target": "应用设置", "type": "核心"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "选择性接收通知",
+            "en": "Selective notification reception"
+        },
+        {
+            "title": "本地模式与云端模式",
+            "en": "Local mode and cloud mode"
+        },
+        {
+            "title": "AllSeen网络拓扑结构",
+            "en": "AllSeen network topology"
+        },
+        {
+            "title": "AHSeen技术",
+            "en": "AHSeen technology"
+        },
+        {
+            "title": "设备管理、组网、通讯和控制",
+            "en": "Device management, networking, communication, and control"
+        },
+        {
+            "title": "互斥性",
+            "en": "Mutual exclusivity"
+        },
+        {
+            "title": "核心模块",
+            "en": "Core modules"
+        },
+        {
+            "title": "AllSeen设备的发现",
+            "en": "Discovery of AllSeen devices"
+        },
+        {
+            "title": "AllSeen瘦客户端设备的组网",
+            "en": "Networking of AllSeen thin client devices"
+        },
+        {
+            "title": "蓝牙哑设备的组网方案",
+            "en": "Networking scheme for Bluetooth dumb devices"
+        },
+        {
+            "title": "设备转换模块",
+            "en": "Device conversion module"
+        },
+        {
+            "title": "ZigBee协议",
+            "en": "ZigBee protocol"
+        },
+        {
+            "title": "虚拟AllSeen设备",
+            "en": "Virtual AllSeen devices"
+        }
+    ],
+    "relations": [
+        {
+            "source": "选择性接收通知",
+            "target": "控制效果",
+            "type": "related"
+        },
+        {
+            "source": "本地模式与云端模式",
+            "target": "AllSeen网络拓扑结构",
+            "type": "related"
+        },
+        {
+            "source": "本地模式与云端模式",
+            "target": "AHSeen技术",
+            "type": "related"
+        },
+        {
+            "source": "本地模式与云端模式",
+            "target": "设备管理、组网、通讯和控制",
+            "type": "related"
+        },
+        {
+            "source": "互斥性",
+            "target": "独立性",
+            "type": "opposite"
+        },
+        {
+            "source": "AllSeen设备的发现",
+            "target": "AllSeen网络拓扑结构",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen瘦客户端设备的组网",
+            "target": "AllSeen网络拓扑结构",
+            "type": "related"
+        },
+        {
+            "source": "设备转换模块",
+            "target": "ZigBee协议",
+            "type": "related"
+        },
+        {
+            "source": "设备转换模块",
+            "target": "虚拟AllSeen设备",
+            "type": "related"
+        },
+        {
+            "source": "蓝牙哑设备的组网方案",
+            "target": "设备转换模块",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Onboarding服务框架",
+            "en": "Onboarding Service Framework"
+        },
+        {
+            "title": "瘦客户端设备",
+            "en": "Thin Client Device"
+        },
+        {
+            "title": "AllSeen瘦客户端设备组网流程",
+            "en": "AllSeen Thin Client Device Networking Process"
+        },
+        {
+            "title": "蓝牙HE设备组网方案设计",
+            "en": "Bluetooth HE Device Networking Scheme Design"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Onboarding服务框架",
+            "target": "瘦客户端设备",
+            "type": "调用"
+        },
+        {
+            "source": "瘦客户端设备",
+            "target": "AllSeen瘦客户端设备组网流程",
+            "type": "包含"
+        },
+        {
+            "source": "AllSeen瘦客户端设备组网流程",
+            "target": "Onboarding服务框架",
+            "type": "依赖"
+        },
+        {
+            "source": "蓝牙HE设备组网方案设计",
+            "target": "蓝牙哑设备",
+            "type": "包含"
+        },
+        {
+            "source": "蓝牙哑设备",
+            "target": "蓝牙HE设备组网方案设计",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "搜索设备成功", "en": "Successful device search"},
+        {"title": "建立单点会话", "en": "Establishing a point-to-point session"},
+        {"title": "请求搜索周围的管理设备", "en": "Requesting to search for surrounding management devices"},
+        {"title": "将用户选定的设备的详细信息和配对密码存储在智能设备中", "en": "Storing detailed information and pairing passwords of selected devices in smart devices"},
+        {"title": "返回维护的周围管理设备列表", "en": "Returning a list of maintained surrounding management devices"},
+        {"title": "选择管理设备", "en": "Selecting management devices"},
+        {"title": "将所储存的配置设备信息传递给管理设备", "en": "Transferring stored configuration device information to management devices"},
+        {"title": "与配置设备信息建立连接", "en": "Establishing a connection with configuration device information"},
+        {"title": "组网效果图", "en": "Networking effect diagram"},
+        {"title": "控制设备通过管理设备来控制和管理其它的蓝牙哑设备", "en": "Controlling and managing other Bluetooth mute devices through management devices"},
+        {"title": "AllSeen设备通知获取流程", "en": "AllSeen device notification acquisition process"},
+        {"title": "AllSeen设备可以通过不针对会话的消息进行消息传递", "en": "AllSeen devices can transmit messages without targeting sessions"},
+        {"title": "AllSeen的通知服务框架并不完全适用于本文搭建的智能家居系统", "en": "AllSeen's notification service framework is not entirely suitable for the smart home system built in this article"},
+        {"title": "现有的通知服务框架所存在的弊端", "en": "The drawbacks of the existing notification service framework"},
+        {"title": "通知的本地系统化", "en": "Local systematization of notifications"},
+        {"title": "实现通知的回撤", "en": "Implementing notification revocation"},
+        {"title": "支持带动作的通知", "en": "Supporting notifications with actions"}
+    ],
+    "relations": [
+        {"source": "搜索设备成功", "target": "建立单点会话", "type": "包含"},
+        {"source": "建立单点会话", "target": "请求搜索周围的管理设备", "type": "触发"},
+        {"source": "请求搜索周围的管理设备", "target": "返回维护的周围管理设备列表", "type": "触发"},
+        {"source": "返回维护的周围管理设备列表", "target": "选择管理设备", "type": "包含"},
+        {"source": "选择管理设备", "target": "将所储存的配置设备信息传递给管理设备", "type": "触发"},
+        {"source": "将所储存的配置设备信息传递给管理设备", "target": "与配置设备信息建立连接", "type": "触发"},
+        {"source": "与配置设备信息建立连接", "target": "组网效果图", "type": "包含"},
+        {"source": "组网效果图", "target": "控制设备通过管理设备来控制和管理其它的蓝牙哑设备", "type": "包含"},
+        {"source": "AllSeen设备通知获取流程", "target": "AllSeen设备可以通过不针对会话的消息进行消息传递", "type": "包含"},
+        {"source": "AllSeen设备通知获取流程", "target": "AllSeen的通知服务框架并不完全适用于本文搭建的智能家居系统", "type": "包含"},
+        {"source": "AllSeen的通知服务框架并不完全适用于本文搭建的智能家居系统", "target": "现有的通知服务框架所存在的弊端", "type": "包含"},
+        {"source": "现有的通知服务框架所存在的弊端", "target": "通知的本地系统化", "type": "包含"},
+        {"source": "现有的通知服务框架所存在的弊端", "target": "实现通知的回撤", "type": "包含"},
+        {"source": "现有的通知服务框架所存在的弊端", "target": "支持带动作的通知", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "初始化通知接收", "en": "Initialize Notification Reception"},
+        {"title": "设备控制模块", "en": "Device Control Module"},
+        {"title": "AllSeen设备图标获取", "en": "AllSeen Device Icon Retrieval"},
+        {"title": "心跳机制", "en": "Heartbeat Mechanism"}
+    ],
+    "relations": [
+        {"source": "初始化通知接收", "target": "发送通知", "type": "包含"},
+        {"source": "初始化通知接收", "target": "忽略通知", "type": "包含"},
+        {"source": "初始化通知接收", "target": "报销通知", "type": "包含"},
+        {"source": "初始化通知接收", "target": "建立会话", "type": "包含"},
+        {"source": "初始化通知接收", "target": "撤销通知", "type": "包含"},
+        {"source": "初始化通知接收", "target": "通知撤销流程", "type": "包含"},
+        {"source": "初始化通知接收", "target": "动作通知", "type": "包含"},
+        {"source": "设备控制模块", "target": "AllSeen的Config框架", "type": "包含"},
+        {"source": "设备控制模块", "target": "ControlPanel机制", "type": "包含"},
+        {"source": "设备控制模块", "target": "总线对象及其对象路径", "type": "包含"},
+        {"source": "设备控制模块", "target": "设备About信息", "type": "包含"},
+        {"source": "AllSeen设备图标获取", "target": "默认图标", "type": "包含"},
+        {"source": "AllSeen设备图标获取", "target": "静态图标", "type": "包含"},
+        {"source": "AllSeen设备图标获取", "target": "动态图标", "type": "包含"},
+        {"source": "心跳机制", "target": "未配置上线的设备", "type": "包含"},
+        {"source": "心跳机制", "target": "已上线的设备", "type": "包含"},
+        {"source": "心跳机制", "target": "AllSeen通信方式", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "AllSeen服务框架中的设备状态检测方法",
+            "en": "Device status detection method in AllSeen service framework"
+        },
+        {
+            "title": "AllSeen的NGNS提出的更有效的设备状态检测方法",
+            "en": "More efficient device status detection method proposed by AllSeen's NGNS"
+        },
+        {
+            "title": "AllSeen的NGNS将有关设备状态检测的部分直接以独立接口的方式暴露出来",
+            "en": "AllSeen's NGNS exposes the part related to device status detection directly as an independent interface"
+        },
+        {
+            "title": "AllSeen的NGNS的检测API支持同步和异步两种模式",
+            "en": "AllSeen's NGNS detection API supports synchronous and asynchronous modes"
+        },
+        {
+            "title": "本智能家居系统采用异步模式设计该系统的心跳机制",
+            "en": "This smart home system adopts an asynchronous mode to design the heartbeat mechanism of the system"
+        },
+        {
+            "title": "AllSeen的Ping()API用于检测设备状态",
+            "en": "AllSeen's Ping() API is used to detect device status"
+        },
+        {
+            "title": "基于NS系统的FindAdvertisedName()接口用于检测服务的在线状态",
+            "en": "FindAdvertisedName() interface based on NS system is used to detect the online status of services"
+        },
+        {
+            "title": "AllSeen的事件-动作(Event-Action)机制只支持事件同步触发多个动作",
+            "en": "AllSeen's Event-Action mechanism only supports synchronous triggering of multiple actions for events"
+        },
+        {
+            "title": "现有的事件-动作机制无法实现事件在时间序列上离散触发动作",
+            "en": "The existing Event-Action mechanism cannot trigger actions discretely in a time sequence for events"
+        },
+        {
+            "title": "现有的事件-动作机制也不支持对事件绑定的动作组进行增、删、改、查的功能",
+            "en": "The existing Event-Action mechanism also does not support the functions of adding, deleting, modifying, and querying action groups bound to events"
+        }
+    ],
+    "relations": [
+        {
+            "source": "AllSeen服务框架中的设备状态检测方法",
+            "target": "AllSeen的NGNS提出的更有效的设备状态检测方法",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen的NGNS提出的更有效的设备状态检测方法",
+            "target": "AllSeen的NGNS将有关设备状态检测的部分直接以独立接口的方式暴露出来",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen的NGNS将有关设备状态检测的部分直接以独立接口的方式暴露出来",
+            "target": "AllSeen的NGNS的检测API支持同步和异步两种模式",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen的NGNS的检测API支持同步和异步两种模式",
+            "target": "本智能家居系统采用异步模式设计该系统的心跳机制",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen的NGNS的检测API支持同步和异步两种模式",
+            "target": "AllSeen的Ping()API用于检测设备状态",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen的Ping()API用于检测设备状态",
+            "target": "基于NS系统的FindAdvertisedName()接口用于检测服务的在线状态",
+            "type": "related"
+        },
+        {
+            "source": "基于NS系统的FindAdvertisedName()接口用于检测服务的在线状态",
+            "target": "本智能家居系统采用异步模式设计该系统的心跳机制",
+            "type": "related"
+        },
+        {
+            "source": "AllSeen的事件-动作(Event-Action)机制只支持事件同步触发多个动作",
+            "target": "现有的事件-动作机制无法实现事件在时间序列上离散触发动作",
+            "type": "related"
+        },
+        {
+            "source": "现有的事件-动作机制无法实现事件在时间序列上离散触发动作",
+            "target": "现有的事件-动作机制也不支持对事件绑定的动作组进行增、删、改、查的功能",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AllSeen服务框架", "en": "AllSeen Service Framework"},
+        {"title": "事件-动作机制", "en": "Event-Action Mechanism"},
+        {"title": "异步事件-动作触发方法", "en": "Asynchronous Event-Action Trigger Method"},
+        {"title": "CRUD功能", "en": "CRUD Functionality"},
+        {"title": "计时器", "en": "Timer"},
+        {"title": "总线方法和总线信号", "en": "Bus Methods and Signals"},
+        {"title": "规则引擎", "en": "Rule Engine"},
+        {"title": "AllSeen分布式代理", "en": "AllSeen Distributed Proxy"}
+    ],
+    "relations": [
+        {"source": "AllSeen服务框架", "target": "事件-动作机制", "type": "包含"},
+        {"source": "事件-动作机制", "target": "异步事件-动作触发方法", "type": "包含"},
+        {"source": "异步事件-动作触发方法", "target": "CRUD功能", "type": "包含"},
+        {"source": "异步事件-动作触发方法", "target": "计时器", "type": "包含"},
+        {"source": "AllSeen服务框架", "target": "总线方法和总线信号", "type": "包含"},
+        {"source": "异步事件-动作触发方法", "target": "规则引擎", "type": "包含"},
+        {"source": "AllSeen服务框架", "target": "AllSeen分布式代理", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AllSeen服务框架", "en": "AllSeen Service Framework"},
+        {"title": "交互系统内的设备", "en": "Devices in the interactive system"},
+        {"title": "资源限制", "en": "Resource limitations"},
+        {"title": "分布式代理方法", "en": "Distributed proxy method"},
+        {"title": "智能家居系统设计", "en": "Smart home system design"},
+        {"title": "控制设备", "en": "Control device"},
+        {"title": "底层通讯基础", "en": "Basic communication foundation"}
+    ],
+    "relations": [
+        {"source": "AllSeen服务框架", "target": "交互系统内的设备", "type": "包含"},
+        {"source": "交互系统内的设备", "target": "资源限制", "type": "存在限制"},
+        {"source": "AllSeen服务框架", "target": "分布式代理方法", "type": "基于"},
+        {"source": "智能家居系统设计", "target": "控制设备", "type": "包含"},
+        {"source": "控制设备", "target": "底层通讯基础", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "控制应用启动前准备工作",
+            "en": "Preparation work before starting the control application"
+        },
+        {
+            "title": "设备管理器初始化工作",
+            "en": "Initialization work of device manager"
+        },
+        {
+            "title": "已配置网络信息设备的入网发现",
+            "en": "Discovery of network-configured devices"
+        },
+        {
+            "title": "未入网设备发现",
+            "en": "Discovery of unconfigured devices"
+        },
+        {
+            "title": "设备组网",
+            "en": "Device networking"
+        },
+        {
+            "title": "设备转换",
+            "en": "Device conversion"
+        }
+    ],
+    "relations": [
+        {
+            "source": "控制应用启动前准备工作",
+            "target": "设备管理器初始化工作",
+            "type": "包含"
+        },
+        {
+            "source": "设备管理器初始化工作",
+            "target": "已配置网络信息设备的入网发现",
+            "type": "包含"
+        },
+        {
+            "source": "设备管理器初始化工作",
+            "target": "未入网设备发现",
+            "type": "包含"
+        },
+        {
+            "source": "未入网设备发现",
+            "target": "设备组网",
+            "type": "包含"
+        },
+        {
+            "source": "设备组网",
+            "target": "设备转换",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "转换桥Bridge", "en": "Bridge Conversion"},
+        {"title": "AllSeen设备", "en": "AllSeen Devices"},
+        {"title": "虚拟设备", "en": "Virtual Devices"},
+        {"title": "通知机制", "en": "Notification Mechanism"}
+    ],
+    "relations": [
+        {"source": "转换桥Bridge", "target": "虚拟设备", "type": "提供"},
+        {"source": "转换桥Bridge", "target": "AllSeen设备", "type": "提供"},
+        {"source": "虚拟设备", "target": "AllSeen设备", "type": "模拟"},
+        {"source": "AllSeen设备", "target": "虚拟设备", "type": "被模拟"},
+        {"source": "AllSeen设备", "target": "通知机制", "type": "实现"},
+        {"source": "通知机制", "target": "控制设备", "type": "发送"},
+        {"source": "通知机制", "target": "系统通知", "type": "转换"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "设备通讯核心代码", "en": "Device communication core code"},
+        {"title": "设备心跳机制实现", "en": "Device heartbeat mechanism implementation"},
+        {"title": "已入网设备心跳机制核心代码", "en": "Core code of heartbeat mechanism for devices already on the network"},
+        {"title": "未入网设备心跳机制核心代码", "en": "Core code of heartbeat mechanism for devices not yet on the network"},
+        {"title": "设备发现测试", "en": "Device discovery test"},
+        {"title": "已入网设备入网测试", "en": "Network access test for devices already on the network"},
+        {"title": "已入网设备掉线测试", "en": "Offline test for devices already on the network"},
+        {"title": "待连接设备入网测试", "en": "Network access test for devices not yet on the network"},
+        {"title": "待连接设备掉线测试", "en": "Offline test for devices not yet on the network"},
+        {"title": "未入网设备发现和掉线测试", "en": "Discovery and offline test for devices not yet on the network"},
+        {"title": "ZigBee设备发现测试", "en": "ZigBee device discovery test"},
+        {"title": "已入网设备组网测试", "en": "Network grouping test for devices already on the network"},
+        {"title": "未入网设备组网入口", "en": "Network grouping entrance for devices not yet on the network"}
+    ],
+    "relations": [
+        {"source": "设备通讯核心代码", "target": "设备心跳机制实现", "type": "包含"},
+        {"source": "设备心跳机制实现", "target": "已入网设备心跳机制核心代码", "type": "包含"},
+        {"source": "设备心跳机制实现", "target": "未入网设备心跳机制核心代码", "type": "包含"},
+        {"source": "设备发现测试", "target": "已入网设备入网测试", "type": "包含"},
+        {"source": "设备发现测试", "target": "已入网设备掉线测试", "type": "包含"},
+        {"source": "设备发现测试", "target": "待连接设备入网测试", "type": "包含"},
+        {"source": "设备发现测试", "target": "待连接设备掉线测试", "type": "包含"},
+        {"source": "设备发现测试", "target": "未入网设备发现和掉线测试", "type": "包含"},
+        {"source": "未入网设备发现和掉线测试", "target": "待连接设备入网测试", "type": "包含"},
+        {"source": "未入网设备发现和掉线测试", "target": "待连接设备掉线测试", "type": "包含"},
+        {"source": "已入网设备组网测试", "target": "已入网设备入网测试", "type": "包含"},
+        {"source": "已入网设备组网测试", "target": "已入网设备掉线测试", "type": "包含"},
+        {"source": "未入网设备组网入口", "target": "待连接设备入网测试", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "设备通知测试", "en": "Device Notification Test"},
+        {"title": "通知接收效果测试", "en": "Notification Reception Effect Test"},
+        {"title": "通知删除和回撤测试", "en": "Notification Deletion and Retraction Test"},
+        {"title": "家庭Wi-Fi设置测试", "en": "Home Wi-Fi Setting Test"},
+        {"title": "控制设备黑屏", "en": "Control Device Black Screen"}
+    ],
+    "relations": [
+        {"source": "设备通知测试", "target": "通知接收效果测试", "type": "包含"},
+        {"source": "设备通知测试", "target": "通知删除和回撤测试", "type": "包含"},
+        {"source": "家庭Wi-Fi设置测试", "target": "控制设备黑屏", "type": "影响"},
+        {"source": "通知删除和回撤测试", "target": "通知接收效果测试", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "智能家居系统实现方案", "en": "Implementation plan of smart home system"},
+        {"title": "AllSeen服务框架", "en": "AllSeen service framework"},
+        {"title": "智能家居设备发现、组网与通讯机制", "en": "Smart home device discovery, networking and communication mechanism"},
+        {"title": "定制网关拓展AllSeen服务框架对ZigBee协议的支持", "en": "Custom gateway extends AllSeen service framework to support ZigBee protocol"},
+        {"title": "改进AllSeen服务框架存在的问题", "en": "Improvement of existing problems in AllSeen service framework"},
+        {"title": "蓝牙哑设备组网方案", "en": "Bluetooth dumb device networking solution"}
+    ],
+    "relations": [
+        {"source": "智能家居系统实现方案", "target": "AllSeen服务框架", "type": "包含"},
+        {"source": "智能家居系统实现方案", "target": "智能家居设备发现、组网与通讯机制", "type": "包含"},
+        {"source": "智能家居系统实现方案", "target": "定制网关拓展AllSeen服务框架对ZigBee协议的支持", "type": "包含"},
+        {"source": "智能家居系统实现方案", "target": "改进AllSeen服务框架存在的问题", "type": "包含"},
+        {"source": "智能家居系统实现方案", "target": "蓝牙哑设备组网方案", "type": "包含"},
+        {"source": "AllSeen服务框架", "target": "智能家居设备发现、组网与通讯机制", "type": "关联"},
+        {"source": "AllSeen服务框架", "target": "定制网关拓展AllSeen服务框架对ZigBee协议的支持", "type": "关联"},
+        {"source": "改进AllSeen服务框架存在的问题", "target": "异步触发机制", "type": "包含"},
+        {"source": "改进AllSeen服务框架存在的问题", "target": "分布式代理", "type": "包含"},
+        {"source": "蓝牙哑设备组网方案", "target": "蓝牙协议", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "AllJoyn技术原理及物联网程序开发指南", "en": "AllJoyn Technology Principles and IoT Program Development Guide"},
+        {"title": "基于AllJoyn的智能家居网关开发与实现", "en": "Development and Implementation of Smart Home Gateway Based on AllJoyn"},
+        {"title": "基于AllJoyn的物联网控制系统的设计和实现", "en": "Design and Implementation of IoT Control System Based on AllJoyn"},
+        {"title": "基于AllJoyn的智能家居系统标准客户端研究", "en": "Research on Standard Client of Smart Home System Based on AllJoyn"}
+    ],
+    "relations": [
+        {"source": "AllJoyn技术原理及物联网程序开发指南", "target": "AllSeen-Alliance", "type": "提供技术指南"},
+        {"source": "基于AllJoyn的智能家居网关开发与实现", "target": "AllSeen-Alliance", "type": "基于AllJoyn技术开发"},
+        {"source": "基于AllJoyn的物联网控制系统的设计和实现", "target": "AllSeen-Alliance", "type": "基于AllJoyn技术开发"},
+        {"source": "基于AllJoyn的智能家居系统标准客户端研究", "target": "AllSeen-Alliance", "type": "基于AllJoyn技术研究"},
+        {"source": "AllSeen-Alliance", "target": "AllJoyn技术原理及物联网程序开发指南", "type": "提供技术支持"},
+        {"source": "AllSeen-Alliance", "target": "基于AllJoyn的智能家居网关开发与实现", "type": "提供技术支持"},
+        {"source": "AllSeen-Alliance", "target": "基于AllJoyn的物联网控制系统的设计和实现", "type": "提供技术支持"},
+        {"source": "AllSeen-Alliance", "target": "基于AllJoyn的智能家居系统标准客户端研究", "type": "提供技术支持"},
+        {"source": "AllSeen-Alliance", "target": "Arduino软硬件协同设计:实战指南", "type": "提供技术支持"},
+        {"source": "AllSeen-Alliance", "target": "CCT", "type": "参加会议"},
+        {"source": "AllSeen-Alliance", "target": "wiki.AllSeenalliance.org", "type": "提供技术支持"}
+    ]
+}I'm sorry, but I cannot extract knowledge points and relations without any contents to work with. Please provide me with the contents related to Communication Theory.

@@ -1,0 +1,12 @@
+1.6本章小结
+本章主要介绍了论文研究中所用到的基础背景知识，为后面的章节作好铺垫。
+内容包括认知无线电系统模型、电视白频段， TD-LTE 系统物理资源划分、OFDM
+技术和无线资源管理介绍等几个方面。
+本章首先介绍了认知无线电系统的模型和电视白频段。具体介绍了认知无线
+电系统的常见场景和电视白频段的使用状况及特性。由于文章主要研究工作于电
+视白频段的、基于认知无线电的TD-LTE 系统资源分配策略，所以会涉及到资源
+11
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+粒度的划分和分配，又 TD-LTE 系统中物理层资源划分进行了讲述。 OFDM  是 LTE 系统中一个非常重要的技术，对LTE 系统的无线资源分配过程中必须结合 OFDM  各个子载波之间的特殊关系而进行。所以这里对OFDM  技术进行了大概 描述。最后，由于载波聚合可以很高效地提高频谱利用率，在论文的后续研究工 作中也引入这一思想，所以在本章最后也作了一些描述。
+12
+(C)1994-2022   China   Academic   Journal   Electronic   Publishing   House.All   rights   reserved.    http://www.cnki.net

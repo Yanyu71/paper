@@ -1,0 +1,41 @@
+5.2.1知识库存储的设计与实现
+在本实现中，管理本体知识库利用Jena的TDB中的数据集的来实现，每一个知识 库按照数据集的形式来组织和管理。因为每一个数据集是存储在文件系统中，需要利用 TDB的API可以加载到内存，因此，结合事件的查询需求，需要将数据集按照领域进 行分类，避免一个数据集过于庞大而内存不够加载使用。将数据集按照特定领域分类组 织，每个领域给予一个命名，数据集的名字就是领域名。同时，在配置文件中给定映射， 每当系统启动即加载配置文件。实现类图如图5-8所示：
+图5-8知识座管理类图
+知识库对应TDB数据集，TDB数据集通过工厂类TDBFactory生成。TDBFactory 静态工厂方法用以创建和连接TDB数据集。用户在Web前端输入的数据集名，以及用 户选择的内存模式还是持久化模式，内存模式在后台服务器停止运行后数据会销毁，下 次运行时数据不可用。而持久化模式则会以文件的形式存储在文件之中，之后再次运行 时数据可用。给定一个新的数据集名，新建一个数据集的详细实现具体涉及到的类有: DatasetFactory类、Dataset类，DatasetMap类和Config类。表5-4对上述的这些类和对 应的实现功能作了简要介绍：
+表5-4知识库管理主要涉及类
+类/接口	功能描述
+DatasetFactory	知识库管理主类，默认是resource目录下的每个子目录是 一个数据集。同时根据输入的名字生成、删除、备份数据 集，利用Map进行名字利数据集之间的映射。
+Dataset	数据集对象，表示一个数据集（知识库）。
+DatasetMap	维护数据集名和数据集对象的映射。
+Config	配置类，主要用丁?读取配置文件。
+表 5-5 DataFactory 类 createDatasetByName 方法
+方法	protected void createDatasetByName (String datasetName)
+描述	根据知识库名生成对应的知识库，并且将名字和知识库对象的映射更新到 map中，在适当的时候持久化到文件中。
+参数	@Param datasetname 知识库名
+返回	Void
+表 5-6 DataFactory 类 getDatasetByName 方法
+方法	protected void getDatasetByName (String datasetName)
+描述	根据知识库名获取知识库，并返冋对应的知识库，若不存在则返冋null。
+参数	@Param datasetname 知识库名
+返冋	Dataset返冋的知识库对象
+表 5-7 DataFactory 类 removeDatasetByName 方法
+方法	protected void removeDatasetByName (String datasetName)
+描述	根据知识库名移除对应的知识库，如果不存在则返冋。并11将名字和知识 库对象的映射更新到map中，在适当的时候持久化到文仰中。
+参数	@Param datasetname 知识库名
+返冋	Void
+本体存储部分核心算法如表5-8所示：
+表5-8本体存储部分核心算法
+标题	本体存储部分核心算法
+输入	Model model
+输出	void
+1: Dataset dataset = getDatasetByName(datasetName);
+2: if not dataset
+3: create dataset; //如果对应的数据集不存在则新建
+4: begin
+5:	dataset.begir)(ReadWrite.Write); // 写爭务开始
+6: Model model = dataset.getDefaultModel();
+7: model.add(....);//本体加载后依次加入数据集中的model;
+8:......;
+9:	dataset.commit(); // 写事务提交
+10: dataset.end();
+11:end

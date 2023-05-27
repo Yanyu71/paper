@@ -1,0 +1,43 @@
+3.7结论
+在本章中，本文为空时频谱检测和接入设计了三区划分的架构，包括黑区、 白区和灰区。灰区的半径根据频谱检测的虚警概率和误检概率约束得到，而白区 半径通过分析次用户到主用户的聚合干扰以及对黑区边缘主用户的影响得到。另 外，本文通过动态频谱租赁的视角得到最优的黑区半径。本文也分析了在多个主 网络的场景下的三区边界。此外，灰区和白区之间的过渡区可能存在，本文得到 了过渡区存在的条件。因此，本文得到了一个相对完备的三区划分架构，这个架 构可能指导认知无线网络中的空时频谱检测和接入的研究。最后，本文展示了一 些数值仿真结果，以呈现三区中关键参数之间的关系。
+参考文献
+[3-1] J. Mitola, '"Cognitive radio: An integrated agent architecture for software defined radio," Ph.D. dissertation, KTH Royal Inst, of TechnoL, Stockholm, Sweden, 2000.
+[3-2] B. Wang and K. J. R. Liu, "Advances in Cognitive Radio Networks: A Survey," IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1, pp. 5-23, Feb. 201k
+[3-3] R. Tandra, S. M. Mishra, and A. Sahai, 44What is a spectrum hole and what does it take to recognize one?” Proceedings of the IEEE, vol 97, no.5, pp. 824-848, May 2009.
+[3-4] R. Tandra, A. Sahai and V. Veeravalli, "Unified Space-Time Metrics to Evaluate Spectrum Sensing,” IEEE Communications Magazine, vol. 49, no. 3,
+131
+pp. 54-61, Mar. 2011.
+[3-5] T. Do and B. L. Mark, “Joint Spatial-Temporal Spectrum Sensing for Cognitive Radio Networks,95 IEEE Transactions on Vehicular Technology, vol. 59, no. 7, pp. 3480-3490, Sept. 2010.
+[3-6] G. Ding, Q. Wu and Y.-D. Yao, et al, uKemel-based learning for statistical signal processing in cognitive radio networks: Theoretical foundations, example applications, and future directions/9 IEEE Signal Processing Magazine, vol. 30, no.4, pp. 126-136, July 2013.
+[3-7] Q. Wu, G. Ding, J. Wang, et al., "Spatial-Temporal Opportunity Detection fbr Spectrum-Heterogeneous Cognitive Radio Networks: Two Dimensional Sensing," IEEE Transactions on Wireless Communications, vol. 12, no. 2, pp. 516-526, Feb. 2013.
+[3-8] G. Ding, J. Wang and Q. Wu, et al, "Spectrum sensing in opportunity heterogeneous cognitive sensor networks: How to cooperate?,, IEEE Sensors Journal, vol. 13, no. 11, pp. 4247-4255, Nov. 2013.
+[3-9] M. Vu, N. Devroye and V. Tarokh, "On the Primary Exclusive Region of Cognitive Networks,5, IEEE Transactions on Wireless Communications, vol. 8, no. 7, pp. 3380-3385, July 2009.
+[3-10] A. Bagayoko, P. Tortelier and I. Fijalkow, “Impact of shadowing on the primary exclusive region in cognitive networks," European Wireless Conference, pp. 105-110, Apr. 2010.
+[3-11] J. Dricot, G. Ferrari and F. Horlin, et al., "Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks,” IEEE International Conference on Communications (ICC) Workshops, pp. 1-5, May 2010.
+[3-12] X. Hong, C. X. Wang, H. H. Chen and Y Zhang, ''Secondary spectrum access networks,” IEEE Vehicular Technology Magazine, voL4, pp. 36-43, June 2009.
+[3-13] FCC, Enabling Innovative Small Cell Use In 3.5 GHZ Band NPRM & Order, Doc. 12-148, Dec. 2012.
+http://www.fcc.gov/document/enabling-innovative-smalkcell-use-35-ghz-band -nprm-order.
+[3-14] J. Ma, G. Li, and B. H. Juang, “Signal processing in cognitive radio,5, Proceedings of the IEEE, vol 97, no.5, pp. 805-823, May 2009.
+[3-15] G. Ganesan, Y. Li, B. Bing and S. Li, “Spatiotemporal Sensing in Cognitive Radio Networks/5 IEEE Journal on Selected Areas in Communications, vol.
+132
+26, no. 1, pp. 5-12. Jan. 2008.
+[3-16] Y. C. Liang, Y, Zeng and E. C. Y. Peh, et al., "Sensing-Throughput Tradeoff for Cognitive Radio Networks,” IEEE Transactions on Wireless Communications, vol. 7, no. 4, pp. 1326-1337, Apr. 2008.
+[3-17] F. F. Digham, M. S. Alouini and M. K. Simon, “On the Energy Detection of Unknown Signals Over Fading Channels,” IEEE Transactions on Communications, vol.55, pp. 21-24, 2007.
+[3-18] M. Vu and V. Tarokh, “Scaling laws of single-hop cognitive networks,IEEE Transactions on Wireless Communications, vol. 8, no. 8, pp. 4089-4097, Aug. 2009.
+[3-19] J. Lee, H. Wang and J. G. Andrews, et al., "Outage Probability of Cognitive Relay Networks with Interference Constraints,5, IEEE Transactions on Wireless Communications, vol. 10, no. 2, pp. 1326-1337, Feb. 2011.
+[3-20] M. Song, C. Xin, Y. Zhao and X. Cheng, “Dynamic spectrum access: from cognitive radio to network radio,5, IEEE Wireless Communications Magazine, vol. 19, no. 1, pp. 23-29, Feb. 2012.
+[3-21] E. Axell, G. Leus, E.G. Larsson and H.V. Poor, “Spectrum Sensing fbr Cognitive Radio: State-of-the-art and recent advances,5' IEEE Signal Processing Magazine, vol. 29, no. 3, pp. 101-116 , May 2012.
+[3-22] Rahul Tandra and Anant Sahai, “SNR Walls fbr Signal Detection/5 IEEE Journal of Selected Topics in Signal Processing, vol. 2, no. 1, pp. 4-17, Feb.
+2008.
+[3-23] S. K・ Jayaweera and T. Li, "Dynamic Spectrum Leasing in Cognitive Radio Networks via Primary-Secondary User Power Control Games,” IEEE Transactions on Wireless Communications, vol. 8, no. 6, pp. 3300 - 3310, June
+2009.
+[3-24] S. K. Jayaweera, G. Vazquez-Vilar and C. Mosquera, “Dynamic Spectrum Leasing: A New Paradigm for Spectrum Sharing in Cognitive Radio Networks,55 IEEE Transactions on Vehicular Technology, vol. 59, no. 5, pp. 2328-2339, June 2010.
+[3-25] M. Barrie, S. Delaere and G. Sukareviciene, et aL, “Geolocation Database beyond TV White Space? Matching Applications with Database Requirements,5, IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 467-478, 2012.
+[3-26] V. Petrini and H.R. Karimi, “TV white space databases: Algorithms fbr the
+133
+calculation of maximum permitted radiated power levels： IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN), pp. 552-560, 2012.
+[3-27] J. Heo, G. Noh and S. Park, et aL, “Mobile TV White Space with multi-Region Based Mobility Procedure,” IEEE Wireless Communications Letters, voL 1, no. 6, pp. 569-572, Dec. 2012.
+[3-28] 3GPP TR 36.814, "Further advancements fbr E-UTRA physical layer aspects (Release 9)," 2010.
+[3-29] Z. Wei, Z. Feng, Q. Zhang and W. Li, “Three regions fbr space-time spectrum sensing and access in cognitive radio networks/5 IEEE Global Communications Conference (GLOBECOM), pp. 1283-1288, Dec. 2012.
+[3-30] I. S. Gradshteyn and L M. Ryzhik, Table of Integrals, Series, and Products, 7th edition. Academic Press, 2007.
+134

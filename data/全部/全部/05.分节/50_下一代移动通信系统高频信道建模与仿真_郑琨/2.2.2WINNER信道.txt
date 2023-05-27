@@ -1,0 +1,6 @@
+2.2.2WINNER信道
+WINNER信道是2004年欧盟“无线领域新无线电技术” (WINNER, Wireless World Initiative New Radio )项目提出的信道建模方案。WINNER I项目主要研究 的是5GHz载频的MIMO建模，规定了室内、城市微小区、城市宏小区、城郊宏 小区、乡村宏小区和固定收发机链路六种场景師7】。最初，WINNER信道模型釆 用的标准为SCM信道和IEEE 802.1 Ino但是很快，最初的信道模型带宽不能够 满足WINNER I信道的仿真需求，因此项目组最后提出了 WINNER I阶段的通 用模型，在基于2~5GHz的载频范围可创建基于几何统计的任意无线信道。
+WINNER II信道在WINNER I的基础上进行扩展，并研究了多维的信道模 型。新的信道可以支持更多的覆盖场景，分别为A1：室内办公室(Indooroffice). A2：室内到室外(Indoor to outdoor)、Bl：城市微小区(Urban micro-cell)、B2： 恶劣城市微小区(Bad urban micro-cell)> B3：室内热点(Indoor hotspot)、B4： 室外到室内(Outdoor to indoor)、B5：固定收发机(Stationary Feeder)> Cl：城 郊宏小区(Suburbanmacro-cell)、C2：城市宏小区(Urbanmacro-cell)、C3：恶 劣城市宏小区(Bad urban macro-cell) > C4：城市宏小区室外到室内(Urban macro
+outdoor to indoor)、D1:乡村宏小区(Rural macro-cell) > D2：移动网络(Moving networks)回。不同场景的天线配置与信道模型是独立的。
+WINNERII信道的新特性体现在它的参数化上，即所有场景只是参数不同， 信道模型的建立方法是一样的。信道参数的分布由广泛的信道测量获得，基本涵 盖了所有的日常应用场景。
+为了方便链路级仿真中进行的算法性能测试，WINNER项目提供了简化的 信道模型，称为簇延迟线(CDL)模型。在簇延迟线模型中，抽头延迟是确定的， 每条簇都是由功率相同的子径组成，这些子径的到达角和离开角是固定的，而相 位是随机的，这些角度的具体参数可以在IST-4-027756 WINNER TI D1.1.2中査 得。在簇延迟线模型中，每条簇固定有20条子径，仿真莱斯信道时要额外增加 一个角度偏移为0的视距(LOS)传输子径，传输子径的功率可以根据期望的莱 斯因子按比例生成，最后添加相应的功率到信道传输系数上。簇延迟线模型提 供了一个简化版的信道建模方法，当需要对后续链路级仿真中的算法或技术进行 评估时，簇延迟线模型可以进行快速的仿真。

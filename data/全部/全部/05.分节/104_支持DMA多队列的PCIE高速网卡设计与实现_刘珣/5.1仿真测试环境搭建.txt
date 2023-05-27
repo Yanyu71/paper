@@ -1,0 +1,6 @@
+5.1仿真测试环境搭建
+图5-1测试框架图
+本系统的测试框架如图5-1所示。分为两部分，左侧部分是IP核部分。为了可以 构建出从网络线路侧到主机侧以及从主机侧到网络线路侧这一环路，通过Vivado工 具生成 了 10G Ethernet PCS/PMA (10GBAS&R/KR) IP核以及7 Series Integrated Block For PCI Express IP核，Vivado为用户提供了每个IP核的IP Example Design,可用于对 本IP核进行测试和仿真。利用此特性，通过生成10G Ethernet PCS/PMA (10GBASE- R/KR)的IP Example Design产生数据激励源以及进行数据检验工作。同时通过生成7 Series Integrated Block For PCI Express的IP Example Design将其作为根复合体可与End Point进行PCIE协商。
+右侧为被测部分，包含了 PCS模块部分，MAC地址卸载加速模块部分，以及基 于PCIE的DMA部分。其中为了测试PCIE DMA模块，需要与主机侧的根复合体进 行PCIE协商。具体做法是将数据通过路径转换模块进行转发，在回环路径上形成一 条指向主机侧的路径，从而将数据流向PCIE DMA以及根复合体。因此，本框架分
+56
+为两条通路，一条从网络侧到网络侧的回环路径：由网络侧发送激流源，经过PCS 接收、MAC接收(卸载加速)、路径转换、MAC发送、PCS发送，再回到网络侧， 这一过程可测试PCS模块以及MAC地址卸载加速模块的功能。另一条从网络侧到 主机侧的路径：由网络侧发送激励源，经过PCS接收、MAC接收(卸载加速)、路 径转换、PCIEDMA模块，再到达主机侧中的根复合体，这一过程可测试PCIEDMA 模块的功能。通过这两条路径可完成所有部分的功能测试。按照以上框架搭建电路， 将完整设计导入Modelsim仿真工具。

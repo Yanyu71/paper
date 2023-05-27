@@ -1,0 +1,11 @@
+5.3.2用户级子帧偏移判断及参数计算模块
+判断用户在当前子帧是否传输SRS,还需判断用户级SRS子帧配置。可以表述为， 用户级配置的SRS子帧和SRS传输周期需分别是小区级配置子帧及周期的子集和倍数。 才能满足用户真正配置了 SRS的要求。该模块在上一模块的基础上进行用户级别的SRS 子帧判断，最终要得到每个用户在一个无线帧上可能配置SRS的子帧。
+表5-6:用户级子帧偏移判断及参数计算函数描述
+函数原型	int eNBRxSRS_RI,ParainCal(RadioFraineNuni7 SubP'ranieNum)
+函数输入	函数参数	RadioFraineNurn：无线帧号
+SubFrameNum:子帧号
+全局变量	UffhyCelUnfo：高层配置的小区级参数
+ULPhyRLInfo：高层配置的用户链路级参数，用以计算SRS用户参数和判断UE在当前子帧 是否发送SRS
+SrsUserlnfo：用户SRS相关参数
+函数输出	全局变量	SrsFramelnd；全局变量，用户在无线帧的10个子帧上是否发送SRS的标识
+返回值	Rlflag：指示SRS是否在当前子帧发送

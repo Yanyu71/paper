@@ -1,0 +1,27 @@
+3.3.4测试例的TTCN.3实现
+为了和3GPP保持一致，将测试例命名为“TC_12_13”，在MTC上定义 VbLTE鉴权测试例时，激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模 拟TD-LTE小区的接入网和核心网的IMS、IP部分的测试主体，以下为这一过 程的TTCN-3实现代码：
+testcase TC_12_13() runs on MTC IMS system SYSTEM IMS (
+// MTMTSI Speech call
+var IMS_PTC v_IMSl := null;
+var IMS_PTC v_IMS2 := null;
+timer tGuardTimer := int2float (300 );
+v_IMSl := IMS PTC.create alive; f_MTC_IMS_CreateMapAndConnectPTCs_EUTRA ( v_IMSl, v_IMS2); v_IMSl.start ( f_TC_12_13_IMS ());
+tGuardTimer.start;
+f_MTC_IMS_MainLoop( t_GuardTimer );
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC,设置时间阈值。测试例开始执 行时，首先通过EUTRA_PTC接入核心网，通过IP_PTC转发值IMS_PTC,,最 后由IMS_PTC负责与UE进行信令交互。各测试成分之间的关系如上一节图。 该测试例的主体函数f.TC_12_13_IMS()实现细节比较复杂，仅按功能分组简述： 第一组是参数初始化配置函数：
+f.IMS_CC_Preamble (IPCAN_SpeechCall, IMS_REGISTERED );
+JIMS_TestBody_Set (true );
+MMS_CC_StartCall ( IPCAN_MT_SpeechCall );
+其中，函数JIMS_CC_Preamble ()进行初始化通用设置，两个参数分别表 示语音通话和终端己注册。函数f_IMS_TestBody_Set ()设置测试状态，true表示 开始。函数JIMS_CC_StartCaU()表示开始通话,参数表示通话方式为语音通话。
+第二组是根据测试例流程执行发送INVITE到接收183 Session Progress的过 程。具体如下：
+f.IMS_MTCallSetup_AnnexCl 1_INVITE ();
+f_IMS_MTCallSetup_AnnexCl l_Stepsl_3 (v_InviteRequestWithSdp ); f_MessageHeader_GetContactSipUrl (v_SessionInProgress 183 .msgHeader);
+38
+其中，函数 JIMS_MTCallSetup_AnnexC 11_INVITE ()配置 INVITE 消息， 函数 f_IMS_MTCallSetup_AnnexCll_Stepsl_3 ()执行发送 INVITE 到接收 183 Session Progress 的过程，函数 f^MessageHeaderGetContactS ipUrl ()从 183 Session Progress的消息头中获取接收方的URL。
+第三组是测试例第四步到最后挂机的全部过程，具体如下： f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MT_SpeechCall); f^IMS MTCallSetup AnnexC 11 _Steps4_ 12 (v_InviteRequestWithSdp, v_SessionInProgressl83);
+LDelay(3.0);
+f^IMS_CallReleaseMT(v_InviteRequestWithSdp.Invite,vContactUrl); fJMS_CC_Postamble(IPCAN_MT_SpeechCall);
+其中，函数 JIMS_CC_TriggerDedicatedBearerActivation()触发 IPCAN 激活 第二条PDP±下文建立专用EPS承载，函数
+f_IMS_MTCallSetup_AnnexC 11 _Steps4_l2 ()执行从接收到 183 Session Progress 到通话建立完成的所有信令流程，通话时间设置为3.0秒，之后由函数 f_IMS_CallReleaseMT()释放语音被叫通话流程。测试例运行完成，调用函数 f_IMS_TestBody_Set (),参数为false表示结束测试。最后调用函数 fLIMS_CC_Postamble()执行测试例结束的通用流程，参数IPCAN_MT_SpeechCall 表示要结束的通话方式。
+语音被叫测试例的实现流程如图3-9所示：

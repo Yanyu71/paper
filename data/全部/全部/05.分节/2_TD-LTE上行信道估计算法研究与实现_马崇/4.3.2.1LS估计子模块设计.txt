@@ -1,0 +1,71 @@
+4.3.2.1LS估计子模块设计
+LS估计子模块主要负责基本ZC序列产生，及时隙m内循环移位以如产生， 输入数据与本地ZC序列复数乘法等工作，根据这三个主要功能，可将LS估计子 模块分为3个子函数。
+1.基本ZC序列产生函数
+•函数概述
+表4-1基本ZC序列产生函数概述
+函数原型	void PuschChanEstZcGen (pPuschCelllnfo, pInput Ncs, pOutput dmrs)
+功能描述	本函数根据输入控制信息得到本时隙的本地解调参考信号ZC序列
+输入参数	pPuschCelHnfo：指向信道估计用到的CELL相关信息控制结构体的指针， 类型为 STRU_Pusch_CellInfo；
+p!nput Ncs：指向Ncs数组的指针
+输出参数	pOutput dmrs：指向生成的本地探测参考序列数组的指针
+返回值	无
+•该模块处理流程图
+开始
+No
+V
+査表
+Msc_24table
+循环移位
+图4-6基本ZC序列产生处理流程图
+2.Ncs计算函数
+51
+•函数概述
+表4-2 Ncs计算函数概述
+函数原型	void PuschChanEstNcsCal ( pPuschCelllnfo, pNcs out)
+功能描述	本函数根据输入的控制信息，调用gold码序列产生函数生成。然后根据公 式计算得到ns时隙内循环移位参所需要ncs
+输入参数	pPuschCelllnfo：指向信道估计用到的CELL相关信息控制结构体的指针。 不随UE变化，该结构体类型为STRU Pusch CellInfo
+输岀参数	pNcs out：指向"cs输出数组的指针
+..
+返回值	无
+•该模块处理流程图
+图4-7 Ncs生成计算公式
+3.LS计算函数
+•函数概述
+表4-3 LS计算函数概述
+52
+函数原型
+i;	void ChanEst_LS (
+pPuschRbLoc, pPuschCelllnfo, pZC_Seq. plnput, pChanEstLsOut)
+功能描述	本函数根据输入本用户RB的起始位置，输入的数据，前面模块产生的ZC 基本序列及Ncs的值，完成LS估计算法，并将结果输出。
+输入参数
+-	pPuschCelllnfb：指向信道估计用到的CELL相关信息控制结构的指针,结 构体类型为 STRU_PuschRbLocInfo
+pPuschRbLoc：指向用户RB位置的指针，由L RB及H_RB构成，可到对 应资源栅格中取出每个用户的数据，结构体类型为STRU_Pusch_Cell!nfo pZC_Seq：产生的本地ZC序列
+plnput：输入的RS符号位数据，会根据psPuschRbLoc控制结构体中RB 位置来取数据
+瑜岀参数	pChanEstLsOut： LS 估计输出
+返回值	无
+4. LS模块中使用控制结构体定义
+在上面介绍的函数设计中，涉及到了几个控制结构体，对这几个控制结构体 的定义见如下几个表格。
+♦ PUSCH用户级控制信息
+表4-5 PUSCH用户控制信息结构体定义
+结构类型名	成员	说明
+STRU_PuschRb
+Loclnfb	RbStartPosion	用户PUSCH数据在资源栅格中的 起始位置
+RbNiim	某一用户PUSCH数据在资源栅格
+中使用的总RB数
+ns	时隙号
+Input Ncs	输入的Ncs值
+• PUSCH小区级控制信息
+表4-4 PUSCH小区级控制信息结构体定义
+53
+结构类型名	成员	说明
+UlBand Widthindex	上行带宽
+Ndmrslndex	PUSCH参考信号的一个循环移位 参数
+STRU_Pusch_C	UIDeltaSs	PUSCH参考信号的序列移位图案 参数。取值0〜29
+elllnfo	UlSeqGroupHoppingFl
+ag	上行参考信号的组跳频使能
+UlSeqHoppingFlag	上行参考信号的序列跳频使能
+UlCpType	CP 类型：0-normal 1 -extend
+Cellld	小区ID
+n DMRS l	DMRSJ 值
+n DMRS 2	DMRS 2 值
+ns	时隙号

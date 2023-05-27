@@ -1,0 +1,5 @@
+5.1.2.3.流失预测模型..未考虑购买行为模型构建
+本文首先提出仅考虑消费者自身因素和消费者评论行为的评论流失预测模 型。最终本文确定出消费者的性别、年龄、消费者贡献值、累积评论贡献值、评 论最高贡献值、评论次数、最后一次评论时间、第一次评论时间、工作时间段评 论次数、白天评论次数、晚上评论次数以及凌晨评论次数这13个指标作为本文 研究的待选解释变量。
+Churn = G^aget + 029en^ert + 03Contributiont +	+ ^2Cm_topit..A 4- mCft.i +
+^CJasttimeit^ + ^5C_firsttimeit^ 4- /26C-worktimeff_1 + ^Cjnidnighti^ + ii3C_dayit^ + ^Cjiighti^ + ii^MeanJcoreit^ 十方并	.	公式（5-3）
+52

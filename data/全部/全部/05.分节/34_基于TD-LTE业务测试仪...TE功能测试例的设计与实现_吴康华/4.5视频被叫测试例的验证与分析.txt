@@ -1,0 +1,89 @@
+4.5视频被叫测试例的验证与分析
+视频被叫测试例执行结果如下所述:
+在本测试例的第一个测试点之前，首先SS发送第一条INVITE(Cseq：4711) 到UE,标志着测试例流程开始，按照协议，应当收到连续两条100 Trying和183 Session Progress,并且Cseq值均为4711,由于100 Trying是可选信令，因此以 183 SessionProgress如下图4-19所示，测试点1通过。
+函?2.32?5teih8rit.i>capflg -孕膈$^砒	— 13 X
+杉拓	GpJwe	Statistics	Jcolt
+鶴潔參餾巔 為做翼,a -溢峰囑警盘 袤耳 我做欢愆；情密整芯 霧
+他為把虹5 沖心i	，5鄭.e g
+图 4-19 183 Session Progress (Cseq： 4711)消息结构图
+当 SS 发出 PRACK (Cseq： 4712)以确认收到 183 Session Progress (Cseq：
+4711)之后，根据协议，此时UE将发送200 OK(Cseq： 4712)作为PRACKCCseq：
+4712)的响应。测试点2通过，如下图4-20所示:
+鶴?2.22wire?h?rk.pc?{?ng ■ Wififshark
+￡關必Qa Gpture finaiyte JtaSstics T熟Jpals
+Source
+2098 34.6576740192.16S. 0.1	138.195.216.75	SIP, SCFStaxus: 183 Session Progress, with session description
+3261 36.2903030138.195.216. 75	192. 168.0. 1	SI? gMt, FRACS sip：0010l0l23456789tl92, 168.0. l；8904
+, Fraae 2268. 774 byte# on ?￡re (6192 bits). 774 byte captured (6192 bits)
+、Ethernet II. Src： 60：a4：4c：b4：5J：5e f60：a4:4c：b4：5】：5e? Dst： 60 a?：4c：b4：51：5e (€C：a4:4c：b4:51;5e)
+? Internet Protoeol. Src: 192.168. 0.1 (192. 163.0. D. &?t： i38. 195.216. 75 <138. 195.216. 75)
+? Encap.ulatiai： Security Payload
+十 User Datajrika Protocol. Src Port: http-alt (3008b Dst Port: na-locallse (5062) Sesaiofi Initlatioo Protocol
+* Status-Line: SIP 2.0 200 OK
+-■ Message Header
+CaII-10: IN￥ire-0-7dec-ndO-A?65-OOaOc9le6bf6tl38. 1?5. 216. 75
+Content-Leagth： 0
+* CSeq: 4712 PRACK
+Pros： <sip：PeerUE-Pvbl IctsxflSO. etsl. otg>. ta<=abc-INVITE-Froata?
+To: <tip:O0iO10123456*8991BS. bhcOOJ. accOCl. 3<ppnetwoxk. orj>. tag?：3S9618194
+? [truncated； Via： SIP/2.0 UK* 138. 195.216. T5：5062;branch?z9hG4bK89Ol234567, SIP- 2. O VDP scscfl. 3?pp- org:branch?s9hG4bK9013345678, S1P/2.0- WF jc?cf2. 3?pp. or P-Accei*-Network-Info: 3GP?-E-UTRAN-T1?; utran-cell-ld-Sjpp-OOlOlOCOlOOOOlOO
+k: lOOrel
+AUcnr: 1NV1T2, ACK, CANCEL, BYE, UPDATE, PRACK, MESSAGE. R￡FER. NOTIFY, INFO
+图 4-20 200 OK (Cseq： 4712)消息结构
+SS发送包含指示保留资源的SDP消息体的UPDATE (Cseq： 4713)之后,
+根据协议规定，应当收到UE发送的200 OK (Cseq： 4713),测试点3通过。如
+图4-21所示:
+Q 狼	- Vrtreshark
+￡3*	加 Capture ^naiyse $tat>?ucs	looh
+PwocoJ info
+, ?raj?e 229St 3W brtes oo wire (2480 bits), 310 b^tea cspturttd (2480 bits)
+-Ethernet II, Src： G0:a4:4c:b4；51 ;5e(6O.a4；4c:b4:51:5e-, Ost： 60;a4:-4c:lH：5l;5e <fi0；a4；4c:M:52:5e：-
+, Internet Protocol, Src; 192.163.0.1 G9Z !68.0.1), Ost： 136.195.216.：5 (138.195.^16.75)
+-砒 Security PayZsd
+■Vser Data<r? fn>tocol, Src Port： http-alt ￡8008〉，Ost Port: n?-localise <5062)
+■Session Initiation Protocol
+簽 Status-Line: SIP<-2.0 200 W
+# Message Header
+C&li-IB: Wm-O-76ec-lld<y-a7€5-(X)aQcSle6bf6Sli>8. i%S. 216. 75
+￡ C?Rtact: <sip:00101G1234567S9€192. J6S. 0.1 ；8904 ':-*g. 3gpp. icsi~ref-',vTi^3fLwm-7,^3styp~3ervict. Ibj. icsi.jaBTei*;?udlo: video
+C?Ktent-lei<th: 771
+Cofttent-Iype； application/sdp
+i CSeq: 4753 vmtE
+■* Fr<?: "-sipiFeerUS-Publlctstf 1^0. ets?. org'. tag=ab<-IN￥IT￡-Fro?tsg
+* Io： <sip:00iOlO1234567B9tias- aacOOi. ?c<001,3gppn?t??rSu crg>::ag=i5S96181&?
+Itruncatedj Via： SIF/2. O- VD? J33. 195. 216. ；5：5062;branci3==29hC4bKS?&54S2109, SlP-iO UD? scscfl. 38PP- org.hr?ic??=z9hG4bK7654321098I SIP/2.0 UDP scscf2. 3<j>p. or ?-Acc?5s-NetTOrk-Info: ^P?-E-UTRAN-IS?; utran-c€ll-dd-3gpp=0010i00010000100
+Require: precondition
+k： iQQrcl
+AHw: mm. ACK, CANCEL. BYg, ITOAT2, PRACfL MESSAC2,蘇汗爲 XOIIFY, INFO
+-Message Es>dy						 ..... _	―...…
+图 4-21 200 OK (Cseq： 4713)消息结构
+由于接下来三条信令作为可选的，不作为测试点，测试点4是UE回复初始
+的INVITE (Cseq： 4711)的200 OK (Cseq： 4711),标志着会话建立完成，如
+图4-22所示，测试点4通过。
+?<? 3 垫《w So Opture ^uiiyK gUtitiic* Teiephot^ look fcjeip
+'￡ Fr啊：<sip:Peerl^E-Fal? 1 icfstf 160. etsi. srg>:t?^=abc~lS￥n￡~Fr?stas
+Record-Route: <sip:J3S. i95.216.73:5862;lr>, <sip:ters^acS€f1. 3gpp.era,lr>? isip:crig€scscf3. 3gpp. erg:ir>. <sip：pcscf2. 3gpp. erg;lr>
+斂 To: ^sip:OO10lCi23456789?iffis. ancQOl. acc(M51. Sgjjpnet^rk. erx ;iag= 15896181^4
+燃 LtrE?cateiil YU: SIP/2.0/U&P 138.195. 216, ?5:5062;braach=z9hG4bKS456759ai2, SIF/2. Q/VOP scscf i. 3gpp. crg.branch-sSb^bK^SSTSSO^S, SIF-2.scscfS. 3gpp. sr ?-Ai：cess-Hftt?ork-l3fox 鴻涔m澈XT源S. tttrft8-cen~Sd-3spp?<X>SO10QOiOCKX>10O k： lOGrel
+图 4-22 200 OK (Cseq： 4711)消息结构
+在本测试例中，挂机请求由主叫方发起，在测试仪表中也就是又SS发起,
+根据协议，SS 发送 BYE (Cseq： 4714), UE 回复 200 OK (Cseq： 4714),通话 结束完成。测试点5通过，如图4-23所示：
+?222w?reshaffcpcap?§ - ^resha^	—OX
+‘ ?r?ae 2652；鈴4 byte? on 哦"(5552 bits). 694 bytes captsired <5552 biu)
+?t cttoet II. Src; S0;a4;4c;b4:3i:5e ^；a4^c:b<J；Sl:5e), Sst;夠怂4:松，梅澎如如 f6?：a4;4e:b4;51:5^
+-Internet Prot&csi. Srct 152.168. Q. I {192.168,0.0, Dst; 133.195,216. 75 <138.195.21€.75)
+￡ EscajssulatiM Secsrhr PaylsatJ
+? 我"r Dsstagraa 每々wca幻 Src Fart: htt^-alx <80087, Ost Perri na-l&c?li$e {以防2，
+?■?■耘弟InltUtlon ?rt>tot.?4
+滋 Statws'Line： S1F 2.0 20? 燃
+? Message Header
+Cai>ID： I?n-n2-0~7dec-li€0-a765'00a<k§ie€bmias, 195.216. 75
+Coftt?nt-Lengxh: 0
+題C弘Q： 4：U彫
+安 Frt?: <sip:?eerVg-Fubli€?stf!60. etsi. ci-g>;tag8abc-IXVirE-RriMfilag
+宅 Tot <Sip23456<83?las.砌c(XH. ?cc081.3gppn<t?crk? ?rg>;女a铲：飾96^8294
+* (truncated； VU： 3IP/2. 0-5JO? 133. 195. 2X6. 75;50?2;hranch?29hG4bK8r^5432009, SIP/2.0/W 女就￡云耘润j. 3rg：brmc汲於hG熟辭654泣姗&处P，2 位滋泠 scscf2.3<pp. ?r
+F-Access-Xexwrk-Info: 3GPP-E-UTRAN-m； sstran-celi-14-3fpp=00-0190010000100
+图 4-23 200 OK (Cseq： 4714)消息结构
+至此，所有测试点通过，视频被叫测试例pass。如图4-24所示:
+图4-24 测试例TC_12_22通过界面裁图

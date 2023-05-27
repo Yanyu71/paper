@@ -1,0 +1,13 @@
+2.1.2Yarn
+Hadoop2的YamUi］是对Hadoopl的MapReduce组件的改进版本％ Yam是一 个分布式的资源管理系统，用以提高分布式的集群环境下的资源利用策，这些资 源包括内存、10、网络、磁盘等。Yam相对于MapReduce,仍可认为釆用了 Master/Slave结构，总体上采用了双层调度架构。Yam的架构如图2-2所示。
+Yam主要由以下四个部分组成：
+ResourceManager：负责资源管理的主服务，整个系统只有一个，负责资源管 理、调度和监控，它支持可插拔的资源调度器，自带了 FIFO、Fair Scheduler和 Capacity Scheduler 三种调度器；
+NodeManager：负责单个节点的资源管理和监控，它定期将资源的使用情况 汇报 ResourceManager,并接收来自 ApplicationMaster 的命令以启动 Container （YARN中对资源的抽象，后续介绍）、回收Container等；
+ApplicationMaster:负责管理单个应用程序，它向ResourceManager申请资 源，并使用这些资源启动内部的任务，同时负责任务的运行监控和容错等；
+Container：对节点资源的抽象，它封装了某个节点上的CPU、内存等资源， ApplicationMaste只有获得一个Container后才能启动任务，另外，
+ApplicationMaster本身也是运行在一个Container之中。
+MapReduce Status	?
+Job Submission 	-*
+Node Status  	 	 *
+Resource Request	?-
+图2-2 Yam基本架构图

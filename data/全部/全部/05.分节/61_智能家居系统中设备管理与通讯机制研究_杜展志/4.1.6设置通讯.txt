@@ -1,0 +1,13 @@
+4.1.6设置通讯
+本智能家居系统主要通过Notification框架来发送和接收通知，为了保证实时性, 控制设备实现了 AllSeen服务框架的Notification机制，在应用启用前注册通知监听 器，从而保证当网络中有通知时，迅速响应。控制设备在接收到通知后根据通知类 型进行处理并将通知转换为系统通知。通知接收部分代码如图4-8所示。
+public class NotiricationsManaferlmp! extends Broadcas^leceiver
+implements	Notiucatioti^Iaiiagef{
+@Ch'*rrid*
+public void receh'e(Nonflcaticn notification) {
+Stnng responseObiectPath^iiDtincation.fed<esponseObjectPath；：;
+boolean ^-ithAcuon^^responseObjeccPath' =null'.-J:± 二 r”pon$?Object?a;h.i 正mptyC ：
+^Jc(?fespons*Obj tz t?ath. equals! enoreC as K HnuUrt));
+handleNotincationWithActiot!；no Hficam，;
+}eke{
+hand!eNot:5ca:ion；no:iScation);
+图4-8设备通讯核心代码

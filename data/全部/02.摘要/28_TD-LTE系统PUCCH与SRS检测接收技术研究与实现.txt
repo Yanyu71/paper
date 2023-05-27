@@ -1,0 +1,23 @@
+摘要
+LTE是移动通信发展过程中的重要里程碑，TD-LTE因其灵活的频谱配 置和较高的频谱利用率在国际化市场显现更多发展机遇。
+TD-LTE系统物理上行控制信道(PUCCH)与探测参考信号(SRS)是 基站侧接收机获得信道控制信息和信道状态信息的重要途径。PUCCH依据 不同发送格式及传输模式承载着与物理上行共享信道独立的HARQ-ACK/ NACK, CQI, PMI, RI,及UE调度请求等控制信息。探测参考信号(SRS) 是与数据信息独立用来探测信道质量的信号，基站通过SRS估计的信噪比 信息，对UE进行频率选择性调度。本文在研究PUCCH和SRS的检测接 收算法基础上，在TI TMS320C6670多核DSP平台上对这两个物理信道进 行了设计与实现。
+本论文的主要创新点包括：
+首先重点围绕PUCCH检测接收，详细研究eNodeB端PUCCH不同发 送格式下的检测接收方法，包括导频估计，半盲检测及广义似然比检测算 法，提出了针对PUCCH优化的广义似然比检测算法，并使用Matlab软件 对多种检测接收算法在不同信道模型下进行了误码率和误码块率的仿真验 证，优化的广义似然比检测算法在检测性能上较优化前提高2.6dB,计算复 杂度上也较半盲检减少了近的复数乘数量。
+然后研究了针对SRS梳状导频信噪比估计的信道探测技术，重点对基于 VCFR信道估计的信噪比估计方法进行了推导。并对几种信噪比估计方法的 进行Matlab性能仿真对比验证。
+最后，设计了 PUCCH各模块任务划分和模块间接口。在DSP平台上， 完成了优化的广义似然比检测的PUCCH链路和SRS的VCFR信噪比估计 的设计与实现，通过多组测试用例验证了算法的正确性和有效性。
+
+关键词:PUCCH SRS;广义似然比检验;信道探测;DSP实现
+
+THE RESEARCH AND IMPLEMENTATION OF TD-LTD PUCCH AND SRSDETECTION AND RECEIVING TECHNOLOGY
+
+ABSTRACT
+For its flexible spectrum allocation and high spectrum utilization, TD-LTE possesses more opportunities fbr the international market, and became an important milestone in the development of mobile communication.
+Physical Uplink Control Channel (PUCCH) and Sourding Reference Signal (SRS) are the great importances to obtain the channel control information and channel state information at eNodeB receiver. Based on different transmission formats and transmission modes, PUCCH carrys with control informations as CQI, PMI, RI, and UE SR (Scheduling Request), which are independent with Physical Uplink Share Channel (PUSCH). SRS, indicating channel quality information, is also independent with the data transmission. After the SNR estimation to get the channel state, the eNodeB performs frequency selective scheduling for the UE. On the basis of the research of PUCCH and SRS, the two physical channels are designed and implemented on the TMS320C6670 TI DSP platform.
+The major innovations of this thesis are as follows:
+Firstly, we fbcus on the PUCCH detection and receiving algorithm, compare the pilot estimation, semi blind detection and generalized likelihood ratio test (GLRT) algorithm based on PUCCH to propose an optimized GLRT method to detect both ACK/NACK and CQI bits. And after simulating the bit error rate (BER) and block error rate (BLER) using Matlab, we get an result that the optimized GLRT obtains a performance improvment of 2.6dB. And the computational complexity of GLRT is also significantly lower than that of semi blind.
+Then, the channel detection technology based on SRS is introduced, and the SNR estimation method based on VCFR channel estimation is presented. We summary the method to calculate the coefficient of noise variance and simulate and verify the performance of VCFR, DFT and Boumard's methods in this thesis.
+Finally, we design the multitask partitioning and the interfaces between the modules of PUCCH and SRS on DSP platform which realize and vary the functions of PUCCH and SRS. And the results of running time of PUCCH and SRS are given in this thesis.
+
+KEYWORDS:PUCCH SRS;GLRT;channel sourding;DSP
+
+

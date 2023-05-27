@@ -1,0 +1,33 @@
+4.3.2仿真场景设计
+表4-2公共仿真参数
+参数类型	参数值
+传输信道类型	YansWifiChannel/SimpleWirelessChannel
+传播损耗模型	FriisPropagationLossModel/5£
+传播时延模型	ConstantSpeedPropagationDelayModel/5€
+物理层协议类型	YansWifiPhy/5t
+MAC类型	AdhocWifiMac/TdmaCentralMac
+MAC队列模型	WiHMacQueue/TdmaMacQueue
+MAC队列长度	400
+MAC队列最大时延	5()0ms
+MAC队列丢包策略	DROP_NEWEST
+路由协议类型	AODV
+传输层协议类型	Udp
+天线类型	OmniAntenna
+节点有效通信半径	110m
+表4-3仿真参数
+参数	参数值
+节点个数	8
+运行速率	1 6(m/s)
+数据包大小	1 024(Byte)
+47
+传输速率	50,100...1000(packet/s)
+发送间隔	0.02,0.01...0.001(s)
+仿真时长	50(s)
+节点运动范围	200m*200m
+图4-10节点拓扑结构
+图4-10使用了 NetAnim来展示节点的拓扑结构，图中含有8个节点分布在 两行，每行节点含有4个节点。这个拓扑结构就是以下仿真场景一和二的网络拓 扑结构。
+仿真场景一
+两个节点以16m/s的速度在通信范围内随机运动，节点6向节点0发送数 据，比较802.1 la协议和TDMA MAC协议，在不同数据包发送速率的条件下对 网络性能的影响，如：时延，丢包率和吞吐量。
+仿真场景二
+8个节点以16m/s的速度在通信范围内随机运动，节点4向节点0发送数 据，节点5向节点1发送数据，节点6向节点2发送数据，节点7向节点3发送 数据，比较802.1 la协议和TDMA MAC协议，在不同数据包发送速率的条件下 对网络性能的影响，如：时延，丢包率和吞吐量。
+48

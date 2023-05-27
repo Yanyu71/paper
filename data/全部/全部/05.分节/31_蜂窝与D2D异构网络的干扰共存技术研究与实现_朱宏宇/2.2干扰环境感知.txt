@@ -1,0 +1,9 @@
+2.2干扰环境感知
+D2D干扰感知需要解决以下三个问题：
+(1)D2D所处的位置是否被LTE蜂窝基站信号覆盖
+(2)若有蜂窝基站，D2D需要获得所处小区的上下行配置、带宽、时频同步 值等基本信息
+(3)若有蜂窝基站，D2D需要实时获取各蜂窝上行信道占用的资源
+LTE蜂窝基站在主同步信道及辅同步信道广播小区ID囲，D2D在获得了帧 同步后可以通过解主同步及辅同步信号获得小区ID。若D2D成功解到了小区ID, 说明此D2D处于LTE蜂窝干扰之中，为了满足干扰控制的需求D2D需要实时 获取每个上行子帧蜂窝用户的资源占用情况。因此，首先要获取小区的上下行配 置，即每个无线帧中哪些是上行子帧哪些是下行，还需要系统带宽、收发天线数 等基本信息作为解其他下行控制信道的基础。这些小区配置信息可以通过解物理 广播信道(Physical Broadcast channel, PBCH)获得。
+根据文献［4］,物理上行共享信道(Physical Uplink Shared channel, PUSCH) 用于传输蜂窝用户上行数据，基站通过物理下行控制信道(Physical Downlink Control channel, PDSCH)中承载的信令来指示PUSCH的资源占用信息，另夕卜， 物理 HARQ 指示信道(Physical HARQ Indicate Channel, PHICH)包含了重传的 PUSCH的资源占用信息；物理上行控制信道(Physical Uplink Control Channel, PUSCH)和物理随机接入信道(Physical Random Access Channel, PRACH)的资 源占用由物理下行共享信道(Physical Downlink Shared Channel, PDSCH)中承载 的特定信令指示；若要解PDCCH和PDSCH,必须先解物理控制格式指示信道
+(Physical Downlink Control channel,PCFICH),因为它指示了 PDCCH 和 PDSCH 位于一个下行子帧中的哪几个OFDM符号。
+总的来说，D2D干扰感知需要的技术包括小区同步搜索技术和各下行信道 解码技术。其中PDCCH盲解码技术由于复杂度高且解码性能直接影响D2D干 扰感知的准确性，成为了干扰感知中的一个难点，将在本文第三章中进行重点研 究。下行信道估计是解码各下行信道的一个公用基础模块，信道估计的性能将影 响各信道的解码正确率，因此也是干扰感知中的一项关键技术，将在本文第四章 对下行信道估计算法进行优化。

@@ -1,0 +1,19 @@
+4.3.1仿真条件
+表4-3 LTE-H i动态场景信道下的仿真条件
+测试场景	LTE-H i动点信道场景
+系统带宽	20M
+RB资源数	lOOPRBs
+上下行配比	上下行配置1: 3,特殊子帧配置7
+HARQ	打开
+AMC	自适应调制 QPSK 16QAM 64QAM ；记为 without 256QAM 阶数范围：QPSK 160AM 64QAM 256QAM 记为 with 256QAM
+MIMO模式	TM2 TM3自适应
+SNR范围	图2-4中每12000帧平均值
+载波频率	3. 5G
+接收算法	MMSE
+信道估计算法	2维维纳滤波
+CFI	3符号
+PSS\PBCH\SSS	理想已知
+天线配置	eNode B 2天线（发送、接收）；UE 2天线接收，1天 线发送；
+Antenna conf i gurat i on (base stat ion)	基站10倍波长； （直射径与移动台天线阵法线夹角0 degrees）
+Antenna configuration (UE)	终端0.5波长； （直射径与移动台天线阵法线夹角150degrees）
+66

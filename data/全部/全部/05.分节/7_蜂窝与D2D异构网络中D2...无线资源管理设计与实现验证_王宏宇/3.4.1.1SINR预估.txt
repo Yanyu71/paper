@@ -1,0 +1,31 @@
+3.4.1.1SINR预估
+在蜂窝与D2D异构通信以往的研究中，一般都仅讨论复用一个CUE资源 的情况。但在实际中，复用多个CUE资源也是可行的，只要保证对其中任何一 个CUE的干扰不超过阈值即可。
+假设DUE需要复用的资源段RBSEG如下图3-15示，资源段长度记为 Nprb_seg，内部共包括CUE1,……CUEn,各占用资源段长度NPRB_CUEl,…… 、邱朗。在RxDUE处感知到的对应CUE的干扰功率值为1时硕，…… IntfCUEn (单位为dBm/RB),底噪功率为(单位为dBm/RB)。其中，IntfCUE 中已经包含底噪功率。
+IntfcUE\ N 0 IntfcuEllntfcUEB	^fcw.n
+CUE1 CUE2 I CUE3 	 CUEn~~~
+~——＞；	...... 长奇	 'I~
+N&伫昭!	 	___
+i	N prb-seg	I
+图3.15资源段资源分配
+RBSEG的SINR通过下式计算
+SINR = P7、-PLg — (I + N) [dB]	(3-18)
+TxDUE单位RB发送功率珏需满足自身功率等级最大发送功率限定、D2C 的正交和重用干扰控制限定，为限定允许发送功率的最小值。
+当使用集中式重用干扰控制机制时，
+35
+其中，Torlntf为集中式重用干扰辅助控制广播中，指定资源段所有资源的 可容忍干扰值的最小值，即
+Torlntf = min(TorIntfTable{NPRBStart +z)) , 0<z<NPRB_SEG (3-20)
+i	■
+当使用分布式重用干扰控制机制时，
+^D2Dmax _ 1。^°810 ^PRB-SEG	-
+=min-	PD2BS	> [dBm/RB] (3-21)
+PD2BS + factorPcue
+其中，复用功率因子为资源段RBSeg中被调度的蜂窝用户复用功率因子最 小值，若无蜂窝用户，则复用功率因子为0,允许使用最大正交功率。
+factor =
+SINR式中PLd2Drx为TxDUE本机到RxDUE的链路损耗。DUE周期性广播 自己的状态信息，并作为DUE间相互认知的依据。通过RxDUE对TxDUE广 播中参考信号的测量，测量值(RSRP)与参考功率之差即为TxDUE到RxDUE 的发送链路损耗。在竞争接入SSCA过程中，PL通过CTS响应告知TxDUE。
+对于I、N , TxDUE通过C2D干扰避免机制获得RxDUE的IntfCUEn和N。 后，需要按照资源分配图进行计算得到I + N.
+对于其合并方式，考虑到D2D数据传输使用与LTE蜂窝网络相同的 SC-FDMA技术，其基带信号SC-FDMA对调制符号先进行DFT,插零扩展后 再进行IFFT变换，其本质为频域补零时域扩展的时域调制方式，在资源段内每 个子载波上引入的干扰噪声在解调时将会平摊到每个数据符号，所以，RBSEG 的干扰1 + N按照式3-23以资源段加权平均的方式计算。
+NcuE	1 河CUES	M)	Ncue
+£10 2 •心叽阻+102・(心队殂 —£ NPRB-CUE)
+[+ N = 10 log io 旦			E	 (3-23)
+最后，按照式3-18计算得到此资源段的预估SINR。
+36

@@ -1,0 +1,101 @@
+3.7.5定理3.2证明
+根据覆盖概率的定义，伊cov(0)可表示为:
+K	K
+定义 s = ￡Sk 和 Z = /o+￡4，则
+k=l	k=l
+伊c°v (8 Z Pr [So 2 0Z] + Pr 凡 < 阳 S 邳Z - S°]
+= Pr[50 2 PZ] + Pr[So < 0Z,S2 pZ]+Pr[SQ < PZ,PZ-SO <S^pZ].
+(3-38)
+第一项Pr [So N ￡Z]可应用Ik的Laplace变换函数得到，即
+Pr[So2 0Z]^*：po(mo + l)谊另(捋爲上)扁⑺妬	(3'39)
+其中。)是由于hXo服从指数分布。由于釆用Laplace反变换直接获取Sk和Ik的pdf 的闭式表达式很复杂，本文采用Gamma分布㈣来拟合S和Z的pdf.据文献[20,21] 证明，采用二阶距匹配Gamma分布足够用于拟合多个Gamma分布的和。因此，与S 有相同一阶距和二阶矩的Gamma分布有如下形状(shape)参数际和尺度(scale) 参数6S-
+/ K \ 2 K
+￡E[Sk]	E ￥[5,]
+& =毛—— ,0s =旱——，	(3-40)
+岡	財[&]
+其中E［&］和V&］分别是Sk的均值和方差。Sk的均值可釆用文献［10］中的公式 (2-19)获得：
+"2—a _ /2-a 算一1 麻二，E E+i)
+乙—a B
+Mq_mk
+mk+l
+(3-41)
+其中4 = 1。根据文献［10］中的结果(2-21), S*的方差为:
+2	Xk
+2兀鼻阳Ik [ rl-2adr
+爲
+r(TX)
++ 1
+Aft— 1	■ <	/ n(
+S=E(/?)epm + i)虹? 4
+旳=°
+一	(5])七.
+2-2a ”住人扁+i)2
+Mq
+(3-42)
+类似的，与Z有相同一阶距和二阶矩的Gamma分布的形状和尺度参数表达如 下：
+(E[Z0]+EE[Z,f =I	k=i	，
+Z	K
+v[z0]+E v[zA]
+k=\
+2	K
+V[/o]+E V[/J -，°Z=号—
+E 卩o] +E E[/fc]
+k=\
+其中在r0给定条件下10的均值和方差分别为:
+Mq	戶(TX)
+E [/oko] = 2兀為 ￡ Po (m)号一 ，
+妇	Mo a_z
+是-2a 或)(^TX)) 岑 Po(m)
+妇m
+阳盛=2a-2 Mo
+4的均值和方差可获得如下:
+E囹=2区妒硏
+65
+,.2 一 a
+r0
+Mk
+E Pkg), mk=l
+y Pkg
+出1 mk
+(3-43)
+(3-44)
+(3-45)
+(3-46)
+(3-47)
+根据S和Z的Gamma拟合，概率Pr [So < PZ,S 2 jBZ]近似如下:
+f OO gz oo	)
+Pr [So <PZ,S 2 PZ] = E㈣,「° { ///了s(s)dsfs。(x)dxfz⑵K }
+、0 0位	丿
+露衿"叫5
+羸 /「(际+互川咤絕⑴]
+r(5(— + i) j
+_F	J「(於 + 勺)中际 _6&(佝 +1)、1
+_蛔，叽r(0r(Kz+i产I/+成以)甘丿j
+其中9 =警 和窃(X)表示为公式(3-28)。任)和(/)是根据S, Z的Gamma拟合以 及仅的指数分布。相似的，概率Pr[So<FZ,0Z-So<SW0Z]可获得如下：
+(3-49)
+其中(〃)是通过变化积分变量域。线(%)表达如公式(3-29)O结合公式(3-38), (3-39), (3-48)以及(3-49),覆盖概率可近似表达为(3-26)o
+参考文献
+[1]Li Q C, Niu H, Papathanassiou A T, et al. 5G network capacity: Key elements and technologies]!]. IEEE Vehicular Technology Magazine, 2014,9(1): 71-78.
+[2]Wu H, Zhang N, Tao X, et al. Capacity-and Trust-Aware BS Cooperation in Nonuniform HetNets: Spectral Efficiency and Optimal BS Density [J]. IEEE Transactions on Vehicular Technology, 2017, 66(12): 11317-11329.
+[3]Lee D, Seo H, Clerckx B, et al. Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges[J]. IEEE Communication Magazine, 2012, 50(2): 148-155.
+[4]Bassoy S, Farooq H, Imran M A, et al. Coordinated Multi-Point Clustering Schemes: A Survey [J]. IEEE Communications Surveys & Tutorials, 2017, 19(2): 743—764.
+[5]Paschos G, Ba§tug E, Land I, et al. Wireless caching: Technical misconceptions and business barriers [J]. IEEE Communication Magazine, 2016, 54(8): 16-22.
+[6]Liu D, Chen B, Yang C, et al. Caching at the wireless edge: design aspects, challenges, and future directions[J]. IEEE Communications Magazine, 2016, 54(9): 22-28.
+[7]Mobile's Green Manifesto[R]. https://www.gsma.com/publicpolicy/wp-content/uploads/2012/06/ GSMA2012_Report_MobiIesGreenManifesto.pdf: GSMA, 2012.
+[8]Zhang S, Zhang N, Zhou S, et al. Energy-Aware Traffic Offloading for Green Heterogeneous Net- works[J], IEEE J. SeL Areas Commun., 2016, 34(5): 1116-1129.
+[9]Zheng Z, Zhang X, Cai L X, et aL Sustainable communication and networking in two-tier green cellular networks[J]. IEEE Wireless Communications, 2014, 21(4): 47-53.
+[10]Baccelli F, Blaszczyszyn B. Stochastic Geometry and Wireless Networks: Volume I-Theory[M]. Massachusetts: Now Publishers, 2009.
+[11]Yu P S, Lee J, Quek TQS, et al. Traffic Offloading in Heterogeneous Networks with Energy Harvesting Personal Cells - Network Throughput and Energy Efficiency[J]. IEEE Transactions on Wireless Communications, 2016, 15(2): 1146-1161.
+[12]Yang C, Yao Y Chen Z. Analysis on cache-enabled wireless heterogeneous networks。], IEEE Transactions on Wireless Communications, 2016, 15(1): 131-145.
+[13]Wang X, Chen M, Taleb T, et al. Cache in the air: Exploiting content caching and delivery techniques for 5G systems[J]. IEEE Transactions on Communications, 2014, 52(2): 131-139.
+[14]Ferenc J S,Neda Z. On the size distribution of poisson voronoi cells[J]. Phys. A: Stat. Meeh. AppL, 2007,385(2): 519-529.
+[15]Kiang T. Random fragmentation in two and three dimensions]」]. Zeitschrift fur Astrophysik, 1966, 64: 433T39.
+[16]Dhillon H S, Andrews J G. Downlink rate distribution in heterogeneous cellular networks under generalized cell selection[J]. IEEE Wireless Communications Letters, 2014, 3(1): 42-45.
+[17]Di Renzo M, Lu W, Guan P. The intensity matching approach: A tractable stochastic geometry approximation to system-level analysis of cellular networks[J]. IEEE Transactions on Wireless Communications, 2016, 15(9): 5963-5983.
+[18]Gradshteyn S, Ryzhik I M. Table of Integrals, Series, and ProductsfM]. New York: Academic Press, 2000.
+[19]Di Renzo M, Guidotti A, Corazza G E. Average rate of downlink heterogeneous cellular networks over generalized fading channels: A stochastic geometry approach[J]. IEEE Transactions on Communications, 2013, 61(7): 3050-3071.
+[20]Robert W H, Kountouris M, Bai T. Modeling Heterogeneous Network Interference Using Poisson Point Processes[J]. IEEE Transactions on Signal Processing, 2013, 61(16): 41U126.
+[21]Heath Jr R W, Wu T, Kwon Y H, et al. Multiuser MIMO in distributed antenna systems with out-ofcell interference[J]. IEEE Transactions on Signal Processing, 2011, 59(10): 4885M899.
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.
+第四章 考虑差异化基站高度的HetNets联合传输频谱效率与业务卸载分析
+第二章和第三章分别针对非均匀HetNets和支持缓存与EH的HetNets中的BS 协调与协作展开了研究与分析。网络建模中均釆用独立的二维HPPP对异构网络节 点进行建模。考虑HetNets中异构BS与MU之间差异化的部署高度，本章进一步展 开研究，分析具有差异化BS高度的HetNets中的联合协作传输与业务卸载，同时考 虑无线信号传播的LoS和NLoS链路对协作传输性能的影响。

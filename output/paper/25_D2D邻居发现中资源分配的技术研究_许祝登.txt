@@ -1,0 +1,725 @@
+﻿{
+    "knowledge_points": [
+        {"title": "D2D通信技术", "en": "D2D Communication Technology"},
+        {"title": "5G系统", "en": "5G System"},
+        {"title": "异构网络", "en": "Heterogeneous Network"},
+        {"title": "D2D邻居发现", "en": "D2D Neighbor Discovery"},
+        {"title": "资源分配", "en": "Resource Allocation"}
+    ],
+    "relations": [
+        {"source": "4G系统", "target": "5G系统", "type": "evolution"},
+        {"source": "移动社交网络", "target": "5G系统", "type": "demand"},
+        {"source": "物联网", "target": "5G系统", "type": "demand"},
+        {"source": "移动数据量", "target": "5G系统", "type": "increase"},
+        {"source": "环保和节能", "target": "通信技术", "type": "demand"},
+        {"source": "D2D通信技术", "target": "5G系统", "type": "key technology"},
+        {"source": "D2D通信技术", "target": "频谱利用率", "type": "improvement"},
+        {"source": "D2D通信技术", "target": "终端发射功率", "type": "reduction"},
+        {"source": "D2D通信技术", "target": "电池消耗", "type": "reduction"},
+        {"source": "D2D通信技术", "target": "基站压力", "type": "reduction"},
+        {"source": "D2D通信技术", "target": "FlashLinQ", "type": "example"},
+        {"source": "D2D通信技术", "target": "公共安全服务", "type": "support"},
+        {"source": "D2D通信技术", "target": "3GPP", "type": "standardization"},
+        {"source": "D2D邻居发现", "target": "资源分配", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D通信技术基础", "en": "Fundamentals of D2D Communication Technology"},
+        {"title": "D2D邻居发现中资源分配的方案", "en": "Resource Allocation Scheme in D2D Neighbor Discovery"},
+        {"title": "D2D邻居发现中自适应的资源分配方案", "en": "Adaptive Resource Allocation Scheme in D2D Neighbor Discovery"}
+    ],
+    "relations": [
+        {"source": "D2D通信技术基础", "target": "D2D邻居发现中资源分配的方案", "type": "包含"},
+        {"source": "D2D通信技术基础", "target": "D2D邻居发现中自适应的资源分配方案", "type": "包含"},
+        {"source": "D2D邻居发现中资源分配的方案", "target": "D2D邻居发现中自适应的资源分配方案", "type": "进一步优化"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D通信",
+            "en": "D2D Communication"
+        },
+        {
+            "title": "同步",
+            "en": "Synchronization"
+        },
+        {
+            "title": "LTE系统中同步的设计",
+            "en": "Synchronization Design in LTE System"
+        },
+        {
+            "title": "FlashLinQ系统中同步的设计",
+            "en": "Synchronization Design in FlashLinQ System"
+        },
+        {
+            "title": "LTED2D系统中同步的设计",
+            "en": "Synchronization Design in LTED2D System"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D通信",
+            "target": "蜂窝覆盖",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "上行链路",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "下行链路",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "频率资源",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "基站",
+            "type": "负担减轻"
+        },
+        {
+            "source": "D2D通信",
+            "target": "数据量大的业务",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "时延",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "通信距离",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "链路质量",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "发射功率",
+            "type": "降低"
+        },
+        {
+            "source": "D2D通信",
+            "target": "电池消耗",
+            "type": "降低"
+        },
+        {
+            "source": "D2D通信",
+            "target": "续航时间",
+            "type": "延长"
+        },
+        {
+            "source": "D2D通信",
+            "target": "underlay模式",
+            "type": "优势"
+        },
+        {
+            "source": "D2D通信",
+            "target": "资源复用",
+            "type": "提高"
+        },
+        {
+            "source": "D2D通信",
+            "target": "频谱利用率",
+            "type": "提高"
+        },
+        {
+            "source": "D2D通信",
+            "target": "系统容量",
+            "type": "增加"
+        },
+        {
+            "source": "D2D通信",
+            "target": "频谱共享",
+            "type": "干扰问题"
+        },
+        {
+            "source": "D2D通信",
+            "target": "关键技术",
+            "type": "依赖"
+        },
+        {
+            "source": "同步",
+            "target": "调制技术",
+            "type": "实现"
+        },
+        {
+            "source": "同步",
+            "target": "设备发现机制",
+            "type": "减少能量消耗"
+        },
+        {
+            "source": "同步",
+            "target": "时延",
+            "type": "减少"
+        },
+        {
+            "source": "LTE系统中同步的设计",
+            "target": "上行链路",
+            "type": "调制方式"
+        },
+        {
+            "source": "LTE系统中同步的设计",
+            "target": "下行链路",
+            "type": "调制方式"
+        },
+        {
+            "source": "LTE系统中同步的设计",
+            "target": "时间同步",
+            "type": "实现"
+        },
+        {
+            "source": "LTE系统中同步的设计",
+            "target": "频率同步",
+            "type": "校正"
+        },
+        {
+            "source": "FlashLinQ系统中同步的设计",
+            "target": "同步信号源",
+            "type": "实现"
+        },
+        {
+            "source": "FlashLinQ系统中同步的设计",
+            "target": "基站",
+            "type": "同步信号源"
+        },
+        {
+            "source": "FlashLinQ系统中同步的设计",
+            "target": "GPS",
+            "type": "同步信号源"
+        },
+        {
+            "source": "FlashLinQ系统中同步的设计",
+            "target": "同步信号",
+            "type": "广播"
+        },
+        {
+            "source": "FlashLinQ系统中同步的设计",
+            "target": "同步源失效",
+            "type": "解决"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "多载波调制方式",
+            "type": "使用"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "IEEE802.11",
+            "type": "同步方法"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "ZC序列",
+            "type": "构造"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "同步信号源",
+            "type": "选择"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "基站",
+            "type": "同步信号源"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "D2D簇",
+            "type": "同步信号源"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "D2D通信对",
+            "type": "同步信号源"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "蜂窝覆盖",
+            "type": "选择"
+        },
+        {
+            "source": "LTED2D系统中同步的设计",
+            "target": "同步信号",
+            "type": "广播"
+        },
+        {
+            "source": "3GPP",
+            "target": "D2D同步信号",
+            "type": "建议"
+        },
+        {
+            "source": "3GPP",
+            "target": "基站",
+            "type": "同步信号源"
+        },
+        {
+            "source": "3GPP",
+            "target": "非基站设备",
+            "type": "同步信号源"
+        },
+        {
+            "source": "3GPP",
+            "target": "主D2D同步信号",
+            "type": "设计"
+        },
+        {
+            "source": "3GPP",
+            "target": "辅D2D同步信号",
+            "type": "设计"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基站在同步信号源中的优先级较高", "en": "Base station has higher priority in synchronization signal source compared to other sources"},
+        {"title": "蜂窝小区内的同步信号源优先级高于蜂窝小区外的UE", "en": "Synchronization signal source within the cellular network has higher priority than UE outside the network"},
+        {"title": "D2D系统同步实现中存在关键问题", "en": "There are critical issues in D2D synchronization implementation"},
+        {"title": "D2D邻居发现是D2D通信中的重要问题", "en": "D2D neighbor discovery is an important issue in D2D communication"}
+    ],
+    "relations": [
+        {"source": "基站", "target": "同步信号源", "type": "具有较高优先级"},
+        {"source": "蜂窝小区内的同步信号源", "target": "蜂窝小区外的UE", "type": "具有较高优先级"},
+        {"source": "现有同步系统的同步实现机制", "target": "D2D系统同步实现", "type": "可供参考"},
+        {"source": "D2D设备", "target": "广播同步信号", "type": "实现D2D邻居发现的方式之一"},
+        {"source": "D2D邻居发现", "target": "D2D通信链路建立", "type": "重要步骤"},
+        {"source": "D2D邻居发现", "target": "资源分配", "type": "重要步骤"},
+        {"source": "D2D邻居发现", "target": "移动社交网络", "type": "应用场景之一"},
+        {"source": "D2D邻居发现", "target": "移动营销", "type": "应用场景之一"},
+        {"source": "D2D邻居发现", "target": "公共安全", "type": "应用场景之一"},
+        {"source": "Wi-FiDirect", "target": "设备发现", "type": "实现D2D邻居发现的方式之一"},
+        {"source": "蜂窝覆盖下的D2D邻居发现", "target": "基站", "type": "提供支持"},
+        {"source": "蜂窝覆盖下的D2D邻居发现", "target": "资源分配", "type": "依赖于的设计方案"},
+        {"source": "LTE频段", "target": "D2D邻居发现", "type": "授权使用的频段"},
+        {"source": "不同运营商的D2D设备", "target": "邻居发现", "type": "需要设计相互发现的机制"},
+        {"source": "基站", "target": "成簇D2D设备", "type": "充当基站的角色"},
+        {"source": "基站", "target": "无成簇D2D设备", "type": "提供专用资源"},
+        {"source": "基于EPC的邻居发现方案", "target": "无蜂窝覆盖场景", "type": "无法应用"},
+        {"source": "基于EPC的邻居发现方案", "target": "定位精度", "type": "性能依赖因素"},
+        {"source": "D2D邻居发现方案", "target": "扩展性", "type": "优于基于EPC的方案"},
+        {"source": "D2D邻居发现方案", "target": "通信信道", "type": "暗含着通信信道质量较好"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "邻居发现方案", "en": "Neighbor discovery scheme"},
+        {"title": "蜂窝覆盖场景下的频谱资源复用", "en": "Spectrum resource reuse in cellular coverage scenarios"},
+        {"title": "D2D通信中的模式选择", "en": "Mode selection in D2D communication"},
+        {"title": "蜂窝模式", "en": "Cellular mode"},
+        {"title": "专用信道模式", "en": "Dedicated channel mode"},
+        {"title": "复用信道模式", "en": "Multiplexing channel mode"},
+        {"title": "资源管理和干扰控制", "en": "Resource management and interference control"},
+        {"title": "频谱共享的两种方式", "en": "Two ways of spectrum sharing"},
+        {"title": "Overlay模式", "en": "Overlay mode"},
+        {"title": "Underlay模式", "en": "Underlay mode"},
+        {"title": "无线资源管理的两种模式", "en": "Two modes of wireless resource management"},
+        {"title": "功率控制", "en": "Power control"}
+    ],
+    "relations": [
+        {"source": "邻居发现方案", "target": "D2D设备周期性地发送发现信号", "type": "包含"},
+        {"source": "邻居发现方案", "target": "减少能耗", "type": "目标"},
+        {"source": "蜂窝覆盖场景下的频谱资源复用", "target": "高效地复用蜂窝的频谱资源", "type": "目标"},
+        {"source": "D2D通信中的模式选择", "target": "减小系统干扰", "type": "目标"},
+        {"source": "D2D通信中的模式选择", "target": "提高系统容量", "type": "目标"},
+        {"source": "蜂窝模式", "target": "通过基站转发的方式进行通信", "type": "描述"},
+        {"source": "蜂窝模式", "target": "D2D用户和蜂窝用户使用的频谱资源是正交的", "type": "描述"},
+        {"source": "专用信道模式", "target": "D2D设备之间使用直通链路进行通信", "type": "描述"},
+        {"source": "专用信道模式", "target": "给D2D设备分配的频谱资源是与蜂窝用户正交的", "type": "描述"},
+        {"source": "专用信道模式", "target": "蜂窝用户和D2D用户不会相互干扰", "type": "描述"},
+        {"source": "复用信道模式", "target": "D2D设备之间使用直通链路进行通信", "type": "描述"},
+        {"source": "复用信道模式", "target": "与某些蜂窝用户使用相同的频谱资源", "type": "描述"},
+        {"source": "复用信道模式", "target": "通过选择合理的复用资源可以提高系统的频谱效率", "type": "描述"},
+        {"source": "复用信道模式", "target": "有可能会给系统带来干扰", "type": "描述"},
+        {"source": "复用信道模式", "target": "需要进行合理的资源分配和干扰管理来保证蜂窝用户的通信质量并有效地利用D2D通信来提升系统容量", "type": "描述"},
+        {"source": "无线资源管理的两种模式", "target": "协作的模式", "type": "包含"},
+        {"source": "无线资源管理的两种模式", "target": "非协作的模式", "type": "包含"},
+        {"source": "Overlay模式", "target": "D2D用户将使用蜂窝网络空闲的频谱来进行通信", "type": "描述"},
+        {"source": "Overlay模式", "target": "通过把授权的频谱分为两部分,可以完全消除干扰", "type": "描述"},
+        {"source": "Underlay模式", "target": "D2D用户将与蜂窝用户使用相同的频谱资源", "type": "描述"},
+        {"source": "Underlay模式", "target": "可以提高频谱的利用率", "type": "描述"},
+        {"source": "功率控制", "target": "是干扰管理的一种策略", "type": "描述"},
+        {"source": "功率控制", "target": "可以分为自组织的功率控制和网络控制的功率控制", "type": "描述"},
+        {"source": "自组织的功率控制", "target": "D2D设备以自组织的方式来调整它们的发送功率", "type": "描述"},
+        {"source": "网络控制的功率控制", "target": "蜂窝用户和D2D用户同时根据信噪比的报告对它们的发送功率进行动态的调整", "type": "描述"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "自组织的功率控制方案", "en": "Self-organized power control scheme"},
+        {"title": "网络控制的功率控制", "en": "Network-controlled power control"},
+        {"title": "联合资源管理和功率控制", "en": "Joint resource management and power control"},
+        {"title": "蜂窝通信的上行链路和下行链路", "en": "Uplink and downlink of cellular communication"},
+        {"title": "D2D通信的复用方式", "en": "Multiplexing methods of D2D communication"},
+        {"title": "近距离通信技术的比较", "en": "Comparison of short-range communication technologies"}
+    ],
+    "relations": [
+        {"source": "自组织的功率控制方案", "target": "网络控制的功率控制", "type": "比较"},
+        {"source": "网络控制的功率控制", "target": "蜂窝用户、D2D用户、eNB", "type": "涉及"},
+        {"source": "联合资源管理和功率控制", "target": "系统的容量", "type": "提高"},
+        {"source": "蜂窝连接和D2D连接", "target": "资源共享模式", "type": "使用"},
+        {"source": "蜂窝连接和D2D连接", "target": "最优的资源分配和功率控制", "type": "分析"},
+        {"source": "蜂窝连接和D2D连接", "target": "单蜂窝小区的场景和Manhattan网络环境underlay模式下的系统性能", "type": "评估"},
+        {"source": "蜂窝通信的上行链路和下行链路", "target": "D2D通信", "type": "区分"},
+        {"source": "D2D通信的复用方式", "target": "上行的链路资源", "type": "复用"},
+        {"source": "D2D通信的复用方式", "target": "下行的链路资源", "type": "复用"},
+        {"source": "D2D通信的复用方式", "target": "蜂窝用户的干扰", "type": "影响"},
+        {"source": "D2D通信的复用方式", "target": "SC-FDMA调制方式", "type": "使用"},
+        {"source": "D2D通信的复用方式", "target": "OFDMA调制方式", "type": "使用"},
+        {"source": "近距离通信技术的比较", "target": "蓝牙", "type": "比较"},
+        {"source": "近距离通信技术的比较", "target": "Wi-FiDirect", "type": "比较"},
+        {"source": "近距离通信技术的比较", "target": "ZigBee", "type": "比较"},
+        {"source": "近距离通信技术的比较", "target": "NFC", "type": "比较"},
+        {"source": "D2D使用授权频段", "target": "减少通信的干扰", "type": "优势"},
+        {"source": "D2D使用授权频段", "target": "邻居发现消耗的能量要少得多", "type": "优势"},
+        {"source": "D2D使用授权频段", "target": "设备可以一直开启发现的服务", "type": "优势"},
+        {"source": "D2D使用授权频段", "target": "减少类似WLAN和蓝牙使用中要进行手工的配对或接入点设置的繁琐操作", "type": "优势"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D邻居发现",
+            "en": "D2D Neighbor Discovery"
+        },
+        {
+            "title": "资源分配方案",
+            "en": "Resource Allocation Scheme"
+        },
+        {
+            "title": "集中式资源分配",
+            "en": "Centralized Resource Allocation"
+        },
+        {
+            "title": "分布式资源分配",
+            "en": "Distributed Resource Allocation"
+        },
+        {
+            "title": "LTE系统中的资源结构",
+            "en": "Resource Structure in LTE System"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D邻居发现",
+            "target": "资源分配方案",
+            "type": "包含"
+        },
+        {
+            "source": "资源分配方案",
+            "target": "集中式资源分配",
+            "type": "包含"
+        },
+        {
+            "source": "资源分配方案",
+            "target": "分布式资源分配",
+            "type": "包含"
+        },
+        {
+            "source": "分布式资源分配",
+            "target": "LTE系统中的资源结构",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "连续分配可以减少唤醒设备时间，延长设备电池寿命",
+            "en": "Continuous allocation can reduce the wake-up time of devices and extend the battery life of devices"
+        },
+        {
+            "title": "发现子帧连续分配的资源结构图",
+            "en": "Resource structure diagram of continuous allocation of discovery subframes"
+        },
+        {
+            "title": "发现子帧的非连续分配",
+            "en": "Non-continuous allocation of discovery subframes"
+        },
+        {
+            "title": "邻居发现阶段",
+            "en": "Neighbor discovery phase"
+        },
+        {
+            "title": "D2D邻居发现的空间模型",
+            "en": "Spatial model of D2D neighbor discovery"
+        },
+        {
+            "title": "单个周期的发现概率",
+            "en": "Discovery probability of a single cycle"
+        },
+        {
+            "title": "随机的资源选取方案",
+            "en": "Random resource selection scheme"
+        },
+        {
+            "title": "半双工的问题",
+            "en": "Half-duplex problem"
+        },
+        {
+            "title": "资源选取冲突的问题",
+            "en": "Resource selection conflict problem"
+        },
+        {
+            "title": "数值分析的近似模型",
+            "en": "Approximate model of numerical analysis"
+        }
+    ],
+    "relations": [
+        {
+            "source": "连续分配可以减少唤醒设备时间，延长设备电池寿命",
+            "target": "发现子帧连续分配的资源结构图",
+            "type": "包含"
+        },
+        {
+            "source": "发现子帧连续分配的资源结构图",
+            "target": "发现子帧的非连续分配",
+            "type": "对立"
+        },
+        {
+            "source": "发现子帧连续分配的资源结构图",
+            "target": "邻居发现阶段",
+            "type": "包含"
+        },
+        {
+            "source": "邻居发现阶段",
+            "target": "D2D邻居发现的空间模型",
+            "type": "包含"
+        },
+        {
+            "source": "D2D邻居发现的空间模型",
+            "target": "单个周期的发现概率",
+            "type": "包含"
+        },
+        {
+            "source": "单个周期的发现概率",
+            "target": "随机的资源选取方案",
+            "type": "包含"
+        },
+        {
+            "source": "随机的资源选取方案",
+            "target": "半双工的问题",
+            "type": "包含"
+        },
+        {
+            "source": "随机的资源选取方案",
+            "target": "资源选取冲突的问题",
+            "type": "包含"
+        },
+        {
+            "source": "随机的资源选取方案",
+            "target": "数值分析的近似模型",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "发现概率模型", "en": "Discovery Probability Model"},
+        {"title": "基于能量检测的资源选取方案", "en": "Energy Detection-based Resource Selection Scheme"}
+    ],
+    "relations": [
+        {"source": "发现概率模型", "target": "基于能量检测的资源选取方案", "type": "包含"},
+        {"source": "基于能量检测的资源选取方案", "target": "发现概率模型", "type": "属于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "基于能量检测的资源选择方案",
+            "en": "Energy detection-based resource selection scheme"
+        },
+        {
+            "title": "3GPP中对比不同方案的平均发现的邻居用户数随发现周期的变化曲线",
+            "en": "Comparison of average discovered neighboring users with different schemes in 3GPP as a function of discovery period"
+        },
+        {
+            "title": "D2D邻居发现中的资源分配方案",
+            "en": "Resource allocation scheme in D2D neighbor discovery"
+        },
+        {
+            "title": "基于直接信号的发现流程",
+            "en": "Discovery process based on direct signal"
+        },
+        {
+            "title": "自适应的资源分配方案",
+            "en": "Adaptive resource allocation scheme"
+        },
+        {
+            "title": "发送概率的概念",
+            "en": "Concept of transmission probability"
+        }
+    ],
+    "relations": [
+        {
+            "source": "基于能量检测的资源选择方案",
+            "target": "随机的资源选取方案",
+            "type": "比较"
+        },
+        {
+            "source": "基于能量检测的资源选择方案",
+            "target": "用户感知周边环境",
+            "type": "依赖"
+        },
+        {
+            "source": "基于能量检测的资源选择方案",
+            "target": "资源池大小",
+            "type": "影响"
+        },
+        {
+            "source": "3GPP中对比不同方案的平均发现的邻居用户数随发现周期的变化曲线",
+            "target": "基于能量检测的资源选择方案",
+            "type": "比较"
+        },
+        {
+            "source": "D2D邻居发现中的资源分配方案",
+            "target": "基于直接信号的发现流程",
+            "type": "依赖"
+        },
+        {
+            "source": "D2D邻居发现中的资源分配方案",
+            "target": "自适应的资源分配方案",
+            "type": "比较"
+        },
+        {
+            "source": "自适应的资源分配方案",
+            "target": "资源分配拥挤",
+            "type": "影响"
+        },
+        {
+            "source": "自适应的资源分配方案",
+            "target": "发送概率的概念",
+            "type": "依赖"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "系统参数配置对发现时延的影响", "en": "Impact of system parameter configuration on discovery delay"},
+        {"title": "发送概率的自适应调整", "en": "Adaptive adjustment of transmission probability"},
+        {"title": "发现概率和发现用户数的关系", "en": "Relationship between discovery probability and number of discovered users"},
+        {"title": "基于时延性能的自适应调整方案", "en": "Adaptive adjustment scheme based on delay performance"},
+        {"title": "基于时延性能的子帧调整方案", "en": "Subframe adjustment scheme based on delay performance"}
+    ],
+    "relations": [
+        {"source": "系统参数配置对发现时延的影响", "target": "发送概率的自适应调整", "type": "包含"},
+        {"source": "发送概率的自适应调整", "target": "发现概率和发现用户数的关系", "type": "涉及"},
+        {"source": "发现概率和发现用户数的关系", "target": "基于时延性能的自适应调整方案", "type": "包含"},
+        {"source": "基于时延性能的自适应调整方案", "target": "基于时延性能的子帧调整方案", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "邻居发现", "en": "Neighbor Discovery"},
+        {"title": "资源分配", "en": "Resource Allocation"},
+        {"title": "D2D通信", "en": "Device-to-Device Communication"},
+        {"title": "直接信号", "en": "Direct Signal"},
+        {"title": "集中式方案", "en": "Centralized Scheme"},
+        {"title": "分布式方案", "en": "Distributed Scheme"},
+        {"title": "随机资源选取", "en": "Random Resource Selection"},
+        {"title": "能量检测", "en": "Energy Detection"},
+        {"title": "发现概率", "en": "Discovery Probability"},
+        {"title": "发现时延", "en": "Discovery Delay"},
+        {"title": "平均时延", "en": "Average Delay"},
+        {"title": "频谱利用率", "en": "Spectrum Utilization"},
+        {"title": "时延性能", "en": "Delay Performance"}
+    ],
+    "relations": [
+        {"source": "邻居发现", "target": "资源分配", "type": "包含"},
+        {"source": "D2D通信", "target": "邻居发现", "type": "包含"},
+        {"source": "邻居发现", "target": "直接信号", "type": "使用"},
+        {"source": "邻居发现", "target": "集中式方案", "type": "包含"},
+        {"source": "邻居发现", "target": "分布式方案", "type": "包含"},
+        {"source": "分布式方案", "target": "随机资源选取", "type": "包含"},
+        {"source": "分布式方案", "target": "能量检测", "type": "包含"},
+        {"source": "随机资源选取", "target": "发现概率", "type": "影响"},
+        {"source": "随机资源选取", "target": "发现时延", "type": "影响"},
+        {"source": "资源分配", "target": "频谱利用率", "type": "影响"},
+        {"source": "时延性能", "target": "资源分配", "type": "影响"},
+        {"source": "时延性能", "target": "发现时延", "type": "影响"},
+        {"source": "时延性能", "target": "平均时延", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "最优发送概率",
+            "en": "Optimal Transmission Probability"
+        },
+        {
+            "title": "动态调整发送概率",
+            "en": "Dynamic Adjustment of Transmission Probability"
+        },
+        {
+            "title": "自适应资源分配方案",
+            "en": "Adaptive Resource Allocation Scheme"
+        },
+        {
+            "title": "基于能量检测的资源分配方案",
+            "en": "Energy Detection-based Resource Allocation Scheme"
+        },
+        {
+            "title": "时延性能",
+            "en": "Delay Performance"
+        },
+        {
+            "title": "单小区和多小区",
+            "en": "Single Cell and Multi-cell"
+        },
+        {
+            "title": "带内辐射",
+            "en": "In-band Radiation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "最优发送概率",
+            "target": "动态调整发送概率",
+            "type": "相关"
+        },
+        {
+            "source": "动态调整发送概率",
+            "target": "自适应资源分配方案",
+            "type": "相关"
+        },
+        {
+            "source": "自适应资源分配方案",
+            "target": "基于能量检测的资源分配方案",
+            "type": "对比"
+        },
+        {
+            "source": "自适应资源分配方案",
+            "target": "时延性能",
+            "type": "相关"
+        },
+        {
+            "source": "单小区和多小区",
+            "target": "自适应资源分配方案",
+            "type": "影响"
+        },
+        {
+            "source": "带内辐射",
+            "target": "自适应资源分配方案",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Device-to-device communication as an underlay to LTE-advanced networks", "en": ""},
+        {"title": "Interference-Aware Resource Allocation for Device-to-Device Radio Underlaying Cellular Networks", "en": ""},
+        {"title": "Efficient Resource Allocation for Device-to-Device Communication Underlaying LTE Network", "en": ""},
+        {"title": "On the Performance of Device-to-Device Underlay Communication with Simple Power Control", "en": ""},
+        {"title": "Power Optimization of Device-to-Device Communication Underlaying Cellular Communication", "en": ""},
+        {"title": "Interference Avoidance Mechanisms in the Hybrid Cellular and Device-to-Device Systems", "en": ""},
+        {"title": "Effective Interference Cancellation Scheme for Device-to-Device Communication Underlaying Cellular Networks", "en": ""},
+        {"title": "Resource Sharing Optimization for Device-to-Device Communication Underlaying Cellular Networks", "en": ""},
+        {"title": "On the design of D2D synchronization in 3GPP Release-12", "en": ""},
+        {"title": "Resource management for type 1 discovery", "en": ""}
+    ],
+    "relations": [
+        {"source": "Device-to-device communication as an underlay to LTE-advanced networks", "target": "Interference-Aware Resource Allocation for Device-to-Device Radio Underlaying Cellular Networks", "type": "关联"},
+        {"source": "Device-to-device communication as an underlay to LTE-advanced networks", "target": "Efficient Resource Allocation for Device-to-Device Communication Underlaying LTE Network", "type": "关联"},
+        {"source": "On the Performance of Device-to-Device Underlay Communication with Simple Power Control", "target": "Power Optimization of Device-to-Device Communication Underlaying Cellular Communication", "type": "关联"},
+        {"source": "Interference Avoidance Mechanisms in the Hybrid Cellular and Device-to-Device Systems", "target": "Effective Interference Cancellation Scheme for Device-to-Device Communication Underlaying Cellular Networks", "type": "关联"},
+        {"source": "Resource Sharing Optimization for Device-to-Device Communication Underlaying Cellular Networks", "target": "On the design of D2D synchronization in 3GPP Release-12", "type": "关联"},
+        {"source": "Resource management for type 1 discovery", "target": "Device-to-device communication as an underlay to LTE-advanced networks", "type": "关联"}
+    ]
+}I'm sorry, but the contents you provided do not contain any meaningful information related to Communication Theory. Could you please provide more relevant content?

@@ -1,0 +1,13 @@
+4.3.3Zookeeper集群配置
+Storm集群需要通过Zookeeper来进行集群内部通信，而Storm并不自带 Zookeeper,因此需要单独安装配置Zookeeper。Zookeeper安装很简单，只需下 载解压进行相关配置即可，在此不多做介绍，只是展示配置项zoo.cfg：
+tickTime=2000
+dataDir=/var/zookeeper/
+clientPort=2181
+initLimit=10
+syncLimit=5
+server. 1 =nimbus :2888:3888
+server^supervisorl :2888:3888 server.3=supervisor2:288 8:3888
+Server.4=supervisor3:2888:3888
+Server.5=supervisor4:2888:3888
+其中，tickTime指的是ZK中的最小时间单元，一个session的最小超出时间
+为2*tickTime； dataDir即表示内存数据所保存的目录，同时也是myid文件所在 的目录;clientPort 即客户端连接 server 的端口，一般为2181；initLimit和 syncLimit 一般取默认值即可，是ZK同步时间和内部心跳检测时间°server.id=host:port:port, id是为Storm集群服务器编号，也即每个Zookeeper节点的编号，后面的两个端 口号分别用来连接Leader的端口和用来选举Leader的端口。

@@ -1,0 +1,23 @@
+2.4.1AllSeen数据结构
+AllSeen系统框架延续了 D-Bus协议的数据类型和数据封装、解封装方法。采用 统一的标准方式实现数据类型到wire格式的相互转换。表2-2描述了 AllSeen预定义 数据类型的ASCH码，开发时，可以直接使用ASCII码指定底层数据交换时使用的 数据类型或是组合。
+表2-2 AllSeen的数据类型
+数据类型	ASCII	数字码	签名内含
+INVALID	NULL	0	无效类型码，用于结束签名
+ARRAY	'a'	97	数组
+VARIANT	'v'	118	可变类型
+UINT64	'x'	120	64位有符整数
+BYTE	'y'	121	8位无符整数
+STRUCT	，r"（和），	114,40,41	结构体
+DICT_ENTRY	七"｛和y	101,123,125	字典或是map中的键值对
+BOOLEAN	'b'	98	布尔值：0代表假1代表真
+DOUBLE	d	100	IEEE 754浮点数
+SIGNATURE	'g'	103	类型签名
+16
+续上表2-2 AUSeen的数据类型
+数据类型	ASCII	数字码	签名内含
+INT32	'i'	105	32位有符整数
+INTI 6	'n'	110	16位有符整数
+OBJECT_PATH	'o'	111	对象名称
+UINT16	'q'	113	16位无符整数
+STRING	's'	115	UTF-8字符串,以NULL结尾
+UINT32	'u'	117	32位无符整数

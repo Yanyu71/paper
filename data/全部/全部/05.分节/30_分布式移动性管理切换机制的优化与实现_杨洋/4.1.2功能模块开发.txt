@@ -1,0 +1,34 @@
+4.1.2功能模块开发
+如图4-5所示是使用Docker平台仿真部署的VDMM方案拓扑图。实验平台需 要三台PC,其中两台作为终端MN和CN,另一台安装Docker平台模拟VDMM网络 结构。如图，虚线内是我们使用Docker容器编写代码模拟网络中各个元件的功能结构，以此构建出整个网络。
+如图中所示，API, AP2和AP3是网络中的AP。初始构建网络时，CN接入API, 在API中为CN构建VAP1； MN接入AP2,所以在AP2为MN构建VAP2； Controller 负责管理整个网络中的AP。当MN由AP2移动到AP3时，在AP3上为MN创建一 个新的虚拟AP (VAP3),对MN来说VAP3和VAP2完全相同。
+图4-5 VDMM方案拓扌卜
+如图4-6所示是在Docker平台上搭建虚拟AP的功能模块图。VDMM方案中 虚拟AP的实现模块主要包括接入处理模块，消息处理模块，位置管理模块和加 密/解密模块等，共同实现了虚拟AP的基本功能。模块之间的实现过程如下，用 户接入网络时向AP发送接入请求申请接入，由接入处理模块来处理用户请求， 通过函数register向控制器进行接入注册，并在控制器建立用户相关的映射表 项；通过位置管理模块缓存用户信息，包括用户相关的ID、IP地址等信息。用 户向AP发送数据，AP收到数据后交由消息处理模块进行处理，消息处理模块对 数据进行解析处理，若AP已知目的地址的位置则直接进行转发，否则AP需要先 向控制器进行查询用户当前所在位置后再转发；加密/解密模块可以对数据进行 安全处理。每个模块的具体实现如下：
+理模塊	密模块		　二三倉
+逢生二	…
+Virtualization Platform
+虑尖:泓	i
+Network	Storage
+图4-6虚拟AP功能模块
+(a)接入处理模块
+由于本文的AP是在Docker平台虚拟出来的，因此只实现AP的基本功能， 并不包括AP的其他管理功能，如DHCP服务器，防火墙等等。接入处理模块是当 用户接入此AP时，虚拟AP处理用户接入请求的模块。AP收到用户接入请求后, 通过函数register向控制器进行接入注册，在控制器建立用户相关的映射表项。 控制器存储网络中所有用户的移动上下文信息，便于网络中的AP进行查询。
+register函数定义如下：
+register(String serviceName, int port) throws Exception (
+String strKey = MessageFormatfonna^"/{0}/{1 }/{2}: {3 } n, rootPath, serviceName, IpHelper.getHostIp(), String.valueOf(port));
+ByteSequence key = ByteSequence.fromString(strKey);
+ByteSequence val = ByteSequence.fromStrmg(getSystemLoadO)；
+kv.put(key, val, PutOption.newBuilder().withLeaseId(leaseId).build()).getQ; Iogger.infb(MRegister a new service at:" + strKey);
+)
+(b)消息处理模块
+消息处理模块的功能是处理用户的移动上下文信息。AP收到消息后，将消息 转发至消息处理模块，该模块对消息进行处理，解析出消息的目的地址，若AP 已知目的地址的位置则直接进行转发，否则需要向控制器进行查询后再转发。
+消息处理函数messageProcess具体实现如下：
+FullHttpResponse response = new DefaultFullHttpResponse(HTTP_l_l 5 OK, Unpooled. wrappedBufier(rpcFuture.getResponse0.getValue().getBytesO))；
+response.headers().set(CONTENT_TYPE, Htext/plainH); response.headers0.setInt(CONTENT_LENGTH?
+response.content().readableBytesO)；
+if (!keepAlive){ ctx.writeAndFlush(response).addListener(ChannelFutxireListener.CLOSE);}else
+( response.headers0.set(CONNECTION, KEEP_ALIVE); ctx.writeAndFlush(response);}
+(c)位置管理模块
+位置管理模块的主要功能是维护接入此AP的用户的相关信息。当用户接入
+AP后，AP为其初始化缓存映射表信息，缓存节点相关的ID、IP地址等信息。 初始化函数init具体实现如下： init(SocketChannel ch) (
+Channelpipeline p = ch.pipelineQ;
+p.addLastC'encoder", new HttpResponseEncoder());
+p.addLast(Mdecodern, new HttpRequestDecoder()); p.addLast(naggregator,\newHttpObjectAggregator(10 * 1024* 1024)); p.addLast(new ConsumerAgentHttpServerHandler(consumerClient5 executorService));}

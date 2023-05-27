@@ -1,0 +1,19 @@
+摘要
+LTE是目前最强大的商用移动通信系统，与之前的移动通信系统 相比，LTE极大地提高了数据传输速率。依靠LTE等移动通信系统 强大的数据传输能力，移动互联网技术在这些年得到了大发展，并出 现各种移动终端新应用和新业务爆炸式发展的局面。
+信道估计算法是LTE技术研究的一个重要领域。3GPP组织在进 行LTE系统设计时，为了简化接收端处理，在TD-LTE时隙结构插入 导频信号，这保证了在接收侧可进行基于导频的非盲信道估计。在导 频信号的基础上，如何进行高性能的信道估计是TD-LTE上行链路处 理中要解决的关键问题。
+本文着眼于TD-LTE上行链路中的信道估计，在讨论LS估计、 LMMSE估计以及基于DFT的信道估计等已有算法的基础上，创新 性地提出了一种改进的基于虚信道冲激响应(VCFR)拓展的信道估 计算法。在本文提出的新算法中，设计了一个新的升余弦窗函数进行 频域平滑处理，同时釆用一种全新的差异化去噪策略进行时域去噪处 理。新算法解决了传统的基于DFT信道估计算法的“边界效应”问 题，大量的仿真表明本文提出的算法相比原有算法具有非常好的性能 提升。
+在本文的应用场景中，TD-LTE上行链路为多用户，且天线配置为 “一发双收”。结合MSC8157 DSP平台特点，本文首先设计了信道 估计实现的多核任务分配方案。其次，本文为VCFR信道估计算法的 实现设计了一种变比例的VCFR添加方案，并在充分考虑精度和运算 速率的基础上设计了一套可靠的定点化方案。最后，通过多种优化手 段的使用，极大压缩了信道估计处理时间。硬件平台上实验测试充分 证明了本文提出的改进算法是一种非常具有工程实践价值的信道估 计算法。
+关键词：TD-LTE信道估计虚信道冲激响应拓展差异化去噪策 略多核DSP
+THE RESEARCH AND IMPLEMENTATION OF
+CHANNEL ESTIMATION ALGORITHM
+IN TD-LTE UPLINK
+ABSTRACT
+LTE is the most powerful mobile communication system by far. It has shown a greater capacity of data transmission than previous systems. The mobile internet has been developing rapidly fbr several years due to the high speed data transmission provided by mobile communication systems. The channel estimation is one of the most important fields of LTE research. In order to simplify the processing of receiver, the pilot signal is inserted into slot structure in TD-LTE system, which ensures that the non-blind estimation methods can be adopted.
+This paper focuses on the research of the channel estimation algorithm in the TD-LTE uplink. Firstly, the development of mobile communication technology is introduced briefly, and the fundamental theories of OFDM and SC-FDMA are descripted in detail. Secondly, in this paper, the LS estimation methods, the LMMSE estimation methods and the DF「based channel estimation methods are discussed and compared. Thirdly, to alleviate the 'edge effect' of DFT-based channel estimation methods, an improved channel estimation method by adding virtual channel frequency response (VCFR) is proposed. In this improved method, a novel frequency window function is designed and a new variation noise reduction strategy is adopted. By simulation in several scenarios, the superiority of proposed. method over the other channel estimation methods is verified in both performance and flexibility to various multipath fading channels.
+To implement this proposed channel estimation method on multi-code DSP platform, in this paper, a method of adding different percentages of VCFR is designed. Taking account of the features of MSC8157 multi-core DSP platform, this paper designs an efficient task
+ii
+allocation scheme which proved to suit the application scenarios of multi-user and the antenna configuration with one transmit antenna and two receiver antennas. By adopting various optimization techniques, the program of proposed channel estimation method can be executed effectively. Through the implementation, the proposed channel estimation method shows promising value of engineering.
+KEY WORDS： TD-LTE; channel estimation; virtual channel frequency response expanding; variation noise reduction strategy; multi-code DSP
+in
+摘要	I
+ABSTRACT	II

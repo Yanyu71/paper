@@ -1,0 +1,15 @@
+2.3.1主流控制器
+OpenFlow控制器作为SDN网络中的核心“大脑”，其重要性自然不言而喻， 学术界和工业界也都致力于研究各自的OpenFlow控制器，控制器的发展也呈现 出百花争鸣的发展态势。本小节将简单的介绍当前一些主流的控制器。
+1.NOX/POX[2°]控制器
+NOX控制器是由Nicira公司主导开发，是第一个开源的SDN网络控制器。 由于Nicira公司的创始团队大多来自于斯坦福大学的OpenFlow的研究小组，所 以可以说NOX是和OpenFlow协议互相推动发展起来的。NOX是基于C++语言 开发的，NOX的核心组件提供了用于与OpenFlow交换机进行通信的API和一 些功能方法，包括连接、事件引擎、路由计算法、拓扑发现等。
+POX控制器也是Nicira公司开发的一款控制器，POX主要是基于Python语 言的，POX是在NOX的基础上开发的，其事件处理机制和NOX保持高度的一 致。
+2.Floodlight1211 控制器
+Floodlight是一款基于Java语言的企业级的OpenFlow网络控制器，遵循 Apache规范，主要由来自Big Switch Networks公司的工程师来维护该项目。 Floodlight控制器是基于斯坦福大学的Beacon控制器开发的，是作为Big Switch 公司商业版控制器Big Network Controller (BNC)的开源版本开源共享，旨在为 企业提供SDN应用的解决方案。
+Floodlight控制器除了提供NOX和POX控制器中提供的基本网络功能外， 还提供了友好的前端Web管理界面，用户通过浏览器可以方便的査看网络中交 换机、主机、流表、网络拓扑等信息。
+3.Ryipa控制器
+Ryu是一个基于组件完全用Python实现的开源的控制器，由日本电报电话 公司的实验室负责支持。Ryu的目标是提供了一个拥有逻辑上集中控制能力的SDN操作系统，Ryu的组件包括OpenFlow协议支持、事件管理、消息机制、内 存状态管理、应用程序管理、基础设施服务和一系列可重用的库。Ryu 一个重要 的特点就是Ryu支持OpenStack云计算管理平台整合，并且也支持GRE的叠加 网络和VLAN配置。
+当前，Ryu控制器己经被Pica8等公司在其推出的面向云计算的网络开发平 台产品中釆用，取得了良好的效果。随着OpenStack的不断发展和成熟，Ryu在 利用SDN改善云计算服务方面将会起到越来越重要的作用。
+4. OpenDayLight"】控制器
+OpenDaylight (ODL)项目是在2013年初由Linux协会联合业内多家企业 包括思科、瞻博、博通等创立，OpenDaylight项目的目标是推出一个开源的通用 的SDN开发平台。OpenDaylight控制器具备拓扑管理、交换机管理、路径转发 管理、主机管理、网络资源切片这5个基础功能，支持OpenFlow.LISP(Locator/ID Separation Protocol)^ BGP (Border Gateway Protocol)等多种协议，多个控制器 之间可以釆用集群的模型进行工作。
+OpenDaylight控制器与之前NOX等控制器不同的一点是OpenDaylight在南 向接口不仅支持OpenFlow协议，还可以支持其他多种的南向接口协议，并且对 于底层网络也支持传统交换机和OpenFlow交换机。OpenDaylight控制器也提供 开放的北向接口，网络的开发者可以依据北向接口开发定制化的网络应用。 OpenDaylight控制器也是可以跨平台使用，可以部署在任何支持Java开发环境 的系统平台上。
+在众多OpenFlow网络控制器中，Floodlight控制器性能相对较好，支持的 节点较多，并且Floodlight模块化的加载方式，可以使研究人员非常容易的加载 和扩展控制器的功能系统。因此，Floodlight控制器成为研究人员的首选，本文 也基于Floodlight控制器实现了网络节能系统。

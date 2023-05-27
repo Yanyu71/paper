@@ -1,0 +1,5 @@
+4.2.2数据处理模块
+数据处理模块釆用Storm自带的API来实现数据分析,主要的工作是实现相 应的接口，如 Spout 中的 open。、nextTuple。、declareOutputFields(), Bolt 中的 prepare。、execute。、declareOutputFieldsQ, Spout 的核心功能是通过 nextTuple() 函数实现的，该函数实现并完成了 Tuple的读取和发射，Bolt的核心功能是通过 execute。实现的，该函数实现并完成了 Tuple的处理和发射，这两个函数会被框 架周期性的调用，以保证任务的不间断执行。系统的主要设计思路是通过 KafkaSpout读取Kafka消息队列的数据，然后通过各级Bolt实现数据分析的具 体业务逻辑，并将结果保存到Hbaseo
+下图显示了异常流量检测系统处理的拓扑结构。有四个基本组件： KafkaSpout, SplitBolt, KnnGrubbsBolt 和 WriteBoltoKafkaSpout 实现的是从 Kafka 读取数据流，并发射输出到SplitBolt, SplitBolt将每条数据的各个字段进行分割， 传输到KnnGrubbsBolt中，KnnGrubbsBolt将数据与其保存的前K条正常数据进 行KNN-Grubbs算法的计算，最后将结果发送到WriteBolt,由WriteBolt将结果 写入Hbase非关系型数据库。在每一个阶段可自定义Tuple, Storm会自动被传 递到下一个Bolt进行处理，在这个过程中，依托Storm的拓扑模型和框架，用 户只需专注于Spout和Bolt的功能实现,其余的分布式处理由Storm框架自动完 成。
+| Kafka消息队列|
+图4-2数据处理模块整体架构

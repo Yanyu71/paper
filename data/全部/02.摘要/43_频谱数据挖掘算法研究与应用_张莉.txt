@@ -1,0 +1,16 @@
+摘要
+无线通信技术发展迅速，频谱资源也日益紧缺。运用数据挖掘技 术对频谱感知数据进行分析，在大量数据中找出潜在的频谱使用规 律，并预测未来一段时间内的频谱使用情况，从而为认知用户的动态 频谱接入提供可靠依据。认真研究了数据挖掘算法理论及其无线电频 谱感知技术，其中深入研究了最小二乘支持向量机算法（LSSVM） 的原理和其模型的寻优方式。本文主要工作和创新点如下：
+1.提出了基于免疫算法的特征加权LSSVM算法。在传统的最小 二乘支持向量机算法的基础上，引入了特征加权向量，与原模型的超 参数形成新的超参数。以分步寻优的方式，利用免疫算法得到最优的 特征加权向量，从而提高了模型的预测精度。
+2.提出了基于耦合模拟退火的特征加权LSSVM算法。以改进原 模型的超参数方式，实现对不同特征维度数据加权，并釆用联合寻优 的方式，利用耦合模拟退火算法得到新的超参数，提高了算法的性能。 另外针对频谱数据挖掘场景，在离线预测的基础上提岀来在线预测算 法。
+3.设计了完整的模拟卫星通信系统的频谱数据釆集与预测仿真 系统，系统包括地理运动模块、用户接入模块和信号产生模块等；并 用仿真得到频谱数据验证了本文提出的两种算法的都能提高模型的 预测精度，同时使用真实的电力负荷数据验证得到的结论。
+本文通过对频谱数据挖掘技术的研究，改进了最小二乘支持向量 机算法，同时将预测结果推荐给动态频谱接入用户作为参考，具有理 论和应用的双重价值。
+关键词:频谱;最小二乘支持向量机;特征加权;免疫;耦合模拟退火
+DATA MINING ALGORITHM OF SPECTRUM SENSING DATA
+ABSTRACT
+With the rapid development of wireless communication technologies, the ever increasing demand for limited spectmm resources will eventually cause spectnim scaricity problem. Using data mining teclinology to analyze the spectrum sensing data, find out the potential spectrum usage rule in the massive data, and predict the spectrum usage in the future, so as to provide reliable basis for the dynamic spectmm access. The theory of data mining algorithm and radio spectrum sensing technology are studied. The principle of the least squares support vector algorithm (LSSVM) and the optimization method of the model are deeply studied.The main work and innovation of this paper are as follows:
+Firstly, a feature weighted LSSVM algorithm based on immune algorithm has been comprehensively presented. Compared with the traditional least squares support vector machine algorithm, the feature weighting vector is introduced, and the new parameters are formed with the super parameters of the original model. In order to improve the accuracy of the model, use immune algorithm to find the optimal feature weighting vector.
+Second, this thesis proposed a feature weighted LSSVM algorithm based on simulated annealing. In order to weight the different feature dimensions, the new alogrithm changing the original supper parameters and then used the coupled simulated annealing algorithm to find the optimal supper paramters. Besides, the dissertation compare the offline prediction and online prediction algorithm.
+Thirdly, this thesis designed a complete simulation system which simulate the satellite communication system for spectrum data sensing and predicting. The system includes the geographic movement module, user access module and signal generation module. The simulation results showed that the two proposed algorithm can improve the prediction accuracy of the spectrum data.
+This thesis studied the data mining technology of spectrum sensing data, improved the method of least squares support vector machine algorithm, and gave the prediction results to the dynamic spectrum access user as a reference, which is meaningful in both theoretic and application.
+KEY WORDS:spectrum;the least squares support vector machine;feature weighted;immune;coupled simulated annealing
+

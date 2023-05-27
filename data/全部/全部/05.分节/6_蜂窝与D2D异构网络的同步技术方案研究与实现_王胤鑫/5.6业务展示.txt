@@ -1,0 +1,88 @@
+5.6业务展示
+在系统同步状态机功能完成后，辅以应用层，可以在不同覆盖情况下使用  D2D 终端来进行实际业务传输。本节将通过《LTE 系统下设备直通技术的研究》 课题的演示系统，简单展示常见的视频传输业务与文件拷贝业务，进而验证同步
+方案的正确性。
+演示系统的主界面如图5-12所示，图中左半部分界面是该通信场景中一些 参数，如目前所用频点为2.36Mhz, 所观察的对象为D2D3 号机。主界面的右半
+部分则是目前通信场景拓扑结构，可以看出目前通信模式为基站覆盖下并由蜂窝
+51
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved. http://www.cnki.net
+上行用户覆盖的D2D 通信，该种场景将涉及三种同步技术，可以很好的验证同
+步方案。
+D2D 通富决示于色
+说置费题说备
+活跃D2D设备：
+D2D3
+可拉测轻离设备
+取 消 理 测
+系统旁歌说置
+半控制
+当前使用频点：2.36e+09
+幽前视式：基站横式
+检游洁果：
+策略切换
+当前策略：Advanced-RRM
+谨置        君吐操失率
+课言：中文英文
+展示运
+anpkae  dwnlnk  yic  al  ym  ddom
+D2D¹
+CellID:332
+CeuelD:6219
+图5-12 演示系统主界面
+演示系统的同步方案结果展示界面如图5-13、5-14、5-15所示，可以设置观 察何种同步的结果，设置观察频率，观察对象等。在5-12所示的场景中，对D2D3  进行观察，图5-13、5-14、5-15分别展示了Cell同步、 Sync 同步和Cell UE 同
+步的结果。
+上行同步下行周步D2D 同步
+三
+Higc            com
+图5-13下行Cell同步结果展示
+52
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+由图5- 13所示， Cell 同步的时偏结果在经过粗同步后，稳定于50 Sample。
+而频偏结果也稳定于-600 hz 附近，证明在该场景中， Cell 同步正常。
+上行同步下行同步D2D 同步
+图5-14 Sync同步结果展示
+由图5- 14所示，Sync 同步的时偏结果在经过粗同步后，也稳定于50Sample。
+这是因为在该种场景中，各D2D 终端下行已经与基站对齐，因此Sync 同步结果 自然也应稳定。 Sync 同步的频偏结果也稳定于-700 hz 附近，证明在该场景中，
+Sync 同步也正常。
+图5-15 Cell UE同步结果展示
+由图5- 15所示， Cell UE 同步的时偏结果稳定于-675 Sample, 即检测出蜂窝 用户的提前量TA 值为675,该TA 值可以使得D2D 终端上行与Cell UE上行对
+齐，进而避免互相干扰。
+53
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+xangyinxingltshost  rhamelrensyindmgpp.te  t
+文件(F) 编 胺(E) 责看[V| 假察(5)   3 7 登 9 ]
+8220t
+应 用 程 序 置 织
+rtp://332.168.40.0:5004
+Audio   Ydeo   Teols   view   Help
+ehest2swangi
+medla       player
+Media         lnformation
+Smerai  ptro  thentna  Sadke  benls  9
+Current  media /stream statistics
+Dexoded Payed
+Lost
+Decoded  D:sgtayed Lost
+Media  data  size Input  bitrate
+Demuxed   data   size
+Daiscarded      tarapted)    Dmapped ldiscontinued)
+-        Output/wrtten.Sent
+Sert
+04 bumen
+19208              hta
+31945     tamd
+14   frain85
+145054   KiB
+。
+0    packet
+0   xin
+0  kbhs
+图5-16 VLC 视频直播效果
+图5- 16展示了在5- 12所示的场景中，两个D2D 终端通过VLC 视频播放器 进行的视频直播传输业务效果。从图中可以看到，视频画面清晰稳定，可以很好
+的实现高清视频直播。
+图5-17文件拷贝效果图
+图5- 17则展示了在5- 12所示的场景中，两个 D2D 终端通过SCP 命令进行 终端间文件传输业务效果，从图中可以看出使用本同步方案的D2D 通信系统可
+以达到1.4MB/s 的传输速度。
+在实际业务中视频与文件拷贝具有很强的代表性。视频直播要求传输时延有  所保障，否则会造成观影效果不流畅，丢帧卡帧等影响。而文件传输对时延要求  相对低，更看重吞吐率。通过两种业务在不同覆盖条件下的测试，我们有理由相  信当前的D2D 通信无论在D2D 自组织网络中还是与蜂窝基站共存的异构网络中，
+均能稳定高效运行，所设计的同步方案，即同步状态机具有良好的实践效果。
+54
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net

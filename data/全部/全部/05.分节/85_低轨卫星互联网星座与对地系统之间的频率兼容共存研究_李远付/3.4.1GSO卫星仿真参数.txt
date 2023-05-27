@@ -1,0 +1,21 @@
+3.4.1GSO卫星仿真参数
+GSO卫星的参数来自ITU国际频率信息通告(International Frequency Information Circular, IFIC)数据库中我国的SINOSAT-5卫星网络跑】，其发射参数 如表3-2所示。
+41
+表3-2 SIN0SAT5卫星发射参数
+参数
+值
+卫星经度
+110.5° E
+发射功率
+16.3 dBW
+天线方向图
+ITU-RRECS.67243
+最大发射增益
+37 dBi
+通信带宽
+1 MHz
+发射频率
+11 GHz
+GSO卫星天线始终指向其星下点位置并保持发射状态，其天线方向图如图
+3- 9所示。
+图3-9 S.672天线方向图

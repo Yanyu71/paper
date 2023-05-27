@@ -1,0 +1,41 @@
+6.2系统功能测试
+本论文测试釆用深圳出租车GPS数据，通过利用此数据来实时推理出道路的拥堵 情况，结合测试流程来对系统进行功能测试。
+本论文采用Protege本体编辑软件作为建模工具，如下图6-2、6-3、6-4所示：
+图6-2 Road概念图
+IQvmdarM TTo
+鬱 hasY2 nxactly 1 xsd:dout>le 蜂 h”V exactly 1 xsd:doubl? 谿 hasX2 exactly 1 xsdidouble fthasXl exactly 1 xsdzdouble
+? ?<*>api ?福中鶏。， ?福中*p3 ?福中?》4
+is!
+? tIW4>Bp2
+■BOG
+e€o
+@0G
+900
+图6-3 Position概念图
+6*，心 ?. EnUUw、by 技st>，Di.软* “
+DH-Api-^p^vs. MT&mtrc	O?Xa?yp?>? tnan-OMt ? 91 中 ISpl
+机	InUwkJgArewUBur* .坤冲*如雄:
+?? ?
+?M?M
+?■中路
+?a*Hpi
+?；■中 Bp2 ?構中Mp3
+?n 中Big
+?n*??H
+?u龄中路pl
+?nn<FHp2
+?US中 hp3
+?aw??p4
+?U的中Hp5
+?II岭中路p6
+?8n?
+?BttBpl 4f BHSp2
+??nnp3
+??n>8p4
+?snaps
+?￡SK
+?￡￡3pl
+?SSBp2
+?BS?p3 ?隹田路X
+?SffiBpS
+将以上建模完成后的模型保存为owl文件，然后用于后续测试。

@@ -1,0 +1,2453 @@
+﻿{
+    "knowledge_points": [
+        {"title": "无线网络发展", "en": "Development of Wireless Networks"},
+        {"title": "移动通信系统", "en": "Mobile Communication Systems"},
+        {"title": "第一代移动通信系统", "en": "First Generation Mobile Communication Systems"},
+        {"title": "第二代移动通信系统", "en": "Second Generation Mobile Communication Systems"},
+        {"title": "个人数据通信", "en": "Personal Data Communication"},
+        {"title": "移动互联网", "en": "Mobile Internet"},
+        {"title": "第三代移动通信", "en": "Third Generation Mobile Communication"},
+        {"title": "HSDPA", "en": "High-Speed Downlink Packet Access"},
+        {"title": "HSUPA", "en": "High-Speed Uplink Packet Access"},
+        {"title": "LTE", "en": "Long-Term Evolution"},
+        {"title": "LTE-A", "en": "Long-Term Evolution Advanced"},
+        {"title": "协作多点传输", "en": "Coordinated Multi-Point Transmission"},
+        {"title": "中继", "en": "Relay"},
+        {"title": "终端直通", "en": "Device-to-Device Communication"},
+        {"title": "多天线传输", "en": "Multiple-Input Multiple-Output Transmission"},
+        {"title": "快速调度", "en": "Fast Scheduling"},
+        {"title": "载波聚合", "en": "Carrier Aggregation"},
+        {"title": "OFDMA", "en": "Orthogonal Frequency Division Multiple Access"},
+        {"title": "SC-FDMA", "en": "Single Carrier Frequency Division Multiple Access"},
+        {"title": "LTE/LTE-A物理层帧结构", "en": "LTE/LTE-A Physical Layer Frame Structure"}
+    ],
+    "relations": [
+        {"source": "移动通信系统", "target": "无线网络发展", "type": "属于"},
+        {"source": "第一代移动通信系统", "target": "移动通信系统", "type": "属于"},
+        {"source": "第二代移动通信系统", "target": "移动通信系统", "type": "属于"},
+        {"source": "个人数据通信", "target": "第二代移动通信系统", "type": "推动"},
+        {"source": "移动互联网", "target": "个人数据通信", "type": "推动"},
+        {"source": "第三代移动通信", "target": "移动通信系统", "type": "属于"},
+        {"source": "HSDPA", "target": "第三代移动通信", "type": "推动"},
+        {"source": "HSUPA", "target": "第三代移动通信", "type": "推动"},
+        {"source": "LTE", "target": "第三代移动通信", "type": "推动"},
+        {"source": "LTE-A", "target": "LTE", "type": "进化"},
+        {"source": "协作多点传输", "target": "LTE-A", "type": "关键技术"},
+        {"source": "中继", "target": "LTE-A", "type": "关键技术"},
+        {"source": "终端直通", "target": "LTE-A", "type": "关键技术"},
+        {"source": "多天线传输", "target": "LTE-A", "type": "关键技术"},
+        {"source": "快速调度", "target": "LTE-A", "type": "关键技术"},
+        {"source": "载波聚合", "target": "LTE-A", "type": "关键技术"},
+        {"source": "OFDMA", "target": "LTE-A", "type": "技术"},
+        {"source": "SC-FDMA", "target": "LTE-A", "type": "技术"},
+        {"source": "LTE/LTE-A物理层帧结构", "target": "LTE-A", "type": "技术"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "移动互联网本地服务(ProSe)", "en": "ProSe for Mobile Internet Local Services"},
+        {"title": "蜂窝与公共安全网络(PubSe)", "en": "PubSe for Cellular and Public Safety Networks"},
+        {"title": "终端直通技术", "en": "Direct Device-to-Device Communication Technology"},
+        {"title": "D2D技术", "en": "Device-to-Device Communication Technology"},
+        {"title": "LTE-D2D设想", "en": "LTE-D2D Concept"},
+        {"title": "商业应用", "en": "Commercial Applications"},
+        {"title": "公共安全服务", "en": "Public Safety Services"},
+        {"title": "共存网络", "en": "Coexistence Network"},
+        {"title": "干扰控制", "en": "Interference Control"},
+        {"title": "无线资源分配", "en": "Wireless Resource Allocation"},
+        {"title": "功率控制", "en": "Power Control"},
+        {"title": "链路自适应机制", "en": "Link Adaptation Mechanism"},
+        {"title": "基础设施网络", "en": "Infrastructure Network"},
+        {"title": "认知网络", "en": "Cognitive Network"},
+        {"title": "PDCCH公共搜索域", "en": "PDCCH Common Search Space"}
+    ],
+    "relations": [
+        {"source": "移动互联网本地服务(ProSe)", "target": "终端直通技术", "type": "包含"},
+        {"source": "蜂窝与公共安全网络(PubSe)", "target": "终端直通技术", "type": "包含"},
+        {"source": "终端直通技术", "target": "D2D技术", "type": "包含"},
+        {"source": "D2D技术", "target": "LTE-D2D设想", "type": "相关"},
+        {"source": "LTE-D2D设想", "target": "商业应用", "type": "包含"},
+        {"source": "LTE-D2D设想", "target": "公共安全服务", "type": "包含"},
+        {"source": "共存网络", "target": "干扰控制", "type": "相关"},
+        {"source": "共存网络", "target": "无线资源分配", "type": "相关"},
+        {"source": "共存网络", "target": "功率控制", "type": "相关"},
+        {"source": "共存网络", "target": "链路自适应机制", "type": "相关"},
+        {"source": "基础设施网络", "target": "认知网络", "type": "相关"},
+        {"source": "认知网络", "target": "PDCCH公共搜索域", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异构网络资源复用方式分析", "en": "Analysis of resource reuse methods in heterogeneous networks"},
+        {"title": "overlay与underlay", "en": "Overlay and underlay"},
+        {"title": "分段预估SINR最大化D2D吞吐的资源选择方案", "en": "Resource selection scheme based on segmented estimated SINR maximization for D2D throughput"},
+        {"title": "D2D无线资源管理设计", "en": "D2D wireless resource management design"},
+        {"title": "自制D2D终端", "en": "Self-made D2D terminal"},
+        {"title": "LTE网络覆盖下进行联合组网", "en": "Joint networking under LTE network coverage"},
+        {"title": "无蜂窝网络环境中进行验证", "en": "Verification in a non-cellular network environment"},
+        {"title": "蜂窝通信模式", "en": "Cellular communication mode"},
+        {"title": "D2D通信模式", "en": "D2D communication mode"},
+        {"title": "专用(Dedicated)", "en": "Dedicated"},
+        {"title": "共享(Shared)", "en": "Shared"},
+        {"title": "正交化的资源分配", "en": "Orthogonal resource allocation"}
+    ],
+    "relations": [
+        {"source": "异构网络资源复用方式分析", "target": "overlay与underlay", "type": "包含"},
+        {"source": "异构网络资源复用方式分析", "target": "专用(Dedicated)", "type": "包含"},
+        {"source": "异构网络资源复用方式分析", "target": "共享(Shared)", "type": "包含"},
+        {"source": "overlay与underlay", "target": "分段预估SINR最大化D2D吞吐的资源选择方案", "type": "包含"},
+        {"source": "D2D无线资源管理设计", "target": "分段预估SINR最大化D2D吞吐的资源选择方案", "type": "包含"},
+        {"source": "D2D无线资源管理设计", "target": "自制D2D终端", "type": "包含"},
+        {"source": "自制D2D终端", "target": "LTE网络覆盖下进行联合组网", "type": "包含"},
+        {"source": "自制D2D终端", "target": "无蜂窝网络环境中进行验证", "type": "包含"},
+        {"source": "蜂窝通信模式", "target": "D2D通信模式", "type": "对比"},
+        {"source": "专用(Dedicated)", "target": "正交化的资源分配", "type": "包含"},
+        {"source": "共享(Shared)", "target": "正交化的资源分配", "type": "对比"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "蜂窝网络集中控制", "en": "Centralized control of cellular network"},
+        {"title": "蜂窝网络辅助控制", "en": "Assisted control of cellular network"},
+        {"title": "D2D通信控制方式", "en": "Control modes of D2D communication"},
+        {"title": "异构网络无线资源管理", "en": "Wireless resource management in heterogeneous networks"},
+        {"title": "集中式D2D组网", "en": "Centralized D2D networking"},
+        {"title": "分布式D2D组网", "en": "Distributed D2D networking"},
+        {"title": "干扰管理", "en": "Interference management"}
+    ],
+    "relations": [
+        {"source": "蜂窝网络集中控制", "target": "D2D通信控制方式", "type": "包含"},
+        {"source": "蜂窝网络辅助控制", "target": "D2D通信控制方式", "type": "包含"},
+        {"source": "D2D通信控制方式", "target": "蜂窝网络集中控制", "type": "属于"},
+        {"source": "D2D通信控制方式", "target": "蜂窝网络辅助控制", "type": "属于"},
+        {"source": "蜂窝网络集中控制", "target": "异构网络无线资源管理", "type": "包含"},
+        {"source": "蜂窝网络辅助控制", "target": "异构网络无线资源管理", "type": "包含"},
+        {"source": "异构网络无线资源管理", "target": "蜂窝网络集中控制", "type": "属于"},
+        {"source": "异构网络无线资源管理", "target": "蜂窝网络辅助控制", "type": "属于"},
+        {"source": "集中式D2D组网", "target": "D2D通信控制方式", "type": "属于"},
+        {"source": "分布式D2D组网", "target": "D2D通信控制方式", "type": "属于"},
+        {"source": "干扰管理", "target": "异构网络无线资源管理", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "专用无线资源的复用方式", "en": "Reuse of dedicated wireless resources"},
+        {"title": "蜂窝通信与D2D通信的信道独立性", "en": "Independence of channels between cellular communication and D2D communication"},
+        {"title": "网络内部干扰", "en": "Internal interference in the network"},
+        {"title": "基于正交的多址接入技术", "en": "Orthogonal multiple access technology"},
+        {"title": "分布式协同机制", "en": "Distributed collaborative mechanism"},
+        {"title": "共享方式复用无线资源", "en": "Reuse of wireless resources in shared mode"},
+        {"title": "异构网络间干扰", "en": "Interference between heterogeneous networks"},
+        {"title": "重用蜂窝上行资源", "en": "Reuse of cellular uplink resources"},
+        {"title": "重用蜂窝下行资源", "en": "Reuse of cellular downlink resources"},
+        {"title": "无线资源管理", "en": "Wireless resource management"},
+        {"title": "异构网络组网方案选择", "en": "Selection of heterogeneous network networking scheme"},
+        {"title": "分布式控制方案", "en": "Distributed control scheme"}
+    ],
+    "relations": [
+        {"source": "专用无线资源的复用方式", "target": "蜂窝通信与D2D通信的信道独立性", "type": "相关"},
+        {"source": "专用无线资源的复用方式", "target": "共享方式复用无线资源", "type": "相关"},
+        {"source": "蜂窝通信与D2D通信的信道独立性", "target": "网络内部干扰", "type": "相关"},
+        {"source": "基于正交的多址接入技术", "target": "网络内部干扰", "type": "相关"},
+        {"source": "分布式协同机制", "target": "共享方式复用无线资源", "type": "相关"},
+        {"source": "共享方式复用无线资源", "target": "异构网络间干扰", "type": "相关"},
+        {"source": "异构网络间干扰", "target": "重用蜂窝上行资源", "type": "相关"},
+        {"source": "异构网络间干扰", "target": "重用蜂窝下行资源", "type": "相关"},
+        {"source": "重用蜂窝上行资源", "target": "无线资源管理", "type": "相关"},
+        {"source": "重用蜂窝下行资源", "target": "无线资源管理", "type": "相关"},
+        {"source": "无线资源管理", "target": "异构网络组网方案选择", "type": "相关"},
+        {"source": "异构网络组网方案选择", "target": "分布式控制方案", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "异构网络资源使用角色", "en": "Roles of Heterogeneous Network Resource Usage"},
+        {"title": "复用上下行资源的选择", "en": "Selection of Reusing Uplink and Downlink Resources"},
+        {"title": "D2D通信物理层设计思路", "en": "Design Ideas for D2D Communication Physical Layer"},
+        {"title": "D2D无线资源管理框架", "en": "Framework for D2D Wireless Resource Management"}
+    ],
+    "relations": [
+        {"source": "蜂窝网络用户", "target": "授权资源使用主用户", "type": "is-a"},
+        {"source": "D2D用户", "target": "异构网络中的次用户", "type": "is-a"},
+        {"source": "蜂窝网络", "target": "集中控制特性", "type": "has"},
+        {"source": "基站", "target": "提前通知蜂窝终端所使用的信道位置", "type": "has"},
+        {"source": "LTE网络", "target": "下行资源分配指示以PDCCH随路的方式下发", "type": "has"},
+        {"source": "D2D通信", "target": "复用上行蜂窝资源", "type": "has"},
+        {"source": "D2D网络", "target": "使用与蜂窝网络相同的帧格式及多址方案", "type": "has"},
+        {"source": "LTE", "target": "被引入蜂窝通信网络", "type": "has"},
+        {"source": "D2DRRM", "target": "提供对其通信所使用的时域、频域资源位置、发送功率、调制编码方案(MCS)决策的能力", "type": "has"},
+        {"source": "D2DRRM", "target": "保证通信的可靠高效", "type": "has"},
+        {"source": "D2DRRM", "target": "保证网络间干扰可控", "type": "has"},
+        {"source": "D2DRRM", "target": "支持D2D公共安全场景", "type": "has"},
+        {"source": "D2DRRM", "target": "决策应全部在DUE侧进行", "type": "has"},
+        {"source": "D2DRRM", "target": "使用自主竞争方式完成D2D对数据信道的接入", "type": "has"},
+        {"source": "干扰认知", "target": "收集蜂窝网络资源调度信息、干扰感知功率信息", "type": "has"},
+        {"source": "干扰认知", "target": "综合形成干扰图谱知识供后续决策使用", "type": "has"},
+        {"source": "D2D用户", "target": "限制在同一小区内同时接入信道的D2D用户数量", "type": "has"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "分布式D2DRRM", "en": "Distributed D2D Resource Management"},
+        {"title": "干扰认知协同机制", "en": "Interference Cognitive Coordination Mechanism"},
+        {"title": "信道接入机制", "en": "Channel Access Mechanism"},
+        {"title": "链路自适应机制", "en": "Link Adaptation Mechanism"},
+        {"title": "D2D资源选择决策机制", "en": "D2D Resource Selection Decision Mechanism"},
+        {"title": "D2D冲突域", "en": "D2D Conflict Domain"},
+        {"title": "时隙Aloha", "en": "Slotted Aloha"},
+        {"title": "CSMA/CA", "en": "Carrier Sense Multiple Access with Collision Avoidance"},
+        {"title": "同步时隙冲突避免", "en": "Synchronous Slotted Collision Avoidance"}
+    ],
+    "relations": [
+        {"source": "干扰认知协同机制", "target": "分布式D2DRRM", "type": "包含"},
+        {"source": "干扰认知协同机制", "target": "信道接入机制", "type": "相关"},
+        {"source": "干扰认知协同机制", "target": "链路自适应机制", "type": "相关"},
+        {"source": "干扰认知协同机制", "target": "D2D资源选择决策机制", "type": "相关"},
+        {"source": "分布式D2DRRM", "target": "D2D冲突域", "type": "相关"},
+        {"source": "时隙Aloha", "target": "分布式D2DRRM", "type": "包含"},
+        {"source": "CSMA/CA", "target": "分布式D2DRRM", "type": "包含"},
+        {"source": "同步时隙冲突避免", "target": "时隙Aloha", "type": "包含"},
+        {"source": "同步时隙冲突避免", "target": "CSMA/CA", "type": "包含"},
+        {"source": "同步时隙冲突避免", "target": "D2D冲突域", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "RTS-CTS-DATA传输流程", "en": "RTS-CTS-DATA transmission process"},
+        {"title": "D2D通信中的竞争域", "en": "Competition domain in D2D communication"},
+        {"title": "RTS/CTS碰撞的影响", "en": "Impact of RTS/CTS collision"},
+        {"title": "SSCA分布协同机制", "en": "SSCA distributed coordination mechanism"},
+        {"title": "P-概率时隙Aloha算法", "en": "P-probability slot Aloha algorithm"},
+        {"title": "二进制指数退避算法", "en": "Binary exponential backoff algorithm"},
+        {"title": "最大信道利用率的计算", "en": "Calculation of maximum channel utilization"},
+        {"title": "终端的退避时间计算", "en": "Calculation of terminal's backoff time"}
+    ],
+    "relations": [
+        {"source": "D2D通信中的竞争域", "target": "RTS-CTS-DATA传输流程", "type": "包含"},
+        {"source": "RTS-CTS-DATA传输流程", "target": "D2D通信中的竞争域", "type": "属于"},
+        {"source": "RTS/CTS碰撞的影响", "target": "RTS-CTS-DATA传输流程", "type": "影响"},
+        {"source": "SSCA分布协同机制", "target": "RTS-CTS-DATA传输流程", "type": "改进"},
+        {"source": "P-概率时隙Aloha算法", "target": "SSCA分布协同机制", "type": "算法"},
+        {"source": "二进制指数退避算法", "target": "SSCA分布协同机制", "type": "算法"},
+        {"source": "最大信道利用率的计算", "target": "SSCA分布协同机制", "type": "计算方法"},
+        {"source": "终端的退避时间计算", "target": "二进制指数退避算法", "type": "计算方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "BEB算法", "en": "BEB algorithm"},
+        {"title": "时隙Aloha", "en": "Slotted Aloha"},
+        {"title": "D2D通信", "en": "D2D communication"},
+        {"title": "初传非退避BEB算法", "en": "Initial Non-Backoff BEB Algorithm"},
+        {"title": "PBCA算法", "en": "PBCA algorithm"},
+        {"title": "SSCA", "en": "SSCA"},
+        {"title": "DCCCH", "en": "DCCCH"},
+        {"title": "RTS/CTS", "en": "RTS/CTS"},
+        {"title": "TDD-LTE", "en": "TDD-LTE"}
+    ],
+    "relations": [
+        {"source": "时隙Aloha", "target": "BEB算法", "type": "基础概念"},
+        {"source": "BEB算法", "target": "初传非退避BEB算法", "type": "改进算法"},
+        {"source": "D2D通信", "target": "初传非退避BEB算法", "type": "应用场景"},
+        {"source": "初传非退避BEB算法", "target": "PBCA算法", "type": "性能比较"},
+        {"source": "初传非退避BEB算法", "target": "SSCA", "type": "应用场景"},
+        {"source": "DCCCH", "target": "SSCA", "type": "控制信道"},
+        {"source": "RTS/CTS", "target": "SSCA", "type": "数据传输流程"},
+        {"source": "TDD-LTE", "target": "SSCA", "type": "数据传输流程"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "TDD网络中D2D通信的竞争粒度设计", "en": "Competition granularity design of D2D communication in TDD network"},
+        {"title": "FDD网络中D2D通信的竞争粒度设计", "en": "Competition granularity design of D2D communication in FDD network"},
+        {"title": "基于D2D链路速率预估的多进程RTS触发机制", "en": "Multi-process RTS triggering mechanism based on D2D link rate estimation"}
+    ],
+    "relations": [
+        {"source": "TDD网络中D2D通信的竞争粒度设计", "target": "FDD网络中D2D通信的竞争粒度设计", "type": "related"},
+        {"source": "TDD网络中D2D通信的竞争粒度设计", "target": "基于D2D链路速率预估的多进程RTS触发机制", "type": "related"},
+        {"source": "FDD网络中D2D通信的竞争粒度设计", "target": "基于D2D链路速率预估的多进程RTS触发机制", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D链路速率预估", "en": "D2D Link Rate Estimation"},
+        {"title": "多进程RTS触发机制", "en": "Multi-Process RTS Trigger Mechanism"},
+        {"title": "多进程HARQ", "en": "Multi-Process HARQ"},
+        {"title": "D2D发送链路平均链路速率", "en": "Average Link Rate of D2D Transmission"},
+        {"title": "D2D-PSCH", "en": "D2D-PSCH"},
+        {"title": "SD2D", "en": "SD2D"},
+        {"title": "RTS触发流程", "en": "RTS Trigger Process"},
+        {"title": "CTS", "en": "CTS"},
+        {"title": "闭环控制", "en": "Closed-Loop Control"},
+        {"title": "系统间干扰认知协调机制", "en": "Interference Coordination Mechanism between Heterogeneous Networks"},
+        {"title": "异构网络", "en": "Heterogeneous Network"},
+        {"title": "蜂窝上行资源", "en": "Cellular Uplink Resource"},
+        {"title": "网络间干扰", "en": "Interference between Networks"},
+        {"title": "D2C干扰", "en": "D2C Interference"},
+        {"title": "正交干扰控制机制", "en": "Orthogonal Interference Control Mechanism"},
+        {"title": "DUE", "en": "Device-to-Device Communication User Equipment"},
+        {"title": "CUE", "en": "Cellular User Equipment"},
+        {"title": "SINR", "en": "Signal-to-Interference-plus-Noise Ratio"},
+        {"title": "PUSCH", "en": "Physical Uplink Shared Channel"},
+        {"title": "SI", "en": "System Information"},
+        {"title": "功控方式", "en": "Power Control Method"},
+        {"title": "路损补偿因子", "en": "Path Loss Compensation Factor"},
+        {"title": "RSRP", "en": "Reference Signal Received Power"},
+        {"title": "PRACH", "en": "Physical Random Access Channel"}
+    ],
+    "relations": [
+        {"source": "D2D链路速率预估", "target": "多进程RTS触发机制", "type": "related"},
+        {"source": "多进程HARQ", "target": "多进程RTS触发机制", "type": "related"},
+        {"source": "D2D发送链路平均链路速率", "target": "D2D链路速率预估", "type": "related"},
+        {"source": "D2D-PSCH", "target": "D2D发送链路平均链路速率", "type": "related"},
+        {"source": "SD2D", "target": "D2D发送链路平均链路速率", "type": "related"},
+        {"source": "RTS触发流程", "target": "SD2D", "type": "related"},
+        {"source": "RTS触发流程", "target": "CTS", "type": "related"},
+        {"source": "RTS触发流程", "target": "闭环控制", "type": "related"},
+        {"source": "系统间干扰认知协调机制", "target": "D2C干扰控制机制", "type": "related"},
+        {"source": "DUE", "target": "D2C干扰控制机制", "type": "related"},
+        {"source": "CUE", "target": "D2C干扰控制机制", "type": "related"},
+        {"source": "SINR", "target": "D2C干扰控制机制", "type": "related"},
+        {"source": "PUSCH", "target": "功控方式", "type": "related"},
+        {"source": "SI", "target": "功控方式", "type": "related"},
+        {"source": "路损补偿因子", "target": "功控方式", "type": "related"},
+        {"source": "RSRP", "target": "正交干扰控制机制", "type": "related"},
+        {"source": "PRACH", "target": "正交干扰控制机制", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "deltaMCS-Enabled", "en": ""},
+        {"title": "RRC专用信令", "en": ""},
+        {"title": "蜂窝辅助的异构网络", "en": ""},
+        {"title": "蜂窝通信平均码率", "en": ""},
+        {"title": "LTEPUSCH", "en": ""},
+        {"title": "累积干扰", "en": ""},
+        {"title": "接收功率裕量", "en": ""},
+        {"title": "分布式重用干扰控制机制", "en": ""},
+        {"title": "链路质量损失门限", "en": ""},
+        {"title": "重用囲源引入的干扰", "en": ""},
+        {"title": "D2D通信对蜂窝通信干扰协同", "en": ""},
+        {"title": "上行链路质量", "en": ""},
+        {"title": "闭环功控", "en": ""},
+        {"title": "复用功率因子", "en": ""},
+        {"title": "集中式重用干扰控制机制", "en": ""},
+        {"title": "干扰容限", "en": ""}
+    ],
+    "relations": [
+        {"source": "deltaMCS-Enabled", "target": "MCS补偿", "type": "indicates"},
+        {"source": "RRC专用信令", "target": "deltaMCS-Enabled", "type": "configures"},
+        {"source": "蜂窝辅助的异构网络", "target": "deltaMCS-Enabled", "type": "configures"},
+        {"source": "蜂窝通信平均码率", "target": "deltaMCS-Enabled", "type": "calculates"},
+        {"source": "LTEPUSCH", "target": "MCS配置", "type": "has"},
+        {"source": "累积干扰", "target": "最大码率补偿项", "type": "equals"},
+        {"source": "接收功率裕量", "target": "解决D2D通信对基站的累积正交干扰问题", "type": "enables"},
+        {"source": "分布式重用干扰控制机制", "target": "链路质量损失门限", "type": "configures"},
+        {"source": "分布式重用干扰控制机制", "target": "重用囲源引入的干扰", "type": "controls"},
+        {"source": "分布式重用干扰控制机制", "target": "D2D通信对蜂窝通信干扰协同", "type": "achieves"},
+        {"source": "上行链路质量", "target": "链路质量损失门限", "type": "measures"},
+        {"source": "闭环功控", "target": "复用功率因子", "type": "adjusts"},
+        {"source": "集中式重用干扰控制机制", "target": "干扰容限", "type": "based on"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CUE", "en": ""},
+        {"title": "C-RNTI", "en": ""},
+        {"title": "TxPowerMargin", "en": ""},
+        {"title": "QoSClass", "en": ""},
+        {"title": "QcUE_allow", "en": ""},
+        {"title": "QcUE_minreq", "en": ""},
+        {"title": "QcUE_cur", "en": ""},
+        {"title": "Totalinference", "en": ""},
+        {"title": "TorInterference", "en": ""},
+        {"title": "TorlntfTable", "en": ""},
+        {"title": "PLDB", "en": ""},
+        {"title": "D2C干扰控制策略", "en": "D2C Interference Control Strategy"},
+        {"title": "C2D干扰避免机制", "en": "C2D Interference Avoidance Mechanism"},
+        {"title": "SINR", "en": ""},
+        {"title": "RB", "en": ""},
+        {"title": "MCS", "en": ""}
+    ],
+    "relations": [
+        {"source": "CUE", "target": "C-RNTI", "type": "has"},
+        {"source": "CUE", "target": "TxPowerMargin", "type": "has"},
+        {"source": "CUE", "target": "QoSClass", "type": "has"},
+        {"source": "CUE", "target": "QcUE_allow", "type": "has"},
+        {"source": "CUE", "target": "QcUE_minreq", "type": "has"},
+        {"source": "CUE", "target": "QcUE_cur", "type": "has"},
+        {"source": "CUE", "target": "Totalinference", "type": "has"},
+        {"source": "CUE", "target": "TorInterference", "type": "has"},
+        {"source": "CUE", "target": "TorlntfTable", "type": "has"},
+        {"source": "CUE", "target": "SINR", "type": "related to"},
+        {"source": "CUE", "target": "RB", "type": "has"},
+        {"source": "CUE", "target": "MCS", "type": "has"},
+        {"source": "DUE", "target": "PLDB", "type": "has"},
+        {"source": "DUE", "target": "SINR", "type": "has"},
+        {"source": "DUE", "target": "C2D干扰避免机制", "type": "has"},
+        {"source": "DUE", "target": "D2C干扰控制策略", "type": "has"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "D2D分布式资源管理",
+            "en": "D2D Distributed Resource Management"
+        },
+        {
+            "title": "自适应链路",
+            "en": "Adaptive Link"
+        },
+        {
+            "title": "自动调制编码(AMC)",
+            "en": "Automatic Modulation and Coding (AMC)"
+        },
+        {
+            "title": "快衰落和慢衰落",
+            "en": "Fast Fading and Slow Fading"
+        },
+        {
+            "title": "HARQ",
+            "en": "Hybrid Automatic Repeat Request (HARQ)"
+        },
+        {
+            "title": "RRM-PHY跨层设计",
+            "en": "RRM-PHY Cross-layer Design"
+        },
+        {
+            "title": "物理层(PHY)",
+            "en": "Physical Layer (PHY)"
+        },
+        {
+            "title": "传输质量指标",
+            "en": "Transmission Quality Indicators"
+        },
+        {
+            "title": "信道测量SNR",
+            "en": "Channel Measurement SNR"
+        },
+        {
+            "title": "传输正误指示",
+            "en": "Transmission Error Indication"
+        },
+        {
+            "title": "MCS",
+            "en": "Modulation and Coding Scheme (MCS)"
+        },
+        {
+            "title": "Turbo编码器",
+            "en": "Turbo Encoder"
+        },
+        {
+            "title": "速率匹配模块",
+            "en": "Rate Matching Module"
+        },
+        {
+            "title": "调制模块",
+            "en": "Modulation Module"
+        },
+        {
+            "title": "SINR",
+            "en": "Signal-to-Interference-plus-Noise Ratio (SINR)"
+        },
+        {
+            "title": "底噪",
+            "en": "Noise Floor"
+        },
+        {
+            "title": "干扰功率",
+            "en": "Interference Power"
+        },
+        {
+            "title": "集中式重用干扰控制机制",
+            "en": "Centralized Reuse Interference Control Mechanism"
+        },
+        {
+            "title": "分布式重用干扰控制机制",
+            "en": "Distributed Reuse Interference Control Mechanism"
+        },
+        {
+            "title": "复用功率因子",
+            "en": "Reuse Power Factor"
+        },
+        {
+            "title": "正交功率",
+            "en": "Orthogonal Power"
+        },
+        {
+            "title": "链路损耗",
+            "en": "Link Loss"
+        },
+        {
+            "title": "周期性广播",
+            "en": "Periodic Broadcasting"
+        },
+        {
+            "title": "状态信息",
+            "en": "Status Information"
+        }
+    ],
+    "relations": [
+        {
+            "source": "D2D分布式资源管理",
+            "target": "自适应链路",
+            "type": "包含"
+        },
+        {
+            "source": "自适应链路",
+            "target": "自动调制编码(AMC)",
+            "type": "包含"
+        },
+        {
+            "source": "自适应链路",
+            "target": "快衰落和慢衰落",
+            "type": "关联"
+        },
+        {
+            "source": "自适应链路",
+            "target": "HARQ",
+            "type": "包含"
+        },
+        {
+            "source": "自适应链路",
+            "target": "RRM-PHY跨层设计",
+            "type": "包含"
+        },
+        {
+            "source": "RRM-PHY跨层设计",
+            "target": "物理层(PHY)",
+            "type": "关联"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "传输质量指标",
+            "type": "包含"
+        },
+        {
+            "source": "自动调制编码(AMC)",
+            "target": "MCS",
+            "type": "包含"
+        },
+        {
+            "source": "MCS",
+            "target": "Turbo编码器",
+            "type": "关联"
+        },
+        {
+            "source": "MCS",
+            "target": "速率匹配模块",
+            "type": "关联"
+        },
+        {
+            "source": "MCS",
+            "target": "调制模块",
+            "type": "关联"
+        },
+        {
+            "source": "自适应链路",
+            "target": "SINR",
+            "type": "包含"
+        },
+        {
+            "source": "SINR",
+            "target": "底噪",
+            "type": "关联"
+        },
+        {
+            "source": "SINR",
+            "target": "干扰功率",
+            "type": "关联"
+        },
+        {
+            "source": "自适应链路",
+            "target": "集中式重用干扰控制机制",
+            "type": "包含"
+        },
+        {
+            "source": "集中式重用干扰控制机制",
+            "target": "复用功率因子",
+            "type": "关联"
+        },
+        {
+            "source": "集中式重用干扰控制机制",
+            "target": "正交功率",
+            "type": "关联"
+        },
+        {
+            "source": "自适应链路",
+            "target": "分布式重用干扰控制机制",
+            "type": "包含"
+        },
+        {
+            "source": "分布式重用干扰控制机制",
+            "target": "复用功率因子",
+            "type": "关联"
+        },
+        {
+            "source": "自适应链路",
+            "target": "链路损耗",
+            "type": "包含"
+        },
+        {
+            "source": "自适应链路",
+            "target": "周期性广播",
+            "type": "包含"
+        },
+        {
+            "source": "周期性广播",
+            "target": "状态信息",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "竞争接入SSCA过程中", "en": "Competition access process of SSCA"},
+        {"title": "PL通过CTS响应告知TxDUE", "en": "PL informs TxDUE through CTS response"},
+        {"title": "干扰避免机制获得RxDUE的IntfCUEn和N", "en": "Interference avoidance mechanism obtains IntfCUEn and N of RxDUE"},
+        {"title": "按照资源分配图进行计算得到I+N", "en": "Calculate I+N according to the resource allocation diagram"},
+        {"title": "D2D数据传输使用SC-FDMA技术", "en": "D2D data transmission uses SC-FDMA technology"},
+        {"title": "频域补零时域扩展的时域调制方式", "en": "Time-domain modulation method with frequency-domain zero-padding and time-domain extension"},
+        {"title": "RBSEG的干扰1+N按照式3-23以资源段加权平均的方式计算", "en": "The interference 1+N of RBSEG is calculated by weighted averaging of resource segments according to formula 3-23"},
+        {"title": "按照式3-18计算得到此资源段的预估SINR", "en": "Calculate the estimated SINR of this resource segment according to formula 3-18"},
+        {"title": "通过SINR与MCS的对应曲线进行AMC开环控制", "en": "AMC open-loop control is performed through the corresponding curve of SINR and MCS"},
+        {"title": "D2D与LTE使用同一套调制编码机制", "en": "D2D and LTE use the same set of modulation and coding mechanisms"},
+        {"title": "误比特率BER和误传输块率BLER的闭式解无法得到", "en": "Closed-form solutions for bit error rate (BER) and block error rate (BLER) cannot be obtained"},
+        {"title": "对物理层MCS方案在指定信道环境下进行蒙特卡罗法仿真", "en": "Monte Carlo simulation of physical layer MCS scheme in specified channel environment"},
+        {"title": "得到对应BLER曲线", "en": "Obtain the corresponding BLER curve"},
+        {"title": "对D2D网络SINR的区域划分进行讨论", "en": "Discuss the partition of SINR in D2D network"},
+        {"title": "将SINR区域划分为互不交叠的30个子区间", "en": "Partition the SINR region into 30 non-overlapping sub-intervals"},
+        {"title": "根据优化目标的不同,一般分为频谱效率最大准则和保证误包率准则", "en": "According to different optimization objectives, it is generally divided into maximum spectral efficiency criterion and guaranteed error rate criterion"},
+        {"title": "频谱效率最大化准则和保证误包率准则相比较", "en": "Compared with the maximum spectral efficiency criterion, the guaranteed error rate criterion pays more attention to reliability"},
+        {"title": "在异构网络中,D2D通信属于次用户间通信", "en": "In heterogeneous networks, D2D communication belongs to secondary user-to-user communication"},
+        {"title": "设定以£砍溥=0.05", "en": "Set the maximum error rate to 0.05"},
+        {"title": "引入MCS调节因子对每一条D2D通信信道类型进行闭环适应", "en": "Introduce MCS adjustment factor for closed-loop adaptation of each D2D communication channel type"},
+        {"title": "△"cs的调整基于传输正误反馈的ACK7NACK", "en": "The adjustment of △mcs is based on the positive and negative feedback of transmission ACK/NACK"},
+        {"title": "通过降低△mcs,尝试在相同的信道条件下使用更高的MCS,增加频谱效率", "en": "By reducing △mcs, try to use higher MCS under the same channel conditions to increase spectral efficiency"}
+    ],
+    "relations": [
+        {"source": "竞争接入SSCA过程中", "target": "PL通过CTS响应告知TxDUE", "type": "过程中"},
+        {"source": "PL通过CTS响应告知TxDUE", "target": "干扰避免机制获得RxDUE的IntfCUEn和N", "type": "响应告知"},
+        {"source": "干扰避免机制获得RxDUE的IntfCUEn和N", "target": "按照资源分配图进行计算得到I+N", "type": "获得计算"},
+        {"source": "按照资源分配图进行计算得到I+N", "target": "D2D数据传输使用SC-FDMA技术", "type": "使用"},
+        {"source": "D2D数据传输使用SC-FDMA技术", "target": "频域补零时域扩展的时域调制方式", "type": "使用"},
+        {"source": "频域补零时域扩展的时域调制方式", "target": "RBSEG的干扰1+N按照式3-23以资源段加权平均的方式计算", "type": "计算"},
+        {"source": "RBSEG的干扰1+N按照式3-23以资源段加权平均的方式计算", "target": "按照式3-18计算得到此资源段的预估SINR", "type": "计算得到"},
+        {"source": "按照式3-18计算得到此资源段的预估SINR", "target": "通过SINR与MCS的对应曲线进行AMC开环控制", "type": "控制"},
+        {"source": "通过SINR与MCS的对应曲线进行AMC开环控制", "target": "对物理层MCS方案在指定信道环境下进行蒙特卡罗法仿真", "type": "仿真"},
+        {"source": "对物理层MCS方案在指定信道环境下进行蒙特卡罗法仿真", "target": "得到对应BLER曲线", "type": "得到"},
+        {"source": "得到对应BLER曲线", "target": "对D2D网络SINR的区域划分进行讨论", "type": "讨论"},
+        {"source": "对D2D网络SINR的区域划分进行讨论", "target": "引入MCS调节因子对每一条D2D通信信道类型进行闭环适应", "type": "引入"},
+        {"source": "引入MCS调节因子对每一条D2D通信信道类型进行闭环适应", "target": "△"cs的调整基于传输正误反馈的ACK7NACK", "type": "调整基于"},
+        {"source": "△"cs的调整基于传输正误反馈的ACK7NACK", "target": "通过降低△mcs,尝试在相同的信道条件下使用更高的MCS,增加频谱效率", "type": "尝试使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "TBSizeTable", "en": ""},
+        {"title": "HARQ", "en": "Hybrid Automatic Repeat Request"},
+        {"title": "FEC", "en": "Forward Error Correction"},
+        {"title": "ARQ", "en": "Automatic Repeat Request"},
+        {"title": "QoS", "en": "Quality of Service"},
+        {"title": "D2D", "en": "Device-to-Device"},
+        {"title": "SSCA", "en": "Semi-Persistent Scheduling with Carrier Aggregation"},
+        {"title": "MCS", "en": "Modulation and Coding Scheme"},
+        {"title": "IR", "en": "Incremental Redundancy"},
+        {"title": "CC", "en": "Chase Combining"},
+        {"title": "RV", "en": "Redundancy Version"},
+        {"title": "ACK", "en": "Acknowledgement"},
+        {"title": "ACKBundling", "en": "Acknowledgement Bundling"}
+    ],
+    "relations": [
+        {"source": "TBSizeTable", "target": "mcsidx", "type": "argmin"},
+        {"source": "HARQ", "target": "FEC", "type": "combination"},
+        {"source": "HARQ", "target": "ARQ", "type": "combination"},
+        {"source": "HARQ", "target": "QoS", "type": "application"},
+        {"source": "D2D", "target": "HARQ", "type": "application"},
+        {"source": "HARQ", "target": "MCS", "type": "selection"},
+        {"source": "D2D", "target": "SSCA", "type": "resource allocation"},
+        {"source": "D2D", "target": "IR", "type": "redundancy scheme"},
+        {"source": "D2D", "target": "CC", "type": "redundancy scheme"},
+        {"source": "D2D", "target": "RV", "type": "redundancy version"},
+        {"source": "D2D", "target": "ACK", "type": "feedback"},
+        {"source": "D2D", "target": "ACKBundling", "type": "feedback"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D通信中的控制子信道", "en": "Control sub-channels in D2D communication"},
+        {"title": "ACKBundling中的ACK指示数量", "en": "Number of ACK indications in ACKBundling"},
+        {"title": "D2D通信中的竞争粒度", "en": "Competition granularity in D2D communication"},
+        {"title": "D2D通信中的接收情况", "en": "Receiving situation in D2D communication"},
+        {"title": "D2D资源决策方案", "en": "Resource allocation scheme in D2D communication"},
+        {"title": "最大化D2D吞吐的资源选择", "en": "Resource selection for maximizing D2D throughput"},
+        {"title": "基于遍历组合的资源分段", "en": "Resource segmentation based on traversal combination"}
+    ],
+    "relations": [
+        {"source": "D2D通信中的控制子信道", "target": "ACKBundling中的ACK指示数量", "type": "related"},
+        {"source": "D2D通信中的竞争粒度", "target": "D2D通信中的控制子信道", "type": "related"},
+        {"source": "D2D通信中的接收情况", "target": "D2D通信中的控制子信道", "type": "related"},
+        {"source": "D2D资源决策方案", "target": "最大化D2D吞吐的资源选择", "type": "related"},
+        {"source": "D2D资源决策方案", "target": "基于遍历组合的资源分段", "type": "related"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "资源分段优化", "en": "Resource segmentation optimization"},
+    {"title": "无线资源选择决策", "en": "Wireless resource selection decision"},
+    {"title": "D2D公共控制信道", "en": "D2D common control channel"},
+    {"title": "SSCA机制", "en": "SSCA mechanism"},
+    {"title": "系统间干扰认知协调方案", "en": "Interference awareness and coordination scheme between systems"},
+    {"title": "正交干扰控制与重用干扰控制机制", "en": "Orthogonal interference control and reuse interference control mechanism"},
+    {"title": "干扰测量并主动避免的干扰控制机制", "en": "Interference control mechanism based on interference measurement and active avoidance"},
+    {"title": "SINR预估与开闭环结合的AMC实现自适应调制编码控制方案", "en": "Adaptive modulation and coding control scheme based on SINR estimation and open-loop/closed-loop combination"},
+    {"title": "D2D终端资源决策方案", "en": "D2D terminal resource decision-making scheme"}
+  ],
+  "relations": [
+    {"source": "资源分段优化", "target": "无线资源选择决策", "type": "related"},
+    {"source": "资源分段优化", "target": "D2D公共控制信道", "type": "related"},
+    {"source": "D2D公共控制信道", "target": "SSCA机制", "type": "related"},
+    {"source": "系统间干扰认知协调方案", "target": "正交干扰控制与重用干扰控制机制", "type": "related"},
+    {"source": "系统间干扰认知协调方案", "target": "干扰测量并主动避免的干扰控制机制", "type": "related"},
+    {"source": "SINR预估与开闭环结合的AMC实现自适应调制编码控制方案", "target": "D2D终端资源决策方案", "type": "related"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "D2D技术", "en": "D2D Technology"},
+        {"title": "D2D硬件验证演示平台", "en": "D2D Hardware Verification Demonstration Platform"},
+        {"title": "D2DRRM算法", "en": "D2DRRM Algorithm"},
+        {"title": "SSCA机制", "en": "SSCA Mechanism"},
+        {"title": "优先接入机制", "en": "Priority Access Mechanism"},
+        {"title": "TDD模式", "en": "TDD Mode"},
+        {"title": "RTS-CTS流程", "en": "RTS-CTS Process"},
+        {"title": "DUE", "en": "DUE"},
+        {"title": "LTE/D2D网络", "en": "LTE/D2D Network"},
+        {"title": "异构网络", "en": "Heterogeneous Network"}
+    ],
+    "relations": [
+        {"source": "D2D技术", "target": "D2D硬件验证演示平台", "type": "实现"},
+        {"source": "D2D技术", "target": "D2DRRM算法", "type": "应用"},
+        {"source": "D2D技术", "target": "SSCA机制", "type": "应用"},
+        {"source": "D2D技术", "target": "优先接入机制", "type": "应用"},
+        {"source": "D2D技术", "target": "TDD模式", "type": "应用"},
+        {"source": "D2D技术", "target": "RTS-CTS流程", "type": "应用"},
+        {"source": "D2D技术", "target": "DUE", "type": "应用"},
+        {"source": "D2D技术", "target": "LTE/D2D网络", "type": "应用"},
+        {"source": "D2D技术", "target": "异构网络", "type": "应用"},
+        {"source": "D2D硬件验证演示平台", "target": "D2DRRM算法", "type": "实现"},
+        {"source": "D2D硬件验证演示平台", "target": "LTE/D2D网络", "type": "组成"},
+        {"source": "D2DRRM算法", "target": "SSCA机制", "type": "优化"},
+        {"source": "SSCA机制", "target": "优先接入机制", "type": "优化"},
+        {"source": "TDD模式", "target": "RTS-CTS流程", "type": "应用"},
+        {"source": "DUE", "target": "LTE/D2D网络", "type": "组成"},
+        {"source": "LTE/D2D网络", "target": "异构网络", "type": "融合"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "RTS/CTS协议", "en": "RTS/CTS Protocol"},
+        {"title": "广播业务的设计优化", "en": "Design Optimization for Broadcasting Services"},
+        {"title": "优先接入机制", "en": "Priority Access Mechanism"},
+        {"title": "D2D无线资源管理方案", "en": "D2D Wireless Resource Management Scheme"},
+        {"title": "DCCCH物理信道设计", "en": "DCCCH Physical Channel Design"},
+        {"title": "DATACTRL-CCCH", "en": "DATACTRL-CCCH"},
+        {"title": "RTS-CCCH", "en": "RTS-CCCH"},
+        {"title": "CTS-CCCH", "en": "CTS-CCCH"},
+        {"title": "ACK-CCCH", "en": "ACK-CCCH"},
+        {"title": "卷积编码", "en": "Convolutional Coding"},
+        {"title": "QPSK调制", "en": "QPSK Modulation"},
+        {"title": "CRC校验", "en": "CRC Check"}
+    ],
+    "relations": [
+        {"source": "RTS/CTS Protocol", "target": "Design Optimization for Broadcasting Services", "type": "related"},
+        {"source": "Design Optimization for Broadcasting Services", "target": "Priority Access Mechanism", "type": "related"},
+        {"source": "Design Optimization for Broadcasting Services", "target": "RTS/CTS Protocol", "type": "related"},
+        {"source": "D2D Wireless Resource Management Scheme", "target": "Priority Access Mechanism", "type": "related"},
+        {"source": "D2D Wireless Resource Management Scheme", "target": "DCCCH Physical Channel Design", "type": "related"},
+        {"source": "DCCCH Physical Channel Design", "target": "DATACTRL-CCCH", "type": "related"},
+        {"source": "DCCCH Physical Channel Design", "target": "RTS-CCCH", "type": "related"},
+        {"source": "DCCCH Physical Channel Design", "target": "CTS-CCCH", "type": "related"},
+        {"source": "DCCCH Physical Channel Design", "target": "ACK-CCCH", "type": "related"},
+        {"source": "DCCCH Physical Channel Design", "target": "Convolutional Coding", "type": "related"},
+        {"source": "DCCCH Physical Channel Design", "target": "QPSK Modulation", "type": "related"},
+        {"source": "DCCCH Physical Channel Design", "target": "CRC Check", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "上行DCCCH复用与LTEPUSCH相同的基带信号处理技术", "en": "Baseband signal processing technology for uplink DCCCH multiplexing and LTE PUSCH"},
+        {"title": "RRM模块设计与实现", "en": "Design and implementation of RRM module"},
+        {"title": "网络监控模块", "en": "Network monitoring module"},
+        {"title": "模块功能", "en": "Module function"},
+        {"title": "模块监控指标及计算", "en": "Module monitoring indicators and calculations"},
+        {"title": "蜂窝网络调度信息感知获取机制", "en": "Mechanism for obtaining cellular network scheduling information perception"},
+        {"title": "D2D网络内部信道接入机制", "en": "Mechanism for D2D network internal channel access"},
+        {"title": "异构网络间干扰控制机制", "en": "Mechanism for interference control between heterogeneous networks"},
+        {"title": "链路自适应机制", "en": "Link adaptation mechanism"},
+        {"title": "D2D的资源选择决策机制", "en": "Resource selection decision mechanism for D2D"}
+    ],
+    "relations": [
+        {"source": "上行DCCCH复用与LTEPUSCH相同的基带信号处理技术", "target": "RRM模块设计与实现", "type": "包含"},
+        {"source": "RRM模块设计与实现", "target": "网络监控模块", "type": "包含"},
+        {"source": "网络监控模块", "target": "模块功能", "type": "包含"},
+        {"source": "网络监控模块", "target": "模块监控指标及计算", "type": "包含"},
+        {"source": "RRM模块设计与实现", "target": "蜂窝网络调度信息感知获取机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "D2D网络内部信道接入机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "异构网络间干扰控制机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "链路自适应机制", "type": "需要"},
+        {"source": "RRM模块设计与实现", "target": "D2D的资源选择决策机制", "type": "需要"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "DUE到基站的路损", "en": "Path loss from DUE to base station"},
+        {"title": "Dtx设备到DUE本机的路损", "en": "Path loss from Dtx device to DUE"},
+        {"title": "CUEID对DUE本机的干扰值", "en": "Interference value of CUEID to DUE"},
+        {"title": "SIB2中UplinkPowerControlCommon中的上行功控的路损补偿因子序号alpha", "en": "Compensation factor alpha of uplink power control in SIB2"},
+        {"title": "SIB2中UplinkPowerControlCommon中的开环工作点p0NominalPUSCHo", "en": "Open loop working point p0NominalPUSCHo in SIB2"},
+        {"title": "本机测量系统频带外低保护边带得到的噪声功率", "en": "Noise power obtained by measuring the low protection band outside the system frequency band of the device"},
+        {"title": "CUE链路质量", "en": "Link quality of CUE"},
+        {"title": "DUE本机和Drx发送链路速率", "en": "Transmission rate of the link between DUE and Drx"}
+    ],
+    "relations": [
+        {"source": "DUE到基站的路损", "target": "干扰控制模块", "type": "output"},
+        {"source": "Dtx设备到DUE本机的路损", "target": "SSCA模块", "type": "output"},
+        {"source": "CUEID对DUE本机的干扰值", "target": "干扰控制模块", "type": "output"},
+        {"source": "SIB2中UplinkPowerControlCommon中的上行功控的路损补偿因子序号alpha", "target": "干扰控制模块", "type": "output"},
+        {"source": "SIB2中UplinkPowerControlCommon中的开环工作点p0NominalPUSCHo", "target": "干扰控制模块", "type": "output"},
+        {"source": "本机测量系统频带外低保护边带得到的噪声功率", "target": "干扰控制模块", "type": "output"},
+        {"source": "CUE链路质量", "target": "干扰控制模块", "type": "output"},
+        {"source": "DUE本机和Drx发送链路速率", "target": "SSCA模块", "type": "output"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "D2D通信", "en": "D2D Communication"},
+        {"title": "资源向量", "en": "Resource Vector"},
+        {"title": "混合测量", "en": "Hybrid Measurement"},
+        {"title": "干扰控制模块", "en": "Interference Control Module"},
+        {"title": "无线接入管理模块", "en": "Wireless Access Management Module"},
+        {"title": "RTS/CTS流程", "en": "RTS/CTS Process"},
+        {"title": "SSCA算法", "en": "SSCA Algorithm"}
+    ],
+    "relations": [
+        {"source": "成功接收DATACTRL_MSG", "target": "DUE冲突域内其他DUE用户进行D2D通信", "type": "related"},
+        {"source": "DUE冲突域内其他DUE用户进行D2D通信", "target": "资源向量为(RBStart_D2D,RBLen_D2D)", "type": "has"},
+        {"source": "RBStartCUEX", "target": "RBStartD2D", "type": "less than"},
+        {"source": "RBStartCUEX+RBLenCUEX", "target": "RBStartD2D", "type": "less than"},
+        {"source": "RBStartCUE2", "target": "RBStartCUEX+RBLenCUEX", "type": "less than"},
+        {"source": "RBStartCUE2+RBLenCUE2", "target": "RBStartD2D+RBLenD2D", "type": "less than"},
+        {"source": "DUE无法从混合测量中区分各个用户的独立干扰", "target": "仅能挑选未复用部分进行测量", "type": "related"},
+        {"source": "计算蜂窝用户C2D干扰时需要避开D2D占用资源", "target": "在本子帧中不能更新CUE2的C2D干扰", "type": "related"},
+        {"source": "网络监控模块", "target": "对外接口如下", "type": "has"},
+        {"source": "无线接入管理模块", "target": "主要负责信道接入需求的判断、RTS0/RTS1/CTS流程的实现、RTS必要时的退避功能及流程完成后对数据发送/接收定时器的触发配置", "type": "related"},
+        {"source": "SSCA算法流程的设计及优化", "target": "实现采用的方案为使用优先发送RTS0机制、基于D2D链路速率预估的多进程RTS、二进制指数退避的SSCA", "type": "related"},
+        {"source": "SSCA状态机", "target": "进入与退出", "type": "has"},
+        {"source": "RTS发送触发", "target": "进入SSCA发送状态机", "type": "has"},
+        {"source": "RTS接收触发", "target": "进入SSCA接收状态机", "type": "has"},
+        {"source": "RTS/CTS流程成功时", "target": "状态转移图以向时序队列添加关于数据及ACK的发送/接收触发回归Idle状态", "type": "related"},
+        {"source": "RTS发送触发", "target": "判断是RTSO还是RTS1", "type": "has"},
+        {"source": "RTS1", "target": "判断是否退避定时器是否打开、RTS1是否使能", "type": "has"},
+        {"source": "RTS0或RTS1非退避且使能", "target": "进行后续对发送缓冲区状态及HARQ重传进程状态、链路发送吞吐的查询", "type": "related"},
+        {"source": "满足链路速率预估触发条件", "target": "发送RTS并进入CTS-Wait状态", "type": "related"},
+        {"source": "无线接入管理模块", "target": "主要对外接口及对等层间RTS/CTS消息格式", "type": "has"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "消息触发调用", "en": "Message Trigger Call"},
+        {"title": "RTS/CTS消息格式", "en": "RTS/CTS Message Format"},
+        {"title": "RLC使用无确认模式", "en": "RLC uses Unacknowledged Mode"},
+        {"title": "UMSN初始化请求", "en": "UMSN Initialization Request"},
+        {"title": "干扰控制模块", "en": "Interference Control Module"},
+        {"title": "蜂窝与D2D异构网络间的干扰控制", "en": "Interference Control between Cellular and D2D Heterogeneous Networks"},
+        {"title": "AMC与资源决策", "en": "AMC and Resource Decision"},
+        {"title": "D2C重用干扰控制", "en": "D2C Reuse Interference Control"},
+        {"title": "D2C正交干扰控制", "en": "D2C Orthogonal Interference Control"},
+        {"title": "C2D干扰避免", "en": "C2D Interference Avoidance"},
+        {"title": "干扰感知数据的交换", "en": "Exchange of Interference Perception Data"},
+        {"title": "D2C闭环干扰控制", "en": "D2C Closed-loop Interference Control"},
+        {"title": "本地测量更新", "en": "Local Measurement Update"},
+        {"title": "干扰广播发送", "en": "Interference Broadcast Sending"},
+        {"title": "干扰广播接收并更新记录", "en": "Interference Broadcast Reception and Record Update"},
+        {"title": "AMC相关参数更新及返回", "en": "AMC-related Parameter Update and Return"},
+        {"title": "接口", "en": "Interface"}
+    ],
+    "relations": [
+        {"source": "消息触发调用", "target": "RTS/CTS消息格式", "type": "包含"},
+        {"source": "RTS/CTS消息格式", "target": "RLC使用无确认模式", "type": "涉及"},
+        {"source": "RTS/CTS消息格式", "target": "UMSN初始化请求", "type": "涉及"},
+        {"source": "干扰控制模块", "target": "蜂窝与D2D异构网络间的干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "AMC与资源决策", "type": "包含"},
+        {"source": "干扰控制模块", "target": "D2C重用干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "D2C正交干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "C2D干扰避免", "type": "包含"},
+        {"source": "干扰控制模块", "target": "干扰感知数据的交换", "type": "包含"},
+        {"source": "干扰控制模块", "target": "D2C闭环干扰控制", "type": "包含"},
+        {"source": "干扰控制模块", "target": "本地测量更新", "type": "包含"},
+        {"source": "干扰控制模块", "target": "干扰广播发送", "type": "包含"},
+        {"source": "干扰控制模块", "target": "干扰广播接收并更新记录", "type": "包含"},
+        {"source": "干扰控制模块", "target": "AMC相关参数更新及返回", "type": "包含"},
+        {"source": "接口", "target": "消息触发调用", "type": "包含"},
+        {"source": "接口", "target": "干扰控制模块", "type": "包含"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "update_intf^c2d", "en": ""},
+    {"title": "update_pO", "en": ""},
+    {"title": "update_jpl_d2b", "en": ""},
+    {"title": "update_noise", "en": ""},
+    {"title": "update_alpha", "en": ""},
+    {"title": "update_pl_d2drx", "en": ""},
+    {"title": "update_qualitycue", "en": ""},
+    {"title": "set_underlaylist", "en": ""},
+    {"title": "get_intf^c2d", "en": ""},
+    {"title": "get_noise_drx", "en": ""},
+    {"title": "get_maxpower_d2b", "en": ""},
+    {"title": "get_powerfactor_d2c", "en": ""},
+    {"title": "amc_closeloop", "en": ""},
+    {"title": "amc_openloop", "en": ""}
+  ],
+  "relations": [
+    {"source": "update_intf^c2d", "target": "Communication Theory", "type": "function"},
+    {"source": "update_pO", "target": "Communication Theory", "type": "function"},
+    {"source": "update_jpl_d2b", "target": "Communication Theory", "type": "function"},
+    {"source": "update_noise", "target": "Communication Theory", "type": "function"},
+    {"source": "update_alpha", "target": "Communication Theory", "type": "function"},
+    {"source": "update_pl_d2drx", "target": "Communication Theory", "type": "function"},
+    {"source": "update_qualitycue", "target": "Communication Theory", "type": "function"},
+    {"source": "set_underlaylist", "target": "Communication Theory", "type": "function"},
+    {"source": "get_intf^c2d", "target": "Communication Theory", "type": "function"},
+    {"source": "get_noise_drx", "target": "Communication Theory", "type": "function"},
+    {"source": "get_maxpower_d2b", "target": "Communication Theory", "type": "function"},
+    {"source": "get_powerfactor_d2c", "target": "Communication Theory", "type": "function"},
+    {"source": "amc_closeloop", "target": "Communication Theory", "type": "function"},
+    {"source": "amc_openloop", "target": "Communication Theory", "type": "function"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "AMC功能", "en": "AMC function"},
+        {"title": "amcinfo_t数据结构", "en": "amcinfo_t data structure"},
+        {"title": "资源决策模块", "en": "Resource decision module"},
+        {"title": "HARQ模块", "en": "HARQ module"}
+    ],
+    "relations": [
+        {"source": "用的发送功率与调制编码方式", "target": "AMC功能", "type": "包含关系"},
+        {"source": "amcinfo_t数据结构", "target": "AMC功能", "type": "支持关系"},
+        {"source": "资源决策模块", "target": "AMC功能", "type": "依赖关系"},
+        {"source": "资源决策模块", "target": "amcinfo_t数据结构", "type": "使用关系"},
+        {"source": "HARQ模块", "target": "AMC功能", "type": "依赖关系"},
+        {"source": "HARQ模块", "target": "资源决策模块", "type": "依赖关系"}
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "时序触发",
+      "en": "Timing trigger"
+    },
+    {
+      "title": "ACK消息、CRC处理",
+      "en": "ACK message and CRC processing"
+    },
+    {
+      "title": "HARQ进程相关",
+      "en": "HARQ process related"
+    },
+    {
+      "title": "D2D-HI传输",
+      "en": "D2D-HI transmission"
+    },
+    {
+      "title": "ACK消息格式",
+      "en": "ACK message format"
+    },
+    {
+      "title": "持续低容量型业务",
+      "en": "Continuous low-capacity business"
+    },
+    {
+      "title": "突发高容量型业务",
+      "en": "Burst high-capacity business"
+    }
+  ],
+  "relations": [
+    {
+      "source": "时序触发",
+      "target": "ACK消息、CRC处理",
+      "type": "related"
+    },
+    {
+      "source": "ACK消息、CRC处理",
+      "target": "HARQ进程相关",
+      "type": "related"
+    },
+    {
+      "source": "HARQ进程相关",
+      "target": "D2D-HI传输",
+      "type": "related"
+    },
+    {
+      "source": "D2D-HI传输",
+      "target": "ACK消息格式",
+      "type": "related"
+    },
+    {
+      "source": "持续低容量型业务",
+      "target": "接入方案验证",
+      "type": "related"
+    },
+    {
+      "source": "突发高容量型业务",
+      "target": "接入方案验证",
+      "type": "related"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "SSCA自主竞争接入方案", "en": "SSCA Autonomous Competitive Access Scheme"},
+        {"title": "D2D链路", "en": "D2D Link"},
+        {"title": "RTS接入效率", "en": "RTS Access Efficiency"},
+        {"title": "初传非退避SSCA", "en": "Non-persistent SSCA"},
+        {"title": "传统SSCA", "en": "Traditional SSCA"},
+        {"title": "理想满发送状态", "en": "Ideal Full Transmission State"},
+        {"title": "普通RTS过程", "en": "Regular RTS Process"},
+        {"title": "初传退避", "en": "Non-persistent Backoff"},
+        {"title": "标准BEB", "en": "Standard Binary Exponential Backoff"},
+        {"title": "干扰协调验证", "en": "Interference Coordination Verification"},
+        {"title": "D2C强干扰场景", "en": "D2C Strong Interference Scene"},
+        {"title": "蜂窝商用终端", "en": "Cellular Commercial Terminal"},
+        {"title": "DUE通信", "en": "DUE Communication"},
+        {"title": "TxDUE", "en": "TxDUE"},
+        {"title": "复用TxCUE的资源", "en": "Multiplexing TxCUE Resources"},
+        {"title": "BS接收TxCUE性能", "en": "BS Receiving TxCUE Performance"},
+        {"title": "RxDUE的干扰", "en": "RxDUE Interference"},
+        {"title": "D2D通信", "en": "D2D Communication"},
+        {"title": "异构网络拓扑", "en": "Heterogeneous Network Topology"},
+        {"title": "干扰认知", "en": "Interference Cognition"},
+        {"title": "CUEID", "en": "CUEID"},
+        {"title": "UL子帧", "en": "UL Subframe"},
+        {"title": "D2D1", "en": "D2D1"},
+        {"title": "D2D3", "en": "D2D3"},
+        {"title": "C2D强干扰场景", "en": "C2D Strong Interference Scene"},
+        {"title": "动态配置蜂窝最大允许损失率参数", "en": "Dynamic Configuration of Maximum Allowable Loss Rate Parameter for Cellular"},
+        {"title": "AMC", "en": "Adaptive Modulation and Coding"},
+        {"title": "闭环调整MCS因子", "en": "Closed-loop Adjustment of MCS Factor"},
+        {"title": "信道环境", "en": "Channel Environment"},
+        {"title": "BLER", "en": "Block Error Rate"}
+    ],
+    "relations": [
+        {"source": "SSCA自主竞争接入方案", "target": "D2D链路", "type": "包含"},
+        {"source": "SSCA自主竞争接入方案", "target": "RTS接入效率", "type": "关联"},
+        {"source": "SSCA自主竞争接入方案", "target": "初传非退避SSCA", "type": "替代"},
+        {"source": "SSCA自主竞争接入方案", "target": "传统SSCA", "type": "替代"},
+        {"source": "SSCA自主竞争接入方案", "target": "理想满发送状态", "type": "关联"},
+        {"source": "SSCA自主竞争接入方案", "target": "普通RTS过程", "type": "替代"},
+        {"source": "普通RTS过程", "target": "初传退避", "type": "包含"},
+        {"source": "普通RTS过程", "target": "标准BEB", "type": "包含"},
+        {"source": "干扰协调验证", "target": "D2C强干扰场景", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "蜂窝商用终端", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "DUE通信", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "TxDUE", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "复用TxCUE的资源", "type": "关联"},
+        {"source": "D2C强干扰场景", "target": "BS接收TxCUE性能", "type": "关联"},
+        {"source": "D2C强干扰场景", "target": "RxDUE的干扰", "type": "关联"},
+        {"source": "D2C强干扰场景", "target": "D2D通信", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "异构网络拓扑", "type": "关联"},
+        {"source": "D2C强干扰场景", "target": "干扰认知", "type": "关联"},
+        {"source": "D2C强干扰场景", "target": "CUEID", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "UL子帧", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "D2D1", "type": "包含"},
+        {"source": "D2C强干扰场景", "target": "D2D3", "type": "包含"},
+        {"source": "C2D强干扰场景", "target": "D2D通信", "type": "包含"},
+        {"source": "C2D强干扰场景", "target": "复用TxCUE的资源", "type": "替代"},
+        {"source": "AMC", "target": "闭环调整MCS因子", "type": "包含"},
+        {"source": "闭环调整MCS因子", "target": "信道环境", "type": "包含"},
+        {"source": "闭环调整MCS因子", "target": "BLER", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "发送子帧", "en": "Subframe transmission"},
+        {"title": "残余错误子帧数", "en": "Residual error subframe count"},
+        {"title": "MCS因子调整", "en": "MCS factor adjustment"},
+        {"title": "RRM模块", "en": "RRM module"},
+        {"title": "D2D业务场景", "en": "D2D business scenarios"},
+        {"title": "临近服务", "en": "Proximity services"},
+        {"title": "公共安全服务", "en": "Public safety services"},
+        {"title": "蜂窝覆盖下的D2D通信性能", "en": "D2D communication performance under cellular coverage"},
+        {"title": "LTE蜂窝网络", "en": "LTE cellular network"},
+        {"title": "FTP服务器", "en": "FTP server"},
+        {"title": "FTP用户端", "en": "FTP client"},
+        {"title": "上行子帧", "en": "Uplink subframe"},
+        {"title": "物理层", "en": "Physical layer"},
+        {"title": "Imcs26", "en": "Imcs26"},
+        {"title": "TBSize", "en": "TBSize"},
+        {"title": "MTU", "en": "MTU"},
+        {"title": "TCP确认包", "en": "TCP acknowledgement packet"},
+        {"title": "RLC模块", "en": "RLC module"},
+        {"title": "SSCA", "en": "SSCA"},
+        {"title": "CUE通信", "en": "CUE communication"},
+        {"title": "FTP业务", "en": "FTP service"},
+        {"title": "网盘上传业务", "en": "Cloud disk upload service"},
+        {"title": "干扰控制性能", "en": "Interference control performance"},
+        {"title": "D2C干扰", "en": "D2C interference"},
+        {"title": "频谱效率", "en": "Spectrum efficiency"}
+    ],
+    "relations": [
+        {"source": "发送子帧", "target": "MCS因子调整", "type": "related"},
+        {"source": "残余错误子帧数", "target": "MCS因子调整", "type": "related"},
+        {"source": "RRM模块", "target": "D2D业务场景", "type": "supports"},
+        {"source": "临近服务", "target": "D2D业务场景", "type": "related"},
+        {"source": "公共安全服务", "target": "D2D业务场景", "type": "related"},
+        {"source": "LTE蜂窝网络", "target": "蜂窝覆盖下的D2D通信性能", "type": "supports"},
+        {"source": "FTP服务器", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "FTP用户端", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "上行子帧", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "物理层", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "Imcs26", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "TBSize", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "MTU", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "TCP确认包", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "RLC模块", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "SSCA", "target": "蜂窝覆盖下的D2D通信性能", "type": "related"},
+        {"source": "CUE通信", "target": "干扰控制性能", "type": "related"},
+        {"source": "FTP业务", "target": "干扰控制性能", "type": "related"},
+        {"source": "网盘上传业务", "target": "干扰控制性能", "type": "related"},
+        {"source": "AdvancedRRM", "target": "干扰控制性能", "type": "supports"},
+        {"source": "盲复用RRM", "target": "干扰控制性能", "type": "related"},
+        {"source": "D2C干扰", "target": "频谱效率", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "分布式RRM方案", "en": "Distributed RRM scheme"},
+        {"title": "无蜂窝网络覆盖", "en": "Non-cellular network coverage"},
+        {"title": "集中式重用干扰控制机制", "en": "Centralized reuse interference control mechanism"},
+        {"title": "D2D同步子信道", "en": "D2D synchronous subchannel"},
+        {"title": "帧格式选用TDDFormat1", "en": "Frame format selection TDDFormat1"},
+        {"title": "D2D通信", "en": "D2D communication"},
+        {"title": "物理层支持同步状态机", "en": "Physical layer supports synchronous state machine"},
+        {"title": "D2D内部多跳中继功能", "en": "D2D internal multi-hop relay function"},
+        {"title": "频谱空洞", "en": "Spectrum hole"},
+        {"title": "网络整体频谱利用率", "en": "Overall spectrum utilization of the network"},
+        {"title": "应急通信", "en": "Emergency communication"},
+        {"title": "验证场景", "en": "Verification scenario"},
+        {"title": "SSCA", "en": "SSCA"},
+        {"title": "RTSO", "en": "RTSO"},
+        {"title": "RTS1", "en": "RTS1"},
+        {"title": "DCCCH信道帧格式", "en": "DCCCH channel frame format"},
+        {"title": "交互设计", "en": "Interactive design"},
+        {"title": "接口功能实现", "en": "Interface function implementation"}
+    ],
+    "relations": [
+        {"source": "分布式RRM方案", "target": "无蜂窝网络覆盖", "type": "考虑"},
+        {"source": "集中式重用干扰控制机制", "target": "分布式RRM方案", "type": "除外"},
+        {"source": "D2D同步子信道", "target": "帧格式选用TDDFormat1", "type": "使用"},
+        {"source": "D2D通信", "target": "D2D同步子信道", "type": "使用"},
+        {"source": "D2D通信", "target": "频谱空洞", "type": "利用"},
+        {"source": "物理层支持同步状态机", "target": "D2D通信", "type": "提供"},
+        {"source": "D2D内部多跳中继功能", "target": "D2D通信", "type": "支持"},
+        {"source": "应急通信", "target": "物理层支持同步状态机", "type": "提供"},
+        {"source": "应急通信", "target": "D2D内部多跳中继功能", "type": "支持"},
+        {"source": "验证场景", "target": "SSCA", "type": "针对"},
+        {"source": "优先接入RTSO", "target": "SSCA", "type": "优化设计"},
+        {"source": "竞争接入RTS1", "target": "SSCA", "type": "优化设计"},
+        {"source": "DCCCH信道帧格式", "target": "验证场景", "type": "设计"},
+        {"source": "交互设计", "target": "RRM模块", "type": "实现"},
+        {"source": "接口功能实现", "target": "RRM模块", "type": "实现"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线电技术", "en": "Cognitive radio technology"},
+        {"title": "D2D通信", "en": "Device-to-device communication"},
+        {"title": "蜂窝网络", "en": "Cellular network"},
+        {"title": "异构网络", "en": "Heterogeneous network"},
+        {"title": "干扰问题", "en": "Interference problem"},
+        {"title": "D2DRRM方案", "en": "D2D resource management scheme"},
+        {"title": "频谱空洞", "en": "Spectrum hole"}
+    ],
+    "relations": [
+        {"source": "认知无线电技术", "target": "D2D通信", "type": "相关"},
+        {"source": "蜂窝网络", "target": "D2D通信", "type": "融合"},
+        {"source": "D2D通信", "target": "蜂窝网络", "type": "融合"},
+        {"source": "D2D通信", "target": "D2DRRM方案", "type": "应用"},
+        {"source": "蜂窝网络", "target": "D2DRRM方案", "type": "应用"},
+        {"source": "异构网络", "target": "D2DRRM方案", "type": "应用"},
+        {"source": "干扰问题", "target": "D2DRRM方案", "type": "考虑因素"},
+        {"source": "频谱空洞", "target": "D2DRRM方案", "type": "解决方案"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "设备对设备通信", "en": "Device-to-Device Communication"},
+    {"title": "干扰协调机制", "en": "Interference Coordination Mechanism"},
+    {"title": "资源分配", "en": "Resource Allocation"},
+    {"title": "认知无线电", "en": "Cognitive Radio"},
+    {"title": "混合网络", "en": "Hybrid Network"}
+  ],
+  "relations": [
+    {"source": "设备对设备通信", "target": "干扰协调机制", "type": "包含"},
+    {"source": "设备对设备通信", "target": "资源分配", "type": "包含"},
+    {"source": "设备对设备通信", "target": "混合网络", "type": "包含"},
+    {"source": "干扰协调机制", "target": "设备对设备通信", "type": "属于"},
+    {"source": "资源分配", "target": "设备对设备通信", "type": "属于"},
+    {"source": "认知无线电", "target": "混合网络", "type": "相关"},
+    {"source": "混合网络", "target": "认知无线电", "type": "相关"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "网络辅助的设备决策通道选择和功率控制", "en": "Network-assisted device-decided channel selection and power control"},
+        {"title": "WINNER II信道模型", "en": "WINNER II channel models"},
+        {"title": "计算机网络", "en": "Computer Networks"},
+        {"title": "IEEE 802.11", "en": "IEEE 802.11"},
+        {"title": "贝叶斯广播网络控制", "en": "Bayesian broadcast network control"},
+        {"title": "时隙ALOHA二进制指数回退算法", "en": "Slotted ALOHA binary exponential backoff algorithm"},
+        {"title": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "en": "Evolved Universal Terrestrial Radio Access (E-UTRA)"},
+        {"title": "蜂窝与D2D异构网络下的D2D通信方案及原型系统设计", "en": "D2D communication scheme and prototype system design in cellular and D2D heterogeneous networks"},
+        {"title": "Radio Resource Control (RRC)协议规范", "en": "Radio Resource Control (RRC) protocol specification"},
+        {"title": "关于通信信道容量的大偏差分析", "en": "Large deviation analysis on communication channel capacity"}
+    ],
+    "relations": [
+        {"source": "网络辅助的设备决策通道选择和功率控制", "target": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "type": "应用"},
+        {"source": "WINNER II信道模型", "target": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "type": "应用"},
+        {"source": "IEEE 802.11", "target": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "type": "比较"},
+        {"source": "贝叶斯广播网络控制", "target": "Communication Theory", "type": "相关"},
+        {"source": "时隙ALOHA二进制指数回退算法", "target": "Communication Theory", "type": "相关"},
+        {"source": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "target": "Radio Resource Control (RRC)协议规范", "type": "应用"},
+        {"source": "蜂窝与D2D异构网络下的D2D通信方案及原型系统设计", "target": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "type": "应用"},
+        {"source": "蜂窝与D2D异构网络下的D2D通信方案及原型系统设计", "target": "网络辅助的设备决策通道选择和功率控制", "type": "应用"},
+        {"source": "Radio Resource Control (RRC)协议规范", "target": "Evolved Universal Terrestrial Radio Access (E-UTRA)", "type": "应用"},
+        {"source": "关于通信信道容量的大偏差分析", "target": "Communication Theory", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "高速铁路通信问题", "en": "Communication issues in high-speed railways"},
+        {"title": "多普勒效应", "en": "Doppler effect"},
+        {"title": "正交频分复用技术", "en": "Orthogonal frequency-division multiplexing technology"},
+        {"title": "OFDM系统频偏估计", "en": "Frequency offset estimation in OFDM systems"},
+        {"title": "整数倍频偏估计", "en": "Integer frequency offset estimation"},
+        {"title": "小数倍频偏估计", "en": "Fractional frequency offset estimation"},
+        {"title": "Moose频率同步算法", "en": "Moose frequency synchronization algorithm"},
+        {"title": "T.Schmidl&D.Cox算法", "en": "T.Schmidl&D.Cox algorithm"},
+        {"title": "导频序列的频偏估计算法", "en": "Frequency offset estimation algorithm based on pilot sequence"},
+        {"title": "循环前缀的频偏估计算法", "en": "Frequency offset estimation algorithm based on cyclic prefix"}
+    ],
+    "relations": [
+        {"source": "高速铁路通信问题", "target": "多普勒效应", "type": "影响因素"},
+        {"source": "正交频分复用技术", "target": "OFDM系统频偏估计", "type": "包含关系"},
+        {"source": "OFDM系统频偏估计", "target": "整数倍频偏估计", "type": "包含关系"},
+        {"source": "OFDM系统频偏估计", "target": "小数倍频偏估计", "type": "包含关系"},
+        {"source": "小数倍频偏估计", "target": "Moose频率同步算法", "type": "包含关系"},
+        {"source": "小数倍频偏估计", "target": "T.Schmidl&D.Cox算法", "type": "包含关系"},
+        {"source": "小数倍频偏估计", "target": "导频序列的频偏估计算法", "type": "包含关系"},
+        {"source": "小数倍频偏估计", "target": "循环前缀的频偏估计算法", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LTE通信系统概述", "en": "Overview of LTE Communication System"},
+        {"title": "OFDM技术原理", "en": "Principle of OFDM Technology"},
+        {"title": "高速移动信道特点", "en": "Characteristics of High-Speed Mobile Channels"},
+        {"title": "经典频偏估计算法", "en": "Classical Frequency Offset Estimation Algorithms"},
+        {"title": "改进频偏估计算法", "en": "Improved Frequency Offset Estimation Algorithms"},
+        {"title": "总结与展望", "en": "Summary and Prospects"}
+    ],
+    "relations": [
+        {"source": "LTE通信系统概述", "target": "OFDM技术原理", "type": "基础原理"},
+        {"source": "LTE通信系统概述", "target": "高速移动信道特点", "type": "应用场景"},
+        {"source": "OFDM技术原理", "target": "高速移动信道特点", "type": "影响因素"},
+        {"source": "经典频偏估计算法", "target": "改进频偏估计算法", "type": "算法改进"},
+        {"source": "改进频偏估计算法", "target": "总结与展望", "type": "研究方向"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LTE频段的优缺点", "en": "Advantages and disadvantages of LTE frequency bands"},
+        {"title": "LTE系统需求", "en": "LTE system requirements"},
+        {"title": "LTE系统架构", "en": "LTE system architecture"},
+        {"title": "LTE帧结构", "en": "LTE frame structure"}
+    ],
+    "relations": [
+        {"source": "LTE频段的优缺点", "target": "LTE系统需求", "type": "包含"},
+        {"source": "LTE系统需求", "target": "LTE系统架构", "type": "包含"},
+        {"source": "LTE系统架构", "target": "LTE帧结构", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Type2帧结构", "en": "Type 2 Frame Structure"},
+        {"title": "OFDM技术简介", "en": "Introduction to OFDM Technology"},
+        {"title": "正交频分复用技术", "en": "Orthogonal Frequency Division Multiplexing Technology"},
+        {"title": "子载波", "en": "Subcarriers"},
+        {"title": "QAM调制", "en": "QAM Modulation"}
+    ],
+    "relations": [
+        {"source": "Type2帧结构", "target": "OFDM技术简介", "type": "包含"},
+        {"source": "OFDM技术简介", "target": "正交频分复用技术", "type": "属于"},
+        {"source": "正交频分复用技术", "target": "子载波", "type": "包含"},
+        {"source": "子载波", "target": "QAM调制", "type": "调制方式"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "M进制QAM调制", "en": "M-QAM Modulation"},
+        {"title": "OFDM系统", "en": "OFDM System"},
+        {"title": "子载波", "en": "Subcarrier"},
+        {"title": "16-QAM调制", "en": "16-QAM Modulation"},
+        {"title": "复包络", "en": "Complex Envelope"},
+        {"title": "IFFT", "en": "IFFT"},
+        {"title": "FFT", "en": "FFT"},
+        {"title": "循环前缀", "en": "Cyclic Prefix"},
+        {"title": "频偏估计", "en": "Frequency Offset Estimation"}
+    ],
+    "relations": [
+        {"source": "M进制QAM调制", "target": "子载波", "type": "包含"},
+        {"source": "子载波", "target": "16-QAM调制", "type": "调制方式"},
+        {"source": "16-QAM调制", "target": "复包络", "type": "调制方式"},
+        {"source": "OFDM系统", "target": "子载波", "type": "基本组成部分"},
+        {"source": "子载波", "target": "IFFT", "type": "变换方式"},
+        {"source": "IFFT", "target": "FFT", "type": "逆变换"},
+        {"source": "OFDM系统", "target": "FFT", "type": "基本组成部分"},
+        {"source": "OFDM系统", "target": "循环前缀", "type": "基本组成部分"},
+        {"source": "循环前缀", "target": "频偏估计", "type": "应用场景"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "OFDM技术",
+            "en": "OFDM Technology"
+        },
+        {
+            "title": "频谱利用率",
+            "en": "Spectrum Utilization"
+        },
+        {
+            "title": "循环前缀",
+            "en": "Cyclic Prefix"
+        },
+        {
+            "title": "峰均比",
+            "en": "Peak-to-Average Power Ratio (PAPR)"
+        },
+        {
+            "title": "多径传播",
+            "en": "Multipath Propagation"
+        },
+        {
+            "title": "多径衰落",
+            "en": "Multipath Fading"
+        },
+        {
+            "title": "时延扩展",
+            "en": "Delay Spread"
+        },
+        {
+            "title": "多普勒频移",
+            "en": "Doppler Frequency Shift"
+        }
+    ],
+    "relations": [
+        {
+            "source": "OFDM技术",
+            "target": "频谱利用率",
+            "type": "具有"
+        },
+        {
+            "source": "OFDM技术",
+            "target": "循环前缀",
+            "type": "具有"
+        },
+        {
+            "source": "OFDM技术",
+            "target": "峰均比",
+            "type": "具有"
+        },
+        {
+            "source": "多径传播",
+            "target": "多径衰落",
+            "type": "导致"
+        },
+        {
+            "source": "多径衰落",
+            "target": "时延扩展",
+            "type": "导致"
+        },
+        {
+            "source": "多普勒频移",
+            "target": "多普勒效应",
+            "type": "具有"
+        },
+        {
+            "source": "多普勒效应",
+            "target": "多普勒频移",
+            "type": "导致"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多普勒效应在频域上的频率搬移", "en": "Doppler effect frequency shift in frequency domain"},
+        {"title": "多普勒频移的特点", "en": "Characteristics of Doppler frequency shift"},
+        {"title": "高铁信道环境中的多普勒效应", "en": "Doppler effect in high-speed railway channel environment"},
+        {"title": "相关时间的定义及其在衡量信道时变性中的作用", "en": "Definition of correlation time and its role in measuring channel variability"},
+        {"title": "快速移动无线信道参数", "en": "Parameters of fast-moving wireless channel"}
+    ],
+    "relations": [
+        {"source": "多普勒效应在频域上的频率搬移", "target": "多普勒频移的特点", "type": "包含"},
+        {"source": "多普勒效应在频域上的频率搬移", "target": "高铁信道环境中的多普勒效应", "type": "相关"},
+        {"source": "高铁信道环境中的多普勒效应", "target": "多普勒频移的特点", "type": "包含"},
+        {"source": "高铁信道环境中的多普勒效应", "target": "相关时间的定义及其在衡量信道时变性中的作用", "type": "相关"},
+        {"source": "快速移动无线信道参数", "target": "高铁信道环境中的多普勒效应", "type": "相关"},
+        {"source": "快速移动无线信道参数", "target": "相关时间的定义及其在衡量信道时变性中的作用", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Rayleigh衰落", "en": "Rayleigh fading"},
+        {"title": "多径效应", "en": "Multipath effect"},
+        {"title": "多普勒效应", "en": "Doppler effect"},
+        {"title": "时变信道", "en": "Time-varying channel"},
+        {"title": "OFDM系统", "en": "OFDM system"},
+        {"title": "频偏", "en": "Frequency offset"},
+        {"title": "最大似然估计法", "en": "Maximum likelihood estimation"},
+        {"title": "插入导频", "en": "Insertion of pilot symbols"},
+        {"title": "符号间干扰", "en": "Inter-symbol interference"},
+        {"title": "S&C算法", "en": "S&C algorithm"},
+        {"title": "ISI", "en": "Inter-symbol interference"},
+        {"title": "SNR", "en": "Signal-to-noise ratio"},
+        {"title": "Moose频率同步算法", "en": "Moose frequency synchronization algorithm"},
+        {"title": "AWGN信道", "en": "Additive white Gaussian noise channel"}
+    ],
+    "relations": [
+        {"source": "高速铁路信道环境", "target": "Rayleigh衰落", "type": "具有"},
+        {"source": "高速铁路信道环境", "target": "多径效应", "type": "具有"},
+        {"source": "高速铁路信道环境", "target": "多普勒效应", "type": "具有"},
+        {"source": "高速铁路信道环境", "target": "时变信道", "type": "具有"},
+        {"source": "OFDM系统", "target": "频偏", "type": "存在"},
+        {"source": "频偏", "target": "最大似然估计法", "type": "使用"},
+        {"source": "频偏", "target": "插入导频", "type": "使用"},
+        {"source": "插入导频", "target": "S&C算法", "type": "基于"},
+        {"source": "S&C算法", "target": "ISI", "type": "解决"},
+        {"source": "S&C算法", "target": "SNR", "type": "适用于"},
+        {"source": "Moose频率同步算法", "target": "AWGN信道", "type": "考虑"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Moose算法", "en": "Moose algorithm"},
+        {"title": "T.Schmidl&D.Cox频偏估计算法", "en": "T.Schmidl&D.Cox frequency offset estimation algorithm"},
+        {"title": "S&C算法", "en": "S&C algorithm"},
+        {"title": "导频序列的频偏估计算法", "en": "Frequency offset estimation algorithm using pilot sequences"}
+    ],
+    "relations": [
+        {"source": "Moose算法", "target": "Communication Theory", "type": "属于"},
+        {"source": "T.Schmidl&D.Cox频偏估计算法", "target": "Communication Theory", "type": "属于"},
+        {"source": "S&C算法", "target": "Communication Theory", "type": "属于"},
+        {"source": "导频序列的频偏估计算法", "target": "Communication Theory", "type": "属于"},
+        {"source": "Moose算法", "target": "频率偏移", "type": "计算方法"},
+        {"source": "T.Schmidl&D.Cox频偏估计算法", "target": "频率偏移", "type": "计算方法"},
+        {"source": "S&C算法", "target": "频率偏移", "type": "计算方法"},
+        {"source": "导频序列的频偏估计算法", "target": "频率偏移", "type": "计算方法"},
+        {"source": "Moose算法", "target": "计算量大", "type": "缺点"},
+        {"source": "Moose算法", "target": "定时同步精确性要求高", "type": "缺点"},
+        {"source": "Moose算法", "target": "频偏估计范围较小", "type": "缺点"},
+        {"source": "T.Schmidl&D.Cox频偏估计算法", "target": "运算量相对较小", "type": "优点"},
+        {"source": "T.Schmidl&D.Cox频偏估计算法", "target": "估计范围较大", "type": "优点"},
+        {"source": "S&C算法", "target": "运算量相对较小", "type": "优点"},
+        {"source": "S&C算法", "target": "估计范围较大", "type": "优点"},
+        {"source": "导频序列的频偏估计算法", "target": "利用导频序列进行频偏估计", "type": "计算方法"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "导频算法", "en": "Pilot algorithm"},
+    {"title": "频率补偿", "en": "Frequency compensation"},
+    {"title": "信道矩阵", "en": "Channel matrix"},
+    {"title": "频偏矩阵", "en": "Frequency offset matrix"},
+    {"title": "循环前缀", "en": "Cyclic prefix"},
+    {"title": "最大似然算法", "en": "Maximum likelihood algorithm"},
+    {"title": "盲同步估计算法", "en": "Blind synchronization estimation algorithm"},
+    {"title": "多普勒频移", "en": "Doppler frequency shift"},
+    {"title": "ISI", "en": "Inter-symbol interference"},
+    {"title": "ICI", "en": "Inter-carrier interference"},
+    {"title": "信噪比", "en": "Signal-to-noise ratio"},
+    {"title": "误比特率", "en": "Bit error rate"}
+  ],
+  "relations": [
+    {"source": "导频算法", "target": "频率补偿", "type": "包含"},
+    {"source": "导频算法", "target": "信道矩阵", "type": "包含"},
+    {"source": "频率补偿", "target": "信道矩阵", "type": "依赖"},
+    {"source": "频率补偿", "target": "频偏矩阵", "type": "依赖"},
+    {"source": "循环前缀", "target": "ISI", "type": "解决"},
+    {"source": "循环前缀", "target": "ICI", "type": "解决"},
+    {"source": "最大似然算法", "target": "盲同步估计算法", "type": "属于"},
+    {"source": "盲同步估计算法", "target": "循环前缀", "type": "利用"},
+    {"source": "多普勒频移", "target": "基于CP的频偏估计算法分析", "type": "限制"},
+    {"source": "信噪比", "target": "基于导频序列进行迭代的算法", "type": "影响"},
+    {"source": "误比特率", "target": "基于导频序列进行迭代的算法", "type": "降低"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "迭代算法", "en": "Iterative algorithm"},
+        {"title": "QAM调制", "en": "QAM modulation"},
+        {"title": "串/并转换", "en": "Serial/parallel conversion"},
+        {"title": "IFFT调制", "en": "IFFT modulation"},
+        {"title": "循环前缀", "en": "Cyclic prefix"},
+        {"title": "A/D转换", "en": "A/D conversion"},
+        {"title": "D/A转换", "en": "D/A conversion"},
+        {"title": "FFT变换", "en": "FFT transformation"},
+        {"title": "导频序列", "en": "Pilot sequence"},
+        {"title": "频偏估计", "en": "Frequency offset estimation"},
+        {"title": "频偏补偿", "en": "Frequency offset compensation"},
+        {"title": "OFDM系统", "en": "OFDM system"},
+        {"title": "多普勒频移", "en": "Doppler frequency shift"},
+        {"title": "AWGN信道", "en": "AWGN channel"},
+        {"title": "信道矩阵", "en": "Channel matrix"},
+        {"title": "频域估计", "en": "Frequency domain estimation"}
+    ],
+    "relations": [
+        {"source": "QAM调制", "target": "迭代算法", "type": "包含"},
+        {"source": "串/并转换", "target": "迭代算法", "type": "包含"},
+        {"source": "IFFT调制", "target": "迭代算法", "type": "包含"},
+        {"source": "循环前缀", "target": "迭代算法", "type": "包含"},
+        {"source": "A/D转换", "target": "迭代算法", "type": "包含"},
+        {"source": "D/A转换", "target": "迭代算法", "type": "包含"},
+        {"source": "FFT变换", "target": "迭代算法", "type": "包含"},
+        {"source": "导频序列", "target": "迭代算法", "type": "包含"},
+        {"source": "频偏估计", "target": "迭代算法", "type": "包含"},
+        {"source": "频偏补偿", "target": "迭代算法", "type": "包含"},
+        {"source": "OFDM系统", "target": "迭代算法", "type": "包含"},
+        {"source": "多普勒频移", "target": "迭代算法", "type": "包含"},
+        {"source": "AWGN信道", "target": "迭代算法", "type": "包含"},
+        {"source": "信道矩阵", "target": "迭代算法", "type": "包含"},
+        {"source": "频域估计", "target": "迭代算法", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "插入导频算法", "en": "Inserting pilot algorithm"},
+        {"title": "频偏估计", "en": "Frequency offset estimation"},
+        {"title": "多普勒频偏", "en": "Doppler frequency offset"},
+        {"title": "迭代算法", "en": "Iterative algorithm"},
+        {"title": "误比特率", "en": "Bit error rate"},
+        {"title": "均方误差", "en": "Mean square error"},
+        {"title": "OFDM", "en": "Orthogonal frequency-division multiplexing"}
+    ],
+    "relations": [
+        {"source": "插入导频算法", "target": "频偏估计", "type": "包含"},
+        {"source": "频偏估计", "target": "多普勒频偏", "type": "涉及"},
+        {"source": "迭代算法", "target": "频偏估计", "type": "改进"},
+        {"source": "误比特率", "target": "频偏估计", "type": "评价"},
+        {"source": "均方误差", "target": "频偏估计", "type": "评价"},
+        {"source": "OFDM", "target": "插入导频算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "迭代算法和经典插入导频的频偏估计算法比较", "en": "Comparison of iterative algorithm and classical pilot insertion algorithm for frequency offset estimation"},
+        {"title": "迭代算法和经典插入导频的BER比较", "en": "Comparison of iterative algorithm and classical pilot insertion algorithm for BER"},
+        {"title": "迭代算法和经典插入导频的频偏估计方差比较", "en": "Comparison of iterative algorithm and classical pilot insertion algorithm for frequency offset estimation variance"},
+        {"title": "S&C算法原理及帧结构", "en": "Principle and frame structure of S&C algorithm"}
+    ],
+    "relations": [
+        {"source": "迭代算法和经典插入导频的频偏估计算法比较", "target": "迭代算法和经典插入导频的BER比较", "type": "related"},
+        {"source": "迭代算法和经典插入导频的频偏估计算法比较", "target": "迭代算法和经典插入导频的频偏估计方差比较", "type": "related"},
+        {"source": "迭代算法和经典插入导频的BER比较", "target": "迭代算法和经典插入导频的频偏估计方差比较", "type": "related"},
+        {"source": "S&C算法原理及帧结构", "target": "迭代算法和经典插入导频的频偏估计算法比较", "type": "related"},
+        {"source": "S&C算法原理及帧结构", "target": "迭代算法和经典插入导频的BER比较", "type": "related"},
+        {"source": "S&C算法原理及帧结构", "target": "迭代算法和经典插入导频的频偏估计方差比较", "type": "related"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "S&C算法的帧结构", "en": "Frame structure of S&C algorithm"},
+    {"title": "S&C算法的频偏计算", "en": "Frequency offset calculation of S&C algorithm"},
+    {"title": "多普勒效应对S&C算法的影响", "en": "The influence of Doppler effect on S&C algorithm"},
+    {"title": "改进算法原理", "en": "Principle of improved algorithm"},
+    {"title": "改进算法仿真结果分析", "en": "Analysis of simulation results of improved algorithm"}
+  ],
+  "relations": [
+    {"source": "S&C算法的帧结构", "target": "S&C算法的频偏计算", "type": "包含"},
+    {"source": "S&C算法的频偏计算", "target": "多普勒效应对S&C算法的影响", "type": "影响"},
+    {"source": "多普勒效应对S&C算法的影响", "target": "S&C算法的频偏计算", "type": "影响"},
+    {"source": "改进算法原理", "target": "改进算法仿真结果分析", "type": "包含"}
+  ]
+}{
+  "knowledge_points": [
+    {"title": "OFDM系统", "en": "OFDM system"},
+    {"title": "频偏估计算法", "en": "Frequency offset estimation algorithm"},
+    {"title": "Moose方法", "en": "Moose method"},
+    {"title": "Schmidl方法", "en": "Schmidl method"},
+    {"title": "S&C算法", "en": "S&C algorithm"},
+    {"title": "改进算法", "en": "Improved algorithm"},
+    {"title": "多普勒效应", "en": "Doppler effect"}
+  ],
+  "relations": [
+    {"source": "OFDM系统", "target": "频偏估计算法", "type": "包含"},
+    {"source": "频偏估计算法", "target": "Moose方法", "type": "包含"},
+    {"source": "频偏估计算法", "target": "Schmidl方法", "type": "包含"},
+    {"source": "频偏估计算法", "target": "S&C算法", "type": "包含"},
+    {"source": "频偏估计算法", "target": "改进算法", "type": "包含"},
+    {"source": "改进算法", "target": "多普勒效应", "type": "相关"}
+  ]
+}{
+  "knowledge_points": [
+    {"title": "OFDM", "en": ""},
+    {"title": "Robust Frequency and Timing Synchronization", "en": ""},
+    {"title": "Orthogonal Frequency Division Multiplexing Frequency Offset Correction", "en": ""},
+    {"title": "Joint Frequency Synchronization and Channel Estimation in OFDM Systems", "en": ""},
+    {"title": "Intercarrier Interference in MIMO OFDM", "en": ""},
+    {"title": "Time-Frequency Training OFDM", "en": ""},
+    {"title": "Channel Estimation with Timing Offset Based on PSD XS Estimation for Wireless OFDM System", "en": ""},
+    {"title": "Crossed Field Antenna", "en": ""},
+    {"title": "Doppler Spread on OFDM-based Next-generation High-speed Rail Broadband Mobile Communications", "en": ""},
+    {"title": "ML Estimation of Timing and Frequency Offsets Using Distinctive Correlation Characteristics of OFDM Signals Over Dispersive Fading Channels", "en": ""},
+    {"title": "Blind Synchronizer for OFDM Systems Based on SINR Maximization in Multipath Fading Channels", "en": ""},
+    {"title": "Frame Synchronization and Frequency Offset Estimation Algorithm for OFDM System and its Analysis", "en": ""}
+  ],
+  "relations": [
+    {"source": "OFDM", "target": "Robust Frequency and Timing Synchronization", "type": "关于"},
+    {"source": "OFDM", "target": "Orthogonal Frequency Division Multiplexing Frequency Offset Correction", "type": "关于"},
+    {"source": "OFDM", "target": "Joint Frequency Synchronization and Channel Estimation in OFDM Systems", "type": "关于"},
+    {"source": "OFDM", "target": "Intercarrier Interference in MIMO OFDM", "type": "关于"},
+    {"source": "OFDM", "target": "Time-Frequency Training OFDM", "type": "关于"},
+    {"source": "OFDM", "target": "Channel Estimation with Timing Offset Based on PSD XS Estimation for Wireless OFDM System", "type": "关于"},
+    {"source": "Crossed Field Antenna", "target": "OFDM", "type": "应用"},
+    {"source": "Doppler Spread on OFDM-based Next-generation High-speed Rail Broadband Mobile Communications", "target": "OFDM", "type": "应用"},
+    {"source": "OFDM", "target": "ML Estimation of Timing and Frequency Offsets Using Distinctive Correlation Characteristics of OFDM Signals Over Dispersive Fading Channels", "type": "关于"},
+    {"source": "OFDM", "target": "Blind Synchronizer for OFDM Systems Based on SINR Maximization in Multipath Fading Channels", "type": "关于"},
+    {"source": "OFDM", "target": "Frame Synchronization and Frequency Offset Estimation Algorithm for OFDM System and its Analysis", "type": "关于"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "OFDM系统", "en": "OFDM system"},
+        {"title": "载波频偏", "en": "Carrier frequency offset"},
+        {"title": "时变多径信道", "en": "Time-varying multipath channels"},
+        {"title": "同步", "en": "Synchronization"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "散布导频", "en": "Scattered pilots"},
+        {"title": "空载波", "en": "Null subcarriers"},
+        {"title": "簇状导频", "en": "Clustered pilot tones"},
+        {"title": "数据导频", "en": "Data-carrier aided"}
+    ],
+    "relations": [
+        {"source": "OFDM系统", "target": "载波频偏", "type": "包含"},
+        {"source": "OFDM系统", "target": "同步", "type": "包含"},
+        {"source": "OFDM系统", "target": "信道估计", "type": "包含"},
+        {"source": "OFDM系统", "target": "散布导频", "type": "包含"},
+        {"source": "OFDM系统", "target": "空载波", "type": "包含"},
+        {"source": "OFDM系统", "target": "簇状导频", "type": "包含"},
+        {"source": "OFDM系统", "target": "数据导频", "type": "包含"},
+        {"source": "载波频偏", "target": "时变多径信道", "type": "影响"},
+        {"source": "载波频偏", "target": "同步", "type": "影响"},
+        {"source": "载波频偏", "target": "信道估计", "type": "影响"},
+        {"source": "载波频偏", "target": "散布导频", "type": "影响"},
+        {"source": "载波频偏", "target": "空载波", "type": "影响"},
+        {"source": "载波频偏", "target": "簇状导频", "type": "影响"},
+        {"source": "载波频偏", "target": "数据导频", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于样本协方差的OFDM频偏估计", "en": "Frequency offset estimation in OFDM using sample covariance"},
+        {"title": "OFDM系统对Wiener相位噪声和载波频率偏移的BER敏感性", "en": "BER sensitivity of OFDM systems to carrier frequency offset and Wiener phase noise"},
+        {"title": "LTE OFDM系统中的时间和频率同步", "en": "Time and frequency synchronization in LTE OFDM systems"},
+        {"title": "OFDM系统中快速变化的载波频率偏移的状态空间估计", "en": "State-space estimation of rapidly-varying carrier frequency offsets in OFDM systems"},
+        {"title": "OFDM系统中半盲技术的载波频率偏移估计", "en": "Semiblind techniques for carrier frequency offset estimation in OFDM systems"},
+        {"title": "OFDM系统中鲁棒的时域时钟和频率同步", "en": "Robust time-domain timing and frequency synchronization for OFDM systems"},
+        {"title": "OFDM/OQAM系统中非数据辅助的载波频率偏移估计", "en": "Non-data-aided carrier frequency offset estimation for pulse-shaping OFDM/OQAM systems"},
+        {"title": "OFDM及其无线应用：一项调查", "en": "OFDM and its wireless applications: a survey"},
+        {"title": "OFDM系统中时间和频率偏移的MLE估计", "en": "ML estimation of time and frequency offset in OFDM systems"},
+        {"title": "OFDM系统中联合帧同步和频率偏移估计", "en": "Joint frame synchronization and frequency offset estimation in OFDM systems"},
+        {"title": "相干OFDM系统中的符号时钟偏移估计", "en": "Symbol time offset estimation in coherent OFDM systems"},
+        {"title": "OFDM系统中ML联合CFO和信道估计", "en": "ML joint CFO and channel estimation in OFDM systems"},
+        {"title": "虚拟子载波OFDM系统中低复杂度的载波频率偏移估计", "en": "A low-complexity carrier frequency offset estimation for OFDM systems with virtual subcarriers"}
+    ],
+    "relations": [
+        {"source": "基于样本协方差的OFDM频偏估计", "target": "Frequency offset estimation in OFDM using sample covariance", "type": "同义词"},
+        {"source": "OFDM系统对Wiener相位噪声和载波频率偏移的BER敏感性", "target": "BER sensitivity of OFDM systems to carrier frequency offset and Wiener phase noise", "type": "同义词"},
+        {"source": "LTE OFDM系统中的时间和频率同步", "target": "Time and frequency synchronization in LTE OFDM systems", "type": "同义词"},
+        {"source": "OFDM系统中快速变化的载波频率偏移的状态空间估计", "target": "State-space estimation of rapidly-varying carrier frequency offsets in OFDM systems", "type": "同义词"},
+        {"source": "OFDM系统中半盲技术的载波频率偏移估计", "target": "Semiblind techniques for carrier frequency offset estimation in OFDM systems", "type": "同义词"},
+        {"source": "OFDM系统中鲁棒的时域时钟和频率同步", "target": "Robust time-domain timing and frequency synchronization for OFDM systems", "type": "同义词"},
+        {"source": "OFDM/OQAM系统中非数据辅助的载波频率偏移估计", "target": "Non-data-aided carrier frequency offset estimation for pulse-shaping OFDM/OQAM systems", "type": "同义词"},
+        {"source": "OFDM及其无线应用：一项调查", "target": "OFDM and its wireless applications: a survey", "type": "同义词"},
+        {"source": "OFDM系统中时间和频率偏移的MLE估计", "target": "ML estimation of time and frequency offset in OFDM systems", "type": "同义词"},
+        {"source": "OFDM系统中联合帧同步和频率偏移估计", "target": "Joint frame synchronization and frequency offset estimation in OFDM systems", "type": "同义词"},
+        {"source": "相干OFDM系统中的符号时钟偏移估计", "target": "Symbol time offset estimation in coherent OFDM systems", "type": "同义词"},
+        {"source": "OFDM系统中ML联合CFO和信道估计", "target": "ML joint CFO and channel estimation in OFDM systems", "type": "同义词"},
+        {"source": "虚拟子载波OFDM系统中低复杂度的载波频率偏移估计", "target": "A low-complexity carrier frequency offset estimation for OFDM systems with virtual subcarriers", "type": "同义词"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "奈奎斯特-香农采样定理", "en": "Nyquist-Shannon sampling theorem"},
+    {"title": "压缩感知理论", "en": "Compressed sensing theory"},
+    {"title": "稀疏信号", "en": "Sparse signal"},
+    {"title": "基追踪算法", "en": "Basis pursuit algorithm"},
+    {"title": "贪婪算法", "en": "Greedy algorithm"},
+    {"title": "宽带流信号压缩感知技术", "en": "Wideband streaming signal compressed sensing technology"},
+    {"title": "传统的基于混频的压缩感知采样系统", "en": "Traditional mixing-based compressed sensing sampling system"},
+    {"title": "宽带信号随机解调系统的模拟信息转化器", "en": "Analog information converter of wideband signal random demodulation system"},
+    {"title": "宽带调制转换器的系统", "en": "Wideband modulation converter system"},
+    {"title": "无需混频的宽带信号压缩感知技术", "en": "Wideband signal compressed sensing technology without mixing"},
+    {"title": "卡尔曼迭代滤波技术", "en": "Kalman iterative filtering technology"},
+    {"title": "AD9361", "en": "AD9361"},
+    {"title": "ZC706", "en": "ZC706"}
+  ],
+  "relations": [
+    {"source": "奈奎斯特-香农采样定理", "target": "压缩感知理论", "type": "related"},
+    {"source": "压缩感知理论", "target": "稀疏信号", "type": "related"},
+    {"source": "压缩感知理论", "target": "基追踪算法", "type": "related"},
+    {"source": "压缩感知理论", "target": "贪婪算法", "type": "related"},
+    {"source": "宽带流信号压缩感知技术", "target": "传统的基于混频的压缩感知采样系统", "type": "related"},
+    {"source": "传统的基于混频的压缩感知采样系统", "target": "宽带信号随机解调系统的模拟信息转化器", "type": "related"},
+    {"source": "传统的基于混频的压缩感知采样系统", "target": "宽带调制转换器的系统", "type": "related"},
+    {"source": "宽带流信号压缩感知技术", "target": "无需混频的宽带信号压缩感知技术", "type": "related"},
+    {"source": "无需混频的宽带信号压缩感知技术", "target": "卡尔曼迭代滤波技术", "type": "related"},
+    {"source": "无需混频的宽带信号压缩感知技术", "target": "AD9361", "type": "related"},
+    {"source": "无需混频的宽带信号压缩感知技术", "target": "ZC706", "type": "related"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "基于AIC结构的噪声和稀疏度自适应的宽带流信号压缩感知算法", "en": ""},
+        {"title": "基于MWC结构的宽带信号压缩感知", "en": ""},
+        {"title": "基于非混频的低成本宽带信号压缩感知", "en": ""},
+        {"title": "宽带流信号压缩感知", "en": "Broadband Flow Signal Compressive Sensing"},
+        {"title": "稀疏表示", "en": "Sparse Representation"},
+        {"title": "变换矩阵", "en": "Transform Matrix"},
+        {"title": "支撑集", "en": "Support Set"},
+        {"title": "混频模式", "en": "Mixing Mode"},
+        {"title": "非混频模式", "en": "Non-mixing Mode"},
+        {"title": "卡尔曼滤波器", "en": "Kalman Filter"},
+        {"title": "多窗口模型", "en": "Multi-Window Model"},
+        {"title": "多路采样结构", "en": "Multi-Channel Sampling Structure"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "噪声协方差", "en": "Noise Covariance"},
+        {"title": "压缩感知", "en": "Compressive Sensing"},
+        {"title": "奈奎斯特采样率", "en": "Nyquist Sampling Rate"},
+        {"title": "多带信号", "en": "Multiband Signal"},
+        {"title": "多信道特征", "en": "Multi-Channel Feature"},
+        {"title": "变换域", "en": "Transform Domain"},
+        {"title": "DCT变换", "en": "Discrete Cosine Transform"},
+        {"title": "小波变换", "en": "Wavelet Transform"}
+    ],
+    "relations": [
+        {"source": "基于AIC结构的噪声和稀疏度自适应的宽带流信号压缩感知算法", "target": "宽带流信号压缩感知", "type": "属于"},
+        {"source": "基于MWC结构的宽带信号压缩感知", "target": "宽带流信号压缩感知", "type": "属于"},
+        {"source": "基于非混频的低成本宽带信号压缩感知", "target": "宽带流信号压缩感知", "type": "属于"},
+        {"source": "宽带流信号压缩感知", "target": "压缩感知", "type": "包含"},
+        {"source": "宽带流信号压缩感知", "target": "混频模式", "type": "使用"},
+        {"source": "宽带流信号压缩感知", "target": "非混频模式", "type": "使用"},
+        {"source": "基于AIC结构的噪声和稀疏度自适应的宽带流信号压缩感知算法", "target": "稀疏度", "type": "涉及"},
+        {"source": "基于AIC结构的噪声和稀疏度自适应的宽带流信号压缩感知算法", "target": "噪声协方差", "type": "涉及"},
+        {"source": "基于AIC结构的噪声和稀疏度自适应的宽带流信号压缩感知算法", "target": "卡尔曼滤波器", "type": "结合"},
+        {"source": "基于AIC结构的噪声和稀疏度自适应的宽带流信号压缩感知算法", "target": "多窗口模型", "type": "结合"},
+        {"source": "基于MWC结构的宽带信号压缩感知", "target": "多路采样结构", "type": "使用"},
+        {"source": "基于非混频的低成本宽带信号压缩感知", "target": "成本", "type": "涉及"},
+        {"source": "基于非混频的低成本宽带信号压缩感知", "target": "稀疏度", "type": "涉及"},
+        {"source": "基于非混频的低成本宽带信号压缩感知", "target": "恢复精度", "type": "涉及"},
+        {"source": "稀疏表示", "target": "变换矩阵", "type": "涉及"},
+        {"source": "稀疏表示", "target": "支撑集", "type": "涉及"},
+        {"source": "宽带流信号压缩感知", "target": "奈奎斯特采样率", "type": "突破"},
+        {"source": "宽带流信号压缩感知", "target": "多带信号", "type": "涉及"},
+        {"source": "宽带流信号压缩感知", "target": "多信道特征", "type": "涉及"},
+        {"source": "宽带流信号压缩感知", "target": "变换域", "type": "涉及"},
+        {"source": "宽带流信号压缩感知", "target": "DCT变换", "type": "涉及"},
+        {"source": "宽带流信号压缩感知", "target": "小波变换", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "稀疏表达式", "en": "Sparse expression"},
+        {"title": "压缩感知采样结构", "en": "Compressive sensing sampling structure"},
+        {"title": "AIC模型", "en": "AIC model"},
+        {"title": "欠定方程组", "en": "Underdetermined equation system"},
+        {"title": "K-RIP性质", "en": "K-RIP property"},
+        {"title": "信号重构算法", "en": "Signal reconstruction algorithm"},
+        {"title": "SMV问题", "en": "SMV problem"},
+        {"title": "BasicPusuit算法", "en": "BasicPusuit algorithm"}
+    ],
+    "relations": [
+        {"source": "稀疏表达式", "target": "AIC模型", "type": "包含"},
+        {"source": "AIC模型", "target": "欠定方程组", "type": "包含"},
+        {"source": "欠定方程组", "target": "K-RIP性质", "type": "需要满足"},
+        {"source": "K-RIP性质", "target": "信号重构算法", "type": "需要满足"},
+        {"source": "信号重构算法", "target": "SMV问题", "type": "解决"},
+        {"source": "SMV问题", "target": "BasicPusuit算法", "type": "常用算法"}
+    ]
+}{
+  "knowledge_points": [
+    {"title": "CoSAMP算法", "en": "CoSAMP algorithm"},
+    {"title": "SubspacePursuit算法", "en": "SubspacePursuit algorithm"},
+    {"title": "BeliefPropagation算法", "en": "BeliefPropagation algorithm"},
+    {"title": "StOMP算法", "en": "StOMP algorithm"},
+    {"title": "OMP算法", "en": "OMP algorithm"},
+    {"title": "MWC模型", "en": "MWC model"},
+    {"title": "基于MWC采样结构下的求解算法", "en": "Solving algorithm based on MWC sampling structure"},
+    {"title": "基于AIC采样结构下多时间窗的自适应卡尔曼迭代算法", "en": "Adaptive Kalman iteration algorithm based on AIC sampling structure and multiple time windows"},
+    {"title": "匹配追踪算法思想", "en": "Matching pursuit algorithm idea"},
+    {"title": "稀疏解", "en": "Sparse solution"},
+    {"title": "支撑集", "en": "Support set"},
+    {"title": "欠定方程", "en": "Underdetermined equation"},
+    {"title": "压缩感知", "en": "Compressed sensing"},
+    {"title": "多路混频", "en": "Multichannel mixing"},
+    {"title": "低速采样", "en": "Low-speed sampling"},
+    {"title": "奈奎斯特采样间隔", "en": "Nyquist sampling interval"},
+    {"title": "伪随机序列", "en": "Pseudo-random sequence"},
+    {"title": "傅里叶变换", "en": "Fourier transform"},
+    {"title": "离散化", "en": "Discretization"}
+  ],
+  "relations": [
+    {"source": "CoSAMP算法", "target": "Communication Theory", "type": "属于"},
+    {"source": "SubspacePursuit算法", "target": "Communication Theory", "type": "属于"},
+    {"source": "BeliefPropagation算法", "target": "Communication Theory", "type": "属于"},
+    {"source": "StOMP算法", "target": "Communication Theory", "type": "属于"},
+    {"source": "OMP算法", "target": "Communication Theory", "type": "属于"},
+    {"source": "MWC模型", "target": "Communication Theory", "type": "属于"},
+    {"source": "基于MWC采样结构下的求解算法", "target": "Communication Theory", "type": "属于"},
+    {"source": "基于AIC采样结构下多时间窗的自适应卡尔曼迭代算法", "target": "Communication Theory", "type": "属于"},
+    {"source": "匹配追踪算法思想", "target": "Communication Theory", "type": "属于"},
+    {"source": "稀疏解", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "支撑集", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "欠定方程", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "压缩感知", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "多路混频", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "低速采样", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "奈奎斯特采样间隔", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "伪随机序列", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "傅里叶变换", "target": "Communication Theory", "type": "相关概念"},
+    {"source": "离散化", "target": "Communication Theory", "type": "相关概念"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "压缩采样系统", "en": "Compressed Sampling System"},
+        {"title": "傅里叶变换", "en": "Fourier Transform"},
+        {"title": "稀疏性", "en": "Sparsity"},
+        {"title": "AIC结构", "en": "AIC Structure"},
+        {"title": "MWC结构", "en": "MWC Structure"},
+        {"title": "SMV问题", "en": "Single Measurement Vector Problem"},
+        {"title": "MMV问题", "en": "Multiple Measurement Vector Problem"},
+        {"title": "支撑集", "en": "Support Set"},
+        {"title": "非混频的宽带信号压缩感知", "en": "Non-Mixer Wideband Signal Compressed Sensing"},
+        {"title": "图像处理", "en": "Image Processing"},
+        {"title": "字典", "en": "Dictionary"},
+        {"title": "单像素相机", "en": "Single Pixel Camera"},
+        {"title": "认知无线电", "en": "Cognitive Radio"},
+        {"title": "频谱压缩感知", "en": "Spectrum Compressed Sensing"},
+        {"title": "本地压缩感知", "en": "Local Compressed Sensing"},
+        {"title": "协作式压缩感知", "en": "Collaborative Compressed Sensing"}
+    ],
+    "relations": [
+        {"source": "压缩采样系统", "target": "傅里叶变换", "type": "包含"},
+        {"source": "压缩采样系统", "target": "稀疏性", "type": "利用"},
+        {"source": "压缩采样系统", "target": "AIC结构", "type": "一种"},
+        {"source": "压缩采样系统", "target": "MWC结构", "type": "一种"},
+        {"source": "AIC结构", "target": "SMV问题", "type": "转化为"},
+        {"source": "MWC结构", "target": "MMV问题", "type": "转化为"},
+        {"source": "MMV问题", "target": "支撑集", "type": "求解"},
+        {"source": "非混频的宽带信号压缩感知", "target": "稀疏性", "type": "利用"},
+        {"source": "图像处理", "target": "稀疏性", "type": "利用"},
+        {"source": "图像处理", "target": "字典", "type": "使用"},
+        {"source": "图像处理", "target": "单像素相机", "type": "应用"},
+        {"source": "认知无线电", "target": "频谱压缩感知", "type": "应用"},
+        {"source": "频谱压缩感知", "target": "本地压缩感知", "type": "一种"},
+        {"source": "频谱压缩感知", "target": "协作式压缩感知", "type": "一种"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "压缩感知", "en": "Compressed sensing"},
+        {"title": "无融合中心的协作式压缩感知技术", "en": "Collaborative compressed sensing without fusion center"},
+        {"title": "有融合中心的协作式压缩感知技术", "en": "Collaborative compressed sensing with fusion center"},
+        {"title": "大规模天线阵列", "en": "Large-scale antenna array"},
+        {"title": "压缩感知在语音编码中的应用", "en": "Application of compressed sensing in speech coding"},
+        {"title": "压缩感知在信息隐藏中的应用", "en": "Application of compressed sensing in information hiding"},
+        {"title": "压缩感知在丢包补偿中的应用", "en": "Application of compressed sensing in packet loss compensation"},
+        {"title": "无线传感网", "en": "Wireless sensor network"},
+        {"title": "数据融合", "en": "Data fusion"},
+        {"title": "数据采集", "en": "Data acquisition"},
+        {"title": "数据恢复", "en": "Data recovery"}
+    ],
+    "relations": [
+        {"source": "压缩感知", "target": "无融合中心的协作式压缩感知技术", "type": "包含"},
+        {"source": "压缩感知", "target": "有融合中心的协作式压缩感知技术", "type": "包含"},
+        {"source": "大规模天线阵列", "target": "压缩感知", "type": "应用"},
+        {"source": "压缩感知", "target": "压缩感知在语音编码中的应用", "type": "应用"},
+        {"source": "压缩感知", "target": "压缩感知在信息隐藏中的应用", "type": "应用"},
+        {"source": "压缩感知", "target": "压缩感知在丢包补偿中的应用", "type": "应用"},
+        {"source": "无线传感网", "target": "数据融合", "type": "应用"},
+        {"source": "无线传感网", "target": "数据采集", "type": "应用"},
+        {"source": "无线传感网", "target": "数据恢复", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "压缩感知问题的背景知识", "en": "Background knowledge of compressive sensing problem"},
+        {"title": "AIC和MWC采样系统", "en": "AIC and MWC sampling systems"},
+        {"title": "信号重构算法和应用场景", "en": "Signal reconstruction algorithms and application scenarios"},
+        {"title": "基于卡尔曼迭代滤波的宽带流信号压缩感知", "en": "Compressive sensing of broadband flow signals based on Kalman iterative filtering"},
+        {"title": "卡尔曼迭代滤波的应用及其局限性", "en": "Application and limitations of Kalman iterative filtering"},
+        {"title": "自适应压缩感知算法", "en": "Adaptive compressive sensing algorithm"},
+        {"title": "稀疏度动态调整策略", "en": "Dynamic sparsity adjustment strategy"}
+    ],
+    "relations": [
+        {"source": "压缩感知问题的背景知识", "target": "AIC和MWC采样系统", "type": "包含"},
+        {"source": "AIC和MWC采样系统", "target": "信号重构算法和应用场景", "type": "包含"},
+        {"source": "信号重构算法和应用场景", "target": "基于卡尔曼迭代滤波的宽带流信号压缩感知", "type": "包含"},
+        {"source": "基于卡尔曼迭代滤波的宽带流信号压缩感知", "target": "卡尔曼迭代滤波的应用及其局限性", "type": "涉及"},
+        {"source": "基于卡尔曼迭代滤波的宽带流信号压缩感知", "target": "自适应压缩感知算法", "type": "包含"},
+        {"source": "自适应压缩感知算法", "target": "稀疏度动态调整策略", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "卡尔曼滤波", "en": "Kalman filter"},
+        {"title": "观测噪声", "en": "Observation noise"},
+        {"title": "系统噪声", "en": "System noise"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "自适应估计", "en": "Adaptive estimation"}
+    ],
+    "relations": [
+        {"source": "卡尔曼滤波", "target": "观测噪声", "type": "包含关系"},
+        {"source": "卡尔曼滤波", "target": "系统噪声", "type": "包含关系"},
+        {"source": "稀疏度", "target": "自适应估计", "type": "相关性"},
+        {"source": "观测噪声", "target": "自适应估计", "type": "影响关系"},
+        {"source": "系统噪声", "target": "自适应估计", "type": "影响关系"}
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "频谱截断",
+      "en": "Spectrum truncation"
+    },
+    {
+      "title": "信号支撑集",
+      "en": "Signal support set"
+    },
+    {
+      "title": "噪声",
+      "en": "Noise"
+    },
+    {
+      "title": "稀疏度",
+      "en": "Sparsity"
+    },
+    {
+      "title": "自适应卡尔曼滤波",
+      "en": "Adaptive Kalman filter"
+    },
+    {
+      "title": "OMP算法",
+      "en": "Orthogonal matching pursuit algorithm"
+    },
+    {
+      "title": "SEBP算法",
+      "en": "Sparse estimation based on prediction algorithm"
+    }
+  ],
+  "relations": [
+    {
+      "source": "频谱截断",
+      "target": "信号支撑集",
+      "type": "包含"
+    },
+    {
+      "source": "频谱截断",
+      "target": "噪声",
+      "type": "区分"
+    },
+    {
+      "source": "信号支撑集",
+      "target": "稀疏度",
+      "type": "关联"
+    },
+    {
+      "source": "自适应卡尔曼滤波",
+      "target": "稀疏度",
+      "type": "关联"
+    },
+    {
+      "source": "OMP算法",
+      "target": "信号支撑集",
+      "type": "计算"
+    },
+    {
+      "source": "自适应卡尔曼滤波",
+      "target": "噪声",
+      "type": "区分"
+    },
+    {
+      "source": "SEBP算法",
+      "target": "自适应卡尔曼滤波",
+      "type": "基于"
+    },
+    {
+      "source": "SEBP算法",
+      "target": "稀疏度",
+      "type": "计算"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "OMP算法", "en": "OMP algorithm"},
+        {"title": "AKF算法", "en": "AKF algorithm"},
+        {"title": "NAKF算法", "en": "NAKF algorithm"},
+        {"title": "SEBP算法", "en": "SEBP algorithm"},
+        {"title": "稀疏流信号", "en": "Sparse flow signal"},
+        {"title": "卡尔曼滤波", "en": "Kalman filter"},
+        {"title": "压缩感知算法", "en": "Compressed sensing algorithm"},
+        {"title": "噪声协方差矩阵", "en": "Noise covariance matrix"},
+        {"title": "稀疏度", "en": "Sparsity"},
+        {"title": "硬件电路实现", "en": "Hardware circuit implementation"},
+        {"title": "AD9361", "en": "AD9361"},
+        {"title": "ZC706", "en": "ZC706"},
+        {"title": "ARM双核处理器", "en": "ARM dual-core processor"},
+        {"title": "FPGA", "en": "FPGA"},
+        {"title": "SDK", "en": "Software Development Kit"}
+    ],
+    "relations": [
+        {"source": "R的提高", "target": "OMP算法", "type": "影响"},
+        {"source": "R的提高", "target": "AKF算法", "type": "影响"},
+        {"source": "NAKF算法", "target": "SEBP算法", "type": "比较"},
+        {"source": "SEBP算法", "target": "NAKF算法", "type": "比较"},
+        {"source": "稀疏流信号", "target": "卡尔曼滤波", "type": "应用"},
+        {"source": "压缩感知算法", "target": "噪声协方差矩阵", "type": "相关"},
+        {"source": "压缩感知算法", "target": "稀疏度", "type": "相关"},
+        {"source": "硬件电路实现", "target": "AD9361", "type": "使用"},
+        {"source": "硬件电路实现", "target": "ZC706", "type": "使用"},
+        {"source": "硬件电路实现", "target": "ARM双核处理器", "type": "使用"},
+        {"source": "硬件电路实现", "target": "FPGA", "type": "使用"},
+        {"source": "硬件电路实现", "target": "SDK", "type": "使用"}
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "AD9361",
+      "en": "AD9361"
+    },
+    {
+      "title": "宽带数据采集系统框架",
+      "en": "Wideband Data Acquisition System Framework"
+    },
+    {
+      "title": "LPF接口",
+      "en": "LPF Interface"
+    },
+    {
+      "title": "AXI总线",
+      "en": "AXI Bus"
+    },
+    {
+      "title": "IP核",
+      "en": "IP Core"
+    },
+    {
+      "title": "ADC",
+      "en": "ADC"
+    },
+    {
+      "title": "DMA",
+      "en": "Direct Memory Access"
+    },
+    {
+      "title": "Verilog语言",
+      "en": "Verilog Language"
+    },
+    {
+      "title": "C语言",
+      "en": "C Language"
+    },
+    {
+      "title": "服务器客户端模式",
+      "en": "Server-Client Mode"
+    },
+    {
+      "title": "UI接口",
+      "en": "UI Interface"
+    }
+  ],
+  "relations": [
+    {
+      "source": "AD9361",
+      "target": "LPF接口",
+      "type": "连接"
+    },
+    {
+      "source": "LPF接口",
+      "target": "AXI总线",
+      "type": "连接"
+    },
+    {
+      "source": "AXI总线",
+      "target": "IP核",
+      "type": "连接"
+    },
+    {
+      "source": "IP核",
+      "target": "ADC",
+      "type": "集成"
+    },
+    {
+      "source": "ADC",
+      "target": "DMA",
+      "type": "数据传输"
+    },
+    {
+      "source": "DMA",
+      "target": "UI接口",
+      "type": "数据传输"
+    },
+    {
+      "source": "Verilog语言",
+      "target": "FPGA部分",
+      "type": "设计"
+    },
+    {
+      "source": "C语言",
+      "target": "ARM处理器",
+      "type": "编程"
+    },
+    {
+      "source": "服务器客户端模式",
+      "target": "数据传输",
+      "type": "实现"
+    },
+    {
+      "source": "UI接口",
+      "target": "服务器",
+      "type": "交互"
+    }
+  ]
+}{
+  "knowledge_points": [
+    {"title": "远程宽带数据采集系统", "en": "Remote broadband data acquisition system"},
+    {"title": "压缩感知", "en": "Compressive sensing"},
+    {"title": "MWC结构", "en": "MWC structure"},
+    {"title": "混频模式", "en": "Mixing mode"},
+    {"title": "奈奎斯特带宽", "en": "Nyquist bandwidth"},
+    {"title": "稀疏度", "en": "Sparsity"},
+    {"title": "伪随机序列", "en": "Pseudo-random sequence"},
+    {"title": "功分器", "en": "Power splitter"},
+    {"title": "宽带混频器", "en": "Broadband mixer"},
+    {"title": "低通滤波器", "en": "Low-pass filter"},
+    {"title": "ADC", "en": "Analog-to-digital converter"},
+    {"title": "FMC接口", "en": "FMC interface"},
+    {"title": "电源系统", "en": "Power system"},
+    {"title": "单极性转双极性电路", "en": "Unipolar to bipolar conversion circuit"},
+    {"title": "Altium Designer", "en": "Altium Designer"}
+  ],
+  "relations": [
+    {"source": "远程宽带数据采集系统", "target": "压缩感知", "type": "应用"},
+    {"source": "远程宽带数据采集系统", "target": "MWC结构", "type": "基础"},
+    {"source": "MWC结构", "target": "混频模式", "type": "基础"},
+    {"source": "MWC结构", "target": "奈奎斯特带宽", "type": "基础"},
+    {"source": "MWC结构", "target": "稀疏度", "type": "基础"},
+    {"source": "MWC结构", "target": "伪随机序列", "type": "基础"},
+    {"source": "模拟射频输入端到低通滤波器输出部分", "target": "功分器", "type": "组成部分"},
+    {"source": "模拟射频输入端到低通滤波器输出部分", "target": "宽带混频器", "type": "组成部分"},
+    {"source": "模拟射频输入端到低通滤波器输出部分", "target": "低通滤波器", "type": "组成部分"},
+    {"source": "ADC电路部分", "target": "ADC", "type": "组成部分"},
+    {"source": "单极性转双极性电路部分", "target": "单极性转双极性电路", "type": "组成部分"},
+    {"source": "FMC接口部分", "target": "FMC接口", "type": "组成部分"},
+    {"source": "电源部分", "target": "电源系统", "type": "组成部分"},
+    {"source": "Altium Designer", "target": "原理图设计", "type": "工具"},
+    {"source": "Altium Designer", "target": "PCB设计", "type": "工具"}
+  ]
+}{
+  "knowledge_points": [
+    {"title": "ADP7104ARDZ", "en": "ADP7104ARDZ"},
+    {"title": "LMR70503", "en": "LMR70503"},
+    {"title": "模拟射频输入端到低通滤波器输出部分设计", "en": "Design of analog RF input to low-pass filter output section"},
+    {"title": "功分器", "en": "Power splitter"},
+    {"title": "混频器", "en": "Mixer"},
+    {"title": "ADC电路部分设计", "en": "Design of ADC circuit section"},
+    {"title": "双通道ADC", "en": "Dual-channel ADC"},
+    {"title": "AD7356", "en": "AD7356"},
+    {"title": "单极性转双极性电路部分设计", "en": "Design of single-polarity to bipolar circuit section"},
+    {"title": "FMC接口部分设计", "en": "Design of FMC interface section"},
+    {"title": "PCB设计", "en": "PCB design"},
+    {"title": "非混频宽带压缩感知", "en": "Non-mixer broadband compressive sensing"},
+    {"title": "多路分时延的采样结构", "en": "Multi-channel time-delay sampling structure"}
+  ],
+  "relations": [
+    {"source": "ADP7104ARDZ", "target": "LMR70503", "type": "转换器"},
+    {"source": "模拟射频输入端到低通滤波器输出部分设计", "target": "功分器", "type": "分配信号"},
+    {"source": "模拟射频输入端到低通滤波器输出部分设计", "target": "混频器", "type": "混频"},
+    {"source": "ADC电路部分设计", "target": "双通道ADC", "type": "采样"},
+    {"source": "双通道ADC", "target": "AD7356", "type": "芯片"},
+    {"source": "AD7356", "target": "单极性转双极性电路部分设计", "type": "转换"},
+    {"source": "FMC接口部分设计", "target": "PCB设计", "type": "连接"},
+    {"source": "非混频宽带压缩感知", "target": "多路分时延的采样结构", "type": "采样方式"}
+  ]
+}{
+  "knowledge_points": [
+    {"title": "时域延迟对应频域旋转因子", "en": "Time domain delay corresponds to frequency domain rotation factor"},
+    {"title": "奈奎斯特采样速率", "en": "Nyquist sampling rate"},
+    {"title": "混叠", "en": "Alias"},
+    {"title": "多路时延采样结构", "en": "Multi-path time-delay sampling structure"},
+    {"title": "宽带信号压缩感知", "en": "Wideband signal compressed sensing"},
+    {"title": "稀疏性", "en": "Sparsity"},
+    {"title": "优化问题", "en": "Optimization problem"},
+    {"title": "最小代价宽带感知方案", "en": "Minimum cost wideband sensing scheme"}
+  ],
+  "relations": [
+    {"source": "时域延迟对应频域旋转因子", "target": "奈奎斯特采样速率", "type": "related"},
+    {"source": "奈奎斯特采样速率", "target": "混叠", "type": "related"},
+    {"source": "多路时延采样结构", "target": "宽带信号压缩感知", "type": "related"},
+    {"source": "宽带信号压缩感知", "target": "稀疏性", "type": "related"},
+    {"source": "优化问题", "target": "最小代价宽带感知方案", "type": "related"}
+  ]
+}{
+    "knowledge_points": [
+        {
+            "title": "低速频点组合",
+            "en": "Low-speed frequency point combination"
+        },
+        {
+            "title": "联合方程组",
+            "en": "Joint equation group"
+        },
+        {
+            "title": "不可求解概率",
+            "en": "Probability of unsolvability"
+        },
+        {
+            "title": "ADC",
+            "en": "Analog-to-digital converter"
+        },
+        {
+            "title": "稀疏度",
+            "en": "Sparsity"
+        },
+        {
+            "title": "容忍门限",
+            "en": "Tolerance threshold"
+        },
+        {
+            "title": "优化问题",
+            "en": "Optimization problem"
+        },
+        {
+            "title": "约束方程",
+            "en": "Constraint equation"
+        },
+        {
+            "title": "二分法",
+            "en": "Binary search"
+        }
+    ],
+    "relations": [
+        {
+            "source": "低速频点组合",
+            "target": "联合方程组",
+            "type": "包含"
+        },
+        {
+            "source": "联合方程组",
+            "target": "不可求解概率",
+            "type": "关联"
+        },
+        {
+            "source": "ADC",
+            "target": "稀疏度",
+            "type": "包含"
+        },
+        {
+            "source": "ADC",
+            "target": "容忍门限",
+            "type": "包含"
+        },
+        {
+            "source": "优化问题",
+            "target": "约束方程",
+            "type": "包含"
+        },
+        {
+            "source": "约束方程",
+            "target": "ADC",
+            "type": "依赖"
+        },
+        {
+            "source": "约束方程",
+            "target": "稀疏度",
+            "type": "依赖"
+        },
+        {
+            "source": "约束方程",
+            "target": "容忍门限",
+            "type": "依赖"
+        },
+        {
+            "source": "二分法",
+            "target": "ADC",
+            "type": "依赖"
+        },
+        {
+            "source": "二分法",
+            "target": "稀疏度",
+            "type": "依赖"
+        },
+        {
+            "source": "二分法",
+            "target": "容忍门限",
+            "type": "依赖"
+        }
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "基于稀疏表示的宽带信号监测算法",
+      "en": "Wideband Signal Monitoring Algorithm Based on Sparse Representation"
+    },
+    {
+      "title": "二分搜索算法",
+      "en": "Binary Search Algorithm"
+    },
+    {
+      "title": "ADC价格方案",
+      "en": "ADC Price Plan"
+    },
+    {
+      "title": "最小代价方案",
+      "en": "Minimum Cost Plan"
+    }
+  ],
+  "relations": [
+    {
+      "source": "基于稀疏表示的宽带信号监测算法",
+      "target": "二分搜索算法",
+      "type": "属于"
+    },
+    {
+      "source": "基于稀疏表示的宽带信号监测算法",
+      "target": "ADC价格方案",
+      "type": "涉及"
+    },
+    {
+      "source": "ADC价格方案",
+      "target": "AnalogDevice公司的釆样率位于［3.33MSPS,1GMSPS］内的ADC",
+      "type": "包含"
+    },
+    {
+      "source": "最小代价方案",
+      "target": "基于稀疏表示的宽带信号监测算法",
+      "type": "涉及"
+    },
+    {
+      "source": "最小代价方案",
+      "target": "ADC价格方案",
+      "type": "涉及"
+    }
+  ]
+}{
+  "knowledge_points": [
+    {
+      "title": "稀疏度和容忍门限模型",
+      "en": "Sparsity and Tolerance Threshold Model"
+    },
+    {
+      "title": "ADC",
+      "en": "Analog-to-Digital Converter"
+    },
+    {
+      "title": "压缩采样",
+      "en": "Compressive Sampling"
+    },
+    {
+      "title": "感知",
+      "en": "Perception"
+    },
+    {
+      "title": "支路数",
+      "en": "Number of Branches"
+    },
+    {
+      "title": "采样率",
+      "en": "Sampling Rate"
+    },
+    {
+      "title": "总代价",
+      "en": "Total Cost"
+    }
+  ],
+  "relations": [
+    {
+      "source": "稀疏度和容忍门限模型",
+      "target": "ADC",
+      "type": "应用"
+    },
+    {
+      "source": "ADC",
+      "target": "压缩采样",
+      "type": "实现"
+    },
+    {
+      "source": "压缩采样",
+      "target": "感知",
+      "type": "实现"
+    },
+    {
+      "source": "支路数",
+      "target": "采样率",
+      "type": "影响"
+    },
+    {
+      "source": "采样率",
+      "target": "总代价",
+      "type": "影响"
+    },
+    {
+      "source": "支路数",
+      "target": "总代价",
+      "type": "影响"
+    }
+  ]
+}{
+  "knowledge_points": [
+    {"title": "宽带信号压缩感知技术", "en": "Wideband signal compressive sensing technology"},
+    {"title": "噪声和稀疏度自适应感知的卡尔曼迭代重构算法", "en": "Kalman iterative reconstruction algorithm with noise and sparsity adaptive sensing"},
+    {"title": "基于AD9361和ZC706的远程宽带数据采集系统", "en": "Remote wideband data acquisition system based on AD9361 and ZC706"},
+    {"title": "MWC结构的宽带信号压缩感知电路设计与实现", "en": "Design and implementation of wideband signal compressive sensing circuit based on MWC structure"},
+    {"title": "非混频模式下的经济型压缩感知系统", "en": "Economical compressive sensing system under non-mixing mode"}
+  ],
+  "relations": [
+    {"source": "宽带信号压缩感知技术", "target": "噪声和稀疏度自适应感知的卡尔曼迭代重构算法", "type": "包含"},
+    {"source": "宽带信号压缩感知技术", "target": "基于AD9361和ZC706的远程宽带数据采集系统", "type": "应用"},
+    {"source": "宽带信号压缩感知技术", "target": "MWC结构的宽带信号压缩感知电路设计与实现", "type": "应用"},
+    {"source": "宽带信号压缩感知技术", "target": "非混频模式下的经济型压缩感知系统", "type": "应用"},
+    {"source": "噪声和稀疏度自适应感知的卡尔曼迭代重构算法", "target": "MWC结构的宽带信号压缩感知电路设计与实现", "type": "应用"},
+    {"source": "基于AD9361和ZC706的远程宽带数据采集系统", "target": "MWC结构的宽带信号压缩感知电路设计与实现", "type": "应用"},
+    {"source": "非混频模式下的经济型压缩感知系统", "target": "MWC结构的宽带信号压缩感知电路设计与实现", "type": "应用"}
+  ]
+}{
+  "knowledge_points": [
+    {"title": "随机调制模拟到信息转换", "en": "Analog-to-information conversion via random demodulation"},
+    {"title": "稀疏宽带模拟信号的亚奈奎斯特采样", "en": "Sub-Nyquist sampling of sparse wideband analog signals"},
+    {"title": "AD9361 数据手册", "en": "AD9361 datasheet"},
+    {"title": "ZC706 评估板用户指南", "en": "ZC706 evaluation board user guide"},
+    {"title": "分布式压缩感知", "en": "Distributed compressed sensing"},
+    {"title": "1比特压缩感知", "en": "1-Bit compressed sensing"},
+    {"title": "近似贝叶斯压缩感知", "en": "Approximate Bayesian compressed sensing"},
+    {"title": "正交匹配追踪", "en": "Orthogonal matching pursuit"},
+    {"title": "基 Pursuit 算法", "en": "Basis pursuit algorithm"},
+    {"title": "CoSaMP 算法", "en": "CoSaMP algorithm"},
+    {"title": "稀疏度自适应子空间追踪算法", "en": "Sparse degree adaptive subspace tracking algorithm in compressed sampling"},
+    {"title": "Ghz 宽带感知和解码", "en": "Ghz-wide sensing and decoding"},
+    {"title": "压缩感知中的受限等距性质", "en": "The restricted isometry property and its implications for compressed sensing"}
+  ],
+  "relations": [
+    {"source": "随机调制模拟到信息转换", "target": "稀疏宽带模拟信号的亚奈奎斯特采样", "type": "相关"},
+    {"source": "稀疏宽带模拟信号的亚奈奎斯特采样", "target": "AD9361 数据手册", "type": "相关"},
+    {"source": "稀疏宽带模拟信号的亚奈奎斯特采样", "target": "ZC706 评估板用户指南", "type": "相关"},
+    {"source": "分布式压缩感知", "target": "1比特压缩感知", "type": "相关"},
+    {"source": "分布式压缩感知", "target": "近似贝叶斯压缩感知", "type": "相关"},
+    {"source": "正交匹配追踪", "target": "基 Pursuit 算法", "type": "相关"},
+    {"source": "正交匹配追踪", "target": "稀疏度自适应子空间追踪算法", "type": "相关"},
+    {"source": "基 Pursuit 算法", "target": "CoSaMP 算法", "type": "相关"},
+    {"source": "Ghz 宽带感知和解码", "target": "压缩感知中的受限等距性质", "type": "相关"}
+  ]
+}{
+  "knowledge_points": [
+    {"title": "基于压缩感知的自适应卡尔曼滤波", "en": "Adaptive Kalman Filtering Based on Compressed Sensing"},
+    {"title": "压缩感知", "en": "Compressed Sensing"},
+    {"title": "宽带认知无线电", "en": "Wide-Band Cognitive Radio"},
+    {"title": "基于块的压缩感知方法", "en": "Block-Based Compressed Sensing Method"},
+    {"title": "稀疏恢复", "en": "Sparse Recovery"},
+    {"title": "贝叶斯分析", "en": "Bayesian Analysis"},
+    {"title": "自适应卡尔曼滤波", "en": "Adaptive Kalman Filtering"},
+    {"title": "精确信号重构", "en": "Exact Signal Reconstruction"},
+    {"title": "鲁棒不确定性原理", "en": "Robust Uncertainty Principles"},
+    {"title": "以太网被动光网络", "en": "Ethernet Passive Optical Networks"},
+    {"title": "子奈奎斯特采样", "en": "Sub-Nyquist Sampling"},
+    {"title": "宽带频谱感知", "en": "Wideband Spectrum Sensing"},
+    {"title": "硬件原型", "en": "Hardware Prototype"}
+  ],
+  "relations": [
+    {"source": "基于压缩感知的自适应卡尔曼滤波", "target": "压缩感知", "type": "属于"},
+    {"source": "压缩感知", "target": "宽带认知无线电", "type": "应用于"},
+    {"source": "基于块的压缩感知方法", "target": "压缩感知", "type": "属于"},
+    {"source": "稀疏恢复", "target": "压缩感知", "type": "相关"},
+    {"source": "贝叶斯分析", "target": "压缩感知", "type": "相关"},
+    {"source": "自适应卡尔曼滤波", "target": "压缩感知", "type": "相关"},
+    {"source": "精确信号重构", "target": "鲁棒不确定性原理", "type": "基于"},
+    {"source": "精确信号重构", "target": "压缩感知", "type": "基于"},
+    {"source": "鲁棒不确定性原理", "target": "压缩感知", "type": "相关"},
+    {"source": "以太网被动光网络", "target": "宽带认知无线电", "type": "应用于"},
+    {"source": "子奈奎斯特采样", "target": "宽带频谱感知", "type": "相关"},
+    {"source": "硬件原型", "target": "子奈奎斯特采样", "type": "应用于"},
+    {"source": "硬件原型", "target": "宽带频谱感知", "type": "应用于"}
+  ]
+}{
+    "knowledge_points": [
+        {"title": "MichaeliT,EldarYCXamplingattherateofinnovationfJ]SignalProcessing,IEEETransactionson,2012,60(3):1121-1133.", "en": ""},
+        {"title": "Altium Designer教程:原理图,PCB设计与仿真[M],电于工业出版社,2014.", "en": ""},
+        {"title": "多层高速PCB通孔分析与设计卩].遥测遥控,2015(2).", "en": ""},
+        {"title": "SeelamRI/OdesignflexibilitywiththeFPGAmezzaninecard(FMC)[J],XilinxWhitePaperWP315,2009.", "en": ""},
+        {"title": "ADP7104线性稳压器产品评估套件", "en": ""},
+        {"title": "LMR70503产品文档", "en": ""}
+    ],
+    "relations": [
+        {"source": "Altium Designer教程:原理图,PCB设计与仿真[M],电于工业出版社,2014.", "target": "多层高速PCB通孔分析与设计卩].遥测遥控,2015(2).", "type": "相关"},
+        {"source": "SeelamRI/OdesignflexibilitywiththeFPGAmezzaninecard(FMC)[J],XilinxWhitePaperWP315,2009.", "target": "Altium Designer教程:原理图,PCB设计与仿真[M],电于工业出版社,2014.", "type": "相关"},
+        {"source": "ADP7104线性稳压器产品评估套件", "target": "LMR70503产品文档", "type": "相关"}
+    ]
+}

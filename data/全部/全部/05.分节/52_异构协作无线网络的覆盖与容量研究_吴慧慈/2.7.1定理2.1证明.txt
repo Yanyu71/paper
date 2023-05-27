@@ -1,0 +1,62 @@
+2.7.1定理2.1证明
+分析SE之前，引出如下引理。
+N	M
+引理2.1设置乂/?.,初”1〉...）加为任意非负随机变量，令x = ￡ xn, y= ￡為。则 n=1	m=1
+E In （1 + 庁）=J,+X）e3,	（2-29）
+其中乌（f） = IE [e~tA]是随机变量A的Laplace变换函数。
+证明：详细证明请见文献[24]o	□
+根据引理2.1,典型MU的SE为:
+其中（c）是由于ASS和AIS之间相互独立。（①是由于保留的MBS和SBS建模为独 立的HPPPo根据点过程的Laplace泛函，变量&的Laplace变换为： 其中(e)跟根据 HPPP 的概率生成泛函(Probability generating functional, PGFL)冋。
+（/）是根据小区负载灼的分布。由于力~ Gamma（M 一灯，1）, E力
+据此，WH'）可重新表达为:
+(2-32)
+类似的，根据公式（2-11）, S.的Laplace变换为:
+勺	K-)-\	p\
+?^sv (z) —exp<	I 1 -(P2,K2+(1-P2A2) 0(1-门))「2*2+所 e 右
+b L	*2=0
+\~^^2%2a2 ￡ P2,k2+l f 1 -	6
+[	k2=0	\	\
+(2-33)
+其中（/?）是因为合法SBS以概率P2A2 + （1 — P2A2） 0（1 — 〃）不参与协作。知=1 —q + qq是一个两点SBS簇内合法SBS处于安全状态的概率。
+由于来自区域绍（。,为）之内和之外的MBS的累积干扰信号相互独立，Im的 Laplace转换可计算如下。
+%（'）= E頌“即带］巳做何-"］,
+(2-34)
+(2-35)
+OO
+旧队广少]=exp\ -2兀彳J
+Z1
+—利(圮"))'、(/静1,*”1)}
+(2-36)
+其中（/）是根据h{ 2 Gamma （砰,1）得到。
+类似的，4的Laplace变换可表达为气（t） = E*何-，知］吳皿［厂《，。叫，其中
+电,泌叫”］=exp {-戒砂（1 -g +刊）p2,K2 （1 -缪（弥2,斜））}，	（2'37）
+改函= exp {-兀徵1 一 q + g"(讷"))羽(芥2”2,*，顷)} .	(2-38)
+将公式(2-32), (2-33)和(2-35)-(2-38)带入公式(2-30), SE可得到如公式(2-15)。
+参考文献
+[1]Wang H, Zhou X, Reed M C. Coverage and throughput analysis with a non-uniform small cell deployment^]. IEEE Transactions on Signal Processing, 2014, 13⑷：2047-2059.
+[2]Mirahsan M, Schoenen R, Yanikomeroglu H. HetHetNets: Heterogeneous traffic distribution in heterogeneous wireless cellular networks]}]. IEEE J. Sei. Areas Commun., 2015, 33(10): 2252— 2265.
+[3]Lee D, Seo H, Clerckx B, et al. Coordinated multipoint transmission and reception in LTE-advanced: deployment scenarios and operational challenges[J]. IEEE Communication Magazine, 2012, 50(2): 148-155.
+[4]Ling J, ChizhikD, Chen C S, et aL Capacity growth of heterogeneous cellular networks[J]. Bell Labs Technical Journal, 2013, 18(1): 27-40.
+[5]Nigam G, Minero P, Haenggi M. Spatiotemporal Cooperation in Heterogeneous Cellular Networks! J]. IEEE J. Sei. Areas Commun., 2015, 33(6): 2142—2180.
+[6]Peng M, Xie X, Hu Q, et al. Contract-Based Interference Coordination in Heterogeneous Cloud Radio Access Networks[J]. IEEE J. SeL Areas Commun., 2015, 33(6): 1140-1153.
+[7]Tanbourgi R, Singh S, Andrews J G, et al. A Tractable Model for Noncoherent Joint-Transmission Base Station Cooperation]〕], IEEE Transactions on Wireless Communications, 2014, 13(9): 49594973.
+[8]Nie W, Zheng F C, Wang X, et al. User-Centric Cross-Tier Base Station Clustering and Cooperation in Heterogeneous Networks: Rate Improvement and Energy SavingfJ]. IEEE J. SeL Areas Commun., 2016,34(5): 1192—1206.
+[9]Jaramillo-Ram rez D, Kountouris M, Hardouin E. Coordinated Multi-Point Transmission With Imperfect CSI and Other-Cell Interference[J]. IEEE Transactions on Wireless Communications, 2015, 14(4):【882-1.896.
+[10]Sakr A H, Hossain E. Location-Aware Cross-Tier Coordinated Multipoint Transmission in Two-Tier Cellular Networks[J]. IEEE Transactions on Wireless Communications, 2014, 13(11): 6311—6325.
+[11]Nigam G, Minero R Haenggi M. Coordinated Multipoint Joint Transmission in Heterogeneous Net- works[J]. IEEE Transactions on Communications, 2014, 62(11): 4134-4146.
+[12]Yang N, Wang L F, Geraci G, et al. Safeguarding 5G Wireless Communication Networks Using Physical Layer SecurityfJ]. IEEE Communication Magazine, 2015, 34(2): 20-27.
+[13]Conti M, Dragoni N, Lesyk V. A Survey of Man In The Middle Attacks [J]. IEEE Communications Surveys & Tutorials, 2016, 18(3): 2027-2051.
+[14]Wasef A, Lu R, Lin X, et al. Complementing Public Key Infrastructure to Secure Vehicular AD Hoc Networks[J]. IEEE Wireless Communications, 2010, 17(5): 22-28.
+[15]Haenggi M. Mean Interference in Hard-Core Wireless Networks卩].IEEE Communication Letters, 2011, 15(8): 792-794.
+[16]Ibrahim A M, EIBatt T, El-Keyi A. Coverage probability analysis for wireless networks using repulsive point processes[A]. // IEEE International Symposiuin on Personal Indoorand Mobile Radio Communications (P1MRC)[C]. London, UK: IEEE, 2013: 1002-1007.
+[17]Haenggi M. Stochastic Geometry for Wireless Networks[M]. Cambridge, U.K.: Cambridge Univ. Press, 2012.
+[18]Jindal N, Andrews J G, Weber S. Multi-Antenna Communication in Ad Hoc Networks: Achieving MIMO Gains with SIMO Transmission[J]. IEEE Transactions on Communications, 2011, 59(2): 529-540.
+[19]Li C, Zhang J, Andrews J G, et al. Success Probability and Area Spectral Efficiency in Multiuser MIMO HetNets[J]. IEEE Trans. Commun, 2016, 64(4): 1544-1556.
+[20]Mukheijee A, Fakoorian S A A, Huang J, et aL Principles of physical layer security in multiuser wireless networks: A survey [J]. IEEE Communications Surveys & Tutorials, 2014, 16(3): 15501573.
+[21]Guo A, Zhong Y, Zhang W, et al. The Gauss-Poisson Process fbr Wireless Networks and the Benefits of CooperationfJ]. IEEE Transactions on Communications, 2016, 64(5): 1916-1929.
+[22]Heath R, Wu T, Kwon Y H, et al. Multiuser MIMO in distributed antenna systems with out-of-cell interference[J], IEEE Trans. Commun, 2011,59(10): 4885-4899.
+[23]Hosseini K, Yu W> Adve R. Large-scale MIMO versus network MIMO for multicell interference mitigation]!]. IEEE J? Sei. Topics Signal Process., 2014, 8(5): 930-941.
+[24]Ham di K A. A Useful Lemma for Capacity Analysis of Fading Interference Channels]!]. IEEE Transactions on Communications, 2010, 58(2): 41 IT 16.
+[25]Gradshteyn S5 Ryzhik IM. Table of Integrals, Series, and Products[M]. New York: Academic Press, 2000.
+第三章 支持缓存与能量收集技术的HetNets基站协作覆盖与容量务析
+HetNets中引入缓存技术和EH技术，异构BS协调与协作需根据BS能量状态 和内容缓存匹配状态动态调整。本章进一步研究和分析1 +K层HetNets的异构BS 协调与协作传输。MBS为MU提供最基本的连接覆盖，K层由收集的能量驱动的异 构SBS提供基于内容感知和信道资源感知的协作传输来进一步提高网络传输速率和 网络覆盖。基于随机几何建模和分析异构协作传输的覆盖与传输速率。

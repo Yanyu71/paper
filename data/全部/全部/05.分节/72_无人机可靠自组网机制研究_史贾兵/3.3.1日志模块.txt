@@ -1,0 +1,24 @@
+3.3.1日志模块
+在NS-3开发中想要获取调试信息、警告信息、、错误信息或者其他信息，日 志模块可以给你带来便利。NS-3日志模块提供了一个直观的、相对简单的方法 来获取仿真过程中的有用信息。在NS-3中，在不同情景下可以根据需要选择不 同级别的日志，这样可以更高效，清晰的查看目标日志而不去关心其他日志，使 编程仿真更有层次感。例如可以完全禁用日志、仅对部分组件可用、或者全局可 用。NS-3将日志分为七个级别，以下按照递增的顺序进行说明。
+NS_LOG ERROR-Log error messages.记录错误信息
+NS_LOG_WARN--Log warning messgaes.记录警告信息
+NS_LOG_DEBUG-Log relatively rare, ad-hoc debugging messages.记录相
+对不常见ad-hoc的调试信息
+19
+NS_LOG_INFO--Log informational messages about program progress, t己录
+程序进展信息
+NS_LOG_FUNCTION-Log a message describing each function called.记录
+描述每个调用函数信息
+NS LOG LOGIC-Log messages describing logical flow within a function.
+记录一个函数内描述逻辑流程的信息
+NS_LOG_ALL—'—Log everything mentioned above.记录所有信息
+此外，还有一种经常被使用的无条件日志级别，与日志级别或者组件选择没 有关系。
+NS_LOG_UNCOND---Log theassociated message unconditionally.无条件记
+录相关消息
+日志的使用可以通过shell命令行设置，也可以通过代码设置。
+命令行设置：
+$export
+'NS_LOG=UdpEchoClientApplication=level_all|prefix_fi.mc|prefix_time:UdpEchoSe rverApplicatin =level_all |prefix_func|prefix_time'设置 shell 环境变量 NS LOG 为 字符串：多组件时，组件之间用冒号（：）隔开。
+UdpEchoClientApplication=level_all|prefix_func|prefix_time 等号左边：想要设 置的日志组件名称。等号右边：要用的日志级别，输出多信息时用单杠（|）隔开。 改变环境变量后，可以通过$ export -p列出所有的shell赋予程序的环境变量， 查看NS_LOG级别是否改变。
+代码设置：
+LogComponentEnable（"UdpEchoClientAppli cation",LOG_LEVEL_INFO）;包 含两个参数，第一个参数为组件名称，第二个参数为日志级别。设置日志级别为 LOG_LEVEL_INFO,当传递一个日志标志时，实际上打开了该级别及其以下的 所有级别。所以，这行代码表示打开了 NS_LOG_INFO, NS_LOG_DEBUG, NS_LOG_WARN, NS_LOG_ERRORo

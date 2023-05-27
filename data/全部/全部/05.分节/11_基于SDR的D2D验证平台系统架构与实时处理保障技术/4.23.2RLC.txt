@@ -1,0 +1,13 @@
+4.23.2RLC
+RLCRX工作在链路的接收端，对下接收来自MAC层的数据，根据RLC的 序号机制完成超时检测和乱序重排；对上将数据进行分割级联和PDU解包，将数 据还原成完整的IP数据包递交给高层。其提供的主要函数接口如下：
+表4-7 RLC RX主要接口
+函数接口定义
+reassemble。
+commit(const char *mac sdu, const int size)
+schedule()
+RLC RX的commit。函数由MAC的数据上报触发。RLC RX通过commitQ 接口与MAC层对接，接收来自MAC的SDU,并根据RLC帧号和其来源将其放 入相应的RLC RX的重排队列。如果重排队列中没有需要等待的RLC帧，则准备 进行数据上报。如果重排队列中新出现了需要等待的RLC帧，则启动重排定时器。
+37
+RLCRX的schedule。函数由Heartbeat消息在系统的每个时钟周期触发。RLC RX通过schedule。接口检查RLC RX的重排定时器是否超时。若定时器已超时， 则认为重排窗口中最左侧的RLC帧已丢失，将重排窗口前移,并关闭重排定时器。 若移动后的重排队列中没有需要等待的RLC帧，则准备进行数据上报，否则重新 启动重排定时器。
+RLC RX的reassemble。函数可以由commit。函数和schedule()函数调用。 reassemble。函数实现数据包的拆分和重组，去掉RLCPDU的包头，将数据还原 为IP数据包并提交给高层。其详细机制与ETE中的RLC协议相同。
+RLC RX接口的功能如图4-8所示。
+图4-8 RLCRX接口功能示意图

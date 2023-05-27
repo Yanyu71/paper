@@ -1,0 +1,2 @@
+3.2GASGAATFET的基本特性
+前面一节主要研究了错层硅层厚度对GASGAATFET性能的影响，并最终得 出了错层厚度为6nm的GAS GAA TFET器件的性能最有优秀的结论，本节从转 移特性、亚阈值斜率、带带隧穿概率等方面进行探讨，研究错层厚度6mn的GAS GAA TFET、Si GAA TFET和Ge-source GAA TFET三种器件的电学特性及对应的 物理机理，探究错环绕源极结构影响TFETs性能的关键因素。

@@ -1,0 +1,21 @@
+3.2.3PDCCH盲解码算法的性能
+本节对3.2.2节中算法进行了性能仿真。仿真的系统带宽是20M,发送、接 收天线数都为1,信道类型为EVA,多普勒频移为5Hz,仿真次数是1000次。 为了验证算法对于各种高聚合等级PDCCH的解码性能，设计了表3-4中的多种 聚合等级及DCI长度组合的测试caseo
+Case类别	Case编号	解码CCE
+数目	（实际CCE数， 实际DCI比特数）	盲解码比特数
+case 11	Casell.l	(8,4,2)	(8,13)	全部解码可能
+表3-4聚合等级为2/4/8的PDCCH盲解码仿真case表
+在3.2.2小节中的算法在各case中的性能如图3-5至图3-7所示。
+图3-5 Casell解码性能仿真图
+Pdcch decode simulation result of Case 12
+(％￥)￡」0」」LLIO^OOOQ
+SNR/dB
+图3-6 Case 12解码性能仿真图
+Pdcch decode simulation result of Case 13
+Case 13-1
+4— Case 13-2
+0— Case 13-3
+Case 13-4 ■★— Case 13-5 气—Case 13-6
+(次)① 」0匕山CDpootDQ
+SNR/dB
+图3-7 Case 13解码性能仿真图
+从上面的仿真结果可以看出，在相同的信噪比下，聚合等级越高，DCI比特 数越少则解码错误率越小。承载了上行调度信息的DCI format 0的长度是31比 特，这种DCI format能到达1%错误率的信噪比在聚合等级为8时是-3dB、聚合 等级为4时是-IdB、聚合等级为2时是3dB左右。

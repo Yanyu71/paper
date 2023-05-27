@@ -1,0 +1,60 @@
+3.1.1LTE接入层注册流程的实现
+前文提到，测试例执行过程中涉及到端口的映射，EUTRA_PTC中定义了部 分端口，主要包括空中信令端口和本端配置端口，空中信令端口，简称为空口， 负责发送消息和配置到终端。本端配置端口负责发送消息和配置到本地仪表底层, 通知其修改配置。
+空口端口主要指SRB （Signaling Radio Bearer,信令无线承载），在上行链路 中，SRB端口接收终端发送的SRB_COMMOM_IND类型的RRC层和非接入层 消息。如果接收的是非接入层消息，则要先经过NAS_EMU_PTC进行解密处理， 然后再传到EUTRA_PTC处理。在下行链路中，系统通过SRB端口发送 SRB_COMMON_REQ信令，同样的，如果发送的是非接入层消息，则需要先经 过NAS_EMU_PTC进行加密和完整性保护。
+本端配置端口主要包括DRV_A、SYS和SYSIND。其中DRV_A是驱动端 口，上行链路中，低层数据处理模块通过该端口将L3_DRV_A_IND发送到高层 协议栈实体，下行链路中，负责传输L3_DRV_A_REQ到数据处理模块，使得低 层配置按照RRC要求更新。SYS在上行链路中传输SYSTEM_CTRL_CNF到高 层协议栈实体以确认本端配置完成。下行链路中,高层协议栈通过该端口发送
+SYSTEM_CTRL_REQ通知低层更新配置。SYS只能用于上行链路中，低层模块 通过该端口传输SYSTEM_IND以指示低层状态。
+测试例接入层实现的流程以及部分TTCN-3代码如下图3-1所示:
+TD-LTE业务
+测试仪
+终端
+终端发起注册
+等待终端注册
+RRC CONNECTION REQUEST
+RRC CONNECTION SETUP
+RRC CONNECTION SETUP COMPLETE
+(携带NAS消息附着请求和PDN连接请求)
+-AUTHENTICATION REQUEST	? -AUTHENTICATION RESPONSE	 -SECURITY MODE COMMAND	? -SECURITY MODE COMPLETE	 ——接入层安全模式命令	? ——接入层安全模式完成
+RRC CONNECTION RECONFIGURATION SETUP-
+-RRC CONNECTION RECONFIGURATION COMPLETE-
+完成附着并且激活默认EPS承载-
+EUTRA注册完
+成终端注册
+触发终端发起
+VoLTE业务
+图3-1	接入层实现流程图
+测试例接入层实现包含两个过程，即EUTRA小区建立及激活过程和终端注 册过程。详细流程如下：
+1.EUTRA小区建立及激活过程
+小区建立及激活过程中主要是根据协议3GPPTS36.508初始化小区。首先调 用 TTCN-3 函数 CEUTRAJnit (),然后调用函数 fLEUTRA_CellConfig_Def () 实现SRB (信令无线承载)、DRB (Data Radio Bearer,数据无线承载)以及信 道的配置。该函数在实现过程中调用下面三个函数，分别为：
+f^EUTRA_SS_ConfigureActiveCell ()；
+CEUTRA_SS_DRB_DefConfig ();
+LEUTRA_SS_ConfigureSRBs ()；
+其中，函数CEUTRA_SS_ConfigureActiveCell ()实现协议栈中各层模块的初 始化配置，函数f_EUTRA_SS_DRB_DefConfig ()实现了 DRB (数据无线承载) 的配置，而SRB配置则由第三个函数f_EUTRA_SS_ConfigureSRBs ()实现。
+小区建立过程如下面的图3-2所示。
+图3-2 小区建立及激活流程图
+EUTRA注册流程的实现
+小区建立及激活完成之后，会通过空口发送广播消息。此时，手动或者使用
+AT+FUN指令打开终端，终端开机后会发起注册流程。整个过程的协议流程可以
+参考3GPPTS36.523-1,为了代码的可读性，测试例实现过程函数命名与协议一 致。如图3.1所示，EUTRA注册流程还可以分为三个阶段，即RRC连接建立过 程，NAS鉴权即非接入层安全模式和接入层安全模式，RRC连接重配置和附着 过程。分别由下面三个函数实现
+f_EUTRA_IdleUpdated_Stepl _4 ();
+f.EUTRA_IdleUpdated_Step5_l3 (); f_EUTRA_IdleUpdated_Stepl4_15 ();
+下面简要说明以上三个函数：
+首先，函数f_EUTRA_IdleUpdated_Stepl _4 ()负责执行终端注册流程中的 RRC连接建立过程。终端发出RRC连接请求消息到EUTRA_PTC,该消息由SRB 端口接收。此时EUTRA_PTC通过配置原语SYS_CTRL_REQ之后发送到本端， 该原语由SYS端口发送且包含本端的时间提前命令发送周期和上行授权。系统 通过SRB端口收到RRC连接建立请求后在该端口发送RRC连接建立消息。此 时系统将生成一条预期的终端发送的RRC连接建立完成消息，通过比较两条消 息是否匹配以确定是否进入下一测试阶段。函数f_EUTRA_IdleUpdated_Stepl _4 ()的流程如图3-3所示：
+开始
+SRB端口接收上行RRC连接请求
+配置本端UL Grant和TA
+，
+SRB端口发送RRC CONNECTION SETUP
+y	r
+接收RRC CONNECTION SETUP判断其携带的ATTACH 顼EQUEST与PDN CONNECTIVITY REQUEST是否匹配^
+RRC连接建立完成，等待进入下一测试阶
+段
+图3-3终端RRC连接建立流程图
+其次，注册流程中的非接入层鉴权、非接入层安全模式和接入层安全模式的 激活由函数CEUTRA_IdleUpdated_Step5_l3 ()实现。该函数的实现分为三个阶 段：
+首先是鉴权过程，在调用该函数是，系统和终端己完成RRC连接建立。小 区通过SRB端口发送鉴权请求消息，此时，按照协议终端收到后应当回复鉴权 响应消息。同样的，系统在SRB端口接收该消息。
+其次是非接入层安全模式激活，首先NAS消息安全模式命令经过加密后再 SRB端口发送到终端，SRB端口等待终端回复经加密的安全模式完成消息。正 确接收该消息标志着非接入层安全模式激活。
+最后是接入层安全模式激活，此时EUTRA.PTC经本端端口 SYS发送原语 SYS_CTRL_REQ到低层(L2 PDCP层)，收到低层回复确认后，将RRC层的安 全模式命令通过SRB端口发送给终端，当收到终端回复的安全模式完成时标志 着接入层安全模式成功激活。
+函数 CEUTRA_IdleUpdated_Step5_l3()流程如下图 3-4 所示：
+图 3-4 函数 f_EUTRA_ldleUpdated_Step5_13()流程图
+最后，函数f.EUTRA_IdleUpdated_Stepl4_l 5 ()实现了 RRC连接重配置和终 端附着。本端NAS_EMU_PTC模块生成附着接受(ATTACH ACCEPT)和激活 专用 EPS 承载上下文接受(ACTIVE DEFAULT EPS BEARERCONTEXT ACCEPT ) 消息，该消息由RRC层的RRC连接重配置消息所携带，并经SRB端口发送， 当系统正确接收到终端发回的RRC连接重配置完成后标志终端注册成功。
+函数 f_EUTRA_IdleUpdated_Stepl4_l5()具体实现如图 3-5 所示：
+图3-5终端注册函数流程图

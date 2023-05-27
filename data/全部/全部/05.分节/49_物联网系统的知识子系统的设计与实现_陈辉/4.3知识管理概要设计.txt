@@ -1,0 +1,67 @@
+4.3知识管理概要设计
+结合上一章的需求分析，知识管理模块主要涉及资源建模和知识库的管理以及查询。 首先，需要对物理资源环境进行建模，本课题釆用本体来作为模型的载体。用本体描述 语言来描述资源环境的属性关系。本体是实现信息交换、共享及解决语义冲突的基础。 通过构建统一的概念和术语，为同一领域的异构事件的互操作和集成提供了可能。
+领域模型的构建需要把领域相关知识转化为本体描述语言来表示。因此，本体知识 建模包括两个子需求，本体的构建方法和本体的构建工具的选择。本体的构建方法有许 多种，但目前还没有一个标准的方法。相关文献中提出的方法共有八种：骨架法、 METHONTOLOGY法、IDEF5方法、七步法、CYC方法、TOVE方法、KACTUS方法、 SENSUS方法。同时建模工具也多种多样，有斯坦福大学的Protege. OntoEdit、OilEd 等。本课题在模型的构建方法上选择七步法，并且选择Protege作为本体的构建工具。
+模型的构建首先要对现实的需求说明，包括确定本体和范围，获取领域知识。然后 要将现实知识抽象化，包括定义类及其关系、实例化。最后是利用工具将描述好的模型 建立。本体建模流程图如图4-5所示：
+结合本课题使用的出租车数据，为了推理道路拥堵的状态，需要将GP%数据与道 路环境结合起来，因此需要对道路进行建模，由于道路的范围过大，因此可驀道路分多 个位置概念，将位置定义成长方形的概念，并为其定义四个数据属性。道路对应本体中 的一个类概念，位置同样对应本体中的一个类概念，两者之间是包含关系，同时道路与 位置都对应有多个实例。
+本论文釆用Protege本体编辑软件作为建模工具，建模界面如下图4-6所示：
+彩 hasY2 exactfy 1 xtAdouble 8 h??Yl e<??.tiy 1 x“:doubU -hasXZ ???<*<> 1 >ad:double hasXl exacSy 1 x*d:douM?
+图4-6 Protege建模图
+将前述模型涉及的概念通过Protege建模描述起来，然后保存成本体文件，由于 Protege是根据w3c标准开发的，因此此文件符合W3C的标准定义，可釆用大部分的语 义编程库进行处理。本体文件部分截图如图4-7、4-8、4-9所示。
+owlsObjcctProperty rdf:aboutssMhttp://www.semanticweb.org/traffic-ontology#hasPo$ition°> <rdfs:damain rdf;resources,,http://www.semanticweb.org/traffic-ontology#Road"/> 〈rdfs;range rdf:resource^http://ww.senanticweb.org/traffic-ontology#Position,7> </cwl:0bjectProperty>
+<uwI;DacatypeProperty rdf:abouts',http://www.senanticweb.org/traffic-ontology#tiasxi*7>
+<owl；Datatypeproperty rdf:aboutsMhttp://www.semanticweb.org/traffic-ontology#tiasX2*7>
+isDatatypeProperty rdf:about3**http://www.semanticweb.org/traffic-ontology#hasYlM/>
+owl:DaratypeProperty rdf:about=uhttp://uw. sesanticveb. org/traffic-ontology#hasY2"/>
+owijClass rdf:about='*http://www. semanticweb.org/traffic-ontology#Position°>
+-- <cwl:equivalentClass>
+<owl;Restriction>
+<cwl:onProperty rdf: resource="http://www.semanticweb.org/traffic-ontology#hasXl'7> ccwlzqualificdCardinality rdf：datatype=',http://www.w3.org/2001/XMLSchema#nonNegativeInteger,'?l</cwl:qualifiedCardinality> <cwl:onOataRangc rdf; resources*,http!//www.w3.org/2fl01/XMLSchema#double**/>
+</Qwl:Restrictlon>
+</owl:equivalentClass> ?GwliequivaIentClass> owl: Restriction*
+<cwl:onPrcperty rdf:resource=Mhttp://www. semanticweb.org/traffic-ontology#hasX2,7>
+<owl:qualifledCardinality rdf：datatype=,,http://www.w3.org/2001/XMLSche<na#nor^legativeInteger,'>l</cwl,:quali.fledCardinality> <owl:onDataftange rdf:resource="http://www.w3.org/2001/XML5chefna#double"/>
+</cwl:Restriction>
+</owl:equivalentClass>
+<owl:equivalentClass>
+?owl:Restriction>
+<owl:。「Property rdf: resourckhttp://www. senanticweb.org/traffic-ontology#hasYl"/>
+<owl equal if iedCa rd inality rdf:dat3typesMhttp://www.w3>org/2081/XMLSchemd*nonNegativeInteger">l?Vcwl:qualifledCardinality> <owl:onOataRange rdf:re sou rces"http://www.w3.o rg/2e01/XMLSchema?doubleH/>
+图4-7本体模型部分截图
+<cwl：C1ass rdfxabout^'httpt/Zwww.seaanticweb.org/traffic-ontology?PositlonM>
+owl: equ ivaUntCla$s>
+<cwl: Restriction
+<cwl:onProperty rdf: resource^httpt/Zwww.seaanticweb.org/traffic-ontologyfhasXlnA <Gwt:quallfie<iCardlnaUty rdfsdatatype*1*http://ww.w3.org/ZBBl/XHLSchenafnonNegativelntegef^lK/owUqualifiedCardlnality* ?cwl:onOetaRange rdf:resourcea**http://MM.w3.org/2001/)01LSchea3MoubleM/>
+^/owl:Restrlcticn>
+</cwl;equivalentCUss>
+<wlt equ iwa UntC Us $> <owl:Restriction*
+<owl:onProperty rdf: resource^'http:/Amw.se?antlcweb.org/trafflc-ontology?hasX2'7>
+<owl:qualifie<lC?rdinaUty rdftdatatyp^httpsZ/ww.wa.org/ZOei/XMLScheaaifnonNegativelnteger^^/owljqualifiedCardinality* <cwl:onOataRange rdf: resourcea**http://ww.w3.org/2001/)91LScheaaMoublea/>
+</owl:Rest riction>
+</owl:equivalentClB5S> <ow\:equlvalentClass> <owl：Restriction?
+<owl:onProperty rdf: resource?*http://??**.seaanticweb.org/trafflc-ontology?hasYln/>
+<awl:qualifie(fCardln4lity rdf:datatype?'*http://MM.w3.org/2Ml/XMLSche?a*nonNegativeInteger**>l</Qwl:qualificdC<>rdlnelity> <owl:onDataRangc rdf:resource***http://ww.W3.org/2Ml/XMLScheo?Mouble*7>
+?/owl:Restrictian>
+?/owl:equivalentCX?si>
+: ecu lvalentCU$$>
+<cwl: Restriction
+<owls onProperty rtff: resourcea**http: //mm.seoanticweb.org/traffic-ontologyfhasY2**/>
+<owltqu?1 ifledCsrdlnaUty rdf:datatype?**http://MM.w3.org/20evXML$cheaa?norNegatlveInteger*'>l</owl:qu3UfiedCdrdlnality> <owl:onDataRange rdf: resource>"http://Www.w3.org/2Ml/XMLSchenaMouble*/>
+?/owl:Restriction*
+图4-8道路模型实例部分截图
+http: //ww. semanticweb? org/t raftic-ontologyW^S中蹬 …>
+<owl:NamedIndividual rdf: about=*'http://www. semanticweb. org/traffic-ontology#^S中路“〉 vrdf:type rdf:resource="http://www.semanticweb.org/traffic~ontology#RoadM/> <hasPosition rdf: resource="https//www.semanticweb.org/traffic-ontolcgy#fll中路pl'7> <hasPosition rdf: resource="http://www.semanticweb.org/traffic~ontology#fil中路p2"/A <hasPosition rdf: resources*'http://www.semanticweb.org/traffic*ontology#li3中路p3"/> <hasPosltion rdf: resource=Hhttp://www.semanticweb.org/traffic-ontology#m中路p4*7> </owl:Namedlndividual>
+<1— http://ww.secanticweb.org/traffic-ontology#^!中路以一>
+<owl:Namedlndividual rdf:about="http://www.semanticweb.org/traffix-ontology蜘中路pl"> <rdf:type rdf: resource=,,http://www.semanticweb.org/traffic-ontology#Position'7> <hasXl rdf:datatypessMhttp://www.w3.org/2001/XMLSchema#decimal">114.0&3391</hasXl> <hasX2 rdf: datatype="http: //www.w3. org/2001/XMLSchema#decimal">114? 08371</hasX2> <hasYl rdf:datatype="http://www.w3.org/2001/XMLSchema#decimaV'>22.545458</hasYl> <hasY2 rdf:datatype=Mhttp://www.w3.org/2001/XMLSchema#decimalM>22.544874</hasY2> </owl:Namedlndividual>
+<!— http://www<semanticweb.org/traffic-ontology#?8cllffip2 一>
+<owl:NamedIndividual rdf: about=Mhttp://www. semanticweb. org/traffic-ontology#fll中路p2"A <rdf:type rdf: resource="http://www. semanticweb.org/traffic-ontology#Position"/> vhasXl rdf:datatype?uhttp://www.w3.org/2e01/XNLSchema#decimaXn>114.083396</hasXl> <hasX2 rdf:datatype?"http://www.w3.org/2001/XMLSchema#deci!nalM>114.083737</hasX2> <hasYl rdf:datatype="http:Z/www.w3.org/2001/XNLSchema#decimal">22?544632</hasYl> <hasY2 rdf:datatypes"http://www.w3.org/2001/XMLSchema#deciinaV,>22.544073<ZhasY2>
+</owl:NamedIndlvidual>
+图4-9道路模型实例部分截图二
+在此本体文件中，共有路、位置的概念，如前所述，位置有且仅有四个数据属性。 例子中定义了路、位置的实例，共有福中路、红岭中路、翠竹路、金田路等路的实例, 对于福中路有福中路P1、福中路P2、福中路P3、福中路P4四个位置的实例，对应四 个位置属性。
+其次，需要对事件进行建模，事件的处理需要分析事件的信息结构，可采用文件 模型的形式来表示事件的schema。本实现釆用json来对事件进行结构描述，每个json 描述一种事件信息结构，包含事件的描述信息。其中，事件的领域信息是必含选项。然 后将所有事件的json进行存储管理。使用事件的领域信息作为事件的标志进行查询。 当事件到来时，利用事件携带的领域信息查询事件知识库获取事件的json schema。然 后解析json schema的各个字段。同时，结合java的多态机制，可以定义一个事件类， 类包含有一个domain属性和一个保存事件结构信息的map对象。利用事件结构信息可 对事件进行处理成为事件对象。同样，删除和更新操作也非常容易实现，只需要删除或 更新map中的对象和对应的json文件即可。
+由上所述，本课题将知识库分为两类，一类是通过建模过程对物联网建模的本体知 识，另一类是推理目标所需要事件模型和一阶逻辑函数算子。本体的管理和査询可以直 接基于Jena的TDB文件数据库对进行组织和管理，不同领域的信息存储在不同的知识 库中，可方便的提供知识库的新建，备份，删除以及本体信息存入等功能。本体写入流 程图如下图4-10所小：
+图4-10本体写入流程图
+如上图所示，本体建模后的本体文件需要写入本体知识库中。首先利用Jena的API 读取本体文件，在Jena之中本体釆用Model类表示，通过调用Jena的工厂方法可以将 本体文件或者文件输入流InputStreamc对象读取为Jena的Model对象。然后利用TDB 的接口获取数据集Dataset对象，Dataset对象是TDB中数据集表示，生成的Dataset的 时候指定了文件夹作为其数据的存储和读取目录，将Model对象写入到Dataset对象中， Dataset会自动完成写入到文件系统的工作，从而完成本体的写入。
+除了本体之外的事件模型通过编码基于配置文件进行管理，算子知识则通过编码实 现，包括利用Z3实现的用于不同数据类型的大于、小于、等于等基本函数算子。因此， 在非基于本体的知识库管理方面，主要是对定义好的函数、算子的管理和使用，通过提 供不同工厂方法进行实现，同时可以结合数据库和文件映射等方式进行持久化保存。
+在查询方面，因为涉及两类知识类，基于模型的知识库和函数知识库。对于基于模 型的知识库的查询，知识釆用基于文件的TDB进行存储，利用Jena的SPARQL査询引 擎进行查询，对于一个查询，首先要根据查询对象生成具体的SPARQL查询对象，将, SPARQL查询对象交由TDB进行处理，获取ResultSet,然后遍历解析具体的ResultSet 生成返回结果。对于函数知识库的查询，可以釆用映射的形式来实现，本课题当前的实 现是将映射关系维持在文件之中，系统启动时将其加载到内存中的一个Map,方便查询 使用。本体知识库的SPARQL查询流程图如图4-11所示：
+图4-11 Sparql查询流程图
+如上图所小，首先要根据查询需求生成String类型的查询语句，并获取数据集对 象Dataset。然后利用工厂类QueryFactory类的方法根据String类型的查询语句生成 Query查询语句对象，并根据查询语句对象和数据集对象两个参数生成查询执行对象。 这川,以利用Jena抽象工厂对象QueryExecutionFactory的create方法生成。生成执行对 象?之后调用其exexSelect()方法获取结果集ResultSet对象。ResultSet对象是-、组三元组 的集合，包含了查询语句返回的所有三元组信息，通过其提供的迭代器接口可以遍历这 些三元组并进行相应的处理。也可以通过其getResourceModel接口得到结果集的Model, 利用此Model,结合Jena的文件写入接口，可以将一个Model输出为一个标准的本体 文件，利用此特性可方便的进行语义编程库之间的格式转换。

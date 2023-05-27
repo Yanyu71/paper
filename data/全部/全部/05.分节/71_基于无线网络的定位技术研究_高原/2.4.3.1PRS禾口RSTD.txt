@@ -1,0 +1,65 @@
+2.4.3.1PRS禾口RSTD
+下行定位模式主要基于PRS,它是专为定位定义的参考信号，PRS不可用时 也可以基于CRS (Cell-specific Reference Signal,小区参考信号)。PRS仅在为 其配置的下行子帧中的RB (ResourceBlock,资源块)上发射，位于天线端口 6, 仅适用于子载波间隔为15kHz的帧格式。参考信号序列定义画为：
+"% ⑺)=一 2 ,，(2⑼)+ /卡(1 - 2 - c(2m +1)),次=0,1,...,2N邕6 一 1 (2-3)
+其中々是时隙序号，/是时隙中OFDM符号序号，伪随机序列”•)由长度为31 位的Gold序列生成，长度为加小的输出序列以〃)定义为：
+Gz+M)+.5+M))mod2
+%(〃+31)=(菁(〃+3)+% (??)) mod 2	(2-4)
+x2(?7+31)=(x?(n+3)+x»(n4-2)4'X2(n+l)+x2(n))mod2
+其中£=1600,行= 0,12…1 ’第一个M序列被初始化为 玉(0) = lg(i) = 0.i = 12….30 ；第二个M序列被初始化为.,其 具体数值取决于不同的信道或者参考信号。对于PRS,被初始化为， c,ni. = 228 •	/512]+ 210 -(7 . (ns +1)+ / +1 ).(2 •	mod 512)+1)+ 2 -(7V^S mod 512)+ 7VCP ,其
+中耀e {0,1,…,4095}等于,也可以由高层指定。
+参考信号序列乙.(〃?)，按照如下方式映射到时隙久和天线端口夕中RE (Resource Element,资源单位)上的复调制符号47 ：
+碍7=%、(柏	(2-5)
+对于常规CP：
+22
+% = 6 (加 + 端-需)+ (6 - /+*)mod 6
+3,5,6 if〃smod2 = 0
+/ = - 1,2,3,5,6 if nsmod2 = 1 and (1 or 2 PBCHantenna ports)
+2,3,5,6	if Hsmod 2 = 1 and(4 PBCH antenna ports) (2-6)
+“2 = 0,1…1	-
+加"+ N牒DL—嘘s
+其中小区专有频偏v =N；；；〃mod6, p = 6。PRS的一个图样如图2-11所示。
+SHOd uuuocu Hum-d o>= PUU0UO
+WX三三。==二。?-===
+even- numbered slots	odd- numbered slots	even-numbered slots	odd- numbered slots
+Antenna port 6	Antenna port 6
+图2-11 PRS图样BN
+PRS在NW个连续的子帧中被发送，称为一个PRS定位机会(PRS positioning occasion),,定位机会中的子帧通常仅包含CRS和PRS,不包含业务 和控制信道，被称LIS (Low Interference Subframe,低干扰子帧)冈。PRS子帧
+配置索引Ors指示了小区特定的PRS周期7；2和子帧偏移量△桃s，如表2-1所示。
+PRS只在下行子帧中发送，不在DwPTS中发送。N,,“s和1亦都由高层配置。
+表2-1定位参考信号子帧配置网
+PRS配置索引/pRs	PRS周期Grs （子帧）	PRS子帧偏移小 rKo （子帧）
+0-159	160	,PRS
+160-479	320	/pRs -160
+480-1119	640	/pRS — 480
+1120-2399	1280	“1120
+2400-2404	5	/prs-2400
+2405-2414	1()	/prs-2405
+2415-2434	20	/prs-2415
+2435 - 2474	40	/prs-2435
+2475-2554	80	"rs-2475
+2555-4095	保留
+23
+通过PRS静默(PRSmuting)机制可以进一步降低干扰。高层给可以给某个 小区配置周期为心仪的静默序列，以PRS定位机会组为单位。此外还有一个长度 为心下的比特序列，其中‘0'代表静默，’1'代表不静默。其中PRS定位机会 组由一个或者多个PRS定位机会组成；数目由高层配置。
+RSTD是指邻小区j和参考小区i之间的相对时间差，定义为理ubframeRxj-TsubfranieRxi■＞其中TsubframeRxj为UE接收到来自小区j的一■个子帧的起始时间； TsubframeRxi指UE接收到来自小区i的一个子帧的起始时间中最接近上述来自小区 j的子帧起始的一个。RSTD的参考点是UE天线的连接器。它适用于 RRC_CONNECTED状态下的同频或异频测量磔］，所谓同频测量是指参考小区和 邻小区在同一频段下，异频测量是指不在同一频段下。
+协议对RSTD的测量提出了要求126］。它规定了在给定的信噪比下，UE完成 RSTD测量限定的时间和要求的精度，以及RSTD测量报文，高解析度RSTD测 量报告的格式。表2-2展示了同频测量下的测量精度要求，其中以/lot表示单个 子载波上接收能量和邻小区干扰加噪声能量的比值［28］。异频测量的要求会相对 宽松一些。
+表2-2 RSTD同频测量精度要求
+精或	条件
+PRS Es/lot	最小PRS带 宽(参考小 区信道带宽 No-和 pRS 带宽最小 值)	最小可用 子帧数	IoNo,c6 范闹
+E-UTRA运营频 带组NOICX	最小 Jq Note I	最大 Io
+Ts、。心	dB	RB			dBm /15kHzNolc5	dBm ZB"'Channel
+±21	(PRS Es/loi)rcl>- 6dB and (PRS Es/Ioi), >- 13dB	> 6	4 NOTE'，	FDD_A. TDD_A	-121	-50
+FDD_B	-120.5	-50
+FDD_C, TDD_C	-120	-50
+FDD_D	-119.5	-50
+FDD_E. TOD_E	-119	-50
+FDD_F	-118.5	-5()
+FDD_G	-118	-5()
+FDD_H	-117.5	-50
+FDD_N	-114.5	-50
+工16	(PRS Esdouicf >- 6dB and (PRS Es/Iol), >- 13dB	> 15	4 NOTE 9	Note 4	Note 4	Note 4
+24
+表2-2 RSTD同频测量精度要求四（续上表）
+±10	(PRS Es/Iot)rcf>- 6dB and (PRS Es/lot), >- 13dB	>25	> 9 NOTE ')	Note 4	Note 4	Note 4
+±9	(PRS Es/Iot)rcr>- 6dB and (PRS Es/Iot),>- !3dB	>50	> I	Note 4	Note 4	Note 4
+±8	(PRS Es/Iot)rcf>- 6dB and (PRS Es/Iot), >- 13dR	> 75	> 1	Note 4	Note 4	Note 4
+NOTE 1:最小Io恬况是在一个OFDM符号上所仃RE所均得到。 NOTE 2: Ts是最小时间单位 NOTE 3: PRS带宽任定位辅助数据中指定二 NOTE 4:对相同的频段和Io条件双用和PRS值宽沁 相同的需求， NOTE 5:当涉及到载波聚合时,Io等级会提升、＞0 NOTE 6:这里的Io定义在定位了帧I .C化相同的了帧中,PRS符号和非PRS符号的lo水平不同。 NOTE 7;如果•个UE采用了1波聚合,并」L被配置了 个或者两个SCelL则服务小区带宽为涉及RSTD测量的 成分教波中最小的带宽。如果RSTD测量中没打涉及服务小区的CA载波，服务小区的这些带宽不计入PRS带宽的 计算。 NOTE 8:参见E-UTRA运营频段组的定义, NOTE 9:如果采用ID=2或者的间隔图杆.该需求不适用.

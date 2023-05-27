@@ -1,0 +1,32 @@
+4.2.1数据结构
+图相似性分析模块中使用的数据结构主要有数据预处理模块中用到的顶点
+(Vertex)和边(Edge)。下面将分别介绍：
+在函数调用图和控制流图中都有顶点结构体，在函数调用图中的顶点子函数, 而在控制流图中的顶点表示的是库函数。其中的title字段用于表示此顶点在文件 中的ID, label字段用于表示此顶点在文件中的名字。由于顶点结构体即可表示 函数调用图中的子函数，又能表示控制流图中的库函数，所以加入vertextype字
+46 段来进行区分。另外还有两个字段indegree和outdegree分别表示此顶点的入度 和出度。入度的含义是以此顶点为目的节点的数目。出度的含义是以此顶点为源 节点的数目。其具体封装形式和字段描述表如下：
+class Vertex(object):
+def init (sel£ title, label, vertextype, indegree, outdegree):
+selftitle = title	'
+self.label = label
+self, vertextype = vertextype
+self indegree = indegree
+self.outdegree = outdegree
+表4-10顶点的表结构
+字段名	存储类型	允许为空	默认值	描述
+ID	INTEGER	否	1	主键，自增变量
+title	INTEGER	否	无	表示此顶点在文件中的
+ID
+label	VARCHAR(50)	否	无	表示此顶点在文件中的 名字
+vertextype	VARCHAR(20)	否	无	用于区分函数调用图中 的子函数，又能表示控制 流图中的库函数
+indegree	INTEGER	是	0	顶点的入度，即以此顶点 为目的节点的数量
+outdegree	INTEGER	是	0	顶点的出度，即以此顶点 为源节点的数量
+2.边
+同顶点类似，边也对应两种实体。在控制流,中的边表示子函数的偏序关系, 而在子函数的控制流图中则表示库函数的偏序圭系。其中的fromID字段表示源 的ID, toID字段则表示端的ID,只在控制流图中type字段有效，它表示操作码， 默认为0。其具体封装形式和字段描述表如下：
+47
+class Edge(object):
+def  	init (self, fromID, toID, type=O): selffromlD = fromlD self.toID = toID selftype = type
+表4-11边的表结构
+字段名	存储类型	充许为空	默认值	描述
+ID	INTEGER	否	1	主键，自增变量
+fromlD	INTEGER	否	无	源的ID
+toID	INTEGER	否	无	端的ID
+type	INTEGER	是	0	操作码，仅在控制流文件中有 效，有三种可能取值，0表示非 条件跳转，即无条件判断直接 跳转，-1表示fhlse分支，1表 示true分支。默认值为0。

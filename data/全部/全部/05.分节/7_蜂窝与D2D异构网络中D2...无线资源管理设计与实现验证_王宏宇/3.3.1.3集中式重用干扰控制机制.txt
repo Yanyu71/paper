@@ -1,0 +1,33 @@
+3.3.1.3集中式重用干扰控制机制
+分布式重用干扰控制机制，其优点在于基站不需要控制，仅需要配置蜂窝 通信链路质量损失率即可，但其缺点也比较明显，需要DUE不断监控每 条蜂窝链路反馈的HI、NDL增大了 DUE终端的处理压力。考虑到蜂窝通信 上行链路质量本身就是基站监控的一项指标，可以直接利用基站辅助控制得到 对共用干扰控制方案一一基于干扰容限的集中式重用干扰控制机制。
+这种方案主要在基站端进行，基站在进行蜂窝网络上行调度的基础上，同 时计算本次调度上行子帧中每个RB能够允许的干扰值(dBm/RB),并向DUE 广播，消息结构示意如表3-2所示。
+表3-2可容忍干扰辅助信息结构表(TorlntfTable)
+RBI	Torlnterferencel
+RB2	T orlnterference2
+RB3	Torlnterference3
+RB4	Torlnterference4
+RB Max-1	Torlnterference Max-1
+RB Max	Torlnterference Max
+基站侧对每个CUE维护上行链路质量表，如下。
+表3-3基站维护的上行链路质量表
+CUE
+C-RNTI	TxPower
+Margin	QoS Class	QcUE_allow	QcUE_minreq	QcUE_cur	Totalinference
+其中，CUE C-RNTI为UE在蜂窝无线网络中的识别码；TxPower Margin 为CUE剩余的发送功率裕量，当发送功率裕量不为0时,基站可以通过PDCCH Format 3A对CUE进行上行闭环功控，在容忍干扰不变的情况下，提升其上行 链路质量。QoS等级决定了表格中的CUE允许链路质量和CUE最小 链路质量需求Qc电minreq。QcUE*ut为当前CUE平均链路质量，并通过一定机制 调整此CUE可容忍的总体干扰值。考虑到CUE的链路质量与D2D通信和底噪 形成的总干扰直接相关，所以调整的是总体干扰值，这样可以将底噪的变化也 包含在其中。下图3-13为一种可容忍干扰值的调整机制，使用三段增量方式调 整不同区域的干扰值闭环增量，增加系统调整自由度。
+31
+图3-13集中式可容忍干扰调整机制示意图
+首先，由蜂窝网络设定初始允许的干扰相比噪声提高量，假定此时噪声为 Pnoise (单位dBm/RB),初始提高量为、“(单位dB),则初始可容忍总干扰 TotalInference(Q)及可容忍 D2D 通信干扰 TorInterference(G)(单位 dBm/RB)为 Totall晌enceW) = Pnoise + △她
+TorlnterferenceiG) = ioiogIO(10ro,aMrence(0)/1(, -10%*)	(3-14)
+对可容忍干扰进行闭环控制，得到此CUE第i次的可容忍干扰值为
+Totallnterferenceiji) = Totallnterference(i-1) +A
+Torlnterference(i) = 101og10(10r°z°Mre,,ce(,)/,0 -10%"。)	(3-15)
+其中，
+△s	QcUE_cur W (QcUE_aHow，+°°)
+△	QcUE_cur 6 \QcUE jnmre^QcUE _allow\
+'<!	QcUE_cur e[°，QcUE_ minreq )
+可容忍干扰值经过量化后，放入表3-2的结构中CUE对应的资源段上进行 广播。
+TorlntfTable(j) = TorInterferenceCUE , RB; is assigned to CUE,
+DUE在接收到此辅助控制信息后，根据自身到基站的路损7Y伽，得到满足 D2C共用干扰约束的资源块j的最大允许发送功率乙we为
+PTxDUE ①=TorlntfTable ① + PLDB	(3-16)
+如上讨论了两组D2C的干扰控制策略。在基站辅助控制的异构网络中，使 用集中式D2C干扰控制策略能够简化DUE的设计，同时使基站对于多D2D通
+32 信的累积干扰控制更加便捷。如果异构网络中的基站不能提供此辅助信息，使 用分布式D2C的干扰控制策略同样能够达到D2D通信对蜂窝网络通信干扰可 控的目的，多D2D通信累积干扰问题使用预留干扰裕量因子解决，能够在不支 持增加基站控制器功能模块的环境中使用。

@@ -1,0 +1,4 @@
+6.2.2预处理
+对于检索出来的相关文档，本平台自动使用斯坦福的自然语言处理工具包进 行分析处理，并撰写程序将分句、词性标注等工作完成后的文档进行分析处理。
+工具包CoreNLP具有十分强大的功能，能够满足本平台所需要使用的所有 自然语言处理技术，并进行一定的可视化工作。不仅如此，CoreNLP能够生成多 种类型的依存树，对于句子：Bills on ports and immigration were submitted by Senator Brownback, Republican of Kansa. CoreNLP 能够生成下面的如图 6-2 所示 的依存关系。预处理过程中，系统能够得到除去word embedding的所有特征信 息。
+图6-2 (a)基本依存关系,(b)斯坦福依存关系

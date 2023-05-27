@@ -1,0 +1,23 @@
+5.2.5UE蜂窝用户上行同步搜索模块
+表5-7 PUSCH Sync Search函数接口
+名字	I/O	数据类型	描述
+RxData	I	int16 t*	接收数据
+pusch Toffset	O	int32 t	时偏
+pusch Foffset	O	int32 t	频偏
+Sync 同步跟踪模块对应的函数为Sync Tracking,该函数的接口如下：
+40
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+PUSCH  Sync  Search(int¹6 t* RxData,    int32 t pusch Toffset,int32 t
+pusch  Foffset)
+对于 UE 同步搜索，其还需在Cell 同步的基础上，从Stack层获取控制信息。 该控制信息为PUSCH  Sync  Ctrl 结构体，该结构体的定义如下表所示：
+表5-8 PUSCH Sync Ctrl结构体定义
+名字	数据类型	描述
+radio Frame	int16 t	系统帧号
+sub Frame	int8 t	子帧号
+num UE	uint8 t	UE数量
+RB Start[5]	uint8 t	RB起始位置
+RB Len[5]	uint8 t	RB长度
+UE Power[5]	int8 t	干扰功率
+UE ID[5	uint16 t	RNTI ID号
+其中RB Start等数组的长度设定为5是由本系统高层方案所设计，根据千
+扰功率，最多只使用5个干扰最大的UE 来进行干扰避免等处理。

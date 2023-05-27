@@ -1,0 +1,17 @@
+摘要
+随着智能终端设备的爆炸性增长，人们对网络容量的需求越来越高。 异构网络能够显著地提高室内用户的覆盖范围和整个网络的容量，吸引 了工业界和学术界的广泛关注，被认为是下一代移动通信系统的核心技 术之一。但是，在异构网络中，层间干扰十分严重，限制了网络容量的提 升。为了改善异构网络中干扰严重的情况，有效地提高系统的容量，本 文主要从用户调度、分簇、预编码和频谱管理等多个角度研究了异构网 络中的干扰问题。所提出的方案能够显著地减少网络中的干扰，提高系 统的性能，对异构网络中干扰管理的具体实施有重要的指导意义。
+本文的主要创新和贡献如下：
+1）	根据异构网络独有的特点，提出了基于动态参考信号空间的机会 干扰管理方案。在这个方案中，定义只适用于异构网络的动态参考信号 空间，并基于这个动态空间，设计宏用户的调度参量，计算出更适于被 调度的宏用户，从而更有效地消除干扰，提高系统的容量。但是，动态 参考信号空间会随着信道状态信息的变化而改变，不断反馈动态参考信 号空间的系统开销比较大。为了降低系统的开销，本文还引入了量化码 本，以量化的动态参考信号空间代替完美的动态参考信号空间，减少连 续反馈完美动态空间的开销，在牺牲部分性能的条件下大大降低方案的 复杂度。
+2）	提出了一种联合家庭基站分簇和选择性波束成型的方案来消除异 构网络中的干扰。首先根据家庭基站的位置使邻近的家庭基站形成一个 簇，并将对簇内家庭基站造成较强干扰的宏用户囊括在这个簇内，从而 将异构网络分成多个互不相关的簇。然后，釆用分而治之的方法，通过 消除每个簇内的干扰来减少整个异构网络中的干扰。由于每个簇内设备 的数目比较少，干扰情况会较为简单，降低了消除干扰的难度。
+3）考虑了一个新的基于载波聚合的异构网络模型，结合载波聚合技 术，提出了两种用户分配的方案来进行干扰管理。本文认为宏基站和微 基站具有载波聚合的能力，能够调度多个不连续的载波分量。在此基础 上，考虑将用户分配到不同的载波分量上，从而减少整个网络中的干扰。 针对宏用户的分配，提出了改进的模拟退火算法根据最大化宏用户和速 率的原则将宏用户分配到两个载波分量上，有效地提高系统性能；针对 微用户的分配，提出了最大化最小距离算法来最大程度的减少微基站对 微用户的干扰，以提高系统的性能。
+关键词:异构网络;干扰管理;分簇;波束成型;载波聚合
+INTERFERENCE MANAGEMENT IN HETEROGENEOUS NETWORKS
+ABSTRACT
+The deployment of Heterogeneous Networks (HetNets) can improve the coverage of users in door and the capacity of the HetNets and attracts many attentions. However, the interference in HetNets is serious, which limits the capacity of HetNets to a large extent. To reduce the interference and improve the capacity, we fbcus on interference management (IM) in HetNets.
+The main innovations and contributions of the paper are as follows.
+1)Firstly, we introduce the conventional opportunistic interference alignment (OIA) into HetNets and it indeed reduces the CI from the MUs effectively. Then, based on the unique characteristic in HetNets, the novel opportunistic interference mitigation (OIM) schemes based on adaptive reference signal spaces (A-RSSs) are proposed. However, broadcasting the A-RSS constantly makes the system more complicated, so a complexity-performance tradeoff is considered. To decrease the complexity of the system, the quantization codebook is introduced and the quantized A-RSS based OIM is proposed.
+2)A joint femtocell clustering and selective beamfbrming scheme is proposed to mitigate the severe interference at femtocell base stations (FBSs) caused by the uplink transmissions of MUs in HetNets. Firstly, a number of adjacent FBSs are clustered. Then, both beamfbrming at the in-cluster femtocell users and MUs are designed with a strategy to minimize the generated interference (MinGI) toward some selected interference-vulnerable FBSs within each cluster. By employing such low-complexity selective beamforming, the in-cluster interference is significantly mitigated.
+3)The CA is introduced to HetNets, so that the BS can schedule all the discrete component carrier (CC) and transmit different data in different CCs. To decrease the interference at MU or pico users (PUs), the MUs and PUs are in
+allocated to different CCs. For the MUs, an improved simulated annealing (SA) algorithm is proposed to maximize the sum rate of the MUs. However, the system overhead of applying improved SA to PUs is too heavy, a novel maximize minimum distance (MMD) based PUs allocation algorithm is proposed. In the proposed MMD, the minimum distance from a given PU to the PBSs transmitting data in each CC is calculated, and the CC correspond to the maximum minimum distance is selected.
+KEY WORDS:Heterogeneous Networks;interference management;clustering;beamfbrming;carrier aggregation
+

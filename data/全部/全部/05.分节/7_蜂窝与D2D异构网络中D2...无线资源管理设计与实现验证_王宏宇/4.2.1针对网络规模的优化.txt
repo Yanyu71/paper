@@ -1,0 +1,21 @@
+4.2.1针对网络规模的优化
+在第三章的设计中,SSCA采用基于初传非退避BEB的冲突避免的RTS-CTS 流程。在TDD模式中，每个无线帧中分配一个RTS竞争时隙用以竞争后续一个 无线帧中所有上行子帧资源的接入权，数据发送流程图如图3-9所示。
+针对网络最大规模固定的特点，引入“优先接入”机制。通过分配优先接入, 达到对应DUE无碰撞接入的目的，降低网络整体碰撞率。记优先接入RTS为 RTSO,普通接入RTS为RTSlo同一无线帧中的RTSO、RTS1竞争目标均为后 续的同一无线帧中D2D数据信道的接入权。
+网络最大规模记为N,编号为k的DUE允许使用优先接入信道的帧号为FN, 满足：
+FNmodN = k	（4-1）
+这样，能够保证每个DUE在N个无线帧中都有一次优先接入信道的机会。 优先接入信道最多仅可能有一个DUE进行发送，即只要DUE有接入信道的需 求，在被允许的RTS0时间点申请接入信道，其碰撞概率为0。同时在无RTS0 申请的情况下，仍然可以使用RTS1对信道竞争，既保证公平性，又能增加信道 利用效率。
+RTS0与RTS1的关系满足：
+1）	若监听到RTS0被占用，禁用本帧的RTSlo
+2）	若RTS0无占用，则其他DUE可以通过RTS1在满足退避条件的前提下 竞争资源的接入权。
+49
+考虑到RTS1的发送调度需要在接收RTSO并进行解码后才能做出，RTSO 信道位置与RTS1至少间隔一个子帧。引入RTSO后，DCCCH分配如下表所示, 除TDD Format 0下行子帧较少，仅能支持每个无线帧中安排一个RTS竞争时隙 外，其余上下行配置方式均可以支持RTSO优先接入过程。
+表4-1 加入RTSO后的TDD DCCCH分配
+上下行配置	子帧号
+0	　　1	2	3	4	5	6	7	8	　　9
+0	RTS1	　　S	u	u	U	CTS|ACK	S	U	U	　　U
+1	RTSO	s	u	u	RTS1	CTS	s	u	U	　ACK
+2	RTSO	s	u	D	RTS1	CTS	s	u	D	　ACK
+3	..	RTSO	s	u	U	U	CTS	D	RTS1	D	　ACK
+4	RTSO	s	u	U	RTS1	CTS	D	D	D	　ACK
+5	RTSO	s	u	D	RTS1	CTS	D	D	D	　ACK
+6	RTS1	s	　　u	U	U	CTS	S	U	U	　ACK

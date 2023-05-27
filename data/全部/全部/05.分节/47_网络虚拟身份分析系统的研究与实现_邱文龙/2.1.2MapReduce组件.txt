@@ -1,0 +1,6 @@
+2.1.2MapReduce组件
+JobClient
+JobClient 主要作用提交MapReduce作业。2.1.2.2 JobTracker
+JobTracker 运行在Master 节点，主要负责接收提交的Job，然后将 Task任务分发到相应的 TaskTracker 上，并实时报告它们的运行情况，如果有任务失败就重新运行。此外，JobTracker 一般部署在单独一台机器上，且每个Hadoop 集群中只有一个JobTracker。
+TaskTracker
+TaskTracker 运行在 Slave 节点，主要功能是执行 JobTracker 分发的任务TaskTracker 通过心跳(HeartBeat)主动与JobTracker进行通信，以维护整个集群的运行状态。

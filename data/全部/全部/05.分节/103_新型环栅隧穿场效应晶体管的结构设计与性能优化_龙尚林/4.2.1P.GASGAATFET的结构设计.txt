@@ -1,0 +1,50 @@
+4.2.1P.GASGAATFET的结构设计
+本节提出的P-GASGAATFET,结构图如图4-9(b)所示，因为在器件的源极 和沟道交界的沟道中增加了一块掺杂为n型，形状类似于Pocket的结构，所以 命名为P-GAS GAATFETo下面将会对具有不同浓度Pocket的P-GAS GAATFET 器件结构进行仿真分析，具体器件结构参数如表4-2所示。
+43
+图 4-9 器件结构横切图(a)GAS GAA TFET; (b)P-GAS GAA TFETo
+表4-2 P-GAS GAA TFET的参数定义
+参数名
+参数含义
+参数值
+r
+器件半径
+12nm
+LSD
+源极漏极长度
+40nm
+Lc
+沟道长度
+30nm
+「pocket
+Pocket半径
+6nm
+^pocket
+Pocket长度
+5nm
+Tox
+氧化层厚度
+2nm
+TGe
+緒层厚度
+6nm
+Ns
+源极掺杂浓度（P型）
+5 x 1019cm~3
+Nc
+沟道掺杂浓度（P型）
+1 x 1015cm~3
+NsGe
+源极硅层掺杂浓度（P型）
+5 x 1019cm-3
+ND
+漏极掺杂浓度（n型）
+1 x 1017cm-3
+Npocket
+Pocket中的掺杂浓度（n型）
+可调
+WK
+栅极功函数
+P-GAS GAATFET在器件的源极和沟道交界处增加一块Pocket结构，Pocket 的掺杂方式为n型，与源极中p型掺杂相反，该结构可以使得P-GAS GAATFET 的源极和沟道交界处的能带结构向下弯曲，提升开启状态下源极和沟道交界处发 生带带隧穿的概率，进而提升器件的开态电流。为了清晰的阐述Pocket结构对 GAS GAA TFET器件性能的影响，在器件其他参数都不变的情况下，分别取 Pocket 掺杂浓度为2 x 1018cm_3> 4 x 1018c7n_3> 8 x 1018cm_3> 1.2 x 1019cm-3 和2 x 1019cm-3进行仿真，研究不同掺杂浓度Pocket的P-GAS GAATFET器件 的电学特性，P-GAS GAATFET中Pocket掺杂浓度如下图4-10所示。
+图4-10 GAS GAA TFET和P-GAS GAA TFET的掺杂浓度分布图
+44
+本节将会从转移特性、能带结构、带带隧穿等方面研究不同掺杂浓度对器件 性能的影响，为提升TFETs器件的开态电流提供理论指导，最后在GAS GAA TFET工艺流程的基础之上设计P-GAS GAATFET的工艺流程。

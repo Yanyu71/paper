@@ -1,0 +1,20 @@
+4.2.2相似性比较函数
+相似性比较函数，函数的输入为两个矩阵，其中之一是样本的库函数调用 矩阵，另一个是恶意家族数据库中一个家族的库函数调用矩阵。函数的功能是 找到最大的公共部分占总体的比例，其中实现了公式3-7。具体执行过程是： 首先遍历比较矩阵中的相同部分，此过程实现了公式3-5；然后计算两个矩阵 的并集，此过程实现了公式3-6；最后将上述两个步骤中的数值相除得出两个 矩阵的Jaccard系数，以此来判断两个矩阵的相似性。此函数的实现函数名为 getMaxSimitarQo其具体执行流程图如下所示：
+48
+输入样本文
+件
+图4-7相似性比较函数流程图
+下图所示即为getMaxSimilar()函数的具体实现代码：
+def getMaxSimilar(sel/? matrixA^ matrixB):
+matrix = [[0 for j in range(0>128)] for i in range(。，128)]
+for k in (0,128):
+cursor = 0
+if matrixA[k]. 	len 	( ) >0 or matrixBfk]. 	len 	() > 0: for eachA in matrixA[k]:
+if eachA in matrixB[k]:
+# get the common element
+matrixfk][cursor] = eachA
+cursor += 1
+return matrix
+图 4-8 getMaxSimilar()函数
+如图4-8所示，getMaxSimilar()函数将对A矩阵与B矩阵的相同位置依次进 行比较，最终返回两个矩阵的交集矩阵。
+49

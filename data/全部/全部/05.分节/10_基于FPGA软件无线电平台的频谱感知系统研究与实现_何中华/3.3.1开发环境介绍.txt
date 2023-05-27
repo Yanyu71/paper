@@ -1,0 +1,11 @@
+3.3.1开发环境介绍
+系统开发过程中主要涉及的软件工具有Xilinx公司的EDK和ISE软件，Mentor Graphics公司的Modelsim仿真验证软件,MathWorks公司的Matlab软件和Linux 平台下的GCC编译器。
+Xilinx 公司的 ISE (Integrated Software Environment)软件是 Xilinx 公司针对自 家FPGA开发的硬件设计工具。ISE将先进的技术与灵活性、易使用性的图形界 面结合在一起，用以使用户在最短的时间内、花费最少的努力，来达到最佳最优
+22
+的硬件设计。ISE对Xilinx系列的FPGA进行开发设计主要分为输入(Design Entry). 综合(Synthesis)、实现(Implementation)、验证(Verification)、下载(Download) 五个步骤。
+EDK (Embedded Development Kit)是 Xilinx 公司为 FPGA 设计专门开发的嵌 入式系统开发套件，它与ISE软件的不同在于，ISE软件仅仅对FPGA开发做Verilog HDL或VHDL的RTL级的硬件逻辑设计，而设祈-一旦需要使用PowerPC或者 Microblaze处理器进行灵活的嵌入式设计，就需要用到EDK软件。EDK是用于设 计基于IBM PowerPC硬件处理器或Xilinx Microblaze软处理器的嵌入式可编程系 统的全面解决方案，可使用它产生、编译、链接、加载和调试C/C++高级编程语 言。EDK配合ISE软件组成了功能强大、操作简单的工具集，可完成嵌入式开发 所需的软件和硬件的开发以及两者的综合设计，可对时序约束、逻辑布局、PLD 编程、嵌入式硬件架构和配置进行灵活的编程与设计。
+Mentor Graphics公司开发的Modelsim是行内优秀的HDL语言仿真集成环境 1131,它的用户界面友好，既支持VHDL和Verilog HDL混合仿真，又支持Tcl/Tk脚 本，有良好的图形化界面和用户接口，支持第三方Xilinx和Altera等公司的IP核 仿真。近年来Modelsim越来越受到IC/FPGA开发者的青睐。在PUSCH链路系统 的实行中，主要使用Modelsim来进行FPGA模块和链路的功能仿真验证，保证 模块和链路逻辑功能的正确性。ModelSim软件是行业内唯一的单内核支持VHDL 和Verilog混合仿真的集成开发环境。它采用方便的Tcl/Tk技术、优化改良后的 编译技术，并进行RTL和门级优化，仿真和编译的速度极快，代码管理优秀，波 形便于分析和调试，支持VHDL和Verilog HDL混合仿真，是FPGA/ASIC设计的首 选仿真软件。
+美国MathWorks公司的MATLAB软件是一款用于算法开发、数据分析、数 据可视化的高级技术计算语言和交互式环境，它主要面对复杂的图形化、可视化 科学计算、算法仿真、建模场景的模拟以及交互式代码设计的集成开发环境。 Matlab特别擅长于矩阵计算、科学数据分析和可视化研究，它对非线性动态系 统的建模和仿真分析尤为到位，为工程设计和科学研究提供强有力的支持和可靠、 方便的解决方案。Matlab简单的命令窗口、历史命令窗口、编辑器和调试器、 工作空间，以及完备方便的调试系统，不必编译就可直接运行的方便设计等特点， 使得Matlab成为当今科学研究领域最常用的分析和计算工具。MATLAB自带多 种应用的库函数，也可用户方便的自定义或扩充一些功能函数，在复杂的科学计 算、数学矩阵运算时可供直接调用。MATLAB对混合编程的支持，使得用户可以 方便地调用其他用C/C++语言编写的函数或代码，也可以在C/C++程序代码中直 接中调用MATLAB编写或自带的功能函数来计算、执行工程代码。
+23
+GCC (GNU Compiler Collection, GNU编译器套装)是一套支持多种编程语言 (主要是C/C++)的集成编译器，它由GNU工程牵头开发，一般内置与Linux操 作系统之中。GCC是开源、自由软件发展的典型例子，是大多数Unix类型操作 系统标准内置的集成编译器，GCC开源的代码架构使得其在发展过程中经过无数 优秀人士的更改和完善，现己具备丰富的功能和高效的编译效率。GCC支持很多 CPU芯片，支持X64、X86以及ARM架构，它是各种Linux系统下最常用也最方 便的C/C++语言集成编译器，GCC编译器编译C代码为可执行文件的编译链接过 程大致分为四个步骤：预处理(Preprocessing)＞编译(Compilation)、汇编(Assembly) 和链接(Linking)o
+整个频谱感知链路系统均在Linux环境下开发完成，使用Python脚本语言作 为简单的数据处理与文本分析工具，使用Tel脚本作为Modelsim仿真软件运行的 脚本，使用GCC作为Host Server中C语言编译链接的工具。Linux服务器主机使 用的是装有Centos4.7版本操作系统的DELL服务器，服务器拥有20个核，16GB 的内存，Centos是RedHat公司的rhel系统源代码重新编译的版本，和rhel相比 去掉了 rhel版本的商业软件和一些注册商标，而rhel操作系统是redhat系统的 改良版本，自2003年之后，RedHat公司停止发布redhat操作系统，之后发布的 系统均为 redhat enterprise linux,简称 rhel。

@@ -1,0 +1,16 @@
+摘要
+作为当今国民经济和国防建设不可或缺的战略性基础设施，近年 来我国的北斗卫星导航系统COMPASS得到了高速发展和广泛部署。 同时，无线通信业务尤其是包括国际移动通信(IMT, International Mobile Telecommunications)系统在内的移动宽带应用的迅速增长， 使其对频谱资源的需求日益加大，频谱资源的分配问题日益凸显。因 此，为确保北斗卫星导航系统长时间、高精度的正常运转并在全球导 航定位业务上取得竞争优势，必须充分考虑与传统地面无线通信系统 之间的的邻频干扰问题。
+基于此，本文的研究重点包括：系统间干扰共存分析原理，给出 了基于链路预算准则的确定性分析方法及基于蒙特卡罗仿真的系统 级仿真方法；S频段北斗卫星无线电测定业务(RDSS, Radio Determination Satellite Service)移动终端与 TD-LTE 系统共存研究、C 波段北斗固定地面站与IMT演进系统共存研究，并给出了相应的共 存评估条件；基于二维泊松点分布(PPP, Poisson Point Process )的集 总干扰建模与分析，采用随机几何原理对干扰共存问题进行理论研究 并提供不同场景下系统间干扰共存评估。
+本文立足我国北斗卫星RDSS系统发展的重大国家战略意义和 紧迫需求，针对在实际部署中遇到的邻频系统干扰问题，给出保护我 国北斗卫星导航系统不受邻频系统干扰的共存条件、共存指标，提出 合理的系统共存保护策略，为相关部门制定指导性政策法规提供支撑 及建议。
+在文章最后对全文进行了概括总结，同时根据实现情况和本领域 技术发展情况，对后续研究内容进行了展望。
+关键词：北斗卫星导航系统卫星无线电测定业务TD-LTE系统, IMT及其演进系统干扰共存二维泊松点分布
+COEXISTENCE STUDY BETWEEN COMPASS AND
+SYSTEMS IN ADJACENT BANDS
+ABSTRACT
+As the indispensable strategic infrastructure of national economy and national defense, BeiDou Navigation Satellite System (COMPASS) has been rapidly developed and deployed recent years. Meanwhile, wireless communications services, especially the mobile broadband applications including International Mobile Telecommunications (IMT) has been developing rapidly, making its growing demand fbr spectrum. Then, Spectrum allocation problem is increasingly highlighted. In order to ensure COMPASS fbr a long time and high precision of the normal operation and to gain a competitive edge in the global navigation positioning service, the coexistence problem between COMPASS and terrestrial commmunitation systems in adjacent band must be fully considered.
+On that basis, the focus of this paper includes three parts : The theory of inter-system interference including deterministic analysis by link budget and Monte Carlo system-level simulation methods; Coexistence analysis between COMPASS RDSS mobile terminals and TD-LTE system in S band and coexistence analysis between COMPASS earth station and IMT-Advanced system and providing the coexistence conditions and criteria; Modeling and analysis fbr aggregate interference using two-dimensional Poisson Point Process (PPP) model, and coexistence analysis using stochastic geometry and providing coexistence criteria in different scenarios.
+In this paper, we investigate the coexistence between COMPASS and IMT systems in S- and C-band basing on the strategic importance and urgent needs fbr Beidou RDSS system. We also provide some deployment suggestions and supporting policies to gurantee the normal
+3
+operation of Beidou satellite navigation system.
+We conclude the paper with summaries and a discussion on future research directions.
+KEY WORDS: COMPASS', RDSS, TD-LTE system, IMT system, Interference coexistence, PPP model

@@ -1,0 +1,214 @@
+目录
+
+摘要										I	
+
+Abstract 	 	 .  	 	 	 	 	 	 	I I I 第一章绪论	1
+
+　　1.1研究背景	1
+
+1.2认知无线电技术简介	2
+
+1.3单节点频谱感知	4
+
+1.4协作频谱感知	6
+
+1.5智能频谱感知	7
+
+　　　　1.5.1智能无线通信	7
+
+　　　　1.5.2基于深度学习的数据增强技术	9
+
+　　　　1.5.3基于深度学习的频谱感知技术	10
+
+1.6频谱感知面临的技术挑战	11
+
+1.6.1隐藏PU发现挑战	11
+
+　　　　1.6.2感应时间过短挑战	11
+
+　　　　1.6.3频谱感知决策问题	12
+
+　　　　1.6. 4新结构网络影响		
+
+　　1.7论文研究内容及章节安排	 
+
+第二章研究基础	15
+
+　　2.1频谱感知模型	15
+
+　　2.2单节点频谱感知	16
+
+　　　　2.2.1循环平稳特征检测	16
+
+2.2.2匹配滤波器法	19
+
+2.2.3能量检测法	21
+
+2.3协作频谱感知算法	22
+
+2.3.1系统结构	23
+
+　　　　2.3.2协作频谱感知硬判决融合准则	25
+
+　　　　2.3.3协作频谱感知软融合判决准则	26
+
+　　2.4小结	28
+
+第三章 基于观测信号半自适应采样的频谱感知技术	29
+
+　　3.1 系统模型	29
+
+　　3.2半自适应采样频谱感知技术	30
+
+3.2.1釆样点对性能的影响	30
+
+3.2.2 A-CFAR	32
+
+3.2.3基于CNN和LSTM网络架构的环境信噪比估计	35
+
+　　3.3基于观测信号半自适应采样和估计信噪比的协作频谱感知	37
+
+3.3.1信噪比估计网络训练	37
+
+3.3.2基于A-CFAR的协作频谱感知	38
+
+　　3.4实验与分析	39
+
+3.4.1基于CNN和LSTM的信噪比估计	39
+
+3.4.2频谱感知性能比较	43
+
+　　3.5 本章小结	45
+
+第四章智能频谱感知技术	47
+
+　　4.1基于生成对抗网络的频谱感知技术	47
+
+4.1.1经典卷积神经网络	47
+
+4.1.2深度卷积生成对抗网络	48
+
+4.1.3系统模型	50
+
+4.1.4核心算法	51
+
+4.1.5仿真实验	58
+
+　　4.2基于卷积神经网络的协作频谱感知	66
+
+4.2.1感知场景	68
+
+4.2.2感知模型	69
+
+4.2.3智能协作频谱感知	70
+
+4.2.4仿真与讨论	73
+
+　　4.3 本章小结	77
+
+第五章相关异构认知网络下的协作频谱感知	79
+
+　　5.1集中式协作频谱感知模型及N-out-of-K判决规则	79
+
+　　　　5.1.1集中式协作频谱感知模型	79
+
+　　　　5.1.2 N-out-of-K融合准则介绍	80
+
+　　5.2相关异构认知网络N-out-of-K判决阈值及近似模型推导	81
+
+　　　　5.2.1独立异构认知网络下N-out-of-K最优判决阈值	81
+
+　　　　5.2.2异构认知网络的相关节点假设及相关性关系分析	82
+
+　　　　5.2.3近似模型及阈值求解	87
+
+　　　　5.2.4阈值近似误差推导	88
+
+　　5.3仿真与讨论	92
+
+　　5.4本章小结	97
+
+第六章总结与展望	99
+
+参考文献	101
+
+致谢	109
+
+攻读学位期间发表的学术论文目录	111
+
+
+
+缩略语表
+
+英文简称	英文全称	　　　　中文全称
+
+　　ss	Spectrum sensing	　　　　频谱感知
+
+　　css	Cooperative spectrum sensing	　　　协作频谱感知
+
+　　FC	Fusion center	　　　　融合中心
+
+　　CR	Cognitive radio	　　　　认知无线电
+
+　　loT	Internet of things	　　　　　物联网
+
+　HCRN	Heterogeneous cognitive radio network	　异构认知无线电网络
+
+　　PU	Primary user	　　　　主要用户
+
+　　su	Secondary user	　　　　次要用户
+
+　　ED	Energy detector	　　　　能量检测
+
+　　EGG	Equal gain eombining	　　　　等增益合并
+
+　　SC	Selection combining	　　　　选择式合并
+
+　　MRC	Maximal ratio combining	最大增益比合并
+
+　　SNR	Signal to Noise Ratio	　　　　　信噪比
+
+　　CNN	Convolutional Neural Networks	　　　卷积神经网络
+
+　　DSA	Dynamic Spectrum Access	　　　动态频谱接入
+
+　　CRN	Cognitive radio Networks	认知无线电网络
+
+　　Al	Artificial Intelligence	　　　　人工智能
+
+　　STFT	short time Fourier transform	短时傅里叶变换
+
+　　MLP	Multilayer Perceptron	　　　　多层感知器
+
+　　DRL	Deep Reinforcement Learning	　　　深度强化学习
+
+　　ML	Machine Learning	　　　　机器学习
+
+　　DL	Deep Learning
+
+Orthogonal Frequency Division	　　　　深度学习
+
+　OFDM	Multiplexing	　　　正交频分复用
+
+
+
+　　　LRN	Local Response Normalization
+
+
+
+　　BN	Batch of Standardized	　　　　批标准化
+
+　SGD	　　Stochastic Gradient Descent Optimizer	　　随机梯度下降优化器
+
+DCGAN	Deep Convolution Generates
+
+Adversarial Networks	深度卷积生成对抗网络
+
+　GAN	Generative Adversarial Networks	　　　生成对抗网络
+
+　　PD	Detection Probability	　　　　检测概率
+
+　PFA	False Alarm Probability	　　　　虚警概率
+
+
+

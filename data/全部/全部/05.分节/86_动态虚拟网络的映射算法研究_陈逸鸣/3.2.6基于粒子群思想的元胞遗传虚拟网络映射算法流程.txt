@@ -1,0 +1,69 @@
+3.2.6基于粒子群思想的元胞遗传虚拟网络映射算法流程
+图3-8 VNE-PCGA算法流程图
+VNE-PCGA算法的流程如图3-8以及表3-1所示：
+(1) 初始化：读取底层网络的相关信息，依据到来的虚拟网络请求内容生 成包含nxn个染色体的初始种群，将初始种群置于nxn的元胞空间中，随机确 定各个染色体的生存状态与初始速度。
+(2) 种群适应度计算：计算当前种群中的平均适应度与自适应调整因子的 数值，并记录最优染色体与最优适应度。
+31
+(3) 选择：依次选择“生”状态的染色体，选择其邻居中拥有最优适应度 的个体作为配偶进行遗传操作。
+(4) 交叉：通过部分交叉的方式互换两个父代染色体的部分片段并进行冲 突消除。
+(5) 变异：以一定的概率利用公式(3-8)对经过交叉操作的个体的速度进 行更新，并利用更新后的速度向量根据公式(3-9)对交叉操作后的个体进行变异 操作。•
+(6) 可行性检查：检查遗传操作所产生的两个子代个体的可行性，首先验 证子代是否满足节点资源约束条件，随后通过Dijkstra算法计算出虚拟链路的映 射方案，并验证链路映射方案是否满足虚拟链路的带宽需求。
+(7) 个体更新：若子代个体为不可行解，则保持中心元胞个体不变。若子 代为可行解，则计算子代个体的适应度并检验子代个体是否优于中心元胞个体, 若子代更优，则利用最优的子代个体替代原有的中心元胞个体，并对整个种群的 最优个体以及最优适应度进行更新，否则保持中心元胞个体不变。
+(8) 迭代：对种群内的所有个体遍历完毕后，按照公式(3-7)所示的演化 规则更新每个个体的生存状态，得到整个种群下一时刻的生存状态。判断迭代次 数是否达到最大值以及连续五次迭代中种群的最优适应度是否差距不足5%,若 未达到终止条件，则返回步骤(2),若达到终止条件，则执行步骤(9) o
+(9) 输出：将得到的最优节点映射方案与对应的链路映射方案进行输出， 并等待新的虚拟网络请求到来。
+32
+表3-1 VNE-PCGA伪代码
+VNE-PCGA伪代码
+输入：Gs = (NSf Es), Gv = (Nv，Ey), max time Tm iteration threshold Ts, mutation probability Pm
+输出：虚拟网络映射结果
+1.
+generated initial population
+2.
+Randomly initialize cellular state S： j
+3.
+while (丁＜陰)do
+4.
+T=T+1
+5.
+update favg and the adaptive adjustment factor
+6.
+for i=lTn do
+7.
+for j~l^n do
+8.
+while (Sij = 1) do
+9.
+get_neighborhoods(Xij)
+10.
+execute crossover operation
+11.
+if random(OJ) V T^then
+12.
+execute mutation operation by formula (3-8) and (3-9)
+13.
+end if//在“活”状态元胞的邻域内进行交叉变异操作
+14.
+feasibility checking&evaluate fitness
+15.
+if child is better then
+16.
+replace X^j with child
+17.
+update Xgib and best fitness value
+else
+19.
+remain X[j unchanged
+20.
+end if//若字代个体优于父代个体则进行替代
+21.
+end while
+22.
+end for
+23.
+end for
+24.
+update the cellular state by formula (3-7)
+25.
+end while
+26.
+return 〃返回虚拟网络映射结果并更新底层网络

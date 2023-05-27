@@ -1,0 +1,16 @@
+3.3.1搭建实践集群
+为了避免干扰实际分析系统的正常稳定工作，我们将会在一个模拟分析系统 的Hadoop集群中完成方案的测试实践工作，验证该方案的正确性和可行性后再进行方案的实际应用。
+本次实践搭建的Hadoop集群，选用Hadoop 2.5.0版本，总共有4个节点， 其中1个主节点、3个子节点。主节点上运行NameNode进程、ResourceManager 进程，子节点上均运行DataNode进程、NodeManager进程、ApplicationMaster进 程。所有节点通过100Mbps网卡连接在同一个交换机上。4个节点的硬件配置均 相同，单节点的配置信息如表3-1所示，实践集群架构如图3-3所示。
+表3-1服务器配置信息
+服务器型号	Lenovo 启天 M4360
+处理器型号	Pentium(R) Dual-Core CPU E5800 @3.20GHz
+内核数	1
+单个内核超线程数	2
+内存容量	4G
+硬盘	500G
+网络带宽	100Mbps
+操作系统	CentOS 6.5 x64
+Name Node
+Resource Manager
+Job History Server
+图3-3实践集群架构图

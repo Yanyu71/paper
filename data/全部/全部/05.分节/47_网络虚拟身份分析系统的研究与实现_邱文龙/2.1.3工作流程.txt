@@ -1,0 +1,7 @@
+2.1.3工作流程
+1)客户端 JobClient 提交一个MapReduce 作业
+2) JobClient 向 JobTracker 申请一个 Job Id;
+3)JobClient根据配置文件信息将输入数据进行分块并同时把执行作业所需要的资源存放到HDFS 上，HDFS 上会有一个以此JobId 命名的文件夹，有的文件可能不止存放在一个节点上。
+4)JobClient 调用JobTracker 的 submitJob0方法，此方法会将此作业提交到集群。
+5)作业提交后，JobTracker 会将其放入一个作业队列中，通过调度器配置的调度算法对其进行初始化调度。调度器有三种: FIFO 调度器、公平调度器(FaiScheduler)和计算能力调度器(Capacity Scheduler)，默认为 FIFO 调度器，即先到先处理。TaskTracker 会定期给 JobTracker 发送一个心跳，告诉JobTracker 它的运行状态，同时心跳中还包含其他有用的信息，比如是否可接收新任务、当前任务的进度等信息，JobTracker 可以凭借这些信息来更好地分配 MapTask 和ReduceTask。
+整个过程如果有一个任务失败了(或某一个数据节点坏了)，Hadoop 集群会重新读取该任务的数据(因为默认的数据备份是3份)将其分发到新的正常工作的节点。所以 Hadoop 系统的可靠性是很强的。

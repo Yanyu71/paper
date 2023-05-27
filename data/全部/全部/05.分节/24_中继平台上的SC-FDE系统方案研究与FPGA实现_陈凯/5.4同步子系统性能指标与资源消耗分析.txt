@@ -1,0 +1,14 @@
+5.4同步子系统性能指标与资源消耗分析
+系统尚未进行板级调试，只经过了仿真。不过在仿真中，加入了各种噪声，只要保 证有效的数据比特数在两个以上，都能准确的找到同步码字的位置。因此按照每一个bit 可以抵抗6dB噪声的方法计算，该系统的动态范围能够做到大约70dB左右。
+系统的资源消耗如下:
+/ Total logic elements
+Total combinational functions Dedicated logic registers
+Total registers
+Total pins
+Total virtual pins
+Total memory bits
+Embedded Multiplier 9-bit elements
+Total R±s
+图5- 14同步子系统资源消耗
+从图5-14可以看出系统对资源的消耗并不大，主要的资源消耗集中在FFT与IFFT 上。
+48

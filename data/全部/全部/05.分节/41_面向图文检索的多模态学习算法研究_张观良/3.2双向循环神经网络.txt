@@ -1,0 +1,58 @@
+3.2双向循环神经网络
+词向量模型中，每个单词都有自己特有的词向量并固定不变，不同单词之间的词向量互不相同。但将单词放在句子中时，希望单词的特征能够根据所处上下 文的不同而有所变化。例如："A police car zoomed by very close to them.”和“The car park was absolutely packed solid with people."中的单词“car”,在第一个句子 中与"police"组成"policecar”,而第二个句子中则与“park”组成"carpark”, 这种关系可以通过依赖树得到，如图3-3所示，并利用递归神经网络得到该词组 的特征。但本文在后续的多模态模型中，希望单词特征本身就可以包含这种信息, 相当于“car”的单词特征中有“police”的信息，因此本文利用循环神经网络中 隐藏状态可以传递的特性，实现单词包含句子信息的功能。循环神经网络通过状 态的传递使得每个单词的特征都包含着前文的信息，但缺少后文的信息，例如
+“The carpark”中，“car”需要包含“park”的单词。为了使得每个特征都包含 前后文信息，需要添加一个相反的状态传递序列，成为双向循环神经网络 （Bidirectional Recurrent Netural Network, Bi-RNN）网。假定前向传递序列的隐藏层 状态为矿，后向传递序列的隐藏层状态为矿，则最终输出的结果是 z, —g（吧.（矿+矿）+聂，其结构如图3-4所示。
+ROOT
+假定输入句子有N个单词，单词的词向量用玉表示，其中t = l...N表示单词 在句子中的位置，根据Bi-RNN的定义，得到如下式子：
+et=f(Wext+be)	(3-4)
+h—+WM+bf)	(3-5)
+hf=f(et+Wbh^+bb)	(3-6)
+鸟=，吧印+矿)+如)	(3-7)
+式(3-5)和式(3-6)分别是隐藏状态的前向转移和后向转移。每个单词特征通过 式(3-4)进行一次转换后，前后隐藏状态就分别通过权重参数与该单词特征结合， 得到该位置上的隐藏状态。最后模型将序列的隐藏状态相加，并进行非线性转换 从而得到输出特征。根据以上式子可以得到双向循环神经网络的训练算法：
+算法3-2双向循环神经网络训练算法
+输入：损失函数误差delta,.,单词特征耳，其中i = O...N-l
+输出：参数的导数△叱,△飪，地,和输出s,.
+初始化：△化,△吃,竺,的,M，紬为0，前向和后向传递缓存 也,旳为0,其中i = Q...N-\
+1、前向传播，计算输出号.
+for z = 0 to Ndo
+e,=f(Wex,+be)
+end for
+试=f(eo+b‘)
+加=1"1+辅)
+for i = 1 to N_\ do
+矿=f(el+Wfh!_}+bf)
+end for
+for i = 1 to N-2 do
+就=，(e,+伍戒+勾)
+end for
+（续上表）
+for z = 0 to N—l do
+￥=■/（气（矿+矿）+如）
+end for
+return s
+2、后向传播，计算参数导数
+for i = 7V-l toO do
+ds = delta. *s；
+AWd =^Wd+hfdsT
+Nbd = bJ^d +ds
+4F+W汕 dh_f=df^h/'
+if z > 1 then
+^Wf=^Wf+h^dh_fT
+end if
+AZ>y = +dh_fT de = dh_f *e/ △阡△錦+x# bbe =皿+de
+if z >1 then
+end if
+end for
+for z = 0 to TV ~ 1 do
+ds = delt^ *5/
+△町=码+灿丁 db—dbj+Wjds dh_b = dbi*hf
+if z<A^-lthen
+end if
+(续上表)
+hsbb =^bb+dh_br de = dh_b*e.
+△阡頌+耳把
+△b*=?e+de
+if i<N—l then dbM=dbM+W^dh_b
+end if
+end for
+return △明,△”,△伍△佻,伙，啊
+在双向循环神经网络的后向传播中，根据式(3-7)分出两条状态传递序列，对 应步骤2中的两个循环，因此利用BPTT算法分别在这两条状态传递序列中计算 参数导数。在后向传播过程中，用于保存从前后状态和输出号.传来的导数。

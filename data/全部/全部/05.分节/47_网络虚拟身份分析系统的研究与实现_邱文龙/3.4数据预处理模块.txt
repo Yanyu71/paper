@@ -1,0 +1,73 @@
+3.4数据预处理模块
+数据预处理模块是一个基于 hadoop 的处理架构。我们从网络监控平台将数据下载到本地，由于采集的数据包含两千多家企业以及半年的数据，所以数据量非常大，因此需要上传到我们搭建的 Hadoop 平台上。采集的数据包括 HTTP 报文数据、DNS 报文数据。由于是通过设备采集数据，不可避免的会受到人为或非人为的影响，因此需要对从网络监控平台采集到的数据进行预处理。
+将采集到的报文数据上传到分布式存储系统 HDFS，通过 MapReduce 预处理报文数据，得到结构整齐的数据报文。预处理之后得到的数据报文字段如表 3-1 所示:
+表 3-1 数据报文格式
+名称
+customer id
+host name
+description
+user name
+cert_type
+cert code
+org name
+country
+note
+pinyin
+netid type
+netid account
+netid pass
+netid url
+first time
+last time
+netid count
+mac
+类型
+BIGINT
+VARCHAR(128)
+VARCHAR(128)
+VARCHAR(128)
+INTEGER
+VARCHAR(36)
+VARCHAR(140)
+VARCHAR(128)
+VARCHAR(2048)
+VARCHAR(512)
+INTEGER
+VARCHAR(128)
+VARCHAR(128)
+VARCHAR(128)
+INTEGER
+INTEGER
+INTEGER
+VARCHAR(128)
+数值
+DEFAULT O
+DEFAULT
+DEFAULT
+DEFAULT
+DEFAULT 0
+DEFAULT
+DEFAULT
+DEFAULT
+DEFAULT
+DEFAULT
+DEFAULT O
+DEFAULT
+DEFAULT
+DEFAULT
+DEFAULTO
+DEFAULTO
+DEFAULT O
+DEFAULT
+说明
+探针设备号
+主机名
+用户名
+身份类型
+身份号
+组织名称
+虚拟身份类型
+虚拟身份号码
+在一个上报周期内一小时)此虚拟身份第一次出现的时间
+在一个上报周期内一小时)此虚拟身份最后一次出现的时
+设备的MAC 值

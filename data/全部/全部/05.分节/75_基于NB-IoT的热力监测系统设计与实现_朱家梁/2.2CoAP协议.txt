@@ -1,0 +1,2 @@
+2.2CoAP协议
+CoAP(Constrained Application Protocol)^一种在物联网世界中类似 web 的协 议，它的详细规范定义在IETFRFC7252规范中。CoAP名字翻译来就是“受限应 用协议”，该协议适用在资源受限的物联网设备上。

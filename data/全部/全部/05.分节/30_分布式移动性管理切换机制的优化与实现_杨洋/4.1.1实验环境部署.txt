@@ -1,0 +1,18 @@
+4.1.1实验环境部署
+本文的VDMM方案的验证使用的是Docker平台?Docker是一个开源的容器虚 拟化平台，Docker平台提供了在容器(松散和隔离性的环境中)中进行应用程 序的打包和运行的功能。Docker具有隔离性和安全性，因此允许在指定的主机 上运行多个容器。容器是轻量级的，因为它们不需要管理程序的额外负载，但是 需要在主机的内核中运行。你甚至可以在实际上是虚拟机的主机中运行Docker 容器。
+Docker中有两个重要概念，一个是镜像(Image),另一.个是容器 (Container)。容器就是利用Docker构建出来的虚拟环境。镜像类似于虚拟机 中的镜像，利用Docker运行镜像即可还原出构建的容器。通过配置环境变量可 以形成自己的镜像。如图4-1所示是Docker的结构图，不同于传统虚拟机技术, 为每一个环境虚拟了一整套物理硬件并搭载完整的操作系统，Docker的各容器 直接共享了宿主机的Linux内核，不需要为每个容器重复加载资源，因此节约了 大量的内存空间，启动速度也大大加快。
+图4-1 Docker结构图
+下面介绍在Linux系统上安装Docker平台的步骤: a.首先输入“yum check-update"更新包数据库；
+图4-2更新yum库
+b.输入“yum install docker命令安装 Docker：
+[rootslocaIhost yum install docker
+图4-3 Docker安装
+安装完成后，提示安装成功：
+Installed：	...	§
+docker.x86_64	.3-59.el?.centos
+Dependency I nsta 11 ed ?:
+audit-1ibs-pythDB?0：2.6.5-3.el? docker-coswin.x86_64 2:1.10.3-59.el7,centos 1ibsemanage-python.x86_64 8：Z.5-4.el?
+policycoreutiIs-python.x86_64 0：Z.5-9?el? yaJI.x86_64 6：Z.0.4-4.el?
+Complete?
+[root@ loca Ihost ~箱
+图4-4 Docker安装成功

@@ -1,0 +1,95 @@
+2.1.2LTE网络指标
+LTE网络的关键性能指标（KPD主要包括接入类指标、移动性指标、资源 利用率指标、保持性指标、完整性指标、业务类指标以及传输模式占比指标共七 类。
+a、接入类指标
+•	RRC连接建立成功率，其计算公式如下：
+PrrCt = -suss * 100%	（2-1）
+^RRC-request
+其中，Prrct代表RRC连接建立成功率，反映了小区或者基站的用户设备的接纳 能力，包括信令类和以及服务类，RRC连接建立成功是指用户设备与网络之间 成功的建立了连接；gRCFccess代表RRC连接建立成功次数；nRRC_request^ RRC连接建立请求次数。
+•	E-RAB建立成功率，其计算公式如下：
+PE-RAB = EABFCcess * 10Q%	（2-2）
+nERAB-request
+其中，Pe_R4B代表E-RAB建立成功率；nERAB-success代表E-RAB建立成功数； nER4B-request代表E-RAB建立请求数。E-RAB是由核心网发起建立的，E-RAB 的成功建立，即为一个基本业务的建立完成，用户设备进入了业务使用过程。
+•	RRC连接重建比率，其计算公式如下：
+14
+PRRC-2 二
+―――reqizestz
+nRRC-request^nRRC-request2
+*100%
+(2-3)
+其中，Prrc-2代表RRC连接重建比率，反映了空口无线连接的可靠性以及稳定 性；nRRC-reqaest2代表RRC连接重建请求次数。
+・无线接通率，其计算公式如下：
+Pconnect ~ PrRC-1 * Pe-RAB	(2-4)
+其中，Pconnect代表了无线接通率，可以用来统计用户设备接入网络的性能。 b、移动性指标
+切换成功率，其计算公式如下:
+p _ "Si sixccess+"XZ-success+&nmccess * 100% "Si-request +九X2-request+九bi-request
+(2-5)
+其中，代表了切换成功率；「si-success代表了 eNodeB间SI切换出成功次数； 取2-success代表了 eNodeB间的X2切换出成功次数；为n-success代表了 eNodeB 内的切换出成功次数；"Si-request代表了 eNodeB间S1切换出请求次数； nx2-request代表了 eNodeB间的X2切换出请求次数；&n-request代表了 eNodeB 内切换出请求次数。
+•	eNodeB内切换成功率，其计算公式如下：
+Pin-sw =詈-…* 100%	(2-6)
+nin-request
+其中，Rn-sw代表eNodeB内切换成功率。
+•	eNodeB内切换成功率，其计算公式如下；
+Pout.sw = ns】-3s+—— * I。。％	(2-7)
+request + nX2-request
+其中，Pout-sw代表eNodeB间切换成功率。
+c、资源利用率
+・	无线利用率，其计算公式如下：
+Putilize = "tuschprb-Ed。…USCHPRBT * 100%	(2-8)
+^UP-PUSCHPRB-2^DOWN-PUSCHPRB-2
+其中，Put〃ize代表无限利用率，反映了网络资源的占用情况，对网络资源监控以 及下一步发展部署有重要参考意义；徇P.PUSCHPRB-1代表了上行PUSCHPRB占 用平均数;九DOWN-PUSCHPRB-1代表下行PDSCH PRB占用平均数;?l{/p_pusCHPRB-2 代表上行PUSCH PRB可用平均数；nD0WN-PuscHPRB-2代表了下行PDSCH PRB 可用平均数。
+上行PRB平均利用率，其计算公式如下:
+PuP-PRB =
+nUP-PUSCHPRB-2
+*100%
+(2-9)
+其中，Pup-prb代表上行PRB的平均利用率，反映了上行物理资源的使用情况。
+15
+下行PRB平均利用率，其计算公式如下:
+Pdown-prb =
+"UP-PUSCHPRB-1 * 100%
+nuP-PUSCHPRB-2
+(2-10)
+其中，Pdown-prb代表下行PRB的平均利用率，反映了下行的物理资源的使用情 况。
+•	eNodeB寻呼拥塞率，其计算公式如下：
+P0Verload =	* 100% = -_ * i00%	(2-11)
+^request	naccept~^ ^discard
+其中，Pgen°ad代表eNodeB的寻呼拥塞率，反映了无线侧寻呼信道的资源的利 用状况；n如card代表了寻呼记录丢弃个数；^accept代表了寻呼记录接收个数； Hreqnest代表了寻呼请求个数。
+d、保持性指标
+・	无线掉线率，其计算公式如下：
+p = "eNB-"eNB-nqf * 10Q%	(2-12)
+ninit^nleave
+其中，Pdrop代表了无线掉线率，能够很好的反映系统的可靠性以及稳定性；neNB 代表了 eNB请求释放的上下文个数；TleNB-nor代表了正常的eNB请求释放的上 下文个数，&n让代表了初始的上下文建立成功的次数，为eave代表了遗留的上下 文个数。
+•	E-RAB掉线率，其计算公式如下：
+p	_	-eNBnov+九
+ERAS-drop	nERAB^ieave+nERAB-$uccess+nERAB^in
+* 100%
+(2-13)
+其中，Perab_mop代表了 E-RAB掉线率；为7MB-eNB代表了 eNB请求释放的E-RAB个数；nERAB-eNBTwr代表了正常的eNB请求释放的E-RAB个数； nERAB-defeat代表了切出失败的E-RAB个数；TIeRAB-Leave代表了遗留的E-RAB 个数；TlERAB-success代表了 E-RAB建立成功数；TlERAB-in代表了切换入E-RAB 数目。
+e、完整性指标
+小区用户面下行丢包率，其计算公式为:
+^downdrop =
+九DR8-aowndrop * ]00% nDRB-downsend
+(2-14)
+其中，Pdowndrop代表了小区用户面下行丢包率，是分组业务影响用户感知的重要 指标及网络优化的依据；tlDRB-downdrop代表了小区DRB业务PDCP SDU下行丢 弃的总包数；殉RB-downsend代表了小区DRB业务PDCP SDU下行发送的总包 数。
+•	小区用户面上行丢包率，其计算公式为：
+Pupdrop =产3°P * 100%	(2-15)
+nDRB-receive
+16
+其中，Pup"op代表了小区用户面上行丢包率，是分组业务影响用户感知的重要指 标及网络优化的依据；电吁即打四代表了小区DRB业务PDCPSDU上行丢弃的 总包数；电RB-receive代表小区DRB业务PDCP SDU上行发送的总包数。
+小区用户面下行平均时延，其计算公式如下:
+^■down
+down nDRB-send
+(2-16)
+其中，tdown代表了小区用户面下行平均时延，是分组业务网络优化的基础，可以 反映出用户分组业务体验；tDRB-dow”代表了小区DRB业务下行数据包处理总时 延；hDRB-send代表小区DRB业务下行成功发送的PDCP SDU的包数。
+f、业务类指标
+•	MAC层上行误块率，其计算公式为：
+Pbler=^~*100%	(2-17)
+ninltTB
+其中，Pbler代表MAC层上行误块率；Mertb代表上行残留错误TB数；几讥让2代 表上行传输初始TB数。
+•	下行双流流量占比，其公式为：
+p = ----WwnTBRANK?-* 10Q%	(2-18)
+J	ndownTBRANKl +^downRANK2
+其中，力。w代表下行双流流量占比；nd°w"BRANK2代表小区下行传输RANK2的 TB数目；"downTBRANKl代表小区下行传输RANK1的TB数目;.ndownR4NK2代表 小区下行传输RANK2的数目。
+g、传输模式占比
+・	传输模式TM2/TM7只支持单流
+•	传输模式TM3/TM8可支持双流

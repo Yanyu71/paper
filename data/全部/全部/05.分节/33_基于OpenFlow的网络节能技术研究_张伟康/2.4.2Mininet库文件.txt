@@ -1,0 +1,14 @@
+2.4.2Mininet库文件
+Mininet不仅为使用者提供了友好的可交互式命令行，还提供了丰富的库文 件泌1,根据这些库文件可以灵活地创建网络。Mininet提供的库文件主要有6个： mininet.cli 模块、mininet.link 模块、mininet.net 模块、mininet.log 模块、mininet.node 模块、mininet.topo模块。通过这些模块，使用者可以自定义编写网络脚本，实 现自定义的网络功能。
+1.Mininet.cli 模块
+该模块主要包括CLI类，能够为网络节点提供命令行终端控制台。
+2.Mininet.link 模块
+该模块描述了与网络链路相关的类，包括Intf类、TCInf类、Link类、TCLink 类。其中Intf类表示网络中节点接口, TCInf类通过tc（Linux系统下的traffic control 工具）限制带宽、延迟、分组丢失率、最大排队长度等链路信息，TCInf类是Intf 类的子类，Link类标识的虚拟网络中的一条链路，而TCLink类是Link类的子 类，TCLink是链路两端都是TC接口的Link。
+3.mininet.net 模块
+该模块包括Mininet类和MininetWithControlNet类，其中Mininet类表示模 拟的虚拟网络，包括拓扑、交换机、主机、控制器、链路等信息。 MininetWithControlNet 类是 Mininet 的子类，主要用于在使用 userspace datapath 时模拟一个控制器网络。
+4.mininet.log 模块
+该模块下主要包括MininetLogger类，主要用于实现日志记录等功能。
+5.mininet.node 模块
+node模块下主要包括了描述网络基本元素的类，包括网络中的主机、交换机、 控制器等，包括Node类，Controller类，Host类、Switch类。其中Node类是其 他三个类的父类，在实现上其实就是网络名字空间中的一个shell进程，可以通 过各种管道进行通信。Controller类表示网络中的控制器，Host类表示网络中主 机，Switch表示网络中的OpenFlow交换机，这三个又包含许多的具体的实现子 类。
+6.mininettopo 模块
+mininet.topo模块主要负责标识网络拓扑的相关信息，包括Topo类、 SingleSwitchTopo 类、SingleSwitchReverseTopo 类、MinimalTopo 类、LinearTopo 类。其中Topo类是网络拓扑基类，所有拓扑相关实现类的父类，其他的类都是 Topo类的直接子类，标识了特定的网络拓扑，比如线性网络拓扑、星型网络拓 扑等。用户还可以根据自己的需要自行继承Topo类，实现特定网络结构和相关 链路配置参数的网络拓扑。

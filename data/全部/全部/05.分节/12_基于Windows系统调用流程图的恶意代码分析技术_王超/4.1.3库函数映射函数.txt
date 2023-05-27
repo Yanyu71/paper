@@ -1,0 +1,23 @@
+4.1.3库函数映射函数
+库函数映射函数是将具体样本中的所有库函数映射到数据库中的二元组中 的值，其具体实现函数是sysToExtMap()。实现步骤如下：从样本文件提取其中 调用的所有库函数，然后从数据库中提取类型映射码进行匹配，匹配成功置类型 旗帜变量为true,否则置false；随后从数据库中提取操作映射码进行匹配，匹配 成功置操作旗帜变量为true,否则置false；之后根据前两个旗帜变量的值再做最 后一次匹配，匹配比对的对象是一些具体二元映射码，匹配成功置二元映射码旗 帜变量为true,否则为false；最后根据二元映射码旗帜变量的值决定是否保留当 前匹配结果。其流程图如下：
+43
+图4-4库函数映射函数流程图
+下图所示为sysToExtMapO函数的主要实现代码：
+def sysToExtMap(se£f^filename):
+print "QltSysCuUs length is 初"% sei/.allSysCalls._len_()
+print self.extractedCbjects
+models, SystenjCall. createT able (filename)
+if (sei/.allSysCalls. 	len 	()!=2) and len(sei/.extractedQbjects)>S:
+cursor = 0
+objectFlag = False operationFlag = False flaginstruct = False while cursor < len(self.allSysCalls): objectFlag = False operationFlag = False objOnlyFlag = False objCursor = -1 optCursor = -1 print "踏皿& is e,+5etf.allSy5Calls[cursor] for j in range(0,32):
+-if re.search(str(seiy.extractedObjects.get(j)) , seif.all5ysCalls[cursor], re.IGNORECASE): self .objectKap[j].append(cursor) objectFlag = True objCursor = j
+if (2>=set/. allSysCalls [cur sor]. 	len 	() - self, extract edObjects. get (j). 	len 	()>=0): objOnlyflag = True
+print 喩X 钮 或霍£说?費	>
+break
+for j in range(0,4)-
+if re.search(str(se£f,extractedOperations.get(j)) , seif.allSysCalls[cursor], re.IGNORECASE): set/.operation^ap[j].append(cursor) operationFlag = True cptCursor = j
+print in operatiGn^Q
+break
+if objectFlag == False or operationFlag == False:
+图4-5 sysToExtMap()函数的主要代码
+44

@@ -1,0 +1,45 @@
+4.5结论
+在本章中，本文证明了认知用户釆用角度维度频谱机会可以提升认知无线网 络容量。如果次用户发射机的主瓣宽度为5 =。（丄），那么对于DTOR来说， log”
+次用户网络可以获得单点吞吐量。（/零），这比是没有方向性传输的方案的
+0（log«）倍。类似地，如果次用户接收器的主瓣宽度为。=。（丄），那么对于 logw
+OTDR来说，次用户能获得单点吞吐量容量壁）。如果渺=。（丄），那 V n	logn
+么对于DTDR来说，次用户能获得单点吞吐量容量0（
+云=畝丄），那么对于DTOR来说，次用户获得的吞吐量容量是没有方向性传 log"
+输的容量的吳倍。如果，二 /（―-—）,那么对于OTDR来说，次用户获得的吞
+8	logw
+吐量是没有方向性传输的容量的奖倍。如果毎=切（丄），那么对于DTDR来
+°	log 形
+说，次用户获得的吞吐量是没有方向性传输的容量的空己倍。
+本文也根据两种路由方案，即HDP-VDP路由和环绕路由，探索了随机认知 ad hoc网络的连通性。假设主次网络共存在单位面积区域，其中主用户个数为m, 次用户个数为"，且祖和〃有关系n = mp ,本文得到了如下结论；
+1.如果次用户网络釆用HDP-VDP路由，那么当0〉1的时候，能够保证单 个次用户的连通性；当0>2的时候，能够保证一条次用户路径的连通性。
+2.如果使用环绕路由，那么当0>1的时候，能够保证单个次用户和单个次 用户路径的连通性。
+3.在任何一种路由方案之下，都不能保证次用户全网的连通性。
+4.当0S1的时候，对于HDP-VDP路由和环绕路由，都不能保证次用户网 络的连通性。
+5.当次用户采用方向性传输的时候，会提升次网络的连通概率，但是不会
+164
+改变上述结论。
+参考文献
+[4-1] J. Mitola, “Cognitive radio: An integrated agent architecture for software defined radio/5 Ph.D. dissertation, KTH Royal Inst, of Technol., Stockholm, Sweden, 2000.
+[4-2] B. Wang and K・ J. R. Liu, “Advances in cognitive radio networks: A survey/5 IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1, pp. 5-23, Feb. 2011.
+[4-3] T. Yiicek and H. Arslan, “A survey of spectrum sensing algorithms for cognitive radio applications/5 IEEE Communications Surveys & Tutorials’ vol. 11, no. 1, pp. 116-130, Mar. 2009.	...
+[4-4] P. Gupta and P. R. Kumar, "The capacity of wireless networks/9 IEEE Transactions on Information Theory, vol. 46, no. 2, pp. 388-404, Mar. 2000.
+[4-5] S.-W. Jeon, N. Devroye, M. Vu, S.-Y Chung, and V larokh„ "Cognitive networks achieve throughput scaling of a homogeneous network/' IEEE Transactions on Information Theory, vol. 57, no. 8, pp. 5103-5115, Aug. 2011.
+[4-6] C. Yin, L. Gao and S. Cui, “Scaling Laws for Overlaid Wireless Networks: A Cognitive Radio Network versus a Primary Network/7 IEEE/ACM Transactions on Networking, vol. 18, no. 4, pp. 1317-1329, Aug. 2010.
+[4-7] W. Huang and X. Wang, "Capacity scaling of general cognitive networks了 IEEE/ACM Transactions on Networking, vol. 20, no. 5, pp. 1501-1513, Oct. 2011.
+[4-8] S. Yi, Y. Pei, and S. Kalyanaraman, “On the capacity improvement of ad hoc wireless networks using directional antennas/' The ACM International Symposium on Mobile Ad Hoc Networking and Computing (ACM MobiHoc), pp. 108-116, June 2003.
+[4-9] R Li, C. Zhang, and Y. Fang, “The capacity of wireless ad hoc networks using directional antennas," IEEE Transactions on Mobile Computing, vol. 10, no. 10, pp. 1374-1387, Oct. 2011.
+[4-10] G. Zhao, J. Ma, G.Y Li, et al., “Spatial spectrum holes for cognitive radio with relay-assisted directional transmission/5 IEEE Transaction Wireless Communications, vol. 8, no. 10, pp. 5270-5279, Oct. 2009.
+[4-11] J. Zhang, X. Jia, "Capacity analysis of wireless mesh networks with omni or
+165
+directional antennas,” The 28th IEEE Conference on Computer Communications (INFOCOM), pp. 2881 - 2885, Apr. 2009
+[4-12] Hong-Ning Dai, Kam-Wing Ng, Raymond Chi-Wing Wong, Min-You Wu, “On the capacity of multi-channel wireless networks using directional antennas/5 The 27th IEEE Conference on Computer Communications (INFOCOM), Apr. 2008
+[4-13] X. Wang, J. Liu, W. Chen, Z. Cao, “CORE-4: Cognition oriented relaying exploiting 4-D spectrum holes； Wireless Communications and Mobile Computing Conference (IWCMC), pp. 1982-1987, July 2011.
+[4-14] P. Gupta and P. R. Kumar, "Critical power for asymptotic connectivity/5 Proceedings of the 37th IEEE Conference on Decision and Control, pp> 1106-1110, Dec. 1998.
+[4-15] H. Zhang and J. Hou, “On the critical total power for asymptotic k-connectivity in wireless networks,24th Annual Joint Conference of the IEEE Computer and Communications Societies (INFOCOM), pp. 466-476, Mar. 2005.
+[4-16] W. Ren, Q. Zhao and A. Swami, “On the Connectivity and Multihop Delay of Ad Hoc Cognitive Radio Networks/5 IEEE Journal on Selected Areas in Communications, voL29, pp. 805-818, Apr. 2011.
+[4-17] W. C. Ao, S. Cheng and K. Chen, "Connectivity of Multiple Cooperative Cognitive Radio Ad Hoc Networks/5 IEEE Journal on Selected Areas in Communications, voL30, pp. 263-270, Feb. 2012.
+[4-18] A. Abbagnale, F. Cuomo and E. Cipollone, "Measuring the connectivity of a cognitive radio ad-hoc network/5 IEEE Communications Letters, vol. 14, pp. 417-419, May 2010.
+[4-19] G. Mao and B. D. Anderson, “On the asymptotic connectivity of random networks under the random connection model,IEEE International Conference on Computer Communications (INFOCOM), pp. 631-639, Mar. 2005.
+[4-20] A. Ghasemi and E. S. Sousa, ^Interference aggregation in spectrum sensing cognitive wireless networks,” IEEE Journal of Selected Topics in Signal Processing, vol. 2, no. 15 pp. 41-56, Feb. 2008.
+[4-21] X. Feng and P. R. Kumar, “Scaling laws for ad hoc wireless networks: An information theoretic approach/5 Foundations and Trends in Networking, vol. 1, no. 2, pp. 145-270, 2006.
+166

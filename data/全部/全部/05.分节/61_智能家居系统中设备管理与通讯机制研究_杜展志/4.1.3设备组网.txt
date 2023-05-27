@@ -1,0 +1,10 @@
+4.1.3设备组网
+本智能家居系统主要通过Onboarding框架来实现设备的组网机制，通过对 Onboarding 九种不同的登陆状态：ERROR> CONNECTING_ONBOARDEE_WIFI. FINDING_ONBOARDEE、JOINING_SESSION, CONNECTING_TARGET_WIFI, VERIFYING_ONBOARDED, VERIFIED_ONBOARDED> ABORTING、ABORTED 分别处理，确保瘦客户端设备能连接到目标网络。具体组网的核心代码如
+图4-5所示，其中onboardee代表未入网设备，target代表用户选择的目标网络， 对于入网设备和目标设备的连接事件和广播事件时间都分别设置为20、25s。
+63
+void runOnboardinsO (
+OnboardmgX lanager.getlns tanoeQumOnb-oardinfC
+new Onbo^rdmg Conftfuranen： Onboardee. ^*t5C onnectionTuneou:.
+announcement Timeout.: aifet.wifiC otinec dotiTxiecut .annoimcecxent Timeout
+}
+图4・5未入网设备组网核心代码

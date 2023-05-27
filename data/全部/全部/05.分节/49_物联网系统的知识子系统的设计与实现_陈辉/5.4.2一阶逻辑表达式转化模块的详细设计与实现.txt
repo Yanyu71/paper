@@ -1,0 +1,36 @@
+5.4.2一阶逻辑表达式转化模块的详细设计与实现
+一阶逻辑表达式转化包括本体的加载和解析翻译两个步骤。本模块的输入包含本体 文件或者本体输入流。本质上文件的处理也是先通过加载文件为一个流对象再调用数据 流的加载函数进行处理的。通过将本体进行加载入内存，然后解析生成本体对象，以便 后续处理本体对象获取描述逻辑子句。本课题通过分析Hermit本体推理器的加载过程， 釆用与之同样的方法，即利用OWL API进行进行加载并生成DLOntology对象。再对 DLOntology进行处理。时序图如下图5-12所示：
+图5-12 —阶逻辑转化时序图
+类图如图5-13所示:
+图5-13 一阶逻辑转化类图
+主入口是0WLT0Z3的parse函数，通过调用ParseOWLToDLOntology的接口获得 DLOntology对象。然后根据DLOntology得到DLCIause类型的集合，将每一个 DLClausecf解析生成相应的Z3函数FuncDecl对象。最后根据FuncDecl将DLOntology 中的positiveFacts翻译成一阶逻辑表达式。ParseOWLToOWLOntology用于加载OWL输入流或者本体文件，利用本体管理器OntManager生成OWLOntology对象。解析文件 的流程实质是先加载文件为Inputstream标准流的形式，然后再调用上述流的加载流程。 OntManager使用单例模式，因为可能会出现多个线程同时调用的问题，所以采用多线 程安全模式创建一个本体管理器单例。
+在生成DLOntology对象的过程串，Hermit的Reasoner API会分析OWL API原生 接口 OWLOntology的内部结构生成OWLClausifier对象，然后根据0WLOntology调用 clausify函数对Ongoloty对象进行子句化过程。通过子句化之后生成DLOntology对象， 此对象内部包含一个DLClause的集合对象，此对象集合包含所有的描述逻辑子句。解 析DLClause生成相应的Z3函数的这部分任务由FuncDeclGenerate类实现，利用Z3函 数并生成一阶逻辑表达式的任务则由OWLTOZ3实现。
+表5-20对上述的这些类和对应的实现功能作了简要介绍；
+表5-20本体OWL解析模块主要涉及类
+类/接口	功能描述
+OWLToZ3	OWL解析和翻译一阶逻辑表达式主类。
+通过FuncDeclGenerate生成Z3函数,得到键利值分别为 函数名与函数的Map对象。然后利用此Map将 PositiveFacts中的翻译成一阶逻辑表达式。
+OntManager	采用单例模式实现的本体管理器管理器单例类。■
+ParOWLTo DLOntology	加载本体文件，利用Hermit的Reasoner API生成 OWLOntologyo parse(InputStream inputStream)根据输入 流解析成本体对象。
+parse(File file)根据输入的文件解析成本体对象。
+ParseOWLToDLClauses	获取DLCIause的主类。
+FuncDeclGenerate	Z3函数生成主类。并将函数名和函数更新到-个map中， 用丁?后续使用。
+getFuncDecl(Context, DLCLause)生成 Z3 函数。
+表 5-21 OWLToZ3 类 parseFromStream 方法
+方法	public BoolExpr parseFromStream(Context ctx,
+InputStream inputStream)
+描述	首先调用ParseOWLToDLOntology的接口获得DLOntology对象。然后根 据 DLClause 生成 Z3 的函数 FuncDecU 最后根据 FuncDecl 将 DLOntology 中的positiveFacts翻译成一阶逻辑表达式。
+（续上表）
+参数	@Param context Z3 Context 对象。 @Param InputStream 输入流对象。
+返冋	BoolExpr本体对象
+表 5-22 ParOWLToDLOntology 类 parse 方法
+方法	public DLOntology parse(InputStreain inputStream)
+描述	首先利用OntManager根据输入流加载成本体OWLOntology对象，此对象 是OWL AP【接口，然后利用此对象生成Reasoner对象，然后获取其 DLOntology域并返冋。
+参数	@Param InputStream 输入流对象。
+返冋	DLOntology本体对象
+表 5-23 FundeclGenerate 类 getFuncDecl 方法
+方法	public Quantifier getFuncDecl (Context context,
+DLClaused dlclause)
+描述	解析DLCIause对象，生成Z3函数即FuncDecl对象。并将函数名与FuncDecl 保存到一个全局map中。
+参数	@Param context Z3 Context 对象。 @Param diClause DLCIause 对象。
+返回	void

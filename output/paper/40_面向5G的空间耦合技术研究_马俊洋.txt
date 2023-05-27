@@ -1,0 +1,1142 @@
+﻿{
+    "knowledge_points": [
+        {"title": "移动通信", "en": "Mobile Communication"},
+        {"title": "第五代移动通信系统", "en": "5G Mobile Communication System"},
+        {"title": "4G移动通信系统", "en": "4G Mobile Communication System"},
+        {"title": "无线接入技术", "en": "Wireless Access Technology"},
+        {"title": "大规模天线阵列技术", "en": "Massive MIMO Technology"},
+        {"title": "超密集组网技术", "en": "Ultra-Dense Network Technology"},
+        {"title": "新型多址技术", "en": "New Multiple Access Technology"},
+        {"title": "新型编码技术", "en": "New Coding Technology"},
+        {"title": "全频接入技术", "en": "Full Spectrum Access Technology"},
+        {"title": "空间耦合低密度奇偶校验码", "en": "Spatially-Coupled Low-Density Parity-Check Code"},
+        {"title": "非正交多址", "en": "Non-Orthogonal Multiple Access"},
+        {"title": "信源编码", "en": "Source Coding"},
+        {"title": "信道编码", "en": "Channel Coding"},
+        {"title": "调制器", "en": "Modulator"},
+        {"title": "译码", "en": "Decoding"},
+        {"title": "加性高斯白噪声信道", "en": "Additive White Gaussian Noise Channel"},
+        {"title": "二进制差错信道", "en": "Binary Erasure Channel"},
+        {"title": "二进制对称信道", "en": "Binary Symmetric Channel"},
+        {"title": "移动互联网", "en": "Mobile Internet"},
+        {"title": "超高清显示", "en": "Ultra-High Definition Display"},
+        {"title": "虚拟现实", "en": "Virtual Reality"},
+        {"title": "增强现实", "en": "Augmented Reality"},
+        {"title": "云桌面", "en": "Cloud Desktop"},
+        {"title": "在线游戏", "en": "Online Gaming"},
+        {"title": "物联网采集类业务", "en": "IoT Data Collection Business"}
+    ],
+    "relations": [
+        {"source": "移动通信", "target": "第五代移动通信系统", "type": "is_a"},
+        {"source": "第五代移动通信系统", "target": "4G移动通信系统", "type": "improves"},
+        {"source": "第五代移动通信系统", "target": "无线接入技术", "type": "has"},
+        {"source": "无线接入技术", "target": "大规模天线阵列技术", "type": "has"},
+        {"source": "无线接入技术", "target": "超密集组网技术", "type": "has"},
+        {"source": "无线接入技术", "target": "新型多址技术", "type": "has"},
+        {"source": "无线接入技术", "target": "新型编码技术", "type": "has"},
+        {"source": "无线接入技术", "target": "全频接入技术", "type": "has"},
+        {"source": "新型编码技术", "target": "空间耦合低密度奇偶校验码", "type": "has"},
+        {"source": "空间耦合低密度奇偶校验码", "target": "非正交多址", "type": "applies_to"},
+        {"source": "信源编码", "target": "信道编码", "type": "follows"},
+        {"source": "信道编码", "target": "调制器", "type": "follows"},
+        {"source": "调制器", "target": "信道", "type": "connects_to"},
+        {"source": "信道", "target": "译码", "type": "follows"},
+        {"source": "译码", "target": "信源译码", "type": "follows"},
+        {"source": "译码", "target": "信道译码", "type": "follows"},
+        {"source": "第五代移动通信系统", "target": "移动互联网", "type": "has"},
+        {"source": "移动互联网", "target": "超高清显示", "type": "has"},
+        {"source": "移动互联网", "target": "虚拟现实", "type": "has"},
+        {"source": "移动互联网", "target": "增强现实", "type": "has"},
+        {"source": "移动互联网", "target": "云桌面", "type": "has"},
+        {"source": "移动互联网", "target": "在线游戏", "type": "has"},
+        {"source": "第五代移动通信系统", "target": "物联网采集类业务", "type": "has"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "物联网采集类业务", "en": "IoT collection business"},
+        {"title": "5G通信技术", "en": "5G communication technology"},
+        {"title": "业务需求", "en": "Business requirements"},
+        {"title": "应用场景", "en": "Application scenarios"},
+        {"title": "关键技术", "en": "Key technologies"},
+        {"title": "新型多址技术", "en": "New multiple access technology"},
+        {"title": "大规模天线阵列技术", "en": "Massive MIMO technology"},
+        {"title": "超密集组网技术", "en": "Ultra-dense networking technology"},
+        {"title": "全频谱接入技术", "en": "Full spectrum access technology"},
+        {"title": "滤波正交频分复用技术", "en": "Filter-based orthogonal frequency division multiplexing technology"},
+        {"title": "终端直通技术", "en": "Device-to-device communication technology"}
+    ],
+    "relations": [
+        {"source": "物联网采集类业务", "target": "5G通信技术", "type": "基础支撑"},
+        {"source": "5G通信技术", "target": "业务需求", "type": "满足"},
+        {"source": "业务需求", "target": "5G通信技术", "type": "反映"},
+        {"source": "5G通信技术", "target": "关键技术", "type": "包含"},
+        {"source": "业务需求", "target": "应用场景", "type": "归纳"},
+        {"source": "应用场景", "target": "连续广域覆盖", "type": "包含"},
+        {"source": "应用场景", "target": "热点高容量", "type": "包含"},
+        {"source": "应用场景", "target": "低功耗大连接", "type": "包含"},
+        {"source": "应用场景", "target": "低延时高可靠", "type": "包含"},
+        {"source": "关键技术", "target": "新型多址技术", "type": "包含"},
+        {"source": "关键技术", "target": "大规模天线阵列技术", "type": "包含"},
+        {"source": "关键技术", "target": "超密集组网技术", "type": "包含"},
+        {"source": "关键技术", "target": "全频谱接入技术", "type": "包含"},
+        {"source": "关键技术", "target": "滤波正交频分复用技术", "type": "包含"},
+        {"source": "关键技术", "target": "终端直通技术", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "全双工技术", "en": "Full-duplex technology"},
+        {"title": "频谱共享技术", "en": "Spectrum sharing technology"},
+        {"title": "5G通信系统", "en": "5G communication system"},
+        {"title": "空间耦合LDPC码", "en": "Spatially-coupled LDPC code"},
+        {"title": "常用信道介绍", "en": "Introduction to common channels"},
+        {"title": "加性高斯白噪声信道", "en": "Additive white Gaussian noise channel"},
+        {"title": "二进制擦除信道", "en": "Binary erasure channel"},
+        {"title": "信道编码技术及其发展", "en": "Channel coding technology and its development"}
+    ],
+    "relations": [
+        {"source": "全双工技术", "target": "频谱共享技术", "type": "解决"},
+        {"source": "全双工技术", "target": "自干扰抑制技术", "type": "包括"},
+        {"source": "全双工技术", "target": "组网技术", "type": "包括"},
+        {"source": "频谱共享技术", "target": "动态频谱配置和管理功能", "type": "实现"},
+        {"source": "频谱共享技术", "target": "自主接入网络和网络间切换的自适应功能", "type": "实现"},
+        {"source": "5G通信系统", "target": "用户体验", "type": "提高"},
+        {"source": "5G通信系统", "target": "整个系统的吞吐量", "type": "提高"},
+        {"source": "空间耦合LDPC码", "target": "提升整个系统的可达容量", "type": "有利于"},
+        {"source": "空间耦合LDPC码", "target": "编译码算法复杂度较高", "type": "具有"},
+        {"source": "空间耦合LDPC码", "target": "有限码长空间耦合LDPC码的终止方案", "type": "包括"},
+        {"source": "常用信道介绍", "target": "加性高斯白噪声信道", "type": "包括"},
+        {"source": "常用信道介绍", "target": "二进制擦除信道", "type": "包括"},
+        {"source": "信道编码技术及其发展", "target": "信道编码定理的研究", "type": "分为"},
+        {"source": "信道编码技术及其发展", "target": "可构造信道编码方法及其性能界限的研究", "type": "分为"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "任意速率可迭代编码空间耦合LDPC码", "en": "Arbitrary rate iterative coding spatially coupled LDPC codes"},
+        {"title": "有限码长空间耦合LDPC码的终止方案", "en": "Termination scheme for finite-length spatially coupled LDPC codes"},
+        {"title": "空间耦合LDPC码", "en": "Spatially coupled LDPC codes"},
+        {"title": "LDPC码", "en": "LDPC codes"},
+        {"title": "香农容量极限", "en": "Shannon capacity limit"},
+        {"title": "线性分组码", "en": "Linear block codes"},
+        {"title": "巻积码", "en": "Convolutional codes"},
+        {"title": "LDPC卷积码", "en": "LDPC convolutional codes"},
+        {"title": "密度演进", "en": "Density evolution"},
+        {"title": "译码门限", "en": "Decoding threshold"},
+        {"title": "SC-LDPC码", "en": "Spatially-coupled LDPC codes"},
+        {"title": "HARQ", "en": "Hybrid Automatic Repeat Request"},
+        {"title": "动态中继", "en": "Dynamic relay"},
+        {"title": "物理层安全", "en": "Physical layer security"},
+        {"title": "压缩感知", "en": "Compressive sensing"},
+        {"title": "信源编码", "en": "Source coding"},
+        {"title": "多址接入", "en": "Multiple access"},
+        {"title": "速率匹配空间耦合码", "en": "Rate-matching spatially-coupled codes"},
+        {"title": "校验矩阵构造方式", "en": "Construction method of parity-check matrix"},
+        {"title": "低复杂度编译码算法", "en": "Low-complexity decoding algorithm"}
+    ],
+    "relations": [
+        {"source": "任意速率可迭代编码空间耦合LDPC码", "target": "第三章", "type": "包含"},
+        {"source": "有限码长空间耦合LDPC码的终止方案", "target": "第四章", "type": "包含"},
+        {"source": "空间耦合LDPC码", "target": "第二章", "type": "包含"},
+        {"source": "LDPC码", "target": "第二章", "type": "包含"},
+        {"source": "香农容量极限", "target": "第二章", "type": "相关"},
+        {"source": "线性分组码", "target": "第二章", "type": "相关"},
+        {"source": "巻积码", "target": "第二章", "type": "相关"},
+        {"source": "LDPC卷积码", "target": "第二章", "type": "相关"},
+        {"source": "密度演进", "target": "第二章", "type": "相关"},
+        {"source": "译码门限", "target": "第二章", "type": "相关"},
+        {"source": "SC-LDPC码", "target": "第二章", "type": "相关"},
+        {"source": "HARQ", "target": "SC-LDPC码", "type": "应用"},
+        {"source": "动态中继", "target": "SC-LDPC码", "type": "应用"},
+        {"source": "物理层安全", "target": "SC-LDPC码", "type": "应用"},
+        {"source": "压缩感知", "target": "空间耦合LDPC码", "type": "应用"},
+        {"source": "信源编码", "target": "空间耦合LDPC码", "type": "应用"},
+        {"source": "多址接入", "target": "空间耦合LDPC码", "type": "应用"},
+        {"source": "速率匹配空间耦合码", "target": "实用化研究", "type": "应用"},
+        {"source": "校验矩阵构造方式", "target": "实用化研究", "type": "应用"},
+        {"source": "低复杂度编译码算法", "target": "实用化研究", "type": "应用"},
+        {"source": "第五章", "target": "全文", "type": "总结"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LDPC码",
+            "en": "LDPC Code"
+        },
+        {
+            "title": "校验矩阵H",
+            "en": "Check Matrix H"
+        },
+        {
+            "title": "原模图",
+            "en": "Tanner Graph"
+        },
+        {
+            "title": "变量节点",
+            "en": "Variable Node"
+        },
+        {
+            "title": "校验节点",
+            "en": "Check Node"
+        },
+        {
+            "title": "变量节点度",
+            "en": "Variable Node Degree"
+        },
+        {
+            "title": "校验节点度",
+            "en": "Check Node Degree"
+        },
+        {
+            "title": "度分布",
+            "en": "Degree Distribution"
+        },
+        {
+            "title": "规则LDPC码",
+            "en": "Regular LDPC Code"
+        },
+        {
+            "title": "码率",
+            "en": "Code Rate"
+        },
+        {
+            "title": "空间耦合LDPC码",
+            "en": "Spatially Coupled LDPC Code"
+        },
+        {
+            "title": "耦合链",
+            "en": "Coupling Chain"
+        },
+        {
+            "title": "码长",
+            "en": "Code Length"
+        },
+        {
+            "title": "节点连接跨度",
+            "en": "Node Connection Span"
+        },
+        {
+            "title": "稀疏校验矩阵",
+            "en": "Sparse Check Matrix"
+        },
+        {
+            "title": "门限饱和",
+            "en": "Threshold Saturation"
+        },
+        {
+            "title": "二进制删除信道",
+            "en": "Binary Erasure Channel (BEC)"
+        },
+        {
+            "title": "EXIT函数",
+            "en": "EXIT Function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LDPC码",
+            "target": "校验矩阵H",
+            "type": "包含"
+        },
+        {
+            "source": "LDPC码",
+            "target": "原模图",
+            "type": "包含"
+        },
+        {
+            "source": "原模图",
+            "target": "变量节点",
+            "type": "包含"
+        },
+        {
+            "source": "原模图",
+            "target": "校验节点",
+            "type": "包含"
+        },
+        {
+            "source": "变量节点",
+            "target": "变量节点度",
+            "type": "包含"
+        },
+        {
+            "source": "校验节点",
+            "target": "校验节点度",
+            "type": "包含"
+        },
+        {
+            "source": "LDPC码",
+            "target": "度分布",
+            "type": "包含"
+        },
+        {
+            "source": "LDPC码",
+            "target": "规则LDPC码",
+            "type": "包含"
+        },
+        {
+            "source": "规则LDPC码",
+            "target": "码率",
+            "type": "包含"
+        },
+        {
+            "source": "LDPC码",
+            "target": "空间耦合LDPC码",
+            "type": "包含"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "耦合链",
+            "type": "包含"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "码长",
+            "type": "包含"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "节点连接跨度",
+            "type": "包含"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "稀疏校验矩阵",
+            "type": "包含"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "门限饱和",
+            "type": "包含"
+        },
+        {
+            "source": "二进制删除信道",
+            "target": "EXIT函数",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LDPC块状码",
+            "en": "LDPC block codes"
+        },
+        {
+            "title": "BP译码",
+            "en": "BP decoding"
+        },
+        {
+            "title": "仙农极限",
+            "en": "Shannon limit"
+        },
+        {
+            "title": "码率",
+            "en": "Code rate"
+        },
+        {
+            "title": "BEC信道",
+            "en": "Binary erasure channel"
+        },
+        {
+            "title": "空间耦合LDPC码",
+            "en": "Spatially-coupled LDPC codes"
+        },
+        {
+            "title": "EXIT函数",
+            "en": "EXIT function"
+        },
+        {
+            "title": "节点度",
+            "en": "Node degree"
+        },
+        {
+            "title": "MAP译码门限",
+            "en": "MAP decoding threshold"
+        },
+        {
+            "title": "校验矩阵",
+            "en": "Parity-check matrix"
+        },
+        {
+            "title": "编码速率",
+            "en": "Encoding rate"
+        },
+        {
+            "title": "译码门限",
+            "en": "Decoding threshold"
+        },
+        {
+            "title": "可达仙农容量",
+            "en": "Achievable Shannon capacity"
+        },
+        {
+            "title": "原模图",
+            "en": "Tanner graph"
+        },
+        {
+            "title": "校验节点",
+            "en": "Check node"
+        },
+        {
+            "title": "变量节点",
+            "en": "Variable node"
+        },
+        {
+            "title": "校验比特",
+            "en": "Check bit"
+        },
+        {
+            "title": "奇偶校验矩阵",
+            "en": "Parity matrix"
+        },
+        {
+            "title": "迭代编码",
+            "en": "Iterative encoding"
+        },
+        {
+            "title": "部分校验子前项编码方案",
+            "en": "Partial parity-check matrix encoding scheme"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LDPC块状码",
+            "target": "BP译码",
+            "type": "defines"
+        },
+        {
+            "source": "BP译码",
+            "target": "LDPC块状码",
+            "type": "uses"
+        },
+        {
+            "source": "LDPC块状码",
+            "target": "仙农极限",
+            "type": "compares"
+        },
+        {
+            "source": "码率",
+            "target": "LDPC块状码",
+            "type": "defines"
+        },
+        {
+            "source": "BEC信道",
+            "target": "LDPC块状码",
+            "type": "applies to"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "LDPC块状码",
+            "type": "compares"
+        },
+        {
+            "source": "EXIT函数",
+            "target": "空间耦合LDPC码",
+            "type": "describes"
+        },
+        {
+            "source": "节点度",
+            "target": "空间耦合LDPC码",
+            "type": "defines"
+        },
+        {
+            "source": "MAP译码门限",
+            "target": "空间耦合LDPC码",
+            "type": "compares"
+        },
+        {
+            "source": "校验矩阵",
+            "target": "空间耦合LDPC码",
+            "type": "defines"
+        },
+        {
+            "source": "编码速率",
+            "target": "空间耦合LDPC码",
+            "type": "defines"
+        },
+        {
+            "source": "译码门限",
+            "target": "空间耦合LDPC码",
+            "type": "compares"
+        },
+        {
+            "source": "可达仙农容量",
+            "target": "空间耦合LDPC码",
+            "type": "describes"
+        },
+        {
+            "source": "原模图",
+            "target": "空间耦合LDPC码",
+            "type": "defines"
+        },
+        {
+            "source": "校验节点",
+            "target": "原模图",
+            "type": "belongs to"
+        },
+        {
+            "source": "变量节点",
+            "target": "原模图",
+            "type": "belongs to"
+        },
+        {
+            "source": "校验比特",
+            "target": "奇偶校验矩阵",
+            "type": "belongs to"
+        },
+        {
+            "source": "奇偶校验矩阵",
+            "target": "空间耦合LDPC码",
+            "type": "defines"
+        },
+        {
+            "source": "迭代编码",
+            "target": "空间耦合LDPC码",
+            "type": "uses"
+        },
+        {
+            "source": "部分校验子前项编码方案",
+            "target": "空间耦合LDPC码",
+            "type": "describes"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LDPC块状码编码方法", "en": "LDPC block code encoding method"},
+        {"title": "空间耦合LDPC码的校验子前项编码方案", "en": "Check sub-coding scheme for spatially coupled LDPC codes"},
+        {"title": "部分校验子前项方案", "en": "Partial check sub-coding scheme"},
+        {"title": "部分校验子", "en": "Partial check sub-code"},
+        {"title": "空间耦合LDPC码终止方案", "en": "Termination scheme for spatially coupled LDPC codes"},
+        {"title": "尾比特序列", "en": "Tail bit sequence"},
+        {"title": "线性系统", "en": "Linear system"},
+        {"title": "译码", "en": "Decoding"}
+    ],
+    "relations": [
+        {"source": "LDPC块状码编码方法", "target": "空间耦合LDPC码的校验子前项编码方案", "type": "包含"},
+        {"source": "空间耦合LDPC码的校验子前项编码方案", "target": "部分校验子前项方案", "type": "包含"},
+        {"source": "部分校验子前项方案", "target": "部分校验子", "type": "包含"},
+        {"source": "空间耦合LDPC码终止方案", "target": "尾比特序列", "type": "包含"},
+        {"source": "尾比特序列", "target": "线性系统", "type": "依赖"},
+        {"source": "线性系统", "target": "译码", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "置信传播算法", "en": "Belief Propagation Algorithm"},
+        {"title": "空间耦合LDPC码", "en": "Spatially-Coupled LDPC Code"},
+        {"title": "滑动窗译码", "en": "Sliding Window Decoding"},
+        {"title": "并行译码", "en": "Parallel Decoding"},
+        {"title": "可达速率", "en": "Achievable Rate"},
+        {"title": "密度演进", "en": "Density Evolution"},
+        {"title": "EXIT图", "en": "EXIT Chart"}
+    ],
+    "relations": [
+        {"source": "置信传播算法", "target": "空间耦合LDPC码", "type": "属于"},
+        {"source": "空间耦合LDPC码", "target": "滑动窗译码", "type": "应用"},
+        {"source": "空间耦合LDPC码", "target": "并行译码", "type": "应用"},
+        {"source": "空间耦合LDPC码", "target": "可达速率", "type": "性能分析工具"},
+        {"source": "空间耦合LDPC码", "target": "密度演进", "type": "性能分析工具"},
+        {"source": "空间耦合LDPC码", "target": "EXIT图", "type": "性能分析工具"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "迭代编码算法", "en": "Iterative coding algorithm"},
+        {"title": "LDPC码", "en": "LDPC code"},
+        {"title": "空间耦合LDPC码", "en": "Spatially-coupled LDPC code"},
+        {"title": "校验矩阵", "en": "Check matrix"},
+        {"title": "奇偶校验子", "en": "Parity check submatrix"},
+        {"title": "移位寄存器", "en": "Shift register"},
+        {"title": "块状码", "en": "Block code"},
+        {"title": "计算复杂度", "en": "Computational complexity"},
+        {"title": "延时效应", "en": "Delay effect"},
+        {"title": "置信传播阈值", "en": "Belief propagation threshold"}
+    ],
+    "relations": [
+        {"source": "LDPC码", "target": "空间耦合LDPC码", "type": "包含"},
+        {"source": "空间耦合LDPC码", "target": "迭代编码算法", "type": "使用"},
+        {"source": "校验矩阵", "target": "LDPC码", "type": "定义"},
+        {"source": "奇偶校验子", "target": "空间耦合LDPC码", "type": "定义"},
+        {"source": "移位寄存器", "target": "迭代编码算法", "type": "使用"},
+        {"source": "块状码", "target": "LDPC码", "type": "包含"},
+        {"source": "计算复杂度", "target": "迭代编码算法", "type": "影响"},
+        {"source": "延时效应", "target": "迭代编码算法", "type": "影响"},
+        {"source": "置信传播阈值", "target": "空间耦合LDPC码", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "空间耦合LDPC码",
+            "en": "Spatially-coupled LDPC codes"
+        },
+        {
+            "title": "原模图",
+            "en": "Tanner graph"
+        },
+        {
+            "title": "改进结构",
+            "en": "Improved structure"
+        },
+        {
+            "title": "校验矩阵",
+            "en": "Parity-check matrix"
+        },
+        {
+            "title": "迭代编码",
+            "en": "Iterative encoding"
+        },
+        {
+            "title": "编码速率",
+            "en": "Encoding rate"
+        }
+    ],
+    "relations": [
+        {
+            "source": "原模图",
+            "target": "空间耦合LDPC码",
+            "type": "包含"
+        },
+        {
+            "source": "改进结构",
+            "target": "原模图",
+            "type": "替代"
+        },
+        {
+            "source": "校验矩阵",
+            "target": "空间耦合LDPC码",
+            "type": "定义"
+        },
+        {
+            "source": "改进结构",
+            "target": "迭代编码",
+            "type": "实现"
+        },
+        {
+            "source": "迭代编码",
+            "target": "空间耦合LDPC码",
+            "type": "应用"
+        },
+        {
+            "source": "编码速率",
+            "target": "空间耦合LDPC码",
+            "type": "评估"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "空间耦合LDPC码", "en": "Spatially Coupled LDPC Codes"},
+        {"title": "编码速率", "en": "Coding Rate"},
+        {"title": "密度演进", "en": "Density Evolution"},
+        {"title": "差错概率", "en": "Error Probability"},
+        {"title": "置信传播阈值", "en": "Belief Propagation Threshold"},
+        {"title": "比特差错率", "en": "Bit Error Rate"},
+        {"title": "二进制差错信道", "en": "Binary Erasure Channel"},
+        {"title": "节点度", "en": "Node Degree"}
+    ],
+    "relations": [
+        {"source": "空间耦合LDPC码", "target": "编码速率", "type": "包含"},
+        {"source": "空间耦合LDPC码", "target": "密度演进", "type": "包含"},
+        {"source": "密度演进", "target": "差错概率", "type": "关联"},
+        {"source": "空间耦合LDPC码", "target": "置信传播阈值", "type": "包含"},
+        {"source": "空间耦合LDPC码", "target": "比特差错率", "type": "包含"},
+        {"source": "二进制差错信道", "target": "比特差错率", "type": "影响"},
+        {"source": "节点度", "target": "密度演进", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "空间耦合LDPC码",
+            "en": "Spatially-coupled LDPC codes"
+        },
+        {
+            "title": "任意速率",
+            "en": "Arbitrary rate"
+        },
+        {
+            "title": "低复杂度",
+            "en": "Low complexity"
+        },
+        {
+            "title": "低延时",
+            "en": "Low latency"
+        },
+        {
+            "title": "迭代编码算法",
+            "en": "Iterative coding algorithm"
+        },
+        {
+            "title": "计算复杂度",
+            "en": "Computational complexity"
+        },
+        {
+            "title": "BP阈值",
+            "en": "BP threshold"
+        },
+        {
+            "title": "有限码长LDPC码",
+            "en": "Finite-length LDPC codes"
+        },
+        {
+            "title": "终止方案",
+            "en": "Termination scheme"
+        },
+        {
+            "title": "扩展系数",
+            "en": "Expansion factor"
+        },
+        {
+            "title": "RA码",
+            "en": "RA code"
+        },
+        {
+            "title": "置信传播",
+            "en": "Belief propagation"
+        },
+        {
+            "title": "二进制差错信道",
+            "en": "Binary erasure channel"
+        },
+        {
+            "title": "性能仿真",
+            "en": "Performance simulation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "空间耦合LDPC码",
+            "target": "任意速率",
+            "type": "has"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "低复杂度",
+            "type": "has"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "低延时",
+            "type": "has"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "迭代编码算法",
+            "type": "has"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "计算复杂度",
+            "type": "has"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "BP阈值",
+            "type": "has"
+        },
+        {
+            "source": "有限码长LDPC码",
+            "target": "终止方案",
+            "type": "has"
+        },
+        {
+            "source": "终止方案",
+            "target": "扩展系数",
+            "type": "has"
+        },
+        {
+            "source": "RA码",
+            "target": "终止方案",
+            "type": "has"
+        },
+        {
+            "source": "空间耦合LDPC码",
+            "target": "置信传播",
+            "type": "has"
+        },
+        {
+            "source": "二进制差错信道",
+            "target": "性能仿真",
+            "type": "has"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "编码后的序列满足等式V[o,1叫妇]=0", "en": "The encoded sequence satisfies the equation V[o,1]=0"},
+        {"title": "奇偶校验子", "en": "Parity check subsequence"},
+        {"title": "移位寄存器迭代实现", "en": "Iterative implementation with shift register"},
+        {"title": "RA尾部节点终止结构", "en": "RA tail node termination structure"},
+        {"title": "空间耦合LDPC码", "en": "Spatially coupled LDPC code"},
+        {"title": "奇偶校验矩阵", "en": "Parity check matrix"},
+        {"title": "信息比特", "en": "Information bit"},
+        {"title": "校验比特", "en": "Check bit"}
+    ],
+    "relations": [
+        {"source": "编码后的序列满足等式V[o,1叫妇]=0", "target": "奇偶校验子", "type": "包含"},
+        {"source": "奇偶校验子", "target": "移位寄存器迭代实现", "type": "实现"},
+        {"source": "移位寄存器迭代实现", "target": "编码后的序列满足等式V[o,1叫妇]=0", "type": "实现"},
+        {"source": "RA尾部节点终止结构", "target": "空间耦合LDPC码", "type": "应用于"},
+        {"source": "空间耦合LDPC码", "target": "奇偶校验矩阵", "type": "包含"},
+        {"source": "奇偶校验矩阵", "target": "信息比特", "type": "包含"},
+        {"source": "奇偶校验矩阵", "target": "校验比特", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "具有RA尾部节点终止结构的空间耦合LDPC码",
+            "en": "LDPC codes with RA tail node termination structure"
+        },
+        {
+            "title": "编码速率",
+            "en": "Encoding rate"
+        },
+        {
+            "title": "密度演进分析",
+            "en": "Density evolution analysis"
+        },
+        {
+            "title": "置信传播阈值",
+            "en": "Belief propagation threshold"
+        },
+        {
+            "title": "二进制差错信道",
+            "en": "Binary error channel"
+        }
+    ],
+    "relations": [
+        {
+            "source": "具有RA尾部节点终止结构的空间耦合LDPC码",
+            "target": "编码速率",
+            "type": "包含"
+        },
+        {
+            "source": "编码速率",
+            "target": "变量节点",
+            "type": "包含"
+        },
+        {
+            "source": "编码速率",
+            "target": "校验节点",
+            "type": "包含"
+        },
+        {
+            "source": "具有RA尾部节点终止结构的空间耦合LDPC码",
+            "target": "密度演进分析",
+            "type": "包含"
+        },
+        {
+            "source": "密度演进分析",
+            "target": "(dv,dc,L)空间耦合LDPC码",
+            "type": "包含"
+        },
+        {
+            "source": "密度演进分析",
+            "target": "(3,6,50)空间耦合LDPC码",
+            "type": "包含"
+        },
+        {
+            "source": "(dv,dc,L)空间耦合LDPC码",
+            "target": "变量节点",
+            "type": "包含"
+        },
+        {
+            "source": "(dv,dc,L)空间耦合LDPC码",
+            "target": "校验节点",
+            "type": "包含"
+        },
+        {
+            "source": "(3,6,50)空间耦合LDPC码",
+            "target": "密度演进图",
+            "type": "包含"
+        },
+        {
+            "source": "密度演进图",
+            "target": "迭代次数",
+            "type": "包含"
+        },
+        {
+            "source": "密度演进图",
+            "target": "剩余差错概率曲线",
+            "type": "包含"
+        },
+        {
+            "source": "具有RA尾部节点终止结构的空间耦合LDPC码",
+            "target": "置信传播阈值",
+            "type": "包含"
+        },
+        {
+            "source": "置信传播阈值",
+            "target": "BP阈值表",
+            "type": "包含"
+        },
+        {
+            "source": "BP阈值表",
+            "target": "具有RA尾部节点终止结构的空间耦合LDPC码",
+            "type": "相关"
+        },
+        {
+            "source": "BP阈值表",
+            "target": "具有传统结构的空间耦合LDPC码",
+            "type": "相关"
+        },
+        {
+            "source": "具有RA尾部节点终止结构的空间耦合LDPC码",
+            "target": "二进制差错信道",
+            "type": "包含"
+        },
+        {
+            "source": "具有传统结构的空间耦合LDPC码",
+            "target": "二进制差错信道",
+            "type": "包含"
+        },
+        {
+            "source": "二进制差错信道",
+            "target": "性能仿真曲线",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "空间耦合LDPC码", "en": "Spatially Coupled LDPC Codes"},
+        {"title": "校验矩阵", "en": "Parity Check Matrix"},
+        {"title": "可达速率", "en": "Achievable Rate"},
+        {"title": "EXIT图", "en": "EXIT Chart"},
+        {"title": "密度演进", "en": "Density Evolution"},
+        {"title": "任意速率空间耦合LDPC码", "en": "Arbitrary Rate Spatially Coupled LDPC Codes"},
+        {"title": "递归编码算法", "en": "Recursive Encoding Algorithm"},
+        {"title": "RA尾部节点终止结构", "en": "RA-Terminated Structure"},
+        {"title": "比特差错率", "en": "Bit Error Rate"}
+    ],
+    "relations": [
+        {"source": "图4-5", "target": "RA尾部节点终止结构的空间耦合LDPC码和具有文献［11］中传统结构的空间耦合LDPC码在BEC信道下的仿真结果", "type": "描述"},
+        {"source": "仿真结构", "target": "实线表示,点线表示由密度演进得到的BP阈值,虚线代表香农极限", "type": "描述"},
+        {"source": "仿真阈值", "target": "BP阈值", "type": "同义词"},
+        {"source": "仿真阈值", "target": "间隔很小", "type": "描述"},
+        {"source": "图4-5", "target": "BEC信道下空间耦合LDPC码比特差错率(BER)曲线", "type": "描述"},
+        {"source": "本节", "target": "终止有限码长的空间耦合LDPG码", "type": "描述"},
+        {"source": "尾部变量节点", "target": "与校验节点的连接方式与空间耦合重复积累码中奇偶节点和校验节点间的连接方式类似", "type": "描述"},
+        {"source": "尾部变量节点", "target": "将编码后寄存器的状态归零", "type": "描述"},
+        {"source": "尾部RA比特", "target": "只依赖于前面位置的已编码比特计算得出", "type": "描述"},
+        {"source": "第五章", "target": "总结与展望", "type": "描述"},
+        {"source": "本文", "target": "对传统的空间耦合LDPC码进行了深入的研究", "type": "描述"},
+        {"source": "现有空间耦合LDPC码的迭代编译码方案", "target": "只适用于校验节点度为变量节点度整数倍的情况", "type": "描述"},
+        {"source": "改进后的编译码方案", "target": "可以实现任意速率空间耦合LDPC码的迭代编码", "type": "描述"},
+        {"source": "RA尾部节点终止结构的空间耦合LDPC码", "target": "对空间耦合LDPC码的性能影响几乎可以忽略", "type": "描述"},
+        {"source": "本研究", "target": "解决了有限码长的空间耦合LDPC码递归编码结束时寄存器状态非零的问题", "type": "描述"},
+        {"source": "本研究", "target": "提出了一种有效的终止方案", "type": "描述"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "重复积累码原模图", "en": "Repetition Accumulation Code Tanner Graph"},
+        {"title": "有限码长空间耦合LDPC码", "en": "Finite Length Spatially Coupled LDPC Code"},
+        {"title": "非正交多址方案", "en": "Non-Orthogonal Multiple Access Scheme"},
+        {"title": "空间耦合调制", "en": "Spatially Coupled Modulation"}
+    ],
+    "relations": [
+        {"source": "重复积累码原模图", "target": "有限码长空间耦合LDPC码", "type": "提出"},
+        {"source": "有限码长空间耦合LDPC码", "target": "空间耦合调制", "type": "应用于"},
+        {"source": "非正交多址方案", "target": "空间耦合调制", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LDPC卷积码", "en": "LDPC Convolutional Codes"},
+        {"title": "空间耦合码", "en": "Spatially Coupled Codes"},
+        {"title": "LDPC卷积码的实现", "en": "Implementation of LDPC Convolutional Codes"},
+        {"title": "LDPC卷积码的迭代译码阈值分析", "en": "Threshold Analysis of Iterative Decoding for LDPC Convolutional Codes"},
+        {"title": "基于原型图的渐进好的LDPC卷积码", "en": "Asymptotically Good LDPC Convolutional Codes Based on Protograph"},
+        {"title": "基于循环矩阵的LDPC卷积码", "en": "LDPC Convolutional Codes Based on Circulant Matrices"}
+    ],
+    "relations": [
+        {"source": "LDPC卷积码", "target": "空间耦合码", "type": "包含"},
+        {"source": "LDPC卷积码", "target": "LDPC卷积码的实现", "type": "应用"},
+        {"source": "LDPC卷积码", "target": "LDPC卷积码的迭代译码阈值分析", "type": "应用"},
+        {"source": "LDPC卷积码", "target": "基于原型图的渐进好的LDPC卷积码", "type": "应用"},
+        {"source": "LDPC卷积码", "target": "基于循环矩阵的LDPC卷积码", "type": "应用"},
+        {"source": "空间耦合码", "target": "LDPC卷积码的实现", "type": "应用"},
+        {"source": "空间耦合码", "target": "LDPC卷积码的迭代译码阈值分析", "type": "应用"},
+        {"source": "空间耦合码", "target": "基于原型图的渐进好的LDPC卷积码", "type": "应用"},
+        {"source": "空间耦合码", "target": "基于循环矩阵的LDPC卷积码", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Rate-compatible LDPC convolutional codes", "en": ""},
+        {"title": "Capacity of Binary Erasure Channel (BEC)", "en": ""},
+        {"title": "Decode-and-forward relaying", "en": ""},
+        {"title": "Hybrid Automatic Repeat reQuest (HARQ)", "en": ""},
+        {"title": "Spatial coupling", "en": ""},
+        {"title": "Windowed decoding", "en": ""},
+        {"title": "Protograph-based LDPC convolutional codes", "en": ""},
+        {"title": "Compressive sensing", "en": ""},
+        {"title": "Noisy Slepian-Wolf problem", "en": ""},
+        {"title": "Universal multiple access", "en": ""},
+        {"title": "Streaming modulation", "en": ""}
+    ],
+    "relations": [
+        {"source": "Rate-compatible LDPC convolutional codes", "target": "Capacity of Binary Erasure Channel (BEC)", "type": "achieving"},
+        {"source": "Rate-compatible LDPC convolutional codes", "target": "Decode-and-forward relaying", "type": "for"},
+        {"source": "Rate-compatible LDPC convolutional codes", "target": "Hybrid Automatic Repeat reQuest (HARQ)", "type": "for"},
+        {"source": "Spatial coupling", "target": "Rate-compatible LDPC convolutional codes", "type": "with"},
+        {"source": "Spatial coupling", "target": "Compressive sensing", "type": "on"},
+        {"source": "Spatial coupling", "target": "Noisy Slepian-Wolf problem", "type": "on"},
+        {"source": "Spatial coupling", "target": "Universal multiple access", "type": "for"},
+        {"source": "Windowed decoding", "target": "Protograph-based LDPC convolutional codes", "type": "of"},
+        {"source": "Compressive sensing", "target": "Noisy Slepian-Wolf problem", "type": "for"},
+        {"source": "Universal multiple access", "target": "Spatial coupling", "type": "via"},
+        {"source": "Streaming modulation", "target": "Spatial coupling", "type": "with"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "AWGN多用户信道容量",
+            "en": "AWGN Multiple Access Channel Capacity"
+        },
+        {
+            "title": "空间耦合",
+            "en": "Spatial Coupling"
+        },
+        {
+            "title": "多用户解调",
+            "en": "Multiple Access Demodulation"
+        },
+        {
+            "title": "超级叠加调制",
+            "en": "Generalized Superposition Modulation"
+        },
+        {
+            "title": "迭代解调",
+            "en": "Iterative Demodulation"
+        },
+        {
+            "title": "半双工中继信道",
+            "en": "Half-Duplex Relay Channel"
+        },
+        {
+            "title": "双向广播",
+            "en": "Bidirectional Broadcasting"
+        },
+        {
+            "title": "动态解码转发中继",
+            "en": "Dynamic Decode-and-Forward Relaying"
+        },
+        {
+            "title": "LLR",
+            "en": "Log-Likelihood Ratio"
+        },
+        {
+            "title": "MMSE",
+            "en": "Minimum Mean Squared Error"
+        },
+        {
+            "title": "SNR",
+            "en": "Signal-to-Noise Ratio"
+        },
+        {
+            "title": "SCMA",
+            "en": "Sparse Code Multiple Access"
+        },
+        {
+            "title": "PDMA",
+            "en": "Pattern Division Multiple Access"
+        },
+        {
+            "title": "MUSA",
+            "en": "Multi-User Shared Access"
+        },
+        {
+            "title": "FBMC",
+            "en": "Filter Bank Multi-Carrier"
+        },
+        {
+            "title": "CDMA",
+            "en": "Code Division Multiple Access"
+        },
+        {
+            "title": "D2D",
+            "en": "Device-to-Device"
+        },
+        {
+            "title": "TDMA",
+            "en": "Time Division Multiple Access"
+        }
+    ],
+    "relations": [
+        {
+            "source": "AWGN多用户信道容量",
+            "target": "空间耦合",
+            "type": "应用"
+        },
+        {
+            "source": "空间耦合",
+            "target": "多用户解调",
+            "type": "应用"
+        },
+        {
+            "source": "超级叠加调制",
+            "target": "AWGN多用户信道容量",
+            "type": "应用"
+        },
+        {
+            "source": "超级叠加调制",
+            "target": "迭代解调",
+            "type": "应用"
+        },
+        {
+            "source": "半双工中继信道",
+            "target": "双向广播",
+            "type": "应用"
+        },
+        {
+            "source": "双向广播",
+            "target": "多用户解调",
+            "type": "应用"
+        },
+        {
+            "source": "动态解码转发中继",
+            "target": "迭代解调",
+            "type": "应用"
+        },
+        {
+            "source": "LLR",
+            "target": "多用户解调",
+            "type": "概念"
+        },
+        {
+            "source": "MMSE",
+            "target": "多用户解调",
+            "type": "概念"
+        },
+        {
+            "source": "SNR",
+            "target": "AWGN多用户信道容量",
+            "type": "概念"
+        },
+        {
+            "source": "SCMA",
+            "target": "AWGN多用户信道容量",
+            "type": "应用"
+        },
+        {
+            "source": "PDMA",
+            "target": "AWGN多用户信道容量",
+            "type": "应用"
+        },
+        {
+            "source": "MUSA",
+            "target": "AWGN多用户信道容量",
+            "type": "应用"
+        },
+        {
+            "source": "FBMC",
+            "target": "AWGN多用户信道容量",
+            "type": "应用"
+        },
+        {
+            "source": "CDMA",
+            "target": "多用户解调",
+            "type": "应用"
+        },
+        {
+            "source": "D2D",
+            "target": "多用户解调",
+            "type": "应用"
+        },
+        {
+            "source": "TDMA",
+            "target": "多用户解调",
+            "type": "应用"
+        }
+    ]
+}

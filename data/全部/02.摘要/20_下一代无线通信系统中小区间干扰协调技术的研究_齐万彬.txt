@@ -1,0 +1,21 @@
+摘要
+在下一代无线通信系统中，由于引入的正交频分复用技术能够保 证小区内每个用户使用的子载波之间是相互正交的，所以也就避免了 小区内用户之间存在干扰。虽然小区内干扰得到了完全的消除，但是 因相邻小区之间使用相同的频带而引起的小区间干扰又成为了下一 代无线通信系统中的关键问题。近几年来，通过频谱资源调度来避免 或减轻小区间干扰的小区间干扰协调技术越来越受到学术界和工业 界的青睐。值得一提的是，小区间干扰协调技术已经成为3GPPLTE 和LTE-Advanced的技术标准中的关键技术。
+通常来说，LTE中的小区间干扰协调技术分为3类：静态的小区 间干扰协调技术、自适应（半静态）的小区间干扰协调技术和动态的 小区间干扰协调技术。本文主要对静态的小区间干扰协调技术中的部 分频率复用与软频率复用技术进行了深入的研究。本文主要工作如 下：
+1、	本文对部分频率复用与软频率复用技术作了比较分析。通过 理论与仿真分析，在部分频率复用方案中，中心用户的性能得到了更 好的提升；而在软频率复用方案中，边缘用户的性能得到了提升。
+2、	本文研究了用户数目和功率因子对部分频率复用与软频率复 用技术的影响。通过理论与仿真分析，用户数目对用户的吞吐量会产 生很大的影响。功率因子的选择也是影响用户吞吐量的关键因素。
+3、	本文提出了一种改进的基于信干噪比阈值的用户分类算法， 该算法能够使得信干噪比阈值达到最优，不仅提升了中心用户与边缘 用户的性能，也保证了中心用户与边缘用户的公平性，提升了频谱利 用率。
+4、	本文还提岀了一种改进的基于吞吐量的用户分类算法。该算 法降低了原先的基于吞吐量的用户分类算法的复杂度，更好地保证了 中心用户与边缘用户的公平性。
+关键词：小区间干扰协调部分频率复用软频率复用吞吐量信干噪
+比阈值用户分类
+RESEARCH ON INTER-CELL INTERFERENCE
+COORDINATION TECHNIQUES IN THE NEXT
+GENERATION WIRELESS COMMUNICATION SYSTEM
+ABSTRACT
+Since the OFDM technology can guarantee the sub-carriers used by each user in the cell are orthogonal to each other, it avoids the interference between users within the cell in the next generation wireless communication system. Although intra-cell interference has been completely eliminate, inter-cell interference has become the critical issues in the next generation of wireless communication systems, because the frequency reuse allows to use the same frequency band between the adjacent cells. Due to spectrum resource scheduling can avoid or mitigate the inter-cel I interference, inter-cell interference coordination technology is increasingly favored by academia and industry in recent years. It is worth mentioning that inter-cell interference coordination technology has become one of key technologies in 3GPP LTE and LTE-Advanced technology standards.
+Fractional Frequency Reuse (FFR) and Soft Frequency Reuse (SFR) which are employed extensively in static ICIC techniques are researched deeply in this paper. The main work in this paper is as follows:
+Firstly, FFR and SFR are compared and analyzed in this paper. By means of theory and simulation analyzing, the cell-center user's performance is improved in FFR scheme, while the cell-edge user's throughput is improved in SFR scheme.
+Secondly, the number of users and power factor's influence on the FFR and SFR techniques are studied in this paper. By means of theory and simulation analyzing, the number of users has a great influence on each user's throughput, while the power factor is also the key factor that
+affects the user throughput.
+Thirdly, an improved SINR threshold based user classification algorithm is proposed in this paper. The algorithm can optimize the SINR threshold, improve the cell-center user and cell-edge user's performance and ensure the users5 fairness.
+Fourthly, an improved throughput based user classification algorithm is also proposed in this paper. The algorithm reduces the complexity of the original throughput based user classification algorithm and guarantee user's fairness.
+KEY WORDS: Inter-cell interference coordination Fractional frequency reuse Soft frequency reuse Throughput Signal to interference plus noise ratio threshold User classification

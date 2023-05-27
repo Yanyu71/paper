@@ -1,0 +1,6 @@
+2.2.1端到端语音合成Tacotron2
+Tacotron是第一个端对端的TTS神经网络模型，我们将文本信息输入，
+9
+Tacotron可以输出梅尔频谱信息，我们通过一些声码器模型或者算法就可以将梅 尔频谱信息转换为波形。论文《Tacotron: A Fully End-to-End Text-To-Speech Synthesis Model》⑵中模型的总体架构如下图2-2所示：
+图2-2 Tacotron整体结构图
+总体来说，模型和sequence-to-sequence模型非常相似，大体上由encoder和 decoder 组成,raw text经过 pre-net 和 CBHG两个模块映射为 hidden representation, 之后decoder会生成me 1-spectrogram frame。所谓CBHG就是一种用来从序列中 提取高层次特征的模块，其中使用了卷积+highway+残差链接+双向GRU的组合， 输入序列，输出同样也是序列。输入被CBHG处理之前还需要经过pre-net进行 预处理，而pre-net预处理网络的意图是让它成为一个bottleneck layer来提升模 型的泛化能力，以及加快收敛速度。在解码器方面使用了两个decoder:： attention decoder 和 output decoder, attentron decoder 主要使用 query vector 作为 attention 的输入，然后依赖注意力模块生成context vector,最后output decoder则将query vector和context vector组合在一起作为输入。

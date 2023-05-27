@@ -1,0 +1,1160 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "小区间干扰协调技术",
+            "en": "Inter-cell interference coordination technology"
+        },
+        {
+            "title": "下一代蜂窝移动通信系统",
+            "en": "Next-generation cellular mobile communication system"
+        },
+        {
+            "title": "小区吞吐量",
+            "en": "Cell throughput"
+        },
+        {
+            "title": "频谱利用率",
+            "en": "Spectrum utilization"
+        },
+        {
+            "title": "频率复用",
+            "en": "Frequency reuse"
+        },
+        {
+            "title": "干扰",
+            "en": "Interference"
+        },
+        {
+            "title": "干扰抑制",
+            "en": "Interference suppression"
+        },
+        {
+            "title": "蜂窝移动通信系统",
+            "en": "Cellular mobile communication system"
+        },
+        {
+            "title": "小区内干扰",
+            "en": "Intra-cell interference"
+        },
+        {
+            "title": "小区间干扰",
+            "en": "Inter-cell interference"
+        },
+        {
+            "title": "正交频分复用",
+            "en": "Orthogonal frequency division multiplexing"
+        },
+        {
+            "title": "正交频分复用多址",
+            "en": "Orthogonal frequency division multiple access"
+        },
+        {
+            "title": "频率选择性衰落",
+            "en": "Frequency-selective fading"
+        },
+        {
+            "title": "多元频率非选择性衰落",
+            "en": "Multi-path flat fading"
+        },
+        {
+            "title": "OFDMA",
+            "en": "Orthogonal frequency division multiple access"
+        },
+        {
+            "title": "无线资源分配技术",
+            "en": "Wireless resource allocation technology"
+        },
+        {
+            "title": "子载波",
+            "en": "Subcarrier"
+        },
+        {
+            "title": "资源块",
+            "en": "Resource block"
+        },
+        {
+            "title": "信道质量指示符",
+            "en": "Channel quality indicator"
+        },
+        {
+            "title": "信道调制和编码方案",
+            "en": "Channel modulation and coding scheme"
+        },
+        {
+            "title": "传输块大小",
+            "en": "Transport block size"
+        },
+        {
+            "title": "多用户分集",
+            "en": "Multi-user diversity"
+        },
+        {
+            "title": "干扰随机化",
+            "en": "Interference randomization"
+        },
+        {
+            "title": "干扰去除",
+            "en": "Interference cancellation"
+        },
+        {
+            "title": "自适应波束赋形",
+            "en": "Adaptive beamforming"
+        },
+        {
+            "title": "冲突概率",
+            "en": "Collision probability"
+        },
+        {
+            "title": "SINR",
+            "en": "Signal-to-interference-plus-noise ratio"
+        }
+    ],
+    "relations": [
+        {
+            "source": "下一代蜂窝移动通信系统",
+            "target": "小区吞吐量",
+            "type": "包含"
+        },
+        {
+            "source": "下一代蜂窝移动通信系统",
+            "target": "频谱利用率",
+            "type": "包含"
+        },
+        {
+            "source": "频率复用",
+            "target": "干扰",
+            "type": "引起"
+        },
+        {
+            "source": "干扰",
+            "target": "干扰抑制",
+            "type": "包含"
+        },
+        {
+            "source": "蜂窝移动通信系统",
+            "target": "小区内干扰",
+            "type": "包含"
+        },
+        {
+            "source": "蜂窝移动通信系统",
+            "target": "小区间干扰",
+            "type": "包含"
+        },
+        {
+            "source": "小区间干扰",
+            "target": "干扰抑制",
+            "type": "包含"
+        },
+        {
+            "source": "正交频分复用",
+            "target": "小区内干扰",
+            "type": "减少"
+        },
+        {
+            "source": "OFDMA",
+            "target": "无线资源分配技术",
+            "type": "包含"
+        },
+        {
+            "source": "无线资源分配技术",
+            "target": "子载波",
+            "type": "使用"
+        },
+        {
+            "source": "子载波",
+            "target": "资源块",
+            "type": "组成"
+        },
+        {
+            "source": "信道质量指示符",
+            "target": "信道调制和编码方案",
+            "type": "确定"
+        },
+        {
+            "source": "信道调制和编码方案",
+            "target": "传输块大小",
+            "type": "映射"
+        },
+        {
+            "source": "OFDMA",
+            "target": "多用户分集",
+            "type": "采用"
+        },
+        {
+            "source": "干扰抑制",
+            "target": "干扰随机化",
+            "type": "包含"
+        },
+        {
+            "source": "干扰抑制",
+            "target": "干扰去除",
+            "type": "包含"
+        },
+        {
+            "source": "干扰抑制",
+            "target": "自适应波束赋形",
+            "type": "包含"
+        },
+        {
+            "source": "资源块",
+            "target": "冲突概率",
+            "type": "影响"
+        },
+        {
+            "source": "资源块",
+            "target": "SINR",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "干扰协调方案", "en": "Interference coordination scheme"},
+        {"title": "频率复用规划算法", "en": "Frequency reuse planning algorithm"},
+        {"title": "SINR", "en": "Signal-to-interference-plus-noise ratio"},
+        {"title": "功率限制", "en": "Power limitation"},
+        {"title": "干扰避免方案", "en": "Interference avoidance scheme"},
+        {"title": "信道状态信息", "en": "Channel state information"},
+        {"title": "固定信道分配", "en": "Fixed channel allocation"},
+        {"title": "动态信道分配", "en": "Dynamic channel allocation"},
+        {"title": "资源分配", "en": "Resource allocation"},
+        {"title": "部分频率复用", "en": "Fractional frequency reuse"},
+        {"title": "软频率复用", "en": "Soft frequency reuse"},
+        {"title": "用户性能", "en": "User performance"}
+    ],
+    "relations": [
+        {"source": "频率复用规划算法", "target": "干扰协调方案", "type": "包含"},
+        {"source": "干扰协调方案", "target": "SINR", "type": "提升"},
+        {"source": "干扰协调方案", "target": "功率限制", "type": "限制"},
+        {"source": "干扰避免方案", "target": "SINR", "type": "提升"},
+        {"source": "干扰避免方案", "target": "信道状态信息", "type": "使用"},
+        {"source": "动态信道分配", "target": "资源分配", "type": "包含"},
+        {"source": "部分频率复用", "target": "干扰协调方案", "type": "实现"},
+        {"source": "软频率复用", "target": "干扰协调方案", "type": "实现"},
+        {"source": "用户性能", "target": "SINR", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "小区间干扰抑制技术", "en": "Inter-cell interference suppression technology"},
+        {"title": "小区间干扰协调技术", "en": "Inter-cell interference coordination technology"},
+        {"title": "频率复用因子", "en": "Frequency reuse factor"},
+        {"title": "OFDM技术", "en": "OFDM technology"},
+        {"title": "CDMA技术", "en": "CDMA technology"},
+        {"title": "ICI问题", "en": "ICI problem"}
+    ],
+    "relations": [
+        {"source": "小区间干扰抑制技术", "target": "小区间干扰协调技术", "type": "包括"},
+        {"source": "小区间干扰协调技术", "target": "频率复用因子", "type": "使用"},
+        {"source": "OFDM技术", "target": "ICI问题", "type": "导致"},
+        {"source": "CDMA技术", "target": "小区内干扰", "type": "解决"},
+        {"source": "频率复用因子", "target": "小区边缘用户的性能", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "小区间干扰",
+            "en": "Inter-cell Interference"
+        },
+        {
+            "title": "干扰随机化技术",
+            "en": "Inter-Cell Interference Randomization"
+        },
+        {
+            "title": "小区特定加扰",
+            "en": "Cell-Specific Scrambling"
+        },
+        {
+            "title": "小区特定交织",
+            "en": "Cell-Specific Interleaving"
+        },
+        {
+            "title": "小区特定跳频",
+            "en": "Cell-Specific Frequency-Hopping"
+        },
+        {
+            "title": "干扰消除技术",
+            "en": "Inter-Cell Interference Cancellation"
+        },
+        {
+            "title": "多天线接收的空间小区间干扰消除技术",
+            "en": "Spatial Interference Cancellation with Multiple Antennas"
+        },
+        {
+            "title": "基于干扰重构的小区间干扰消除技术",
+            "en": "Interference Reconstruction-based Interference Cancellation"
+        },
+        {
+            "title": "IDMA迭代的干扰重构消除技术",
+            "en": "Iterative Interference Reconstruction-based Interference Cancellation with IDMA"
+        },
+        {
+            "title": "资源分配的限制",
+            "en": "Limitations of Resource Allocation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "小区间干扰",
+            "target": "干扰随机化技术",
+            "type": "包含"
+        },
+        {
+            "source": "干扰随机化技术",
+            "target": "小区特定加扰",
+            "type": "包含"
+        },
+        {
+            "source": "干扰随机化技术",
+            "target": "小区特定交织",
+            "type": "包含"
+        },
+        {
+            "source": "干扰随机化技术",
+            "target": "小区特定跳频",
+            "type": "包含"
+        },
+        {
+            "source": "小区间干扰",
+            "target": "干扰消除技术",
+            "type": "包含"
+        },
+        {
+            "source": "干扰消除技术",
+            "target": "多天线接收的空间小区间干扰消除技术",
+            "type": "包含"
+        },
+        {
+            "source": "干扰消除技术",
+            "target": "基于干扰重构的小区间干扰消除技术",
+            "type": "包含"
+        },
+        {
+            "source": "基于干扰重构的小区间干扰消除技术",
+            "target": "IDMA迭代的干扰重构消除技术",
+            "type": "包含"
+        },
+        {
+            "source": "资源分配的限制",
+            "target": "IDMA迭代的干扰重构消除技术",
+            "type": "限制"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "小区间干扰消除",
+            "en": "Inter-cell Interference Cancellation (ICI)"
+        },
+        {
+            "title": "双用户检测",
+            "en": "Two-user detection"
+        },
+        {
+            "title": "三用户检测",
+            "en": "Three-user detection"
+        },
+        {
+            "title": "ICI消除技术",
+            "en": "ICI cancellation technology"
+        },
+        {
+            "title": "资源块分配",
+            "en": "Resource block allocation"
+        },
+        {
+            "title": "信号格式的限制",
+            "en": "Signal format limitation"
+        },
+        {
+            "title": "小区间的同步要求",
+            "en": "Synchronization requirements between cells"
+        },
+        {
+            "title": "接收机处理的复杂度",
+            "en": "Receiver processing complexity"
+        },
+        {
+            "title": "交织器设计",
+            "en": "Interleaver design"
+        },
+        {
+            "title": "干扰协调",
+            "en": "Interference coordination"
+        }
+    ],
+    "relations": [
+        {
+            "source": "小区间干扰消除",
+            "target": "双用户检测",
+            "type": "related"
+        },
+        {
+            "source": "小区间干扰消除",
+            "target": "三用户检测",
+            "type": "related"
+        },
+        {
+            "source": "小区间干扰消除",
+            "target": "ICI消除技术",
+            "type": "related"
+        },
+        {
+            "source": "资源块分配",
+            "target": "ICI消除技术",
+            "type": "related"
+        },
+        {
+            "source": "信号格式的限制",
+            "target": "ICI消除技术",
+            "type": "related"
+        },
+        {
+            "source": "小区间的同步要求",
+            "target": "ICI消除技术",
+            "type": "related"
+        },
+        {
+            "source": "接收机处理的复杂度",
+            "target": "ICI消除技术",
+            "type": "related"
+        },
+        {
+            "source": "交织器设计",
+            "target": "ICI消除技术",
+            "type": "related"
+        },
+        {
+            "source": "干扰协调",
+            "target": "小区间干扰消除",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "小区间干扰协调技术",
+            "en": "Inter-Cell Interference Coordination (ICIC) Technology"
+        },
+        {
+            "title": "基于高干扰指示信息的小区间干扰协调技术",
+            "en": "ICIC technology based on high interference indication information"
+        },
+        {
+            "title": "基于过载指示信息的小区间干扰协调技术",
+            "en": "ICIC technology based on overload indication information"
+        },
+        {
+            "title": "频域调度",
+            "en": "Frequency Domain Scheduling"
+        },
+        {
+            "title": "频率复用",
+            "en": "Frequency Reuse"
+        },
+        {
+            "title": "功率控制",
+            "en": "Power Control"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LTE技术的R8标准",
+            "target": "小区间干扰协调技术",
+            "type": "包含"
+        },
+        {
+            "source": "小区间干扰协调技术",
+            "target": "基于高干扰指示信息的小区间干扰协调技术",
+            "type": "包含"
+        },
+        {
+            "source": "小区间干扰协调技术",
+            "target": "基于过载指示信息的小区间干扰协调技术",
+            "type": "包含"
+        },
+        {
+            "source": "小区间干扰协调技术",
+            "target": "频域调度",
+            "type": "包含"
+        },
+        {
+            "source": "频域调度",
+            "target": "频率复用",
+            "type": "包含"
+        },
+        {
+            "source": "小区间干扰协调技术",
+            "target": "功率控制",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "复用因子", "en": "Multiplexing factor"},
+        {"title": "频率规划方案", "en": "Frequency planning scheme"},
+        {"title": "干扰协调", "en": "Interference coordination"},
+        {"title": "部分频率复用(FFR)", "en": "Fractional frequency reuse (FFR)"},
+        {"title": "软频率复用(SFR)", "en": "Soft frequency reuse (SFR)"},
+        {"title": "增量频率复用(IFR)", "en": "Incremental frequency reuse (IFR)"},
+        {"title": "自适应的ICIC", "en": "Adaptive ICIC"}
+    ],
+    "relations": [
+        {"source": "复用因子", "target": "频率规划方案", "type": "包含"},
+        {"source": "频率规划方案", "target": "干扰协调", "type": "涉及"},
+        {"source": "干扰协调", "target": "部分频率复用(FFR)", "type": "导致"},
+        {"source": "部分频率复用(FFR)", "target": "软频率复用(SFR)", "type": "改进"},
+        {"source": "软频率复用(SFR)", "target": "增量频率复用(IFR)", "type": "改进"},
+        {"source": "增量频率复用(IFR)", "target": "自适应的ICIC", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "可伸缩性配置",
+            "en": "Scalable Configuration"
+        },
+        {
+            "title": "自适应协调",
+            "en": "Adaptive Coordination"
+        },
+        {
+            "title": "动态的ICIC技术",
+            "en": "Dynamic ICIC Technology"
+        },
+        {
+            "title": "子载波分配",
+            "en": "Subcarrier Allocation"
+        },
+        {
+            "title": "时域的elCIC",
+            "en": "Time-Domain elCIC"
+        },
+        {
+            "title": "几乎空白帧(ABS)",
+            "en": "Almost Blank Subframe (ABS)"
+        },
+        {
+            "title": "OFDM符号偏移",
+            "en": "OFDM Symbol Offset"
+        }
+    ],
+    "relations": [
+        {
+            "source": "可伸缩性配置",
+            "target": "自适应协调",
+            "type": "包含"
+        },
+        {
+            "source": "自适应协调",
+            "target": "子载波分配",
+            "type": "包含"
+        },
+        {
+            "source": "动态的ICIC技术",
+            "target": "子载波分配",
+            "type": "包含"
+        },
+        {
+            "source": "动态的ICIC技术",
+            "target": "时域的elCIC",
+            "type": "包含"
+        },
+        {
+            "source": "时域的elCIC",
+            "target": "几乎空白帧(ABS)",
+            "type": "包含"
+        },
+        {
+            "source": "时域的elCIC",
+            "target": "OFDM符号偏移",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "时间同步错误对传统OFDMA系统的影响", "en": "Impact of time synchronization errors on traditional OFDMA systems"},
+        {"title": "频域elCIC", "en": "Frequency domain elCIC"},
+        {"title": "功率域elCIC", "en": "Power domain elCIC"},
+        {"title": "部分频率复用(FFR)", "en": "Fractional frequency reuse (FFR)"},
+        {"title": "软频率复用(SFR)", "en": "Soft frequency reuse (SFR)"},
+        {"title": "FFR与SFR技术比较", "en": "Comparison of FFR and SFR technologies"}
+    ],
+    "relations": [
+        {"source": "时间同步错误对传统OFDMA系统的影响", "target": "频域elCIC", "type": "包含"},
+        {"source": "频域elCIC", "target": "控制信道正交", "type": "关联"},
+        {"source": "频域elCIC", "target": "带宽减少", "type": "影响"},
+        {"source": "功率域elCIC", "target": "功率控制", "type": "关联"},
+        {"source": "功率域elCIC", "target": "小区间干扰", "type": "影响"},
+        {"source": "部分频率复用(FFR)", "target": "3GPPLTE", "type": "关联"},
+        {"source": "部分频率复用(FFR)", "target": "ICIC技术", "type": "关联"},
+        {"source": "部分频率复用(FFR)", "target": "频谱效率", "type": "影响"},
+        {"source": "部分频率复用(FFR)", "target": "干扰减轻", "type": "影响"},
+        {"source": "软频率复用(SFR)", "target": "LTE网络", "type": "关联"},
+        {"source": "软频率复用(SFR)", "target": "频谱利用率", "type": "影响"},
+        {"source": "FFR与SFR技术比较", "target": "部分频率复用(FFR)", "type": "对比"},
+        {"source": "FFR与SFR技术比较", "target": "软频率复用(SFR)", "type": "对比"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SINR值", "en": "SINR value"},
+        {"title": "多小区无线蜂窝系统", "en": "Multi-cellular wireless cellular system"},
+        {"title": "干扰受限环境", "en": "Interference-limited environment"},
+        {"title": "下行传输", "en": "Downlink transmission"},
+        {"title": "子载波", "en": "Subcarrier"},
+        {"title": "共用信道", "en": "Shared channel"},
+        {"title": "FFR方案", "en": "FFR scheme"},
+        {"title": "SFR方案", "en": "SFR scheme"},
+        {"title": "频谱利用率", "en": "Spectrum efficiency"}
+    ],
+    "relations": [
+        {"source": "用户", "target": "基站", "type": "通信关系"},
+        {"source": "SINR值", "target": "多小区无线蜂窝系统", "type": "评估指标"},
+        {"source": "SINR值", "target": "干扰受限环境", "type": "测量指标"},
+        {"source": "用户", "target": "子载波", "type": "使用关系"},
+        {"source": "子载波", "target": "SINR值", "type": "影响关系"},
+        {"source": "共用信道", "target": "小区", "type": "使用关系"},
+        {"source": "FFR方案", "target": "SFR方案", "type": "对比关系"},
+        {"source": "FFR方案", "target": "频谱利用率", "type": "影响关系"},
+        {"source": "SFR方案", "target": "频谱利用率", "type": "影响关系"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "FFR方案中的边缘用户的SINR累积分布情况好于SFR方案中的边缘用户的SINR累积分布情况",
+            "en": "The SINR cumulative distribution of edge users in FFR scheme is better than that in SFR scheme"
+        },
+        {
+            "title": "FFR方案中的中心用户的SINR与吞吐量的累积分布情况都要好于SFR方案中的中心用户的SINR与吞吐量的累积分布情况",
+            "en": "The SINR and throughput cumulative distribution of central users in FFR scheme are better than those in SFR scheme"
+        },
+        {
+            "title": "用户数目的变化对中心用户与边缘用户的SINR的累积分布情况影响不大",
+            "en": "The change in the number of users has little effect on the cumulative distribution of SINR for central and edge users"
+        },
+        {
+            "title": "用户数目的变化可能会影响FFR方案中中心频谱和边缘频谱的利用效率",
+            "en": "The change in the number of users may affect the utilization efficiency of central and edge spectrum in FFR scheme"
+        }
+    ],
+    "relations": [
+        {
+            "source": "FFR方案中的边缘用户的SINR累积分布情况",
+            "target": "SFR方案中的边缘用户的SINR累积分布情况",
+            "type": "better than"
+        },
+        {
+            "source": "FFR方案中的中心用户的SINR与吞吐量的累积分布情况",
+            "target": "SFR方案中的中心用户的SINR与吞吐量的累积分布情况",
+            "type": "better than"
+        },
+        {
+            "source": "用户数目的变化",
+            "target": "中心用户与边缘用户的SINR的累积分布情况",
+            "type": "little effect on"
+        },
+        {
+            "source": "用户数目的变化",
+            "target": "FFR方案中中心频谱和边缘频谱的利用效率",
+            "type": "may affect"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "FFR方案中的中心用户与边缘用户的吞吐量的累积分布情况",
+            "en": "Cumulative distribution of throughput for central and edge users in FFR scheme"
+        },
+        {
+            "title": "用户数目对SFR技术的影响",
+            "en": "Impact of number of users on SFR technology"
+        },
+        {
+            "title": "SFR方案中的中心用户与边缘用户的SINR累积分布情况",
+            "en": "Cumulative distribution of SINR for central and edge users in SFR scheme"
+        },
+        {
+            "title": "SFR方案中的中心用户与边缘用户的吞吐量的累积分布情况",
+            "en": "Cumulative distribution of throughput for central and edge users in SFR scheme"
+        },
+        {
+            "title": "功率因子对ICIC技术的影响",
+            "en": "Impact of power factor on ICIC technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "FFR方案中的中心用户与边缘用户的吞吐量的累积分布情况",
+            "target": "用户数目的变化",
+            "type": "影响"
+        },
+        {
+            "source": "SFR方案中的中心用户与边缘用户的SINR累积分布情况",
+            "target": "用户数目的变化",
+            "type": "影响"
+        },
+        {
+            "source": "SFR方案中的中心用户与边缘用户的吞吐量的累积分布情况",
+            "target": "用户数目的变化",
+            "type": "影响"
+        },
+        {
+            "source": "功率因子",
+            "target": "ICIC技术",
+            "type": "影响"
+        },
+        {
+            "source": "中心频带",
+            "target": "发射功率",
+            "type": "关联"
+        },
+        {
+            "source": "边缘频带",
+            "target": "发射功率",
+            "type": "关联"
+        },
+        {
+            "source": "边缘用户",
+            "target": "发射功率",
+            "type": "影响"
+        },
+        {
+            "source": "中心用户",
+            "target": "发射功率",
+            "type": "影响"
+        },
+        {
+            "source": "SINR",
+            "target": "吞吐量",
+            "type": "影响"
+        },
+        {
+            "source": "用户数目",
+            "target": "SFR技术",
+            "type": "影响"
+        },
+        {
+            "source": "用户数目",
+            "target": "FFR方案",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "功率因子对FFR技术的影响",
+            "en": "The impact of power factor on FFR technology"
+        },
+        {
+            "title": "功率因子对SFR技术的影响",
+            "en": "The impact of power factor on SFR technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "功率因子对FFR技术的影响",
+            "target": "FFR方案中的中心用户与边缘用户的SINR累积分布情况",
+            "type": "包含"
+        },
+        {
+            "source": "功率因子对FFR技术的影响",
+            "target": "FFR方案中的中心用户与边缘用户的吞吐量的累积分布情况",
+            "type": "包含"
+        },
+        {
+            "source": "功率因子对SFR技术的影响",
+            "target": "SFR方案中的中心用户与边缘用户的SINR累积分布情况",
+            "type": "包含"
+        },
+        {
+            "source": "功率因子对SFR技术的影响",
+            "target": "SFR方案中的中心用户与边缘用户的吞吐量的累积分布情况",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ICIC技术分类", "en": "ICIC technology classification"},
+        {"title": "FFR技术", "en": "FFR technology"},
+        {"title": "SFR技术", "en": "SFR technology"},
+        {"title": "用户分类算法", "en": "User classification algorithm"},
+        {"title": "基于距离/SINR阈值的用户分类算法", "en": "Distance/SINR threshold-based user classification algorithm"},
+        {"title": "基于吞吐量的用户分类算法", "en": "Throughput-based user classification algorithm"}
+    ],
+    "relations": [
+        {"source": "FFR技术", "target": "ICIC技术分类", "type": "属于"},
+        {"source": "SFR技术", "target": "ICIC技术分类", "type": "属于"},
+        {"source": "用户分类算法", "target": "ICIC技术分类", "type": "属于"},
+        {"source": "基于距离/SINR阈值的用户分类算法", "target": "用户分类算法", "type": "属于"},
+        {"source": "基于吞吐量的用户分类算法", "target": "用户分类算法", "type": "属于"},
+        {"source": "FFR技术", "target": "SFR技术", "type": "比较分析"},
+        {"source": "基于距离/SINR阈值的用户分类算法", "target": "基于吞吐量的用户分类算法", "type": "比较分析"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "基于吞吐量的用户分类算法", "en": "User classification algorithm based on throughput"},
+        {"title": "调和平均数", "en": "Harmonic mean"},
+        {"title": "基于SINR阈值的用户分类算法", "en": "User classification algorithm based on SINR threshold"},
+        {"title": "FFR方案", "en": "FFR scheme"}
+    ],
+    "relations": [
+        {"source": "基于吞吐量的用户分类算法", "target": "调和平均数", "type": "包含"},
+        {"source": "基于吞吐量的用户分类算法", "target": "用户公平性", "type": "影响"},
+        {"source": "基于SINR阈值的用户分类算法", "target": "用户数目变化", "type": "影响"},
+        {"source": "基于SINR阈值的用户分类算法", "target": "调和平均数", "type": "包含"},
+        {"source": "基于SINR阈值的用户分类算法", "target": "用户SINR之和", "type": "影响"},
+        {"source": "FFR方案", "target": "用户分类算法", "type": "实现"}
+    ]
+}然而，这段内容中存在一些无意义的文字，无法提取出有效的知识点和关系。请提供更具体的内容，以便我能够为您提供正确的帮助。{
+    "knowledge_points": [
+        {
+            "title": "SINR阈值",
+            "en": "SINR threshold"
+        },
+        {
+            "title": "中心用户",
+            "en": "Central user"
+        },
+        {
+            "title": "边缘用户",
+            "en": "Edge user"
+        },
+        {
+            "title": "吞吐量",
+            "en": "Throughput"
+        },
+        {
+            "title": "用户分类算法",
+            "en": "User classification algorithm"
+        },
+        {
+            "title": "FFR方案",
+            "en": "FFR scheme"
+        },
+        {
+            "title": "频谱利用率",
+            "en": "Spectrum utilization"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SINR阈值",
+            "target": "中心用户",
+            "type": "影响"
+        },
+        {
+            "source": "SINR阈值",
+            "target": "边缘用户",
+            "type": "影响"
+        },
+        {
+            "source": "中心用户",
+            "target": "SINR累积分布情况",
+            "type": "关联"
+        },
+        {
+            "source": "边缘用户",
+            "target": "SINR累积分布情况",
+            "type": "关联"
+        },
+        {
+            "source": "吞吐量",
+            "target": "中心用户",
+            "type": "影响"
+        },
+        {
+            "source": "吞吐量",
+            "target": "边缘用户",
+            "type": "影响"
+        },
+        {
+            "source": "用户分类算法",
+            "target": "中心用户",
+            "type": "分类"
+        },
+        {
+            "source": "用户分类算法",
+            "target": "边缘用户",
+            "type": "分类"
+        },
+        {
+            "source": "FFR方案",
+            "target": "用户分类算法",
+            "type": "应用"
+        },
+        {
+            "source": "频谱利用率",
+            "target": "中心用户",
+            "type": "提升"
+        },
+        {
+            "source": "频谱利用率",
+            "target": "边缘用户",
+            "type": "提升"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SINR阈值", "en": "SINR threshold"},
+        {"title": "边缘用户", "en": "Edge user"},
+        {"title": "中心用户", "en": "Central user"},
+        {"title": "累积分布函数", "en": "Cumulative distribution function"},
+        {"title": "吞吐量", "en": "Throughput"},
+        {"title": "调和平均数", "en": "Harmonic mean"},
+        {"title": "用户分类算法", "en": "User classification algorithm"},
+        {"title": "SFR方案", "en": "SFR scheme"},
+        {"title": "频谱利用率", "en": "Spectrum utilization"}
+    ],
+    "relations": [
+        {"source": "SINR阈值", "target": "边缘用户", "type": "影响"},
+        {"source": "SINR阈值", "target": "中心用户", "type": "影响"},
+        {"source": "SINR阈值", "target": "吞吐量", "type": "影响"},
+        {"source": "SINR阈值", "target": "用户分类算法", "type": "应用"},
+        {"source": "SINR阈值", "target": "SFR方案", "type": "应用"},
+        {"source": "边缘用户", "target": "SINR阈值", "type": "受影响"},
+        {"source": "边缘用户", "target": "中心用户", "type": "区分"},
+        {"source": "边缘用户", "target": "吞吐量", "type": "影响"},
+        {"source": "中心用户", "target": "SINR阈值", "type": "受影响"},
+        {"source": "中心用户", "target": "边缘用户", "type": "区分"},
+        {"source": "中心用户", "target": "吞吐量", "type": "影响"},
+        {"source": "累积分布函数", "target": "SINR阈值", "type": "应用"},
+        {"source": "累积分布函数", "target": "边缘用户", "type": "应用"},
+        {"source": "累积分布函数", "target": "中心用户", "type": "应用"},
+        {"source": "吞吐量", "target": "SINR阈值", "type": "受影响"},
+        {"source": "吞吐量", "target": "边缘用户", "type": "影响"},
+        {"source": "吞吐量", "target": "中心用户", "type": "影响"},
+        {"source": "调和平均数", "target": "SINR阈值", "type": "应用"},
+        {"source": "用户分类算法", "target": "SINR阈值", "type": "应用"},
+        {"source": "用户分类算法", "target": "SFR方案", "type": "应用"},
+        {"source": "SFR方案", "target": "频谱利用率", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "小区间干扰协调技术", "en": "Inter-cell interference coordination technology"},
+        {"title": "干扰协调技术分类", "en": "Classification of interference coordination technology"},
+        {"title": "部分频率复用(FFR)", "en": "Fractional frequency reuse (FFR)"},
+        {"title": "软频率复用(SFR)", "en": "Soft frequency reuse (SFR)"},
+        {"title": "用户分类算法", "en": "User classification algorithm"},
+        {"title": "基于距离/SINR阈值的用户分类算法", "en": "Distance/SINR threshold-based user classification algorithm"},
+        {"title": "基于吞吐量的用户分类算法", "en": "Throughput-based user classification algorithm"},
+        {"title": "自适应的基于SINR阈值的用户分类算法", "en": "Adaptive SINR threshold-based user classification algorithm"}
+    ],
+    "relations": [
+        {"source": "小区间干扰协调技术", "target": "干扰协调技术分类", "type": "包含"},
+        {"source": "干扰协调技术分类", "target": "部分频率复用(FFR)", "type": "包含"},
+        {"source": "干扰协调技术分类", "target": "软频率复用(SFR)", "type": "包含"},
+        {"source": "部分频率复用(FFR)", "target": "用户分类算法", "type": "包含"},
+        {"source": "软频率复用(SFR)", "target": "用户分类算法", "type": "包含"},
+        {"source": "用户分类算法", "target": "基于距离/SINR阈值的用户分类算法", "type": "包含"},
+        {"source": "用户分类算法", "target": "基于吞吐量的用户分类算法", "type": "包含"},
+        {"source": "基于距离/SINR阈值的用户分类算法", "target": "自适应的基于SINR阈值的用户分类算法", "type": "改进"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "蜂窝基站能量消耗", "en": "Energy consumption of cellular base stations"},
+        {"title": "能量效率和干扰消除", "en": "Energy efficiency and interference elimination"},
+        {"title": "多小区蜂窝网络中的能量效率", "en": "Energy efficiency in multi-cellular networks"},
+        {"title": "干扰消除和功率控制", "en": "Interference elimination and power control"},
+        {"title": "ICIC方案的效用函数", "en": "Utility function of ICIC scheme"}
+    ],
+    "relations": [
+        {"source": "蜂窝基站能量消耗", "target": "能量效率和干扰消除", "type": "相关"},
+        {"source": "能量效率和干扰消除", "target": "多小区蜂窝网络中的能量效率", "type": "相关"},
+        {"source": "多小区蜂窝网络中的能量效率", "target": "干扰消除和功率控制", "type": "相关"},
+        {"source": "干扰消除和功率控制", "target": "ICIC方案的效用函数", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Soft Frequency Reuse Scheme",
+            "en": ""
+        },
+        {
+            "title": "OFDMA Downlink Inter-cell Interference Mitigation",
+            "en": ""
+        },
+        {
+            "title": "Performance of Inter-Cell Interference Mitigation with Semi-Static Frequency Planning for EUTRA Downlink",
+            "en": ""
+        },
+        {
+            "title": "Inter-Cell Interference Coordination in Indoor LTE Systems",
+            "en": ""
+        },
+        {
+            "title": "Channel Assignment Schemes for Cellular Mobile Telecommunication Systems: A Comprehensive Survey",
+            "en": ""
+        },
+        {
+            "title": "A Survey on Uplink Resource Allocation in OFDMA Wireless Network",
+            "en": ""
+        },
+        {
+            "title": "Radio Resource Allocation Algorithms for the Downlink of Multiuser OFDM Communication Systems",
+            "en": ""
+        },
+        {
+            "title": "Synchronization Techniques for Orthogonal Frequency Division Multiple Access (OFDMA): A Tutorial Review",
+            "en": ""
+        },
+        {
+            "title": "OFDMA Femtocells: A Roadmap on Interference Avoidance",
+            "en": ""
+        },
+        {
+            "title": "Enhanced Inter-Cell Interference Coordination Challenges in Heterogeneous Networks",
+            "en": ""
+        },
+        {
+            "title": "Inter-Cell Interference Coordination for LTE Systems",
+            "en": ""
+        },
+        {
+            "title": "A Graph Approach to Dynamic Fractional Frequency Reuse (FFR) in Multi-Cell OFDMA Networks",
+            "en": ""
+        },
+        {
+            "title": "Inter-Cell Interference Coordination through Adaptive",
+            "en": ""
+        }
+    ],
+    "relations": [
+        {
+            "source": "Soft Frequency Reuse Scheme",
+            "target": "OFDMA Downlink Inter-cell Interference Mitigation",
+            "type": "related"
+        },
+        {
+            "source": "OFDMA Downlink Inter-cell Interference Mitigation",
+            "target": "Performance of Inter-Cell Interference Mitigation with Semi-Static Frequency Planning for EUTRA Downlink",
+            "type": "related"
+        },
+        {
+            "source": "Inter-Cell Interference Coordination in Indoor LTE Systems",
+            "target": "Inter-Cell Interference Coordination for LTE Systems",
+            "type": "related"
+        },
+        {
+            "source": "Channel Assignment Schemes for Cellular Mobile Telecommunication Systems: A Comprehensive Survey",
+            "target": "Inter-Cell Interference Coordination for LTE Systems",
+            "type": "related"
+        },
+        {
+            "source": "A Survey on Uplink Resource Allocation in OFDMA Wireless Network",
+            "target": "Radio Resource Allocation Algorithms for the Downlink of Multiuser OFDM Communication Systems",
+            "type": "related"
+        },
+        {
+            "source": "Synchronization Techniques for Orthogonal Frequency Division Multiple Access (OFDMA): A Tutorial Review",
+            "target": "OFDMA Femtocells: A Roadmap on Interference Avoidance",
+            "type": "related"
+        },
+        {
+            "source": "OFDMA Femtocells: A Roadmap on Interference Avoidance",
+            "target": "Enhanced Inter-Cell Interference Coordination Challenges in Heterogeneous Networks",
+            "type": "related"
+        },
+        {
+            "source": "Inter-Cell Interference Coordination for LTE Systems",
+            "target": "A Graph Approach to Dynamic Fractional Frequency Reuse (FFR) in Multi-Cell OFDMA Networks",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "软频率重用", "en": "Soft Frequency Reuse"},
+        {"title": "多小区OFDMA系统中的高效频率重用方案", "en": "Efficient Frequency Reuse Scheme for Multi-cell OFDMA Systems"},
+        {"title": "分数频率重用OFDMA网络中的动态资源分配", "en": "Dynamic Resource Allocation in Fractional Frequency Reused OFDMA Networks"},
+        {"title": "下行小区级OFDMA系统的资源分配-第一部分：最优分配", "en": "Resource Allocation for Downlink Cellular OFDMA Systems - Part I: Optimal Allocation"},
+        {"title": "基于OFDMA的网络中频率规划方案的性能评估", "en": "Performance Evaluation of Frequency Planning Schemes in OFDMA-based Networks"},
+        {"title": "OFDMA小区下行链路中分数频率重用方法的比较", "en": "Comparison of Fractional Frequency Reuse Approaches in the OFDMA Cellular Downlink"},
+        {"title": "具有不规则小区模式的大型网络中的软频率重用：期望获得多少收益", "en": "Soft Frequency Reuse in Large Networks with Irregular Cell Pattern: How Much Gains To Expect"},
+        {"title": "增强小区边缘性能：一种下行动态干扰避免方案与小区间协调", "en": "Enhancing Cell-edge Performance: A Downlink Dynamic Interference Avoidance Scheme with Inter-cell Coordination"},
+        {"title": "UTRAN LTE的软频率重用方案", "en": "Soft Frequency Reuse Scheme for UTRAN LTE"},
+        {"title": "OFDMA通信网络中的资源分配和重用以减少小区间干扰", "en": "Resource Allocation and Reuse for Inter-cell Interference Mitigation in OFDMA-based Communication Networks"},
+        {"title": "OFDMA小区系统的增量频率重用方案及其性能", "en": "An Incremental Frequency Reuse Scheme for an OFDMA Cellular System and Its Performance"},
+        {"title": "OFDM无线网络的跨层优化-第一部分：理论框架", "en": "Cross-layer Optimization for OFDM Wireless Networks - Part I: Theoretical Framework"},
+        {"title": "多用户OFDM系统的发射功率自适应", "en": "Transmit Power Adaptation for Multiuser OFDM Systems"}
+    ],
+    "relations": [
+        {"source": "软频率重用", "target": "多小区OFDMA系统中的高效频率重用方案", "type": "相关论文"},
+        {"source": "软频率重用", "target": "分数频率重用OFDMA网络中的动态资源分配", "type": "相关论文"},
+        {"source": "软频率重用", "target": "下行小区级OFDMA系统的资源分配-第一部分：最优分配", "type": "相关论文"},
+        {"source": "软频率重用", "target": "基于OFDMA的网络中频率规划方案的性能评估", "type": "相关论文"},
+        {"source": "软频率重用", "target": "OFDMA小区下行链路中分数频率重用方法的比较", "type": "相关论文"},
+        {"source": "软频率重用", "target": "具有不规则小区模式的大型网络中的软频率重用：期望获得多少收益", "type": "相关论文"},
+        {"source": "软频率重用", "target": "增强小区边缘性能：一种下行动态干扰避免方案与小区间协调", "type": "相关论文"},
+        {"source": "软频率重用", "target": "UTRAN LTE的软频率重用方案", "type": "相关论文"},
+        {"source": "软频率重用", "target": "OFDMA通信网络中的资源分配和重用以减少小区间干扰", "type": "相关论文"},
+        {"source": "软频率重用", "target": "OFDMA小区系统的增量频率重用方案及其性能", "type": "相关论文"},
+        {"source": "软频率重用", "target": "OFDM无线网络的跨层优化-第一部分：理论框架", "type": "相关论文"},
+        {"source": "软频率重用", "target": "多用户OFDM系统的发射功率自适应", "type": "相关论文"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {"title": "WiMAX fractional frequency reuse for rural environments", "en": ""},
+        {"title": "Analytical evaluation of fractional frequency reuse for OFDMA cellular networks", "en": ""},
+        {"title": "Analytical evaluation of fractional frequency reuse for heterogeneous cellular networks", "en": ""},
+        {"title": "Interference management for 4G cellular standards", "en": ""},
+        {"title": "Statistical learning in automated troubleshooting: Application to LTE interference mitigation", "en": ""},
+        {"title": "Optimal power masking in soft frequency reuse based OFDMA networks", "en": ""},
+        {"title": "Dynamic frequency allocation in fractional frequency reused OFDMA networks", "en": ""},
+        {"title": "Optimal fractional frequency reuse (FFR) in multi-cellular OFDMA system", "en": ""},
+        {"title": "Adaptive interference coordination in multicell OFDMA systems", "en": ""},
+        {"title": "Weighted sum-rate maximization in multi-cell networks via coordinated scheduling and discrete power control", "en": ""},
+        {"title": "Multicell OFDMA downlink resource allocation using a graphic framework", "en": ""},
+        {"title": "3GPP长期演进(LTE)技术原理与系统设计", "en": "Principles and System Design of 3GPP Long Term Evolution (LTE)"},
+        {"title": "Unlocking Wireless Performance with Co-operation in Co-located Base Station Pools", "en": ""}
+    ],
+    "relations": [
+        {"source": "WiMAX fractional frequency reuse for rural environments", "target": "Analytical evaluation of fractional frequency reuse for OFDMA cellular networks", "type": "related"},
+        {"source": "Analytical evaluation of fractional frequency reuse for OFDMA cellular networks", "target": "Analytical evaluation of fractional frequency reuse for heterogeneous cellular networks", "type": "related"},
+        {"source": "Interference management for 4G cellular standards", "target": "Statistical learning in automated troubleshooting: Application to LTE interference mitigation", "type": "related"},
+        {"source": "Optimal power masking in soft frequency reuse based OFDMA networks", "target": "Dynamic frequency allocation in fractional frequency reused OFDMA networks", "type": "related"},
+        {"source": "Optimal fractional frequency reuse (FFR) in multi-cellular OFDMA system", "target": "Adaptive interference coordination in multicell OFDMA systems", "type": "related"},
+        {"source": "Adaptive interference coordination in multicell OFDMA systems", "target": "Weighted sum-rate maximization in multi-cell networks via coordinated scheduling and discrete power control", "type": "related"},
+        {"source": "Multicell OFDMA downlink resource allocation using a graphic framework", "target": "3GPP长期演进(LTE)技术原理与系统设计", "type": "related"},
+        {"source": "Unlocking Wireless Performance with Co-operation in Co-located Base Station Pools", "target": "Multicell OFDMA downlink resource allocation using a graphic framework", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "3G", "en": "The 3rd Generation"},
+        {"title": "3GPP", "en": "The 3rd Generation Partnership Project"},
+        {"title": "ABS", "en": "Almost Blank Subframe"},
+        {"title": "ACM", "en": "Adaptive Coding Modulation"},
+        {"title": "CDMA", "en": "Code Division Multiple Access"},
+        {"title": "CQI", "en": "Channel Quality Indicator"},
+        {"title": "elCIC", "en": "Enhanced Inter-cell Interference Coordination"},
+        {"title": "EDGE", "en": "Enhanced Datarates for GSM Evolution"},
+        {"title": "FFR", "en": "Fractional Frequency Reuse"},
+        {"title": "GSM", "en": "Global System of Mobile Communication"},
+        {"title": "HSPA+", "en": "High-Speed Packet Access+"},
+        {"title": "ICI", "en": "Inter-cell Interference"},
+        {"title": "ICIC", "en": "Inter-cell Interference Coordination"},
+        {"title": "ICIR", "en": "Inter-cell Interference Randomize"},
+        {"title": "IDMA", "en": "Interleaved Division Multiple Access"},
+        {"title": "IEEE", "en": "Institute of Electrical and Electronics Engineers"},
+        {"title": "IFR", "en": "Incremental Frequency Reuse"},
+        {"title": "IRC", "en": "Interference Rejection Combining"},
+        {"title": "ITU", "en": "International Telecommunication Union"},
+        {"title": "LTE-A", "en": "Long Term Evolution-Advanced"},
+        {"title": "MCS", "en": "Modulation and Coding Scheme"},
+        {"title": "MIMO", "en": "Multiple Input Multiple Output"},
+        {"title": "OFDM", "en": "Orthogonal Division Multiple Access"},
+        {"title": "OFDMA", "en": "Orthogonal Frequency Division Multiple Access"},
+        {"title": "PCFICH", "en": "Physical Control Format Indicator Channel"},
+        {"title": "PDCCH", "en": "Physical Downlink Control Channel"},
+        {"title": "PDSCH", "en": "Physical Downlink Shared Channel"},
+        {"title": "QAM", "en": "Quadrate Amplitude Modulation"},
+        {"title": "QPSK", "en": "Quadrature Phase Shift Keying"},
+        {"title": "RE", "en": "Resource Element"},
+        {"title": "SC-FDMA", "en": "Signal Carrier Frequency Division Multiple Access"},
+        {"title": "SFR", "en": "Soft Frequency Reuse"},
+        {"title": "SINR", "en": "Signal to Interference Noise Ratio"},
+        {"title": "SNR", "en": "Signal to Noise Ratio"},
+        {"title": "TBS", "en": "Transport Block Size"},
+        {"title": "TR", "en": "Technology Report"},
+        {"title": "UE", "en": "User Equipment"}
+    ],
+    "relations": []
+}I'm sorry, I don't understand what you mean by "77". Can you please provide more context or clarify your request?

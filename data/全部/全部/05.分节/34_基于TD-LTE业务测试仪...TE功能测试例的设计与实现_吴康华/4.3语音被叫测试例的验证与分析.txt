@@ -1,0 +1,104 @@
+4.3语音被叫测试例的验证与分析
+语音被叫测试例执行结果如下所述:
+在本测试例的第一个测试点之前，首先SS发送第一条INVITE(Cseq：4711) 到UE,标志着测试例流程开始，如下图4-6所示。
+HTC.J2. J	- Wireshafk
+6!e E廨	$>pture	Tocis 負
+駁峯春編猴遊爲鷺辭蹑"、辭蠟喩簽携！絃嬴感纹鹼愚繊臟擊滤族
+Max-For?ards： 6?
+P-€alJ?4-?ssjrty-lD:^3ip:001CWlSS456iS9€iss. wicOOl. ssecSOh Sgppnetwrk. crg>
+Record-Route;<sip: -92. 1§S. iOS. 20:3062： lr>, <sip:terjs?$c5cfi. 3?pp. arg;Ir \ <21p：orlglSacscf2.3gsyp. srg: lr>, <sip:pcscf2. $跡,erg: lr>
+Sujgr* 味 lOOrel. precondition
+? Jo:<sij>:GSlQl0123^36789?ias. meOQl. isccMl, 3gpf>network. org>
+密云xh心tt&C Vi?：Sl?Z2.0/UF 192. J6S. IGO. 20:3052;brancfe=T9feG4bK34567890J2, SIP/S.	sesef 1. 3gj>i>. crg:branch=z9^4b￡45€7B90i33, SIF/2. 0/C3F scxef2. 3?pp.
+& Mtssa^e Socy
+图 4-6 INVITE (Cseq： 4711)消息结构
+根据SIP协议规定，INVITE的From字段表面发起寻呼的是sip： PeerUE-Public@stfl60.etsi.org:6543 所在 IP 地址为 192.168.0.1,邀请对象是 sip： 0010101234567890@ims.mnc001 .mccOO 1.3gppnetwork.org,所在 IP 地址为 192.168.100.20o
+在测试点 1 处，SS 收到一条发自 UE 的 183 Session Progress (Cseq： 4711), 该消息的Cseq (4711)值等于INVITE (Cseq： 4711)的Cseq值，同时，该消 息的SIP部分包含了通信双方的IP地址和对INVITE中包含的SDP的SDP回复。 测试点1通过。如图4-7所示：
+x Status-Line: SI? 2.0 IS3 Session Prsxress
+ST*xu?-Codtf： 1B3 ;Resent Packet:
+-Mexsag* Header
+C?U~ID： ：XV1	IdO-*7fe5-&0a0c91 efebf68192. ￡68. 100. 2C
+Cantact: <ssi3>:001G10>23456~89<i92. ifi8. 0. * :8919z :??g. Sxpp. lcsi-s-?f?',arji%3A<ira-7%3A3xpj>-3es'vlce. iats. icsi-video 猝 Cont?￡t-Ggr： *is>:??iCHOi2345e?89?192. 165. Q. i:8919
+Contact paraseter;	3?pp. ScsWefas^tirst^SAurn-T^SASsEp^-service. las. icssi.
+Contact par?B38eter：
+Cutset parasseter ：
+C?nteat~￡en<th: 4iS
+Cenieat-Tyj>?：々關 心”g's?5p
+洲 CSea： 47X1 m'XTE
+?ro?-. \sip：?e?rVH-Fiufelleftstf XSO. etsi. arg'; tag=abc-INV1 T￡-Fr??stm
+Recora-JtouTe: ；.stp：iS2.. ISS. 100. 20:5062; 2r>. <sip：ters?scscf2. Sgpp. ?r?, ir>, <.5ip:orig?5€scf2. 3g?p. ovg：lr>, zsip:pcscf2. SjrsJ>> or?. Ir>
+& Io: ；sip:G010xe：S34587S9Si?s. wicOOi. Btcc&Ol. Sgppnetwork. org> , ts?*S3O2S47
+也 ftruncstedj Via^ SlP/2. O/VUF 193. JSS. iOO. 20:SG62;branch=x9hG4bK345S7S50i2. S1F/3.0： ^￡>P sesefi. 3sp?. ars.branch=zShG^b^SfeTa^SZS, SiF '2. Q/CDP scscfZ. 3gpp. RSeq: 1
+P-Access~??ex?orli:-Inf8： 3CPP-E-CTRAK-TDO; utr<Mj-cell-id-3gpj>?OOiOiOOO：(X}OOtGO
+Require: ：00rel. cr?ceM4tt<a?
+@ 4-7 183 Session Progress (Cseq： 4711)消息结构图
+SS 发送 PRACK (Cseq： 4712)后收到 UE 发送的 200 OK (Cseq： 4712), 如下图4-8所示，该消息的Cseq值与PRACK的Cseq值相等，于是测试点2通 过。
+37,078627000 19?.155.0 i 192J63.10070 SIP SutuS. 200 OK	-OX
+?Ethernet II, $rc:	旺4:6s:由：姪;76；e5)>	：4;加：貝；7：汪：寿5 (14：da：e9；e2;
+?leternet Pretocdl. Srct 152.168,0.1 <192,1^.0.1),龄t : m. S68.10C.20 092. t6S. 100.26)
+1 Encapsulating Security Paylead
+, Vs*r Daturas Protocol, Src Fort; 8214	Pert； na-Xocaiise (5053)
+-Session laitiaii^n Prototol
+关 Statua-Lise: SIP. 0 200 OK
+Status-Code: 200
+[Resent Packet: False：
+t； Message Header
+Cali-ID: INVH￡-0-7dec-ll??-a765-OQaOc95e6bf64192.168.100.20
+Coatent-Length: 0
+说 CSetj: 4712 PRACK
+? Frc?: <sip:PeerfE-Public?STfI60. etfi. ort>；tajr?abc-I5?vnE-Fr<?tat
+?* To： <?ip:0010i0123456'?89ftlBS. ancOO：. bccOOJ. S?ppnetwork. cr<>. tar?S302847
+■?- :truncated： VU： SIP/2.0<'CDP l$2.163- 100.20:5062 :brftnth?z9hG4bK89012345S7, SIP 2. O/UDP sesefi. 3<pp. ors.branch??9bC4bK9012345e?8, S1P/2.0/UDP tCKf2. 3<pr>. or
+P-Acces?-Net?oric-lnfo： 3GPP-B-VTRA?<-TDO. utran~ceH-id-3gpp><0O!0l000iO0O0100
+k: lOOrei
+Kllov: INVITO. ACK, CWCEL. BYE. VTOAH. FRACK. MESSAGE. REFZK NOTIR. INFO
+图4-8 UE发送的200 OK (Cseq： 4712)消息结构
+接下来，SS发送UPDATE (Cseq： 4713)到UE后应当收到来自UE的回 复200 OK (Cseq： 4713),如下图4-9所示，可以看到，该条200 OK (Cseq： 4713)包含SDP消息，这是与上一条200 OK (Cseq： 4712)不同的地方。标志 测试点3通过。
+% State?-line: SIP>2.0 200 OK
+Status-Code: 200
+[Resent Packet: False]
+”	Header
+CaU-ID: IJAfn￡-O-7dec-UdO-a765-00*0e9Xe6bf6?192. 168. 100.20
+? Costaet: <510：0019101234367896^93. ：68- 0. 1:8919'；-j. 3gpp. ￡csl-refM*om^3Attrn-?%3S3f^>-servlc?. las. icxi. sat^l* ;aud J?;vldeo
+Content-lenxth: 396
+Ccatent-Type: applicatlca- sdp
+"Sg: 4713 UFDAiZ
+Frc?: <sip：FeerVE-Fublictst f 160. etsl. org). taf?abc~IXVII2-Fr?Bt?8
+*, To: <jip：OOlO10S334S67S9?im. ancOOl. ?cc00；.誕ppnevror虹 ar?' :tsgs830Z34?
+* ? truncated] V<a： SIP/2. O^UDP 192. JS9.100. 20:3062 :hr<?nch??9hC4bKS； 63432109, SIF/3.0/U&P scscfl. 3<pp. erc，br&nch?s9htC4bK765432J098, SI? 2.0/Uff sc sc f 2.3?>p. ?-Aecess-Xct?crit-Info: 3GPP-C-UTRAN-TDD; Vtra?-cen-id-3sy5=0010i0a0i0000i00 Require: precondition k： lOOrel
+Al lo?： 1NVHS. ACK. CANCEL. BYE, VPJ?TE, PSACK. MESS"礼	KOTIFV, INFS
+<"Message Body
+Session Description Protocol
+DescrJulios, nacse and stress (?>: a?d￡<? 50010 RTP/AVF §7 Inf?raati?n fb): AS: 29
+&?nd?idth Infsrsation (b)t RS:9
+图4-9 UE发送的200 OK (Cseq： 4713)消息结构
+由于180 Ringing是可选信令,不属于测试点，直接接收UE发送的200 OK, 如下图 4-10 所示，200 OK (Cseq： 4711)的 Cseq值等于 INVITE (Cseq： 4711) 的Cseq值，测试点4通过。
+Status-Code: 200
+[Resent Packet: False]
+臨岫海萨Header
+CaU-ID: INVITB-O-7dec-il(i0~a765-0Qa0c33e6bf6ei92. !63.100. 20
+C?>nteat-Lensth: 0
+宓 CSeq： 4711 INVIlg
+箋 Fra?: <3ip:PeerUE-Public?stf 160. etsi. axg); Tagsabc-IWIIE-Froatag
+Recoed-Rcute: <slp:192. 16S. 100.20:5062; lr>, <slp: tersfiscscf 1. 3s)p. erg; lr>, <slp:origttsc3cf2. 3gpp. org: 1 r>, <sip:pcscf2. 3gpp. org;lr>
+￡ 7g: <slp:OOi010l23456789fiiHS. BtntOOZ. secOOl. Sjppnetvca'k. org> ;rag=S3O2S47
+￡ L-rancated] Via: SIP/2.0/liDP 192. 16S. 100. 20:5062;；5ra3cfe=z9hG4bK3456789013, S17/2. O/UDF scscfl. 3gpp. org: branch=?9hG4bK4567890123, SIP/2.0.-UDP scscf2. Sgpp. or；
+P-Access-Net?ork-Isfo: SGFP-E-umS-T3D: urran-cell-id-3gpp=001010001000i3100
+? a: <sip：0010101234587894i92. 168.0.1;8519>: *g. 3gpp. lcsi-ref="urn%3Aurn-7%3A3?pp-service. i&￡. icsi. aEEte;*: audio, video
+k: iOOre1
+Al JXVZTE, ACK, CANCEL, BYE. UPDATE, PHACK, MESSAGE. R￡F￡F, IXFO
+图4-10 UE对INVITE的最终响应200 OK (Cseq： 4711)消息结构
+SS将回复UE的200 OK (Cseq： 4714)以ACK,然后SS紧接着再发送BYE 请求挂机，按照分析，此时SS应当收到UE回复200 OKo如下图4-11所示， 200 OK消息Cseq字段值为4714 BYE,表示该消息响应的是BYE (Cseq值为 4714),测试点5通过,整个测试例TC_12_13 pass。
+Status-Cade: 20G
+[Resest Packet: False]
+噎 Message Header
+Call-IB: I*MIS-^-7dee-ll^-a7S5~0Ga0c91e6bfggl92.1S8. IGO. 20
+C?aieat-le?Sth： Q
+險游g: 4724 Brg
+'? Frs?： <sip:?eerV￡-rsablic€stfl60. etsi. srg>;tag=:3fec-3N^'I7Z~?r?stas
+滋 Io; <3ip:061020-2343€~89^iffis. sncOCi.sccGOi. 3gs>pnet?Grk. cr?>: 188=8302347
+滋：tr仪VSa: S5：?/2. 0/U3P 192. 168. :SO. SOiSOSSibrasch^Sh&ibKaTfe^SSOOS, S1F/2.0/VSP scscf L 3?pp. arg;bra?ch=29JsG4bK-&5432009S! SXP/'S. 0/U5P &c$zt2. Sjpp. or
+F~A?cess-Xetw?rk-Is.f?>: 3gPP-E~um?J-I?X); snvan-NllTd?■舞p戶QOmsgHgXH?
+图4-11 UE发送的200 OK (Cseq： 4714)消息结构图
+图是TS Manager软件截图如图4-12所示：
+图 4-12 测试例 TC_12_13 pass 图

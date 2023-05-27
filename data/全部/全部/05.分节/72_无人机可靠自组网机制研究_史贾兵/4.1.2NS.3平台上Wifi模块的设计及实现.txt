@@ -1,0 +1,60 @@
+4.1.2NS.3平台上Wifi模块的设计及实现
+NS-3仿真平台中的节点可以包含一个netdevice集合对象，就像真实计算机 包含以太网接口卡一样。在NS-3仿真平台上可以给节点添加wifinetdevice对象 来创建基于IEEE 802.11的Ad Hoc网络。
+NS-3仿真平台中包括一个重要的模块即wifi模块，这个模块源码的文件目 录位于src/wifi中。在此模块中有一个重要的对象即WifiNetDevice,它是基于 802.11标准的无线网络接口控制器。NS-3仿真平台也是通过此接口给节点添加 wifi模块来进行802.11的仿真。目前NS-3支持的功能包括：
+基本的802.11 DCF的基础设施和组织模式。
+支持物理层 802.11a, 802.11b, 802.11g, 802.11n(2.4 和 5GHz 频段)，802.1 lac 和 802.1 lax 草案 l.Oo
+聚合 MAC 服务数据单元(Aggregation Mac Service Data Unit)和根据 802.lln 扩展的聚合mac协议数据单元(MAC Protocol Data Unit简称：MPDU),并且还 可以将这两种聚合结合到一起成为两级聚合。
+从802.11e扩展的基于服务质量的增强分布信道接入(Enhanced Distributed Channel Access,简称EDCA)和排队策略。
+可以使用不同的传播损耗模型和传播延迟模型。
+此wifi模块还支持各种码率控制算法如：Aarf, Arf, Cara, Onoe, Rraa, ConstantRate, and Minstrel o
+支持802.11s mesh网络。
+28
+支持 802.lip 和车联网(Wireless Access in Vehicular Environment,简写： WAVE)o
+虽然NS-3仿真平台中的wifi模块是基于IEEE802.il设计的，但是不是所 有的方面都与现实中的一致，同时也有许多模块目前还没有实现，等待后续的开 发更新。下面的一些细节涉及到了物理层和信道模型：
+1,	802.11ax仍在草案阶段，不是所有的功能都实现了。
+2,	802.11ax不包含任何的高密度的改进。
+3,	802.11axmu-ofdma不支持。
+4,	802.11ax只能用恒定的速率控制算法。
+5,	802.11ax只支持苏协议数据单元格式。
+6,	802.llac/ax MU-MIMO是不支持的，不超过4个天线可以配置。
+7,	802.11n/ac/ax波束形成是不支持的。
+8,	PLCP报头接收不是建模。
+phy_rxstart 不支持。
+图4-3 Wifi模块设计架构
+29
+图4-3显示了 Wifi模块的设计框架，主要包括三个子层模块：物理层模块， 下层MAC模块和高层MAC模块。
+物理层模块主要负责包的接收和能量消耗的跟踪。包接收通常有三个主要部 分：
+每个包的接收有可能接收成功但也有可能接收失败，这个可能性取决于调制, 信噪比和物理层的状态，比如物理层的状态为传输或者睡眠时，接收就会失败。 存在一个对象，它可以跟踪到所有的接收信号，当做接收决定的时候，可以准确 的计算干扰功率，进而决定是否被成功接收。调制和标准的一个或多个错误模型， 可以被用来评判接收成功的可能性。
+下层MAC模块的功能是通过传输RTS, CTS和ACK信号进行介质访问。 下层MAC模块又可以进一步划分成下层MAC模块和中层MAC模块，中层 MAC模块的功能有:处理包队列，给数据包分帧，如果有必要还可以通过核查 WlfiRemoteStationManager 来控制包的重传。
+下层MAC模块包括三个主要的组成部分，首先NS-3::MacLow关心的是 RTS, CTS, DATA, ACK 信号的传输。其次 NS-3::DcfManager 和 NS-3::DcfState 则实现了 DCF 和 EDCAF 功能。最后 NS-3::DcaTxop 和 NS-3::EdcaTxopN 处理 包的队列，包的分帧和包的重传。
+高层MAC模块的功能有：mac层信标生成、探测和关联状态机以及一组速 率控制算法。目前有高层MAC模块包括三种类型分别在通信过程中扮演不同的 角色，对应于三种不同的拓扑元素。它们都继承于同一个父类NS-3::RegularWifiMaCo 其中 NS-3::ApWifiMac 对应于接入点 AP, NS-3::StaWifiMac 对应于非接入点站，NS-3::AdhocWifiMac则对应于自组织网络。
+其中最简单的是NS-3::AdhocWifiMac,因为它所实现的wifi MAC是不需要 生成任何的信标，探测和连接信号的。NS-3::StaWifMac这个类实现了主动探测， 如果有太多的信标丢失时，可以连接状态机来进行自动重连。NS-3::ApWifiMac 实现了一个接入点，它可以周期性的生成信标，而这个生成的信标可以接受每一 次的尝试连接。
+这三个高层MAC模块都继承了相同的父类NS-3::RegularWifiMac,这个父 类暴露给它们一些MAC配置，如属性QosSupported是用来配置是否允许 802.11eAVMM-style支持服务质量，属性HtSupported则是用来配置是否允许 802.1 In支持高吞吐量，属性VhtSupported用来配置802.1 lac是否支持非常高的 吞吐量，属性HeSupported是用来配置是否允许8O2.ax支持高效率。
+30
+4.	L3 Wifi模块的调用
+对Wifi模块的使用其实就是给节点配置网络设备接口。WifiNetDevice的配 置功能非常强大但是使用起来非常复杂。当仿真的时候大部分的配置都是不变的 只需要改变个别的配置，所以NS-3提供了一些帮助类通过使用默认设置来简化 它的使用。这些帮助类还使用了 NS-3的属性系统，允许用户更改默认的属性值。 创建WifiNetDevice需要一下几步来完成：
+首先需要决定使用什么物理层，如SpectrumWifiPhy或者YansWifiPhy。这 个将影响到使用何种信道与其相对应。
+配置信道，信道是信号的传播通道，信号可以从一个设备通过同一个wiE信 道到达另一个设备。信道的主要配置包括信道的传播损耗模型和传播时延模型。
+配置wifi物理层，wifiphy负责实际发送和接收来自信道的无线信号。在这 里，wifiphy决定每帧将被成功解码或不根据接收信号强度和噪声。因此，对 wifiphy主要的配置是错误率模型，可以通过错误率模型计算成功解码的概率。
+配置WifiMac,这一步是用来配置wifi结构和设备的级别的。用卢可以将其 配置成ap-sta或者ad-hoc的wifi结构，还可以配置802.1 Ie是否支持Qos, 802.1 In 是否支持HT, 802.11ac是否支持VHT, 802.1 lax是否支持HE。
+创建WifiDevice,在这一步，用户配置期望的wifi标准(如,802.11a, 802.11b, 802.11g, 802.1 In, 802.11 ac 或者 802.11 ax)和速率控制算法。
+配置移动模型，通常WifiNetDevice需要移动模型。
+以下是根据上述的仿真顺序完成的代码实现：	皿
+创建一个节点容器，存放两个节点。
+NodeContainer AdHocNode;
+AdHocN ode.Create(2);
+创建信道助手和物理层助手，然后将物理层接入到信道中。
+YansWifiChannelHelper channel = YansWifiChannelHelper: :Default();
+YansWifiPhyHelper phy = YansWifiPhyHelper: :Default();
+phy.SetChannel(channel.Create());
+创建MAC助手，并设置wifi结构为ad-hoc,时隙大小为16uso
+WifiMacHelper mac;
+mac.SetType("NS-3::AdhocWifiMac", "Slot", StringValue("16us"));
+创建wifi助手，将wifi标准设置成802.11a,并设置恒定的传输速率为6Mbpso
+WifiHelper wifi;
+wifi.SetStandard(WIFI_PHY_STANDARD_80211 a);
+31
+wifi.SetRemoteStationManager(nNS-3::ConstantRateWifiManager'\MDataModen, String Value(n0fdmRate6Mbpsn));
+创建网络设备容器，用来管理所有节点的设备，通过上面创建的wifi助手， 物理层助手，MAC助手给节点容器安装网络设备。
+NetDeviceContainer AdHocDevices;
+AdHocDevices = wifi.Install(phy5 mac, AdHocNode);

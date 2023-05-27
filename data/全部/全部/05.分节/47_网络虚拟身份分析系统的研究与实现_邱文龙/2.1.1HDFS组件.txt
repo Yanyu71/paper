@@ -1,0 +1,6 @@
+2.1.1HDFS组件
+NameNode
+NameNode是HDFS系统的管理者主要功能是管理文件系统和控制对文件的访问。它维护着整个文件系统和文件夹的元数据(metadata)。这些信息分别存放在名为命名空间镜像文件和编辑日志文件中，且被缓存在 RAM 中，当然，这两个文件也会被永久存储在本地磁盘上[13]。除此之外，NameNode 中还存放着数据块的位置信息,以便于查找所需的文件数据,但是这些信息并不会永久的被存储因为这些信息会在Hadoop 集群启动时从 DataNode重建。
+Secondary NameNode
+在 Hadoop 集群中，一般只会配置一个 NameNode 节点，由上述所说的NameNode 的重要性，一旦其发生故障整个集群就将会受到影响，这就是常说的单点故障。为了解决此问题实现高可用，增加了Secondary NameNode 节点，它并不是NameNode的热备份,它真正的意义是定期保存NameNode 中的 Metadata信息，所以SecondaryNameNode 并不能分担NameNode 上对HDFS交互性操作的压力。它一般运行在一台单独的物理机器上，当NameNode 出现问题时，可以从保存的Metadata 快照恢复以重新启动NameNode，因此实现了高可用。2.1.1.3 DataNode
+DataNode是Hadoop 集群的数据存储和工作节点，主要负责大量的计算和数据文件的存储，它还会定期的向 NameNode 发送存储的数据块block)的列表信息。HDFS 的文件通常是以余备份的形式存储在多个 DataNode 节点中，默认的备份数是 3。所以当某一个 DataNode 节点宕机后，数据也不会丢失，增加了数据的可靠性。

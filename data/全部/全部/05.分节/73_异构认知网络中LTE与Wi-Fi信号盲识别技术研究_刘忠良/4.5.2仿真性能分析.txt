@@ -1,0 +1,32 @@
+4.5.2仿真性能分析
+通过MATLAB进行蒙特卡洛仿真，分析了截取的OFDM符号长度、信号带 宽和信道环境(AWGN, Rayleigh)等参数对异构认知网络中LTE与Wi-Fi混叠 47
+信号盲识别算法性能的影响。
+1
+S.87.6S 工.321 sso.o.o.o.o.o.o. uo 三 U6O。① aQ①to。Jo A-m qEqo」d
+5	10	15	20	25
+SNR(dB)
+—扭一OFDM symbols=10
+—*- OFDM symbols=50
+—W— OFDM symbols=100
+—B— OFDM symbols=500
+图4-8不同OFDM信号长度下混叠信号盲识别准确率
+图4-8表示不同OFDM符号长度对于混叠信号盲识别性能的影响。图例表示 不同的OFDM符号数，横坐标表示SNR范围，纵坐标表示信号盲识别的准确率 (Probability of Correct Recognition),其中0, 1分别代表信号盲识别准确 率为0%, 100%,其中间隔为0.1。为了尽量减小混叠信号盲识别的计算量，本文 通过分析采用截取最少的OFDM信号符号长度的方法达到LTE与Wi-Fi混叠信号 稳定盲识别的目的。从图中可以看出，随着截取OFDM符号长度的增加，混叠信 号盲识别准确率上升，因为当截取混叠信号的OFDM符号长度较小时，不能够体 现出信号本身的特性，但是当OFDM符号长度达到100以上时，混叠信号盲识别 的准确率基本维持不变，因为OFDM符号长度当达到一定的值时，信号的特性完 全展现出来,盲识别的性能也就不会再继续增加，所以通过分析得出LTE与Wi-Fi 混叠信号的OFDM符号长度选取100左右即可实现混得信号的准确盲识别。
+UO=C6OO① a loCDto。jo A~一 qeqo」d
+48
+―A- LTE 15MHz,Wi-Fi 80MHz
+—*— LTE 5MHz,Wi-Fi 40MHz
+-S- LTE 1.4MHz,Wi-Fi 20MHz
+LTE-U与Wi-Fi异构认知网络中，在没有任何先验信息的情况下，图4-9表 示AWGN信道下LTE与Wi-Fi混叠信号盲识别准确率，其中OFDM调制参数选 为QPSK,图例表示不同带宽下的混叠信号，横坐标表示SNR的范围，纵坐标 表示信号盲识别的准确率。从图中可以看出随着SNR的增大，信号盲识别的准 确率增大，在SNR为20dB时，LTE和Wi-Fi混叠信号盲识别的准确率达到百分 之百，而且带宽参数对于LTE与Wi-Fi混叠信号盲识别的性能影响较小，使得本 文所提出的基于盲源分离的LTE与Wi-Fi混叠信号盲识别算法能够适用于各种不 同的场景。
+uo 三 U6OO① go①too jo 为三 qEqoJCL
+5	10	15	20	25	30
+SNR(dB)
+―*一 LTE 15MHz,Wi-Fi 80MHz
+—B- LTE 5MHz,Wi-Fi 40MHz
+―＞一LTE 1.4MHz,Wi-Fi 20MHz
+图4-10ETU多径瑞利信道下混叠信号盲识别准确率
+图4-10显示ETU多径瑞利信道下所提算法识别性能，可以看出在ETU多 径瑞利信道下，所提算法当SNR为30dB时，LTE与Wi-Fi混叠信号盲识别的准 确率才达到百分之百，综上分析，所提算法更适用于高信噪比场景中，低信噪比 环境下算法有待进一步改进。
+uo 三仁 6003a woohoo Jo A±±=qBqo」d
+SNR(dB)
+图4-11基于iJADE混叠信号盲识别算法与基于JADE混叠信号盲识别算法识别性能对比图
+49
+图 4-11 表示基于 iJADE (Improved Joint Approximation Diagonalization of Eigenmatrices)盲源分离的混叠信号盲识别算法与基于传统的JADE盲源分离的 混得信号盲识别算法⑹】的性能比较。图例分别表示基于iJADE的盲源分离算法 (blind recognition method based on iJADE)和基于 JADE 混叠信号盲识别算法 (blind recognition method based on JADE),从图中可以看出所提算法当SNR等 于20dB时，盲识别准确率就达到了百分之百，比对比算法的盲识别性能高4dB 左右，因此所提基于改进JADE盲源分离的LTE与Wi-Fi信号盲识别算法在相同 信噪比下具有更好的混叠信号盲识别性能。

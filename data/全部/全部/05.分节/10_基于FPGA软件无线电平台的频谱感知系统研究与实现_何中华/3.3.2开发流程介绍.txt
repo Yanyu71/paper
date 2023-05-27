@@ -1,0 +1,33 @@
+3.3.2开发流程介绍
+如3.2节所述，图3-1描述了频谱感知链路子系统各个处理单元的组成与整 体架构，整个系统的开发流程也是按照图3-1的模块划分逐步进行，分模块开发， 逐模块进行集成。整个系统的三个硬件部分中，主要的开发工作集中在FPGA链 路的基带信号处理子系统和射频子板的驱动控制子系统。FPGA系统中的基带处 理单元模块和AD-FMCOMMS1射频子板的驱动均使用Verilog HDL语言幵发完成， FPGA控制系统的硬件部分使用Xilinx公司EDK嵌入式开发套件搭建Soc系统， 而FPGA控制系统的Firmware软件部分使用基于Microblaze嵌入式CPU的C语 言开发；AD-FMCOMMS1射频子板的驱动使用Verilog HDL语言开发，之后封装 为自定义IP核挂载在Microblaze CPU上；PC机上的Host Server控制模块使用基 于Linux的C语言开发，PC机与FPGA之间使用Socket进行通信。
+频谱感知链路系统中的FPGA开发部分，各个模块的功能独立，接口均采用 AXI-STREAM协议，可分别进行RTL代码开发和功能验证，各个模块开发验证完 成之后集成完整的系统。图3-2显示了链路系统中FPGA各个单元模块开发的基 本流程图。射频子板和FPGA系统的各个模块的开发按照系统框图进行逐步设计 与实现，各个模块首先确定设计规格，接下来编写RTL级Verilog HDL代码，编
+24
+写Testbench测试环境在Modelsim仿真软件中进行功能验证，验证通过之后， 搭建FPGA的硬件Soc环境，将模块的RTL代码封装为独立IP核，挂载到硬件的 Microblaze ±,进行硬件的模块验证，Modelsim的功能验证和FPGA的硬件测试 均采用Matlab仿真数据进行对比，以验证结果的正确与否。
+确定设计1
+规格 I
+RTL编码
+F	| | F I	I "I
+［编謡真I—4功能仿真 说 I」 II	丨」
+入C境
+嵌so珀
+造瘁试
+构测
+i,1 一
+图3-2链路系统中FPGA单元模块开发流程图
+各个模块的功能验证和硬件验证完成之后，编写各个模块之间的“胶合逻辑”, 首先将FPGA系统中基带处理的各个模块组成一个完整的基带链路子系统，然后 编写链路级的Testbench文件进行链路的Modelsim功能验证，使用Matlab产生 的信号源存入RAM中循环读出来模拟射频端ADC的输出。基带链路子系统的功 能验证完成之后，将整个基带链路的RTL代码封装为IP核的形式挂载到 Microblaze CPU ±进行FPGA硬件测试，调试验证通过之后，完成基带链路子系
+统的集成。射频子板的驱动验证和控制系统的Firmware验证均直接进行硬件测 试，三个部分的硬件测试均完成之后，釆用自定义的AXI-BRIDGE总线桥连接为 完整的FPGA系统，进行系统测试与验证。FPGA系统的集成开发流程如图3-3所 zj\ O
+I确定各个模块3
+I间接口规格J
+<o>
+图3-3 FPGA系统的集成开发流程
+AD-FMC0MMS1射频子板的驱动开发主要是基于ADI公司为射频板提供的
+Reference Design参考设计，在充分调研与验证射频子板各个参数性能的基础之
+上，修改Reference Design中的RTL代码以及Firmware代码，使之适应本文的频
+谱感知系统，测试、验证完成之后与基带处理子系统的接口进行AXI-STREAM的
+连接。
+FPGA控制子系统主要分为硬件部分和软件部分，硬件部分是基于Xilinx公司
+26
+的 SOC 架构，搭建 Microblaze CPU 以及 DDR、BRAM> Ethernet、DMA、AXI4_0 等模块，组成SOC的硬件架构,Firmware软件部分采用嵌入式C语言编写。
+Firmware软件部分主要完成三个功能：1.通过AXI-BRIDQE总线向FPGA底层RTL 级链路发送控制信息，控制信息控制射频板硬件何时进行跳频、跳频间隔是多少、 何时进行信号捕捉、跳频命令与信号捕捉之间的时间延时；2.配合控制信息，利 用DMA对FPGA基带处理链路的数据完成接收与缓存，缓存利用ML605板载的 1(3容量的DDR3内存，代码确保DMA的鲁棒性;3.利用Microblaze挂载的Ethernet 模块，釆用Lwip协议，编写Socket以太网通信代码，将DMA缓存的基带处理数 据通过Socket传送至PC端。
+PC端的Host Server部分釆用基于Linux的C语言开发完成，利用多线程的 思想，一个线程建立Server服务器，通过Socket连接接收FPGA开发板的数据， 维护一个队列用于缓存接收到的数据，另一个线程采用另一个PORT挂载一个 Server服务，对Matlab 一侧发起的Socket请求进行相应，将从FPGA 一侧接收到 的数据按顺序传输至Matlab进行分析、算法处理与结果展示。Matlab 一侧与PC 机Host Server的通信同样釆用Socket,利用Matlab与C语言的联合编译,Matlab 调用C语言编译链接的可执行文件。
+以上各个子系统的功能设计与开发、验证实现之后，需将各个子系统进行集 成、调试，系统集成的过程包括射频板驱动验证、RTL级基带处理链路的验证、 Firmware的DMA与Socket功能验证、PC机Host Server的Socket验证以及与 Matlab的通信功能验证，所有验证完成以后，最后进行集成系统的调试与验证。

@@ -1,0 +1,18 @@
+5.5.1BP神经网络设计
+本次实践建立一个简单的可训练前馈网络，其中建立该网络对象的代码如下:
+%建立BP神经网络
+%input为输入数据矩阵（8*25）, output为输出数据矩阵（1*25）
+%三层网络结构，8个输入层神经元，12个隐层神经元，1个输出层神经元
+%隐层传递函数为'tansig，线性传递函数
+%输出层传递函数为河reliif正切S型传递函数
+%学习训练函数为'traindm，动量BP算法函数
+net = newff（input, output, 12, {ttansig,/purelin,}, ttrainlm,）;
+%设置训练参数
+%最大收敛次数为2000
+net.trainParam.epochs = 2000
+%训练目标最小误差为0.01
+net.trainParam.goal=0.01
+%学习速率为0.05
+net.trainParam.lr=0.05
+%开始训练
+net = train(net, input, output);

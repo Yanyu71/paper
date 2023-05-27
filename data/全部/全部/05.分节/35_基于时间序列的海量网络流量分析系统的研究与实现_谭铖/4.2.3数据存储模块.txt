@@ -1,0 +1,7 @@
+4.2.3数据存储模块
+HBase是基于HDFS的、面向列的非关系型数据库，是Google论文《Bigtable:
+一个结构化数据的分布式存储系统》的开源实现。因为HBase是基于Hadoop平 台的分布式数据库，所以HBase可以支持海量数据，并且，经过测试，HBase 支持高并发的读写，这适用于实时的大数据存储。在这个系统里，HBase将接在 Storm平台之后，用来接受并存储Storm平台各个Bolt输出结果。
+数据存储模块由一级Bolt组成，即WriteBolto WriteBolt主要用来计算每个 IP对应的上下行报文数的总量，每个WriteBolt线程单独启动一个定时器定时（每 个时间粒度）发送信号，将存储的每个IP以及IP对应的上下行报文总数写入 HBase表格中。同时，将该条记录的检测状态也写入Hbase,正常记为0,异常 记为1,以供后续分析。HBase存储的表格结构如下表。
+表4-1 Hbase存储格式
+RowKey	Timestamp	Column Family:columns
+IP+每个时间粒度起 始时间	当前机器时间	当前时间粒度内的 总流量	检测状态

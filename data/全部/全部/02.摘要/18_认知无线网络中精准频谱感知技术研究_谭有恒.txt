@@ -1,0 +1,42 @@
+摘要
+随着第五代移动通信系统的大规模商用，无线终端和设备呈指数级增长，造 成频谱资源日益紧张，用频效率已成为制约无线通信技术发展的重要因素。频谱 感知技术通过周期性监测目标频段的频谱使用情况，为认知用户机会性接入目标 频段提供保障，可有效提高频率利用率。然而，目前单节点频谱感知方案存在隐 终端、感知精度低、感知鲁棒性较差等问题。协作频谱感知技术可以有效缓解以 上问题，然而其仍面临着低信噪比及釆样点不足情况下感知性能差、节点异构且 相关情况下的计算复杂度较高等问题。因此，研究强噪声、欠釆样、节点异构、 节点相关等复杂环境下精准频谱感知技术，将有助于进一步提高感知精度和感知 效率，完善频谱感知基础理论，推动无线通信技术快速发展。
+为此，本学位论文开展认知无线网络中精准频谱感知技术研究，釆用接收信 号半自适应釆样方法、人工智能技术和N-out-o£K近似模型，用以提升频谱感知 精度，降低协作频谱感知复杂度。本文首先提出了一种接收信号半自适应釆样的 频谱感知方法，给出了单通道频谱感知最优采样点的解析解，同时计了基于卷 积神经网络-长短期记忆网络的环境信噪比评估架构，有效提升了强噪声环境下 的频谱感知精度。其次，本文构建了目标频段观测信号二维数据集，研究了基于 生成对抗网络的数据增强方法，丰富观测信号数据类型及规模。此外，本文提出 了多种适用于频谱感知技术的深度神经网络架构，实现了复杂场景下目标频段高 精度频谱感知。最后，针对异构网络下协作频谱感知判决门限计算复杂度较高的 问题，本文提出了节点异构相关条件下的N-out-oFK近似模型，在保障较高感知 精度的情况下大幅度降低了判决阈值的计算复杂度,并通过仿真实验验证了所提 方案的有效性。本文的主要工作和创新总结如下：
+1.提出了一种基于接收信号半自适应采样的频谱感知方法，为单通道检测 提供了最优采样点的封闭解，从而减小了总体错误概率。同时提出了基 于卷积神经网络-长短期记忆网络的环境信噪比评估架构,该架构融合了
+I
+深度特征和时间维特征，探讨了最优CNN和LSTM层数。结果表明， 具有2层CNN和2层LSTM的网络可以获得较高的环境信噪比估计精 度。同时，与经典的频谱感知方案相比，检测精度提高了约ldB。
+2.针对单节点频谱感知，构建了不同信噪比下接收观测信号的二维数据集, 提出了一种改进的深度卷积生成对抗网络(DCGAN),以扩大训练集， 解决数据短缺问题。在增强后二维数据集的基础上，训练并优化了经典 的LeNet、AlexNet、VGG-16等神经网络，并提出了一种新颖的神经网 络架构CNN-1,以兼顾感知性能和感知复杂度。
+3.针对多节点协作频谱感知，在融合中心基于本地感知能量向量构建了二 维协方差矩阵数据集，并在该数据集上训练、分析了三种基卷积神经网 络(LeNet,AlexNet和VGG-16)的协作频谱感知方案。此外，将所提出 的基于卷积神经网络的协作频谱感知方案与基于与、或、多数投票的协 作频谱感知方案进行感知性能的比较。
+4.针对节点相关的异构认知无线电网络，建立了一种基于N-out-of-K规则 的协作频谱感知方案的有效近似模型，给出了在融合中心的最优感知阈 值的近似封闭表达式。然后，采用了测度论的思想对近似误差范围进行 理论推导，结果表明近似误差对阈值计算产生的影响可以得到有效的控 制。最后，给出了特殊情况下的数值仿真，并与已给出闭式解的精确算 法进行了对比，其结果证明了所提出方案的有效性。
+5.设计了多种场景下的仿真实验，验证了所提方案的有效性。
+关键字：频谱感知；人工智能；卷积神经网络；N-out-ofK准则
+Precise Spectrum Sensing Technology in
+Cognitive Radio Network
+Abstract
+With the large-scale commercialization of the fifth-generation mobile communication system, the exponential growth of wireless terminals and devices has resulted in the increasing shortage of spectrum resources. The frequency efficiency has become an important factor restricting the development of wireless communication technology. By periodically
+I
+monitoring the spectrum usage of the target frequency band, the spectrum
+sensing technology provides a guarantee for cognitive users' opportunistic
+access to the target spectrum and can effectively improve the frequency
+utilization rate. However, due to the hidden terminal problem, the current
+local sensing scheme has low sensing accuracy and poor sensing
+robustness. Although cooperative spectrum sensing(CSS) technology can
+effectively alleviate the problem of hidden terminals, the problem still
+exists for the poor sensing performance under the condition of low SNR or
+insufficient sampling points. And the high computational complexity in the
+case of heterogeneous and related nodes will affect the sensing efficiency
+as the same. Therefore, the study of accurate spectrum sensing technology
+under complex environments such as strong noise, undersampling and
+heterogeneity nodes will help to improve the sensing accuracy and
+in
+efficiency, consummate the basic spectrum sensing theory, and then promote the rapid development of wireless communication technology.
+For this purpose, this dissertation studies the precise spectrum sensing technology in cognitive wireless network. Semi-adaptive sampling method, artificial intelligence technology and N-out-of-K approximation model are used to improve the spectrum sensing accuracy and reduce the complexity of collaborative spectrum sensing. Firstly, a spectrum sensing method for semi-adaptive sampling of received signals is proposed, and the analytical solution of the optimal sampling point for single-channel spectrum sensing is given. Meanwhile, an environmental signal-to-noise ratio evaluation framework based on convolutional neural network short-term memory network is designed, which effectively improves the spectrum sensing accuracy in strong noise environment. Secondly, a variety of Deep Neural Network(DNN) architectures suitable fbr spectrum sensing technology are proposed to achieve high precision spectrum sensing in the target frequency band under complex scenes. Finally, aiming at the problem of high computational complexity of collaborative spectrum sensing decision threshold in heterogeneous networks, an N-out-of-K approximation model was proposed, which greatly reduced the complexity of perception while ensuring high perception accuracy. The main work and innovations are organized as follows:
+1.A spectrum sensing method based on semi-adaptive sampling of
+IV
+received signals is proposed, which provides a closed solution of the optimal sampling point for single-channel detection, thereby reducing the sum of false alarm probability and missed alarm probability. Meanwhile, an environmental SNR evaluation architecture based on convolutional neural nets-LSTN is proposed, which integrates the depth feature and time dimension feature, and discusses the optimal CNN and LSTM layers. The results show that the network with two layers OF CNN and two layers of LSTM can obtain high accuracy of SNR estimation. At the same time, compared with the classical spectrum sensing scheme, the detection accuracy is improved by about ldB.
+2.For spectrum sensing of a single node, a two-dimensional data set for receiving observed signals at different SNR is constructed, and an improved deep convolutional generative adversal network (DCGAN) is proposed to expand the training set and solve the problem of data shortage. On the basis of the enhanced 2d data set, the classical LeNet, AlexNet, VGG-16 neural networks were trained and optimized, and a novel neural network architecture CNN-1 was proposed to take into account both the perceptual performance and the perceptual complexity.
+3.A two-dimensional covariance matrix dataset based on local sensing energy vector for CSS is constructed in the fusion center.
+v
+CSS schemes of three basic convolutional neural networks (LeNet, AlexNet and VGG-16) are trained and analyzed on the dataset. In addition, the perceptual performance of the proposed scheme based on convolutional neural network(CNN) is compared basing on AND, OR, Majority voting.
+4. For heterogeneous cognitive radio networks with limited nodes and correlation, an effective approximate model of cooperative spectrum sensing scheme based on N-out-of-K rule is established, and the approximate closed expression of optimal sensing threshold at the fusion center is given. Finally, the effect of approximate error on threshold can be controlled effectively under the condition of finite nodes. Finally, a numerical simulation for a special case is presented and compared with the exact algorithm for the closed-form solution, which proves the effectiveness of the proposed scheme. The simulation experiments under various scenarios are designed to verify the effectiveness of the multi- proposal scheme.
+KEYWORDS: Spectrum sensing; Artificial intelligence; Convolutional neural network; N - out - of - K rule
+

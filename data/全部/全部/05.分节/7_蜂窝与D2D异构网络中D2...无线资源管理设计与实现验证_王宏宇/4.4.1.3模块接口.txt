@@ -1,0 +1,24 @@
+4.4.1.3模块接口
+网络监控模块对外接口如下：
+// input process function handler
+void sibproc_handler(const int& type, const void* sib);
+void pdcch_handler(const ulgrant_t* grant, const int& totalcount);
+void dccch_handler(const dccchtype_t& type, const void* dccchmsg );
+void rsrp_handler(const int& type, const int& rsrp);
+void powermeasure_handler(const int* power);
+59
+// output function
+int get_tddconfig();
+std::map<cueid, std::pair<rbstart, rblen»& get_resourcemap();
+int get_thrputd2d(const int& dueid);
+其中，UL Grant结构体和dccch类型枚举定义如下：
+表 4-6 ulgrant/dccchtype t 定义
+struct ulgrant definition	enum dccchtype t definition
+struct ulgrant ( bool NDI; char mcs; char rbstart; char rblength;
+)ulgrant t;	enum dccchtype_t (
+RTS_MSG = 1,
+CTS_MSG,
+DATACTRLMSG,
+ACK_MSG,
+SYNC MSG};
+对于其余模块输出参数，包括intJC2D、Q_CUE、PL_Dtx2D、PL_D2B、 NO D, P0_PUSCH均使用update方式在参数监控模块更新时立即更新至干扰控 制模块，update方法由干扰控制模块提供。

@@ -1,0 +1,19 @@
+2.2.1VoLTE网络架构
+VbLTE （Voice overLTE）,实际上就是VoIP,在现有的VoLTE方案中，由 IMS （IP Multimedia Subsystem, IP多媒体子系统）作为业务的核心控制网络， 以EPS （Evolved Packet System,是LTE/EPC的合称）提供承载以实现端到端的 基于PS域的语音以及视频通信业务。同时，再配以PCC架构（Policy and charging control策略和计费控制，由于作为测试仪表的一部分，可以不考虑）实现计费策 略控制和用户业务QoS控制【4】。下面的图2-3是VoLTE业务系统的网络架构⑶：
+图2-3 VoLTE系统网络架构
+EPC （Evolved Packet Core,演进分组核心网络）的实体作为GPRS的演进， 最早出现在3GPP协议Release 8版本中。并且是完全面向分组域交换而设计的， 因此EPS （包括EPC和ENodeB）作用是在移动通信中提供连续的基于分组域的 数据服务。EPC中的功能实体包括一个控制层面的MME （Mobility Management Entity,移动性管理实体），两个用户层面的网关，即P-GW和S-GW。
+MME作为终端和核心网间信令交互的控制节点，执行NAS协议。其功能 包括：
+EPC的接入控制：鉴权控制，用户标识，信令加密，完整性保护等
+移动性管理：终端位置信息、业务持续性、安全性管理等
+会话管理层：会话的建立、维护、释放等
+切换管理：MME和S4-SGSN选择
+网关选择：P-GW和S-GW选择。
+S-GW （Serving Gateway ）,即服务网关，提供面向接入网的接口，系统给每 个终端在一个指定的时间一个S-GWo S-GW负责终端切换时的用户层面网关功能， 包括3GPP接入网之间和其他接入网之间的切换。在VoLTE网络中，S-GW有如下 功能：
+路由和数据转发，用户IP数据包发送。
+Inter-eNB切换锚点
+3GPP不同接入方式的锚点
+本地移动性管理实体
+P-GW （PDN Gateway, PDN网关）提供面向外部网络（包括互联网和IMS） 的接口，P-GW提供给终端IP网络的连接点，为终端分配IP地址，并且保证终 端的QoS。同时负责PCRF选择。
+IMS （IP Multimedia Subsystem, IP多媒体子系统）是一个专门控制IP分组 接入的控制模块。由于是基于与接入方式无关的SIP,所以符合移动网络向多种 接入、多类终端、多种应用都由统一的控制核心网控制的系统的发展方向。IMS 的核心部分主要是各种CSCF（Call Session Control Function,呼叫会话控制功能模 块），包括 S-CSCF （服务 CSCF）、I-CSCF （査询 CSCF）、P-CSCF （代理 CSCF） 回，本质上它们都是SIP服务器，处理SIP信令。
+HSS （Home Subscriber Server）存储所有用户描述信息，包括国际移动用户 识别码IMSLUE接入P-GW的地址信息、接入点名称（APN）、服务质量（QoS）、 移动台识别号码（MSISDN）等等。支持非3GPP网络。
+PCRF （Policy and Charging Rules Function?计费和策略规则功能）〔刀记录有 计费策略和规则，P-GW可以根据所提供的规则计费。并且可以将应用层数据转 换成3GPP标准格式的参数。

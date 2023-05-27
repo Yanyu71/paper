@@ -1,0 +1,31 @@
+2.1.1典型的虚拟机系统
+1）	Xen
+Xen是一个完全免费的开源的虚拟机系统监控平台，发起于英国剑桥大学。 它的目标是能够在单机硬件平台上运行上百个满特征的操作系统。
+特权操作系统（Domain 0）可以是Linux、Solaris以及NetBSD等。Xen系 统最早的虚拟化思想是类虚拟化：利用直接对Linux内核进行修改来使内存资源 和处理器虚拟化。Xenl.O和Xen2.0先后两个版本完成了针对操作系统级的类虚 拟化技术，即图2-1中所示的Domain 0和DomainNo基于Xen的虚拟化技术的 虚拟机无需特殊的附加硬件支持，所达到的性能即可以与真实物理机平台相媲美。
+由于Xen虚拟化技术的蓬勃发展，Xen系统也将完全的硬件虚拟化技术包含 进来,Xen3.0己经支持利用Intel VT和AMD SVM硬件技术实现的完全虚拟化， 如图2-1中所示的VMX Domain。Hypervisor利用硬件平台资源己有的功能来完 成内存、处理器和I/O接口的完全虚拟化。
+Xen的特点总结如下：
+•开放源代码
+•可移植性强
+•具有与真实物理机平台相近的性能，具有独有的对类虚拟化技术的支持
+•由于操作系统需要进行显式地修改才能在Xen上运行，因此Xen的易用 行比较差。
+图2-lXen架构图【5】
+2)VMware
+VMware是在x86平台上运行的，是一款现今被广泛接受使用和认可的虚拟 机系统软件。VMware具有非常多的虚拟化类别的产品，涉及到从服务器的级别 到桌面级别的各种系统产品，这些产品能够在Windows、Linux和Mac OS X等 不同的操作系统上运作。此外，基于Hypervisor架构的VMware ESX Server可以 直接运行在裸机上。
+VMware ESX Server是VMware的龙头产品，是一款具有监视功能的虚拟机 产品，不利用宿主机操作系统，而是在直接应用在硬件平台上。ESX Serve基于 Hypervisor模型，在性能和安全性方面都得到了优化。VMware ESX Serve支持 完全虚拟化，可以运行在Windows、Linux、Solaris和Novell Netware等客户机 操作系统。在新版本的ESX Server中已经开始釆用直接基于硬件平台的虚拟化 技术，分别支持Intel VT和AMD SVM技术。
+VMware Workstation是VMware面向桌面的主打产品。Workstation是一款应 用在宿主机模型上的产品，其所在的宿主机能够安装Linux或Windows等系统。 VMware Workstation 支持完全虚拟化，可以运行在 Windows> Linux、Solaris> Novell Netware和FreeBSD等客户机操作系统。
+由于VMware是最早开发虚拟化产品的，所以在产品种类和功能上的优势也 比较明显。VMware产品具有以下几个特点：
+•功能丰富：几乎大部分的虚拟化功能都有相应的VMware产品与之对应。
+•配置和使用方便：VMware开发了非常易于使用的配套工具和友好的操 作界面。
+•稳定，适合企业使用。
+3)Hyper-V
+Hyper-V是一款操作系统管理应用程序的虚拟化技术，其功能是针对虚拟机 的建立与运作来进行相应的操作，并实现硬件平台资源的虚拟化工作。Hyper-V 的架构图如图2-2所示。Hyper-V是处在虚拟机系统和物理平台中间的一层，不 包括其他的第三方程序，因此特别简洁。这样的设计可以让硬件平台与虚拟机系 统仅仅使用非常简洁的中间层进行联系(不需要多层转换)，因而该虚拟化技术 的具有很好的工作效率，能够非常有效地使用物理资源，进而能够让该虚拟机系 统具有与物理机操作系统很相似的性能。
+Physical; Hdrdwai?©
+图2-2Hyper-V架构图⑶
+Hyper-V 可以支持 Windows Server 2003 SP2、Novell SUSE Linux Enterprise Server 10 SP1、Windows Vista SP1 (x86)和 Windows XP SP3 (x86)等。此外 Hyper-V还能够实现远程管理，可以在客户机打开Hyper-V控制台对远端的服务 进行操作。
+4) KVM
+KVM (Kernel-based Virtual Machine)是一款完全免费开放的实现虚拟化的 虚拟机系统软件，而且在后来被加入到Linux2.6.20内核系统中，成为Linux内 核系统模块的一部分。
+KVM的架构如图2-3所示oKVM实现的硬件平台虚拟化方案是利用Intel VT 技术来完成的。同Xen一样，KVM也利用QEMU中间层来实现物理硬件资源 的虚拟化。
+图2-3KVM架构图可
+从架构上讲，由于最开始Linux的开发人员并没有专门的实现对虚拟化技术 的兼容性，而KVM的实现方式又是基于内核来完成的，因此便有说法认为KVM 是宿主机模型。然而，由于虚拟化技术的发展，大量的虚拟化技术和功能集成到 Linux内核系统中，因此有人开始认为Linux内核系统越来越像Hypervisor监视 平台，所以，KVM也可以被认为Hypervisor监控模型。
+因此，KVM只能够运行在操作系统为Linux的宿主机平台上，但是其所运 行的客户机所安装的操作系统非常丰富，可以是Linux> Windows> Solaris和BSD 等。
+能够与Linux内核系统具有相当高的兼容性，使得KVM能够保留下Linux 内核系统的相当多的功能，这是KVM虚拟化软件的最突岀的一点。此外，作为 一款免费的开放系统软件，KVM同时具有相当好的可扩展行和迁移性能。

@@ -1,0 +1,15 @@
+4.2.3基于Flume的性能数据采集系统
+图4-2采集系统架构
+采集系统选用的版本为Apache Flume-1.5.0版本，所选用的Source、Channel、 Sink类型介绍如下。
+Source 类型：Exec Source > Avro Source o
+Exec Source为命令执行源，通过执行命令调用脚本，并持续获取该命令（即 执行脚本）返回的标准输出数据，脚本的输出数据即为釆集的性能数据，脚本执 行间隔由各指标的釆集粒度决定；Avro Source通过监听Avro端口，接收上一级 的Avro Sink的输出，本级Avro Source需和上一级Avro Sink匹配。
+Channel 类型：JBDC Channel.
+相对于其他Channel, JDBC Channel可以支持最高程度的数据流的还原恢复, 有利于增强数据釆集的安全性。
+Sink 类型：Avro Sink. JDBC Sink.
+Avro Sink用于输出本级数据到下一级的Avro Source；由于默认的Sink类型并不支持将数据存入数据库，故自行定义JDBC Sink用于数据库的存储。
+现对该采集系统进行详细介绍：
+每个子节点的部署情况均相同，子节点中部署若干釆集脚本，这些釆集 脚本均用Python语言编写，用于釆集一项或者多项性能数据，执行脚本命令的 输出即为所釆集性能数据，其输出内容均为：时间戳、IP地址、具体的性能数据。
+子节点的Flume Agent由多个Source-Channel-Sink基本事件组成，每个 基本事件的类型均相同，即为：Exec Source> JDBC Channel和Avro Sink。其中 Exec Source获取执行脚本命令的输出，即釆集得到的性能数据，并将性能数据 存放至JDBC Channel中；JDBC Channel具有数据恢复能力，可以保证釆集性能 数据的完整性和安全性；Avro Sink从JDBC Channel中获取性能数据，将数据传 输至主节点对应的Avro Sourceo每一个基本事件对应一个釆集脚本，获取其釆 集的性能数据。
+不同子节点的相同性能数据，将会通过各自的AvroSink传输至主节点的 同一个Avro Source中，从而实现相同性能数据的汇聚工作。
+主节点的Flume Agent同样由多个Source-Channel-Sink基本事件组成， 每个基本事件的类型均相同：Avro Source. JDBC Channel和JDBC Sinko其中 Avro Source分别接收汇聚所有子节点的同类性能数据，并存放至JDBC Channel； JDBC Channel同子节点，用于保证数据的完整性和安全性；JDBC Sink从JDBC Channel中获取获取性能数据，将各项性能数据均存放至数据库中相应的库表中， 每一类性能数据对应一张数据库表。
+总体结构：主节点按照类型汇聚所有子节点的各类性能数据，然后将不 同类型的性能数据分别存放至对应的数据库表中，完成性能数据的采集工作。

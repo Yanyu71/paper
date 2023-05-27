@@ -1,0 +1,46 @@
+3.2.1.2USRP与UHD
+UHD (Universal Hardware Driver)是用在 USRP 和 IBM Server 之间的驱动接 口程序，它主要是利用C++和Boost库进行编写的。UHD通过将发送和接收数 据、相关的读写配置等操作封装成为API,然后调用操作系统的函数来实现。图 3-5说明了 UHD在系统中的位置。
+21
+UHD API
+UDP Socket,
+libsub
+or others
+Gigabit Ethernet,
+USB 2.0 or
+Memory interface
+图3-5基于UHD的USRP的系统架构图
+UHD通过不同的API接口函数，实现对USRP的配置，完成与USRP设备 之间的同步，实现USRP设备与IBM Server之间的数据通信等功能。利用UHD 来进行USRP设备的开发，都是通过调用UHD提供的丰富的API接口函数来完 成的，为了拥有较高的执行效率，其中所有的数据处理传输的开发工作都是利用 C/C++来实现的〔"I。
+在IBM Server中，通过UHD启动整个USRP程序进程的大概工作流程如图 3-6所示：
+22
+开辟本地缓存 buffer和定义元 数据
+探测USRP设备
+I
+与USRP设备进
+行链接
+I
+通过UHD对
+USRP的相关参
+数进行配置
+1	r
+TX	调用send() 发送数据		调用recv() 接收数据	RX
+图3-6UHD启动USRP进程的主要工作流程示意图
+•首先通过UHD的API接口函数在IBM Server构造一个USRP的实体， 构造函数命令如下：
+uhd:: usrp:: multi_usrp:: sptr usrp=uhd::usrp::multi_usrp: :make(args); 其中args表示USRP的相关参数。
+•发送和接收数据之前，要先开辟一段缓存空间用来存放待发送处理或者 待接收处理的数据，同时还需要定义元数据用来存储发送接收数据起始 位置和错误类型标识。
+•在USRP实体与USRP设备建立数据链路链接之前，需要先探测确定 USRP设备是否存在，只有当探测到USRP设备的存在的时候，才能建 立起USRP实体与USRP设备之间的数据链路链接，探测USRP设备的 指令为：
+uhd_find_devices
+•通过调用UHD的API接口函数逼立起USRP实体与USRP设备之间的
+23
+数据链路链接，建立起USRP实体与USRP设备链接的API接口函数如 下： uhd::usrp::device::sptrusrp_device:=uhd::usrp::multi_usrp::get_device(void);
+•然后再调用UHD的API /口函数对USRP设备晶工作参薮进行配置。
+USRP上电的时候，会进行一些固件的配置，这些配置是USRP内部自 行完成，无需额外操作。但是，有一些参数如中心频率、釆样率、增益 等则需要通过调用UHD的API接口函数来进行相应的配置。表3-1列 举了部分可配置的主要参数"】：
+表3-1UHD可配置的部分参数及功能
+配置参数	参数说明
+-freq	中心频率
+-ant	天线，选择TX/RX
+-args	地址参数(192.168.10.2)
+—gain	子板收发增益(单位dB)
+-ref	参考时钟(内部、外部、MIMO)
+—bw	子板带宽
+-rate	PC机接收到的釆样速率的要求
+•初始化工作都做好之后，然后就可以进行正常的发送与接收数据操作了。 UHD中执行发送数据与接收数据API接口函数分别为send()和recv()。

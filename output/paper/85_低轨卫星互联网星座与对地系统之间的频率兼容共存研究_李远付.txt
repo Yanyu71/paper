@@ -1,0 +1,1639 @@
+﻿{
+    "knowledge_points": [
+        {
+            "title": "低轨卫星互联网星座",
+            "en": "Low Earth Orbit Satellite Internet Constellation"
+        },
+        {
+            "title": "NGSO卫星",
+            "en": "Non-Geostationary Orbit Satellite"
+        },
+        {
+            "title": "GSO卫星",
+            "en": "Geostationary Orbit Satellite"
+        },
+        {
+            "title": "频率兼容",
+            "en": "Frequency Compatibility"
+        },
+        {
+            "title": "ITU",
+            "en": "International Telecommunication Union"
+        },
+        {
+            "title": "FCC",
+            "en": "Federal Communications Commission"
+        },
+        {
+            "title": "WRC",
+            "en": "World Radiocommunication Conference"
+        }
+    ],
+    "relations": [
+        {
+            "source": "低轨卫星互联网星座",
+            "target": "NGSO卫星",
+            "type": "包含"
+        },
+        {
+            "source": "NGSO卫星",
+            "target": "GSO卫星",
+            "type": "对比"
+        },
+        {
+            "source": "ITU",
+            "target": "无线电规则",
+            "type": "制定"
+        },
+        {
+            "source": "ITU",
+            "target": "频率兼容",
+            "type": "规定"
+        },
+        {
+            "source": "ITU",
+            "target": "WRC",
+            "type": "组织"
+        },
+        {
+            "source": "FCC",
+            "target": "ITU",
+            "type": "遵守"
+        },
+        {
+            "source": "频率兼容",
+            "target": "GSO卫星",
+            "type": "保护"
+        },
+        {
+            "source": "WRC",
+            "target": "NGSO卫星",
+            "type": "频率协调"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "NGSOFSS系统", "en": "NGSOFSS system"},
+        {"title": "GSOFSS", "en": "GSOFSS"},
+        {"title": "GSOMSS", "en": "GSOMSS"},
+        {"title": "GSOBSS", "en": "GSOBSS"},
+        {"title": "770号决议", "en": "Resolution 770"},
+        {"title": "769号决议", "en": "Resolution 769"},
+        {"title": "ITU-R", "en": "ITU-R"},
+        {"title": "干扰减缓技术", "en": "Interference mitigation technology"},
+        {"title": "卫星分集技术", "en": "Satellite diversity technology"},
+        {"title": "跟踪策略", "en": "Tracking strategy"},
+        {"title": "天线旁瓣技术", "en": "Antenna sidelobe technology"},
+        {"title": "频率信道化", "en": "Frequency channelization"},
+        {"title": "链路均衡", "en": "Link balance"},
+        {"title": "交叉极化", "en": "Cross-polarization"}
+    ],
+    "relations": [
+        {"source": "NGSOFSS系统", "target": "GSOFSS", "type": "保护"},
+        {"source": "NGSOFSS系统", "target": "GSOMSS", "type": "保护"},
+        {"source": "NGSOFSS系统", "target": "GSOBSS", "type": "保护"},
+        {"source": "770号决议", "target": "NGSOFSS系统", "type": "规定"},
+        {"source": "770号决议", "target": "GSOFSS", "type": "保护"},
+        {"source": "770号决议", "target": "卫星BSS系统", "type": "保护"},
+        {"source": "769号决议", "target": "GSO系统", "type": "保护"},
+        {"source": "769号决议", "target": "NGSO系统", "type": "干扰"},
+        {"source": "ITU-R", "target": "NGSO系统", "type": "频率兼容研究"},
+        {"source": "ITU-R", "target": "GSO系统", "type": "频率兼容研究"},
+        {"source": "ITU-R", "target": "干扰减缓技术", "type": "介绍"},
+        {"source": "ITU-R", "target": "卫星分集技术", "type": "介绍"},
+        {"source": "ITU-R", "target": "跟踪策略", "type": "介绍"},
+        {"source": "ITU-R", "target": "天线旁瓣技术", "type": "介绍"},
+        {"source": "ITU-R", "target": "频率信道化", "type": "介绍"},
+        {"source": "ITU-R", "target": "链路均衡", "type": "介绍"},
+        {"source": "ITU-R", "target": "交叉极化", "type": "介绍"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "等效功率通量密度",
+            "en": "Equivalent Power Flux Density (EPFD)"
+        },
+        {
+            "title": "ITU-R建议书S.1503",
+            "en": "ITU-R Recommendation S.1503"
+        },
+        {
+            "title": "EPFD验证算法",
+            "en": "EPFD Verification Algorithm"
+        },
+        {
+            "title": "NGSO系统",
+            "en": "NGSO System"
+        },
+        {
+            "title": "GSO系统",
+            "en": "GSO System"
+        },
+        {
+            "title": "功率通量密度",
+            "en": "Power Flux Density (PFD)"
+        },
+        {
+            "title": "星间等效全向辐射功率",
+            "en": "Equivalent Isotropic Radiated Power (EIRP)"
+        },
+        {
+            "title": "最坏情形几何算法",
+            "en": "Worst Case Geometry Algorithm (WCGA)"
+        },
+        {
+            "title": "双时间步长法",
+            "en": "Dual Time-Step Method"
+        },
+        {
+            "title": "累积时间分布",
+            "en": "Cumulative Time Distribution"
+        },
+        {
+            "title": "ITU-RS.524",
+            "en": "ITU-R Recommendation S.524"
+        },
+        {
+            "title": "ITU-RS.736",
+            "en": "ITU-R Recommendation S.736"
+        },
+        {
+            "title": "ITU-RS.1323",
+            "en": "ITU-R Recommendation S.1323"
+        },
+        {
+            "title": "ITU-RS.1324",
+            "en": "ITU-R Recommendation S.1324"
+        },
+        {
+            "title": "ITU-RS.1325",
+            "en": "ITU-R Recommendation S.1325"
+        },
+        {
+            "title": "ITU-RS.1328",
+            "en": "ITU-R Recommendation S.1328"
+        },
+        {
+            "title": "ITU-RS.1588",
+            "en": "ITU-R Recommendation S.1588"
+        },
+        {
+            "title": "传播模型",
+            "en": "Propagation Model"
+        },
+        {
+            "title": "电波传播模型",
+            "en": "Radio Wave Propagation Model"
+        },
+        {
+            "title": "ITU-R P系列建议书",
+            "en": "ITU-R P Series Recommendations"
+        },
+        {
+            "title": "无线链路",
+            "en": "Wireless Link"
+        },
+        {
+            "title": "传输损耗",
+            "en": "Transmission Loss"
+        },
+        {
+            "title": "无线电折射率公式",
+            "en": "Radio Refractive Index Formula"
+        },
+        {
+            "title": "自由空间衰减",
+            "en": "Free Space Attenuation"
+        },
+        {
+            "title": "衍射传播",
+            "en": "Diffraction Propagation"
+        },
+        {
+            "title": "电离层传播数据",
+            "en": "Ionospheric Propagation Data"
+        },
+        {
+            "title": "地-空通信系统",
+            "en": "Ground-Space Communication System"
+        },
+        {
+            "title": "空间电台",
+            "en": "Space Station"
+        },
+        {
+            "title": "大气气体衰减",
+            "en": "Atmospheric Gas Attenuation"
+        },
+        {
+            "title": "地对空海上移动通信系统",
+            "en": "Ground-to-Air Maritime Mobile Communication System"
+        },
+        {
+            "title": "地对空卫星陆地移动通信系统",
+            "en": "Ground-to-Air Satellite Land Mobile Communication System"
+        },
+        {
+            "title": "对流层折射",
+            "en": "Tropospheric Refraction"
+        },
+        {
+            "title": "参考标准大气",
+            "en": "Standard Atmosphere"
+        },
+        {
+            "title": "水蒸气表面密度和总柱状含量",
+            "en": "Surface Density and Total Columnar Content of Water Vapor"
+        },
+        {
+            "title": "云雾模型",
+            "en": "Cloud and Fog Model"
+        },
+        {
+            "title": "年度统计到最差月份统计数据的转换",
+            "en": "Conversion of Annual Statistics to Worst Month Statistics"
+        },
+        {
+            "title": "概率分布",
+            "en": "Probability Distribution"
+        },
+        {
+            "title": "多径传播",
+            "en": "Multipath Propagation"
+        },
+        {
+            "title": "建筑材料",
+            "en": "Building Materials"
+        },
+        {
+            "title": "干扰分析",
+            "en": "Interference Analysis"
+        },
+        {
+            "title": "干扰减缓",
+            "en": "Interference Mitigation"
+        },
+        {
+            "title": "空间隔离",
+            "en": "Spatial Separation"
+        },
+        {
+            "title": "频率隔离",
+            "en": "Frequency Separation"
+        },
+        {
+            "title": "功率控制",
+            "en": "Power Control"
+        },
+        {
+            "title": "吞吐量下降百分比",
+            "en": "Percentage of Throughput Reduction"
+        },
+        {
+            "title": "共线干扰",
+            "en": "Co-Channel Interference"
+        },
+        {
+            "title": "站点间距",
+            "en": "Site Spacing"
+        },
+        {
+            "title": "卫星分集",
+            "en": "Satellite Diversity"
+        },
+        {
+            "title": "备用卫星",
+            "en": "Backup Satellite"
+        },
+        {
+            "title": "频率分配",
+            "en": "Frequency Allocation"
+        },
+        {
+            "title": "自适应功率控制技术",
+            "en": "Adaptive Power Control Technology"
+        },
+        {
+            "title": "禁区",
+            "en": "Exclusion Zone"
+        },
+        {
+            "title": "零陷",
+            "en": "Nulling"
+        }
+    ],
+    "relations": [
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "EPFD验证算法",
+            "type": "包含"
+        },
+        {
+            "source": "EPFD验证算法",
+            "target": "NGSO系统",
+            "type": "涉及"
+        },
+        {
+            "source": "EPFD验证算法",
+            "target": "GSO系统",
+            "type": "涉及"
+        },
+        {
+            "source": "EPFD验证算法",
+            "target": "功率通量密度",
+            "type": "涉及"
+        },
+        {
+            "source": "EPFD验证算法",
+            "target": "星间等效全向辐射功率",
+            "type": "涉及"
+        },
+        {
+            "source": "EPFD验证算法",
+            "target": "最坏情形几何算法",
+            "type": "涉及"
+        },
+        {
+            "source": "EPFD验证算法",
+            "target": "双时间步长法",
+            "type": "涉及"
+        },
+        {
+            "source": "EPFD验证算法",
+            "target": "累积时间分布",
+            "type": "涉及"
+        },
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "ITU-RS.524",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "ITU-RS.736",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "ITU-RS.1323",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "ITU-RS.1324",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "ITU-RS.1325",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "ITU{
+    "knowledge_points": [
+        {
+            "title": "等效功率通量密度",
+            "en": "Equivalent Power Flux Density (EPFD)"
+        },
+        {
+            "title": "ITU-R建议书S.1503",
+            "en": "ITU-R Recommendation S.1503"
+        },
+        {
+            "title": "EPFD验证算法",
+            "en": "EPFD Verification Algorithm"
+        },
+        {
+            "title": "NGSO系统",
+            "en": "NGSO System"
+        },
+        {
+            "title": "GSO系统",
+            "en": "GSO System"
+        },
+        {
+            "title": "功率通量密度",
+            "en": "Power Flux Density (PFD)"
+        },
+        {
+            "title": "星间等效全向辐射功率",
+            "en": "Equivalent Isotropic Radiated Power (EIRP)"
+        },
+        {
+            "title": "最坏情形几何算法",
+            "en": "Worst Case Geometry Algorithm (WCGA)"
+        },
+        {
+            "title": "双时间步长法",
+            "en": "Dual Time-Step Method"
+        },
+        {
+            "title": "累积时间分布",
+            "en": "Cumulative Time Distribution"
+        },
+        {
+            "title": "ITU-RS.524",
+            "en": "ITU-R Recommendation S.524"
+        },
+        {
+            "title": "ITU-RS.736",
+            "en": "ITU-R Recommendation S.736"
+        },
+        {
+            "title": "ITU-RS.1323",
+            "en": "ITU-R Recommendation S.1323"
+        },
+        {
+            "title": "ITU-RS.1324",
+            "en": "ITU-R Recommendation S.1324"
+        },
+        {
+            "title": "ITU-RS.1325",
+            "en": "ITU-R Recommendation S.1325"
+        },
+        {
+            "title": "ITU-RS.1328",
+            "en": "ITU-R Recommendation S.1328"
+        },
+        {
+            "title": "ITU-RS.1588",
+            "en": "ITU-R Recommendation S.1588"
+        },
+        {
+            "title": "传播模型",
+            "en": "Propagation Model"
+        },
+        {
+            "title": "电波传播模型",
+            "en": "Radio Wave Propagation Model"
+        },
+        {
+            "title": "ITU-R P系列建议书",
+            "en": "ITU-R P Series Recommendations"
+        },
+        {
+            "title": "无线链路",
+            "en": "Wireless Link"
+        },
+        {
+            "title": "传输损耗",
+            "en": "Transmission Loss"
+        },
+        {
+            "title": "无线电折射率公式",
+            "en": "Radio Refractive Index Formula"
+        },
+        {
+            "title": "自由空间衰减",
+            "en": "Free Space Attenuation"
+        },
+        {
+            "title": "衍射传播",
+            "en": "Diffraction Propagation"
+        },
+        {
+            "title": "电离层传播数据",
+            "en": "Ionospheric Propagation Data"
+        },
+        {
+            "title": "地-空通信系统",
+            "en": "Ground-Space Communication System"
+        },
+        {
+            "title": "空间电台",
+            "en": "Space Station"
+        },
+        {
+            "title": "大气气体衰减",
+            "en": "Atmospheric Gas Attenuation"
+        },
+        {
+            "title": "地对空海上移动通信系统",
+            "en": "Ground-to-Air Maritime Mobile Communication System"
+        },
+        {
+            "title": "地对空卫星陆地移动通信系统",
+            "en": "Ground-to-Air Satellite Land Mobile Communication System"
+        },
+        {
+            "title": "对流层折射",
+            "en": "Tropospheric Refraction"
+        },
+        {
+            "title": "参考标准大气",
+            "en": "Standard Atmosphere"
+        },
+        {
+            "title": "水蒸气表面密度和总柱状含量",
+            "en": "Surface Density and Total Columnar Content of Water Vapor"
+        },
+        {
+            "title": "云雾模型",
+            "en": "Cloud and Fog Model"
+        },
+        {
+            "title": "年度统计到最差月份统计数据的转换",
+            "en": "Conversion of Annual Statistics to Worst Month Statistics"
+        },
+        {
+            "title": "概率分布",
+            "en": "Probability Distribution"
+        },
+        {
+            "title": "多径传播",
+            "en": "Multipath Propagation"
+        },
+        {
+            "title": "建筑材料",
+            "en": "Building Materials"
+        },
+        {
+            "title": "干扰分析",
+            "en": "Interference Analysis"
+        },
+        {
+            "title": "干扰减缓",
+            "en": "Interference Mitigation"
+        },
+        {
+            "title": "空间隔离",
+            "en": "Spatial Separation"
+        },
+        {
+            "title": "频率隔离",
+            "en": "Frequency Separation"
+        },
+        {
+            "title": "功率控制",
+            "en": "Power Control"
+        },
+        {
+            "title": "吞吐量下降百分比",
+            "en": "Percentage of Throughput Reduction"
+        },
+        {
+            "title": "共线干扰",
+            "en": "Co-Channel Interference"
+        },
+        {
+            "title": "站点间距",
+            "en": "Site Spacing"
+        },
+        {
+            "title": "卫星分集",
+            "en": "Satellite Diversity"
+        },
+        {
+            "title": "备用卫星",
+            "en": "Backup Satellite"
+        },
+        {
+            "title": "频率分配",
+            "en": "Frequency Allocation"
+        },
+        {
+            "title": "自适应功率控制技术",
+            "en": "Adaptive Power Control Technology"
+        },
+        {
+            "title": "禁区",
+            "en": "Exclusion Zone"
+        },
+        {
+            "title": "零陷",
+            "en": "Nulling"
+        }
+    ],
+    "relations": [
+        {
+            "source": "等效功率通量密度",
+            "target": "EPFD验证算法",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-R建议书S.1503",
+            "target": "EPFD验证算法",
+            "type": "包含"
+        },
+        {
+            "source": "NGSO系统",
+            "target": "EPFD验证算法",
+            "type": "涉及"
+        },
+        {
+            "source": "GSO系统",
+            "target": "EPFD验证算法",
+            "type": "涉及"
+        },
+        {
+            "source": "功率通量密度",
+            "target": "EPFD验证算法",
+            "type": "涉及"
+        },
+        {
+            "source": "星间等效全向辐射功率",
+            "target": "EPFD验证算法",
+            "type": "涉及"
+        },
+        {
+            "source": "最坏情形几何算法",
+            "target": "EPFD验证算法",
+            "type": "涉及"
+        },
+        {
+            "source": "双时间步长法",
+            "target": "EPFD验证算法",
+            "type": "涉及"
+        },
+        {
+            "source": "累积时间分布",
+            "target": "EPFD验证算法",
+            "type": "涉及"
+        },
+        {
+            "source": "ITU-RS.524",
+            "target": "干扰分析与干扰减缓",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-RS.736",
+            "target": "干扰分析与干扰减缓",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-RS.1323",
+            "target": "干扰分析与干扰减缓",
+            "type": "包含"
+        },
+        {
+            "source": "ITU-RS.1324",
+            "target": "干扰分析与干扰减缓",
+            "type": "包含"
+        },
+       {
+    "knowledge_points": [
+        {"title": "禁区", "en": "Restricted Zone"},
+        {"title": "NGSO卫星", "en": "NGSO Satellite"},
+        {"title": "GSO系统", "en": "GSO System"},
+        {"title": "干扰减缓技术", "en": "Interference Mitigation Technology"},
+        {"title": "波束控制算法", "en": "Beam Control Algorithm"},
+        {"title": "卫星分集技术", "en": "Satellite Diversity Technology"},
+        {"title": "相控阵天线技术", "en": "Phased Array Antenna Technology"},
+        {"title": "频率隔离", "en": "Frequency Separation"},
+        {"title": "功率控制", "en": "Power Control"},
+        {"title": "空间隔离", "en": "Spatial Separation"},
+        {"title": "协作模式", "en": "Collaborative Mode"},
+        {"title": "频率兼容性", "en": "Frequency Compatibility"},
+        {"title": "干扰分析方法", "en": "Interference Analysis Method"},
+        {"title": "干扰评价指标", "en": "Interference Evaluation Index"},
+        {"title": "干扰统计与分析", "en": "Interference Statistics and Analysis"}
+    ],
+    "relations": [
+        {"source": "禁区", "target": "NGSO卫星", "type": "包含"},
+        {"source": "禁区", "target": "GSO系统", "type": "影响"},
+        {"source": "NGSO卫星", "target": "GSO系统", "type": "干扰"},
+        {"source": "NGSO卫星", "target": "干扰减缓技术", "type": "需要"},
+        {"source": "波束控制算法", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "波束控制算法", "target": "GSO系统", "type": "减缓干扰"},
+        {"source": "卫星分集技术", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "卫星分集技术", "target": "GSO系统", "type": "减缓干扰"},
+        {"source": "相控阵天线技术", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "相控阵天线技术", "target": "GSO系统", "type": "减缓干扰"},
+        {"source": "频率隔离", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "频率隔离", "target": "GSO系统", "type": "减缓干扰"},
+        {"source": "功率控制", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "功率控制", "target": "GSO系统", "type": "减缓干扰"},
+        {"source": "空间隔离", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "空间隔离", "target": "GSO系统", "type": "减缓干扰"},
+        {"source": "协作模式", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "协作模式", "target": "GSO系统", "type": "减缓干扰"},
+        {"source": "频率兼容性", "target": "NGSO卫星", "type": "影响"},
+        {"source": "频率兼容性", "target": "GSO系统", "type": "影响"},
+        {"source": "干扰分析方法", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "干扰分析方法", "target": "GSO系统", "type": "干扰分析"},
+        {"source": "干扰评价指标", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "干扰评价指标", "target": "GSO系统", "type": "干扰评价"},
+        {"source": "干扰统计与分析", "target": "NGSO卫星", "type": "应用于"},
+        {"source": "干扰统计与分析", "target": "GSO系统", "type": "干扰统计"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "GSO卫星", "en": "GSO Satellite"},
+        {"title": "通信卫星", "en": "Communication Satellite"},
+        {"title": "NGSO系统", "en": "NGSO System"},
+        {"title": "同频干扰", "en": "Co-frequency Interference"},
+        {"title": "频率兼容", "en": "Frequency Compatibility"}
+    ],
+    "relations": [
+        {"source": "GSO卫星", "target": "通信卫星", "type": "属于"},
+        {"source": "NGSO系统", "target": "同频干扰", "type": "存在关系"},
+        {"source": "NGSO系统", "target": "频率兼容", "type": "存在关系"},
+        {"source": "NGSO系统", "target": "GSO卫星", "type": "存在干扰"},
+        {"source": "NGSO系统", "target": "禁区", "type": "干扰减缓方法"},
+        {"source": "NGSO系统", "target": "波束控制", "type": "干扰减缓方法"},
+        {"source": "NGSO系统", "target": "自适应分隔角", "type": "干扰减缓方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "GSO卫星轨道", "en": "GSO Satellite Orbit"},
+        {"title": "NGSO卫星", "en": "NGSO Satellite"},
+        {"title": "频段分配", "en": "Frequency Band Allocation"},
+        {"title": "同频干扰", "en": "Co-frequency Interference"}
+    ],
+    "relations": [
+        {"source": "GSO卫星轨道", "target": "通信卫星", "type": "位于"},
+        {"source": "GSO卫星轨道", "target": "中继", "type": "用于"},
+        {"source": "NGSO卫星", "target": "低轨卫星", "type": "包括"},
+        {"source": "NGSO卫星", "target": "中轨卫星", "type": "包括"},
+        {"source": "NGSO卫星", "target": "高轨卫星", "type": "包括"},
+        {"source": "NGSO卫星", "target": "通信容量", "type": "提供"},
+        {"source": "NGSO卫星", "target": "通信延迟", "type": "缩短"},
+        {"source": "NGSO卫星", "target": "Starlink", "type": "例子"},
+        {"source": "频段分配", "target": "NGSO卫星", "type": "使用"},
+        {"source": "同频干扰", "target": "NGSO系统", "type": "引发"},
+        {"source": "同频干扰", "target": "GSO系统", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "分配带宽", "en": "Bandwidth allocation"},
+        {"title": "占用带宽", "en": "Occupied bandwidth"},
+        {"title": "功率密度", "en": "Power density"},
+        {"title": "信道间隔", "en": "Channel spacing"},
+        {"title": "频率", "en": "Frequency"},
+        {"title": "重叠带宽", "en": "Overlap bandwidth"},
+        {"title": "共线干扰", "en": "Co-channel interference"},
+        {"title": "卫星宽带业务", "en": "Satellite broadband service"},
+        {"title": "NGSO卫星链路", "en": "NGSO satellite link"},
+        {"title": "GSO卫星链路", "en": "GSO satellite link"},
+        {"title": "三点一线", "en": "Three-point line"},
+        {"title": "旁瓣干扰", "en": "Adjacent channel interference"},
+        {"title": "集总干扰", "en": "Aggregate interference"},
+        {"title": "去极化干扰", "en": "Depolarization interference"},
+        {"title": "干扰场景建模", "en": "Interference scenario modeling"},
+        {"title": "下行场景", "en": "Downlink scenario"},
+        {"title": "NGSO星座部署", "en": "NGSO constellation deployment"},
+        {"title": "轨道倾角", "en": "Orbit inclination"},
+        {"title": "真近点角", "en": "True anomaly"},
+        {"title": "右旋升交点赤经", "en": "Right ascension of ascending node"},
+        {"title": "轨道高度", "en": "Orbit altitude"},
+        {"title": "轨道数量", "en": "Number of orbits"}
+    ],
+    "relations": [
+        {"source": "分配带宽", "target": "占用带宽", "type": "包含"},
+        {"source": "占用带宽", "target": "功率密度", "type": "关联"},
+        {"source": "信道间隔", "target": "频率", "type": "关联"},
+        {"source": "重叠带宽", "target": "频率", "type": "关联"},
+        {"source": "NGSO卫星链路", "target": "GSO卫星链路", "type": "区分"},
+        {"source": "卫星宽带业务", "target": "NGSO卫星链路", "type": "包含"},
+        {"source": "卫星宽带业务", "target": "GSO卫星链路", "type": "包含"},
+        {"source": "NGSO卫星链路", "target": "共线干扰", "type": "包含"},
+        {"source": "GSO卫星链路", "target": "共线干扰", "type": "包含"},
+        {"source": "共线干扰", "target": "三点一线", "type": "包含"},
+        {"source": "NGSO卫星链路", "target": "旁瓣干扰", "type": "包含"},
+        {"source": "GSO卫星链路", "target": "旁瓣干扰", "type": "包含"},
+        {"source": "集总干扰", "target": "共线干扰", "type": "包含"},
+        {"source": "集总干扰", "target": "旁瓣干扰", "type": "包含"},
+        {"source": "去极化干扰", "target": "NGSO卫星链路", "type": "包含"},
+        {"source": "去极化干扰", "target": "GSO卫星链路", "type": "包含"},
+        {"source": "干扰场景建模", "target": "下行场景", "type": "包含"},
+        {"source": "下行场景", "target": "NGSO卫星链路", "type": "包含"},
+        {"source": "下行场景", "target": "GSO地球站", "type": "包含"},
+        {"source": "NGSO星座部署", "target": "NGSO卫星链路", "type": "包含"},
+        {"source": "轨道倾角", "target": "NGSO卫星链路", "type": "关联"},
+        {"source": "真近点角", "target": "NGSO卫星链路", "type": "关联"},
+        {"source": "右旋升交点赤经", "target": "NGSO卫星链路", "type": "关联"},
+        {"source": "轨道高度", "target": "NGSO卫星链路", "type": "关联"},
+        {"source": "轨道数量", "target": "NGSO卫星链路", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "每轨卫星数", "en": "Number of Satellites per Orbit"},
+        {"title": "RAAN增量", "en": "RAAN Increment"},
+        {"title": "NGSO卫星", "en": "NGSO Satellite"},
+        {"title": "极轨道", "en": "Polar Orbit"},
+        {"title": "倾斜轨道", "en": "Inclined Orbit"},
+        {"title": "星座周期", "en": "Constellation Period"},
+        {"title": "卫星波束类型与指向", "en": "Satellite Beam Type and Direction"},
+        {"title": "固定波束", "en": "Fixed Beam"},
+        {"title": "可调向波束", "en": "Adjustable Beam"},
+        {"title": "可成形可调向波束", "en": "Shaped and Adjustable Beam"},
+        {"title": "GSO地球站纬度", "en": "Latitude of GSO Earth Station"},
+        {"title": "NGSO地球站部署", "en": "Deployment of NGSO Earth Station"},
+        {"title": "上行场景", "en": "Uplink Scenario"},
+        {"title": "下行场景", "en": "Downlink Scenario"}
+    ],
+    "relations": [
+        {"source": "每轨卫星数", "target": "NGSO卫星", "type": "包含"},
+        {"source": "每轨卫星数", "target": "极轨道", "type": "相关"},
+        {"source": "每轨卫星数", "target": "倾斜轨道", "type": "相关"},
+        {"source": "RAAN增量", "target": "NGSO卫星", "type": "相关"},
+        {"source": "NGSO卫星", "target": "极轨道", "type": "包含"},
+        {"source": "NGSO卫星", "target": "倾斜轨道", "type": "包含"},
+        {"source": "NGSO卫星", "target": "星座周期", "type": "相关"},
+        {"source": "卫星波束类型与指向", "target": "固定波束", "type": "包含"},
+        {"source": "卫星波束类型与指向", "target": "可调向波束", "type": "包含"},
+        {"source": "卫星波束类型与指向", "target": "可成形可调向波束", "type": "包含"},
+        {"source": "GSO地球站纬度", "target": "NGSO卫星", "type": "相关"},
+        {"source": "NGSO地球站部署", "target": "NGSO卫星", "type": "相关"},
+        {"source": "上行场景", "target": "NGSO地球站", "type": "包含"},
+        {"source": "上行场景", "target": "GSO卫星", "type": "相关"},
+        {"source": "上行场景", "target": "NGSO卫星", "type": "相关"},
+        {"source": "下行场景", "target": "NGSO地球站", "type": "包含"},
+        {"source": "下行场景", "target": "GSO卫星", "type": "相关"},
+        {"source": "下行场景", "target": "NGSO卫星", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "最大GSO弧隔离角",
+            "en": "Maximum GSO Arc Separation Angle"
+        },
+        {
+            "title": "NGSO地球站与GSO地球站位置关系",
+            "en": "Relationship between NGSO Earth Stations and GSO Earth Stations"
+        },
+        {
+            "title": "NGSO地球站通信仰角",
+            "en": "NGSO Earth Station Communication Elevation Angle"
+        },
+        {
+            "title": "干扰分析方法",
+            "en": "Interference Analysis Methods"
+        },
+        {
+            "title": "干扰评价指标与计算",
+            "en": "Interference Evaluation Indicators and Calculation"
+        }
+    ],
+    "relations": [
+        {
+            "source": "最大GSO弧隔离角",
+            "target": "提高协调地位",
+            "type": "实现"
+        },
+        {
+            "source": "最大GSO弧隔离角",
+            "target": "保护GSO系统",
+            "type": "相关"
+        },
+        {
+            "source": "NGSO地球站与GSO地球站位置关系",
+            "target": "天线直径更大",
+            "type": "具有"
+        },
+        {
+            "source": "NGSO地球站与GSO地球站位置关系",
+            "target": "分布更为稀疏",
+            "type": "具有"
+        },
+        {
+            "source": "NGSO地球站与GSO地球站位置关系",
+            "target": "干扰源",
+            "type": "相关"
+        },
+        {
+            "source": "NGSO地球站通信仰角",
+            "target": "NGSO卫星",
+            "type": "相关"
+        },
+        {
+            "source": "NGSO地球站通信仰角",
+            "target": "干扰分析结果",
+            "type": "影响"
+        },
+        {
+            "source": "干扰分析方法",
+            "target": "干扰链路预算",
+            "type": "计算"
+        },
+        {
+            "source": "干扰分析方法",
+            "target": "实际问题",
+            "type": "选择"
+        },
+        {
+            "source": "干扰分析方法",
+            "target": "时间变量",
+            "type": "分类"
+        },
+        {
+            "source": "干扰评价指标与计算",
+            "target": "系统噪声",
+            "type": "相关"
+        },
+        {
+            "source": "干扰评价指标与计算",
+            "target": "有害干扰",
+            "type": "相关"
+        },
+        {
+            "source": "干扰评价指标与计算",
+            "target": "通信质量",
+            "type": "评价"
+        },
+        {
+            "source": "干扰评价指标与计算",
+            "target": "干扰减缓技术",
+            "type": "量化"
+        },
+        {
+            "source": "干扰评价指标与计算",
+            "target": "CKN+I",
+            "type": "评价"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "接收载波偏离发射机方向的角度",
+            "en": "Angle of deviation of received carrier from the direction of the transmitter"
+        },
+        {
+            "title": "单个干扰源波束的发射功率",
+            "en": "Transmit power of a single interference source beam"
+        },
+        {
+            "title": "干扰源波束的发射天线增益",
+            "en": "Transmit antenna gain of interference source beam"
+        },
+        {
+            "title": "第加个干扰源的第\"个波束偏离接收机方向的角度",
+            "en": "Angle of deviation of the nth beam of the mth interference source from the direction of the receiver"
+        },
+        {
+            "title": "接收机接收第帀个干扰源的第\"个波束信号时,接收机天线偏离发射机方向的角度",
+            "en": "Angle at which the receiver antenna deviates from the direction of the transmitter when receiving the nth beam of the mth interference source"
+        },
+        {
+            "title": "自由空间路径损耗",
+            "en": "Free space path loss"
+        },
+        {
+            "title": "链路长度",
+            "en": "Link length"
+        },
+        {
+            "title": "中心频率",
+            "en": "Center frequency"
+        },
+        {
+            "title": "接收机噪声温度",
+            "en": "Receiver noise temperature"
+        },
+        {
+            "title": "玻尔兹曼常数的分贝值",
+            "en": "Decibel value of Boltzmann's constant"
+        },
+        {
+            "title": "同频带宽",
+            "en": "Co-frequency bandwidth"
+        },
+        {
+            "title": "集总干扰功率",
+            "en": "Total interference power"
+        },
+        {
+            "title": "干扰评价指标",
+            "en": "Interference evaluation index"
+        },
+        {
+            "title": "I/N随时间的变化数据",
+            "en": "I/N vs. time data"
+        },
+        {
+            "title": "NGSO系统对GSO系统的干扰频次",
+            "en": "Interference frequency of NGSO system to GSO system"
+        },
+        {
+            "title": "干扰持续时间",
+            "en": "Interference duration"
+        },
+        {
+            "title": "干扰发生间隔",
+            "en": "Interference occurrence interval"
+        },
+        {
+            "title": "限值超出情况",
+            "en": "Exceeding limit situation"
+        },
+        {
+            "title": "I/N互补累计分布函数",
+            "en": "Complementary cumulative distribution function of I/N"
+        },
+        {
+            "title": "干扰超出限值的概率",
+            "en": "Probability of interference exceeding limit"
+        },
+        {
+            "title": "VN值",
+            "en": "VN value"
+        },
+        {
+            "title": "干扰统计数据",
+            "en": "Interference statistical data"
+        },
+        {
+            "title": "关键因素",
+            "en": "Key factors"
+        },
+        {
+            "title": "GSO地球站纬度",
+            "en": "Latitude of GSO ground station"
+        },
+        {
+            "title": "GSO地球站位于不同纬度时上空NGSO卫星数量不同",
+            "en": "Different number of NGSO satellites in the sky when GSO ground station is located at different latitudes"
+        },
+        {
+            "title": "天线指向固定的GSO卫星时不同纬度下其天线仰角不同",
+            "en": "Different elevation angles of the antenna at different latitudes when the antenna is fixed to the GSO satellite"
+        },
+        {
+            "title": "通信链路与干扰链路夹角不同",
+            "en": "Different angles between communication link and interference link"
+        },
+        {
+            "title": "GSO卫星与GSO地球站经度差",
+            "en": "Longitude difference between GSO satellite and GSO ground station"
+        },
+        {
+            "title": "天线互相对准",
+            "en": "Antenna alignment"
+        },
+        {
+            "title": "经度差的变化会影响二者的天线指向",
+            "en": "Change in longitude difference affects the antenna pointing of both"
+        },
+        {
+            "title": "天线方向图的选取",
+            "en": "Selection of antenna pattern"
+        },
+        {
+            "title": "增益滚降越大覆盖范围越广",
+            "en": "The greater the gain roll-off, the wider the coverage"
+        },
+        {
+            "title": "存在平坦增益区间",
+            "en": "Existence of flat gain interval"
+        },
+        {
+            "title": "NGSO星座规模",
+            "en": "NGSO constellation size"
+        },
+        {
+            "title": "下行场景中影响GSO地球站所受干扰的最大水平和概率分布",
+            "en": "Maximum interference level and probability distribution affecting GSO ground station in downlink scenario"
+        },
+        {
+            "title": "上行场景中主要影响干扰的概率分布",
+            "en": "Mainly affects the probability distribution of interference in uplink scenario"
+        },
+        {
+            "title": "NGSO地球站地理位置分布类型",
+            "en": "Geographical distribution type of NGSO ground station"
+        },
+        {
+            "title": "影响干扰的集总程度",
+            "en": "Total level of interference"
+        },
+        {
+            "title": "NGSO地球站和GSO地球站最小地理间隔",
+            "en": "Minimum geographical separation between NGSO ground station and GSO ground station"
+        },
+        {
+            "title": "NGSO地球站发射天线跟踪策略",
+            "en": "Tracking strategy of NGSO ground station transmitting antenna"
+        },
+        {
+            "title": "不同的天线跟踪策略和通信仰角范围会改变干扰的概率分布",
+            "en": "Different antenna tracking strategies and communication elevation angle ranges will change the probability distribution of interference"
+        },
+        {
+            "title": "选用最大仰角策略可能使较高干扰概率对应的干扰水平聚集在某个值附近",
+            "en": "Using the maximum elevation angle strategy may cause the interference level corresponding to a higher interference probability to cluster around a certain value"
+        },
+        {
+            "title": "NGSO地球站通信仰角",
+            "en": "Communication elevation angle of NGSO ground station"
+        },
+        {
+            "title": "NGSO卫星波束类型",
+            "en": "NGSO satellite beam type"
+        },
+        {
+            "title": "固定波束在满足覆盖的同时会增加干扰概率",
+            "en": "Fixed beams will increase the probability of interference while meeting coverage"
+        },
+        {
+            "title": "可调向波束则会减小干扰发生概率",
+            "en": "Adjustable beams will reduce the probability of interference"
+{
+    "knowledge_points": [
+        {
+            "title": "接收载波偏离发射机方向的角度",
+            "en": "Angle of deviation of received carrier from the direction of the transmitter"
+        },
+        {
+            "title": "单个干扰源波束的发射功率",
+            "en": "Transmit power of a single interference source beam"
+        },
+        {
+            "title": "干扰源波束的发射天线增益",
+            "en": "Transmit antenna gain of interference source beam"
+        },
+        {
+            "title": "第加个干扰源的第\"个波束偏离接收机方向的角度",
+            "en": "Angle of deviation of the nth beam of the mth interference source from the direction of the receiver"
+        },
+        {
+            "title": "接收机接收第帀个干扰源的第\"个波束信号时,接收机天线偏离发射机方向的角度",
+            "en": "Angle at which the receiver antenna deviates from the direction of the transmitter when receiving the nth beam of the mth interference source"
+        },
+        {
+            "title": "自由空间路径损耗",
+            "en": "Free space path loss"
+        },
+        {
+            "title": "链路长度",
+            "en": "Link length"
+        },
+        {
+            "title": "中心频率",
+            "en": "Center frequency"
+        },
+        {
+            "title": "接收机噪声温度",
+            "en": "Receiver noise temperature"
+        },
+        {
+            "title": "玻尔兹曼常数的分贝值",
+            "en": "Decibel value of Boltzmann's constant"
+        },
+        {
+            "title": "同频带宽",
+            "en": "Co-frequency bandwidth"
+        },
+        {
+            "title": "集总干扰功率",
+            "en": "Total interference power"
+        },
+        {
+            "title": "干扰评价指标",
+            "en": "Interference evaluation index"
+        },
+        {
+            "title": "I/N随时间的变化数据",
+            "en": "I/N vs. time data"
+        },
+        {
+            "title": "NGSO系统对GSO系统的干扰频次",
+            "en": "Interference frequency of NGSO system to GSO system"
+        },
+        {
+            "title": "干扰持续时间",
+            "en": "Interference duration"
+        },
+        {
+            "title": "干扰发生间隔",
+            "en": "Interference occurrence interval"
+        },
+        {
+            "title": "限值超出情况",
+            "en": "Exceeding limit situation"
+        },
+        {
+            "title": "I/N互补累计分布函数",
+            "en": "Complementary cumulative distribution function of I/N"
+        },
+        {
+            "title": "干扰超出限值的概率",
+            "en": "Probability of interference exceeding limit"
+        },
+        {
+            "title": "VN值",
+            "en": "VN value"
+        },
+        {
+            "title": "干扰统计数据",
+            "en": "Interference statistical data"
+        },
+        {
+            "title": "关键因素",
+            "en": "Key factors"
+        },
+        {
+            "title": "GSO地球站纬度",
+            "en": "Latitude of GSO ground station"
+        },
+        {
+            "title": "上空NGSO卫星数量",
+            "en": "Number of NGSO satellites in the sky"
+        },
+        {
+            "title": "天线指向固定的GSO卫星时的天线仰角",
+            "en": "Antenna elevation angle when pointing to a fixed GSO satellite"
+        },
+        {
+            "title": "通信链路与干扰链路夹角",
+            "en": "Angle between communication link and interference link"
+        },
+        {
+            "title": "GSO卫星与GSO地球站经度差",
+            "en": "Longitude difference between GSO satellite and GSO ground station"
+        },
+        {
+            "title": "天线互相对准",
+            "en": "Antenna alignment"
+        },
+        {
+            "title": "天线方向图",
+            "en": "Antenna pattern"
+        },
+        {
+            "title": "增益滚降",
+            "en": "Gain roll-off"
+        },
+        {
+            "title": "覆盖范围",
+            "en": "Coverage range"
+        },
+        {
+            "title": "NGSO星座规模",
+            "en": "NGSO constellation size"
+        },
+        {
+            "title": "干扰的最大水平",
+            "en": "Maximum level of interference"
+        },
+        {
+            "title": "NGSO地球站地理位置分布类型",
+            "en": "Geographical distribution type of NGSO ground station"
+        },
+        {
+            "title": "干扰的集总程度",
+            "en": "Total level of interference"
+        },
+        {
+            "title": "NGSO地球站和GSO地球站最小地理间隔",
+            "en": "Minimum geographical separation between NGSO and GSO ground stations"
+        },
+        {
+            "title": "NGSO地球站发射天线跟踪策略",
+            "en": "Tracking strategy of NGSO ground station transmitting antenna"
+        },
+        {
+            "title": "通信仰角",
+            "en": "Elevation angle"
+        },
+        {
+            "title": "NGSO卫星波束类型",
+            "en": "NGSO satellite beam type"
+        },
+        {
+            "title": "固定波束",
+            "en": "Fixed beam"
+        },
+        {
+            "title": "可调向波束",
+            "en": "Steerable beam"
+        },
+        {
+            "title": "GSO卫星波束数量",
+            "en": "Number of GSO satellite beams"
+        },
+        {
+            "title": "波束服务多个地球站",
+            "en": "Beam serving multiple ground stations"
+        },
+        {
+            "title": "仿真起点",
+            "en": "Simulation starting point"
+        },
+        {
+            "title": "星座周期",
+            "en": "Constellation period"
+        },
+        {
+            "title": "仿真总时长",
+            "en": "Total simulation time"
+        },
+        {
+            "title": "仿真间隔",
+            "en": "Simulation interval"
+        },
+        {
+            "title": "联合禁区",
+            "en": "Joint exclusion zone"
+        },
+        {
+            "title": "自适应波束控制",
+            "en": "Adaptive beam control"
+        },
+        {
+            "title": "下行干扰减缓方法",
+            "en": "Downlink interference mitigation method"
+        }
+    ],
+    "relations": [
+        {
+            "source": "接收载波偏离发射机方向的角度",
+            "target": "自由空间路径损耗",
+            "type": "影响"
+        },
+        {
+            "source": "单个干扰源波束的发射功率",
+            "target": "干扰源波束的发射天线增益",
+            "type": "影响"
+        },
+        {
+            "source": "第加个干扰源的第\"个波束偏离接收机方向的角度",
+            "target": "自由空间路径损耗",
+            "type": "影{
+    "knowledge_points": [
+        {"title": "GSO卫星载波发射增益", "en": "GSO satellite carrier transmission gain"},
+        {"title": "GSO地球站接收的载波偏离该波束瞄准方向的角度", "en": "Angle of deviation of the received carrier from the beam aiming direction of the GSO ground station"},
+        {"title": "GSO地球站的接收增益", "en": "Receiving gain of GSO ground station"},
+        {"title": "GSO地球站的最大接收增益", "en": "Maximum receiving gain of GSO ground station"},
+        {"title": "单个NGSO卫星波束的发射功率", "en": "Transmit power of a single NGSO satellite beam"},
+        {"title": "NGSO卫星波束的发射天线增益", "en": "Transmit antenna gain of NGSO satellite beam"},
+        {"title": "GSO地球站接收的第m颗NGSO卫星的第n个波束偏离其波束瞄准方向的角度", "en": "Angle of deviation of the nth beam of the mth NGSO satellite received by the GSO ground station from its beam aiming direction"},
+        {"title": "GSO地球站接收的第加颗NGSO卫星的第\"个波束偏离地球站天线瞄准方向的角度", "en": "Angle of deviation of the nth beam of the mth NGSO satellite received by the GSO ground station from its beam aiming direction"},
+        {"title": "自由空间路径损耗", "en": "Free space path loss"},
+        {"title": "链路长度", "en": "Link length"},
+        {"title": "中心频率", "en": "Center frequency"},
+        {"title": "GSO地球站的接收机噪声温度", "en": "Receiver noise temperature of GSO ground station"},
+        {"title": "玻尔兹曼常数的分贝值", "en": "Decibel value of Boltzmann constant"},
+        {"title": "同频带宽", "en": "Co-frequency bandwidth"},
+        {"title": "禁区", "en": "Restricted zone"}
+    ],
+    "relations": [
+        {"source": "GSO卫星载波发射增益", "target": "单个NGSO卫星波束的发射功率", "type": "相关"},
+        {"source": "GSO卫星载波发射增益", "target": "GSO地球站接收的载波偏离该波束瞄准方向的角度", "type": "相关"},
+        {"source": "GSO地球站接收的载波偏离该波束瞄准方向的角度", "target": "GSO地球站的接收增益", "type": "相关"},
+        {"source": "GSO地球站的接收增益", "target": "GSO地球站的最大接收增益", "type": "相关"},
+        {"source": "单个NGSO卫星波束的发射功率", "target": "NGSO卫星波束的发射天线增益", "type": "相关"},
+        {"source": "NGSO卫星波束的发射天线增益", "target": "GSO地球站接收的第m颗NGSO卫星的第n个波束偏离其波束瞄准方向的角度", "type": "相关"},
+        {"source": "GSO地球站接收的第m颗NGSO卫星的第n个波束偏离其波束瞄准方向的角度", "target": "GSO地球站接收的第加颗NGSO卫星的第\"个波束偏离地球站天线瞄准方向的角度", "type": "相关"},
+        {"source": "自由空间路径损耗", "target": "链路长度", "type": "相关"},
+        {"source": "自由空间路径损耗", "target": "中心频率", "type": "相关"},
+        {"source": "GSO地球站的接收机噪声温度", "target": "玻尔兹曼常数的分贝值", "type": "相关"},
+        {"source": "同频带宽", "target": "GSO地球站的接收载波功率", "type": "相关"},
+        {"source": "自由空间路径损耗", "target": "GSO地球站的接收载波功率", "type": "相关"},
+        {"source": "GSO地球站的接收载波功率", "target": "GSO地球站接收机处来自单个NGSO卫星的单个波束的干扰功率", "type": "相关"},
+        {"source": "GSO地球站接收机处来自单个NGSO卫星的单个波束的干扰功率", "target": "GSO地球站接收机处的集总干扰功率", "type": "相关"},
+        {"source": "禁区", "target": "NGSO卫星", "type": "存在关系"},
+        {"source": "禁区", "target": "GSO卫星", "type": "存在关系"},
+        {"source": "禁区", "target": "GSO地球站", "type": "存在关系"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "禁区模型",
+            "en": "Forbidden zone model"
+        },
+        {
+            "title": "波束控制方法",
+            "en": "Beam control method"
+        },
+        {
+            "title": "中心重叠判定准则",
+            "en": "Central overlap criterion"
+        },
+        {
+            "title": "边缘重叠判定准则",
+            "en": "Edge overlap criterion"
+        },
+        {
+            "title": "自适应波束控制",
+            "en": "Adaptive beam control"
+        },
+        {
+            "title": "干扰减缓技术",
+            "en": "Interference mitigation technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "禁区模型",
+            "target": "波束控制方法",
+            "type": "包含"
+        },
+        {
+            "source": "禁区模型",
+            "target": "中心重叠判定准则",
+            "type": "包含"
+        },
+        {
+            "source": "禁区模型",
+            "target": "边缘重叠判定准则",
+            "type": "包含"
+        },
+        {
+            "source": "波束控制方法",
+            "target": "自适应波束控制",
+            "type": "包含"
+        },
+        {
+            "source": "自适应波束控制",
+            "target": "干扰减缓技术",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "GSO卫星参数", "en": "GSO Satellite Parameters"},
+        {"title": "GSO卫星天线方向图", "en": "GSO Satellite Antenna Pattern"},
+        {"title": "GSO地球站仿真参数", "en": "GSO Ground Station Simulation Parameters"},
+        {"title": "NGSO卫星仿真参数", "en": "NGSO Satellite Simulation Parameters"},
+        {"title": "OneWeb系统", "en": "OneWeb System"},
+        {"title": "天线方向图实现", "en": "Antenna Pattern Implementation"},
+        {"title": "干扰减缓前", "en": "Interference Reduction Before"}
+    ],
+    "relations": [
+        {"source": "GSO卫星参数", "target": "GSO卫星天线方向图", "type": "包含"},
+        {"source": "GSO地球站仿真参数", "target": "GSO卫星天线方向图", "type": "应用"},
+        {"source": "NGSO卫星仿真参数", "target": "OneWeb系统", "type": "基于"},
+        {"source": "OneWeb系统", "target": "NGSO卫星仿真参数", "type": "包含"},
+        {"source": "天线方向图实现", "target": "GSO卫星天线方向图", "type": "应用"},
+        {"source": "干扰减缓前", "target": "GSO地球站仿真参数", "type": "前置条件"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "C/(N+Z)", "en": "C/(N+Z)"},
+        {"title": "Z/N", "en": "Z/N"},
+        {"title": "Z/NCCDF曲线", "en": "Z/NCCDF curve"},
+        {"title": "I/N", "en": "I/N"},
+        {"title": "I/NCCDF曲线", "en": "I/NCCDF curve"},
+        {"title": "GSO地球站", "en": "GSO earth station"},
+        {"title": "NGSO卫星", "en": "NGSO satellite"},
+        {"title": "干扰减缓", "en": "Interference mitigation"},
+        {"title": "规避角", "en": "Avoidance angle"}
+    ],
+    "relations": [
+        {"source": "C/(N+Z)", "target": "GSO地球站", "type": "适用于"},
+        {"source": "Z/N", "target": "GSO地球站", "type": "适用于"},
+        {"source": "Z/NCCDF曲线", "target": "GSO地球站", "type": "适用于"},
+        {"source": "I/N", "target": "GSO地球站", "type": "适用于"},
+        {"source": "I/NCCDF曲线", "target": "GSO地球站", "type": "适用于"},
+        {"source": "GSO地球站", "target": "NGSO卫星", "type": "通信对象为"},
+        {"source": "干扰减缓", "target": "GSO地球站", "type": "影响"},
+        {"source": "规避角", "target": "NGSO卫星", "type": "特征参数"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "中断频次", "en": "Interruption frequency"},
+        {"title": "中断时长", "en": "Interruption duration"},
+        {"title": "中断概率", "en": "Interruption probability"},
+        {"title": "干扰减缓技术", "en": "Interference mitigation technology"},
+        {"title": "Z/N幅值", "en": "Z/N amplitude"},
+        {"title": "共线干扰", "en": "Co-channel interference"},
+        {"title": "GSO地球站", "en": "GSO earth station"},
+        {"title": "NGSO系统", "en": "NGSO system"},
+        {"title": "自适应分隔角", "en": "Adaptive separation angle"},
+        {"title": "集总干扰", "en": "Aggregate interference"},
+        {"title": "上行干扰", "en": "Uplink interference"},
+        {"title": "分隔角", "en": "Separation angle"}
+    ],
+    "relations": [
+        {"source": "干扰减缓技术", "target": "Z/N幅值", "type": "related"},
+        {"source": "干扰减缓技术", "target": "共线干扰", "type": "related"},
+        {"source": "GSO地球站", "target": "共线干扰", "type": "related"},
+        {"source": "NGSO系统", "target": "共线干扰", "type": "related"},
+        {"source": "干扰减缓技术", "target": "中断频次", "type": "related"},
+        {"source": "干扰减缓技术", "target": "中断时长", "type": "related"},
+        {"source": "干扰减缓技术", "target": "中断概率", "type": "related"},
+        {"source": "NGSO系统", "target": "干扰减缓技术", "type": "related"},
+        {"source": "GSO地球站", "target": "干扰减缓技术", "type": "related"},
+        {"source": "NGSO系统", "target": "GSO地球站", "type": "related"},
+        {"source": "自适应分隔角", "target": "上行干扰", "type": "related"},
+        {"source": "NGSO系统", "target": "上行干扰", "type": "related"},
+        {"source": "GSO地球站", "target": "上行干扰", "type": "related"},
+        {"source": "集总干扰", "target": "NGSO系统", "type": "related"},
+        {"source": "集总干扰", "target": "GSO系统", "type": "related"},
+        {"source": "分隔角", "target": "自适应分隔角", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "GSO卫星", "en": "GSO satellite"},
+        {"title": "NGSO卫星", "en": "NGSO satellite"},
+        {"title": "集总干扰噪声比", "en": "Aggregate Interference-to-Noise Ratio"},
+        {"title": "自适应分隔角策略", "en": "Adaptive Separation Angle Strategy"},
+        {"title": "干扰减缓", "en": "Interference Mitigation"},
+        {"title": "ITU-RRECS.580", "en": "ITU-R Recommendation S.580"},
+        {"title": "ITU-RRECS.672", "en": "ITU-R Recommendation S.672"},
+        {"title": "ITU-RRECS.1428", "en": "ITU-R Recommendation S.1428"}
+    ],
+    "relations": [
+        {"source": "GSO卫星", "target": "NGSO地球站", "type": "干扰"},
+        {"source": "NGSO卫星", "target": "GSO地球站", "type": "干扰"},
+        {"source": "GSO卫星", "target": "集总干扰噪声比", "type": "阈值"},
+        {"source": "NGSO地球站", "target": "GSO卫星", "type": "发射"},
+        {"source": "GSO卫星", "target": "自适应分隔角策略", "type": "有效性"},
+        {"source": "ITU-RRECS.580", "target": "GSO地球站", "type": "天线方向图"},
+        {"source": "ITU-RRECS.672", "target": "GSO卫星", "type": "天线方向图"},
+        {"source": "ITU-RRECS.1428", "target": "NGSO地球站", "type": "天线方向图"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "GSO卫星", "en": "GSO satellite"},
+        {"title": "NGSO卫星", "en": "NGSO satellite"},
+        {"title": "干扰", "en": "Interference"},
+        {"title": "禁区", "en": "Exclusion zone"},
+        {"title": "波束控制", "en": "Beam control"},
+        {"title": "自适应波束控制算法", "en": "Adaptive beam control algorithm"},
+        {"title": "干扰减缓技术", "en": "Interference mitigation technology"}
+    ],
+    "relations": [
+        {"source": "NGSO卫星", "target": "GSO卫星", "type": "干扰"},
+        {"source": "禁区", "target": "NGSO卫星", "type": "限制"},
+        {"source": "波束控制", "target": "NGSO卫星", "type": "控制"},
+        {"source": "自适应波束控制算法", "target": "NGSO卫星", "type": "控制"},
+        {"source": "干扰减缓技术", "target": "NGSO卫星", "type": "减缓"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "NGSO卫星点波束覆盖边缘", "en": "NGSO satellite point beam coverage edge"},
+        {"title": "边缘重叠判定准则", "en": "Edge overlap determination criterion"},
+        {"title": "禁区", "en": "Restricted zone"},
+        {"title": "干扰减缓技术", "en": "Interference mitigation technology"},
+        {"title": "自适应波束控制", "en": "Adaptive beam control"},
+        {"title": "干扰评估", "en": "Interference evaluation"},
+        {"title": "共线干扰", "en": "Co-channel interference"},
+        {"title": "旁瓣干扰", "en": "Adjacent channel interference"},
+        {"title": "自适应分隔角", "en": "Adaptive separation angle"},
+        {"title": "集总干扰", "en": "Aggregate interference"},
+        {"title": "频率兼容问题", "en": "Frequency compatibility issues"}
+    ],
+    "relations": [
+        {"source": "NGSO卫星点波束覆盖边缘", "target": "边缘重叠判定准则", "type": "包含"},
+        {"source": "边缘重叠判定准则", "target": "禁区", "type": "导致"},
+        {"source": "禁区", "target": "自动关闭点波束", "type": "控制"},
+        {"source": "禁区", "target": "自动打开点波束", "type": "控制"},
+        {"source": "干扰减缓技术", "target": "干扰评估", "type": "需要"},
+        {"source": "干扰评估", "target": "干扰仿真分析", "type": "包含"},
+        {"source": "干扰减缓技术", "target": "共线干扰", "type": "针对"},
+        {"source": "干扰减缓技术", "target": "旁瓣干扰", "type": "针对"},
+        {"source": "自适应分隔角", "target": "集总干扰", "type": "针对"},
+        {"source": "干扰减缓技术", "target": "自适应波束控制", "type": "包含"},
+        {"source": "自适应波束控制", "target": "NGSO卫星点波束覆盖边缘", "type": "控制"},
+        {"source": "干扰评估", "target": "频率兼容问题", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "OneWeb", "en": ""},
+        {"title": "SpaceX", "en": ""},
+        {"title": "Low Earth Orbit Satellite Constellation Systems", "en": ""},
+        {"title": "Radio Regulations", "en": ""},
+        {"title": "Protection of GSO networks by NGSO systems", "en": ""},
+        {"title": "World Radiocommunication Conference 2019", "en": ""},
+        {"title": "Propagation data and prediction methods for Earth-space telecommunications systems", "en": ""},
+        {"title": "Functional description to be used in developing software tools for determining conformity of non-geostationary-satellite orbit fixed-satellite service systems or networks with limits contained in Article 22 of the Radio Regulations", "en": ""},
+        {"title": "Methods to enhance sharing between non-GSO FSS systems (except MSS feeder links) in the frequency bands between 10-30 GHz", "en": ""},
+        {"title": "Attenuation by atmospheric gases and related effects", "en": ""},
+        {"title": "Water vapour: surface density and total columnar content", "en": ""},
+        {"title": "Ionospheric propagation data and prediction methods required for the design of satellite networks and systems", "en": ""},
+        {"title": "Dynamic time-varying channel interference mechanism and evaluation technology for space internet constellation system", "en": ""},
+        {"title": "New Space Spectrum Sharing: Assessing Interference Risk and Mitigations for New Satellite Constellations", "en": ""}
+    ],
+    "relations": [
+        {"source": "OneWeb", "target": "Low Earth Orbit Satellite Constellation Systems", "type": "属于"},
+        {"source": "SpaceX", "target": "Low Earth Orbit Satellite Constellation Systems", "type": "属于"},
+        {"source": "Low Earth Orbit Satellite Constellation Systems", "target": "Propagation data and prediction methods for Earth-space telecommunications systems", "type": "包含"},
+        {"source": "Radio Regulations", "target": "Protection of GSO networks by NGSO systems", "type": "包含"},
+        {"source": "World Radiocommunication Conference 2019", "target": "Radio Regulations", "type": "修改"},
+        {"source": "Functional description to be used in developing software tools for determining conformity of non-geostationary-satellite orbit fixed-satellite service systems or networks with limits contained in Article 22 of the Radio Regulations", "target": "Radio Regulations", "type": "修改"},
+        {"source": "Methods to enhance sharing between non-GSO FSS systems (except MSS feeder links) in the frequency bands between 10-30 GHz", "target": "Radio Regulations", "type": "修改"},
+        {"source": "Attenuation by atmospheric gases and related effects", "target": "Propagation data and prediction methods for Earth-space telecommunications systems", "type": "影响"},
+        {"source": "Water vapour: surface density and total columnar content", "target": "Propagation data and prediction methods for Earth-space telecommunications systems", "type": "影响"},
+        {"source": "Ionospheric propagation data and prediction methods required for the design of satellite networks and systems", "target": "Propagation data and prediction methods for Earth-space telecommunications systems", "type": "包含"},
+        {"source": "Dynamic time-varying channel interference mechanism and evaluation technology for space internet constellation system", "target": "Low Earth Orbit Satellite Constellation Systems", "type": "研究"},
+        {"source": "New Space Spectrum Sharing: Assessing Interference Risk and Mitigations for New Satellite Constellations", "target": "Low Earth Orbit Satellite Constellation Systems", "type": "研究"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "卫星多样性", "en": "Satellite diversity"},
+        {"title": "非地球静止卫星", "en": "Non-geostationary satellite (NGSO)"},
+        {"title": "地球静止卫星", "en": "Geostationary satellite (GEO)"},
+        {"title": "频谱共存", "en": "Spectral coexistence"},
+        {"title": "干扰规避", "en": "Interference avoidance"},
+        {"title": "频率兼容共存", "en": "Frequency compatibility and coexistence"},
+        {"title": "空间隔离", "en": "Spatial isolation"},
+        {"title": "协作", "en": "Collaboration"}
+    ],
+    "relations": [
+        {"source": "卫星多样性", "target": "非地球静止卫星", "type": "包含"},
+        {"source": "卫星多样性", "target": "地球静止卫星", "type": "包含"},
+        {"source": "非地球静止卫星", "target": "频谱共存", "type": "涉及"},
+        {"source": "地球静止卫星", "target": "频谱共存", "type": "涉及"},
+        {"source": "频谱共存", "target": "干扰规避", "type": "涉及"},
+        {"source": "频谱共存", "target": "频率兼容共存", "type": "涉及"},
+        {"source": "空间隔离", "target": "非地球静止卫星", "type": "涉及"},
+        {"source": "空间隔离", "target": "地球静止卫星", "type": "涉及"},
+        {"source": "协作", "target": "非地球静止卫星", "type": "涉及"},
+        {"source": "协作", "target": "地球静止卫星", "type": "涉及"}
+    ]
+}Sorry, the contents provided seem to be irrelevant and do not contain any information related to Communication Theory. Please provide relevant contents for me to extract knowledge points and relations.{
+    "knowledge_points": [],
+    "relations": []
+}

@@ -1,0 +1,34 @@
+3.5.3测试步骤
+测试步骤如下：
+1)SS发送INVITE请求到UE o
+2)SS收到UE发送的100 Tryingo (可选)
+3)SS 收到 UE 发送 183 Session Progress?
+4)SS 发送 PRACK 到 UE 确认收到 183 Session Progress?
+5)SS收到UE发送的200 OK-
+6)SS发送UPDATE到UE,该消息中包含指示服务端满足的先决条件的SDP。
+7)SS收到UE发送的200 OK,包含适当的SDP回复。
+8)SS 收到 UE 发送的 180 Ringingo
+9)SS 发送对 180 Ringing 的回复 PRACK。
+10)SS收到UE对INVITE的最终响应200 OK。
+11）	SS发送200 0K的回复ACK。
+12）	SS发送BYE通知挂机。
+13）	SS 收到 200 OKo
+下面的表3-3是信令的详细流程和测试点的注释：
+表3-3视频主叫测试例详细信令流程
+步骤	　　方向	　　　　信令	注释	测试点
+1	下行	INVITE	在INVITE中包含第 一条SDP邀请
+2	　　上行	100 Trying	终端回复临时响应
+3	　　上行	Session Progress	终端回复183 Session Progress 中 携带SDP回复	　　测试点1
+4	下行	PRACK	　　SS确认收到183
+Session Progress
+5	上行	200 OK	　　UE 收到 PRACK	　　测试点2
+6	　　下行	UPDATE	该UPDATE中包含 指示保留资源的
+SDP消息
+7	　　上行	200 OK	UE发送200 OK包 含了当前先决条件 的状态的SDP	　　测试点3
+8	　　上行	180 Ringing	UE对INVITE的响 应（可选）
+9	　　下行	PRACK	SS 对 180 Ringing 确 认（可选）
+10	　　上行	200 OK	　　确认收到PRACK
+11	上行	200 OK	回复INVITE	　　测试点4
+12	　　下行	ACK	　　SS 确认 200 OK
+13	　　下行	BYE	挂机请求
+14	　　上行	200 OK	挂机确认，通话结 束。	　　测试点5

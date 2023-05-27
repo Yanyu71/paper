@@ -1,0 +1,24 @@
+5.3.2时间复杂度低的贪心算法
+为了提高资源调度的实时性，下面提出一种贪心算法：先根据在复用资源段 以及正交资源段上的干扰功率约束及DUE到基站的路损计算出各DUE在各资 源段上的发送功率，根据式5-9计算出各对D2D在各资源段上的D2D速率，每 次循环将相应资源分配给当前具有最大速率的DUE,这个DUE以及其占用的资 源段不再参与之后的循环。循环终止条件是所有DUE都被分配了资源，或者所 有资源段都已经被DUE占用。
+算法的伪代码如下所示：
+Greedy-exclusive(D2DChunkRate,M,N)
+1"0
+2b — N
+3totalRate 0
+4C<-0
+5D<-0
+6white M and b.Q
+7A update rate matrix for un-configed D2Ds accoiding to exclusive constriants
+8do ^p^eAvailRACottf(C, D, D2IXIhunkRate)
+9C<-0
+10A find D2D with max chunk rate among all un-configed D2Ds
+11[C, d, maxRat^ . ^nd!A/ax]?afe(D2DChunkRate)
+12A update totalRate and configed D2D set D
+13totalRaie. <— toted Rate + maxRate
+14D<-D|Jd
+15E> update configed D2D number s and unoccupied chunk number b
+16s <- s 4-1
+17b <— 6 — length [C]
+算法的输入是存储了各DUE在每种可能的资源占用方案下的吞吐值的数组 D2DChunkRate、总的DUE数目M以及资源段数目N。代码1?5行进行了变量 定义及初始化：s表示当前已经完成资源分配的DUE数目，初始时没有DUE被 分配了资源，初始化为0; b表示当前未被DUE占用的资源段数目，初始时所有 资源段都未被占用，初始化为N； totalRate表示总D2D速率，初始化为0；集合 C表示在每次循环中分配给DUE的资源段编号，初始化为空；集合D表示已经 分配了资源的DUE集合，初始化为空。代码6?17行是循环主体，调用了两个函 数：updateAvailRACortf和JindMaxRate。实以o化/IvazTZMCW的功能是根据上一次 循环中更新的集合C以及集合D来将D2DChunkRate数组中还未被分配资源的 DUE的相应分配方案的速率置为零，表示后续循环中这些资源段不再参与资源 分配，以满足单独复用约束C7； findMaxRate的功能是找到所有未被分配资源的 DUE的所有可用资源方案中具有的最大速率，输出这个DUE、其占用的资源段 以及最大速率。每次循环首先调用絕出宓协切me。时?进行可用资源段的更新， 再调用顶*“及渔找到当前最优的选择，最后更新相应的集合和变量以保证循 环不变量的正确性。算法的输出是totalRate。
+假设有N段资源段，有M个DUE需要进行资源分配，计算D2DChunkRate 数组的复杂度为O0GV2)；由于每次迭代至少能确定一个DUE的资源分配，因此 迭代总次数小于等于M,每次迭代中updateAvailRAConf和findMaxRate的复杂 度都为。"2)。因此算法的最差时间复杂度为0(MN2),相比于前述0-1规划理 想算法在时间性能上有较大提升。
+此算法在每次迭代时选择局部最优解，但无法保证最终得到全局最优解。另 外，当某DUE占用了多段连续的资源段时，每个资源段上可能有不同的干扰余 量，由于一个子帧中一个DUE只能以同一功率发送，所以无法保证此DUE用 尽了其占用的所有资源段上的干扰余量。由于约束C7,未被用尽干扰余量也无 法再被其他DUE使用，这样就造成了干扰余量的“浪费”。

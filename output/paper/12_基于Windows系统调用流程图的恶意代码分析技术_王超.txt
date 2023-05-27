@@ -1,0 +1,815 @@
+﻿{
+    "knowledge_points": [
+        {"title": "恶意程序", "en": "Malware"},
+        {"title": "网络安全事件", "en": "Network Security Incidents"},
+        {"title": "恶意代码特征库", "en": "Malware Signature Database"},
+        {"title": "静态分析", "en": "Static Analysis"},
+        {"title": "动态分析", "en": "Dynamic Analysis"}
+    ],
+    "relations": [
+        {"source": "恶意程序", "target": "木马", "type": "is_a"},
+        {"source": "恶意程序", "target": "僵尸程序", "type": "is_a"},
+        {"source": "恶意程序", "target": "蠕虫", "type": "is_a"},
+        {"source": "恶意程序", "target": "病毒", "type": "is_a"},
+        {"source": "恶意程序", "target": "其他", "type": "is_a"},
+        {"source": "网络安全事件", "target": "漏洞", "type": "has"},
+        {"source": "网络安全事件", "target": "网页仿冒", "type": "has"},
+        {"source": "网络安全事件", "target": "网页篡改", "type": "has"},
+        {"source": "恶意代码特征库", "target": "创建方法", "type": "has"},
+        {"source": "静态分析", "target": "反汇编", "type": "has"},
+        {"source": "静态分析", "target": "反编译", "type": "has"},
+        {"source": "静态分析", "target": "控制流模型", "type": "has"},
+        {"source": "静态分析", "target": "抽象栈模型", "type": "has"},
+        {"source": "动态分析", "target": "进程操作", "type": "has"},
+        {"source": "动态分析", "target": "注册表操作", "type": "has"},
+        {"source": "动态分析", "target": "文件操作", "type": "has"},
+        {"source": "动态分析", "target": "网络操作", "type": "has"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "恶意程序分析", "en": "Malware Analysis"},
+        {"title": "静态分析", "en": "Static Analysis"},
+        {"title": "动态分析", "en": "Dynamic Analysis"},
+        {"title": "特征提取", "en": "Feature Extraction"},
+        {"title": "入侵检测模型", "en": "Intrusion Detection Model"},
+        {"title": "系统调用", "en": "System Call"},
+        {"title": "词法分析技术", "en": "Lexical Analysis Technology"},
+        {"title": "二进制比对技术", "en": "Binary Comparison Technology"}
+    ],
+    "relations": [
+        {"source": "恶意程序分析", "target": "静态分析", "type": "包含"},
+        {"source": "恶意程序分析", "target": "动态分析", "type": "包含"},
+        {"source": "静态分析", "target": "特征提取", "type": "包含"},
+        {"source": "动态分析", "target": "特征提取", "type": "包含"},
+        {"source": "入侵检测模型", "target": "系统调用", "type": "包含"},
+        {"source": "静态分析", "target": "词法分析技术", "type": "包含"},
+        {"source": "静态分析", "target": "二进制比对技术", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "规则检查", "en": "RuleCheck"},
+        {"title": "类型推导", "en": "TypeInference"},
+        {"title": "模型检测", "en": "ModelDetection"},
+        {"title": "定理证明", "en": "TheoremProving"},
+        {"title": "符号执行", "en": "SymbolicExecution"},
+        {"title": "静态分析", "en": "StaticAnalysis"},
+        {"title": "合同分析", "en": "ContractAnalysis"},
+        {"title": "恶意代码检测", "en": "MalwareDetection"},
+        {"title": "反恶意代码技术", "en": "Anti-MalwareTechnology"},
+        {"title": "恶意代码伪装技术", "en": "MalwareDisguiseTechnology"},
+        {"title": "图相似性对比", "en": "GraphSimilarityComparison"}
+    ],
+    "relations": [
+        {"source": "规则检查", "target": "已知类型的漏洞", "type": "具有高检测率"},
+        {"source": "规则检查", "target": "已知类型的漏洞", "type": "检测效率高"},
+        {"source": "规则检查", "target": "未知类型的漏洞", "type": "无能为力"},
+        {"source": "类型推导", "target": "编程语言", "type": "专门针对"},
+        {"source": "类型推导", "target": "控制流无关的漏洞", "type": "具有高检测率"},
+        {"source": "模型检测", "target": "涉及时序的漏洞", "type": "主要检测"},
+        {"source": "模型检测", "target": "形式化检测方法", "type": "比较成熟"},
+        {"source": "模型检测", "target": "资源开销较大", "type": "缺点"},
+        {"source": "模型检测", "target": "内存相关漏洞类型", "type": "支持度不高"},
+        {"source": "定理证明", "target": "严格的数学推理", "type": "使用"},
+        {"source": "符号执行", "target": "严格的数学推理", "type": "使用"},
+        {"source": "静态分析", "target": "复杂", "type": "实际使用中"},
+        {"source": "静态分析", "target": "得不到精确的数字", "type": "缺点"},
+        {"source": "静态分析", "target": "语义", "type": "生成过程合同信息的填充测试代码"},
+        {"source": "静态分析", "target": "程序创建特殊初始配置", "type": "优化合同分析的步骤"},
+        {"source": "静态分析", "target": "静态检查", "type": "基于特殊初始配置的"},
+        {"source": "静态分析", "target": "合同规约", "type": "逐段处理并进行深层分析"},
+        {"source": "恶意代码检测", "target": "可执行文件静态分析", "type": "针对"},
+        {"source": "恶意代码检测", "target": "检测模型", "type": "提出"},
+        {"source": "恶意代码检测", "target": "关键技术", "type": "研究讨论与综合分析"},
+        {"source": "恶意代码检测", "target": "反汇编", "type": "构造模型的基本思想"},
+        {"source": "恶意代码检测", "target": "汇编指令序列", "type": "反汇编得出"},
+        {"source": "恶意代码检测", "target": "系统调用", "type": "提取出"},
+        {"source": "恶意代码检测", "target": "系统调用集合", "type": "归纳出"},
+        {"source": "恶意代码检测", "target": "家族签名", "type": "比对分析"},
+        {"source": "恶意代码检测", "target": "函数整体的执行流程图", "type": "建立"},
+        {"source": "恶意代码检测", "target": "系统调用函数", "type": "关注"},
+        {"source": "恶意代码检测", "target": "偏序关系", "type": "分析"},
+        {"source": "恶意代码检测", "target": "系统调用图", "type": "基础构建样本程序的流程图"},
+        {"source": "恶意代码检测", "target": "二元组", "type": "将系统调用函数分解为"},
+        {"source": "恶意代码检测", "target": "动态分析", "type": "借助思想"},
+        {"source": "反恶意代码技术", "target": "自动分析技术", "type": "研究热点"},
+        {"source": "反恶意代码技术", "target": "恶意代码伪装技术", "type": "重点介绍"},
+        {"source": "反恶意代码技术", "target": "恶意程序", "type": "更新换代"},
+        {"source": "反恶意代码技术", "target": "反病毒软件", "type": "识别"},
+        {"source": "反恶意代码技术", "target": "恶意代码分析技术", "type": "主流"},
+        {"source": "图相似性对比", "target": "相关知识", "type": "介绍"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "反跟踪技术",
+            "en": "Anti-tracking technology"
+        },
+        {
+            "title": "反动态跟踪技术",
+            "en": "Anti-dynamic tracking technology"
+        },
+        {
+            "title": "反静态分析技术",
+            "en": "Anti-static analysis technology"
+        },
+        {
+            "title": "加密技术",
+            "en": "Encryption technology"
+        },
+        {
+            "title": "加壳技术",
+            "en": "Packing technology"
+        }
+    ],
+    "relations": [
+        {
+            "source": "反跟踪技术",
+            "target": "反动态跟踪技术",
+            "type": "包含"
+        },
+        {
+            "source": "反跟踪技术",
+            "target": "反静态分析技术",
+            "type": "包含"
+        },
+        {
+            "source": "加密技术",
+            "target": "恶意代码伪装技术",
+            "type": "属于"
+        },
+        {
+            "source": "加壳技术",
+            "target": "恶意代码伪装技术",
+            "type": "属于"
+        },
+        {
+            "source": "加壳技术",
+            "target": "加密技术",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "软件加壳", "en": "Software Packing"},
+        {"title": "模糊变换技术", "en": "Fuzzy Transformation Technology"},
+        {"title": "多态技术", "en": "Polymorphic Technology"}
+    ],
+    "relations": [
+        {"source": "软件加壳", "target": "API地址获取", "type": "包含"},
+        {"source": "软件加壳", "target": "数据解密", "type": "包含"},
+        {"source": "软件加壳", "target": "重定位", "type": "包含"},
+        {"source": "软件加壳", "target": "HOOK-APL", "type": "包含"},
+        {"source": "软件加壳", "target": "跳转到程序原入口点", "type": "包含"},
+        {"source": "模糊变换技术", "target": "指令替换技术", "type": "包含"},
+        {"source": "模糊变换技术", "target": "指令压缩技术", "type": "包含"},
+        {"source": "模糊变换技术", "target": "指令扩展技术", "type": "包含"},
+        {"source": "模糊变换技术", "target": "重编译技术", "type": "包含"},
+        {"source": "模糊变换技术", "target": "伪指令技术", "type": "包含"},
+        {"source": "多态技术", "target": "入口点", "type": "包含"},
+        {"source": "多态技术", "target": "转换函数", "type": "包含"},
+        {"source": "多态技术", "target": "载入可执行文件", "type": "包含"},
+        {"source": "多态技术", "target": "运行", "type": "包含"},
+        {"source": "多态技术", "target": "执行恶意代码", "type": "包含"},
+        {"source": "多态技术", "target": "生成新的密钥", "type": "包含"},
+        {"source": "多态技术", "target": "逆分发函数", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "签名检测方法", "en": "Signature Detection Method"},
+        {"title": "神经模式识别", "en": "Neural Pattern Recognition"},
+        {"title": "变形技术", "en": "Metamorphism Technique"},
+        {"title": "开放型变形技术", "en": "Open Metamorphism Technique"},
+        {"title": "闭合型变形技术", "en": "Closed Metamorphism Technique"},
+        {"title": "IA-32处理器", "en": "IA-32 Processor"},
+        {"title": "静态分析技术", "en": "Static Analysis Technique"},
+        {"title": "特征码提取技术", "en": "Feature Code Extraction Technique"},
+        {"title": "程序结构特征提取技术", "en": "Program Structure Feature Extraction Technique"},
+        {"title": "反汇编工具IDAPro", "en": "IDAPro Disassembler Tool"}
+    ],
+    "relations": [
+        {"source": "签名检测方法", "target": "恶意代码", "type": "检测"},
+        {"source": "神经模式识别", "target": "恶意代码", "type": "检测"},
+        {"source": "变形技术", "target": "恶意代码", "type": "处理"},
+        {"source": "开放型变形技术", "target": "恶意代码", "type": "处理"},
+        {"source": "闭合型变形技术", "target": "恶意代码", "type": "处理"},
+        {"source": "IA-32处理器", "target": "变形技术", "type": "支持"},
+        {"source": "静态分析技术", "target": "恶意代码", "type": "分析"},
+        {"source": "特征码提取技术", "target": "恶意代码", "type": "特征提取"},
+        {"source": "程序结构特征提取技术", "target": "恶意代码", "type": "特征提取"},
+        {"source": "反汇编工具IDAPro", "target": "静态分析技术", "type": "工具"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "静态分析技术", "en": "Static analysis technology"},
+        {"title": "动态分析技术", "en": "Dynamic analysis technology"},
+        {"title": "状态对比法", "en": "State comparison method"},
+        {"title": "动态追踪法", "en": "Dynamic tracing method"},
+        {"title": "基于用户态的监测技术", "en": "User-mode monitoring technology"},
+        {"title": "基于内核态的监测技术", "en": "Kernel-mode monitoring technology"},
+        {"title": "基于指令集模拟器的监测技术", "en": "Instruction set simulator-based monitoring technology"},
+        {"title": "WindowsAPI", "en": "Windows API"}
+    ],
+    "relations": [
+        {"source": "静态分析技术", "target": "动态分析技术", "type": "包含"},
+        {"source": "动态分析技术", "target": "状态对比法", "type": "包含"},
+        {"source": "动态分析技术", "target": "动态追踪法", "type": "包含"},
+        {"source": "动态追踪法", "target": "基于用户态的监测技术", "type": "包含"},
+        {"source": "动态追踪法", "target": "基于内核态的监测技术", "type": "包含"},
+        {"source": "动态追踪法", "target": "基于指令集模拟器的监测技术", "type": "包含"},
+        {"source": "WindowsAPI", "target": "基于用户态的监测技术", "type": "使用"},
+        {"source": "WindowsAPI", "target": "基于内核态的监测技术", "type": "使用"},
+        {"source": "WindowsAPI", "target": "基于指令集模拟器的监测技术", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "NativeAPI",
+            "en": "Native API"
+        },
+        {
+            "title": "WindowsAPI",
+            "en": "Windows API"
+        },
+        {
+            "title": "基础服务",
+            "en": "Base Services"
+        },
+        {
+            "title": "图形设备接口",
+            "en": "Graphics Device Interface (GDI)"
+        },
+        {
+            "title": "图形化用户界面",
+            "en": "Graphical User Interface (GUI)"
+        },
+        {
+            "title": "通用对话框链接库",
+            "en": "Common Dialog Box Library"
+        },
+        {
+            "title": "通用控件链接库",
+            "en": "Common Control Library"
+        },
+        {
+            "title": "Windows外壳",
+            "en": "Windows Shell"
+        },
+        {
+            "title": "网络服务",
+            "en": "Network Services"
+        },
+        {
+            "title": "编辑距离",
+            "en": "Edit Distance"
+        },
+        {
+            "title": "归一化压缩距离",
+            "en": "Normalized Compression Distance (NCD)"
+        }
+    ],
+    "relations": [
+        {
+            "source": "NativeAPI",
+            "target": "WindowsAPI",
+            "type": "包含"
+        },
+        {
+            "source": "WindowsAPI",
+            "target": "基础服务",
+            "type": "包含"
+        },
+        {
+            "source": "WindowsAPI",
+            "target": "图形设备接口",
+            "type": "包含"
+        },
+        {
+            "source": "WindowsAPI",
+            "target": "图形化用户界面",
+            "type": "包含"
+        },
+        {
+            "source": "WindowsAPI",
+            "target": "通用对话框链接库",
+            "type": "包含"
+        },
+        {
+            "source": "WindowsAPI",
+            "target": "通用控件链接库",
+            "type": "包含"
+        },
+        {
+            "source": "WindowsAPI",
+            "target": "Windows外壳",
+            "type": "包含"
+        },
+        {
+            "source": "WindowsAPI",
+            "target": "网络服务",
+            "type": "包含"
+        },
+        {
+            "source": "编辑距离",
+            "target": "恶意程序",
+            "type": "用于"
+        },
+        {
+            "source": "归一化压缩距离",
+            "target": "相似性比较",
+            "type": "用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "NCD方法", "en": "NCD method"},
+        {"title": "欧氏距离", "en": "Euclidean distance"},
+        {"title": "Jaccard系数", "en": "Jaccard coefficient"},
+        {"title": "IDAPro", "en": "IDAPro"},
+        {"title": "PEiD", "en": "PEiD"},
+        {"title": "恶意代码伪装技术", "en": "Malware disguise techniques"},
+        {"title": "恶意代码检测技术", "en": "Malware detection techniques"},
+        {"title": "相似性检测技术", "en": "Similarity detection techniques"},
+        {"title": "恶意代码收集与初步分析", "en": "Collection and preliminary analysis of malware"},
+        {"title": "特征知识库", "en": "Feature knowledge base"},
+        {"title": "行为特征", "en": "Behavioral features"},
+        {"title": "恶意家族", "en": "Malware family"},
+        {"title": "原型特征", "en": "Prototype features"}
+    ],
+    "relations": [
+        {"source": "NCD方法", "target": "恶意程序特征", "type": "measure"},
+        {"source": "欧氏距离", "target": "相似性度量", "type": "measure"},
+        {"source": "K.Rieck", "target": "恶意程序分类和聚类", "type": "researcher"},
+        {"source": "Jaccard系数", "target": "相似性度量", "type": "measure"},
+        {"source": "IDAPro", "target": "静态反汇编工具", "type": "tool"},
+        {"source": "PEiD", "target": "查壳软件", "type": "tool"},
+        {"source": "恶意代码伪装技术", "target": "恶意代码起源", "type": "subtopic"},
+        {"source": "恶意代码伪装技术", "target": "恶意代码伪装技术模型", "type": "subtopic"},
+        {"source": "恶意代码检测技术", "target": "恶意代码分析技术", "type": "subtopic"},
+        {"source": "恶意代码检测技术", "target": "恶意代码识别技术", "type": "subtopic"},
+        {"source": "相似性检测技术", "target": "聚类分析", "type": "subtopic"},
+        {"source": "恶意代码收集与初步分析", "target": "样本脱壳和解密", "type": "step"},
+        {"source": "特征知识库", "target": "WindowsAPI调用序列", "type": "feature"},
+        {"source": "行为特征", "target": "API调用序列", "type": "feature"},
+        {"source": "恶意家族", "target": "恶意变种", "type": "subtopic"},
+        {"source": "原型特征", "target": "恶意家族特征矩阵", "type": "feature"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ACS系统总体设计思路", "en": "Overall design idea of ACS system"},
+        {"title": "矩阵", "en": "Matrix"},
+        {"title": "签名", "en": "Signature"},
+        {"title": "图相似性匹配算法", "en": "Graph similarity matching algorithm"},
+        {"title": "训练集", "en": "Training set"},
+        {"title": "API调用矩阵", "en": "API call matrix"},
+        {"title": "API调用权值矩阵", "en": "API call weight matrix"},
+        {"title": "恶意家族签名", "en": "Malware family signature"},
+        {"title": "二元组", "en": "Tuple"},
+        {"title": "数据预处理", "en": "Data preprocessing"},
+        {"title": "WindowsAPI", "en": "Windows API"},
+        {"title": "动作映射表", "en": "Action mapping table"},
+        {"title": "操作类型映射表", "en": "Operation type mapping table"},
+        {"title": "常见API映射表", "en": "Common API mapping table"},
+        {"title": "常见类型映射表", "en": "Common type mapping table"}
+    ],
+    "relations": [
+        {"source": "ACS系统总体设计思路", "target": "矩阵", "type": "包含"},
+        {"source": "ACS系统总体设计思路", "target": "签名", "type": "包含"},
+        {"source": "ACS系统总体设计思路", "target": "图相似性匹配算法", "type": "包含"},
+        {"source": "ACS系统总体设计思路", "target": "训练集", "type": "包含"},
+        {"source": "数据预处理", "target": "API调用矩阵", "type": "包含"},
+        {"source": "数据预处理", "target": "API调用权值矩阵", "type": "包含"},
+        {"source": "数据预处理", "target": "二元组", "type": "包含"},
+        {"source": "WindowsAPI", "target": "动作映射表", "type": "包含"},
+        {"source": "WindowsAPI", "target": "操作类型映射表", "type": "包含"},
+        {"source": "WindowsAPI", "target": "常见API映射表", "type": "包含"},
+        {"source": "WindowsAPI", "target": "常见类型映射表", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "动作映射表", "en": "Action Mapping Table"},
+        {"title": "特征选择与特征库的构建", "en": "Feature Selection and Feature Library Construction"},
+        {"title": "签名迭代生成算法", "en": "Signature Iterative Generation Algorithm"},
+        {"title": "数据预处理", "en": "Data Preprocessing"}
+    ],
+    "relations": [
+        {"source": "动作映射表", "target": "特征选择与特征库的构建", "type": "包含"},
+        {"source": "特征选择与特征库的构建", "target": "签名迭代生成算法", "type": "包含"},
+        {"source": "特征选择与特征库的构建", "target": "数据预处理", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "数据预处理", "en": "Data preprocessing"},
+        {"title": "脱壳处理", "en": "Unpacking process"},
+        {"title": "反汇编", "en": "Disassembly"},
+        {"title": "库函数调用集", "en": "Library function call set"},
+        {"title": "子函数调用关系", "en": "Subfunction call relationship"},
+        {"title": "偏序集合", "en": "Partial order set"},
+        {"title": "权值矩阵", "en": "Weight matrix"},
+        {"title": "图相似性比对算法", "en": "Graph similarity comparison algorithm"},
+        {"title": "Jaccard系数", "en": "Jaccard coefficient"},
+        {"title": "偏移量", "en": "Offset"},
+        {"title": "置信区间", "en": "Confidence interval"}
+    ],
+    "relations": [
+        {"source": "数据预处理", "target": "脱壳处理", "type": "包含"},
+        {"source": "脱壳处理", "target": "反汇编", "type": "包含"},
+        {"source": "反汇编", "target": "库函数调用集", "type": "提取"},
+        {"source": "反汇编", "target": "子函数调用关系", "type": "提取"},
+        {"source": "子函数调用关系", "target": "偏序集合", "type": "转化为"},
+        {"source": "库函数调用集", "target": "权值矩阵", "type": "转化为"},
+        {"source": "权值矩阵", "target": "图相似性比对算法", "type": "输入"},
+        {"source": "图相似性比对算法", "target": "Jaccard系数", "type": "使用"},
+        {"source": "图相似性比对算法", "target": "偏移量", "type": "计算"},
+        {"source": "偏移量", "target": "置信区间", "type": "生成"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ACS系统总体设计思想", "en": "Overall design ideas of ACS system"},
+        {"title": "ACS系统功能需求", "en": "Functional requirements of ACS system"},
+        {"title": "ACS系统结构设计", "en": "Structural design of ACS system"},
+        {"title": "ACS系统实现", "en": "Implementation of ACS system"},
+        {"title": "数据预处理模块", "en": "Data preprocessing module"},
+        {"title": "图相似性分析模块", "en": "Graph similarity analysis module"}
+    ],
+    "relations": [
+        {"source": "ACS系统总体设计思想", "target": "ACS系统功能需求", "type": "包含"},
+        {"source": "ACS系统功能需求", "target": "ACS系统结构设计", "type": "包含"},
+        {"source": "ACS系统结构设计", "target": "ACS系统实现", "type": "包含"},
+        {"source": "ACS系统实现", "target": "数据预处理模块", "type": "包含"},
+        {"source": "ACS系统实现", "target": "图相似性分析模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "顶点",
+            "en": "Vertex"
+        },
+        {
+            "title": "边",
+            "en": "Edge"
+        },
+        {
+            "title": "系统调用",
+            "en": "System Call"
+        },
+        {
+            "title": "精简指令",
+            "en": "Extracted Instruction"
+        },
+        {
+            "title": "类型实体",
+            "en": "Type Entity"
+        }
+    ],
+    "relations": [
+        {
+            "source": "顶点",
+            "target": "边",
+            "type": "包含"
+        },
+        {
+            "source": "顶点",
+            "target": "类型实体",
+            "type": "属于"
+        },
+        {
+            "source": "边",
+            "target": "顶点",
+            "type": "连接"
+        },
+        {
+            "source": "系统调用",
+            "target": "精简指令",
+            "type": "映射"
+        },
+        {
+            "source": "精简指令",
+            "target": "类型实体",
+            "type": "属于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "类型实体", "en": "Type Entity"},
+        {"title": "操作实体", "en": "Operation Entity"},
+        {"title": "子函数系统调用", "en": "Subroutine System Call"},
+        {"title": "子函数调用", "en": "Subroutine Call"},
+        {"title": "映射码初始化", "en": "Mapping Code Initialization"}
+    ],
+    "relations": [
+        {"source": "类型实体", "target": "操作实体", "type": "包含"},
+        {"source": "子函数系统调用", "target": "操作实体", "type": "调用"},
+        {"source": "子函数调用", "target": "子函数调用", "type": "调用"},
+        {"source": "映射码初始化", "target": "类型实体", "type": "包含"},
+        {"source": "映射码初始化", "target": "操作实体", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "库函数映射函数",
+            "en": "Library function mapping function"
+        },
+        {
+            "title": "顶点与边的初始化函数",
+            "en": "Vertex and edge initialization function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "库函数映射函数",
+            "target": "具体样本中的所有库函数",
+            "type": "包含"
+        },
+        {
+            "source": "库函数映射函数",
+            "target": "数据库中的二元组中的值",
+            "type": "映射"
+        },
+        {
+            "source": "顶点与边的初始化函数",
+            "target": "样本的子函数调用的函数调用图",
+            "type": "包含"
+        },
+        {
+            "source": "顶点与边的初始化函数",
+            "target": "每个子函数的控制流图",
+            "type": "包含"
+        },
+        {
+            "source": "顶点与边的初始化函数",
+            "target": "边信息和顶点信息融合存储值数据库中",
+            "type": "融合"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "数据预处理模块",
+            "en": "Data preprocessing module"
+        },
+        {
+            "title": "图相似性分析模块",
+            "en": "Graph similarity analysis module"
+        },
+        {
+            "title": "顶点",
+            "en": "Vertex"
+        },
+        {
+            "title": "边",
+            "en": "Edge"
+        },
+        {
+            "title": "相似性比较函数",
+            "en": "Similarity comparison function"
+        },
+        {
+            "title": "函数调用图",
+            "en": "Function call graph"
+        },
+        {
+            "title": "控制流图",
+            "en": "Control flow graph"
+        },
+        {
+            "title": "子程序",
+            "en": "Subroutine"
+        },
+        {
+            "title": "库函数",
+            "en": "Library function"
+        },
+        {
+            "title": "偏序关系",
+            "en": "Partial order relation"
+        },
+        {
+            "title": "Jaccard系数",
+            "en": "Jaccard coefficient"
+        }
+    ],
+    "relations": [
+        {
+            "source": "数据预处理模块",
+            "target": "顶点",
+            "type": "包含"
+        },
+        {
+            "source": "数据预处理模块",
+            "target": "边",
+            "type": "包含"
+        },
+        {
+            "source": "图相似性分析模块",
+            "target": "顶点",
+            "type": "包含"
+        },
+        {
+            "source": "图相似性分析模块",
+            "target": "边",
+            "type": "包含"
+        },
+        {
+            "source": "图相似性分析模块",
+            "target": "相似性比较函数",
+            "type": "包含"
+        },
+        {
+            "source": "函数调用图",
+            "target": "子程序",
+            "type": "包含"
+        },
+        {
+            "source": "控制流图",
+            "target": "库函数",
+            "type": "包含"
+        },
+        {
+            "source": "函数调用图",
+            "target": "顶点",
+            "type": "包含"
+        },
+        {
+            "source": "控制流图",
+            "target": "顶点",
+            "type": "包含"
+        },
+        {
+            "source": "函数调用图",
+            "target": "偏序关系",
+            "type": "包含"
+        },
+        {
+            "source": "控制流图",
+            "target": "偏序关系",
+            "type": "包含"
+        },
+        {
+            "source": "相似性比较函数",
+            "target": "Jaccard系数",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "getMaxSimilar()函数",
+            "en": "getMaxSimilar() function"
+        },
+        {
+            "title": "偏移计算函数",
+            "en": "Offset calculation function"
+        },
+        {
+            "title": "数据预处理模块",
+            "en": "Data preprocessing module"
+        },
+        {
+            "title": "图相似性分析模块",
+            "en": "Graph similarity analysis module"
+        },
+        {
+            "title": "测试样本",
+            "en": "Test samples"
+        },
+        {
+            "title": "训练集样本",
+            "en": "Training set samples"
+        },
+        {
+            "title": "测试集样本",
+            "en": "Test set samples"
+        }
+    ],
+    "relations": [
+        {
+            "source": "数据预处理模块",
+            "target": "图相似性分析模块",
+            "type": "包含"
+        },
+        {
+            "source": "图相似性分析模块",
+            "target": "getMaxSimilar()函数",
+            "type": "使用"
+        },
+        {
+            "source": "图相似性分析模块",
+            "target": "偏移计算函数",
+            "type": "使用"
+        },
+        {
+            "source": "测试样本",
+            "target": "训练集样本",
+            "type": "包含"
+        },
+        {
+            "source": "测试样本",
+            "target": "测试集样本",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Trojan.Win32.Bagle.i", "en": ""},
+        {"title": "Virus.Win32.Kido.ih", "en": ""},
+        {"title": "Virus.Win32.Zmist", "en": ""},
+        {"title": "Virus.Win32.Sality.d", "en": ""},
+        {"title": "测试方法", "en": "Testing Method"},
+        {"title": "测试环境", "en": "Testing Environment"},
+        {"title": "功能测试", "en": "Functional Testing"},
+        {"title": "数据预处理模块", "en": "Data Preprocessing Module"},
+        {"title": "图相似性分析模块", "en": "Graph Similarity Analysis Module"},
+        {"title": "算法对比测试", "en": "Algorithm Comparison Testing"},
+        {"title": "WindowsAPI", "en": ""},
+        {"title": "恶意代码检测系统", "en": "Malware Detection System"},
+        {"title": "ConBcker病毒", "en": ""},
+        {"title": "metamorphic病毒", "en": ""},
+        {"title": "启发式算法", "en": "Heuristic Algorithm"},
+        {"title": "N-gram算法", "en": ""},
+        {"title": "最优路径算法", "en": "Optimal Path Algorithm"},
+        {"title": "静态检测", "en": "Static Detection"},
+        {"title": "样本", "en": "Sample"},
+        {"title": "识别率", "en": "Recognition Rate"},
+        {"title": "准确率", "en": "Accuracy"},
+        {"title": "节点", "en": "Node"},
+        {"title": "边", "en": "Edge"},
+        {"title": "权值矩阵", "en": "Weight Matrix"},
+        {"title": "误报率", "en": "False Positive Rate"},
+        {"title": "漏报率", "en": "False Negative Rate"}
+    ],
+    "relations": [
+        {"source": "Trojan.Win32.Bagle.i", "target": "Bagle蠕虫", "type": "is_variant_of"},
+        {"source": "Virus.Win32.Kido.ih", "target": "ConBcker病毒", "type": "is_variant_of"},
+        {"source": "Virus.Win32.Zmist", "target": "metamorphic病毒", "type": "is_a"},
+        {"source": "Virus.Win32.Sality.d", "target": "Sality的一个变种", "type": "is_variant_of"},
+        {"source": "测试方法", "target": "测试环境", "type": "has_part"},
+        {"source": "测试方法", "target": "功能测试", "type": "has_part"},
+        {"source": "测试方法", "target": "算法对比测试", "type": "has_part"},
+        {"source": "功能测试", "target": "数据预处理模块", "type": "has_part"},
+        {"source": "功能测试", "target": "图相似性分析模块", "type": "has_part"},
+        {"source": "算法对比测试", "target": "启发式算法", "type": "has_part"},
+        {"source": "算法对比测试", "target": "N-gram算法", "type": "has_part"},
+        {"source": "算法对比测试", "target": "最优路径算法", "type": "has_part"},
+        {"source": "算法对比测试", "target": "静态检测", "type": "has_part"},
+        {"source": "WindowsAPI", "target": "恶意代码检测系统", "type": "is_part_of"},
+        {"source": "样本", "target": "识别率", "type": "has_property"},
+        {"source": "样本", "target": "准确率", "type": "has_property"},
+        {"source": "节点", "target": "数据预处理模块", "type": "is_part_of"},
+        {"source": "边", "target": "数据预处理模块", "type": "is_part_of"},
+        {"source": "权值矩阵", "target": "图相似性分析模块", "type": "is_part_of"},
+        {"source": "误报率", "target": "算法对比测试", "type": "has_property"},
+        {"source": "漏报率", "target": "算法对比测试", "type": "has_property"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Exploit.Win32.CVE-2010-2568.gen", "en": ""},
+        {"title": "AdWare.Win32.DelBar.a", "en": ""},
+        {"title": "Trojan.Win32.Starter.lgb", "en": ""},
+        {"title": "Virus.Win32.Nimnul.a", "en": ""},
+        {"title": "Worm.Win32.Debris,a", "en": ""},
+        {"title": "API调用矩阵", "en": "API calling matrix"},
+        {"title": "静态检测", "en": "Static detection"},
+        {"title": "动态检测", "en": "Dynamic detection"},
+        {"title": "误报率", "en": "False positive rate"},
+        {"title": "漏报率", "en": "False negative rate"},
+        {"title": "ACS", "en": ""},
+        {"title": "PE可执行文件", "en": "PE executable file"},
+        {"title": "反汇编", "en": "Disassembly"},
+        {"title": "恶意代码分类", "en": "Malware classification"},
+        {"title": "关键应用编程接口图", "en": "Key Application Programming Interface Graph"}
+    ],
+    "relations": [
+        {"source": "Exploit.Win32.CVE-2010-2568.gen", "target": "API调用矩阵", "type": "包含"},
+        {"source": "AdWare.Win32.DelBar.a", "target": "静态检测", "type": "属于"},
+        {"source": "Trojan.Win32.Starter.lgb", "target": "动态检测", "type": "属于"},
+        {"source": "Virus.Win32.Nimnul.a", "target": "误报率", "type": "涉及"},
+        {"source": "Worm.Win32.Debris,a", "target": "漏报率", "type": "涉及"},
+        {"source": "ACS", "target": "API调用矩阵", "type": "基于"},
+        {"source": "ACS", "target": "静态检测", "type": "属于"},
+        {"source": "ACS", "target": "动态检测", "type": "属于"},
+        {"source": "PE可执行文件", "target": "反汇编", "type": "需要"},
+        {"source": "恶意代码分类", "target": "关键应用编程接口图", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Windows API", "en": ""},
+        {"title": "Overview of the Windows API", "en": ""},
+        {"title": "Behavioral classification", "en": ""},
+        {"title": "Kolmogorov complexity", "en": ""},
+        {"title": "Similarity metric", "en": ""},
+        {"title": "Automated classification and analysis of internet malware", "en": ""},
+        {"title": "Analyzing worms and network traffic using compression", "en": ""},
+        {"title": "Automatic analysis of malware behavior using machine learning", "en": ""},
+        {"title": "Semantics-aware malware detection", "en": ""},
+        {"title": "CodeGraph for malware detection", "en": ""},
+        {"title": "VXheaven Laboratory", "en": ""}
+    ],
+    "relations": [
+        {"source": "Windows API", "target": "Overview of the Windows API", "type": "包含"},
+        {"source": "Behavioral classification", "target": "Kolmogorov complexity", "type": "基于"},
+        {"source": "Similarity metric", "target": "Automated classification and analysis of internet malware", "type": "应用于"},
+        {"source": "Analyzing worms and network traffic using compression", "target": "Automatic analysis of malware behavior using machine learning", "type": "基于"},
+        {"source": "Automatic analysis of malware behavior using machine learning", "target": "Semantics-aware malware detection", "type": "基于"},
+        {"source": "CodeGraph for malware detection", "target": "VXheaven Laboratory", "type": "应用于"}
+    ]
+}

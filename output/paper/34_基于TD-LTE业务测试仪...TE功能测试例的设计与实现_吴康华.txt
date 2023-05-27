@@ -1,0 +1,1661 @@
+﻿{
+    "knowledge_points": [
+        {"title": "协议一致性", "en": "Protocol Conformance"},
+        {"title": "一致性测试", "en": "Conformance Testing"},
+        {"title": "ISO/IEC9646", "en": "ISO/IEC9646"},
+        {"title": "OSI协议标准", "en": "OSI Protocol Standard"},
+        {"title": "静态一致性", "en": "Static Conformance"},
+        {"title": "动态一致性", "en": "Dynamic Conformance"},
+        {"title": "3GPP", "en": "3GPP"},
+        {"title": "GCF", "en": "Global Certification Forum"},
+        {"title": "VoLTE", "en": "Voice over LTE"},
+        {"title": "IMS", "en": "IP Multimedia Subsystem"},
+        {"title": "IPSec", "en": "IP Security"},
+        {"title": "EUTRA_PTC", "en": "EUTRA_PTC"},
+        {"title": "IMS_PTC", "en": "IMS_PTC"},
+        {"title": "IP_PTC", "en": "IP_PTC"},
+        {"title": "SIP编解码模块", "en": "SIP Codec Module"},
+        {"title": "MUX/Filter模块", "en": "MUX/Filter Module"}
+    ],
+    "relations": [
+        {"source": "协议一致性", "target": "一致性测试", "type": "包含"},
+        {"source": "ISO/IEC9646", "target": "协议一致性", "type": "定义"},
+        {"source": "OSI协议标准", "target": "协议一致性", "type": "相关"},
+        {"source": "协议一致性", "target": "静态一致性", "type": "包含"},
+        {"source": "协议一致性", "target": "动态一致性", "type": "包含"},
+        {"source": "3GPP", "target": "GCF", "type": "相关"},
+        {"source": "GCF", "target": "VoLTE", "type": "认证"},
+        {"source": "VoLTE", "target": "IMS", "type": "相关"},
+        {"source": "VoLTE", "target": "EUTRA_PTC", "type": "相关"},
+        {"source": "EUTRA_PTC", "target": "IMS_PTC", "type": "包含"},
+        {"source": "EUTRA_PTC", "target": "IP_PTC", "type": "包含"},
+        {"source": "IP_PTC", "target": "SIP编解码模块", "type": "包含"},
+        {"source": "IP_PTC", "target": "MUX/Filter模块", "type": "包含"},
+        {"source": "VoLTE", "target": "IPSec", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VoLTE功能测试", "en": "VoLTE Function Testing"},
+        {"title": "TD-LTE-AdvancedTTCN终端协议仿真测试仪开发", "en": "TD-LTE-Advanced TTCN Terminal Protocol Simulation Test Instrument Development"},
+        {"title": "3GPP协议", "en": "3GPP Protocol"},
+        {"title": "VoLTE协议描述", "en": "VoLTE Protocol Description"},
+        {"title": "测试平台", "en": "Testing Platform"},
+        {"title": "测试例", "en": "Test Case"},
+        {"title": "TTCN-3", "en": "TTCN-3"},
+        {"title": "GCF认证", "en": "GCF Certification"},
+        {"title": "SIP&SDP技术", "en": "SIP&SDP Technology"},
+        {"title": "PHY", "en": "PHY"},
+        {"title": "MAC", "en": "MAC"},
+        {"title": "RLC", "en": "RLC"},
+        {"title": "PDCP", "en": "PDCP"},
+        {"title": "RRC", "en": "RRC"}
+    ],
+    "relations": [
+        {"source": "VoLTE功能测试", "target": "TD-LTE-AdvancedTTCN终端协议仿真测试仪开发", "type": "研究方向"},
+        {"source": "TD-LTE-AdvancedTTCN终端协议仿真测试仪开发", "target": "3GPP协议", "type": "参考协议"},
+        {"source": "TD-LTE-AdvancedTTCN终端协议仿真测试仪开发", "target": "VoLTE协议描述", "type": "参考协议"},
+        {"source": "测试平台", "target": "测试例", "type": "依赖关系"},
+        {"source": "测试例", "target": "TTCN-3", "type": "开发语言"},
+        {"source": "测试例", "target": "GCF认证", "type": "认证标准"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "测试平台", "type": "组成部分"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "SIP&SDP技术", "type": "介绍技术"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "PHY", "type": "介绍技术"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "MAC", "type": "介绍技术"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "RLC", "type": "介绍技术"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "PDCP", "type": "介绍技术"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "RRC", "type": "介绍技术"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "测试例", "type": "介绍组成部分"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "VoLTE测试平台", "type": "介绍组成部分"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "VoLTE网络架构", "type": "介绍组成部分"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "测试例的开发周期", "type": "介绍组成部分"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "基于TTCN-3的VoLTE测试例的构造方法", "type": "介绍组成部分"},
+        {"source": "TD-LTE业务测试系统及VoLTE测试概述", "target": "测试例验证方法", "type": "介绍组成部分"},
+        {"source": "M)LTE终端业务测试用例的设计与实现", "target": "测试例", "type": "介绍组成部分"},
+        {"source": "M)LTE终端业务测试用例的设计与实现", "target": "VoLTE测试例", "type": "介绍组成部分"},
+        {"source": "M)LTE终端业务测试用例的设计与实现", "target": "鉴权测试例", "type": "介绍组成部分"},
+        {"source": "M)LTE终端业务测试用例的设计与实现", "target": "语音被叫测试例", "type": "介绍组成部分"},
+        {"source": "M)LTE终端业务测试用例的设计与实现", "target": "视频主叫测试例", "type": "介绍组成部分"},
+        {"source": "M)LTE终端业务测试用例的设计与实现", "target": "视频被叫测试例", "type": "介绍组成部分"},
+        {"source": "Volte终端业务测试用例的结果验证", "target": "测试例", "type": "介绍组成部分"},
+        {"source": "Volte终端业务测试用例的结果验证", "target": "测试点", "type": "介绍组成部分"},
+        {"source": "Volte终端业务测试用例的结果验证", "target": "自动化测试结果", "type": "介绍组成部分"},
+        {"source": "总结和展望", "target": "VoLTE功能测试", "type": "总结研究工作"},
+        {"source": "总结和展望", "target": "TD-LTE-AdvancedTTCN终端协议仿真测试仪开发", "type": "总结研究工作"},
+        {"source": "总结和展望", "target": "测试例", "type": "总结研究工作"},
+        {"source": "总结和展望", "target": "VoLTE测试平台", "type": "总结研究工作"},
+        {"source": "总结和展望", "target": "VoLTE网络架构", "type": "总结研究工作"},
+        {"source": "总结和展望", "target": "基于TTCN-3的VoLTE测试例的构造方法", "type": "总结研究工作"},
+        {"source": "总结和展望", "target": "测试例验证方法", "type": "总结研究工作"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "终端业务测试仪本体的硬件架构", "en": "Hardware architecture of terminal business tester"},
+        {"title": "软件架构", "en": "Software architecture"},
+        {"title": "TTCN-3可执行测试套", "en": "TTCN-3 executable test suite"},
+        {"title": "系统管理软件", "en": "System management software"},
+        {"title": "Log分析软件", "en": "Log analysis software"},
+        {"title": "TD-LTESS软件", "en": "TD-LTESS software"},
+        {"title": "Volte网络架构及关键技术", "en": "Volte network architecture and key technologies"}
+    ],
+    "relations": [
+        {"source": "终端业务测试仪本体的硬件架构", "target": "PXI总线背板", "type": "共享"},
+        {"source": "终端业务测试仪本体的硬件架构", "target": "射频单元", "type": "提供时钟源、信号接收和发送"},
+        {"source": "终端业务测试仪本体的硬件架构", "target": "基带处理单元", "type": "信号转换和处理"},
+        {"source": "终端业务测试仪本体的硬件架构", "target": "主控制器", "type": "控制和数据转发"},
+        {"source": "终端业务测试仪本体的硬件架构", "target": "GPIB控制卡", "type": "提供GPIB接口"},
+        {"source": "基带处理单元", "target": "数模/模数转换模块", "type": "转换信号"},
+        {"source": "基带处理单元", "target": "FPGA模块", "type": "提供中断、数据通路和TriggerIn/Out接口"},
+        {"source": "基带处理单元", "target": "DSP模块", "type": "运行底层协议栈"},
+        {"source": "主控制器", "target": "射频单元", "type": "控制和数据转发"},
+        {"source": "TD-LTESS软件", "target": "物理层和数据链路层协议栈软件", "type": "运行在DSP上"},
+        {"source": "TD-LTESS软件", "target": "通信接口软件", "type": "负责与控制计算机之间的通信"},
+        {"source": "TD-LTESS软件", "target": "操作系统提供的进程管理软件", "type": "辅助运行"},
+        {"source": "软件架构", "target": "TTCN-3可执行测试套", "type": "测试套和系统适配层"},
+        {"source": "软件架构", "target": "系统管理软件", "type": "用户与仪表交互"},
+        {"source": "软件架构", "target": "Log分析软件", "type": "输出各层产生的日志信息"},
+        {"source": "TTCN-3可执行测试套", "target": "TTCN-3测试套", "type": "由测试例和测试套公共部分构成"},
+        {"source": "TTCN-3可执行测试套", "target": "系统适配层", "type": "完成适配层初始化、接口映射和测试例执行控制"},
+        {"source": "系统管理软件", "target": "进行系统初始化操作", "type": "硬件管理"},
+        {"source": "系统管理软件", "target": "控制TTCN-3可执行测试套、测试例的执行与结束", "type": "控制"},
+        {"source": "系统管理软件", "target": "控制测试过程中产生的交互信息", "type": "控制"},
+        {"source": "Log分析软件", "target": "输出物理层、数据链路层和高层log", "type": "显示"},
+        {"source": "TD-LTESS软件", "target": "负责物理层和数据链路层的协议栈软件", "type": "运行在DSP上"},
+        {"source": "TD-LTESS软件", "target": "负责通信接口软件", "type": "负责与控制计算机之间的通信"},
+        {"source": "TD-LTESS软件", "target": "负责操作系统提供的进程管理软件", "type": "辅助运行"},
+        {"source": "Volte网络架构及关键技术", "target": "", "type": ""}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "VbLTE(VoiceoverLTE)",
+            "en": "VbLTE(VoiceoverLTE)"
+        },
+        {
+            "title": "IMS(IP Multimedia Subsystem)",
+            "en": "IMS(IP Multimedia Subsystem)"
+        },
+        {
+            "title": "EPS(Evolved Packet System)",
+            "en": "EPS(Evolved Packet System)"
+        },
+        {
+            "title": "PCC架构(Policy and charging control)",
+            "en": "PCC架构(Policy and charging control)"
+        },
+        {
+            "title": "VoLTE业务系统的网络架构",
+            "en": "VoLTE业务系统的网络架构"
+        },
+        {
+            "title": "EPC(Evolved Packet Core)",
+            "en": "EPC(Evolved Packet Core)"
+        },
+        {
+            "title": "MME(Mobility Management Entity)",
+            "en": "MME(Mobility Management Entity)"
+        },
+        {
+            "title": "S-GW(Serving Gateway)",
+            "en": "S-GW(Serving Gateway)"
+        },
+        {
+            "title": "P-GW(PDN Gateway)",
+            "en": "P-GW(PDN Gateway)"
+        },
+        {
+            "title": "CSCF(Call Session Control Function)",
+            "en": "CSCF(Call Session Control Function)"
+        },
+        {
+            "title": "HSS(Home Subscriber Server)",
+            "en": "HSS(Home Subscriber Server)"
+        },
+        {
+            "title": "PCRF(Policy and Charging Rules Function)",
+            "en": "PCRF(Policy and Charging Rules Function)"
+        },
+        {
+            "title": "AMR-WB编码技术",
+            "en": "AMR-WB编码技术"
+        },
+        {
+            "title": "RoHC健壮性头报压缩技术",
+            "en": "RoHC健壮性头报压缩技术"
+        },
+        {
+            "title": "SPS半持续调度",
+            "en": "SPS半持续调度"
+        },
+        {
+            "title": "SIP(Session Initiation Protocol)协议",
+            "en": "SIP(Session Initiation Protocol)协议"
+        },
+        {
+            "title": "SDP(Session Description Protocol)协议",
+            "en": "SDP(Session Description Protocol)协议"
+        }
+    ],
+    "relations": [
+        {
+            "source": "VbLTE(VoiceoverLTE)",
+            "target": "VoLTE业务系统的网络架构",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "IMS(IP Multimedia Subsystem)",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "EPS(Evolved Packet System)",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "PCC架构(Policy and charging control)",
+            "type": "包含"
+        },
+        {
+            "source": "EPS(Evolved Packet System)",
+            "target": "EPC(Evolved Packet Core)",
+            "type": "包含"
+        },
+        {
+            "source": "EPC(Evolved Packet Core)",
+            "target": "MME(Mobility Management Entity)",
+            "type": "包含"
+        },
+        {
+            "source": "EPC(Evolved Packet Core)",
+            "target": "S-GW(Serving Gateway)",
+            "type": "包含"
+        },
+        {
+            "source": "EPC(Evolved Packet Core)",
+            "target": "P-GW(PDN Gateway)",
+            "type": "包含"
+        },
+        {
+            "source": "IMS(IP Multimedia Subsystem)",
+            "target": "CSCF(Call Session Control Function)",
+            "type": "包含"
+        },
+        {
+            "source": "CSCF(Call Session Control Function)",
+            "target": "S-CSCF(服务CSCF)",
+            "type": "包含"
+        },
+        {
+            "source": "CSCF(Call Session Control Function)",
+            "target": "I-CSCF(查询CSCF)",
+            "type": "包含"
+        },
+        {
+            "source": "CSCF(Call Session Control Function)",
+            "target": "P-CSCF(代理CSCF)",
+            "type": "包含"
+        },
+        {
+            "source": "IMS(IP Multimedia Subsystem)",
+            "target": "HSS(Home Subscriber Server)",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "AMR-WB编码技术",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "RoHC健壮性头报压缩技术",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "SPS半持续调度",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "SIP(Session Initiation Protocol)协议",
+            "type": "包含"
+        },
+        {
+            "source": "VoLTE业务系统的网络架构",
+            "target": "SDP(Session Description Protocol)协议",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SIP请求消息",
+            "en": "SIP Request Messages"
+        },
+        {
+            "title": "SIP响应消息",
+            "en": "SIP Response Messages"
+        },
+        {
+            "title": "SIP消息格式",
+            "en": "SIP Message Format"
+        },
+        {
+            "title": "SIP起始行",
+            "en": "SIP Start Line"
+        },
+        {
+            "title": "SIP消息头",
+            "en": "SIP Message Header"
+        },
+        {
+            "title": "通用头",
+            "en": "General Header"
+        },
+        {
+            "title": "Call-ID",
+            "en": "Call-ID"
+        },
+        {
+            "title": "From",
+            "en": "From"
+        },
+        {
+            "title": "To",
+            "en": "To"
+        },
+        {
+            "title": "Via",
+            "en": "Via"
+        },
+        {
+            "title": "Contact",
+            "en": "Contact"
+        },
+        {
+            "title": "Expires",
+            "en": "Expires"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SIP请求消息",
+            "target": "SIP起始行",
+            "type": "包含"
+        },
+        {
+            "source": "SIP请求消息",
+            "target": "SIP消息头",
+            "type": "包含"
+        },
+        {
+            "source": "SIP响应消息",
+            "target": "SIP起始行",
+            "type": "包含"
+        },
+        {
+            "source": "SIP响应消息",
+            "target": "SIP消息头",
+            "type": "包含"
+        },
+        {
+            "source": "SIP消息头",
+            "target": "通用头",
+            "type": "包含"
+        },
+        {
+            "source": "通用头",
+            "target": "Call-ID",
+            "type": "包含"
+        },
+        {
+            "source": "通用头",
+            "target": "From",
+            "type": "包含"
+        },
+        {
+            "source": "通用头",
+            "target": "To",
+            "type": "包含"
+        },
+        {
+            "source": "通用头",
+            "target": "Via",
+            "type": "包含"
+        },
+        {
+            "source": "通用头",
+            "target": "Contact",
+            "type": "包含"
+        },
+        {
+            "source": "通用头",
+            "target": "Expires",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CSeq", "en": "CSeq"},
+        {"title": "Content-Type", "en": "Content-Type"},
+        {"title": "Content-Length", "en": "Content-Length"},
+        {"title": "Max-Forwards", "en": "Max-Forwards"},
+        {"title": "SIP消息体", "en": "SIP Message Body"},
+        {"title": "SDP协议", "en": "SDP Protocol"},
+        {"title": "会话描述类", "en": "Session Description Class"},
+        {"title": "媒体描述", "en": "Media Description"},
+        {"title": "VoLTE新网络架构", "en": "VoLTE New Network Architecture"},
+        {"title": "终端VoLTE测试平台", "en": "Terminal VoLTE Testing Platform"},
+        {"title": "EUTRA_PTC模块", "en": "EUTRA_PTC Module"},
+        {"title": "IP_PTC模块", "en": "IP_PTC Module"},
+        {"title": "适配层", "en": "System Adaptor"},
+        {"title": "SIP编解码模块", "en": "SIP Codec Module"},
+        {"title": "SRVCCprocessor模块", "en": "SRVCC Processor Module"},
+        {"title": "RCSserver模块", "en": "RCS Server Module"}
+    ],
+    "relations": [
+        {"source": "CSeq", "target": "SIP请求消息", "type": "包含"},
+        {"source": "CSeq", "target": "SIP响应消息", "type": "包含"},
+        {"source": "Content-Type", "target": "SIP消息体", "type": "包含"},
+        {"source": "Content-Length", "target": "SIP消息体", "type": "包含"},
+        {"source": "Max-Forwards", "target": "SIP请求消息", "type": "包含"},
+        {"source": "SIP消息体", "target": "SDP协议", "type": "包含"},
+        {"source": "SDP协议", "target": "会话描述类", "type": "包含"},
+        {"source": "SDP协议", "target": "媒体描述", "type": "包含"},
+        {"source": "VoLTE新网络架构", "target": "终端VoLTE测试平台", "type": "需要"},
+        {"source": "终端VoLTE测试平台", "target": "EUTRA_PTC模块", "type": "包含"},
+        {"source": "终端VoLTE测试平台", "target": "IP_PTC模块", "type": "包含"},
+        {"source": "终端VoLTE测试平台", "target": "适配层", "type": "包含"},
+        {"source": "IP_PTC模块", "target": "SIP编解码模块", "type": "包含"},
+        {"source": "IP_PTC模块", "target": "SRVCCprocessor模块", "type": "包含"},
+        {"source": "IP_PTC模块", "target": "RCSserver模块", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "IPtransmit模块", "en": "IPtransmit module"},
+        {"title": "IPSec模块", "en": "IPSec module"},
+        {"title": "DRB-MUX模块", "en": "DRB-MUX module"},
+        {"title": "VoLTE测试例开发研究", "en": "Research on VoLTE test case development"},
+        {"title": "协议一致性测试", "en": "Protocol conformance testing"}
+    ],
+    "relations": [
+        {"source": "IPtransmit模块", "target": "MUX/Filter模块", "type": "进一步处理"},
+        {"source": "IPtransmit模块", "target": "DRB-MUX模块", "type": "转发"},
+        {"source": "IPSec模块", "target": "IPtransmit模块", "type": "加密/解密"},
+        {"source": "IPSec模块", "target": "IKE协议", "type": "支持"},
+        {"source": "IPSec模块", "target": "ESP协议", "type": "支持"},
+        {"source": "IPSec模块", "target": "AH协议", "type": "支持"},
+        {"source": "DRB-MUX模块", "target": "IPSec模块", "type": "转发"},
+        {"source": "DRB-MUX模块", "target": "EUTRA_PTC模块", "type": "直接发往"},
+        {"source": "EUTRA_PTC模块", "target": "SIPCodec模块", "type": "处理"},
+        {"source": "SIPCodec模块", "target": "MUX/Filter模块", "type": "过滤"},
+        {"source": "SIPCodec模块", "target": "IPtransmit模块", "type": "转发"},
+        {"source": "TD-LTE系统模拟器", "target": "DRB-MUX模块", "type": "发送"},
+        {"source": "TD-LTE系统模拟器", "target": "IPSec模块", "type": "发送"},
+        {"source": "测试例开发流程", "target": "3GPP协议预研", "type": "包括"},
+        {"source": "测试例开发流程", "target": "测试例和测试平台代码调试", "type": "包括"},
+        {"source": "测试例开发流程", "target": "测试例协议一致性核对", "type": "包括"},
+        {"source": "测试例开发流程", "target": "测试例首次交付", "type": "包括"},
+        {"source": "测试例开发流程", "target": "测试例及平台代码维护", "type": "包括"},
+        {"source": "测试例开发流程", "target": "测试例最终验收", "type": "包括"},
+        {"source": "协议一致性测试", "target": "黑盒测试", "type": "一种"},
+        {"source": "协议一致性测试", "target": "测试系统", "type": "连接"},
+        {"source": "协议一致性测试", "target": "被测系统", "type": "连接"},
+        {"source": "协议一致性测试", "target": "激励信号", "type": "发出"},
+        {"source": "协议一致性测试", "target": "反馈消息", "type": "接收"},
+        {"source": "协议一致性测试", "target": "协议要求", "type": "分析"},
+        {"source": "协议一致性测试", "target": "测试点", "type": "提取"},
+        {"source": "协议一致性测试", "target": "测试过程", "type": "关注"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "测试例开发过程", "en": "Test case development process"},
+        {"title": "TTCN-3语言", "en": "TTCN-3 language"},
+        {"title": "测试例验证方法", "en": "Test case verification method"},
+        {"title": "VoLTE网络架构", "en": "VoLTE network architecture"},
+        {"title": "IMS注册流程", "en": "IMS registration process"},
+        {"title": "鉴权测试例", "en": "Authentication test case"},
+        {"title": "语音被叫测试例", "en": "Voice call test case"},
+        {"title": "视频主叫测试例", "en": "Video call test case"},
+        {"title": "视频被叫测试例", "en": "Video call receiving test case"}
+    ],
+    "relations": [
+        {"source": "测试例开发过程", "target": "TTCN-3语言", "type": "包含关系"},
+        {"source": "测试例开发过程", "target": "VoLTE网络架构", "type": "包含关系"},
+        {"source": "测试例开发过程", "target": "测试例验证方法", "type": "包含关系"},
+        {"source": "VoLTE网络架构", "target": "IMS注册流程", "type": "包含关系"},
+        {"source": "测试例开发过程", "target": "IMS注册流程", "type": "包含关系"},
+        {"source": "测试例开发过程", "target": "鉴权测试例", "type": "包含关系"},
+        {"source": "测试例开发过程", "target": "语音被叫测试例", "type": "包含关系"},
+        {"source": "测试例开发过程", "target": "视频主叫测试例", "type": "包含关系"},
+        {"source": "测试例开发过程", "target": "视频被叫测试例", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "VoLTE业务",
+            "en": "VoLTE Service"
+        },
+        {
+            "title": "LTE注册",
+            "en": "LTE Registration"
+        },
+        {
+            "title": "IMS注册",
+            "en": "IMS Registration"
+        },
+        {
+            "title": "会话建立",
+            "en": "Session Establishment"
+        },
+        {
+            "title": "会话释放",
+            "en": "Session Release"
+        },
+        {
+            "title": "EUTRA小区",
+            "en": "EUTRA Cell"
+        },
+        {
+            "title": "SRB",
+            "en": "Signaling Radio Bearer"
+        },
+        {
+            "title": "DRB",
+            "en": "Data Radio Bearer"
+        },
+        {
+            "title": "空口",
+            "en": "Air Interface"
+        },
+        {
+            "title": "NAS",
+            "en": "Non-Access Stratum"
+        },
+        {
+            "title": "RRC",
+            "en": "Radio Resource Control"
+        },
+        {
+            "title": "鉴权",
+            "en": "Authentication"
+        },
+        {
+            "title": "安全模式",
+            "en": "Security Mode"
+        },
+        {
+            "title": "附着",
+            "en": "Attach"
+        }
+    ],
+    "relations": [
+        {
+            "source": "VoLTE业务",
+            "target": "LTE注册",
+            "type": "preparation"
+        },
+        {
+            "source": "VoLTE业务",
+            "target": "IMS注册",
+            "type": "preparation"
+        },
+        {
+            "source": "VoLTE业务",
+            "target": "会话建立",
+            "type": "process"
+        },
+        {
+            "source": "VoLTE业务",
+            "target": "会话释放",
+            "type": "process"
+        },
+        {
+            "source": "LTE注册",
+            "target": "EUTRA小区",
+            "type": "preparation"
+        },
+        {
+            "source": "EUTRA小区",
+            "target": "SRB",
+            "type": "configuration"
+        },
+        {
+            "source": "EUTRA小区",
+            "target": "DRB",
+            "type": "configuration"
+        },
+        {
+            "source": "EUTRA小区",
+            "target": "空口",
+            "type": "configuration"
+        },
+        {
+            "source": "LTE注册",
+            "target": "NAS",
+            "type": "process"
+        },
+        {
+            "source": "NAS",
+            "target": "鉴权",
+            "type": "process"
+        },
+        {
+            "source": "NAS",
+            "target": "安全模式",
+            "type": "process"
+        },
+        {
+            "source": "NAS",
+            "target": "接入层安全模式",
+            "type": "process"
+        },
+        {
+            "source": "LTE注册",
+            "target": "RRC",
+            "type": "process"
+        },
+        {
+            "source": "RRC",
+            "target": "附着",
+            "type": "process"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "终端注册流程中的RRC连接建立过程", "en": "RRC connection establishment process in terminal registration process"},
+        {"title": "注册流程中的非接入层鉴权、非接入层安全模式和接入层安全模式的激活", "en": "Activation of non-access layer authentication, non-access layer security mode and access layer security mode in registration process"},
+        {"title": "RRC连接重配置和终端附着", "en": "RRC connection reconfiguration and terminal attachment"},
+        {"title": "IMS注册流程的设计与实现", "en": "Design and implementation of IMS registration process"},
+        {"title": "鉴权测试例的设计与实现", "en": "Design and implementation of authentication test cases"}
+    ],
+    "relations": [
+        {"source": "终端注册流程中的RRC连接建立过程", "target": "注册流程中的非接入层鉴权、非接入层安全模式和接入层安全模式的激活", "type": "包含"},
+        {"source": "注册流程中的非接入层鉴权、非接入层安全模式和接入层安全模式的激活", "target": "RRC连接重配置和终端附着", "type": "包含"},
+        {"source": "IMS注册流程的设计与实现", "target": "鉴权测试例的设计与实现", "type": "并列"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "测试目的",
+            "en": "Test purpose"
+        },
+        {
+            "title": "初始条件",
+            "en": "Initial conditions"
+        },
+        {
+            "title": "测试步骤",
+            "en": "Test steps"
+        },
+        {
+            "title": "测试例的TTCN-3实现",
+            "en": "TTCN-3 implementation of the test case"
+        }
+    ],
+    "relations": [
+        {
+            "source": "测试目的",
+            "target": "测试步骤",
+            "type": "包含"
+        },
+        {
+            "source": "测试目的",
+            "target": "初始条件",
+            "type": "包含"
+        },
+        {
+            "source": "测试例的TTCN-3实现",
+            "target": "测试步骤",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "fl_Generate!nvalidNonce()", "en": "fl_Generate!nvalidNonce()"},
+        {"title": "f_IMS_CC_StartSignalling()", "en": "f_IMS_CC_StartSignalling()"},
+        {"title": "TS34.229-1", "en": "TS34.229-1"},
+        {"title": "IMS_REGISTER_InitialRequest()", "en": "IMS_REGISTER_InitialRequest()"},
+        {"title": "IMS_RoutingInfo_ULtoDL()", "en": "IMS_RoutingInfo_ULtoDL()"},
+        {"title": "IMS_Register_SecurityInit()", "en": "IMS_Register_SecurityInit()"},
+        {"title": "IMS_Register_GetSecurityClientParams()", "en": "IMS_Register_GetSecurityClientParams()"},
+        {"title": "f.IMS_REGISTER_InitialRequestO", "en": "f.IMS_REGISTER_InitialRequestO"},
+        {"title": "f_IMS_Register_SecurityInit()", "en": "f_IMS_Register_SecurityInit()"},
+        {"title": "f^IMS_Register_GetSecurityClientParams()", "en": "f^IMS_Register_GetSecurityClientParams()"},
+        {"title": "nMS_REGISTER_RequestWithSpecificAuth()", "en": "nMS_REGISTER_RequestWithSpecificAuth()"},
+        {"title": "a_IgnoreFurtherRegistration()", "en": "a_IgnoreFurtherRegistration()"},
+        {"title": "fl_CheckSecurityClientParams()", "en": "fl_CheckSecurityClientParams()"},
+        {"title": "IMS_Server.send()", "en": "IMS_Server.send()"},
+        {"title": "OMS_TestBody_Set()", "en": "OMS_TestBody_Set()"},
+        {"title": "f.IMS_CC_Postamble()", "en": "f.IMS_CC_Postamble()"},
+        {"title": "_OutputTTCNLog()", "en": "_OutputTTCNLog()"},
+        {"title": "语音被叫测试例", "en": "语音被叫测试例"},
+        {"title": "volte应用", "en": "volte应用"},
+        {"title": "IMS多媒体通话", "en": "IMS多媒体通话"},
+        {"title": "SIP信令交互", "en": "SIP信令交互"},
+        {"title": "SDP内容", "en": "SDP内容"},
+        {"title": "ISIM", "en": "ISIM"},
+        {"title": "USIM", "en": "USIM"},
+        {"title": "P-CSCF", "en": "P-CSCF"},
+        {"title": "IMPI", "en": "IMPI"},
+        {"title": "IMSAKA算法", "en": "IMSAKA算法"},
+        {"title": "AKAV1-MD5验证", "en": "AKAV1-MD5验证"},
+        {"title": "注册", "en": "注册"},
+        {"title": "挂机", "en": "挂机"}
+    ],
+    "relations": [
+        {"source": "fl_Generate!nvalidNonce()", "target": "f_IMS_CC_StartSignalling()", "type": "调用"},
+        {"source": "f_IMS_CC_StartSignalling()", "target": "TS34.229-1", "type": "遵循"},
+        {"source": "IMS_REGISTER_InitialRequest()", "target": "f.IMS_REGISTER_InitialRequestO", "type": "调用"},
+        {"source": "IMS_RoutingInfo_ULtoDL()", "target": "f.IMS_Register_SecurityInit()", "type": "调用"},
+        {"source": "IMS_Register_SecurityInit()", "target": "f^IMS_Register_GetSecurityClientParams()", "type": "调用"},
+        {"source": "f.IMS_REGISTER_InitialRequestO", "target": "IMS_RoutingInfo_ULtoDL()", "type": "赋值"},
+        {"source": "f.IMS_Register_SecurityInit()", "target": "IMS_Register_SecurityInit()", "type": "赋值"},
+        {"source": "f^IMS_Register_GetSecurityClientParams()", "target": "IMS_Register_GetSecurityClientParams()", "type": "赋值"},
+        {"source": "nMS_REGISTER_RequestWithSpecificAuth()", "target": "a_IgnoreFurtherRegistration()", "type": "调用"},
+        {"source": "fl_CheckSecurityClientParams()", "target": "nMS_REGISTER_RequestWithSpecificAuth()", "type": "调用"},
+        {"source": "IMS_Server.send()", "target": "nMS_REGISTER_RequestWithSpecificAuth()", "type": "调用"},
+        {"source": "OMS_TestBody_Set()", "target": "f.IMS_CC_Postamble()", "type": "调用"},
+        {"source": "_OutputTTCNLog()", "target": "OMS_TestBody_Set()", "type": "调用"},
+        {"source": "语音被叫测试例", "target": "volte应用", "type": "属于"},
+        {"source": "语音被叫测试例", "target": "IMS多媒体通话", "type": "属于"},
+        {"source": "SIP信令交互", "target": "语音被叫测试例", "type": "测试目的"},
+        {"source": "SDP内容", "target": "SIP信令交互", "type": "验证"},
+        {"source": "ISIM", "target": "初始条件", "type": "包含"},
+        {"source": "USIM", "target": "初始条件", "type": "包含"},
+        {"source": "P-CSCF", "target": "初始条件", "type": "存在"},
+        {"source": "IMPI", "target": "初始条件", "type": "相关联"},
+        {"source": "IMSAKA算法", "target": "初始条件", "type": "共享秘钥"},
+        {"source": "AKAV1-MD5验证", "target": "初始条件", "type": "完成"},
+        {"source": "注册", "target": "初始条件", "type": "完成"},
+        {"source": "挂机", "target": "测试目的", "type": "验证"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "SIP消息", "en": "SIP message"},
+        {"title": "INVITE", "en": "INVITE"},
+        {"title": "100Trying", "en": "100 Trying"},
+        {"title": "183SessionProgress", "en": "183 Session Progress"},
+        {"title": "PRACK", "en": "PRACK"},
+        {"title": "SDP", "en": "SDP"},
+        {"title": "UPDATE", "en": "UPDATE"},
+        {"title": "200OK", "en": "200 OK"},
+        {"title": "180Ringing", "en": "180 Ringing"},
+        {"title": "ACK", "en": "ACK"},
+        {"title": "BYE", "en": "BYE"}
+    ],
+    "relations": [
+        {"source": "SS", "target": "UE", "type": "发送"},
+        {"source": "SS", "target": "UE", "type": "收到"},
+        {"source": "UE", "target": "SS", "type": "回复"},
+        {"source": "SS", "target": "UE", "type": "确认"},
+        {"source": "UE", "target": "SS", "type": "包含"},
+        {"source": "SS", "target": "UE", "type": "建立"},
+        {"source": "SS", "target": "UE", "type": "结束"},
+        {"source": "UE", "target": "SS", "type": "最终响应"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "函数JIMS_MTCallSetup_AnnexC11_INVITE()配置INVITE消息",
+            "en": "Function JIMS_MTCallSetup_AnnexC11_INVITE() configures the INVITE message"
+        },
+        {
+            "title": "函数f_IMS_MTCallSetup_AnnexCll_Stepsl_3()执行发送INVITE到接收183SessionProgress的过程",
+            "en": "Function f_IMS_MTCallSetup_AnnexCll_Stepsl_3() executes the process of sending INVITE to receive 183 Session Progress"
+        },
+        {
+            "title": "函数f^MessageHeaderGetContactSipUrl()从183SessionProgress的消息头中获取接收方的URL",
+            "en": "Function f^MessageHeaderGetContactSipUrl() gets the URL of the receiver from the header of 183 Session Progress"
+        },
+        {
+            "title": "第三组是测试例第四步到最后挂机的全部过程",
+            "en": "The third group is the entire process from the fourth step of the test case to hanging up"
+        },
+        {
+            "title": "函数JIMS_CC_TriggerDedicatedBearerActivation()触发IPCAN激活第二条PDP",
+            "en": "Function JIMS_CC_TriggerDedicatedBearerActivation() triggers the activation of the second PDP for IPCAN"
+        },
+        {
+            "title": "函数f_IMS_MTCallSetup_AnnexC11_Steps4_l2()执行从接收到183SessionProgress到通话建立完成的所有信令流程",
+            "en": "Function f_IMS_MTCallSetup_AnnexC11_Steps4_l2() executes all the signaling processes from receiving 183 Session Progress to the completion of the call setup"
+        },
+        {
+            "title": "函数f_IMS_CallReleaseMT()释放语音被叫通话流程",
+            "en": "Function f_IMS_CallReleaseMT() releases the call process of the voice callee"
+        },
+        {
+            "title": "测试例运行完成,调用函数f_IMS_TestBody_Set()",
+            "en": "The test case is completed, and the function f_IMS_TestBody_Set() is called"
+        },
+        {
+            "title": "调用函数fLIMS_CC_Postamble()执行测试例结束的通用流程",
+            "en": "The function fLIMS_CC_Postamble() is called to execute the common process of ending the test case"
+        },
+        {
+            "title": "视频主叫测试例的设计与实现",
+            "en": "Design and implementation of the video calling test case"
+        },
+        {
+            "title": "volte不仅使得语音通话的体验更好,更重要的是引入了继语音、短信之后新的运营商底层支持的多媒体通信方式,即视频通话",
+            "en": "Volte not only improves the experience of voice calls, but more importantly, introduces a new multimedia communication method supported by the underlying operators after voice and SMS, namely video calls"
+        },
+        {
+            "title": "视频主叫测试例由3GPPTS34.229-1的12.22节的MOMTSIVideocall所定义",
+            "en": "The video calling test case is defined by MOMTSIVideocall in section 12.22 of 3GPPTS34.229-1"
+        },
+        {
+            "title": "本测试例测试目的如下",
+            "en": "The test case aims to"
+        },
+        {
+            "title": "验证当发起视频主叫时,UE能否正确执行发起会话的SIP协议信令交换",
+            "en": "Verify whether the UE can correctly execute the SIP protocol signaling exchange when initiating a video call"
+        },
+        {
+            "title": "验证在SIP信令内部,UE是否正确执行SDP消息交互,这些SDP消息是为了协商媒体和指示预留资源的先决条件的",
+            "en": "Verify whether the UE correctly performs SDP message interaction within the SIP signaling, which is a prerequisite for negotiating media and indicating reserved resources"
+        },
+        {
+            "title": "验证UE是否可以正确结束视频会话",
+            "en": "Verify whether the UE can correctly end the video call"
+        },
+        {
+            "title": "UE可以包含SIM应用、ISIM应用和USIM应用,或者只包含USIM关于UICC的应用",
+            "en": "The UE can include SIM applications, ISIM applications, and USIM applications, or only USIM applications related to UICC"
+        },
+        {
+            "title": "UE经过一系列步骤已经驻留到EUTRA小区,且已发现P-CSCF并已经注册到IMS服务",
+            "en": "The UE has resided in the EUTRA cell after a series of steps, and has discovered the P-CSCF and registered with the IMS service"
+        },
+        {
+            "title": "SS配置了与UE上的UICC±配置的IMS私有用户身份(IMPI)相关联的IMSAKA算法的共享秘钥",
+            "en": "The SS is configured with a shared secret key of the IMSAKA algorithm associated with the IMS private user identity (IMPI) configured on the UICC± of the UE"
+        },
+        {
+            "title": "SS己经完成AKAV1-MD5验证并且接受注册(IMS安全)",
+            "en": "The SS has completed the AKAV1-MD5 verification and accepted the registration (IMS security)"
+        },
+        {
+            "title": "测试步骤如下",
+            "en": "The test steps are as follows"
+        },
+        {
+            "title": "UE发起视频寻呼,该会话呼叫配置在SS上的px_CalleeUri分量,根据UE的支持情况可以是SIP地址或者是电话号码,并且该分量可能包含拨号串指示全球的、本地的、地理上本地的电话号码",
+            "en": "The UE initiates a video call, and the call is configured on the SS's px_CalleeUri component. Depending on the UE's support, it can be a SIP address or a phone number, and the component may contain a dial string indicating a global, local, or geographically local phone number"
+        },
+        {
+            "title": "SS等待UE发送包含首条SDP邀请的INVITE请求",
+            "en": "The SS waits for the INVITE request containing the first SDP invitation sent by the UE"
+        },
+        {
+            "title": "UE发送INVITE请求到SS",
+            "en": "The UE sends the INVITE request to the SS"
+        },
+        {
+            "title": "SS对UE请求回复一条100Tryingo",
+            "en": "The SS replies to the UE's request with a 100 Trying message"
+        },
+        {
+            "title": "SS接下来继续回复一条183SessionProgresso",
+            "en": "The SS then replies with a 183 Session Progress message"
+        },
+        {
+            "title": "SS等待UE发送PRACK请求,该请求中可能包含第二条SDP邀请",
+            "en": "The SS waits for the PRACK request sent by the UE, which may contain the second SDP invitation"
+        },
+        {
+            "title": "SS回复PRACK以200OK",
+            "en": "The SS replies to the PRACK request with a 200 OK message"
+        },
+        {
+            "title": "SS等待UE发送UPDATE请求,该请求包含最后一次SDP邀请",
+            "en": "The SS waits for the UPDATE request sent by the UE, which contains the last SDP invitation"
+        },
+        {
+            "title": "SS回复UPDATE以200OK",
+            "en": "The SS replies to the UPDATE request with a 200 OK message"
+        },
+        {
+            "title": "SS回复INVITE以180Ringing",
+            "en": "The SS replies to the INVITE request with a 180 Ringing message"
+        },
+        {
+            "title": "SS等待UE发送PRACK请求",
+            "en": "The SS waits for the PRACK request sent by the UE"
+        },
+        {
+            "title": "SS回复PRACK一条200OKo",
+            "en": "The SS replies to the PRACK request with a 200 OK message"
+        },
+        {
+            "title": "SS回复INVITE—条200OKo",
+            "en": "The SS replies to the INVITE request with a 200 OK message"
+        },
+        {
+            "title": "SS等待UE发送针对200OK的ACK",
+            "en": "The SS waits for the ACK sent by the UE for the 200 OK message"
+        },
+        {
+            "title": "UE发送BYE",
+            "en": "The UE sends a BYE message"
+        },
+        {
+            "title": "SS接收到BYE回复200OK",
+            "en": "The SS receives the BYE message and replies with a 200 OK message"
+        }
+    ],
+    "relations": [
+        {
+            "source": "函数JIMS_MTCallSetup_AnnexC11_INVITE()配置INVITE消息",
+            "target": "函数f_IMS_MTCallSetup_AnnexCll_Stepsl_3()执行发送INVITE到接收183SessionProgress的过程",
+            "type": "包含"
+        },
+        {
+            "source": "函数f_IMS_MTCallSetup_AnnexCll_Stepsl_3()执行发送INVITE到接收183SessionProgress的过程",
+            "target": "函数f^MessageHeaderGetContactSipUrl()从183SessionProgress的消息头中获取接收方的URL",
+            "type": "包含"
+        },
+        {
+            "source": "第三组是测试例第四步到最后挂机的全部过程",
+            "target": "函数JIMS_CC_TriggerDedicatedBearerActivation()触发IPCAN激活第二条PDP",
+            "type": "包含"
+        },
+        {
+            "source": "函数JIMS_CC_TriggerDedicatedBearerActivation()触发IPCAN激活第二条PDP",
+            "target": "函数f_IMS_MTCallSetup_AnnexC11_Steps4_l2()执行从接收到183SessionProgress到通话建立完成的所有信令流程",
+            "type": "包含"
+        },
+        {
+            "source": "函数f_IMS_MTCallSetup_AnnexC11_Steps4_l2()执行从接收到183SessionProgress到通话建立完成的所有信令流程",
+            "target": "函数f_IMS_CallReleaseMT()释放语音被叫通话流程",
+            "type": "包含"
+        },
+        {
+            "source": "测试例运行完成,调用函数f_IMS_TestBody_Set()",
+            "target": "调用函数fLIMS_CC_Postamble()执行测试例结束的通用流程",
+            "type": "包含"
+        },
+        {
+            "source{
+    "knowledge_points": [
+        {
+            "title": "函数JIMS_MTCallSetup_AnnexC11_INVITE()配置INVITE消息",
+            "en": "Function JIMS_MTCallSetup_AnnexC11_INVITE() configures the INVITE message"
+        },
+        {
+            "title": "函数f_IMS_MTCallSetup_AnnexCll_Stepsl_3()执行发送INVITE到接收183SessionProgress的过程",
+            "en": "Function f_IMS_MTCallSetup_AnnexCll_Stepsl_3() executes the process of sending INVITE to receive 183 Session Progress"
+        },
+        {
+            "title": "函数f^MessageHeaderGetContactSipUrl()从183SessionProgress的消息头中获取接收方的URL",
+            "en": "Function f^MessageHeaderGetContactSipUrl() gets the URL of the receiver from the header of 183 Session Progress"
+        },
+        {
+            "title": "第三组是测试例第四步到最后挂机的全部过程",
+            "en": "The third group is the entire process from the fourth step of the test case to hanging up"
+        },
+        {
+            "title": "函数f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MT_SpeechCall)触发IPCAN激活第二条PDP",
+            "en": "Function f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MT_SpeechCall) triggers the activation of the second PDP for IPCAN"
+        },
+        {
+            "title": "函数f_IMS_MTCallSetup_AnnexC11_Steps4_l2()执行从接收到183SessionProgress到通话建立完成的所有信令流程",
+            "en": "Function f_IMS_MTCallSetup_AnnexC11_Steps4_l2() executes all the signaling processes from receiving 183 Session Progress to the completion of the call establishment"
+        },
+        {
+            "title": "函数f_IMS_CallReleaseMT()释放语音被叫通话流程",
+            "en": "Function f_IMS_CallReleaseMT() releases the call process of the voice callee"
+        },
+        {
+            "title": "测试例运行完成,调用函数f_IMS_TestBody_Set()",
+            "en": "The test case is completed, and the function f_IMS_TestBody_Set() is called"
+        },
+        {
+            "title": "调用函数fLIMS_CC_Postamble()执行测试例结束的通用流程",
+            "en": "The function fLIMS_CC_Postamble() is called to execute the common process of ending the test case"
+        },
+        {
+            "title": "视频主叫测试例的设计与实现",
+            "en": "Design and implementation of the video calling test case"
+        },
+        {
+            "title": "视频通话是V6LTE最有代表性的功能",
+            "en": "Video calling is the most representative feature of V6LTE"
+        },
+        {
+            "title": "视频主叫测试例由3GPPTS34.229-1的12.22节的MOMTSIVideocall所定义",
+            "en": "The video calling test case is defined by MOMTSIVideocall in section 12.22 of 3GPPTS34.229-1"
+        },
+        {
+            "title": "本测试例测试目的如下",
+            "en": "The test objectives of this test case are as follows"
+        },
+        {
+            "title": "验证当发起视频主叫时,UE能否正确执行发起会话的SIP协议信令交换",
+            "en": "Verify whether the UE can correctly execute the SIP protocol signaling exchange when initiating a video call"
+        },
+        {
+            "title": "验证在SIP信令内部,UE是否正确执行SDP消息交互",
+            "en": "Verify whether the UE correctly executes the SDP message interaction within the SIP signaling"
+        },
+        {
+            "title": "验证UE是否可以正确结束视频会话",
+            "en": "Verify whether the UE can correctly end the video call"
+        },
+        {
+            "title": "UE可以包含SIM应用、ISIM应用和USIM应用,或者只包含USIM关于UICC的应用",
+            "en": "The UE can include SIM applications, ISIM applications, and USIM applications, or only USIM applications related to UICC"
+        },
+        {
+            "title": "UE经过一系列步骤已经驻留到EUTRA小区,且已发现P-CSCF并已经注册到IMS服务",
+            "en": "The UE has resided in the EUTRA cell after a series of steps, and has discovered the P-CSCF and registered with the IMS service"
+        },
+        {
+            "title": "SS配置了与UE上的UICC±配置的IMS私有用户身份(IMPI)相关联的IMSAKA算法的共享秘钥",
+            "en": "The SS is configured with a shared secret key of the IMSAKA algorithm associated with the IMS private user identity (IMPI) configured on the UICC± of the UE"
+        },
+        {
+            "title": "SS己经完成AKAV1-MD5验证并且接受注册(IMS安全)",
+            "en": "The SS has completed the AKAV1-MD5 verification and accepted the registration (IMS security)"
+        },
+        {
+            "title": "测试步骤如下",
+            "en": "The test steps are as follows"
+        },
+        {
+            "title": "UE发起视频寻呼,该会话呼叫配置在SS上的px_CalleeUri分量",
+            "en": "The UE initiates a video call, and the call is configured in the px_CalleeUri component on the SS"
+        },
+        {
+            "title": "SS等待UE发送包含首条SDP邀请的INVITE请求",
+            "en": "The SS waits for the INVITE request containing the first SDP invitation sent by the UE"
+        },
+        {
+            "title": "UE发送INVITE请求到SS",
+            "en": "The UE sends the INVITE request to the SS"
+        },
+        {
+            "title": "SS对UE请求回复一条100Tryingo",
+            "en": "The SS replies to the UE request with a 100 Trying message"
+        },
+        {
+            "title": "SS接下来继续回复一条183SessionProgresso",
+            "en": "The SS then replies with a 183 Session Progress message"
+        },
+        {
+            "title": "SS等待UE发送PRACK请求,该请求中可能包含第二条SDP邀请",
+            "en": "The SS waits for the PRACK request sent by the UE, which may contain the second SDP invitation"
+        },
+        {
+            "title": "SS回复PRACK以200OK",
+            "en": "The SS replies to the PRACK request with a 200 OK message"
+        },
+        {
+            "title": "SS等待UE发送UPDATE请求,该请求包含最后一次SDP邀请",
+            "en": "The SS waits for the UPDATE request sent by the UE, which contains the last SDP invitation"
+        },
+        {
+            "title": "SS回复UPDATE以200OK",
+            "en": "The SS replies to the UPDATE request with a 200 OK message"
+        },
+        {
+            "title": "SS回复INVITE以180Ringing",
+            "en": "The SS replies to the INVITE request with a 180 Ringing message"
+        },
+        {
+            "title": "SS等待UE发送PRACK请求",
+            "en": "The SS waits for the PRACK request sent by the UE"
+        },
+        {
+            "title": "SS回复PRACK一条200OKo",
+            "en": "The SS replies to the PRACK request with a 200 OK message"
+        },
+        {
+            "title": "SS回复INVITE—条200OKo",
+            "en": "The SS replies to the INVITE request with a 200 OK message"
+        },
+        {
+            "title": "SS等待UE发送针对200OK的ACK",
+            "en": "The SS waits for the ACK sent by the UE for the 200 OK message"
+        },
+        {
+            "title": "UE发送BYE",
+            "en": "The UE sends a BYE message"
+        },
+        {
+            "title": "SS接收到BYE回复200OK",
+            "en": "The SS receives the BYE message and replies with a 200 OK message"
+        }
+    ],
+    "relations": [
+        {
+            "source": "函数JIMS_MTCallSetup_AnnexC11_INVITE()配置INVITE消息",
+            "target": "函数f_IMS_MTCallSetup_AnnexCll_Stepsl_3()执行发送INVITE到接收183SessionProgress的过程",
+            "type": "包含"
+        },
+        {
+            "source": "函数f_IMS_MTCallSetup_AnnexCll_Stepsl_3()执行发送INVITE到接收183SessionProgress的过程",
+            "target": "函数f^MessageHeaderGetContactSipUrl()从183SessionProgress的消息头中获取接收方的URL",
+            "type": "包含"
+        },
+        {
+            "source": "第三组是测试例第四步到最后挂机的全部过程",
+            "target": "函数f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MT_SpeechCall)触发IPCAN激活第二条PDP",
+            "type": "包含"
+        },
+        {
+            "source": "函数f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MT_SpeechCall)触发IPCAN激活第二条PDP",
+            "target": "函数f_IMS_MTCallSetup_AnnexC11_Steps4_l2()执行从接收到183SessionProgress到通话建立完成的所有信令流程",
+            "type": "包含"
+        },
+        {
+            "source": "函数f_IMS_MTCallSetup_AnnexC11_Steps4_l2()执行从接收到183SessionProgress到通话建立完成的所有信令流程",
+            "target": "函数f_IMS_CallReleaseMT()释放语音被叫通话流程",
+            "type": "包含"
+        },
+        {
+            "source": "测试例运行完成,调用函数f_IMS_TestBody_Set()",
+            "target": "调用函数fLIMS_CC_Postamble()执行测试例结束的通用流程",
+            "type": "包含"
+        },
+        {
+            "source": "视频主叫测试例的设计与实现",
+            "target": "视频通话是V6LTE最有代表性的功能",
+            "type": "包含"
+        },
+        {
+            "source": "视频主叫测试例的设计与实现",
+            "target": "视频主叫测试例由3GPPTS34.229-1的12.22节的MOMTSIVideocall所定义",
+            "type": "包含"
+        },
+        {
+            "source": "本测试例测试目的如下",
+            "target": "验证当发起视频主叫时,UE能否正确执行发起会话的SIP协议信令交换",
+            "type": "包含"
+        },
+       {
+    "knowledge_points": [
+        {"title": "SDP邀请", "en": "SDP Invitation"},
+        {"title": "专用EPS承载", "en": "Dedicated EPS bearer"},
+        {"title": "180Ringing", "en": "180 Ringing"},
+        {"title": "PRACK", "en": "PRACK"},
+        {"title": "200OK", "en": "200 OK"},
+        {"title": "INVITE", "en": "INVITE"},
+        {"title": "ACK", "en": "ACK"},
+        {"title": "BYE", "en": "BYE"},
+        {"title": "TTCN-3实现", "en": "TTCN-3 Implementation"},
+        {"title": "VoLTE鉴权测试例", "en": "VoLTE Authentication Test Case"},
+        {"title": "EUTRA_PTC", "en": "EUTRA_PTC"},
+        {"title": "IMS_PTC", "en": "IMS_PTC"},
+        {"title": "IP_PTC", "en": "IP_PTC"},
+        {"title": "MTC", "en": "MTC"},
+        {"title": "视频主叫测试例", "en": "Video Caller Test Case"},
+        {"title": "视频被叫测试例", "en": "Video Callee Test Case"}
+    ],
+    "relations": [
+        {"source": "6", "target": "7", "type": "SDP邀请"},
+        {"source": "7", "target": "8", "type": "SDP邀请"},
+        {"source": "8", "target": "UPDATE(回复)", "type": "SDP邀请"},
+        {"source": "9", "target": "10", "type": "180Ringing"},
+        {"source": "10", "target": "11", "type": "PRACK"},
+        {"source": "11", "target": "200OK", "type": "PRACK"},
+        {"source": "12", "target": "200OK", "type": "INVITE"},
+        {"source": "13", "target": "ACK", "type": "200OK"},
+        {"source": "14", "target": "15", "type": "BYE"},
+        {"source": "TTCN-3实现", "target": "VoLTE鉴权测试例", "type": "实现"},
+        {"source": "VoLTE鉴权测试例", "target": "EUTRA_PTC", "type": "测试成分"},
+        {"source": "VoLTE鉴权测试例", "target": "IMS_PTC", "type": "测试成分"},
+        {"source": "VoLTE鉴权测试例", "target": "IP_PTC", "type": "测试成分"},
+        {"source": "MTC", "target": "EUTRA_PTC", "type": "测试成分"},
+        {"source": "MTC", "target": "IMS_PTC", "type": "测试成分"},
+        {"source": "MTC", "target": "IP_PTC", "type": "测试成分"},
+        {"source": "IMS_PTC", "target": "EUTRA_PTC", "type": "转发"},
+        {"source": "EUTRA_PTC", "target": "IP_PTC", "type": "转发"},
+        {"source": "IP_PTC", "target": "IMS_PTC", "type": "转发"},
+        {"source": "视频主叫测试例", "target": "视频被叫测试例", "type": "测试例"},
+        {"source": "视频被叫测试例", "target": "MTMTSIVideocall", "type": "测试例"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "视频呼叫", "en": "Video Call"},
+        {"title": "SIP信令流程", "en": "SIP Signaling Process"},
+        {"title": "SDP消息", "en": "SDP Message"},
+        {"title": "挂机", "en": "Hang Up"}
+    ],
+    "relations": [
+        {"source": "视频呼叫", "target": "SIP信令流程", "type": "包含"},
+        {"source": "SIP信令流程", "target": "SDP消息", "type": "包含"},
+        {"source": "视频呼叫", "target": "挂机", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "f^IMS_CaHReleaseMT()", "en": ""},
+        {"title": "f_IMS_MTCallSetup_Video_Receivel83()", "en": ""},
+        {"title": "f_MessageHeader_GetContactSipUrl()", "en": ""},
+        {"title": "f_IMS_MTCallSetup_AnnexC26_Steps5_l3()", "en": ""},
+        {"title": "f_IMS_CallReleaseMO()", "en": ""},
+        {"title": "fJMS_CallReleaseMT()", "en": ""},
+        {"title": "图3-11视频被叫测试例实现流程", "en": "Figure 3-11 Implementation process of video callee test case"},
+        {"title": "本章小结", "en": "Summary of this chapter"},
+        {"title": "3GPPTS34.229-1协议", "en": "3GPPTS34.229-1 Protocol"},
+        {"title": "3GPPTS36.523-1规定", "en": "3GPPTS36.523-1 Regulations"},
+        {"title": "VoLTE测试例", "en": "VoLTE test case"},
+        {"title": "EUTRA注册", "en": "EUTRA registration"},
+        {"title": "IMS注册", "en": "IMS registration"},
+        {"title": "鉴权测试例", "en": "Authentication test case"},
+        {"title": "语音被叫测试例", "en": "Voice callee test case"},
+        {"title": "视频主叫测试例", "en": "Video caller test case"},
+        {"title": "视频被叫测试例", "en": "Video callee test case"},
+        {"title": "TTCN-3语言", "en": "TTCN-3 language"},
+        {"title": "自动化测试结果", "en": "Automated test results"}
+    ],
+    "relations": [
+        {"source": "f^IMS_CaHReleaseMT()", "target": "f_IMS_MTCallSetup_Video_Receivel83()", "type": "function_call"},
+        {"source": "f^IMS_CaHReleaseMT()", "target": "f_MessageHeader_GetContactSipUrl()", "type": "function_call"},
+        {"source": "f_IMS_MTCallSetup_Video_Receivel83()", "target": "183SessionProgress", "type": "parameter"},
+        {"source": "f_MessageHeader_GetContactSipUrl()", "target": "URL information", "type": "parameter"},
+        {"source": "f_IMS_MTCallSetup_AnnexC26_Steps5_l3()", "target": "PRACK", "type": "parameter"},
+        {"source": "f_IMS_MTCallSetup_AnnexC26_Steps5_l3()", "target": "200OK", "type": "parameter"},
+        {"source": "f_IMS_CallReleaseMO()", "target": "", "type": "function_call"},
+        {"source": "fJMS_CallReleaseMT()", "target": "f_MessageHeader_GetContactSipUrl()", "type": "parameter"},
+        {"source": "图3-11视频被叫测试例实现流程", "target": "", "type": "description"},
+        {"source": "3GPPTS34.229-1协议", "target": "", "type": "reference"},
+        {"source": "3GPPTS36.523-1规定", "target": "", "type": "reference"},
+        {"source": "VoLTE测试例", "target": "", "type": "description"},
+        {"source": "EUTRA注册", "target": "", "type": "description"},
+        {"source": "IMS注册", "target": "", "type": "description"},
+        {"source": "鉴权测试例", "target": "", "type": "description"},
+        {"source": "语音被叫测试例", "target": "", "type": "description"},
+        {"source": "视频主叫测试例", "target": "", "type": "description"},
+        {"source": "视频被叫测试例", "target": "", "type": "description"},
+        {"source": "TTCN-3语言", "target": "", "type": "description"},
+        {"source": "自动化测试结果", "target": "", "type": "description"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "REGISTER(Cseq:1068384110)消息结构图",
+            "en": "REGISTER(Cseq:1068384110) message structure diagram"
+        },
+        {
+            "title": "测试点1通过",
+            "en": "Test point 1 passed"
+        },
+        {
+            "title": "REGISTER(Cseq:1068384111)消息结构图",
+            "en": "REGISTER(Cseq:1068384111) message structure diagram"
+        },
+        {
+            "title": "测试点2通过",
+            "en": "Test point 2 passed"
+        },
+        {
+            "title": "403Forbidden(Cseq:1068384111)消息结构图",
+            "en": "403Forbidden(Cseq:1068384111) message structure diagram"
+        },
+        {
+            "title": "测试结果的TSManager软件截图",
+            "en": "TSManager software screenshot of test result"
+        },
+        {
+            "title": "语音被叫测试例执行结果",
+            "en": "Execution result of voice call test case"
+        },
+        {
+            "title": "第一条INVITE(Cseq:4711)消息结构图",
+            "en": "First INVITE(Cseq:4711) message structure diagram"
+        }
+    ],
+    "relations": []
+}{
+    "knowledge_points": [
+        {
+            "title": "SIP协议",
+            "en": "SIP Protocol"
+        },
+        {
+            "title": "INVITE消息",
+            "en": "INVITE Message"
+        },
+        {
+            "title": "From字段",
+            "en": "From Field"
+        },
+        {
+            "title": "SDP回复",
+            "en": "SDP Response"
+        },
+        {
+            "title": "SessionProgress消息",
+            "en": "SessionProgress Message"
+        },
+        {
+            "title": "PRACK消息",
+            "en": "PRACK Message"
+        },
+        {
+            "title": "200OK消息",
+            "en": "200OK Message"
+        }
+    ],
+    "relations": [
+        {
+            "source": "INVITE消息",
+            "target": "From字段",
+            "type": "包含"
+        },
+        {
+            "source": "INVITE消息",
+            "target": "SDP回复",
+            "type": "包含"
+        },
+        {
+            "source": "SessionProgress消息",
+            "target": "INVITE消息",
+            "type": "关联"
+        },
+        {
+            "source": "PRACK消息",
+            "target": "SessionProgress消息",
+            "type": "关联"
+        },
+        {
+            "source": "200OK消息",
+            "target": "PRACK消息",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "4712PRACK", "en": ""},
+        {"title": "200OK(Cseq:4712)", "en": ""},
+        {"title": "UPDATE(Cseq:4713)", "en": ""},
+        {"title": "200OK(Cseq:4713)", "en": ""},
+        {"title": "180Ringing", "en": ""},
+        {"title": "200OK(Cseq:4711)", "en": ""},
+        {"title": "INVITE(Cseq:4711)", "en": ""}
+    ],
+    "relations": [
+        {"source": "4712PRACK", "target": "200OK(Cseq:4712)", "type": "related"},
+        {"source": "UPDATE(Cseq:4713)", "target": "200OK(Cseq:4713)", "type": "related"},
+        {"source": "200OK(Cseq:4712)", "target": "UPDATE(Cseq:4713)", "type": "related"},
+        {"source": "200OK(Cseq:4713)", "target": "UPDATE(Cseq:4713)", "type": "related"},
+        {"source": "200OK(Cseq:4711)", "target": "INVITE(Cseq:4711)", "type": "related"}
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}{
+    "knowledge_points": [
+        {
+            "title": "PRACK消息",
+            "en": "PRACK message"
+        },
+        {
+            "title": "200OK消息",
+            "en": "200OK message"
+        },
+        {
+            "title": "INVITE消息",
+            "en": "INVITE message"
+        },
+        {
+            "title": "ACK消息",
+            "en": "ACK message"
+        },
+        {
+            "title": "BYE消息",
+            "en": "BYE message"
+        },
+        {
+            "title": "100Trying消息",
+            "en": "100Trying message"
+        },
+        {
+            "title": "183SessionProgress消息",
+            "en": "183SessionProgress message"
+        }
+    ],
+    "relations": [
+        {
+            "source": "PRACK消息",
+            "target": "200OK消息",
+            "type": "回复"
+        },
+        {
+            "source": "INVITE消息",
+            "target": "100Trying消息",
+            "type": "可选信令"
+        },
+        {
+            "source": "INVITE消息",
+            "target": "183SessionProgress消息",
+            "type": "信令"
+        },
+        {
+            "source": "PRACK消息",
+            "target": "ACK消息",
+            "type": "响应"
+        },
+        {
+            "source": "BYE消息",
+            "target": "系统",
+            "type": "请求"
+        },
+        {
+            "source": "183SessionProgress消息",
+            "target": "UE",
+            "type": "响应"
+        },
+        {
+            "source": "UE",
+            "target": "200OK消息",
+            "type": "回复"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Encapsulation", "en": ""},
+        {"title": "Security Payload", "en": ""},
+        {"title": "User Datagram Protocol", "en": ""},
+        {"title": "Session Initiation Protocol", "en": ""},
+        {"title": "Status-Line", "en": ""},
+        {"title": "Message Header", "en": ""},
+        {"title": "Content-Length", "en": ""},
+        {"title": "CSeq", "en": ""},
+        {"title": "From", "en": ""},
+        {"title": "To", "en": ""},
+        {"title": "Via", "en": ""},
+        {"title": "Require", "en": ""},
+        {"title": "ACK", "en": ""},
+        {"title": "CANCEL", "en": ""},
+        {"title": "BYE", "en": ""},
+        {"title": "UPDATE", "en": ""},
+        {"title": "PRACK", "en": ""},
+        {"title": "MESSAGE", "en": ""},
+        {"title": "REFER", "en": ""},
+        {"title": "NOTIFY", "en": ""},
+        {"title": "INFO", "en": ""},
+        {"title": "Capture", "en": ""},
+        {"title": "Protocol Info", "en": ""},
+        {"title": "Ethernet II", "en": ""},
+        {"title": "Internet Protocol", "en": ""},
+        {"title": "SDP", "en": ""},
+        {"title": "Content-Type", "en": ""},
+        {"title": "Precondition", "en": ""},
+        {"title": "Message Body", "en": ""}
+    ],
+    "relations": [
+        {"source": "Encapsulation", "target": "Security Payload", "type": "包含"},
+        {"source": "User Datagram Protocol", "target": "Session Initiation Protocol", "type": "使用"},
+        {"source": "Session Initiation Protocol", "target": "Status-Line", "type": "包含"},
+        {"source": "Session Initiation Protocol", "target": "Message Header", "type": "包含"},
+        {"source": "Message Header", "target": "Content-Length", "type": "包含"},
+        {"source": "Message Header", "target": "CSeq", "type": "包含"},
+        {"source": "Message Header", "target": "From", "type": "包含"},
+        {"source": "Message Header", "target": "To", "type": "包含"},
+        {"source": "Message Header", "target": "Via", "type": "包含"},
+        {"source": "Message Header", "target": "Require", "type": "包含"},
+        {"source": "Require", "target": "ACK", "type": "包含"},
+        {"source": "Require", "target": "CANCEL", "type": "包含"},
+        {"source": "Require", "target": "BYE", "type": "包含"},
+        {"source": "Require", "target": "UPDATE", "type": "包含"},
+        {"source": "Require", "target": "PRACK", "type": "包含"},
+        {"source": "Require", "target": "MESSAGE", "type": "包含"},
+        {"source": "Require", "target": "REFER", "type": "包含"},
+        {"source": "Require", "target": "NOTIFY", "type": "包含"},
+        {"source": "Require", "target": "INFO", "type": "包含"},
+        {"source": "Capture", "target": "Protocol Info", "type": "包含"},
+        {"source": "Protocol Info", "target": "Ethernet II", "type": "包含"},
+        {"source": "Protocol Info", "target": "Internet Protocol", "type": "包含"},
+        {"source": "Protocol Info", "target": "SDP", "type": "包含"},
+        {"source": "Message Header", "target": "Content-Type", "type": "包含"},
+        {"source": "Message Header", "target": "Message Body", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "INVITE消息", "en": "INVITE message"},
+        {"title": "200OK消息", "en": "200OK message"},
+        {"title": "BYE消息", "en": "BYE message"},
+        {"title": "测试点4", "en": "Test point 4"},
+        {"title": "测试点5", "en": "Test point 5"},
+        {"title": "自动化测试", "en": "Automated testing"}
+    ],
+    "relations": [
+        {"source": "INVITE消息", "target": "测试点4", "type": "建立会话"},
+        {"source": "测试点4", "target": "200OK消息", "type": "建立会话"},
+        {"source": "BYE消息", "target": "测试点5", "type": "结束通话"},
+        {"source": "测试点5", "target": "200OK消息", "type": "结束通话"},
+        {"source": "语音被叫测试例", "target": "测试点通过", "type": "自动化测试"},
+        {"source": "视频主叫测试例", "target": "测试点通过", "type": "自动化测试"},
+        {"source": "视频被叫测试例", "target": "测试点通过", "type": "自动化测试"},
+        {"source": "鉴权测试例", "target": "测试点通过", "type": "自动化测试"},
+        {"source": "自动化测试", "target": "测试例执行结果", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "调试过程中的问题及解决方法", "en": "Problems and solutions in debugging process"},
+        {"title": "TTCNlog", "en": "TTCNlog"},
+        {"title": "参数配置出错", "en": "Parameter configuration error"},
+        {"title": "底层参数配置出错", "en": "Low-level parameter configuration error"},
+        {"title": "代码设计时边界问题疏忽", "en": "Neglect of boundary issues in code design"},
+        {"title": "算法本身出错", "en": "Algorithm error"},
+        {"title": "工具软件出错", "en": "Tool software error"},
+        {"title": "系统出错", "en": "System error"},
+        {"title": "TCP/IP协议", "en": "TCP/IP protocol"},
+        {"title": "XML编码问题", "en": "XML encoding problem"},
+        {"title": "GCF认证", "en": "GCF certification"}
+    ],
+    "relations": [
+        {"source": "调试过程中的问题及解决方法", "target": "TTCNlog", "type": "包含"},
+        {"source": "调试过程中的问题及解决方法", "target": "参数配置出错", "type": "包含"},
+        {"source": "调试过程中的问题及解决方法", "target": "底层参数配置出错", "type": "包含"},
+        {"source": "调试过程中的问题及解决方法", "target": "代码设计时边界问题疏忽", "type": "包含"},
+        {"source": "调试过程中的问题及解决方法", "target": "算法本身出错", "type": "包含"},
+        {"source": "调试过程中的问题及解决方法", "target": "工具软件出错", "type": "包含"},
+        {"source": "调试过程中的问题及解决方法", "target": "系统出错", "type": "包含"},
+        {"source": "TCP/IP协议", "target": "底层参数配置出错", "type": "相关"},
+        {"source": "XML编码问题", "target": "适配层实现XML编码", "type": "包含"},
+        {"source": "GCF认证", "target": "TTCNlog", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VoLTE功能测试", "en": "VoLTE Function Test"},
+        {"title": "测试平台和测试例", "en": "Test Platform and Test Cases"},
+        {"title": "现有仪表的软硬件平台", "en": "Hardware and Software Platform of Existing Instruments"},
+        {"title": "VoLTE网络架构和关键技术", "en": "VoLTE Network Architecture and Key Technologies"},
+        {"title": "TD-LTE平台的修改", "en": "Modification of TD-LTE Platform"},
+        {"title": "测试例的开发周期", "en": "Development Cycle of Test Cases"},
+        {"title": "TTCN-3构造测试例的方法和过程", "en": "Method and Process of Constructing Test Cases with TTCN-3"},
+        {"title": "3GPP协议", "en": "3GPP Protocol"},
+        {"title": "测试例的测试目的、测试流程、信令交互", "en": "Test Purpose, Test Process, and Signaling Interaction of Test Cases"},
+        {"title": "鉴权测试例", "en": "Authentication Test Cases"},
+        {"title": "语音被叫测试例", "en": "Voice Called Test Cases"},
+        {"title": "视频主叫测试例", "en": "Video Calling Test Cases"},
+        {"title": "视频被叫测试例", "en": "Video Called Test Cases"},
+        {"title": "自动化验证", "en": "Automated Verification"},
+        {"title": "通信仪表发展", "en": "Development of Communication Instruments"},
+        {"title": "VoLTE的发展", "en": "Development of VoLTE"}
+    ],
+    "relations": [
+        {"source": "VoLTE功能测试", "target": "测试平台和测试例", "type": "包含"},
+        {"source": "测试平台和测试例", "target": "VoLTE功能测试", "type": "属于"},
+        {"source": "现有仪表的软硬件平台", "target": "VoLTE功能测试", "type": "相关"},
+        {"source": "VoLTE网络架构和关键技术", "target": "VoLTE功能测试", "type": "相关"},
+        {"source": "VoLTE测试平台需求", "target": "TD-LTE平台的修改", "type": "引入"},
+        {"source": "测试例的开发周期", "target": "TTCN-3构造测试例的方法和过程", "type": "包含"},
+        {"source": "3GPP协议", "target": "测试例的测试目的、测试流程、信令交互", "type": "相关"},
+        {"source": "测试例的测试目的、测试流程、信令交互", "target": "鉴权测试例", "type": "包含"},
+        {"source": "测试例的测试目的、测试流程、信令交互", "target": "语音被叫测试例", "type": "包含"},
+        {"source": "测试例的测试目的、测试流程、信令交互", "target": "视频主叫测试例", "type": "包含"},
+        {"source": "测试例的测试目的、测试流程、信令交互", "target": "视频被叫测试例", "type": "包含"},
+        {"source": "鉴权测试例", "target": "TTCN-3构造测试例的方法和过程", "type": "包含"},
+        {"source": "语音被叫测试例", "target": "TTCN-3构造测试例的方法和过程", "type": "包含"},
+        {"source": "视频主叫测试例", "target": "TTCN-3构造测试例的方法和过程", "type": "包含"},
+        {"source": "视频被叫测试例", "target": "TTCN-3构造测试例的方法和过程", "type": "包含"},
+        {"source": "测试例的测试目的、测试流程、信令交互", "target": "自动化验证", "type": "包含"},
+        {"source": "VoLTE功能测试", "target": "通信仪表发展", "type": "相关"},
+        {"source": "VoLTE的发展", "target": "通信仪表发展", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SIP协议",
+            "en": "SIP Protocol"
+        },
+        {
+            "title": "TD-LTE-A终端协议分析仪",
+            "en": "TD-LTE-A Terminal Protocol Analyzer"
+        },
+        {
+            "title": "LTE终端RRM一致性测试系统",
+            "en": "LTE Terminal RRM Consistency Testing System"
+        },
+        {
+            "title": "TTCN-3",
+            "en": "TTCN-3"
+        },
+        {
+            "title": "3GPPTS34.229-1",
+            "en": "3GPPTS34.229-1"
+        },
+        {
+            "title": "3GPPTS34.229-2",
+            "en": "3GPPTS34.229-2"
+        },
+        {
+            "title": "3GPPTS34.229-3",
+            "en": "3GPPTS34.229-3"
+        },
+        {
+            "title": "3GPP.TS36.331",
+            "en": "3GPP.TS36.331"
+        },
+        {
+            "title": "3GPP.TS36.508",
+            "en": "3GPP.TS36.508"
+        },
+        {
+            "title": "3GPP.TS36.523-1",
+            "en": "3GPP.TS36.523-1"
+        },
+        {
+            "title": "3GPP.TS36.523-3",
+            "en": "3GPP.TS36.523-3"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SIP协议",
+            "target": "基于SIP协议的业务测试环境的设计与实现",
+            "type": "相关论文"
+        },
+        {
+            "source": "TD-LTE-A终端协议分析仪",
+            "target": "基于TD-LTE-A终端协议分析仪的VoLTE功能测试方案的设计和实现",
+            "type": "相关论文"
+        },
+        {
+            "source": "LTE终端RRM一致性测试系统",
+            "target": "基于LTE终端RRM一致性测试系统的LTE随机接入测试例的研究与实现",
+            "type": "相关论文"
+        },
+        {
+            "source": "TTCN-3",
+            "target": "基于TTCN-3的TD-LTE终端数据业务测试的研究与实现",
+            "type": "相关论文"
+        },
+        {
+            "source": "LTE终端RRM一致性测试系统",
+            "target": "基于终端RRM一致性测试系统的TD-LTE异系统互操作测试例的研究与实现",
+            "type": "相关论文"
+        },
+        {
+            "source": "3GPPTS34.229-1",
+            "target": "3GPPTS34.229-2",
+            "type": "规范"
+        },
+        {
+            "source": "3GPPTS34.229-2",
+            "target": "3GPPTS34.229-3",
+            "type": "规范"
+        },
+        {
+            "source": "3GPP.TS36.331",
+            "target": "3GPP.TS36.508",
+            "type": "规范"
+        },
+        {
+            "source": "3GPP.TS36.508",
+            "target": "3GPP.TS36.523-1",
+            "type": "规范"
+        },
+        {
+            "source": "3GPP.TS36.523-1",
+            "target": "3GPP.TS36.523-3",
+            "type": "规范"
+        }
+    ]
+}

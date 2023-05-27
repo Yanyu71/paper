@@ -1,0 +1,20 @@
+5.2.1Cell下行同步搜索模块
+Cell 同步搜索模块对应的函数为Cell Search,该函数的接口如下：
+Cell  Search(int16  t*        RxData,     Cell  Sync  Res*        Cell  Search  Out)
+表5-1 Sync Search函数接口
+名字	I/O	数据类型	描述
+RxData	I	int16 t*	接收数据
+Cell Search Ou
+t	O	Cell Sync
+Res*	频偏值
+其中Cell Search Out是一类型为Cell Sync Res 的结构体的指针，其指向存 储类型为Cell Sync Res 的数组，根据系统设计，若存在多小区，每次同步搜索
+会返回小区功率最大的三个小区同步搜索结果，因此该数组大小设定为3.
+Cell Sync Res 结构体定义如表5-2所示：
+38
+(C)1994-2022 China Academic Journal Electronic Publishing House.All rights reserved.   http://www.cnki.net
+表5-2 Cell Sync Res结构体定义
+名字	数据类型	描述
+cell ID	uint8 t	小区ID
+cell Foffset	uint8 t	频偏值
+cell Toffset	uint8 t	时偏值
+cell Power	uint8 t	小区功率

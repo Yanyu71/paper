@@ -1,0 +1,33 @@
+3.5本章小结
+针对跨域数据异质性导致跨域信息间关联交错复杂的问题，本章旨在构建一个 同一兴趣空间融合用户的社交结构和内容数据，以学习到用户兴趣的统一表示。并 提出一个基于链接异质网络的兴趣嵌入模型，以解决跨域信息异质性、差异性和噪 音干扰等挑战。首先，构建了一个链接异质网络来表示不同域中用户的社交结构和 内容之间的复杂关系，然后对内容信息进行主题建模，以过滤掉其中的噪声信息。 然后通过分别捕获网络内和网络间基于朋友和基于主题的用户共现性，将不同网络 的社交结构和内容信息嵌入到共同的兴趣空间中。同时，通过学习基于用户的跨域 转移和基于主题的跨域转移以增强不同网络间的信息交换。最后在真实的社交媒体 数据集和合成数据集上进行了大量的实验来评估本章提出的方法的性能。结果表明, 本章所提方法的性能与假设不同类型的跨域信息相互独立的方法相比性能至少提升 19%。即使由于隐私保护原因导致社交结构数据难以获取的情况下，本章提出的方法 也可以很好地工作。通过充分挖掘不同类型的跨域信息之间的复杂关联，为模型提
+63
+供互补信息，大大提升了跨域用户身份识别的准确性。
+参考文献
+[1]	Shu K, Wang S, Tang J, et al. User identity linkage across online social networks: a review[J]. ACM SIGKDD Explorations Newsletter, 2017, 18(2): 5-17.
+[2]	Man 工,Shen H, Huang J, et al. Context-adaptive matrix factorization for multi-context recommen-dation[A]. // Proceedings of the 24th ACM International on Conference on Information and Knowledge Management[C]. New York, NY: ACM, 2015: 901-910.
+[3]	Yan M, Sang J5 Xu C, et al. Ybutube video promotion by cross-network association: @britney to advertise gangnam style [J]. IEEE Transactions on Multimedia, 2015, 17(8): 1248-1261.
+[4]	Yan M, Sang J, Xu C, et al. A unified video recommendation by cross-network user modeling[J]. ACM Trans. Multimedia Comput. Commun. AppL, 2016, 12(4).
+[5]	Dong Y Tang J, Wu S, et al. Link prediction and recommendation across heterogeneous social net-works[A]. // 2012 IEEE 12th International conference on data mining[C], Piscataway, NJ: IEEE, 2012: 181-190.
+[6]	Zhang J, Kong X, Philip S Y Predicting social links for new users across aligned heterogeneous social networks[A]. // 2013 IEEE 13th International Conference on Data Mining[C]. Piscataway, NJ: IEEE, 2013: 1289-1294.
+[7]	Zhang J, Kong X, Yu P S. Transferring heterogeneous links across location-based social networks [A]. // Proceedings of the 7th ACM international conference on Web search and data min-ing[C]. 2014: 303-312.
+[8]	Zhang J, Yu P S, Zhou Z H. Meta-path based multi-network collective link prediction[A]. // Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining[C]. New York, NY: ACM, 2014: 1286-1295.
+[9]	Cao X, YiiY BASS: a bootstrapping approach for aligning heterogenous social networks[A]. //Joint European Conference on Machine Learning and Knowledge Discovery in Databases[C]. Berlin, German: Springer, 2016: 459-475.
+[10]	Kong X, Zhang J, Yu P S. Inferring anchor links across multiple heterogeneous social networks [A]. II Proceedings of the 22nd ACM international conference on Information & Knowledge Manage-ment[C]. New York, NY: ACM, 2013: 179-188.
+[11]	Liu S, Wang S, Zhu F, et al. Hydra: large-scale social identity linkage via heterogeneous behavior modeling[A]. // Proceedings of the 2014 ACM SIGMOD international conference on Management ofdata[C]. New York, NY: ACM, 2014: 51-62.
+[12]	Zhang J, Philip S Y Integrated anchor and social link predictions across social networks]A]. // Twenty-Fourth International Joint Conference on Artificial Intelligence[C]. Memo Park, CA: AAAI Press, 2015.
+[13]	Cai H, Zheng V W, Chang K C C. A comprehensive survey of graph embedding: problems, techniques, and applications[1]. IEEE Transactions on Knowledge and Data Engineering, 2018, 30(9): 1616-1637.
+[14]	Tang J, Qu M, Mei Q. Pte: predictive text embedding through large-scale heterogeneous text net-works[A]. // Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Dis* coveiy and Data Mining[C]. New York, NY: ACM, 2015: 1165-1174.
+64
+[15]	Xie M, Yin H, Wang H, et al. Learning graph-based poi embedding for location-based recommenda" tion[A]. // Proceedings of the 25th ACM International on Conference on Information and Knowledge Management[C]. New York, NY: ACM, 2016: 15-24.
+[16]	Liu L, Cheung W K, Li X, et al. Aligning Users across Social Networks Using Network Embed-ding[A]. // Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelli-gence[C]. Menio Park, CA: AAAI Press, 2016: 1774-1780.
+[17]	Man T, Shen H, Liu S, et al. Predict Anchor Links across Social Networks via an Embedding Ap-proach[A]. II Proceedings of the Twenty-Fifth International Joint Conference on Artificial Intelli-gence[C]. Menio Park, CA: AAAI Press, 2016: 1823T 829.
+[18]	Recht B, Re C? Wright S, et al. Hogwild: a lock-free approach to parallelizing stochastic gradient descent[A]. // Advances in neural information processing systems[C]. Massachusetts, US: MIT press, 2011: 693-701.
+[19]	Mikolov T, Sutskever I, Chen K, et al. Distributed representations of words and phrases and their compositionality [A]. // Advances in neural information processing systems[C]. Neural information processing systems foundation, 2013: 3111-3119.
+[20]	lang J, Qu M, V^ng M, et aL Line: large-scale infomiation network embeddingfA]. // Proceedings of the 24th international conference on world wide web[C]. 2015: 1067—1077.
+[21]	Yan M, Sang J, Mei T, et al. Friend transfer: cold-start friend recommendation with cross-platform transfer learning of social knowledge[A]. //2013 IEEE International Conference on Multimedia and Expo (ICME)[C]. Berlin, German: Springer, 2013: 1-6.
+[22]	Yang D, Xiao Y Tong H, et al. Towards topic following in heterogeneous information networks[A]. //2015 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)[C]. Piscataway, NJ: IEEE, 2015: 363—366.
+[23]	Nie Y Jia Y Li S, et al. Identifying users across social networks based on dynamic core interests [J]. Neurocomputing, 2016,210: 107-115.
+[24]	Tan S, Guan Z, Cai D, et al. Mapping users across networks by manifold alignment on hyper-graph[A]. I I Twenty-Eighth AAAI Conference on Artificial InteIligence[C]. Menio Park, CA: AAAI Press, 2014.
+[25]	Chen W, Yin H, Wang W, et al. Exploiting spatio-temporal user behaviors for user linkage [A], // Proceedings of the 2017 ACM on Conference on Information and Knowledge Management[C]. New York, NY: ACM, 2017: 517-526.
+65
+(0)1994-2022 China Academic Journal Electronic Publishing House. All rights reserved, http://www.cnki.net

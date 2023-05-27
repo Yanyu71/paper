@@ -1,0 +1,3927 @@
+﻿{
+    "knowledge_points": [
+        {"title": "认知无线网络", "en": "Cognitive wireless network"},
+        {"title": "互联网+", "en": "Internet Plus"},
+        {"title": "移动互联网", "en": "Mobile Internet"},
+        {"title": "物联网", "en": "Internet of Things"},
+        {"title": "云计算", "en": "Cloud computing"},
+        {"title": "大数据", "en": "Big data"},
+        {"title": "社交网络服务", "en": "Social Networking Services (SNS)"},
+        {"title": "第五代移动通信技术", "en": "Fifth Generation Mobile Communications (5G)"},
+        {"title": "无线组网技术", "en": "Wireless networking technology"},
+        {"title": "频谱资源", "en": "Spectrum resources"},
+        {"title": "服务质量", "en": "Quality of Service (QoS)"}
+    ],
+    "relations": [
+        {"source": "互联网+", "target": "移动通信", "type": "发展方向"},
+        {"source": "移动互联网", "target": "云计算", "type": "技术"},
+        {"source": "移动互联网", "target": "物联网", "type": "技术"},
+        {"source": "移动互联网", "target": "社交网络服务", "type": "应用"},
+        {"source": "移动互联网", "target": "搜索", "type": "应用"},
+        {"source": "第五代移动通信技术", "target": "容量需求", "type": "特征"},
+        {"source": "第五代移动通信技术", "target": "异构组网技术", "type": "容量增长途径"},
+        {"source": "第五代移动通信技术", "target": "频谱资源", "type": "容量增长途径"},
+        {"source": "频谱资源", "target": "移动通信", "type": "利用率"},
+        {"source": "服务质量", "target": "移动通信", "type": "异构业务需求"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "无线网络虚拟化", "en": "Wireless Network Virtualization"},
+        {"title": "认知无线电", "en": "Cognitive Radio"},
+        {"title": "认知无线网络", "en": "Cognitive Wireless Network"},
+        {"title": "认知平面", "en": "Cognitive Plane"},
+        {"title": "控制平面", "en": "Control Plane"},
+        {"title": "数据平面", "en": "Data Plane"},
+        {"title": "接入平面", "en": "Access Plane"},
+        {"title": "频谱利用率", "en": "Spectrum Utilization"},
+        {"title": "主用户", "en": "Primary User"},
+        {"title": "次用户", "en": "Secondary User"},
+        {"title": "多域认知", "en": "Multi-Domain Cognition"},
+        {"title": "资源池", "en": "Resource Pool"},
+        {"title": "频谱检测", "en": "Spectrum Sensing"},
+        {"title": "动态频谱管理", "en": "Dynamic Spectrum Management"},
+        {"title": "功率控制", "en": "Power Control"},
+        {"title": "频谱共享", "en": "Spectrum Sharing"},
+        {"title": "频谱高速公路计划", "en": "Spectrum Highway Plan"}
+    ],
+    "relations": [
+        {"source": "无线网络虚拟化", "target": "认知无线电", "type": "包含"},
+        {"source": "无线网络虚拟化", "target": "认知无线网络", "type": "包含"},
+        {"source": "认知无线电", "target": "频谱利用率", "type": "解决"},
+        {"source": "认知无线电", "target": "主用户", "type": "包含"},
+        {"source": "认知无线电", "target": "次用户", "type": "包含"},
+        {"source": "认知无线电", "target": "频谱检测", "type": "解决"},
+        {"source": "认知无线电", "target": "动态频谱管理", "type": "解决"},
+        {"source": "认知无线电", "target": "功率控制", "type": "解决"},
+        {"source": "认知无线电", "target": "频谱共享", "type": "解决"},
+        {"source": "认知无线电", "target": "认知平面", "type": "包含"},
+        {"source": "认知无线电", "target": "控制平面", "type": "包含"},
+        {"source": "认知无线电", "target": "数据平面", "type": "包含"},
+        {"source": "认知无线电", "target": "接入平面", "type": "包含"},
+        {"source": "认知无线网络", "target": "多域认知", "type": "解决"},
+        {"source": "认知无线网络", "target": "资源池", "type": "解决"},
+        {"source": "认知无线网络", "target": "频谱共享", "type": "解决"},
+        {"source": "认知无线网络", "target": "认知平面", "type": "包含"},
+        {"source": "认知无线网络", "target": "控制平面", "type": "包含"},
+        {"source": "认知无线网络", "target": "数据平面", "type": "包含"},
+        {"source": "认知无线网络", "target": "接入平面", "type": "包含"},
+        {"source": "认知平面", "target": "多域认知", "type": "包含"},
+        {"source": "认知平面", "target": "资源池", "type": "包含"},
+        {"source": "控制平面", "target": "学习", "type": "解决"},
+        {"source": "控制平面", "target": "决策", "type": "解决"},
+        {"source": "控制平面", "target": "执行", "type": "解决"},
+        {"source": "数据平面", "target": "资源池", "type": "包含"},
+        {"source": "数据平面", "target": "频谱共享", "type": "包含"},
+        {"source": "数据平面", "target": "控制平面", "type": "反馈"},
+        {"source": "接入平面", "target": "资源池", "type": "包含"},
+        {"source": "频谱共享", "target": "频谱高速公路计划", "type": "解决"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知信息的获取、表征与度量", "en": "Cognitive information acquisition, representation and measurement"},
+        {"title": "频谱检测", "en": "Spectrum sensing"},
+        {"title": "认知数据库", "en": "Cognitive database"}
+    ],
+    "relations": [
+        {"source": "认知信息的获取、表征与度量", "target": "频谱检测", "type": "包含"},
+        {"source": "认知信息的获取、表征与度量", "target": "认知数据库", "type": "包含"},
+        {"source": "频谱检测", "target": "能量检测", "type": "包含"},
+        {"source": "频谱检测", "target": "波形检测", "type": "包含"},
+        {"source": "频谱检测", "target": "匹配滤波检测", "type": "包含"},
+        {"source": "频谱检测", "target": "循环平稳特征检测", "type": "包含"},
+        {"source": "频谱检测", "target": "协作检测", "type": "包含"},
+        {"source": "协作检测", "target": "集中式协作检测", "type": "包含"},
+        {"source": "协作检测", "target": "分布式协作检测", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知信息量", "en": "Cognitive Information"},
+        {"title": "地理嫡", "en": "Geographic Heir"},
+        {"title": "信息密度", "en": "Information Density"},
+        {"title": "认知无线网络", "en": "Cognitive Wireless Network"},
+        {"title": "认知导频信道", "en": "Cognitive Pilot Channel"},
+        {"title": "公共控制信道", "en": "Common Control Channel"},
+        {"title": "资源管理", "en": "Resource Management"},
+        {"title": "媒体接入控制", "en": "Medium Access Control"},
+        {"title": "频谱切换", "en": "Spectrum Switching"}
+    ],
+    "relations": [
+        {"source": "认知信息量", "target": "信息密度", "type": "concept"},
+        {"source": "认知信息量", "target": "地理嫡", "type": "concept"},
+        {"source": "认知信息量", "target": "认知无线网络", "type": "concept"},
+        {"source": "信息密度", "target": "认知过程", "type": "concept"},
+        {"source": "地理嫡", "target": "认知过程", "type": "concept"},
+        {"source": "认知无线网络", "target": "认知导频信道", "type": "concept"},
+        {"source": "认知无线网络", "target": "公共控制信道", "type": "concept"},
+        {"source": "认知导频信道", "target": "空闲频谱", "type": "concept"},
+        {"source": "公共控制信道", "target": "次用户协作", "type": "concept"},
+        {"source": "资源管理", "target": "媒体接入控制", "type": "concept"},
+        {"source": "资源管理", "target": "资源分配", "type": "concept"},
+        {"source": "资源管理", "target": "频谱切换", "type": "concept"},
+        {"source": "媒体接入控制", "target": "频谱利用效率", "type": "concept"},
+        {"source": "媒体接入控制", "target": "公平性", "type": "concept"},
+        {"source": "公共控制信道", "target": "信道接入协商", "type": "concept"},
+        {"source": "公共控制信道", "target": "拓扑重构", "type": "concept"},
+        {"source": "公共控制信道", "target": "路由信息更新", "type": "concept"},
+        {"source": "频谱切换", "target": "主用户", "type": "concept"},
+        {"source": "频谱切换", "target": "次用户", "type": "concept"},
+        {"source": "认知信息量", "target": "信息论工具", "type": "method"},
+        {"source": "认知过程", "target": "消除不确定性", "type": "method"},
+        {"source": "认知导频信道", "target": "传输链路", "type": "method"},
+        {"source": "公共控制信道", "target": "信息交互", "type": "method"},
+        {"source": "公共控制信道", "target": "协作检测", "type": "method"},
+        {"source": "资源管理", "target": "协议设计", "type": "method"},
+        {"source": "资源管理", "target": "原型实现", "type": "method"},
+        {"source": "资源管理", "target": "理论方法", "type": "method"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "认知路由",
+            "en": "Cognitive Routing"
+        },
+        {
+            "title": "网络重构",
+            "en": "Network Reconstruction"
+        },
+        {
+            "title": "认知信息的目标",
+            "en": "Objectives of Cognitive Information"
+        },
+        {
+            "title": "容量",
+            "en": "Capacity"
+        },
+        {
+            "title": "连通性",
+            "en": "Connectivity"
+        }
+    ],
+    "relations": [
+        {
+            "source": "认知路由",
+            "target": "传统的无线网络",
+            "type": "contrasts"
+        },
+        {
+            "source": "认知路由",
+            "target": "认知无线网络",
+            "type": "belongs to"
+        },
+        {
+            "source": "认知路由",
+            "target": "路由设计",
+            "type": "related"
+        },
+        {
+            "source": "网络重构",
+            "target": "认知信息",
+            "type": "assisted by"
+        },
+        {
+            "source": "网络重构",
+            "target": "软件定义无线电",
+            "type": "based on"
+        },
+        {
+            "source": "网络重构",
+            "target": "重构机制",
+            "type": "has"
+        },
+        {
+            "source": "认知信息的目标",
+            "target": "控制平面",
+            "type": "transferred to"
+        },
+        {
+            "source": "认知信息的目标",
+            "target": "认知无线网络",
+            "type": "belongs to"
+        },
+        {
+            "source": "认知信息的目标",
+            "target": "网络模型",
+            "type": "depends on"
+        },
+        {
+            "source": "容量",
+            "target": "无线网络",
+            "type": "evaluates"
+        },
+        {
+            "source": "容量",
+            "target": "中断容量",
+            "type": "defines"
+        },
+        {
+            "source": "容量",
+            "target": "传输容量",
+            "type": "defines"
+        },
+        {
+            "source": "容量",
+            "target": "有效容量",
+            "type": "defines"
+        },
+        {
+            "source": "容量",
+            "target": "瞬时容量",
+            "type": "compares"
+        },
+        {
+            "source": "容量",
+            "target": "遍历容量",
+            "type": "compares"
+        },
+        {
+            "source": "连通性",
+            "target": "随机自组织网络",
+            "type": "evaluates"
+        },
+        {
+            "source": "连通性",
+            "target": "认知自组织网络",
+            "type": "evaluates"
+        },
+        {
+            "source": "连通性",
+            "target": "主用户",
+            "type": "affects"
+        },
+        {
+            "source": "连通性",
+            "target": "次用户",
+            "type": "affects"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "认知无线网络",
+            "en": "Cognitive wireless network"
+        },
+        {
+            "title": "频谱利用效率",
+            "en": "Spectrum utilization efficiency"
+        },
+        {
+            "title": "多维频谱空洞接入方法",
+            "en": "Multi-dimensional spectrum hole access method"
+        },
+        {
+            "title": "容量",
+            "en": "Capacity"
+        },
+        {
+            "title": "认知信息获取",
+            "en": "Cognitive information acquisition"
+        },
+        {
+            "title": "频谱检测",
+            "en": "Spectrum sensing"
+        },
+        {
+            "title": "认知数据库",
+            "en": "Cognitive database"
+        },
+        {
+            "title": "动态频谱接入",
+            "en": "Dynamic spectrum access"
+        },
+        {
+            "title": "频谱管理",
+            "en": "Spectrum management"
+        },
+        {
+            "title": "认知网络安全",
+            "en": "Cognitive network security"
+        }
+    ],
+    "relations": [
+        {
+            "source": "认知无线网络",
+            "target": "频谱利用效率",
+            "type": "目标"
+        },
+        {
+            "source": "认知无线网络",
+            "target": "多维频谱空洞接入方法",
+            "type": "应用"
+        },
+        {
+            "source": "多维频谱空洞接入方法",
+            "target": "容量",
+            "type": "目标"
+        },
+        {
+            "source": "认知信息获取",
+            "target": "频谱检测",
+            "type": "方法"
+        },
+        {
+            "source": "认知信息获取",
+            "target": "认知数据库",
+            "type": "方法"
+        },
+        {
+            "source": "认知数据库",
+            "target": "动态频谱接入",
+            "type": "应用"
+        },
+        {
+            "source": "动态频谱接入",
+            "target": "频谱管理",
+            "type": "目标"
+        },
+        {
+            "source": "认知数据库",
+            "target": "认知网络安全",
+            "type": "应用"
+        },
+        {
+            "source": "认知数据库",
+            "target": "认知信息获取",
+            "type": "传递"
+        },
+        {
+            "source": "认知信息获取",
+            "target": "频谱利用效率",
+            "type": "影响"
+        },
+        {
+            "source": "认知信息获取",
+            "target": "容量",
+            "type": "影响"
+        },
+        {
+            "source": "认知数据库",
+            "target": "容量",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "广播方式", "en": "Broadcasting mode"},
+        {"title": "点播方式", "en": "On-demand mode"},
+        {"title": "栅格", "en": "Grid"},
+        {"title": "多维频谱空洞", "en": "Multidimensional spectrum hole"},
+        {"title": "空时维度", "en": "Space-time dimension"},
+        {"title": "角度维度", "en": "Angle dimension"},
+        {"title": "高度维度", "en": "Height dimension"},
+        {"title": "频谱利用率", "en": "Spectrum utilization rate"},
+        {"title": "空时检测算法", "en": "Space-time detection algorithm"},
+        {"title": "空时频谱检测", "en": "Space-time spectrum detection"},
+        {"title": "主用户排斥区", "en": "Primary exclusive region"},
+        {"title": "黑白灰三区", "en": "Black-white-gray three zones"},
+        {"title": "波束成形", "en": "Beamforming"}
+    ],
+    "relations": [
+        {"source": "广播方式", "target": "点播方式", "type": "包含"},
+        {"source": "点播方式", "target": "栅格", "type": "使用"},
+        {"source": "栅格", "target": "广播方式", "type": "使用"},
+        {"source": "栅格", "target": "多维频谱空洞", "type": "影响"},
+        {"source": "多维频谱空洞", "target": "空时维度", "type": "包含"},
+        {"source": "多维频谱空洞", "target": "角度维度", "type": "包含"},
+        {"source": "多维频谱空洞", "target": "高度维度", "type": "包含"},
+        {"source": "空时维度", "target": "频谱利用率", "type": "影响"},
+        {"source": "空时维度", "target": "空时检测算法", "type": "使用"},
+        {"source": "空时检测算法", "target": "空时频谱检测", "type": "包含"},
+        {"source": "空时频谱检测", "target": "主用户排斥区", "type": "使用"},
+        {"source": "主用户排斥区", "target": "黑白灰三区", "type": "包含"},
+        {"source": "黑白灰三区", "target": "波束成形", "type": "使用"},
+        {"source": "角度维度", "target": "波束成形", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频谱空洞", "en": "Spectrum hole"},
+        {"title": "三维无线网络容量尺度律", "en": "3D wireless network capacity scaling law"},
+        {"title": "渗透理论", "en": "Percolation theory"},
+        {"title": "认知卫星", "en": "Cognitive satellite"},
+        {"title": "动态频谱接入", "en": "Dynamic spectrum access"},
+        {"title": "链路容量", "en": "Link capacity"},
+        {"title": "网络容量", "en": "Network capacity"},
+        {"title": "传输容量", "en": "Transmission capacity"},
+        {"title": "容量尺度律", "en": "Capacity scaling law"},
+        {"title": "认知自组织网络", "en": "Cognitive radio ad hoc networks"}
+    ],
+    "relations": [
+        {"source": "频谱空洞", "target": "认知无线网络", "type": "利用"},
+        {"source": "三维无线网络容量尺度律", "target": "无线网络", "type": "提升容量"},
+        {"source": "渗透理论", "target": "3D无线网络", "type": "容量尺度律"},
+        {"source": "认知卫星", "target": "动态频谱接入", "type": "研究"},
+        {"source": "动态频谱接入", "target": "认知卫星", "type": "应用"},
+        {"source": "链路容量", "target": "认知无线网络", "type": "研究"},
+        {"source": "网络容量", "target": "认知无线网络", "type": "研究"},
+        {"source": "传输容量", "target": "认知无线网络", "type": "研究"},
+        {"source": "容量尺度律", "target": "认知无线网络", "type": "研究"},
+        {"source": "认知自组织网络", "target": "次用户网络", "type": "提升容量"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线网络容量尺度律", "en": "Capacity scaling laws in cognitive wireless networks"},
+        {"title": "认知信息的表征、度量和传递理论", "en": "Theory of representation, measurement and transmission of cognitive information"},
+        {"title": "空时二维频谱机会", "en": "Spatial-temporal two-dimensional spectrum opportunities"},
+        {"title": "角度维频谱机会", "en": "Angular spectrum opportunities"},
+        {"title": "高度维频谱机会", "en": "Height spectrum opportunities"}
+    ],
+    "relations": [
+        {"source": "认知无线网络容量尺度律", "target": "认知信息的表征、度量和传递理论", "type": "前提"},
+        {"source": "认知信息的表征、度量和传递理论", "target": "空时二维频谱机会", "type": "基础"},
+        {"source": "认知信息的表征、度量和传递理论", "target": "角度维频谱机会", "type": "基础"},
+        {"source": "认知信息的表征、度量和传递理论", "target": "高度维频谱机会", "type": "基础"},
+        {"source": "空时二维频谱机会", "target": "角度维频谱机会", "type": "比较"},
+        {"source": "角度维频谱机会", "target": "高度维频谱机会", "type": "比较"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线网络容量", "en": "Capacity of Cognitive Wireless Networks"},
+        {"title": "认知信息获取和传递", "en": "Cognitive Information Acquisition and Transmission"},
+        {"title": "认知信息表征理论", "en": "Cognitive Information Representation Theory"},
+        {"title": "认知信息度量方法", "en": "Cognitive Information Measurement Method"},
+        {"title": "基于栅格融合的认知信息传递方法", "en": "Cognitive Information Transmission Method Based on Grid Fusion"},
+        {"title": "空时频谱检测与接入机制", "en": "Spatial-Temporal-Spectral Detection and Access Mechanism"},
+        {"title": "角度维频谱机会的认知无线网络容量分析", "en": "Capacity Analysis of Cognitive Wireless Networks Using Angle-Domain Spectrum Opportunities"},
+        {"title": "高度维频谱机会的认知无线网络容量分析", "en": "Capacity Analysis of Cognitive Wireless Networks Using Height-Domain Spectrum Opportunities"}
+    ],
+    "relations": [
+        {"source": "认知无线网络容量", "target": "认知信息表征理论", "type": "包含"},
+        {"source": "认知无线网络容量", "target": "认知信息度量方法", "type": "包含"},
+        {"source": "认知无线网络容量", "target": "基于栅格融合的认知信息传递方法", "type": "包含"},
+        {"source": "认知无线网络容量", "target": "空时频谱检测与接入机制", "type": "包含"},
+        {"source": "认知无线网络容量", "target": "角度维频谱机会的认知无线网络容量分析", "type": "包含"},
+        {"source": "认知无线网络容量", "target": "高度维频谱机会的认知无线网络容量分析", "type": "包含"},
+        {"source": "认知信息获取和传递", "target": "认知信息表征理论", "type": "包含"},
+        {"source": "认知信息获取和传递", "target": "认知信息度量方法", "type": "包含"},
+        {"source": "认知信息获取和传递", "target": "基于栅格融合的认知信息传递方法", "type": "包含"},
+        {"source": "认知信息表征理论", "target": "认知信息度量方法", "type": "关联"},
+        {"source": "认知信息表征理论", "target": "基于栅格融合的认知信息传递方法", "type": "关联"},
+        {"source": "认知信息度量方法", "target": "基于栅格融合的认知信息传递方法", "type": "关联"},
+        {"source": "空时频谱检测与接入机制", "target": "基于栅格融合的认知信息传递方法", "type": "包含"},
+        {"source": "角度维频谱机会的认知无线网络容量分析", "target": "认知无线网络容量", "type": "关联"},
+        {"source": "高度维频谱机会的认知无线网络容量分析", "target": "认知无线网络容量", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "三区划分", "en": "Three-zone partitioning"},
+        {"title": "认知数据库", "en": "Cognitive database"},
+        {"title": "空时频谱机会", "en": "Spatio-temporal spectrum opportunity"},
+        {"title": "角度维频谱机会", "en": "Angular spectrum opportunity"},
+        {"title": "高度维频谱机会", "en": "Height spectrum opportunity"},
+        {"title": "多维认知信息表征、度量和传递理论", "en": "Multidimensional cognitive information representation, measurement, and transmission theory"}
+    ],
+    "relations": [
+        {"source": "三区划分", "target": "认知数据库", "type": "包含"},
+        {"source": "三区划分", "target": "空时频谱机会", "type": "实现"},
+        {"source": "角度维频谱机会", "target": "认知数据库", "type": "依赖"},
+        {"source": "高度维频谱机会", "target": "认知数据库", "type": "依赖"},
+        {"source": "多维认知信息表征、度量和传递理论", "target": "空时频谱机会", "type": "研究"},
+        {"source": "多维认知信息表征、度量和传递理论", "target": "角度维频谱机会", "type": "研究"},
+        {"source": "多维认知信息表征、度量和传递理论", "target": "高度维频谱机会", "type": "研究"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ITU-R M.2079", "en": "Technical and operational information for identifying Spectrum for the terrestrial component of future development of IMT-2000 and IMT-Advanced"},
+        {"title": "认知无线网络", "en": "Cognitive Wireless Network"},
+        {"title": "Spectrum Occupancy Measurements", "en": "频谱占用测量"},
+        {"title": "Spectrum Policy Task Force", "en": "频谱政策工作组"},
+        {"title": "Spectrum Survey in Singapore", "en": "新加坡频谱调查"},
+        {"title": "Beijing Spectrum Survey for Cognitive Radio Applications", "en": "北京认知无线电应用频谱调查"},
+        {"title": "Wireless Network Virtualization", "en": "无线网络虚拟化"},
+        {"title": "Radio Access Network Virtualization for Future Mobile Carrier Networks", "en": "未来移动载波网络的无线接入网络虚拟化"}
+    ],
+    "relations": [
+        {"source": "ITU-R M.2079", "target": "Cognitive Wireless Network", "type": "包含"},
+        {"source": "Spectrum Occupancy Measurements", "target": "ITU-R M.2079", "type": "相关"},
+        {"source": "Spectrum Policy Task Force", "target": "ITU-R M.2079", "type": "相关"},
+        {"source": "Spectrum Survey in Singapore", "target": "Cognitive Wireless Network", "type": "相关"},
+        {"source": "Beijing Spectrum Survey for Cognitive Radio Applications", "target": "Cognitive Wireless Network", "type": "相关"},
+        {"source": "Wireless Network Virtualization", "target": "Cognitive Wireless Network", "type": "相关"},
+        {"source": "Radio Access Network Virtualization for Future Mobile Carrier Networks", "target": "Wireless Network Virtualization", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "3GPP",
+            "en": "3GPP"
+        },
+        {
+            "title": "Cognitive Radio",
+            "en": "Cognitive Radio"
+        },
+        {
+            "title": "Spectrum Sensing Algorithms",
+            "en": "Spectrum Sensing Algorithms"
+        },
+        {
+            "title": "Energy Detection",
+            "en": "Energy Detection"
+        }
+    ],
+    "relations": [
+        {
+            "source": "3GPP",
+            "target": "Cognitive Radio",
+            "type": "Technical Specification Group Services and System Aspects"
+        },
+        {
+            "source": "3GPP",
+            "target": "Cognitive Radio",
+            "type": "Service Aspects and Requirements for Network Sharing"
+        },
+        {
+            "source": "Cognitive Radio",
+            "target": "ITU-R M.2225",
+            "type": "Introduction to Cognitive Radio Systems in the Land Mobile Service"
+        },
+        {
+            "source": "Cognitive Radio",
+            "target": "J. Mitola",
+            "type": "An Integrated Agent Architecture for Software Defined Radio"
+        },
+        {
+            "source": "Cognitive Radio",
+            "target": "S. Haykin",
+            "type": "Brain-Empowered Wireless Communications"
+        },
+        {
+            "source": "Cognitive Radio",
+            "target": "B. Wang and K. J. R. Liu",
+            "type": "Advances in Cognitive Radio Networks: A Survey"
+        },
+        {
+            "source": "Cognitive Radio",
+            "target": "W. Xu, J. Lin, Z. Feng, W. Xu and P. Zhang",
+            "type": "Cognition Flow in Cognitive Radio Networks"
+        },
+        {
+            "source": "Cognitive Radio",
+            "target": "Z. Feng, Z. Wei, Q. Zhang and P. Zhang",
+            "type": "Cognitive Information Metrics for Cognitive Wireless Networks"
+        },
+        {
+            "source": "Cognitive Radio",
+            "target": "Q. Zhang, Z. Wei, Z. Feng and I. Ahmad",
+            "type": "Temporal Entropy and Cognitive Information Based Efficient Environment Awareness Techniques in Cognitive Radio Networks"
+        },
+        {
+            "source": "Spectrum Sensing Algorithms",
+            "target": "T. Yucek and H. Arslan",
+            "type": "A Survey of Spectrum Sensing Algorithms for Cognitive Radio Applications"
+        },
+        {
+            "source": "Spectrum Sensing Algorithms",
+            "target": "F. F. Digham, M. S. Alouini and M. K. Simon",
+            "type": "On the Energy Detection of Unknown Signals Over Fading Channels"
+        },
+        {
+            "source": "Spectrum Agile Radios",
+            "target": "S. Shankar, C. Cordeiro and K. Challapali",
+            "type": "Utilization and Sensing Architectures"
+        },
+        {
+            "source": "Energy Detection",
+            "target": "H. Urkowitz",
+            "type": "Energy Detection of Unknown Deterministic Signals"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频谱感知", "en": "Spectrum sensing"},
+        {"title": "数字通信", "en": "Digital communications"},
+        {"title": "循环平稳信号", "en": "Cyclostationary signals"},
+        {"title": "协作通信", "en": "Cooperative communications"},
+        {"title": "频谱孔", "en": "Spectrum hole"}
+    ],
+    "relations": [
+        {"source": "频谱感知", "target": "数字通信", "type": "基础理论"},
+        {"source": "频谱感知", "target": "循环平稳信号", "type": "应用"},
+        {"source": "频谱感知", "target": "协作通信", "type": "应用"},
+        {"source": "频谱感知", "target": "频谱孔", "type": "应用"},
+        {"source": "数字通信", "target": "循环平稳信号", "type": "基础理论"},
+        {"source": "协作通信", "target": "频谱感知", "type": "应用"},
+        {"source": "协作通信", "target": "循环平稳信号", "type": "应用"},
+        {"source": "协作通信", "target": "频谱孔", "type": "应用"},
+        {"source": "频谱孔", "target": "频谱感知", "type": "应用"},
+        {"source": "频谱孔", "target": "循环平稳信号", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks", "en": "认知双极化网络的主要独占区和吞吐量"},
+        {"title": "Three regions for space-time spectrum sensing and access in cognitive radio networks", "en": "认知无线电网络中空时频谱感知和接入的三个区域"},
+        {"title": "Joint Spatial-Temporal Spectrum Sensing for Cognitive Radio Networks", "en": "认知无线电网络的联合时空谱感知"},
+        {"title": "Spatial-Temporal Opportunity Detection for Spectrum-Heterogeneous Cognitive Radio Networks: Two-Dimensional Sensing", "en": "面向频谱异构认知无线电网络的时空机会检测：二维感知"},
+        {"title": "Joint Temporal and Spatial Sensing Based Cooperative Cognitive Networks", "en": "基于联合时空感知的合作认知网络"},
+        {"title": "Second Report and Order and Memorandum Opinion and Order: In the Matter of Unlicensed Operation in the TV Broadcast Bands", "en": "关于电视广播频段未经许可操作的第二份报告和意见书"},
+        {"title": "Second Memorandum Opinion and Order", "en": "第二份备忘录意见和命令"},
+        {"title": "Technical and operational requirements for the operation of white space devices under geo-location approach", "en": "地理位置方法下白空间设备运行的技术和操作要求"},
+        {"title": "IEEE 802.22: The first cognitive radio wireless regional area network standard", "en": "IEEE 802.22：第一个认知无线电无线区域网络标准"},
+        {"title": "Aligning technology, business and regulatory scenarios for cognitive radio", "en": "为认知无线电调整技术、商业和监管场景"},
+        {"title": "Geolocation Database beyond TV White Space? Matching Applications with Database Requirements", "en": "电视白色空间之外的地理位置数据库？将应用与数据库要求匹配"},
+        {"title": "Potential collapse of white spaces and the prospect for a universal power rule", "en": "白色空间的潜在崩溃和普遍功率规则的前景"}
+    ],
+    "relations": [
+        {"source": "Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks", "target": "Three regions for space-time spectrum sensing and access in cognitive radio networks", "type": "相关"},
+        {"source": "Three regions for space-time spectrum sensing and access in cognitive radio networks", "target": "Joint Spatial-Temporal Spectrum Sensing for Cognitive Radio Networks", "type": "相关"},
+        {"source": "Joint Spatial-Temporal Spectrum Sensing for Cognitive Radio Networks", "target": "Spatial-Temporal Opportunity Detection for Spectrum-Heterogeneous Cognitive Radio Networks: Two-Dimensional Sensing", "type": "相关"},
+        {"source": "Spatial-Temporal Opportunity Detection for Spectrum-Heterogeneous Cognitive Radio Networks: Two-Dimensional Sensing", "target": "Joint Temporal and Spatial Sensing Based Cooperative Cognitive Networks", "type": "相关"},
+        {"source": "Second Report and Order and Memorandum Opinion and Order: In the Matter of Unlicensed Operation in the TV Broadcast Bands", "target": "Second Memorandum Opinion and Order", "type": "相关"},
+        {"source": "Technical and operational requirements for the operation of white space devices under geo-location approach", "target": "IEEE 802.22: The first cognitive radio wireless regional area network standard", "type": "相关"},
+        {"source": "IEEE 802.22: The first cognitive radio wireless regional area network standard", "target": "Aligning technology, business and regulatory scenarios for cognitive radio", "type": "相关"},
+        {"source": "Aligning technology, business and regulatory scenarios for cognitive radio", "target": "Geolocation Database beyond TV White Space? Matching Applications with Database Requirements", "type": "相关"},
+        {"source": "Geolocation Database beyond TV White Space? Matching Applications with Database Requirements", "target": "Potential collapse of white spaces and the prospect for a universal power rule", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Resourceflow: Autonomous cognitive resource management framework for future networks", "en": ""},
+        {"title": "基于数学空间的认知无线电频谱资源表征方法", "en": "Mathematical space-based characterization method for cognitive radio spectrum resources"},
+        {"title": "认知网络资源的矢量空间模型构建方法", "en": "Vector space model construction method for cognitive network resources"},
+        {"title": "一种认知网络资源的解析方法", "en": "Analysis method for cognitive network resources"},
+        {"title": "On the construction of Radio Environment Maps for Cognitive Radio Networks", "en": ""},
+        {"title": "Fractal theory-based dynamic mesh grouping scheme for efficient cognitive pilot channel design", "en": ""},
+        {"title": "A novel on-demand cognitive pilot channel enabling dynamic spectrum allocation", "en": ""},
+        {"title": "Efficient Mesh Division and Differential Information Coding Schemes in Broadcast Cognitive Pilot Channel", "en": ""},
+        {"title": "A Geographically Homogeneous Mesh Grouping Scheme for Broadcast Cognitive Pilot Channel in Heterogeneous Wireless Networks", "en": ""},
+        {"title": "Dynamic open spectrum sharing for wireless ad hoc networks", "en": ""},
+        {"title": "Common control channel design for cognitive radio wireless ad hoc networks using adaptive frequency hopping", "en": ""},
+        {"title": "A survey of common control channel design in cognitive radio networks", "en": ""},
+        {"title": "Next generation dynamic spectrum access/cognitive radio wireless networks: a survey", "en": ""}
+    ],
+    "relations": [
+        {"source": "Resourceflow: Autonomous cognitive resource management framework for future networks", "target": "基于数学空间的认知无线电频谱资源表征方法", "type": "相关"},
+        {"source": "基于数学空间的认知无线电频谱资源表征方法", "target": "认知网络资源的矢量空间模型构建方法", "type": "相关"},
+        {"source": "认知网络资源的矢量空间模型构建方法", "target": "一种认知网络资源的解析方法", "type": "相关"},
+        {"source": "On the construction of Radio Environment Maps for Cognitive Radio Networks", "target": "Fractal theory-based dynamic mesh grouping scheme for efficient cognitive pilot channel design", "type": "相关"},
+        {"source": "Fractal theory-based dynamic mesh grouping scheme for efficient cognitive pilot channel design", "target": "Efficient Mesh Division and Differential Information Coding Schemes in Broadcast Cognitive Pilot Channel", "type": "相关"},
+        {"source": "Efficient Mesh Division and Differential Information Coding Schemes in Broadcast Cognitive Pilot Channel", "target": "A Geographically Homogeneous Mesh Grouping Scheme for Broadcast Cognitive Pilot Channel in Heterogeneous Wireless Networks", "type": "相关"},
+        {"source": "Dynamic open spectrum sharing for wireless ad hoc networks", "target": "Common control channel design for cognitive radio wireless ad hoc networks using adaptive frequency hopping", "type": "相关"},
+        {"source": "Common control channel design for cognitive radio wireless ad hoc networks using adaptive frequency hopping", "target": "A survey of common control channel design in cognitive radio networks", "type": "相关"},
+        {"source": "A survey of common control channel design in cognitive radio networks", "target": "Next generation dynamic spectrum access/cognitive radio wireless networks: a survey", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线电网络", "en": "Cognitive Radio Ad Hoc Networks"},
+        {"title": "认知无线电网络中的合作谱感知", "en": "Cooperative Spectrum Sensing in Cognitive Radio Networks: A Survey"},
+        {"title": "认知MAC协议", "en": "C-MAC: A cognitive MAC protocol for multi-channel wireless networks"},
+        {"title": "认知中介访问", "en": "Cognitive Medium Access"},
+        {"title": "动态频谱分配的主要优先马尔可夫方法", "en": "Primary-prioritized Markov approach for dynamic spectrum allocation"},
+        {"title": "认知无线电网络中的随机信道选择", "en": "Stochastic channel selection in cognitive radio networks"},
+        {"title": "认知无线电网络中的资源管理", "en": "Resource management for QoS support in cognitive radio networks"},
+        {"title": "未来蜂窝网络的认知无线电资源管理", "en": "Cognitive radio resource management for future cellular networks"},
+        {"title": "下一代动态频谱访问认知无线电无线网络", "en": "Next generation dynamic spectrum access cognitive radio wireless networks: A survey"},
+        {"title": "动态频谱网络中的路由和频谱选择", "en": "Route and spectrum selection in dynamic spectrum networks"},
+        {"title": "动态频谱访问网络中的拓扑形成和路由的新型分层图模型", "en": "A novel layered graph model for topology formation and routing in dynamic spectrum access networks"},
+        {"title": "认知无线电网络中的控制信道MAC层配置、路由和情境感知", "en": "Control channel based MAC-layer configuration, routing and situation awareness for cognitive radio networks"}
+    ],
+    "relations": [
+        {"source": "Cognitive Radio Ad Hoc Networks", "target": "Cooperative Spectrum Sensing in Cognitive Radio Networks: A Survey", "type": "包含"},
+        {"source": "Cognitive Radio Ad Hoc Networks", "target": "C-MAC: A cognitive MAC protocol for multi-channel wireless networks", "type": "包含"},
+        {"source": "C-MAC: A cognitive MAC protocol for multi-channel wireless networks", "target": "Cognitive Medium Access", "type": "包含"},
+        {"source": "Cognitive Medium Access", "target": "Stochastic channel selection in cognitive radio networks", "type": "包含"},
+        {"source": "Primary-prioritized Markov approach for dynamic spectrum allocation", "target": "Stochastic channel selection in cognitive radio networks", "type": "相关"},
+        {"source": "Resource management for QoS support in cognitive radio networks", "target": "Cognitive radio resource management for future cellular networks", "type": "包含"},
+        {"source": "Next generation dynamic spectrum access cognitive radio wireless networks: A survey", "target": "Cognitive Radio Ad Hoc Networks", "type": "相关"},
+        {"source": "Route and spectrum selection in dynamic spectrum networks", "target": "A novel layered graph model for topology formation and routing in dynamic spectrum access networks", "type": "包含"},
+        {"source": "Control channel based MAC-layer configuration, routing and situation awareness for cognitive radio networks", "target": "C-MAC: A cognitive MAC protocol for multi-channel wireless networks", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Capacity of Cognitive Radio under Outage Constraint with Partial Channel Knowledge", "en": ""},
+        {"title": "Outage Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity and Outdated CSI under Asymmetric Fading", "en": ""},
+        {"title": "Generalized Results of Transmission Capacities for Overlaid Wireless Networks", "en": ""},
+        {"title": "Spectrum-Sharing Transmission Capacity with Interference Cancellation", "en": ""},
+        {"title": "Effective Capacity of Delay Quality-of-Service Constrained Spectrum Sharing Cognitive Radio with Outdated Channel Feedback", "en": ""},
+        {"title": "Protecting Primary Users in Cognitive Radio Networks with Effective Capacity Loss Constraint", "en": ""},
+        {"title": "On the Impacts of Channel Estimation Errors and Feedback Delay on the Ergodic Capacity for Spectrum Sharing Cognitive Radio", "en": ""},
+        {"title": "Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity under Delay Quality-of-Service Constraints in Nakagami Fading Environments", "en": ""},
+        {"title": "Capacity of Cognitive Radio Under Delay Quality-of-Service Constraints with Outdated Channel Feedback", "en": ""},
+        {"title": "The Capacity of Wireless Networks", "en": ""},
+        {"title": "Cognitive Networks Achieve Throughput Scaling of a Homogeneous Network", "en": ""}
+    ],
+    "relations": [
+        {"source": "Capacity of Cognitive Radio under Outage Constraint with Partial Channel Knowledge", "target": "Outage Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity and Outdated CSI under Asymmetric Fading", "type": "related"},
+        {"source": "Capacity of Cognitive Radio under Outage Constraint with Partial Channel Knowledge", "target": "Effective Capacity of Delay Quality-of-Service Constrained Spectrum Sharing Cognitive Radio with Outdated Channel Feedback", "type": "related"},
+        {"source": "Outage Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity and Outdated CSI under Asymmetric Fading", "target": "Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity under Delay Quality-of-Service Constraints in Nakagami Fading Environments", "type": "related"},
+        {"source": "Effective Capacity of Delay Quality-of-Service Constrained Spectrum Sharing Cognitive Radio with Outdated Channel Feedback", "target": "Capacity of Cognitive Radio Under Delay Quality-of-Service Constraints with Outdated Channel Feedback", "type": "related"},
+        {"source": "Capacity of Cognitive Radio Under Delay Quality-of-Service Constraints with Outdated Channel Feedback", "target": "Capacity of Spectrum Sharing Cognitive Radio with MRC Diversity under Delay Quality-of-Service Constraints in Nakagami Fading Environments", "type": "related"},
+        {"source": "The Capacity of Wireless Networks", "target": "Cognitive Networks Achieve Throughput Scaling of a Homogeneous Network", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Capacity scaling of general cognitive networks", "en": ""},
+        {"title": "Critical power for asymptotic connectivity", "en": ""},
+        {"title": "On the critical total power for asymptotic k-connectivity in wireless networks", "en": ""},
+        {"title": "On the Connectivity and Multihop Delay of Ad Hoc Cognitive Radio Networks", "en": ""},
+        {"title": "Connectivity of Multiple Cooperative Cognitive Radio Ad Hoc Networks", "en": ""},
+        {"title": "Measuring the connectivity of a cognitive radio ad-hoc network", "en": ""},
+        {"title": "Performance Evaluation of Cognitive Radios: Metrics, Utility Functions, and Methodology", "en": ""},
+        {"title": "Radio Environment Map as Enabler for Practical Cognitive Radio Networks", "en": ""},
+        {"title": "An algorithm for fast REM construction", "en": ""},
+        {"title": "Enhancing cognitive radios with spatial statistics: From radio environment maps to topology engine", "en": ""},
+        {"title": "Constructing radio environment maps with heterogeneous spectrum sensors", "en": ""},
+        {"title": "Sensor Placement Algorithm for Radio Environment Map Construction in Cognitive Radio Networks", "en": ""}
+    ],
+    "relations": [
+        {"source": "Capacity scaling of general cognitive networks", "target": "Critical power for asymptotic connectivity", "type": "related"},
+        {"source": "Critical power for asymptotic connectivity", "target": "On the critical total power for asymptotic k-connectivity in wireless networks", "type": "related"},
+        {"source": "On the critical total power for asymptotic k-connectivity in wireless networks", "target": "On the Connectivity and Multihop Delay of Ad Hoc Cognitive Radio Networks", "type": "related"},
+        {"source": "On the Connectivity and Multihop Delay of Ad Hoc Cognitive Radio Networks", "target": "Connectivity of Multiple Cooperative Cognitive Radio Ad Hoc Networks", "type": "related"},
+        {"source": "Connectivity of Multiple Cooperative Cognitive Radio Ad Hoc Networks", "target": "Measuring the connectivity of a cognitive radio ad-hoc network", "type": "related"},
+        {"source": "Measuring the connectivity of a cognitive radio ad-hoc network", "target": "Performance Evaluation of Cognitive Radios: Metrics, Utility Functions, and Methodology", "type": "related"},
+        {"source": "Radio Environment Map as Enabler for Practical Cognitive Radio Networks", "target": "An algorithm for fast REM construction", "type": "related"},
+        {"source": "An algorithm for fast REM construction", "target": "Enhancing cognitive radios with spatial statistics: From radio environment maps to topology engine", "type": "related"},
+        {"source": "Enhancing cognitive radios with spatial statistics: From radio environment maps to topology engine", "target": "Constructing radio environment maps with heterogeneous spectrum sensors", "type": "related"},
+        {"source": "Constructing radio environment maps with heterogeneous spectrum sensors", "target": "Sensor Placement Algorithm for Radio Environment Map Construction in Cognitive Radio Networks", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Database-Assisted Multi-AP Network on TV White Spaces: Architecture, Spectrum Allocation and AP Discovery", "en": ""},
+        {"title": "Hybrid Pricing for TV White Space Database", "en": ""},
+        {"title": "A Hybrid Pricing Framework for TV White Space Database", "en": ""},
+        {"title": "Comparison of Channel State Acquisition Schemes in Cognitive Radio Environment", "en": ""},
+        {"title": "Radar, TV and Cellular Bands: Which Spectrum Access Techniques for Which Bands?", "en": ""},
+        {"title": "A Secure Radio Environment Map Database to Share Spectrum", "en": ""},
+        {"title": "Primary-User Emulation Detection Using Database-Assisted Frequency-Domain Action Recognition", "en": ""},
+        {"title": "Kernel-based Learning for Statistical Signal Processing in Cognitive Radio Networks: Theoretical Foundations; Example Applications, and Future Directions", "en": ""},
+        {"title": "Spectrum Sensing in Opportunity Heterogeneous Cognitive Sensor Networks: How to Cooperate?", "en": ""},
+        {"title": "Secondary Spectrum Access Networks", "en": ""},
+        {"title": "Three Regions for Space-Time Spectrum Sensing and Access in Cognitive Radio Networks", "en": ""}
+    ],
+    "relations": [
+        {"source": "Database-Assisted Multi-AP Network on TV White Spaces: Architecture, Spectrum Allocation and AP Discovery", "target": "Hybrid Pricing for TV White Space Database", "type": "related"},
+        {"source": "Hybrid Pricing for TV White Space Database", "target": "A Hybrid Pricing Framework for TV White Space Database", "type": "related"},
+        {"source": "Comparison of Channel State Acquisition Schemes in Cognitive Radio Environment", "target": "Secondary Spectrum Access Networks", "type": "related"},
+        {"source": "Radar, TV and Cellular Bands: Which Spectrum Access Techniques for Which Bands?", "target": "Secondary Spectrum Access Networks", "type": "related"},
+        {"source": "A Secure Radio Environment Map Database to Share Spectrum", "target": "Primary-User Emulation Detection Using Database-Assisted Frequency-Domain Action Recognition", "type": "related"},
+        {"source": "Kernel-based Learning for Statistical Signal Processing in Cognitive Radio Networks: Theoretical Foundations; Example Applications, and Future Directions", "target": "Spectrum Sensing in Opportunity Heterogeneous Cognitive Sensor Networks: How to Cooperate?", "type": "related"},
+        {"source": "Three Regions for Space-Time Spectrum Sensing and Access in Cognitive Radio Networks", "target": "Database-Assisted Multi-AP Network on TV White Spaces: Architecture, Spectrum Allocation and AP Discovery", "type": "related"},
+        {"source": "Three Regions for Space-Time Spectrum Sensing and Access in Cognitive Radio Networks", "target": "Hybrid Pricing for TV White Space Database", "type": "related"},
+        {"source": "Three Regions for Space-Time Spectrum Sensing and Access in Cognitive Radio Networks", "target": "A Hybrid Pricing Framework for TV White Space Database", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Cognition-oriented relaying exploiting 4-D spectrum holes", "en": ""},
+        {"title": "Robust beamforming in cognitive radio", "en": ""},
+        {"title": "Robust cognitive beamforming with partial channel state information", "en": ""},
+        {"title": "Robust cognitive radio cooperative beamforming", "en": ""},
+        {"title": "Robust power control and beamforming in cognitive radio networks", "en": ""},
+        {"title": "Joint beamforming and power allocation for multiple access channels in cognitive radio networks", "en": ""},
+        {"title": "Beamforming and rate allocation in MISO cognitive radio networks", "en": ""},
+        {"title": "Power minimization in MIMO cognitive networks using beamforming games", "en": ""},
+        {"title": "Relay beamforming with power minimization in cognitive radio network", "en": ""},
+        {"title": "Throughput and energy efficiency of cognitive MIMO transmissions", "en": ""},
+        {"title": "Capacity of three-dimensional wireless networks", "en": ""},
+        {"title": "Outer bound to the capacity scaling of three-dimensional wireless networks", "en": ""}
+    ],
+    "relations": [
+        {"source": "Cognition-oriented relaying exploiting 4-D spectrum holes", "target": "Robust beamforming in cognitive radio", "type": "关联"},
+        {"source": "Robust beamforming in cognitive radio", "target": "Robust cognitive beamforming with partial channel state information", "type": "关联"},
+        {"source": "Robust cognitive beamforming with partial channel state information", "target": "Robust cognitive radio cooperative beamforming", "type": "关联"},
+        {"source": "Robust cognitive radio cooperative beamforming", "target": "Joint beamforming and power allocation for multiple access channels in cognitive radio networks", "type": "关联"},
+        {"source": "Robust power control and beamforming in cognitive radio networks", "target": "Joint beamforming and power allocation for multiple access channels in cognitive radio networks", "type": "关联"},
+        {"source": "Beamforming and rate allocation in MISO cognitive radio networks", "target": "Robust beamforming in cognitive radio", "type": "关联"},
+        {"source": "Power minimization in MIMO cognitive networks using beamforming games", "target": "Beamforming and rate allocation in MISO cognitive radio networks", "type": "关联"},
+        {"source": "Relay beamforming with power minimization in cognitive radio network", "target": "Robust beamforming in cognitive radio", "type": "关联"},
+        {"source": "Throughput and energy efficiency of cognitive MIMO transmissions", "target": "Robust beamforming in cognitive radio", "type": "关联"},
+        {"source": "Capacity of three-dimensional wireless networks", "target": "Outer bound to the capacity scaling of three-dimensional wireless networks", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "三维无线自组网的容量界限", "en": "Capacity bounds of three-dimensional wireless ad hoc networks"},
+        {"title": "通过渗透研究无线网络容量的几何学研究", "en": "A geometry study on the capacity of wireless networks via percolation"},
+        {"title": "三维空间中UWB网络的容量分析", "en": "Capacity analysis of UWB networks in three-dimensional space"},
+        {"title": "卫星通信中认知无线电的概述", "en": "An overview of cognitive radio for satellite communications"},
+        {"title": "将认知无线电技术应用于卫星通信", "en": "Application of cognitive radio techniques to satellite communication"},
+        {"title": "卫星通信中的认知无线电场景", "en": "Cognitive radio scenarios for satellite communications: The CoRaSat approach"},
+        {"title": "卫星地面无线电的认知", "en": "Cognitive satellite terrestrial radios"},
+        {"title": "Ka波段多波束卫星通信中的认知频谱利用", "en": "Cognitive spectrum utilization in Ka-band multibeam satellite communications"},
+        {"title": "部分认知覆盖无线电的容量", "en": "On the capacity of overlay cognitive radios with partial cognition"},
+        {"title": "认知无线电网络中联合合作中继方案", "en": "Joint cooperative relay scheme for spectrum-efficient usage and capacity improvement in cognitive radio networks"},
+        {"title": "具有定向传输的认知无线电网络的渐近吞吐量和连通性", "en": "The asymptotic throughput and connectivity of cognitive radio networks with directional transmission"}
+    ],
+    "relations": [
+        {"source": "三维无线自组网的容量界限", "target": "通过渗透研究无线网络容量的几何学研究", "type": "关联"},
+        {"source": "三维无线自组网的容量界限", "target": "三维空间中UWB网络的容量分析", "type": "关联"},
+        {"source": "卫星通信中认知无线电的概述", "target": "将认知无线电技术应用于卫星通信", "type": "关联"},
+        {"source": "将认知无线电技术应用于卫星通信", "target": "卫星通信中的认知无线电场景", "type": "关联"},
+        {"source": "卫星通信中的认知无线电场景", "target": "卫星地面无线电的认知", "type": "关联"},
+        {"source": "卫星通信中的认知无线电场景", "target": "卫星地面无线电的认知", "type": "关联"},
+        {"source": "卫星通信中的认知无线电场景", "target": "卫星地面无线电的认知", "type": "关联"},
+        {"source": "卫星通信中的认知无线电场景", "target": "Ka波段多波束卫星通信中的认知频谱利用", "type": "关联"},
+        {"source": "部分认知覆盖无线电的容量", "target": "具有定向传输的认知无线电网络的渐近吞吐量和连通性", "type": "关联"},
+        {"source": "认知无线电网络中联合合作中继方案", "target": "具有定向传输的认知无线电网络的渐近吞吐量和连通性", "type": "关联"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Transmission capacity of wireless ad hoc networks without outage constraints", "en": ""},
+        {"title": "Scaling laws for overlaid wireless networks: A cognitive radio network vs. a primary network", "en": ""},
+        {"title": "Achievable Transmission Capacity of Cognitive Radio Networks with Cooperative Relaying", "en": ""},
+        {"title": "Transmission Capacity of Spectrum Sharing Ad Hoc Networks with Multiple Antennas", "en": ""},
+        {"title": "On the Throughput Scaling of Cognitive Radio Ad Hoc Networks", "en": ""},
+        {"title": "Multicast Capacity Scaling Laws for Multihop Cognitive Networks", "en": ""},
+        {"title": "Scaling Laws of Cognitive Ad Hoc Networks over General Primary Network Models", "en": ""},
+        {"title": "Cooperation Improves Delay in Cognitive Networks with Hybrid Random Walk", "en": ""},
+        {"title": "认知无线网络基础理论与关键技术研究", "en": "Fundamental Theory and Key Technologies of Cognitive Wireless Networks"},
+        {"title": "认知无线网络中的重构管理研究", "en": "Research on Reconstruction Management in Cognitive Wireless Networks"},
+        {"title": "认知无线网络中的无线资源分配研究", "en": "Research on Wireless Resource Allocation in Cognitive Wireless Networks"}
+    ],
+    "relations": [
+        {"source": "Transmission capacity of wireless ad hoc networks without outage constraints", "target": "Scaling laws for overlaid wireless networks: A cognitive radio network vs. a primary network", "type": "related"},
+        {"source": "Transmission capacity of wireless ad hoc networks without outage constraints", "target": "Achievable Transmission Capacity of Cognitive Radio Networks with Cooperative Relaying", "type": "related"},
+        {"source": "Transmission capacity of wireless ad hoc networks without outage constraints", "target": "Transmission Capacity of Spectrum Sharing Ad Hoc Networks with Multiple Antennas", "type": "related"},
+        {"source": "Transmission capacity of wireless ad hoc networks without outage constraints", "target": "On the Throughput Scaling of Cognitive Radio Ad Hoc Networks", "type": "related"},
+        {"source": "Scaling laws for overlaid wireless networks: A cognitive radio network vs. a primary network", "target": "Multicast Capacity Scaling Laws for Multihop Cognitive Networks", "type": "related"},
+        {"source": "Scaling laws for overlaid wireless networks: A cognitive radio network vs. a primary network", "target": "Scaling Laws of Cognitive Ad Hoc Networks over General Primary Network Models", "type": "related"},
+        {"source": "Achievable Transmission Capacity of Cognitive Radio Networks with Cooperative Relaying", "target": "Cooperation Improves Delay in Cognitive Networks with Hybrid Random Walk", "type": "related"},
+        {"source": "认知无线网络基础理论与关键技术研究", "target": "认知无线网络中的重构管理研究", "type": "related"},
+        {"source": "认知无线网络基础理论与关键技术研究", "target": "认知无线网络中的无线资源分配研究", "type": "related"},
+        {"source": "认知无线网络中的重构管理研究", "target": "认知无线网络中的无线资源分配研究", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知数据库结合认知导频信道技术", "en": "Cognitive Pilot Channel combined with Cognitive Database"},
+        {"title": "频谱感知方法", "en": "Spectrum sensing methods"},
+        {"title": "认知数据库", "en": "Cognitive database"},
+        {"title": "栅格", "en": "Grids"},
+        {"title": "认知信息传递", "en": "Cognitive information transmission"},
+        {"title": "空间和时间维度的认知信息", "en": "Spatial and temporal dimensions of cognitive information"}
+    ],
+    "relations": [
+        {"source": "认知数据库结合认知导频信道技术", "target": "频谱使用效率", "type": "提升"},
+        {"source": "频谱感知方法", "target": "频谱利用率", "type": "提升"},
+        {"source": "频谱感知方法", "target": "国际电信联盟标准", "type": "描述"},
+        {"source": "频谱感知方法", "target": "相关规定和标准", "type": "颁布"},
+        {"source": "TV白频谱", "target": "非授权无线电设备", "type": "部署"},
+        {"source": "TV白频谱", "target": "IEEE802.22标准", "type": "代表性"},
+        {"source": "认知数据库", "target": "频谱空洞信息", "type": "存储"},
+        {"source": "认知数据库", "target": "次用户干扰", "type": "避免"},
+        {"source": "认知信息传递", "target": "认知信息获取", "type": "指导"},
+        {"source": "认知信息传递", "target": "认知用户性能", "type": "影响"},
+        {"source": "栅格", "target": "认知信息传递", "type": "最小处理单位"},
+        {"source": "栅格", "target": "认知信息传递效率", "type": "影响"},
+        {"source": "栅格", "target": "认知信息传递精度", "type": "影响"},
+        {"source": "空间和时间维度的认知信息", "target": "认知无线网络环境感知技术", "type": "指导"},
+        {"source": "空间和时间维度的认知信息", "target": "频谱检测技术参数", "type": "选取和优化"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "认知数据库设计中的问题",
+            "en": "Issues in the design of cognitive databases"
+        },
+        {
+            "title": "认知信息表征理论",
+            "en": "Theory of cognitive information representation"
+        },
+        {
+            "title": "空间维度认知信息表征方法",
+            "en": "Method of spatial dimension cognitive information representation"
+        },
+        {
+            "title": "认知信息度量方法",
+            "en": "Method of cognitive information measurement"
+        },
+        {
+            "title": "认知信息传递方法",
+            "en": "Method of cognitive information transmission"
+        }
+    ],
+    "relations": [
+        {
+            "source": "认知数据库设计中的问题",
+            "target": "空间维度认知信息表征方法",
+            "type": "包含"
+        },
+        {
+            "source": "认知数据库设计中的问题",
+            "target": "认知信息度量方法",
+            "type": "包含"
+        },
+        {
+            "source": "认知数据库设计中的问题",
+            "target": "认知信息传递方法",
+            "type": "包含"
+        },
+        {
+            "source": "认知信息表征理论",
+            "target": "空间维度认知信息表征方法",
+            "type": "关联"
+        },
+        {
+            "source": "认知信息表征理论",
+            "target": "认知信息度量方法",
+            "type": "关联"
+        },
+        {
+            "source": "认知信息表征理论",
+            "target": "认知信息传递方法",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "二进制数R(k,x,y)表示主用户网络在坐标点(工疗)的存在与否",
+            "en": "Binary number R(k,x,y) represents the existence of the primary user network at the coordinate point (k, x, y)"
+        },
+        {
+            "title": "用十进制数表示所有主网络在坐标点(x,V)的覆盖情况",
+            "en": "Use decimal numbers to represent the coverage of all primary networks at the coordinate point (x, V)"
+        },
+        {
+            "title": "定义在栅格内部无线电参数的概率分布",
+            "en": "Define the probability distribution of wireless parameters inside the grid"
+        },
+        {
+            "title": "定义栅格内部无线电参数的面积比例",
+            "en": "Define the area ratio of wireless parameters inside the grid"
+        },
+        {
+            "title": "定义空间维度频谱嫡",
+            "en": "Define spatial dimension spectrum entropy"
+        },
+        {
+            "title": "探索空间维度频谱嫡和无线电参数误差的数学性质",
+            "en": "Explore the mathematical properties of spatial dimension spectrum entropy and wireless parameter error"
+        }
+    ],
+    "relations": [
+        {
+            "source": "二进制数R(k,x,y)表示主用户网络在坐标点(工疗)的存在与否",
+            "target": "用十进制数表示所有主网络在坐标点(x,V)的覆盖情况",
+            "type": "defines"
+        },
+        {
+            "source": "用十进制数表示所有主网络在坐标点(x,V)的覆盖情况",
+            "target": "定义在栅格内部无线电参数的概率分布",
+            "type": "defines"
+        },
+        {
+            "source": "定义在栅格内部无线电参数的概率分布",
+            "target": "定义栅格内部无线电参数的面积比例",
+            "type": "defines"
+        },
+        {
+            "source": "定义栅格内部无线电参数的面积比例",
+            "target": "定义空间维度频谱嫡",
+            "type": "defines"
+        },
+        {
+            "source": "定义空间维度频谱嫡",
+            "target": "探索空间维度频谱嫡和无线电参数误差的数学性质",
+            "type": "explores"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "栅格数目M",
+            "en": "Number of grid M"
+        },
+        {
+            "title": "栅格的边长和整个区域的边长",
+            "en": "Grid side length and the side length of the entire area"
+        },
+        {
+            "title": "参数不纯净的栅格",
+            "en": "Grid with impure parameters"
+        },
+        {
+            "title": "填充问题",
+            "en": "Filling problem"
+        },
+        {
+            "title": "无线电参数不纯净的栅格数目",
+            "en": "Number of grids with impure radio parameters"
+        },
+        {
+            "title": "无线电参数误差",
+            "en": "Radio parameter error"
+        },
+        {
+            "title": "空间维度频谱嫡H",
+            "en": "Spatial dimension spectrum H"
+        },
+        {
+            "title": "错误概率",
+            "en": "Error probability"
+        },
+        {
+            "title": "随机变量",
+            "en": "Random variable"
+        },
+        {
+            "title": "地理炳",
+            "en": "Geographic brightness"
+        }
+    ],
+    "relations": [
+        {
+            "source": "栅格数目M",
+            "target": "参数不纯净的栅格",
+            "type": "包含"
+        },
+        {
+            "source": "栅格数目M",
+            "target": "栅格的边长和整个区域的边长",
+            "type": "相关"
+        },
+        {
+            "source": "参数不纯净的栅格",
+            "target": "填充问题",
+            "type": "相关"
+        },
+        {
+            "source": "填充问题",
+            "target": "无线电参数不纯净的栅格数目",
+            "type": "推导"
+        },
+        {
+            "source": "无线电参数不纯净的栅格数目",
+            "target": "无线电参数误差",
+            "type": "相关"
+        },
+        {
+            "source": "栅格数目M",
+            "target": "空间维度频谱嫡H",
+            "type": "相关"
+        },
+        {
+            "source": "无线电参数误差",
+            "target": "错误概率",
+            "type": "相关"
+        },
+        {
+            "source": "随机变量",
+            "target": "错误概率",
+            "type": "相关"
+        },
+        {
+            "source": "空间维度频谱嫡H",
+            "target": "地理炳",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "随机变量R",
+            "en": "Random variable R"
+        },
+        {
+            "title": "香农熵",
+            "en": "Shannon entropy"
+        },
+        {
+            "title": "空间维度频谱熵",
+            "en": "Spatial dimension spectrum entropy"
+        },
+        {
+            "title": "无线电参数误差",
+            "en": "Radio parameter error"
+        },
+        {
+            "title": "栅格融合",
+            "en": "Grid fusion"
+        },
+        {
+            "title": "栅格分割",
+            "en": "Grid segmentation"
+        },
+        {
+            "title": "定理2-3",
+            "en": "Theorem 2-3"
+        },
+        {
+            "title": "定理2-4",
+            "en": "Theorem 2-4"
+        },
+        {
+            "title": "定理2-5",
+            "en": "Theorem 2-5"
+        },
+        {
+            "title": "定理2-6",
+            "en": "Theorem 2-6"
+        },
+        {
+            "title": "定理2-7",
+            "en": "Theorem 2-7"
+        },
+        {
+            "title": "定理2-8",
+            "en": "Theorem 2-8"
+        }
+    ],
+    "relations": [
+        {
+            "source": "随机变量R",
+            "target": "香农熵",
+            "type": "defines"
+        },
+        {
+            "source": "香农熵",
+            "target": "空间维度频谱熵",
+            "type": "defines"
+        },
+        {
+            "source": "空间维度频谱熵",
+            "target": "无线电参数误差",
+            "type": "correlates"
+        },
+        {
+            "source": "栅格融合",
+            "target": "空间维度频谱熵",
+            "type": "affects"
+        },
+        {
+            "source": "栅格融合",
+            "target": "无线电参数误差",
+            "type": "affects"
+        },
+        {
+            "source": "栅格分割",
+            "target": "空间维度频谱熵",
+            "type": "affects"
+        },
+        {
+            "source": "栅格分割",
+            "target": "无线电参数误差",
+            "type": "affects"
+        },
+        {
+            "source": "定理2-3",
+            "target": "空间维度频谱熵",
+            "type": "proves"
+        },
+        {
+            "source": "定理2-4",
+            "target": "空间维度频谱熵",
+            "type": "proves"
+        },
+        {
+            "source": "定理2-5",
+            "target": "空间维度频谱熵",
+            "type": "proves"
+        },
+        {
+            "source": "定理2-7",
+            "target": "空间维度频谱熵",
+            "type": "proves"
+        },
+        {
+            "source": "定理2-8",
+            "target": "无线电参数误差",
+            "type": "proves"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "融合的两个栅格的无线电参数分布一致",
+            "en": "The wireless parameter distribution of the two merged grids is consistent"
+        },
+        {
+            "title": "时间维度的认知信息",
+            "en": "Cognitive information in the time dimension"
+        },
+        {
+            "title": "时间维度认知信息表征方法",
+            "en": "Representation method of cognitive information in the time dimension"
+        },
+        {
+            "title": "时间维度频谱炳",
+            "en": "Spectrum entropy in the time dimension"
+        },
+        {
+            "title": "时间维度认知信息的数学性质",
+            "en": "Mathematical properties of cognitive information in the time dimension"
+        }
+    ],
+    "relations": [
+        {
+            "source": "融合的两个栅格的无线电参数分布一致",
+            "target": "融合前后整个区域的无线电参数误差不变",
+            "type": "implies"
+        },
+        {
+            "source": "融合的两个栅格的无线电参数分布不一致",
+            "target": "融合后的无线电参数误差变大",
+            "type": "implies"
+        },
+        {
+            "source": "时间维度的认知信息",
+            "target": "认知无线电的\"检测-接入\"方式",
+            "type": "is related to"
+        },
+        {
+            "source": "时间维度认知信息表征方法",
+            "target": "时间维度观察空闲频谱信息",
+            "type": "is a method of"
+        },
+        {
+            "source": "时间维度认知信息表征方法",
+            "target": "时间窗内的无线电参数所占的时间长度比例",
+            "type": "is a method of"
+        },
+        {
+            "source": "时间维度认知信息表征方法",
+            "target": "认知信息表征误差",
+            "type": "is a method of"
+        },
+        {
+            "source": "时间维度频谱炳",
+            "target": "频谱占用状态不确定性的一种度量",
+            "type": "is"
+        },
+        {
+            "source": "时间维度频谱炳",
+            "target": "主用户频谱状态的动态特性",
+            "type": "is a measure of"
+        },
+        {
+            "source": "时间维度频谱炳",
+            "target": "时间窗内的频谱占用状态的熵",
+            "type": "is"
+        },
+        {
+            "source": "时间维度认知信息的数学性质",
+            "target": "影响时间维度频谱炳的各种要素",
+            "type": "is related to"
+        },
+        {
+            "source": "时间维度认知信息的数学性质",
+            "target": "系统参数和栅格操作",
+            "type": "is related to"
+        },
+        {
+            "source": "时间维度认知信息的数学性质",
+            "target": "定理2-9",
+            "type": "is"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "时间维度频谱",
+            "en": "Time-Domain Spectrum"
+        },
+        {
+            "title": "频谱状态",
+            "en": "Spectrum State"
+        },
+        {
+            "title": "时间窗",
+            "en": "Time Window"
+        },
+        {
+            "title": "认知信息表征误差",
+            "en": "Cognitive Information Representation Error"
+        },
+        {
+            "title": "对偶性",
+            "en": "Duality"
+        },
+        {
+            "title": "虚警",
+            "en": "False Alarm"
+        },
+        {
+            "title": "误检",
+            "en": "Missed Detection"
+        },
+        {
+            "title": "频谱检测",
+            "en": "Spectrum Detection"
+        },
+        {
+            "title": "频谱空洞",
+            "en": "Spectrum Hole"
+        },
+        {
+            "title": "干扰",
+            "en": "Interference"
+        },
+        {
+            "title": "栅格",
+            "en": "Grid"
+        },
+        {
+            "title": "可用信息",
+            "en": "Available Information"
+        }
+    ],
+    "relations": [
+        {
+            "source": "时间维度频谱",
+            "target": "频谱状态",
+            "type": "包含"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "时间窗",
+            "type": "包含"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "认知信息表征误差",
+            "type": "影响"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "对偶性",
+            "type": "具有"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "虚警",
+            "type": "导致"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "误检",
+            "type": "导致"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "频谱检测",
+            "type": "相关"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "频谱空洞",
+            "type": "相关"
+        },
+        {
+            "source": "时间维度频谱",
+            "target": "干扰",
+            "type": "相关"
+        },
+        {
+            "source": "栅格",
+            "target": "可用信息",
+            "type": "包含"
+        },
+        {
+            "source": "频谱空洞",
+            "target": "可用信息",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "频谱空洞",
+            "en": "Spectrum Hole"
+        },
+        {
+            "title": "误检",
+            "en": "Missed Detection"
+        },
+        {
+            "title": "空时认知信息表征方法",
+            "en": "Spatial-Temporal Cognitive Information Representation Method"
+        },
+        {
+            "title": "空间维度",
+            "en": "Spatial Dimension"
+        },
+        {
+            "title": "时间维度",
+            "en": "Temporal Dimension"
+        },
+        {
+            "title": "认知信息度量方法",
+            "en": "Cognitive Information Measurement Method"
+        },
+        {
+            "title": "认知信息量",
+            "en": "Cognitive Information Quantity"
+        }
+    ],
+    "relations": [
+        {
+            "source": "主网络3的频谱",
+            "target": "主用户通信",
+            "type": "干扰"
+        },
+        {
+            "source": "时间维度",
+            "target": "空间维度",
+            "type": "互为补充"
+        },
+        {
+            "source": "空时认知信息表征方法",
+            "target": "空间维度认知信息表征",
+            "type": "相似"
+        },
+        {
+            "source": "空时认知信息表征方法",
+            "target": "时间维度认知信息表征",
+            "type": "相似"
+        },
+        {
+            "source": "空间维度认知信息表征",
+            "target": "时间维度认知信息表征",
+            "type": "对偶性"
+        },
+        {
+            "source": "时间窗",
+            "target": "栅格",
+            "type": "对偶性"
+        },
+        {
+            "source": "空间维度",
+            "target": "时间维度",
+            "type": "对称性"
+        },
+        {
+            "source": "认知信息量",
+            "target": "非完美环境下获得的认知信息",
+            "type": "度量"
+        },
+        {
+            "source": "信源",
+            "target": "主用户",
+            "type": "对应"
+        },
+        {
+            "source": "信宿",
+            "target": "次用户",
+            "type": "对应"
+        },
+        {
+            "source": "信道",
+            "target": "信道",
+            "type": "对应"
+        },
+        {
+            "source": "符号集合",
+            "target": "码本",
+            "type": "对应"
+        },
+        {
+            "source": "信号发送",
+            "target": "主用户占用或不占用频谱",
+            "type": "对应"
+        },
+        {
+            "source": "信号检测",
+            "target": "次用户通过频谱检测获取频谱的状态信息",
+            "type": "对应"
+        },
+        {
+            "source": "信号经过信道",
+            "target": "主用户的信号经过信道",
+            "type": "对应"
+        },
+        {
+            "source": "噪声影响",
+            "target": "主用户的信号受到噪声影响",
+            "type": "对应"
+        },
+        {
+            "source": "检测结果有一定的误差",
+            "target": "检测的结果有了一定的误差",
+            "type": "对应"
+        },
+        {
+            "source": "虚警率",
+            "target": "虚警率",
+            "type": "对应"
+        },
+        {
+            "source": "误检率",
+            "target": "误检率",
+            "type": "对应"
+        },
+        {
+            "source": "平均序列互信息",
+            "target": "认知信息量",
+            "type": "度量"
+        },
+        {
+            "source": "认知信息量",
+            "target": "认知信息量",
+            "type": "度量"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "条件熵",
+            "en": "Conditional Entropy"
+        },
+        {
+            "title": "错误概率",
+            "en": "Error Probability"
+        },
+        {
+            "title": "认知信息量",
+            "en": "Cognitive Information"
+        },
+        {
+            "title": "能量检测",
+            "en": "Energy Detection"
+        },
+        {
+            "title": "协作检测",
+            "en": "Collaborative Detection"
+        },
+        {
+            "title": "协作增益",
+            "en": "Collaborative Gain"
+        },
+        {
+            "title": "频谱利用率",
+            "en": "Spectrum Utilization"
+        }
+    ],
+    "relations": [
+        {
+            "source": "条件熵",
+            "target": "认知信息量",
+            "type": "包含"
+        },
+        {
+            "source": "错误概率",
+            "target": "认知信息量",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测",
+            "target": "认知信息量",
+            "type": "应用"
+        },
+        {
+            "source": "协作检测",
+            "target": "认知信息量",
+            "type": "应用"
+        },
+        {
+            "source": "协作检测",
+            "target": "协作增益",
+            "type": "产生"
+        },
+        {
+            "source": "频谱利用率",
+            "target": "状态转移图",
+            "type": "描述"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "主次系统共存的模型", "en": "Model of coexistence of primary and secondary systems"},
+        {"title": "频谱利用率", "en": "Spectrum utilization rate"},
+        {"title": "干扰概率", "en": "Interference probability"},
+        {"title": "泊松过程", "en": "Poisson process"},
+        {"title": "状态转移图", "en": "State transition diagram"},
+        {"title": "稳态概率", "en": "Steady-state probability"},
+        {"title": "认知信息量", "en": "Cognitive information"},
+        {"title": "目标函数", "en": "Objective function"}
+    ],
+    "relations": [
+        {"source": "主次系统共存的模型", "target": "频谱利用率", "type": "包含"},
+        {"source": "主次系统共存的模型", "target": "干扰概率", "type": "包含"},
+        {"source": "主次系统共存的模型", "target": "状态转移图", "type": "包含"},
+        {"source": "状态转移图", "target": "泊松过程", "type": "包含"},
+        {"source": "状态转移图", "target": "稳态概率", "type": "包含"},
+        {"source": "稳态概率", "target": "干扰概率", "type": "定义"},
+        {"source": "稳态概率", "target": "频谱利用率", "type": "定义"},
+        {"source": "稳态概率", "target": "认知信息量", "type": "相关"},
+        {"source": "认知信息量", "target": "目标函数", "type": "定义"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "认知信息量",
+            "en": "Cognitive Information"
+        },
+        {
+            "title": "能量检测",
+            "en": "Energy Detection"
+        },
+        {
+            "title": "协作检测",
+            "en": "Collaborative Detection"
+        },
+        {
+            "title": "K-outof-M准则",
+            "en": "K-out-of-M Criterion"
+        },
+        {
+            "title": "认知信息传递",
+            "en": "Cognitive Information Transmission"
+        },
+        {
+            "title": "栅格管理策略",
+            "en": "Grid Management Strategy"
+        },
+        {
+            "title": "点播模式",
+            "en": "On-demand Mode"
+        },
+        {
+            "title": "广播模式",
+            "en": "Broadcast Mode"
+        }
+    ],
+    "relations": [
+        {
+            "source": "认知信息量",
+            "target": "能量检测",
+            "type": "应用"
+        },
+        {
+            "source": "认知信息量",
+            "target": "协作检测",
+            "type": "应用"
+        },
+        {
+            "source": "能量检测",
+            "target": "门限",
+            "type": "优化"
+        },
+        {
+            "source": "能量检测",
+            "target": "Neyman-Pearson准则",
+            "type": "优化"
+        },
+        {
+            "source": "能量检测",
+            "target": "Bayesian准则",
+            "type": "优化"
+        },
+        {
+            "source": "能量检测",
+            "target": "虚警概率",
+            "type": "影响"
+        },
+        {
+            "source": "能量检测",
+            "target": "误检概率",
+            "type": "影响"
+        },
+        {
+            "source": "协作检测",
+            "target": "K-outof-M准则",
+            "type": "决定"
+        },
+        {
+            "source": "K-outof-M准则",
+            "target": "K值",
+            "type": "优化"
+        },
+        {
+            "source": "K-outof-M准则",
+            "target": "次用户",
+            "type": "涉及"
+        },
+        {
+            "source": "认知信息传递",
+            "target": "空间维度",
+            "type": "研究对象"
+        },
+        {
+            "source": "认知信息传递",
+            "target": "时间维度",
+            "type": "研究对象"
+        },
+        {
+            "source": "栅格管理策略",
+            "target": "栅格划分",
+            "type": "研究问题"
+        },
+        {
+            "source": "栅格管理策略",
+            "target": "大小可变的栅格",
+            "type": "建议采用"
+        },
+        {
+            "source": "栅格管理策略",
+            "target": "最优栅格划分策略",
+            "type": "研究"
+        },
+        {
+            "source": "栅格管理策略",
+            "target": "GPS定位误差",
+            "type": "考虑因素"
+        },
+        {
+            "source": "栅格管理策略",
+            "target": "多RAT重叠区",
+            "type": "考虑因素"
+        },
+        {
+            "source": "栅格管理策略",
+            "target": "地理聚合栅格",
+            "type": "建议采用"
+        },
+        {
+            "source": "点播模式",
+            "target": "上行链路",
+            "type": "包含"
+        },
+        {
+            "source": "点播模式",
+            "target": "下行链路",
+            "type": "包含"
+        },
+        {
+            "source": "广播模式",
+            "target": "栅格",
+            "type": "传递对象"
+        },
+        {
+            "source": "广播模式",
+            "target": "地理信息",
+            "type": "包含"
+        },
+        {
+            "source": "广播模式",
+            "target": "终端",
+            "type": "接收对象"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "栅格划分的认知信息传输策略",
+            "en": "Cognitive information transmission strategy based on grid partitioning"
+        },
+        {
+            "title": "动态自适应的栅格聚合策略",
+            "en": "Dynamic adaptive grid aggregation strategy"
+        },
+        {
+            "title": "无线电参数误差",
+            "en": "Radio parameter error"
+        },
+        {
+            "title": "反双曲函数",
+            "en": "Inverse hyperbolic function"
+        },
+        {
+            "title": "栅格融合算法",
+            "en": "Grid fusion algorithm"
+        },
+        {
+            "title": "信道模型",
+            "en": "Channel model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "栅格划分的认知信息传输策略",
+            "target": "动态自适应的栅格聚合策略",
+            "type": "包含"
+        },
+        {
+            "source": "栅格划分的认知信息传输策略",
+            "target": "无线电参数误差",
+            "type": "相关"
+        },
+        {
+            "source": "栅格划分的认知信息传输策略",
+            "target": "栅格融合算法",
+            "type": "包含"
+        },
+        {
+            "source": "无线电参数误差",
+            "target": "反双曲函数",
+            "type": "相关"
+        },
+        {
+            "source": "信道模型",
+            "target": "栅格划分的认知信息传输策略",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "地理位置信息",
+            "en": "Geolocation Information"
+        },
+        {
+            "title": "认知数据库",
+            "en": "Cognitive Database"
+        },
+        {
+            "title": "栅格",
+            "en": "Grid"
+        },
+        {
+            "title": "无线电参数误差",
+            "en": "Radio Parameter Error"
+        },
+        {
+            "title": "栅格划分和融合算法",
+            "en": "Grid Partitioning and Fusion Algorithm"
+        },
+        {
+            "title": "规则栅格划分",
+            "en": "Regular Mesh Division"
+        },
+        {
+            "title": "栅格融合算法",
+            "en": "Mesh Fusion Algorithm"
+        },
+        {
+            "title": "基于分形的栅格划分",
+            "en": "Fractal-based Mesh Division"
+        },
+        {
+            "title": "合格栅格",
+            "en": "Qualified Grid"
+        }
+    ],
+    "relations": [
+        {
+            "source": "地理位置信息",
+            "target": "认知数据库",
+            "type": "发送"
+        },
+        {
+            "source": "认知数据库",
+            "target": "栅格",
+            "type": "响应"
+        },
+        {
+            "source": "栅格",
+            "target": "认知数据库",
+            "type": "请求"
+        },
+        {
+            "source": "栅格",
+            "target": "无线电参数误差",
+            "type": "包含"
+        },
+        {
+            "source": "规则栅格划分",
+            "target": "栅格",
+            "type": "划分"
+        },
+        {
+            "source": "栅格",
+            "target": "无线电参数误差",
+            "type": "影响"
+        },
+        {
+            "source": "栅格",
+            "target": "栅格融合算法",
+            "type": "融合"
+        },
+        {
+            "source": "栅格",
+            "target": "基于分形的栅格划分",
+            "type": "划分"
+        },
+        {
+            "source": "基于分形的栅格划分",
+            "target": "合格栅格",
+            "type": "定义"
+        },
+        {
+            "source": "栅格",
+            "target": "合格栅格",
+            "type": "分类"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "RMD-MFA算法",
+            "en": "RMD-MFA algorithm"
+        },
+        {
+            "title": "FbMD-MFA算法",
+            "en": "FbMD-MFA algorithm"
+        },
+        {
+            "title": "栅格融合",
+            "en": "Grid fusion"
+        },
+        {
+            "title": "误差下限",
+            "en": "Error lower limit"
+        },
+        {
+            "title": "最短边长",
+            "en": "Minimum side length"
+        },
+        {
+            "title": "栅格划分",
+            "en": "Grid partition"
+        }
+    ],
+    "relations": [
+        {
+            "source": "RMD-MFA算法",
+            "target": "栅格融合",
+            "type": "包含"
+        },
+        {
+            "source": "FbMD-MFA算法",
+            "target": "栅格划分",
+            "type": "包含"
+        },
+        {
+            "source": "FbMD-MFA算法",
+            "target": "误差下限",
+            "type": "涉及"
+        },
+        {
+            "source": "FbMD-MFA算法",
+            "target": "最短边长",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "栅格融合算法(MFA)", "en": "Grid Fusion Algorithm (MFA)"},
+        {"title": "FbMD算法分析", "en": "Analysis of FbMD Algorithm"},
+        {"title": "二叉树表示", "en": "Binary Tree Representation"},
+        {"title": "栅格划分算法", "en": "Grid Partitioning Algorithm"},
+        {"title": "认知信息表征方法", "en": "Cognitive Information Representation Method"},
+        {"title": "无线电参数误差", "en": "Radio Parameter Error"},
+        {"title": "栅格数量", "en": "Grid Quantity"},
+        {"title": "有效性和精确性的权衡", "en": "Trade-off between Effectiveness and Accuracy"},
+        {"title": "认知信息传递方法", "en": "Cognitive Information Transmission Method"}
+    ],
+    "relations": [
+        {"source": "栅格融合算法(MFA)", "target": "栅格划分算法", "type": "包含"},
+        {"source": "栅格划分算法", "target": "二叉树表示", "type": "关联"},
+        {"source": "FbMD算法分析", "target": "栅格划分算法", "type": "包含"},
+        {"source": "认知信息表征方法", "target": "无线电参数误差", "type": "包含"},
+        {"source": "认知信息表征方法", "target": "栅格数量", "type": "包含"},
+        {"source": "有效性和精确性的权衡", "target": "认知信息表征方法", "type": "关联"},
+        {"source": "认知信息传递方法", "target": "认知信息表征方法", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "栅格数量增多与无线电参数的关系",
+            "en": "Relationship between grid quantity and wireless parameters"
+        },
+        {
+            "title": "无线电参数误差分布",
+            "en": "Distribution of wireless parameter errors"
+        },
+        {
+            "title": "认知信息量准则",
+            "en": "Cognitive information measure"
+        },
+        {
+            "title": "认知信息传递方法",
+            "en": "Cognitive information transmission method"
+        }
+    ],
+    "relations": [
+        {
+            "source": "栅格数量增多与无线电参数的关系",
+            "target": "无线电参数误差分布",
+            "type": "相关"
+        },
+        {
+            "source": "认知信息量准则",
+            "target": "栅格数量增多与无线电参数的关系",
+            "type": "应用"
+        },
+        {
+            "source": "认知信息量准则",
+            "target": "能量检测中的检测门限和协作检测中的K值",
+            "type": "应用"
+        },
+        {
+            "source": "认知信息量准则",
+            "target": "认知信息传递方法",
+            "type": "应用"
+        },
+        {
+            "source": "无线电参数误差分布",
+            "target": "认知信息量准则",
+            "type": "基础"
+        },
+        {
+            "source": "最大化认知信息量",
+            "target": "检测门限",
+            "type": "应用"
+        },
+        {
+            "source": "最大化认知信息量",
+            "target": "样本数N",
+            "type": "相关"
+        },
+        {
+            "source": "最大化认知信息量",
+            "target": "定理2-14",
+            "type": "验证"
+        },
+        {
+            "source": "协作频谱检测",
+            "target": "最优的认知信息量",
+            "type": "相关"
+        },
+        {
+            "source": "协作频谱检测",
+            "target": "NP准则",
+            "type": "应用"
+        },
+        {
+            "source": "协作频谱检测",
+            "target": "认知信息量",
+            "type": "应用"
+        },
+        {
+            "source": "认知信息传递方法",
+            "target": "数值仿真",
+            "type": "应用"
+        },
+        {
+            "source": "栅格分割和融合的算法结果",
+            "target": "FbMD-MFA算法",
+            "type": "应用"
+        },
+        {
+            "source": "栅格分割和融合的算法结果",
+            "target": "RMD-MFA算法",
+            "type": "应用"
+        },
+        {
+            "source": "MFA算法",
+            "target": "栅格数量",
+            "type": "降低"
+        },
+        {
+            "source": "定理2-17",
+            "target": "RMD-MFA算法",
+            "type": "验证"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "栅格融合算法", "en": "Grid Fusion Algorithm"},
+        {"title": "认知用户访问认知数据库效率", "en": "Efficiency of Cognitive User Accessing Cognitive Database"},
+        {"title": "时延", "en": "Delay"},
+        {"title": "数据库访问频度", "en": "Database Access Frequency"},
+        {"title": "随机游动模型", "en": "Random Walk Model"},
+        {"title": "栅格数量", "en": "Number of Grids"},
+        {"title": "认知导频信道", "en": "Cognitive Pilot Channel"},
+        {"title": "无线电参数误差", "en": "Radio Parameter Error"},
+        {"title": "空时认知信息", "en": "Spatial-Temporal Cognitive Information"},
+        {"title": "对偶性", "en": "Duality"}
+    ],
+    "relations": [
+        {"source": "栅格融合算法", "target": "栅格数量", "type": "包含"},
+        {"source": "栅格融合算法", "target": "认知用户访问认知数据库效率", "type": "影响"},
+        {"source": "认知用户访问认知数据库效率", "target": "时延", "type": "包含"},
+        {"source": "认知用户访问认知数据库效率", "target": "数据库访问频度", "type": "包含"},
+        {"source": "随机游动模型", "target": "认知用户访问认知数据库效率", "type": "影响"},
+        {"source": "栅格数量", "target": "认知用户访问认知数据库效率", "type": "影响"},
+        {"source": "认知导频信道", "target": "空时认知信息", "type": "传递"},
+        {"source": "无线电参数误差", "target": "空时认知信息", "type": "影响"},
+        {"source": "地理嫡", "target": "空时认知信息", "type": "表征"},
+        {"source": "时间嫡", "target": "空时认知信息", "type": "表征"},
+        {"source": "空时认知信息", "target": "对偶性", "type": "具有"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "认知信息传递方法",
+            "en": "Cognitive information transmission method"
+        },
+        {
+            "title": "认知信息表征理论",
+            "en": "Cognitive information representation theory"
+        },
+        {
+            "title": "栅格融合方案",
+            "en": "Grid fusion scheme"
+        },
+        {
+            "title": "移动环境下的认知信息高效传递",
+            "en": "Efficient cognitive information transmission in mobile environments"
+        },
+        {
+            "title": "认知信息表征、度量、传递中关键参量之间的关系",
+            "en": "Relationship between key parameters in cognitive information representation, measurement, and transmission"
+        },
+        {
+            "title": "认知信息传递方案的高效性",
+            "en": "Efficiency of cognitive information transmission scheme"
+        },
+        {
+            "title": "硬件验证",
+            "en": "Hardware verification"
+        }
+    ],
+    "relations": [
+        {
+            "source": "认知信息传递方法",
+            "target": "认知信息表征理论",
+            "type": "基于"
+        },
+        {
+            "source": "认知信息传递方法",
+            "target": "栅格融合方案",
+            "type": "设计"
+        },
+        {
+            "source": "认知信息传递方法",
+            "target": "移动环境下的认知信息高效传递",
+            "type": "实现"
+        },
+        {
+            "source": "认知信息表征理论",
+            "target": "认知信息传递方法",
+            "type": "基础理论"
+        },
+        {
+            "source": "认知信息表征理论",
+            "target": "认知信息传递方案的高效性",
+            "type": "影响"
+        },
+        {
+            "source": "栅格融合方案",
+            "target": "认知信息传递方法",
+            "type": "应用于"
+        },
+        {
+            "source": "认知信息传递方案的高效性",
+            "target": "硬件验证",
+            "type": "验证"
+        },
+        {
+            "source": "硬件验证",
+            "target": "认知信息传递方案的高效性",
+            "type": "验证"
+        },
+        {
+            "source": "参考文献",
+            "target": "认知信息传递方法",
+            "type": "支持"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "FCC", "en": "美国联邦通信委员会"},
+        {"title": "ECC", "en": "欧洲电信标准化委员会"},
+        {"title": "IEEE 802.22", "en": "IEEE 802.22"},
+        {"title": "认知无线电", "en": "Cognitive Radio"},
+        {"title": "电视白空间", "en": "TV White Space"},
+        {"title": "地理定位", "en": "Geolocation"},
+        {"title": "智能电网", "en": "Smart Utility Network"},
+        {"title": "最大允许辐射功率", "en": "Maximum Permitted Radiated Power Levels"},
+        {"title": "REM构建", "en": "REM Construction"},
+        {"title": "传感器选择", "en": "Sensor Selection"}
+    ],
+    "relations": [
+        {"source": "FCC", "target": "TV White Space", "type": "监管"},
+        {"source": "ECC", "target": "TV White Space", "type": "监管"},
+        {"source": "ECC", "target": "Geolocation", "type": "技术要求"},
+        {"source": "IEEE 802.22", "target": "Cognitive Radio", "type": "标准"},
+        {"source": "认知无线电", "target": "TV White Space", "type": "应用"},
+        {"source": "认知无线电", "target": "Geolocation", "type": "技术"},
+        {"source": "智能电网", "target": "TV White Space", "type": "应用"},
+        {"source": "最大允许辐射功率", "target": "TV White Space", "type": "计算"},
+        {"source": "REM构建", "target": "Cognitive Radio", "type": "算法"},
+        {"source": "传感器选择", "target": "REM构建", "type": "算法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线电", "en": "Cognitive Radio"},
+        {"title": "盲目频谱感知", "en": "Blind Spectrum Sensing"},
+        {"title": "信息论准则", "en": "Information Theoretic Criteria"},
+        {"title": "能量检测", "en": "Energy Detection"},
+        {"title": "熵与误码率的关系", "en": "Relations between Entropy and Error Probability"},
+        {"title": "可重构性和认知网络", "en": "Reconfigurability and Cognitive Networks"},
+        {"title": "认知无线电网络性能评估", "en": "Performance Evaluation of Cognitive Radio Networks"},
+        {"title": "认知无线电网络的分析建模", "en": "Analytical Modeling of Cognitive Radio Networks"},
+        {"title": "感知吞吐量权衡", "en": "Sensing-Throughput Tradeoff"},
+        {"title": "合作频谱感知优化", "en": "Optimization of Cooperative Spectrum Sensing"},
+        {"title": "认知无线电环境下的网状分割方案", "en": "Mesh Division Scheme using Cognitive Pilot Channel in Cognitive Radio Environment"}
+    ],
+    "relations": [
+        {"source": "认知无线电", "target": "盲目频谱感知", "type": "包含"},
+        {"source": "盲目频谱感知", "target": "信息论准则", "type": "使用"},
+        {"source": "盲目频谱感知", "target": "能量检测", "type": "使用"},
+        {"source": "信息论准则", "target": "盲目频谱感知", "type": "应用于"},
+        {"source": "能量检测", "target": "认知无线电网络性能评估", "type": "使用"},
+        {"source": "熵与误码率的关系", "target": "信息论准则", "type": "相关"},
+        {"source": "可重构性和认知网络", "target": "认知无线电", "type": "相关"},
+        {"source": "认知无线电", "target": "认知无线电网络性能评估", "type": "涉及"},
+        {"source": "认知无线电", "target": "认知无线电网络的分析建模", "type": "涉及"},
+        {"source": "感知吞吐量权衡", "target": "认知无线电", "type": "相关"},
+        {"source": "合作频谱感知优化", "target": "认知无线电", "type": "涉及"},
+        {"source": "认知无线电环境下的网状分割方案", "target": "认知无线电", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线网络", "en": "Cognitive Wireless Network"},
+        {"title": "空时频谱空洞", "en": "Spatio-Temporal Spectrum Hole"},
+        {"title": "频谱利用率", "en": "Spectrum Utilization Efficiency"},
+        {"title": "空时频谱检测", "en": "Spatio-Temporal Spectrum Sensing"},
+        {"title": "黑白灰三区频谱检测和接入模型", "en": "Black-White-Grey Three-Zone Spectrum Sensing and Access Model"}
+    ],
+    "relations": [
+        {"source": "认知无线网络", "target": "空时频谱空洞", "type": "包含"},
+        {"source": "认知无线网络", "target": "频谱利用率", "type": "提升"},
+        {"source": "空时频谱空洞", "target": "频谱利用率", "type": "提升"},
+        {"source": "空时频谱检测", "target": "频谱利用率", "type": "提升"},
+        {"source": "空时频谱检测", "target": "空时频谱空洞", "type": "探测"},
+        {"source": "黑白灰三区频谱检测和接入模型", "target": "空时频谱空洞", "type": "利用"},
+        {"source": "黑白灰三区频谱检测和接入模型", "target": "频谱利用率", "type": "提升"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "黑白灰三区划分", "en": "Black-White-Grey Three-zone Division"},
+        {"title": "过渡带", "en": "Transition Zone"},
+        {"title": "频谱检测", "en": "Spectrum Sensing"},
+        {"title": "频谱接入", "en": "Spectrum Access"},
+        {"title": "时间维度频谱机会", "en": "Temporal Spectrum Opportunity"},
+        {"title": "空间维度频谱机会", "en": "Spatial Spectrum Opportunity"},
+        {"title": "主用户", "en": "Primary User"},
+        {"title": "次用户", "en": "Secondary User"},
+        {"title": "功率控制", "en": "Power Control"},
+        {"title": "频谱利用率", "en": "Spectrum Utilization"}
+    ],
+    "relations": [
+        {"source": "黑区", "target": "主用户", "type": "只允许主用户工作"},
+        {"source": "灰区", "target": "次用户", "type": "允许次用户存在，但只能使用overlay方式工作"},
+        {"source": "白区", "target": "次用户", "type": "可通过underlay方式以最大功率发射"},
+        {"source": "灰区", "target": "时间维度频谱机会", "type": "存在"},
+        {"source": "白区", "target": "空间维度频谱机会", "type": "存在"},
+        {"source": "主用户接收机", "target": "次用户接收机", "type": "灵敏度低于"},
+        {"source": "灰区", "target": "频谱利用率", "type": "提升"},
+        {"source": "次用户", "target": "频谱检测", "type": "利用"},
+        {"source": "次用户", "target": "频谱接入", "type": "动态"},
+        {"source": "过渡带", "target": "次用户", "type": "需要进行严格的功率控制"},
+        {"source": "过渡带", "target": "主用户", "type": "可能受到干扰"},
+        {"source": "过渡带", "target": "黑区和白区之间", "type": "存在"},
+        {"source": "时间维度频谱机会", "target": "黑区和白区之间", "type": "存在"},
+        {"source": "灰区", "target": "白区", "type": "内半径为&"},
+        {"source": "白区", "target": "灰区", "type": "外半径为&"},
+        {"source": "黑区", "target": "灰区和白区之间", "type": "外半径为R2"},
+        {"source": "灰区和白区之间", "target": "黑区", "type": "内半径为R3"},
+        {"source": "主用户", "target": "发射主用户的信号", "type": "以却率K发射"},
+        {"source": "主用户接收机", "target": "均匀分布在主用户发射II的覆盖区域内", "type": "接收机"},
+        {"source": "次用户", "target": "密度为刀用户/单位面积", "type": "均匀分布"},
+        {"source": "次用户", "target": "发射功率为£", "type": "发射机"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "主用户网络的牺牲区",
+            "en": "Sacrifice zone of primary user network"
+        },
+        {
+            "title": "灰区的外半径",
+            "en": "Outer radius of gray zone"
+        },
+        {
+            "title": "频谱检测的关键性能指标",
+            "en": "Key performance indicators of spectrum detection"
+        },
+        {
+            "title": "频谱共享的国际标准",
+            "en": "International standards for spectrum sharing"
+        },
+        {
+            "title": "虚警概率和误检概率",
+            "en": "False alarm probability and miss detection probability"
+        },
+        {
+            "title": "黑区边缘的主用户受到的聚合干扰",
+            "en": "Aggregated interference suffered by primary users at the edge of black zone"
+        },
+        {
+            "title": "动态频谱租赁",
+            "en": "Dynamic spectrum leasing"
+        },
+        {
+            "title": "主次用户的利益博弈",
+            "en": "Game of interests between primary and secondary users"
+        },
+        {
+            "title": "主用户排斥区",
+            "en": "Exclusion zone of primary users"
+        },
+        {
+            "title": "灰区的时间维度频谱机会",
+            "en": "Spectrum opportunity in time dimension of gray zone"
+        },
+        {
+            "title": "能量检测",
+            "en": "Energy detection"
+        },
+        {
+            "title": "检验统计量",
+            "en": "Test statistic"
+        },
+        {
+            "title": "卡方分布",
+            "en": "Chi-square distribution"
+        },
+        {
+            "title": "马库姆Q函数",
+            "en": "Marcum Q-function"
+        },
+        {
+            "title": "高阶不完全伽马函数",
+            "en": "Upper incomplete gamma function"
+        },
+        {
+            "title": "误检概率",
+            "en": "Miss detection probability"
+        },
+        {
+            "title": "接收机性能曲线",
+            "en": "Receiver operating characteristic curve"
+        }
+    ],
+    "relations": [
+        {
+            "source": "主用户网络的牺牲区",
+            "target": "灰区的外半径",
+            "type": "包含"
+        },
+        {
+            "source": "频谱检测的关键性能指标",
+            "target": "虚警概率和误检概率",
+            "type": "包含"
+        },
+        {
+            "source": "频谱共享的国际标准",
+            "target": "虚警概率和误检概率",
+            "type": "包含"
+        },
+        {
+            "source": "虚警概率和误检概率",
+            "target": "灰区的外半径",
+            "type": "影响"
+        },
+        {
+            "source": "黑区边缘的主用户受到的聚合干扰",
+            "target": "灰区的外半径",
+            "type": "影响"
+        },
+        {
+            "source": "动态频谱租赁",
+            "target": "灰区的外半径",
+            "type": "影响"
+        },
+        {
+            "source": "主次用户的利益博弈",
+            "target": "灰区的外半径",
+            "type": "影响"
+        },
+        {
+            "source": "主用户排斥区",
+            "target": "灰区的外半径",
+            "type": "影响"
+        },
+        {
+            "source": "能量检测",
+            "target": "灰区的时间维度频谱机会",
+            "type": "包含"
+        },
+        {
+            "source": "检验统计量",
+            "target": "能量检测",
+            "type": "包含"
+        },
+        {
+            "source": "卡方分布",
+            "target": "检验统计量",
+            "type": "包含"
+        },
+        {
+            "source": "马库姆Q函数",
+            "target": "误检概率",
+            "type": "包含"
+        },
+        {
+            "source": "高阶不完全伽马函数",
+            "target": "误检概率",
+            "type": "包含"
+        },
+        {
+            "source": "误检概率",
+            "target": "灰区的外半径",
+            "type": "影响"
+        },
+        {
+            "source": "误检概率",
+            "target": "主用户网络的牺牲区",
+            "type": "影响"
+        },
+        {
+            "source": "虚警概率和误检概率",
+            "target": "接收机性能曲线",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "检测门限",
+            "en": "Detection threshold"
+        },
+        {
+            "title": "误检约束",
+            "en": "False alarm constraint"
+        },
+        {
+            "title": "虚警概率",
+            "en": "False alarm probability"
+        },
+        {
+            "title": "信噪比",
+            "en": "Signal-to-noise ratio"
+        },
+        {
+            "title": "灰区半径",
+            "en": "Gray zone radius"
+        }
+    ],
+    "relations": [
+        {
+            "source": "检测门限",
+            "target": "误检约束",
+            "type": "约束"
+        },
+        {
+            "source": "检测门限",
+            "target": "虚警概率",
+            "type": "约束"
+        },
+        {
+            "source": "信噪比",
+            "target": "检测门限",
+            "type": "函数关系"
+        },
+        {
+            "source": "灰区半径",
+            "target": "信噪比",
+            "type": "函数关系"
+        },
+        {
+            "source": "灰区半径",
+            "target": "距离",
+            "type": "函数关系"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "灰区半径", "en": "Gray zone radius"},
+        {"title": "频谱检测", "en": "Spectrum sensing"},
+        {"title": "虚警概率", "en": "False alarm probability"},
+        {"title": "误检概率", "en": "Detection probability"},
+        {"title": "聚合干扰", "en": "Aggregate interference"},
+        {"title": "路损因子", "en": "Path loss factor"},
+        {"title": "黑区边缘", "en": "Edge of black zone"}
+    ],
+    "relations": [
+        {"source": "频谱检测", "target": "灰区半径", "type": "包含"},
+        {"source": "灰区半径", "target": "频谱检测", "type": "依赖"},
+        {"source": "灰区半径", "target": "虚警概率", "type": "影响"},
+        {"source": "灰区半径", "target": "误检概率", "type": "影响"},
+        {"source": "虚警概率", "target": "误检概率", "type": "对立"},
+        {"source": "聚合干扰", "target": "路损因子", "type": "影响"},
+        {"source": "路损因子", "target": "聚合干扰", "type": "影响"},
+        {"source": "黑区边缘", "target": "聚合干扰", "type": "存在"},
+        {"source": "聚合干扰", "target": "黑区边缘", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "黑区边缘主用户受到的干扰的上界及其极限",
+            "en": "Upper bound and limit of interference received by the main user at the edge of the black zone"
+        },
+        {
+            "title": "白区的半径",
+            "en": "Radius of the white zone"
+        },
+        {
+            "title": "噪声不确定性对白区半径的影响",
+            "en": "Impact of noise uncertainty on the radius of the white zone"
+        },
+        {
+            "title": "三区的半径",
+            "en": "Radius of the three zones"
+        },
+        {
+            "title": "单主用户网络的三区半径",
+            "en": "Radius of the three zones in a single main user network"
+        },
+        {
+            "title": "多主用户网络的三区半径",
+            "en": "Radius of the three zones in a multi-main user network"
+        }
+    ],
+    "relations": [
+        {
+            "source": "黑区边缘主用户受到的干扰的上界及其极限",
+            "target": "白区的半径",
+            "type": "包含"
+        },
+        {
+            "source": "黑区边缘主用户受到的干扰的上界及其极限",
+            "target": "噪声不确定性对白区半径的影响",
+            "type": "包含"
+        },
+        {
+            "source": "三区的半径",
+            "target": "黑区的半径",
+            "type": "包含"
+        },
+        {
+            "source": "三区的半径",
+            "target": "白区的半径",
+            "type": "包含"
+        },
+        {
+            "source": "三区的半径",
+            "target": "单主用户网络的三区半径",
+            "type": "包含"
+        },
+        {
+            "source": "三区的半径",
+            "target": "多主用户网络的三区半径",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "多主网络的三区边界", "en": "Three-zone boundary of multi-master network"},
+        {"title": "最优的黑区半径", "en": "Optimal black zone radius"},
+        {"title": "过渡区的存在性", "en": "Existence of transition zone"}
+    ],
+    "relations": [
+        {"source": "多主网络的三区边界", "target": "单独主网络的三区边界", "type": "extension"},
+        {"source": "最优的黑区半径", "target": "动态频谱租赁", "type": "related"},
+        {"source": "最优的黑区半径", "target": "主用户的收益", "type": "related"},
+        {"source": "过渡区的存在性", "target": "误检概率", "type": "related"},
+        {"source": "过渡区的存在性", "target": "虚警概率", "type": "related"},
+        {"source": "过渡区的存在性", "target": "频谱利用率", "type": "related"},
+        {"source": "过渡区的存在性", "target": "灰区", "type": "related"},
+        {"source": "过渡区的存在性", "target": "认知数据库", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "三区的性能",
+            "en": "Performance of Three Zones"
+        },
+        {
+            "title": "灰区的半径",
+            "en": "Radius of Grey Zone"
+        },
+        {
+            "title": "白区的半径",
+            "en": "Radius of White Zone"
+        },
+        {
+            "title": "过渡区",
+            "en": "Transition Zone"
+        }
+    ],
+    "relations": [
+        {
+            "source": "三区的性能",
+            "target": "认知无线网络性能的提升",
+            "type": "提升"
+        },
+        {
+            "source": "三区的性能",
+            "target": "次用户发射功率",
+            "type": "关联"
+        },
+        {
+            "source": "灰区的半径",
+            "target": "频谱检测样本数N",
+            "type": "影响"
+        },
+        {
+            "source": "灰区的半径",
+            "target": "鼻和号",
+            "type": "影响"
+        },
+        {
+            "source": "灰区的半径",
+            "target": "主用户的干扰",
+            "type": "影响"
+        },
+        {
+            "source": "白区的半径",
+            "target": "主用户发射功率",
+            "type": "关联"
+        },
+        {
+            "source": "白区的半径",
+            "target": "黑区半径",
+            "type": "关联"
+        },
+        {
+            "source": "过渡区",
+            "target": "系统架构",
+            "type": "影响"
+        },
+        {
+            "source": "过渡区",
+            "target": "次用户功率控制",
+            "type": "影响"
+        },
+        {
+            "source": "过渡区",
+            "target": "频谱检测参数",
+            "type": "消除"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "噪声不确定性对过渡区宽度的影响", "en": "The impact of noise uncertainty on transition zone width"},
+        {"title": "最优的黑区半径", "en": "Optimal black zone radius"},
+        {"title": "主网络效用函数与黑区半径的关系", "en": "Relationship between main network utility function and black zone radius"},
+        {"title": "主网络效用函数与频谱价格的关系", "en": "Relationship between main network utility function and spectrum price"}
+    ],
+    "relations": [
+        {"source": "噪声不确定性", "target": "过渡区宽度", "type": "影响"},
+        {"source": "主用户发射功率", "target": "过渡区宽度", "type": "关系"},
+        {"source": "主用户发射功率", "target": "灰区扩张", "type": "关系"},
+        {"source": "黑区半径", "target": "主网络效用函数", "type": "关系"},
+        {"source": "黑区半径", "target": "最优值", "type": "关系"},
+        {"source": "k值", "target": "主网络效用函数", "type": "关系"},
+        {"source": "k值", "target": "频谱价格", "type": "关系"},
+        {"source": "R值", "target": "主网络效用函数", "type": "关系"},
+        {"source": "R值", "target": "灰区内次用户数量", "type": "影响"},
+        {"source": "灰区内次用户支付", "target": "黑区半径", "type": "影响"},
+        {"source": "噪声不确定性", "target": "主用户收益", "type": "影响"},
+        {"source": "主用户发射功率", "target": "主用户收益", "type": "影响"},
+        {"source": "灰区面积", "target": "主用户收益", "type": "影响"},
+        {"source": "动态频谱租赁", "target": "主用户收益", "type": "影响"},
+        {"source": "白区内次用户", "target": "主用户收益", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "IEEE802.22的应用场景", "en": "Application scenarios of IEEE802.22"},
+        {"title": "三区划分的架构", "en": "Three-zone partitioning architecture"},
+        {"title": "黑区、白区和灰区", "en": "Black zone, white zone, and gray zone"},
+        {"title": "空时频谱检测和接入", "en": "Spatial-temporal spectrum sensing and access"},
+        {"title": "认知无线网络", "en": "Cognitive wireless network"}
+    ],
+    "relations": [
+        {"source": "IEEE802.22的应用场景", "target": "三区划分的架构", "type": "包含关系"},
+        {"source": "三区划分的架构", "target": "黑区、白区和灰区", "type": "包含关系"},
+        {"source": "三区划分的架构", "target": "空时频谱检测和接入", "type": "包含关系"},
+        {"source": "黑区、白区和灰区", "target": "空时频谱检测和接入", "type": "关联"},
+        {"source": "三区划分的架构", "target": "认知无线网络", "type": "指导关系"},
+        {"source": "空时频谱检测和接入", "target": "认知无线网络", "type": "应用关系"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks", "en": "认知双极化网络的主要独占区和吞吐量"},
+        {"title": "Secondary Spectrum Access Networks", "en": "次级频谱接入网络"},
+        {"title": "Enabling Innovative Small Cell Use In 3.5GHZ Band NPRM & Order", "en": "在3.5GHZ频段NPRM和命令中实现创新的小型蜂窝使用"},
+        {"title": "Signal Processing in Cognitive Radio", "en": "认知无线电中的信号处理"},
+        {"title": "Spatiotemporal Sensing in Cognitive Radio Networks", "en": "认知无线电网络中的时空感知"},
+        {"title": "Sensing-Throughput Tradeoff for Cognitive Radio Networks", "en": "认知无线电网络的感知-吞吐量权衡"},
+        {"title": "On the Energy Detection of Unknown Signals Over Fading Channels", "en": "关于在衰落信道上能量检测未知信号"},
+        {"title": "Scaling Laws of Single-hop Cognitive Networks", "en": "单跳认知网络的比例定律"},
+        {"title": "Outage Probability of Cognitive Relay Networks with Interference Constraints", "en": "具有干扰约束的认知中继网络的中断概率"},
+        {"title": "Dynamic Spectrum Access: From Cognitive Radio to Network Radio", "en": "动态频谱接入：从认知无线电到网络无线电"},
+        {"title": "Spectrum Sensing for Cognitive Radio: State-of-the-art and Recent Advances", "en": "认知无线电的频谱感知：现状和最新进展"},
+        {"title": "SNR Walls for Signal Detection", "en": "用于信号检测的信噪比墙"},
+        {"title": "Dynamic Spectrum Leasing in Cognitive Radio Networks via Primary-Secondary User Power Control Games", "en": "通过主次用户功率控制游戏在认知无线电网络中进行动态频谱租赁"}
+    ],
+    "relations": [
+        {"source": "Primary Exclusive Region and Throughput of Cognitive Dual-Polarized Networks", "target": "Secondary Spectrum Access Networks", "type": "相关"},
+        {"source": "Secondary Spectrum Access Networks", "target": "Enabling Innovative Small Cell Use In 3.5GHZ Band NPRM & Order", "type": "相关"},
+        {"source": "Signal Processing in Cognitive Radio", "target": "Spatiotemporal Sensing in Cognitive Radio Networks", "type": "相关"},
+        {"source": "Spatiotemporal Sensing in Cognitive Radio Networks", "target": "Sensing-Throughput Tradeoff for Cognitive Radio Networks", "type": "相关"},
+        {"source": "Sensing-Throughput Tradeoff for Cognitive Radio Networks", "target": "On the Energy Detection of Unknown Signals Over Fading Channels", "type": "相关"},
+        {"source": "Sensing-Throughput Tradeoff for Cognitive Radio Networks", "target": "Scaling Laws of Single-hop Cognitive Networks", "type": "相关"},
+        {"source": "Sensing-Throughput Tradeoff for Cognitive Radio Networks", "target": "Outage Probability of Cognitive Relay Networks with Interference Constraints", "type": "相关"},
+        {"source": "Dynamic Spectrum Access: From Cognitive Radio to Network Radio", "target": "Spectrum Sensing for Cognitive Radio: State-of-the-art and Recent Advances", "type": "相关"},
+        {"source": "Spectrum Sensing for Cognitive Radio: State-of-the-art and Recent Advances", "target": "SNR Walls for Signal Detection", "type": "相关"},
+        {"source": "Dynamic Spectrum Leasing in Cognitive Radio Networks via Primary-Secondary User Power Control Games", "target": "Sensing-Throughput Tradeoff for Cognitive Radio Networks", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "动态频谱租赁", "en": "Dynamic Spectrum Leasing"},
+        {"title": "地理定位数据库", "en": "Geolocation Database"},
+        {"title": "电视白空间数据库", "en": "TV White Space Database"},
+        {"title": "多区域移动电视白空间", "en": "Mobile TV White Space with Multi-Region Based Mobility Procedure"},
+        {"title": "E-UTRA物理层方面的进一步改进", "en": "Further Advancements for E-UTRA Physical Layer Aspects"},
+        {"title": "认知无线网络中的空时频谱机会", "en": "Spatio-Temporal Spectrum Opportunities in Cognitive Radio Networks"},
+        {"title": "认知无线网络中的角度维频谱机会", "en": "Angular Spectrum Opportunities in Cognitive Radio Networks"},
+        {"title": "容量", "en": "Capacity"},
+        {"title": "连通性", "en": "Connectivity"},
+        {"title": "认知自组织网络", "en": "Cognitive Radio Ad Hoc Networks"},
+        {"title": "方向性传输", "en": "Directional Transmission"}
+    ],
+    "relations": [
+        {"source": "动态频谱租赁", "target": "认知无线网络", "type": "应用"},
+        {"source": "地理定位数据库", "target": "电视白空间", "type": "关联"},
+        {"source": "电视白空间数据库", "target": "认知无线网络", "type": "应用"},
+        {"source": "多区域移动电视白空间", "target": "认知无线网络", "type": "应用"},
+        {"source": "E-UTRA物理层方面的进一步改进", "target": "认知无线网络", "type": "应用"},
+        {"source": "认知无线网络中的空时频谱机会", "target": "认知无线网络", "type": "应用"},
+        {"source": "认知无线网络中的角度维频谱机会", "target": "认知无线网络", "type": "应用"},
+        {"source": "容量", "target": "认知无线网络", "type": "性能指标"},
+        {"source": "连通性", "target": "认知无线网络", "type": "性能指标"},
+        {"source": "认知自组织网络", "target": "认知无线网络", "type": "应用"},
+        {"source": "方向性传输", "target": "认知无线网络", "type": "技术手段"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知mesh网络采用全向天线和定向天线的容量增益", "en": "Capacity gain of cognitive mesh network using omnidirectional and directional antennas"},
+        {"title": "多信道无线网络采用方向性天线的容量提升、连通性提升和干扰降低", "en": "Capacity improvement, connectivity enhancement and interference reduction of multi-channel wireless network using directional antennas"},
+        {"title": "四维频谱空洞的研究", "en": "Study on four-dimensional spectrum holes"},
+        {"title": "方向性传输增加次用户的频谱机会，提升次用户网络性能", "en": "Directional transmission increases the spectrum opportunities of secondary users and improves their network performance"},
+        {"title": "大规模认知无线网络采用方向性传输的容量尺度律", "en": "Capacity scaling law of large-scale cognitive wireless network using directional transmission"},
+        {"title": "认知adhoc网络的连通性研究", "en": "Study on connectivity of cognitive ad hoc network"},
+        {"title": "路由方案对认知adhoc网络连通性的影响", "en": "Impact of routing schemes on connectivity of cognitive ad hoc network"}
+    ],
+    "relations": [
+        {"source": "认知mesh网络采用全向天线和定向天线的容量增益", "target": "多信道无线网络采用方向性天线的容量提升、连通性提升和干扰降低", "type": "related"},
+        {"source": "认知mesh网络采用全向天线和定向天线的容量增益", "target": "方向性传输增加次用户的频谱机会，提升次用户网络性能", "type": "related"},
+        {"source": "多信道无线网络采用方向性天线的容量提升、连通性提升和干扰降低", "target": "方向性传输增加次用户的频谱机会，提升次用户网络性能", "type": "related"},
+        {"source": "方向性传输增加次用户的频谱机会，提升次用户网络性能", "target": "大规模认知无线网络采用方向性传输的容量尺度律", "type": "related"},
+        {"source": "大规模认知无线网络采用方向性传输的容量尺度律", "target": "认知adhoc网络的连通性研究", "type": "related"},
+        {"source": "认知adhoc网络的连通性研究", "target": "路由方案对认知adhoc网络连通性的影响", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "主用户和次用户",
+            "en": "Primary and Secondary Users"
+        },
+        {
+            "title": "信道功率增益",
+            "en": "Channel Power Gain"
+        },
+        {
+            "title": "随机adhoc网络",
+            "en": "Random Adhoc Network"
+        },
+        {
+            "title": "9-TDMA协议",
+            "en": "9-TDMA Protocol"
+        },
+        {
+            "title": "方向性传输",
+            "en": "Directional Transmission"
+        },
+        {
+            "title": "主用户栅格",
+            "en": "Primary User Grid"
+        },
+        {
+            "title": "主用户传输时隙",
+            "en": "Primary User Transmission Slot"
+        },
+        {
+            "title": "循环传输方案",
+            "en": "Cyclic Transmission Scheme"
+        },
+        {
+            "title": "水平数据路径",
+            "en": "Horizontal Data Paths"
+        },
+        {
+            "title": "垂直传输路径",
+            "en": "Vertical Data Paths"
+        },
+        {
+            "title": "次用户栅格",
+            "en": "Secondary User Grid"
+        },
+        {
+            "title": "主用户保护区",
+            "en": "Primary User Protection Area"
+        },
+        {
+            "title": "多跳路由协议",
+            "en": "Multi-hop Routing Protocol"
+        },
+        {
+            "title": "DOA算法",
+            "en": "DOA Algorithm"
+        },
+        {
+            "title": "链路容量",
+            "en": "Link Capacity"
+        },
+        {
+            "title": "吞吐量容量",
+            "en": "Throughput Capacity"
+        }
+    ],
+    "relations": [
+        {
+            "source": "主用户和次用户",
+            "target": "随机adhoc网络",
+            "type": "属于"
+        },
+        {
+            "source": "主用户和次用户",
+            "target": "9-TDMA协议",
+            "type": "使用"
+        },
+        {
+            "source": "主用户和次用户",
+            "target": "方向性传输",
+            "type": "使用"
+        },
+        {
+            "source": "主用户栅格",
+            "target": "主用户传输时隙",
+            "type": "包含"
+        },
+        {
+            "source": "主用户栅格",
+            "target": "循环传输方案",
+            "type": "使用"
+        },
+        {
+            "source": "主用户栅格",
+            "target": "水平数据路径",
+            "type": "使用"
+        },
+        {
+            "source": "主用户栅格",
+            "target": "垂直传输路径",
+            "type": "使用"
+        },
+        {
+            "source": "次用户栅格",
+            "target": "主用户保护区",
+            "type": "包含"
+        },
+        {
+            "source": "次用户栅格",
+            "target": "多跳路由协议",
+            "type": "使用"
+        },
+        {
+            "source": "链路容量",
+            "target": "信道功率增益",
+            "type": "依赖"
+        },
+        {
+            "source": "吞吐量容量",
+            "target": "链路容量",
+            "type": "依赖"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "主用户保护区",
+            "en": "Primary user protection zone"
+        },
+        {
+            "title": "活动主用户数目",
+            "en": "Number of active primary users"
+        },
+        {
+            "title": "网络连通性",
+            "en": "Network connectivity"
+        },
+        {
+            "title": "单点连通性",
+            "en": "Point-to-point connectivity"
+        },
+        {
+            "title": "单路径连通性",
+            "en": "Single path connectivity"
+        },
+        {
+            "title": "全网连通性",
+            "en": "Network-wide connectivity"
+        },
+        {
+            "title": "角度维度频谱机会",
+            "en": "Angle-dimension spectrum opportunity"
+        },
+        {
+            "title": "DOA估计算法",
+            "en": "Direction of Arrival estimation algorithm"
+        },
+        {
+            "title": "MUSIC算法",
+            "en": "Multiple Signal Classification algorithm"
+        },
+        {
+            "title": "角度维度频谱空洞",
+            "en": "Angle-dimension spectrum hole"
+        },
+        {
+            "title": "次序统计量",
+            "en": "Order statistics"
+        },
+        {
+            "title": "指示信号",
+            "en": "Beacon signal"
+        }
+    ],
+    "relations": [
+        {
+            "source": "主用户保护区",
+            "target": "次用户栅格",
+            "type": "影响"
+        },
+        {
+            "source": "活动主用户数目",
+            "target": "主用户随机部署",
+            "type": "关联"
+        },
+        {
+            "source": "网络连通性",
+            "target": "连通性定义",
+            "type": "包含"
+        },
+        {
+            "source": "连通性定义",
+            "target": "单点连通性",
+            "type": "包含"
+        },
+        {
+            "source": "连通性定义",
+            "target": "单路径连通性",
+            "type": "包含"
+        },
+        {
+            "source": "连通性定义",
+            "target": "全网连通性",
+            "type": "包含"
+        },
+        {
+            "source": "角度维度频谱机会",
+            "target": "次用户发射机",
+            "type": "关联"
+        },
+        {
+            "source": "角度维度频谱机会",
+            "target": "次用户接收机",
+            "type": "关联"
+        },
+        {
+            "source": "DOA估计算法",
+            "target": "角度维度频谱机会",
+            "type": "使用"
+        },
+        {
+            "source": "MUSIC算法",
+            "target": "角度维度频谱机会",
+            "type": "使用"
+        },
+        {
+            "source": "角度维度频谱空洞",
+            "target": "角度维度频谱机会",
+            "type": "影响"
+        },
+        {
+            "source": "次序统计量",
+            "target": "角度维度频谱空洞",
+            "type": "使用"
+        },
+        {
+            "source": "指示信号",
+            "target": "次用户检测",
+            "type": "使用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "角度维度频谱空洞大小",
+            "en": "Size of angular dimension spectrum hole"
+        },
+        {
+            "title": "次用户发射机对主用户接收机的干扰",
+            "en": "Interference of secondary user transmitter on primary user receiver"
+        },
+        {
+            "title": "角度沔",
+            "en": "Angular dimension"
+        },
+        {
+            "title": "方向性传输",
+            "en": "Directional transmission"
+        },
+        {
+            "title": "频谱空洞",
+            "en": "Spectrum hole"
+        },
+        {
+            "title": "次用户",
+            "en": "Secondary user"
+        },
+        {
+            "title": "主用户",
+            "en": "Primary user"
+        },
+        {
+            "title": "干扰区",
+            "en": "Interference zone"
+        },
+        {
+            "title": "概率密度函数",
+            "en": "Probability density function"
+        },
+        {
+            "title": "累积分布函数",
+            "en": "Cumulative distribution function"
+        },
+        {
+            "title": "均值",
+            "en": "Mean"
+        },
+        {
+            "title": "贝努利事件",
+            "en": "Bernoulli event"
+        },
+        {
+            "title": "期望值",
+            "en": "Expectation value"
+        },
+        {
+            "title": "Markov不等式",
+            "en": "Markov's inequality"
+        },
+        {
+            "title": "Chemoff不等式",
+            "en": "Chernoff's inequality"
+        },
+        {
+            "title": "一致界",
+            "en": "Uniform bound"
+        }
+    ],
+    "relations": [
+        {
+            "source": "角度维度频谱空洞大小",
+            "target": "角度沔",
+            "type": "is a part of"
+        },
+        {
+            "source": "次用户发射机对主用户接收机的干扰",
+            "target": "主用户",
+            "type": "affects"
+        },
+        {
+            "source": "次用户发射机对主用户接收机的干扰",
+            "target": "次用户",
+            "type": "affects"
+        },
+        {
+            "source": "方向性传输",
+            "target": "次用户发射机对主用户接收机的干扰",
+            "type": "enables"
+        },
+        {
+            "source": "频谱空洞",
+            "target": "角度维度频谱空洞大小",
+            "type": "has"
+        },
+        {
+            "source": "次用户",
+            "target": "干扰区",
+            "type": "is in"
+        },
+        {
+            "source": "主用户",
+            "target": "干扰区",
+            "type": "is in"
+        },
+        {
+            "source": "概率密度函数",
+            "target": "角度维度频谱空洞大小",
+            "type": "describes"
+        },
+        {
+            "source": "累积分布函数",
+            "target": "角度维度频谱空洞大小",
+            "type": "describes"
+        },
+        {
+            "source": "均值",
+            "target": "角度维度频谱空洞大小",
+            "type": "describes"
+        },
+        {
+            "source": "贝努利事件",
+            "target": "次用户干扰区内主用户的个数",
+            "type": "is a part of"
+        },
+        {
+            "source": "期望值",
+            "target": "次用户干扰区内主用户的个数",
+            "type": "describes"
+        },
+        {
+            "source": "Markov不等式",
+            "target": "次用户干扰区内主用户的个数",
+            "type": "applies to"
+        },
+        {
+            "source": "Chemoff不等式",
+            "target": "次用户干扰区内主用户的个数",
+            "type": "applies to"
+        },
+        {
+            "source": "一致界",
+            "target": "次用户干扰区内主用户的个数",
+            "type": "applies to"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "全向发射和全向接收(OmniTransmissionandOmniReception,OTOR)", "en": "OmniTransmissionandOmniReception"},
+        {"title": "定向发射和全向接收(DirectionalTransmissionandOmniReception,DTOR)", "en": "DirectionalTransmissionandOmniReception"},
+        {"title": "全向发射和定向接收(OmniTransmissionandDirectionalReception,OTDR)", "en": "OmniTransmissionandDirectionalReception"},
+        {"title": "定向发射和定向接收(DirectionalTransmissionandDirectionalReception,DTDR)", "en": "DirectionalTransmissionandDirectionalReception"},
+        {"title": "次用户等待的网络连通性分析", "en": "Network Connectivity Analysis with Waiting Secondary Users"},
+        {"title": "主网络的吞吐量", "en": "Throughput of Primary Network"},
+        {"title": "一个主用户栅格可以支持的数据速率", "en": "Data Rate Supported by a Primary User Grid"},
+        {"title": "通过一个主用户栅格的路由的数目", "en": "Number of Routes Passing Through a Primary User Grid"},
+        {"title": "一个次用户栅格可以支持的数据速率", "en": "Data Rate Supported by a Secondary User Grid"}
+    ],
+    "relations": [
+        {"source": "OTOR", "target": "DTOR", "type": "related"},
+        {"source": "OTOR", "target": "OTDR", "type": "related"},
+        {"source": "OTOR", "target": "DTDR", "type": "related"},
+        {"source": "DTOR", "target": "DTDR", "type": "related"},
+        {"source": "OTDR", "target": "DTDR", "type": "related"},
+        {"source": "次用户等待的网络连通性分析", "target": "主网络的吞吐量", "type": "related"},
+        {"source": "一个主用户栅格可以支持的数据速率", "target": "主网络的吞吐量", "type": "related"},
+        {"source": "通过一个主用户栅格的路由的数目", "target": "主网络的吞吐量", "type": "related"},
+        {"source": "一个次用户栅格可以支持的数据速率", "target": "次用户等待的网络连通性分析", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "DTOR",
+            "en": "DTOR"
+        },
+        {
+            "title": "OTOR",
+            "en": "OTOR"
+        },
+        {
+            "title": "主用户网络",
+            "en": "Primary User Network"
+        },
+        {
+            "title": "次用户网络",
+            "en": "Secondary User Network"
+        },
+        {
+            "title": "数据速率",
+            "en": "Data Rate"
+        },
+        {
+            "title": "吞吐量",
+            "en": "Throughput"
+        },
+        {
+            "title": "网络协议",
+            "en": "Network Protocol"
+        },
+        {
+            "title": "TDMA传输方案",
+            "en": "TDMA Transmission Scheme"
+        },
+        {
+            "title": "角度维度频谱空洞",
+            "en": "Angular Dimension Spectrum Hole"
+        },
+        {
+            "title": "机会因子",
+            "en": "Opportunistic Factor"
+        }
+    ],
+    "relations": [
+        {
+            "source": "主用户网络",
+            "target": "DTOR",
+            "type": "研究对象"
+        },
+        {
+            "source": "次用户网络",
+            "target": "OTOR",
+            "type": "研究对象"
+        },
+        {
+            "source": "DTOR",
+            "target": "次用户网络",
+            "type": "关系"
+        },
+        {
+            "source": "OTOR",
+            "target": "次用户网络",
+            "type": "关系"
+        },
+        {
+            "source": "数据速率",
+            "target": "DTOR",
+            "type": "研究对象"
+        },
+        {
+            "source": "数据速率",
+            "target": "次用户网络",
+            "type": "研究对象"
+        },
+        {
+            "source": "吞吐量",
+            "target": "DTOR",
+            "type": "研究对象"
+        },
+        {
+            "source": "吞吐量",
+            "target": "OTOR",
+            "type": "研究对象"
+        },
+        {
+            "source": "网络协议",
+            "target": "主用户网络",
+            "type": "应用"
+        },
+        {
+            "source": "TDMA传输方案",
+            "target": "主用户网络",
+            "type": "应用"
+        },
+        {
+            "source": "角度维度频谱空洞",
+            "target": "DTOR",
+            "type": "研究对象"
+        },
+        {
+            "source": "机会因子",
+            "target": "次用户网络",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "OTDR",
+            "en": "OTDR"
+        },
+        {
+            "title": "DTDR",
+            "en": "DTDR"
+        },
+        {
+            "title": "次用户",
+            "en": "Secondary User"
+        },
+        {
+            "title": "主用户",
+            "en": "Primary User"
+        },
+        {
+            "title": "吞吐量",
+            "en": "Throughput"
+        },
+        {
+            "title": "网络连通性",
+            "en": "Network Connectivity"
+        },
+        {
+            "title": "干扰区",
+            "en": "Interference Zone"
+        },
+        {
+            "title": "路径",
+            "en": "Path"
+        },
+        {
+            "title": "贝努利分布",
+            "en": "Bernoulli Distribution"
+        }
+    ],
+    "relations": [
+        {
+            "source": "OTDR",
+            "target": "吞吐量",
+            "type": "包含"
+        },
+        {
+            "source": "DTDR",
+            "target": "吞吐量",
+            "type": "包含"
+        },
+        {
+            "source": "次用户",
+            "target": "吞吐量",
+            "type": "影响"
+        },
+        {
+            "source": "主用户",
+            "target": "吞吐量",
+            "type": "影响"
+        },
+        {
+            "source": "网络连通性",
+            "target": "次用户",
+            "type": "关联"
+        },
+        {
+            "source": "网络连通性",
+            "target": "主用户",
+            "type": "关联"
+        },
+        {
+            "source": "干扰区",
+            "target": "次用户",
+            "type": "影响"
+        },
+        {
+            "source": "干扰区",
+            "target": "主用户",
+            "type": "影响"
+        },
+        {
+            "source": "路径",
+            "target": "次用户",
+            "type": "包含"
+        },
+        {
+            "source": "路径",
+            "target": "干扰区",
+            "type": "关联"
+        },
+        {
+            "source": "贝努利分布",
+            "target": "次用户",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Pr{D>8}M^^T0",
+            "en": "Probability of D>8 in M^^T0"
+        },
+        {
+            "title": "保护区链条(PRC)",
+            "en": "Preservation Region Chain (PRC)"
+        },
+        {
+            "title": "主用户栅格",
+            "en": "Primary User Grid"
+        },
+        {
+            "title": "次用户路径连通性",
+            "en": "Connectivity of Secondary User Paths"
+        },
+        {
+            "title": "次用户全网的连通性",
+            "en": "Connectivity of Secondary User Network"
+        },
+        {
+            "title": "次网络在环绕路由下的连通性",
+            "en": "Connectivity of Secondary Network under Encircling Routing"
+        }
+    ],
+    "relations": [
+        {
+            "source": "Pr{D>8}M^^T0",
+            "target": "次用户路径连通性",
+            "type": "相关"
+        },
+        {
+            "source": "次用户路径连通性",
+            "target": "次用户全网的连通性",
+            "type": "包含"
+        },
+        {
+            "source": "主用户栅格",
+            "target": "保护区链条(PRC)",
+            "type": "包含"
+        },
+        {
+            "source": "保护区链条(PRC)",
+            "target": "次网络在环绕路由下的连通性",
+            "type": "影响"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "角度维度频谱机会",
+            "en": "Angle-Domain Spectrum Opportunity"
+        },
+        {
+            "title": "认知无线网络容量",
+            "en": "Cognitive Wireless Network Capacity"
+        },
+        {
+            "title": "HDP-VDP路由",
+            "en": "HDP-VDP Routing"
+        },
+        {
+            "title": "环绕路由",
+            "en": "Detour Routing"
+        },
+        {
+            "title": "随机认知adhoc网络的连通性",
+            "en": "Connectivity of Random Cognitive Ad Hoc Networks"
+        }
+    ],
+    "relations": [
+        {
+            "source": "角度维度频谱机会",
+            "target": "认知无线网络容量",
+            "type": "提升"
+        },
+        {
+            "source": "认知无线网络容量",
+            "target": "HDP-VDP路由",
+            "type": "应用"
+        },
+        {
+            "source": "认知无线网络容量",
+            "target": "环绕路由",
+            "type": "应用"
+        },
+        {
+            "source": "HDP-VDP路由",
+            "target": "随机认知adhoc网络的连通性",
+            "type": "探索"
+        },
+        {
+            "source": "环绕路由",
+            "target": "随机认知adhoc网络的连通性",
+            "type": "探索"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频谱感知算法", "en": "Spectrum sensing algorithms"},
+        {"title": "无线网络容量", "en": "Wireless network capacity"},
+        {"title": "认知网络", "en": "Cognitive networks"},
+        {"title": "叠加网络", "en": "Overlaid networks"},
+        {"title": "定向天线", "en": "Directional antennas"},
+        {"title": "空间频谱洞", "en": "Spatial spectrum holes"},
+        {"title": "无线网格网络", "en": "Wireless mesh networks"},
+        {"title": "认知中继", "en": "Cognition-oriented relaying"}
+    ],
+    "relations": [
+        {"source": "频谱感知算法", "target": "认知网络", "type": "属于"},
+        {"source": "无线网络容量", "target": "认知网络", "type": "相关"},
+        {"source": "无线网络容量", "target": "叠加网络", "type": "相关"},
+        {"source": "叠加网络", "target": "认知网络", "type": "相关"},
+        {"source": "定向天线", "target": "无线网络容量", "type": "影响"},
+        {"source": "定向天线", "target": "无线网格网络", "type": "影响"},
+        {"source": "空间频谱洞", "target": "认知网络", "type": "应用"},
+        {"source": "认知中继", "target": "认知网络", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线网络", "en": "Cognitive Radio Network"},
+        {"title": "多跳延迟", "en": "Multihop Delay"},
+        {"title": "协作认知无线自组网", "en": "Cooperative Cognitive Radio Ad Hoc Network"},
+        {"title": "随机网络的渐近连通性", "en": "Asymptotic Connectivity of Random Networks"},
+        {"title": "频谱感知认知无线网络", "en": "Spectrum Sensing Cognitive Wireless Network"},
+        {"title": "自组织无线网络的信息论方法", "en": "Information Theoretic Approach for Ad Hoc Wireless Networks"},
+        {"title": "定向传输的认知无线网络吞吐量", "en": "Throughput Scaling Laws of Cognitive Radio Networks with Directional Transmission"},
+        {"title": "随机认知无线网络的渐近连通性", "en": "Asymptotic Connectivity of Random Cognitive Radio Networks"},
+        {"title": "阵列处理和传感器网络手册", "en": "Handbook on Array Processing and Sensor Networks"},
+        {"title": "顺序统计", "en": "Order Statistics"}
+    ],
+    "relations": [
+        {"source": "认知无线网络", "target": "多跳延迟", "type": "研究"},
+        {"source": "认知无线网络", "target": "协作认知无线自组网", "type": "研究"},
+        {"source": "认知无线网络", "target": "随机网络的渐近连通性", "type": "研究"},
+        {"source": "认知无线网络", "target": "频谱感知认知无线网络", "type": "研究"},
+        {"source": "认知无线网络", "target": "自组织无线网络的信息论方法", "type": "研究"},
+        {"source": "认知无线网络", "target": "定向传输的认知无线网络吞吐量", "type": "研究"},
+        {"source": "认知无线网络", "target": "随机认知无线网络的渐近连通性", "type": "研究"},
+        {"source": "阵列处理和传感器网络手册", "target": "认知无线网络", "type": "研究"},
+        {"source": "顺序统计", "target": "认知无线网络", "type": "研究"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线网络", "en": "Cognitive Radio Network"},
+        {"title": "鲁棒波束成形方法", "en": "Robust Beamforming Method"},
+        {"title": "角度维频谱空洞", "en": "Angle-Domain Spectrum Hole"},
+        {"title": "网络容量尺度律", "en": "Network Capacity Scaling Law"},
+        {"title": "自组织网络", "en": "Ad Hoc Network"},
+        {"title": "移动自组织网络", "en": "Mobile Ad Hoc Network"},
+        {"title": "混合网络", "en": "Hybrid Network"},
+        {"title": "超宽带网络", "en": "Ultra-Wideband Network"},
+        {"title": "认知自组织网络", "en": "Cognitive Radio Ad Hoc Network"},
+        {"title": "高维频谱空洞", "en": "High-Dimensional Spectrum Hole"}
+    ],
+    "relations": [
+        {"source": "鲁棒波束成形方法", "target": "认知无线网络", "type": "研究方法"},
+        {"source": "角度维频谱空洞", "target": "认知adhoc网络", "type": "网络容量提升方法"},
+        {"source": "角度维频谱空洞", "target": "吞吐量容量", "type": "提升因素"},
+        {"source": "网络容量尺度律", "target": "Gupta和Kumar的成果", "type": "里程碑"},
+        {"source": "自组织网络", "target": "网络容量研究", "type": "研究对象"},
+        {"source": "移动自组织网络", "target": "自组织网络", "type": "变种"},
+        {"source": "移动自组织网络", "target": "容量提升", "type": "研究方向"},
+        {"source": "混合网络", "target": "自组织网络", "type": "结合方式"},
+        {"source": "混合网络", "target": "基站", "type": "网络结构"},
+        {"source": "超宽带网络", "target": "混合网络", "type": "应用场景"},
+        {"source": "认知自组织网络", "target": "高维频谱空洞", "type": "网络容量提升方法"},
+        {"source": "高维频谱空洞", "target": "认知无线网络", "type": "容量提升因素"},
+        {"source": "高维频谱空洞", "target": "多维频谱空洞", "type": "进一步研究方向"},
+        {"source": "网络模型", "target": "信道模型", "type": "系统模型"},
+        {"source": "主用户", "target": "次用户", "type": "通信对象"},
+        {"source": "干扰控制", "target": "次用户", "type": "控制对象"},
+        {"source": "多跳通信", "target": "主用户", "type": "通信方式"},
+        {"source": "高维频谱空洞", "target": "干扰控制", "type": "控制方法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "信道模型", "en": "Channel Model"},
+        {"title": "链路容量", "en": "Link Capacity"},
+        {"title": "网络协议", "en": "Network Protocol"},
+        {"title": "主次网络", "en": "Primary and Secondary Networks"},
+        {"title": "路由方式", "en": "Routing Method"},
+        {"title": "27-TDMA协议", "en": "27-TDMA Protocol"},
+        {"title": "HDP-VDP路由", "en": "HDP-VDP Routing"},
+        {"title": "发射功率", "en": "Transmit Power"},
+        {"title": "部署密度", "en": "Deployment Density"}
+    ],
+    "relations": [
+        {"source": "信道模型", "target": "链路容量", "type": "包含"},
+        {"source": "链路容量", "target": "主用户链路容量", "type": "包含"},
+        {"source": "链路容量", "target": "次用户链路容量", "type": "包含"},
+        {"source": "网络协议", "target": "主次网络的网络协议", "type": "包含"},
+        {"source": "主次网络的网络协议", "target": "27-TDMA协议", "type": "包含"},
+        {"source": "主次网络的网络协议", "target": "路由方式", "type": "包含"},
+        {"source": "路由方式", "target": "HDP-VDP路由", "type": "包含"},
+        {"source": "主次网络的网络协议", "target": "发射功率", "type": "包含"},
+        {"source": "主次网络的网络协议", "target": "部署密度", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "主次网络",
+            "en": "Primary and Secondary Networks"
+        },
+        {
+            "title": "保护区",
+            "en": "Protection Zone"
+        },
+        {
+            "title": "干扰区",
+            "en": "Interference Zone"
+        },
+        {
+            "title": "贝努利事件",
+            "en": "Bernoulli Event"
+        },
+        {
+            "title": "期望值",
+            "en": "Expectation Value"
+        },
+        {
+            "title": "Markov不等式",
+            "en": "Markov's Inequality"
+        },
+        {
+            "title": "Chernoff不等式",
+            "en": "Chernoff's Inequality"
+        },
+        {
+            "title": "连通性分析",
+            "en": "Connectivity Analysis"
+        }
+    ],
+    "relations": [
+        {
+            "source": "主用户",
+            "target": "保护区",
+            "type": "存在于"
+        },
+        {
+            "source": "次用户",
+            "target": "保护区",
+            "type": "避让"
+        },
+        {
+            "source": "主用户",
+            "target": "次用户",
+            "type": "干扰"
+        },
+        {
+            "source": "次用户",
+            "target": "主用户",
+            "type": "干扰"
+        },
+        {
+            "source": "次用户",
+            "target": "干扰区",
+            "type": "存在于"
+        },
+        {
+            "source": "主用户",
+            "target": "次用户干扰区",
+            "type": "出现在"
+        },
+        {
+            "source": "次用户干扰区",
+            "target": "主用户",
+            "type": "影响"
+        },
+        {
+            "source": "次用户",
+            "target": "主用户",
+            "type": "传输中断"
+        },
+        {
+            "source": "次用户",
+            "target": "缓存数据",
+            "type": "选择"
+        },
+        {
+            "source": "主用户保护区",
+            "target": "次用户",
+            "type": "消失"
+        },
+        {
+            "source": "次用户",
+            "target": "传输",
+            "type": "等待"
+        },
+        {
+            "source": "次用户立方体",
+            "target": "频谱机会",
+            "type": "具有"
+        },
+        {
+            "source": "主用户",
+            "target": "次用户立方体",
+            "type": "出现在"
+        },
+        {
+            "source": "次用户立方体",
+            "target": "频谱机会",
+            "type": "高概率"
+        },
+        {
+            "source": "次用户立方体",
+            "target": "主用户",
+            "type": "出现的概率趋于0"
+        },
+        {
+            "source": "次用户立方体",
+            "target": "连通性",
+            "type": "允许等待"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "主用户保护区",
+            "en": "Primary user protection zone"
+        },
+        {
+            "title": "邻居立方体",
+            "en": "Neighbor cube"
+        },
+        {
+            "title": "传输帧长",
+            "en": "Transmission frame length"
+        },
+        {
+            "title": "认知无线网络",
+            "en": "Cognitive wireless network"
+        },
+        {
+            "title": "容量尺度律",
+            "en": "Capacity scaling law"
+        },
+        {
+            "title": "呑吐量尺度定律",
+            "en": "Throughput scaling law"
+        },
+        {
+            "title": "链路容量",
+            "en": "Link capacity"
+        },
+        {
+            "title": "路由",
+            "en": "Routing"
+        },
+        {
+            "title": "部署密度",
+            "en": "Deployment density"
+        },
+        {
+            "title": "干扰",
+            "en": "Interference"
+        }
+    ],
+    "relations": [
+        {
+            "source": "主用户保护区",
+            "target": "邻居立方体",
+            "type": "包含"
+        },
+        {
+            "source": "邻居立方体",
+            "target": "主用户保护区",
+            "type": "被包含"
+        },
+        {
+            "source": "传输帧长",
+            "target": "次用户立方体",
+            "type": "对应"
+        },
+        {
+            "source": "次用户立方体",
+            "target": "传输帧长",
+            "type": "对应"
+        },
+        {
+            "source": "认知无线网络",
+            "target": "主用户保护区",
+            "type": "应用"
+        },
+        {
+            "source": "认知无线网络",
+            "target": "次用户立方体",
+            "type": "应用"
+        },
+        {
+            "source": "容量尺度律",
+            "target": "呑吐量尺度定律",
+            "type": "包含"
+        },
+        {
+            "source": "呑吐量尺度定律",
+            "target": "链路容量",
+            "type": "影响"
+        },
+        {
+            "source": "呑吐量尺度定律",
+            "target": "路由",
+            "type": "影响"
+        },
+        {
+            "source": "部署密度",
+            "target": "干扰",
+            "type": "相关"
+        },
+        {
+            "source": "干扰",
+            "target": "部署密度",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "定理5-1",
+            "en": "Theorem 5-1"
+        },
+        {
+            "title": "定理5-2",
+            "en": "Theorem 5-2"
+        },
+        {
+            "title": "定理5-3",
+            "en": "Theorem 5-3"
+        }
+    ],
+    "relations": [
+        {
+            "source": "定理5-1",
+            "target": "定理5-2",
+            "type": "前置条件"
+        },
+        {
+            "source": "定理5-1",
+            "target": "定理5-3",
+            "type": "前置条件"
+        },
+        {
+            "source": "引理5-2",
+            "target": "定理5-3",
+            "type": "前置条件"
+        },
+        {
+            "source": "5.3.3节",
+            "target": "定理5-3",
+            "type": "前置条件"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "无线网络容量", "en": "Capacity of Wireless Networks"},
+        {"title": "自组织网络容量", "en": "Capacity of Ad Hoc Networks"},
+        {"title": "移动自组织网络容量", "en": "Capacity of Mobile Ad Hoc Networks"},
+        {"title": "混合无线网络容量", "en": "Capacity of Hybrid Wireless Networks"},
+        {"title": "三维无线网络容量", "en": "Capacity of Three-Dimensional Wireless Networks"},
+        {"title": "无线网络几何容量", "en": "Geometric Capacity of Wireless Networks"}
+    ],
+    "relations": [
+        {"source": "Capacity of Wireless Networks", "target": "Capacity of Ad Hoc Networks", "type": "包含"},
+        {"source": "Capacity of Ad Hoc Networks", "target": "Capacity of Mobile Ad Hoc Networks", "type": "包含"},
+        {"source": "Capacity of Ad Hoc Networks", "target": "Capacity of Hybrid Wireless Networks", "type": "包含"},
+        {"source": "Capacity of Wireless Networks", "target": "Capacity of Three-Dimensional Wireless Networks", "type": "包含"},
+        {"source": "Capacity of Wireless Networks", "target": "Geometric Capacity of Wireless Networks", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线网络频谱高效利用问题", "en": "Efficient spectrum utilization problem in cognitive wireless networks"},
+        {"title": "认知信息的准确表征和多维频谱空洞的高效利用", "en": "Accurate representation of cognitive information and efficient utilization of multidimensional spectrum holes"},
+        {"title": "认知无线网络中认知信息表征、度量和传递理论", "en": "Representation, measurement, and transmission theory of cognitive information in cognitive wireless networks"},
+        {"title": "认知无线网络空时二维频谱机会", "en": "Spatial-temporal two-dimensional spectrum opportunities in cognitive wireless networks"},
+        {"title": "认知无线网络角度维频谱机会", "en": "Angular spectrum opportunities in cognitive wireless networks"},
+        {"title": "认知无线网络高度维频谱机会", "en": "Height spectrum opportunities in cognitive wireless networks"}
+    ],
+    "relations": [
+        {"source": "认知信息的准确表征和多维频谱空洞的高效利用", "target": "认知无线网络中认知信息表征、度量和传递理论", "type": "包含"},
+        {"source": "认知信息的准确表征和多维频谱空洞的高效利用", "target": "认知无线网络空时二维频谱机会", "type": "包含"},
+        {"source": "认知信息的准确表征和多维频谱空洞的高效利用", "target": "认知无线网络角度维频谱机会", "type": "包含"},
+        {"source": "认知信息的准确表征和多维频谱空洞的高效利用", "target": "认知无线网络高度维频谱机会", "type": "包含"},
+        {"source": "认知无线网络中认知信息表征、度量和传递理论", "target": "认知信息的表征理论", "type": "包含"},
+        {"source": "认知无线网络中认知信息表征、度量和传递理论", "target": "认知信息度量理论", "type": "包含"},
+        {"source": "认知无线网络中认知信息表征、度量和传递理论", "target": "认知信息传递方法", "type": "包含"},
+        {"source": "认知无线网络空时二维频谱机会", "target": "黑白灰三区划分的空时频谱接入模型", "type": "包含"},
+        {"source": "认知无线网络空时二维频谱机会", "target": "数据库辅助的基于三区划分的空时频谱接入方法", "type": "包含"},
+        {"source": "认知无线网络角度维频谱机会", "target": "认知无线网络采用角度维度频谱机会的情况下对主用户的影响", "type": "包含"},
+        {"source": "认知无线网络高度维频谱机会", "target": "3D认知无线网络", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "3D认知无线网络的网络协议", "en": "Network Protocol of 3D Cognitive Wireless Network"},
+        {"title": "3D认知无线网络的容量", "en": "Capacity of 3D Cognitive Wireless Network"},
+        {"title": "认知信息的获取、表征、度量和传递", "en": "Acquisition, Representation, Measurement and Transmission of Cognitive Information"},
+        {"title": "多维认知信息的接入", "en": "Access of Multidimensional Cognitive Information"},
+        {"title": "空时频谱检测与接入", "en": "Space-Time-Spectrum Detection and Access"},
+        {"title": "多域认知", "en": "Multidomain Cognition"},
+        {"title": "安全性问题", "en": "Security Issues"}
+    ],
+    "relations": [
+        {"source": "3D认知无线网络的网络协议", "target": "3D认知无线网络的容量", "type": "包含"},
+        {"source": "3D认知无线网络的容量", "target": "认知信息的获取、表征、度量和传递", "type": "基于"},
+        {"source": "认知信息的获取、表征、度量和传递", "target": "多维认知信息的接入", "type": "基于"},
+        {"source": "多维认知信息的接入", "target": "空时频谱检测与接入", "type": "基于"},
+        {"source": "多域认知", "target": "认知信息的获取、表征、度量和传递", "type": "包含"},
+        {"source": "安全性问题", "target": "空时频谱检测与接入", "type": "涉及"},
+        {"source": "安全性问题", "target": "多维认知信息的接入", "type": "涉及"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "加性高斯白噪声", "en": "Additive White Gaussian Noise"},
+        {"title": "概率密度函数", "en": "Probability Distribution Function"},
+        {"title": "中心极限定理", "en": "Central Limit Theorem"},
+        {"title": "软件无线电", "en": "Software Defined Radio"},
+        {"title": "软件定义网络", "en": "Software Defined Network"},
+        {"title": "认知导频信道", "en": "Cognitive Pilot Channel"},
+        {"title": "公共控制信道", "en": "Common Control Channel"},
+        {"title": "认知无线电", "en": "Cognitive Radio"},
+        {"title": "认知无线网络", "en": "Cognitive Wireless Network"},
+        {"title": "动态频谱接入", "en": "Dynamic Spectrum Access"},
+        {"title": "动态频谱租赁", "en": "Dynamic Spectrum Leasing"},
+        {"title": "主用户", "en": "Primary User"},
+        {"title": "次用户", "en": "Secondary User"},
+        {"title": "服务质量", "en": "Quality of Service"},
+        {"title": "信干噪比", "en": "Signal-to-Interference-Noise Ratio"},
+        {"title": "信噪比", "en": "Signal-to-Noise Ratio"},
+        {"title": "时分多址接入", "en": "Time Division Multiplexing Access"},
+        {"title": "媒体接入控制", "en": "Medium Access Control"},
+        {"title": "认知无线电自组织网络", "en": "Cognitive Radio Ad Hoc Network"},
+        {"title": "无线电环境地图", "en": "Radio Environment Map"},
+        {"title": "主用户模拟攻击", "en": "Primary User Emulation Attack"},
+        {"title": "主用户排斥区", "en": "Primary Exclusive Region"},
+        {"title": "超宽带", "en": "Ultra Wideband"},
+        {"title": "信道状态信息", "en": "Channel State Information"},
+        {"title": "无线电参数误差", "en": "Radio Parameters Error"}
+    ],
+    "relations": [
+        {"source": "加性高斯白噪声", "target": "概率密度函数", "type": "包含"},
+        {"source": "中心极限定理", "target": "概率密度函数", "type": "应用"},
+        {"source": "软件无线电", "target": "认知无线电", "type": "属于"},
+        {"source": "软件定义网络", "target": "认知无线网络", "type": "属于"},
+        {"source": "认知导频信道", "target": "认知无线电", "type": "属于"},
+        {"source": "公共控制信道", "target": "认知无线电", "type": "属于"},
+        {"source": "认知无线网络", "target": "认知无线电", "type": "包含"},
+        {"source": "动态频谱接入", "target": "认知无线电", "type": "属于"},
+        {"source": "动态频谱租赁", "target": "认知无线电", "type": "属于"},
+        {"source": "次用户", "target": "认知无线电", "type": "竞争"},
+        {"source": "服务质量", "target": "认知无线电", "type": "影响"},
+        {"source": "信干噪比", "target": "认知无线电", "type": "影响"},
+        {"source": "信噪比", "target": "认知无线电", "type": "影响"},
+        {"source": "时分多址接入", "target": "认知无线电", "type": "属于"},
+        {"source": "媒体接入控制", "target": "认知无线电", "type": "属于"},
+        {"source": "认知无线电自组织网络", "target": "认知无线网络", "type": "包含"},
+        {"source": "无线电环境地图", "target": "认知无线电", "type": "应用"},
+        {"source": "主用户模拟攻击", "target": "认知无线电", "type": "威胁"},
+        {"source": "主用户排斥区", "target": "认知无线电", "type": "限制"},
+        {"source": "超宽带", "target": "认知无线电", "type": "应用"},
+        {"source": "信道状态信息", "target": "认知无线电", "type": "影响"},
+        {"source": "无线电参数误差", "target": "认知无线电", "type": "影响"}
+    ]
+}

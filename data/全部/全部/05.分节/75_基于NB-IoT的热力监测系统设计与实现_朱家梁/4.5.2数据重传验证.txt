@@ -1,0 +1,78 @@
+4.5.2数据重传验证
+本文设计了嵌入式端的消息重传机制，在程序中设置重传次数的计数器，初 始数值为0,每次NB-IoT客户端重新发送CON请求时，将计数器的值加1,设 置重传次数阈值为5,当计数器达到重传次数阈值时，NB-IoT客户端随即停止 此次数据的发送。为使得消息重传机制更加合理,设置初始重传间隔时间为10s, 此后的每一次重传时间间隔为前一次的2倍，直到本次重传结束。在嵌入式端通 过串口监视器监视设备状态，当设备发送CON请求并收到来自网络侧返回的 ACK信号时，串口打印Succeed字样，结束本次重传；当设备收到来自网络侧 返回的RST信号时，串口打印Error字样，在未达到计数器阈值时继续本次重传； 当重传次数达到阈值时，串口打印Failed字样，结束本次重传，避免陷入死循环 的窘境。
+在嵌入式端的消息重传机制的基础上增加了系统服务端的命令下行，通过定 义事件要求NB-IoT客户端设备重传消息。CDP Server平台模拟仿真命令下达如 图4-15所示，系统服务端应用程序实现命令下行如图4-16所示。
+图4-15 电信CDP Server模拟命令下达
+49
+“ fa? L>te*>Adew?_hap5
+:Sr JRz Syltem L:bf»T-
+* 透 trz
+：楼 ccmisvawei.servsre.BppAccffjsSsajrny
+柒 ccm.k»;a>»*^serv>:e.biKd-Tssk
+•榭 cec>H:awe'.ser<>:exon«T>3ns3eitve»y
+>,. CreateDsviteCmiSCarcsTaskjaza
+］，Cr.re土KweCoKFacd.iavsj
+.i I*vc*aDevi«S±rzic*s ja .b
+* Modii^{>e(Xee£ommar-ijava
+)Qus <yDsviceCmdC »^ce FTm Ljav«
+J； QuefyC^vi^Co-Tvnsndsjjva
+电 comJx»we：.s«v»c«.casaCsferfcn
+* ccmJxswt .service.eeviceGrcu^^ana5emen:
+击 <cm>um*riier<w：eJ：r<weMen«Cffme«
+弟 C5XJX3*：.**，，，-ije”ggd・
+& conxhv««eu5e>v>c«.rr«Mge?u:r<ng
+市 ccm.h<;ai«'.se:vice.w6icrietonM«negenwnt
+.'缶 ccm-buawestMtMeslage?usb
+.Qs
+,•分 r<t5ource
+港，e，gme-
+p^iic static v»id win'St-ing；］	throws excepticn ■；
+.,., ：：«-ias/ -i-.'i'iencitatiw:
+HttuJtil http- r>tu
+3 .InitSSlXonf lgFcrTwoU»y();
+；：i；rtiutri*ic»ri5n -r.cxsn
+St-i-g sc-1“》- legini- -'--.i'-.U);
+Mk* >-- Tb*t tX f:：：，-."喏-re- y：-：：e* hs-T nsss	-e： f3)e.
+String :;- Ccnsrsnr. CVfATf_0FVICf_CX3;
+String =“d • Ccnszent.VPIO;
+-
+•；--；-g	i iXl_ ii*r< «; CAI1.M UKL;
+integer K*»4r< -inoeit ■ J;
+,','r.irns.t	?,»•	. r".^ci, «^en you us* vhe a*x.
+• ■•--™	A♦-«fter >“iae4 X、ts«	*■■■■<	” pr^iie that ha-ti b*»n or:*: ti :<T hF.
+■ , . . ^ . . . . .
+jtrlr.g iir--lf；iXd • -Bfi6htn»s» ;. -r -	1,
+String twt；»d • -SET_C£VIC；
+CbjetWode g-a: -，ZcnUtl：.eovg”Ofr"ct?8：，E；"«r! F：u*：V；|
+fapwString, Object> F0-az，y*：、E - new Hast«»p-.>;);
+i;* »«<-* d.pu；;"i«rylcelc', ser-i；eXd)；
+XrZ：xw、cT.pE*<hy, :
+pars!®：m»：3r:d.put；,p4ra4,/ f'•■■：■.7);
+图4-16应用程序实现命令下达
+在系统服务端应用中加入Timer定时器，通过定时监测服务端数据库对应的
+NB-IoT客户端设备数据上报的状态，判断是否存在数据上报丢包的情形，如果 存在，则通过CDP Server提供的应用接口触发定义的事件，通过命令下达的方 式通知到NB-IoT客户端设备，NB-IoT客户端设备上线后接收到命令，重启消息 重传机制，将NB-IoT终端的缓存数据进行有效上报。Timer是Java类库中提供 的调度器类，关键函数如图4-17所示。
+private void mainLoop() {
+while (true) {
+try (
+TimerTask task;
+boolean taskFired;
+//获取任务队列的锁
+synchronized(queue) {
+while (queue.isEmpty() && newTasksMayBeScheduled) queue.wait();
+if (queue.isEmptyO)
+break;
+long currentTime, executionTime;
+task = queue.getMin();
+synchronized(task.lock) {
+if (task.state == TimerTask.CAN CELLED) { queue.removeMin();
+continue; // No action required, poll queue again
+)
+)
+if (ItaskFired) // Task hasn't yet fired; wait queue.wait(executionTime - currentTime);
+)
+if (taskFired) // Task fired; run it, holding no locks task.run();
+} catch(lnterruptedException e) {
+)
+)
+)
+图4T7 Timer类关键函数代码
+50

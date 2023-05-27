@@ -1,0 +1,106 @@
+4.1.1数据结构
+1.顶点
+在函数调用图和控制流图中都有顶点结构体，在函数调用图中的顶点子函数 而在控制流图中的顶点表示的是库函数。其中的title字段用于表示此顶点在 文件中的ID, label字段用于表示此顶点在文件中的名字。由于顶点结构体 即可表示函数调用图中的子函数，又能表示控制流图中的库函数，所以加入 vertextype字段来进行区分。另外还有两个字段indegree和outdegree分别表 示此顶点的入度和出度。其具体封装形式和字段描述表如下：
+class Vertex(object):
+def  	_init (self, title, label, vertextype, indegree, outdegree):
+self title = title
+self.label = label
+self.vertextype = vertextype	-
+self.indegree = indegree
+self.outdegree = outdegree
+37
+表4-1顶点的表结构
+字段名	存储类型	允许为空	默认值	描述
+ID	INTEGER	否	1	主键，自增变量
+title	INTEGER	否	无	表示此顶点在文件中
+的ID
+label	VARCHAR(50)	否	无	表示此顶点在文件中 的名字
+vertextype	VARCHAR(20)	否	无	用于区分函数调用图 中的子函数，又能表示 控制流图中的库函数
+indegree	INTEGER	是	-	0	顶点的入度
+outdegree	INTEGER	是	0	顶点的出度
+1.边
+同顶点类也对应两种实体。在控制流图中的边表示子函数的偏序关系, 而在子函数的控制流图中则表示库函数的偏序关系。其中的fromlD字段表 示源的ID, toID字段则表示端的ID,只在控制流图中type字段有效，它表 示操作码，默认为0。其具体封装形式和字段描述表如下：
+class Edge(object):
+def  	init (sel£ fromlD, toID, type=0): self.fromlD = fromlD selftoID = toID self.type = type
+表4-2边的表结构
+字段名	存储类型	允许为空	默认值	描述
+ID	INTEGER	否	1	主键，自增变量
+fromlD	INTEGER	否	无	源的ID
+toID	INTEGER	否	无	端的ID
+type	INTEGER	是	0	操作码，仅在控制流文件中 有效
+1.系统调用
+系统调用对应着程序中的所有库函数调用信息。其中objID字段为此系统调
+38
+用对应的32种类型映射码之一,optID字段则表示此系统调用对应的4种操 作映射码之一，sysCallName字段则表示此系统调用的名称。系统调用结构 体的具体封装形式和字段描述表如下：
+class SystemCall(obj ect):
+def  	init (self objID, optID, sysCallName):
+self.objlD = objID
+self.optlD = optID
+self.sysCallName = sysCallName
+表4-3系统调用的表结构
+字段名	存储类型	允许为空	默认值	描述
+ID	INTEGER	否	1	主键,自增变量
+objID	INTEGER	否	无	表示此库函数调用 对应的类型映射码
+optID	INTEGER	否	无	表示此库函数调用 对应的操作映射码
+sysCallName	VARCHAR(50)	否	无	表示此库函数调用 的名称
+2.精简指令
+精简指令就是封装化的库函数映射码。其中objID表示类型映射码，optED 字段表示操作映射码，objectName字段表示类型名称，operation字段表示操 作名称。其具体封装形式如下：
+class Extractedlnstruction(object):
+def init 	(self, objID, optID, objectName, operation): self.objlD = objID self.optlD = optID
+selfobjectName = objectName selfoperation = operation
+39
+表4-4精简指令的表结构
+字段名	存储类型	允许为空	默认值1	描述
+ID	INTEGER	否	1	主键，自增变量
+objID	INTEGER	否	无	类型映射码
+optID	INTEGER	否	无	操作映射码
+objectName	VARCHAR(50)	否	无	类型名称
+operation	VARCHAR(50)	否	无	操作名称
+3,类型实体
+这个结构体定义了系统层级的类型实体信息。ID字段即为其唯一标识的字段。 name字段表示实体名。description字段为此实体的描述信息。其具体封装形 式和字段描述表如下：
+class Objectltem(object):
+def  	init 	(self, ID, name, description):
+selfllD = ID
+self.name = name
+self.description = description
+表4-5类型实体的表结构
+字段名.	存储类型	允许为空	默认值	描述
+ID	INTEGER	否	无	主键，唯一标识类型 实体
+name	VARCHAR(50)	否	无	类型实体名
+description	VARCHAR(200)	是	G，	类型实体的描述信息
+6.操作实体
+同类型实体类似，这个结构体定义了系统层级的操作实体信息。ID字段唯一 标识操作实体，name字段表示操作名，description字段为描述字段，描述操 作实体的基本信息。其具体的封装形式和字段描述表如下：
+class Operationltem(object):
+def  	init 	(sel£ ID, name, description):
+selfLID = ID
+selfname = name
+selfdescription = description
+40
+表4-6操作实体的表结构
+字段名	存储类型..	允许为空	默认值	描述
+ID	INTEGER	否	无	用于唯一标识操作实 体(自增主键)
+name	VARCHAR(20)	否	无	操作实体名
+description	VARCHAR(100)	是		操作实体的描述信息
+7.子函数系统调用
+子函数系统调用结构体用来表示各个子程序中调用的库函数关系。其中有两 个字段，callerID字段表，示当前作为调用者的子函数(subroutine)的ID, calleelD字段则表示被调用的库函数调用ID。其具体封装形式和字段描述表 如下：
+class CallSys(objeet):
+def  	init (self, callerID, calleelD):
+selfcallerlD = callerID
+self.calleelD = calleelD
+表4-7子函数系统调用的表结构
+字段名	存储类型	允许为空	默认值	描述
+ID	INTEGER	否	1	主键，自增变量
+callerID	INTEGER	否	无	调用者的subroutine 对应的ID
+calleelD	INTEGER	否	无	被调用的库函数ID
+8.子函数调用
+子函数调用结构体用于表示子函数(subroutine)之间的调用关系，相当于一条 有向边，并且这条边的源和目的均为子函数(subroutine)..子函数调用的具体 封装形式以及字段描述表如下：
+class CallSub(object):
+def  	init (self, callerID, calleelD):
+self.callerlD = callerID
+self.calleelD = calleelD
+41
+表4-8子函数调用的表结构
+字段名	存储类型	允许为空	默认值	描述
+ID	INTEGER	否	1	主键，自增变量
+callerID	INTEGER	否	无	源子函数的ID
+calleelD	INTEGER	否	无	目的子函数的ID

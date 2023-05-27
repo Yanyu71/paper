@@ -1,0 +1,20 @@
+2.2系统模型
+考虑一个包含 M 个基站(Base Station, BS)、N 个用户(User Equipment, UE) 的上行蜂窝网络。釆用单载波频分复用(single-carrier frequency division multiple access , SC-FDMA)作为上行多址方式。每个基站配备Nt(Nt 1)个接收天线， 每个用户配备1根发射天线。另外，信道状态信息(channel state information, CSI)能够被完美地测量，并且被发送到协作集内部的所有基站。考虑的无线资 源包括OFDM载波和发射功率。存在在个中心节点，负责协作集合内部所有基 站的资源分配联合优化。协作集合内部各用户数据则由其对应的接入基站进行 解调与接收。基站m内部的用户集合被记为〃m，用户a的接入(服务)基站 被记为如。用户进行离散功率控制，假设存在乙个不同的发射功率，发射功率 集合被记为Preo
+在一"无线资源块上(一般以Physical Resource Block为单位)，假设每个 基站仅调度一个用户用于传输数据。基站m的分配用户记为％„。至多只有 K = M个用户能够同时传输数据，则基站m处的接收信号为
+K
+[ y/Puk(2.1)
+'	k=l
+其中Puk是用户uk的发射功率；hUk<m e CM、】是用户Uk和基站m间的信道矩 阵；S*是用户的发射信号，其发射功率进行了归一化处理；ItmfCMxl是 加性高斯白噪声，其功率为/。
+利用接收向量Wg (Wy e 能够提出用户um的有效信号，该信号 的信号干扰噪声比(signal could be extracted and the effective signal to interference plus noise ratio, SINK)为闵
+|wgh
+5s = £ 风卜欢待血+ |网5件2	(-)
+k=l,k^m
+基站m能够达到的吞吐量为㈣
+= log2(l 十迎牛住)	(2.3)
+其中r 1建模了实际情况到理论容量的距离(gap-to-capacity)o
+8
+一个合理的调度算法需要同时考虑频带效率(spectral efficiency)、公平性 (user fairness) >服务质量(quality of service, QoS )等多项指标。效用函数是一 种能够将多个变量拟合成一个变量的方法，在通信理论网、经济理论得到广泛 应用。在本章中，釆用了加权速率和(weighted sum-rate)作为效用函数，该函 数能够在频带效率、用户公平性间取得有效地均衡。基于文献冋和网的研究成 果，本章提出了在协作集内联合处理载波资源分配和功率分配这两个问题，以最 大化加权速率和。这个问题可以被建模为一个最优化问题，如下式所述：
+max Em= 1 C5 Rm (Um > Pum )
+s.t. um 6 Um Vm = 1,2, •■- ,M	(2.4)
+€ PUm Vm = 1,2,••- ,M	■'
+其中盆科是用户的权重。用户权重c可以由多种方式定义，例如：C可以通 过调整来维持公平性，类似于比例公平调度(proportional fair scheduling)

@@ -1,0 +1,48 @@
+6.2.2知识库模块功能测试
+(-)知识库存储模块
+1.添加知识库功能
+1)测试用例
+表6-14知识库添加功能
+用例目的	该用例用于测试“知识库添加”功能。
+描述	该用例用于测试“知识库添加”功能，是系统的关键步骤。
+前提条件	生成DataFactory对象。
+测试步骤	　调用 createDatasetByName()接口，传入参数 test。
+预期结果.	知识库添加成功，文件系统生成相应文件夹。
+测试结果	测试通过。
+2)测试结果
+图6-16是知识库添加成功界面。
+图6?16知识库添加成功图
+2.删除知识库功能
+1）测试用例
+表6-15知识库删除功能
+用例目的	该用例用「测试“知识库删除”功能。
+描述	该用例用丁测试“知识库删除”功能，是系统的关键步骤。
+前提条件	生成DataFactory对象。
+测试步骤	调用 removeDatasetByName()接 口，传入参数 test 1 o
+预期结果	知识库删除成功，删除相应文件夹。
+测试结果	删除成功，测试通过。
+2）测试结果
+图6-17知识库删除之前的界面，图6-18是删除成功的界面。
+图6-17知识库删除之前图
+图6-18知识库删除成功图
+表6-16 SPARQ查询功能
+用例目的	该用例用于测试"SPARQL査询”的功能。
+描述	该用例用于测试"SPARQL査询”的功能，是系统的关键步骤。
+前提条件	生成DataFactory对象。
+试步骤	1)调用 getDatsetByName(utesf,)获得数据集；
+<	2)生成 SparqlQuery；
+3）编辑SPARQL査询语句；
+4）调用查询接口。
+预期结果	査询测试，根据查询语句生成正确査询结果。
+测试结果	测试通过。
+2）测试结果
+图6-19是SPARQL查询语句，图6-20是SPARQL查询结果界面。
+Dataset Factory dataset Factory = new DatasetFactoryO;
+Dataset dataset = dataset Factory. getDataset ByName ( datasetName: utestn)；
+SpajrglQuery sparqlQuery = new SparqlQuery(dataset);
+String querystring = 11 PREFIX info: <http://www.semanticweb?org/traffic~ontology#> *" + “SELECT * where {“ + Hinfc:福中路?p ?o |}“ ；
+ResultSet resultSet = sparqlQuery.queryDataset(queryString):
+. ^ ^
+ResultSetFormatter.out(resultSet);
+图 6-19 SPARQL 语句
+图6-20 SPARQL查询结果输出

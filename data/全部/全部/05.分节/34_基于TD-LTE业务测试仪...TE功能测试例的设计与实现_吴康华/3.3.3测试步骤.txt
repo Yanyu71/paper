@@ -1,0 +1,38 @@
+3.3.3测试步骤
+测试步骤如下：
+1)SS 发送 SIP 消息 INVITE 至 UE。
+2)SS收到终端发送的100 Trying (可选)。
+3)SS 收到终端发送的 183 Session Progresso
+4)SS 发送 PRACK 到 UE 确认已收到上一条 183 Session Progress。
+5)SS收到UE对上一条PRACK的回复200 OK。
+6)SS发送一条UPDATE到UE,包含确认服务端符合先决条件的SDP。
+7)SS收到UE发送的200 OK,并且包含适当的SDP。
+8 )	SS 收到 UE 的 180 Ringing=
+9)SS发送PRACK到UE以确认收到180 Ringing。
+10)SS收到200 OK作为对PRACK的回复。
+11)SS收到UE发出的200 0K作为对INVITE的响应。
+12)SS 发送 ACK。
+13)SS 发送 BYE 到 UE。
+14)SS收到200 OK确认挂机。
+下面的表3-2是详细的信令流程设计以及测试点的标注：
+表3-2语音被叫测试例详细信令流程
+步骤	　　方向	信令	注释	测试点
+1	　　下行	INVITE	SS发送INVITE作为第一 条SDP邀请
+2	　　上行	100 Trying	UE回复一条临时响应
+（可选）
+3	　　上行	183 Session Progress	UE回复的SDP消息中包 含对SDP邀请的回复	　测试点1
+4	　　下行	PRACK	SS确认收到183 Session
+Progress
+5	　　上行	200 OK	UE对PRACK的回复	　测试点2
+6	　　下行	UPDATE	SS发送UPDATE消息中 包含SS指示保留资源
+7	　　上行	200 OK	UE确认UPDATE,且该 消息中包含其当前先决 条件状态的回复	　测试点3
+8	　　上行	180 Ringing	UE对INVITE的回复（可 选）
+9	　　下行	PRACK	如果UE发送的180
+Ringing 包含 1 OOrel 可选 标签，则SS回复PRACK
+10	　　上行	200 OK	UE对PRACK的响应（可 选）
+11	　　上行	200 OK	UE对INVITE的最终响
+应	　测试点4
+12	　　下行	ACK	SS对最终的200OK的确 认
+会话已经建立
+13	　　　下行	BYE	SS发送结束通话
+14	　　　上行	200 OK	终端回复结束通话	　测试点5

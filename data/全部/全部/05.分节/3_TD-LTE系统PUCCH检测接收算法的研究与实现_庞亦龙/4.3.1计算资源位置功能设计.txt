@@ -1,0 +1,23 @@
+4.3.1计算资源位置功能设计
+实现函数为 void PUCCH_RsrcIdxCal （unsigned char Tsldx ）。 当符号3中断到达后，计算子帧第1个时隙的PRB的位置； 当符号10中断到达后，计算子帧第2个吋隙的PRB的位置。
+PUCCH在一个时隙上只使用一个资源块进行传输，用于PUCCH传输的物理资源 块位置与时隙久有关，由式4T给出：
+if(777 4-/7s mod 2)mod 2 = 1
+其中m值取决于PUCCH格式。对格式1, la和lb有:
+图4-6说明了物理上行控制信道上资源位置映射方式。
+在探测参考信号和PUCCH格式la或lb同时传输的情况下，探测参考信号占用了
+SC-FDMA的最后一个符号，因此PUCCH上的最后一个SC-FDMA符号被打掉。
+49
+〃PRB = °
+◄	One subframe	►
+图4-6 PUCCH资源映射方式
+根据上述描述，得到图4-7的设计流程图,
+开始
+Symbol 3中断
+由参数ulCpType,
+N_RB_2,uINScRB n_pucch_l, N_cs_l, detl_shift_pucchz 得蓟'参数天
+由参数m, ulNRB, tsldx,得 到参数n_PRB_tsO,或者 n_PRB_tsl
+UE个 数？=numUE /
+TS个数？ =2
+结束
+图4-7 PUCCH资源位置计算流程图
+50

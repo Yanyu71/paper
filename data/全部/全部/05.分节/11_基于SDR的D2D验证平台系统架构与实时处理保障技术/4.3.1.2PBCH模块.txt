@@ -1,0 +1,16 @@
+4.3.1.2PBCH模块
+PBCH由蜂窝小区基站在子帧0进行广播，携带有小区MIB(Master Information Blocks),包括下行带宽配置、系统帧号等重要参数。D2D终端在实现 小区同步后，通过对PBCH信道的解码获取下行带宽配置和系统帧号，并将自身 工作状态调节为与之一致。D2D终端切换到混合网络模式后，仍监听PBCH以确 保D2D终端的下行带宽配置和系统帧号与蜂窝小区保持一致。PBCH模块的主要 函数接口如表4-16所示：
+表4-16 PHY PECH模块功能接口
+函数接口定义
+PbchDeRsrcMapO
+PbchPathQ
+其中PbchDeRsrcMapO函数用于对PBCH信道进行解资源映射，PbchPathQ 函数用于PBCH信道的解码。整个解码流程如图4-14所示。解码完成后，系统帧 号将作为SYNC Core Msg中的一个字段上报到协议栈。
+物理层PBCH模块的执行逻辑如图4-18所示，PBCH逻辑均由接收主线程完 成：
+接收主线程
+下行信号解前端
+下行信号信道估计
+PBCH解资源分配
+二二 W 二二
+PBCH信道解码
+PBCH Core Msg上报
+图4-18物理层PBCH模块逻辑

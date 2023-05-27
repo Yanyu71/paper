@@ -1,0 +1,100 @@
+3.1.2实时监控模块的实现
+根据实时监控模块的设计方案，我们将通过一个页面来实现实时监控模块，
+达到实时监控和历史轨迹回放的功能。在智能巡检系统的实际开发中，我们将采
+用前面介绍SpringMVC+Ibatis Web开发框架来予以实现。该模块的整体框架如
+图3-3所示。
+15
+gpsintoServiceN gpsinfoServicelm 	uJ
+gpsinfoDAO, gpsin
+foDaoImpl
+图3-3实时监控模块整体框架
+具体地，在本模块的实现时，在视图层，我们通过JSP、JavaScript. JSTL 等技术构建了一个lineMonitor.jsp页面和lineMonitor.js脚本用以进行视图解析。 视图的任务就是将控制器返回的模型渲染出来。控制器层的SysDwrCmd类实现 Spring的控制器接口，是连接视图和模型的桥梁，控制着视图和模型之间的交互。 它的功能像是一个分发器，其主要的任务就是接受请求，并派遣某一个模型去处 理该请求，以及派遣某一个视图去呈现返回的数据。Model层，也就是业务逻辑 处理层，用来完成实时监控模块中相应业务逻辑的处理。它是MVC最主要的核 心，表示了该模块的数据，并且还包含了查询、更新和管理这些数据的逻辑处理， 用以提供一个详细而精准的服务。在本系统的开发中，实时监控模块的模型层总 共包括了一个 gpsinfbService 接口、一个 gpsinfoServicelmpl 类、—f' gpsinfoDao 接口、一个gpsinfoDaoImpl类以及相应的DataObject。最后，我们通过Ibatis来 实现持久层，即通过Java和xml完成了 JavaBean和数据库中字段的映射。
+下面我们分两部分给出实时监控模块的具体实现步骤：
+1-初始化部分的实现
+步骤一、时间选择插件的实现
+为了实现巡检人员轨迹的历史回放和便于管理人员的操作，我们将在实时监
+16
+控页面提供时间选择插件。管理人员可以很方便的通过时间插件来选择监控的时 间段。在本系统中，时间插件选择釆取WdatePicker»之所以釆用WdatePicker, 是因为其支持多种浏览器、支持中英文；而且它还可以提供快速选择，即用户最 常选择的5个时间。注意，在使用该插件是，我们首先通过script标记将 WdatePicker引入页面中，用户点击时间选择框时，弹出日历选择插件，管理人 员更根据需要选择时间后点击确认完成时间的选择。其界面如图3-4所示。
+时间输入框的代码如下：
+<input type="text" name="starttime" id="starttime" onClick="WdatePicker({startDate:'%y-%M-%d %H-%m-%s',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true,maxDate:'#F($dp.$D(\'endtime\')}'))" class="Wdate" ></input>
+<input type="text" name="endtime" id="endtime" onClick="WdatePicker((startDate:'%y-%M-%d %H-%m-%s',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true,minDate:'#F($dp.$D(\'starttime\')}'})" dass="Wdate"></input>
+第一部分代码实现了开始时间输入框，第二部分代码实现了结束时间输入 框。其中，maxDate:'#F{$dp.$D(\'endtime\')}'和 minDate:'#F{$dp.$D(\'starttime\')}' 分别保证了开始时间的选择范围不得大于结束时间，结束时间的选择范围不得小 于开始时间。
+在实际中，考虑到管理人员通常会监控巡检人员当天的路线，根据产品简单、 易操作的设计原则，我们将初始化时间控件的开始时间和结束时间分别为当日的 00:00:00和23:59:59o实现代码如下：
+function initialtime()
+17
+{ var chongdate = new Date();
+var myStartTime= chongdate.getYear()+"-"+(chongdate.getMonth()+l)+"-"+ chongdate.getDate()+" 00:00:00"; 〃设置开始时间为当日的 00:00:00 var myEndTime= chongdate.getYear()+"-''-i-(chongdate.getMonthO+1 )+"-"+ chongdate.getDateO+" 23:59:59"; 〃设置结束时间为当日的 23:59:59 document.getElementById("starttime").value=myStartTime;
+〃页面中显示开始时间 document.getElementById("endtime*').value=myEndTime;
+〃页面中显示结束时间
+)
+步骤二、加载百度地图
+在地图加载这个过程中，首先判断浏览器是否兼容百度地图，若不兼容，则 弹出提示对话框，提醒用户跟新浏览器或者使用其它的浏览器。通过对Object 对象化，设置地图加载时的地图类型、地图中心的初始经纬度、地图的初始大小 等属性。对于展现的地图，我们还增加了对一些操作的监听，使得管理人员能够 随意的拖动地图，通过鼠标的滚轮或键盘缩放地图。同时，还提供了缩略图和比 例尺控件便于估计人员的行程。核心方法如下 function setDriver()(
+map = new BMap.Map(docximent.getElementById("map_canvascc"));
+//加载百度地图
+map.centerAndZoom(new BMap.Point(l 16.452377319336,39.9608879089355),15); map.enableDragging();〃允许对地图进行拖拽 map.enableScrollWheelZoom();//允许通过鼠标滚轮对地图缩放 map.disableDoubleClickZoom();〃关闭通过双击鼠标放大地图的功能 map.enableKeyboard。;//允许用户通过键盘的操作地图 map.enableContinuousZoom();〃启用连续缩放效果 map.enablelnertialDraggingO;//启用地图惯性拖拽
+var ctrlnav = new
+BMap.NavigationControl({anchor:BMAP ANCHOR_TOP_LEFT,type:BMAP_NAV IGATION_CONTROL_LARGE});
+map.addControl(ctrlnav);
+var ctrlove = new
+BMap.OverviewMapControl( {anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen: 1))； 一
+18
+map.addControl(ctrlove);
+var ctrl_sca = new BMap.ScaleControl((anchor:BMAP_ANCHOR_BOTTOM_LEFT}); map.addControl(ctrlsca);
+}
+步骤三、与服务器建立HTTP连接，并加载巡检人员信息
+客户端浏览器向后台服务器发起HTTP服务请求，以期获取巡检人员信息。 控制层的SysDwrCmd类接受客户端的请求，并根据请求类型指派Model层的 driverinfoService接口及其实现类、driverinfbDao接口及其实现类来处理该请求。 最后，客户端通过Ajax技术将服务器返回的人员信息加载到用户选择框中供管理 人员选择。部分核心代码如下： 控制层的核心代码： public class SysDwrCmd
+public List<TDriverinfo> getDriverName() throws Exception
+(
+TDriverinfbCriteria example = null;
+List<TDriverinfb> list = this.driverinfbService.selectByExample(example);
+〃调用业务逻辑层的Service查询所有的巡检人员信息
+return list;
+} }
+模型端Service层的核心代码：
+public class DriverinfoServicelmpl implements DriverinfoService
+.public List<TDriverinfb> selectByExample(TDriverinfoCriteria example)throws
+Exception
+{return tDriverinfbDAO.selectByExample(example);}
+}
+Model端Dao层的核心代码：
+19
+public class TDriverinfbDAOImpl extends SqlMapClientDaoSupport implements TDriverinfoDAO
+public List<TDriverinfo> selectByExample(TDriverinfoCriteria example)
+(
+List<TDriverinfo> list = getSqlMapClientTemplate().queryForList("T_DRIVERINFO.selectByExample", example);
+return list;
+从上述程序代码中可以看出，我们在SysDwrCmd类中定义了一个 driverinfoServicee它负责处理Controller层中传来的关于巡检人员信息请求，在 该模型构件中我们还定义了一个tDriverinfbDAO,但他并没有在该类中得到一^t* 具体的值。实际上，tDriverinfbDAO将通过Ibatis配置文件映射到MYSQL数据 库中，获取满足条件的数据。在上述过程中，我们釆用了 Spring的注入反转技 术，使得类与类之间的耦合性低，便于编程人员的后期维护和扩展。
+2.实时画点部分的实现
+步骤一、用户选择插件的实现
+为了便于管理人员操作，在选择监控对象时，本文通过Ajax技术设计了一 种用户选择插件。它由下移一个按钮、下移全部按钮、上移一个按钮、上移全部 按钮四部分组成。其界面示意图如下图所示。结合图3-5来解释四个按钮它们分 别的功能，下移一个按钮功能：若用户选中某用户，点击下移一个按钮将会下移 该用户到下面框中，若用户直接点击下移一个按钮则将上面框中置顶的用户下移 到下面框中。下移全部按钮功能:用户点击下移按钮将全部用户下移到下面框中。 类似地，上移一个按钮提供将选择的用户（或下面框中置顶的用户）上移到上面 框中，上移全部按钮将全部下面框中的用户上移到上面框中。
+20
+迭择司机
+» . 1 匚
+图3-5用户选择插件界面
+在具体实现时，如下移一个按钮，我们需要首先判断上面框中是否存在元素, 然后通过循环判断，将选中的用户下移到下面框中。下移一个按钮的核心代码如 下，其他按钮的实现与按钮类似。
+for ( var i = 0; i < oYight.options.length; i++)
+{
+if (oYight.options[i].selected) //判断用户是否选中该人员
+{
+var oOption = document.createElement("OPTION");
+oOption.setAttribute("text", oYight.options[i].text);//获取人员的名字 oOption.setAttribute("value", oYight .options[i].value);//获取人员的编号 oZeft.add(oOption);//将该人员信息加载到下面框中
+}
+}
+步骤二、服务器定时向客户端推送GPS信息的实现
+客户端将管理人员选择的监控对象和监控时间段参数传递给后台服务器，服 务器端的Controller调用业务逻辑层的gpsinfoService和gpsinfoDao来处理该请 求，即根据监控参数定时查询数据库，判断是否有满足条件的数据，如果有，将 该数据发送给返回给客户端。该流程的实现与上述司机信息的查询类似，在此我 们不再赘述。
+步骤三、百度地图上线路加载的实现
+客户端收到服务器发送的GPS信息，通过Ajax技术和对百度地图API的二 次开发实现巡检轨迹的实时载入。在地图上显示用户线路时，我们要求不同用户 的线路采用不同的颜色，且当用户将鼠标移到GPS点时，将显示该点人员信息、 隐患等信息。在具体实现时，由于每个点包含有六种不同的字段，因此，在解析 服务器返回的数据时，我们应当每隔六个字段提取相应信息。此外，在画轨迹时, 对每一位巡检人员，我们循环读取所有的GPS点，通过比较每个点的司机信息
+与巡检人员是否一致来判断该点是否属于这位巡检人员，如果是，则将其存储到 数组中，通过获取的GPS信息数组，选择一种颜色，在地图上画线。具体的代 码
+function linemonitors(data)
+for (i = 0; i < ptsStr.length-6; i = i + 6)〃循环读取每个点
+( lats.push(pareeFloat(ptsStr[i + 2]));//一^ 点的维度信息 lngs.push(parseFloat(ptsStr[i + 3]))；〃一 个点的经度信息 ids.push(ptsStr[i + 5]);〃一个点的人员编号 var point = new BMap.Point(lngs[i/6],lats[i/6]);
+createMarker(point,ids[i/6])；〃 每个六个字段表示 _ 个点 latLngs.push(point);
+for (i = 0; i != driverid.length; i++)
+{ var myLatLng=[];
+for (j = 0;j != ids.length; j++)
+{if (driverid[i]== ids[j])//循环判断该点是否属于第i位巡检人员
+{myLatLng.push(latLngs[j]);}〃将该巡检人员的所有纬度信息存储到数组中
+}
+drawPolyline(myLatLng,LineColor[i]);//
+}
+}

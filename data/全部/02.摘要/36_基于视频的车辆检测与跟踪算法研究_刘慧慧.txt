@@ -1,0 +1,16 @@
+摘要
+随着当今社会的不断发展，智能交通系统越来越成为世界各个国 家广泛关注的焦点。智能交通系统在道路监控，以及道路交通管理方 面上发挥了重要的作用。智能交通系统的其中一个热点和难点是车辆 检测与跟踪。论文围绕视频中车辆的运动检测，跟踪以及相关的阴影 去除和遮挡处理等重难点问题展开研究，同时将这些方法应用于视频 监控的系统中。主要的工作分为以下几点。
+(1)论文提出改进的背景建模算法以及无参化特征融合阴影去除 算法。首先介绍了背景建模算法，选取Vibe(Visual Background extractor)作为系统的目标检测算法，对Vibe建模算法的不足进行了 阐述，并提出改进方法。该方法能够有效抑制Vibe算法容易引入的鬼 影问题，从而更加准确的对目标进行检测。同时为了消除运动车辆阴 影对前景结果造成的影响，提出一种改进HSV(Hue,Saturation,Value) 特征与纹理LBP(Local Binary Patterns)特征相融合去除阴影的方法， 对HSV特征无参化，此融合算法有效地去除了车辆阴影。
+(2)论文提出一种基于改进观测模型的粒子滤波跟踪算法。首先 研究目标跟踪算法，介绍了几种典型算法，并阐述了算法基本原理， 给出对比分析。同时，提岀了一种基于改进HOG(Histogram of Oriented Gradients)特征的车辆观测模型，在不同光照条件下，能准确 提取车辆信息，实现精准匹配和跟踪。
+(3)论文提出一种广泛适用的车辆遮挡检测分割算法。车辆间交 互容易造成车辆的遮挡，影响跟踪效果。文中遮挡的处理主要包含两 步操作，首先对目标候选框进行遮挡检测，然后对符合条件的遮挡框 进行遮挡的分割，得到分割后车辆信息，用于后续车辆跟踪，一定程 度上解决了车辆的遮挡问题。
+根据以上算法，本文选取多种场景下交通道路视频进行检测跟踪 仿真实验。通过对车辆的正确跟踪，错误跟踪以及丢失跟踪帧数进行 的统计表明，该框架是一个稳健的车辆检测与跟踪系统，可以有效去 除阴影以及处理遮挡，从而准确的检测与跟踪车辆。
+关键词:车辆检测与跟踪;前景分割;粒子滤波;纹理亮度特征;遮挡分割
+RESEARCH ON VEHICLE DETECTION AND TRACKING BASED ON VIDEO
+ABSTRACT
+With the development and progress of society, Intelligent Transportation System (ITS) attracts wide attention worldwide. Intelligent Transportation System makes a huge difference on road monitoring and freeway management. Research on vehicle detection and tracking based on video has always been hotspots and difficulties in ITS. This paper mainly focuses on the following points.
+(1)We first research moving target detection based on background modeling. This paper analyses Vibe algorithm's advantages and disadvantages and proposes improvement measures to suppress the ghost. Meanwhile, to reduce the influence of cast shadow effectively, we propose a fusion algorithm which combines the feature of LBP with non-parametric HSV histogram.
+(2)This paper also studies multi target tracking algorithm and introduces the fundamentals of several common methods such as kalman filter, optical flow and particle filter. We propose an enhanced histogram of the oriented gradient combined with HSV color space based on particle filter. It can work well under normal light condition and the low contrast environment.
+(3)Due to the phenomenon the interaction and overlapping between vehicles, the appearance of vehicle will be different in two adjacent frames Occlusion makes it difficult to associate the same vehicle extracted from the frames. We employ the occlusion detection and occlusion segmentation to refine our system, which are based on one-dimensional maximum entropy and the least square ellipse fitting.
+This paper carried on simulation of vehicle detection and tracking in different situations. Statistical results show that the robustness and efficiency of our framework which can handle shadow and occlusion effectively.
+KEY WORDS:Vehicle detection;tracking Foreground extraction;Particle filter;HOG;HSV;Occlusion segmentation
+

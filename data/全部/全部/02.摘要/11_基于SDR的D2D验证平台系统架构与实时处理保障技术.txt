@@ -1,0 +1,23 @@
+摘要
+随着无线通信技术的飞速发展，多种新标准、新技术不断涌现。 为了满足日益增长的移动互联网本地业务需求，下一代移动通信技术 拟引入终端直通(Device to Device)技术，即复用蜂窝通信的处理能 力进行终端间不通过基站转发的直接通信。对于终端而言，D2D技 术可以提供比基站转发更高速率、更低功耗的短距离传输服务；对于 蜂窝网络而言，D2D技术可以降低基站负载，提高频谱资源利用率 和边缘覆盖质量。
+近年来，D2D技术已成为移动通信研究领域的一个热点。在这 样的背景下，本论文首先提出了一套相对完整的、可实现的D2D通 信流程，并在通用处理器(GPP)上实现了一个基于SDR的可扩展的 D2D实验验证平台，可完成D2D功能演示以及对局部方案进行测试 验证。基于GPP的系统灵活和易于维护，但在非实时的操作系统上 实现实时的D2D通信，实时处理是设计中面临的巨大挑战。
+本文的工作和创新点如下：
+1、	创新地提出了一套在LTE/D2D异构网络下D2D终端的接入 和通信流程，对其中多个关键步骤给出了可行的解决方案。D2D终 端可以在现有的LTE蜂窝网络环境下完成无干扰的组网和接入，利 用蜂窝网络提供的广播信息,干扰可控地与蜂窝系统复用频谱资源。
+2、	在基于通用处理器的Linux服务器上通过对LTE物理层和协 议层的实现、定制化和整合，设计和开发了可实现上述通信流程的 D2D实验验证平台，支持多种IP数据业务，以及可视化的系统状态 实时监控。通过组网和业务实验验证，该验证平台可实现传输能力高 于17.52Mbps的D2D通信，并支持自主组网、「I」继路山等功能。
+3、	为了在非实时的操作系统上实现实时的D2D通信，对系统架 构、软件模块性能以及操作系统环境进行了…系列优化。通过流水线 处理和SIMD等方式增强系统并行度,使得D2D通信中的数据接收 和发送调度等关键环节的处理时间满足系统实时性要求。
+关键词：ETE D2D SDR系统架构实时处理
+SYSTEM ARCHITECTURE OF D2D
+VERITICATION PLATFORM BASED ON SDR
+AND REAL-TIME PROCESSING
+TECHNOLOGY
+ABSTRACT
+With the rapid development of wireless communication technology, a variety of new standards and new technologies continue to emerge. In order to meet the growing demand for mobile Internet local service, Device to Device (D2D) technology is introduced to the next generation of mobile communication technology, by which terminals can reuse the spectrum of cellular networks to communicate with others directly, instead of forwarding by the base station. For the terminal is concerned, D2D technology can provide higher-rate and lower-power transmission services than traditional cellular communication; and for the cellular networks, D2D technology can reduce the load for the base station, and improve the efficiency of resource utilization and the quality of cell coverage.
+In recent years, D2D technology has become a hot research field of mobile communication. In this paper, we firstly propose a set of relatively complete, achievable D2D communication scheme, and then develop an SDR-based D2D verification platform on the general-purpose processor (GPP), which can serve as an available and validated system for demonstration of D2D scheme and D2D-based local services. Systems based on GPP are flexible and easy to develop and maintenance.lb achieve real-time D2D communication on non-real-time operating systems, however, real-time processing will be the great challenge facing the design.
+Content and innovation points of this paper are arranged as follows:
+Firstly, an innovative scheme in the LTE/D2D heterogeneous network is put forward, providing a feasible solution for the key steps.
+in
+D2D terminals can achieve networking and access under current ETE cellular networks. With the help of the cellular network, D2D terminal can communicate with each other by sharing spectrum with the cellular network, while the interference is controllable.
+Secondly, a D2D experimental verification platform is achieved on GPP based Linux servers by realization, customization and integration of LTE physical layer and protocol layer, which supports a variety of IP based services, as well as real-time system status monitoring for the platform. It is experimentally verified that the D2D platform can realize D2D communication with transmission ability of more than 17.52Mbps. Network self-orgnizing, routing and relaying is also supported by the system.
+Thirdly, in order to achieve real-time processing for the D2D verification platform on the non real-time operating system, a series of optimization is carried on system architecture design, performance of the software modules, and operating system environment. With parallelism enhanced by pipeline processing and SIMD, critical process like signal reception and resource managing, can be completed in real time.
+KEYWORDS： LTE D2D SDR system architecture real-time processing
+IV

@@ -1,0 +1,12 @@
+4.3.1.6PUSCH模块
+根据上文的流程设计，D2D终端复用PUSCH信道进行D2D的业务传输。本 论文中的PUSCH模块使用Turbo码进行信道编解码，其接收端模块的主要函数 接口如表4-23所示：
+表4-23 PHY PUSCH接收模块功能接口
+函数接口定义
+DeRtMtchandharq。
+turbodecodeULQ
+Inline_crc()
+其中DeRtMtchandharq。函数实现信道解码之前的速率匹配和HARQ相关参 数配置，turbo decode_UL()函数实现Turbo译码，Inline_crc()函数则完成对Turbo 译码结果的CRC校验。
+物理层PUSCH接收端的执行逻辑如图4-22所示，解码过程中，解速率匹配 及其之前的处理由接收主线程完成，Tuibo译码部分和crc校验部分由PUSCH接 收线程完成：
+54
+接收主线程	PUSCH解码线程
+图4-22物理层PUSCH接收端模块逻辑

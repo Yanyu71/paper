@@ -1,0 +1,25 @@
+2.4本章小结
+本章主要是为后续几个章节做铺垫，对将会用到的基础知识做了相关的介绍, 首先对分组密码算法AES进行了详细介绍，AES密码算法贯穿全文，是本论文 的基础。然后，对电磁旁路分析的物理基础进行了阐述，为后续第三章密码集成 电路信息泄露的电磁分析建模和第五章基于迁移学习的电磁旁路硬件木马检测 做铺垫。最后介绍了电磁旁路分析的基本方法，这些方法在第四章基于智能算法 优化的多字节电磁分析中用于分析比较，并发挥了重要作用。
+36
+本章参考文献
+[1]	Quisquater J-J. A new tool fbr non-intrusive analysis of smart cards based on electro-magnetic emissions. The SEMA and DEMA methods [J]. Eurocrypt 2000 rump session, 2000.
+[2]	NIST. Announcing the Advanced Encryption Standard (AES) [J]. Fips Pub, 2001, 29(8): 2200-2203.
+[3]冯登国，周永彬，刘继业.能量分析攻击[M].北京：科学出版社，2010.
+[4]王昌林，张勇，李东生.CMOS集成电路功耗分析及其优化方法[J].舰船电 子工程,2006,26(003): 123-125.
+[5] Sung-MoKang, YiisufLeblebici, ChulwooKim, et al. CMOS 数字集成电路:分析 与设计[M].北京：电子工业出版社，2015.
+[6]李慧云.密码安全芯片与侧信道技术[M].北京：科学出版社，2014.
+[7]陈廷定.密码芯片的侧信道安全性分析和量化评估[D],山东大学,2010.
+[8]	Agrawal D, Archambeault B, Rao J R, et al. The EM side—channel (s) [A]. // International workshop on cryptographic hardware and embedded systems [C]: Springer 2002: 29-45.
+[9]	Cei I. IEC 61967-2 (2005-09): [S]. https://webstore.iec.ch/publication/6185.
+[10]张洪欣，沈远茂，韩宇南.电磁场与电磁波(第2版)[M].北京：清华大学出 版社，2016.
+[11]	Martinasek Z5 Zeman Y Trasy K. Simple electromagnetic analysis in cryptography [J]. International Journal of Advances in Teleeommunications, Electrotechnics, Signals and Systems, 2012,1(1): 13-19.
+[12]	Bettaieb L, Kokabi H, Poloujadoff M. A simple electromagnetic analysis of magnetic NDE using a double rectangular coil an a Hall effect sensor [J]. Advanced Electromagnetics, 2012, 1(3): 79-84.
+[13]	Zhang P, Deng G, Chen K, et al. Electromagnetic correlation analysis attacks on microcontroller implementations of AES in far field [J]. Journal of Huazhong University of ence & Technology, 2009: 31-34.
+[14]	Brier E? Clavier Cs Olivier E Correlation power analysis with a leakage model [A]. // International workshop on cryptographic hardware and embedded systems [C]: Springer 2004: 16-29.
+[15]	Gandolfi K, Mourtel C, Olivier F. Electromagnetic analysis: Concrete results [A].
+37
+// International workshop on cryptographic hardware and embedded systems [C]: Springer 2001: 251 -261.
+[16]	Ding G L, Guo H, Chen L J, et al. Research on differential electromagnetic analysis for cryptographic systems [J]. Computer Engineering and Design, 2009.
+[17]	Messerges T S, Dabbish E A, Sloan R H. Investigations of power analysis attacks on smartcards [Z]. USENIX Workshop on Smartcard Technology. Chicago, Illinois, USA. 1999: 151-161
+[18]	Mangard S, Oswald E, Popp T. Power analysis attacks: Revealing the secrets of smart cards [M]. Springer Science & Business Media, 2008.
+38

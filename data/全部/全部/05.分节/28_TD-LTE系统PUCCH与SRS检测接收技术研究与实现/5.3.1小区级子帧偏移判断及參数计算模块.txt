@@ -1,0 +1,16 @@
+5.3.1小区级子帧偏移判断及參数计算模块
+该模块实现小区级子帧判断及SRS后续所需的小区级参数的计算。该模块只需在小 区建立或者重新配置了小区参数时调用。并保存该小区SRS配置子帧信息及相关参数。
+下表给出了该模块函数描述
+表5-5:小区级子帧偏移判断及参数计算函数描述
+函数原型	void eNbRxSRS_CellFrameParamCal(UlPhyCellInfb, DICpType)
+函数输入	函数参数	UlPhyCelUnfb：高层配置小区级参数
+DICpType：下行循环前缀类型
+全局变量	subConfigtable：全局变量，指向子帧配置表的指针，标识上行下行还是特殊子帧
+SRSsubConfigtable：指向SRS子帧配置表的指针
+函数输出	全局变量	UlPhyCelUnfb： UlPhyCelUnfb结构体中非高层配置的小区级SRS相关参数
+CellSRSFrame：小区级的SRS子帧
+返回值	无
+判断流程如下：
+1）	根据小区指定LTE上下行配比参数判断该子帧是上行子帧，下行子帧，还是特 殊子帧。只有上行子帧和特殊子帧会传输SRSo
+2）	根据小区指定参数SRS子帧配置及式判断当前子帧是否是小区配置SRS子帧。
+3）若该子帧既是上行子帧或者特殊子帧又满足步骤2,则用户在该子帧可能含有 SRS,将子帧对应数组CellSRSFrame下标置1。

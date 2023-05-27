@@ -1,0 +1,14 @@
+摘要
+在即将到来的无人驾驶车辆及车联网中，同时检测无人驾驶车辆（以下称为 目标）的信道占用情况（即当前时隙目标是否通信）和估计该目标的位置将成为 不可避免的挑战。由于目标在行驶过程中进行通信的时隙是不确定的，以及目标 在传感器网络中是不停移动的，传感器接收到的观测值将会变得很不稳定，这将 严重影响对目标当前通信状态的检测和对目标当前位置的追踪，即可靠性下降。 通常，在检测目标通信状态和估计目标位置的情况下，传感器网络会将收集到的 观测值报告给处理中心进行处理。如果报告过多的观测值到处理中心（即每个传 感器都报告观测值），所有传感器都将消耗大量的能量，由此将会导致传感器网 络严重的能量损耗，即有效性下降；同时，对于离目标较远的传感器，它们的观 测值（称为虚警观测值）绝大部分是噪声污染，应用这样的观测值将会影响检测 和估计的精确性，即可靠性下降。
+针对上述问题，通过利用目标移动的连续性、目标通信状态的持续性，以及 观测方程的特性，我们在本研究中提出了一种新型的同时检测和估计方案，这个 方案可以同时提升精确性（即可靠性）和能量效率（即有效性）。具体内容如下。
+（1）首先，依赖于目标的连续移动特性，以及通信时隙的持续特点，我们 建立了一个统一的目标动态模型（即基于伯努利随机有限集的目标动态模型）。 依靠这个目标模型，我们将采用基于随机有限集的序贯贝叶斯过程，同时进行检 测和估计。
+（2）更进一步的，为了解决观测值消失（当前目标没有通信信号）以及观 测值噪声污染问题，我们提出了一个序贯预滤波技术来改善观测值，理论分析和 仿真表明所提的方案可以有效提升检测和估计的精确性。
+（3）为了解决能耗问题，我们提出了一个动态阈值机制，只有大于阈值的 观测值（预滤波后的观测值）才能被传送给处理中心，因此将减少报告观测值的 个数。
+（4）为了更好的限制虚警观测值的影响，我们在处理中心端设计了基于随 机有限集的观测集。该观测集能够通过传感器的位置分布进一步抑制虚警观测值 对检测和估计可靠性的影响，
+最后，我们通过理论推导和仿真验证了这个同时检测和估计方案，证明了它 可以提升检测和估计的精确性以及提升能量效率。因此，本文所提出的同时检测 和估计方案更加适用于即将到来的无人驾驶系统的目标感知和定位应用。
+关键词：无人驾驶感知定位随机有限集贝叶斯过程
+STUDY ON THE RANDOM FINITE SET BASED BAYESIAN DETECTION AND LOCALIZATION SCHEME
+ABSTRACT
+In emerging automatous vehicles and vehicular networks, a critical element is the need to simultaneously detect emission states and track a trajectory of a vehicle or other types of mobile object. Owing to the random switch-on/off of one object's emission state and its dynamic mobility, observations from static sensor nodes may become uncertain, thereby heavily impairing the state detection and location estimation accuracy. To support this, a sensor network usually transmits observations to a fusion center (FC). Excessive reporting can cause poor energy efficiency, as well as impact on both the emission and location sensing accuracy.
+In this study, by exploiting the smooth mobility, we design a promising mixed detection and estimation (MDE) scheme to enhance both the accuracy and the efficiency. Relying on a unified dynamic state-space model, the dynamic behaviors of the object's status are formulated. Thus, a two-stage sequential Bayesian scheme, premised on random finite set (RFS), is suggested to detect/estimate involved unknown states. Specifically, in order to counteract the likelihood disappearance (caused by the switch-off state) and alleviate ambient noise, a sequential pre-filtering technique is designed, which can refine local observations and thereby greatly improve the localization accuracy. Moreover, a novel adaptive and energy efficient detection threshold mechanism is developed, aiming to compress the number of local sensor reports. Finally, we validate the proposed MDE scheme via theoretical analysis and numerical simulations, demonstrating it would improve both the detection/estimation accuracy and efficiency.
+KEY WORDS: Autonomous vehicles, sensing, localization, random finite set, Bayesian process

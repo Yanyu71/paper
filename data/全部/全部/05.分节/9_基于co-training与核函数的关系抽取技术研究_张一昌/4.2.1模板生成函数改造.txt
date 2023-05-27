@@ -1,0 +1,24 @@
+4.2.1模板生成函数改造
+GeneratePattem函数通过句子和实体对产生模板，这是co-training关系抽取 算法产出的两个最重要的结果之一。对于关系抽取任务来说，最重要的就是产生 高质量、高泛化能力的模板。下面详细介绍这一部分的逻辑。
+对于句子：Barack Obama was bom in Honolulu.对其进行分析后将得到卜面 的结果，其中包括表4-1.
+表4-1系统解析的侍征结果
+Id	Word	Lemma	POS	NER	Word
+Embedding
+1	Barack	Barack	NNP	PERSON	50 numbers
+2	Obama	Obama	NNP	PERSON	50 numbers
+3	was	be	VBD	0	50 numbers
+4	bom	bear	VBN	0	50 numbers
+5	in	in	IN	0	50 numbers
+6	Honolulu	Honolulu	NNP	LOCATION	50 numbers
+7				0	50 numbers
+本文使用的是最短依存路径，但是并不是只包含依存路径，而且包含路径中 每个节点的信息，这种依存路径在前面介绍的核函数时提到过。下面给出句子的 依存树，并表示出最短路径，如图4-3。
+图 4-3 "Barack Obama was bom in Honolulu."的依存关系图
+图中深色连接箭头代表依存路径，黄色节点代表依存路径中的节点.而连接 线中的文字代表连接类型，箭头方向代表连接方向。其中，图中的源地Obama 和终点Honolulu不算是路径的一部分。
+只要把依存路径和表3-1中的特征联合在一起就构成了模板，这个模板就是
+29
+GeneratePattem的返回值，伪代码见图4-4,任何一个最短路径模板本文总可以 表示为下面这种形式<(direct,rela),,,(direct,rela)2,(direct,rela)n+1 > ,其中 direct为0代表符号 <—,而direct为1则代表符号T , rela代表依存关系,w代 表单词的所有信息，包括单词本身、词形还原、词性标注、命名实体、词向量。 按照这个通用的模板，当前实例下的模板则可以表示为 < (0, nsubjpass},born, (l,prep), in, (l,pobj) >。
+Sub GeneratePattem(sentence,seed)
+src_id	GetEntityIndcx(sentence^seed.entity 1)
+d 嘴 _id s GetEntityIndex(seatcncefseed.entity2) pattern 4- BFS(sentence,src_id,des_id) pattem.add(node information)
+return pattern
+图4-4模板生成函数

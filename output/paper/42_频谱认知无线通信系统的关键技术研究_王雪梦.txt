@@ -1,0 +1,910 @@
+﻿{
+    "knowledge_points": [
+        {"title": "认知无线电技术", "en": "Cognitive Radio Technology"},
+        {"title": "频谱感知技术", "en": "Spectrum Sensing Technology"},
+        {"title": "能量检测", "en": "Energy Detection"},
+        {"title": "循环平稳特征检测", "en": "Cyclostationary Feature Detection"},
+        {"title": "匹配滤波检测", "en": "Matched Filter Detection"},
+        {"title": "协作频谱感知", "en": "Collaborative Spectrum Sensing"},
+        {"title": "授权用户", "en": "Licensed User"},
+        {"title": "次用户", "en": "Unlicensed User"},
+        {"title": "频谱资源利用率", "en": "Spectrum Utilization Efficiency"},
+        {"title": "频谱利用不平衡", "en": "Spectrum Utilization Imbalance"},
+        {"title": "频率管理部门", "en": "Frequency Management Department"}
+    ],
+    "relations": [
+        {"source": "无线通信技术", "target": "认知无线电技术", "type": "属于"},
+        {"source": "认知无线电技术", "target": "频谱感知技术", "type": "包含"},
+        {"source": "频谱感知技术", "target": "能量检测", "type": "包含"},
+        {"source": "频谱感知技术", "target": "循环平稳特征检测", "type": "包含"},
+        {"source": "频谱感知技术", "target": "匹配滤波检测", "type": "包含"},
+        {"source": "频谱感知技术", "target": "协作频谱感知", "type": "包含"},
+        {"source": "认知无线电技术", "target": "授权用户", "type": "包含"},
+        {"source": "认知无线电技术", "target": "次用户", "type": "包含"},
+        {"source": "频谱资源利用率", "target": "频谱利用不平衡", "type": "导致"},
+        {"source": "频率管理部门", "target": "授权用户", "type": "授权"},
+        {"source": "授权用户", "target": "次用户", "type": "共享"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "协作频谱感知", "en": "Collaborative Spectrum Sensing"},
+        {"title": "数据预测技术", "en": "Data Prediction Technology"},
+        {"title": "数据挖掘", "en": "Data Mining"},
+        {"title": "支持向量机", "en": "Support Vector Machine"},
+        {"title": "人工神经网络", "en": "Artificial Neural Network"},
+        {"title": "时间序列预测", "en": "Time Series Prediction"},
+        {"title": "能量检测", "en": "Energy Detection"}
+    ],
+    "relations": [
+        {"source": "协作频谱感知", "target": "数据预测技术", "type": "包含"},
+        {"source": "数据预测技术", "target": "数据挖掘", "type": "包含"},
+        {"source": "数据挖掘", "target": "支持向量机", "type": "包含"},
+        {"source": "数据挖掘", "target": "人工神经网络", "type": "包含"},
+        {"source": "数据挖掘", "target": "时间序列预测", "type": "包含"},
+        {"source": "能量检测", "target": "循环平稳特征检测", "type": "替代"},
+        {"source": "能量检测", "target": "协作频谱感知", "type": "应用"},
+        {"source": "数据预测技术", "target": "协作频谱感知", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "认知无线电技术", "en": "Cognitive Radio Technology"},
+        {"title": "频谱感知算法", "en": "Spectrum Sensing Algorithm"},
+        {"title": "时间序列预测算法", "en": "Time Series Prediction Algorithm"},
+        {"title": "动态频谱接入模型", "en": "Dynamic Spectrum Access Model"}
+    ],
+    "relations": [
+        {"source": "频谱感知算法", "target": "认知无线电技术", "type": "属于"},
+        {"source": "时间序列预测算法", "target": "认知无线电技术", "type": "属于"},
+        {"source": "动态频谱接入模型", "target": "认知无线电技术", "type": "属于"},
+        {"source": "先验信息全盲的宽带能量检测模型", "target": "频谱感知算法", "type": "包含"},
+        {"source": "基于功率谱线间相关性的改进能量检测算法", "target": "频谱感知算法", "type": "包含"},
+        {"source": "时间序列预测算法", "target": "频谱感知算法", "type": "包含"},
+        {"source": "动态频谱接入模型", "target": "时间序列预测算法", "type": "包含"},
+        {"source": "动态频谱接入模型", "target": "频谱感知算法", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "循环平稳特征",
+            "en": "Cyclostationary feature"
+        },
+        {
+            "title": "频谱感知",
+            "en": "Spectrum sensing"
+        },
+        {
+            "title": "能量检测",
+            "en": "Energy detection"
+        },
+        {
+            "title": "恒虚警率准则",
+            "en": "Constant false alarm rate (CFAR) criterion"
+        },
+        {
+            "title": "恒检测率准则",
+            "en": "Constant detection rate (CDR) criterion"
+        },
+        {
+            "title": "最小错判率准则",
+            "en": "Minimum error rate criterion"
+        },
+        {
+            "title": "噪声功率估计",
+            "en": "Noise power estimation"
+        },
+        {
+            "title": "二元假设模型",
+            "en": "Binary hypothesis model"
+        },
+        {
+            "title": "虚警率",
+            "en": "False alarm rate"
+        },
+        {
+            "title": "漏检率",
+            "en": "Miss detection rate"
+        }
+    ],
+    "relations": [
+        {
+            "source": "循环平稳特征",
+            "target": "频谱感知",
+            "type": "包含"
+        },
+        {
+            "source": "频谱感知",
+            "target": "能量检测",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测",
+            "target": "恒虚警率准则",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测",
+            "target": "恒检测率准则",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测",
+            "target": "最小错判率准则",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测",
+            "target": "二元假设模型",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测",
+            "target": "虚警率",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测",
+            "target": "漏检率",
+            "type": "包含"
+        },
+        {
+            "source": "噪声功率估计",
+            "target": "能量检测",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "CFAR能量检测", "en": "CFAR Energy Detection"},
+        {"title": "CDR能量检测", "en": "CDR Energy Detection"},
+        {"title": "最小错判率准则", "en": "Minimum Error Rate Criterion"},
+        {"title": "噪声估计与能量检测联合迭代算法", "en": "Joint Iterative Algorithm of Noise Estimation and Energy Detection"},
+        {"title": "信噪比", "en": "Signal-to-Noise Ratio"},
+        {"title": "虚警率", "en": "False Alarm Rate"},
+        {"title": "漏检率", "en": "Miss Detection Rate"},
+        {"title": "门限设计", "en": "Threshold Design"},
+        {"title": "相对阈值", "en": "Relative Threshold"},
+        {"title": "迭代精度", "en": "Iterative Accuracy"}
+    ],
+    "relations": [
+        {"source": "CFAR能量检测", "target": "虚警率", "type": "包含"},
+        {"source": "CFAR能量检测", "target": "门限设计", "type": "包含"},
+        {"source": "CDR能量检测", "target": "漏检率", "type": "包含"},
+        {"source": "CDR能量检测", "target": "门限设计", "type": "包含"},
+        {"source": "最小错判率准则", "target": "门限设计", "type": "包含"},
+        {"source": "噪声估计与能量检测联合迭代算法", "target": "相对阈值", "type": "包含"},
+        {"source": "噪声估计与能量检测联合迭代算法", "target": "迭代精度", "type": "包含"},
+        {"source": "噪声估计与能量检测联合迭代算法", "target": "信噪比", "type": "包含"},
+        {"source": "噪声估计与能量检测联合迭代算法", "target": "门限设计", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "先验信息全盲条件下的时域信号采样模型",
+            "en": "Time-domain signal sampling model under prior information blindness"
+        },
+        {
+            "title": "能量检测模型的检验统计量",
+            "en": "Test statistic of energy detection model"
+        },
+        {
+            "title": "三种常用的能量检测门限设计准则",
+            "en": "Three commonly used energy detection threshold design criteria"
+        },
+        {
+            "title": "能量检测和噪声功率估计联合迭代的算法",
+            "en": "Algorithm of joint iteration of energy detection and noise power estimation"
+        },
+        {
+            "title": "宽带信号感知的仿真研究",
+            "en": "Simulation study of wideband signal perception"
+        }
+    ],
+    "relations": [
+        {
+            "source": "能量检测模型的检验统计量",
+            "target": "三种常用的能量检测门限设计准则",
+            "type": "包含"
+        },
+        {
+            "source": "三种常用的能量检测门限设计准则",
+            "target": "能量检测和噪声功率估计联合迭代的算法",
+            "type": "包含"
+        },
+        {
+            "source": "能量检测和噪声功率估计联合迭代的算法",
+            "target": "宽带信号感知的仿真研究",
+            "type": "应用"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "能量检测算法",
+            "en": "Energy detection algorithm"
+        },
+        {
+            "title": "频谱感知",
+            "en": "Spectrum sensing"
+        },
+        {
+            "title": "循环平稳特征检测",
+            "en": "Cyclostationary feature detection"
+        },
+        {
+            "title": "功率谱密度",
+            "en": "Power spectral density"
+        },
+        {
+            "title": "相关性",
+            "en": "Correlation"
+        },
+        {
+            "title": "漏检率",
+            "en": "Missed detection rate"
+        },
+        {
+            "title": "虚警率",
+            "en": "False alarm rate"
+        },
+        {
+            "title": "滑动平均窗",
+            "en": "Moving average window"
+        }
+    ],
+    "relations": [
+        {
+            "source": "能量检测算法",
+            "target": "低信噪比能量检测",
+            "type": "属于"
+        },
+        {
+            "source": "低信噪比能量检测",
+            "target": "频谱感知",
+            "type": "相关"
+        },
+        {
+            "source": "频谱感知",
+            "target": "循环平稳特征检测",
+            "type": "相关"
+        },
+        {
+            "source": "功率谱密度",
+            "target": "能量检测算法",
+            "type": "用于"
+        },
+        {
+            "source": "功率谱密度",
+            "target": "相关性",
+            "type": "相关"
+        },
+        {
+            "source": "相关性",
+            "target": "基于功率谱线间相关性的低信噪比能量检测",
+            "type": "用于"
+        },
+        {
+            "source": "漏检率",
+            "target": "基于功率谱线间相关性的低信噪比能量检测",
+            "type": "影响"
+        },
+        {
+            "source": "虚警率",
+            "target": "基于功率谱线间相关性的低信噪比能量检测",
+            "type": "影响"
+        },
+        {
+            "source": "滑动平均窗",
+            "target": "低信噪比能量检测",
+            "type": "用于"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "正态分布",
+            "en": "Normal Distribution"
+        },
+        {
+            "title": "滑动平均窗",
+            "en": "Moving Average Window"
+        },
+        {
+            "title": "中心极限定理",
+            "en": "Central Limit Theorem"
+        },
+        {
+            "title": "功率谱线间相关性",
+            "en": "Power Spectral Line Correlation"
+        },
+        {
+            "title": "观测时长",
+            "en": "Observation Time"
+        },
+        {
+            "title": "能量检测",
+            "en": "Energy Detection"
+        },
+        {
+            "title": "虚警率",
+            "en": "False Alarm Rate"
+        },
+        {
+            "title": "漏检率",
+            "en": "Miss Detection Rate"
+        },
+        {
+            "title": "最小错判率门限",
+            "en": "Minimum Error Rate Threshold"
+        },
+        {
+            "title": "标准正态分布函数",
+            "en": "Standard Normal Distribution Function"
+        }
+    ],
+    "relations": [
+        {
+            "source": "正态分布",
+            "target": "中心极限定理",
+            "type": "包含"
+        },
+        {
+            "source": "滑动平均窗",
+            "target": "中心极限定理",
+            "type": "影响"
+        },
+        {
+            "source": "滑动平均窗",
+            "target": "功率谱线间相关性",
+            "type": "影响"
+        },
+        {
+            "source": "观测时长",
+            "target": "能量检测",
+            "type": "影响"
+        },
+        {
+            "source": "虚警率",
+            "target": "能量检测",
+            "type": "影响"
+        },
+        {
+            "source": "漏检率",
+            "target": "能量检测",
+            "type": "影响"
+        },
+        {
+            "source": "最小错判率门限",
+            "target": "能量检测",
+            "type": "影响"
+        },
+        {
+            "source": "标准正态分布函数",
+            "target": "能量检测",
+            "type": "应用"
+        },
+        {
+            "source": "功率谱线间相关性",
+            "target": "能量检测",
+            "type": "应用"
+        }
+    ]
+}{
+  "knowledge_points": [
+    {
+      "title": "CFAR准则能量检测",
+      "en": "CFAR criterion energy detection"
+    },
+    {
+      "title": "CDR准则能量检测",
+      "en": "CDR criterion energy detection"
+    },
+    {
+      "title": "基于功率谱线间相关性的能量检测算法",
+      "en": "Energy detection algorithm based on power spectral line correlation"
+    },
+    {
+      "title": "滑动平均窗",
+      "en": "Sliding average window"
+    },
+    {
+      "title": "噪声功率估计",
+      "en": "Noise power estimation"
+    },
+    {
+      "title": "虚警率",
+      "en": "False alarm rate"
+    },
+    {
+      "title": "漏检率",
+      "en": "Miss detection rate"
+    },
+    {
+      "title": "信噪比",
+      "en": "Signal-to-noise ratio"
+    },
+    {
+      "title": "带宽",
+      "en": "Bandwidth"
+    },
+    {
+      "title": "功率谱线间相关性",
+      "en": "Power spectral line correlation"
+    },
+    {
+      "title": "循环平稳特征检测",
+      "en": "Cyclostationary feature detection"
+    }
+  ],
+  "relations": [
+    {
+      "source": "CFAR准则能量检测",
+      "target": "ICFAR",
+      "type": "包含"
+    },
+    {
+      "source": "CDR准则能量检测",
+      "target": "ICDR",
+      "type": "包含"
+    },
+    {
+      "source": "ICFAR",
+      "target": "噪声功率估计",
+      "type": "依赖"
+    },
+    {
+      "source": "ICDR",
+      "target": "噪声功率估计",
+      "type": "依赖"
+    },
+    {
+      "source": "基于功率谱线间相关性的能量检测算法",
+      "target": "滑动平均窗",
+      "type": "依赖"
+    },
+    {
+      "source": "基于功率谱线间相关性的能量检测算法",
+      "target": "噪声功率估计",
+      "type": "依赖"
+    },
+    {
+      "source": "基于功率谱线间相关性的能量检测算法",
+      "target": "功率谱线间相关性",
+      "type": "依赖"
+    },
+    {
+      "source": "基于功率谱线间相关性的能量检测算法",
+      "target": "虚警率",
+      "type": "影响"
+    },
+    {
+      "source": "基于功率谱线间相关性的能量检测算法",
+      "target": "漏检率",
+      "type": "影响"
+    },
+    {
+      "source": "基于功率谱线间相关性的能量检测算法",
+      "target": "信噪比",
+      "type": "影响"
+    },
+    {
+      "source": "基于功率谱线间相关性的能量检测算法",
+      "target": "带宽",
+      "type": "影响"
+    },
+    {
+      "source": "信噪比",
+      "target": "ICDR",
+      "type": "依赖"
+    },
+    {
+      "source": "带宽",
+      "target": "ICDR",
+      "type": "依赖"
+    },
+    {
+      "source": "循环平稳特征检测",
+      "target": "基于功率谱线间相关性的能量检测算法",
+      "type": "替代"
+    }
+  ]
+}{
+    "knowledge_points": [
+        {"title": "宽带内信号参数", "en": "Parameters of signals within broadband"},
+        {"title": "n和n1值的设置对判决结果的影响", "en": "The influence of the setting of n and n1 values on the judgment results"},
+        {"title": "基于功率谱线间相关性的能量检测", "en": "Energy detection based on inter-line correlation of power spectrum"},
+        {"title": "信噪比对判决结果的影响", "en": "The influence of signal-to-noise ratio on judgment results"},
+        {"title": "信号带宽对判决结果的影响", "en": "The influence of signal bandwidth on judgment results"}
+    ],
+    "relations": [
+        {"source": "宽带内信号参数", "target": "n和n1值的设置对判决结果的影响", "type": "包含"},
+        {"source": "n和n1值的设置对判决结果的影响", "target": "基于功率谱线间相关性的能量检测", "type": "影响"},
+        {"source": "信噪比对判决结果的影响", "target": "基于功率谱线间相关性的能量检测", "type": "影响"},
+        {"source": "信号带宽对判决结果的影响", "target": "基于功率谱线间相关性的能量检测", "type": "影响"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "低信噪比环境下能量检测算法", "en": "Energy detection algorithm in low SNR environment"},
+        {"title": "基于功率谱线间相关性的能量检测算法", "en": "Energy detection algorithm based on power spectral line correlation"},
+        {"title": "频谱感知技术", "en": "Spectrum sensing technology"},
+        {"title": "数据预测技术", "en": "Data prediction technology"}
+    ],
+    "relations": [
+        {"source": "低信噪比环境下能量检测算法", "target": "基于功率谱线间相关性的能量检测算法", "type": "包含"},
+        {"source": "基于功率谱线间相关性的能量检测算法", "target": "低信噪比环境下能量检测算法", "type": "属于"},
+        {"source": "基于功率谱线间相关性的能量检测算法", "target": "频谱感知技术", "type": "应用于"},
+        {"source": "频谱感知技术", "target": "数据预测技术", "type": "需要使用"},
+        {"source": "数据预测技术", "target": "频谱感知技术", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "数据预测方法",
+            "en": "Data prediction methods"
+        },
+        {
+            "title": "支持向量机",
+            "en": "Support Vector Machine"
+        },
+        {
+            "title": "神经网络",
+            "en": "Neural Network"
+        },
+        {
+            "title": "频谱数据特点",
+            "en": "Characteristics of spectrum data"
+        },
+        {
+            "title": "时间序列预测",
+            "en": "Time series prediction"
+        },
+        {
+            "title": "移动平均法",
+            "en": "Moving Average Method"
+        },
+        {
+            "title": "分解方法",
+            "en": "Decomposition Method"
+        },
+        {
+            "title": "指数平滑法",
+            "en": "Exponential Smoothing Method"
+        },
+        {
+            "title": "ARIMA模型",
+            "en": "ARIMA Model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "数据预测方法",
+            "target": "支持向量机",
+            "type": "包含"
+        },
+        {
+            "source": "数据预测方法",
+            "target": "神经网络",
+            "type": "包含"
+        },
+        {
+            "source": "数据预测方法",
+            "target": "时间序列预测",
+            "type": "包含"
+        },
+        {
+            "source": "频谱数据特点",
+            "target": "时间周期性",
+            "type": "包含"
+        },
+        {
+            "source": "频谱数据特点",
+            "target": "非连续性",
+            "type": "包含"
+        },
+        {
+            "source": "频谱数据特点",
+            "target": "海量性",
+            "type": "包含"
+        },
+        {
+            "source": "时间序列预测",
+            "target": "移动平均法",
+            "type": "包含"
+        },
+        {
+            "source": "时间序列预测",
+            "target": "分解方法",
+            "type": "包含"
+        },
+        {
+            "source": "时间序列预测",
+            "target": "指数平滑法",
+            "type": "包含"
+        },
+        {
+            "source": "时间序列预测",
+            "target": "ARIMA模型",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "ARIMA模型", "en": "ARIMA model"},
+        {"title": "自回归模型", "en": "Autoregressive model"},
+        {"title": "移动平均模型", "en": "Moving average model"},
+        {"title": "差分", "en": "Differencing"},
+        {"title": "平稳性判断", "en": "Stationarity testing"},
+        {"title": "自相关函数", "en": "Autocorrelation function"},
+        {"title": "偏自相关函数", "en": "Partial autocorrelation function"}
+    ],
+    "relations": [
+        {"source": "ARIMA模型", "target": "自回归模型", "type": "基础模型"},
+        {"source": "ARIMA模型", "target": "移动平均模型", "type": "基础模型"},
+        {"source": "ARIMA模型", "target": "差分", "type": "预处理方法"},
+        {"source": "ARIMA模型", "target": "平稳性判断", "type": "预处理方法"},
+        {"source": "自回归模型", "target": "偏自相关函数", "type": "特征函数"},
+        {"source": "移动平均模型", "target": "自相关函数", "type": "特征函数"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "数据图直接检验法", "en": "Direct Test Method of Data Graph"},
+        {"title": "自相关、偏相关检验法", "en": "Autocorrelation and Partial Correlation Test Method"},
+        {"title": "特征根检验法", "en": "Eigenvalue Test Method"},
+        {"title": "R*检验", "en": "R* Test"},
+        {"title": "平稳性判断", "en": "Stationarity Test"},
+        {"title": "去除非平稳性", "en": "Removing Non-Stationarity"},
+        {"title": "小波分析法", "en": "Wavelet Analysis Method"},
+        {"title": "差分法", "en": "Differencing Method"},
+        {"title": "模型阶数确立", "en": "Model Order Determination"},
+        {"title": "模型训练和预测", "en": "Model Training and Prediction"},
+        {"title": "信源数据产生模型", "en": "Source Data Generation Model"},
+        {"title": "地理模型", "en": "Geographical Model"},
+        {"title": "传播模型", "en": "Propagation Model"},
+        {"title": "用户业务模型", "en": "User Service Model"}
+    ],
+    "relations": [
+        {"source": "数据图直接检验法", "target": "自相关、偏相关检验法", "type": "包含"},
+        {"source": "数据图直接检验法", "target": "特征根检验法", "type": "包含"},
+        {"source": "数据图直接检验法", "target": "R*检验", "type": "包含"},
+        {"source": "自相关、偏相关检验法", "target": "平稳性判断", "type": "前置条件"},
+        {"source": "去除非平稳性", "target": "小波分析法", "type": "包含"},
+        {"source": "去除非平稳性", "target": "差分法", "type": "包含"},
+        {"source": "模型阶数确立", "target": "自相关、偏相关检验法", "type": "前置条件"},
+        {"source": "模型阶数确立", "target": "ARIMA模型", "type": "结果"},
+        {"source": "模型训练和预测", "target": "去除非平稳性", "type": "前置条件"},
+        {"source": "信源数据产生模型", "target": "地理模型", "type": "包含"},
+        {"source": "信源数据产生模型", "target": "传播模型", "type": "包含"},
+        {"source": "信源数据产生模型", "target": "用户业务模型", "type": "包含"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "感知区域",
+            "en": "Perception area"
+        },
+        {
+            "title": "传播模型",
+            "en": "Propagation model"
+        },
+        {
+            "title": "用户业务模型",
+            "en": "User business model"
+        },
+        {
+            "title": "ARIMA模型",
+            "en": "ARIMA model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "感知区域",
+            "target": "传播模型",
+            "type": "包含"
+        },
+        {
+            "source": "感知区域",
+            "target": "用户业务模型",
+            "type": "包含"
+        },
+        {
+            "source": "传播模型",
+            "target": "用户业务模型",
+            "type": "影响"
+        },
+        {
+            "source": "用户业务模型",
+            "target": "ARIMA模型",
+            "type": "预测"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "傅里叶变换", "en": "Fourier transform"},
+        {"title": "频域分析", "en": "Frequency domain analysis"},
+        {"title": "周期性分析", "en": "Periodicity analysis"},
+        {"title": "差分序列", "en": "Differential sequence"},
+        {"title": "自相关函数", "en": "Autocorrelation function"},
+        {"title": "ARIMA模型", "en": "ARIMA model"},
+        {"title": "评价指标", "en": "Evaluation index"},
+        {"title": "普通预测模型", "en": "Ordinary prediction model"},
+        {"title": "在线预测模型", "en": "Online prediction model"}
+    ],
+    "relations": [
+        {"source": "傅里叶变换", "target": "频域分析", "type": "包含"},
+        {"source": "傅里叶变换", "target": "周期性分析", "type": "应用"},
+        {"source": "周期性分析", "target": "差分序列", "type": "应用"},
+        {"source": "差分序列", "target": "自相关函数", "type": "应用"},
+        {"source": "自相关函数", "target": "ARIMA模型", "type": "应用"},
+        {"source": "ARIMA模型", "target": "评价指标", "type": "应用"},
+        {"source": "ARIMA模型", "target": "普通预测模型", "type": "区别"},
+        {"source": "ARIMA模型", "target": "在线预测模型", "type": "区别"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "动态频谱接入技术", "en": "Dynamic Spectrum Access Technology"},
+        {"title": "频谱感知", "en": "Spectrum Sensing"},
+        {"title": "宽带感知", "en": "Wideband Sensing"},
+        {"title": "窄带感知", "en": "Narrowband Sensing"},
+        {"title": "信道选择", "en": "Channel Selection"},
+        {"title": "预测模型", "en": "Prediction Model"},
+        {"title": "ARIMA模型", "en": "ARIMA Model"},
+        {"title": "动态频谱接入模型", "en": "Dynamic Spectrum Access Model"}
+    ],
+    "relations": [
+        {"source": "动态频谱接入技术", "target": "频谱感知", "type": "包含"},
+        {"source": "动态频谱接入技术", "target": "信道选择", "type": "包含"},
+        {"source": "频谱感知", "target": "宽带感知", "type": "包含"},
+        {"source": "频谱感知", "target": "窄带感知", "type": "包含"},
+        {"source": "信道选择", "target": "预测模型", "type": "依赖"},
+        {"source": "预测模型", "target": "ARIMA模型", "type": "包含"},
+        {"source": "信道选择", "target": "动态频谱接入模型", "type": "依赖"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "低信噪比环境下的算法改进",
+            "en": "Algorithm improvement in low signal-to-noise ratio environment"
+        },
+        {
+            "title": "噪声功率估计的准确性",
+            "en": "Accuracy of noise power estimation"
+        },
+        {
+            "title": "基于功率谱线间相关性的改进能量检测算法",
+            "en": "Improved energy detection algorithm based on power spectral line correlation"
+        },
+        {
+            "title": "地面类型和用户数目对仿真数据的影响",
+            "en": "Impact of ground type and number of users on simulation data"
+        },
+        {
+            "title": "时间序列预测在认知无线电中的应用",
+            "en": "Application of time series prediction in cognitive radio"
+        },
+        {
+            "title": "动态频谱接入模型",
+            "en": "Dynamic spectrum access model"
+        },
+        {
+            "title": "信道选择算法",
+            "en": "Channel selection algorithm"
+        },
+        {
+            "title": "预测模型更新算法",
+            "en": "Prediction model update algorithm"
+        },
+        {
+            "title": "认知无线电原理及应用",
+            "en": "Principles and applications of cognitive radio"
+        },
+        {
+            "title": "支持向量机的认知无线电若干关键技术研究",
+            "en": "Research on several key technologies of cognitive radio based on support vector machine"
+        },
+        {
+            "title": "基于概率密度估计的认知无线电动态频谱接入算法",
+            "en": "Dynamic spectrum access algorithm for cognitive radio based on probability density estimation"
+        },
+        {
+            "title": "能量检测技术",
+            "en": "Energy detection technique"
+        },
+        {
+            "title": "基于循环平稳特征检测的认知无线电",
+            "en": "Cognitive radio based on cyclostationary feature detection"
+        },
+        {
+            "title": "多通道自适应信号检测的参数对称自适应匹配滤波器",
+            "en": "Parametric symmetric adaptive matched filter for multi-channel adaptive signal detection"
+        },
+        {
+            "title": "协作频谱感知",
+            "en": "Collaborative spectrum sensing"
+        },
+        {
+            "title": "基于HMM的动态频谱接入技术",
+            "en": "Dynamic spectrum access technology based on HMM"
+        },
+        {
+            "title": "数据挖掘在E-learning学习过程中的应用",
+            "en": "Application of data mining in E-learning"
+        },
+        {
+            "title": "支持向量机-理论,算法和拓展",
+            "en": "Support vector machine - theory, algorithm and extension"
+        },
+        {
+            "title": "神经网络短期负荷预测",
+            "en": "Neural network short-term load forecasting"
+        }
+    ],
+    "relations": [
+        {
+            "source": "低信噪比环境下的算法改进",
+            "target": "噪声功率估计的准确性",
+            "type": "关联"
+        },
+        {
+            "source": "低信噪比环境下的算法改进",
+            "target": "基于功率谱线间相关性的改进能量检测算法",
+            "type": "关联"
+        },
+        {
+            "source": "基于功率谱线间相关性的改进能量检测算法",
+            "target": "噪声功率估计的准确性",
+            "type": "关联"
+        },
+        {
+            "source": "地面类型和用户数目对仿真数据的影响",
+            "target": "时间序列预测在认知无线电中的应用",
+            "type": "关联"
+        },
+        {
+            "source": "动态频谱接入模型",
+            "target": "信道选择算法",
+            "type": "关联"
+        },
+        {
+            "source": "动态频谱接入模型",
+            "target": "预测模型更新算法",
+            "type": "关联"
+        },
+        {
+            "source": "认知无线电原理及应用",
+            "target": "支持向量机的认知无线电若干关键技术研究",
+            "type": "关联"
+        },
+        {
+            "source": "支持向量机的认知无线电若干关键技术研究",
+            "target": "基于概率密度估计的认知无线电动态频谱接入算法",
+            "type": "关联"
+        },
+        {
+            "source": "基于概率密度估计的认知无线电动态频谱接入算法",
+            "target": "能量检测技术",
+            "type": "关联"
+        },
+        {
+            "source": "基于循环平稳特征检测的认知无线电",
+            "target": "多通道自适应信号检测的参数对称自适应匹配滤波器",
+            "type": "关联"
+        },
+        {
+            "source": "协作频谱感知",
+            "target": "基于HMM的动态频谱接入技术",
+            "type": "关联"
+        },
+        {
+            "source": "数据挖掘在E-learning学习过程中的应用",
+            "target": "神经网络短期负荷预测",
+            "type": "关联"
+        },
+        {
+            "source": "支持向量机-理论,算法和拓展",
+            "target": "神经网络短期负荷预测",
+            "type": "关联"
+        }
+    ]
+}{
+    "knowledge_points": [],
+    "relations": []
+}

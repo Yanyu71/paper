@@ -1,0 +1,9 @@
+5.2.1分布式数据处理平台
+Hadoop是一个Apache基金会管理的开源数据处理框架系统。最初是由Doug Cutting于2005年基于Google的GFS和MapReduce的技术思想的开源实现。经 十多年的不断发展，尤其是随着Hadoop 2 （下文中如未特别指出，则本文中 Hadoop特指Hadoop 2）的出现，Hadoop已经由最初的分布式处理框架向开放性 的基础资源管理框架演进，随着功能的不断改进，Hadoop在开源数据处理领域 开始扮演了越来越重要的角色。
+当前Hadoop中的核心部分：数据的存储系统HDFS以及计算框架较之于 Hadoop发展之初已经有了巨大的变化，基本实现了对Hadoop架构的重建。架构 中计算框架最重要的变化是，原始默认的MapReduce不再是唯一的计算框架， 截至目前Hadoop已经可以同时支持Spark,Storm,Hama等多种分布式计算模型。 这些计算模型都可以运行在Hadoop新的核心组成部分YARN（Yet Another Resource Negotiator）Jto当前的存储架构中的HDFS Federation通过釆用多个 NameNode,且各个NameNode之间相互独立，各自管理着自己的命名空间，每
+个DataNode会向集群中的所有NameNode注册。通过这样的设计解决了最初
+HDFS中存在的单点故障问题，同时还提高了 HDFS的高可用性和可扩展性。
+Ambari
+（部署、配置及管理工具）
+图5-3 Hadoop生态系统
+经过多年的发展，伴随着算法的改进、技术创新，以Hadoop为基础衍生出 多种多样的，结合分布式计算思想的新工具。这些新的工具与Hadoop共同组成 T—"成熟并且持续发展的Hadoop生态系统oHadoop生态系统中的不同工具通 过不同的组合，可以完成多种多样的任务和功能。

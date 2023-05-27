@@ -1,0 +1,2 @@
+2.4OpenFlow网络仿真平台
+当前包括思科、华为、NEC等设备厂商推出了 OpenFlow专用硬件交换机。 除了一些硬件交换机设备外，OpenvSwitch作为一款虚拟软件交换机也得到了广 泛的使用。Mininet1171是基于OpenvSwitch开发出来的OpenFlow网络仿真平台。 本节主要介绍Mininet的相关内容。

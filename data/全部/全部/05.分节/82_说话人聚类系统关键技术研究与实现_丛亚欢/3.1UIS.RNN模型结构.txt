@@ -1,0 +1,19 @@
+3.1UIS.RNN模型结构
+uis-mn (unbounded interleaved-state recurrent neural networks ) 即无界交错状 态递归神经网络，具有以下几个特征：
+(1) .每个说话人都由RNN的一个实例建模，实例间共享相同参数；
+(2) .可以生成无限ft量的RNN实例，即实现未知数量的说话人建模；
+(3) .对应于不同说话人的不同RNN实例状态在时域中交错。
+使用2.3节介绍的方法，我们将utterance通过LSTM网络结构提取d-vector说话 人矢量，d-vector随后作为uis-mn网络的输入：X。uis-mn是一个关于(X,Y)的生 成模型，X是embedding： d-vector, Y是该embedding对应说话人类别标签，uis-mn 的表达式如公式(3-1)所示。其中z表示说话人转换概率，当绻=1表示当前卷所 属说话人与验一1时刻非同一说话人。z产0,表示与t-1时刻属于同一说话人。
+T
+P(X,匕 z) = p(%i,yi)- p(xt> yt>	z[t-u)
+t=2
+pglut-Q -
+sequence generation
+p(y』zt，yt-Q -
+speaker assignment
+P(Zt|Zt_i)
+speaker change
+该公式进一步可描述为三部分，分别为序列生成(sequencegeneration),说
+话人类别标记(speaker assignment),和说话人转换(speaker change),如公式(3-
+14
+2）所示。

@@ -1,0 +1,24 @@
+4.3.5Storm性能优化
+Storm集群中，多个Supervisor合作进行Topology的计算，即实现了 Storm 的并行运算。Spout和Bolt的Task实例运行在集群的Supervisor上。Task实例 即是最终完成数据处理的实体单元，即Spout或者Bolt的最小实例单元。 Supervisor上存在着一个或多个Worker进程。一个Worker进程中可以存在多个 Executor线程，而每个Executor线程又可以有一个或多个Task实例卩句。整个 Supervisor 上 Worker、Executor> Task 的关系如图下所示。
+storm集群的1台物理机会启动1个或多个 worker?程(即jvm进程)，所有的 topology将在这些worker进程里被运行。
+J	J
+图4-5节点上的Worker> Task等关系图
+本实验中，对Kafka和Storm的连接性能做了一定测试，以此来优化Storm 性能。测试数据来源为下一张使用的真实流量数据，共有1669331条数据，共 895M。数据皆先Push到Kafka,然后再用Kafka-Spout来pull进系统。实现的 Bolt很简单，仅仅为统计各字段的总数。实验结果如下：
+表4-4 Kafka和Storm连接性能测试
+Worker^ 目	Spout并行度	Bolt并行度	Spout_pending大小CPU使用星	内存使用量	消耗时间
+1	1	1咐	　　　　35%	40%4m30s
+1	2		　　　　45%	90% 3m30s
+1	2	i	500	　　　　50%	70% 2m39s
+2	2		1	500	　　　　40%	40% 3ml2s
+由表可得，当不设置Spout_pending时，内存可能比较容易成为瓶颈。设置 了 500后，其性能明显上升o Spout_pending可以改变Spout可缓存的Tuple数目， 可以发现，当不设置时，Tuple可能出现无限堵塞导致内存被占满，从而导致任 务变慢。另夕卜，Worker、Spout、Bolt的并行度也能对Storm性能产生一定影响。
+因此，Storm的优化可以从以下两方面考虑：
+1 .设置并发度
+Storm的并发度可以从以下几个方面进行设置：一是Supervisor上的Worker 的数目，二是一个Worker内Executor的数目，三是一"个Executor内Task的数目。
+下面分别进行介绍。
+Worker：可以在storm.yaml中进行配置，也可以通过 config.setNumWorkers(workers)设置，具体得由测试分析得到。
+Executor 的设置： 通过 builder.setSpout(id, spout, parallelism_hint)、 builder.setBolt(id, bolt,parallelism_hint)分别设置 Spout 和 Bolt 的数量。
+Task 的设置：通过 spout/boltDeclarer.setNxmTasks(num)设置对应 spout/bolt 的task个数。
+Akcer：通常，一颗Tuple树结束后会调用一次Acker。因此当并发时，可能 有多个Tuple0
+需要调用Acker,因此Acker也可能成为制约效率的因素。一般与Worker 数相等。
+2.监控内存及CPU等参数使用量
+一般情况下，Storm启动Worker时的默认最大内存为768M。但是在需要加 载大量数据进行计算的情况下，768M内存并不能满足需求，甚至导致内存溢出 而宕掉。此时，可以通过在Strom的配置文件storm.yaml中设置worker的启动 参数:worker.childopts: "-Xmx2048m" <, Worker在启动时会自动读取该配置项，然 后Worker的最大内存即可扩展到2048M-

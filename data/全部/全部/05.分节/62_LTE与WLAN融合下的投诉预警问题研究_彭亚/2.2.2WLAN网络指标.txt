@@ -1,0 +1,73 @@
+2.2.2WLAN网络指标
+WLAN的关键性能指标（KPI）主要包括了接入类、质量类、 类等四类指标。每类主要指标的计算公式及特点如下：
+a、接入类指标
+•	AP关联成功率
+AP关联成功率包括不含资源受限以及含资源受限两种情况。 别如下：
+保持类和容量
+其计算公式分
+^APsuccl =
++ 兀recon—ngecGTL—nredecozi+nyef 1tse * ]0O%
+^APsucc2 =
+ncon~^nrecon
+一九-"recieccm+%6九66 * 100%
+(2-19)
+^^con^^recon
+(2-20)
+其中，公式（2-19）是不包含资源受限的情况下AP关联成功率的计算公式，公 式（2-19）是在包含资源受限的情况下AP关联成功率的计算公式。外psucci与 匕PSUCC2分别代表了不含和包含资源受限的情况下AP关联成功率，且AP的关联 成功率可以作为该AP下可用性的参考；内如代表了关联总次数；代表了 重新关联次数；Tlaecon代表了关联失败总次数；n^decon代表了重新关联失败的总 次数；%e"se代表了由于接入点资源有限而拒绝关联的总次数。
+•	DHCP请求成功率
+DHCP请求成功率的计算公式如下：
+PDHCPsucc =
+nDHCPrequest
+* 100%
+(2-21)
+其中，Pdhcpsucc表示DHCP请求成功率；徇HCPsacc表示DHCP请求成功数，即 AC接收到的终端发来的DHCP次数；TlDHCPrequest表示DHCP请求次数，即AC 发往终端的DHCP次数。
+b、质量类指标
+•	AP退服率
+19
+AP退服率的计算公式如下：
+PAPauit =色迹 * 100% =%＞。"―一。〃 * 100%	(2-22 )
+Lcount	l count
+其中，匕pqu比表示AP退服率；"pqu让表示AP退服时长；tcoiznt表示统计时长; tAPon表示AP上线通告的时间；以p。"表示AP下线告警的时间。通过AP退服 率可以反映AP的在网的时长以及网络的可用性情况，有助于发现AP的故障问 题。
+•	AP上行峰值速率
+AP上行峰值速率的计算公式为：
+vAPt0V-uP = -qAP-up	(2-23)
+A，rop up i024*tcount
+其中，卸表示AP上行峰值速率，其单位为Kbps,可以作为AP带宽负 荷的参考；qAPrp表示AP有线口上行数据流量，可以理解为AP发往网络侧的 总字节数。
+•	AP下行峰值速率，其计算公式为：
+vAPtop-down = io24*td＜，Wn	(2-24)
+1UZ4*
+其中，以Ptop-down表示AP下行峰值速率，其单位为Kbps,同样可以作为AP带 宽负荷的参考；Mp-down表示AP有线口下行数据流量，可以理解为网络侧发往 AP的总字节数。
+•	AP上行流量，其计算公式如下：
+QAPup —	1024
+(2-25)
+其中，与Pup表示AP上行流量，其单位为Kb,也可以作为AP带宽负荷的参考。
+AP下行流量，其计算公式如下:
+_	_ 8*q，p-down
+HAPd.OWTi -	1024
+(2-26)
+其中，匕Pdown表示AP下行流量，其单位为Kb,同样可以作为AP带宽负荷的 参考。
+•	单用户下载峰值速率，其计算公式如下:
+_ qaccept
+^download —
+* *nonline
+(2-27)
+其中，"download表示了单用户下载峰值速率，能够反映用户使用WLAN网络的 速度情况；Accept表示了 AP有线口接收数据流量；表示了 AP平均在线 用户数。
+C、保持类指标
+•	在线用户异常掉线率，其计算公式如下：
+20
+PoffUne =——n°"卬皿——* 100%	(2-28 )
+nAConline+nACRadiiis
+其中，P。/加ne表示了在线用户的异常掉线率，能够反映AC下接入用户的稳定性 以及无线质量；诙/广。皿表示了在线用户异常断开连接的总次数；%或热的e表示 了 AC目前的所有在线用户数；AcaadEs表示了 AC收到Radius的认证请求通过 次数。
+■	关联终端异常掉线率，其计算公式如下：
+Pconnect =-----------%2理----------7------* 100% (2-29)
+nAPter^'7^APconTotal'^'r^reConTotal^~nAPconbef^'nreConDef
+其中，Pconnect表示了关联终端异常掉线率，能够反映用户使用感知度状况； &e打。皿表示了终端异常断开连接的总次数；%Pter表示了当前与AP关联的终端 数；%Pcon70ta2表示了 AP关联总次数；n^ConTot山表示了重新关联总次数； %Pc°"Def表示了 AP关联失败次数；n^ConDef表示了重新关联失败的总次数。
+d、容量类指标
+•	DHCP地址池利用率，其计算公式如下：
+PDHCPutilize =勾了"…* WO%	(2-30)
+^DHCPIP
+其中，PDHCPutmze表示DHCP地址池利用，反映了 DHCP服务的状况，可以用 来对地址池地址使用状况进行评估；tIdhcp/p皿出表示各DHCP地址池已分配的 IP地址数；Mdhcp/p表示各DHCP地址池的总的IP地址数。
+•	AP关联拥塞率，其计算公式如下：
+PAPjam =------* 100%	(2-31)
+nConDef^nreConDef
+其中，与Pjam表示AP关联拥塞率，可以反映设备资源利用情况以及用户连接 感知度；5了惭表示由于接入点资源有限而拒绝关联的总次数；〃onDer表示关 联总次数；％eC°nD”表示重新关联总次数。

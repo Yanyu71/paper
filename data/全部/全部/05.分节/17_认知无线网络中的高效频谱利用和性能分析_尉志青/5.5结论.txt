@@ -1,0 +1,33 @@
+5.5结论
+为了进一步提升认知无线网络的容量，本文在本章中探索高度维度的频谱机 会，构造3D (Three Dimensional)认知无线网络，充分利用高度维来提升认知 183
+无线网络的容量。首先，本文进行3D认知无线网络干扰分析，当认知无线网络 釆用高度维频谱机会，在提升容量的同时，也会在干扰协调方面带来挑战。然后 本文设计3D认知无线网络的网络协议，以保证主次网络正常工作。最后本文分 析3D认知无线网络的容量，理论证明了：相比认知无线网络的二维部署，认知 无线网络采用高度维度的频谱机会可以提升自身的容量。
+参考文献
+[5-1] J. Mitola, "Cognitive radio: An integrated agent architecture for software defined radio,” Ph.D. dissertation, KTH Royal Inst, of Technol., Stockholm, Sweden, 2000.
+[5-2] B. Wang and K. J. R. Liu, "Advances in cognitive radio networks: A survey/5 IEEE Journal of Selected Topics in Signal Processing, vol. 5, no. 1? pp. 5-23, Feb. 2011.
+[5-3] T. Yucek and H. Arslan, "A survey of spectrum sensing algorithms for cognitive radio applications,IEEE Communications Surveys & Tutorials, vol. 11, no. 1, pp. 116-130, Mar. 2009.
+[5-4] X. Wang, J. Liu, W. Chen, Z. Cao, “CORE・4: Cognition oriented relaying exploiting 4-D spectrum holes," Wireless Communications and Mobile Computing Conference (IWCMC), pp. 1982-1987, July 2011.
+[5-5] Y. Xu, X. Zhao, Y. -C. Liang, "Robust Power Control and Beamfbrming in Cognitive Radio Networks: A Survey/' IEEE Communications Surveys & Tutorials, vol. PP. no. 99,2015.
+[5-6] G. Zheng, S. Ma, K. K. Wong, and T. S. Ng, “Robust beamforming in cognitive radio,H IEEE Transactions on Wireless Communications, vol. 9, no. 2, pp. 570—576,2010.
+[5-7] Z. Wei, Z. Feng, Q. Zhang, W. Li and T. A. Gulliver, "The asymptotic throughput and connectivity of cognitive radio networks with directional transmission,5, Journal of Communications and Networks, vol. 16, no. 2, pp. 227-237, Apr. 2014.
+[5-8] P. Gupta and P. R. Kumar, "The capacity of wireless networks/5 IEEE Transactions on Information Theory, vol. 46, no. 2, pp. 388-404, Mar. 2000.
+[5-9] M. Grossglauser and D.N.C. Tse, "Mobility increases the capacity of ad hoc wireless networks/ IEEE/ACM Transactions on Networking, vol. 10, no. 4, pp. 477-486, Aug. 2002.
+184
+[5-10] S. Yao, X. Wang, X. Tian and Q. Zhang, MDelay-throughput tradeoff with correlated mobility of ad-hoc networks/1 IEEE International Conference on Computer Communications (INFOCOM), pp. 2589-2597, Apr. 2014.
+[5-11] J. Liu, N・ Kato, J. Ma and T. Sakano, ''Throughput and Delay Tradeoffs for Mobile Ad Hoc Networks With Reference Point Group Mobility/' IEEE Transactions on Wireless Communications, vol. 14, no. 3, pp. 1266-1279, Mar. 2015.
+[5-12] B. Liu, Z. Liu, and D. Towsley, HOn the capacity of hybrid wireless networks/ IEEE International Conference on Computer Communications (INFOCOM), vol. 2, pp. 1543-1552,2003.
+[5-13] A. Zemlianov and G. Veciana, "Capacity of ad hoc wireless networks with infrastructure support/' IEEE Journal on Selected Areas in Communications, vol. 23, no. 3, pp. 657-667, Mar. 2005.
+[5-14] D. M. Shila, Y. Cheng and T. Anjali, 'Throughput and delay analysis of hybrid wireless networks with multi-hop uplinks/ IEEE International Conference on Computer Communications (INFOCOM), pp. 1476-1484, Apr. 2011.
+[5-15] X. Wang and Q. Liang, "On the Throughput Capacity and Performance Analysis of Hybrid Wireless Networks over Fading Channels/1 IEEE Transactions on Wireless Communications, vol. 12, no. 6, pp. 2930-2940, Jun. 2013.
+[5-16] P. Gupta, P. R. Kumar et aL, "Internets in the sky: The capacity of three dimensional wireless networks," Communications in Information and Systems, vol. 1, no. 1, pp. 33-49, 2001.
+[5-17] M. Franceschetti, M. D. Migliore, P. Minero, "Outer Bound to the Capacity Scaling of Three Dimensional Wireless Networks/ IEEE International Symposium on Information Theory (ISIT), pp. 1123-1127, Jul. 2008.
+[5-18] P. Li, M. Pan, and Y. Fang, “The capacity of three-dimensional wireless ad hoc networks,” in Proc, IEEE INFOCOM, Shanghai, China, April 2011.
+[5-19] P. Li, M. Pan, and Y. Fang, "Capacity bounds of three-dimensional wireless ad hoc networks/5 IEEE/ACM Trans. Netw., vol. 20, no. 4, pp. 1304—1315, 2012.
+[5-20] C・ Hu, X. Wang, Z. Yang, J. Zhang, Y. Xu, X. Gao, "A Geometry Study on the Capacity of Wireless Networks via Percolation,'1 IEEE Transactions on Communications, vol. 58, no. 10, pp. 2916-2925, Oct. 2010.
+[5-21] L. X. Cai, L. Cai, X. (Sherman) Shen, and J. W. Mark, "Capacity Analysis of UWB Networks in Three-Dimensional Space/' Journal of Communications
+185
+and Networks, vol. 11, no. 3, pp. 287-296, Apr. 2009.
+[5-22] S.-W. Jeon, N. Devroye, M. Vu, S.-Y. Chung, and V. Tarokh, "Cognitive networks achieve throughput scaling of a homogeneous network,IEEE Transactions on Information Theory, vol. 57, no. 8, pp. 5103-5115, Aug. 2011.
+[5-23] C. Yin, L. Gao and S. Cui, "Scaling Laws for Overlaid Wireless Networks: A Cognitive Radio Network versus a Primary Network," IEEE/ACM Transactions on Networking, vol. 18, no. 4, pp. 1317-1329, Aug. 2010.
+[5-24] W. Huang and X. Wang, "Capacity scaling of general cognitive networks/9 IEEE/ACM Transactions on Networking, vol. 20, no. 5, pp. 1501-1513, Oct. 2011.
+[5-25] X. Feng and P. R. Kumar, “Scaling laws for ad hoc wireless networks: An information theoretic approach,” Foundations and Trends in Networking, vol. 1, no. 2, pp. 145-270, 2006,
+186

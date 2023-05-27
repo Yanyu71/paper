@@ -1,0 +1,7 @@
+4.3.6Storm拓扑设计
+KafkaSpout：用于从KafkaBroker获取数据并传入拓扑中，为整个拓扑数据 流的源头。
+SplitBolt：用于将数据按照每个小时分割，并将同一个小时的流量合并，然 后将各个不同小时的数据分发到KNNGrubbsBolt对应的Task进行处理。
+KNNGrubbsBolt:通过KNNGrubbs算法，将不同日期的同一时间段的数据 进行异常检测，并将数据与结果发送到WriteBolt进行存储。
+WriteBolt：将获取到的数据进行写入Hbase。
+整个Stonn的拓扑即如图4-6所示：
+图4-6 Storm拓扑图

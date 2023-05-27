@@ -1,0 +1,50 @@
+第六章总结与展望
+「一亲旃赢
+图1-3	论文主要工作及研究架构
+兴趣的跨域数据挖掘研究现状，并探讨了用户兴趣模型提升跨域数据挖掘性能的优 势。
+第三章研究异质跨域数据下基于用户兴趣的跨域用户身份识别方法。针对跨域 数据异质性导致跨域信息间关联交错复杂的问题，论文提出了一种基于链接异质网 络嵌入的跨域用户身份识别方法，通过在统一的兴趣空间中融合不同域中的内容和 社交结构数据来全面学习基于内容偏好和社交偏好的用户兴趣统一表示。通过进一 步设计联合训练算法和跨域用户身份识别算法来提升识别跨域用户身份准确性。
+第四章研究匿名跨域数据下基于用户兴趣的跨域推荐方法。针对跨域数据匿名 化导致跨域信息间关联缺失不足的问题，本章设计了一个基于跨域异质关系嵌入的 跨域推荐方法，仅利用在用户匿名情况下获得的少量跨域数据，通过全面挖掘跨域 关联并捕捉域内和域间的异质关系，以弥补跨域信息间缺失的关联信息。另外，通 过设计高效的联合训练算法来优化模型。最后，基于用户兴趣的统一表示进行跨域 推荐，使得即使在只有少量用户训练数据时也能保证推荐的性能提升。
+第五章研究动态跨域数据下基于用户兴趣的跨域推荐方法。针对跨域数据动态 性导致跨域信息间具有复杂动态关联的问题，首先提出了一种基于多层循环神经网 络的跨域推荐方法，通过联合建模用户兴趣的跨域演化模式和单域动态模式，以捕
+9
+捉跨域信息间的复杂动态关联。然后提出了一种基于循环-门控神经网络的跨域推荐 方法，通过从长、短期兴趣两个角度，在全面准确建模用户兴趣的跨域演化模式和 单域动态模式的同时，重建损失的部分单域行为间链接，显著提升了推荐性能。
+参考文献
+[1] We are social, Hootsuite. Global digital 2019 reports[EB/OL]. https://wearesocial.com/blog/2019/ 01/digital-2019-global-intemet-use-accelerates, 2019.
+[2]中国互联网信息中心.第44次中国互联网发展状况统计报告[EB/OL]. http://www.cac.gov.cn/ 2019-08/30/c_l 124938750.htm, 2019.
+[3]凯度.2019年中国社会化媒体生态概览白皮书[EB/OL]. http://www.kantarmedia.com.cn/ thinking/detail/id/194,2019.
+[4] Go globle. Things that happen on internet every 60 seconds[EB/OL]. https://www.go-globe.com/ things-that-happen- every- 60- seconds/, 2017.
+[5]淘宝网.淘宝简介[EB/OL]* https://www.taobao.com/tbhome/page/about/honie?spm:=a21 bo.2017. 1997523009.31.5af911 d9YWfzru, 2017.
+[6]	Sarwar B, Karypis G, Konstan J, et al. Item-based collaborative filtering recommendation algorithms [A]. // Proceedings of the 10th International Conference on World Wide Web[C]. Berlin, German: Springer, 2001: 285-295.
+[7]	Wang J, Huang H Zhao H, et al. Billion-scale commodity embedding for e-commerce recommendation in alibaba[A]. // Proceedings of the International Conference on knowledge discovery and data mining[C]. New York, NY: ACM, 2018: 839-848.
+[8]	He Y9 Yang S, Jiao C. A hybrid collaborative filtering recommendation algorithm for solving the data sparsity [A]. // Proceedings of the International Symposium on Computer Science and Society[C]. PiscaUway, NJ: IEEE, 2011: 118-121.
+[9]	Li B, Yang Q, Xue X. Can movies and books collaborate? cross-domain collaborative filtering for sparsity reduction[A]. // International Joint Conference on Artificial Intelligence[C]. San Francisco, CA: Morgan Kaufmann Publishers Inc, 2009.
+[10]	Shu K, Wang S, Tang J, et al. User identity linkage across online social networks: a review[J]. ACM SIGKDD Explorations Newsletter, 2017,18(2): 5-17.
+[11]	Li B. Cross-domain collaborative filtering: a brief survey [A]. //2011 IEEE 23rd International Conference on Tools with Artificial Intelligence^]. Piscataway,NJ: IEEE Press, 2011: 1085-1086.
+[12]	Khan M M, Ibrahim R, Ghani I. Cross domain recommender systems: a systematic literature re-view[J]. ACM Computing Surveys (CSUR), 2017, 50(3): 1-34.
+[13]	Cantador I, Fernandez-Tobias I, Berkovsky S, et al. Cross-domain recommender systems[J]. Recommender systems handbook, 2015: 919-959.
+[14]	Hu L, Cao J, Xu G, et al. Personalized recommendation via cross-domain triadic factorization[A]. // Proceedings of the 22nd international conference on World Wide Web[C]. Berlin, German: Springer, 2013: 595-606.
+10
+[15]	Pan W Vang Q. Transfer learning in heterogeneous collaborative filtering domains [J]. Artificial intelligence, 2013, 197: 39-55.
+[16]	Tiroshi A, Kuflik T. Domain ranking for cross domain collaborative filtering[A]. // International Conference on User Modeling, Adaptation, and Personalization[C]. Berlin, German: Springer, 2012: 328-333.
+[17]	Narayanan A, Shmatikov V De-anonymizing social networks [A]. 〃 2009 30th IEEE symposium on security and privacy[C]. Piscataway, NJ: IEEE, 2009: 173-187.
+[18]	Korula N, Lattanzi S. An efficient reconciliation algorithm for social networks [A]. // Proceedings of the VLDB Endowment[C]. Trondheim, Norway: VLDB Endowment, 2014: 377-388.
+[19]	Phan M C, Sun A, Tay Y Cross-device user linking: url, session, visiting time, and device-log embedding[A]. // Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval[C]. New York, NY: ACM, 2017: 933-936.
+[20]	Gao S, Luo H, Chen D, etal. Cross-domain recommendation via cluster-level latent factor model[A]. // Joint European conference on machine learning and knowledge discoveiy in databases©. Berlin, German: Springer, 2013: 161-176.
+[21]	Ren S, Gao S, Liao J, et al. Improving cross-domain recommendation through probabilistic clusterlevel latent factor model [A]. // Twenty-Ninth AAAI Conference on Artificial Intelligence [C]. Menio Park, CA: AAAI Press, 2015.
+[22]	Zheng Y Methodologies for cross-domain data fusion: an overview[J]. IEEE transactions on big data, 2015, 1(1): 16-34.
+[23]	Hidasi B, Karatzoglou A, Baltrunas L, et al. Session-based recommendations with recurrent neural networks [J]. arXiv preprint arXiv: 1511.06939, 2015.
+[24]	Hidasi B, Karatzoglou A. Recurrent neural networks with top-k gains for session-based recommen-dations[A], // Proceedings of the 27th ACM International Conference on Information and Knowledge Management©. New York, NY: ACM, 2018: 843-852.
+[25]	Wang S, Cao L, Wang Y A survey on session-based recommender systems[J]. arXiv preprint arXiv: 1902.04864, 2019.
+[26]	Quadrana M, Cremonesi P, Jannach D. Sequence-aware recommender systems[J]. ACM Computing Surveys (CSUR), 2018, 51(4): 1-36.
+[27]	Loizou A. How to recommend music to film bufifs: enabling the provision of recommendations from multiple domains[D]. Southampton, England: University of Southampton, 2009.
+[28]	Fernandez-Tobias I, Cantador I, Kaminskas M, et al. A generic semantic-based framework for crossdomain recommendation[A]. // Proceedings of the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems[C]. New York, NY: ACM, 2011: 25—32.
+[29]	Kaminskas M, Fernandez-Tobias Is Cantador I, et al. Ontology-based identification of music for places[A]. // Information and Communication Technologies in Tourism 2013[C]. Berlin, German: Springer, 2013: 436-447.
+[30]	Jiang M, Cui P, Chen X, et al. Social recommendation with cross-domain transferable knowledgefj]. IEEE transactions on knowledge and data engineering, 2015, 27(11): 3084-3097.
+[31]	Ying G, Xi C. Cross-domain scientific collaborations prediction with citation infbrmation[A]. // 2014 IEEE 38th International Computer Software and Applications Conference Workshops[C]. Piscataway, NJ: IEEE, 2014: 229-233.
+11
+[32]	Abdel-Hafez A, Xu Y A survey of user modelling in social media websites [J]. Computer and Information Science, 2013,6(4): 59-71.
+[33]	Piao G, Breslin J G. Inferring user interests in microblogging social networks: a survey [J], User Modeling and User-Adapted Interaction, 2018, 28(3): 277-329.
+[34]	Gao M, Liu K, Wu Z. Personalisation in web computing and informatics: theories, techniques, applications, and future research[J]. Information Systems Frontiers, 2010, 12(5): 607-629.
+[35]	Bobadilla J, Ortega F, Hernando A, et al. Recommender systems survey [J]. Knowledge-based systems, 2013, 46: 109-132.
+[36]	Frias-Martinez E, Magoulas G, Chen S, et al. Automated user modeling for personalized digital libraries[J]. International booktitle of Information Management, 2006, 26(3): 234—248.
+[37]	Jeevan Y Padhi P. A selective review of research in content personalization[J]. Library Review, 2006.
+12

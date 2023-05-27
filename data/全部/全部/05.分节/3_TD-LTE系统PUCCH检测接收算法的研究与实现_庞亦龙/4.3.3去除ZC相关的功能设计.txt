@@ -1,0 +1,23 @@
+4.3.3去除ZC相关的功能设计
+实现函数为
+void PucchZcDeCorr (
+short *pDataInO,
+short *pDataInl,
+short *pDataOutO,
+short * pDataOutl,
+STRU_PUCCH_ZC_DECORR_PARA*pPucchZcDeCorrPara
+)°
+该函数的处理过程如下所述，流程图见图4-9：
+1)产生PUCCH的ZC共辘序列
+预先将30个参数u对应的ZC基序列存在表gZCBasicPhaseTable[30][ 12]里，预先 将本地ZC共辆序列存在gZCBasicConjTable[42]M,由计算ZC参数模块得到的参数u 和从 gZCBasicPhaseTable[30] [ 12]取出值 faValue,将 foValue 做相应变化后成 faValueldx, 根据 faValueldx 和 gNcs [7]在表 gZCBasicConjTable[42]中得到 ZC 共辄序列；
+2)去除ZC序列
+根据资源位置计算模块得到资源位置，得到相应12个子载波PUCCH数据，然后 跟ZC共轴序列相乘。
+开始
+Symb
+由参数gu和
+gNcs[symbldx]得到 ZC
+共辘序列
+去除ZC相关
+否:数ML
+图4-9去除ZC序列相关性流程图
+52

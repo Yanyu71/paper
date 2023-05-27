@@ -1,0 +1,24 @@
+3.4.4测试例的TTCN.3实现
+为了和3GPP保持一致，将测试例命名为“TC_12_21”，在MTC上定义
+VoLTE鉴权测试例时，激活了 EUTRA_PTC、IMS_PTC和IP_PTC,分别用于模拟TD-LTE小区的接入网和核心网的IMS、IP部分的测试主体，以下为这一过 程的TTCN-3实现代码：
+testcase TC_12_21() runs on MTC IMS system SYSTEM IMS (
+// @purpose
+// MO MTSI Video call
+var IMS PTC v_IMSl := null;
+var IMS_PTC v_IMS2 := null;
+timer t GuardTimer := int2float(300);
+vJMSl := IMS PTC.create alive;
+LMTCJMS_CreateMapAndConnectPTCs_EUTRA(v_IMS 1, v_IMS2);
+vJMS l.start(CTC_12_21JMS());
+t_GuardTimer.start;
+f_MTC_IMS_MainLoop(t_GuardTimer);
+}
+以上代码创建了 MTC并调用相应PTC的执行测试例。首先，需要显式创 建测试成分IMS_PTC、IP_PTC和EUTRA_PTC,设置时间阈值。测试例开始执 行时，首先通过EUTRA_PTC接入核心网，通过IP_PTC转发值IMS_PTC,最 后由IMS_PTC负责与UE进行信令交互。各测试成分之间的关系如3.2节图。 fLTC_12_21_IMS()是视频主叫测试例的主体函数，内部流程以函数方式简要描述。
+第一组函数执行测试例流程的初始化到专用承载的建立，具体如下： f_IMS_CC_StartCall(IPCAN_MO_VideoCall);
+LIMS_MOCallSetup_Video_Step2(C25); f^IMS_MOCallSetup_Video_Step3_4(C25, v lnviteRequestWithSdp); f_IMS_CC_TriggerDedicatedBearerActivation(IPCAN_MOVideoCall);
+其中函数 fJMS_CC_StartCall(IPCAN_MO_VideoCal 1)初始化以及开启 MO 或者MT通话，函数nMS_MOCallSetup_Video_Step2()发起视频主叫的信令的 第二步，其中实参C25表示该参数按照3GPP TS34.229-1 Annex C.25的INVITE 消息定义的，函数 fJMS_MOCallSetup_Video_Step3_4()按照 3GPP TS34.229-1 Annex C.25 来配置 183 Session Progress (实参 v_InviteRequestWithSdp)的消息。 f_IMS_CC_TriggerDedicatedBearerActivation()触发 IPCAN 激活第二个 PDP 上下 文并建立专用承载。
+第二组函数从建立专用EPS承载到测试例结束。具体如下： f_IMS_MOCallSetup_AnnexC25_Steps5_13(v_InviteRequestWithSdp,v_Messa geHeader_Response 183);
+OMS_CallReleaseMO(v_InviteRequest);
+其中，函数 f_IMS_MOCallSetup_AnnexC25_Steps5_l 3 ()执行测试例的第五 步接收上行的ACK,且所有消息参数参考3GPPTS34.229-1 Annex C.25,即从专 用EPS承载建立到会话建立完成，函数口MS_CallReleaseMO()处理终端发起的 挂机请求。同样，在这些函数执行完成之后还会执行上一节所列举的函数 JIMS_TestBody_Set,参数为fhlse,再执行测试例结束通用流程函数，参数为 IPCAN_MO_VideoCall。
+下面的图3-10是视频主叫测试例的执行流程：
+图3-10视频主叫测试例实现流程

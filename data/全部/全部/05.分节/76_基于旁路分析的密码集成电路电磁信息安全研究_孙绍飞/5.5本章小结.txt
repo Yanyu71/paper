@@ -1,0 +1,45 @@
+5.5本章小结
+硬件木马正在逐渐成为密码集成电路一种严重的威胁，为了掌握硬件木马的 特性，本章分析了硬件木马电磁泄漏机理，设计了敏感信息泄露和降低性能两种 硬件木马，并在此基础之上提出一种基于迁移学习的电磁旁路硬件木马检测框架, 将迁移学习引入到密码集成电路的硬件木马检测当中，利用迁移学习从源域学习 到的知识迁移到目标域，在同等准确率下节省训练时间和解决数据不足的问题。 通过连续小波变换对采集到的原始电磁发射信号进行处理，获得其时频信息并对 时频信息提取电磁指纹然后进行检测分类。同时还提出了一种将迁移学习和 SVM相结合的方式来进一步改善检测分类效果，称之为CNN+SVM网络，通过 将迁移学习的卷积神经网络的区分器替换成SVM区分器来进行分类检测，利用 卷积神经网络来提取硬件木马的电磁发射指纹差异，SVM对其进行检测区分， 从而实现了更好的分类效果。
+110
+本章参考文献
+[1]	Sharma R, Rathor V S, Shanna G, et al. A new hardware Trojan detection technique using deep convolutional neural network [J]. Integration, 2021, 79: 111.
+[2]苏静.基于分类决策的侧信道硬件木马检测方法研究[D].天津大学,2017.
+[3]郭晓轩.电路电磁辐射模型在硬件木马检测中的应用[D].河北工业大学, 2019.
+[4]	Zhang J, Yuan F, Wei L, et al. VeriTrust: Verification for hardware trust [J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2015, 34(7): 1148-1161.
+[5]	Guo X, Dutta R G, Mishra P, et al. Scalable SoC trust verification using integrated theorem proving and model checking [A]. //2016 IEEE International Symposium on Hardware Oriented Security and Trust (HOST) [C]: IEEE 2016:124-129.
+[6]	Rathmair M, Schupfer F, Krieg C. Applied formal methods for hardware Trojan detection [A]. // 2014 IEEE International Symposium on Circuits and Systems (ISCAS) [C]: IEEE 2014:169-172.
+[7]	Hu W, Mao B, Oberg J, et al. Detecting hardware trojans with gate-level information-flow tracking [J]. Computer, 2016,49(8): 44-52.
+[8]胡伟，王馨慕.硬件安全威胁与防范[Z].西安；西安电子科技大学出版社. 2019
+[9]覃皓.FPGA硬件木马检测的关键技术研究[D].电子科技大学,2019.
+[10]	Bao C, Xie Y, Liu Y et al. Reverse engineering-based hardware trojan detection [M]. The Hardware Trojan War. Springer. 2018: 269-288.
+[11]	Faezi S, Yasaei R, Barua A, et al. Brain-inspired golden chip free hardware trojan detection [J]. IEEE Transactions on Information Forensics and Security, 2021,16: 2697-2708.
+[12]	Tehranipoor M, Sahnani H, Zhang X. Integrated Circuit Authentication [M]. Berlin: Springer 2018.
+[13]解啸天.硬件木马设计与特征分析技术研究[D].天津大学,2018.
+[14]	Xue M, Gu C5 Liu W, et al. Ten years of hardware Trojans: a survey from the attacker's perspective [J]. let Computers and Digital Techniques, 2020,14(6): 231246.
+[15]	Huang Z5 Wang Q, Chen Y, et al. A Survey on Machine Learning Against Hardware in
+Trojan Attacks: Recent Advances and Challenges [J]. IEEE Access, 2020, 8(99): 1079640826.
+[16]	Liakos K G, Georgakilas G K, Moustakidis S, et al. Conventional and machine learning approaches as countermeasxires against hardware trojan attacks [J]. Microprocessors and Microsystems, 2020, 79.
+[17]	Shakya B, He T, Salmani H, et at Benchmarking of hardware trojans and maliciously affected circuits [J]. Journal of Hardware and Systems Security, 2017, 1(1): 85-102.
+[18]	Tehranipoor M, Koushanfar F. A Survey of Hardware Trojan Taxonomy and Detection [J]. IEEE Design and Test of Computers, 2010, 27(1): 10-25.
+[19]	He J, Zhao Y Guo X, et al. Hardware Trojan Detection Through Chip-Free Electromagnetic Side-Channel Statistical Analysis [J]. IEEE Transactions on Very Large Scale Integration Systems, 2017, PP(10): 1-10.
+[20]唐永康，胡星，苏颂，等.用于硬件木马检测的电磁辐射分析方法研究[J]. 网络与信息安全学报,2021, 7(02): 43-56.
+[21]杨强，张宇，戴文渊，潘嘉林.迁移学习[M].北京：机械工业出版社，2020.
+[22]	Lecun Y Bengio Y Convolutional Networks for Images, Speech, and Time-Series [J]. Handbook of Brain Theory & Neural Networks, 1995: 255-258.
+[23]	Simonyan K, Zisserman A. Very deep convolutional networks for large-scale image recognition [J]. arXiv preprint arXiv:14091556,2014.
+[24]杨哂哂.时频分析方法的总结与比较[D].华东师范大学,2009.
+[25]	Combes J M, Grossmann A, Tchamitchian P. Mvelets: Time-Frequency Methods and Phase Space [J]. The Journal of the Acoustical Society of America, 1989,-1(5): 2477-2478.
+[26]	Daubechies I.小波十讲[M].北京：人民邮电出版社，2004.
+[2刀 Ceravolo R・ Time-Frequency Analysis [M]. Encyclopedia of Structural Health Monitoring, 2009.
+[28]	Wyien R D. The Illustrated Wavelet Transform Handbook [J]. Biomedical Instrumentation & Technology, 2004, 38(4): 298-298.
+[29]	Polikar R. The wavelet tutorial [Z]. 1996
+[30]	Lilly J M, Olhede S C. Generalized Morse wavelets as a superfamily of analytic wavelets [J]. IEEE Transactions on Signal Processing, 2012, 60(11): 6036-6041.
+[31]	Lilly J M. Element analysis: a wavelet-based method for analysing time-localized events in noisy time series [J]. Proceedings of the Royal Society A: Mathematical,
+112
+Physical and Engineering Sciences, 2017,473(2200): 20160776.
+[32]	Cortes C, Wpnik V. Support-Vector Networks [J]. Machine Learning, 1995,20(3): 273-297.
+[33]	Hsu C W, Chang C C, Lin C J. A Practical Guide to Support Vector Classication [J]. 2003: 1396-1400.
+[34]周志华.机器学习[M].清华：清华大学出版社，2016.
+[35]李航.统计学习方法[M],清华：清华大学出版社，2012.
+[36]	Trust-Hub [Z]. https :〃www.trust-hub.org/.
+[37]黄钊.嵌入式SoC中硬件木马检测与安全设计防御关键技术研究[D].西安 电子科技大学,2020.
+113

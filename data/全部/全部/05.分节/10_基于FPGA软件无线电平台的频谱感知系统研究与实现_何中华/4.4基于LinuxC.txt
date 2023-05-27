@@ -1,0 +1,5 @@
+4.4基于LinuxC
+频谱感知FPGA处理子系统与PC机的接口程序在Host Server的PC_Server 程序中完成。Host PC机的环境为Linux OS, PC Server与控制系统的firmware 通过以太网Socket进行数据传输，PC Server作为Socket连接的Server监听端 口,而firmware程序作为Socket连接的Client发起连接请求。控制系统的firmware 和PC_Server中均为发送数据/接收数据建立一个队列，用于缓冲接收到的数据， 尤其是控制系统的finnware程序，由于Microblaze中使用的是Lwip协议进行以 太网传输，其速率远不如百兆以太网的速率，所以需要一个队列暂时缓冲接收到 的感知数据，并控制保证数据的不溢出和跳频发生的时间点。
+基于Linux的Host Server控制子系统的设计框图如图4-26：
+图4-26基于Linux的Host Server控制子系统框图
+图中可以看出，Host Server共需要处理来自两个Client的Socket请求，一个 是FPGA开发板，另一个是Matlab程序处理模块。FPGA开发板会在初始化时就 与Host Server建立一个长连接并与系统运行过程中保持连接不断，FPGA与Host Server的数据传输以帧为单位传输，每个帧包括6000个32bit的频谱均值能量数 据，和一个32bit的帧头，每个帧数据作为一个独立的单元经过解包去除帧头之 后，进行频谱能量的重新拼接，拼接为频谱轴上连续的一段60MHz频谱信号， 然后作为一个单元存储在数据队列中。而Matlab程序每次与Host Server的通信 都会建立一次Socket连接，从数据队里中取走一个帧的数据，然后断开Socket 连接，依此循环往复，一帧一帧的借助Host Server从FPGA开发板获取频谱能量 数据。

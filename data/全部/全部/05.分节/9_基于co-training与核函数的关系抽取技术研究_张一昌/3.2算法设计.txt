@@ -1,0 +1,27 @@
+3.2算法设计
+这一节主要介绍算法流程中的核心模块及函数，并加上一些例子辅以说明， 帮助更好地阐述算法。
+假设本文还是抽取姓名-出生地这个关系，为便于分析简单，初始种子对为
+< Obama, Honolulu > ,检测到一个句子：Barack Obama was bom in Honolulu.
+通过这个句子，本文就能够得到表征原始种子对的模板，伪代码，见图3-7。
+Containing Relation Extraction Procedure：
+in: seeds S
+in: all sentences Sent (retrieve after each iteration) . out: patterns P out: entity pairs EP add S to EP
+1.While( iteration < N暗瞅)
+2.foreach s e EP do
+3.foreach sent € Sent do
+4.patterns.add(GeneratePattern(s,sent))
+5.foreach pattern e patterns do
+6.p_score - EvaluatePatternfpattern, EP)
+7.sort patterns by p_$core
+8.add top np to P where p_score > 8窘
+9.foreach p € P do
+10.foreach sent e SeiU do
+11.seeds,add(GenerateSeed(p,sent)}
+12.foreach seed e seeds do
+13.s_score= EvaluateSeedfseed, P)
+14.sort seed by s_score
+15.add top 井4 to EP where s_score > S,
+图3-7核心算法伪代码
+伪代码里面有很多的细节没有进行说明，包括如何匹配实体字符序列，如确
+20
+定CoreNLP不进行命名实体识别的字符序列，以及系统中需要使用的依存树最 短路算法。

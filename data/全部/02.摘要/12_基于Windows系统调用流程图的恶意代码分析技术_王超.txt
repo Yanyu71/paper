@@ -1,0 +1,12 @@
+摘要
+当前恶意软件数量呈井喷式增长，但其中的大部分并非新生的恶 意软件，而是在原始恶意家族的基础上进行一系列异构变换而产生的 变种。在这些异构变换处理中，模糊化是较为常用的方法，本文将重 点对其进行讨论。模糊即是故意混淆代码，通过掩盖其目的或者它的 逻辑来防止篡改，阻止逆向工程。代码模糊技术被大量应用于恶意代 码中。通过对现有恶意代码进行修改，恶意代码的字节序列被模糊化， 基于签名的原始静态检测技术越发难以满足反病毒检测工作O本文在 大量分析恶意程序样本的基础上，深入研究恶意代码现有的分析技术, 提出了基于目标程序Windows API流程图的恶意代码检测系统（本文 称之为ACS）,并给出实验分析结果。本文主要完成了以下工作：
+1.提取和构建特征知识库。对样本集进行分析得到行为报告， 对样本进行反汇编，然后提取出汇编命令中调用的Windows API,并 将调用集映射为二元组，再构建二元组矩阵，并以此矩阵作为其特征。 将所得到的样本的Windows API调用信息添.加到数据库，在这步中对 API调用信息进行映射处理，将调用信息抽象化为对象和操作共同标 识的二元组，构建恶意样本特征知识库。
+2.基于目标程序Windows API流程图的恶意代码检测方法的设计 与实现。本文提出的检测方法提取了程序的语义层面的信息，一定程 度地克服了原始的静态检测方法的缺陷，与基于字节序列签名反病毒 检测技术相比具有一定的优势。
+关键词：恶意代码检测-代码模糊	Windows API	权值矩阵 图相似性比对
+WINDOWS API FLOW CHART-BASED TECHNOLOGY
+OF MALWARE DETECTION
+ABSTRACT
+Signature-based detection techniques hardly cover the requirements of anti-virus detection because they are syntactic-based. Large parts of malwares evolve from known malwares by using code obfuscation techniques like Metamorphic and Polymorphic, making newly generated malwares extremely sophisticated to be detected. This article is intended to handle problems that signature-based detection cannot well deal with by extracting their Windows API calling sequences which decipher their semantic. If the similarity of two matrices between the detected file and the malware family is within a threshold, the sample is reckoned as a variant of the malware family. In this paper, two sacrifices are made:
+1.Newly designed extraction of signature and generation of signature databases. Samples collected were analyzed to obtain their behavioral features. Then the samples are formatted into a two-tuple. Finally the two-tuples are organized which results in a database.
+2.A malware detection system based on Windows API. This paper proposed a method to extract semantic information of a sample, which conquer the shortcomings of existing static detection methods to some extent.
+KEYWORDS: malware detection code obfiiscation weight matrix Windows API similarity comparison

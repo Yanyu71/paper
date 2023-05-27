@@ -1,0 +1,1104 @@
+﻿{
+    "knowledge_points": [
+        {"title": "移动通信系统的发展", "en": "Development of Mobile Communication Systems"},
+        {"title": "第一代无线通信系统", "en": "First Generation Wireless Communication System"},
+        {"title": "第二代无线通信系统", "en": "Second Generation Wireless Communication System"},
+        {"title": "第三代移动通信系统", "en": "Third Generation Mobile Communication System"},
+        {"title": "LTE信道估计算法研究现状", "en": "Research Status of LTE Channel Estimation Algorithm"}
+    ],
+    "relations": [
+        {"source": "移动通信系统的发展", "target": "第一代无线通信系统", "type": "包含"},
+        {"source": "移动通信系统的发展", "target": "第二代无线通信系统", "type": "包含"},
+        {"source": "移动通信系统的发展", "target": "第三代移动通信系统", "type": "包含"},
+        {"source": "移动通信系统的发展", "target": "LTE信道估计算法研究现状", "type": "包含"},
+        {"source": "第一代无线通信系统", "target": "频分多址(FDMA)技术", "type": "采用"},
+        {"source": "第一代无线通信系统", "target": "大区制", "type": "采用"},
+        {"source": "第一代无线通信系统", "target": "蜂窝网", "type": "提出"},
+        {"source": "第二代无线通信系统", "target": "GSM", "type": "代表性标准"},
+        {"source": "第二代无线通信系统", "target": "IS-95", "type": "基于CDMA的数字蜂窝网络"},
+        {"source": "第二代无线通信系统", "target": "自适应语音编码技术", "type": "采用"},
+        {"source": "第三代移动通信系统", "target": "宽带通信业务", "type": "提供"},
+        {"source": "第三代移动通信系统", "target": "WCDMA", "type": "IMT-2000无线通信系统标准"},
+        {"source": "第三代移动通信系统", "target": "CDMA2000", "type": "IMT-2000无线通信系统标准"},
+        {"source": "第三代移动通信系统", "target": "TD-SCDMA", "type": "IMT-2000无线通信系统标准"},
+        {"source": "第三代移动通信系统", "target": "LTE", "type": "标准化制定工作"},
+        {"source": "LTE信道估计算法研究现状", "target": "导频信号", "type": "基础"},
+        {"source": "LTE信道估计算法研究现状", "target": "LS信道估计算法", "type": "基于导频的信道估计算法"},
+        {"source": "LTE信道估计算法研究现状", "target": "DFT变换域去噪的信道估计算法", "type": "基于导频的信道估计算法"},
+        {"source": "LTE信道估计算法研究现状", "target": "MMSE的信道估计算法", "type": "基于导频的信道估计算法"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LS估计", "en": "LS estimation"},
+        {"title": "基于MMSE准则的信道估计算法", "en": "MMSE-based channel estimation algorithm"},
+        {"title": "基于DFT的信道估计算法", "en": "DFT-based channel estimation algorithm"},
+        {"title": "VCFR信道估计算法", "en": "VCFR channel estimation algorithm"},
+        {"title": "差异化去噪策略", "en": "Differentiated denoising strategy"},
+        {"title": "升余弦窗函数", "en": "Raised cosine window function"},
+        {"title": "定点化方案", "en": "Fixed-point scheme"}
+    ],
+    "relations": [
+        {"source": "LS估计", "target": "基于DFT的信道估计算法", "type": "improve"},
+        {"source": "基于MMSE准则的信道估计算法", "target": "LS估计", "type": "compare"},
+        {"source": "基于DFT的信道估计算法", "target": "LS估计", "type": "compare"},
+        {"source": "基于DFT的信道估计算法", "target": "VCFR信道估计算法", "type": "improve"},
+        {"source": "VCFR信道估计算法", "target": "差异化去噪策略", "type": "improve"},
+        {"source": "VCFR信道估计算法", "target": "升余弦窗函数", "type": "use"},
+        {"source": "定点化方案", "target": "VCFR信道估计算法", "type": "use"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LTE系统", "en": "LTE System"},
+        {"title": "OFDM原理", "en": "OFDM Principle"},
+        {"title": "DFTS-OFDM", "en": "DFTS-OFDM"},
+        {"title": "帧结构", "en": "Frame Structure"},
+        {"title": "导频设计", "en": "Pilot Design"}
+    ],
+    "relations": [
+        {"source": "LTE系统", "target": "OFDM原理", "type": "包含关系"},
+        {"source": "LTE系统", "target": "DFTS-OFDM", "type": "包含关系"},
+        {"source": "LTE系统", "target": "帧结构", "type": "包含关系"},
+        {"source": "帧结构", "target": "导频设计", "type": "包含关系"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LTE系统目标及关键技术",
+            "en": "LTE System Goals and Key Technologies"
+        },
+        {
+            "title": "LTE与IEEE802.16e关键技术对比",
+            "en": "Comparison of Key Technologies between LTE and IEEE802.16e"
+        },
+        {
+            "title": "OFDM原理",
+            "en": "OFDM Principle"
+        },
+        {
+            "title": "SC-FDMA基本原理",
+            "en": "SC-FDMA Basic Principle"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LTE系统目标及关键技术",
+            "target": "LTE与IEEE802.16e关键技术对比",
+            "type": "对比"
+        },
+        {
+            "source": "LTE与IEEE802.16e关键技术对比",
+            "target": "OFDM原理",
+            "type": "涉及"
+        },
+        {
+            "source": "LTE与IEEE802.16e关键技术对比",
+            "target": "SC-FDMA基本原理",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "SC-FDMA信号的生成方法",
+            "en": "Generation method of SC-FDMA signal"
+        },
+        {
+            "title": "LTE上行信号产生中采用的是频域生成方法",
+            "en": "Frequency domain generation method is used in LTE uplink signal generation"
+        },
+        {
+            "title": "DFT-S-OFDM产生信号的过程",
+            "en": "Signal generation process of DFT-S-OFDM"
+        },
+        {
+            "title": "集中式映射与分布式映射",
+            "en": "Centralized mapping and distributed mapping"
+        },
+        {
+            "title": "LTE帧结构设计",
+            "en": "LTE frame structure design"
+        },
+        {
+            "title": "LTE帧结构类型1",
+            "en": "LTE frame structure type 1"
+        },
+        {
+            "title": "LTE帧结构类型2",
+            "en": "LTE frame structure type 2"
+        },
+        {
+            "title": "LTE上行传输资源块",
+            "en": "LTE uplink transmission resource block"
+        },
+        {
+            "title": "LTE系统上行信道导频信号设计",
+            "en": "Design of uplink channel reference signals in LTE system"
+        },
+        {
+            "title": "上行参考信号设计",
+            "en": "Uplink reference signal design"
+        },
+        {
+            "title": "ZadofF-Chu序列",
+            "en": "ZadofF-Chu sequence"
+        },
+        {
+            "title": "PUSCH的解调参考信号",
+            "en": "Demodulation reference signal of PUSCH"
+        }
+    ],
+    "relations": [
+        {
+            "source": "SC-FDMA信号的生成方法",
+            "target": "LTE上行信号产生中采用的是频域生成方法",
+            "type": "包含"
+        },
+        {
+            "source": "LTE上行信号产生中采用的是频域生成方法",
+            "target": "DFT-S-OFDM产生信号的过程",
+            "type": "包含"
+        },
+        {
+            "source": "DFT-S-OFDM产生信号的过程",
+            "target": "集中式映射与分布式映射",
+            "type": "包含"
+        },
+        {
+            "source": "LTE帧结构设计",
+            "target": "LTE帧结构类型1",
+            "type": "包含"
+        },
+        {
+            "source": "LTE帧结构设计",
+            "target": "LTE帧结构类型2",
+            "type": "包含"
+        },
+        {
+            "source": "LTE上行传输资源块",
+            "target": "LTE系统上行信道导频信号设计",
+            "type": "包含"
+        },
+        {
+            "source": "LTE系统上行信道导频信号设计",
+            "target": "上行参考信号设计",
+            "type": "包含"
+        },
+        {
+            "source": "上行参考信号设计",
+            "target": "ZadofF-Chu序列",
+            "type": "包含"
+        },
+        {
+            "source": "上行参考信号设计",
+            "target": "PUSCH的解调参考信号",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LTE系统的标准化过程和设计时的主要性能指标", "en": "Standardization process and main performance indicators in LTE system design"},
+        {"title": "OFDM和SC-FDMA的基本原理及其在LTE上行链路中的应用", "en": "Basic principles of OFDM and SC-FDMA and their application in LTE uplink"},
+        {"title": "TD-LTE上行信道中的信道估计与导频信号", "en": "Channel estimation and pilot signals in TD-LTE uplink channel"},
+        {"title": "LTE的帧结构设计和导频信号的设计", "en": "Frame structure design and pilot signal design in LTE"},
+        {"title": "常用的LTE上行信道估计算法，如LS算法、基于MMSE准则的信道估计算法", "en": "Common LTE uplink channel estimation algorithms, such as LS algorithm and MMSE-based channel estimation algorithm"},
+        {"title": "改进的LTE上行信道估计算法，如基于DFT变换域去噪的信道估计算法、简化的LMMSE算法、基于添加虚信道冲激响应的改进算法", "en": "Improved LTE uplink channel estimation algorithms, such as DFT-based denoising channel estimation algorithm, simplified LMMSE algorithm, and improved algorithm based on adding virtual channel impulse response"},
+        {"title": "拉格朗日内插、基于低通滤波的内插算法以及基于DFT的内插算法", "en": "Lagrange interpolation, low-pass filter-based interpolation algorithm, and DFT-based interpolation algorithm"}
+    ],
+    "relations": [
+        {"source": "LTE系统的标准化过程和设计时的主要性能指标", "target": "OFDM和SC-FDMA的基本原理及其在LTE上行链路中的应用", "type": "应用"},
+        {"source": "OFDM和SC-FDMA的基本原理及其在LTE上行链路中的应用", "target": "TD-LTE上行信道中的信道估计与导频信号", "type": "应用"},
+        {"source": "TD-LTE上行信道中的信道估计与导频信号", "target": "LTE的帧结构设计和导频信号的设计", "type": "应用"},
+        {"source": "TD-LTE上行信道中的信道估计与导频信号", "target": "常用的LTE上行信道估计算法，如LS算法、基于MMSE准则的信道估计算法", "type": "应用"},
+        {"source": "常用的LTE上行信道估计算法，如LS算法、基于MMSE准则的信道估计算法", "target": "改进的LTE上行信道估计算法，如基于DFT变换域去噪的信道估计算法、简化的LMMSE算法、基于添加虚信道冲激响应的改进算法", "type": "应用"},
+        {"source": "LTE的帧结构设计和导频信号的设计", "target": "拉格朗日内插、基于低通滤波的内插算法以及基于DFT的内插算法", "type": "应用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LS估计",
+            "en": "LS estimation"
+        },
+        {
+            "title": "MMSE估计",
+            "en": "MMSE estimation"
+        },
+        {
+            "title": "基于DFT变换域去噪的信道估计算法",
+            "en": "Channel estimation algorithm based on DFT transform domain denoising"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LS估计",
+            "target": "MMSE估计",
+            "type": "折衷"
+        },
+        {
+            "source": "LS估计",
+            "target": "基于DFT变换域去噪的信道估计算法",
+            "type": "基础"
+        },
+        {
+            "source": "MMSE估计",
+            "target": "基于DFT变换域去噪的信道估计算法",
+            "type": "基础"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "频域", "en": "Frequency domain"},
+        {"title": "时域", "en": "Time domain"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "DFT", "en": "Discrete Fourier Transform"},
+        {"title": "LS估计", "en": "Least Squares estimation"},
+        {"title": "LMMSE算法", "en": "Linear Minimum Mean Square Error algorithm"},
+        {"title": "自相关矩阵", "en": "Autocorrelation matrix"},
+        {"title": "SVD", "en": "Singular Value Decomposition"},
+        {"title": "块分解", "en": "Block decomposition"}
+    ],
+    "relations": [
+        {"source": "频域", "target": "时域", "type": "转换"},
+        {"source": "信道估计", "target": "DFT", "type": "基于"},
+        {"source": "信道估计", "target": "LS估计", "type": "基于"},
+        {"source": "信道估计", "target": "LMMSE算法", "type": "基于"},
+        {"source": "LMMSE算法", "target": "自相关矩阵", "type": "使用"},
+        {"source": "LMMSE算法", "target": "SVD", "type": "基于"},
+        {"source": "LMMSE算法", "target": "块分解", "type": "基于"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LMMSE算法", "en": "LMMSE algorithm"},
+        {"title": "SVD分解", "en": "SVD decomposition"},
+        {"title": "块分解", "en": "Block decomposition"},
+        {"title": "自相关矩阵", "en": "Autocorrelation matrix"},
+        {"title": "循环矩阵", "en": "Cyclic matrix"},
+        {"title": "FFT", "en": "FFT"},
+        {"title": "功率谱", "en": "Power spectrum"},
+        {"title": "SNR", "en": "SNR"},
+        {"title": "适应性", "en": "Adaptivity"},
+        {"title": "运算量", "en": "Computational complexity"},
+        {"title": "矩阵求逆", "en": "Matrix inversion"},
+        {"title": "滤波矩阵", "en": "Filtering matrix"},
+        {"title": "DFT", "en": "DFT"},
+        {"title": "信道估计", "en": "Channel estimation"}
+    ],
+    "relations": [
+        {"source": "LMMSE算法", "target": "SVD分解", "type": "基于"},
+        {"source": "LMMSE算法", "target": "块分解", "type": "基于"},
+        {"source": "SVD分解", "target": "酉矩阵", "type": "需要"},
+        {"source": "块分解", "target": "运算量", "type": "牺牲"},
+        {"source": "自相关矩阵", "target": "循环矩阵", "type": "具有"},
+        {"source": "循环矩阵", "target": "FFT", "type": "计算"},
+        {"source": "功率谱", "target": "SNR", "type": "计算"},
+        {"source": "LS估计", "target": "CFR", "type": "输出"},
+        {"source": "MST算法", "target": "时域", "type": "变换"},
+        {"source": "MST算法", "target": "主要径", "type": "得到"},
+        {"source": "LS估计", "target": "SNR", "type": "计算"},
+        {"source": "Q矩阵", "target": "时域信号功率", "type": "估计"},
+        {"source": "Q矩阵", "target": "MST径", "type": "选择"},
+        {"source": "Q矩阵", "target": "LS估计", "type": "处理"},
+        {"source": "高SNR", "target": "DFT", "type": "退化为"},
+        {"source": "高SNR", "target": "信道估计", "type": "影响"},
+        {"source": "小RB", "target": "F-LMMSE算法", "type": "适用于"},
+        {"source": "大RB", "target": "块分解", "type": "适用于"},
+        {"source": "滤波矩阵", "target": "小块划分", "type": "采用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LS估计", "en": "LS estimation"},
+        {"title": "F-LMMSE算法", "en": "F-LMMSE algorithm"},
+        {"title": "SVD的LMMSE算法", "en": "SVD-based LMMSE algorithm"},
+        {"title": "块分解的LMMSE算法", "en": "Block-decomposition-based LMMSE algorithm"},
+        {"title": "虚信道冲激响应拓展的改进算法", "en": "Improved algorithm based on virtual channel impulse response extension"},
+        {"title": "传统基于DFT估计算法的\"CFR边缘效应\"", "en": "CFR edge effect of traditional DFT-based estimation algorithm"},
+        {"title": "基于虚频域信道冲击响应(VCFR)拓展的信道估计算法", "en": "Channel estimation algorithm based on virtual frequency domain channel impulse response (VCFR) extension"},
+        {"title": "MST去噪算法", "en": "MST denoising algorithm"}
+    ],
+    "relations": [
+        {"source": "LS估计", "target": "F-LMMSE算法", "type": "优于"},
+        {"source": "F-LMMSE算法", "target": "SVD的LMMSE算法", "type": "优于"},
+        {"source": "F-LMMSE算法", "target": "块分解的LMMSE算法", "type": "优于"},
+        {"source": "传统基于DFT估计算法的\"CFR边缘效应\"", "target": "基于虚频域信道冲击响应(VCFR)拓展的信道估计算法", "type": "解决"},
+        {"source": "基于虚频域信道冲击响应(VCFR)拓展的信道估计算法", "target": "MST去噪算法", "type": "结合使用"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "VCFR信道估计算法",
+            "en": "VCFR Channel Estimation Algorithm"
+        },
+        {
+            "title": "LTE上行链路",
+            "en": "LTE Uplink"
+        },
+        {
+            "title": "CP长度",
+            "en": "CP Length"
+        },
+        {
+            "title": "时域信道冲击响应",
+            "en": "Time Domain Channel Impulse Response"
+        },
+        {
+            "title": "多径传播",
+            "en": "Multipath Propagation"
+        },
+        {
+            "title": "频域信道冲击响应",
+            "en": "Frequency Domain Channel Impulse Response"
+        },
+        {
+            "title": "LS信道估计",
+            "en": "LS Channel Estimation"
+        },
+        {
+            "title": "虚子载波",
+            "en": "Virtual Subcarrier"
+        },
+        {
+            "title": "频域加窗",
+            "en": "Frequency Domain Windowing"
+        },
+        {
+            "title": "离散傅里叶反变换",
+            "en": "Discrete Fourier Transform Inverse"
+        },
+        {
+            "title": "差异化门限去噪策略",
+            "en": "Differential Threshold Denoising Strategy"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LTE上行链路",
+            "target": "CP长度",
+            "type": "包含"
+        },
+        {
+            "source": "LTE上行链路",
+            "target": "VCFR信道估计算法",
+            "type": "相关"
+        },
+        {
+            "source": "时域信道冲击响应",
+            "target": "多径传播",
+            "type": "包含"
+        },
+        {
+            "source": "多径传播",
+            "target": "时域信道冲击响应",
+            "type": "包含"
+        },
+        {
+            "source": "频域信道冲击响应",
+            "target": "LS信道估计",
+            "type": "相关"
+        },
+        {
+            "source": "LS信道估计",
+            "target": "频域信道冲击响应",
+            "type": "相关"
+        },
+        {
+            "source": "虚子载波",
+            "target": "频域信道冲击响应",
+            "type": "包含"
+        },
+        {
+            "source": "频域加窗",
+            "target": "频域信道冲击响应",
+            "type": "相关"
+        },
+        {
+            "source": "离散傅里叶反变换",
+            "target": "频域信道冲击响应",
+            "type": "相关"
+        },
+        {
+            "source": "差异化门限去噪策略",
+            "target": "频域信道冲击响应",
+            "type": "相关"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "MST算法",
+            "en": "MST algorithm"
+        },
+        {
+            "title": "J值",
+            "en": "J value"
+        },
+        {
+            "title": "信道估计算法",
+            "en": "Channel estimation algorithm"
+        },
+        {
+            "title": "CIR",
+            "en": "Channel Impulse Response"
+        },
+        {
+            "title": "VCFR",
+            "en": "Virtual Carrier Frequency Response"
+        },
+        {
+            "title": "OFDM系统",
+            "en": "OFDM system"
+        },
+        {
+            "title": "等效CP长度",
+            "en": "Equivalent CP length"
+        },
+        {
+            "title": "噪声功率",
+            "en": "Noise power"
+        },
+        {
+            "title": "去噪门限",
+            "en": "Noise reduction threshold"
+        },
+        {
+            "title": "ETU信道模型",
+            "en": "ETU channel model"
+        },
+        {
+            "title": "EPA信道模型",
+            "en": "EPA channel model"
+        },
+        {
+            "title": "EVA信道模型",
+            "en": "EVA channel model"
+        }
+    ],
+    "relations": [
+        {
+            "source": "MST算法",
+            "target": "J值",
+            "type": "需要设定认为有效径与多径的比例丿值"
+        },
+        {
+            "source": "MST算法",
+            "target": "CIR",
+            "type": "统计CIR中幅值最大的丿个径"
+        },
+        {
+            "source": "MST算法",
+            "target": "噪声功率",
+            "type": "统计CIR中幅值最大的丿个径，其余认为是噪声去除"
+        },
+        {
+            "source": "J值",
+            "target": "去噪性能",
+            "type": "影响非常大"
+        },
+        {
+            "source": "J值",
+            "target": "信道条件",
+            "type": "在变化的信道条件下，很难去设定一个具有普遍适用性的J值"
+        },
+        {
+            "source": "VCFR",
+            "target": "信道估计算法",
+            "type": "适合基于VCFR拓展的信道估计算法的差异化去噪策略"
+        },
+        {
+            "source": "OFDM系统",
+            "target": "CIR",
+            "type": "可认为信道冲击响应(CIR)的长度小于循环前缀的长度"
+        },
+        {
+            "source": "OFDM系统",
+            "target": "等效CP长度",
+            "type": "在传统的基于DFT去噪的信道估计算法中都把CIR中位置大于等效CP长度£劉,宀的信道估计值置0来完成去噪"
+        },
+        {
+            "source": "VCFR",
+            "target": "CIR",
+            "type": "CIR有效径相比不进行VCFR拓展情形会有一个明显的延拓"
+        },
+        {
+            "source": "VCFR",
+            "target": "等效CP长度",
+            "type": "为保证所有信号有效径都在等效CP长度内，需要采用一个拓展的等效CP长度"
+        },
+        {
+            "source": "噪声功率",
+            "target": "去噪门限",
+            "type": "采用噪声功率平均值作为门限"
+        },
+        {
+            "source": "去噪门限",
+            "target": "Front区域",
+            "type": "采用噪声功率平均值作为门限"
+        },
+        {
+            "source": "去噪门限",
+            "target": "Rear区域",
+            "type": "门限设定为2倍"
+        },
+        {
+            "source": "ETU信道模型",
+            "target": "信道估计算法",
+            "type": "用于全方位的评估基于VCFR拓展的信道估计算法性能"
+        },
+        {
+            "source": "EPA信道模型",
+            "target": "信道估计算法",
+            "type": "用于全方位的评估基于VCFR拓展的信道估计算法性能"
+        },
+        {
+            "source": "EVA信道模型",
+            "target": "信道估计算法",
+            "type": "用于全方位的评估基于VCFR拓展的信道估计算法性能"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "仿真参数表",
+            "en": "Simulation parameter table"
+        },
+        {
+            "title": "信道估计算法的MSE指标",
+            "en": "MSE index of channel estimation algorithm"
+        },
+        {
+            "title": "改进VCFR算法与原有VCFR算法对比分析",
+            "en": "Comparison analysis between improved VCFR algorithm and original VCFR algorithm"
+        },
+        {
+            "title": "信道估计算法的性能评估",
+            "en": "Performance evaluation of channel estimation algorithm"
+        },
+        {
+            "title": "基于VCFR拓展信道估计算法",
+            "en": "Channel estimation algorithm based on VCFR extension"
+        },
+        {
+            "title": "LS算法",
+            "en": "LS algorithm"
+        },
+        {
+            "title": "DFT算法",
+            "en": "DFT algorithm"
+        },
+        {
+            "title": "F-LMMSE算法",
+            "en": "F-LMMSE algorithm"
+        },
+        {
+            "title": "Raw-BER指标",
+            "en": "Raw-BER index"
+        }
+    ],
+    "relations": [
+        {
+            "source": "仿真参数表",
+            "target": "信道估计算法的MSE指标",
+            "type": "包含"
+        },
+        {
+            "source": "信道估计算法的MSE指标",
+            "target": "改进VCFR算法与原有VCFR算法对比分析",
+            "type": "涉及"
+        },
+        {
+            "source": "改进VCFR算法与原有VCFR算法对比分析",
+            "target": "信道估计算法的性能评估",
+            "type": "涉及"
+        },
+        {
+            "source": "信道估计算法的性能评估",
+            "target": "基于VCFR拓展信道估计算法",
+            "type": "涉及"
+        },
+        {
+            "source": "信道估计算法的性能评估",
+            "target": "LS算法",
+            "type": "涉及"
+        },
+        {
+            "source": "信道估计算法的性能评估",
+            "target": "DFT算法",
+            "type": "涉及"
+        },
+        {
+            "source": "信道估计算法的性能评估",
+            "target": "F-LMMSE算法",
+            "type": "涉及"
+        },
+        {
+            "source": "信道估计算法的性能评估",
+            "target": "Raw-BER指标",
+            "type": "涉及"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LS算法", "en": "LS algorithm"},
+        {"title": "MMSE算法", "en": "MMSE algorithm"},
+        {"title": "DFT去噪算法", "en": "DFT denoising algorithm"},
+        {"title": "LMMSE算法", "en": "LMMSE algorithm"},
+        {"title": "FFT-LMMSE算法", "en": "FFT-LMMSE algorithm"},
+        {"title": "VCFR算法", "en": "VCFR algorithm"},
+        {"title": "数字信号处理器(DSP)", "en": "Digital Signal Processor (DSP)"}
+    ],
+    "relations": [
+        {"source": "LS算法", "target": "MMSE算法", "type": "折衷算法"},
+        {"source": "MMSE算法", "target": "LMMSE算法", "type": "基于自相关特性的算法"},
+        {"source": "DFT去噪算法", "target": "LMMSE算法", "type": "基于DFT变换域去噪的算法"},
+        {"source": "LMMSE算法", "target": "FFT-LMMSE算法", "type": "基于FFT变换的简化算法"},
+        {"source": "FFT-LMMSE算法", "target": "VCFR算法", "type": "基于频域平滑的算法"},
+        {"source": "VCFR算法", "target": "数字信号处理器(DSP)", "type": "实现算法的硬件"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "LTE上行接收处理",
+            "en": "LTE uplink reception processing"
+        },
+        {
+            "title": "上行信道估计",
+            "en": "Uplink channel estimation"
+        },
+        {
+            "title": "飞思卡尔公司的MSC8157平台",
+            "en": "Freescale's MSC8157 platform"
+        },
+        {
+            "title": "DSP芯片",
+            "en": "DSP chip"
+        },
+        {
+            "title": "MSC8157内核",
+            "en": "MSC8157 core"
+        },
+        {
+            "title": "存储",
+            "en": "Storage"
+        },
+        {
+            "title": "DMA",
+            "en": "DMA"
+        },
+        {
+            "title": "MAPLE",
+            "en": "MAPLE"
+        },
+        {
+            "title": "Turbo译码器",
+            "en": "Turbo decoder"
+        },
+        {
+            "title": "Turbo编码器",
+            "en": "Turbo encoder"
+        },
+        {
+            "title": "DFT/IDFT和FFT/IFFT处理",
+            "en": "DFT/IDFT and FFT/IFFT processing"
+        }
+    ],
+    "relations": [
+        {
+            "source": "LTE上行接收处理",
+            "target": "上行信道估计",
+            "type": "包含"
+        },
+        {
+            "source": "上行信道估计",
+            "target": "MSC8157平台",
+            "type": "实现于"
+        },
+        {
+            "source": "DSP芯片",
+            "target": "MSC8157平台",
+            "type": "应用于"
+        },
+        {
+            "source": "MSC8157平台",
+            "target": "存储",
+            "type": "包含"
+        },
+        {
+            "source": "MSC8157平台",
+            "target": "DMA",
+            "type": "包含"
+        },
+        {
+            "source": "MSC8157平台",
+            "target": "MAPLE",
+            "type": "包含"
+        },
+        {
+            "source": "MAPLE",
+            "target": "Turbo译码器",
+            "type": "包含"
+        },
+        {
+            "source": "MAPLE",
+            "target": "Turbo编码器",
+            "type": "包含"
+        },
+        {
+            "source": "MAPLE",
+            "target": "DFT/IDFT和FFT/IFFT处理",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MSC8157eFTPE简介", "en": "Introduction to MSC8157eFTPE"},
+        {"title": "eFTPE的FFT/IFFT/DFT/IDFT运算", "en": "FFT/IFFT/DFT/IDFT operations of eFTPE"},
+        {"title": "基于VCFR拓展的信道估计", "en": "Channel estimation based on VCFR extension"},
+        {"title": "eFTPE的数据结构", "en": "Data structure of eFTPE"},
+        {"title": "eFTPE的内部幅值缩放调整", "en": "Internal amplitude scaling adjustment of eFTPE"},
+        {"title": "LTE上行接收处理流程多核设计及PUSCH处理链路框架", "en": "Multi-core design of uplink reception processing and PUSCH processing chain framework in LTE"}
+    ],
+    "relations": [
+        {"source": "MSC8157eFTPE简介", "target": "eFTPE的FFT/IFFT/DFT/IDFT运算", "type": "包含"},
+        {"source": "MSC8157eFTPE简介", "target": "eFTPE的数据结构", "type": "包含"},
+        {"source": "eFTPE的FFT/IFFT/DFT/IDFT运算", "target": "基于VCFR拓展的信道估计", "type": "应用于"},
+        {"source": "eFTPE的数据结构", "target": "eFTPE的内部幅值缩放调整", "type": "包含"},
+        {"source": "LTE上行接收处理流程多核设计及PUSCH处理链路框架", "target": "MSC8157eFTPE简介", "type": "应用于"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "PUSCH接收处理链路框架",
+            "en": "PUSCH Reception Processing Chain Framework"
+        },
+        {
+            "title": "VCFR信道估计算法的DSP实现与优化",
+            "en": "DSP Implementation and Optimization of VCFR Channel Estimation Algorithm"
+        },
+        {
+            "title": "LS估计子模块设计",
+            "en": "Design of LS Estimation Submodule"
+        }
+    ],
+    "relations": [
+        {
+            "source": "PUSCH接收处理链路框架",
+            "target": "符号级设计",
+            "type": "包含"
+        },
+        {
+            "source": "PUSCH接收处理链路框架",
+            "target": "链路级设计",
+            "type": "包含"
+        },
+        {
+            "source": "PUSCH接收处理链路框架",
+            "target": "内核",
+            "type": "包含"
+        },
+        {
+            "source": "VCFR信道估计算法的DSP实现与优化",
+            "target": "VCFR信道估计整体设计",
+            "type": "包含"
+        },
+        {
+            "source": "VCFR信道估计算法的DSP实现与优化",
+            "target": "LS估计子模块详细设计",
+            "type": "包含"
+        },
+        {
+            "source": "LS估计子模块设计",
+            "target": "基本ZC序列产生函数",
+            "type": "包含"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "循环移位", "en": "Cyclic shift"},
+        {"title": "ZC序列", "en": "ZC sequence"},
+        {"title": "Ncs计算函数", "en": "Ncs calculation function"},
+        {"title": "LS计算函数", "en": "LS calculation function"},
+        {"title": "LS模块中使用控制结构体定义", "en": "Control structure definition used in LS module"},
+        {"title": "VCFR信道估计子模块设计", "en": "VCFR channel estimation submodule design"},
+        {"title": "eFTPE", "en": "eFTPE"}
+    ],
+    "relations": [
+        {"source": "循环移位", "target": "Ncs计算函数", "type": "包含"},
+        {"source": "ZC序列", "target": "Ncs计算函数", "type": "包含"},
+        {"source": "LS计算函数", "target": "LS模块中使用控制结构体定义", "type": "使用"},
+        {"source": "LS计算函数", "target": "VCFR信道估计子模块设计", "type": "后续处理"},
+        {"source": "VCFR信道估计子模块设计", "target": "eFTPE", "type": "使用"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "VCFR实现场景", "en": "VCFR Implementation Scenarios"},
+        {"title": "DFT/IDFT前后模块的强耦合性", "en": "Strong Coupling between DFT/IDFT Modules"},
+        {"title": "方式二", "en": "Method 2"},
+        {"title": "多用户场景", "en": "Multi-User Scenarios"},
+        {"title": "eFTPE", "en": "eFTPE"},
+        {"title": "信号量模式", "en": "Semaphore Mode"},
+        {"title": "VCFR主函数", "en": "VCFR Main Function"},
+        {"title": "信道估计", "en": "Channel Estimation"},
+        {"title": "LS估计输出", "en": "LS Estimation Output"},
+        {"title": "频域窗函数", "en": "Frequency Domain Window Function"},
+        {"title": "VCFR估计输出", "en": "VCFR Estimation Output"},
+        {"title": "定点化设计", "en": "Fixed-Point Design"},
+        {"title": "SC3850内核", "en": "SC3850 Kernel"},
+        {"title": "QPSK调制", "en": "QPSK Modulation"},
+        {"title": "LS模块", "en": "LS Module"},
+        {"title": "ZC序列产生", "en": "ZC Sequence Generation"},
+        {"title": "Trace工具", "en": "Trace Tool"}
+    ],
+    "relations": [
+        {"source": "VCFR实现场景", "target": "DFT/IDFT前后模块的强耦合性", "type": "related"},
+        {"source": "VCFR实现场景", "target": "方式二", "type": "related"},
+        {"source": "VCFR实现场景", "target": "多用户场景", "type": "related"},
+        {"source": "VCFR实现场景", "target": "eFTPE", "type": "related"},
+        {"source": "VCFR实现场景", "target": "信号量模式", "type": "related"},
+        {"source": "VCFR主函数", "target": "信道估计", "type": "subordinate"},
+        {"source": "信道估计", "target": "LS估计输出", "type": "subordinate"},
+        {"source": "信道估计", "target": "频域窗函数", "type": "subordinate"},
+        {"source": "信道估计", "target": "VCFR估计输出", "type": "subordinate"},
+        {"source": "VCFR估计输出", "target": "频域窗函数", "type": "related"},
+        {"source": "VCFR估计输出", "target": "定点化设计", "type": "related"},
+        {"source": "定点化设计", "target": "SC3850内核", "type": "related"},
+        {"source": "定点化设计", "target": "QPSK调制", "type": "related"},
+        {"source": "LS模块", "target": "ZC序列产生", "type": "subordinate"},
+        {"source": "LS模块", "target": "Trace工具", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Eox", "en": ""},
+        {"title": "locp_o", "en": ""},
+        {"title": "Eti&dx", "en": ""},
+        {"title": "CG;nl£", "en": ""},
+        {"title": "dellaM--3Quai'e", "en": ""},
+        {"title": "C_,L_»py", "en": ""},
+        {"title": "wi-iter", "en": ""},
+        {"title": "LS估计中eNbRxChanEstAgcalc函数耗时分析", "en": "Time consumption analysis of eNbRxChanEstAgcalc function in LS estimation"},
+        {"title": "CacheMiss数据", "en": "CacheMiss data"},
+        {"title": "空间换时间", "en": "Space for time"},
+        {"title": "DMA", "en": ""},
+        {"title": "cosn4on_goid_gen", "en": ""}
+    ],
+    "relations": [
+        {"source": "Eox", "target": "locp_o", "type": ""},
+        {"source": "Eox", "target": "Eti&dx", "type": ""},
+        {"source": "Eti&dx", "target": "CG;nl£", "type": ""},
+        {"source": "CG;nl£", "target": "dellaM--3Quai'e", "type": ""},
+        {"source": "dellaM--3Quai'e", "target": "C_,L_»py", "type": ""},
+        {"source": "wi-iter", "target": "LS估计中eNbRxChanEstAgcalc函数耗时分析", "type": ""},
+        {"source": "LS估计中eNbRxChanEstAgcalc函数耗时分析", "target": "CacheMiss数据", "type": ""},
+        {"source": "LS估计中eNbRxChanEstAgcalc函数耗时分析", "target": "空间换时间", "type": ""},
+        {"source": "空间换时间", "target": "DMA", "type": ""},
+        {"source": "cosn4on_goid_gen", "target": "LS估计中eNbRxChanEstAgcalc函数耗时分析", "type": ""}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "LS估计模块优化", "en": "Optimization of LS estimation module"},
+        {"title": "CacheMisses问题", "en": "CacheMisses problem"},
+        {"title": "AGU和ALU使用率", "en": "AGU and ALU utilization"},
+        {"title": "VCFR信道估计子模块的优化", "en": "Optimization of VCFR channel estimation submodule"},
+        {"title": "FFT和IFFT操作", "en": "FFT and IFFT operations"},
+        {"title": "复数乘法优化", "en": "Optimization of complex multiplication"},
+        {"title": "Timer探针设置", "en": "Timer probe settings"}
+    ],
+    "relations": [
+        {"source": "LS估计模块优化", "target": "CacheMisses问题", "type": "related"},
+        {"source": "LS估计模块优化", "target": "AGU和ALU使用率", "type": "related"},
+        {"source": "VCFR信道估计子模块的优化", "target": "FFT和IFFT操作", "type": "related"},
+        {"source": "VCFR信道估计子模块的优化", "target": "复数乘法优化", "type": "related"},
+        {"source": "VCFR信道估计子模块的优化", "target": "Timer探针设置", "type": "related"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Timer探针", "en": "Timer probe"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "VCFR子模块", "en": "VCFR submodule"},
+        {"title": "DFT处理", "en": "DFT processing"},
+        {"title": "定点化设计", "en": "Fixed-point design"}
+    ],
+    "relations": [
+        {"source": "Timer探针", "target": "VCFR子模块", "type": "包含"},
+        {"source": "信道估计", "target": "VCFR子模块", "type": "实现"},
+        {"source": "VCFR子模块", "target": "DFT处理", "type": "依赖"},
+        {"source": "VCFR子模块", "target": "定点化设计", "type": "涉及"},
+        {"source": "C实现", "target": "Matlab平台", "type": "对比"},
+        {"source": "硬件平台", "target": "Matlab平台", "type": "对比"}
+    ]
+}{
+    "knowledge_points": [
+        {"title": "MSC8157芯片", "en": "MSC8157 chip"},
+        {"title": "无线通信协议", "en": "Wireless communication protocol"},
+        {"title": "信道估计", "en": "Channel estimation"},
+        {"title": "基带信号处理", "en": "Baseband signal processing"},
+        {"title": "MAPLE-B2协处理器", "en": "MAPLE-B2 coprocessor"},
+        {"title": "eFTPE", "en": "eFTPE"},
+        {"title": "TD-LTE", "en": "TD-LTE"},
+        {"title": "PUSCH接收链路", "en": "PUSCH receiving link"},
+        {"title": "VCFR信道估计算法", "en": "VCFR channel estimation algorithm"},
+        {"title": "LS估计", "en": "LS estimation"},
+        {"title": "LMMSE准则", "en": "LMMSE criterion"},
+        {"title": "DFT变换域去噪", "en": "DFT domain denoising"},
+        {"title": "FFT", "en": "FFT"},
+        {"title": "F-LMMSE算法", "en": "F-LMMSE algorithm"},
+        {"title": "移动通信发展历史", "en": "History of mobile communication development"},
+        {"title": "LTE上行导频设计", "en": "LTE uplink pilot design"}
+    ],
+    "relations": [
+        {"source": "MSC8157芯片", "target": "基带信号处理", "type": "适用于"},
+        {"source": "MSC8157芯片", "target": "MAPLE-B2协处理器", "type": "包含"},
+        {"source": "MSC8157芯片", "target": "eFTPE", "type": "支持"},
+        {"source": "无线通信协议", "target": "TD-LTE", "type": "属于"},
+        {"source": "TD-LTE", "target": "LTE上行导频设计", "type": "相关"},
+        {"source": "信道估计", "target": "LS估计", "type": "包含"},
+        {"source": "信道估计", "target": "LMMSE准则", "type": "包含"},
+        {"source": "信道估计", "target": "DFT变换域去噪", "type": "包含"},
+        {"source": "信道估计", "target": "VCFR信道估计算法", "type": "包含"},
+        {"source": "DFT变换域去噪", "target": "VCFR信道估计算法", "type": "改进"},
+        {"source": "LS估计", "target": "VCFR信道估计算法", "type": "改进"},
+        {"source": "LMMSE准则", "target": "F-LMMSE算法", "type": "相关"},
+        {"source": "FFT", "target": "F-LMMSE算法", "type": "使用"},
+        {"source": "VCFR信道估计算法", "target": "MSC8157芯片", "type": "实现于"},
+        {"source": "PUSCH接收链路", "target": "TD-LTE", "type": "相关"}
+    ]
+}{
+    "knowledge_points": [
+        {
+            "title": "Enhanced DFT-based channel estimation for LTE uplink",
+            "en": ""
+        },
+        {
+            "title": "Windowed DFT-based OFDM channel estimation by adding virtual channel frequency response",
+            "en": ""
+        },
+        {
+            "title": "Channel estimation of windowed FFT based on pilot in OFDM systems",
+            "en": ""
+        },
+        {
+            "title": "Windowed DFT-based pilot-symbol-aided channel estimation for OFDM systems in multipath fading channels",
+            "en": ""
+        },
+        {
+            "title": "OFDM channel estimation by singular value decomposition",
+            "en": ""
+        },
+        {
+            "title": "Low complexity LMMSE channel estimation for OFDM systems",
+            "en": ""
+        },
+        {
+            "title": "Improved LMMSE channel estimation algorithm based on OFDMA system and its performance analysis",
+            "en": ""
+        },
+        {
+            "title": "A fast LMMSE channel estimation method for OFDM systems",
+            "en": ""
+        },
+        {
+            "title": "New OFDM channel estimation method by adding a virtual channel frequency response",
+            "en": ""
+        },
+        {
+            "title": "An investigation into time-domain approach for OFDM channel estimation",
+            "en": ""
+        },
+        {
+            "title": "LTE-UMTS long term evolution theory and practice",
+            "en": ""
+        },
+        {
+            "title": "Evolution Universal Terrestrial Radio Access (E-UTRA) Physical Channels and Modulation",
+            "en": ""
+        },
+        {
+            "title": "4G mobile communication technology authoritative guide",
+            "en": ""
+        },
+        {
+            "title": "Research on uplink channel estimation of LTE",
+            "en": ""
+        },
+        {
+            "title": "On channel estimation in OFDM systems",
+            "en": ""
+        }
+    ],
+    "relations": [
+        {
+            "source": "Enhanced DFT-based channel estimation for LTE uplink",
+            "target": "Windowed DFT-based OFDM channel estimation by adding virtual channel frequency response",
+            "type": "related"
+        },
+        {
+            "source": "Windowed DFT-based OFDM channel estimation by adding virtual channel frequency response",
+            "target": "Channel estimation of windowed FFT based on pilot in OFDM systems",
+            "type": "related"
+        },
+        {
+            "source": "Windowed DFT-based pilot-symbol-aided channel estimation for OFDM systems in multipath fading channels",
+            "target": "OFDM channel estimation by singular value decomposition",
+            "type": "related"
+        },
+        {
+            "source": "OFDM channel estimation by singular value decomposition",
+            "target": "Low complexity LMMSE channel estimation for OFDM systems",
+            "type": "related"
+        },
+        {
+            "source": "Low complexity LMMSE channel estimation for OFDM systems",
+            "target": "Improved LMMSE channel estimation algorithm based on OFDMA system and its performance analysis",
+            "type": "related"
+        },
+        {
+            "source": "Improved LMMSE channel estimation algorithm based on OFDMA system and its performance analysis",
+            "target": "A fast LMMSE channel estimation method for OFDM systems",
+            "type": "related"
+        },
+        {
+            "source": "A fast LMMSE channel estimation method for OFDM systems",
+            "target": "New OFDM channel estimation method by adding a virtual channel frequency response",
+            "type": "related"
+        },
+        {
+            "source": "New OFDM channel estimation method by adding a virtual channel frequency response",
+            "target": "An investigation into time-domain approach for OFDM channel estimation",
+            "type": "related"
+        },
+        {
+            "source": "LTE-UMTS long term evolution theory and practice",
+            "target": "Evolution Universal Terrestrial Radio Access (E-UTRA) Physical Channels and Modulation",
+            "type": "related"
+        },
+        {
+            "source": "Evolution Universal Terrestrial Radio Access (E-UTRA) Physical Channels and Modulation",
+            "target": "4G mobile communication technology authoritative guide",
+            "type": "related"
+        },
+        {
+            "source": "Research on uplink channel estimation of LTE",
+            "target": "On channel estimation in OFDM systems",
+            "type": "related"
+        }
+    ]
+}{
+    "knowledge_points": [
+        {"title": "Toeplitz系统方程", "en": "Toeplitz system of equations"},
+        {"title": "带状Toeplitz矩阵的谱特性", "en": "Spectral properties of banded Toeplitz matrices"},
+        {"title": "基于窗口DFT的低复杂度MMSE信道估计", "en": "Low-complexity MMSE channel estimation based on windowed DFT"},
+        {"title": "OFDM系统中基于DFT的信道估计", "en": "DFT-based channel estimation in OFDM systems"},
+        {"title": "基于虚拟子载波的OFDM信道估计", "en": "OFDM channel estimation based on virtual subcarriers"},
+        {"title": "基于迭代LS算法的OFDM信道估计", "en": "Iterative LS channel estimation for OFDM systems based on transform-domain processing"},
+        {"title": "基于时域阈值的OFDM信道估计", "en": "Time-domain threshold-based channel estimation for OFDM systems"},
+        {"title": "E-UTRA基站无线传输和接收", "en": "E-UTRA base station radio transmission and reception"},
+        {"title": "数字信息处理应用和教程", "en": "Digital information processing applications and tutorials"},
+        {"title": "MSC8157六核数字信号处理器", "en": "MSC8157 six-core digital signal processor"}
+    ],
+    "relations": [
+        {"source": "Toeplitz系统方程", "target": "带状Toeplitz矩阵的谱特性", "type": "相关"},
+        {"source": "基于窗口DFT的低复杂度MMSE信道估计", "target": "OFDM系统中基于DFT的信道估计", "type": "相关"},
+        {"source": "OFDM系统中基于DFT的信道估计", "target": "基于虚拟子载波的OFDM信道估计", "type": "相关"},
+        {"source": "基于虚拟子载波的OFDM信道估计", "target": "基于迭代LS算法的OFDM信道估计", "type": "相关"},
+        {"source": "基于迭代LS算法的OFDM信道估计", "target": "基于时域阈值的OFDM信道估计", "type": "相关"},
+        {"source": "E-UTRA基站无线传输和接收", "target": "数字信息处理应用和教程", "type": "相关"},
+        {"source": "MSC8157六核数字信号处理器", "target": "数字信息处理应用和教程", "type": "相关"}
+    ]
+}

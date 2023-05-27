@@ -1,0 +1,27 @@
+5.1射频子板模块性能测试与验证
+射频子板模块的测试主要分为ADC接收信号质量的测试和噪声测试。射频 子板板载时钟芯片、ADC/DAC芯片、功率放大器芯片、调制/解调芯片等均需要 通过HC总线下发配置，且各个芯片间会存在一定的延时以及引入噪声，所以需 要对射频子板的接收信号进行测试，以及无信号输入时射频板噪声性能。
+Running XCOMM Test Program
+Initializing XCOMM I2C...
+XCOMM Ihit I2C OK!
+getting XCOW Revision..«
+Board Version: Analog Devices, FHC Comms 1, D4B9555, AB-FMCOMMS1-EBZ,
+initializing XCOHM exponents...
+XC<»W Init OK!
+Initializing the Rx path...
+X£W Rx Init OKI
+Initializing the Tx path.,.
+XCg Tx Init OKt
+初C sampling rate 【Hz]: 983&4680
+OAC sampling rate [Hz]: I9$&e86ee
+DAC available interpolation frequencies [Hz]: 1966086鈴
+DAC available center shi代 frequencies [Hz]: e
+图5-1射频子板初始化打印的调试信息
+图5-1展示了射频板初始化时，Firmware初始化程序对射频板进行配置所打 印出的调试信息，图中的调试信息均是Firmware程序配置之后通过IIC总线从射 频子板各芯片读回的响应信息，可以反映射频板真实工作的状态。从图中可以看 到，射频板的发送/接收射频板中心频率、ADC/DAC釆样率参数、接收链路增益 配置均得到了正确的初始化，而且正确地的从板载的EEPROM上读取了射频子板 的版本信息。	’
+射频子板的时钟等均依赖其自身的硬件，所以射频子板接收信号质量的测试 可以釆用自回环的方法测试，测试中采用直接将子板的RF OUT与RF IN相连， 子板的发送端循环发送一个正弦波信号和三角波信号，通过DAC、放大、调制等 过程通过RF OUT和RF IN直接进入子板的接收链路。
+为检测接收信号的质量，通过Chipscope工具直接抓取射频子板驱动之后 ADC的I/Q数据，如图5-2和图5-3所示，展示了自回环测试方法中接收端使用 Chipscope工具抓取的ADC釆样信号波形，蓝线和红线分别表示I/Q两路数据， 即釆样信号的实部(ADC_data_real)和虚部(ADC_data_imag)。图中可以看出, 接收到的正弦波信号波形和三角波信号波形基本无失真。
+61
+图5-2射频板自回环测试ADC接收信号正弦波波形
+图5-3射频板自回环测试ADC接收信号三角波波形
+Firmware软件层面关闭接收链路中解调部分的功能，并且去掉接收端的天线, 同样釆取使用Chipscope软件抓取ADC端接收信号波形的方法，测试射频子板的 噪声性能，测试结果如图5-4所示。图中蓝线和红线分别为I、Q路数据，即ADC 采样信号的实部、虚部数据，可以看到，接收信号的幅值有个微小的直流分量， 实部和虚部的噪声幅值大小均稳定在15以内，而ADC芯片的数据位宽是14bit, 可表示的最大有符号数大小为2^14-1=16383,噪声影响系数为15/16383=0.09%, 噪声性能较好。	.
+62
+图5-4射频子板的噪声性能测试

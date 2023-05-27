@@ -1,0 +1,2 @@
+2.5.1IDAPro
+IDA Pro(lnteractive Disassembler Professional)是目前广泛使用的静态反 汇编工具，它已经成为分析恶意代码、研究漏洞攻击的主要工具。这款软件具有 高交互、可编程、可扩展等诸多优点，支持各种处理器和平台，功能非常强大。 本文选用IDA Pro就是基于其具有上述优点。

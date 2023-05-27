@@ -1,0 +1,44 @@
+4.7.3引理4.4证明
+1 的分析可根据忽简单扩展得到：1）令干扰概率（1-以）% + ■"	mk=l
+￡ P以欧）（1-喲替换协作概率饥，2）用甞替换黯，3）应用干扰信道衰 务血~「（吹,1）。
+Mk	J(%) -Hl /X2+H2	]
+-2巩:￡ Pkg)			　　A
+x exp <	mk=}				I
+/		「P(TX)E	T2
+X	1-E.	||2		jcdx
+1 1	瞄』2		z
+采用(4-49)相同的计算步骤，(r)的表达式可得到如公式(4-40)o
+当Xk > dk.o时，在区域绍。为0以外的干扰信号只经历NLoS,因此NLoS以概 率1存在于%顷(')的积分空间内。Xk> dk,°内的具体分析可通过(4-55)相同的计 算步骤得到。
+参考文献
+[1]Li X, Wang X, Li K, et aL Collaborative multi-tier caching in heterogeneous networks: Modeling, analysis, and design[J]. IEEE Transactions on Wireless Communications, 2017} 16( 10): 6926-6939.
+[2]Zhou Y Yu F R, Chen J, et al. Resource Allocation fbr Information-Centric Virtualized Heterogeneous Networks with In-Network Caching and Mobile Edge Computing[J]. IEEE Transactions on Vehicular Technology, 2017, 66(12): 11339 - 11351.
+[3]Chen Y Ding M, Li J, et al. Probabilistic small-cell caching: Performance analysis and optimization [J]. IEEE Transactions on Vehicular Technology, 2017, 66(5): 4341T354.
+[4]Zhang S, Zhang N, Yang P, et al. Cost-Effective Cache Deployment in Mobile Heterogeneous Networks [J]. IEEE Transactions on Vehicular Technology, 2017, 66(12): 11264 一 11276.
+[5]Han B, Wang X, Choi N, et al. AMVS-NDN: Adaptive mobile video streaming and sharing in wireless named data networking[A]. // IEEE INFOCOM Workshops[C]. Turin, Italy: IEEE, 2013: 375380.
+[6]Chen Z, Lee J, Quek T Q S, et aL Cooperative caching and transmission design in cluster-centric small cell networks [J]. IEEE Transactions on Wireless Communications, 2017, 16(5): 3401-3415.
+[7]Liu A, Lau V K. Cache-enabled opportunistic cooperative MIMO for video streaming in wireless systems[J]. IEEE Transactions on Signal Processing, 2014, 62(2): 390—402.
+[8]Wen W, Cui Y, Zheng F C, et al. Random Caching Based Cooperative Transmission in Heterogeneous Wireless Networks[J]. IEEE Transactions on Communications, 2018, PP(99): 1-1.
+[9]Golrezaei N, Shanmugam K, Dimakis A G, et al. Femtocaching: Wireless video content delivery through distributed caching helpers[A]. // Proceedings on IEEE INFOCOM[C]. Orlando, USA: IEEE, 2012: 1107-1115.
+[10]Ba§tug E, Bennis M, Kountouris M, et al. Cache-enabled small cell networks: Modeling and tradeoffs^]. EURASIP Journal Wireless Communications and Networking, 2015, 2015(1): 41.
+[11]Yang C, Yao Y Chen Z. Analysis on cache-enabled wireless heterogeneous networks [J]. IEEE Transactions on Wireless Communications, 2016, 15(1): 131-145.
+[12]Haenggi M. Stochastic Geometry for Wireless NetworksfM]. Cambridge, U.K,: Cambridge Univ. Press, 2012.
+[13]Zhang N, Zhang S, Wu S, et al. Beyond coexistence: Traffic steering in LTE networks with unlicensed bands[J]. IEEE Wireless Communications, 2016,23(6): 40-46.
+[14]Wang X, Chen M, Taleb T, et al. Cache in the air: Exploiting content caching and delivery techniques for 5G systems[J]. IEEE Transactions on Communications, 2014, 52(2): 131-139.
+[15]Ding M, Wang P, Lopez-Perez D, et al. Performance Impact of LoS and NLoS Transmissions in Dense Cellular Networks[J]. IEEE Transactions on Wireless Communications, 2016, 15(3): 23652380.
+[16]3GPP. TR 36.828 (VI 1,0.0): Further enhancements to LTE time division duplex (TDD) for downlink-uplink (DL-UL) interference management and traffic adaptationfR]. Valbonne-FRANCE: European Communities, EUR, 2012.
+[17]Spatial Channel Model Text Description[R]. http://ftp://www.3gpp.org/tsg_ran/WGl_RLl/3GPP_ 3GPP2_SCM/ConfCall- 16-20030417/SCM^ 134%20Text%20v5.0.doc.: Spatial Channel Model AHG (3GPP), 2003.
+[18]COST Action 231. Digital mobile radio towards future generation systems, Final report[R]. Belgium: European Communities, EUR, 1999.
+[19]ITU-R.300MHZ至100 GHz频率范围内的短距离室外无线电通信系统和无线本地网规划所 用的传播数据和预测方法[R].日内瓦：ITU, 2010.
+[20]Jindal N, Andrews J G, Weber S. Multi-Antenna Communication in Ad Hoc Networks: Achieving MIMO Gains with SIMO Transmission^]. IEEE Transactions on Communications, 2011, 59(2): 529-540.
+[21]Li C, Zhang J, Andrews J G, et al. Success Probability and Area Spectral Efficiency in Multiuser MIMO HetNets[J]. IEEE Trans. Commun, 2016, 64(4): 1544-1556.
+[22]Liu G, Ma Z, Chen X, et al, Cross-layer Power Allocation in Non-Orthogonal Multiple Access Systems for Statistical QoS Provisioning]J]* IEEE Transactions on Vehicular Technology, 2017, 66(12): 11388 - 11393.
+[23]Ferenc J S, Neda Z. On the size distribution of poisson voronoi cells[J]. Phys. A: Stat. Meeh. AppL, 2007,385(2): 519-529.
+[24]Kiang T. Random fragmentation in two and three dimensions[J]. Zeitschrift fur Astrophysik, 1966, 64: 433T39.
+[25]Wu H, Tao X, Zhang N, et al. On Base Station Coordination in Cache-and Energy Harvesting- Enabled HetNets: A Stochastic Geometry Study [J]. IEEE Transactions on Communications, 2018, PP(99): 1-1.
+[26]Hamdi K A. A Useful Lemma fbr Capacity Analysis of Fading Interference Channels[J]. IEEE Transactions on Communications, 2010, 58(2): 411-416.
+[27]Robert W H, Kountouris M, Bai T. Modeling Heterogeneous Network Interference Using Poisson Point Processes [J]. IEEE Transactions on Signal Processing, 2013, 61(16): 4114-4126.
+[28]Dhillon H S, Ganti R K, Baccelli F, et al. Modeling and analysis of k-tier downlink heterogeneous cellular networks[J], IEEE J. Sei. Areas Commun., 2012, 30(3): 550—560.
+[29]Mukheijee S. Distribution of downlink SINR in heterogeneous cellular networksfJ]. IEEE J. Sei. Areas Commun., 2012, 30(3): 575—585.
+(C) 1994-2022 China Academic Journal Electronic Publishing House. All rights reserved.
+第五章 基于协作的HetNets物理层安全覆盖与安全容量研究
+本论文前三章以CoMP提高HetNets网络覆盖或容量为目标，研究结合无线新 技术或考虑差异化基站高度场景下的异构协作。以提高网络安全覆盖和安全容量为 目标，本章将研究HetNets中基于异构协作的物理层无线信号安全传输。以安全中断 概率以及安全传输速率为系统安全性能衡量参数，首先分析了 HetNets的无线安全 覆盖性能，然后，为进一步提高无线信号的安全传输，提出了一种多干扰节点协助 (jamming assisted)的安全传输机制，通过动态多点协作，在窃听者的方向协作发送 干扰信号，弱化窃听者的信道质量，从而提高无线信号的安全传输速率。

@@ -1,0 +1,15 @@
+3.2.1同步时隙冲突避免
+SSCA本质上为时隙Aloha （S-Aloha）,并结合CSMA/CA的握手机制。 在传统S-Aloha中，传输流程为DATA-ACK,可能的碰撞发生在DATA阶段。 在SSCA中，由于D2D数据传输信道无线资源管理、基带信号处理流程比较 复杂，直接使用共享信道发送数据处理成本较高，并且引入的干扰也难以控制， 故先使用短小简单的RTS、CTS进行信道预约接入竞争，利用两次握手实现冲 突避免。SSCA与典型的CSMA/CA系统，如802.1伸〕的区别在于SSCA不需 要进行载波侦听，使用与LTE同步的帧格式，使其不会对蜂窝系统引入符号间 干扰。
+数据发送流程为RTS-CTS-DATA,最后配合ACK进行传输确认。具体为： D2D通信发送端（TxDUE）接收到调度器信道接入需求后，将在D2D控制信 道RTS子信道内发送指向D2D通信接收端（RxDUE）的RTS请求，用以申请 以RxDUE为中心的D2D冲突域内关于后续对应时刻的上行信道接入权。若 RxDUE能正确解码TxDUE的RTS内容，将会在应答信道中回复指向TxDUE 的CTS,用以确认RTS并申请以TxDUE为中心的D2D冲突域内关于后续对应 时刻的ACK控制子信道接入权。当TxDUE正确解析CTS后，表明竞争成功， D2D双方能够接入数据信道。
+举例分析如图3-3所示的竞争场景。TxDUEK TxDUE2同时使用RTS申 请资源，由于RxDUE2处于TxDUEl和TxDUE2的发送可达域内，RTS信道 被严重干扰，导致其不能够正确解码，不会向TxDUE2发送CTS应答。TxDUE2 申请RxDUE2冲突域的接入权失败。与此同时，虽然RxDUEl、RxDUE3处于
+18
+同一竞争域内，但由于二者均为接收方，相互不影响通信质量，能够正常进行 RTS-CTS过程并复用信道。
+RTS、CTS同时测试了链路正向、反向通信质量，避免由于信道的不对称 性引发信道探测的不准确性。如图3-4,可能存在DUE-TX1到DUE-RX3的衰 减较大，而DUE-RX3的CTS反馈反向链路衰减较小的情况，若此时DUE-TX1 发送数据，在接收ACK时，会同时收到DUE-RX1和DUE-RX3,造成冲突， 引发重传。联合RTS、CTS,能保证数据传送、反馈过程都不会收到其他DUE 干扰。
+Blue Ring : D2D Collision Domain
+-> :D2D Interference
+齐：RTS
+—> :CTS
+卷:CTS Collision
+图3-4 D2D在链路不对称时的竞争场景图
+由于RTS的竞争性，不可避免的存在多D2D通信对(D2D pairs)处于同 一冲突域的情况。RTS/CTS碰撞便不会触发后续数据的发送。此时所有通信对 都没有成功接入信道，这意味着在此冲突域中无线资源的浪费。如何设计SSCA 的分布协同机制(Distributed Coordination Function, DCF)降低碰撞概率，直接 影响了 D2D通信使用蜂窝网络频谱空洞时的利用效率问题。
+19

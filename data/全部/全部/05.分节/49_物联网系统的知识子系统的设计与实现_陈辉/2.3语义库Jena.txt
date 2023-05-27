@@ -1,0 +1,4 @@
+2.3语义库Jena
+Apache Jena是Apache的--个开源的用于开发语义Web和Linked Data的Java框架。 此框架包括许多用于处理RDF数据的APL Jena提供丰富的本体处理API,方便使用 者加载，解析，生成本体文件，同时支持多种格式。OWL是知识表示形式，但是文件 载体可以是多种格式，在Protege的OWL本体生成保存格式中就包括RDF、OWL等多 种格式。Jena全面支持各种文件类型。
+整个框架的的结构如图2-3所示：
+图2-3 Apache Jena语义框架

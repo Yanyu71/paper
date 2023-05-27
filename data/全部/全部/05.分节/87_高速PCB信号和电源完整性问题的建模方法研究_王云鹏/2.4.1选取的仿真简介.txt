@@ -1,0 +1,40 @@
+2.4.1选取的仿真简介
+为了分析反射问题，本文选取了 ALTERA公司生产的Stratix IV GX FPGA 开发板作为验证等效电路仿真结果的电路板，其结构图如图2-10所示。该板具 有DDR3、HDMI、Flash、LCD等多个模块，属于高速多层印刷电路板。在高速 电路中，信号的反射、串扰等问题更加突出。该板的层数为16层，其层叠结构 如图2-11所示，其介质材料为FR4,相对介电常数的范围在4.2〜4.5,电导率为 5.9e+7 S/m・同时ALTERA公司也向开发者提供了 Stratix IV GX的开发套件和 部分芯片的IBIS模型，这为开发和研究提供了极大便利。该开发板上部分芯片
+17
+及其特点如下：
+1、	FPGA选配的型号是EP4SGX23(HCF40,其工作电压为900mV,共有9120 个逻辑数组块，744个"0管脚，内存为17133bit.
+2、	DD3选配的型号是MT41J64M16JT,其工怡电压为1500mV,共有64位 差分信号位，单片内存为512MB。
+3、	CPLD选配的型号是EPM2210GF256,其工作电压为1500〜3300mV多电 平控制，共有272个管脚。
+图 2-10 Stratix IV GX FPGA 开发板
+TOP
+DE.002
+SG_LAYER2 —
+DE_004
+GND_LAYER3 -
+DE_G06
+PWR_LAYER4 -
+DE_008
+SIG_LAYER5 —
+DE_010
+SIG_LAYER6 —
+DE_012
+GND.LAYER7 -
+DE_014
+PWR_LAYER8 -
+DE_016
+PWR LAYER9-
+DE_018
+Ghffl_LAYERl0
+DE_020
+SIG_LAYER11 -
+DE.022
+SG_LAYER12 -
+DE_024
+PWR_LAYER13
+DE_028
+GNO_LAYER14
+DE_028
+SIG_LAYER15 -
+DE_Q30
+BOTTOM
+图2T1 Stratix IV GX FPGA开发板的展叠结构

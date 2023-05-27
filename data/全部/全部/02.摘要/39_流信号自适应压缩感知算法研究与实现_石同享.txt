@@ -1,0 +1,18 @@
+摘要
+基于信号的稀疏特征，利用压缩感知技术可以实现以较少的样本 重构出原始信号，从而降低釆样硬件的成本，同时也节省了因保存采 样数据所需的大量内存空间。针对无线监测应用中无线信号的宽谱稀 疏特点，在ADC采样率以及数据的存储控制受限条件下，采用压缩 感知技术具有实际意义。
+论文研究具有宽带稀疏频谱的流信号压缩感知理论与实现问题, 研究了基于AIC系统的自适应压缩感知信号重构算法，总结并对比 了实现压缩感知的AIC"】、MWC〔2]系统，并着重研究了基于MWC结 构的压缩感知硬件实现。为克服AIC和MWC均需要高速混频的缺 点，本文还对基于非混频方式的压缩感知系统进行了研究。本文的主 要贡献如下：
+1.基于AIC釆样模型中稀疏信号前后时间窗之间存在状态转移 关系，利用卡尔曼滤波原理提出了相应的自适应压缩感知算法，针对 信号稀疏度和噪声都未知的情况，给出了相应的重构算法，并通过计 算机仿真结果评估了相应算法的收敛性能。
+2.基于 Analog 的 AD936EXilinx 的 FPGA 开发平台 ZC-706[4J搭 建实现了宽带无线信号的高速远程数据采集系统，并实现了相关软件 模块的编写。
+3.针对MWC模型的压缩感知技术，考察了相关的硬件设计，并 提出了具体的实现方案。考虑到MWC架构中高速混频器的难点，论 文从成本的角度研究了非混频方式的压缩感知系统的设计，并结合当 前硬件水平，提出了一种经济型的压缩感知系统构建方案。
+关键词:压缩感知;宽带稀疏频谱信号;流信号;卡尔曼滤波
+RESEARCH AND IMPLEMENTATION OF WIRELESS WIDEBAND SIGNAL COMPRESSION SENSING TECHNOLOGY
+ABSTRACT
+Compressive Sensing(CS) is one of the most popular topics in signal processing field, which is used to process signals that are sparse in some specific basis, it provides advantages of sampling original signal in low rate and economizing storing memory. Thus CS makes an important influence on scenes that sampling rate and storing memory are limited.
+This paper is mainly concerned about the theory and hardware implementation of Wide-band sparse signal using CS. We do research on adaptive signal reconstruction based on a classical compressed structure called Analog-to-Infbrmation Conversion (AIC)1'1. Besides, this paper summarizes and compares two kinds of main compressed sensing sampling structure models: (AIC) and Modulated Wideband Converter(MWC)|21. Both models involve mixing original signal with Nyquist sampling speed pseudo random signal which turns out to be anther bottleneck in CS To overcome the challenge of high speed mixing, this article studies on nonmixing CS which abandons the mixing part. The main contributions of this article are as follows:
+1.There exists transition relationship between adjacent time windows in AIC model and reconstructing wideband sparse signal with Kalman filter iteration has been proved to be a good method. However, the iteration process requires a prior knowledge of noise covariance matrix and the sparsity of signal which are unknown or time-varying in actual scenery.
+hi
+Providing that both noise covariance matrix and sparsity are unknown, this article puts forward a conesponding adaptive sensing algorithm and the simulation results show that the proposed adaptive reconstruction algorithm can almost get the same good performance as algorithms with prior knowledge of the noise covariance and signal sparsity.
+2.This paper designs a complete remote data acquisition system based on high-speed ADC-AD9361 [3] and wideband hardware platform ZC706【4〕，software component for this system is also provided.
+3.A compression system based on MWC model is designed in this paper after investigating on hardware implementation of CS. Considering the difficulties of high speed mixing, this article proposes a budget of CS system construction program from the perspective of economizing based no mixing CS, which gives guidance for building an economy CS system.
+KEY WORDS:compressive sensing;wideband sparse spectrum signal;streaming signal;Kalman filter
+

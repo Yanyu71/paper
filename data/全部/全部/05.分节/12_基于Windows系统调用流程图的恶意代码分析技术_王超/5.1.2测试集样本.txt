@@ -1,0 +1,15 @@
+5.1.2测试集样本
+测试集样本总共有3类，分别是恶意程序、非恶意程序和其他，测试集样本 中的恶意程序中有273个是从训练集中随机抽取的，还有102个是从VX Heaven 病毒实验室下载的；其中的非恶意程序样本则选取了常见应用程序；其他则是从 CNCERT/CC出获得的未知类型的文件。下表所示为部分测试集样本：
+表5-2部分测试集样本
+程序名	是否恶意	描述
+IE8-x86	否	32位的IE8浏览器
+Firefbx34.0.5.5443	否	32位的Firefox浏览器
+Ipv6.exe	否	Windows系统文件
+netstat.exe	否	Windows系统文件
+Putty.exe	否	_种 telnet/SSH 工具
+md5sum.exe	否	MD5检测程序
+Trojan.Win32.AVKill.a	是	一种流行的木马
+Trojan.Win32.Bagle.i	是	Bagle蠕虫的一个变种
+Virus. Win32.Kido.ih	是	即熟知的ConBcker病毒
+Virus.Win32.Zmist	是	—种 metamorphic 病毒
+Virus.Win32.Sality.d	是	Sality的一个变种

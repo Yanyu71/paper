@@ -1,0 +1,3 @@
+3.2.1系统模型
+根据第二章中的LTE-U与Wi-Fi异构认知网络模型(图2-1),在通信终端 间建立LTE与Wi-Fi单信号盲识别系统模型。如图3-1所示，在LTE-U与Wi-Fi 网路系统中，LTE或Wi-Fi的二进制数据经过OFDM调制后，进行模数转换 (Digital -to- Analog Converter, DAC),最终通过射频(Radiofrequency, RF) 终端发射到无线环境中，经过多径瑞利信道传输和AWGN的干扰，被认知网络 系统中具有认知能力的射频终端接收，首先进行数模转换(Analog -to- Digital Converter, ADC),然后进行特征参数估计，最终根据估计的特征参数进行判决， 得到信号盲识别的结果。
+图3-1 LTE与Wi-Fi单信号盲识别系统模型

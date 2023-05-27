@@ -1,0 +1,2 @@
+2.1Hadoop原理
+Apache Hadoop 是一种开源的、基于 Java 语言的编程框架，可以运行在一台或多台物理计算机上来并行的处理海量数据。当某个节点发生故障时，Hadoop集群可以从一个或更多节点的故障中恢复，实现了高可用性。Hadoop 框架主要包括:Hadoop Common、HDFS与MapReduce。Hadoop Common 为其他两个提供常用工具，主要包括系统配置工具 Configuration、抽象文件系统 FileSystem远程过程调用 RPC和序列化机制等。HDFS(Hadoop Distributed File System)是Hadoop 系统的存储模块，它以流式方式来访问应用程序的数据，因此大大提高了整个系统的吞吐量112MapReduce是一种可以处理海量数据的并行处理框架采用“分而治之”的思想将输入数据进行分块，并采用键值对的形式对数据进行并行快速处理。图2-1 为一个Hadoop 集群的部署结构图及工作流程示意图。

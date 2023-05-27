@@ -1,0 +1,17 @@
+摘要
+无线携能通信是指在传输信息的同时传输能量的一种新技术，有着 极为广阔的应用前景，已成为学术界和工业界的一大研究热点。由于无 线携能通信是无线信息传输与无线能量传输相结合的产物，因此有很多 无线通信技术可以借鉴，如多天线技术、中继传输技术等。借助预编码 技术可以进一步提高无线携能通信系统的和速率及所采集能量。然而目 前针对MIMO无线携能通信系统预编码等问题的研究较少。本文主要利 用凸优化理论等先进的数学工具对MIMO无线携能通信系统中的低复杂 度预编码问题进行了研究。其主要创新点总结如下：
+1）	本文提岀了两种针对传统多用户MIMO无线携能通信系统的低 复杂度预编码，为了使系统和速率为凸函数，本文首先提岀了一种基于 消除多用户干扰的零空间预编码。然而这种方法潜在缩小了优化问题的 可行域，我们又通过对系统和速率进行一阶近似提出了一种基于连续凸 近似的预编码算法。尽管基于连续凸近似预编码算法并不是优化问题的 全局最优解，但是我们证明该算法是优化问题的局部最优解。仿真结果 表明基于连续凸近似预编码算法性能优于零空间预编码，且仅需要少数 几次迭代便可收敛。
+2）	本文提出了分别针对分离式接收机和一体式接收机的大规模组播 MIMO无线携能通信系统的低复杂度波束成形矢量，为了使基站的发送 功率最小，本论文首先利用大规模MIMO系统的渐进正交性推导出了最 优波束成形矢量结构，并分别针对分离式接收机和一体式接收机给出了 相应的闭式解。这种算法的好处在于当增加天线数时，计算复杂度并没 有随之增加，特别适合于大规模组播MIMO无线携能通信系统。仿真结 果表明当天线数目逐渐增加时，这种算法性能趋于传统半定松弛算法。
+3）	本文提出了一种针对双向中继无线携能通信系统的联合预编码和
+功率分离法，首先研究了源节点可以同时接收信息与能量的情况，并利 用半定松弛法把在源节点信噪比与釆集能量约束的条件下，最小化中继 发送功率的问题转化为一个凸优化问题。仿真结果表明通过联合预编码 和功率分离法源节点可以有效地接收信息与能量。
+关键词:无线携能通信;低复杂度;线性预编码;凸优化
+
+THE PRECODING IN SIMULTANEOUS WIRELESS INFORMATION AND POWER TRANSFER SYSTEM
+ABSTRACT
+Simultaneous wireless information and power transfer has attracted a lot of attentions from both academia and industry. It refers to the simultaneous wireless transmission of information and electrical energy, which can be applied to many scenarios. Since SWIPT is the combination of wireless energy transfer and information transfer, wireless communication technologies such as MIMO and relay can be used to improve performance. Precoding can further increase the sum-rate and harvested energy. We propose several low-complexity precoding for SWIPT systems by leveraging advanced convex optimization tools. The main innovations of the paper are as follows.
+1)For conventional MU-MIMO SWIPT system, we first proposed a nullspace precoding based on the complete cancelation of multi-user interference. However, such strong constraint may shrink the feasible region for higher sum rate. Then we proposed a precoding based on SC A by first-order approximation of sum rate. Although it is not global optimal solution, we can prove it is a local optimal solution. The simulation results indicate the superior performance of the SC A precoding and it converges to a local optimum in only a few iterations.
+2)For massive MIMO multicasting SWIPT system, we derived the asymptotically optimal beamfbrming structure by applying the asymptotic orthogonality of massive MIMO. For both separated and co-located receivers, we obtained the closed-form solutions. Therefore the computational complexity of the proposed algorithm remains the same when increasing the transmit antennas, which is particularly suitable for massive MIMO systems. Simulation results show that the proposed beamfbrming converges to the conventional SDR algorithm when the number of transmit antennas is large.
+3)For two-way relay SWIPT system, we first studied the scenario where in
+source nodes can receive both infbnnation and energy from the signal sent by the relay simultaneously. We propose a joint two-way relay precoding and receive PS scheme for minimizing tiie transmit power of the relay subject to signal-to-noise ratio and energy harvesting constraints at each source node. Due to the non-convexity of the minimization problem, we use SDR technique to solve the problem. Simulation results verify the effectiveness of the proposed scheme.
+KEY WORDS:SWIPT;low-complexity;linear precoding;convex optimization
+
