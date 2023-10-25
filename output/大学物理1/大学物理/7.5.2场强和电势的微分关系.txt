@@ -1,0 +1,157 @@
+﻿[{
+"knowledge_points": [
+   {"title": "场强", "en": "field strength"},
+   {"title": "电势", "en": "electric potential"},
+   {"title": "微分关系", "en": "differential relationship"},
+   {"title": "积分关系", "en": "integral relationship"},
+   {"title": "等势面", "en": "equipotential surface"},
+   {"title": "电场线", "en": "electric field line"},
+   {"title": "法向距离", "en": "normal distance"},
+   {"title": "试验电荷", "en": "test charge"},
+   {"title": "位移", "en": "displacement"},
+   {"title": "电场力", "en": "electric field force"},
+   {"title": "功", "en": "work"},
+   {"title": "分量", "en": "component"},
+   {"title": "矢量关系式", "en": "vector relationship"},
+   {"title": "直角坐标", "en": "rectangular coordinates"},
+   {"title": "梯度", "en": "gradient"},
+   {"title": "电偶极子", "en": "electric dipole"}
+]
+},{
+"knowledge_points": [
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "匀强电场", "en": "Uniform electric field"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电荷分布", "en": "Charge distribution"}
+]
+},{
+"knowledge_points": [
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电势差", "en": "Electric potential difference"},
+   {"title": "等势面", "en": "Equipotential surface"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "电场强度的定义式", "en": "Definition of electric field strength"},
+   {"title": "点电荷产生的电场强度", "en": "Electric field strength produced by point charge"},
+   {"title": "电场强度的叠加原理", "en": "Superposition principle of electric field strength"},
+   {"title": "静电场的高斯定理", "en": "Gauss's theorem for static electric field"}
+]
+},{
+"knowledge_points": [
+   {"title": "闭合曲面积分", "en": "Closed surface integral"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "电场力", "en": "Electric field force"},
+   {"title": "电荷分布", "en": "Charge distribution"}
+]
+},{
+"knowledge_points": [
+   {"title": "场强", "en": "field strength"},
+   {"title": "电势", "en": "electric potential"},
+   {"title": "微分关系", "en": "differential relationship"},
+   {"title": "积分关系", "en": "integral relationship"},
+   {"title": "等势面", "en": "equipotential surface"},
+   {"title": "电场线", "en": "electric field line"},
+   {"title": "法向距离", "en": "normal distance"},
+   {"title": "试验电荷", "en": "test charge"},
+   {"title": "位移", "en": "displacement"},
+   {"title": "电场力", "en": "electric field force"},
+   {"title": "功", "en": "work"},
+   {"title": "分量", "en": "component"},
+   {"title": "矢量关系式", "en": "vector relationship"},
+   {"title": "直角坐标", "en": "rectangular coordinates"},
+   {"title": "梯度", "en": "gradient"},
+   {"title": "电偶极子", "en": "electric dipole"}
+]
+},{
+"knowledge_points": [
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "匀强电场", "en": "Uniform electric field"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电荷分布", "en": "Charge distribution"}
+]
+},{
+"knowledge_points": [
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电势差", "en": "Electric potential difference"},
+   {"title": "等势面", "en": "Equipotential surface"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "电场强度的定义式", "en": "Definition of electric field strength"},
+   {"title": "点电荷产生的电场强度", "en": "Electric field strength produced by a point charge"},
+   {"title": "电场强度的叠加原理", "en": "Superposition principle of electric field strength"},
+   {"title": "静电场的高斯定理", "en": "Gauss's theorem for static electric fields"}
+]
+},{
+"knowledge_points": [
+   {"title": "场强", "en": "field strength"},
+   {"title": "电势", "en": "electric potential"},
+   {"title": "微分关系", "en": "differential relationship"},
+   {"title": "积分关系", "en": "integral relationship"},
+   {"title": "等势面", "en": "equipotential surface"},
+   {"title": "电场线", "en": "electric field line"},
+   {"title": "法向距离", "en": "normal distance"},
+   {"title": "试验电荷", "en": "test charge"},
+   {"title": "位移", "en": "displacement"},
+   {"title": "电场力", "en": "electric field force"},
+   {"title": "功", "en": "work"},
+   {"title": "分量", "en": "component"},
+   {"title": "矢量关系式", "en": "vector relationship"},
+   {"title": "直角坐标", "en": "rectangular coordinates"},
+   {"title": "梯度", "en": "gradient"},
+   {"title": "电偶极子", "en": "electric dipole"}
+]
+},{
+"knowledge_points": [
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "匀强电场", "en": "Uniform electric field"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电荷分布", "en": "Charge distribution"}
+]
+},{
+"knowledge_points": [
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电势差", "en": "Electric potential difference"},
+   {"title": "等势面", "en": "Equipotential surface"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "电场强度的定义式", "en": "Definition of electric field strength"},
+   {"title": "点电荷产生的电场强度", "en": "Electric field strength produced by point charge"},
+   {"title": "电场强度的叠加原理", "en": "Superposition principle of electric field strength"},
+   {"title": "静电场的高斯定理", "en": "Gauss's theorem for static electric field"}
+]
+},{
+"knowledge_points": [
+   {"title": "场强", "en": "field strength"},
+   {"title": "电势", "en": "electric potential"},
+   {"title": "微分关系", "en": "differential relationship"},
+   {"title": "积分关系", "en": "integral relationship"},
+   {"title": "等势面", "en": "equipotential surface"},
+   {"title": "电场线", "en": "electric field line"},
+   {"title": "法向距离", "en": "normal distance"},
+   {"title": "试验电荷", "en": "test charge"},
+   {"title": "位移", "en": "displacement"},
+   {"title": "电场力", "en": "electric field force"},
+   {"title": "功", "en": "work"},
+   {"title": "分量", "en": "component"},
+   {"title": "矢量关系式", "en": "vector relationship"},
+   {"title": "直角坐标", "en": "rectangular coordinates"},
+   {"title": "梯度", "en": "gradient"},
+   {"title": "电偶极子", "en": "electric dipole"}
+]
+}]

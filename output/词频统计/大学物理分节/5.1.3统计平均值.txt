@@ -1,0 +1,9 @@
+(概率, Probability): 4
+(算术平均值, Arithmetic mean): 4
+(宏观描述, Macroscopic description): 1
+(物理量, Physical quantity): 3
+(热力学系统, Thermodynamic system): 1
+(随机变量, Random variable): 1
+(统计学, Statistics): 1
+(统计平均值, Statistical average): 5
+(微观描述, Microscopic description): 1

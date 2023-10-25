@@ -1,0 +1,13 @@
+(力, Force): 2617
+(振动周期, Oscillation period): 11
+(弹簧振子, Spring oscillator): 59
+(周期性变化, Periodic variation): 11
+(谐振动, Harmonic oscillation): 244
+(运动学方程, Kinematic equation): 23
+(弹性势能, Elastic potential energy): 12
+(动能, Kinetic energy): 357
+(机械能, Mechanical energy): 69
+(坐标, Coordinate): 442
+(位移, Displacement): 214
+(能量, Energy): 637
+(速度, Velocity): 1354

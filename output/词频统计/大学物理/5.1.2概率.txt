@@ -1,0 +1,8 @@
+(概率, probability): 103
+(偶然事件, random event): 7
+(小球落入狭槽的概率, probability of ball falling into a slot): 0
+(概率分布曲线, probability distribution curve): 1
+(小球总数, total number of balls): 4
+(归一化条件, normalization condition): 10
+(狭槽, narrow slot): 11
+(伽尔顿板实验, Galton board experiment): 5

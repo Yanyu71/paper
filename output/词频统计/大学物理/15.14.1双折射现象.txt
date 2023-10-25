@@ -1,0 +1,11 @@
+(寻常光, Ordinary light): 2
+(图15, Figure 15): 216
+(双折射现象, Birefringence phenomenon): 15
+(单轴晶体, Uniaxial crystal): 9
+(非常光, Extraordinary light): 2
+(光轴, Optical axis): 107
+(线偏振光, Polarized light): 61
+(光的双折射, Double refraction of light): 5
+(折射定律, Law of refraction): 20
+(图82, Figure 82): 0
+(双轴晶体, Biaxial crystal): 1

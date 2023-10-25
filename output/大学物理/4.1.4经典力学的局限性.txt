@@ -1,0 +1,11 @@
+﻿{
+"knowledge_points": [
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "相对性原理", "en": "Principle of relativity"},
+   {"title": "电磁现象", "en": "Electromagnetic phenomena"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "超新星爆发", "en": "Supernova explosion"},
+   {"title": "金牛座中的星云", "en": "Crab Nebula"},
+   {"title": "速度变换定理", "en": "Velocity transformation theorem"}
+]
+}

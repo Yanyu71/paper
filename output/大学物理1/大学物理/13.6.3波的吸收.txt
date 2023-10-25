@@ -1,0 +1,46 @@
+﻿[{
+"knowledge_points": [
+   {"title": "波的吸收", "en": "Wave absorption"},
+   {"title": "波的强度", "en": "Wave intensity"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "吸收系数", "en": "Absorption coefficient"},
+   {"title": "能量密度", "en": "Energy density"},
+   {"title": "声强", "en": "Sound intensity"},
+   {"title": "声强级", "en": "Sound intensity level"},
+   {"title": "分贝", "en": "Decibel"},
+   {"title": "听觉阈", "en": "Auditory threshold"},
+   {"title": "低语", "en": "Whisper"},
+   {"title": "通常谈话", "en": "Normal conversation"},
+   {"title": "闹市车声", "en": "City traffic noise"},
+   {"title": "摇滚乐", "en": "Rock music"},
+   {"title": "飞机起飞", "en": "Airplane takeoff"},
+   {"title": "地震", "en": "Earthquake"},
+   {"title": "聚焦超声波", "en": "Focused ultrasound"},
+   {"title": "声功率", "en": "Sound power"}
+]
+},{
+"knowledge_points": [
+   {"title": "噪声污染", "en": "Noise pollution"},
+   {"title": "室内噪声", "en": "Indoor noise"},
+   {"title": "工作影响", "en": "Impact on work"},
+   {"title": "高频噪声", "en": "High-frequency noise"},
+   {"title": "听觉损害", "en": "Hearing damage"},
+   {"title": "噪声源", "en": "Noise source"},
+   {"title": "消声设备", "en": "Soundproofing equipment"},
+   {"title": "声波吸收", "en": "Sound absorption"},
+   {"title": "声波散射", "en": "Sound scattering"},
+   {"title": "噪声显示牌", "en": "Noise display board"},
+   {"title": "波的传播", "en": "Wave propagation"},
+   {"title": "动能和势能", "en": "Kinetic energy and potential energy"},
+   {"title": "简谐横波", "en": "Transverse harmonic wave"},
+   {"title": "能量守恒定律", "en": "Law of conservation of energy"},
+   {"title": "位移最大处", "en": "Maximum displacement"},
+   {"title": "势能转换", "en": "Potential energy conversion"},
+   {"title": "动能转换", "en": "Kinetic energy conversion"},
+   {"title": "能量传递", "en": "Energy transfer"},
+   {"title": "波强度", "en": "Wave intensity"},
+   {"title": "声强级", "en": "Sound intensity level"},
+   {"title": "波的叠加原理", "en": "Principle of wave superposition"},
+   {"title": "波的干涉", "en": "Wave interference"}
+]
+}]

@@ -1,0 +1,12 @@
+(电场强度分布, electric field strength distribution): 14
+(带电球面, charged spherical surface): 15
+(均匀带电球面, uniformly charged spherical surface): 12
+(带电球体, charged sphere): 16
+(电场强度通量, electric field strength flux): 46
+(对称性, symmetry): 63
+(高斯定理, Gauss's theorem): 63
+(均匀带电球体, uniformly charged spherical body): 11
+(球对称分布, spherical symmetry): 1
+(电荷密度, charge density): 3
+(封闭曲面, closed surface): 10
+(匀强电场, uniform electric field): 12

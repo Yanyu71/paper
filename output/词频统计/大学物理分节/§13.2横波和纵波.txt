@@ -1,0 +1,24 @@
+(横波, Transverse wave): 5
+(机械波, Mechanical wave): 1
+(气体, Gas): 3
+(弹性回复性质, Elastic restorative property): 1
+(液体, Liquid): 3
+(谐振动, Harmonic vibration): 3
+(长管, Long tube): 4
+(切变, Shear): 2
+(弹簧, Spring): 8
+(脉冲波, Pulse wave): 1
+(压力波, Pressure wave): 1
+(质元振动方向, Direction of particle vibration): 1
+(弹性绳, Elastic rope): 0
+(波峰, Crest): 2
+(弹簧圈, Coil of spring): 2
+(波谷, Trough): 2
+(固体, Solid): 3
+(活塞, Piston): 2
+(弹性回复力, Elastic restoring force): 2
+(介质, Medium): 5
+(机械纵波, Mechanical longitudinal wave): 1
+(空气, Air): 6
+(纵波, Longitudinal wave): 7
+(波的传播方向, Direction of wave propagation): 1

@@ -1,0 +1,28 @@
+﻿{
+"knowledge_points": [
+   {"title": "力", "en": "Force"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "平动物体", "en": "Translational object"},
+   {"title": "转动物体", "en": "Rotational object"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "转轴", "en": "Axis of rotation"},
+   {"title": "转动效果", "en": "Rotational effect"},
+   {"title": "大小", "en": "Magnitude"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "作用线", "en": "Line of action"},
+   {"title": "位置", "en": "Position"},
+   {"title": "力臂", "en": "Moment arm"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "正向", "en": "Positive direction"},
+   {"title": "负向", "en": "Negative direction"},
+   {"title": "右手螺旋法则", "en": "Right-hand screw rule"},
+   {"title": "分解", "en": "Decompose"},
+   {"title": "分量", "en": "Component"},
+   {"title": "垂直", "en": "Perpendicular"},
+   {"title": "平行", "en": "Parallel"},
+   {"title": "合力矩", "en": "Resultant torque"},
+   {"title": "参考点", "en": "Reference point"},
+   {"title": "矢量", "en": "Vector"},
+   {"title": "投影", "en": "Projection"}
+]
+}

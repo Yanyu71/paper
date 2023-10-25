@@ -1,0 +1,29 @@
+(振幅, Amplitude): 244
+(速度方程式, Velocity equation): 1
+(运动学方程式, Kinematic equation): 2
+(弹簧振子运动学方程式, Spring oscillator kinematic equation): 1
+(频率, Frequency): 461
+(谐振动, Harmonic motion): 244
+(同相, In phase): 9
+(实验曲线, Experimental curve): 5
+(相位差, Phase difference): 116
+(振动方程, Vibration equation): 51
+(起始条件, Initial conditions): 9
+(弹簧振子, Spring oscillator): 59
+(角频率, Angular frequency): 40
+(初始条件, Initial conditions): 19
+(周期和振幅, Period and amplitude): 1
+(中点, Midpoint): 20
+(单位, Unit): 286
+(初相, Initial phase): 68
+(速度, Velocity): 1354
+(质量, Mass): 641
+(位移-时间曲线, Displacement-time curve): 3
+(劲度系数, Spring constant): 35
+(谐振动, Harmonic oscillation): 244
+(反相, Out of phase): 5
+(振子的速度方程, Oscillator velocity equation): 1
+(相位, Phase): 226
+(加速度, Acceleration): 397
+(加速度方程, Acceleration equation): 1
+(周期, Period): 196

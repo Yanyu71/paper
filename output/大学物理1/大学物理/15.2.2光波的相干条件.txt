@@ -1,0 +1,41 @@
+﻿[{
+"knowledge_points": [
+   {"title": "光波的相干条件", "en": "Coherence conditions of light waves"},
+   {"title": "频率相同", "en": "Same frequency"},
+   {"title": "振动方向平行", "en": "Parallel vibration direction"},
+   {"title": "振幅相差不大", "en": "Small difference in amplitude"},
+   {"title": "相位差恒定", "en": "Constant phase difference"},
+   {"title": "光源的发光机理", "en": "Emission mechanism of light source"},
+   {"title": "相干光波", "en": "Coherent light waves"},
+   {"title": "非线性效应", "en": "Nonlinear effects"},
+   {"title": "非线性光学", "en": "Nonlinear optics"},
+   {"title": "光的叠加原理", "en": "Principle of superposition of light"},
+   {"title": "光的相干叠加", "en": "Coherent superposition of light"},
+   {"title": "非相干问题", "en": "Incoherent problems"},
+   {"title": "合成光强表达式", "en": "Expression of synthesized light intensity"}
+]
+},{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"},
+   {"title": "推荐系统", "en": "Recommendation System"}
+], 
+
+}]

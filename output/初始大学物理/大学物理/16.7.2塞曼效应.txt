@@ -1,0 +1,40 @@
+﻿{
+"knowledge_points": [
+   {"title": "塞曼效应", "en": "Zeeman effect"},
+   {"title": "能级", "en": "energy level"},
+   {"title": "分能级", "en": "sublevel"},
+   {"title": "角动量", "en": "angular momentum"},
+   {"title": "磁矩", "en": "magnetic moment"},
+   {"title": "磁场", "en": "magnetic field"},
+   {"title": "光谱线", "en": "spectral line"},
+   {"title": "量子化", "en": "quantization"},
+   {"title": "氢原子", "en": "hydrogen atom"},
+   {"title": "量子数", "en": "quantum number"},
+   {"title": "电子自旋", "en": "electron spin"},
+   {"title": "斯特恩-盖拉赫实验", "en": "Stern-Gerlach experiment"}
+]
+}{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"},
+   {"title": "推荐系统", "en": "Recommendation System"}
+], 
+
+}

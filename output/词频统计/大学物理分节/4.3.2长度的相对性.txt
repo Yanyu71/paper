@@ -1,0 +1,34 @@
+(相对性原理, principle of relativity): 1
+(时空的属性, Properties of spacetime): 1
+(狭义相对论, Special relativity): 1
+(惯性系, Inertial frame): 3
+(运动长度, moving length): 4
+(洛伦兹变换, Lorentz transformation): 5
+(视觉形象, Visual image): 1
+(长度收缩公式, length contraction formula): 2
+(宇宙飞船, spaceship): 1
+(相对物体静止的惯性系, Inertial frame where the object is at rest): 1
+(S'系, S' system): 6
+(光脉冲, light pulse): 1
+(空间间隔, spatial interval): 3
+(伽利略变换, Galilean transformation): 1
+(爱因斯坦火车, Einstein train): 1
+(S系, S system): 11
+(静止长度, Rest length): 1
+(长度收缩, Length contraction): 9
+(同时测量, simultaneous measurement): 5
+(光速, speed of light): 1
+(运动物体的长度, length of moving object): 5
+(运动方向, Direction of motion): 4
+(空间距离, spatial distance): 3
+(物质间的相互作用, Interaction between matter): 0
+(空间位置, Spatial position): 0
+(经典力学, Classical mechanics): 1
+(光, Light): 12
+(固有长度, proper length): 4
+(视网膜, Retina): 2
+(时空坐标, spacetime coordinates): 1
+(空间间隔, Space interval): 3
+(长度的相对性, Relativity of length): 2
+(运动长度, Moving length): 4
+(固有长度, Proper length): 4

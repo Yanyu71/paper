@@ -1,0 +1,51 @@
+﻿[{
+"knowledge_points": [
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "刚体定轴转动定律", "en": "Law of rotational motion of rigid bodies"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"},
+   {"title": "转动惯量的物理意义", "en": "Physical meaning of moment of inertia"},
+   {"title": "质点的质量", "en": "Mass of a particle"},
+   {"title": "转动中的惯性", "en": "Inertia in rotation"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "飞轮", "en": "Flywheel"},
+   {"title": "转动状态", "en": "Rotational state"},
+   {"title": "转动惯量对转动的作用", "en": "Effect of moment of inertia on rotation"},
+   {"title": "质量分布", "en": "Mass distribution"},
+   {"title": "质量密度", "en": "Mass density"},
+   {"title": "线密度", "en": "Linear density"},
+   {"title": "面密度", "en": "Surface density"},
+   {"title": "体密度", "en": "Volume density"},
+   {"title": "转动惯量的计算", "en": "Calculation of moment of inertia"},
+   {"title": "转动惯量的定义式", "en": "Definition formula of moment of inertia"},
+   {"title": "线分布的刚体", "en": "Rigid body with linear distribution of mass"},
+   {"title": "面分布的刚体", "en": "Rigid body with surface distribution of mass"},
+   {"title": "体分布的刚体", "en": "Rigid body with volume distribution of mass"},
+   {"title": "转动惯量的大小决定因素", "en": "Factors determining the magnitude of moment of inertia"},
+   {"title": "转轴", "en": "Axis of rotation"},
+   {"title": "总质量", "en": "Total mass"},
+   {"title": "形状", "en": "Shape"},
+   {"title": "大小", "en": "Size"},
+   {"title": "密度", "en": "Density"},
+   {"title": "实心圆柱", "en": "Solid cylinder"}
+]
+},{
+"knowledge_points": [
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "细杆", "en": "Thin rod"},
+   {"title": "转轴", "en": "Axis of rotation"},
+   {"title": "转动惯量计算", "en": "Calculation of moment of inertia"},
+   {"title": "平行轴定理", "en": "Parallel axis theorem"},
+   {"title": "转动惯量叠加定理", "en": "Addition theorem of moment of inertia"},
+   {"title": "质心", "en": "Center of mass"},
+   {"title": "圆环", "en": "Ring"},
+   {"title": "薄圆盘", "en": "Thin disk"}
+]
+},{
+"knowledge_points": [
+   {"title": "转动惯量的定义式", "en": "Definition of moment of inertia"},
+   {"title": "转动惯量的计算", "en": "Calculation of moment of inertia"},
+   {"title": "常见刚体的转动惯量", "en": "Moment of inertia of common rigid bodies"},
+   {"title": "转动惯量的有用性", "en": "Usefulness of moment of inertia"}
+]
+}]

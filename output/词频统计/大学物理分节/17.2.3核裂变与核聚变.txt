@@ -1,0 +1,62 @@
+(激光打靶实现核聚变方案, Laser-driven fusion scheme): 1
+(中微子, Neutrino): 1
+(氦核, Helium nucleus): 1
+(核发电站, Nuclear power plant): 0
+(能量增益, Energy gain): 1
+(堆芯, Core): 4
+(增长时间t, Increase time t): 0
+(加大密度, Increase density): 1
+(核燃料, Nuclear fuel): 3
+(铀, Uranium): 3
+(碳氮循环, CNO cycle): 2
+(磁约束法, Magnetic confinement): 1
+(持链式反应, Chain reaction): 4
+(燃料弹丸, Fuel pellet): 1
+(质子, Proton): 9
+(氘核, Deuteron): 3
+(控制棒, Control rod): 3
+(激光核聚变, Laser nuclear fusion): 1
+(核聚变, Nuclear fusion): 18
+(惯性约束法, Inertial confinement): 1
+(王淦昌, Wang Ganchang): 1
+(点火, Ignition): 2
+(原子弹, Atomic bomb): 6
+(共振吸收现象, Resonant absorption phenomenon): 1
+(碰撞频率, Collision frequency): 1
+(自持受控核聚变, Self-sustained controlled nuclear fusion): 3
+(核子, Nucleon): 5
+(减少密度, Decrease density): 1
+(温度, Temperature): 7
+(等离子体, Plasma): 4
+(巴索夫, Basov): 1
+(冷却剂, Coolant): 2
+(等离子态, Plasma state): 1
+(时间T, Time T): 1
+(库仑斥力, Coulomb repulsion): 1
+(核电站, Nuclear power plant): 2
+(髙温, High temperature): 3
+(劳孙判据, Lawson criterion): 2
+(减少时间r, Decrease time r): 1
+(动能, Kinetic energy): 4
+(容器, Container): 1
+(核能, Nuclear energy): 10
+(钚, Plutonium): 2
+(核裂变, Nuclear fission): 16
+(质子-质子循环, Proton-proton cycle): 3
+(临界体积, Critical volume): 2
+(高密度, High density): 2
+(快中子, Fast neutron): 3
+(氢弹, Hydrogen bomb): 6
+(中子, Neutron): 22
+(热中子, Thermal neutron): 1
+(链式反应, Chain reaction): 6
+(离子体密度, Plasma density): 1
+(慢化剂, Moderator): 1
+(核聚变反应, Nuclear fusion reaction): 5
+(燃料元件, Fuel element): 1
+(重氢, Deuterium): 1
+(核反应堆, Nuclear reactor): 4
+(太阳, Sun): 7
+(聚变核自身的惯性, Inertia of fusion nuclei): 0
+(反射层, Reflector): 2
+(裂变, Nuclear fission): 33

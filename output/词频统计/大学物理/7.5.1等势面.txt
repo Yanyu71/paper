@@ -1,0 +1,8 @@
+(电势相等的点, Points with equal electric potential): 2
+(电场强度, Electric field strength): 317
+(等势面, Equipotential surface): 36
+(电场强度分布, Distribution of electric field strength): 14
+(电势, Electric potential): 348
+(静电场, Static electric field): 122
+(电场线, Electric field lines): 52
+(电势差, Electric potential difference): 88

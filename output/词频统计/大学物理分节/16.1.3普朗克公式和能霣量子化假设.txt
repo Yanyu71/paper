@@ -1,0 +1,14 @@
+(普朗克公式, Planck's formula): 4
+(温度, Temperature): 5
+(经典物理学, Classical physics): 5
+(量子数, Quantum number): 6
+(能量变化率, Rate of energy change): 2
+(普朗克, Planck): 12
+(辐出度, Emissivity): 1
+(白炽灯, Incandescent lamp): 2
+(微观世界, Microscopic world): 1
+(能量量子化, Energy quantization): 0
+(黑体辐射, Blackbody radiation): 2
+(振子的能量, Energy of oscillator): 3
+(量子物理学, Quantum physics): 1
+(能量子, Energy quantum): 4

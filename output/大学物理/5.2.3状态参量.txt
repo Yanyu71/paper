@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "状态参量", "en": "State variables"},
+   {"title": "位置矢量", "en": "Position vector"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "热力学系统", "en": "Thermodynamic system"},
+   {"title": "宏观状态", "en": "Macrostate"},
+   {"title": "压强", "en": "Pressure"},
+   {"title": "体积", "en": "Volume"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "几何状态参量", "en": "Geometric state variables"},
+   {"title": "力学状态参量", "en": "Mechanical state variables"},
+   {"title": "热学状态参量", "en": "Thermal state variables"},
+   {"title": "温标", "en": "Temperature scale"},
+   {"title": "热力学温标", "en": "Thermodynamic temperature scale"},
+   {"title": "摄氏温标", "en": "Celsius temperature scale"},
+   {"title": "华氏温标", "en": "Fahrenheit temperature scale"}
+]
+}

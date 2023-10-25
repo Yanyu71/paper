@@ -1,0 +1,47 @@
+(闪电, Lightning): 5
+(电偶极子的电势, Potential of an electric dipole): 2
+(电荷元, Charge element): 19
+(电势的计算, Calculation of electric potential): 2
+(电势, Electric potential): 348
+(试验电荷, Test charge): 22
+(电能, Electric energy): 31
+(电势零点, Zero potential point): 20
+(均匀带电球面中的电势分布, Distribution of electric potential in a uniformly charged spherical surface): 0
+(电四极子, Electric quadrupole): 1
+(点电荷电场中的电势, Electric potential in the field of a point charge): 1
+(电荷分布, Charge distribution): 32
+(电场对移动电子所作的功, Work done by electric field on moving electron): 1
+(电荷量, Charge): 14
+(电势叠加原理, Superposition principle of electric potential): 6
+(能量守恒定律, Law of conservation of energy): 19
+(电场力作功, Work done by electric field force): 2
+(均匀带电直线中的电势分布, Distribution of electric potential in a uniformly charged straight line): 0
+(同心均匀带电球面, Concentric uniformly charged spherical shells): 1
+(微分关系, Differential relationship): 8
+(均匀带电圆盘, Uniformly charged disk): 1
+(雷雨季节, Thunderstorm season): 1
+(电子, Electron): 699
+(带电体, Charged object): 39
+(静电力的保守性, Conservativeness of electrostatic force): 0
+(点电荷系电场中的电势, Electric potential in the field of a system of point charges): 1
+(电势能, Electric potential energy): 36
+(点电荷的电势, Potential of a point charge): 1
+(均匀带电细杆, Uniformly charged thin rod): 1
+(高斯定理, Gauss's theorem): 63
+(电势差, Potential difference): 88
+(路径, Path): 130
+(云团, Cloud cluster): 1
+(勺电势, Potential at infinity): 1
+(无限长圆柱面, Infinite cylindrical surface): 1
+(静电场的环路定理, Loop theorem of electrostatic field): 10
+(电场强度, Electric field strength): 317
+(均匀带电圆环, Uniformly charged ring): 3
+(电势分布, Distribution of electric potential): 13
+(电场, Electric field): 882
+(净电荷, Net charge): 9
+(对称性, Symmetry): 63
+(电中性, Electrically neutral): 6
+(接地, Grounding): 12
+(等势面, Equipotential surface): 36
+(均匀带电球体, Uniformly charged sphere): 11
+(电机壳, Machine casing): 0

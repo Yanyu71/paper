@@ -1,0 +1,6 @@
+(自然光的偏振分解, Decomposition of natural light): 0
+(线偏振光, Polarized light): 61
+(偏振片, Polarizing filter): 78
+(自然光, Natural light): 56
+(光矢量, Light vector): 31
+(部分偏振光, Partial polarized light): 11

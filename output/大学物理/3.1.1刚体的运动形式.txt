@@ -1,0 +1,10 @@
+﻿{
+"knowledge_points": [
+   {"title": "刚体的运动形式", "en": "Motion forms of rigid bodies"},
+   {"title": "刚体的平动", "en": "Translation of rigid bodies"},
+   {"title": "刚体的定轴转动", "en": "Fixed-axis rotation of rigid bodies"},
+   {"title": "刚体的平面平行运动", "en": "Planar parallel motion of rigid bodies"},
+   {"title": "刚体的定点运动", "en": "Fixed-point motion of rigid bodies"},
+   {"title": "刚体的一般运动", "en": "General motion of rigid bodies"}
+]
+}

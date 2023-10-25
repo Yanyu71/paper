@@ -1,0 +1,17 @@
+(振幅, Amplitude): 244
+(旋转矢量图, Rotational vector diagram): 2
+(几何关系, Geometric relationship): 4
+(运动学问题, Kinematics problem): 8
+(谐振动, Harmonic oscillation): 244
+(超前, Ahead): 9
+(运动学方程, Kinematic equation): 23
+(复数表示法, Complex number representation): 1
+(旋转矢量表示法, Rotational vector representation): 2
+(相位, Phase): 226
+(角频率, Angular frequency): 40
+(投影, Projection): 45
+(加速度, Acceleration): 397
+(平衡位置, Equilibrium position): 72
+(相位差, Phase difference): 116
+(速度, Velocity): 1354
+(旋转矢量法, Rotational vector method): 7

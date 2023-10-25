@@ -1,0 +1,63 @@
+(:wi, :wi): 1
+(原子核反冲, Nuclear recoil): 0
+(天文, Astronomy): 1
+(引力势能, gravitational potential energy): 1
+(共振吸收, Resonant absorption): 9
+(3/2+1/2, 3/2+1/2): 0
+(发光星球, luminous planet): 3
+(光子能量, photon energy): 3
+(物理, Physics): 6
+(+1/2, +1/2): 0
+(-10, -10): 1
+(-2, -2): 2
+(发射吸收, Emission and absorption): 1
+(环保, Environmental protection): 1
+(电四极分裂, electric quadrupole splitting): 2
+(共振吸收现象, Resonance absorption phenomenon): 4
+(穆斯堡尔效应, Mössbauer effect): 16
+(地质, Geology): 1
+(能量的相对变化, Relative change in energy): 0
+(塞曼效应, Zeeman effect): 1
+(射线能量分辨率, Energy resolution of radiation): 0
+(-4, -4): 1
+(图17.7, 图17.7): 2
+(II, II): 1
+(it, it): 1
+(能量守恒定律, Law of conservation of energy): 1
+(发射与吸收光子的能量, Energy of emitted and absorbed photons): 1
+(考古, Archaeology): 1
+(古物鉴定, Antique identification): 1
+(核反冲造成的能量损失, Energy loss caused by nuclear recoil): 1
+(核激发态的能级宽度, Width of nuclear excited state energy level): 1
+(57Fe, 57Fe): 6
+(反冲能量, Recoil energy): 1
+(化学, Chemistry): 1
+(冶金, Metallurgy): 1
+(超精细结构, hyperfine structure): 1
+(生物, Biology): 1
+(3/2, 3/2): 6
+(⑷, ⑷): 1
+(能童改变?罟/GO^eV}(b), 能童改变?罟/GO^eV}(b): 0
+(50504433, 50504433): 0
+(1/2, 1/2): 8
+(4, 4): 34
+(穆斯堡尔吸收谱线, Mössbauer absorption spectrum): 1
+(正如我们前面所述, 由于穆斯堡尔效应不仅具有极髙的精度,而且在实验设备方面相对较简单,因此这项技术发展非常迅速,应用十分广泛,20世纪70年代以来在我国也得到了迅速发展,在基础研究和应用研究方面都取得了显著成果.希望对穆斯堡尔效应作进一步学习的读者可参阅有关文献., As we mentioned earlier, the Mössbauer effect has not only high precision, but also relatively simple experimental equipment. Therefore, this technology has developed rapidly and has been widely used. Since the 1970s, it has also developed rapidly in China and has achieved significant results in both basic research and applied research. Readers who want to further study the Mössbauer effect can refer to relevant literature.): 1
+(vvY, vvY): 1
+(1111I1tr11, 1111I1tr11): 0
+(科学界, Scientific community): 1
+(医学, Medicine): 1
+(多普勒公式, Doppler formula): 1
+(共振吸收峰值, Resonant absorption peak): 0
+(1i1iii\i_ii, 1i1iii\i_ii): 0
+(能量分辨率, Energy resolution): 1
+(海森伯不确定关系, Heisenberg's uncertainty principle): 1
+(-6, -6): 1
+(穆斯堡尔实验装置, Mössbauer experimental setup): 1
+(磁超精细分裂, magnetic hyperfine splitting): 1
+(0, 0): 43
+(工业, Industry): 1
+(2, 2): 51
+(引力红移, gravitational redshift): 3
+(-8, -8): 1
+(精度, Precision): 4

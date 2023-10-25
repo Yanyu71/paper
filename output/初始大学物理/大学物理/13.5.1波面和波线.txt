@@ -1,0 +1,11 @@
+﻿{
+"knowledge_points": [
+   {"title": "波面", "en": "Wavefront"},
+   {"title": "同相面", "en": "Phase surface"},
+   {"title": "球面波", "en": "Spherical wave"},
+   {"title": "平面波", "en": "Plane wave"},
+   {"title": "柱面波", "en": "Cylindrical wave"},
+   {"title": "波线", "en": "Wavefront"},
+   {"title": "传播方向", "en": "Propagation direction"}
+]
+}

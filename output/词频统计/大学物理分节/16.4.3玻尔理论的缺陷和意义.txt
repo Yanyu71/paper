@@ -1,0 +1,22 @@
+(定态不辐射, non-radiation of stationary states): 1
+(电子衍射实验, electron diffraction experiment): 1
+(类氢离子, hydride ion): 1
+(氢原子, hydrogen atom): 7
+(光谱线结构, spectral line structure): 1
+(半经典量子理论, semi-classical quantum theory): 1
+(量子力学, quantum mechanics): 3
+(能级跃迁, energy level transition): 1
+(轨道, orbit): 3
+(玻尔理论, Bohr theory): 5
+(反氢原子, anti-hydrogen atom): 1
+(巴耳末系, Balmer series): 1
+(波粒二象性, wave-particle duality): 4
+(莱曼线系, Lyman series): 1
+(德布罗意, de Broglie): 2
+(量子化条件, quantization condition): 1
+(能级, energy level): 2
+(激发态, excited state): 1
+(谱线强度, spectral line intensity): 1
+(谱线偏振性, spectral line polarization): 0
+(谱线宽度, spectral line width): 0
+(氦离子, helium ion): 1

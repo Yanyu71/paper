@@ -1,0 +1,33 @@
+(透镜物像公式, Lens Formula): 6
+(分界面, Interface): 23
+(光的折射, Refraction of light): 8
+(光密介质, Optically dense medium): 15
+(海市蜃楼, Mirage): 2
+(光的反射定律, Law of Reflection): 2
+(频率, Frequency): 461
+(反射线, Reflected ray): 7
+(光的反射和折射定律, Laws of reflection and refraction of light): 2
+(速率, Speed): 534
+(光疏介质, Optically rare medium): 15
+(光疏介质, Rare medium): 15
+(反射镜, Reflecting mirror): 117
+(光路图, Ray diagram): 16
+(入射面, Incident plane): 6
+(折射线, Refracted ray): 12
+(入射线, Incident ray): 9
+(光的反射, Reflection of light): 10
+(入射角, Incident angle): 32
+(全身像, Full-body Image): 6
+(法线, Normal): 51
+(观察者, Observer): 108
+(折射率, Refractive Index): 163
+(反射角, Reflected angle): 9
+(折射定律, Law of Refraction): 20
+(光的折射定律, Law of Refraction): 0
+(物体, Object): 721
+(折射率, Refractive index): 163
+(折射角, Refracted angle): 20
+(光密介质, Dense medium): 15
+(几何光学, Geometric Optics): 38
+(波长, Wavelength): 470
+(镜面反射, Mirror Reflection): 2

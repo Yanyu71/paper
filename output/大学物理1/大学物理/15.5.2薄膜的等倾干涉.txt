@@ -1,0 +1,84 @@
+﻿[{
+"knowledge_points": [
+   {"title": "等倾干涉", "en": "Equal-inclination interference"},
+   {"title": "薄膜", "en": "Thin film"},
+   {"title": "干涉", "en": "Interference"},
+   {"title": "厚度", "en": "Thickness"},
+   {"title": "反射光", "en": "Reflected light"},
+   {"title": "光波", "en": "Light wave"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "入射角", "en": "Incident angle"},
+   {"title": "干涉图样", "en": "Interference pattern"},
+   {"title": "实验装置", "en": "Experimental setup"},
+   {"title": "明纹公式", "en": "Formula for bright fringes"},
+   {"title": "暗纹公式", "en": "Formula for dark fringes"}
+]
+},{
+"knowledge_points": [
+   {"title": "等倾干涉实验", "en": "Equal inclination interference experiment"},
+   {"title": "高精度平板", "en": "High precision plate"},
+   {"title": "平整度", "en": "Flatness"},
+   {"title": "小孔光源", "en": "Pinhole light source"},
+   {"title": "透镜", "en": "Lens"},
+   {"title": "半反射板", "en": "Semi-reflective plate"},
+   {"title": "玻璃平板", "en": "Glass plate"},
+   {"title": "干涉条纹", "en": "Interference fringes"},
+   {"title": "平板厚度", "en": "Plate thickness"},
+   {"title": "增透膜", "en": "Anti-reflection coating"},
+   {"title": "氟化镁", "en": "Magnesium fluoride"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "反射波干涉相消", "en": "Interference cancellation of reflected waves"},
+   {"title": "半波损失", "en": "Half-wave loss"},
+   {"title": "蓝紫色", "en": "Blue-violet color"},
+   {"title": "二氧化硅", "en": "Silicon dioxide"},
+   {"title": "ZnS介质膜", "en": "ZnS dielectric film"},
+   {"title": "反射光增强", "en": "Reflection enhancement"}
+]
+},{
+"knowledge_points": [
+   {"title": "半波损失", "en": "Half-wave loss"},
+   {"title": "薄膜层", "en": "Thin film layer"},
+   {"title": "增反膜", "en": "Anti-reflective film"},
+   {"title": "薄膜干涉原理", "en": "Thin film interference principle"},
+   {"title": "透射式干涉滤色片", "en": "Transmissive interference filter"},
+   {"title": "反射式干涉滤色片", "en": "Reflective interference filter"},
+   {"title": "反射面", "en": "Reflective surface"},
+   {"title": "镀膜", "en": "Coating"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "厚度", "en": "Thickness"},
+   {"title": "油膜", "en": "Oil film"},
+   {"title": "玻璃板", "en": "Glass plate"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "反射光干涉相消", "en": "Interference cancellation of reflected light"},
+   {"title": "滤光", "en": "Filtering"},
+   {"title": "透明介质膜", "en": "Transparent dielectric film"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "实时监控镀膜厚度", "en": "Real-time monitoring of coating thickness"}
+]
+},{
+"knowledge_points": [
+   {"title": "等厚干涉", "en": "Equal thickness interference"},
+   {"title": "等倾干涉", "en": "Equal inclination interference"},
+   {"title": "薄膜", "en": "Thin film"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "明条纹", "en": "Bright fringe"},
+   {"title": "暗条纹", "en": "Dark fringe"},
+   {"title": "半波损失", "en": "Half-wave loss"},
+   {"title": "条纹间距", "en": "Fringe spacing"},
+   {"title": "光波波长", "en": "Wavelength of light wave"},
+   {"title": "介质折射率", "en": "Refractive index of medium"},
+   {"title": "薄膜厚度", "en": "Thickness of thin film"},
+   {"title": "空气劈尖", "en": "Air wedge"},
+   {"title": "凹凸不平", "en": "Uneven"},
+   {"title": "肥皂液膜", "en": "Soap film"},
+   {"title": "牛顿环", "en": "Newton's rings"},
+   {"title": "单色光", "en": "Monochromatic light"},
+   {"title": "环纹半径", "en": "Radius of the ring"},
+   {"title": "雷达波", "en": "Radar wave"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "迈克耳孙干涉仪", "en": "Michelson interferometer"},
+   {"title": "时间相干性", "en": "Temporal coherence"}
+]
+}]

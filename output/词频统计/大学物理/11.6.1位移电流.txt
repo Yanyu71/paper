@@ -1,0 +1,20 @@
+(非稳恒电流, Non-steady current): 2
+(磁感应强度, Magnetic induction intensity): 258
+(稳恒电流, Steady current): 23
+(电容器充放电过程, Charging and discharging process of a capacitor): 2
+(位移电流, Displacement current): 24
+(磁场强度, Magnetic field intensity): 29
+(圆柱电流, Cylindrical current): 1
+(极板间的位移电流, Displacement current between the plates): 1
+(全电流安培环路定理, Ampere's circuital law for total current): 2
+(传导电流, Conduction current): 41
+(电流强度, Current intensity): 21
+(磁场, Magnetic field): 738
+(磁场线, Magnetic field lines): 44
+(电位移, Electric displacement): 21
+(有旋磁场, Rotational magnetic field): 2
+(移电流, Moving current): 25
+(安培环路定理, Ampere's circuital law): 53
+(电场, Electric field): 882
+(全电流, Total current): 3
+(闭合曲线, Closed curve): 13

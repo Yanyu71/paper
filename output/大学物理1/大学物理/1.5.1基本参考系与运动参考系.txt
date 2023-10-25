@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "基本参考系", "en": "Basic reference frame"},
+   {"title": "运动参考系", "en": "Moving reference frame"},
+   {"title": "绝对运动", "en": "Absolute motion"},
+   {"title": "绝对速度", "en": "Absolute velocity"},
+   {"title": "相对运动", "en": "Relative motion"},
+   {"title": "相对速度", "en": "Relative velocity"},
+   {"title": "牵连运动", "en": "Constrained motion"},
+   {"title": "牵连速度", "en": "Constrained velocity"},
+   {"title": "平动", "en": "Translation motion"},
+   {"title": "轨迹", "en": "Trajectory"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"}
+]
+}]

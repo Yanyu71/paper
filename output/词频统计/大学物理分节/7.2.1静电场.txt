@@ -1,0 +1,15 @@
+(超距作用, Action at a distance): 1
+(电场强度叠加, Superposition of electric field strength): 1
+(电磁场, Electromagnetic field): 1
+(电荷, Charge): 15
+(电场强度, Electric field strength): 4
+(电场力, Electric field force): 3
+(电场, Electric field): 23
+(静电场, Static electric field): 4
+(电势, Electric potential): 1
+(电流, Electric current): 1
+(场, Field): 29
+(静电相互作用力, Static electrostatic interaction force): 1
+(电磁波, Electromagnetic wave): 2
+(点电荷, Point charge): 1
+(物质世界, Material world): 1

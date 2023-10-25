@@ -1,0 +1,12 @@
+(光的电磁理论, electromagnetic theory of light): 1
+(夫琅禾费衍射, Fraunhofer diffraction): 1
+(次波, secondary wave): 7
+(惠更斯-菲涅耳原理的数学表达式, mathematical expression of Huygens-Fresnel principle): 1
+(波面, wavefront): 3
+(菲涅耳的设想, Fresnel's idea): 1
+(菲涅耳衍射积分公式, Fresnel diffraction integral formula): 1
+(惠更斯-菲涅耳原理, Huygens-Fresnel principle): 2
+(倾斜因子, tilt factor): 1
+(初相位, initial phase): 1
+(方位角, azimuth angle): 0
+(振幅, amplitude): 3

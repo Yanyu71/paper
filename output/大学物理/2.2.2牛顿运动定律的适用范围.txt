@@ -1,0 +1,28 @@
+﻿{
+"knowledge_points": [
+   {"title": "牛顿运动定律", "en": "Newton's laws of motion"},
+   {"title": "质点", "en": "particle"},
+   {"title": "惯性系", "en": "inertial reference frame"},
+   {"title": "非惯性系", "en": "non-inertial reference frame"},
+   {"title": "宏观物体", "en": "macroscopic object"},
+   {"title": "微观粒子", "en": "microscopic particle"},
+   {"title": "低速", "en": "low speed"},
+   {"title": "相对论力学", "en": "relativistic mechanics"},
+   {"title": "量子力学", "en": "quantum mechanics"},
+   {"title": "自由电子", "en": "free electron"},
+   {"title": "宏观电磁场", "en": "macroscopic electromagnetic field"},
+   {"title": "牛顿力学", "en": "Newtonian mechanics"},
+   {"title": "工程实际问题", "en": "engineering practical problems"}
+],
+"relationships": [
+   {"source": "牛顿运动定律", "target": "质点", "type": "适用于", "description": "牛顿运动定律只适用于质点或作平动的物体"},
+   {"source": "牛顿运动定律", "target": "惯性系", "type": "适用于", "description": "牛顿运动定律适用于惯性系"},
+   {"source": "牛顿运动定律", "target": "非惯性系", "type": "不适用于", "description": "在非惯性系中直接应用牛顿运动定律会导致错误的结论"},
+   {"source": "牛顿运动定律", "target": "宏观物体", "type": "适用于", "description": "牛顿运动定律适用于低速领域的宏观物体"},
+   {"source": "宏观物体", "target": "微观粒子", "type": "包含", "description": "宏观物体中包含着巨量的微观粒子"},
+   {"source": "低速", "target": "相对论力学", "type": "不适用于", "description": "高速运动物体服从相对论力学规律"},
+   {"source": "低速", "target": "量子力学", "type": "不适用于", "description": "微观粒子的运动遵循量子力学的规律"},
+   {"source": "牛顿运动定律", "target": "自由电子", "type": "适用于", "description": "自由电子在宏观电磁场中的运动可以用牛顿力学规律来处理"},
+   {"source": "牛顿力学", "target": "工程实际问题", "type": "理论基础和工具", "description": "牛顿力学是一般技术科学的理论基础和解决工程实际问题的重要依据和工具"}
+]
+}

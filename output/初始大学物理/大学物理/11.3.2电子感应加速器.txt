@@ -1,0 +1,22 @@
+﻿{
+"knowledge_points": [
+   {"title": "电子感应加速器", "en": "Electron Induction Accelerator"},
+   {"title": "旋电场", "en": "Rotating Electric Field"},
+   {"title": "柱形电磁铁", "en": "Cylindrical Electromagnet"},
+   {"title": "真空室", "en": "Vacuum Chamber"},
+   {"title": "交变电流", "en": "Alternating Current"},
+   {"title": "交变磁场", "en": "Alternating Magnetic Field"},
+   {"title": "有旋电场", "en": "Rotating Electric Field"},
+   {"title": "电子枪", "en": "Electron Gun"},
+   {"title": "洛伦兹力", "en": "Lorentz Force"},
+   {"title": "磁感应强度", "en": "Magnetic Induction"},
+   {"title": "电子圆形轨道", "en": "Electron Circular Orbit"},
+   {"title": "动量", "en": "Momentum"},
+   {"title": "切向力", "en": "Tangential Force"},
+   {"title": "磁通量", "en": "Magnetic Flux"},
+   {"title": "空隙", "en": "Gap"},
+   {"title": "交变场", "en": "Alternating Field"},
+   {"title": "周期", "en": "Period"},
+   {"title": "能量", "en": "Energy"}
+]
+}

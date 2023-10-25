@@ -1,0 +1,43 @@
+(干涉图样, interference pattern): 25
+(针孔间距, pinhole spacing): 2
+(双缝干涉实验装置, double-slit interference experimental setup): 2
+(干涉性质和特点, interference properties and characteristics): 1
+(光的干涉现象, interference phenomenon of light): 5
+(相干光源, coherent light source): 4
+(光的波动性, wave nature of light): 5
+(屏幕与双缝距离, distance between screen and double slits): 1
+(彩色条纹, colored fringes): 4
+(杨氏干涉实验装置, Young's interference experiment setup): 1
+(杨氏干涉, Young's interference): 23
+(干涉条纹, interference fringes): 122
+(相干光波, coherent light waves): 7
+(杨氏干涉的强度公式, Young's interference intensity formula): 1
+(干涉条纹间距, interference fringe spacing): 5
+(波长, wavelength): 470
+(重叠, overlap): 28
+(杨氏干涉实验, Young's interference experiment): 14
+(激光, laser): 223
+(相邻明条纹间距, distance between adjacent bright fringes): 3
+(观测屏幕, observation screen): 21
+(干涉减弱, interference reduction): 5
+(分波前干涉空间相干性, interference spatial coherence of divided wavefronts): 4
+(暗条纹, dark fringes): 21
+(红光, red light): 15
+(相位差, phase difference): 116
+(干涉图样的强度关系, intensity relationship of interference pattern): 1
+(双缝间距, distance between double slits): 9
+(钠光灯, sodium lamp): 4
+(白光, white light): 21
+(波程差, path difference): 20
+(紫光, violet light): 8
+(中央明纹, central bright fringe): 21
+(级次, order): 20
+(针孔, pinhole): 5
+(明条纹, bright fringes): 51
+(最小分辨距离, minimum resolvable distance): 2
+(光波的叠加原理, superposition principle of light waves): 1
+(干涉光强分布曲线, interference intensity distribution curve): 1
+(干涉条纹的间距, interference fringe spacing): 4
+(惠更斯原理, Huygens' principle): 24
+(光强极小, minimum intensity): 1
+(光谱的级次, order of spectrum): 3

@@ -1,0 +1,24 @@
+(分子性质, Molecular Properties): 0
+(平均碰撞频率, Mean Collision Frequency): 15
+(能量均分定理, Equipartition Theorem): 3
+(气体状态, Gas State): 11
+(分子的有效直径, Effective diameter of molecules): 9
+(理想气体状态方程, Ideal Gas State Equation): 8
+(重力场, Gravity Field): 10
+(自由路程, Free path): 1
+(分子数密度, Molecular Number Density): 15
+(平均自由程, Average free path): 22
+(分子的平均碰撞频率, Average collision frequency of molecules): 5
+(平均自由程, Mean Free Path): 22
+(温度, Temperature): 370
+(麦克斯韦速率分布律, Maxwell Speed Distribution Law): 14
+(单位体积内的分子数, Number of molecules per unit volume): 4
+(分子的碰撞, Collision of molecules): 1
+(压强, Pressure): 132
+(分子的运动轨迹, Motion trajectory of molecules): 0
+(平均碰撞频率, Average collision frequency): 15
+(分子的相对速率, Relative velocity of molecules): 0
+(平均速率, Average velocity): 36
+(玻耳兹曼能量分布律, Boltzmann Energy Distribution Law): 3
+(内能, Internal Energy): 119
+(气体的压强, Pressure of gas): 21

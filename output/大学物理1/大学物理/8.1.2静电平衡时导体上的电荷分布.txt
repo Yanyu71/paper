@@ -1,0 +1,47 @@
+﻿[{
+"knowledge_points": [
+   {"title": "静电平衡", "en": "Static equilibrium"},
+   {"title": "导体", "en": "Conductor"},
+   {"title": "净电荷", "en": "Net charge"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电荷面密度", "en": "Charge surface density"},
+   {"title": "曲率", "en": "Curvature"},
+   {"title": "尖端放电", "en": "Corona discharge"},
+   {"title": "避雷针", "en": "Lightning rod"}
+]
+},{
+"knowledge_points": [
+   {"title": "导体", "en": "Conductor"},
+   {"title": "感应电荷", "en": "Induced charge"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "自由电子", "en": "Free electrons"},
+   {"title": "静电平衡", "en": "Electrostatic equilibrium"},
+   {"title": "静电屏蔽", "en": "Electrostatic shielding"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "金属壳", "en": "Metal shell"},
+   {"title": "电荷面密度", "en": "Charge surface density"},
+   {"title": "电荷守恒定律", "en": "Law of conservation of charge"}
+]
+},{
+"knowledge_points": [
+   {"title": "静电感应", "en": "Electrostatic induction"},
+   {"title": "电场强度分布", "en": "Electric field distribution"},
+   {"title": "电势分布", "en": "Potential distribution"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电荷守恒定律", "en": "Law of conservation of charge"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Potential"},
+   {"title": "电荷分布", "en": "Charge distribution"}
+]
+},{
+"knowledge_points": [
+   {"title": "引力和静电力服从平方反比律", "en": "Gravitational and electrostatic forces obey the inverse square law"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "引力场的屏蔽", "en": "Shielding of gravitational field"},
+   {"title": "引力场和静电场的重要差别", "en": "Important differences between gravitational field and electrostatic field"},
+   {"title": "带电导体的等势面", "en": "Equipotential surface of a charged conductor"},
+   {"title": "导体表面上电荷的均匀分布", "en": "Uniform distribution of charge on the surface of a conductor"},
+   {"title": "导体表面上电场强度的大小", "en": "Magnitude of electric field intensity on the surface of a conductor"}
+]
+}]

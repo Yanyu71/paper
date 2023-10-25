@@ -1,0 +1,16 @@
+﻿{
+"knowledge_points": [
+   {"title": "薛定谔方程", "en": "Schrödinger equation", "type": "解释", "description": "描述量子力学中粒子的波函数随时间和空间的变化关系的方程。"},
+   {"title": "势能函数", "en": "potential function", "type": "解释", "description": "描述粒子所受到的势能随位置变化的函数。"},
+   {"title": "一维无限深势阱", "en": "one-dimensional infinite square well", "type": "解释", "description": "一种理想化的势能形式，将粒子限制在一个无限深的势阱中。"},
+   {"title": "金属表面", "en": "metal surface", "type": "解释", "description": "金属的外部边界，与外界相接触的部分。"},
+   {"title": "维管", "en": "tube", "type": "解释", "description": "一种空间封闭的结构，用于限制粒子的运动范围。"},
+   {"title": "相互碰撞", "en": "collision", "type": "解释", "description": "粒子之间发生物理碰撞，相互影响运动状态的过程。"},
+   {"title": "正离子晶格点阵", "en": "regular lattice of positive ions", "type": "解释", "description": "金属中正离子排列成规则的晶格结构。"},
+   {"title": "定态薛定谔方程", "en": "stationary Schrödinger equation", "type": "解释", "description": "描述系统在稳定状态下的波函数随时间和空间的变化关系的方程。"},
+   {"title": "通解", "en": "general solution", "type": "解释", "description": "方程的所有解的集合。"},
+   {"title": "波函数", "en": "wave function", "type": "解释", "description": "描述量子力学中粒子的状态和性质的数学函数。"},
+   {"title": "边界条件", "en": "boundary condition", "type": "解释", "description": "方程在给定边界上的限制条件。"},
+   {"title": "归一化条件", "en": "normalization condition", "type": "解释", "description": "波函数的模长平方在整个空间上积分等于1的条件。"}
+]
+}

@@ -1,0 +1,12 @@
+(实像点, Real image point): 1
+(物像关系, Object-image relationship): 1
+(透镜, Lens): 1
+(发光点, Luminous point): 4
+(虚像点, Virtual image point): 1
+(光学元件, Optical element): 1
+(反射, Reflection): 2
+(折射, Refraction): 1
+(实物, Real object): 1
+(反射镜, Reflecting mirror): 1
+(虚物, Virtual object): 1
+(球面界面, Spherical interface): 1

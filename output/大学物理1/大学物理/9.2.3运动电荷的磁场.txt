@@ -1,0 +1,35 @@
+﻿[{
+"knowledge_points": [
+   {"title": "运动电荷", "en": "Moving charge"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "毕-萨定律", "en": "Biot-Savart law"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "载流子", "en": "Charge carrier"},
+   {"title": "电流强度", "en": "Current intensity"},
+   {"title": "带电粒子", "en": "Charged particle"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "电荷定向运动速度", "en": "Speed of charged particle"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "带电细棒", "en": "Charged rod"},
+   {"title": "磁感应强度大小", "en": "Magnitude of magnetic induction"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电场和磁场之间的关系", "en": "Relationship between electric field and magnetic field"}
+]
+},{
+"knowledge_points": [
+   {"title": "运动电荷", "en": "Moving charge"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "电感应强度", "en": "Magnetic induction"},
+   {"title": "电荷正负", "en": "Charge polarity"},
+   {"title": "电荷运动速度", "en": "Charge velocity"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "毕-萨定律", "en": "Biot-Savart law"}
+]
+}]

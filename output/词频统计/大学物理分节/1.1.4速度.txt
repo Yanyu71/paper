@@ -1,0 +1,31 @@
+(直角坐标, Rectangular coordinates): 1
+(矢量, Vector): 3
+(时间间隔, Time interval): 8
+(位置坐标, Position coordinates): 1
+(速度增量, Velocity increment): 1
+(速率, Speed): 17
+(一阶导数, First derivative): 0
+(正, Positive): 1
+(位移, Displacement): 6
+(运动方程, Equation of motion): 1
+(标量, Scalar): 1
+(平均速度, Average velocity): 12
+(位矢, Displacement vector): 2
+(瞬时速度, Instantaneous velocity): 3
+(大小, Magnitude): 5
+(方向余弦, Direction cosines): 1
+(路程, Distance): 6
+(分量, Component): 1
+(半径, Radius): 1
+(运动状态, Motion state): 2
+(平均速率, Average speed): 7
+(快慢程度, Speed): 1
+(匀速率圆周运动, Uniform circular motion): 1
+(细节, Details): 1
+(速度, Velocity): 30
+(方向, Direction): 16
+(瞬时速率, Instantaneous speed): 2
+(物理量, Physical quantity): 4
+(质点, Particle): 18
+(坐标轴, Coordinate axis): 2
+(速度矢量, Velocity vector): 1

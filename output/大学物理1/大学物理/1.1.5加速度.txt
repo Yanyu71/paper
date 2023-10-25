@@ -1,0 +1,19 @@
+﻿[{
+"knowledge_points": [
+   {"title": "加速度", "en": "Acceleration", "type": "定义", "description": "加速度是描述质点速度变化的物理量。"},
+   {"title": "平均加速度", "en": "Average acceleration", "type": "定义", "description": "平均加速度是速度增量与时间间隔的比值。"},
+   {"title": "瞬时加速度", "en": "Instantaneous acceleration", "type": "定义", "description": "瞬时加速度是平均加速度在时间趋近于零时的极限值。"},
+   {"title": "矢量", "en": "Vector", "type": "性质", "description": "加速度是矢量，具有大小和方向。"},
+   {"title": "方向", "en": "Direction", "type": "性质", "description": "加速度的方向一般与速度的方向不一致，总是指向轨迹曲线凹侧。"},
+   {"title": "分量", "en": "Component", "type": "性质", "description": "加速度在坐标轴上的分量等于速度在同一坐标轴上的分量对时间的一阶导数，或者等于质点对应该轴的位置坐标对时间的二阶导数。"},
+   {"title": "相对性", "en": "Relativity", "type": "性质", "description": "同一质点在不同参考系中，位置矢量、速度和加速度一般均不相同。"}
+]
+},{
+"knowledge_points": [
+   {"title": "地球", "en": "Earth"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "分子", "en": "Molecule"},
+   {"title": "说法", "en": "Statement"}
+],
+
+}]

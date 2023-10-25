@@ -1,0 +1,57 @@
+(原子, Atom): 626
+(相对性, relativity): 49
+(绝对静止, absolute rest): 1
+(极坐标系, polar coordinate system): 2
+(理想模型, Ideal model): 12
+(轨道, trajectory): 141
+(坐标系, Coordinate system): 106
+(球坐标系, spherical coordinate system): 3
+(运动规律, Motion law): 25
+(位置, position): 452
+(学习, Study): 17
+(理想气体, Ideal gas): 176
+(自然界, Nature): 31
+(地球, Earth): 236
+(公转, Revolution): 4
+(研究问题的方法, Research method for problems): 1
+(索道, cableway): 1
+(物理模型, Physical model): 3
+(依据, Basis): 16
+(刚体, Rigid body): 300
+(宇宙, universe): 31
+(参考系, reference frame): 118
+(物体, object): 721
+(物质, matter): 238
+(滑道, slide): 1
+(弹性体, Elastic body): 2
+(读者, Reader): 87
+(参考系, Reference frame): 118
+(大小, Size): 543
+(物理学, Physics): 160
+(自转, Rotation): 36
+(适用条件, Applicable conditions): 5
+(铁轨, railway track): 4
+(运动状态, Motion state): 60
+(自然坐标系, natural coordinate system): 4
+(运动, motion): 1745
+(形状, Shape): 75
+(点电荷, Point charge): 88
+(机械运动, mechanical motion): 6
+(绝对黑体, Black body): 1
+(物体, Object): 721
+(规律, Law): 268
+(质点, Particle): 900
+(柱坐标系, cylindrical coordinate system): 2
+(轴对称性, axial symmetry): 6
+(科学思维方法, Scientific thinking method): 0
+(球对称性, spherical symmetry): 7
+(力学研究对象, Object of mechanical research): 1
+(实践, Practice): 13
+(直角坐标系, rectangular coordinate system): 27
+(忽略, Ignore): 80
+(质点, particle): 900
+(太阳, Sun): 100
+(坐标系, coordinate system): 106
+(离心轨道, centrifugal orbit): 1
+(流体, Fluid): 16
+(物质, Matter): 238

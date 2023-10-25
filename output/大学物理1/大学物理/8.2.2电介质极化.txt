@@ -1,0 +1,44 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电介质极化", "en": "Dielectric Polarization"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "分子", "en": "Molecule"},
+   {"title": "自由电子", "en": "Free electrons"},
+   {"title": "电导", "en": "Conductivity"},
+   {"title": "电荷中心", "en": "Charge center"},
+   {"title": "电偶极矩", "en": "Electric dipole moment"},
+   {"title": "无极分子", "en": "Nonpolar molecule"},
+   {"title": "电中性", "en": "Electrically neutral"},
+   {"title": "有极分子", "en": "Polar molecule"},
+   {"title": "外电场", "en": "External electric field"},
+   {"title": "位移极化", "en": "Displacement polarization"},
+   {"title": "取向极化", "en": "Orientation polarization"},
+   {"title": "刚性偶极子", "en": "Rigid dipole"},
+   {"title": "弹性偶极子", "en": "Elastic dipole"},
+   {"title": "极化电荷", "en": "Polarization charge"}
+]
+},{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "推荐系统", "en": "Recommendation System"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"}
+], 
+
+}]

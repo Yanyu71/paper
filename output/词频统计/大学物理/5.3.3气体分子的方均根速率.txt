@@ -1,0 +1,9 @@
+(温度, Temperature): 370
+(质量, Mass): 641
+(逃逸速率, Escape velocity): 5
+(平均平动动能公式, Formula for average translational kinetic energy): 1
+(分子速率, Molecular speed): 21
+(方均根速率, Root mean square speed): 25
+(气体分子的方均根速率, Root mean square speed of gas molecules): 5
+(统计平均值, Statistical average): 30
+(热力学温度, Thermodynamic temperature): 13

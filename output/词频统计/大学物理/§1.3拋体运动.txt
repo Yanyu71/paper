@@ -1,0 +1,26 @@
+(球面, Sphere): 279
+(球面方程, Equation of a sphere): 2
+(位置坐标, Position coordinates): 29
+(运动轨迹方程, Equation of motion trajectory): 5
+(拋体运动, Projectile motion): 7
+(运动方程, Equations of motion): 101
+(运动叠加原理, Principle of superposition of motion): 8
+(抛物线运动, Parabolic motion): 1
+(无阻力抛体运动, Projectile motion without air resistance): 2
+(重力加速度, Gravity acceleration): 10
+(射程, Range): 4
+(时间关系, Relationship with time): 1
+(抛体运动, Projectile motion): 13
+(速度, Velocity): 1354
+(轨迹方程, Equation of trajectory): 22
+(直线运动, Linear motion): 66
+(球心位置, Center of sphere): 1
+(初始速度, Initial velocity): 1
+(加速度, Acceleration): 397
+(球面半径, Radius of sphere): 5
+(阻力, Resistance): 74
+(爆炸, Explosion): 22
+(水平射程, Horizontal range): 1
+(无阻力抛体运动, Projectile motion without resistance): 2
+(最大射程, Maximum range): 0
+(碎片, Fragments): 11

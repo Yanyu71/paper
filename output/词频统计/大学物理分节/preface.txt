@@ -1,0 +1,14 @@
+(力学, Mechanics): 0
+(大学物理学, University Physics): 1
+(物理学, Physics): 1
+(科学, Science): 0
+(光学, Optics): 0
+(原子物理学, Atomic Physics): 0
+(相对论, Relativity): 0
+(学科, Discipline): 0
+(固体物理学, Solid State Physics): 0
+(大学, University): 1
+(热学, Thermodynamics): 0
+(电磁学, Electromagnetism): 0
+(量子力学, Quantum Mechanics): 0
+(核物理学, Nuclear Physics): 0

@@ -1,0 +1,23 @@
+﻿[{
+"knowledge_points": [
+   {"title": "静电场力", "en": "Electrostatic force"},
+   {"title": "功", "en": "Work"},
+   {"title": "环路定理", "en": "Loop theorem"},
+   {"title": "点电荷", "en": "Point charge"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "保守力", "en": "Conservative force"},
+   {"title": "保守场", "en": "Conservative field"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电场线", "en": "Electric field lines"},
+   {"title": "球对称性", "en": "Spherical symmetry"}
+]
+},{
+"knowledge_points": [
+   {"title": "电场", "en": "Electric field"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "环路定理", "en": "Loop theorem"}
+]
+}]

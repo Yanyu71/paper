@@ -1,0 +1,33 @@
+(振幅, Amplitude): 244
+(共鸣, Resonance): 2
+(共振时的振幅, Amplitude at resonance): 1
+(极大值, Maximum value): 17
+(弹性回复力, Restoring force): 19
+(共振, Resonance): 89
+(振动系统, Vibration system): 12
+(驱动力角频率, Driving force angular frequency): 1
+(相位差, Phase difference): 116
+(周期性外力, Periodic external force): 3
+(阻尼系数, Damping coefficient): 4
+(谐振动, Harmonic vibration): 244
+(共振的应用, Applications of resonance): 0
+(起始条件, Initial conditions): 9
+(角频率, Angular frequency): 40
+(特解, Particular solution): 3
+(稳定的受迫振动, Stable forced vibration): 1
+(速度共振, Velocity resonance): 4
+(二阶线性非齐次常微分方程, Second-order linear nonhomogeneous ordinary differential equation): 1
+(振幅变化曲线, Amplitude variation curve): 2
+(分子振动能谱, Molecular vibrational spectrum): 0
+(受迫振动, Forced vibration): 18
+(非齐次方程, Nonhomogeneous equation): 1
+(共振对系统的影响, Effects of resonance on systems): 0
+(速度振幅, Velocity amplitude): 5
+(驱动力, Driving force): 19
+(速度, Velocity): 1354
+(阻力, Damping): 74
+(能量共振, Energy resonance): 3
+(齐次方程, Homogeneous equation): 3
+(运动微分方程, Differential equation of motion): 28
+(通解, General solution): 5
+(旋转矢量法, Rotating vector method): 7

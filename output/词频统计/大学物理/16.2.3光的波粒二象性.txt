@@ -1,0 +1,16 @@
+(光子的能量, Energy of a photon): 16
+(红限频率, Red limit frequency): 3
+(普朗克常量, Planck constant): 8
+(光子的质量, Mass of a photon): 3
+(光波的粒子性, Particle nature of light waves): 0
+(光子, Photon): 142
+(光波的波长, Wavelength of light waves): 12
+(光压实验, Pressure of light experiment): 1
+(光波的波动性, Wave nature of light): 1
+(初动能, Initial kinetic energy): 11
+(光电效应, Photoelectric effect): 44
+(光的本性, Nature of light): 2
+(光子的动量, Momentum of a photon): 5
+(逸出功, Work function): 12
+(光波的频率, Frequency of light waves): 6
+(光的波粒二象性, Wave-particle duality of light): 3

@@ -1,0 +1,52 @@
+﻿[{
+"knowledge_points": [
+   {"title": "平面简谐电磁波", "en": "Plane harmonic electromagnetic wave"},
+   {"title": "电场强度", "en": "Electric field intensity"},
+   {"title": "磁场强度", "en": "Magnetic field intensity"},
+   {"title": "振幅矢量", "en": "Amplitude vector"},
+   {"title": "传播速率", "en": "Propagation speed"},
+   {"title": "横波", "en": "Transverse wave"},
+   {"title": "偏振性", "en": "Polarization"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "幅值", "en": "Amplitude"},
+   {"title": "介电常量", "en": "Permittivity"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "真空中的光速", "en": "Speed of light in vacuum"}
+]
+},{
+"knowledge_points": [
+   {"title": "率", "en": "rate"},
+   {"title": "坪", "en": "ping"},
+   {"title": "非铁磁质", "en": "non-magnetic material"},
+   {"title": "电磁波", "en": "electromagnetic wave"},
+   {"title": "能量传播", "en": "energy propagation"},
+   {"title": "辐射", "en": "radiation"},
+   {"title": "辐射能", "en": "radiation energy"},
+   {"title": "各向同性介质", "en": "isotropic medium"},
+   {"title": "电磁能量传播方向", "en": "direction of electromagnetic energy propagation"},
+   {"title": "波速", "en": "wave speed"},
+   {"title": "能量密度", "en": "energy density"},
+   {"title": "电磁场", "en": "electromagnetic field"},
+   {"title": "能流密度", "en": "power density"},
+   {"title": "右螺旋关系", "en": "right-handed helix relationship"},
+   {"title": "能流密度矢量形式", "en": "vector form of power density"},
+   {"title": "频率", "en": "frequency"},
+   {"title": "平均能流密度", "en": "average power density"},
+   {"title": "电磁波强度", "en": "electromagnetic wave intensity"},
+   {"title": "电场矢量振幅", "en": "electric field vector amplitude"},
+   {"title": "辐射功率", "en": "radiated power"},
+   {"title": "最大电场强度", "en": "maximum electric field strength"},
+   {"title": "最大磁感应强度", "en": "maximum magnetic induction intensity"}
+]
+},{
+"knowledge_points": [
+   {"title": "电磁波传播", "en": "Electromagnetic wave propagation"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "磁场强度", "en": "Magnetic field strength"},
+   {"title": "平均能流密度", "en": "Average power density"},
+   {"title": "光学效应", "en": "Optical effect"},
+   {"title": "感光器件", "en": "Photosensitive device"},
+   {"title": "光矢量", "en": "Light vector"},
+   {"title": "光振动", "en": "Light vibration"}
+]
+}]

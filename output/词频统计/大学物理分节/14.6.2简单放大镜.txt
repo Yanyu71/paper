@@ -1,0 +1,15 @@
+(简单放大镜, Simple magnifying glass): 1
+(放大镜, Magnifying glass): 6
+(会聚透镜, Converging lens): 1
+(惠斯顿目镜, Huygens eyepiece): 1
+(显微镜, Microscope): 1
+(像差, Aberration): 1
+(视网膜, Retina): 3
+(冉斯特目镜, Ramsden eyepiece): 1
+(视角, Angle of view): 7
+(角放大率, Angular magnification): 3
+(近点, Near point): 1
+(放大率, Magnification): 4
+(焦距, Focal length): 2
+(复合透镜, Compound lens): 1
+(横向放大率, Lateral magnification): 1

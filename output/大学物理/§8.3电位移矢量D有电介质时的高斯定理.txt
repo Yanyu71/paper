@@ -1,0 +1,33 @@
+﻿{
+"knowledge_points": [
+   {"title": "电位移矢量D", "en": "Electric displacement vector D"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "自由电荷", "en": "Free charge"},
+   {"title": "极化电荷", "en": "Polarization charge"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电容率", "en": "Permittivity"},
+   {"title": "电位移通量", "en": "Electric displacement flux"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "极化电荷面密度", "en": "Polarization charge surface density"}
+]
+}{
+"knowledge_points": [
+   {"title": "式(8.5)", "en": "Equation (8.5)"},
+   {"title": "分界面上的极化电荷面密度", "en": "Polarization charge surface density on the interface"},
+   {"title": "自由电荷分布", "en": "Free charge distribution"},
+   {"title": "电介质中电场强度分布", "en": "Distribution of electric field strength in dielectric"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电位移", "en": "Electric displacement"},
+   {"title": "各向同性均匀电介质", "en": "Isotropic homogeneous dielectric"},
+   {"title": "电介质的极化现象", "en": "Polarization phenomenon of dielectric"},
+   {"title": "导体的静电感应现象", "en": "Static induction phenomenon of conductor"},
+   {"title": "自由电荷与极化电荷的差别", "en": "Difference between free charge and polarization charge"},
+   {"title": "电介质板", "en": "Dielectric plate"},
+   {"title": "平行板电容器", "en": "Parallel plate capacitor"},
+   {"title": "电力", "en": "Electric force"},
+   {"title": "拉进", "en": "Pull in"},
+   {"title": "推出", "en": "Push out"},
+   {"title": "区域", "en": "Region"}
+]
+}

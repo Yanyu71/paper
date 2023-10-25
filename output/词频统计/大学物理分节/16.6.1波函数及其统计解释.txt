@@ -1,0 +1,18 @@
+(波函数, Wave function): 21
+(概率密度, Probability density): 1
+(干涉项, Interference term): 1
+(概率波, probability wave): 1
+(概率总和, Sum of probabilities): 1
+(薛定谔方程, Schrödinger equation): 0
+(双缝干涉实验, double-slit interference experiment): 2
+(条件, Conditions): 1
+(波函数叠加, Superposition of wave functions): 0
+(物质波, matter wave): 13
+(态叠加原理, Principle of superposition of states): 2
+(叠加原理, Superposition principle): 3
+(粒子性与波动性的统一, unity of particle nature and wave nature): 0
+(概率分布, Probability distribution): 1
+(双缝衍射, Double-slit diffraction): 1
+(波函数的统计解释, Statistical interpretation of wave function): 0
+(连续变化, Continuous variation): 1
+(物理意义, Physical meaning): 5

@@ -1,0 +1,9 @@
+(统计规律, Statistical Law): 9
+(力学规律, Mechanical Law): 2
+(伽尔顿板实验, Galton Board Experiment): 3
+(随机事件, Random Event): 1
+(铁钉, Nail): 3
+(小球, Ball): 13
+(偶然事件, Random Event): 5
+(涨落, Fluctuation): 3
+(槽, Slot): 9

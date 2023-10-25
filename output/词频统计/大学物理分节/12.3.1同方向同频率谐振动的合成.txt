@@ -1,0 +1,28 @@
+(振幅, Amplitude): 17
+(极大值, Maximum value): 1
+(频率, Frequency): 16
+(同相, In phase): 1
+(圆心角, Central angle): 2
+(位移, Displacement): 4
+(振动方程, Vibration equation): 5
+(谐振动, Harmonic vibration): 38
+(初相位, Initial phase): 1
+(振动方程, Equation of motion): 5
+(同频率谐振动, Resonance with the same frequency): 3
+(解析法, Analytical method): 3
+(重要应用, Important application): 1
+(多边形法则, Polygon rule): 2
+(旋转矢量法, Rotational vector method): 1
+(外接圆, Circumscribed circle): 1
+(光的衍射, Diffraction of light): 1
+(运动学方程, Kinematic equation): 2
+(矢量合成三角形法则, Vector composition triangle rule): 1
+(极小值, Minimum value): 1
+(合成振动, Composite vibration): 4
+(合成运动, Composite motion): 2
+(初相, Initial phase): 14
+(矢量多边形法则, Vector polygon rule): 0
+(平衡状态, Equilibrium state): 1
+(反相, Out of phase): 2
+(谐振动, Harmonic oscillation): 38
+(初相, Phase): 14

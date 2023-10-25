@@ -1,0 +1,40 @@
+﻿{
+"knowledge_points": [
+   {"title": "最概然速率", "en": "Most probable velocity"},
+   {"title": "平均速率", "en": "Average velocity"},
+   {"title": "方均根速率", "en": "Root mean square velocity"},
+   {"title": "麦克斯韦速率分布函数", "en": "Maxwell velocity distribution function"},
+   {"title": "分子速率", "en": "Molecular velocity"},
+   {"title": "统计平均值", "en": "Statistical average"},
+   {"title": "气体动理论", "en": "Kinetic theory of gases"},
+   {"title": "速率分布函数", "en": "Velocity distribution function"},
+   {"title": "分子数", "en": "Number of molecules"},
+   {"title": "速率区间", "en": "Velocity interval"},
+   {"title": "总分子数", "en": "Total number of molecules"},
+   {"title": "积分", "en": "Integral"},
+   {"title": "运动量", "en": "Momentum"},
+   {"title": "力", "en": "Force"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "摩尔质量", "en": "Molar mass"},
+   {"title": "室温", "en": "Room temperature"},
+   {"title": "数量级", "en": "Order of magnitude"},
+   {"title": "每秒", "en": "Per second"},
+   {"title": "米", "en": "Meter"},
+   {"title": "气体分子运动", "en": "Gas molecule motion"},
+   {"title": "平均自由程", "en": "Mean free path"},
+   {"title": "归一化条件", "en": "Normalization condition"}
+]
+}{
+"knowledge_points": [
+   {"title": "一化", "en": "Normalization"},
+   {"title": "方均根速率", "en": "Root mean square velocity"},
+   {"title": "麦克斯韦速率分布", "en": "Maxwell velocity distribution"},
+   {"title": "速率区间", "en": "Velocity interval"},
+   {"title": "分子数比率", "en": "Molecular number ratio"},
+   {"title": "摩尔质量", "en": "Molar mass"},
+   {"title": "最概然速率", "en": "Most probable velocity"},
+   {"title": "分子总数", "en": "Total number of molecules"},
+   {"title": "速率分布函数", "en": "Velocity distribution function"},
+   {"title": "物理意义", "en": "Physical meaning"}
+]
+}

@@ -1,0 +1,32 @@
+(原子, Atom): 1
+(微分方程, differential equation): 2
+(哈密顿算符, Hamiltonian operator): 1
+(波函数, Wave function): 10
+(位置坐标, position coordinates): 2
+(能量算符, energy operator): 1
+(物质波, Matter wave): 4
+(V(r, t): 3
+(2M, Mass): 1
+(算符, operator): 6
+(拉普拉斯算符, Laplacian operator): 1
+(微观粒子, Microscopic particles): 2
+(偏导数, partial derivative): 3
+(微观体系, Microscopic system): 1
+(质量, mass): 1
+(牛顿定律, Newton's laws): 1
+(非相对论情况, non-relativistic case): 2
+(平面波, plane wave): 3
+(自由粒子, free particle): 5
+(力学量, physical quantity): 2
+(非相对论情况, Non-relativistic situation): 2
+(实验, Experiment): 1
+(动量, momentum): 5
+(基本方程, Fundamental equation): 1
+(外场, external field): 1
+(经典力学, Classical mechanics): 1
+(E, Energy): 4
+(动量算符, momentum operator): 1
+(物质波波函数, matter wave function): 4
+(量子力学, Quantum mechanics): 4
+(薛定谔方程, Schrodinger equation): 7
+(分子, Molecule): 1

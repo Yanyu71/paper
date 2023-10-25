@@ -1,0 +1,13 @@
+﻿[{
+"knowledge_points": [
+   {"title": "刚体绕定轴转动的角动量定理", "en": "Angular Momentum Theorem for Rotational Motion of Rigid Bodies about a Fixed Axis"},
+   {"title": "刚体绕定轴转动的角动量", "en": "Angular Momentum of Rotational Motion of Rigid Bodies about a Fixed Axis"},
+   {"title": "转动惯量", "en": "Moment of Inertia"},
+   {"title": "角速度", "en": "Angular Velocity"},
+   {"title": "转动定律", "en": "Law of Rotational Motion"},
+   {"title": "合外力矩", "en": "Net External Torque"},
+   {"title": "冲量矩", "en": "Impulse Torque"},
+   {"title": "非刚体", "en": "Non-rigid Body"},
+   {"title": "转动刚体的碰撞问题", "en": "Collision Problems of Rotating Bodies"}
+]
+}]

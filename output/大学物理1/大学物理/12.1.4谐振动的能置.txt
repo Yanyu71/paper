@@ -1,0 +1,17 @@
+﻿[{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "弹簧振子", "en": "Spring oscillator"},
+   {"title": "运动学方程", "en": "Kinematic equation"},
+   {"title": "坐标", "en": "Coordinate"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "力", "en": "Force"},
+   {"title": "弹性势能", "en": "Elastic potential energy"},
+   {"title": "动能", "en": "Kinetic energy"},
+   {"title": "周期性变化", "en": "Periodic variation"},
+   {"title": "振动周期", "en": "Oscillation period"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "机械能", "en": "Mechanical energy"}
+]
+}]

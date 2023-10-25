@@ -1,0 +1,19 @@
+﻿[{
+"knowledge_points": [
+   {"title": "简单放大镜", "en": "Simple magnifying glass"},
+   {"title": "视角", "en": "Angle of view"},
+   {"title": "视网膜", "en": "Retina"},
+   {"title": "近点", "en": "Near point"},
+   {"title": "放大镜", "en": "Magnifying glass"},
+   {"title": "会聚透镜", "en": "Converging lens"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "角放大率", "en": "Angular magnification"},
+   {"title": "横向放大率", "en": "Lateral magnification"},
+   {"title": "像差", "en": "Aberration"},
+   {"title": "复合透镜", "en": "Compound lens"},
+   {"title": "惠斯顿目镜", "en": "Huygens eyepiece"},
+   {"title": "冉斯特目镜", "en": "Ramsden eyepiece"},
+   {"title": "显微镜", "en": "Microscope"}
+]
+}]

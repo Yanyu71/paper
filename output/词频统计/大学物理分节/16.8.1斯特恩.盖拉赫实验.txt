@@ -1,0 +1,14 @@
+(小磁铁, small magnet): 7
+(接收板P, receiving plate P): 2
+(轨道角动量, orbital angular momentum): 0
+(均匀磁场, uniform magnetic field): 3
+(磁场, magnetic field): 14
+(底片上原子沉积, atomic deposition on the film): 1
+(斯特恩-盖拉赫实验, Stern-Gerlach experiment): 1
+(角量子数, angular quantum number): 1
+(狭缝S, slit S): 1
+(量子化, quantization): 1
+(非均匀磁场, non-uniform magnetic field): 2
+(电子轨道运动的磁矩, magnetic moment of electron orbital motion): 1
+(磁矩, magnetic moment): 6
+(银原子束, silver atomic beam): 3

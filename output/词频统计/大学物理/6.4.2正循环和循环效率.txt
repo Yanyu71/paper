@@ -1,0 +1,10 @@
+(正循环, Positive cycle): 7
+(热功转换效益, Thermal efficiency): 1
+(冷凝器, Condenser): 7
+(功, Work): 633
+(热量, Heat): 192
+(热源, Heat source): 110
+(循环效率, Cycle efficiency): 15
+(工质, Working fluid): 34
+(压缩过程, Compression process): 9
+(膨胀过程, Expansion process): 26

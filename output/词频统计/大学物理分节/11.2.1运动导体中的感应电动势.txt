@@ -1,0 +1,37 @@
+(磁感应强度, Magnetic induction intensity): 3
+(定律, Law): 6
+(长度, Length): 1
+(积分, Integration): 1
+(角速度, Angular velocity): 4
+(电源, Power source): 3
+(圆盘发电机, Disk generator): 3
+(导线, Wire): 15
+(动生电动势, Induced electromotive force): 16
+(导线运动, Wire movement): 2
+(实际发电机, Actual generator): 1
+(匀强磁场, Uniform magnetic field): 4
+(回路, Circuit): 9
+(间的电势差, Potential difference between two points): 1
+(电势差公式, Formula for potential difference): 0
+(IAVI, IAVI): 0
+(fi, fi): 2
+(电磁感应, Electromagnetic Induction): 5
+(自由电子, Free electrons): 1
+(稳恒, Steady): 2
+(电势差, Potential difference): 4
+(磁场中转动的线圈, Coil rotating in a magnetic field): 1
+(速度, Velocity): 9
+(方向, Direction): 14
+(闭合导体回路, Closed conductor loop): 2
+(洛伦兹力, Lorentz force): 1
+(感应电动势, Induced electromotive force): 1
+(切割磁场线, Cutting magnetic field lines): 0
+(法拉第电磁感应定律, Faraday's law of electromagnetic induction): 3
+(夹角, Angle): 2
+(积分求解, Integral solution): 1
+(非静电场强, Non-electrostatic field strength): 1
+(补偿法, Compensation method): 4
+(尺, Length): 2
+(基本元件, Basic components): 1
+(垂直, Perpendicular): 3
+(电动势, Electromotive force): 27

@@ -1,0 +1,18 @@
+﻿{
+"knowledge_points": [
+   {"title": "电场线", "en": "Electric field lines"},
+   {"title": "法拉第", "en": "Faraday"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "点电荷", "en": "Point charge"},
+   {"title": "正电荷", "en": "Positive charge"},
+   {"title": "负电荷", "en": "Negative charge"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "场强E矢量", "en": "Electric field strength vector"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "闭合线", "en": "Closed line"},
+   {"title": "相交", "en": "Intersect"},
+   {"title": "密度", "en": "Density"},
+   {"title": "面积元dS", "en": "Area element dS"},
+   {"title": "总体分布情况", "en": "Overall distribution"}
+]
+}

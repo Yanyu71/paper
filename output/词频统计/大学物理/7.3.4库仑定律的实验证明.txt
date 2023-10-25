@@ -1,0 +1,15 @@
+(漏电现象, Leakage phenomenon): 1
+(普林顿, Princeton): 2
+(光子, Photon): 142
+(静止质量, Rest mass): 42
+(富兰克林, Franklin): 3
+(麦克斯韦, Maxwell): 80
+(洛敦, London): 2
+(扭枰实验装置, Torsion balance experiment apparatus): 1
+(库仑定律, Coulomb's Law): 24
+(量子电动力学, Quantum electrodynamics): 2
+(高斯定理, Gauss's Theorem): 63
+(绝缘金属桶, Insulated metal barrel): 1
+(点电荷, Point charge): 88
+(平方反比定律, Inverse square law): 4
+(卡文迪许, Cavendish): 5

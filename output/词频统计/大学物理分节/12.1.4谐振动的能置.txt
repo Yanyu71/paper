@@ -1,0 +1,13 @@
+(力, Force): 1
+(振动周期, Oscillation period): 0
+(弹簧振子, Spring oscillator): 3
+(周期性变化, Periodic variation): 1
+(谐振动, Harmonic oscillation): 3
+(运动学方程, Kinematic equation): 1
+(弹性势能, Elastic potential energy): 2
+(动能, Kinetic energy): 4
+(机械能, Mechanical energy): 1
+(坐标, Coordinate): 1
+(位移, Displacement): 1
+(能量, Energy): 1
+(速度, Velocity): 0

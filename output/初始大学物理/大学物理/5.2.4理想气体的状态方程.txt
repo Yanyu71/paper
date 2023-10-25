@@ -1,0 +1,14 @@
+﻿{
+"knowledge_points": [
+   {"title": "理想气体", "en": "Ideal gas"},
+   {"title": "状态方程", "en": "State equation"},
+   {"title": "压强", "en": "Pressure"},
+   {"title": "体积", "en": "Volume"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "状态参量", "en": "State parameters"},
+   {"title": "独立", "en": "Independent"},
+   {"title": "摩尔质量", "en": "Molar mass"},
+   {"title": "气体分子数密度", "en": "Gas molecule number density"},
+   {"title": "玻耳兹曼常量", "en": "Boltzmann constant"}
+]
+}

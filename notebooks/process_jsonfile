@@ -1,0 +1,45 @@
+import os
+def process_jsonfile(filepath):
+    entity_list = []
+    relation_triple_list = []
+    with open(filepath, 'r', encoding='utf-8-sig') as f:
+        json_string = f.read()
+
+    json_list = eval(json_string)
+    for (i, item) in enumerate(json_list):
+        knowledge_points_list = item["knowledge_points"]
+        #relations_list = item["relations"]
+        for knowledge_dict in knowledge_points_list:
+            entity_list.append([knowledge_dict["title"], knowledge_dict["en"]])
+        #for relation_dict in relations_list:
+        #    relation_triple_list.append([relation_dict["source"], relation_dict["type"], relation_dict["target"], relation_dict["description"]])
+
+    new_entity_list = list(set([tuple(t) for t in entity_list])) #去重
+    #new_relation_triple_list = list(set([tuple(t) for t in relation_triple_list]))
+    #return new_entity_list, new_relation_triple_list
+    return new_entity_list
+
+#def process_directory(directory):
+#    for filename in os.listdir(directory):
+#        filepath = os.path.join(directory, filename)
+#        if os.path.isfile(filepath):
+#            process_jsonfile(filepath)
+#        elif os.path.isdir(filepath):
+#            process_directory(filepath)
+
+# 调用函数以处理指定目录中的所有文件
+#process_directory('/path/to/directory')
+def main():
+#    process_directory('/workspaces/paper/output/大学物理1/大学物理/§1.2质点运动学的基本问题.txt')
+    filepath = "/workspaces/paper/output/大学物理1/大学物理/17.3.4电弱统一理论.txt"
+    process_jsonfile(filepath)
+   
+
+if __name__ == "__main__":
+    main()
+
+
+    #filepath = "/workspaces/paper/output/大学物理1/大学物理"
+    #process_jsonfile(filepath)
+    #output_path = r"../词频统计/概率论"
+    # 调用函数以处理指定目录中的所有文件

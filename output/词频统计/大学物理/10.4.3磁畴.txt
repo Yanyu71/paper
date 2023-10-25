@@ -1,0 +1,26 @@
+(磁化方向, Magnetization direction): 14
+(数据, Data): 20
+(脉冲电流, Pulse current): 2
+(临界温度, Curie temperature): 2
+(外半径, Outer radius): 19
+(自旋磁矩, Spin magnetic moment): 9
+(矩磁材料, Rectangular magnetic material): 2
+(交换耦合, Exchange coupling): 1
+(磁场强度, Magnetic field strength): 29
+(磁芯外半径, Outer radius of magnetic core): 0
+(磁场线, Magnetic field lines): 44
+(磁芯材料的矫顽力, Coercive force of magnetic core material): 2
+(磁芯材料, Magnetic core material): 2
+(外磁场, External magnetic field): 43
+(磁畴, Magnetic domain): 18
+(磁芯, Magnetic core): 27
+(无限长载流直导线, Infinite long current-carrying wire): 19
+(电流, Current): 643
+(磁性, Magnetism): 33
+(同心圆, Concentric circles): 11
+(安培环路定理, Ampere's circuital law): 53
+(峰值, Peak value): 16
+(无限长载流直导线, Infinite long current-carrying straight wire): 19
+(铁磁质, Ferromagnetic material): 51
+(磁滞现象, Hysteresis): 4
+(矫顽力, Coercive force): 9

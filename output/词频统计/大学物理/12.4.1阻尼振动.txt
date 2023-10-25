@@ -1,0 +1,30 @@
+(振幅, Amplitude): 244
+(波, Wave): 2687
+(临界阻尼, Critical damping): 4
+(介质阻力, Medium resistance): 2
+(衰减振动, Damped vibration): 9
+(能量补充, Energy supplement): 1
+(运动规律, Motion law): 25
+(大阻尼状态, High damping state): 1
+(库仑干摩擦, Coulomb dry friction): 2
+(弹簧振子, Spring oscillator): 59
+(能量转化, Energy conversion): 5
+(微分方程, Differential equation): 75
+(弹簧门, Spring door): 1
+(小阻尼情况, Small damping): 3
+(机械能, Mechanical energy): 69
+(消振油缸, Vibration damping cylinder): 1
+(临界阻尼系统, Critical damping system): 1
+(周期, Period): 196
+(大阻尼, Large damping): 6
+(线性弹簧振子, Linear spring oscillator): 2
+(速度, Velocity): 1354
+(精密天平, Precision balance): 1
+(阻尼振动, Damped oscillation): 7
+(通解, General solution): 5
+(谐振动, Harmonic oscillation): 244
+(自由振动, Free oscillation): 6
+(阻力, Resistance): 74
+(指针式测量仪表, Pointer measurement instrument): 1
+(耗散, Dissipation): 6
+(粘滞阻尼, Viscous damping): 3

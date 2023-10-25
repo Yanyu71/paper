@@ -1,0 +1,24 @@
+(振幅, Amplitude): 244
+(精度, Accuracy): 31
+(转动惯量, Moment of inertia): 98
+(谐振动, Harmonic motion): 244
+(逐次逼近法, Successive approximation method): 2
+(频率, Frequency): 461
+(修正项, Correction term): 1
+(单摆, Pendulum): 39
+(角频率, Angular frequency): 40
+(非线性项, Nonlinear term): 4
+(基频, Fundamental frequency): 6
+(谐振动, Simple harmonic motion): 244
+(谐波, Harmonic): 69
+(等时性, Isochronism): 4
+(复摆, Compound pendulum): 21
+(摆动, Swing): 22
+(重力, Gravity): 132
+(简谐振动, Simple harmonic motion): 30
+(摆角, Amplitude): 7
+(非线性微分方程, Nonlinear differential equation): 4
+(近似解, Approximate solution): 4
+(误差, Error): 11
+(三次谐频, Third harmonic frequency): 3
+(周期, Period): 196

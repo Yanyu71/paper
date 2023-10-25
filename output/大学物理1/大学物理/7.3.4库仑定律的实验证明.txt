@@ -1,0 +1,37 @@
+﻿[{
+"knowledge_points": [
+   {"title": "库仑定律", "en": "Coulomb's Law"},
+   {"title": "高斯定理", "en": "Gauss's Theorem"},
+   {"title": "扭枰实验装置", "en": "Torsion balance experiment apparatus"},
+   {"title": "点电荷", "en": "Point charge"},
+   {"title": "漏电现象", "en": "Leakage phenomenon"},
+   {"title": "卡文迪许", "en": "Cavendish"},
+   {"title": "麦克斯韦", "en": "Maxwell"},
+   {"title": "普林顿", "en": "Princeton"},
+   {"title": "洛敦", "en": "London"},
+   {"title": "富兰克林", "en": "Franklin"},
+   {"title": "绝缘金属桶", "en": "Insulated metal barrel"},
+   {"title": "平方反比定律", "en": "Inverse square law"},
+   {"title": "量子电动力学", "en": "Quantum electrodynamics"},
+   {"title": "光子", "en": "Photon"},
+   {"title": "静止质量", "en": "Rest mass"}
+]
+},{
+"knowledge_points": [
+   {"title": "库仑定律", "en": "Coulomb's Law"},
+   {"title": "高斯定理", "en": "Gauss's Theorem"},
+   {"title": "扭枰实验装置", "en": "Torsion balance experiment apparatus"},
+   {"title": "点电荷", "en": "Point charge"},
+   {"title": "漏电现象", "en": "Leakage phenomenon"},
+   {"title": "卡文迪许", "en": "Cavendish"},
+   {"title": "麦克斯韦", "en": "Maxwell"},
+   {"title": "普林顿", "en": "Princeton"},
+   {"title": "洛敦", "en": "London"},
+   {"title": "富兰克林", "en": "Franklin"},
+   {"title": "绝缘金属桶", "en": "Insulated metal barrel"},
+   {"title": "平方反比定律", "en": "Inverse square law"},
+   {"title": "量子电动力学", "en": "Quantum electrodynamics"},
+   {"title": "光子", "en": "Photon"},
+   {"title": "静止质量", "en": "Rest mass"}
+]
+}]

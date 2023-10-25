@@ -1,0 +1,25 @@
+(电介质板, Dielectric plate): 2
+(各向同性均匀电介质, Isotropic homogeneous dielectric): 1
+(电介质, Dielectric): 23
+(分界面上的极化电荷面密度, Polarization charge surface density on the interface): 2
+(区域, Region): 1
+(式(8.5), Equation (8.5): 0
+(极化电荷面密度, Polarization charge surface density): 2
+(自由电荷分布, Free charge distribution): 0
+(电位移矢量D, Electric displacement vector D): 1
+(电容率, Permittivity): 2
+(拉进, Pull in): 1
+(电力, Electric force): 1
+(电位移通量, Electric displacement flux): 0
+(高斯定理, Gauss's theorem): 4
+(电位移, Electric displacement): 7
+(电势差, Potential difference): 2
+(电介质的极化现象, Polarization phenomenon of dielectric): 1
+(自由电荷, Free charge): 6
+(平行板电容器, Parallel plate capacitor): 1
+(极化电荷, Polarization charge): 6
+(电场强度, Electric field strength): 6
+(推出, Push out): 1
+(电介质中电场强度分布, Distribution of electric field strength in dielectric): 1
+(自由电荷与极化电荷的差别, Difference between free charge and polarization charge): 0
+(导体的静电感应现象, Static induction phenomenon of conductor): 1

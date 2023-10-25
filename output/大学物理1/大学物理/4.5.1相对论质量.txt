@@ -1,0 +1,35 @@
+﻿[{
+"knowledge_points": [
+   {"title": "相对论质量", "en": "Relativistic mass"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "狭义相对论", "en": "Special relativity"},
+   {"title": "长度", "en": "Length"},
+   {"title": "时间", "en": "Time"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "动能定理", "en": "Kinetic energy theorem"},
+   {"title": "运动速率", "en": "Velocity"},
+   {"title": "电压", "en": "Voltage"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "真空管", "en": "Vacuum tube"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "非弹性碰撞", "en": "Inelastic collision"},
+   {"title": "爱因斯坦的相对性原理", "en": "Einstein's principle of relativity"},
+   {"title": "质量守恒定律", "en": "Law of conservation of mass"},
+   {"title": "动量守恒定律", "en": "Law of conservation of momentum"},
+   {"title": "洛伦兹速度变换公式", "en": "Lorentz velocity transformation formula"},
+   {"title": "静止质量", "en": "Rest mass"},
+   {"title": "复合粒子", "en": "Composite particle"}
+]
+},{
+"knowledge_points": [
+   {"title": "相对论质量", "en": "Relativistic mass"},
+   {"title": "质速关系", "en": "Mass-velocity relationship"},
+   {"title": "静止质量", "en": "Rest mass"},
+   {"title": "相对的物理量", "en": "Relative physical quantity"},
+   {"title": "经典力学中质量的概念", "en": "Concept of mass in classical mechanics"},
+   {"title": "惯性", "en": "Inertia"},
+   {"title": "相对论力学中物体惯性的量度", "en": "Measure of inertia in relativistic mechanics"},
+   {"title": "光速是物体运动的极限速度", "en": "Speed of light is the limit speed of object motion"}
+]
+}]

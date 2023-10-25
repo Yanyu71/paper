@@ -1,0 +1,63 @@
+(氟化镁, Magnesium fluoride): 5
+(平整度, Flatness): 2
+(厚度, Thickness): 116
+(薄膜, Thin film): 66
+(肥皂液膜, Soap film): 1
+(玻璃平板, Glass plate): 2
+(二氧化硅, Silicon dioxide): 2
+(透射式干涉滤色片, Transmissive interference filter): 0
+(反射式干涉滤色片, Reflective interference filter): 0
+(干涉, Interference): 487
+(半反射板, Semi-reflective plate): 4
+(实验装置, Experimental setup): 23
+(平板厚度, Plate thickness): 2
+(等倾干涉, Equal inclination interference): 16
+(相位差, Phase difference): 116
+(增反膜, Anti-reflective film): 1
+(反射面, Reflective surface): 7
+(介质折射率, Refractive index of medium): 7
+(凹凸不平, Uneven): 1
+(雷达波, Radar wave): 4
+(电介质, Dielectric): 170
+(小孔光源, Pinhole light source): 1
+(透镜, Lens): 347
+(镀膜, Coating): 4
+(实时监控镀膜厚度, Real-time monitoring of coating thickness): 1
+(干涉图样, Interference pattern): 25
+(薄膜干涉原理, Thin film interference principle): 1
+(时间相干性, Temporal coherence): 3
+(等倾干涉, Equal-inclination interference): 16
+(薄膜层, Thin film layer): 2
+(光波, Light wave): 335
+(干涉条纹, Interference fringes): 122
+(等厚干涉, Equal thickness interference): 29
+(等倾干涉实验, Equal inclination interference experiment): 1
+(入射角, Incident angle): 32
+(反射光, Reflected light): 58
+(条纹间距, Fringe spacing): 22
+(透明介质膜, Transparent dielectric film): 4
+(暗纹公式, Formula for dark fringes): 5
+(迈克耳孙干涉仪, Michelson interferometer): 15
+(半波损失, Half-wave loss): 28
+(明纹公式, Formula for bright fringes): 1
+(ZnS介质膜, ZnS dielectric film): 1
+(暗条纹, Dark fringe): 21
+(蓝紫色, Blue-violet color): 2
+(反射光干涉相消, Interference cancellation of reflected light): 3
+(油膜, Oil film): 13
+(反射波干涉相消, Interference cancellation of reflected waves): 1
+(环纹半径, Radius of the ring): 1
+(高精度平板, High precision plate): 1
+(反射光增强, Reflection enhancement): 1
+(光波波长, Wavelength of light wave): 8
+(玻璃板, Glass plate): 16
+(滤光, Filtering): 5
+(增透膜, Anti-reflection coating): 2
+(折射率, Refractive index): 163
+(薄膜厚度, Thickness of thin film): 9
+(明条纹, Bright fringe): 51
+(牛顿环, Newton's rings): 26
+(单色光, Monochromatic light): 54
+(波长, Wavelength): 470
+(空气劈尖, Air wedge): 10
+(光程差, Optical path difference): 68

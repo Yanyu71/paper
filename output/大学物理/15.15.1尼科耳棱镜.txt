@@ -1,0 +1,14 @@
+﻿{
+"knowledge_points": [
+   {"title": "尼科耳棱镜", "en": "Nicol prism"},
+   {"title": "方解石", "en": "Calcite"},
+   {"title": "加拿大树胶", "en": "Canadian balsam"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "全反射", "en": "Total internal reflection"},
+   {"title": "底面", "en": "Bottom surface"},
+   {"title": "吸收", "en": "Absorption"},
+   {"title": "偏振光", "en": "Polarized light"},
+   {"title": "振动方向", "en": "Vibration direction"},
+   {"title": "纸面", "en": "Paper surface"}
+]
+}

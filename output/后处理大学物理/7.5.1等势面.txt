@@ -1,0 +1,8 @@
+(电势相等的点, Points with equal electric potential)
+(电场强度, Electric field strength)
+(等势面, Equipotential surface)
+(电场强度分布, Distribution of electric field strength)
+(电势, Electric potential)
+(静电场, Static electric field)
+(电场线, Electric field lines)
+(电势差, Electric potential difference)

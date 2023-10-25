@@ -1,0 +1,12 @@
+(电势差, potential difference): 88
+(霍耳电压, Hall voltage): 8
+(电流, electric current): 643
+(载流子, charge carrier): 36
+(导电板, conductive plate): 2
+(洛伦兹力, Lorentz force): 36
+(磁感应强度, magnetic induction intensity): 258
+(霍耳效应, Hall effect): 16
+(匀强磁场, uniform magnetic field): 58
+(霍耳系数, Hall coefficient): 15
+(电压, voltage): 66
+(电场, electric field): 882

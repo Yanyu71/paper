@@ -1,0 +1,75 @@
+﻿{
+"knowledge_points": [
+   {"title": "激光的特性", "en": "Characteristics of laser"},
+   {"title": "高定向性", "en": "High directionality"},
+   {"title": "高单色性", "en": "High monochromaticity"},
+   {"title": "高亮度", "en": "High brightness"}
+]
+}{
+"knowledge_points": [
+   {"title": "普通光源", "en": "Ordinary light source"},
+   {"title": "自发辐射", "en": "Spontaneous emission"},
+   {"title": "相干光", "en": "Coherent light"},
+   {"title": "激光器", "en": "Laser"},
+   {"title": "受激辐射", "en": "Stimulated emission"},
+   {"title": "相干性", "en": "Coherence"},
+   {"title": "高定向", "en": "High directionality"},
+   {"title": "高单色性", "en": "High monochromaticity"},
+   {"title": "激光的应用", "en": "Applications of lasers"},
+   {"title": "高亮度", "en": "High brightness"},
+   {"title": "非接触加工", "en": "Non-contact processing"},
+   {"title": "军事应用", "en": "Military applications"},
+   {"title": "光通讯", "en": "Optical communication"},
+   {"title": "光缆", "en": "Optical fiber"},
+   {"title": "精密测量", "en": "Precision measurement"},
+   {"title": "计量标准", "en": "Metrological standards"},
+   {"title": "激光全息技术", "en": "Laser holography"},
+   {"title": "化学", "en": "Chemistry"},
+   {"title": "医学", "en": "Medicine"},
+   {"title": "生物", "en": "Biology"},
+   {"title": "农学", "en": "Agriculture"},
+   {"title": "自发辐射和受激辐射", "en": "Spontaneous emission and stimulated emission"},
+   {"title": "粒子数反转分布", "en": "Population inversion"},
+   {"title": "激光工作物质", "en": "Laser gain medium"},
+   {"title": "激光谐振腔", "en": "Laser resonator"},
+   {"title": "黑体辐射", "en": "Blackbody radiation"},
+   {"title": "斯特藩-玻耳兹曼定律", "en": "Stefan-Boltzmann law"},
+   {"title": "维恩位移定律", "en": "Wien's displacement law"},
+   {"title": "普朗克量子假设", "en": "Planck's quantum hypothesis"},
+   {"title": "辐射公式", "en": "Radiation formula"},
+   {"title": "能量子", "en": "Quantum of energy"},
+   {"title": "普朗克常量", "en": "Planck constant"}
+]
+}{
+"knowledge_points": [
+   {"title": "光电效应", "en": "Photoelectric effect"},
+   {"title": "光电效应方程", "en": "Photoelectric effect equation"},
+   {"title": "光的波粒二象性", "en": "Wave-particle duality of light"},
+   {"title": "康普顿散射", "en": "Compton scattering"},
+   {"title": "氢原子光谱", "en": "Hydrogen atom spectrum"},
+   {"title": "微观粒子的波粒二象性", "en": "Wave-particle duality of microscopic particles"},
+   {"title": "薛定谔方程", "en": "Schrodinger equation"},
+   {"title": "四个量子数", "en": "Four quantum numbers"},
+   {"title": "晶体结构的最基本特征", "en": "The most basic characteristics of crystal structure"},
+   {"title": "固体能带结构", "en": "Solid band structure"},
+   {"title": "绝缘体、导体和半导体", "en": "Insulator, conductor, and semiconductor"},
+   {"title": "半导体", "en": "Semiconductor"}
+]
+}{
+"knowledge_points": [
+   {"title": "激光器的基本组成", "en": "Basic components of a laser"},
+   {"title": "激光工作物质", "en": "Laser working material"},
+   {"title": "激励能源", "en": "Excitation energy"},
+   {"title": "谐振腔", "en": "Resonator cavity"},
+   {"title": "产生激光的两个必要条件", "en": "Two necessary conditions for laser generation"},
+   {"title": "介质内部实现粒子数反转", "en": "Achieving population inversion inside the medium"},
+   {"title": "满足阈值条件", "en": "Meeting the threshold condition"},
+   {"title": "激光的纵模数", "en": "Longitudinal mode number of a laser"},
+   {"title": "相邻两纵模间隔", "en": "Spacing between adjacent longitudinal modes"},
+   {"title": "激光谱线的宽度", "en": "Width of laser spectrum line"},
+   {"title": "激光特性", "en": "Characteristics of laser"},
+   {"title": "高定向性", "en": "High directionality"},
+   {"title": "高单色性", "en": "High monochromaticity"},
+   {"title": "高亮度", "en": "High brightness"}
+]
+}

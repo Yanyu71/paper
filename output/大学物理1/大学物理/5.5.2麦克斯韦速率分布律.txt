@@ -1,0 +1,24 @@
+﻿[{
+"knowledge_points": [
+   {"title": "麦克斯韦速率分布律", "en": "Maxwell velocity distribution law"},
+   {"title": "麦克斯韦速率分布函数", "en": "Maxwell velocity distribution function"},
+   {"title": "分子质量", "en": "molecular mass"},
+   {"title": "分子热运动速率", "en": "molecular thermal velocity"},
+   {"title": "玻尔兹曼常数", "en": "Boltzmann constant"},
+   {"title": "温度", "en": "temperature"},
+   {"title": "麦克斯韦速率分布率", "en": "Maxwell velocity distribution rate"},
+   {"title": "分布函数", "en": "distribution function"},
+   {"title": "归一化条件", "en": "normalization condition"},
+   {"title": "麦克斯韦速率分布曲线", "en": "Maxwell velocity distribution curve"},
+   {"title": "特征", "en": "characteristics"}
+]
+},{
+"knowledge_points": [
+   {"title": "最概然速率", "en": "Most probable rate"},
+   {"title": "速率区间", "en": "Rate interval"},
+   {"title": "分子数比率", "en": "Molecular number ratio"},
+   {"title": "速率分布曲线", "en": "Rate distribution curve"},
+   {"title": "温度影响", "en": "Temperature influence"},
+   {"title": "分子质量影响", "en": "Molecular mass influence"}
+]
+}]

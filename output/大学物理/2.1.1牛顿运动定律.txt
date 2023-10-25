@@ -1,0 +1,27 @@
+﻿{
+"knowledge_points": [
+   {"title": "牛顿运动定律", "en": "Newton's Laws of Motion"},
+   {"title": "第一定律", "en": "First Law"},
+   {"title": "第二定律", "en": "Second Law"},
+   {"title": "第三定律", "en": "Third Law"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "惯性", "en": "Inertia"},
+   {"title": "力", "en": "Force"},
+   {"title": "动量", "en": "Momentum"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "作用与反作用定律", "en": "Law of Action and Reaction"}
+]
+}{
+"knowledge_points": [
+   {"title": "互称为", "en": "referred to as"},
+   {"title": "作用力", "en": "action force"},
+   {"title": "反作用力", "en": "reaction force"},
+   {"title": "大小相等", "en": "equal in magnitude"},
+   {"title": "方向相反", "en": "opposite in direction"},
+   {"title": "不能相互抵消", "en": "cannot cancel each other out"},
+   {"title": "同种类型的力", "en": "same type of force"},
+   {"title": "主动与被动之分", "en": "active and passive distinction"},
+   {"title": "作用上的先后之别", "en": "no distinction in order of action"}
+]
+}

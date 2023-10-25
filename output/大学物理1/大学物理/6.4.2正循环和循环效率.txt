@@ -1,0 +1,14 @@
+﻿[{
+"knowledge_points": [
+   {"title": "正循环", "en": "Positive cycle"},
+   {"title": "循环效率", "en": "Cycle efficiency"},
+   {"title": "工质", "en": "Working fluid"},
+   {"title": "膨胀过程", "en": "Expansion process"},
+   {"title": "压缩过程", "en": "Compression process"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "功", "en": "Work"},
+   {"title": "热源", "en": "Heat source"},
+   {"title": "冷凝器", "en": "Condenser"},
+   {"title": "热功转换效益", "en": "Thermal efficiency"}
+]
+}]

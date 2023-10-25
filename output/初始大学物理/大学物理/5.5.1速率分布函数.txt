@@ -1,0 +1,12 @@
+﻿{
+"knowledge_points": [
+   {"title": "速率分布函数", "en": "Rate distribution function"},
+   {"title": "气体分子", "en": "Gas molecules"},
+   {"title": "速率区间", "en": "Rate interval"},
+   {"title": "分子数比率", "en": "Molecular number ratio"},
+   {"title": "速率分布律", "en": "Rate distribution law"},
+   {"title": "速率区间大小", "en": "Size of rate interval"},
+   {"title": "速率区间表示", "en": "Representation of rate interval"},
+   {"title": "分子速率分布的概率密度", "en": "Probability density of molecular rate distribution"}
+]
+}

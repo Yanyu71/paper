@@ -1,0 +1,14 @@
+(X射线, X-ray): 50
+(电子衍射, electron diffraction): 3
+(德布罗意波长, de Broglie wavelength): 13
+(宏观粒子, Macroscopic particles): 1
+(粒子的波动性, wave nature of particles): 4
+(相对论效应, relativistic effects): 7
+(衍射实验, diffraction experiment): 9
+(物质波, matter wave): 36
+(电子显微镜, electron microscope): 6
+(德布罗意关系, de Broglie relation): 6
+(子弹的德布罗意波长, de Broglie wavelength of a bullet): 1
+(粒子性, particle nature): 8
+(波动性, wave-particle duality): 33
+(波粒二象性, wave-particle duality): 18

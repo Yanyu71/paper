@@ -1,0 +1,8 @@
+﻿[{
+"knowledge_points": [
+   {"title": "完全非弹性碰撞", "en": "Completely inelastic collision"},
+   {"title": "系统动量守恒", "en": "Conservation of system momentum"},
+   {"title": "动能损失", "en": "Loss of kinetic energy"},
+   {"title": "碰撞前后动能", "en": "Kinetic energy before and after collision"}
+]
+}]

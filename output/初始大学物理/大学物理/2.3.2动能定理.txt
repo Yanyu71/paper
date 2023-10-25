@@ -1,0 +1,65 @@
+﻿{
+"knowledge_points": [
+   {"title": "动能定理", "en": "Kinetic Energy Theorem"},
+   {"title": "外力", "en": "External Force"},
+   {"title": "作功", "en": "Work"},
+   {"title": "物体状态变化", "en": "Change in Object's State"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "合力", "en": "Net Force"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "元功", "en": "Elemental Work"},
+   {"title": "元位移", "en": "Elemental Displacement"},
+   {"title": "元路程", "en": "Elemental Path"},
+   {"title": "切向力", "en": "Tangential Force"},
+   {"title": "动能", "en": "Kinetic Energy"},
+   {"title": "正功", "en": "Positive Work"},
+   {"title": "负功", "en": "Negative Work"},
+   {"title": "反抗外力", "en": "Resist External Force"},
+   {"title": "运动状态", "en": "Motion State"},
+   {"title": "动能变化", "en": "Change in Kinetic Energy"},
+   {"title": "始状态", "en": "Initial State"},
+   {"title": "末状态", "en": "Final State"},
+   {"title": "细节", "en": "Details"},
+   {"title": "惯性系", "en": "Inertial Frame of Reference"},
+   {"title": "参考系", "en": "Frame of Reference"},
+   {"title": "数值", "en": "Value"},
+   {"title": "数学表达形式", "en": "Mathematical Expression"},
+   {"title": "小球", "en": "Ball"},
+   {"title": "细绳", "en": "String"},
+   {"title": "天花板", "en": "Ceiling"},
+   {"title": "单摆", "en": "Pendulum"},
+   {"title": "张力", "en": "Tension"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "位置", "en": "Position"},
+   {"title": "求解", "en": "Solve"}
+]
+}{
+"knowledge_points": [
+   {"title": "张力", "en": "Tension"},
+   {"title": "小球位移", "en": "Displacement of the ball"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "动能定理", "en": "Kinetic energy theorem"},
+   {"title": "质点系", "en": "Particle system"},
+   {"title": "内力", "en": "Internal force"},
+   {"title": "外力", "en": "External force"}
+]
+}{
+"knowledge_points": [
+   {"title": "动能定理", "en": "Kinetic energy theorem"},
+   {"title": "惯性系", "en": "Inertial frame of reference"},
+   {"title": "质点系", "en": "System of particles"},
+   {"title": "外力", "en": "External force"},
+   {"title": "内力", "en": "Internal force"},
+   {"title": "功", "en": "Work"},
+   {"title": "摩擦力", "en": "Frictional force"},
+   {"title": "静摩擦力", "en": "Static frictional force"},
+   {"title": "滑动摩擦力", "en": "Sliding frictional force"},
+   {"title": "临界状态", "en": "Critical state"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "光滑", "en": "Smooth"},
+   {"title": "始态", "en": "Initial state"},
+   {"title": "末态", "en": "Final state"}
+]
+}

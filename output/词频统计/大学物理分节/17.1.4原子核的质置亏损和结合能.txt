@@ -1,0 +1,24 @@
+(饱和性, Saturation): 1
+(静止质量, Rest mass): 1
+(中子数, Neutron number): 2
+(原子核, Atomic nucleus): 18
+(中性原子, Neutral atom): 1
+(质能关系, Mass-energy equivalence): 2
+(质子, Proton): 6
+(稳定性, Stability): 1
+(奇奇核, Odd-odd nucleus): 1
+(核力, Nuclear force): 1
+(电子, Electron): 3
+(核能利用, Nuclear energy utilization): 1
+(质子数, Proton number): 2
+(比结合能, Binding energy): 14
+(中子, Neutron): 7
+(核素, Nuclide): 2
+(结合能, Binding energy): 21
+(比结合能, Specific binding energy): 14
+(核, Nucleus): 47
+(偶偶核, Even-even nucleus): 1
+(能量放出, Energy release): 1
+(质量亏损, Mass deficit): 1
+(质量数, Mass number): 6
+(核子, Nucleon): 7

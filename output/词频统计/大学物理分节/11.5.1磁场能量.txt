@@ -1,0 +1,21 @@
+(储藏, Storage): 1
+(电能, Electric energy): 2
+(自感线圈, Self-inductance coil): 4
+(线圈, Coil): 7
+(磁场能量, Magnetic field energy): 4
+(稳定值, Steady value): 2
+(电流, Electric current): 10
+(回路, Circuit): 7
+(元功, Elemental work): 1
+(自感, Self-inductance): 10
+(电场能量密度, Electric field energy density): 1
+(能量转换守恒定律, Law of conservation of energy conversion): 1
+(电容器, Capacitor): 1
+(开关, Switch): 1
+(通有电流, Current-carrying): 1
+(全电路欧姆定律, Ohm's law for the entire circuit): 0
+(互感, Mutual inductance): 2
+(电场能量, Electric field energy): 2
+(电阻, Resistor): 1
+(焦耳热, Joule heat): 3
+(电动势, Electromotive force): 4

@@ -1,0 +1,141 @@
+﻿{
+"knowledge_points": [
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "经典力学时空观", "en": "Classical mechanics view of space and time"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "狭义相对论时空观", "en": "Special theory of relativity view of space and time"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "同时性", "en": "Simultaneity"},
+   {"title": "时间的量度", "en": "Measurement of time"},
+   {"title": "事件", "en": "Event"},
+   {"title": "时间间隔", "en": "Time interval"},
+   {"title": "固有时间", "en": "Proper time"},
+   {"title": "运动时钟变慢", "en": "Time dilation"},
+   {"title": "光速不变原理的推论", "en": "Consequences of the principle of the constancy of the speed of light"},
+   {"title": "时空的属性", "en": "Properties of space and time"},
+   {"title": "时间量度的相对性", "en": "Relativity of time measurement"},
+   {"title": "计时装置", "en": "Timekeeping device"}
+]
+}{
+"knowledge_points": [
+   {"title": "时间节奏变慢", "en": "Time dilation"},
+   {"title": "运动时钟变慢效应", "en": "Time dilation due to motion"},
+   {"title": "静止的带电77介子的半衰期", "en": "Half-life of stationary charged 77 meson"},
+   {"title": "长度收缩效应", "en": "Length contraction"},
+   {"title": "实验结果", "en": "Experimental results"}
+]
+}{
+"knowledge_points": [
+   {"title": "狭义相对论", "en": "Special Theory of Relativity"},
+   {"title": "时空观", "en": "Spacetime view"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "固有长度", "en": "Proper length"},
+   {"title": "固有时间", "en": "Proper time"},
+   {"title": "时空量度相对性", "en": "Relativity of spacetime measurement"},
+   {"title": "长度收缩公式", "en": "Length contraction formula"},
+   {"title": "时钟延缓公式", "en": "Time dilation formula"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "同时性的相对性", "en": "Relativity of simultaneity"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "雷击事件", "en": "Lightning strike event"},
+   {"title": "长度量度", "en": "Measurement of length"},
+   {"title": "长度收缩效应", "en": "Length contraction effect"},
+   {"title": "正方形面积", "en": "Area of a square"},
+   {"title": "相对速度", "en": "Relative velocity"},
+   {"title": "火箭上的观测", "en": "Observation on the rocket"}
+]
+}{
+"knowledge_points": [
+   {"title": "相对论", "en": "Relativity"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "伽利略变换", "en": "Galilean transformation"},
+   {"title": "速度变换定理", "en": "Velocity transformation theorem"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "惯性系", "en": "Inertial frame of reference"},
+   {"title": "观测者", "en": "Observer"},
+   {"title": "运动速度", "en": "Velocity of motion"}
+]
+}{
+"knowledge_points": [
+   {"title": "伽利略速度变换公式", "en": "Galilean velocity transformation formula"},
+   {"title": "相对论速度变换公式", "en": "Relativistic velocity transformation formula"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "狭义相对论动力学", "en": "Special theory of relativity dynamics"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "相对论力学", "en": "Relativistic mechanics"}
+]
+}{
+"knowledge_points": [
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "经典力学时空观", "en": "Classical mechanics view of space and time"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "狭义相对论时空观", "en": "Special theory of relativity view of space and time"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "同时性", "en": "Simultaneity"},
+   {"title": "时间的量度", "en": "Measurement of time"},
+   {"title": "事件", "en": "Event"},
+   {"title": "时间间隔", "en": "Time interval"},
+   {"title": "固有时间", "en": "Proper time"},
+   {"title": "运动时钟变慢", "en": "Time dilation"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "钟走得慢", "en": "Clock runs slower"}
+]
+}{
+"knowledge_points": [
+   {"title": "时间节奏变慢", "en": "Time dilation"},
+   {"title": "运动时钟变慢效应", "en": "Time dilation due to motion"},
+   {"title": "静止的带电77介子的半衰期", "en": "Half-life of stationary charged 77 meson"},
+   {"title": "长度收缩效应", "en": "Length contraction"},
+   {"title": "实验结果", "en": "Experimental results"}
+]
+}{
+"knowledge_points": [
+   {"title": "狭义相对论", "en": "Special Theory of Relativity"},
+   {"title": "时空观", "en": "Spacetime view"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "固有长度", "en": "Proper length"},
+   {"title": "固有时间", "en": "Proper time"},
+   {"title": "时空量度相对性", "en": "Relativity of spacetime measurement"},
+   {"title": "长度收缩公式", "en": "Length contraction formula"},
+   {"title": "时钟延缓公式", "en": "Time dilation formula"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "同时性的相对性", "en": "Relativity of simultaneity"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "雷击事件", "en": "Lightning strike event"},
+   {"title": "长度量度", "en": "Measurement of length"},
+   {"title": "长度收缩效应", "en": "Length contraction effect"},
+   {"title": "正方形面积", "en": "Area of square"},
+   {"title": "相对速度", "en": "Relative velocity"},
+   {"title": "火箭上的观测", "en": "Observation on the rocket"}
+]
+}{
+"knowledge_points": [
+   {"title": "相对论", "en": "Relativity"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "速度变换定理", "en": "Velocity transformation theorem"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "惯性系", "en": "Inertial frame of reference"},
+   {"title": "伽利略速度变换定理", "en": "Galilean velocity transformation theorem"},
+   {"title": "逆变换", "en": "Inverse transformation"},
+   {"title": "观测者", "en": "Observer"},
+   {"title": "真空中", "en": "In vacuum"},
+   {"title": "物体运动速度", "en": "Speed of object's motion"},
+   {"title": "空间站", "en": "Space station"},
+   {"title": "飞船", "en": "Spaceship"}
+]
+}{
+"knowledge_points": [
+   {"title": "伽利略速度变换公式", "en": "Galilean velocity transformation formula"},
+   {"title": "相对论速度变换公式", "en": "Relativistic velocity transformation formula"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "狭义相对论动力学", "en": "Special theory of relativity dynamics"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "相对论力学", "en": "Relativistic mechanics"}
+]
+}

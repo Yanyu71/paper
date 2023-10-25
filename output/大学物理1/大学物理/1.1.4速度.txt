@@ -1,0 +1,44 @@
+﻿[{
+"knowledge_points": [
+   {"title": "速度", "en": "Velocity"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "位矢", "en": "Displacement vector"},
+   {"title": "运动状态", "en": "Motion state"},
+   {"title": "物理量", "en": "Physical quantity"},
+   {"title": "平均速度", "en": "Average velocity"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "时间间隔", "en": "Time interval"},
+   {"title": "矢量", "en": "Vector"},
+   {"title": "大小", "en": "Magnitude"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "瞬时速度", "en": "Instantaneous velocity"},
+   {"title": "快慢程度", "en": "Speed"},
+   {"title": "细节", "en": "Details"},
+   {"title": "瞬时速率", "en": "Instantaneous speed"},
+   {"title": "速率", "en": "Speed"},
+   {"title": "路程", "en": "Distance"},
+   {"title": "平均速率", "en": "Average speed"},
+   {"title": "正", "en": "Positive"},
+   {"title": "标量", "en": "Scalar"}
+]
+},{
+"knowledge_points": [
+   {"title": "速度矢量", "en": "Velocity vector"},
+   {"title": "坐标轴", "en": "Coordinate axis"},
+   {"title": "分量", "en": "Component"},
+   {"title": "位置坐标", "en": "Position coordinates"},
+   {"title": "一阶导数", "en": "First derivative"},
+   {"title": "大小", "en": "Magnitude"},
+   {"title": "方向余弦", "en": "Direction cosines"},
+   {"title": "直角坐标", "en": "Rectangular coordinates"},
+   {"title": "运动方程", "en": "Equation of motion"},
+   {"title": "瞬时速度", "en": "Instantaneous velocity"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "半径", "en": "Radius"},
+   {"title": "速率", "en": "Speed"},
+   {"title": "匀速率圆周运动", "en": "Uniform circular motion"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "路程", "en": "Distance"},
+   {"title": "速度增量", "en": "Velocity increment"}
+]
+}]

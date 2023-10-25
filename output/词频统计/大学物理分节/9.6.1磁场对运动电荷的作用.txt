@@ -1,0 +1,74 @@
+(电磁场, Electromagnetic field): 2
+(回旋加速器, Cyclotron): 5
+(螺旋运动, Spiral motion): 2
+(电场力, Electric field force): 1
+(磁场, Magnetic Field): 43
+(磁瓶, Magnetic Bottle): 4
+(运动电荷, Moving charge): 6
+(范爱伦辐射带, Van Allen radiation belts): 1
+(磁聚焦, Magnetic focusing): 1
+(宇宙射线, Cosmic rays): 1
+(频率, Frequency): 1
+(粒子的轨道半径, Particle's orbit radius): 1
+(旋转周期, Rotation Period): 2
+(带电粒子, Charged particle): 32
+(运动方程, Equation of motion): 1
+(带电粒子, Charged particles): 32
+(回转半径, Radius of Rotation): 3
+(同步回旋加速器, Synchrotron Accelerator): 1
+(气泡室, Bubble chamber): 2
+(粒子的能量, Particle's energy): 0
+(牛顿第二定律, Newton's second law): 1
+(赵忠尧的发现, Zhao Zhongyao's discovery): 0
+(载流导线, Current-carrying wire): 1
+(粒子的半径, Particle's radius): 0
+(等离子态, Plasma State): 1
+(天然磁瓶, Natural magnetic bottle): 1
+(磁约束现象, Magnetic confinement phenomenon): 1
+(髙空核爆炸实验, High-altitude nuclear explosion experiments): 1
+(匀强磁场, Uniform magnetic field): 5
+(磁聚焦原理, Magnetic Focusing Principle): 0
+(地球磁场, Earth's magnetic field): 5
+(闭合环行结构, Closed Loop Structure): 0
+(分量, Component): 5
+(粒子的速率, Particle's velocity): 3
+(托卡马克, Tokamak): 1
+(核物理实验, Nuclear physics experiment): 0
+(真空室, Vacuum Chamber): 2
+(仿星器, Stellarator): 1
+(内层, Inner layer): 1
+(质谱仪, Mass spectrometer): 1
+(洛伦兹力公式, Lorentz force formula): 2
+(磁感应强度, Magnetic induction): 6
+(磁约束效应, Magnetic Confinement Effect): 1
+(受控热核反应, Controlled Thermonuclear Reaction): 1
+(磁场, Magnetic field): 43
+(磁镜效应, Magnetic Mirror Effect): 0
+(人工辐射带, Artificial radiation belts): 1
+(正电子, Positron): 3
+(粒子的速度, Particle's velocity): 3
+(平行, Parallel): 2
+(带电粒子, Charged Particle): 32
+(地轴对称, Axial symmetry): 1
+(速度, Velocity): 20
+(磁感应强度, Magnetic Induction): 6
+(螺距, Pitch): 1
+(质量, Mass): 3
+(电流元, Current element): 5
+(电荷, Charge): 15
+(粒子的周期, Particle's period): 0
+(高频电场, High-frequency Electric Field): 1
+(洛伦兹力, Lorentz Force): 14
+(外层, Outer layer): 2
+(速度选择器, Velocity selector): 1
+(洛伦兹力, Lorentz force): 14
+(安培力, Ampere force): 5
+(夹角, Angle): 3
+(运动速度, Velocity): 9
+(狭义相对论, Special Theory of Relativity): 1
+(圆周运动, Circular motion): 6
+(粒子加速器, Particle accelerator): 1
+(加速带电粒子的回旋加速器, Cyclotron for accelerating charged particles): 1
+(磁场中的粒子偏转方向, Particle deflection direction in a magnetic field): 0
+(垂直, Perpendicular): 9
+(带电粒子的荷质比, Charge-to-mass ratio of charged particles): 1

@@ -1,0 +1,21 @@
+﻿[
+   {
+"knowledge_points": [
+   {"title": "质点运动学", "en": "Kinematics of particles"},
+   {"title": "第一类问题", "en": "Type 1 problems"},
+   {"title": "第二类问题", "en": "Type 2 problems"},
+   {"title": "微分法", "en": "Differential method"},
+   {"title": "积分法", "en": "Integral method"},
+   {"title": "运动方程", "en": "Equation of motion"},
+   {"title": "位置", "en": "Position"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "轨迹方程", "en": "Equation of trajectory"},
+   {"title": "椭圆", "en": "Ellipse"},
+   {"title": "矢量", "en": "Vector"},
+   {"title": "基本定义", "en": "Basic definition"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "滑轮", "en": "Pulley"}
+]
+}
+]

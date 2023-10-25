@@ -1,0 +1,58 @@
+﻿[{
+"knowledge_points": [
+   {"title": "杨氏干涉实验", "en": "Young's interference experiment"},
+   {"title": "相干光波", "en": "coherent light waves"},
+   {"title": "光的干涉现象", "en": "interference phenomenon of light"},
+   {"title": "光波的叠加原理", "en": "superposition principle of light waves"},
+   {"title": "光的波动性", "en": "wave nature of light"},
+   {"title": "杨氏干涉实验装置", "en": "Young's interference experiment setup"},
+   {"title": "针孔", "en": "pinhole"},
+   {"title": "惠更斯原理", "en": "Huygens' principle"},
+   {"title": "波程差", "en": "path difference"},
+   {"title": "相干光源", "en": "coherent light source"},
+   {"title": "观测屏幕", "en": "observation screen"},
+   {"title": "干涉图样", "en": "interference pattern"},
+   {"title": "明条纹", "en": "bright fringes"},
+   {"title": "级次", "en": "order"}
+]
+},{
+"knowledge_points": [
+   {"title": "杨氏干涉", "en": "Young's interference"},
+   {"title": "光强极小", "en": "minimum intensity"},
+   {"title": "干涉减弱", "en": "interference reduction"},
+   {"title": "明条纹", "en": "bright fringes"},
+   {"title": "暗条纹", "en": "dark fringes"},
+   {"title": "干涉条纹的间距", "en": "interference fringe spacing"},
+   {"title": "波程差", "en": "path difference"},
+   {"title": "相位差", "en": "phase difference"},
+   {"title": "干涉图样的强度关系", "en": "intensity relationship of interference pattern"},
+   {"title": "杨氏干涉的强度公式", "en": "Young's interference intensity formula"},
+   {"title": "干涉光强分布曲线", "en": "interference intensity distribution curve"},
+   {"title": "干涉条纹间距", "en": "interference fringe spacing"},
+   {"title": "针孔间距", "en": "pinhole spacing"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "双缝干涉实验装置", "en": "double-slit interference experimental setup"},
+   {"title": "激光", "en": "laser"},
+   {"title": "分波前干涉空间相干性", "en": "interference spatial coherence of divided wavefronts"}
+]
+},{
+"knowledge_points": [
+   {"title": "杨氏干涉实验", "en": "Young's interference experiment"},
+   {"title": "钠光灯", "en": "sodium lamp"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "屏幕与双缝距离", "en": "distance between screen and double slits"},
+   {"title": "相邻明条纹间距", "en": "distance between adjacent bright fringes"},
+   {"title": "双缝间距", "en": "distance between double slits"},
+   {"title": "最小分辨距离", "en": "minimum resolvable distance"},
+   {"title": "干涉条纹", "en": "interference fringes"},
+   {"title": "干涉性质和特点", "en": "interference properties and characteristics"},
+   {"title": "白光", "en": "white light"},
+   {"title": "光谱的级次", "en": "order of spectrum"},
+   {"title": "波程差", "en": "path difference"},
+   {"title": "中央明纹", "en": "central bright fringe"},
+   {"title": "彩色条纹", "en": "colored fringes"},
+   {"title": "重叠", "en": "overlap"},
+   {"title": "红光", "en": "red light"},
+   {"title": "紫光", "en": "violet light"}
+]
+}]

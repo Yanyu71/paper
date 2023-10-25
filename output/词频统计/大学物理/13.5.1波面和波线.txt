@@ -1,0 +1,7 @@
+(波面, Wavefront): 69
+(平面波, Plane wave): 23
+(传播方向, Propagation direction): 46
+(同相面, Phase surface): 3
+(球面波, Spherical wave): 19
+(波线, Wavefront): 22
+(柱面波, Cylindrical wave): 5

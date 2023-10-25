@@ -1,0 +1,24 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电磁阻尼", "en": "Electromagnetic Damping"},
+   {"title": "热效应", "en": "Thermal Effect"},
+   {"title": "涡流", "en": "Eddy Current"},
+   {"title": "机械效应", "en": "Mechanical Effect"},
+   {"title": "电磁铁", "en": "Electromagnet"},
+   {"title": "磁极", "en": "Magnetic Pole"},
+   {"title": "摆", "en": "Pendulum"},
+   {"title": "磁通量", "en": "Magnetic Flux"},
+   {"title": "感应电流", "en": "Induced Current"},
+   {"title": "楞次定律", "en": "Lenz's Law"},
+   {"title": "电磁阻力", "en": "Electromagnetic Resistance"},
+   {"title": "电磁仪表", "en": "Electromagnetic Instrument"},
+   {"title": "指针", "en": "Pointer"},
+   {"title": "电子脱离轨道", "en": "Electron Detachment from Orbit"},
+   {"title": "靶子", "en": "Target"},
+   {"title": "电子感应加速器", "en": "Electron Induction Accelerator"},
+   {"title": "核物理研究", "en": "Nuclear Physics Research"},
+   {"title": "低能电子感应加速器", "en": "Low-energy Electron Induction Accelerator"},
+   {"title": "工业探伤", "en": "Industrial Testing"},
+   {"title": "医疗上诊治癌症", "en": "Medical Diagnosis and Treatment of Cancer"}
+]
+}]

@@ -1,0 +1,101 @@
+(高压水枪, High-pressure water gun): 0
+(守恒条件, Conservation condition): 1
+(木板地, Wooden floor): 1
+(质心运动定理, Center of mass motion theorem): 1
+(坐标系, Coordinate system): 5
+(加速行驶的汽车, Accelerating car): 1
+(质点系, System of particles): 12
+(外层空间, Outer space): 1
+(软梯, Ladder): 3
+(总动量, Total momentum): 1
+(合外力, Net external force): 7
+(最大速度, maximum velocity): 1
+(真空, Vacuum): 1
+(火箭点火, Rocket ignition): 2
+(系统, System): 26
+(玻璃杯, Glass cup): 1
+(动量守恒, Conservation of momentum): 17
+(墙面对水柱的作用力, Force of the wall on the water column): 0
+(国土资源卫星, Land resources satellite): 1
+(动量定理, Principle of momentum): 4
+(物理问题, Physics problem): 0
+(长征系列火箭, Long March rockets): 2
+(冲量, Impulse): 7
+(火箭脱落, Rocket separation): 0
+(地球引力, gravity): 3
+(物体, Object): 15
+(助燃剂, oxidizer): 1
+(圆锥面, Conical surface): 1
+(火箭, rocket): 30
+(速率, Velocity): 7
+(大船, Big ship): 1
+(风云气象卫星, Fengyun meteorological satellite): 0
+(空气阻力, air resistance): 2
+(水泥地板, Concrete floor): 1
+(现代火箭技术, Modern rocket technology): 1
+(速率, velocity): 7
+(捆绑式火箭, Strap-on rocket): 0
+(拉, Pull): 2
+(普遍性, Universality): 0
+(空中翻转, Mid-air flip): 1
+(质量, mass): 11
+(牛顿定律, Newton's laws): 1
+(分量式, Component formula): 2
+(小船, Small boat): 1
+(人水, Water entry): 1
+(岸, Shore): 2
+(速度, Velocity): 21
+(运动员, Athlete): 3
+(动量定理, Momentum theorem): 4
+(动量, Momentum): 51
+(火箭, Rocket): 30
+(动量守恒定律, Law of conservation of momentum): 9
+(静止状态, Resting state): 0
+(动量守恒定律, law of conservation of momentum): 9
+(支架, Support): 1
+(细线, String): 2
+(载人飞船, Manned spacecraft): 2
+(爬, Climb): 1
+(牛顿第三定律, Newton's third law): 1
+(运动位移, displacement): 1
+(动力学问题, Dynamics problem): 3
+(质点系, Particle system): 12
+(受力分析, Force analysis): 1
+(反冲推力, thrust): 0
+(悬浮, Suspension): 1
+(动量定理式, Momentum theorem): 1
+(动能, Kinetic energy): 2
+(弧形槽面, arc-shaped groove): 1
+(多级火箭, Multi-stage rocket): 3
+(飞溅速率, Splashing rate): 1
+(喷出截面积, Ejected cross-sectional area): 0
+(喷气式飞机, Jet plane): 1
+(内力, Internal force): 6
+(滑槽, slide): 4
+(起跳, Takeoff): 1
+(动量守恒定律, Law of Conservation of Momentum): 9
+(距离, Distance): 3
+(子压进去, Submerge): 1
+(跳水, Diving): 2
+(外力, External force): 14
+(伽利略速度变换定理, Galilean velocity transformation theorem): 1
+(滑槽, Slide): 4
+(科学探测卫星, Scientific exploration satellite): 1
+(现象, Phenomenon): 1
+(作用力, Action force): 4
+(研究对象, Research object): 5
+(人造地球卫星, Artificial Earth satellite): 1
+(动力学, Dynamics): 3
+(燃料烧完, Fuel depletion): 2
+(机械能, Mechanical energy): 2
+(断裂, Fracture): 0
+(气球, Balloon): 2
+(质量, Mass): 11
+(质点, Particle): 24
+(广播通信卫星, Broadcast communication satellite): 1
+(质量比, mass ratio): 2
+(燃料, fuel): 8
+(航天事业, Space industry): 1
+(单级火箭, Single-stage rocket): 3
+(沙土地, Sandy ground): 1
+(末速度, Final velocity): 4

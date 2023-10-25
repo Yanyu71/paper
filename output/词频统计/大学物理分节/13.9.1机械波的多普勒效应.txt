@@ -1,0 +1,43 @@
+(速率, Velocity): 13
+(马赫锥, Mach cone): 3
+(光谱学, Spectroscopy): 0
+(冲击波, shock wave): 4
+(波源, Wave source): 54
+(机械波, Mechanical wave): 4
+(观察者, observer): 50
+(振动频率, Vibration frequency): 3
+(天体物理, Astrophysics): 1
+(频率, Frequency): 33
+(间距, Spacing): 2
+(拍频, Beat frequency): 2
+(球面波, Spherical wave): 1
+(声速, speed of sound): 5
+(压缩, Compression): 2
+(振动周期, Vibration period): 1
+(波速, Wave speed): 3
+(多普勒效应, Doppler effect): 15
+(音调, Pitch): 4
+(声速公式, formula for speed of sound): 0
+(圆锥面冲击波式, formula for shock wave on a conical surface): 1
+(波面, Wavefront): 11
+(马赫数, Mach number): 2
+(观察者, Observer): 50
+(冲击波, Shock wave): 4
+(正切函数, tangent function): 0
+(医学, Medicine): 1
+(超声波, Ultrasonic wave): 4
+(正弦函数, sine function): 0
+(声震, sonic boom): 1
+(马赫锥顶点, vertex of Mach cone): 0
+(定量分析, Quantitative analysis): 1
+(角度, angle): 0
+(介质, Medium): 12
+(飞机高度, aircraft altitude): 0
+(运动, Motion): 43
+(交通警察, Traffic police): 1
+(声波, Sound wave): 8
+(声速, Speed of sound): 5
+(工业, Industry): 1
+(冲击波的强度, intensity of shock wave): 0
+(波长, Wavelength): 11
+(声源, Sound source): 6

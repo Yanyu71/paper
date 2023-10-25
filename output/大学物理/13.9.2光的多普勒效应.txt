@@ -1,0 +1,47 @@
+﻿{
+"knowledge_points": [
+   {"title": "光的多普勒效应", "en": "Doppler effect of light"},
+   {"title": "机械波的多普勒效应", "en": "Doppler effect of mechanical waves"},
+   {"title": "光波", "en": "Light waves"},
+   {"title": "电磁波", "en": "Electromagnetic waves"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "真空", "en": "Vacuum"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "观察者", "en": "Observer"},
+   {"title": "相对运动", "en": "Relative motion"},
+   {"title": "相对论效应", "en": "Relativistic effect"},
+   {"title": "纵向多普勒效应", "en": "Longitudinal Doppler effect"},
+   {"title": "横向多普勒效应", "en": "Transverse Doppler effect"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "光源固有频率", "en": "Intrinsic frequency of the light source"},
+   {"title": "光频红移", "en": "Redshift of light frequency"},
+   {"title": "光频蓝移", "en": "Blueshift of light frequency"},
+   {"title": "光谱线", "en": "Spectral lines"},
+   {"title": "星体", "en": "Celestial body"},
+   {"title": "退行速度", "en": "Recession velocity"}
+]
+}{
+"knowledge_points": [
+   {"title": "多普勒效应", "en": "Doppler effect"},
+   {"title": "观察者运动", "en": "Observer motion"},
+   {"title": "波源运动", "en": "Source motion"},
+   {"title": "运动相对性", "en": "Relativity of motion"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "周期", "en": "Period"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "机械波", "en": "Mechanical wave"},
+   {"title": "弹性介质", "en": "Elastic medium"},
+   {"title": "振动状态", "en": "Vibration state"},
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "惠更斯原理", "en": "Huygens' principle"},
+   {"title": "波的干涉", "en": "Wave interference"}
+]
+}{
+"knowledge_points": [
+   {"title": "平均能量密度", "en": "Average energy density"},
+   {"title": "波的强度", "en": "Wave intensity"},
+   {"title": "驻波", "en": "Standing wave"},
+   {"title": "多普勒效应", "en": "Doppler effect"}
+]
+}

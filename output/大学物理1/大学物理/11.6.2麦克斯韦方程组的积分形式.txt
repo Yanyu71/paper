@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "麦克斯韦方程组", "en": "Maxwell's equations"},
+   {"title": "静电场的高斯定理", "en": "Gauss's law for static electric fields"},
+   {"title": "稳恒磁场的高斯定理", "en": "Gauss's law for steady magnetic fields"},
+   {"title": "稳恒磁场的无源性", "en": "Sourcelessness of steady magnetic fields"},
+   {"title": "麦克斯韦方程组的修正", "en": "Modification of Maxwell's equations"},
+   {"title": "有旋电场和位移电流", "en": "Curling electric field and displacement current"},
+   {"title": "电场和磁场的叠加", "en": "Superposition of electric and magnetic fields"},
+   {"title": "电磁场的积分形式", "en": "Integral form of electromagnetic fields"},
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "电磁场的相互激发", "en": "Mutual excitation of electric and magnetic fields"},
+   {"title": "电磁场的能量、动量和质量", "en": "Energy, momentum, and mass of electromagnetic fields"},
+   {"title": "电磁波", "en": "Electromagnetic waves"}
+]
+}]

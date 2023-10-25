@@ -1,0 +1,66 @@
+(界面, Interface): 65
+(光纤通信, Fiber optic communication): 3
+(光密介质, Optically dense medium): 15
+(图像, Image): 17
+(光能损失, Loss of light energy): 0
+(传输, Transmission): 19
+(水槽, Water tank): 2
+(光疏介质, Optically rare medium): 15
+(位移, Displacement): 214
+(光纤外介质, Outer medium of optical fiber): 1
+(射, Refraction): 2335
+(光线传播方向, Direction of light propagation): 0
+(中继距离, Relay distance): 1
+(传输带宽, Transmission bandwidth): 1
+(圆木片, Circular wooden piece): 3
+(面积, Area): 176
+(内外两层, Inner and outer layers): 5
+(肠镜, Colonoscopy): 1
+(临界角, Critical angle): 16
+(电磁干扰, Electromagnetic interference): 2
+(折射定律, Snell's law): 20
+(传播, Propagation): 357
+(压力, Pressure): 35
+(折射定律, Law of refraction): 20
+(等边直角三棱镜, Equilateral right-angle prism): 2
+(解法, Solution): 12
+(玻璃, Glass): 133
+(全反射, Total internal reflection): 25
+(磁场强度, Magnetic field strength): 29
+(入射角, Incident angle): 32
+(子宫镜, Hysteroscopy): 1
+(光学纤维, Optical fiber): 1
+(光纤传感器, Optical fiber sensor): 2
+(垂线, Perpendicular line): 12
+(窥视, Inspection): 1
+(光线范围, Range of light): 1
+(激光光纤通信, Laser fiber optic communication): 1
+(折射率计, Refractometer): 1
+(光源, Light source): 213
+(光学仪器, Optical instruments): 32
+(光纤, Optical fiber): 28
+(反射, Reflection): 424
+(医学, Medicine): 12
+(材料, Material): 92
+(直径, Diameter): 90
+(损耗, Loss): 11
+(通信容量, Communication capacity): 1
+(底面, Bottom surface): 17
+(复杂机器, Complex machinery): 1
+(木片, Wooden plank): 8
+(保密性, Confidentiality): 2
+(光缆通信系统, Optical cable communication system): 1
+(物理量, Physical quantity): 101
+(折射率, Refractive index): 163
+(空气, Air): 214
+(速度, Speed): 1354
+(溫度, Temperature): 1
+(折射角, Refracted angle): 20
+(加速度, Acceleration): 397
+(内窥, Endoscopy): 1
+(胃镜, Gastroscopy): 1
+(膀胱镜, Cystoscopy): 1
+(工业, Industry): 15
+(圆木片, Circular wooden plank): 3
+(声场强度, Sound field intensity): 1
+(全反射, Total reflection): 25

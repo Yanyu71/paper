@@ -1,0 +1,168 @@
+﻿{
+"knowledge_points": [
+   {"title": "牛顿第二定律", "en": "Newton's second law"},
+   {"title": "微分形式", "en": "differential form"},
+   {"title": "加速度", "en": "acceleration"},
+   {"title": "力", "en": "force"},
+   {"title": "矢量方程", "en": "vector equation"},
+   {"title": "合力", "en": "net force"},
+   {"title": "分量式", "en": "component form"},
+   {"title": "直角坐标系", "en": "rectangular coordinate system"},
+   {"title": "运动方程", "en": "equation of motion"},
+   {"title": "运动微分方程", "en": "differential equation of motion"},
+   {"title": "积分", "en": "integration"},
+   {"title": "质点运动学", "en": "kinematics of particles"},
+   {"title": "质点动力学", "en": "dynamics of particles"}
+]
+}{
+"knowledge_points": [
+   {"title": "质点动力学问题", "en": "Particle dynamics problems"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "斜面", "en": "Incline"},
+   {"title": "作用力", "en": "Applied force"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "支持力", "en": "Normal force"},
+   {"title": "压力", "en": "Pressure"},
+   {"title": "受力分析", "en": "Force analysis"},
+   {"title": "合外力", "en": "Net external force"},
+   {"title": "匀加速运动", "en": "Uniformly accelerated motion"},
+   {"title": "加速度变换定理", "en": "Acceleration transformation theorem"},
+   {"title": "加速度合成", "en": "Acceleration composition"},
+   {"title": "加速度方程", "en": "Acceleration equation"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"},
+   {"title": "水平力", "en": "Horizontal force"},
+   {"title": "垂直力", "en": "Vertical force"},
+   {"title": "水平方向", "en": "Horizontal direction"},
+   {"title": "垂直方向", "en": "Vertical direction"}
+]
+}{
+"knowledge_points": [
+   {"title": "水平力", "en": "horizontal force"},
+   {"title": "共同运动", "en": "common motion"},
+   {"title": "加速度", "en": "acceleration"},
+   {"title": "方向", "en": "direction"},
+   {"title": "惯性系", "en": "inertial frame of reference"},
+   {"title": "非惯性系", "en": "non-inertial frame of reference"},
+   {"title": "相对加速度", "en": "relative acceleration"},
+   {"title": "伽利略变换", "en": "Galilean transformation"},
+   {"title": "质点动力学问题", "en": "particle dynamics problem"},
+   {"title": "第一类问题", "en": "Type 1 problem"},
+   {"title": "第二类问题", "en": "Type 2 problem"},
+   {"title": "质量", "en": "mass"},
+   {"title": "小球", "en": "ball"},
+   {"title": "刚性细杆", "en": "rigid rod"},
+   {"title": "电动机", "en": "electric motor"},
+   {"title": "水平轴", "en": "horizontal axis"},
+   {"title": "竖直平面", "en": "vertical plane"},
+   {"title": "静止", "en": "rest"},
+   {"title": "转动", "en": "rotation"},
+   {"title": "切向加速度", "en": "tangential acceleration"},
+   {"title": "作用力", "en": "force"},
+   {"title": "拉力", "en": "tension"},
+   {"title": "压力", "en": "pressure"},
+   {"title": "重力", "en": "gravity"},
+   {"title": "法向分量", "en": "normal component"},
+   {"title": "切向分量", "en": "tangential component"},
+   {"title": "圆心", "en": "center of the circle"},
+   {"title": "分离变量", "en": "separation of variables"},
+   {"title": "积分", "en": "integration"},
+   {"title": "速率", "en": "velocity"},
+   {"title": "向心力", "en": "centripetal force"},
+   {"title": "推力", "en": "thrust"}
+]
+}{
+"knowledge_points": [
+   {"title": "牛顿运动定律", "en": "Newton's laws of motion"},
+   {"title": "质点动力学问题", "en": "kinematics of particles"},
+   {"title": "研究对象", "en": "object of study"},
+   {"title": "隔离体", "en": "isolated body"},
+   {"title": "受力情况", "en": "force situation"},
+   {"title": "运动情况", "en": "motion situation"},
+   {"title": "受力图", "en": "force diagram"},
+   {"title": "坐标系", "en": "coordinate system"},
+   {"title": "列方程求解", "en": "equation solving"},
+   {"title": "运动微分方程", "en": "differential equation of motion"},
+   {"title": "辅助性方程", "en": "auxiliary equation"},
+   {"title": "讨论", "en": "discussion"},
+   {"title": "直角坐标系", "en": "rectangular coordinate system"},
+   {"title": "自然坐标", "en": "natural coordinate system"},
+   {"title": "地球同步卫星", "en": "geostationary satellite"},
+   {"title": "发射精度", "en": "launch accuracy"},
+   {"title": "技术难度", "en": "technical difficulty"},
+   {"title": "圆轨道平面", "en": "circular orbit plane"},
+   {"title": "赤道平面", "en": "equatorial plane"},
+   {"title": "角速度", "en": "angular velocity"},
+   {"title": "地球自转轴", "en": "axis of Earth's rotation"},
+   {"title": "运行周期", "en": "orbital period"},
+   {"title": "向心力", "en": "centripetal force"},
+   {"title": "地球引力", "en": "gravity of Earth"},
+   {"title": "运行速率", "en": "orbital velocity"},
+   {"title": "运行高度", "en": "orbital altitude"}
+]
+}{
+"knowledge_points": [
+   {"title": "(R+h)2", "en": "Square of (R+h)"},
+   {"title": "卫星的运行周期", "en": "Orbital period of satellite"},
+   {"title": "地球的自转周期", "en": "Rotation period of the Earth"},
+   {"title": "同步轨道", "en": "Synchronous orbit"},
+   {"title": "地球同步卫星的运行速率", "en": "Orbital velocity of geostationary satellite"},
+   {"title": "地球同步卫星的运行高度", "en": "Orbital altitude of geostationary satellite"},
+   {"title": "全球通信", "en": "Global communication"},
+   {"title": "地球同步卫星", "en": "Geostationary satellite"},
+   {"title": "发射地球同步卫星技术要求", "en": "Technical requirements for launching geostationary satellites"},
+   {"title": "初始轨道", "en": "Initial orbit"},
+   {"title": "停泊轨道", "en": "Parking orbit"},
+   {"title": "转移轨道", "en": "Transfer orbit"},
+   {"title": "霍曼轨道", "en": "Hohmann transfer orbit"},
+   {"title": "远地点", "en": "Apogee"},
+   {"title": "近地点", "en": "Perigee"},
+   {"title": "自旋", "en": "Spin"},
+   {"title": "地面控制中心", "en": "Ground control center"},
+   {"title": "姿态调整", "en": "Attitude adjustment"},
+   {"title": "远地点发动机", "en": "Apogee engine"},
+   {"title": "同步轨道", "en": "Synchronous orbit"},
+   {"title": "竖直上抛的物体", "en": "Vertically thrown object"},
+   {"title": "初速度", "en": "Initial velocity"},
+   {"title": "万有引力定律", "en": "Universal law of gravitation"},
+   {"title": "质点运动微分方程", "en": "Differential equation of particle motion"},
+   {"title": "地球对物体的引力", "en": "Gravitational force of the Earth on an object"},
+   {"title": "变量代换", "en": "Variable substitution"}
+]
+}{
+"knowledge_points": [
+   {"title": "消去变量", "en": "Elimination of variables", "type": "concept", "description": "在解题过程中，通过积分等方法将变量消去的操作。"},
+   {"title": "上抛物体速度随高度变化规律", "en": "Law of velocity change with height for projectile motion", "type": "concept", "description": "物体在上抛过程中速度随高度变化的规律。"},
+   {"title": "脱离地球引力", "en": "Escape from Earth's gravity", "type": "concept", "description": "物体脱离地球引力的作用，使其不再返回地面。"},
+   {"title": "第二宇宙速度", "en": "Second cosmic velocity", "type": "concept", "description": "使发射物体绕地球作圆轨道运动的最小发射速度。"},
+   {"title": "第一宇宙速度", "en": "First cosmic velocity", "type": "concept", "description": "使发射物体绕地球作圆轨道运动的发射速度。"},
+   {"title": "第三宇宙速度", "en": "Third cosmic velocity", "type": "concept", "description": "使发射物体脱离太阳引力的发射速度。"},
+   {"title": "人造地球卫星", "en": "Artificial Earth satellite", "type": "concept", "description": "人类发射到太空中绕地球运行的人造卫星。"},
+   {"title": "牛顿第二定律", "en": "Newton's second law", "type": "concept", "description": "物体受力与加速度之间的关系，F=ma。"},
+   {"title": "弹道方程", "en": "Trajectory equation", "type": "concept", "description": "描述炮弹飞行轨迹的方程。"},
+   {"title": "动力学的第二类问题", "en": "Second type of dynamics problem", "type": "concept", "description": "涉及变力的问题，需要用积分法求解。"}
+]
+}{
+"knowledge_points": [
+   {"title": "分离变量", "en": "Separation of variables"},
+   {"title": "速度分量", "en": "Velocity components"},
+   {"title": "弹道方程", "en": "Trajectory equation"},
+   {"title": "空气阻力", "en": "Air resistance"},
+   {"title": "运动叠加原理", "en": "Principle of superposition of motion"},
+   {"title": "弹簧振子系统", "en": "Spring-mass system"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"},
+   {"title": "运动微分方程", "en": "Differential equation of motion"},
+   {"title": "变力问题", "en": "Variable force problem"},
+   {"title": "最大速度", "en": "Maximum velocity"}
+]
+}{
+"knowledge_points": [
+   {"title": "牛顿第一定律", "en": "Newton's First Law"},
+   {"title": "牛顿第二定律", "en": "Newton's Second Law"},
+   {"title": "合外力", "en": "Net External Force"},
+   {"title": "马拉车的力", "en": "Force of pulling the cart"},
+   {"title": "车拉马的力", "en": "Force of the cart pulling the horse"},
+   {"title": "重量", "en": "Weight"},
+   {"title": "参考系", "en": "Reference frame"}
+]
+}

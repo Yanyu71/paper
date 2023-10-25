@@ -1,0 +1,47 @@
+﻿{
+"knowledge_points": [
+   {"title": "布儒斯特定律", "en": "Brewster's Law"},
+   {"title": "反射光", "en": "Reflected light"},
+   {"title": "偏振程度", "en": "Degree of polarization"},
+   {"title": "入射角", "en": "Incident angle"},
+   {"title": "折射角", "en": "Refracted angle"},
+   {"title": "线偏振光", "en": "Linearly polarized light"},
+   {"title": "自然光", "en": "Natural light"},
+   {"title": "反射起偏现象", "en": "Reflection polarization phenomenon"},
+   {"title": "折射光", "en": "Refracted light"},
+   {"title": "布儒斯特角", "en": "Brewster's angle"},
+   {"title": "光强度", "en": "Intensity of light"},
+   {"title": "玻璃片堆", "en": "Stack of glass plates"},
+   {"title": "偏振度", "en": "Degree of polarization"},
+   {"title": "激光技术", "en": "Laser technology"},
+   {"title": "阈值条件", "en": "Threshold condition"},
+   {"title": "反射损失", "en": "Reflection loss"},
+   {"title": "平行平面玻璃板", "en": "Parallel plane glass plate"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "双折射", "en": "Birefringence"}
+]
+}{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"},
+   {"title": "推荐系统", "en": "Recommendation System"}
+], 
+
+}

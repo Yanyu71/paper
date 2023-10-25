@@ -1,0 +1,18 @@
+﻿[{
+"knowledge_points": [
+   {"title": "圆偏振光", "en": "Circularly polarized light"},
+   {"title": "椭圆偏振光", "en": "Elliptically polarized light"},
+   {"title": "光矢量", "en": "Light vector"},
+   {"title": "传播方向", "en": "Propagation direction"},
+   {"title": "旋转角速度", "en": "Angular velocity of rotation"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "振动状态", "en": "Vibration state"},
+   {"title": "振动面", "en": "Vibration plane"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "右旋圆偏振光", "en": "Right circularly polarized light"},
+   {"title": "左旋圆偏振光", "en": "Left circularly polarized light"},
+   {"title": "右旋椭圆偏振光", "en": "Right elliptically polarized light"},
+   {"title": "左旋椭圆偏振光", "en": "Left elliptically polarized light"}
+]
+}]

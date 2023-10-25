@@ -1,0 +1,16 @@
+(导线, Conductor): 2
+(电流元, Current element): 7
+(距离, Distance): 1
+(位矢, Position vector): 3
+(正弦, Sine): 1
+(毕奥-萨伐尔定律, Biot-Savart Law): 2
+(磁感应强度, Magnetic induction): 1
+(电流强度, Current intensity): 1
+(导率, Conductivity): 1
+(实验, Experiment): 4
+(磁场, Magnetic field): 4
+(稳恒电流, Steady current): 1
+(夹角, Angle): 2
+(磁感应强度叠加原理, Principle of superposition of magnetic induction): 1
+(验证, Verification): 1
+(矢量式, Vector expression): 1

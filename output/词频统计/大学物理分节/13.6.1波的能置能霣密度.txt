@@ -1,0 +1,23 @@
+(简谐纵波, Harmonic longitudinal wave): 2
+(振动速度, Vibration velocity): 0
+(驻波, Standing wave): 1
+(能量变化规律, Law of energy change): 0
+(弹性介质, Elastic medium): 1
+(体积元, Volume element): 13
+(能量, Energy): 14
+(波的能量密度, Energy density of waves): 1
+(势能, Potential energy): 9
+(简谐波, Harmonic wave): 1
+(胡克定律, Hooke's law): 1
+(行波, Progressive wave): 1
+(杨氏模量, Young's modulus): 1
+(动能, Kinetic energy): 7
+(总能量, Total energy): 2
+(角频率的平方, Square of angular frequency): 1
+(速度, Velocity): 4
+(波的振幅平方, Square of wave amplitude): 1
+(介质密度, Medium density): 0
+(介质, Medium): 6
+(能量密度, Energy density): 4
+(相位, Phase): 2
+(弹性形变, Elastic deformation): 1

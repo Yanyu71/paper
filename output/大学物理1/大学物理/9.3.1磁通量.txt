@@ -1,0 +1,46 @@
+﻿[{
+"knowledge_points": [
+   {"title": "磁通量", "en": "Magnetic Flux"},
+   {"title": "电场线", "en": "Electric Field Lines"},
+   {"title": "磁场线", "en": "Magnetic Field Lines"},
+   {"title": "磁棒", "en": "Magnetic Bar"},
+   {"title": "铁屑", "en": "Iron Filings"},
+   {"title": "载流长直导线", "en": "Current-carrying Straight Wire"},
+   {"title": "载流圆线圈", "en": "Current-carrying Circular Coil"},
+   {"title": "闭合曲线", "en": "Closed Curve"},
+   {"title": "右手螺旋法则", "en": "Right-hand Rule"},
+   {"title": "磁感应强度", "en": "Magnetic Induction"},
+   {"title": "磁通量的概念", "en": "Concept of Magnetic Flux"},
+   {"title": "曲面", "en": "Surface"},
+   {"title": "面积元", "en": "Area Element"},
+   {"title": "法向单位矢量", "en": "Normal Unit Vector"},
+   {"title": "磁场线的定义", "en": "Definition of Magnetic Field Lines"},
+   {"title": "磁通量的计算", "en": "Calculation of Magnetic Flux"},
+   {"title": "积分", "en": "Integration"},
+   {"title": "闭合曲面", "en": "Closed Surface"},
+   {"title": "韦伯", "en": "Weber"},
+   {"title": "单位", "en": "Unit"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁通量", "en": "Magnetic Flux"},
+   {"title": "电场线", "en": "Electric Field Lines"},
+   {"title": "磁场线", "en": "Magnetic Field Lines"},
+   {"title": "磁棒", "en": "Magnetic Bar"},
+   {"title": "铁屑", "en": "Iron Filings"},
+   {"title": "载流长直导线", "en": "Current-carrying Straight Wire"},
+   {"title": "载流圆线圈", "en": "Current-carrying Circular Coil"},
+   {"title": "闭合曲线", "en": "Closed Curve"},
+   {"title": "右手螺旋法则", "en": "Right-hand Rule"},
+   {"title": "磁通量的概念", "en": "Concept of Magnetic Flux"},
+   {"title": "磁感应强度", "en": "Magnetic Induction"},
+   {"title": "法向单位矢量", "en": "Normal Unit Vector"},
+   {"title": "面积元", "en": "Area Element"},
+   {"title": "标量", "en": "Scalar"},
+   {"title": "积分", "en": "Integration"},
+   {"title": "闭合曲面", "en": "Closed Surface"},
+   {"title": "韦伯", "en": "Weber"},
+   {"title": "特斯拉", "en": "Tesla"},
+   {"title": "安培", "en": "Ampere"}
+]
+}]

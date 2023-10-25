@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "发光点", "en": "Luminous point"},
+   {"title": "实像点", "en": "Real image point"},
+   {"title": "虚像点", "en": "Virtual image point"},
+   {"title": "光学元件", "en": "Optical element"},
+   {"title": "反射镜", "en": "Reflecting mirror"},
+   {"title": "透镜", "en": "Lens"},
+   {"title": "物像关系", "en": "Object-image relationship"},
+   {"title": "球面界面", "en": "Spherical interface"},
+   {"title": "反射", "en": "Reflection"},
+   {"title": "折射", "en": "Refraction"},
+   {"title": "实物", "en": "Real object"},
+   {"title": "虚物", "en": "Virtual object"}
+]
+}]

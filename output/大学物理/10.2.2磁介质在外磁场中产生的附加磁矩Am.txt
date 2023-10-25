@@ -1,0 +1,14 @@
+﻿{
+"knowledge_points": [
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "外磁场", "en": "External magnetic field"},
+   {"title": "附加磁矩", "en": "Additional magnetic moment"},
+   {"title": "轨道角动量", "en": "Orbital angular momentum"},
+   {"title": "轨道磁矩", "en": "Orbital magnetic moment"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "进动", "en": "Precession"},
+   {"title": "陀螺", "en": "Gyroscope"},
+   {"title": "顺磁质", "en": "Paramagnetic material"}
+]
+}

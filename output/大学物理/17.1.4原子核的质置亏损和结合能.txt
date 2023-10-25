@@ -1,0 +1,50 @@
+﻿{
+"knowledge_points": [
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "质量亏损", "en": "Mass deficit"},
+   {"title": "结合能", "en": "Binding energy"},
+   {"title": "质能关系", "en": "Mass-energy equivalence"},
+   {"title": "能量放出", "en": "Energy release"},
+   {"title": "质子", "en": "Proton"},
+   {"title": "中子", "en": "Neutron"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "静止质量", "en": "Rest mass"},
+   {"title": "质量亏损", "en": "Mass deficit"},
+   {"title": "中性原子", "en": "Neutral atom"},
+   {"title": "结合能", "en": "Binding energy"},
+   {"title": "比结合能", "en": "Specific binding energy"},
+   {"title": "核子", "en": "Nucleon"},
+   {"title": "稳定性", "en": "Stability"},
+   {"title": "核素", "en": "Nuclide"}
+]
+}{
+"knowledge_points": [
+   {"title": "比结合能", "en": "Binding energy"},
+   {"title": "质量数", "en": "Mass number"},
+   {"title": "核", "en": "Nucleus"},
+   {"title": "质子数", "en": "Proton number"},
+   {"title": "中子数", "en": "Neutron number"},
+   {"title": "偶偶核", "en": "Even-even nucleus"},
+   {"title": "奇奇核", "en": "Odd-odd nucleus"},
+   {"title": "核能利用", "en": "Nuclear energy utilization"},
+   {"title": "核力", "en": "Nuclear force"},
+   {"title": "饱和性", "en": "Saturation"},
+   {"title": "稳定性", "en": "Stability"}
+],
+"relationships": [
+   {"source": "比结合能", "target": "质量数", "type": "关联", "description": "质量数中等的核的比结合能近似相同"},
+   {"source": "比结合能", "target": "质量数", "type": "关联", "description": "质量数大的和小的核相比，比结合能明显较大"},
+   {"source": "比结合能", "target": "质量数", "type": "关联", "description": "质量数在30以上的原子核中，核子的比结合能随质量数的变化不大"},
+   {"source": "比结合能", "target": "质量数", "type": "关联", "description": "质量数小于30的原子核中，比结合能的数值随质量数的增大而增大"},
+   {"source": "比结合能", "target": "核", "type": "关联", "description": "比结合能是核的一个特性"},
+   {"source": "比结合能", "target": "核能利用", "type": "关联", "description": "比结合能较小的轻原子核和重原子核是核能利用的基础"},
+   {"source": "比结合能", "target": "核力", "type": "关联", "description": "比结合能的变化显示了核力具有饱和性"},
+   {"source": "质子数", "target": "比结合能", "type": "关联", "description": "质子数和中子数相等的偶偶核的比结合能与相邻核比较大，原子核比较稳定"},
+   {"source": "质子数", "target": "比结合能", "type": "关联", "description": "质子数和中子数相等的奇奇核的比结合能与相邻核比较小，原子核的稳定性较差"},
+   {"source": "核力", "target": "比结合能", "type": "关联", "description": "核力的饱和性导致比结合能随质量数的变化不大"},
+   {"source": "核", "target": "比结合能", "type": "关联", "description": "比结合能是核的一个特性"},
+   {"source": "核能利用", "target": "比结合能", "type": "关联", "description": "比结合能较小的轻原子核和重原子核是核能利用的基础"},
+   {"source": "饱和性", "target": "核力", "type": "关联", "description": "核力具有饱和性"},
+   {"source": "稳定性", "target": "比结合能", "type": "关联", "description": "比结合能较大的核一般较稳定"}
+]
+}

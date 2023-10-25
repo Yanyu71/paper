@@ -1,0 +1,15 @@
+(时空弯曲性质, Curvature of spacetime): 1
+(测地线, Geodesic): 1
+(空间, Space): 3
+(狭义相对论, Special relativity): 1
+(广义相对论, General relativity): 7
+(自由落体运动, Free fall motion): 1
+(弱引力场, Weak gravitational field): 2
+(牛顿力学, Newtonian mechanics): 3
+(时空背景, Spacetime background): 1
+(引力场, Gravitational field): 8
+(黎曼几何, Riemannian geometry): 1
+(低速情况, Low-speed situation): 1
+(时间, Time): 3
+(物质的分布与运动, Distribution and motion of matter): 2
+(引力场方程, Gravitational field equations): 1

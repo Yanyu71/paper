@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "电势能", "en": "Potential Energy"},
+   {"title": "静电场", "en": "Electric Field"},
+   {"title": "保守场", "en": "Conservative Field"},
+   {"title": "力学", "en": "Mechanics"},
+   {"title": "保守力", "en": "Conservative Force"},
+   {"title": "功", "en": "Work"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "电势", "en": "Potential"}
+],
+"relationships": [
+   {"source": "静电场", "target": "保守场", "type": "是", "description": "静电场是保守场"},
+   {"source": "保守力", "target": "功", "type": "等于", "description": "保守力的功等于势能的改变量"},
+   {"source": "电势能", "target": "电荷", "type": "属于", "description": "电势能是属于场源电荷和试探电荷这个系统的"},
+   {"source": "电势能", "target": "电场", "type": "属于", "description": "电势能是属于电场的"},
+   {"source": "电势能", "target": "电荷量", "type": "成正比", "description": "电势能与试探电荷的电荷量成正比"},
+   {"source": "电势", "target": "电场性质", "type": "表征", "description": "电势可以作为表征静电场性质的另一个物理量"}
+]
+}

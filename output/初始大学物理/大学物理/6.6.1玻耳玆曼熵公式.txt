@@ -1,0 +1,10 @@
+﻿{
+"knowledge_points": [
+   {"title": "热力学第二定律", "en": "Second Law of Thermodynamics"},
+   {"title": "玻耳兹曼熵公式", "en": "Boltzmann entropy formula"},
+   {"title": "态函数熵", "en": "State function entropy"},
+   {"title": "玻耳兹曼常数", "en": "Boltzmann constant"},
+   {"title": "热力学概率", "en": "Thermodynamic probability"},
+   {"title": "系统的状态函数", "en": "State function of a system"}
+]
+}

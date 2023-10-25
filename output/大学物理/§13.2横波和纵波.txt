@@ -1,0 +1,28 @@
+﻿{
+"knowledge_points": [
+   {"title": "横波", "en": "Transverse wave"},
+   {"title": "纵波", "en": "Longitudinal wave"},
+   {"title": "机械波", "en": "Mechanical wave"},
+   {"title": "质元振动方向", "en": "Direction of particle vibration"},
+   {"title": "波的传播方向", "en": "Direction of wave propagation"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "弹性绳", "en": "Elastic rope"},
+   {"title": "脉冲波", "en": "Pulse wave"},
+   {"title": "弹性回复性质", "en": "Elastic restorative property"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "波峰", "en": "Crest"},
+   {"title": "波谷", "en": "Trough"},
+   {"title": "弹簧", "en": "Spring"},
+   {"title": "弹簧圈", "en": "Coil of spring"},
+   {"title": "空气", "en": "Air"},
+   {"title": "长管", "en": "Long tube"},
+   {"title": "活塞", "en": "Piston"},
+   {"title": "压力波", "en": "Pressure wave"},
+   {"title": "切变", "en": "Shear"},
+   {"title": "弹性回复力", "en": "Elastic restoring force"},
+   {"title": "固体", "en": "Solid"},
+   {"title": "液体", "en": "Liquid"},
+   {"title": "气体", "en": "Gas"},
+   {"title": "机械纵波", "en": "Mechanical longitudinal wave"}
+]
+}

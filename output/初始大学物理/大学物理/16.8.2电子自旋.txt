@@ -1,0 +1,11 @@
+﻿{
+"knowledge_points": [
+   {"title": "电子自旋", "en": "Electron Spin", "type": "解释", "description": "电子具有自旋的假设"},
+   {"title": "自旋角动量", "en": "Spin Angular Momentum", "type": "定义", "description": "电子自旋角动量的大小和投影"},
+   {"title": "自旋磁矩", "en": "Spin Magnetic Moment", "type": "定义", "description": "电子自旋磁矩的大小和方向"},
+   {"title": "自旋量子数", "en": "Spin Quantum Number", "type": "定义", "description": "用于表示电子自旋角动量大小的量子数"},
+   {"title": "自旋磁量子数", "en": "Spin Magnetic Quantum Number", "type": "定义", "description": "用于表示电子自旋角动量在外磁场方向的投影的量子数"},
+   {"title": "碱金属原子光谱的双线结构", "en": "Doublet Structure in Alkali Metal Atomic Spectra", "type": "解释", "description": "电子自旋概念解释了碱金属原子光谱的双线结构现象"},
+   {"title": "微观粒子的自旋", "en": "Spin of Microscopic Particles", "type": "观察", "description": "理论和实验研究表明，微观粒子都具有自旋"}
+]
+}

@@ -1,0 +1,65 @@
+(沿坐标轴的分量函数, Component functions along coordinate axes): 0
+(远离圆环处可以看成点电荷, Far away from the ring, it can be regarded as a point charge): 0
+(电场强度方向, Direction of electric field strength): 1
+(轴对称, Axially symmetric): 1
+(均匀带电薄圆盘, Uniformly charged thin disk): 1
+(连续分布电荷的电场强度, Electric field strength of continuous charge distribution): 2
+(电荷元, Charge element): 9
+(电荷面密度, Charge surface density): 4
+(电偶极子, Electric dipole): 7
+(普通积分, Ordinary integral): 1
+(远离带电圆盘处的电场, Electric field far away from the charged disk): 1
+(电场强度大小, Magnitude of electric field strength): 1
+(坐标系, Coordinate system): 2
+(积分, Integration): 16
+(细圆环, Thin circular loop): 5
+(电场强度定义式, Definition of electric field strength): 1
+(曲率中心, Center of curvature): 1
+(电荷分布, Charge distribution): 1
+(直线均匀分布的带电体, Charged body with uniform distribution along a straight line): 0
+(电场强度叠加原理, Principle of superposition of electric field strength): 1
+(均匀带电平面, Uniformly charged plane): 1
+(矢量函数, Vector function): 2
+(环心处电场强度为0, Electric field strength is 0 at the center of the ring): 0
+(电场强度分布, Distribution of electric field strength): 2
+(点电荷电场强度, Electric field strength of point charges): 1
+(非导体棒, Non-conductive rod): 1
+(标量积分, Scalar integration): 1
+(电荷面密度, Surface charge density): 4
+(式(1), Equation (1): 0
+(物理模型, Physical model): 1
+(电场强度通量, Electric field flux): 2
+(电荷线密度, Charge line density): 1
+(均匀带电荷的直棒, Uniform charged rod): 0
+(电偶极矩, Electric dipole moment): 1
+(点电荷的电场, Electric field of a point charge): 1
+(圆盘轴线上任一点的电场强度, Electric field strength at any point on the axis of the disk): 0
+(垂直于x轴的分量, Component perpendicular to the x-axis): 1
+(常量, Constant): 2
+(带电体, Charged body): 13
+(圆环上电荷均匀分布, Uniform distribution of charge on the ring): 1
+(电场强度分量, Components of electric field strength): 0
+(场点靠近圆盘时, When the field point is close to the disk): 0
+(轴线, Axis): 8
+(场点, Field point): 6
+(高斯定理, Gauss's theorem): 3
+(场强大小与距离的关系, Relationship between field strength and distance): 0
+(直线, Straight line): 2
+(电荷沿直线均匀分布, Uniform distribution of charge along a straight line): 0
+(点电荷, Point charge): 16
+(圆环, Ring): 12
+(库仑定律, Coulomb's law): 1
+(圆对称分布带电体, Charged body with circular symmetry distribution): 1
+(电场强度, Electric field strength): 37
+(电场, Electric field): 57
+(无限长, Infinite length): 3
+(电荷密度, Charge density): 1
+(对称性, Symmetry): 3
+(圆环轴线上任一点的电场强度, Electric field strength at any point on the axis of the ring): 0
+(环形均匀带电圆盘, Circular uniformly charged disk): 0
+(同心的带电细圆环, Concentric charged thin rings): 1
+(叠加原理, Superposition principle): 4
+(补偿法, Compensation method): 3
+(直棒, Straight rod): 5
+(电场线, Electric field lines): 1
+(真空中的静电场, Static electric field in vacuum): 2

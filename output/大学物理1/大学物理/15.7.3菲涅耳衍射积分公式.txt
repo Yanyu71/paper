@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "惠更斯-菲涅耳原理", "en": "Huygens-Fresnel principle"},
+   {"title": "菲涅耳衍射积分公式", "en": "Fresnel diffraction integral formula"},
+   {"title": "波面", "en": "wavefront"},
+   {"title": "次波", "en": "secondary wave"},
+   {"title": "振幅", "en": "amplitude"},
+   {"title": "初相位", "en": "initial phase"},
+   {"title": "倾斜因子", "en": "tilt factor"},
+   {"title": "方位角", "en": "azimuth angle"},
+   {"title": "惠更斯-菲涅耳原理的数学表达式", "en": "mathematical expression of Huygens-Fresnel principle"},
+   {"title": "菲涅耳的设想", "en": "Fresnel's idea"},
+   {"title": "光的电磁理论", "en": "electromagnetic theory of light"},
+   {"title": "夫琅禾费衍射", "en": "Fraunhofer diffraction"}
+]
+}]

@@ -1,0 +1,55 @@
+(相邻明条纹, Adjacent bright fringes): 1
+(测量, Measurement): 15
+(精度, Accuracy): 2
+(明纹条件, Bright fringe condition): 1
+(线膨胀系数, Linear expansion coefficient): 2
+(明纹半径公式, Formula for bright fringe radius): 0
+(待检透镜, Lens under test): 1
+(劈尖夹角, Wedge angle): 4
+(劈尖膜, Wedge film): 7
+(接触, Contact): 4
+(光学干涉, Optical interference): 1
+(光学元件, Optical element): 2
+(公式, Formula): 3
+(劈尖空气层厚度, Thickness of air wedge): 0
+(暗纹条件, Dark fringe condition): 1
+(曲率半径, Radius of curvature): 14
+(微小角度测量, Measurement of small angles): 0
+(介质的折射率, Refractive index of the medium): 1
+(级数, Order): 1
+(显微镜, Microscope): 2
+(干涉条纹间距, Interference fringe spacing): 1
+(细金属丝的直径, Diameter of the thin metal wire): 2
+(等厚干涉条件, Conditions for equal thickness interference): 1
+(膜层厚度差, Difference in film thickness): 1
+(暗纹半径公式, Formula for dark fringe radius): 1
+(明条纹, Bright fringes): 4
+(微小缺陷, Minor defect): 1
+(平行光, Parallel light): 3
+(干涉条纹, Interference fringes): 21
+(等厚干涉, Equal thickness interference): 16
+(级差, Order difference): 1
+(石英圆环, Quartz ring): 2
+(膨胀系数定义, Definition of expansion coefficient): 1
+(整度, Flatness): 1
+(半波损失, Half-wave loss): 2
+(加工, Processing): 4
+(暗条纹, Dark fringes): 1
+(级次, Order): 1
+(差, Difference): 12
+(等厚干涉方法, Equal thickness interference method): 2
+(直径, Diameter): 8
+(劈尖干涉, Wedge interference): 3
+(折射率, Refractive index): 3
+(薄膜的等厚干涉, Interference of Thin Films): 1
+(透明薄膜, Transparent film): 1
+(膜厚度分布, Thickness distribution of the film): 0
+(牛顿环, Newton's rings): 16
+(棱边, Edge): 2
+(工件表面纹路, Surface pattern of workpiece): 1
+(零级暗纹, Zero-order dark fringe): 1
+(误差, Error): 2
+(波长, Wavelength): 10
+(块规, Gauge block): 1
+(空气层厚度, Thickness of air layer): 5
+(光程差, Optical path difference): 7

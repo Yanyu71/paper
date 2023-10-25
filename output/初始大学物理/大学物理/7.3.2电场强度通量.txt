@@ -1,0 +1,43 @@
+﻿{
+"knowledge_points": [
+   {"title": "电场强度通量", "en": "Electric field strength flux"},
+   {"title": "电场线", "en": "Electric field lines"},
+   {"title": "穿过曲面的电场强度通量", "en": "Electric field strength flux through a surface"},
+   {"title": "匀强电场", "en": "Uniform electric field"},
+   {"title": "非匀强电场", "en": "Non-uniform electric field"},
+   {"title": "闭合曲面", "en": "Closed surface"},
+   {"title": "电场强度通量的计算", "en": "Calculation of electric field strength flux"},
+   {"title": "立方体闭合面", "en": "Closed surface of a cube"},
+   {"title": "右面", "en": "Right face"},
+   {"title": "左面", "en": "Left face"},
+   {"title": "顶面", "en": "Top face"}
+]
+}{
+"knowledge_points": [
+   {"title": "电场强度通量", "en": "Electric field strength flux"},
+   {"title": "电场线", "en": "Electric field lines"},
+   {"title": "穿过曲面的电场强度通量", "en": "Electric field strength flux through a surface"},
+   {"title": "匀强电场", "en": "Uniform electric field"},
+   {"title": "非匀强电场", "en": "Non-uniform electric field"},
+   {"title": "闭合曲面", "en": "Closed surface"},
+   {"title": "电场强度通量的计算", "en": "Calculation of electric field strength flux"},
+   {"title": "立方体闭合面", "en": "Closed surface of a cube"},
+   {"title": "右面", "en": "Right face"},
+   {"title": "左面", "en": "Left face"},
+   {"title": "顶面", "en": "Top face"}
+]
+}{
+"knowledge_points": [
+   {"title": "电场强度通量", "en": "Electric field strength flux"},
+   {"title": "电场线", "en": "Electric field lines"},
+   {"title": "穿过曲面的电场强度通量", "en": "Electric field strength flux through a surface"},
+   {"title": "匀强电场", "en": "Uniform electric field"},
+   {"title": "非匀强电场", "en": "Non-uniform electric field"},
+   {"title": "闭合曲面", "en": "Closed surface"},
+   {"title": "电场强度通量的计算", "en": "Calculation of electric field strength flux"},
+   {"title": "立方体闭合面", "en": "Closed surface of a cube"},
+   {"title": "右面", "en": "Right face"},
+   {"title": "左面", "en": "Left face"},
+   {"title": "顶面", "en": "Top face"}
+]
+}

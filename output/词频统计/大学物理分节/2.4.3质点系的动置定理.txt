@@ -1,0 +1,13 @@
+(质量, Mass): 1
+(内力, Internal force): 5
+(动量定理, Principle of momentum): 3
+(牛顿第三定律, Newton's third law): 1
+(质点系, Particle system): 6
+(动能定理, Principle of kinetic energy): 3
+(冲量, Impulse): 1
+(外力, External force): 1
+(相互作用, Interaction): 1
+(功, Work): 2
+(动量, Momentum): 7
+(质点系的动置定理, Principle of motion of particle system): 2
+(速度, Velocity): 2

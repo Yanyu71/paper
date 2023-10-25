@@ -1,0 +1,15 @@
+﻿[{
+"knowledge_points": [
+   {"title": "光的衍射现象", "en": "Diffraction of light"},
+   {"title": "光的直线传播行为", "en": "Straight propagation of light"},
+   {"title": "光线绕过障碍物", "en": "Light bending around obstacles"},
+   {"title": "明暗相间的条纹", "en": "Bright and dark fringes"},
+   {"title": "光学衍射实验系统", "en": "Optical diffraction experimental system"},
+   {"title": "菲涅耳衍射", "en": "Fresnel diffraction"},
+   {"title": "近场衍射", "en": "Near-field diffraction"},
+   {"title": "夫琅禾费衍射", "en": "Fraunhofer diffraction"},
+   {"title": "远场衍射", "en": "Far-field diffraction"},
+   {"title": "光波波面的曲率", "en": "Curvature of light wavefront"},
+   {"title": "衍射问题的研究重点", "en": "Research focus on diffraction problems"}
+]
+}]

@@ -1,0 +1,54 @@
+﻿[{
+"knowledge_points": [
+   {"title": "大学物理学", "en": "University Physics"},
+   {"title": "物理学", "en": "Physics"},
+   {"title": "大学", "en": "University"},
+   {"title": "学科", "en": "Discipline"},
+   {"title": "科学", "en": "Science"}
+]
+},{
+"knowledge_points": [
+   {"title": "大学物理学", "en": "University Physics"},
+   {"title": "物理学", "en": "Physics"},
+   {"title": "大学", "en": "University"},
+   {"title": "学科", "en": "Discipline"},
+   {"title": "科学", "en": "Science"}
+]
+},{
+"knowledge_points": [
+   {"title": "大学物理学", "en": "University Physics"},
+   {"title": "力学", "en": "Mechanics"},
+   {"title": "热学", "en": "Thermodynamics"},
+   {"title": "电磁学", "en": "Electromagnetism"},
+   {"title": "光学", "en": "Optics"},
+   {"title": "量子力学", "en": "Quantum Mechanics"},
+   {"title": "相对论", "en": "Relativity"},
+   {"title": "原子物理学", "en": "Atomic Physics"},
+   {"title": "核物理学", "en": "Nuclear Physics"},
+   {"title": "固体物理学", "en": "Solid State Physics"}
+]
+},{
+"knowledge_points": [
+   {"title": "大学物理学", "en": "University Physics"},
+   {"title": "物理学", "en": "Physics"},
+   {"title": "大学", "en": "University"},
+   {"title": "学科", "en": "Discipline"},
+   {"title": "科学", "en": "Science"}
+]
+},{
+"knowledge_points": [
+   {"title": "大学物理学", "en": "University Physics"},
+   {"title": "物理学", "en": "Physics"},
+   {"title": "大学", "en": "University"},
+   {"title": "学科", "en": "Discipline"},
+   {"title": "科学", "en": "Science"}
+]
+},{
+"knowledge_points": [
+   {"title": "大学物理学", "en": "University Physics"},
+   {"title": "物理学", "en": "Physics"},
+   {"title": "大学", "en": "University"},
+   {"title": "学科", "en": "Discipline"},
+   {"title": "科学", "en": "Science"}
+]
+}]

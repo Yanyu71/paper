@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "驻波", "en": "Standing wave"},
+   {"title": "波节", "en": "Node"},
+   {"title": "波腹", "en": "Antinode"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "相位", "en": "Phase"}
+]
+}{
+"knowledge_points": [
+   {"title": "振动相位", "en": "Phase of vibration"},
+   {"title": "同相", "en": "In phase"},
+   {"title": "相反", "en": "Out of phase"},
+   {"title": "驻波", "en": "Standing wave"},
+   {"title": "特点", "en": "Characteristics"}
+]
+}

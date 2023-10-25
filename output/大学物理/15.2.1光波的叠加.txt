@@ -1,0 +1,41 @@
+﻿{
+"knowledge_points": [
+   {"title": "波的叠加", "en": "Wave superposition"},
+   {"title": "相干条件", "en": "Coherence condition"},
+   {"title": "干涉现象", "en": "Interference phenomenon"},
+   {"title": "光波", "en": "Light wave"},
+   {"title": "电磁波", "en": "Electromagnetic wave"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "光矢量", "en": "Light vector"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "初相位", "en": "Initial phase"},
+   {"title": "振幅矢量", "en": "Amplitude vector"},
+   {"title": "合光强", "en": "Total light intensity"},
+   {"title": "线性介质", "en": "Linear medium"}
+]
+}{
+"knowledge_points": [
+   {"title": "光波的非相干叠加", "en": "Incoherent superposition of light waves"},
+   {"title": "光波的相干叠加", "en": "Coherent superposition of light waves"}
+]
+}{
+"knowledge_points": [
+   {"title": "A", "en": "A"},
+   {"title": "时", "en": "when"},
+   {"title": "得", "en": "obtain"},
+   {"title": "4", "en": "4"},
+   {"title": "Pmin", "en": "Pmin"},
+   {"title": "光波叠加区域", "en": "region of superposition of light waves"},
+   {"title": "明暗对比度", "en": "contrast of brightness"},
+   {"title": "最大", "en": "maximum"},
+   {"title": "合光强", "en": "total intensity of light"},
+   {"title": "分光强", "en": "intensity of individual light waves"},
+   {"title": "光强发生重新分布", "en": "redistribution of light intensity"},
+   {"title": "光的干涉现象", "en": "interference of light"},
+   {"title": "相干光", "en": "coherent light"},
+   {"title": "图15.8", "en": "Figure 15.8"},
+   {"title": "非相干叠加", "en": "incoherent superposition"},
+   {"title": "相干叠加", "en": "coherent superposition"},
+   {"title": "区别", "en": "difference"}
+]
+}

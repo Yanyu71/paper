@@ -1,0 +1,8 @@
+(分子电流, Molecular current): 5
+(安培环路定理, Ampere's circuital law): 1
+(束缚电流, Bound current): 5
+(磁场, Magnetic field): 5
+(顺磁质, Paramagnetic material): 3
+(磁高斯定理, Magnetic Gauss's law): 1
+(磁介质, Magnetic medium): 7
+(磁化电流, Magnetization current): 3

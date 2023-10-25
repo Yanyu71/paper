@@ -1,0 +1,23 @@
+(正电荷, positive charge): 35
+(静电场, static electric field): 122
+(点电荷, point charge): 88
+(电场强度, electric field strength): 317
+(高斯定理, Gauss's Law): 63
+(特殊对称性, special symmetry): 2
+(叠加原理, superposition principle): 55
+(电场叠加原理, superposition principle of electric fields): 0
+(电场叠加原理, principle of superposition of electric fields): 0
+(电荷, charge): 721
+(电场强度通量, electric field flux): 46
+(计算电场强度, calculate electric field strength): 2
+(电磁场方程组, electromagnetic field equations): 1
+(运动电荷, moving charge): 34
+(高斯定理, Gauss's theorem): 63
+(迅速变化的电磁场, rapidly changing electromagnetic field): 1
+(负电荷, negative charge): 30
+(高斯面, Gaussian surface): 27
+(闭合曲面, closed surface): 49
+(电场线, electric field lines): 52
+(电荷代数和, algebraic sum of charges): 0
+(库仑定律, Coulomb's Law): 24
+(电场线数, number of electric field lines): 6

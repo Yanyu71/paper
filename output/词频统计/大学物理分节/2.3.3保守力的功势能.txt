@@ -1,0 +1,16 @@
+(力场, Force field): 18
+(万有引力, Universal gravitation): 13
+(弹性力, Elastic force): 13
+(摩擦力, Frictional force): 9
+(弹簧振子, Spring oscillator): 2
+(重力场, Gravity field): 2
+(劲度系数, Spring constant): 1
+(保守力, Conservative force): 55
+(爆炸力, Explosive force): 0
+(势能, Potential energy): 84
+(保守力场, Conservative force field): 11
+(耗散力, Dissipative force): 2
+(动能定理, Kinetic energy theorem): 2
+(功, Work): 57
+(路径, Path): 19
+(重力, Gravity): 21

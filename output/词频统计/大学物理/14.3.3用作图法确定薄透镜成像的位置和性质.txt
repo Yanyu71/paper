@@ -1,0 +1,72 @@
+(主光线, Principal ray): 11
+(放大像, Enlarged image): 2
+(像的虚实, Real and virtual images): 2
+(放大, Magnified): 138
+(发散, Diverging): 20
+(导出折射球面物像公式, Derivation of the refractive spherical mirror formula): 1
+(反转, Inversion): 21
+(像差, Aberration): 27
+(广角后视镜, Wide-angle rearview mirror): 1
+(近视眼镜, Nearsighted glasses): 1
+(缩小, Reduced): 17
+(凸球面反射镜能产生虚像的条件, Conditions for convex spherical mirror to produce virtual image): 0
+(正立虚像, Upright virtual image): 0
+(焦点, Focal point): 63
+(正立倒立, Upright and inverted): 1
+(凹球面反射镜, Concave spherical mirror): 7
+(色散像差, Chromatic aberration): 6
+(焦平面, Focal plane): 20
+(主光线, Principal rays): 11
+(光路图, Ray diagram): 16
+(液体, Liquid): 40
+(薄透镜成像, Thin lens imaging): 2
+(曲率半径, Radius of curvature): 44
+(像距, Image distance): 29
+(逐次成像法, Successive imaging method): 6
+(不变, Unchanged): 201
+(凹球面, Concave spherical surface): 13
+(参考价值, Reference value): 2
+(平面反射镜, Plane mirror): 10
+(焦点, Focus): 63
+(透镜, Lens): 347
+(像点, Image point): 25
+(反射球面的物像公式, Reflection spherical mirror formula): 1
+(离透镜越来越近, Closer to the lens): 0
+(像, Image): 610
+(薄透镜, Thin lens): 142
+(放大率, Magnification): 87
+(缩小像, Reduced image): 1
+(共轭光线, Conjugate rays): 6
+(球壳, Spherical shell): 40
+(物像公式, Lens formula): 40
+(倒立, Inverted): 30
+(正立, Upright): 28
+(作图法, Graphical method): 15
+(代入式, Substitution equation): 41
+(聚光腔镜设计, Design of focusing cavity mirror): 1
+(凹透镜成像图, Concave lens imaging diagram): 1
+(会聚, Converging): 51
+(凸球面反射镜, Convex spherical mirror): 4
+(浸没, Immersed): 5
+(系统成像性质, Imaging properties of the system): 0
+(实像, Real image): 38
+(物像公式, Object-image formula): 40
+(物距, Object distance): 24
+(放大缩小, Magnification): 2
+(空气泡, Air bubble): 2
+(傍轴情况, Paraxial approximation): 7
+(凸球面反射镜能产生实像的条件, Conditions for convex spherical mirror to produce real image): 0
+(镀铝, Aluminum coating): 1
+(凹面反射镜, Concave mirror): 1
+(平面镜, Plane mirror): 14
+(符号规则, Symbol rules): 41
+(折射面, Refracting surface): 12
+(虚像, Virtual image): 44
+(离透镜越来越远, Farther from the lens): 0
+(像的位置, Image position): 43
+(折射率, Refractive index): 163
+(凸球面, Convex spherical surface): 6
+(反射面, Reflecting surface): 7
+(焦距, Focal length): 116
+(球面反射镜成像的特征, Characteristics of spherical mirror imaging): 1
+(球面反射镜, Spherical mirror): 36

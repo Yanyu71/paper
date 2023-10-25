@@ -1,0 +1,13 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电磁感应现象", "en": "Electromagnetic induction"},
+   {"title": "电流的磁效应", "en": "Magnetic effect of electric current"},
+   {"title": "磁场产生电流", "en": "Magnetic field generates electric current"},
+   {"title": "实验观察", "en": "Experimental observations"},
+   {"title": "线圈中的电流方向", "en": "Direction of current in the coil"},
+   {"title": "瞬时电流", "en": "Transient current"},
+   {"title": "闭合回路", "en": "Closed circuit"},
+   {"title": "金属棒垂直于磁场运动", "en": "Metal rod moving perpendicular to magnetic field"},
+   {"title": "电磁感应现象的结论", "en": "Conclusions of electromagnetic induction"}
+]
+}]

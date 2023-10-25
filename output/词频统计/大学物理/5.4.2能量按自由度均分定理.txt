@@ -1,0 +1,39 @@
+(热力学系统, Thermodynamic system): 22
+(热运动, Thermal motion): 87
+(H2和He理想气体分子的平均平动动能、平均总动能和气体的内能, The average translational kinetic energy, average total kinetic energy, and internal energy of H2 and He ideal gas molecules): 1
+(平动动能, Translational kinetic energy): 44
+(统计规律, Statistical law): 34
+(摩尔数, Molar number): 2
+(能量按自由度均分定理, Energy distribution according to degrees of freedom): 3
+(平衡态, Equilibrium state): 51
+(理想气体的内能, Internal energy of an ideal gas): 12
+(内能, Internal energy): 119
+(上式表明, The above equation shows): 34
+(平均平动动能, Average translational kinetic energy): 39
+(理想气体, Ideal gas): 176
+(什么是自由度, What is degrees of freedom): 1
+(氦气分子(He)为单原子分子, Helium molecule (He): 0
+(微观角度, Microscopic perspective): 4
+(动能全部转化为分子热运动的内能, The kinetic energy is completely converted into the internal energy of molecular thermal motion): 2
+(特征, Characteristics): 46
+(质量为0.1kg, 温度为27^的乂装在容积为0.01m3的容器中, A mass of 0.1kg, temperature of 27^, contained in a container with a volume of 0.01m3): 3
+(速率分布, Velocity distribution): 75
+(物理意义, Physical meaning): 30
+(分子的转动和振动, Molecular rotation and vibration): 1
+(相互作用势能, Interaction potential energy): 4
+(温度, Temperature): 370
+(氢气分子(112)为双原子分子, Hydrogen molecule (H2): 0
+(容器突然停下来, The container suddenly stops): 2
+(麦克斯韦速率分布率, Maxwell velocity distribution): 8
+(刚性分子, Rigid molecules): 8
+(大量分子集体是由什么原因导致能量按自由度均分, What causes the energy to be evenly distributed according to degrees of freedom in a large collection of molecules): 1
+(能量均分定理, Equipartition theorem): 3
+(相互碰撞, Collisions): 5
+(平动自由度, Translational degrees of freedom): 10
+(单原子分子和双原子分子各有几个自由度, How many degrees of freedom do monatomic and diatomic molecules have): 1
+(摩尔质量, Molar mass): 17
+(内能表达式中的自由度数, The number of degrees of freedom in the expression of internal energy): 1
+(平衡后氮气的温度和压强各增加多少, How much does the temperature and pressure of nitrogen increase after equilibrium): 1
+(容器以《=100m•速率作勻速直线运动, The container moves in a straight line at a constant speed of 100m/s): 1
+(热运动动能, Thermal kinetic energy): 4
+(分子, Molecule): 790

@@ -1,0 +1,62 @@
+(进动效应, Precession effect): 5
+(线量和角量的关系, Relationship between linear and angular quantities): 3
+(摩擦力, Frictional force): 80
+(切向加速度, Tangential acceleration): 29
+(厚度, Thickness): 116
+(转动惯量, Moment of inertia): 98
+(炮弹飞行姿态的控制, Control of projectile flight attitude): 1
+(轮圈半径, Wheel radius): 1
+(圆盘绕轴转动, rotation of the disc around the axis): 0
+(密度, Density): 237
+(原来的转动动能, original rotational kinetic energy): 1
+(子弹留在盘内, bullets remain in the disc): 0
+(内力矩, Internal torque): 1
+(减小, decrease): 103
+(转动动能与原来的转动动能之比, ratio of rotational kinetic energy to the original rotational kinetic energy): 1
+(角速度, Angular velocity): 156
+(匀速定轴转动, Uniform rotational motion about a fixed axis): 2
+(位移, Displacement): 214
+(法向加速度, Normal acceleration): 37
+(射来两颗质量相同的子弹, two bullets of the same mass): 0
+(转动定律, Rotational law): 29
+(刚体绕定轴转动的动能定理, Kinetic energy theorem for rotational motion about a fixed axis): 4
+(勾变速定轴转动, Variable rotational motion about a fixed axis): 1
+(刚体进动的角速度公式, Formula for the angular velocity of precession of a rigid body): 1
+(平板, Plate): 44
+(矢径, Radius vector): 3
+(轴承, Bearing): 12
+(速度大小相同, same magnitude of velocity): 0
+(圆盘的角速度, angular velocity of the disc): 1
+(刚体转动的功和能, Work and energy of rotational motion): 1
+(机械能守恒定律, Law of conservation of mechanical energy): 17
+(微观领域, Microscopic field): 3
+(力, Force): 2617
+(系统的转动动能, rotational kinetic energy of the system): 1
+(合外力对某定轴的力矩, Torque of the resultant external force about a fixed axis): 1
+(转台, Turntable): 31
+(辐条, Spoke): 3
+(角动量, Angular momentum): 186
+(沿同一直线运动, moving along the same straight line): 1
+(螺旋线, Spiral line): 4
+(动压力, Dynamic pressure): 2
+(角加速度, Angular acceleration): 77
+(进动的机械模型, Mechanical model of precession): 1
+(平行轴定理, Parallel axis theorem): 4
+(刚体转动动能, Rotational kinetic energy): 1
+(刚体的重力势能, Gravitational potential energy of a rigid body): 4
+(角动量守恒定律, Law of conservation of angular momentum): 24
+(增大, increase): 185
+(不变, unchanged): 201
+(无法判断, cannot be determined): 2
+(速度, Velocity): 1354
+(原子光谱线, Atomic spectral lines): 1
+(质量, Mass): 641
+(轮缘, Wheel rim): 3
+(力矩, Torque): 223
+(进动特性, Precession): 2
+(自转作用, Self-rotation effect): 1
+(动量, Momentum): 476
+(力矩的功, Work done by torque): 6
+(刚体的角动量定理, Angular momentum theorem for rigid bodies): 3
+(空气阻力, Air resistance): 20
+(方向相反, opposite direction): 63

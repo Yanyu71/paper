@@ -1,0 +1,168 @@
+(uud, uud): 2
+(渐进自由理论, asymptotic freedom theory): 2
+(粒子的分类, Classification of particles): 1
+(Ca, Calcium): 4
+(高能加速器, high-energy accelerator): 1
+(守恒情况, Conservation situation): 1
+(频率, Frequency): 1
+(夸克模型, Quark model): 7
+(能量的共振吸收, Resonant absorption of energy): 1
+(能量, Energy): 14
+(无共振吸收, No resonant absorption): 1
+(t子, top quark): 3
+(核物质的平均密度, Average density of nuclear matter): 1
+(质子, Proton): 9
+(静止能量, Rest energy): 1
+(UBS^, UBS^): 1
+(J/ψ粒子, J/ψ particle): 0
+(轻子, Lepton): 8
+(两弹一艇, Two Bombs, One Satellite): 1
+(原子核的结合能, binding energy of atomic nuclei): 1
+(色荷, color charge): 4
+(发射7射线, Emission of 7 rays): 1
+(反冲吸收, Recoil absorption): 1
+(中子散射实验, Neutron scattering experiment): 1
+(动量守恒, Conservation of momentum): 0
+(因子, Factor): 2
+(过程是否可能发生, Whether the process is possible): 1
+(光子, Photon): 6
+(原子核的基本性质, basic properties of atomic nuclei): 1
+(电荷数, charge number): 1
+(电磁相互作用, Electromagnetic interaction): 2
+(+n—jx_+p, +n—jx_+p): 1
+(双环改造, double-ring upgrade): 1
+(奇异粒子, strange particle): 4
+(dds, dds): 1
+(粒子物理, Particle physics): 6
+(A—?!!+-y, A—?!!+-y): 1
+(BESIII, Beijing Spectrometer III): 1
+(量子力学基本知识, Basic knowledge of quantum mechanics): 1
+(中子, Neutron): 8
+(共振态粒子, resonance particles): 2
+(Ge, Germanium): 5
+(udd, udd): 1
+(it-+p—*>K0+x, it-+p—*>K0+x): 1
+(强相互作用, Strong interaction): 8
+(强度, Intensity): 2
+(铁原子, Iron atom): 1
+(髙频磁场, High-frequency magnetic field): 1
+(Mg, Mg): 1
+(平均生存时间, Average survival time): 1
+(磁矩, magnetic moment): 5
+(H—A0+7T, H—A0+7T): 1
+(夸克, Quark): 83
+(K°, K°): 2
+(弱相互作用, Weak interaction): 2
+(51Fe, 51Fe): 1
+(第六种夸克, top quark): 1
+(角动量守恒, Conservation of angular momentum): 0
+(光子的能级宽度, Photon energy level width): 1
+(Z+, Z+): 3
+(核磁矩, Nuclear magnetic moment): 2
+(反应堆工程和材料, Reactor engineering and materials): 1
+(t子物理, top quark physics): 1
+(粒子的基本属性, basic properties of particles): 2
+(夸克, quark): 83
+(运动速率, Motion rate): 1
+(重子数守恒, Conservation of baryon number): 0
+(能级宽度, Energy level width): 3
+(质量数, mass number): 1
+(反冲能量, Recoil energy): 3
+(粒子间相互作用, Particle interactions): 1
+(能量守恒, Conservation of energy): 0
+(核物理实验, Nuclear physics experiment): 1
+(探测器, detector): 1
+(费米子, Fermion): 2
+(Z'A, Z'A): 1
+(粲数C, charm number): 1
+(uus, uus): 2
+(强相互作用力, strong interaction): 5
+(14.4IceV的光子, Photon of 14.4IceV): 1
+(核磁共振法, Nuclear Magnetic Resonance): 1
+(反质子, Antiproton): 1
+(自由的37Fe, Free 37Fe): 1
+(ddd, ddd): 1
+(轻子数守恒, Conservation of lepton number): 0
+(U, U): 11
+(结合能, Binding energy): 7
+(A°粒子, A° particle): 1
+(守恒定律, Conservation laws): 3
+(核自旋, nuclear spin): 3
+(核子, Nucleon): 3
+(核磁共振, nuclear magnetic resonance): 2
+(粲夸克, charm quark): 6
+(x是什么粒子, What particle is x): 1
+(恒定磁场, Constant magnetic field): 2
+(激发态, Excited state): 1
+(原子核, Atomic nucleus): 16
+(穆斯堡尔效应, Mössbauer effect): 1
+(强相互作用反应, Strong interaction reaction): 1
+(t-粲物理实验, t-charm physics experiment): 1
+(重子, Baryon): 13
+(盖耳曼, Gell-Mann): 3
+(uds, uds): 2
+(核裂变, nuclear fission): 1
+(军用放射性同位素, Military radioactive isotopes): 1
+(强子, Hadron): 10
+(功率, Power): 1
+(反粒子, antiparticles): 3
+(同位旋, Isospin): 10
+(原子能, Atomic energy): 1
+(磁特性, Magnetic properties): 1
+(UUU, UUU): 1
+(Tu, Tu): 1
+(同位旋守恒, Conservation of isospin): 0
+(反夸克, Antiquark): 13
+(无反冲吸收, No recoil absorption): 1
+(介子, meson): 11
+(顶数, topness): 2
+(实验研究反应堆, Experimental research reactor): 1
+(中子活化分析, Neutron activation analysis): 1
+(基态, Ground state): 2
+(重要标志, Important symbol): 1
+(tt+-?jul++x, tt+-?jul++x): 1
+(电荷守恒, Conservation of charge): 0
+(相对线宽, Relative line width): 2
+(K+, K+): 1
+(中子数, neutron number): 1
+(亮度, luminosity): 5
+(色量子数, color charge): 1
+(静止的5^粒子, Stationary 5^ particle): 1
+(氧, oxygen): 1
+(e'-?v, +-y, e'-?v,+-y): 1
+(附录I, Appendix I): 1
+(强子结构的夸克模型, quark model of hadrons): 5
+(北京正负电子对撞机, Beijing Electron-Positron Collider): 3
+(晶体, Crystal): 1
+(奇异数, Strangeness): 7
+(奇夸克S, strange quark): 2
+(p+p—+x, p+p—+x): 1
+(核聚变, nuclear fusion): 2
+(F, F): 5
+(原子核的半径, radius of atomic nuclei): 1
+(+n—e+p, +n—e+p): 0
+(ir+, ir+): 2
+(粒子物理, particle physics): 6
+(D, D): 7
+(胶子, gluon): 2
+(放射性计量标准, Radiometric measurement standards): 1
+(重水研究反应堆, Heavy water research reactor): 1
+(引力子, Graviton): 1
+(放射性同位素生产, Production of radioactive isotopes): 2
+(相互作用, Interaction): 17
+(TT+, TT+): 1
+(欧洲核子中心, CERN): 1
+(p+p—?K0+A°+p+x, p+p—?K0+A°+p+x): 1
+(玻色子, Boson): 2
+(规范玻色子, Gauge boson): 1
+(反夸克, antiquark): 13
+(实验室中已观察到的过程, Processes observed in the laboratory): 0
+(北京正负电子对撞机, BEPC): 3
+(速度驱动器, Velocity driver): 1
+(191Ir核, 191Ir nucleus): 1
+(介子, Meson): 11
+(IT*, IT*): 1
+(守恒定律, Conservation law): 3
+(比结合能, Binding energy per nucleon): 3
+(粲夸克c, charm quark): 2
+(粲物理, charm physics): 2

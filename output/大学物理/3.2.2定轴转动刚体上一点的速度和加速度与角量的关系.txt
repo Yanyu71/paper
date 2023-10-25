@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "定轴转动刚体", "en": "Fixed-axis rotation of rigid body"},
+   {"title": "角量", "en": "Angular quantity"},
+   {"title": "线量", "en": "Linear quantity"},
+   {"title": "角位移", "en": "Angular displacement"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "线速度", "en": "Linear velocity"},
+   {"title": "切向加速度", "en": "Tangential acceleration"},
+   {"title": "法向加速度", "en": "Normal acceleration"},
+   {"title": "转动方向", "en": "Direction of rotation"},
+   {"title": "加速转动", "en": "Accelerated rotation"},
+   {"title": "减速转动", "en": "Decelerated rotation"}
+]
+}

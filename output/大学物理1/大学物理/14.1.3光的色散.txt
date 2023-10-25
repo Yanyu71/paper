@@ -1,0 +1,15 @@
+﻿[{
+"knowledge_points": [
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "复色光", "en": "white light"},
+   {"title": "色散现象", "en": "dispersion phenomenon"},
+   {"title": "棱镜摄谱仪", "en": "prism spectrometer"},
+   {"title": "彩虹", "en": "rainbow"},
+   {"title": "折射定律", "en": "law of refraction"},
+   {"title": "入射角", "en": "incident angle"},
+   {"title": "反射角", "en": "reflection angle"},
+   {"title": "夹角", "en": "angle between"},
+   {"title": "全反射", "en": "total internal reflection"}
+]
+}]

@@ -1,0 +1,23 @@
+(会聚透镜, Converging lens): 6
+(发散透镜, Diverging lens): 5
+(缩小, Reduced): 3
+(焦平面, Focal plane): 5
+(凹透镜, Concave lens): 4
+(双凹薄透镜, Double concave lens): 8
+(逐次成像法, Successive imaging method): 1
+(焦点, Focus): 9
+(像, Image): 64
+(薄透镜, Thin lens): 51
+(放大率, Magnification): 8
+(共轴薄透镜组成像问题, Image formation problem with coaxial thin lenses): 1
+(倒立, Inverted): 5
+(正立, Upright): 5
+(透镜成像, Lens imaging): 1
+(物像公式, Object-image formula): 4
+(实像, Real image): 7
+(放大, Enlarged): 13
+(凸透镜, Convex lens): 3
+(虚像, Virtual image): 7
+(折射率, Refractive index): 7
+(符号规则, Sign convention): 7
+(焦距, Focal length): 19

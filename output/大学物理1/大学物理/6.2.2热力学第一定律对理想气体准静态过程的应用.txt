@@ -1,0 +1,53 @@
+﻿[{
+"knowledge_points": [
+   {"title": "热力学第一定律", "en": "First Law of Thermodynamics"},
+   {"title": "理想气体", "en": "Ideal Gas"},
+   {"title": "准静态过程", "en": "Quasi-static Process"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "功", "en": "Work"},
+   {"title": "内能", "en": "Internal Energy"},
+   {"title": "等体过程", "en": "Isochoric Process"},
+   {"title": "定体摩尔热容", "en": "Molar Specific Heat at Constant Volume"},
+   {"title": "等压过程", "en": "Isobaric Process"},
+   {"title": "定压摩尔热容", "en": "Molar Specific Heat at Constant Pressure"}
+]
+},{
+"knowledge_points": [
+   {"title": "热力学第一定律", "en": "First Law of Thermodynamics"},
+   {"title": "理想气体", "en": "Ideal Gas"},
+   {"title": "准静态过程", "en": "Quasi-static Process"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "功", "en": "Work"},
+   {"title": "内能", "en": "Internal Energy"},
+   {"title": "等体过程", "en": "Isochoric Process"},
+   {"title": "定体摩尔热容", "en": "Molar Specific Heat at Constant Volume"},
+   {"title": "等压过程", "en": "Isobaric Process"},
+   {"title": "定压摩尔热容", "en": "Molar Specific Heat at Constant Pressure"}
+]
+},{
+"knowledge_points": [
+   {"title": "热力学第一定律", "en": "First Law of Thermodynamics"},
+   {"title": "理想气体", "en": "Ideal Gas"},
+   {"title": "准静态过程", "en": "Quasi-static Process"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "功", "en": "Work"},
+   {"title": "内能", "en": "Internal Energy"},
+   {"title": "等体过程", "en": "Isochoric Process"},
+   {"title": "定体摩尔热容", "en": "Molar Specific Heat at Constant Volume"},
+   {"title": "等压过程", "en": "Isobaric Process"},
+   {"title": "定压摩尔热容", "en": "Molar Specific Heat at Constant Pressure"}
+]
+},{
+"knowledge_points": [
+   {"title": "热力学第一定律", "en": "First Law of Thermodynamics"},
+   {"title": "理想气体", "en": "Ideal Gas"},
+   {"title": "准静态过程", "en": "Quasi-static Process"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "功", "en": "Work"},
+   {"title": "内能", "en": "Internal Energy"},
+   {"title": "等体过程", "en": "Isochoric Process"},
+   {"title": "定体摩尔热容", "en": "Molar Specific Heat at Constant Volume"},
+   {"title": "等压过程", "en": "Isobaric Process"},
+   {"title": "定压摩尔热容", "en": "Molar Specific Heat at Constant Pressure"}
+]
+}]

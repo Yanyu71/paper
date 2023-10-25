@@ -1,0 +1,12 @@
+﻿[{
+"knowledge_points": [
+   {"title": "伽尔顿板实验", "en": "Galton board experiment"},
+   {"title": "小球总数", "en": "total number of balls"},
+   {"title": "狭槽", "en": "narrow slot"},
+   {"title": "小球落入狭槽的概率", "en": "probability of ball falling into a slot"},
+   {"title": "偶然事件", "en": "random event"},
+   {"title": "概率", "en": "probability"},
+   {"title": "概率分布曲线", "en": "probability distribution curve"},
+   {"title": "归一化条件", "en": "normalization condition"}
+]
+}]

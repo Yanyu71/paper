@@ -1,0 +1,10 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "伏特", "en": "Volt"},
+   {"title": "电压", "en": "Voltage"}
+]
+}]

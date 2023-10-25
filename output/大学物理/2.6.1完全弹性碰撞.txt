@@ -1,0 +1,12 @@
+﻿{
+"knowledge_points": [
+   {"title": "完全弹性碰撞", "en": "Perfectly elastic collision"},
+   {"title": "动量守恒", "en": "Conservation of momentum"},
+   {"title": "动能守恒", "en": "Conservation of kinetic energy"},
+   {"title": "相对速度", "en": "Relative velocity"},
+   {"title": "特殊情况", "en": "Special cases"},
+   {"title": "交换速度", "en": "Exchange of velocity"},
+   {"title": "静止", "en": "Rest"},
+   {"title": "对心碰撞", "en": "Head-on collision"}
+]
+}

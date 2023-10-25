@@ -1,0 +1,28 @@
+(简谐波, Simple harmonic wave): 66
+(电磁场, Electromagnetic field): 51
+(弹性介质, Elastic medium): 14
+(机械波, Mechanical wave): 38
+(波源, Wave source): 181
+(地震波, Seismic wave): 3
+(水波, Water wave): 20
+(x射线, X-ray): 9
+(概率波, Probability wave): 4
+(能量传播, Energy propagation): 2
+(光波, Light wave): 335
+(真空, Vacuum): 112
+(y射线, Gamma ray): 3
+(微观领域, Microscopic field): 3
+(牛顿力学定律, Newton's laws of motion): 1
+(力学, Mechanics): 445
+(点阵波, Lattice wave): 2
+(信息传递, Information transmission): 0
+(无线电波, Radio wave): 16
+(电磁波, Electromagnetic wave): 150
+(微观粒子, Microscopic particle): 58
+(介质, Medium): 599
+(声波, Sound wave): 63
+(波动, Wave): 102
+(物质波, Particle wave): 36
+(绳中波, Wave in a rope): 5
+(量子力学, Quantum mechanics): 32
+(振动, Vibration): 824

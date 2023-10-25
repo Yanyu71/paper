@@ -1,0 +1,36 @@
+﻿{
+"knowledge_points": [
+   {"title": "经典电磁波理论", "en": "Classical electromagnetic wave theory"},
+   {"title": "散射线", "en": "Scattered line"},
+   {"title": "瑞利散射", "en": "Rayleigh scattering"},
+   {"title": "康普顿散射", "en": "Compton scattering"},
+   {"title": "光的量子理论", "en": "Quantum theory of light"},
+   {"title": "光子流", "en": "Photon flux"},
+   {"title": "动量守恒", "en": "Conservation of momentum"},
+   {"title": "能量守恒", "en": "Conservation of energy"},
+   {"title": "碰撞", "en": "Collision"},
+   {"title": "入射光子", "en": "Incident photon"},
+   {"title": "反冲电子", "en": "Recoil electron"},
+   {"title": "波长的改变量", "en": "Change in wavelength"}
+]
+}{
+"knowledge_points": [
+   {"title": "康普顿波长", "en": "Compton wavelength"},
+   {"title": "量子理论", "en": "Quantum theory"},
+   {"title": "动量守恒定律", "en": "Law of conservation of momentum"},
+   {"title": "能量守恒定律", "en": "Law of conservation of energy"},
+   {"title": "康普顿散射", "en": "Compton scattering"},
+   {"title": "X射线", "en": "X-ray"},
+   {"title": "碰撞", "en": "Collision"},
+   {"title": "入射光子", "en": "Incident photon"},
+   {"title": "原子内层电子", "en": "Atomic inner-shell electron"},
+   {"title": "散射线", "en": "Scattered ray"},
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "库仑场", "en": "Coulomb field"},
+   {"title": "微观粒子", "en": "Microscopic particle"},
+   {"title": "诺贝尔物理学奖", "en": "Nobel Prize in Physics"},
+   {"title": "反冲电子", "en": "Recoil electron"},
+   {"title": "动能", "en": "Kinetic energy"},
+   {"title": "动量", "en": "Momentum"}
+]
+}

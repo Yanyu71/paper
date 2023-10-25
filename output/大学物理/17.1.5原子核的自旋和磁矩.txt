@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "核自旋", "en": "Nuclear spin", "type": "定义", "description": "核自旋是核内核子自旋角动量和轨道角动量的矢量和。"},
+   {"title": "核自旋量子数", "en": "Nuclear spin quantum number", "type": "定义", "description": "核自旋量子数是核自旋的量子数，取整数或半整数。"},
+   {"title": "核磁量子数", "en": "Nuclear magnetic quantum number", "type": "定义", "description": "核磁量子数是核自旋在给定方向的投影。"},
+   {"title": "核磁矩", "en": "Nuclear magnetic moment", "type": "定义", "description": "核磁矩是质子、中子和原子核的磁矩。"},
+   {"title": "核磁子", "en": "Nuclear magneton", "type": "定义", "description": "核磁子是原子核磁矩的单位。"},
+   {"title": "g因子", "en": "g-factor", "type": "定义", "description": "g因子是原子核的一个纯数，表示磁矩与核自旋方向的关系。"},
+   {"title": "质子磁矩", "en": "Proton magnetic moment", "type": "定义", "description": "质子的磁矩。"},
+   {"title": "中子磁矩", "en": "Neutron magnetic moment", "type": "定义", "description": "中子的磁矩。"},
+   {"title": "核内相互作用", "en": "Nuclear interactions", "type": "定义", "description": "核内各核子之间的相互作用。"}
+]
+}{
+"knowledge_points": [
+   {"title": "第17章", "en": "Chapter 17"},
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "粒子物理", "en": "Particle physics"},
+   {"title": "简介", "en": "Introduction"}
+]
+}

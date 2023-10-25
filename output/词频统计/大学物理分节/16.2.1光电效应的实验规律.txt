@@ -1,0 +1,30 @@
+(电子逸出, Electron emission): 4
+(照射光的频率, Frequency of incident light): 1
+(光强, Light intensity): 6
+(红限AD, Red limit AD): 0
+(光电流, Photoelectric current): 6
+(频率, Frequency): 13
+(圆满的解释, Satisfactory explanation): 1
+(红限, Red limit): 7
+(截止频率, Cutoff frequency): 3
+(发射, Emission): 6
+(逸出功, Work function): 2
+(积累, Accumulation): 1
+(阳极, Anode): 2
+(光电子, Photoelectron): 12
+(金属, Metal): 10
+(光电子几乎即时发射, Almost instantaneous emission of photoelectrons): 1
+(饱和电流, Saturation current): 1
+(经典电磁波理论, Classical electromagnetic wave theory): 1
+(Jim, Jim): 1
+(遏止电压, Stopping voltage): 2
+(光电效应, Photoelectric effect): 8
+(伏安特性曲线, Volt-ampere characteristic curve): 1
+(阴极, Cathode): 5
+(光强增大, Increase in light intensity): 1
+(照射光, Incident light): 5
+(初动能, Initial kinetic energy): 3
+(滞后时间, Lag time): 1
+(即时的, Instantaneous): 1
+(暹止电运, Stopping potential): 1
+(1014出, 1014 emission): 1

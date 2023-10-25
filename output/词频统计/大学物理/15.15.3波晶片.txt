@@ -1,0 +1,104 @@
+(偏振片, polarizer): 78
+(人工双折射性, Artificial birefringence): 1
+(马吕斯定律, Malus's law): 4
+(光弹实验装置, Photoelastic experimental device): 1
+(相位差, Phase difference): 116
+(色偏振现象, color polarization phenomenon): 1
+(能量, Energy): 637
+(传播速度, Propagation speed): 17
+(光檐方程, Grating equation): 1
+(分辨本领, Resolution capability): 15
+(分振幅, Amplitude splitting): 11
+(光弹效应, Photoelastic effect): 3
+(分振动, Component vibration): 18
+(光强, Intensity): 183
+(杨氏双缝干涉, Young's double-slit interference): 7
+(1/2波片, Half-wave plate): 1
+(磁致旋光, Magneto-optical rotation): 1
+(偏振光的干涉, Interference of polarized light): 6
+(电光效应, Electro-optic effect): 3
+(光强公式, Intensity formula): 4
+(干涉条纹, Interference fringes): 122
+(克尔效应, Kerr effect): 4
+(薄膜干涉, Thin film interference): 7
+(葡萄糖, Glucose): 1
+(旋光性溶液, Optically active solution): 0
+(折射率, Refractive Index): 163
+(惠更斯-菲涅耳原理, Huygens-Fresnel principle): 8
+(叠加, Superposition): 173
+(能流密度, Energy flux density): 21
+(振幅, amplitude): 244
+(入射, Incident): 209
+(旋光色散, Optical rotation dispersion): 3
+(光学仪器的最小分辨角, Minimum resolvable angle of optical instruments): 1
+(双折射晶体, Birefringent crystal): 4
+(光强, Light intensity): 183
+(干涉, Interference): 487
+(光轴, Optical axis): 107
+(波晶片, Waveplate): 28
+(X射线的衍射布拉格公式, X-ray diffraction Bragg's formula): 1
+(干涉图样, Interference pattern): 25
+(折射率, refractive index): 163
+(相位差, phase difference): 116
+(彩色条纹, Colored fringes): 4
+(部分偏振光, Partially polarized light): 11
+(显色偏振, Color polarization): 2
+(左旋光物质, Levorotatory substance): 1
+(电磁波, Electromagnetic wave): 150
+(偏振片, Polarizing film): 78
+(旋光物质, Optically active substance): 9
+(各向异性体, Anisotropic body): 1
+(椭圆偏振光, elliptically polarized light): 6
+(检偏器, Polarizer): 9
+(光测弹性学, Photoelasticity): 1
+(圆偏振光, Circularly polarized light): 17
+(天然晶体, Natural crystals): 2
+(折射率, Refractive index): 163
+(全发射, Total transmission): 1
+(布儒斯特定律, Brewster's Law): 7
+(相位差, Phase Difference): 116
+(DNA, DNA): 1
+(光轴, optic axis): 107
+(旋光率, Specific rotation): 5
+(彩色图样, Color pattern): 3
+(溶液浓度, Solution concentration): 2
+(1/4波片, Quarter-wave plate): 4
+(磁场强度, Magnetic field strength): 29
+(白光, white light): 21
+(波晶片, Wave plate): 28
+(传播速率, Propagation speed): 24
+(偏振化方向, Polarization direction): 34
+(晶体, crystal): 172
+(非相干叠加, Incoherent superposition): 7
+(双折射现象, Birefringence phenomenon): 15
+(线偏振光, Linearly polarized light): 61
+(反射起偏角, Angle of Polarization): 2
+(偏振器件, Polarizer): 1
+(电场强度, Electric field strength): 317
+(右旋光物质, Dextrorotatory substance): 1
+(液体的克尔常量, Kerr constant of liquid): 1
+(光程差, Optical path difference): 68
+(单缝夫琅禾费衍射, Single-slit Fraunhofer diffraction): 10
+(石英, Quartz): 22
+(振幅, Amplitude): 244
+(厚度, Thickness): 116
+(干涉, interference): 487
+(墨镜, Sunglasses): 2
+(合振幅, Combined amplitude): 4
+(全偏振, Complete polarization): 3
+(视场, field of view): 13
+(附加相位差, additional phase difference): 3
+(旋光效应, Optical rotation): 7
+(光程差, Optical Path Difference): 68
+(自然光, Natural light): 56
+(光矢量, Light vector): 31
+(相位延迟, Phase delay): 2
+(各向同性介质, Isotropic medium): 9
+(补色, complementary color): 2
+(氨基酸, Amino acid): 2
+(相干叠加, Coherent superposition): 27
+(偏振光, polarized light): 113
+(缺级公式, Order formula): 1
+(光波, light wave): 335
+(等厚干涉, equal thickness interference): 29
+(光栅衍射, Grating diffraction): 27

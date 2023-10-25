@@ -1,0 +1,55 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电阻K", "en": "Resistance K"},
+   {"title": "回路中的电流I", "en": "Current in the circuit I"},
+   {"title": "电动自感", "en": "Self-inductance"},
+   {"title": "电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "磁感应强度B", "en": "Magnetic induction B"},
+   {"title": "磁通匝链数", "en": "Magnetic flux linkage"},
+   {"title": "自感系数L", "en": "Self-inductance coefficient L"},
+   {"title": "亨利(H)", "en": "Henry (H)"},
+   {"title": "自感电动势", "en": "Self-induced electromotive force"},
+   {"title": "感应电流", "en": "Induced current"},
+   {"title": "电磁惯性", "en": "Electromagnetic inertia"},
+   {"title": "自感的计算", "en": "Calculation of self-inductance"},
+   {"title": "长直螺线管", "en": "Long solenoid"},
+   {"title": "环形密绕线圈", "en": "Toroidal coil"},
+   {"title": "同轴电缆", "en": "Coaxial cable"}
+]
+},{
+"knowledge_points": [
+   {"title": "平行长直导线", "en": "Parallel straight wires"},
+   {"title": "传输线的自感", "en": "Self-inductance of transmission lines"},
+   {"title": "螺线管的自感系数", "en": "Self-inductance coefficient of solenoid"},
+   {"title": "自感线圈", "en": "Self-inductance coil"},
+   {"title": "平行传输线的自感", "en": "Self-inductance of parallel transmission lines"},
+   {"title": "分布电感", "en": "Distributed inductance"}
+]
+},{
+"knowledge_points": [
+   {"title": "电阻K", "en": "Resistance K"},
+   {"title": "回路中的电流I", "en": "Current in the circuit I"},
+   {"title": "电动自感", "en": "Self-inductance"},
+   {"title": "电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "磁感应强度B", "en": "Magnetic induction B"},
+   {"title": "磁通匝链数", "en": "Magnetic flux linkage"},
+   {"title": "自感系数L", "en": "Self-inductance coefficient L"},
+   {"title": "亨利(H)", "en": "Henry (H)"},
+   {"title": "自感电动势", "en": "Self-induced electromotive force"},
+   {"title": "感应电流", "en": "Induced current"},
+   {"title": "电磁惯性", "en": "Electromagnetic inertia"},
+   {"title": "自感的计算", "en": "Calculation of self-inductance"},
+   {"title": "长直螺线管", "en": "Long solenoid"},
+   {"title": "环形密绕线圈", "en": "Toroidal coil"},
+   {"title": "同轴电缆", "en": "Coaxial cable"}
+]
+},{
+"knowledge_points": [
+   {"title": "平行长直导线", "en": "Parallel straight wires"},
+   {"title": "传输线的自感", "en": "Self-inductance of transmission lines"},
+   {"title": "螺线管的自感系数", "en": "Self-inductance coefficient of solenoid"},
+   {"title": "自感线圈", "en": "Self-inductance coil"},
+   {"title": "平行传输线的自感", "en": "Self-inductance of parallel transmission lines"},
+   {"title": "分布电感", "en": "Distributed inductance"}
+]
+}]

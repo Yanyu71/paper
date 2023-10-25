@@ -1,0 +1,23 @@
+(热, Heat): 22
+(热力学第一定律, First law of thermodynamics): 1
+(热力学第二定律, Second law of thermodynamics): 7
+(统计规律, Statistical law): 1
+(功, Work): 3
+(平衡态, Equilibrium state): 3
+(微观态, Microstate): 5
+(绝热线, Adiabatic line): 2
+(自由膨胀, Free expansion): 5
+(无序性, Disorder): 1
+(等温线, Isothermal line): 2
+(宏观态, Macrostate): 4
+(高温物体, High-temperature object): 2
+(理想气体自由膨胀, Free expansion of ideal gas): 1
+(热力学概率, Thermodynamic probability): 5
+(孤立系统, Isolated system): 2
+(不可逆性, Irreversibility): 3
+(熵, Entropy): 1
+(自发宏观过程, Spontaneous macroscopic process): 2
+(概率观点, Probability viewpoint): 0
+(不可逆过程, Irreversible process): 1
+(热力学第二定律, Second Law of Thermodynamics): 7
+(低温物体, Low-temperature object): 2

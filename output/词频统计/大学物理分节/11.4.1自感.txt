@@ -1,0 +1,21 @@
+(自感系数L, Self-inductance coefficient L): 0
+(电动自感, Self-inductance): 0
+(平行传输线的自感, Self-inductance of parallel transmission lines): 1
+(电磁感应定律, Faraday's law of electromagnetic induction): 2
+(磁通匝链数, Magnetic flux linkage): 3
+(电磁惯性, Electromagnetic inertia): 1
+(自感线圈, Self-inductance coil): 1
+(长直螺线管, Long solenoid): 2
+(亨利(H), Henry (H): 0
+(分布电感, Distributed inductance): 2
+(平行长直导线, Parallel straight wires): 0
+(螺线管的自感系数, Self-inductance coefficient of solenoid): 1
+(自感的计算, Calculation of self-inductance): 1
+(磁感应强度B, Magnetic induction B): 0
+(传输线的自感, Self-inductance of transmission lines): 2
+(电阻K, Resistance K): 1
+(自感电动势, Self-induced electromotive force): 3
+(回路中的电流I, Current in the circuit I): 0
+(环形密绕线圈, Toroidal coil): 0
+(感应电流, Induced current): 1
+(同轴电缆, Coaxial cable): 2

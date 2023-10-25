@@ -1,0 +1,12 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电势能", "en": "Potential Energy"},
+   {"title": "静电场", "en": "Electric Field"},
+   {"title": "保守场", "en": "Conservative Field"},
+   {"title": "力学", "en": "Mechanics"},
+   {"title": "保守力", "en": "Conservative Force"},
+   {"title": "功", "en": "Work"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "电势", "en": "Potential"}
+]
+}]

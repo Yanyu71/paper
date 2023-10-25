@@ -1,0 +1,15 @@
+﻿{
+"knowledge_points": [
+   {"title": "广义相对论", "en": "General Theory of Relativity"},
+   {"title": "等效原理", "en": "Equivalence Principle"},
+   {"title": "引力质量", "en": "Gravitational Mass"},
+   {"title": "惯性质量", "en": "Inertial Mass"},
+   {"title": "自由下落的升降机", "en": "Free-falling Elevator"},
+   {"title": "惯性力", "en": "Inertial Force"},
+   {"title": "引力", "en": "Gravity"},
+   {"title": "惯性系", "en": "Inertial Frame of Reference"},
+   {"title": "非惯性系", "en": "Non-inertial Frame of Reference"},
+   {"title": "物理定律", "en": "Physical Laws"},
+   {"title": "参考系", "en": "Frame of Reference"}
+]
+}

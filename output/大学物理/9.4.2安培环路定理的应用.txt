@@ -1,0 +1,133 @@
+﻿{
+"knowledge_points": [
+   {"title": "安培环路定理", "en": "Ampere's Circuital Law"},
+   {"title": "电场分布", "en": "Electric field distribution"},
+   {"title": "高斯定理", "en": "Gauss's Law"},
+   {"title": "磁场分布", "en": "Magnetic field distribution"},
+   {"title": "对称性", "en": "Symmetry"},
+   {"title": "积分路径", "en": "Integration path"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电流分布", "en": "Current distribution"},
+   {"title": "轴对称性", "en": "Axial symmetry"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "同心圆", "en": "Concentric circles"},
+   {"title": "载流直导线", "en": "Current-carrying wire"},
+   {"title": "电流密度", "en": "Current density"},
+   {"title": "圆环", "en": "Ring"}
+]
+}{
+"knowledge_points": [
+   {"title": "载流空心长圆柱导体", "en": "Current-carrying hollow cylindrical conductor"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "轴线距离", "en": "Distance from the axis"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "无限长载流密绕螺线管", "en": "Infinite current-carrying solenoid"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "线圈匝数", "en": "Number of turns of the coil"},
+   {"title": "螺线管内外的磁场", "en": "Magnetic field inside and outside the solenoid"},
+   {"title": "无限长载流螺线管磁场的性质", "en": "Properties of the magnetic field of an infinite current-carrying solenoid"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "磁感应强度的大小", "en": "Magnitude of magnetic induction"},
+   {"title": "闭合路径", "en": "Closed path"},
+   {"title": "线积分", "en": "Line integral"},
+   {"title": "环路定理", "en": "Circuital law"}
+]
+}{
+"knowledge_points": [
+   {"title": "心边位置的任意性", "en": "Arbitrariness of the position of the heart edge"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "载流密绕长螺线管", "en": "Current-carrying tightly wound solenoid"},
+   {"title": "理想平行板电容器", "en": "Ideal parallel plate capacitor"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电流强度", "en": "Current intensity"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule for magnetic field"},
+   {"title": "横截面", "en": "Cross section"},
+   {"title": "线圈匝数", "en": "Number of turns of the coil"}
+]
+}{
+"knowledge_points": [
+   {"title": "稳恒电流分布", "en": "Steady current distribution"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "对称性", "en": "Symmetry"},
+   {"title": "积分回路", "en": "Integration loop"},
+   {"title": "右手螵旋法则", "en": "Right-hand rule"},
+   {"title": "闭合路径", "en": "Closed path"},
+   {"title": "无限长载流直导线", "en": "Infinite straight current-carrying wire"},
+   {"title": "有限长载流直导线", "en": "Finite straight current-carrying wire"},
+   {"title": "保守场", "en": "Conservative field"},
+   {"title": "螺线管", "en": "Solenoid"},
+   {"title": "单位长度线圈匝数", "en": "Number of turns per unit length"},
+   {"title": "合成螺线管", "en": "Composite solenoid"},
+   {"title": "轴线", "en": "Axis"},
+   {"title": "电流方向", "en": "Direction of current"}
+]
+}{
+"knowledge_points": [
+   {"title": "安培环路定理", "en": "Ampere's Circuital Law"},
+   {"title": "电场分布", "en": "Electric field distribution"},
+   {"title": "高斯定理", "en": "Gauss's Law"},
+   {"title": "磁场分布", "en": "Magnetic field distribution"},
+   {"title": "电荷分布", "en": "Charge distribution"},
+   {"title": "稳恒电流分布", "en": "Steady current distribution"},
+   {"title": "对称性", "en": "Symmetry"},
+   {"title": "积分路径", "en": "Integration path"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "轴对称性", "en": "Axial symmetry"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "同心圆", "en": "Concentric circles"},
+   {"title": "电流密度", "en": "Current density"},
+   {"title": "直导线", "en": "Straight wire"},
+   {"title": "圆环", "en": "Circular loop"}
+]
+}{
+"knowledge_points": [
+   {"title": "载流空心长圆柱导体", "en": "Current-carrying hollow cylindrical conductor"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "轴线距离", "en": "Distance from the axis"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "无限长载流密绕螺线管", "en": "Infinite current-carrying solenoid"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "线圈匝数", "en": "Number of turns of the coil"},
+   {"title": "螺线管内外的磁场", "en": "Magnetic field inside and outside the solenoid"},
+   {"title": "无限长载流螺线管磁场的性质", "en": "Properties of the magnetic field of an infinite current-carrying solenoid"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "磁感应强度的大小", "en": "Magnitude of magnetic induction"},
+   {"title": "闭合路径", "en": "Closed path"},
+   {"title": "线积分", "en": "Line integral"},
+   {"title": "环路定理", "en": "Circuital law"}
+]
+}{
+"knowledge_points": [
+   {"title": "心边位置的任意性", "en": "Arbitrariness of the position of the heart edge"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "载流密绕长螺线管", "en": "Current-carrying tightly wound solenoid"},
+   {"title": "理想平行板电容器", "en": "Ideal parallel plate capacitor"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电流强度", "en": "Current intensity"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule for magnetic field"},
+   {"title": "横截面", "en": "Cross section"},
+   {"title": "线圈匝数", "en": "Number of turns of the coil"}
+]
+}{
+"knowledge_points": [
+   {"title": "稳恒电流分布", "en": "Steady current distribution"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "对称性", "en": "Symmetry"},
+   {"title": "积分回路", "en": "Integration loop"},
+   {"title": "右手螵旋法则", "en": "Right-hand rule"},
+   {"title": "闭合路径", "en": "Closed path"},
+   {"title": "无限长载流直导线", "en": "Infinite straight current-carrying wire"},
+   {"title": "有限长载流直导线", "en": "Finite straight current-carrying wire"},
+   {"title": "保守场", "en": "Conservative field"},
+   {"title": "螺线管", "en": "Solenoid"},
+   {"title": "单位长度线圈匝数", "en": "Number of turns per unit length"},
+   {"title": "同轴螺线管", "en": "Coaxial solenoid"},
+   {"title": "磁场对电流的作用", "en": "Effect of magnetic field on current"}
+]
+}

@@ -1,0 +1,77 @@
+﻿{
+"knowledge_points": [
+   {"title": "固体", "en": "Solid"},
+   {"title": "晶体", "en": "Crystal"},
+   {"title": "非晶体", "en": "Amorphous"},
+   {"title": "原子排列", "en": "Atomic arrangement"},
+   {"title": "长程有序", "en": "Long-range order"},
+   {"title": "短程有序", "en": "Short-range order"},
+   {"title": "晶格结构", "en": "Crystal lattice structure"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "价电子", "en": "Valence electron"},
+   {"title": "势能", "en": "Potential energy"},
+   {"title": "势垒", "en": "Potential barrier"},
+   {"title": "点阵", "en": "Lattice"},
+   {"title": "周期性", "en": "Periodicity"}
+]
+}{
+"knowledge_points": [
+   {"title": "运动", "en": "motion"},
+   {"title": "离子束缚", "en": "ionic binding"},
+   {"title": "能量", "en": "energy"},
+   {"title": "势垒", "en": "potential barrier"},
+   {"title": "金属", "en": "metal"},
+   {"title": "原子", "en": "atom"},
+   {"title": "外层价电子", "en": "valence electrons"},
+   {"title": "晶体", "en": "crystal"},
+   {"title": "电子共有化", "en": "electron sharing"},
+   {"title": "能级分裂", "en": "level splitting"},
+   {"title": "能带", "en": "energy band"},
+   {"title": "禁带", "en": "forbidden band"},
+   {"title": "泡利不相容原理", "en": "Pauli exclusion principle"}
+]
+}{
+"knowledge_points": [
+   {"title": "圆", "en": "Circle"},
+   {"title": "原子能级", "en": "Atomic energy level"},
+   {"title": "能带", "en": "Energy band"},
+   {"title": "离子间距", "en": "Ionic spacing"},
+   {"title": "填充能量较低的能级", "en": "Filling lower energy levels"},
+   {"title": "泡利不相容原理", "en": "Pauli exclusion principle"},
+   {"title": "定向电流", "en": "Directed current"},
+   {"title": "满带", "en": "Valence band"},
+   {"title": "导带", "en": "Conduction band"},
+   {"title": "价带", "en": "Valence band"},
+   {"title": "导电性", "en": "Conductivity"},
+   {"title": "禁带", "en": "Band gap"},
+   {"title": "三维周期势场", "en": "Three-dimensional periodic potential"},
+   {"title": "薛定谔方程", "en": "Schrödinger equation"},
+   {"title": "克朗尼格-朋奈模型", "en": "Kronig-Penney model"},
+   {"title": "晶格周期", "en": "Lattice period"},
+   {"title": "势场", "en": "Potential field"},
+   {"title": "隧道效应", "en": "Tunneling effect"}
+]
+}{
+"knowledge_points": [
+   {"title": "子波函数因子", "en": "Wave function factor"},
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "解", "en": "Solution"},
+   {"title": "待定系数", "en": "Undetermined coefficients"},
+   {"title": "线性齐次代数方程", "en": "Linear homogeneous algebraic equation"},
+   {"title": "超越方程", "en": "Transcendental equation"},
+   {"title": "电子能量", "en": "Electron energy"},
+   {"title": "范围", "en": "Range"},
+   {"title": "能带", "en": "Energy band"},
+   {"title": "禁带", "en": "Band gap"}
+]
+}{
+"knowledge_points": [
+   {"title": "图16.44", "en": "Figure 16.44"},
+   {"title": "E(ka)", "en": "E(ka)"},
+   {"title": "0	^2n3ti4tc", "en": "0	^2n3ti4tc"},
+   {"title": "图16.45", "en": "Figure 16.45"},
+   {"title": "(1) 当h等于TT的整数倍时,能量发生突变;", "en": "(1) When h is a multiple of TT, the energy undergoes a sudden change;"},
+   {"title": "(2) 能量越低,能带越窄.这是因为能量越小,电子越靠近原子核,电子受其它原子影响越小?另外,参数P可以作为势垒面积的量度,当P=0时,由式(16.99)看出,⑽=2/nr±h,这时对能量没有限制.因此,对应的是自由电子情况。", "en": "(2) The lower the energy, the narrower the energy band. This is because the smaller the energy, the closer the electron is to the atomic nucleus, and the less it is affected by other atoms. In addition, the parameter P can be used as a measure of the barrier area. When P=0, it can be seen from equation (16.99) that ⑽=2/nr±h, and there is no restriction on the energy. Therefore, it corresponds to the case of free electrons."},
+   {"title": "用髙能电子束或软X射线束射到晶体表面,在晶体中电子被打出的同时,观察和测量伴随的辐射线,可以用实验方法证明,能带和能带结构理论的正确性。", "en": "By using high-energy electron beams or soft X-ray beams to irradiate the surface of a crystal, while electrons are knocked out in the crystal, the accompanying radiation can be observed and measured. This can be used to experimentally prove the correctness of the energy band and energy band structure theory."}
+]
+}

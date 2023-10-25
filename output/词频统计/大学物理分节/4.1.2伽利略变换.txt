@@ -1,0 +1,31 @@
+(观测者, Observer): 4
+(动量守恒定律, Law of conservation of momentum): 1
+(惯性系, Inertial frame): 7
+(伽利略相对性原理, Galilean relativity principle): 1
+(时钟, Clock): 1
+(能量守恒定律, Law of conservation of energy): 1
+(伽利略变换, Galilean transformation): 9
+(牛顿定律, Newton's laws): 2
+(速度变换关系, Velocity transformation relationship): 2
+(时空坐标, Spacetime coordinates): 4
+(力学规律, Mechanical laws): 2
+(事件, Event): 5
+(参考系, Reference frame): 1
+(物理学, Physics): 1
+(动力学, Dynamics): 1
+(绝对时间, Absolute time): 1
+(相互作用, Interaction): 3
+(角动量守恒定律, Law of conservation of angular momentum): 0
+(速度, Velocity): 8
+(经典力学, Classical mechanics): 4
+(伽利略时空坐标变换式, Galilean spacetime coordinate transformation): 1
+(质量, Mass): 1
+(等价, Equivalent): 1
+(质点, Particle): 8
+(守恒定律, Conservation laws): 3
+(运动描述, Description of motion): 0
+(运动学, Kinematics): 1
+(坐标, Coordinates): 6
+(变换关系, Transformation relationship): 4
+(加速度变换关系, Acceleration transformation relationship): 1
+(逆变换, Inverse transformation): 1

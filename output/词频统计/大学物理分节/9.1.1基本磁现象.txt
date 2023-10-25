@@ -1,0 +1,11 @@
+(磁石吸铁现象, Magnetic attraction): 0
+(磁力作用, Magnetic force): 3
+(异号磁极相互吸引, Unlike magnetic poles attract each other): 1
+(分子电流假说, Molecular current hypothesis): 2
+(磁铁, Magnet): 11
+(同号磁极相互排斥, Like magnetic poles repel each other): 1
+(地球磁场, Earth's magnetic field): 1
+(电荷的运动, Movement of charges): 0
+(指南针, Compass): 1
+(物质的磁性, Magnetism of materials): 1
+(磁板, Magnetic pole): 1

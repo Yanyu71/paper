@@ -1,0 +1,15 @@
+(软磁材料, Soft magnetic materials): 5
+(硬磁材料, Hard magnetic materials): 4
+(磁滞损耗, Hysteresis loss): 3
+(磁滞回线, Hysteresis loop): 10
+(软铁, Soft iron): 2
+(碳钢, Carbon steel): 1
+(交变磁场, Alternating magnetic field): 5
+(铁磁材料, Ferromagnetic materials): 3
+(钴钢, Cobalt steel): 1
+(居里温度, Curie temperature): 1
+(顺磁质, Paramagnetic materials): 23
+(硅钢片, Silicon steel sheet): 1
+(铁氧体, Ferrite): 4
+(永磁材料, Permanent magnetic materials): 1
+(钕铁硼, Neodymium iron boron): 1

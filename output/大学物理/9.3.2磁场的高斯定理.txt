@@ -1,0 +1,16 @@
+﻿{
+"knowledge_points": [
+   {"title": "磁场的高斯定理", "en": "Gauss's Law for Magnetism"},
+   {"title": "闭合曲面", "en": "Closed surface"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "静电场的高斯定理", "en": "Gauss's Law for Electric Fields"},
+   {"title": "静电场", "en": "Electric field"},
+   {"title": "有源场", "en": "Source field"},
+   {"title": "无源场", "en": "Source-free field"},
+   {"title": "磁单极", "en": "Magnetic monopole"},
+   {"title": "磁通量", "en": "Magnetic flux"},
+   {"title": "边界", "en": "Boundary"},
+   {"title": "安培环路定理", "en": "Ampere's Circuital Law"}
+]
+}

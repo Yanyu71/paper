@@ -1,0 +1,47 @@
+(横波, Transverse wave): 3
+(波函数, Wave function): 12
+(脉冲横波, Pulse transverse wave): 1
+(振幅, Amplitude): 3
+(概念, Concept): 1
+(振动传播项, Vibration propagation term): 1
+(机械波, Mechanical wave): 1
+(数学方法, Mathematical method): 1
+(拐点, Inflection point): 1
+(水波, Water wave): 5
+(频率, Frequency): 7
+(船, Boat): 3
+(热传导, Heat conduction): 1
+(解, Solution): 3
+(波线, Wave line): 1
+(振动方程, Vibration equation): 2
+(偏微分方程, Partial differential equation): 2
+(调频波, Frequency modulation wave): 1
+(波速, Wave speed): 5
+(真空中无线电波的速率, Speed of radio waves in vacuum): 1
+(脉冲波, Pulse wave): 4
+(波峰间距, Distance between wave peaks): 1
+(二阶偏导数, Second-order partial derivative): 2
+(标定, Marking): 1
+(一维波的波动微分方程, One-dimensional wave equation): 2
+(思考题, Thinking question): 2
+(简谐波, Harmonic wave): 8
+(一维运动, One-dimensional motion): 1
+(波沿x轴正向传播, Wave propagates along the positive x-axis): 1
+(波形图, Waveform): 2
+(维波, Longitudinal wave): 6
+(电磁波, Electromagnetic wave): 1
+(补充条件, Supplementary conditions): 1
+(速度, Velocity): 5
+(波形曲线, Waveform curve): 6
+(波动方程, Wave equation): 0
+(相位, Phase): 2
+(声波, Sound wave): 2
+(声速, Speed of sound): 1
+(化学中的扩散过程, Diffusion process in chemistry): 1
+(调幅波, Amplitude modulation wave): 1
+(加速度, Acceleration): 2
+(绳, Rope): 3
+(波长, Wavelength): 6
+(一维简谐波波函数, One-dimensional harmonic wave function): 2
+(波源初始时刻的位移, Initial displacement of the wave source): 1
+(波沿x轴负向传播, Wave propagates along the negative x-axis): 1

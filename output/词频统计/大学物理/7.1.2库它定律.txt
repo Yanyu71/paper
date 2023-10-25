@@ -1,0 +1,18 @@
+(负电荷, Negative charge): 30
+(距离, Distance): 387
+(异号电荷, Unlike charges): 11
+(力, Force): 2617
+(电荷, Electric charge): 721
+(牛顿第三定律, Newton's third law): 7
+(电荷量, Electric charge): 14
+(静电学, Electrostatics): 1
+(电磁学, Electromagnetics): 20
+(平方反比定律, Inverse square law): 4
+(真空电容率, Vacuum permittivity): 1
+(电荷元, Electric charge element): 19
+(同号电荷, Like charges): 1
+(正电荷, Positive charge): 35
+(库仑定律, Coulomb's Law): 24
+(SI单位制, SI unit system): 0
+(点电荷, Point charge): 88
+(电荷间相互作用, Interaction between charges): 1

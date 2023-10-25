@@ -1,0 +1,70 @@
+(傍轴近似, Paraxial approximation): 5
+(物距, object distance): 8
+(物点, Object point): 9
+(单个球面界面, Single spherical interface): 2
+(凹折射球面, Concave refracting spherical surface): 2
+(像距, image distance): 7
+(符号规则, Sign rules): 12
+(光轴, Optical axis): 23
+(光学元件, Optical element): 1
+(物方焦点, Object-side focus): 1
+(曲率中心, Curvature center): 2
+(折射球面, Refracting surface): 36
+(像距, Image distance): 7
+(球面, Spherical surface): 75
+(透镜, Lens): 10
+(焦点, Focus): 5
+(焦点位置, Focal point position): 1
+(像点, Image point): 7
+(凹折射球面, Concave refracting surface): 2
+(正立, upright): 5
+(折射率, refractive index): 9
+(放大率, Magnification): 25
+(正负号, Positive and negative sign): 4
+(像方焦距, Image-side focal length): 2
+(折射, Refraction): 91
+(虚像, virtual image): 6
+(逐次成像, successive imaging): 4
+(小钥匙经球第一折射球面成像位置, Image position of the key on the first refracting spherical surface): 0
+(折射光, refracted light): 6
+(透镜材料, Lens material): 1
+(折射定律, Law of refraction): 1
+(平行光, Parallel light): 2
+(倒立, Inverted): 7
+(正立, Upright): 5
+(放大率, magnification): 25
+(物理意义, Physical meaning): 2
+(内角, Interior angle): 1
+(平面, Plane): 4
+(像方焦点, Image-side focus): 2
+(角, Angle): 15
+(解释计算结果, Interpretation of calculation results): 0
+(第一折射球面成像位置, Image position on the first refracting spherical surface): 0
+(经球面, Refracting spherical surface): 3
+(凸折射球面, Convex refracting spherical surface): 2
+(物方焦距, Object-side focal length): 3
+(纵向放大率, Longitudinal magnification): 9
+(物距, Object distance): 8
+(物像公式, Object-image formula): 10
+(反射, Reflection): 11
+(实像, Real image): 4
+(球面对称性, Spherical symmetry): 0
+(凸折射球面, Convex refracting surface): 2
+(三角形, Triangle): 1
+(外角, Exterior angle): 1
+(球面折射, spherical refraction): 12
+(虚像, Virtual image): 6
+(平折射面, Plane refracting surface): 2
+(介质, Medium): 14
+(折射率, Refractive index): 9
+(像高, Image height): 3
+(倒立, inverted): 7
+(物在无限远处时的成像位置, Image position when the object is at infinity): 0
+(笛卡儿符号规则, Descartes' sign convention): 1
+(焦距, Focal length): 7
+(像方焦点, Image focal point): 2
+(像相对物的正立或倒立, Orientation of the image relative to the object): 0
+(物点P, Object point P): 5
+(第二折射球面成像位置, Image position on the second refracting spherical surface): 0
+(负号, Negative sign): 7
+(绘图, Drawing): 1

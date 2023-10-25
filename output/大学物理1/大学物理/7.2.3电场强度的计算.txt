@@ -1,0 +1,86 @@
+﻿[{
+"knowledge_points": [
+   {"title": "点电荷电场强度", "en": "Electric field strength of point charges", "type": "", "description": ""},
+   {"title": "电场强度叠加原理", "en": "Principle of superposition of electric field strength", "type": "", "description": ""},
+   {"title": "连续分布电荷的电场强度", "en": "Electric field strength of continuous charge distribution", "type": "", "description": ""},
+   {"title": "库仑定律", "en": "Coulomb's law", "type": "", "description": ""},
+   {"title": "电场强度定义式", "en": "Definition of electric field strength", "type": "", "description": ""},
+   {"title": "电荷密度", "en": "Charge density", "type": "", "description": ""}
+]
+},{
+"knowledge_points": [
+   {"title": "矢量函数", "en": "Vector function"},
+   {"title": "沿坐标轴的分量函数", "en": "Component functions along coordinate axes"},
+   {"title": "普通积分", "en": "Ordinary integral"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "电偶极矩", "en": "Electric dipole moment"},
+   {"title": "点电荷", "en": "Point charge"},
+   {"title": "场强大小与距离的关系", "en": "Relationship between field strength and distance"},
+   {"title": "物理模型", "en": "Physical model"},
+   {"title": "均匀带电荷的直棒", "en": "Uniform charged rod"},
+   {"title": "真空中的静电场", "en": "Static electric field in vacuum"}
+]
+},{
+"knowledge_points": [
+   {"title": "式(1)", "en": "Equation (1)"},
+   {"title": "电场强度分布", "en": "Distribution of electric field strength"},
+   {"title": "直线均匀分布的带电体", "en": "Charged body with uniform distribution along a straight line"},
+   {"title": "电荷沿直线均匀分布", "en": "Uniform distribution of charge along a straight line"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "直棒", "en": "Straight rod"},
+   {"title": "无限长", "en": "Infinite length"},
+   {"title": "电荷线密度", "en": "Charge line density"},
+   {"title": "电场强度大小", "en": "Magnitude of electric field strength"},
+   {"title": "圆环", "en": "Ring"},
+   {"title": "圆环轴线上任一点的电场强度", "en": "Electric field strength at any point on the axis of the ring"},
+   {"title": "圆环上电荷均匀分布", "en": "Uniform distribution of charge on the ring"},
+   {"title": "电荷元", "en": "Charge element"},
+   {"title": "电场强度分量", "en": "Components of electric field strength"},
+   {"title": "轴对称", "en": "Axially symmetric"},
+   {"title": "垂直于x轴的分量", "en": "Component perpendicular to the x-axis"},
+   {"title": "常量", "en": "Constant"},
+   {"title": "环心处电场强度为0", "en": "Electric field strength is 0 at the center of the ring"},
+   {"title": "远离圆环处可以看成点电荷", "en": "Far away from the ring, it can be regarded as a point charge"},
+   {"title": "圆对称分布带电体", "en": "Charged body with circular symmetry distribution"},
+   {"title": "均匀带电薄圆盘", "en": "Uniformly charged thin disk"},
+   {"title": "圆盘轴线上任一点的电场强度", "en": "Electric field strength at any point on the axis of the disk"},
+   {"title": "同心的带电细圆环", "en": "Concentric charged thin rings"},
+   {"title": "电荷面密度", "en": "Surface charge density"},
+   {"title": "场点靠近圆盘时", "en": "When the field point is close to the disk"},
+   {"title": "远离带电圆盘处的电场", "en": "Electric field far away from the charged disk"},
+   {"title": "点电荷的电场", "en": "Electric field of a point charge"}
+]
+},{
+"knowledge_points": [
+   {"title": "电场", "en": "Electric field"},
+   {"title": "均匀带电平面", "en": "Uniformly charged plane"},
+   {"title": "补偿法", "en": "Compensation method"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "带电体", "en": "Charged body"},
+   {"title": "电荷面密度", "en": "Charge surface density"},
+   {"title": "环形均匀带电圆盘", "en": "Circular uniformly charged disk"},
+   {"title": "轴线", "en": "Axis"},
+   {"title": "叠加原理", "en": "Superposition principle"},
+   {"title": "电荷分布", "en": "Charge distribution"},
+   {"title": "坐标系", "en": "Coordinate system"},
+   {"title": "电荷元", "en": "Charge element"},
+   {"title": "场点", "en": "Field point"},
+   {"title": "对称性", "en": "Symmetry"},
+   {"title": "积分", "en": "Integration"},
+   {"title": "细圆环", "en": "Thin circular loop"},
+   {"title": "直线", "en": "Straight line"},
+   {"title": "标量积分", "en": "Scalar integration"},
+   {"title": "曲率中心", "en": "Center of curvature"},
+   {"title": "非导体棒", "en": "Non-conductive rod"},
+   {"title": "电荷分布", "en": "Charge distribution"},
+   {"title": "电场强度方向", "en": "Direction of electric field strength"}
+]
+},{
+"knowledge_points": [
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电场线", "en": "Electric field lines"},
+   {"title": "电场强度通量", "en": "Electric field flux"},
+   {"title": "高斯定理", "en": "Gauss's theorem"}
+]
+}]

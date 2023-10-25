@@ -1,0 +1,6 @@
+(电压, Voltage): 1
+(电势能, Electric potential energy): 0
+(电场, Electric field): 2
+(电势, Electric potential): 12
+(伏特, Volt): 1
+(电势差, Potential difference): 3

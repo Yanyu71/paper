@@ -1,0 +1,23 @@
+(轮船在水面上的运动, Movement of a ship on the water surface): 1
+(刚体的运动形态, Motion forms of a rigid body): 1
+(质心, Center of mass): 113
+(飞机在空中的运动, Movement of an airplane in the air): 0
+(固体物理中的应用, Applications in solid physics): 0
+(沿直线滚动的车轮, Wheel rolling along a straight line): 1
+(角坐标, Angular coordinates): 51
+(定轴转动的刚体, Rigid body rotating about a fixed axis): 4
+(约束和限制, Constraints and limitations): 1
+(自由度的概念, Concept of degrees of freedom): 3
+(瞬时轴, Instantaneous axis): 5
+(平面或曲面上运动的质点, Particle moving on a plane or curved surface): 1
+(独立坐标, Independent coordinates): 9
+(平动和转动, Translation and rotation): 1
+(刚体的自由度, Degrees of freedom of a rigid body): 2
+(方向角, Direction angles): 4
+(质点的自由度, Degrees of freedom of a particle): 0
+(工程技术学科中的应用, Applications in engineering disciplines): 0
+(直线或曲线上运动的质点, Particle moving on a straight line or curve): 1
+(火车沿路轨的运动, Movement of a train along the railway track): 0
+(刚体定轴转动的运动学规律, Kinematic laws of rigid body rotation about a fixed axis): 2
+(分子物理中的应用, Applications in molecular physics): 0
+(力学中的应用, Applications in mechanics): 0

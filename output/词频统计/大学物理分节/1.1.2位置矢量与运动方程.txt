@@ -1,0 +1,28 @@
+(计算机编程, Computer programming): 1
+(解, Solve): 2
+(消去参数, Eliminate parameters): 2
+(轨迹, Trajectory): 8
+(轨迹方程, Trajectory Equation): 2
+(式(2), Equation (2): 0
+(二维轨迹, 2D trajectory): 1
+(直角坐标系, Cartesian Coordinate System): 3
+(位矢, Position Vector): 11
+(坐标原点, Coordinate Origin): 2
+(投影, Projection): 1
+(大小, Magnitude): 3
+(式(1), Equation (1): 0
+(坐标纸, Coordinate paper): 1
+(参考点, Reference Point): 4
+(逐点求出, Calculate point by point): 1
+(轨迹方程, Trajectory equation): 2
+(方向, Direction): 5
+(二维平面, Two-dimensional Plane): 1
+(参数, Parameters): 8
+(方向余弦, Direction Cosines): 1
+(位置矢量, Position Vector): 1
+(运动, Motion): 21
+(代入, Substitute): 2
+(三维轨迹, 3D trajectory): 0
+(时间, Time): 5
+(参数方程, Parametric Equation): 0
+(运动方程, Equations of Motion): 11

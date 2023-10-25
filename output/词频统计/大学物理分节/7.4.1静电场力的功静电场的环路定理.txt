@@ -1,0 +1,14 @@
+(保守场, Conservative field): 1
+(电势能, Electric potential energy): 1
+(电场强度, Electric field strength): 4
+(保守力, Conservative force): 1
+(电场, Electric field): 31
+(电势, Electric potential): 2
+(静电场, Static electric field): 15
+(功, Work): 11
+(高斯定理, Gauss's theorem): 1
+(球对称性, Spherical symmetry): 1
+(静电场力, Electrostatic force): 2
+(环路定理, Loop theorem): 4
+(电场线, Electric field lines): 2
+(点电荷, Point charge): 5

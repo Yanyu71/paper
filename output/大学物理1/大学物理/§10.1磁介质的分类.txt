@@ -1,0 +1,41 @@
+﻿[{
+"knowledge_points": [
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "磁化率", "en": "Magnetization"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "磁化率", "en": "Magnetization"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "磁化率", "en": "Magnetization"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "磁化率", "en": "Magnetization"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"}
+]
+}]

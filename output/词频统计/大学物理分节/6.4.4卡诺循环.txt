@@ -1,0 +1,50 @@
+(发电机组, Generator set): 1
+(热源, heat source): 37
+(致冷循环, refrigeration cycle): 2
+(功, Work): 9
+(外界, External environment): 5
+(理想气体, ideal gas): 5
+(低温热源, low-temperature heat source): 15
+(高温热源温度, High-temperature heat source temperature): 5
+(装机容量, Installed capacity): 1
+(物质比热, Specific heat of substance): 1
+(绝热线, Adiabatic line): 2
+(理想气体, Ideal gas): 5
+(放出的热量, Released heat): 7
+(绝热过程, adiabatic process): 2
+(工质, Working substance): 10
+(致冷系数, coefficient of performance): 3
+(等压过程, Isobaric process): 0
+(热机, heat engine): 14
+(核锅炉, Nuclear boiler): 2
+(等温线, Isothermal line): 2
+(高温热源, High-temperature heat source): 14
+(等温膨胀过程, Isothermal expansion process): 2
+(温度, Temperature): 27
+(比热, Specific heat): 2
+(效率, Efficiency): 24
+(卡诺循环, Carnot cycle): 16
+(排水温度, Discharge water temperature): 1
+(卡诺循环致冷系数, Carnot refrigeration coefficient): 1
+(核电站, Nuclear power plant): 1
+(低温热源温度, Low-temperature heat source temperature): 7
+(能量转换关系, Energy conversion relationship): 1
+(循环效率, Cycle efficiency): 6
+(等温过程, isothermal process): 1
+(高温热源, high-temperature heat source): 14
+(致冷机, Refrigeration machine): 5
+(循环过程, cycle process): 14
+(低温热源, Low-temperature heat source): 15
+(净功, Net work): 3
+(自由度数, Degrees of freedom): 1
+(海水质量, Mass of seawater): 1
+(吸收的热量, Absorbed heat): 8
+(等压压缩过程, Isobaric compression process): 1
+(冷却冷凝器, Cooling condenser): 1
+(效率, efficiency): 24
+(海水, Seawater): 4
+(热机循环过程, Thermal cycle process): 1
+(等温过程, Isothermal process): 1
+(摩尔热容, Molar heat capacity): 2
+(双原子分子, Diatomic molecule): 1
+(等体过程, Isochoric process): 0

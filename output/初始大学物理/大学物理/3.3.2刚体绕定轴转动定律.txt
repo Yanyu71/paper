@@ -1,0 +1,29 @@
+﻿{
+"knowledge_points": [
+   {"title": "刚体", "en": "Rigid body"},
+   {"title": "转动轴", "en": "Axis of rotation"},
+   {"title": "外力矩", "en": "External torque"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "距离", "en": "Distance"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "合外力", "en": "Net external force"},
+   {"title": "合内力", "en": "Net internal force"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"}
+]
+}{
+"knowledge_points": [
+   {"title": "转动定律", "en": "Rotational law"},
+   {"title": "合外力矩", "en": "Net torque"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "常量", "en": "Constant"},
+   {"title": "刚体", "en": "Rigid body"},
+   {"title": "惯性系", "en": "Inertial frame of reference"}
+]
+}

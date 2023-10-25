@@ -1,0 +1,14 @@
+(波速, Wave speed): 76
+(振幅, Amplitude): 244
+(波动方程, Wave equation): 15
+(介质, Medium): 599
+(波面, Wavefront): 69
+(波, Wave): 2687
+(波源, Wave source): 181
+(矢量, Vector): 326
+(吸收能量, Absorb energy): 5
+(平面波, Plane wave): 23
+(频率, Frequency): 461
+(球面波, Spherical wave): 19
+(能流密度, Energy flux density): 21
+(能量, Energy): 637

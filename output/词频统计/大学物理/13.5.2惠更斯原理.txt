@@ -1,0 +1,14 @@
+(球面波, spherical wave): 19
+(菲涅耳, Fresnel): 28
+(衍射, diffraction): 327
+(波长, wavelength): 470
+(衍射现象, diffraction phenomenon): 17
+(波源, wave source): 181
+(各向异性介质, anisotropic medium): 4
+(波前, wavefront): 32
+(波的能量能流密度, energy flux density of waves): 2
+(惠更斯原理, Huygens' principle): 24
+(各向同性介质, isotropic medium): 9
+(小孔, pinhole): 28
+(波长与障碍物相对大小, relative size of wavelength and obstacle): 0
+(平面波, plane wave): 23

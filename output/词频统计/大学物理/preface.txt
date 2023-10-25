@@ -1,0 +1,14 @@
+(力学, Mechanics): 445
+(大学物理学, University Physics): 2
+(物理学, Physics): 160
+(科学, Science): 67
+(光学, Optics): 138
+(原子物理学, Atomic Physics): 0
+(相对论, Relativity): 205
+(学科, Discipline): 19
+(固体物理学, Solid State Physics): 0
+(大学, University): 18
+(热学, Thermodynamics): 6
+(电磁学, Electromagnetism): 20
+(量子力学, Quantum Mechanics): 32
+(核物理学, Nuclear Physics): 3

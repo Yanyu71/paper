@@ -1,0 +1,11 @@
+(不可逆过程, Irreversible process): 12
+(微观状态数, Microstate number): 14
+(热力学概率, Thermodynamic probability): 8
+(孤立系统, Isolated system): 17
+(态函数熵, State function entropy): 5
+(无序运动状态, Disordered motion state): 1
+(熵增量, Entropy increment): 1
+(热力学第二定律, Second Law of Thermodynamics): 26
+(可逆过程, Reversible process): 34
+(熵增加原理, Principle of Entropy Increase): 7
+(平衡态, Equilibrium state): 51

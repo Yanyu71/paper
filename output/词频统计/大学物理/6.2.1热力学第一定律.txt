@@ -1,0 +1,9 @@
+(传热, Heat transfer): 8
+(内能, Internal energy): 119
+(第一类永动机, First type of perpetual motion machine): 2
+(热力学第一定律, First Law of Thermodynamics): 36
+(能量守恒定律, Law of conservation of energy): 19
+(系统状态变化, Change in system state): 5
+(功, Work): 633
+(热量, Heat): 192
+(作功, Work done): 144

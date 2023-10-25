@@ -1,0 +1,17 @@
+(质量, Mass): 641
+(合外力矩, Net torque): 19
+(距离, Distance): 387
+(质点, Particle): 900
+(力矩, Torque): 223
+(转动惯量, Moment of inertia): 98
+(牛顿第二定律, Newton's second law): 37
+(转动定律, Rotational law): 29
+(常量, Constant): 158
+(合内力, Net internal force): 2
+(角加速度, Angular acceleration): 77
+(合外力, Net external force): 42
+(转动轴, Axis of rotation): 5
+(加速度, Acceleration): 397
+(惯性系, Inertial frame of reference): 160
+(刚体, Rigid body): 300
+(外力矩, External torque): 39

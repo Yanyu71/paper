@@ -1,0 +1,10 @@
+(底面, Bottom surface): 1
+(加拿大树胶, Canadian balsam): 2
+(纸面, Paper surface): 1
+(折射率, Refractive index): 1
+(偏振光, Polarized light): 1
+(方解石, Calcite): 1
+(振动方向, Vibration direction): 1
+(尼科耳棱镜, Nicol prism): 3
+(吸收, Absorption): 1
+(全反射, Total internal reflection): 1

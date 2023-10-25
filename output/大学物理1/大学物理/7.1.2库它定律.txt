@@ -1,0 +1,22 @@
+﻿[{
+"knowledge_points": [
+   {"title": "库仑定律", "en": "Coulomb's Law"},
+   {"title": "电荷", "en": "Electric charge"},
+   {"title": "正电荷", "en": "Positive charge"},
+   {"title": "负电荷", "en": "Negative charge"},
+   {"title": "同号电荷", "en": "Like charges"},
+   {"title": "异号电荷", "en": "Unlike charges"},
+   {"title": "点电荷", "en": "Point charge"},
+   {"title": "电荷间相互作用", "en": "Interaction between charges"},
+   {"title": "牛顿第三定律", "en": "Newton's third law"},
+   {"title": "SI单位制", "en": "SI unit system"},
+   {"title": "距离", "en": "Distance"},
+   {"title": "力", "en": "Force"},
+   {"title": "电荷量", "en": "Electric charge"},
+   {"title": "真空电容率", "en": "Vacuum permittivity"},
+   {"title": "平方反比定律", "en": "Inverse square law"},
+   {"title": "电荷元", "en": "Electric charge element"},
+   {"title": "静电学", "en": "Electrostatics"},
+   {"title": "电磁学", "en": "Electromagnetics"}
+]
+}]

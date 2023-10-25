@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "毕奥-萨伐尔定律", "en": "Biot-Savart Law"},
+   {"title": "稳恒电流", "en": "Steady current"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电流强度", "en": "Current intensity"},
+   {"title": "导线", "en": "Conductor"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "正弦", "en": "Sine"},
+   {"title": "距离", "en": "Distance"},
+   {"title": "矢量式", "en": "Vector expression"},
+   {"title": "导率", "en": "Conductivity"},
+   {"title": "磁感应强度叠加原理", "en": "Principle of superposition of magnetic induction"},
+   {"title": "验证", "en": "Verification"},
+   {"title": "实验", "en": "Experiment"}
+]
+}

@@ -1,0 +1,39 @@
+﻿[{
+"knowledge_points": [
+   {"title": "绝缘体", "en": "Insulator"},
+   {"title": "导体", "en": "Conductor"},
+   {"title": "半导体", "en": "Semiconductor"},
+   {"title": "电阻率", "en": "Resistivity"},
+   {"title": "能带理论", "en": "Band theory"},
+   {"title": "禁带宽度", "en": "Band gap"},
+   {"title": "满带", "en": "Valence band"},
+   {"title": "空带", "en": "Conduction band"},
+   {"title": "击穿", "en": "Breakdown"},
+   {"title": "金属导体", "en": "Metal conductor"},
+   {"title": "电解质", "en": "Electrolyte"},
+   {"title": "擦融电解质", "en": "Molten electrolyte"},
+   {"title": "电离气体", "en": "Ionized gas"}
+]
+},{
+"knowledge_points": [
+   {"title": "电子导电性", "en": "Electrical Conductivity"},
+   {"title": "金属导体", "en": "Metal Conductor"},
+   {"title": "能带", "en": "Band"},
+   {"title": "未被电子填满", "en": "Not filled by electrons"},
+   {"title": "与空带相重叠", "en": "Overlap with the empty band"},
+   {"title": "半导体", "en": "Semiconductor"},
+   {"title": "绝缘体", "en": "Insulator"},
+   {"title": "能带结构", "en": "Band structure"},
+   {"title": "价带", "en": "Valence band"},
+   {"title": "满带", "en": "Filled band"},
+   {"title": "激发能带", "en": "Excited band"},
+   {"title": "禁带宽度", "en": "Band gap width"},
+   {"title": "电子激发", "en": "Electron excitation"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "空穴", "en": "Hole"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电导率", "en": "Electrical conductivity"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "电子跃迁", "en": "Electron transition"}
+]
+}]

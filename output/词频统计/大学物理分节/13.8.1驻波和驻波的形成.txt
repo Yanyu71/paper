@@ -1,0 +1,11 @@
+(驻波, Standing wave): 11
+(振幅, Amplitude): 5
+(波节, Node): 5
+(振动相位, Phase of vibration): 2
+(相位, Phase): 4
+(特点, Characteristics): 1
+(频率, Frequency): 2
+(同相, In phase): 0
+(相反, Out of phase): 2
+(波长, Wavelength): 2
+(波腹, Antinode): 6

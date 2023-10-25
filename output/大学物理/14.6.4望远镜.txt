@@ -1,0 +1,24 @@
+﻿{
+"knowledge_points": [
+   {"title": "望远镜", "en": "Telescope"},
+   {"title": "放大远处物体的张角", "en": "Magnify the angular size of distant objects"},
+   {"title": "看清角距离很小的物体的细节", "en": "See the details of objects with small angular distance"},
+   {"title": "收集光束送入人眼", "en": "Collect light beams and send them into the human eye"},
+   {"title": "看到原来看不到的暗弱物体", "en": "See dim objects that were previously invisible"},
+   {"title": "折射式望远镜", "en": "Refracting telescope"},
+   {"title": "反射式望远镜", "en": "Reflecting telescope"},
+   {"title": "物镜", "en": "Objective lens"},
+   {"title": "目镜", "en": "Eyepiece"},
+   {"title": "入射角", "en": "Incident angle"},
+   {"title": "折射", "en": "Refraction"},
+   {"title": "倒立的缩小实像", "en": "Inverted and reduced real image"},
+   {"title": "像方焦面", "en": "Image plane"},
+   {"title": "放大虚像", "en": "Magnified virtual image"},
+   {"title": "角放大率", "en": "Angular magnification"},
+   {"title": "物镜焦距", "en": "Objective lens focal length"},
+   {"title": "目镜焦距", "en": "Eyepiece focal length"},
+   {"title": "物镜孔径", "en": "Objective lens aperture"},
+   {"title": "折射望远镜", "en": "Refracting telescope"},
+   {"title": "伽利略望远镜", "en": "Galilean telescope"}
+]
+}

@@ -1,0 +1,22 @@
+(物质波, matter wave): 5
+(光, light): 1
+(电子, electron): 5
+(驻波条件, standing wave condition): 2
+(波长, wavelength): 2
+(轨道, orbit): 4
+(稳定圆轨道, stable circular orbit): 2
+(波粒二象性, wave-particle duality): 1
+(实物粒子, material particles): 2
+(玻尔量子化条件, Bohr quantization condition): 2
+(原子, atom): 2
+(角动量量子化条件, quantization condition of angular momentum): 1
+(量子化, quantization): 4
+(德布罗意假设, de Broglie hypothesis): 1
+(动量, momentum): 2
+(半径, radius): 1
+(分子, molecule): 1
+(波长的整数倍, integer multiple of wavelength): 1
+(传播, propagation): 1
+(氢原子定态能量, energy of hydrogen atom in a stationary state): 1
+(频率, frequency): 1
+(能量, energy): 2

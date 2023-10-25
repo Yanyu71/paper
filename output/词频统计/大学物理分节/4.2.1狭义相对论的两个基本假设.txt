@@ -1,0 +1,10 @@
+(观测者, Observer): 1
+(相对性原理, Principle of Relativity): 3
+(物理规律, Physical laws): 3
+(惯性系, Inertial frame): 4
+(光速不变原理, Principle of the Invariance of the Speed of Light): 2
+(电磁相互作用规律, Electromagnetic interaction laws): 0
+(狭义相对论, Special Theory of Relativity): 2
+(光源, Light source): 1
+(力学规律, Mechanical laws): 1
+(速度变换定理, Velocity transformation theorem): 1

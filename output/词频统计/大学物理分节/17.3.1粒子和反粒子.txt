@@ -1,0 +1,18 @@
+(粒子, Particle): 24
+(中子, Neutron): 6
+(自旋, Spin): 2
+(消失, Annihilation): 2
+(电荷, Electric charge): 2
+(中微子, Neutrino): 1
+(质子, Proton): 4
+(光子, Photon): 3
+(反粒子, Antiparticle): 9
+(正粒子, Positive particle): 1
+(磁矩, Magnetic moment): 4
+(正电子, Positron): 1
+(物质, Matter): 1
+(共振态粒子, Resonance particle): 2
+(反质子, Antiproton): 1
+(反中子, Antineutron): 3
+(电子, Electron): 5
+(光子产生, Photon production): 0

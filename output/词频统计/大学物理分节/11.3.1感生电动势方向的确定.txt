@@ -1,0 +1,52 @@
+(导体, Conductor): 18
+(计算K, Calculating K): 1
+(变化的磁场, Changing magnetic field): 1
+(闭合路径, Closed path): 4
+(积分, Integration): 11
+(曲面, Surface): 2
+(导体棒, Conductor rod): 13
+(保守场, Conservative field): 2
+(顺时针方向, Clockwise direction): 2
+(有旋电场, Rotational electric field): 13
+(髙斯定理, Gauss's theorem): 1
+(匀强磁场, Uniform magnetic field): 1
+(大小, Magnitude): 7
+(感生电动势, Induced electromotive force): 9
+(积分路径, Integration path): 2
+(平面, Plane): 1
+(具体条件, Specific conditions): 1
+(非闭合导体, Non-closed conductor): 1
+(感生电动势方向的确定, Determination of the direction of induced electromotive force): 1
+(闭合, Closed): 15
+(法线, Normal): 3
+(磁通量, Magnetic flux): 1
+(绕行正方向, Direction of integration): 1
+(电场线形状, Shape of electric field lines): 1
+(法线方向, Normal direction): 1
+(面积相关, Area-related): 1
+(辅助线, Auxiliary line): 1
+(积分面积, Integration area): 0
+(高斯定理, Gauss's theorem): 0
+(环路定理, Loop theorem): 1
+(电势差, Potential difference): 2
+(楞次定律, Lenz's law): 1
+(无限长直螺线管, Infinite straight solenoid): 1
+(电场性质, Electric field property): 1
+(非保守场, Non-conservative field): 1
+(方向, Direction): 28
+(平移, Translation): 1
+(电场强度, Electric field strength): 3
+(静止的电荷, Stationary charge): 1
+(轴对称性, Axial symmetry): 1
+(静电场, Static electric field): 2
+(麦克斯韦, Maxwell): 1
+(法拉第电磁感应定律, Faraday's law of electromagnetic induction): 1
+(右手螺旋法则, Right-hand screw rule): 1
+(感应电流, Induced current): 2
+(对称性, Symmetry): 3
+(闭合回路, Closed loop): 4
+(逆时针方向, Counterclockwise direction): 2
+(激发方式, Excitation mode): 1
+(包围面积, Enclosed area): 1
+(式(11.12), Equation (11.12): 0
+(电动势, Electromotive force): 18

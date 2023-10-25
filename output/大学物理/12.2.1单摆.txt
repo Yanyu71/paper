@@ -1,0 +1,17 @@
+﻿{
+"knowledge_points": [
+   {"title": "单摆", "en": "Pendulum"},
+   {"title": "数学摆", "en": "Mathematical pendulum"},
+   {"title": "轻绳", "en": "Light string"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "摆动角度", "en": "Swing angle"},
+   {"title": "谐振动", "en": "Harmonic motion"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "拉力", "en": "Tension"},
+   {"title": "运动微分方程", "en": "Differential equation of motion"},
+   {"title": "非线性微分方程", "en": "Nonlinear differential equation"},
+   {"title": "椭圆函数", "en": "Elliptic function"},
+   {"title": "周期", "en": "Period"},
+   {"title": "角频率", "en": "Angular frequency"}
+]
+}

@@ -1,0 +1,13 @@
+﻿{
+"knowledge_points": [
+   {"title": "渥拉斯顿棱镜", "en": "Wollaston prism"},
+   {"title": "尼科耳棱镜", "en": "Nicol prism"},
+   {"title": "线偏振光", "en": "linearly polarized light"},
+   {"title": "方解石棱镜", "en": "calcite prism"},
+   {"title": "光轴", "en": "optical axis"},
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "负晶体", "en": "negative crystal"},
+   {"title": "光密介质", "en": "optically dense medium"},
+   {"title": "光疏介质", "en": "optically rare medium"}
+]
+}

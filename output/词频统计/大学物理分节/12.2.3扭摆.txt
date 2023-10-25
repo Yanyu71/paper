@@ -1,0 +1,37 @@
+(转动惯量, Moment of inertia): 2
+(月球表面, Lunar surface): 2
+(扭转形变, Torsional deformation): 1
+(扭摆, Torsion pendulum): 7
+(频率, Frequency): 2
+(空气质点, Air particle): 1
+(轨迹, Trajectory): 1
+(扭转系数, Torsional coefficient): 2
+(相互垂直的谐振动的合成, Composition of mutually perpendicular harmonic oscillations): 1
+(剪切弹性模量, Shear modulus): 1
+(电工学, Electrical engineering): 1
+(椭圆规, Elliptical compass): 0
+(同方向谐振动的合成, Composition of co-directional harmonic oscillations): 1
+(棒, Rod): 2
+(光学, Optics): 1
+(弹性回复力矩, Elastic restoring torque): 1
+(角频率, Angular frequency): 1
+(重力加速度, Gravity acceleration): 1
+(无线电技术, Radio technology): 0
+(温度, Temperature): 1
+(简谐振动的合成, Composition of harmonic oscillations): 1
+(相互垂直的谐振动的合成, Composition of oscillations perpendicular to each other): 1
+(同方向谐振动的合成, Composition of oscillations in the same direction): 1
+(单摆, Simple pendulum): 5
+(复摆, Compound pendulum): 3
+(月球探险者, Lunar explorer): 1
+(画笔, Brush): 1
+(水平均质圆盘, Horizontal uniform disk): 1
+(振动合成, Composition of oscillations): 2
+(质点, Particle): 3
+(椭圆规, Elliptical rule): 0
+(谐振动, Harmonic oscillation): 4
+(均质细杆, Homogeneous slender rod): 1
+(声学, Acoustics): 1
+(声波, Sound wave): 0
+(周期, Period): 6
+(金属丝, Metal wire): 7

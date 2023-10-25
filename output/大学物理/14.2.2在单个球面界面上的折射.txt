@@ -1,0 +1,103 @@
+﻿{
+"knowledge_points": [
+   {"title": "单个球面界面", "en": "Single spherical interface"},
+   {"title": "折射", "en": "Refraction"},
+   {"title": "反射", "en": "Reflection"},
+   {"title": "光学元件", "en": "Optical element"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "物点", "en": "Object point"},
+   {"title": "像点", "en": "Image point"},
+   {"title": "物距", "en": "Object distance"},
+   {"title": "像距", "en": "Image distance"},
+   {"title": "傍轴近似", "en": "Paraxial approximation"},
+   {"title": "笛卡儿符号规则", "en": "Descartes' sign convention"},
+   {"title": "正立", "en": "Upright"},
+   {"title": "倒立", "en": "Inverted"},
+   {"title": "放大率", "en": "Magnification"}
+]
+}{
+"knowledge_points": [
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "物点P", "en": "Object point P"},
+   {"title": "经球面", "en": "Refracting spherical surface"},
+   {"title": "像点", "en": "Image point"},
+   {"title": "物像公式", "en": "Object-image formula"},
+   {"title": "折射定律", "en": "Law of refraction"},
+   {"title": "傍轴近似", "en": "Paraxial approximation"},
+   {"title": "角", "en": "Angle"},
+   {"title": "三角形", "en": "Triangle"},
+   {"title": "外角", "en": "Exterior angle"},
+   {"title": "内角", "en": "Interior angle"},
+   {"title": "负号", "en": "Negative sign"},
+   {"title": "凸折射球面", "en": "Convex refracting spherical surface"},
+   {"title": "凹折射球面", "en": "Concave refracting spherical surface"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "焦点", "en": "Focus"},
+   {"title": "纵向放大率", "en": "Longitudinal magnification"},
+   {"title": "平行光", "en": "Parallel light"},
+   {"title": "像方焦点", "en": "Image-side focus"},
+   {"title": "像方焦距", "en": "Image-side focal length"},
+   {"title": "物方焦点", "en": "Object-side focus"},
+   {"title": "物方焦距", "en": "Object-side focal length"},
+   {"title": "物距", "en": "Object distance"},
+   {"title": "像距", "en": "Image distance"}
+]
+}{
+"knowledge_points": [
+   {"title": "物像公式", "en": "Object-image formula"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "物点", "en": "Object point"},
+   {"title": "像点", "en": "Image point"},
+   {"title": "球面对称性", "en": "Spherical symmetry"},
+   {"title": "傍轴近似", "en": "Paraxial approximation"},
+   {"title": "纵向放大率", "en": "Longitudinal magnification"},
+   {"title": "正负号", "en": "Positive and negative sign"},
+   {"title": "物理意义", "en": "Physical meaning"},
+   {"title": "凸折射球面", "en": "Convex refracting surface"},
+   {"title": "凹折射球面", "en": "Concave refracting surface"},
+   {"title": "平折射面", "en": "Plane refracting surface"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "焦点位置", "en": "Focal point position"},
+   {"title": "像高", "en": "Image height"},
+   {"title": "绘图", "en": "Drawing"}
+]
+}{
+"knowledge_points": [
+   {"title": "折射光", "en": "refracted light"},
+   {"title": "球面折射", "en": "spherical refraction"},
+   {"title": "放大率", "en": "magnification"},
+   {"title": "虚像", "en": "virtual image"},
+   {"title": "逐次成像", "en": "successive imaging"},
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "物距", "en": "object distance"},
+   {"title": "像距", "en": "image distance"},
+   {"title": "正立", "en": "upright"},
+   {"title": "倒立", "en": "inverted"}
+]
+}{
+"knowledge_points": [
+   {"title": "物在无限远处时的成像位置", "en": "Image position when the object is at infinity"},
+   {"title": "第一折射球面成像位置", "en": "Image position on the first refracting spherical surface"},
+   {"title": "第二折射球面成像位置", "en": "Image position on the second refracting spherical surface"},
+   {"title": "像方焦点", "en": "Image focal point"},
+   {"title": "小钥匙经球第一折射球面成像位置", "en": "Image position of the key on the first refracting spherical surface"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "像相对物的正立或倒立", "en": "Orientation of the image relative to the object"},
+   {"title": "符号规则", "en": "Sign rules"},
+   {"title": "解释计算结果", "en": "Interpretation of calculation results"}
+]
+}{
+"knowledge_points": [
+   {"title": "介质", "en": "Medium"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "折射球面", "en": "Refracting surface"},
+   {"title": "透镜", "en": "Lens"},
+   {"title": "透镜材料", "en": "Lens material"},
+   {"title": "球面", "en": "Spherical surface"},
+   {"title": "平面", "en": "Plane"},
+   {"title": "曲率中心", "en": "Curvature center"},
+   {"title": "光轴", "en": "Optical axis"}
+]
+}

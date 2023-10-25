@@ -1,0 +1,42 @@
+(横波, Transverse wave): 26
+(电磁场, electromagnetic field): 51
+(辐射功率, radiated power): 6
+(介电常量, Permittivity): 3
+(幅值, Amplitude): 2
+(真空中的光速, Speed of light in vacuum): 11
+(光振动, Light vibration): 39
+(磁场强度, Magnetic field intensity): 29
+(振幅矢量, Amplitude vector): 7
+(能量密度, energy density): 17
+(感光器件, Photosensitive device): 1
+(各向同性介质, isotropic medium): 9
+(光矢量, Light vector): 31
+(辐射, radiation): 182
+(最大磁感应强度, maximum magnetic induction intensity): 2
+(能量传播, energy propagation): 2
+(磁场强度, Magnetic field strength): 29
+(能流密度, power density): 21
+(电磁波强度, electromagnetic wave intensity): 1
+(磁导率, Permeability): 34
+(电磁波传播, Electromagnetic wave propagation): 5
+(最大电场强度, maximum electric field strength): 2
+(右螺旋关系, right-handed helix relationship): 1
+(率, rate): 1712
+(平均能流密度, average power density): 8
+(平均能流密度, Average power density): 8
+(波速, wave speed): 76
+(电磁能量传播方向, direction of electromagnetic energy propagation): 0
+(电磁波, electromagnetic wave): 150
+(偏振性, Polarization): 5
+(传播速率, Propagation speed): 24
+(光学效应, Optical effect): 2
+(电场强度, Electric field intensity): 317
+(非铁磁质, non-magnetic material): 2
+(电场强度, Electric field strength): 317
+(能流密度矢量形式, vector form of power density): 0
+(辐射能, radiation energy): 18
+(相位, Phase): 226
+(电场矢量振幅, electric field vector amplitude): 0
+(平面简谐电磁波, Plane harmonic electromagnetic wave): 6
+(坪, ping): 11
+(频率, frequency): 461

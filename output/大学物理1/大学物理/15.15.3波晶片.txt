@@ -1,0 +1,146 @@
+﻿[{
+"knowledge_points": [
+   {"title": "波晶片", "en": "Wave plate"},
+   {"title": "双折射晶体", "en": "Birefringent crystal"},
+   {"title": "偏振器件", "en": "Polarizer"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "入射", "en": "Incident"},
+   {"title": "传播速度", "en": "Propagation speed"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "相位延迟", "en": "Phase delay"},
+   {"title": "1/4波片", "en": "Quarter-wave plate"},
+   {"title": "1/2波片", "en": "Half-wave plate"},
+   {"title": "光强", "en": "Intensity"},
+   {"title": "自然光", "en": "Natural light"},
+   {"title": "线偏振光", "en": "Linearly polarized light"},
+   {"title": "圆偏振光", "en": "Circularly polarized light"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "分振动", "en": "Component vibration"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "合振幅", "en": "Combined amplitude"},
+   {"title": "光矢量", "en": "Light vector"},
+   {"title": "光强", "en": "Intensity"},
+   {"title": "检偏器", "en": "Polarizer"}
+]
+},{
+"knowledge_points": [
+   {"title": "线偏振光", "en": "Linearly polarized light"},
+   {"title": "部分偏振光", "en": "Partially polarized light"},
+   {"title": "自然光", "en": "Natural light"},
+   {"title": "偏振片", "en": "Polarizing film"},
+   {"title": "墨镜", "en": "Sunglasses"},
+   {"title": "全发射", "en": "Total transmission"},
+   {"title": "全偏振", "en": "Complete polarization"},
+   {"title": "双折射晶体", "en": "Birefringent crystal"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "干涉", "en": "Interference"},
+   {"title": "分振幅", "en": "Amplitude splitting"},
+   {"title": "显色偏振", "en": "Color polarization"},
+   {"title": "彩色图样", "en": "Color pattern"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "偏振化方向", "en": "Polarization direction"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "干涉图样", "en": "Interference pattern"}
+]
+},{
+"knowledge_points": [
+   {"title": "晶体", "en": "crystal"},
+   {"title": "光波", "en": "light wave"},
+   {"title": "偏振光", "en": "polarized light"},
+   {"title": "振幅", "en": "amplitude"},
+   {"title": "相位差", "en": "phase difference"},
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "干涉", "en": "interference"},
+   {"title": "椭圆偏振光", "en": "elliptically polarized light"},
+   {"title": "偏振片", "en": "polarizer"},
+   {"title": "光轴", "en": "optic axis"},
+   {"title": "附加相位差", "en": "additional phase difference"},
+   {"title": "视场", "en": "field of view"},
+   {"title": "白光", "en": "white light"},
+   {"title": "等厚干涉", "en": "equal thickness interference"},
+   {"title": "补色", "en": "complementary color"},
+   {"title": "色偏振现象", "en": "color polarization phenomenon"}
+]
+},{
+"knowledge_points": [
+   {"title": "双折射现象", "en": "Birefringence phenomenon"},
+   {"title": "天然晶体", "en": "Natural crystals"},
+   {"title": "各向同性介质", "en": "Isotropic medium"},
+   {"title": "各向异性体", "en": "Anisotropic body"},
+   {"title": "人工双折射性", "en": "Artificial birefringence"},
+   {"title": "光弹效应", "en": "Photoelastic effect"},
+   {"title": "光弹实验装置", "en": "Photoelastic experimental device"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "偏振光的干涉", "en": "Interference of polarized light"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "干涉条纹", "en": "Interference fringes"},
+   {"title": "彩色条纹", "en": "Colored fringes"},
+   {"title": "光测弹性学", "en": "Photoelasticity"},
+   {"title": "电光效应", "en": "Electro-optic effect"}
+]
+},{
+"knowledge_points": [
+   {"title": "克尔效应", "en": "Kerr effect", "type": "相关", "description": "克尔效应可对偏振光进行调制，可用作光开关、断续器或调制器。"},
+   {"title": "旋光效应", "en": "Optical rotation", "type": "相关", "description": "当一束线偏振光通过旋光物质时，光的振动方向会随着传播距离增大逐渐转动。"},
+   {"title": "液体的克尔常量", "en": "Kerr constant of liquid", "type": "相关", "description": "液体的克尔常量决定了光通过液体后o光和e光之间的相位差。"},
+   {"title": "旋光物质", "en": "Optically active substance", "type": "包含", "description": "具有旋光性的物质，如糖、松节油、石油、酒石酸、氨基酸等。"},
+   {"title": "左旋光物质", "en": "Levorotatory substance", "type": "包含", "description": "沿逆时针方向转动光的振动面的旋光物质。"},
+   {"title": "右旋光物质", "en": "Dextrorotatory substance", "type": "包含", "description": "沿顺时针方向转动光的振动面的旋光物质。"}
+]
+},{
+"knowledge_points": [
+   {"title": "旋光性溶液", "en": "Optically active solution"},
+   {"title": "旋光率", "en": "Specific rotation"},
+   {"title": "溶液浓度", "en": "Solution concentration"},
+   {"title": "石英", "en": "Quartz"},
+   {"title": "旋光色散", "en": "Optical rotation dispersion"},
+   {"title": "葡萄糖", "en": "Glucose"},
+   {"title": "氨基酸", "en": "Amino acid"},
+   {"title": "DNA", "en": "DNA"},
+   {"title": "磁致旋光", "en": "Magneto-optical rotation"},
+   {"title": "电磁波", "en": "Electromagnetic wave"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "磁场强度", "en": "Magnetic field strength"},
+   {"title": "传播速率", "en": "Propagation speed"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "能流密度", "en": "Energy flux density"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "叠加", "en": "Superposition"},
+   {"title": "相干叠加", "en": "Coherent superposition"},
+   {"title": "相位差", "en": "Phase difference"}
+]
+},{
+"knowledge_points": [
+   {"title": "非相干叠加", "en": "Incoherent superposition", "type": "", "description": ""},
+   {"title": "光强", "en": "Intensity", "type": "", "description": ""},
+   {"title": "杨氏双缝干涉", "en": "Young's double-slit interference", "type": "", "description": ""},
+   {"title": "干涉条纹", "en": "Interference fringes", "type": "", "description": ""},
+   {"title": "光程差", "en": "Optical path difference", "type": "", "description": ""},
+   {"title": "相位差", "en": "Phase difference", "type": "", "description": ""},
+   {"title": "薄膜干涉", "en": "Thin film interference", "type": "", "description": ""},
+   {"title": "光程差", "en": "Optical path difference", "type": "", "description": ""},
+   {"title": "惠更斯-菲涅耳原理", "en": "Huygens-Fresnel principle", "type": "", "description": ""},
+   {"title": "单缝夫琅禾费衍射", "en": "Single-slit Fraunhofer diffraction", "type": "", "description": ""},
+   {"title": "光强公式", "en": "Intensity formula", "type": "", "description": ""},
+   {"title": "光学仪器的最小分辨角", "en": "Minimum resolvable angle of optical instruments", "type": "", "description": ""},
+   {"title": "分辨本领", "en": "Resolution capability", "type": "", "description": ""},
+   {"title": "光栅衍射", "en": "Grating diffraction", "type": "", "description": ""},
+   {"title": "光檐方程", "en": "Grating equation", "type": "", "description": ""},
+   {"title": "缺级公式", "en": "Order formula", "type": "", "description": ""},
+   {"title": "X射线的衍射布拉格公式", "en": "X-ray diffraction Bragg's formula", "type": "", "description": ""},
+   {"title": "马吕斯定律", "en": "Malus's law", "type": "", "description": ""},
+   {"title": "线偏振光", "en": "Linearly polarized light", "type": "", "description": ""}
+]
+},{
+"knowledge_points": [
+   {"title": "布儒斯特定律", "en": "Brewster's Law", "type": "定义", "description": "描述了光在介质表面反射时的起偏角与介质折射率之间的关系"},
+   {"title": "反射起偏角", "en": "Angle of Polarization", "type": "定义", "description": "光在介质表面反射时的起偏角"},
+   {"title": "折射率", "en": "Refractive Index", "type": "定义", "description": "介质对光的折射能力的度量"},
+   {"title": "波晶片", "en": "Waveplate", "type": "定义", "description": "光轴平行于晶面的单轴晶片"},
+   {"title": "光程差", "en": "Optical Path Difference", "type": "定义", "description": "波晶片中o光和e光的光程差"},
+   {"title": "相位差", "en": "Phase Difference", "type": "定义", "description": "波晶片中o光和e光的相位差"},
+   {"title": "厚度", "en": "Thickness", "type": "定义", "description": "波晶片的厚度"}
+]
+}]

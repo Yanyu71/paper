@@ -1,0 +1,78 @@
+﻿{
+"knowledge_points": [
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电场线", "en": "electric field lines"},
+   {"title": "电荷", "en": "charge"},
+   {"title": "电场强度", "en": "electric field strength"},
+   {"title": "闭合曲面", "en": "closed surface"},
+   {"title": "电场强度通量", "en": "electric field flux"},
+   {"title": "点电荷", "en": "point charge"},
+   {"title": "电场线数", "en": "number of electric field lines"},
+   {"title": "电荷代数和", "en": "algebraic sum of charges"},
+   {"title": "电场叠加原理", "en": "superposition principle of electric fields"}
+]
+}{
+"knowledge_points": [
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电场线", "en": "electric field lines"},
+   {"title": "电荷", "en": "charge"},
+   {"title": "电场强度", "en": "electric field strength"},
+   {"title": "闭合曲面", "en": "closed surface"},
+   {"title": "电场强度通量", "en": "electric field flux"},
+   {"title": "点电荷", "en": "point charge"},
+   {"title": "电场线数", "en": "number of electric field lines"},
+   {"title": "电荷代数和", "en": "algebraic sum of charges"},
+   {"title": "电场叠加原理", "en": "principle of superposition of electric fields"}
+]
+}{
+"knowledge_points": [
+   {"title": "高斯定理", "en": "Gauss's Law"},
+   {"title": "闭合曲面", "en": "closed surface"},
+   {"title": "电荷", "en": "charge"},
+   {"title": "电场线", "en": "electric field lines"},
+   {"title": "正电荷", "en": "positive charge"},
+   {"title": "负电荷", "en": "negative charge"},
+   {"title": "库仑定律", "en": "Coulomb's Law"},
+   {"title": "电场强度", "en": "electric field strength"},
+   {"title": "叠加原理", "en": "superposition principle"},
+   {"title": "静电场", "en": "static electric field"},
+   {"title": "运动电荷", "en": "moving charge"},
+   {"title": "迅速变化的电磁场", "en": "rapidly changing electromagnetic field"},
+   {"title": "电磁场方程组", "en": "electromagnetic field equations"},
+   {"title": "特殊对称性", "en": "special symmetry"},
+   {"title": "高斯面", "en": "Gaussian surface"},
+   {"title": "计算电场强度", "en": "calculate electric field strength"}
+]
+}{
+"knowledge_points": [
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电场线", "en": "electric field lines"},
+   {"title": "电荷", "en": "charge"},
+   {"title": "电场强度", "en": "electric field strength"},
+   {"title": "闭合曲面", "en": "closed surface"},
+   {"title": "电场强度通量", "en": "electric field flux"},
+   {"title": "点电荷", "en": "point charge"},
+   {"title": "电场线数", "en": "number of electric field lines"},
+   {"title": "电荷代数和", "en": "algebraic sum of charges"},
+   {"title": "电场叠加原理", "en": "principle of superposition of electric fields"}
+]
+}{
+"knowledge_points": [
+   {"title": "高斯定理", "en": "Gauss's Law"},
+   {"title": "闭合曲面", "en": "closed surface"},
+   {"title": "电荷", "en": "charge"},
+   {"title": "电场线", "en": "electric field lines"},
+   {"title": "正电荷", "en": "positive charge"},
+   {"title": "负电荷", "en": "negative charge"},
+   {"title": "库仑定律", "en": "Coulomb's Law"},
+   {"title": "电场强度", "en": "electric field strength"},
+   {"title": "叠加原理", "en": "superposition principle"},
+   {"title": "静电场", "en": "static electric field"},
+   {"title": "运动电荷", "en": "moving charge"},
+   {"title": "迅速变化的电磁场", "en": "rapidly changing electromagnetic field"},
+   {"title": "电磁场方程组", "en": "electromagnetic field equations"},
+   {"title": "特殊对称性", "en": "special symmetry"},
+   {"title": "高斯面", "en": "Gaussian surface"},
+   {"title": "计算电场强度", "en": "calculate electric field strength"}
+]
+}

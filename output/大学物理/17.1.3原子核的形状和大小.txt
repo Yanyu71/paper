@@ -1,0 +1,29 @@
+﻿{
+"knowledge_points": [
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "形状", "en": "Shape"},
+   {"title": "大小", "en": "Size"},
+   {"title": "球形", "en": "Spherical"},
+   {"title": "长椭球", "en": "Prolate spheroid"},
+   {"title": "扁椭球", "en": "Oblate spheroid"},
+   {"title": "质子数", "en": "Proton number"},
+   {"title": "中子数", "en": "Neutron number"},
+   {"title": "基态", "en": "Ground state"},
+   {"title": "电荷分布", "en": "Charge distribution"},
+   {"title": "质量分布", "en": "Mass distribution"},
+   {"title": "高能粒子散射实验", "en": "High-energy particle scattering experiment"},
+   {"title": "半径", "en": "Radius"},
+   {"title": "质量数", "en": "Mass number"},
+   {"title": "体积", "en": "Volume"},
+   {"title": "液滴模型", "en": "Liquid drop model"},
+   {"title": "核物质", "en": "Nuclear matter"},
+   {"title": "平均密度", "en": "Average density"},
+   {"title": "水的密度", "en": "Density of water"},
+   {"title": "恒星", "en": "Star"},
+   {"title": "白矮星", "en": "White dwarf"},
+   {"title": "中子星", "en": "Neutron star"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "质子", "en": "Proton"},
+   {"title": "中子", "en": "Neutron"}
+]
+}

@@ -1,0 +1,66 @@
+﻿{
+"knowledge_points": [
+   {"title": "卡诺循环", "en": "Carnot cycle"},
+   {"title": "热机", "en": "heat engine"},
+   {"title": "效率", "en": "efficiency"},
+   {"title": "热源", "en": "heat source"},
+   {"title": "循环过程", "en": "cycle process"},
+   {"title": "等温过程", "en": "isothermal process"},
+   {"title": "绝热过程", "en": "adiabatic process"},
+   {"title": "理想气体", "en": "ideal gas"},
+   {"title": "高温热源", "en": "high-temperature heat source"},
+   {"title": "低温热源", "en": "low-temperature heat source"},
+   {"title": "致冷循环", "en": "refrigeration cycle"},
+   {"title": "致冷系数", "en": "coefficient of performance"}
+]
+}{
+"knowledge_points": [
+   {"title": "致冷机", "en": "Refrigeration machine"},
+   {"title": "高温热源", "en": "High-temperature heat source"},
+   {"title": "低温热源", "en": "Low-temperature heat source"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "卡诺循环致冷系数", "en": "Carnot refrigeration coefficient"},
+   {"title": "功", "en": "Work"},
+   {"title": "理想气体", "en": "Ideal gas"},
+   {"title": "工质", "en": "Working substance"},
+   {"title": "循环效率", "en": "Cycle efficiency"},
+   {"title": "等温过程", "en": "Isothermal process"},
+   {"title": "等压过程", "en": "Isobaric process"},
+   {"title": "等体过程", "en": "Isochoric process"},
+   {"title": "吸收的热量", "en": "Absorbed heat"},
+   {"title": "放出的热量", "en": "Released heat"},
+   {"title": "双原子分子", "en": "Diatomic molecule"},
+   {"title": "自由度数", "en": "Degrees of freedom"},
+   {"title": "摩尔热容", "en": "Molar heat capacity"},
+   {"title": "等温膨胀过程", "en": "Isothermal expansion process"},
+   {"title": "等压压缩过程", "en": "Isobaric compression process"},
+   {"title": "外界", "en": "External environment"},
+   {"title": "放出的热量", "en": "Released heat"},
+   {"title": "核电站", "en": "Nuclear power plant"},
+   {"title": "装机容量", "en": "Installed capacity"},
+   {"title": "效率", "en": "Efficiency"},
+   {"title": "发电机组", "en": "Generator set"},
+   {"title": "核锅炉", "en": "Nuclear boiler"},
+   {"title": "冷却冷凝器", "en": "Cooling condenser"},
+   {"title": "排水温度", "en": "Discharge water temperature"},
+   {"title": "海水", "en": "Seawater"},
+   {"title": "比热", "en": "Specific heat"}
+]
+}{
+"knowledge_points": [
+   {"title": "热机循环过程", "en": "Thermal cycle process"},
+   {"title": "能量转换关系", "en": "Energy conversion relationship"},
+   {"title": "物质比热", "en": "Specific heat of substance"},
+   {"title": "海水质量", "en": "Mass of seawater"},
+   {"title": "理想气体", "en": "Ideal gas"},
+   {"title": "卡诺循环", "en": "Carnot cycle"},
+   {"title": "效率", "en": "Efficiency"},
+   {"title": "绝热线", "en": "Adiabatic line"},
+   {"title": "等温线", "en": "Isothermal line"},
+   {"title": "高温热源温度", "en": "High-temperature heat source temperature"},
+   {"title": "低温热源温度", "en": "Low-temperature heat source temperature"},
+   {"title": "净功", "en": "Net work"},
+   {"title": "吸收的热量", "en": "Absorbed heat"},
+   {"title": "放出的热量", "en": "Released heat"}
+]
+}

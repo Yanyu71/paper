@@ -1,0 +1,10 @@
+﻿[{
+"knowledge_points": [
+   {"title": "惠更斯原理", "en": "Huygens' principle", "type": "解释", "description": "解释光波的绕射现象"},
+   {"title": "衍射", "en": "diffraction", "type": "现象", "description": "光波通过衍射屏后出现的明暗或彩色条纹的现象"},
+   {"title": "相干叠加", "en": "coherent superposition", "type": "机制", "description": "光强的重新分布与相干叠加机制联系在一起"},
+   {"title": "菲涅耳衍射", "en": "Fresnel diffraction", "type": "现象", "description": "一种衍射现象"},
+   {"title": "夫琅禾费衍射", "en": "Fraunhofer diffraction", "type": "现象", "description": "一种衍射现象"},
+   {"title": "惠更斯-菲涅耳原理", "en": "Huygens-Fresnel principle", "type": "原理", "description": "波前上每个面元都可以看成是新的振动中心，它们发出次波，在空间某一点的光振动是所有这些次波在该点作用的结果"}
+]
+}]

@@ -1,0 +1,73 @@
+﻿{
+"knowledge_points": [
+   {"title": "阻尼振动", "en": "Damped oscillation"},
+   {"title": "弹簧振子", "en": "Spring oscillator"},
+   {"title": "自由振动", "en": "Free oscillation"},
+   {"title": "阻力", "en": "Resistance"},
+   {"title": "机械能", "en": "Mechanical energy"},
+   {"title": "能量转化", "en": "Energy conversion"},
+   {"title": "耗散", "en": "Dissipation"},
+   {"title": "波", "en": "Wave"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "能量补充", "en": "Energy supplement"},
+   {"title": "库仑干摩擦", "en": "Coulomb dry friction"},
+   {"title": "介质阻力", "en": "Medium resistance"},
+   {"title": "粘滞阻尼", "en": "Viscous damping"},
+   {"title": "线性弹簧振子", "en": "Linear spring oscillator"},
+   {"title": "运动规律", "en": "Motion law"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "微分方程", "en": "Differential equation"},
+   {"title": "小阻尼情况", "en": "Small damping"},
+   {"title": "通解", "en": "General solution"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "衰减振动", "en": "Damped vibration"},
+   {"title": "周期", "en": "Period"},
+   {"title": "大阻尼", "en": "Large damping"},
+   {"title": "临界阻尼", "en": "Critical damping"}
+]
+}{
+"knowledge_points": [
+   {"title": "弹簧门", "en": "Spring door"},
+   {"title": "消振油缸", "en": "Vibration damping cylinder"},
+   {"title": "大阻尼状态", "en": "High damping state"},
+   {"title": "精密天平", "en": "Precision balance"},
+   {"title": "指针式测量仪表", "en": "Pointer measurement instrument"},
+   {"title": "临界阻尼系统", "en": "Critical damping system"}
+]
+}{
+"knowledge_points": [
+   {"title": "阻尼振动", "en": "Damped oscillation"},
+   {"title": "弹簧振子", "en": "Spring oscillator"},
+   {"title": "自由振动", "en": "Free oscillation"},
+   {"title": "阻力", "en": "Resistance"},
+   {"title": "机械能", "en": "Mechanical energy"},
+   {"title": "能量转化", "en": "Energy conversion"},
+   {"title": "耗散", "en": "Dissipation"},
+   {"title": "波", "en": "Wave"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "能量补充", "en": "Energy supplement"},
+   {"title": "库仑干摩擦", "en": "Coulomb dry friction"},
+   {"title": "介质阻力", "en": "Medium resistance"},
+   {"title": "粘滞阻尼", "en": "Viscous damping"},
+   {"title": "线性弹簧振子", "en": "Linear spring oscillator"},
+   {"title": "运动规律", "en": "Motion law"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "微分方程", "en": "Differential equation"},
+   {"title": "小阻尼情况", "en": "Small damping"},
+   {"title": "通解", "en": "General solution"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "衰减振动", "en": "Damped vibration"},
+   {"title": "周期", "en": "Period"},
+   {"title": "大阻尼", "en": "Large damping"},
+   {"title": "临界阻尼", "en": "Critical damping"}
+]
+}{
+"knowledge_points": [
+   {"title": "弹簧门", "en": "Spring door"},
+   {"title": "消振油缸", "en": "Vibration damping cylinder"},
+   {"title": "大阻尼状态", "en": "High damping state"},
+   {"title": "精密天平", "en": "Precision balance"},
+   {"title": "指针式测量仪表", "en": "Pointer measurement instrument"},
+   {"title": "临界阻尼系统", "en": "Critical damping system"}
+]
+}

@@ -1,0 +1,73 @@
+﻿{
+"knowledge_points": [
+   {"title": "一般曲线运动", "en": "General curved motion"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "速度的增量", "en": "Increment of velocity"},
+   {"title": "法向加速度", "en": "Normal acceleration"},
+   {"title": "切向加速度", "en": "Tangential acceleration"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "圆周运动", "en": "Circular motion"},
+   {"title": "自然坐标", "en": "Natural coordinates"},
+   {"title": "运动方程", "en": "Equation of motion"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "微分法", "en": "Differential method"},
+   {"title": "积分法", "en": "Integral method"},
+   {"title": "抛体运动", "en": "Projectile motion"}
+]
+}{
+"knowledge_points": [
+   {"title": "顶点", "en": "vertex"},
+   {"title": "速率", "en": "velocity"},
+   {"title": "法向加速度", "en": "normal acceleration"},
+   {"title": "拋出点", "en": "release point"},
+   {"title": "落地点", "en": "landing point"},
+   {"title": "刹车", "en": "braking"},
+   {"title": "运动方程", "en": "equation of motion"},
+   {"title": "加速度", "en": "acceleration"},
+   {"title": "切向加速度", "en": "tangential acceleration"},
+   {"title": "总加速度", "en": "total acceleration"},
+   {"title": "夹角", "en": "angle"},
+   {"title": "质点", "en": "particle"},
+   {"title": "时间", "en": "time"},
+   {"title": "速度", "en": "speed"},
+   {"title": "角量", "en": "angular quantity"},
+   {"title": "角速度", "en": "angular velocity"},
+   {"title": "角加速度", "en": "angular acceleration"},
+   {"title": "圆周运动", "en": "circular motion"},
+   {"title": "规律", "en": "law"},
+   {"title": "原点", "en": "origin"},
+   {"title": "加速度的大小", "en": "magnitude of acceleration"},
+   {"title": "圈", "en": "loop"}
+]
+}{
+"knowledge_points": [
+   {"title": "质点运动的圈数", "en": "Number of revolutions of the particle's motion"},
+   {"title": "自然坐标中质点运动学问题", "en": "Kinematic problems of particles in natural coordinates"},
+   {"title": "第一类问题", "en": "Type 1 problems"},
+   {"title": "第二类问题", "en": "Type 2 problems"},
+   {"title": "质点的圆周运动", "en": "Circular motion of particles"},
+   {"title": "线量描述运动方程", "en": "Motion equation described by linear quantities"},
+   {"title": "角量描述运动方程", "en": "Motion equation described by angular quantities"},
+   {"title": "圆周运动中质点的加速度", "en": "Acceleration of particles in circular motion"},
+   {"title": "加速度方向偏向运动的前方", "en": "Acceleration direction deviates towards the front of motion"},
+   {"title": "开普勒行星运动定律", "en": "Kepler's laws of planetary motion"},
+   {"title": "行星运行轨道", "en": "Planetary orbit"},
+   {"title": "行星的加速度方向", "en": "Acceleration direction of the planet"},
+   {"title": "行星速率的变化", "en": "Change in planet's velocity"},
+   {"title": "任意曲线运动的加速度", "en": "Acceleration of arbitrary curved motion"},
+   {"title": "斜抛运动中的切向加速度", "en": "Tangential acceleration in projectile motion"},
+   {"title": "斜抛运动中的法向加速度", "en": "Normal acceleration in projectile motion"},
+   {"title": "斜抛运动中的曲率半径", "en": "Radius of curvature in projectile motion"},
+   {"title": "质点的运动类型", "en": "Types of particle motion"},
+   {"title": "角加速度为负的情况", "en": "Case of negative angular acceleration"},
+   {"title": "判断质点沿圆周运动加速或减速的方法", "en": "Method to determine if particle is accelerating or decelerating in circular motion"},
+   {"title": "相对运动", "en": "Relative motion"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "绝对运动", "en": "Absolute motion"}
+]
+}{"knowledge_points": [
+   {"title": "恒星系", "en": "Stellar system"},
+   {"title": "运动", "en": "Motion"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "变换关系", "en": "Transformation relationship"}
+]}

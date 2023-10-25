@@ -1,0 +1,7 @@
+(导体, Conductor): 427
+(电中性, Electric neutrality): 6
+(自由电子, Free electrons): 24
+(等势面, Equipotential surface): 36
+(电场, Electric field): 882
+(电势, Electric potential): 348
+(电荷重新分布, Charge redistribution): 3

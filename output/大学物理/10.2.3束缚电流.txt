@@ -1,0 +1,12 @@
+﻿{
+"knowledge_points": [
+   {"title": "束缚电流", "en": "Bound current"},
+   {"title": "磁化电流", "en": "Magnetization current"},
+   {"title": "分子电流", "en": "Molecular current"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "磁高斯定理", "en": "Magnetic Gauss's law"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"}
+]
+}

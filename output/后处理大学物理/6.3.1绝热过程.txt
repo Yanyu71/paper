@@ -1,0 +1,7 @@
+(状态参量, State parameters)
+(绝热过程方程, Adiabatic process equation)
+(绝热过程, Adiabatic process)
+(等温线, Isothermal line)
+(绝热材料, Adiabatic material)
+(竿, Adiabatic)
+(绝热线, Adiabatic line)

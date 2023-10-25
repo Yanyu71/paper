@@ -1,0 +1,15 @@
+﻿{
+"knowledge_points": [
+   {"title": "磁石吸铁现象", "en": "Magnetic attraction"},
+   {"title": "指南针", "en": "Compass"},
+   {"title": "磁铁", "en": "Magnet"},
+   {"title": "磁板", "en": "Magnetic pole"},
+   {"title": "磁力作用", "en": "Magnetic force"},
+   {"title": "同号磁极相互排斥", "en": "Like magnetic poles repel each other"},
+   {"title": "异号磁极相互吸引", "en": "Unlike magnetic poles attract each other"},
+   {"title": "地球磁场", "en": "Earth's magnetic field"},
+   {"title": "分子电流假说", "en": "Molecular current hypothesis"},
+   {"title": "物质的磁性", "en": "Magnetism of materials"},
+   {"title": "电荷的运动", "en": "Movement of charges"}
+]
+}

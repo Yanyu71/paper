@@ -1,0 +1,11 @@
+﻿[{
+"knowledge_points": [
+   {"title": "线偏振光", "en": "Linearly polarized light"},
+   {"title": "光矢量", "en": "Optical vector"},
+   {"title": "振动面", "en": "Plane of vibration"},
+   {"title": "平面偏振光", "en": "Plane polarized light"},
+   {"title": "横波", "en": "Transverse wave"},
+   {"title": "纵波", "en": "Longitudinal wave"},
+   {"title": "偏振性", "en": "Polarization"}
+]
+}]

@@ -1,0 +1,27 @@
+(波函数, Wave function): 161
+(简谐波, Simple harmonic wave): 66
+(振幅, Amplitude): 244
+(波源, Wave source): 181
+(频率, Frequency): 461
+(振动方程, Vibration equation): 51
+(相位差, Phase difference): 116
+(相速, Phase velocity): 3
+(初相位, Initial phase): 12
+(波传播速度, Wave propagation speed): 0
+(波速, Wave speed): 76
+(坐标取法, Coordinate method): 2
+(光学, Optics): 138
+(周期性波, Periodic wave): 5
+(波峰, Crest): 6
+(简谐波, Harmonic wave): 66
+(振动曲线, Vibration curve): 11
+(波形图, Waveform): 5
+(波沿轴传播, Propagation of waves along the axis): 0
+(波谷, Trough): 4
+(速度, Velocity): 1354
+(波形曲线, Waveform curve): 30
+(角波数, Wave number): 2
+(相位, Phase): 226
+(加速度, Acceleration): 397
+(周期, Period): 196
+(波长, Wavelength): 470

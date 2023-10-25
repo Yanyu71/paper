@@ -1,0 +1,66 @@
+﻿{
+"knowledge_points": [
+   {"title": "质心运动定理", "en": "Centroid motion theorem"},
+   {"title": "质心", "en": "Centroid"},
+   {"title": "质点系", "en": "System of particles"},
+   {"title": "动量", "en": "Momentum"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "合外力", "en": "Net external force"},
+   {"title": "代表点", "en": "Representative point"},
+   {"title": "运动规律", "en": "Motion law"},
+   {"title": "参考点", "en": "Reference point"},
+   {"title": "叠加", "en": "Superposition"},
+   {"title": "内力", "en": "Internal force"},
+   {"title": "动量守恒", "en": "Conservation of momentum"},
+   {"title": "静止", "en": "Rest"},
+   {"title": "勻速直线运动", "en": "Uniform linear motion"},
+   {"title": "分量", "en": "Component"},
+   {"title": "绳子", "en": "Rope"},
+   {"title": "高度", "en": "Height"},
+   {"title": "下降速度", "en": "Downward velocity"},
+   {"title": "作用力", "en": "Applied force"}
+]
+}{
+"knowledge_points": [
+   {"title": "例2.17", "en": "Example 2.17"},
+   {"title": "例2.25", "en": "Example 2.25"},
+   {"title": "图2.52", "en": "Figure 2.52"},
+   {"title": "图2.53", "en": "Figure 2.53"},
+   {"title": "质点系", "en": "Particle system"},
+   {"title": "内力", "en": "Internal force"},
+   {"title": "外力", "en": "External force"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "浮力", "en": "Buoyancy"},
+   {"title": "水的阻力", "en": "Water resistance"},
+   {"title": "质心运动定理", "en": "Centroid motion theorem"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "位置坐标", "en": "Position coordinates"},
+   {"title": "质量集中之处", "en": "Center of mass"},
+   {"title": "质心的位置", "en": "Position of centroid"},
+   {"title": "坐标轴", "en": "Coordinate axis"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"},
+   {"title": "碰撞现象", "en": "Collision phenomenon"},
+   {"title": "锻压", "en": "Forging"},
+   {"title": "打粧", "en": "Finishing"},
+   {"title": "微观角度", "en": "Microscopic perspective"},
+   {"title": "分子碰撞", "en": "Molecular collision"},
+   {"title": "物质结构", "en": "Material structure"},
+   {"title": "基本粒子", "en": "Elementary particle"},
+   {"title": "碰撞力", "en": "Collision force"},
+   {"title": "碰撞时间", "en": "Collision time"},
+   {"title": "动量守恒定律", "en": "Law of conservation of momentum"}
+]
+}{
+"knowledge_points": [
+   {"title": "碰撞", "en": "Collision"},
+   {"title": "完全弹性碰撞", "en": "Perfectly elastic collision"},
+   {"title": "非完全弹性碰撞", "en": "Inelastic collision"},
+   {"title": "完全非弹性碰撞", "en": "Perfectly inelastic collision"},
+   {"title": "总动能", "en": "Total kinetic energy"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "速度", "en": "Velocity"}
+]
+}

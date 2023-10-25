@@ -1,0 +1,70 @@
+(波函数, Wave function): 161
+(能级宽度, energy level width): 7
+(德布罗意波长, De Broglie wavelength): 13
+(电子速率, electron velocity): 4
+(矩阵力学, Matrix mechanics): 1
+(坐标和动量的不确定关系, Uncertainty relation between position and momentum): 1
+(德布罗意关系式, de Broglie relation): 5
+(激发态, Excited state): 28
+(能级稳定性, level stability): 0
+(经典力学规律, Classical mechanics laws): 2
+(能量, Energy): 637
+(辐射光的波长差, Wavelength difference of emitted light): 1
+(电视显像管, television cathode ray tube): 3
+(德布罗意假设, De Broglie hypothesis): 2
+(光子能量, Photon energy): 15
+(平均寿命, average lifetime): 6
+(波长, wavelength): 470
+(光谱线, spectral line): 29
+(质子, Proton): 112
+(经典力学中的粒子, Particles in classical mechanics): 1
+(玻尔理论, Bohr theory): 18
+(电子位置, electron position): 0
+(横向动量, Transverse momentum): 1
+(受激态能级宽度, width of excited state energy levels): 1
+(波动性, Wave-particle duality): 33
+(原子中的电子, Electrons in atoms): 4
+(辐射光子能量不确定度, Uncertainty of photon energy): 1
+(照相底片, Photographic film): 9
+(横向速度, Lateral velocity): 2
+(波数, Wave number): 8
+(加速电压, Accelerating voltage): 4
+(原子系统, atomic system): 4
+(电子, Electron): 699
+(能量和时间不确定关系, uncertainty relation between energy and time): 1
+(参, 参): 258
+(速度的不确定量, uncertainty of velocity): 3
+(经典力学, classical mechanics): 61
+(位置, Position): 452
+(角动量, Angular momentum): 186
+(光子动量, photon momentum): 1
+(光子位置坐标, photon position coordinates): 2
+(物理学, Physics): 160
+(不确定关系, Uncertainty principle): 23
+(一维定态薛定谔方程, One-dimensional stationary Schrödinger equation): 3
+(氢原子, Hydrogen atom): 75
+(动能, Kinetic energy): 357
+(枪口直径, Muzzle diameter): 1
+(电子轨道, electron orbit): 10
+(电子单缝衍射实验, Electron single-slit diffraction experiment): 1
+(经典力学, Classical mechanics): 61
+(经典粒子, classical particle): 1
+(电子横向速度, electron transverse velocity): 1
+(不确定量, Uncertainty): 18
+(平寧, 平寧): 1
+(微观粒子, Microscopic particle): 58
+(子弹质量, Bullet mass): 2
+(轨道, Orbit): 141
+(质点, Particle): 900
+(受激态, Stimulated state): 7
+(谐振子, Harmonic oscillator): 19
+(量子力学, Quantum mechanics): 32
+(粒子波动性, Particle wave nature): 1
+(微观世界, Microscopic world): 6
+(基态, Ground state): 40
+(动量, Momentum): 476
+(电子速度的不确定量, Uncertainty in electron velocity): 1
+(不确定度, uncertainty): 2
+(海森伯, Heisenberg): 3
+(波粒二象性, Wave-particle duality): 18
+(电子流强度, Electron intensity): 1

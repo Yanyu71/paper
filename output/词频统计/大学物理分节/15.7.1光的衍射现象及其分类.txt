@@ -1,0 +1,11 @@
+(远场衍射, Far-field diffraction): 1
+(光的衍射现象, Diffraction of light): 2
+(光学衍射实验系统, Optical diffraction experimental system): 1
+(夫琅禾费衍射, Fraunhofer diffraction): 2
+(光波波面的曲率, Curvature of light wavefront): 2
+(衍射问题的研究重点, Research focus on diffraction problems): 0
+(近场衍射, Near-field diffraction): 1
+(明暗相间的条纹, Bright and dark fringes): 0
+(光的直线传播行为, Straight propagation of light): 0
+(菲涅耳衍射, Fresnel diffraction): 2
+(光线绕过障碍物, Light bending around obstacles): 0

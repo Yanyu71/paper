@@ -1,0 +1,25 @@
+﻿[{
+"knowledge_points": [
+   {"title": "刚体", "en": "Rigid body"},
+   {"title": "重力势能", "en": "Gravitational potential energy"},
+   {"title": "保守力", "en": "Conservative force"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "地球", "en": "Earth"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "高度", "en": "Height"},
+   {"title": "零势能面", "en": "Zero potential energy surface"},
+   {"title": "质心", "en": "Center of mass"}
+]
+},{
+"knowledge_points": [
+   {"title": "刚体", "en": "Rigid body"},
+   {"title": "重力势能", "en": "Gravitational potential energy"},
+   {"title": "保守力", "en": "Conservative force"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "地球", "en": "Earth"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "高度", "en": "Height"},
+   {"title": "零势能面", "en": "Zero potential energy surface"},
+   {"title": "质心", "en": "Center of mass"}
+]
+}]

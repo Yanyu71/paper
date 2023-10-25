@@ -1,0 +1,65 @@
+(单位长度, unit length): 33
+(圆柱导体, Cylindrical conductor): 16
+(安培, ampere): 129
+(相互作用力, Interaction force): 27
+(超导材料, Superconducting material): 1
+(相互作用力, interaction force): 27
+(距离, distance): 387
+(磁力, Magnetic force): 63
+(半圆弧, Semicircle): 10
+(安培力公式, Ampere's law): 13
+(功, Work): 633
+(磁力矩, Magnetic torque): 34
+(坐标系, Coordinate system): 106
+(磁感应强度, magnetic induction): 258
+(线圈, Coil): 347
+(伏特计, Voltmeter): 1
+(矢量积分, Vector integration): 5
+(力矩, torque): 223
+(稳定平衡状态, Stable equilibrium state): 4
+(磁力矩最大, Maximum magnetic moment): 1
+(磁力作功, Magnetic work): 3
+(导线, Wire): 327
+(非均匀磁场, Non-uniform magnetic field): 5
+(电磁推进, Electromagnetic propulsion): 2
+(安培力, Ampere's force): 61
+(导线, wire): 327
+(载流导线, Current-carrying wire): 35
+(磁矩, magnetic moment): 131
+(平行导轨, Parallel rails): 2
+(磁电式电流计, Electrodynamometer): 2
+(磁矩, Magnetic moment): 131
+(无限长直导线, Infinite straight wire): 8
+(磁偶极子, Magnetic dipole): 7
+(引力, attraction): 183
+(平面载流线圈, Planar current loop): 5
+(载流细直导线, Current-carrying straight wire): 1
+(矩形线圈, Rectangular coil): 11
+(轨道炮, Railgun): 3
+(势能, Potential energy): 272
+(直角坐标系, Cartesian coordinate system): 27
+(磁感应强度, Magnetic induction): 258
+(单位, Unit): 286
+(磁场, Magnetic field): 738
+(电磁泵, Electromagnetic pump): 6
+(电磁推进器, Electromagnetic thruster): 1
+(安培计, Ammeter): 1
+(斥力, repulsion): 12
+(电流强度, current intensity): 21
+(不稳定平衡状态, Unstable equilibrium state): 2
+(载流线圈, current-carrying coil): 46
+(载流线圈, Current-carrying coil): 46
+(电流元, Current element): 80
+(电流, Current): 643
+(微小扰动, Small disturbance): 2
+(力矩, Torque): 223
+(磁场, magnetic field): 738
+(安培力, Ampere force): 61
+(总作用力, Total force): 2
+(夹角, Angle): 111
+(磁场力, Magnetic force): 20
+(圆电流, Circular current): 16
+(磁力矩, Magnetic moment): 34
+(安培力计算, Ampere's force calculation): 0
+(真空磁导率, vacuum permeability): 3
+(安培力公式, Ampere's force formula): 13

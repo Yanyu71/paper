@@ -1,0 +1,127 @@
+﻿[{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "旋转矢量表示法", "en": "Rotational vector representation"},
+   {"title": "复数表示法", "en": "Complex number representation"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "运动学方程", "en": "Kinematic equation"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "平衡位置", "en": "Equilibrium position"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "超前", "en": "Ahead"},
+   {"title": "平衡位置", "en": "Equilibrium position"},
+   {"title": "旋转矢量法", "en": "Rotational vector method"},
+   {"title": "运动学问题", "en": "Kinematics problem"},
+   {"title": "几何关系", "en": "Geometric relationship"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "旋转矢量表示法", "en": "Rotational vector representation"},
+   {"title": "复数表示法", "en": "Complex number representation"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "运动学方程", "en": "Kinematic equation"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "平衡位置", "en": "Equilibrium position"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "超前", "en": "Ahead"},
+   {"title": "平衡位置", "en": "Equilibrium position"},
+   {"title": "旋转矢量法", "en": "Rotational vector method"},
+   {"title": "运动学问题", "en": "Kinematics problem"},
+   {"title": "几何关系", "en": "Geometric relationship"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "旋转矢量表示法", "en": "Rotational vector representation"},
+   {"title": "复数表示法", "en": "Complex number representation"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "运动学方程", "en": "Kinematic equation"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "平衡位置", "en": "Equilibrium position"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "超前", "en": "Ahead"},
+   {"title": "平衡位置", "en": "Equilibrium position"},
+   {"title": "旋转矢量法", "en": "Rotational vector method"},
+   {"title": "运动学问题", "en": "Kinematics problem"},
+   {"title": "旋转矢量图", "en": "Rotational vector diagram"},
+   {"title": "几何关系", "en": "Geometric relationship"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "旋转矢量表示法", "en": "Rotational vector representation"},
+   {"title": "复数表示法", "en": "Complex number representation"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "运动学方程", "en": "Kinematic equation"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "平衡位置", "en": "Equilibrium position"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "超前", "en": "Ahead"},
+   {"title": "平衡位置", "en": "Equilibrium position"},
+   {"title": "旋转矢量法", "en": "Rotational vector method"},
+   {"title": "运动学问题", "en": "Kinematics problem"},
+   {"title": "旋转矢量图", "en": "Rotational vector diagram"},
+   {"title": "几何关系", "en": "Geometric relationship"}
+]
+},{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "旋转矢量表示法", "en": "Rotational vector representation"},
+   {"title": "复数表示法", "en": "Complex number representation"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "运动学方程", "en": "Kinematic equation"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "平衡位置", "en": "Equilibrium position"}
+]
+},{"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "超前", "en": "Ahead"},
+   {"title": "平衡位置", "en": "Equilibrium position"},
+   {"title": "旋转矢量法", "en": "Rotational vector method"},
+   {"title": "运动学问题", "en": "Kinematics problem"},
+   {"title": "旋转矢量图", "en": "Rotational vector diagram"},
+   {"title": "几何关系", "en": "Geometric relationship"}
+]}]

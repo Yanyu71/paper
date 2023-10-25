@@ -1,0 +1,4 @@
+(碰撞前后动能, Kinetic energy before and after collision)
+(动能损失, Loss of kinetic energy)
+(系统动量守恒, Conservation of system momentum)
+(完全非弹性碰撞, Completely inelastic collision)

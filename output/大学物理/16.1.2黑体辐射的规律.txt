@@ -1,0 +1,40 @@
+﻿{
+"knowledge_points": [
+   {"title": "黑体辐射", "en": "Blackbody radiation"},
+   {"title": "电磁波", "en": "Electromagnetic waves"},
+   {"title": "吸收", "en": "Absorption"},
+   {"title": "反射", "en": "Reflection"},
+   {"title": "透射", "en": "Transmission"},
+   {"title": "辐射本领", "en": "Radiation power"},
+   {"title": "单色辐出度", "en": "Monochromatic emissivity"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "材料", "en": "Material"},
+   {"title": "形状", "en": "Shape"},
+   {"title": "表面状况", "en": "Surface condition"},
+   {"title": "热辐射", "en": "Thermal radiation"},
+   {"title": "自然界", "en": "Nature"},
+   {"title": "理想黑体", "en": "Ideal blackbody"},
+   {"title": "模型", "en": "Model"},
+   {"title": "观测炉温", "en": "Observing furnace temperature"},
+   {"title": "峰值波长", "en": "Peak wavelength"},
+   {"title": "短波成分", "en": "Shortwave component"},
+   {"title": "斯特藩-玻耳兹曼定律", "en": "Stefan-Boltzmann law"},
+   {"title": "维恩位移定律", "en": "Wien's displacement law"},
+   {"title": "热力学温度", "en": "Thermodynamic temperature"},
+   {"title": "斯特藩-玻耳兹曼常量", "en": "Stefan-Boltzmann constant"},
+   {"title": "能量", "en": "Energy"}
+]
+}{
+"knowledge_points": [
+   {"title": "热力学温度", "en": "Thermodynamic temperature"},
+   {"title": "辐射能", "en": "Radiation energy"},
+   {"title": "维恩位移定律", "en": "Wien's displacement law"},
+   {"title": "黑体辐射", "en": "Blackbody radiation"},
+   {"title": "维恩常量", "en": "Wien constant"},
+   {"title": "斯特藩-玻耳兹曼定律", "en": "Stefan-Boltzmann law"},
+   {"title": "太阳表面温度", "en": "Temperature of the sun's surface"},
+   {"title": "太阳辐出度", "en": "Solar radiance"},
+   {"title": "地球表面接收到的辐射能", "en": "Radiation energy received by the Earth's surface"}
+]
+}

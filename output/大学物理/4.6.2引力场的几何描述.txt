@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "广义相对论", "en": "General relativity"},
+   {"title": "引力场", "en": "Gravitational field"},
+   {"title": "时空背景", "en": "Spacetime background"},
+   {"title": "物质的分布与运动", "en": "Distribution and motion of matter"},
+   {"title": "时空弯曲性质", "en": "Curvature of spacetime"},
+   {"title": "黎曼几何", "en": "Riemannian geometry"},
+   {"title": "引力场方程", "en": "Gravitational field equations"},
+   {"title": "牛顿力学", "en": "Newtonian mechanics"},
+   {"title": "弱引力场", "en": "Weak gravitational field"},
+   {"title": "低速情况", "en": "Low-speed situation"},
+   {"title": "自由落体运动", "en": "Free fall motion"},
+   {"title": "测地线", "en": "Geodesic"},
+   {"title": "狭义相对论", "en": "Special relativity"},
+   {"title": "时间", "en": "Time"},
+   {"title": "空间", "en": "Space"}
+]
+}

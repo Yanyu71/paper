@@ -1,0 +1,66 @@
+(匀速直线运动, Uniform linear motion): 2
+(动量守恒定律, Law of conservation of momentum): 1
+(天花板, Ceiling): 2
+(计算, Calculation): 7
+(元位移, Element displacement): 4
+(微积分, Calculus): 2
+(合力, Resultant Force): 3
+(作功, Work): 7
+(静止, Rest): 3
+(功的定义, Definition of work): 1
+(总功, Total Work): 5
+(基本定义, Basic definition): 1
+(功, Work): 51
+(位移, Displacement): 12
+(合力为零, Net force is zero): 1
+(牛顿第二定律, Newton's second law of motion): 1
+(标量, Scalar): 1
+(参考系的选择, Choice of reference frame): 0
+(直角坐标系, Cartesian Coordinate System): 0
+(基本概念, Basic concepts): 1
+(机械运动能量, Mechanical kinetic energy): 1
+(基本思想, Basic idea): 1
+(动能定理, Law of kinetic energy): 2
+(运动状态的变化, Change in motion state): 1
+(牛顿运动定律, Newton's laws of motion): 0
+(恒力, Constant Force): 8
+(机械能守恒定律, Law of conservation of mechanical energy): 1
+(物体的运动过程, Object's motion process): 1
+(惯性系和非惯性系, Inertial and non-inertial reference frames): 0
+(质点静止, Stationary particle): 0
+(力学相对性原理, Principle of Relativity in Mechanics): 2
+(功率, Power): 2
+(力, Force): 62
+(变力, Variable Force): 6
+(切削力, Cutting force): 2
+(负荷力, Load force): 1
+(动量定理, Law of momentum): 1
+(力的大小, Magnitude of force): 0
+(曲线运动, Curvilinear Motion): 2
+(惯性系, Inertial reference frame): 10
+(能量变化, Change in energy): 1
+(元功, Elemental Work): 5
+(坐标, Coordinate): 3
+(路径, Path): 6
+(功与能, Work and energy): 1
+(速度, Velocity): 6
+(重力, Gravity): 7
+(柔绳, Flexible rope): 1
+(运行速度, Operating speed): 1
+(质量, Mass): 2
+(质点, Particle): 18
+(直线运动, Linear motion): 6
+(物理量, Physical quantity): 4
+(功的定义, Definition of Work): 1
+(普适定义, General Definition): 2
+(变曲线积分, Curve Integral): 1
+(元位移, Elemental Displacement): 4
+(牵引力, Traction force): 1
+(牛顿第三定律, Newton's third law of motion): 1
+(力的作用, Action of force): 2
+(夹角, Angle): 3
+(加速度, Acceleration): 3
+(时间, Time): 4
+(坐标, Coordinates): 3
+(水滴落下, Dropping of water droplets): 0
+(基本方法, Basic method): 0

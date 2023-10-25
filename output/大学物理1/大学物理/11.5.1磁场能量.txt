@@ -1,0 +1,51 @@
+﻿[{
+"knowledge_points": [
+   {"title": "磁场能量", "en": "Magnetic field energy"},
+   {"title": "电场能量", "en": "Electric field energy"},
+   {"title": "电容器", "en": "Capacitor"},
+   {"title": "电能", "en": "Electric energy"},
+   {"title": "电场能量密度", "en": "Electric field energy density"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "回路", "en": "Circuit"},
+   {"title": "自感", "en": "Self-inductance"},
+   {"title": "互感", "en": "Mutual inductance"},
+   {"title": "电动势", "en": "Electromotive force"},
+   {"title": "焦耳热", "en": "Joule heat"},
+   {"title": "线圈", "en": "Coil"},
+   {"title": "全电路欧姆定律", "en": "Ohm's law for the entire circuit"},
+   {"title": "元功", "en": "Elemental work"},
+   {"title": "能量转换守恒定律", "en": "Law of conservation of energy conversion"},
+   {"title": "电阻", "en": "Resistor"},
+   {"title": "储藏", "en": "Storage"},
+   {"title": "开关", "en": "Switch"},
+   {"title": "稳定值", "en": "Steady value"},
+   {"title": "自感线圈", "en": "Self-inductance coil"},
+   {"title": "磁场能量", "en": "Magnetic field energy"},
+   {"title": "通有电流", "en": "Current-carrying"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁场能量", "en": "Magnetic field energy"},
+   {"title": "电场能量", "en": "Electric field energy"},
+   {"title": "电容器", "en": "Capacitor"},
+   {"title": "电能", "en": "Electric energy"},
+   {"title": "电场能量密度", "en": "Electric field energy density"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "回路", "en": "Circuit"},
+   {"title": "自感", "en": "Self-inductance"},
+   {"title": "互感", "en": "Mutual inductance"},
+   {"title": "电动势", "en": "Electromotive force"},
+   {"title": "焦耳热", "en": "Joule heat"},
+   {"title": "线圈", "en": "Coil"},
+   {"title": "全电路欧姆定律", "en": "Ohm's law for the entire circuit"},
+   {"title": "元功", "en": "Elemental work"},
+   {"title": "能量转换守恒定律", "en": "Law of conservation of energy conversion"},
+   {"title": "电阻", "en": "Resistor"},
+   {"title": "储藏", "en": "Storage"},
+   {"title": "开关", "en": "Switch"},
+   {"title": "稳定值", "en": "Steady value"},
+   {"title": "自感线圈", "en": "Self-inductance coil"},
+   {"title": "磁场能量", "en": "Magnetic field energy"},
+   {"title": "通有电流", "en": "Current-carrying"}
+]
+}]

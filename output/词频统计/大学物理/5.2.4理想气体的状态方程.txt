@@ -1,0 +1,10 @@
+(温度, Temperature): 370
+(气体分子数密度, Gas molecule number density): 2
+(摩尔质量, Molar mass): 17
+(状态方程, State equation): 30
+(理想气体, Ideal gas): 176
+(压强, Pressure): 132
+(独立, Independent): 41
+(体积, Volume): 169
+(玻耳兹曼常量, Boltzmann constant): 3
+(状态参量, State parameters): 22

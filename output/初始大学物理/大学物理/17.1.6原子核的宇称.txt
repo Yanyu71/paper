@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "宇称", "en": "parity"},
+   {"title": "微观粒子和粒子系统", "en": "microscopic particles and particle systems"},
+   {"title": "原子核状态的宇称", "en": "parity of nuclear states"},
+   {"title": "核反应或核衰变", "en": "nuclear reactions or decays"},
+   {"title": "原子核基态和激发态宇称", "en": "parity of nuclear ground and excited states"},
+   {"title": "粒子系统的宇称守恒定律", "en": "parity conservation law for particle systems"},
+   {"title": "同位素", "en": "isotope"},
+   {"title": "同中子异位素", "en": "isotopes with the same number of neutrons"},
+   {"title": "同量异位素", "en": "isotopes with the same number of nucleons"},
+   {"title": "核自旋", "en": "nuclear spin"},
+   {"title": "磁矩", "en": "magnetic moment"},
+   {"title": "中子的磁矩", "en": "magnetic moment of neutrons"},
+   {"title": "质子的磁矩", "en": "magnetic moment of protons"},
+   {"title": "原子序数很大的原子核的不稳定性", "en": "instability of atomic nuclei with large atomic numbers"},
+   {"title": "结合能", "en": "binding energy"},
+   {"title": "原子核应用技术", "en": "applications of nuclear technology"}
+]
+}

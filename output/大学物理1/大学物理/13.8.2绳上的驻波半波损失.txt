@@ -1,0 +1,51 @@
+﻿[{
+"knowledge_points": [
+   {"title": "驻波", "en": "Standing wave"},
+   {"title": "绳中驻波", "en": "Standing waves in a rope"},
+   {"title": "波节", "en": "Node"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "本征频率", "en": "Natural frequency"},
+   {"title": "基频", "en": "Fundamental frequency"},
+   {"title": "谐频", "en": "Harmonic frequency"},
+   {"title": "共振", "en": "Resonance"},
+   {"title": "驻波图样", "en": "Standing wave pattern"},
+   {"title": "频闪照片", "en": "Stroboscopic photograph"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波程差", "en": "Path difference"}
+]
+},{
+"knowledge_points": [
+   {"title": "半波损失", "en": "Half-wave loss"},
+   {"title": "驻波", "en": "Standing wave"},
+   {"title": "波腹", "en": "Antinode"},
+   {"title": "波节", "en": "Node"},
+   {"title": "声速", "en": "Speed of sound"},
+   {"title": "驻波条件", "en": "Standing wave condition"},
+   {"title": "驻波方程", "en": "Standing wave equation"},
+   {"title": "相干波", "en": "Coherent waves"},
+   {"title": "波动方程", "en": "Wave equation"},
+   {"title": "多普勒效应", "en": "Doppler effect"}
+]
+},{
+"knowledge_points": [
+   {"title": "行波", "en": "Progressive wave"},
+   {"title": "驻波", "en": "Standing wave"},
+   {"title": "特点", "en": "Characteristics"},
+   {"title": "能量传播", "en": "Energy propagation"},
+   {"title": "图13.30", "en": "Figure 13.30"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "分布", "en": "Distribution"},
+   {"title": "小提琴弦", "en": "Violin string"},
+   {"title": "弦长", "en": "String length"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "基频", "en": "Fundamental frequency"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "张力", "en": "Tension"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "声波", "en": "Sound wave"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "多普勒效应", "en": "Doppler effect"}
+]
+}]

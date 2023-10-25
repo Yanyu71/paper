@@ -1,0 +1,12 @@
+(波函数, wave function): 2
+(维管, tube): 1
+(相互碰撞, collision): 1
+(薛定谔方程, Schrödinger equation): 3
+(一维无限深势阱, one-dimensional infinite square well): 0
+(定态薛定谔方程, stationary Schrödinger equation): 1
+(势能函数, potential function): 1
+(通解, general solution): 1
+(边界条件, boundary condition): 0
+(归一化条件, normalization condition): 1
+(正离子晶格点阵, regular lattice of positive ions): 1
+(金属表面, metal surface): 3

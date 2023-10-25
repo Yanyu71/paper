@@ -1,0 +1,38 @@
+(波的吸收, Wave absorption): 4
+(动能转换, Kinetic energy conversion): 1
+(室内噪声, Indoor noise): 1
+(工作影响, Impact on work): 0
+(噪声显示牌, Noise display board): 1
+(通常谈话, Normal conversation): 1
+(聚焦超声波, Focused ultrasound): 1
+(声功率, Sound power): 2
+(波的叠加原理, Principle of wave superposition): 1
+(声强级, Sound intensity level): 7
+(能量守恒定律, Law of conservation of energy): 1
+(分贝, Decibel): 2
+(飞机起飞, Airplane takeoff): 1
+(位移最大处, Maximum displacement): 1
+(地震, Earthquake): 1
+(波的传播, Wave propagation): 0
+(噪声源, Noise source): 1
+(声强, Sound intensity): 21
+(声波吸收, Sound absorption): 0
+(能量传递, Energy transfer): 0
+(听觉阈, Auditory threshold): 1
+(简谐横波, Transverse harmonic wave): 1
+(波强度, Wave intensity): 0
+(动能和势能, Kinetic energy and potential energy): 1
+(波的干涉, Wave interference): 1
+(噪声污染, Noise pollution): 2
+(听觉损害, Hearing damage): 0
+(消声设备, Soundproofing equipment): 1
+(吸收系数, Absorption coefficient): 1
+(势能转换, Potential energy conversion): 1
+(介质, Medium): 13
+(闹市车声, City traffic noise): 1
+(低语, Whisper): 1
+(能量密度, Energy density): 1
+(高频噪声, High-frequency noise): 1
+(波的强度, Wave intensity): 6
+(声波散射, Sound scattering): 0
+(摇滚乐, Rock music): 1

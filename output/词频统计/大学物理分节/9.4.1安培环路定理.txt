@@ -1,0 +1,23 @@
+(右手螺旋法则, Right-hand rule): 3
+(安培环路定理, Ampere's Circuital Law): 12
+(稳恒磁场, Steady magnetic field): 4
+(变化的磁场, Changing magnetic field): 3
+(闭合路径, Closed path): 17
+(稳恒电流, Steady current): 2
+(无旋场, Irrotational field): 2
+(验证, Verification): 3
+(直线电流, Straight current): 4
+(环流, Loop current): 11
+(有旋场, Rotational field): 2
+(保守场, Conservative field): 1
+(无限长载流直导线, Infinite straight current-carrying wire): 4
+(电流, Electric current): 24
+(静电场, Electric field): 4
+(线积分, Line integral): 3
+(磁场的高斯定理, Gauss's law for magnetism): 1
+(垂直平面, Vertical plane): 0
+(环流, Circulation): 11
+(磁感应强度, Magnetic induction): 7
+(安培环路定理, Ampere's circuital law): 12
+(静电场, Static electric field): 4
+(真空磁导率, Vacuum permeability): 1

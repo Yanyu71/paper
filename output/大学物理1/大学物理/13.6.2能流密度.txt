@@ -1,0 +1,52 @@
+﻿[{
+"knowledge_points": [
+   {"title": "能流密度", "en": "Energy flux density"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "波", "en": "Wave"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "矢量", "en": "Vector"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "球面波", "en": "Spherical wave"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "波面", "en": "Wavefront"},
+   {"title": "吸收能量", "en": "Absorb energy"},
+   {"title": "波动方程", "en": "Wave equation"},
+   {"title": "平面波", "en": "Plane wave"}
+]
+},{
+"knowledge_points": [
+   {"title": "能流密度", "en": "Energy flux density"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "波", "en": "Wave"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "矢量", "en": "Vector"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "球面波", "en": "Spherical wave"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "波面", "en": "Wavefront"},
+   {"title": "吸收能量", "en": "Absorb energy"},
+   {"title": "波动方程", "en": "Wave equation"},
+   {"title": "平面波", "en": "Plane wave"}
+]
+},{
+"knowledge_points": [
+   {"title": "能流密度", "en": "Energy flux density"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "波", "en": "Wave"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "矢量", "en": "Vector"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "球面波", "en": "Spherical wave"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "波面", "en": "Wavefront"},
+   {"title": "吸收能量", "en": "Absorb energy"},
+   {"title": "波动方程", "en": "Wave equation"},
+   {"title": "平面波", "en": "Plane wave"}
+]
+}]

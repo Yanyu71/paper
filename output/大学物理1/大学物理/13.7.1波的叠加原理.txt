@@ -1,0 +1,11 @@
+﻿[{
+"knowledge_points": [
+   {"title": "波的叠加原理", "en": "Principle of superposition of waves", "type": "", "description": ""},
+   {"title": "交响乐队演奏", "en": "Symphony orchestra performance", "type": "例子", "description": "人们能分辨出不同乐器的声音"},
+   {"title": "多人同时讲话", "en": "Multiple people speaking at the same time", "type": "例子", "description": "人们可以分辨出每个人讲话的声音"},
+   {"title": "电视节目选择", "en": "TV program selection", "type": "例子", "description": "人们可以选择地收看、收听自己喜欢的任一套节目"},
+   {"title": "波的干涉", "en": "Wave interference", "type": "", "description": ""},
+   {"title": "波的强度", "en": "Wave intensity", "type": "", "description": ""},
+   {"title": "线性微分方程", "en": "Linear differential equation", "type": "", "description": ""}
+]
+}]

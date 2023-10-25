@@ -1,0 +1,110 @@
+(次级明纹, Secondary maximum): 5
+(单缝衍射, Single slit diffraction): 9
+(衍射角, Diffraction angle): 9
+(凹光栅, Concave grating): 1
+(物镜直径, Objective lens diameter): 2
+(望远镜, Telescope): 11
+(光源波长, Wavelength of the light source): 1
+(圆心角, Central angle): 1
+(相位差, Phase difference): 1
+(分辨本领, Resolution capability): 7
+(透镜, Lens): 7
+(最小分辨角的大小, Size of the minimum resolvable angle): 1
+(反射光栅, Reflection grating): 2
+(衍射明条纹, Bright fringes in diffraction): 2
+(衍射暗条纹, Dark fringes in diffraction): 0
+(光强, Intensity): 16
+(单色仪, Monochromator): 1
+(半角宽度, Half-angle width): 2
+(光强公式, Intensity formula): 1
+(多边形, Polygon): 1
+(斜入射情况下的衍射条纹, Diffraction fringes in oblique incidence): 1
+(双星, Binary stars): 1
+(入射光的波长, Wavelength of the incident light): 1
+(衍射效应, Diffraction effect): 3
+(振幅叠加方法, Amplitude superposition method): 1
+(全息光栅, Holographic grating): 0
+(惠更斯-菲涅耳原理, Huygens-Fresnel principle): 1
+(人眼的最小分辨角, Minimum resolution angle of the human eye): 1
+(望远镜口径, Telescope aperture): 0
+(艾里斑, Airy disk): 11
+(菲涅尔衍射, Fresnel diffraction): 1
+(光强, Light intensity): 16
+(二维光栅, Two-dimensional grating): 1
+(入射光波波长, Wavelength of incident light waves): 1
+(月球表面, Lunar surface): 1
+(衍射图样, Diffraction pattern): 10
+(角宽度, Angular width): 4
+(瑞利判据, Rayleigh criterion): 1
+(干涉, Interference): 5
+(单缝夫琅禾费衍射, Single slit Fraunhofer diffraction): 4
+(合成振动的振幅, Amplitude of the composite vibration): 0
+(瞳孔直径, Pupil diameter): 2
+(光振动, Light vibration): 6
+(临界距离, Critical distance): 1
+(最小线距离, Minimum line distance): 2
+(放大率, Magnification): 5
+(白光, White light): 1
+(同心明环和暗环, Concentric bright and dark rings): 1
+(衍射现象, Diffraction phenomenon): 1
+(夫琅禾费衍射, Fresnel diffraction): 9
+(可见光, Visible light): 2
+(明亮的圆斑, Bright central spot): 1
+(光学仪器的分辨本领, Resolution capability of the optical instrument): 2
+(地日距离, Distance between Earth and Sun): 1
+(电子束, Electron beam): 1
+(衍射光栅, Diffraction grating): 1
+(蓝光, Blue light): 1
+(缝宽, Slit width): 1
+(电子显微镜, Electron microscope): 1
+(红光, Red light): 1
+(波长, Wavelength): 17
+(线距离, Line distance): 2
+(单狭缝, Single slit): 1
+(一维光栅, One-dimensional grating): 1
+(式(15.63), Equation (15.63): 0
+(光学显微镜, Optical microscope): 1
+(夫琅禾费圆孔衍射, Fraunhofer diffraction of circular aperture): 1
+(波长关系, Relationship between wavelengths): 1
+(角间距, Angular separation): 0
+(透射光栅, Transmission grating): 1
+(仪器成像质量, Imaging quality of instruments): 1
+(光强分布特点, Characteristics of light intensity distribution): 1
+(线宽度, Line width): 4
+(光的波动性, Wave nature of light): 0
+(衍射屏, Diffraction screen): 3
+(视网膜, Retina): 2
+(声波, Sound wave): 1
+(光学仪器的孔径, Aperture of the optical instrument): 2
+(光程差, Optical path difference): 1
+(眼睹, Perceive): 0
+(圆孔直径, Diameter of the aperture): 1
+(艾里斑的半径, Radius of Airy disk): 1
+(衍射, Diffraction): 67
+(透镜焦距, Lens focal length): 0
+(暗纹条件, Dark fringe condition): 1
+(圆心, Center of the circle): 2
+(透镜口径, Lens aperture): 0
+(地月距离, Distance between Earth and Moon): 1
+(明纹, Bright fringe): 22
+(超越方程, Transcendental equation): 2
+(最小分辨角, Minimum resolvable angle): 9
+(最小分辨角的计算, Calculation of the minimum resolvable angle): 0
+(三维光栅, Three-dimensional grating): 1
+(分辨率, Resolution): 3
+(夫琅禾费衍射, Fraunhofer diffraction): 9
+(光学精密测量仪器, Optical precision measuring instrument): 1
+(波面, Wavefront): 1
+(次波源, Secondary source): 6
+(半径, Radius): 2
+(迎面驶来的汽车的两盏前灯相距, The distance between the two headlights of an oncoming car): 1
+(光谱仪, Spectrometer): 1
+(光轴方向, Optical axis direction): 1
+(衍射极小, Diffraction minima): 5
+(明纹宽度, Width of bright fringes): 3
+(衍射因子, Diffraction factor): 1
+(垂直入射, Vertical incidence): 1
+(振幅矢量叠加, Amplitude vector superposition): 1
+(无线电波, Radio wave): 1
+(主极大, Principal maximum): 1
+(暗纹之间的距离, Distance between dark fringes): 1

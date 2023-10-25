@@ -1,0 +1,84 @@
+﻿{
+"knowledge_points": [
+   {"title": "迈克耳孙干涉仪", "en": "Michelson interferometer"},
+   {"title": "干涉仪", "en": "interferometer"},
+   {"title": "光的干涉原理", "en": "principle of interference of light"},
+   {"title": "相干光", "en": "coherent light"},
+   {"title": "以太风", "en": "ether wind"},
+   {"title": "光谱的精细结构", "en": "fine structure of spectrum"},
+   {"title": "光的波长", "en": "wavelength of light"},
+   {"title": "标准米尺", "en": "standard meter"},
+   {"title": "基本原理", "en": "basic principle"},
+   {"title": "平面反射镜", "en": "plane mirror"},
+   {"title": "平面玻璃板", "en": "plane glass plate"},
+   {"title": "分光板", "en": "beam splitter"},
+   {"title": "补偿板", "en": "compensating plate"},
+   {"title": "复色光", "en": "polychromatic light"},
+   {"title": "单色平行光", "en": "monochromatic parallel light"},
+   {"title": "透镜", "en": "lens"},
+   {"title": "光波", "en": "light wave"},
+   {"title": "干涉", "en": "interference"},
+   {"title": "空气薄膜", "en": "air film"},
+   {"title": "焦平面", "en": "focal plane"},
+   {"title": "观测屏幕", "en": "observation screen"},
+   {"title": "干涉条纹", "en": "interference fringes"},
+   {"title": "亮点", "en": "bright spot"},
+   {"title": "干涉级", "en": "interference order"}
+]
+}{
+"knowledge_points": [
+   {"title": "迈克耳孙干涉仪", "en": "Michelson interferometer"},
+   {"title": "时间相干性", "en": "temporal coherence"},
+   {"title": "干涉条纹", "en": "interference fringes"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "微小距离", "en": "small distance"},
+   {"title": "视场", "en": "field of view"},
+   {"title": "光波", "en": "light wave"},
+   {"title": "长度测量", "en": "length measurement"},
+   {"title": "空气劈尖", "en": "air wedge"},
+   {"title": "等厚条纹", "en": "equidistant fringes"},
+   {"title": "光程差", "en": "optical path difference"},
+   {"title": "入射角", "en": "incident angle"},
+   {"title": "亮纹", "en": "bright fringe"},
+   {"title": "暗纹", "en": "dark fringe"},
+   {"title": "光电自动计数器", "en": "photoelectric automatic counter"},
+   {"title": "镉红线", "en": "cadmium red line"},
+   {"title": "精度", "en": "precision"},
+   {"title": "待测物质", "en": "test substance"},
+   {"title": "厚度", "en": "thickness"},
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "光谱的精细结构", "en": "fine structure of spectrum"},
+   {"title": "薄膜的厚度", "en": "thickness of thin film"},
+   {"title": "物质折射率的测量", "en": "measurement of refractive index of material"},
+   {"title": "光速", "en": "speed of light"},
+   {"title": "诺贝尔物理学奖", "en": "Nobel Prize in Physics"}
+]
+}{
+"knowledge_points": [
+   {"title": "迈克耳孙干涉仪", "en": "Michelson interferometer"},
+   {"title": "光程差", "en": "optical path difference"},
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "干涉条纹", "en": "interference fringes"},
+   {"title": "波长差", "en": "wavelength difference"}
+]
+}{
+"knowledge_points": [
+   {"title": "钠光", "en": "Sodium light"},
+   {"title": "平均波长", "en": "Average wavelength"},
+   {"title": "双线波长", "en": "Doublet wavelength"},
+   {"title": "单色性", "en": "Monochromaticity"},
+   {"title": "迈克尔孙干涉仪", "en": "Michelson interferometer"},
+   {"title": "相干光", "en": "Coherent light"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "干涉条纹", "en": "Interference fringes"},
+   {"title": "入射光波长", "en": "Incident light wavelength"},
+   {"title": "微小物体尺寸", "en": "Size of small objects"},
+   {"title": "透明介质折射率", "en": "Refractive index of transparent medium"},
+   {"title": "光路长度变化", "en": "Change in optical path length"},
+   {"title": "等倾干涉圆纹", "en": "Equal inclination interference fringes"},
+   {"title": "明圆纹", "en": "Bright fringes"},
+   {"title": "暗圆纹", "en": "Dark fringes"},
+   {"title": "动臂移动", "en": "Arm movement"},
+   {"title": "波长差", "en": "Wavelength difference"}
+]
+}

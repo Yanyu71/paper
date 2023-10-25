@@ -1,0 +1,22 @@
+(振幅, Amplitude): 244
+(测定超声波, Measuring ultrasonic waves): 1
+(频率, Frequency): 461
+(频率差, Frequency difference): 0
+(拍现象, Beating phenomenon): 6
+(合矢量, Resultant vector): 11
+(振幅调制, Amplitude modulation): 1
+(拍频, Beat frequency): 7
+(位移, Displacement): 214
+(余弦因子, Cosine factor): 1
+(音叉, Tuning fork): 10
+(测定无线电波频率, Measuring radio wave frequency): 0
+(同方向不同频率谐振动, Harmonic oscillations with different frequencies in the same direction): 1
+(角频率, Angular frequency): 40
+(拍, Beat): 23
+(夹角, Angle): 111
+(初相, Phase): 68
+(音乐声学, Acoustics of music): 1
+(周期, Period): 196
+(校准乐器, Calibrating musical instruments): 1
+(旋转矢量法, Rotating vector method): 7
+(合成拍, Beat synthesis): 1

@@ -1,0 +1,26 @@
+(磁通匝链数, Magnetic flux linkage): 9
+(感应电动势, induced electromotive force): 45
+(感应电荷, Induced charge): 12
+(锐角和钝角, Acute angle and obtuse angle): 0
+(回路中的感应电动势, induced electromotive force in a circuit): 2
+(能量守恒定律, Law of conservation of energy): 19
+(动生电动势, dynamic induced electromotive force): 28
+(电动势方向判断步骤, Steps to determine the direction of electromotive force): 0
+(载流线圈中的磁通量随时间变化图, graph of magnetic flux variation in a current-carrying coil with time): 0
+(磁偶极子, Magnetic dipole): 7
+(磁通计, Flux meter): 1
+(矩形线圈, Rectangular coil): 11
+(磁通量, Magnetic flux): 71
+(多匝线圈中的感应电动势, Induced electromotive force in a multi-turn coil): 0
+(磁感应强度, Magnetic induction): 258
+(闭合铝环和断开的铝环的现象, phenomenon of closed and open aluminum rings): 0
+(感生电动势, induced electromotive force): 16
+(楞次定律, Lenz's law): 3
+(磁通量, magnetic flux): 71
+(炮弹速度测量方法, method of measuring projectile velocity): 0
+(感应电动势, Induced electromotive force): 45
+(右手螺旋法则, Right-hand screw rule): 20
+(法拉第电磁感应定律, Faraday's law of electromagnetic induction): 24
+(感应电流, Induced current): 37
+(闭合回路中感应电流方向判断, Determining the direction of induced current in a closed circuit): 0
+(负号, Negative sign): 38

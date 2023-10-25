@@ -1,0 +1,56 @@
+﻿[{
+"knowledge_points": [
+   {"title": "磁场", "en": "Magnetic Field"},
+   {"title": "磁感应强度", "en": "Magnetic Induction"},
+   {"title": "运动电荷", "en": "Moving Charges"},
+   {"title": "载流导线", "en": "Current-carrying Wire"},
+   {"title": "磁体", "en": "Magnet"},
+   {"title": "磁力", "en": "Magnetic Force"},
+   {"title": "超距作用", "en": "Action at a Distance"},
+   {"title": "磁针", "en": "Magnetic Needle"},
+   {"title": "N极", "en": "North Pole"},
+   {"title": "磁感应强度的方向", "en": "Direction of Magnetic Induction"},
+   {"title": "电流元矢量", "en": "Current Element Vector"},
+   {"title": "电流元", "en": "Current Element"},
+   {"title": "磁场力", "en": "Magnetic Field Force"},
+   {"title": "磁感应强度的大小", "en": "Magnitude of Magnetic Induction"},
+   {"title": "安培力", "en": "Ampere's Force"},
+   {"title": "安培力公式", "en": "Ampere's Force Formula"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁感应强度B", "en": "Magnetic induction B"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "磁场力", "en": "Magnetic force"},
+   {"title": "特斯拉", "en": "Tesla"},
+   {"title": "高斯", "en": "Gauss"},
+   {"title": "赤道处地球磁场的水平分量", "en": "Horizontal component of Earth's magnetic field at the equator"},
+   {"title": "南北极地区地球磁场的竖直分量", "en": "Vertical component of Earth's magnetic field at the poles"},
+   {"title": "太阳黑子", "en": "Sunspot"},
+   {"title": "普通永久磁铁两极附近", "en": "Near the poles of a regular permanent magnet"},
+   {"title": "电动机和变压器", "en": "Electric motors and transformers"},
+   {"title": "超导脉冲的磁场", "en": "Magnetic field of superconducting pulses"},
+   {"title": "脉冲星表面磁场", "en": "Magnetic field on the surface of a pulsar"},
+   {"title": "非匀强磁场", "en": "Non-uniform magnetic field"},
+   {"title": "安培力", "en": "Ampere force"},
+   {"title": "直导线", "en": "Straight wire"},
+   {"title": "半圆弧导线", "en": "Semicircular wire"},
+   {"title": "磁场对导线的作用力", "en": "Magnetic force on a wire"}
+]
+},{
+"knowledge_points": [
+   {"title": "闭合线圈", "en": "Closed loop"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "直导线", "en": "Straight wire"},
+   {"title": "磁力", "en": "Magnetic force"},
+   {"title": "闭合载流线圈", "en": "Closed current loop"},
+   {"title": "安培力", "en": "Ampere's force"},
+   {"title": "超导线圈", "en": "Superconducting coil"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "静电相互作用", "en": "Electrostatic interaction"},
+   {"title": "毕奥-萨伐尔定律", "en": "Biot-Savart law"}
+]
+}]

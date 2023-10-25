@@ -1,0 +1,48 @@
+(M, M): 541
+(小球在水平面上的运动, Motion of a ball on a horizontal plane): 0
+(rdm, rdm): 4
+(质心, Center of Mass): 113
+(功, Work): 633
+(牛顿运动定律, Newton's Laws of Motion): 40
+(牛顿第二定律, Newton's Second Law): 37
+(角速度, Angular velocity): 156
+(能量, Energy): 637
+(角动量守恒定律, Law of Conservation of Angular Momentum): 24
+(动量守恒定律, Law of Conservation of Momentum): 50
+(牛顿第二定律, Newton's second law): 37
+(动能定理, Kinetic Energy Theorem): 60
+(c, c): 1454
+(质点的角动量守恒定律, Conservation of angular momentum of a particle): 1
+(di, di): 53
+(L, L): 445
+(力心, Center of force): 2
+(有心力, Central Force): 8
+(能量守恒定律, Law of Conservation of Energy): 19
+(F, F): 612
+(力, Force): 2617
+(地球卫星运动, Motion of Earth satellite): 0
+(角动量定理, Angular Momentum Theorem): 25
+(dL, dL): 15
+(m, m): 2829
+(角动量定理, Angular momentum theorem): 25
+(角动量定理式, Angular momentum theorem): 3
+(动能定理, Kinetic energy theorem): 60
+(保守力, Conservative Force): 76
+(势能, Potential Energy): 272
+(角动量守恒定律, Law of conservation of angular momentum): 24
+(合力对固定点的力矩为零, The torque of the resultant force on a particle about a fixed point is zero): 1
+(常矢量, Constant vector): 8
+(拉力所作的功, Work done by tension): 0
+(有心力下的运动, Motion under central force): 0
+(动量定理, Momentum Theorem): 56
+(r, r): 1972
+(有心力, Central force): 8
+(129, 129): 5
+(质点对固定点的角动量, Angular momentum of a particle about a fixed point): 0
+(机械能守恒定律, Law of Conservation of Mechanical Energy): 17
+(a, a): 1861
+(势能零点, Zero Potential Energy): 25
+(角动量, Angular Momentum): 186
+(^Lms, ^Lms): 1
+(力矩为零的两种可能, Two possible cases when the torque is zero): 0
+(质点角动量, Particle Angular Momentum): 3

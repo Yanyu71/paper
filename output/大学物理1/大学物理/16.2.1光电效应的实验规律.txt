@@ -1,0 +1,41 @@
+﻿[{
+"knowledge_points": [
+   {"title": "光电效应", "en": "Photoelectric effect"},
+   {"title": "金属", "en": "Metal"},
+   {"title": "光电子", "en": "Photoelectron"},
+   {"title": "阴极", "en": "Cathode"},
+   {"title": "阳极", "en": "Anode"},
+   {"title": "光电流", "en": "Photoelectric current"},
+   {"title": "伏安特性曲线", "en": "Volt-ampere characteristic curve"},
+   {"title": "饱和电流", "en": "Saturation current"},
+   {"title": "暹止电运", "en": "Stopping potential"},
+   {"title": "初动能", "en": "Initial kinetic energy"},
+   {"title": "遏止电压", "en": "Stopping voltage"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "照射光的频率", "en": "Frequency of incident light"},
+   {"title": "截止频率", "en": "Cutoff frequency"},
+   {"title": "红限", "en": "Red limit"},
+   {"title": "逸出功", "en": "Work function"}
+]
+},{
+"knowledge_points": [
+   {"title": "1014出", "en": "1014 emission"},
+   {"title": "红限AD", "en": "Red limit AD"},
+   {"title": "Jim", "en": "Jim"},
+   {"title": "逸出功", "en": "Work function"},
+   {"title": "光电子几乎即时发射", "en": "Almost instantaneous emission of photoelectrons"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "滞后时间", "en": "Lag time"},
+   {"title": "经典电磁波理论", "en": "Classical electromagnetic wave theory"},
+   {"title": "光电效应", "en": "Photoelectric effect"},
+   {"title": "初动能", "en": "Initial kinetic energy"},
+   {"title": "照射光", "en": "Incident light"},
+   {"title": "电子逸出", "en": "Electron emission"},
+   {"title": "圆满的解释", "en": "Satisfactory explanation"},
+   {"title": "光强增大", "en": "Increase in light intensity"},
+   {"title": "即时的", "en": "Instantaneous"},
+   {"title": "积累", "en": "Accumulation"},
+   {"title": "发射", "en": "Emission"}
+]
+}]

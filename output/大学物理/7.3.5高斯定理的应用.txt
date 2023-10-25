@@ -1,0 +1,27 @@
+﻿{
+"knowledge_points": [
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电场强度分布", "en": "electric field strength distribution"},
+   {"title": "对称性", "en": "symmetry"},
+   {"title": "封闭曲面", "en": "closed surface"},
+   {"title": "电场强度通量", "en": "electric field strength flux"},
+   {"title": "电荷密度", "en": "charge density"},
+   {"title": "匀强电场", "en": "uniform electric field"},
+   {"title": "球对称分布", "en": "spherical symmetry"},
+   {"title": "均匀带电球面", "en": "uniformly charged spherical surface"},
+   {"title": "均匀带电球体", "en": "uniformly charged spherical body"}
+]
+}{
+"knowledge_points": [
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电场强度分布", "en": "electric field strength distribution"},
+   {"title": "对称性", "en": "symmetry"},
+   {"title": "封闭曲面", "en": "closed surface"},
+   {"title": "电场强度通量", "en": "electric field strength flux"},
+   {"title": "电荷密度", "en": "charge density"},
+   {"title": "匀强电场", "en": "uniform electric field"},
+   {"title": "球对称分布", "en": "spherical symmetry"},
+   {"title": "带电球面", "en": "charged spherical surface"},
+   {"title": "带电球体", "en": "charged sphere"}
+]
+}

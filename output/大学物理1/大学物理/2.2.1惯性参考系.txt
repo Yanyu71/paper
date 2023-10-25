@@ -1,0 +1,47 @@
+﻿[{
+"knowledge_points": [
+   {"title": "惯性参考系", "en": "Inertial reference frame"},
+   {"title": "参考系的选取", "en": "Selection of reference frame"},
+   {"title": "牛顿运动定律", "en": "Newton's laws of motion"},
+   {"title": "动力学", "en": "Dynamics"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "合力", "en": "Net force"},
+   {"title": "惯性系", "en": "Inertial frame of reference"},
+   {"title": "非惯性系", "en": "Non-inertial frame of reference"},
+   {"title": "实际参考系", "en": "Actual reference frame"},
+   {"title": "观察和实验", "en": "Observation and experiment"},
+   {"title": "天体运动", "en": "Celestial motion"},
+   {"title": "太阳参考系", "en": "Solar reference frame"},
+   {"title": "地心参考系", "en": "Geocentric reference frame"},
+   {"title": "地面参考系", "en": "Ground reference frame"},
+   {"title": "人造卫星", "en": "Artificial satellite"},
+   {"title": "近似惯性系", "en": "Approximate inertial frame of reference"},
+   {"title": "科学技术", "en": "Science and technology"},
+   {"title": "宏观力学问题", "en": "Macroscopic mechanics problems"}
+]
+},{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"},
+   {"title": "推荐系统", "en": "Recommendation System"}
+], 
+
+}]

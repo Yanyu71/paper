@@ -1,0 +1,42 @@
+﻿{
+"knowledge_points": [
+   {"title": "空间间隔", "en": "Space interval"},
+   {"title": "长度的相对性", "en": "Relativity of length"},
+   {"title": "伽利略变换", "en": "Galilean transformation"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "狭义相对论", "en": "Special relativity"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "固有长度", "en": "Proper length"},
+   {"title": "静止长度", "en": "Rest length"},
+   {"title": "运动长度", "en": "Moving length"},
+   {"title": "长度收缩", "en": "Length contraction"},
+   {"title": "相对物体静止的惯性系", "en": "Inertial frame where the object is at rest"},
+   {"title": "运动方向", "en": "Direction of motion"},
+   {"title": "时空的属性", "en": "Properties of spacetime"},
+   {"title": "物质间的相互作用", "en": "Interaction between matter"},
+   {"title": "爱因斯坦火车", "en": "Einstein train"},
+   {"title": "视觉形象", "en": "Visual image"},
+   {"title": "光", "en": "Light"},
+   {"title": "视网膜", "en": "Retina"},
+   {"title": "空间位置", "en": "Spatial position"}
+]
+}{
+"knowledge_points": [
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "S系", "en": "S system"},
+   {"title": "S'系", "en": "S' system"},
+   {"title": "运动物体的长度", "en": "length of moving object"},
+   {"title": "同时测量", "en": "simultaneous measurement"},
+   {"title": "固有长度", "en": "proper length"},
+   {"title": "运动长度", "en": "moving length"},
+   {"title": "相对性原理", "en": "principle of relativity"},
+   {"title": "宇宙飞船", "en": "spaceship"},
+   {"title": "光脉冲", "en": "light pulse"},
+   {"title": "时空坐标", "en": "spacetime coordinates"},
+   {"title": "空间距离", "en": "spatial distance"},
+   {"title": "长度收缩公式", "en": "length contraction formula"},
+   {"title": "空间间隔", "en": "spatial interval"},
+   {"title": "光速", "en": "speed of light"}
+]
+}

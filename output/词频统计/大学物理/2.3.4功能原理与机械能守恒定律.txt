@@ -1,0 +1,85 @@
+(摩擦系数, Coefficient of friction): 21
+(方程, Equation): 574
+(坐标系, Coordinate system): 106
+(能量, Energy): 637
+(外力, External Force): 129
+(压缩, Compression): 43
+(保守内力, Conservative Internal Force): 7
+(弹簧振子, Spring oscillator): 59
+(俗语意义, Colloquial meaning): 1
+(发射速度, Launch velocity): 6
+(非保守力, Non-conservative force): 9
+(能量守恒定律, Law of Conservation of Energy): 19
+(功能原理, Principle of Function): 14
+(滑块, Slider): 28
+(系统, System): 570
+(解取木块、轻弹簧、斜面和地球组成的系统, System composed of wooden blocks, light springs, inclined planes, and the Earth): 1
+(势能, Potential energy): 272
+(电能, Electrical Energy): 31
+(星体, Celestial body): 13
+(势能, Potential Energy): 272
+(运动状态, Motion state): 60
+(重力, Gravity): 132
+(伸长量, Extension): 4
+(自由落下, Free fall): 4
+(弹性力, Elastic force): 49
+(反作用力, Reaction force): 12
+(始末状态, Initial and final states): 5
+(机械能守恒定律, Law of Conservation of Mechanical Energy): 17
+(引力势能, Gravitational potential energy): 9
+(速率, Velocity): 534
+(摩擦力, Frictional force): 80
+(碰撞, Collision): 207
+(卫星, Satellite): 100
+(热能, Thermal Energy): 8
+(动能定理, Kinetic Energy Theorem): 60
+(弹簧, Spring): 224
+(机械能, Mechanical Energy): 69
+(受力, Force): 64
+(动能定理, Kinetic energy theorem): 60
+(重物, Heavy object): 19
+(速度, Velocity): 1354
+(橡皮绳, Rubber rope): 5
+(守恒, Conservation): 255
+(动量定理, Momentum theorem): 56
+(运动情况, Motion condition): 17
+(科学意义, Scientific meaning): 1
+(功, Work): 633
+(起重机, Crane): 3
+(重力势能, Gravitational potential energy): 19
+(摩擦力, Frictional Force): 80
+(万有引力势能, Gravitational potential energy): 4
+(沙坑, Sand pit): 2
+(能量转化, Energy conversion): 5
+(圆轨道, Circular orbit): 21
+(质点系, Particle system): 101
+(弹性势能, Elastic potential energy): 12
+(火箭发动机, Rocket engine): 1
+(动能, Kinetic energy): 357
+(内力, Internal Force): 65
+(劲度系数, Spring constant): 35
+(向心力, Centripetal force): 9
+(木块, Block): 45
+(内力, Internal force): 65
+(弹力, Elastic force): 1
+(力学问题, Mechanical problem): 35
+(万有引力, Universal gravitational force): 62
+(动量守恒定律, Conservation of momentum): 50
+(原子能, Atomic Energy): 15
+(斜面支撑力, Support force of the inclined plane): 1
+(斜面, Incline): 14
+(势能增量, Potential energy increment): 3
+(脱离地球引力, Escape from Earth's gravity): 6
+(辅助方程, Auxiliary equation): 1
+(作用力, Action force): 117
+(非保守内力, Non-conservative Internal Force): 3
+(水平桌面, Horizontal table): 7
+(人造地球卫星, Artificial Earth satellite): 6
+(机械能, Mechanical energy): 69
+(斜面摩擦力, Frictional Force on the Incline): 0
+(无穷远, Infinity): 36
+(撑杆跳高, Pole vaulting): 1
+(功能原理, Principle of work and energy): 14
+(机械能守恒, Conservation of mechanical energy): 30
+(空气阻力, Air resistance): 20
+(第二宇宙速度, Second cosmic velocity): 3

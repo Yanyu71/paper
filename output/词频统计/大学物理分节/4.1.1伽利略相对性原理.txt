@@ -1,0 +1,5 @@
+(参考系, frame of reference): 2
+(匀速直线运动, uniform linear motion): 0
+(牛顿运动定律, Newton's laws of motion): 2
+(惯性系, inertial frame of reference): 3
+(伽利略相对性原理, Galilean relativity principle): 1

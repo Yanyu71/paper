@@ -1,0 +1,7 @@
+(方向, Direction)
+(相似比, Similarity ratio)
+(向心加速度, Centripetal acceleration)
+(加速度, Acceleration)
+(速度增量, Change in velocity)
+(匀速率圆周运动, Uniform circular motion)
+(法向加速度, Normal acceleration)

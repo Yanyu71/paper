@@ -1,0 +1,44 @@
+(原子, Atom): 37
+(转动动能级, Rotational energy levels): 1
+(不连续能量, Discrete energy): 1
+(角动量量子化条件, Quantization condition of angular momentum): 1
+(玻尔氢原子理论, Bohr's hydrogen atom theory): 1
+(电子轨道半径, Electron orbital radius): 2
+(双原子气体分子, Diatomic gas molecule): 1
+(牟夸, Energy level): 1
+(距离, Distance): 1
+(能级, Energy level): 7
+(核外电子, Electron outside the nucleus): 1
+(量子枣, Quantum number): 0
+(玻尔理论, Bohr theory): 4
+(玻尔的氢原子理论, Bohr's theory of hydrogen atom): 1
+(里德伯-里兹并合原则, Rydberg-Ritz combination principle): 0
+(巴耳末系, Balmer series): 2
+(能级跃迁, Energy level transition): 1
+(谐振子能量量子化, Quantization of harmonic oscillator energy): 1
+(半经典量子理论, Semi-classical quantum theory): 1
+(玻尔半径, Bohr radius): 1
+(能级图, Energy level diagram): 1
+(能量间隔, Energy gap): 1
+(卢瑟福关于原子的有核模型, Rutherford's nuclear model of the atom): 1
+(角动量, Angular momentum): 8
+(可能值, Possible values): 3
+(转动动能, Rotational kinetic energy): 3
+(氢光谱, Hydrogen spectrum): 2
+(受激态, Excited state): 1
+(普朗克量子假设, Planck's quantum hypothesis): 1
+(质量, Mass): 1
+(量子化, Quantization): 6
+(电离状态, Ionization state): 1
+(莱曼系, Lyman series): 2
+(氢原子结构, Structure of hydrogen atom): 1
+(里德伯常量, Rydberg constant): 0
+(定态, Stationary state): 7
+(跃迁频率公式, Transition frequency formula): 1
+(电离能, Ionization energy): 2
+(基态, Ground state): 6
+(类氢离子, Hydrogen-like ion): 1
+(波长, Wavelength): 5
+(轨道角动量, Orbital angular momentum): 4
+(稳定圆轨道, Stable circular orbit): 2
+(能量量子化, Quantization of energy): 2

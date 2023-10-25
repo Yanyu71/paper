@@ -1,0 +1,66 @@
+(夸克, Quark): 90
+(强互作用, Strong interaction): 1
+(费米子, Fermions): 9
+(中微子, Neutrino): 22
+(弱相互作用, Weak interaction): 28
+(粒子的分类, Classification of particles): 3
+(J/粒子, J/psi particle): 0
+(玻色子, Bosons): 14
+(T子, Tau): 5
+(寿命, Lifetime): 34
+(轻质子, Light quarks): 0
+(J/中粒子, J/psi meson): 1
+(动量守恒定律, Law of Conservation of Momentum): 50
+(介子, Mesons): 69
+(重子, Baryon): 34
+(奇异粒子, Strange particle): 9
+(中性粒子, Neutral particle): 5
+(费米-狄拉克统计, Fermi-Dirac statistics): 1
+(K介子, Kaon): 5
+(质子, Proton): 112
+(奇异数, Strangeness): 17
+(里希特, Chen Ning Yang): 3
+(超子, Hyperon): 5
+(重子, Baryons): 34
+(子衰变, Subdecay): 3
+(T)介子, Eta meson): 1
+(中间玻色子, Intermediate bosons): 3
+(引力相互作用, Gravitational interaction): 6
+(丁肇中, Tsung-Dao Lee): 3
+(电子, Electron): 699
+(强子, Hadron): 32
+(核子, Nucleon): 34
+(玻色-爱因斯坦统计规律, Bose-Einstein statistics): 1
+(同位旋, Isospin): 21
+(费米子, Fermion): 9
+(媒介粒子, Mediating particles): 4
+(光子, Photon): 142
+(反粒子, Antiparticle): 19
+(规范玻色子, Gauge bosons): 5
+(JJL子, Muon): 3
+(引力子, Graviton): 7
+(电磁相互作用, Electromagnetic interaction): 23
+(相互作用, Interaction): 201
+(7T介子, Pion): 4
+(子, Meson): 4170
+(诺贝尔物理学奖, Nobel Prize in Physics): 22
+(宇称, Parity): 40
+(粒子物理, Particle physics): 41
+(玻色子, Boson): 14
+(泡利不相容原理, Pauli exclusion principle): 12
+(胶子, Gluon): 5
+(中子, Neutron): 91
+(电荷, Charge): 721
+(自旋, Spin): 88
+(强子结构理论, Quark model): 1
+(宇宙演化, Cosmic evolution): 1
+(协同产生, Co-production): 3
+(强相互作用, Strong interaction): 28
+(轻子, Leptons): 30
+(电弱相互作用, Electroweak interaction): 1
+(重子数, Baryon number): 17
+(介子, Meson): 69
+(守恒定律, Conservation law): 125
+(轻子数, Lepton number): 13
+(强子, Hadrons): 32
+(云室, Cloud chamber): 3

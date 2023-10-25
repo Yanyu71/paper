@@ -1,0 +1,14 @@
+﻿{
+"knowledge_points": [
+   {"title": "光程", "en": "Optical path"},
+   {"title": "相干光", "en": "Coherent light"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "路程差", "en": "Path difference"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "真空", "en": "Vacuum"},
+   {"title": "几何路程", "en": "Geometrical path"},
+   {"title": "总光程", "en": "Total optical path"}
+]
+}

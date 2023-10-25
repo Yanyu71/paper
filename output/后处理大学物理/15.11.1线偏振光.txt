@@ -1,0 +1,7 @@
+(横波, Transverse wave)
+(线偏振光, Linearly polarized light)
+(平面偏振光, Plane polarized light)
+(光矢量, Optical vector)
+(振动面, Plane of vibration)
+(纵波, Longitudinal wave)
+(偏振性, Polarization)

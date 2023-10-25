@@ -1,0 +1,19 @@
+(矢量, Vector): 7
+(位移, Displacement): 24
+(标量, Scalar): 1
+(位矢, Position vector): 7
+(直线距离, Straight line distance): 1
+(近似相等, Approximately equal): 1
+(分矢量, Component vector): 3
+(正负号, Positive and negative sign): 1
+(路程, Distance): 8
+(增量, Increment): 3
+(曲线弧长, Arc length): 1
+(极限情况, Limiting case): 1
+(一维运动, One-dimensional motion): 1
+(弦长, Chord length): 1
+(路径, Path): 1
+(正交分量, Orthogonal components): 1
+(坐标轴, Coordinate axis): 4
+(匀速圆周运动, Uniform circular motion): 1
+(周期, Period): 1

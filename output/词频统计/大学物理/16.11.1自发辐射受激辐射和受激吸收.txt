@@ -1,0 +1,24 @@
+(粒子, Particle): 626
+(光强, Light intensity): 183
+(频率, Frequency): 461
+(低能级A上的粒子, Particles on low energy level A): 1
+(受激辐射系数, Stimulated emission coefficient): 2
+(能级, Energy level): 197
+(连锁反应, Chain reaction): 1
+(自发辐射, Spontaneous emission): 17
+(受激辐射, Stimulated emission): 17
+(自发辐射系数, Spontaneous emission coefficient): 1
+(光强, Intensity): 183
+(受激吸收, Stimulated absorption): 6
+(跃迁, Transition): 57
+(放大, Amplification): 138
+(系统, System): 570
+(亚稳态, Metastable state): 8
+(简并度, Degeneracy): 1
+(平均寿命, Average lifetime): 6
+(入射光, Incident light): 62
+(矽, Silicon): 7
+(受激吸收系数, Stimulated absorption coefficient): 2
+(比例系数, Proportionality coefficient): 14
+(频率条件, Frequency condition): 1
+(外来辐射, External radiation): 1

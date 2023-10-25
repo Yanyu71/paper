@@ -1,0 +1,9 @@
+(温度, Temperature): 5
+(质量, Mass): 1
+(逃逸速率, Escape velocity): 2
+(平均平动动能公式, Formula for average translational kinetic energy): 1
+(分子速率, Molecular speed): 2
+(方均根速率, Root mean square speed): 7
+(气体分子的方均根速率, Root mean square speed of gas molecules): 1
+(统计平均值, Statistical average): 1
+(热力学温度, Thermodynamic temperature): 1

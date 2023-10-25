@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "变速圆周运动", "en": "Variable circular motion"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "速度大小", "en": "Magnitude of velocity"},
+   {"title": "速度方向", "en": "Direction of velocity"},
+   {"title": "速度增量", "en": "Change in velocity"},
+   {"title": "速度大小变化", "en": "Change in magnitude of velocity"},
+   {"title": "速度方向变化", "en": "Change in direction of velocity"},
+   {"title": "速度增量分解", "en": "Decomposition of velocity change"},
+   {"title": "速度方向变化的矢量", "en": "Vector representing change in direction of velocity"},
+   {"title": "速度大小变化的矢量", "en": "Vector representing change in magnitude of velocity"},
+   {"title": "法向加速度", "en": "Normal acceleration"},
+   {"title": "切向加速度", "en": "Tangential acceleration"},
+   {"title": "质点速度方向变化的快慢", "en": "Rate of change in direction of particle velocity"},
+   {"title": "质点速度大小变化的快慢", "en": "Rate of change in magnitude of particle velocity"},
+   {"title": "自然坐标", "en": "Natural coordinates"},
+   {"title": "加速度与速度夹角", "en": "Angle between acceleration and velocity"}
+]
+}

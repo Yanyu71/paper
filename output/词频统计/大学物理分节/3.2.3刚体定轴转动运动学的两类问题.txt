@@ -1,0 +1,24 @@
+(切向加速度, Tangential acceleration): 2
+(角加速度的定义, Definition of angular acceleration): 2
+(刚体绕定轴转动, Rigid body rotation about a fixed axis): 1
+(转子的角速度, Angular velocity of the rotor): 2
+(刚体定轴转动运动学, Kinematics of rigid body with fixed axis rotation): 2
+(电动机转子, Electric motor rotor): 1
+(角速度, Angular velocity): 10
+(第二类问题, Type 2 problem): 2
+(法向加速度, Normal acceleration): 2
+(刚体模型的特征, Characteristics of rigid body model): 1
+(转子转过的圈数, Number of circles rotated by the rotor): 0
+(匀变速转动, Uniformly accelerated rotation): 1
+(刚体定轴转动的运动规律, Motion laws of rigid body rotational motion): 0
+(分离变量并积分, Separation of variables and integration): 1
+(飞轮绕定轴转动, Rotation of flywheel about a fixed axis): 1
+(角加速度, Angular acceleration): 9
+(转速, Angular speed): 6
+(刚体定轴转动的角速度和角加速度的定义, Definition of angular velocity and angular acceleration in rigid body rotational motion): 0
+(第一类问题, Type 1 problem): 2
+(实际固态物体可看作刚体的条件, Conditions under which real solid objects can be considered as rigid bodies): 0
+(基本公式, Basic formulas): 1
+(转子的角速度与时间的关系, Relationship between angular velocity of the rotor and time): 0
+(圈数, Number of revolutions): 2
+(振动, Vibration): 5

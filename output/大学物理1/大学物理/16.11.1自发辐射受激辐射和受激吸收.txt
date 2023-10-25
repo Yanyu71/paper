@@ -1,0 +1,34 @@
+﻿[{
+"knowledge_points": [
+   {"title": "自发辐射", "en": "Spontaneous emission"},
+   {"title": "受激辐射", "en": "Stimulated emission"},
+   {"title": "受激吸收", "en": "Stimulated absorption"},
+   {"title": "能级", "en": "Energy level"},
+   {"title": "粒子", "en": "Particle"},
+   {"title": "跃迁", "en": "Transition"},
+   {"title": "频率条件", "en": "Frequency condition"},
+   {"title": "自发辐射系数", "en": "Spontaneous emission coefficient"},
+   {"title": "平均寿命", "en": "Average lifetime"},
+   {"title": "亚稳态", "en": "Metastable state"},
+   {"title": "受激辐射系数", "en": "Stimulated emission coefficient"},
+   {"title": "入射光", "en": "Incident light"},
+   {"title": "光强", "en": "Intensity"},
+   {"title": "连锁反应", "en": "Chain reaction"},
+   {"title": "放大", "en": "Amplification"},
+   {"title": "比例系数", "en": "Proportionality coefficient"}
+]
+},{
+"knowledge_points": [
+   {"title": "低能级A上的粒子", "en": "Particles on low energy level A"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "入射光", "en": "Incident light"},
+   {"title": "矽", "en": "Silicon"},
+   {"title": "受激吸收系数", "en": "Stimulated absorption coefficient"},
+   {"title": "受激辐射系数", "en": "Stimulated emission coefficient"},
+   {"title": "简并度", "en": "Degeneracy"},
+   {"title": "自发辐射", "en": "Spontaneous emission"},
+   {"title": "外来辐射", "en": "External radiation"},
+   {"title": "系统", "en": "System"}
+]
+}]

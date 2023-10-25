@@ -1,0 +1,15 @@
+﻿[{
+"knowledge_points": [
+   {"title": "可逆过程", "en": "Reversible process", "type": "", "description": ""},
+   {"title": "不可逆过程", "en": "Irreversible process", "type": "", "description": ""},
+   {"title": "自发过程的方向性", "en": "Directionality of spontaneous processes", "type": "", "description": ""},
+   {"title": "热传导过程的方向性", "en": "Directionality of heat conduction process", "type": "", "description": ""},
+   {"title": "功热转换过程的方向性", "en": "Directionality of work-heat conversion process", "type": "", "description": ""},
+   {"title": "气体自由膨胀过程的方向性", "en": "Directionality of gas free expansion process", "type": "", "description": ""}
+]
+},{
+"knowledge_points": [
+   {"title": "可逆过程", "en": "Reversible process", "type": "是", "description": "可逆过程是一种理想模型，要使过程成为可逆过程，必须满足两个条件：消除摩擦等耗散因素，保证系统复原时能消除原过程给外界带来的影响；过程要无限缓慢地进行，即准静态过程。"},
+   {"title": "不可逆过程", "en": "Irreversible process", "type": "是", "description": "自然界中自发的热力学过程都是不可逆过程，包括热传导、功热转换、气体自由膨胀、燃烧过程、扩散过程、生命过程等。"}
+]
+}]

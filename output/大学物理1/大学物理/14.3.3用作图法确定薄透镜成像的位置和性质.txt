@@ -1,0 +1,136 @@
+﻿[{
+"knowledge_points": [
+   {"title": "作图法", "en": "Graphical method"},
+   {"title": "薄透镜成像", "en": "Thin lens imaging"},
+   {"title": "共轭光线", "en": "Conjugate rays"},
+   {"title": "像点", "en": "Image point"},
+   {"title": "主光线", "en": "Principal rays"},
+   {"title": "焦平面", "en": "Focal plane"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "焦距", "en": "Focal length"}
+]
+},{
+"knowledge_points": [
+   {"title": "像的位置", "en": "Image position"},
+   {"title": "像的虚实", "en": "Real and virtual images"},
+   {"title": "正立倒立", "en": "Upright and inverted"},
+   {"title": "放大缩小", "en": "Magnification"},
+   {"title": "凹透镜成像图", "en": "Concave lens imaging diagram"},
+   {"title": "作图法", "en": "Graphical method"},
+   {"title": "焦点", "en": "Focus"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "逐次成像法", "en": "Successive imaging method"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "主光线", "en": "Principal ray"}
+]
+},{
+"knowledge_points": [
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "光路图", "en": "Ray diagram"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "物像公式", "en": "Lens formula"},
+   {"title": "主光线", "en": "Principal rays"},
+   {"title": "傍轴情况", "en": "Paraxial approximation"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "近视眼镜", "en": "Nearsighted glasses"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "液体", "en": "Liquid"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "离透镜越来越远", "en": "Farther from the lens"},
+   {"title": "离透镜越来越近", "en": "Closer to the lens"},
+   {"title": "不变", "en": "Unchanged"},
+   {"title": "系统成像性质", "en": "Imaging properties of the system"},
+   {"title": "正立", "en": "Upright"},
+   {"title": "倒立", "en": "Inverted"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "放大", "en": "Magnified"},
+   {"title": "缩小", "en": "Reduced"}
+]
+},{
+"knowledge_points": [
+   {"title": "球面反射镜", "en": "Spherical mirror"},
+   {"title": "物像公式", "en": "Object-image formula"},
+   {"title": "会聚", "en": "Converging"},
+   {"title": "发散", "en": "Diverging"},
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "浸没", "en": "Immersed"},
+   {"title": "空气泡", "en": "Air bubble"},
+   {"title": "反射面", "en": "Reflecting surface"},
+   {"title": "折射面", "en": "Refracting surface"}
+]
+},{
+"knowledge_points": [
+   {"title": "物距", "en": "Object distance"},
+   {"title": "像距", "en": "Image distance"},
+   {"title": "导出折射球面物像公式", "en": "Derivation of the refractive spherical mirror formula"},
+   {"title": "反射球面的物像公式", "en": "Reflection spherical mirror formula"},
+   {"title": "凹球面反射镜", "en": "Concave spherical mirror"},
+   {"title": "凸球面反射镜", "en": "Convex spherical mirror"},
+   {"title": "焦点", "en": "Focal point"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "主光线", "en": "Principal rays"}
+]
+},{
+"knowledge_points": [
+   {"title": "符号规则", "en": "Symbol rules"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "像距", "en": "Image distance"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "缩小像", "en": "Reduced image"},
+   {"title": "放大像", "en": "Enlarged image"},
+   {"title": "凹球面反射镜", "en": "Concave spherical mirror"},
+   {"title": "凸球面反射镜", "en": "Convex spherical mirror"},
+   {"title": "物像公式", "en": "Object-image formula"},
+   {"title": "凸球面", "en": "Convex spherical surface"},
+   {"title": "凹球面", "en": "Concave spherical surface"},
+   {"title": "球面反射镜成像的特征", "en": "Characteristics of spherical mirror imaging"},
+   {"title": "光路图", "en": "Ray diagram"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "凸球面反射镜能产生实像的条件", "en": "Conditions for convex spherical mirror to produce real image"},
+   {"title": "凸球面反射镜能产生虚像的条件", "en": "Conditions for convex spherical mirror to produce virtual image"},
+   {"title": "球壳", "en": "Spherical shell"},
+   {"title": "镀铝", "en": "Aluminum coating"}
+]
+},{
+"knowledge_points": [
+   {"title": "代入式", "en": "Substitution equation"},
+   {"title": "符号规则", "en": "Symbol rules"},
+   {"title": "像距", "en": "Image distance"},
+   {"title": "参考价值", "en": "Reference value"},
+   {"title": "聚光腔镜设计", "en": "Design of focusing cavity mirror"},
+   {"title": "物像公式", "en": "Object-image formula"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "平面反射镜", "en": "Plane mirror"},
+   {"title": "正立虚像", "en": "Upright virtual image"},
+   {"title": "光路图", "en": "Ray diagram"},
+   {"title": "符号规则", "en": "Symbol rules"},
+   {"title": "凹面反射镜", "en": "Concave mirror"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "放大缩小", "en": "Magnification"},
+   {"title": "反转", "en": "Inversion"},
+   {"title": "广角后视镜", "en": "Wide-angle rearview mirror"},
+   {"title": "凸球面反射镜", "en": "Convex spherical mirror"}
+]
+},{
+"knowledge_points": [
+   {"title": "球面反射镜", "en": "Spherical mirror"},
+   {"title": "透镜", "en": "Lens"},
+   {"title": "像", "en": "Image"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "平面镜", "en": "Plane mirror"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "焦点", "en": "Focus"},
+   {"title": "像差", "en": "Aberration"},
+   {"title": "色散像差", "en": "Chromatic aberration"},
+   {"title": "凹球面反射镜", "en": "Concave spherical mirror"},
+   {"title": "凸球面反射镜", "en": "Convex spherical mirror"}
+]
+}]

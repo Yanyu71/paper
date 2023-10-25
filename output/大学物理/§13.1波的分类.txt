@@ -1,0 +1,33 @@
+﻿{
+"knowledge_points": [
+   {"title": "波动", "en": "Wave"},
+   {"title": "力学", "en": "Mechanics"},
+   {"title": "水波", "en": "Water wave"},
+   {"title": "声波", "en": "Sound wave"},
+   {"title": "地震波", "en": "Seismic wave"},
+   {"title": "电磁波", "en": "Electromagnetic wave"},
+   {"title": "光波", "en": "Light wave"},
+   {"title": "微观领域", "en": "Microscopic field"},
+   {"title": "点阵波", "en": "Lattice wave"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "真空", "en": "Vacuum"},
+   {"title": "信息传递", "en": "Information transmission"},
+   {"title": "机械波", "en": "Mechanical wave"},
+   {"title": "简谐波", "en": "Simple harmonic wave"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "弹性介质", "en": "Elastic medium"},
+   {"title": "振动", "en": "Vibration"},
+   {"title": "能量传播", "en": "Energy propagation"},
+   {"title": "绳中波", "en": "Wave in a rope"},
+   {"title": "牛顿力学定律", "en": "Newton's laws of motion"},
+   {"title": "电磁场", "en": "Electromagnetic field"},
+   {"title": "光波", "en": "Light wave"},
+   {"title": "无线电波", "en": "Radio wave"},
+   {"title": "y射线", "en": "Gamma ray"},
+   {"title": "x射线", "en": "X-ray"},
+   {"title": "物质波", "en": "Particle wave"},
+   {"title": "概率波", "en": "Probability wave"},
+   {"title": "微观粒子", "en": "Microscopic particle"},
+   {"title": "量子力学", "en": "Quantum mechanics"}
+]
+}

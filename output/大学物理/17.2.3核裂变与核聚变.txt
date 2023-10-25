@@ -1,0 +1,82 @@
+﻿{
+"knowledge_points": [
+   {"title": "核裂变", "en": "Nuclear fission", "type": "is_a", "description": "重核分裂为两个中等质量原子核的过程"},
+   {"title": "核聚变", "en": "Nuclear fusion", "type": "is_a", "description": "两个轻核聚合成为一个稍重原子核的过程"},
+   {"title": "核能", "en": "Nuclear energy", "type": "is_a", "description": "通过核裂变和核聚变获得的能量"},
+   {"title": "原子弹", "en": "Atomic bomb", "type": "is_a", "description": "利用核裂变产生的巨大能量的武器"},
+   {"title": "核反应堆", "en": "Nuclear reactor", "type": "is_a", "description": "利用核裂变反应产生能量的装置"},
+   {"title": "核发电站", "en": "Nuclear power plant", "type": "is_a", "description": "利用核裂变反应产生电能的设施"},
+   {"title": "太阳", "en": "Sun", "type": "is_a", "description": "利用核聚变产生能量的恒星"},
+   {"title": "氢弹", "en": "Hydrogen bomb", "type": "is_a", "description": "利用核聚变产生的巨大能量的武器"},
+   {"title": "链式反应", "en": "Chain reaction", "type": "is_a", "description": "裂变过程中的中子引发另一个或另几个核裂变的连续反应"},
+   {"title": "中子", "en": "Neutron", "type": "is_a", "description": "核裂变过程中释放出的粒子"},
+   {"title": "快中子", "en": "Fast neutron", "type": "is_a", "description": "裂变过程中释放出的动能较高的中子"},
+   {"title": "热中子", "en": "Thermal neutron", "type": "is_a", "description": "经过慢化后的动能较低的中子"}
+]
+}{
+"knowledge_points": [
+   {"title": "持链式反应", "en": "Chain reaction", "type": "", "description": ""},
+   {"title": "临界体积", "en": "Critical volume", "type": "", "description": ""},
+   {"title": "原子弹", "en": "Atomic bomb", "type": "", "description": ""},
+   {"title": "核反应堆", "en": "Nuclear reactor", "type": "", "description": ""},
+   {"title": "堆芯", "en": "Core", "type": "", "description": ""},
+   {"title": "燃料元件", "en": "Fuel element", "type": "", "description": ""},
+   {"title": "慢化剂", "en": "Moderator", "type": "", "description": ""},
+   {"title": "冷却剂", "en": "Coolant", "type": "", "description": ""},
+   {"title": "反射层", "en": "Reflector", "type": "", "description": ""},
+   {"title": "控制棒", "en": "Control rod", "type": "", "description": ""},
+   {"title": "核燃料", "en": "Nuclear fuel", "type": "", "description": ""},
+   {"title": "铀", "en": "Uranium", "type": "", "description": ""},
+   {"title": "钚", "en": "Plutonium", "type": "", "description": ""},
+   {"title": "核裂变", "en": "Nuclear fission", "type": "", "description": ""},
+   {"title": "核电站", "en": "Nuclear power plant", "type": "", "description": ""},
+   {"title": "核聚变", "en": "Nuclear fusion", "type": "", "description": ""},
+   {"title": "质子-质子循环", "en": "Proton-proton cycle", "type": "", "description": ""}
+]
+}{
+"knowledge_points": [
+   {"title": "重氢", "en": "Deuterium"},
+   {"title": "氘核", "en": "Deuteron"},
+   {"title": "中微子", "en": "Neutrino"},
+   {"title": "质子", "en": "Proton"},
+   {"title": "氦核", "en": "Helium nucleus"},
+   {"title": "碳氮循环", "en": "CNO cycle"},
+   {"title": "核聚变", "en": "Nuclear fusion"},
+   {"title": "裂变", "en": "Nuclear fission"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "库仑斥力", "en": "Coulomb repulsion"},
+   {"title": "动能", "en": "Kinetic energy"},
+   {"title": "等离子态", "en": "Plasma state"},
+   {"title": "氢弹", "en": "Hydrogen bomb"},
+   {"title": "点火", "en": "Ignition"},
+   {"title": "核裂变", "en": "Nuclear fission"},
+   {"title": "自持受控核聚变", "en": "Self-sustained controlled nuclear fusion"}
+]
+}{
+"knowledge_points": [
+   {"title": "离子体密度", "en": "Plasma density"},
+   {"title": "等离子体", "en": "Plasma"},
+   {"title": "核子", "en": "Nucleon"},
+   {"title": "碰撞频率", "en": "Collision frequency"},
+   {"title": "髙温", "en": "High temperature"},
+   {"title": "高密度", "en": "High density"},
+   {"title": "时间T", "en": "Time T"},
+   {"title": "核聚变反应", "en": "Nuclear fusion reaction"},
+   {"title": "能量增益", "en": "Energy gain"},
+   {"title": "劳孙判据", "en": "Lawson criterion"},
+   {"title": "加大密度", "en": "Increase density"},
+   {"title": "减少时间r", "en": "Decrease time r"},
+   {"title": "减少密度", "en": "Decrease density"},
+   {"title": "增长时间t", "en": "Increase time t"},
+   {"title": "容器", "en": "Container"},
+   {"title": "激光核聚变", "en": "Laser nuclear fusion"},
+   {"title": "燃料弹丸", "en": "Fuel pellet"},
+   {"title": "磁约束法", "en": "Magnetic confinement"},
+   {"title": "惯性约束法", "en": "Inertial confinement"},
+   {"title": "聚变核自身的惯性", "en": "Inertia of fusion nuclei"},
+   {"title": "王淦昌", "en": "Wang Ganchang"},
+   {"title": "巴索夫", "en": "Basov"},
+   {"title": "激光打靶实现核聚变方案", "en": "Laser-driven fusion scheme"},
+   {"title": "共振吸收现象", "en": "Resonant absorption phenomenon"}
+]
+}

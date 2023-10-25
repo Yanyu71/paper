@@ -1,0 +1,72 @@
+(撖光产生的机理, Mechanism of laser generation): 1
+(伏安特性曲线, volt-ampere characteristic curve): 4
+(16.64硅与金刚石的能带结构相似, 但禁带宽度不同,分别为1.146eV和5.33eV,试根据它们的禁带宽度计算它们能吸收的辐射波长各是多少, 16.64 Silicon and diamond have similar band structures, but different band gaps of 1.146eV and 5.33eV, respectively. Calculate the wavelengths of radiation they can absorb based on their band gaps): 1
+(电导率, Electrical Conductivity): 3
+(载流子, Charge Carrier): 36
+(价电子, Valence Electron): 11
+(图16.54, Figure 16.54): 2
+(卑tf?能够产生激光的装置称, The device capable of producing laser is called): 1
+(图16.53, Figure 16.53): 2
+(电容, capacitor): 246
+(禁带, Band Gap): 31
+(16.67为什么金属的电阻温度系数是正的, 而半导体的电阻温度系数是负的, 16.67 Why is the temperature coefficient of resistance positive for metals and negative for semiconductors): 1
+(p型半导体, p-type Semiconductor): 3
+(16.60电子在能带中是如何分布的, 16.60 How are electrons distributed in energy bands): 1
+(空穴, hole): 33
+(导电性, conductivity): 28
+(激光, Laser): 223
+(激光技术的应用, Applications of laser technology): 1
+(本征半导体, Intrinsic Semiconductor): 10
+(自由电子浓度, Free Electron Concentration): 1
+(n型半导体, n-type semiconductor): 12
+(隧道二极管, tunnel diode): 2
+(禁带, band gap): 31
+(半导体激光器, semiconductor laser): 1
+(导带, Conduction Band): 23
+(16.10固体能带结构, 16.10 Solid band structure): 4
+(激发, Excitation): 79
+(反向电压, reverse voltage): 3
+(16.61绝缘体、导体、半导体的能带结构有什么不同, 16.61 What are the differences in the band structures of insulators, conductors, and semiconductors): 1
+(16.65为什么半导掺杂后导电性能大大增加, 16.65 Why does the conductivity of semiconductors increase significantly after doping): 1
+(杂质能级, impurity level): 11
+(16.66在半导体硅中分别用Al、P、In、Sb掺杂, 各得到什么类型的半导体, 16.66 What types of semiconductors are obtained by doping silicon with Al, P, In, and Sb, respectively): 1
+(杂质半导体, Impurity Semiconductor): 9
+(P型半导体, P-type semiconductor): 7
+(电偶极层, depletion layer): 1
+(微处理器芯片, microprocessor chip): 1
+(三价元素, trivalent element): 1
+(正向电压, forward voltage): 3
+(16.68p型与n型半导体形成pn结, n型区的电子能否无限地向p型区扩散, 16.68 Can electrons in the n-type region of a p-n junction semiconductor diffuse infinitely into the p-type region): 1
+(16.62用能带的概念解释以下固体的光学性质, 16.62 Explain the optical properties of the following solids using the concept of energy bands): 1
+(导带, Conduction band): 23
+(能级, Energy Level): 197
+(负载流子, Negative Charge Carrier): 1
+(光电二极管, photodiode): 1
+(半导体发光二极管, light-emitting diode): 1
+(施主能级, Donor Level): 9
+(16.59试从泡利不相容原理定性地说明在原子结合成晶体时, 自由原子的能级会发生分裂,形成能带, 16.59 Qualitatively explain how the energy levels of free atoms split and form energy bands when atoms combine to form crystals based on the Pauli exclusion principle): 1
+(势垒, barrier): 36
+(第一台激光器, The first laser): 0
+(集成电路, integrated circuit): 3
+(16.58比较孤立原子中电子与晶体中电子的能量特性, 16.58 Comparing the energy characteristics of electrons in isolated atoms and crystals): 1
+(16.63本征半导体、n型半导体和p型半导体中的载流子各是什么, 16.63 What are the charge carriers in intrinsic semiconductors, n-type semiconductors, and p-type semiconductors): 1
+(四价元素, tetravalent element): 6
+(电流, Current): 643
+(激光理论的研究, Research on laser theory): 1
+(接触电势差, contact potential difference): 2
+(满带, valence band): 35
+(激光器的研制, Development of lasers): 1
+(激光的特性, Characteristics of laser): 3
+(pn结, pn junction): 18
+(杂质, Impurity): 45
+(可控硅整流器, thyristor): 1
+(导电性, Conductivity): 28
+(半导体整流二极管, semiconductor rectifier diode): 1
+(晶体管, transistor): 2
+(电阻, resistor): 36
+(n型半导体, n-type Semiconductor): 12
+(本征导电性, Intrinsic Conductivity): 2
+(正载流子, Positive Charge Carrier): 0
+(纯净半导体, Pure Semiconductor): 3
+(满带, Valence band): 35
+(光电池, photovoltaic cell): 1

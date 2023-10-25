@@ -1,0 +1,18 @@
+﻿{
+"knowledge_points": [
+   {"title": "斯特恩-盖拉赫实验", "en": "Stern-Gerlach experiment"},
+   {"title": "银原子束", "en": "silver atomic beam"},
+   {"title": "狭缝S", "en": "slit S"},
+   {"title": "接收板P", "en": "receiving plate P"},
+   {"title": "磁场", "en": "magnetic field"},
+   {"title": "磁矩", "en": "magnetic moment"},
+   {"title": "小磁铁", "en": "small magnet"},
+   {"title": "均匀磁场", "en": "uniform magnetic field"},
+   {"title": "非均匀磁场", "en": "non-uniform magnetic field"},
+   {"title": "量子化", "en": "quantization"},
+   {"title": "电子轨道运动的磁矩", "en": "magnetic moment of electron orbital motion"},
+   {"title": "角量子数", "en": "angular quantum number"},
+   {"title": "轨道角动量", "en": "orbital angular momentum"},
+   {"title": "底片上原子沉积", "en": "atomic deposition on the film"}
+]
+}

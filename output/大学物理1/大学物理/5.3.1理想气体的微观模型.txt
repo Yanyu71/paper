@@ -1,0 +1,50 @@
+﻿[{
+"knowledge_points": [
+   {"title": "理想气体的微观模型", "en": "Microscopic model of ideal gas"},
+   {"title": "分子力学性质的假设", "en": "Assumptions about molecular mechanical properties"},
+   {"title": "分子集体在平衡态的统计假设", "en": "Statistical assumptions about molecular collective in equilibrium state"},
+   {"title": "气体分子对器壁的压强", "en": "Pressure of gas molecules on the wall"},
+   {"title": "计算气体分子施于器壁的宏观压强的步骤", "en": "Steps to calculate the macroscopic pressure of gas molecules on the wall"},
+   {"title": "单个分子对面积元的作用", "en": "Action of a single molecule on the area element"}
+]
+},{
+"knowledge_points": [
+   {"title": "速度", "en": "velocity"},
+   {"title": "分子", "en": "molecule"},
+   {"title": "冲量", "en": "impulse"},
+   {"title": "面积元", "en": "area element"},
+   {"title": "斜柱体", "en": "slanted cylinder"},
+   {"title": "碰撞", "en": "collision"},
+   {"title": "压强", "en": "pressure"},
+   {"title": "统计平均值", "en": "statistical average"},
+   {"title": "微观模型", "en": "microscopic model"},
+   {"title": "理想气体", "en": "ideal gas"}
+]
+},{
+"knowledge_points": [
+   {"title": "分子速度", "en": "Molecular velocity"},
+   {"title": "理想气体微观模型", "en": "Ideal gas microscopic model"},
+   {"title": "气体分子运动论", "en": "Gas molecular kinetic theory"},
+   {"title": "压强公式", "en": "Pressure formula"},
+   {"title": "气体分子间的碰撞", "en": "Collisions between gas molecules"},
+   {"title": "理想气体的状态方程", "en": "Ideal gas equation of state"},
+   {"title": "平均平动动能", "en": "Average translational kinetic energy"},
+   {"title": "热力学温度", "en": "Thermodynamic temperature"},
+   {"title": "温度的微观本质", "en": "Microscopic nature of temperature"},
+   {"title": "分子热运动剧烈程度", "en": "Intensity of molecular thermal motion"},
+   {"title": "温度的定义", "en": "Definition of temperature"},
+   {"title": "玻意尔定律", "en": "Boyle's law"},
+   {"title": "査理定律", "en": "Charles's law"},
+   {"title": "压强增大的原因", "en": "Reasons for increase in pressure"},
+   {"title": "电子伏特", "en": "Electron volt"}
+]
+},{
+"knowledge_points": [
+   {"title": "瓦", "en": "Watt"},
+   {"title": "J", "en": "Joule"},
+   {"title": "K", "en": "Kelvin"},
+   {"title": "气体动理论", "en": "Kinetic theory of gases"},
+   {"title": "平动动能", "en": "translational kinetic energy"},
+   {"title": "热运动能量", "en": "thermal energy"}
+]
+}]

@@ -1,0 +1,28 @@
+(气体动理论, Kinetic theory of gases): 1
+(每秒, Per second): 1
+(平均自由程, Mean free path): 1
+(麦克斯韦速率分布函数, Maxwell velocity distribution function): 2
+(麦克斯韦速率分布, Maxwell velocity distribution): 4
+(积分, Integral): 3
+(方均根速率, Root mean square velocity): 7
+(分子数比率, Molecular number ratio): 0
+(速率分布函数, Velocity distribution function): 6
+(气体分子运动, Gas molecule motion): 1
+(力, Force): 1
+(物理意义, Physical meaning): 1
+(一化, Normalization): 2
+(平均速率, Average velocity): 7
+(分子总数, Total number of molecules): 3
+(速率区间, Velocity interval): 6
+(米, Meter): 1
+(归一化条件, Normalization condition): 1
+(质量, Mass): 3
+(摩尔质量, Molar mass): 2
+(总分子数, Total number of molecules): 3
+(运动量, Momentum): 0
+(室温, Room temperature): 1
+(最概然速率, Most probable velocity): 4
+(分子数, Number of molecules): 14
+(分子速率, Molecular velocity): 6
+(统计平均值, Statistical average): 4
+(数量级, Order of magnitude): 1

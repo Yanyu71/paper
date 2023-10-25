@@ -1,0 +1,34 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电源电动势", "en": "Power electromotive force"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "导线", "en": "Conductor"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "正极板", "en": "Positive electrode"},
+   {"title": "负极板", "en": "Negative electrode"},
+   {"title": "静电力", "en": "Static electricity"},
+   {"title": "非静电力", "en": "Non-static electricity"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "电动势方向", "en": "Direction of electromotive force"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "化学电池", "en": "Chemical battery"}
+]
+},{
+"knowledge_points": [
+   {"title": "发电机", "en": "Generator"},
+   {"title": "机械能", "en": "Mechanical energy"},
+   {"title": "电能", "en": "Electric energy"},
+   {"title": "水力发电", "en": "Hydropower generation"},
+   {"title": "火力发电", "en": "Thermal power generation"},
+   {"title": "风力发电", "en": "Wind power generation"},
+   {"title": "核能发电", "en": "Nuclear power generation"},
+   {"title": "清洁能源", "en": "Clean energy"},
+   {"title": "环境污染", "en": "Environmental pollution"},
+   {"title": "太阳能电池", "en": "Solar cell"},
+   {"title": "光伏效应", "en": "Photovoltaic effect"},
+   {"title": "温差电源", "en": "Thermoelectric power source"},
+   {"title": "电动势", "en": "Electromotive force"},
+   {"title": "电势差", "en": "Voltage difference"}
+]
+}]

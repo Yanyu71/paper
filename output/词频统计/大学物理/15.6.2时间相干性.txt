@@ -1,0 +1,39 @@
+(圆纹间距, Spacing of interference fringes): 1
+(光波列, Light wave train): 28
+(15.38d的大小, Size of 15.38d): 1
+(绕射, Diffraction): 2
+(影响, Impact): 105
+(干涉, Interference): 487
+(光的衍射规律, Laws of diffraction of light): 1
+(干涉级次, Interference order): 1
+(15.7光的衍射惠更斯-非涅耳原理, Diffraction of light Huygens-Fresnel principle): 1
+(镉灯作光源, Cadmium lamp as light source): 0
+(激光, Laser): 223
+(时间相干性, Temporal coherence): 3
+(水波, Water waves): 20
+(干涉现象, Interference phenomenon): 21
+(圆纹的疏密, Density of circular fringes): 1
+(相干长度和谱线宽度的关系, Relationship between coherence length and spectral line width): 0
+(补偿板, Compensating plate): 3
+(单色性, Monochromaticity): 31
+(15.40相干时间, Coherence time): 0
+(波列长度, Wave packet length): 5
+(菲涅尔, Fresnel): 3
+(光的衍射现象, Diffraction of light): 5
+(等倾干涉圆纹, Equal inclination interference fringes): 2
+(相干时, Coherence time): 4
+(迈克耳孙干涉实验, Michelson interference experiment): 2
+(谱线宽度, Spectral line width): 10
+(最短标准具长度, Length of shortest standard gauge): 1
+(条纹变动数目, Number of fringe variations): 1
+(无线电波, Radio waves): 16
+(波线, Wavefront): 22
+(波动性, Wave nature): 33
+(15.39一次迈克尔孙干涉实验, Michelson interference experiment): 0
+(玻璃板, Glass plate): 16
+(声波, Sound waves): 63
+(千涉条纹, Interference fringes): 7
+(薄膜等厚干涉, Thin film interference): 0
+(波长, Wavelength): 470
+(相干长度, Coherence length): 10
+(光程差, Optical path difference): 68

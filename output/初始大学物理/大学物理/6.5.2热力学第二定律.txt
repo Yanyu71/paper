@@ -1,0 +1,22 @@
+﻿{
+"knowledge_points": [
+   {"title": "热力学第二定律", "en": "Second Law of Thermodynamics"},
+   {"title": "热机效率", "en": "Efficiency of heat engines"},
+   {"title": "卡诺热机循环", "en": "Carnot heat engine cycle"},
+   {"title": "卡诺致冷机", "en": "Carnot refrigeration machine"},
+   {"title": "热力学第一定律", "en": "First Law of Thermodynamics"},
+   {"title": "开尔文表述", "en": "Kelvin's statement"},
+   {"title": "克劳修斯表述", "en": "Clausius's statement"},
+   {"title": "第二类永动机", "en": "Second class perpetual motion machine"},
+   {"title": "自发的功热转化过程的不可逆性", "en": "Irreversibility of spontaneous conversion of work and heat"},
+   {"title": "自发的热传导过程的不可逆性", "en": "Irreversibility of spontaneous heat conduction"}
+]
+}{
+"knowledge_points": [
+   {"title": "图6.20", "en": "Figure 6.20"},
+   {"title": "对外界作功1未引起其它任何变化", "en": "Doing work on the external world without causing any other changes"},
+   {"title": "开尔文表述", "en": "Kelvin's statement"},
+   {"title": "克劳修斯表述", "en": "Clausius' statement"}
+], 
+
+}

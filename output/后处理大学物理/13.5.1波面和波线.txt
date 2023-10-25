@@ -1,0 +1,7 @@
+(波面, Wavefront)
+(平面波, Plane wave)
+(传播方向, Propagation direction)
+(同相面, Phase surface)
+(球面波, Spherical wave)
+(波线, Wavefront)
+(柱面波, Cylindrical wave)

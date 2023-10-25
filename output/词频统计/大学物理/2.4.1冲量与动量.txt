@@ -1,0 +1,2 @@
+(冲量, Impulse): 47
+(动量, Momentum): 476

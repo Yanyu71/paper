@@ -1,0 +1,8 @@
+(转动惯量与质点的质量, Moment of inertia and mass of a particle): 0
+(线速度, Linear velocity): 1
+(刚体的转动动能, Rotational kinetic energy of a rigid body): 0
+(转动惯量, Moment of inertia): 2
+(质点的速度, Velocity of a particle): 1
+(质点动能, Kinetic energy of a particle): 2
+(角速度, Angular velocity): 1
+(刚体绕定轴转动, Rotational motion of rigid body around a fixed axis): 3

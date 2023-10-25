@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "光的波粒二象性", "en": "Wave-particle duality of light"},
+   {"title": "光电效应", "en": "Photoelectric effect"},
+   {"title": "光的本性", "en": "Nature of light"},
+   {"title": "光波的波动性", "en": "Wave nature of light"},
+   {"title": "光波的波长", "en": "Wavelength of light waves"},
+   {"title": "光波的频率", "en": "Frequency of light waves"},
+   {"title": "光波的粒子性", "en": "Particle nature of light waves"},
+   {"title": "光子", "en": "Photon"},
+   {"title": "光子的能量", "en": "Energy of a photon"},
+   {"title": "光子的质量", "en": "Mass of a photon"},
+   {"title": "光子的动量", "en": "Momentum of a photon"},
+   {"title": "普朗克常量", "en": "Planck constant"},
+   {"title": "光压实验", "en": "Pressure of light experiment"},
+   {"title": "逸出功", "en": "Work function"},
+   {"title": "初动能", "en": "Initial kinetic energy"},
+   {"title": "红限频率", "en": "Red limit frequency"}
+]
+}

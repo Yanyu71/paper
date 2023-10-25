@@ -1,0 +1,18 @@
+﻿[{
+"knowledge_points": [
+   {"title": "力矩", "en": "Torque"},
+   {"title": "功", "en": "Work"},
+   {"title": "刚体", "en": "Rigid body"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "转动", "en": "Rotation"},
+   {"title": "力", "en": "Force"},
+   {"title": "角位移", "en": "Angular displacement"},
+   {"title": "力矩的功", "en": "Work of torque"},
+   {"title": "分解", "en": "Decomposition"},
+   {"title": "平行", "en": "Parallel"},
+   {"title": "垂直", "en": "Perpendicular"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "力矩的瞬时功率", "en": "Instantaneous power of torque"},
+   {"title": "合外力矩", "en": "Net external torque"}
+]
+}]

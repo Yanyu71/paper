@@ -1,0 +1,11 @@
+﻿{
+"knowledge_points": [
+   {"title": "匀速率圆周运动", "en": "Uniform circular motion"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "速度增量", "en": "Change in velocity"},
+   {"title": "相似比", "en": "Similarity ratio"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "向心加速度", "en": "Centripetal acceleration"},
+   {"title": "法向加速度", "en": "Normal acceleration"}
+]
+}

@@ -1,0 +1,27 @@
+(电磁感应定律, Faraday's law of electromagnetic induction): 1
+(非静电力, Non-static electricity): 8
+(风力发电, Wind power generation): 4
+(电动势方向, Direction of electromotive force): 0
+(电源电动势, Power electromotive force): 2
+(正极板, Positive electrode): 5
+(电能, Electric energy): 6
+(环境污染, Environmental pollution): 0
+(电势差, Voltage difference): 6
+(静电力, Static electricity): 12
+(电流, Electric current): 6
+(温差电源, Thermoelectric power source): 1
+(化学电池, Chemical battery): 2
+(电势能, Electric potential energy): 1
+(发电机, Generator): 1
+(电动势, Electromotive force): 9
+(水力发电, Hydropower generation): 2
+(机械能, Mechanical energy): 1
+(火力发电, Thermal power generation): 1
+(电势差, Potential difference): 6
+(太阳能电池, Solar cell): 1
+(清洁能源, Clean energy): 1
+(导线, Conductor): 5
+(电荷, Charge): 11
+(负极板, Negative electrode): 5
+(核能发电, Nuclear power generation): 0
+(光伏效应, Photovoltaic effect): 1

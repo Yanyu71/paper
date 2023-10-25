@@ -1,0 +1,52 @@
+﻿{
+"knowledge_points": [
+   {"title": "玻尔的氢原子理论", "en": "Bohr's theory of hydrogen atom"},
+   {"title": "卢瑟福关于原子的有核模型", "en": "Rutherford's nuclear model of the atom"},
+   {"title": "普朗克量子假设", "en": "Planck's quantum hypothesis"},
+   {"title": "里德伯-里兹并合原则", "en": "Rydberg-Ritz combination principle"},
+   {"title": "氢原子结构", "en": "Structure of hydrogen atom"},
+   {"title": "半经典量子理论", "en": "Semi-classical quantum theory"},
+   {"title": "定态", "en": "Stationary state"},
+   {"title": "牟夸", "en": "Energy level"},
+   {"title": "核外电子", "en": "Electron outside the nucleus"},
+   {"title": "稳定圆轨道", "en": "Stable circular orbit"},
+   {"title": "不连续能量", "en": "Discrete energy"},
+   {"title": "跃迁频率公式", "en": "Transition frequency formula"},
+   {"title": "角动量量子化条件", "en": "Quantization condition of angular momentum"},
+   {"title": "量子枣", "en": "Quantum number"},
+   {"title": "玻尔半径", "en": "Bohr radius"},
+   {"title": "基态", "en": "Ground state"},
+   {"title": "受激态", "en": "Excited state"},
+   {"title": "能量量子化", "en": "Quantization of energy"},
+   {"title": "能级", "en": "Energy level"},
+   {"title": "能量间隔", "en": "Energy gap"},
+   {"title": "电离状态", "en": "Ionization state"},
+   {"title": "能级图", "en": "Energy level diagram"}
+]
+}{
+"knowledge_points": [
+   {"title": "电离能", "en": "Ionization energy"},
+   {"title": "玻尔理论", "en": "Bohr theory"},
+   {"title": "氢光谱", "en": "Hydrogen spectrum"},
+   {"title": "里德伯常量", "en": "Rydberg constant"},
+   {"title": "莱曼系", "en": "Lyman series"},
+   {"title": "巴耳末系", "en": "Balmer series"},
+   {"title": "能级跃迁", "en": "Energy level transition"},
+   {"title": "类氢离子", "en": "Hydrogen-like ion"},
+   {"title": "谐振子能量量子化", "en": "Quantization of harmonic oscillator energy"},
+   {"title": "轨道角动量", "en": "Orbital angular momentum"},
+   {"title": "电子轨道半径", "en": "Electron orbital radius"},
+   {"title": "波长", "en": "Wavelength"}
+]
+}{"knowledge_points": [
+   {"title": "双原子气体分子", "en": "Diatomic gas molecule"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "原子", "en": "Atom"},
+   {"title": "距离", "en": "Distance"},
+   {"title": "角动量", "en": "Angular momentum"},
+   {"title": "玻尔氢原子理论", "en": "Bohr's hydrogen atom theory"},
+   {"title": "量子化", "en": "Quantization"},
+   {"title": "转动动能", "en": "Rotational kinetic energy"},
+   {"title": "可能值", "en": "Possible values"},
+   {"title": "转动动能级", "en": "Rotational energy levels"}
+]}

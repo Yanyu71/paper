@@ -1,0 +1,74 @@
+(宏观物体, Macroscopic Object): 1
+(摩擦转动, Frictionless rotation): 1
+(内力, Internal force): 2
+(地面, Ground): 3
+(转动惯量, Moment of inertia): 4
+(角速度, Angular Velocity): 9
+(长度, Length): 1
+(角坐标, Angular coordinates): 1
+(高台跳水, Platform Diving): 1
+(作用力, Force): 2
+(转动惯量可变的非刚体, Non-rigid Body with Variable Moment of Inertia): 1
+(重力势能, Gravitational potential energy): 2
+(角速度, Angular velocity): 9
+(均质细棒, Homogeneous Thin Rod): 1
+(动量定理, Law of conservation of momentum): 6
+(角动量守恒定律, Law of Conservation of Angular Momentum): 10
+(轴承对转台的支持力, Support force of the bearing on the turntable): 0
+(系统角动量守恒, Conservation of angular momentum of the system): 1
+(冰上芭蕾, Ice Ballet): 1
+(跳水, Diving): 2
+(质心轴, Axis through the Center of Mass): 1
+(外力, External force): 10
+(转动定律, Law of rotational motion): 1
+(惯性系, Inertial frame of reference): 2
+(子弹, Bullet): 11
+(翻转, Flipping): 1
+(非刚体, Non-rigid Body): 2
+(合外力矩为零, Net External Torque is Zero): 5
+(水平轴, Horizontal axis): 3
+(力, Force): 40
+(解取人和转台作为系统, The person and the turntable are taken as a system): 1
+(转台, Turntable): 13
+(角动量定理式, Angular Momentum Theorem): 1
+(合外力的冲量为零, Net External Impulse is Zero): 1
+(刚体, Rigid Body): 8
+(角动量定理, Angular momentum theorem): 3
+(转动惯量, Moment of Inertia): 4
+(半径, Radius): 1
+(旋转角速度, Angular Velocity): 1
+(非弹性碰撞, Inelastic collision): 2
+(动能定理, Kinetic energy theorem): 3
+(转动动能, Rotational kinetic energy): 2
+(总伸长量, Total elongation): 1
+(角加速度, Angular acceleration): 1
+(角动量, Angular momentum): 21
+(均质细杆, Homogeneous thin rod): 1
+(定轴转动, Fixed-axis Rotation): 6
+(角动量守恒定律, Law of conservation of angular momentum): 10
+(质点的运动规律, Motion laws of particles): 2
+(刚体的定轴转动规律, Laws of rotational motion of rigid bodies): 2
+(力的功, Work done by force): 1
+(动能, Kinetic energy): 6
+(速度, Velocity): 17
+(动量定理, Momentum Theorem): 6
+(重力, Gravity): 8
+(光滑竖直轴, Smooth Vertical Axis): 1
+(水平轴, Horizontal Axis): 3
+(质量, Mass): 7
+(内力, Internal Force): 2
+(力矩, Torque): 16
+(劲度系数, Spring constant): 1
+(质点, Particle): 8
+(微观粒子的运动, Motion of Microscopic Particles): 0
+(机械能守恒, Law of conservation of mechanical energy): 2
+(刚体力学, Rigid body mechanics): 1
+(体操表演, Gymnastics Performance): 1
+(花样滑冰, Figure Skating): 0
+(加速度, Acceleration): 2
+(动量, Momentum): 30
+(力矩的功, Work done by torque): 1
+(合外力矩为零, Net external torque is zero): 5
+(弹簧的伸长量, Extension of the spring): 1
+(质点力学, Particle mechanics): 1
+(天体运动, Celestial Motion): 1

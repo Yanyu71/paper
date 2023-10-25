@@ -1,0 +1,150 @@
+﻿{
+"knowledge_points": [
+   {"title": "波的干涉", "en": "Interference of waves"},
+   {"title": "相干", "en": "Coherence"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "相遇", "en": "Encounter"},
+   {"title": "波动方程", "en": "Wave equation"},
+   {"title": "波程", "en": "Path difference"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波强", "en": "Wave intensity"},
+   {"title": "分布", "en": "Distribution"},
+   {"title": "干涉现象", "en": "Interference phenomenon"},
+   {"title": "相长", "en": "Constructive interference"},
+   {"title": "相消", "en": "Destructive interference"},
+   {"title": "非相干波", "en": "Incoherent waves"},
+   {"title": "叠加", "en": "Superposition"},
+   {"title": "强度", "en": "Intensity"}
+]
+}{
+"knowledge_points": [
+   {"title": "水波演示干涉现象装置", "en": "Water wave interference demonstration device"},
+   {"title": "波峰", "en": "Crest"},
+   {"title": "波谷", "en": "Trough"},
+   {"title": "干涉相长处", "en": "Interference constructive point"},
+   {"title": "干涉相消处", "en": "Interference destructive point"},
+   {"title": "加强线", "en": "Reinforcement line"},
+   {"title": "减弱线", "en": "Weakening line"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "相干波", "en": "Coherent wave"},
+   {"title": "相遇", "en": "Encounter"},
+   {"title": "波程差", "en": "Path difference"},
+   {"title": "相位公式", "en": "Phase formula"},
+   {"title": "干涉现象的条件", "en": "Conditions for interference phenomenon"},
+   {"title": "能量守恒", "en": "Conservation of energy"},
+   {"title": "合强度", "en": "Total intensity"},
+   {"title": "声干涉仪", "en": "Acoustic interference instrument"},
+   {"title": "声波", "en": "Sound wave"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "声速", "en": "Speed of sound"}
+]
+}{
+"knowledge_points": [
+   {"title": "思考题13.33图", "en": "Exercise 13.33 Figure"},
+   {"title": "驻波", "en": "Standing Wave"}
+]
+}{
+"knowledge_points": [
+   {"title": "波的干涉", "en": "Interference of waves"},
+   {"title": "相干", "en": "Coherence"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "相遇", "en": "Encounter"},
+   {"title": "波动方程", "en": "Wave equation"},
+   {"title": "波程", "en": "Path difference"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波强", "en": "Wave intensity"},
+   {"title": "分布", "en": "Distribution"},
+   {"title": "干涉现象", "en": "Interference phenomenon"},
+   {"title": "相长", "en": "Constructive interference"},
+   {"title": "相消", "en": "Destructive interference"},
+   {"title": "非相干波", "en": "Incoherent waves"},
+   {"title": "叠加", "en": "Superposition"},
+   {"title": "强度", "en": "Intensity"}
+]
+}{
+"knowledge_points": [
+   {"title": "水波演示干涉现象装置", "en": "Water wave interference demonstration device"},
+   {"title": "探针", "en": "Probe"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "相干水波", "en": "Coherent water waves"},
+   {"title": "干涉相长处", "en": "Interference constructive point"},
+   {"title": "干涉相消处", "en": "Interference destructive point"},
+   {"title": "加强线", "en": "Reinforcement line"},
+   {"title": "减弱线", "en": "Weakening line"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "相干结果", "en": "Coherent result"},
+   {"title": "相位公式", "en": "Phase formula"},
+   {"title": "波程差", "en": "Path difference"},
+   {"title": "相长干涉", "en": "Constructive interference"},
+   {"title": "相消干涉", "en": "Destructive interference"},
+   {"title": "相互加强点", "en": "Mutual reinforcement point"},
+   {"title": "相互减弱点", "en": "Mutual weakening point"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "平面余弦波", "en": "Plane cosine wave"},
+   {"title": "合成波", "en": "Composite wave"},
+   {"title": "平面简谐波", "en": "Plane harmonic wave"},
+   {"title": "声干涉仪", "en": "Acoustic interference instrument"},
+   {"title": "声波", "en": "Sound wave"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "声速", "en": "Speed of sound"},
+   {"title": "空气", "en": "Air"}
+]
+}{
+"knowledge_points": [
+   {"title": "思考题13.33图", "en": "Exercise 13.33 Figure"},
+   {"title": "驻波", "en": "Standing Wave"}
+]
+}{
+"knowledge_points": [
+   {"title": "波的干涉", "en": "Interference of waves"},
+   {"title": "相干", "en": "Coherence"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "相遇", "en": "Encounter"},
+   {"title": "波动方程", "en": "Wave equation"},
+   {"title": "波程", "en": "Path difference"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波强", "en": "Wave intensity"},
+   {"title": "分布", "en": "Distribution"},
+   {"title": "干涉现象", "en": "Interference phenomenon"},
+   {"title": "相长", "en": "Constructive interference"},
+   {"title": "相消", "en": "Destructive interference"},
+   {"title": "非相干波", "en": "Incoherent waves"},
+   {"title": "叠加", "en": "Superposition"},
+   {"title": "强度", "en": "Intensity"}
+]
+}{
+"knowledge_points": [
+   {"title": "水波演示干涉现象装置", "en": "Water wave interference demonstration device"},
+   {"title": "波峰", "en": "Crest"},
+   {"title": "波谷", "en": "Trough"},
+   {"title": "干涉相长处", "en": "Interference constructive point"},
+   {"title": "干涉相消处", "en": "Interference destructive point"},
+   {"title": "加强线", "en": "Reinforcement line"},
+   {"title": "减弱线", "en": "Weakening line"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "相干波", "en": "Coherent wave"},
+   {"title": "相遇", "en": "Encounter"},
+   {"title": "波程差", "en": "Path difference"},
+   {"title": "相位公式", "en": "Phase formula"},
+   {"title": "干涉现象的条件", "en": "Conditions for interference phenomenon"},
+   {"title": "能量守恒", "en": "Conservation of energy"},
+   {"title": "合强度", "en": "Total intensity"},
+   {"title": "声干涉仪", "en": "Acoustic interference instrument"},
+   {"title": "声波", "en": "Sound wave"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "声速", "en": "Speed of sound"}
+]
+}{
+"knowledge_points": [
+   {"title": "思考题13.33图", "en": "Exercise 13.33 Figure"},
+   {"title": "驻波", "en": "Standing Wave"},
+   {"title": "§13.8", "en": "Section 13.8"}
+]
+}

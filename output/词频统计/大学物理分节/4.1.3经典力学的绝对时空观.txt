@@ -1,0 +1,11 @@
+(物质运动, Motion of matter): 1
+(观测者, Observer): 2
+(相对运动速度, Relative velocity): 1
+(伽利略变换, Galilean transformation): 4
+(参考系, Reference frame): 0
+(力学相对性原理, Principle of relativity in mechanics): 0
+(绝对时空观, Absolute spacetime view): 2
+(时间间隔, Time interval): 4
+(空间间隔, Space interval): 2
+(惯性系, Inertial frame of reference): 7
+(经典力学, Classical mechanics): 2

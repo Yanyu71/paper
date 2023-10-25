@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "圆周运动", "en": "Circular motion"},
+   {"title": "角量", "en": "Angular quantity"},
+   {"title": "角坐标", "en": "Angular coordinates"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "匀速圆周运动", "en": "Uniform circular motion"},
+   {"title": "匀变速圆周运动", "en": "Uniformly accelerated circular motion"},
+   {"title": "线量", "en": "Linear quantity"},
+   {"title": "线速度", "en": "Linear velocity"},
+   {"title": "切向加速度", "en": "Tangential acceleration"},
+   {"title": "法向加速度", "en": "Normal acceleration"},
+   {"title": "弧长与圆心角的关系", "en": "Relationship between arc length and central angle"}
+]
+}]

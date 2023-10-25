@@ -1,0 +1,29 @@
+(线密度, Linear density): 1
+(对称轴, Axis of symmetry): 4
+(质量分布区域, Region of mass distribution): 1
+(质心, Center of mass): 32
+(对称体系, Symmetric system): 1
+(位置坐标, Position coordinates): 6
+(质量均匀分布, Uniform mass distribution): 1
+(连续分布体, Continuous distribution): 2
+(质点系, System of particles): 12
+(距离, Distance): 1
+(位矢, Position vector): 6
+(重心, Center of gravity): 4
+(质点系, Particle system): 12
+(均匀铁丝, Uniform wire): 1
+(质量元, Mass element): 3
+(质心的动量, Momentum of the center of mass): 1
+(质心位置的计算, Calculation of the position of the center of mass): 1
+(半圆形, Semicircle): 2
+(半径, Radius): 1
+(连线, Line connecting): 1
+(离散分布, Discrete distribution): 1
+(速度, Velocity): 3
+(重力, Gravity): 3
+(质量, Mass): 18
+(质心的总质量, Total mass of the center of mass): 1
+(交点, Intersection): 1
+(动量, Momentum): 4
+(总质量, Total mass): 3
+(动量矢量和, Vector sum of momenta): 0

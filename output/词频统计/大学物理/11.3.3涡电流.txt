@@ -1,0 +1,17 @@
+(地下金属管线, Underground metal pipelines): 1
+(高电阻率材料, High resistivity materials): 0
+(铁芯, Iron core): 6
+(自感, Self-inductance): 81
+(互感, Mutual inductance): 48
+(电磁勘探, Electromagnetic exploration): 1
+(电子感应加速器, Electron induction accelerator): 8
+(磁感应强度, Magnetic induction): 258
+(涡流的利弊, Advantages and disadvantages of eddy currents): 0
+(涡流的热效应, Thermal effect of eddy currents): 1
+(车速表, Speedometer): 2
+(匀强磁场, Uniform magnetic field): 58
+(电磁阻尼, Electromagnetic damping): 3
+(涡流的产生, Generation of eddy currents): 1
+(同心圆形路径, Concentric circular paths): 1
+(电缆, Cable): 19
+(涡电流, Eddy current): 3

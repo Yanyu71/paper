@@ -1,0 +1,10 @@
+(附加磁矩, Additional magnetic moment): 4
+(力矩, Torque): 2
+(磁感应强度, Magnetic induction): 1
+(陀螺, Gyroscope): 2
+(顺磁质, Paramagnetic material): 4
+(进动, Precession): 3
+(磁介质, Magnetic medium): 1
+(轨道角动量, Orbital angular momentum): 1
+(外磁场, External magnetic field): 7
+(轨道磁矩, Orbital magnetic moment): 1

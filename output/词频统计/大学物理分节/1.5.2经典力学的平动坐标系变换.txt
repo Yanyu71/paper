@@ -1,0 +1,77 @@
+(切向加速度, Tangential acceleration): 1
+(伽利略速度变换式, Galilean velocity transformation equation): 2
+(伽利略速度变换式, Galilean velocity transformation): 2
+(角位移, Angular displacement): 1
+(速率, Speed): 7
+(坐标系, Coordinate system): 18
+(相对速度, Relative velocity): 2
+(罗盘, compass): 1
+(位置, position): 11
+(速度变换定理, velocity transformation theorem): 4
+(绝对速度, absolute velocity): 3
+(水平轨道, horizontal track): 2
+(匀加速直线运动, Uniformly accelerated linear motion): 1
+(法向加速度, Normal Acceleration): 2
+(观察, observe): 2
+(猴子, monkey): 18
+(击中猴子, Hit the monkey): 1
+(经典力学, Classical mechanics): 2
+(角度, angle): 1
+(运动参考系, motion reference frame): 2
+(狭义相对论, Special relativity): 0
+(矢量图, vector diagram): 1
+(光速, Speed of light): 1
+(位移, Displacement): 3
+(直线运动, Linear Motion): 8
+(法向加速度, Normal acceleration): 2
+(物体运动速度, Object velocity): 2
+(下雨, rain): 1
+(伽利略变换, Galilean transformation): 1
+(甲对乙的速度, velocity of A relative to B): 1
+(运动方程, motion equation): 5
+(子弹, bullet): 13
+(匀速直线运动, Uniform Linear Motion): 3
+(气流, airflow): 5
+(变速直线运动, Variable Linear Motion): 1
+(伽利略速度变换, Galilean velocity transformation): 3
+(法向分量, Normal Component): 1
+(运动方程, Equation of Motion): 5
+(速度, Velocity): 60
+(位置矢量, Position Vector): 1
+(速度变换式, Velocity transformation equation): 3
+(速度, velocity): 60
+(圆周运动, Circular motion): 4
+(牵连速度, consequential velocity): 2
+(最高点, Highest Point): 0
+(匀速, uniform speed): 7
+(运动方程, Equation of motion): 5
+(航向, heading): 4
+(速度与时间的关系式, Relationship between velocity and time): 1
+(平动坐标系变换, Translation of coordinate systems): 1
+(曲线运动, Curved Motion): 4
+(坐标系, Coordinate System): 18
+(一质点沿尤轴运动, A particle moves along the y-axis): 1
+(飞机, airplane): 9
+(击中, hit): 5
+(相对地面静止的坐标系, Coordinate system relative to the ground): 1
+(相对运动, relative motion): 1
+(圆周运动, Circular Motion): 4
+(抛体运动, Projectile motion): 1
+(基本参考系, basic reference frame): 2
+(甲对丙的速度, velocity of A relative to C): 1
+(自由下落, Free fall): 3
+(风速, wind speed): 3
+(角速度, Angular velocity): 1
+(斜面, Incline): 1
+(位矢, Position vector): 7
+(静止, stationary): 3
+(路程, Distance): 2
+(相对速度, relative velocity): 2
+(匀加速运动, Uniformly Accelerated Motion): 1
+(抛物线运动, Parabolic Motion): 0
+(角加速度, Angular acceleration): 1
+(质点, Particle): 19
+(地面, ground): 9
+(加速度, Acceleration): 16
+(空气阻力, Air resistance): 0
+(角位置, Angular position): 1

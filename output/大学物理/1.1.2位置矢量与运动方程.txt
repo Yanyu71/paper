@@ -1,0 +1,35 @@
+﻿{
+"knowledge_points": [
+   {"title": "位置矢量", "en": "Position Vector"},
+   {"title": "运动方程", "en": "Equations of Motion"},
+   {"title": "直角坐标系", "en": "Cartesian Coordinate System"},
+   {"title": "坐标原点", "en": "Coordinate Origin"},
+   {"title": "参考点", "en": "Reference Point"},
+   {"title": "位矢", "en": "Position Vector"},
+   {"title": "大小", "en": "Magnitude"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "方向余弦", "en": "Direction Cosines"},
+   {"title": "运动", "en": "Motion"},
+   {"title": "时间", "en": "Time"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "二维平面", "en": "Two-dimensional Plane"},
+   {"title": "轨迹", "en": "Trajectory"},
+   {"title": "参数方程", "en": "Parametric Equation"},
+   {"title": "轨迹方程", "en": "Trajectory Equation"},
+   {"title": "解", "en": "Solve"},
+   {"title": "代入", "en": "Substitute"}
+]
+}{
+"knowledge_points": [
+   {"title": "式(1)", "en": "Equation (1)"},
+   {"title": "式(2)", "en": "Equation (2)"},
+   {"title": "参数", "en": "Parameters"},
+   {"title": "轨迹方程", "en": "Trajectory equation"},
+   {"title": "二维轨迹", "en": "2D trajectory"},
+   {"title": "三维轨迹", "en": "3D trajectory"},
+   {"title": "消去参数", "en": "Eliminate parameters"},
+   {"title": "逐点求出", "en": "Calculate point by point"},
+   {"title": "坐标纸", "en": "Coordinate paper"},
+   {"title": "计算机编程", "en": "Computer programming"}
+]
+}

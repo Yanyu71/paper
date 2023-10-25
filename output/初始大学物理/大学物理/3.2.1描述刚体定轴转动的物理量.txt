@@ -1,0 +1,23 @@
+﻿{
+"knowledge_points": [
+   {"title": "刚体定轴转动", "en": "Rigid body rotational motion about a fixed axis"},
+   {"title": "角坐标", "en": "Angular coordinate"},
+   {"title": "角位移", "en": "Angular displacement"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "角加速度", "en": "Angular acceleration"}
+]
+}{
+"knowledge_points": [
+   {"title": "角速度矢量", "en": "Angular velocity vector"},
+   {"title": "转动轴", "en": "Axis of rotation"},
+   {"title": "角速度大小", "en": "Magnitude of angular velocity"},
+   {"title": "右螺旋法则", "en": "Right-hand screw rule"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "角加速度方向", "en": "Direction of angular acceleration"},
+   {"title": "角坐标正方向", "en": "Positive direction of angular coordinates"},
+   {"title": "角速度矢量和角加速度矢量", "en": "Angular velocity vector and angular acceleration vector"},
+   {"title": "矢量运算法则", "en": "Rules of vector operations"},
+   {"title": "刚体绕定轴转动", "en": "Rigid body rotation about a fixed axis"},
+   {"title": "角量的符号", "en": "Sign of angular quantity"}
+]
+}

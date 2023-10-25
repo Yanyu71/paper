@@ -1,0 +1,14 @@
+(亮斑, bright spot): 1
+(衍射条纹, diffraction fringes): 1
+(夫琅禾费衍射, Fraunhofer diffraction): 1
+(平行光, parallel light): 2
+(波长, wavelength): 1
+(宽度, width): 2
+(前焦点, front focal point): 1
+(观测屏幕, observation screen): 1
+(强度, intensity): 1
+(狭缝, slit): 5
+(平行光人射, parallel light incidence): 1
+(衍射屏, diffraction screen): 2
+(透镜, lens): 4
+(焦面, focal plane): 2

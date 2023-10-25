@@ -1,0 +1,26 @@
+﻿[{
+"knowledge_points": [
+   {"title": "物质波", "en": "matter wave"},
+   {"title": "德布罗意假设", "en": "de Broglie hypothesis"},
+   {"title": "波粒二象性", "en": "wave-particle duality"},
+   {"title": "实物粒子", "en": "material particles"},
+   {"title": "光", "en": "light"},
+   {"title": "电子", "en": "electron"},
+   {"title": "原子", "en": "atom"},
+   {"title": "分子", "en": "molecule"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "频率", "en": "frequency"},
+   {"title": "量子化", "en": "quantization"},
+   {"title": "动量", "en": "momentum"},
+   {"title": "能量", "en": "energy"},
+   {"title": "玻尔量子化条件", "en": "Bohr quantization condition"},
+   {"title": "轨道", "en": "orbit"},
+   {"title": "传播", "en": "propagation"},
+   {"title": "稳定圆轨道", "en": "stable circular orbit"},
+   {"title": "波长的整数倍", "en": "integer multiple of wavelength"},
+   {"title": "驻波条件", "en": "standing wave condition"},
+   {"title": "半径", "en": "radius"},
+   {"title": "角动量量子化条件", "en": "quantization condition of angular momentum"},
+   {"title": "氢原子定态能量", "en": "energy of hydrogen atom in a stationary state"}
+]
+}]

@@ -1,0 +1,48 @@
+﻿{
+"knowledge_points": [
+   {"title": "X射线", "en": "X-ray"},
+   {"title": "衍射", "en": "Diffraction"},
+   {"title": "晶体", "en": "Crystal"},
+   {"title": "光栅", "en": "Grating"},
+   {"title": "晶格常量", "en": "Lattice constant"},
+   {"title": "劳厄斑", "en": "Laue spots"},
+   {"title": "相干条件", "en": "Coherence condition"},
+   {"title": "多光束干涉", "en": "Multiple-beam interference"},
+   {"title": "布拉格定律", "en": "Bragg's law"}
+]
+}{
+"knowledge_points": [
+   {"title": "图15*64", "en": "Figure 15*64"},
+   {"title": "第二种情况", "en": "Second case"},
+   {"title": "原子层间的距离", "en": "Distance between atomic layers"},
+   {"title": "束平彳7HIr的X射线", "en": "X-ray with grazing incidence angle P"},
+   {"title": "相邻两层反射波的光程差", "en": "Optical path difference between adjacent layers"},
+   {"title": "葶夸吵亨孕毕兮芩", "en": "Formation of interference pattern"},
+   {"title": "衍射实验", "en": "Diffraction experiment"},
+   {"title": "入射X射线", "en": "Incident X-ray"},
+   {"title": "晶面", "en": "Crystal plane"},
+   {"title": "劳厄斑", "en": "Laue spot"},
+   {"title": "晶格常量", "en": "Lattice constant"},
+   {"title": "X射线结构分析", "en": "X-ray crystallography"},
+   {"title": "X射线光谱分析", "en": "X-ray spectroscopy"},
+   {"title": "晶体微观结构和缺陷", "en": "Crystal microstructure and defects"},
+   {"title": "光栅衍射", "en": "Grating diffraction"},
+   {"title": "暗纹条件", "en": "Dark fringe condition"},
+   {"title": "光栅常量", "en": "Grating constant"},
+   {"title": "缝宽", "en": "Slit width"},
+   {"title": "光栅衍射主极大明纹", "en": "Main bright fringes in grating diffraction"},
+   {"title": "光栅衍射条纹影响因素", "en": "Factors affecting grating diffraction fringes"},
+   {"title": "菲涅耳半波带法", "en": "Fresnel half-period method"},
+   {"title": "光谱重叠", "en": "Spectral overlap"},
+   {"title": "衍射图样变化", "en": "Changes in diffraction pattern"},
+   {"title": "杨氏双缝实验", "en": "Young's double-slit experiment"},
+   {"title": "光强分布", "en": "Intensity distribution"}
+]
+}{"knowledge_points": [
+   {"title": "正人射", "en": "On-axis shooting"},
+   {"title": "单缝衍射", "en": "Single slit diffraction"},
+   {"title": "缝间干涉", "en": "Interference between slits"},
+   {"title": "0级", "en": "Zeroth order"},
+   {"title": "斜人射", "en": "Off-axis shooting"},
+   {"title": "分离", "en": "Separation"}
+]}

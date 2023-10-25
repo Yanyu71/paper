@@ -1,0 +1,22 @@
+(氦氖激光, Helium-neon laser): 15
+(%, %): 178
+(激光器, Laser): 62
+(粒子数反转, Population inversion): 16
+(反射镜, Reflective mirror): 117
+(无辐射跃迁, Non-radiative transition): 2
+(激光的形成, Formation of laser): 4
+(阈值条件, Threshold condition): 5
+(?, ?): 2188
+(能级反转, Population inversion): 0
+(谐振腔, Resonator cavity): 20
+(4, 4): 3719
+(能级图, Energy level diagram): 2
+(激励能源, Excitation energy): 8
+(激光工作物质, Laser working material): 16
+(m, m): 2829
+(亚稳态, Metastable state): 8
+(能级结构, Energy level structure): 4
+(跃迁特性, Transition characteristics): 1
+(增益介质, Gain medium): 8
+(激光工作物质, Laser active medium): 16
+(激光腔, Laser cavity): 2

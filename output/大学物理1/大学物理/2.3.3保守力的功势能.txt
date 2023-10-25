@@ -1,0 +1,26 @@
+﻿[{
+"knowledge_points": [
+   {"title": "保守力", "en": "Conservative force"},
+   {"title": "功", "en": "Work"},
+   {"title": "动能定理", "en": "Kinetic energy theorem"},
+   {"title": "力场", "en": "Force field"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "重力场", "en": "Gravity field"},
+   {"title": "万有引力", "en": "Universal gravitation"},
+   {"title": "弹性力", "en": "Elastic force"},
+   {"title": "劲度系数", "en": "Spring constant"},
+   {"title": "弹簧振子", "en": "Spring oscillator"}
+]
+},{
+"knowledge_points": [
+   {"title": "弹性力", "en": "Elastic force"},
+   {"title": "功", "en": "Work"},
+   {"title": "路径", "en": "Path"},
+   {"title": "摩擦力", "en": "Frictional force"},
+   {"title": "保守力", "en": "Conservative force"},
+   {"title": "耗散力", "en": "Dissipative force"},
+   {"title": "爆炸力", "en": "Explosive force"},
+   {"title": "保守力场", "en": "Conservative force field"},
+   {"title": "势能", "en": "Potential energy"}
+]
+}]

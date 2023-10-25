@@ -1,0 +1,77 @@
+(水, Water): 410
+(大和小, Large and small): 3
+(左右反转, Left-right reversal): 0
+(表14.3, Table 14.3): 2
+(色散像差, Chromatic aberration): 6
+(距球心, Distance from the center of the sphere): 3
+(薄透镜, Thin lens): 142
+(浸泡, Immerse): 3
+(大小, Size): 543
+(放大率, Magnification ratio): 87
+(物体, Object): 721
+(虚像, Virtual image): 44
+(连续变化, Continuous change): 9
+(虚焦点, Virtual focus): 1
+(平面镜, Plane mirror): 14
+(反射定律, Law of reflection): 6
+(广角后视镜, Wide-angle rearview mirror): 1
+(缩小, Reduced): 17
+(两平面反射镜, Two plane mirrors): 2
+(光轴, Optical axis): 107
+(凹球面反射镜, Concave spherical mirror): 7
+(反射镜, Reflecting mirror): 117
+(光路图, Ray diagram): 16
+(兔平面镜, Plane mirror): 1
+(像距, Image distance): 29
+(缩小, Reduction): 17
+(球面像差, Spherical aberration): 10
+(房中相对悬挂的平面镜, Plane mirror hanging in the room): 1
+(焦点, Focus): 63
+(放大率, Magnification): 87
+(凹面镜, Concave mirror): 1
+(正立, Upright): 28
+(凸球面反射镜, Convex spherical mirror): 4
+(位置方位(倒立、正立), Position orientation (inverted, upright): 0
+(实焦点, Real focus): 1
+(物距, Object distance): 24
+(像较暗, Dimmer image): 1
+(楠球, Ellipsoidal surface): 2
+(光线聚焦, Light focusing): 2
+(倒立正立, Inverted upright): 1
+(上下反转, Top-bottom reversal): 0
+(主光线, Principal ray): 11
+(凹球面镜, Concave spherical mirror): 5
+(凹, Concave): 61
+(物像公式, Formula for image formation): 40
+(放大, Magnification): 138
+(像点, Image point): 25
+(像, Image): 610
+(球壳, Spherical shell): 40
+(倒立, Inverted): 30
+(光线, Ray): 158
+(实像, Real image): 38
+(光的反射定律, Law of reflection): 2
+(抛物面, Parabolic surface): 1
+(放大, Enlarged): 138
+(符号规则, Symbol rules): 41
+(阳光点火, Ignite with sunlight): 1
+(实像位置, Position of real image): 1
+(球面反射镜, Spherical mirror): 36
+(傍轴近似, Paraxial approximation): 12
+(物点, Object point): 32
+(凸球面反射镜, Convex spherical reflecting mirror): 4
+(无限远处, Infinity): 8
+(曲率半径, Radius of curvature): 44
+(无穷大, Infinity): 5
+(凹球面反射镜, Concave spherical reflecting mirror): 7
+(条件, Conditions): 293
+(位置类型(虚、实), Position type (virtual, real): 0
+(凸, Convex): 55
+(等距离, Equal distance): 9
+(非球面反射镜, Non-spherical reflecting mirror): 1
+(光源, Light source): 213
+(放大缩小, Magnification): 2
+(凹面反射镜, Concave mirror): 1
+(像高, Image height): 6
+(球面反射镜, Spherical reflecting mirror): 36
+(焦距, Focal length): 116

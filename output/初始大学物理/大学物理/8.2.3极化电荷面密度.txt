@@ -1,0 +1,74 @@
+﻿{
+"knowledge_points": [
+   {"title": "极化电荷面密度", "en": "Polarization charge surface density"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "金属板", "en": "Metal plate"},
+   {"title": "自由电荷面密度", "en": "Free charge surface density"},
+   {"title": "极板间电场强度", "en": "Electric field strength between plates"},
+   {"title": "电介质内部电场强度", "en": "Electric field strength inside dielectric"},
+   {"title": "极化电荷", "en": "Polarization charge"},
+   {"title": "矢量和", "en": "Vector sum"},
+   {"title": "合电场强度", "en": "Total electric field strength"},
+   {"title": "相反方向", "en": "Opposite direction"},
+   {"title": "适用条件", "en": "Applicable conditions"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "闭合圆柱形高斯面", "en": "Closed cylindrical Gaussian surface"},
+   {"title": "电位移矢量", "en": "Displacement vector"},
+   {"title": "导体板", "en": "Conductor plate"}
+]
+}{
+"knowledge_points": [
+   {"title": "极化电荷面密度", "en": "Polarization charge surface density"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "金属板", "en": "Metal plate"},
+   {"title": "自由电荷面密度", "en": "Free charge surface density"},
+   {"title": "极板间电场强度", "en": "Electric field strength between plates"},
+   {"title": "电介质内部电场强度", "en": "Electric field strength inside dielectric"},
+   {"title": "极化电荷", "en": "Polarization charge"},
+   {"title": "矢量和", "en": "Vector sum"},
+   {"title": "合电场强度", "en": "Total electric field strength"},
+   {"title": "相反方向", "en": "Opposite direction"},
+   {"title": "适用条件", "en": "Applicable conditions"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "闭合圆柱形高斯面", "en": "Closed cylindrical Gaussian surface"},
+   {"title": "电位移矢量", "en": "Displacement vector"},
+   {"title": "导体板", "en": "Conductor plate"}
+]
+}{
+"knowledge_points": [
+   {"title": "极化电荷面密度", "en": "Polarization charge surface density"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "金属板", "en": "Metal plate"},
+   {"title": "自由电荷面密度", "en": "Free charge surface density"},
+   {"title": "极板间电场强度", "en": "Electric field strength between plates"},
+   {"title": "电介质内部电场强度", "en": "Electric field strength inside dielectric"},
+   {"title": "极化电荷", "en": "Polarization charge"},
+   {"title": "矢量和", "en": "Vector sum"},
+   {"title": "合电场强度", "en": "Total electric field strength"},
+   {"title": "相反方向", "en": "Opposite direction"},
+   {"title": "适用条件", "en": "Applicable conditions"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "闭合圆柱形高斯面", "en": "Closed cylindrical Gaussian surface"},
+   {"title": "电位移矢量", "en": "Displacement vector"},
+   {"title": "导体板", "en": "Conductor plate"}
+]
+}{
+"knowledge_points": [
+   {"title": "电位移矢量", "en": "Electric displacement vector"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电容率", "en": "Permittivity"},
+   {"title": "高斯面", "en": "Gaussian surface"},
+   {"title": "电位移通量", "en": "Electric displacement flux"},
+   {"title": "弯串兮枣哼WSf苹琿", "en": "Gauss's law for dielectrics"},
+   {"title": "自由电荷", "en": "Free charge"},
+   {"title": "极化电荷", "en": "Polarization charge"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "相对电容率", "en": "Relative permittivity"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "极化电荷面密度", "en": "Polarization charge surface density"},
+   {"title": "高斯定理", "en": "Gauss's theorem"}
+]
+}

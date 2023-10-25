@@ -1,0 +1,46 @@
+(人体组织功能, Human tissue function): 1
+(核磁共振层析术, Nuclear magnetic resonance tomography): 1
+(磁矩, Magnetic Moment): 131
+(扫场线圈, Sweep Coil): 1
+(核磁矩, Nuclear magnetic moment): 19
+(核磁共振方法, Nuclear magnetic resonance method): 1
+(核磁共振谱仪, Nuclear Magnetic Resonance Spectrometer): 1
+(氢核, Hydrogen Nucleus): 3
+(核磁共振法, Nuclear magnetic resonance method): 3
+(电四极矩, Electric Quadrupole Moment): 2
+(辐射跃迁, Radiative Transition): 4
+(化学, Chemistry): 43
+(成像重建, Image reconstruction): 1
+(代谢过程, Metabolic process): 1
+(液体水, Liquid Water): 1
+(相关书籍和文献, Related books and literature): 1
+(跃迁选择定则, Transition Selection Rule): 1
+(生理和生化方面的信息, Physiological and biochemical information): 1
+(特合作, Cooperation): 2
+(临床诊断, Clinical diagnosis): 1
+(核磁共振, Nuclear Magnetic Resonance): 22
+(分子结构, Molecular structure): 6
+(核磁共振仪, Nuclear Magnetic Resonance Instrument): 1
+(安培, Ampere): 129
+(能级分裂, Level Splitting): 7
+(核磁共振实验装置, Nuclear Magnetic Resonance Experimental Setup): 1
+(固体石蜡, Solid Paraffin): 1
+(磁场, Magnetic field): 738
+(医学, Medicine): 12
+(共振吸收, Resonant Absorption): 18
+(氢基态核磁矩, Hydrogen Ground State Nuclear Magnetic Moment): 1
+(核磁矩, Nuclear Magnetic Moment): 19
+(计量科学院, Institute of Metrology): 1
+(宏观样品, Macroscopic Sample): 1
+(高频电磁场, High Frequency Electromagnetic Field): 2
+(自旋, Spin): 88
+(核磁共振实验, Nuclear magnetic resonance experiment): 2
+(现代计算机技术, Modern computer technology): 1
+(吸收曲线, Absorption Curve): 1
+(玻尔兹曼分布, Boltzmann Distribution): 1
+(能级间距, Energy Level Spacing): 1
+(波谱学, Spectroscopy): 1
+(物质结构, Material structure): 6
+(生物科学, Biological science): 2
+(射频场, RF Field): 2
+(共振跃迁, Resonant Transition): 7

@@ -1,0 +1,15 @@
+(线量, Linear quantity): 3
+(线速度, Linear velocity): 2
+(角量, Angular quantity): 5
+(切向加速度, Tangential acceleration): 1
+(角加速度, Angular acceleration): 2
+(定轴转动刚体, Fixed-axis rotation of rigid body): 3
+(位移, Displacement): 2
+(加速度, Acceleration): 6
+(加速转动, Accelerated rotation): 0
+(角位移, Angular displacement): 1
+(转动方向, Direction of rotation): 0
+(角速度, Angular velocity): 2
+(法向加速度, Normal acceleration): 0
+(速度, Velocity): 12
+(减速转动, Decelerated rotation): 0

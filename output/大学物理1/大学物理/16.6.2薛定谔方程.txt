@@ -1,0 +1,40 @@
+﻿[{
+"knowledge_points": [
+   {"title": "薛定谔方程", "en": "Schrodinger equation"},
+   {"title": "微分方程", "en": "differential equation"},
+   {"title": "物质波波函数", "en": "matter wave function"},
+   {"title": "自由粒子", "en": "free particle"},
+   {"title": "动量", "en": "momentum"},
+   {"title": "平面波", "en": "plane wave"},
+   {"title": "位置坐标", "en": "position coordinates"},
+   {"title": "偏导数", "en": "partial derivative"},
+   {"title": "拉普拉斯算符", "en": "Laplacian operator"},
+   {"title": "力学量", "en": "physical quantity"},
+   {"title": "算符", "en": "operator"},
+   {"title": "能量算符", "en": "energy operator"},
+   {"title": "动量算符", "en": "momentum operator"},
+   {"title": "非相对论情况", "en": "non-relativistic case"},
+   {"title": "质量", "en": "mass"},
+   {"title": "外场", "en": "external field"}
+]
+},{
+"knowledge_points": [
+   {"title": "E", "en": "Energy"},
+   {"title": "2M", "en": "Mass"},
+   {"title": "V(r,t)", "en": "Potential function"},
+   {"title": "薛定谔方程", "en": "Schrodinger equation"},
+   {"title": "非相对论情况", "en": "Non-relativistic situation"},
+   {"title": "微观粒子", "en": "Microscopic particles"},
+   {"title": "基本方程", "en": "Fundamental equation"},
+   {"title": "哈密顿算符", "en": "Hamiltonian operator"},
+   {"title": "量子力学", "en": "Quantum mechanics"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "牛顿定律", "en": "Newton's laws"},
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "物质波", "en": "Matter wave"},
+   {"title": "分子", "en": "Molecule"},
+   {"title": "原子", "en": "Atom"},
+   {"title": "微观体系", "en": "Microscopic system"},
+   {"title": "实验", "en": "Experiment"}
+]
+}]

@@ -1,0 +1,63 @@
+﻿{
+"knowledge_points": [
+   {"title": "动力学", "en": "Dynamics"},
+   {"title": "物体", "en": "Object"},
+   {"title": "力", "en": "Force"},
+   {"title": "万有引力", "en": "Universal Gravitation"},
+   {"title": "弹性力", "en": "Elastic Force"},
+   {"title": "摩擦力", "en": "Frictional Force"},
+   {"title": "质点", "en": "Particle"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "吸引力", "en": "Attraction"},
+   {"title": "牛顿运动定律", "en": "Newton's Laws of Motion"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "重量", "en": "Weight"},
+   {"title": "地球", "en": "Earth"},
+   {"title": "重力加速度", "en": "Gravitational Acceleration"}
+]
+}{
+"knowledge_points": [
+   {"title": "弹性力", "en": "Elastic force"},
+   {"title": "弹性形变", "en": "Elastic deformation"},
+   {"title": "支承力", "en": "Support force"},
+   {"title": "重物对支承面的作用", "en": "Action of heavy objects on support surfaces"},
+   {"title": "绳索内的张力", "en": "Tension in ropes"},
+   {"title": "拉力", "en": "Tensile force"},
+   {"title": "绳子内部各段之间的相互作用力", "en": "Mutual interaction forces between different sections of the rope"},
+   {"title": "绳子在截面处的张力", "en": "Tension in the rope at a cross section"},
+   {"title": "缆绳的质量和加速运动状态下的张力分布", "en": "Mass of the cable and tension distribution under acceleration"},
+   {"title": "轻绳的张力分布", "en": "Tension distribution in light ropes"}
+]
+}{
+"knowledge_points": [
+   {"title": "弹性力", "en": "Elastic force", "type": "定义", "description": "当弹簧被拉伸或压缩时,与之相连的物体就会受到弹性力的作用。弹性力的大小与形变成正比。"},
+   {"title": "弹簧的劲度系数", "en": "Spring constant", "type": "定义", "description": "比例系数k称为弹簧的劲度系数，决定于弹簧本身的结构。"},
+   {"title": "摩擦力", "en": "Friction force", "type": "定义", "description": "彼此接触的物体，当它们沿着接触面有相对滑动或有相对滑动趋势时，就会产生一种阻碍相对滑动或相对滑动趋势的力，这种力称为摩擦力。"},
+   {"title": "静摩擦力", "en": "Static friction force", "type": "定义", "description": "两物体相互接触，彼此之间保持相对静止，但有相对滑动趋势时，在两物体接触面间出现的摩擦力，称为静摩擦力。"},
+   {"title": "滑动摩擦力", "en": "Sliding friction force", "type": "定义", "description": "两物体相互接触，并有相对滑动时，在两物体接触处出现的相互作用的摩擦力，称为滑动摩擦力。"}
+]
+}{"knowledge_points": [
+   {"title": "滑动摩擦系数", "en": "Coefficient of sliding friction", "type": "定义", "description": "滑动摩擦系数与接触面的材料、表面状态和相对滑动速度有关，通常随相对速率的增加而稍有减小。"},
+   {"title": "静摩擦系数", "en": "Coefficient of static friction", "type": "定义", "description": "静摩擦系数是滑动摩擦系数中的一种，用于描述两个接触面在静止状态下的摩擦力。静摩擦系数通常大于滑动摩擦系数。"},
+   {"title": "湿摩擦力", "en": "Frictional force in fluid", "type": "定义", "description": "固体在流体中运动时，沿着接触面也有阻碍相对运动的摩擦力，称为湿摩擦力。湿摩擦力的方向与固体相对运动速度的方向相反，其大小与接触面的性质、流体的性质及固体的形状和大小等有关，且随着相对运动速率的增大而增大。"},
+   {"title": "干摩擦力", "en": "Frictional force in dry condition", "type": "定义", "description": "固体在无润滑条件下的摩擦力，即干摩擦力。"},
+   {"title": "摩擦系数", "en": "Coefficient of friction", "type": "定义", "description": "摩擦系数是描述两个接触面之间摩擦力大小的物理量。包括滑动摩擦系数和静摩擦系数。"},
+   {"title": "流体", "en": "Fluid", "type": "定义", "description": "流体是指能够流动的物质，包括液体和气体。"},
+   {"title": "干摩擦", "en": "Dry friction", "type": "定义", "description": "干摩擦是指在无润滑条件下的摩擦。"},
+   {"title": "湿摩擦", "en": "Wet friction", "type": "定义", "description": "湿摩擦是指在流体中运动时的摩擦。"},
+   {"title": "摩擦力", "en": "Frictional force", "type": "定义", "description": "摩擦力是两个接触面之间产生的阻碍相对运动的力。"},
+   {"title": "摩擦的利弊", "en": "Advantages and disadvantages of friction", "type": "描述", "description": "摩擦力是人类生存和发展的必要条件，但同时也会导致能量损耗、机械磨损和事故等问题。人们需要研究如何利用摩擦的有利因素，避免其有害的因素。"}
+]}{
+"knowledge_points": [
+   {"title": "接触力", "en": "Contact force", "type": "包含", "description": "物体之间通过相互接触才能产生的作用力"},
+   {"title": "非接触力", "en": "Non-contact force", "type": "包含", "description": "两物体间不接触而存在的相互作用力"},
+   {"title": "弹性力", "en": "Elastic force", "type": "属于", "description": "一种接触力，由物体的弹性变形引起"},
+   {"title": "摩擦力", "en": "Frictional force", "type": "属于", "description": "一种接触力，由物体表面之间的相互作用引起"},
+   {"title": "万有引力", "en": "Universal gravitation", "type": "属于", "description": "一种非接触力，由物体之间的引力引起"},
+   {"title": "重力", "en": "Gravity", "type": "属于", "description": "一种非接触力，由物体受到地球或其他天体的引力引起"},
+   {"title": "电磁力", "en": "Electromagnetic force", "type": "属于", "description": "一种非接触力，由带电粒子之间的相互作用引起"},
+   {"title": "主动力", "en": "Active force", "type": "包含", "description": "大小和方向不受其它作用力的影响，具有自主地位的力"},
+   {"title": "被动力", "en": "Passive force", "type": "包含", "description": "随外加力的不同而被动地调节其大小乃至方向的作用力"},
+   {"title": "正压力", "en": "Normal force", "type": "属于", "description": "一种被动力，由物体受到支撑面的压力引起"}
+]
+}

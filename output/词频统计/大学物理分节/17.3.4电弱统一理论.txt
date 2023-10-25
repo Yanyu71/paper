@@ -1,0 +1,110 @@
+(电荷守恒定律, Conservation of charge): 0
+(色相互作用, Color interaction): 1
+(粒子的分类, Classification of particles): 1
+(同位旋量子数, Isospin quantum number): 1
+(夸克模型, Quark model): 8
+(能量, Energy): 8
+(色量子数, Color charge): 1
+(质子, Proton): 14
+(重子的夸克组成, Quark composition of baryons): 1
+(克, Quark): 87
+(引力相互作用, Gravitational interaction): 1
+(共振态粒子, Resonance particles): 2
+(粒子的基本属性, Basic properties of particles): 2
+(动量守恒, Conservation of momentum): 2
+(夸克模型, Quark Model): 8
+(光子, Photon): 3
+(重子数和重子数守恒定律, Baryon number and conservation law of baryon number): 1
+(电磁相互作用, Electromagnetic interaction): 7
+(原子核的基本性质, Basic Properties of Atomic Nucleus): 1
+(核裂变, Nuclear fission): 1
+(亮度, Luminosity): 4
+(奇夸克, Strange quark): 3
+(电荷, Charge): 15
+(原子核磁矩, Nuclear magnetic moment): 1
+(吴健雄, Tsung-Dao Lee): 1
+(强相互作用, Strong interaction): 10
+(镜面反演对称性, Mirror inversion symmetry): 3
+(K+介子, K+ meson): 2
+(夸克, Quark): 83
+(强子的多重态, Multiplet of hadrons): 2
+(弱相互作用, Weak interaction): 13
+(e-T疑难, e-T puzzle): 0
+(角动量守恒, Conservation of angular momentum): 1
+(磁矩, Magnetic Moment): 4
+(电弱统一理论, Electroweak Unification Theory): 3
+(同位旋守恒, Isospin conservation): 1
+(质量数, Mass Number): 1
+(强相互作用, Strong Interaction): 10
+(中间玻色子, Intermediate boson): 2
+(弱相互作用, Weak Interaction): 13
+(粲夸克, Charm quark): 5
+(核力, Nuclear force): 3
+(宇称守恒定律, Parity conservation law): 4
+(坐标的镜面反演, Mirror inversion of coordinates): 1
+(核聚变, Nuclear fusion): 1
+(t, Topness): 24
+(分量, Component): 6
+(能量守恒, Conservation of energy): 1
+(e, Elementary charge): 33
+(粒子的状态, Particle state): 0
+(欧姆定律, Ohm's law): 2
+(费米子, Fermion): 3
+(b, Bottomness): 4
+(W+, W+): 3
+(J, Isospin): 11
+(宇称, Parity): 23
+(动量, Momentum): 8
+(轻子数, Lepton Number): 11
+(S, Strangeness): 24
+(反演对称性, Inversion symmetry): 5
+(杨振宁, Yang Zhenning): 3
+(B, Baryon number): 15
+(反粒子, Antiparticles): 5
+(GeV, Giga-electronvolt): 5
+(穆斯堡尔效应, Mössbauer effect): 1
+(坐标的空间反演, Spatial inversion of coordinates): 1
+(重子, Baryon): 26
+(大统一理论, Grand Unified Theory): 1
+(顶夸克, Top quark): 2
+(同位旋, Isospin): 18
+(诺贝尔物理学奖, Nobel Prize in Physics): 3
+(Z°, Z°): 1
+(升级改造工程, Upgrade Project): 0
+(核磁共振, Nuclear magnetic resonance): 1
+(轻子数和轻子数守恒定律, Lepton number and conservation law of lepton number): 1
+(内禀宇称, Intrinsic parity): 1
+(粲夸克和t子物理, Charm Quark and Top Quark Physics): 0
+(原子核的结合能, Nuclear binding energy): 1
+(角动量, Angular Momentum): 6
+(e轻子数, e Lepton Number): 1
+(反奇夸克, Antistrange quark): 0
+(t子质量的精确测量, Precise Measurement of Top Quark Mass): 1
+(波函数, Wave function): 4
+(守恒定律和相互作用, Conservation laws and interactions): 1
+(守恒定律, Conservation Law): 21
+(底夸克, Bottom quark): 5
+(l, Lepton number): 18
+(反重子, Antibaryon): 2
+(Y, Hypercharge): 3
+(同位旋分量, Isospin component): 2
+(北京正负电子对撞机, Beijing Electron-Positron Collider): 2
+(奇异粒子, Strange particle): 6
+(C, Charmness): 9
+(奇异数, Strangeness): 14
+(空间反演操作, Spatial inversion operation): 1
+(Q, Electric charge): 8
+(渐进自由理论, Asymptotic Freedom Theory): 2
+(重子数, Baryon Number): 15
+(物理规律, Physical laws): 2
+(半径, Radius): 1
+(引力子, Graviton): 4
+(相互作用, Interaction): 49
+(粒子物理问题, Particle Physics Problems): 1
+(玻色子, Boson): 6
+(UBS, UBS): 1
+(电磁相互作用, Electromagnetic Interaction): 7
+(W-, W-): 0
+(奇异数和奇异数守恒定律, Strangeness and conservation law of strangeness): 1
+(介子, Meson): 23
+(守恒定律, Conservation law): 21

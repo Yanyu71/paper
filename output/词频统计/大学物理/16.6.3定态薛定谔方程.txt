@@ -1,0 +1,11 @@
+(能量动能, Energy kinetic): 2
+(概率密度, Probability density): 14
+(势能函数, Potential energy function): 12
+(量子化, Quantization): 49
+(空间部分, Spatial part): 1
+(微观粒子的各种定态问题, Various stationary problems of microscopic particles): 1
+(一维定态薛定谔方程, One-dimensional stationary Schrödinger equation): 3
+(粒子在不随时间变化的稳定力场中运动, Particle motion in a stable force field that does not change with time): 0
+(定态波函数, Stationary wave function): 8
+(束缚态, Bound state): 6
+(定态薛定谔方程, Stationary Schrödinger equation): 8

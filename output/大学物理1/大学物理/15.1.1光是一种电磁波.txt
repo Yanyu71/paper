@@ -1,0 +1,43 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电磁波", "en": "Electromagnetic wave"},
+   {"title": "光", "en": "Light"},
+   {"title": "电磁场", "en": "Electromagnetic field"},
+   {"title": "迈克斯韦电磁场理论", "en": "Maxwell's electromagnetic field theory"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "传播", "en": "Propagation"},
+   {"title": "衍射", "en": "Diffraction"},
+   {"title": "折射", "en": "Refraction"},
+   {"title": "偏振", "en": "Polarization"},
+   {"title": "赫兹", "en": "Hertz"},
+   {"title": "实验证", "en": "Experimental verification"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "无线电波", "en": "Radio wave"},
+   {"title": "微波", "en": "Microwave"},
+   {"title": "红外线", "en": "Infrared"},
+   {"title": "紫外线", "en": "Ultraviolet"},
+   {"title": "X射线", "en": "X-ray"},
+   {"title": "1射线", "en": "Gamma ray"},
+   {"title": "电磁波谱", "en": "Electromagnetic spectrum"},
+   {"title": "可见光", "en": "Visible light"},
+   {"title": "颜色", "en": "Color"}
+]
+},{
+"knowledge_points": [
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "人眼对不同波长的光的相对灵敏度", "en": "Relative sensitivity of the human eye to different wavelengths of light"},
+   {"title": "可见光谱", "en": "Visible spectrum"},
+   {"title": "红外线", "en": "Infrared radiation"},
+   {"title": "红外热像", "en": "Infrared thermal imaging"},
+   {"title": "红外通信", "en": "Infrared communication"},
+   {"title": "红外报警", "en": "Infrared alarm"},
+   {"title": "文物鉴定", "en": "Cultural relic identification"},
+   {"title": "红外防伪", "en": "Infrared anti-counterfeiting"},
+   {"title": "紫外线", "en": "Ultraviolet radiation"},
+   {"title": "化学效应", "en": "Chemical effect"},
+   {"title": "荧光效应", "en": "Fluorescence effect"},
+   {"title": "可见光七种颜色的波长和频率", "en": "Wavelength and frequency of the seven colors of visible light"}
+]
+}]

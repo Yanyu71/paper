@@ -1,0 +1,17 @@
+﻿[{
+"knowledge_points": [
+   {"title": "麦克斯韦速率分布律", "en": "Maxwell's velocity distribution law"},
+   {"title": "实验验证", "en": "Experimental verification"},
+   {"title": "斯特恩", "en": "Stern"},
+   {"title": "葛正权", "en": "Ge Zhengquan"},
+   {"title": "密勒", "en": "Miller"},
+   {"title": "库士", "en": "Kusch"},
+   {"title": "速率分布", "en": "Velocity distribution"},
+   {"title": "速率过滤器", "en": "Velocity filter"},
+   {"title": "分子速率分布函数", "en": "Molecular velocity distribution function"},
+   {"title": "最概然速率", "en": "Most probable velocity"},
+   {"title": "平均速率", "en": "Average velocity"},
+   {"title": "方均根速率", "en": "Root mean square velocity"},
+   {"title": "能量分布", "en": "Energy distribution"}
+]
+}]

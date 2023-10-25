@@ -1,0 +1,21 @@
+﻿{
+"knowledge_points": [
+   {"title": "涡电流", "en": "Eddy current"},
+   {"title": "涡流的产生", "en": "Generation of eddy currents"},
+   {"title": "涡流的利弊", "en": "Advantages and disadvantages of eddy currents"},
+   {"title": "高电阻率材料", "en": "High resistivity materials"},
+   {"title": "铁芯", "en": "Iron core"},
+   {"title": "涡流的热效应", "en": "Thermal effect of eddy currents"},
+   {"title": "电磁阻尼", "en": "Electromagnetic damping"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "同心圆形路径", "en": "Concentric circular paths"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电子感应加速器", "en": "Electron induction accelerator"},
+   {"title": "电磁勘探", "en": "Electromagnetic exploration"},
+   {"title": "地下金属管线", "en": "Underground metal pipelines"},
+   {"title": "电缆", "en": "Cable"},
+   {"title": "车速表", "en": "Speedometer"},
+   {"title": "自感", "en": "Self-inductance"},
+   {"title": "互感", "en": "Mutual inductance"}
+]
+}

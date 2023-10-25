@@ -1,0 +1,25 @@
+(动量守恒定律, Law of conservation of momentum): 50
+(X射线, X-ray): 50
+(碰撞, Collision): 207
+(光的量子理论, Quantum theory of light): 3
+(瑞利散射, Rayleigh scattering): 1
+(原子核, Atomic nucleus): 173
+(原子内层电子, Atomic inner-shell electron): 1
+(能量守恒定律, Law of conservation of energy): 19
+(库仑场, Coulomb field): 2
+(反冲电子, Recoil electron): 8
+(量子理论, Quantum theory): 12
+(康普顿散射, Compton scattering): 28
+(能量守恒, Conservation of energy): 25
+(散射线, Scattered ray): 13
+(动量守恒, Conservation of momentum): 100
+(散射线, Scattered line): 13
+(诺贝尔物理学奖, Nobel Prize in Physics): 22
+(经典电磁波理论, Classical electromagnetic wave theory): 3
+(动能, Kinetic energy): 357
+(入射光子, Incident photon): 9
+(微观粒子, Microscopic particle): 58
+(光子流, Photon flux): 1
+(波长的改变量, Change in wavelength): 1
+(动量, Momentum): 476
+(康普顿波长, Compton wavelength): 5

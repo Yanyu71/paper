@@ -1,0 +1,83 @@
+﻿{
+"knowledge_points": [
+   {"title": "磁场能鼉密度", "en": "Magnetic field energy density"},
+   {"title": "线圈的自感", "en": "Self-inductance of a coil"},
+   {"title": "磁场能量", "en": "Magnetic field energy"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Magnetic permeability"},
+   {"title": "各向同性均匀磁介质", "en": "Isotropic homogeneous magnetic medium"},
+   {"title": "磁场能量密度", "en": "Magnetic field energy density"},
+   {"title": "长直载流同轴电缆", "en": "Long straight current coaxial cable"},
+   {"title": "自感系数", "en": "Self-inductance coefficient"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "磁能密度", "en": "Magnetic energy density"},
+   {"title": "体积分", "en": "Volume integration"},
+   {"title": "螺线管", "en": "Solenoid"},
+   {"title": "电容器", "en": "Capacitor"},
+   {"title": "平行板电容器", "en": "Parallel plate capacitor"},
+   {"title": "串接", "en": "In series"},
+   {"title": "电键", "en": "Switch"},
+   {"title": "充电电流", "en": "Charging current"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "感应电流", "en": "Induced current"},
+   {"title": "导线框", "en": "Wire loop"}
+]
+}{
+"knowledge_points": [
+   {"title": "11.36", "en": "11.36"},
+   {"title": "思考题11.34图", "en": "Exercise 11.34 Figure"},
+   {"title": "流", "en": "Current"},
+   {"title": "离导线200mm的一点处磁能密度", "en": "Magnetic energy density at a point 200mm away from the wire"},
+   {"title": "§11.6麦克斯韦电磁场理论简介", "en": "Introduction to Maxwell's electromagnetic field theory"},
+   {"title": "位移电流", "en": "Displacement current"},
+   {"title": "变化的磁场产生有旋电场", "en": "Changing magnetic field generates a curling electric field"},
+   {"title": "电场和磁场的重要性质和规律", "en": "Important properties and laws of electric and magnetic fields"},
+   {"title": "电磁场理论", "en": "Electromagnetic field theory"},
+   {"title": "电磁波的存在", "en": "Existence of electromagnetic waves"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "光的本质是电磁波", "en": "The nature of light is electromagnetic waves"},
+   {"title": "赫兹", "en": "Hertz"},
+   {"title": "麦克斯韦电磁场理论的正确性", "en": "Correctness of Maxwell's electromagnetic field theory"}
+]
+}{
+"knowledge_points": [
+   {"title": "磁场能鼉密度", "en": "Magnetic field energy density"},
+   {"title": "线圈的自感", "en": "Self-inductance of a coil"},
+   {"title": "磁场能量", "en": "Magnetic field energy"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Magnetic permeability"},
+   {"title": "各向同性均匀磁介质", "en": "Isotropic homogeneous magnetic medium"},
+   {"title": "磁场能量密度", "en": "Magnetic field energy density"},
+   {"title": "长直载流同轴电缆", "en": "Long straight current coaxial cable"},
+   {"title": "自感系数", "en": "Self-inductance coefficient"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "磁能密度", "en": "Magnetic energy density"},
+   {"title": "体积分", "en": "Volume integration"},
+   {"title": "螺线管", "en": "Solenoid"},
+   {"title": "电容器", "en": "Capacitor"},
+   {"title": "平行板电容器", "en": "Parallel plate capacitor"},
+   {"title": "串接", "en": "In series"},
+   {"title": "电键", "en": "Switch"},
+   {"title": "充电电流", "en": "Charging current"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "感应电流", "en": "Induced current"},
+   {"title": "导线框", "en": "Wire loop"}
+]
+}{
+"knowledge_points": [
+   {"title": "11.36", "en": "11.36"},
+   {"title": "思考题11.34图", "en": "Exercise 11.34 Figure"},
+   {"title": "流", "en": "Current"},
+   {"title": "离导线200mm的一点处磁能密度", "en": "Magnetic energy density at a point 200mm away from the wire"},
+   {"title": "§11.6麦克斯韦电磁场理论简介", "en": "Introduction to Maxwell's electromagnetic field theory"},
+   {"title": "位移电流", "en": "Displacement current"},
+   {"title": "变化的磁场产生有旋电场", "en": "Changing magnetic field generates a curling electric field"},
+   {"title": "电场和磁场的重要性质和规律", "en": "Important properties and laws of electric and magnetic fields"},
+   {"title": "电磁场理论", "en": "Electromagnetic field theory"},
+   {"title": "电磁波的存在", "en": "Existence of electromagnetic waves"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "光的本质是电磁波", "en": "The nature of light is electromagnetic waves"},
+   {"title": "赫兹", "en": "Hertz"},
+   {"title": "麦克斯韦电磁场理论的正确性", "en": "Correctness of Maxwell's electromagnetic field theory"}
+]
+}

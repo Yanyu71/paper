@@ -1,0 +1,16 @@
+(磁场强度, Magnetic field strength): 2
+(磁滞损耗, Hysteresis loss): 2
+(磁感应强度, Magnetic induction): 4
+(磁滞回线, Hysteresis loop): 4
+(磁导率, Permeability): 3
+(矫顽力, Coercive force): 1
+(铁磁质, Ferromagnetic material): 10
+(磁滞现象, Hysteresis phenomenon): 1
+(磁化规律, Magnetization law): 2
+(能量损失, Energy loss): 1
+(退磁曲线, Demagnetization curve): 1
+(反向饱和磁感应强度, Reverse saturation magnetic induction): 1
+(饱和磁感应强度, Saturation magnetic induction): 2
+(起始磁化曲线, Initial magnetization curve): 1
+(反向磁化, Reverse magnetization): 1
+(剩余磁感应强度, Remanent magnetic induction): 1

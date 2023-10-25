@@ -1,0 +1,13 @@
+(中子, Neutron): 9
+(质子数, Atomic number): 3
+(同位素, Isotope): 2
+(核子数, Number of nucleons): 0
+(质子, Proton): 6
+(偶偶核, Even-even nucleus): 1
+(中子数, Neutron number): 3
+(奇奇核, Odd-odd nucleus): 1
+(同量异位素, Isobars): 1
+(同中子异位素, Isotones): 2
+(奇核, Odd nucleus): 1
+(原子核, Atomic nucleus): 8
+(核子, Nucleon): 2

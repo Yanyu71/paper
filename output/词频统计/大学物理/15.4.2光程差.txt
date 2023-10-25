@@ -1,0 +1,33 @@
+(相干光源, Coherent light sources): 4
+(等光程性, Equal optical path length): 1
+(杨氏双缝实验, Young's double-slit experiment): 4
+(分振幅方法, Amplitude splitting method): 3
+(分振幅行为, Amplitude division behavior): 1
+(干涉, Interference): 487
+(光强, Intensity of light): 183
+(相位差, Phase difference): 116
+(等倾干涉, Equal inclination interference): 16
+(折射率测量, Refractive index measurement): 0
+(杨氏干涉实验, Young's interference experiment): 14
+(薄透镜, Thin lens): 142
+(折射, Refraction): 470
+(光程概念, Concept of optical path): 1
+(费马原理, Fermat's principle): 5
+(干涉条纹, Interference fringes): 122
+(等厚干涉, Equal thickness interference): 29
+(衍射现象, Diffraction phenomenon): 17
+(透明的介质薄膜, Transparent medium film): 1
+(观察, Observation): 257
+(薄膜干涉, Film interference): 7
+(相干光, Coherent light): 58
+(光程, Optical path): 91
+(反射, Reflection): 424
+(形状, Shape): 75
+(薄膜厚度, Film thickness): 9
+(折射率, Refractive index): 163
+(薄膜厚度, Thickness of the film): 9
+(分振幅装置, Amplitude division device): 1
+(波长, Wavelength): 470
+(干涉过程, Interference process): 1
+(光程差, Optical path difference): 68
+(光源尺寸, Light source size): 1

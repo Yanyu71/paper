@@ -1,0 +1,91 @@
+﻿{
+"knowledge_points": [
+   {"title": "菲涅耳双面镜实验", "en": "Fresnel's double-sided mirror experiment"},
+   {"title": "干涉装置", "en": "interference device"},
+   {"title": "相干光", "en": "coherent light"},
+   {"title": "干涉", "en": "interference"},
+   {"title": "反射镜", "en": "mirror"},
+   {"title": "波前", "en": "wavefront"},
+   {"title": "光源", "en": "light source"},
+   {"title": "光程差", "en": "optical path difference"},
+   {"title": "干涉条纹", "en": "interference fringes"},
+   {"title": "夹角", "en": "angle"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "距离", "en": "distance"},
+   {"title": "明条纹", "en": "bright fringe"},
+   {"title": "光波叠加图", "en": "superposition of light waves"},
+   {"title": "镜像对称性", "en": "mirror symmetry"}
+]
+}{
+"knowledge_points": [
+   {"title": "干涉明条纹", "en": "Interference fringes"},
+   {"title": "虚光源", "en": "Virtual light source"},
+   {"title": "光束", "en": "Light beam"},
+   {"title": "屏幕", "en": "Screen"},
+   {"title": "菲涅耳双面镜干涉实验", "en": "Fresnel double-sided mirror interference experiment"},
+   {"title": "劳埃德镜实验", "en": "Lloyd's mirror experiment"},
+   {"title": "普通平板玻璃", "en": "Ordinary flat glass"},
+   {"title": "分波前干涉", "en": "Division of wavefront interference"},
+   {"title": "入射角", "en": "Incident angle"},
+   {"title": "反射镜", "en": "Reflecting mirror"},
+   {"title": "相干光", "en": "Coherent light"},
+   {"title": "波程差", "en": "Optical path difference"},
+   {"title": "半波损失", "en": "Half-wave loss"},
+   {"title": "湖岸", "en": "Lake shore"},
+   {"title": "天线", "en": "Antenna"},
+   {"title": "湖面", "en": "Lake surface"},
+   {"title": "地平线", "en": "Horizon"},
+   {"title": "恒星", "en": "Star"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "掠射角", "en": "Grazing angle"}
+]
+}{
+"knowledge_points": [
+   {"title": "半波损失", "en": "Half-wave loss"},
+   {"title": "干涉条纹", "en": "Interference fringes"},
+   {"title": "干涉条纹间距公式", "en": "Formula for interference fringe spacing"},
+   {"title": "明条纹和暗条纹", "en": "Bright fringes and dark fringes"},
+   {"title": "劳埃德镜", "en": "Lloyd's mirror"},
+   {"title": "半波损失的条件", "en": "Conditions for half-wave loss"},
+   {"title": "光波的空间相干性", "en": "Spatial coherence of light waves"},
+   {"title": "干涉图样的可见度", "en": "Visibility of interference patterns"}
+]
+}{
+"knowledge_points": [
+   {"title": "杨氏干涉实验", "en": "Young's interference experiment"},
+   {"title": "光源", "en": "light source"},
+   {"title": "点光源", "en": "point source"},
+   {"title": "线光源", "en": "line source"},
+   {"title": "干涉条纹", "en": "interference fringes"},
+   {"title": "光瀑笼", "en": "light slits"},
+   {"title": "相对位移", "en": "relative displacement"},
+   {"title": "可见度", "en": "visibility"},
+   {"title": "光源线度", "en": "light source width"},
+   {"title": "波程差", "en": "path difference"},
+   {"title": "空间相干性", "en": "spatial coherence"},
+   {"title": "球面波", "en": "spherical wave"},
+   {"title": "相干光", "en": "coherent light"},
+   {"title": "滤光片", "en": "filter"},
+   {"title": "相位差", "en": "phase difference"}
+]
+}{
+"knowledge_points": [
+   {"title": "杨氏双缝实验", "en": "Young's double-slit experiment"},
+   {"title": "双缝间隔", "en": "distance between the double slits"},
+   {"title": "屏", "en": "screen"},
+   {"title": "干涉条纹", "en": "interference fringes"},
+   {"title": "杨氏干涉装置", "en": "Young's interference apparatus"},
+   {"title": "缝光源", "en": "slit light source"},
+   {"title": "干涉条纹的可见度", "en": "visibility of interference fringes"},
+   {"title": "光源的极限宽度", "en": "limiting width of the light source"},
+   {"title": "菲涅耳双镜干涉实验", "en": "Fresnel biprism interference experiment"},
+   {"title": "两镜交线", "en": "intersection of the two mirrors"},
+   {"title": "菲涅耳双面镜干涉", "en": "Fresnel double-mirror interference"},
+   {"title": "缝光源与点光源", "en": "slit light source vs point light source"},
+   {"title": "干涉条纹的明亮度", "en": "brightness of interference fringes"},
+   {"title": "缝光源的宽度限制", "en": "limitation on the width of the slit light source"},
+   {"title": "缝光源的长度限制", "en": "limitation on the length of the slit light source"},
+   {"title": "光程", "en": "optical path length"},
+   {"title": "光程差", "en": "optical path difference"}
+]
+}

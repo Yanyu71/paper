@@ -1,0 +1,116 @@
+(周期性, Periodicity): 2
+(铬, Chromium): 1
+(汞, Hg): 1
+(量子理论, Quantum Theory): 2
+(锡, Tin): 1
+(钐, Sm): 1
+(钼, Molybdenum): 1
+(锫, Bk): 1
+(钌, Ruthenium): 1
+(锸, Ra): 1
+(锌, Zinc): 1
+(铷, Rubidium): 1
+(锇, Os): 1
+(钨, W): 1
+(钯, Palladium): 1
+(铯, Cesium): 1
+(锆, Zirconium): 1
+(固体, Solid): 7
+(钇, Yttrium): 1
+(锝, Technetium): 1
+(铌, Niobium): 1
+(钚, Pu): 1
+(铂, Pt): 1
+(导电性, Conductivity): 1
+(角量子数, Angular Quantum Number): 4
+(铊, T1): 1
+(窃, Lw): 1
+(钍, Th): 1
+(电子自旋运动状态, Electron spin motion state): 0
+(锶, Strontium): 1
+(电子轨道运动状态, Electron orbital motion state): 1
+(钷, Pm): 1
+(锞, Nickel): 1
+(铑, Rhodium): 1
+(钡, Barium): 1
+(钛, Titanium): 1
+(钒, Vanadium): 1
+(铒, Er): 1
+(镤, Pa): 1
+(镄, Fm): 1
+(铁, Iron): 1
+(韦卜, Po): 1
+(铕, Eu): 1
+(能量最小原理, Principle of Minimum Energy): 3
+(银, Silver): 1
+(泡利不相容原理, Pauli Exclusion Principle): 3
+(钫, ~yr): 1
+(硅, Silicon): 1
+(锕, Ac): 1
+(钾, Potassium): 2
+(依, Ir): 2
+(卿, Arsenic): 1
+(轨道角动量, Orbital angular momentum): 2
+(固体能带结构, Solid Band Structure): 1
+(碲, Tellurium): 1
+(氪, Krypton): 1
+(溴, Bromine): 1
+(硫, Sulfur): 1
+(电子壳层结构, Electron Shell Structure): 2
+(金, Au): 1
+(磁量子数, Magnetic Quantum Number): 3
+(镁, Magnesium): 1
+(钴, Cobalt): 1
+(四个量子数, Four quantum numbers): 2
+(角量子数, Azimuthal quantum number l): 4
+(铝, Aluminum): 1
+(支壳层, Subshell): 10
+(镧, Lanthanum): 1
+(锗, Germanium): 1
+(镓, Gallium): 1
+(铽, Tb): 1
+(主壳层, Shell): 1
+(硒, Selenium): 1
+(钙, Calcium): 1
+(氯, Chlorine): 0
+(锘, No): 1
+(锰, Manganese): 1
+(丰旱nw, Principal quantum number n): 1
+(电子对热容的贡献, Contribution of Electrons to Heat Capacity): 1
+(锿, Es): 1
+(磁量子数, Magnetic quantum number m): 3
+(镥, Lu): 1
+(电子壳层结构, Electron shell structure): 2
+(满壳层, Full Shell): 1
+(壳层, Shell): 36
+(镝, Dy): 1
+(钢, Indium): 1
+(镎, Np): 1
+(柿, Cerium): 1
+(铼, Re): 1
+(电子数, Number of Electrons): 7
+(磷, Phosphorus): 1
+(礼, Gd): 1
+(热传导, Thermal Conductivity): 1
+(钕, Nd): 1
+(原子序数, Atomic Number): 3
+(氡, Rn): 1
+(氩, Argon): 1
+(钽, Ta): 1
+(铜, Copper): 1
+(钔, Md): 1
+(铀, U): 1
+(铅, Pb): 3
+(镅, Am): 1
+(锔, Cm): 1
+(砹, At): 1
+(镉, Cadmium): 1
+(抗, Scandium): 1
+(泡利不相容原理, Pauli exclusion principle): 3
+(餘, Hf): 1
+(钬, Ho): 1
+(镰, Yb): 1
+(祕, Bi): 1
+(碘, Iodine): 1
+(自旋磁量子数, Spin magnetic quantum number s): 1
+(铥, Tm): 1

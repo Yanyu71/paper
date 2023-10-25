@@ -1,0 +1,53 @@
+(振幅, Amplitude): 244
+(水平弹簧振子, Horizontal Spring Pendulum): 3
+(余弦函数, Cosine Function): 12
+(胡克定律, Hooke's Law): 2
+(减速运动, Decelerated Motion): 9
+(频率, Frequency): 461
+(劲度系数, Spring Constant): 35
+(小振幅振动, Small Amplitude Vibration): 0
+(位移, Displacement): 214
+(初速, Initial Velocity): 37
+(压缩, Compression): 43
+(合成, Composition): 133
+(符号相反, Opposite signs): 4
+(变形量, Deformation): 2
+(弹簧振子, Spring oscillator): 59
+(弹簧原长, Natural Length of Spring): 9
+(单摆, Pendulum): 39
+(微分方程, Differential equation): 75
+(运动规律, Motion Law): 25
+(加速运动, Accelerated Motion): 20
+(弹簧, Spring): 224
+(角频率, Angular frequency): 40
+(时间曲线, Time curve): 6
+(正弦函数, Sine function): 2
+(谐振动, Harmonic Motion): 244
+(平衡位置, Equilibrium Position): 72
+(力, Force): 2617
+(通解, General Solution): 5
+(简谐振动, Simple Harmonic Motion): 30
+(往复运动, Oscillatory Motion): 3
+(余弦函数, Cosine function): 12
+(合力, Net Force): 66
+(惯性, Inertia): 201
+(弹簧振子, Spring Pendulum): 59
+(弹性, Elasticity): 152
+(自由振动, Free Vibration): 6
+(坐标, Coordinate): 442
+(速度, Velocity): 1354
+(弹性回复力, Restoring Force): 19
+(质量, Mass): 641
+(正弦, Sine): 18
+(余弦, Cosine): 30
+(谐振动, Harmonic oscillation): 244
+(通解, General solution): 5
+(机械振动, Mechanical Vibration): 13
+(运动微分方程, Differential Equation of Motion): 28
+(正弦函数, Sine Function): 2
+(相位, Phase): 226
+(加速度, Acceleration): 397
+(阻力, Resistance): 74
+(弹簧变形量, Deformation of Spring): 1
+(振动, Vibration): 824
+(动力学特征, Dynamic characteristics): 0

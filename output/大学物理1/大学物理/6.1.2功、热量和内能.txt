@@ -1,0 +1,70 @@
+﻿[{
+"knowledge_points": [
+   {"title": "功", "en": "Work"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "内能", "en": "Internal energy"},
+   {"title": "外界", "en": "External environment"},
+   {"title": "系统", "en": "System"},
+   {"title": "态", "en": "State"},
+   {"title": "机械能", "en": "Mechanical energy"},
+   {"title": "热运动", "en": "Thermal motion"},
+   {"title": "准静态过程", "en": "Quasi-static process"},
+   {"title": "气缸", "en": "Cylinder"},
+   {"title": "气体", "en": "Gas"},
+   {"title": "压强", "en": "Pressure"},
+   {"title": "活塞", "en": "Piston"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "体积", "en": "Volume"},
+   {"title": "总功", "en": "Total work"},
+   {"title": "蒸汽机", "en": "Steam engine"},
+   {"title": "内燃机", "en": "Internal combustion engine"},
+   {"title": "体积功", "en": "Volume work"},
+   {"title": "P-F图", "en": "P-V diagram"},
+   {"title": "过程量", "en": "Process quantity"}
+]
+},{
+"knowledge_points": [
+   {"title": "功", "en": "work"},
+   {"title": "状态函数", "en": "state function"},
+   {"title": "准静态过程", "en": "quasi-static process"},
+   {"title": "体积功", "en": "volume work"},
+   {"title": "能量传递", "en": "energy transfer"},
+   {"title": "能量转化", "en": "energy conversion"},
+   {"title": "理想气体", "en": "ideal gas"},
+   {"title": "压强", "en": "pressure"},
+   {"title": "体积", "en": "volume"},
+   {"title": "关系式", "en": "relationship equation"},
+   {"title": "系统", "en": "system"},
+   {"title": "外界", "en": "surroundings"},
+   {"title": "热量", "en": "heat"},
+   {"title": "温度", "en": "temperature"},
+   {"title": "能量交换", "en": "energy exchange"},
+   {"title": "比热", "en": "specific heat"},
+   {"title": "摩尔热容", "en": "molar heat capacity"},
+   {"title": "定体摩尔热容", "en": "constant volume molar heat capacity"},
+   {"title": "定压摩尔热容", "en": "constant pressure molar heat capacity"},
+   {"title": "等体过程", "en": "isochoric process"},
+   {"title": "等压过程", "en": "isobaric process"},
+   {"title": "吸热", "en": "heat absorption"},
+   {"title": "放热", "en": "heat release"},
+   {"title": "温度变化", "en": "temperature change"},
+   {"title": "摩尔热容与温度关系", "en": "relationship between molar heat capacity and temperature"},
+   {"title": "过程量", "en": "process quantity"}
+]
+},{
+"knowledge_points": [
+   {"title": "内能", "en": "Internal Energy"},
+   {"title": "热力学系统", "en": "Thermodynamic System"},
+   {"title": "热运动状态", "en": "Thermal Motion State"},
+   {"title": "作功", "en": "Work"},
+   {"title": "传热", "en": "Heat Transfer"},
+   {"title": "状态函数", "en": "State Function"},
+   {"title": "理想气体", "en": "Ideal Gas"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "内能增量", "en": "Change in Internal Energy"},
+   {"title": "机械能", "en": "Mechanical Energy"},
+   {"title": "准静态过程", "en": "Quasi-static Process"},
+   {"title": "体积变化", "en": "Volume Change"},
+   {"title": "外界对系统作功", "en": "Work Done by the Surroundings on the System"}
+]
+}]

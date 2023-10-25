@@ -1,0 +1,12 @@
+(低温热源, Low temperature heat source): 47
+(热力学第一定律, First law of thermodynamics): 36
+(吸热, Heat absorption): 30
+(被制冷的对象, Object being refrigerated): 1
+(作功, Work done): 144
+(致冷机性能, Refrigeration machine performance): 0
+(制冷机, Refrigeration machine): 2
+(逆循环, Reverse cycle): 7
+(致冷系数, Coefficient of refrigeration): 17
+(放热, Heat release): 16
+(高温热源, High temperature heat source): 27
+(工质, Working fluid): 34

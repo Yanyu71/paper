@@ -1,0 +1,14 @@
+(波速, Wave speed): 2
+(振幅, Amplitude): 6
+(波动方程, Wave equation): 1
+(介质, Medium): 6
+(波面, Wavefront): 1
+(波, Wave): 21
+(波源, Wave source): 3
+(矢量, Vector): 1
+(吸收能量, Absorb energy): 3
+(平面波, Plane wave): 0
+(频率, Frequency): 1
+(球面波, Spherical wave): 3
+(能流密度, Energy flux density): 3
+(能量, Energy): 5

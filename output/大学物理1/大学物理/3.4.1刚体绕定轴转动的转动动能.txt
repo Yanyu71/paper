@@ -1,0 +1,12 @@
+﻿[{
+"knowledge_points": [
+   {"title": "刚体绕定轴转动", "en": "Rotational motion of rigid body around a fixed axis"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "线速度", "en": "Linear velocity"},
+   {"title": "质点动能", "en": "Kinetic energy of a particle"},
+   {"title": "刚体的转动动能", "en": "Rotational kinetic energy of a rigid body"},
+   {"title": "质点的速度", "en": "Velocity of a particle"},
+   {"title": "转动惯量与质点的质量", "en": "Moment of inertia and mass of a particle"}
+]
+}]

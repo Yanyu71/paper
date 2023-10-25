@@ -1,0 +1,28 @@
+(分布情况, distribution): 1
+(电势, Electric potential): 1
+(导体球, conductor sphere): 1
+(电场强度, electric field strength): 2
+(运动周期, Period of motion): 1
+(任意形状的带电体之间的作用力, Force between charged objects of any shape): 1
+(电子, electron): 3
+(质子, proton): 3
+(牛顿万有引力定律, Newton's law of universal gravitation): 1
+(带电体的大小, Size of charged object): 0
+(静电力叠加原理, Principle of superposition of electrostatic forces): 1
+(质量, mass): 2
+(电荷, charge): 27
+(相似之处, similarities): 1
+(带电体, Charged object): 4
+(世界, world): 1
+(不同之处, differences): 1
+(符号颠倒, reversal of symbols): 1
+(带电粒子, charged particle): 1
+(静电力, electrostatic force): 7
+(点电荷, Point charge): 14
+(相接触, in contact): 1
+(库仑定律, Coulomb's law): 3
+(电场强度, Electric field strength): 2
+(电荷均勾分布的球壳, spherical shell with uniformly distributed charge): 1
+(受力情况, force situation): 1
+(圆周运动的半径与周期的关系, Relationship between radius and period of circular motion): 0
+(圆周运动, Circular motion): 0

@@ -1,0 +1,44 @@
+﻿{
+"knowledge_points": [
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "绝对时空观", "en": "Absolute space-time view"},
+   {"title": "同时性", "en": "Simultaneity"},
+   {"title": "相对性", "en": "Relativity"},
+   {"title": "狭义相对论", "en": "Special relativity"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "惯性系", "en": "Inertial frame of reference"},
+   {"title": "事件", "en": "Event"},
+   {"title": "光信号", "en": "Light signal"},
+   {"title": "时空坐标", "en": "Space-time coordinates"},
+   {"title": "时间间隔", "en": "Time interval"},
+   {"title": "北京", "en": "Beijing"},
+   {"title": "广州", "en": "Guangzhou"},
+   {"title": "火车", "en": "Train"},
+   {"title": "高速飞行器", "en": "High-speed aircraft"}
+]
+}{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"},
+   {"title": "推荐系统", "en": "Recommendation System"}
+], 
+
+}

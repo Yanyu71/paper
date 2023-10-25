@@ -1,0 +1,54 @@
+﻿{
+"knowledge_points": [
+   {"title": "光的反射和折射定律", "en": "Laws of reflection and refraction of light"},
+   {"title": "入射线", "en": "Incident ray"},
+   {"title": "反射线", "en": "Reflected ray"},
+   {"title": "折射线", "en": "Refracted ray"},
+   {"title": "法线", "en": "Normal"},
+   {"title": "入射面", "en": "Incident plane"},
+   {"title": "入射角", "en": "Incident angle"},
+   {"title": "反射角", "en": "Reflected angle"},
+   {"title": "折射角", "en": "Refracted angle"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "光密介质", "en": "Dense medium"},
+   {"title": "光疏介质", "en": "Rare medium"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "速率", "en": "Speed"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "反射镜", "en": "Reflecting mirror"}
+]
+}{
+"knowledge_points": [
+   {"title": "光的反射定律", "en": "Law of Reflection"},
+   {"title": "几何光学", "en": "Geometric Optics"},
+   {"title": "光的折射定律", "en": "Law of Refraction"},
+   {"title": "镜面反射", "en": "Mirror Reflection"},
+   {"title": "全身像", "en": "Full-body Image"},
+   {"title": "折射定律", "en": "Law of Refraction"},
+   {"title": "分界面", "en": "Interface"},
+   {"title": "透镜物像公式", "en": "Lens Formula"},
+   {"title": "折射率", "en": "Refractive Index"}
+]
+}{
+"knowledge_points": [
+   {"title": "光疏介质", "en": "Optically rare medium"},
+   {"title": "光密介质", "en": "Optically dense medium"},
+   {"title": "物体", "en": "Object"},
+   {"title": "分界面", "en": "Interface"},
+   {"title": "观察者", "en": "Observer"},
+   {"title": "光路图", "en": "Ray diagram"},
+   {"title": "光的折射", "en": "Refraction of light"},
+   {"title": "海市蜃楼", "en": "Mirage"},
+   {"title": "光的反射", "en": "Reflection of light"}
+],
+"relationships": [
+   {"source": "光疏介质", "target": "光密介质", "type": "看"},
+   {"source": "物体", "target": "分界面", "type": "离开"},
+   {"source": "观察者", "target": "分界面", "type": "认为"},
+   {"source": "光密介质", "target": "光疏介质", "type": "看"},
+   {"source": "光的折射", "target": "海市蜃楼", "type": "现象"},
+   {"source": "光的折射", "target": "光路图", "type": "借助"},
+   {"source": "光的折射", "target": "折射定律", "type": "借助"},
+   {"source": "光的反射", "target": "光的折射", "type": "通过"}
+]
+}

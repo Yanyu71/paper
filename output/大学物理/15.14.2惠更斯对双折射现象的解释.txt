@@ -1,0 +1,31 @@
+﻿{
+"knowledge_points": [
+   {"title": "惠更斯", "en": "Huygens"},
+   {"title": "双折射现象", "en": "birefringence"},
+   {"title": "电磁场理论", "en": "electromagnetic field theory"},
+   {"title": "晶体", "en": "crystal"},
+   {"title": "光波", "en": "light wave"},
+   {"title": "双折射", "en": "birefringence"},
+   {"title": "波面", "en": "wavefront"},
+   {"title": "光轴", "en": "optic axis"},
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "单轴晶体", "en": "uniaxial crystal"},
+   {"title": "主折射率", "en": "principal refractive index"}
+]
+}{
+"knowledge_points": [
+   {"title": "入射角", "en": "Incident angle", "type": "相关", "description": "入射角是指光线与表面法线之间的夹角。"},
+   {"title": "主折射率", "en": "Principal refractive index", "type": "相关", "description": "主折射率是指光在晶体中传播时的折射率。"},
+   {"title": "光轴", "en": "Optical axis", "type": "相关", "description": "光轴是指晶体中光传播方向的特殊方向。"},
+   {"title": "平面波", "en": "Plane wave", "type": "相关", "description": "平面波是指波前面是一个平面的波。"},
+   {"title": "波面", "en": "Wavefront", "type": "相关", "description": "波面是指波的传播过程中相位相同的点的集合。"},
+   {"title": "球面次波", "en": "Spherical secondary wave", "type": "相关", "description": "球面次波是指从波源点向外传播的球面波。"},
+   {"title": "旋转椭球面次波", "en": "Rotating ellipsoidal secondary wave", "type": "相关", "description": "旋转椭球面次波是指从波源点向外传播的旋转椭球面波。"},
+   {"title": "折射光线", "en": "Refracted ray", "type": "相关", "description": "折射光线是指光线在介质中由于折射而改变传播方向的光线。"},
+   {"title": "双折射现象", "en": "Birefringence phenomenon", "type": "相关", "description": "双折射现象是指光在双折射晶体中传播时出现的两个折射光线的现象。"},
+   {"title": "线偏振光", "en": "Linearly polarized light", "type": "相关", "description": "线偏振光是指光的电场矢量只在一个固定方向上振动的光。"},
+   {"title": "偏振片", "en": "Polarizer", "type": "相关", "description": "偏振片是一种能够选择性地通过或阻挡特定方向偏振光的光学器件。"},
+   {"title": "尼科耳棱镜", "en": "Nicol prism", "type": "相关", "description": "尼科耳棱镜是一种利用双折射现象制成的棱镜，用于获得线偏振光。"},
+   {"title": "渥拉斯顿棱镜", "en": "Wollaston prism", "type": "相关", "description": "渥拉斯顿棱镜是一种利用双折射现象制成的棱镜，用于获得线偏振光。"}
+]
+}

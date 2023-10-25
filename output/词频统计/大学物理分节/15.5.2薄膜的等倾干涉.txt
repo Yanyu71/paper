@@ -1,0 +1,63 @@
+(氟化镁, Magnesium fluoride): 5
+(平整度, Flatness): 0
+(厚度, Thickness): 29
+(薄膜, Thin film): 30
+(肥皂液膜, Soap film): 1
+(玻璃平板, Glass plate): 2
+(二氧化硅, Silicon dioxide): 2
+(透射式干涉滤色片, Transmissive interference filter): 0
+(反射式干涉滤色片, Reflective interference filter): 0
+(干涉, Interference): 62
+(半反射板, Semi-reflective plate): 4
+(实验装置, Experimental setup): 1
+(平板厚度, Plate thickness): 2
+(等倾干涉, Equal inclination interference): 10
+(相位差, Phase difference): 1
+(增反膜, Anti-reflective film): 1
+(反射面, Reflective surface): 2
+(介质折射率, Refractive index of medium): 1
+(凹凸不平, Uneven): 1
+(雷达波, Radar wave): 1
+(电介质, Dielectric): 2
+(小孔光源, Pinhole light source): 1
+(透镜, Lens): 6
+(镀膜, Coating): 3
+(实时监控镀膜厚度, Real-time monitoring of coating thickness): 1
+(干涉图样, Interference pattern): 3
+(薄膜干涉原理, Thin film interference principle): 1
+(时间相干性, Temporal coherence): 1
+(等倾干涉, Equal-inclination interference): 10
+(薄膜层, Thin film layer): 2
+(光波, Light wave): 5
+(干涉条纹, Interference fringes): 18
+(等厚干涉, Equal thickness interference): 9
+(等倾干涉实验, Equal inclination interference experiment): 1
+(入射角, Incident angle): 2
+(反射光, Reflected light): 23
+(条纹间距, Fringe spacing): 1
+(透明介质膜, Transparent dielectric film): 3
+(暗纹公式, Formula for dark fringes): 1
+(迈克耳孙干涉仪, Michelson interferometer): 1
+(半波损失, Half-wave loss): 6
+(明纹公式, Formula for bright fringes): 1
+(ZnS介质膜, ZnS dielectric film): 1
+(暗条纹, Dark fringe): 1
+(蓝紫色, Blue-violet color): 2
+(反射光干涉相消, Interference cancellation of reflected light): 2
+(油膜, Oil film): 9
+(反射波干涉相消, Interference cancellation of reflected waves): 1
+(环纹半径, Radius of the ring): 1
+(高精度平板, High precision plate): 1
+(反射光增强, Reflection enhancement): 1
+(光波波长, Wavelength of light wave): 1
+(玻璃板, Glass plate): 3
+(滤光, Filtering): 1
+(增透膜, Anti-reflection coating): 2
+(折射率, Refractive index): 12
+(薄膜厚度, Thickness of thin film): 7
+(明条纹, Bright fringe): 2
+(牛顿环, Newton's rings): 5
+(单色光, Monochromatic light): 6
+(波长, Wavelength): 17
+(空气劈尖, Air wedge): 1
+(光程差, Optical path difference): 8

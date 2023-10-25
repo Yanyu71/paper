@@ -1,0 +1,143 @@
+(加速度方向, Direction of acceleration): 6
+(g-1/2, g-1/2): 1
+(左旋, Counterclockwise rotation): 7
+(原子振动频率, Atomic vibration frequency): 1
+(频率, Frequency): 461
+(平衡轮的周期, Period of a balance wheel): 0
+(振动方程, Oscillation equation): 51
+(扭转系数, Torsion coefficient): 3
+(振动的分解, Decomposition of Vibration): 1
+(音叉, Tuning fork): 10
+(同方向同频率的简谐振动, Harmonic oscillations with the same direction and frequency): 1
+(液体柱的运动微分方程, Differential equation of liquid column motion): 1
+(相对改变, Relative change): 2
+(临界阻尼, Critical Damping): 4
+(B-52, B-52): 5
+(质量为25kg的木块, A block with a mass of 25kg): 1
+(弹簧振子, Spring oscillator): 59
+(劲度系数为1250N_nT1的弹簧, A spring with a stiffness coefficient of 1250N_nT1): 1
+(微分方程, Differential equation): 75
+(合成振动的轨迹, Trajectory of the composite oscillation): 1
+(静止被释放, Released from rest): 1
+(余弦振动, Cosine oscillation): 1
+(平衡位置, Equilibrium position): 72
+(固有频率, Natural frequency): 13
+(单摆周期, Pendulum period): 3
+(汽车, Car): 29
+(叠加, Superposition): 173
+(弦, String): 72
+(势能, Potential Energy): 272
+(速度振幅, Velocity amplitude): 5
+(固体, Solid): 73
+(弹簧的劲度系数, Spring constant): 7
+(活塞, Piston): 25
+(位移共振, Displacement Resonance): 1
+(Ag的更髙次项小量, Higher order terms of Ag): 0
+(小阻尼, Small Damping): 5
+(物体, Object): 721
+(钟的准确性与温度, Accuracy of a clock and temperature): 0
+(谐振动, Harmonic oscillation): 244
+(拍频, Beat Frequency): 7
+(螺旋形弹簧, Spiral spring): 1
+(单摆的周期, Period of a pendulum): 2
+(小球, Ball): 165
+(周期, Period): 196
+(机械振动, Mechanical vibration): 13
+(受迫振动, Forced Vibration): 18
+(振幅比, Amplitude ratio): 2
+(振幅衰减, Amplitude decay): 2
+(耦合双振子系统, Coupled double pendulum system): 2
+(冲压喷气发动机, Ramjet engine): 2
+(右旋, Clockwise rotation): 9
+(耦合振子, Coupled oscillators): 3
+(碗底, Bowl bottom): 1
+(振动频率, Vibration frequency): 23
+(自由度, Degrees of freedom): 86
+(振动系统, Oscillation system): 12
+(位移, Displacement): 214
+(最大频率, Maximum frequency): 1
+(阻尼振动, Damped Vibration): 7
+(振动周期, Vibration period): 11
+(大阻尼, Large Damping): 6
+(地球, Earth): 236
+(单摆, Pendulum): 39
+(合振动, Combined oscillation): 26
+(角频率, Angular frequency): 40
+(弹簧, Spring): 224
+(简化, Simplification): 32
+(U+Ag)_1/2展开, Expansion of U+Ag): 1
+(初始振幅和相位, Initial amplitude and phase): 1
+(合振动的初相位, Initial phase of combined oscillation): 0
+(频率测量, Frequency measurement): 0
+(频率方程, Frequency equation): 1
+(等效劲度系数, Equivalent spring constant): 1
+(简谐振动, Simple Harmonic Motion): 30
+(小阻尼, Small damping): 5
+(固定轴, Fixed axis): 8
+(g4/2Ag, g4/2Ag): 1
+(李萨如图形, Lissajous Figure): 2
+(合振动振帳, Zero amplitude of the combined oscillation): 1
+(合振动振幡, Maximum amplitude of the combined oscillation): 1
+(坐标, Coordinate): 442
+(合成运动, Composite motion): 23
+(初相, Initial phase): 68
+(砝码, Weight): 5
+(速度, Velocity): 1354
+(摆动, Swing): 22
+(能量动能, Kinetic Energy): 2
+(选择题, Multiple Choice): 14
+(摆长, Pendulum length): 2
+(运动微分方程, Differential Equation of Motion): 28
+(相位, Phase): 226
+(质点的谐振动, Harmonic oscillation of a particle): 0
+(时间, Time): 561
+(最大速率, Maximum velocity): 3
+(简正振动模式, Normal mode of vibration): 4
+(转动惯量, Moment of inertia): 98
+(简正频率, Normal frequencies): 6
+(火箭推进器, Rocket booster): 1
+(t时的位移, Displacement at time t): 1
+(相互垂直的两个简谐振动的合成, Composite of Perpendicular Simple Harmonic Vibrations): 1
+(周期性外力, Periodic external force): 3
+(阻尼振动的角频率, Angular frequency of damped oscillation): 1
+(最大加速度, Maximum acceleration): 4
+(简正振动, Normal modes): 14
+(合振动的振幅, Amplitude of combined oscillation): 5
+(重力加速度, Gravity acceleration): 10
+(悬挂轴, Suspension axis): 4
+(单摆, Simple pendulum): 39
+(最短时间, Shortest time): 1
+(谐振动系统的动能和势能, Kinetic and potential energy of harmonic oscillation system): 0
+(阻尼因子, Damping factor): 1
+(初始条件, Initial Conditions): 19
+(加速度振幅, Acceleration amplitude): 0
+(旋转矢量表示, Rotational Vector Representation): 3
+(直角均质细杆, Right-angled homogeneous rod): 1
+(X-43A极速飞机, X-43A hypersonic aircraft): 4
+(振幅, Amplitude): 244
+(拉力, Tension): 24
+(谐振动, Harmonic motion): 244
+(宝钢的振动选煤机, Vibration coal selector of Baosteel): 1
+(速度共振, Velocity Resonance): 4
+(复摆的周期, Period of a compound pendulum): 1
+(振动方程, Vibration equation): 51
+(总机械平均能量, Total Mechanical Average Energy): 0
+(线性振动, Linear vibration): 2
+(分离, Separation): 36
+(物理方面, Physical aspect): 2
+(角频率, Angular Frequency): 40
+(月球, Moon): 9
+(半径, Radius): 398
+(角加速度, Angular acceleration): 77
+(细杆, Rod): 57
+(质量, Mass): 641
+(U+Ag)~1/2, U+Ag): 1
+(初相位, Initial Phase): 12
+(质点, Particle): 900
+(互相垂直的同频率谐振动, Orthogonal harmonic oscillations with the same frequency): 1
+(简正频率, Natural frequency): 6
+(驱动力角频率, Driving Force Angular Frequency): 1
+(合成振动, Composite Vibration): 8
+(加速度, Acceleration): 397
+(微振动, Micro vibration): 1
+(合振动振幅, Amplitude of the combined oscillation): 9

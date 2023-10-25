@@ -1,0 +1,37 @@
+﻿{
+"knowledge_points": [
+   {"title": "铁磁材料", "en": "Ferromagnetic materials"},
+   {"title": "磁滞回线", "en": "Hysteresis loop"},
+   {"title": "软磁材料", "en": "Soft magnetic materials"},
+   {"title": "硬磁材料", "en": "Hard magnetic materials"},
+   {"title": "交变磁场", "en": "Alternating magnetic field"},
+   {"title": "磁滞损耗", "en": "Hysteresis loss"},
+   {"title": "软铁", "en": "Soft iron"},
+   {"title": "硅钢片", "en": "Silicon steel sheet"},
+   {"title": "钴钢", "en": "Cobalt steel"},
+   {"title": "碳钢", "en": "Carbon steel"},
+   {"title": "铁氧体", "en": "Ferrite"},
+   {"title": "永磁材料", "en": "Permanent magnetic materials"},
+   {"title": "钕铁硼", "en": "Neodymium iron boron"},
+   {"title": "居里温度", "en": "Curie temperature"},
+   {"title": "顺磁质", "en": "Paramagnetic materials"}
+]
+}{
+"knowledge_points": [
+   {"title": "铁磁材料", "en": "Ferromagnetic materials"},
+   {"title": "磁滞回线", "en": "Hysteresis loop"},
+   {"title": "软磁材料", "en": "Soft magnetic materials"},
+   {"title": "硬磁材料", "en": "Hard magnetic materials"},
+   {"title": "交变磁场", "en": "Alternating magnetic field"},
+   {"title": "磁滞损耗", "en": "Hysteresis loss"},
+   {"title": "软铁", "en": "Soft iron"},
+   {"title": "硅钢片", "en": "Silicon steel sheet"},
+   {"title": "钴钢", "en": "Cobalt steel"},
+   {"title": "碳钢", "en": "Carbon steel"},
+   {"title": "铁氧体", "en": "Ferrite"},
+   {"title": "永磁材料", "en": "Permanent magnetic materials"},
+   {"title": "钕铁硼", "en": "Neodymium iron boron"},
+   {"title": "居里温度", "en": "Curie temperature"},
+   {"title": "顺磁质", "en": "Paramagnetic materials"}
+]
+}

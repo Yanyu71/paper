@@ -1,0 +1,14 @@
+﻿[{
+"knowledge_points": [
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "质子", "en": "Proton"},
+   {"title": "原子序数", "en": "Atomic number"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "中子", "en": "Neutron"},
+   {"title": "原子质量单位", "en": "Atomic mass unit"},
+   {"title": "质量数", "en": "Mass number"},
+   {"title": "结合能", "en": "Binding energy"}
+]
+}]

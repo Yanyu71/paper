@@ -1,0 +1,7 @@
+(线性微分方程, Linear differential equation): 5
+(多人同时讲话, Multiple people speaking at the same time): 0
+(交响乐队演奏, Symphony orchestra performance): 1
+(波的干涉, Wave interference): 9
+(电视节目选择, TV program selection): 0
+(波的强度, Wave intensity): 24
+(波的叠加原理, Principle of superposition of waves): 12

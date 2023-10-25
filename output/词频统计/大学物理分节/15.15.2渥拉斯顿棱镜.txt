@@ -1,0 +1,9 @@
+(渥拉斯顿棱镜, Wollaston prism): 2
+(线偏振光, linearly polarized light): 2
+(光密介质, optically dense medium): 1
+(负晶体, negative crystal): 1
+(光疏介质, optically rare medium): 1
+(折射率, refractive index): 1
+(方解石棱镜, calcite prism): 0
+(尼科耳棱镜, Nicol prism): 1
+(光轴, optical axis): 6

@@ -1,0 +1,15 @@
+(原子序数, atomic number): 1
+(康普顿效应, Compton effect): 0
+(X射线, X-ray): 3
+(吴有训, Wu Youxun): 2
+(波长, wavelength): 12
+(波长差, wavelength difference): 2
+(入射线, incident ray): 3
+(实验结果, experimental results): 2
+(散射线, scattered ray): 6
+(摄谱仪, spectrometer): 1
+(散射物质, scattering material): 1
+(康普顿散射, Compton scattering): 4
+(强度, intensity): 3
+(石墨, graphite): 1
+(散射角, scattering angle): 4

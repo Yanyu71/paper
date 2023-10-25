@@ -1,0 +1,171 @@
+﻿[{
+"knowledge_points": [
+   {"title": "相互垂直的谐振动", "en": "Mutually perpendicular harmonic oscillations"},
+   {"title": "合成", "en": "Synthesis"},
+   {"title": "同频率相互垂直的谐振动", "en": "Harmonic oscillations with the same frequency and mutually perpendicular"},
+   {"title": "初相差", "en": "Phase difference"},
+   {"title": "轨迹方程", "en": "Trajectory equation"},
+   {"title": "直线轨迹", "en": "Straight line trajectory"},
+   {"title": "正圆轨迹", "en": "Circular trajectory"},
+   {"title": "椭圆轨迹", "en": "Elliptical trajectory"},
+   {"title": "斜椭圆轨迹", "en": "Slanted elliptical trajectory"},
+   {"title": "合成运动", "en": "Synthetic motion"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "分解", "en": "Decomposition"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "正椭圆", "en": "Ellipse"},
+   {"title": "圆", "en": "Circle"},
+   {"title": "斜椭圆", "en": "Slanted ellipse"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "李萨如图", "en": "Lissajous figure"},
+   {"title": "非周期运动", "en": "Non-periodic motion"},
+   {"title": "天体力学", "en": "Celestial mechanics"},
+   {"title": "拍", "en": "Beating"},
+   {"title": "拍频", "en": "Beat frequency"},
+   {"title": "阻尼振动", "en": "Damped vibration"},
+   {"title": "受迫振动", "en": "Forced vibration"}
+]
+},{
+"knowledge_points": [
+   {"title": "相互垂直的谐振动", "en": "Mutually perpendicular harmonic oscillations"},
+   {"title": "合成", "en": "Synthesis"},
+   {"title": "同频率相互垂直的谐振动", "en": "Harmonic oscillations with the same frequency and mutually perpendicular"},
+   {"title": "初相差", "en": "Phase difference"},
+   {"title": "轨迹方程", "en": "Trajectory equation"},
+   {"title": "直线轨迹", "en": "Straight line trajectory"},
+   {"title": "正圆轨迹", "en": "Circular trajectory"},
+   {"title": "椭圆轨迹", "en": "Elliptical trajectory"},
+   {"title": "斜椭圆轨迹", "en": "Slanted elliptical trajectory"},
+   {"title": "合成运动", "en": "Synthetic motion"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "分解", "en": "Decomposition"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "正椭圆", "en": "Ellipse"},
+   {"title": "圆", "en": "Circle"},
+   {"title": "斜椭圆", "en": "Slanted ellipse"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "李萨如图", "en": "Lissajous figure"},
+   {"title": "非周期运动", "en": "Non-periodic motion"},
+   {"title": "天体力学", "en": "Celestial mechanics"},
+   {"title": "拍", "en": "Beating"},
+   {"title": "拍频", "en": "Beat frequency"},
+   {"title": "阻尼振动", "en": "Damped vibration"},
+   {"title": "受迫振动", "en": "Forced vibration"}
+]
+},{
+"knowledge_points": [
+   {"title": "相互垂直的谐振动", "en": "Mutually perpendicular harmonic oscillations"},
+   {"title": "合成", "en": "Synthesis"},
+   {"title": "同频率相互垂直的谐振动", "en": "Harmonic oscillations with the same frequency and mutually perpendicular"},
+   {"title": "初相差", "en": "Phase difference"},
+   {"title": "轨迹方程", "en": "Trajectory equation"},
+   {"title": "直线轨迹", "en": "Straight line trajectory"},
+   {"title": "正圆轨迹", "en": "Circular trajectory"},
+   {"title": "椭圆轨迹", "en": "Elliptical trajectory"},
+   {"title": "斜椭圆轨迹", "en": "Slanted elliptical trajectory"},
+   {"title": "合成运动", "en": "Synthetic motion"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "分解", "en": "Decomposition"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "正椭圆", "en": "Ellipse"},
+   {"title": "圆", "en": "Circle"},
+   {"title": "斜椭圆", "en": "Slanted ellipse"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "李萨如图", "en": "Lissajous figure"},
+   {"title": "非周期运动", "en": "Non-periodic motion"},
+   {"title": "天体力学", "en": "Celestial mechanics"},
+   {"title": "拍", "en": "Beating"},
+   {"title": "拍频", "en": "Beat frequency"},
+   {"title": "阻尼振动", "en": "Damped vibration"},
+   {"title": "受迫振动", "en": "Forced vibration"}
+]
+},{
+"knowledge_points": [
+   {"title": "相互垂直的谐振动", "en": "Mutually perpendicular harmonic oscillations"},
+   {"title": "合成", "en": "Synthesis"},
+   {"title": "同频率相互垂直的谐振动", "en": "Harmonic oscillations with the same frequency and mutually perpendicular"},
+   {"title": "初相差", "en": "Phase difference"},
+   {"title": "轨迹方程", "en": "Trajectory equation"},
+   {"title": "直线轨迹", "en": "Straight line trajectory"},
+   {"title": "正圆轨迹", "en": "Circular trajectory"},
+   {"title": "椭圆轨迹", "en": "Elliptical trajectory"},
+   {"title": "斜椭圆轨迹", "en": "Slanted elliptical trajectory"},
+   {"title": "合成运动", "en": "Synthetic motion"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "分解", "en": "Decomposition"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "正椭圆", "en": "Ellipse"},
+   {"title": "圆", "en": "Circle"},
+   {"title": "斜椭圆", "en": "Slanted ellipse"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "李萨如图", "en": "Lissajous figure"},
+   {"title": "非周期运动", "en": "Non-periodic motion"},
+   {"title": "天体力学", "en": "Celestial mechanics"},
+   {"title": "拍", "en": "Beating"},
+   {"title": "拍频", "en": "Beat frequency"},
+   {"title": "阻尼振动", "en": "Damped vibration"},
+   {"title": "受迫振动", "en": "Forced vibration"}
+]
+},{
+"knowledge_points": [
+   {"title": "相互垂直的谐振动", "en": "Mutually perpendicular harmonic oscillations"},
+   {"title": "合成", "en": "Synthesis"},
+   {"title": "同频率相互垂直的谐振动", "en": "Harmonic oscillations with the same frequency and mutually perpendicular"},
+   {"title": "初相差", "en": "Phase difference"},
+   {"title": "轨迹方程", "en": "Trajectory equation"},
+   {"title": "直线轨迹", "en": "Straight line trajectory"},
+   {"title": "正圆轨迹", "en": "Circular trajectory"},
+   {"title": "椭圆轨迹", "en": "Elliptical trajectory"},
+   {"title": "斜椭圆轨迹", "en": "Slanted elliptical trajectory"},
+   {"title": "合成运动", "en": "Synthetic motion"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "分解", "en": "Decomposition"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "正椭圆", "en": "Ellipse"},
+   {"title": "圆", "en": "Circle"},
+   {"title": "斜椭圆", "en": "Slanted ellipse"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "李萨如图", "en": "Lissajous figure"},
+   {"title": "非周期运动", "en": "Non-periodic motion"},
+   {"title": "天体力学", "en": "Celestial mechanics"},
+   {"title": "拍", "en": "Beating"},
+   {"title": "拍频", "en": "Beat frequency"},
+   {"title": "阻尼振动", "en": "Damped vibration"},
+   {"title": "受迫振动", "en": "Forced vibration"}
+]
+}]

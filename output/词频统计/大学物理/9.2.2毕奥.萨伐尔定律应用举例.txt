@@ -1,0 +1,38 @@
+(右手螺旋法则, Right-hand rule): 20
+(导体, Conductor): 427
+(稳恒电流, Steady current): 23
+(直角分量, Rectangular component): 1
+(磁感应强度的方向, Direction of magnetic induction): 4
+(电偶极子, Electric dipole): 31
+(导体回路, Conductor loop): 17
+(载流直导线, Current-carrying straight wire): 33
+(直角坐标系, Rectangular coordinate system): 27
+(毕奥-萨伐尔定律, Biot-Savart law): 7
+(例题, Example): 38
+(矢量积分, Vector integral): 5
+(位矢, Position vector): 92
+(载流线圈, Current loop): 46
+(磁矩, Magnetic moment): 131
+(匀强磁场, Uniform magnetic field): 58
+(切线方向, Tangent direction): 19
+(电偶极矩, Electric dipole moment): 15
+(磁矩, Magnetic dipole moment): 131
+(亥姆霍兹线圈, Helmholtz coil): 4
+(磁感应强度, Magnetic induction): 258
+(垂线, Perpendicular line): 12
+(磁感应强度大小随坐标变化的曲线, Curve of magnetic induction magnitude with coordinates): 0
+(磁场, Magnetic field): 738
+(载流线圈, Current-carrying coil): 46
+(统一变量, Unified variable): 2
+(直导线垂直距离, Vertical distance from the wire): 1
+(电流元, Current element): 80
+(拇指, Thumb): 7
+(无限长载流直导线, Infinite long current-carrying wire): 19
+(磁感应强度大小, Magnitude of magnetic induction): 5
+(力矩, Torque): 223
+(电场强度, Electric field strength): 317
+(四指, Four fingers): 5
+(右手螺旋法则, Right-hand screw rule): 20
+(夹角, Angle): 111
+(载流圆线圈, Current-carrying circular coil): 7
+(矢量叠加原理, Vector superposition principle): 2

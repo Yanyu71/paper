@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "双折射现象", "en": "Birefringence phenomenon"},
+   {"title": "光的双折射", "en": "Double refraction of light"},
+   {"title": "寻常光", "en": "Ordinary light"},
+   {"title": "非常光", "en": "Extraordinary light"},
+   {"title": "折射定律", "en": "Law of refraction"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "单轴晶体", "en": "Uniaxial crystal"},
+   {"title": "双轴晶体", "en": "Biaxial crystal"},
+   {"title": "线偏振光", "en": "Polarized light"}
+]
+}{
+"knowledge_points": [
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "图15", "en": "Figure 15"},
+   {"title": "图82", "en": "Figure 82"}
+]
+}

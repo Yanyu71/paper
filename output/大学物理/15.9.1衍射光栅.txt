@@ -1,0 +1,199 @@
+﻿{
+"knowledge_points": [
+   {"title": "衍射光栅", "en": "Diffraction grating"},
+   {"title": "光栅常量", "en": "Grating constant"},
+   {"title": "衍射光束", "en": "Diffracted beam"},
+   {"title": "衍射条纹", "en": "Diffraction pattern"},
+   {"title": "明条纹", "en": "Bright fringe"},
+   {"title": "暗背景", "en": "Dark background"},
+   {"title": "色散分光作用", "en": "Dispersion"},
+   {"title": "光栅方程", "en": "Grating equation"},
+   {"title": "主极大", "en": "Principal maximum"},
+   {"title": "级数", "en": "Order"},
+   {"title": "衍射角", "en": "Diffraction angle"},
+   {"title": "缝数", "en": "Number of slits"},
+   {"title": "总缝数", "en": "Total number of slits"}
+]
+}{
+"knowledge_points": [
+   {"title": "缝", "en": "slit"},
+   {"title": "光栅衍射", "en": "grating diffraction"},
+   {"title": "主极大", "en": "principal maximum"},
+   {"title": "暗条纹", "en": "dark fringe"},
+   {"title": "光振动", "en": "light vibration"},
+   {"title": "光程差", "en": "optical path difference"},
+   {"title": "合矢量", "en": "resultant vector"},
+   {"title": "光栅暗纹公式", "en": "grating dark fringe formula"},
+   {"title": "次级大明条纹", "en": "secondary bright fringe"},
+   {"title": "谱线的缺级", "en": "missing orders of spectrum lines"}
+]
+}{
+"knowledge_points": [
+   {"title": "(a+b)sin=:土A:A,A:=1,2,?", "en": "(a+b)sin=:土A:A,A:=1,2,?"},
+   {"title": "asin(p^±kf\,A/=1,2,*?'", "en": "asin(p^±kf\,A/=1,2,*?'"},
+   {"title": "光波干涉加强", "en": "Interference reinforcement of light waves"},
+   {"title": "衍射谱线的缺级", "en": "Diffraction spectrum line missing order"},
+   {"title": "光栅方程", "en": "Grating equation"},
+   {"title": "多缝间的干涉", "en": "Interference between multiple slits"},
+   {"title": "每个单缝的衍射影响", "en": "Diffraction effect of each single slit"},
+   {"title": "光栅衍射的光强分布", "en": "Intensity distribution of grating diffraction"},
+   {"title": "相干叠加", "en": "Coherent superposition"},
+   {"title": "主极大", "en": "Principal maximum"},
+   {"title": "暗条纹", "en": "Dark fringe"},
+   {"title": "次极大", "en": "Secondary maximum"},
+   {"title": "光栅衍射的综合效果", "en": "Comprehensive effect of grating diffraction"},
+   {"title": "光栅衍射的光强分布公式", "en": "Formula for intensity distribution of grating diffraction"}
+]
+}{
+"knowledge_points": [
+   {"title": "光振动", "en": "Light vibration"},
+   {"title": "光干涉", "en": "Light interference"},
+   {"title": "多束光干涉", "en": "Multiple beam interference"},
+   {"title": "振幅相位", "en": "Amplitude phase"},
+   {"title": "光振动叠加", "en": "Superposition of light vibrations"},
+   {"title": "振幅矢量", "en": "Amplitude vector"},
+   {"title": "圆心角", "en": "Central angle"},
+   {"title": "单缝衍射光", "en": "Single slit diffraction light"},
+   {"title": "多缝夫琅禾费衍射", "en": "Multiple slit diffraction"},
+   {"title": "振幅分布", "en": "Amplitude distribution"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "光栅衍射", "en": "Grating diffraction"},
+   {"title": "主极大", "en": "Principal maximum"},
+   {"title": "暗纹", "en": "Dark fringe"},
+   {"title": "缺级", "en": "Missing order"},
+   {"title": "光强公式", "en": "Intensity formula"},
+   {"title": "单缝衍射因子", "en": "Single slit diffraction factor"},
+   {"title": "多光束干涉因子", "en": "Multiple beam interference factor"},
+   {"title": "光栅方程", "en": "Grating equation"}
+]
+}{
+"knowledge_points": [
+   {"title": "主极大", "en": "Main maximum"},
+   {"title": "单缝光强", "en": "Single slit intensity"},
+   {"title": "缺级", "en": "Missing order"},
+   {"title": "光栅光谱", "en": "Grating spectrum"},
+   {"title": "光栅方程", "en": "Grating equation"},
+   {"title": "色散", "en": "Dispersion"},
+   {"title": "谱线", "en": "Spectral line"},
+   {"title": "光源", "en": "Light source"},
+   {"title": "分辨本领", "en": "Resolution capability"},
+   {"title": "光栅缝数", "en": "Number of grating slits"},
+   {"title": "暗纹方程", "en": "Dark fringe equation"},
+   {"title": "级次", "en": "Order"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "光强", "en": "Intensity"}
+]
+}{
+"knowledge_points": [
+   {"title": "光栅", "en": "Grating"},
+   {"title": "缝数", "en": "Number of slits"},
+   {"title": "光谱线", "en": "Spectral lines"},
+   {"title": "光栅常量", "en": "Grating constant"},
+   {"title": "衍射条纹", "en": "Diffraction pattern"},
+   {"title": "光程差", "en": "Path difference"},
+   {"title": "斜入射", "en": "Oblique incidence"},
+   {"title": "透镜", "en": "Lens"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "屏幕", "en": "Screen"},
+   {"title": "可见光", "en": "Visible light"},
+   {"title": "波长", "en": "Wavelength"}
+]
+}{
+"knowledge_points": [
+   {"title": "Ax", "en": "Ax"},
+   {"title": "f", "en": "f"},
+   {"title": "kxXx=^(a+b)rr5二0苎5jX10m=o.5xHT6m=500細", "en": "kxXx=^(a+b)rr5二0苎5jX10m=o.5xHT6m=500細"},
+   {"title": "k2A", "en": "k2A"},
+   {"title": "50", "en": "50"},
+   {"title": "X+^-(a+b)	+—Q5)x5_0x10", "en": "X+^-(a+b)	+—Q5)x5_0x10"},
+   {"title": "0.505x10", "en": "0.505x10"},
+   {"title": "505nm", "en": "505nm"},
+   {"title": "显然,在可见光范围内,卜和匕都只能取i.所以,通过细缝的光的波长范围为", "en": "Clearly, within the visible light range, both 卜 and 匕 can only take i. Therefore, the wavelength range of light passing through the slit is"},
+   {"title": "500nm^A^505nm", "en": "500nm^A^505nm"},
+   {"title": "这个例题提供了选择和获得准单色光的一种简单方法.在满足一定精度条件下,可认为通过细缝的光为单色光.", "en": "This example provides a simple method for selecting and obtaining quasi-monochromatic light. Under certain precision conditions, the light passing through the slit can be considered monochromatic."},
+   {"title": "【例15.26】设有四个无线电发射天线等距离地排列在一直线上,组成一天线阵列.相邻天线间的距离恰好等于无线电波的半波长M=A/2),试分析四束无线电波干涉产生的强度在空间各方向的分布.", "en": "【Example 15.26】Four radio transmitting antennas are arranged equidistantly in a straight line to form an antenna array. The distance between adjacent antennas is exactly half the wavelength of the radio waves (M=A/2). Analyze the spatial distribution of the intensity of the four interfering radio waves in all directions."},
+   {"title": "解由題意分析,该天线系统等效于一个光栅常量为^的光栅,每个天线发出的无线电波在空间相干,形成fe射图样.根据光栅公式可知:", "en": "According to the analysis of the problem, the antenna system is equivalent to a grating with a grating constant of ^. The radio waves emitted by each antenna are coherent in space, forming a diffraction pattern. According to the grating formula:"},
+   {"title": "dsinB-±kK", "en": "dsinB-±kK"},
+   {"title": "用S=+代人,得", "en": "Using S=+ instead, we get"},
+   {"title": "A", "en": "A"},
+   {"title": "2", "en": "2"},
+   {"title": "sin?=±k\\", "en": "sin?=±k\\"},
+   {"title": "254", "en": "254"},
+   {"title": "要使这个结果有意义,级次A只能取零,即", "en": "To make this result meaningful, the order A can only be zero, that is"},
+   {"title": "于是得到衍射主极大的方向角为", "en": "So the direction angle of the diffraction main maximum is"},
+   {"title": "再由衍射极小公式可知:", "en": "Then, according to the diffraction minimum formula, it can be known:"},
+   {"title": "Asin0-0", "en": "Asin0-0"},
+   {"title": "2", "en": "2"},
+   {"title": "0=0,ir", "en": "0=0,ir"},
+   {"title": "用5=4■代入,得", "en": "Substituting 5=4■, we get"},
+   {"title": "dsin0", "en": "dsin0"},
+   {"title": "N", "en": "N"},
+   {"title": "A", "en": "A"},
+   {"title": "Asin0^±~K,sin0", "en": "Asin0^±~K,sin0"},
+   {"title": "4", "en": "4"},
+   {"title": "显然,V值只能取4和2,即", "en": "Clearly, V can only take 4 and 2, that is"},
+   {"title": "0", "en": "0"},
+   {"title": "65t7", "en": "65t7"},
+   {"title": "2,0", "en": "2,0"},
+   {"title": "2", "en": "2"},
+   {"title": "所以,在的方向上的辐射强度最大(衍射主极大);在0\n\n5rr6\n\n和0\n\n2\n\n的方向上的辐射强度为\n\nSti/6\n\n零,其干涉强度的角分布如图15.60所示.可见,此天线阵\n\n列的发射具有方向性,在与阵列垂直的方向上强度最大,<5n丨6\n\n其它方向上都相当弱*可以根据这个设计结果,构造和放\n\n置天线系统以获得最佳的辐射效果.", "en": "Therefore, the radiation intensity is maximum (diffraction main maximum) in the direction of 0; the radiation intensity in the directions of 0\n\n5rr6\n\nand 0\n\n2\n\nis zero, and the angular distribution of the interference intensity is shown in Figure 15.60. It can be seen that the emission of this antenna array has directionality, with the maximum intensity in the direction perpendicular to the array, and quite weak in other directions. Based on this design result, a antenna system can be constructed and placed to obtain the best radiation effect."},
+   {"title": "n/6^", "en": "n/6^"},
+   {"title": "-71/6", "en": "-71/6"},
+   {"title": "图15.60", "en": "Figure 15.60"},
+   {"title": "光栅公式是研究光栅衍射的基本公式.在学习和应用中需要注意:", "en": "The grating formula is the basic formula for studying grating diffraction. Attention should be paid to the study and application:"},
+   {"title": "(1)	光栅公式(15.64)给出了光波垂直入射时,光栅常量、衍射角、入射光波长以及衍射条纹级数之间的关系,所以若已知其中三个参量,就可以确定其余的参量.", "en": "(1) The grating formula (15.64) gives the relationship between the grating constant, diffraction angle, incident wavelength, and diffraction fringe order when the light wave is vertically incident. Therefore, if three of these parameters are known, the remaining parameters can be determined."},
+   {"title": "(2)	光栅公式只适用于单色平行光的垂直入射的情况.如果入射光是斜入射,则需要将光撕公式修改为(a+6)(sin0+sin沪)=:tAA,对于入射光与光栅法线之间的夹角<9的取值则根据实际情况确定.要会分析斜入射形成的光栅衍射图样的分布特点.", "en": "(2) The grating formula is only applicable to the case of monochromatic parallel light vertically incident. If the incident light is obliquely incident, the grating formula needs to be modified to (a+6)(sin0+sin沪)=:tAA, and the value of the angle <9 between the incident light and the grating normal is determined according to the actual situation. It is necessary to analyze the distribution characteristics of the grating diffraction pattern formed by oblique incidence."},
+   {"title": "(3)	在讨论衍射条纹级数时,光柵衍射中的缺级现象要特别注意,究竟缺哪些级取决于光栅的缝宽a和光栅常量a+6之间的关系.", "en": "(3) When discussing the diffraction fringe order, special attention should be paid to the phenomenon of missing orders in grating diffraction. Which orders are missing depends on the relationship between the slit width a of the grating and the grating constant a+6."},
+   {"title": "§15.10X射线在晶体上的衍射", "en": "§15.10 Diffraction of X-rays on Crystals"}
+]
+}{
+"knowledge_points": [
+   {"title": "光栅常量", "en": "Grating constant"},
+   {"title": "X射线衍射", "en": "X-ray diffraction"},
+   {"title": "晶体", "en": "Crystal"},
+   {"title": "劳厄", "en": "Laue"},
+   {"title": "晶格常量", "en": "Lattice constant"},
+   {"title": "劳厄斑", "en": "Laue spots"},
+   {"title": "相干条件", "en": "Coherence condition"},
+   {"title": "多光束干涉", "en": "Multiple-beam interference"},
+   {"title": "布拉格父子", "en": "Bragg father and son"},
+   {"title": "X射线衍射定律", "en": "X-ray diffraction law"}
+]
+}{
+"knowledge_points": [
+   {"title": "图15*64", "en": "Figure 15*64"},
+   {"title": "第二种情况", "en": "Second case"},
+   {"title": "原子层间的距离", "en": "Distance between atomic layers"},
+   {"title": "束平彳7HIr的X射线", "en": "X-ray with grazing incidence angle P"},
+   {"title": "相邻两层反射波的光程差", "en": "Optical path difference of adjacent layers' reflected waves"},
+   {"title": "葶夸吵亨孕毕兮芩", "en": "Formation of interference pattern"},
+   {"title": "衍射实验", "en": "Diffraction experiment"},
+   {"title": "入射X射线", "en": "Incident X-ray"},
+   {"title": "晶面", "en": "Crystal plane"},
+   {"title": "劳厄斑", "en": "Laue spot"},
+   {"title": "晶格常量", "en": "Lattice constant"},
+   {"title": "X射线结构分析", "en": "X-ray crystallography"},
+   {"title": "X射线光谱分析", "en": "X-ray spectroscopy"},
+   {"title": "光栅衍射", "en": "Grating diffraction"},
+   {"title": "暗纹条件", "en": "Dark fringe condition"},
+   {"title": "光栅常量", "en": "Grating constant"},
+   {"title": "缝宽", "en": "Slit width"},
+   {"title": "主极大明条纹条件", "en": "Condition for the main maximum bright fringe"},
+   {"title": "缺级情况", "en": "Missing orders"},
+   {"title": "菲涅耳半波带法", "en": "Fresnel half-period zone method"},
+   {"title": "光谱重叠", "en": "Spectral overlap"},
+   {"title": "衍射图样变化", "en": "Change in diffraction pattern"},
+   {"title": "杨氏双缝实验", "en": "Young's double-slit experiment"},
+   {"title": "光强分布", "en": "Intensity distribution"}
+]
+}{"knowledge_points": [
+   {"title": "光的波动性", "en": "Wave nature of light", "type": "说明", "description": "光的干涉和衍射现象说明了光的波动性"},
+   {"title": "光的偏振现象", "en": "Polarization of light", "type": "进一步表明", "description": "光的偏振现象进一步表明光是横波"},
+   {"title": "光的电磁理论", "en": "Electromagnetic theory of light", "type": "指出", "description": "光的电磁理论指出光是电磁波"},
+   {"title": "光矢量", "en": "Light vector", "type": "与", "description": "光矢量与光的传播方向垂直"},
+   {"title": "线偏振光", "en": "Linearly polarized light", "type": "是", "description": "线偏振光是一种光的偏振状态"},
+   {"title": "圆偏振光", "en": "Circularly polarized light", "type": "是", "description": "圆偏振光是一种光的偏振状态"},
+   {"title": "楠圆偏振光", "en": "Elliptically polarized light", "type": "是", "description": "楠圆偏振光是一种光的偏振状态"},
+   {"title": "自然光", "en": "Natural light", "type": "是", "description": "自然光是一种光的偏振状态"},
+   {"title": "部分偏振光", "en": "Partially polarized light", "type": "是", "description": "部分偏振光是一种光的偏振状态"}
+]}

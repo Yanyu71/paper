@@ -1,0 +1,18 @@
+﻿[{
+"knowledge_points": [
+   {"title": "激光的纵模", "en": "Longitudinal mode of laser"},
+   {"title": "激光的横模", "en": "Transverse mode of laser"}
+]
+},{
+"knowledge_points": [
+   {"title": "激光光束横截面", "en": "Laser beam cross-section"},
+   {"title": "光斑花样", "en": "Spot pattern"},
+   {"title": "基横模TEM%", "en": "Fundamental transverse mode TEM%"},
+   {"title": "光强分布", "en": "Intensity distribution"},
+   {"title": "光强为零的节点或节线", "en": "Nodes or nodal lines with zero intensity"},
+   {"title": "发散角", "en": "Divergence angle"},
+   {"title": "空间相干性", "en": "Spatial coherence"},
+   {"title": "激光器", "en": "Laser"},
+   {"title": "输出基横模", "en": "Output fundamental transverse mode"}
+]
+}]

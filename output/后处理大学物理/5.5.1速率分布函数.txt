@@ -1,0 +1,8 @@
+(速率区间, Rate interval)
+(分子速率分布的概率密度, Probability density of molecular rate distribution)
+(分子数比率, Molecular number ratio)
+(速率区间大小, Size of rate interval)
+(速率分布函数, Rate distribution function)
+(速率区间表示, Representation of rate interval)
+(速率分布律, Rate distribution law)
+(气体分子, Gas molecules)

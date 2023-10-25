@@ -1,0 +1,20 @@
+(物镜, Objective lens): 34
+(伽利略望远镜, Galilean telescope): 1
+(折射式望远镜, Refracting telescope): 2
+(像方焦面, Image plane): 1
+(望远镜, Telescope): 46
+(角放大率, Angular magnification): 12
+(目镜焦距, Eyepiece focal length): 2
+(放大远处物体的张角, Magnify the angular size of distant objects): 1
+(反射式望远镜, Reflecting telescope): 0
+(折射望远镜, Refracting telescope): 1
+(折射, Refraction): 470
+(入射角, Incident angle): 32
+(收集光束送入人眼, Collect light beams and send them into the human eye): 0
+(看清角距离很小的物体的细节, See the details of objects with small angular distance): 1
+(物镜焦距, Objective lens focal length): 1
+(物镜孔径, Objective lens aperture): 2
+(目镜, Eyepiece): 28
+(倒立的缩小实像, Inverted and reduced real image): 2
+(看到原来看不到的暗弱物体, See dim objects that were previously invisible): 1
+(放大虚像, Magnified virtual image): 3

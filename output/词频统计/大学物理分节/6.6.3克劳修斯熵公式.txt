@@ -1,0 +1,47 @@
+(熵变AS水, Change in entropy of water): 1
+(宏观角度, Macroscopic perspective): 1
+(炉子, Furnace): 9
+(热力学第一定律, First law of thermodynamics): 1
+(熵不变, Constant entropy): 1
+(热力学系统的微观态, Microstate of a thermodynamic system): 1
+(致冷系数, Coefficient of performance): 2
+(功, Work): 5
+(热量, Heat): 10
+(热力学第二定律, Second law of thermodynamics): 2
+(体积, Volume): 11
+(系统熵的增量, Increment of system entropy): 0
+(平衡态, Equilibrium state): 2
+(熵增加原理, Principle of entropy increase): 5
+(摩尔热容, Molar heat capacity): 5
+(内能, Internal energy): 4
+(态函数熵, State function entropy): 2
+(热机效率, Thermal efficiency): 2
+(无限小的可逆过程, Infinitesimal reversible process): 1
+(无限小可逆过程, Infinitesimal reversible process): 1
+(单热源热机, Single heat source heat engine): 2
+(热力学系统的宏观态, Macrostate of a thermodynamic system): 1
+(微观角度, Microscopic perspective): 2
+(体积膨胀, Volume expansion): 1
+(热源, Heat source): 8
+(熵增原理, Principle of entropy increase): 3
+(玻耳兹曼熵公式, Boltzmann entropy formula): 1
+(温度, Temperature): 10
+(比热, Specific heat): 2
+(孤立系统, Isolated system): 3
+(绝热容器, Adiabatic container): 1
+(克劳修斯熵公式, Clausius entropy formula): 6
+(熵, Entropy): 55
+(微观态与宏观态的对应关系, Correspondence between microstate and macrostate): 0
+(热机的工作物质, Working substance of the heat engine): 1
+(熵变AS炉, Change in entropy of furnace): 0
+(熵变, Change in entropy): 16
+(微观状态数目, Number of microscopic states): 3
+(循环过程, Cycle process): 2
+(吸收的热量, Absorbed heat): 3
+(可逆过程, Reversible process): 7
+(绝热系统, Adiabatic system): 5
+(热温比, Heat temperature ratio): 3
+(熵的增量, Increment of entropy): 3
+(理想气体的自由膨胀, Free expansion of ideal gas): 1
+(可逆等温过程, Reversible isothermal process): 3
+(熵的元增量, Elemental increment of entropy): 1

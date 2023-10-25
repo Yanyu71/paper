@@ -1,0 +1,41 @@
+﻿[{
+"knowledge_points": [
+   {"title": "费马原理", "en": "Fermat's principle"},
+   {"title": "光在各向同性,均匀介质中沿直线传播", "en": "Light propagates in a straight line in isotropic, homogeneous media"},
+   {"title": "反射定律", "en": "Law of reflection"},
+   {"title": "折射定律", "en": "Law of refraction"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "入射角", "en": "Incident angle"},
+   {"title": "反射角", "en": "Reflection angle"},
+   {"title": "折射角", "en": "Refraction angle"},
+   {"title": "光程", "en": "Optical path"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "全反射", "en": "Total internal reflection"},
+   {"title": "平面反射镜", "en": "Plane mirror"},
+   {"title": "轨迹", "en": "Trajectory"}
+]
+},{
+"knowledge_points": [
+   {"title": "光源", "en": "light source"},
+   {"title": "水槽", "en": "water tank"},
+   {"title": "光能", "en": "light energy"},
+   {"title": "水面", "en": "water surface"},
+   {"title": "圆的直径", "en": "diameter of a circle"},
+   {"title": "介质", "en": "medium"},
+   {"title": "声波", "en": "sound wave"},
+   {"title": "折射率", "en": "refractive index"},
+   {"title": "全反射", "en": "total internal reflection"},
+   {"title": "临界角", "en": "critical angle"},
+   {"title": "玻璃", "en": "glass"},
+   {"title": "色散现象", "en": "dispersion phenomenon"},
+   {"title": "光的顺序", "en": "order of light"},
+   {"title": "金刚石", "en": "diamond"},
+   {"title": "界面法线", "en": "interface normal"},
+   {"title": "入射角", "en": "incident angle"},
+   {"title": "反射角", "en": "reflection angle"},
+   {"title": "介质层", "en": "medium layer"},
+   {"title": "反射", "en": "reflection"},
+   {"title": "球面界面", "en": "spherical interface"}
+]
+}]

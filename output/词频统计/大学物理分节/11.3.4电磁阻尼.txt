@@ -1,0 +1,20 @@
+(电子感应加速器, Electron Induction Accelerator): 2
+(楞次定律, Lenz's Law): 0
+(电子脱离轨道, Electron Detachment from Orbit): 0
+(涡流, Eddy Current): 1
+(医疗上诊治癌症, Medical Diagnosis and Treatment of Cancer): 1
+(指针, Pointer): 1
+(电磁阻尼, Electromagnetic Damping): 2
+(靶子, Target): 1
+(电磁阻力, Electromagnetic Resistance): 1
+(摆, Pendulum): 4
+(磁通量, Magnetic Flux): 0
+(电磁仪表, Electromagnetic Instrument): 1
+(机械效应, Mechanical Effect): 1
+(感应电流, Induced Current): 3
+(电磁铁, Electromagnet): 2
+(核物理研究, Nuclear Physics Research): 1
+(工业探伤, Industrial Testing): 0
+(磁极, Magnetic Pole): 1
+(低能电子感应加速器, Low-energy Electron Induction Accelerator): 1
+(热效应, Thermal Effect): 1

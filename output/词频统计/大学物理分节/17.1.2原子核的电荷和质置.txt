@@ -1,0 +1,10 @@
+(质量, Mass): 11
+(中子, Neutron): 1
+(电荷, Charge): 3
+(结合能, Binding energy): 1
+(质子, Proton): 4
+(原子序数, Atomic number): 2
+(质量数, Mass number): 0
+(原子核, Atomic nucleus): 8
+(电子, Electron): 3
+(原子质量单位, Atomic mass unit): 0

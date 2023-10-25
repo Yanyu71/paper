@@ -1,0 +1,57 @@
+(电阻, Resistance): 36
+(静电力, static force): 38
+(交流电, Alternating current): 12
+(并排放着, placed side by side): 1
+(勻强磁场, uniform magnetic field): 18
+(矢量, Vector): 326
+(线圈, coil): 347
+(弧长, Arc length): 4
+(频率, Frequency): 461
+(转动线圈, Rotating coil): 2
+(感应电动势, induced electromotive force): 45
+(导体线圈, conductor coil): 6
+(水平放置线圈, horizontally placed coil): 1
+(积分, Integration): 208
+(圆心角, Central angle): 9
+(电子, electron): 699
+(功, work): 633
+(有旋电场, rotating electric field): 27
+(磁铁, magnet): 39
+(动生电动势, Induced electromotive force): 28
+(导体回路, conductor circuit): 17
+(矢积, Vector product): 5
+(电键, switch): 6
+(关系式, relationship): 40
+(通电回路, electric circuit): 1
+(可变电阻, variable resistor): 1
+(方向, direction): 1297
+(切割磁力线运动, cutting magnetic field lines motion): 1
+(圆形线圈, Circular coil): 4
+(直导线, straight wire): 92
+(磁场随时间变化, magnetic field changes with time): 3
+(圆盘发电机, disk generator): 4
+(动生电动势, induced electromotive force): 28
+(大小, magnitude): 543
+(半径, Radius): 398
+(匀角速度, Uniform angular velocity): 12
+(电势, potential): 348
+(磁场线, Magnetic field lines): 44
+(感应电流, induced current): 37
+(自由电荷, free charge): 23
+(条形磁铁, bar magnet): 3
+(夹角关系, Angle relationship): 1
+(感生电动势, induced electromotive force): 16
+(电源, power source): 75
+(电接触, electrical contact): 1
+(导体圆回路, conductor circular loop): 1
+(感应电流的方向, direction of induced current): 9
+(电流, Current): 643
+(洛伦兹力, Lorentz force): 36
+(感应电动势, Induced electromotive force): 45
+(法拉第电磁感应定律, Faraday's law of electromagnetic induction): 24
+(速度, velocity): 1354
+(周期, Period): 196
+(感应电动势随时间的变化曲线, curve of induced electromotive force with time): 1
+(运动导线, Moving wire): 2
+(标积, Scalar product): 2
+(导体杆, conductor rod): 7

@@ -1,0 +1,37 @@
+(气体动理论, Kinetic theory of gases): 9
+(査理定律, Charles's law): 1
+(瓦, Watt): 32
+(气体分子运动论, Gas molecular kinetic theory): 3
+(理想气体, ideal gas): 176
+(分子速度, Molecular velocity): 9
+(冲量, impulse): 47
+(热力学温度, Thermodynamic temperature): 13
+(热运动能量, thermal energy): 6
+(K, Kelvin): 302
+(面积元, area element): 35
+(平动动能, translational kinetic energy): 44
+(理想气体的微观模型, Microscopic model of ideal gas): 3
+(统计平均值, statistical average): 30
+(平均平动动能, Average translational kinetic energy): 39
+(J, Joule): 615
+(压强, pressure): 132
+(温度的微观本质, Microscopic nature of temperature): 3
+(理想气体的状态方程, Ideal gas equation of state): 11
+(分子力学性质的假设, Assumptions about molecular mechanical properties): 3
+(气体分子对器壁的压强, Pressure of gas molecules on the wall): 0
+(计算气体分子施于器壁的宏观压强的步骤, Steps to calculate the macroscopic pressure of gas molecules on the wall): 0
+(玻意尔定律, Boyle's law): 1
+(单个分子对面积元的作用, Action of a single molecule on the area element): 0
+(压强公式, Pressure formula): 16
+(电子伏特, Electron volt): 4
+(温度的定义, Definition of temperature): 1
+(分子热运动剧烈程度, Intensity of molecular thermal motion): 1
+(分子, molecule): 790
+(气体分子间的碰撞, Collisions between gas molecules): 4
+(斜柱体, slanted cylinder): 2
+(微观模型, microscopic model): 8
+(速度, velocity): 1354
+(压强增大的原因, Reasons for increase in pressure): 1
+(理想气体微观模型, Ideal gas microscopic model): 3
+(分子集体在平衡态的统计假设, Statistical assumptions about molecular collective in equilibrium state): 1
+(碰撞, collision): 207

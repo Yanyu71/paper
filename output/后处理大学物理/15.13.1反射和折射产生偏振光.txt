@@ -1,0 +1,8 @@
+(各向同性介质, Isotropic medium)
+(偏振光, Polarized light)
+(布儒斯特定律, Brewster's law)
+(偏振片, Polarizing filter)
+(折射, Refraction)
+(反射, Reflection)
+(自然光, Natural light)
+(振动方向, Direction of vibration)

@@ -1,0 +1,29 @@
+(斯特藩-玻耳兹曼定律, Stefan-Boltzmann law): 6
+(观测炉温, Observing furnace temperature): 1
+(电磁波, Electromagnetic waves): 2
+(黑体辐射, Blackbody radiation): 3
+(维恩位移定律, Wien's displacement law): 3
+(热辐射, Thermal radiation): 6
+(理想黑体, Ideal blackbody): 1
+(热力学温度, Thermodynamic temperature): 4
+(能量, Energy): 6
+(模型, Model): 1
+(自然界, Nature): 1
+(表面状况, Surface condition): 1
+(单色辐出度, Monochromatic emissivity): 3
+(地球表面接收到的辐射能, Radiation energy received by the Earth's surface): 0
+(辐射能, Radiation energy): 8
+(峰值波长, Peak wavelength): 4
+(太阳表面温度, Temperature of the sun's surface): 0
+(太阳辐出度, Solar radiance): 0
+(温度, Temperature): 24
+(斯特藩-玻耳兹曼常量, Stefan-Boltzmann constant): 1
+(反射, Reflection): 2
+(材料, Material): 2
+(形状, Shape): 1
+(短波成分, Shortwave component): 1
+(透射, Transmission): 1
+(吸收, Absorption): 2
+(辐射本领, Radiation power): 1
+(波长, Wavelength): 8
+(维恩常量, Wien constant): 1

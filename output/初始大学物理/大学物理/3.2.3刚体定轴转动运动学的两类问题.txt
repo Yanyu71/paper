@@ -1,0 +1,31 @@
+﻿{
+"knowledge_points": [
+   {"title": "刚体定轴转动运动学", "en": "Kinematics of rigid body with fixed axis rotation"},
+   {"title": "第一类问题", "en": "Type 1 problem"},
+   {"title": "第二类问题", "en": "Type 2 problem"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "刚体绕定轴转动", "en": "Rigid body rotation about a fixed axis"},
+   {"title": "匀变速转动", "en": "Uniformly accelerated rotation"},
+   {"title": "基本公式", "en": "Basic formulas"},
+   {"title": "飞轮绕定轴转动", "en": "Rotation of flywheel about a fixed axis"},
+   {"title": "切向加速度", "en": "Tangential acceleration"},
+   {"title": "法向加速度", "en": "Normal acceleration"},
+   {"title": "转速", "en": "Angular speed"},
+   {"title": "振动", "en": "Vibration"},
+   {"title": "电动机转子", "en": "Electric motor rotor"},
+   {"title": "圈数", "en": "Number of revolutions"}
+]
+}{
+"knowledge_points": [
+   {"title": "角加速度的定义", "en": "Definition of angular acceleration", "type": "定义", "description": "角加速度是角速度随时间的变化率。"},
+   {"title": "分离变量并积分", "en": "Separation of variables and integration", "type": "方法", "description": "将方程中的变量分离并进行积分。"},
+   {"title": "转子的角速度", "en": "Angular velocity of the rotor", "type": "定义", "description": "转子的角速度是转子单位时间内转过的角度。"},
+   {"title": "转子的角速度与时间的关系", "en": "Relationship between angular velocity of the rotor and time", "type": "关系", "description": "转子的角速度与时间成正比关系。"},
+   {"title": "转子转过的圈数", "en": "Number of circles rotated by the rotor", "type": "计算", "description": "转子转过的圈数可以通过转子的角速度与时间的积分得到。"},
+   {"title": "刚体定轴转动的角速度和角加速度的定义", "en": "Definition of angular velocity and angular acceleration in rigid body rotational motion", "type": "定义", "description": "刚体定轴转动的角速度是刚体单位时间内转过的角度，角加速度是角速度随时间的变化率。"},
+   {"title": "刚体定轴转动的运动规律", "en": "Motion laws of rigid body rotational motion", "type": "规律", "description": "刚体定轴转动的运动规律与质点运动学的相应量类似，可以借助于平面圆周运动相应问题的解法。"},
+   {"title": "刚体模型的特征", "en": "Characteristics of rigid body model", "type": "特征", "description": "刚体模型是一个理想化的物体，没有形变和变形，其各个部分之间的相对位置保持不变。"},
+   {"title": "实际固态物体可看作刚体的条件", "en": "Conditions under which real solid objects can be considered as rigid bodies", "type": "条件", "description": "实际固态物体在满足形变和变形较小的条件下，可以近似看作刚体。"}
+]
+}

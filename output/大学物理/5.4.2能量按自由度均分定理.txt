@@ -1,0 +1,50 @@
+﻿{
+"knowledge_points": [
+   {"title": "能量按自由度均分定理", "en": "Energy distribution according to degrees of freedom"},
+   {"title": "平均平动动能", "en": "Average translational kinetic energy"},
+   {"title": "平动自由度", "en": "Translational degrees of freedom"},
+   {"title": "分子的转动和振动", "en": "Molecular rotation and vibration"},
+   {"title": "能量均分定理", "en": "Equipartition theorem"},
+   {"title": "内能", "en": "Internal energy"},
+   {"title": "微观角度", "en": "Microscopic perspective"},
+   {"title": "热力学系统", "en": "Thermodynamic system"},
+   {"title": "热运动动能", "en": "Thermal kinetic energy"},
+   {"title": "相互作用势能", "en": "Interaction potential energy"},
+   {"title": "刚性分子", "en": "Rigid molecules"},
+   {"title": "摩尔数", "en": "Molar number"},
+   {"title": "摩尔质量", "en": "Molar mass"},
+   {"title": "温度", "en": "Temperature"}
+]
+}{
+"knowledge_points": [
+   {"title": "上式表明", "en": "The above equation shows"},
+   {"title": "内能表达式中的自由度数", "en": "The number of degrees of freedom in the expression of internal energy"},
+   {"title": "H2和He理想气体分子的平均平动动能、平均总动能和气体的内能", "en": "The average translational kinetic energy, average total kinetic energy, and internal energy of H2 and He ideal gas molecules"},
+   {"title": "氦气分子(He)为单原子分子", "en": "Helium molecule (He) is a monatomic molecule"},
+   {"title": "氢气分子(112)为双原子分子", "en": "Hydrogen molecule (H2) is a diatomic molecule"},
+   {"title": "理想气体的内能", "en": "Internal energy of an ideal gas"},
+   {"title": "质量为0.1kg,温度为27^的乂装在容积为0.01m3的容器中", "en": "A mass of 0.1kg, temperature of 27^, contained in a container with a volume of 0.01m3"},
+   {"title": "容器以《=100m•速率作勻速直线运动", "en": "The container moves in a straight line at a constant speed of 100m/s"},
+   {"title": "容器突然停下来", "en": "The container suddenly stops"},
+   {"title": "动能全部转化为分子热运动的内能", "en": "The kinetic energy is completely converted into the internal energy of molecular thermal motion"},
+   {"title": "平衡后氮气的温度和压强各增加多少", "en": "How much does the temperature and pressure of nitrogen increase after equilibrium"},
+   {"title": "什么是自由度", "en": "What is degrees of freedom"},
+   {"title": "单原子分子和双原子分子各有几个自由度", "en": "How many degrees of freedom do monatomic and diatomic molecules have"},
+   {"title": "大量分子集体是由什么原因导致能量按自由度均分", "en": "What causes the energy to be evenly distributed according to degrees of freedom in a large collection of molecules"}
+]
+}{
+"knowledge_points": [
+   {"title": "内能", "en": "Internal energy"},
+   {"title": "理想气体", "en": "Ideal gas"},
+   {"title": "特征", "en": "Characteristics"},
+   {"title": "物理意义", "en": "Physical meaning"},
+   {"title": "平动动能", "en": "Translational kinetic energy"},
+   {"title": "分子", "en": "Molecule"},
+   {"title": "平衡态", "en": "Equilibrium state"},
+   {"title": "热运动", "en": "Thermal motion"},
+   {"title": "相互碰撞", "en": "Collisions"},
+   {"title": "速率分布", "en": "Velocity distribution"},
+   {"title": "统计规律", "en": "Statistical law"},
+   {"title": "麦克斯韦速率分布率", "en": "Maxwell velocity distribution"}
+]
+}

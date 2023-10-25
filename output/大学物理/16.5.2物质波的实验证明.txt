@@ -1,0 +1,22 @@
+﻿{
+"knowledge_points": [
+   {"title": "物质波", "en": "matter wave"},
+   {"title": "德布罗意关系", "en": "de Broglie relation"},
+   {"title": "电子衍射", "en": "electron diffraction"},
+   {"title": "波粒二象性", "en": "wave-particle duality"},
+   {"title": "电子显微镜", "en": "electron microscope"},
+   {"title": "粒子的波动性", "en": "wave nature of particles"},
+   {"title": "德布罗意波长", "en": "de Broglie wavelength"},
+   {"title": "相对论效应", "en": "relativistic effects"},
+   {"title": "X射线", "en": "X-ray"},
+   {"title": "衍射实验", "en": "diffraction experiment"},
+   {"title": "子弹的德布罗意波长", "en": "de Broglie wavelength of a bullet"}
+]
+}{
+"knowledge_points": [
+   {"title": "宏观粒子", "en": "Macroscopic particles"},
+   {"title": "德布罗意波长", "en": "de Broglie wavelength"},
+   {"title": "波动性", "en": "wave-particle duality"},
+   {"title": "粒子性", "en": "particle nature"}
+]
+}

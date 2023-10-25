@@ -1,0 +1,32 @@
+(爱因斯坦光子假说, Einstein's photon hypothesis): 1
+(光电效应方程, Photoelectric effect equation): 8
+(普朗克常量, Planck constant): 1
+(14, 14): 1
+(黑体辐射, Blackbody radiation): 1
+(光电子的最大初动能, Maximum kinetic energy of photoelectrons): 0
+(金属的逸出功, Work function of a metal): 2
+((L0-0.5)x10, (L0-0.5): 0
+(光强与光子数的关系, Relationship between light intensity and number of photons): 0
+(照射频率与光电子初动能的关系, Relationship between incident frequency and initial kinetic energy of photoelectrons): 0
+(h, h): 2
+(A, A): 5
+(光电效应方程的形式, Form of photoelectric effect equation): 0
+(紫外线产生阴极射线, Generation of cathode rays by ultraviolet radiation): 1
+(1, 6x10…x2,0, 1.6x10...x2.0): 25
+(癱, paralysis): 1
+(逸出功的测量方法, Methods of measuring work function): 0
+(对照实验曲线, control experimental curve): 1
+(和, and): 9
+(得, obtain): 6
+(m, m): 3
+(光子假说, Photon hypothesis): 3
+(光子, Photon): 10
+(光电效应实验曲线, Photoelectric effect experimental curve): 1
+(光电效应, Photoelectric effect): 12
+(普朗克常童, Planck constant): 1
+(光电效应的实验规律, Experimental laws of photoelectric effect): 1
+(光电效应方程的定义, Definition of photoelectric effect equation): 0
+(光致发光, Photoluminescence): 1
+(a, a): 5
+(光的能量在空间中不是连续分布的假说, Hypothesis that the energy of light is not continuously distributed in space): 0
+(光子假说与光电效应的关系, Relationship between photon hypothesis and photoelectric effect): 0

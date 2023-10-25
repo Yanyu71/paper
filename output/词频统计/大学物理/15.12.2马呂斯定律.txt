@@ -1,0 +1,38 @@
+(光开关, Optical switch): 3
+(偏振光强度变化, polarized light intensity change): 1
+(线偏振光, linearly polarized light): 61
+(物镜, objective lens): 34
+(夹角, angle): 111
+(立体电影, stereoscopic film): 1
+(马吕斯定律, Malus's law): 4
+(顺时针方向, clockwise direction): 12
+(偏振滤光片, polarizing filter): 1
+(振幅分解, decomposition of amplitude): 1
+(吸收, absorption): 181
+(法国物理学家马吕斯, French physicist Malus): 1
+(光振动方向, direction of light vibration): 5
+(检偏器, polarizer): 9
+(自然光, natural light): 56
+(光透过偏振片, Light passing through a polarizer): 3
+(光强度, light intensity): 8
+(混合光, mixed light): 2
+(自然光, Natural light): 56
+(检偏器偏振化方向, direction of polarization of the polarizer): 1
+(光强, light intensity): 183
+(光强与光强度之比, ratio of light intensity to light intensity): 0
+(正交偏振片, Orthogonal polarizers): 1
+(光的光强度, intensity of light): 1
+(起偏作用, polarization effect): 1
+(偏振化方向, Polarization direction): 34
+(透射光强度, Transmitted light intensity): 2
+(马呂斯定律, Malus's Law): 2
+(线偏振光, Linearly polarized light): 61
+(迎着透射光观察, observing against transmitted light): 1
+(透射光的光强与入射光的光强之比, ratio of transmitted light intensity to incident light intensity): 1
+(光波, light wave): 335
+(消光, extinction): 1
+(光的比例, proportion of light): 0
+(布儒斯特定律, Brewster's law): 7
+(混合光, Mixed light): 2
+(透射光, transmitted light): 38
+(偏光眼镜, polarized glasses): 1

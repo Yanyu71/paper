@@ -1,0 +1,6 @@
+(衍射, diffraction): 7
+(夫琅禾费衍射, Fraunhofer diffraction): 1
+(惠更斯-菲涅耳原理, Huygens-Fresnel principle): 2
+(相干叠加, coherent superposition): 2
+(菲涅耳衍射, Fresnel diffraction): 1
+(惠更斯原理, Huygens' principle): 1

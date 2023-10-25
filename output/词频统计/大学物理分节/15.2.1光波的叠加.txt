@@ -1,0 +1,31 @@
+(最大, maximum): 1
+(光强, Light intensity): 15
+(光波的相干叠加, Coherent superposition of light waves): 1
+(频率, Frequency): 10
+(合光强, total intensity of light): 3
+(线性介质, Linear medium): 1
+(初相位, Initial phase): 1
+(光的干涉现象, interference of light): 1
+(非相干叠加, incoherent superposition): 5
+(A, A): 3
+(干涉现象, Interference phenomenon): 3
+(光波, Light wave): 44
+(振幅矢量, Amplitude vector): 1
+(合光强, Total light intensity): 3
+(光矢量, Light vector): 4
+(4, 4): 3
+(得, obtain): 4
+(光波叠加区域, region of superposition of light waves): 0
+(相干光, coherent light): 3
+(图15.8, Figure 15.8): 0
+(相干叠加, coherent superposition): 7
+(明暗对比度, contrast of brightness): 1
+(区别, difference): 1
+(电磁波, Electromagnetic wave): 1
+(Pmin, Pmin): 1
+(相干条件, Coherence condition): 1
+(光强发生重新分布, redistribution of light intensity): 0
+(波的叠加, Wave superposition): 7
+(分光强, intensity of individual light waves): 2
+(时, when): 17
+(光波的非相干叠加, Incoherent superposition of light waves): 2

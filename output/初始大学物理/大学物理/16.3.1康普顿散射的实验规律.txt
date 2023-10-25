@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "康普顿散射", "en": "Compton scattering"},
+   {"title": "康普顿效应", "en": "Compton effect"},
+   {"title": "X射线", "en": "X-ray"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "散射角", "en": "scattering angle"},
+   {"title": "散射线", "en": "scattered ray"},
+   {"title": "入射线", "en": "incident ray"},
+   {"title": "石墨", "en": "graphite"},
+   {"title": "摄谱仪", "en": "spectrometer"},
+   {"title": "波长差", "en": "wavelength difference"},
+   {"title": "强度", "en": "intensity"},
+   {"title": "散射物质", "en": "scattering material"},
+   {"title": "原子序数", "en": "atomic number"},
+   {"title": "吴有训", "en": "Wu Youxun"},
+   {"title": "实验结果", "en": "experimental results"}
+]
+}

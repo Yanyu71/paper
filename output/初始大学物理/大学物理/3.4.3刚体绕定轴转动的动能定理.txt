@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "刚体绕定轴转动的动能定理", "en": "Kinetic energy theorem for rigid body rotation about a fixed axis"},
+   {"title": "合外力矩", "en": "Net external torque"},
+   {"title": "转动定律", "en": "Rotational law"},
+   {"title": "变量代换", "en": "Variable substitution"},
+   {"title": "分离变量", "en": "Separation of variables"},
+   {"title": "刚体绕定轴转动的功能关系", "en": "Functional relationship of rigid body rotation about a fixed axis"},
+   {"title": "力矩的元功", "en": "Elemental work of torque"},
+   {"title": "刚体绕定轴转动动能定理", "en": "Kinetic energy theorem for rigid body rotation about a fixed axis"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "外力", "en": "External force"},
+   {"title": "合外力矩的功", "en": "Work done by net external torque"},
+   {"title": "内力", "en": "Internal force"},
+   {"title": "质点系的动能定理", "en": "Kinetic energy theorem for a system of particles"},
+   {"title": "定轴转动的动能定理", "en": "Kinetic energy theorem for rotational motion about a fixed axis"},
+   {"title": "非刚体", "en": "Non-rigid body"}
+]
+}

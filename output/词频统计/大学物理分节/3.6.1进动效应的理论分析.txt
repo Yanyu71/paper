@@ -1,0 +1,9 @@
+(进动效应, Precession effect): 2
+(角动量定理, Angular momentum theorem): 3
+(进动角速度, Precession angular velocity): 6
+(进动规律, Precession law): 1
+(陀螺仪, Gyroscope): 3
+(角位移, Angular displacement): 1
+(角动量矢量, Angular momentum vector): 1
+(自转速度, Spin speed): 1
+(外力矩, External torque): 6

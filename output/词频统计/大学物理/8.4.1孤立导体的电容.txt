@@ -1,0 +1,15 @@
+(孤立导体, Isolated conductor): 14
+(微法, Microfarad): 1
+(国际单位制, International System of Units): 6
+(电容, Capacitance): 246
+(电荷, Electric charge): 721
+(单位, Unit): 286
+(法拉, Farad): 35
+(皮法, Picofarad): 1
+(比值, Ratio): 24
+(电势, Electric potential): 348
+(静电平衡, Static equilibrium): 25
+(库仑, Coulomb): 40
+(真空中, In vacuum): 66
+(伏特, Volt): 9
+(形状和大小, Shape and size): 9

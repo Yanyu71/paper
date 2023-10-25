@@ -1,0 +1,17 @@
+﻿{
+"knowledge_points": [
+   {"title": "质点的角动量定理", "en": "Angular Momentum Theorem of a Particle"},
+   {"title": "牛顿第二定律", "en": "Newton's Second Law"},
+   {"title": "质点动量", "en": "Linear Momentum of a Particle"},
+   {"title": "质点角动量", "en": "Angular Momentum of a Particle"},
+   {"title": "质点所受力", "en": "Force on a Particle"},
+   {"title": "时间变化率", "en": "Rate of Change with Time"},
+   {"title": "力的作用点", "en": "Point of Application of Force"},
+   {"title": "位矢", "en": "Position Vector"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "力臂", "en": "Lever Arm"},
+   {"title": "冲量矩", "en": "Impulse Moment"},
+   {"title": "动力学基本规律", "en": "Fundamental Law of Dynamics"},
+   {"title": "惯性系", "en": "Inertial Frame of Reference"}
+]
+}

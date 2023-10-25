@@ -1,0 +1,98 @@
+﻿{
+"knowledge_points": [
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "矢量叠加原理", "en": "Vector superposition principle"},
+   {"title": "稳恒电流", "en": "Steady current"},
+   {"title": "导体", "en": "Conductor"},
+   {"title": "导体回路", "en": "Conductor loop"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "矢量积分", "en": "Vector integral"},
+   {"title": "直角坐标系", "en": "Rectangular coordinate system"},
+   {"title": "直角分量", "en": "Rectangular component"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "毕奥-萨伐尔定律", "en": "Biot-Savart law"},
+   {"title": "例题", "en": "Example"},
+   {"title": "载流直导线", "en": "Current-carrying straight wire"},
+   {"title": "磁感应强度大小", "en": "Magnitude of magnetic induction"},
+   {"title": "垂线", "en": "Perpendicular line"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "统一变量", "en": "Unified variable"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "拇指", "en": "Thumb"},
+   {"title": "四指", "en": "Four fingers"},
+   {"title": "切线方向", "en": "Tangent direction"}
+]
+}{
+"knowledge_points": [
+   {"title": "无限长载流直导线", "en": "Infinite long current-carrying wire"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "直导线垂直距离", "en": "Vertical distance from the wire"},
+   {"title": "载流圆线圈", "en": "Current-carrying circular coil"},
+   {"title": "磁感应强度的方向", "en": "Direction of magnetic induction"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "磁感应强度大小随坐标变化的曲线", "en": "Curve of magnetic induction magnitude with coordinates"},
+   {"title": "载流线圈", "en": "Current-carrying coil"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "电偶极矩", "en": "Electric dipole moment"},
+   {"title": "磁矩", "en": "Magnetic dipole moment"}
+]
+}{
+"knowledge_points": [
+   {"title": "载流线圈", "en": "Current loop"},
+   {"title": "磁矩", "en": "Magnetic moment"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "亥姆霍兹线圈", "en": "Helmholtz coil"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"}
+]
+}{
+"knowledge_points": [
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "矢量叠加原理", "en": "Vector superposition principle"},
+   {"title": "稳恒电流", "en": "Steady current"},
+   {"title": "导体", "en": "Conductor"},
+   {"title": "导体回路", "en": "Conductor loop"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "矢量积分", "en": "Vector integral"},
+   {"title": "直角坐标系", "en": "Rectangular coordinate system"},
+   {"title": "直角分量", "en": "Rectangular component"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "毕奥-萨伐尔定律", "en": "Biot-Savart law"},
+   {"title": "例题", "en": "Example"},
+   {"title": "载流直导线", "en": "Current-carrying straight wire"},
+   {"title": "磁感应强度大小", "en": "Magnitude of magnetic induction"},
+   {"title": "垂线", "en": "Perpendicular line"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "统一变量", "en": "Unified variable"},
+   {"title": "右手螺旋法则", "en": "Right-hand screw rule"}
+]
+}{
+"knowledge_points": [
+   {"title": "无限长载流直导线", "en": "Infinite long current-carrying wire"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "直导线垂直距离", "en": "Vertical distance from the wire"},
+   {"title": "载流圆线圈", "en": "Current-carrying circular coil"},
+   {"title": "磁感应强度的方向", "en": "Direction of magnetic induction"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "磁感应强度大小随坐标变化的曲线", "en": "Curve of magnetic induction magnitude with coordinates"},
+   {"title": "载流线圈", "en": "Current-carrying coil"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "电偶极子", "en": "Electric dipole"},
+   {"title": "电偶极矩", "en": "Electric dipole moment"},
+   {"title": "磁矩", "en": "Magnetic dipole moment"}
+]
+}{
+"knowledge_points": [
+   {"title": "载流线圈", "en": "Current loop"},
+   {"title": "磁矩", "en": "Magnetic moment"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "亥姆霍兹线圈", "en": "Helmholtz coil"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"}
+]
+}

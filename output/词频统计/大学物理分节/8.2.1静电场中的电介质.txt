@@ -1,0 +1,9 @@
+(电介质, Dielectric): 10
+(电场强度减小, Decrease in electric field strength): 1
+(电荷, Charge): 2
+(击穿电场强度, Breakdown electric field strength): 2
+(电场, Electric field): 7
+(电介质的相对电容率, Relative permittivity of dielectric): 1
+(电介质极化, Dielectric polarization): 1
+(电势差, Potential difference): 3
+(金属平板, Metal plate): 1

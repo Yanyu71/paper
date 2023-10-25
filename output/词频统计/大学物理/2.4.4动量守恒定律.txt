@@ -1,0 +1,101 @@
+(高压水枪, High-pressure water gun): 0
+(守恒条件, Conservation condition): 5
+(木板地, Wooden floor): 1
+(质心运动定理, Center of mass motion theorem): 11
+(坐标系, Coordinate system): 106
+(加速行驶的汽车, Accelerating car): 1
+(质点系, System of particles): 101
+(外层空间, Outer space): 2
+(软梯, Ladder): 3
+(总动量, Total momentum): 2
+(合外力, Net external force): 42
+(最大速度, maximum velocity): 5
+(真空, Vacuum): 112
+(火箭点火, Rocket ignition): 2
+(系统, System): 570
+(玻璃杯, Glass cup): 1
+(动量守恒, Conservation of momentum): 100
+(墙面对水柱的作用力, Force of the wall on the water column): 0
+(国土资源卫星, Land resources satellite): 2
+(动量定理, Principle of momentum): 56
+(物理问题, Physics problem): 6
+(长征系列火箭, Long March rockets): 2
+(冲量, Impulse): 47
+(火箭脱落, Rocket separation): 0
+(地球引力, gravity): 16
+(物体, Object): 721
+(助燃剂, oxidizer): 1
+(圆锥面, Conical surface): 5
+(火箭, rocket): 61
+(速率, Velocity): 534
+(大船, Big ship): 1
+(风云气象卫星, Fengyun meteorological satellite): 2
+(空气阻力, air resistance): 20
+(水泥地板, Concrete floor): 1
+(现代火箭技术, Modern rocket technology): 1
+(速率, velocity): 534
+(捆绑式火箭, Strap-on rocket): 1
+(拉, Pull): 143
+(普遍性, Universality): 1
+(空中翻转, Mid-air flip): 2
+(质量, mass): 641
+(牛顿定律, Newton's laws): 21
+(分量式, Component formula): 14
+(小船, Small boat): 7
+(人水, Water entry): 2
+(岸, Shore): 32
+(速度, Velocity): 1354
+(运动员, Athlete): 7
+(动量定理, Momentum theorem): 56
+(动量, Momentum): 476
+(火箭, Rocket): 61
+(动量守恒定律, Law of conservation of momentum): 50
+(静止状态, Resting state): 8
+(动量守恒定律, law of conservation of momentum): 50
+(支架, Support): 1
+(细线, String): 2
+(载人飞船, Manned spacecraft): 2
+(爬, Climb): 7
+(牛顿第三定律, Newton's third law): 7
+(运动位移, displacement): 1
+(动力学问题, Dynamics problem): 19
+(质点系, Particle system): 101
+(受力分析, Force analysis): 4
+(反冲推力, thrust): 1
+(悬浮, Suspension): 12
+(动量定理式, Momentum theorem): 4
+(动能, Kinetic energy): 357
+(弧形槽面, arc-shaped groove): 1
+(多级火箭, Multi-stage rocket): 3
+(飞溅速率, Splashing rate): 1
+(喷出截面积, Ejected cross-sectional area): 0
+(喷气式飞机, Jet plane): 2
+(内力, Internal force): 65
+(滑槽, slide): 8
+(起跳, Takeoff): 1
+(动量守恒定律, Law of Conservation of Momentum): 50
+(距离, Distance): 387
+(子压进去, Submerge): 1
+(跳水, Diving): 4
+(外力, External force): 129
+(伽利略速度变换定理, Galilean velocity transformation theorem): 4
+(滑槽, Slide): 8
+(科学探测卫星, Scientific exploration satellite): 2
+(现象, Phenomenon): 239
+(作用力, Action force): 117
+(研究对象, Research object): 53
+(人造地球卫星, Artificial Earth satellite): 6
+(动力学, Dynamics): 63
+(燃料烧完, Fuel depletion): 2
+(机械能, Mechanical energy): 69
+(断裂, Fracture): 1
+(气球, Balloon): 5
+(质量, Mass): 641
+(质点, Particle): 900
+(广播通信卫星, Broadcast communication satellite): 2
+(质量比, mass ratio): 7
+(燃料, fuel): 20
+(航天事业, Space industry): 1
+(单级火箭, Single-stage rocket): 3
+(沙土地, Sandy ground): 1
+(末速度, Final velocity): 6

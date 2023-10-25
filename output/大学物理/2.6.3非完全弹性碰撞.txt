@@ -1,0 +1,10 @@
+﻿{
+"knowledge_points": [
+   {"title": "非完全弹性碰撞", "en": "Inelastic collision"},
+   {"title": "动量守恒", "en": "Conservation of momentum"},
+   {"title": "动能损失", "en": "Loss of kinetic energy"},
+   {"title": "恢复系数", "en": "Coefficient of restitution"},
+   {"title": "完全弹性碰撞", "en": "Perfectly elastic collision"},
+   {"title": "完全非弹性碰撞", "en": "Perfectly inelastic collision"}
+]
+}

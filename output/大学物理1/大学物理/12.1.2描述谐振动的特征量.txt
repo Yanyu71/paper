@@ -1,0 +1,107 @@
+﻿[{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "相位", "en": "Phase"}
+]
+},{
+"knowledge_points": [
+   {"title": "相位", "en": "Phase"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "初相", "en": "Initial phase"},
+   {"title": "位移-时间曲线", "en": "Displacement-time curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "同相", "en": "In phase"},
+   {"title": "反相", "en": "Out of phase"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "起始条件", "en": "Initial conditions"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "弹簧振子", "en": "Spring oscillator"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "劲度系数", "en": "Spring constant"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "相位", "en": "Phase"}
+]
+},{
+"knowledge_points": [
+   {"title": "相位", "en": "Phase"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "初相", "en": "Initial phase"},
+   {"title": "位移-时间曲线", "en": "Displacement-time curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "同相", "en": "In phase"},
+   {"title": "反相", "en": "Out of phase"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "起始条件", "en": "Initial conditions"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "弹簧振子", "en": "Spring oscillator"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "劲度系数", "en": "Spring constant"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "相位", "en": "Phase"}
+]
+},{
+"knowledge_points": [
+   {"title": "相位", "en": "Phase"},
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "初相", "en": "Initial phase"},
+   {"title": "位移-时间曲线", "en": "Displacement-time curve"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "同相", "en": "In phase"},
+   {"title": "反相", "en": "Out of phase"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "起始条件", "en": "Initial conditions"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "弹簧振子", "en": "Spring oscillator"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "劲度系数", "en": "Spring constant"}
+]
+},{
+"knowledge_points": [
+   {"title": "运动学方程式", "en": "Kinematic equation"},
+   {"title": "振子的速度方程", "en": "Oscillator velocity equation"},
+   {"title": "加速度方程", "en": "Acceleration equation"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "劲度系数", "en": "Spring constant"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "初始条件", "en": "Initial conditions"},
+   {"title": "弹簧振子运动学方程式", "en": "Spring oscillator kinematic equation"},
+   {"title": "速度方程式", "en": "Velocity equation"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "单位", "en": "Unit"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "周期", "en": "Period"},
+   {"title": "相位", "en": "Phase"},
+   {"title": "实验曲线", "en": "Experimental curve"},
+   {"title": "振动方程", "en": "Vibration equation"},
+   {"title": "谐振动", "en": "Harmonic motion"},
+   {"title": "周期和振幅", "en": "Period and amplitude"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "中点", "en": "Midpoint"}
+]
+},{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "相位", "en": "Phase"}
+]
+}]

@@ -1,0 +1,10 @@
+(线偏振光, Linearly polarized light): 61
+(起偏, Polarization): 17
+(二向色性, Birefringence): 1
+(振动方向, Vibration direction): 46
+(光强, Intensity): 183
+(偏振片, Polarizing film): 78
+(偏振化方向, Polarization direction): 34
+(各向异性晶体, Anisotropic crystal): 1
+(起偏器, Polarizer): 4
+(检偏器, Analyzer): 9

@@ -1,0 +1,47 @@
+﻿[{
+"knowledge_points": [
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "磁通量", "en": "Magnetic flux"},
+   {"title": "感应电动势", "en": "Induced electromotive force"},
+   {"title": "负号", "en": "Negative sign"},
+   {"title": "电动势方向判断步骤", "en": "Steps to determine the direction of electromotive force"},
+   {"title": "右手螺旋法则", "en": "Right-hand screw rule"},
+   {"title": "锐角和钝角", "en": "Acute angle and obtuse angle"},
+   {"title": "楞次定律", "en": "Lenz's law"},
+   {"title": "闭合回路中感应电流方向判断", "en": "Determining the direction of induced current in a closed circuit"},
+   {"title": "能量守恒定律", "en": "Law of conservation of energy"},
+   {"title": "磁偶极子", "en": "Magnetic dipole"},
+   {"title": "多匝线圈中的感应电动势", "en": "Induced electromotive force in a multi-turn coil"}
+]
+},{
+"knowledge_points": [
+   {"title": "感应电流", "en": "Induced current"},
+   {"title": "感应电荷", "en": "Induced charge"},
+   {"title": "磁通匝链数", "en": "Magnetic flux linkage"},
+   {"title": "磁通计", "en": "Flux meter"},
+   {"title": "感应电动势", "en": "Induced electromotive force"},
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁通量", "en": "Magnetic flux"},
+   {"title": "矩形线圈", "en": "Rectangular coil"}
+]
+},{
+"knowledge_points": [
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "感应电动势", "en": "induced electromotive force"},
+   {"title": "楞次定律", "en": "Lenz's law"},
+   {"title": "磁通量", "en": "magnetic flux"},
+   {"title": "回路中的感应电动势", "en": "induced electromotive force in a circuit"},
+   {"title": "闭合铝环和断开的铝环的现象", "en": "phenomenon of closed and open aluminum rings"},
+   {"title": "载流线圈中的磁通量随时间变化图", "en": "graph of magnetic flux variation in a current-carrying coil with time"},
+   {"title": "炮弹速度测量方法", "en": "method of measuring projectile velocity"}
+]
+},{
+"knowledge_points": [
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction", "type": "", "description": ""},
+   {"title": "磁通量", "en": "magnetic flux", "type": "", "description": ""},
+   {"title": "感应电动势", "en": "induced electromotive force", "type": "", "description": ""},
+   {"title": "动生电动势", "en": "dynamic induced electromotive force", "type": "", "description": ""},
+   {"title": "感生电动势", "en": "induced electromotive force", "type": "", "description": ""}
+]
+}]

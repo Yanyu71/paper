@@ -1,0 +1,25 @@
+﻿{
+"knowledge_points": [
+   {"title": "互感", "en": "Mutual Inductance"},
+   {"title": "互感电动势", "en": "Mutual Induced EMF"},
+   {"title": "互感系数", "en": "Mutual Inductance Coefficient"},
+   {"title": "亨利", "en": "Henry"},
+   {"title": "变压器", "en": "Transformer"},
+   {"title": "感应圈", "en": "Induction Coil"},
+   {"title": "干扰", "en": "Interference"},
+   {"title": "耦合", "en": "Coupling"},
+   {"title": "线圈", "en": "Coil"},
+   {"title": "导线", "en": "Wire"}
+]
+}{
+"knowledge_points": [
+   {"title": "部效应", "en": "Skin effect"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "半径的影响", "en": "Effect of radius"},
+   {"title": "互感系数", "en": "Mutual inductance coefficient"},
+   {"title": "自感系数", "en": "Self-inductance coefficient"},
+   {"title": "耦合系数", "en": "Coupling coefficient"},
+   {"title": "长直导线", "en": "Straight wire"},
+   {"title": "矩形线圈", "en": "Rectangular coil"}
+]
+}

@@ -1,0 +1,44 @@
+﻿[{
+"knowledge_points": [
+   {"title": "氢原子光谱", "en": "Hydrogen atom spectrum"},
+   {"title": "原子光谱", "en": "Atomic spectrum"},
+   {"title": "光谱线", "en": "Spectral lines"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "光强", "en": "Intensity"},
+   {"title": "摄谱仪", "en": "Spectrometer"},
+   {"title": "棱镜", "en": "Prism"},
+   {"title": "光栅", "en": "Grating"},
+   {"title": "波数", "en": "Wave number"},
+   {"title": "里德伯常量", "en": "Rydberg constant"},
+   {"title": "莱曼系", "en": "Lyman series"},
+   {"title": "巴耳末系", "en": "Balmer series"},
+   {"title": "有核结构模型", "en": "Nuclear structure model"},
+   {"title": "电子辐射", "en": "Electron radiation"},
+   {"title": "电磁波", "en": "Electromagnetic wave"},
+   {"title": "能量减少", "en": "Energy decrease"}
+]
+},{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"},
+   {"title": "推荐系统", "en": "Recommendation System"}
+], 
+
+}]

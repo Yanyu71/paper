@@ -1,0 +1,22 @@
+﻿[{
+"knowledge_points": [
+   {"title": "粒子", "en": "Particle"},
+   {"title": "反粒子", "en": "Antiparticle"},
+   {"title": "共振态粒子", "en": "Resonance particle"},
+   {"title": "光子", "en": "Photon"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "中微子", "en": "Neutrino"},
+   {"title": "质子", "en": "Proton"},
+   {"title": "正粒子", "en": "Positive particle"},
+   {"title": "正电子", "en": "Positron"},
+   {"title": "反质子", "en": "Antiproton"},
+   {"title": "中子", "en": "Neutron"},
+   {"title": "反中子", "en": "Antineutron"},
+   {"title": "磁矩", "en": "Magnetic moment"},
+   {"title": "电荷", "en": "Electric charge"},
+   {"title": "自旋", "en": "Spin"},
+   {"title": "消失", "en": "Annihilation"},
+   {"title": "光子产生", "en": "Photon production"},
+   {"title": "物质", "en": "Matter"}
+]
+}]

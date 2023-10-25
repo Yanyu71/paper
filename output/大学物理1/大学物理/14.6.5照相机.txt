@@ -1,0 +1,64 @@
+﻿[{
+"knowledge_points": [
+   {"title": "照相机", "en": "Camera"},
+   {"title": "镜头", "en": "Lens"},
+   {"title": "光阑", "en": "Aperture"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "标准镜头", "en": "Standard lens"},
+   {"title": "广角镜头", "en": "Wide-angle lens"},
+   {"title": "望远镜头", "en": "Telephoto lens"},
+   {"title": "变焦距镜头", "en": "Zoom lens"},
+   {"title": "可调光阑", "en": "Adjustable aperture"},
+   {"title": "景深", "en": "Depth of field"},
+   {"title": "快门", "en": "Shutter"},
+   {"title": "曝光时间", "en": "Exposure time"},
+   {"title": "中心快门", "en": "Central shutter"},
+   {"title": "帘幕式快门", "en": "Curtain shutter"}
+]
+},{
+"knowledge_points": [
+   {"title": "底片", "en": "Film"},
+   {"title": "光阑", "en": "Aperture"},
+   {"title": "曝光时间", "en": "Exposure time"},
+   {"title": "总曝光量", "en": "Total exposure"},
+   {"title": "几何光学", "en": "Geometric optics"},
+   {"title": "光线", "en": "Light ray"},
+   {"title": "反射", "en": "Reflection"},
+   {"title": "折射", "en": "Refraction"},
+   {"title": "全反射", "en": "Total internal reflection"},
+   {"title": "色散现象", "en": "Dispersion"},
+   {"title": "笛卡儿符号规则", "en": "Descartes' sign convention"},
+   {"title": "物距", "en": "Object distance"},
+   {"title": "像距", "en": "Image distance"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "反射球面镜", "en": "Spherical mirror"},
+   {"title": "折射球面", "en": "Spherical lens"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "物像公式", "en": "Lens formula"}
+]
+},{
+"knowledge_points": [
+   {"title": "折射球面放大率", "en": "Refractive spherical magnification"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "倒立", "en": "Inverted"},
+   {"title": "正立", "en": "Upright"},
+   {"title": "像方焦距", "en": "Image focal length"},
+   {"title": "物方焦距", "en": "Object focal length"},
+   {"title": "逐次成像法", "en": "Successive imaging method"},
+   {"title": "共轴折射面组", "en": "Coaxial refractive surface group"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "物像公式", "en": "Object-image formula"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "主光线", "en": "Principal ray"},
+   {"title": "简单放大镜", "en": "Simple magnifying glass"},
+   {"title": "角放大率", "en": "Angular magnification"},
+   {"title": "显微镜", "en": "Microscope"},
+   {"title": "望远镜", "en": "Telescope"},
+   {"title": "折射角", "en": "Refracted angle"}
+]
+}]

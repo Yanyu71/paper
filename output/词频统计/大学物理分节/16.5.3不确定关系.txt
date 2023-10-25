@@ -1,0 +1,70 @@
+(波函数, Wave function): 2
+(能级宽度, energy level width): 2
+(德布罗意波长, De Broglie wavelength): 3
+(电子速率, electron velocity): 2
+(矩阵力学, Matrix mechanics): 1
+(坐标和动量的不确定关系, Uncertainty relation between position and momentum): 1
+(德布罗意关系式, de Broglie relation): 1
+(激发态, Excited state): 2
+(能级稳定性, level stability): 0
+(经典力学规律, Classical mechanics laws): 1
+(能量, Energy): 12
+(辐射光的波长差, Wavelength difference of emitted light): 1
+(电视显像管, television cathode ray tube): 1
+(德布罗意假设, De Broglie hypothesis): 1
+(光子能量, Photon energy): 2
+(平均寿命, average lifetime): 2
+(波长, wavelength): 8
+(光谱线, spectral line): 2
+(质子, Proton): 1
+(经典力学中的粒子, Particles in classical mechanics): 1
+(玻尔理论, Bohr theory): 2
+(电子位置, electron position): 0
+(横向动量, Transverse momentum): 0
+(受激态能级宽度, width of excited state energy levels): 1
+(波动性, Wave-particle duality): 5
+(原子中的电子, Electrons in atoms): 0
+(辐射光子能量不确定度, Uncertainty of photon energy): 1
+(照相底片, Photographic film): 2
+(横向速度, Lateral velocity): 2
+(波数, Wave number): 1
+(加速电压, Accelerating voltage): 2
+(原子系统, atomic system): 1
+(电子, Electron): 33
+(能量和时间不确定关系, uncertainty relation between energy and time): 1
+(参, 参): 1
+(速度的不确定量, uncertainty of velocity): 3
+(经典力学, classical mechanics): 6
+(位置, Position): 13
+(角动量, Angular momentum): 2
+(光子动量, photon momentum): 1
+(光子位置坐标, photon position coordinates): 2
+(物理学, Physics): 4
+(不确定关系, Uncertainty principle): 13
+(一维定态薛定谔方程, One-dimensional stationary Schrödinger equation): 1
+(氢原子, Hydrogen atom): 2
+(动能, Kinetic energy): 2
+(枪口直径, Muzzle diameter): 1
+(电子轨道, electron orbit): 0
+(电子单缝衍射实验, Electron single-slit diffraction experiment): 0
+(经典力学, Classical mechanics): 6
+(经典粒子, classical particle): 1
+(电子横向速度, electron transverse velocity): 1
+(不确定量, Uncertainty): 12
+(平寧, 平寧): 1
+(微观粒子, Microscopic particle): 4
+(子弹质量, Bullet mass): 1
+(轨道, Orbit): 3
+(质点, Particle): 1
+(受激态, Stimulated state): 6
+(谐振子, Harmonic oscillator): 1
+(量子力学, Quantum mechanics): 4
+(粒子波动性, Particle wave nature): 0
+(微观世界, Microscopic world): 1
+(基态, Ground state): 4
+(动量, Momentum): 11
+(电子速度的不确定量, Uncertainty in electron velocity): 1
+(不确定度, uncertainty): 2
+(海森伯, Heisenberg): 2
+(波粒二象性, Wave-particle duality): 5
+(电子流强度, Electron intensity): 1

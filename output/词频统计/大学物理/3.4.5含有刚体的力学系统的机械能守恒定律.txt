@@ -1,0 +1,43 @@
+(应用系统机械能守恒定律, Application of the law of conservation of mechanical energy in systems): 1
+(转动惯量, Moment of inertia): 98
+(时间的累积效应, Cumulative effect of time): 3
+(内力对刚体的作用, Action of internal forces on a rigid body): 0
+(势能零点, Zero point of potential energy): 25
+(密度, Density): 237
+(弹簧劲度系数, Spring constant): 1
+(平动动能, Translational kinetic energy): 44
+(含有刚体的力学系统, Mechanical systems with rigid bodies): 2
+(功, Work): 633
+(重力势能, Gravitational potential energy): 19
+(定轴转动刚体, Rigid body with rotational motion about a fixed axis): 18
+(重力作功, Work done by gravity): 3
+(滑块位置坐标, Coordinate of the block's position): 1
+(角速度, Angular velocity): 156
+(动能增量, Increment of kinetic energy): 1
+(摩擦力矩, Friction torque): 5
+(轴承上支承力不作功, Support force on the bearing does no work): 1
+(摩擦力不计, Neglecting frictional force): 1
+(刚体, Rigid body): 300
+(机械能守恒定律, Law of conservation of mechanical energy): 17
+(定滑轮, Fixed pulley): 19
+(力, Force): 2617
+(定轴转动的刚体, Rigid body in fixed-axis rotation): 4
+(滑块速率, Velocity of the block): 2
+(外力对刚体所作功, Work done by external forces on a rigid body): 0
+(角动量定理, Angular momentum theorem): 25
+(角加速度, Angular acceleration): 77
+(转动动能, Rotational kinetic energy): 18
+(角动量守恒定律, Law of conservation of angular momentum): 24
+(斜面倾角, Angle of the incline): 1
+(速度, Velocity): 1354
+(滑块下滑距离, Distance of the block's slide): 0
+(力矩, Torque): 223
+(动能之比, Ratio of kinetic energies): 3
+(足球守门员, Goalkeeper): 1
+(滑轮半径, Radius of the pulley): 1
+(系统机械能守恒, Conservation of mechanical energy in the system): 3
+(势能变化, Change in potential energy): 1
+(滑块质量, Mass of the block): 0
+(细杆, Thin rod): 57
+(定轴转动定律, Law of rotational motion about a fixed axis): 20
+(质点力学, Particle mechanics): 5

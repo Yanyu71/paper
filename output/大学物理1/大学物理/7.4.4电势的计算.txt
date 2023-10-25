@@ -1,0 +1,65 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电势的计算", "en": "Calculation of electric potential"},
+   {"title": "点电荷电场中的电势", "en": "Electric potential in the field of a point charge"},
+   {"title": "点电荷系电场中的电势", "en": "Electric potential in the field of a system of point charges"},
+   {"title": "均匀带电球面中的电势分布", "en": "Distribution of electric potential in a uniformly charged spherical surface"},
+   {"title": "均匀带电直线中的电势分布", "en": "Distribution of electric potential in a uniformly charged straight line"}
+]
+},{
+"knowledge_points": [
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电势零点", "en": "Zero potential point"},
+   {"title": "电势分布", "en": "Distribution of electric potential"},
+   {"title": "电势叠加原理", "en": "Superposition principle of electric potential"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "高斯定理", "en": "Gauss's theorem"},
+   {"title": "电荷分布", "en": "Charge distribution"},
+   {"title": "对称性", "en": "Symmetry"}
+]
+},{
+"knowledge_points": [
+   {"title": "带电体", "en": "Charged object"},
+   {"title": "电荷元", "en": "Charge element"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "勺电势", "en": "Potential at infinity"},
+   {"title": "点电荷的电势", "en": "Potential of a point charge"},
+   {"title": "均匀带电圆环", "en": "Uniformly charged ring"},
+   {"title": "均匀带电圆盘", "en": "Uniformly charged disk"},
+   {"title": "电偶极子的电势", "en": "Potential of an electric dipole"},
+   {"title": "电四极子", "en": "Electric quadrupole"},
+   {"title": "同心均匀带电球面", "en": "Concentric uniformly charged spherical shells"},
+   {"title": "均匀带电球体", "en": "Uniformly charged sphere"},
+   {"title": "均匀带电细杆", "en": "Uniformly charged thin rod"},
+   {"title": "无限长圆柱面", "en": "Infinite cylindrical surface"},
+   {"title": "静电力的保守性", "en": "Conservativeness of electrostatic force"},
+   {"title": "电场力作功", "en": "Work done by electric field force"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "电场对移动电子所作的功", "en": "Work done by electric field on moving electron"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "静电场的环路定理", "en": "Loop theorem of electrostatic field"},
+   {"title": "能量守恒定律", "en": "Law of conservation of energy"}
+]
+},{
+"knowledge_points": [
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "试验电荷", "en": "Test charge"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "电荷量", "en": "Charge"},
+   {"title": "电势能", "en": "Electric potential energy"},
+   {"title": "净电荷", "en": "Net charge"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "路径", "en": "Path"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "电中性", "en": "Electrically neutral"},
+   {"title": "电能", "en": "Electric energy"},
+   {"title": "雷雨季节", "en": "Thunderstorm season"},
+   {"title": "云团", "en": "Cloud cluster"},
+   {"title": "闪电", "en": "Lightning"},
+   {"title": "电机壳", "en": "Machine casing"},
+   {"title": "接地", "en": "Grounding"},
+   {"title": "等势面", "en": "Equipotential surface"},
+   {"title": "微分关系", "en": "Differential relationship"}
+]
+}]

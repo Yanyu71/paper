@@ -1,0 +1,13 @@
+(方均根速率, Root mean square velocity): 1
+(库士, Kusch): 1
+(分子速率分布函数, Molecular velocity distribution function): 1
+(麦克斯韦速率分布律, Maxwell's velocity distribution law): 4
+(实验验证, Experimental verification): 2
+(速率过滤器, Velocity filter): 1
+(最概然速率, Most probable velocity): 6
+(能量分布, Energy distribution): 1
+(平均速率, Average velocity): 2
+(葛正权, Ge Zhengquan): 1
+(速率分布, Velocity distribution): 15
+(斯特恩, Stern): 1
+(密勒, Miller): 1

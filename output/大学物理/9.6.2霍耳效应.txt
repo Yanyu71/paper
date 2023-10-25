@@ -1,0 +1,16 @@
+﻿{
+"knowledge_points": [
+   {"title": "霍耳效应", "en": "Hall effect"},
+   {"title": "电流", "en": "electric current"},
+   {"title": "导电板", "en": "conductive plate"},
+   {"title": "磁感应强度", "en": "magnetic induction intensity"},
+   {"title": "匀强磁场", "en": "uniform magnetic field"},
+   {"title": "电势差", "en": "potential difference"},
+   {"title": "霍耳电压", "en": "Hall voltage"},
+   {"title": "霍耳系数", "en": "Hall coefficient"},
+   {"title": "载流子", "en": "charge carrier"},
+   {"title": "洛伦兹力", "en": "Lorentz force"},
+   {"title": "电场", "en": "electric field"},
+   {"title": "电压", "en": "voltage"}
+]
+}

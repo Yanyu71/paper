@@ -1,0 +1,20 @@
+(作用上的先后之别, no distinction in order of action): 0
+(牛顿运动定律, Newton's Laws of Motion): 2
+(大小相等, equal in magnitude): 1
+(主动与被动之分, active and passive distinction): 1
+(作用与反作用定律, Law of Action and Reaction): 1
+(第一定律, First Law): 6
+(力, Force): 23
+(第三定律, Third Law): 2
+(同种类型的力, same type of force): 1
+(惯性, Inertia): 5
+(作用力, action force): 5
+(质量, Mass): 12
+(质点, Particle): 12
+(第二定律, Second Law): 3
+(互称为, referred to as): 0
+(加速度, Acceleration): 6
+(动量, Momentum): 2
+(反作用力, reaction force): 3
+(方向相反, opposite in direction): 0
+(不能相互抵消, cannot cancel each other out): 1

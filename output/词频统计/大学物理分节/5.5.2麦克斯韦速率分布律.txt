@@ -1,0 +1,17 @@
+(速率区间, Rate interval): 5
+(分子质量影响, Molecular mass influence): 0
+(分子数比率, Molecular number ratio): 0
+(麦克斯韦速率分布率, Maxwell velocity distribution rate): 6
+(麦克斯韦速率分布函数, Maxwell velocity distribution function): 1
+(速率分布曲线, Rate distribution curve): 9
+(麦克斯韦速率分布曲线, Maxwell velocity distribution curve): 4
+(麦克斯韦速率分布律, Maxwell velocity distribution law): 1
+(特征, characteristics): 2
+(分子质量, molecular mass): 3
+(温度影响, Temperature influence): 0
+(分子热运动速率, molecular thermal velocity): 1
+(温度, temperature): 9
+(分布函数, distribution function): 8
+(归一化条件, normalization condition): 2
+(最概然速率, Most probable rate): 3
+(玻尔兹曼常数, Boltzmann constant): 0

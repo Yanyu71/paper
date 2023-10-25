@@ -1,0 +1,47 @@
+﻿{
+"knowledge_points": [
+   {"title": "玻耳兹曼能量分布律", "en": "Boltzmann energy distribution law"},
+   {"title": "动能", "en": "kinetic energy"},
+   {"title": "麦克斯韦速率分布律", "en": "Maxwell velocity distribution law"},
+   {"title": "分子", "en": "molecule"},
+   {"title": "外力场", "en": "external force field"},
+   {"title": "平动动能", "en": "translational kinetic energy"},
+   {"title": "动能分布函数", "en": "kinetic energy distribution function"},
+   {"title": "理想气体", "en": "ideal gas"},
+   {"title": "势能", "en": "potential energy"},
+   {"title": "总能量", "en": "total energy"},
+   {"title": "位置坐标", "en": "position coordinates"},
+   {"title": "保守力场", "en": "conservative force field"},
+   {"title": "平衡状态", "en": "equilibrium state"},
+   {"title": "速度区间", "en": "velocity range"},
+   {"title": "坐标区间", "en": "coordinate range"},
+   {"title": "玻耳兹曼分子按能量分布定律", "en": "Boltzmann energy distribution law"},
+   {"title": "统计规律", "en": "statistical law"}
+]
+}{
+"knowledge_points": [
+   {"title": "玻耳兹曼分布律", "en": "Boltzmann distribution"},
+   {"title": "麦克斯韦速度分布函数", "en": "Maxwell velocity distribution function"},
+   {"title": "分子按势能的分布规律", "en": "Distribution of molecules according to potential energy"},
+   {"title": "重力场中微粒按高度的分布", "en": "Distribution of particles in a gravitational field according to height"},
+   {"title": "大气压强随高度变化的规律", "en": "Relationship between atmospheric pressure and altitude"},
+   {"title": "玻耳兹曼分布律与麦克斯韦分布律的区别", "en": "Difference between Boltzmann distribution and Maxwell distribution"},
+   {"title": "气体分子优先占据低能量状态的统计解释", "en": "Statistical explanation of gas molecules occupying low energy states"},
+   {"title": "气体分子的平均碰撞频率及平均自由程", "en": "Average collision frequency and mean free path of gas molecules"}
+]
+}{
+"knowledge_points": [
+   {"title": "气体分子间碰撞", "en": "Gas molecule collision"},
+   {"title": "力学中的质点碰撞", "en": "Particle collision in mechanics"},
+   {"title": "分子力作用", "en": "Intermolecular forces"},
+   {"title": "分子间的相互散射过程", "en": "Intermolecular scattering process"},
+   {"title": "斥力", "en": "Repulsive force"},
+   {"title": "势能", "en": "Potential energy"},
+   {"title": "动能", "en": "Kinetic energy"},
+   {"title": "分子速度", "en": "Molecular velocity"},
+   {"title": "弹性碰撞", "en": "Elastic collision"},
+   {"title": "分子的有效直径", "en": "Effective diameter of molecules"},
+   {"title": "平均碰撞频率", "en": "Average collision frequency"},
+   {"title": "平均自由程", "en": "Mean free path"}
+]
+}

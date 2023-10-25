@@ -1,0 +1,39 @@
+﻿[{
+"knowledge_points": [
+   {"title": "爱因斯坦光子假说", "en": "Einstein's photon hypothesis"},
+   {"title": "光电效应方程", "en": "Photoelectric effect equation"},
+   {"title": "黑体辐射", "en": "Blackbody radiation"},
+   {"title": "光致发光", "en": "Photoluminescence"},
+   {"title": "紫外线产生阴极射线", "en": "Generation of cathode rays by ultraviolet radiation"},
+   {"title": "光的能量在空间中不是连续分布的假说", "en": "Hypothesis that the energy of light is not continuously distributed in space"},
+   {"title": "光子", "en": "Photon"},
+   {"title": "光电效应", "en": "Photoelectric effect"},
+   {"title": "光子假说", "en": "Photon hypothesis"},
+   {"title": "光子假说与光电效应的关系", "en": "Relationship between photon hypothesis and photoelectric effect"},
+   {"title": "光电效应方程的定义", "en": "Definition of photoelectric effect equation"},
+   {"title": "光电效应方程的形式", "en": "Form of photoelectric effect equation"},
+   {"title": "光电子的最大初动能", "en": "Maximum kinetic energy of photoelectrons"},
+   {"title": "照射频率与光电子初动能的关系", "en": "Relationship between incident frequency and initial kinetic energy of photoelectrons"},
+   {"title": "金属的逸出功", "en": "Work function of a metal"},
+   {"title": "光电效应的实验规律", "en": "Experimental laws of photoelectric effect"},
+   {"title": "光强与光子数的关系", "en": "Relationship between light intensity and number of photons"},
+   {"title": "逸出功的测量方法", "en": "Methods of measuring work function"},
+   {"title": "普朗克常量", "en": "Planck constant"},
+   {"title": "光电效应实验曲线", "en": "Photoelectric effect experimental curve"}
+]
+},{
+"knowledge_points": [
+   {"title": "和", "en": "and"},
+   {"title": "a", "en": "a"},
+   {"title": "得", "en": "obtain"},
+   {"title": "h", "en": "h"},
+   {"title": "A", "en": "A"},
+   {"title": "m", "en": "m"},
+   {"title": "对照实验曲线", "en": "control experimental curve"},
+   {"title": "普朗克常童", "en": "Planck constant"},
+   {"title": "14", "en": "14"},
+   {"title": "1,6x10…x2,0", "en": "1.6x10...x2.0"},
+   {"title": "癱", "en": "paralysis"},
+   {"title": "(L0-0.5)x10", "en": "(L0-0.5)x10"}
+]
+}]

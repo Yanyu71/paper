@@ -1,0 +1,13 @@
+﻿{
+"knowledge_points": [
+   {"title": "气体分子的方均根速率", "en": "Root mean square speed of gas molecules"},
+   {"title": "平均平动动能公式", "en": "Formula for average translational kinetic energy"},
+   {"title": "方均根速率", "en": "Root mean square speed"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "分子速率", "en": "Molecular speed"},
+   {"title": "统计平均值", "en": "Statistical average"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "逃逸速率", "en": "Escape velocity"},
+   {"title": "热力学温度", "en": "Thermodynamic temperature"}
+]
+}

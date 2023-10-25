@@ -1,0 +1,6 @@
+(动量守恒, Conservation of momentum): 0
+(非完全弹性碰撞, Inelastic collision): 3
+(完全弹性碰撞, Perfectly elastic collision): 4
+(完全非弹性碰撞, Perfectly inelastic collision): 1
+(恢复系数, Coefficient of restitution): 1
+(动能损失, Loss of kinetic energy): 0

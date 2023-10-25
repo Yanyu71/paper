@@ -1,0 +1,63 @@
+﻿[{
+"knowledge_points": [
+   {"title": "安培环路定理", "en": "Ampere's Circuital Law"},
+   {"title": "静电场", "en": "Electric field"},
+   {"title": "环流", "en": "Circulation"},
+   {"title": "保守场", "en": "Conservative field"},
+   {"title": "稳恒电流", "en": "Steady current"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "线积分", "en": "Line integral"},
+   {"title": "真空磁导率", "en": "Vacuum permeability"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "无限长载流直导线", "en": "Infinite straight current-carrying wire"},
+   {"title": "垂直平面", "en": "Vertical plane"},
+   {"title": "验证", "en": "Verification"}
+]
+},{
+"knowledge_points": [
+   {"title": "闭合路径", "en": "Closed path"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "环流", "en": "Loop current"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "直线电流", "en": "Straight current"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "无旋场", "en": "Irrotational field"},
+   {"title": "有旋场", "en": "Rotational field"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "稳恒磁场", "en": "Steady magnetic field"},
+   {"title": "磁场的高斯定理", "en": "Gauss's law for magnetism"},
+   {"title": "变化的磁场", "en": "Changing magnetic field"}
+]
+},{
+"knowledge_points": [
+   {"title": "安培环路定理", "en": "Ampere's Circuital Law"},
+   {"title": "静电场", "en": "Electric field"},
+   {"title": "环流", "en": "Circulation"},
+   {"title": "保守场", "en": "Conservative field"},
+   {"title": "稳恒电流", "en": "Steady current"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "线积分", "en": "Line integral"},
+   {"title": "真空磁导率", "en": "Vacuum permeability"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "无限长载流直导线", "en": "Infinite straight current-carrying wire"},
+   {"title": "垂直平面", "en": "Vertical plane"},
+   {"title": "验证", "en": "Verification"}
+]
+},{
+"knowledge_points": [
+   {"title": "闭合路径", "en": "Closed path"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "环流", "en": "Loop current"},
+   {"title": "右手螺旋法则", "en": "Right-hand rule"},
+   {"title": "直线电流", "en": "Straight current"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "无旋场", "en": "Irrotational field"},
+   {"title": "有旋场", "en": "Rotational field"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "稳恒磁场", "en": "Steady magnetic field"},
+   {"title": "磁场的高斯定理", "en": "Gauss's law for magnetism"},
+   {"title": "变化的磁场", "en": "Changing magnetic field"}
+]
+}]

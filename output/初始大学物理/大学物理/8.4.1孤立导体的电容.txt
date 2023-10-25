@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "孤立导体", "en": "Isolated conductor"},
+   {"title": "电容", "en": "Capacitance"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电荷", "en": "Electric charge"},
+   {"title": "形状和大小", "en": "Shape and size"},
+   {"title": "真空中", "en": "In vacuum"},
+   {"title": "静电平衡", "en": "Static equilibrium"},
+   {"title": "比值", "en": "Ratio"},
+   {"title": "单位", "en": "Unit"},
+   {"title": "国际单位制", "en": "International System of Units"},
+   {"title": "库仑", "en": "Coulomb"},
+   {"title": "伏特", "en": "Volt"},
+   {"title": "法拉", "en": "Farad"},
+   {"title": "微法", "en": "Microfarad"},
+   {"title": "皮法", "en": "Picofarad"}
+]
+}

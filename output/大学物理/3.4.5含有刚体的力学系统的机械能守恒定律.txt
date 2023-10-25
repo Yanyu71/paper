@@ -1,0 +1,83 @@
+﻿{
+"knowledge_points": [
+   {"title": "含有刚体的力学系统", "en": "Mechanical systems with rigid bodies"},
+   {"title": "机械能守恒定律", "en": "Law of conservation of mechanical energy"},
+   {"title": "定轴转动刚体", "en": "Rigid body with rotational motion about a fixed axis"},
+   {"title": "转动动能", "en": "Rotational kinetic energy"},
+   {"title": "重力势能", "en": "Gravitational potential energy"},
+   {"title": "定滑轮", "en": "Fixed pulley"},
+   {"title": "摩擦力矩", "en": "Friction torque"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "细杆", "en": "Thin rod"},
+   {"title": "角速度", "en": "Angular velocity"}
+]
+}{
+"knowledge_points": [
+   {"title": "含有刚体的力学系统", "en": "Mechanical systems with rigid bodies"},
+   {"title": "机械能守恒定律", "en": "Law of conservation of mechanical energy"},
+   {"title": "定轴转动刚体", "en": "Rigid body with rotational motion about a fixed axis"},
+   {"title": "转动动能", "en": "Rotational kinetic energy"},
+   {"title": "重力势能", "en": "Gravitational potential energy"},
+   {"title": "定滑轮", "en": "Fixed pulley"},
+   {"title": "摩擦力矩", "en": "Friction torque"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "细杆", "en": "Thin rod"},
+   {"title": "角速度", "en": "Angular velocity"}
+]
+}{
+"knowledge_points": [
+   {"title": "含有刚体的力学系统", "en": "Mechanical systems with rigid bodies"},
+   {"title": "机械能守恒定律", "en": "Law of conservation of mechanical energy"},
+   {"title": "定轴转动刚体", "en": "Rigid body with rotational motion about a fixed axis"},
+   {"title": "转动动能", "en": "Rotational kinetic energy"},
+   {"title": "重力势能", "en": "Gravitational potential energy"},
+   {"title": "定滑轮", "en": "Fixed pulley"},
+   {"title": "摩擦力矩", "en": "Friction torque"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "细杆", "en": "Thin rod"},
+   {"title": "角速度", "en": "Angular velocity"}
+]
+}{
+"knowledge_points": [
+   {"title": "应用系统机械能守恒定律", "en": "Application of the law of conservation of mechanical energy in systems"},
+   {"title": "摩擦力不计", "en": "Neglecting frictional force"},
+   {"title": "轴承上支承力不作功", "en": "Support force on the bearing does no work"},
+   {"title": "重力作功", "en": "Work done by gravity"},
+   {"title": "系统机械能守恒", "en": "Conservation of mechanical energy in the system"},
+   {"title": "滑轮半径", "en": "Radius of the pulley"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "滑块质量", "en": "Mass of the block"},
+   {"title": "斜面倾角", "en": "Angle of the incline"},
+   {"title": "弹簧劲度系数", "en": "Spring constant"},
+   {"title": "滑块速率", "en": "Velocity of the block"},
+   {"title": "滑块下滑距离", "en": "Distance of the block's slide"},
+   {"title": "滑块位置坐标", "en": "Coordinate of the block's position"},
+   {"title": "动能增量", "en": "Increment of kinetic energy"},
+   {"title": "外力对刚体所作功", "en": "Work done by external forces on a rigid body"},
+   {"title": "内力对刚体的作用", "en": "Action of internal forces on a rigid body"},
+   {"title": "密度", "en": "Density"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "动能之比", "en": "Ratio of kinetic energies"},
+   {"title": "定轴转动的刚体", "en": "Rigid body in fixed-axis rotation"},
+   {"title": "转动动能", "en": "Rotational kinetic energy"},
+   {"title": "平动动能", "en": "Translational kinetic energy"},
+   {"title": "势能零点", "en": "Zero point of potential energy"},
+   {"title": "势能变化", "en": "Change in potential energy"},
+   {"title": "足球守门员", "en": "Goalkeeper"},
+   {"title": "功", "en": "Work"}
+]
+}{
+"knowledge_points": [
+   {"title": "力矩", "en": "Torque"},
+   {"title": "时间的累积效应", "en": "Cumulative effect of time"},
+   {"title": "质点力学", "en": "Particle mechanics"},
+   {"title": "力", "en": "Force"},
+   {"title": "刚体", "en": "Rigid body"},
+   {"title": "定轴转动定律", "en": "Law of rotational motion about a fixed axis"},
+   {"title": "角动量定理", "en": "Angular momentum theorem"},
+   {"title": "角动量守恒定律", "en": "Law of conservation of angular momentum"}
+]
+}

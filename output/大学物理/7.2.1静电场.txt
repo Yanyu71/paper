@@ -1,0 +1,19 @@
+﻿{
+"knowledge_points": [
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "点电荷", "en": "Point charge"},
+   {"title": "静电相互作用力", "en": "Static electrostatic interaction force"},
+   {"title": "超距作用", "en": "Action at a distance"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电场力", "en": "Electric field force"},
+   {"title": "电磁场", "en": "Electromagnetic field"},
+   {"title": "电磁波", "en": "Electromagnetic wave"},
+   {"title": "场", "en": "Field"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "物质世界", "en": "Material world"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "电场强度叠加", "en": "Superposition of electric field strength"}
+]
+}

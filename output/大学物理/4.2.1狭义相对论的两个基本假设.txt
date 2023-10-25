@@ -1,0 +1,14 @@
+﻿{
+"knowledge_points": [
+   {"title": "狭义相对论", "en": "Special Theory of Relativity"},
+   {"title": "相对性原理", "en": "Principle of Relativity"},
+   {"title": "物理规律", "en": "Physical laws"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "光速不变原理", "en": "Principle of the Invariance of the Speed of Light"},
+   {"title": "力学规律", "en": "Mechanical laws"},
+   {"title": "电磁相互作用规律", "en": "Electromagnetic interaction laws"},
+   {"title": "速度变换定理", "en": "Velocity transformation theorem"},
+   {"title": "观测者", "en": "Observer"},
+   {"title": "光源", "en": "Light source"}
+]
+}

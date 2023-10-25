@@ -1,0 +1,73 @@
+﻿{
+"knowledge_points": [
+   {"title": "同频率谐振动", "en": "Resonance with the same frequency"},
+   {"title": "解析法", "en": "Analytical method"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "初相位", "en": "Initial phase"},
+   {"title": "同相", "en": "In phase"},
+   {"title": "反相", "en": "Out of phase"},
+   {"title": "平衡状态", "en": "Equilibrium state"},
+   {"title": "振动方程", "en": "Vibration equation"}
+]
+}{
+"knowledge_points": [
+   {"title": "同频率谐振动", "en": "Resonance with the same frequency"},
+   {"title": "解析法", "en": "Analytical method"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "初相位", "en": "Initial phase"},
+   {"title": "同相", "en": "In phase"},
+   {"title": "反相", "en": "Out of phase"},
+   {"title": "平衡状态", "en": "Equilibrium state"},
+   {"title": "振动方程", "en": "Vibration equation"}
+]
+}{
+"knowledge_points": [
+   {"title": "同频率谐振动", "en": "Resonance with the same frequency"},
+   {"title": "解析法", "en": "Analytical method"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "初相位", "en": "Initial phase"},
+   {"title": "同相", "en": "In phase"},
+   {"title": "反相", "en": "Out of phase"},
+   {"title": "平衡状态", "en": "Equilibrium state"},
+   {"title": "振动方程", "en": "Vibration equation"}
+]
+}{
+"knowledge_points": [
+   {"title": "谐振动", "en": "Harmonic oscillation"},
+   {"title": "合成运动", "en": "Composite motion"},
+   {"title": "振动方程", "en": "Equation of motion"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "初相", "en": "Phase"},
+   {"title": "旋转矢量法", "en": "Rotational vector method"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "矢量合成三角形法则", "en": "Vector composition triangle rule"},
+   {"title": "多边形法则", "en": "Polygon rule"}
+]
+}{
+"knowledge_points": [
+   {"title": "合成振动", "en": "Composite vibration"},
+   {"title": "振动方程", "en": "Vibration equation"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "初相", "en": "Initial phase"},
+   {"title": "矢量多边形法则", "en": "Vector polygon rule"},
+   {"title": "运动学方程", "en": "Kinematic equation"},
+   {"title": "外接圆", "en": "Circumscribed circle"},
+   {"title": "圆心角", "en": "Central angle"},
+   {"title": "解析法", "en": "Analytical method"},
+   {"title": "极大值", "en": "Maximum value"},
+   {"title": "极小值", "en": "Minimum value"},
+   {"title": "光的衍射", "en": "Diffraction of light"},
+   {"title": "重要应用", "en": "Important application"}
+]
+}

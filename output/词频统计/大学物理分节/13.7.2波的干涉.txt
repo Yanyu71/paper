@@ -1,0 +1,50 @@
+(振幅, Amplitude): 14
+(波源, Wave source): 12
+(探针, Probe): 1
+(频率, Frequency): 5
+(相互加强点, Mutual reinforcement point): 1
+(减弱线, Weakening line): 1
+(相消, Destructive interference): 6
+(相位差, Phase difference): 17
+(相干, Coherence): 17
+(能量, Energy): 2
+(§13.8, Section 13.8): 1
+(干涉相长处, Interference constructive point): 1
+(干涉相消处, Interference destructive point): 0
+(波强, Wave intensity): 8
+(水波演示干涉现象装置, Water wave interference demonstration device): 1
+(相长, Constructive interference): 7
+(波程差, Path difference): 6
+(波速, Wave speed): 1
+(合成波, Composite wave): 10
+(干涉现象, Interference phenomenon): 4
+(驻波, Standing Wave): 0
+(波峰, Crest): 1
+(相干波, Coherent wave): 9
+(能量守恒, Conservation of energy): 0
+(相干水波, Coherent water waves): 1
+(声干涉仪, Acoustic interference instrument): 1
+(叠加, Superposition): 6
+(波的干涉, Interference of waves): 4
+(波谷, Trough): 1
+(平面简谐波, Plane harmonic wave): 1
+(相遇, Encounter): 6
+(平面余弦波, Plane cosine wave): 1
+(思考题13.33图, Exercise 13.33 Figure): 1
+(相消干涉, Destructive interference): 1
+(非相干波, Incoherent waves): 1
+(加强线, Reinforcement line): 1
+(波动方程, Wave equation): 1
+(相干结果, Coherent result): 2
+(分布, Distribution): 1
+(强度, Intensity): 13
+(干涉现象的条件, Conditions for interference phenomenon): 1
+(声波, Sound wave): 2
+(声速, Speed of sound): 1
+(空气, Air): 1
+(相长干涉, Constructive interference): 1
+(相位公式, Phase formula): 1
+(波程, Path difference): 7
+(波长, Wavelength): 5
+(相互减弱点, Mutual weakening point): 1
+(合强度, Total intensity): 1

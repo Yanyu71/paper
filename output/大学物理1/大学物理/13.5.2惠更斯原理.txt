@@ -1,0 +1,22 @@
+﻿[{
+"knowledge_points": [
+   {"title": "惠更斯原理", "en": "Huygens' principle"},
+   {"title": "波前", "en": "wavefront"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "小孔", "en": "pinhole"},
+   {"title": "波源", "en": "wave source"},
+   {"title": "球面波", "en": "spherical wave"},
+   {"title": "平面波", "en": "plane wave"},
+   {"title": "各向同性介质", "en": "isotropic medium"},
+   {"title": "各向异性介质", "en": "anisotropic medium"},
+   {"title": "衍射", "en": "diffraction"},
+   {"title": "波长与障碍物相对大小", "en": "relative size of wavelength and obstacle"}
+]
+},{
+"knowledge_points": [
+   {"title": "惠更斯原理", "en": "Huygens' principle", "type": "补充", "description": "菲涅耳对惠更斯原理作了重要补充，建立了惠更斯-菲涅耳原理，成为解决波的衍射问题的理论基础"},
+   {"title": "衍射现象", "en": "diffraction phenomenon", "type": "解释", "description": "惠更斯原理只能作定性的解释，不能解释光波经过衍射物后出现的明暗相间的条纹"},
+   {"title": "菲涅耳", "en": "Fresnel", "type": "补充", "description": "菲涅耳对惠更斯原理作了重要补充，建立了惠更斯-菲涅耳原理，成为解决波的衍射问题的理论基础"},
+   {"title": "波的能量能流密度", "en": "energy flux density of waves", "type": "相关", "description": "与波的能量有关的概念，与惠更斯原理的内容无直接关系"}
+]
+}]

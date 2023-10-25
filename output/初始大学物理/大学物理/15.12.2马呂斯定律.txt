@@ -1,0 +1,45 @@
+﻿{
+"knowledge_points": [
+   {"title": "马呂斯定律", "en": "Malus's Law"},
+   {"title": "偏振光强度变化", "en": "polarized light intensity change"},
+   {"title": "法国物理学家马吕斯", "en": "French physicist Malus"},
+   {"title": "线偏振光", "en": "linearly polarized light"},
+   {"title": "检偏器", "en": "polarizer"},
+   {"title": "光强", "en": "light intensity"},
+   {"title": "光振动方向", "en": "direction of light vibration"},
+   {"title": "检偏器偏振化方向", "en": "direction of polarization of the polarizer"},
+   {"title": "夹角", "en": "angle"},
+   {"title": "振幅分解", "en": "decomposition of amplitude"},
+   {"title": "透射光", "en": "transmitted light"},
+   {"title": "消光", "en": "extinction"},
+   {"title": "立体电影", "en": "stereoscopic film"},
+   {"title": "物镜", "en": "objective lens"},
+   {"title": "偏振滤光片", "en": "polarizing filter"},
+   {"title": "偏光眼镜", "en": "polarized glasses"},
+   {"title": "自然光", "en": "natural light"},
+   {"title": "吸收", "en": "absorption"},
+   {"title": "光波", "en": "light wave"},
+   {"title": "光强与光强度之比", "en": "ratio of light intensity to light intensity"},
+   {"title": "透射光的光强与入射光的光强之比", "en": "ratio of transmitted light intensity to incident light intensity"},
+   {"title": "迎着透射光观察", "en": "observing against transmitted light"},
+   {"title": "顺时针方向", "en": "clockwise direction"},
+   {"title": "起偏作用", "en": "polarization effect"},
+   {"title": "混合光", "en": "mixed light"},
+   {"title": "光强度", "en": "light intensity"},
+   {"title": "光的光强度", "en": "intensity of light"},
+   {"title": "光的比例", "en": "proportion of light"}
+]
+}{
+"knowledge_points": [
+   {"title": "光透过偏振片", "en": "Light passing through a polarizer"},
+   {"title": "马吕斯定律", "en": "Malus's law"},
+   {"title": "自然光", "en": "Natural light"},
+   {"title": "线偏振光", "en": "Linearly polarized light"},
+   {"title": "混合光", "en": "Mixed light"},
+   {"title": "正交偏振片", "en": "Orthogonal polarizers"},
+   {"title": "偏振化方向", "en": "Polarization direction"},
+   {"title": "透射光强度", "en": "Transmitted light intensity"},
+   {"title": "光开关", "en": "Optical switch"},
+   {"title": "布儒斯特定律", "en": "Brewster's law"}
+]
+}

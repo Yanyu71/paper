@@ -1,0 +1,53 @@
+﻿[{
+"knowledge_points": [
+   {"title": "核磁共振", "en": "Nuclear Magnetic Resonance"},
+   {"title": "磁矩", "en": "Magnetic Moment"},
+   {"title": "射频场", "en": "RF Field"},
+   {"title": "共振跃迁", "en": "Resonant Transition"},
+   {"title": "固体石蜡", "en": "Solid Paraffin"},
+   {"title": "液体水", "en": "Liquid Water"},
+   {"title": "氢核", "en": "Hydrogen Nucleus"},
+   {"title": "共振吸收", "en": "Resonant Absorption"},
+   {"title": "核磁共振谱仪", "en": "Nuclear Magnetic Resonance Spectrometer"},
+   {"title": "波谱学", "en": "Spectroscopy"},
+   {"title": "核磁矩", "en": "Nuclear Magnetic Moment"},
+   {"title": "能级分裂", "en": "Level Splitting"},
+   {"title": "跃迁选择定则", "en": "Transition Selection Rule"},
+   {"title": "能级间距", "en": "Energy Level Spacing"},
+   {"title": "高频电磁场", "en": "High Frequency Electromagnetic Field"},
+   {"title": "宏观样品", "en": "Macroscopic Sample"},
+   {"title": "玻尔兹曼分布", "en": "Boltzmann Distribution"},
+   {"title": "辐射跃迁", "en": "Radiative Transition"},
+   {"title": "吸收曲线", "en": "Absorption Curve"},
+   {"title": "核磁共振实验装置", "en": "Nuclear Magnetic Resonance Experimental Setup"},
+   {"title": "扫场线圈", "en": "Sweep Coil"},
+   {"title": "氢基态核磁矩", "en": "Hydrogen Ground State Nuclear Magnetic Moment"},
+   {"title": "电四极矩", "en": "Electric Quadrupole Moment"},
+   {"title": "自旋", "en": "Spin"},
+   {"title": "核磁共振仪", "en": "Nuclear Magnetic Resonance Instrument"}
+]
+},{
+"knowledge_points": [
+   {"title": "特合作", "en": "Cooperation"},
+   {"title": "核磁矩", "en": "Nuclear magnetic moment"},
+   {"title": "核磁共振实验", "en": "Nuclear magnetic resonance experiment"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "核磁共振法", "en": "Nuclear magnetic resonance method"},
+   {"title": "核磁共振层析术", "en": "Nuclear magnetic resonance tomography"},
+   {"title": "安培", "en": "Ampere"},
+   {"title": "计量科学院", "en": "Institute of Metrology"},
+   {"title": "核磁共振方法", "en": "Nuclear magnetic resonance method"},
+   {"title": "成像重建", "en": "Image reconstruction"},
+   {"title": "现代计算机技术", "en": "Modern computer technology"},
+   {"title": "分子结构", "en": "Molecular structure"},
+   {"title": "人体组织功能", "en": "Human tissue function"},
+   {"title": "代谢过程", "en": "Metabolic process"},
+   {"title": "生理和生化方面的信息", "en": "Physiological and biochemical information"},
+   {"title": "临床诊断", "en": "Clinical diagnosis"},
+   {"title": "物质结构", "en": "Material structure"},
+   {"title": "化学", "en": "Chemistry"},
+   {"title": "生物科学", "en": "Biological science"},
+   {"title": "医学", "en": "Medicine"},
+   {"title": "相关书籍和文献", "en": "Related books and literature"}
+]
+}]

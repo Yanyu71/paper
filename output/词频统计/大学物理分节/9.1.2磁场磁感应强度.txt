@@ -1,0 +1,44 @@
+(磁力, Magnetic Force): 7
+(闭合线圈, Closed loop): 3
+(半圆弧导线, Semicircular wire): 1
+(电流元, Current Element): 21
+(闭合载流线圈, Closed current loop): 2
+(磁感应强度的方向, Direction of Magnetic Induction): 0
+(磁场, Magnetic Field): 40
+(磁感应强度的大小, Magnitude of Magnetic Induction): 0
+(磁力, Magnetic force): 7
+(非匀强磁场, Non-uniform magnetic field): 1
+(普通永久磁铁两极附近, Near the poles of a regular permanent magnet): 1
+(磁场对导线的作用力, Magnetic force on a wire): 0
+(磁场力, Magnetic Field Force): 5
+(毕奥-萨伐尔定律, Biot-Savart law): 1
+(运动电荷, Moving Charges): 6
+(导线, Wire): 24
+(高斯, Gauss): 0
+(安培力公式, Ampere's Force Formula): 2
+(特斯拉, Tesla): 1
+(安培力, Ampere's force): 17
+(匀强磁场, Uniform magnetic field): 5
+(N极, North Pole): 2
+(脉冲星表面磁场, Magnetic field on the surface of a pulsar): 1
+(赤道处地球磁场的水平分量, Horizontal component of Earth's magnetic field at the equator): 1
+(电动机和变压器, Electric motors and transformers): 1
+(安培力, Ampere's Force): 17
+(磁感应强度, Magnetic induction): 16
+(超导脉冲的磁场, Magnetic field of superconducting pulses): 1
+(载流导线, Current-carrying Wire): 8
+(太阳黑子, Sunspot): 1
+(磁感应强度B, Magnetic induction B): 9
+(直导线, Straight wire): 3
+(静电相互作用, Electrostatic interaction): 1
+(磁体, Magnet): 6
+(南北极地区地球磁场的竖直分量, Vertical component of Earth's magnetic field at the poles): 1
+(磁感应强度, Magnetic Induction): 16
+(超导线圈, Superconducting coil): 1
+(电流元, Current element): 21
+(电场强度, Electric field strength): 1
+(磁针, Magnetic Needle): 5
+(安培力, Ampere force): 17
+(电流元矢量, Current Element Vector): 2
+(磁场力, Magnetic force): 5
+(超距作用, Action at a Distance): 1

@@ -1,0 +1,48 @@
+﻿{
+"knowledge_points": [
+   {"title": "迈克耳孙干涉实验", "en": "Michelson interference experiment"},
+   {"title": "干涉现象", "en": "Interference phenomenon"},
+   {"title": "光波列", "en": "Light wave train"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "相干长度", "en": "Coherence length"},
+   {"title": "相干时", "en": "Coherence time"},
+   {"title": "补偿板", "en": "Compensating plate"},
+   {"title": "薄膜等厚干涉", "en": "Thin film interference"},
+   {"title": "单色性", "en": "Monochromaticity"},
+   {"title": "激光", "en": "Laser"},
+   {"title": "等倾干涉圆纹", "en": "Equal inclination interference fringes"},
+   {"title": "干涉级次", "en": "Interference order"},
+   {"title": "圆纹间距", "en": "Spacing of interference fringes"}
+]
+}{
+"knowledge_points": [
+   {"title": "15.38d的大小", "en": "Size of 15.38d"},
+   {"title": "圆纹的疏密", "en": "Density of circular fringes"},
+   {"title": "影响", "en": "Impact"},
+   {"title": "15.39一次迈克尔孙干涉实验", "en": "Michelson interference experiment"},
+   {"title": "最短标准具长度", "en": "Length of shortest standard gauge"},
+   {"title": "镉灯作光源", "en": "Cadmium lamp as light source"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "条纹变动数目", "en": "Number of fringe variations"},
+   {"title": "15.40相干时间", "en": "Coherence time"},
+   {"title": "相干长度", "en": "Coherence length"},
+   {"title": "波列长度", "en": "Wave packet length"},
+   {"title": "谱线宽度", "en": "Spectral line width"},
+   {"title": "相干长度和谱线宽度的关系", "en": "Relationship between coherence length and spectral line width"},
+   {"title": "时间相干性", "en": "Temporal coherence"},
+   {"title": "单色性", "en": "Monochromaticity"},
+   {"title": "玻璃板", "en": "Glass plate"},
+   {"title": "千涉条纹", "en": "Interference fringes"},
+   {"title": "15.7光的衍射惠更斯-非涅耳原理", "en": "Diffraction of light Huygens-Fresnel principle"},
+   {"title": "波线", "en": "Wavefront"},
+   {"title": "绕射", "en": "Diffraction"},
+   {"title": "水波", "en": "Water waves"},
+   {"title": "声波", "en": "Sound waves"},
+   {"title": "无线电波", "en": "Radio waves"},
+   {"title": "光的衍射现象", "en": "Diffraction of light"},
+   {"title": "干涉", "en": "Interference"},
+   {"title": "波动性", "en": "Wave nature"},
+   {"title": "菲涅尔", "en": "Fresnel"},
+   {"title": "光的衍射规律", "en": "Laws of diffraction of light"}
+]
+}

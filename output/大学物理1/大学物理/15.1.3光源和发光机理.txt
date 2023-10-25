@@ -1,0 +1,64 @@
+﻿[{
+"knowledge_points": [
+   {"title": "光源", "en": "Light source"},
+   {"title": "光谱", "en": "Spectrum"},
+   {"title": "光谱线", "en": "Spectral line"},
+   {"title": "谱线宽度", "en": "Spectral line width"},
+   {"title": "光谱分析", "en": "Spectral analysis"},
+   {"title": "线谱光源", "en": "Line spectrum light source"},
+   {"title": "连续谱光源", "en": "Continuous spectrum light source"},
+   {"title": "普通光源", "en": "Ordinary light source"},
+   {"title": "激光器", "en": "Laser"},
+   {"title": "发光", "en": "Emission of light"},
+   {"title": "能量状态", "en": "Energy state"},
+   {"title": "高能态", "en": "High energy state"},
+   {"title": "低能态", "en": "Low energy state"},
+   {"title": "热辐射", "en": "Thermal radiation"},
+   {"title": "电致发光", "en": "Electroluminescence"}
+]
+},{
+"knowledge_points": [
+   {"title": "光致发光", "en": "Photoluminescence", "type": "定义", "description": "用光激发引起的发光现象"},
+   {"title": "荧光", "en": "Fluorescence", "type": "定义", "description": "通过灯管内气体放电产生的紫外线激发管壁上的荧光粉而发射可见光的发光现象"},
+   {"title": "磷光", "en": "Phosphorescence", "type": "定义", "description": "在光的作用下，物质可以在一段时间内持续发光的发光现象"},
+   {"title": "化学发光", "en": "Chemiluminescence", "type": "定义", "description": "由于化学反应而发光的现象"},
+   {"title": "生物发光", "en": "Bioluminescence", "type": "定义", "description": "生物体发光的特殊类型的化学发光过程"},
+   {"title": "自发辐射", "en": "Spontaneous emission", "type": "定义", "description": "原子从高能态自发跃迁回低能态时，将能量以光的形式辐射出来的发光机理"},
+   {"title": "光波列", "en": "Optical wave train", "type": "定义", "description": "每个原子每次辐射的光实际上是一个持续时间极短、长度有限的光波列"},
+   {"title": "单色性", "en": "Monochromaticity", "type": "定义", "description": "光波中所含不同频率的单色波成分的分布情况"},
+   {"title": "复色光", "en": "Polychromatic light", "type": "定义", "description": "包含若干波长的光"},
+   {"title": "相干性", "en": "Coherence", "type": "定义", "description": "两个或多个光源发出的光的振动方向和相位差的关系"},
+   {"title": "干涉现象", "en": "Interference phenomenon", "type": "定义", "description": "两个或多个光波相遇时产生的干涉效应"}
+]
+},{
+"knowledge_points": [
+   {"title": "激光", "en": "Laser"},
+   {"title": "同步辐射光", "en": "Synchrotron radiation"},
+   {"title": "受激辐射的光放大", "en": "Stimulated emission of light amplification"},
+   {"title": "红宝石激光器", "en": "Ruby laser"},
+   {"title": "同步加速器", "en": "Synchrotron accelerator"},
+   {"title": "辐射光", "en": "Radiation light"},
+   {"title": "方向性", "en": "Directionality"},
+   {"title": "偏振性", "en": "Polarization"},
+   {"title": "稳定性", "en": "Stability"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "红外", "en": "Infrared"},
+   {"title": "软X射线", "en": "Soft X-ray"},
+   {"title": "单色仪", "en": "Monochromator"},
+   {"title": "脉冲化", "en": "Pulsed"},
+   {"title": "脉冲宽度", "en": "Pulse width"},
+   {"title": "物理学", "en": "Physics"},
+   {"title": "化学", "en": "Chemistry"},
+   {"title": "生物学", "en": "Biology"},
+   {"title": "材料", "en": "Materials"},
+   {"title": "医学", "en": "Medicine"},
+   {"title": "药学", "en": "Pharmacy"},
+   {"title": "微量元素分析", "en": "Trace element analysis"},
+   {"title": "微电子", "en": "Microelectronics"},
+   {"title": "精细机械技术", "en": "Precision mechanical technology"},
+   {"title": "合肥", "en": "Hefei"},
+   {"title": "北京正负电子对撞机", "en": "Beijing Synchrotron Radiation Facility (BSRF)"},
+   {"title": "辐射功率", "en": "Radiation power"},
+   {"title": "相干性", "en": "Coherence"}
+]
+}]

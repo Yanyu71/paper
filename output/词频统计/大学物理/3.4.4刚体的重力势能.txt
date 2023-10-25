@@ -1,0 +1,9 @@
+(质量, Mass): 641
+(零势能面, Zero potential energy surface): 2
+(质点, Particle): 900
+(保守力, Conservative force): 76
+(质心, Center of mass): 113
+(地球, Earth): 236
+(重力势能, Gravitational potential energy): 19
+(刚体, Rigid body): 300
+(高度, Height): 56

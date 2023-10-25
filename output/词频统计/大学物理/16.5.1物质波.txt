@@ -1,0 +1,22 @@
+(物质波, matter wave): 36
+(光, light): 3723
+(电子, electron): 699
+(驻波条件, standing wave condition): 5
+(波长, wavelength): 470
+(轨道, orbit): 141
+(稳定圆轨道, stable circular orbit): 4
+(波粒二象性, wave-particle duality): 18
+(实物粒子, material particles): 6
+(玻尔量子化条件, Bohr quantization condition): 2
+(原子, atom): 626
+(角动量量子化条件, quantization condition of angular momentum): 3
+(量子化, quantization): 49
+(德布罗意假设, de Broglie hypothesis): 2
+(动量, momentum): 476
+(半径, radius): 398
+(分子, molecule): 790
+(波长的整数倍, integer multiple of wavelength): 4
+(传播, propagation): 357
+(氢原子定态能量, energy of hydrogen atom in a stationary state): 1
+(频率, frequency): 461
+(能量, energy): 637

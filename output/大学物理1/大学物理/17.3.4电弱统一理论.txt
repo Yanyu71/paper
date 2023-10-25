@@ -1,0 +1,148 @@
+﻿[{
+"knowledge_points": [
+   {"title": "电弱统一理论", "en": "Electroweak Unification Theory"},
+   {"title": "核力", "en": "Nuclear force"},
+   {"title": "强相互作用", "en": "Strong interaction"},
+   {"title": "电磁相互作用", "en": "Electromagnetic interaction"},
+   {"title": "弱相互作用", "en": "Weak interaction"},
+   {"title": "引力相互作用", "en": "Gravitational interaction"},
+   {"title": "中间玻色子", "en": "Intermediate boson"},
+   {"title": "W+", "en": "W+"},
+   {"title": "W-", "en": "W-"},
+   {"title": "Z°", "en": "Z°"},
+   {"title": "光子", "en": "Photon"},
+   {"title": "诺贝尔物理学奖", "en": "Nobel Prize in Physics"},
+   {"title": "大统一理论", "en": "Grand Unified Theory"},
+   {"title": "引力子", "en": "Graviton"},
+   {"title": "守恒定律", "en": "Conservation law"},
+   {"title": "能量守恒", "en": "Conservation of energy"},
+   {"title": "动量守恒", "en": "Conservation of momentum"},
+   {"title": "角动量守恒", "en": "Conservation of angular momentum"},
+   {"title": "电荷守恒定律", "en": "Conservation of charge"}
+]
+},{
+"knowledge_points": [
+   {"title": "重子数和重子数守恒定律", "en": "Baryon number and conservation law of baryon number"},
+   {"title": "轻子数和轻子数守恒定律", "en": "Lepton number and conservation law of lepton number"},
+   {"title": "奇异数和奇异数守恒定律", "en": "Strangeness and conservation law of strangeness"}
+]
+},{
+"knowledge_points": [
+   {"title": "强子的多重态", "en": "Multiplet of hadrons"},
+   {"title": "同位旋量子数", "en": "Isospin quantum number"},
+   {"title": "同位旋分量", "en": "Isospin component"},
+   {"title": "同位旋", "en": "Isospin"},
+   {"title": "粒子的状态", "en": "Particle state"},
+   {"title": "同位旋守恒", "en": "Isospin conservation"},
+   {"title": "电磁相互作用", "en": "Electromagnetic interaction"},
+   {"title": "弱相互作用", "en": "Weak interaction"},
+   {"title": "宇称守恒定律", "en": "Parity conservation law"},
+   {"title": "坐标的空间反演", "en": "Spatial inversion of coordinates"},
+   {"title": "坐标的镜面反演", "en": "Mirror inversion of coordinates"},
+   {"title": "镜面反演对称性", "en": "Mirror inversion symmetry"},
+   {"title": "反演对称性", "en": "Inversion symmetry"},
+   {"title": "物理规律", "en": "Physical laws"},
+   {"title": "欧姆定律", "en": "Ohm's law"}
+]
+},{
+"knowledge_points": [
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "空间反演操作", "en": "Spatial inversion operation"},
+   {"title": "宇称守恒定律", "en": "Parity conservation law"},
+   {"title": "内禀宇称", "en": "Intrinsic parity"},
+   {"title": "K+介子", "en": "K+ meson"},
+   {"title": "e-T疑难", "en": "e-T puzzle"},
+   {"title": "强相互作用", "en": "Strong interaction"},
+   {"title": "电磁相互作用", "en": "Electromagnetic interaction"},
+   {"title": "弱相互作用", "en": "Weak interaction"},
+   {"title": "吴健雄", "en": "Tsung-Dao Lee"}
+]
+},{
+"knowledge_points": [
+   {"title": "杨振宁", "en": "Yang Zhenning"},
+   {"title": "诺贝尔物理学奖", "en": "Nobel Prize in Physics"},
+   {"title": "相互作用", "en": "Interaction"},
+   {"title": "守恒定律", "en": "Conservation Law"},
+   {"title": "强相互作用", "en": "Strong Interaction"},
+   {"title": "电磁相互作用", "en": "Electromagnetic Interaction"},
+   {"title": "弱相互作用", "en": "Weak Interaction"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "动量", "en": "Momentum"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "轻子数", "en": "Lepton Number"},
+   {"title": "e轻子数", "en": "e Lepton Number"},
+   {"title": "重子数", "en": "Baryon Number"},
+   {"title": "同位旋", "en": "Isospin"},
+   {"title": "奇异数", "en": "Strangeness"},
+   {"title": "宇称", "en": "Parity"},
+   {"title": "费米子", "en": "Fermion"},
+   {"title": "玻色子", "en": "Boson"},
+   {"title": "夸克模型", "en": "Quark Model"}
+]
+},{
+"knowledge_points": [
+   {"title": "克", "en": "Quark"},
+   {"title": "GeV", "en": "Giga-electronvolt"},
+   {"title": "Q", "en": "Electric charge"},
+   {"title": "e", "en": "Elementary charge"},
+   {"title": "J", "en": "Isospin"},
+   {"title": "B", "en": "Baryon number"},
+   {"title": "l", "en": "Lepton number"},
+   {"title": "分量", "en": "Component"},
+   {"title": "S", "en": "Strangeness"},
+   {"title": "Y", "en": "Hypercharge"},
+   {"title": "C", "en": "Charmness"},
+   {"title": "b", "en": "Bottomness"},
+   {"title": "t", "en": "Topness"},
+   {"title": "质子", "en": "Proton"},
+   {"title": "夸克模型", "en": "Quark model"},
+   {"title": "介子", "en": "Meson"},
+   {"title": "重子", "en": "Baryon"},
+   {"title": "反重子", "en": "Antibaryon"},
+   {"title": "奇异粒子", "en": "Strange particle"},
+   {"title": "奇夸克", "en": "Strange quark"},
+   {"title": "反奇夸克", "en": "Antistrange quark"},
+   {"title": "重子的夸克组成", "en": "Quark composition of baryons"}
+]
+},{
+"knowledge_points": [
+   {"title": "UBS", "en": "UBS"},
+   {"title": "介子", "en": "Meson"},
+   {"title": "夸克", "en": "Quark"},
+   {"title": "粲夸克", "en": "Charm quark"},
+   {"title": "底夸克", "en": "Bottom quark"},
+   {"title": "顶夸克", "en": "Top quark"},
+   {"title": "色量子数", "en": "Color charge"},
+   {"title": "色相互作用", "en": "Color interaction"}
+]
+},{
+"knowledge_points": [
+   {"title": "渐进自由理论", "en": "Asymptotic Freedom Theory", "type": "解释", "description": "强相互作用力随着夸克间距离的增加而增大，随着夸克间距离的减小而减弱"},
+   {"title": "粒子物理问题", "en": "Particle Physics Problems", "type": "重要问题", "description": "当代物理学中的重要问题之一，尚有许多基本问题未解决"},
+   {"title": "北京正负电子对撞机", "en": "Beijing Electron-Positron Collider", "type": "研究工具", "description": "我国第一台高能加速器，用于粒子物理研究"},
+   {"title": "粲夸克和t子物理", "en": "Charm Quark and Top Quark Physics", "type": "研究领域", "description": "BEPC用于研究粲夸克和t子相关问题"},
+   {"title": "亮度", "en": "Luminosity", "type": "物理量", "description": "对撞机中运动的两束粒子流的强度乘积，亮度愈大，单位时间内产生新粒子的数目愈多"},
+   {"title": "t子质量的精确测量", "en": "Precise Measurement of Top Quark Mass", "type": "实验成果", "description": "在北京正负电子对撞机上进行的实验，被公认为近年来粒子物理研究中最重要的成果"},
+   {"title": "升级改造工程", "en": "Upgrade Project", "type": "工程", "description": "对北京正负电子对撞机进行的升级改造工程，提高亮度和分辨率"},
+   {"title": "原子核的基本性质", "en": "Basic Properties of Atomic Nucleus", "type": "性质", "description": "包括质量数、半径、角动量和磁矩等"},
+   {"title": "质量数", "en": "Mass Number", "type": "性质", "description": "原子核的质量数，等于电荷数和中子数之和"},
+   {"title": "半径", "en": "Radius", "type": "性质", "description": "原子核的半径，与质量数成正比"},
+   {"title": "角动量", "en": "Angular Momentum", "type": "性质", "description": "原子核的角动量或核自旋"},
+   {"title": "磁矩", "en": "Magnetic Moment", "type": "性质", "description": "原子核的磁矩，与核自旋相关"}
+]
+},{
+"knowledge_points": [
+   {"title": "原子核磁矩", "en": "Nuclear magnetic moment"},
+   {"title": "原子核的结合能", "en": "Nuclear binding energy"},
+   {"title": "核裂变", "en": "Nuclear fission"},
+   {"title": "核聚变", "en": "Nuclear fusion"},
+   {"title": "核磁共振", "en": "Nuclear magnetic resonance"},
+   {"title": "穆斯堡尔效应", "en": "Mössbauer effect"},
+   {"title": "粒子的基本属性", "en": "Basic properties of particles"},
+   {"title": "共振态粒子", "en": "Resonance particles"},
+   {"title": "反粒子", "en": "Antiparticles"},
+   {"title": "粒子的分类", "en": "Classification of particles"},
+   {"title": "守恒定律和相互作用", "en": "Conservation laws and interactions"},
+   {"title": "夸克模型", "en": "Quark model"}
+]
+}]

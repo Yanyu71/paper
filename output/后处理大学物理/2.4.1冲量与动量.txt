@@ -1,0 +1,2 @@
+(冲量, Impulse)
+(动量, Momentum)

@@ -1,0 +1,99 @@
+﻿[{
+"knowledge_points": [
+   {"title": "安培环路定理", "en": "Ampere's Circuital Law"},
+   {"title": "磁介质", "en": "Magnetic Material"},
+   {"title": "磁感应强度", "en": "Magnetic Induction"},
+   {"title": "磁化电流", "en": "Magnetization Current"},
+   {"title": "磁化电流面密度", "en": "Magnetization Current Density"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "传导电流", "en": "Conduction Current"},
+   {"title": "闭合回路", "en": "Closed Loop"},
+   {"title": "磁场强度", "en": "Magnetic Field Strength"},
+   {"title": "恒定磁场", "en": "Steady Magnetic Field"}
+]
+},{
+"knowledge_points": [
+   {"title": "各向同性均匀磁介质", "en": "Isotropic homogeneous magnetic medium"},
+   {"title": "磁场强度", "en": "Magnetic field strength"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "磁路设计", "en": "Magnetic circuit design"},
+   {"title": "传导电流", "en": "Conduction current"},
+   {"title": "磁场分布", "en": "Magnetic field distribution"},
+   {"title": "长直同轴电缆", "en": "Long straight coaxial cable"},
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁导率近似取为", "en": "Approximation of permeability"},
+   {"title": "对称性", "en": "Symmetry"},
+   {"title": "积分路径", "en": "Integration path"},
+   {"title": "内芯", "en": "Inner core"},
+   {"title": "外导体", "en": "Outer conductor"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"},
+   {"title": "磁化电流", "en": "Magnetization current"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁介质样品", "en": "Magnetic medium sample"},
+   {"title": "试管", "en": "Test tube"},
+   {"title": "弹簧", "en": "Spring"},
+   {"title": "螺线管", "en": "Solenoid"},
+   {"title": "磁场力", "en": "Magnetic force"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "地球", "en": "Earth"},
+   {"title": "磁偶极子", "en": "Magnetic dipole"},
+   {"title": "磁北极", "en": "Magnetic north pole"},
+   {"title": "磁南极", "en": "Magnetic south pole"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "地面", "en": "Ground"}
+]
+},{
+"knowledge_points": [
+   {"title": "安培环路定理", "en": "Ampere's Circuital Law"},
+   {"title": "磁介质", "en": "Magnetic Material"},
+   {"title": "磁感应强度", "en": "Magnetic Induction"},
+   {"title": "磁化电流", "en": "Magnetization Current"},
+   {"title": "磁化电流面密度", "en": "Magnetization Current Density"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "传导电流", "en": "Conduction Current"},
+   {"title": "闭合回路", "en": "Closed Loop"},
+   {"title": "磁场强度", "en": "Magnetic Field Strength"},
+   {"title": "恒定磁场", "en": "Steady Magnetic Field"}
+]
+},{
+"knowledge_points": [
+   {"title": "各向同性均匀磁介质", "en": "Isotropic homogeneous magnetic medium"},
+   {"title": "磁场强度", "en": "Magnetic field strength"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "磁路设计", "en": "Magnetic circuit design"},
+   {"title": "传导电流", "en": "Conduction current"},
+   {"title": "磁场分布", "en": "Magnetic field distribution"},
+   {"title": "长直同轴电缆", "en": "Long straight coaxial cable"},
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁导率近似取为", "en": "Approximation of permeability"},
+   {"title": "对称性", "en": "Symmetry"},
+   {"title": "积分路径", "en": "Integration path"},
+   {"title": "内芯", "en": "Inner core"},
+   {"title": "外导体", "en": "Outer conductor"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"},
+   {"title": "磁化电流", "en": "Magnetization current"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁介质样品", "en": "Magnetic medium sample"},
+   {"title": "试管", "en": "Test tube"},
+   {"title": "弹簧", "en": "Spring"},
+   {"title": "螺线管", "en": "Solenoid"},
+   {"title": "磁场力", "en": "Magnetic force"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "地球", "en": "Earth"},
+   {"title": "磁偶极子", "en": "Magnetic dipole"},
+   {"title": "磁北极", "en": "Magnetic north pole"},
+   {"title": "磁南极", "en": "Magnetic south pole"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "地面", "en": "Ground"}
+]
+}]

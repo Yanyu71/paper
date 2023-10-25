@@ -1,0 +1,48 @@
+(简单放大镜, Simple magnifying glass): 1
+(折射球面, Spherical lens): 12
+(主光线, Principal ray): 1
+(望远镜, Telescope): 2
+(角放大率, Angular magnification): 2
+(镜头, Lens): 23
+(可调光阑, Adjustable aperture): 2
+(共轴折射面组, Coaxial refractive surface group): 1
+(广角镜头, Wide-angle lens): 1
+(像距, Image distance): 3
+(曲率半径, Radius of curvature): 2
+(景深, Depth of field): 2
+(光线, Light ray): 9
+(逐次成像法, Successive imaging method): 1
+(显微镜, Microscope): 1
+(帘幕式快门, Curtain shutter): 1
+(曝光时间, Exposure time): 5
+(照相机, Camera): 8
+(放大率, Magnification): 15
+(薄透镜, Thin lens): 12
+(折射, Refraction): 35
+(像方焦距, Image focal length): 3
+(中心快门, Central shutter): 1
+(物像公式, Lens formula): 4
+(倒立, Inverted): 3
+(正立, Upright): 3
+(反射球面镜, Spherical mirror): 2
+(总曝光量, Total exposure): 1
+(望远镜头, Telephoto lens): 0
+(全反射, Total internal reflection): 2
+(物方焦距, Object focal length): 3
+(快门, Shutter): 5
+(折射球面放大率, Refractive spherical magnification): 2
+(物距, Object distance): 3
+(色散现象, Dispersion): 2
+(反射, Reflection): 17
+(变焦距镜头, Zoom lens): 1
+(实像, Real image): 4
+(物像公式, Object-image formula): 4
+(几何光学, Geometric optics): 3
+(光阑, Aperture): 4
+(底片, Film): 7
+(虚像, Virtual image): 3
+(折射率, Refractive index): 9
+(笛卡儿符号规则, Descartes' sign convention): 1
+(折射角, Refracted angle): 2
+(焦距, Focal length): 20
+(标准镜头, Standard lens): 1

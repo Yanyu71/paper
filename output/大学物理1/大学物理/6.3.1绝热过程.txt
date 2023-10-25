@@ -1,0 +1,11 @@
+﻿[{
+"knowledge_points": [
+   {"title": "绝热过程", "en": "Adiabatic process"},
+   {"title": "竿", "en": "Adiabatic"},
+   {"title": "绝热材料", "en": "Adiabatic material"},
+   {"title": "绝热过程方程", "en": "Adiabatic process equation"},
+   {"title": "状态参量", "en": "State parameters"},
+   {"title": "绝热线", "en": "Adiabatic line"},
+   {"title": "等温线", "en": "Isothermal line"}
+]
+}]

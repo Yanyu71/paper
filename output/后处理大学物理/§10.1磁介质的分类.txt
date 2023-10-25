@@ -1,0 +1,7 @@
+(磁化率, Magnetization)
+(磁感应强度, Magnetic induction)
+(磁导率, Permeability)
+(铁磁质, Ferromagnetic material)
+(抗磁质, Diamagnetic material)
+(顺磁质, Paramagnetic material)
+(磁介质, Magnetic medium)

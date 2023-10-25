@@ -1,0 +1,14 @@
+(负电荷, Negative charge): 3
+(相交, Intersect): 1
+(总体分布情况, Overall distribution): 1
+(电场强度, Electric field strength): 3
+(法拉第, Faraday): 1
+(面积元dS, Area element dS): 1
+(场强E矢量, Electric field strength vector): 1
+(静电场, Static electric field): 1
+(电偶极子, Electric dipole): 1
+(密度, Density): 1
+(正电荷, Positive charge): 3
+(电场线, Electric field lines): 15
+(点电荷, Point charge): 1
+(闭合线, Closed line): 1

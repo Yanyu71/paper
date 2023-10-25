@@ -1,0 +1,30 @@
+(导体, Conductor): 19
+(未被电子填满, Not filled by electrons): 2
+(金属导体, Metal conductor): 3
+(半导体, Semiconductor): 7
+(激发能带, Excited band): 3
+(空带, Conduction band): 16
+(能带, Band): 19
+(禁带宽度, Band gap width): 4
+(绝缘体, Insulator): 12
+(与空带相重叠, Overlap with the empty band): 1
+(电流, Electric current): 2
+(空穴, Hole): 6
+(电导率, Electrical conductivity): 0
+(电子跃迁, Electron transition): 1
+(温度, Temperature): 3
+(电子激发, Electron excitation): 0
+(电离气体, Ionized gas): 1
+(禁带宽度, Band gap): 4
+(满带, Filled band): 9
+(擦融电解质, Molten electrolyte): 1
+(电解质, Electrolyte): 2
+(能带结构, Band structure): 6
+(电阻率, Resistivity): 5
+(击穿, Breakdown): 1
+(能带理论, Band theory): 1
+(电场, Electric field): 7
+(电子导电性, Electrical Conductivity): 2
+(满带, Valence band): 9
+(金属导体, Metal Conductor): 3
+(价带, Valence band): 10

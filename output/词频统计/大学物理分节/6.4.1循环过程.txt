@@ -1,0 +1,12 @@
+(准静态过程, Quasi-static process): 1
+(循环过程, Cycle process): 8
+(冷凝器, Condenser): 1
+(热机, Heat engine): 6
+(蒸气轮机, Steam turbine): 4
+(正循环, Forward cycle): 1
+(逆循环, Reverse cycle): 1
+(泵, Pump): 1
+(工作物质, Working substance): 5
+(热力学理论, Thermodynamic theory): 1
+(锅炉, Boiler): 2
+(气缸, Cylinder): 2

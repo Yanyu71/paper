@@ -1,0 +1,21 @@
+﻿[{
+"knowledge_points": [
+   {"title": "普朗克公式", "en": "Planck's formula", "type": "定义", "description": "普朗克在1900年提出的一个与实验结果非常符合的纯经验表达式，描述了黑体辐射的能量分布。"},
+   {"title": "能量量子化", "en": "Energy quantization", "type": "概念", "description": "普朗克的量子假设，认为能量具有分立的值，而不是连续的。"},
+   {"title": "能量子", "en": "Energy quantum", "type": "定义", "description": "普朗克常量，表示能量的最小单位。"},
+   {"title": "量子物理学", "en": "Quantum physics", "type": "概念", "description": "研究微观粒子运动规律的物理学分支。"},
+   {"title": "微观世界", "en": "Microscopic world", "type": "概念", "description": "描述微观粒子行为的物理学领域。"},
+   {"title": "普朗克", "en": "Planck", "type": "人物", "description": "德国物理学家，提出了普朗克常量和能量量子化的假设，对量子物理学的发展做出了重要贡献。"},
+   {"title": "黑体辐射", "en": "Blackbody radiation", "type": "概念", "description": "理想化的物体，能够吸收和辐射所有频率的电磁辐射。"},
+   {"title": "经典物理学", "en": "Classical physics", "type": "概念", "description": "描述宏观物体运动的物理学，无法解释微观粒子行为。"}
+]
+},{
+"knowledge_points": [
+   {"title": "振子的能量", "en": "Energy of oscillator"},
+   {"title": "量子数", "en": "Quantum number"},
+   {"title": "能量变化率", "en": "Rate of energy change"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "辐出度", "en": "Emissivity"},
+   {"title": "白炽灯", "en": "Incandescent lamp"}
+]
+}]

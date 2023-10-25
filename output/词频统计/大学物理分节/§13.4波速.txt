@@ -1,0 +1,66 @@
+(横波, Transverse wave): 3
+(手册, Manual): 1
+(线密度, Linear density): 4
+(应力, Stress): 1
+(dxlim, dxlim): 1
+(水平向的夹角, Angle in the horizontal direction): 1
+(绳长, Length of the rope): 1
+(鱼雷, Torpedo): 1
+(密度, Density): 8
+(d2r^md2ydx2FQt2, d2r^md2ydx2FQt2): 1
+(频率, Frequency): 8
+(气体, Gas): 12
+(tan, tan): 2
+(作用在线元上沿y向的合力心, Center of the resultant force acting on the line element in the y direction): 0
+(微元, Element): 6
+(液体, Liquid): 2
+(曲率圆心, Center of curvature): 1
+(介质惯性性质, Inertial properties of the medium): 1
+(波速, Wave speed): 22
+(Fy=F, Fy=F): 3
+(理想气体, Ideal gas): 2
+(牛顿第二定律, Newton's second law): 2
+(表13.1, Table 13.1): 2
+(Fy, Fy): 3
+(摩尔气体常数, Molar gas constant): 1
+(雷达系统, Radar system): 1
+(比热容比, Specific heat ratio): 1
+(dy, dy): 2
+(力学性质, Mechanical properties): 1
+(提高波源的频率, Increasing the frequency of the wave source): 1
+(张紧, Tension): 1
+(均匀细棒, Uniform thin rod): 1
+(分辨率, Resolution): 1
+(温度, Temperature): 3
+(导数定义, Definition of derivative): 1
+(波速公式, Wave speed formula): 1
+(实验, Experiment): 1
+(杨氏模量, Young's modulus): 4
+(压强, Pressure): 1
+(弦, String): 2
+(图13.17, Figure 13.17): 2
+(体积模量, Bulk modulus): 2
+(切变模量, Shear modulus): 1
+(固体, Solid): 6
+(张力, Tension): 6
+(轻绳, Light rope): 5
+(Ax, Ax): 2
+(质量, Mass): 5
+(摩尔质量, Molar mass): 1
+(介质, Medium): 13
+(sin, sin): 4
+(超声成像系统, Ultrasound imaging system): 1
+(介质弹性性质, Elastic properties of the medium): 1
+(波动微分方程, Wave differential equation): 3
+(X射线诊断, X-ray diagnosis): 1
+(声波, Sound wave): 12
+(空气, Air): 4
+(纵波, Longitudinal wave): 6
+(声速, Speed of sound): 10
+(应变, Strain): 1
+(声纳, Sonar): 2
+(绳, Rope): 25
+(C02气体, CO2 gas): 1
+(波长, Wavelength): 12
+(流体, Fluid): 2
+(dx, dx): 7

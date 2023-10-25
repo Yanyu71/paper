@@ -1,0 +1,7 @@
+(磁化率, Magnetization): 5
+(磁感应强度, Magnetic induction): 258
+(磁导率, Permeability): 34
+(铁磁质, Ferromagnetic material): 51
+(抗磁质, Diamagnetic material): 15
+(顺磁质, Paramagnetic material): 23
+(磁介质, Magnetic medium): 75

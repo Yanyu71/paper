@@ -1,0 +1,15 @@
+(状态参量, State variables): 22
+(温度, Temperature): 370
+(几何状态参量, Geometric state variables): 1
+(热学状态参量, Thermal state variables): 0
+(热力学系统, Thermodynamic system): 22
+(压强, Pressure): 132
+(位置矢量, Position vector): 9
+(温标, Temperature scale): 29
+(华氏温标, Fahrenheit temperature scale): 6
+(力学状态参量, Mechanical state variables): 1
+(体积, Volume): 169
+(摄氏温标, Celsius temperature scale): 10
+(热力学温标, Thermodynamic temperature scale): 8
+(宏观状态, Macrostate): 13
+(速度, Velocity): 1354

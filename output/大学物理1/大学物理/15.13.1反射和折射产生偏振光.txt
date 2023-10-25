@@ -1,0 +1,12 @@
+﻿[{
+"knowledge_points": [
+   {"title": "反射", "en": "Reflection"},
+   {"title": "折射", "en": "Refraction"},
+   {"title": "偏振光", "en": "Polarized light"},
+   {"title": "偏振片", "en": "Polarizing filter"},
+   {"title": "自然光", "en": "Natural light"},
+   {"title": "振动方向", "en": "Direction of vibration"},
+   {"title": "各向同性介质", "en": "Isotropic medium"},
+   {"title": "布儒斯特定律", "en": "Brewster's law"}
+]
+}]

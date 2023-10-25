@@ -1,0 +1,85 @@
+﻿[{
+"knowledge_points": [
+   {"title": "复摆", "en": "Compound pendulum"},
+   {"title": "谐振动", "en": "Simple harmonic motion"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "等时性", "en": "Isochronism"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "摆动", "en": "Swing"},
+   {"title": "周期", "en": "Period"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "近似解", "en": "Approximate solution"},
+   {"title": "非线性微分方程", "en": "Nonlinear differential equation"}
+]
+},{
+"knowledge_points": [
+   {"title": "单摆", "en": "Pendulum"},
+   {"title": "简谐振动", "en": "Simple harmonic motion"},
+   {"title": "摆角", "en": "Amplitude"},
+   {"title": "非线性项", "en": "Nonlinear term"},
+   {"title": "周期", "en": "Period"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "基频", "en": "Fundamental frequency"},
+   {"title": "谐振动", "en": "Harmonic motion"},
+   {"title": "三次谐频", "en": "Third harmonic frequency"},
+   {"title": "修正项", "en": "Correction term"},
+   {"title": "谐波", "en": "Harmonic"},
+   {"title": "等时性", "en": "Isochronism"},
+   {"title": "误差", "en": "Error"},
+   {"title": "精度", "en": "Accuracy"}
+]
+},{
+"knowledge_points": [
+   {"title": "复摆", "en": "Compound pendulum"},
+   {"title": "谐振动", "en": "Harmonic motion"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "等时性", "en": "Isochronism"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "摆动", "en": "Swing"},
+   {"title": "周期", "en": "Period"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "近似解", "en": "Approximate solution"},
+   {"title": "非线性微分方程", "en": "Nonlinear differential equation"}
+]
+},{
+"knowledge_points": [
+   {"title": "单摆", "en": "Pendulum"},
+   {"title": "简谐振动", "en": "Simple harmonic motion"},
+   {"title": "摆角", "en": "Amplitude"},
+   {"title": "非线性项", "en": "Nonlinear term"},
+   {"title": "周期", "en": "Period"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "基频", "en": "Fundamental frequency"},
+   {"title": "谐振动", "en": "Harmonic motion"},
+   {"title": "三次谐频", "en": "Third harmonic frequency"},
+   {"title": "修正项", "en": "Correction term"},
+   {"title": "谐波", "en": "Harmonic"},
+   {"title": "等时性", "en": "Isochronism"},
+   {"title": "误差", "en": "Error"},
+   {"title": "精度", "en": "Accuracy"}
+]
+},{
+"knowledge_points": [
+   {"title": "复摆", "en": "Compound pendulum"},
+   {"title": "谐振动", "en": "Harmonic motion"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "等时性", "en": "Isochronism"},
+   {"title": "非线性微分方程", "en": "Nonlinear differential equation"},
+   {"title": "逐次逼近法", "en": "Successive approximation method"}
+]
+},{
+"knowledge_points": [
+   {"title": "单摆", "en": "Pendulum"},
+   {"title": "简谐振动", "en": "Simple harmonic motion"},
+   {"title": "摆角", "en": "Amplitude"},
+   {"title": "非线性项", "en": "Nonlinear term"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "基频", "en": "Fundamental frequency"},
+   {"title": "谐波", "en": "Harmonic"},
+   {"title": "等时性", "en": "Isochronism"},
+   {"title": "精度", "en": "Accuracy"}
+]
+}]

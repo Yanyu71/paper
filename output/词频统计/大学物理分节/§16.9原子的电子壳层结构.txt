@@ -1,0 +1,133 @@
+(铬, Chromium): 1
+(锂, Lithium): 1
+(氡, Radon): 1
+(铂, Platinum): 1
+(氖, Neon): 1
+(汞, Mercury): 1
+(氟, Fluorine): 1
+(锡, Tin): 1
+(5s壳层, 5s Shell): 0
+(钐, Samarium): 1
+(碳, Carbon): 1
+(4p壳层, 4p Shell): 0
+(钼, Molybdenum): 1
+(2p壳层, 2p Shell): 0
+(锌, Zinc): 1
+(铷, Rubidium): 1
+(钷, Promethium): 1
+(镤, Protactinium): 1
+(铼, Rhenium): 1
+(钯, Palladium): 1
+(Is壳层, Is Shell): 0
+(铯, Cesium): 1
+(锆, Zirconium): 1
+(M壳层, M Shell): 0
+(镝, Dysprosium): 1
+(金, Gold): 1
+(钫, Francium): 1
+(钇, Yttrium): 1
+(钚, Plutonium): 1
+(锝, Technetium): 1
+(铍, Beryllium): 1
+(铌, Niobium): 1
+(氧, Oxygen): 1
+(锘, Nobelium): 1
+(镎, Neptunium): 1
+(锿, Einsteinium): 1
+(周期, Period): 9
+(锇, Osmium): 1
+(原子序数和, Atomic Number): 3
+(钠, Sodium): 1
+(5d壳层, 5d Shell): 0
+(锶, Strontium): 1
+(角量子数, Angular momentum quantum number): 3
+(锫, Berkelium): 1
+(铕, Europium): 1
+(窃, Lawrencium): 1
+(铀, Uranium): 1
+(锞, Nickel): 1
+(2s壳层, 2s Shell): 0
+(铑, Rhodium): 1
+(钡, Barium): 1
+(钛, Titanium): 1
+(钒, Vanadium): 1
+(钬, Holmium): 1
+(铁, Iron): 1
+(原子的电子壳层结构, Atomic electron shell structure): 2
+(祕, Bismuth): 1
+(能量最小原理, Principle of minimum energy): 3
+(表16.4原子中电子按壳层排布表, Table 16.4: Electron Arrangement in Atoms by Shell): 1
+(3s壳层, 3s Shell): 0
+(锕, Actinium): 1
+(银, Silver): 1
+(砹, Astatine): 1
+(镅, Americium): 1
+(礼, Gadolinium): 1
+(硅, Silicon): 1
+(钾, Potassium): 2
+(卿, Arsenic): 1
+(4s壳层, 4s Shell): 0
+(氦, Helium): 2
+(镰, Ytterbium): 1
+(碲, Tellurium): 1
+(氪, Krypton): 1
+(5p壳层, 5p Shell): 0
+(元素名称, Element Name): 3
+(锸, Radium): 1
+(溴, Bromine): 1
+(化学符号, Chemical Symbol): 4
+(依, Iridium): 2
+(硫, Sulfur): 1
+(铥, Thulium): 1
+(铽, Terbium): 1
+(镁, Magnesium): 1
+(氢, Hydrogen): 3
+(钴, Cobalt): 1
+(锎, Californium): 1
+(铅, Lead): 3
+(铝, Aluminum): 1
+(支壳层, Subshell): 10
+(错, Praseodymium): 1
+(镧, Lanthanum): 1
+(钕, Neodymium): 1
+(锗, Germanium): 1
+(镓, Gallium): 1
+(铒, Erbium): 1
+(3p壳层, 3p Shell): 0
+(各电子壳层上的电子数, Number of Electrons in Each Electron Shell): 4
+(5f壳层, 5f Shell): 0
+(硒, Selenium): 1
+(钙, Calcium): 1
+(4d壳层, 4d Shell): 1
+(氯, Chlorine): 0
+(L壳层, L Shell): 0
+(K壳层, K Shell): 0
+(硼, Boron): 1
+(锰, Manganese): 1
+(镥, Lutetium): 1
+(3d壳层, 3d Shell): 0
+(N壳层, N Shell): 0
+(锔, Curium): 1
+(壳层, Shell): 37
+(4f壳层, 4f Shell): 0
+(氮, Nitrogen): 1
+(钢, Indium): 1
+(镄, Fermium): 1
+(柿, Cerium): 1
+(6s壳层, 6s Shell): 0
+(铊, Thallium): 1
+(磷, Phosphorus): 1
+(钽, Tantalum): 1
+(钨, Tungsten): 1
+(氩, Argon): 1
+(锑, Antimony): 0
+(铜, Copper): 1
+(钔, Mendelevium): 1
+(钍, Thorium): 1
+(镉, Cadmium): 1
+(抗, Scandium): 1
+(泡利不相容原理, Pauli exclusion principle): 5
+(主量子数, Principal quantum number): 3
+(续表, Continuation of Table): 3
+(碘, Iodine): 1
+(氙, Xenon): 0

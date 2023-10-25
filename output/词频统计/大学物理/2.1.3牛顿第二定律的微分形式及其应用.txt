@@ -1,0 +1,133 @@
+(竖直平面, vertical plane): 4
+(弹簧振子系统, Spring-mass system): 4
+(积分, integration): 208
+(第二类问题, Type 2 problem): 13
+(动力学的第二类问题, Second type of dynamics problem): 2
+(切向分量, tangential component): 2
+(牛顿第二定律, Newton's second law): 37
+(合外力, Net external force): 42
+(质点动力学问题, Particle dynamics problems): 6
+(牛顿运动定律, Newton's laws of motion): 40
+(地球同步卫星, Geostationary satellite): 13
+(力, force): 2617
+(地球对物体的引力, Gravitational force of the Earth on an object): 1
+(小球, ball): 165
+(参考系, Reference frame): 118
+(运行高度, orbital altitude): 1
+(近地点, Perigee): 4
+(向心力, centripetal force): 9
+(重力, Gravity): 132
+(地球的自转周期, Rotation period of the Earth): 1
+(第一类问题, Type 1 problem): 14
+(地球自转轴, axis of Earth's rotation): 1
+(自旋, Spin): 88
+(自然坐标, natural coordinate system): 46
+(运动微分方程, Differential equation of motion): 28
+(受力情况, force situation): 13
+(地球同步卫星的运行速率, Orbital velocity of geostationary satellite): 1
+(质点动力学问题, particle dynamics problem): 6
+(第一宇宙速度, First cosmic velocity): 1
+(微分形式, differential form): 8
+(速度分量, Velocity components): 8
+(法向分量, normal component): 5
+(讨论, discussion): 194
+(霍曼轨道, Hohmann transfer orbit): 4
+(停泊轨道, Parking orbit): 3
+(上抛物体速度随高度变化规律, Law of velocity change with height for projectile motion): 0
+(相对加速度, relative acceleration): 2
+(作用力, Applied force): 117
+(作用力, force): 117
+(初速度, Initial velocity): 23
+(质点动力学, dynamics of particles): 16
+(速率, velocity): 534
+(发射地球同步卫星技术要求, Technical requirements for launching geostationary satellites): 1
+(姿态调整, Attitude adjustment): 0
+(伽利略变换, Galilean transformation): 32
+(质点运动学, kinematics of particles): 10
+(质量, mass): 641
+(变力问题, Variable force problem): 1
+(技术难度, technical difficulty): 1
+(拉力, tension): 24
+(压力, Pressure): 35
+(万有引力定律, Universal law of gravitation): 6
+(远地点, Apogee): 8
+(地球同步卫星的运行高度, Orbital altitude of geostationary satellite): 0
+(质点运动微分方程, Differential equation of particle motion): 2
+(初始轨道, Initial orbit): 1
+(运动微分方程, differential equation of motion): 28
+(运行速率, orbital velocity): 2
+(卫星的运行周期, Orbital period of satellite): 1
+(匀加速运动, Uniformly accelerated motion): 4
+(弹道方程, Trajectory equation): 2
+(转动, rotation): 475
+(重力, gravity): 132
+(同步轨道, Synchronous orbit): 5
+(发射精度, launch accuracy): 1
+(非惯性系, non-inertial frame of reference): 11
+(地面控制中心, Ground control center): 1
+(水平方向, Horizontal direction): 25
+(共同运动, common motion): 3
+(惯性系, inertial frame of reference): 160
+(加速度, acceleration): 397
+(压力, pressure): 35
+(运动情况, motion situation): 17
+(牛顿第二定律, Newton's Second Law): 37
+(运动叠加原理, Principle of superposition of motion): 8
+(质点动力学问题, kinematics of particles): 6
+(受力分析, Force analysis): 4
+(隔离体, isolated body): 6
+(远地点发动机, Apogee engine): 1
+(水平力, horizontal force): 7
+(加速度变换定理, Acceleration transformation theorem): 1
+(变量代换, Variable substitution): 5
+(列方程求解, equation solving): 2
+(全球通信, Global communication): 1
+(消去变量, Elimination of variables): 2
+(合外力, Net External Force): 42
+(合力, net force): 66
+(垂直方向, Vertical direction): 11
+(角速度, angular velocity): 156
+(运行周期, orbital period): 2
+(圆心, center of the circle): 69
+(受力图, force diagram): 3
+(辅助性方程, auxiliary equation): 2
+(静止, rest): 223
+(马拉车的力, Force of pulling the cart): 1
+(加速度方程, Acceleration equation): 1
+(坐标系, coordinate system): 106
+(圆轨道平面, circular orbit plane): 1
+(矢量方程, vector equation): 4
+(赤道平面, equatorial plane): 3
+(地球引力, gravity of Earth): 16
+(研究对象, object of study): 53
+(地球同步卫星, geostationary satellite): 13
+(车拉马的力, Force of the cart pulling the horse): 2
+(斜面, Incline): 14
+(垂直力, Vertical force): 0
+(运动方程, equation of motion): 101
+((R+h)2, Square of (R+h): 1
+(电动机, electric motor): 12
+(分量式, component form): 14
+(方向, direction): 1297
+(分离变量, separation of variables): 21
+(脱离地球引力, Escape from Earth's gravity): 6
+(最大速度, Maximum velocity): 5
+(支持力, Normal force): 5
+(竖直上抛的物体, Vertically thrown object): 1
+(人造地球卫星, Artificial Earth satellite): 6
+(水平轴, horizontal axis): 11
+(牛顿第一定律, Newton's First Law): 7
+(加速度合成, Acceleration composition): 0
+(重量, Weight): 9
+(推力, thrust): 11
+(分离变量, Separation of variables): 21
+(转移轨道, Transfer orbit): 2
+(质点, Particle): 900
+(切向加速度, tangential acceleration): 29
+(直角坐标系, rectangular coordinate system): 27
+(加速度, Acceleration): 397
+(水平力, Horizontal force): 7
+(第三宇宙速度, Third cosmic velocity): 1
+(刚性细杆, rigid rod): 2
+(空气阻力, Air resistance): 20
+(第二宇宙速度, Second cosmic velocity): 3

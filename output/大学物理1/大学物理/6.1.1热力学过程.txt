@@ -1,0 +1,23 @@
+﻿[{
+"knowledge_points": [
+   {"title": "热力学过程", "en": "Thermodynamic process"},
+   {"title": "系统", "en": "System"},
+   {"title": "状态", "en": "State"},
+   {"title": "时间变化", "en": "Time variation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "自发过程", "en": "Spontaneous process"},
+   {"title": "非自发过程", "en": "Non-spontaneous process"},
+   {"title": "中间态", "en": "Intermediate state"},
+   {"title": "平衡状态", "en": "Equilibrium state"},
+   {"title": "准静态过程", "en": "Quasi-static process"},
+   {"title": "弛豫时间", "en": "Relaxation time"},
+   {"title": "非静态过程", "en": "Non-static process"},
+   {"title": "可逆过程", "en": "Reversible process"},
+   {"title": "独立参量", "en": "Independent variables"},
+   {"title": "P-v图", "en": "P-v diagram"},
+   {"title": "等体过程", "en": "Isochoric process"},
+   {"title": "等压过程", "en": "Isobaric process"},
+   {"title": "等温过程", "en": "Isothermal process"},
+   {"title": "绝热过程", "en": "Adiabatic process"}
+]
+}]

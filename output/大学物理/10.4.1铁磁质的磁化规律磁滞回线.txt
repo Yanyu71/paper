@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "铁磁质", "en": "Ferromagnetic material"},
+   {"title": "磁滞回线", "en": "Hysteresis loop"},
+   {"title": "磁场强度", "en": "Magnetic field strength"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "磁化规律", "en": "Magnetization law"},
+   {"title": "磁导率", "en": "Permeability"},
+   {"title": "起始磁化曲线", "en": "Initial magnetization curve"},
+   {"title": "饱和磁感应强度", "en": "Saturation magnetic induction"},
+   {"title": "剩余磁感应强度", "en": "Remanent magnetic induction"},
+   {"title": "退磁曲线", "en": "Demagnetization curve"},
+   {"title": "矫顽力", "en": "Coercive force"},
+   {"title": "反向磁化", "en": "Reverse magnetization"},
+   {"title": "反向饱和磁感应强度", "en": "Reverse saturation magnetic induction"},
+   {"title": "磁滞损耗", "en": "Hysteresis loss"},
+   {"title": "能量损失", "en": "Energy loss"},
+   {"title": "磁滞现象", "en": "Hysteresis phenomenon"}
+]
+}

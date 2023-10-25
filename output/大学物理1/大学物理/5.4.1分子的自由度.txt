@@ -1,0 +1,17 @@
+﻿[{
+"knowledge_points": [
+   {"title": "自由度", "en": "Degrees of freedom"},
+   {"title": "力学概念", "en": "Mechanical concept"},
+   {"title": "物体的空间位置", "en": "Spatial position of an object"},
+   {"title": "独立坐标数", "en": "Number of independent coordinates"},
+   {"title": "分子的自由度", "en": "Degrees of freedom of a molecule"},
+   {"title": "单原子分子", "en": "Monatomic molecule"},
+   {"title": "双原子分子", "en": "Diatomic molecule"},
+   {"title": "多原子分子", "en": "Polyatomic molecule"},
+   {"title": "刚性分子", "en": "Rigid molecule"},
+   {"title": "非刚性分子", "en": "Non-rigid molecule"},
+   {"title": "平动自由度", "en": "Translational degrees of freedom"},
+   {"title": "转动自由度", "en": "Rotational degrees of freedom"},
+   {"title": "振动自由度", "en": "Vibrational degrees of freedom"}
+]
+}]

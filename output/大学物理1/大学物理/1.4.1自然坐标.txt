@@ -1,0 +1,21 @@
+﻿[{
+"knowledge_points": [
+   {"title": "自然坐标", "en": "Natural coordinates"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "运动轨迹", "en": "Motion trajectory"},
+   {"title": "位置", "en": "Position"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "曲线运动", "en": "Curvilinear motion"},
+   {"title": "切线方向", "en": "Tangent direction"},
+   {"title": "法线方向", "en": "Normal direction"},
+   {"title": "单位矢量", "en": "Unit vector"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "导数", "en": "Derivative"},
+   {"title": "大小", "en": "Magnitude"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "圆周运动", "en": "Circular motion"}
+]
+}]

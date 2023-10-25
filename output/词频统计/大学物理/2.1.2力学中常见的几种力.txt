@@ -1,0 +1,45 @@
+(摩擦系数, Coefficient of friction): 21
+(静摩擦力, Static friction force): 17
+(万有引力, Universal gravitation): 62
+(摩擦力, Frictional force): 80
+(静摩擦系数, Coefficient of static friction): 5
+(牛顿运动定律, Newton's Laws of Motion): 40
+(滑动摩擦力, Sliding friction force): 7
+(摩擦力, Frictional Force): 80
+(被动力, Passive force): 4
+(湿摩擦, Wet friction): 10
+(缆绳的质量和加速运动状态下的张力分布, Mass of the cable and tension distribution under acceleration): 0
+(地球, Earth): 236
+(正压力, Normal force): 6
+(绳子内部各段之间的相互作用力, Mutual interaction forces between different sections of the rope): 0
+(支承力, Support force): 7
+(重力加速度, Gravitational Acceleration): 10
+(力, Force): 2617
+(湿摩擦力, Frictional force in fluid): 8
+(摩擦的利弊, Advantages and disadvantages of friction): 0
+(干摩擦, Dry friction): 8
+(吸引力, Attraction): 5
+(拉力, Tensile force): 24
+(干摩擦力, Frictional force in dry condition): 2
+(动力学, Dynamics): 63
+(滑动摩擦系数, Coefficient of sliding friction): 7
+(电磁力, Electromagnetic force): 4
+(重量, Weight): 9
+(弹簧的劲度系数, Spring constant): 7
+(接触力, Contact force): 14
+(重力, Gravity): 132
+(质量, Mass): 641
+(弹性力, Elastic force): 49
+(物体, Object): 721
+(绳索内的张力, Tension in ropes): 1
+(质点, Particle): 900
+(主动力, Active force): 3
+(弹性力, Elastic Force): 49
+(重物对支承面的作用, Action of heavy objects on support surfaces): 0
+(万有引力, Universal Gravitation): 62
+(摩擦力, Friction force): 80
+(轻绳的张力分布, Tension distribution in light ropes): 0
+(弹性形变, Elastic deformation): 2
+(绳子在截面处的张力, Tension in the rope at a cross section): 0
+(非接触力, Non-contact force): 8
+(流体, Fluid): 16

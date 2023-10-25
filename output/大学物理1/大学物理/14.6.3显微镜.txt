@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "显微镜", "en": "Microscope"},
+   {"title": "放大像", "en": "Magnified image"},
+   {"title": "物镜", "en": "Objective lens"},
+   {"title": "目镜", "en": "Eyepiece lens"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "横向放大率", "en": "Lateral magnification"},
+   {"title": "角放大率", "en": "Angular magnification"},
+   {"title": "转台", "en": "Rotating stage"},
+   {"title": "放大倍数", "en": "Magnification factor"}
+]
+}]

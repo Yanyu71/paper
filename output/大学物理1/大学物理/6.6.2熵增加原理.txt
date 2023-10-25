@@ -1,0 +1,15 @@
+﻿[{
+"knowledge_points": [
+   {"title": "熵增加原理", "en": "Principle of Entropy Increase"},
+   {"title": "热力学第二定律", "en": "Second Law of Thermodynamics"},
+   {"title": "无序运动状态", "en": "Disordered motion state"},
+   {"title": "态函数熵", "en": "State function entropy"},
+   {"title": "孤立系统", "en": "Isolated system"},
+   {"title": "不可逆过程", "en": "Irreversible process"},
+   {"title": "熵增量", "en": "Entropy increment"},
+   {"title": "热力学概率", "en": "Thermodynamic probability"},
+   {"title": "微观状态数", "en": "Microstate number"},
+   {"title": "平衡态", "en": "Equilibrium state"},
+   {"title": "可逆过程", "en": "Reversible process"}
+]
+}]

@@ -1,0 +1,11 @@
+(参考系, Frame of Reference): 2
+(惯性系, Inertial Frame of Reference): 6
+(广义相对论, General Theory of Relativity): 3
+(惯性质量, Inertial Mass): 1
+(惯性力, Inertial Force): 5
+(等效原理, Equivalence Principle): 4
+(引力, Gravity): 10
+(非惯性系, Non-inertial Frame of Reference): 2
+(物理定律, Physical Laws): 1
+(引力质量, Gravitational Mass): 1
+(自由下落的升降机, Free-falling Elevator): 4

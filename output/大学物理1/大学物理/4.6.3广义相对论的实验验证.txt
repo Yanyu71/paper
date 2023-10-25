@@ -1,0 +1,42 @@
+﻿[{
+"knowledge_points": [
+   {"title": "水星近日点的进动", "en": "Precession of Mercury's perihelion"},
+   {"title": "星光在太阳引力场内的偏折", "en": "Deflection of starlight in the gravitational field of the Sun"},
+   {"title": "引力红移", "en": "Gravitational redshift"},
+   {"title": "雷达回波延迟", "en": "Delay of radar echoes"}
+]
+},{
+"knowledge_points": [
+   {"title": "相对性原理物理定律", "en": "Principle of Relativity"},
+   {"title": "光速不变原理", "en": "Principle of Invariance of the Speed of Light"},
+   {"title": "洛伦兹变换", "en": "Lorentz Transformation"},
+   {"title": "时空坐标变换", "en": "Space-time Coordinate Transformation"},
+   {"title": "速度变换", "en": "Velocity Transformation"},
+   {"title": "相对论的时空观", "en": "Relativistic View of Space and Time"},
+   {"title": "同时性的相对性", "en": "Relativity of Simultaneity"},
+   {"title": "时间延缓", "en": "Time Dilation"},
+   {"title": "长度收缩", "en": "Length Contraction"},
+   {"title": "相对论动力学基础", "en": "Fundamentals of Relativistic Dynamics"},
+   {"title": "相对论质量", "en": "Relativistic Mass"},
+   {"title": "相对论动量", "en": "Relativistic Momentum"},
+   {"title": "相对论能量", "en": "Relativistic Energy"},
+   {"title": "相对论动力学的基本方程", "en": "Basic Equations of Relativistic Dynamics"},
+   {"title": "相对论动力学的能量守恒定律", "en": "Conservation of Energy in Relativistic Dynamics"},
+   {"title": "选择题", "en": "Multiple Choice Questions"}
+]
+},{
+"knowledge_points": [
+   {"title": "尺与Ox轴的夹角", "en": "Angle between the ruler and Ox axis"},
+   {"title": "S'系相对于S系运动", "en": "Motion of S' system relative to S system"},
+   {"title": "粒子运动的速度", "en": "Particle's velocity"},
+   {"title": "静止质量不为零的物体", "en": "Object with non-zero rest mass"},
+   {"title": "静止质量等于零的粒子", "en": "Particle with zero rest mass"},
+   {"title": "粒子在介质中的运动速度", "en": "Particle's velocity in a medium"},
+   {"title": "运动速度的加快", "en": "Increase in velocity"},
+   {"title": "质量增加", "en": "Increase in mass"},
+   {"title": "长度缩短", "en": "Shortening of length"},
+   {"title": "作功", "en": "Work done"},
+   {"title": "碰撞后生成新的粒子", "en": "Generation of new particle after collision"},
+   {"title": "新生粒子的质量", "en": "Mass of new particle"}
+]
+}]

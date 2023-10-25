@@ -1,0 +1,11 @@
+(基横模TEM%, Fundamental transverse mode TEM%): 1
+(激光的纵模, Longitudinal mode of laser): 4
+(光强分布, Intensity distribution): 0
+(激光的横模, Transverse mode of laser): 1
+(发散角, Divergence angle): 1
+(激光器, Laser): 5
+(空间相干性, Spatial coherence): 1
+(光斑花样, Spot pattern): 1
+(激光光束横截面, Laser beam cross-section): 1
+(输出基横模, Output fundamental transverse mode): 1
+(光强为零的节点或节线, Nodes or nodal lines with zero intensity): 1

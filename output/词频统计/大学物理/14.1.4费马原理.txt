@@ -1,0 +1,34 @@
+(光的顺序, order of light): 1
+(入射角, incident angle): 32
+(金刚石, diamond): 8
+(声波, sound wave): 63
+(反射定律, Law of reflection): 6
+(介质, medium): 599
+(光速, Speed of light): 76
+(反射, reflection): 424
+(反射角, Reflection angle): 9
+(轨迹, Trajectory): 115
+(光源, light source): 213
+(反射角, reflection angle): 9
+(平面反射镜, Plane mirror): 10
+(光在各向同性, 均匀介质中沿直线传播, Light propagates in a straight line in isotropic, homogeneous media): 1
+(折射率, refractive index): 163
+(色散现象, dispersion phenomenon): 6
+(圆的直径, diameter of a circle): 1
+(球面界面, spherical interface): 9
+(玻璃, glass): 133
+(界面法线, interface normal): 3
+(折射定律, Law of refraction): 20
+(费马原理, Fermat's principle): 5
+(全反射, Total internal reflection): 25
+(入射角, Incident angle): 32
+(临界角, critical angle): 16
+(全反射, total internal reflection): 25
+(光程, Optical path): 91
+(折射角, Refraction angle): 20
+(光能, light energy): 9
+(介质, Medium): 599
+(介质层, medium layer): 3
+(折射率, Refractive index): 163
+(水槽, water tank): 2
+(水面, water surface): 22

@@ -1,0 +1,50 @@
+(右手螺旋法则, Right-hand rule): 20
+(安培环路定理, Ampere's Circuital Law): 53
+(无限长载流螺线管磁场的性质, Properties of the magnetic field of an infinite current-carrying solenoid): 1
+(闭合路径, Closed path): 39
+(电流密度, Current density): 2
+(无限长载流密绕螺线管, Infinite current-carrying solenoid): 1
+(高斯定理, Gauss's Law): 63
+(单位长度线圈匝数, Number of turns per unit length): 1
+(螺线管内外的磁场, Magnetic field inside and outside the solenoid): 1
+(电荷分布, Charge distribution): 32
+(保守场, Conservative field): 10
+(无限长载流直导线, Infinite straight current-carrying wire): 19
+(同轴螺线管, Coaxial solenoid): 1
+(有限长载流直导线, Finite straight current-carrying wire): 1
+(匀强磁场, Uniform magnetic field): 58
+(理想平行板电容器, Ideal parallel plate capacitor): 1
+(积分路径, Integration path): 17
+(线积分, Line integral): 11
+(稳恒电流分布, Steady current distribution): 3
+(合成螺线管, Composite solenoid): 0
+(线圈匝数, Number of turns of the coil): 8
+(电流方向, Direction of current): 18
+(环路定理, Circuital law): 68
+(磁感应强度, Magnetic induction): 258
+(电流强度, Current intensity): 21
+(轴线, Axis): 97
+(磁场, Magnetic field): 738
+(载流空心长圆柱导体, Current-carrying hollow cylindrical conductor): 7
+(磁场线, Magnetic field lines): 44
+(右手螺旋法则, Right-hand rule for magnetic field): 20
+(轴线距离, Distance from the axis): 5
+(磁感应强度的大小, Magnitude of magnetic induction): 22
+(直导线, Straight wire): 92
+(载流直导线, Current-carrying wire): 33
+(圆环, Ring): 70
+(电流分布, Current distribution): 13
+(横截面, Cross section): 20
+(积分回路, Integration loop): 3
+(安培环路定理, Ampere's circuital law): 53
+(轴对称性, Axial symmetry): 6
+(同心圆, Concentric circles): 11
+(圆环, Circular loop): 70
+(载流密绕长螺线管, Current-carrying tightly wound solenoid): 1
+(对称性, Symmetry): 63
+(磁场分布, Magnetic field distribution): 8
+(右手螵旋法则, Right-hand rule): 1
+(心边位置的任意性, Arbitrariness of the position of the heart edge): 1
+(电场分布, Electric field distribution): 5
+(螺线管, Solenoid): 79
+(磁场对电流的作用, Effect of magnetic field on current): 3

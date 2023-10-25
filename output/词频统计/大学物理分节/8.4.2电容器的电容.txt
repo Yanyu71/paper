@@ -1,0 +1,39 @@
+(电磁场, Electromagnetic field): 0
+(电容, Capacitance): 108
+(静电能, Static electric energy): 4
+(电子电路, Electronic circuit): 1
+(电源, Power supply): 3
+(功, Work): 5
+(球对称性, Spherical symmetry): 1
+(两板间距, Distance between plates): 1
+(电介质, Dielectric): 30
+(击穿电场强度, Breakdown electric field strength): 3
+(分布电容, Distributed capacitance): 4
+(球形电容器, Spherical capacitor): 1
+(电子半径, Electron radius): 2
+(极板面积, Plate area): 5
+(电容率, Relative permittivity): 7
+(极板, Plate): 46
+(功率因素, Power factor): 1
+(电荷线密度, Line charge density): 1
+(电容测厚仪, Capacitance thickness gauge): 2
+(电场能量密度, Electric field energy density): 0
+(磁场, Magnetic field): 0
+(高斯定理, Gauss's law): 2
+(静电力, Static electric force): 1
+(电磁波, Electromagnetic wave): 3
+(电势差, Potential difference): 13
+(导体板, Conductor plate): 2
+(电容器, Capacitor): 61
+(平行板电容器, Parallel plate capacitor): 11
+(导线, Conductor): 10
+(电荷, Charge): 22
+(电场能量, Electric field energy): 10
+(电场强度, Electric field strength): 21
+(同心球壳, Concentric spheres): 0
+(电荷, Electric charge): 22
+(能量密度, Energy density): 1
+(电场, Electric field): 57
+(静电场, Static electric field): 6
+(电力系统, Power system): 1
+(同轴电缆, Coaxial cable): 3

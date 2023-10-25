@@ -1,0 +1,8 @@
+(磁感应强度, Magnetic induction): 6
+(传导电流, Conduction current): 2
+(磁场线, Magnetic field lines): 1
+(闭合曲线, Closed curve): 1
+(磁高斯定理, Magnetic Gauss's law): 2
+(附加磁感应强度, Additional magnetic induction): 2
+(磁介质, Magnetic medium): 4
+(闭合曲面, Closed surface): 1

@@ -1,0 +1,66 @@
+﻿[{
+"knowledge_points": [
+   {"title": "机械波", "en": "Mechanical wave"},
+   {"title": "多普勒效应", "en": "Doppler effect"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "观察者", "en": "Observer"},
+   {"title": "介质", "en": "Medium"},
+   {"title": "振动频率", "en": "Vibration frequency"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "运动", "en": "Motion"},
+   {"title": "音调", "en": "Pitch"},
+   {"title": "声波", "en": "Sound wave"},
+   {"title": "波面", "en": "Wavefront"},
+   {"title": "间距", "en": "Spacing"},
+   {"title": "压缩", "en": "Compression"},
+   {"title": "定量分析", "en": "Quantitative analysis"},
+   {"title": "球面波", "en": "Spherical wave"}
+]
+},{
+"knowledge_points": [
+   {"title": "波源", "en": "Wave source"},
+   {"title": "振动周期", "en": "Vibration period"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "观察者", "en": "Observer"},
+   {"title": "速率", "en": "Velocity"},
+   {"title": "多普勒效应", "en": "Doppler effect"},
+   {"title": "交通警察", "en": "Traffic police"},
+   {"title": "医学", "en": "Medicine"},
+   {"title": "工业", "en": "Industry"},
+   {"title": "光谱学", "en": "Spectroscopy"},
+   {"title": "天体物理", "en": "Astrophysics"}
+]
+},{
+"knowledge_points": [
+   {"title": "观察者", "en": "Observer"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "速率", "en": "Velocity"},
+   {"title": "声源", "en": "Sound source"},
+   {"title": "多普勒效应", "en": "Doppler effect"},
+   {"title": "波源", "en": "Wave source"},
+   {"title": "超声波", "en": "Ultrasonic wave"},
+   {"title": "声速", "en": "Speed of sound"},
+   {"title": "拍频", "en": "Beat frequency"},
+   {"title": "冲击波", "en": "Shock wave"}
+]
+},{
+"knowledge_points": [
+   {"title": "声速", "en": "speed of sound"},
+   {"title": "马赫数", "en": "Mach number"},
+   {"title": "马赫锥", "en": "Mach cone"},
+   {"title": "冲击波", "en": "shock wave"},
+   {"title": "冲击波的强度", "en": "intensity of shock wave"},
+   {"title": "声震", "en": "sonic boom"},
+   {"title": "观察者", "en": "observer"},
+   {"title": "飞机高度", "en": "aircraft altitude"},
+   {"title": "声速公式", "en": "formula for speed of sound"},
+   {"title": "马赫锥顶点", "en": "vertex of Mach cone"},
+   {"title": "圆锥面冲击波式", "en": "formula for shock wave on a conical surface"},
+   {"title": "正弦函数", "en": "sine function"},
+   {"title": "角度", "en": "angle"},
+   {"title": "正切函数", "en": "tangent function"}
+]
+}]

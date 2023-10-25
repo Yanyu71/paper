@@ -1,0 +1,8 @@
+(交换速度, Exchange of velocity)
+(动量守恒, Conservation of momentum)
+(动能守恒, Conservation of kinetic energy)
+(完全弹性碰撞, Perfectly elastic collision)
+(静止, Rest)
+(特殊情况, Special cases)
+(对心碰撞, Head-on collision)
+(相对速度, Relative velocity)

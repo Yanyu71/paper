@@ -1,0 +1,13 @@
+﻿{
+"knowledge_points": [
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "金属平板", "en": "Metal plate"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "电介质的相对电容率", "en": "Relative permittivity of dielectric"},
+   {"title": "击穿电场强度", "en": "Breakdown electric field strength"},
+   {"title": "电场强度减小", "en": "Decrease in electric field strength"},
+   {"title": "电介质极化", "en": "Dielectric polarization"}
+]
+}

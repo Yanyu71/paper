@@ -1,0 +1,6 @@
+(热力学概率, Thermodynamic probability)
+(态函数熵, State function entropy)
+(系统的状态函数, State function of a system)
+(热力学第二定律, Second Law of Thermodynamics)
+(玻耳兹曼常数, Boltzmann constant)
+(玻耳兹曼熵公式, Boltzmann entropy formula)

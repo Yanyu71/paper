@@ -1,0 +1,17 @@
+﻿{
+"knowledge_points": [
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "质子", "en": "Proton"},
+   {"title": "中子", "en": "Neutron"},
+   {"title": "核子", "en": "Nucleon"},
+   {"title": "核子数", "en": "Number of nucleons"},
+   {"title": "质子数", "en": "Atomic number"},
+   {"title": "中子数", "en": "Neutron number"},
+   {"title": "同位素", "en": "Isotope"},
+   {"title": "同中子异位素", "en": "Isotones"},
+   {"title": "同量异位素", "en": "Isobars"},
+   {"title": "奇核", "en": "Odd nucleus"},
+   {"title": "偶偶核", "en": "Even-even nucleus"},
+   {"title": "奇奇核", "en": "Odd-odd nucleus"}
+]
+}

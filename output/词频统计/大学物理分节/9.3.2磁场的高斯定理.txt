@@ -1,0 +1,12 @@
+(安培环路定理, Ampere's Circuital Law): 1
+(磁通量, Magnetic flux): 4
+(磁场的高斯定理, Gauss's Law for Magnetism): 7
+(边界, Boundary): 1
+(磁感应强度, Magnetic induction): 2
+(无源场, Source-free field): 1
+(磁场线, Magnetic field lines): 4
+(有源场, Source field): 1
+(磁单极, Magnetic monopole): 4
+(静电场的高斯定理, Gauss's Law for Electric Fields): 2
+(静电场, Electric field): 4
+(闭合曲面, Closed surface): 6

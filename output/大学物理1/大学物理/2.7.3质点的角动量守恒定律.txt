@@ -1,0 +1,58 @@
+﻿[{
+"knowledge_points": [
+   {"title": "质点的角动量守恒定律", "en": "Conservation of angular momentum of a particle"},
+   {"title": "合力对固定点的力矩为零", "en": "The torque of the resultant force on a particle about a fixed point is zero"},
+   {"title": "角动量定理式", "en": "Angular momentum theorem"},
+   {"title": "力矩为零的两种可能", "en": "Two possible cases when the torque is zero"},
+   {"title": "有心力", "en": "Central force"},
+   {"title": "力心", "en": "Center of force"},
+   {"title": "有心力下的运动", "en": "Motion under central force"},
+   {"title": "地球卫星运动", "en": "Motion of Earth satellite"},
+   {"title": "小球在水平面上的运动", "en": "Motion of a ball on a horizontal plane"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "拉力所作的功", "en": "Work done by tension"},
+   {"title": "动能定理", "en": "Kinetic energy theorem"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"}
+]
+},{
+"knowledge_points": [
+   {"title": "动量守恒定律", "en": "Law of Conservation of Momentum"},
+   {"title": "角动量守恒定律", "en": "Law of Conservation of Angular Momentum"},
+   {"title": "能量守恒定律", "en": "Law of Conservation of Energy"},
+   {"title": "牛顿第二定律", "en": "Newton's Second Law"},
+   {"title": "有心力", "en": "Central Force"},
+   {"title": "质点角动量", "en": "Particle Angular Momentum"},
+   {"title": "牛顿运动定律", "en": "Newton's Laws of Motion"},
+   {"title": "力", "en": "Force"},
+   {"title": "功", "en": "Work"},
+   {"title": "能量", "en": "Energy"},
+   {"title": "保守力", "en": "Conservative Force"},
+   {"title": "势能", "en": "Potential Energy"},
+   {"title": "动能定理", "en": "Kinetic Energy Theorem"},
+   {"title": "势能零点", "en": "Zero Potential Energy"},
+   {"title": "机械能守恒定律", "en": "Law of Conservation of Mechanical Energy"},
+   {"title": "动量定理", "en": "Momentum Theorem"},
+   {"title": "质心", "en": "Center of Mass"},
+   {"title": "角动量", "en": "Angular Momentum"},
+   {"title": "角动量定理", "en": "Angular Momentum Theorem"}
+]
+},{
+"knowledge_points": [
+   {"title": "质点对固定点的角动量", "en": "Angular momentum of a particle about a fixed point"},
+   {"title": "角动量定理", "en": "Angular momentum theorem"},
+   {"title": "角动量守恒定律", "en": "Law of conservation of angular momentum"},
+   {"title": "常矢量", "en": "Constant vector"},
+   {"title": "rdm", "en": "rdm"},
+   {"title": "r", "en": "r"},
+   {"title": "m", "en": "m"},
+   {"title": "F", "en": "F"},
+   {"title": "a", "en": "a"},
+   {"title": "c", "en": "c"},
+   {"title": "M", "en": "M"},
+   {"title": "L", "en": "L"},
+   {"title": "dL", "en": "dL"},
+   {"title": "di", "en": "di"},
+   {"title": "129", "en": "129"},
+   {"title": "^Lms", "en": "^Lms"}
+]
+}]

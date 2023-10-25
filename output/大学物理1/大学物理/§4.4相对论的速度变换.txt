@@ -1,0 +1,28 @@
+﻿[{
+"knowledge_points": [
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "伽利略变换", "en": "Galilean transformation"},
+   {"title": "速度变换定理", "en": "velocity transformation theorem"},
+   {"title": "狭义相对论", "en": "special relativity"},
+   {"title": "时空坐标", "en": "spacetime coordinates"},
+   {"title": "速度定义", "en": "velocity definition"},
+   {"title": "速度分量", "en": "velocity components"},
+   {"title": "变换关系", "en": "transformation relationship"},
+   {"title": "逆变换", "en": "inverse transformation"},
+   {"title": "光速不变原理", "en": "speed of light invariance principle"},
+   {"title": "光信号", "en": "light signal"},
+   {"title": "观测者", "en": "observer"},
+   {"title": "物体运动速度", "en": "object velocity"},
+   {"title": "极限", "en": "limit"},
+   {"title": "空间站", "en": "space station"},
+   {"title": "飞船", "en": "spaceship"}
+]
+},{
+"knowledge_points": [
+   {"title": "伽利略速度变换公式", "en": "Galilean velocity transformation formula"},
+   {"title": "相对论速度变换公式", "en": "Relativistic velocity transformation formula"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "相对论速度变换定理", "en": "Relativistic velocity transformation theorem"},
+   {"title": "伽利略速度变换定理", "en": "Galilean velocity transformation theorem"}
+]
+}]

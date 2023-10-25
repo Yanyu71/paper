@@ -1,0 +1,16 @@
+﻿{
+"knowledge_points": [
+   {"title": "定态薛定谔方程", "en": "Stationary Schrödinger equation"},
+   {"title": "粒子在不随时间变化的稳定力场中运动", "en": "Particle motion in a stable force field that does not change with time"},
+   {"title": "势能函数", "en": "Potential energy function"},
+   {"title": "能量动能", "en": "Energy kinetic"},
+   {"title": "定态波函数", "en": "Stationary wave function"},
+   {"title": "概率密度", "en": "Probability density"},
+   {"title": "空间部分", "en": "Spatial part"},
+   {"title": "定态薛定谔方程", "en": "Stationary Schrödinger equation"},
+   {"title": "一维定态薛定谔方程", "en": "One-dimensional stationary Schrödinger equation"},
+   {"title": "微观粒子的各种定态问题", "en": "Various stationary problems of microscopic particles"},
+   {"title": "束缚态", "en": "Bound state"},
+   {"title": "量子化", "en": "Quantization"}
+]
+}

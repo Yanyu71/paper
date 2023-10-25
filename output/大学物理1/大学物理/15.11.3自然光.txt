@@ -1,0 +1,10 @@
+﻿[{
+"knowledge_points": [
+   {"title": "自然光", "en": "Natural light", "type": "包含", "description": "自然界的各种常见光源发出的光，不是线偏振光"},
+   {"title": "线偏振光", "en": "Polarized light", "type": "不是", "description": "一种具有确定的偏振方向的光"},
+   {"title": "光矢量", "en": "Light vector", "type": "包含", "description": "光的振动方向和振动幅度的矢量表示"},
+   {"title": "自然光的偏振分解", "en": "Decomposition of natural light", "type": "包含", "description": "将自然光分解为两个相互垂直方向上的偏振光"},
+   {"title": "部分偏振光", "en": "Partial polarized light", "type": "包含", "description": "介于自然光与线偏振光之间的偏振态"},
+   {"title": "偏振片", "en": "Polarizing filter", "type": "包含", "description": "用于起偏和检偏的光学器件"}
+]
+}]

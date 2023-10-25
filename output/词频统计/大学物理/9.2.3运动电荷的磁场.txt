@@ -1,0 +1,22 @@
+(右手螺旋法则, Right-hand rule): 20
+(运动电荷, Moving charge): 34
+(光速, Speed of light): 76
+(带电粒子, Charged particle): 59
+(载流子, Charge carrier): 36
+(位矢, Position vector): 92
+(电流, Electric current): 643
+(电荷定向运动速度, Speed of charged particle): 1
+(毕-萨定律, Biot-Savart law): 16
+(电感应强度, Magnetic induction): 0
+(磁感应强度, Magnetic induction): 258
+(电流强度, Current intensity): 21
+(磁场, Magnetic field): 738
+(带电细棒, Charged rod): 2
+(电流元, Current element): 80
+(磁感应强度大小, Magnitude of magnetic induction): 5
+(电场和磁场之间的关系, Relationship between electric field and magnetic field): 0
+(电场强度, Electric field strength): 317
+(电场, Electric field): 882
+(电荷正负, Charge polarity): 0
+(夹角, Angle): 111
+(电荷运动速度, Charge velocity): 3

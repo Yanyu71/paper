@@ -1,0 +1,14 @@
+﻿{
+"knowledge_points": [
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "物像方程", "en": "Object-image equation"},
+   {"title": "透镜厚度", "en": "Lens thickness"},
+   {"title": "物距", "en": "Object distance"},
+   {"title": "像距", "en": "Image distance"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "成像法", "en": "Imaging method"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "放大率", "en": "Magnification"}
+]
+}

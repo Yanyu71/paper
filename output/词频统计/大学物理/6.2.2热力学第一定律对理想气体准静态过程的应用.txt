@@ -1,0 +1,10 @@
+(准静态过程, Quasi-static Process): 29
+(定体摩尔热容, Molar Specific Heat at Constant Volume): 6
+(热力学第一定律, First Law of Thermodynamics): 36
+(等压过程, Isobaric Process): 21
+(功, Work): 633
+(热量, Heat): 192
+(内能, Internal Energy): 119
+(定压摩尔热容, Molar Specific Heat at Constant Pressure): 8
+(理想气体, Ideal Gas): 176
+(等体过程, Isochoric Process): 25

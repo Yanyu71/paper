@@ -1,0 +1,9 @@
+﻿[{
+"knowledge_points": [
+   {"title": "伽利略相对性原理", "en": "Galilean relativity principle"},
+   {"title": "牛顿运动定律", "en": "Newton's laws of motion"},
+   {"title": "惯性系", "en": "inertial frame of reference"},
+   {"title": "参考系", "en": "frame of reference"},
+   {"title": "匀速直线运动", "en": "uniform linear motion"}
+]
+}]

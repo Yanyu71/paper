@@ -1,0 +1,38 @@
+﻿{
+"knowledge_points": [
+   {"title": "质心", "en": "Center of mass"},
+   {"title": "质点系", "en": "System of particles"},
+   {"title": "动量", "en": "Momentum"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "动量矢量和", "en": "Vector sum of momenta"},
+   {"title": "质心的总质量", "en": "Total mass of the center of mass"},
+   {"title": "质心的动量", "en": "Momentum of the center of mass"},
+   {"title": "重心", "en": "Center of gravity"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "质心位置的计算", "en": "Calculation of the position of the center of mass"},
+   {"title": "离散分布", "en": "Discrete distribution"},
+   {"title": "连续分布体", "en": "Continuous distribution"},
+   {"title": "质量元", "en": "Mass element"},
+   {"title": "质量分布区域", "en": "Region of mass distribution"},
+   {"title": "质量均匀分布", "en": "Uniform mass distribution"},
+   {"title": "对称体系", "en": "Symmetric system"},
+   {"title": "对称轴", "en": "Axis of symmetry"},
+   {"title": "交点", "en": "Intersection"}
+]
+}{
+"knowledge_points": [
+   {"title": "质点系", "en": "Particle system"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "位置坐标", "en": "Position coordinates"},
+   {"title": "质心", "en": "Center of mass"},
+   {"title": "连线", "en": "Line connecting"},
+   {"title": "距离", "en": "Distance"},
+   {"title": "均匀铁丝", "en": "Uniform wire"},
+   {"title": "半圆形", "en": "Semicircle"},
+   {"title": "半径", "en": "Radius"},
+   {"title": "线密度", "en": "Linear density"},
+   {"title": "总质量", "en": "Total mass"}
+]
+}

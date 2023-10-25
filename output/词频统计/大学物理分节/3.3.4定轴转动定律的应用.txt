@@ -1,0 +1,34 @@
+(滑块, Block): 6
+(摩擦力, Frictional force): 8
+(线量, Linear quantity): 1
+(转动惯量, Moment of inertia): 3
+(质心, Center of mass): 2
+(摩擦力矩, Frictional torque): 3
+(转动运动方程, Equations of rotational motion): 1
+(钟摆, Pendulum): 4
+(冲击力, Impulse force): 1
+(角速度, Angular velocity): 2
+(角量, Angular quantity): 1
+(重力力矩, Gravitational torque): 1
+(刚体系统的总转动惯量, Total rotational inertia of a rigid body system): 1
+(转动方向, Direction of rotation): 2
+(平动, Translation): 6
+(刚体动力学, Rigid body dynamics): 2
+(质量面密度, Mass surface density): 1
+(角加速度, Angular acceleration): 6
+(合外力矩, Net external torque): 2
+(滑轮, Pulley): 12
+(牛顿定律, Newton's laws of motion): 1
+(张力, Tension): 6
+(约束力, Constraint force): 3
+(力矩, Torque): 23
+(均质圆盘, Homogeneous disk): 3
+(刚体定轴转动定律, Law of rotational motion of a rigid body about a fixed axis): 2
+(重物, Mass): 5
+(刚体力学, Rigid body mechanics): 2
+(击球点, Point of impact): 1
+(加速度, Acceleration): 11
+(打击中心, Center of percussion): 4
+(逆时针方向, Counterclockwise direction): 2
+(定轴转动定律, Law of rotational motion about a fixed axis): 9
+(质点力学, Particle mechanics): 2

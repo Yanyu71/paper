@@ -1,0 +1,77 @@
+﻿[{
+"knowledge_points": [
+   {"title": "同方向不同频率谐振动", "en": "Harmonic oscillations with different frequencies in the same direction"},
+   {"title": "合成拍", "en": "Beat synthesis"},
+   {"title": "旋转矢量法", "en": "Rotating vector method"},
+   {"title": "初相", "en": "Phase"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "合矢量", "en": "Resultant vector"},
+   {"title": "振幅调制", "en": "Amplitude modulation"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率差", "en": "Frequency difference"},
+   {"title": "拍", "en": "Beat"},
+   {"title": "音叉", "en": "Tuning fork"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "余弦因子", "en": "Cosine factor"},
+   {"title": "拍频", "en": "Beat frequency"}
+]
+},{
+"knowledge_points": [
+   {"title": "同方向不同频率谐振动", "en": "Harmonic oscillations with different frequencies in the same direction"},
+   {"title": "合成拍", "en": "Beat synthesis"},
+   {"title": "旋转矢量法", "en": "Rotating vector method"},
+   {"title": "初相", "en": "Phase"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "合矢量", "en": "Resultant vector"},
+   {"title": "振幅调制", "en": "Amplitude modulation"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率差", "en": "Frequency difference"},
+   {"title": "拍", "en": "Beat"},
+   {"title": "音叉", "en": "Tuning fork"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "余弦因子", "en": "Cosine factor"},
+   {"title": "拍频", "en": "Beat frequency"}
+]
+},{
+"knowledge_points": [
+   {"title": "拍现象", "en": "Beating phenomenon"},
+   {"title": "音乐声学", "en": "Acoustics of music"},
+   {"title": "校准乐器", "en": "Calibrating musical instruments"},
+   {"title": "测定超声波", "en": "Measuring ultrasonic waves"},
+   {"title": "测定无线电波频率", "en": "Measuring radio wave frequency"}
+]
+},{
+"knowledge_points": [
+   {"title": "同方向不同频率谐振动", "en": "Harmonic oscillations with different frequencies in the same direction"},
+   {"title": "合成拍", "en": "Beat synthesis"},
+   {"title": "旋转矢量法", "en": "Rotating vector method"},
+   {"title": "初相", "en": "Phase"},
+   {"title": "位移", "en": "Displacement"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "合矢量", "en": "Resultant vector"},
+   {"title": "振幅调制", "en": "Amplitude modulation"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率差", "en": "Frequency difference"},
+   {"title": "拍", "en": "Beat"},
+   {"title": "音叉", "en": "Tuning fork"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "余弦因子", "en": "Cosine factor"},
+   {"title": "拍频", "en": "Beat frequency"}
+]
+},{
+"knowledge_points": [
+   {"title": "拍现象", "en": "Beating phenomenon"},
+   {"title": "音乐声学", "en": "Acoustics of music"},
+   {"title": "校准乐器", "en": "Calibrating musical instruments"},
+   {"title": "测定超声波", "en": "Measuring ultrasonic waves"},
+   {"title": "测定无线电波频率", "en": "Measuring radio wave frequency"}
+]
+}]

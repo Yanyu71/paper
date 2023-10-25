@@ -1,0 +1,13 @@
+﻿{
+"knowledge_points": [
+   {"title": "统计平均值", "en": "Statistical average"},
+   {"title": "统计学", "en": "Statistics"},
+   {"title": "算术平均值", "en": "Arithmetic mean"},
+   {"title": "概率", "en": "Probability"},
+   {"title": "随机变量", "en": "Random variable"},
+   {"title": "物理量", "en": "Physical quantity"},
+   {"title": "热力学系统", "en": "Thermodynamic system"},
+   {"title": "宏观描述", "en": "Macroscopic description"},
+   {"title": "微观描述", "en": "Microscopic description"}
+]
+}

@@ -1,0 +1,53 @@
+﻿{
+"knowledge_points": [
+   {"title": "色散像差", "en": "Chromatic aberration"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "透镜", "en": "Lens"},
+   {"title": "焦点", "en": "Focus"},
+   {"title": "毛玻璃屏", "en": "Frosted glass screen"},
+   {"title": "彩色环", "en": "Colored ring"},
+   {"title": "位置色差", "en": "Lateral chromatic aberration"},
+   {"title": "放大率色散", "en": "Longitudinal chromatic aberration"},
+   {"title": "复合透镜", "en": "Compound lens"},
+   {"title": "反射镜", "en": "Reflecting mirror"},
+   {"title": "像散", "en": "Spherical aberration"},
+   {"title": "彗形像差", "en": "Coma aberration"},
+   {"title": "光学仪器", "en": "Optical instrument"},
+   {"title": "显微镜", "en": "Microscope"},
+   {"title": "天文望远镜", "en": "Telescope"},
+   {"title": "卫星载红外摄像机", "en": "Satellite-borne infrared camera"},
+   {"title": "扫描电镜", "en": "Scanning electron microscope"},
+   {"title": "照相机", "en": "Camera"},
+   {"title": "眼", "en": "Eye"},
+   {"title": "角膜", "en": "Cornea"},
+   {"title": "巩膜", "en": "Sclera"},
+   {"title": "前房", "en": "Anterior chamber"},
+   {"title": "虹膜", "en": "Iris"},
+   {"title": "瞳孔", "en": "Pupil"},
+   {"title": "晶状体", "en": "Lens"},
+   {"title": "视网膜", "en": "Retina"},
+   {"title": "远点", "en": "Far point"},
+   {"title": "近点", "en": "Near point"}
+]
+}{
+"knowledge_points": [
+   {"title": "老花眼", "en": "Presbyopia", "type": "形成原因", "description": "随着年龄增长，眼的调焦能力逐渐衰退，近点也逐渐变远"},
+   {"title": "明视距离", "en": "Far point", "type": "定义", "description": "在合适照度下，正常眼睛看眼前25cm处的物体清晰、舒适且不易疲劳"},
+   {"title": "近视眼", "en": "Myopia", "type": "校正方法", "description": "远点在有限远处，需要在眼睛前加一凹透镜，使远处物体成清晰像于视网膜上"},
+   {"title": "远视眼", "en": "Hyperopia", "type": "校正方法", "description": "近点与正常眼的近点相比离眼太远，需要在眼睛前加一凸透镜，使近点以内一定范围内的物体成清晰像于视网膜上"}
+]
+}{
+"knowledge_points": [
+   {"title": "透镜焦距", "en": "Lens focal length"},
+   {"title": "凸透镜", "en": "Convex lens"},
+   {"title": "远视眼", "en": "Hyperopia"},
+   {"title": "近点", "en": "Near point"},
+   {"title": "明视距离", "en": "Clear vision distance"},
+   {"title": "光焦度", "en": "Optical power"},
+   {"title": "屈光度", "en": "Diopter"},
+   {"title": "眼镜度数", "en": "Glasses prescription"},
+   {"title": "散光", "en": "Astigmatism"},
+   {"title": "角膜曲率", "en": "Corneal curvature"},
+   {"title": "柱面透镜", "en": "Cylindrical lens"}
+]
+}

@@ -1,0 +1,33 @@
+﻿[{
+"knowledge_points": [
+   {"title": "热力学第二定律", "en": "Second Law of Thermodynamics"},
+   {"title": "不可逆过程", "en": "Irreversible process"},
+   {"title": "统计规律", "en": "Statistical law"},
+   {"title": "概率观点", "en": "Probability viewpoint"},
+   {"title": "微观态", "en": "Microstate"},
+   {"title": "宏观态", "en": "Macrostate"},
+   {"title": "平衡态", "en": "Equilibrium state"},
+   {"title": "热力学概率", "en": "Thermodynamic probability"},
+   {"title": "无序性", "en": "Disorder"},
+   {"title": "自由膨胀", "en": "Free expansion"}
+]
+},{
+"knowledge_points": [
+   {"title": "孤立系统", "en": "Isolated system"},
+   {"title": "平衡态", "en": "Equilibrium state"},
+   {"title": "热力学概率", "en": "Thermodynamic probability"},
+   {"title": "不可逆过程", "en": "Irreversible process"},
+   {"title": "自发宏观过程", "en": "Spontaneous macroscopic process"},
+   {"title": "热力学第二定律", "en": "Second law of thermodynamics"},
+   {"title": "热力学第一定律", "en": "First law of thermodynamics"},
+   {"title": "功", "en": "Work"},
+   {"title": "热", "en": "Heat"},
+   {"title": "高温物体", "en": "High-temperature object"},
+   {"title": "低温物体", "en": "Low-temperature object"},
+   {"title": "理想气体自由膨胀", "en": "Free expansion of ideal gas"},
+   {"title": "不可逆性", "en": "Irreversibility"},
+   {"title": "等温线", "en": "Isothermal line"},
+   {"title": "绝热线", "en": "Adiabatic line"},
+   {"title": "熵", "en": "Entropy"}
+]
+}]

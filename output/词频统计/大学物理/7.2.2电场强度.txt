@@ -1,0 +1,28 @@
+(带电物体, Charged object): 3
+(矢量, Vector): 326
+(电场强度矢量, Electric field strength vector): 1
+(试验电荷, Test charge): 22
+(空间坐标, Spatial coordinates): 6
+(单值性, Uniqueness): 1
+(典型场强, Typical field strength): 0
+(电荷量, Charge): 14
+(电场性质, Electric field properties): 5
+(铀核的表面, Surface of a uranium nucleus): 1
+(场源电荷, Source charge): 2
+(脉冲星的表面, Surface of a pulsar): 1
+(电视显像管内, Inside a TV display tube): 1
+(室内电线附近, Near indoor electrical wires): 1
+(场强, Field strength): 409
+(高压电器击穿空气处, Air breakdown near high-voltage equipment): 0
+(位置, Position): 452
+(正负电荷, Positive and negative charge): 4
+(场点, Field point): 21
+(雷雨云附近, Near thunderstorm clouds): 1
+(点电荷, Point charge): 88
+(氢原子的电子所在处, Location of electrons in a hydrogen atom): 1
+(X射线管内, Inside an X-ray tube): 1
+(电场强度, Electric field strength): 317
+(电场, Electric field): 882
+(氢原子的电子所在处, Location of electron in a hydrogen atom): 1
+(静电力, Electrostatic force): 38
+(地面附近, Near the ground): 5

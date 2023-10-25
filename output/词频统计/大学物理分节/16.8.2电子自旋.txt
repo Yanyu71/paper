@@ -1,0 +1,7 @@
+(自旋量子数, Spin Quantum Number): 1
+(碱金属原子光谱的双线结构, Doublet Structure in Alkali Metal Atomic Spectra): 1
+(电子自旋, Electron Spin): 4
+(微观粒子的自旋, Spin of Microscopic Particles): 0
+(自旋磁量子数, Spin Magnetic Quantum Number): 1
+(自旋磁矩, Spin Magnetic Moment): 2
+(自旋角动量, Spin Angular Momentum): 3

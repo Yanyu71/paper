@@ -1,0 +1,80 @@
+﻿{
+"knowledge_points": [
+   {"title": "质点的动量定理", "en": "Principle of momentum for particles"},
+   {"title": "累积效果", "en": "Cumulative effect"},
+   {"title": "牛顿运动定律", "en": "Newton's laws of motion"},
+   {"title": "合力", "en": "Net force"},
+   {"title": "冲量", "en": "Impulse"},
+   {"title": "动量变化量", "en": "Change in momentum"},
+   {"title": "微分形式", "en": "Differential form"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "分量式", "en": "Component form"},
+   {"title": "投影", "en": "Projection"},
+   {"title": "冲力", "en": "Impulsive force"},
+   {"title": "牛顿第二定律", "en": "Newton's second law"},
+   {"title": "平均冲力", "en": "Average impulsive force"},
+   {"title": "碰撞", "en": "Collision"},
+   {"title": "冲量", "en": "Impulse"},
+   {"title": "惯性系", "en": "Inertial frame of reference"},
+   {"title": "重锤", "en": "Heavy hammer"},
+   {"title": "静止下落", "en": "Free fall"},
+   {"title": "末速度", "en": "Final velocity"},
+   {"title": "打击时间", "en": "Impact time"}
+]
+}{
+"knowledge_points": [
+   {"title": "重锤", "en": "heavy hammer"},
+   {"title": "质量", "en": "mass"},
+   {"title": "末速度", "en": "final velocity"},
+   {"title": "坐标系", "en": "coordinate system"},
+   {"title": "初速度", "en": "initial velocity"},
+   {"title": "冲击力", "en": "impact force"},
+   {"title": "动量定理", "en": "momentum theorem"},
+   {"title": "动量守恒定律", "en": "law of conservation of momentum"},
+   {"title": "撞击作用", "en": "impact action"},
+   {"title": "持续时间", "en": "duration"},
+   {"title": "冲量", "en": "impulse"},
+   {"title": "动量", "en": "momentum"},
+   {"title": "力", "en": "force"},
+   {"title": "速度", "en": "velocity"},
+   {"title": "加速度", "en": "acceleration"},
+   {"title": "圆周运动", "en": "circular motion"},
+   {"title": "合力", "en": "net force"}
+]
+}{
+"knowledge_points": [
+   {"title": "动量合成三角形", "en": "Momentum composition triangle"},
+   {"title": "冲量", "en": "Impulse"},
+   {"title": "冲量的大小", "en": "Magnitude of impulse"},
+   {"title": "冲量的方向", "en": "Direction of impulse"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "长度", "en": "Length"},
+   {"title": "均质柔绳", "en": "Homogeneous flexible rope"},
+   {"title": "竖直悬挂", "en": "Vertical suspension"},
+   {"title": "自由下落", "en": "Free fall"},
+   {"title": "作用力", "en": "Action force"},
+   {"title": "支承力", "en": "Supporting force"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "质点动量定理", "en": "Principle of momentum for particles"},
+   {"title": "质点动力学问题", "en": "Particle dynamics problems"},
+   {"title": "变力", "en": "Variable force"},
+   {"title": "碰撞", "en": "Collision"},
+   {"title": "冲击", "en": "Impact"}
+]
+}{
+"knowledge_points": [
+   {"title": "动量定理", "en": "Momentum theorem"},
+   {"title": "时刻动量的增量", "en": "Increment of momentum at different moments"},
+   {"title": "合力的冲量", "en": "Impulse of the resultant force"},
+   {"title": "瞬时力", "en": "Instantaneous force"},
+   {"title": "平均冲力", "en": "Average impulse"},
+   {"title": "例题2.15", "en": "Example 2.15"},
+   {"title": "例题2.16", "en": "Example 2.16"},
+   {"title": "例题2.17", "en": "Example 2.17"},
+   {"title": "选取研究对象", "en": "Selection of research object"},
+   {"title": "选定始末状态", "en": "Selection of initial and final states"},
+   {"title": "下落长度与下落速度的关系", "en": "Relationship between the length of fall and the velocity of fall"}
+]
+}

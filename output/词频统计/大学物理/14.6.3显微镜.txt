@@ -1,0 +1,12 @@
+(放大倍数, Magnification factor): 3
+(显微镜, Microscope): 33
+(物镜, Objective lens): 34
+(目镜, Eyepiece lens): 28
+(虚像, Virtual image): 44
+(转台, Rotating stage): 31
+(角放大率, Angular magnification): 12
+(放大率, Magnification): 87
+(实像, Real image): 38
+(焦距, Focal length): 116
+(放大像, Magnified image): 2
+(横向放大率, Lateral magnification): 3

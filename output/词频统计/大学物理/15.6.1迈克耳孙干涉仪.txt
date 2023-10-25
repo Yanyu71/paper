@@ -1,0 +1,63 @@
+(干涉级, interference order): 3
+(等厚条纹, equidistant fringes): 5
+(空气薄膜, air film): 2
+(入射角, incident angle): 32
+(镉红线, cadmium red line): 1
+(物质折射率的测量, measurement of refractive index of material): 1
+(干涉, interference): 487
+(光路长度变化, Change in optical path length): 2
+(空气劈尖, air wedge): 10
+(分光板, beam splitter): 5
+(亮纹, bright fringe): 3
+(平面反射镜, plane mirror): 10
+(视场, field of view): 13
+(待测物质, test substance): 2
+(时间相干性, temporal coherence): 3
+(干涉条纹, interference fringes): 122
+(补偿板, compensating plate): 3
+(微小距离, small distance): 2
+(波长, wavelength): 470
+(长度测量, length measurement): 1
+(波长差, Wavelength difference): 8
+(动臂移动, Arm movement): 2
+(折射率, refractive index): 163
+(观测屏幕, observation screen): 21
+(单色性, Monochromaticity): 31
+(单色平行光, monochromatic parallel light): 3
+(干涉条纹, Interference fringes): 122
+(平面玻璃板, plane glass plate): 3
+(光的干涉原理, principle of interference of light): 1
+(暗纹, dark fringe): 54
+(精度, precision): 31
+(光速, speed of light): 76
+(相干光, coherent light): 58
+(等倾干涉圆纹, Equal inclination interference fringes): 2
+(干涉仪, interferometer): 30
+(平均波长, Average wavelength): 5
+(光程差, optical path difference): 68
+(迈克耳孙干涉仪, Michelson interferometer): 15
+(亮点, bright spot): 4
+(标准米尺, standard meter): 1
+(诺贝尔物理学奖, Nobel Prize in Physics): 22
+(迈克尔孙干涉仪, Michelson interferometer): 1
+(焦平面, focal plane): 20
+(相干光, Coherent light): 58
+(基本原理, basic principle): 8
+(微小物体尺寸, Size of small objects): 0
+(波长差, wavelength difference): 8
+(以太风, ether wind): 1
+(薄膜的厚度, thickness of thin film): 4
+(厚度, thickness): 116
+(钠光, Sodium light): 17
+(双线波长, Doublet wavelength): 3
+(明圆纹, Bright fringes): 0
+(光的波长, wavelength of light): 29
+(光电自动计数器, photoelectric automatic counter): 1
+(入射光波长, Incident light wavelength): 5
+(光波, light wave): 335
+(暗圆纹, Dark fringes): 0
+(透明介质折射率, Refractive index of transparent medium): 0
+(透镜, lens): 347
+(复色光, polychromatic light): 7
+(光程差, Optical path difference): 68
+(光谱的精细结构, fine structure of spectrum): 2

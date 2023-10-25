@@ -1,0 +1,36 @@
+(哑铃, dumbbell): 2
+(转台, turntable): 31
+(鱼雷, Torpedo): 3
+(飞轮, flywheel): 37
+(推力, Thrust): 11
+(卫星, Satellite): 100
+(进动, precession): 34
+(常平架陀螺仪, Gimbal Gyroscope): 1
+(定向特性, directional characteristics): 4
+(导弹, Missile): 1
+(杠杆陀螺仪, lever gyroscope): 3
+(陀螺仪, gyroscope): 26
+(角动量守恒定律, Law of Conservation of Angular Momentum): 24
+(旋翼, Rotor): 6
+(个人, individual): 10
+(合外力矩, net external torque): 19
+(外力矩, external torque): 39
+(飞机自动驾驶仪, Aircraft Autopilot): 1
+(陀螺仪, Gyroscope): 26
+(自转轴, axis of self-rotation): 10
+(直升机螺旋桨, Helicopter Rotor): 1
+(宇航员, astronaut): 7
+(转轴, axis of rotation): 80
+(导航, Navigation): 4
+(运动, motion): 1745
+(悬立, suspended): 1
+(重力, Gravity): 132
+(进动效应, precession effect): 5
+(尾桨, Tail Rotor): 3
+(升力, Lift): 4
+(转动角速度, angular velocity of rotation): 5
+(失重状态, weightless state): 1
+(舱壁, cabin wall): 1
+(火箭, Rocket): 61
+(雷身, Torpedo Body): 1
+(转动惯量, moment of inertia): 98

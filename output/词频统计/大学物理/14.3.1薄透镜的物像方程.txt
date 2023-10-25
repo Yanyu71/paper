@@ -1,0 +1,10 @@
+(折射率, Refractive index): 163
+(成像法, Imaging method): 6
+(薄透镜, Thin lens): 142
+(光轴, Optical axis): 107
+(放大率, Magnification): 87
+(物距, Object distance): 24
+(曲率半径, Radius of curvature): 44
+(物像方程, Object-image equation): 1
+(透镜厚度, Lens thickness): 1
+(像距, Image distance): 29

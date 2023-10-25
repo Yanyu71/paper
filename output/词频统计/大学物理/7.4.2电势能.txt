@@ -1,0 +1,8 @@
+(力学, Mechanics): 445
+(电荷, Charge): 721
+(电势能, Potential Energy): 36
+(保守场, Conservative Field): 10
+(功, Work): 633
+(保守力, Conservative Force): 76
+(电势, Potential): 348
+(静电场, Electric Field): 122

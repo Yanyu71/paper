@@ -1,0 +1,38 @@
+(转动中的惯性, Inertia in rotation): 0
+(线密度, Linear density): 3
+(转动惯量的定义式, Definition formula of moment of inertia): 3
+(薄圆盘, Thin disk): 3
+(面分布的刚体, Rigid body with surface distribution of mass): 0
+(转动惯量, Moment of inertia): 47
+(质心, Center of mass): 2
+(密度, Density): 8
+(转动惯量的有用性, Usefulness of moment of inertia): 0
+(质量密度, Mass density): 1
+(质量分布, Mass distribution): 2
+(牛顿第二定律, Newton's second law): 1
+(转轴, Axis of rotation): 16
+(面密度, Surface density): 2
+(刚体定轴转动定律, Law of rotational motion of rigid bodies): 1
+(转动惯量的定义式, Definition of moment of inertia): 3
+(转动惯量对转动的作用, Effect of moment of inertia on rotation): 0
+(体密度, Volume density): 1
+(转动惯量的大小决定因素, Factors determining the magnitude of moment of inertia): 0
+(转动状态, Rotational state): 2
+(质点的质量, Mass of a particle): 2
+(大小, Size): 4
+(平行轴定理, Parallel axis theorem): 3
+(角加速度, Angular acceleration): 1
+(转动惯量计算, Calculation of moment of inertia): 1
+(形状, Shape): 4
+(圆环, Ring): 6
+(常见刚体的转动惯量, Moment of inertia of common rigid bodies): 1
+(细杆, Thin rod): 7
+(力矩, Torque): 1
+(实心圆柱, Solid cylinder): 1
+(转动惯量叠加定理, Addition theorem of moment of inertia): 1
+(体分布的刚体, Rigid body with volume distribution of mass): 0
+(转动惯量的物理意义, Physical meaning of moment of inertia): 2
+(飞轮, Flywheel): 1
+(转动惯量的计算, Calculation of moment of inertia): 3
+(总质量, Total mass): 1
+(线分布的刚体, Rigid body with linear distribution of mass): 0

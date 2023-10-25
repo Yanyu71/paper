@@ -1,0 +1,26 @@
+﻿[{
+"knowledge_points": [
+   {"title": "万有引力相互作用", "en": "Universal gravitational interaction", "type": "", "description": ""},
+   {"title": "电磁相互作用", "en": "Electromagnetic interaction", "type": "", "description": ""},
+   {"title": "强相互作用", "en": "Strong interaction", "type": "", "description": ""}
+]
+},{
+"knowledge_points": [
+   {"title": "弱相互作用", "en": "Weak Interaction"},
+   {"title": "四种相互作用", "en": "Four Fundamental Interactions"},
+   {"title": "力程最短", "en": "Shortest Range"},
+   {"title": "粒子之间的距离", "en": "Distance between particles"},
+   {"title": "强相互作用", "en": "Strong Interaction"},
+   {"title": "作用时间", "en": "Interaction Time"},
+   {"title": "强度比强相互作用要弱", "en": "Weaker than Strong Interaction"},
+   {"title": "不可忽略", "en": "Cannot be ignored"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "中子", "en": "Neutron"},
+   {"title": "原子核的放射性衰变", "en": "Radioactive Decay of Nucleus"},
+   {"title": "衰变", "en": "Decay"},
+   {"title": "轻子", "en": "Lepton"},
+   {"title": "强子", "en": "Hadron"},
+   {"title": "p衰变", "en": "P Decay"},
+   {"title": "强子转变", "en": "Hadron Transformation"}
+]
+}]

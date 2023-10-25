@@ -1,0 +1,13 @@
+﻿{
+"knowledge_points": [
+   {"title": "进动效应", "en": "Precession effect"},
+   {"title": "陀螺仪", "en": "Gyroscope"},
+   {"title": "角动量定理", "en": "Angular momentum theorem"},
+   {"title": "自转速度", "en": "Spin speed"},
+   {"title": "进动角速度", "en": "Precession angular velocity"},
+   {"title": "外力矩", "en": "External torque"},
+   {"title": "角动量矢量", "en": "Angular momentum vector"},
+   {"title": "进动规律", "en": "Precession law"},
+   {"title": "角位移", "en": "Angular displacement"}
+]
+}

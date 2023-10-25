@@ -1,0 +1,24 @@
+(主折射率, Principal refractive index): 3
+(光轴, Optical axis): 11
+(折射光线, Refracted ray): 2
+(渥拉斯顿棱镜, Wollaston prism): 2
+(光轴, optic axis): 11
+(波面, wavefront): 15
+(折射率, refractive index): 6
+(尼科耳棱镜, Nicol prism): 2
+(双折射, birefringence): 11
+(旋转椭球面次波, Rotating ellipsoidal secondary wave): 0
+(入射角, Incident angle): 1
+(主折射率, principal refractive index): 3
+(波面, Wavefront): 15
+(单轴晶体, uniaxial crystal): 4
+(双折射现象, birefringence): 7
+(惠更斯, Huygens): 5
+(晶体, crystal): 29
+(电磁场理论, electromagnetic field theory): 1
+(双折射现象, Birefringence phenomenon): 7
+(线偏振光, Linearly polarized light): 2
+(光波, light wave): 3
+(球面次波, Spherical secondary wave): 3
+(平面波, Plane wave): 2
+(偏振片, Polarizer): 1

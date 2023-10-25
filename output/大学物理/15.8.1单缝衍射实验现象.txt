@@ -1,0 +1,18 @@
+﻿{
+"knowledge_points": [
+   {"title": "夫琅禾费衍射", "en": "Fraunhofer diffraction"},
+   {"title": "平行光", "en": "parallel light"},
+   {"title": "透镜", "en": "lens"},
+   {"title": "前焦点", "en": "front focal point"},
+   {"title": "衍射屏", "en": "diffraction screen"},
+   {"title": "狭缝", "en": "slit"},
+   {"title": "宽度", "en": "width"},
+   {"title": "平行光人射", "en": "parallel light incidence"},
+   {"title": "焦面", "en": "focal plane"},
+   {"title": "观测屏幕", "en": "observation screen"},
+   {"title": "波长", "en": "wavelength"},
+   {"title": "亮斑", "en": "bright spot"},
+   {"title": "强度", "en": "intensity"},
+   {"title": "衍射条纹", "en": "diffraction fringes"}
+]
+}

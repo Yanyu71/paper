@@ -1,0 +1,62 @@
+(平均冲力, Average impulsive force): 8
+(变力, Variable force): 1
+(选定始末状态, Selection of initial and final states): 1
+(重锤, heavy hammer): 6
+(碰撞, Collision): 6
+(动量守恒定律, law of conservation of momentum): 1
+(动量合成三角形, Momentum composition triangle): 1
+(分量式, Component form): 1
+(长度, Length): 9
+(例题2.17, Example 2.17): 0
+(加速度, acceleration): 0
+(冲量, impulse): 12
+(冲击力, impact force): 1
+(圆周运动, circular motion): 1
+(冲力, Impulsive force): 16
+(打击时间, Impact time): 1
+(均质柔绳, Homogeneous flexible rope): 1
+(牛顿第二定律, Newton's second law): 1
+(初速度, initial velocity): 1
+(重锤, Heavy hammer): 6
+(持续时间, duration): 1
+(冲击, Impact): 3
+(投影, Projection): 1
+(冲量的方向, Direction of impulse): 1
+(质量, mass): 6
+(质点动量定理, Principle of momentum for particles): 3
+(惯性系, Inertial frame of reference): 1
+(牛顿运动定律, Newton's laws of motion): 2
+(质点动力学问题, Particle dynamics problems): 1
+(合力的冲量, Impulse of the resultant force): 3
+(冲量的大小, Magnitude of impulse): 1
+(平均冲力, Average impulse): 8
+(例题2.15, Example 2.15): 0
+(下落长度与下落速度的关系, Relationship between the length of fall and the velocity of fall): 0
+(力, force): 56
+(支承力, Supporting force): 1
+(作用力, Action force): 4
+(竖直悬挂, Vertical suspension): 0
+(撞击作用, impact action): 1
+(动量变化量, Change in momentum): 1
+(选取研究对象, Selection of research object): 1
+(坐标系, coordinate system): 3
+(冲量, Impulse): 12
+(时刻动量的增量, Increment of momentum at different moments): 1
+(动量, momentum): 31
+(微分形式, Differential form): 1
+(合力, net force): 8
+(速度, Velocity): 11
+(重力, Gravity): 5
+(末速度, final velocity): 2
+(质量, Mass): 6
+(例题2.16, Example 2.16): 0
+(合力, Net force): 8
+(自由下落, Free fall): 1
+(动量定理, Momentum theorem): 10
+(静止下落, Free fall): 1
+(速度, velocity): 11
+(累积效果, Cumulative effect): 1
+(动量定理, momentum theorem): 10
+(质点的动量定理, Principle of momentum for particles): 3
+(末速度, Final velocity): 2
+(瞬时力, Instantaneous force): 1

@@ -1,0 +1,45 @@
+﻿{
+"knowledge_points": [
+   {"title": "静电力叠加原理", "en": "Principle of superposition of electrostatic forces", "type": "定义", "description": "当空间存在多个点电荷时，对于任意两个点电荷间的静电力，库仑定律仍被证明是正确的。静电力叠加原理是从实验得到的基本原理，由此导致描述电场的一些重要物理量，如电场强度、电势等，也都满足叠加原理。"},
+   {"title": "点电荷", "en": "Point charge", "type": "定义", "description": "点电荷是指电荷分布在空间中的一个点上，具有离散的电荷量。"},
+   {"title": "库仑定律", "en": "Coulomb's law", "type": "定义", "description": "库仑定律描述了两个点电荷之间的静电力与它们之间的距离和电荷量的关系。"},
+   {"title": "电场强度", "en": "Electric field strength", "type": "定义", "description": "电场强度是描述电场在某一点的强弱的物理量，它是单位正电荷所受到的力。"},
+   {"title": "电势", "en": "Electric potential", "type": "定义", "description": "电势是描述电场在某一点的势能大小的物理量，它是单位正电荷所具有的势能。"},
+   {"title": "带电体", "en": "Charged object", "type": "定义", "description": "带电体是指具有电荷的物体，可以是点电荷或具有一定形状的物体。"},
+   {"title": "带电体的大小", "en": "Size of charged object", "type": "问题", "description": "点电荷是很小的带电体，而比较大的带电体不能视为点电荷。一个带电体能够视为点电荷的条件是其尺寸远小于与之相互作用的其他带电体的距离。"},
+   {"title": "任意形状的带电体之间的作用力", "en": "Force between charged objects of any shape", "type": "问题", "description": "从理论上说，可以应用库仑定律进行计算。计算的思路是将带电体分解为小的电荷元，然后计算每对电荷元之间的静电力，最后将所有静电力进行叠加。"},
+   {"title": "圆周运动的半径与周期的关系", "en": "Relationship between radius and period of circular motion", "type": "问题", "description": "当质量为m、带电量为q的粒子沿一圆周轨道绕一固定的带电量为Q的粒子运动时，二者之间的距离（即圆轨道的半径）与运动周期存在关系，具体关系需要根据具体情况进行计算。"}
+]
+}{
+"knowledge_points": [
+   {"title": "静电力叠加原理", "en": "Principle of superposition of electrostatic forces", "type": "定义", "description": "当空间存在多个点电荷时，对于任意两个点电荷间的静电力，库仑定律仍被证明是正确的。静电力叠加原理是从实验得到的基本原理，由此导致描述电场的一些重要物理量，如电场强度、电势等，也都满足叠加原理。"},
+   {"title": "点电荷", "en": "Point charge", "type": "定义", "description": "点电荷是指电荷分布在空间中的一个点上，具有离散的电荷量。"},
+   {"title": "库仑定律", "en": "Coulomb's law", "type": "定义", "description": "库仑定律描述了两个点电荷之间的静电力与它们之间的距离和电荷量的关系。"},
+   {"title": "电场强度", "en": "Electric field strength", "type": "定义", "description": "电场强度是指单位正电荷在电场中所受到的力的大小。"},
+   {"title": "电势", "en": "Electric potential", "type": "定义", "description": "电势是指单位正电荷在电场中所具有的势能。"},
+   {"title": "带电体", "en": "Charged object", "type": "定义", "description": "带电体是指具有电荷的物体，可以是点电荷或具有一定形状的物体。"},
+   {"title": "圆周运动", "en": "Circular motion", "type": "定义", "description": "圆周运动是指物体沿着圆形轨道运动的运动形式。"},
+   {"title": "运动周期", "en": "Period of motion", "type": "定义", "description": "运动周期是指物体完成一次完整运动所需要的时间。"}
+]
+}{
+"knowledge_points": [
+   {"title": "质子", "en": "proton"},
+   {"title": "电子", "en": "electron"},
+   {"title": "电荷", "en": "charge"},
+   {"title": "符号颠倒", "en": "reversal of symbols"},
+   {"title": "世界", "en": "world"},
+   {"title": "牛顿万有引力定律", "en": "Newton's law of universal gravitation"},
+   {"title": "质量", "en": "mass"},
+   {"title": "库仑定律", "en": "Coulomb's law"},
+   {"title": "相似之处", "en": "similarities"},
+   {"title": "不同之处", "en": "differences"},
+   {"title": "电荷均勾分布的球壳", "en": "spherical shell with uniformly distributed charge"},
+   {"title": "静电力", "en": "electrostatic force"},
+   {"title": "导体球", "en": "conductor sphere"},
+   {"title": "相接触", "en": "in contact"},
+   {"title": "受力情况", "en": "force situation"},
+   {"title": "带电粒子", "en": "charged particle"},
+   {"title": "分布情况", "en": "distribution"},
+   {"title": "电场强度", "en": "electric field strength"}
+]
+}

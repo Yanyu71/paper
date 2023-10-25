@@ -1,0 +1,15 @@
+﻿[{
+"knowledge_points": [
+   {"title": "实际气体", "en": "Real gas"},
+   {"title": "理想气体", "en": "Ideal gas"},
+   {"title": "状态方程", "en": "Equation of state"},
+   {"title": "范德瓦耳斯方程", "en": "Van der Waals equation"},
+   {"title": "气体分子之间的相互作用", "en": "Intermolecular interactions between gas molecules"},
+   {"title": "范德瓦耳斯常数", "en": "Van der Waals constants"},
+   {"title": "范德瓦耳斯等温线", "en": "Van der Waals isotherms"},
+   {"title": "范德瓦耳斯气体", "en": "Van der Waals gas"},
+   {"title": "热力学系统的平衡态", "en": "Thermodynamic equilibrium state of a system"},
+   {"title": "气体在平衡态的特征", "en": "Characteristics of gas in equilibrium state"},
+   {"title": "金属杆的平衡态", "en": "Equilibrium state of a metal rod"}
+]
+}]

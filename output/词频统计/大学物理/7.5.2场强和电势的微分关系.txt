@@ -1,0 +1,36 @@
+(电场线, electric field line): 52
+(试验电荷, test charge): 22
+(静电场的高斯定理, Gauss's theorem for static electric field): 5
+(电场力, Electric field force): 36
+(法向距离, normal distance): 1
+(电势, Electric potential): 348
+(电偶极子, Electric dipole): 31
+(电势, electric potential): 348
+(匀强电场, Uniform electric field): 12
+(等势面, equipotential surface): 36
+(功, work): 633
+(电势差, Electric potential difference): 88
+(电荷分布, Charge distribution): 32
+(电场强度的定义式, Definition of electric field strength): 0
+(电偶极子, electric dipole): 31
+(闭合曲面积分, Closed surface integral): 1
+(矢量关系式, vector relationship): 2
+(点电荷产生的电场强度, Electric field strength produced by point charge): 1
+(梯度, gradient): 2
+(静电场的高斯定理, Gauss's theorem for static electric fields): 5
+(电场强度的叠加原理, Superposition principle of electric field strength): 2
+(位移, displacement): 214
+(电势能, Electric potential energy): 36
+(直角坐标, rectangular coordinates): 31
+(分量, component): 96
+(高斯定理, Gauss's theorem): 63
+(电势差, Potential difference): 88
+(力矩, Torque): 223
+(电场强度, Electric field strength): 317
+(等势面, Equipotential surface): 36
+(静电场, Static electric field): 122
+(点电荷产生的电场强度, Electric field strength produced by a point charge): 1
+(微分关系, differential relationship): 8
+(积分关系, integral relationship): 1
+(电场力, electric field force): 36
+(场强, field strength): 409

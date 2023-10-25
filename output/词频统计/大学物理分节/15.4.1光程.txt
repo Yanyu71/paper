@@ -1,0 +1,10 @@
+(总光程, Total optical path): 1
+(介质, Medium): 10
+(折射率, Refractive index): 2
+(光速, Speed of light): 1
+(相干光, Coherent light): 2
+(光程, Optical path): 4
+(真空, Vacuum): 2
+(相位差, Phase difference): 1
+(几何路程, Geometrical path): 1
+(路程差, Path difference): 1

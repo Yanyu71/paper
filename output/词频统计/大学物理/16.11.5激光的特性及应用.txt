@@ -1,0 +1,57 @@
+(氢原子光谱, Hydrogen atom spectrum): 14
+(绝缘体、导体和半导体, Insulator, conductor, and semiconductor): 1
+(激光特性, Characteristics of laser): 1
+(满足阈值条件, Meeting the threshold condition): 3
+(普朗克常量, Planck constant): 8
+(光电效应方程, Photoelectric effect equation): 10
+(微观粒子的波粒二象性, Wave-particle duality of microscopic particles): 3
+(激光器, Laser): 62
+(相干性, Coherence): 26
+(斯特藩-玻耳兹曼定律, Stefan-Boltzmann law): 7
+(维恩位移定律, Wien's displacement law): 4
+(粒子数反转分布, Population inversion): 1
+(黑体辐射, Blackbody radiation): 9
+(激光谐振腔, Laser resonator): 1
+(半导体, Semiconductor): 124
+(光通讯, Optical communication): 3
+(激光工作物质, Laser gain medium): 16
+(激光谱线的宽度, Width of laser spectrum line): 1
+(激光全息技术, Laser holography): 1
+(非接触加工, Non-contact processing): 1
+(自发辐射, Spontaneous emission): 17
+(受激辐射, Stimulated emission): 17
+(精密测量, Precision measurement): 5
+(辐射公式, Radiation formula): 3
+(固体能带结构, Solid band structure): 6
+(自发辐射和受激辐射, Spontaneous emission and stimulated emission): 1
+(化学, Chemistry): 43
+(激光的应用, Applications of lasers): 2
+(四个量子数, Four quantum numbers): 5
+(生物, Biology): 12
+(康普顿散射, Compton scattering): 28
+(农学, Agriculture): 1
+(谐振腔, Resonator cavity): 20
+(军事应用, Military applications): 0
+(激光器的基本组成, Basic components of a laser): 1
+(高定向, High directionality): 5
+(晶体结构的最基本特征, The most basic characteristics of crystal structure): 1
+(光缆, Optical fiber): 2
+(激励能源, Excitation energy): 8
+(激光工作物质, Laser working material): 16
+(产生激光的两个必要条件, Two necessary conditions for laser generation): 1
+(能量子, Quantum of energy): 6
+(相干光, Coherent light): 58
+(医学, Medicine): 12
+(光电效应, Photoelectric effect): 44
+(普通光源, Ordinary light source): 14
+(激光的纵模数, Longitudinal mode number of a laser): 1
+(光的波粒二象性, Wave-particle duality of light): 3
+(普朗克量子假设, Planck's quantum hypothesis): 3
+(高定向性, High directionality): 5
+(相邻两纵模间隔, Spacing between adjacent longitudinal modes): 2
+(激光的特性, Characteristics of laser): 3
+(高亮度, High brightness): 6
+(介质内部实现粒子数反转, Achieving population inversion inside the medium): 1
+(计量标准, Metrological standards): 2
+(薛定谔方程, Schrodinger equation): 38
+(高单色性, High monochromaticity): 4

@@ -1,0 +1,53 @@
+(光谱分析, Spectral analysis): 3
+(辐射功率, Radiation power): 6
+(化学发光, Chemiluminescence): 4
+(生物学, Biology): 2
+(脉冲宽度, Pulse width): 1
+(精细机械技术, Precision mechanical technology): 1
+(激光器, Laser): 62
+(相干性, Coherence): 26
+(高能态, High energy state): 2
+(频率, Frequency): 461
+(材料, Materials): 92
+(光波列, Optical wave train): 28
+(热辐射, Thermal radiation): 14
+(发光, Emission of light): 79
+(激光, Laser): 223
+(自发辐射, Spontaneous emission): 17
+(药学, Pharmacy): 1
+(干涉现象, Interference phenomenon): 21
+(红宝石激光器, Ruby laser): 9
+(稳定性, Stability): 7
+(连续谱光源, Continuous spectrum light source): 1
+(单色仪, Monochromator): 2
+(低能态, Low energy state): 4
+(电致发光, Electroluminescence): 5
+(化学, Chemistry): 43
+(单色性, Monochromaticity): 31
+(同步辐射光, Synchrotron radiation): 6
+(荧光, Fluorescence): 3
+(软X射线, Soft X-ray): 2
+(磷光, Phosphorescence): 2
+(线谱光源, Line spectrum light source): 1
+(生物发光, Bioluminescence): 1
+(方向性, Directionality): 21
+(物理学, Physics): 160
+(谱线宽度, Spectral line width): 10
+(合肥, Hefei): 2
+(光源, Light source): 213
+(医学, Medicine): 12
+(微电子, Microelectronics): 6
+(偏振性, Polarization): 5
+(普通光源, Ordinary light source): 14
+(光谱线, Spectral line): 29
+(同步加速器, Synchrotron accelerator): 2
+(微量元素分析, Trace element analysis): 1
+(光谱, Spectrum): 107
+(红外, Infrared): 15
+(能量状态, Energy state): 5
+(光致发光, Photoluminescence): 3
+(北京正负电子对撞机, Beijing Synchrotron Radiation Facility (BSRF): 6
+(脉冲化, Pulsed): 1
+(辐射光, Radiation light): 16
+(受激辐射的光放大, Stimulated emission of light amplification): 1
+(复色光, Polychromatic light): 7

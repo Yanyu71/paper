@@ -1,0 +1,21 @@
+(空间站, space station): 4
+(光速不变原理, speed of light invariance principle): 3
+(狭义相对论, special relativity): 1
+(相对论速度变换公式, Relativistic velocity transformation formula): 5
+(洛伦兹变换, Lorentz transformation): 3
+(物体运动速度, object velocity): 1
+(速度变换定理, velocity transformation theorem): 8
+(伽利略变换, Galilean transformation): 1
+(飞船, spaceship): 16
+(伽利略速度变换定理, Galilean velocity transformation theorem): 2
+(逆变换, inverse transformation): 1
+(观测者, observer): 5
+(光信号, light signal): 2
+(变换关系, transformation relationship): 3
+(相对论速度变换定理, Relativistic velocity transformation theorem): 5
+(速度定义, velocity definition): 0
+(极限, limit): 1
+(速度分量, velocity components): 2
+(伽利略速度变换公式, Galilean velocity transformation formula): 1
+(时空坐标, spacetime coordinates): 0
+(光速不变原理, Principle of the constancy of the speed of light): 3

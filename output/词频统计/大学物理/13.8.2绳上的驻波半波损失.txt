@@ -1,0 +1,34 @@
+(驻波, Standing wave): 61
+(共振, Resonance): 89
+(频率, Frequency): 461
+(谐频, Harmonic frequency): 11
+(相位差, Phase difference): 116
+(位移, Displacement): 214
+(能量, Energy): 637
+(波腹, Antinode): 13
+(波长, Wavelength): 470
+(小提琴弦, Violin string): 1
+(波速, Wave speed): 76
+(波程差, Path difference): 20
+(多普勒效应, Doppler effect): 36
+(驻波条件, Standing wave condition): 5
+(能量传播, Energy propagation): 2
+(驻波图样, Standing wave pattern): 2
+(特点, Characteristics): 54
+(基频, Fundamental frequency): 6
+(相干波, Coherent waves): 16
+(行波, Progressive wave): 6
+(弦长, String length): 3
+(绳中驻波, Standing waves in a rope): 2
+(波节, Node): 15
+(半波损失, Half-wave loss): 28
+(本征频率, Natural frequency): 1
+(图13.30, Figure 13.30): 5
+(张力, Tension): 37
+(质量, Mass): 641
+(波动方程, Wave equation): 15
+(分布, Distribution): 519
+(声波, Sound wave): 63
+(声速, Speed of sound): 26
+(频闪照片, Stroboscopic photograph): 1
+(驻波方程, Standing wave equation): 1

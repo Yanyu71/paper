@@ -1,0 +1,63 @@
+﻿[{
+"knowledge_points": [
+   {"title": "磁畴", "en": "Magnetic domain"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"},
+   {"title": "自旋磁矩", "en": "Spin magnetic moment"},
+   {"title": "交换耦合", "en": "Exchange coupling"},
+   {"title": "磁化方向", "en": "Magnetization direction"},
+   {"title": "磁性", "en": "Magnetism"},
+   {"title": "外磁场", "en": "External magnetic field"},
+   {"title": "磁滞现象", "en": "Hysteresis"},
+   {"title": "临界温度", "en": "Curie temperature"},
+   {"title": "矩磁材料", "en": "Rectangular magnetic material"},
+   {"title": "矫顽力", "en": "Coercive force"},
+   {"title": "磁芯", "en": "Magnetic core"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "同心圆", "en": "Concentric circles"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"}
+]
+},{
+"knowledge_points": [
+   {"title": "无限长载流直导线", "en": "Infinite long current-carrying wire"},
+   {"title": "电流", "en": "Current"},
+   {"title": "磁场强度", "en": "Magnetic field strength"},
+   {"title": "磁芯", "en": "Magnetic core"},
+   {"title": "磁化方向", "en": "Magnetization direction"},
+   {"title": "脉冲电流", "en": "Pulse current"},
+   {"title": "峰值", "en": "Peak value"},
+   {"title": "磁芯外半径", "en": "Outer radius of magnetic core"},
+   {"title": "磁芯材料的矫顽力", "en": "Coercive force of magnetic core material"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁畴", "en": "Magnetic domain"},
+   {"title": "铁磁质", "en": "Ferromagnetic material"},
+   {"title": "自旋磁矩", "en": "Spin magnetic moment"},
+   {"title": "交换耦合", "en": "Exchange coupling"},
+   {"title": "磁化方向", "en": "Magnetization direction"},
+   {"title": "磁性", "en": "Magnetism"},
+   {"title": "外磁场", "en": "External magnetic field"},
+   {"title": "磁滞现象", "en": "Hysteresis"},
+   {"title": "临界温度", "en": "Curie temperature"},
+   {"title": "矩磁材料", "en": "Rectangular magnetic material"},
+   {"title": "矫顽力", "en": "Coercive force"},
+   {"title": "磁芯", "en": "Magnetic core"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "同心圆", "en": "Concentric circles"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"}
+]
+},{
+"knowledge_points": [
+   {"title": "无限长载流直导线", "en": "Infinite long current-carrying straight wire"},
+   {"title": "电流", "en": "Current"},
+   {"title": "磁场强度", "en": "Magnetic field strength"},
+   {"title": "磁芯", "en": "Magnetic core"},
+   {"title": "磁化方向", "en": "Magnetization direction"},
+   {"title": "脉冲电流", "en": "Pulse current"},
+   {"title": "峰值", "en": "Peak value"},
+   {"title": "矫顽力", "en": "Coercive force"},
+   {"title": "外半径", "en": "Outer radius"},
+   {"title": "磁芯材料", "en": "Magnetic core material"},
+   {"title": "数据", "en": "Data"}
+]
+}]

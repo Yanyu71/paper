@@ -1,0 +1,15 @@
+﻿{
+"knowledge_points": [
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "绝对时空观", "en": "Absolute spacetime view"},
+   {"title": "时间间隔", "en": "Time interval"},
+   {"title": "空间间隔", "en": "Space interval"},
+   {"title": "伽利略变换", "en": "Galilean transformation"},
+   {"title": "力学相对性原理", "en": "Principle of relativity in mechanics"},
+   {"title": "惯性系", "en": "Inertial frame of reference"},
+   {"title": "观测者", "en": "Observer"},
+   {"title": "参考系", "en": "Reference frame"},
+   {"title": "相对运动速度", "en": "Relative velocity"},
+   {"title": "物质运动", "en": "Motion of matter"}
+]
+}

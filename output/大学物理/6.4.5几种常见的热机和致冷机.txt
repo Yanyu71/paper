@@ -1,0 +1,55 @@
+﻿{
+"knowledge_points": [
+   {"title": "内燃机", "en": "Internal combustion engine"},
+   {"title": "汽油机", "en": "Gasoline engine"},
+   {"title": "奥托循环", "en": "Otto cycle"},
+   {"title": "循环效率", "en": "Cycle efficiency"},
+   {"title": "电冰箱", "en": "Electric refrigerator"},
+   {"title": "压缩式", "en": "Compression type"},
+   {"title": "工质", "en": "Working fluid"},
+   {"title": "氨气", "en": "Ammonia"},
+   {"title": "氟里昂", "en": "Freon"},
+   {"title": "冷凝器", "en": "Condenser"},
+   {"title": "干燥器", "en": "Dryer"},
+   {"title": "毛细管", "en": "Capillary tube"},
+   {"title": "蒸发器", "en": "Evaporator"},
+   {"title": "制冷剂", "en": "Refrigerant"}
+]
+}{
+"knowledge_points": [
+   {"title": "热泵", "en": "Heat pump"},
+   {"title": "冷凝器", "en": "Condenser"},
+   {"title": "蒸发器", "en": "Evaporator"},
+   {"title": "热泵系数", "en": "Coefficient of performance"},
+   {"title": "致冷系数", "en": "COP"},
+   {"title": "电冰箱", "en": "Refrigerator"},
+   {"title": "冷暖双制空调", "en": "Air conditioner for cooling and heating"},
+   {"title": "功率", "en": "Power"},
+   {"title": "循环", "en": "Cycle"},
+   {"title": "致冷循环", "en": "Refrigeration cycle"}
+]
+}{
+"knowledge_points": [
+   {"title": "循环", "en": "Cycle"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "传热", "en": "Heat transfer"},
+   {"title": "效率", "en": "Efficiency"},
+   {"title": "致冷系数", "en": "Coefficient of refrigeration"},
+   {"title": "p-V图", "en": "p-V diagram"},
+   {"title": "卡诺热机", "en": "Carnot engine"},
+   {"title": "卡诺致冷机", "en": "Carnot refrigerator"},
+   {"title": "热力学第一定律", "en": "First law of thermodynamics"},
+   {"title": "吸热", "en": "Heat absorption"},
+   {"title": "放热", "en": "Heat release"},
+   {"title": "作功", "en": "Work done"},
+   {"title": "等体过程", "en": "Isochoric process"},
+   {"title": "等压过程", "en": "Isobaric process"},
+   {"title": "等温过程", "en": "Isothermal process"},
+   {"title": "可逆过程", "en": "Reversible process"},
+   {"title": "温差", "en": "Temperature difference"},
+   {"title": "能量守恒定律", "en": "Law of conservation of energy"},
+   {"title": "电冰箱", "en": "Refrigerator"},
+   {"title": "空调器", "en": "Air conditioner"},
+   {"title": "热力学第二定律", "en": "Second law of thermodynamics"}
+]
+}

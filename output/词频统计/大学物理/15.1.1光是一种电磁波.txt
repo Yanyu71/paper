@@ -1,0 +1,35 @@
+(X射线, X-ray): 50
+(电磁场, Electromagnetic field): 51
+(可见光谱, Visible spectrum): 6
+(红外防伪, Infrared anti-counterfeiting): 1
+(衍射, Diffraction): 327
+(频率, Frequency): 461
+(紫外线, Ultraviolet): 9
+(红外通信, Infrared communication): 1
+(波长, Wavelength): 470
+(实验证, Experimental verification): 17
+(1射线, Gamma ray): 3
+(红外报警, Infrared alarm): 1
+(电磁波谱, Electromagnetic spectrum): 4
+(荧光效应, Fluorescence effect): 1
+(折射, Refraction): 470
+(传播, Propagation): 357
+(微波, Microwave): 4
+(红外线, Infrared radiation): 6
+(可见光, Visible light): 35
+(磁场, Magnetic field): 738
+(可见光七种颜色的波长和频率, Wavelength and frequency of the seven colors of visible light): 2
+(偏振, Polarization): 264
+(电磁波, Electromagnetic wave): 150
+(红外线, Infrared): 6
+(文物鉴定, Cultural relic identification): 1
+(人眼对不同波长的光的相对灵敏度, Relative sensitivity of the human eye to different wavelengths of light): 1
+(光, Light): 3723
+(迈克斯韦电磁场理论, Maxwell's electromagnetic field theory): 3
+(化学效应, Chemical effect): 1
+(颜色, Color): 16
+(电场, Electric field): 882
+(赫兹, Hertz): 4
+(紫外线, Ultraviolet radiation): 9
+(红外热像, Infrared thermal imaging): 1
+(无线电波, Radio wave): 16

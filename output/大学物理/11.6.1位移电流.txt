@@ -1,0 +1,28 @@
+﻿{
+"knowledge_points": [
+   {"title": "稳恒电流", "en": "Steady current"},
+   {"title": "安培环路定理", "en": "Ampere's circuital law"},
+   {"title": "非稳恒电流", "en": "Non-steady current"},
+   {"title": "电容器充放电过程", "en": "Charging and discharging process of a capacitor"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "传导电流", "en": "Conduction current"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电位移", "en": "Electric displacement"},
+   {"title": "位移电流", "en": "Displacement current"},
+   {"title": "全电流", "en": "Total current"},
+   {"title": "全电流安培环路定理", "en": "Ampere's circuital law for total current"}
+]
+}{
+"knowledge_points": [
+   {"title": "移电流", "en": "Moving current"},
+   {"title": "电流强度", "en": "Current intensity"},
+   {"title": "磁感应强度", "en": "Magnetic induction intensity"},
+   {"title": "极板间的位移电流", "en": "Displacement current between the plates"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "有旋磁场", "en": "Rotational magnetic field"},
+   {"title": "磁场强度", "en": "Magnetic field intensity"},
+   {"title": "圆柱电流", "en": "Cylindrical current"},
+   {"title": "磁场线", "en": "Magnetic field lines"}
+]
+}

@@ -1,0 +1,22 @@
+﻿[{
+"knowledge_points": [
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁高斯定理", "en": "Magnetic Gauss's law"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "传导电流", "en": "Conduction current"},
+   {"title": "附加磁感应强度", "en": "Additional magnetic induction"},
+   {"title": "磁场线", "en": "Magnetic field lines"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "闭合曲面", "en": "Closed surface"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁介质", "en": "Magnetic medium"},
+   {"title": "磁高斯定理", "en": "Magnetic Gauss's law"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "传导电流", "en": "Conduction current"},
+   {"title": "附加磁感应强度", "en": "Additional magnetic induction"},
+   {"title": "闭合曲线", "en": "Closed curve"},
+   {"title": "闭合曲面", "en": "Closed surface"}
+]
+}]

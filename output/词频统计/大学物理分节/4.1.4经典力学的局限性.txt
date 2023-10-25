@@ -1,0 +1,7 @@
+(金牛座中的星云, Crab Nebula): 1
+(超新星爆发, Supernova explosion): 2
+(相对性原理, Principle of relativity): 1
+(光速, Speed of light): 4
+(电磁现象, Electromagnetic phenomena): 1
+(速度变换定理, Velocity transformation theorem): 2
+(经典力学, Classical mechanics): 4

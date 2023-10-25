@@ -1,0 +1,14 @@
+(原子, Atom): 626
+(电子壳层, Electron shell): 8
+(固有磁矩, Intrinsic magnetic moment): 15
+(分子, Molecule): 790
+(核磁矩, Nuclear magnetic moment): 19
+(电流, Electric current): 643
+(抗磁质, Diamagnetic material): 15
+(顺磁质, Paramagnetic material): 23
+(原子核, Atomic nucleus): 173
+(自旋磁矩, Spin magnetic moment): 9
+(轨道磁矩, Orbital magnetic moment): 5
+(电子, Electron): 699
+(自旋运动, Spin motion): 4
+(轨道运动, Orbital motion): 15

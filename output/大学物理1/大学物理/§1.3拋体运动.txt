@@ -1,0 +1,35 @@
+﻿[{
+"knowledge_points": [
+   {"title": "抛体运动", "en": "Projectile motion"},
+   {"title": "重力加速度", "en": "Gravity acceleration"},
+   {"title": "无阻力抛体运动", "en": "Projectile motion without air resistance"},
+   {"title": "运动方程", "en": "Equations of motion"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "轨迹方程", "en": "Equation of trajectory"},
+   {"title": "射程", "en": "Range"},
+   {"title": "抛物线运动", "en": "Parabolic motion"},
+   {"title": "水平射程", "en": "Horizontal range"},
+   {"title": "最大射程", "en": "Maximum range"},
+   {"title": "爆炸", "en": "Explosion"},
+   {"title": "碎片", "en": "Fragments"},
+   {"title": "球面", "en": "Sphere"},
+   {"title": "球面半径", "en": "Radius of sphere"},
+   {"title": "球心位置", "en": "Center of sphere"},
+   {"title": "时间关系", "en": "Relationship with time"}
+]
+},{
+"knowledge_points": [
+   {"title": "初始速度", "en": "Initial velocity"},
+   {"title": "拋体运动", "en": "Projectile motion"},
+   {"title": "直线运动", "en": "Linear motion"},
+   {"title": "运动方程", "en": "Equations of motion"},
+   {"title": "位置坐标", "en": "Position coordinates"},
+   {"title": "球面方程", "en": "Equation of a sphere"},
+   {"title": "运动轨迹方程", "en": "Equation of motion trajectory"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "阻力", "en": "Resistance"},
+   {"title": "运动叠加原理", "en": "Principle of superposition of motion"},
+   {"title": "无阻力抛体运动", "en": "Projectile motion without resistance"}
+]
+}]

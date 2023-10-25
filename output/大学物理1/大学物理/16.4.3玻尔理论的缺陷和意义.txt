@@ -1,0 +1,26 @@
+﻿[{
+"knowledge_points": [
+   {"title": "玻尔理论", "en": "Bohr theory"},
+   {"title": "半经典量子理论", "en": "semi-classical quantum theory"},
+   {"title": "光谱线结构", "en": "spectral line structure"},
+   {"title": "氢原子", "en": "hydrogen atom"},
+   {"title": "类氢离子", "en": "hydride ion"},
+   {"title": "谱线强度", "en": "spectral line intensity"},
+   {"title": "谱线宽度", "en": "spectral line width"},
+   {"title": "谱线偏振性", "en": "spectral line polarization"},
+   {"title": "定态不辐射", "en": "non-radiation of stationary states"},
+   {"title": "量子化条件", "en": "quantization condition"},
+   {"title": "量子力学", "en": "quantum mechanics"},
+   {"title": "能级", "en": "energy level"},
+   {"title": "能级跃迁", "en": "energy level transition"},
+   {"title": "轨道", "en": "orbit"},
+   {"title": "巴耳末系", "en": "Balmer series"},
+   {"title": "莱曼线系", "en": "Lyman series"},
+   {"title": "激发态", "en": "excited state"},
+   {"title": "氦离子", "en": "helium ion"},
+   {"title": "反氢原子", "en": "anti-hydrogen atom"},
+   {"title": "波粒二象性", "en": "wave-particle duality"},
+   {"title": "德布罗意", "en": "de Broglie"},
+   {"title": "电子衍射实验", "en": "electron diffraction experiment"}
+]
+}]

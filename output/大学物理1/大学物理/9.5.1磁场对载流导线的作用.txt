@@ -1,0 +1,110 @@
+﻿[{
+"knowledge_points": [
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "载流导线", "en": "Current-carrying wire"},
+   {"title": "磁场力", "en": "Magnetic force"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "安培力公式", "en": "Ampere's force formula"},
+   {"title": "总作用力", "en": "Total force"},
+   {"title": "无限长直导线", "en": "Infinite straight wire"},
+   {"title": "半圆弧", "en": "Semicircle"},
+   {"title": "圆电流", "en": "Circular current"},
+   {"title": "坐标系", "en": "Coordinate system"},
+   {"title": "非均匀磁场", "en": "Non-uniform magnetic field"},
+   {"title": "安培力", "en": "Ampere's force"},
+   {"title": "电磁推进器", "en": "Electromagnetic thruster"},
+   {"title": "平行导轨", "en": "Parallel rails"},
+   {"title": "圆柱导体", "en": "Cylindrical conductor"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "安培力计算", "en": "Ampere's force calculation"}
+]
+},{
+"knowledge_points": [
+   {"title": "导线", "en": "Wire"},
+   {"title": "电流", "en": "Current"},
+   {"title": "安培力", "en": "Ampere's force"},
+   {"title": "超导材料", "en": "Superconducting material"},
+   {"title": "电磁推进", "en": "Electromagnetic propulsion"},
+   {"title": "轨道炮", "en": "Railgun"},
+   {"title": "电磁泵", "en": "Electromagnetic pump"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "矢量积分", "en": "Vector integration"},
+   {"title": "直角坐标系", "en": "Cartesian coordinate system"},
+   {"title": "单位", "en": "Unit"},
+   {"title": "载流细直导线", "en": "Current-carrying straight wire"},
+   {"title": "相互作用力", "en": "Interaction force"}
+]
+},{
+"knowledge_points": [
+   {"title": "安培力公式", "en": "Ampere's law"},
+   {"title": "电流强度", "en": "current intensity"},
+   {"title": "导线", "en": "wire"},
+   {"title": "相互作用力", "en": "interaction force"},
+   {"title": "引力", "en": "attraction"},
+   {"title": "斥力", "en": "repulsion"},
+   {"title": "距离", "en": "distance"},
+   {"title": "单位长度", "en": "unit length"},
+   {"title": "安培", "en": "ampere"},
+   {"title": "真空磁导率", "en": "vacuum permeability"},
+   {"title": "磁场", "en": "magnetic field"},
+   {"title": "载流线圈", "en": "current-carrying coil"},
+   {"title": "磁感应强度", "en": "magnetic induction"},
+   {"title": "磁矩", "en": "magnetic moment"},
+   {"title": "力矩", "en": "torque"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁力矩", "en": "Magnetic moment"},
+   {"title": "线圈", "en": "Coil"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "矩形线圈", "en": "Rectangular coil"},
+   {"title": "平面载流线圈", "en": "Planar current loop"},
+   {"title": "磁力", "en": "Magnetic force"},
+   {"title": "磁力矩最大", "en": "Maximum magnetic moment"},
+   {"title": "稳定平衡状态", "en": "Stable equilibrium state"},
+   {"title": "微小扰动", "en": "Small disturbance"},
+   {"title": "不稳定平衡状态", "en": "Unstable equilibrium state"},
+   {"title": "安培计", "en": "Ammeter"},
+   {"title": "伏特计", "en": "Voltmeter"},
+   {"title": "磁电式电流计", "en": "Electrodynamometer"},
+   {"title": "磁力作功", "en": "Magnetic work"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "载流线圈", "en": "Current-carrying coil"},
+   {"title": "磁矩", "en": "Magnetic moment"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "磁力矩", "en": "Magnetic torque"},
+   {"title": "功", "en": "Work"},
+   {"title": "势能", "en": "Potential energy"},
+   {"title": "磁偶极子", "en": "Magnetic dipole"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "安培力", "en": "Ampere force"},
+   {"title": "力矩", "en": "Torque"}
+]
+},{
+"knowledge_points": [
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "载流导线", "en": "Current-carrying wire"},
+   {"title": "磁场力", "en": "Magnetic force"},
+   {"title": "电流元", "en": "Current element"},
+   {"title": "磁感应强度", "en": "Magnetic induction"},
+   {"title": "安培力公式", "en": "Ampere's force formula"},
+   {"title": "总作用力", "en": "Total force"},
+   {"title": "无限长直导线", "en": "Infinite straight wire"},
+   {"title": "半圆弧", "en": "Semicircle"},
+   {"title": "圆电流", "en": "Circular current"},
+   {"title": "坐标系", "en": "Coordinate system"},
+   {"title": "非均匀磁场", "en": "Non-uniform magnetic field"},
+   {"title": "安培力", "en": "Ampere's force"},
+   {"title": "电磁推进器", "en": "Electromagnetic thruster"},
+   {"title": "平行导轨", "en": "Parallel rails"},
+   {"title": "圆柱导体", "en": "Cylindrical conductor"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "电流", "en": "Current"}
+]
+}]

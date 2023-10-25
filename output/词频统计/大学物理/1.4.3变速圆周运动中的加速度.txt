@@ -1,0 +1,16 @@
+(速度大小变化的矢量, Vector representing change in magnitude of velocity): 0
+(质点速度大小变化的快慢, Rate of change in magnitude of particle velocity): 0
+(速度大小变化, Change in magnitude of velocity): 2
+(切向加速度, Tangential acceleration): 29
+(速度方向变化的矢量, Vector representing change in direction of velocity): 0
+(变速圆周运动, Variable circular motion): 11
+(质点速度方向变化的快慢, Rate of change in direction of particle velocity): 1
+(速度增量分解, Decomposition of velocity change): 0
+(速度大小, Magnitude of velocity): 19
+(自然坐标, Natural coordinates): 46
+(加速度, Acceleration): 397
+(速度增量, Change in velocity): 6
+(速度方向变化, Change in direction of velocity): 3
+(加速度与速度夹角, Angle between acceleration and velocity): 0
+(法向加速度, Normal acceleration): 37
+(速度方向, Direction of velocity): 24

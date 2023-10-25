@@ -1,0 +1,41 @@
+﻿[{
+"knowledge_points": [
+   {"title": "受迫振动", "en": "Forced vibration"},
+   {"title": "周期性外力", "en": "Periodic external force"},
+   {"title": "弹性回复力", "en": "Restoring force"},
+   {"title": "阻力", "en": "Damping"},
+   {"title": "驱动力", "en": "Driving force"},
+   {"title": "角频率", "en": "Angular frequency"},
+   {"title": "运动微分方程", "en": "Differential equation of motion"},
+   {"title": "二阶线性非齐次常微分方程", "en": "Second-order linear nonhomogeneous ordinary differential equation"},
+   {"title": "齐次方程", "en": "Homogeneous equation"},
+   {"title": "非齐次方程", "en": "Nonhomogeneous equation"},
+   {"title": "通解", "en": "General solution"},
+   {"title": "特解", "en": "Particular solution"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "旋转矢量法", "en": "Rotating vector method"},
+   {"title": "稳定的受迫振动", "en": "Stable forced vibration"},
+   {"title": "谐振动", "en": "Harmonic vibration"},
+   {"title": "起始条件", "en": "Initial conditions"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "振幅变化曲线", "en": "Amplitude variation curve"},
+   {"title": "极大值", "en": "Maximum value"}
+]
+},{
+"knowledge_points": [
+   {"title": "共振", "en": "Resonance"},
+   {"title": "驱动力角频率", "en": "Driving force angular frequency"},
+   {"title": "共振时的振幅", "en": "Amplitude at resonance"},
+   {"title": "阻力", "en": "Damping"},
+   {"title": "阻尼系数", "en": "Damping coefficient"},
+   {"title": "速度振幅", "en": "Velocity amplitude"},
+   {"title": "速度共振", "en": "Velocity resonance"},
+   {"title": "能量共振", "en": "Energy resonance"},
+   {"title": "振动系统", "en": "Vibration system"},
+   {"title": "共振对系统的影响", "en": "Effects of resonance on systems"},
+   {"title": "共振的应用", "en": "Applications of resonance"},
+   {"title": "共鸣", "en": "Resonance"},
+   {"title": "分子振动能谱", "en": "Molecular vibrational spectrum"}
+]
+}]

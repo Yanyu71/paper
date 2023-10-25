@@ -1,0 +1,46 @@
+﻿[{
+"knowledge_points": [
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "相干光源", "en": "Coherent light sources"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "干涉过程", "en": "Interference process"},
+   {"title": "干涉条纹", "en": "Interference fringes"},
+   {"title": "杨氏干涉实验", "en": "Young's interference experiment"},
+   {"title": "薄膜厚度", "en": "Thickness of the film"},
+   {"title": "折射率测量", "en": "Refractive index measurement"},
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "费马原理", "en": "Fermat's principle"},
+   {"title": "等光程性", "en": "Equal optical path length"},
+   {"title": "衍射现象", "en": "Diffraction phenomenon"},
+   {"title": "光强", "en": "Intensity of light"}
+]
+},{
+"knowledge_points": [
+   {"title": "光程差", "en": "Optical path difference", "type": "定义", "description": "光波从一个点到另一个点所经过的光程的差值"},
+   {"title": "相位差", "en": "Phase difference", "type": "关系", "description": "两束相干光在空间某点相遇的相位差等于两束光的光程差乘以2π/λ减去两束光的初相差"},
+   {"title": "光程", "en": "Optical path", "type": "定义", "description": "光波通过介质传播的路程"},
+   {"title": "光程概念", "en": "Concept of optical path", "type": "原因", "description": "引入光程概念后，处理光的干涉问题更简单，光程可以用真空中的光波长来处理"},
+   {"title": "薄透镜", "en": "Thin lens", "type": "影响", "description": "在观察光的干涉时，使用薄透镜不会引起附加光程差"},
+   {"title": "杨氏双缝实验", "en": "Young's double-slit experiment", "type": "影响", "description": "将杨氏双缝实验装置放入水中而不是在空气中，杨氏干涉条纹会发生变化"},
+   {"title": "分振幅方法", "en": "Amplitude splitting method", "type": "方法", "description": "一种获得相干光的方法，通过将光波投射到两种透明介质的分界面上，利用反射和折射产生相干光"}
+]
+},{
+"knowledge_points": [
+   {"title": "分振幅行为", "en": "Amplitude division behavior"},
+   {"title": "分振幅装置", "en": "Amplitude division device"},
+   {"title": "透明的介质薄膜", "en": "Transparent medium film"},
+   {"title": "反射", "en": "Reflection"},
+   {"title": "折射", "en": "Refraction"},
+   {"title": "相干光", "en": "Coherent light"},
+   {"title": "干涉", "en": "Interference"},
+   {"title": "薄膜干涉", "en": "Film interference"},
+   {"title": "光源尺寸", "en": "Light source size"},
+   {"title": "薄膜厚度", "en": "Film thickness"},
+   {"title": "形状", "en": "Shape"},
+   {"title": "观察", "en": "Observation"},
+   {"title": "等厚干涉", "en": "Equal thickness interference"},
+   {"title": "等倾干涉", "en": "Equal inclination interference"}
+]
+}]

@@ -1,0 +1,43 @@
+﻿[{
+"knowledge_points": [
+   {"title": "角动量守恒定律", "en": "Law of Conservation of Angular Momentum"},
+   {"title": "陀螺仪", "en": "Gyroscope"},
+   {"title": "导航", "en": "Navigation"},
+   {"title": "常平架陀螺仪", "en": "Gimbal Gyroscope"},
+   {"title": "飞机自动驾驶仪", "en": "Aircraft Autopilot"},
+   {"title": "卫星", "en": "Satellite"},
+   {"title": "火箭", "en": "Rocket"},
+   {"title": "导弹", "en": "Missile"},
+   {"title": "直升机螺旋桨", "en": "Helicopter Rotor"},
+   {"title": "旋翼", "en": "Rotor"},
+   {"title": "尾桨", "en": "Tail Rotor"},
+   {"title": "升力", "en": "Lift"},
+   {"title": "重力", "en": "Gravity"},
+   {"title": "推力", "en": "Thrust"},
+   {"title": "鱼雷", "en": "Torpedo"},
+   {"title": "雷身", "en": "Torpedo Body"}
+]
+},{
+"knowledge_points": [
+   {"title": "个人", "en": "individual"},
+   {"title": "转台", "en": "turntable"},
+   {"title": "转动角速度", "en": "angular velocity of rotation"},
+   {"title": "哑铃", "en": "dumbbell"},
+   {"title": "转动惯量", "en": "moment of inertia"},
+   {"title": "飞轮", "en": "flywheel"},
+   {"title": "转轴", "en": "axis of rotation"},
+   {"title": "失重状态", "en": "weightless state"},
+   {"title": "宇航员", "en": "astronaut"},
+   {"title": "悬立", "en": "suspended"},
+   {"title": "舱壁", "en": "cabin wall"},
+   {"title": "陀螺仪", "en": "gyroscope"},
+   {"title": "定向特性", "en": "directional characteristics"},
+   {"title": "杠杆陀螺仪", "en": "lever gyroscope"},
+   {"title": "外力矩", "en": "external torque"},
+   {"title": "运动", "en": "motion"},
+   {"title": "合外力矩", "en": "net external torque"},
+   {"title": "自转轴", "en": "axis of self-rotation"},
+   {"title": "进动", "en": "precession"},
+   {"title": "进动效应", "en": "precession effect"}
+]
+}]

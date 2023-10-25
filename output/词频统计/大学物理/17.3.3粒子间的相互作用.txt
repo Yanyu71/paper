@@ -1,0 +1,19 @@
+(万有引力相互作用, Universal gravitational interaction): 3
+(不可忽略, Cannot be ignored): 1
+(强相互作用, Strong Interaction): 28
+(p衰变, P Decay): 2
+(弱相互作用, Weak Interaction): 28
+(强子转变, Hadron Transformation): 2
+(轻子, Lepton): 30
+(粒子之间的距离, Distance between particles): 1
+(力程最短, Shortest Range): 1
+(电子, Electron): 699
+(强子, Hadron): 32
+(原子核的放射性衰变, Radioactive Decay of Nucleus): 1
+(电磁相互作用, Electromagnetic interaction): 23
+(衰变, Decay): 32
+(作用时间, Interaction Time): 10
+(中子, Neutron): 91
+(强相互作用, Strong interaction): 28
+(四种相互作用, Four Fundamental Interactions): 5
+(强度比强相互作用要弱, Weaker than Strong Interaction): 1

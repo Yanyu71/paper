@@ -1,0 +1,23 @@
+﻿[{
+"knowledge_points": [
+   {"title": "位移", "en": "Displacement"},
+   {"title": "路程", "en": "Distance"},
+   {"title": "位矢", "en": "Position vector"},
+   {"title": "直线距离", "en": "Straight line distance"},
+   {"title": "正交分量", "en": "Orthogonal components"},
+   {"title": "坐标轴", "en": "Coordinate axis"},
+   {"title": "分矢量", "en": "Component vector"},
+   {"title": "一维运动", "en": "One-dimensional motion"},
+   {"title": "正负号", "en": "Positive and negative sign"},
+   {"title": "路径", "en": "Path"},
+   {"title": "矢量", "en": "Vector"},
+   {"title": "标量", "en": "Scalar"},
+   {"title": "弦长", "en": "Chord length"},
+   {"title": "曲线弧长", "en": "Arc length"},
+   {"title": "极限情况", "en": "Limiting case"},
+   {"title": "近似相等", "en": "Approximately equal"},
+   {"title": "增量", "en": "Increment"},
+   {"title": "匀速圆周运动", "en": "Uniform circular motion"},
+   {"title": "周期", "en": "Period"}
+]
+}]

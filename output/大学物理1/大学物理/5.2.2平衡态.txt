@@ -1,0 +1,19 @@
+﻿[{
+"knowledge_points": [
+   {"title": "平衡态", "en": "Equilibrium state"},
+   {"title": "非平衡态", "en": "Non-equilibrium state"},
+   {"title": "封闭容器", "en": "Closed container"},
+   {"title": "隔板", "en": "Partition"},
+   {"title": "气体", "en": "Gas"},
+   {"title": "自由膨胀过程", "en": "Free expansion process"},
+   {"title": "压强", "en": "Pressure"},
+   {"title": "分子数密度", "en": "Molecular number density"},
+   {"title": "宏观性质", "en": "Macroscopic properties"},
+   {"title": "稳定状态", "en": "Stable state"},
+   {"title": "外界影响", "en": "External influence"},
+   {"title": "能量交换", "en": "Energy exchange"},
+   {"title": "物质交换", "en": "Material exchange"},
+   {"title": "理想状态", "en": "Ideal state"},
+   {"title": "热动平衡", "en": "Thermal equilibrium"}
+]
+}]

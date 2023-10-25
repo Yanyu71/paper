@@ -1,0 +1,20 @@
+(会聚透镜, Converging lens): 1
+(光学仪器, Optical instrument): 1
+(发散透镜, Diverging lens): 1
+(光轴, Optical axis): 2
+(小孔光栏, Pinhole aperture): 1
+(平凸透镜, Plano-convex lens): 0
+(双凸透镜, Biconvex lens): 1
+(曲率半径, Radius of curvature): 3
+(球面像差, Spherical aberration): 5
+(像点, Image point): 3
+(薄透镜, Thin lens): 3
+(球差, Spherical aberration): 4
+(傍轴近似条件, Paraxial approximation condition): 2
+(平凹透镜, Plano-concave lens): 0
+(光源, Light source): 3
+(表面不对称, Surface asymmetry): 1
+(配曲法, Curvature matching method): 1
+(屏幕, Screen): 1
+(折射率, Refractive index): 0
+(光斑, Light spot): 2

@@ -1,0 +1,60 @@
+(能量转化, energy conversion): 5
+(热量, heat): 192
+(摩尔热容与温度关系, relationship between molar heat capacity and temperature): 0
+(体积变化, Volume Change): 3
+(热运动, Thermal motion): 87
+(作功, Work): 144
+(热力学系统, Thermodynamic System): 22
+(内燃机, Internal combustion engine): 10
+(功, Work): 633
+(热量, Heat): 192
+(外界, External environment): 113
+(态, State): 840
+(气体, Gas): 562
+(理想气体, ideal gas): 176
+(体积, Volume): 169
+(体积, volume): 169
+(位移, Displacement): 214
+(功, work): 633
+(定体摩尔热容, constant volume molar heat capacity): 6
+(温度变化, temperature change): 6
+(内能, Internal energy): 119
+(系统, system): 570
+(过程量, process quantity): 10
+(外界, surroundings): 113
+(能量传递, energy transfer): 2
+(等体过程, isochoric process): 25
+(内能增量, Change in Internal Energy): 4
+(压强, pressure): 132
+(定压摩尔热容, constant pressure molar heat capacity): 8
+(体积功, Volume work): 3
+(放热, heat release): 16
+(能量交换, energy exchange): 2
+(机械能, Mechanical Energy): 69
+(系统, System): 570
+(温度, Temperature): 370
+(准静态过程, Quasi-static Process): 29
+(P-F图, P-V diagram): 1
+(外界对系统作功, Work Done by the Surroundings on the System): 4
+(吸热, heat absorption): 30
+(压强, Pressure): 132
+(机械能, Mechanical energy): 69
+(传热, Heat Transfer): 8
+(热运动状态, Thermal Motion State): 4
+(活塞, Piston): 25
+(体积功, volume work): 3
+(摩尔热容, molar heat capacity): 47
+(准静态过程, Quasi-static process): 29
+(关系式, relationship equation): 40
+(准静态过程, quasi-static process): 29
+(状态函数, State Function): 3
+(比热, specific heat): 17
+(过程量, Process quantity): 10
+(蒸汽机, Steam engine): 2
+(总功, Total work): 19
+(温度, temperature): 370
+(内能, Internal Energy): 119
+(状态函数, state function): 3
+(等压过程, isobaric process): 21
+(理想气体, Ideal Gas): 176
+(气缸, Cylinder): 14

@@ -1,0 +1,83 @@
+﻿[{
+"knowledge_points": [
+   {"title": "薄膜的等厚干涉", "en": "Interference of Thin Films"},
+   {"title": "平行光", "en": "Parallel light"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "透明薄膜", "en": "Transparent film"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "干涉条纹", "en": "Interference fringes"},
+   {"title": "膜厚度分布", "en": "Thickness distribution of the film"},
+   {"title": "劈尖膜", "en": "Wedge film"},
+   {"title": "劈尖干涉", "en": "Wedge interference"}
+]
+},{
+"knowledge_points": [
+   {"title": "等厚干涉", "en": "Equal thickness interference"},
+   {"title": "等厚干涉条件", "en": "Conditions for equal thickness interference"},
+   {"title": "明条纹", "en": "Bright fringes"},
+   {"title": "暗条纹", "en": "Dark fringes"},
+   {"title": "空气层厚度", "en": "Thickness of air layer"},
+   {"title": "棱边", "en": "Edge"},
+   {"title": "半波损失", "en": "Half-wave loss"},
+   {"title": "相邻明条纹", "en": "Adjacent bright fringes"},
+   {"title": "膜层厚度差", "en": "Difference in film thickness"},
+   {"title": "干涉条纹间距", "en": "Interference fringe spacing"},
+   {"title": "劈尖夹角", "en": "Wedge angle"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "微小角度测量", "en": "Measurement of small angles"},
+   {"title": "介质的折射率", "en": "Refractive index of the medium"},
+   {"title": "级数", "en": "Order"},
+   {"title": "细金属丝的直径", "en": "Diameter of the thin metal wire"}
+]
+},{
+"knowledge_points": [
+   {"title": "等厚干涉方法", "en": "Equal thickness interference method"},
+   {"title": "光学干涉", "en": "Optical interference"},
+   {"title": "线膨胀系数", "en": "Linear expansion coefficient"},
+   {"title": "石英圆环", "en": "Quartz ring"},
+   {"title": "劈尖空气层厚度", "en": "Thickness of air wedge"},
+   {"title": "膨胀系数定义", "en": "Definition of expansion coefficient"},
+   {"title": "劈尖干涉", "en": "Wedge interference"},
+   {"title": "块规", "en": "Gauge block"},
+   {"title": "工件表面纹路", "en": "Surface pattern of workpiece"},
+   {"title": "整度", "en": "Flatness"},
+   {"title": "微小缺陷", "en": "Minor defect"},
+   {"title": "精度", "en": "Accuracy"}
+]
+},{
+"knowledge_points": [
+   {"title": "等厚干涉", "en": "Equal thickness interference", "type": "", "description": ""},
+   {"title": "牛顿环", "en": "Newton's rings", "type": "", "description": ""},
+   {"title": "干涉条纹", "en": "Interference fringes", "type": "", "description": ""},
+   {"title": "空气层厚度", "en": "Thickness of air layer", "type": "", "description": ""},
+   {"title": "波长", "en": "Wavelength", "type": "", "description": ""},
+   {"title": "曲率半径", "en": "Radius of curvature", "type": "", "description": ""},
+   {"title": "光程差", "en": "Optical path difference", "type": "", "description": ""},
+   {"title": "明纹条件", "en": "Bright fringe condition", "type": "", "description": ""},
+   {"title": "暗纹条件", "en": "Dark fringe condition", "type": "", "description": ""},
+   {"title": "明纹半径公式", "en": "Formula for bright fringe radius", "type": "", "description": ""},
+   {"title": "暗纹半径公式", "en": "Formula for dark fringe radius", "type": "", "description": ""},
+   {"title": "级差", "en": "Order difference", "type": "", "description": ""},
+   {"title": "光学元件", "en": "Optical element", "type": "", "description": ""},
+   {"title": "加工", "en": "Processing", "type": "", "description": ""}
+]
+},{
+"knowledge_points": [
+   {"title": "待检透镜", "en": "Lens under test"},
+   {"title": "零级暗纹", "en": "Zero-order dark fringe"},
+   {"title": "等厚干涉", "en": "Equal thickness interference"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "牛顿环", "en": "Newton's rings"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "直径", "en": "Diameter"},
+   {"title": "测量", "en": "Measurement"},
+   {"title": "显微镜", "en": "Microscope"},
+   {"title": "公式", "en": "Formula"},
+   {"title": "级次", "en": "Order"},
+   {"title": "差", "en": "Difference"},
+   {"title": "接触", "en": "Contact"},
+   {"title": "干涉条纹", "en": "Interference fringes"},
+   {"title": "误差", "en": "Error"},
+   {"title": "精度", "en": "Accuracy"}
+]
+}]

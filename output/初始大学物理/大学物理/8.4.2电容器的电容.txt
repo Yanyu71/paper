@@ -1,0 +1,72 @@
+﻿{
+"knowledge_points": [
+   {"title": "电容器", "en": "Capacitor"},
+   {"title": "电容", "en": "Capacitance"},
+   {"title": "极板", "en": "Plate"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电力系统", "en": "Power system"},
+   {"title": "功率因素", "en": "Power factor"},
+   {"title": "电子电路", "en": "Electronic circuit"},
+   {"title": "平行板电容器", "en": "Parallel plate capacitor"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电容率", "en": "Relative permittivity"},
+   {"title": "电容测厚仪", "en": "Capacitance thickness gauge"},
+   {"title": "球形电容器", "en": "Spherical capacitor"},
+   {"title": "同心球壳", "en": "Concentric spheres"}
+]
+}{
+"knowledge_points": [
+   {"title": "平行板电容器", "en": "Parallel plate capacitor"},
+   {"title": "电容", "en": "Capacitance"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "同轴电缆", "en": "Coaxial cable"},
+   {"title": "高斯定理", "en": "Gauss's law"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "电荷线密度", "en": "Line charge density"},
+   {"title": "导线", "en": "Conductor"},
+   {"title": "电源", "en": "Power supply"}
+]
+}{
+"knowledge_points": [
+   {"title": "电容器", "en": "Capacitor"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "电容", "en": "Capacitance"},
+   {"title": "分布电容", "en": "Distributed capacitance"},
+   {"title": "击穿电场强度", "en": "Breakdown electric field strength"}
+]
+}{
+"knowledge_points": [
+   {"title": "电容器", "en": "Capacitor"},
+   {"title": "电容", "en": "Capacitance"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "平行板电容器", "en": "Parallel plate capacitor"},
+   {"title": "导体板", "en": "Conductor plate"},
+   {"title": "电介质", "en": "Dielectric"},
+   {"title": "极板面积", "en": "Plate area"},
+   {"title": "两板间距", "en": "Distance between plates"},
+   {"title": "电场能量", "en": "Electric field energy"},
+   {"title": "静电场", "en": "Static electric field"},
+   {"title": "静电力", "en": "Static electric force"},
+   {"title": "功", "en": "Work"},
+   {"title": "电荷", "en": "Charge"},
+   {"title": "电势差", "en": "Potential difference"},
+   {"title": "电场强度", "en": "Electric field strength"},
+   {"title": "电场能量密度", "en": "Electric field energy density"}
+]
+}{
+"knowledge_points": [
+   {"title": "电场能量", "en": "Electric field energy"},
+   {"title": "能量密度", "en": "Energy density"},
+   {"title": "静电能", "en": "Static electric energy"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电荷", "en": "Electric charge"},
+   {"title": "电磁场", "en": "Electromagnetic field"},
+   {"title": "电磁波", "en": "Electromagnetic wave"},
+   {"title": "磁场", "en": "Magnetic field"},
+   {"title": "球对称性", "en": "Spherical symmetry"},
+   {"title": "电子半径", "en": "Electron radius"}
+]
+}

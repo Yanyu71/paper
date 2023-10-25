@@ -1,0 +1,16 @@
+(吸收, Absorption): 1
+(温度, Temperature): 10
+(辐射能量, Radiation energy): 0
+(内能, Internal energy): 2
+(金属, Metal): 1
+(可见光, Visible light): 1
+(电炉, Electric furnace): 2
+(单位时间, Unit time): 3
+(表面状况, Surface condition): 1
+(辐出度, Radiance): 4
+(白炽灯, Incandescent lamp): 1
+(电磁波, Electromagnetic waves): 3
+(单位表面积, Unit surface area): 1
+(波长, Wavelength): 3
+(材料, Material): 1
+(热辐射现象, Thermal radiation phenomenon): 1

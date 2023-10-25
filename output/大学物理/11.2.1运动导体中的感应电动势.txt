@@ -1,0 +1,87 @@
+﻿{
+"knowledge_points": [
+   {"title": "感应电动势", "en": "Induced electromotive force"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "回路", "en": "Circuit"},
+   {"title": "磁感应强度", "en": "Magnetic induction intensity"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "长度", "en": "Length"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "垂直", "en": "Perpendicular"},
+   {"title": "动生电动势", "en": "Induced electromotive force"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "洛伦兹力", "en": "Lorentz force"},
+   {"title": "非静电场强", "en": "Non-electrostatic field strength"},
+   {"title": "闭合导体回路", "en": "Closed conductor loop"},
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "稳恒", "en": "Steady"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "补偿法", "en": "Compensation method"},
+   {"title": "积分求解", "en": "Integral solution"}
+]
+}{
+"knowledge_points": [
+   {"title": "电磁感应", "en": "Electromagnetic Induction"},
+   {"title": "动生电动势", "en": "Induced electromotive force"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "补偿法", "en": "Compensation method"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "圆盘发电机", "en": "Disk generator"},
+   {"title": "电势差", "en": "Potential difference"}
+]
+}{
+"knowledge_points": [
+   {"title": "感应电动势", "en": "Induced electromotive force"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "回路", "en": "Circuit"},
+   {"title": "磁感应强度", "en": "Magnetic induction intensity"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "长度", "en": "Length"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "垂直", "en": "Perpendicular"},
+   {"title": "动生电动势", "en": "Induced electromotive force"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "定律", "en": "Law"},
+   {"title": "电源", "en": "Power source"},
+   {"title": "自由电子", "en": "Free electrons"},
+   {"title": "洛伦兹力", "en": "Lorentz force"},
+   {"title": "非静电场强", "en": "Non-electrostatic field strength"},
+   {"title": "闭合导体回路", "en": "Closed conductor loop"},
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "稳恒", "en": "Steady"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "夹角", "en": "Angle"},
+   {"title": "补偿法", "en": "Compensation method"},
+   {"title": "积分", "en": "Integration"}
+]
+}{
+"knowledge_points": [
+   {"title": "电磁感应", "en": "Electromagnetic Induction"},
+   {"title": "动生电动势", "en": "Induced electromotive force"},
+   {"title": "方向", "en": "Direction"},
+   {"title": "补偿法", "en": "Compensation method"},
+   {"title": "导线", "en": "Wire"},
+   {"title": "匀强磁场", "en": "Uniform magnetic field"},
+   {"title": "法拉第电磁感应定律", "en": "Faraday's law of electromagnetic induction"},
+   {"title": "圆盘发电机", "en": "Disk generator"},
+   {"title": "电势差", "en": "Potential difference"}
+]
+}{
+"knowledge_points": [
+   {"title": "间的电势差", "en": "Potential difference between two points"},
+   {"title": "电势差公式", "en": "Formula for potential difference"},
+   {"title": "fi", "en": "fi"},
+   {"title": "尺", "en": "Length"},
+   {"title": "IAVI", "en": "IAVI"},
+   {"title": "圆盘发电机", "en": "Disk generator"},
+   {"title": "电动势", "en": "Electromotive force"},
+   {"title": "切割磁场线", "en": "Cutting magnetic field lines"},
+   {"title": "导线运动", "en": "Wire movement"},
+   {"title": "实际发电机", "en": "Actual generator"},
+   {"title": "基本元件", "en": "Basic components"},
+   {"title": "磁场中转动的线圈", "en": "Coil rotating in a magnetic field"}
+]
+}

@@ -1,0 +1,69 @@
+(球面波, spherical wave): 19
+(可见度, visibility): 15
+(干涉, interference): 487
+(距离, distance): 387
+(光源线度, light source width): 3
+(波程差, Optical path difference): 20
+(菲涅耳双面镜干涉实验, Fresnel double-sided mirror interference experiment): 2
+(杨氏双缝实验, Young's double-slit experiment): 4
+(明条纹, bright fringe): 51
+(夹角, angle): 111
+(镜像对称性, mirror symmetry): 1
+(干涉条纹, interference fringes): 122
+(反射镜, Reflecting mirror): 117
+(半波损失的条件, Conditions for half-wave loss): 0
+(光源, light source): 213
+(普通平板玻璃, Ordinary flat glass): 1
+(线光源, line source): 4
+(两镜交线, intersection of the two mirrors): 2
+(空间相干性, spatial coherence): 11
+(波长, wavelength): 470
+(湖面, Lake surface): 6
+(杨氏干涉实验, Young's interference experiment): 14
+(波前, wavefront): 32
+(菲涅耳双镜干涉实验, Fresnel biprism interference experiment): 1
+(干涉装置, interference device): 7
+(光波叠加图, superposition of light waves): 1
+(光源的极限宽度, limiting width of the light source): 1
+(明条纹和暗条纹, Bright fringes and dark fringes): 2
+(分波前干涉, Division of wavefront interference): 6
+(干涉条纹, Interference fringes): 122
+(点光源, point source): 37
+(相位差, phase difference): 116
+(双缝间隔, distance between the double slits): 1
+(屏, screen): 150
+(入射角, Incident angle): 32
+(相干光, coherent light): 58
+(天线, Antenna): 11
+(劳埃德镜, Lloyd's mirror): 7
+(光程差, optical path difference): 68
+(缝光源的长度限制, limitation on the length of the slit light source): 0
+(滤光片, filter): 4
+(干涉图样的可见度, Visibility of interference patterns): 0
+(地平线, Horizon): 1
+(光瀑笼, light slits): 1
+(半波损失, Half-wave loss): 28
+(相干光, Coherent light): 58
+(菲涅耳双面镜实验, Fresnel's double-sided mirror experiment): 1
+(波程差, path difference): 20
+(光程, optical path length): 91
+(相对位移, relative displacement): 1
+(干涉条纹的明亮度, brightness of interference fringes): 0
+(光束, Light beam): 38
+(缝光源的宽度限制, limitation on the width of the slit light source): 0
+(掠射角, Grazing angle): 4
+(虚光源, Virtual light source): 2
+(劳埃德镜实验, Lloyd's mirror experiment): 5
+(干涉明条纹, Interference fringes): 4
+(菲涅耳双面镜干涉, Fresnel double-mirror interference): 4
+(干涉条纹间距公式, Formula for interference fringe spacing): 1
+(屏幕, Screen): 93
+(反射镜, mirror): 117
+(干涉条纹的可见度, visibility of interference fringes): 2
+(湖岸, Lake shore): 7
+(杨氏干涉装置, Young's interference apparatus): 1
+(恒星, Star): 12
+(光波的空间相干性, Spatial coherence of light waves): 3
+(缝光源, slit light source): 10
+(缝光源与点光源, slit light source vs point light source): 1
+(波长, Wavelength): 470

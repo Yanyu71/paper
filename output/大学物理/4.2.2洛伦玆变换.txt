@@ -1,0 +1,104 @@
+﻿{
+"knowledge_points": [
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "时空的性质", "en": "Properties of spacetime"},
+   {"title": "坐标系的变换关系", "en": "Transformation relationship of coordinate systems"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "绝对时空观", "en": "Absolute spacetime view"},
+   {"title": "伽利略变换", "en": "Galilean transformation"},
+   {"title": "狭义相对论", "en": "Special theory of relativity"},
+   {"title": "基本假设", "en": "Basic assumptions"},
+   {"title": "洛伦兹变换的导出", "en": "Derivation of Lorentz transformation"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "间隔不变性", "en": "Invariance of interval"},
+   {"title": "相对性原理", "en": "Principle of relativity"},
+   {"title": "线性时空变换关系", "en": "Linear spacetime transformation relationship"},
+   {"title": "速率", "en": "Velocity"}
+]
+}{
+"knowledge_points": [
+   {"title": "洛伦兹时空坐标变换关系", "en": "Lorentz spacetime coordinate transformation"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "逆变换", "en": "Inverse transformation"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "相对运动速度", "en": "Relative velocity"},
+   {"title": "时间坐标", "en": "Time coordinate"},
+   {"title": "空间坐标", "en": "Spatial coordinate"},
+   {"title": "时空坐标", "en": "Spacetime coordinate"},
+   {"title": "绝对时间概念", "en": "Absolute time concept"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "狭义相对论", "en": "Special theory of relativity"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "迈克尔逊-莫雷实验", "en": "Michelson-Morley experiment"},
+   {"title": "长度缩短", "en": "Length contraction"},
+   {"title": "洛伦兹", "en": "Lorentz"},
+   {"title": "爱因斯坦", "en": "Einstein"},
+   {"title": "相对性原理", "en": "Principle of relativity"},
+   {"title": "伽利略相对性原理", "en": "Galilean principle of relativity"}
+]
+}{
+"knowledge_points": [
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "时空的性质", "en": "Properties of spacetime"},
+   {"title": "坐标系的变换关系", "en": "Transformation relationship of coordinate systems"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "绝对时空观", "en": "Absolute spacetime view"},
+   {"title": "伽利略变换", "en": "Galilean transformation"},
+   {"title": "狭义相对论", "en": "Special theory of relativity"},
+   {"title": "基本假设", "en": "Basic assumptions"},
+   {"title": "洛伦兹变换的导出", "en": "Derivation of Lorentz transformation"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "光速不变原理", "en": "Principle of the constancy of the speed of light"},
+   {"title": "间隔不变性", "en": "Invariance of interval"},
+   {"title": "相对性原理", "en": "Principle of relativity"},
+   {"title": "线性时空变换关系", "en": "Linear spacetime transformation relationship"},
+   {"title": "速率", "en": "Velocity"}
+]
+}{
+"knowledge_points": [
+   {"title": "洛伦兹时空坐标变换关系", "en": "Lorentz spacetime coordinate transformation"},
+   {"title": "洛伦兹变换", "en": "Lorentz transformation"},
+   {"title": "逆变换", "en": "Inverse transformation"},
+   {"title": "惯性系", "en": "Inertial frame"},
+   {"title": "相对运动速度", "en": "Relative velocity"},
+   {"title": "时间坐标", "en": "Time coordinate"},
+   {"title": "空间坐标", "en": "Spatial coordinate"},
+   {"title": "时空坐标", "en": "Spacetime coordinate"},
+   {"title": "绝对时间概念", "en": "Absolute time concept"},
+   {"title": "光速", "en": "Speed of light"},
+   {"title": "狭义相对论", "en": "Special theory of relativity"},
+   {"title": "经典力学", "en": "Classical mechanics"},
+   {"title": "爱因斯坦", "en": "Albert Einstein"},
+   {"title": "洛伦兹", "en": "Hendrik Lorentz"},
+   {"title": "迈克尔逊-莫雷实验", "en": "Michelson-Morley experiment"},
+   {"title": "长度缩短", "en": "Length contraction"},
+   {"title": "运动相对性", "en": "Relativity of motion"},
+   {"title": "相对性原理", "en": "Principle of relativity"},
+   {"title": "伽利略相对性原理", "en": "Galilean principle of relativity"}
+]
+}{ 
+"knowledge_points": [
+   {"title": "人工智能", "en": "Artificial Intelligence"},
+   {"title": "机器学习", "en": "Machine Learning"},
+   {"title": "深度学习", "en": "Deep Learning"},
+   {"title": "数据分析", "en": "Data Analysis"},
+   {"title": "算法", "en": "Algorithm"},
+   {"title": "模型", "en": "Model"},
+   {"title": "神经网络", "en": "Neural Network"},
+   {"title": "训练", "en": "Training"},
+   {"title": "监督学习", "en": "Supervised Learning"},
+   {"title": "无监督学习", "en": "Unsupervised Learning"},
+   {"title": "强化学习", "en": "Reinforcement Learning"},
+   {"title": "数据预处理", "en": "Data Preprocessing"},
+   {"title": "特征提取", "en": "Feature Extraction"},
+   {"title": "模型评估", "en": "Model Evaluation"},
+   {"title": "分类", "en": "Classification"},
+   {"title": "回归", "en": "Regression"},
+   {"title": "聚类", "en": "Clustering"},
+   {"title": "自然语言处理", "en": "Natural Language Processing"},
+   {"title": "计算机视觉", "en": "Computer Vision"},
+   {"title": "推荐系统", "en": "Recommendation System"}
+], 
+
+}

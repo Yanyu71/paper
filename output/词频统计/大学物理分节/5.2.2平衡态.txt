@@ -1,0 +1,15 @@
+(封闭容器, Closed container): 1
+(热动平衡, Thermal equilibrium): 0
+(自由膨胀过程, Free expansion process): 1
+(理想状态, Ideal state): 1
+(稳定状态, Stable state): 1
+(物质交换, Material exchange): 1
+(能量交换, Energy exchange): 1
+(压强, Pressure): 1
+(宏观性质, Macroscopic properties): 4
+(外界影响, External influence): 4
+(气体, Gas): 5
+(分子数密度, Molecular number density): 1
+(平衡态, Equilibrium state): 6
+(非平衡态, Non-equilibrium state): 1
+(隔板, Partition): 2

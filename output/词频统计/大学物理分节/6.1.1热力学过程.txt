@@ -1,0 +1,19 @@
+(非静态过程, Non-static process): 1
+(时间变化, Time variation): 0
+(分类, Classification): 4
+(弛豫时间, Relaxation time): 3
+(非自发过程, Non-spontaneous process): 1
+(等压过程, Isobaric process): 1
+(独立参量, Independent variables): 1
+(绝热过程, Adiabatic process): 1
+(系统, System): 6
+(中间态, Intermediate state): 1
+(热力学过程, Thermodynamic process): 6
+(自发过程, Spontaneous process): 2
+(P-v图, P-v diagram): 0
+(状态, State): 9
+(准静态过程, Quasi-static process): 10
+(平衡状态, Equilibrium state): 4
+(可逆过程, Reversible process): 3
+(等温过程, Isothermal process): 1
+(等体过程, Isochoric process): 1

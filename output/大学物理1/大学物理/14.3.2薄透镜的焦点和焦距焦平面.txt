@@ -1,0 +1,43 @@
+﻿[{
+"knowledge_points": [
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "焦点", "en": "Focus"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "焦平面", "en": "Focal plane"},
+   {"title": "会聚透镜", "en": "Converging lens"},
+   {"title": "发散透镜", "en": "Diverging lens"},
+   {"title": "物像公式", "en": "Object-image formula"},
+   {"title": "放大率", "en": "Magnification"}
+]
+},{
+"knowledge_points": [
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "透镜成像", "en": "Lens imaging"},
+   {"title": "凸透镜", "en": "Convex lens"},
+   {"title": "凹透镜", "en": "Concave lens"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "正立", "en": "Upright"},
+   {"title": "倒立", "en": "Inverted"},
+   {"title": "缩小", "en": "Reduced"},
+   {"title": "放大", "en": "Enlarged"}
+]
+},{
+"knowledge_points": [
+   {"title": "双凹薄透镜", "en": "Double concave lens"},
+   {"title": "焦距", "en": "Focal length"},
+   {"title": "发散透镜", "en": "Diverging lens"},
+   {"title": "会聚透镜", "en": "Converging lens"},
+   {"title": "像", "en": "Image"},
+   {"title": "放大率", "en": "Magnification"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "实像", "en": "Real image"},
+   {"title": "虚像", "en": "Virtual image"},
+   {"title": "共轴薄透镜组成像问题", "en": "Image formation problem with coaxial thin lenses"},
+   {"title": "符号规则", "en": "Sign convention"},
+   {"title": "逐次成像法", "en": "Successive imaging method"}
+]
+}]

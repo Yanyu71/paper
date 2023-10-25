@@ -1,0 +1,13 @@
+﻿{
+"knowledge_points": [
+   {"title": "统计规律", "en": "Statistical Law"},
+   {"title": "伽尔顿板实验", "en": "Galton Board Experiment"},
+   {"title": "小球", "en": "Ball"},
+   {"title": "铁钉", "en": "Nail"},
+   {"title": "槽", "en": "Slot"},
+   {"title": "偶然事件", "en": "Random Event"},
+   {"title": "随机事件", "en": "Random Event"},
+   {"title": "力学规律", "en": "Mechanical Law"},
+   {"title": "涨落", "en": "Fluctuation"}
+]
+}

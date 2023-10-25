@@ -1,0 +1,14 @@
+﻿[{
+"knowledge_points": [
+   {"title": "起偏", "en": "Polarization"},
+   {"title": "起偏器", "en": "Polarizer"},
+   {"title": "各向异性晶体", "en": "Anisotropic crystal"},
+   {"title": "二向色性", "en": "Birefringence"},
+   {"title": "偏振片", "en": "Polarizing film"},
+   {"title": "检偏器", "en": "Analyzer"},
+   {"title": "线偏振光", "en": "Linearly polarized light"},
+   {"title": "偏振化方向", "en": "Polarization direction"},
+   {"title": "光强", "en": "Intensity"},
+   {"title": "振动方向", "en": "Vibration direction"}
+]
+}]

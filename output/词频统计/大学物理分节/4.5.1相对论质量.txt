@@ -1,0 +1,26 @@
+(动量守恒定律, Law of conservation of momentum): 2
+(狭义相对论, Special relativity): 1
+(惯性系, Inertial frame): 6
+(静止质量, Rest mass): 5
+(长度, Length): 2
+(光速, Speed of light): 5
+(相对的物理量, Relative physical quantity): 0
+(相对论力学中物体惯性的量度, Measure of inertia in relativistic mechanics): 0
+(运动速率, Velocity): 3
+(真空管, Vacuum tube): 1
+(电子, Electron): 2
+(复合粒子, Composite particle): 2
+(电压, Voltage): 2
+(经典力学中质量的概念, Concept of mass in classical mechanics): 1
+(非弹性碰撞, Inelastic collision): 1
+(惯性, Inertia): 8
+(动能定理, Kinetic energy theorem): 1
+(质速关系, Mass-velocity relationship): 1
+(爱因斯坦的相对性原理, Einstein's principle of relativity): 1
+(质量守恒定律, Law of conservation of mass): 1
+(相对论质量, Relativistic mass): 4
+(经典力学, Classical mechanics): 3
+(质量, Mass): 27
+(光速是物体运动的极限速度, Speed of light is the limit speed of object motion): 1
+(洛伦兹速度变换公式, Lorentz velocity transformation formula): 1
+(时间, Time): 2

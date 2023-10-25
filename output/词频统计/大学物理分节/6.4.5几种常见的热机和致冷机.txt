@@ -1,0 +1,41 @@
+(致冷循环, Refrigeration cycle): 1
+(吸热, Heat absorption): 9
+(热力学第一定律, First law of thermodynamics): 4
+(奥托循环, Otto cycle): 3
+(蒸发器, Evaporator): 4
+(制冷剂, Refrigerant): 2
+(内燃机, Internal combustion engine): 3
+(热力学第二定律, Second law of thermodynamics): 2
+(热量, Heat): 14
+(p-V图, p-V diagram): 1
+(作功, Work done): 3
+(传热, Heat transfer): 0
+(毛细管, Capillary tube): 1
+(致冷系数, COP): 6
+(温差, Temperature difference): 1
+(能量守恒定律, Law of conservation of energy): 2
+(压缩式, Compression type): 1
+(空调器, Air conditioner): 8
+(等压过程, Isobaric process): 0
+(干燥器, Dryer): 1
+(氨气, Ammonia): 7
+(电冰箱, Electric refrigerator): 9
+(卡诺热机, Carnot engine): 1
+(功率, Power): 9
+(汽油机, Gasoline engine): 4
+(效率, Efficiency): 9
+(冷凝器, Condenser): 2
+(热泵, Heat pump): 8
+(循环, Cycle): 22
+(循环效率, Cycle efficiency): 2
+(电冰箱, Refrigerator): 9
+(工质, Working fluid): 3
+(热泵系数, Coefficient of performance): 1
+(氟里昂, Freon): 1
+(冷暖双制空调, Air conditioner for cooling and heating): 1
+(可逆过程, Reversible process): 0
+(卡诺致冷机, Carnot refrigerator): 2
+(等温过程, Isothermal process): 2
+(致冷系数, Coefficient of refrigeration): 6
+(放热, Heat release): 5
+(等体过程, Isochoric process): 0

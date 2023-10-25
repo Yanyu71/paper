@@ -1,0 +1,12 @@
+(线量, Linear quantity): 15
+(线速度, Linear velocity): 5
+(角量, Angular quantity): 35
+(切向加速度, Tangential acceleration): 29
+(角加速度, Angular acceleration): 77
+(角坐标, Angular coordinates): 51
+(匀变速圆周运动, Uniformly accelerated circular motion): 3
+(匀速圆周运动, Uniform circular motion): 9
+(弧长与圆心角的关系, Relationship between arc length and central angle): 1
+(圆周运动, Circular motion): 89
+(角速度, Angular velocity): 156
+(法向加速度, Normal acceleration): 37

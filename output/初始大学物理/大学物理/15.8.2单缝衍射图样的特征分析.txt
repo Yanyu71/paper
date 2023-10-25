@@ -1,0 +1,39 @@
+﻿{
+"knowledge_points": [
+   {"title": "菲涅耳半波带法", "en": "Fresnel half-period method"},
+   {"title": "衍射", "en": "Diffraction"},
+   {"title": "狭缝", "en": "Slit"},
+   {"title": "光程差", "en": "Optical path difference"},
+   {"title": "半波带", "en": "Half-period"},
+   {"title": "干涉相消", "en": "Interference cancellation"},
+   {"title": "明纹", "en": "Bright fringe"},
+   {"title": "暗纹", "en": "Dark fringe"},
+   {"title": "主极大条纹", "en": "Principal maximum fringe"},
+   {"title": "明纹宽度", "en": "Bright fringe width"},
+   {"title": "角宽度", "en": "Angular width"}
+]
+}{
+"knowledge_points": [
+   {"title": "中央明纹的角宽度", "en": "Central bright fringe width"},
+   {"title": "其它明纹角宽度", "en": "Other bright fringe width"},
+   {"title": "Ap", "en": "Ap"},
+   {"title": "衍射条纹大小", "en": "Diffraction fringe size"},
+   {"title": "衍射光场中波线取向弥散程度", "en": "Dispersion degree of wavefront orientation in diffraction field"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "缝宽a", "en": "Slit width"},
+   {"title": "光束的限制", "en": "Limitation of light beam"},
+   {"title": "衍射光场的弥散", "en": "Dispersion of diffraction field"},
+   {"title": "衍射条纹铺开的宽度", "en": "Width of diffraction fringes"},
+   {"title": "衍射斑", "en": "Diffraction spot"},
+   {"title": "几何光学", "en": "Geometrical optics"},
+   {"title": "波动光学", "en": "Wave optics"},
+   {"title": "半波带数", "en": "Half-wave zone number"},
+   {"title": "光强", "en": "Intensity of light"},
+   {"title": "明暗之间", "en": "Between bright and dark"},
+   {"title": "观测屏幕上光强的分布", "en": "Distribution of light intensity on the observation screen"},
+   {"title": "衍射角", "en": "Diffraction angle"},
+   {"title": "面积减小", "en": "Decrease in area"},
+   {"title": "明纹强度", "en": "Intensity of bright fringes"},
+   {"title": "单缝夫琅禾费衍射图样", "en": "Diffraction pattern of a single slit using white light"}
+]
+}

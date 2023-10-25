@@ -1,0 +1,35 @@
+(麦克斯韦电磁场理论的正确性, Correctness of Maxwell's electromagnetic field theory): 1
+(自感系数, Self-inductance coefficient): 26
+(长直载流同轴电缆, Long straight current coaxial cable): 1
+(体积分, Volume integration): 5
+(光速, Speed of light): 76
+(磁场能鼉密度, Magnetic field energy density): 1
+(磁场能量, Magnetic field energy): 20
+(电磁场理论, Electromagnetic field theory): 15
+(流, Current): 1030
+(线圈的自感, Self-inductance of a coil): 4
+(位移电流, Displacement current): 24
+(光的本质是电磁波, The nature of light is electromagnetic waves): 1
+(导线框, Wire loop): 4
+(磁导率, Magnetic permeability): 34
+(变化的磁场产生有旋电场, Changing magnetic field generates a curling electric field): 1
+(电键, Switch): 6
+(磁感应强度, Magnetic induction): 258
+(磁场能量密度, Magnetic field energy density): 1
+(各向同性均匀磁介质, Isotropic homogeneous magnetic medium): 4
+(充电电流, Charging current): 1
+(电势差, Potential difference): 88
+(串接, In series): 1
+(电容器, Capacitor): 142
+(平行板电容器, Parallel plate capacitor): 31
+(电磁波的存在, Existence of electromagnetic waves): 4
+(思考题11.34图, Exercise 11.34 Figure): 1
+(安培环路定理, Ampere's circuital law): 53
+(电场和磁场的重要性质和规律, Important properties and laws of electric and magnetic fields): 1
+(§11.6麦克斯韦电磁场理论简介, Introduction to Maxwell's electromagnetic field theory): 1
+(赫兹, Hertz): 4
+(感应电流, Induced current): 37
+(离导线200mm的一点处磁能密度, Magnetic energy density at a point 200mm away from the wire): 1
+(11.36, 11.36): 1
+(磁能密度, Magnetic energy density): 4
+(螺线管, Solenoid): 79

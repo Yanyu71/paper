@@ -1,0 +1,13 @@
+(中子磁矩, Neutron magnetic moment): 1
+(简介, Introduction): 23
+(质子磁矩, Proton magnetic moment): 1
+(核自旋量子数, Nuclear spin quantum number): 1
+(核内相互作用, Nuclear interactions): 0
+(核磁量子数, Nuclear magnetic quantum number): 1
+(g因子, g-factor): 2
+(第17章, Chapter 17): 10
+(核自旋, Nuclear spin): 11
+(核磁子, Nuclear magneton): 7
+(原子核, Atomic nucleus): 173
+(粒子物理, Particle physics): 41
+(核磁矩, Nuclear magnetic moment): 19

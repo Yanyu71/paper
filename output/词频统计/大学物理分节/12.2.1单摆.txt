@@ -1,0 +1,13 @@
+(摆动角度, Swing angle): 1
+(质点, Particle): 1
+(数学摆, Mathematical pendulum): 1
+(拉力, Tension): 1
+(单摆, Pendulum): 6
+(运动微分方程, Differential equation of motion): 2
+(椭圆函数, Elliptic function): 1
+(谐振动, Harmonic motion): 2
+(非线性微分方程, Nonlinear differential equation): 1
+(角频率, Angular frequency): 1
+(周期, Period): 1
+(轻绳, Light string): 1
+(重力, Gravity): 1

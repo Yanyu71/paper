@@ -1,0 +1,18 @@
+(洛伦兹力, Lorentz Force): 36
+(真空室, Vacuum Chamber): 6
+(磁感应强度, Magnetic Induction): 258
+(电子感应加速器, Electron Induction Accelerator): 8
+(切向力, Tangential Force): 2
+(柱形电磁铁, Cylindrical Electromagnet): 2
+(交变场, Alternating Field): 1
+(交变电流, Alternating Current): 4
+(旋电场, Rotating Electric Field): 28
+(有旋电场, Rotating Electric Field): 27
+(电子圆形轨道, Electron Circular Orbit): 2
+(交变磁场, Alternating Magnetic Field): 5
+(动量, Momentum): 476
+(空隙, Gap): 1
+(周期, Period): 196
+(磁通量, Magnetic Flux): 71
+(能量, Energy): 637
+(电子枪, Electron Gun): 2

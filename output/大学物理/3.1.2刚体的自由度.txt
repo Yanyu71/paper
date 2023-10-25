@@ -1,0 +1,27 @@
+﻿{
+"knowledge_points": [
+   {"title": "自由度的概念", "en": "Concept of degrees of freedom"},
+   {"title": "质点的自由度", "en": "Degrees of freedom of a particle"},
+   {"title": "平面或曲面上运动的质点", "en": "Particle moving on a plane or curved surface"},
+   {"title": "直线或曲线上运动的质点", "en": "Particle moving on a straight line or curve"},
+   {"title": "飞机在空中的运动", "en": "Movement of an airplane in the air"},
+   {"title": "轮船在水面上的运动", "en": "Movement of a ship on the water surface"},
+   {"title": "火车沿路轨的运动", "en": "Movement of a train along the railway track"},
+   {"title": "刚体的自由度", "en": "Degrees of freedom of a rigid body"},
+   {"title": "刚体的运动形态", "en": "Motion forms of a rigid body"},
+   {"title": "平动和转动", "en": "Translation and rotation"},
+   {"title": "独立坐标", "en": "Independent coordinates"},
+   {"title": "质心", "en": "Center of mass"},
+   {"title": "瞬时轴", "en": "Instantaneous axis"},
+   {"title": "方向角", "en": "Direction angles"},
+   {"title": "角坐标", "en": "Angular coordinates"},
+   {"title": "约束和限制", "en": "Constraints and limitations"},
+   {"title": "沿直线滚动的车轮", "en": "Wheel rolling along a straight line"},
+   {"title": "定轴转动的刚体", "en": "Rigid body rotating about a fixed axis"},
+   {"title": "力学中的应用", "en": "Applications in mechanics"},
+   {"title": "固体物理中的应用", "en": "Applications in solid physics"},
+   {"title": "分子物理中的应用", "en": "Applications in molecular physics"},
+   {"title": "工程技术学科中的应用", "en": "Applications in engineering disciplines"},
+   {"title": "刚体定轴转动的运动学规律", "en": "Kinematic laws of rigid body rotation about a fixed axis"}
+]
+}

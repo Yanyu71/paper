@@ -1,0 +1,17 @@
+﻿[{
+"knowledge_points": [
+   {"title": "质点系的动置定理", "en": "Principle of motion of particle system"},
+   {"title": "质点系", "en": "Particle system"},
+   {"title": "动量", "en": "Momentum"},
+   {"title": "动量定理", "en": "Principle of momentum"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "质量", "en": "Mass"},
+   {"title": "外力", "en": "External force"},
+   {"title": "内力", "en": "Internal force"},
+   {"title": "相互作用", "en": "Interaction"},
+   {"title": "牛顿第三定律", "en": "Newton's third law"},
+   {"title": "动能定理", "en": "Principle of kinetic energy"},
+   {"title": "冲量", "en": "Impulse"},
+   {"title": "功", "en": "Work"}
+]
+}]

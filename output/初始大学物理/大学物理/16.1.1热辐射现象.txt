@@ -1,0 +1,20 @@
+﻿{
+"knowledge_points": [
+   {"title": "热辐射现象", "en": "Thermal radiation phenomenon"},
+   {"title": "电磁波", "en": "Electromagnetic waves"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "辐射能量", "en": "Radiation energy"},
+   {"title": "辐出度", "en": "Radiance"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "金属", "en": "Metal"},
+   {"title": "可见光", "en": "Visible light"},
+   {"title": "电炉", "en": "Electric furnace"},
+   {"title": "白炽灯", "en": "Incandescent lamp"},
+   {"title": "吸收", "en": "Absorption"},
+   {"title": "内能", "en": "Internal energy"},
+   {"title": "材料", "en": "Material"},
+   {"title": "表面状况", "en": "Surface condition"},
+   {"title": "单位时间", "en": "Unit time"},
+   {"title": "单位表面积", "en": "Unit surface area"}
+]
+}

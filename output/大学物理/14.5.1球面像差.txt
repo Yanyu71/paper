@@ -1,0 +1,24 @@
+﻿{
+"knowledge_points": [
+   {"title": "球面像差", "en": "Spherical aberration"},
+   {"title": "傍轴近似条件", "en": "Paraxial approximation condition"},
+   {"title": "薄透镜", "en": "Thin lens"},
+   {"title": "光轴", "en": "Optical axis"},
+   {"title": "光源", "en": "Light source"},
+   {"title": "像点", "en": "Image point"},
+   {"title": "会聚透镜", "en": "Converging lens"},
+   {"title": "发散透镜", "en": "Diverging lens"},
+   {"title": "屏幕", "en": "Screen"},
+   {"title": "光斑", "en": "Light spot"},
+   {"title": "球差", "en": "Spherical aberration"},
+   {"title": "曲率半径", "en": "Radius of curvature"},
+   {"title": "折射率", "en": "Refractive index"},
+   {"title": "表面不对称", "en": "Surface asymmetry"},
+   {"title": "小孔光栏", "en": "Pinhole aperture"},
+   {"title": "配曲法", "en": "Curvature matching method"},
+   {"title": "双凸透镜", "en": "Biconvex lens"},
+   {"title": "平凸透镜", "en": "Plano-convex lens"},
+   {"title": "平凹透镜", "en": "Plano-concave lens"},
+   {"title": "光学仪器", "en": "Optical instrument"}
+]
+}

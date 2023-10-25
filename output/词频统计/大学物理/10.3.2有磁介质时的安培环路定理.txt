@@ -1,0 +1,39 @@
+(安培环路定理, Ampere's Circuital Law): 53
+(地面, Ground): 132
+(长直同轴电缆, Long straight coaxial cable): 1
+(磁南极, Magnetic south pole): 1
+(磁场强度, Magnetic Field Strength): 29
+(磁介质样品, Magnetic medium sample): 1
+(外导体, Outer conductor): 5
+(恒定磁场, Steady Magnetic Field): 7
+(试管, Test tube): 1
+(地球, Earth): 236
+(弹簧, Spring): 224
+(磁偶极子, Magnetic dipole): 7
+(抗磁质, Diamagnetic material): 15
+(积分路径, Integration path): 17
+(顺磁质, Paramagnetic material): 23
+(磁导率近似取为, Approximation of permeability): 1
+(磁北极, Magnetic north pole): 1
+(磁化电流面密度, Magnetization Current Density): 1
+(磁路设计, Magnetic circuit design): 1
+(磁场强度, Magnetic field strength): 29
+(磁感应强度, Magnetic induction): 258
+(磁导率, Permeability): 34
+(传导电流, Conduction current): 41
+(各向同性均匀磁介质, Isotropic homogeneous magnetic medium): 4
+(磁化电流, Magnetization Current): 12
+(磁场线, Magnetic field lines): 44
+(传导电流, Conduction Current): 41
+(磁介质, Magnetic Material): 75
+(磁感应强度, Magnetic Induction): 258
+(闭合回路, Closed Loop): 26
+(内芯, Inner core): 6
+(安培环路定理, Ampere's circuital law): 53
+(铁磁质, Ferromagnetic material): 51
+(对称性, Symmetry): 63
+(磁场分布, Magnetic field distribution): 8
+(磁场力, Magnetic force): 20
+(磁介质, Magnetic medium): 75
+(磁化电流, Magnetization current): 12
+(螺线管, Solenoid): 79

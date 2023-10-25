@@ -1,0 +1,27 @@
+﻿{
+"knowledge_points": [
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "物质波", "en": "matter wave"},
+   {"title": "薛定谔方程", "en": "Schrödinger equation"},
+   {"title": "波函数的统计解释", "en": "Statistical interpretation of wave function"},
+   {"title": "概率波", "en": "probability wave"},
+   {"title": "双缝干涉实验", "en": "double-slit interference experiment"},
+   {"title": "粒子性与波动性的统一", "en": "unity of particle nature and wave nature"}
+]
+}{
+"knowledge_points": [
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "物理意义", "en": "Physical meaning"},
+   {"title": "条件", "en": "Conditions"},
+   {"title": "概率分布", "en": "Probability distribution"},
+   {"title": "连续变化", "en": "Continuous variation"},
+   {"title": "物理意义", "en": "Physical meaning"},
+   {"title": "概率总和", "en": "Sum of probabilities"},
+   {"title": "叠加原理", "en": "Superposition principle"},
+   {"title": "态叠加原理", "en": "Principle of superposition of states"},
+   {"title": "波函数叠加", "en": "Superposition of wave functions"},
+   {"title": "概率密度", "en": "Probability density"},
+   {"title": "干涉项", "en": "Interference term"},
+   {"title": "双缝衍射", "en": "Double-slit diffraction"}
+]
+}

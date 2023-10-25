@@ -1,0 +1,61 @@
+﻿{
+"knowledge_points": [
+   {"title": "克劳修斯熵公式", "en": "Clausius entropy formula"},
+   {"title": "玻耳兹曼熵公式", "en": "Boltzmann entropy formula"},
+   {"title": "态函数熵", "en": "State function entropy"},
+   {"title": "微观角度", "en": "Microscopic perspective"},
+   {"title": "宏观角度", "en": "Macroscopic perspective"},
+   {"title": "理想气体的自由膨胀", "en": "Free expansion of ideal gas"},
+   {"title": "绝热容器", "en": "Adiabatic container"},
+   {"title": "孤立系统", "en": "Isolated system"},
+   {"title": "体积", "en": "Volume"},
+   {"title": "温度", "en": "Temperature"},
+   {"title": "微观状态数目", "en": "Number of microscopic states"},
+   {"title": "熵变", "en": "Change in entropy"},
+   {"title": "体积膨胀", "en": "Volume expansion"},
+   {"title": "熵增加原理", "en": "Principle of entropy increase"},
+   {"title": "可逆等温过程", "en": "Reversible isothermal process"},
+   {"title": "吸收的热量", "en": "Absorbed heat"},
+   {"title": "无限小可逆过程", "en": "Infinitesimal reversible process"},
+   {"title": "熵的元增量", "en": "Elemental increment of entropy"}
+]
+}{
+"knowledge_points": [
+   {"title": "温度", "en": "Temperature"},
+   {"title": "热温比", "en": "Heat temperature ratio"},
+   {"title": "无限小的可逆过程", "en": "Infinitesimal reversible process"},
+   {"title": "系统熵的增量", "en": "Increment of system entropy"},
+   {"title": "平衡态", "en": "Equilibrium state"},
+   {"title": "可逆过程", "en": "Reversible process"},
+   {"title": "熵的增量", "en": "Increment of entropy"},
+   {"title": "克劳修斯熵公式", "en": "Clausius entropy formula"},
+   {"title": "熵变", "en": "Change in entropy"},
+   {"title": "熵增原理", "en": "Principle of entropy increase"},
+   {"title": "单热源热机", "en": "Single heat source heat engine"},
+   {"title": "绝热系统", "en": "Adiabatic system"},
+   {"title": "热机的工作物质", "en": "Working substance of the heat engine"},
+   {"title": "热源", "en": "Heat source"},
+   {"title": "熵不变", "en": "Constant entropy"},
+   {"title": "炉子", "en": "Furnace"},
+   {"title": "比热", "en": "Specific heat"},
+   {"title": "熵变AS水", "en": "Change in entropy of water"},
+   {"title": "熵变AS炉", "en": "Change in entropy of furnace"}
+]
+}{
+"knowledge_points": [
+   {"title": "熵增加原理", "en": "Principle of entropy increase", "type": "is_a", "description": "系统的总熵变大于零,符合熵增加原理"},
+   {"title": "热力学系统的微观态", "en": "Microstate of a thermodynamic system", "type": "is_a", "description": "热力学系统的微观态是指系统中每个微观粒子的具体状态"},
+   {"title": "热力学系统的宏观态", "en": "Macrostate of a thermodynamic system", "type": "is_a", "description": "热力学系统的宏观态是指系统的整体性质，如温度、压力等"},
+   {"title": "微观态与宏观态的对应关系", "en": "Correspondence between microstate and macrostate", "type": "is_a", "description": "一种宏观态可以对应多种微观态"},
+   {"title": "热力学第一定律", "en": "First law of thermodynamics", "type": "is_a", "description": "能量守恒定律，能量可以转化形式，但总能量不变"},
+   {"title": "功", "en": "Work", "type": "is_a", "description": "系统对外界做的能量转化"},
+   {"title": "热量", "en": "Heat", "type": "is_a", "description": "能量的传递方式，由高温物体传递给低温物体"},
+   {"title": "内能", "en": "Internal energy", "type": "is_a", "description": "系统的总能量，包括微观粒子的动能和势能"},
+   {"title": "摩尔热容", "en": "Molar heat capacity", "type": "is_a", "description": "单位摩尔物质在温度变化下吸收或释放的热量"},
+   {"title": "循环过程", "en": "Cycle process", "type": "is_a", "description": "系统经历一系列状态变化后回到初始状态的过程"},
+   {"title": "热机效率", "en": "Thermal efficiency", "type": "is_a", "description": "热机输出功与输入热量之比"},
+   {"title": "致冷系数", "en": "Coefficient of performance", "type": "is_a", "description": "制冷机输出制冷量与输入功之比"},
+   {"title": "热力学第二定律", "en": "Second law of thermodynamics", "type": "is_a", "description": "自然界中存在不可逆过程，热量不会自发从低温物体传递到高温物体"},
+   {"title": "熵", "en": "Entropy", "type": "is_a", "description": "系统的无序程度，熵增加表示系统的无序程度增加"}
+]
+}

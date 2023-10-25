@@ -1,0 +1,75 @@
+﻿{"knowledge_points": [
+   {"title": "简谐波", "en": "Harmonic wave"},
+   {"title": "波形曲线", "en": "Waveform curve"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "振动方程", "en": "Vibration equation"},
+   {"title": "初相位", "en": "Initial phase"},
+   {"title": "周期", "en": "Period"},
+   {"title": "波速", "en": "Wave speed"}
+]}{
+"knowledge_points": [
+   {"title": "波传播速度", "en": "Wave propagation speed", "type": "定义", "description": "波在介质中传播的速度"},
+   {"title": "相位", "en": "Phase", "type": "定义", "description": "余弦函数的幅角，决定了波形曲线上具有确定相位的运动"},
+   {"title": "初相位", "en": "Initial phase", "type": "定义", "description": "相位的初始值"},
+   {"title": "波峰", "en": "Crest", "type": "定义", "description": "波形曲线上正向最大的取值点"},
+   {"title": "波谷", "en": "Trough", "type": "定义", "description": "波形曲线上负向最大的取值点"},
+   {"title": "波长", "en": "Wavelength", "type": "定义", "description": "波前进一个周期所需的距离"},
+   {"title": "周期", "en": "Period", "type": "定义", "description": "波前进一个波长距离所需的时间"},
+   {"title": "频率", "en": "Frequency", "type": "定义", "description": "波前进距离中波长的数目"},
+   {"title": "波速", "en": "Wave speed", "type": "定义", "description": "波在介质中传播的速度"}
+]
+}{
+"knowledge_points": [
+   {"title": "角波数", "en": "Wave number"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "光学", "en": "Optics"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "相速", "en": "Phase velocity"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "简谐波", "en": "Harmonic wave"},
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "波形图", "en": "Waveform"},
+   {"title": "振动曲线", "en": "Vibration curve"}
+]
+}{
+"knowledge_points": [
+   {"title": "振幅", "en": "Amplitude"},
+   {"title": "周期", "en": "Period"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "速度", "en": "Velocity"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "初相位", "en": "Initial phase"}
+]
+}{
+"knowledge_points": [
+   {"title": "波源", "en": "Wave source"},
+   {"title": "振动方程", "en": "Vibration equation"},
+   {"title": "波沿轴传播", "en": "Propagation of waves along the axis"},
+   {"title": "相位差", "en": "Phase difference"},
+   {"title": "波函数", "en": "Wave function"},
+   {"title": "简谐波", "en": "Harmonic wave"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "坐标取法", "en": "Coordinate method"}
+]
+}{
+"knowledge_points": [
+   {"title": "周期性波", "en": "Periodic wave"},
+   {"title": "波长", "en": "Wavelength"},
+   {"title": "周期", "en": "Period"},
+   {"title": "频率", "en": "Frequency"},
+   {"title": "波速", "en": "Wave speed"},
+   {"title": "振动曲线", "en": "Vibration curve"},
+   {"title": "简谐波", "en": "Simple harmonic wave"},
+   {"title": "振动方程", "en": "Vibration equation"},
+   {"title": "相位", "en": "Phase"}
+]
+}

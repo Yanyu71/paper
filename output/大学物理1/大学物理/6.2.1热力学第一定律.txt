@@ -1,0 +1,13 @@
+﻿[{
+"knowledge_points": [
+   {"title": "热力学第一定律", "en": "First Law of Thermodynamics"},
+   {"title": "系统状态变化", "en": "Change in system state"},
+   {"title": "作功", "en": "Work done"},
+   {"title": "传热", "en": "Heat transfer"},
+   {"title": "内能", "en": "Internal energy"},
+   {"title": "热量", "en": "Heat"},
+   {"title": "功", "en": "Work"},
+   {"title": "能量守恒定律", "en": "Law of conservation of energy"},
+   {"title": "第一类永动机", "en": "First type of perpetual motion machine"}
+]
+}]

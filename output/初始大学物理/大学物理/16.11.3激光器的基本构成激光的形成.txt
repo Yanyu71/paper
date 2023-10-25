@@ -1,0 +1,33 @@
+﻿{
+"knowledge_points": [
+   {"title": "激光器", "en": "Laser"},
+   {"title": "激光工作物质", "en": "Laser working material"},
+   {"title": "激励能源", "en": "Excitation energy"},
+   {"title": "谐振腔", "en": "Resonator cavity"},
+   {"title": "反射镜", "en": "Reflective mirror"},
+   {"title": "激光的形成", "en": "Formation of laser"},
+   {"title": "粒子数反转", "en": "Population inversion"},
+   {"title": "能级结构", "en": "Energy level structure"},
+   {"title": "亚稳态", "en": "Metastable state"},
+   {"title": "跃迁特性", "en": "Transition characteristics"}
+]
+}{
+"knowledge_points": [
+   {"title": "无辐射跃迁", "en": "Non-radiative transition", "type": "定义", "description": "指原子或分子在能级之间发生跃迁时，不通过辐射的过程。"},
+   {"title": "能级图", "en": "Energy level diagram", "type": "定义", "description": "用于描述原子或分子的能级结构和能级之间的跃迁关系的图示。"},
+   {"title": "激光工作物质", "en": "Laser active medium", "type": "定义", "description": "指用于产生激光的物质，通常是具有特定能级结构的原子、分子或固体晶体。"},
+   {"title": "氦氖激光", "en": "Helium-neon laser", "type": "定义", "description": "一种常用的激光器，利用氦氖混合气体作为激光工作物质，发射632.8nm波长的激光。"},
+   {"title": "能级反转", "en": "Population inversion", "type": "定义", "description": "指激光工作物质中的能级粒子数分布与热平衡分布相反的现象。"},
+   {"title": "激光腔", "en": "Laser cavity", "type": "定义", "description": "用于产生激光的空腔结构，通常由两个反射镜构成。"},
+   {"title": "谐振腔", "en": "Resonator cavity", "type": "定义", "description": "一种特殊的激光腔，能够选择性地增强特定波长的激光输出。"},
+   {"title": "增益介质", "en": "Gain medium", "type": "定义", "description": "指激光器中用于放大光信号的物质，通常是激光工作物质。"},
+   {"title": "阈值条件", "en": "Threshold condition", "type": "定义", "description": "指形成激光所必须满足的条件，即增益系数必须大于某一最小值。"}
+]
+}{
+"knowledge_points": [
+   {"title": "4", "en": "4"},
+   {"title": "?", "en": "?"},
+   {"title": "%", "en": "%"},
+   {"title": "m", "en": "m"}
+]
+}

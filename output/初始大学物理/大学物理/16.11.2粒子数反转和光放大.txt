@@ -1,0 +1,17 @@
+﻿{
+"knowledge_points": [
+   {"title": "粒子数反转", "en": "Population inversion"},
+   {"title": "光放大", "en": "Optical amplification"},
+   {"title": "受激辐射", "en": "Stimulated emission"},
+   {"title": "受激吸收", "en": "Stimulated absorption"},
+   {"title": "光强", "en": "Light intensity"},
+   {"title": "自发辐射", "en": "Spontaneous emission"},
+   {"title": "热平衡状态", "en": "Thermal equilibrium state"},
+   {"title": "玻耳兹曼分布", "en": "Boltzmann distribution"},
+   {"title": "正常分布", "en": "Normal distribution"},
+   {"title": "光吸收", "en": "Light absorption"},
+   {"title": "光增益", "en": "Light gain"},
+   {"title": "光增益介质", "en": "Gain medium"},
+   {"title": "增益系数", "en": "Gain coefficient"}
+]
+}

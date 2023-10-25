@@ -1,0 +1,35 @@
+﻿{
+"knowledge_points": [
+   {"title": "原子", "en": "Atom"},
+   {"title": "分子", "en": "Molecule"},
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "轨道运动", "en": "Orbital motion"},
+   {"title": "自旋运动", "en": "Spin motion"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "轨道磁矩", "en": "Orbital magnetic moment"},
+   {"title": "自旋磁矩", "en": "Spin magnetic moment"},
+   {"title": "核磁矩", "en": "Nuclear magnetic moment"},
+   {"title": "固有磁矩", "en": "Intrinsic magnetic moment"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "电子壳层", "en": "Electron shell"}
+]
+}{
+"knowledge_points": [
+   {"title": "原子", "en": "Atom"},
+   {"title": "分子", "en": "Molecule"},
+   {"title": "原子核", "en": "Atomic nucleus"},
+   {"title": "电子", "en": "Electron"},
+   {"title": "轨道运动", "en": "Orbital motion"},
+   {"title": "自旋运动", "en": "Spin motion"},
+   {"title": "电流", "en": "Electric current"},
+   {"title": "轨道磁矩", "en": "Orbital magnetic moment"},
+   {"title": "自旋磁矩", "en": "Spin magnetic moment"},
+   {"title": "核磁矩", "en": "Nuclear magnetic moment"},
+   {"title": "固有磁矩", "en": "Intrinsic magnetic moment"},
+   {"title": "抗磁质", "en": "Diamagnetic material"},
+   {"title": "顺磁质", "en": "Paramagnetic material"},
+   {"title": "电子壳层", "en": "Electron shell"}
+]
+}

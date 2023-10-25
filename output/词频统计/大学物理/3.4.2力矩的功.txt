@@ -1,0 +1,14 @@
+(力矩的功, Work of torque): 6
+(转动, Rotation): 475
+(力矩, Torque): 223
+(垂直, Perpendicular): 360
+(夹角, Angle): 111
+(功, Work): 633
+(平行, Parallel): 251
+(合外力矩, Net external torque): 19
+(角位移, Angular displacement): 16
+(力矩的瞬时功率, Instantaneous power of torque): 2
+(刚体, Rigid body): 300
+(位移, Displacement): 214
+(力, Force): 2617
+(分解, Decomposition): 40

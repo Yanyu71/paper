@@ -1,0 +1,74 @@
+(宏观物体, Macroscopic Object): 9
+(摩擦转动, Frictionless rotation): 2
+(内力, Internal force): 65
+(地面, Ground): 132
+(转动惯量, Moment of inertia): 98
+(角速度, Angular Velocity): 156
+(长度, Length): 239
+(角坐标, Angular coordinates): 51
+(高台跳水, Platform Diving): 1
+(作用力, Force): 117
+(转动惯量可变的非刚体, Non-rigid Body with Variable Moment of Inertia): 1
+(重力势能, Gravitational potential energy): 19
+(角速度, Angular velocity): 156
+(均质细棒, Homogeneous Thin Rod): 1
+(动量定理, Law of conservation of momentum): 56
+(角动量守恒定律, Law of Conservation of Angular Momentum): 24
+(轴承对转台的支持力, Support force of the bearing on the turntable): 0
+(系统角动量守恒, Conservation of angular momentum of the system): 2
+(冰上芭蕾, Ice Ballet): 1
+(跳水, Diving): 4
+(质心轴, Axis through the Center of Mass): 2
+(外力, External force): 129
+(转动定律, Law of rotational motion): 29
+(惯性系, Inertial frame of reference): 160
+(子弹, Bullet): 59
+(翻转, Flipping): 8
+(非刚体, Non-rigid Body): 5
+(合外力矩为零, Net External Torque is Zero): 6
+(水平轴, Horizontal axis): 11
+(力, Force): 2617
+(解取人和转台作为系统, The person and the turntable are taken as a system): 1
+(转台, Turntable): 31
+(角动量定理式, Angular Momentum Theorem): 3
+(合外力的冲量为零, Net External Impulse is Zero): 2
+(刚体, Rigid Body): 300
+(角动量定理, Angular momentum theorem): 25
+(转动惯量, Moment of Inertia): 98
+(半径, Radius): 398
+(旋转角速度, Angular Velocity): 4
+(非弹性碰撞, Inelastic collision): 9
+(动能定理, Kinetic energy theorem): 60
+(转动动能, Rotational kinetic energy): 18
+(总伸长量, Total elongation): 1
+(角加速度, Angular acceleration): 77
+(角动量, Angular momentum): 186
+(均质细杆, Homogeneous thin rod): 12
+(定轴转动, Fixed-axis Rotation): 117
+(角动量守恒定律, Law of conservation of angular momentum): 24
+(质点的运动规律, Motion laws of particles): 3
+(刚体的定轴转动规律, Laws of rotational motion of rigid bodies): 2
+(力的功, Work done by force): 56
+(动能, Kinetic energy): 357
+(速度, Velocity): 1354
+(动量定理, Momentum Theorem): 56
+(重力, Gravity): 132
+(光滑竖直轴, Smooth Vertical Axis): 1
+(水平轴, Horizontal Axis): 11
+(质量, Mass): 641
+(内力, Internal Force): 65
+(力矩, Torque): 223
+(劲度系数, Spring constant): 35
+(质点, Particle): 900
+(微观粒子的运动, Motion of Microscopic Particles): 5
+(机械能守恒, Law of conservation of mechanical energy): 30
+(刚体力学, Rigid body mechanics): 8
+(体操表演, Gymnastics Performance): 1
+(花样滑冰, Figure Skating): 1
+(加速度, Acceleration): 397
+(动量, Momentum): 476
+(力矩的功, Work done by torque): 6
+(合外力矩为零, Net external torque is zero): 6
+(弹簧的伸长量, Extension of the spring): 2
+(质点力学, Particle mechanics): 5
+(天体运动, Celestial Motion): 3

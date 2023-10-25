@@ -1,0 +1,49 @@
+﻿[{
+"knowledge_points": [
+   {"title": "定轴转动定律", "en": "Law of rotational motion about a fixed axis"},
+   {"title": "刚体动力学", "en": "Rigid body dynamics"},
+   {"title": "转动运动方程", "en": "Equations of rotational motion"},
+   {"title": "合外力矩", "en": "Net external torque"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "角速度", "en": "Angular velocity"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "转动惯量", "en": "Moment of inertia"},
+   {"title": "滑块", "en": "Block"},
+   {"title": "重物", "en": "Mass"},
+   {"title": "滑轮", "en": "Pulley"},
+   {"title": "摩擦力", "en": "Frictional force"},
+   {"title": "张力", "en": "Tension"},
+   {"title": "加速度", "en": "Acceleration"},
+   {"title": "牛顿定律", "en": "Newton's laws of motion"},
+   {"title": "平动", "en": "Translation"},
+   {"title": "逆时针方向", "en": "Counterclockwise direction"},
+   {"title": "钟摆", "en": "Pendulum"},
+   {"title": "质心", "en": "Center of mass"},
+   {"title": "重力力矩", "en": "Gravitational torque"}
+]
+},{
+"knowledge_points": [
+   {"title": "力矩", "en": "Torque"},
+   {"title": "刚体系统的总转动惯量", "en": "Total rotational inertia of a rigid body system"},
+   {"title": "刚体定轴转动定律", "en": "Law of rotational motion of a rigid body about a fixed axis"},
+   {"title": "角加速度", "en": "Angular acceleration"},
+   {"title": "摩擦力", "en": "Frictional force"},
+   {"title": "摩擦力矩", "en": "Frictional torque"},
+   {"title": "均质圆盘", "en": "Homogeneous disk"},
+   {"title": "转动方向", "en": "Direction of rotation"},
+   {"title": "质量面密度", "en": "Mass surface density"},
+   {"title": "打击中心", "en": "Center of percussion"}
+]
+},{
+"knowledge_points": [
+   {"title": "约束力", "en": "Constraint force"},
+   {"title": "冲击力", "en": "Impulse force"},
+   {"title": "击球点", "en": "Point of impact"},
+   {"title": "打击中心", "en": "Center of percussion"},
+   {"title": "刚体力学", "en": "Rigid body mechanics"},
+   {"title": "质点力学", "en": "Particle mechanics"},
+   {"title": "力矩", "en": "Torque"},
+   {"title": "角量", "en": "Angular quantity"},
+   {"title": "线量", "en": "Linear quantity"}
+]
+}]

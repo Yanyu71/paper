@@ -1,0 +1,21 @@
+﻿{
+"knowledge_points": [
+   {"title": "导体", "en": "Conductor"},
+   {"title": "自由电子", "en": "Free electrons"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电荷重新分布", "en": "Charge redistribution"},
+   {"title": "电中性", "en": "Electric neutrality"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "等势面", "en": "Equipotential surface"}
+]
+}{
+"knowledge_points": [
+   {"title": "导体", "en": "Conductor"},
+   {"title": "自由电子", "en": "Free electrons"},
+   {"title": "电场", "en": "Electric field"},
+   {"title": "电荷重新分布", "en": "Charge redistribution"},
+   {"title": "电中性", "en": "Electric neutrality"},
+   {"title": "电势", "en": "Electric potential"},
+   {"title": "等势面", "en": "Equipotential surface"}
+]
+}

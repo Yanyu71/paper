@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "逆循环", "en": "Reverse cycle"},
+   {"title": "致冷系数", "en": "Coefficient of refrigeration"},
+   {"title": "制冷机", "en": "Refrigeration machine"},
+   {"title": "热力学第一定律", "en": "First law of thermodynamics"},
+   {"title": "低温热源", "en": "Low temperature heat source"},
+   {"title": "高温热源", "en": "High temperature heat source"},
+   {"title": "工质", "en": "Working fluid"},
+   {"title": "吸热", "en": "Heat absorption"},
+   {"title": "放热", "en": "Heat release"},
+   {"title": "作功", "en": "Work done"},
+   {"title": "致冷机性能", "en": "Refrigeration machine performance"},
+   {"title": "被制冷的对象", "en": "Object being refrigerated"}
+]
+}]

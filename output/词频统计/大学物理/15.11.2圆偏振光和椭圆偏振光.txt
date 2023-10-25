@@ -1,0 +1,14 @@
+(振幅, Amplitude): 244
+(左旋圆偏振光, Left circularly polarized light): 1
+(圆偏振光, Circularly polarized light): 17
+(右旋圆偏振光, Right circularly polarized light): 1
+(右旋椭圆偏振光, Right elliptically polarized light): 1
+(左旋椭圆偏振光, Left elliptically polarized light): 1
+(相位差, Phase difference): 116
+(传播方向, Propagation direction): 46
+(角频率, Angular frequency): 40
+(振动状态, Vibration state): 8
+(振动面, Vibration plane): 12
+(光矢量, Light vector): 31
+(旋转角速度, Angular velocity of rotation): 4
+(椭圆偏振光, Elliptically polarized light): 6

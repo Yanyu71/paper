@@ -1,0 +1,13 @@
+(热平衡状态, Thermal equilibrium state): 2
+(正常分布, Normal distribution): 1
+(光增益, Light gain): 3
+(光吸收, Light absorption): 1
+(光放大, Optical amplification): 5
+(光强, Light intensity): 183
+(受激辐射, Stimulated emission): 17
+(自发辐射, Spontaneous emission): 17
+(玻耳兹曼分布, Boltzmann distribution): 11
+(受激吸收, Stimulated absorption): 6
+(增益系数, Gain coefficient): 4
+(光增益介质, Gain medium): 1
+(粒子数反转, Population inversion): 16

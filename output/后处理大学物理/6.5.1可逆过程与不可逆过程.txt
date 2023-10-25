@@ -1,0 +1,6 @@
+(气体自由膨胀过程的方向性, Directionality of gas free expansion process)
+(不可逆过程, Irreversible process)
+(自发过程的方向性, Directionality of spontaneous processes)
+(可逆过程, Reversible process)
+(功热转换过程的方向性, Directionality of work-heat conversion process)
+(热传导过程的方向性, Directionality of heat conduction process)

@@ -1,0 +1,16 @@
+﻿[{
+"knowledge_points": [
+   {"title": "热力学理论", "en": "Thermodynamic theory"},
+   {"title": "热机", "en": "Heat engine"},
+   {"title": "工作物质", "en": "Working substance"},
+   {"title": "循环过程", "en": "Cycle process"},
+   {"title": "蒸气轮机", "en": "Steam turbine"},
+   {"title": "锅炉", "en": "Boiler"},
+   {"title": "气缸", "en": "Cylinder"},
+   {"title": "冷凝器", "en": "Condenser"},
+   {"title": "泵", "en": "Pump"},
+   {"title": "准静态过程", "en": "Quasi-static process"},
+   {"title": "正循环", "en": "Forward cycle"},
+   {"title": "逆循环", "en": "Reverse cycle"}
+]
+}]
